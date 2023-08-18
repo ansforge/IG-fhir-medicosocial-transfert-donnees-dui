@@ -208,8 +208,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#cas-dutilisation" id="markdown-toc-cas-dutilisation">Cas d’utilisation</a></li>
+  <li><a href="#liste-des-acteurs-pour-lensemble-des-processus" id="markdown-toc-liste-des-acteurs-pour-lensemble-des-processus">Liste des acteurs pour l’ensemble des processus</a></li>
+</ul>
+
 </div>
 <h3 id="cas-dutilisation">Cas d’utilisation</h3>
 
@@ -244,7 +248,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <td>Les données de l’usager sont présentes dans le nouveau DUI de l’ESSMS.</td>
   </tr>
   <tr>
-    <th> Contraintes fonctionnelles</th>
+    <th>Contraintes fonctionnelles</th>
     <td>N/A</td>
   </tr>
   <tr>
@@ -285,7 +289,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <td>Les données de l’usager sont présentes dans le DUI de l’ESSMS d’accueil</td>
   </tr>
   <tr>
-    <th> Contraintes fonctionnelles</th>
+    <th>Contraintes fonctionnelles</th>
     <td>N/A</td>
   </tr>
   <tr>
@@ -328,7 +332,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <td>Les données de l’usager sont présentes dans le système d’information de la CNSA.</td>
   </tr>
   <tr>
-    <th> Contraintes fonctionnelles</th>
+    <th>Contraintes fonctionnelles</th>
     <td>N/A</td>
   </tr>
   <tr>
@@ -336,6 +340,79 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <td>La CNSA demande à l’ESSMS de lui transférer des données à des fins de pilotage et de financement.</td>
   </tr>
   <caption>Caractéristique du processus collaboratif « Transférer les données d’un logiciel DUI ver le SI de la CNSA (SIDOBA) »</caption>
+</table>
+
+<h3 id="liste-des-acteurs-pour-lensemble-des-processus">Liste des acteurs pour l’ensemble des processus</h3>
+
+<h4 id="le-demandeur">Le demandeur</h4>
+
+<p>Le demandeur est l’acteur à l’origine du besoin. Il peut s’agir d’un établissement ou d’une personne physique.</p>
+
+<table style="width:100%">
+  <tr>
+    <th>Processus collaboratif</th>
+    <th>Demandeur</th>
+  </tr>
+  <tr>
+    <td>Changer de logiciel métier</td>
+    <td><b>ESSMS</b> : Etablissement qui accompagne l’usager. Il assure la gestion de l’accompagnement usager à travers son logiciel DUI</td>
+  </tr>
+  <tr>
+    <td>Changer d’ESSMS</td>
+    <td><b>Usager</b> : Personne qui est accompagnée au sein de l’ESSMS. L’usager, ou son représentant légal, est chargé de contacter son établissement pour le transfert de son dossier</td>
+  </tr>
+  <tr>
+    <td>Transférer des données DUI vers SIDOBA</td>
+    <td><b>CNSA</b> : Elle demande l’accès à des données de l’usager, via son système d’information SIDOBA, à des fins de pilotage ou de financement</td>
+  </tr>
+  <caption>Description des demandeurs impliqués dans chaque processus collaboratif</caption>
+</table>
+
+<h4 id="le-producteur">Le producteur</h4>
+
+<p>Le producteur est l’acteur à l’origine de l’export des données. C’est un système.</p>
+
+<table style="width:100%">
+  <tr>
+    <th>Processus collaboratif</th>
+    <th>Producteur</th>
+  </tr>
+  <tr>
+    <td>Changer de logiciel métier</td>
+    <td rowspan="3"><b>DUI</b> : Logiciel Métier utilisé par les ESSMS permettant de gérer les dossiers des usagers avant, pendant et après son accompagnement</td>
+  </tr>
+  <tr>
+    <td>Changer d’ESSMS</td>
+  </tr>
+  <tr>
+    <td>Transférer des données DUI vers SIDOBA</td>
+  </tr>
+  <caption>Description des producteurs impliqués dans chaque processus collaboratif</caption>
+</table>
+
+<h4 id="le-consommateur">Le consommateur</h4>
+
+<p>Le consommateur est l’acteur qui reçoit les données. C’est un système.</p>
+
+<table style="width:100%">
+  <tr>
+    <th>Processus collaboratif</th>
+    <th>Demandeur</th>
+  </tr>
+  <tr>
+    <td>Changer de logiciel métier</td>
+    <td rowspan="2"><b>DUI</b> : Logiciel Métier utilisé par les ESSMS permettant de gérer les dossiers des usagers avant, pendant et après son accompagnement. <br />
+    Il s’agit dans ces différents cas d’un autre DUI que celui du producteur
+</td>
+  </tr>
+  <tr>
+    <td>Changer d’ESSMS</td>
+  </tr>
+  <tr>
+    <td>Transférer des données DUI vers SIDOBA</td>
+    <td><b>SIDOBA</b>: système d’information de la CNSA permettant le pilotage et le financement des ESSMS</td>
+  </tr>
+  <caption>Description des consommateurs impliqués dans chaque processus collaboratif</caption>
 </table>
 
 
@@ -384,7 +461,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Aug 18, 2023 14:55+0000">2023-08-18</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Aug 18, 2023 15:31+0000">2023-08-18</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
