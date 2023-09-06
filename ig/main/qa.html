@@ -36,12 +36,12 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for ExampleIG</h1>
- <p>Generated Thu Aug 24 08:12:00 UTC 2023, FHIR version 4.0.1 for ans.fhir.fr.tddui#0.1.0 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/tddui">https://interop.esante.gouv.fr/ig/fhir/tddui</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/tddui/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
+ <p>Generated Wed Sep 06 14:39:06 UTC 2023, FHIR version 4.0.1 for ans.fhir.fr.tddui#0.1.0 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/tddui">https://interop.esante.gouv.fr/ig/fhir/tddui</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/tddui/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
- <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.4.0</span></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.4.3</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ans.fhir.fr.tddui, Canonical = https://interop.esante.gouv.fr/ig/fhir/tddui</td></tr>
  <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
- <tr><td>Publication Request:</td><td><ul><li><span title="Invalid HTTP response 404 from https://interop.esante.gouv.fr/ig/fhir/tddui/package-list.json?nocache=1692864719975 (Not Found) (content in /tmp/http-log/fhir-http-3.log)">This IG has never been published</span> <img src="information.png" height="16px" width="16px"/></li>
+ <tr><td>Publication Request:</td><td><ul><li><span title="Invalid HTTP response 404 from https://interop.esante.gouv.fr/ig/fhir/tddui/package-list.json?nocache=1694011146323 (Not Found) (content in /tmp/http-log/fhir-http-3.log)">This IG has never been published</span> <img src="information.png" height="16px" width="16px"/></li>
 <li>No publication request found <img src="information.png" height="16px" width="16px"/></li>
 </ul>
 </td></tr>
@@ -80,7 +80,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
 </ul>
 </td></tr>
  <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
- <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at https://interop.esante.gouv.fr/ig/fhir/tddui (Problem #1 with package-list.json at https://interop.esante.gouv.fr/ig/fhir/tddui: Invalid HTTP response 404 from https://interop.esante.gouv.fr/ig/fhir/tddui/package-list.json?nocache=1692864683915 (Not Found) (content in /tmp/http-log/fhir-http-2.log))</td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at https://interop.esante.gouv.fr/ig/fhir/tddui (Problem #1 with package-list.json at https://interop.esante.gouv.fr/ig/fhir/tddui: Invalid HTTP response 404 from https://interop.esante.gouv.fr/ig/fhir/tddui/package-list.json?nocache=1694011113470 (Not Found) (content in /tmp/http-log/fhir-http-2.log))</td></tr>
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
  <tr><td>Summary:</td><td> errors = 0, warn = 14, info = 5, broken links = 21</td></tr>
 </table>
@@ -216,10 +216,10 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>CodeSystem</b></td><td><b>information</b></td><td title=""><b>CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem (l1/c4968)</b></td><td><b>warning</b></td><td title="CODESYSTEM_SHAREABLE_MISSING"><b>The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile</b></td>
+     <td><b>CodeSystem (l1/c4968)</b></td><td><b>warning</b></td><td title="CODESYSTEM_SHAREABLE_MISSING"><b>Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem (l1/c4968)</b></td><td><b>warning</b></td><td title="CODESYSTEM_SHAREABLE_MISSING"><b>The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile</b></td>
+     <td><b>CodeSystem (l1/c4968)</b></td><td><b>warning</b></td><td title="CODESYSTEM_SHAREABLE_MISSING"><b>Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present</b></td>
    </tr>
 </table>
 <hr/>
@@ -235,10 +235,10 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>CodeSystem</b></td><td><b>information</b></td><td title=""><b>CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem (l1/c1080)</b></td><td><b>warning</b></td><td title="CODESYSTEM_SHAREABLE_MISSING"><b>The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile</b></td>
+     <td><b>CodeSystem (l1/c1080)</b></td><td><b>warning</b></td><td title="CODESYSTEM_SHAREABLE_MISSING"><b>Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem (l1/c1080)</b></td><td><b>warning</b></td><td title="CODESYSTEM_SHAREABLE_MISSING"><b>The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile</b></td>
+     <td><b>CodeSystem (l1/c1080)</b></td><td><b>warning</b></td><td title="CODESYSTEM_SHAREABLE_MISSING"><b>Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present</b></td>
    </tr>
 </table>
 <hr/>
@@ -302,7 +302,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet (l1/c688)</b></td><td><b>warning</b></td><td title="VALUESET_SHAREABLE_MISSING"><b>The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile</b></td>
+     <td><b>ValueSet (l1/c688)</b></td><td><b>warning</b></td><td title="VALUESET_SHAREABLE_MISSING"><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
    </tr>
 </table>
 <hr/>
@@ -318,7 +318,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>ValueSet.compose.include[0] (l1/c646)</b></td><td><b>information</b></td><td title="VALUESET_CONCEPT_DISPLAY_PRESENCE_MIXED"><b>This include has some concepts with displays and some without - check that this is what is intended</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet (l1/c860)</b></td><td><b>warning</b></td><td title="VALUESET_SHAREABLE_MISSING"><b>The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile</b></td>
+     <td><b>ValueSet (l1/c860)</b></td><td><b>warning</b></td><td title="VALUESET_SHAREABLE_MISSING"><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
    </tr>
 </table>
 <hr/>
@@ -331,7 +331,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet (l1/c745)</b></td><td><b>warning</b></td><td title="VALUESET_SHAREABLE_MISSING"><b>The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile</b></td>
+     <td><b>ValueSet (l1/c745)</b></td><td><b>warning</b></td><td title="VALUESET_SHAREABLE_MISSING"><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
    </tr>
 </table>
 <hr/>
@@ -344,7 +344,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet (l1/c604)</b></td><td><b>warning</b></td><td title="VALUESET_SHAREABLE_MISSING"><b>The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile</b></td>
+     <td><b>ValueSet (l1/c604)</b></td><td><b>warning</b></td><td title="VALUESET_SHAREABLE_MISSING"><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
    </tr>
 </table>
 <a name="suppressed"> </a>
@@ -391,16 +391,16 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
 <h2>CODESYSTEM_SHAREABLE_MISSING</h2>
  <table class="grid">
    <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-competence-code-system.html">fsh-generated/resources/CodeSystem-competence-code-system.json</a></td><td><b>The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile</b></td>
+     <td><a href="CodeSystem-competence-code-system.html">fsh-generated/resources/CodeSystem-competence-code-system.json</a></td><td><b>Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-competence-code-system.html">fsh-generated/resources/CodeSystem-competence-code-system.json</a></td><td><b>The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile</b></td>
+     <td><a href="CodeSystem-competence-code-system.html">fsh-generated/resources/CodeSystem-competence-code-system.json</a></td><td><b>Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-type-carte-code-system.html">fsh-generated/resources/CodeSystem-type-carte-code-system.json</a></td><td><b>The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile</b></td>
+     <td><a href="CodeSystem-type-carte-code-system.html">fsh-generated/resources/CodeSystem-type-carte-code-system.json</a></td><td><b>Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-type-carte-code-system.html">fsh-generated/resources/CodeSystem-type-carte-code-system.json</a></td><td><b>The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile</b></td>
+     <td><a href="CodeSystem-type-carte-code-system.html">fsh-generated/resources/CodeSystem-type-carte-code-system.json</a></td><td><b>Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present</b></td>
    </tr>
 </table>
 <hr/>
@@ -427,16 +427,16 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
 <h2>VALUESET_SHAREABLE_MISSING</h2>
  <table class="grid">
    <tr style="background-color: #fff4ee">
-     <td><a href="ValueSet-EyeColorVS.html">fsh-generated/resources/ValueSet-EyeColorVS.json</a></td><td><b>The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile</b></td>
+     <td><a href="ValueSet-EyeColorVS.html">fsh-generated/resources/ValueSet-EyeColorVS.json</a></td><td><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="ValueSet-MeltingPotVS.html">fsh-generated/resources/ValueSet-MeltingPotVS.json</a></td><td><b>The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile</b></td>
+     <td><a href="ValueSet-MeltingPotVS.html">fsh-generated/resources/ValueSet-MeltingPotVS.json</a></td><td><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="ValueSet-ModifiedAdministrativeGender.html">fsh-generated/resources/ValueSet-ModifiedAdministrativeGender.json</a></td><td><b>The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile</b></td>
+     <td><a href="ValueSet-ModifiedAdministrativeGender.html">fsh-generated/resources/ValueSet-ModifiedAdministrativeGender.json</a></td><td><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="ValueSet-TypeCarteVS.html">fsh-generated/resources/ValueSet-TypeCarteVS.json</a></td><td><b>The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile</b></td>
+     <td><a href="ValueSet-TypeCarteVS.html">fsh-generated/resources/ValueSet-TypeCarteVS.json</a></td><td><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
    </tr>
 </table>
 </body>

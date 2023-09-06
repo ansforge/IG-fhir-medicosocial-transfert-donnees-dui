@@ -2,8 +2,8 @@
 =========================================
 
 err = 0, warn = 14, info = 5
-IG Publisher Version: 1.4.0
-Generated Thu Aug 24 08:12:00 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.tddui#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/tddui)
+IG Publisher Version: 1.4.3
+Generated Wed Sep 06 14:39:07 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.tddui#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/tddui)
  Build Errors : 21 / 4 / 0
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/fsh-generated/resources/CodeSystem-competence-code-system : 0 / 2 / 2
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/fsh-generated/resources/CodeSystem-type-carte-code-system : 0 / 2 / 2
@@ -44,12 +44,12 @@ WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-ta
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/CodeSystem-competence-code-system.json ==
 INFORMATION: CodeSystem/competence-code-system: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
-WARNING: CodeSystem/competence-code-system: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
-WARNING: CodeSystem/competence-code-system: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/competence-code-system: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/competence-code-system: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-type-carte-code-system.json ==
 INFORMATION: CodeSystem/type-carte-code-system: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
-WARNING: CodeSystem/type-carte-code-system: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
-WARNING: CodeSystem/type-carte-code-system: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/type-carte-code-system: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/type-carte-code-system: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 == fsh-generated/resources/ImplementationGuide-ans.fhir.fr.tddui.json ==
 == fsh-generated/resources/Patient-frpatient-exemple.json ==
 == fsh-generated/resources/StructureDefinition-EyeColor.json ==
@@ -59,11 +59,11 @@ WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir
 INFORMATION: StructureDefinition/fr-patient: StructureDefinition.snapshot.element[18].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 INFORMATION: StructureDefinition/fr-patient: StructureDefinition.snapshot.element[40].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 == fsh-generated/resources/ValueSet-EyeColorVS.json ==
-WARNING: ValueSet/EyeColorVS: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet/EyeColorVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-MeltingPotVS.json ==
 INFORMATION: ValueSet/MeltingPotVS: ValueSet.compose.include[0]: This include has some concepts with displays and some without - check that this is what is intended
-WARNING: ValueSet/MeltingPotVS: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet/MeltingPotVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-ModifiedAdministrativeGender.json ==
-WARNING: ValueSet/ModifiedAdministrativeGender: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet/ModifiedAdministrativeGender: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-TypeCarteVS.json ==
-WARNING: ValueSet/TypeCarteVS: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet/TypeCarteVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
