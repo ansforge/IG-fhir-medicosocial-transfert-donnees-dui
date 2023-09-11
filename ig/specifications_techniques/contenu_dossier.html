@@ -1,13 +1,9 @@
-<!-- layouts\layout-changehistory.html -->
-<!-- get modelType -->
-
-
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>ANS.FHIR.FR.TDDUI\ - FHIR v4.0.1</title>
+    <title>ANS.FHIR.FR.TDDUI\Contenu Dossier - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -46,8 +42,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:""}
-    h3,h4,h5,h6{--heading-prefix:""}</style>
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -172,11 +168,15 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Contenu Dossier</b></li>
 
           <span style="float:right;">
 
+            <a href="modelisation_contenu.html">&lt;prev</a> | 
+
             <a href="#bottom">bottom</a>
+
+          | <a href="specifications_techniques.html">next&gt;</a>
 
           </span>
 
@@ -190,9 +190,16 @@
         <div class="row">
           <div class="inner-wrapper">
 
-
-<div style="counter-reset: section 10" class="col-12">
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Publication Build: This will be filled in by the publication tooling</p><!--EndReleaseHeader-->
+  <h2>Contenu Dossier</h2>
   
 
 
@@ -202,46 +209,182 @@
 
 
 
-<ul class="nav nav-tabs">
-
-  <li>
-    <a href="ValueSet-TypeCarteVS.html">Narrative Content</a>
-  </li>
-
-
-  
-    <li>
-      <a href="ValueSet-TypeCarteVS.xml.html">XML</a>
-    </li>
-  
-
-
-  
-    <li>
-      <a href="ValueSet-TypeCarteVS.json.html">JSON</a>
-    </li>
-  
-
-
-  
-    <li>
-      <a href="ValueSet-TypeCarteVS.ttl.html">TTL</a>
-    </li>
-  
 
 
 
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#standards-utilisés" id="markdown-toc-standards-utilisés">Standards utilisés</a></li>
+  <li><a href="#lectorat-cible" id="markdown-toc-lectorat-cible">Lectorat cible</a></li>
+  <li><a href="#utilisation" id="markdown-toc-utilisation">Utilisation</a></li>
+  <li><a href="#contenu-du-document-cda" id="markdown-toc-contenu-du-document-cda">Contenu du document CDA</a></li>
+  <li><a href="#annexes" id="markdown-toc-annexes">Annexes</a></li>
 </ul>
 
+</div>
+<h3 id="standards-utilisés">Standards utilisés</h3>
 
-  <a name="root"> </a>
-  <h2 id="root">: TypeCarteVS - Change History</h2>
-  <p>History of changes for TypeCarteVS .</p>
+<h4 id="ci-sis-hl7-cda-r2-ihe-pcc">CI-SIS, HL7 CDA R2, IHE PCC</h4>
 
-  
+<p>Les données véhiculées dans ce document sont spécifiées dans le format CDA R2 niveau 3, standard identifié dans l’étude des normes et standard réalisée pour ce volet. Les modèles proposés seront disponibles sur la plateforme <a href="https://o3sis.esante.gouv.fr/art-decor/home">ART-DECOR</a> de l’ANS.</p>
+
+<p>Cette spécification est organisée en entête, sections, entrées et nomenclatures (jeux de valeurs) et est conforme aux spécifications techniques :</p>
+<ul>
+  <li>du <strong>Cadre d’Interopérabilité des Systèmes d’Information de Santé</strong> (CI-SIS) de l’ANS, en particulier :
+    <ul>
+      <li>le <a href="https://esante.gouv.fr/volet-structuration-minimale-de-documents-de-sante">CI-SIS – Volet Structuration Minimale de Documents de Santé</a> qui spécifie l’ensemble des données minimales de l’en-tête des documents médicaux de santé. Ce volet s’appuie lui-même sur le standard CDA.</li>
+      <li>le <a href="https://esante.gouv.fr/volet-de-reference-modeles-de-contenus-cda">CI-SIS – Volet Modèles de Contenu CDA</a> de la couche Contenus qui spécifie l’ensemble des Section et Entrées utilisées dans le corps du document.</li>
+    </ul>
+  </li>
+  <li>du domaine international <a href="https://www.ihe.net/uploadedFiles/Documents/PCC/IHE_PCC_TF_Vol2.pdf">IHE Patient Care Coordination</a> (PCC).</li>
+</ul>
+
+<h4 id="document-cda-à-corps-structuré">Document CDA à corps structuré</h4>
+
+<p><em>Voir <a href="https://esante.gouv.fr/volet-de-reference-modeles-de-contenus-cda">Volet Modèles de contenus</a> CDA version v3.3, paragraphe “Documents CDA à corps structurés”.</em></p>
+
+<p><strong>Le modèle de document CDA du volet «Transfert de données DUI»  est un modèle à corps structuré.</strong></p>
+
+<h4 id="types-des-données-essentielles">Types des données essentielles</h4>
+
+<p><em>Voir Volet <a href="https://esante.gouv.fr/volet-de-reference-modeles-de-contenus-cda">Volet Modèles de contenus</a> CDA version v3.3, paragraphe “Types de données essentielles”.</em></p>
+
+<h4 id="cardinalités">Cardinalités</h4>
+
+<p><em>Voir Volet <a href="https://esante.gouv.fr/volet-de-reference-modeles-de-contenus-cda">Volet Modèles de contenus</a> CDA version v3.3, paragraphe “Cardinalités”.</em></p>
+
+<h4 id="nullflavor">nullFlavor</h4>
+
+<p><em>Voir Volet <a href="https://esante.gouv.fr/volet-de-reference-modeles-de-contenus-cda">Volet Modèles de contenus</a> CDA version v3.3, paragraphe “nullFlavor”.</em></p>
+
+<h4 id="éléments-narratifs-référencés-dans-les-entrées">Éléments narratifs référencés dans les entrées</h4>
+
+<p><em>Voir <a href="https://esante.gouv.fr/volet-de-reference-modeles-de-contenus-cda">Volet Modèles de contenus</a> CDA version v3.3, paragraphe “Éléments narratifs référencés dans les entrées”.</em></p>
+
+<h4 id="terminologies-et-jeux-de-valeurs">Terminologies et jeux de valeurs</h4>
+
+<p><em>Voir <a href="https://esante.gouv.fr/volet-de-reference-modeles-de-contenus-cda">Volet Modèles de contenus</a> CDA version v3.3 (paragraphe “Terminologies et jeux de valeurs”).</em></p>
+
+<p>Les terminologies et les jeux de valeurs spécifiques à ce document sont précisés dans les spécifications techniques du modèle de document CDA « Transfert de données DUI » décrit dans ce document.</p>
+
+<h3 id="lectorat-cible">Lectorat cible</h3>
+
+<p>Ce document s’adresse aux développeurs des interfaces interopérables des systèmes implémentant le volet « Transfert de données DUI » ou à toute autre personne intervenant dans le processus de mise en place de ces interfaces.</p>
+
+<p>L’hypothèse est faite que le lecteur est familier du standard CDA R2.</p>
+
+<h3 id="utilisation">Utilisation</h3>
+
+<p>Les spécifications d’interopérabilité présentées dans ce volet ne présagent pas des conditions de leur mise en œuvre dans le cadre d’un système d’information partagé. Il appartient à tout responsable de traitement de s’assurer que les services utilisant ces spécifications respectent les cadres et bonnes pratiques applicables à ce genre de service (ex.: cadre juridique, bonnes pratiques de sécurité, ergonomie, accessibilité …).</p>
+
+<h3 id="contenu-du-document-cda">Contenu du document CDA</h3>
+
+<p>Cette section présente les informations à transférer entre le logiciel de Dossier Usager Informatisé (DUI) d’un ESSMS d’accueil vers un autre logiciel DUI, ou vers un système d’information tiers. Ces données structurées sont spécifiées dans le format CDA R2 niveau 3. 
+Dans cette section, une mise en correspondance est faite entre :</p>
+<ul>
+  <li>Les éléments XML proposés par CDA ;</li>
+  <li>Les données structurées décrites dans les Spécification fonctionnelle de contenu v0.4 du volet « Transfert de données DUI ».</li>
+</ul>
+
+<h3 id="annexes">Annexes</h3>
+
+<h4 id="glossaire">Glossaire</h4>
+
+<table style="width:100%">
+  <tr>
+    <th>Sigle / Acronyme</th>
+    <th>Signification</th>
+  </tr>
+  <tr>
+    <td>ANS</td>
+    <td>L’Agence du Numérique en Santé</td>
+  </tr>
+  <tr>
+    <td>CDA</td>
+    <td>Clinical Document</td>
+  </tr>
+  <tr>
+    <td>CI-SIS</td>
+    <td>Cadre d’Interopérabilité des Systèmes d’Information de Santé</td>
+  </tr>
+  <tr>
+    <td>CNSA</td>
+    <td>Caisse Nationale de Solidarité pour l’Autonomie</td>
+  </tr>
+  <tr>
+    <td>ESSMS</td>
+    <td>Etablissement et Services sociaux ou Médico-Sociaux</td>
+  </tr>
+  <tr>
+    <td>HL7</td>
+    <td>Health Level 7</td>
+  </tr>
+  <tr>
+    <td>INS</td>
+    <td>Identité Nationale de Santé</td>
+  </tr>
+  <tr>
+    <td>NIA</td>
+    <td>Numéro d'Immatriculation d'Attente</td>
+  </tr>
+  <tr>
+    <td>NIR</td>
+    <td>Numéro d'Inscription au Répertoire</td>
+  </tr>
+  <tr>
+    <td>TRE</td>
+    <td>Terminologie de REférence</td>
+  </tr>
+  <tr>
+    <td>JDV</td>
+    <td>Jeu De Valeur</td>
+  </tr>
+</table>
+
+<h4 id="nomenclatures">Nomenclatures</h4>
+
+<table style="width:100%">
+  <tr>
+    <th>Type de nomenclature</th>
+    <th>Format</th>
+    <th>Accès</th>
+  </tr>
+  <tr>
+    <td rowspan="2">Nomenclatures des Objets de Santé (NOS)</td>
+    <td>TRE_R*</td>
+    <td rowspan="2"><a href="https://mos.esante.gouv.fr/NOS/">https://mos.esante.gouv.fr/NOS/</a></td>
+  </tr>
+  <tr>
+    <td>JDV_J*</td>
+  </tr>
+  <tr>
+    <td>Nomenclature ANS</td>
+    <td>TA_ASIP</td>
+    <td><a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs</a></td>
+  </tr>
+</table>
+
+<h4 id="documents-de-référence">Documents de référence</h4>
+
+<table style="width:100%">
+  <tr>
+    <th>Documents de références</th>
+  </tr>
+  <tr>
+    <td>[1] <a href="https://industriels.esante.gouv.fr/sites/default/files/media/document/asip_referentiel_identifiant_national_sante-liste-des-oid-des-autorites-d-affectation-des-ins_v0.1.pdf">ANS : INS – Liste des OID des autorités d’affectation des INS</a></td>
+  </tr>
+  <tr>
+    <td>[2] <a href="https://esante.gouv.fr/annexe-sources-des-donnees-personnes-et-structures">ANS : CI-SIS – Annexe – Source des données métier pour les professionnels de santé</a></td>
+  </tr>
+</table>
+
+<p><a href=""></a></p>
+
+
 
 </div>
-
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
@@ -249,29 +392,6 @@
 
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
-
-  <script type="text/javascript">
-    try {
-      var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index');
-    } catch(exception) {
-    }
-
-    if (!currentTabIndex)
-      currentTabIndex = '0';
-
-    $( '#tabs' ).tabs({
-      active: currentTabIndex,
-      activate: function( event, ui ) {
-        var active = $('.selector').tabs('option', 'active');
-        currentTabIndex = ui.newTab.index();
-        document.activeElement.blur();
-        try {
-          sessionStorage.setItem('fhir-resource-tab-index', currentTabIndex);
-        } catch(exception) {
-        }
-      }
-    });
-  </script>
 
   <script type="text/javascript">
     $(document).ready(function(){
@@ -290,7 +410,7 @@
             <tr>
               <td style="text-align:left">&#xA0;
 
-                <span style="visibility:hidden">&lt;prev</span>
+                <a href="modelisation_contenu.html">&lt;prev</a>
 
               </td>
               <td style="text-align:center">
@@ -298,7 +418,7 @@
               </td>
               <td style="text-align:right">&#xA0;
 
-                <span style="visibility:hidden">next&gt;</span>
+                <a href="specifications_techniques.html">next&gt;</a>
 
               </td>
             </tr>

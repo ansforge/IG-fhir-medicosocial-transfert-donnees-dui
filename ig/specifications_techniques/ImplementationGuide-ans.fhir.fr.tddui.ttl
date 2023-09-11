@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "ExampleIG"] ; # 
   fhir:title [ fhir:v "ANS IG Example"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-09-11T11:43:09+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-09-11T14:46:38+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -681,6 +681,14 @@
        ] [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "contenu_dossier.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "contenu_dossier.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Contenu Dossier" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
            fhir:value [ fhir:v "specifications_techniques.html"^^xsd:anyURI ]
          ] ) ;
          fhir:name [ fhir:v "specifications_techniques.html"^^xsd:anyURI ] ;
@@ -700,7 +708,7 @@
              fhir:value [ fhir:v "st_flux1.html"^^xsd:anyURI ]
            ] ) ;
            fhir:name [ fhir:v "st_flux1.html"^^xsd:anyURI ] ;
-           fhir:title [ fhir:v "Flux 01" ] ;
+           fhir:title [ fhir:v "Flux 1 - Ajout d'un document" ] ;
            fhir:generation [ fhir:v "markdown" ]
          ] [
            fhir:extension ( [
@@ -708,7 +716,7 @@
              fhir:value [ fhir:v "st_flux2.html"^^xsd:anyURI ]
            ] ) ;
            fhir:name [ fhir:v "st_flux2.html"^^xsd:anyURI ] ;
-           fhir:title [ fhir:v "Flux 02" ] ;
+           fhir:title [ fhir:v "Flux 2 - Ajout d'un lot de documents" ] ;
            fhir:generation [ fhir:v "markdown" ]
          ] )
        ] [
