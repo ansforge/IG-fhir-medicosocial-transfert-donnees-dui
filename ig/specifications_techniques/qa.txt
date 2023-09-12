@@ -1,9 +1,9 @@
 ﻿ExampleIG : Validation Results
 =========================================
 
-err = 0, warn = 19, info = 7
+err = 0, warn = 14, info = 5
 IG Publisher Version: 1.4.5
-Generated Mon Sep 11 14:47:12 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.tddui#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/tddui)
+Generated Tue Sep 12 10:01:33 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.tddui#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/tddui)
  Build Errors : 21 / 4 / 0
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/fsh-generated/resources/CodeSystem-competence-code-system : 0 / 2 / 2
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/fsh-generated/resources/CodeSystem-type-carte-code-system : 0 / 2 / 2
@@ -11,8 +11,8 @@ Generated Mon Sep 11 14:47:12 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.tddui
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/fsh-generated/resources/Patient-frpatient-exemple : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/fsh-generated/resources/StructureDefinition-EyeColor : 0 / 2 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/fsh-generated/resources/StructureDefinition-fr-patient : 0 / 0 / 3
- /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/fsh-generated/resources/ValueSet-EyeColorVS : 0 / 4 / 2
- /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/fsh-generated/resources/ValueSet-MeltingPotVS : 0 / 3 / 3
+ /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/fsh-generated/resources/ValueSet-EyeColorVS : 0 / 1 / 1
+ /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/fsh-generated/resources/ValueSet-MeltingPotVS : 0 / 1 / 2
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/fsh-generated/resources/ValueSet-ModifiedAdministrativeGender : 0 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/fsh-generated/resources/ValueSet-TypeCarteVS : 0 / 1 / 1
 </table>
@@ -59,15 +59,8 @@ WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir
 INFORMATION: StructureDefinition/fr-patient: StructureDefinition.snapshot.element[18].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 INFORMATION: StructureDefinition/fr-patient: StructureDefinition.snapshot.element[40].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 == fsh-generated/resources/ValueSet-EyeColorVS.json ==
-WARNING: ValueSet/EyeColorVS: ValueSet.compose.include[0].concept[0]: The code '405738005' is not valid in the system http://snomed.info/sct
-INFORMATION: ValueSet/EyeColorVS: ValueSet.compose.include[0].concept[0]: Error from server: Assertion failed (fsl_base.pas, line 1085)
-WARNING: ValueSet/EyeColorVS: ValueSet.compose.include[0].concept[1]: The code '371254008' is not valid in the system http://snomed.info/sct
-WARNING: ValueSet/EyeColorVS: ValueSet.compose.include[0].concept[2]: The code '54662009' is not valid in the system http://snomed.info/sct
 WARNING: ValueSet/EyeColorVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-MeltingPotVS.json ==
-WARNING: ValueSet/MeltingPotVS: ValueSet.compose.include[0].concept[0]: The code '405738005' is not valid in the system http://snomed.info/sct
-INFORMATION: ValueSet/MeltingPotVS: ValueSet.compose.include[0].concept[0]: Error from server: Assertion failed (fsl_base.pas, line 1085)
-WARNING: ValueSet/MeltingPotVS: ValueSet.compose.include[0].concept[1]: The code '371254008' is not valid in the system http://snomed.info/sct
 INFORMATION: ValueSet/MeltingPotVS: ValueSet.compose.include[0]: This include has some concepts with displays and some without - check that this is what is intended
 WARNING: ValueSet/MeltingPotVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-ModifiedAdministrativeGender.json ==

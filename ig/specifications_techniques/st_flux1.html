@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>ANS.FHIR.FR.TDDUI\Flux 1 - Ajout d&#39;un document - FHIR v4.0.1</title>
+    <title>ANS.FHIR.FR.TDDUI\Flux 1 - Ajout d&#39;un dossier - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -118,10 +118,10 @@
         <a href="construction_des_flux.html">Construction des flux</a>
       </li>
       <li>
-        <a href="st_flux1.html">Flux 1 - Ajout d&apos;un document</a>
+        <a href="st_flux1.html">Flux 1 - Ajout d&apos;un dossier</a>
       </li>
       <li>
-        <a href="st_flux2.html">Flux 2 - Ajout d&apos;un lot de documents</a>
+        <a href="st_flux2.html">Flux 2 - Ajout d&apos;un lot de dossiers</a>
       </li>
     </ul>
   </li>
@@ -168,7 +168,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='specifications_techniques.html'><b>Specifications Techniques</b></a></li><li><b>Flux 1 - Ajout d'un document</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='specifications_techniques.html'><b>Specifications Techniques</b></a></li><li><b>Flux 1 - Ajout d'un dossier</b></li>
 
           <span style="float:right;">
 
@@ -199,7 +199,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </style>
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Publication Build: This will be filled in by the publication tooling</p><!--EndReleaseHeader-->
-  <h2>Flux 1 - Ajout d&#39;un document</h2>
+  <h2>Flux 1 - Ajout d&#39;un dossier</h2>
   
 
 
@@ -214,12 +214,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#flux-11-ajoutdossier" id="markdown-toc-flux-11-ajoutdossier">Flux 1.1 AjoutDossier</a></li>
+  <li><a href="#flux-12-resultatajoutdossier" id="markdown-toc-flux-12-resultatajoutdossier">Flux 1.2 ResultatAjoutDossier</a></li>
+</ul>
+
 </div>
-<p>Ce flux permet l’ajout d’un document.</p>
+<p>Ce flux permet l’ajout d’un dossier.</p>
 
 <div><?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="161px" preserveAspectRatio="none" style="width:389px;height:161px;background:#FFFFFF;" version="1.1" viewBox="0 0 389 161" width="389px" zoomAndPan="magnify"><defs><filter height="300%" id="f186tzvxbyinvr" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0" /><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0" /><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3" /><feBlend in="SourceGraphic" in2="blurOut3" mode="normal" /></filter></defs><g><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="53" x2="53" y1="40.2969" y2="118.5625" /><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="291.5" x2="291.5" y1="40.2969" y2="118.5625" /><rect fill="#FEFECE" filter="url(#f186tzvxbyinvr)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="93" x="5" y="5" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="79" x="12" y="24.9951">Logiciel DUI</text><rect fill="#FEFECE" filter="url(#f186tzvxbyinvr)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="93" x="5" y="117.5625" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="79" x="12" y="137.5576">Logiciel DUI</text><rect fill="#FEFECE" filter="url(#f186tzvxbyinvr)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="172" x="203.5" y="5" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="158" x="210.5" y="24.9951">Logiciel DUI ou SIDOBA</text><rect fill="#FEFECE" filter="url(#f186tzvxbyinvr)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="172" x="203.5" y="117.5625" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="158" x="210.5" y="137.5576">Logiciel DUI ou SIDOBA</text><polygon fill="#A80036" points="279.5,67.4297,289.5,71.4297,279.5,75.4297,283.5,71.4297" style="stroke:#A80036;stroke-width:1.0;" /><line style="stroke:#A80036;stroke-width:1.0;" x1="53.5" x2="285.5" y1="71.4297" y2="71.4297" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="214" x="60.5" y="66.3638">POST [base]/DocumentReference</text><polygon fill="#A80036" points="64.5,96.5625,54.5,100.5625,64.5,104.5625,60.5,100.5625" style="stroke:#A80036;stroke-width:1.0;" /><line style="stroke:#A80036;stroke-width:1.0;" x1="58.5" x2="290.5" y1="100.5625" y2="100.5625" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="46" x="70.5" y="95.4966">OK 201</text></g></svg></div>
+
+<h3 id="flux-11-ajoutdossier">Flux 1.1 AjoutDossier</h3>
+
+<h3 id="flux-12-resultatajoutdossier">Flux 1.2 ResultatAjoutDossier</h3>
 
 
 
@@ -267,7 +275,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Sep 11, 2023 14:46+0000">2023-09-11</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 12, 2023 10:01+0000">2023-09-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
