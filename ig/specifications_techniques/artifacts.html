@@ -118,10 +118,10 @@
         <a href="construction_des_flux.html">Construction des flux</a>
       </li>
       <li>
-        <a href="st_flux1.html">Flux 1 - Ajout d&apos;un dossier</a>
+        <a href="st_flux1.html">Flux 1 - Transfert d&apos;un dossier</a>
       </li>
       <li>
-        <a href="st_flux2.html">Flux 2 - Ajout d&apos;un lot de dossiers</a>
+        <a href="st_flux2.html">Flux 2 - Transfert d&apos;un lot de dossiers</a>
       </li>
     </ul>
   </li>
@@ -176,7 +176,7 @@
 
             <a href="#bottom">bottom</a>
 
-          | <a href="StructureDefinition-fr-patient.html">next&gt;</a>
+          | <a href="StructureDefinition-dui-bundle.html">next&gt;</a>
 
           </span>
 
@@ -212,18 +212,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li>
          <a href="#1">Structures: Resource Profiles</a>
       </li>
-      <li>
-         <a href="#2">Structures: Extension Definitions</a>
-      </li>
-      <li>
-         <a href="#3">Terminology: Value Sets</a>
-      </li>
-      <li>
-         <a href="#4">Terminology: Code Systems</a>
-      </li>
-      <li>
-         <a href="#5">Example: Example Instances</a>
-      </li>
    </ul>
 </div>
 <div xmlns:html="http://www.w3.org/1999/xhtml"
@@ -241,127 +229,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-fr-patient.html"
-                     title="StructureDefinition/fr-patient">Patient français</a>
+                  <a href="StructureDefinition-dui-bundle.html"
+                     title="StructureDefinition/dui-bundle">DUIBundle</a>
                </td>
                <td>
-<p>Description du patient français</p>
-</td>
-            </tr>
-         </tbody>
-      </table>
-   </p>
-   <a name="2"> </a>
-   <h3>Structures: Extension Definitions </h3>
-   <p>
-    <p>Ces structures définissent les contraintes sur les extensions FHIR par les systèmes conformes à cet Implementation Guide (IG).</p>
-</p>
-   <p>
-      <table class="grid">
-         <col style="width:20%"/>
-         <tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-EyeColor.html"
-                     title="StructureDefinition/EyeColor">EyeColor</a>
-               </td>
-               <td>
-<p>Eye color extension</p>
-</td>
-            </tr>
-         </tbody>
-      </table>
-   </p>
-   <a name="3"> </a>
-   <h3>Terminology: Value Sets </h3>
-   <p>
-    <p>Les ressources ValueSet définissent les ensembles de codes utilisés par les systèmes conformes à cet Implementation Guide (IG). Equivalent NOS : Jeu De Valeur (JDV).</p>
-</p>
-   <p>
-      <table class="grid">
-         <col style="width:20%"/>
-         <tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-EyeColorVS.html" title="ValueSet/EyeColorVS">EyeColor Value Set</a>
-               </td>
-               <td>
-<p>Different eye colors.</p>
+<p>Profil générique créé dans le contexte du transfert de données DUI pour véhiculer un lot de dossiers au format CDA.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-MeltingPotVS.html" title="ValueSet/MeltingPotVS">Melting Pot Value Set</a>
+                  <a href="StructureDefinition-dui-documentreference.html"
+                     title="StructureDefinition/dui-documentreference">DUIDocumentReference</a>
                </td>
                <td>
-<p>Melting Pot Value Set.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-ModifiedAdministrativeGender.html"
-                     title="ValueSet/ModifiedAdministrativeGender">ModifiedAdministrativeGender</a>
-               </td>
-               <td>
-<p>AdministrativeGender without unknown code</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-TypeCarteVS.html" title="ValueSet/TypeCarteVS">Type Carte Value Set</a>
-               </td>
-               <td>
-<p>Type Carte Value Set.</p>
-</td>
-            </tr>
-         </tbody>
-      </table>
-   </p>
-   <a name="4"> </a>
-   <h3>Terminology: Code Systems </h3>
-   <p>
-    <p>Les ressources CodeSystem définissent les ensembles de codes définis par les systèmes conformes à cet Implementation Guide (IG). Equivalent NOS : Terminologie de REference (TRE).</p>
-</p>
-   <p>
-      <table class="grid">
-         <col style="width:20%"/>
-         <tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-competence-code-system.html"
-                     title="CodeSystem/competence-code-system">Compétences CodeSystem</a>
-               </td>
-               <td>
-<p>Compétences des professionnels de santé.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-type-carte-code-system.html"
-                     title="CodeSystem/type-carte-code-system">Type de carte</a>
-               </td>
-               <td>
-<p>Type de carte professionnelle et personnelle.</p>
-</td>
-            </tr>
-         </tbody>
-      </table>
-   </p>
-   <a name="5"> </a>
-   <h3>Example: Example Instances </h3>
-   <p>
-    <p>Ces exemples dévoilent à quoi doivent ressembler les données produites et consommées par les systèmes conformes à cet Implementation Guide (IG).</p>
-</p>
-   <p>
-      <table class="grid">
-         <col style="width:20%"/>
-         <tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Patient-frpatient-exemple.html" title="Patient/frpatient-exemple">frpatient-exemple</a>
-               </td>
-               <td>
-<p>Exemple d’un patient français</p>
+<p>Profil générique créé dans le contexte du transfert de données DUI pour véhiculer le dossier au format CDA.</p>
 </td>
             </tr>
          </tbody>
@@ -403,7 +284,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="StructureDefinition-fr-patient.html">next&gt;</a>
+                <a href="StructureDefinition-dui-bundle.html">next&gt;</a>
 
               </td>
             </tr>
@@ -413,7 +294,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 12, 2023 10:01+0000">2023-09-12</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 12, 2023 14:26+0000">2023-09-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
