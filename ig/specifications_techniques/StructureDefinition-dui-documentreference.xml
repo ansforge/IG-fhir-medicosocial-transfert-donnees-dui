@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="DUIDocumentReference"/>
   <status value="draft"/>
-  <date value="2023-09-12T14:26:59+00:00"/>
+  <date value="2023-09-13T08:02:35+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -18,7 +18,7 @@
       <value value="https://esante.gouv.fr"/>
     </telecom>
   </contact>
-  <description value="Profil générique créé dans le contexte du transfert de données DUI pour véhiculer le dossier au format CDA."/>
+  <description value="Profil générique créé dans le contexte du transfert de données DUI pour véhiculer le dossier au format CDA, inclus dans DocumentReference.attachment.data."/>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="workflow"/>
@@ -1694,7 +1694,7 @@
     </element>
     <element id="DocumentReference.content">
       <path value="DocumentReference.content"/>
-      <short value="Document referenced"/>
+      <short value="Document contenu."/>
       <definition value="The document and format referenced. There may be multiple content element repetitions, each with a different format."/>
       <min value="1"/>
       <max value="1"/>
@@ -1715,6 +1715,7 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <mustSupport value="true"/>
       <isSummary value="true"/>
       <mapping>
         <identity value="rim"/>
@@ -1933,6 +1934,462 @@
       <mapping>
         <identity value="cda"/>
         <map value="ClinicalDocument/languageCode, ClinicalDocument/title, ClinicalDocument/date"/>
+      </mapping>
+    </element>
+    <element id="DocumentReference.content.attachment.id">
+      <path value="DocumentReference.content.attachment.id"/>
+      <representation value="xmlAttr"/>
+      <short value="Unique id for inter-element referencing"/>
+      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueUrl value="string"/>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="DocumentReference.content.attachment.extension">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0"/>
+      </extension>
+      <path value="DocumentReference.content.attachment.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Additional content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="DocumentReference.content.attachment.contentType">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0"/>
+      </extension>
+      <path value="DocumentReference.content.attachment.contentType"/>
+      <short value="Mime type of the content, with charset etc."/>
+      <definition value="Identifies the type of the data in the attachment and allows a method to be chosen to interpret or render the data. Includes mime type parameters such as charset where appropriate."/>
+      <comment value="Note that FHIR strings SHALL NOT exceed 1MB in size"/>
+      <requirements value="Processors of the data need to be able to know how to interpret the data."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Attachment.contentType"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <example>
+        <label value="General"/>
+        <valueCode value="text/plain; charset=UTF-8, image/png"/>
+      </example>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <isSummary value="true"/>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="MimeType"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+          <valueBoolean value="true"/>
+        </extension>
+        <strength value="required"/>
+        <description value="The mime type of an attachment. Any valid mime type is allowed."/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/mimetypes|4.0.1"/>
+      </binding>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+      <mapping>
+        <identity value="v2"/>
+        <map value="ED.2+ED.3/RP.2+RP.3. Note conversion may be needed if old style values are being used"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="./mediaType, ./charset"/>
+      </mapping>
+    </element>
+    <element id="DocumentReference.content.attachment.language">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0"/>
+      </extension>
+      <path value="DocumentReference.content.attachment.language"/>
+      <short value="Human language of the content (BCP-47)"/>
+      <definition value="The human language of the content. The value can be any valid value according to BCP 47."/>
+      <comment value="Note that FHIR strings SHALL NOT exceed 1MB in size"/>
+      <requirements value="Users need to be able to choose between the languages in a set of attachments."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Attachment.language"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <example>
+        <label value="General"/>
+        <valueCode value="en-AU"/>
+      </example>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <isSummary value="true"/>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
+          <valueCanonical value="http://hl7.org/fhir/ValueSet/all-languages"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="Language"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+          <valueBoolean value="true"/>
+        </extension>
+        <strength value="preferred"/>
+        <description value="A human language."/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/languages"/>
+      </binding>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="./language"/>
+      </mapping>
+    </element>
+    <element id="DocumentReference.content.attachment.data">
+      <path value="DocumentReference.content.attachment.data"/>
+      <short value="Le document CDA est contenu dans l'élément .data au format base64."/>
+      <definition value="The actual data of the attachment - a sequence of bytes, base64 encoded."/>
+      <comment value="The base64-encoded data SHALL be expressed in the same character set as the base resource XML or JSON."/>
+      <requirements value="The data needs to able to be transmitted inline."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Attachment.data"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="base64Binary"/>
+      </type>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+      <mapping>
+        <identity value="v2"/>
+        <map value="ED.5"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="./data"/>
+      </mapping>
+    </element>
+    <element id="DocumentReference.content.attachment.url">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0"/>
+      </extension>
+      <path value="DocumentReference.content.attachment.url"/>
+      <short value="Uri where the data can be found"/>
+      <definition value="A location where the data can be accessed."/>
+      <comment value="If both data and url are provided, the url SHALL point to the same content as the data contains. Urls may be relative references or may reference transient locations such as a wrapping envelope using cid: though this has ramifications for using signatures. Relative URLs are interpreted relative to the service url, like a resource reference, rather than relative to the resource itself. If a URL is provided, it SHALL resolve to actual data."/>
+      <requirements value="The data needs to be transmitted by reference."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Attachment.url"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="url"/>
+      </type>
+      <example>
+        <label value="General"/>
+        <valueUrl value="http://www.acme.com/logo-small.png"/>
+      </example>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+      <mapping>
+        <identity value="v2"/>
+        <map value="RP.1+RP.2 - if they refer to a URL (see v2.6)"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="./reference/literal"/>
+      </mapping>
+    </element>
+    <element id="DocumentReference.content.attachment.size">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0"/>
+      </extension>
+      <path value="DocumentReference.content.attachment.size"/>
+      <short value="Number of bytes of content (if url provided)"/>
+      <definition value="The number of bytes of data that make up this attachment (before base64 encoding, if that is done)."/>
+      <comment value="The number of bytes is redundant if the data is provided as a base64binary, but is useful if the data is provided as a url reference."/>
+      <requirements value="Representing the size allows applications to determine whether they should fetch the content automatically in advance, or refuse to fetch it at all."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Attachment.size"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="unsignedInt"/>
+      </type>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A (needs data type R3 proposal)"/>
+      </mapping>
+    </element>
+    <element id="DocumentReference.content.attachment.hash">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0"/>
+      </extension>
+      <path value="DocumentReference.content.attachment.hash"/>
+      <short value="Hash of the data (sha-1, base64ed)"/>
+      <definition value="The calculated hash of the data using SHA-1. Represented using base64."/>
+      <comment value="The hash is calculated on the data prior to base64 encoding, if the data is based64 encoded. The hash is not intended to support digital signatures. Where protection against malicious threats a digital signature should be considered, see [Provenance.signature](http://hl7.org/fhir/R4/provenance-definitions.html#Provenance.signature) for mechanism to protect a resource with a digital signature."/>
+      <requirements value="Included so that applications can verify that the contents of a location have not changed due to technical failures (e.g., storage rot, transport glitch, incorrect version)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Attachment.hash"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="base64Binary"/>
+      </type>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".integrityCheck[parent::ED/integrityCheckAlgorithm=&quot;SHA-1&quot;]"/>
+      </mapping>
+    </element>
+    <element id="DocumentReference.content.attachment.title">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true"/>
+      </extension>
+      <path value="DocumentReference.content.attachment.title"/>
+      <short value="Label to display in place of the data"/>
+      <definition value="A label or set of text to display in place of the data."/>
+      <comment value="Note that FHIR strings SHALL NOT exceed 1MB in size"/>
+      <requirements value="Applications need a label to display to a human user in place of the actual data if the data cannot be rendered or perceived by the viewer."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Attachment.title"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <example>
+        <label value="General"/>
+        <valueString value="Official Corporate Logo"/>
+      </example>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="./title/data"/>
+      </mapping>
+    </element>
+    <element id="DocumentReference.content.attachment.creation">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0"/>
+      </extension>
+      <path value="DocumentReference.content.attachment.creation"/>
+      <short value="Date attachment was first created"/>
+      <definition value="The date that the attachment was first created."/>
+      <requirements value="This is often tracked as an integrity issue for use of the attachment."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Attachment.creation"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A (needs data type R3 proposal)"/>
       </mapping>
     </element>
     <element id="DocumentReference.content.format">
@@ -2659,7 +3116,14 @@
     </element>
     <element id="DocumentReference.content">
       <path value="DocumentReference.content"/>
+      <short value="Document contenu."/>
       <max value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="DocumentReference.content.attachment.data">
+      <path value="DocumentReference.content.attachment.data"/>
+      <short value="Le document CDA est contenu dans l'élément .data au format base64."/>
+      <min value="1"/>
     </element>
   </differential>
 </StructureDefinition>
