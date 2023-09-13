@@ -227,7 +227,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="flux-21-transfertlotdossiers">Flux 2.1 TransfertLotDossiers</h3>
 
-<p>Le transfert du dossier est assuré par l’interaction FHIR <a href="https://hl7.org/fhir/R4/http.html#transaction">transaction</a>. L’émetteur du dossier envoie une requête HTTP POST dont le corps contient une ressource de type Bundle conforme au profil <a href="">DUIBundle</a> :</p>
+<p>Le transfert du dossier est assuré par l’interaction FHIR <a href="https://hl7.org/fhir/R4/http.html#transaction">transaction</a>. L’émetteur du dossier envoie une requête HTTP POST dont le corps contient une ressource de type Bundle conforme au profil <a href="StructureDefinition-dui-bundle.html">DUIBundle</a> :</p>
 
 <p><code class="language-plaintext highlighter-rouge">POST [base]/Bundle</code></p>
 
@@ -286,7 +286,7 @@ En cas d’échec, le récepteur doit répondre avec le code HTTPS approprié te
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 13, 2023 13:19+0000">2023-09-13</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 13, 2023 14:55+0000">2023-09-13</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
