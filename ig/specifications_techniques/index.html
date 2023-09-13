@@ -266,18 +266,21 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Les logiciels DUI doivent permettre, entre autres, de mieux construire et de suivre le projet personnalisé de la personne accompagnée, d’éviter les ruptures de parcours en cas d’évolution des besoins, de changement d’établissement médico-social, de retour à domicile ou d’hospitalisation.</p>
 
-<p>Dans la continuité des travaux menés dans le cadre du programme ESMS numérique, la CNSA et l’ANS créent un nouveau volet de la couche Métier « Transfert de données DUI ». L’objectif de ce volet est de définir la nature et le format des données à transmettre lors d’un export depuis un logiciel DUI afin d’assurer le transfert de données des usagers pour les cas d’usage définis dans la partie « Exemple de cas d’usage ». <!-- Lien --></p>
+<p>Dans la continuité des travaux menés dans le cadre du programme ESMS numérique, la CNSA et l’ANS créent un nouveau volet de la couche Métier « Transfert de données DUI ». L’objectif de ce volet est de définir la nature et le format des données à transmettre lors d’un export depuis un logiciel DUI afin d’assurer le transfert de données des usagers pour les cas d’usage définis dans la partie <a href="cadre_orientations.html#exemples-de-cas-dusage">Exemples de cas d’usage</a>.</p>
 
 <p>Cet guide d’implémentation contient :</p>
 <ul>
-  <li><a href="NormesStandards_TransfertDonneesDUI_V0.1-finale.pdf">L’étude des normes et standards</a></li>
+  <li>L’étude des normes et standards : <a href="NormesStandards_TransfertDonneesDUI_V0.1-finale.pdf">lien pdf</a></li>
+  <li>Les spécifications fonctionnelles : section <a href="cadre_orientations.html"> Spécifications fonctionnelles</a></li>
+  <li>La spécification technique de contenu : section <a href="contenu_dossier.html">Contenu du dossier</a></li>
+  <li>La spécification technique de transport : sections <a href="construction_des_flux.html">Description des flux</a> et <a href="artifacts.html">Ressources de conformité</a></li>
 </ul>
 
 <h3 id="acronymes">Acronymes</h3>
 
 <table style="width:100%">
   <tr>
-    <th>Acronyme</th>
+    <th>Sigle / Acronyme</th>
     <th>Définition</th>
   </tr>
   <tr>
@@ -287,6 +290,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <tr>
     <td>ARS</td>
     <td>Agence Régionale de Santé</td>
+  </tr>
+  <tr>
+    <td>CDA</td>
+    <td>Clinical Document</td>
   </tr>
   <tr>
     <td>CI-SIS</td>
@@ -317,12 +324,28 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <td>Groupe Iso-Ressource</td>
   </tr>
   <tr>
+    <td>HL7</td>
+    <td>Health Level 7</td>
+  </tr>
+  <tr>
+    <td>INS</td>
+    <td>Identité Nationale de Santé</td>
+  </tr>
+  <tr>
     <td>IPS</td>
     <td>International Patient Summary</td>
   </tr>
   <tr>
     <td>MDPH</td>
     <td>Maison Départementale des Personnes Handicapées</td>
+  </tr>
+  <tr>
+    <td>NIA</td>
+    <td>Numéro d'Immatriculation d'Attente</td>
+  </tr>
+  <tr>
+    <td>NIR</td>
+    <td>Numéro d'Inscription au Répertoire</td>
   </tr>
   <tr>
     <td>RGPD</td>
@@ -335,6 +358,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <tr>
     <td>SIDOBA</td>
     <td>Système d’Information de l’Offre de la Branche Autonomie</td>
+  </tr>
+  <tr>
+    <td>TRE</td>
+    <td>Terminologie de REférence</td>
+  </tr>
+  <tr>
+    <td>JDV</td>
+    <td>Jeu De Valeur</td>
   </tr>
 </table>
 
@@ -384,7 +415,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 13, 2023 10:41+0000">2023-09-13</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 13, 2023 13:19+0000">2023-09-13</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
