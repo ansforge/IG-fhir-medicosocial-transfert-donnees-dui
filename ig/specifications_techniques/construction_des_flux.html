@@ -115,7 +115,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="construction_des_flux.html">Construction des flux</a>
+        <a href="construction_des_flux.html">Vue d&apos;ensemble</a>
       </li>
       <li>
         <a href="st_flux1.html">Flux 1 - Transfert d&apos;un dossier</a>
@@ -216,18 +216,32 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#flux-1" id="markdown-toc-flux-1">Flux 1</a></li>
-  <li><a href="#flux-2" id="markdown-toc-flux-2">Flux 2</a></li>
+  <li><a href="#flux-1---transfert-dun-dossier" id="markdown-toc-flux-1---transfert-dun-dossier">Flux 1 - Transfert d’un dossier</a></li>
+  <li><a href="#flux-2---transfert-dun-lot-de-dossiers" id="markdown-toc-flux-2---transfert-dun-lot-de-dossiers">Flux 2 - Transfert d’un lot de dossiers</a></li>
 </ul>
 
 </div>
-<h3 id="flux-1">Flux 1</h3>
+<h3 id="flux-1---transfert-dun-dossier">Flux 1 - Transfert d’un dossier</h3>
 
-<p>Description du flux avec schémas et liens hypertextes vers le  <a href="st_flux1.html">flux 01</a></p>
+<ul>
+  <li>Le flux 1.1 de transfert d’un dossier repose sur l’interaction « create » de FHIR.</li>
+  <li>Le flux 1.2 de résultat de la demande de transfert d’un dossier sera assuré par la réponse à la requête HTTP POST.</li>
+</ul>
 
-<h3 id="flux-2">Flux 2</h3>
+<div><?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="192px" preserveAspectRatio="none" style="width:531px;height:192px;background:#FFFFFF;" version="1.1" viewBox="0 0 531 192" width="531px" zoomAndPan="magnify"><defs><filter height="300%" id="f18021sp2o28qq" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0" /><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0" /><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3" /><feBlend in="SourceGraphic" in2="blurOut3" mode="normal" /></filter></defs><g><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="53" x2="53" y1="40.2969" y2="148.8281" /><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="433.5" x2="433.5" y1="40.2969" y2="148.8281" /><rect fill="#FEFECE" filter="url(#f18021sp2o28qq)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="93" x="5" y="5" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="79" x="12" y="24.9951">Logiciel DUI</text><rect fill="#FEFECE" filter="url(#f18021sp2o28qq)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="93" x="5" y="147.8281" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="79" x="12" y="167.8232">Logiciel DUI</text><rect fill="#FEFECE" filter="url(#f18021sp2o28qq)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="172" x="345.5" y="5" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="158" x="352.5" y="24.9951">Logiciel DUI ou SIDOBA</text><rect fill="#FEFECE" filter="url(#f18021sp2o28qq)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="172" x="345.5" y="147.8281" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="158" x="352.5" y="167.8232">Logiciel DUI ou SIDOBA</text><polygon fill="#A80036" points="421.5,82.5625,431.5,86.5625,421.5,90.5625,425.5,86.5625" style="stroke:#A80036;stroke-width:1.0;" /><line style="stroke:#A80036;stroke-width:1.0;" x1="53.5" x2="427.5" y1="86.5625" y2="86.5625" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="49" x="60.5" y="66.3638">Flux 1.1</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="122" x="113.5" y="66.3638">TransfertDossier</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="0" x="239.5" y="66.3638" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="352" x="64.5" y="81.4966">HTTP POST [base] (+ ressource "DocumentReference")</text><polygon fill="#A80036" points="64.5,126.8281,54.5,130.8281,64.5,134.8281,60.5,130.8281" style="stroke:#A80036;stroke-width:1.0;" /><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="58.5" x2="432.5" y1="130.8281" y2="130.8281" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="49" x="70.5" y="110.6294">Flux 1.2</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="183" x="123.5" y="110.6294">ResultatTransfertDossier</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="0" x="310.5" y="110.6294" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="352" x="74.5" y="125.7622">HTTP 201 Created (+ ressource "DocumentReference")</text></g></svg></div>
 
-<p>Description du flux avec schémas et liens hypertextes vers le  <a href="st_flux2.html">flux 02</a></p>
+<p>Lien vers la description détaillée : <a href="st_flux1.html">flux 1</a></p>
+
+<h3 id="flux-2---transfert-dun-lot-de-dossiers">Flux 2 - Transfert d’un lot de dossiers</h3>
+
+<ul>
+  <li>Le flux 2.1 de transfert d’un lot de dossiers sera assuré par l’interaction « transaction » de FHIR. Le gestionnaire de partage de documents doit supporter les requêtes HTTP POST.</li>
+  <li>Le flux 2.2 de résultat de la demande de transfert d’un lot de dossiers sera assuré par la réponse à la requête HTTP POST.</li>
+</ul>
+
+<div><?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="192px" preserveAspectRatio="none" style="width:446px;height:192px;background:#FFFFFF;" version="1.1" viewBox="0 0 446 192" width="446px" zoomAndPan="magnify"><defs><filter height="300%" id="f1bgnyji59no3x" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0" /><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0" /><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3" /><feBlend in="SourceGraphic" in2="blurOut3" mode="normal" /></filter></defs><g><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="53" x2="53" y1="40.2969" y2="148.8281" /><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="348.5" x2="348.5" y1="40.2969" y2="148.8281" /><rect fill="#FEFECE" filter="url(#f1bgnyji59no3x)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="93" x="5" y="5" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="79" x="12" y="24.9951">Logiciel DUI</text><rect fill="#FEFECE" filter="url(#f1bgnyji59no3x)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="93" x="5" y="147.8281" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="79" x="12" y="167.8232">Logiciel DUI</text><rect fill="#FEFECE" filter="url(#f1bgnyji59no3x)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="172" x="260.5" y="5" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="158" x="267.5" y="24.9951">Logiciel DUI ou SIDOBA</text><rect fill="#FEFECE" filter="url(#f1bgnyji59no3x)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="172" x="260.5" y="147.8281" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="158" x="267.5" y="167.8232">Logiciel DUI ou SIDOBA</text><polygon fill="#A80036" points="336.5,82.5625,346.5,86.5625,336.5,90.5625,340.5,86.5625" style="stroke:#A80036;stroke-width:1.0;" /><line style="stroke:#A80036;stroke-width:1.0;" x1="53.5" x2="342.5" y1="86.5625" y2="86.5625" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="49" x="60.5" y="66.3638">Flux 2.1</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="153" x="113.5" y="66.3638">TransfertLotDossiers</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="0" x="270.5" y="66.3638" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="265" x="64.5" y="81.4966">HTTP POST [base] (+ ressource "Bundle")</text><polygon fill="#A80036" points="64.5,126.8281,54.5,130.8281,64.5,134.8281,60.5,130.8281" style="stroke:#A80036;stroke-width:1.0;" /><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="58.5" x2="347.5" y1="130.8281" y2="130.8281" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="49" x="70.5" y="110.6294">Flux 2.2</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="214" x="123.5" y="110.6294">ResultatTransfertLotDossiers</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="0" x="341.5" y="110.6294" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="232" x="74.5" y="125.7622">HTTP 200 OK (+ ressource "Bundle")</text></g></svg></div>
+
+<p>Lien vers la description détaillée : <a href="st_flux2.html">flux 2</a></p>
 
 
 
@@ -275,7 +289,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 13, 2023 10:23+0000">2023-09-13</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 13, 2023 10:41+0000">2023-09-13</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
