@@ -10,6 +10,16 @@
     single schematron that validates contained resources (if you have any) 
   -->
   <sch:pattern>
+    <sch:title>f:DocumentReference</sch:title>
+    <sch:rule context="f:DocumentReference">
+      <sch:assert test="count(f:masterIdentifier) &gt;= 1">masterIdentifier: minimum cardinality of 'masterIdentifier' is 1</sch:assert>
+      <sch:assert test="count(f:identifier) &lt;= 0">identifier: maximum cardinality of 'identifier' is 0</sch:assert>
+      <sch:assert test="count(f:docStatus) &lt;= 0">docStatus: maximum cardinality of 'docStatus' is 0</sch:assert>
+      <sch:assert test="count(f:category) &lt;= 1">category: maximum cardinality of 'category' is 1</sch:assert>
+      <sch:assert test="count(f:content) &lt;= 1">content: maximum cardinality of 'content' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>f:DocumentReference/f:meta</sch:title>
     <sch:rule context="f:DocumentReference/f:meta">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>

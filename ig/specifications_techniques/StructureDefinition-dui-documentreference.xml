@@ -10,7 +10,7 @@
   <name value="DUIDocumentReference"/>
   <title value="DUI Document Reference"/>
   <status value="draft"/>
-  <date value="2023-09-18T08:18:21+00:00"/>
+  <date value="2023-09-18T14:13:30+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -754,12 +754,6 @@
       </mapping>
     </element>
     <element id="DocumentReference.modifierExtension">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="DocumentReference.modifierExtension"/>
       <slicing>
         <discriminator>
@@ -769,14 +763,10 @@
         <description value="Extensions are always sliced by (at least) url"/>
         <rules value="open"/>
       </slicing>
-      <short value="Extensions that cannot be ignored"/>
-      <definition value="May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."/>
-      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
-      <requirements value="Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension)."/>
-      <alias value="extensions"/>
-      <alias value="user content"/>
+      <short value="Extension"/>
+      <definition value="An Extension"/>
       <min value="0"/>
-      <max value="*"/>
+      <max value="0"/>
       <base>
         <path value="DomainResource.modifierExtension"/>
         <min value="0"/>
@@ -804,14 +794,6 @@
       </constraint>
       <isModifier value="true"/>
       <isModifierReason value="Modifier extensions are expected to modify the meaning or interpretation of the resource that contains them"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="DocumentReference.masterIdentifier">
       <path value="DocumentReference.masterIdentifier"/>
@@ -819,7 +801,7 @@
       <definition value="Document identifier as assigned by the source of the document. This identifier is specific to this version of the document. This unique identifier may be used elsewhere to identify this version of the document."/>
       <comment value="CDA Document Id extension and root."/>
       <requirements value="The structure and format of this Id shall be consistent with the specification corresponding to the formatCode attribute. (e.g. for a DICOM standard document a 64-character numeric UID, for an HL7 CDA format a serialization of the CDA Document Id extension and root in the form &quot;oid^extension&quot;, where OID is a 64 digits max, and the Id is a 16 UTF-8 char max. If the OID is coded without the extension then the '^' character shall not be included.)."/>
-      <min value="0"/>
+      <min value="1"/>
       <max value="1"/>
       <base>
         <path value="DocumentReference.masterIdentifier"/>
@@ -890,7 +872,7 @@
       <short value="Other identifiers for the document"/>
       <definition value="Other identifiers associated with the document, including version independent identifiers."/>
       <min value="0"/>
-      <max value="*"/>
+      <max value="0"/>
       <base>
         <path value="DocumentReference.identifier"/>
         <min value="0"/>
@@ -1013,18 +995,12 @@
       </mapping>
     </element>
     <element id="DocumentReference.docStatus">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="DocumentReference.docStatus"/>
       <short value="preliminary | final | amended | entered-in-error"/>
       <definition value="The status of the underlying document."/>
       <comment value="The document that is pointed to might be in various lifecycle states."/>
       <min value="0"/>
-      <max value="1"/>
+      <max value="0"/>
       <base>
         <path value="DocumentReference.docStatus"/>
         <min value="0"/>
@@ -1161,7 +1137,7 @@
       <comment value="Key metadata element describing the the category or classification of the document. This is a broader perspective that groups similar documents based on how they would be used. This is a primary key used in searching."/>
       <alias value="claxs"/>
       <min value="0"/>
-      <max value="*"/>
+      <max value="1"/>
       <base>
         <path value="DocumentReference.category"/>
         <min value="0"/>
@@ -1558,12 +1534,6 @@
       </mapping>
     </element>
     <element id="DocumentReference.relatesTo">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="DocumentReference.relatesTo"/>
       <short value="Relationships to other documents"/>
       <definition value="Relationships that this document has with other document references that already exist."/>
@@ -1587,6 +1557,7 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <mustSupport value="true"/>
       <isSummary value="true"/>
       <mapping>
         <identity value="rim"/>
@@ -1932,6 +1903,7 @@
         <expression value="f:securityLabel"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/dui-documentreference"/>
       </constraint>
+      <mustSupport value="true"/>
       <isSummary value="true"/>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
@@ -1984,9 +1956,9 @@
     <element id="DocumentReference.content">
       <path value="DocumentReference.content"/>
       <short value="Document contenu."/>
-      <definition value="The document and format referenced. There may be multiple content element repetitions, each with a different format."/>
+      <definition value="The document and format referenced."/>
       <min value="1"/>
-      <max value="*"/>
+      <max value="1"/>
       <base>
         <path value="DocumentReference.content"/>
         <min value="1"/>
@@ -3248,6 +3220,7 @@
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Observation"/>
       </constraint>
+      <mustSupport value="true"/>
       <mapping>
         <identity value="rim"/>
         <map value="n/a"/>
@@ -3339,24 +3312,37 @@
     </element>
   </snapshot>
   <differential>
+    <element id="DocumentReference">
+      <path value="DocumentReference"/>
+    </element>
     <element id="DocumentReference.meta.versionId">
       <path value="DocumentReference.meta.versionId"/>
       <short value="Numéro de version de la fiche d’un document attribué par le système cible. La valeur de la métadonnée version est égale à 1 pour la première version de la fiche. Cet élément est requis lorsque le flux envoyé correspond à une mise à jour des données d’une fiche."/>
       <mustSupport value="true"/>
     </element>
+    <element id="DocumentReference.modifierExtension">
+      <path value="DocumentReference.modifierExtension"/>
+      <max value="0"/>
+    </element>
     <element id="DocumentReference.masterIdentifier">
       <path value="DocumentReference.masterIdentifier"/>
       <short value="Représente l’identifiant unique global affecté au document par son créateur. Il est utilisable comme référence externe dans d’autres documents."/>
+      <min value="1"/>
       <mustSupport value="true"/>
     </element>
     <element id="DocumentReference.identifier">
       <path value="DocumentReference.identifier"/>
+      <max value="0"/>
       <mustSupport value="true"/>
     </element>
     <element id="DocumentReference.status">
       <path value="DocumentReference.status"/>
       <patternCode value="current"/>
       <mustSupport value="true"/>
+    </element>
+    <element id="DocumentReference.docStatus">
+      <path value="DocumentReference.docStatus"/>
+      <max value="0"/>
     </element>
     <element id="DocumentReference.type">
       <path value="DocumentReference.type"/>
@@ -3377,6 +3363,7 @@
     <element id="DocumentReference.category">
       <path value="DocumentReference.category"/>
       <short value="Représente la classe du document (compte rendu, imagerie médicale, traitement, certificat,...)."/>
+      <max value="1"/>
       <constraint>
         <key value="constr-bind-category"/>
         <severity value="error"/>
@@ -3427,6 +3414,10 @@
       </type>
       <mustSupport value="true"/>
     </element>
+    <element id="DocumentReference.relatesTo">
+      <path value="DocumentReference.relatesTo"/>
+      <mustSupport value="true"/>
+    </element>
     <element id="DocumentReference.description">
       <path value="DocumentReference.description"/>
       <short value="Commentaire associé au document."/>
@@ -3442,10 +3433,13 @@
         <expression value="f:securityLabel"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/dui-documentreference"/>
       </constraint>
+      <mustSupport value="true"/>
     </element>
     <element id="DocumentReference.content">
       <path value="DocumentReference.content"/>
       <short value="Document contenu."/>
+      <definition value="The document and format referenced."/>
+      <max value="1"/>
       <mustSupport value="true"/>
     </element>
     <element id="DocumentReference.content.attachment.contentType">
@@ -3558,6 +3552,7 @@
         <code value="Reference"/>
         <targetProfile value="http://interopsante.org/fhir/StructureDefinition/FrPatient"/>
       </type>
+      <mustSupport value="true"/>
     </element>
   </differential>
 </StructureDefinition>

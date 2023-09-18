@@ -10,9 +10,20 @@
     single schematron that validates contained resources (if you have any) 
   -->
   <sch:pattern>
-    <sch:title>f:Bundle</sch:title>
-    <sch:rule context="f:Bundle">
-      <sch:assert test="count(f:entry) &gt;= 1">entry: minimum cardinality of 'entry' is 1</sch:assert>
+    <sch:title>f:Bundle/f:meta</sch:title>
+    <sch:rule context="f:Bundle/f:meta">
+      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
+      <sch:assert test="count(f:versionId) &lt;= 1">versionId: maximum cardinality of 'versionId' is 1</sch:assert>
+      <sch:assert test="count(f:lastUpdated) &lt;= 1">lastUpdated: maximum cardinality of 'lastUpdated' is 1</sch:assert>
+      <sch:assert test="count(f:source) &lt;= 1">source: maximum cardinality of 'source' is 1</sch:assert>
+      <sch:assert test="count(f:profile) &gt;= 1">profile: minimum cardinality of 'profile' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:Bundle/f:entry</sch:title>
+    <sch:rule context="f:Bundle/f:entry">
+      <sch:assert test="count(f:resource) &gt;= 1">resource: minimum cardinality of 'resource' is 1</sch:assert>
+      <sch:assert test="count(f:request) &gt;= 1">request: minimum cardinality of 'request' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
 </sch:schema>
