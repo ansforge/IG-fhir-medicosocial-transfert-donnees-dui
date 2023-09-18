@@ -8,8 +8,9 @@
   <url value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/dui-documentreference"/>
   <version value="0.1.0"/>
   <name value="DUIDocumentReference"/>
+  <title value="DUI Document Reference"/>
   <status value="draft"/>
-  <date value="2023-09-15T08:58:52+00:00"/>
+  <date value="2023-09-18T08:18:21+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -197,6 +198,341 @@
       <mapping>
         <identity value="rim"/>
         <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="DocumentReference.meta.id">
+      <path value="DocumentReference.meta.id"/>
+      <representation value="xmlAttr"/>
+      <short value="Unique id for inter-element referencing"/>
+      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueUrl value="string"/>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="DocumentReference.meta.extension">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0"/>
+      </extension>
+      <path value="DocumentReference.meta.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Additional content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="DocumentReference.meta.versionId">
+      <path value="DocumentReference.meta.versionId"/>
+      <short value="Numéro de version de la fiche d’un document attribué par le système cible. La valeur de la métadonnée version est égale à 1 pour la première version de la fiche. Cet élément est requis lorsque le flux envoyé correspond à une mise à jour des données d’une fiche."/>
+      <definition value="The version specific identifier, as it appears in the version portion of the URL. This value changes when the resource is created, updated, or deleted."/>
+      <comment value="The server assigns this value, and ignores what the client specifies, except in the case that the server is imposing version integrity on updates/deletes."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Meta.versionId"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="id"/>
+      </type>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="true"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="DocumentReference.meta.lastUpdated">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0"/>
+      </extension>
+      <path value="DocumentReference.meta.lastUpdated"/>
+      <short value="When the resource version last changed"/>
+      <definition value="When the resource last changed - e.g. when the version changed."/>
+      <comment value="This value is always populated except when the resource is first being created. The server / resource manager sets this value; what a client provides is irrelevant. This is equivalent to the HTTP Last-Modified and SHOULD have the same value on a [read](http://hl7.org/fhir/R4/http.html#read) interaction."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Meta.lastUpdated"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="instant"/>
+      </type>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="DocumentReference.meta.source">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0"/>
+      </extension>
+      <path value="DocumentReference.meta.source"/>
+      <short value="Identifies where the resource comes from"/>
+      <definition value="A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](http://hl7.org/fhir/R4/provenance.html#) information that can be used to track or differentiate the source of information in the resource. The source may identify another FHIR server, document, message, database, etc."/>
+      <comment value="In the provenance resource, this corresponds to Provenance.entity.what[x]. The exact use of the source (and the implied Provenance.entity.role) is left to implementer discretion. Only one nominated source is allowed; for additional provenance details, a full Provenance resource should be used. &#xA;&#xA;This element can be used to indicate where the current master source of a resource that has a canonical URL if the resource is no longer hosted at the canonical URL."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Meta.source"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="uri"/>
+      </type>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="DocumentReference.meta.profile">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0"/>
+      </extension>
+      <path value="DocumentReference.meta.profile"/>
+      <short value="Profiles this resource claims to conform to"/>
+      <definition value="A list of profiles (references to [StructureDefinition](http://hl7.org/fhir/R4/structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](http://hl7.org/fhir/R4/structuredefinition-definitions.html#StructureDefinition.url)."/>
+      <comment value="It is up to the server and/or other infrastructure of policy to determine whether/how these claims are verified and/or updated over time.  The list of profile URLs is a set."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Meta.profile"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="canonical"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/StructureDefinition"/>
+      </type>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="DocumentReference.meta.security">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0"/>
+      </extension>
+      <path value="DocumentReference.meta.security"/>
+      <short value="Security Labels applied to this resource"/>
+      <definition value="Security labels applied to this resource. These tags connect specific resources to the overall security policy and infrastructure."/>
+      <comment value="The security labels can be updated without changing the stated version of the resource. The list of security labels is a set. Uniqueness is based the system/code, and version and display are ignored."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Meta.security"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <isSummary value="true"/>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="SecurityLabels"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+          <valueBoolean value="true"/>
+        </extension>
+        <strength value="extensible"/>
+        <description value="Security Labels from the Healthcare Privacy and Security Classification System."/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/security-labels"/>
+      </binding>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+      <mapping>
+        <identity value="v2"/>
+        <map value="CE/CNE/CWE subset one of the sets of component 1-3 or 4-6"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="CV"/>
+      </mapping>
+      <mapping>
+        <identity value="orim"/>
+        <map value="fhir:Coding rdfs:subClassOf dt:CDCoding"/>
+      </mapping>
+    </element>
+    <element id="DocumentReference.meta.tag">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0"/>
+      </extension>
+      <path value="DocumentReference.meta.tag"/>
+      <short value="Tags applied to this resource"/>
+      <definition value="Tags applied to this resource. Tags are intended to be used to identify and relate resources to process and workflow, and applications are not required to consider the tags when interpreting the meaning of a resource."/>
+      <comment value="The tags can be updated without changing the stated version of the resource. The list of tags is a set. Uniqueness is based the system/code, and version and display are ignored."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Meta.tag"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <isSummary value="true"/>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="Tags"/>
+        </extension>
+        <strength value="example"/>
+        <description value="Codes that represent various types of tags, commonly workflow-related; e.g. &quot;Needs review by Dr. Jones&quot;."/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/common-tags"/>
+      </binding>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+      <mapping>
+        <identity value="v2"/>
+        <map value="CE/CNE/CWE subset one of the sets of component 1-3 or 4-6"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="CV"/>
+      </mapping>
+      <mapping>
+        <identity value="orim"/>
+        <map value="fhir:Coding rdfs:subClassOf dt:CDCoding"/>
       </mapping>
     </element>
     <element id="DocumentReference.implicitRules">
@@ -478,14 +814,8 @@
       </mapping>
     </element>
     <element id="DocumentReference.masterIdentifier">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="DocumentReference.masterIdentifier"/>
-      <short value="Master Version Specific Identifier"/>
+      <short value="Représente l’identifiant unique global affecté au document par son créateur. Il est utilisable comme référence externe dans d’autres documents."/>
       <definition value="Document identifier as assigned by the source of the document. This identifier is specific to this version of the document. This unique identifier may be used elsewhere to identify this version of the document."/>
       <comment value="CDA Document Id extension and root."/>
       <requirements value="The structure and format of this Id shall be consistent with the specification corresponding to the formatCode attribute. (e.g. for a DICOM standard document a 64-character numeric UID, for an HL7 CDA format a serialization of the CDA Document Id extension and root in the form &quot;oid^extension&quot;, where OID is a 64 digits max, and the Id is a 16 UTF-8 char max. If the OID is coded without the extension then the '^' character shall not be included.)."/>
@@ -508,6 +838,7 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <mustSupport value="true"/>
       <isSummary value="true"/>
       <mapping>
         <identity value="rim"/>
@@ -555,12 +886,6 @@
       </mapping>
     </element>
     <element id="DocumentReference.identifier">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="DocumentReference.identifier"/>
       <short value="Other identifiers for the document"/>
       <definition value="Other identifiers associated with the document, including version independent identifiers."/>
@@ -583,6 +908,7 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <mustSupport value="true"/>
       <isSummary value="true"/>
       <mapping>
         <identity value="rim"/>
@@ -622,12 +948,6 @@
       </mapping>
     </element>
     <element id="DocumentReference.status">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="DocumentReference.status"/>
       <short value="current | superseded | entered-in-error"/>
       <definition value="The status of this document reference."/>
@@ -642,6 +962,7 @@
       <type>
         <code value="code"/>
       </type>
+      <patternCode value="current"/>
       <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
@@ -651,6 +972,7 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <mustSupport value="true"/>
       <isModifier value="true"/>
       <isModifierReason value="This element is labelled as a modifier because it is a status element that contains status entered-in-error which means that the resource should not be treated as valid"/>
       <isSummary value="true"/>
@@ -751,15 +1073,9 @@
       </mapping>
     </element>
     <element id="DocumentReference.type">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="DocumentReference.type"/>
       <short value="Kind of document (LOINC if possible)"/>
-      <definition value="Specifies the particular kind of document referenced  (e.g. History and Physical, Discharge Summary, Progress Note). This usually equates to the purpose of making the document referenced."/>
+      <definition value="Représente le type du document."/>
       <comment value="Key metadata element describing the document that describes he exact type of document. Helps humans to assess whether the document is of interest when viewing a list of documents."/>
       <min value="0"/>
       <max value="1"/>
@@ -780,14 +1096,18 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <constraint>
+        <key value="constr-bind-type"/>
+        <severity value="error"/>
+        <human value="Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :&#xA;&#xD;&#xA; TRE_A05-TypeDocComplementaireCISIS, OID : 1.2.250.1.213.1.1.4.12&#xA;&#xD;&#xA; TRE_A04-TypeDocument-LOINC, OID : 2.16.840.1.113883.6.1&#xA;&#xD;&#xA; TRE_A12-NomenclatureASTM, OID : ASTM&#xA;&#xD;&#xA;Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J66-TypeCode-DMP).&#xD;&#xA;En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J07-XdsTypeCode-CISIS peut être utilisé."/>
+        <expression value="f:type"/>
+        <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/dui-documentreference"/>
+      </constraint>
+      <mustSupport value="true"/>
       <isSummary value="true"/>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="DocumentC80Type"/>
-        </extension>
         <strength value="preferred"/>
-        <description value="Precise type of clinical document."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/c80-doc-typecodes"/>
+        <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS"/>
       </binding>
       <mapping>
         <identity value="rim"/>
@@ -835,14 +1155,8 @@
       </mapping>
     </element>
     <element id="DocumentReference.category">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="DocumentReference.category"/>
-      <short value="Categorization of document"/>
+      <short value="Représente la classe du document (compte rendu, imagerie médicale, traitement, certificat,...)."/>
       <definition value="A categorization for the type of document referenced - helps for indexing and searching. This may be implied by or derived from the code specified in the DocumentReference.type."/>
       <comment value="Key metadata element describing the the category or classification of the document. This is a broader perspective that groups similar documents based on how they would be used. This is a primary key used in searching."/>
       <alias value="claxs"/>
@@ -865,14 +1179,18 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <constraint>
+        <key value="constr-bind-category"/>
+        <severity value="error"/>
+        <human value="Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :&#xA;-&#x9;TRE_A03-ClasseDocument-CISIS, OID : 1.2.250.1.213.1.1.4.1&#xA;-&#x9;TRE_A10-NomenclatureURN, OID : URN&#xA;Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J57-ClassCode-DMP).&#xA;En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J06-XdsClassCode-CISIS peut être utilisé."/>
+        <expression value="f:category"/>
+        <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/dui-documentreference"/>
+      </constraint>
+      <mustSupport value="true"/>
       <isSummary value="true"/>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="DocumentC80Class"/>
-        </extension>
-        <strength value="example"/>
-        <description value="High-level kind of a clinical document at a macro level."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/document-classcodes"/>
+        <strength value="preferred"/>
+        <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS"/>
       </binding>
       <mapping>
         <identity value="rim"/>
@@ -912,14 +1230,8 @@
       </mapping>
     </element>
     <element id="DocumentReference.subject">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="DocumentReference.subject"/>
-      <short value="Who/what is the subject of the document"/>
+      <short value="Patient concerné par ce document. La ressource référencée peut être présente sous l’élément DocumentReference.contained ou via le champ identifier."/>
       <definition value="Who or what the document is about. The document can be about a person, (patient or healthcare practitioner), a device (e.g. a machine) or even a group of subjects (such as a document about a herd of farm animals, or a set of patients that share a common exposure)."/>
       <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository."/>
       <min value="0"/>
@@ -931,10 +1243,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
+        <targetProfile value="http://interopsante.org/fhir/StructureDefinition/FrPatient"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -996,14 +1305,8 @@
       </mapping>
     </element>
     <element id="DocumentReference.date">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="DocumentReference.date"/>
-      <short value="When this document reference was created"/>
+      <short value="Représente la date de création de la ressource DocumentReference dans FHIR"/>
       <definition value="When the document reference was created."/>
       <comment value="Referencing/indexing time is used for tracking, organizing versions and searching."/>
       <alias value="indexed"/>
@@ -1026,6 +1329,7 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <mustSupport value="true"/>
       <isSummary value="true"/>
       <mapping>
         <identity value="rim"/>
@@ -1049,14 +1353,8 @@
       </mapping>
     </element>
     <element id="DocumentReference.author">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="DocumentReference.author"/>
-      <short value="Who and/or what authored the document"/>
+      <short value="Personnes physiques ou morales et/ou les dispositifs auteurs d'un document."/>
       <definition value="Identifies who is responsible for adding the information to the document."/>
       <comment value="Not necessarily who did the actual data entry (i.e. typist) or who was the source (informant)."/>
       <min value="0"/>
@@ -1068,12 +1366,12 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+        <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole"/>
+        <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner"/>
+        <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
+        <targetProfile value="http://interopsante.org/fhir/StructureDefinition/FrPatient"/>
+        <targetProfile value="http://interopsante.org/fhir/StructureDefinition/FrRelatedPerson"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -1092,6 +1390,7 @@
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Observation"/>
       </constraint>
+      <mustSupport value="true"/>
       <isSummary value="true"/>
       <mapping>
         <identity value="rim"/>
@@ -1127,14 +1426,8 @@
       </mapping>
     </element>
     <element id="DocumentReference.authenticator">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="DocumentReference.authenticator"/>
-      <short value="Who/what authenticated the document"/>
+      <short value="Cet attribut représente l’acteur validant le document et prenant la responsabilité du contenu médical de celui-ci. Il peut s’agir de l’auteur du document si celui-ci est une personne et s’il endosse la responsabilité du contenu médical de ses documents. Si l’auteur est un dispositif, cet attribut doit représenter la personne responsable de l’action effectuée par le dispositif."/>
       <definition value="Which person or organization authenticates that this document is valid."/>
       <comment value="Represents a participant within the author institution who has legally authenticated or attested the document. Legal authentication implies that a document has been signed manually or electronically by the legal Authenticator."/>
       <min value="0"/>
@@ -1146,9 +1439,8 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+        <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole"/>
+        <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -1167,6 +1459,7 @@
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Observation"/>
       </constraint>
+      <mustSupport value="true"/>
       <mapping>
         <identity value="rim"/>
         <map value="n/a"/>
@@ -1564,14 +1857,8 @@
       </mapping>
     </element>
     <element id="DocumentReference.description">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="DocumentReference.description"/>
-      <short value="Human-readable description"/>
+      <short value="Commentaire associé au document."/>
       <definition value="Human-readable description of the source document."/>
       <comment value="What the document is about,  a terse summary of the document."/>
       <requirements value="Helps humans to assess whether the document is of interest."/>
@@ -1594,6 +1881,7 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <mustSupport value="true"/>
       <isSummary value="true"/>
       <mapping>
         <identity value="rim"/>
@@ -1613,14 +1901,8 @@
       </mapping>
     </element>
     <element id="DocumentReference.securityLabel">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="DocumentReference.securityLabel"/>
-      <short value="Document security-tags"/>
+      <short value="Contient les informations définissant le niveau de confidentialité d'un document."/>
       <definition value="A set of Security-Tag codes specifying the level of privacy/security of the Document. Note that DocumentReference.meta.security contains the security labels of the &quot;reference&quot; to the document, while DocumentReference.securityLabel contains a snapshot of the security labels on the document the reference refers to."/>
       <comment value="The confidentiality codes can carry multiple vocabulary items. HL7 has developed an understanding of security and privacy tags that might be desirable in a Document Sharing environment, called HL7 Healthcare Privacy and Security Classification System (HCS). The following specification is recommended but not mandated, as the vocabulary bindings are an administrative domain responsibility. The use of this method is up to the policy domain such as the XDS Affinity Domain or other Trust Domain where all parties including sender and recipients are trusted to appropriately tag and enforce.   &#xA;&#xA;In the HL7 Healthcare Privacy and Security Classification (HCS) there are code systems specific to Confidentiality, Sensitivity, Integrity, and Handling Caveats. Some values would come from a local vocabulary as they are related to workflow roles and special projects."/>
       <requirements value="Use of the Health Care Privacy/Security Classification (HCS) system of security-tag use is recommended."/>
@@ -1642,6 +1924,13 @@
         <expression value="hasValue() or (children().count() &gt; id.count())"/>
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="constr-bind-securityLabel"/>
+        <severity value="error"/>
+        <human value="Les codes pour cet élément doivent provenir du ValueSet spécifié par le standard. Lorsqu’aucun code ne correspond au concept recherché, un code provenant de la terminologie de référence TRE_A07-StatusVisibiliteDocument, OID : 1.2.250.1.213.1.1.4.13 peut être utilisé."/>
+        <expression value="f:securityLabel"/>
+        <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/dui-documentreference"/>
       </constraint>
       <isSummary value="true"/>
       <binding>
@@ -1697,7 +1986,7 @@
       <short value="Document contenu."/>
       <definition value="The document and format referenced. There may be multiple content element repetitions, each with a different format."/>
       <min value="1"/>
-      <max value="1"/>
+      <max value="*"/>
       <base>
         <path value="DocumentReference.content"/>
         <min value="1"/>
@@ -2017,18 +2306,12 @@
       </mapping>
     </element>
     <element id="DocumentReference.content.attachment.contentType">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="DocumentReference.content.attachment.contentType"/>
       <short value="Mime type of the content, with charset etc."/>
       <definition value="Identifies the type of the data in the attachment and allows a method to be chosen to interpret or render the data. Includes mime type parameters such as charset where appropriate."/>
       <comment value="Note that FHIR strings SHALL NOT exceed 1MB in size"/>
       <requirements value="Processors of the data need to be able to know how to interpret the data."/>
-      <min value="0"/>
+      <min value="1"/>
       <max value="1"/>
       <base>
         <path value="Attachment.contentType"/>
@@ -2077,14 +2360,8 @@
       </mapping>
     </element>
     <element id="DocumentReference.content.attachment.language">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="DocumentReference.content.attachment.language"/>
-      <short value="Human language of the content (BCP-47)"/>
+      <short value="Pour tous les documents produits par les systèmes initiateurs français, le code est &quot;fr-FR'."/>
       <definition value="The human language of the content. The value can be any valid value according to BCP 47."/>
       <comment value="Note that FHIR strings SHALL NOT exceed 1MB in size"/>
       <requirements value="Users need to be able to choose between the languages in a set of attachments."/>
@@ -2111,6 +2388,7 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <mustSupport value="true"/>
       <isSummary value="true"/>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
@@ -2137,7 +2415,7 @@
     </element>
     <element id="DocumentReference.content.attachment.data">
       <path value="DocumentReference.content.attachment.data"/>
-      <short value="Le document CDA est contenu dans l'élément .data au format base64."/>
+      <short value="Le document est contenu dans l'élément .data au format base64."/>
       <definition value="The actual data of the attachment - a sequence of bytes, base64 encoded."/>
       <comment value="The base64-encoded data SHALL be expressed in the same character set as the base resource XML or JSON."/>
       <requirements value="The data needs to able to be transmitted inline."/>
@@ -2174,19 +2452,13 @@
       </mapping>
     </element>
     <element id="DocumentReference.content.attachment.url">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="DocumentReference.content.attachment.url"/>
       <short value="Uri where the data can be found"/>
       <definition value="A location where the data can be accessed."/>
       <comment value="If both data and url are provided, the url SHALL point to the same content as the data contains. Urls may be relative references or may reference transient locations such as a wrapping envelope using cid: though this has ramifications for using signatures. Relative URLs are interpreted relative to the service url, like a resource reference, rather than relative to the resource itself. If a URL is provided, it SHALL resolve to actual data."/>
       <requirements value="The data needs to be transmitted by reference."/>
       <min value="0"/>
-      <max value="1"/>
+      <max value="0"/>
       <base>
         <path value="Attachment.url"/>
         <min value="0"/>
@@ -2223,14 +2495,8 @@
       </mapping>
     </element>
     <element id="DocumentReference.content.attachment.size">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="DocumentReference.content.attachment.size"/>
-      <short value="Number of bytes of content (if url provided)"/>
+      <short value="Représente la taille du document."/>
       <definition value="The number of bytes of data that make up this attachment (before base64 encoding, if that is done)."/>
       <comment value="The number of bytes is redundant if the data is provided as a base64binary, but is useful if the data is provided as a url reference."/>
       <requirements value="Representing the size allows applications to determine whether they should fetch the content automatically in advance, or refuse to fetch it at all."/>
@@ -2264,14 +2530,8 @@
       </mapping>
     </element>
     <element id="DocumentReference.content.attachment.hash">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="DocumentReference.content.attachment.hash"/>
-      <short value="Hash of the data (sha-1, base64ed)"/>
+      <short value="Représente le résultat de hachage du document (SHA 1)."/>
       <definition value="The calculated hash of the data using SHA-1. Represented using base64."/>
       <comment value="The hash is calculated on the data prior to base64 encoding, if the data is based64 encoded. The hash is not intended to support digital signatures. Where protection against malicious threats a digital signature should be considered, see [Provenance.signature](http://hl7.org/fhir/R4/provenance-definitions.html#Provenance.signature) for mechanism to protect a resource with a digital signature."/>
       <requirements value="Included so that applications can verify that the contents of a location have not changed due to technical failures (e.g., storage rot, transport glitch, incorrect version)."/>
@@ -2305,12 +2565,6 @@
       </mapping>
     </element>
     <element id="DocumentReference.content.attachment.title">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true"/>
       </extension>
@@ -2319,7 +2573,7 @@
       <definition value="A label or set of text to display in place of the data."/>
       <comment value="Note that FHIR strings SHALL NOT exceed 1MB in size"/>
       <requirements value="Applications need a label to display to a human user in place of the actual data if the data cannot be rendered or perceived by the viewer."/>
-      <min value="0"/>
+      <min value="1"/>
       <max value="1"/>
       <base>
         <path value="Attachment.title"/>
@@ -2353,14 +2607,8 @@
       </mapping>
     </element>
     <element id="DocumentReference.content.attachment.creation">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="DocumentReference.content.attachment.creation"/>
-      <short value="Date attachment was first created"/>
+      <short value="Représente la date et l’heure de création du document."/>
       <definition value="The date that the attachment was first created."/>
       <requirements value="This is often tracked as an integrity issue for use of the attachment."/>
       <min value="0"/>
@@ -2382,6 +2630,7 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <mustSupport value="true"/>
       <isSummary value="true"/>
       <mapping>
         <identity value="rim"/>
@@ -2393,14 +2642,8 @@
       </mapping>
     </element>
     <element id="DocumentReference.content.format">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="DocumentReference.content.format"/>
-      <short value="Format/content rules for the document"/>
+      <short value="Format technique détaillé du document."/>
       <definition value="An identifier of the document encoding, structure, and template that the document conforms to beyond the base format indicated in the mimeType."/>
       <comment value="Note that while IHE mostly issues URNs for format types, not all documents can be identified by a URI."/>
       <min value="0"/>
@@ -2422,14 +2665,18 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <constraint>
+        <key value="constr-bind-format"/>
+        <severity value="error"/>
+        <human value="Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :&#xA;- TRE_A06-FormatCodeComplementaire, OID : 1.2.250.1.213.1.1.4.2.282&#xA;- TRE_A11-IheFormatCode, OID : 1.3.6.1.4.1.19376.1.2.3&#xA;- TRE_A09-DICOMuidRegistry, OID : 1.2.840.10008.2.6.1&#xA;- TRE_A10-NomenclatureURN, OID : URN&#xA;Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J60-FormatCode-DMP).&#xA;En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J10-XdsFormatCode-CISIS peut être utilisé."/>
+        <expression value="f:content/f:format"/>
+        <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/dui-documentreference"/>
+      </constraint>
+      <mustSupport value="true"/>
       <isSummary value="true"/>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="DocumentFormat"/>
-        </extension>
         <strength value="preferred"/>
-        <description value="Document Format Codes."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/formatcodes"/>
+        <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS"/>
       </binding>
       <mapping>
         <identity value="rim"/>
@@ -2465,12 +2712,6 @@
       </mapping>
     </element>
     <element id="DocumentReference.context">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="DocumentReference.context"/>
       <short value="Clinical context of document"/>
       <definition value="The clinical context in which the document was prepared."/>
@@ -2494,6 +2735,7 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <mustSupport value="true"/>
       <isSummary value="true"/>
       <mapping>
         <identity value="rim"/>
@@ -2704,18 +2946,12 @@
       </mapping>
     </element>
     <element id="DocumentReference.context.event">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="DocumentReference.context.event"/>
-      <short value="Main clinical acts documented"/>
+      <short value="Représente les actes et les pathologies en rapport avec le document."/>
       <definition value="This list of codes represents the main clinical acts, such as a colonoscopy or an appendectomy, being documented. In some cases, the event is inherent in the type Code, such as a &quot;History and Physical Report&quot; in which the procedure being documented is necessarily a &quot;History and Physical&quot; act."/>
       <comment value="An event can further specialize the act inherent in the type, such as  where it is simply &quot;Procedure Report&quot; and the procedure was a &quot;colonoscopy&quot;. If one or more event codes are included, they shall not conflict with the values inherent in the class or type elements as such a conflict would create an ambiguous situation."/>
       <min value="0"/>
-      <max value="*"/>
+      <max value="1"/>
       <base>
         <path value="DocumentReference.context.event"/>
         <min value="0"/>
@@ -2732,6 +2968,13 @@
         <expression value="hasValue() or (children().count() &gt; id.count())"/>
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="constr-bind-context-event"/>
+        <severity value="error"/>
+        <human value="Nomenclatures utilisées :&#xA;- CCAM pour les actes médicaux (OID=&quot;1.2.250.1.213.2.5&quot;);&#xA;- CIM-10 pour les diagnostics de pathologie (OID=&quot;2.16.840.1.113883.6.3&quot;).&#xA;- TRE_A00-ProducteurDocNonPS pour les documents d'expression personnelle du patient."/>
+        <expression value="f:context/f:event"/>
+        <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/dui-documentreference"/>
       </constraint>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
@@ -2771,12 +3014,6 @@
       </mapping>
     </element>
     <element id="DocumentReference.context.period">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="DocumentReference.context.period"/>
       <short value="Time of service that is being documented"/>
       <definition value="The time period over which the service that is described by the document was provided."/>
@@ -2808,6 +3045,7 @@
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Group"/>
       </constraint>
+      <mustSupport value="true"/>
       <isSummary value="true"/>
       <mapping>
         <identity value="rim"/>
@@ -2839,14 +3077,8 @@
       </mapping>
     </element>
     <element id="DocumentReference.context.facilityType">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="DocumentReference.context.facilityType"/>
-      <short value="Kind of facility where patient was seen"/>
+      <short value="Secteur d'activité lié à la prise en charge de la personne, en lien avec le document produit."/>
       <definition value="The kind of facility where the patient was seen."/>
       <comment value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination."/>
       <min value="0"/>
@@ -2868,13 +3100,17 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <constraint>
+        <key value="constr-bind-ProducteurDoc-simplified"/>
+        <severity value="error"/>
+        <human value="L’utilisation de cette nomenclature est recommandée mais non obligatoire (prefered) :&#xA;-&#x9;TRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 (lorsque l’auteur du document est un professionnel ou un équipement sous sa responsabilité)&#xA;Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J61-HealthcareFacilityTypeCode-DMP).&#xA;En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-XdsHealthcareFacilityTypeCode-CISIS peut être utilisé."/>
+        <expression value="f:context/f:practiceSetting or f:context/f:facilityType"/>
+        <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/dui-documentreference"/>
+      </constraint>
+      <mustSupport value="true"/>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="DocumentC80FacilityType"/>
-        </extension>
-        <strength value="example"/>
-        <description value="XDS Facility Type."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/c80-facilitycodes"/>
+        <strength value="preferred"/>
+        <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS/FHIR/JDV-J02-XdsHealthcareFacilityTypeCode-CISIS"/>
       </binding>
       <mapping>
         <identity value="rim"/>
@@ -2910,14 +3146,8 @@
       </mapping>
     </element>
     <element id="DocumentReference.context.practiceSetting">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="DocumentReference.context.practiceSetting"/>
-      <short value="Additional details about where the content was created (e.g. clinical specialty)"/>
+      <short value="Cadre d’exercice de l’acte qui a engendré la création du document."/>
       <definition value="This property may convey specifics about the practice setting where the content was created, often reflecting the clinical specialty."/>
       <comment value="This element should be based on a coarse classification system for the class of specialty practice. Recommend the use of the classification system for Practice Setting, such as that described by the Subject Matter Domain in LOINC."/>
       <requirements value="This is an important piece of metadata that providers often rely upon to quickly sort and/or filter out to find specific content."/>
@@ -2940,13 +3170,17 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <constraint>
+        <key value="constr-bind-ProducteurDoc-simplified"/>
+        <severity value="error"/>
+        <human value="L’utilisation de cette nomenclature est recommandée mais non obligatoire (prefered) :&#xA;-&#x9;TRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 (lorsque l’auteur du document est un professionnel ou un équipement sous sa responsabilité)&#xA;Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J61-HealthcareFacilityTypeCode-DMP).&#xA;En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-XdsHealthcareFacilityTypeCode-CISIS peut être utilisé."/>
+        <expression value="f:context/f:practiceSetting or f:context/f:facilityType"/>
+        <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/dui-documentreference"/>
+      </constraint>
+      <mustSupport value="true"/>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="DocumentC80PracticeSetting"/>
-        </extension>
-        <strength value="example"/>
-        <description value="Additional details about where the content was created (e.g. clinical specialty)."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/c80-practice-codes"/>
+        <strength value="preferred"/>
+        <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J04-XdsPracticeSettingCode-CISIS/FHIR/JDV-J04-XdsPracticeSettingCode-CISIS"/>
       </binding>
       <mapping>
         <identity value="rim"/>
@@ -2982,14 +3216,8 @@
       </mapping>
     </element>
     <element id="DocumentReference.context.sourcePatientInfo">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="DocumentReference.context.sourcePatientInfo"/>
-      <short value="Patient demographics from source"/>
+      <short value="Référence vers la ressource Patient titulaire du dossier."/>
       <definition value="The Patient Information as known when the document was published. May be a reference to a version specific, or contained."/>
       <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository."/>
       <min value="0"/>
@@ -3001,7 +3229,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+        <targetProfile value="http://interopsante.org/fhir/StructureDefinition/FrPatient"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -3111,19 +3339,225 @@
     </element>
   </snapshot>
   <differential>
-    <element id="DocumentReference">
-      <path value="DocumentReference"/>
+    <element id="DocumentReference.meta.versionId">
+      <path value="DocumentReference.meta.versionId"/>
+      <short value="Numéro de version de la fiche d’un document attribué par le système cible. La valeur de la métadonnée version est égale à 1 pour la première version de la fiche. Cet élément est requis lorsque le flux envoyé correspond à une mise à jour des données d’une fiche."/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="DocumentReference.masterIdentifier">
+      <path value="DocumentReference.masterIdentifier"/>
+      <short value="Représente l’identifiant unique global affecté au document par son créateur. Il est utilisable comme référence externe dans d’autres documents."/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="DocumentReference.identifier">
+      <path value="DocumentReference.identifier"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="DocumentReference.status">
+      <path value="DocumentReference.status"/>
+      <patternCode value="current"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="DocumentReference.type">
+      <path value="DocumentReference.type"/>
+      <definition value="Représente le type du document."/>
+      <constraint>
+        <key value="constr-bind-type"/>
+        <severity value="error"/>
+        <human value="Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :&#xA;&#xD;&#xA; TRE_A05-TypeDocComplementaireCISIS, OID : 1.2.250.1.213.1.1.4.12&#xA;&#xD;&#xA; TRE_A04-TypeDocument-LOINC, OID : 2.16.840.1.113883.6.1&#xA;&#xD;&#xA; TRE_A12-NomenclatureASTM, OID : ASTM&#xA;&#xD;&#xA;Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J66-TypeCode-DMP).&#xD;&#xA;En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J07-XdsTypeCode-CISIS peut être utilisé."/>
+        <expression value="f:type"/>
+        <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/dui-documentreference"/>
+      </constraint>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="preferred"/>
+        <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS"/>
+      </binding>
+    </element>
+    <element id="DocumentReference.category">
+      <path value="DocumentReference.category"/>
+      <short value="Représente la classe du document (compte rendu, imagerie médicale, traitement, certificat,...)."/>
+      <constraint>
+        <key value="constr-bind-category"/>
+        <severity value="error"/>
+        <human value="Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :&#xA;-&#x9;TRE_A03-ClasseDocument-CISIS, OID : 1.2.250.1.213.1.1.4.1&#xA;-&#x9;TRE_A10-NomenclatureURN, OID : URN&#xA;Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J57-ClassCode-DMP).&#xA;En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J06-XdsClassCode-CISIS peut être utilisé."/>
+        <expression value="f:category"/>
+        <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/dui-documentreference"/>
+      </constraint>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="preferred"/>
+        <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS"/>
+      </binding>
+    </element>
+    <element id="DocumentReference.subject">
+      <path value="DocumentReference.subject"/>
+      <short value="Patient concerné par ce document. La ressource référencée peut être présente sous l’élément DocumentReference.contained ou via le champ identifier."/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://interopsante.org/fhir/StructureDefinition/FrPatient"/>
+      </type>
+    </element>
+    <element id="DocumentReference.date">
+      <path value="DocumentReference.date"/>
+      <short value="Représente la date de création de la ressource DocumentReference dans FHIR"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="DocumentReference.author">
+      <path value="DocumentReference.author"/>
+      <short value="Personnes physiques ou morales et/ou les dispositifs auteurs d'un document."/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole"/>
+        <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner"/>
+        <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
+        <targetProfile value="http://interopsante.org/fhir/StructureDefinition/FrPatient"/>
+        <targetProfile value="http://interopsante.org/fhir/StructureDefinition/FrRelatedPerson"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="DocumentReference.authenticator">
+      <path value="DocumentReference.authenticator"/>
+      <short value="Cet attribut représente l’acteur validant le document et prenant la responsabilité du contenu médical de celui-ci. Il peut s’agir de l’auteur du document si celui-ci est une personne et s’il endosse la responsabilité du contenu médical de ses documents. Si l’auteur est un dispositif, cet attribut doit représenter la personne responsable de l’action effectuée par le dispositif."/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole"/>
+        <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="DocumentReference.description">
+      <path value="DocumentReference.description"/>
+      <short value="Commentaire associé au document."/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="DocumentReference.securityLabel">
+      <path value="DocumentReference.securityLabel"/>
+      <short value="Contient les informations définissant le niveau de confidentialité d'un document."/>
+      <constraint>
+        <key value="constr-bind-securityLabel"/>
+        <severity value="error"/>
+        <human value="Les codes pour cet élément doivent provenir du ValueSet spécifié par le standard. Lorsqu’aucun code ne correspond au concept recherché, un code provenant de la terminologie de référence TRE_A07-StatusVisibiliteDocument, OID : 1.2.250.1.213.1.1.4.13 peut être utilisé."/>
+        <expression value="f:securityLabel"/>
+        <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/dui-documentreference"/>
+      </constraint>
     </element>
     <element id="DocumentReference.content">
       <path value="DocumentReference.content"/>
       <short value="Document contenu."/>
-      <max value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="DocumentReference.content.attachment.contentType">
+      <path value="DocumentReference.content.attachment.contentType"/>
+      <min value="1"/>
+    </element>
+    <element id="DocumentReference.content.attachment.language">
+      <path value="DocumentReference.content.attachment.language"/>
+      <short value="Pour tous les documents produits par les systèmes initiateurs français, le code est &quot;fr-FR'."/>
       <mustSupport value="true"/>
     </element>
     <element id="DocumentReference.content.attachment.data">
       <path value="DocumentReference.content.attachment.data"/>
-      <short value="Le document CDA est contenu dans l'élément .data au format base64."/>
+      <short value="Le document est contenu dans l'élément .data au format base64."/>
       <min value="1"/>
+    </element>
+    <element id="DocumentReference.content.attachment.url">
+      <path value="DocumentReference.content.attachment.url"/>
+      <max value="0"/>
+    </element>
+    <element id="DocumentReference.content.attachment.size">
+      <path value="DocumentReference.content.attachment.size"/>
+      <short value="Représente la taille du document."/>
+    </element>
+    <element id="DocumentReference.content.attachment.hash">
+      <path value="DocumentReference.content.attachment.hash"/>
+      <short value="Représente le résultat de hachage du document (SHA 1)."/>
+    </element>
+    <element id="DocumentReference.content.attachment.title">
+      <path value="DocumentReference.content.attachment.title"/>
+      <min value="1"/>
+    </element>
+    <element id="DocumentReference.content.attachment.creation">
+      <path value="DocumentReference.content.attachment.creation"/>
+      <short value="Représente la date et l’heure de création du document."/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="DocumentReference.content.format">
+      <path value="DocumentReference.content.format"/>
+      <short value="Format technique détaillé du document."/>
+      <constraint>
+        <key value="constr-bind-format"/>
+        <severity value="error"/>
+        <human value="Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :&#xA;- TRE_A06-FormatCodeComplementaire, OID : 1.2.250.1.213.1.1.4.2.282&#xA;- TRE_A11-IheFormatCode, OID : 1.3.6.1.4.1.19376.1.2.3&#xA;- TRE_A09-DICOMuidRegistry, OID : 1.2.840.10008.2.6.1&#xA;- TRE_A10-NomenclatureURN, OID : URN&#xA;Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J60-FormatCode-DMP).&#xA;En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J10-XdsFormatCode-CISIS peut être utilisé."/>
+        <expression value="f:content/f:format"/>
+        <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/dui-documentreference"/>
+      </constraint>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="preferred"/>
+        <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS"/>
+      </binding>
+    </element>
+    <element id="DocumentReference.context">
+      <path value="DocumentReference.context"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="DocumentReference.context.event">
+      <path value="DocumentReference.context.event"/>
+      <short value="Représente les actes et les pathologies en rapport avec le document."/>
+      <max value="1"/>
+      <constraint>
+        <key value="constr-bind-context-event"/>
+        <severity value="error"/>
+        <human value="Nomenclatures utilisées :&#xA;- CCAM pour les actes médicaux (OID=&quot;1.2.250.1.213.2.5&quot;);&#xA;- CIM-10 pour les diagnostics de pathologie (OID=&quot;2.16.840.1.113883.6.3&quot;).&#xA;- TRE_A00-ProducteurDocNonPS pour les documents d'expression personnelle du patient."/>
+        <expression value="f:context/f:event"/>
+        <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/dui-documentreference"/>
+      </constraint>
+    </element>
+    <element id="DocumentReference.context.period">
+      <path value="DocumentReference.context.period"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="DocumentReference.context.facilityType">
+      <path value="DocumentReference.context.facilityType"/>
+      <short value="Secteur d'activité lié à la prise en charge de la personne, en lien avec le document produit."/>
+      <constraint>
+        <key value="constr-bind-ProducteurDoc-simplified"/>
+        <severity value="error"/>
+        <human value="L’utilisation de cette nomenclature est recommandée mais non obligatoire (prefered) :&#xA;-&#x9;TRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 (lorsque l’auteur du document est un professionnel ou un équipement sous sa responsabilité)&#xA;Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J61-HealthcareFacilityTypeCode-DMP).&#xA;En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-XdsHealthcareFacilityTypeCode-CISIS peut être utilisé."/>
+        <expression value="f:context/f:practiceSetting or f:context/f:facilityType"/>
+        <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/dui-documentreference"/>
+      </constraint>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="preferred"/>
+        <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS/FHIR/JDV-J02-XdsHealthcareFacilityTypeCode-CISIS"/>
+      </binding>
+    </element>
+    <element id="DocumentReference.context.practiceSetting">
+      <path value="DocumentReference.context.practiceSetting"/>
+      <short value="Cadre d’exercice de l’acte qui a engendré la création du document."/>
+      <constraint>
+        <key value="constr-bind-ProducteurDoc-simplified"/>
+        <severity value="error"/>
+        <human value="L’utilisation de cette nomenclature est recommandée mais non obligatoire (prefered) :&#xA;-&#x9;TRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 (lorsque l’auteur du document est un professionnel ou un équipement sous sa responsabilité)&#xA;Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J61-HealthcareFacilityTypeCode-DMP).&#xA;En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-XdsHealthcareFacilityTypeCode-CISIS peut être utilisé."/>
+        <expression value="f:context/f:practiceSetting or f:context/f:facilityType"/>
+        <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/dui-documentreference"/>
+      </constraint>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="preferred"/>
+        <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J04-XdsPracticeSettingCode-CISIS/FHIR/JDV-J04-XdsPracticeSettingCode-CISIS"/>
+      </binding>
+    </element>
+    <element id="DocumentReference.context.sourcePatientInfo">
+      <path value="DocumentReference.context.sourcePatientInfo"/>
+      <short value="Référence vers la ressource Patient titulaire du dossier."/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://interopsante.org/fhir/StructureDefinition/FrPatient"/>
+      </type>
     </element>
   </differential>
 </StructureDefinition>

@@ -10,7 +10,7 @@
   <name value="TransfertDonneesDUI"/>
   <title value="Médicosocial - Transfert de données DUI"/>
   <status value="draft"/>
-  <date value="2023-09-15T08:58:52+00:00"/>
+  <date value="2023-09-18T08:18:21+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -37,6 +37,16 @@
     <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
     <packageId value="hl7.fhir.uv.extensions.r4"/>
     <version value="1.0.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_fr_core">
+    <uri value="http://fhir.org/packages/hl7.fhir.fr.core/ImplementationGuide/hl7.fhir.fr.core"/>
+    <packageId value="hl7.fhir.fr.core"/>
+    <version value="1.1.0"/>
+  </dependsOn>
+  <dependsOn id="ans_fhir_fr_annuaire">
+    <uri value="https://interop.esante.gouv.fr/ig/fhir/annuaire/ImplementationGuide/ans.fhir.fr.annuaire"/>
+    <packageId value="ans.fhir.fr.annuaire"/>
+    <version value="1.0.0-ballot-2"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -447,10 +457,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/dui-bundle"/>
+        <reference value="StructureDefinition/dui-documentreference"/>
       </reference>
-      <name value="DUIBundle"/>
-      <description value="Profil générique créé dans le contexte du transfert de données DUI pour véhiculer un lot de dossiers au format CDA."/>
+      <name value="DUI Document Reference"/>
+      <description value="Profil générique créé dans le contexte du transfert de données DUI pour véhiculer le dossier au format CDA, inclus dans DocumentReference.attachment.data."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -458,10 +468,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/dui-documentreference"/>
+        <reference value="StructureDefinition/dui-bundle"/>
       </reference>
-      <name value="DUIDocumentReference"/>
-      <description value="Profil générique créé dans le contexte du transfert de données DUI pour véhiculer le dossier au format CDA, inclus dans DocumentReference.attachment.data."/>
+      <name value="DUIBundle"/>
+      <description value="Profil générique créé dans le contexte du transfert de données DUI pour véhiculer un lot de dossiers au format CDA."/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

@@ -7,7 +7,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>ANS.FHIR.FR.TDDUI\DUIDocumentReference - Mappings - FHIR v4.0.1</title>
+    <title>ANS.FHIR.FR.TDDUI\DUI Document Reference - Mappings - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -46,8 +46,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"8.2"}
-    h3,h4,h5,h6{--heading-prefix:"8.2"}</style>
+    <style type="text/css">h2{--heading-prefix:"8.1"}
+    h3,h4,h5,h6{--heading-prefix:"8.1"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -172,7 +172,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>DUIDocumentReference</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>DUI Document Reference</b></li>
 
           <span style="float:right;">
 
@@ -266,7 +266,7 @@
         
           Draft
           
-            as of 2023-09-15
+            as of 2023-09-18
           
         
       </td>
@@ -331,6 +331,14 @@ Composition.date</td> </tr>
  <tr><td colspan="3"><b>DUIDocumentReference</b></td></tr>
  <tr><td>DocumentReference</td><td>Entity. Role, or Act, Document[classCode=&quot;DOC&quot; and moodCode=&quot;EVN&quot;]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;meta</td><td>n/a, N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a, N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;versionId</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lastUpdated</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;source</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;profile</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;security</td><td>n/a, CV</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tag</td><td>n/a, CV</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;implicitRules</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;language</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;text</td><td>n/a, N/A, Act.text?</td> </tr>
@@ -366,7 +374,6 @@ Composition.date</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;contentType</td><td>n/a, ./mediaType, ./charset</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;language</td><td>n/a, ./language</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data</td><td>n/a, ./data</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;url</td><td>n/a, ./reference/literal</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;size</td><td>n/a, N/A (needs data type R3 proposal)</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hash</td><td>n/a, .integrityCheck[parent::ED/integrityCheckAlgorithm=&quot;SHA-1&quot;]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title</td><td>n/a, ./title/data</td> </tr>
@@ -428,6 +435,9 @@ serviceEvent/effectiveTime/high/
 <a name="v2"> </a><h3>Mappings for HL7 v2 Mapping (<a href="http://hl7.org/comparison-v2.html">http://hl7.org/v2</a>)</h3><table class="grid">
  <tr><td colspan="3"><b>DUIDocumentReference</b></td></tr>
  <tr><td>DocumentReference</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;meta</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;security</td><td>CE/CNE/CWE subset one of the sets of component 1-3 or 4-6</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tag</td><td>CE/CNE/CWE subset one of the sets of component 1-3 or 4-6</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;masterIdentifier</td><td>CX / EI (occasionally, more often EI maps to a resource id or a URL), TXA-12</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>CX / EI (occasionally, more often EI maps to a resource id or a URL), TXA-16?</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>TXA-19</td> </tr>
@@ -443,7 +453,6 @@ serviceEvent/effectiveTime/high/
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;attachment</td><td>ED/RP, TXA-3 for mime type</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;contentType</td><td>ED.2+ED.3/RP.2+RP.3. Note conversion may be needed if old style values are being used</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data</td><td>ED.5</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;url</td><td>RP.1+RP.2 - if they refer to a URL (see v2.6)</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;format</td><td>CE/CNE/CWE subset one of the sets of component 1-3 or 4-6</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;context</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;event</td><td>CE/CNE/CWE</td> </tr>
@@ -553,7 +562,7 @@ serviceEvent/effectiveTime/high/
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Sep 15, 2023 08:58+0000">2023-09-15</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Sep 18, 2023 08:18+0000">2023-09-18</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
