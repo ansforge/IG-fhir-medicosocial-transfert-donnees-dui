@@ -11,7 +11,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>ANS.FHIR.FR.TDDUI\DUI Bundle - XML Representation - FHIR v4.0.1</title>
+    <title>TDDUI Bundle - XML Representation - Médicosocial - Transfert de données DUI v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -28,7 +28,6 @@
   	<link href="assets/css/prism.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style-ans.css"/>
     <link rel="stylesheet" href="assets/css/style-add-ans.css"/>
-    <!-- CSS only -->
     <!-- Placeholder for child template CSS declarations -->
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
@@ -40,10 +39,10 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
@@ -56,11 +55,11 @@
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 <div id="family-nav">
-    <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
-  </div>
-  <div id="ans-nav">
-    <a id="hl7-logo" no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
-  </div>
+  <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+<div id="ans-nav" style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; ">
+  <a id="hl7-logo" no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
+</div>
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Médicosocial - Transfert de données DUI</span>
@@ -123,13 +122,13 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="construction_des_flux.html">Vue d&apos;ensemble</a>
+        <a href="synthese_flux.html">Synthèse des flux</a>
       </li>
       <li>
-        <a href="st_flux1.html">Flux 1 - Transfert d&apos;un dossier</a>
+        <a href="st_flux1.html">Flux 1 - Ajout d&apos;un document</a>
       </li>
       <li>
-        <a href="st_flux2.html">Flux 2 - Transfert d&apos;un lot de dossiers</a>
+        <a href="st_flux2.html">Flux 2 - Ajout d&apos;un lot de documents</a>
       </li>
     </ul>
   </li>
@@ -176,15 +175,15 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>DUI Bundle</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>TDDUI Bundle</b></li>
 
           <span style="float:right;">
 
-            <a href="StructureDefinition-dui-bundle-mappings.html">&lt;prev</a> | 
+            <a href="StructureDefinition-tddui-bundle-mappings.html">&lt;prev</a> | 
 
             <a href="#bottom">bottom</a>
 
-          | <a href="StructureDefinition-dui-bundle.profile.json.html">next&gt;</a>
+          | <a href="StructureDefinition-tddui-bundle.profile.json.html">next&gt;</a>
 
           </span>
 
@@ -212,26 +211,27 @@
 
 
 
-
 <ul class="nav nav-tabs">
 
   <li>
-    <a href="StructureDefinition-dui-bundle.html">Content</a>
+    <a href="StructureDefinition-tddui-bundle.html">Content</a>
   </li>
 
 
 
   <li>
-    <a href="StructureDefinition-dui-bundle-definitions.html">Detailed Descriptions</a>
+    <a href="StructureDefinition-tddui-bundle-definitions.html">Detailed Descriptions</a>
   </li>
 
 
 
   
     <li>
-      <a href="StructureDefinition-dui-bundle-mappings.html">Mappings</a>
+      <a href="StructureDefinition-tddui-bundle-mappings.html">Mappings</a>
     </li>
   
+
+
 
 
 
@@ -246,14 +246,14 @@
 
   
     <li>
-      <a href="StructureDefinition-dui-bundle.profile.json.html">JSON</a>
+      <a href="StructureDefinition-tddui-bundle.profile.json.html">JSON</a>
     </li>
   
 
 
   
     <li>
-      <a href="StructureDefinition-dui-bundle.profile.ttl.html">TTL</a>
+      <a href="StructureDefinition-tddui-bundle.profile.ttl.html">TTL</a>
     </li>
   
 
@@ -262,7 +262,8 @@
 
 
 <a name="root"> </a>
-<h2 id="root">Resource Profile: DUIBundle - XML Profile</h2>
+<h2 id="root">Resource Profile: TDDUIBundle - XML Profile</h2>
+
   <table class="colsd">
     <tr>
 
@@ -279,9 +280,9 @@
   </table>
 
 
-<p>XML representation of the dui-bundle resource profile.</p>
+<p>XML representation of the tddui-bundle resource profile.</p>
 
-<p><a href="StructureDefinition-dui-bundle.xml" no-download="true">Raw xml</a> | <a href="StructureDefinition-dui-bundle.xml" download>Download</a></p>
+<p><a href="StructureDefinition-tddui-bundle.xml" no-download="true">Raw xml</a> | <a href="StructureDefinition-tddui-bundle.xml" download>Download</a></p>
 
   <!-- insert intro if present -->
   
@@ -291,18 +292,18 @@
   <pre class="xml" style="white-space: pre; overflow: hidden"><code>
 
 &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition">StructureDefinition</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;dui-bundle&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;tddui-bundle&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;extensions&quot;/&gt;
     &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;Placeholder&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/text&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.url">url</a>
-       <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/dui-bundle&quot;/&gt;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;0.1.0&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;DUIBundle&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;DUI Bundle&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;TDDUIBundle&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;TDDUI Bundle&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2023-09-20T10:55:20+00:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2023-09-20T15:02:23+00:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ANS&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ANS&quot;/&gt;
@@ -312,7 +313,7 @@
     &lt;/telecom&gt;
   &lt;/contact&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.description">description</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Profil générique créé dans le contexte du transfert de données DUI pour véhiculer un lot de dossiers au format CDA.&quot;/&gt;
+               <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Profil générique créé dans le contexte du transfert de données DUI pour véhiculer un lot de documents au format CDA.&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.fhirVersion">fhirVersion</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;4.0.1&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.mapping">mapping</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;v2&quot;/&gt;
@@ -4484,7 +4485,7 @@ This outcome is not used for error responses in batch/transaction, only for hint
             <tr>
               <td style="text-align:left">&#xA0;
 
-                <a href="StructureDefinition-dui-bundle-mappings.html">&lt;prev</a>
+                <a href="StructureDefinition-tddui-bundle-mappings.html">&lt;prev</a>
 
               </td>
               <td style="text-align:center">
@@ -4492,7 +4493,7 @@ This outcome is not used for error responses in batch/transaction, only for hint
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="StructureDefinition-dui-bundle.profile.json.html">next&gt;</a>
+                <a href="StructureDefinition-tddui-bundle.profile.json.html">next&gt;</a>
 
               </td>
             </tr>
@@ -4502,14 +4503,13 @@ This outcome is not used for error responses in batch/transaction, only for hint
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 20, 2023 10:55+0000">2023-09-20</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 20, 2023 15:02+0000">2023-09-20</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
-                  | <a style="color: #81BEF7" target="_blank" href="https://interop.esante.gouv.fr/ig/fhir/tddui/history.html">Version History</a> | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/FIG_ans-ig-sample/issues/new">New Issue</a>
+                  | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/FIG_ans-ig-sample/issues/new">New Issue</a>
                 
-
           </span>
         </p>
       </div>  <!-- /inner-wrapper -->

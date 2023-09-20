@@ -10,7 +10,7 @@
   <name value="TransfertDonneesDUI"/>
   <title value="Médicosocial - Transfert de données DUI"/>
   <status value="draft"/>
-  <date value="2023-09-20T10:55:20+00:00"/>
+  <date value="2023-09-20T15:02:23+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -204,6 +204,14 @@
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
         <valueString value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-wg"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -414,6 +422,14 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
+        <valueCode value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
         <valueCode value="active-tables"/>
       </extension>
       <extension url="value">
@@ -457,10 +473,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/dui-bundle"/>
+        <reference value="StructureDefinition/tddui-bundle"/>
       </reference>
-      <name value="DUI Bundle"/>
-      <description value="Profil générique créé dans le contexte du transfert de données DUI pour véhiculer un lot de dossiers au format CDA."/>
+      <name value="TDDUI Bundle"/>
+      <description value="Profil générique créé dans le contexte du transfert de données DUI pour véhiculer un lot de documents au format CDA."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -468,10 +484,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/dui-documentreference"/>
+        <reference value="StructureDefinition/tddui-documentreference"/>
       </reference>
-      <name value="DUI Document Reference"/>
-      <description value="Profil générique créé dans le contexte du transfert de données DUI pour véhiculer le dossier au format CDA, inclus dans DocumentReference.attachment.data."/>
+      <name value="TDDUI Document Reference"/>
+      <description value="Profil générique créé dans le contexte du transfert de données DUI pour véhiculer un document au format CDA, inclus dans DocumentReference.attachment.data."/>
       <exampleBoolean value="false"/>
     </resource>
     <page>
@@ -534,7 +550,7 @@
           <valueUrl value="contenu_dossier.html"/>
         </extension>
         <nameUrl value="contenu_dossier.html"/>
-        <title value="Contenu Dossier"/>
+        <title value="Contenu du dossier"/>
         <generation value="markdown"/>
       </page>
       <page>
@@ -546,10 +562,10 @@
         <generation value="markdown"/>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="construction_des_flux.html"/>
+            <valueUrl value="synthese_flux.html"/>
           </extension>
-          <nameUrl value="construction_des_flux.html"/>
-          <title value="Construction Des Flux"/>
+          <nameUrl value="synthese_flux.html"/>
+          <title value="Synthèse des flux"/>
           <generation value="markdown"/>
         </page>
         <page>
@@ -557,7 +573,7 @@
             <valueUrl value="st_flux1.html"/>
           </extension>
           <nameUrl value="st_flux1.html"/>
-          <title value="Flux 1 - Transfert d'un dossier"/>
+          <title value="Flux 1 - Ajout d'un document"/>
           <generation value="markdown"/>
         </page>
         <page>
@@ -565,7 +581,7 @@
             <valueUrl value="st_flux2.html"/>
           </extension>
           <nameUrl value="st_flux2.html"/>
-          <title value="Flux 2 - Transfert d'un lot de dossiers"/>
+          <title value="Flux 2 - Ajout d'un lot de documents"/>
           <generation value="markdown"/>
         </page>
       </page>

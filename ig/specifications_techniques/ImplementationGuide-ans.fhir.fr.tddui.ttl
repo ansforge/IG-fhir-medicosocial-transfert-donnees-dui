@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "TransfertDonneesDUI"] ; # 
   fhir:title [ fhir:v "Médicosocial - Transfert de données DUI"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-09-20T10:55:20+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-09-20T15:02:23+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -254,6 +254,15 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-wg" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "active-tables" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
@@ -482,6 +491,15 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-wg" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "active-tables" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
@@ -531,11 +549,11 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/dui-bundle> ;
-         fhir:reference [ fhir:v "StructureDefinition/dui-bundle" ]
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-bundle" ]
        ] ;
-       fhir:name [ fhir:v "DUI Bundle" ] ;
-       fhir:description [ fhir:v "Profil générique créé dans le contexte du transfert de données DUI pour véhiculer un lot de dossiers au format CDA." ] ;
+       fhir:name [ fhir:v "TDDUI Bundle" ] ;
+       fhir:description [ fhir:v "Profil générique créé dans le contexte du transfert de données DUI pour véhiculer un lot de documents au format CDA." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -543,11 +561,11 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/dui-documentreference> ;
-         fhir:reference [ fhir:v "StructureDefinition/dui-documentreference" ]
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-documentreference> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-documentreference" ]
        ] ;
-       fhir:name [ fhir:v "DUI Document Reference" ] ;
-       fhir:description [ fhir:v "Profil générique créé dans le contexte du transfert de données DUI pour véhiculer le dossier au format CDA, inclus dans DocumentReference.attachment.data." ] ;
+       fhir:name [ fhir:v "TDDUI Document Reference" ] ;
+       fhir:description [ fhir:v "Profil générique créé dans le contexte du transfert de données DUI pour véhiculer un document au format CDA, inclus dans DocumentReference.attachment.data." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] ) ;
      fhir:page [
@@ -613,7 +631,7 @@
            fhir:value [ fhir:v "contenu_dossier.html"^^xsd:anyURI ]
          ] ) ;
          fhir:name [ fhir:v "contenu_dossier.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Contenu Dossier" ] ;
+         fhir:title [ fhir:v "Contenu du dossier" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [
@@ -626,10 +644,10 @@
          fhir:page ( [
            fhir:extension ( [
              fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-             fhir:value [ fhir:v "construction_des_flux.html"^^xsd:anyURI ]
+             fhir:value [ fhir:v "synthese_flux.html"^^xsd:anyURI ]
            ] ) ;
-           fhir:name [ fhir:v "construction_des_flux.html"^^xsd:anyURI ] ;
-           fhir:title [ fhir:v "Construction Des Flux" ] ;
+           fhir:name [ fhir:v "synthese_flux.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Synthèse des flux" ] ;
            fhir:generation [ fhir:v "markdown" ]
          ] [
            fhir:extension ( [
@@ -637,7 +655,7 @@
              fhir:value [ fhir:v "st_flux1.html"^^xsd:anyURI ]
            ] ) ;
            fhir:name [ fhir:v "st_flux1.html"^^xsd:anyURI ] ;
-           fhir:title [ fhir:v "Flux 1 - Transfert d'un dossier" ] ;
+           fhir:title [ fhir:v "Flux 1 - Ajout d'un document" ] ;
            fhir:generation [ fhir:v "markdown" ]
          ] [
            fhir:extension ( [
@@ -645,7 +663,7 @@
              fhir:value [ fhir:v "st_flux2.html"^^xsd:anyURI ]
            ] ) ;
            fhir:name [ fhir:v "st_flux2.html"^^xsd:anyURI ] ;
-           fhir:title [ fhir:v "Flux 2 - Transfert d'un lot de dossiers" ] ;
+           fhir:title [ fhir:v "Flux 2 - Ajout d'un lot de documents" ] ;
            fhir:generation [ fhir:v "markdown" ]
          ] )
        ] [

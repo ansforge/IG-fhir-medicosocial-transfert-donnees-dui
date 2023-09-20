@@ -10,7 +10,7 @@
   "name" : "TransfertDonneesDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "draft",
-  "date" : "2023-09-20T10:55:20+00:00",
+  "date" : "2023-09-20T15:02:23+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -268,6 +268,17 @@
       "extension" : [{
         "url" : "code",
         "valueString" : "apply-version"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-wg"
       },
       {
         "url" : "value",
@@ -557,6 +568,17 @@
     {
       "extension" : [{
         "url" : "code",
+        "valueCode" : "apply-wg"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
         "valueCode" : "active-tables"
       },
       {
@@ -615,10 +637,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/dui-bundle"
+        "reference" : "StructureDefinition/tddui-bundle"
       },
-      "name" : "DUI Bundle",
-      "description" : "Profil générique créé dans le contexte du transfert de données DUI pour véhiculer un lot de dossiers au format CDA.",
+      "name" : "TDDUI Bundle",
+      "description" : "Profil générique créé dans le contexte du transfert de données DUI pour véhiculer un lot de documents au format CDA.",
       "exampleBoolean" : false
     },
     {
@@ -627,10 +649,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/dui-documentreference"
+        "reference" : "StructureDefinition/tddui-documentreference"
       },
-      "name" : "DUI Document Reference",
-      "description" : "Profil générique créé dans le contexte du transfert de données DUI pour véhiculer le dossier au format CDA, inclus dans DocumentReference.attachment.data.",
+      "name" : "TDDUI Document Reference",
+      "description" : "Profil générique créé dans le contexte du transfert de données DUI pour véhiculer un document au format CDA, inclus dans DocumentReference.attachment.data.",
       "exampleBoolean" : false
     }],
     "page" : {
@@ -701,7 +723,7 @@
           "valueUrl" : "contenu_dossier.html"
         }],
         "nameUrl" : "contenu_dossier.html",
-        "title" : "Contenu Dossier",
+        "title" : "Contenu du dossier",
         "generation" : "markdown"
       },
       {
@@ -715,10 +737,10 @@
         "page" : [{
           "extension" : [{
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "construction_des_flux.html"
+            "valueUrl" : "synthese_flux.html"
           }],
-          "nameUrl" : "construction_des_flux.html",
-          "title" : "Construction Des Flux",
+          "nameUrl" : "synthese_flux.html",
+          "title" : "Synthèse des flux",
           "generation" : "markdown"
         },
         {
@@ -727,7 +749,7 @@
             "valueUrl" : "st_flux1.html"
           }],
           "nameUrl" : "st_flux1.html",
-          "title" : "Flux 1 - Transfert d'un dossier",
+          "title" : "Flux 1 - Ajout d'un document",
           "generation" : "markdown"
         },
         {
@@ -736,7 +758,7 @@
             "valueUrl" : "st_flux2.html"
           }],
           "nameUrl" : "st_flux2.html",
-          "title" : "Flux 2 - Transfert d'un lot de dossiers",
+          "title" : "Flux 2 - Ajout d'un lot de documents",
           "generation" : "markdown"
         }]
       },
