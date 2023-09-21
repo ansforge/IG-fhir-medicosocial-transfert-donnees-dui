@@ -10,7 +10,7 @@
   <name value="TDDUIDocumentReference"/>
   <title value="TDDUI Document Reference"/>
   <status value="draft"/>
-  <date value="2023-09-21T12:39:02+00:00"/>
+  <date value="2023-09-21T14:50:45+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -1207,7 +1207,7 @@
     </element>
     <element id="DocumentReference.subject">
       <path value="DocumentReference.subject"/>
-      <short value="Patient concerné par ce document. La ressource référencée peut être présente sous l’élément DocumentReference.contained ou via le champ identifier."/>
+      <short value="Who/what is the subject of the document"/>
       <definition value="Who or what the document is about. The document can be about a person, (patient or healthcare practitioner), a device (e.g. a machine) or even a group of subjects (such as a document about a herd of farm animals, or a set of patients that share a common exposure)."/>
       <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository."/>
       <min value="0"/>
@@ -1219,7 +1219,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://interopsante.org/fhir/StructureDefinition/FrPatient"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -1342,12 +1342,12 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole"/>
-        <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner"/>
-        <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
-        <targetProfile value="http://interopsante.org/fhir/StructureDefinition/FrPatient"/>
-        <targetProfile value="http://interopsante.org/fhir/StructureDefinition/FrRelatedPerson"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -1415,8 +1415,9 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole"/>
-        <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -3379,10 +3380,9 @@
     </element>
     <element id="DocumentReference.subject">
       <path value="DocumentReference.subject"/>
-      <short value="Patient concerné par ce document. La ressource référencée peut être présente sous l’élément DocumentReference.contained ou via le champ identifier."/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://interopsante.org/fhir/StructureDefinition/FrPatient"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
       </type>
     </element>
     <element id="DocumentReference.date">
@@ -3393,25 +3393,11 @@
     <element id="DocumentReference.author">
       <path value="DocumentReference.author"/>
       <short value="Personnes physiques ou morales et/ou les dispositifs auteurs d'un document."/>
-      <type>
-        <code value="Reference"/>
-        <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole"/>
-        <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner"/>
-        <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
-        <targetProfile value="http://interopsante.org/fhir/StructureDefinition/FrPatient"/>
-        <targetProfile value="http://interopsante.org/fhir/StructureDefinition/FrRelatedPerson"/>
-      </type>
       <mustSupport value="true"/>
     </element>
     <element id="DocumentReference.authenticator">
       <path value="DocumentReference.authenticator"/>
       <short value="Cet attribut représente l’acteur validant le document et prenant la responsabilité du contenu médical de celui-ci. Il peut s’agir de l’auteur du document si celui-ci est une personne et s’il endosse la responsabilité du contenu médical de ses documents. Si l’auteur est un dispositif, cet attribut doit représenter la personne responsable de l’action effectuée par le dispositif."/>
-      <type>
-        <code value="Reference"/>
-        <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole"/>
-        <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization"/>
-      </type>
       <mustSupport value="true"/>
     </element>
     <element id="DocumentReference.relatesTo">

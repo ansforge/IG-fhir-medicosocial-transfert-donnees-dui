@@ -10,7 +10,7 @@
   "name" : "TDDUIDocumentReference",
   "title" : "TDDUI Document Reference",
   "status" : "draft",
-  "date" : "2023-09-21T12:39:02+00:00",
+  "date" : "2023-09-21T14:50:45+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -1266,7 +1266,7 @@
     {
       "id" : "DocumentReference.subject",
       "path" : "DocumentReference.subject",
-      "short" : "Patient concerné par ce document. La ressource référencée peut être présente sous l’élément DocumentReference.contained ou via le champ identifier.",
+      "short" : "Who/what is the subject of the document",
       "definition" : "Who or what the document is about. The document can be about a person, (patient or healthcare practitioner), a device (e.g. a machine) or even a group of subjects (such as a document about a herd of farm animals, or a set of patients that share a common exposure).",
       "comment" : "References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.",
       "min" : 0,
@@ -1278,7 +1278,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://interopsante.org/fhir/StructureDefinition/FrPatient"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient"]
       }],
       "condition" : ["ele-1"],
       "constraint" : [{
@@ -1403,12 +1403,12 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole",
-        "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner",
-        "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Practitioner",
+        "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+        "http://hl7.org/fhir/StructureDefinition/Organization",
         "http://hl7.org/fhir/StructureDefinition/Device",
-        "http://interopsante.org/fhir/StructureDefinition/FrPatient",
-        "http://interopsante.org/fhir/StructureDefinition/FrRelatedPerson"]
+        "http://hl7.org/fhir/StructureDefinition/Patient",
+        "http://hl7.org/fhir/StructureDefinition/RelatedPerson"]
       }],
       "condition" : ["ele-1"],
       "constraint" : [{
@@ -1477,8 +1477,9 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole",
-        "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Practitioner",
+        "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+        "http://hl7.org/fhir/StructureDefinition/Organization"]
       }],
       "condition" : ["ele-1"],
       "constraint" : [{
@@ -3527,10 +3528,9 @@
     {
       "id" : "DocumentReference.subject",
       "path" : "DocumentReference.subject",
-      "short" : "Patient concerné par ce document. La ressource référencée peut être présente sous l’élément DocumentReference.contained ou via le champ identifier.",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://interopsante.org/fhir/StructureDefinition/FrPatient"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient"]
       }]
     },
     {
@@ -3543,26 +3543,12 @@
       "id" : "DocumentReference.author",
       "path" : "DocumentReference.author",
       "short" : "Personnes physiques ou morales et/ou les dispositifs auteurs d'un document.",
-      "type" : [{
-        "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole",
-        "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner",
-        "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization",
-        "http://hl7.org/fhir/StructureDefinition/Device",
-        "http://interopsante.org/fhir/StructureDefinition/FrPatient",
-        "http://interopsante.org/fhir/StructureDefinition/FrRelatedPerson"]
-      }],
       "mustSupport" : true
     },
     {
       "id" : "DocumentReference.authenticator",
       "path" : "DocumentReference.authenticator",
       "short" : "Cet attribut représente l’acteur validant le document et prenant la responsabilité du contenu médical de celui-ci. Il peut s’agir de l’auteur du document si celui-ci est une personne et s’il endosse la responsabilité du contenu médical de ses documents. Si l’auteur est un dispositif, cet attribut doit représenter la personne responsable de l’action effectuée par le dispositif.",
-      "type" : [{
-        "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole",
-        "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization"]
-      }],
       "mustSupport" : true
     },
     {

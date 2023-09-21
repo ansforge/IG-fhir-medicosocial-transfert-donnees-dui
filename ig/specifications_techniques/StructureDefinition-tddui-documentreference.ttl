@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "TDDUIDocumentReference"] ; # 
   fhir:title [ fhir:v "TDDUI Document Reference"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-09-21T12:39:02+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-09-21T14:50:45+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -1268,7 +1268,7 @@
      ] [
        fhir:id [ fhir:v "DocumentReference.subject" ] ;
        fhir:path [ fhir:v "DocumentReference.subject" ] ;
-       fhir:short [ fhir:v "Patient concerné par ce document. La ressource référencée peut être présente sous l’élément DocumentReference.contained ou via le champ identifier." ] ;
+       fhir:short [ fhir:v "Who/what is the subject of the document" ] ;
        fhir:definition [ fhir:v "Who or what the document is about. The document can be about a person, (patient or healthcare practitioner), a device (e.g. a machine) or even a group of subjects (such as a document about a herd of farm animals, or a set of patients that share a common exposure)." ] ;
        fhir:comment [ fhir:v "References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
@@ -1281,8 +1281,8 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "http://interopsante.org/fhir/StructureDefinition/FrPatient"^^xsd:anyURI ;
-           fhir:link <http://interopsante.org/fhir/StructureDefinition/FrPatient>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Patient"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Patient>
          ] )
        ] ) ;
        fhir:condition ( [ fhir:v "ele-1" ] ) ;
@@ -1402,23 +1402,23 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole"^^xsd:anyURI ;
-           fhir:link <https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Practitioner"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Practitioner>
          ] [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner"^^xsd:anyURI ;
-           fhir:link <https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/PractitionerRole"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/PractitionerRole>
          ] [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization"^^xsd:anyURI ;
-           fhir:link <https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Organization"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Organization>
          ] [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Device"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Device>
          ] [
-           fhir:v "http://interopsante.org/fhir/StructureDefinition/FrPatient"^^xsd:anyURI ;
-           fhir:link <http://interopsante.org/fhir/StructureDefinition/FrPatient>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Patient"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Patient>
          ] [
-           fhir:v "http://interopsante.org/fhir/StructureDefinition/FrRelatedPerson"^^xsd:anyURI ;
-           fhir:link <http://interopsante.org/fhir/StructureDefinition/FrRelatedPerson>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/RelatedPerson"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/RelatedPerson>
          ] )
        ] ) ;
        fhir:condition ( [ fhir:v "ele-1" ] ) ;
@@ -1486,11 +1486,14 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole"^^xsd:anyURI ;
-           fhir:link <https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Practitioner"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Practitioner>
          ] [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization"^^xsd:anyURI ;
-           fhir:link <https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/PractitionerRole"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/PractitionerRole>
+         ] [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Organization"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Organization>
          ] )
        ] ) ;
        fhir:condition ( [ fhir:v "ele-1" ] ) ;
@@ -3554,12 +3557,11 @@
      ] [
        fhir:id [ fhir:v "DocumentReference.subject" ] ;
        fhir:path [ fhir:v "DocumentReference.subject" ] ;
-       fhir:short [ fhir:v "Patient concerné par ce document. La ressource référencée peut être présente sous l’élément DocumentReference.contained ou via le champ identifier." ] ;
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "http://interopsante.org/fhir/StructureDefinition/FrPatient"^^xsd:anyURI ;
-           fhir:link <http://interopsante.org/fhir/StructureDefinition/FrPatient>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Patient"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Patient>
          ] )
        ] )
      ] [
@@ -3571,43 +3573,11 @@
        fhir:id [ fhir:v "DocumentReference.author" ] ;
        fhir:path [ fhir:v "DocumentReference.author" ] ;
        fhir:short [ fhir:v "Personnes physiques ou morales et/ou les dispositifs auteurs d'un document." ] ;
-       fhir:type ( [
-         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
-         fhir:targetProfile ( [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole"^^xsd:anyURI ;
-           fhir:link <https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole>
-         ] [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner"^^xsd:anyURI ;
-           fhir:link <https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner>
-         ] [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization"^^xsd:anyURI ;
-           fhir:link <https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization>
-         ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Device"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Device>
-         ] [
-           fhir:v "http://interopsante.org/fhir/StructureDefinition/FrPatient"^^xsd:anyURI ;
-           fhir:link <http://interopsante.org/fhir/StructureDefinition/FrPatient>
-         ] [
-           fhir:v "http://interopsante.org/fhir/StructureDefinition/FrRelatedPerson"^^xsd:anyURI ;
-           fhir:link <http://interopsante.org/fhir/StructureDefinition/FrRelatedPerson>
-         ] )
-       ] ) ;
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:id [ fhir:v "DocumentReference.authenticator" ] ;
        fhir:path [ fhir:v "DocumentReference.authenticator" ] ;
        fhir:short [ fhir:v "Cet attribut représente l’acteur validant le document et prenant la responsabilité du contenu médical de celui-ci. Il peut s’agir de l’auteur du document si celui-ci est une personne et s’il endosse la responsabilité du contenu médical de ses documents. Si l’auteur est un dispositif, cet attribut doit représenter la personne responsable de l’action effectuée par le dispositif." ] ;
-       fhir:type ( [
-         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
-         fhir:targetProfile ( [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole"^^xsd:anyURI ;
-           fhir:link <https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole>
-         ] [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization"^^xsd:anyURI ;
-           fhir:link <https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization>
-         ] )
-       ] ) ;
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:id [ fhir:v "DocumentReference.relatesTo" ] ;
