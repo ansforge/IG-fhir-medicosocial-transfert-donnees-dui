@@ -122,6 +122,9 @@
       <li>
         <a href="st_flux2.html">Flux 2 - Ajout d'un lot de documents</a>
       </li>
+      <li>
+        <a href="st_flux3.html">Flux 3 - Mise à jour d'un document</a>
+      </li>
     </ul>
   </li>
   <li class="dropdown">
@@ -198,7 +201,7 @@
 
             <a href="#bottom">bottom</a>
 
-          | <a href="ressources_conformite.html">next&gt;</a>
+          | <a href="st_flux3.html">next&gt;</a>
 
           </span>
 
@@ -249,9 +252,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="flux-21-ajoutlotdocuments">Flux 2.1 AjoutLotDocuments</h3>
 
-<p><a name="l475">​</a>L’ajout d’un lot de documents est assuré par l’interaction FHIR <a href="https://hl7.org/fhir/R4/http.html#transaction">transaction</a>. L’émetteur du lot de documents envoie une requête HTTP POST dont le corps contient une ressource de type Bundle conforme au profil <a href="StructureDefinition-dui-bundle.html">DUIBundle</a> :</p>
+<p><a name="l481">​</a>L’ajout d’un lot de documents est assuré par l’interaction FHIR <a href="https://hl7.org/fhir/R4/http.html#transaction">transaction</a>. L’émetteur du lot de documents envoie une requête HTTP POST dont le corps contient une ressource de type Bundle conforme au profil <a href="StructureDefinition-dui-bundle.html">DUIBundle</a> :</p>
 
-<p><code class="language-plaintext highlighter-rouge">POST [base]/Bundle</code></p>
+<p><code class="language-plaintext highlighter-rouge">POST [base]</code></p>
 
 <p>Où <code class="language-plaintext highlighter-rouge">[base]</code> est le point de contact FHIR.</p>
 
@@ -259,7 +262,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="flux-22-resultatajoutlotdocuments">Flux 2.2 ResultatAjoutLotDocuments</h3>
 
-<p>Si la création des ressources DocumentReference est correctement effectuée, le récepteur doit retourner un code HTTPS 200 « OK ».</p>
+<p>Si la création des ressources DocumentReference est correctement effectuée, le récepteur doit retourner un code HTTPS 200 « OK » ainsi</p>
 
 <p>En cas d’échec, le récepteur doit répondre avec le code HTTPS approprié tel que défini par l’API REST FHIR <a href="http://hl7.org/fhir/R4/http.html">(Http - FHIR v4.0.1 (hl7.org))</a>. Une ressource OperationOutcome doit également y être associé pour véhiculer les messages d’erreurs détaillant la raison de l’erreur <a href="http://hl7.org/fhir/R4/operationoutcome.html">(OperationOutcome - FHIR v4.0.1 (hl7.org))</a>.</p>
 
@@ -299,7 +302,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
               </td>
               <td style="text-align:right">&nbsp;
 
-                <a href="ressources_conformite.html">next&gt;</a>
+                <a href="st_flux3.html">next&gt;</a>
 
               </td>
             </tr>
@@ -309,7 +312,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 21, 2023 10:44+0000">2023-09-21</span>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 21, 2023 12:08+0000">2023-09-21</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

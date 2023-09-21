@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "TransfertDonneesDUI"] ; # 
   fhir:title [ fhir:v "Médicosocial - Transfert de données DUI"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-09-21T10:44:28+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-09-21T12:08:39+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -664,6 +664,14 @@
            ] ) ;
            fhir:name [ fhir:v "st_flux2.html"^^xsd:anyURI ] ;
            fhir:title [ fhir:v "Flux 2 - Ajout d'un lot de documents" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "st_flux3.html"^^xsd:anyURI ]
+           ] ) ;
+           fhir:name [ fhir:v "st_flux3.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Flux 3 - Mise à jour d'un document" ] ;
            fhir:generation [ fhir:v "markdown" ]
          ] )
        ] [
