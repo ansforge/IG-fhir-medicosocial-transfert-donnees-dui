@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "TransfertDonneesDUI"] ; # 
   fhir:title [ fhir:v "Médicosocial - Transfert de données DUI"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-09-20T15:02:23+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-09-21T09:50:54+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -639,7 +639,7 @@
            fhir:value [ fhir:v "specifications_techniques.html"^^xsd:anyURI ]
          ] ) ;
          fhir:name [ fhir:v "specifications_techniques.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Specifications Techniques" ] ;
+         fhir:title [ fhir:v "Spécifications techniques" ] ;
          fhir:generation [ fhir:v "markdown" ] ;
          fhir:page ( [
            fhir:extension ( [
@@ -664,6 +664,40 @@
            ] ) ;
            fhir:name [ fhir:v "st_flux2.html"^^xsd:anyURI ] ;
            fhir:title [ fhir:v "Flux 2 - Ajout d'un lot de documents" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] )
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "ressources_conformite.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "ressources_conformite.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Ressources de conformité" ] ;
+         fhir:generation [ fhir:v "markdown" ] ;
+         fhir:page ( [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "ressources_cda.html"^^xsd:anyURI ]
+           ] ) ;
+           fhir:name [ fhir:v "ressources_cda.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Ressources CDA" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] )
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "annexes.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "annexes.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Annexes" ] ;
+         fhir:generation [ fhir:v "markdown" ] ;
+         fhir:page ( [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "acronymes.html"^^xsd:anyURI ]
+           ] ) ;
+           fhir:name [ fhir:v "acronymes.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Acronymes" ] ;
            fhir:generation [ fhir:v "markdown" ]
          ] )
        ] [

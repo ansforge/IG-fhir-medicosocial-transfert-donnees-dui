@@ -124,8 +124,31 @@
       </li>
     </ul>
   </li>
-  <li>
-    <a href="artifacts.html">Ressources de conformité</a>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Ressources de conformité
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">Ressource FHIR</a>
+      </li>
+      <li>
+        <a href="ressources_cda.html">Ressource CDA</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Annexes
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="acronymes.html">Acronymes</a>
+      </li>
+      <li>
+        <a href="NormesStandards_TransfertDonneesDUI_V0.1-finale.pdf" target="_blank">Etude des normes et standards</a>
+      </li>
+    </ul>
   </li>
   <li>
     <a href="tests.html">Tests</a>
@@ -228,7 +251,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Draft
           
-            as of 2023-09-20
+            as of 2023-09-21
           
         
       </td>
@@ -257,7 +280,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
   <li><a href="#flux" id="markdown-toc-flux">Flux</a></li>
   <li><a href="#ressources-profilées" id="markdown-toc-ressources-profilées">Ressources profilées</a></li>
-  <li><a href="#acronymes" id="markdown-toc-acronymes">Acronymes</a></li>
 </ul>
 
 </div>
@@ -286,7 +308,7 @@ The aim of this implementation guide is to define the specifications for DUI dat
   <li>L’étude des normes et standards : <a href="NormesStandards_TransfertDonneesDUI_V0.1-finale.pdf">lien pdf</a></li>
   <li>Les spécifications fonctionnelles : section <a href="cadre_orientations.html"> Spécifications fonctionnelles</a></li>
   <li>La spécification technique de contenu : section <a href="contenu_dossier.html">Contenu du dossier</a></li>
-  <li><a name="l487">​</a>La spécification technique de transport : sections <a href="construction_des_flux.html">Description des flux</a> et <a href="artifacts.html">Ressources de conformité</a></li>
+  <li><a name="l523">​</a>La spécification technique de transport : sections <a href="construction_des_flux.html">Description des flux</a> et <a href="artifacts.html">Ressources de conformité</a></li>
 </ul>
 
 <h3 id="flux">Flux</h3>
@@ -315,7 +337,7 @@ The aim of this implementation guide is to define the specifications for DUI dat
   </tbody>
 </table>
 
-<p><a name="l549">​</a>Pour en savoir davantage, rendez-vous sur la page <a href="construction_des_flux.html">construction des flux</a>.</p>
+<p><a name="l585">​</a>Pour en savoir davantage, rendez-vous sur la page <a href="construction_des_flux.html">construction des flux</a>.</p>
 
 <h3 id="ressources-profilées">Ressources profilées</h3>
 
@@ -333,107 +355,14 @@ The aim of this implementation guide is to define the specifications for DUI dat
     <tr>
       <td><a href="https://hl7.org/fhir/R4/documentreference.html">DocumentReference</a></td>
       <td>&nbsp;</td>
-      <td><a name="l589">​</a>Création du profil <a href="StructureDefinition-dui-documentreference.html">DUIDocumentReference</a></td>
+      <td><a name="l625">​</a>Création du profil <a href="StructureDefinition-dui-documentreference.html">DUIDocumentReference</a></td>
     </tr>
     <tr>
       <td><a href="https://hl7.org/fhir/R4/bundle.html">Bundle</a></td>
       <td>&nbsp;</td>
-      <td><a name="l604">​</a>Création du profil <a href="StructureDefinition-dui-bundle.html">DUIBundle</a></td>
+      <td><a name="l640">​</a>Création du profil <a href="StructureDefinition-dui-bundle.html">DUIBundle</a></td>
     </tr>
   </tbody>
-</table>
-
-<h3 id="acronymes">Acronymes</h3>
-
-<table style="width:100%">
-  <tr>
-    <th>Sigle / Acronyme</th>
-    <th>Définition</th>
-  </tr>
-  <tr>
-    <td>ANS</td>
-    <td>L’Agence du Numérique en Santé</td>
-  </tr>
-  <tr>
-    <td>ARS</td>
-    <td>Agence Régionale de Santé</td>
-  </tr>
-  <tr>
-    <td>CDA</td>
-    <td>Clinical Document</td>
-  </tr>
-  <tr>
-    <td>CI-SIS</td>
-    <td>Cadre d’Interopérabilité des Systèmes d’Information de Santé</td>
-  </tr>
-  <tr>
-    <td>CNIL</td>
-    <td>Commission nationale de l'informatique et des libertés</td>
-  </tr>
-  <tr>
-    <td>CNSA</td>
-    <td>Caisse Nationale de Solidarité pour l’Autonomie</td>
-  </tr>
-  <tr>
-    <td>DUI</td>
-    <td>Dossier Usager Informatisé</td>
-  </tr>
-  <tr>
-    <td>DSR</td>
-    <td>Dossier de Spécifications de Référenceement</td>
-  </tr>
-  <tr>
-    <td>ESSMS (ou ESMS)</td>
-    <td>Etablissement et Services sociaux ou Médico-Sociaux</td>
-  </tr>
-  <tr>
-    <td>GIR</td>
-    <td>Groupe Iso-Ressource</td>
-  </tr>
-  <tr>
-    <td>HL7</td>
-    <td>Health Level 7</td>
-  </tr>
-  <tr>
-    <td>INS</td>
-    <td>Identité Nationale de Santé</td>
-  </tr>
-  <tr>
-    <td>IPS</td>
-    <td>International Patient Summary</td>
-  </tr>
-  <tr>
-    <td>MDPH</td>
-    <td>Maison Départementale des Personnes Handicapées</td>
-  </tr>
-  <tr>
-    <td>NIA</td>
-    <td>Numéro d'Immatriculation d'Attente</td>
-  </tr>
-  <tr>
-    <td>NIR</td>
-    <td>Numéro d'Inscription au Répertoire</td>
-  </tr>
-  <tr>
-    <td>RGPD</td>
-    <td>Règlement Général sur la Protection des Données</td>
-  </tr>
-  <tr>
-    <td>SI</td>
-    <td>Système d’Information</td>
-  </tr>
-  <tr>
-    <td>SIDOBA</td>
-    <td>Système d’Information de l’Offre de la Branche Autonomie</td>
-  </tr>
-  <tr>
-    <td>TRE</td>
-    <td>Terminologie de REférence</td>
-  </tr>
-  <tr>
-    <td>JDV</td>
-    <td>Jeu De Valeur</td>
-  </tr>
 </table>
 
 
@@ -482,7 +411,7 @@ The aim of this implementation guide is to define the specifications for DUI dat
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 20, 2023 15:02+0000">2023-09-20</span>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 21, 2023 09:50+0000">2023-09-21</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
