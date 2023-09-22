@@ -10,7 +10,7 @@
   "name" : "TDDUIBundle",
   "title" : "TDDUI Bundle",
   "status" : "active",
-  "date" : "2023-09-22T09:23:37+00:00",
+  "date" : "2023-09-22T12:19:21+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -369,14 +369,6 @@
     },
     {
       "id" : "Bundle.type",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Bundle.type",
       "short" : "document | message | transaction | transaction-response | batch | batch-response | history | searchset | collection",
       "definition" : "Indicates the purpose of this bundle - how it is intended to be used.",
@@ -391,6 +383,7 @@
       "type" : [{
         "code" : "code"
       }],
+      "patternCode" : "transaction",
       "condition" : ["ele-1"],
       "constraint" : [{
         "key" : "ele-1",
@@ -1014,7 +1007,7 @@
       "short" : "A reference to a document",
       "definition" : "A reference to a document of any kind for any purpose. Provides metadata about the document so that the document can be discovered and managed. The scope of a document is any seralized object with a mime-type, so includes formal patient centric documents (CDA), cliical notes, scanned paper, and non-patient specific documents like policy text.",
       "comment" : "Usually, this is used for documents other than those defined by FHIR.",
-      "min" : 0,
+      "min" : 1,
       "max" : "1",
       "base" : {
         "path" : "Bundle.entry.resource",
@@ -1545,14 +1538,6 @@
     },
     {
       "id" : "Bundle.entry.request.method",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Bundle.entry.request.method",
       "short" : "GET | HEAD | POST | PUT | DELETE | PATCH",
       "definition" : "In a transaction or batch, this is the HTTP action to be executed for this entry. In a history bundle, this indicates the HTTP action that occurred.",
@@ -1567,6 +1552,7 @@
       "type" : [{
         "code" : "code"
       }],
+      "patternCode" : "POST",
       "condition" : ["ele-1"],
       "constraint" : [{
         "key" : "ele-1",
@@ -2196,6 +2182,11 @@
       "path" : "Bundle"
     },
     {
+      "id" : "Bundle.type",
+      "path" : "Bundle.type",
+      "patternCode" : "transaction"
+    },
+    {
       "id" : "Bundle.entry",
       "path" : "Bundle.entry",
       "min" : 1
@@ -2203,10 +2194,16 @@
     {
       "id" : "Bundle.entry.resource",
       "path" : "Bundle.entry.resource",
+      "min" : 1,
       "type" : [{
         "code" : "DocumentReference",
         "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-documentreference"]
       }]
+    },
+    {
+      "id" : "Bundle.entry.request.method",
+      "path" : "Bundle.entry.request.method",
+      "patternCode" : "POST"
     }]
   }
 }

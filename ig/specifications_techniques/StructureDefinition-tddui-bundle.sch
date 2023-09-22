@@ -15,4 +15,10 @@
       <sch:assert test="count(f:entry) &gt;= 1">entry: minimum cardinality of 'entry' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:Bundle/f:entry</sch:title>
+    <sch:rule context="f:Bundle/f:entry">
+      <sch:assert test="count(f:resource) &gt;= 1">resource: minimum cardinality of 'resource' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
 </sch:schema>

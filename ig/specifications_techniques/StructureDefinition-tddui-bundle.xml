@@ -10,7 +10,7 @@
   <name value="TDDUIBundle"/>
   <title value="TDDUI Bundle"/>
   <status value="active"/>
-  <date value="2023-09-22T09:23:37+00:00"/>
+  <date value="2023-09-22T12:19:21+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -350,12 +350,6 @@
       </mapping>
     </element>
     <element id="Bundle.type">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="Bundle.type"/>
       <short value="document | message | transaction | transaction-response | batch | batch-response | history | searchset | collection"/>
       <definition value="Indicates the purpose of this bundle - how it is intended to be used."/>
@@ -370,6 +364,7 @@
       <type>
         <code value="code"/>
       </type>
+      <patternCode value="transaction"/>
       <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
@@ -955,7 +950,7 @@
       <short value="A reference to a document"/>
       <definition value="A reference to a document of any kind for any purpose. Provides metadata about the document so that the document can be discovered and managed. The scope of a document is any seralized object with a mime-type, so includes formal patient centric documents (CDA), cliical notes, scanned paper, and non-patient specific documents like policy text."/>
       <comment value="Usually, this is used for documents other than those defined by FHIR."/>
-      <min value="0"/>
+      <min value="1"/>
       <max value="1"/>
       <base>
         <path value="Bundle.entry.resource"/>
@@ -1454,12 +1449,6 @@
       </mapping>
     </element>
     <element id="Bundle.entry.request.method">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="Bundle.entry.request.method"/>
       <short value="GET | HEAD | POST | PUT | DELETE | PATCH"/>
       <definition value="In a transaction or batch, this is the HTTP action to be executed for this entry. In a history bundle, this indicates the HTTP action that occurred."/>
@@ -1474,6 +1463,7 @@
       <type>
         <code value="code"/>
       </type>
+      <patternCode value="POST"/>
       <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
@@ -2058,16 +2048,25 @@
     <element id="Bundle">
       <path value="Bundle"/>
     </element>
+    <element id="Bundle.type">
+      <path value="Bundle.type"/>
+      <patternCode value="transaction"/>
+    </element>
     <element id="Bundle.entry">
       <path value="Bundle.entry"/>
       <min value="1"/>
     </element>
     <element id="Bundle.entry.resource">
       <path value="Bundle.entry.resource"/>
+      <min value="1"/>
       <type>
         <code value="DocumentReference"/>
         <profile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-documentreference"/>
       </type>
+    </element>
+    <element id="Bundle.entry.request.method">
+      <path value="Bundle.entry.request.method"/>
+      <patternCode value="POST"/>
     </element>
   </differential>
 </StructureDefinition>

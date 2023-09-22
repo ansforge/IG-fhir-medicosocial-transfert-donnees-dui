@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "TDDUIBundle"] ; # 
   fhir:title [ fhir:v "TDDUI Bundle"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-09-22T09:23:37+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-09-22T12:19:21+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -392,13 +392,6 @@
        ] )
      ] [
        fhir:id [ fhir:v "Bundle.type" ] ;
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "normative" ]
-       ] [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "4.0.0" ]
-       ] ) ;
        fhir:path [ fhir:v "Bundle.type" ] ;
        fhir:short [ fhir:v "document | message | transaction | transaction-response | batch | batch-response | history | searchset | collection" ] ;
        fhir:definition [ fhir:v "Indicates the purpose of this bundle - how it is intended to be used." ] ;
@@ -413,6 +406,7 @@
        fhir:type ( [
          fhir:code [ fhir:v "code"^^xsd:anyURI ]
        ] ) ;
+       fhir:pattern [ fhir:v "transaction" ] ;
        fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -1048,7 +1042,7 @@
        fhir:short [ fhir:v "A reference to a document" ] ;
        fhir:definition [ fhir:v "A reference to a document of any kind for any purpose. Provides metadata about the document so that the document can be discovered and managed. The scope of a document is any seralized object with a mime-type, so includes formal patient centric documents (CDA), cliical notes, scanned paper, and non-patient specific documents like policy text." ] ;
        fhir:comment [ fhir:v "Usually, this is used for documents other than those defined by FHIR." ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
          fhir:path [ fhir:v "Bundle.entry.resource" ] ;
@@ -1592,13 +1586,6 @@
        ] )
      ] [
        fhir:id [ fhir:v "Bundle.entry.request.method" ] ;
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "normative" ]
-       ] [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "4.0.0" ]
-       ] ) ;
        fhir:path [ fhir:v "Bundle.entry.request.method" ] ;
        fhir:short [ fhir:v "GET | HEAD | POST | PUT | DELETE | PATCH" ] ;
        fhir:definition [ fhir:v "In a transaction or batch, this is the HTTP action to be executed for this entry. In a history bundle, this indicates the HTTP action that occurred." ] ;
@@ -1613,6 +1600,7 @@
        fhir:type ( [
          fhir:code [ fhir:v "code"^^xsd:anyURI ]
        ] ) ;
+       fhir:pattern [ fhir:v "POST" ] ;
        fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -2255,12 +2243,17 @@
        fhir:id [ fhir:v "Bundle" ] ;
        fhir:path [ fhir:v "Bundle" ]
      ] [
+       fhir:id [ fhir:v "Bundle.type" ] ;
+       fhir:path [ fhir:v "Bundle.type" ] ;
+       fhir:pattern [ fhir:v "transaction" ]
+     ] [
        fhir:id [ fhir:v "Bundle.entry" ] ;
        fhir:path [ fhir:v "Bundle.entry" ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ]
      ] [
        fhir:id [ fhir:v "Bundle.entry.resource" ] ;
        fhir:path [ fhir:v "Bundle.entry.resource" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
        fhir:type ( [
          fhir:code [ fhir:v "DocumentReference"^^xsd:anyURI ] ;
          fhir:profile ( [
@@ -2268,6 +2261,10 @@
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-documentreference>
          ] )
        ] )
+     ] [
+       fhir:id [ fhir:v "Bundle.entry.request.method" ] ;
+       fhir:path [ fhir:v "Bundle.entry.request.method" ] ;
+       fhir:pattern [ fhir:v "POST" ]
      ] )
   ] . # 
 
