@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Flux 1 - Ajout d&#39;un document - Médicosocial - Transfert de données DUI v0.2.0</title>
+    <title>Flux 01 - ANS IG Example v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"4.2"}
-    h3,h4,h5,h6{--heading-prefix:"4.2"}</style>
+    <style type="text/css">h2{--heading-prefix:"2.2"}
+    h3,h4,h5,h6{--heading-prefix:"2.2"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -54,9 +54,9 @@
 </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Médicosocial - Transfert de données DUI</span>
+          <p><span style="font-size:12pt;font-weight:bold">ANS IG Example</span>
             <br/>
-            <span style="display:inline-block;">0.2.0 - STU1
+            <span style="display:inline-block;">0.1.0 - ci-build
 
 
             </span>
@@ -87,71 +87,23 @@
     <a href="index.html">Accueil</a>
   </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Spécifications fonctionnelles
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="cadre_orientations.html">Cadre juridique et orientations organisationnelles</a>
-      </li>
-      <li>
-        <a href="contexte_metier.html">Organisation du contexte métier</a>
-      </li>
-      <li>
-        <a href="processus.html">Définition des processus collaboratifs</a>
-      </li>
-      <li>
-        <a href="modelisation_contenu.html">Modélisation du contenu du DUI</a>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <a href="contenu_dossier.html">Contenu du dossier</a>
-  </li>
-  <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Description des flux
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="synthese_flux.html">Synthèse des flux</a>
+        <a href="construction_des_flux.html">Construction des flux</a>
       </li>
       <li>
-        <a href="st_flux1.html">Flux 1 - Ajout d&apos;un document</a>
+        <a href="st_flux1.html">Flux 01</a>
       </li>
       <li>
-        <a href="st_flux2.html">Flux 2 - Ajout d&apos;un lot de documents</a>
-      </li>
-      <li>
-        <a href="st_flux3.html">Flux 3 - Mise à jour d&apos;un document</a>
+        <a href="st_flux2.html">Flux 02</a>
       </li>
     </ul>
   </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Ressources de conformité
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="artifacts.html">Ressource FHIR</a>
-      </li>
-      <li>
-        <a href="ressources_cda.html">Ressource CDA</a>
-      </li>
-    </ul>
-  </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Annexes
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="acronymes.html">Acronymes</a>
-      </li>
-      <li>
-        <a target="_blank" href="NormesStandards_TransfertDonneesDUI_V0.1-finale.pdf">Etude des normes et standards</a>
-      </li>
-    </ul>
+  <li>
+    <a href="artifacts.html">Ressources de conformité</a>
   </li>
   <li>
     <a href="tests.html">Tests</a>
@@ -193,11 +145,11 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='specifications_techniques.html'><b>Spécifications techniques</b></a></li><li><b>Flux 1 - Ajout d'un document</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='specifications_techniques.html'><b>Specifications Techniques</b></a></li><li><b>Flux 01</b></li>
 
           <span style="float:right;">
 
-            <a href="synthese_flux.html">&lt;prev</a> | 
+            <a href="construction_des_flux.html">&lt;prev</a> | 
 
             <a href="#bottom">bottom</a>
 
@@ -224,7 +176,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </style>
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Publication Build: This will be filled in by the publication tooling</p><!--EndReleaseHeader-->
-  <h2>Flux 1 - Ajout d&#39;un document</h2>
+  <h2>Flux 01</h2>
   
 
 
@@ -241,29 +193,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#flux-11-ajoutdocument" id="markdown-toc-flux-11-ajoutdocument">Flux 1.1 AjoutDocument</a></li>
-  <li><a href="#flux-12-resultatajoutdocument" id="markdown-toc-flux-12-resultatajoutdocument">Flux 1.2 ResultatAjoutDocument</a></li>
+  <li><a href="#nom-du-flux" id="markdown-toc-nom-du-flux">Nom du flux</a></li>
+  <li><a href="#construction-du-flux" id="markdown-toc-construction-du-flux">Construction du flux</a></li>
 </ul>
 
 </div>
-<p>Ce flux permet l’ajout d’un document.</p>
 
-<div><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="180px" preserveAspectRatio="none" style="width:520px;height:180px;background:#FFFFFF;" version="1.1" viewBox="0 0 520 180" width="520px" zoomAndPan="magnify"><defs /><g><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="51" x2="51" y1="36.2969" y2="144.8281" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="431" x2="431" y1="36.2969" y2="144.8281" /><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="93" x="5" y="5" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="79" x="12" y="24.9951">Logiciel DUI</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="93" x="5" y="143.8281" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="79" x="12" y="163.8232">Logiciel DUI</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="165" x="349" y="5" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="151" x="356" y="24.9951">Logiciel DUI ou SI tiers</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="165" x="349" y="143.8281" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="151" x="356" y="163.8232">Logiciel DUI ou SI tiers</text><polygon fill="#181818" points="419.5,78.5625,429.5,82.5625,419.5,86.5625,423.5,82.5625" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="51.5" x2="425.5" y1="82.5625" y2="82.5625" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="49" x="58.5" y="62.3638">Flux 1.1</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="113" x="111.5" y="62.3638">AjoutDocument</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="4" x="224.5" y="62.3638">&#160;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="352" x="62.5" y="77.4966">HTTP POST [base] (+ ressource "DocumentReference")</text><polygon fill="#181818" points="62.5,122.8281,52.5,126.8281,62.5,130.8281,58.5,126.8281" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="56.5" x2="430.5" y1="126.8281" y2="126.8281" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="49" x="68.5" y="106.6294">Flux 1.2</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="174" x="121.5" y="106.6294">ResultatAjoutDocument</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="4" x="295.5" y="106.6294">&#160;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="352" x="72.5" y="121.7622">HTTP 201 Created (+ ressource "DocumentReference")</text></g></svg></div>
+<h3 id="nom-du-flux">Nom du flux</h3>
 
-<h3 id="flux-11-ajoutdocument">Flux 1.1 AjoutDocument</h3>
-<p>L’ajout du document est assuré par l’interaction FHIR <a href="https://hl7.org/fhir/R4/http.html#create">create</a>. L’émetteur du document envoie une requête HTTP POST dont le corps contient une ressource de type DocumentReference conforme au profil <a href="StructureDefinition-tddui-documentreference.html">DUIDocumentReference</a> :</p>
+<p>Description du flux</p>
 
-<p><code class="language-plaintext highlighter-rouge">POST [base]/DocumentReference</code></p>
+<h3 id="construction-du-flux">Construction du flux</h3>
 
-<p>Où <code class="language-plaintext highlighter-rouge">[base]</code> est le point de contact FHIR.</p>
-
-<p>Le document au format CDA est véhiculé via <code class="language-plaintext highlighter-rouge">DocumentReference.content.attachment.data</code>.</p>
-
-<h3 id="flux-12-resultatajoutdocument">Flux 1.2 ResultatAjoutDocument</h3>
-
-<p>Si la création de la ressource DocumentReference est correctement effectuée, le récepteur doit retourner un code HTTPS 201 « Created » ainsi que la ressource créée.</p>
-
-<p>En cas d’échec, le récepteur doit répondre avec le code HTTPS approprié tel que défini par l’API REST FHIR <a href="http://hl7.org/fhir/R4/http.html">(Http - FHIR v4.0.1 (hl7.org))</a>. Une ressource OperationOutcome doit également y être associé pour véhiculer les messages d’erreurs détaillant la raison de l’erreur <a href="http://hl7.org/fhir/R4/operationoutcome.html">(OperationOutcome - FHIR v4.0.1 (hl7.org))</a>.</p>
+<p>Explication de comment doit être construit le flux</p>
 
 
 
@@ -293,7 +235,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
               <td style="text-align:left">&#xA0;
 
-                <a href="synthese_flux.html">&lt;prev</a>
+                <a href="construction_des_flux.html">&lt;prev</a>
 
               </td>
               <td style="text-align:center">
@@ -311,7 +253,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Sep 22, 2023 13:17+0000">2023-09-22</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Sep 25, 2023 10:54+0000">2023-09-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
