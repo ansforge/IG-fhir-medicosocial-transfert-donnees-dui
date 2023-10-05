@@ -242,7 +242,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Draft
           
-            as of 2023-10-04
+            as of 2023-10-05
           
         
       </td>
@@ -301,14 +301,14 @@ The aim of this implementation guide is to define the specifications for DUI dat
 
 <p>Les logiciels DUI doivent permettre, entre autres, de mieux construire et de suivre le projet personnalisé de la personne accompagnée, d’éviter les ruptures de parcours en cas d’évolution des besoins, de changement d’établissement médico-social, de retour à domicile ou d’hospitalisation.</p>
 
-<p>Dans la continuité des travaux menés dans le cadre du programme ESMS numérique, la CNSA et l’ANS créent un nouveau volet de la couche Métier « Transfert de données DUI ». L’objectif de ce volet est de définir la nature et le format des données à transmettre lors d’un export depuis un logiciel DUI afin d’assurer le transfert de données des usagers pour les cas d’usage définis dans la partie <a href="cadre_orientations.html#exemples-de-cas-dusage">Exemples de cas d’usage</a>.</p>
+<p>Dans la continuité des travaux menés dans le cadre du programme ESMS numérique, la CNSA et l’ANS créent un nouveau volet « Transfert de données DUI ». L’objectif de ce volet est de définir la nature, le format des données à transmettre ainsi que les modalités de transport lors d’un transfert de données des usagers issues d’un DUI pour les cas d’usage définis  dans la partie <a href="cadre_orientations.html#exemples-de-cas-dusage">Exemples de cas d’usage</a>.</p>
 
 <p>Cet guide d’implémentation contient :</p>
 <ul>
   <li>L’étude des normes et standards : <a href="NormesStandards_TransfertDonneesDUI_V0.1-finale.pdf">lien pdf</a></li>
   <li>Les spécifications fonctionnelles : section <a href="cadre_orientations.html"> Spécifications fonctionnelles</a></li>
   <li>La spécification technique de contenu : section <a href="contenu_dossier.html">Contenu du dossier</a></li>
-  <li><a name="l520">​</a>La spécification technique de transport : sections <a href="construction_des_flux.html">Description des flux</a> et <a href="artifacts.html">Ressources de conformité</a></li>
+  <li>La spécification technique de transport : sections <a href="synthese_flux.html">Description des flux</a> et <a href="artifacts.html">Ressources de conformité</a></li>
 </ul>
 
 <h3 id="flux">Flux</h3>
@@ -342,7 +342,7 @@ The aim of this implementation guide is to define the specifications for DUI dat
   </tbody>
 </table>
 
-<p><a name="l595">​</a>Pour en savoir davantage, rendez-vous sur la page <a href="construction_des_flux.html">construction des flux</a>.</p>
+<p>Pour en savoir davantage, rendez-vous sur la page <a href="synthese_flux.html">Sytnhèse des flux</a>.</p>
 
 <h3 id="ressources-profilées">Ressources profilées</h3>
 
@@ -360,12 +360,12 @@ The aim of this implementation guide is to define the specifications for DUI dat
     <tr>
       <td><a href="https://hl7.org/fhir/R4/documentreference.html">DocumentReference</a></td>
       <td>&nbsp;</td>
-      <td><a name="l635">​</a>Création du profil <a href="StructureDefinition-dui-documentreference.html">DUIDocumentReference</a></td>
+      <td>Création du profil <a href="StructureDefinition-tddui-documentreference.html">TDDUIDocumentReference</a></td>
     </tr>
     <tr>
       <td><a href="https://hl7.org/fhir/R4/bundle.html">Bundle</a></td>
       <td>&nbsp;</td>
-      <td><a name="l650">​</a>Création du profil <a href="StructureDefinition-dui-bundle.html">DUIBundle</a></td>
+      <td>Création du profil <a href="StructureDefinition-tddui-bundle.html">TDDUIBundle</a></td>
     </tr>
   </tbody>
 </table>
@@ -431,7 +431,7 @@ The aim of this implementation guide is to define the specifications for DUI dat
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Oct 4, 2023 13:47+0000">2023-10-04</span>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 5, 2023 12:28+0000">2023-10-05</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
