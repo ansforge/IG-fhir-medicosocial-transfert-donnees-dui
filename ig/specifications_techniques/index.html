@@ -133,10 +133,10 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="artifacts.html">Ressource FHIR</a>
+        <a href="artifacts.html">Ressources FHIR</a>
       </li>
       <li>
-        <a href="ressources_cda.html">Ressource CDA</a>
+        <a href="ressources_cda.html">Ressources CDA</a>
       </li>
     </ul>
   </li>
@@ -149,7 +149,7 @@
         <a href="acronymes.html">Acronymes</a>
       </li>
       <li>
-        <a href="NormesStandards_TransfertDonneesDUI_V0.1-finale.pdf" target="_blank">Etude des normes et standards</a>
+        <a href="documents_reference.html">Documents de référence</a>
       </li>
     </ul>
   </li>
@@ -242,7 +242,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Draft
           
-            as of 2023-10-05
+            as of 2023-10-06
           
         
       </td>
@@ -269,8 +269,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div class="markdown-toc">
 <ul id="markdown-toc">
   <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#lectorat-cible" id="markdown-toc-lectorat-cible">Lectorat cible</a></li>
+  <li><a href="#utilisation" id="markdown-toc-utilisation">Utilisation</a></li>
   <li><a href="#flux" id="markdown-toc-flux">Flux</a></li>
-  <li><a href="#ressources-profilées" id="markdown-toc-ressources-profilées">Ressources profilées</a></li>
+  <li><a href="#standards-utilisés" id="markdown-toc-standards-utilisés">Standards utilisés</a></li>
   <li><a href="#dépendances" id="markdown-toc-dépendances">Dépendances</a></li>
 </ul>
 
@@ -303,13 +305,23 @@ The aim of this implementation guide is to define the specifications for DUI dat
 
 <p>Dans la continuité des travaux menés dans le cadre du programme ESMS numérique, la CNSA et l’ANS créent un nouveau volet « Transfert de données DUI ». L’objectif de ce volet est de définir la nature, le format des données à transmettre ainsi que les modalités de transport lors d’un transfert de données des usagers issues d’un DUI pour les cas d’usage définis  dans la partie <a href="cadre_orientations.html#exemples-de-cas-dusage">Exemples de cas d’usage</a>.</p>
 
-<p>Cet guide d’implémentation contient :</p>
+<p>Ce guide d’implémentation contient :</p>
 <ul>
-  <li>L’étude des normes et standards : <a href="NormesStandards_TransfertDonneesDUI_V0.1-finale.pdf">lien pdf</a></li>
+  <li>L’étude des normes et standards au format pdf : section <a href="NormesStandards_TransfertDonneesDUI_V0.1-finale.pdf">Etude des normes et standards</a></li>
   <li>Les spécifications fonctionnelles : section <a href="cadre_orientations.html"> Spécifications fonctionnelles</a></li>
-  <li>La spécification technique de contenu : section <a href="contenu_dossier.html">Contenu du dossier</a></li>
+  <li>La spécification technique de contenu : sections <a href="contenu_dossier.html">Contenu du dossier</a> et <a href="ressources_cda.html">Ressources de conformité</a></li>
   <li>La spécification technique de transport : sections <a href="synthese_flux.html">Description des flux</a> et <a href="artifacts.html">Ressources de conformité</a></li>
 </ul>
+
+<h3 id="lectorat-cible">Lectorat cible</h3>
+
+<p>Ce document s’adresse aux développeurs des interfaces interopérables des systèmes implémentant le volet « Transfert de données DUI » ou à toute autre personne intervenant dans le processus de mise en place de ces interfaces.</p>
+
+<p>L’hypothèse est faite que le lecteur est familier du standard CDA R2 et FHIR R4.</p>
+
+<h3 id="utilisation">Utilisation</h3>
+
+<p>Les spécifications d’interopérabilité présentées dans ce volet ne présagent pas des conditions de leur mise en œuvre dans le cadre d’un système d’information partagé. Il appartient à tout responsable de traitement de s’assurer que les services utilisant ces spécifications respectent les cadres et bonnes pratiques applicables à ce genre de service (ex.: cadre juridique, bonnes pratiques de sécurité, ergonomie, accessibilité …).</p>
 
 <h3 id="flux">Flux</h3>
 
@@ -330,7 +342,7 @@ The aim of this implementation guide is to define the specifications for DUI dat
       <td>Logiciel DUI ou SI tiers</td>
     </tr>
     <tr>
-      <td><a name="l569">​</a><a href="st_flux_ajout_loc_doc.html">Flux 2 : Ajout d’un lot de documents</a></td>
+      <td><a name="l595">​</a><a href="st_flux_ajout_loc_doc.html">Flux 2 : Ajout d’un lot de documents</a></td>
       <td>Logiciel DUI</td>
       <td>Logiciel DUI ou SI tiers</td>
     </tr>
@@ -342,30 +354,40 @@ The aim of this implementation guide is to define the specifications for DUI dat
   </tbody>
 </table>
 
-<p>Pour en savoir davantage, rendez-vous sur la page <a href="synthese_flux.html">Sytnhèse des flux</a>.</p>
+<p>Pour en savoir davantage, rendez-vous sur la page <a href="synthese_flux.html">Synthèse des flux</a>.</p>
 
-<h3 id="ressources-profilées">Ressources profilées</h3>
+<h3 id="standards-utilisés">Standards utilisés</h3>
 
-<p>Les ressources profilées dans le cadre de guide d’implémentation sont les suivantes :</p>
+<p>Les données véhiculées dans ce volet sont spécifiées dans le format CDA R2 niveau 3.</p>
+
+<p>Les interactions entre les systèmes reposent quant à elles sur le standard HL7 FHIR Release 4. Elles font référence à un certain nombre de ressources du standard ainsi qu’aux spécifications de l’API REST FHIR, basées sur le protocole HTTP. Les syntaxes retenues sont la syntaxe XML et JSON.</p>
+
+<h4 id="document-cda-créé">Document CDA créé</h4>
+
+<p>Le document CDA créé dans le cadre de ce guide d’implémentation est le suivant : <a href="ressources_cda.html#schémas-xsd">Export du dossier usager informatisé</a></p>
+
+<h4 id="ressources-fhir-profilées">Ressources FHIR profilées</h4>
+
+<p>Les ressources profilées dans le cadre de ce guide d’implémentation sont les suivantes :</p>
 
 <table>
   <thead>
     <tr>
       <th>Ressource</th>
-      <th>Modifications apportées</th>
       <th>Profil</th>
+      <th>Description</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td><a href="https://hl7.org/fhir/R4/documentreference.html">DocumentReference</a></td>
-      <td>&nbsp;</td>
-      <td>Création du profil <a href="StructureDefinition-tddui-documentreference.html">TDDUIDocumentReference</a></td>
+      <td><a href="StructureDefinition-tddui-documentreference.html">TDDUIDocumentReference</a></td>
+      <td>Profil générique créé dans le contexte du transfert de données DUI pour véhiculer un document au format CDA</td>
     </tr>
     <tr>
       <td><a href="https://hl7.org/fhir/R4/bundle.html">Bundle</a></td>
-      <td>&nbsp;</td>
-      <td>Création du profil <a href="StructureDefinition-tddui-bundle.html">TDDUIBundle</a></td>
+      <td><a href="StructureDefinition-tddui-bundle.html">TDDUIBundle</a></td>
+      <td>Profil générique créé dans le contexte du transfert de données DUI pour véhiculer un lot de documents au format CDA</td>
     </tr>
   </tbody>
 </table>
@@ -431,7 +453,7 @@ The aim of this implementation guide is to define the specifications for DUI dat
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 5, 2023 13:01+0000">2023-10-05</span>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Oct 6, 2023 10:30+0000">2023-10-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

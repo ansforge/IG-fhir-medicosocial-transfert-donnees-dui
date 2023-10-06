@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "TransfertDonneesDUI"] ; # 
   fhir:title [ fhir:v "Médicosocial - Transfert de données DUI"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-10-05T13:01:35+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-10-06T10:30:12+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -628,10 +628,10 @@
        ] [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "specifications_techniques.html"^^xsd:anyURI ]
+           fhir:value [ fhir:v "description_flux.html"^^xsd:anyURI ]
          ] ) ;
-         fhir:name [ fhir:v "specifications_techniques.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Spécifications techniques" ] ;
+         fhir:name [ fhir:v "description_flux.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Description des flux" ] ;
          fhir:generation [ fhir:v "markdown" ] ;
          fhir:page ( [
            fhir:extension ( [
@@ -698,6 +698,14 @@
            ] ) ;
            fhir:name [ fhir:v "acronymes.html"^^xsd:anyURI ] ;
            fhir:title [ fhir:v "Acronymes" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "documents_reference.html"^^xsd:anyURI ]
+           ] ) ;
+           fhir:name [ fhir:v "documents_reference.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Documents Reference" ] ;
            fhir:generation [ fhir:v "markdown" ]
          ] )
        ] [
