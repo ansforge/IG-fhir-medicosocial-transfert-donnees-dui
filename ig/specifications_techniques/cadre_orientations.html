@@ -105,8 +105,24 @@
       </li>
     </ul>
   </li>
-  <li>
-    <a href="contenu_dossier.html">Contenu du dossier</a>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Contenu du dossier
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="contexte_contenu_dossier.html">Contexte</a>
+      </li>
+      <li>
+        <a href="structure_cda.html">Structure générale du document CDA</a>
+      </li>
+      <li>
+        <a href="entete_cda.html">Entête du document CDA</a>
+      </li>
+      <li>
+        <a href="corps_cda.html">Corps du document CDA</a>
+      </li>
+    </ul>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Description des flux
@@ -231,7 +247,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul id="markdown-toc">
   <li><a href="#exemples-de-cas-dusage" id="markdown-toc-exemples-de-cas-dusage">Exemples de cas d’usage</a></li>
   <li><a href="#définitions-et-cadre-juridique" id="markdown-toc-définitions-et-cadre-juridique">Définitions et cadre juridique</a></li>
-  <li><a href="#lectorat-cible" id="markdown-toc-lectorat-cible">Lectorat cible</a></li>
 </ul>
 
 </div>
@@ -330,10 +345,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Les catégories de professionnels susceptibles d’échanger ou partager des informations concernant un usager pris en charge dans un établissement ou service social et médico-social sont listées dans l’<a href="https://www.legifrance.gouv.fr/codes/id/LEGIARTI000043926322/2021-08-08">article R1110-2 du Code de la santé publique</a>. Les prestations offertes dans ces établissements et services sont réalisées par des équipes pluridisciplinaires qualifiées. La direction de ces établissements et services est assurée par des professionnels dont le niveau de qualification est déterminé par décret, après consultation de la branche professionnelle ou, à défaut, des fédérations ou organismes représentatifs des gestionnaires d’établissements et services sociaux et médico-sociaux concernés (<a href="https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074069/LEGISCTA000006174436/#LEGISCTA000006174436">article L312-1 du code l’action sociale et des familles</a>).</p>
 
-<h3 id="lectorat-cible">Lectorat cible</h3>
-
-<p>Les lecteurs cibles sont principalement des chefs de projets, les maîtres d’ouvrage qui spécifient des projets avec des interfaces interopérables, tous porteurs de SI cherchant à transporter de manière interopérable des données usagers vers un autre SI ainsi que les éditeurs de logiciels DUI.</p>
-
 
 
 
@@ -381,7 +392,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Oct 6, 2023 12:10+0000">2023-10-06</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Oct 6, 2023 14:30+0000">2023-10-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

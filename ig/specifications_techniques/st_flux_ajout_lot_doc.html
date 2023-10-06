@@ -105,8 +105,24 @@
       </li>
     </ul>
   </li>
-  <li>
-    <a href="contenu_dossier.html">Contenu du dossier</a>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Contenu du dossier
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="contexte_contenu_dossier.html">Contexte</a>
+      </li>
+      <li>
+        <a href="structure_cda.html">Structure générale du document CDA</a>
+      </li>
+      <li>
+        <a href="entete_cda.html">Entête du document CDA</a>
+      </li>
+      <li>
+        <a href="corps_cda.html">Corps du document CDA</a>
+      </li>
+    </ul>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Description des flux
@@ -250,7 +266,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="flux-22-resultatajoutlotdocuments">Flux 2.2 ResultatAjoutLotDocuments</h3>
 
-<p>Si la création des ressources DocumentReference est correctement effectuée, le récepteur doit retourner un code HTTPS 200 « OK ».</p>
+<p>Si la création des ressources DocumentReference est correctement effectuée, le récepteur doit retourner un code HTTPS 200 « OK » avec, dans le corps de la réponse, une ressource « Bundle » de type « transaction-response ». Chaque entrée (entry) du Bundle doit comporter un élément « response » qui contient le statut de l’opération.</p>
 
 <p>En cas d’échec, le récepteur doit répondre avec le code HTTPS approprié tel que défini par l’API REST FHIR <a href="http://hl7.org/fhir/R4/http.html">(Http - FHIR v4.0.1 (hl7.org))</a>. Une ressource OperationOutcome doit également y être associé pour véhiculer les messages d’erreurs détaillant la raison de l’erreur <a href="http://hl7.org/fhir/R4/operationoutcome.html">(OperationOutcome - FHIR v4.0.1 (hl7.org))</a>.</p>
 
@@ -300,7 +316,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Oct 6, 2023 12:10+0000">2023-10-06</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Oct 6, 2023 14:30+0000">2023-10-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

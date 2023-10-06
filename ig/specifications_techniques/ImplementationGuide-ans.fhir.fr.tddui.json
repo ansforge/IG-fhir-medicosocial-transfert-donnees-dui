@@ -10,7 +10,7 @@
   "name" : "TransfertDonneesDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "draft",
-  "date" : "2023-10-06T12:10:03+00:00",
+  "date" : "2023-10-06T14:30:45+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -718,7 +718,43 @@
         }],
         "nameUrl" : "contenu_dossier.html",
         "title" : "Contenu du dossier",
-        "generation" : "markdown"
+        "generation" : "markdown",
+        "page" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "contexte_contenu_dossier.html"
+          }],
+          "nameUrl" : "contexte_contenu_dossier.html",
+          "title" : "Contexte",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "structure_cda.html"
+          }],
+          "nameUrl" : "structure_cda.html",
+          "title" : "Structure générale du document CDA",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "entete_cda.html"
+          }],
+          "nameUrl" : "entete_cda.html",
+          "title" : "Entête du document CDA",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "corps_cda.html"
+          }],
+          "nameUrl" : "corps_cda.html",
+          "title" : "Corps du document CDA",
+          "generation" : "markdown"
+        }]
       },
       {
         "extension" : [{
@@ -806,7 +842,7 @@
             "valueUrl" : "documents_reference.html"
           }],
           "nameUrl" : "documents_reference.html",
-          "title" : "Documents Reference",
+          "title" : "Documents de référence",
           "generation" : "markdown"
         }]
       },

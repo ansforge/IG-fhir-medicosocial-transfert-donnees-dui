@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "TransfertDonneesDUI"] ; # 
   fhir:title [ fhir:v "Médicosocial - Transfert de données DUI"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-10-06T12:10:03+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-10-06T14:30:45+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -624,7 +624,40 @@
          ] ) ;
          fhir:name [ fhir:v "contenu_dossier.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Contenu du dossier" ] ;
-         fhir:generation [ fhir:v "markdown" ]
+         fhir:generation [ fhir:v "markdown" ] ;
+         fhir:page ( [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "contexte_contenu_dossier.html"^^xsd:anyURI ]
+           ] ) ;
+           fhir:name [ fhir:v "contexte_contenu_dossier.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Contexte" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "structure_cda.html"^^xsd:anyURI ]
+           ] ) ;
+           fhir:name [ fhir:v "structure_cda.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Structure générale du document CDA" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "entete_cda.html"^^xsd:anyURI ]
+           ] ) ;
+           fhir:name [ fhir:v "entete_cda.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Entête du document CDA" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "corps_cda.html"^^xsd:anyURI ]
+           ] ) ;
+           fhir:name [ fhir:v "corps_cda.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Corps du document CDA" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] )
        ] [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
@@ -705,7 +738,7 @@
              fhir:value [ fhir:v "documents_reference.html"^^xsd:anyURI ]
            ] ) ;
            fhir:name [ fhir:v "documents_reference.html"^^xsd:anyURI ] ;
-           fhir:title [ fhir:v "Documents Reference" ] ;
+           fhir:title [ fhir:v "Documents de référence" ] ;
            fhir:generation [ fhir:v "markdown" ]
          ] )
        ] [
