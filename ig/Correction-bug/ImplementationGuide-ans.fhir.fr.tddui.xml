@@ -10,7 +10,7 @@
   <name value="TransfertDonneesDUI"/>
   <title value="Médicosocial - Transfert de données DUI"/>
   <status value="draft"/>
-  <date value="2023-11-10T13:22:28+00:00"/>
+  <date value="2023-11-20T10:27:22+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -491,6 +491,26 @@
       <name value="TDDUI Document Reference"/>
       <description value="Profil générique créé dans le contexte du transfert de données DUI pour véhiculer un document au format CDA, inclus dans DocumentReference.attachment.data."/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/TDDUIBundleExample"/>
+      </reference>
+      <name value="TDDUIBundleExample"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DocumentReference"/>
+      </extension>
+      <reference>
+        <reference value="DocumentReference/TDDUIDocumentReferenceExample"/>
+      </reference>
+      <name value="TDDUIDocumentReferenceExample"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-documentreference"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "TransfertDonneesDUI"] ; # 
   fhir:title [ fhir:v "Médicosocial - Transfert de données DUI"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-11-10T13:22:28+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-11-20T10:27:22+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -566,6 +566,34 @@
        fhir:name [ fhir:v "TDDUI Document Reference" ] ;
        fhir:description [ fhir:v "Profil générique créé dans le contexte du transfert de données DUI pour véhiculer un document au format CDA, inclus dans DocumentReference.attachment.data." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Bundle/TDDUIBundleExample> ;
+         fhir:reference [ fhir:v "Bundle/TDDUIBundleExample" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUIBundleExample" ] ;
+       fhir:example [
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle"^^xsd:anyURI ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "DocumentReference" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/DocumentReference/TDDUIDocumentReferenceExample> ;
+         fhir:reference [ fhir:v "DocumentReference/TDDUIDocumentReferenceExample" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUIDocumentReferenceExample" ] ;
+       fhir:example [
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-documentreference"^^xsd:anyURI ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-documentreference>
+       ]
      ] ) ;
      fhir:page [
        fhir:extension ( [
