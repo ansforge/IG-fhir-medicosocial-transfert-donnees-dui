@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Cadre juridique et orientations organisationnelles - Médicosocial - Transfert de données DUI v1.0.0-ballot</title>
+    <title>Flux 2 - Ajout d&#39;un lot de documents - Médicosocial - Transfert de données DUI v1.0.0-ballot</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"2.1"}
-    h3,h4,h5,h6{--heading-prefix:"2.1"}</style>
+    <style type="text/css">h2{--heading-prefix:"4.3"}
+    h3,h4,h5,h6{--heading-prefix:"4.3"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -96,16 +96,16 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="cadre_orientations.html">Cadre juridique et orientations organisationnelles</a>
+        <a href="sfe_cadre_juridique.html">Cadre juridique et orientations organisationnelles</a>
       </li>
       <li>
-        <a href="contexte_metier.html">Organisation du contexte métier</a>
+        <a href="sfe_organisation_contexte_metier.html">Organisation du contexte métier</a>
       </li>
       <li>
-        <a href="processus.html">Définition des processus collaboratifs</a>
+        <a href="sfe_definition_processus.html">Définition des processus collaboratifs</a>
       </li>
       <li>
-        <a href="modelisation_contenu.html">Modélisation du contenu du DUI</a>
+        <a href="sfe_modelisation_contenu.html">Modélisation du contenu du DUI</a>
       </li>
     </ul>
   </li>
@@ -115,16 +115,16 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="contexte_contenu_dossier.html">Contexte</a>
+        <a href="contenu_dossier_contexte.html">Contexte</a>
       </li>
       <li>
-        <a href="structure_cda.html">Structure générale du document CDA</a>
+        <a href="contenu_dossier_structure_cda.html">Structure générale du document CDA</a>
       </li>
       <li>
-        <a href="entete_cda.html">Entête du document CDA</a>
+        <a href="contenu_dossier_entete_cda.html">Entête du document CDA</a>
       </li>
       <li>
-        <a href="corps_cda.html">Corps du document CDA</a>
+        <a href="contenu_dossier_corps_cda.html">Corps du document CDA</a>
       </li>
     </ul>
   </li>
@@ -134,16 +134,16 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="synthese_flux.html">Synthèse des flux</a>
+        <a href="description_flux_synthese.html">Synthèse des flux</a>
       </li>
       <li>
-        <a href="st_flux_ajout_doc.html">Flux 1 - Ajout d&apos;un document</a>
+        <a href="description_flux_1_ajout_doc.html">Flux 1 - Ajout d&apos;un document</a>
       </li>
       <li>
-        <a href="st_flux_ajout_lot_doc.html">Flux 2 - Ajout d&apos;un lot de documents</a>
+        <a href="description_flux_2_ajout_lot_doc.html">Flux 2 - Ajout d&apos;un lot de documents</a>
       </li>
       <li>
-        <a href="st_flux_maj_doc.html">Flux 3 - Mise à jour d&apos;un document</a>
+        <a href="description_flux_3_maj_doc.html">Flux 3 - Mise à jour d&apos;un document</a>
       </li>
     </ul>
   </li>
@@ -201,15 +201,15 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='specifications_fonctionnelles.html'><b>Spécifications fonctionnelles</b></a></li><li><b>Cadre juridique et orientations organisationnelles</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='description_flux.html'><b>Description des flux</b></a></li><li><b>Flux 2 - Ajout d'un lot de documents</b></li>
 
           <span style="float:right;">
 
-            <a href="specifications_fonctionnelles.html">&lt;prev</a> | 
+            <a href="description_flux_1_ajout_doc.html">&lt;prev</a> | 
 
             <a href="#bottom">bottom</a>
 
-          | <a href="contexte_metier.html">next&gt;</a>
+          | <a href="description_flux_3_maj_doc.html">next&gt;</a>
 
           </span>
 
@@ -232,7 +232,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </style>
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Médicosocial - Transfert de données DUI - Local Development build (v1.0.0-ballot). See the <a href="https://interop.esante.gouv.fr/ig/fhir/tddui/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-  <h2>Cadre juridique et orientations organisationnelles</h2>
+  <h2>Flux 2 - Ajout d&#39;un lot de documents</h2>
   
 
 
@@ -249,106 +249,30 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#exemples-de-cas-dusage" id="markdown-toc-exemples-de-cas-dusage">Exemples de cas d’usage</a></li>
-  <li><a href="#définitions-et-cadre-juridique" id="markdown-toc-définitions-et-cadre-juridique">Définitions et cadre juridique</a></li>
+  <li><a href="#flux-21-ajoutlotdocuments" id="markdown-toc-flux-21-ajoutlotdocuments">Flux 2.1 AjoutLotDocuments</a></li>
+  <li><a href="#flux-22-resultatajoutlotdocuments" id="markdown-toc-flux-22-resultatajoutlotdocuments">Flux 2.2 ResultatAjoutLotDocuments</a></li>
 </ul>
 
 </div>
-<p>L’étude menée dans cette version du volet correspond à l’expression des besoins définis lors des ateliers avec la CNSA et enrichis par l’ANS. Elle comprend :</p>
-<ul>
-  <li>Le cadre juridique et le contexte métier du volet ;</li>
-  <li>Une modélisation et une description détaillée des données administratives, ainsi que les données relatives aux grilles d’évaluations (GIR, GEVA) liées à l’accompagnement de l’usager ;</li>
-  <li>Une modélisation plus large et non détaillée du reste des données liées à l’accompagnement, des données médicales et des données liées à la coordination des différents acteurs.</li>
-</ul>
+<p>Ce flux permet l’ajout d’un lot de documents.</p>
 
-<p>Une version mise à jour de cette spécification sera publiée a posteriori afin d’y intégrer la modélisation et description détaillée de l’ensemble des données liées à l’accompagnement, des données médicales et des données liées à la coordination des différents acteurs.</p>
+<div><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="180px" preserveAspectRatio="none" style="width:433px;height:180px;background:#FFFFFF;" version="1.1" viewBox="0 0 433 180" width="433px" zoomAndPan="magnify"><defs /><g><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="51" x2="51" y1="36.2969" y2="144.8281" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="344" x2="344" y1="36.2969" y2="144.8281" /><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="93" x="5" y="5" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="79" x="12" y="24.9951">Logiciel DUI</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="93" x="5" y="143.8281" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="79" x="12" y="163.8232">Logiciel DUI</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="165" x="262" y="5" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="151" x="269" y="24.9951">Logiciel DUI ou SI tiers</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="165" x="262" y="143.8281" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="151" x="269" y="163.8232">Logiciel DUI ou SI tiers</text><polygon fill="#181818" points="332.5,78.5625,342.5,82.5625,332.5,86.5625,336.5,82.5625" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="51.5" x2="338.5" y1="82.5625" y2="82.5625" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="49" x="58.5" y="62.3638">Flux 2.1</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="144" x="111.5" y="62.3638">AjoutLotDocuments</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="4" x="255.5" y="62.3638">&#160;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="265" x="62.5" y="77.4966">HTTP POST [base] (+ ressource "Bundle")</text><polygon fill="#181818" points="62.5,122.8281,52.5,126.8281,62.5,130.8281,58.5,126.8281" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="56.5" x2="343.5" y1="126.8281" y2="126.8281" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="49" x="68.5" y="106.6294">Flux 2.2</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="205" x="121.5" y="106.6294">ResultatAjoutLotDocuments</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="4" x="326.5" y="106.6294">&#160;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="232" x="72.5" y="121.7622">HTTP 200 OK (+ ressource "Bundle")</text></g></svg></div>
 
-<p>A noter que les spécifications fonctionnelles de contenu sont des spécifications d’interopérabilité qui n’ont ni vocation à définir la structure interne et l’urbanisation des systèmes d’information, ni vocation à aborder la gestion des habilitations au sein des acteurs. Cette gestion des habilitations doit faire l’objet d’une étude préalable avant toute implémentation de ces interfaces dans le respect du cadre réglementaire de l’échange et du partage de données de santé.</p>
+<h3 id="flux-21-ajoutlotdocuments">Flux 2.1 AjoutLotDocuments</h3>
 
-<p>Par ailleurs, les contraintes de sécurité concernant les flux échangés ne sont pas traités dans ce document. En effet, les aspects relatifs à la sécurité sont du ressort du système d’information les implémentant.</p>
+<p>L’ajout d’un lot de documents est assuré par l’interaction FHIR <a href="https://hl7.org/fhir/R4/http.html#transaction">transaction</a>. L’émetteur du lot de documents envoie une requête HTTP POST dont le corps contient une ressource de type Bundle conforme au profil <a href="StructureDefinition-tddui-bundle.html">DUIBundle</a> :</p>
 
-<p>Le détail des échanges entre acteur sera quant à lui décrit dans une documentation dédiée.</p>
+<p><code class="language-plaintext highlighter-rouge">POST [base]</code></p>
 
-<h3 id="exemples-de-cas-dusage">Exemples de cas d’usage</h3>
+<p>Où <code class="language-plaintext highlighter-rouge">[base]</code> est le point de contact FHIR.</p>
 
-<p>Les cas d’usage décrits ci-dessous correspondent à ceux pour lesquels le périmètre est défini. Au fur et à mesure des besoins, cette liste sera enrichie. Ainsi, certains cas d’usage définis comme étant « non traités dans cette version du volet », pourront être intégrés a posteriori.</p>
+<p>Le bundle contient plusieurs ressources DocumentReference conformes au profil “DUIDocumentReference” véhiculées via <code class="language-plaintext highlighter-rouge">Bundle.entry.ressource</code>, chacune contenant un document au format CDA.</p>
 
-<h4 id="changement-de-logiciel-métier-dui-au-sein-dun-essms">Changement de logiciel métier (DUI) au sein d’un ESSMS</h4>
+<h3 id="flux-22-resultatajoutlotdocuments">Flux 2.2 ResultatAjoutLotDocuments</h3>
 
-<p>L’ESSMS change de logiciel métier (DUI). Les données des usagers sont transférées depuis l’ancien logiciel DUI vers le nouveau logiciel DUI.</p>
+<p>Si la création des ressources DocumentReference est correctement effectuée, le récepteur doit retourner un code HTTPS 200 « OK » avec, dans le corps de la réponse, une ressource « Bundle » de type « transaction-response ». Chaque entrée (entry) du Bundle doit comporter un élément « response » qui contient le statut de l’opération.</p>
 
-<h4 id="lusager-change-dessms">L’usager change d’ESSMS</h4>
-
-<p><strong>Exemple 1 : L’usager déménage.</strong></p>
-
-<p>L’usager déménage et est accompagné par un nouvel ESSMS. L’usager ou son représentant légal contacte l’ESSMS d’origine pour demander un transfert de ses données vers l’ESSMS d’accueil.</p>
-
-<p>L’ESSMS d’origine transfert les données de l’usager depuis son logiciel DUI vers le logiciel DUI de l’ESSMS d’accueil.</p>
-
-<p><strong>Exemple 2 : L’usager grandit et change de type d’ESSMS</strong></p>
-
-<p>L’usager grandit et change d’ESSMS, Il passe par exemple d’un Institut Médico-Educatif (IME) vers une Maison d’Accueil Spécialisée (MAS). L’usager ou son représentant légal contacte l’ESSMS d’origine pour demander un transfert de ses données vers l’ESSMS d’accueil.</p>
-
-<p>L’ESSMS d’origine transfert les données de l’usager depuis son logiciel DUI vers le logiciel DUI de l’ESSMS d’accueil.</p>
-
-<h4 id="transfert-de-données-dun-logiciel-dui-vers-un-système-dinformation-si-tiers">Transfert de données d’un logiciel DUI vers un Système d’Information (SI) tiers</h4>
-
-<p><strong>Exemple : Transfert de données de l’usager de l’ESSMS vers la plateforme de la CNSA, SIDOBA.</strong></p>
-
-<p>L’ESSMS exporte ses données à des fins de pilotage et de financement vers la CNSA.</p>
-
-<p>L’export est effectué entre le logiciel DUI de l’ESSMS et la plateforme SIDOBA de la CNSA.</p>
-
-<h4 id="cas-dusage-non-traités-dans-cette-version-du-volet">Cas d’usage non traités dans cette version du volet</h4>
-
-<p>La présente version des spécifications ne couvre pas, à l’heure actuelle, les cas d’usages suivants :</p>
-<ul>
-  <li>Plusieurs ESSMS accompagnent un usager et échangent des informations dans le cadre de son accompagnement</li>
-  <li>Transfert de données de logiciels DUI vers une plateforme de coordination (ex : e-parcours)</li>
-  <li>Transfert de données des ESSMS à des fins de pilotage et de financement vers des tutelles ou institutions autre que la CNSA (ex : Conseil Départemental, Agence Régionale de la Santé, …)</li>
-  <li>Transfert d’informations d’accompagnement de l’usager depuis l’ESSMS vers des plateformes de recherche (ex : Système National des Données de Santé) ou des institutions scolaires</li>
-  <li>Transfert de données d’un ESSMS vers une institution judiciaire</li>
-  <li>Les institutions (ex : CNSA à l’échelle nationale, MDPH au niveau local) envoient des informations à l’ESSMS</li>
-  <li>Une institution scolaire partage des informations sur la scolarité des enfants avec l’ESSMS qui l’accompagne</li>
-  <li>Une institution judiciaire partage des informations avec l’ESSMS qui accompagne l’usager</li>
-</ul>
-
-<h4 id="cas-dusages-hors-périmètre">Cas d’usages hors périmètre</h4>
-
-<p>Les cas d’usages suivants sont hors périmètre de ce volet :</p>
-<ul>
-  <li>L’usager souhaite consulter / annoter son dossier médical</li>
-  <li>L’usager change d’unité au sein d’un même ESSMS</li>
-</ul>
-
-<h3 id="définitions-et-cadre-juridique">Définitions et cadre juridique</h3>
-
-<h4 id="le-programme-esms-numérique">Le programme ESMS numérique</h4>
-
-<p>Le volet “Transfert de données DUI” s’inscrit dans la continuité du programme ESMS numérique. Ce programme promeut et finance l’usage de logiciels DUI conforme au <a href="https://esante.gouv.fr/sites/default/files/media_entity/documents/DSR-HOP-RI-Va1.pdf">Dossier de Spécifications de Référencement (DSR)</a>. Son objectif est de promouvoir la numérisation des dossiers des usagers destinés aux établissements et services médico-sociaux, conformément à l’<a href="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000045159638">article 1 de l’arrêté du 2 février 2022</a> relatif au Programme de financement ESSMS.</p>
-
-<h4 id="droit-à-la-portabilité-des-données-règlement-général-sur-la-protection-des-données-rgpd-et-ségur-du-numérique-en-santé">Droit à la portabilité des données, Règlement Général sur la Protection des Données (RGPD) et Ségur du numérique en Santé</h4>
-
-<p>La notion de portabilité implique de respecter des conditions réglementaires. La Commission Nationale de l’Informatique et des Libertés (CNIL) est chargée de protéger les données personnelles, d’accompagner l’innovation et de préserver les libertés individuelles. Pour la protection des données personnelles, le RGPD encadre le traitement des données personnelles sur le territoire de l’Union européenne depuis le 25 mai 2018. L’<a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre3">article 20</a> du RGPD définit le droit à la portabilité comme le droit d’une personne de récupérer les données à caractère personnel qui la concernent dans un format structuré, couramment utilisé et lisible par machine auprès d’un responsable de traitement à qui elle les a fournies. Ce droit inclue de pouvoir transmettre ces données à un autre responsable du traitement sans que le responsable initial puisse y faire obstacle. Le traitement de ce transfert est fondé sur le consentement ou sur un contrat, et doit être effectué à l’aide de procédés automatisés.</p>
-
-<p>Le DSR intègre cette exigence de portabilité dans ses objectifs.</p>
-
-<h4 id="principe-relatif-à-la-mise-à-disposition-des-données">Principe relatif à la mise à disposition des données</h4>
-
-<p>La mise à disposition de données de santé à caractère personnel est définie à l’<a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038886892">article L1460-1 du Code de la Santé Publique</a>.</p>
-
-<p>Les données de santé à caractère personnel destinées aux services ou établissements publics de l’État ou des collectivités territoriales, aux professionnels de santé ou aux organismes de sécurité sociale peuvent être traitées dans le cadre d’un intérêt public, conformément à la <a href="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000886460">loi n° 78-17 du 6 janvier 1978 relative à l’informatique</a>, aux fichiers et aux libertés. Ces traitements ne doivent ni porter atteinte à la vie privée des personnes concernées, ni avoir pour but l’identification directe ou indirecte de ces personnes.</p>
-
-<p>Les citoyens, les utilisateurs du système de santé, les professionnels de santé, les établissements de santé et leurs organisations représentatives, ainsi que les organismes participant au financement de la couverture contre le risque maladie ou réalisant des traitements de données relatives à la santé, les services de l’État, les institutions publiques compétentes en matière de santé et les organismes de presse ont accès aux données mentionnées précédemment, conformément aux conditions définies par la loi n° 78-17 du 6 janvier 1978 et, le cas échéant, par les dispositions spécifiques à ces traitements.</p>
-
-<h4 id="droit-de-lusager-dans-un-essms">Droit de l’usager dans un ESSMS</h4>
-
-<p>Les droits de l’usager sont définis par l’<a href="https://www.legifrance.gouv.fr/codes/id/LEGIARTI000038887735/2019-07-27">article L. 311-3 du code de l’action sociale et des familles</a> et s’appliquent à toute personne prise en charge par un établissement et service social et médico-social. Parmi ces droits figure le droit d’obtenir des informations et des documents concernant sa prise en charge, sauf en cas de dispositions législatives contraires. L’usager a également le droit d’être accompagné par un représentant légal qui l’aide à mettre en œuvre son projet d’accueil ou d’accompagnement.</p>
-
-<h4 id="professionnels-dun-essms">Professionnels d’un ESSMS</h4>
-
-<p>Les catégories de professionnels susceptibles d’échanger ou partager des informations concernant un usager pris en charge dans un établissement ou service social et médico-social sont listées dans l’<a href="https://www.legifrance.gouv.fr/codes/id/LEGIARTI000043926322/2021-08-08">article R1110-2 du Code de la santé publique</a>. Les prestations offertes dans ces établissements et services sont réalisées par des équipes pluridisciplinaires qualifiées. La direction de ces établissements et services est assurée par des professionnels dont le niveau de qualification est déterminé par décret, après consultation de la branche professionnelle ou, à défaut, des fédérations ou organismes représentatifs des gestionnaires d’établissements et services sociaux et médico-sociaux concernés (<a href="https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074069/LEGISCTA000006174436/#LEGISCTA000006174436">article L312-1 du code l’action sociale et des familles</a>).</p>
-
+<p>En cas d’échec, le récepteur doit répondre avec le code HTTPS approprié tel que défini par l’API REST FHIR <a href="http://hl7.org/fhir/R4/http.html">(Http - FHIR v4.0.1 (hl7.org))</a>. Une ressource OperationOutcome doit également y être associé pour véhiculer les messages d’erreurs détaillant la raison de l’erreur <a href="http://hl7.org/fhir/R4/operationoutcome.html">(OperationOutcome - FHIR v4.0.1 (hl7.org))</a>.</p>
 
 
 
@@ -378,7 +302,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
               <td style="text-align:left">&#xA0;
 
-                <a href="specifications_fonctionnelles.html">&lt;prev</a>
+                <a href="description_flux_1_ajout_doc.html">&lt;prev</a>
 
               </td>
               <td style="text-align:center">
@@ -386,7 +310,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="contexte_metier.html">next&gt;</a>
+                <a href="description_flux_3_maj_doc.html">next&gt;</a>
 
               </td>
             </tr>
@@ -396,7 +320,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 21, 2023 15:46+0000">2023-11-21</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 21, 2023 16:01+0000">2023-11-21</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
