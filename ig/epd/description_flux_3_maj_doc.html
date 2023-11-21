@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Définition des processus collaboratifs - Médicosocial - Transfert de données DUI v1.0.0-ballot</title>
+    <title>Flux 3 - Mise à jour d&#39;un document - Médicosocial - Transfert de données DUI v1.0.0-ballot</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"2.3"}
-    h3,h4,h5,h6{--heading-prefix:"2.3"}</style>
+    <style type="text/css">h2{--heading-prefix:"4.4"}
+    h3,h4,h5,h6{--heading-prefix:"4.4"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -96,16 +96,16 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="cadre_orientations.html">Cadre juridique et orientations organisationnelles</a>
+        <a href="sfe_cadre_juridique.html">Cadre juridique et orientations organisationnelles</a>
       </li>
       <li>
-        <a href="contexte_metier.html">Organisation du contexte métier</a>
+        <a href="sfe_organisation_contexte_metier.html">Organisation du contexte métier</a>
       </li>
       <li>
-        <a href="processus.html">Définition des processus collaboratifs</a>
+        <a href="sfe_definition_processus.html">Définition des processus collaboratifs</a>
       </li>
       <li>
-        <a href="modelisation_contenu.html">Modélisation du contenu du DUI</a>
+        <a href="sfe_modelisation_contenu.html">Modélisation du contenu du DUI</a>
       </li>
     </ul>
   </li>
@@ -115,16 +115,16 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="contexte_contenu_dossier.html">Contexte</a>
+        <a href="contenu_dossier_contexte.html">Contexte</a>
       </li>
       <li>
-        <a href="structure_cda.html">Structure générale du document CDA</a>
+        <a href="contenu_dossier_structure_cda.html">Structure générale du document CDA</a>
       </li>
       <li>
-        <a href="entete_cda.html">Entête du document CDA</a>
+        <a href="contenu_dossier_entete_cda.html">Entête du document CDA</a>
       </li>
       <li>
-        <a href="corps_cda.html">Corps du document CDA</a>
+        <a href="contenu_dossier_corps_cda.html">Corps du document CDA</a>
       </li>
     </ul>
   </li>
@@ -134,16 +134,16 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="synthese_flux.html">Synthèse des flux</a>
+        <a href="description_flux_synthese.html">Synthèse des flux</a>
       </li>
       <li>
-        <a href="st_flux_ajout_doc.html">Flux 1 - Ajout d&apos;un document</a>
+        <a href="description_flux_1_ajout_doc.html">Flux 1 - Ajout d&apos;un document</a>
       </li>
       <li>
-        <a href="st_flux_ajout_lot_doc.html">Flux 2 - Ajout d&apos;un lot de documents</a>
+        <a href="description_flux_2_ajout_lot_doc.html">Flux 2 - Ajout d&apos;un lot de documents</a>
       </li>
       <li>
-        <a href="st_flux_maj_doc.html">Flux 3 - Mise à jour d&apos;un document</a>
+        <a href="description_flux_3_maj_doc.html">Flux 3 - Mise à jour d&apos;un document</a>
       </li>
     </ul>
   </li>
@@ -201,15 +201,15 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='specifications_fonctionnelles.html'><b>Spécifications fonctionnelles</b></a></li><li><b>Définition des processus collaboratifs</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='description_flux.html'><b>Description des flux</b></a></li><li><b>Flux 3 - Mise à jour d'un document</b></li>
 
           <span style="float:right;">
 
-            <a href="contexte_metier.html">&lt;prev</a> | 
+            <a href="description_flux_2_ajout_lot_doc.html">&lt;prev</a> | 
 
             <a href="#bottom">bottom</a>
 
-          | <a href="modelisation_contenu.html">next&gt;</a>
+          | <a href="ressources_conformite.html">next&gt;</a>
 
           </span>
 
@@ -232,7 +232,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </style>
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Médicosocial - Transfert de données DUI - Local Development build (v1.0.0-ballot). See the <a href="https://interop.esante.gouv.fr/ig/fhir/tddui/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-  <h2>Définition des processus collaboratifs</h2>
+  <h2>Flux 3 - Mise à jour d&#39;un document</h2>
   
 
 
@@ -249,164 +249,41 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#cas-dutilisation" id="markdown-toc-cas-dutilisation">Cas d’utilisation</a></li>
-  <li><a href="#liste-des-acteurs-pour-lensemble-des-processus" id="markdown-toc-liste-des-acteurs-pour-lensemble-des-processus">Liste des acteurs pour l’ensemble des processus</a></li>
+  <li><a href="#flux-31-miseajourdocument" id="markdown-toc-flux-31-miseajourdocument">Flux 3.1 MiseAJourDocument</a></li>
+  <li><a href="#flux-32-resultatmiseajourdocument" id="markdown-toc-flux-32-resultatmiseajourdocument">Flux 3.2 ResultatMiseAJourDocument</a></li>
 </ul>
 
 </div>
-<h3 id="cas-dutilisation">Cas d’utilisation</h3>
+<p>Ce flux permet la mise à jour partielle d’un document.</p>
 
-<h4 id="processus-collaboratif--changer-de-logiciel-métier-dui-">Processus collaboratif « Changer de logiciel métier (DUI) »</h4>
+<div><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="180px" preserveAspectRatio="none" style="width:487px;height:180px;background:#FFFFFF;" version="1.1" viewBox="0 0 487 180" width="487px" zoomAndPan="magnify"><defs /><g><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="51" x2="51" y1="36.2969" y2="144.8281" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="398" x2="398" y1="36.2969" y2="144.8281" /><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="93" x="5" y="5" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="79" x="12" y="24.9951">Logiciel DUI</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="93" x="5" y="143.8281" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="79" x="12" y="163.8232">Logiciel DUI</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="165" x="316" y="5" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="151" x="323" y="24.9951">Logiciel DUI ou SI tiers</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="165" x="316" y="143.8281" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="151" x="323" y="163.8232">Logiciel DUI ou SI tiers</text><polygon fill="#181818" points="386.5,78.5625,396.5,82.5625,386.5,86.5625,390.5,82.5625" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="51.5" x2="392.5" y1="82.5625" y2="82.5625" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="49" x="58.5" y="62.3638">Flux 3.1</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="147" x="111.5" y="62.3638">MiseAJourDocument</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="4" x="258.5" y="62.3638">&#160;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="284" x="62.5" y="77.4966">HTTP PATCH [base]/DocumentReference/[id]</text><polygon fill="#181818" points="62.5,122.8281,52.5,126.8281,62.5,130.8281,58.5,126.8281" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="56.5" x2="397.5" y1="126.8281" y2="126.8281" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="49" x="68.5" y="106.6294">Flux 3.2</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="208" x="121.5" y="106.6294">ResultatMiseAJourDocument</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="4" x="329.5" y="106.6294">&#160;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="319" x="72.5" y="121.7622">HTTP 200 OK (+ ressource "DocumentReference")</text></g></svg></div>
 
-<object data="processus1.svg" type="image/svg+xml"></object>
+<h3 id="flux-31-miseajourdocument">Flux 3.1 MiseAJourDocument</h3>
 
-<table style="width:100%">
-  <tr>
-    <th>Service attendu</th>
-    <td>Les données des usagers sont transférées d’un logiciel DUI vers un autre logiciel DUI.</td>
-  </tr>
-  <tr>
-    <th>Pré-conditions</th>
-    <td>L’usager est enregistré dans l’ancien logiciel DUI de l’ESSMS.</td>
-  </tr>
-  <tr>
-    <th>Post-conditions</th>
-    <td>Les données de l’usager sont présentes dans le nouveau DUI de l’ESSMS.</td>
-  </tr>
-  <tr>
-    <th>Contraintes fonctionnelles</th>
-    <td>N/A</td>
-  </tr>
-  <tr>
-    <th>Scénario nominal</th>
-    <td>L’ESSMS change de logiciel métier et demande la migration des données des usagers depuis son ancien logiciel DUI vers son nouveau logiciel DUI.</td>
-  </tr>
-</table>
+<p>La mise à jour partielle d’un document est assurée par l’interaction FHIR <a href="https://hl7.org/fhir/R4/http.html#patch">patch</a>. La requête HTTP PATCH envoyée doit contenir l’identifiant technique de la ressource à modifier ainsi que la liste des mises à jour à effectuer.</p>
 
-<h4 id="processus-collaboratif--changer-dessms-">Processus collaboratif « Changer d’ESSMS »</h4>
+<p><code class="language-plaintext highlighter-rouge">PATCH [base]/DocumentReference/[id]</code></p>
 
-<object data="processus2.svg" type="image/svg+xml"></object>
+<p>Où <code class="language-plaintext highlighter-rouge">[base]</code> est le point de contact FHIR et <code class="language-plaintext highlighter-rouge">[id]</code> l’identifiant technique de la ressource à mettre à jour.</p>
 
-<table style="width:100%">
-  <tr>
-    <th>Service attendu</th>
-    <td>L'ESSMS d'origine transfère les données médico-sociales de l’usager depuis son logiciel DUI vers le logiciel DUI de l'ESSMS d'accueil.</td>
-  </tr>
-  <tr>
-    <th>Pré-conditions</th>
-    <td>L’usager ou son représentant légal contacte l’ESSMS d’origine pour demander le transfert de ses données vers un nouvel ESSMS.</td>
-  </tr>
-  <tr>
-    <th>Post-conditions</th>
-    <td>Les données de l’usager sont présentes dans le DUI de l’ESSMS d’accueil</td>
-  </tr>
-  <tr>
-    <th>Contraintes fonctionnelles</th>
-    <td>N/A</td>
-  </tr>
-  <tr>
-    <th>Scénario nominal</th>
-    <td>L’usager déménage et demande le transfert de ses données vers sa nouvelle structure d’accueil. <br />
-    L’usager peut également être amené à changer de structure car il ne remplit plus les conditions d’accès (exemple : l’usager grandit).
-</td>
-  </tr>
-</table>
+<p>Au niveau applicatif, les mises à jour sont restreintes à l’élément <code class="language-plaintext highlighter-rouge">content</code> qui contient le document CDA.</p>
 
-<h4 id="processus-collaboratif--transférer-les-données-dun-logiciel-dui-ver-le-si-de-la-cnsa-sidoba-">Processus collaboratif « Transférer les données d’un logiciel DUI ver le SI de la CNSA (SIDOBA) »</h4>
+<p>Les corrections à apporter à la ressource peuvent être communiquées de trois manières différentes :</p>
+<ul>
+  <li><a href="https://datatracker.ietf.org/doc/html/rfc6902">JSON patch</a> (status : Proposed standard),</li>
+  <li><a href="https://datatracker.ietf.org/doc/html/rfc5261">XML patch</a> (status : Proposed standard),</li>
+  <li><a href="https://www.hl7.org/fhir/fhirpatch.html">FHIRPath Patch utilisant la ressource Parameters</a> (niveau de maturité : 2).</li>
+</ul>
 
-<object data="processus3.svg" type="image/svg+xml"></object>
+<p>A noter que la méthode JSON patch est mature et plus adaptée à un usage en mobilité.</p>
 
-<table style="width:100%">
-  <tr>
-    <th>Service attendu</th>
-    <td>L'ESSMS d'origine transfère des données des données depuis son logiciel DUI vers le SI de la CNSA, SIDOBA.</td>
-  </tr>
-  <tr>
-    <th>Pré-conditions</th>
-    <td>La CNSA  a demandé à l’ESSMS de lui transmettre tout ou partie des données médico-sociales de l’usager.</td>
-  </tr>
-  <tr>
-    <th>Post-conditions</th>
-    <td>Les données de l’usager sont présentes dans le système d’information de la CNSA.</td>
-  </tr>
-  <tr>
-    <th>Contraintes fonctionnelles</th>
-    <td>N/A</td>
-  </tr>
-  <tr>
-    <th>Scénario nominal</th>
-    <td>La CNSA demande à l’ESSMS de lui transférer des données à des fins de pilotage et de financement.</td>
-  </tr>
-</table>
+<p>Lorsque toutes les modifications sont traitées, le serveur traite la fiche du document de la même façon qu’au cours d’une opération update créant ainsi une nouvelle version (modification des éléments meta.versionId et meta.lastUpdated).</p>
 
-<h3 id="liste-des-acteurs-pour-lensemble-des-processus">Liste des acteurs pour l’ensemble des processus</h3>
+<h3 id="flux-32-resultatmiseajourdocument">Flux 3.2 ResultatMiseAJourDocument</h3>
 
-<h4 id="le-demandeur">Le demandeur</h4>
+<p>Si la mise à jour partielle de la ressource est correctement effectuée, le récepteur doit retourner un code HTTPS 200 « OK » ainsi que la ressource modifiée avec les attributs <code class="language-plaintext highlighter-rouge">id</code>, <code class="language-plaintext highlighter-rouge">lastUpdated</code> et <code class="language-plaintext highlighter-rouge">versionId</code> mis à jour.</p>
 
-<p>Le demandeur est l’acteur à l’origine du besoin. Il peut s’agir d’un établissement ou d’une personne physique.</p>
-
-<table style="width:100%">
-  <tr>
-    <th>Processus collaboratif</th>
-    <th>Demandeur</th>
-  </tr>
-  <tr>
-    <td>Changer de logiciel métier</td>
-    <td><b>ESSMS</b> : Etablissement qui accompagne l’usager. Il assure la gestion de l’accompagnement usager à travers son logiciel DUI</td>
-  </tr>
-  <tr>
-    <td>Changer d’ESSMS</td>
-    <td><b>Usager</b> : Personne qui est accompagnée au sein de l’ESSMS. L’usager, ou son représentant légal, est chargé de contacter son établissement pour le transfert de son dossier</td>
-  </tr>
-  <tr>
-    <td>Transférer des données DUI vers SIDOBA</td>
-    <td><b>CNSA</b> : Elle demande l’accès à des données de l’usager, via son système d’information SIDOBA, à des fins de pilotage ou de financement</td>
-  </tr>
-</table>
-
-<h4 id="le-producteur">Le producteur</h4>
-
-<p>Le producteur est l’acteur à l’origine de l’export des données. C’est un système.</p>
-
-<table style="width:100%">
-  <tr>
-    <th>Processus collaboratif</th>
-    <th>Producteur</th>
-  </tr>
-  <tr>
-    <td>Changer de logiciel métier</td>
-    <td rowspan="3"><b>DUI</b> : Logiciel Métier utilisé par les ESSMS permettant de gérer les dossiers des usagers avant, pendant et après son accompagnement</td>
-  </tr>
-  <tr>
-    <td>Changer d’ESSMS</td>
-  </tr>
-  <tr>
-    <td>Transférer des données DUI vers SIDOBA</td>
-  </tr>
-</table>
-
-<h4 id="le-consommateur">Le consommateur</h4>
-
-<p>Le consommateur est l’acteur qui reçoit les données. C’est un système.</p>
-
-<table style="width:100%">
-  <tr>
-    <th>Processus collaboratif</th>
-    <th>Demandeur</th>
-  </tr>
-  <tr>
-    <td>Changer de logiciel métier</td>
-    <td rowspan="2"><b>DUI</b> : Logiciel Métier utilisé par les ESSMS permettant de gérer les dossiers des usagers avant, pendant et après son accompagnement <br />
-    Il s’agit dans ces différents cas d’un autre DUI que celui du producteur.</td>
-  </tr>
-  <tr>
-    <td>Changer d’ESSMS</td>
-  </tr>
-  <tr>
-    <td>Transférer des données DUI vers SIDOBA</td>
-    <td><b>SIDOBA</b>: système d’information de la CNSA permettant le pilotage et le financement des ESSMS</td>
-  </tr>
-</table>
+<p>En cas d’échec, le récepteur doit répondre avec le code HTTPS approprié tel que défini par l’API REST FHIR <a href="http://hl7.org/fhir/R4/http.html">(Http - FHIR v4.0.1 (hl7.org))</a>. Une ressource OperationOutcome doit également y être associé pour véhiculer les messages d’erreurs détaillant la raison de l’erreur <a href="http://hl7.org/fhir/R4/operationoutcome.html">(OperationOutcome - FHIR v4.0.1 (hl7.org))</a>.</p>
 
 
 
@@ -436,7 +313,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
               <td style="text-align:left">&#xA0;
 
-                <a href="contexte_metier.html">&lt;prev</a>
+                <a href="description_flux_2_ajout_lot_doc.html">&lt;prev</a>
 
               </td>
               <td style="text-align:center">
@@ -444,7 +321,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="modelisation_contenu.html">next&gt;</a>
+                <a href="ressources_conformite.html">next&gt;</a>
 
               </td>
             </tr>
@@ -454,7 +331,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 21, 2023 14:08+0000">2023-11-21</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 21, 2023 15:06+0000">2023-11-21</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
