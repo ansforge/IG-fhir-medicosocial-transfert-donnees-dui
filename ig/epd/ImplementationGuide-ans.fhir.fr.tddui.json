@@ -10,7 +10,7 @@
   "name" : "TransfertDonneesDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "draft",
-  "date" : "2023-11-14T08:17:27+00:00",
+  "date" : "2023-11-21T14:08:22+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -655,6 +655,28 @@
       "name" : "TDDUI Document Reference",
       "description" : "Profil générique créé dans le contexte du transfert de données DUI pour véhiculer un document au format CDA, inclus dans DocumentReference.attachment.data.",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/TDDUIBundleExample"
+      },
+      "name" : "TDDUIBundleExample",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DocumentReference"
+      }],
+      "reference" : {
+        "reference" : "DocumentReference/TDDUIDocumentReferenceExample"
+      },
+      "name" : "TDDUIDocumentReferenceExample",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-documentreference"
     }],
     "page" : {
       "extension" : [{

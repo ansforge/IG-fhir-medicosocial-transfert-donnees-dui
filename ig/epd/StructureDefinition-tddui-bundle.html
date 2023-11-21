@@ -324,7 +324,7 @@
         
           Draft
           
-            as of 2023-11-14
+            as of 2023-11-21
           
         
       </td>
@@ -353,7 +353,7 @@
 
 <p><b>Usage:</b></p>
 <ul>
- <li>This Resource Profile is not used by any profiles in this Implementation Guide</li>
+ <li>Examples for this Resource Profile: <a href="Bundle-TDDUIBundleExample.html">Bundle/TDDUIBundleExample</a></li>
 </ul>
 
 
@@ -504,7 +504,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>dom-5</td><td>error</td><td>Bundle.entry:DUIDocumentReference.resource</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
 <tr><td>dom-6</td><td>best practice</td><td>Bundle.entry:DUIDocumentReference.resource</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>**ALL** elements</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>Bundle.entry.modifierExtension, Bundle.entry.search.modifierExtension, Bundle.entry.request.modifierExtension, Bundle.entry.response.modifierExtension, Bundle.entry:DUIDocumentReference.modifierExtension, Bundle.entry:DUIDocumentReference.search.modifierExtension, Bundle.entry:DUIDocumentReference.request.modifierExtension, Bundle.entry:DUIDocumentReference.response.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 </table>
 
           
@@ -673,7 +673,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>dom-5</td><td>error</td><td>Bundle.entry:DUIDocumentReference.resource</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
 <tr><td>dom-6</td><td>best practice</td><td>Bundle.entry:DUIDocumentReference.resource</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>**ALL** elements</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>Bundle.link.extension, Bundle.link.modifierExtension, Bundle.entry.extension, Bundle.entry.modifierExtension, Bundle.entry.search.extension, Bundle.entry.search.modifierExtension, Bundle.entry.request.extension, Bundle.entry.request.modifierExtension, Bundle.entry.response.extension, Bundle.entry.response.modifierExtension, Bundle.entry:DUIDocumentReference.extension, Bundle.entry:DUIDocumentReference.modifierExtension, Bundle.entry:DUIDocumentReference.search.extension, Bundle.entry:DUIDocumentReference.search.modifierExtension, Bundle.entry:DUIDocumentReference.request.extension, Bundle.entry:DUIDocumentReference.request.modifierExtension, Bundle.entry:DUIDocumentReference.response.extension, Bundle.entry:DUIDocumentReference.response.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 </table>
 
           
@@ -910,7 +910,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>dom-5</td><td>error</td><td>Bundle.entry:DUIDocumentReference.resource</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
 <tr><td>dom-6</td><td>best practice</td><td>Bundle.entry:DUIDocumentReference.resource</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>**ALL** elements</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>Bundle.entry.modifierExtension, Bundle.entry.search.modifierExtension, Bundle.entry.request.modifierExtension, Bundle.entry.response.modifierExtension, Bundle.entry:DUIDocumentReference.modifierExtension, Bundle.entry:DUIDocumentReference.search.modifierExtension, Bundle.entry:DUIDocumentReference.request.modifierExtension, Bundle.entry:DUIDocumentReference.response.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 </table>
 
           
@@ -1079,7 +1079,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>dom-5</td><td>error</td><td>Bundle.entry:DUIDocumentReference.resource</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
 <tr><td>dom-6</td><td>best practice</td><td>Bundle.entry:DUIDocumentReference.resource</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>**ALL** elements</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>Bundle.link.extension, Bundle.link.modifierExtension, Bundle.entry.extension, Bundle.entry.modifierExtension, Bundle.entry.search.extension, Bundle.entry.search.modifierExtension, Bundle.entry.request.extension, Bundle.entry.request.modifierExtension, Bundle.entry.response.extension, Bundle.entry.response.modifierExtension, Bundle.entry:DUIDocumentReference.extension, Bundle.entry:DUIDocumentReference.modifierExtension, Bundle.entry:DUIDocumentReference.search.extension, Bundle.entry:DUIDocumentReference.search.modifierExtension, Bundle.entry:DUIDocumentReference.request.extension, Bundle.entry:DUIDocumentReference.request.modifierExtension, Bundle.entry:DUIDocumentReference.response.extension, Bundle.entry:DUIDocumentReference.response.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 </table>
 
           
@@ -1283,7 +1283,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 14, 2023 08:17+0000">2023-11-14</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 21, 2023 14:08+0000">2023-11-21</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
