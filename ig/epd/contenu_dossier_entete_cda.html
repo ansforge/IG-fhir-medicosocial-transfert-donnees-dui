@@ -260,18 +260,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </ul>
 
 </div>
-<p>Les éléments apparaissant en <strong><span style="color: #4472C4">gras de couleur bleu</span></strong> correspondent à des extensions définies dans le cadre de cette spécification technique afin de couvrir le besoin.</p>
-
-<p>Les éléments apparaissant en <span style="color: #C00000">rouge</span> correspondent aux règles spécifiques à mettre en place.</p>
-
-<p>Les éléments en <i><u>italique soulignés</u></i> correspondent aux cardinalités de base de CDA contraintes pour ce volet.</p>
-
-<h3 id="recordtarget">RecordTarget</h3>
-
-<p>L’élément <a href="https://o3sis.esante.gouv.fr/art-decor/decor-templates--ASIP-STRUCT-MIN-?section=templates&amp;id=1.2.250.1.213.1.1.1.1.10.10">RecordTarget</a> imposé par le CDA permet de décrire les données de l’usager dans le cadre du volet. Les données véhiculées par cet élément sont décrites ci-dessous.</p>
-
-<p>Il est demandé que l’INS de l’utilisateur soit transporté en priorité s’il existe. Dans le cas contraire, l’identifiant local produit par le système peut être transporté et dans ce cas le <strong>nom</strong>, le <strong>sexe</strong>, le <strong>lieu de naissance</strong>, la <strong>date de naissance</strong> et l’<strong>ordre de naissance</strong> sont requis.</p>
-
 <style>
 
     <!-- Propriétés de style générales (taille, couleurs et police de texte, bordures) -->
@@ -326,6 +314,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 	}
 
 </style>
+
+<p>Les éléments apparaissant en <strong><span style="color: #4472C4">gras de couleur bleu</span></strong> correspondent à des extensions définies dans le cadre de cette spécification technique afin de couvrir le besoin.</p>
+
+<p>Les éléments apparaissant en <span style="color: #C00000">rouge</span> correspondent aux règles spécifiques à mettre en place.</p>
+
+<p>Les éléments en <i><u>italique soulignés</u></i> correspondent aux cardinalités de base de CDA contraintes pour ce volet.</p>
+
+<h3 id="recordtarget">RecordTarget</h3>
+
+<p>L’élément <a href="https://o3sis.esante.gouv.fr/art-decor/decor-templates--ASIP-STRUCT-MIN-?section=templates&amp;id=1.2.250.1.213.1.1.1.1.10.10">RecordTarget</a> imposé par le CDA permet de décrire les données de l’usager dans le cadre du volet. Les données véhiculées par cet élément sont décrites ci-dessous.</p>
+
+<p>Il est demandé que l’INS de l’utilisateur soit transporté en priorité s’il existe. Dans le cas contraire, l’identifiant local produit par le système peut être transporté et dans ce cas le <strong>nom</strong>, le <strong>sexe</strong>, le <strong>lieu de naissance</strong>, la <strong>date de naissance</strong> et l’<strong>ordre de naissance</strong> sont requis.</p>
 
 <table id="cda">
     <thead>
@@ -434,7 +434,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 			<td><p><strong>Sexe de l'individu</strong></p>
             <p>@code = code issu du <a href="https://mos.esante.gouv.fr/NOS/JDV_J143-AdministrativeGender-CISIS/JDV_J143-AdministrativeGender-CISIS.pdf display:block">JDV_J143-AdministrativeGender-CI-SIS</a> <strong>(1.2.250.1.213.1.1.5.590)</strong>
             <br />@displayName = libellé associé à ce code
-            <br />@codeSystem = identifiant de la terminologie d'origine de ce code</p></td>
+            <br />@codeSystem = « 2.16.840.1.113883.5.1 »</p></td>
 		</tr>
 		<tr>
 			<td>3</td>
@@ -1007,9 +1007,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 			<br />- Si le responsable est un professionnel : Cadre d'exercice
 			<br />- Si le responsable est un SNR : Non renseigné
 			<br />Valeur issue du <a href="https://mos.esante.gouv.fr/NOS/JDV_J04-XdsPracticeSettingCode-CISIS/JDV_J04-XdsPracticeSettingCode-CISIS.pdf display:block">JDV_J04-XdsPracticeSettingCode-CISIS</a><strong> (1.2.250.1.213.1.1.5.467)</strong></p>
-			<p><red>@code = «ETABLISSEMENT»
-			<br />@displayName = «Etablissement de santé»
-			<br />@codeSystem = «1.2.250.1.213.1.1.4.9»</red></p></td>
+			<p><red>@code = « ETABLISSEMENT »
+			<br />@displayName = « Etablissement de santé »
+			<br />@codeSystem = « 1.2.250.1.213.1.1.4.9 »</red></p></td>
         </tr>
     </tbody>
 </table>
@@ -1383,11 +1383,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 			<td>Adresse.type</td>
 			<td><p><strong>Type d'adresse</strong></p>
 			<p>@use = 
-			<br />«H» pour domicile
-			<br />«HP» pour domicile principal
-			<br />«HV» pour domicile de vacances
-			<br />«WP» pour lieu de travail
-			<br />«TMP» pour adresse temporaire</p></td>
+			<br />« H » pour domicile
+			<br />« HP » pour domicile principal
+			<br />« HV » pour domicile de vacances
+			<br />« WP » pour lieu de travail
+			<br />« TMP » pour adresse temporaire</p></td>
 		</tr>
 		<tr>
 			<td>1</td>
@@ -1562,7 +1562,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 22, 2023 15:35+0000">2023-11-22</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 22, 2023 15:45+0000">2023-11-22</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
