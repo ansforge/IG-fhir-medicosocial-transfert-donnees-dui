@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "TransfertDonneesDUI"] ; # 
   fhir:title [ fhir:v "Médicosocial - Transfert de données DUI"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-11-24T09:28:27+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-11-29T07:54:05+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -614,99 +614,126 @@
        ] [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "sfe_cadre_juridique.html"^^xsd:anyURI ]
+           fhir:value [ fhir:v "sfe.html"^^xsd:anyURI ]
          ] ) ;
-         fhir:name [ fhir:v "sfe_cadre_juridique.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Cadre juridique et orientations organisationnelles" ] ;
-         fhir:generation [ fhir:v "markdown" ]
+         fhir:name [ fhir:v "sfe.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Spécifications fonctionnelles" ] ;
+         fhir:generation [ fhir:v "markdown" ] ;
+         fhir:page ( [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "sfe_cadre_juridique.html"^^xsd:anyURI ]
+           ] ) ;
+           fhir:name [ fhir:v "sfe_cadre_juridique.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Cadre juridique et orientations organisationnelles" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "sfe_organisation_contexte_metier.html"^^xsd:anyURI ]
+           ] ) ;
+           fhir:name [ fhir:v "sfe_organisation_contexte_metier.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Organisation du contexte métier" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "sfe_definition_processus.html"^^xsd:anyURI ]
+           ] ) ;
+           fhir:name [ fhir:v "sfe_definition_processus.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Définition des processus collaboratifs" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "sfe_modelisation_contenu.html"^^xsd:anyURI ]
+           ] ) ;
+           fhir:name [ fhir:v "sfe_modelisation_contenu.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Modélisation du contenu du DUI" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] )
        ] [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "sfe_organisation_contexte_metier.html"^^xsd:anyURI ]
+           fhir:value [ fhir:v "contenu_dossier.html"^^xsd:anyURI ]
          ] ) ;
-         fhir:name [ fhir:v "sfe_organisation_contexte_metier.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Organisation du contexte métier" ] ;
-         fhir:generation [ fhir:v "markdown" ]
+         fhir:name [ fhir:v "contenu_dossier.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Contenu du dossier" ] ;
+         fhir:generation [ fhir:v "markdown" ] ;
+         fhir:page ( [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "contenu_dossier_contexte.html"^^xsd:anyURI ]
+           ] ) ;
+           fhir:name [ fhir:v "contenu_dossier_contexte.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Contexte" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "contenu_dossier_structure_cda.html"^^xsd:anyURI ]
+           ] ) ;
+           fhir:name [ fhir:v "contenu_dossier_structure_cda.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Structure générale du document CDA" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "contenu_dossier_entete_cda.html"^^xsd:anyURI ]
+           ] ) ;
+           fhir:name [ fhir:v "contenu_dossier_entete_cda.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Entête du document CDA" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "contenu_dossier_corps_cda.html"^^xsd:anyURI ]
+           ] ) ;
+           fhir:name [ fhir:v "contenu_dossier_corps_cda.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Corps du document CDA" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] )
        ] [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "sfe_definition_processus.html"^^xsd:anyURI ]
+           fhir:value [ fhir:v "description_flux.html"^^xsd:anyURI ]
          ] ) ;
-         fhir:name [ fhir:v "sfe_definition_processus.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Définition des processus collaboratifs" ] ;
-         fhir:generation [ fhir:v "markdown" ]
-       ] [
-         fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "sfe_modelisation_contenu.html"^^xsd:anyURI ]
-         ] ) ;
-         fhir:name [ fhir:v "sfe_modelisation_contenu.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Modélisation du contenu du DUI" ] ;
-         fhir:generation [ fhir:v "markdown" ]
-       ] [
-         fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "contenu_dossier_contexte.html"^^xsd:anyURI ]
-         ] ) ;
-         fhir:name [ fhir:v "contenu_dossier_contexte.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Contexte" ] ;
-         fhir:generation [ fhir:v "markdown" ]
-       ] [
-         fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "contenu_dossier_structure_cda.html"^^xsd:anyURI ]
-         ] ) ;
-         fhir:name [ fhir:v "contenu_dossier_structure_cda.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Structure générale du document CDA" ] ;
-         fhir:generation [ fhir:v "markdown" ]
-       ] [
-         fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "contenu_dossier_entete_cda.html"^^xsd:anyURI ]
-         ] ) ;
-         fhir:name [ fhir:v "contenu_dossier_entete_cda.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Entête du document CDA" ] ;
-         fhir:generation [ fhir:v "markdown" ]
-       ] [
-         fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "contenu_dossier_corps_cda.html"^^xsd:anyURI ]
-         ] ) ;
-         fhir:name [ fhir:v "contenu_dossier_corps_cda.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Corps du document CDA" ] ;
-         fhir:generation [ fhir:v "markdown" ]
-       ] [
-         fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "description_flux_synthese.html"^^xsd:anyURI ]
-         ] ) ;
-         fhir:name [ fhir:v "description_flux_synthese.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Synthèse des flux" ] ;
-         fhir:generation [ fhir:v "markdown" ]
-       ] [
-         fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "description_flux_1_ajout_doc.html"^^xsd:anyURI ]
-         ] ) ;
-         fhir:name [ fhir:v "description_flux_1_ajout_doc.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Flux 1 - Ajout d'un document" ] ;
-         fhir:generation [ fhir:v "markdown" ]
-       ] [
-         fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "description_flux_2_ajout_lot_doc.html"^^xsd:anyURI ]
-         ] ) ;
-         fhir:name [ fhir:v "description_flux_2_ajout_lot_doc.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Flux 2 - Ajout d'un lot de documents" ] ;
-         fhir:generation [ fhir:v "markdown" ]
-       ] [
-         fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "description_flux_3_maj_doc.html"^^xsd:anyURI ]
-         ] ) ;
-         fhir:name [ fhir:v "description_flux_3_maj_doc.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Flux 3 - Mise à jour d'un document" ] ;
-         fhir:generation [ fhir:v "markdown" ]
+         fhir:name [ fhir:v "description_flux.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Description des flux" ] ;
+         fhir:generation [ fhir:v "markdown" ] ;
+         fhir:page ( [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "description_flux_synthese.html"^^xsd:anyURI ]
+           ] ) ;
+           fhir:name [ fhir:v "description_flux_synthese.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Synthèse des flux" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "description_flux_1_ajout_doc.html"^^xsd:anyURI ]
+           ] ) ;
+           fhir:name [ fhir:v "description_flux_1_ajout_doc.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Flux 1 - Ajout d'un document" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "description_flux_2_ajout_lot_doc.html"^^xsd:anyURI ]
+           ] ) ;
+           fhir:name [ fhir:v "description_flux_2_ajout_lot_doc.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Flux 2 - Ajout d'un lot de documents" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "description_flux_3_maj_doc.html"^^xsd:anyURI ]
+           ] ) ;
+           fhir:name [ fhir:v "description_flux_3_maj_doc.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Flux 3 - Mise à jour d'un document" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] )
        ] [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
@@ -723,6 +750,14 @@
            fhir:name [ fhir:v "ressources_cda.html"^^xsd:anyURI ] ;
            fhir:title [ fhir:v "Ressources CDA" ] ;
            fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "artifacts.html"^^xsd:anyURI ]
+           ] ) ;
+           fhir:name [ fhir:v "artifacts.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Ressources FHIR" ] ;
+           fhir:generation [ fhir:v "html" ]
          ] )
        ] [
          fhir:extension ( [

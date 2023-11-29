@@ -41,8 +41,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"6"}
-    h3,h4,h5,h6{--heading-prefix:"6"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.1"}
+    h3,h4,h5,h6{--heading-prefix:"3.1"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -153,10 +153,10 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="artifacts.html">Ressources FHIR</a>
+        <a href="ressources_cda.html">Ressources CDA</a>
       </li>
       <li>
-        <a href="ressources_cda.html">Ressources CDA</a>
+        <a href="artifacts.html">Ressources FHIR</a>
       </li>
     </ul>
   </li>
@@ -179,10 +179,10 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="http://hl7.org/fhir/R4/index.html" target="_blank">Spécifications FHIR </a>
+        <a href="http://hl7.org/fhir/R4/index.html" target="_blank">Spécifications FHIR</a>
       </li>
       <li>
-        <a href="https://esante.gouv.fr/" target="_blank">Site de l'ANS </a>
+        <a href="https://esante.gouv.fr/" target="_blank">Site de l'ANS</a>
       </li>
     </ul>
   </li>
@@ -201,11 +201,11 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Contexte</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="contenu_dossier.html"><b>Contenu du dossier</b></a></li><li><b>Contexte</b></li>
 
           <span style="float:right;">
 
-            <a href="sfe_modelisation_contenu.html">&lt;prev</a> | 
+            <a href="contenu_dossier.html">&lt;prev</a> | 
 
             <a href="#bottom">bottom</a>
 
@@ -231,7 +231,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">Médicosocial - Transfert de données DUI - Local Development build (v1.0.0-ballot). See the <a href="https://interop.esante.gouv.fr/ig/fhir/tddui/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">Médicosocial - Transfert de données DUI - Local Development build (v1.0.0-ballot) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://interop.esante.gouv.fr/ig/fhir/tddui/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <h2>Contexte</h2>
   
 
@@ -259,7 +259,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Cette section présente les spécifications techniques du volet « Transfert de données DUI ». Ces dernières spécifient le transfert de données sociales et médico-sociales de l’usager depuis un logiciel DUI entre les Etablissements et Services Médico-Sociaux (ESSMS) et un autre ESSMS ou vers les Systèmes d’Information tiers.
 La production de ce document est basée sur :</p>
 <ul>
-  <li><a name="l448">​</a>Les <a href="cadre_orientations.html">Spécifications Fonctionnelles de Contenu v0.4 du volet « Transfert de données DUI »</a>,</li>
+  <li><a name="l452">​</a>Les <a href="cadre_orientations.html">Spécifications Fonctionnelles de Contenu v0.4 du volet « Transfert de données DUI »</a>,</li>
   <li>Le standard <a href="https://www.hl7.org/implement/standards/product_brief.cfm?product_id=496">Clinical Document Architecture R2</a> (CDA) porté par HL7 pour représenter les données présentées dans les Spécifications Fonctionnelles de Contenu v0.4 du volet « Transfert de données DUI ».</li>
 </ul>
 
@@ -281,7 +281,7 @@ La production de ce document est basée sur :</p>
 <div style="padding: 5px; border-radius: 5px; border: 2px solid black; width: 65%">
   Les spécifications techniques sont complétées par : 
   <ul>
-    <li>Des <b><a name="l494">​</a><a href="contenu_dossier.html#nomenclatures">éléments sémantiques</a></b> (jeux de valeurs / terminologies) utilisés pour le codage des éléments métiers ;</li>
+    <li>Des <b><a name="l498">​</a><a href="contenu_dossier.html#nomenclatures">éléments sémantiques</a></b> (jeux de valeurs / terminologies) utilisés pour le codage des éléments métiers ;</li>
     <li>Des <b><a href="ressources_cda.html#exemples">exemples d'implémentation en CDA R2 niveau 3</a></b> ;</li>
   </ul>
 </div>
@@ -360,7 +360,7 @@ La production de ce document est basée sur :</p>
             <tr>
               <td style="text-align:left">&nbsp;
 
-                <a href="sfe_modelisation_contenu.html">&lt;prev</a>
+                <a href="contenu_dossier.html">&lt;prev</a>
 
               </td>
               <td style="text-align:center">
@@ -378,7 +378,7 @@ La production de ce document est basée sur :</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Nov 24, 2023 09:28+0000">2023-11-24</span>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 29, 2023 07:54+0000">2023-11-29</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
