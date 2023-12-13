@@ -72,7 +72,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
   <name value="TDDUIDocumentReference"/>
   <title value="TDDUI Document Reference"/>
   <status value="draft"/>
-  <date value="2023-12-13T14:14:48+00:00"/>
+  <date value="2023-12-13T15:28:57+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -1080,9 +1080,9 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
       </constraint>
       <constraint>
         <key value="constr-bind-type"/>
-        <severity value="error"/>
+        <severity value="warning"/>
         <human value="Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :&#xA;&#xD;&#xA; TRE_A05-TypeDocComplementaireCISIS, OID : 1.2.250.1.213.1.1.4.12&#xA;&#xD;&#xA; TRE_A04-TypeDocument-LOINC, OID : 2.16.840.1.113883.6.1&#xA;&#xD;&#xA; TRE_A12-NomenclatureASTM, OID : ASTM&#xA;&#xD;&#xA;Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J66-TypeCode-DMP).&#xD;&#xA;En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J07-XdsTypeCode-CISIS peut être utilisé."/>
-        <expression value="f:type"/>
+        <xpath value="f:type"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-documentreference"/>
       </constraint>
       <mustSupport value="true"/>
@@ -1163,9 +1163,9 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
       </constraint>
       <constraint>
         <key value="constr-bind-category"/>
-        <severity value="error"/>
+        <severity value="warning"/>
         <human value="Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :&#xA;-&#x9;TRE_A03-ClasseDocument-CISIS, OID : 1.2.250.1.213.1.1.4.1&#xA;-&#x9;TRE_A10-NomenclatureURN, OID : URN&#xA;Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J57-ClassCode-DMP).&#xA;En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J06-XdsClassCode-CISIS peut être utilisé."/>
-        <expression value="f:category"/>
+        <xpath value="f:category"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-documentreference"/>
       </constraint>
       <mustSupport value="true"/>
@@ -1881,9 +1881,9 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
       </constraint>
       <constraint>
         <key value="constr-bind-securityLabel"/>
-        <severity value="error"/>
+        <severity value="warning"/>
         <human value="Les codes pour cet élément doivent provenir du ValueSet spécifié par le standard. Lorsqu’aucun code ne correspond au concept recherché, un code provenant de la terminologie de référence TRE_A07-StatusVisibiliteDocument, OID : 1.2.250.1.213.1.1.4.13 peut être utilisé."/>
-        <expression value="f:securityLabel"/>
+        <xpath value="f:securityLabel"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-documentreference"/>
       </constraint>
       <mustSupport value="true"/>
@@ -2601,9 +2601,9 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
       </constraint>
       <constraint>
         <key value="constr-bind-format"/>
-        <severity value="error"/>
+        <severity value="warning"/>
         <human value="Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :&#xA;- TRE_A06-FormatCodeComplementaire, OID : 1.2.250.1.213.1.1.4.2.282&#xA;- TRE_A11-IheFormatCode, OID : 1.3.6.1.4.1.19376.1.2.3&#xA;- TRE_A09-DICOMuidRegistry, OID : 1.2.840.10008.2.6.1&#xA;- TRE_A10-NomenclatureURN, OID : URN&#xA;Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J60-FormatCode-DMP).&#xA;En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J10-XdsFormatCode-CISIS peut être utilisé."/>
-        <expression value="f:content/f:format"/>
+        <xpath value="f:content/f:format"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-documentreference"/>
       </constraint>
       <mustSupport value="true"/>
@@ -2893,9 +2893,9 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
       </constraint>
       <constraint>
         <key value="constr-bind-context-event"/>
-        <severity value="error"/>
+        <severity value="warning"/>
         <human value="Nomenclatures utilisées :&#xA;- CCAM pour les actes médicaux (OID=&quot;1.2.250.1.213.2.5&quot;);&#xA;- CIM-10 pour les diagnostics de pathologie (OID=&quot;2.16.840.1.113883.6.3&quot;).&#xA;- TRE_A00-ProducteurDocNonPS pour les documents d'expression personnelle du patient."/>
-        <expression value="f:context/f:event"/>
+        <xpath value="f:context/f:event"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-documentreference"/>
       </constraint>
       <binding>
@@ -3024,9 +3024,9 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
       </constraint>
       <constraint>
         <key value="constr-bind-ProducteurDoc-simplified"/>
-        <severity value="error"/>
+        <severity value="warning"/>
         <human value="L’utilisation de cette nomenclature est recommandée mais non obligatoire (prefered) :&#xA;-&#x9;TRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 (lorsque l’auteur du document est un professionnel ou un équipement sous sa responsabilité)&#xA;Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J61-HealthcareFacilityTypeCode-DMP).&#xA;En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-XdsHealthcareFacilityTypeCode-CISIS peut être utilisé."/>
-        <expression value="f:context/f:practiceSetting or f:context/f:facilityType"/>
+        <xpath value="f:context/f:practiceSetting or f:context/f:facilityType"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-documentreference"/>
       </constraint>
       <mustSupport value="true"/>
@@ -3094,9 +3094,9 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
       </constraint>
       <constraint>
         <key value="constr-bind-ProducteurDoc-simplified"/>
-        <severity value="error"/>
+        <severity value="warning"/>
         <human value="L’utilisation de cette nomenclature est recommandée mais non obligatoire (prefered) :&#xA;-&#x9;TRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 (lorsque l’auteur du document est un professionnel ou un équipement sous sa responsabilité)&#xA;Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J61-HealthcareFacilityTypeCode-DMP).&#xA;En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-XdsHealthcareFacilityTypeCode-CISIS peut être utilisé."/>
-        <expression value="f:context/f:practiceSetting or f:context/f:facilityType"/>
+        <xpath value="f:context/f:practiceSetting or f:context/f:facilityType"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-documentreference"/>
       </constraint>
       <mustSupport value="true"/>
@@ -3290,9 +3290,9 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
       <definition value="Représente le type du document."/>
       <constraint>
         <key value="constr-bind-type"/>
-        <severity value="error"/>
+        <severity value="warning"/>
         <human value="Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :&#xA;&#xD;&#xA; TRE_A05-TypeDocComplementaireCISIS, OID : 1.2.250.1.213.1.1.4.12&#xA;&#xD;&#xA; TRE_A04-TypeDocument-LOINC, OID : 2.16.840.1.113883.6.1&#xA;&#xD;&#xA; TRE_A12-NomenclatureASTM, OID : ASTM&#xA;&#xD;&#xA;Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J66-TypeCode-DMP).&#xD;&#xA;En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J07-XdsTypeCode-CISIS peut être utilisé."/>
-        <expression value="f:type"/>
+        <xpath value="f:type"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-documentreference"/>
       </constraint>
       <mustSupport value="true"/>
@@ -3307,9 +3307,9 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
       <max value="1"/>
       <constraint>
         <key value="constr-bind-category"/>
-        <severity value="error"/>
+        <severity value="warning"/>
         <human value="Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :&#xA;-&#x9;TRE_A03-ClasseDocument-CISIS, OID : 1.2.250.1.213.1.1.4.1&#xA;-&#x9;TRE_A10-NomenclatureURN, OID : URN&#xA;Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J57-ClassCode-DMP).&#xA;En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J06-XdsClassCode-CISIS peut être utilisé."/>
-        <expression value="f:category"/>
+        <xpath value="f:category"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-documentreference"/>
       </constraint>
       <mustSupport value="true"/>
@@ -3354,9 +3354,9 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
       <short value="Contient les informations définissant le niveau de confidentialité d'un document."/>
       <constraint>
         <key value="constr-bind-securityLabel"/>
-        <severity value="error"/>
+        <severity value="warning"/>
         <human value="Les codes pour cet élément doivent provenir du ValueSet spécifié par le standard. Lorsqu’aucun code ne correspond au concept recherché, un code provenant de la terminologie de référence TRE_A07-StatusVisibiliteDocument, OID : 1.2.250.1.213.1.1.4.13 peut être utilisé."/>
-        <expression value="f:securityLabel"/>
+        <xpath value="f:securityLabel"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-documentreference"/>
       </constraint>
       <mustSupport value="true"/>
@@ -3408,9 +3408,9 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
       <short value="Format technique détaillé du document."/>
       <constraint>
         <key value="constr-bind-format"/>
-        <severity value="error"/>
+        <severity value="warning"/>
         <human value="Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :&#xA;- TRE_A06-FormatCodeComplementaire, OID : 1.2.250.1.213.1.1.4.2.282&#xA;- TRE_A11-IheFormatCode, OID : 1.3.6.1.4.1.19376.1.2.3&#xA;- TRE_A09-DICOMuidRegistry, OID : 1.2.840.10008.2.6.1&#xA;- TRE_A10-NomenclatureURN, OID : URN&#xA;Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J60-FormatCode-DMP).&#xA;En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J10-XdsFormatCode-CISIS peut être utilisé."/>
-        <expression value="f:content/f:format"/>
+        <xpath value="f:content/f:format"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-documentreference"/>
       </constraint>
       <mustSupport value="true"/>
@@ -3429,9 +3429,9 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
       <max value="1"/>
       <constraint>
         <key value="constr-bind-context-event"/>
-        <severity value="error"/>
+        <severity value="warning"/>
         <human value="Nomenclatures utilisées :&#xA;- CCAM pour les actes médicaux (OID=&quot;1.2.250.1.213.2.5&quot;);&#xA;- CIM-10 pour les diagnostics de pathologie (OID=&quot;2.16.840.1.113883.6.3&quot;).&#xA;- TRE_A00-ProducteurDocNonPS pour les documents d'expression personnelle du patient."/>
-        <expression value="f:context/f:event"/>
+        <xpath value="f:context/f:event"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-documentreference"/>
       </constraint>
     </element>
@@ -3444,9 +3444,9 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
       <short value="Secteur d'activité lié à la prise en charge de la personne, en lien avec le document produit."/>
       <constraint>
         <key value="constr-bind-ProducteurDoc-simplified"/>
-        <severity value="error"/>
+        <severity value="warning"/>
         <human value="L’utilisation de cette nomenclature est recommandée mais non obligatoire (prefered) :&#xA;-&#x9;TRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 (lorsque l’auteur du document est un professionnel ou un équipement sous sa responsabilité)&#xA;Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J61-HealthcareFacilityTypeCode-DMP).&#xA;En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-XdsHealthcareFacilityTypeCode-CISIS peut être utilisé."/>
-        <expression value="f:context/f:practiceSetting or f:context/f:facilityType"/>
+        <xpath value="f:context/f:practiceSetting or f:context/f:facilityType"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-documentreference"/>
       </constraint>
       <mustSupport value="true"/>
@@ -3460,9 +3460,9 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
       <short value="Cadre d’exercice de l’acte qui a engendré la création du document."/>
       <constraint>
         <key value="constr-bind-ProducteurDoc-simplified"/>
-        <severity value="error"/>
+        <severity value="warning"/>
         <human value="L’utilisation de cette nomenclature est recommandée mais non obligatoire (prefered) :&#xA;-&#x9;TRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 (lorsque l’auteur du document est un professionnel ou un équipement sous sa responsabilité)&#xA;Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J61-HealthcareFacilityTypeCode-DMP).&#xA;En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-XdsHealthcareFacilityTypeCode-CISIS peut être utilisé."/>
-        <expression value="f:context/f:practiceSetting or f:context/f:facilityType"/>
+        <xpath value="f:context/f:practiceSetting or f:context/f:facilityType"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-documentreference"/>
       </constraint>
       <mustSupport value="true"/>
