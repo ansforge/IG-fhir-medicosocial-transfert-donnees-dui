@@ -305,7 +305,7 @@
         
           Draft
           
-            as of 2023-12-13
+            as of 2024-02-12
           
         
       </td>
@@ -323,7 +323,7 @@
 
 
 
-  <pre class="xml" style="white-space: pre; overflow: hidden"><code>
+  <pre class="xml" style="white-space: pre; text-wrap: nowrap;"><code style="white-space: pre; text-wrap: nowrap;">
 
 &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition">StructureDefinition</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;tddui-bundle&quot;/&gt;
@@ -344,7 +344,7 @@
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;TDDUIBundle&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;TDDUI Bundle&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2023-12-13T15:28:34+00:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2024-02-12T12:57:06+00:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ANS&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ANS&quot;/&gt;
@@ -953,8 +953,7 @@ This specification defines some specific uses of Bundle.link for [searching](htt
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;extension.exists() != value.exists()&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>
                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
-                <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/DomainResource&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Element&quot;/&gt;
       &lt;/constraint&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
@@ -1006,8 +1005,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;extension.exists() != value.exists()&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>
                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
-                <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/DomainResource&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Element&quot;/&gt;
       &lt;/constraint&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">isModifierReason</a>
@@ -1227,8 +1225,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;extension.exists() != value.exists()&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>
                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
-                <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/DomainResource&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Element&quot;/&gt;
       &lt;/constraint&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
@@ -1280,8 +1277,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;extension.exists() != value.exists()&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>
                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
-                <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/DomainResource&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Element&quot;/&gt;
       &lt;/constraint&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">isModifierReason</a>
@@ -1480,8 +1476,7 @@ Note that the fullUrl is not the same as the canonical URL - it's an absolute ur
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;extension.exists() != value.exists()&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>
                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
-                <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/DomainResource&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Element&quot;/&gt;
       &lt;/constraint&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
@@ -1533,8 +1528,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;extension.exists() != value.exists()&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>
                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
-                <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/DomainResource&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Element&quot;/&gt;
       &lt;/constraint&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">isModifierReason</a>
@@ -1739,8 +1733,7 @@ See [Patient Match](http://hl7.org/fhir/R4/patient-operation-match.html) for the
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;extension.exists() != value.exists()&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>
                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
-                <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/DomainResource&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Element&quot;/&gt;
       &lt;/constraint&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
@@ -1792,8 +1785,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;extension.exists() != value.exists()&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>
                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
-                <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/DomainResource&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Element&quot;/&gt;
       &lt;/constraint&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">isModifierReason</a>
@@ -2121,8 +2113,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;extension.exists() != value.exists()&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>
                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
-                <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/DomainResource&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Element&quot;/&gt;
       &lt;/constraint&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
@@ -2174,8 +2165,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;extension.exists() != value.exists()&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>
                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
-                <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/DomainResource&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Element&quot;/&gt;
       &lt;/constraint&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">isModifierReason</a>
@@ -2479,8 +2469,7 @@ This outcome is not used for error responses in batch/transaction, only for hint
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;extension.exists() != value.exists()&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>
                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
-                <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/DomainResource&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Element&quot;/&gt;
       &lt;/constraint&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
@@ -2532,8 +2521,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;extension.exists() != value.exists()&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>
                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
-                <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/DomainResource&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Element&quot;/&gt;
       &lt;/constraint&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">isModifierReason</a>
@@ -2815,8 +2803,7 @@ Note that the fullUrl is not the same as the canonical URL - it's an absolute ur
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;extension.exists() != value.exists()&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>
                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
-                <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/DomainResource&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Element&quot;/&gt;
       &lt;/constraint&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
@@ -2868,8 +2855,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;extension.exists() != value.exists()&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>
                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
-                <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/DomainResource&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Element&quot;/&gt;
       &lt;/constraint&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">isModifierReason</a>
@@ -3074,8 +3060,7 @@ See [Patient Match](http://hl7.org/fhir/R4/patient-operation-match.html) for the
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;extension.exists() != value.exists()&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>
                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
-                <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/DomainResource&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Element&quot;/&gt;
       &lt;/constraint&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
@@ -3128,8 +3113,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;extension.exists() != value.exists()&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>
                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
-                <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/DomainResource&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Element&quot;/&gt;
       &lt;/constraint&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">isModifierReason</a>
@@ -3458,8 +3442,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;extension.exists() != value.exists()&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>
                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
-                <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/DomainResource&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Element&quot;/&gt;
       &lt;/constraint&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
@@ -3512,8 +3495,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;extension.exists() != value.exists()&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>
                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
-                <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/DomainResource&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Element&quot;/&gt;
       &lt;/constraint&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">isModifierReason</a>
@@ -3848,7 +3830,7 @@ This outcome is not used for error responses in batch/transaction, only for hint
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Dec 13, 2023 15:28+0000">2023-12-13</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Feb 12, 2024 12:57+0000">2024-02-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
