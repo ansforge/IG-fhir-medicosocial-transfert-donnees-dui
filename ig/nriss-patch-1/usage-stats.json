@@ -1,21 +1,20 @@
 {
   "package": "ans.fhir.fr.tddui",
-  "version": "0.1.0",
+  "version": "1.0.0-ballot",
   "fhirVersion": "4.0.1",
-  "extensions": [
-    {
-      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/EyeColor",
-      "title": "EyeColor",
-      "types": [
-        "CodeableConcept"
-      ]
-    }
-  ],
+  "jurisdiction": "FR",
+  "extensions": [],
   "profiles": {
-    "Patient": [
+    "Bundle": [
       {
-        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/fr-patient",
-        "title": "Patient français"
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle",
+        "title": "TDDUI Bundle"
+      }
+    ],
+    "DocumentReference": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-documentreference",
+        "title": "TDDUI Document Reference"
       }
     ]
   },
@@ -29,19 +28,13 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
       "StructureDefinition.snapshot.element.binding"
     ],
-    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
-      "StructureDefinition.snapshot.element.binding"
-    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
     ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
       "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
-      "StructureDefinition.snapshot.element.type"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version": [
@@ -66,9 +59,6 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
-    ],
-    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/EyeColor": [
-      "Patient"
     ]
   }
 }
