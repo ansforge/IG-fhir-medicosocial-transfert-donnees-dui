@@ -254,30 +254,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </ul>
 
 </div>
-<p>Les groupes de processus « Transfert de données DUI » et « Suivi des décisions d’orientation » comprennent les différents processus permettant à un logiciel DUI d’échanger de l’information pour suivre le parcours de vie d’un usager.</p>
+<p>Les groupes de processus « Transfert des données d’un logiciel DUI » et « Suivi des décisions d’orientation » comprennent les différents processus permettant à un logiciel DUI d’échanger de l’information pour suivre le parcours de vie d’un usager.</p>
 
-<object data="contexte_metier.svg" style="width:100%" type="image/svg+xml"></object>
+<!-- object data="contexte_metier.svg"  style="width:100%" type="image/svg+xml"></object -->
+<!-- commande pour insérer un fichier plantuml dans un fichier .md -->
+<div style="text-align:center;"><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="206px" preserveAspectRatio="none" style="width:303px;height:206px;background:#FFFFFF;" version="1.1" viewBox="0 0 303 206" width="303px" zoomAndPan="magnify"><defs /><g><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="261" x="5" y="19">Dot Executable: /opt/local/bin/dot</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="237" x="5" y="35.2969">Dot executable does not exist</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="291" x="5" y="51.5938">Cannot find Graphviz. You should try</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="5" x="5" y="67.8906">&#160;</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="79" x="5" y="84.1875">@startuml</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="57" x="5" y="100.4844">testdot</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="72" x="5" y="116.7813">@enduml</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="5" x="5" y="133.0781">&#160;</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="17" x="10" y="149.375">or</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="5" x="5" y="165.6719">&#160;</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="227" x="5" y="181.9688">java -jar plantuml.jar -testdot</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="5" x="5" y="198.2656">&#160;</text></g></svg></div>
 
 <p>Le périmètre de l’étude englobe les processus en bleu sur le diagramme de paquetage.</p>
 
 <h3 id="transférer-des-données-dui">Transférer des données DUI</h3>
 
-<p>Le groupe de processus « Transférer des données DUI » comprend 2 sous-groupes de processus :</p>
-
-<ol>
-  <li>Le groupe « Portabilité des données DUI » qui comprend lui-même :
-    <ul>
-      <li>Le processus « Changer de logiciel métier ». Ce processus décrit le transfert de données d’un usager d’un DUI à un autre au sein d’un même ESSMS.</li>
-      <li>Le processus « Changer d’ESSMS ». Ce processus est relatif au transfert de données de l’usager depuis le DUI de l’ESSMS d’origine vers le DUI de l’ESSMS d’accueil, dans le cas d’un déménagement.</li>
-    </ul>
-  </li>
-  <li>Le groupe de processus « Transférer des données DUI vers un SI tiers » qui comprend lui-même:
-    <ul>
-      <li>Le processus « Transférer des données DUI vers SIDOBA ». Ce processus décrit le transfert de données à des fins de pilotage ou de financement vers le système d’information de la CNSA, SIDOBA.</li>
-      <li>Le groupe de processus « Transférer des données DUI vers d’autres SI ». Ce processus couvre les échanges entre un ESSMS et d’autres SI que celui de la CNSA, telles que des plateformes de recherche, des plateformes de pilotage, ou autre système d’information d’institutions judiciaires ou scolaires. <strong>Ce processus ne sera pas couvert dans ce volet.</strong></li>
-    </ul>
-  </li>
-</ol>
+<p>Le groupe de processus « Transfertérer des données d’un logiciel DUI » comprend le sous-groupe de processus « Export des données d’un logiciel DUI ». Ce processus décrit l’export des données d’un logiciel DUI vers un système cible (ou consommateur) dont le rôle est de réceptionner et d’importer les données dans son système (DUI ou SI-tiers).</p>
 
 <h3 id="suivi-des-décisions-dorientation">Suivi des décisions d’orientation</h3>
 
@@ -288,7 +275,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </ul>
 
 <p><strong>Ces groupes de processus n’entrent pas dans le périmètre de cette étude. Ils ont fait l’objet de volets dédiés « SI-MDPH - SI-SdO » et « SI-ESSMS – Via Trajectoire module PH », respectivement publiés par la CNSA et l’ANS.</strong></p>
-
 
 
 
@@ -336,7 +322,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Feb 12, 2024 12:59+0000">2024-02-12</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Feb 12, 2024 14:31+0000">2024-02-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
