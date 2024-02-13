@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Cadre juridique et orientations organisationnelles - Médicosocial - Transfert de données DUI v1.0.0-ballot</title>
+    <title>Cadre juridique et orientations organisationnelles - Médicosocial - Transfert de données DUI v1.0.1-ballot</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -56,7 +56,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Médicosocial - Transfert de données DUI</span>
             <br/>
-            <span style="display:inline-block;">1.0.0-ballot - STU1
+            <span style="display:inline-block;">1.0.1-ballot - STU1
 
 
 
@@ -231,7 +231,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Médicosocial - Transfert de données DUI - Local Development build (v1.0.0-ballot) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://interop.esante.gouv.fr/ig/fhir/tddui/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Médicosocial - Transfert de données DUI - Local Development build (v1.0.1-ballot) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://interop.esante.gouv.fr/ig/fhir/tddui/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Cadre juridique et orientations organisationnelles</h2>
   
 
@@ -257,19 +257,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Une modélisation plus large et non détaillée du reste des données liées à l’accompagnement, des données médicales et des données liées à la coordination des différents acteurs.</li>
 </ul>
 
-<p>Une version mise à jour de cette spécification sera publiée a posteriori afin d’y intégrer la modélisation et description détaillée de l’ensemble des données liées à l’accompagnement, des données médicales et des données liées à la coordination des différents acteurs.</p>
+<p>Une version de cette spécification sera publiée a posteriori afin d’y intégrer la modélisation et la description détaillée de l’ensemble des données liées à l’accompagnement, aux données médicales et aux données liées à la coordination des différents acteurs.</p>
 
 <p>A noter que les spécifications fonctionnelles de contenu sont des spécifications d’interopérabilité qui n’ont ni vocation à définir la structure interne et l’urbanisation des systèmes d’information, ni vocation à aborder la gestion des habilitations au sein des acteurs. Cette gestion des habilitations doit faire l’objet d’une étude préalable avant toute implémentation de ces interfaces dans le respect du cadre réglementaire de l’échange et du partage de données de santé.</p>
 
 <p>Par ailleurs, les contraintes de sécurité concernant les flux échangés ne sont pas traités dans ce document. En effet, les aspects relatifs à la sécurité sont du ressort du système d’information qui les implémentent.</p>
 
-<p>Le détail des échanges entre les acteurs sera quant à lui décrit dans une documentation dédiée.</p>
+<p>Le détail des échanges entre les acteurs est quant à lui décrit dans la partie dédiée aux flux.</p>
 
 <h3 id="exemples-de-cas-dusage">Exemples de cas d’usage</h3>
 
-<p>Les cas d’usage décrits ci-dessous correspondent à ceux pour lesquels le périmètre est défini.La description est à titre d’illustration et n’exclut pas d’autres cas d’usage.
-Les cas d’usage doivent s’appuyer sur une assise juridique afin de légitimer le transfert des données notamment si ce dernier comporte des données personnelles ou médicales. Cet aspect est de la responsabilité des acteurs qui utilisent la spécification. Cette dernière n’a pas vocation à légitimer les traitements des données.
-Au fur et à mesure des besoins, cette liste sera enrichie.
+<p>Les cas d’usage décrits ci-dessous correspondent à ceux pour lesquels le périmètre a été défini, ce qui n’exclut pas d’ajouter d’autres cas d’usage au fur et à mesure des besoins.
 Pour illustration, les cas d’usage suivants ont été identifiés :</p>
 <ul>
   <li>Transférer les données d’un DUI pour répondre aux besoins d’un usager (changement d’ESSMS par exemple).</li>
@@ -280,6 +278,8 @@ Pour illustration, les cas d’usage suivants ont été identifiés :</p>
     </ul>
   </li>
 </ul>
+
+<p>Les cas d’usage doivent s’appuyer sur une assise juridique afin de légitimer le transfert des données notamment si ce dernier comporte des données personnelles ou médicales. Cet aspect est de la responsabilité des acteurs qui utilisent cette spécification. Cette dernière n’a pas vocation à légitimer les traitements des données.</p>
 
 
 
@@ -327,7 +327,7 @@ Pour illustration, les cas d’usage suivants ont été identifiés :</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Feb 12, 2024 16:43+0000">2024-02-12</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.0.1-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 13, 2024 13:14+0000">2024-02-13</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
