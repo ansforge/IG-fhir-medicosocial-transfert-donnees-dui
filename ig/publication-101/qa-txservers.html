@@ -11,7 +11,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Terminology Server Report for TDDUI</h1>
- <p>Generated Fri Mar 29 09:07:03 UTC 2024, FHIR version 4.0.1 for ans.fhir.fr.tddui#1.0.1 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/tddui">https://interop.esante.gouv.fr/ig/fhir/tddui</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/tddui/history.html">history</a>))</p>
+ <p>Generated Fri Mar 29 13:28:26 UTC 2024, FHIR version 4.0.1 for ans.fhir.fr.tddui#1.0.1 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/tddui">https://interop.esante.gouv.fr/ig/fhir/tddui</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/tddui/history.html">history</a>))</p>
 <p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
 <h2>Terminology Parameters</h2>
 <ul>
@@ -24,20 +24,9 @@
 <ul>
   <li>Request for system [https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc] not handled by any servers. Using master @ 'http://tx.fhir.org/r4'</li>
   <li>Request for system [https://mos.esante.gouv.fr/NOS/TRE_A03-ClasseDocument/FHIR/TRE-A03-ClasseDocument] not handled by any servers. Using master @ 'http://tx.fhir.org/r4'</li>
-  <li>Request for system [urn:iso:std:iso:3166] not handled by any servers. Using master @ 'http://tx.fhir.org/r4'</li>
-  <li>http://hl7.org/fhir/ValueSet/jurisdiction--0|4.0.1 uses the system [urn:iso:std:iso:3166] not handled by any servers. Using master @ 'http://tx.fhir.org/r4'</li>
-  <li>http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1 includes multiple systems [http://unstats.un.org/unsd/methods/m49/m49.htm, urn:iso:std:iso:3166, urn:iso:std:iso:3166:-2] best handled by multiple servers: [auth = , candidates=, auth = , candidates=, auth = , candidates=]. Using master @ 'http://tx.fhir.org/r4'</li>
-  <li>urn:uuid:94293933-8784-490c-b746-fdac96e8743a uses the system [urn:ietf:bcp:13] not handled by any servers. Using master @ 'http://tx.fhir.org/r4'</li>
-  <li>http://hl7.org/fhir/ValueSet/mimetypes|4.0.1 uses the system [urn:ietf:bcp:13] not handled by any servers. Using master @ 'http://tx.fhir.org/r4'</li>
-  <li>Request for system [urn:iso:std:iso:3166] not handled by any servers. Using master @ 'http://tx.fhir.org/r4'</li>
-  <li>http://hl7.org/fhir/ValueSet/jurisdiction--0|4.0.1 uses the system [urn:iso:std:iso:3166] not handled by any servers. Using master @ 'http://tx.fhir.org/r4'</li>
-  <li>null uses the system [urn:iso:std:iso:3166] not handled by any servers. Using master @ 'http://tx.fhir.org/r4'</li>
-  <li>null uses the system [urn:iso:std:iso:3166] not handled by any servers. Using master @ 'http://tx.fhir.org/r4'</li>
-  <li>null uses the system [urn:iso:std:iso:3166] not handled by any servers. Using master @ 'http://tx.fhir.org/r4'</li>
-  <li>null uses the system [urn:iso:std:iso:3166:-2] not handled by any servers. Using master @ 'http://tx.fhir.org/r4'</li>
 </ul>
 <h2>Primary Server: http://tx.fhir.org/r4</h2>
-<p>Use Count: 13. Code Systems used: </p>
+<p>Use Count: 14. Code Systems used: </p>
 <table class="grid">
   <tr>
     <th>
@@ -52,6 +41,14 @@
     <th>
       <b>Details</b>
     </th>
+  </tr>
+  <tr>
+    <td>http://loinc.org</td>
+    <td>0</td>
+    <td>1</td>
+    <td>
+      <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-loinc.html">Logical Observation Identifiers, Names and Codes (LOINC)</a>
+    </td>
   </tr>
   <tr>
     <td>http://unstats.un.org/unsd/methods/m49/m49.htm</td>
@@ -91,32 +88,6 @@
     <td>1</td>
     <td>
       <a href="http://terminology.hl7.org/5.3.0/CodeSystem-ISO3166Part2.html">ISO 3166 Part 2 Country Subdivision Codes</a>
-    </td>
-  </tr>
-</table>
-<h2>Server: https://tx.ontoserver.csiro.au/fhir</h2>
-<p>Use Count: 1. Code Systems used: </p>
-<table class="grid">
-  <tr>
-    <th>
-      <b>System</b>
-    </th>
-    <th>
-      <b>#Exp.</b>
-    </th>
-    <th>
-      <b>#Val.</b>
-    </th>
-    <th>
-      <b>Details</b>
-    </th>
-  </tr>
-  <tr>
-    <td>http://loinc.org</td>
-    <td>0</td>
-    <td>1</td>
-    <td>
-      <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-loinc.html">Logical Observation Identifiers, Names and Codes (LOINC)</a>
     </td>
   </tr>
 </table>
