@@ -243,17 +243,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div>
 <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
-<p>Cette section présente la structure générale des données de l’usager organisées en entête et corps.</p>
-
-<p>Les éléments apparaissant en <red>rouge</red> correspondent aux règles spécifiques à mettre en place.</p>
-
-<p>Les éléments en <i><u>italique soulignés</u></i> correspondent aux cardinalités de base de CDA contraintes pour ce volet.</p>
-
-<p>Les éléments imposés par le standard CDA ou le CI-SIS sont indiqués par « <strong>X</strong> » dans la colonne « <strong>Elément de la spécification Fonctionnelle de Contenu</strong> (SFC) ».</p>
-
 <style>
 
-	<!-- Propriétés de style générales (taille, couleurs et police de texte, bordures) -->
+	<!-- Propriétés de style générales (taille, couleurs et police de texte, bordures) du tableau -->
 	table {
 		width: 101%;
 		border-collapse: collapse;
@@ -271,7 +263,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 		color: #c00000
 	}
 
-	<!-- Propriétés spécifiques à des lignes ou des colonnes (fond de couleur, centrage) -->
+	<!-- Propriétés spécifiques à des lignes ou des colonnes de tableau (fond de couleur, centrage) -->
 	#cda td:nth-child(2),
 	#cda td:nth-child(3),
 	#cda td:nth-child(4),
@@ -300,6 +292,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 	}
 
 </style>
+
+<p>Cette section présente la structure générale des données de l’usager organisées en entête et corps.</p>
+
+<p>Les éléments apparaissant en <red>rouge</red> correspondent aux règles spécifiques à mettre en place.</p>
+
+<p>Les éléments en <i><u>italique soulignés</u></i> correspondent aux cardinalités de base de CDA contraintes pour ce volet.</p>
+
+<p>Les éléments imposés par le standard CDA ou le CI-SIS sont indiqués par « <strong>X</strong> » dans la colonne « <strong>Elément de la spécification Fonctionnelle de Contenu</strong> (SFC) ».</p>
 
 <table id="cda">
 	<thead>
@@ -389,7 +389,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 			<p><red>@code = Code issu du <a href="https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/JDV_J07-XdsTypeCode-CISIS.pdf">JDV_J07-XdsTypeCode-CISIS</a> fixé à « EXPPAT_2 »
 			<br />@displayName = « Autre document du patient »
 			<br />@codeSystem = 1.2.250.1.213.1.1.4.12</red></p></td>
-		</tr>https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/
+		</tr>
 		<tr>
 			<td>1</td>
 			<td>title</td>
@@ -415,7 +415,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 			<td>[1..1]</td>
 			<td>X</td>
 			<td><p><strong>Niveau de confidentialité du document.</strong>
-			<br />Code issu du <a href="https://o3sis.esante.gouv.fr/art-decor/decor-valuesets--CI-SIS-JDV-?id=2.16.840.1.113883.1.11.10228&amp;effectiveDate=2021-03-15T00:00:00&amp;language=fr-FR">JDV_HL7_Confidentiality-CISIS</a></p>
+			<br />Code issu du JDV_HL7_Confidentiality-CISIS</p>
 			<p><red>@code = Valeur fixée à : « N »
 			<br />@codeSystem = 2.16.840.1.113883.5.25 
 			<br />@displayName = « Normal »</red></p></td>
@@ -515,7 +515,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 			<td>component</td>
 			<td></td>
 			<td>[1..1]</td>
-			<td></td>
+			<td>X</td>
 			<td>Représente le corps du document CDA</td>
 		</tr>
 		<tr>
@@ -647,7 +647,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 6, 2024 14:52+0000">2024-06-06</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 6, 2024 15:25+0000">2024-06-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
