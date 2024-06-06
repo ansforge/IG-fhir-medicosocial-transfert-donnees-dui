@@ -245,13 +245,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div>
 <p>Cette section présente la structure générale des données de l’usager organisées en entête et corps.</p>
 
-<p>Les éléments apparaissant en <strong><span style="color: #3498db">gras de couleur bleu</span></strong> correspondent à des extensions définies dans le cadre de cette spécification technique afin de couvrir le besoin.</p>
-
-<p>Les éléments apparaissant en <span style="color: #C00000">rouge</span> correspondent aux règles spécifiques à mettre en place.</p>
+<p>Les éléments apparaissant en <red>rouge</red> correspondent aux règles spécifiques à mettre en place.</p>
 
 <p>Les éléments en <i><u>italique soulignés</u></i> correspondent aux cardinalités de base de CDA contraintes pour ce volet.</p>
 
-<p>Les éléments imposés par CDA sont indiqués par « <strong>X</strong> » dans la colonne « <strong>Elément de la spécification Fonctionnelle de Contenu</strong> (SFC) ».</p>
+<p>Les éléments imposés par le standard CDA ou le CI-SIS sont indiqués par « <strong>X</strong> » dans la colonne « <strong>Elément de la spécification Fonctionnelle de Contenu</strong> (SFC) ».</p>
 
 <style>
 
@@ -378,8 +376,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 			<td>[1..1]</td>
 			<td>X</td>
 			<td><p><strong>Identifiant unique du document</strong></p>
-			<p>@root = identifiant du document</p>
-			<p>Il est recommandé de générer une racine d'OID pour chaque ESMS, à partir du générateur <a style="color:#C00000" href="https://www.uuidgenerator.net/version1">https://www.uuidgenerator.net/version1</a><red>. Cet OID devra ensuite être décliné pour identifier de façon unique chaque instance et version des documents de l'émetteur</red></p></td>
+			<p>@root (obligatoire) = valeur de l'OID propre à l'émetteur</p>
+			<p><red>Il est recommandé de générer une racine d'OID pour chaque ESSMS, à partir d'un <a href="https://www.uuidgenerator.net/version1">générateur d'OID</a>. Cet OID devra être converti en majuscule afin de se conformer aux spécifications HL7. Il pourra ensuite être décliné pour identifier de façon unique chaque instance et version des documents de l'émetteur</red></p></td>
 		</tr>
 		<tr>
 			<td>1</td>
@@ -493,6 +491,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 			<td>X</td>
 			<td><strong>Evènement documenté</strong>
 			<br />Le contenu de l'élément est décrit dans la rubrique <a href="contenu_dossier_entete_cda.html#documentationof">documentationOf</a></td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>relatedDocument</td>
+			<td></td>
+			<td>[0..1]</td>
+			<td></td>
+			<td><strong>Document de référence à remplacer, transformer</strong>
+			<br />Le contenu de l'élément est décrit dans la rubrique <a href="contenu_dossier_entete_cda.html#relateddocument">relatedDocument</a></td>
 		</tr>
 		<tr>
 			<td>1</td>
@@ -640,7 +647,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 6, 2024 09:02+0000">2024-06-06</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 6, 2024 14:52+0000">2024-06-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |

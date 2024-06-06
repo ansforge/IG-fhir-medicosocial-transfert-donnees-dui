@@ -247,6 +247,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#custodian" id="markdown-toc-custodian">Custodian</a></li>
   <li><a href="#legalauthentificator" id="markdown-toc-legalauthentificator">LegalAuthentificator</a></li>
   <li><a href="#documentationof" id="markdown-toc-documentationof">DocumentationOf</a></li>
+  <li><a href="#relateddocument" id="markdown-toc-relateddocument">relatedDocument</a></li>
   <li><a href="#componentof" id="markdown-toc-componentof">ComponentOf</a></li>
   <li><a href="#adresse" id="markdown-toc-adresse">Adresse</a></li>
   <li><a href="#annexes" id="markdown-toc-annexes">Annexes</a></li>
@@ -1253,9 +1254,72 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 	</tbody>
 </table>
 
+<h3 id="relateddocument">relatedDocument</h3>
+
+<p>L’élément relatedDocument est facultatif car le document peut être initial. Dans le cas où il s’agit d’une nouvelle version d’un document existant, le document à remplacer doit être identifier et l’élément relatedDocument devient obligatoire.</p>
+
+<table id="cda">
+	<thead>
+		<tr>
+			<th>Niv.</th>
+			<th>Elément XML</th>
+			<th>Type</th>
+			<th>Card.</th>
+			<th>Elément de la SFC</th>
+			<th>Contenu de l'élément CDA</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr id="line1">
+			<td>0</td>
+			<td>relatedDocument</td>
+			<td></td>
+			<td>[0..1]</td>
+			<td></td>
+			<td><strong>Document de référence</strong></td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>@typeCode</td>
+			<td>cs</td>
+			<td>[1..1]</td>
+			<td></td>
+			<td><b>"RPLC" pour remplacement</b>
+			<br />Seul le remplacement au sens annulation et remplacement du document référencé par la version courante du document est autorisé.
+			<br /><b>"XFRM" pour transformation</b>
+			<br />La relation est portée par le document CDA transformé (et pas par le document de référence).</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>parentDocument</td>
+			<td></td>
+			<td>[1..1]</td>
+			<td></td>
+			<td><strong>Document de référence</strong>
+			<br /><red>Attribut nullFlavor interdit</red></td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>id</td>
+			<td>II</td>
+			<td>[1..1]</td>
+			<td></td>
+			<td>Identifiant unique du document de référence</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>@root</td>
+			<td>uid</td>
+			<td>[1..1]</td>
+			<td></td>
+			<td>Valeur de l'OID du document de référence</td>
+		</tr>		
+	</tbody>
+</table>
+
 <h3 id="componentof">ComponentOf</h3>
 
-<p>L’élément <a href="https://o3sis.esante.gouv.fr/art-decor/decor-templates--ASIP-STRUCT-MIN-?section=templates&amp;id=1.2.250.1.213.1.1.1.1.10.2">componentOf</a> imposé par le CDA représente l’association du document « Transfert de données DUI » à une prise en charge.</p>
+<p>L’élément <a href="https://o3sis.esante.gouv.fr/art-decor/decor-templates--ASIP-STRUCT-MIN-?section=templates&amp;id=1.2.250.1.213.1.1.1.1.10.2">componentOf</a> imposé par le CI-SIS représente l’association du document « Transfert de données DUI » à une prise en charge.</p>
 
 <table id="cda">
 	<thead>
@@ -1549,7 +1613,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 6, 2024 09:02+0000">2024-06-06</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 6, 2024 14:52+0000">2024-06-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |

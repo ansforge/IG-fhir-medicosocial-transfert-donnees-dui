@@ -240,61 +240,52 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p>  <!-- white space is critical inside of capture --></p>
-<div class="markdown-toc">
-<ul id="markdown-toc">
-  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
-  <li><a href="#standards-utilisés" id="markdown-toc-standards-utilisés">Standards utilisés</a></li>
-</ul>
-
+<div>
+  <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
 </div>
-<h3 id="introduction">Introduction</h3>
-
-<p>Cette section présente les spécifications techniques du volet « Transfert de données DUI ». Ces dernières spécifient le transfert de données sociales et médico-sociales de l’usager depuis un logiciel DUI entre les Etablissements et Services Médico-Sociaux (ESSMS) et un autre ESSMS ou vers les Systèmes d’Information tiers.
-La production de ce document est basée sur :</p>
+<p>Cette section présente les spécifications techniques de contenu du volet « Transfert de données DUI ». Une mise en correspondance est faite entre :</p>
 <ul>
-  <li><a name="l441">​</a>Les <a href="cadre_orientations.html">Spécifications Fonctionnelles de Contenu v0.4 du volet « Transfert de données DUI »</a>,</li>
-  <li>Le standard <a href="https://www.hl7.org/implement/standards/product_brief.cfm?product_id=496">Clinical Document Architecture R2</a> (CDA) porté par HL7 pour représenter les données présentées dans les Spécifications Fonctionnelles de Contenu v0.4 du volet « Transfert de données DUI ».</li>
-</ul>
-
-<p>Ce volet a pour objectif premier de décrire l’export de données d’usagers depuis des établissements ou services sociaux ou médico-sociaux (ESSMS). Les échanges d’informations se font entre le logiciel de Dossier Usager Informatisé (DUI) d’un ESSMS et un autre logiciel DUI, ou un système d’information tiers.</p>
-
-<p>Dans cette section, une mise en correspondance est faite entre :</p>
-<ul>
-  <li>Les éléments XML proposés par CDA ;</li>
-  <li>Un échantillon de données structurées décrites dans les spécifications fonctionnelles du volet, parmi lesquelles :
+  <li>Les éléments XML proposés par le standard CDA ;</li>
+  <li>Un échantillon de données structurées sélectionné par la CNSA et décrit dans les <a href="sfe.html">spécifications fonctionnelles</a> du volet, parmi lesquelles :
     <ul>
       <li>les données minimales d’identité (identifiant, nom, prénom, date de naissance, lieu de naissance, sexe, ordre de naissance) de la classe Usager ;</li>
-      <li>les données de la classe évaluation.</li>
+      <li>les données d’évaluation incluant grille d’évaluation structurée ou non structurée ;</li>
+      <li>les données d’évènements de l’agenda de l’usager ;</li>
+      <li>les classes séjour et réservation des données administratives de l’usager.</li>
     </ul>
   </li>
 </ul>
 
 <p>Des mises à jour seront proposées pour intégrer progressivement l’ensemble des données décrites dans les spécifications fonctionnelles.</p>
 
-<div style="padding: 5px; border-radius: 5px; border: 2px solid black; width: 65%">
+<div style="padding: 5px; border-radius: 5px; border: 2px solid black; width: 100%">
   Les spécifications techniques sont complétées par : 
   <ul>
-    <li>Des <b><a name="l487">​</a><a href="contenu_dossier.html#nomenclatures">éléments sémantiques</a></b> (jeux de valeurs / terminologies) utilisés pour le codage des éléments métiers ;</li>
-    <li>Des <b><a href="ressources_cda.html#exemples">exemples d'implémentation en CDA R2 niveau 3</a></b> ;</li>
+    <li><a name="l461">​</a>Des <a href="contenu_dossier.html#nomenclatures">éléments sémantiques</a> (jeux de valeurs / terminologies) utilisés pour le codage des éléments métiers ;</li>
+    <li>Des <a href="ressources_cda.html#exemples">exemples</a> d'implémentation en CDA R2 niveau 3 ;</li>
+    <li>Un outil de vérification en ligne (<a href="https://interop.esante.gouv.fr/">Gazelle</a>) de la compatibilité des documents produits.</li>
   </ul>
 </div>
 
-<h3 id="standards-utilisés">Standards utilisés</h3>
+<h3 id="standards-et-spécifications-utilisés">Standards et spécifications utilisés</h3>
 
 <h4 id="ci-sis-hl7-cda-r2-ihe-pcc">CI-SIS, HL7 CDA R2, IHE PCC</h4>
 
-<p>Les données véhiculées dans ce document sont spécifiées dans le format CDA R2 niveau 3, standard identifié dans l’étude des normes et standard réalisée pour ce volet. Les modèles proposés seront disponibles sur la plateforme <a href="https://o3sis.esante.gouv.fr/art-decor/home">ART-DECOR</a> de l’ANS.</p>
+<p>Les données véhiculées dans ce document sont spécifiées dans le format <a href="https://www.hl7.org/implement/standards/product_brief.cfm?product_id=496">CDA R2 niveau 3</a>, standard identifié dans l’<a href="NormesStandards_TransfertDonneesDUI_V1.0.pdf">étude des normes et standards</a> réalisée pour ce volet.</p>
 
 <p>Cette spécification est organisée en entête, sections, entrées et nomenclatures (jeux de valeurs) et est conforme aux spécifications techniques :</p>
 <ul>
   <li>du <strong>Cadre d’Interopérabilité des Systèmes d’Information de Santé</strong> (CI-SIS) de l’ANS, en particulier :
     <ul>
-      <li>le <a href="https://esante.gouv.fr/volet-structuration-minimale-de-documents-de-sante">CI-SIS – Volet Structuration Minimale de Documents de Santé</a> qui spécifie l’ensemble des données minimales de l’en-tête des documents médicaux de santé. Ce volet s’appuie lui-même sur le standard CDA.</li>
-      <li>le <a href="https://esante.gouv.fr/volet-de-reference-modeles-de-contenus-cda">CI-SIS – Volet Modèles de Contenu CDA</a> de la couche Contenus qui spécifie l’ensemble des Section et Entrées utilisées dans le corps du document.</li>
+      <li>le <a href="https://esante.gouv.fr/volet-structuration-minimale-de-documents-de-sante">Volet Structuration Minimale de Documents de Santé</a> qui spécifie l’ensemble des données minimales de l’en-tête des documents médicaux de santé, au format CDA ;</li>
+      <li>le <a href="https://esante.gouv.fr/volet-de-reference-modeles-de-contenus-cda">Volet Modèles de Contenu CDA</a> qui spécifie l’ensemble des sections et entrées utilisées dans le corps du document.</li>
     </ul>
   </li>
   <li>du domaine international <a href="https://www.ihe.net/uploadedFiles/Documents/PCC/IHE_PCC_TF_Vol2.pdf">IHE Patient Care Coordination</a> (PCC).</li>
 </ul>
+
+<p><em>Le présent document ne présente que les contraintes spécifiques au volet TDDUI.</em>
+<em>Il ne reprend pas, sauf si une clarification s’avère nécessaire, les définitions établies dans les standards cités ci-dessus.</em></p>
 
 <h4 id="document-cda-à-corps-structuré">Document CDA à corps structuré</h4>
 
@@ -304,15 +295,15 @@ La production de ce document est basée sur :</p>
 
 <h4 id="types-des-données-essentielles">Types des données essentielles</h4>
 
-<p><em>Voir Volet <a href="https://esante.gouv.fr/volet-de-reference-modeles-de-contenus-cda">Volet Modèles de contenus</a> CDA version v3.3, paragraphe “Types de données essentielles”.</em></p>
+<p><em>Voir <a href="https://esante.gouv.fr/volet-de-reference-modeles-de-contenus-cda">Volet Modèles de contenus</a> CDA version v3.3, paragraphe “Types de données essentielles”.</em></p>
 
 <h4 id="cardinalités">Cardinalités</h4>
 
-<p><em>Voir Volet <a href="https://esante.gouv.fr/volet-de-reference-modeles-de-contenus-cda">Volet Modèles de contenus</a> CDA version v3.3, paragraphe “Cardinalités”.</em></p>
+<p><em>Voir <a href="https://esante.gouv.fr/volet-de-reference-modeles-de-contenus-cda">Volet Modèles de contenus</a> CDA version v3.3, paragraphe “Cardinalités”.</em></p>
 
 <h4 id="nullflavor">nullFlavor</h4>
 
-<p><em>Voir Volet <a href="https://esante.gouv.fr/volet-de-reference-modeles-de-contenus-cda">Volet Modèles de contenus</a> CDA version v3.3, paragraphe “nullFlavor”.</em></p>
+<p><em>Voir <a href="https://esante.gouv.fr/volet-de-reference-modeles-de-contenus-cda">Volet Modèles de contenus</a> CDA version v3.3, paragraphe “nullFlavor”.</em></p>
 
 <h4 id="éléments-narratifs-référencés-dans-les-entrées">Éléments narratifs référencés dans les entrées</h4>
 
@@ -322,7 +313,7 @@ La production de ce document est basée sur :</p>
 
 <p><em>Voir <a href="https://esante.gouv.fr/volet-de-reference-modeles-de-contenus-cda">Volet Modèles de contenus</a> CDA version v3.3 (paragraphe “Terminologies et jeux de valeurs”).</em></p>
 
-<p>Les terminologies et les jeux de valeurs spécifiques à ce document sont précisés dans les spécifications techniques du modèle de document CDA « Transfert de données DUI » décrit dans ce document.</p>
+<p>Les terminologies et les jeux de valeurs spécifiques à ce volet sont précisés dans la suite des spécifications techniques de contenu.</p>
 
 
 
@@ -365,7 +356,7 @@ La production de ce document est basée sur :</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 6, 2024 09:02+0000">2024-06-06</span>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 6, 2024 14:52+0000">2024-06-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
