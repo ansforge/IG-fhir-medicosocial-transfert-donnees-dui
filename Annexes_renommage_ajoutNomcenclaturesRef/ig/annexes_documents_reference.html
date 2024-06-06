@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Cadre juridique et orientations organisationnelles - Médicosocial - Transfert de données DUI v1.0.1</title>
+    <title>Documents de référence - Médicosocial - Transfert de données DUI v1.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"2.1"}
-    h3,h4,h5,h6{--heading-prefix:"2.1"}</style>
+    <style type="text/css">h2{--heading-prefix:"6.1"}
+    h3,h4,h5,h6{--heading-prefix:"6.1"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -197,15 +197,15 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='sfe.html'><b>Spécifications fonctionnelles</b></a></li><li><b>Cadre juridique et orientations organisationnelles</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='annexes.html'><b>Annexes</b></a></li><li><b>Documents de référence</b></li>
 
           <span style="float:right;">
 
-            <a href="sfe.html">&lt;prev</a> | 
+            <a href="annexes.html">&lt;prev</a> | 
 
             <a href="#bottom">bottom</a>
 
-          | <a href="sfe_organisation_contexte_metier.html">next&gt;</a>
+          | <a href="annexes_nomenclatures.html">next&gt;</a>
 
           </span>
 
@@ -228,7 +228,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </style>
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Médicosocial - Transfert de données DUI - Local Development build (v1.0.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://interop.esante.gouv.fr/ig/fhir/tddui/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-  <h2>Cadre juridique et orientations organisationnelles</h2>
+  <h2>Documents de référence</h2>
   
 
 
@@ -246,36 +246,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div>
 <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
-<p>L’étude menée dans cette version du volet correspond à l’expression des besoins définis lors des ateliers avec la CNSA et enrichis par l’ANS. Elle comprend :</p>
 <ul>
-  <li>Le contexte métier du volet ;</li>
-  <li>Une modélisation et une description détaillée des données administratives, ainsi que les données relatives aux grilles d’évaluations (GIR, GEVA) liées à l’accompagnement de l’usager ;</li>
-  <li>Une modélisation plus large et non détaillée du reste des données liées à l’accompagnement, des données médicales et des données liées à la coordination des différents acteurs.</li>
+  <li><a href="https://esante.gouv.fr/sites/default/files/media_entity/documents/CI-SIS_CONTENU_VOLET-STRUCTURATION-MINIMALE_V1.12_0.pdf">Volet Structuration Minimale de Documents de Santé v1.13</a></li>
+  <li><a href="https://esante.gouv.fr/volet-de-reference-modeles-de-contenus-cda">Volet Modèle de Contenu CDA</a> v3.3</li>
+  <li><a href="https://esante.gouv.fr/annexe-sources-des-donnees-personnes-et-structures">Annexe Transverse – Source des données métier pour les professionnels et les structures</a> v1.5</li>
+  <li><a href="https://industriels.esante.gouv.fr/sites/default/files/media/document/asip_referentiel_identifiant_national_sante-liste-des-oid-des-autorites-d-affectation-des-ins_v0.1.pdf">Référentiel Identifiant national de santé</a> v0.1</li>
+  <li>Le standard <a href="https://www.hl7.org/implement/standards/product_brief.cfm?product_id=496">Clinical Document Architecture R2 (CDA) porté par HL7</a></li>
 </ul>
 
-<p>Une version de cette spécification sera publiée a posteriori afin d’y intégrer la modélisation et la description détaillée de l’ensemble des données liées à l’accompagnement, aux données médicales et aux données liées à la coordination des différents acteurs.</p>
-
-<p>A noter que les spécifications fonctionnelles de contenu sont des spécifications d’interopérabilité qui n’ont ni vocation à définir la structure interne et l’urbanisation des systèmes d’information, ni vocation à aborder la gestion des habilitations au sein des acteurs. Cette gestion des habilitations doit faire l’objet d’une étude préalable avant toute implémentation de ces interfaces dans le respect du cadre réglementaire de l’échange et du partage de données de santé.</p>
-
-<p>Par ailleurs, les contraintes de sécurité concernant les flux échangés ne sont pas traités dans ce document. En effet, les aspects relatifs à la sécurité sont du ressort du système d’information qui les implémentent.</p>
-
-<p>Le détail des échanges entre les acteurs est quant à lui décrit dans la partie dédiée aux flux.</p>
-
-<h3 id="exemples-de-cas-dusage">Exemples de cas d’usage</h3>
-
-<p>Les cas d’usage décrits ci-dessous correspondent à ceux pour lesquels le périmètre a été défini, ce qui n’exclut pas d’ajouter d’autres cas d’usage au fur et à mesure des besoins.
-Pour illustration, les cas d’usage suivants ont été identifiés :</p>
-<ul>
-  <li>Transférer les données d’un DUI pour répondre aux besoins d’un usager (changement d’ESSMS par exemple).</li>
-  <li>Transférer les données d’un DUI pour répondre aux besoins de l’ESSMS :
-    <ul>
-      <li>Permettre une reprise de données lors d‘un changement de logiciel DUI.</li>
-      <li>Transférer des données aux tutelles (CNSA, CNAM, ARS, CD, etc.).</li>
-    </ul>
-  </li>
-</ul>
-
-<p>Les cas d’usage doivent s’appuyer sur une assise juridique afin de légitimer le transfert des données notamment si ce dernier comporte des données personnelles ou médicales. Cet aspect est de la responsabilité des acteurs qui utilisent cette spécification. Cette dernière n’a pas vocation à légitimer les traitements des données.</p>
 
 
 
@@ -299,7 +277,7 @@ Pour illustration, les cas d’usage suivants ont été identifiés :</p>
             <tr>
               <td style="text-align:left">&#xA0;
 
-                <a href="sfe.html">&lt;prev</a>
+                <a href="annexes.html">&lt;prev</a>
 
               </td>
               <td style="text-align:center">
@@ -307,7 +285,7 @@ Pour illustration, les cas d’usage suivants ont été identifiés :</p>
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="sfe_organisation_contexte_metier.html">next&gt;</a>
+                <a href="annexes_nomenclatures.html">next&gt;</a>
 
               </td>
             </tr>
