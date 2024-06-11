@@ -1,13 +1,9 @@
-<!-- get modelType -->
-
-
-
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>TDDUI Bundle - Mappings - Médicosocial - Transfert de données DUI v1.0.1</title>
+    <title>Acronymes - Médicosocial - Transfert de données DUI v1.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -45,8 +41,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"5.2.1"}
-    h3,h4,h5,h6{--heading-prefix:"5.2.1"}</style>
+    <style type="text/css">h2{--heading-prefix:"6.3"}
+    h3,h4,h5,h6{--heading-prefix:"6.3"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -201,15 +197,13 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='ressources_conformite.html'><b>Ressources de conformité</b></a></li><li><a href='artifacts.html'><b>Ressources FHIR</b></a></li><li><b>TDDUI Bundle</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='annexes.html'><b>Annexes</b></a></li><li><b>Acronymes</b></li>
 
           <span style="float:right;">
 
-            <a href="StructureDefinition-tddui-bundle-definitions.html">&lt;prev</a> | 
+            <a href="annexes_nomenclatures.html">&lt;prev</a> | 
 
             <a href="#bottom">bottom</a>
-
-          | <a href="StructureDefinition-tddui-bundle-testing.html">next&gt;</a>
 
           </span>
 
@@ -223,8 +217,16 @@
         <div class="row">
           <div class="inner-wrapper">
 
-<div style="counter-reset: section 5" class="col-12">
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Médicosocial - Transfert de données DUI - Local Development build (v1.0.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://interop.esante.gouv.fr/ig/fhir/tddui/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Acronymes</h2>
   
 
 
@@ -237,202 +239,105 @@
 
 
 
-<ul class="nav nav-tabs">
 
-  <li>
-    <a href="StructureDefinition-tddui-bundle.html">Content</a>
-  </li>
-
-
-
-  <li>
-    <a href="StructureDefinition-tddui-bundle-definitions.html">Detailed Descriptions</a>
-  </li>
-
-
-
-  
-    <li class="active">
-      <a href="#">Mappings</a>
-    </li>
-  
-
-
-
-
-
-
-  
-    
-      <li>
-        <a href="StructureDefinition-tddui-bundle-examples.html">Examples</a>
-      </li>
-    
-  
-
-
-
-
-  
-    <li>
-      <a href="StructureDefinition-tddui-bundle.profile.xml.html">XML</a>
-    </li>
-  
-
-
-  
-    <li>
-      <a href="StructureDefinition-tddui-bundle.profile.json.html">JSON</a>
-    </li>
-  
-
-
-  
-    <li>
-      <a href="StructureDefinition-tddui-bundle.profile.ttl.html">TTL</a>
-    </li>
-  
-
-
-</ul>
-
-
-<a name="root"> </a>
-<h2 id="root">Resource Profile: TDDUIBundle - Mappings</h2>
-
-  <table class="colsi">
-    <tr>
-
-      <td colspan="2">
-        
-          Active
-          
-            as of 2024-06-11
-          
-        
-      </td>
-
-    </tr>
-  </table>
-
-
-<p>Mappings for the tddui-bundle resource profile.</p>
-
-  <!-- insert intro if present -->
-  
-
-
-
-  <a name="v2"> </a><h3>Mappings for HL7 v2 Mapping (<a href="http://hl7.org/comparison-v2.html">http://hl7.org/v2</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>TDDUIBundle</b></td></tr>
- <tr><td>Bundle</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>CX / EI (occasionally, more often EI maps to a resource id or a URL)</td> </tr>
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<table style="width:100%">
+  <tr>
+    <th>Sigle / Acronyme</th>
+    <th>Définition</th>
+  </tr>
+  <tr>
+    <td>ANS</td>
+    <td>L’Agence du Numérique en Santé</td>
+  </tr>
+  <tr>
+    <td>ARS</td>
+    <td>Agence Régionale de Santé</td>
+  </tr>
+  <tr>
+    <td>CDA</td>
+    <td>Clinical Document</td>
+  </tr>
+  <tr>
+    <td>CI-SIS</td>
+    <td>Cadre d’Interopérabilité des Systèmes d’Information de Santé</td>
+  </tr>
+  <tr>
+    <td>CNIL</td>
+    <td>Commission nationale de l'informatique et des libertés</td>
+  </tr>
+  <tr>
+    <td>CNSA</td>
+    <td>Caisse Nationale de Solidarité pour l’Autonomie</td>
+  </tr>
+  <tr>
+    <td>DUI</td>
+    <td>Dossier Usager Informatisé</td>
+  </tr>
+  <tr>
+    <td>DSR</td>
+    <td>Dossier de Spécifications de Référenceement</td>
+  </tr>
+  <tr>
+    <td>ESSMS (ou ESMS)</td>
+    <td>Etablissement et Services sociaux ou Médico-Sociaux</td>
+  </tr>
+  <tr>
+    <td>GIR</td>
+    <td>Groupe Iso-Ressource</td>
+  </tr>
+  <tr>
+    <td>HL7</td>
+    <td>Health Level 7</td>
+  </tr>
+  <tr>
+    <td>INS</td>
+    <td>Identité Nationale de Santé</td>
+  </tr>
+  <tr>
+    <td>IPS</td>
+    <td>International Patient Summary</td>
+  </tr>
+  <tr>
+    <td>MDPH</td>
+    <td>Maison Départementale des Personnes Handicapées</td>
+  </tr>
+  <tr>
+    <td>NIA</td>
+    <td>Numéro d'Immatriculation d'Attente</td>
+  </tr>
+  <tr>
+    <td>NIR</td>
+    <td>Numéro d'Inscription au Répertoire</td>
+  </tr>
+  <tr>
+    <td>RGPD</td>
+    <td>Règlement Général sur la Protection des Données</td>
+  </tr>
+  <tr>
+    <td>SI</td>
+    <td>Système d’Information</td>
+  </tr>
+  <tr>
+    <td>SIDOBA</td>
+    <td>Système d’Information de l’Offre de la Branche Autonomie</td>
+  </tr>
+  <tr>
+    <td>TRE</td>
+    <td>Terminologie de REférence</td>
+  </tr>
+  <tr>
+    <td>JDV</td>
+    <td>Jeu De Valeur</td>
+  </tr>
 </table>
-<a name="rim"> </a><h3>Mappings for RIM Mapping (<a href="http://hl7.org/comparison-v3.html">http://hl7.org/v3</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>TDDUIBundle</b></td></tr>
- <tr><td>Bundle</td><td>Entity. Role, or Act, N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;meta</td><td>n/a, N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;implicitRules</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;language</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>n/a, II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;type</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;timestamp</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;total</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;link</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a, N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>n/a, N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;relation</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;url</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;entry</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a, N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>n/a, N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fullUrl</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resource</td><td>Entity. Role, or Act</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;search</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a, N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>n/a, N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mode</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;request</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a, N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>n/a, N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;method</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;url</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ifNoneMatch</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ifModifiedSince</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ifMatch</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ifNoneExist</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;response</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a, N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>n/a, N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;status</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;location</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;etag</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lastModified</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;outcome</td><td>Entity. Role, or Act</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;entry (DUIDocumentReference)</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a, N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>n/a, N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fullUrl</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resource</td><td>Entity. Role, or Act, Document[classCode=&quot;DOC&quot; and moodCode=&quot;EVN&quot;]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;search</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a, N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>n/a, N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mode</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;request</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a, N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>n/a, N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;method</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;url</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ifNoneMatch</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ifModifiedSince</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ifMatch</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ifNoneExist</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;response</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a, N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>n/a, N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;status</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;location</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;etag</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lastModified</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;outcome</td><td>Entity. Role, or Act</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;signature</td><td>n/a, N/A</td> </tr>
-</table>
-<a name="cda"> </a><h3>Mappings for CDA (R2) (<a href="http://hl7.org/comparison-cda.html">http://hl7.org/v3/cda</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>TDDUIBundle</b></td></tr>
- <tr><td>Bundle</td><td>ClinicalDocument, if bundle.type = document</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>ClinicalDocument.id</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;timestamp</td><td>ClinicalDocument.effectiveTime</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;entry</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;entry (DUIDocumentReference)</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resource</td><td>when describing a CDA</td> </tr>
-</table>
-<a name="w5"> </a><h3>Mappings for FiveWs Pattern Mapping (http://hl7.org/fhir/fivews)</h3><table class="grid">
- <tr><td colspan="3"><b>TDDUIBundle</b></td></tr>
- <tr><td>Bundle</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>FiveWs.identifier</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;type</td><td>FiveWs.class</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;timestamp</td><td>FiveWs.init</td> </tr>
-</table>
-
-
-  <!-- insert notes if present -->
-  
 
 
 
 </div>
-
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
@@ -440,8 +345,6 @@
 
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
-
-  <script type="text/javascript" src="assets/js/tabs.js"> </script>
 
 <script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
@@ -454,7 +357,7 @@
             <tr>
               <td style="text-align:left">&#xA0;
 
-                <a href="StructureDefinition-tddui-bundle-definitions.html">&lt;prev</a>
+                <a href="annexes_nomenclatures.html">&lt;prev</a>
 
               </td>
               <td style="text-align:center">
@@ -462,7 +365,7 @@
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="StructureDefinition-tddui-bundle-testing.html">next&gt;</a>
+                <span style="visibility:hidden">next&gt;</span>
 
               </td>
             </tr>
