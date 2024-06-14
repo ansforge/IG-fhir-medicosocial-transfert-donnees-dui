@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../FeuilleDeStyle/CDA-FO.xsl"?>
-<!--<?oxygen SCHSchema="../schematrons/CI-SIS_TRANSFERT_DONNEE_DUI_2023.08.sch"?>-->
 <!-- 
 	**********************************************************************************************************
 	Système : ANS
-	Document : Transfert de données DUI ( MS-TD-DUI_2023.08)	
+	Document : Transfert de données DUI ( MS-TD-DUI_2024.08)	
 	**********************************************************************************************************
 	format HL7 - CDA Release 2 - selon schéma XML (CDA.xsd) du standard ANSI/HL7 CDA, R2-2005 4/21/2005
 	**********************************************************************************************************	
-		21/12/2020 : Création		
-		18/08/2023 : Correction unité "ml" par "mL"
-		29/08/2023 : Intégration des nomenclatures
+		05/09/2023 : Création	
+		11/06/2024 : Modification du format des OID => passage en majuscule pour être conforme aux spécifications HL7	
 	**********************************************************************************************************
 -->
 <ClinicalDocument xmlns="urn:hl7-org:v3"
                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                  xsi:schemaLocation="urn:hl7-org:v3 cda_asip_ihelab/CDA_extended.xsd"
                   xmlns:sdtc="urn:hl7-org:sdtc">
 	<!-- 
   **************************************************************************************************************
@@ -31,11 +28,11 @@
 	<templateId root="2.16.840.1.113883.2.8.2.1"/>
 	<!-- Déclaration de conformité aux spécifications du CI-SIS -->
 	<templateId root="1.2.250.1.213.1.1.1.1"/>
-	<!-- Déclaration de conformité aux spécifications du modèle de document Transfert de données DUI version 2023 -->
+	<!-- Déclaration de conformité aux spécifications du modèle de document Transfert de données DUI -->
 	<templateId root="1.2.250.1.213.1.1.1.4.11"
-	            extension="à renseigner "/>
+	            extension="version à renseigner"/>
 	<!-- Identifiant unique du document -->
-	<id root="e20c5584-4278-11ee-be56-0242ac120002"/>
+	<id root="E20C5584-4278-11EE-BE56-0242AC120002" extension="0001"/>
 	<!-- Type de document (valeurs temporaires en attente d'une nomenclature plus adaptée) -->
 	<code code="EXPPAT_2"
 	      displayName="Autre document du patient"
@@ -53,7 +50,7 @@
 	<!-- Langue du document -->
 	<languageCode code="fr-FR"/>
 	<!-- Identifiant commun à toutes les versions successives du document -->
-	<setId root="39a58ab6-4348-11ee-be56-0242ac120002"/>
+	<setId root="E20C5584-4278-11EE-BE56-0242AC120002"/>
 	<!-- Numéro de la version du présent document (entier positif) -->
 	<versionNumber value="1"/>
 	<!-- Usager -->
