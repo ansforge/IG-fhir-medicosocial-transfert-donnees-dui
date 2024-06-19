@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="../FeuilleDeStyle/CDA-FO.xsl"?>
 <!-- 
 	**********************************************************************************************************
 	Système : ANS
@@ -29,15 +28,14 @@
 	<!-- Déclaration de conformité aux spécifications du CI-SIS -->
 	<templateId root="1.2.250.1.213.1.1.1.1"/>
 	<!-- Déclaration de conformité aux spécifications du modèle de document Transfert de données DUI -->
-	<templateId root="1.2.250.1.213.1.1.1.4.11"
+	<templateId root="1.2.250.1.213.1.1.1.58"
 	            extension="version à renseigner"/>
 	<!-- Identifiant unique du document -->
-	<id root="E20C5584-4278-11EE-BE56-0242AC120002" extension="0001"/>
-	<!-- Type de document (valeurs temporaires en attente d'une nomenclature plus adaptée) -->
-	<code code="EXPPAT_2"
-	      displayName="Autre document du patient"
-	      codeSystem="1.2.250.1.213.1.1.4.12"
-	      codeSystemName="JDV_J07-XdsTypeCode-CISIS"/>
+	<id root="1.2.250.2345.3245.13.58130.1"/>
+	<!-- Type de document -->
+	<code code="EXPORT_DUI"
+	      displayName="Export du Dossier Usager Informatisé"
+	      codeSystem="1.2.250.1.213.1.1.4.12"/>
 	<!-- Titre du document -->
 	<title>   Document transfert de données DUI </title>
 	<!-- Date de création du document -->
@@ -50,7 +48,7 @@
 	<!-- Langue du document -->
 	<languageCode code="fr-FR"/>
 	<!-- Identifiant commun à toutes les versions successives du document -->
-	<setId root="E20C5584-4278-11EE-BE56-0242AC120002"/>
+	<setId root="1.2.250.2345.3245.13.58130"/>
 	<!-- Numéro de la version du présent document (entier positif) -->
 	<versionNumber value="1"/>
 	<!-- Usager -->
@@ -72,7 +70,7 @@
 					<family qualifier="CL">DECOURCY</family>
 					<given qualifier="CL">Ruth</given>
 				</name>
-				<!-- Genre administratif (valeurs temporaires, codeSystem en attente de modification (VSM et SFE non concordantes)) -->
+				<!-- Genre administratif -->
 				<administrativeGenderCode code="F"
 				                          displayName="Féminin"
 				                          codeSystem="2.16.840.1.113883.5.1"/>
@@ -101,8 +99,10 @@
 			<!--  identification du système du système  -->
 			<id root="1.2.250.1.71.4.2.1"
 			    extension="801234567897"/>
-			<!-- Système ou dispositif obligatoire provenant de la JDV_J01-XdsAuthorSpecialty-CISIS (nullFlavor solution temporaire) -->
-			<code nullFlavor="NA"/>
+			<!-- Système ou dispositif (obligatoire) provenant du JDV_J01-XdsAuthorSpecialty-CISIS -->
+			<code code="LOGICIEL_DUI"
+			displayName="Logiciel de Dossier Usager Informatisé"
+			codeSystem="1.2.250.1.213.1.1.4.6"/>
 			<!-- Obligatoire s'il s'agit d'un système -->
 			<assignedAuthoringDevice>
 				<manufacturerModelName> Nom du modèle ou du dispositif </manufacturerModelName>
@@ -135,13 +135,14 @@
 			<!-- identifiant du système responsable du document -->
 			<id root="1.2.34.5.67.8.9.10"
 			    extension="1.2.250.1.71.4.2.2/24.30"/>
-			<!-- Système ou dispositif obligatoire provenant de la JDV_J01-XdsAuthorSpecialty-CISIS (nullFlavor solution temporaire) -->
-			<code nullFlavor="NA"/>
+			<!-- Système ou dispositif provenant de la JDV_J01-XdsAuthorSpecialty-CISIS -->
+			<code code="LOGICIEL_DUI"
+			displayName="Logiciel de Dossier Usager Informatisé"
+			codeSystem="1.2.250.1.213.1.1.4.6"/>
 			<!-- Etablissement de rattachement du PS -->
 			<representedOrganization>
-				<id root="1.3.2"
-				    extension="1750803447"/>
-				<name>Hôpital Européen Georges Pompidou</name>
+				<id root="1.3.2" extension="362521879"/>
+				<name>Editeur de logiciel DUI</name>
 			</representedOrganization>
 		</assignedEntity>
 	</legalAuthenticator>
@@ -158,13 +159,14 @@
 					<!-- identifiant du système responsable du document -->
 					<id root="1.2.34.5.67.8.9.10"
 					    extension="1.2.250.1.71.4.2.2/24.30"/>
-					<!-- Système ou dispositif obligatoire provenant de la JDV_J01-XdsAuthorSpecialty-CISIS (nullFlavor solution temporaire) -->
-					<code nullFlavor="NA"/>
+					<!-- Système ou dispositif provenant de la JDV_J01-XdsAuthorSpecialty-CISIS -->
+					<code code="LOGICIEL_DUI"
+							displayName="Logiciel de Dossier Usager Informatisé"
+							codeSystem="1.2.250.1.213.1.1.4.6"/>
 					<!-- Etablissement de rattachement du PS -->
 					<representedOrganization>
-						<id root="1.3.2"
-						    extension="1750803447"/>
-						<name>Hôpital Européen Georges Pompidou</name>
+						<id root="1.3.2" extension="362521879"/>
+						<name>Editeur de logiciel DUI</name>
 					</representedOrganization>
 				</assignedEntity>
 			</performer>
@@ -181,10 +183,10 @@
 			<!-- Lieu de prise en charge  -->
 			<location>
 				<healthCareFacility>
-				<!-- Valeurs temporaires, en attente d'une nomenclature plus adaptée (JDV_J02) -->
-					<code code="SA41"
-					      codeSystem="1.2.250.1.71.4.2.4"
-					      displayName="Autre établissement du domaine social ou médico-social"/>
+				<!-- Valeur issue du JDV CI-SIS J254 -->
+					<code code="182"
+					      codeSystem="1.2.250.1.213.1.6.1.8"
+					      displayName="Service d'Éducation Spéciale et de Soins à Domicile"/>
 				</healthCareFacility>
 			</location>
 		</encompassingEncounter>
