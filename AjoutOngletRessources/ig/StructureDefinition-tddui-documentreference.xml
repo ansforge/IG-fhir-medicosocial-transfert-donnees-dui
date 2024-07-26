@@ -72,7 +72,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
   <name value="TDDUIDocumentReference"/>
   <title value="TDDUI Document Reference"/>
   <status value="active"/>
-  <date value="2024-07-24T08:10:06+00:00"/>
+  <date value="2024-07-26T09:18:38+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -332,7 +332,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -751,7 +751,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -799,7 +799,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <isModifier value="true"/>
       <isModifierReason value="Modifier extensions are expected to modify the meaning or interpretation of the resource that contains them"/>
@@ -1242,7 +1242,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/AllergyIntolerance"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/ExplanationOfBenefit"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -1370,7 +1370,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/AllergyIntolerance"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/ExplanationOfBenefit"/>
       </constraint>
       <mustSupport value="true"/>
       <isSummary value="true"/>
@@ -1440,7 +1440,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/AllergyIntolerance"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/ExplanationOfBenefit"/>
       </constraint>
       <mustSupport value="true"/>
       <mapping>
@@ -1511,7 +1511,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/AllergyIntolerance"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/ExplanationOfBenefit"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -1646,7 +1646,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -1691,7 +1691,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <isModifier value="true"/>
       <isModifierReason value="Modifier extensions are expected to modify the meaning or interpretation of the element that contains them"/>
@@ -1786,7 +1786,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/AllergyIntolerance"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/ExplanationOfBenefit"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -2040,7 +2040,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -2085,7 +2085,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <isModifier value="true"/>
       <isModifierReason value="Modifier extensions are expected to modify the meaning or interpretation of the element that contains them"/>
@@ -2129,7 +2129,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <human value="If the Attachment has data, it SHALL have a contentType"/>
         <expression value="data.empty() or contentType.exists()"/>
         <xpath value="not(exists(f:data)) or exists(f:contentType)"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/ExplanationOfBenefit"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -2234,7 +2234,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -2749,7 +2749,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -2794,7 +2794,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <isModifier value="true"/>
       <isModifierReason value="Modifier extensions are expected to modify the meaning or interpretation of the element that contains them"/>
@@ -2840,7 +2840,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/AllergyIntolerance"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/ExplanationOfBenefit"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -2965,7 +2965,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <human value="If present, start SHALL have a lower value than end"/>
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)"/>
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Claim"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/ExplanationOfBenefit"/>
       </constraint>
       <mustSupport value="true"/>
       <isSummary value="true"/>
@@ -3168,7 +3168,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/AllergyIntolerance"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/ExplanationOfBenefit"/>
       </constraint>
       <mustSupport value="true"/>
       <mapping>
@@ -3227,7 +3227,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/AllergyIntolerance"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/ExplanationOfBenefit"/>
       </constraint>
       <mapping>
         <identity value="rim"/>

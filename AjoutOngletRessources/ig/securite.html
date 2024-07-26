@@ -1,13 +1,9 @@
-<!-- get modelType -->
-
-
-
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title> - Médicosocial - Transfert de données DUI v1.0.1</title>
+    <title>Sécurité - Médicosocial - Transfert de données DUI v1.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -45,8 +41,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:""}
-    h3,h4,h5,h6{--heading-prefix:""}</style>
+    <style type="text/css">h2{--heading-prefix:"7.1"}
+    h3,h4,h5,h6{--heading-prefix:"7.1"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -214,11 +210,15 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='autres_ressources.html'><b>Autres ressources</b></a></li><li><b>Sécurité</b></li>
 
           <span style="float:right;">
 
+            <a href="autres_ressources.html">&lt;prev</a> | 
+
             <a href="#bottom">bottom</a>
+
+          | <a href="downloads.html">next&gt;</a>
 
           </span>
 
@@ -232,9 +232,16 @@
         <div class="row">
           <div class="inner-wrapper">
 
-
-<div style="counter-reset: section 10" class="col-12">
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Médicosocial - Transfert de données DUI - Local Development build (v1.0.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://interop.esante.gouv.fr/ig/fhir/tddui/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Sécurité</h2>
   
 
 
@@ -247,90 +254,21 @@
 
 
 
-<ul class="nav nav-tabs">
 
-  <li>
-    <a href="StructureDefinition-tddui-bundle.html">Content</a>
-  </li>
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<p>Les données véhiculées à travers ces flux sont des données à caractère personnel contenant notamment des données médicales sensibles qu’il convient de protéger.</p>
 
+<p>Cette section présente les éventuelles recommandations de sécurité qui s’appliquent à cet Implementation Guidegit status
+. Il s’agit d’un sous-ensemble lié à la dimension interopérabilité de dispositions de sécurité plus globales visant à couvrir les exigences de sécurité d’un système cible.</p>
 
-
-  <li>
-    <a href="StructureDefinition-tddui-bundle-definitions.html">Detailed Descriptions</a>
-  </li>
-
-
-
-  
-    <li>
-      <a href="StructureDefinition-tddui-bundle-mappings.html">Mappings</a>
-    </li>
-  
+<p>Il est du ressort du responsable de traitement du système cible de mettre en œuvre des dispositions de sécurité adaptées à son analyse de risques pour le service. En fonction de sa politique de sécurité, il peut choisir ou pas de mettre en œuvre les dispositions spécifiques décrites dans cette section. Les référentiels de sécurité édités par l’ANS fournissent des recommandations sur ce sujet.</p>
 
 
-
-
-
-
-  
-    
-      <li>
-        <a href="StructureDefinition-tddui-bundle-examples.html">Examples</a>
-      </li>
-    
-  
-
-
-
-
-  
-    <li>
-      <a href="StructureDefinition-tddui-bundle.profile.xml.html">XML</a>
-    </li>
-  
-
-
-  
-    <li>
-      <a href="StructureDefinition-tddui-bundle.profile.json.html">JSON</a>
-    </li>
-  
-
-
-  
-    <li>
-      <a href="StructureDefinition-tddui-bundle.profile.ttl.html">TTL</a>
-    </li>
-  
-
-
-</ul>
-
-
-  <a name="root"> </a>
-  <h2 id="root">Resource Profile: TDDUIBundle - Change History</h2>
-
-  <table class="colsi">
-    <tr>
-
-      <td colspan="2">
-        
-          Active
-          
-            as of 2024-07-26
-          
-        
-      </td>
-
-    </tr>
-  </table>
-
-  <p>Changes in the tddui-bundle resource profile.</p>
-
-  
 
 </div>
-
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
@@ -338,8 +276,6 @@
 
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
-
-  <script type="text/javascript" src="assets/js/tabs.js"> </script>
 
 <script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
@@ -352,7 +288,7 @@
             <tr>
               <td style="text-align:left">&#xA0;
 
-                <span style="visibility:hidden">&lt;prev</span>
+                <a href="autres_ressources.html">&lt;prev</a>
 
               </td>
               <td style="text-align:center">
@@ -360,7 +296,7 @@
               </td>
               <td style="text-align:right">&#xA0;
 
-                <span style="visibility:hidden">next&gt;</span>
+                <a href="downloads.html">next&gt;</a>
 
               </td>
             </tr>

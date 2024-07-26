@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 134, errors = 0, warn = 24, info = 15-->
+<!-- broken links = 6, errors = 0, warn = 27, info = 15-->
 <head>
   <title>TDDUI : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for TDDUI</h1>
- <p>Generated Wed Jul 24 08:10:38 UTC 2024, FHIR version 4.0.1 for ans.fhir.fr.tddui#1.0.1 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/tddui">https://interop.esante.gouv.fr/ig/fhir/tddui</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/tddui/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
+ <p>Generated Fri Jul 26 09:19:10 UTC 2024, FHIR version 4.0.1 for ans.fhir.fr.tddui#1.0.1 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/tddui">https://interop.esante.gouv.fr/ig/fhir/tddui</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/tddui/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.6.18</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ans.fhir.fr.tddui, Canonical = https://interop.esante.gouv.fr/ig/fhir/tddui</td></tr>
@@ -71,17 +71,15 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
  (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-common-tags.html">CommonTags</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-document-reference-status.html">DocumentReferenceStatus</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-composition-status.html">CompositionStatus</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/allergyintolerance.html">AllergyIntolerance</a>
- (8 uses),     <a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/explanationofbenefit.html">ExplanationOfBenefit</a>
+ (10 uses),     <a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
  (3 uses),     <a href="http://hl7.org/fhir/R4/device.html">Device</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-document-relationship-type.html">DocumentRelationshipType</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/episodeofcare.html">EpisodeOfCare</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/claim.html">Claim</a>
  (1 uses)
   </li>
   <li>
@@ -94,14 +92,14 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
  <tr><td>Previous Version Comparison:</td><td> </td></tr>
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
  <tr><td>IPS Comparison:</td><td> n/a</td></tr>
- <tr><td>Summary:</td><td> errors = 0, warn = 24, info = 15, broken links = 134</td></tr>
+ <tr><td>Summary:</td><td> errors = 0, warn = 27, info = 15, broken links = 6</td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>134</b></td><td><b>5</b></td><td><b>0</b></td>
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>6</b></td><td><b>8</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_IG-fhir-medicosocial-transfert-donnees-dui_IG-fhir-medicosocial-transfert-donnees-dui_igSource_fsh-generated_resources_Bundle-TDDUIBundleExample"><b>/home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Bundle-TDDUIBundleExample</b></a></td><td><b>0</b></td><td><b>4</b></td><td><b>0</b></td>
@@ -137,406 +135,31 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
      <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource DocumentReference/TDDUIDocumentReferenceExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-TDDUIBundleExample.change.history.html#l336">output&#8203;/Bundle-TDDUIBundleExample&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 195, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
+     <td><b><a href="annexes.html#l451">output&#8203;/annexes&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 263, column 8</a></b></td><td><b>error</b></td><td><b>The link 'acronymes.html' for &quot;Acronymes&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-TDDUIBundleExample.change.history.html#l342">output&#8203;/Bundle-TDDUIBundleExample&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 198, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
+     <td><b><a href="annexes.html#l455">output&#8203;/annexes&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 264, column 8</a></b></td><td><b>error</b></td><td><b>The link 'documents_reference.html' for &quot;Documents de référence&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-TDDUIBundleExample.html#l334">output&#8203;/Bundle-TDDUIBundleExample&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 191, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
+     <td><b><a href="contenu_dossier_contexte.html#l490">output&#8203;/contenu_dossier_contexte&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 280, column 14</a></b></td><td><b>error</b></td><td><b>The link 'contenu_dossier.html#nomenclatures' for &quot;éléments sémantiques&quot; cannot be resolved (valid targets: [ans-nav, segment-header, publish-box, bottom, hl7-logo, segment-post-footer, contenu-du-dossier, hl7-search-lnk, family-nav, ig-status, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-TDDUIBundleExample.html#l340">output&#8203;/Bundle-TDDUIBundleExample&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 194, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
+     <td><b><a href="description_flux_synthese.html#l478">output&#8203;/description_flux_synthese&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 280, column 45</a></b></td><td><b>error</b></td><td><b>The link 'st_flux_ajout_doc.html' for &quot;flux 1&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-TDDUIBundleExample.json.html#l334">output&#8203;/Bundle-TDDUIBundleExample&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 193, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
+     <td><b><a href="description_flux_synthese.html#l537">output&#8203;/description_flux_synthese&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 290, column 45</a></b></td><td><b>error</b></td><td><b>The link 'st_flux_ajout_lot_doc.html' for &quot;flux 2&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-TDDUIBundleExample.json.html#l340">output&#8203;/Bundle-TDDUIBundleExample&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 196, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
+     <td><b><a href="description_flux_synthese.html#l608">output&#8203;/description_flux_synthese&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 307, column 45</a></b></td><td><b>error</b></td><td><b>The link 'st_flux_maj_doc.html' for &quot;flux 3&quot; cannot be resolved</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-TDDUIBundleExample.ttl.html#l334">output&#8203;/Bundle-TDDUIBundleExample&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 193, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-TDDUIBundleExample.ttl.html#l340">output&#8203;/Bundle-TDDUIBundleExample&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 196, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-TDDUIBundleExample.xml.html#l334">output&#8203;/Bundle-TDDUIBundleExample&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 193, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-TDDUIBundleExample.xml.html#l340">output&#8203;/Bundle-TDDUIBundleExample&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 196, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="CapabilityStatement-TDDUIConsommateur-testing.html#l334">output&#8203;/CapabilityStatement-TDDUIConsommateur-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 191, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="CapabilityStatement-TDDUIConsommateur-testing.html#l340">output&#8203;/CapabilityStatement-TDDUIConsommateur-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 194, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="CapabilityStatement-TDDUIConsommateur.change.history.html#l336">output&#8203;/CapabilityStatement-TDDUIConsommateur&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 195, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="CapabilityStatement-TDDUIConsommateur.change.history.html#l342">output&#8203;/CapabilityStatement-TDDUIConsommateur&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 198, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="CapabilityStatement-TDDUIConsommateur.html#l334">output&#8203;/CapabilityStatement-TDDUIConsommateur&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 191, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="CapabilityStatement-TDDUIConsommateur.html#l340">output&#8203;/CapabilityStatement-TDDUIConsommateur&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 194, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="CapabilityStatement-TDDUIConsommateur.json.html#l334">output&#8203;/CapabilityStatement-TDDUIConsommateur&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 193, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="CapabilityStatement-TDDUIConsommateur.json.html#l340">output&#8203;/CapabilityStatement-TDDUIConsommateur&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 196, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="CapabilityStatement-TDDUIConsommateur.ttl.html#l334">output&#8203;/CapabilityStatement-TDDUIConsommateur&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 193, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="CapabilityStatement-TDDUIConsommateur.ttl.html#l340">output&#8203;/CapabilityStatement-TDDUIConsommateur&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 196, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="CapabilityStatement-TDDUIConsommateur.xml.html#l334">output&#8203;/CapabilityStatement-TDDUIConsommateur&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 193, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="CapabilityStatement-TDDUIConsommateur.xml.html#l340">output&#8203;/CapabilityStatement-TDDUIConsommateur&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 196, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="CapabilityStatement-TDDUIProducteur-testing.html#l334">output&#8203;/CapabilityStatement-TDDUIProducteur-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 191, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="CapabilityStatement-TDDUIProducteur-testing.html#l340">output&#8203;/CapabilityStatement-TDDUIProducteur-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 194, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="CapabilityStatement-TDDUIProducteur.change.history.html#l336">output&#8203;/CapabilityStatement-TDDUIProducteur&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 195, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="CapabilityStatement-TDDUIProducteur.change.history.html#l342">output&#8203;/CapabilityStatement-TDDUIProducteur&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 198, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="CapabilityStatement-TDDUIProducteur.html#l334">output&#8203;/CapabilityStatement-TDDUIProducteur&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 191, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="CapabilityStatement-TDDUIProducteur.html#l340">output&#8203;/CapabilityStatement-TDDUIProducteur&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 194, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="CapabilityStatement-TDDUIProducteur.json.html#l334">output&#8203;/CapabilityStatement-TDDUIProducteur&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 193, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="CapabilityStatement-TDDUIProducteur.json.html#l340">output&#8203;/CapabilityStatement-TDDUIProducteur&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 196, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="CapabilityStatement-TDDUIProducteur.ttl.html#l334">output&#8203;/CapabilityStatement-TDDUIProducteur&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 193, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="CapabilityStatement-TDDUIProducteur.ttl.html#l340">output&#8203;/CapabilityStatement-TDDUIProducteur&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 196, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="CapabilityStatement-TDDUIProducteur.xml.html#l334">output&#8203;/CapabilityStatement-TDDUIProducteur&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 193, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="CapabilityStatement-TDDUIProducteur.xml.html#l340">output&#8203;/CapabilityStatement-TDDUIProducteur&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 196, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="DocumentReference-TDDUIDocumentReferenceExample.change.history.html#l336">output&#8203;/DocumentReference-TDDUIDocumentReferenceExample&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 195, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="DocumentReference-TDDUIDocumentReferenceExample.change.history.html#l342">output&#8203;/DocumentReference-TDDUIDocumentReferenceExample&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 198, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="DocumentReference-TDDUIDocumentReferenceExample.html#l334">output&#8203;/DocumentReference-TDDUIDocumentReferenceExample&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 191, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="DocumentReference-TDDUIDocumentReferenceExample.html#l340">output&#8203;/DocumentReference-TDDUIDocumentReferenceExample&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 194, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="DocumentReference-TDDUIDocumentReferenceExample.json.html#l334">output&#8203;/DocumentReference-TDDUIDocumentReferenceExample&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 193, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="DocumentReference-TDDUIDocumentReferenceExample.json.html#l340">output&#8203;/DocumentReference-TDDUIDocumentReferenceExample&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 196, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="DocumentReference-TDDUIDocumentReferenceExample.ttl.html#l334">output&#8203;/DocumentReference-TDDUIDocumentReferenceExample&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 193, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="DocumentReference-TDDUIDocumentReferenceExample.ttl.html#l340">output&#8203;/DocumentReference-TDDUIDocumentReferenceExample&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 196, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="DocumentReference-TDDUIDocumentReferenceExample.xml.html#l334">output&#8203;/DocumentReference-TDDUIDocumentReferenceExample&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 193, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="DocumentReference-TDDUIDocumentReferenceExample.xml.html#l340">output&#8203;/DocumentReference-TDDUIDocumentReferenceExample&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 196, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-tddui-bundle-definitions.html#l335">output&#8203;/StructureDefinition-tddui-bundle-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 195, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-tddui-bundle-definitions.html#l341">output&#8203;/StructureDefinition-tddui-bundle-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 198, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-tddui-bundle-examples.html#l335">output&#8203;/StructureDefinition-tddui-bundle-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 195, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-tddui-bundle-examples.html#l341">output&#8203;/StructureDefinition-tddui-bundle-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 198, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-tddui-bundle-mappings.html#l335">output&#8203;/StructureDefinition-tddui-bundle-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 195, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-tddui-bundle-mappings.html#l341">output&#8203;/StructureDefinition-tddui-bundle-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 198, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-tddui-bundle-testing.html#l335">output&#8203;/StructureDefinition-tddui-bundle-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 195, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-tddui-bundle-testing.html#l341">output&#8203;/StructureDefinition-tddui-bundle-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 198, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-tddui-bundle.html#l335">output&#8203;/StructureDefinition-tddui-bundle&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 195, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-tddui-bundle.html#l341">output&#8203;/StructureDefinition-tddui-bundle&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 198, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-tddui-bundle.profile.history.html#l335">output&#8203;/StructureDefinition-tddui-bundle&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 195, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-tddui-bundle.profile.history.html#l341">output&#8203;/StructureDefinition-tddui-bundle&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 198, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-tddui-bundle.profile.json.html#l335">output&#8203;/StructureDefinition-tddui-bundle&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 199, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-tddui-bundle.profile.json.html#l341">output&#8203;/StructureDefinition-tddui-bundle&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 202, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-tddui-bundle.profile.ttl.html#l335">output&#8203;/StructureDefinition-tddui-bundle&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 199, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-tddui-bundle.profile.ttl.html#l341">output&#8203;/StructureDefinition-tddui-bundle&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 202, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-tddui-bundle.profile.xml.html#l335">output&#8203;/StructureDefinition-tddui-bundle&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 199, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-tddui-bundle.profile.xml.html#l341">output&#8203;/StructureDefinition-tddui-bundle&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 202, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-tddui-documentreference-definitions.html#l335">output&#8203;/StructureDefinition-tddui-documentreference-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 195, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-tddui-documentreference-definitions.html#l341">output&#8203;/StructureDefinition-tddui-documentreference-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 198, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-tddui-documentreference-examples.html#l335">output&#8203;/StructureDefinition-tddui-documentreference-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 195, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-tddui-documentreference-examples.html#l341">output&#8203;/StructureDefinition-tddui-documentreference-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 198, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-tddui-documentreference-mappings.html#l335">output&#8203;/StructureDefinition-tddui-documentreference-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 195, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-tddui-documentreference-mappings.html#l341">output&#8203;/StructureDefinition-tddui-documentreference-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 198, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-tddui-documentreference-testing.html#l335">output&#8203;/StructureDefinition-tddui-documentreference-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 195, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-tddui-documentreference-testing.html#l341">output&#8203;/StructureDefinition-tddui-documentreference-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 198, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-tddui-documentreference.html#l335">output&#8203;/StructureDefinition-tddui-documentreference&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 195, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-tddui-documentreference.html#l341">output&#8203;/StructureDefinition-tddui-documentreference&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 198, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-tddui-documentreference.profile.history.html#l335">output&#8203;/StructureDefinition-tddui-documentreference&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 195, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-tddui-documentreference.profile.history.html#l341">output&#8203;/StructureDefinition-tddui-documentreference&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 198, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-tddui-documentreference.profile.json.html#l335">output&#8203;/StructureDefinition-tddui-documentreference&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 199, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-tddui-documentreference.profile.json.html#l341">output&#8203;/StructureDefinition-tddui-documentreference&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 202, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-tddui-documentreference.profile.ttl.html#l335">output&#8203;/StructureDefinition-tddui-documentreference&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 199, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-tddui-documentreference.profile.ttl.html#l341">output&#8203;/StructureDefinition-tddui-documentreference&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 202, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-tddui-documentreference.profile.xml.html#l335">output&#8203;/StructureDefinition-tddui-documentreference&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 199, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-tddui-documentreference.profile.xml.html#l341">output&#8203;/StructureDefinition-tddui-documentreference&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 202, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="annexes.html#l334">output&#8203;/annexes&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 191, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="annexes.html#l340">output&#8203;/annexes&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 194, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="annexes.html#l463">output&#8203;/annexes&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 269, column 8</a></b></td><td><b>error</b></td><td><b>The link 'acronymes.html' for &quot;Acronymes&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="annexes.html#l467">output&#8203;/annexes&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 270, column 8</a></b></td><td><b>error</b></td><td><b>The link 'documents_reference.html' for &quot;Documents de référence&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="annexes_acronymes.html#l334">output&#8203;/annexes_acronymes&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 191, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="annexes_acronymes.html#l340">output&#8203;/annexes_acronymes&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 194, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="annexes_documents_reference.html#l334">output&#8203;/annexes_documents_reference&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 191, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="annexes_documents_reference.html#l340">output&#8203;/annexes_documents_reference&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 194, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="annexes_nomenclatures.html#l334">output&#8203;/annexes_nomenclatures&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 191, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="annexes_nomenclatures.html#l340">output&#8203;/annexes_nomenclatures&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 194, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#l334">output&#8203;/artifacts&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 191, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#l340">output&#8203;/artifacts&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 194, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="contenu_dossier.html#l334">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 191, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="contenu_dossier.html#l340">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 194, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="contenu_dossier_contexte.html#l334">output&#8203;/contenu_dossier_contexte&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 191, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="contenu_dossier_contexte.html#l340">output&#8203;/contenu_dossier_contexte&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 194, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="contenu_dossier_contexte.html#l502">output&#8203;/contenu_dossier_contexte&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 286, column 14</a></b></td><td><b>error</b></td><td><b>The link 'contenu_dossier.html#nomenclatures' for &quot;éléments sémantiques&quot; cannot be resolved (valid targets: [ans-nav, segment-header, publish-box, bottom, hl7-logo, segment-post-footer, contenu-du-dossier, hl7-search-lnk, family-nav, ig-status, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="contenu_dossier_corps_cda.html#l334">output&#8203;/contenu_dossier_corps_cda&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 191, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="contenu_dossier_corps_cda.html#l340">output&#8203;/contenu_dossier_corps_cda&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 194, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="contenu_dossier_entete_cda.html#l334">output&#8203;/contenu_dossier_entete_cda&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 191, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="contenu_dossier_entete_cda.html#l340">output&#8203;/contenu_dossier_entete_cda&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 194, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
+   <tr style="background-color: #ffebcc">
+     <td><b>output&#8203;/documentation&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/script at Line 263, column 2</b></td><td><b>warning</b></td><td title=""><b>The &lt;script&gt; containing the javascript 'window.location.href'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="contenu_dossier_structure_cda.html#l334">output&#8203;/contenu_dossier_structure_cda&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 191, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="contenu_dossier_structure_cda.html#l340">output&#8203;/contenu_dossier_structure_cda&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 194, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="description_flux.html#l334">output&#8203;/description_flux&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 191, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="description_flux.html#l340">output&#8203;/description_flux&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 194, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="description_flux_1_ajout_doc.html#l334">output&#8203;/description_flux_1_ajout_doc&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 191, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="description_flux_1_ajout_doc.html#l340">output&#8203;/description_flux_1_ajout_doc&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 194, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="description_flux_2_ajout_lot_doc.html#l334">output&#8203;/description_flux_2_ajout_lot_doc&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 191, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="description_flux_2_ajout_lot_doc.html#l340">output&#8203;/description_flux_2_ajout_lot_doc&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 194, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="description_flux_3_maj_doc.html#l334">output&#8203;/description_flux_3_maj_doc&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 191, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="description_flux_3_maj_doc.html#l340">output&#8203;/description_flux_3_maj_doc&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 194, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="description_flux_synthese.html#l334">output&#8203;/description_flux_synthese&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 191, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="description_flux_synthese.html#l340">output&#8203;/description_flux_synthese&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 194, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="description_flux_synthese.html#l490">output&#8203;/description_flux_synthese&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 286, column 45</a></b></td><td><b>error</b></td><td><b>The link 'st_flux_ajout_doc.html' for &quot;flux 1&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="description_flux_synthese.html#l549">output&#8203;/description_flux_synthese&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 296, column 45</a></b></td><td><b>error</b></td><td><b>The link 'st_flux_ajout_lot_doc.html' for &quot;flux 2&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="description_flux_synthese.html#l620">output&#8203;/description_flux_synthese&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 313, column 45</a></b></td><td><b>error</b></td><td><b>The link 'st_flux_maj_doc.html' for &quot;flux 3&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="index.html#l334">output&#8203;/index&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 191, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="index.html#l340">output&#8203;/index&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 194, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="ressources_cda.html#l334">output&#8203;/ressources_cda&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 191, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="ressources_cda.html#l340">output&#8203;/ressources_cda&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 194, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="ressources_conformite.html#l334">output&#8203;/ressources_conformite&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 191, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="ressources_conformite.html#l340">output&#8203;/ressources_conformite&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 194, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="sfe.html#l334">output&#8203;/sfe&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 191, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="sfe.html#l340">output&#8203;/sfe&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 194, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="sfe_cadre_juridique.html#l334">output&#8203;/sfe_cadre_juridique&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 191, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="sfe_cadre_juridique.html#l340">output&#8203;/sfe_cadre_juridique&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 194, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="sfe_definition_processus.html#l334">output&#8203;/sfe_definition_processus&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 191, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="sfe_definition_processus.html#l340">output&#8203;/sfe_definition_processus&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 194, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="sfe_modelisation_contenu.html#l334">output&#8203;/sfe_modelisation_contenu&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 191, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="sfe_modelisation_contenu.html#l340">output&#8203;/sfe_modelisation_contenu&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 194, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="sfe_organisation_contexte_metier.html#l334">output&#8203;/sfe_organisation_contexte_metier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 191, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="sfe_organisation_contexte_metier.html#l340">output&#8203;/sfe_organisation_contexte_metier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 194, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="toc.html#l334">output&#8203;/toc&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 191, column 10</a></b></td><td><b>error</b></td><td><b>The link 'securite.html' for &quot;Sécurité&quot; cannot be resolved</b></td>
+   <tr style="background-color: #ffebcc">
+     <td><b>output&#8203;/site_ans&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/script at Line 265, column 2</b></td><td><b>warning</b></td><td title=""><b>The &lt;script&gt; containing the javascript 'window.location.href'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="toc.html#l340">output&#8203;/toc&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 194, column 10</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Téléchargements et usage&quot; cannot be resolved</b></td>
+   <tr style="background-color: #ffebcc">
+     <td><b>output&#8203;/specs_fhir&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/script at Line 265, column 2</b></td><td><b>warning</b></td><td title=""><b>The &lt;script&gt; containing the javascript 'window.location.href'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>1</b></td><td><b>warning</b></td><td title=""><b>The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide</b></td>
@@ -633,91 +256,91 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[21]&#8203;.constraint[1] (l1&#8203;/c110528)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[21]&#8203;.constraint[1] (l1&#8203;/c110507)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[22]&#8203;.constraint[1] (l1&#8203;/c113108)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[22]&#8203;.constraint[1] (l1&#8203;/c113087)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[35]&#8203;.constraint[1] (l1&#8203;/c137425)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[35]&#8203;.constraint[1] (l1&#8203;/c137400)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[51]&#8203;.constraint[1] (l1&#8203;/c159828)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[51]&#8203;.constraint[1] (l1&#8203;/c159786)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[57]&#8203;.constraint[1] (l1&#8203;/c170544)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[57]&#8203;.constraint[1] (l1&#8203;/c170490)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[58]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c172829)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[58]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c172790)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[59]&#8203;.constraint[1] (l1&#8203;/c174945)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[59]&#8203;.constraint[1] (l1&#8203;/c174906)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[60]&#8203;.constraint[1] (l1&#8203;/c177584)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[60]&#8203;.constraint[1] (l1&#8203;/c177545)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[6]&#8203;.constraint[0] (l1&#8203;/c184243)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[6]&#8203;.constraint[0] (l1&#8203;/c184208)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[7]&#8203;.constraint[0] (l1&#8203;/c185262)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[7]&#8203;.constraint[0] (l1&#8203;/c185227)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[14]&#8203;.constraint[0] (l1&#8203;/c187318)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[14]&#8203;.constraint[0] (l1&#8203;/c187283)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[24]&#8203;.constraint[0] (l1&#8203;/c189718)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[24]&#8203;.constraint[0] (l1&#8203;/c189683)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[26]&#8203;.constraint[0] (l1&#8203;/c190598)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[26]&#8203;.constraint[0] (l1&#8203;/c190563)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[28]&#8203;.constraint[0] (l1&#8203;/c191698)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[28]&#8203;.constraint[0] (l1&#8203;/c191663)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[29]&#8203;.constraint[0] (l1&#8203;/c192865)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[29]&#8203;.constraint[0] (l1&#8203;/c192830)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[6]&#8203;.constraint[0] (l1&#8203;/c184243)</b></td><td><b>information</b></td><td title="ED_INVARIANT_NO_EXPRESSION"><b>The constraint 'constr-bind-type' has no computable expression, so validators will not be able to check it</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[6]&#8203;.constraint[0] (l1&#8203;/c184208)</b></td><td><b>information</b></td><td title="ED_INVARIANT_NO_EXPRESSION"><b>The constraint 'constr-bind-type' has no computable expression, so validators will not be able to check it</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[7]&#8203;.constraint[0] (l1&#8203;/c185262)</b></td><td><b>information</b></td><td title="ED_INVARIANT_NO_EXPRESSION"><b>The constraint 'constr-bind-category' has no computable expression, so validators will not be able to check it</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[7]&#8203;.constraint[0] (l1&#8203;/c185227)</b></td><td><b>information</b></td><td title="ED_INVARIANT_NO_EXPRESSION"><b>The constraint 'constr-bind-category' has no computable expression, so validators will not be able to check it</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[14]&#8203;.constraint[0] (l1&#8203;/c187318)</b></td><td><b>information</b></td><td title="ED_INVARIANT_NO_EXPRESSION"><b>The constraint 'constr-bind-securityLabel' has no computable expression, so validators will not be able to check it</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[14]&#8203;.constraint[0] (l1&#8203;/c187283)</b></td><td><b>information</b></td><td title="ED_INVARIANT_NO_EXPRESSION"><b>The constraint 'constr-bind-securityLabel' has no computable expression, so validators will not be able to check it</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[24]&#8203;.constraint[0] (l1&#8203;/c189718)</b></td><td><b>information</b></td><td title="ED_INVARIANT_NO_EXPRESSION"><b>The constraint 'constr-bind-format' has no computable expression, so validators will not be able to check it</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[24]&#8203;.constraint[0] (l1&#8203;/c189683)</b></td><td><b>information</b></td><td title="ED_INVARIANT_NO_EXPRESSION"><b>The constraint 'constr-bind-format' has no computable expression, so validators will not be able to check it</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[26]&#8203;.constraint[0] (l1&#8203;/c190598)</b></td><td><b>information</b></td><td title="ED_INVARIANT_NO_EXPRESSION"><b>The constraint 'constr-bind-context-event' has no computable expression, so validators will not be able to check it</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[26]&#8203;.constraint[0] (l1&#8203;/c190563)</b></td><td><b>information</b></td><td title="ED_INVARIANT_NO_EXPRESSION"><b>The constraint 'constr-bind-context-event' has no computable expression, so validators will not be able to check it</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[28]&#8203;.constraint[0] (l1&#8203;/c191698)</b></td><td><b>information</b></td><td title="ED_INVARIANT_NO_EXPRESSION"><b>The constraint 'constr-bind-ProducteurDoc-simplified' has no computable expression, so validators will not be able to check it</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[28]&#8203;.constraint[0] (l1&#8203;/c191663)</b></td><td><b>information</b></td><td title="ED_INVARIANT_NO_EXPRESSION"><b>The constraint 'constr-bind-ProducteurDoc-simplified' has no computable expression, so validators will not be able to check it</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[29]&#8203;.constraint[0] (l1&#8203;/c192865)</b></td><td><b>information</b></td><td title="ED_INVARIANT_NO_EXPRESSION"><b>The constraint 'constr-bind-ProducteurDoc-simplified' has no computable expression, so validators will not be able to check it</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[29]&#8203;.constraint[0] (l1&#8203;/c192830)</b></td><td><b>information</b></td><td title="ED_INVARIANT_NO_EXPRESSION"><b>The constraint 'constr-bind-ProducteurDoc-simplified' has no computable expression, so validators will not be able to check it</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[21]&#8203;.constraint[1] (l1&#8203;/c110528)</b></td><td><b>information</b></td><td title="ED_INVARIANT_NO_EXPRESSION"><b>The constraint 'constr-bind-type' has no computable expression, so validators will not be able to check it</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[21]&#8203;.constraint[1] (l1&#8203;/c110507)</b></td><td><b>information</b></td><td title="ED_INVARIANT_NO_EXPRESSION"><b>The constraint 'constr-bind-type' has no computable expression, so validators will not be able to check it</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[22]&#8203;.constraint[1] (l1&#8203;/c113108)</b></td><td><b>information</b></td><td title="ED_INVARIANT_NO_EXPRESSION"><b>The constraint 'constr-bind-category' has no computable expression, so validators will not be able to check it</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[22]&#8203;.constraint[1] (l1&#8203;/c113087)</b></td><td><b>information</b></td><td title="ED_INVARIANT_NO_EXPRESSION"><b>The constraint 'constr-bind-category' has no computable expression, so validators will not be able to check it</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[35]&#8203;.constraint[1] (l1&#8203;/c137425)</b></td><td><b>information</b></td><td title="ED_INVARIANT_NO_EXPRESSION"><b>The constraint 'constr-bind-securityLabel' has no computable expression, so validators will not be able to check it</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[35]&#8203;.constraint[1] (l1&#8203;/c137400)</b></td><td><b>information</b></td><td title="ED_INVARIANT_NO_EXPRESSION"><b>The constraint 'constr-bind-securityLabel' has no computable expression, so validators will not be able to check it</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[51]&#8203;.constraint[1] (l1&#8203;/c159828)</b></td><td><b>information</b></td><td title="ED_INVARIANT_NO_EXPRESSION"><b>The constraint 'constr-bind-format' has no computable expression, so validators will not be able to check it</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[51]&#8203;.constraint[1] (l1&#8203;/c159786)</b></td><td><b>information</b></td><td title="ED_INVARIANT_NO_EXPRESSION"><b>The constraint 'constr-bind-format' has no computable expression, so validators will not be able to check it</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[57]&#8203;.constraint[1] (l1&#8203;/c170544)</b></td><td><b>information</b></td><td title="ED_INVARIANT_NO_EXPRESSION"><b>The constraint 'constr-bind-context-event' has no computable expression, so validators will not be able to check it</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[57]&#8203;.constraint[1] (l1&#8203;/c170490)</b></td><td><b>information</b></td><td title="ED_INVARIANT_NO_EXPRESSION"><b>The constraint 'constr-bind-context-event' has no computable expression, so validators will not be able to check it</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[59]&#8203;.constraint[1] (l1&#8203;/c174945)</b></td><td><b>information</b></td><td title="ED_INVARIANT_NO_EXPRESSION"><b>The constraint 'constr-bind-ProducteurDoc-simplified' has no computable expression, so validators will not be able to check it</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[59]&#8203;.constraint[1] (l1&#8203;/c174906)</b></td><td><b>information</b></td><td title="ED_INVARIANT_NO_EXPRESSION"><b>The constraint 'constr-bind-ProducteurDoc-simplified' has no computable expression, so validators will not be able to check it</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[60]&#8203;.constraint[1] (l1&#8203;/c177584)</b></td><td><b>information</b></td><td title="ED_INVARIANT_NO_EXPRESSION"><b>The constraint 'constr-bind-ProducteurDoc-simplified' has no computable expression, so validators will not be able to check it</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[60]&#8203;.constraint[1] (l1&#8203;/c177545)</b></td><td><b>information</b></td><td title="ED_INVARIANT_NO_EXPRESSION"><b>The constraint 'constr-bind-ProducteurDoc-simplified' has no computable expression, so validators will not be able to check it</b></td>
    </tr>
 </table>
 <a name="suppressed"> </a>
