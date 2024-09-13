@@ -322,7 +322,39 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 		font-weight: bold
 	}
 
+	/* Style du bouton plein écran */
+		.fullscreen-btn {
+		display: inline-block;
+		padding: 2px 5px;
+		background-color: #EBEDEF; /* Couleur de fond verte */
+		color: black; /* Couleur du texte */
+		font-size: 11px;
+		font-weight: bold; /* Texte en gras */
+		border: none;
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		float: right; /* Aligner le bouton à droite */
+        margin-top: 4px; /* Espace au-dessus du bouton */
+		
+	}
+
+	/* Changement de couleur au survol */
+	.fullscreen-btn:hover {
+		background-color: #C3C6D5; /* Vert plus foncé au survol */
+	}
+
 </style>
+
+<script>
+	// Fonction pour rediriger l'utilisateur vers l'URL de l'iframe
+	function goFullScreen(iframeId) {
+		var iframe = document.getElementById(iframeId);
+		var iframeUrl = iframe.src;
+		// Redirige l'utilisateur vers l'URL de l'iframe
+		window.open(iframeUrl, '_blank');
+	}
+</script>
 
 <p>Les éléments apparaissant en <strong><span style="color: #4472C4">gras de couleur bleu</span></strong> correspondent à des extensions définies dans le cadre de cette spécification technique afin de couvrir le besoin.</p>
 
@@ -335,8 +367,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>L’élément RecordTarget imposé par le CDA permet de décrire les données de l’usager.</p>
 
 <p>La structure de l’élément RecordTarget se conforme aux contraintes et définitions présentées dans le Volet Structuration minimale des documents de santé :</p>
-
-<iframe src="https://o3sis.esante.gouv.fr/decor/services/RetrieveTemplate?prefix=ASIP-STRUCT-MIN-&amp;version=&amp;language=fr-FR&amp;ui=en-US&amp;id=1.2.250.1.213.1.1.1.1.10.10&amp;effectiveDate=2023-12-15T17:15:20&amp;format=html&amp;collapsable=true" height="400" name="RecordTarget" style="border: 1px solid black"></iframe>
 
 <p><br /></p>
 
@@ -367,7 +397,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>La structure de l’élément Author se conforme aux contraintes et définitions présentées dans le Volet Structuration minimale des documents de santé :</p>
 
-<iframe src="https://interop.esante.gouv.fr/publication/TDD-html-20240704T113145/tmp-2.16.840.1.113883.10.12.102-2005-09-07T000000.html" height="400" name="Author" style="border: 1px solid black"></iframe>
+<iframe src="../input/adram/pack-TDD-html-20240704T113145/TDD-html-20240704T113145/tmp-2.16.840.1.113883.10.12.102-2005-09-07T000000.html" height="400" id="Author" style="border: 1px solid black"></iframe>
+
+<p><button class="fullscreen-btn" onclick="goFullScreen('Author')">Plein écran</button></p>
 
 <p><br /></p>
 
@@ -434,7 +466,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>La structure de l’élément Custodian se conforme aux contraintes et définitions présentées dans le Volet Structuration minimale des documents de santé :</p>
 
-<iframe src="https://interop.esante.gouv.fr/publication/TDD-html-20240704T113145/tmp-2.16.840.1.113883.10.12.102-2005-09-07T000000.html" height="400" name="Custodian"></iframe>
+<iframe src="../input/adram/pack-TDD-html-20240704T113145/TDD-html-20240704T113145/tmp-2.16.840.1.113883.10.12.104-2005-09-07T000000.html" height="400" id="Custodian"></iframe>
+
+<p><button class="fullscreen-btn" onclick="goFullScreen('Custodian')">Plein écran</button></p>
 
 <p><br /></p>
 
@@ -470,8 +504,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>L’élément legalAuthentificator imposé par le CDA représente le responsable du document. Il s’agit bien ici d’un <strong>Système rattaché à une structure</strong>.</p>
 
 <p>La structure de l’élément LegalAuthentificator se conforme aux contraintes et définitions présentées dans le Volet Structuration minimale des documents de santé :</p>
-
-<iframe src="https://o3sis.esante.gouv.fr/decor/services/RetrieveTemplate?prefix=ASIP-STRUCT-MIN-&amp;version=&amp;language=fr-FR&amp;ui=en-US&amp;id=1.2.250.1.213.1.1.1.1.10.6&amp;effectiveDate=2023-12-15T17:14:26&amp;format=html&amp;collapsable=true" height="400" name="LegalAuthentificator"></iframe>
 
 <p><br /></p>
 
@@ -525,8 +557,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>La structure de l’élément DocumentationOf se conforme aux contraintes et définitions présentées dans le Volet Structuration minimale des documents de santé :</p>
 
-<iframe src="https://o3sis.esante.gouv.fr/decor/services/RetrieveTemplate?prefix=ASIP-STRUCT-MIN-&amp;version=&amp;language=fr-FR&amp;ui=en-US&amp;id=1.2.250.1.213.1.1.1.1.10.4&amp;effectiveDate=2023-12-15T17:12:43&amp;format=html&amp;collapsable=true" height="400" name="DocumentationOf"></iframe>
-
 <p><br /></p>
 
 <h3 id="relateddocument">relatedDocument</h3>
@@ -535,8 +565,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>La structure de l’élément relatedDocument se conforme aux contraintes et définitions présentées dans le Volet Structuration minimale des documents de santé :</p>
 
-<iframe src="https://o3sis.esante.gouv.fr/decor/services/RetrieveTemplate?prefix=ASIP-STRUCT-MIN-&amp;version=&amp;language=fr-FR&amp;ui=en-US&amp;id=1.2.250.1.213.1.1.1.1.10.3&amp;effectiveDate=2024-04-29T11:09:47&amp;format=html&amp;collapsable=true" height="400" name="relatedDocument"></iframe>
-
 <p><br /></p>
 
 <h3 id="componentof">ComponentOf</h3>
@@ -544,8 +572,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>L’élément componentOf imposé par le CI-SIS représente l’association du document « Transfert de données DUI » à une prise en charge.</p>
 
 <p>La structure de l’élément ComponentOf se conforme aux contraintes et définitions présentées dans le Volet Structuration minimale des documents de santé :</p>
-
-<iframe src="https://o3sis.esante.gouv.fr/decor/services/RetrieveTemplate?prefix=ASIP-STRUCT-MIN-&amp;version=&amp;language=fr-FR&amp;ui=en-US&amp;id=1.2.250.1.213.1.1.1.1.10.2&amp;effectiveDate=2023-12-15T17:11:33&amp;format=html&amp;collapsable=true" height="400" name="ComponentOf"></iframe>
 
 <p><br /></p>
 
@@ -577,8 +603,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>L’élément Adresse imposé par le CDA dans la plupart des éléments d’entête CDA telle que le <em>recordTarget</em>, <em>author</em>, <em>custodian</em>, <em>legalAutenthificator</em>.</p>
 
 <p>La structure de l’élément Adresse se conforme aux contraintes et définitions présentées dans le Volet Structuration minimale des documents de santé :</p>
-
-<iframe src="https://o3sis.esante.gouv.fr/decor/services/RetrieveTemplate?prefix=ASIP-STRUCT-MIN-&amp;version=&amp;language=fr-FR&amp;ui=en-US&amp;id=1.2.250.1.213.1.1.1.1.10.18&amp;effectiveDate=2023-03-03T11:02:55&amp;format=html&amp;collapsable=true" height="400" name="Adresse"></iframe>
 
 <p><br /></p>
 
@@ -625,7 +649,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 11, 2024 08:56+0000">2024-09-11</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Sep 13, 2024 12:36+0000">2024-09-13</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
