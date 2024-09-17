@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Legal: TDD- DECOR Summary (Data Elements, Codes, OIDs and Rules)</title>
+      <link href="../assets/decor.css" rel="stylesheet" type="text/css" />
+      <link href="../assets/favicon.ico" rel="shortcut icon" type="image/x-icon" /><script src="../assets/motoggle.js" type="text/javascript"></script><script src="../assets/mootools-core.js" type="text/javascript"></script><script src="../assets/mootools-more.js" type="text/javascript"></script><script src="../assets/mootools-TabSwapper.js" type="text/javascript"></script></head>
+   <body>
+      <table class="title">
+         <tr>
+            <td style="text-align: left;">
+               <h1>DECOR Information for Project:  (TDD-)</h1>
+            </td>
+         </tr>
+      </table>
+      <ul id="TabbedPanel">
+         <li class="TabbedPanelsTabNotSelected"><a href="index.html">Front Page</a></li>
+         <li class="TabbedPanelsTabNotSelected"><a href="project.html">Project Information</a></li>
+         <li class="TabbedPanelsTabNotSelected"><a href="dataset.html">Data Set</a></li>
+         <li class="TabbedPanelsTabNotSelected"><a href="scenarios.html">Scenarios</a></li>
+         <li class="TabbedPanelsTabNotSelected"><a href="identifiers.html">Identifiers</a></li>
+         <li class="TabbedPanelsTabNotSelected"><a href="terminology.html">Terminology</a></li>
+         <li class="TabbedPanelsTabNotSelected"><a href="rules.html">Templates</a></li>
+         <li class="TabbedPanelsTabNotSelected"><a href="compiletime.html">Compile Time</a></li>
+         <li class="TabbedPanelsTabSelected">Legal</li>
+      </ul>
+      <div class="TabbedPanelsContent">
+         <table width="50%" border="0" cellspacing="20" cellpadding="20">
+            <tr>
+               <td> This program is free software; you can redistribute it and/or modify it under the
+                  terms of the 
+                  GNU General Public License as published by the Free Software Foundation; either version
+                  3 of the License, or (at your option) 
+                  any later version. 
+                  <p></p> This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+                  
+                  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+                  See the GNU General 
+                  Public License for more details. 
+                  <p></p> See <a href="http://www.gnu.org/licenses/gpl.html">http://www.gnu.org/licenses/gpl.html</a></td>
+            </tr>
+            <tr>
+               <td>Further content to be determined, the ART-DECOR expert team <a href="https://art-decor.org">art-decor.org</a></td>
+            </tr>
+            <tr>
+               <td><a href="http://www.axialis.com/free/icons">Icons</a> by <a href="http://www.axialis.com">Axialis Team</a></td>
+            </tr>
+         </table>
+      </div>
+      <p>Data sets, codes, OIDs and Rules: this information is used for rendering and validation
+         purposes.
+      </p><script type="text/javascript">
+                function RefreshAccordion (theAccId) {
+                    new Fx.Accordion($(theAccId), '#' + theAccId + ' .AccordionPanelTab', '#' + theAccId + ' .AccordionPanelContent', {
+                        display: -1,
+                        alwaysHide: true
+                    });
+                };
+                window.addEvent('domready', function(){
+                    // init accordions
+                    /* Accordionds Accordionsi Accordionsc Accordionvs Accordionid Accordionrl Accordionis Accordionce */
+                    
+                    RefreshAccordion('Accordionds');
+                    RefreshAccordion('Accordionsi');
+                    RefreshAccordion('Accordionsc');
+                    RefreshAccordion('Accordionvs');
+                    RefreshAccordion('Accordionid');
+                    RefreshAccordion('Accordionrl');
+                    RefreshAccordion('Accordionis');
+                    RefreshAccordion('Accordionce');
+                    //2DO: schematron zip met xhr HEAD
+                });
+                </script><script type="text/javascript">
+                /* init all tooltips */
+                //store titles and text
+                $$('a.tipz').each(function(element,index) {
+                    var content = element.get('title').split('::');
+                    element.store('tip:title', content[0]);
+                    element.store('tip:text', content[1]);
+                });
+                
+                //create the tooltips
+                var tipz = new Tips('.tipz',{
+                    className: 'tip',
+                    fixed: true,
+                    hideDelay: 50,
+                    showDelay: 50
+                });
+                </script></body>
+</html>

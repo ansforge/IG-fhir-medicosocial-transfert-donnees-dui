@@ -1,0 +1,1993 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- if a concept is in the dataset that the transaction is connected to and in the transaction (concept[@inTransaction]): it is definitely being used by the transaction -->
+<!-- if a concept is in the dataset that the transaction is connected to, but not in the transaction (concept[@inTransactionDataset][not(@inTransaction)]): it is not being used -->
+<!-- if a concept is not in the dataset that the transaction is connected to, but is available in the project (concept[@inDataset][not(@inTransactionDataset)]): it might be used through containment -->
+<instances id="1.2.250.1.213.1.1.1.4.1.2023.4.14"
+           effectiveDate="2023-12-14T12:14:28"
+           statusCode="final"
+           versionLabel="2023-12"
+           type="initial"
+           label="ClinicalDocument_TDD_MISPE"
+           model="ClinicalDocument"
+           lastModifiedDate="2024-02-23T09:44:19">
+   <dataset id="1.2.250.1.213.1.1.1.4.1.2023.1.1"
+            effectiveDate="2023-05-10T14:55:44"
+            statusCode="draft"
+            prefix="TDD-"
+            shortName="tdd_dataset1"
+            iddisplay="TDD-dataset-1"
+            url="https://o3sis.esante.gouv.fr/decor/services/"
+            ident="TDD-">
+      <name language="fr-FR">TDD_dataset1</name>
+   </dataset>
+   <hl7:instance xmlns:cnsaTDD="urn:cnsaTDD"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xmlns:cnsaSDO="urn:cnsaSDO"
+                 xmlns:hl7="urn:hl7-org:v3"
+                 name="MS_TDD_MISPE"
+                 path="//">
+      <hl7:ClinicalDocument original="hl7:ClinicalDocument"
+                            withpredicate="hl7:ClinicalDocument[hl7:templateId[@root = '1.2.250.1.213.1.1.1.4.1'] and hl7:templateId[@root = '2.16.840.1.113883.10.12.2']]"
+                            label="MS_TDD_MISPE"
+                            classCode="DOCCLIN"
+                            moodCode="EVN">
+         <attribute name="classCode" value="DOCCLIN" datatype="cs"/>
+         <attribute name="moodCode" value="EVN" datatype="cs"/>
+         <hl7:realmCode original="hl7:realmCode"
+                        withpredicate="hl7:realmCode"
+                        label="MS_TDD_MISPE"
+                        cardconf="0 … 1 Required"
+                        datatype="CS"
+                        minimumMultiplicity="0"
+                        maximumMultiplicity="1"
+                        conformance="R"/>
+         <hl7:typeId original="hl7:typeId"
+                     withpredicate="hl7:typeId[@root = '2.16.840.1.113883.1.3'][@extension = 'POCD_HD000040']"
+                     label="MS_TDD_MISPE"
+                     cardconf="1 … 1 Required"
+                     datatype="II"
+                     minimumMultiplicity="1"
+                     maximumMultiplicity="1"
+                     conformance="R"
+                     root="2.16.840.1.113883.1.3"
+                     extension="POCD_HD000040">
+            <attribute name="root" value="2.16.840.1.113883.1.3" datatype="uid"/>
+            <attribute name="extension" value="POCD_HD000040" datatype="st"/>
+         </hl7:typeId>
+         <hl7:templateId original="hl7:templateId"
+                         withpredicate="hl7:templateId[@root = '1.2.250.1.213.1.1.1.4.1']"
+                         label="MS_TDD_MISPE"
+                         cardconf="1 … 1 Required"
+                         datatype="II"
+                         minimumMultiplicity="1"
+                         maximumMultiplicity="1"
+                         conformance="R"
+                         root="1.2.250.1.213.1.1.1.4.1">
+            <attribute name="root" value="1.2.250.1.213.1.1.1.4.1" datatype="uid"/>
+         </hl7:templateId>
+         <hl7:templateId original="hl7:templateId"
+                         withpredicate="hl7:templateId[@root = '2.16.840.1.113883.10.12.2']"
+                         label="MS_TDD_MISPE"
+                         cardconf="1 … 1 Required"
+                         datatype="II"
+                         minimumMultiplicity="1"
+                         maximumMultiplicity="1"
+                         conformance="R"
+                         root="2.16.840.1.113883.10.12.2">
+            <attribute name="root" value="2.16.840.1.113883.10.12.2" datatype="uid"/>
+         </hl7:templateId>
+         <hl7:id original="hl7:id"
+                 withpredicate="hl7:id"
+                 label="MS_TDD_MISPE"
+                 cardconf="1 … 1 Required"
+                 datatype="II"
+                 minimumMultiplicity="1"
+                 maximumMultiplicity="1"
+                 conformance="R"/>
+         <hl7:code original="hl7:code"
+                   withpredicate="hl7:code[@codeSystem = '2.16.840.1.113883.4.642.3.240' or @nullFlavor]"
+                   label="MS_TDD_MISPE"
+                   cardconf="1 … 1 Required"
+                   datatype="CE"
+                   minimumMultiplicity="1"
+                   maximumMultiplicity="1"
+                   conformance="R"
+                   code="18825-0"
+                   codeSystem="2.16.840.1.113883.4.642.3.240"
+                   displayName="Medical social services attachment">
+            <attribute name="code" value="18825-0" datatype="cs"/>
+            <attribute name="codeSystem"
+                       value="2.16.840.1.113883.4.642.3.240"
+                       datatype="oid"/>
+            <attribute name="displayName"
+                       value="Medical social services attachment"
+                       datatype="st"/>
+         </hl7:code>
+         <hl7:title original="hl7:title"
+                    withpredicate="hl7:title"
+                    label="MS_TDD_MISPE"
+                    cardconf="0 … 1"
+                    datatype="ST"
+                    minimumMultiplicity="0"
+                    maximumMultiplicity="1"/>
+         <hl7:effectiveTime original="hl7:effectiveTime"
+                            withpredicate="hl7:effectiveTime"
+                            label="MS_TDD_MISPE"
+                            cardconf="1 … 1 Required"
+                            datatype="TS"
+                            minimumMultiplicity="1"
+                            maximumMultiplicity="1"
+                            conformance="R"/>
+         <hl7:confidentialityCode original="hl7:confidentialityCode"
+                                  withpredicate="hl7:confidentialityCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.1.11.16926-DYNAMIC.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor]"
+                                  label="MS_TDD_MISPE"
+                                  cardconf="1 … 1 Required"
+                                  datatype="CE"
+                                  minimumMultiplicity="1"
+                                  maximumMultiplicity="1"
+                                  conformance="R"
+                                  valueSet="2.16.840.1.113883.1.11.16926"/>
+         <hl7:languageCode original="hl7:languageCode"
+                           withpredicate="hl7:languageCode"
+                           label="MS_TDD_MISPE"
+                           cardconf="0 … 1"
+                           datatype="CS"
+                           minimumMultiplicity="0"
+                           maximumMultiplicity="1"
+                           valueSet="2.16.840.1.113883.1.11.11526"/>
+         <hl7:setId original="hl7:setId"
+                    withpredicate="hl7:setId"
+                    label="MS_TDD_MISPE"
+                    cardconf="0 … 1"
+                    datatype="II"
+                    minimumMultiplicity="0"
+                    maximumMultiplicity="1"/>
+         <hl7:versionNumber original="hl7:versionNumber"
+                            withpredicate="hl7:versionNumber"
+                            label="MS_TDD_MISPE"
+                            cardconf="0 … 1"
+                            datatype="INT"
+                            minimumMultiplicity="0"
+                            maximumMultiplicity="1"/>
+         <hl7:recordTarget original="hl7:recordTarget"
+                           withpredicate="hl7:recordTarget[hl7:patientRole]"
+                           label="(TDD_recordTarget)"
+                           cardconf="1 … * Required"
+                           minimumMultiplicity="1"
+                           maximumMultiplicity="*"
+                           conformance="R">
+            <hl7:patientRole original="hl7:patientRole"
+                             withpredicate="hl7:patientRole"
+                             label="(TDD_recordTarget)"
+                             cardconf="1 … 1 Required"
+                             minimumMultiplicity="1"
+                             maximumMultiplicity="1"
+                             conformance="R">
+               <hl7:id original="hl7:id"
+                       withpredicate="hl7:id[not(@nullFlavor)]"
+                       label="(TDD_recordTarget)"
+                       cardconf="1 … 3 Mandatory"
+                       datatype="II"
+                       minimumMultiplicity="1"
+                       maximumMultiplicity="3"
+                       conformance="R"
+                       isMandatory="true"
+                       extension="…"
+                       root="…">
+                  <attribute name="extension" datatype="st"/>
+                  <attribute name="root" datatype="uid"/>
+               </hl7:id>
+               <hl7:addr original="hl7:addr"
+                         withpredicate="hl7:addr"
+                         label="(MS_addr2023)"
+                         cardconf="0 … *"
+                         datatype="AD"
+                         minimumMultiplicity="0"
+                         maximumMultiplicity="*"
+                         use="…">
+                  <attribute name="use" datatype="set_cs"/>
+                  <hl7:streetAddressLine original="hl7:streetAddressLine"
+                                         withpredicate="hl7:streetAddressLine"
+                                         label="(MS_addr2023)"
+                                         cardconf="0 … 1"
+                                         datatype="ST"
+                                         minimumMultiplicity="0"
+                                         maximumMultiplicity="1"/>
+                  <hl7:postalCode original="hl7:postalCode"
+                                  withpredicate="hl7:postalCode"
+                                  label="(MS_addr2023)"
+                                  cardconf="0 … 1"
+                                  datatype="ST"
+                                  minimumMultiplicity="0"
+                                  maximumMultiplicity="1"/>
+                  <hl7:city original="hl7:city"
+                            withpredicate="hl7:city"
+                            label="(MS_addr2023)"
+                            cardconf="0 … 1"
+                            datatype="ST"
+                            minimumMultiplicity="0"
+                            maximumMultiplicity="1"/>
+                  <hl7:additionalLocator original="hl7:additionalLocator"
+                                         withpredicate="hl7:additionalLocator"
+                                         label="(MS_addr2023)"
+                                         cardconf="0 … 1"
+                                         datatype="ST"
+                                         minimumMultiplicity="0"
+                                         maximumMultiplicity="1"/>
+                  <hl7:country original="hl7:country"
+                               withpredicate="hl7:country"
+                               label="(MS_addr2023)"
+                               cardconf="0 … 1"
+                               datatype="ST"
+                               minimumMultiplicity="0"
+                               maximumMultiplicity="1"/>
+               </hl7:addr>
+               <hl7:telecom original="hl7:telecom"
+                            withpredicate="hl7:telecom"
+                            label="(MS_telecom)"
+                            cardconf="0 … 3"
+                            datatype="TEL"
+                            minimumMultiplicity="0"
+                            maximumMultiplicity="3"
+                            use="…"
+                            value="…">
+                  <attribute name="use" datatype="cs"/>
+                  <attribute name="value" datatype="url"/>
+               </hl7:telecom>
+               <cnsaTDD:statutDossier original="cnsaTDD:statutDossier"
+                                      withpredicate="cnsaTDD:statutDossier[concat(@code, @codeSystem) = doc('include/voc-1.2.250.1.213.3.4.196-DYNAMIC.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor]"
+                                      label="(TDD_recordTarget)"
+                                      cardconf="0 … 1"
+                                      datatype="CE"
+                                      minimumMultiplicity="0"
+                                      maximumMultiplicity="1"
+                                      valueSet="1.2.250.1.213.3.4.196"
+                                      flexibility="dynamic"/>
+               <cnsaTDD:codeLivretParcoursInclusif original="cnsaTDD:codeLivretParcoursInclusif"
+                                                   withpredicate="cnsaTDD:codeLivretParcoursInclusif"
+                                                   label="(TDD_recordTarget)"
+                                                   cardconf="0 … 1"
+                                                   datatype="ST"
+                                                   minimumMultiplicity="0"
+                                                   maximumMultiplicity="1"/>
+               <cnsaTDD:complementIdentite original="cnsaTDD:complementIdentite"
+                                           withpredicate="cnsaTDD:complementIdentite[cnsaTDD:statutIdentite[concat(@code, @codeSystem) = doc('include/voc-1.2.250.1.213.3.4.199-DYNAMIC.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor]]"
+                                           label="(TDD_recordTarget)"
+                                           cardconf="1 … 1 Required"
+                                           minimumMultiplicity="1"
+                                           maximumMultiplicity="1"
+                                           conformance="R">
+                  <cnsaTDD:statutIdentite original="cnsaTDD:statutIdentite"
+                                          withpredicate="cnsaTDD:statutIdentite[concat(@code, @codeSystem) = doc('include/voc-1.2.250.1.213.3.4.199-DYNAMIC.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor]"
+                                          label="(TDD_recordTarget)"
+                                          cardconf="1 … 1 Required"
+                                          datatype="CE"
+                                          minimumMultiplicity="1"
+                                          maximumMultiplicity="1"
+                                          conformance="R"
+                                          valueSet="1.2.250.1.213.3.4.199"
+                                          flexibility="dynamic"/>
+                  <cnsaTDD:dateStatutIdentite original="cnsaTDD:dateStatutIdentite"
+                                              withpredicate="cnsaTDD:dateStatutIdentite"
+                                              label="(TDD_recordTarget)"
+                                              cardconf="0 … 1"
+                                              datatype="TS"
+                                              minimumMultiplicity="0"
+                                              maximumMultiplicity="1"/>
+                  <cnsaTDD:nationalite original="cnsaTDD:nationalite"
+                                       withpredicate="cnsaTDD:nationalite[concat(@code, @codeSystem) = doc('include/voc-1.2.250.1.213.3.4.170-DYNAMIC.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor]"
+                                       label="(TDD_recordTarget)"
+                                       cardconf="0 … 1"
+                                       datatype="CE"
+                                       minimumMultiplicity="0"
+                                       maximumMultiplicity="1"
+                                       valueSet="1.2.250.1.213.3.4.170"
+                                       flexibility="dynamic"/>
+               </cnsaTDD:complementIdentite>
+               <cnsaTDD:identiteSNGI original="cnsaTDD:identiteSNGI"
+                                     withpredicate="cnsaTDD:identiteSNGI[cnsaTDD:sexeSNGI[concat(@code, @codeSystem) = doc('include/voc-1.2.250.1.213.1.1.5.590-DYNAMIC.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor]]"
+                                     label="(TDD_recordTarget)"
+                                     cardconf="0 … 1"
+                                     minimumMultiplicity="0"
+                                     maximumMultiplicity="1">
+                  <cnsaTDD:idSNGI original="cnsaTDD:idSNGI"
+                                  withpredicate="cnsaTDD:idSNGI"
+                                  label="(TDD_recordTarget)"
+                                  cardconf="1 … 1 Required"
+                                  datatype="II"
+                                  minimumMultiplicity="1"
+                                  maximumMultiplicity="1"
+                                  conformance="R"/>
+                  <cnsaTDD:codeCertificationSNGI original="cnsaTDD:codeCertificationSNGI"
+                                                 withpredicate="cnsaTDD:codeCertificationSNGI[concat(@code, @codeSystem) = doc('include/voc-1.2.250.1.213.3.4.133-DYNAMIC.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor]"
+                                                 label="(TDD_recordTarget)"
+                                                 cardconf="0 … 1"
+                                                 datatype="CE"
+                                                 minimumMultiplicity="0"
+                                                 maximumMultiplicity="1"
+                                                 valueSet="1.2.250.1.213.3.4.133"
+                                                 flexibility="dynamic"/>
+                  <cnsaTDD:dateNaissanceSNGI original="cnsaTDD:dateNaissanceSNGI"
+                                             withpredicate="cnsaTDD:dateNaissanceSNGI"
+                                             label="(TDD_recordTarget)"
+                                             cardconf="0 … 1"
+                                             datatype="TS"
+                                             minimumMultiplicity="0"
+                                             maximumMultiplicity="1"/>
+                  <cnsaTDD:sexeSNGI original="cnsaTDD:sexeSNGI"
+                                    withpredicate="cnsaTDD:sexeSNGI[concat(@code, @codeSystem) = doc('include/voc-1.2.250.1.213.1.1.5.590-DYNAMIC.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor]"
+                                    label="(TDD_recordTarget)"
+                                    cardconf="1 … 1 Required"
+                                    datatype="CE"
+                                    minimumMultiplicity="1"
+                                    maximumMultiplicity="1"
+                                    conformance="R"
+                                    valueSet="1.2.250.1.213.1.1.5.590"
+                                    flexibility="dynamic"/>
+                  <cnsaTDD:lieuNaissanceSNGI original="cnsaTDD:lieuNaissanceSNGI"
+                                             withpredicate="cnsaTDD:lieuNaissanceSNGI"
+                                             label="(TDD_recordTarget)"
+                                             cardconf="0 … 1"
+                                             datatype="CE"
+                                             minimumMultiplicity="0"
+                                             maximumMultiplicity="1"/>
+                  <cnsaTDD:departementNaissanceSNGI original="cnsaTDD:departementNaissanceSNGI"
+                                                    withpredicate="cnsaTDD:departementNaissanceSNGI"
+                                                    label="(TDD_recordTarget)"
+                                                    cardconf="0 … 1"
+                                                    datatype="ST"
+                                                    minimumMultiplicity="0"
+                                                    maximumMultiplicity="1"/>
+                  <cnsaTDD:communeNaissanceSNGI original="cnsaTDD:communeNaissanceSNGI"
+                                                withpredicate="cnsaTDD:communeNaissanceSNGI"
+                                                label="(TDD_recordTarget)"
+                                                cardconf="0 … 1"
+                                                datatype="ST"
+                                                minimumMultiplicity="0"
+                                                maximumMultiplicity="1"/>
+                  <cnsaTDD:localiteNaissanceSNGI original="cnsaTDD:localiteNaissanceSNGI"
+                                                 withpredicate="cnsaTDD:localiteNaissanceSNGI"
+                                                 label="(TDD_recordTarget)"
+                                                 cardconf="0 … 1"
+                                                 datatype="ST"
+                                                 minimumMultiplicity="0"
+                                                 maximumMultiplicity="1"/>
+                  <cnsaTDD:paysNaissanceSNGI original="cnsaTDD:paysNaissanceSNGI"
+                                             withpredicate="cnsaTDD:paysNaissanceSNGI"
+                                             label="(TDD_recordTarget)"
+                                             cardconf="0 … 1"
+                                             datatype="ST"
+                                             minimumMultiplicity="0"
+                                             maximumMultiplicity="1"/>
+                  <cnsaTDD:nomNaissanceSNGI original="cnsaTDD:nomNaissanceSNGI"
+                                            withpredicate="cnsaTDD:nomNaissanceSNGI"
+                                            label="(TDD_recordTarget)"
+                                            cardconf="0 … 1 Required"
+                                            datatype="ST"
+                                            minimumMultiplicity="0"
+                                            maximumMultiplicity="1"
+                                            conformance="R"/>
+                  <cnsaTDD:listePrenomsSNGI original="cnsaTDD:listePrenomsSNGI"
+                                            withpredicate="cnsaTDD:listePrenomsSNGI"
+                                            label="(TDD_recordTarget)"
+                                            cardconf="0 … 1"
+                                            datatype="ST"
+                                            minimumMultiplicity="0"
+                                            maximumMultiplicity="1"/>
+               </cnsaTDD:identiteSNGI>
+               <cnsaTDD:donneesNonStructureesIndividu original="cnsaTDD:donneesNonStructureesIndividu"
+                                                      withpredicate="cnsaTDD:donneesNonStructureesIndividu"
+                                                      label="(TDD_recordTarget)"
+                                                      cardconf="0 … *"
+                                                      minimumMultiplicity="0"
+                                                      maximumMultiplicity="*">
+                  <cnsaTDD:TitreDNS original="cnsaTDD:TitreDNS"
+                                    withpredicate="cnsaTDD:TitreDNS"
+                                    label="(TDD_recordTarget)"
+                                    cardconf="1 … 1 Required"
+                                    datatype="ST"
+                                    minimumMultiplicity="1"
+                                    maximumMultiplicity="1"
+                                    conformance="R"/>
+                  <cnsaTDD:ContenuDNS original="cnsaTDD:ContenuDNS"
+                                      withpredicate="cnsaTDD:ContenuDNS"
+                                      label="(TDD_recordTarget)"
+                                      cardconf="1 … 1 Required"
+                                      datatype="SD.TEXT"
+                                      minimumMultiplicity="1"
+                                      maximumMultiplicity="1"
+                                      conformance="R">
+                     <hl7:paragraph original="hl7:paragraph"
+                                    withpredicate="hl7:paragraph"
+                                    label="(TDD_recordTarget)"
+                                    cardconf="1 … 1 Required"
+                                    datatype="ANY"
+                                    minimumMultiplicity="1"
+                                    maximumMultiplicity="1"
+                                    conformance="R">
+                        <hl7:caption original="hl7:caption"
+                                     withpredicate="hl7:caption"
+                                     label="(TDD_recordTarget)"
+                                     cardconf="1 … 1 Required"
+                                     datatype="ANY"
+                                     minimumMultiplicity="1"
+                                     maximumMultiplicity="1"
+                                     conformance="R"/>
+                     </hl7:paragraph>
+                  </cnsaTDD:ContenuDNS>
+               </cnsaTDD:donneesNonStructureesIndividu>
+               <hl7:patient original="hl7:patient"
+                            withpredicate="hl7:patient"
+                            label="(TDD_recordTarget)"
+                            cardconf="1 … 1 Required"
+                            minimumMultiplicity="1"
+                            maximumMultiplicity="1"
+                            conformance="R">
+                  <hl7:name original="hl7:name"
+                            withpredicate="hl7:name"
+                            label="(TDD_recordTarget)"
+                            cardconf="1 … 1 Required"
+                            datatype="PN"
+                            minimumMultiplicity="1"
+                            maximumMultiplicity="1"
+                            conformance="R">
+                     <hl7:family original="hl7:family"
+                                 withpredicate="hl7:family"
+                                 label="(TDD_recordTarget)"
+                                 cardconf="1 … 3 Required"
+                                 datatype="ENXP"
+                                 minimumMultiplicity="1"
+                                 maximumMultiplicity="3"
+                                 conformance="R"
+                                 qualifier="…">
+                        <attribute name="qualifier" datatype="set_cs"/>
+                     </hl7:family>
+                     <hl7:given original="hl7:given"
+                                withpredicate="hl7:given"
+                                label="(TDD_recordTarget)"
+                                cardconf="1 … 3 Required"
+                                datatype="ENXP"
+                                minimumMultiplicity="1"
+                                maximumMultiplicity="3"
+                                conformance="R"
+                                qualifier="…">
+                        <attribute name="qualifier" datatype="set_cs"/>
+                     </hl7:given>
+                     <hl7:prefix original="hl7:prefix"
+                                 withpredicate="hl7:prefix"
+                                 label="(TDD_recordTarget)"
+                                 cardconf="0 … 1"
+                                 datatype="ENXP"
+                                 minimumMultiplicity="0"
+                                 maximumMultiplicity="1"/>
+                  </hl7:name>
+                  <hl7:administrativeGenderCode original="hl7:administrativeGenderCode"
+                                                withpredicate="hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-1.2.250.1.213.1.1.5.590-DYNAMIC.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor]"
+                                                label="(TDD_recordTarget)"
+                                                cardconf="0 … 1"
+                                                datatype="CE"
+                                                minimumMultiplicity="0"
+                                                maximumMultiplicity="1"
+                                                valueSet="1.2.250.1.213.1.1.5.590"
+                                                flexibility="dynamic"/>
+                  <hl7:birthTime original="hl7:birthTime"
+                                 withpredicate="hl7:birthTime"
+                                 label="(TDD_recordTarget)"
+                                 cardconf="0 … 1"
+                                 datatype="TS"
+                                 minimumMultiplicity="0"
+                                 maximumMultiplicity="1"/>
+                  <hl7:guardian original="hl7:guardian"
+                                withpredicate="hl7:guardian"
+                                label="(TDD_recordTarget)"
+                                cardconf="0 … *"
+                                minimumMultiplicity="0"
+                                maximumMultiplicity="*">
+                     <hl7:code original="hl7:code"
+                               withpredicate="hl7:code[concat(@code, @codeSystem) = doc('include/voc-1.2.250.1.213.3.4.101-DYNAMIC.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor]"
+                               label="(TDD_recordTarget)"
+                               cardconf="0 … 1"
+                               datatype="CE"
+                               minimumMultiplicity="0"
+                               maximumMultiplicity="1"
+                               valueSet="1.2.250.1.213.3.4.101"
+                               flexibility="dynamic"/>
+                     <hl7:addr original="hl7:addr"
+                               withpredicate="hl7:addr"
+                               label="(MS_addr2023)"
+                               cardconf="1 … 1 Required"
+                               datatype="AD"
+                               minimumMultiplicity="1"
+                               maximumMultiplicity="1"
+                               conformance="R"
+                               use="…">
+                        <attribute name="use" datatype="set_cs"/>
+                        <hl7:streetAddressLine original="hl7:streetAddressLine"
+                                               withpredicate="hl7:streetAddressLine"
+                                               label="(MS_addr2023)"
+                                               cardconf="0 … 1"
+                                               datatype="ST"
+                                               minimumMultiplicity="0"
+                                               maximumMultiplicity="1"/>
+                        <hl7:postalCode original="hl7:postalCode"
+                                        withpredicate="hl7:postalCode"
+                                        label="(MS_addr2023)"
+                                        cardconf="0 … 1"
+                                        datatype="ST"
+                                        minimumMultiplicity="0"
+                                        maximumMultiplicity="1"/>
+                        <hl7:city original="hl7:city"
+                                  withpredicate="hl7:city"
+                                  label="(MS_addr2023)"
+                                  cardconf="0 … 1"
+                                  datatype="ST"
+                                  minimumMultiplicity="0"
+                                  maximumMultiplicity="1"/>
+                        <hl7:additionalLocator original="hl7:additionalLocator"
+                                               withpredicate="hl7:additionalLocator"
+                                               label="(MS_addr2023)"
+                                               cardconf="0 … 1"
+                                               datatype="ST"
+                                               minimumMultiplicity="0"
+                                               maximumMultiplicity="1"/>
+                        <hl7:country original="hl7:country"
+                                     withpredicate="hl7:country"
+                                     label="(MS_addr2023)"
+                                     cardconf="0 … 1"
+                                     datatype="ST"
+                                     minimumMultiplicity="0"
+                                     maximumMultiplicity="1"/>
+                     </hl7:addr>
+                     <hl7:telecom original="hl7:telecom"
+                                  withpredicate="hl7:telecom"
+                                  label="(CI-SISTelecom)"
+                                  cardconf="0 … 2 Required"
+                                  datatype="TEL"
+                                  minimumMultiplicity="0"
+                                  maximumMultiplicity="2"
+                                  conformance="R"
+                                  use="…"
+                                  value="…">
+                        <attribute name="use" datatype="cs"/>
+                        <attribute name="value" datatype="url"/>
+                     </hl7:telecom>
+                     <choice minimumMultiplicity="1" maximumMultiplicity="1" cardconf="1 … 1">
+                        <hl7:guardianPerson original="hl7:guardianPerson"
+                                            withpredicate="hl7:guardianPerson"
+                                            label="(MS_Person)"
+                                            cardconf="0 … 1"
+                                            minimumMultiplicity="0"
+                                            maximumMultiplicity="1"
+                                            classCode="PSN"
+                                            determinerCode="INSTANCE">
+                           <attribute name="classCode" value="PSN" datatype="cs"/>
+                           <attribute name="determinerCode" value="INSTANCE" datatype="cs"/>
+                           <hl7:name original="hl7:name"
+                                     withpredicate="hl7:name[not(@nullFlavor)][hl7:family]"
+                                     label="(MS_Person)"
+                                     cardconf="1 … 1 Mandatory"
+                                     datatype="PN"
+                                     minimumMultiplicity="1"
+                                     maximumMultiplicity="1"
+                                     conformance="R"
+                                     isMandatory="true">
+                              <hl7:family original="hl7:family"
+                                          withpredicate="hl7:family[not(@nullFlavor)]"
+                                          label="(MS_Person)"
+                                          cardconf="1 … 3 Mandatory"
+                                          minimumMultiplicity="1"
+                                          maximumMultiplicity="3"
+                                          conformance="R"
+                                          isMandatory="true"/>
+                              <hl7:given original="hl7:given"
+                                         withpredicate="hl7:given"
+                                         label="(MS_Person)"
+                                         cardconf="0 … 3"
+                                         minimumMultiplicity="0"
+                                         maximumMultiplicity="3"/>
+                              <hl7:prefix original="hl7:prefix"
+                                          withpredicate="hl7:prefix"
+                                          label="(MS_Person)"
+                                          cardconf="0 … 1"
+                                          minimumMultiplicity="0"
+                                          maximumMultiplicity="1"/>
+                           </hl7:name>
+                           <cnsaTDD:dateNaissance original="cnsaTDD:dateNaissance"
+                                                  withpredicate="cnsaTDD:dateNaissance"
+                                                  label="(MS_Person)"
+                                                  cardconf="0 … 1"
+                                                  datatype="TS"
+                                                  minimumMultiplicity="0"
+                                                  maximumMultiplicity="1"/>
+                        </hl7:guardianPerson>
+                        <hl7:guardianOrganization original="hl7:guardianOrganization"
+                                                  withpredicate="hl7:guardianOrganization"
+                                                  label="(MS_Organization)"
+                                                  cardconf="0 … 1"
+                                                  minimumMultiplicity="0"
+                                                  maximumMultiplicity="1"
+                                                  classCode="ORG"
+                                                  determinerCode="INSTANCE">
+                           <attribute name="classCode" value="ORG" datatype="cs"/>
+                           <attribute name="determinerCode" value="INSTANCE" datatype="cs"/>
+                           <hl7:name original="hl7:name"
+                                     withpredicate="hl7:name"
+                                     label="(MS_Organization)"
+                                     cardconf="1 … 1 Required"
+                                     datatype="ON"
+                                     minimumMultiplicity="1"
+                                     maximumMultiplicity="1"
+                                     conformance="R"/>
+                           <cnsaTDD:interlocuteur original="cnsaTDD:interlocuteur"
+                                                  withpredicate="cnsaTDD:interlocuteur"
+                                                  label="(MS_Organization)"
+                                                  cardconf="0 … 1"
+                                                  datatype="ST"
+                                                  minimumMultiplicity="0"
+                                                  maximumMultiplicity="1"/>
+                        </hl7:guardianOrganization>
+                     </choice>
+                  </hl7:guardian>
+                  <hl7:birthplace original="hl7:birthplace"
+                                  withpredicate="hl7:birthplace[hl7:place]"
+                                  label="(TDD_recordTarget)"
+                                  cardconf="0 … 1"
+                                  minimumMultiplicity="0"
+                                  maximumMultiplicity="1">
+                     <hl7:place original="hl7:place"
+                                withpredicate="hl7:place"
+                                label="(TDD_recordTarget)"
+                                cardconf="1 … 1 Required"
+                                minimumMultiplicity="1"
+                                maximumMultiplicity="1"
+                                conformance="R">
+                        <hl7:addr original="hl7:addr"
+                                  withpredicate="hl7:addr"
+                                  label="(TDD_recordTarget)"
+                                  cardconf="0 … 1"
+                                  datatype="AD"
+                                  minimumMultiplicity="0"
+                                  maximumMultiplicity="1">
+                           <hl7:state original="hl7:state"
+                                      withpredicate="hl7:state"
+                                      label="(TDD_recordTarget)"
+                                      cardconf="0 … 1 Required"
+                                      datatype="ADXP"
+                                      minimumMultiplicity="0"
+                                      maximumMultiplicity="1"
+                                      conformance="R"/>
+                           <hl7:county original="hl7:county"
+                                       withpredicate="hl7:county"
+                                       label="(TDD_recordTarget)"
+                                       cardconf="0 … 1"
+                                       datatype="ADXP"
+                                       minimumMultiplicity="0"
+                                       maximumMultiplicity="1"/>
+                           <hl7:country original="hl7:country"
+                                        withpredicate="hl7:country"
+                                        label="(TDD_recordTarget)"
+                                        cardconf="0 … 1"
+                                        datatype="ADXP"
+                                        minimumMultiplicity="0"
+                                        maximumMultiplicity="1"/>
+                           <hl7:city original="hl7:city"
+                                     withpredicate="hl7:city"
+                                     label="(TDD_recordTarget)"
+                                     cardconf="0 … 1"
+                                     datatype="ADXP"
+                                     minimumMultiplicity="0"
+                                     maximumMultiplicity="1"/>
+                        </hl7:addr>
+                     </hl7:place>
+                  </hl7:birthplace>
+               </hl7:patient>
+            </hl7:patientRole>
+         </hl7:recordTarget>
+         <hl7:author original="hl7:author"
+                     withpredicate="hl7:author[hl7:assignedAuthor]"
+                     label="(CDAauthor)"
+                     cardconf="1 … * Required"
+                     minimumMultiplicity="1"
+                     maximumMultiplicity="*"
+                     conformance="R"
+                     typeCode="AUT"
+                     contextControlCode="OP">
+            <attribute name="typeCode" value="AUT"/>
+            <attribute name="contextControlCode" value="OP"/>
+            <hl7:functionCode original="hl7:functionCode"
+                              withpredicate="hl7:functionCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.1.11.10267-DYNAMIC.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor]"
+                              label="(CDAauthor)"
+                              cardconf="0 … 1"
+                              datatype="CE"
+                              minimumMultiplicity="0"
+                              maximumMultiplicity="1"
+                              valueSet="2.16.840.1.113883.1.11.10267"/>
+            <hl7:time original="hl7:time"
+                      withpredicate="hl7:time"
+                      label="(CDAauthor)"
+                      cardconf="1 … 1 Required"
+                      datatype="TS"
+                      minimumMultiplicity="1"
+                      maximumMultiplicity="1"
+                      conformance="R"/>
+            <hl7:assignedAuthor original="hl7:assignedAuthor"
+                                withpredicate="hl7:assignedAuthor"
+                                label="(CDAauthor)"
+                                cardconf="1 … 1"
+                                minimumMultiplicity="1"
+                                maximumMultiplicity="1"
+                                classCode="ASSIGNED">
+               <attribute name="classCode" value="ASSIGNED"/>
+               <hl7:id original="hl7:id"
+                       withpredicate="hl7:id"
+                       label="(CDAauthor)"
+                       cardconf="1 … * Required"
+                       datatype="II"
+                       minimumMultiplicity="1"
+                       maximumMultiplicity="*"
+                       conformance="R"/>
+               <hl7:code original="hl7:code"
+                         withpredicate="hl7:code"
+                         label="(CDAauthor)"
+                         cardconf="0 … 1"
+                         datatype="CE"
+                         minimumMultiplicity="0"
+                         maximumMultiplicity="1"/>
+               <hl7:addr original="hl7:addr"
+                         withpredicate="hl7:addr"
+                         label="(CDAauthor)"
+                         cardconf="0 … *"
+                         datatype="AD"
+                         minimumMultiplicity="0"
+                         maximumMultiplicity="*"/>
+               <hl7:telecom original="hl7:telecom"
+                            withpredicate="hl7:telecom"
+                            label="(CDAauthor)"
+                            cardconf="0 … *"
+                            datatype="TEL"
+                            minimumMultiplicity="0"
+                            maximumMultiplicity="*"/>
+               <choice minimumMultiplicity="0" maximumMultiplicity="1" cardconf="0 … 1">
+                  <hl7:assignedPerson original="hl7:assignedPerson"
+                                      withpredicate="hl7:assignedPerson"
+                                      label="(CDAPerson)"
+                                      classCode="PSN"
+                                      determinerCode="INSTANCE">
+                     <attribute name="classCode" value="PSN"/>
+                     <attribute name="determinerCode" value="INSTANCE"/>
+                     <hl7:name original="hl7:name"
+                               withpredicate="hl7:name"
+                               label="(CDAPerson)"
+                               cardconf="1 … *"
+                               datatype="PN"
+                               minimumMultiplicity="1"
+                               maximumMultiplicity="*"/>
+                  </hl7:assignedPerson>
+                  <hl7:assignedAuthoringDevice original="hl7:assignedAuthoringDevice"
+                                               withpredicate="hl7:assignedAuthoringDevice"
+                                               label="(CDADevice)"
+                                               classCode="DEV"
+                                               determinerCode="INSTANCE">
+                     <attribute name="classCode" value="DEV"/>
+                     <attribute name="determinerCode" value="INSTANCE"/>
+                     <hl7:code original="hl7:code"
+                               withpredicate="hl7:code"
+                               label="(CDADevice)"
+                               cardconf="0 … 1"
+                               datatype="CE"
+                               minimumMultiplicity="0"
+                               maximumMultiplicity="1"
+                               valueSet="2.16.840.1.113883.1.11.16040"/>
+                     <hl7:manufacturerModelName original="hl7:manufacturerModelName"
+                                                withpredicate="hl7:manufacturerModelName"
+                                                label="(CDADevice)"
+                                                cardconf="0 … 1"
+                                                datatype="SC"
+                                                minimumMultiplicity="0"
+                                                maximumMultiplicity="1"/>
+                     <hl7:softwareName original="hl7:softwareName"
+                                       withpredicate="hl7:softwareName"
+                                       label="(CDADevice)"
+                                       cardconf="0 … 1"
+                                       datatype="SC"
+                                       minimumMultiplicity="0"
+                                       maximumMultiplicity="1"/>
+                  </hl7:assignedAuthoringDevice>
+               </choice>
+               <hl7:representedOrganization original="hl7:representedOrganization"
+                                            withpredicate="hl7:representedOrganization"
+                                            label="(CDAOrganization)"
+                                            cardconf="0 … 1"
+                                            minimumMultiplicity="0"
+                                            maximumMultiplicity="1"
+                                            classCode="ORG"
+                                            determinerCode="INSTANCE">
+                  <attribute name="classCode" value="ORG"/>
+                  <attribute name="determinerCode" value="INSTANCE"/>
+                  <hl7:id original="hl7:id"
+                          withpredicate="hl7:id"
+                          label="(CDAOrganization)"
+                          cardconf="0 … *"
+                          datatype="II"
+                          minimumMultiplicity="0"
+                          maximumMultiplicity="*"/>
+                  <hl7:name original="hl7:name"
+                            withpredicate="hl7:name"
+                            label="(CDAOrganization)"
+                            cardconf="0 … *"
+                            datatype="ON"
+                            minimumMultiplicity="0"
+                            maximumMultiplicity="*"/>
+                  <hl7:telecom original="hl7:telecom"
+                               withpredicate="hl7:telecom"
+                               label="(CDAOrganization)"
+                               cardconf="0 … *"
+                               datatype="TEL"
+                               minimumMultiplicity="0"
+                               maximumMultiplicity="*"/>
+                  <hl7:addr original="hl7:addr"
+                            withpredicate="hl7:addr"
+                            label="(CDAOrganization)"
+                            cardconf="0 … *"
+                            datatype="AD"
+                            minimumMultiplicity="0"
+                            maximumMultiplicity="*"/>
+                  <hl7:standardIndustryClassCode original="hl7:standardIndustryClassCode"
+                                                 withpredicate="hl7:standardIndustryClassCode"
+                                                 label="(CDAOrganization)"
+                                                 cardconf="0 … 1"
+                                                 datatype="CE"
+                                                 minimumMultiplicity="0"
+                                                 maximumMultiplicity="1"/>
+                  <hl7:asOrganizationPartOf original="hl7:asOrganizationPartOf"
+                                            withpredicate="hl7:asOrganizationPartOf"
+                                            label="(CDAOrganization)"
+                                            cardconf="0 … 1"
+                                            minimumMultiplicity="0"
+                                            maximumMultiplicity="1"
+                                            classCode="PART">
+                     <attribute name="classCode" value="PART"/>
+                     <hl7:id original="hl7:id"
+                             withpredicate="hl7:id"
+                             label="(CDAOrganization)"
+                             cardconf="0 … * Required"
+                             datatype="II"
+                             minimumMultiplicity="0"
+                             maximumMultiplicity="*"
+                             conformance="R"/>
+                     <hl7:code original="hl7:code"
+                               withpredicate="hl7:code"
+                               label="(CDAOrganization)"
+                               cardconf="0 … 1"
+                               datatype="CE"
+                               minimumMultiplicity="0"
+                               maximumMultiplicity="1"/>
+                     <hl7:statusCode original="hl7:statusCode"
+                                     withpredicate="hl7:statusCode[@code = doc('include/voc-2.16.840.1.113883.1.11.15999-DYNAMIC.xml')//valueSet[1]/conceptList/*/@code or @nullFlavor]"
+                                     label="(CDAOrganization)"
+                                     cardconf="0 … 1"
+                                     datatype="CS"
+                                     minimumMultiplicity="0"
+                                     maximumMultiplicity="1"
+                                     valueSet="2.16.840.1.113883.1.11.15999"/>
+                     <hl7:effectiveTime original="hl7:effectiveTime"
+                                        withpredicate="hl7:effectiveTime"
+                                        label="(CDAOrganization)"
+                                        cardconf="0 … 1"
+                                        datatype="IVL_TS"
+                                        minimumMultiplicity="0"
+                                        maximumMultiplicity="1"/>
+                     <hl7:wholeOrganization original="hl7:wholeOrganization"
+                                            withpredicate="hl7:wholeOrganization"
+                                            label="(CDAOrganization)"
+                                            cardconf="0 … 1"
+                                            minimumMultiplicity="0"
+                                            maximumMultiplicity="1"
+                                            classCode="ORG"
+                                            determinerCode="INSTANCE">
+                        <attribute name="classCode" value="ORG"/>
+                        <attribute name="determinerCode" value="INSTANCE"/>
+                        <hl7:id original="hl7:id"
+                                withpredicate="hl7:id"
+                                label="(CDAOrganization)"
+                                cardconf="0 … *"
+                                datatype="II"
+                                minimumMultiplicity="0"
+                                maximumMultiplicity="*"/>
+                        <hl7:name original="hl7:name"
+                                  withpredicate="hl7:name"
+                                  label="(CDAOrganization)"
+                                  cardconf="0 … *"
+                                  datatype="ON"
+                                  minimumMultiplicity="0"
+                                  maximumMultiplicity="*"/>
+                        <hl7:telecom original="hl7:telecom"
+                                     withpredicate="hl7:telecom"
+                                     label="(CDAOrganization)"
+                                     cardconf="0 … *"
+                                     datatype="TEL"
+                                     minimumMultiplicity="0"
+                                     maximumMultiplicity="*"/>
+                        <hl7:addr original="hl7:addr"
+                                  withpredicate="hl7:addr"
+                                  label="(CDAOrganization)"
+                                  cardconf="0 … *"
+                                  datatype="AD"
+                                  minimumMultiplicity="0"
+                                  maximumMultiplicity="*"/>
+                        <hl7:standardIndustryClassCode original="hl7:standardIndustryClassCode"
+                                                       withpredicate="hl7:standardIndustryClassCode"
+                                                       label="(CDAOrganization)"
+                                                       cardconf="0 … 1"
+                                                       datatype="CE"
+                                                       minimumMultiplicity="0"
+                                                       maximumMultiplicity="1"/>
+                     </hl7:wholeOrganization>
+                  </hl7:asOrganizationPartOf>
+               </hl7:representedOrganization>
+            </hl7:assignedAuthor>
+         </hl7:author>
+         <hl7:informant original="hl7:informant"
+                        withpredicate="hl7:informant"
+                        label="(MS_Informant)"
+                        cardconf="0 … *"
+                        minimumMultiplicity="0"
+                        maximumMultiplicity="*"
+                        typeCode="INF"
+                        contextControlCode="OP">
+            <attribute name="typeCode" value="INF" datatype="cs"/>
+            <attribute name="contextControlCode" value="OP" datatype="cs"/>
+            <choice minimumMultiplicity="1" maximumMultiplicity="1" cardconf="1 … 1">
+               <hl7:relatedEntity original="hl7:relatedEntity"
+                                  withpredicate="hl7:relatedEntity[@classCode = 'PRS'][hl7:relatedPerson]"
+                                  label="(MS_RelatedEntity)"
+                                  cardconf="1 … 1 Required"
+                                  minimumMultiplicity="1"
+                                  maximumMultiplicity="1"
+                                  conformance="R"
+                                  classCode="PRS">
+                  <attribute name="classCode" value="PRS" datatype="cs"/>
+                  <hl7:code original="hl7:code"
+                            withpredicate="hl7:code"
+                            label="(MS_RelatedEntity)"
+                            cardconf="0 … 1"
+                            datatype="CE"
+                            minimumMultiplicity="0"
+                            maximumMultiplicity="1"/>
+                  <hl7:addr original="hl7:addr"
+                            withpredicate="hl7:addr"
+                            label="(MS_addr2023)"
+                            cardconf="1 … 1 Required"
+                            datatype="AD"
+                            minimumMultiplicity="1"
+                            maximumMultiplicity="1"
+                            conformance="R"
+                            use="…">
+                     <attribute name="use" datatype="set_cs"/>
+                     <hl7:streetAddressLine original="hl7:streetAddressLine"
+                                            withpredicate="hl7:streetAddressLine"
+                                            label="(MS_addr2023)"
+                                            cardconf="0 … 1"
+                                            datatype="ST"
+                                            minimumMultiplicity="0"
+                                            maximumMultiplicity="1"/>
+                     <hl7:postalCode original="hl7:postalCode"
+                                     withpredicate="hl7:postalCode"
+                                     label="(MS_addr2023)"
+                                     cardconf="0 … 1"
+                                     datatype="ST"
+                                     minimumMultiplicity="0"
+                                     maximumMultiplicity="1"/>
+                     <hl7:city original="hl7:city"
+                               withpredicate="hl7:city"
+                               label="(MS_addr2023)"
+                               cardconf="0 … 1"
+                               datatype="ST"
+                               minimumMultiplicity="0"
+                               maximumMultiplicity="1"/>
+                     <hl7:additionalLocator original="hl7:additionalLocator"
+                                            withpredicate="hl7:additionalLocator"
+                                            label="(MS_addr2023)"
+                                            cardconf="0 … 1"
+                                            datatype="ST"
+                                            minimumMultiplicity="0"
+                                            maximumMultiplicity="1"/>
+                     <hl7:country original="hl7:country"
+                                  withpredicate="hl7:country"
+                                  label="(MS_addr2023)"
+                                  cardconf="0 … 1"
+                                  datatype="ST"
+                                  minimumMultiplicity="0"
+                                  maximumMultiplicity="1"/>
+                  </hl7:addr>
+                  <hl7:telecom original="hl7:telecom"
+                               withpredicate="hl7:telecom"
+                               label="(MS_telecom)"
+                               cardconf="0 … 2"
+                               datatype="TEL"
+                               minimumMultiplicity="0"
+                               maximumMultiplicity="2"
+                               use="…"
+                               value="…">
+                     <attribute name="use" datatype="cs"/>
+                     <attribute name="value" datatype="url"/>
+                  </hl7:telecom>
+                  <cnsaSDO:autoriteParentale original="cnsaSDO:autoriteParentale"
+                                             withpredicate="cnsaSDO:autoriteParentale"
+                                             label="(MS_RelatedEntity)"
+                                             cardconf="1 … 1 Required"
+                                             datatype="BL"
+                                             minimumMultiplicity="1"
+                                             maximumMultiplicity="1"
+                                             conformance="R"/>
+                  <hl7:relatedPerson original="hl7:relatedPerson"
+                                     withpredicate="hl7:relatedPerson"
+                                     label="(MS_Person)"
+                                     cardconf="1 … 1 Required"
+                                     minimumMultiplicity="1"
+                                     maximumMultiplicity="1"
+                                     conformance="R"
+                                     classCode="PSN"
+                                     determinerCode="INSTANCE">
+                     <attribute name="classCode" value="PSN" datatype="cs"/>
+                     <attribute name="determinerCode" value="INSTANCE" datatype="cs"/>
+                     <hl7:name original="hl7:name"
+                               withpredicate="hl7:name[not(@nullFlavor)][hl7:family]"
+                               label="(MS_Person)"
+                               cardconf="1 … 1 Mandatory"
+                               datatype="PN"
+                               minimumMultiplicity="1"
+                               maximumMultiplicity="1"
+                               conformance="R"
+                               isMandatory="true">
+                        <hl7:family original="hl7:family"
+                                    withpredicate="hl7:family[not(@nullFlavor)]"
+                                    label="(MS_Person)"
+                                    cardconf="1 … 3 Mandatory"
+                                    minimumMultiplicity="1"
+                                    maximumMultiplicity="3"
+                                    conformance="R"
+                                    isMandatory="true"/>
+                        <hl7:given original="hl7:given"
+                                   withpredicate="hl7:given"
+                                   label="(MS_Person)"
+                                   cardconf="0 … 3"
+                                   minimumMultiplicity="0"
+                                   maximumMultiplicity="3"/>
+                        <hl7:prefix original="hl7:prefix"
+                                    withpredicate="hl7:prefix"
+                                    label="(MS_Person)"
+                                    cardconf="0 … 1"
+                                    minimumMultiplicity="0"
+                                    maximumMultiplicity="1"/>
+                     </hl7:name>
+                     <cnsaTDD:dateNaissance original="cnsaTDD:dateNaissance"
+                                            withpredicate="cnsaTDD:dateNaissance"
+                                            label="(MS_Person)"
+                                            cardconf="0 … 1"
+                                            datatype="TS"
+                                            minimumMultiplicity="0"
+                                            maximumMultiplicity="1"/>
+                  </hl7:relatedPerson>
+               </hl7:relatedEntity>
+            </choice>
+         </hl7:informant>
+         <hl7:custodian original="hl7:custodian"
+                        withpredicate="hl7:custodian[hl7:assignedCustodian]"
+                        label="(CDAcustodian)"
+                        cardconf="1 … 1 Required"
+                        minimumMultiplicity="1"
+                        maximumMultiplicity="1"
+                        conformance="R"
+                        typeCode="CST">
+            <attribute name="typeCode" value="CST"/>
+            <hl7:assignedCustodian original="hl7:assignedCustodian"
+                                   withpredicate="hl7:assignedCustodian[hl7:representedCustodianOrganization]"
+                                   label="(CDAcustodian)"
+                                   cardconf="1 … 1"
+                                   minimumMultiplicity="1"
+                                   maximumMultiplicity="1"
+                                   classCode="ASSIGNED">
+               <attribute name="classCode" value="ASSIGNED"/>
+               <hl7:representedCustodianOrganization original="hl7:representedCustodianOrganization"
+                                                     withpredicate="hl7:representedCustodianOrganization"
+                                                     label="(CDAcustodian)"
+                                                     cardconf="1 … 1"
+                                                     minimumMultiplicity="1"
+                                                     maximumMultiplicity="1"
+                                                     classCode="ORG"
+                                                     determinerCode="INSTANCE">
+                  <attribute name="classCode" value="ORG"/>
+                  <attribute name="determinerCode" value="INSTANCE"/>
+                  <hl7:id original="hl7:id"
+                          withpredicate="hl7:id[not(@nullFlavor)]"
+                          label="(CDAcustodian)"
+                          cardconf="1 … * Mandatory"
+                          datatype="II"
+                          minimumMultiplicity="1"
+                          maximumMultiplicity="*"
+                          conformance="R"
+                          isMandatory="true"/>
+                  <hl7:name original="hl7:name"
+                            withpredicate="hl7:name"
+                            label="(CDAcustodian)"
+                            cardconf="0 … 1"
+                            datatype="ON"
+                            minimumMultiplicity="0"
+                            maximumMultiplicity="1"/>
+                  <hl7:telecom original="hl7:telecom"
+                               withpredicate="hl7:telecom"
+                               label="(CDAcustodian)"
+                               cardconf="0 … 1"
+                               datatype="TEL"
+                               minimumMultiplicity="0"
+                               maximumMultiplicity="1"/>
+                  <hl7:addr original="hl7:addr"
+                            withpredicate="hl7:addr"
+                            label="(CDAcustodian)"
+                            cardconf="0 … 1"
+                            datatype="AD"
+                            minimumMultiplicity="0"
+                            maximumMultiplicity="1"/>
+               </hl7:representedCustodianOrganization>
+            </hl7:assignedCustodian>
+         </hl7:custodian>
+         <hl7:informationRecipient original="hl7:informationRecipient"
+                                   withpredicate="hl7:informationRecipient[@typeCode = 'PRCP'][hl7:intendedRecipient[@classCode = 'ASSIGNED']]"
+                                   label="(MS_informationRecipient)"
+                                   cardconf="0 … *"
+                                   minimumMultiplicity="0"
+                                   maximumMultiplicity="*"
+                                   typeCode="PRCP">
+            <attribute name="typeCode" value="PRCP" datatype="cs"/>
+            <hl7:intendedRecipient original="hl7:intendedRecipient"
+                                   withpredicate="hl7:intendedRecipient[@classCode = 'ASSIGNED'][hl7:receivedOrganization]"
+                                   label="(MS_informationRecipient)"
+                                   cardconf="1 … 1 Required"
+                                   minimumMultiplicity="1"
+                                   maximumMultiplicity="1"
+                                   conformance="R"
+                                   classCode="ASSIGNED">
+               <attribute name="classCode" value="ASSIGNED" datatype="cs"/>
+               <hl7:id original="hl7:id"
+                       withpredicate="hl7:id"
+                       label="(MS_informationRecipient)"
+                       cardconf="0 … * Required"
+                       datatype="II"
+                       minimumMultiplicity="0"
+                       maximumMultiplicity="*"
+                       conformance="R"/>
+               <hl7:addr original="hl7:addr"
+                         withpredicate="hl7:addr"
+                         label="(MS_informationRecipient)"
+                         cardconf="0 … *"
+                         datatype="AD"
+                         minimumMultiplicity="0"
+                         maximumMultiplicity="*"/>
+               <hl7:telecom original="hl7:telecom"
+                            withpredicate="hl7:telecom"
+                            label="(MS_informationRecipient)"
+                            cardconf="0 … *"
+                            datatype="TEL"
+                            minimumMultiplicity="0"
+                            maximumMultiplicity="*"/>
+               <hl7:informationRecipient original="hl7:informationRecipient"
+                                         withpredicate="hl7:informationRecipient"
+                                         label="(CDAPerson)"
+                                         cardconf="0 … 1"
+                                         minimumMultiplicity="0"
+                                         maximumMultiplicity="1"
+                                         classCode="PSN"
+                                         determinerCode="INSTANCE">
+                  <attribute name="classCode" value="PSN"/>
+                  <attribute name="determinerCode" value="INSTANCE"/>
+                  <hl7:name original="hl7:name"
+                            withpredicate="hl7:name"
+                            label="(CDAPerson)"
+                            cardconf="1 … *"
+                            datatype="PN"
+                            minimumMultiplicity="1"
+                            maximumMultiplicity="*"/>
+               </hl7:informationRecipient>
+               <hl7:receivedOrganization original="hl7:receivedOrganization"
+                                         withpredicate="hl7:receivedOrganization"
+                                         label="(CDAOrganization)"
+                                         cardconf="1 … 1 Required"
+                                         minimumMultiplicity="1"
+                                         maximumMultiplicity="1"
+                                         conformance="R"
+                                         classCode="ORG"
+                                         determinerCode="INSTANCE">
+                  <attribute name="classCode" value="ORG"/>
+                  <attribute name="determinerCode" value="INSTANCE"/>
+                  <hl7:id original="hl7:id"
+                          withpredicate="hl7:id"
+                          label="(CDAOrganization)"
+                          cardconf="0 … *"
+                          datatype="II"
+                          minimumMultiplicity="0"
+                          maximumMultiplicity="*"/>
+                  <hl7:name original="hl7:name"
+                            withpredicate="hl7:name"
+                            label="(CDAOrganization)"
+                            cardconf="0 … *"
+                            datatype="ON"
+                            minimumMultiplicity="0"
+                            maximumMultiplicity="*"/>
+                  <hl7:telecom original="hl7:telecom"
+                               withpredicate="hl7:telecom"
+                               label="(CDAOrganization)"
+                               cardconf="0 … *"
+                               datatype="TEL"
+                               minimumMultiplicity="0"
+                               maximumMultiplicity="*"/>
+                  <hl7:addr original="hl7:addr"
+                            withpredicate="hl7:addr"
+                            label="(CDAOrganization)"
+                            cardconf="0 … *"
+                            datatype="AD"
+                            minimumMultiplicity="0"
+                            maximumMultiplicity="*"/>
+                  <hl7:standardIndustryClassCode original="hl7:standardIndustryClassCode"
+                                                 withpredicate="hl7:standardIndustryClassCode"
+                                                 label="(CDAOrganization)"
+                                                 cardconf="0 … 1"
+                                                 datatype="CE"
+                                                 minimumMultiplicity="0"
+                                                 maximumMultiplicity="1"/>
+                  <hl7:asOrganizationPartOf original="hl7:asOrganizationPartOf"
+                                            withpredicate="hl7:asOrganizationPartOf"
+                                            label="(CDAOrganization)"
+                                            cardconf="0 … 1"
+                                            minimumMultiplicity="0"
+                                            maximumMultiplicity="1"
+                                            classCode="PART">
+                     <attribute name="classCode" value="PART"/>
+                     <hl7:id original="hl7:id"
+                             withpredicate="hl7:id"
+                             label="(CDAOrganization)"
+                             cardconf="0 … * Required"
+                             datatype="II"
+                             minimumMultiplicity="0"
+                             maximumMultiplicity="*"
+                             conformance="R"/>
+                     <hl7:code original="hl7:code"
+                               withpredicate="hl7:code"
+                               label="(CDAOrganization)"
+                               cardconf="0 … 1"
+                               datatype="CE"
+                               minimumMultiplicity="0"
+                               maximumMultiplicity="1"/>
+                     <hl7:statusCode original="hl7:statusCode"
+                                     withpredicate="hl7:statusCode[@code = doc('include/voc-2.16.840.1.113883.1.11.15999-DYNAMIC.xml')//valueSet[1]/conceptList/*/@code or @nullFlavor]"
+                                     label="(CDAOrganization)"
+                                     cardconf="0 … 1"
+                                     datatype="CS"
+                                     minimumMultiplicity="0"
+                                     maximumMultiplicity="1"
+                                     valueSet="2.16.840.1.113883.1.11.15999"/>
+                     <hl7:effectiveTime original="hl7:effectiveTime"
+                                        withpredicate="hl7:effectiveTime"
+                                        label="(CDAOrganization)"
+                                        cardconf="0 … 1"
+                                        datatype="IVL_TS"
+                                        minimumMultiplicity="0"
+                                        maximumMultiplicity="1"/>
+                     <hl7:wholeOrganization original="hl7:wholeOrganization"
+                                            withpredicate="hl7:wholeOrganization"
+                                            label="(CDAOrganization)"
+                                            cardconf="0 … 1"
+                                            minimumMultiplicity="0"
+                                            maximumMultiplicity="1"
+                                            classCode="ORG"
+                                            determinerCode="INSTANCE">
+                        <attribute name="classCode" value="ORG"/>
+                        <attribute name="determinerCode" value="INSTANCE"/>
+                        <hl7:id original="hl7:id"
+                                withpredicate="hl7:id"
+                                label="(CDAOrganization)"
+                                cardconf="0 … *"
+                                datatype="II"
+                                minimumMultiplicity="0"
+                                maximumMultiplicity="*"/>
+                        <hl7:name original="hl7:name"
+                                  withpredicate="hl7:name"
+                                  label="(CDAOrganization)"
+                                  cardconf="0 … *"
+                                  datatype="ON"
+                                  minimumMultiplicity="0"
+                                  maximumMultiplicity="*"/>
+                        <hl7:telecom original="hl7:telecom"
+                                     withpredicate="hl7:telecom"
+                                     label="(CDAOrganization)"
+                                     cardconf="0 … *"
+                                     datatype="TEL"
+                                     minimumMultiplicity="0"
+                                     maximumMultiplicity="*"/>
+                        <hl7:addr original="hl7:addr"
+                                  withpredicate="hl7:addr"
+                                  label="(CDAOrganization)"
+                                  cardconf="0 … *"
+                                  datatype="AD"
+                                  minimumMultiplicity="0"
+                                  maximumMultiplicity="*"/>
+                        <hl7:standardIndustryClassCode original="hl7:standardIndustryClassCode"
+                                                       withpredicate="hl7:standardIndustryClassCode"
+                                                       label="(CDAOrganization)"
+                                                       cardconf="0 … 1"
+                                                       datatype="CE"
+                                                       minimumMultiplicity="0"
+                                                       maximumMultiplicity="1"/>
+                     </hl7:wholeOrganization>
+                  </hl7:asOrganizationPartOf>
+               </hl7:receivedOrganization>
+            </hl7:intendedRecipient>
+         </hl7:informationRecipient>
+         <hl7:participant original="hl7:participant"
+                          withpredicate="hl7:participant[hl7:associatedEntity[hl7:code[concat(@code, @codeSystem) = doc('include/voc-1.2.250.1.213.3.4.123-DYNAMIC.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor]]]"
+                          label="(MS_Participant)"
+                          cardconf="0 … *"
+                          minimumMultiplicity="0"
+                          maximumMultiplicity="*"
+                          typeCode="…"
+                          contextControlCode="OP">
+            <attribute name="typeCode" datatype="cs"/>
+            <attribute name="contextControlCode" value="OP" datatype="cs"/>
+            <hl7:functionCode original="hl7:functionCode"
+                              withpredicate="hl7:functionCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.1.11.10267-DYNAMIC.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor]"
+                              label="(MS_Participant)"
+                              cardconf="0 … 1"
+                              datatype="CE"
+                              minimumMultiplicity="0"
+                              maximumMultiplicity="1"
+                              valueSet="2.16.840.1.113883.1.11.10267"/>
+            <hl7:time original="hl7:time"
+                      withpredicate="hl7:time"
+                      label="(MS_Participant)"
+                      cardconf="0 … 1"
+                      datatype="IVL_TS"
+                      minimumMultiplicity="0"
+                      maximumMultiplicity="1"/>
+            <hl7:associatedEntity original="hl7:associatedEntity"
+                                  withpredicate="hl7:associatedEntity[hl7:code[concat(@code, @codeSystem) = doc('include/voc-1.2.250.1.213.3.4.123-DYNAMIC.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor]]"
+                                  label="(MS_Participant)"
+                                  cardconf="1 … 1 Required"
+                                  minimumMultiplicity="1"
+                                  maximumMultiplicity="1"
+                                  conformance="R"
+                                  classCode="…">
+               <attribute name="classCode" datatype="cs"/>
+               <hl7:id original="hl7:id"
+                       withpredicate="hl7:id"
+                       label="(MS_Participant)"
+                       cardconf="0 … *"
+                       datatype="II"
+                       minimumMultiplicity="0"
+                       maximumMultiplicity="*"/>
+               <hl7:code original="hl7:code"
+                         withpredicate="hl7:code[concat(@code, @codeSystem) = doc('include/voc-1.2.250.1.213.3.4.123-DYNAMIC.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor]"
+                         label="(MS_Participant)"
+                         cardconf="1 … 1 Required"
+                         datatype="CE"
+                         minimumMultiplicity="1"
+                         maximumMultiplicity="1"
+                         conformance="R"
+                         valueSet="1.2.250.1.213.3.4.123"
+                         flexibility="dynamic"/>
+               <hl7:addr original="hl7:addr"
+                         withpredicate="hl7:addr"
+                         label="(MS_addr2023)"
+                         cardconf="1 … 1 Required"
+                         datatype="AD"
+                         minimumMultiplicity="1"
+                         maximumMultiplicity="1"
+                         conformance="R"
+                         use="…">
+                  <attribute name="use" datatype="set_cs"/>
+                  <hl7:streetAddressLine original="hl7:streetAddressLine"
+                                         withpredicate="hl7:streetAddressLine"
+                                         label="(MS_addr2023)"
+                                         cardconf="0 … 1"
+                                         datatype="ST"
+                                         minimumMultiplicity="0"
+                                         maximumMultiplicity="1"/>
+                  <hl7:postalCode original="hl7:postalCode"
+                                  withpredicate="hl7:postalCode"
+                                  label="(MS_addr2023)"
+                                  cardconf="0 … 1"
+                                  datatype="ST"
+                                  minimumMultiplicity="0"
+                                  maximumMultiplicity="1"/>
+                  <hl7:city original="hl7:city"
+                            withpredicate="hl7:city"
+                            label="(MS_addr2023)"
+                            cardconf="0 … 1"
+                            datatype="ST"
+                            minimumMultiplicity="0"
+                            maximumMultiplicity="1"/>
+                  <hl7:additionalLocator original="hl7:additionalLocator"
+                                         withpredicate="hl7:additionalLocator"
+                                         label="(MS_addr2023)"
+                                         cardconf="0 … 1"
+                                         datatype="ST"
+                                         minimumMultiplicity="0"
+                                         maximumMultiplicity="1"/>
+                  <hl7:country original="hl7:country"
+                               withpredicate="hl7:country"
+                               label="(MS_addr2023)"
+                               cardconf="0 … 1"
+                               datatype="ST"
+                               minimumMultiplicity="0"
+                               maximumMultiplicity="1"/>
+               </hl7:addr>
+               <hl7:telecom original="hl7:telecom"
+                            withpredicate="hl7:telecom"
+                            label="(MS_telecom)"
+                            cardconf="0 … 3"
+                            datatype="TEL"
+                            minimumMultiplicity="0"
+                            maximumMultiplicity="3"
+                            use="…"
+                            value="…">
+                  <attribute name="use" datatype="cs"/>
+                  <attribute name="value" datatype="url"/>
+               </hl7:telecom>
+               <hl7:associatedPerson original="hl7:associatedPerson"
+                                     withpredicate="hl7:associatedPerson"
+                                     label="(MS_Person)"
+                                     cardconf="0 … 1"
+                                     minimumMultiplicity="0"
+                                     maximumMultiplicity="1"
+                                     classCode="PSN"
+                                     determinerCode="INSTANCE">
+                  <attribute name="classCode" value="PSN" datatype="cs"/>
+                  <attribute name="determinerCode" value="INSTANCE" datatype="cs"/>
+                  <hl7:name original="hl7:name"
+                            withpredicate="hl7:name[not(@nullFlavor)][hl7:family]"
+                            label="(MS_Person)"
+                            cardconf="1 … 1 Mandatory"
+                            datatype="PN"
+                            minimumMultiplicity="1"
+                            maximumMultiplicity="1"
+                            conformance="R"
+                            isMandatory="true">
+                     <hl7:family original="hl7:family"
+                                 withpredicate="hl7:family[not(@nullFlavor)]"
+                                 label="(MS_Person)"
+                                 cardconf="1 … 3 Mandatory"
+                                 minimumMultiplicity="1"
+                                 maximumMultiplicity="3"
+                                 conformance="R"
+                                 isMandatory="true"/>
+                     <hl7:given original="hl7:given"
+                                withpredicate="hl7:given"
+                                label="(MS_Person)"
+                                cardconf="0 … 3"
+                                minimumMultiplicity="0"
+                                maximumMultiplicity="3"/>
+                     <hl7:prefix original="hl7:prefix"
+                                 withpredicate="hl7:prefix"
+                                 label="(MS_Person)"
+                                 cardconf="0 … 1"
+                                 minimumMultiplicity="0"
+                                 maximumMultiplicity="1"/>
+                  </hl7:name>
+                  <cnsaTDD:dateNaissance original="cnsaTDD:dateNaissance"
+                                         withpredicate="cnsaTDD:dateNaissance"
+                                         label="(MS_Person)"
+                                         cardconf="0 … 1"
+                                         datatype="TS"
+                                         minimumMultiplicity="0"
+                                         maximumMultiplicity="1"/>
+               </hl7:associatedPerson>
+               <hl7:scopingOrganization original="hl7:scopingOrganization"
+                                        withpredicate="hl7:scopingOrganization"
+                                        label="(MS_Organization)"
+                                        cardconf="0 … 1"
+                                        minimumMultiplicity="0"
+                                        maximumMultiplicity="1"
+                                        classCode="ORG"
+                                        determinerCode="INSTANCE">
+                  <attribute name="classCode" value="ORG" datatype="cs"/>
+                  <attribute name="determinerCode" value="INSTANCE" datatype="cs"/>
+                  <hl7:name original="hl7:name"
+                            withpredicate="hl7:name"
+                            label="(MS_Organization)"
+                            cardconf="1 … 1 Required"
+                            datatype="ON"
+                            minimumMultiplicity="1"
+                            maximumMultiplicity="1"
+                            conformance="R"/>
+                  <cnsaTDD:interlocuteur original="cnsaTDD:interlocuteur"
+                                         withpredicate="cnsaTDD:interlocuteur"
+                                         label="(MS_Organization)"
+                                         cardconf="0 … 1"
+                                         datatype="ST"
+                                         minimumMultiplicity="0"
+                                         maximumMultiplicity="1"/>
+               </hl7:scopingOrganization>
+            </hl7:associatedEntity>
+         </hl7:participant>
+         <hl7:component original="hl7:component"
+                        withpredicate="hl7:component[hl7:structuredBody]"
+                        label="MS_TDD_MISPE"
+                        cardconf="1 … 1 Required"
+                        minimumMultiplicity="1"
+                        maximumMultiplicity="1"
+                        conformance="R"
+                        typeCode="COMP">
+            <attribute name="typeCode" value="COMP" datatype="cs"/>
+            <hl7:structuredBody original="hl7:structuredBody"
+                                withpredicate="hl7:structuredBody"
+                                label="MS_TDD_MISPE"
+                                cardconf="1 … 1 Required"
+                                minimumMultiplicity="1"
+                                maximumMultiplicity="1"
+                                conformance="R"
+                                classCode="DOCBODY"
+                                moodCode="EVN">
+               <attribute name="classCode" value="DOCBODY" datatype="cs"/>
+               <attribute name="moodCode" value="EVN" datatype="cs"/>
+               <hl7:confidentialityCode original="hl7:confidentialityCode"
+                                        withpredicate="hl7:confidentialityCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.1.11.16926-DYNAMIC.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor]"
+                                        label="MS_TDD_MISPE"
+                                        cardconf="0 … 1"
+                                        datatype="CE"
+                                        minimumMultiplicity="0"
+                                        maximumMultiplicity="1"
+                                        valueSet="2.16.840.1.113883.1.11.16926"/>
+               <hl7:component original="hl7:component[hl7:section[hl7:templateId[@root='1.2.250.1.213.1.1.2.238']]]"
+                              withpredicate="hl7:component[hl7:section[hl7:templateId[@root='1.2.250.1.213.1.1.2.238']]]"
+                              label="MS_TDD_MISPE"
+                              cardconf="0 … *"
+                              minimumMultiplicity="0"
+                              maximumMultiplicity="*">
+                  <hl7:section original="hl7:section"
+                               withpredicate="hl7:section[hl7:templateId[@root = '1.2.250.1.213.1.1.2.238']]"
+                               label="(FR-MS-sollicitationMISPE2023)"
+                               cardconf="1 … 1 Required"
+                               minimumMultiplicity="1"
+                               maximumMultiplicity="1"
+                               conformance="R">
+                     <hl7:templateId original="hl7:templateId"
+                                     withpredicate="hl7:templateId[@root = '1.2.250.1.213.1.1.2.238']"
+                                     label="(FR-MS-sollicitationMISPE2023)"
+                                     cardconf="1 … 1 Required"
+                                     datatype="II"
+                                     minimumMultiplicity="1"
+                                     maximumMultiplicity="1"
+                                     conformance="R"
+                                     root="1.2.250.1.213.1.1.2.238">
+                        <attribute name="root" value="1.2.250.1.213.1.1.2.238" datatype="uid"/>
+                     </hl7:templateId>
+                     <cnsaTDD:sollicitationMispe original="cnsaTDD:sollicitationMispe"
+                                                 withpredicate="cnsaTDD:sollicitationMispe[cnsaTDD:origineDeLaSollicitation[concat(@code, @codeSystem) = doc('include/voc-1.2.250.1.213.3.4.179-DYNAMIC.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor]]"
+                                                 label="(FR-MS-sollicitationMISPE2023)"
+                                                 cardconf="1 … 1 Required"
+                                                 minimumMultiplicity="1"
+                                                 maximumMultiplicity="1"
+                                                 conformance="R">
+                        <cnsaTDD:dateDeLaSollicitation original="cnsaTDD:dateDeLaSollicitation"
+                                                       withpredicate="cnsaTDD:dateDeLaSollicitation"
+                                                       label="(FR-MS-sollicitationMISPE2023)"
+                                                       cardconf="1 … 1 Required"
+                                                       datatype="TS"
+                                                       minimumMultiplicity="1"
+                                                       maximumMultiplicity="1"
+                                                       conformance="R"/>
+                        <cnsaTDD:origineDeLaSollicitation original="cnsaTDD:origineDeLaSollicitation"
+                                                          withpredicate="cnsaTDD:origineDeLaSollicitation[concat(@code, @codeSystem) = doc('include/voc-1.2.250.1.213.3.4.179-DYNAMIC.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor]"
+                                                          label="(FR-MS-sollicitationMISPE2023)"
+                                                          cardconf="1 … 1 Required"
+                                                          datatype="CE"
+                                                          minimumMultiplicity="1"
+                                                          maximumMultiplicity="1"
+                                                          conformance="R"
+                                                          valueSet="1.2.250.1.213.3.4.179"
+                                                          flexibility="dynamic"/>
+                        <cnsaTDD:reponseMdph original="cnsaTDD:reponseMdph"
+                                             withpredicate="cnsaTDD:reponseMdph[concat(@code, @codeSystem) = doc('include/voc-1.2.250.1.213.3.4.185-DYNAMIC.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor]"
+                                             label="(FR-MS-sollicitationMISPE2023)"
+                                             cardconf="1 … 1 Required"
+                                             datatype="CE"
+                                             minimumMultiplicity="1"
+                                             maximumMultiplicity="1"
+                                             conformance="R"
+                                             valueSet="1.2.250.1.213.3.4.185"
+                                             flexibility="dynamic"/>
+                        <cnsaTDD:dateDeReponse original="cnsaTDD:dateDeReponse"
+                                               withpredicate="cnsaTDD:dateDeReponse"
+                                               label="(FR-MS-sollicitationMISPE2023)"
+                                               cardconf="1 … 1 Required"
+                                               datatype="TS"
+                                               minimumMultiplicity="1"
+                                               maximumMultiplicity="1"
+                                               conformance="R"/>
+                        <cnsaTDD:motivation original="cnsaTDD:motivation"
+                                            withpredicate="cnsaTDD:motivation"
+                                            label="(FR-MS-sollicitationMISPE2023)"
+                                            cardconf="1 … * Required"
+                                            datatype="ST"
+                                            minimumMultiplicity="1"
+                                            maximumMultiplicity="*"
+                                            conformance="R"/>
+                        <cnsaTDD:precision original="cnsaTDD:precision"
+                                           withpredicate="cnsaTDD:precision"
+                                           label="(FR-MS-sollicitationMISPE2023)"
+                                           cardconf="0 … *"
+                                           datatype="ST"
+                                           minimumMultiplicity="0"
+                                           maximumMultiplicity="*"/>
+                        <cnsaTDD:idClasse original="cnsaTDD:idClasse"
+                                          withpredicate="cnsaTDD:idClasse"
+                                          label="(FR-MS-sollicitationMISPE2023)"
+                                          cardconf="1 … 2 Required"
+                                          datatype="II"
+                                          minimumMultiplicity="1"
+                                          maximumMultiplicity="2"
+                                          conformance="R"/>
+                        <cnsaTDD:ClasseLiee original="cnsaTDD:ClasseLiee"
+                                            withpredicate="cnsaTDD:ClasseLiee"
+                                            label="(MS_ClasseLiee_DonneesNonStructurees)"
+                                            cardconf="0 … *"
+                                            minimumMultiplicity="0"
+                                            maximumMultiplicity="*">
+                           <cnsaTDD:nomClasseLiee original="cnsaTDD:nomClasseLiee"
+                                                  withpredicate="cnsaTDD:nomClasseLiee"
+                                                  label="(MS_ClasseLiee_DonneesNonStructurees)"
+                                                  cardconf="1 … 1 Required"
+                                                  datatype="ST"
+                                                  minimumMultiplicity="1"
+                                                  maximumMultiplicity="1"
+                                                  conformance="R"/>
+                           <cnsaTDD:idClasseLiee original="cnsaTDD:idClasseLiee"
+                                                 withpredicate="cnsaTDD:idClasseLiee"
+                                                 label="(MS_ClasseLiee_DonneesNonStructurees)"
+                                                 cardconf="1 … 1 Required"
+                                                 datatype="II"
+                                                 minimumMultiplicity="1"
+                                                 maximumMultiplicity="1"
+                                                 conformance="R"/>
+                        </cnsaTDD:ClasseLiee>
+                        <cnsaTDD:donneesNonStructurees original="cnsaTDD:donneesNonStructurees"
+                                                       withpredicate="cnsaTDD:donneesNonStructurees"
+                                                       label="(MS_ClasseLiee_DonneesNonStructurees)"
+                                                       cardconf="0 … *"
+                                                       minimumMultiplicity="0"
+                                                       maximumMultiplicity="*">
+                           <cnsaTDD:TitreDNS original="cnsaTDD:TitreDNS"
+                                             withpredicate="cnsaTDD:TitreDNS"
+                                             label="(MS_ClasseLiee_DonneesNonStructurees)"
+                                             cardconf="1 … 1 Required"
+                                             datatype="ST"
+                                             minimumMultiplicity="1"
+                                             maximumMultiplicity="1"
+                                             conformance="R"/>
+                           <cnsaTDD:ContenuDNS original="cnsaTDD:ContenuDNS"
+                                               withpredicate="cnsaTDD:ContenuDNS"
+                                               label="(MS_ClasseLiee_DonneesNonStructurees)"
+                                               cardconf="1 … 1 Required"
+                                               datatype="SD.TEXT"
+                                               minimumMultiplicity="1"
+                                               maximumMultiplicity="1"
+                                               conformance="R">
+                              <hl7:paragraph original="hl7:paragraph"
+                                             withpredicate="hl7:paragraph"
+                                             label="(MS_ClasseLiee_DonneesNonStructurees)"
+                                             cardconf="1 … 1 Required"
+                                             datatype="ANY"
+                                             minimumMultiplicity="1"
+                                             maximumMultiplicity="1"
+                                             conformance="R">
+                                 <hl7:caption original="hl7:caption"
+                                              withpredicate="hl7:caption"
+                                              label="(MS_ClasseLiee_DonneesNonStructurees)"
+                                              cardconf="1 … 1 Required"
+                                              datatype="ANY"
+                                              minimumMultiplicity="1"
+                                              maximumMultiplicity="1"
+                                              conformance="R"/>
+                              </hl7:paragraph>
+                           </cnsaTDD:ContenuDNS>
+                        </cnsaTDD:donneesNonStructurees>
+                     </cnsaTDD:sollicitationMispe>
+                  </hl7:section>
+               </hl7:component>
+               <hl7:component original="hl7:component[hl7:section[hl7:templateId[@root='1.2.250.1.213.1.1.2.242']]]"
+                              withpredicate="hl7:component[hl7:section[hl7:templateId[@root='1.2.250.1.213.1.1.2.242']]]"
+                              label="MS_TDD_MISPE"
+                              cardconf="0 … *"
+                              minimumMultiplicity="0"
+                              maximumMultiplicity="*">
+                  <hl7:section original="hl7:section"
+                               withpredicate="hl7:section[hl7:templateId[@root = '1.2.250.1.213.1.1.2.242']]"
+                               label="(FR-MS-ModaliteEvaluation2023)"
+                               cardconf="1 … 1 Required"
+                               minimumMultiplicity="1"
+                               maximumMultiplicity="1"
+                               conformance="R">
+                     <hl7:templateId original="hl7:templateId"
+                                     withpredicate="hl7:templateId[@root = '1.2.250.1.213.1.1.2.242']"
+                                     label="(FR-MS-ModaliteEvaluation2023)"
+                                     cardconf="1 … 1 Required"
+                                     minimumMultiplicity="1"
+                                     maximumMultiplicity="1"
+                                     conformance="R"
+                                     root="1.2.250.1.213.1.1.2.242">
+                        <attribute name="root" value="1.2.250.1.213.1.1.2.242" datatype="cs"/>
+                     </hl7:templateId>
+                     <cnsaTDD:modaliteEvaluation original="cnsaTDD:modaliteEvaluation"
+                                                 withpredicate="cnsaTDD:modaliteEvaluation[cnsaTDD:typeDeModalite[concat(@code, @codeSystem) = doc('include/voc-1.2.250.1.213.3.4.159-DYNAMIC.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor]]"
+                                                 label="(FR-MS-ModaliteEvaluation2023)"
+                                                 cardconf="1 … 1 Required"
+                                                 minimumMultiplicity="1"
+                                                 maximumMultiplicity="1"
+                                                 conformance="R">
+                        <cnsaTDD:typeDeModalite original="cnsaTDD:typeDeModalite"
+                                                withpredicate="cnsaTDD:typeDeModalite[concat(@code, @codeSystem) = doc('include/voc-1.2.250.1.213.3.4.159-DYNAMIC.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor]"
+                                                label="(FR-MS-ModaliteEvaluation2023)"
+                                                cardconf="1 … 1 Required"
+                                                datatype="CE"
+                                                minimumMultiplicity="1"
+                                                maximumMultiplicity="1"
+                                                conformance="R"
+                                                valueSet="1.2.250.1.213.3.4.159"
+                                                flexibility="dynamic"/>
+                        <cnsaTDD:dateDePrescription original="cnsaTDD:dateDePrescription"
+                                                    withpredicate="cnsaTDD:dateDePrescription"
+                                                    label="(FR-MS-ModaliteEvaluation2023)"
+                                                    cardconf="0 … 1"
+                                                    datatype="TS"
+                                                    minimumMultiplicity="0"
+                                                    maximumMultiplicity="1"/>
+                        <cnsaTDD:dateDeDebut original="cnsaTDD:dateDeDebut"
+                                             withpredicate="cnsaTDD:dateDeDebut"
+                                             label="(FR-MS-ModaliteEvaluation2023)"
+                                             cardconf="0 … 1"
+                                             datatype="TS"
+                                             minimumMultiplicity="0"
+                                             maximumMultiplicity="1"/>
+                        <cnsaTDD:dateDeFin original="cnsaTDD:dateDeFin"
+                                           withpredicate="cnsaTDD:dateDeFin"
+                                           label="(FR-MS-ModaliteEvaluation2023)"
+                                           cardconf="0 … 1"
+                                           datatype="TS"
+                                           minimumMultiplicity="0"
+                                           maximumMultiplicity="1"/>
+                        <cnsaTDD:nombreHeures original="cnsaTDD:nombreHeures"
+                                              withpredicate="cnsaTDD:nombreHeures"
+                                              label="(FR-MS-ModaliteEvaluation2023)"
+                                              cardconf="0 … 1"
+                                              datatype="REAL"
+                                              minimumMultiplicity="0"
+                                              maximumMultiplicity="1"/>
+                        <cnsaTDD:objectif original="cnsaTDD:objectif"
+                                          withpredicate="cnsaTDD:objectif[concat(@code, @codeSystem) = doc('include/voc-1.2.250.1.213.3.4.173-DYNAMIC.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor]"
+                                          label="(FR-MS-ModaliteEvaluation2023)"
+                                          cardconf="0 … *"
+                                          datatype="CE"
+                                          minimumMultiplicity="0"
+                                          maximumMultiplicity="*"
+                                          valueSet="1.2.250.1.213.3.4.173"
+                                          flexibility="dynamic"/>
+                        <cnsaTDD:esatAccueil original="cnsaTDD:esatAccueil"
+                                             withpredicate="cnsaTDD:esatAccueil"
+                                             label="(FR-MS-ModaliteEvaluation2023)"
+                                             cardconf="0 … 1"
+                                             minimumMultiplicity="0"
+                                             maximumMultiplicity="1">
+                           <cnsaTDD:nom original="cnsaTDD:nom"
+                                        withpredicate="cnsaTDD:nom"
+                                        label="(FR-MS-ModaliteEvaluation2023)"
+                                        cardconf="1 … 1 Required"
+                                        datatype="ST"
+                                        minimumMultiplicity="1"
+                                        maximumMultiplicity="1"
+                                        conformance="R"/>
+                           <cnsaTDD:numeroFiness original="cnsaTDD:numeroFiness"
+                                                 withpredicate="cnsaTDD:numeroFiness"
+                                                 label="(FR-MS-ModaliteEvaluation2023)"
+                                                 cardconf="0 … 1"
+                                                 datatype="ST"
+                                                 minimumMultiplicity="0"
+                                                 maximumMultiplicity="1"/>
+                           <choice>
+                              <cnsaTDD:telephone original="cnsaTDD:telephone"
+                                                 withpredicate="cnsaTDD:telephone"
+                                                 label="(MS_telecom_TDD_extensions)"
+                                                 datatype="TEL"
+                                                 use="…"
+                                                 value="…">
+                                 <attribute name="use" datatype="cs"/>
+                                 <attribute name="value" datatype="url"/>
+                              </cnsaTDD:telephone>
+                              <cnsaTDD:courriel original="cnsaTDD:courriel"
+                                                withpredicate="cnsaTDD:courriel"
+                                                label="(MS_telecom_TDD_extensions)"
+                                                datatype="TEL"
+                                                use="…"
+                                                value="…">
+                                 <attribute name="use" datatype="cs"/>
+                                 <attribute name="value" datatype="url"/>
+                              </cnsaTDD:courriel>
+                           </choice>
+                           <cnsaTDD:adresse original="cnsaTDD:adresse"
+                                            withpredicate="cnsaTDD:adresse"
+                                            label="(MS_addr_TDD_extensions)"
+                                            cardconf="0 … 1"
+                                            datatype="AD"
+                                            minimumMultiplicity="0"
+                                            maximumMultiplicity="1"
+                                            use="…">
+                              <attribute name="use" datatype="set_cs"/>
+                              <hl7:streetAddressLine original="hl7:streetAddressLine"
+                                                     withpredicate="hl7:streetAddressLine"
+                                                     label="(MS_addr_TDD_extensions)"
+                                                     cardconf="0 … 1"
+                                                     datatype="ST"
+                                                     minimumMultiplicity="0"
+                                                     maximumMultiplicity="1"/>
+                              <hl7:postalCode original="hl7:postalCode"
+                                              withpredicate="hl7:postalCode"
+                                              label="(MS_addr_TDD_extensions)"
+                                              cardconf="0 … 1"
+                                              datatype="ST"
+                                              minimumMultiplicity="0"
+                                              maximumMultiplicity="1"/>
+                              <hl7:city original="hl7:city"
+                                        withpredicate="hl7:city"
+                                        label="(MS_addr_TDD_extensions)"
+                                        cardconf="0 … 1"
+                                        datatype="ST"
+                                        minimumMultiplicity="0"
+                                        maximumMultiplicity="1"/>
+                              <hl7:additionalLocator original="hl7:additionalLocator"
+                                                     withpredicate="hl7:additionalLocator"
+                                                     label="(MS_addr_TDD_extensions)"
+                                                     cardconf="0 … 1"
+                                                     datatype="ST"
+                                                     minimumMultiplicity="0"
+                                                     maximumMultiplicity="1"/>
+                              <hl7:country original="hl7:country"
+                                           withpredicate="hl7:country"
+                                           label="(MS_addr_TDD_extensions)"
+                                           cardconf="0 … 1"
+                                           datatype="ST"
+                                           minimumMultiplicity="0"
+                                           maximumMultiplicity="1"/>
+                           </cnsaTDD:adresse>
+                        </cnsaTDD:esatAccueil>
+                        <cnsaTDD:lieuExecution original="cnsaTDD:lieuExecution"
+                                               withpredicate="cnsaTDD:lieuExecution"
+                                               label="(FR-MS-ModaliteEvaluation2023)"
+                                               cardconf="0 … 1"
+                                               datatype="ST"
+                                               minimumMultiplicity="0"
+                                               maximumMultiplicity="1"/>
+                        <cnsaTDD:statut original="cnsaTDD:statut"
+                                        withpredicate="cnsaTDD:statut[concat(@code, @codeSystem) = doc('include/voc-1.2.250.1.213.3.4.200-DYNAMIC.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor]"
+                                        label="(FR-MS-ModaliteEvaluation2023)"
+                                        cardconf="1 … 1 Required"
+                                        datatype="CE"
+                                        minimumMultiplicity="1"
+                                        maximumMultiplicity="1"
+                                        conformance="R"
+                                        valueSet="1.2.250.1.213.3.4.200"
+                                        flexibility="dynamic"/>
+                        <cnsaTDD:dateStatut original="cnsaTDD:dateStatut"
+                                            withpredicate="cnsaTDD:dateStatut"
+                                            label="(FR-MS-ModaliteEvaluation2023)"
+                                            cardconf="1 … 1 Required"
+                                            datatype="TS"
+                                            minimumMultiplicity="1"
+                                            maximumMultiplicity="1"
+                                            conformance="R"/>
+                        <cnsaTDD:prescripteurDelegataire original="cnsaTDD:prescripteurDelegataire"
+                                                         withpredicate="cnsaTDD:prescripteurDelegataire"
+                                                         label="(FR-MS-ModaliteEvaluation2023)"
+                                                         cardconf="0 … 1"
+                                                         minimumMultiplicity="0"
+                                                         maximumMultiplicity="1">
+                           <cnsaTDD:referenceConventionDelegation original="cnsaTDD:referenceConventionDelegation"
+                                                                  withpredicate="cnsaTDD:referenceConventionDelegation"
+                                                                  label="(FR-MS-ModaliteEvaluation2023)"
+                                                                  cardconf="0 … 1"
+                                                                  datatype="ST"
+                                                                  minimumMultiplicity="0"
+                                                                  maximumMultiplicity="1"/>
+                           <cnsaTDD:dateconventionDelegation original="cnsaTDD:dateconventionDelegation"
+                                                             withpredicate="cnsaTDD:dateconventionDelegation"
+                                                             label="(FR-MS-ModaliteEvaluation2023)"
+                                                             cardconf="1 … 1 Required"
+                                                             datatype="TS"
+                                                             minimumMultiplicity="1"
+                                                             maximumMultiplicity="1"
+                                                             conformance="R"/>
+                        </cnsaTDD:prescripteurDelegataire>
+                        <cnsaTDD:dateReceptionResultatEvaluation original="cnsaTDD:dateReceptionResultatEvaluation"
+                                                                 withpredicate="cnsaTDD:dateReceptionResultatEvaluation"
+                                                                 label="(FR-MS-ModaliteEvaluation2023)"
+                                                                 cardconf="0 … 1"
+                                                                 datatype="TS"
+                                                                 minimumMultiplicity="0"
+                                                                 maximumMultiplicity="1"/>
+                        <cnsaTDD:idClasse original="cnsaTDD:idClasse"
+                                          withpredicate="cnsaTDD:idClasse"
+                                          label="(FR-MS-ModaliteEvaluation2023)"
+                                          cardconf="1 … 2 Required"
+                                          datatype="II"
+                                          minimumMultiplicity="1"
+                                          maximumMultiplicity="2"
+                                          conformance="R"/>
+                        <cnsaTDD:ClasseLiee original="cnsaTDD:ClasseLiee"
+                                            withpredicate="cnsaTDD:ClasseLiee"
+                                            label="(MS_ClasseLiee_DonneesNonStructurees)"
+                                            cardconf="0 … *"
+                                            minimumMultiplicity="0"
+                                            maximumMultiplicity="*">
+                           <cnsaTDD:nomClasseLiee original="cnsaTDD:nomClasseLiee"
+                                                  withpredicate="cnsaTDD:nomClasseLiee"
+                                                  label="(MS_ClasseLiee_DonneesNonStructurees)"
+                                                  cardconf="1 … 1 Required"
+                                                  datatype="ST"
+                                                  minimumMultiplicity="1"
+                                                  maximumMultiplicity="1"
+                                                  conformance="R"/>
+                           <cnsaTDD:idClasseLiee original="cnsaTDD:idClasseLiee"
+                                                 withpredicate="cnsaTDD:idClasseLiee"
+                                                 label="(MS_ClasseLiee_DonneesNonStructurees)"
+                                                 cardconf="1 … 1 Required"
+                                                 datatype="II"
+                                                 minimumMultiplicity="1"
+                                                 maximumMultiplicity="1"
+                                                 conformance="R"/>
+                        </cnsaTDD:ClasseLiee>
+                        <cnsaTDD:donneesNonStructurees original="cnsaTDD:donneesNonStructurees"
+                                                       withpredicate="cnsaTDD:donneesNonStructurees"
+                                                       label="(MS_ClasseLiee_DonneesNonStructurees)"
+                                                       cardconf="0 … *"
+                                                       minimumMultiplicity="0"
+                                                       maximumMultiplicity="*">
+                           <cnsaTDD:TitreDNS original="cnsaTDD:TitreDNS"
+                                             withpredicate="cnsaTDD:TitreDNS"
+                                             label="(MS_ClasseLiee_DonneesNonStructurees)"
+                                             cardconf="1 … 1 Required"
+                                             datatype="ST"
+                                             minimumMultiplicity="1"
+                                             maximumMultiplicity="1"
+                                             conformance="R"/>
+                           <cnsaTDD:ContenuDNS original="cnsaTDD:ContenuDNS"
+                                               withpredicate="cnsaTDD:ContenuDNS"
+                                               label="(MS_ClasseLiee_DonneesNonStructurees)"
+                                               cardconf="1 … 1 Required"
+                                               datatype="SD.TEXT"
+                                               minimumMultiplicity="1"
+                                               maximumMultiplicity="1"
+                                               conformance="R">
+                              <hl7:paragraph original="hl7:paragraph"
+                                             withpredicate="hl7:paragraph"
+                                             label="(MS_ClasseLiee_DonneesNonStructurees)"
+                                             cardconf="1 … 1 Required"
+                                             datatype="ANY"
+                                             minimumMultiplicity="1"
+                                             maximumMultiplicity="1"
+                                             conformance="R">
+                                 <hl7:caption original="hl7:caption"
+                                              withpredicate="hl7:caption"
+                                              label="(MS_ClasseLiee_DonneesNonStructurees)"
+                                              cardconf="1 … 1 Required"
+                                              datatype="ANY"
+                                              minimumMultiplicity="1"
+                                              maximumMultiplicity="1"
+                                              conformance="R"/>
+                              </hl7:paragraph>
+                           </cnsaTDD:ContenuDNS>
+                        </cnsaTDD:donneesNonStructurees>
+                     </cnsaTDD:modaliteEvaluation>
+                  </hl7:section>
+               </hl7:component>
+            </hl7:structuredBody>
+         </hl7:component>
+      </hl7:ClinicalDocument>
+   </hl7:instance>
+</instances>
