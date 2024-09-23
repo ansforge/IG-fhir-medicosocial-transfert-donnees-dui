@@ -72,7 +72,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
   <name value="TDDUIDocumentReference"/>
   <title value="TDDUI Document Reference"/>
   <status value="active"/>
-  <date value="2024-09-18T11:47:59+00:00"/>
+  <date value="2024-09-23T11:40:21+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -1242,7 +1242,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/CareTeam"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -1370,7 +1370,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/CareTeam"/>
       </constraint>
       <mustSupport value="true"/>
       <isSummary value="true"/>
@@ -1440,7 +1440,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/CareTeam"/>
       </constraint>
       <mustSupport value="true"/>
       <mapping>
@@ -1511,7 +1511,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/CareTeam"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -1786,7 +1786,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/CareTeam"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -2129,7 +2129,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <human value="If the Attachment has data, it SHALL have a contentType"/>
         <expression value="data.empty() or contentType.exists()"/>
         <xpath value="not(exists(f:data)) or exists(f:contentType)"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/BodyStructure"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -2840,7 +2840,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/CareTeam"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -2965,7 +2965,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <human value="If present, start SHALL have a lower value than end"/>
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)"/>
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/CareTeam"/>
       </constraint>
       <mustSupport value="true"/>
       <isSummary value="true"/>
@@ -3168,7 +3168,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/CareTeam"/>
       </constraint>
       <mustSupport value="true"/>
       <mapping>
@@ -3227,7 +3227,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/CareTeam"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
