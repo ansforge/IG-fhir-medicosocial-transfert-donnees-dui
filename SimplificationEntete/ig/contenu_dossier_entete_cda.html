@@ -319,11 +319,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="recordtarget">RecordTarget</h3>
 
-<p>L’élément RecordTarget imposé par le CDA permet de décrire les données de l’usager.</p>
+<p>L’élément RecordTarget, imposé par le standard CDA, permet de décrire les informations essentielles concernant l’usager des services médico-sociaux. Il regroupe les données personnelles de la personne accompagnée, telles que son nom, prénom, sexe, date de naissance et éventuellement des informations supplémentaires comme son lieu de naissance ou son tuteur légal.</p>
 
-<p>La structure de l’élément RecordTarget se conforme aux contraintes et définitions présentées dans le Volet Structuration minimale des documents de santé :</p>
+<p>La structure de l’élément RecordTarget se conforme aux contraintes et définitions présentées dans le <strong>Volet Structuration minimale des documents de santé</strong> :</p>
 
-<iframe src="https://o3sis.esante.gouv.fr/decor/services/RetrieveTemplate?prefix=ASIP-STRUCT-MIN-&amp;version=&amp;language=fr-FR&amp;ui=en-US&amp;id=1.2.250.1.213.1.1.1.1.10.10&amp;effectiveDate=2023-12-15T17:15:20&amp;format=html&amp;collapsable=true" height="400" name="RecordTarget" style="border: 1px solid black"></iframe>
+<iframe src="./cda/" height="400" name="RecordTarget" style="border: 1px solid black"></iframe>
 
 <p><br /></p>
 
@@ -350,11 +350,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="author">Author</h3>
 
-<p>L’élément Author imposé par le CDA représente la participation d’un auteur à l’élaboration du document « Transfert de données DUI » conformément au volet. Dans le contexte spécifique de ce volet, cet élément représente un <strong>Système</strong> à savoir le <strong>Logiciel DUI</strong>.</p>
+<p>L’élément Author, imposé par le standard CDA, représente la participation d’un auteur à l’élaboration du document. Dans ce contexte, l’author ne fait pas référence à une personne physique, mais à un système informatique, spécifiquement un <strong>logiciel DUI</strong> (Dossier Usager Informatisé). Ce logiciel est responsable de la création ou de la gestion du document, et son rôle est de générer les données et de les structurer selon les besoins du suivi médico-social. Cet élément garantit la traçabilité des informations générées par le système tout au long du parcours de l’usager.</p>
 
-<p>La structure de l’élément Author se conforme aux contraintes et définitions présentées dans le Volet Structuration minimale des documents de santé :</p>
+<p>La structure de l’élément Author se conforme aux contraintes et définitions présentées dans le <strong>Volet Structuration minimale des documents de santé</strong> :</p>
 
-<iframe src="https://o3sis.esante.gouv.fr/decor/services/RetrieveTemplate?prefix=ASIP-STRUCT-MIN-&amp;version=&amp;language=fr-FR&amp;ui=en-US&amp;id=1.2.250.1.213.1.1.1.1.10.7&amp;effectiveDate=2023-12-15T17:05:43&amp;format=html&amp;collapsable=true" height="400" name="Author" style="border: 1px solid black"></iframe>
+<iframe src="./cda/" height="400" name="Author" style="border: 1px solid black"></iframe>
 
 <p><br /></p>
 
@@ -369,6 +369,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         </tr>
 	</thead>
 	<tbody>
+		<tr id="line1">
+            <td>author</td>
+            <td><i><u><red>[1..1]</red></u></i></td>
+            <td><p><strong>Auteur du document</strong>
+			<br /><red>Attribut nullFlavor interdit</red></p></td>
+        </tr>
         <tr>
             <td>assignedAuthor/id</td>
             <td>[1..1]</td>
@@ -392,18 +398,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         <tr>
             <td>assignedAuthor/assignedAuthoringDevice</td>
             <td><i><u><red>[1..1]</red></u></i></td>
-            <td><p><strong>Informations complémentaires si l'auteur est un système</strong>
-			<br /><red>• Ne pas utiliser pour un professionnel
-			<br />• Ne pas utiliser pour le patient/usager
-			<br />• Obligatoire pour un système</red></p></td>
+            <td><p><strong>Informations complémentaires</strong>
+			<br /><red>• Obligatoire pour un système</red></p></td>
         </tr>
 		<tr>
             <td>assignedAuthor/representedOrganization</td>
             <td><i><u><red>[1..1]</red></u></i></td>
             <td><p><strong>Structure correspondante</strong>
-			<br /><red>• Obligatoire pour un professionnel
-			<br />• Ne pas utiliser pour le patient/usager
-			<br />• Obligatoire pour un système</red></p></td>
+			<br /><red>• Obligatoire pour un système</red></p></td>
         </tr>
 		<tr>
             <td>assignedAuthor/representedOrganization/id</td>
@@ -415,13 +417,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </tbody>
 </table>
 
+<p><br /></p>
+
 <h3 id="custodian">Custodian</h3>
 
-<p>L’élément Custodian imposé par le CDA représente la structure chargée de la conservation du document « Transfert de données DUI » du volet. Il s’agit ici dans le cadre de ce volet de l’<strong>ESSMS</strong>.</p>
+<p>L’élément Custodian, imposé par le standard CDA, représente la structure chargée de la conservation du document. Il s’agit ici dans le cadre de ce volet de l’<strong>ESSMS</strong> (Établissement ou Service Social et Médico-Social) qui est responsable de la garde et de la sécurité du document. En tant qu’entité juridique, l’ESSMS est le dépositaire du dossier de l’usager et garantit la confidentialité, l’intégrité et la sécurité des données. Il peut s’agir d’une maison de retraite, d’un établissement pour personnes handicapées ou d’un autre service médico-social.</p>
 
-<p>La structure de l’élément Custodian se conforme aux contraintes et définitions présentées dans le Volet Structuration minimale des documents de santé :</p>
+<p>La structure de l’élément Custodian se conforme aux contraintes et définitions présentées dans le <strong>Volet Structuration minimale des documents de santé</strong> :</p>
 
-<iframe src="https://o3sis.esante.gouv.fr/decor/services/RetrieveTemplate?prefix=ASIP-STRUCT-MIN-&amp;version=&amp;language=fr-FR&amp;ui=en-US&amp;id=1.2.250.1.213.1.1.1.1.10.5&amp;effectiveDate=2017-12-11T14:50:49&amp;format=html&amp;collapsable=true" height="400" name="Custodian"></iframe>
+<iframe src="./cda/" height="400" name="Custodian"></iframe>
 
 <p><br /></p>
 
@@ -439,26 +443,28 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         <tr>
             <td>assignedCustodian/representedCustodianOrganization/id</td>
             <td>[1..1]</td>
-            <td><p><strong>Identifiant de la structure</strong></p>
+            <td><p><strong>Identifiant de la structure ESSMS</strong></p>
 			<p>@root =<red> 1.2.250.1.71.4.2.2</red></p>
 			<p>@extension =<red> Struct_idNat (voir <a href="https://esante.gouv.fr/annexe-sources-des-donnees-personnes-et-structures">Annexe - sources des données personnes et structures</a>)</red></p></td>
         </tr>
         <tr>
             <td>assignedCustodian/representedCustodianOrganization/name</td>
             <td>[0..1]</td>
-            <td><p><strong>Nom de la structure</strong></p>
+            <td><p><strong>Nom de la structure ESSMS</strong></p>
 			<p><red> Valeur fixée à "Struct_Nom" (voir <a href="https://esante.gouv.fr/annexe-sources-des-donnees-personnes-et-structures">Annexe - sources des données personnes et structures</a>)</red></p></td>
         </tr>
     </tbody>
 </table>
 
+<p><br /></p>
+
 <h3 id="legalauthentificator">LegalAuthentificator</h3>
 
-<p>L’élément legalAuthentificator imposé par le CDA représente le responsable du document. Il s’agit bien ici d’un <strong>Système rattaché à une structure</strong>.</p>
+<p>L’élément legalAuthentificator, imposé par le standard CDA, représente le responsable du document. Le rôle du legalAuthenticator est rempli par un <strong>système informatique rattaché à une structure ESSMS</strong>, qui valide officiellement le document en lui conférant une valeur légale et authentique. Il peut s’agir du système qui certifie que les informations présentes dans le document ont été vérifiées et approuvées par l’établissement.</p>
 
-<p>La structure de l’élément LegalAuthentificator se conforme aux contraintes et définitions présentées dans le Volet Structuration minimale des documents de santé :</p>
+<p>La structure de l’élément LegalAuthentificator se conforme aux contraintes et définitions présentées dans le <strong>Volet Structuration minimale des documents de santé</strong> :</p>
 
-<iframe src="https://o3sis.esante.gouv.fr/decor/services/RetrieveTemplate?prefix=ASIP-STRUCT-MIN-&amp;version=&amp;language=fr-FR&amp;ui=en-US&amp;id=1.2.250.1.213.1.1.1.1.10.6&amp;effectiveDate=2023-12-15T17:14:26&amp;format=html&amp;collapsable=true" height="400" name="LegalAuthentificator"></iframe>
+<iframe src="./cda/" height="400" name="LegalAuthentificator"></iframe>
 
 <p><br /></p>
 
@@ -476,7 +482,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         <tr>
             <td>assignedEntity/id</td>
             <td>[1..1] </td>
-            <td><p><strong>Identifiant</strong>
+            <td><p><strong>Identifiant de la structure ESSMS</strong>
 			<br /><red>Attribut nullFlavor interdit</red></p>
 			<p>@root = OID de l'autorité d'affectation :<red> valeur fixée à "1.2.250.1.71.4.2.2" (OID autorité d'attribution des identifiants des structures)</red></p>
 			<p>@extension = Valeur de l'identifiant :
@@ -493,79 +499,48 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 			<br />@displayName = <red>Logiciel de Dossier Usager Informatisé</red>
 			<br />@codeSystem = <red>1.2.250.1.213.1.1.4.6</red></p></td>
         </tr>
-        <tr>
-            <td>assignedEntity/representedOrganisation/standardIndustryClassCode</td>
-            <td>[0..1] </td>
-            <td><p><strong>Cadre d'exercice</strong>
-			<br />- Si le responsable est un professionnel : Cadre d'exercice
-			<br />- Si le responsable est un SNR : Non renseigné</p>
-			<p>@code = <red>code issu du <a href="https://mos.esante.gouv.fr/NOS/JDV_J254-CategorieEtablissementESSMSPH/JDV_J254-CategorieEtablissementESSMSPH.pdf">JDV_J254-CategorieEtablissementESSMSPH</a></red>
-			<br />@displayName = <red>libellé associé à ce code</red>
-			<br />@codeSystem = <red>1.2.250.1.213.3.4.218</red></p></td>
-        </tr>
     </tbody>
 </table>
 
+<p><br /></p>
+
 <h3 id="documentationof">DocumentationOf</h3>
 
-<p>L’élément DocumentationOf imposé par le CDA décrit les données de l’évènement principal documenté.</p>
+<p>L’élément DocumentationOf imposé par, le standard CDA, décrit les données de l’évènement principal documenté.Cet élément précise le contexte de l’intervention ou de l’action qui est à l’origine du document, qu’il s’agisse d’une prise en charge, d’un suivi médico-social ou d’un événement clé dans le parcours de l’usager.</p>
 
-<p>La structure de l’élément DocumentationOf se conforme aux contraintes et définitions présentées dans le Volet Structuration minimale des documents de santé :</p>
+<p>La structure de l’élément DocumentationOf se conforme aux contraintes et définitions présentées dans le <strong>Volet Structuration minimale des documents de santé</strong> :</p>
 
-<iframe src="https://o3sis.esante.gouv.fr/decor/services/RetrieveTemplate?prefix=ASIP-STRUCT-MIN-&amp;version=&amp;language=fr-FR&amp;ui=en-US&amp;id=1.2.250.1.213.1.1.1.1.10.4&amp;effectiveDate=2023-12-15T17:12:43&amp;format=html&amp;collapsable=true" height="400" name="DocumentationOf"></iframe>
+<iframe src="./cda/" height="400" name="DocumentationOf"></iframe>
 
 <p><br /></p>
 
 <h3 id="relateddocument">relatedDocument</h3>
 
-<p>L’élément relatedDocument est facultatif car le document peut être initial. Dans le cas où il s’agit d’une nouvelle version d’un document existant, le document à remplacer doit être identifier et l’élément relatedDocument devient obligatoire.</p>
+<p>L’élément relatedDocument est facultatif dans le cas où le document actuel est initial, c’est-à-dire qu’il n’y a pas de document préexistant à remplacer. Cependant, lorsque le document est une nouvelle version d’un document déjà existant, cet élément devient obligatoire. Il permet alors de référencer précisément le document précédent qui est mis à jour ou remplacé. Cela garantit une continuité dans la gestion des informations, en identifiant clairement la relation entre les versions successives d’un même document. Le système doit inclure un identifiant unique du document précédent afin d’assurer la traçabilité et l’intégrité des données dans le parcours médico-social de l’usager.</p>
 
-<p>La structure de l’élément relatedDocument se conforme aux contraintes et définitions présentées dans le Volet Structuration minimale des documents de santé :</p>
+<p>La structure de l’élément relatedDocument se conforme aux contraintes et définitions présentées dans le <strong>Volet Structuration minimale des documents de santé</strong> :</p>
 
-<iframe src="https://o3sis.esante.gouv.fr/decor/services/RetrieveTemplate?prefix=ASIP-STRUCT-MIN-&amp;version=&amp;language=fr-FR&amp;ui=en-US&amp;id=1.2.250.1.213.1.1.1.1.10.3&amp;effectiveDate=2024-04-29T11:09:47&amp;format=html&amp;collapsable=true" height="400" name="relatedDocument"></iframe>
+<iframe src="./cda/" height="400" name="relatedDocument"></iframe>
 
 <p><br /></p>
 
 <h3 id="componentof">ComponentOf</h3>
 
-<p>L’élément componentOf imposé par le CI-SIS représente l’association du document « Transfert de données DUI » à une prise en charge.</p>
+<p>L’élément componentOf permet de lier le document « Transfert de données DUI » à une prise en charge spécifique de l’usager. Cet élément situe le document dans le cadre global de l’accompagnement médico-social de la personne, en précisant à quelle prise en charge ou projet personnalisé il se rapporte.</p>
 
-<p>La structure de l’élément ComponentOf se conforme aux contraintes et définitions présentées dans le Volet Structuration minimale des documents de santé :</p>
+<p>La structure de l’élément ComponentOf se conforme aux contraintes et définitions présentées dans le <strong>Volet Structuration minimale des documents de santé</strong> :</p>
 
-<iframe src="https://o3sis.esante.gouv.fr/decor/services/RetrieveTemplate?prefix=ASIP-STRUCT-MIN-&amp;version=&amp;language=fr-FR&amp;ui=en-US&amp;id=1.2.250.1.213.1.1.1.1.10.2&amp;effectiveDate=2023-12-15T17:11:33&amp;format=html&amp;collapsable=true" height="400" name="ComponentOf"></iframe>
+<iframe src="./cda/" height="400" name="ComponentOf"></iframe>
 
 <p><br /></p>
-
-<p><strong>Le tableau ci-dessous présente les contraintes spécifiques à l’entête TDDUI :</strong></p>
-
-<table id="cda">
-	<thead>
-		<tr>
-			<th>Elément XML</th>
-			<th>Card.</th>
-			<th>Contenu de l'élément CDA</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>componentOf/encompassingEncounter/code/location/healthCareFacility/code</td>
-			<td>[1..1]</td>
-			<td><p><strong>Modalité d'exercice de la structure</strong>
-			<br /><red>Attribut nullFlavor interdit</red></p>
-			<p>@code = <red>code issu du <a href="https://mos.esante.gouv.fr/NOS/JDV_J254-CategorieEtablissementESSMSPH/JDV_J254-CategorieEtablissementESSMSPH.pdf">JDV_J254-CategorieEtablissementESSMSPH</a></red>
-			<br />@displayName = <red>libellé associé à ce code</red>
-			<br />@codeSystem = <red>1.2.250.1.213.3.4.218</red></p></td>
-		</tr>
-	</tbody>
-</table>
 
 <h3 id="adresse">Adresse</h3>
 
 <p>L’élément Adresse imposé par le CDA dans la plupart des éléments d’entête CDA telle que le <em>recordTarget</em>, <em>author</em>, <em>custodian</em>, <em>legalAutenthificator</em>.</p>
 
-<p>La structure de l’élément Adresse se conforme aux contraintes et définitions présentées dans le Volet Structuration minimale des documents de santé :</p>
+<p>La structure de l’élément Adresse se conforme aux contraintes et définitions présentées dans le <strong>Volet Structuration minimale des documents de santé</strong> :</p>
 
-<iframe src="https://o3sis.esante.gouv.fr/decor/services/RetrieveTemplate?prefix=ASIP-STRUCT-MIN-&amp;version=&amp;language=fr-FR&amp;ui=en-US&amp;id=1.2.250.1.213.1.1.1.1.10.18&amp;effectiveDate=2023-03-03T11:02:55&amp;format=html&amp;collapsable=true" height="400" name="Adresse"></iframe>
+<iframe src="./cda/" height="400" name="Adresse"></iframe>
 
 <p><br /></p>
 
@@ -612,7 +587,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Sep 6, 2024 15:08+0000">2024-09-06</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 24, 2024 15:18+0000">2024-09-24</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
