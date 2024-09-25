@@ -324,7 +324,7 @@
         
           Active
           
-            as of 2024-09-09
+            as of 2024-09-25
           
         
       </td>
@@ -342,8 +342,7 @@
 
 
 
-  <pre class="xml" style="white-space: pre; text-wrap: nowrap;"><code style="white-space: pre; text-wrap: nowrap;">
-
+  <pre class="xml" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">
 &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition">StructureDefinition</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;tddui-bundle&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.text">text</a>&gt;
@@ -363,7 +362,7 @@
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;TDDUIBundle&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;TDDUI Bundle&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2024-09-09T08:16:31+00:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2024-09-25T08:17:55+00:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ANS&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ANS&quot;/&gt;
@@ -1240,7 +1239,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 * fullUrl can be empty on a POST (although it does not need to when specifying a temporary id for reference in the bundle)
 * Results from operations might involve resources that are not identified.&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;fullUrl might not be [unique in the context of a resource](bundle.html#bundle-unique). Note that since [FHIR resources do not need to be served through the FHIR API](http://hl7.org/fhir/R4/references.html), the fullURL might be a URN or an absolute URL that does not end with the logical id of the resource (Resource.id). However, but if the fullUrl does look like a RESTful server URL (e.g. meets the [regex](http://hl7.org/fhir/R4/references.html#regex), then the 'id' portion of the fullUrl SHALL end with the Resource.id.
+               <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;fullUrl might not be [unique in the context of a resource](http://hl7.org/fhir/R4/bundle.html#bundle-unique). Note that since [FHIR resources do not need to be served through the FHIR API](http://hl7.org/fhir/R4/references.html), the fullURL might be a URN or an absolute URL that does not end with the logical id of the resource (Resource.id). However, but if the fullUrl does look like a RESTful server URL (e.g. meets the [regex](http://hl7.org/fhir/R4/references.html#regex), then the 'id' portion of the fullUrl SHALL end with the Resource.id.
 
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.min">min</a> <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">value</a>=&quot;0&quot;/&gt;
@@ -2323,7 +2322,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 * fullUrl can be empty on a POST (although it does not need to when specifying a temporary id for reference in the bundle)
 * Results from operations might involve resources that are not identified.&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;fullUrl might not be [unique in the context of a resource](bundle.html#bundle-unique). Note that since [FHIR resources do not need to be served through the FHIR API](http://hl7.org/fhir/R4/references.html), the fullURL might be a URN or an absolute URL that does not end with the logical id of the resource (Resource.id). However, but if the fullUrl does look like a RESTful server URL (e.g. meets the [regex](http://hl7.org/fhir/R4/references.html#regex), then the 'id' portion of the fullUrl SHALL end with the Resource.id.
+               <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;fullUrl might not be [unique in the context of a resource](http://hl7.org/fhir/R4/bundle.html#bundle-unique). Note that since [FHIR resources do not need to be served through the FHIR API](http://hl7.org/fhir/R4/references.html), the fullURL might be a URN or an absolute URL that does not end with the logical id of the resource (Resource.id). However, but if the fullUrl does look like a RESTful server URL (e.g. meets the [regex](http://hl7.org/fhir/R4/references.html#regex), then the 'id' portion of the fullUrl SHALL end with the Resource.id.
 
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.min">min</a> <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">value</a>=&quot;0&quot;/&gt;
@@ -3354,7 +3353,7 @@ This outcome is not used for error responses in batch/transaction, only for hint
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Sep 9, 2024 08:16+0000">2024-09-09</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 25, 2024 08:17+0000">2024-09-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
