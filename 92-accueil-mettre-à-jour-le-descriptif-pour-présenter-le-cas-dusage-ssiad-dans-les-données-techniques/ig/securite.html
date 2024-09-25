@@ -261,9 +261,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div>
 <p>Les données véhiculées à travers ces flux sont des données à caractère personnel contenant notamment des données médicales sensibles qu’il convient de protéger.</p>
 
-<p>Cette section présente les éventuelles recommandations de sécurité qui s’appliquent à cet Implementation Guide. Il s’agit d’un sous-ensemble lié à la dimension interopérabilité de dispositions de sécurité plus globales visant à couvrir les exigences de sécurité d’un système cible.</p>
-
-<p>Il est du ressort du responsable de traitement du système cible de mettre en œuvre des dispositions de sécurité adaptées à son analyse de risques pour le service. En fonction de sa politique de sécurité, il peut choisir ou pas de mettre en œuvre les dispositions spécifiques décrites dans cette section. Les référentiels de sécurité édités par l’ANS fournissent des recommandations sur ce sujet.</p>
+<p>Ce volet doit être conforme avec les recommendations de l’ANS qui garantissent la bonne sécurisation des données partagées entre les SI de santé. Il doit prendre en compte les éléments suivants :</p>
+<ul>
+  <li>Les exigences de sécurité les plus élevées, en particulier celles qui concernent la protection des access token et des informations sensibles.</li>
+  <li>La conformité aux normes d’architecture technique et la conformité aux exigences de la Politique Générale de Sécurité des Systèmes d’Information de Santé (PGSSI-S).</li>
+  <li>Les spécificités sectorielles de la e-santé en France, telles que les identifiants sectoriels, Pro Santé Connect ou encore IGC Santé.</li>
+  <li>Les standards techniques de sécurité actuels, tels que OAuth 2.0, OpenID Connect, l’API REST, etc.</li>
+</ul>
 
 
 
@@ -306,7 +310,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 25, 2024 08:38+0000">2024-09-25</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 25, 2024 13:06+0000">2024-09-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
