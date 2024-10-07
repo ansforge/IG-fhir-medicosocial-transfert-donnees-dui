@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     id="svg_1.2.250.1.213.1.1.1.4.1.2023.4.13"
+     version="1.1"
+     height="202"
+     width="518"
+     style="fill:white;stroke:black;stroke-width:0;fill-opacity: 1; stroke-opacity: 1;">
+   <defs>
+      <style type="text/css">
+                            .sequenceLine {
+                                fill:none;stroke:black;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;
+                            }
+                            .sequenceBarRect {
+                                fill:AliceBlue;fill-rule:evenodd;stroke:black;stroke-width:0.2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;
+                            }
+                            .actorBox {
+                                fill:AliceBlue;fill-rule:evenodd;stroke:black;stroke-width:0.2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;
+                            }
+                            .actorBox:hover {
+                                fill:LightSkyBlue;
+                            }
+                            .actorBoxText {
+                                fill:black;stroke:none;font-size:10px;font-weight:bold;text-align:middle;line-height:100%;text-anchor:middle;font-family: Verdana, Arial, sans-serif;
+                            }
+                            .transactionLineText {
+                                fill:black;stroke:none;font-size:10px;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family: Verdana, Arial, sans-serif;
+                            }
+                            .Left {
+                                 text-align: left; text-anchor: initial;
+                            }
+                            .Center {
+                                 text-align: center; text-anchor: middle;
+                            }
+                        </style>
+   </defs>
+   <!--Service Name-->
+   <text x="259"
+         y="21"
+         style="font-size:12px;font-weight:bold;text-align:start;line-height:125%;text-anchor:middle;fill:black;stroke:none;font-family: Verdana, Arial, sans-serif;fill-opacity: 1; stroke-opacity: 1;">Group</text>
+   <g id="actorObjects">
+      <!-- Actor box (header) - -->
+      <g id="actor_1.2.250.1.213.1.1.1.4.1.2023.7.1">
+         <rect x="21"
+               y="31"
+               height="50"
+               width="126"
+               class="actorBox"
+               style="fill-opacity: 1; stroke-opacity: 1;"/>
+         <text x="84"
+               y="61"
+               class="actorBoxText"
+               style="fill-opacity: 1; stroke-opacity: 1;">MDPHOrigine</text>
+      </g>
+      <!-- Actor box (header) - -->
+      <g id="actor_1.2.250.1.213.1.1.1.4.1.2023.7.2">
+         <rect x="371"
+               y="31"
+               height="50"
+               width="126"
+               class="actorBox"
+               style="fill-opacity: 1; stroke-opacity: 1;"/>
+         <text x="434"
+               y="61"
+               class="actorBoxText"
+               style="fill-opacity: 1; stroke-opacity: 1;">MDPHAccueil</text>
+      </g>
+   </g>
+   <g id="sequenceLines">
+      <path class="sequenceLine"
+            style="fill-opacity: 1; stroke-opacity: 1;"
+            d="m 84, 81 v 100"/>
+      <path class="sequenceLine"
+            style="fill-opacity: 1; stroke-opacity: 1;"
+            d="m 434, 81 v 100"/>
+   </g>
+   <g id="sequenceBars"><!-- sequence bar client -->
+      <rect x="79"
+            y="131"
+            height="40"
+            width="10"
+            class="sequenceBarRect"
+            style="fill-opacity: 1; stroke-opacity: 1;"/>
+      <g id="initiatingTransaction_d10e323"><!-- Arrow text client to server -->
+         <text x="254"
+               y="141"
+               class="transactionLineText Center"
+               style="fill-opacity: 1; stroke-opacity: 1;">Initial (ClinicalDocument)</text>
+         <!-- Arrow line client to server -->
+         <path d="m 89,151 h 330"
+               style="fill:none;stroke:black;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;marker-end:none;fill-opacity: 1; stroke-opacity: 1;"/>
+         <!-- Arrow head client to server -->
+         <path d="m 419,146 0.2428,9.99706 c 3.8451,-1.75975 7.6902,-3.51949 11.5354,-5.27924 0,-0.002 0,-0.002 0,-0.002 0,0 0,0 -0,-0.002 -3.926,-1.57108 -7.852,-3.14216 -11.7781,-4.71324 z"
+               style="fill:black;fill-rule:evenodd;stroke:none;fill-opacity: 1; stroke-opacity: 1;"/>
+      </g>
+      <!-- sequence bar server -->
+      <rect x="429"
+            y="131"
+            height="40"
+            width="10"
+            class="sequenceBarRect"
+            style="fill-opacity: 1; stroke-opacity: 1;"/>
+   </g>
+</svg>
