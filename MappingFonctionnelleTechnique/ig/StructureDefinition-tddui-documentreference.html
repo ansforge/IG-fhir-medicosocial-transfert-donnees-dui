@@ -265,16 +265,6 @@
 
 
 
-  
-    
-      <li>
-        <a href="StructureDefinition-tddui-documentreference-examples.html">Examples</a>
-      </li>
-    
-  
-
-
-
 
   
     <li>
@@ -333,7 +323,7 @@
         
           Active
           
-            as of 2024-10-08
+            as of 2024-10-09
           
         
       </td>
@@ -1049,7 +1039,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J07-Xd
 <tr><td>dom-5</td><td>error</td><td>DocumentReference</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
 <tr><td>dom-6</td><td>best practice</td><td>DocumentReference</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>**ALL** elements</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>DocumentReference.relatesTo.modifierExtension, DocumentReference.content.modifierExtension, DocumentReference.context.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 <tr><td>per-1</td><td>error</td><td>DocumentReference.context.period</td><td>If present, start SHALL have a lower value than end<br/>: start.hasValue().not() or end.hasValue().not() or (start &lt;= end)</td><td></td></tr>
 <tr><td>ref-1</td><td>error</td><td>DocumentReference.subject, DocumentReference.author, DocumentReference.authenticator, DocumentReference.relatesTo.target, DocumentReference.context.sourcePatientInfo</td><td>SHALL have a contained resource if a local reference is provided<br/>: reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))</td><td></td></tr>
 </table>
@@ -1563,7 +1553,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J07-Xd
 <tr><td>dom-5</td><td>error</td><td>DocumentReference</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
 <tr><td>dom-6</td><td>best practice</td><td>DocumentReference</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>**ALL** elements</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>DocumentReference.meta.extension, DocumentReference.extension, DocumentReference.relatesTo.extension, DocumentReference.relatesTo.modifierExtension, DocumentReference.content.extension, DocumentReference.content.modifierExtension, DocumentReference.content.attachment.extension, DocumentReference.context.extension, DocumentReference.context.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 <tr><td>per-1</td><td>error</td><td>DocumentReference.context.period</td><td>If present, start SHALL have a lower value than end<br/>: start.hasValue().not() or end.hasValue().not() or (start &lt;= end)</td><td></td></tr>
 <tr><td>ref-1</td><td>error</td><td>DocumentReference.subject, DocumentReference.author, DocumentReference.authenticator, DocumentReference.custodian, DocumentReference.relatesTo.target, DocumentReference.context.encounter, DocumentReference.context.sourcePatientInfo, DocumentReference.context.related</td><td>SHALL have a contained resource if a local reference is provided<br/>: reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))</td><td></td></tr>
 </table>
@@ -2364,7 +2354,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J07-Xd
 <tr><td>dom-5</td><td>error</td><td>DocumentReference</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
 <tr><td>dom-6</td><td>best practice</td><td>DocumentReference</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>**ALL** elements</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>DocumentReference.relatesTo.modifierExtension, DocumentReference.content.modifierExtension, DocumentReference.context.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 <tr><td>per-1</td><td>error</td><td>DocumentReference.context.period</td><td>If present, start SHALL have a lower value than end<br/>: start.hasValue().not() or end.hasValue().not() or (start &lt;= end)</td><td></td></tr>
 <tr><td>ref-1</td><td>error</td><td>DocumentReference.subject, DocumentReference.author, DocumentReference.authenticator, DocumentReference.relatesTo.target, DocumentReference.context.sourcePatientInfo</td><td>SHALL have a contained resource if a local reference is provided<br/>: reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))</td><td></td></tr>
 </table>
@@ -2878,7 +2868,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J07-Xd
 <tr><td>dom-5</td><td>error</td><td>DocumentReference</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
 <tr><td>dom-6</td><td>best practice</td><td>DocumentReference</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>**ALL** elements</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>DocumentReference.meta.extension, DocumentReference.extension, DocumentReference.relatesTo.extension, DocumentReference.relatesTo.modifierExtension, DocumentReference.content.extension, DocumentReference.content.modifierExtension, DocumentReference.content.attachment.extension, DocumentReference.context.extension, DocumentReference.context.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 <tr><td>per-1</td><td>error</td><td>DocumentReference.context.period</td><td>If present, start SHALL have a lower value than end<br/>: start.hasValue().not() or end.hasValue().not() or (start &lt;= end)</td><td></td></tr>
 <tr><td>ref-1</td><td>error</td><td>DocumentReference.subject, DocumentReference.author, DocumentReference.authenticator, DocumentReference.custodian, DocumentReference.relatesTo.target, DocumentReference.context.encounter, DocumentReference.context.sourcePatientInfo, DocumentReference.context.related</td><td>SHALL have a contained resource if a local reference is provided<br/>: reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))</td><td></td></tr>
 </table>
@@ -3084,7 +3074,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Oct 8, 2024 14:30+0000">2024-10-08</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Oct 9, 2024 15:00+0000">2024-10-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
