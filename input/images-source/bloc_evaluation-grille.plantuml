@@ -15,7 +15,7 @@ class Statut #LightGray
 class Evaluation #LightGray {
     idEvaluation : Identifiant [1..1]
     type : Code [1..1]
-    date : DateHeure [0..1]
+    date : Date [0..1]
     resultat : [0..1]
     commentaire : Texte [0..1]
     pieceJointe : ObjetBinaire [0..*]

@@ -16,7 +16,6 @@ class Transport #LightGray {
     idTrajet : Identifiant [1..1]
     typeTransport : Code [0..1]
     typeMotorisation : Code [0..1]
-    natureTransport : Code [0..1]
     transporteur : EntiteJuridique [0..1]
     adresseDepart : Adresse [0..1]
     adresseDestination : Adresse [0..1]
@@ -31,13 +30,14 @@ class Transport #LightGray {
 class TransportUsager #LightGray {
     accompagnement : Indicateur [0..1]
     asepsieRigoureuse : Indicateur [0..1]
+    natureTransport : Code [0..1]
 }
 
 class Evenement #LightGray {
     idEvenement : Identifiant [1..1]
     typeEvenement : Code [0..*]
     libelleEvenement : Texte [0..1]
-    commentaireEvenement : Texte [0..1]
+    commentaireEvenement : Texte [0..*]
     compteRenduEvenement : Texte [0..1]
     pieceJointeEvenement : ObjetBinaire [0..*]
     lieuEvenement : Lieu [0..1]
@@ -50,6 +50,7 @@ class Evenement #LightGray {
     motifNonRealisation : Code [0..1]
     repas : Indicateur [0..1]
     typeRessourceUtilisee : Code [0..*]
+    detailTypeRessourceUtilisee : Code [0..*]
     dateDerniereModification : DateHeure [0..1]
     dateValidation : DateHeure [0..1]
 }
