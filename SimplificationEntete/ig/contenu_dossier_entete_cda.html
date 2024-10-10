@@ -252,7 +252,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#documentationof" id="markdown-toc-documentationof">DocumentationOf</a></li>
   <li><a href="#relateddocument" id="markdown-toc-relateddocument">relatedDocument</a></li>
   <li><a href="#componentof" id="markdown-toc-componentof">ComponentOf</a></li>
-  <li><a href="#adresse" id="markdown-toc-adresse">Adresse</a></li>
+  <li><a href="#description-des-éléments-addr-et-telecom" id="markdown-toc-description-des-éléments-addr-et-telecom">Description des éléments addr et telecom</a></li>
 </ul>
 
 </div>
@@ -403,7 +403,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 			<td>
             <ul>
                 <li>Si le matricule INS de l'usager est présent, le lieu de naissance de l'usager est obligatoire et l'attribut nullFlavor est interdit.</li>
-                <li>Si le matricule INS de l'usager n'est pas présent, il est préconisé de renseigner le lieu de naissance de l'usager. cet élément est optionnel.</li>
+                <li>Si le matricule INS de l'usager n'est pas présent, il est préconisé de renseigner le lieu de naissance de l'usager. Cet élément est optionnel.</li>
             </ul>
             </td>
 		</tr>
@@ -453,7 +453,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <td>[1..1]</td>
             <td><p><strong>Profession / savoir-faire ou rôle</strong></p>
 			<p>@code = LOGICIEL_DUI
-			<br />@displayName = Logiciel de Dossier Usager Informatisé
+			<br />@displayName = Logiciel de Dossier Usager Informatisé (optionnel)
 			<br />@codeSystem = 1.2.250.1.213.1.1.4.6</p></td>
         </tr>
         <tr>
@@ -557,7 +557,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <td>[0..1] </td>
             <td><p><strong>Profession ou rôle du responsable</strong></p>
 			<p>@code = LOGICIEL_DUI
-			<br />@displayName = Logiciel de Dossier Usager Informatisé
+			<br />@displayName = Logiciel de Dossier Usager Informatisé (optionnel)
 			<br />@codeSystem = 1.2.250.1.213.1.1.4.6</p></td>
         </tr>
          <tr>
@@ -575,11 +575,65 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="documentationof">DocumentationOf</h3>
 
-<p>L’élément DocumentationOf imposé par, le standard CDA, décrit les données de l’évènement principal documenté.Cet élément précise le contexte de l’intervention ou de l’action qui est à l’origine du document, qu’il s’agisse d’une prise en charge, d’un suivi médico-social ou d’un événement clé dans le parcours de l’usager.</p>
+<p>L’élément DocumentationOf imposé par, le standard CDA, documente le transfert de données.</p>
 
 <p>La structure de l’élément DocumentationOf se conforme aux contraintes et définitions présentées dans le <strong>Volet Structuration minimale des documents de santé</strong> :</p>
 
 <iframe src="./cda/" height="400" name="DocumentationOf"></iframe>
+
+<p><strong>Le tableau ci-dessous présente les contraintes spécifiques à l’entête TDDUI :</strong></p>
+
+<table id="cda">
+    <thead>
+        <tr>
+            <th>Elément XML</th>
+            <th>Card.</th>
+            <th>Contenu de l'élément CDA</th>
+        </tr>
+	</thead>
+	<tbody>
+        <tr>
+            <td>serviceEvent/effectiveTime</td>
+            <td>[1..1] </td>
+            <td><p><strong>Date de création du document</strong>
+            <br />Attribut nullFlavor interdit</p></td>
+        </tr>
+        <tr>
+            <td>serviceEvent/performer</td>
+            <td>[1..1] </td>
+            <td><p><strong>Système ayant réalisé le transfert de données</strong>
+            <br />Attribut nullFlavor interdit</p></td>
+        </tr>
+        <tr>
+            <td>serviceEvent/performer/assignedEntity/id</td>
+            <td>[1..1] </td>
+            <td><strong>Identifiant du système responsable du transfert de données</strong>
+            <p>@root = 1.2.250.1.71.4.2.1 (OID autorité d'attribution des systèmes et des professionnels)</p>
+            <p>@extension = Valeur de l'identifiant :
+			<br />Concaténation de :
+			<br /><span style="padding:0 0 0 20px">- Identifiant de la structure</span>
+			<br /><span style="padding:0 0 0 20px">- Caractère "/"</span>
+			<br /><span style="padding:0 0 0 20px">- Identifiant interne du système dans la structure</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td>serviceEvent/performer/assignedEntity/code</td>
+            <td>[0..1]</td>
+            <td><p><strong>Système utilisé</strong></p>
+			<p>@code = LOGICIEL_DUI
+			<br />@displayName = Logiciel de Dossier Usager Informatisé (optionnel)
+			<br />@codeSystem = 1.2.250.1.213.1.1.4.6</p></td>
+        </tr>
+        <tr>
+            <td>serviceEvent/performer/assignedEntity/representedOrganization/standardIndustryClassCode</td>
+            <td>[1..1]</td>
+            <td><p><strong>Structure</strong></p>
+			<p>@code = ESSMS
+			<br />@displayName = Etablissement ou Service Social ou Médico-Social (optionnel)
+			<br />@codeSystem = 1.2.250.1.213.1.1.4.9</p></td>
+        </tr>
+    </tbody>
+</table>
 
 <p><br /></p>
 
@@ -603,11 +657,21 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p><br /></p>
 
-<h3 id="adresse">Adresse</h3>
+<h3 id="description-des-éléments-addr-et-telecom">Description des éléments addr et telecom</h3>
+
+<h4 id="adresse">Adresse</h4>
 
 <p>L’élément Adresse imposé par le CDA dans la plupart des éléments d’entête CDA telle que le <em>recordTarget</em>, <em>author</em>, <em>custodian</em>, <em>legalAutenthificator</em>.</p>
 
-<p>La structure de l’élément Adresse se conforme aux contraintes et définitions présentées dans le <strong>Volet Structuration minimale des documents de santé</strong> :</p>
+<p>La structure de l’élément addr se conforme aux contraintes et définitions présentées dans le <strong>Volet Structuration minimale des documents de santé</strong> :</p>
+
+<iframe src="./cda/" height="400" name="Adresse"></iframe>
+
+<p><br /></p>
+
+<h4 id="coordonnées-télécom">Coordonnées télécom</h4>
+
+<p>La structure de l’élément telecom se conforme aux contraintes et définitions présentées dans le <strong>Volet Structuration minimale des documents de santé</strong> :</p>
 
 <iframe src="./cda/" height="400" name="Adresse"></iframe>
 
@@ -656,7 +720,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Oct 9, 2024 13:28+0000">2024-10-09</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 10, 2024 16:00+0000">2024-10-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
