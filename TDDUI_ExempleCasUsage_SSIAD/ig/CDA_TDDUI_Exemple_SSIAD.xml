@@ -45,7 +45,7 @@
 	<!--  Titre du document  -->
 	<title>Document transfert de données DUI</title>
 	<!--  Date de création du document  -->
-	<effectiveTime value="20230414111500+0100"/>
+	<effectiveTime value="20230414111500+0200"/>
 	<!--  Niveau de confidentialité du document  -->
 	<confidentialityCode code="N" 
 						displayName="Normal" 
@@ -106,7 +106,7 @@
 	</recordTarget>
 	<!-- Auteur du document -->
 	<author>
-		<time value="20230414103000+0100"/>
+		<time value="20230414103000+0200"/>
 		<!--[1..1] identification de l'auteur = système -->
 		<assignedAuthor>
 			<!--  Identifiant du système de la structure (OID autorité d'attribution des professionnels et système : 1.2.250.1.71.4.2.1) -->
@@ -143,7 +143,7 @@
 	<!-- Responsable légal du document -->
 	<legalAuthenticator>
 		<!-- Date et heure de la prise de responsabilité -->
-		<time value="20230411111500+0100"/>
+		<time value="20230411111500+0200"/>
 		<signatureCode code="S"/>
 		<assignedEntity>
 			<!-- Identifiant du système responsable de la production du document (OID autorité d'attribution des professionnels et système : 1.2.250.1.71.4.2.1) -->
@@ -153,6 +153,12 @@
 			<code code="LOGICIEL_DUI"
 			      displayName="Logiciel de Dossier Usager Informatisé"
 			      codeSystem="1.2.250.1.213.1.1.4.6"/>
+			<assignedPerson>
+				<name>
+					<family>HOUBAUX</family>
+					<given>Thomas</given>
+				</name>
+			</assignedPerson>
 			<!-- Structure responsable du document -->
 			<representedOrganization>
 				<!-- Identifiant de la structure (OID autorité d'attribution des identifiants des structures : 1.2.250.1.71.4.2.2) -->
@@ -166,7 +172,7 @@
 		<serviceEvent>
 			<!-- Date de la création du document -->
 			<effectiveTime>
-				<low value="20230411111500+0100"/>
+				<low value="20230411111500+0200"/>
 			</effectiveTime>
 			<!-- Le Système ayant réalisé l'acte principal du document -->
 			<performer typeCode="PRF">
@@ -195,7 +201,7 @@
 		<encompassingEncounter>
 			<!-- Date de la prise en charge du transfert de données -->
 			<effectiveTime>
-				<low value="20230411111500+0100"/>
+				<low value="20230411111500+0200"/>
 			</effectiveTime>
 			<!-- Structure prenant en charge le transfert de données -->
 			<location>
@@ -386,12 +392,16 @@
 							<code code="GEN-367"
 							      displayName="Agenda de l'usager"
 								  codeSystem="1.2.250.1.213.1.1.4.322" 
-								  codeSystemName="TA_ASIP"/>
+								  codeSystemName="TA_ASIP">
+								  <qualifier>
+									<value code="MED-1298" displayName="Intervention d'un infirmer salarié" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
+								  </qualifier>
+								</code>
 							<text><reference value="#evenement-01" /></text>
 							<!-- Date de l'évènement -->
 							<effectiveTime>
-								<low value="20230414103000+0100"/>
-								<high value="20230414111500+0100"/>
+								<low value="20230414103000+0200"/>
+								<high value="20230414111500+0200"/>
 							</effectiveTime>
 							<!-- Professionnel ayant réalisé l'évènement -->
 							<performer typeCode="PRF">
@@ -592,7 +602,7 @@
 										<reference value="#statut-evn"/>
 									</text>
 									<statusCode code="completed"/>
-									<effectiveTime value="202404111500+0100"/>
+									<effectiveTime value="202404111500+0200"/>
 									<!-- Statut de l'évènement -->
 									<value xsi:type="CD"
 											code="REALISE"
@@ -896,7 +906,7 @@
 													<reference value="#statutEvaluation"/>
 												</text>
 												<statusCode code="completed"/>
-												<effectiveTime value="202404111500+0100"/>
+												<effectiveTime value="202404111500+0200"/>
 												<!-- Statut de l'évaluation -->
 												<value xsi:type="CD"
 														code="TERMINE"
