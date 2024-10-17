@@ -254,77 +254,89 @@
 							</tbody>
 						</table>
 					</text>
-					<!-- [0..1] Entrée FR-Sejour-Admission -->
+					<!-- [0..1] Entrée FR-Sejour (organizer) -->	
 					<entry>
-						<encounter classCode="ENC"
-									moodCode="EVN">
-							<!-- Conformité Encounter activity (CCD) -->
-							<templateId root="2.16.840.1.113883.10.20.1.21"/>
-							<!-- Conformité FR-Sejour-Admission (CI-SIS) -->
-							<templateId root="1.2.250.1.213.1.1.3.218"/>
-							<!-- Identifiant du séjour (concaténation 3+FINESS/idUsagerInterne-SEJOUR-NumeroDossier) -->
-							<id root="1.2.250.2345.3245.13"
-								extension="3480787529/147720425367411-SEJOUR-1012"/>
-							<!-- Type de séjour -->
-							<code code="GEN-351"
-								displayName="Établissement ou service social ou médico-social (ESSMS)"
-								codeSystem="1.2.250.1.213.1.1.4.322"
-								codeSystemName="TA_ASIP"/>
-							<!-- Date d'admission-->
-							<effectiveTime value="20230411"/>
-							<participant typeCode="RESP">
-								<participantRole>
-									<!-- établissement identifié par son N° FINESS -->
-									<scopingEntity classCode="ENT" determinerCode="INSTANCE">
-										<id root="1.2.250.1.71.4.2.2" extension="1480787529"/>
-										<desc>Les Chênes Verts</desc>
-									</scopingEntity>
-								</participantRole>
-							</participant>
-						</encounter>
-					</entry>
-					<!-- [0..*] Entrée FR-Modalite-entree -->
-					<entry>
-						<observation classCode="OBS" moodCode="EVN">
-							<!-- Conformité FR-Modalite-entree (CI-SIS) -->
-							<templateId root="1.2.250.1.213.1.1.3.48.6"/>
-							<id root="F597BFD5-2BD0-4163-892A-7C51830E2BA6"/>
-							<code code="ORG-070" displayName="Modalité d'entrée"
-								codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-							<text><reference value="#modaliteE"/></text>
+						<organizer classCode="CLUSTER" moodCode="EVN">
+							<!-- Conformité FR-Sejour (CI-SIS) -->
+							<templateId root="1.2.250.1.213.1.1.3.219"/>
+							<!-- Identifiant de l'entrée -->
+							<id root="4BD46D02-8CCF-11EF-B864-0242AC120002"/>
+							<code code="ORG-211" displayName="Séjour" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
 							<statusCode code="completed"/>
-							<effectiveTime value="20230414"/>
-							<value xsi:type="CE" nullFlavor="NA"/>
-						</observation>
-					</entry>                    
-					<!-- [0..*] Entrée FR-Modalite-sortie (Prévisionnelle) -->
-					<entry>
-						<observation classCode="OBS" moodCode="INT">
-							<!-- Conformité FR-Modalite-sortie (CI-SIS) -->
-							<templateId root="1.2.250.1.213.1.1.3.48.7"/>
-							<id root="1E384EA2-2083-4F17-B825-6A088D2A0E6E"/>
-							<code code="ORG-074" displayName="Modalité de sortie"
-								codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-							<text><reference value="#modaliteS"/></text>
-							<statusCode code="completed"/>
-							<effectiveTime value="20230505"/>
-							<value xsi:type="CE" nullFlavor="NA"/>
-						</observation>
-					</entry>
-					<!-- [0..1] Entrée FR-Reference-interne :Evenement de l'agenda Usager -->
-					<entry>
-						<act classCode="ACT" moodCode="EVN">
-							<!-- Conformité Internal References (IHE PCC) -->
-							<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4.1"/>
-							<!-- Conformité FR-Reference-interne (CI-SIS) -->
-							<templateId root="1.2.250.1.213.1.1.3.36"/>
-							<id root="1.2.250.2345.3245.13"
-							    extension="3480787529/147720425367411-EVN-12548"/>
-							<code code="GEN-367"
-							      displayName="Agenda de l'usager"
-							      codeSystem="1.2.250.1.213.1.1.4.322" 
-							      codeSystemName="TA_ASIP"/> 
-						</act>
+							<effectiveTime nullFlavor="NA"/>	
+							<!-- [0..1] Entrée FR-Sejour-Admission -->
+							<component>
+								<encounter classCode="ENC"
+											moodCode="EVN">
+									<!-- Conformité Encounter activity (CCD) -->
+									<templateId root="2.16.840.1.113883.10.20.1.21"/>
+									<!-- Conformité FR-Sejour-Admission (CI-SIS) -->
+									<templateId root="1.2.250.1.213.1.1.3.218"/>
+									<!-- Identifiant du séjour (concaténation 3+FINESS/idUsagerInterne-SEJOUR-NumeroDossier) -->
+									<id root="1.2.250.2345.3245.13"
+										extension="3480787529/147720425367411-SEJOUR-1012"/>
+									<!-- Type de séjour -->
+									<code code="GEN-351"
+										displayName="Établissement ou service social ou médico-social (ESSMS)"
+										codeSystem="1.2.250.1.213.1.1.4.322"
+										codeSystemName="TA_ASIP"/>
+									<!-- Date d'admission-->
+									<effectiveTime value="20230411"/>
+									<participant typeCode="RESP">
+										<participantRole>
+											<!-- établissement identifié par son N° FINESS -->
+											<scopingEntity classCode="ENT" determinerCode="INSTANCE">
+												<id root="1.2.250.1.71.4.2.2" extension="1480787529"/>
+												<desc>Les Chênes Verts</desc>
+											</scopingEntity>
+										</participantRole>
+									</participant>
+								</encounter>
+							</component>
+							<!-- [0..*] Entrée FR-Modalite-entree -->
+							<component>
+								<observation classCode="OBS" moodCode="EVN">
+									<!-- Conformité FR-Modalite-entree (CI-SIS) -->
+									<templateId root="1.2.250.1.213.1.1.3.48.6"/>
+									<id root="F597BFD5-2BD0-4163-892A-7C51830E2BA6"/>
+									<code code="ORG-070" displayName="Modalité d'entrée"
+										codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
+									<text><reference value="#modaliteE"/></text>
+									<statusCode code="completed"/>
+									<effectiveTime value="20230414"/>
+									<value xsi:type="CE" nullFlavor="NA"/>
+								</observation>
+							</component>                    
+							<!-- [0..*] Entrée FR-Modalite-sortie (Prévisionnelle) -->
+							<component>
+								<observation classCode="OBS" moodCode="INT">
+									<!-- Conformité FR-Modalite-sortie (CI-SIS) -->
+									<templateId root="1.2.250.1.213.1.1.3.48.7"/>
+									<id root="1E384EA2-2083-4F17-B825-6A088D2A0E6E"/>
+									<code code="ORG-074" displayName="Modalité de sortie"
+										codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
+									<text><reference value="#modaliteS"/></text>
+									<statusCode code="completed"/>
+									<effectiveTime value="20230505"/>
+									<value xsi:type="CE" nullFlavor="NA"/>
+								</observation>
+							</component>
+							<!-- [0..1] Entrée FR-Reference-interne :Evenement de l'agenda Usager -->
+							<component>
+								<act classCode="ACT" moodCode="EVN">
+									<!-- Conformité Internal References (IHE PCC) -->
+									<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4.1"/>
+									<!-- Conformité FR-Reference-interne (CI-SIS) -->
+									<templateId root="1.2.250.1.213.1.1.3.36"/>
+									<id root="1.2.250.2345.3245.13"
+										extension="3480787529/147720425367411-EVN-12548"/>
+									<code code="GEN-367"
+										displayName="Agenda de l'usager"
+										codeSystem="1.2.250.1.213.1.1.4.322" 
+										codeSystemName="TA_ASIP"/> 
+								</act>
+							</component>
+						</organizer>
 					</entry>
 				</section>
 			</component>
