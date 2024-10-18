@@ -1,0 +1,105 @@
+@startuml
+
+
+map "Evenement : [[contenu_dossier_corps_cda.html Entrée FR-Evenement]]" as Evenement #back:ghostWhite;header:LightGray {
+    idEvenement => id
+    typeEvenement => code/qualifier \n code/originalText
+    libelleEvenement => text
+    commentaireEvenement => [[contenu_dossier_corps_cda.html Entrée FR-CommentaireER]]
+    compteRenduEvenement => [[contenu_dossier_corps_cda.html Entrée FR-Reference-interne]]
+    pieceJointeEvenement => [[contenu_dossier_corps_cda.html Entrée FR-Reference-interne]]
+    dateDebutEvenement => effectiveTime/low
+    dateFinEvenement => effectiveTime/high
+    evenementHorsPrestation => [[contenu_dossier_corps_cda.html Entrée FR-Simple-Observation]] value
+    motifEvenement => text
+    usagerPresent => [[contenu_dossier_corps_cda.html Entrée FR-Simple-Observation]] value
+    repas => [[contenu_dossier_corps_cda.html Entrée FR-Simple-Observation]] value
+    typeRessourceUtilisee => [[contenu_dossier_corps_cda.html Entrée FR-Simple-Observation]] value
+    detailTypeRessourceUtilisee => [[contenu_dossier_corps_cda.html Entrée FR-Simple-Observation]] value/qualifier
+    dateDerniereModification => [[contenu_dossier_corps_cda.html Entrée FR-Simple-Observation]] value
+}
+map "Transport : [[contenu_dossier_corps_cda.html Entrée FR-Transport-du-professionnel/FR-Transport-du-patient]]" as Transport#back:ghostWhite;header:LightGray {
+    idTrajet => id
+    typeTransport => code
+    typeMotorisation => code/qualifier
+    adresseDepart => participant[@typeCode=ORG]/participantRole/addr
+    adresseDestination => participant[@typeCode=DST]/participantRole/addr
+    budgetPrevisionnel => [[contenu_dossier_corps_cda.html Entrée FR-Simple-Observation]] value
+    budgetReel => [[contenu_dossier_corps_cda.html Entrée FR-Simple-Observation]] value
+    distance => [[contenu_dossier_corps_cda.html Entrée FR-Simple-Observation]] value
+    dureeTheorique => [[contenu_dossier_corps_cda.html Entrée FR-Simple-Observation]] value
+    dateDebutTransport => effectiveTime/low
+    dateFinTransport => effectiveTime/high
+
+}
+map "Professionnel : [[contenu_dossier_corps_cda.html Entrée FR-Transport-du-professionnel]]" as Professionnel #back:Ivory;header:LightYellow  {
+    idNat_PS => participant[@typeCode=RCV]/participantRole/id
+    civilite => participant[@typeCode=RCV]/participantRole/playingEntity/name/prefix
+    nom => participant[@typeCode=RCV]/participantRole/playingEntity/name/family
+    prenom => participant[@typeCode=RCV]/participantRole/playingEntity/name/given
+    fonction => participant[@typeCode=RCV]/participantRole/playingEntity/code
+}
+
+map "EtablissementDeRattachement : [[contenu_dossier_corps_cda.html Entrée FR-Transport-du-professionnel]]" as etablissementDeRattachement #back:Ivory;header:LightYellow {
+    idNat_Struct => participant[@typeCode=RCV]/participantRole/scopingEntity/id
+    raisonSocial => participant[@typeCode=RCV]/participantRole/scopingEntity/desc
+    statutJuridique => participant[@typeCode=RCV]/participantRole/scopingEntity/code
+}
+
+map "Transporteur [[contenu_dossier_corps_cda.html Entrée FR-Evenement]]" as transporteur #back:Ivory;header:LightYellow  {
+    idNat_Struct => performer/assignedEntity/representedOrganization/id
+    raisonSocial => performer/assignedEntity/representedOrganization/name
+    statutJuridique =>  performer/assignedEntity/representedOrganization/standardIndustryClassCode
+}
+
+map "StructureEnCharge [[contenu_dossier_corps_cda.html Entrée FR-Evenement]]" as structureEnCharge #back:Ivory;header:LightYellow  {
+    idNat_Struct => participant[@typeCode=RESP]/participantRole/scopingEntity/id
+    raisonSocial => participant[@typeCode=RESP]/participantRole/scopingEntity/desc
+    statutJuridique => participant[@typeCode=RESP]/participantRole/scopingEntity/code
+}
+
+
+map "TransportProfessionnel: [[contenu_dossier_corps_cda.html Entrée FR-Transport-du-professionnel]]" as TransportPro#back:ghostWhite;header:LightGray {
+}
+
+
+
+map "TransportUsager : [[contenu_dossier_corps_cda.html Entrée FR-Transport-du-patient]]" as TransportUsager#back:ghostWhite;header:LightGray {
+    natureTransport => code/qualifier
+    accompagnement => [[contenu_dossier_corps_cda.html Entrée FR-Simple-Observation]] value
+    asepsieRigoureuse => [[contenu_dossier_corps_cda.html Entrée FR-Simple-Observation]] value
+}
+
+map "LieuEvenement : [[contenu_dossier_corps_cda.html Entrée FR-Evenement]]" as Lieu #back:Ivory;header:LightYellow  {
+    identifiant => participant[@typeCode=LOC]/participantRole/scopingEntity/id    
+    nom => participant[@typeCode=LOC]/participantRole/scopingEntity/desc
+    adresse => participant[@typeCode=LOC]/participantRole/addr
+    telecommunication => participant[@typeCode=LOC]/participantRole/telecom 
+}
+
+map "Evaluation : [[contenu_dossier_corps_cda.html Entrée FR-Rerence-interne]] référençant une entrée FR-Evaluation" as Evaluation #back:Ivory;header:LightYellow {
+}
+
+map "Statut : [[contenu_dossier_corps_cda.html Entrée FR-Statut]]" as Statut #back:Ivory;header:LightYellow{
+    statut => value
+    motifNonRealisation => value/qualifier
+    dateModificationStatut => effectiveTime
+    auteur => author
+}
+
+
+Evenement "0..*" -- "0..1" Lieu  
+Professionnel "0..*" -- "0..*" Evenement
+structureEnCharge "0..1" -right- "0..*" Evenement
+Transport <|-- TransportPro
+Transport <|-- TransportUsager
+TransportUsager "0..*" -- "1" Evenement
+TransportPro "0..*" -- "1" Professionnel
+Evenement "0..1" -- "0..1" Evaluation
+Evenement "1" -right- "0..*" Statut
+transporteur "0..1" -- "0..*" Transport
+etablissementDeRattachement "0..1" -- "0..*" Professionnel
+
+
+
+@enduml
