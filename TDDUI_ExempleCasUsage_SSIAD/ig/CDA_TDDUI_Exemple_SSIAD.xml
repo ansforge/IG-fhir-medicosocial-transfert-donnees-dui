@@ -15,6 +15,7 @@
 						Ajout des sections et entrées relatives à l'évènement et au transport du professionnel
 						Ajout des sections et entrées relatives au séjour de l'usage
 						Modification des données INS du patient (notamment gestion des family et given)
+		21/10/2024 :	Entrée Evenement : type modifié pour la value de l'entrée Simple-Observation représentant la date de dernière mise à jour : IVL-TS -> TS
 	**********************************************************************************************************
 -->
 <ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -480,7 +481,7 @@
 									<code code="106177-9" displayName="Date and time of last update of data" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 									<text><reference value="#DateDerniereMiseAJour" /></text>
 									<statusCode code="completed" />
-									<value xsi:type="IVL_TS" value="20230414111500+0200"/>
+									<value xsi:type="TS" value="20230414111500+0200"/>
 								</observation>
 							</entryRelationship>
 							<!-- Entrée FR-Transport-du-professionnel-->
