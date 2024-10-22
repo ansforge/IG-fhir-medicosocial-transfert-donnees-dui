@@ -16,6 +16,8 @@
 						Ajout des sections et entrées relatives au séjour de l'usage
 						Modification des données INS du patient (notamment gestion des family et given)
 		21/10/2024 :	Entrée Evenement : type modifié pour la value de l'entrée Simple-Observation représentant la date de dernière mise à jour : IVL-TS -> TS
+						Entrée FR-Sejour : ajout des typeCodes obligatoires sur tous les component
+						Entrée FR-Groupe-de-questionnaires-d-evaluation : ajout du typeCode obligatoire sur le component
 	**********************************************************************************************************
 -->
 <ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -266,7 +268,7 @@
 							<statusCode code="completed"/>
 							<effectiveTime nullFlavor="NA"/>	
 							<!-- [0..1] Entrée FR-Sejour-Admission -->
-							<component>
+							<component typeCode="COMP">
 								<encounter classCode="ENC"
 											moodCode="EVN">
 									<!-- Conformité Encounter activity (CCD) -->
@@ -295,7 +297,7 @@
 								</encounter>
 							</component>
 							<!-- [0..*] Entrée FR-Modalite-entree -->
-							<component>
+							<component typeCode="COMP">
 								<observation classCode="OBS" moodCode="EVN">
 									<!-- Conformité FR-Modalite-entree (CI-SIS) -->
 									<templateId root="1.2.250.1.213.1.1.3.48.6"/>
@@ -309,7 +311,7 @@
 								</observation>
 							</component>                    
 							<!-- [0..*] Entrée FR-Modalite-sortie (Prévisionnelle) -->
-							<component>
+							<component typeCode="COMP">
 								<observation classCode="OBS" moodCode="INT">
 									<!-- Conformité FR-Modalite-sortie (CI-SIS) -->
 									<templateId root="1.2.250.1.213.1.1.3.48.7"/>
@@ -323,7 +325,7 @@
 								</observation>
 							</component>
 							<!-- [0..1] Entrée FR-Reference-interne :Evenement de l'agenda Usager -->
-							<component>
+							<component typeCode="COMP">
 								<act classCode="ACT" moodCode="EVN">
 									<!-- Conformité Internal References (IHE PCC) -->
 									<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4.1"/>
@@ -686,7 +688,7 @@
 							<statusCode code="completed"/>
 							<effectiveTime value="20230414"/>						   
 							<!-- [1..1] Entrée FR-Evaluation -->
-							<component>
+							<component typeCode="COMP">
 									<observation classCode="OBS" moodCode="EVN">
 										<!-- Conformité CCD -->
 										<templateId root="2.16.840.1.113883.10.20.1.31"/>
