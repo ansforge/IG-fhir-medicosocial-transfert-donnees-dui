@@ -34,10 +34,10 @@ Ce guide d'implémentation contient :
 - La spécification technique de contenu : sections <a href="contenu_dossier.html">Contenu du dossier</a> et <a href="ressources_cda.html">Ressources de conformité</a>
 - La spécification technique de transport : sections <a href="description_flux.html">Description des flux</a> et <a href="artifacts.html">Ressources de conformité</a>
 
-<b>Remarque</b> : l'actuelle version de la spécification technique de contenu repose sur un périmètre restreint d'export des données de logiciels DUI concernant les services de soins infirmiers à domicile (SSIAD):
+<b>Remarque</b> : l'actuelle version de la spécification technique de contenu repose sur un périmètre restreint d'export des données de logiciels DUI :
 - nom/prénom/INS ou NIR/traits d’identités ;
 - évaluation de l'autonomie de l'usager accompagnée (ou non) de ses grilles d'évaluation structurées ou non structurées ;
-- évènements de l'agenda usager organisés par l’ESMS entrant dans la thérapie de l’usager ;
+- évènements de l'agenda usager organisés par l’ESSMS entrant dans la thérapie de l’usager ;
 - informations sur le séjour et la réservation de l'usager.
 
 ### Lectorat cible

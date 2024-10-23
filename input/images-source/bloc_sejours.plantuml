@@ -26,7 +26,7 @@ class Sejour #Thistle {
     dateSortiePrevisionnelle : DateHeure [0..1]
     dateSortie : DateHeure [0..1]
     libelleModeSortie : Texte [0..1]
-    numeroDossier : Identifiant [1..1]
+    idSejour : Identifiant [1..1]
     commentaire : Texte [0..1] 
 }
 
@@ -61,5 +61,6 @@ Sejour "1" - "*" Solde
 Sejour "*" -- "*" Contrat
 Usager "1" - "0..*" Sejour
 Evenement "0..*" -- "0..1" Sejour
+Usager "1" -- "0..*" Evenement
 
 @enduml
