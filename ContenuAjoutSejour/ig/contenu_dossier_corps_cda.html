@@ -263,14 +263,29 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Cette section contient les informations relatives au séjour d’un usager dans une structure ESSMS.</p>
 
-<p><strong>Ajout template CI-SIS</strong></p>
+<p>La structure de la section se conforme aux contraintes et définitions présentées dans les <strong>Modèles de contenus CDA</strong> :</p>
+
+<iframe src="./cda/" height="400" name="FR-Sejours"></iframe>
+
+<p><br /></p>
+
+<h4 id="entrée-fr-sejour">Entrée FR-Sejour</h4>
+
+<p>Cette entrée est un élément de type organizer permettant de décrire le séjour d’un usager.</p>
+
+<p>La structure de l’entrée se conforme aux contraintes et définitions présentées dans les <strong>Modèles de contenus CDA</strong> :</p>
+
+<iframe src="./cda/" height="400" name="FR-Sejour"></iframe>
+
+<p><br /></p>
 
 <h4 id="entrée-fr-sejour-admission">Entrée FR-Sejour-Admission</h4>
+
 <p>Cette entrée permet de décrire les données relatives à l’admission de l’usager au sein d’une structure.</p>
 
 <p>La structure de l’entrée se conforme aux contraintes et définitions présentées dans les <strong>Modèles de contenus CDA</strong> :</p>
 
-<iframe src="./cda/" height="400" name="RecordTarget"></iframe>
+<iframe src="./cda/" height="400" name="FR-Sejour-Admission"></iframe>
 
 <p><br /></p>
 
@@ -285,31 +300,46 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 		</tr>
     </thead>
     <tbody>
+		<tr id="id">
+			<td>id</td>
+            <td>[1..1]</td>
+			<td><strong>Identifiant unique du séjour</strong><br />L'identifiant se forme en concaténant : 3+FINESS/idUsagerInterne-SEJOUR-NumeroDossier</td>
+		</tr>
         <tr id="code">
 			<td>code</td>
             <td>[1..1]</td>
 			<td>Valeur fixée à : <br />@code = GEN-351 <br />@codeSystem = 1.2.250.1.213.1.1.4.322 <br />@displayName = Établissement ou service social ou médico-social (ESSMS) (optionnel)</td>
 		</tr>
+		<tr id="participantId">
+            <td><strong>Entité juridique responsable de l'évènement</strong><br />participant[@classCode=RESP]/participantRole/scopingEntity/id</td>
+            <td>[1..1]</td>
+			<td>Si l'entité juridique responsable de l'évènement est renseignée, son identifiant est requis.</td>
+        </tr>
+        <tr id="participantStatut">
+            <td><strong>Entité juridique responsable de l'évènement</strong><br />participant[@classCode=RESP]/participantRole/scopingEntity/code</td>
+            <td>[0..1]</td>
+			<td>Valeur issue du JDV_J100-FinessStatutJuridique-RASS.</td>
+        </tr>
     </tbody>
 </table>
 
-<h5 id="entrée-fr-modalite-entree">Entrée FR-Modalite-entree</h5>
+<h4 id="entrée-fr-modalite-entree">Entrée FR-Modalite-entree</h4>
 
 <p>Cette entrée permet d’indiquer la modalité d’entrée d’un usager dans un établissement.</p>
 
 <p>La structure de l’entrée se conforme aux contraintes et définitions présentées dans les <strong>Modèles de contenus CDA</strong> :</p>
 
-<iframe src="./cda/" height="400" name="RecordTarget"></iframe>
+<iframe src="./cda/" height="400" name="FR-Modalite-entree"></iframe>
 
 <p><br /></p>
 
-<h5 id="entrée-fr-modalite-sortie">Entrée FR-Modalite-sortie</h5>
+<h4 id="entrée-fr-modalite-sortie">Entrée FR-Modalite-sortie</h4>
 
 <p>Cette entrée permet d’indiquer la modalité de sortie d’un usager dans un établissement.</p>
 
 <p>La structure de l’entrée se conforme aux contraintes et définitions présentées dans les <strong>Modèles de contenus CDA</strong> :</p>
 
-<iframe src="./cda/" height="400" name="RecordTarget"></iframe>
+<iframe src="./cda/" height="400" name="FR-Modalite-sortie"></iframe>
 
 <p><br /></p>
 
@@ -353,7 +383,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Oct 15, 2024 15:46+0000">2024-10-15</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Oct 23, 2024 12:49+0000">2024-10-23</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
