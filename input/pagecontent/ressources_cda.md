@@ -16,4 +16,4 @@
 
 | Nom  | description |
 | --- | --- |
-| [CDA_TDDUI_Exemple](CDA_TDDUI_Exemple.xml) | Exemple de document CDA présentant l'identité de l'usager et la grille d'évaluation |
+| [CDA_TDDUI_Exemple_SSIAD](CDA_TDDUI_Exemple_SSIAD.xml) | Exemple de document CDA décrivant un cas d'usage d'évènement SSIAD intégrant un séjour, une évaluation et un transport de professionnel |
