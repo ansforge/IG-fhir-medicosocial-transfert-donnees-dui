@@ -271,6 +271,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Cette entrée permet de décrire l’évènement d’un usager passé ou à venir.</p>
 
 <iframe src="./cda/" height="400" name="FR-Evenement"></iframe>
+<p><br /></p>
 
 <p><strong>Contraintes spécifiques à l’entrée FR-Evenement :</strong></p>
 
@@ -300,15 +301,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         </tr>
         <tr id="typeEvnValue">
             <td><strong>Type évènement SSIAD</strong><br />code/qualifier[name/@code=GEN-364]/value</td>
-            <td>[0..1]</td>
+            <td>[1..1]</td>
             <td>Valeur issue du JDV_TypeEvenementSSIAD_CISIS</td>
         </tr>
         <tr id="typeEvnTexte">
-            <td><strong>Type évènement non structuré</strong><br />code/originalText/reference</td>
+            <td><strong>Type évènement non structuré</strong><br />code/originalText</td>
             <td>[0..1]</td>
-            <td>Référence le texte décrivant les types d'évènements non codés.</td>
+            <td>Référence le texte décrivant les types d'évènements au format texte.</td>
         </tr>
-         <tr id="effectiveTime">
+        <tr id="text">
+			<td>text</td>
+            <td>[0..1]</td>
+			<td>Référence le texte décrivant le libellé et/ou le motif de l'évènement</td>
+		</tr>
+        <tr id="effectiveTime">
 			<td>effectiveTime</td>
             <td>[1..1]</td>
 			<td>L'attribut nullFlavor est interdit.</td>
@@ -425,6 +431,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Cette entrée permet de décrire le transport de l’usager lors de l’évènement.</p>
 
 <iframe src="./cda/" height="400" name="FR-Transport-du-patient"></iframe>
+<p><br /></p>
 
 <p><strong>Contraintes spécifiques à l’entrée FR-Transport-du-patient :</strong></p>
 
@@ -555,6 +562,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Cette entrée permet de décrire le transport d’un professionnel lors de l’évènement.</p>
 
 <iframe src="./cda/" height="400" name="FR-Transport-du-professionnel"></iframe>
+<p><br /></p>
 
 <p><strong>Contraintes spécifiques à l’entrée FR-Transport-du-professionnel :</strong></p>
 
@@ -719,7 +727,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Oct 22, 2024 09:45+0000">2024-10-22</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 24, 2024 09:32+0000">2024-10-24</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
