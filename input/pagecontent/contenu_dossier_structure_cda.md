@@ -219,7 +219,7 @@ Les éléments imposés par le standard CDA ou le CI-SIS sont indiqués par « *
 			<td>1</td>
 			<td>author</td>
 			<td></td>
-			<td>[1..*]</td>
+			<td>[1..1]</td>
 			<td>X</td>
 			<td><strong>Auteur du document</strong>
 			<br>Le contenu de l'élément est décrit dans la rubrique <a href="contenu_dossier_entete_cda.html#author">author</a></td>
