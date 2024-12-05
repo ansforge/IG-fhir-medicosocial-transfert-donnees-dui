@@ -1539,12 +1539,6 @@ Pour ce volet l'Entité Juridique est une personne morale inscrite dans le FINES
     <td>raisonSociale : [0..1] Texte</td>
     <td>La raison sociale est le nom de l'entité juridique. Elle figure obligatoirement dans les statuts de l'EJ. </td>
   </tr>
-  <tr>
-    <td>statutJuridique : [0..1] Code</td>
-    <td>Le statut juridique détermine la situation juridique de l’établissement c’est-à-dire les règles particulières de fonctionnement qui le régissent, notamment sa gestion administrative et financière et la gestion de ses biens. <br>
-    Jeu(x) de valeur(s) associé(s) :  <a href="https://interop.esante.gouv.fr/ig/nos/ValueSet-JDV-J100-FinessStatutJuridique-RASS.html">JDV_J100-FinessStatutJuridique-RASS</a>
-    </td>
-  </tr>
 </table>
 
 
