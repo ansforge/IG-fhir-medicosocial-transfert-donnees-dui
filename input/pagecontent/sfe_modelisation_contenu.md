@@ -1275,14 +1275,13 @@ Ce niveau permet d'associer à un champ évalué de la classe "DetailEvaluation"
     <td>champsEvalue : [1..1] Code</td>
     <td>Critère évalué.<br>
     Jeu(x) de valeur(s) associé(s) : <br>
-    - Evaluation AGGIR PH PA SSIAD : Ce champs porte le critère évalué comme indiqué sur le premier niveau de détail :<br>
-    JDV_ResultatQuestionEvaluation_CISIS avec l'OID 1.2.250.1.213.1.1.5.817 publié sur <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs.</a><br>
+    - Evaluation AGGIR PH PA SSIAD : JDV_ResultatQuestionEvaluation_CISIS avec l'OID 1.2.250.1.213.1.1.5.817 publié sur <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs.</a><br>
     </td>
   </tr>
   <tr>
     <td>resultatChampsEvalue : [1..1]</td>
     <td>Résultat du champs évalué dont le type est défini selon la grille d'évaluation.<br>
-    - Evaluation AGGIR PH PA SSIAD : booléen.
+    - Evaluation AGGIR PH PA SSIAD : Indicateur.
     </td>
   </tr>
   <tr>
