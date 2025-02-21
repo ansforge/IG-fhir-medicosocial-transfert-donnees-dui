@@ -1252,8 +1252,8 @@ Le détail de l’évaluation de ce champ peut être transmis à travers un deux
     <td>Résultat du champs évalué dont le type est défini selon la grille d'évaluation.<br>
     - Evaluation AGGIR PH PA SSIAD : Le résultat du champ évalué peut véhiculer un code intermédiaire : JDV_ResultatEvaluation_CISIS avec l'OID 1.2.250.1.213.1.1.5.816 publié sur <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs.</a><br>
     Pour les évaluations AGGIR PH PA SSIAD, chaque champ évalué doit être détaillé selon 4 critères dans un deuxième niveau de détail.<br>
-    - Evaluation de la situation SSIAD : booléen.<br>
-    - Evaluation Serafin : entier.
+    - Evaluation de la situation SSIAD : Indicateur.<br>
+    - Evaluation Serafin : Numérique.
     </td>
   </tr>
   <tr>
@@ -1274,8 +1274,9 @@ Ce niveau permet d'associer à un champ évalué de la classe "DetailEvaluation"
   <tr>
     <td>champsEvalue : [1..1] Code</td>
     <td>Critère évalué.<br>
-    Jeu(x) de valeur(s) associé(s) : 
-    - Evaluation AGGIR PH PA SSIAD : ce champ contient la valeur du critère évalué : JDV_ResultatQuestionEvaluation_CISIS avec l'OID 1.2.250.1.213.1.1.5.817 publié sur <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs.</a><br>
+    Jeu(x) de valeur(s) associé(s) : <br>
+    - Evaluation AGGIR PH PA SSIAD : Ce champs porte le critère évalué comme indiqué sur le premier niveau de détail :<br>
+    JDV_ResultatQuestionEvaluation_CISIS avec l'OID 1.2.250.1.213.1.1.5.817 publié sur <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs.</a><br>
     </td>
   </tr>
   <tr>
