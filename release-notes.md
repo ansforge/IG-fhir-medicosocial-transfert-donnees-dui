@@ -3,7 +3,7 @@
 [Modifications apportées dans cette release](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pulls?q=is%3Apr+is%3Aclosed+milestone%3A1.1.0) :
 
 * [Ajout JDV_ResultatQuestionEvaluation_CISIS](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/255)
-* [ANS-006-141 - Verification QA](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/276)
+* [ANS-006-141 - Correction des erreurs et de plusieurs warning remontés par le contôle qualité de l'IG](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/276)
 * [ANS-006-141 - Mise a jour du mapping](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/269)
 * [ANS-006-141 - Mise à jour de l'exemple TDDUIBundleExample](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/268)
 * [ANS-006-141 - Mise a jour exemple & nom validateur CDA](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/266)
