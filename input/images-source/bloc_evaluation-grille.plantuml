@@ -27,24 +27,36 @@ note right of Evaluation::resultat
   Le type du résultat est dépendant du type d'évaluation.
 end note
 
-class DetailEvaluation #LightGray {
+class "DetailEvaluation" as DetailEvaluationN1 <<premier niveau>> #LightGray {
     champsEvalue: Code [1..1]
     resultatChampsEvalue : [1..1]
     commentaire : Texte [0..1]
 }
 
-note right of DetailEvaluation::resultatChampsEvalue
+note right of DetailEvaluationN1::resultatChampsEvalue
+  Le type du résultat du champ évalué est dépendant du champ évalué (Code, indicateur,...).
+end note
+
+class "DetailEvaluation" as DetailEvaluationN2 <<deuxième niveau>> #LightGray {
+    champsEvalue: Code [1..1]
+    resultatChampsEvalue : [1..1]
+    commentaire : Texte [0..1]
+}
+
+note right of DetailEvaluationN2::resultatChampsEvalue
   Le type du résultat du champ évalué est dépendant du champ évalué (Code, indicateur,...).
 end note
 
 Professionnel <|-- Evaluateur
 Professionnel <|-- Responsable
 Professionnel <|-- Auteur
+
 Evaluateur "0..1" -- "0..*" Evaluation
 Responsable "0..1" -- "0..*" Evaluation
 Auteur "0..1" -- "0..*" Evaluation
 Usager "1" -- "0..*" Evaluation
-Evaluation "1" -- "0..*" DetailEvaluation
+Evaluation "1" -- "0..*" DetailEvaluationN1
+DetailEvaluationN1 "1" -- "0..*" DetailEvaluationN2
 Evaluation "1" -- "0..*" Statut
 
 @enduml

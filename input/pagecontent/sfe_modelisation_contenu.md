@@ -1191,8 +1191,7 @@ Admission prévisionnelle d’un usager dans un ESSMS.
 
 ##### Classe Evaluation
 
-Evaluation globale du niveau de la perte d'autonomie d'un usager.
-À l’issue de l’évaluation, la personne se voit attribuer un résultat caractérisant son niveau de perte d'autonomie.
+Résultat de l'évaluation globale d'un usager.
 
 <table style="width:100%">
   <tr>
@@ -1232,8 +1231,13 @@ Evaluation globale du niveau de la perte d'autonomie d'un usager.
 
 ##### Classe DetailEvaluation
 
-Grille utilisée pour évaluer le niveau de la perte d'autonomie d'une personne. Elle est associée à l'évaluation globale de la personne.
-Pour chaques rubriques de la grille, un résultat intérmédiaire est décerné à la personne.
+Informations relatives au détail de l'évaluation de la personne prise en charge. 
+
+Cette classe permet de porter le détail structuré d'une grille d'évaluation sous forme de champs évalués associés à un résultat d'évaluation (premier niveau).
+Le détail de l’évaluation de ce champ peut être transmis à travers un deuxième niveau de détail sous la forme d'une deuxième itération cette classe.<br>
+
+<u>Premier niveau de détail</u>
+Ce niveau permet d'associer à un champ évalué de la classe "DetailEvaluation", un résultat d'évaluation.
 
 <table style="width:100%">
   <tr>
@@ -1252,14 +1256,48 @@ Pour chaques rubriques de la grille, un résultat intérmédiaire est décerné 
     </td>
   </tr>
   <tr>
-    <td>resultatChampsEvalue : [1..1] Le type est dépendant de la grille (Code, indicateur,...)</td>
-    <td>Résultat du critère d'évaluation de la grille.</td>
+    <td>resultatChampsEvalue : [1..1]</td>
+    <td>Résultat du champs évalué dont le type est défini selon la grille d'évaluation.<br>
+    - Evaluation AGGIR PH PA SSIAD : Le résultat du champ évalué peut véhiculer un code intermédiaire : JDV_ResultatEvaluation_CISIS avec l'OID 1.2.250.1.213.1.1.5.816 publié sur <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs.</a><br>
+    Pour les évaluations AGGIR PH PA SSIAD, chaque champ évalué doit être détaillé selon 4 critères dans un deuxième niveau de détail.<br>
+    - Evaluation de la situation SSIAD : Indicateur.<br>
+    - Evaluation Serafin : Numérique.
+    </td>
   </tr>
   <tr>
     <td>commentaire : [0..1] Texte</td>
-    <td>Commentaire libre.</td>
+    <td>Commentaire libre à l'évaluation du champ évalué.</td>
   </tr>
 </table>
+
+<u>Deuxième niveau de détail</u>
+
+Ce niveau permet d'associer à un champ évalué de la classe "DetailEvaluation" (premier niveau), un niveau additionnel de détail de l'évaluation de ce champ.
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>champsEvalue : [1..1] Code</td>
+    <td>Critère évalué.<br>
+    Jeu(x) de valeur(s) associé(s) : <br>
+    - Evaluation AGGIR PH PA SSIAD : JDV_ResultatQuestionEvaluation_CISIS avec l'OID 1.2.250.1.213.1.1.5.817 publié sur <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs.</a><br>
+    </td>
+  </tr>
+  <tr>
+    <td>resultatChampsEvalue : [1..1]</td>
+    <td>Résultat du champs évalué dont le type est défini selon la grille d'évaluation.<br>
+    - Evaluation AGGIR PH PA SSIAD : Indicateur.
+    </td>
+  </tr>
+  <tr>
+    <td>commentaire : [0..1] Texte</td>
+    <td>Commentaire libre relatif à l'évaluation du champ évalué.</td>
+  </tr>
+</table>
+
 
 ##### Classe Evaluateur
 
