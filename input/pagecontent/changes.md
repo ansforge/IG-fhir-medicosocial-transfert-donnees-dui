@@ -35,5 +35,7 @@ Modifications apportées dans la release [1.0.1]
 
 ### Release 1.0.0 de l'Implementation Guide du volet "Transfert de dossier DUI"
 
+Modifications apportées dans la release [1.0.0]
+
 * [Ajout des spécifications pour la partie transport](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/10)
 * [Correctif au niveau du contenu CDA de la grille d'évaluation (section FR-Evaluation-du-statut-fonctionnel)](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/11)
