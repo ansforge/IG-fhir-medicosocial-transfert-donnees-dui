@@ -1,6 +1,6 @@
-**Release 1.1.0 de l'Implementation Guide du volet "Transfert de dossier DUI".**
+### Release 1.1.0 de l'Implementation Guide du volet "Transfert de dossier DUI"
 
-[Modifications apportées dans cette release](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pulls?q=is%3Apr+is%3Aclosed+milestone%3A1.1.0) :
+Modifications apportées dans cette release [1.1.0](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pulls?q=is%3Apr+is%3Aclosed+milestone%3A1.1.0) :
 
 * [Ajout de l'Historique dans le Menu IG](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/292)
 * [Préparation de la release 110](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/290)
@@ -22,3 +22,19 @@
 * [ANS-006-141 - MAJ Capability Statement Producteur - interaction patch](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/242)
 * [suppression statut juridique dans EJ](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/220)
 * [ajout JDV grille AGGIR SSIAD PA et PH](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/218)
+
+### Release 1.0.1 de l'Implementation Guide du volet "Transfert de dossier DUI"
+
+Modifications apportées dans la release [1.0.1]
+
+* [Rendre plus générique les cas d’usage, les rôles des acteurs sur le transfert de données](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/49)
+* [Corrections de l'IG](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/35)
+* [Supprimer les images .svg générées manuellement](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/51)
+* [Nettoyage de tableau + renommage des .md + autres](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/36)
+
+### Release 1.0.0 de l'Implementation Guide du volet "Transfert de dossier DUI"
+
+Modifications apportées dans la release [1.0.0]
+
+* [Ajout des spécifications pour la partie transport](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/10)
+* [Correctif au niveau du contenu CDA de la grille d'évaluation (section FR-Evaluation-du-statut-fonctionnel)](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/11)
