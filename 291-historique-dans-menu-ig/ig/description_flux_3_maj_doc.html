@@ -284,19 +284,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </ul>
 
 </div>
-<p>Ce flux permet la mise à jour partielle d’un document.</p>
+<p>Ce flux permet la mise à jour partielle d'un document.</p>
 
 <div><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="180px" preserveAspectRatio="none" style="width:487px;height:180px;background:#FFFFFF;" version="1.1" viewBox="0 0 487 180" width="487px" zoomAndPan="magnify"><defs /><g><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="51" x2="51" y1="36.2969" y2="144.8281" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="398" x2="398" y1="36.2969" y2="144.8281" /><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="93" x="5" y="5" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="79" x="12" y="24.9951">Logiciel DUI</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="93" x="5" y="143.8281" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="79" x="12" y="163.8232">Logiciel DUI</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="165" x="316" y="5" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="151" x="323" y="24.9951">Logiciel DUI ou SI tiers</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="165" x="316" y="143.8281" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="151" x="323" y="163.8232">Logiciel DUI ou SI tiers</text><polygon fill="#181818" points="386.5,78.5625,396.5,82.5625,386.5,86.5625,390.5,82.5625" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="51.5" x2="392.5" y1="82.5625" y2="82.5625" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="49" x="58.5" y="62.3638">Flux 3.1</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="147" x="111.5" y="62.3638">MiseAJourDocument</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="4" x="258.5" y="62.3638">&#160;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="284" x="62.5" y="77.4966">HTTP PATCH [base]/DocumentReference/[id]</text><polygon fill="#181818" points="62.5,122.8281,52.5,126.8281,62.5,130.8281,58.5,126.8281" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="56.5" x2="397.5" y1="126.8281" y2="126.8281" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="49" x="68.5" y="106.6294">Flux 3.2</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="208" x="121.5" y="106.6294">ResultatMiseAJourDocument</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="4" x="329.5" y="106.6294">&#160;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="319" x="72.5" y="121.7622">HTTP 200 OK (+ ressource "DocumentReference")</text></g></svg></div>
 
 <h3 id="flux-31-miseajourdocument">Flux 3.1 MiseAJourDocument</h3>
 
-<p>La mise à jour partielle d’un document est assurée par l’interaction FHIR <a href="https://hl7.org/fhir/R4/http.html#patch">patch</a>. La requête HTTP PATCH envoyée doit contenir l’identifiant technique de la ressource à modifier ainsi que la liste des mises à jour à effectuer.</p>
+<p>La mise à jour partielle d'un document est assurée par l'interaction FHIR <a href="https://hl7.org/fhir/R4/http.html#patch">patch</a>. La requête HTTP PATCH envoyée doit contenir l’identifiant technique de la ressource à modifier ainsi que la liste des mises à jour à effectuer.</p>
 
 <p><code class="language-plaintext highlighter-rouge">PATCH [base]/DocumentReference/[id]</code></p>
 
-<p>Où <code class="language-plaintext highlighter-rouge">[base]</code> est le point de contact FHIR et <code class="language-plaintext highlighter-rouge">[id]</code> l’identifiant technique de la ressource à mettre à jour.</p>
+<p>Où <code class="language-plaintext highlighter-rouge">[base]</code> est le point de contact FHIR et <code class="language-plaintext highlighter-rouge">[id]</code> l'identifiant technique de la ressource à mettre à jour.</p>
 
-<p>Au niveau applicatif, les mises à jour sont restreintes à l’élément <code class="language-plaintext highlighter-rouge">content</code> qui contient le document CDA.</p>
+<p>Au niveau applicatif, les mises à jour sont restreintes à l'élément <code class="language-plaintext highlighter-rouge">content</code> qui contient le document CDA.</p>
 
 <p>Les corrections à apporter à la ressource peuvent être communiquées de trois manières différentes :</p>
 <ul>
@@ -355,7 +355,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 25, 2025 08:47+0000">2025-02-25</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 26, 2025 08:11+0000">2025-02-26</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
