@@ -216,6 +216,9 @@
       </li>
     </ul>
   </li>
+  <li>
+    <a href="changes.html">Historique</a>
+  </li>
 </ul>
             </div>  <!-- /.nav-collapse -->
           </div>  <!-- /.container -->
@@ -289,7 +292,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Active
           
-            as of 2025-02-24
+            as of 2025-02-26
           
         
       </td>
@@ -336,7 +339,7 @@ The aim of this implementation guide is to define the specifications for DUI dat
 
 <h3 id="introduction">Introduction</h3>
 
-<p>Le Programme ESMS numérique, porté par la Caisse Nationale de Solidarité pour l’Autonomie (CNSA), vise à généraliser l’utilisation du numérique dans les établissements et services sociaux et médico-sociaux (ESSMS). Il repose principalement sur le déploiement d’un Dossier Usager Informatisé (DUI) pour chaque personne accompagnée. Ce DUI centralise l’ensemble des informations qui concerne la personne accompagnée en structure et service sociale et médico-sociale, et son parcours de santé et de vie. Ce dossier unique comprend :</p>
+<p>Le Programme ESMS numérique, porté par la Caisse Nationale de Solidarité pour l'Autonomie (CNSA), vise à généraliser l’utilisation du numérique dans les établissements et services sociaux et médico-sociaux (ESSMS). Il repose principalement sur le déploiement d’un Dossier Usager Informatisé (DUI) pour chaque personne accompagnée. Ce DUI centralise l’ensemble des informations qui concerne la personne accompagnée en structure et service sociale et médico-sociale, et son parcours de santé et de vie. Ce dossier unique comprend :</p>
 <ul>
   <li>Des données administratives ;</li>
   <li>Des données liées à l’accompagnement de l’usager ;</li>
@@ -348,32 +351,32 @@ The aim of this implementation guide is to define the specifications for DUI dat
 
 <p>Dans la continuité des travaux menés dans le cadre du programme ESMS numérique, la CNSA et l’ANS créent un nouveau volet « Transfert de données DUI ». L’objectif de ce volet est de définir la nature et le format des données à transmettre lors d’un export depuis un logiciel DUI afin d’assurer le transfert de données des usagers.</p>
 
-<p>Ce guide d’implémentation contient :</p>
+<p>Ce guide d'implémentation contient :</p>
 <ul>
-  <li>L’étude des normes et standards au format pdf : <a href="NormesStandards_TransfertDonneesDUI_V1.0.pdf">Etude des normes et standards</a></li>
+  <li>L'étude des normes et standards au format pdf : <a href="NormesStandards_TransfertDonneesDUI_V1.0.pdf">Etude des normes et standards</a></li>
   <li>Les spécifications fonctionnelles : section <a href="sfe.html"> Spécifications fonctionnelles</a></li>
   <li>La spécification technique de contenu : sections <a href="contenu_dossier.html">Contenu du dossier</a> et <a href="ressources_cda.html">Ressources de conformité</a></li>
   <li>La spécification technique de transport : sections <a href="description_flux.html">Description des flux</a> et <a href="artifacts.html">Ressources de conformité</a></li>
 </ul>
 
-<p><b>Remarque</b> : l’actuelle version de la spécification technique de contenu repose sur un périmètre restreint d’export des données de logiciels DUI :</p>
+<p><b>Remarque</b> : l'actuelle version de la spécification technique de contenu repose sur un périmètre restreint d'export des données de logiciels DUI :</p>
 <ul>
-  <li>NIR/traits d’identité principaux du patient ;</li>
-  <li>évaluation de l’autonomie de l’usager accompagnée (ou non) de ses grilles d’évaluation structurées ou non structurées ;</li>
-  <li>évènements de l’agenda usager organisés par l’ESSMS entrant dans la thérapie de l’usager ;</li>
-  <li>transports de l’usager associé aux évènements de l’agenda usager ;</li>
-  <li>informations sur le séjour de l’usager.</li>
+  <li>NIR/traits d'identité principaux du patient ;</li>
+  <li>évaluation de l'autonomie de l'usager accompagnée (ou non) de ses grilles d'évaluation structurées ou non structurées ;</li>
+  <li>évènements de l'agenda usager organisés par l’ESSMS entrant dans la thérapie de l’usager ;</li>
+  <li>transports de l'usager associé aux évènements de l'agenda usager ;</li>
+  <li>informations sur le séjour de l'usager.</li>
 </ul>
 
 <h3 id="lectorat-cible">Lectorat cible</h3>
 
-<p>Ce document s’adresse aux chefs de projets qui spécifient des projets avec des interfaces interopérables et aux développeurs des interfaces interopérables des systèmes implémentant le volet « Transfert de données DUI ». Il s’adresse également à toute autre personne intervenant dans le processus de mise en place de ces interfaces et à tout porteur de SI cherchant à transporter de manière interopérable des données usagers vers un autre SI ainsi que les éditeurs de logiciels DUI.</p>
+<p>Ce document s'adresse aux chefs de projets qui spécifient des projets avec des interfaces interopérables et aux développeurs des interfaces interopérables des systèmes implémentant le volet « Transfert de données DUI ». Il s'adresse également à toute autre personne intervenant dans le processus de mise en place de ces interfaces et à tout porteur de SI cherchant à transporter de manière interopérable des données usagers vers un autre SI ainsi que les éditeurs de logiciels DUI.</p>
 
 <p>L’hypothèse est faite que le lecteur est familier des standards CDA R2 et FHIR R4.</p>
 
 <h3 id="utilisation">Utilisation</h3>
 
-<p>Les spécifications d’interopérabilité présentées dans ce volet ne présagent pas des conditions de leur mise en œuvre dans le cadre d’un système d’information partagé. Il appartient à tout responsable de traitement de s’assurer que les services utilisant ces spécifications respectent les cadres et bonnes pratiques applicables à ce genre de service (ex.: cadre juridique, bonnes pratiques de sécurité, ergonomie, accessibilité …).</p>
+<p>Les spécifications d'interopérabilité présentées dans ce volet ne présagent pas des conditions de leur mise en œuvre dans le cadre d'un système d'information partagé. Il appartient à tout responsable de traitement de s'assurer que les services utilisant ces spécifications respectent les cadres et bonnes pratiques applicables à ce genre de service (ex.: cadre juridique, bonnes pratiques de sécurité, ergonomie, accessibilité …).</p>
 
 <h3 id="standards-utilisés">Standards utilisés</h3>
 
@@ -383,11 +386,11 @@ The aim of this implementation guide is to define the specifications for DUI dat
 
 <h4 id="template-ci-sis-de-document-cda-créé">Template CI-SIS de document CDA créé</h4>
 
-<p>Le template CI-SIS de document CDA créé dans le cadre de ce guide d’implémentation est le suivant : <a href="ressources_cda.html#schémas-xsd">Export du dossier usager informatisé</a></p>
+<p>Le template CI-SIS de document CDA créé dans le cadre de ce guide d'implémentation est le suivant : <a href="ressources_cda.html#schémas-xsd">Export du dossier usager informatisé</a></p>
 
 <h4 id="ressources-fhir-profilées">Ressources FHIR profilées</h4>
 
-<p>Les ressources profilées dans le cadre de ce guide d’implémentation sont les suivantes :</p>
+<p>Les ressources profilées dans le cadre de ce guide d'implémentation sont les suivantes :</p>
 
 <table>
   <thead>
@@ -413,7 +416,7 @@ The aim of this implementation guide is to define the specifications for DUI dat
 
 <h3 id="flux">Flux</h3>
 
-<p>Les flux décrits dans ce guide d’implémentation sont les suivants.</p>
+<p>Les flux décrits dans ce guide d'implémentation sont les suivants.</p>
 
 <table>
   <thead>
@@ -425,17 +428,17 @@ The aim of this implementation guide is to define the specifications for DUI dat
   </thead>
   <tbody>
     <tr>
-      <td><a href="description_flux_1_ajout_doc.html">Flux 1 : Ajout d’un document</a></td>
+      <td><a href="description_flux_1_ajout_doc.html">Flux 1 : Ajout d'un document</a></td>
       <td>Logiciel DUI</td>
       <td>Logiciel DUI ou SI tiers</td>
     </tr>
     <tr>
-      <td><a href="description_flux_2_ajout_lot_doc.html">Flux 2 : Ajout d’un lot de documents</a></td>
+      <td><a href="description_flux_2_ajout_lot_doc.html">Flux 2 : Ajout d'un lot de documents</a></td>
       <td>Logiciel DUI</td>
       <td>Logiciel DUI ou SI tiers</td>
     </tr>
     <tr>
-      <td><a href="description_flux_3_maj_doc.html">Flux 3 : Mise a jour d’un document</a></td>
+      <td><a href="description_flux_3_maj_doc.html">Flux 3 : Mise a jour d'un document</a></td>
       <td>Logiciel DUI</td>
       <td>Logiciel DUI ou SI tiers</td>
     </tr>
@@ -509,7 +512,7 @@ The aim of this implementation guide is to define the specifications for DUI dat
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Feb 24, 2025 16:09+0000">2025-02-24</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 26, 2025 09:11+0000">2025-02-26</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |

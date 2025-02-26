@@ -46,7 +46,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for TDDUI</h1>
- <p>Generated Mon Feb 24 16:10:11 UTC 2025, FHIR version 4.0.1 for ans.fhir.fr.tddui#1.1.0 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/tddui">https://interop.esante.gouv.fr/ig/fhir/tddui</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/tddui/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
+ <p>Generated Wed Feb 26 09:12:05 UTC 2025, FHIR version 4.0.1 for ans.fhir.fr.tddui#1.1.0 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/tddui">https://interop.esante.gouv.fr/ig/fhir/tddui</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/tddui/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.8.14</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ans.fhir.fr.tddui, Canonical = https://interop.esante.gouv.fr/ig/fhir/tddui</td></tr>
@@ -61,34 +61,11 @@
  <tr><td>Release-Label</d><td>trial-use</td></tr>
  <tr><td>Sequence (Group)</d><td>trial-implementation (current: 'trial-use', others = 'STU1','for-comment')</td></tr>
  <tr><td>desc</d><td>Ce document présente les spécifications fonctionnelles et techniques du volet « Transfert de Données DUI » (TDDUI). Ces dernières spécifient le contenu et le transport des données DUI d'un logiciel DUI vers un autre logiciel DUI ou un SI tiers.</td></tr>
- <tr><td>descmd</d><td><p><strong>Release 1.1.0 de l'Implementation Guide du volet &quot;Transfert de dossier DUI&quot;.</strong></p>
-<p><a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pulls?q=is%3Apr+is%3Aclosed+milestone%3A1.1.0">Modifications apportées dans cette release</a> :</p>
-<ul>
-<li><a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/292">Ajout de l'Historique dans le Menu IG</a></li>
-<li><a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/290">Préparation de la release 110</a></li>
-<li><a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/255">Ajout JDV_ResultatQuestionEvaluation_CISIS</a></li>
-<li><a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/276">ANS-006-141 - Correction des erreurs et de plusieurs warning remontés par le contôle qualité de l'IG</a></li>
-<li><a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/269">ANS-006-141 - Mise a jour du mapping</a></li>
-<li><a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/268">ANS-006-141 - Mise à jour de l'exemple TDDUIBundleExample</a></li>
-<li><a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/266">ANS-006-141 - Mise a jour exemple &amp; nom validateur CDA</a></li>
-<li><a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/263">ANS-006-141 - #172 - Mise a jour contenu éléments transversaux</a></li>
-<li><a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/262">ANS-006-141 - #179 - Ajout du numéro de sécurité sociale dans les ST</a></li>
-<li><a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/261">ANS-006-141 - #165 - Mise a jour contenu sejour</a></li>
-<li><a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/260">ANS-006-141 - #169/#203/#165 - Mise a jour contenu evenement</a></li>
-<li><a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/259">ANS-006-141 - #215/#165/#213/#169 - Mise a jour contenu evaluation</a></li>
-<li><a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/258">ANS-006-141 - #202 - Ajout des entrées FR-Document-attache et FR-Type-document-attache</a></li>
-<li><a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/253">ANS-006-141 - MAJ templates génériques</a></li>
-<li><a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/250">ajout des ayants droit dans AMO et AMC</a></li>
-<li><a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/245">SFE - numero sécurité sociale NIR et NIA de l'usager</a></li>
-<li><a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/244">Ajout profession et rôle du PS</a></li>
-<li><a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/242">ANS-006-141 - MAJ Capability Statement Producteur - interaction patch</a></li>
-<li><a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/220">suppression statut juridique dans EJ</a></li>
-<li><a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/218">ajout JDV grille AGGIR SSIAD PA et PH</a></li>
-</ul>
+ <tr><td>descmd</d><td><p>Release 1.1.0 du guide d'Implémentation du volet «Transfert de Données DUI » (TDDUI)</p>
 </td></tr>
+ <tr><td>changes</d><td>changes.html</td></tr>
 </table>
 <ul><li>descmd cannot contain a ' <img src="icon-error.gif" height="16px" width="16px"/></li>
-<li>descmd cannot contain a " <img src="icon-error.gif" height="16px" width="16px"/></li>
 <li>Publication request ci-build found (not allowed after first publication) <img src="icon-error.gif" height="16px" width="16px"/></li>
 </ul>
 </td></tr>
@@ -241,22 +218,22 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
      <td><b>output&#8203;/cda&#8203;/tmp-1&#8203;.2&#8203;.250&#8203;.1&#8203;.213&#8203;.1&#8203;.1&#8203;.3&#8203;.48&#8203;.7-2024-10-21T174323&#8203;.html</b></td><td><b>warning</b></td><td><b>The html source has duplicate anchor Ids: _1.2.250.1.213.1.1.1.1.9.218_,_1.2.250.1.213.1.1.1.1.9.219_,_1.2.250.1.213.1.1.1.1.9.220_,_1.2.250.1.213.1.1.1.1.9.221_,_1.2.250.1.213.1.1.1.1.9.222_,_1.2.250.1.213.1.1.1.1.9.223_,_1.2.250.1.213.1.1.1.1.9.224_,_1.2.250.1.213.1.1.1.1.9.225_,_1.2.250.1.213.1.1.1.1.9.226_,_1.2.250.1.213.1.1.1.1.9.227_,_1.2.250.1.213.1.1.1.1.9.229_,_1.2.250.1.213.1.1.1.1.9.230_,_1.2.250.1.213.1.1.1.1.9.231_,_1.2.250.1.213.1.1.1.1.9.240_,_1.2.250.1.213.1.1.1.1.9.241_,_1.2.250.1.213.1.1.1.1.9.242_,_1.2.250.1.213.1.1.1.1.9.243_,_1.2.250.1.213.1.1.1.1.9.244_,_1.2.250.1.213.1.1.1.1.9.245_,_1.2.250.1.213.1.1.1.1.9.396_,_1.2.250.1.213.1.1.1.1.9.406_</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>output&#8203;/documentation&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/script at Line 280, column 2</b></td><td><b>warning</b></td><td><b>The &lt;script&gt; containing the javascript 'window.location.href'... is illegal and not allowed on the HL7 ci-build - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 ci-build (if it is justified and needed)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+     <td><b>output&#8203;/documentation&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/script at Line 285, column 2</b></td><td><b>warning</b></td><td><b>The &lt;script&gt; containing the javascript 'window.location.href'... is illegal and not allowed on the HL7 ci-build - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 ci-build (if it is justified and needed)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>output&#8203;/searchform&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/a&#8203;/img&#8203;/div&#8203;/a&#8203;/img&#8203;/div&#8203;/p&#8203;/img&#8203;/footer&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/a&#8203;/img&#8203;/div&#8203;/a&#8203;/img&#8203;/script at Line 255, column 7</b></td><td><b>warning</b></td><td><b>The &lt;script&gt; containing the javascript '$( document ).ready('... is illegal and not allowed on the HL7 ci-build - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 ci-build (if it is justified and needed)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>output&#8203;/site_ans&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/script at Line 282, column 2</b></td><td><b>warning</b></td><td><b>The &lt;script&gt; containing the javascript 'window.location.href'... is illegal and not allowed on the HL7 ci-build - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 ci-build (if it is justified and needed)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+     <td><b>output&#8203;/site_ans&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/script at Line 285, column 2</b></td><td><b>warning</b></td><td><b>The &lt;script&gt; containing the javascript 'window.location.href'... is illegal and not allowed on the HL7 ci-build - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 ci-build (if it is justified and needed)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>output&#8203;/specs_cda&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/script at Line 282, column 2</b></td><td><b>warning</b></td><td><b>The &lt;script&gt; containing the javascript 'window.location.href'... is illegal and not allowed on the HL7 ci-build - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 ci-build (if it is justified and needed)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+     <td><b>output&#8203;/specs_cda&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/script at Line 285, column 2</b></td><td><b>warning</b></td><td><b>The &lt;script&gt; containing the javascript 'window.location.href'... is illegal and not allowed on the HL7 ci-build - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 ci-build (if it is justified and needed)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>output&#8203;/specs_fhir&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/script at Line 282, column 2</b></td><td><b>warning</b></td><td><b>The &lt;script&gt; containing the javascript 'window.location.href'... is illegal and not allowed on the HL7 ci-build - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 ci-build (if it is justified and needed)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+     <td><b>output&#8203;/specs_fhir&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/script at Line 285, column 2</b></td><td><b>warning</b></td><td><b>The &lt;script&gt; containing the javascript 'window.location.href'... is illegal and not allowed on the HL7 ci-build - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 ci-build (if it is justified and needed)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>output&#8203;/terminology_cda&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/script at Line 282, column 2</b></td><td><b>warning</b></td><td><b>The &lt;script&gt; containing the javascript 'window.addEventListe'... is illegal and not allowed on the HL7 ci-build - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 ci-build (if it is justified and needed)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+     <td><b>output&#8203;/terminology_cda&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/script at Line 285, column 2</b></td><td><b>warning</b></td><td><b>The &lt;script&gt; containing the javascript 'window.addEventListe'... is illegal and not allowed on the HL7 ci-build - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 ci-build (if it is justified and needed)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>1</b></td><td><b>warning</b></td><td><b>The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
