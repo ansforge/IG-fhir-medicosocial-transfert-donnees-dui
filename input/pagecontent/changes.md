@@ -2,7 +2,6 @@
 
 Modifications apportées dans cette release [1.1.0](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pulls?q=is%3Apr+is%3Aclosed+milestone%3A1.1.0) :
 
-
 * [Ajout de l'Historique dans le Menu IG](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/292)
 * [Préparation de la release 110](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/290)
 * [Ajout JDV_ResultatQuestionEvaluation_CISIS](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/255)

@@ -1237,6 +1237,7 @@ Cette classe permet de porter le détail structuré d'une grille d'évaluation s
 Le détail de l’évaluation de ce champ peut être transmis à travers un deuxième niveau de détail sous la forme d'une deuxième itération cette classe.<br>
 
 <u>Premier niveau de détail</u>
+
 Ce niveau permet d'associer à un champ évalué de la classe "DetailEvaluation", un résultat d'évaluation.
 
 <table style="width:100%">
