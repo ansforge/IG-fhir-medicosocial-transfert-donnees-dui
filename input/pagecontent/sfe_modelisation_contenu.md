@@ -1580,6 +1580,8 @@ Données d'identification pérennes d’une personne physique, qui travaille en 
   </tr>
 </table>
 
+Remarque : pour porter certains concepts comme IDEC (infirmier diplômé d'Etat de coordination), il convient d'enregistrer 2 informations (profession + rôle). IDEC = IDE (Infirmier diplômé d'Etat) sur l'attribut profession avec le code G15_60 (infirmier) du JDV_J01-XdsAuthorSpecialty-CISIS et le rôle de coordinateur sur l'attribut role avec le code 330 (Coordonnateur de parcours) du JDV_J47-FunctionCode-CISIS.
+
 ##### Classe Entité Juridique
 
 Pour ce volet l'Entité Juridique est une personne morale inscrite dans le FINESS.
