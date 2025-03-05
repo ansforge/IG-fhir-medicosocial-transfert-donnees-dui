@@ -1580,6 +1580,8 @@ Données d'identification pérennes d’une personne physique, qui travaille en 
   </tr>
 </table>
 
+<u>Remarque</u>: Certaines professions du médico-social n'ont pas de correspondance directe dans les référentiels du CI-SIS. L'annexe donne la correspondance entre la profession du médico-social et le triptyque "profession/rôle/mode d'exercice" référencé dans les jeux de valeurs du CI-SIS.
+
 ##### Classe Entité Juridique
 
 Pour ce volet l'Entité Juridique est une personne morale inscrite dans le FINESS.
