@@ -1,0 +1,50 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/tddui/DocumentReference/TDDUIDocumentReferenceExample> a fhir:DocumentReference ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "TDDUIDocumentReferenceExample"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "1" ] ;
+     fhir:lastUpdated [ fhir:v "2023-11-07T10:19:37.350+00:00"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-documentreference"^^xsd:anyURI ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-documentreference>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference TDDUIDocumentReferenceExample</b></p><a name=\"TDDUIDocumentReferenceExample\"> </a><a name=\"hcTDDUIDocumentReferenceExample\"> </a><a name=\"TDDUIDocumentReferenceExample-fr-FR\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: 1; Last updated: 2023-11-07 10:19:37+0000</p><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-documentreference.html\">TDDUI Document Reference</a></p></div><p><b>masterIdentifier</b>: 2569874526325</p><p><b>status</b>: Current</p><p><b>type</b>: <span title=\"Codes:{https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc 28653-4}\">Document du secteur social / médico-social</span></p><p><b>category</b>: <span title=\"Codes:{https://mos.esante.gouv.fr/NOS/TRE_A03-ClasseDocument/FHIR/TRE-A03-ClasseDocument 95}\">Document de gestion</span></p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Language</b></td><td><b>Data</b></td><td><b>Title</b></td></tr><tr><td style=\"display: none\">*</td><td>text/plain</td><td>French</td><td><code>SGVsbG8gd29ybGQ=</code></td><td>DocumentReference TDDUI</td></tr></table></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:masterIdentifier [
+     fhir:value [ fhir:v "2569874526325" ]
+  ] ; # 
+  fhir:status [ fhir:v "current"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "28653-4" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://mos.esante.gouv.fr/NOS/TRE_A03-ClasseDocument/FHIR/TRE-A03-ClasseDocument"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "95" ]
+     ] )
+  ] ) ; # 
+  fhir:content ( [
+     fhir:attachment [
+       fhir:contentType [ fhir:v "text/plain" ] ;
+       fhir:language [ fhir:v "fr" ] ;
+       fhir:data [ fhir:v "SGVsbG8gd29ybGQ="^^xsd:base64Binary ] ;
+       fhir:title [ fhir:v "DocumentReference TDDUI" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
