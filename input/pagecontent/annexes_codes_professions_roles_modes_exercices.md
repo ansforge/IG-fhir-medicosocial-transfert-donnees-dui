@@ -1,4 +1,4 @@
- Table de correspondance des codes professions médico-social n'ayant pas d'équivalence dans les référenciels officiels.
+ Table de correspondance des codes professions du médico-social n'ayant pas d'équivalence dans les référenciels officiels.
 
  <table>
 <tr>
