@@ -1575,10 +1575,18 @@ Données d'identification pérennes d’une personne physique, qui travaille en 
     </td>
   </tr>
   <tr>
+    <td>modeExercice : [0..1] Code</td>
+    <td>Mode d'exercice du professionnel. Décrit selon quelle modalité est exercée l'activité du professionnel par rapport à son établissement de rattachement.<br>
+    Jeu(x) de valeur(s) associé(s) :  <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J117-ModeExercice-ENREG.html">JDV-J117-ModeExercice-ENREG</a>
+    </td>
+  </tr>
+  <tr>
     <td>etablissementDeRattachement : [0..1] EntiteJuridique</td>
     <td>Structure juridique de rattachement du professionnel.</td>
   </tr>
 </table>
+
+<u>Remarque</u>: Certaines professions du médico-social n'ont pas de correspondance directe dans les référentiels du CI-SIS. L'annexe <a href="annexes_codes_professions_roles_modes_exercices.html">Professions du médico-social</a> donne la correspondance entre la profession du médico-social et le triptyque "profession/rôle/mode d'exercice" référencé dans les jeux de valeurs du CI-SIS.
 
 ##### Classe Entité Juridique
 
