@@ -1576,7 +1576,7 @@ Données d'identification pérennes d’une personne physique, qui travaille en 
   </tr>
   <tr>
     <td>modeExercice : [0..1] Code</td>
-    <td>Mode d'exercice du professionnel. Décrit selon quelle modalité est excercée l'activité du professionnel par rapport à son établissement de rattachement.<br>
+    <td>Mode d'exercice du professionnel. Décrit selon quelle modalité est exercée l'activité du professionnel par rapport à son établissement de rattachement.<br>
     Jeu(x) de valeur(s) associé(s) :  <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J117-ModeExercice-ENREG.html">JDV-J117-ModeExercice-ENREG</a>
     </td>
   </tr>
