@@ -1,6 +1,6 @@
 
 
-### Processus collaboratif « Export des données d’un logiciel DUI »
+### Définition des Processus collaboratif
 
 <!-- commande pour insérer un fichier plantuml dans un fichier .md -->
 <div style="text-align:center;">{%include processus_export_dui.svg%}</div>
