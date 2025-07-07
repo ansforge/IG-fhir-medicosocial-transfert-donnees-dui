@@ -4,7 +4,6 @@
 
 #### Processus collaboratif « Export des données d’un logiciel DUI »
 
-<!-- object style="text-align:center" data="processus3.svg" type="image/svg+xml"></object -->
 <!-- commande pour insérer un fichier plantuml dans un fichier .md -->
 <div style="text-align:center;">{%include processus_export_dui.svg%}</div>
 
