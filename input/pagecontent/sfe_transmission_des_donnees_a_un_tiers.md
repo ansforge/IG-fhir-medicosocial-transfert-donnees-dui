@@ -1,8 +1,6 @@
 
 
-### Cas d'utilisation 
-
-#### Processus collaboratif « Export des données d’un logiciel DUI »
+### Processus collaboratif « Export des données d’un logiciel DUI »
 
 <!-- commande pour insérer un fichier plantuml dans un fichier .md -->
 <div style="text-align:center;">{%include processus_export_dui.svg%}</div>
@@ -78,5 +76,39 @@ Le rôle de consommateur incarné par un système est de réceptionner et d’im
   </tr>
   <tr>
     <td>Export des données d’un logiciel DUI</td>
+  </tr>
+</table>
+
+### Identification des flux
+
+<table style="width:100%">
+  <tr>
+    <th>Processus métier</th>
+    <th>Flux techniques</th>
+  </tr>
+  <tr>
+    <td rowspan="2">
+      <ul>
+      <li>Portabilité des données entre deux logiciels DUI</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+      <li>Flux 1.1 - Ajout d'un document : interaction « create » de FHIR</li>
+      <li>Flux 1.2 - Résultat de l'ajout d'un document : réponse à la requête HTTP POST</li>
+      </ul>
+      {%include flux1.svg%} <br>
+      Lien vers la description détaillée : <a href="description_flux_1_ajout_doc.html">flux 1</a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <ul>
+      <li>Flux 2.1 - Ajout d'un lot de documents : interaction « transaction » de FHIR</li>
+      <li>Flux 2.2 - Résultat de l'ajout d'un lots documents : réponse à la requête HTTP POST</li>
+      </ul>
+      {%include flux2.svg%} <br>
+      Lien vers la description détaillée : <a href="description_flux_2_ajout_lot_doc.html">flux 2</a>
+    </td>
   </tr>
 </table>
