@@ -9,7 +9,7 @@ Le périmètre de l'étude englobe les processus en bleu sur le diagramme de paq
 
 ### Transférer des données DUI
 
-Le groupe de processus « Transfertérer des données d’un logiciel DUI » comprend le sous-groupe de processus « Export des données d’un logiciel DUI ». Ce processus décrit l’export des données d’un logiciel DUI vers un système cible (ou consommateur) dont le rôle est de réceptionner et d’importer les données dans son système (DUI ou SI-tiers).
+Le groupe de processus « Transfertérer des données d’un logiciel DUI » comprend le sous-groupe de processus « Export des données d’un logiciel DUI ». Ce processus décrit l’export des données d’un logiciel DUI vers un système cible (ou consommateur) dont le rôle est de réceptionner et d’importer les données dans son système (SI-tiers).
 
 ### Suivi des décisions d’orientation
 
