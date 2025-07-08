@@ -1047,7 +1047,7 @@ La classe EntiteJuridique est définie dans le MOS et est profilée pour ce vole
     <td>Date d’entrée dans le séjour.</td>
   </tr>
   <tr>
-    <td>libelleModeEntree : [0..1] Texte</td>
+    <td>modeEntree : [0..1] Texte</td>
     <td>Libellé du mode d’entée du séjour.</td>
   </tr>
   <tr>
@@ -1059,7 +1059,7 @@ La classe EntiteJuridique est définie dans le MOS et est profilée pour ce vole
     <td>Date de sortie du séjour.</td>
   </tr>
   <tr>
-    <td>libelleModeSortie : [0..1] Texte</td>
+    <td>modeSortie : [0..1] Texte</td>
     <td>Libellé du mode de sortie du séjour.</td>
   </tr>
   <tr>
