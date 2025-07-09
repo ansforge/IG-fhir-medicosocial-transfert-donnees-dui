@@ -34,14 +34,12 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
     <td>Le matricule INS est le numéro d’inscription au répertoire national d’identification des personnes physiques (NIR) ou le numéro identifiant d’attente (NIA) pour les personnes en instance d’attribution d’un NIR (Art. R. 1111-8-1.-I du CSP).<br>
     Si le matricule INS de l'usager existe, il doit être véhiculé en priorité. Dans le cas où le matricule INS est renseigné, les traits INS (traits d'identité et traits complémentaires issus du RNIV) doivent être transmis conformément à l'<a href="https://esante.gouv.fr/annexe-prise-en-charge-de-lins-dans-les-volets-du-ci-sis">annexe prise en charge de l'INS dans les volets du ci-sis</a>.</td>
   </tr>
-  </tr>
+  <tr>
     <td>numSecuriteSociale : [0..1] Identifiant</td>
     <td>Numéro de sécurité sociale de l'usager NIR (NSS-NIR) ou NIA (NSS-NIA) si l'usager est en attente de l'attribution d’un NIR.<br>
-     Le numéro de sécurité sociale est utilisé pour la facturation et le remboursement des prestations de santé de la personne prise en charge.
-    </td>
+     Le numéro de sécurité sociale est utilisé pour la facturation et le remboursement des prestations de santé de la personne prise en charge.</td>
   </tr>
-  <!--
-<tr>
+  <tr>
     <td>identifiantLocalUsagerESSMS : [0..1] Identifiant</td>
     <td>Identifiant local de l’usager au sein de la structure.<br>
     Cet identifiant est obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature TRE_G08-TypeIdentifiantPersonne), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS) : 3+FINESS/identifiantLocalUsagerESSMS</td>
@@ -49,14 +47,12 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
    <tr>
     <td>numeroIndividu : [0..1] Identifiant</td>
     <td>Numéro de l’individu attribué par la MDPH ayant créé le dossier Individu (= MDPH initiale).<br>
-    Synonyme = identifiantMDPH
-    </td>
+    Synonyme = identifiantMDPH</td>
   </tr>
   <tr>
     <td>nomNaissance : [1..1] Texte</td>
     <td>Toute personne possède un nom de famille (appelé auparavant nom patronymique). Ce nom figure sur l'acte de naissance. Il peut s'agir par exemple du nom du père.<br>
-   Cet attribut fait partie des traits INS. Il est obligatoire si l’identité INS est qualifiée.
-  </td>
+   Cet attribut fait partie des traits INS. Il est obligatoire si l’identité INS est qualifiée.</td>
   </tr>
   <tr>
     <td>nomUsage : [0..1] Texte</td>
@@ -73,7 +69,7 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
     Ils sont préconisés si le NIR ou l'identifiant local est véhiculé et que l'identité n'est pas qualifiée.
     </td>
   </tr>
-<tr>
+  <tr>
     <td>premierPrenomActeNaissance : [0..1] Texte</td>
     <td>Premier prénom dans la liste des prénoms de naissance de l'usager<br>
     Cet élément est obligatoire s’il s’agit de l’identité qualifiée INS. C'est un trait complémentaire provenant du Référentiel National d'Identitovigilance (RNIV).<br>
@@ -108,16 +104,14 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
    <tr>
     <td>ordreNaissance : [0..1] Numerique </td>
     <td>Ordre d’enregistrement de la naissance dans le registre d’état civil de la commune de naissance pour le mois de la naissance. Il compose les <a href="https://www.ameli.fr/llle-et-vilaine/assure/droits-demarches/principes/numero-securite-sociale">3 derniers chiffres du NIR de l'usager avant </a> la clé de sécurité et permet de distinguer les personnes nées au même lieu et à la même période.<br>
-    Il est obligatoire si le NIR n'est pas transmis.
-    </td>
+    Il est obligatoire si le NIR n'est pas transmis.</td>
   </tr>
   <tr>
     <td>CommuneNaissance : [0..1] Code</td>
     <td>Commune de naissance de l’usager. Code officiel géographique (COG) de la commune.<br>
     Jeu(x) de valeur(s) associé(s) : <a href="https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J120-CommuneHistorisee.html">JDV_J120-CommuneHistorisee</a><br>
     Cet attribut fait partie des traits INS. Il est obligatoire si l’identité INS est qualifiée.<br>
-    Il est préconisé si le NIR ou l'identifiant local est véhiculé et que l'identité n'est pas qualifiée.
-    </td>
+    Il est préconisé si le NIR ou l'identifiant local est véhiculé et que l'identité n'est pas qualifiée.</td>
   </tr>
    <tr>
     <td>departementNaissance : [0..1] Code</td>
@@ -179,11 +173,10 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
     <td>photo : [0..*] ObjetBinaire </td>
     <td>Photo de l’usager.</td>
   </tr>
-    <tr>
+  <tr>
     <td>commentaire : [0..1] Texte</td>
     <td>Commentaire relatif à l’identité de l’usager.</td>
   </tr>
-  -->
 </table>
 
 ##### Classe Adresse
