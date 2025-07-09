@@ -24,6 +24,13 @@ Terme générique “usager” permet de désigner une personne qui bénéficie 
 
 Synonymes : résident, résident AN, personne accompagnée, personne accueillie, bénéficiaire, patient, personne, personne prise en charge, individu, client
 
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+</table>
+
 ##### Classe Adresse
 
 Adresse géopostale. Un emplacement auquel l’usager peut être trouvée, d'après la norme AFNOR NF Z10-011.
