@@ -18,6 +18,7 @@ class Reservation #Thistle {
 }
 
 class Sejour #Thistle {
+    idSejour : Identifiant [1..1]
     ESSMS : EntiteJuridique [1..1]
     dateAdmission : DateHeure [0..1]
     dateEntreePrevisionnelle : DateHeure [0..1]
@@ -26,7 +27,6 @@ class Sejour #Thistle {
     dateSortiePrevisionnelle : DateHeure [0..1]
     dateSortie : DateHeure [0..1]
     modeSortie : Texte [0..1]
-    idSejour : Identifiant [1..1]
     commentaire : Texte [0..1] 
 }
 

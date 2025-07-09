@@ -1033,6 +1033,10 @@ La classe EntiteJuridique est définie dans le MOS et est profilée pour ce vole
     <th>Nom</th>
     <th>Description</th>
   </tr>
+  <tr>
+    <td>idSejour : [1..1] Identifiant</td>
+    <td>Cet identifiant est obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature TRE_G08-TypeIdentifiantPersonne), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de six caractères "SEJOUR" et numéro de dossier administratif du séjour dans le DUI (numeroDossier) : <br>idSejour = 3+FINESS/identifiantLocalUsagerESSMS-SEJOUR-numeroDossier</td>
+  </tr>
    <tr>
     <td>ESSMS : [1..1] EntiteJuridique</td>
     <td>Établissement ou service social ou médico-social.</td>
@@ -1064,10 +1068,6 @@ La classe EntiteJuridique est définie dans le MOS et est profilée pour ce vole
   <tr>
     <td>modeSortie : [0..1] Texte</td>
     <td>Libellé du mode de sortie du séjour.</td>
-  </tr>
-  <tr>
-    <td>idSejour : [1..1] Identifiant</td>
-    <td>Cet identifiant est obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature TRE_G08-TypeIdentifiantPersonne), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de six caractères "SEJOUR" et numéro de dossier administratif du séjour dans le DUI (numeroDossier) : <br>idSejour = 3+FINESS/identifiantLocalUsagerESSMS-SEJOUR-numeroDossier</td>
   </tr>
   <tr>
     <td>commentaire : [0..1] Texte</td>
