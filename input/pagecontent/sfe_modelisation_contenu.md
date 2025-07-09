@@ -1694,12 +1694,48 @@ Cette classe décrit le statut des ressources (Evenement, Evaluation).
  <td>Oui</td>
 </tr>
 <tr>
-  <td>numeroVoie</td>
+  <td>nomNaissance</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>nomUsage</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>prenom</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>premierPrenomActeNaissance</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>prenomUtilise</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>sexe</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>dateNaissance</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>ordreNaissance</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>communeNaissance</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>paysNaissance</td>
  <td>Oui</td>
 </tr>
 </table>
 
-#### Mapping Adresse (usager)
+##### Mapping Adresse (usager)
 
 <table>
 <tr>
@@ -1709,6 +1745,18 @@ Cette classe décrit le statut des ressources (Evenement, Evaluation).
 <tr>
   <td>numeroVoie</td>
  <td>Non</td>
+</tr>
+<tr>
+  <td>libelleVoie</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>codePostal</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>localite</td>
+ <td>Oui</td>
 </tr>
 </table>
 
@@ -1722,4 +1770,27 @@ Cette classe décrit le statut des ressources (Evenement, Evaluation).
 #### Partie Coordination des acteurs
 
 ##### Mapping Evènement de l'agenda
+
+#### Partie Structure
+
+##### Mapping Entité Juridique
+
+<table>
+<tr>
+  <td align="center">Attribut</td>
+  <td align="center">Utilisé pour SSIAD</td>
+</tr>
+<tr>
+  <td>idNat_Struct</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>FINESS de la structure extrait de idNat_Struct</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>raisonSociale</td>
+ <td>Oui</td>
+</tr>
+</table>
 
