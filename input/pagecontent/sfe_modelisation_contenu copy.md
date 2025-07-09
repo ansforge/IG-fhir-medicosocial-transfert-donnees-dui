@@ -126,7 +126,7 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
   <tr>
     <td>paysNaissance : [0..1] Code</td>
     <td>Pays de naissance de la personne.<br>
-    Nomenclature(s) associée(s) : ISO 3166
+    Nomenclature(s) associée(s) : ISO 3166<br>
     Cet attribut fait partie des traits INS. Il est obligatoire si l’identité INS est qualifiée.<br>
     Il est préconisé si le NIR ou l'identifiant local est véhiculé et que l'identité n'est pas qualifiée.</td>
   </tr>
