@@ -1763,6 +1763,33 @@ Cette classe décrit le statut des ressources (Evenement, Evaluation).
 
 #### Mapping Séjour
 
+<table style="width:100%">
+<tr>
+  <th>Attribut</th>
+  <th>Utilisé pour SSIAD</th>
+</tr>
+<tr>
+  <td>idSejour</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>dateAdmission</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>ESSMS</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>modeEntree</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>dateEntree</td>
+ <td>Oui</td>
+</tr>
+</table>
+
 #### Partie Accompagnement
 
 ##### Mapping Evaluation
