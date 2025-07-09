@@ -40,7 +40,7 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
     </td>
   </tr>
 <tr>
-    <td>identifiantLocalUsagerESSMS : Identifiant [0..1]</td>
+    <td>identifiantLocalUsagerESSMS : [0..1] Identifiant</td>
     <td>Identifiant local de l’usager au sein de la structure.<br>
     Cet identifiant est obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature TRE_G08-TypeIdentifiantPersonne), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS) : 3+FINESS/identifiantLocalUsagerESSMS</td>
   </tr>
