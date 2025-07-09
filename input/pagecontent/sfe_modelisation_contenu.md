@@ -45,7 +45,7 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
     Cet identifiant est obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature TRE_G08-TypeIdentifiantPersonne), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS) : 3+FINESS/identifiantLocalUsagerESSMS</td>
   </tr>
    <tr>
-    <td>numeroIndividu : [0..1] Identifiant</td>
+    <td>numeroIndividuInitial : [0..1] Identifiant</td>
     <td>Numéro de l’individu attribué par la MDPH ayant créé le dossier Individu (= MDPH initiale).<br>
     Synonyme = identifiantMDPH</td>
   </tr>
@@ -1667,3 +1667,59 @@ Cette classe décrit le statut des ressources (Evenement, Evaluation).
     <td>Le professionnel ayant effectué la dernière modification du statut associé à la ressource.</td>
   </tr>
 </table>
+
+### Contraintes par cas d'usage sur le modèle DUI
+
+#### Mapping Usager
+
+<table>
+<tr>
+  <td align="center">Attribut</td>
+  <td align="center">Utilisé pour SSIAD</td>
+</tr>
+<tr>
+  <td>matriculeINS</td>
+  <td>Oui</td>
+</tr>
+<tr>
+  <td>numSecuriteSociale</td>
+  <td>Oui</td>
+</tr>
+<tr>
+  <td>identifiantLocalUsagerESSMS</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>numeroIndividuInitial</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>numeroVoie</td>
+ <td>Oui</td>
+</tr>
+</table>
+
+#### Mapping Adresse (usager)
+
+<table>
+<tr>
+  <td align="center">Attribut</td>
+  <td align="center">Utilisé pour SSIAD</td>
+</tr>
+<tr>
+  <td>numeroVoie</td>
+ <td>Non</td>
+</tr>
+</table>
+
+
+#### Mapping Séjour
+
+#### Partie Accompagnement
+
+##### Mapping Evaluation
+
+#### Partie Coordination des acteurs
+
+##### Mapping Evènement de l'agenda
+
