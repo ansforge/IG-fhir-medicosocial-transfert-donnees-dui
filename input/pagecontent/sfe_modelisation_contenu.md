@@ -40,6 +40,7 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
      Le numéro de sécurité sociale est utilisé pour la facturation et le remboursement des prestations de santé de la personne prise en charge.
     </td>
   </tr>
+  <!--
 <tr>
     <td>identifiantLocalUsagerESSMS : [0..1] Identifiant</td>
     <td>Identifiant local de l’usager au sein de la structure.<br>
@@ -182,6 +183,7 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
     <td>commentaire : [0..1] Texte</td>
     <td>Commentaire relatif à l’identité de l’usager.</td>
   </tr>
+  -->
 </table>
 
 ##### Classe Adresse
