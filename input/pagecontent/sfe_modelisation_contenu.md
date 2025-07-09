@@ -20,8 +20,9 @@
 
 ##### Classe Usager 
 
-Terme générique "usager" permet de désigner une personne qui bénéficie d'une prestation ou d'un service lié à la prise en charge de son handicap ou de sa perte d'autonomie, que ce soit à domicile ou en établissement.
-L'usager est donc la personne qui reçoit une aide ou un accompagnement dans le cadre d'une politique publique visant à soutenir les personnes âgées en perte d'autonomie ou les personnes en situation de handicap. Le terme inclut aussi bien les bénéficiaires directs de ces prestations que leurs familles, lorsqu'elles sont impliquées dans l'organisation de la prise en charge.
+Terme générique “usager” permet de désigner une personne qui bénéficie d’une prestation ou d’un service lié à la prise en charge de son handicap ou de sa perte d’autonomie, que ce soit à domicile ou en établissement. L’usager est donc la personne qui reçoit une aide ou un accompagnement dans le cadre d’une politique publique visant à soutenir les personnes âgées en perte d’autonomie ou les personnes en situation de handicap. Le terme inclut aussi bien les bénéficiaires directs de ces prestations que leurs familles, lorsqu’elles sont impliquées dans l’organisation de la prise en charge.
+
+Synonymes : résident, résident AN, personne accompagnée, personne accueillie, bénéficiaire, patient, personne, personne prise en charge, individu, client
 
 <table style="width:100%">
   <tr>
@@ -45,8 +46,10 @@ L'usager est donc la personne qui reçoit une aide ou un accompagnement dans le 
     Cet identifiant est obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature TRE_G08-TypeIdentifiantPersonne), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS) : 3+FINESS/identifiantLocalUsagerESSMS</td>
   </tr>
    <tr>
-    <td>numeroIndividuInitial : [0..1] Identifiant</td>
-    <td>Numéro de l’individu attribué par la MDPH ayant créé le dossier Individu (= MDPH initiale).</td>
+    <td>numeroIndividu : [0..1] Identifiant</td>
+    <td>Numéro de l’individu attribué par la MDPH ayant créé le dossier Individu (= MDPH initiale).<br>
+    Synonyme = identifiantMDPH
+    </td>
   </tr>
   <tr>
     <td>nomNaissance : [1..1] Texte</td>
@@ -63,7 +66,7 @@ L'usager est donc la personne qui reçoit une aide ou un accompagnement dans le 
     S’il s’agit de l’identité qualifiée INS, il est obligatoire lorsqu’il est différent du nom de naissance. C'est un trait complémentaire provenant du Référentiel National d'Identitovigilance (RNIV).</td>
   </tr>
   <tr>
-    <td>prenom : [0..*] Texte</td>
+    <td>prenom : [0..1] Texte</td>
     <td>Liste des prénoms de naissance de l'usager.<br>
     La liste des prénoms de naissance fait partie des traits INS. Elle est obligatoire si l’identité INS est qualifiée.<br>
     Ils sont préconisés si le NIR ou l'identifiant local est véhiculé et que l'identité n'est pas qualifiée.
@@ -110,7 +113,7 @@ L'usager est donc la personne qui reçoit une aide ou un accompagnement dans le 
   <tr>
     <td>CommuneNaissance : [0..1] Code</td>
     <td>Commune de naissance de l’usager. Code officiel géographique (COG) de la commune.<br>
-    Nomenclature(s) associée(s) : <a href="https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J120-CommuneHistorisee.html">JDV_J120-CommuneHistorisee</a><br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J120-CommuneHistorisee.html">JDV_J120-CommuneHistorisee</a><br>
     Cet attribut fait partie des traits INS. Il est obligatoire si l’identité INS est qualifiée.<br>
     Il est préconisé si le NIR ou l'identifiant local est véhiculé et que l'identité n'est pas qualifiée.
     </td>
@@ -118,7 +121,7 @@ L'usager est donc la personne qui reçoit une aide ou un accompagnement dans le 
    <tr>
     <td>departementNaissance : [0..1] Code</td>
     <td>Département de naissance de la personne. Code officiel géographique (COG) du département.<br>
-    Nomenclature(s) associée(s) : <a href="https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J258-Departement.html">JDV-J258-Departement</a></td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J258-Departement.html">JDV-J258-Departement</a></td>
   </tr>
   <tr>
     <td>paysNaissance : [0..1] Code</td>
@@ -145,7 +148,7 @@ L'usager est donc la personne qui reçoit une aide ou un accompagnement dans le 
   <tr>
     <td>langueParlee : [0..*] Code</td>
     <td>Langue parlée par l’usager. <br>
-    Nomenclature(s) associée(s) : <a href="https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J115-Langue-ENREG.html">JDV_J115-Langue-ENREG</a></td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J115-Langue-ENREG.html">JDV_J115-Langue-ENREG</a></td>
   </tr>
     <tr>
     <td>dateDeces : [0..1] DateHeure</td>
@@ -154,22 +157,22 @@ L'usager est donc la personne qui reçoit une aide ou un accompagnement dans le 
   <tr>
     <td>causeMortalite : [0..*] Code</td>
     <td>Une ou plusieurs causes ayant entraîné la mort de l’usager. <br>
-    Nomenclature(s) associée(s) : à définir</td>
+    Nomenclature(s) associée(s) : <a href="https://smt.esante.gouv.fr/terminologie-cim-10">Terminologie CIM-10</a></td>
   </tr>
   <tr>
     <td>communeDeces : [0..1] Code</td>
     <td>Commune de décès de l’usager. Code officiel géographique (COG) de la commune.<br>
-    Nomenclature(s) associée(s) : <a href="https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J120-CommuneHistorisee.html">JDV-J120-CommuneHistorisee</a></td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J120-CommuneHistorisee.html">JDV-J120-CommuneHistorisee</a></td>
   </tr>
   <tr>
     <td>departementDeces : [0..1] Code</td>
     <td>Département de décès de l’usager. Code officiel géographique (COG) du département.<br>
-    Nomenclature(s) associée(s) : <a href="https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J258-Departement.html">JDV-J258-Departement</a></td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J258-Departement.html">JDV-J258-Departement</a></td>
   </tr>
   <tr>
     <td>paysDeces : [0..1] Code</td>
     <td>Pays de décès de l’usager.<br>
-    Nomenclature(s) associée(s) : ISO 3166</td>
+    Nomenclature(s) associée(s) : Norme ISO 3166</td>
   </tr>
   <tr>
     <td>photo : [0..*] ObjetBinaire </td>
@@ -183,7 +186,7 @@ L'usager est donc la personne qui reçoit une aide ou un accompagnement dans le 
 
 ##### Classe Adresse
 
-Adresse géopostale. Un emplacement auquel l’usager peut être trouvée, d'après la norme NF Z 10-011.
+Adresse géopostale. Un emplacement auquel l’usager peut être trouvée, d'après la norme AFNOR NF Z10-011.
 
 <table style="width:100%">
   <tr>
