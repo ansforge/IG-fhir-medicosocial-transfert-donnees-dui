@@ -85,7 +85,7 @@ L'usager est donc la personne qui reçoit une aide ou un accompagnement dans le 
   <tr>
     <td>sexe : [0..1] Code</td>
     <td>Sexe de la personne physique.<br>
-    Jeu(x) de valeur(s) associé(s) : <a href="https://interop.esante.gouv.fr/ig/nos/ValueSet-JDV-J143-AdministrativeGender-CISIS.html">JDV-J143-AdministrativeGender-CISIS</a><br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J143-AdministrativeGender-CISIS.html">JDV-J143-AdministrativeGender-CISIS</a><br>
     Cet attribut fait partie des traits INS. Il est obligatoire si l’identité INS est qualifiée.<br>
     Il est préconisé si le NIR ou l'identifiant local est véhiculé et que l'identité n'est pas qualifiée.
     </td>
@@ -93,7 +93,7 @@ L'usager est donc la personne qui reçoit une aide ou un accompagnement dans le 
   <tr>
     <td>civilite : [0..1] Code</td>
     <td>Civilité de l’usager.<br>
-    Jeu(x) de valeur(s) associé(s) :  <a href="https://interop.esante.gouv.fr/ig/nos/ValueSet-JDV-J245-Civilite-CISIS.html">JDV_J245-Civilite-CISIS</a></td>
+    Jeu(x) de valeur(s) associé(s) :  <a href="https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J245-Civilite-CISIS.html">JDV_J245-Civilite-CISIS</a></td>
   </tr>
   <tr>
     <td>dateNaissance : [0..1] Date</td>
@@ -110,7 +110,7 @@ L'usager est donc la personne qui reçoit une aide ou un accompagnement dans le 
   <tr>
     <td>CommuneNaissance : [0..1] Code</td>
     <td>Commune de naissance de l’usager. Code officiel géographique (COG) de la commune.<br>
-    Nomenclature(s) associée(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J120-CommuneHistorisee/JDV_J120-CommuneHistorisee.pdf">JDV_J120-CommuneHistorisee</a><br>
+    Nomenclature(s) associée(s) : <a href="https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J120-CommuneHistorisee.html">JDV_J120-CommuneHistorisee</a><br>
     Cet attribut fait partie des traits INS. Il est obligatoire si l’identité INS est qualifiée.<br>
     Il est préconisé si le NIR ou l'identifiant local est véhiculé et que l'identité n'est pas qualifiée.
     </td>
@@ -118,12 +118,12 @@ L'usager est donc la personne qui reçoit une aide ou un accompagnement dans le 
    <tr>
     <td>departementNaissance : [0..1] Code</td>
     <td>Département de naissance de la personne. Code officiel géographique (COG) du département.<br>
-    Nomenclature(s) associée(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J84-DepartementOM-RASS/JDV_J84-DepartementOM-RASS.pdf">TRE_G09-DepartementOM</a></td>
+    Nomenclature(s) associée(s) : <a href="https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J258-Departement.html">JDV-J258-Departement</a></td>
   </tr>
   <tr>
     <td>paysNaissance : [0..1] Code</td>
-    <td>Pays de naissance de la personne. Code officiel géographique (COG) du pays.<br>
-    Nomenclature(s) associée(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J74-Pays-RASS/JDV_J74-Pays-RASS.pdf">TRE_R20-Pays</a>
+    <td>Pays de naissance de la personne.<br>
+    Nomenclature(s) associée(s) : ISO 3166
     Cet attribut fait partie des traits INS. Il est obligatoire si l’identité INS est qualifiée.<br>
     Il est préconisé si le NIR ou l'identifiant local est véhiculé et que l'identité n'est pas qualifiée.</td>
   </tr>
@@ -140,12 +140,12 @@ L'usager est donc la personne qui reçoit une aide ou un accompagnement dans le 
   <tr>
     <td>paysNationalite : [0..*] Code</td>
     <td>Pays de nationalité actuelle ou rattachement de la nationalité à un espace de pays conventionné.<br>
-    Nomenclature(s) associée(s) : <a href="https://mos.esante.gouv.fr/NOS/TRE_R89-RegroupementPays/TRE_R89-RegroupementPays.pdf">TRE_R89-RegroupementPays</a></td>
+    Nomenclature(s) associée(s) : <a href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R89-RegroupementPays.html">TRE_R89-RegroupementPays</a></td>
   </tr>
   <tr>
     <td>langueParlee : [0..*] Code</td>
     <td>Langue parlée par l’usager. <br>
-    Nomenclature(s) associée(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J115-Langue-ENREG/JDV_J115-Langue-ENREG.pdf">JDV_J115-Langue-ENREG</a></td>
+    Nomenclature(s) associée(s) : <a href="https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J115-Langue-ENREG.html">JDV_J115-Langue-ENREG</a></td>
   </tr>
     <tr>
     <td>dateDeces : [0..1] DateHeure</td>
@@ -159,17 +159,17 @@ L'usager est donc la personne qui reçoit une aide ou un accompagnement dans le 
   <tr>
     <td>communeDeces : [0..1] Code</td>
     <td>Commune de décès de l’usager. Code officiel géographique (COG) de la commune.<br>
-    Nomenclature(s) associée(s) : <a href="https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/TRE_R13-CommuneOM.pdf">TRE_R13-CommuneOM</a></td>
+    Nomenclature(s) associée(s) : <a href="https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J120-CommuneHistorisee.html">JDV-J120-CommuneHistorisee</a></td>
   </tr>
   <tr>
     <td>departementDeces : [0..1] Code</td>
     <td>Département de décès de l’usager. Code officiel géographique (COG) du département.<br>
-    Nomenclature(s) associée(s) : <a href="https://mos.esante.gouv.fr/NOS/TRE_G09-DepartementOM/TRE_G09-DepartementOM.pdf">TRE_G09-DepartementOM</a></td>
+    Nomenclature(s) associée(s) : <a href="https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J258-Departement.html">JDV-J258-Departement</a></td>
   </tr>
   <tr>
     <td>paysDeces : [0..1] Code</td>
-    <td>Pays de décès de l’usager. Code officiel géographique (COG) du pays.<br>
-    Nomenclature(s) associée(s) : <a href="https://mos.esante.gouv.fr/NOS/TRE_R20-Pays/TRE_R20-Pays.pdf">TRE_R20-Pays</a></td>
+    <td>Pays de décès de l’usager.<br>
+    Nomenclature(s) associée(s) : ISO 3166</td>
   </tr>
   <tr>
     <td>photo : [0..*] ObjetBinaire </td>
