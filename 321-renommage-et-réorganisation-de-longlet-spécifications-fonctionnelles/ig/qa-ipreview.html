@@ -348,7 +348,7 @@ en-US This artefact includes content from SNOMED Clinical Terms&reg; (SNOMED CT&
 
           IG &copy; 2023+           <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>
 .  Package ans.fhir.fr.tddui#1.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
-. Generated           <span title="Wed, Jul 9, 2025 12:24+0000">2025-07-09</span>
+. Generated           <span title="Wed, Jul 9, 2025 12:33+0000">2025-07-09</span>
 
                     <br/>
 
@@ -380,7 +380,7 @@ en-US This artefact includes content from SNOMED Clinical Terms&reg; (SNOMED CT&
 
           IG &copy; 2023+           <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>
 .  Package ans.fhir.fr.tddui#1.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
-. Generated           <span title="Wed, Jul 9, 2025 12:24+0000">2025-07-09</span>
+. Generated           <span title="Wed, Jul 9, 2025 12:33+0000">2025-07-09</span>
 
                     <br/>
 
@@ -412,7 +412,7 @@ en-US This artefact includes content from SNOMED Clinical Terms&reg; (SNOMED CT&
 
           IG &copy; 2023+           <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>
 .  Package ans.fhir.fr.tddui#1.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
-. Generated           <span title="Wed, Jul 9, 2025 12:24+0000">2025-07-09</span>
+. Generated           <span title="Wed, Jul 9, 2025 12:33+0000">2025-07-09</span>
 
                     <br/>
 
@@ -1647,6 +1647,148 @@ Le matricule INS est le numéro d’inscription au répertoire national d’iden
 
     Si le matricule INS de l'usager existe, il doit être véhiculé en priorité. Dans le cas où le matricule INS est renseigné, les traits INS (traits d'identité et traits complémentaires issus du RNIV) doivent être transmis conformément à l'          <a href="https://esante.gouv.fr/annexe-prise-en-charge-de-lins-dans-les-volets-du-ci-sis">annexe prise en charge de l'INS dans les volets du ci-sis</a>
 .
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J143-AdministrativeGender-CISIS.html">interop.esante.gouv.fr</a>
+        </td>
+        <td>
+Sexe de la personne physique.          <br/>
+
+    Jeu(x) de valeur(s) associé(s) :           <a href="https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J143-AdministrativeGender-CISIS.html">JDV-J143-AdministrativeGender-CISIS</a>
+          <br/>
+
+    Cet attribut fait partie des traits INS. Il est obligatoire si l’identité INS est qualifiée.          <br/>
+
+    Il est préconisé si le NIR ou l'identifiant local est véhiculé et que l'identité n'est pas qualifiée.
+    
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J245-Civilite-CISIS.html">interop.esante.gouv.fr</a>
+        </td>
+        <td>
+Civilité de l’usager.          <br/>
+
+    Jeu(x) de valeur(s) associé(s) :            <a href="https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J245-Civilite-CISIS.html">JDV_J245-Civilite-CISIS</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://www.ameli.fr/llle-et-vilaine/assure/droits-demarches/principes/numero-securite-sociale">www.ameli.fr</a>
+        </td>
+        <td>
+Ordre d’enregistrement de la naissance dans le registre d’état civil de la commune de naissance pour le mois de la naissance. Il compose les           <a href="https://www.ameli.fr/llle-et-vilaine/assure/droits-demarches/principes/numero-securite-sociale">3 derniers chiffres du NIR de l'usager avant </a>
+ la clé de sécurité et permet de distinguer les personnes nées au même lieu et à la même période.          <br/>
+
+    Il est obligatoire si le NIR n'est pas transmis.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J120-CommuneHistorisee.html">interop.esante.gouv.fr</a>
+        </td>
+        <td>
+Commune de naissance de l’usager. Code officiel géographique (COG) de la commune.          <br/>
+
+    Jeu(x) de valeur(s) associé(s) :           <a href="https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J120-CommuneHistorisee.html">JDV_J120-CommuneHistorisee</a>
+          <br/>
+
+    Cet attribut fait partie des traits INS. Il est obligatoire si l’identité INS est qualifiée.          <br/>
+
+    Il est préconisé si le NIR ou l'identifiant local est véhiculé et que l'identité n'est pas qualifiée.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J258-Departement.html">interop.esante.gouv.fr</a>
+        </td>
+        <td>
+Département de naissance de la personne. Code officiel géographique (COG) du département.          <br/>
+
+    Jeu(x) de valeur(s) associé(s) :           <a href="https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J258-Departement.html">JDV-J258-Departement</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R89-RegroupementPays.html">interop.esante.gouv.fr</a>
+        </td>
+        <td>
+Pays de nationalité actuelle ou rattachement de la nationalité à un espace de pays conventionné.          <br/>
+
+    Nomenclature(s) associée(s) :           <a href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R89-RegroupementPays.html">TRE_R89-RegroupementPays</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J115-Langue-ENREG.html">interop.esante.gouv.fr</a>
+        </td>
+        <td>
+Langue parlée par l’usager.           <br/>
+
+    Jeu(x) de valeur(s) associé(s) :           <a href="https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J115-Langue-ENREG.html">JDV_J115-Langue-ENREG</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://smt.esante.gouv.fr/terminologie-cim-10">smt.esante.gouv.fr</a>
+        </td>
+        <td>
+Une ou plusieurs causes ayant entraîné la mort de l’usager.           <br/>
+
+    Nomenclature(s) associée(s) :           <a href="https://smt.esante.gouv.fr/terminologie-cim-10">Terminologie CIM-10</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J120-CommuneHistorisee.html">interop.esante.gouv.fr</a>
+        </td>
+        <td>
+Commune de décès de l’usager. Code officiel géographique (COG) de la commune.          <br/>
+
+    Jeu(x) de valeur(s) associé(s) :           <a href="https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J120-CommuneHistorisee.html">JDV-J120-CommuneHistorisee</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J258-Departement.html">interop.esante.gouv.fr</a>
+        </td>
+        <td>
+Département de décès de l’usager. Code officiel géographique (COG) du département.          <br/>
+
+    Jeu(x) de valeur(s) associé(s) :           <a href="https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J258-Departement.html">JDV-J258-Departement</a>
         </td>
       </tr>
       <tr>
