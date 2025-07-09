@@ -1672,10 +1672,10 @@ Cette classe décrit le statut des ressources (Evenement, Evaluation).
 
 #### Mapping Usager
 
-<table>
+<table style="width:100%">
 <tr>
-  <td align="center">Attribut</td>
-  <td align="center">Utilisé pour SSIAD</td>
+  <th>Attribut</th>
+  <th>Utilisé pour SSIAD</th>
 </tr>
 <tr>
   <td>matriculeINS</td>
@@ -1737,10 +1737,10 @@ Cette classe décrit le statut des ressources (Evenement, Evaluation).
 
 ##### Mapping Adresse (usager)
 
-<table>
+<table style="width:100%">
 <tr>
-  <td align="center">Attribut</td>
-  <td align="center">Utilisé pour SSIAD</td>
+  <th>Attribut</th>
+  <th>Utilisé pour SSIAD</th>
 </tr>
 <tr>
   <td>numeroVoie</td>
@@ -1775,10 +1775,10 @@ Cette classe décrit le statut des ressources (Evenement, Evaluation).
 
 ##### Mapping Entité Juridique
 
-<table>
+<table style="width:100%">
 <tr>
-  <td align="center">Attribut</td>
-  <td align="center">Utilisé pour SSIAD</td>
+  <th>Attribut</th>
+  <th>Utilisé pour SSIAD</th>
 </tr>
 <tr>
   <td>idNat_Struct</td>
