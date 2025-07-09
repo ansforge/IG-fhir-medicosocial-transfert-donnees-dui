@@ -29,6 +29,11 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
     <th>Nom</th>
     <th>Description</th>
   </tr>
+  <tr>
+    <td>matriculeINS : [0..1] Identifiant</td>
+    <td>Le matricule INS est le numéro d’inscription au répertoire national d’identification des personnes physiques (NIR) ou le numéro identifiant d’attente (NIA) pour les personnes en instance d’attribution d’un NIR (Art. R. 1111-8-1.-I du CSP).<br>
+    Si le matricule INS de l'usager existe, il doit être véhiculé en priorité. Dans le cas où le matricule INS est renseigné, les traits INS (traits d'identité et traits complémentaires issus du RNIV) doivent être transmis conformément à l'<a href="https://esante.gouv.fr/annexe-prise-en-charge-de-lins-dans-les-volets-du-ci-sis">annexe prise en charge de l'INS dans les volets du ci-sis</a>.</td>
+  </tr>
 </table>
 
 ##### Classe Adresse
