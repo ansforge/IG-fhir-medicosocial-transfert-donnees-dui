@@ -19,6 +19,11 @@
 <div style="text-align:center;">{%include bloc_identification_coordonnees.svg%}</div>
 
 ##### Classe Usager 
+
+Terme générique “usager” permet de désigner une personne qui bénéficie d’une prestation ou d’un service lié à la prise en charge de son handicap ou de sa perte d’autonomie, que ce soit à domicile ou en établissement. L’usager est donc la personne qui reçoit une aide ou un accompagnement dans le cadre d’une politique publique visant à soutenir les personnes âgées en perte d’autonomie ou les personnes en situation de handicap. Le terme inclut aussi bien les bénéficiaires directs de ces prestations que leurs familles, lorsqu’elles sont impliquées dans l’organisation de la prise en charge.
+
+Synonymes : résident, résident AN, personne accompagnée, personne accueillie, bénéficiaire, patient, personne, personne prise en charge, individu, client
+
 <table style="width:100%">
   <tr>
     <th>Nom</th>
