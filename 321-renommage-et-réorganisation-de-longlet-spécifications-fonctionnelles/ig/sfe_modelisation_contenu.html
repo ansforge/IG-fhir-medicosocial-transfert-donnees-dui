@@ -1965,7 +1965,7 @@ Le détail de l’évaluation de ce champ peut être transmis à travers un deux
 <table style="width:100%">
 <tr>
   <th>Attribut</th>
-  <th>Utilisé pour SSIAD</th>
+  <th>Utilisé pour cas d'usage SSIAD</th>
 </tr>
 <tr>
   <td>matriculeINS</td>
@@ -2030,7 +2030,7 @@ Le détail de l’évaluation de ce champ peut être transmis à travers un deux
 <table style="width:100%">
 <tr>
   <th>Attribut</th>
-  <th>Utilisé pour SSIAD</th>
+  <th>Utilisé pour cas d'usage SSIAD</th>
 </tr>
 <tr>
   <td>numeroVoie</td>
@@ -2055,7 +2055,7 @@ Le détail de l’évaluation de ce champ peut être transmis à travers un deux
 <table style="width:100%">
 <tr>
   <th>Attribut</th>
-  <th>Utilisé pour SSIAD</th>
+  <th>Utilisé pour cas d'usage SSIAD</th>
 </tr>
 <tr>
   <td>idSejour</td>
@@ -2077,15 +2077,163 @@ Le détail de l’évaluation de ce champ peut être transmis à travers un deux
   <td>dateEntree</td>
  <td>Oui</td>
 </tr>
+<tr>
+  <td>modeSortie</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>dateSortie</td>
+ <td>Oui</td>
+</tr>
 </table>
 
 <h4 id="partie-accompagnement-1">Partie Accompagnement</h4>
 
 <h5 id="mapping-evaluation">Mapping Evaluation</h5>
 
+<table style="width:100%">
+<tr>
+  <th>Attribut</th>
+  <th>Utilisé pour cas d'usage SSIAD</th>
+</tr>
+<tr>
+  <td>idEvaluation</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>typeEvaluation</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>statut de l'évaluation</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>dateEvaluation</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>professionnel réalisant l'évaluation</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>idNat_PS Identifiant de l'évaluateur</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>idNat_Struct Identifiant de l'établissement de rattachement de l'évaluateur</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>composants du détail de l'évaluation</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>pieceJointeEvaluation</td>
+ <td>Oui</td>
+</tr>
+</table>
+
+<h6 id="mapping-détail-evaluation-niveau-12">Mapping Détail Evaluation (niveau 1,2)</h6>
+
+<table style="width:100%">
+<tr>
+  <th>Attribut</th>
+  <th>Utilisé pour cas d'usage SSIAD</th>
+</tr>
+<tr>
+  <td>champsEvalue</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>champsEvalue</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>resultatChampsEvalue</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>statut du détail de l'évaluation</td>
+ <td>Oui</td>
+</tr>
+</table>
+
 <h4 id="partie-coordination-des-acteurs-1">Partie Coordination des acteurs</h4>
 
 <h5 id="mapping-evènement-de-lagenda">Mapping Evènement de l'agenda</h5>
+
+<table style="width:100%">
+<tr>
+  <th>Attribut</th>
+  <th>Utilisé pour cas d'usage SSIAD</th>
+</tr>
+<tr>
+  <td>idEvenement</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>typeEvenement</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>libelleEvenement</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>dateDebutEvenement</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>dateFinEvenement</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>lieuEvenement</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>structureEnCharge</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>Fonction (rôle et mode d'exercice) du professionnel ayant réalisé l'évènement</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>Nom et prénom du professionnel ayant réalisé l'évènement</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>Etablissement de rattachement du professionnel</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>Caractéristiques de l'évènement (Commentaire, pièce jointe, transport de l'usager, statut métier de l'évènement, transport d'un professionnel ayant participé à l'évènement)</td>
+ <td>Non</td>
+</tr>
+</table>
+
+<h6 id="mapping-statut-de-lévènement">Mapping Statut de l'évènement</h6>
+
+<table style="width:100%">
+<tr>
+  <th>Attribut</th>
+  <th>Utilisé pour cas d'usage SSIAD</th>
+</tr>
+<tr>
+  <td>identifiant du statut</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>code du statut</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>date du statut</td>
+ <td>Non</td>
+</tr>
+</table>
 
 <h4 id="partie-structure">Partie Structure</h4>
 
@@ -2094,7 +2242,7 @@ Le détail de l’évaluation de ce champ peut être transmis à travers un deux
 <table style="width:100%">
 <tr>
   <th>Attribut</th>
-  <th>Utilisé pour SSIAD</th>
+  <th>Utilisé pour cas d'usage SSIAD</th>
 </tr>
 <tr>
   <td>idNat_Struct</td>
@@ -2151,7 +2299,7 @@ Le détail de l’évaluation de ce champ peut être transmis à travers un deux
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jul 9, 2025 15:16+0000">2025-07-09</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 10, 2025 13:31+0000">2025-07-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
