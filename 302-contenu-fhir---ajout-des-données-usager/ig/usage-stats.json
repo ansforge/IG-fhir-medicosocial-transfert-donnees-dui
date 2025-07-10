@@ -3,8 +3,66 @@
   "version": "1.1.0",
   "fhirVersion": "4.0.1",
   "jurisdiction": "FR",
-  "extensions": [],
+  "extensions": [
+    {
+      "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Patient.multipleBirth",
+      "title": "Rang Gémellaire",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-admission-date",
+      "title": "Date d’admission",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment",
+      "title": "Commentaire",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-mode-label",
+      "title": "Libellé mode d\u0027entrée",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exit-mode-label",
+      "title": "Libellé mode d\u0027entrée",
+      "types": [
+        "string"
+      ]
+    }
+  ],
   "profiles": {
+    "Patient": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/fr-core-patient",
+        "title": "FR Core Patient Profile"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/fr-core-patient-ins",
+        "title": "FR Core Patient INS Profile"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-Encounter",
+        "title": "TDDUI Encounter"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-Organization",
+        "title": "TDDUI Organization"
+      }
+    ],
     "Bundle": [
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle",
@@ -19,6 +77,15 @@
     ]
   },
   "usage": {
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedEndDate": [
+      "Encounter"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedStartDate": [
+      "Encounter"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-Patient.multipleBirth": [
+      "Patient"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],
@@ -34,7 +101,22 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
       "StructureDefinition.snapshot.element"
     ],
+    "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order": [
+      "HumanName"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/organization-period": [
+      "Organization"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-birthPlace": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod": [
+      "ValueSet"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
@@ -56,6 +138,48 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
       "StructureDefinition.snapshot"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code": [
+      "Patient.extension.value[x]"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-comment": [
+      "Patient.contact"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability": [
+      "Patient"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-description": [
+      "Organization"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name": [
+      "Organization"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name": [
+      "Patient.name"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birthdate-update-indicator": [
+      "Patient"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-identifier": [
+      "Patient.contact"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-death-place": [
+      "Patient"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-nationality": [
+      "Patient"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-admission-date": [
+      "Encounter"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment": [
+      "Encounter"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-mode-label": [
+      "Encounter"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exit-mode-label": [
+      "Encounter"
     ]
   }
 }

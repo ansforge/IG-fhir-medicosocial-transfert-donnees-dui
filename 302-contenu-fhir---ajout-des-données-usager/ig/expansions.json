@@ -1,8 +1,77 @@
 {
   "resourceType" : "Bundle",
-  "id" : "8aec9698-032e-47de-b7a2-0975e77a8e79",
+  "id" : "00f47782-abed-49ec-9b74-c3bcc1b835f3",
   "meta" : {
-    "lastUpdated" : "2025-07-10T13:42:01.153+00:00"
+    "lastUpdated" : "2025-07-10T15:00:30.305+00:00"
   },
-  "type" : "collection"
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "https://mos.esante.gouv.fr/NOS/JDV_J78-Civilite-RASS/FHIR/JDV-J78-Civilite-RASS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "meta" : {
+        "versionId" : "3",
+        "lastUpdated" : "2024-04-27T05:08:04.398+00:00",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+      },
+      "language" : "fr-FR",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"fr-FR\" lang=\"fr-FR\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R81-Civilite.html\">codesystem TRE_R81_Civilite v20231215120000 (CodeSystem)</a></p><p>Ce jeu de valeur (ValueSet) contient 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Système</b></td><td><b>Display (fr-FR)</b> - French (France) (fr)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://mos.esante.gouv.fr/NOS/TRE_R81-Civilite/FHIR/TRE-R81-Civilite-M\"> </a>\u00a0\u00a0<a href=\"https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R81-Civilite.html#TRE-R81-Civilite-M\">M</a></td><td>https://mos.esante.gouv.fr/NOS/TRE_R81-Civilite/FHIR/TRE-R81-Civilite</td><td>Monsieur</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://mos.esante.gouv.fr/NOS/TRE_R81-Civilite/FHIR/TRE-R81-Civilite-MME\"> </a>\u00a0\u00a0<a href=\"https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R81-Civilite.html#TRE-R81-Civilite-MME\">MME</a></td><td>https://mos.esante.gouv.fr/NOS/TRE_R81-Civilite/FHIR/TRE-R81-Civilite</td><td>Madame</td></tr></table></div>"
+      },
+      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J78-Civilite-RASS/FHIR/JDV-J78-Civilite-RASS",
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:oid:1.2.250.1.213.1.6.1.146"
+      }],
+      "version" : "1.1.0",
+      "name" : "JDV_J78_Civilite_RASS-DUI",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2022-12-16T12:00:00+01:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "FR",
+          "display" : "FRANCE"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:8e2439a6-786d-4f38-9179-2c84ccbf771c",
+        "timestamp" : "2025-07-10T15:01:13+00:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "fr-FR"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://mos.esante.gouv.fr/NOS/TRE_R81-Civilite/FHIR/TRE-R81-Civilite|20231215120000"
+        }],
+        "contains" : [{
+          "system" : "https://mos.esante.gouv.fr/NOS/TRE_R81-Civilite/FHIR/TRE-R81-Civilite",
+          "code" : "M",
+          "display" : "Monsieur"
+        },
+        {
+          "system" : "https://mos.esante.gouv.fr/NOS/TRE_R81-Civilite/FHIR/TRE-R81-Civilite",
+          "code" : "MME",
+          "display" : "Madame"
+        }]
+      }
+    }
+  }]
 }

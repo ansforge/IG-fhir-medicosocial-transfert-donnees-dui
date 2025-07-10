@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 0, errors = 0, warn = 61, info = 16-->
+<!-- broken links = 0, errors = 5, warn = 91, info = 20-->
 <head>
   <title>TDDUI : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -47,12 +47,12 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for TDDUI</h1>
- <p>Generated Thu Jul 10 13:42:52 UTC 2025, FHIR version 4.0.1 for ans.fhir.fr.tddui#1.1.0 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/tddui">https://interop.esante.gouv.fr/ig/fhir/tddui</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/tddui/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a> &amp; <a href="qa-ipreview.html">IP</a></p>
+ <p>Generated Thu Jul 10 15:01:52 UTC 2025, FHIR version 4.0.1 for ans.fhir.fr.tddui#1.1.0 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/tddui">https://interop.esante.gouv.fr/ig/fhir/tddui</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/tddui/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a> &amp; <a href="qa-ipreview.html">IP</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v2.0.8</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ans.fhir.fr.tddui, Canonical = https://interop.esante.gouv.fr/ig/fhir/tddui</td></tr>
  <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
- <tr><td>Language Info:</td><td>This IG has no language information</td></tr>
+ <tr><td>Language Info:</td><td>Stated Languages: n/a. IG Resource Lang: n/a. 1 of 18 (5%) of resources have a language. <a href="https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-resource-language-policy">Population Policy</a>: NONE</td></tr>
  <tr><td>Publication Request:</td><td><table class="grid">
  <tr><td>RelatedIgs</d><td>(None Found)</td></tr>
 </table>
@@ -85,23 +85,47 @@
  <tr><td>Global Profiles:</td><td>(none declared)</td></tr>
  <tr><td>Terminology Server(s):</td><td><a href="http://tx.fhir.org/r4">http://tx.fhir.org/r4</a>, <a href="https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> (<a href="qa-txservers.html">details</a>)</td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
- <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>R5 Dependencies:</td><td><ul><li><a href="http://build.fhir.org/patient.html">http://hl7.org/fhir/5.0/StructureDefinition/extension-Patient.multipleBirth</a></li><li><a href="http://build.fhir.org/encounter.html">http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedEndDate</a></li><li><a href="http://build.fhir.org/encounter.html">http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedStartDate</a></li></ul></td></tr>
  <tr><td>Draft Dependencies:</td><td><ul>
   <li>
 hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-parameter-code.html">GuideParameterCode</a>
- (15 uses),     <a href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a>
- (3 uses),     <a href="http://hl7.org/fhir/R4/documentreference.html">DocumentReference</a>
- (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-common-tags.html">CommonTags</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-document-reference-status.html">DocumentReferenceStatus</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-composition-status.html">CompositionStatus</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a>
- (2 uses),     <a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a>
- (2 uses),     <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
- (3 uses),     <a href="http://hl7.org/fhir/R4/device.html">Device</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-document-relationship-type.html">DocumentRelationshipType</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R4/valueset-common-tags.html">CommonTags</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a>
+ (9 uses),     <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
+ (31 uses),     <a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a>
+ (6 uses),     <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-status.html">EncounterStatus</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-type.html">EncounterType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-service-type.html">ServiceType</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/episodeofcare.html">EpisodeOfCare</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-participant-type.html">ParticipantType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/appointment.html">Appointment</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-reason.html">EncounterReasonCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/condition.html">Condition</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/procedure.html">Procedure</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-diagnosis-role.html">DiagnosisRole</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/account.html">Account</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/location.html">Location</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-admit-source.html">AdmitSource</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-diet.html">Diet</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html">SpecialCourtesy</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-special-arrangements.html">SpecialArrangements</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-discharge-disposition.html">DischargeDisposition</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-location-status.html">EncounterLocationStatus</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-location-physical-type.html">LocationType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-organization-type.html">OrganizationType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-contactentity-type.html">ContactEntityType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/endpoint.html">Endpoint</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/documentreference.html">DocumentReference</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-document-reference-status.html">DocumentReferenceStatus</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-composition-status.html">CompositionStatus</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/device.html">Device</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-document-relationship-type.html">DocumentRelationshipType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/shareablevalueset.html">Shareable ValueSet</a>
  (1 uses)
   </li>
 </ul>
@@ -111,7 +135,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
  <tr><td>IPS Comparison:</td><td> n/a</td></tr>
  <tr><td>Validation Flags:</td><td> On: autoLoad; Off: hintAboutNonMustSupport, anyExtensionsAllowed, checkAggregation, showReferenceMessages, noExperimentalContent, displayWarnings</td></tr>
- <tr><td>Summary:</td><td> errors = 0, warn = 61, info = 16, broken links = 0, pinned = n/a.  <button onclick="toggleCodes()">Show Message Ids</button></td></tr>
+ <tr><td>Summary:</td><td> errors = 5, warn = 91, info = 20, broken links = 0, pinned = n/a.  <button onclick="toggleCodes()">Show Message Ids</button></td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -136,10 +160,43 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><a href="#_home_runner_work_IG-fhir-medicosocial-transfert-donnees-dui_IG-fhir-medicosocial-transfert-donnees-dui_igSource_fsh-generated_resources_ImplementationGuide-ans.fhir.fr.tddui"><b>/home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.tddui</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_IG-fhir-medicosocial-transfert-donnees-dui_IG-fhir-medicosocial-transfert-donnees-dui_igSource_fsh-generated_resources_StructureDefinition-tddui-bundle"><b>/home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-bundle</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+     <td><a href="#_home_runner_work_IG-fhir-medicosocial-transfert-donnees-dui_IG-fhir-medicosocial-transfert-donnees-dui_igSource_fsh-generated_resources_StructureDefinition-fr-core-human-name"><b>/home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-fr-core-human-name</b></a></td><td><b>0</b></td><td><b>5</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_IG-fhir-medicosocial-transfert-donnees-dui_IG-fhir-medicosocial-transfert-donnees-dui_igSource_fsh-generated_resources_StructureDefinition-fr-core-patient"><b>/home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-fr-core-patient</b></a></td><td><b>0</b></td><td><b>3</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_IG-fhir-medicosocial-transfert-donnees-dui_IG-fhir-medicosocial-transfert-donnees-dui_igSource_fsh-generated_resources_StructureDefinition-fr-core-patient-ins"><b>/home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-fr-core-patient-ins</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_IG-fhir-medicosocial-transfert-donnees-dui_IG-fhir-medicosocial-transfert-donnees-dui_igSource_fsh-generated_resources_StructureDefinition-fr-core-patient-multiple-birth-r5"><b>/home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-fr-core-patient-multiple-birth-r5</b></a></td><td><b>3</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_IG-fhir-medicosocial-transfert-donnees-dui_IG-fhir-medicosocial-transfert-donnees-dui_igSource_fsh-generated_resources_StructureDefinition-tddui-Encounter"><b>/home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-Encounter</b></a></td><td><b>0</b></td><td><b>4</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_IG-fhir-medicosocial-transfert-donnees-dui_IG-fhir-medicosocial-transfert-donnees-dui_igSource_fsh-generated_resources_StructureDefinition-tddui-Organization"><b>/home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-Organization</b></a></td><td><b>0</b></td><td><b>4</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_IG-fhir-medicosocial-transfert-donnees-dui_IG-fhir-medicosocial-transfert-donnees-dui_igSource_fsh-generated_resources_StructureDefinition-tddui-admission-date"><b>/home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-admission-date</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_IG-fhir-medicosocial-transfert-donnees-dui_IG-fhir-medicosocial-transfert-donnees-dui_igSource_fsh-generated_resources_StructureDefinition-tddui-bundle"><b>/home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-bundle</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_IG-fhir-medicosocial-transfert-donnees-dui_IG-fhir-medicosocial-transfert-donnees-dui_igSource_fsh-generated_resources_StructureDefinition-tddui-comment"><b>/home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-comment</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_IG-fhir-medicosocial-transfert-donnees-dui_IG-fhir-medicosocial-transfert-donnees-dui_igSource_fsh-generated_resources_StructureDefinition-tddui-documentreference"><b>/home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-documentreference</b></a></td><td><b>0</b></td><td><b>25</b></td><td><b>14</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_IG-fhir-medicosocial-transfert-donnees-dui_IG-fhir-medicosocial-transfert-donnees-dui_igSource_fsh-generated_resources_StructureDefinition-tddui-entry-mode-label"><b>/home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-entry-mode-label</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_IG-fhir-medicosocial-transfert-donnees-dui_IG-fhir-medicosocial-transfert-donnees-dui_igSource_fsh-generated_resources_StructureDefinition-tddui-exit-mode-label"><b>/home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-exit-mode-label</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_IG-fhir-medicosocial-transfert-donnees-dui_IG-fhir-medicosocial-transfert-donnees-dui_igSource_fsh-generated_resources_ValueSet-JDV-J78-Civilite-RASS-DUI"><b>/home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/ValueSet-JDV-J78-Civilite-RASS-DUI</b></a></td><td><b>2</b></td><td><b>3</b></td><td><b>0</b></td>
    </tr>
 </table>
 <hr/>
@@ -310,21 +367,33 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_home_runner_work_IG-fhir-medicosocial-transfert-donnees-dui_IG-fhir-medicosocial-transfert-donnees-dui_igSource_fsh-generated_resources_StructureDefinition-tddui-bundle"> </a>
-<h2><a href="StructureDefinition-tddui-bundle.html">fsh-generated/resources/StructureDefinition-tddui-bundle.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
+<a name="_home_runner_work_IG-fhir-medicosocial-transfert-donnees-dui_IG-fhir-medicosocial-transfert-donnees-dui_igSource_fsh-generated_resources_StructureDefinition-fr-core-human-name"> </a>
+<h2><a href="StructureDefinition-fr-core-human-name.html">fsh-generated/resources/StructureDefinition-fr-core-human-name.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[4]&#8203;.binding&#8203;.extension[0] (l1&#8203;/c27810)</b></td><td><b>information</b></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DEPENDS_ON_DEPRECATED</span></td>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[3]&#8203;.type[0]&#8203;.profile[0] (l1&#8203;/c18380)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/humanname-assembly-order'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.1.0, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/humanname-assembly-order' to 'http://hl7.org/fhir/StructureDefinition/humanname-assembly-order|5.2.0'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[8]&#8203;.binding&#8203;.valueSet (l1&#8203;/c24236)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J78-Civilite-RASS/FHIR/JDV-J78-Civilite-RASS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20221216120000', found versions: 1.1.0, 1.3.0, 20221216120000. Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J78-Civilite-RASS/FHIR/JDV-J78-Civilite-RASS' to 'https://mos.esante.gouv.fr/NOS/JDV_J78-Civilite-RASS/FHIR/JDV-J78-Civilite-RASS|20221216120000'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.type[0]&#8203;.profile[0] (l1&#8203;/c26297)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/humanname-assembly-order'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.1.0, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/humanname-assembly-order' to 'http://hl7.org/fhir/StructureDefinition/humanname-assembly-order|5.2.0'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[2]&#8203;.binding&#8203;.valueSet (l1&#8203;/c26540)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J78-Civilite-RASS/FHIR/JDV-J78-Civilite-RASS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20221216120000', found versions: 1.1.0, 1.3.0, 20221216120000. Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J78-Civilite-RASS/FHIR/JDV-J78-Civilite-RASS' to 'https://mos.esante.gouv.fr/NOS/JDV_J78-Civilite-RASS/FHIR/JDV-J78-Civilite-RASS|20221216120000'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/interop&#8203;.esante&#8203;.gouv&#8203;.fr&#8203;/ig&#8203;/fhir&#8203;/tddui&#8203;/StructureDefinition&#8203;/fr-core-human-name')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this data type profile</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
 </table>
 <hr/>
-<a name="_home_runner_work_IG-fhir-medicosocial-transfert-donnees-dui_IG-fhir-medicosocial-transfert-donnees-dui_igSource_fsh-generated_resources_StructureDefinition-tddui-documentreference"> </a>
-<h2><a href="StructureDefinition-tddui-documentreference.html">fsh-generated/resources/StructureDefinition-tddui-documentreference.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
+<a name="_home_runner_work_IG-fhir-medicosocial-transfert-donnees-dui_IG-fhir-medicosocial-transfert-donnees-dui_igSource_fsh-generated_resources_StructureDefinition-fr-core-patient"> </a>
+<h2><a href="StructureDefinition-fr-core-patient.html">fsh-generated/resources/StructureDefinition-fr-core-patient.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -332,121 +401,336 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[21]&#8203;.constraint[1] (l1&#8203;/c114149)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[21]&#8203;.type[0]&#8203;.profile[0] (l1&#8203;/c203858)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/patient-birthPlace'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.1.0, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/patient-birthPlace' to 'http://hl7.org/fhir/StructureDefinition/patient-birthPlace|5.2.0'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[21]&#8203;.binding&#8203;.valueSet (l1&#8203;/c114340)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20250623120000', found versions: 1.3.0, 20250623120000. Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS' to 'https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS|20250623120000'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[8]&#8203;.type[0]&#8203;.profile[0] (l1&#8203;/c350523)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/patient-birthPlace'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.1.0, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/patient-birthPlace' to 'http://hl7.org/fhir/StructureDefinition/patient-birthPlace|5.2.0'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[22]&#8203;.constraint[1] (l1&#8203;/c116557)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/interop&#8203;.esante&#8203;.gouv&#8203;.fr&#8203;/ig&#8203;/fhir&#8203;/tddui&#8203;/StructureDefinition&#8203;/fr-core-patient')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[22]&#8203;.binding&#8203;.valueSet (l1&#8203;/c116750)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20230922120000', found versions: 1.3.0, 20230922120000. Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS' to 'https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS|20230922120000'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[35]&#8203;.constraint[1] (l1&#8203;/c135785)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[51]&#8203;.constraint[1] (l1&#8203;/c156384)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[51]&#8203;.binding&#8203;.valueSet (l1&#8203;/c156579)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20240726120000', found versions: 1.3.0, 20240726120000. Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS' to 'https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS|20240726120000'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[57]&#8203;.constraint[1] (l1&#8203;/c165365)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[57]&#8203;.binding&#8203;.valueSet (l1&#8203;/c165710)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-ActCode'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '3.0.0', found versions: 2.0.0, 3.0.0. Suggested fix: change the canonical reference from 'http://terminology.hl7.org/ValueSet/v3-ActCode' to 'http://terminology.hl7.org/ValueSet/v3-ActCode|3.0.0'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[59]&#8203;.constraint[1] (l1&#8203;/c168358)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[59]&#8203;.binding&#8203;.valueSet (l1&#8203;/c168586)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS/FHIR/JDV-J02-XdsHealthcareFacilityTypeCode-CISIS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20250523120000', found versions: 1.3.0, 20250523120000. Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS/FHIR/JDV-J02-XdsHealthcareFacilityTypeCode-CISIS' to 'https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS/FHIR/JDV-J02-XdsHealthcareFacilityTypeCode-CISIS|20250523120000'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[60]&#8203;.constraint[1] (l1&#8203;/c170843)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[60]&#8203;.binding&#8203;.valueSet (l1&#8203;/c171057)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J04-XdsPracticeSettingCode-CISIS/FHIR/JDV-J04-XdsPracticeSettingCode-CISIS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20240927120000', found versions: 1.3.0, 20240927120000. Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J04-XdsPracticeSettingCode-CISIS/FHIR/JDV-J04-XdsPracticeSettingCode-CISIS' to 'https://mos.esante.gouv.fr/NOS/JDV_J04-XdsPracticeSettingCode-CISIS/FHIR/JDV-J04-XdsPracticeSettingCode-CISIS|20240927120000'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[6]&#8203;.constraint[0] (l1&#8203;/c175510)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[6]&#8203;.binding&#8203;.valueSet (l1&#8203;/c175665)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20250623120000', found versions: 1.3.0, 20250623120000. Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS' to 'https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS|20250623120000'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[7]&#8203;.constraint[0] (l1&#8203;/c176529)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[7]&#8203;.binding&#8203;.valueSet (l1&#8203;/c176686)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20230922120000', found versions: 1.3.0, 20230922120000. Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS' to 'https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS|20230922120000'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[14]&#8203;.constraint[0] (l1&#8203;/c178585)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[24]&#8203;.constraint[0] (l1&#8203;/c180985)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[24]&#8203;.binding&#8203;.valueSet (l1&#8203;/c181144)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20240726120000', found versions: 1.3.0, 20240726120000. Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS' to 'https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS|20240726120000'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[26]&#8203;.constraint[0] (l1&#8203;/c181865)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[28]&#8203;.constraint[0] (l1&#8203;/c182965)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[28]&#8203;.binding&#8203;.valueSet (l1&#8203;/c183156)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS/FHIR/JDV-J02-XdsHealthcareFacilityTypeCode-CISIS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20250523120000', found versions: 1.3.0, 20250523120000. Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS/FHIR/JDV-J02-XdsHealthcareFacilityTypeCode-CISIS' to 'https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS/FHIR/JDV-J02-XdsHealthcareFacilityTypeCode-CISIS|20250523120000'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[29]&#8203;.constraint[0] (l1&#8203;/c184132)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[29]&#8203;.binding&#8203;.valueSet (l1&#8203;/c184309)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J04-XdsPracticeSettingCode-CISIS/FHIR/JDV-J04-XdsPracticeSettingCode-CISIS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20240927120000', found versions: 1.3.0, 20240927120000. Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J04-XdsPracticeSettingCode-CISIS/FHIR/JDV-J04-XdsPracticeSettingCode-CISIS' to 'https://mos.esante.gouv.fr/NOS/JDV_J04-XdsPracticeSettingCode-CISIS/FHIR/JDV-J04-XdsPracticeSettingCode-CISIS|20240927120000'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
+</table>
+<hr/>
+<a name="_home_runner_work_IG-fhir-medicosocial-transfert-donnees-dui_IG-fhir-medicosocial-transfert-donnees-dui_igSource_fsh-generated_resources_StructureDefinition-fr-core-patient-ins"> </a>
+<h2><a href="StructureDefinition-fr-core-patient-ins.html">fsh-generated/resources/StructureDefinition-fr-core-patient-ins.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[6]&#8203;.constraint[0] (l1&#8203;/c175510)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-type' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[14]&#8203;.binding&#8203;.extension[0] (l1&#8203;/c134054)</b></td><td><b>information</b></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DEPENDS_ON_DEPRECATED</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[22]&#8203;.type[0]&#8203;.profile[0] (l1&#8203;/c142245)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/patient-birthPlace'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.1.0, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/patient-birthPlace' to 'http://hl7.org/fhir/StructureDefinition/patient-birthPlace|5.2.0'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/interop&#8203;.esante&#8203;.gouv&#8203;.fr&#8203;/ig&#8203;/fhir&#8203;/tddui&#8203;/StructureDefinition&#8203;/fr-core-patient-ins')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_IG-fhir-medicosocial-transfert-donnees-dui_IG-fhir-medicosocial-transfert-donnees-dui_igSource_fsh-generated_resources_StructureDefinition-fr-core-patient-multiple-birth-r5"> </a>
+<h2><a href="StructureDefinition-fr-core-patient-multiple-birth-r5.html">fsh-generated/resources/StructureDefinition-fr-core-patient-multiple-birth-r5.json</a> <span id="svi9" class="toggle" onclick="toggle('vi9')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi9')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi9"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/hl7&#8203;.org&#8203;/fhir&#8203;/5&#8203;.0&#8203;/StructureDefinition&#8203;/extension-Patient&#8203;.multipleBirth')</b></td><td><b>error</b></td><td><b>Conformance resource /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-fr-core-patient-multiple-birth-r5.json - the canonical URL (https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/fr-core-patient-multiple-birth-r5) does not match the URL (http://hl7.org/fhir/5.0/StructureDefinition/extension-Patient.multipleBirth)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">RESOURCE_CANONICAL_MISMATCH</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition (l1/c17985)</b></td><td><b>error</b></td><td><b>When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">VALIDATION_HL7_WG_NEEDED</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/hl7&#8203;.org&#8203;/fhir&#8203;/5&#8203;.0&#8203;/StructureDefinition&#8203;/extension-Patient&#8203;.multipleBirth')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this extension</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated&#8203;/resources&#8203;/StructureDefinition-fr-core-patient-multiple-birth-r5</b></td><td><b>error</b></td><td><b>URL Mismatch https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/fr-core-patient-multiple-birth-r5 vs http://hl7.org/fhir/5.0/StructureDefinition/extension-Patient.multipleBirth</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_IG-fhir-medicosocial-transfert-donnees-dui_IG-fhir-medicosocial-transfert-donnees-dui_igSource_fsh-generated_resources_StructureDefinition-tddui-Encounter"> </a>
+<h2><a href="StructureDefinition-tddui-Encounter.html">fsh-generated/resources/StructureDefinition-tddui-Encounter.json</a> <span id="svi10" class="toggle" onclick="toggle('vi10')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi10')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi10"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[26]&#8203;.binding&#8203;.valueSet (l1&#8203;/c66220)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-ActEncounterCode'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '3.0.0', found versions: 2.0.0, 3.0.0. Suggested fix: change the canonical reference from 'http://terminology.hl7.org/ValueSet/v3-ActEncounterCode' to 'http://terminology.hl7.org/ValueSet/v3-ActEncounterCode|3.0.0'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[31]&#8203;.binding&#8203;.valueSet (l1&#8203;/c73242)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-ActEncounterCode'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '3.0.0', found versions: 2.0.0, 3.0.0. Suggested fix: change the canonical reference from 'http://terminology.hl7.org/ValueSet/v3-ActEncounterCode' to 'http://terminology.hl7.org/ValueSet/v3-ActEncounterCode|3.0.0'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[35]&#8203;.binding&#8203;.valueSet (l1&#8203;/c76909)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-ActPriority'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '3.0.0', found versions: 2.0.0, 3.0.0. Suggested fix: change the canonical reference from 'http://terminology.hl7.org/ValueSet/v3-ActPriority' to 'http://terminology.hl7.org/ValueSet/v3-ActPriority|3.0.0'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[7]&#8203;.constraint[0] (l1&#8203;/c176529)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-category' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[8]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c134161)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[14]&#8203;.constraint[0] (l1&#8203;/c178585)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-securityLabel' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[15]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c53268)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/interop&#8203;.esante&#8203;.gouv&#8203;.fr&#8203;/ig&#8203;/fhir&#8203;/tddui&#8203;/StructureDefinition&#8203;/tddui-Encounter')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_IG-fhir-medicosocial-transfert-donnees-dui_IG-fhir-medicosocial-transfert-donnees-dui_igSource_fsh-generated_resources_StructureDefinition-tddui-Organization"> </a>
+<h2><a href="StructureDefinition-tddui-Organization.html">fsh-generated/resources/StructureDefinition-tddui-Organization.json</a> <span id="svi11" class="toggle" onclick="toggle('vi11')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi11')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi11"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[19]&#8203;.type[0]&#8203;.profile[0] (l1&#8203;/c37211)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/organization-period'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.1.0, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/organization-period' to 'http://hl7.org/fhir/StructureDefinition/organization-period|5.2.0'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[101]&#8203;.binding&#8203;.valueSet (l1&#8203;/c144050)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J101-SecteurActivite-RASS/FHIR/JDV-J101-SecteurActivite-RASS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20250523120000', found versions: 1.3.0, 20250523120000. Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J101-SecteurActivite-RASS/FHIR/JDV-J101-SecteurActivite-RASS' to 'https://mos.esante.gouv.fr/NOS/JDV_J101-SecteurActivite-RASS/FHIR/JDV-J101-SecteurActivite-RASS|20250523120000'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[113]&#8203;.binding&#8203;.valueSet (l1&#8203;/c159677)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J129-CategorieEtablissement-RASS/FHIR/JDV-J129-CategorieEtablissement-RASS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20241025120000', found versions: 1.3.0, 20241025120000. Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J129-CategorieEtablissement-RASS/FHIR/JDV-J129-CategorieEtablissement-RASS' to 'https://mos.esante.gouv.fr/NOS/JDV_J129-CategorieEtablissement-RASS/FHIR/JDV-J129-CategorieEtablissement-RASS|20241025120000'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[24]&#8203;.constraint[0] (l1&#8203;/c180985)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-format' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[21]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c40424)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[26]&#8203;.constraint[0] (l1&#8203;/c181865)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-context-event' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[88]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c124977)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/interop&#8203;.esante&#8203;.gouv&#8203;.fr&#8203;/ig&#8203;/fhir&#8203;/tddui&#8203;/StructureDefinition&#8203;/tddui-Organization')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_IG-fhir-medicosocial-transfert-donnees-dui_IG-fhir-medicosocial-transfert-donnees-dui_igSource_fsh-generated_resources_StructureDefinition-tddui-admission-date"> </a>
+<h2><a href="StructureDefinition-tddui-admission-date.html">fsh-generated/resources/StructureDefinition-tddui-admission-date.json</a> <span id="svi12" class="toggle" onclick="toggle('vi12')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi12')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi12"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.context[0]</b></td><td><b>warning</b></td><td><b>Review the extension type for tddui-admission-date: extensions should not have a context of Element unless it's really intended that they can be used anywhere</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_CONTEXT_SHOULD_NOT_BE_ELEMENT</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/interop&#8203;.esante&#8203;.gouv&#8203;.fr&#8203;/ig&#8203;/fhir&#8203;/tddui&#8203;/StructureDefinition&#8203;/tddui-admission-date')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this extension</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_IG-fhir-medicosocial-transfert-donnees-dui_IG-fhir-medicosocial-transfert-donnees-dui_igSource_fsh-generated_resources_StructureDefinition-tddui-bundle"> </a>
+<h2><a href="StructureDefinition-tddui-bundle.html">fsh-generated/resources/StructureDefinition-tddui-bundle.json</a> <span id="svi13" class="toggle" onclick="toggle('vi13')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi13')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi13"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_IG-fhir-medicosocial-transfert-donnees-dui_IG-fhir-medicosocial-transfert-donnees-dui_igSource_fsh-generated_resources_StructureDefinition-tddui-comment"> </a>
+<h2><a href="StructureDefinition-tddui-comment.html">fsh-generated/resources/StructureDefinition-tddui-comment.json</a> <span id="svi14" class="toggle" onclick="toggle('vi14')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi14')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi14"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.context[0]</b></td><td><b>warning</b></td><td><b>Review the extension type for tddui-comment: extensions should not have a context of Element unless it's really intended that they can be used anywhere</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_CONTEXT_SHOULD_NOT_BE_ELEMENT</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/interop&#8203;.esante&#8203;.gouv&#8203;.fr&#8203;/ig&#8203;/fhir&#8203;/tddui&#8203;/StructureDefinition&#8203;/tddui-comment')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this extension</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_IG-fhir-medicosocial-transfert-donnees-dui_IG-fhir-medicosocial-transfert-donnees-dui_igSource_fsh-generated_resources_StructureDefinition-tddui-documentreference"> </a>
+<h2><a href="StructureDefinition-tddui-documentreference.html">fsh-generated/resources/StructureDefinition-tddui-documentreference.json</a> <span id="svi15" class="toggle" onclick="toggle('vi15')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi15')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi15"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[21]&#8203;.constraint[1] (l1&#8203;/c114081)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[21]&#8203;.binding&#8203;.valueSet (l1&#8203;/c114272)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20250623120000', found versions: 1.3.0, 20250623120000. Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS' to 'https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS|20250623120000'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[22]&#8203;.constraint[1] (l1&#8203;/c116489)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[22]&#8203;.binding&#8203;.valueSet (l1&#8203;/c116682)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20230922120000', found versions: 1.3.0, 20230922120000. Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS' to 'https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS|20230922120000'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[35]&#8203;.constraint[1] (l1&#8203;/c135734)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[51]&#8203;.constraint[1] (l1&#8203;/c156333)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[51]&#8203;.binding&#8203;.valueSet (l1&#8203;/c156528)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20240726120000', found versions: 1.3.0, 20240726120000. Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS' to 'https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS|20240726120000'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[57]&#8203;.constraint[1] (l1&#8203;/c165314)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[57]&#8203;.binding&#8203;.valueSet (l1&#8203;/c165659)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-ActCode'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '3.0.0', found versions: 2.0.0, 3.0.0. Suggested fix: change the canonical reference from 'http://terminology.hl7.org/ValueSet/v3-ActCode' to 'http://terminology.hl7.org/ValueSet/v3-ActCode|3.0.0'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[59]&#8203;.constraint[1] (l1&#8203;/c168307)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[59]&#8203;.binding&#8203;.valueSet (l1&#8203;/c168535)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS/FHIR/JDV-J02-XdsHealthcareFacilityTypeCode-CISIS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20250523120000', found versions: 1.3.0, 20250523120000. Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS/FHIR/JDV-J02-XdsHealthcareFacilityTypeCode-CISIS' to 'https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS/FHIR/JDV-J02-XdsHealthcareFacilityTypeCode-CISIS|20250523120000'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[60]&#8203;.constraint[1] (l1&#8203;/c170792)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[60]&#8203;.binding&#8203;.valueSet (l1&#8203;/c171006)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J04-XdsPracticeSettingCode-CISIS/FHIR/JDV-J04-XdsPracticeSettingCode-CISIS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20240927120000', found versions: 1.3.0, 20240927120000. Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J04-XdsPracticeSettingCode-CISIS/FHIR/JDV-J04-XdsPracticeSettingCode-CISIS' to 'https://mos.esante.gouv.fr/NOS/JDV_J04-XdsPracticeSettingCode-CISIS/FHIR/JDV-J04-XdsPracticeSettingCode-CISIS|20240927120000'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[6]&#8203;.constraint[0] (l1&#8203;/c175476)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[6]&#8203;.binding&#8203;.valueSet (l1&#8203;/c175631)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20250623120000', found versions: 1.3.0, 20250623120000. Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS' to 'https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS|20250623120000'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[7]&#8203;.constraint[0] (l1&#8203;/c176495)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[7]&#8203;.binding&#8203;.valueSet (l1&#8203;/c176652)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20230922120000', found versions: 1.3.0, 20230922120000. Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS' to 'https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS|20230922120000'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[14]&#8203;.constraint[0] (l1&#8203;/c178568)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[24]&#8203;.constraint[0] (l1&#8203;/c180968)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[24]&#8203;.binding&#8203;.valueSet (l1&#8203;/c181127)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20240726120000', found versions: 1.3.0, 20240726120000. Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS' to 'https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS|20240726120000'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[26]&#8203;.constraint[0] (l1&#8203;/c181848)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[28]&#8203;.constraint[0] (l1&#8203;/c182948)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[28]&#8203;.binding&#8203;.valueSet (l1&#8203;/c183139)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS/FHIR/JDV-J02-XdsHealthcareFacilityTypeCode-CISIS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20250523120000', found versions: 1.3.0, 20250523120000. Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS/FHIR/JDV-J02-XdsHealthcareFacilityTypeCode-CISIS' to 'https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS/FHIR/JDV-J02-XdsHealthcareFacilityTypeCode-CISIS|20250523120000'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[29]&#8203;.constraint[0] (l1&#8203;/c184115)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[29]&#8203;.binding&#8203;.valueSet (l1&#8203;/c184292)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J04-XdsPracticeSettingCode-CISIS/FHIR/JDV-J04-XdsPracticeSettingCode-CISIS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20240927120000', found versions: 1.3.0, 20240927120000. Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J04-XdsPracticeSettingCode-CISIS/FHIR/JDV-J04-XdsPracticeSettingCode-CISIS' to 'https://mos.esante.gouv.fr/NOS/JDV_J04-XdsPracticeSettingCode-CISIS/FHIR/JDV-J04-XdsPracticeSettingCode-CISIS|20240927120000'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[28]&#8203;.constraint[0] (l1&#8203;/c182965)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-ProducteurDoc-simplified' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[6]&#8203;.constraint[0] (l1&#8203;/c175476)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-type' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[29]&#8203;.constraint[0] (l1&#8203;/c184132)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-ProducteurDoc-simplified' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[7]&#8203;.constraint[0] (l1&#8203;/c176495)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-category' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[21]&#8203;.constraint[1] (l1&#8203;/c114149)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-type' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[14]&#8203;.constraint[0] (l1&#8203;/c178568)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-securityLabel' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[22]&#8203;.constraint[1] (l1&#8203;/c116557)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-category' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[24]&#8203;.constraint[0] (l1&#8203;/c180968)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-format' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[35]&#8203;.constraint[1] (l1&#8203;/c135785)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-securityLabel' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[26]&#8203;.constraint[0] (l1&#8203;/c181848)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-context-event' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[51]&#8203;.constraint[1] (l1&#8203;/c156384)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-format' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[28]&#8203;.constraint[0] (l1&#8203;/c182948)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-ProducteurDoc-simplified' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[57]&#8203;.constraint[1] (l1&#8203;/c165365)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-context-event' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[29]&#8203;.constraint[0] (l1&#8203;/c184115)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-ProducteurDoc-simplified' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[59]&#8203;.constraint[1] (l1&#8203;/c168358)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-ProducteurDoc-simplified' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[21]&#8203;.constraint[1] (l1&#8203;/c114081)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-type' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[60]&#8203;.constraint[1] (l1&#8203;/c170843)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-ProducteurDoc-simplified' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[22]&#8203;.constraint[1] (l1&#8203;/c116489)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-category' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[35]&#8203;.constraint[1] (l1&#8203;/c135734)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-securityLabel' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[51]&#8203;.constraint[1] (l1&#8203;/c156333)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-format' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[57]&#8203;.constraint[1] (l1&#8203;/c165314)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-context-event' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[59]&#8203;.constraint[1] (l1&#8203;/c168307)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-ProducteurDoc-simplified' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[60]&#8203;.constraint[1] (l1&#8203;/c170792)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-ProducteurDoc-simplified' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_IG-fhir-medicosocial-transfert-donnees-dui_IG-fhir-medicosocial-transfert-donnees-dui_igSource_fsh-generated_resources_StructureDefinition-tddui-entry-mode-label"> </a>
+<h2><a href="StructureDefinition-tddui-entry-mode-label.html">fsh-generated/resources/StructureDefinition-tddui-entry-mode-label.json</a> <span id="svi16" class="toggle" onclick="toggle('vi16')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi16')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi16"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.context[0]</b></td><td><b>warning</b></td><td><b>Review the extension type for tddui-entry-mode-label: extensions should not have a context of Element unless it's really intended that they can be used anywhere</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_CONTEXT_SHOULD_NOT_BE_ELEMENT</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/interop&#8203;.esante&#8203;.gouv&#8203;.fr&#8203;/ig&#8203;/fhir&#8203;/tddui&#8203;/StructureDefinition&#8203;/tddui-entry-mode-label')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this extension</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_IG-fhir-medicosocial-transfert-donnees-dui_IG-fhir-medicosocial-transfert-donnees-dui_igSource_fsh-generated_resources_StructureDefinition-tddui-exit-mode-label"> </a>
+<h2><a href="StructureDefinition-tddui-exit-mode-label.html">fsh-generated/resources/StructureDefinition-tddui-exit-mode-label.json</a> <span id="svi17" class="toggle" onclick="toggle('vi17')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi17')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi17"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.context[0]</b></td><td><b>warning</b></td><td><b>Review the extension type for tddui-exit-mode-label: extensions should not have a context of Element unless it's really intended that they can be used anywhere</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_CONTEXT_SHOULD_NOT_BE_ELEMENT</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/interop&#8203;.esante&#8203;.gouv&#8203;.fr&#8203;/ig&#8203;/fhir&#8203;/tddui&#8203;/StructureDefinition&#8203;/tddui-exit-mode-label')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this extension</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_IG-fhir-medicosocial-transfert-donnees-dui_IG-fhir-medicosocial-transfert-donnees-dui_igSource_fsh-generated_resources_ValueSet-JDV-J78-Civilite-RASS-DUI"> </a>
+<h2><a href="ValueSet-JDV-J78-Civilite-RASS-DUI.html">fsh-generated/resources/ValueSet-JDV-J78-Civilite-RASS-DUI.json</a> <span id="svi18" class="toggle" onclick="toggle('vi18')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi18')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi18"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/shareablevalueset.html">Shareable ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.where(url = 'https:&#8203;/&#8203;/mos&#8203;.esante&#8203;.gouv&#8203;.fr&#8203;/NOS&#8203;/JDV_J78-Civilite-RASS&#8203;/FHIR&#8203;/JDV-J78-Civilite-RASS')</b></td><td><b>error</b></td><td><b>Conformance resource /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/ValueSet-JDV-J78-Civilite-RASS-DUI.json - the canonical URL (https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/JDV-J78-Civilite-RASS-DUI) does not match the URL (https://mos.esante.gouv.fr/NOS/JDV_J78-Civilite-RASS/FHIR/JDV-J78-Civilite-RASS)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">RESOURCE_CANONICAL_MISMATCH</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c2478)</b></td><td><b>warning</b></td><td><b>Constraint failed: vsd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (defined in http://hl7.org/fhir/StructureDefinition/ValueSet)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ValueSet#vsd-0</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose.include[0] (l1/c2475)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/TRE_R81-Civilite/FHIR/TRE-R81-Civilite'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20231215120000', found versions: 1.3.0, 20231215120000. Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/TRE_R81-Civilite/FHIR/TRE-R81-Civilite' to 'https://mos.esante.gouv.fr/NOS/TRE_R81-Civilite/FHIR/TRE-R81-Civilite|20231215120000'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c2478)</b></td><td><b>warning</b></td><td><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.title is mandatory, but it is not present</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated&#8203;/resources&#8203;/ValueSet-JDV-J78-Civilite-RASS-DUI</b></td><td><b>error</b></td><td><b>URL Mismatch https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/JDV-J78-Civilite-RASS-DUI vs https://mos.esante.gouv.fr/NOS/JDV_J78-Civilite-RASS/FHIR/JDV-J78-Civilite-RASS</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
 </table>
 <a name="suppressed"> </a>
@@ -540,13 +824,97 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
 <h2>MSG_DEPENDS_ON_DEPRECATED</h2>
  <table class="grid">
    <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-tddui-bundle.html">fsh-generated/resources/StructureDefinition-tddui-bundle.json</a></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated</b></td>
+     <td><a href="StructureDefinition-fr-core-patient-ins.html">fsh-generated/resources/StructureDefinition-fr-core-patient-ins.json</a></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="RESOURCE_CANONICAL_MISMATCH"> </a>
+<h2>RESOURCE_CANONICAL_MISMATCH</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-fr-core-patient-multiple-birth-r5.html">fsh-generated/resources/StructureDefinition-fr-core-patient-multiple-birth-r5.json</a></td><td><b>Conformance resource /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-fr-core-patient-multiple-birth-r5.json - the canonical URL (https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/fr-core-patient-multiple-birth-r5) does not match the URL (http://hl7.org/fhir/5.0/StructureDefinition/extension-Patient.multipleBirth)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="ValueSet-JDV-J78-Civilite-RASS-DUI.html">fsh-generated/resources/ValueSet-JDV-J78-Civilite-RASS-DUI.json</a></td><td><b>Conformance resource /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/ValueSet-JDV-J78-Civilite-RASS-DUI.json - the canonical URL (https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/JDV-J78-Civilite-RASS-DUI) does not match the URL (https://mos.esante.gouv.fr/NOS/JDV_J78-Civilite-RASS/FHIR/JDV-J78-Civilite-RASS)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="SD_CONTEXT_SHOULD_NOT_BE_ELEMENT"> </a>
+<h2>SD_CONTEXT_SHOULD_NOT_BE_ELEMENT</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-tddui-admission-date.html">fsh-generated/resources/StructureDefinition-tddui-admission-date.json</a></td><td><b>Review the extension type for tddui-admission-date: extensions should not have a context of Element unless it's really intended that they can be used anywhere</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-tddui-comment.html">fsh-generated/resources/StructureDefinition-tddui-comment.json</a></td><td><b>Review the extension type for tddui-comment: extensions should not have a context of Element unless it's really intended that they can be used anywhere</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-tddui-entry-mode-label.html">fsh-generated/resources/StructureDefinition-tddui-entry-mode-label.json</a></td><td><b>Review the extension type for tddui-entry-mode-label: extensions should not have a context of Element unless it's really intended that they can be used anywhere</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-tddui-exit-mode-label.html">fsh-generated/resources/StructureDefinition-tddui-exit-mode-label.json</a></td><td><b>Review the extension type for tddui-exit-mode-label: extensions should not have a context of Element unless it's really intended that they can be used anywhere</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="SD_PATH_SLICING_DEPRECATED"> </a>
+<h2>SD_PATH_SLICING_DEPRECATED</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-tddui-Encounter.html">fsh-generated/resources/StructureDefinition-tddui-Encounter.json</a></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-tddui-Encounter.html">fsh-generated/resources/StructureDefinition-tddui-Encounter.json</a></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-tddui-Organization.html">fsh-generated/resources/StructureDefinition-tddui-Organization.json</a></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-tddui-Organization.html">fsh-generated/resources/StructureDefinition-tddui-Organization.json</a></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b></td>
    </tr>
 </table>
 <hr/>
 <a name="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS"> </a>
 <h2>TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</h2>
  <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-fr-core-human-name.html">fsh-generated/resources/StructureDefinition-fr-core-human-name.json</a></td><td><b>There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/humanname-assembly-order'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.1.0, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/humanname-assembly-order' to 'http://hl7.org/fhir/StructureDefinition/humanname-assembly-order|5.2.0'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-fr-core-human-name.html">fsh-generated/resources/StructureDefinition-fr-core-human-name.json</a></td><td><b>There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J78-Civilite-RASS/FHIR/JDV-J78-Civilite-RASS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20221216120000', found versions: 1.1.0, 1.3.0, 20221216120000. Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J78-Civilite-RASS/FHIR/JDV-J78-Civilite-RASS' to 'https://mos.esante.gouv.fr/NOS/JDV_J78-Civilite-RASS/FHIR/JDV-J78-Civilite-RASS|20221216120000'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-fr-core-human-name.html">fsh-generated/resources/StructureDefinition-fr-core-human-name.json</a></td><td><b>There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/humanname-assembly-order'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.1.0, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/humanname-assembly-order' to 'http://hl7.org/fhir/StructureDefinition/humanname-assembly-order|5.2.0'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-fr-core-human-name.html">fsh-generated/resources/StructureDefinition-fr-core-human-name.json</a></td><td><b>There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J78-Civilite-RASS/FHIR/JDV-J78-Civilite-RASS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20221216120000', found versions: 1.1.0, 1.3.0, 20221216120000. Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J78-Civilite-RASS/FHIR/JDV-J78-Civilite-RASS' to 'https://mos.esante.gouv.fr/NOS/JDV_J78-Civilite-RASS/FHIR/JDV-J78-Civilite-RASS|20221216120000'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-fr-core-patient.html">fsh-generated/resources/StructureDefinition-fr-core-patient.json</a></td><td><b>There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/patient-birthPlace'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.1.0, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/patient-birthPlace' to 'http://hl7.org/fhir/StructureDefinition/patient-birthPlace|5.2.0'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-fr-core-patient.html">fsh-generated/resources/StructureDefinition-fr-core-patient.json</a></td><td><b>There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/patient-birthPlace'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.1.0, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/patient-birthPlace' to 'http://hl7.org/fhir/StructureDefinition/patient-birthPlace|5.2.0'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-fr-core-patient-ins.html">fsh-generated/resources/StructureDefinition-fr-core-patient-ins.json</a></td><td><b>There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/patient-birthPlace'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.1.0, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/patient-birthPlace' to 'http://hl7.org/fhir/StructureDefinition/patient-birthPlace|5.2.0'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-tddui-Encounter.html">fsh-generated/resources/StructureDefinition-tddui-Encounter.json</a></td><td><b>There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-ActEncounterCode'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '3.0.0', found versions: 2.0.0, 3.0.0. Suggested fix: change the canonical reference from 'http://terminology.hl7.org/ValueSet/v3-ActEncounterCode' to 'http://terminology.hl7.org/ValueSet/v3-ActEncounterCode|3.0.0'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-tddui-Encounter.html">fsh-generated/resources/StructureDefinition-tddui-Encounter.json</a></td><td><b>There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-ActEncounterCode'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '3.0.0', found versions: 2.0.0, 3.0.0. Suggested fix: change the canonical reference from 'http://terminology.hl7.org/ValueSet/v3-ActEncounterCode' to 'http://terminology.hl7.org/ValueSet/v3-ActEncounterCode|3.0.0'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-tddui-Encounter.html">fsh-generated/resources/StructureDefinition-tddui-Encounter.json</a></td><td><b>There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-ActPriority'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '3.0.0', found versions: 2.0.0, 3.0.0. Suggested fix: change the canonical reference from 'http://terminology.hl7.org/ValueSet/v3-ActPriority' to 'http://terminology.hl7.org/ValueSet/v3-ActPriority|3.0.0'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-tddui-Organization.html">fsh-generated/resources/StructureDefinition-tddui-Organization.json</a></td><td><b>There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/organization-period'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.1.0, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/organization-period' to 'http://hl7.org/fhir/StructureDefinition/organization-period|5.2.0'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-tddui-Organization.html">fsh-generated/resources/StructureDefinition-tddui-Organization.json</a></td><td><b>There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J101-SecteurActivite-RASS/FHIR/JDV-J101-SecteurActivite-RASS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20250523120000', found versions: 1.3.0, 20250523120000. Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J101-SecteurActivite-RASS/FHIR/JDV-J101-SecteurActivite-RASS' to 'https://mos.esante.gouv.fr/NOS/JDV_J101-SecteurActivite-RASS/FHIR/JDV-J101-SecteurActivite-RASS|20250523120000'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-tddui-Organization.html">fsh-generated/resources/StructureDefinition-tddui-Organization.json</a></td><td><b>There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J129-CategorieEtablissement-RASS/FHIR/JDV-J129-CategorieEtablissement-RASS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20241025120000', found versions: 1.3.0, 20241025120000. Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J129-CategorieEtablissement-RASS/FHIR/JDV-J129-CategorieEtablissement-RASS' to 'https://mos.esante.gouv.fr/NOS/JDV_J129-CategorieEtablissement-RASS/FHIR/JDV-J129-CategorieEtablissement-RASS|20241025120000'</b></td>
+   </tr>
    <tr style="background-color: #fff4ee">
      <td><a href="StructureDefinition-tddui-documentreference.html">fsh-generated/resources/StructureDefinition-tddui-documentreference.json</a></td><td><b>There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20250623120000', found versions: 1.3.0, 20250623120000. Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS' to 'https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS|20250623120000'</b></td>
    </tr>
@@ -590,6 +958,14 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #fff4ee">
      <td><a href="CapabilityStatement-TDDUIProducteur.html">fsh-generated/resources/CapabilityStatement-TDDUIProducteur.json</a></td><td><b>A definition could not be found for Canonical URL 'https://interop.esante.gouv.fr/ig/fhir/tddui'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="VALIDATION_HL7_WG_NEEDED"> </a>
+<h2>VALIDATION_HL7_WG_NEEDED</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-fr-core-patient-multiple-birth-r5.html">fsh-generated/resources/StructureDefinition-fr-core-patient-multiple-birth-r5.json</a></td><td><b>When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension</b></td>
    </tr>
 </table>
 </body>

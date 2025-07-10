@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "TDDUI"] ; # 
   fhir:title [ fhir:v "Médicosocial - Transfert de données DUI"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-07-10T13:41:14+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-07-10T14:59:37+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -877,6 +877,168 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-comment" ]
+       ] ;
+       fhir:name [ fhir:v "Commentaire" ] ;
+       fhir:description [ fhir:v "Commentaire relatif au séjour." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-admission-date> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-admission-date" ]
+       ] ;
+       fhir:name [ fhir:v "Date d’admission" ] ;
+       fhir:description [ fhir:v "Date d’admission dans la structure ESSMS." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:complex-type"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/fr-core-human-name> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-core-human-name" ]
+       ] ;
+       fhir:name [ fhir:v "FR Core Human Name Profile" ] ;
+       fhir:description [ fhir:v "Profilage du type de données HumanName pour prise en compte de la civilté au niveau de l'élément prefix et du titre au niveau de l'élément suffix\r\n.French profile of datatype HumanName with constraints on prefix and suffix" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/fr-core-patient-ins> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-core-patient-ins" ]
+       ] ;
+       fhir:name [ fhir:v "FR Core Patient INS Profile" ] ;
+       fhir:description [ fhir:v "Profil Fr Core Patient surspécifié pour être conforme aux exigences du référentiel d'Identité Nationale de Santé (INS)." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/fr-core-patient> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-core-patient" ]
+       ] ;
+       fhir:name [ fhir:v "FR Core Patient Profile" ] ;
+       fhir:description [ fhir:v "Profile of the Patient resource for France. This profile specifies the patient's identifiers for France. It uses international extensions (birtplace and nationality) and adds specific French extensions.\n\r\nCe profil spécifie les identifiants de patient utilisés en France. Il utilise des extensions internationales (birthplace et nationalité) et ajoute des extensions propres à la France.)" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/JDV-J78-Civilite-RASS-DUI> ;
+         fhir:reference [ fhir:v "ValueSet/JDV-J78-Civilite-RASS-DUI" ]
+       ] ;
+       fhir:name [ fhir:v "JDV_J78_Civilite_RASS-DUI" ] ;
+       fhir:description [ fhir:v "Civilités des personnes physiques du RASS" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-mode-label> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-entry-mode-label" ]
+       ] ;
+       fhir:name [ fhir:v "Libellé mode d'entrée" ] ;
+       fhir:description [ fhir:v "Libellé du mode d’entée du séjour." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exit-mode-label> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-exit-mode-label" ]
+       ] ;
+       fhir:name [ fhir:v "Libellé mode d'entrée" ] ;
+       fhir:description [ fhir:v "Libellé du mode de sortie du séjour." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/fr-core-patient-multiple-birth-r5> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-core-patient-multiple-birth-r5" ]
+       ] ;
+       fhir:name [ fhir:v "Rang Gémellaire" ] ;
+       fhir:description [ fhir:v "Extension crée pour exprimer le rang gémellaire, notamment utle dans le cadre des attestations de droits à l'assurance maladie. Cette extension implemente l'élément PatientMultipleBirth de R5 https://www.hl7.org/fhir/patient-definitions.html#Patient.multipleBirth_x." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
@@ -904,6 +1066,42 @@
        ] ;
        fhir:name [ fhir:v "TDDUI Document Reference" ] ;
        fhir:description [ fhir:v "Profil générique créé dans le contexte du transfert de données DUI pour véhiculer un document au format CDA, inclus dans DocumentReference.attachment.data." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-Encounter> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-Encounter" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Encounter" ] ;
+       fhir:description [ fhir:v "Profil générique créé dans le contexte du transfert de données DUI pour véhiculer un lot de documents au format CDA." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-Organization> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-Organization" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Organization" ] ;
+       fhir:description [ fhir:v "Profil générique créé dans le contexte du transfert de données DUI pour véhiculer un lot de documents au format CDA." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
