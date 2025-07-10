@@ -1675,7 +1675,7 @@ Cette classe décrit le statut des ressources (Evenement, Evaluation).
 <table style="width:100%">
 <tr>
   <th>Attribut</th>
-  <th>Utilisé pour SSIAD</th>
+  <th>Utilisé pour cas d'usage SSIAD</th>
 </tr>
 <tr>
   <td>matriculeINS</td>
@@ -1740,7 +1740,7 @@ Cette classe décrit le statut des ressources (Evenement, Evaluation).
 <table style="width:100%">
 <tr>
   <th>Attribut</th>
-  <th>Utilisé pour SSIAD</th>
+  <th>Utilisé pour cas d'usage SSIAD</th>
 </tr>
 <tr>
   <td>numeroVoie</td>
@@ -1766,7 +1766,7 @@ Cette classe décrit le statut des ressources (Evenement, Evaluation).
 <table style="width:100%">
 <tr>
   <th>Attribut</th>
-  <th>Utilisé pour SSIAD</th>
+  <th>Utilisé pour cas d'usage SSIAD</th>
 </tr>
 <tr>
   <td>idSejour</td>
@@ -1788,15 +1788,163 @@ Cette classe décrit le statut des ressources (Evenement, Evaluation).
   <td>dateEntree</td>
  <td>Oui</td>
 </tr>
+<tr>
+  <td>modeSortie</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>dateSortie</td>
+ <td>Oui</td>
+</tr>
 </table>
 
 #### Partie Accompagnement
 
 ##### Mapping Evaluation
 
+<table style="width:100%">
+<tr>
+  <th>Attribut</th>
+  <th>Utilisé pour cas d'usage SSIAD</th>
+</tr>
+<tr>
+  <td>idEvaluation</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>typeEvaluation</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>statut de l'évaluation</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>dateEvaluation</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>professionnel réalisant l'évaluation</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>idNat_PS Identifiant de l'évaluateur</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>idNat_Struct Identifiant de l'établissement de rattachement de l'évaluateur</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>composants du détail de l'évaluation</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>pieceJointeEvaluation</td>
+ <td>Oui</td>
+</tr>
+</table>
+
+###### Mapping Détail Evaluation (niveau 1,2)
+
+<table style="width:100%">
+<tr>
+  <th>Attribut</th>
+  <th>Utilisé pour cas d'usage SSIAD</th>
+</tr>
+<tr>
+  <td>champsEvalue</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>champsEvalue</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>resultatChampsEvalue</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>statut du détail de l'évaluation</td>
+ <td>Oui</td>
+</tr>
+</table>
+
 #### Partie Coordination des acteurs
 
 ##### Mapping Evènement de l'agenda
+
+<table style="width:100%">
+<tr>
+  <th>Attribut</th>
+  <th>Utilisé pour cas d'usage SSIAD</th>
+</tr>
+<tr>
+  <td>idEvenement</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>typeEvenement</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>libelleEvenement</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>dateDebutEvenement</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>dateFinEvenement</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>lieuEvenement</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>structureEnCharge</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>Fonction (rôle et mode d'exercice) du professionnel ayant réalisé l'évènement</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>Nom et prénom du professionnel ayant réalisé l'évènement</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>Etablissement de rattachement du professionnel</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>Caractéristiques de l'évènement (Commentaire, pièce jointe, transport de l'usager, statut métier de l'évènement, transport d'un professionnel ayant participé à l'évènement)</td>
+ <td>Non</td>
+</tr>
+</table>
+
+###### Mapping Statut de l'évènement
+
+<table style="width:100%">
+<tr>
+  <th>Attribut</th>
+  <th>Utilisé pour cas d'usage SSIAD</th>
+</tr>
+<tr>
+  <td>identifiant du statut</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>code du statut</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>date du statut</td>
+ <td>Non</td>
+</tr>
+</table>
 
 #### Partie Structure
 
@@ -1805,7 +1953,7 @@ Cette classe décrit le statut des ressources (Evenement, Evaluation).
 <table style="width:100%">
 <tr>
   <th>Attribut</th>
-  <th>Utilisé pour SSIAD</th>
+  <th>Utilisé pour cas d'usage SSIAD</th>
 </tr>
 <tr>
   <td>idNat_Struct</td>
