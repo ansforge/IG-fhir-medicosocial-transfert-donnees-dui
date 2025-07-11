@@ -1670,12 +1670,14 @@ Cette classe décrit le statut des ressources (Evenement, Evaluation).
 
 ### Contraintes par cas d'usage sur le modèle DUI
 
+ Dans les tableaux ci-dessous il est précisé pour chaque cas d'usage, les données du DUI qui sont réellement utilisées.
+
 #### Mapping Usager
 
 <table style="width:100%">
 <tr>
   <th>Attribut</th>
-  <th>Utilisé pour cas d'usage SSIAD</th>
+  <th>Utilisé pour le cas d'usage SSIAD</th>
 </tr>
 <tr>
   <td>matriculeINS</td>
@@ -1740,7 +1742,7 @@ Cette classe décrit le statut des ressources (Evenement, Evaluation).
 <table style="width:100%">
 <tr>
   <th>Attribut</th>
-  <th>Utilisé pour cas d'usage SSIAD</th>
+  <th>Utilisé pour le cas d'usage SSIAD</th>
 </tr>
 <tr>
   <td>numeroVoie</td>
@@ -1766,7 +1768,7 @@ Cette classe décrit le statut des ressources (Evenement, Evaluation).
 <table style="width:100%">
 <tr>
   <th>Attribut</th>
-  <th>Utilisé pour cas d'usage SSIAD</th>
+  <th>Utilisé pour le cas d'usage SSIAD</th>
 </tr>
 <tr>
   <td>idSejour</td>
@@ -1805,7 +1807,7 @@ Cette classe décrit le statut des ressources (Evenement, Evaluation).
 <table style="width:100%">
 <tr>
   <th>Attribut</th>
-  <th>Utilisé pour cas d'usage SSIAD</th>
+  <th>Utilisé pour le cas d'usage SSIAD</th>
 </tr>
 <tr>
   <td>idEvaluation</td>
@@ -1850,7 +1852,7 @@ Cette classe décrit le statut des ressources (Evenement, Evaluation).
 <table style="width:100%">
 <tr>
   <th>Attribut</th>
-  <th>Utilisé pour cas d'usage SSIAD</th>
+  <th>Utilisé pour le cas d'usage SSIAD</th>
 </tr>
 <tr>
   <td>champsEvalue</td>
@@ -1877,7 +1879,7 @@ Cette classe décrit le statut des ressources (Evenement, Evaluation).
 <table style="width:100%">
 <tr>
   <th>Attribut</th>
-  <th>Utilisé pour cas d'usage SSIAD</th>
+  <th>Utilisé pour le cas d'usage SSIAD</th>
 </tr>
 <tr>
   <td>idEvenement</td>
@@ -1930,7 +1932,7 @@ Cette classe décrit le statut des ressources (Evenement, Evaluation).
 <table style="width:100%">
 <tr>
   <th>Attribut</th>
-  <th>Utilisé pour cas d'usage SSIAD</th>
+  <th>Utilisé pour le cas d'usage SSIAD</th>
 </tr>
 <tr>
   <td>identifiant du statut</td>
@@ -1953,7 +1955,7 @@ Cette classe décrit le statut des ressources (Evenement, Evaluation).
 <table style="width:100%">
 <tr>
   <th>Attribut</th>
-  <th>Utilisé pour cas d'usage SSIAD</th>
+  <th>Utilisé pour le cas d'usage SSIAD</th>
 </tr>
 <tr>
   <td>idNat_Struct</td>
@@ -1968,4 +1970,3 @@ Cette classe décrit le statut des ressources (Evenement, Evaluation).
  <td>Oui</td>
 </tr>
 </table>
-
