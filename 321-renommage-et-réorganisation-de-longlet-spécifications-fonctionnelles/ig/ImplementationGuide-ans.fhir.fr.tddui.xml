@@ -10,7 +10,7 @@
   <name value="TDDUI"/>
   <title value="Médicosocial - Transfert de données DUI"/>
   <status value="active"/>
-  <date value="2025-07-11T07:23:13+00:00"/>
+  <date value="2025-07-11T08:11:52+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -50,10 +50,10 @@
     <packageId value="hl7.fhir.fr.core"/>
     <version value="2.1.0"/>
   </dependsOn>
-  <dependsOn id="ans_fr_nos">
-    <uri value="https://interop.esante.gouv.fr/ig/nos/ImplementationGuide/ans.fr.nos"/>
-    <packageId value="ans.fr.nos"/>
-    <version value="1.4.0"/>
+  <dependsOn id="ans_fr_terminologies">
+    <uri value="https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies"/>
+    <packageId value="ans.fr.terminologies"/>
+    <version value="1.1.0"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -565,10 +565,10 @@
         <generation value="markdown"/>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="sfe_cadre_juridique.html"/>
+            <valueUrl value="sfe_cas_usage.html"/>
           </extension>
-          <nameUrl value="sfe_cadre_juridique.html"/>
-          <title value="Cadre juridique et orientations organisationnelles"/>
+          <nameUrl value="sfe_cas_usage.html"/>
+          <title value="Cas d'usage"/>
           <generation value="markdown"/>
         </page>
         <page>
