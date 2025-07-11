@@ -322,11 +322,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div class="markdown-toc">
 <ul id="markdown-toc">
   <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
-  <li><a href="#lectorat-cible" id="markdown-toc-lectorat-cible">Lectorat cible</a></li>
-  <li><a href="#utilisation" id="markdown-toc-utilisation">Utilisation</a></li>
-  <li><a href="#standards-utilisés" id="markdown-toc-standards-utilisés">Standards utilisés</a></li>
-  <li><a href="#flux" id="markdown-toc-flux">Flux</a></li>
-  <li><a href="#dépendances" id="markdown-toc-dépendances">Dépendances</a></li>
+  <li><a href="#la-spécification-technique-de-contenu---sections-contenu-du-dossier-et-ressources-de-conformité" id="markdown-toc-la-spécification-technique-de-contenu---sections-contenu-du-dossier-et-ressources-de-conformité">La spécification technique de contenu :  sections <a href="contenu_dossier.html">Contenu du dossier</a> et <a href="ressources_cda.html">Ressources de conformité</a></a>    <ul>
+      <li><a href="#lectorat-cible" id="markdown-toc-lectorat-cible">Lectorat cible</a></li>
+      <li><a href="#utilisation" id="markdown-toc-utilisation">Utilisation</a></li>
+      <li><a href="#standards-utilisés" id="markdown-toc-standards-utilisés">Standards utilisés</a></li>
+      <li><a href="#flux" id="markdown-toc-flux">Flux</a></li>
+      <li><a href="#dépendances" id="markdown-toc-dépendances">Dépendances</a></li>
+    </ul>
+  </li>
 </ul>
 
 </div>
@@ -358,17 +361,25 @@ The aim of this implementation guide is to define the specifications for DUI dat
 <ul>
   <li>L'étude des normes et standards au format pdf : <a href="NormesStandards_TransfertDonneesDUI_V1.0.pdf">Etude des normes et standards</a></li>
   <li>Les spécifications fonctionnelles : section <a href="sfe.html"> Spécifications fonctionnelles</a></li>
-  <li>La spécification technique de contenu : sections <a href="contenu_dossier.html">Contenu du dossier</a> et <a href="ressources_cda.html">Ressources de conformité</a></li>
-  <li>La spécification technique de transport : sections <a href="description_flux.html">Description des flux</a> et <a href="artifacts.html">Ressources de conformité</a></li>
+  <li>
+    <h2 id="la-spécification-technique-de-contenu---sections-contenu-du-dossier-et-ressources-de-conformité">La spécification technique de contenu :  sections <a href="contenu_dossier.html">Contenu du dossier</a> et <a href="ressources_cda.html">Ressources de conformité</a></h2>
+    <p>il existe 2 représentations techniques pour le contenu de l'export des données du DUI :</p>
+  </li>
+  <li>une représentation basée sur le standard FHIR.
+Afin de s’aligner sur les recommandations européennes et pour s’adapter aux évolutions des cas d’usage du volet « Médicosocial – Transfert de données DUI »</li>
 </ul>
 
-<p><b>Remarque</b> : l'actuelle version de la spécification technique de contenu repose sur un périmètre restreint d'export des données de logiciels DUI :</p>
+<p>Cette représentation FHIR décrite dans ce guide est à privilégier pour toute nouvelle implémentation.</p>
+
 <ul>
-  <li>NIR/traits d'identité principaux du patient ;</li>
-  <li>évaluation de l'autonomie de l'usager accompagnée (ou non) de ses grilles d'évaluation structurées ou non structurées ;</li>
-  <li>évènements de l'agenda usager organisés par l’ESSMS entrant dans la thérapie de l’usager ;</li>
-  <li>transports de l'usager associé aux évènements de l'agenda usager ;</li>
-  <li>informations sur le séjour de l'usager.</li>
+  <li>
+    <p>une représentation basée sur le standard CDA qui est spécifiée dans le guide « Médicosocial - Transfert de données DUI CDA ». Ce guide est restreint au cas d'usage SSIAD.
+Les évolutions de ce guide d’implémentation sont limitées à des corrections techniques. Ce guide d'implementation sera déprécié lorsque la transition des éditeurs de CDA vers FHIR sera achevée.
+–</p>
+  </li>
+  <li>
+    <p>La spécification technique de transport : sections <a href="description_flux.html">Description des flux</a> et <a href="artifacts.html">Ressources de conformité</a></p>
+  </li>
 </ul>
 
 <h3 id="lectorat-cible">Lectorat cible</h3>
@@ -522,7 +533,7 @@ The aim of this implementation guide is to define the specifications for DUI dat
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 11, 2025 14:30+0000">2025-07-11</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 11, 2025 15:41+0000">2025-07-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
