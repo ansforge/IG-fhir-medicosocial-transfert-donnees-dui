@@ -1,8 +1,8 @@
-Cette section décrit, **à titre d'exemple et de façon non exhaustive**, un ensemble de cas d'usage correspondant à l’expression des besoins définis lors des ateliers avec la CNSA.
+Cette section décrit, **à titre d'exemple et de façon non exhaustive**, un ensemble de cas d'usage correspondant à l’expression des besoins définis lors des ateliers avec la CNSA et les acteurs du médico-social.
 
 <blockquote class="stu-note">
     <p>
-    <b>Point d'attention</b>Les cas d’usage doivent s’appuyer sur une assise juridique afin de légitimer le transfert des données notamment si ce dernier comporte des données personnelles ou médicales. Cet aspect est de la responsabilité des acteurs qui utilisent cette spécification. Cette dernière n’a pas vocation à légitimer les traitements des données.
+    <b>Point d'attention</b> Les cas d’usage doivent s’appuyer sur une assise juridique afin de légitimer le transfert des données notamment si ce dernier comporte des données personnelles ou médicales. Cet aspect est de la responsabilité des acteurs qui utilisent cette spécification. Cette dernière n’a pas vocation à légitimer les traitements des données.
     </p>
 </blockquote>
 
