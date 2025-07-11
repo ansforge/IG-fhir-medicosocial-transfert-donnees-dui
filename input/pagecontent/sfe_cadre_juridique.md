@@ -16,6 +16,12 @@ Le détail des échanges entre les acteurs est quant à lui décrit dans la part
 Les cas d’usage décrits ci-dessous correspondent à ceux pour lesquels le périmètre a été défini, ce qui n’exclut pas d'ajouter d’autres cas d’usage au fur et à mesure des besoins.
 Pour illustration, les cas d’usage suivants ont été identifiés :
 * Transférer les données d’un DUI vers un SI-tiers pour renforcer la connaissance et le pilotage de la branche grâce aux données (financières, activités des ESMS…) :
-   * Transférer des données aux tutelles (CNSA, CNAM, ARS, CD, etc.).
+   
+
+
+
+
+
+   
 
 Les cas d’usage doivent s’appuyer sur une assise juridique afin de légitimer le transfert des données notamment si ce dernier comporte des données personnelles ou médicales. Cet aspect est de la responsabilité des acteurs qui utilisent cette spécification. Cette dernière n’a pas vocation à légitimer les traitements des données.
