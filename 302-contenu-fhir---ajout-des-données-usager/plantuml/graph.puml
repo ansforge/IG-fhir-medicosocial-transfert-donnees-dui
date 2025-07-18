@@ -7,12 +7,6 @@ package IG #DDDDDD{
 
      package Profiles #DDDDDD{
 
-        class FRCoreHumanNameProfile{
-
-             HumanName.extension:assemblyOrder => <&plus>[0..1]
-             HumanName.prefix => [None..1]
-        } 
-
         class TDDUIEncounter{
 
              Encounter.extension => [None..None]
@@ -166,10 +160,6 @@ package IG #DDDDDD{
        }
 
 package "Ressources de base" #palegreen {
-
- class "HumanName" as  class95e0fecbaf28f967a098167115412fc6 
-
-    class95e0fecbaf28f967a098167115412fc6 --> FRCoreHumanNameProfile
 
  class "Encounter" as  classd1e9f9f891de8f9a655739a01fbf68f0 
 
