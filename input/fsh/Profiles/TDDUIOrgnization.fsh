@@ -2,5 +2,5 @@ Profile: TDDUIOrganization
 Parent: FRCoreOrganizationProfile
 Id: tddui-Organization
 Title: "TDDUI Organization"
-Description: "Profil générique créé dans le contexte du transfert de données DUI pour véhiculer un lot de documents au format CDA." 
+Description: "Profil de la ressource FRCoreOrganizationProfile permettant de représenter les entités juridiques." 
 * identifier[idNatSt] 1..1

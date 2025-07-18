@@ -2,7 +2,7 @@ Profile: TDDUIEncounter
 Parent: Encounter
 Id: tddui-Encounter
 Title: "TDDUI Encounter"
-Description: "Profil générique créé dans le contexte du transfert de données DUI pour véhiculer un lot de documents au format CDA." 
+Description: "Profil de la ressource Encounter permettant de regrouper les informations relatives au séjour d'un usager dans une structure ESSMS" 
 // Identifiant
 * identifier 1..*
 * identifier ^slicing.discriminator.type = #pattern
@@ -13,7 +13,9 @@ Description: "Profil générique créé dans le contexte du transfert de donnée
     idStay 1..1 and
     idAdminStay 0..1 and
     idProvenanceStay 0..1
- 
+* identifier[idStay] ^short = "Identifiant métier unique du séjour"
+* identifier[idAdminStay] ^short = "Numéro de dossier administratif du séjour"
+* identifier[idProvenanceStay] ^short = "Numéro de dossier administratif dans l'ESSMS de provenance"
 // Usager
 * subject 1..1
 * subject only Reference(FRCorePatientProfile or FRCorePatientINSProfile)

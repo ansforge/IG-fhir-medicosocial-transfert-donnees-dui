@@ -13,13 +13,13 @@ Description: "Profil de la ressource FRCorePatientINSProfile permettant de repr�
     
 * identifier[localIdentifier] ^short = "Identifiant local de l’usager au sein de la structure. Cet identifiant est obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature TRE_G08-TypeIdentifiantPersonne), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS) : 3+FINESS/identifiantLocalUsagerESSMS"
 * identifier[localIdentifier].use = #usual
-* identifier[localIdentifier].type = http://terminology.hl7.org/CodeSystem/v2-0203#PLI "Patient local identifier"
+* identifier[localIdentifier].type = TDDUIIdentifier#PLI "Patient local identifier"
 * identifier[localIdentifier].system 1..
 * identifier[localIdentifier].value 1..
 
 * identifier[initialNumber] ^short = "Numéro de l’individu attribué par la MDPH ayant créé le dossier Individu (= MDPH initiale)."
 * identifier[initialNumber].use = #usual
-* identifier[initialNumber].type = http://terminology.hl7.org/CodeSystem/v2-0203#PIN "Patient initial number"
+* identifier[initialNumber].type = TDDUIIdentifier#PIN "Patient initial number"
 * identifier[initialNumber].system 1..
 * identifier[initialNumber].value 1..
 
