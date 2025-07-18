@@ -1,9 +1,9 @@
 TDDUI : Validation Results
 =========================================
 
-err = 4, warn = 82, info = 21
+err = 0, warn = 81, info = 21
 IG Publisher Version: 2.0.9
-Generated Fri Jul 18 13:30:50 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.tddui#1.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/tddui)
+Generated Fri Jul 18 14:10:42 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.tddui#1.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/tddui)
  Build Errors : 0 / 34 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Bundle-TDDUIBundleExample : 0 / 0 / 7
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CapabilityStatement-TDDUIConsommateur : 0 / 1 / 1
@@ -18,10 +18,10 @@ Generated Fri Jul 18 13:30:50 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.tddui
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-bundle : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-comment : 0 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-documentreference : 0 / 25 / 15
- /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-entry-mode-label : 0 / 2 / 1
+ /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-entry-mode-label : 0 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-exit-mode-label : 0 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-patient : 0 / 4 / 2
- /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-patient-ins : 4 / 2 / 1
+ /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-patient-ins : 0 / 2 / 1
 </table>
 == n/a ==
 INFORMATION: /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/output/cda/terminology.html: The html source does not contain the publish box; this is recommended for publishing support
@@ -131,7 +131,6 @@ INFORMATION: StructureDefinition/tddui-documentreference: StructureDefinition.sn
 INFORMATION: StructureDefinition/tddui-documentreference: StructureDefinition.snapshot.element[59].constraint[1]: The constraint 'constr-bind-ProducteurDoc-simplified' has no computable expression, so validators will not be able to check it
 INFORMATION: StructureDefinition/tddui-documentreference: StructureDefinition.snapshot.element[60].constraint[1]: The constraint 'constr-bind-ProducteurDoc-simplified' has no computable expression, so validators will not be able to check it
 == fsh-generated/resources/StructureDefinition-tddui-entry-mode-label.json ==
-WARNING: StructureDefinition/tddui-entry-mode-label: StructureDefinition.context[0]: Review the extension type for tddui-entry-mode-label: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-mode-label'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-tddui-exit-mode-label.json ==
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exit-mode-label'): The Implementation Guide contains no examples for this extension
@@ -143,8 +142,4 @@ WARNING: StructureDefinition/tddui-patient: StructureDefinition.snapshot.element
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-tddui-patient-ins.json ==
 WARNING: StructureDefinition/tddui-patient-ins: StructureDefinition.snapshot.element[22].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/patient-birthPlace'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.1.0, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/patient-birthPlace' to 'http://hl7.org/fhir/StructureDefinition/patient-birthPlace|5.2.0'
-ERROR: StructureDefinition/tddui-patient-ins: StructureDefinition.snapshot.element[127].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'PLI' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/v2-0203' version '5.0.0'
-ERROR: StructureDefinition/tddui-patient-ins: StructureDefinition.snapshot.element[136].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Patient initial number' for http://terminology.hl7.org/CodeSystem/v2-0203#PIN. Valid display is 'Premises Identifier Number (US Official)' (for the language(s) 'fr-FR')
-ERROR: StructureDefinition/tddui-patient-ins: StructureDefinition.differential.element[8].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'PLI' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/v2-0203' version '5.0.0'
-ERROR: StructureDefinition/tddui-patient-ins: StructureDefinition.differential.element[13].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Patient initial number' for http://terminology.hl7.org/CodeSystem/v2-0203#PIN. Valid display is 'Premises Identifier Number (US Official)' (for the language(s) 'fr-FR')
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins'): The Implementation Guide contains no examples for this profile

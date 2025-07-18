@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "TDDUI"] ; # 
   fhir:title [ fhir:v "Médicosocial - Transfert de données DUI"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-07-18T13:28:33+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-07-18T14:08:23+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -1011,7 +1011,7 @@
          fhir:reference [ fhir:v "StructureDefinition/tddui-Encounter" ]
        ] ;
        fhir:name [ fhir:v "TDDUI Encounter" ] ;
-       fhir:description [ fhir:v "Profil générique créé dans le contexte du transfert de données DUI pour véhiculer un lot de documents au format CDA." ] ;
+       fhir:description [ fhir:v "Profil de la ressource Encounter permettant de regrouper les informations relatives au séjour d'un usager dans une structure ESSMS" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1047,7 +1047,7 @@
          fhir:reference [ fhir:v "StructureDefinition/tddui-Organization" ]
        ] ;
        fhir:name [ fhir:v "TDDUI Organization" ] ;
-       fhir:description [ fhir:v "Profil générique créé dans le contexte du transfert de données DUI pour véhiculer un lot de documents au format CDA." ] ;
+       fhir:description [ fhir:v "Profil de la ressource FRCoreOrganizationProfile permettant de représenter les entités juridiques." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false

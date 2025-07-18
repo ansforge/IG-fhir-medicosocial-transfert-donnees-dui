@@ -60,13 +60,13 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","",,"open","Encounter.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.identifier",".id","FiveWs.identifier","PV1-19"
 "Encounter.identifier:idStay","Encounter.identifier","idStay","","",1,1,"","","Y","Identifier {[]} {[]}
-","Identifier(s) by which this encounter is known","Identifier(s) by which this encounter is known.","","","","","","","","","",,,,,"",,,,"Encounter.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Identifiant métier unique du séjour","Identifier(s) by which this encounter is known.","","","","","","","","","",,,,,"",,,,"Encounter.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.identifier",".id","FiveWs.identifier","PV1-19"
 "Encounter.identifier:idAdminStay","Encounter.identifier","idAdminStay","","",0,1,"","","Y","Identifier {[]} {[]}
-","Identifier(s) by which this encounter is known","Identifier(s) by which this encounter is known.","","","","","","","","","",,,,,"",,,,"Encounter.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Numéro de dossier administratif du séjour","Identifier(s) by which this encounter is known.","","","","","","","","","",,,,,"",,,,"Encounter.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.identifier",".id","FiveWs.identifier","PV1-19"
 "Encounter.identifier:idProvenanceStay","Encounter.identifier","idProvenanceStay","","",0,1,"","","Y","Identifier {[]} {[]}
-","Identifier(s) by which this encounter is known","Identifier(s) by which this encounter is known.","","","","","","","","","",,,,,"",,,,"Encounter.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Numéro de dossier administratif dans l'ESSMS de provenance","Identifier(s) by which this encounter is known.","","","","","","","","","",,,,,"",,,,"Encounter.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.identifier",".id","FiveWs.identifier","PV1-19"
 "Encounter.status","Encounter.status","","","",1,1,"","Y","Y","code {[]} {[]}
 ","planned | arrived | triaged | in-progress | onleave | finished | cancelled +","planned | arrived | triaged | in-progress | onleave | finished | cancelled +.","Note that internal business rules will determine the appropriate transitions that may occur between statuses (and also classes).","","","","","","","","",,"required","Current state of the encounter.","http://hl7.org/fhir/ValueSet/encounter-status|4.0.1","",,,,"Encounter.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
