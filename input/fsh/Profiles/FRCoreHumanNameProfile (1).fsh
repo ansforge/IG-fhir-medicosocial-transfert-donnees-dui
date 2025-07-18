@@ -11,6 +11,5 @@ Description: "Profilage du type de données HumanName pour prise en compte de la
 * extension contains $humanname-assembly-order named assemblyOrder 0..1
 
 * prefix ..1
-* prefix from JDV-J78-Civilite-RASS-DUI (extensible)
+* prefix from $JDV-J245-Civilite-CISIS (required)
 * prefix ^binding.description = "Civilités des personnes physiques"
-
