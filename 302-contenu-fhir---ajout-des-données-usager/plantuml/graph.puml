@@ -1,0 +1,198 @@
+@startuml
+set namespaceSeparator ?
+hide circle
+hide class fields
+
+package IG #DDDDDD{
+
+     package Profiles #DDDDDD{
+
+        class FRCoreHumanNameProfile{
+
+             HumanName.extension:assemblyOrder => <&plus>[0..1]
+             HumanName.prefix => [None..1]
+        } 
+
+        class TDDUIEncounter{
+
+             Encounter.extension => [None..None]
+             Encounter.extension:TDDUI-plannedStartDate-r5 => <&plus>[0..1]
+             Encounter.extension:TDDUI-plannedEndDate-r5 => <&plus>[0..1]
+             Encounter.extension:TDDUIAdmissionDate => <&plus>[0..1]
+             Encounter.extension:TDDUIEntryModelabel => <&plus>[0..1]
+             Encounter.extension:TDDUIExitModeLabel => <&plus>[0..1]
+             Encounter.extension:TDDUIComment => <&plus>[0..1]
+             Encounter.identifier => [1..None]
+             Encounter.identifier:idStay => [1..1]
+             Encounter.identifier:idAdminStay => [0..1]
+             Encounter.identifier:idProvenanceStay => [0..1]
+             Encounter.subject => [1..None]
+             Encounter.serviceProvider => [1..None]
+        } 
+
+        class TDDUIOrganization{
+
+             Organization => [None..None]
+             Organization.identifier => [1..None]
+             Organization.identifier:idNatSt => [1..None]
+        } 
+
+        class TDDUIBundle{
+
+             Bundle.type => [None..None]
+             Bundle.entry => [1..None]
+             Bundle.entry:DUIDocumentReference => [1..*]
+             Bundle.entry:DUIDocumentReference.resource => [1..None]
+             Bundle.entry:DUIDocumentReference.request => [1..None]
+             Bundle.entry:DUIDocumentReference.request.method => [None..None]
+        } 
+
+        class TDDUIDocumentReference{
+
+             DocumentReference.meta.versionId => [None..None]
+             DocumentReference.modifierExtension => [None..0]
+             DocumentReference.masterIdentifier => [1..None]
+             DocumentReference.identifier => [None..0]
+             DocumentReference.status => [None..None]
+             DocumentReference.docStatus => [None..0]
+             DocumentReference.type => [None..None]
+             DocumentReference.category => [None..1]
+             DocumentReference.subject => [None..None]
+             DocumentReference.date => [None..None]
+             DocumentReference.author => [None..None]
+             DocumentReference.authenticator => [None..None]
+             DocumentReference.relatesTo => [None..None]
+             DocumentReference.description => [None..None]
+             DocumentReference.securityLabel => [None..None]
+             DocumentReference.content => [None..1]
+             DocumentReference.content.attachment.contentType => [1..None]
+             DocumentReference.content.attachment.language => [None..None]
+             DocumentReference.content.attachment.data => [1..None]
+             DocumentReference.content.attachment.url => [None..0]
+             DocumentReference.content.attachment.size => [None..None]
+             DocumentReference.content.attachment.hash => [None..None]
+             DocumentReference.content.attachment.title => [1..None]
+             DocumentReference.content.attachment.creation => [None..None]
+             DocumentReference.content.format => [None..None]
+             DocumentReference.context => [None..None]
+             DocumentReference.context.event => [None..1]
+             DocumentReference.context.period => [None..None]
+             DocumentReference.context.facilityType => [None..None]
+             DocumentReference.context.practiceSetting => [None..None]
+             DocumentReference.context.sourcePatientInfo => [None..None]
+        } 
+
+        class TDDUIPatientINS{
+
+             Patient => [None..None]
+             Patient.meta.profile:tddui-patient-canonical => [0..1]
+             Patient.identifier:INS-NIR => [None..1]
+             Patient.identifier:INS-NIR-TEST => [None..1]
+             Patient.identifier:INS-NIR-DEMO => [None..1]
+             Patient.identifier:INS-NIA => [None..1]
+             Patient.identifier:localIdentifier => [0..1]
+             Patient.identifier:localIdentifier.use => [None..None]
+             Patient.identifier:localIdentifier.type => [1..None]
+             Patient.identifier:localIdentifier.system => [1..None]
+             Patient.identifier:localIdentifier.value => [1..None]
+             Patient.identifier:initialNumber => [0..1]
+             Patient.identifier:initialNumber.use => [None..None]
+             Patient.identifier:initialNumber.type => [1..None]
+             Patient.identifier:initialNumber.system => [1..None]
+             Patient.identifier:initialNumber.value => [1..None]
+        } 
+
+        class TDDUIPatient{
+
+             Patient => [None..None]
+             Patient.identifier:localIdentifier => [0..1]
+             Patient.identifier:localIdentifier.use => [None..None]
+             Patient.identifier:localIdentifier.type => [1..None]
+             Patient.identifier:localIdentifier.system => [1..None]
+             Patient.identifier:localIdentifier.value => [1..None]
+             Patient.identifier:initialNumber => [0..1]
+             Patient.identifier:initialNumber.use => [None..None]
+             Patient.identifier:initialNumber.type => [1..None]
+             Patient.identifier:initialNumber.system => [1..None]
+             Patient.identifier:initialNumber.value => [1..None]
+             Patient.name => [1..None]
+             Patient.name:officialName => [1..1]
+             Patient.gender => [None..None]
+             Patient.birthDate.extension => [1..None]
+             Patient.birthDate.extension:tddui-birth-order => <&plus>[1..1]
+         }
+
+     }
+     package extension #paleturquoise {
+
+     TDDUIEncounter -[#black,dashed,thickness=2]-> TDDUIAdmissionDate
+     TDDUIEncounter -[#black,dashed,thickness=2]-> TDDUIEntryModelabel
+     TDDUIEncounter -[#black,dashed,thickness=2]-> TDDUIExitModeLabel
+     TDDUIEncounter -[#black,dashed,thickness=2]-> TDDUIComment
+     TDDUIPatient -[#black,dashed,thickness=2]-> TDDUIBirthOrder
+
+        class TDDUIAdmissionDate{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class TDDUIBirthOrder{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class TDDUIComment{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class TDDUIEntryModelabel{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class TDDUIExitModeLabel{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+         }
+     }
+     package valueset #PaleVioletRed{
+       }
+
+package "Ressources de base" #palegreen {
+
+ class "HumanName" as  class95e0fecbaf28f967a098167115412fc6 
+
+    class95e0fecbaf28f967a098167115412fc6 --> FRCoreHumanNameProfile
+
+ class "Encounter" as  classd1e9f9f891de8f9a655739a01fbf68f0 
+
+    classd1e9f9f891de8f9a655739a01fbf68f0 --> TDDUIEncounter
+
+ class "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization" as  class7273115ddeceb35c4c7044f07f832f67 
+
+    class7273115ddeceb35c4c7044f07f832f67 --> TDDUIOrganization
+
+ class "Bundle" as  class94c51f19c37f96ed231f5a0ae512b2a8 
+
+    class94c51f19c37f96ed231f5a0ae512b2a8 --> TDDUIBundle
+
+ class "DocumentReference" as  classabc067272ee1964cc2c74c1c1a1854f5 
+
+    classabc067272ee1964cc2c74c1c1a1854f5 --> TDDUIDocumentReference
+
+ class "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins" as  class4183c8825d56dc7b36e75f7f711f8b6b 
+
+    class4183c8825d56dc7b36e75f7f711f8b6b --> TDDUIPatientINS
+
+ class "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient" as  classcb72a5551de902d7716887df67489a97 
+
+    classcb72a5551de902d7716887df67489a97 --> TDDUIPatient
+}
+@enduml

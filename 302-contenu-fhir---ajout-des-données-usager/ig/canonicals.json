@@ -1,12 +1,5 @@
 [
   {
-    "id" : "fr-core-patient-multiple-birth-r5",
-    "type" : "StructureDefinition",
-    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Patient.multipleBirth",
-    "version" : "1.1.0",
-    "name" : "FRCorePatientMultipleBirthExtension"
-  },
-  {
     "id" : "TDDUIConsommateur",
     "type" : "CapabilityStatement",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CapabilityStatement/TDDUIConsommateur",
@@ -21,6 +14,13 @@
     "name" : "TDDUIProducteur"
   },
   {
+    "id" : "tddui-identifier",
+    "type" : "CodeSystem",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-identifier",
+    "version" : "1.1.0",
+    "name" : "TDDUIIdentifier"
+  },
+  {
     "id" : "ans.fhir.fr.tddui",
     "type" : "ImplementationGuide",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui",
@@ -33,20 +33,6 @@
     "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/fr-core-human-name",
     "version" : "1.1.0",
     "name" : "FRCoreHumanNameProfile"
-  },
-  {
-    "id" : "fr-core-patient",
-    "type" : "StructureDefinition",
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/fr-core-patient",
-    "version" : "1.1.0",
-    "name" : "FRCorePatientProfile"
-  },
-  {
-    "id" : "fr-core-patient-ins",
-    "type" : "StructureDefinition",
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/fr-core-patient-ins",
-    "version" : "1.1.0",
-    "name" : "FRCorePatientINSProfile"
   },
   {
     "id" : "tddui-Encounter",
@@ -68,6 +54,13 @@
     "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-admission-date",
     "version" : "1.1.0",
     "name" : "TDDUIAdmissionDate"
+  },
+  {
+    "id" : "tddui-birth-order",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order",
+    "version" : "1.1.0",
+    "name" : "TDDUIBirthOrder"
   },
   {
     "id" : "tddui-bundle",
@@ -105,11 +98,17 @@
     "name" : "TDDUIExitModeLabel"
   },
   {
-    "id" : "JDV-J78-Civilite-RASS-DUI",
-    "type" : "ValueSet",
-    "url" : "https://mos.esante.gouv.fr/NOS/JDV_J78-Civilite-RASS/FHIR/JDV-J78-Civilite-RASS",
+    "id" : "tddui-patient",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient",
     "version" : "1.1.0",
-    "name" : "JDV_J78_Civilite_RASS-DUI",
-    "oids" : ["1.2.250.1.213.1.6.1.146"]
+    "name" : "TDDUIPatient"
+  },
+  {
+    "id" : "tddui-patient-ins",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins",
+    "version" : "1.1.0",
+    "name" : "TDDUIPatientINS"
   }
 ]

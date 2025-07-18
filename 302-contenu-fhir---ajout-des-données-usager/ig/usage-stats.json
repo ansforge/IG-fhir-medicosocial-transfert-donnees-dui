@@ -5,17 +5,17 @@
   "jurisdiction": "FR",
   "extensions": [
     {
-      "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Patient.multipleBirth",
-      "title": "Rang Gémellaire",
-      "types": [
-        "integer"
-      ]
-    },
-    {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-admission-date",
       "title": "Date d’admission",
       "types": [
         "dateTime"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order",
+      "title": "Ordre de naissance",
+      "types": [
+        "positiveInt"
       ]
     },
     {
@@ -41,16 +41,6 @@
     }
   ],
   "profiles": {
-    "Patient": [
-      {
-        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/fr-core-patient",
-        "title": "FR Core Patient Profile"
-      },
-      {
-        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/fr-core-patient-ins",
-        "title": "FR Core Patient INS Profile"
-      }
-    ],
     "Encounter": [
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-Encounter",
@@ -74,6 +64,16 @@
         "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-documentreference",
         "title": "TDDUI Document Reference"
       }
+    ],
+    "Patient": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient",
+        "title": "Usager"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins",
+        "title": "Usager INS"
+      }
     ]
   },
   "usage": {
@@ -82,9 +82,6 @@
     ],
     "http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedStartDate": [
       "Encounter"
-    ],
-    "http://hl7.org/fhir/5.0/StructureDefinition/extension-Patient.multipleBirth": [
-      "Patient"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
@@ -110,8 +107,8 @@
     "http://hl7.org/fhir/StructureDefinition/patient-birthPlace": [
       "Patient"
     ],
-    "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod": [
-      "ValueSet"
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
@@ -171,6 +168,9 @@
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-admission-date": [
       "Encounter"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order": [
+      "Patient.birthDate"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment": [
       "Encounter"

@@ -1,38 +1,6 @@
 {
   "codeSystems" : [
     {
-      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-marital-status",
-      "version" : "2.1.0",
-      "status" : "active",
-      "name" : "FRCoreValueSetMaritalStatus",
-      "title" : "FR Core ValueSet Patient gender INS ValueSet",
-      "description" : "Patient Gender for INS : male | female | unknown",
-      "systems" : [
-        "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
-        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
-        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-marital-status"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-fr-core-patient.html" : "FR Core Patient Profile"
-    },
-    {
-      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-contact-role",
-      "version" : "2.1.0",
-      "status" : "active",
-      "name" : "FRCoreValueSetPatientContactRole",
-      "title" : "FR Core ValueSet Patient contact role",
-      "description" : "ValueSet patient contact role",
-      "systems" : [
-        "http://terminology.hl7.org/CodeSystem/v2-0131",
-        "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass",
-        "https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-fr-core-patient.html" : "FR Core Patient Profile"
-    },
-    {
       "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-gender-INS",
       "version" : "2.1.0",
       "status" : "active",
@@ -42,36 +10,7 @@
       "systems" : ["http://hl7.org/fhir/administrative-gender"],
       "uses" : {
       },
-      "StructureDefinition-fr-core-patient.html" : "FR Core Patient Profile"
-    },
-    {
-      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-identifier-type",
-      "version" : "2.1.0",
-      "status" : "active",
-      "name" : "FRCoreValueSetPatientIdentifierType",
-      "title" : "FR Core ValueSet Patient identifier type",
-      "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (identification of a patient).",
-      "systems" : [
-        "http://terminology.hl7.org/CodeSystem/v2-0203",
-        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-fr-core-patient.html" : "FR Core Patient Profile"
-    },
-    {
-      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-relation-type",
-      "version" : "2.1.0",
-      "status" : "active",
-      "name" : "FRCoreValueSetPatientRelationType",
-      "title" : "FR Core ValueSet relation type",
-      "description" : "ValueSet relation type",
-      "systems" : [
-        "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-fr-core-patient.html" : "FR Core Patient Profile"
+      "StructureDefinition-tddui-patient.html" : "Usager"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS/FHIR/JDV-J02-XdsHealthcareFacilityTypeCode-CISIS",
@@ -162,33 +101,20 @@
       "StructureDefinition-tddui-documentreference.html" : "TDDUI Document Reference"
     },
     {
-      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J78-Civilite-RASS/FHIR/JDV-J78-Civilite-RASS",
-      "version" : "20221216120000",
+      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J245-Civilite-CISIS/FHIR/JDV-J245-Civilite-CISIS",
+      "version" : "20230331120000",
       "status" : "active",
-      "name" : "JDV_J78_Civilite_RASS",
+      "name" : "JDV_J245_Civilite_CISIS",
       "title" : null,
-      "description" : "Civilités des personnes physiques du RASS",
+      "description" : "Civilités CI-SIS",
       "systems" : [
         "https://mos.esante.gouv.fr/NOS/TRE_R81-Civilite/FHIR/TRE-R81-Civilite"
       ],
-      "oids" : ["1.2.250.1.213.1.6.1.146"],
-      "sources" : ["1.2.250.1.213.1.6.1.146"],
+      "oids" : ["1.2.250.1.213.1.1.5.718"],
+      "sources" : ["1.2.250.1.213.1.1.5.718"],
       "uses" : {
       },
       "StructureDefinition-fr-core-human-name.html" : "FR Core Human Name Profile"
-    },
-    {
-      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J78-Civilite-RASS/FHIR/JDV-J78-Civilite-RASS",
-      "version" : "1.1.0",
-      "status" : "active",
-      "name" : "JDV_J78_Civilite_RASS-DUI",
-      "title" : null,
-      "description" : "Civilités des personnes physiques du RASS",
-      "systems" : [
-        "https://mos.esante.gouv.fr/NOS/TRE_R81-Civilite/FHIR/TRE-R81-Civilite"
-      ],
-      "oids" : ["1.2.250.1.213.1.6.1.146"],
-      "sources" : ["1.2.250.1.213.1.6.1.146"]
     }
   ]
 }
