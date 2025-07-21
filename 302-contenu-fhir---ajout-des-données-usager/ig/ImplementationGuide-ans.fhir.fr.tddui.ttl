@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "TDDUI"] ; # 
   fhir:title [ fhir:v "Médicosocial - Transfert de données DUI"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-07-18T14:08:23+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-07-21T08:20:20+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -938,7 +938,7 @@
          fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exit-mode-label> ;
          fhir:reference [ fhir:v "StructureDefinition/tddui-exit-mode-label" ]
        ] ;
-       fhir:name [ fhir:v "Libellé mode d'entrée" ] ;
+       fhir:name [ fhir:v "Libellé mode de sortie" ] ;
        fhir:description [ fhir:v "Libellé du mode de sortie du séjour." ] ;
        fhir:example [
          a fhir:boolean ;
@@ -956,7 +956,7 @@
          fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order> ;
          fhir:reference [ fhir:v "StructureDefinition/tddui-birth-order" ]
        ] ;
-       fhir:name [ fhir:v "Ordre de naissance" ] ;
+       fhir:name [ fhir:v "Ordre de naissance dans le registre d'état civil" ] ;
        fhir:description [ fhir:v "Ordre d’enregistrement de la naissance dans le registre d’état civil de la commune de naissance pour le mois de la naissance. Il compose les 3 derniers chiffres du NIR de l'usager avant la clé de sécurité et permet de distinguer les personnes nées au même lieu et à la même période. Il est obligatoire si le NIR n'est pas transmis." ] ;
        fhir:example [
          a fhir:boolean ;
@@ -1057,6 +1057,42 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-patient" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Patient" ] ;
+       fhir:description [ fhir:v "Profil de la ressource FrCorePatientProfile permettant de représenter un usager lorsque l'INS n'est pas transmis." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-patient-ins" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Patient INS" ] ;
+       fhir:description [ fhir:v "Profil de la ressource FRCorePatientINSProfile permettant de représenter un usager lorsque l'INS est transmis." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "CapabilityStatement"
          ]
        ] ) ;
@@ -1125,42 +1161,6 @@
          a fhir:canonical ;
          fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-documentreference"^^xsd:anyURI ;
          fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-documentreference>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient> ;
-         fhir:reference [ fhir:v "StructureDefinition/tddui-patient" ]
-       ] ;
-       fhir:name [ fhir:v "Usager" ] ;
-       fhir:description [ fhir:v "Profil de la ressource FrCorePatientProfile permettant de de représenter un usager lorsque l'INS-NIR n'est pas transmis." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins> ;
-         fhir:reference [ fhir:v "StructureDefinition/tddui-patient-ins" ]
-       ] ;
-       fhir:name [ fhir:v "Usager INS" ] ;
-       fhir:description [ fhir:v "Profil de la ressource FRCorePatientINSProfile permettant de représenter un usager lorsque l'INS est transmis." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
        ]
      ] ) ;
      fhir:page [

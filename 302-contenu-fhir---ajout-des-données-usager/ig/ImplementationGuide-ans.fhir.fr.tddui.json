@@ -10,7 +10,7 @@
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2025-07-18T14:08:23+00:00",
+  "date" : "2025-07-21T08:20:20+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -682,7 +682,7 @@
       "reference" : {
         "reference" : "StructureDefinition/tddui-exit-mode-label"
       },
-      "name" : "Libellé mode d'entrée",
+      "name" : "Libellé mode de sortie",
       "description" : "Libellé du mode de sortie du séjour.",
       "exampleBoolean" : false
     },
@@ -694,7 +694,7 @@
       "reference" : {
         "reference" : "StructureDefinition/tddui-birth-order"
       },
-      "name" : "Ordre de naissance",
+      "name" : "Ordre de naissance dans le registre d'état civil",
       "description" : "Ordre d’enregistrement de la naissance dans le registre d’état civil de la commune de naissance pour le mois de la naissance. Il compose les 3 derniers chiffres du NIR de l'usager avant la clé de sécurité et permet de distinguer les personnes nées au même lieu et à la même période. Il est obligatoire si le NIR n'est pas transmis.",
       "exampleBoolean" : false
     },
@@ -761,6 +761,30 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-patient"
+      },
+      "name" : "TDDUI Patient",
+      "description" : "Profil de la ressource FrCorePatientProfile permettant de représenter un usager lorsque l'INS n'est pas transmis.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-patient-ins"
+      },
+      "name" : "TDDUI Patient INS",
+      "description" : "Profil de la ressource FRCorePatientINSProfile permettant de représenter un usager lorsque l'INS est transmis.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CapabilityStatement"
       }],
       "reference" : {
@@ -805,30 +829,6 @@
       "name" : "TDDUIDocumentReferenceExample",
       "description" : "Exemple de ressource DocumentReference suivant le profil TDDUIDocumentReference",
       "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-documentreference"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/tddui-patient"
-      },
-      "name" : "Usager",
-      "description" : "Profil de la ressource FrCorePatientProfile permettant de de représenter un usager lorsque l'INS-NIR n'est pas transmis.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/tddui-patient-ins"
-      },
-      "name" : "Usager INS",
-      "description" : "Profil de la ressource FRCorePatientINSProfile permettant de représenter un usager lorsque l'INS est transmis.",
-      "exampleBoolean" : false
     }],
     "page" : {
       "extension" : [{

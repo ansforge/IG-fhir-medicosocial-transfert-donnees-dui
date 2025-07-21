@@ -18,15 +18,12 @@ package IG #DDDDDD{
              Encounter.extension:TDDUIComment => <&plus>[0..1]
              Encounter.identifier => [1..None]
              Encounter.identifier:idStay => [1..1]
-             Encounter.identifier:idAdminStay => [0..1]
-             Encounter.identifier:idProvenanceStay => [0..1]
              Encounter.subject => [1..None]
              Encounter.serviceProvider => [1..None]
         } 
 
         class TDDUIOrganization{
 
-             Organization => [None..None]
              Organization.identifier => [1..None]
              Organization.identifier:idNatSt => [1..None]
         } 
@@ -94,6 +91,8 @@ package IG #DDDDDD{
              Patient.identifier:initialNumber.type => [1..None]
              Patient.identifier:initialNumber.system => [1..None]
              Patient.identifier:initialNumber.value => [1..None]
+             Patient.name => [None..None]
+             Patient.name:usualName => [None..1]
         } 
 
         class TDDUIPatient{
@@ -110,6 +109,7 @@ package IG #DDDDDD{
              Patient.identifier:initialNumber.system => [1..None]
              Patient.identifier:initialNumber.value => [1..None]
              Patient.name => [1..None]
+             Patient.name:usualName => [None..1]
              Patient.name:officialName => [1..1]
              Patient.gender => [None..None]
              Patient.birthDate.extension => [1..None]
