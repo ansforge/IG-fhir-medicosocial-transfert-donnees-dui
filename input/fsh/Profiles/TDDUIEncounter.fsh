@@ -10,19 +10,15 @@ Description: "Profil de la ressource Encounter permettant de regrouper les infor
 * identifier ^slicing.rules = #open
  
 * identifier contains
-    idStay 1..1 and
-    idAdminStay 0..1 and
-    idProvenanceStay 0..1
+    idStay 1..1
 * identifier[idStay] ^short = "Identifiant métier unique du séjour"
-* identifier[idAdminStay] ^short = "Numéro de dossier administratif du séjour"
-* identifier[idProvenanceStay] ^short = "Numéro de dossier administratif dans l'ESSMS de provenance"
 // Usager
 * subject 1..1
 * subject only Reference(FRCorePatientProfile or FRCorePatientINSProfile)
  
 // ESSMS
 * serviceProvider 1..1
-* serviceProvider only Reference(FRCoreOrganizationProfile)
+* serviceProvider only Reference(TDDUIOrganization)
 
 * extension contains
     $plannedStartDate-r5 named TDDUI-plannedStartDate-r5 0..1 and

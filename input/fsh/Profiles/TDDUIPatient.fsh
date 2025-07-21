@@ -1,8 +1,8 @@
 Profile: TDDUIPatient
 Parent: FRCorePatientProfile
 Id: tddui-patient
-Title: "Usager"
-Description: "Profil de la ressource FrCorePatientProfile permettant de de représenter un usager lorsque l'INS-NIR n'est pas transmis."
+Title: "TDDUI Patient"
+Description: "Profil de la ressource FrCorePatientProfile permettant de représenter un usager lorsque l'INS n'est pas transmis."
 
 * identifier contains
     localIdentifier 0..1 and
@@ -29,6 +29,7 @@ Description: "Profil de la ressource FrCorePatientProfile permettant de de repr�
 * gender ^short = "male | female | unknown"
 
 * name[officialName] 1..1
+* name[usualName] 0..1
 
 * name obeys prefix-restriction
 

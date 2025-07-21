@@ -1,7 +1,7 @@
 Profile: TDDUIPatientINS
 Parent: FRCorePatientINSProfile
 Id: tddui-patient-ins
-Title: "Usager INS"
+Title: "TDDUI Patient INS"
 Description: "Profil de la ressource FRCorePatientINSProfile permettant de repr√©senter un usager lorsque l'INS est transmis."
 
 * meta.profile contains tddui-patient-canonical 0..1
@@ -27,3 +27,6 @@ Description: "Profil de la ressource FRCorePatientINSProfile permettant de repr√
 * identifier[INS-NIR-TEST] 0..1
 * identifier[INS-NIR-DEMO] 0..1
 * identifier[INS-NIA] 0..1
+
+* name[usualName] 0..1
+* name obeys prefix-restriction
