@@ -1,6 +1,6 @@
-Profile: TDDUIEncounter
+Profile: TDDUIEncounterSejour
 Parent: Encounter
-Id: tddui-Encounter
+Id: tddui-Encounter-sejour
 Title: "TDDUI Encounter"
 Description: "Profil de la ressource Encounter permettant de regrouper les informations relatives au séjour d'un usager dans une structure ESSMS" 
 // Identifiant
@@ -12,9 +12,10 @@ Description: "Profil de la ressource Encounter permettant de regrouper les infor
 * identifier contains
     idStay 1..1
 * identifier[idStay] ^short = "Identifiant métier unique du séjour"
+* identifier[idStay].type = TDDUIEncounterIdentifier#SEJ "Identifiant du séjour"
 // Usager
 * subject 1..1
-* subject only Reference(FRCorePatientProfile or FRCorePatientINSProfile)
+* subject only Reference(TDDUIPatient or TDDUIPatientINS)
  
 // ESSMS
 * serviceProvider 1..1
@@ -29,11 +30,11 @@ Description: "Profil de la ressource Encounter permettant de regrouper les infor
     TDDUIComment named TDDUIComment 0..1
 
 * extension[TDDUI-plannedStartDate-r5].valueDateTime 0..1
-* extension[TDDUI-plannedStartDate-r5] ^short = ""
+* extension[TDDUI-plannedStartDate-r5] ^short = "The planned start date/time (or admission date) of the encounter"
 * extension[TDDUI-plannedStartDate-r5] ^definition = ""
 
 * extension[TDDUI-plannedEndDate-r5].valueDateTime 0..1
-* extension[TDDUI-plannedEndDate-r5] ^short = ""
+* extension[TDDUI-plannedEndDate-r5] ^short = "The planned end date/time (or admission date) of the encounter"
 * extension[TDDUI-plannedEndDate-r5] ^definition = ""
 
 * extension[TDDUIAdmissionDate] ^short = ""

@@ -30,10 +30,4 @@ Description: "Profil de la ressource FrCorePatientProfile permettant de représe
 
 * name[officialName] 1..1
 * name[usualName] 0..1
-
-* name obeys prefix-restriction
-
-Invariant: prefix-restriction
-Description: "La civilité est limitée à Monsieur ou Madame."
-Expression: "prefix.empty() or (prefix = 'Monsieur' or prefix = 'Madame')"
-Severity: #error
+* name only tddui-humanname
