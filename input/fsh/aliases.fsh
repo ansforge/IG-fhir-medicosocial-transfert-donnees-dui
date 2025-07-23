@@ -74,7 +74,7 @@ Alias: $oxygensat = http://hl7.org/fhir/StructureDefinition/oxygensat
 Alias: $humanname-assembly-order = http://hl7.org/fhir/StructureDefinition/humanname-assembly-order
 Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo
 Alias: $ServiceType = http://terminology.hl7.org/CodeSystem/service-type
-
+Alias: $imposeProfile = http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile
 
 
 // ###############
