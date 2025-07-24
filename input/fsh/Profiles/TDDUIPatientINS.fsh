@@ -18,3 +18,4 @@ Description: "Profil de la ressource FRCorePatientINSProfile permettant de repr√
 * identifier[INS-NIA] 0..1
 
 * name[usualName] 0..1
+* name only tddui-humanname
