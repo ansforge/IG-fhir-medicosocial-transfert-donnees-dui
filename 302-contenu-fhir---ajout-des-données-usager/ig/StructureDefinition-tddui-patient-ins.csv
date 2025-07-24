@@ -506,11 +506,11 @@ It is often used to filter patient lists to exclude inactive patients
 
 Deceased patients may also be marked as inactive for the same reasons, but may be active for some time after death.","If a record is inactive, and linked to an active record, then future patient/record updates should occur on the other patient.","Need to be able to mark a patient record as not to be used because it was created in error.","","This resource is generally assumed to be active if no value is provided for the active element","","","","","",,,,,"",,,,"Patient.active",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","statusCode","n/a","FiveWs.status"
-"Patient.name","Patient.name","","","",1,*,"","","Y","HumanName {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-human-name]]} {[]}
+"Patient.name","Patient.name","","","",1,*,"","","Y","HumanName {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name]]} {[]}
 ","A name associated with the patient","A name associated with the individual.","A patient may have multiple names with different uses or applicable periods. For animals, the name is a ""HumanName"" in the sense that is assigned and used by humans and has the same patterns.","Need to be able to track the patient by multiple names. Examples are your official name and a partner name.","","","","","","","",,,,,"","value:use}
 ","",,"open","Patient.name",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","name",".patient.name","PID-5, PID-9"
-"Patient.name:usualName","Patient.name","usualName","","",0,1,"","","Y","HumanName {[]} {[]}
+"Patient.name:usualName","Patient.name","usualName","","",0,1,"","","Y","HumanName {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name]]} {[]}
 ","Name of a human | Nom utilisé","A human's name with the ability to identify parts and usage | Le nom utilisé (usual) n’est transmis que s’il est défini (par exemple nom marital du conjoint).","A patient may have multiple names with different uses or applicable periods. For animals, the name is a ""HumanName"" in the sense that is assigned and used by humans and has the same patterns.","Need to be able to track the patient by multiple names. Examples are your official name and a partner name.","","","","","","","",,,,,"",,,,"Patient.name",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","name",".patient.name","PID-5, PID-9"
 "Patient.name:usualName.id","Patient.name.id","","","",0,1,"","","","string {[]} {[]}
@@ -543,7 +543,7 @@ middle name","",0,*,"","","Y","string {[]} {[]}
 "Patient.name:usualName.period","Patient.name.period","","","",0,1,"","","Y","Period {[]} {[]}
 ","Time period when name was/is in use","Indicates the period of time when this name was valid for the named person.","","Allows names to be placed in historical context.","","","","","","","",,,,,"",,,,"HumanName.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./usablePeriod[type=""IVL<TS>""]","XPN.13 + XPN.14"
-"Patient.name:officialName","Patient.name","officialName","","",1,1,"Y","","Y","HumanName {[]} {[]}
+"Patient.name:officialName","Patient.name","officialName","","",1,1,"Y","","Y","HumanName {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name]]} {[]}
 ","Name of a human | Nom de naissance","A human's name with the ability to identify parts and usage | Le nom de naissance (official) est obligatoire dans le cas où l’on véhicule l’INS et que l’identité est qualifiée (celui-ci ne doit pas être altéré).","A patient may have multiple names with different uses or applicable periods. For animals, the name is a ""HumanName"" in the sense that is assigned and used by humans and has the same patterns.","Need to be able to track the patient by multiple names. Examples are your official name and a partner name.","","","","","","","",,,,,"",,,,"Patient.name",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","name",".patient.name","PID-5, PID-9"
 "Patient.name:officialName.id","Patient.name.id","","","",0,1,"","","","string {[]} {[]}
