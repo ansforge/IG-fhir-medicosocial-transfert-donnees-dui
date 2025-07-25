@@ -35,8 +35,7 @@ Dans la continuité des travaux menés dans le cadre du programme ESMS numériqu
 Ce guide d'implémentation contient : 
 - L'étude des normes et standards au format pdf : [Etude des normes et standards](NormesStandards_TransfertDonneesDUI_V1.0.pdf)
 - Les spécifications fonctionnelles : section <a href="sfe.html"> Spécifications fonctionnelles</a>
-- La spécification technique de contenu : sections <a href="contenu_dossier.html">Contenu du dossier</a> et <a href="ressources_cda.html">Ressources de conformité</a>
-- La spécification technique de transport : sections <a href="description_flux.html">Description des flux</a> et <a href="artifacts.html">Ressources de conformité</a>
+- Les spécifications techniques : sections <a href="description_flux.html">Volume 2 - Détail des transactions</a> et <a href="artifacts.html">Ressources de conformité</a>
 
 <b>Remarque</b> : l'actuelle version de la spécification technique de contenu repose sur un périmètre restreint d'export des données de logiciels DUI :
 - NIR/traits d'identité principaux du patient ;
@@ -71,7 +70,6 @@ Les ressources profilées dans le cadre de ce guide d'implémentation sont les s
 
 | Ressource | Profil | Description |
 | ----- | ----- | ----- |
-| <a href="https://hl7.org/fhir/R4/documentreference.html">DocumentReference</a> | [TDDUIDocumentReference](StructureDefinition-tddui-documentreference.html) | Profil générique créé dans le contexte du transfert de données DUI pour véhiculer un document au format CDA (inspiré du flux <a href="https://interop.esante.gouv.fr/ig/fhir/pdsm/3.0.1/StructureDefinition-pdsm-simplified-publish.html">PDSm Simplified Publish</a>) |
 | <a href="https://hl7.org/fhir/R4/bundle.html">Bundle</a> | [TDDUIBundle](StructureDefinition-tddui-bundle.html) | Profil générique créé dans le contexte du transfert de données DUI pour véhiculer un lot de documents au format CDA |
 
 ### Flux
@@ -81,8 +79,6 @@ Les flux décrits dans ce guide d'implémentation sont les suivants.
 | Flux | Emetteur | Récepteur |
 | ----- | ----- | ----- |
 | <a href="description_flux_1_ajout_doc.html">Flux 1 : Ajout d'un document</a> | Logiciel DUI | Logiciel DUI ou SI tiers |
-| <a href="description_flux_2_ajout_lot_doc.html">Flux 2 : Ajout d'un lot de documents</a> | Logiciel DUI | Logiciel DUI ou SI tiers |
-| <a href="description_flux_3_maj_doc.html">Flux 3 : Mise a jour d'un document</a> | Logiciel DUI | Logiciel DUI ou SI tiers |
 
 Pour en savoir davantage, rendez-vous sur la page <a href="description_flux_synthese.html">Synthèse des flux</a>.
 
