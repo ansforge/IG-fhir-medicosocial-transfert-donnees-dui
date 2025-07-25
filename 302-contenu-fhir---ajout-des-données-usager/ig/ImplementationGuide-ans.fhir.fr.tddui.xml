@@ -10,7 +10,7 @@
   <name value="TDDUI"/>
   <title value="Médicosocial - Transfert de données DUI"/>
   <status value="active"/>
-  <date value="2025-07-24T14:41:36+00:00"/>
+  <date value="2025-07-25T06:57:33+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -499,17 +499,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:complex-type"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/tddui-human-name"/>
-      </reference>
-      <name value="FR Core Human Name Profile"/>
-      <description value="French profile of datatype HumanName with constraints on prefix and suffix | Profilage du type de données HumanName pour prise en compte de la civilté au niveau de l'élément prefix et du titre au niveau de l'élément suffix"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -594,6 +583,17 @@
       </reference>
       <name value="TDDUI FR Core CodeSystem v2-0203"/>
       <description value="TDDUI Patient's identifier"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-human-name"/>
+      </reference>
+      <name value="TDDUI Human Name DataType"/>
+      <description value="French profile of datatype HumanName with constraints on prefix and suffix | Profilage du type de données HumanName pour prise en compte de la civilté au niveau de l'élément prefix et du titre au niveau de l'élément suffix"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
