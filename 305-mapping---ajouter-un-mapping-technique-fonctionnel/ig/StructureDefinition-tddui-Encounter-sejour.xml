@@ -27,7 +27,7 @@
   <name value="TDDUIEncounterSejour"/>
   <title value="TDDUI Encounter Sejour"/>
   <status value="active"/>
-  <date value="2025-07-25T07:19:42+00:00"/>
+  <date value="2025-07-25T10:27:14+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -45,6 +45,11 @@
     </coding>
   </jurisdiction>
   <fhirVersion value="4.0.1"/>
+  <mapping>
+    <identity value="specmetier-to-TDDUIEncounterSejour"/>
+    <uri value="https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"/>
+    <name value="Séjours "/>
+  </mapping>
   <mapping>
     <identity value="workflow"/>
     <uri value="http://hl7.org/fhir/workflow"/>
@@ -134,6 +139,10 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
+      <mapping>
+        <identity value="specmetier-to-TDDUIEncounterSejour"/>
+        <map value="Sejour"/>
+      </mapping>
       <mapping>
         <identity value="rim"/>
         <map value="Entity. Role, or Act"/>
@@ -393,6 +402,10 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
       <mapping>
+        <identity value="specmetier-to-TDDUIEncounterSejour"/>
+        <map value="dateEntreePrevisionnelle"/>
+      </mapping>
+      <mapping>
         <identity value="rim"/>
         <map value="n/a"/>
       </mapping>
@@ -437,6 +450,10 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
       <mapping>
+        <identity value="specmetier-to-TDDUIEncounterSejour"/>
+        <map value="dateSortiePrevisionnelle"/>
+      </mapping>
+      <mapping>
         <identity value="rim"/>
         <map value="n/a"/>
       </mapping>
@@ -480,6 +497,10 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
+      <mapping>
+        <identity value="specmetier-to-TDDUIEncounterSejour"/>
+        <map value="dateEntree"/>
+      </mapping>
     </element>
     <element id="Encounter.extension:TDDUIEntryModelabel">
       <path value="Encounter.extension"/>
@@ -516,6 +537,10 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
+      <mapping>
+        <identity value="specmetier-to-TDDUIEncounterSejour"/>
+        <map value="libelleModeEntree"/>
+      </mapping>
     </element>
     <element id="Encounter.extension:TDDUIExitModeLabel">
       <path value="Encounter.extension"/>
@@ -552,6 +577,10 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
+      <mapping>
+        <identity value="specmetier-to-TDDUIEncounterSejour"/>
+        <map value="libelleModeSortie"/>
+      </mapping>
     </element>
     <element id="Encounter.extension:TDDUIComment">
       <path value="Encounter.extension"/>
@@ -588,6 +617,10 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
+      <mapping>
+        <identity value="specmetier-to-TDDUIEncounterSejour"/>
+        <map value="commentaire"/>
+      </mapping>
     </element>
     <element id="Encounter.modifierExtension">
       <path value="Encounter.modifierExtension"/>
@@ -704,6 +737,10 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="true"/>
+      <mapping>
+        <identity value="specmetier-to-TDDUIEncounterSejour"/>
+        <map value="idSejour"/>
+      </mapping>
       <mapping>
         <identity value="workflow"/>
         <map value="Event.identifier"/>
@@ -1720,6 +1757,10 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="true"/>
+      <mapping>
+        <identity value="specmetier-to-TDDUIEncounterSejour"/>
+        <map value="Usager"/>
+      </mapping>
       <mapping>
         <identity value="workflow"/>
         <map value="Event.subject"/>
@@ -3377,6 +3418,10 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
       <mapping>
+        <identity value="specmetier-to-TDDUIEncounterSejour"/>
+        <map value="ESSMS"/>
+      </mapping>
+      <mapping>
         <identity value="workflow"/>
         <map value="Event.performer.actor"/>
       </mapping>
@@ -3431,6 +3476,10 @@
   <differential>
     <element id="Encounter">
       <path value="Encounter"/>
+      <mapping>
+        <identity value="specmetier-to-TDDUIEncounterSejour"/>
+        <map value="Sejour"/>
+      </mapping>
     </element>
     <element id="Encounter.extension">
       <path value="Encounter.extension"/>
@@ -3454,6 +3503,10 @@
         <code value="Extension"/>
         <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedStartDate"/>
       </type>
+      <mapping>
+        <identity value="specmetier-to-TDDUIEncounterSejour"/>
+        <map value="dateEntreePrevisionnelle"/>
+      </mapping>
     </element>
     <element id="Encounter.extension:TDDUI-plannedEndDate-r5">
       <path value="Encounter.extension"/>
@@ -3466,6 +3519,10 @@
         <code value="Extension"/>
         <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedEndDate"/>
       </type>
+      <mapping>
+        <identity value="specmetier-to-TDDUIEncounterSejour"/>
+        <map value="dateSortiePrevisionnelle"/>
+      </mapping>
     </element>
     <element id="Encounter.extension:TDDUIAdmissionDate">
       <path value="Encounter.extension"/>
@@ -3477,6 +3534,10 @@
         <code value="Extension"/>
         <profile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-admission-date"/>
       </type>
+      <mapping>
+        <identity value="specmetier-to-TDDUIEncounterSejour"/>
+        <map value="dateEntree"/>
+      </mapping>
     </element>
     <element id="Encounter.extension:TDDUIEntryModelabel">
       <path value="Encounter.extension"/>
@@ -3488,6 +3549,10 @@
         <code value="Extension"/>
         <profile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-mode-label"/>
       </type>
+      <mapping>
+        <identity value="specmetier-to-TDDUIEncounterSejour"/>
+        <map value="libelleModeEntree"/>
+      </mapping>
     </element>
     <element id="Encounter.extension:TDDUIExitModeLabel">
       <path value="Encounter.extension"/>
@@ -3499,6 +3564,10 @@
         <code value="Extension"/>
         <profile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exit-mode-label"/>
       </type>
+      <mapping>
+        <identity value="specmetier-to-TDDUIEncounterSejour"/>
+        <map value="libelleModeSortie"/>
+      </mapping>
     </element>
     <element id="Encounter.extension:TDDUIComment">
       <path value="Encounter.extension"/>
@@ -3510,6 +3579,10 @@
         <code value="Extension"/>
         <profile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment"/>
       </type>
+      <mapping>
+        <identity value="specmetier-to-TDDUIEncounterSejour"/>
+        <map value="commentaire"/>
+      </mapping>
     </element>
     <element id="Encounter.identifier">
       <path value="Encounter.identifier"/>
@@ -3528,6 +3601,10 @@
       <short value="Identifiant métier unique du séjour"/>
       <min value="1"/>
       <max value="1"/>
+      <mapping>
+        <identity value="specmetier-to-TDDUIEncounterSejour"/>
+        <map value="idSejour"/>
+      </mapping>
     </element>
     <element id="Encounter.identifier:idStay.type">
       <path value="Encounter.identifier.type"/>
@@ -3548,6 +3625,10 @@
         <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient"/>
         <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"/>
       </type>
+      <mapping>
+        <identity value="specmetier-to-TDDUIEncounterSejour"/>
+        <map value="Usager"/>
+      </mapping>
     </element>
     <element id="Encounter.serviceProvider">
       <path value="Encounter.serviceProvider"/>
@@ -3556,6 +3637,10 @@
         <code value="Reference"/>
         <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-Organization"/>
       </type>
+      <mapping>
+        <identity value="specmetier-to-TDDUIEncounterSejour"/>
+        <map value="ESSMS"/>
+      </mapping>
     </element>
   </differential>
 </StructureDefinition>

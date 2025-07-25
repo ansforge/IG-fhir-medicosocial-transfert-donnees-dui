@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "TDDUIEncounterSejour"] ; # 
   fhir:title [ fhir:v "TDDUI Encounter Sejour"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-07-25T07:19:42+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-07-25T10:27:14+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -37,6 +37,10 @@
   ] ) ; # 
   fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
   fhir:mapping ( [
+     fhir:identity [ fhir:v "specmetier-to-TDDUIEncounterSejour" ] ;
+     fhir:uri [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"^^xsd:anyURI ] ;
+     fhir:name [ fhir:v "Séjours " ]
+  ] [
      fhir:identity [ fhir:v "workflow" ] ;
      fhir:uri [ fhir:v "http://hl7.org/fhir/workflow"^^xsd:anyURI ] ;
      fhir:name [ fhir:v "Workflow Pattern" ]
@@ -149,6 +153,9 @@
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUIEncounterSejour" ] ;
+         fhir:map [ fhir:v "Sejour" ]
+       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "Entity. Role, or Act" ]
        ] [
@@ -440,6 +447,9 @@
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUIEncounterSejour" ] ;
+         fhir:map [ fhir:v "dateEntreePrevisionnelle" ]
+       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "n/a" ]
        ] [
@@ -491,6 +501,9 @@
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUIEncounterSejour" ] ;
+         fhir:map [ fhir:v "dateSortiePrevisionnelle" ]
+       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "n/a" ]
        ] [
@@ -540,7 +553,11 @@
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
-       fhir:isSummary [ fhir:v false ]
+       fhir:isSummary [ fhir:v false ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUIEncounterSejour" ] ;
+         fhir:map [ fhir:v "dateEntree" ]
+       ] )
      ] [
        fhir:id [ fhir:v "Encounter.extension:TDDUIEntryModelabel" ] ;
        fhir:path [ fhir:v "Encounter.extension" ] ;
@@ -584,7 +601,11 @@
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
-       fhir:isSummary [ fhir:v false ]
+       fhir:isSummary [ fhir:v false ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUIEncounterSejour" ] ;
+         fhir:map [ fhir:v "libelleModeEntree" ]
+       ] )
      ] [
        fhir:id [ fhir:v "Encounter.extension:TDDUIExitModeLabel" ] ;
        fhir:path [ fhir:v "Encounter.extension" ] ;
@@ -628,7 +649,11 @@
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
-       fhir:isSummary [ fhir:v false ]
+       fhir:isSummary [ fhir:v false ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUIEncounterSejour" ] ;
+         fhir:map [ fhir:v "libelleModeSortie" ]
+       ] )
      ] [
        fhir:id [ fhir:v "Encounter.extension:TDDUIComment" ] ;
        fhir:path [ fhir:v "Encounter.extension" ] ;
@@ -672,7 +697,11 @@
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
-       fhir:isSummary [ fhir:v false ]
+       fhir:isSummary [ fhir:v false ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUIEncounterSejour" ] ;
+         fhir:map [ fhir:v "commentaire" ]
+       ] )
      ] [
        fhir:id [ fhir:v "Encounter.modifierExtension" ] ;
        fhir:path [ fhir:v "Encounter.modifierExtension" ] ;
@@ -797,6 +826,9 @@
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUIEncounterSejour" ] ;
+         fhir:map [ fhir:v "idSejour" ]
+       ] [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Event.identifier" ]
        ] [
@@ -1950,6 +1982,9 @@
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUIEncounterSejour" ] ;
+         fhir:map [ fhir:v "Usager" ]
+       ] [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Event.subject" ]
        ] [
@@ -3825,6 +3860,9 @@
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUIEncounterSejour" ] ;
+         fhir:map [ fhir:v "ESSMS" ]
+       ] [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Event.performer.actor" ]
        ] [
@@ -3886,7 +3924,11 @@
   fhir:differential [
      fhir:element ( [
        fhir:id [ fhir:v "Encounter" ] ;
-       fhir:path [ fhir:v "Encounter" ]
+       fhir:path [ fhir:v "Encounter" ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUIEncounterSejour" ] ;
+         fhir:map [ fhir:v "Sejour" ]
+       ] )
      ] [
        fhir:id [ fhir:v "Encounter.extension" ] ;
        fhir:path [ fhir:v "Encounter.extension" ] ;
@@ -3912,6 +3954,10 @@
            fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedStartDate"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedStartDate>
          ] )
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUIEncounterSejour" ] ;
+         fhir:map [ fhir:v "dateEntreePrevisionnelle" ]
        ] )
      ] [
        fhir:id [ fhir:v "Encounter.extension:TDDUI-plannedEndDate-r5" ] ;
@@ -3927,6 +3973,10 @@
            fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedEndDate"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedEndDate>
          ] )
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUIEncounterSejour" ] ;
+         fhir:map [ fhir:v "dateSortiePrevisionnelle" ]
        ] )
      ] [
        fhir:id [ fhir:v "Encounter.extension:TDDUIAdmissionDate" ] ;
@@ -3941,6 +3991,10 @@
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-admission-date"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-admission-date>
          ] )
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUIEncounterSejour" ] ;
+         fhir:map [ fhir:v "dateEntree" ]
        ] )
      ] [
        fhir:id [ fhir:v "Encounter.extension:TDDUIEntryModelabel" ] ;
@@ -3955,6 +4009,10 @@
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-mode-label"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-mode-label>
          ] )
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUIEncounterSejour" ] ;
+         fhir:map [ fhir:v "libelleModeEntree" ]
        ] )
      ] [
        fhir:id [ fhir:v "Encounter.extension:TDDUIExitModeLabel" ] ;
@@ -3969,6 +4027,10 @@
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exit-mode-label"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exit-mode-label>
          ] )
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUIEncounterSejour" ] ;
+         fhir:map [ fhir:v "libelleModeSortie" ]
        ] )
      ] [
        fhir:id [ fhir:v "Encounter.extension:TDDUIComment" ] ;
@@ -3983,6 +4045,10 @@
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment>
          ] )
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUIEncounterSejour" ] ;
+         fhir:map [ fhir:v "commentaire" ]
        ] )
      ] [
        fhir:id [ fhir:v "Encounter.identifier" ] ;
@@ -4001,7 +4067,11 @@
        fhir:sliceName [ fhir:v "idStay" ] ;
        fhir:short [ fhir:v "Identifiant métier unique du séjour" ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ]
+       fhir:max [ fhir:v "1" ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUIEncounterSejour" ] ;
+         fhir:map [ fhir:v "idSejour" ]
+       ] )
      ] [
        fhir:id [ fhir:v "Encounter.identifier:idStay.type" ] ;
        fhir:path [ fhir:v "Encounter.identifier.type" ] ;
@@ -4027,6 +4097,10 @@
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins>
          ] )
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUIEncounterSejour" ] ;
+         fhir:map [ fhir:v "Usager" ]
        ] )
      ] [
        fhir:id [ fhir:v "Encounter.serviceProvider" ] ;
@@ -4038,6 +4112,10 @@
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-Organization"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-Organization>
          ] )
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUIEncounterSejour" ] ;
+         fhir:map [ fhir:v "ESSMS" ]
        ] )
      ] )
   ] . # 

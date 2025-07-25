@@ -10,7 +10,7 @@
   "name" : "TDDUIEncounterSejour",
   "title" : "TDDUI Encounter Sejour",
   "status" : "active",
-  "date" : "2025-07-25T07:19:42+00:00",
+  "date" : "2025-07-25T10:27:14+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -29,6 +29,11 @@
   }],
   "fhirVersion" : "4.0.1",
   "mapping" : [{
+    "identity" : "specmetier-to-TDDUIEncounterSejour",
+    "uri" : "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html",
+    "name" : "Séjours "
+  },
+  {
     "identity" : "workflow",
     "uri" : "http://hl7.org/fhir/workflow",
     "name" : "Workflow Pattern"
@@ -122,6 +127,10 @@
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
+        "identity" : "specmetier-to-TDDUIEncounterSejour",
+        "map" : "Sejour"
+      },
+      {
         "identity" : "rim",
         "map" : "Entity. Role, or Act"
       },
@@ -391,6 +400,10 @@
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
+        "identity" : "specmetier-to-TDDUIEncounterSejour",
+        "map" : "dateEntreePrevisionnelle"
+      },
+      {
         "identity" : "rim",
         "map" : "n/a"
       },
@@ -436,6 +449,10 @@
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
+        "identity" : "specmetier-to-TDDUIEncounterSejour",
+        "map" : "dateSortiePrevisionnelle"
+      },
+      {
         "identity" : "rim",
         "map" : "n/a"
       },
@@ -479,7 +496,11 @@
         "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
       }],
       "isModifier" : false,
-      "isSummary" : false
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIEncounterSejour",
+        "map" : "dateEntree"
+      }]
     },
     {
       "id" : "Encounter.extension:TDDUIEntryModelabel",
@@ -516,7 +537,11 @@
         "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
       }],
       "isModifier" : false,
-      "isSummary" : false
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIEncounterSejour",
+        "map" : "libelleModeEntree"
+      }]
     },
     {
       "id" : "Encounter.extension:TDDUIExitModeLabel",
@@ -553,7 +578,11 @@
         "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
       }],
       "isModifier" : false,
-      "isSummary" : false
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIEncounterSejour",
+        "map" : "libelleModeSortie"
+      }]
     },
     {
       "id" : "Encounter.extension:TDDUIComment",
@@ -590,7 +619,11 @@
         "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
       }],
       "isModifier" : false,
-      "isSummary" : false
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIEncounterSejour",
+        "map" : "commentaire"
+      }]
     },
     {
       "id" : "Encounter.modifierExtension",
@@ -711,6 +744,10 @@
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
+        "identity" : "specmetier-to-TDDUIEncounterSejour",
+        "map" : "idSejour"
+      },
+      {
         "identity" : "workflow",
         "map" : "Event.identifier"
       },
@@ -1765,6 +1802,10 @@
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
+        "identity" : "specmetier-to-TDDUIEncounterSejour",
+        "map" : "Usager"
+      },
+      {
         "identity" : "workflow",
         "map" : "Event.subject"
       },
@@ -3480,6 +3521,10 @@
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
+        "identity" : "specmetier-to-TDDUIEncounterSejour",
+        "map" : "ESSMS"
+      },
+      {
         "identity" : "workflow",
         "map" : "Event.performer.actor"
       },
@@ -3536,7 +3581,11 @@
   "differential" : {
     "element" : [{
       "id" : "Encounter",
-      "path" : "Encounter"
+      "path" : "Encounter",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIEncounterSejour",
+        "map" : "Sejour"
+      }]
     },
     {
       "id" : "Encounter.extension",
@@ -3561,6 +3610,10 @@
       "type" : [{
         "code" : "Extension",
         "profile" : ["http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedStartDate"]
+      }],
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIEncounterSejour",
+        "map" : "dateEntreePrevisionnelle"
       }]
     },
     {
@@ -3574,6 +3627,10 @@
       "type" : [{
         "code" : "Extension",
         "profile" : ["http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedEndDate"]
+      }],
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIEncounterSejour",
+        "map" : "dateSortiePrevisionnelle"
       }]
     },
     {
@@ -3586,6 +3643,10 @@
       "type" : [{
         "code" : "Extension",
         "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-admission-date"]
+      }],
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIEncounterSejour",
+        "map" : "dateEntree"
       }]
     },
     {
@@ -3598,6 +3659,10 @@
       "type" : [{
         "code" : "Extension",
         "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-mode-label"]
+      }],
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIEncounterSejour",
+        "map" : "libelleModeEntree"
       }]
     },
     {
@@ -3610,6 +3675,10 @@
       "type" : [{
         "code" : "Extension",
         "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exit-mode-label"]
+      }],
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIEncounterSejour",
+        "map" : "libelleModeSortie"
       }]
     },
     {
@@ -3622,6 +3691,10 @@
       "type" : [{
         "code" : "Extension",
         "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment"]
+      }],
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIEncounterSejour",
+        "map" : "commentaire"
       }]
     },
     {
@@ -3642,7 +3715,11 @@
       "sliceName" : "idStay",
       "short" : "Identifiant métier unique du séjour",
       "min" : 1,
-      "max" : "1"
+      "max" : "1",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIEncounterSejour",
+        "map" : "idSejour"
+      }]
     },
     {
       "id" : "Encounter.identifier:idStay.type",
@@ -3664,6 +3741,10 @@
         "code" : "Reference",
         "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient",
         "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"]
+      }],
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIEncounterSejour",
+        "map" : "Usager"
       }]
     },
     {
@@ -3673,6 +3754,10 @@
       "type" : [{
         "code" : "Reference",
         "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-Organization"]
+      }],
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIEncounterSejour",
+        "map" : "ESSMS"
       }]
     }]
   }
