@@ -6,7 +6,6 @@ Description: "TDDUI Patient's identifier"
 
 * ^caseSensitive = true
 * ^content = #complete
-* #PLI "Patient local identifier"
 * #PIN "Patient initial number"
 // SCS profile
 * ^experimental = false
