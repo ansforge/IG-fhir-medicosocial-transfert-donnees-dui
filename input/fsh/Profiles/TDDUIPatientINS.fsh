@@ -24,8 +24,8 @@ Mapping:  ConceptMetier_TDDUIPatientINS
 Source:   TDDUIPatientINS
 Target: "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"
 Id:       specmetier-to-TDDUIPatientINS
-Title:    "UsagerINS"
-* -> "Usager INS"
+Title:    "Modèle de contenu DUI"
+* -> "UsagerINS"
  
 * identifier[INS-NIR] -> "matriculeINS"
 * identifier[INS-NIA] -> "matriculeINS"
@@ -40,5 +40,5 @@ Title:    "UsagerINS"
 * name[officialName].prefix -> "civilite"
 * gender -> "sexe"
 * birthDate -> "dateNaissance"
-* extension[birthPlace].valueAddress.extension[inseeCode] -> "codeCommuneNaissance"
+* extension[birthPlace].valueAddress.extension[inseeCode] -> "communeNaissance"
 * extension[birthPlace].valueAddress.country -> "paysNaissance"

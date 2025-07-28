@@ -21,7 +21,7 @@ Mapping:  ConceptMetier_TDDUIPatient
 Source:   TDDUIPatient
 Target: "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"
 Id:       specmetier-to-TDDUIPatient
-Title:    "Usager"
+Title:    "Modèle de contenu DUI"
 * -> "Usager"
  
 * identifier[NSS] -> "numSecuriteSociale"
@@ -36,5 +36,5 @@ Title:    "Usager"
 * gender -> "sexe"
 * birthDate -> "dateNaissance"
 * birthDate.extension[tddui-birth-order] -> "ordreNaissance"
-* extension[birthPlace].valueAddress.extension[inseeCode] -> "codeCommuneNaissance"
+* extension[birthPlace].valueAddress.extension[inseeCode] -> "communeNaissance"
 * extension[birthPlace].valueAddress.country -> "paysNaissance"

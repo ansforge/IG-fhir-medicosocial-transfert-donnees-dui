@@ -1,0 +1,33 @@
+@startuml
+
+map "<&layers> name:usualName" as nameusualName #back:WhiteSmoke;header:LightGray {
+    nomUsage => family
+    prenomUtilise => given
+}
+
+map "<&layers> name:officialName" as nameofficialName #back:WhiteSmoke;header:LightGray {
+    prenom => <&plus> birth-list-given-name
+    nomNaissance => family
+    premierPrenomActeNaissance => given
+    civilite => prefix
+}
+
+map "dateNaissance : birthDate" as dateNaissance #back:WhiteSmoke;header:LightGray {
+    ordreNaissance => <&plus> tddui-birth-order
+}
+
+map "**Usager : TDDUIPatient**" as Usager #back:TECHNOLOGY;header:LimeGreen {
+    paysNaissance => <&plus> birthPlace.value[x].country
+    communeNaissance => <&plus> birthPlace.value[x].extension:inseeCode
+    numSecuriteSociale => <&layers> identifier:NSS
+    identifiantLocalUsagerESSMS => <&layers> identifier:PI
+    numeroIndividuInitial => <&layers> identifier:InitialNumberMDPH
+    sexe => gender
+    <&layers> name:usualName *-> nameusualName
+    <&layers> name:officialName *-> nameofficialName
+    dateNaissance => birthDate
+}
+
+Usager::dateNaissance -u-> dateNaissance
+
+@enduml

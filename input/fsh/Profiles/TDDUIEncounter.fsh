@@ -46,7 +46,7 @@ Mapping:  ConceptMetier_TDDUIEncounterSejour
 Source:   TDDUIEncounterSejour
 Target: "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"
 Id:       specmetier-to-TDDUIEncounterSejour
-Title:    "Séjours "
+Title:    "Modèle de contenu DUI"
 * -> "Sejour"
  
 * identifier[idStay] -> "idSejour"
@@ -54,7 +54,7 @@ Title:    "Séjours "
 * serviceProvider -> "EntiteJuridique"
 * extension[TDDUI-plannedStartDate-r5] -> "dateEntreePrevisionnelle"
 * extension[TDDUI-plannedEndDate-r5] -> "dateSortiePrevisionnelle"
-* extension[TDDUIAdmissionDate] -> "dateEntree"
+* extension[TDDUIAdmissionDate] -> "dateAdmission"
 * extension[TDDUIEntryModelabel] -> "libelleModeEntree"
 * extension[TDDUIExitModeLabel] -> "libelleModeSortie"
 * extension[TDDUIComment] -> "commentaire"

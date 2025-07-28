@@ -9,7 +9,7 @@ Mapping:  ConceptMetier_TDDUIOganization
 Source:   TDDUIOrganization
 Target: "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"
 Id:       specmetier-to-TDDUIOrganization
-Title:    "ESSMS Entités juridiques"
+Title:    "Modèle de contenu DUI"
 * -> "EntiteJuridique"
 * name -> "raisonSocial"
 * identifier[idNatSt] -> "idNat_Struct"
