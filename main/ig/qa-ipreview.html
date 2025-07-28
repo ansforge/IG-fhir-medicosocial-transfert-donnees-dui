@@ -8,6 +8,18 @@
     <h2>Unattributed Code Systems</h2>
     <ul>
       <li>
+        <a href="StructureDefinition-tddui-patient.html">
+<code>https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203</code>        </a>
+      </li>
+      <li>
+        <a href="StructureDefinition-tddui-Encounter-sejour.html">
+<code>https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier</code>        </a>
+      </li>
+      <li>
+        <a href="StructureDefinition-tddui-patient.html">
+<code>https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-identifier</code>        </a>
+      </li>
+      <li>
         <a href="DocumentReference-TDDUIDocumentReferenceExample.html">
 <code>https://mos.esante.gouv.fr/NOS/TRE_A03-ClasseDocument/FHIR/TRE-A03-ClasseDocument</code>        </a>
       </li>
@@ -37,10 +49,11 @@ ISO Maintains the copyright on the country codes, and controls it's use carefull
               <li>
                 <a href="http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>
 :                 <a href="index.html">TDDUI</a>
-,                 <a href="StructureDefinition-tddui-bundle.html">TDDUIBundle</a>
-,                 <a href="CapabilityStatement-TDDUIConsommateur.html">TDDUIConsommateur</a>
-,                 <a href="StructureDefinition-tddui-documentreference.html">TDDUIDocumentReference</a>
- and                 <a href="CapabilityStatement-TDDUIProducteur.html">TDDUIProducteur</a>
+,                 <a href="StructureDefinition-tddui-admission-date.html">TDDUIAdmissionDate</a>
+                <span onClick="document.getElementById('ips_1').innerHTML = document.getElementById('ips2_1').innerHTML" id="ips_1">
+... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 15 more</span>                </span>
+                <span style="display: none" id="ips2_1">
+, <a href="StructureDefinition-tddui-birth-order.html">TDDUIBirthOrder</a>, <a href="StructureDefinition-tddui-bundle.html">TDDUIBundle</a>, <a href="StructureDefinition-tddui-comment.html">TDDUIComment</a>, <a href="CapabilityStatement-TDDUIConsommateur.html">TDDUIConsommateur</a>, <a href="StructureDefinition-tddui-documentreference.html">TDDUIDocumentReference</a>, <a href="CodeSystem-tddui-encounter-identifier.html">TDDUIEncounterIdentifier</a>, <a href="StructureDefinition-tddui-Encounter-sejour.html">TDDUIEncounterSejour</a>, <a href="StructureDefinition-tddui-entry-mode-label.html">TDDUIEntryModelabel</a>, <a href="StructureDefinition-tddui-exit-mode-label.html">TDDUIExitModeLabel</a>, <a href="CodeSystem-tddui-identifier.html">TDDUIIdentifier</a>, <a href="StructureDefinition-tddui-Organization.html">TDDUIOrganization</a>, <a href="StructureDefinition-tddui-patient.html">TDDUIPatient</a>, <a href="StructureDefinition-tddui-patient-ins.html">TDDUIPatientINS</a>, <a href="CapabilityStatement-TDDUIProducteur.html">TDDUIProducteur</a> and <a href="StructureDefinition-tddui-human-name.html">tddui-humanname</a>                </span>
               </li>
 
 
@@ -72,6 +85,28 @@ This material contains content from           <a href="http://loinc.org">LOINC</
           </div>
         </li>
 
+        <li>
+This material derives from the HL7 Terminology (THO). THO is copyright &copy;1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see:           <a href="https://terminology.hl7.org/license.html">https://terminology.hl7.org/license.html</a>
+          <div onClick="if (document.getElementById('ipp2_3').innerHTML != '') {document.getElementById('ipp_3').innerHTML = document.getElementById('ipp2_3').innerHTML; document.getElementById('ipp2_3').innerHTML = ''}" id="ipp_3">
+             <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span>
+          </div>
+          <div style="display: none" id="ipp2_3">
+
+            <ul>
+
+              <li>
+                <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v2-0203.html">identifierType</a>
+:                 <a href="StructureDefinition-tddui-patient.html">TDDUIPatient</a>
+ and                 <a href="StructureDefinition-tddui-patient-ins.html">TDDUIPatientINS</a>
+              </li>
+
+
+            </ul>
+
+
+          </div>
+        </li>
+
 
       </ul>
 
@@ -81,7 +116,7 @@ This material contains content from           <a href="http://loinc.org">LOINC</
     <ul>
       <li>
 
-          IG &copy; 2023+ ANS.  Package ans.fhir.fr.tddui#1.1.0 based on FHIR 4.0.1. Generated 2025-07-08 
+          IG &copy; 2023+ ANS.  Package ans.fhir.fr.tddui#1.1.0 based on FHIR 4.0.1. Generated 2025-07-28 
           
            
             Liens : Table des matières |
@@ -348,7 +383,7 @@ en-US This artefact includes content from SNOMED Clinical Terms&reg; (SNOMED CT&
 
           IG &copy; 2023+           <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>
 .  Package ans.fhir.fr.tddui#1.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
-. Generated           <span title="Tue, Jul 8, 2025 07:52+0000">2025-07-08</span>
+. Generated           <span title="Mon, Jul 28, 2025 15:24+0000">2025-07-28</span>
 
                     <br/>
 
@@ -380,7 +415,7 @@ en-US This artefact includes content from SNOMED Clinical Terms&reg; (SNOMED CT&
 
           IG &copy; 2023+           <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>
 .  Package ans.fhir.fr.tddui#1.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
-. Generated           <span title="Tue, Jul 8, 2025 07:52+0000">2025-07-08</span>
+. Generated           <span title="Mon, Jul 28, 2025 15:24+0000">2025-07-28</span>
 
                     <br/>
 
@@ -412,7 +447,7 @@ en-US This artefact includes content from SNOMED Clinical Terms&reg; (SNOMED CT&
 
           IG &copy; 2023+           <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>
 .  Package ans.fhir.fr.tddui#1.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
-. Generated           <span title="Tue, Jul 8, 2025 07:52+0000">2025-07-08</span>
+. Generated           <span title="Mon, Jul 28, 2025 15:24+0000">2025-07-28</span>
 
                     <br/>
 
