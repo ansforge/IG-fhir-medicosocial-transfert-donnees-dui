@@ -1038,7 +1038,7 @@ La classe EntiteJuridique est définie dans le MOS et est profilée pour ce vole
   </tr>
   <tr>
     <td>dateAdmission : [0..1] DateHeure</td>
-    <td>Date d’admission dans la structure ESSMS.</td>
+    <td>Date d’admission de l'usager dans la structure ESSMS.</td>
   </tr>
   <tr>
     <td>dateEntreePrevisionnelle : [0..1] DateHeure</td>
