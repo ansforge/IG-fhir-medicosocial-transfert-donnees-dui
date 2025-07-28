@@ -51,7 +51,7 @@
   <name value="TDDUIPatientINS"/>
   <title value="TDDUI Patient INS"/>
   <status value="active"/>
-  <date value="2025-07-28T11:47:16+00:00"/>
+  <date value="2025-07-28T13:00:34+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -72,7 +72,7 @@
   <mapping>
     <identity value="specmetier-to-TDDUIPatientINS"/>
     <uri value="https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"/>
-    <name value="UsagerINS"/>
+    <name value="Modèle de contenu DUI"/>
   </mapping>
   <mapping>
     <identity value="rim"/>
@@ -177,7 +177,7 @@
       <isSummary value="false"/>
       <mapping>
         <identity value="specmetier-to-TDDUIPatientINS"/>
-        <map value="Usager INS"/>
+        <map value="UsagerINS"/>
       </mapping>
       <mapping>
         <identity value="rim"/>
@@ -1124,7 +1124,7 @@
       <isSummary value="false"/>
       <mapping>
         <identity value="specmetier-to-TDDUIPatientINS"/>
-        <map value="codeCommuneNaissance"/>
+        <map value="communeNaissance"/>
       </mapping>
     </element>
     <element id="Patient.extension:birthPlace.value[x].use">
@@ -8008,7 +8008,7 @@
       <path value="Patient"/>
       <mapping>
         <identity value="specmetier-to-TDDUIPatientINS"/>
-        <map value="Usager INS"/>
+        <map value="UsagerINS"/>
       </mapping>
     </element>
     <element id="Patient.meta.profile:tddui-patient-canonical">
@@ -8034,7 +8034,7 @@
       <sliceName value="inseeCode"/>
       <mapping>
         <identity value="specmetier-to-TDDUIPatientINS"/>
-        <map value="codeCommuneNaissance"/>
+        <map value="communeNaissance"/>
       </mapping>
     </element>
     <element id="Patient.extension:impose-profile">
