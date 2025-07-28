@@ -154,9 +154,6 @@
       <li>
         <a href="description_flux_2_ajout_lot_doc.html">Flux 2 - Ajout d&apos;un lot de documents</a>
       </li>
-      <li>
-        <a href="description_flux_3_maj_doc.html">Flux 3 - Mise à jour d&apos;un document</a>
-      </li>
     </ul>
   </li>
   <li class="dropdown">
@@ -1331,7 +1328,7 @@ Droit temporel et exceptionnel conféré à une personne ou une organisation.</p
   </tr>
   <tr>
     <td>dateAdmission : [0..1] DateHeure</td>
-    <td>Date d’admission dans la structure ESSMS.</td>
+    <td>Date d’admission de l'usager dans la structure ESSMS.</td>
   </tr>
   <tr>
     <td>dateEntreePrevisionnelle : [0..1] DateHeure</td>
@@ -1544,7 +1541,7 @@ Le détail de l’évaluation de ce champ peut être transmis à travers un deux
     - Evaluation AGGIR PA SSIAD : JDV_EvaluationAGGIRPA_CISIS avec l'OID 1.2.250.1.213.1.1.5.806 publié sur <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a><br />
     - Evaluation de la situation SSIAD : JDV_EvaluationSSIAD_CISIS avec l'OID 1.2.250.1.213.1.1.5.804
     publié sur <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a><br />
-    - Evaluation Serafin : Jeu de valeur issue de la terminologie Serafin correspondant à la famille 1-Besoin. Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J285-Besoins_SERAFIN/JDV_J285-Besoins_SERAFIN.pdf">JDV_J285-Besoins_SERAFIN</a>
+    - Evaluation Serafin : Jeu de valeur issue de la terminologie Serafin correspondant à la famille 1-Besoin. Jeu(x) de valeur(s) associé(s) : <a href="https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J285-Besoins-SERAFIN.html">JDV-J285-Besoins_SERAFIN</a>
     </td>
   </tr>
   <tr>
@@ -1643,12 +1640,12 @@ Le détail de l’évaluation de ce champ peut être transmis à travers un deux
     Cas d’usage SSIAD : le type de l'évènement est issu <br />
     <ul>
         - d'un code issu du jeu de valeur associé : JDV_TypeEvenementSSIAD_CISIS avec l'OID 1.2.250.1.213.1.1.5.811 publié sur <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a><br />
-        - peut contenir un code issu de la terminologie Serafin correspondant aux familles 2-PrestationDirecte et 3-PrestationIndirecte.  Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J284-PrestationsDirects_SERAFIN/JDV_J284-PrestationsDirects_SERAFIN.pdf">JDV_J284-PrestationsDirects_SERAFIN</a>, <a href="https://mos.esante.gouv.fr/NOS/JDV_J283-PrestationsIndirects_SERAFIN/JDV_J283-PrestationsIndirects_SERAFIN.pdf">JDV_J283-PrestationsIndirects_SERAFIN</a><br />
+        - peut contenir un code issu de la terminologie Serafin correspondant aux familles 2-PrestationDirecte et 3-PrestationIndirecte.  Jeu(x) de valeur(s) associé(s) : <a href="https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J284-PrestationsDirects-SERAFIN.html">JDV-J284-PrestationsDirects_SERAFIN</a>, <a href="https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J283-PrestationsIndirects-SERAFIN.html">JDV-J283-PrestationsIndirects_SERAFIN</a><br />
         - peut contenir un texte non structuré véhiculant les autres types d’évènements.<br />
         </ul>
     Autre cas d'usage : le type de l'évènement est issu<br />
     <ul>
-      - du jeu de valeur issue de la terminologie Serafin correspondant aux familles 2-PrestationDirecte et 3-PrestationIndirecte. Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J284-PrestationsDirects_SERAFIN/JDV_J284-PrestationsDirects_SERAFIN.pdf">JDV_J284-PrestationsDirects_SERAFIN</a>, <a href="https://mos.esante.gouv.fr/NOS/JDV_J283-PrestationsIndirects_SERAFIN/JDV_J283-PrestationsIndirects_SERAFIN.pdf">JDV_J283-PrestationsIndirects_SERAFIN</a><br />
+      - du jeu de valeur issue de la terminologie Serafin correspondant aux familles 2-PrestationDirecte et 3-PrestationIndirecte. Jeu(x) de valeur(s) associé(s) : <a href="https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J284-PrestationsDirects-SERAFIN.html">JDV-J284-PrestationsDirects_SERAFIN</a>, <a href="https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J283-PrestationsIndirects-SERAFIN.html">JDV_J283-PrestationsIndirects_SERAFIN</a><br />
       - et/ou d’un texte non structuré véhiculant les autres types d’évènements.
       </ul>
     </td>
@@ -2300,7 +2297,7 @@ Le détail de l’évaluation de ce champ peut être transmis à travers un deux
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 11, 2025 15:41+0000">2025-07-11</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 28, 2025 12:24+0000">2025-07-28</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
