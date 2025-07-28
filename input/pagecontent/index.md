@@ -35,7 +35,7 @@ Dans la continuité des travaux menés dans le cadre du programme ESMS numériqu
 Ce guide d'implémentation contient : 
 - L'étude des normes et standards au format pdf : [Etude des normes et standards](NormesStandards_TransfertDonneesDUI_V1.0.pdf)
 - Les spécifications fonctionnelles : section <a href="sfe.html"> Spécifications fonctionnelles</a>
-- La spécification technique de contenu :  </br>
+- La spécification technique de contenu :  <br>
 Il existe 2 représentations techniques pour le contenu de l'export des données du DUI :
 * une représentation basée sur le standard FHIR afin de s’aligner sur les recommandations européennes et pour s’adapter aux évolutions des cas d’usage du volet « Médicosocial – Transfert de données DUI ».
 
