@@ -1,58 +1,58 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
     <title>Transmission des données à un tiers - Médicosocial - Transfert de données DUI v1.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
 
-    <link rel="stylesheet" href="fhir.css"/>
+    <link href="fhir.css" rel="stylesheet"/>
 
-      <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
 
-      <!-- Project extras -->
-    <link rel="stylesheet" href="assets/css/project.css"/>
-    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
-    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
-  	<link rel="stylesheet" href="assets/css/prism.css"/>
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style-ans.css"/>
     <link rel="stylesheet" href="assets/css/style-add-ans.css"/>
-      <!-- Placeholder for child template CSS declarations -->
+    <!-- Placeholder for child template CSS declarations -->
 
-    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
-      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-      <!-- [if lt IE 9]>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
-    <![endif] -->
+    <![endif]-->
 
-      <!-- Favicons -->
-    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
-    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
-    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
     <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-    <script src="assets/js/mermaid.js" type="text/javascript"></script>
-    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"2.3"}
     h3,h4,h5,h6{--heading-prefix:"2.3"}</style>
-    <div id="segment-header" class="segment">    <!-- segment-header -->
-      <div class="container">    <!-- container -->
-          <!-- Placeholder for child template header declarations -->
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
 <div id="family-nav">
-    <a id="hl7-search-lnk" href="http://hl7.org/fhir" data-no-external="true"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/> </a>
+    <a id="hl7-search-lnk" data-no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
   </div>
-  <div style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; " id="ans-nav">
-    <a id="hl7-logo" href="https://esante.gouv.fr/" data-no-external="true"><img src="assets/images/logo-ANS.svg" alt="ANS Logo" height="50"/></a>
-    <a id="hl7-search-lnk" href="searchform.html" data-no-external="true"><img src="assets/images/search.png" alt="Search FHIR"/></a>
+  <div id="ans-nav" style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; ">
+    <a id="hl7-logo" data-no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
+    <a id="hl7-search-lnk" data-no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
   </div>
 
   <div id="ig-search">
@@ -66,33 +66,33 @@
 
 
 
-  <img src="assets/images/fra.svg" alt="France flag" title="France" height="16"/>
+  <img alt="France flag" src="assets/images/fra.svg" height="16" title="France"/>
 
 
             </span>
           </p>
         </div>
-      </div>   <!-- /container -->
-    </div>    <!-- /segment-header -->
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
 
-    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
       <div id="stripe"> </div>
-      <div class="container">    <!-- container -->
-          <!-- HEADER CONTENT -->
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
 
         <nav class="navbar navbar-inverse">
-            <!-- status-bar -->
+          <!--status-bar-->
           <div class="container">
-            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
-            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-                <!-- menu.xml -->
+              <!-- menu.xml  -->
 
-<ul class="nav navbar-nav">
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li>
     <a href="index.html">Accueil</a>
   </li>
@@ -102,7 +102,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="sfe_cas_usage.html">Cas d'usage</a>
+        <a href="sfe_cas_usage.html">Cas d&apos;usage</a>
       </li>
       <li>
         <a href="sfe_organisation_contexte_metier.html">Organisation du contexte métier</a>
@@ -149,10 +149,10 @@
         <a href="description_flux_synthese.html">Synthèse des flux</a>
       </li>
       <li>
-        <a href="description_flux_1_ajout_doc.html">Flux 1 - Ajout d'un document</a>
+        <a href="description_flux_1_ajout_doc.html">Flux 1 - Ajout d&apos;un document</a>
       </li>
       <li>
-        <a href="description_flux_2_ajout_lot_doc.html">Flux 2 - Ajout d'un lot de documents</a>
+        <a href="description_flux_2_ajout_lot_doc.html">Flux 2 - Ajout d&apos;un lot de documents</a>
       </li>
     </ul>
   </li>
@@ -203,16 +203,16 @@
         <a href="downloads.html">Téléchargements et usage</a>
       </li>
       <li>
-        <a href="http://hl7.org/fhir/R4/index.html" target="_blank">Spécifications FHIR</a>
+        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">Spécifications FHIR</a>
       </li>
       <li>
-        <a href="https://hl7.org/cda/stds/core/" target="_blank">Spécifications CDA</a>
+        <a target="_blank" href="https://hl7.org/cda/stds/core/">Spécifications CDA</a>
       </li>
       <li>
-        <a href="https://esante.gouv.fr/" target="_blank">Site de l'ANS</a>
+        <a target="_blank" href="https://esante.gouv.fr/">Site de l&apos;ANS</a>
       </li>
       <li>
-        <a href="https://interop.esante.gouv.fr/ig/documentation/" target="_blank">Documentation</a>
+        <a target="_blank" href="https://interop.esante.gouv.fr/ig/documentation/">Documentation</a>
       </li>
     </ul>
   </li>
@@ -220,18 +220,18 @@
     <a href="changes.html">Historique</a>
   </li>
 </ul>
-            </div>    <!-- /.nav-collapse -->
-          </div>    <!-- /.container -->
-        </nav>    <!-- /.navbar -->
-        <!-- /HEADER CONTENT -->
-      </div>    <!-- /container -->
-    </div>    <!-- /segment-navbar -->
-      <!-- status-bar -->
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
 
-    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
-      <div class="container">    <!-- container -->
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="sfe.html"><b>Volume 1 - Etude fonctionnelle</b></a></li><li><b>Transmission des données à un tiers</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='sfe.html'><b>Volume 1 - Etude fonctionnelle</b></a></li><li><b>Transmission des données à un tiers</b></li>
 
           <span style="float:right;">
 
@@ -244,12 +244,12 @@
           </span>
 
         </ul>
-      </div>    <!-- /container -->
-    </div>    <!-- /segment-breadcrumb -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
 
     <a name="top"> </a>
-    <div id="segment-content" class="segment">    <!-- segment-content -->
-      <div class="container">    <!-- container -->
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
 
@@ -261,7 +261,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">Médicosocial - Transfert de données DUI - Local Development build (v1.1.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://interop.esante.gouv.fr/ig/fhir/tddui/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <!--ReleaseHeader--><p id="publish-box">Médicosocial - Transfert de données DUI - Local Development build (v1.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://interop.esante.gouv.fr/ig/fhir/tddui/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Transmission des données à un tiers</h2>
   
 
@@ -276,7 +276,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
-    <p>  <!-- white space is critical inside of capture --></p>
+    <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
   <li><a href="#définition-des-processus-collaboratif" id="markdown-toc-définition-des-processus-collaboratif">Définition des Processus collaboratif</a></li>
@@ -288,8 +288,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="définition-des-processus-collaboratif">Définition des Processus collaboratif</h3>
 
-  <!-- commande pour insérer un fichier plantuml dans un fichier .md -->
-<div style="text-align:center;"><svg xmlns="http://www.w3.org/2000/svg" contentStyleType="text/css" viewBox="0 0 559 256" zoomAndPan="magnify" data-diagram-type="DESCRIPTION" preserveAspectRatio="none" width="559px" xmlns:xlink="http://www.w3.org/1999/xlink" style="width:559px;height:256px;background:#FFFFFF;" version="1.1" height="256px"><defs></defs><g>  <!-- entity P --><g data-entity="P" id="entity_P" data-uid="ent0002" class="entity" data-source-line="2"><ellipse cx="47.4761" cy="14" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" fill="#FFE4B5"></ellipse><path d="M47.4761,22 L47.4761,49 M34.4761,30 L60.4761,30 M47.4761,49 L34.4761,64 M47.4761,49 L60.4761,64" style="stroke:#181818;stroke-width:0.5;" fill="none"></path><text lengthAdjust="spacing" x="9" font-size="14" textLength="43.6748" y="78.4951" font-family="sans-serif" fill="#000000">"Rôle"</text><text lengthAdjust="spacing" x="9" font-size="14" textLength="76.9521" y="94.792" font-family="sans-serif" fill="#000000">Producteur</text></g>  <!-- entity C --><g data-entity="C" id="entity_C" data-uid="ent0003" class="entity" data-source-line="3"><ellipse cx="498.3296" cy="14" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" fill="#FFE4B5"></ellipse><path d="M498.3296,22 L498.3296,49 M485.3296,30 L511.3296,30 M498.3296,49 L485.3296,64 M498.3296,49 L511.3296,64" style="stroke:#181818;stroke-width:0.5;" fill="none"></path><text lengthAdjust="spacing" x="444.5" font-size="14" textLength="43.6748" y="78.4951" font-family="sans-serif" fill="#000000">"Rôle"</text><text lengthAdjust="spacing" x="444.5" font-size="14" textLength="107.6592" y="94.792" font-family="sans-serif" fill="#000000">Consommateur</text></g>  <!-- entity L --><g data-entity="L" id="entity_L" data-uid="ent0004" class="entity" data-source-line="4"><ellipse cx="47.4189" cy="167" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" fill="#FFE4B5"></ellipse><path d="M47.4189,175 L47.4189,202 M34.4189,183 L60.4189,183 M47.4189,202 L34.4189,217 M47.4189,202 L60.4189,217" style="stroke:#181818;stroke-width:0.5;" fill="none"></path><text lengthAdjust="spacing" x="6" font-size="14" textLength="73.6982" y="231.4951" font-family="sans-serif" fill="#000000">"Système"</text><text lengthAdjust="spacing" x="6" font-size="14" textLength="82.8379" y="247.792" font-family="sans-serif" fill="#000000">Logiciel DUI</text></g>  <!-- entity O --><g data-entity="O" id="entity_O" data-uid="ent0005" class="entity" data-source-line="5"><ellipse cx="498.3491" cy="167" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" fill="#FFE4B5"></ellipse><path d="M498.3491,175 L498.3491,202 M485.3491,183 L511.3491,183 M498.3491,202 L485.3491,217 M498.3491,202 L511.3491,217" style="stroke:#181818;stroke-width:0.5;" fill="none"></path><text lengthAdjust="spacing" x="461.5" font-size="14" textLength="73.6982" y="231.4951" font-family="sans-serif" fill="#000000">"Système"</text><text lengthAdjust="spacing" x="461.5" font-size="14" textLength="51.5703" y="247.792" font-family="sans-serif" fill="#000000">SI Tiers</text></g><g data-entity="c" id="entity_c" data-uid="ent0006" class="entity" data-source-line="7"><ellipse cx="265.2989" cy="52.1598" rx="143.7989" ry="31.1598" style="stroke:#181818;stroke-width:0.5;" fill="#FFE4B5"></ellipse><text lengthAdjust="spacing" x="136.5235" font-size="14" textLength="257.5508" y="55.0065" font-family="sans-serif" fill="#000000">Export des données d'un logiciel DUI</text></g>  <!-- link c to C --><g data-entity-2="C" data-entity-1="c" id="link_c_C" data-uid="lnk7" class="link" data-source-line="9"><path d="M409.76,52 C421.31,52 432.87,52 444.42,52" style="stroke:#181818;stroke-width:1;" id="c-C" fill="none"></path></g>  <!-- link P to c --><g data-entity-2="c" data-entity-1="P" id="link_P_c" data-uid="lnk8" class="link" data-source-line="10"><path d="M86.25,52 C97.92,52 109.59,52 121.26,52" style="stroke:#181818;stroke-width:1;" id="P-c" fill="none"></path></g>  <!-- link P to L --><g data-entity-2="L" data-entity-1="P" id="link_P_L" data-uid="lnk9" class="link" data-source-line="11"><path d="M47.5,98.71 C47.5,117.64 47.5,139.53 47.5,158.44" style="stroke:#181818;stroke-width:1;" id="P-L" fill="none"></path></g>  <!-- link C to O --><g data-entity-2="O" data-entity-1="C" id="link_C_O" data-uid="lnk10" class="link" data-source-line="12"><path d="M498.5,98.71 C498.5,117.64 498.5,139.53 498.5,158.44" style="stroke:#181818;stroke-width:1;" id="C-O" fill="none"></path></g></g></svg></div>
+<!-- commande pour insérer un fichier plantuml dans un fichier .md -->
+<div style="text-align:center;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" data-diagram-type="DESCRIPTION" height="256px" preserveAspectRatio="none" style="width:559px;height:256px;background:#FFFFFF;" version="1.1" viewBox="0 0 559 256" width="559px" zoomAndPan="magnify"><defs /><g><!--entity P--><g class="entity" data-entity="P" data-source-line="2" data-uid="ent0002" id="entity_P"><ellipse cx="47.4761" cy="14" fill="#FFE4B5" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M47.4761,22 L47.4761,49 M34.4761,30 L60.4761,30 M47.4761,49 L34.4761,64 M47.4761,49 L60.4761,64" fill="none" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="43.6748" x="9" y="78.4951">"R&#244;le"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="76.9521" x="9" y="94.792">Producteur</text></g><!--entity C--><g class="entity" data-entity="C" data-source-line="3" data-uid="ent0003" id="entity_C"><ellipse cx="498.3296" cy="14" fill="#FFE4B5" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M498.3296,22 L498.3296,49 M485.3296,30 L511.3296,30 M498.3296,49 L485.3296,64 M498.3296,49 L511.3296,64" fill="none" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="43.6748" x="444.5" y="78.4951">"R&#244;le"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="107.6592" x="444.5" y="94.792">Consommateur</text></g><!--entity L--><g class="entity" data-entity="L" data-source-line="4" data-uid="ent0004" id="entity_L"><ellipse cx="47.4189" cy="167" fill="#FFE4B5" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M47.4189,175 L47.4189,202 M34.4189,183 L60.4189,183 M47.4189,202 L34.4189,217 M47.4189,202 L60.4189,217" fill="none" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73.6982" x="6" y="231.4951">"Syst&#232;me"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="82.8379" x="6" y="247.792">Logiciel DUI</text></g><!--entity O--><g class="entity" data-entity="O" data-source-line="5" data-uid="ent0005" id="entity_O"><ellipse cx="498.3491" cy="167" fill="#FFE4B5" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M498.3491,175 L498.3491,202 M485.3491,183 L511.3491,183 M498.3491,202 L485.3491,217 M498.3491,202 L511.3491,217" fill="none" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73.6982" x="461.5" y="231.4951">"Syst&#232;me"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="51.5703" x="461.5" y="247.792">SI Tiers</text></g><g class="entity" data-entity="c" data-source-line="7" data-uid="ent0006" id="entity_c"><ellipse cx="265.2989" cy="52.1598" fill="#FFE4B5" rx="143.7989" ry="31.1598" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="257.5508" x="136.5235" y="55.0065">Export des donn&#233;es d'un logiciel DUI</text></g><!--link c to C--><g class="link" data-entity-1="c" data-entity-2="C" data-source-line="9" data-uid="lnk7" id="link_c_C"><path d="M409.76,52 C421.31,52 432.87,52 444.42,52" fill="none" id="c-C" style="stroke:#181818;stroke-width:1;" /></g><!--link P to c--><g class="link" data-entity-1="P" data-entity-2="c" data-source-line="10" data-uid="lnk8" id="link_P_c"><path d="M86.25,52 C97.92,52 109.59,52 121.26,52" fill="none" id="P-c" style="stroke:#181818;stroke-width:1;" /></g><!--link P to L--><g class="link" data-entity-1="P" data-entity-2="L" data-source-line="11" data-uid="lnk9" id="link_P_L"><path d="M47.5,98.71 C47.5,117.64 47.5,139.53 47.5,158.44" fill="none" id="P-L" style="stroke:#181818;stroke-width:1;" /></g><!--link C to O--><g class="link" data-entity-1="C" data-entity-2="O" data-source-line="12" data-uid="lnk10" id="link_C_O"><path d="M498.5,98.71 C498.5,117.64 498.5,139.53 498.5,158.44" fill="none" id="C-O" style="stroke:#181818;stroke-width:1;" /></g></g></svg></div>
 
 <table style="width:100%">
   <tr>
@@ -315,8 +315,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tr>
   <tr>
     <th>Scénario nominal</th>
-    <td><a name="l616">​</a>Scénario conforme aux cas d'usages décrits dans 
-    <a href="sfe_cadre_juridique.html#exemples-de-cas-dusage"><span style="color:windowtext;">"Exemples de cas d'usage"</span></a>.
+    <td>Scénario conforme aux cas d'usages décrits dans 
+    <a href="sfe_cas_usage.html"><span style="color:windowtext;">"Cas d'usage"</span></a>.
     </td>
   </tr>
 </table>
@@ -385,7 +385,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li>Flux 1.1 - Ajout d'un document</li>
       <li>Flux 1.2 - Résultat de l'ajout d'un document</li>
       </ul>
-      <svg xmlns="http://www.w3.org/2000/svg" contentStyleType="text/css" viewBox="0 0 400 149" zoomAndPan="magnify" data-diagram-type="SEQUENCE" preserveAspectRatio="none" width="400px" xmlns:xlink="http://www.w3.org/1999/xlink" style="width:400px;height:149px;background:#FFFFFF;" version="1.1" height="149px"><defs></defs><g><g><title>Logiciel DUI</title><rect width="8" x="49.4189" y="36.2969" fill="#000000" fill-opacity="0.00000" height="78.2656"></rect><line y1="36.2969" x1="53" y2="114.5625" style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x2="53"></line></g><g><title>Logiciel DUI ou SI tiers</title><rect width="8" x="304.2896" y="36.2969" fill="#000000" fill-opacity="0.00000" height="78.2656"></rect><line y1="36.2969" x1="307.4473" y2="114.5625" style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x2="307.4473"></line></g><g data-participant="Logiciel DUI" class="participant participant-head"><rect rx="2.5" ry="2.5" width="96.8379" x="5" y="5" style="stroke:#181818;stroke-width:0.5;" fill="#E2E2F0" height="30.2969"></rect><text lengthAdjust="spacing" x="12" font-size="14" textLength="82.8379" y="24.9951" font-family="sans-serif" fill="#000000">Logiciel DUI</text></g><g data-participant="Logiciel DUI" class="participant participant-tail"><rect rx="2.5" ry="2.5" width="96.8379" x="5" y="113.5625" style="stroke:#181818;stroke-width:0.5;" fill="#E2E2F0" height="30.2969"></rect><text lengthAdjust="spacing" x="12" font-size="14" textLength="82.8379" y="133.5576" font-family="sans-serif" fill="#000000">Logiciel DUI</text></g><g data-participant="Logiciel DUI ou SI tiers" class="participant participant-head"><rect rx="2.5" ry="2.5" width="171.6846" x="222.4473" y="5" style="stroke:#181818;stroke-width:0.5;" fill="#E2E2F0" height="30.2969"></rect><text lengthAdjust="spacing" x="229.4473" font-size="14" textLength="157.6846" y="24.9951" font-family="sans-serif" fill="#000000">Logiciel DUI ou SI tiers</text></g><g data-participant="Logiciel DUI ou SI tiers" class="participant participant-tail"><rect rx="2.5" ry="2.5" width="171.6846" x="222.4473" y="113.5625" style="stroke:#181818;stroke-width:0.5;" fill="#E2E2F0" height="30.2969"></rect><text lengthAdjust="spacing" x="229.4473" font-size="14" textLength="157.6846" y="133.5576" font-family="sans-serif" fill="#000000">Logiciel DUI ou SI tiers</text></g><g data-participant-1="Logiciel DUI" data-participant-2="Logiciel DUI ou SI tiers" class="message"><polygon style="stroke:#181818;stroke-width:1;" fill="#181818" points="296.2896,63.4297,306.2896,67.4297,296.2896,71.4297,300.2896,67.4297"></polygon><line y1="67.4297" x1="53.4189" y2="67.4297" style="stroke:#181818;stroke-width:1;" x2="302.2896"></line><text lengthAdjust="spacing" x="60.4189" font-size="13" textLength="51.8286" y="62.3638" font-family="sans-serif" fill="#000000">Flux 1.1</text><text font-weight="bold" lengthAdjust="spacing" x="116.3799" font-size="13" textLength="113.4326" y="62.3638" font-family="sans-serif" fill="#000000">AjoutDocument</text></g><g data-participant-1="Logiciel DUI ou SI tiers" data-participant-2="Logiciel DUI" class="message"><polygon style="stroke:#181818;stroke-width:1;" fill="#181818" points="64.4189,92.5625,54.4189,96.5625,64.4189,100.5625,60.4189,96.5625"></polygon><line y1="96.5625" x1="58.4189" y2="96.5625" style="stroke:#181818;stroke-width:1;stroke-dasharray:2.0,2.0;" x2="307.2896"></line><text lengthAdjust="spacing" x="70.4189" font-size="13" textLength="51.8286" y="91.4966" font-family="sans-serif" fill="#000000">Flux 1.2</text><text font-weight="bold" lengthAdjust="spacing" x="126.3799" font-size="13" textLength="174.9097" y="91.4966" font-family="sans-serif" fill="#000000">ResultatAjoutDocument</text></g></g></svg> <br/>
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" data-diagram-type="SEQUENCE" height="149px" preserveAspectRatio="none" style="width:400px;height:149px;background:#FFFFFF;" version="1.1" viewBox="0 0 400 149" width="400px" zoomAndPan="magnify"><defs /><g><g><title>Logiciel DUI</title><rect fill="#000000" fill-opacity="0.00000" height="78.2656" width="8" x="49.4189" y="36.2969" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="53" x2="53" y1="36.2969" y2="114.5625" /></g><g><title>Logiciel DUI ou SI tiers</title><rect fill="#000000" fill-opacity="0.00000" height="78.2656" width="8" x="304.2896" y="36.2969" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="307.4473" x2="307.4473" y1="36.2969" y2="114.5625" /></g><g class="participant participant-head" data-participant="Logiciel DUI"><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="96.8379" x="5" y="5" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="82.8379" x="12" y="24.9951">Logiciel DUI</text></g><g class="participant participant-tail" data-participant="Logiciel DUI"><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="96.8379" x="5" y="113.5625" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="82.8379" x="12" y="133.5576">Logiciel DUI</text></g><g class="participant participant-head" data-participant="Logiciel DUI ou SI tiers"><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="171.6846" x="222.4473" y="5" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="157.6846" x="229.4473" y="24.9951">Logiciel DUI ou SI tiers</text></g><g class="participant participant-tail" data-participant="Logiciel DUI ou SI tiers"><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="171.6846" x="222.4473" y="113.5625" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="157.6846" x="229.4473" y="133.5576">Logiciel DUI ou SI tiers</text></g><g class="message" data-participant-1="Logiciel DUI" data-participant-2="Logiciel DUI ou SI tiers"><polygon fill="#181818" points="296.2896,63.4297,306.2896,67.4297,296.2896,71.4297,300.2896,67.4297" style="stroke:#181818;stroke-width:1;" /><line style="stroke:#181818;stroke-width:1;" x1="53.4189" x2="302.2896" y1="67.4297" y2="67.4297" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="51.8286" x="60.4189" y="62.3638">Flux 1.1</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="113.4326" x="116.3799" y="62.3638">AjoutDocument</text></g><g class="message" data-participant-1="Logiciel DUI ou SI tiers" data-participant-2="Logiciel DUI"><polygon fill="#181818" points="64.4189,92.5625,54.4189,96.5625,64.4189,100.5625,60.4189,96.5625" style="stroke:#181818;stroke-width:1;" /><line style="stroke:#181818;stroke-width:1;stroke-dasharray:2.0,2.0;" x1="58.4189" x2="307.2896" y1="96.5625" y2="96.5625" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="51.8286" x="70.4189" y="91.4966">Flux 1.2</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="174.9097" x="126.3799" y="91.4966">ResultatAjoutDocument</text></g></g></svg> <br />
       Lien vers la description détaillée : <a href="description_flux_1_ajout_doc.html">flux 1</a>
     </td>
   </tr>
@@ -395,7 +395,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li>Flux 2.1 - Ajout d'un lot de documents</li>
       <li>Flux 2.2 - Résultat de l'ajout d'un lots documents</li>
       </ul>
-      <svg xmlns="http://www.w3.org/2000/svg" contentStyleType="text/css" viewBox="0 0 431 149" zoomAndPan="magnify" data-diagram-type="SEQUENCE" preserveAspectRatio="none" width="431px" xmlns:xlink="http://www.w3.org/1999/xlink" style="width:431px;height:149px;background:#FFFFFF;" version="1.1" height="149px"><defs></defs><g><g><title>Logiciel DUI</title><rect width="8" x="49.4189" y="36.2969" fill="#000000" fill-opacity="0.00000" height="78.2656"></rect><line y1="36.2969" x1="53" y2="114.5625" style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x2="53"></line></g><g><title>Logiciel DUI ou SI tiers</title><rect width="8" x="335.4565" y="36.2969" fill="#000000" fill-opacity="0.00000" height="78.2656"></rect><line y1="36.2969" x1="338.6143" y2="114.5625" style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x2="338.6143"></line></g><g data-participant="Logiciel DUI" class="participant participant-head"><rect rx="2.5" ry="2.5" width="96.8379" x="5" y="5" style="stroke:#181818;stroke-width:0.5;" fill="#E2E2F0" height="30.2969"></rect><text lengthAdjust="spacing" x="12" font-size="14" textLength="82.8379" y="24.9951" font-family="sans-serif" fill="#000000">Logiciel DUI</text></g><g data-participant="Logiciel DUI" class="participant participant-tail"><rect rx="2.5" ry="2.5" width="96.8379" x="5" y="113.5625" style="stroke:#181818;stroke-width:0.5;" fill="#E2E2F0" height="30.2969"></rect><text lengthAdjust="spacing" x="12" font-size="14" textLength="82.8379" y="133.5576" font-family="sans-serif" fill="#000000">Logiciel DUI</text></g><g data-participant="Logiciel DUI ou SI tiers" class="participant participant-head"><rect rx="2.5" ry="2.5" width="171.6846" x="253.6143" y="5" style="stroke:#181818;stroke-width:0.5;" fill="#E2E2F0" height="30.2969"></rect><text lengthAdjust="spacing" x="260.6143" font-size="14" textLength="157.6846" y="24.9951" font-family="sans-serif" fill="#000000">Logiciel DUI ou SI tiers</text></g><g data-participant="Logiciel DUI ou SI tiers" class="participant participant-tail"><rect rx="2.5" ry="2.5" width="171.6846" x="253.6143" y="113.5625" style="stroke:#181818;stroke-width:0.5;" fill="#E2E2F0" height="30.2969"></rect><text lengthAdjust="spacing" x="260.6143" font-size="14" textLength="157.6846" y="133.5576" font-family="sans-serif" fill="#000000">Logiciel DUI ou SI tiers</text></g><g data-participant-1="Logiciel DUI" data-participant-2="Logiciel DUI ou SI tiers" class="message"><polygon style="stroke:#181818;stroke-width:1;" fill="#181818" points="327.4565,63.4297,337.4565,67.4297,327.4565,71.4297,331.4565,67.4297"></polygon><line y1="67.4297" x1="53.4189" y2="67.4297" style="stroke:#181818;stroke-width:1;" x2="333.4565"></line><text lengthAdjust="spacing" x="60.4189" font-size="13" textLength="51.8286" y="62.3638" font-family="sans-serif" fill="#000000">Flux 2.1</text><text font-weight="bold" lengthAdjust="spacing" x="116.3799" font-size="13" textLength="144.5996" y="62.3638" font-family="sans-serif" fill="#000000">AjoutLotDocuments</text></g><g data-participant-1="Logiciel DUI ou SI tiers" data-participant-2="Logiciel DUI" class="message"><polygon style="stroke:#181818;stroke-width:1;" fill="#181818" points="64.4189,92.5625,54.4189,96.5625,64.4189,100.5625,60.4189,96.5625"></polygon><line y1="96.5625" x1="58.4189" y2="96.5625" style="stroke:#181818;stroke-width:1;stroke-dasharray:2.0,2.0;" x2="338.4565"></line><text lengthAdjust="spacing" x="70.4189" font-size="13" textLength="51.8286" y="91.4966" font-family="sans-serif" fill="#000000">Flux 2.2</text><text font-weight="bold" lengthAdjust="spacing" x="126.3799" font-size="13" textLength="206.0767" y="91.4966" font-family="sans-serif" fill="#000000">ResultatAjoutLotDocuments</text></g></g></svg> <br/>
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" data-diagram-type="SEQUENCE" height="149px" preserveAspectRatio="none" style="width:431px;height:149px;background:#FFFFFF;" version="1.1" viewBox="0 0 431 149" width="431px" zoomAndPan="magnify"><defs /><g><g><title>Logiciel DUI</title><rect fill="#000000" fill-opacity="0.00000" height="78.2656" width="8" x="49.4189" y="36.2969" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="53" x2="53" y1="36.2969" y2="114.5625" /></g><g><title>Logiciel DUI ou SI tiers</title><rect fill="#000000" fill-opacity="0.00000" height="78.2656" width="8" x="335.4565" y="36.2969" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="338.6143" x2="338.6143" y1="36.2969" y2="114.5625" /></g><g class="participant participant-head" data-participant="Logiciel DUI"><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="96.8379" x="5" y="5" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="82.8379" x="12" y="24.9951">Logiciel DUI</text></g><g class="participant participant-tail" data-participant="Logiciel DUI"><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="96.8379" x="5" y="113.5625" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="82.8379" x="12" y="133.5576">Logiciel DUI</text></g><g class="participant participant-head" data-participant="Logiciel DUI ou SI tiers"><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="171.6846" x="253.6143" y="5" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="157.6846" x="260.6143" y="24.9951">Logiciel DUI ou SI tiers</text></g><g class="participant participant-tail" data-participant="Logiciel DUI ou SI tiers"><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="171.6846" x="253.6143" y="113.5625" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="157.6846" x="260.6143" y="133.5576">Logiciel DUI ou SI tiers</text></g><g class="message" data-participant-1="Logiciel DUI" data-participant-2="Logiciel DUI ou SI tiers"><polygon fill="#181818" points="327.4565,63.4297,337.4565,67.4297,327.4565,71.4297,331.4565,67.4297" style="stroke:#181818;stroke-width:1;" /><line style="stroke:#181818;stroke-width:1;" x1="53.4189" x2="333.4565" y1="67.4297" y2="67.4297" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="51.8286" x="60.4189" y="62.3638">Flux 2.1</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="144.5996" x="116.3799" y="62.3638">AjoutLotDocuments</text></g><g class="message" data-participant-1="Logiciel DUI ou SI tiers" data-participant-2="Logiciel DUI"><polygon fill="#181818" points="64.4189,92.5625,54.4189,96.5625,64.4189,100.5625,60.4189,96.5625" style="stroke:#181818;stroke-width:1;" /><line style="stroke:#181818;stroke-width:1;stroke-dasharray:2.0,2.0;" x1="58.4189" x2="338.4565" y1="96.5625" y2="96.5625" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="51.8286" x="70.4189" y="91.4966">Flux 2.2</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="206.0767" x="126.3799" y="91.4966">ResultatAjoutLotDocuments</text></g></g></svg> <br />
       Lien vers la description détaillée : <a href="description_flux_2_ajout_lot_doc.html">flux 2</a>
     </td>
   </tr>
@@ -404,24 +404,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 </div>
-        </div>    <!-- /inner-wrapper -->
-      </div>    <!-- /row -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-content -->
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
 
-  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-<script src="assets/js/window-hash.js" type="text/javascript"> </script>
+<script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
-  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
-    <div class="container">    <!-- container -->
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
 
       <div style="background-color:var(--footer-nav-bg-color)">
         <table style="width:100%">
           <tbody>
             <tr>
-              <td style="text-align:left">&nbsp;
+              <td style="text-align:left">&#xA0;
 
                 <a href="sfe_organisation_contexte_metier.html">&lt;prev</a>
 
@@ -429,7 +429,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
               <td style="text-align:center">
                 <a href="#top">top</a>
               </td>
-              <td style="text-align:right">&nbsp;
+              <td style="text-align:right">&#xA0;
 
                 <a href="sfe_modelisation_contenu.html">next&gt;</a>
 
@@ -441,51 +441,51 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 28, 2025 12:47+0000">2025-07-28</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 28, 2025 12:59+0000">2025-07-28</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA</a> |
-<a style="color: var(--footer-hyperlink-text-color)" href="https://interop.esante.gouv.fr/ig/fhir/tddui/history.html" target="_blank">Historique des versions</a>
-<a style="color: var(--footer-hyperlink-text-color)" href="https://interop.esante.gouv.fr/ig/documentation" target="_blank">Documentation</a>
- | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/ansforge/FIG_ans-ig-sample/issues/new" target="_blank">New Issue</a>
+<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/fhir/tddui/history.html">Historique des versions</a>
+<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/documentation">Documentation</a>
+ | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/FIG_ans-ig-sample/issues/new">New Issue</a>
 
-          
+          </span>
         </p>
-      </div>    <!-- /inner-wrapper -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-footer -->
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
   
-  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
-    <div class="container">    <!-- container -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-post-footer -->
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
   
-    <!-- JS and analytics only. -->
-    <!-- Bootstrap core JavaScript
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
   ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
-  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
-  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
-  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
-  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
 
-    <!-- Ajout ANS -->
+  <!-- Ajout ANS -->
   <script src="assets/js/app.js" type="text/javascript"> </script>
   <script src="assets/js/vendor.js" type="text/javascript"> </script>
-    <!-- Fin ajout ANS -->
+  <!-- Fin ajout ANS -->
 
-  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
   
 
-    <!-- Analytics Below
+  <!-- Analytics Below
   ================================================== -->
 
 
-    <!-- AJOUT ANS -->
+  <!-- AJOUT ANS -->
 
-<footer role="contentinfo" class="footer footer-principal">
+<footer class="footer footer-principal" role="contentinfo">
   <div class="footer__region1">
     <div class="container">
       <div class="row">
@@ -493,17 +493,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         <div class="col-md-6 col-lg-4 text-center text-md-left">
           <div class="logos">        
             <div class="logo logo--0">
-              <a rel="nofollow" href="https://solidarites-sante.gouv.fr" title="Ministère des Solidarités et de la Santé (nouvelle fenêtre)" target="_blank">
+              <a href="https://solidarites-sante.gouv.fr" title="Ministère des Solidarités et de la Santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
                 
-                <img src="assets/images/logo-ministere.svg" alt="Ministère des Solidarités et de la Santé" width="133" loading="lazy" height="77"/>
+                <img src="assets/images/logo-ministere.svg" alt="Ministère des Solidarités et de la Santé" width="133" height="77" loading="lazy" />
                 
               </a>
             </div>
         
             <div class="logo logo--1">
-              <a rel="nofollow" href="https://esante.gouv.fr/" title="Agence du numérique en santé (nouvelle fenêtre)" target="_blank">
+              <a href="https://esante.gouv.fr/" title="Agence du numérique en santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
                 
-                <img src="assets/images/logo-ANS-footer.svg" alt="Agence du numérique en santé" width="106" loading="lazy" height="74"/>
+                <img src="assets/images/logo-ANS-footer.svg" alt="Agence du numérique en santé" width="106" height="74" loading="lazy" />
               </a>
             </div>
           </div>
@@ -513,7 +513,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
           <p class="footer__title">Agence du Numérique en Santé</p>
           <p>2-10 Rue d'Oradour-sur-Glane 75015 Paris</p>
 
-            <!-- <div class="m-social">
+          <!-- <div class="m-social">
             <ul class="m-social__list">        
               <li class="m-social__item">
                 <a class="m-social__link" href="https://www.linkedin.com/company/agence-du-numerique-en-sante/" target="_blank" rel="nofollow">
@@ -555,11 +555,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
           <ul class="footer-list">
             <li class="footer-list__item footer-list__item--hasIcon">
               <a href="mailto:ci-sis@esante.gouv.fr" class="mailto-link">
-                <svg aria-hidden="true" focusable="false" class="svg-icon svg-angle-right"><use href="assets/images/icon-sprite.svg#angle-right"></use></svg>Contact</a>
+                <svg class="svg-icon svg-angle-right" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#angle-right"></use></svg>Contact</a>
               </li>
-                <!-- <li class="footer-list__item">
+              <!-- <li class="footer-list__item">
                 <a href="https://interop-pprod.esante.gouv.fr/ci-sis-specifications/wp-content/uploads/CGU_espace_de_tests_v1.1.pdf" class="file-link">Mentions légales</a>
-              </li> -->
+              </li>
+               -->
             </ul>
           </div>
 
@@ -567,7 +568,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </div>
     </div>
     
-      <!-- <div class="footer__region2">
+    <!-- <div class="footer__region2">
       <div class="container">
         <div class="footer-contentinfo">
           <ul class="footer-list footer-list--inline">
@@ -579,3 +580,4 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </footer>
   </body>
 </html>
+
