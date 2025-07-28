@@ -36,7 +36,7 @@ Ce guide d'implémentation contient :
 - L'étude des normes et standards au format pdf : [Etude des normes et standards](NormesStandards_TransfertDonneesDUI_V1.0.pdf)
 - Les spécifications fonctionnelles : section <a href="sfe.html"> Spécifications fonctionnelles</a>
 - La spécification technique de contenu :  <br>
-Il existe deux représentations techniques pour le contenu de l'export des données du DUI :
+Il existe deux représentations techniques pour le contenu de l'export des données d'un logiciel DUI :
   * une représentation basée sur le standard FHIR afin de s’aligner sur les recommandations européennes et pour s’adapter aux évolutions des <a href="sfe_cas_usage.html">cas d'usage</a> de ce volet.<br>
   La représentation FHIR décrite dans ce guide est à privilégier pour toute nouvelle implémentation : sections <a href="contenu_dossier.html">Contenu du dossier</a> et <a href="ressources_cda.html">Ressources de conformité</a>
   * une représentation basée sur le standard CDA qui est spécifiée dans le guide d'implémentation <a href="https://interop.esante.gouv.fr/ig/cda/tddui/">Médicosocial - Transfert de données DUI CDA</a>. Ce guide est restreint au cas d'usage SSIAD.
