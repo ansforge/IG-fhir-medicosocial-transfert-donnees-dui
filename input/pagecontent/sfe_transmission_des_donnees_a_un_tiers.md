@@ -30,7 +30,7 @@
   <tr>
     <th>Scénario nominal</th>
     <td>Scénario conforme aux cas d'usages décrits dans 
-    <a href="sfe_cadre_juridique.html#exemples-de-cas-dusage"><span style="color:windowtext;">"Exemples de cas d'usage"</span></a>.
+    <a href="sfe_cas_usage.html"><span style="color:windowtext;">"Cas d'usage"</span></a>.
     </td>
   </tr>
 </table>
