@@ -37,7 +37,7 @@ Ce guide d'implémentation contient :
 - Les spécifications fonctionnelles : section <a href="sfe.html"> Spécifications fonctionnelles</a>
 - La spécification technique de contenu :  <br>
 Il existe deux représentations techniques pour le contenu de l'export des données du DUI :
-  * une représentation basée sur le standard FHIR afin de s’aligner sur les recommandations européennes et pour s’adapter aux évolutions des cas d’usage de ce volet <a href="sfe_cas_usage.html">"Cas d'usage"</a>.<br>
+  * une représentation basée sur le standard FHIR afin de s’aligner sur les recommandations européennes et pour s’adapter aux évolutions des cas d’usage de ce volet <a href="sfe_cas_usage.html">Cas d'usage</a>.<br>
   La représentation FHIR décrite dans ce guide est à privilégier pour toute nouvelle implémentation : sections <a href="contenu_dossier.html">Contenu du dossier</a> et <a href="ressources_cda.html">Ressources de conformité</a>
   * une représentation basée sur le standard CDA qui est spécifiée dans le guide d'implémentation <a href="https://interop.esante.gouv.fr/ig/cda/tddui/">Médicosocial - Transfert de données DUI CDA</a>. Ce guide est restreint au cas d'usage SSIAD.
 Les évolutions de ce guide d’implémentation sont limitées à des corrections techniques. Ce guide d'implementation sera déprécié lorsque la transition des éditeurs de CDA vers FHIR sera achevée.
