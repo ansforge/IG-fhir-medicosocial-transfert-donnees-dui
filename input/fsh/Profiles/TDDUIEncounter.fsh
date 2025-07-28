@@ -51,7 +51,7 @@ Title:    "Séjours "
  
 * identifier[idStay] -> "idSejour"
 * subject -> "Usager"
-* serviceProvider -> "ESSMS"
+* serviceProvider -> "EntiteJuridique"
 * extension[TDDUI-plannedStartDate-r5] -> "dateEntreePrevisionnelle"
 * extension[TDDUI-plannedEndDate-r5] -> "dateSortiePrevisionnelle"
 * extension[TDDUIAdmissionDate] -> "dateEntree"

@@ -24,7 +24,7 @@ Mapping:  ConceptMetier_TDDUIPatientINS
 Source:   TDDUIPatientINS
 Target: "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"
 Id:       specmetier-to-TDDUIPatientINS
-Title:    "Usager INS"
+Title:    "UsagerINS"
 * -> "Usager INS"
  
 * identifier[INS-NIR] -> "matriculeINS"

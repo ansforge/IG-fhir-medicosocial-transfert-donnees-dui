@@ -10,6 +10,6 @@ Source:   TDDUIOrganization
 Target: "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"
 Id:       specmetier-to-TDDUIOrganization
 Title:    "ESSMS Entités juridiques"
-* -> "Entités juridiques"
+* -> "EntiteJuridique"
 * name -> "raisonSocial"
 * identifier[idNatSt] -> "idNat_Struct"
