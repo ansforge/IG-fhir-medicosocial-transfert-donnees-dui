@@ -48,7 +48,7 @@ Ce guide d'implémentation contient :
 
 Ce document s'adresse aux chefs de projets qui spécifient des projets avec des interfaces interopérables et aux développeurs des interfaces interopérables des systèmes implémentant le volet « Transfert de données DUI ». Il s'adresse également à toute autre personne intervenant dans le processus de mise en place de ces interfaces et à tout porteur de SI cherchant à transporter de manière interopérable des données usagers vers un autre SI ainsi que les éditeurs de logiciels DUI.
 
-L’hypothèse est faite que le lecteur est familier des standards CDA R2 et FHIR R4.
+L’hypothèse est faite que le lecteur est familier du standard FHIR R4.
 
 ### Utilisation
 
@@ -56,13 +56,9 @@ Les spécifications d'interopérabilité présentées dans ce volet ne présagen
 
 ### Standards utilisés
 
-Les données véhiculées dans ce volet sont spécifiées dans le format CDA R2 niveau 3.
+Les données véhiculées dans ce volet ainsi que les interactions entre les systèmes reposent sur le standard HL7 FHIR Release 4.
 
-Les interactions entre les systèmes reposent quant à elles sur le standard HL7 FHIR Release 4. Elles font référence à un certain nombre de ressources du standard ainsi qu’aux spécifications de l’API REST FHIR, basées sur le protocole HTTP. Les syntaxes retenues sont la syntaxe XML et JSON.
-
-#### Template CI-SIS de document CDA créé
-
-Le template CI-SIS de document CDA créé dans le cadre de ce guide d'implémentation est le suivant : <a href="ressources_cda.html#schémas-xsd">Export du dossier usager informatisé</a>
+Les interactions font référence à un certain nombre de ressources du standard ainsi qu’aux spécifications de l’API REST FHIR, basées sur le protocole HTTP. Les syntaxes retenues sont la syntaxe XML et JSON.
 
 #### Ressources FHIR profilées
 
