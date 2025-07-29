@@ -13,3 +13,4 @@ Title:    "Modèle de contenu DUI"
 * -> "EntiteJuridique"
 * name -> "raisonSocial"
 * identifier[idNatSt] -> "idNat_Struct"
+
