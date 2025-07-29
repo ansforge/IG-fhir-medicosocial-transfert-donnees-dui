@@ -1,9 +1,9 @@
 TDDUI : Validation Results
 =========================================
 
-err = 1, warn = 81, info = 27
+err = 0, warn = 81, info = 27
 IG Publisher Version: 2.0.12
-Generated Mon Jul 28 14:47:40 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.tddui#1.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/tddui)
+Generated Tue Jul 29 07:17:07 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.tddui#1.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/tddui)
  Build Errors : 0 / 34 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Bundle-TDDUIBundleExample : 0 / 0 / 7
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CapabilityStatement-TDDUIConsommateur : 0 / 1 / 1
@@ -14,7 +14,7 @@ Generated Mon Jul 28 14:47:40 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.tddui
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Encounter-tddui-encounter-sejour-example : 0 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.tddui : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Organization-tddui-organization-example : 0 / 1 / 2
- /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Patient-tddui-patient-example : 1 / 0 / 3
+ /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Patient-tddui-patient-example : 0 / 0 / 3
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Patient-tddui-patient-ins-example : 0 / 1 / 4
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-Encounter-sejour : 0 / 3 / 4
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-Organization : 0 / 3 / 3
@@ -82,7 +82,6 @@ WARNING: Organization/tddui-organization-example: Organization.identifier[0].sys
 == fsh-generated/resources/Patient-tddui-patient-example.json ==
 INFORMATION: Patient/tddui-patient-example: Patient.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Patient/tddui-patient-example: Patient.name[0].extension[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
-ERROR: Patient/tddui-patient-example: Patient.birthDate: The extension https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order is not allowed to be used at this point (allowed = e:Patient; this element is [Patient.birthDate, date])
 == fsh-generated/resources/Patient-tddui-patient-ins-example.json ==
 INFORMATION: Patient/tddui-patient-ins-example: Patient.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Patient/tddui-patient-ins-example: Patient.extension[0].extension[0].value.ofType(Coding): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445|2.1.0
