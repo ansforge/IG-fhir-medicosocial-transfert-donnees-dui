@@ -8,6 +8,10 @@ Description: "Exemple de la ressource TDDUIPatient"
 * extension[birthPlace].valueAddress.city = "Mazoires"
 * extension[birthPlace].valueAddress.country = "FRA"
 
+* identifier[PI].use = #official
+* identifier[PI].system = "urn:oid:1.2.250.1.213.1.4.8"
+* identifier[PI].value = "147720425367411"
+
 * name[usualName].use = #usual
 * name[usualName].family = "DUPONT"
 
