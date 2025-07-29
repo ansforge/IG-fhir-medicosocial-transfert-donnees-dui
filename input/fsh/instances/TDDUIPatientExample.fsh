@@ -8,9 +8,9 @@ Description: "Exemple de la ressource TDDUIPatient"
 * extension[birthPlace].valueAddress.city = "Mazoires"
 * extension[birthPlace].valueAddress.country = "FRA"
 
-* identifier[PI].use = #official
-* identifier[PI].system = "urn:oid:1.2.250.1.213.1.4.8"
-* identifier[PI].value = "147720425367411"
+* identifier[PI].use = #usual
+* identifier[PI].system = "http://terminology.hl7.org/CodeSystem/v2-0203"
+* identifier[PI].value = "PI"
 
 * name[usualName].use = #usual
 * name[usualName].family = "DUPONT"
