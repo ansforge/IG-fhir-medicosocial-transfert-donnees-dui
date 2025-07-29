@@ -4,7 +4,7 @@ Id: tddui-patient
 Title: "TDDUI Patient"
 Description: "Profil de la ressource FrCorePatientProfile permettant de représenter un usager lorsque l'INS n'est pas transmis."
 
-* extension[birthPlace].value[x] only Address
+* extension[birthPlace].value[x] only fr-core-address
 
 * insert TDDUIPatientIdSlices
 * birthDate.extension contains
