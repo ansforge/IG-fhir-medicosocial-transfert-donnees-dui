@@ -1,6 +1,6 @@
 @startuml
 
-"Logiciel DUI" -> "Logiciel DUI ou SI tiers" : Flux 1.1 **AjoutDocument** \n HTTP POST [base] (+ ressource "DocumentReference")
-"Logiciel DUI" <-- "Logiciel DUI ou SI tiers" : Flux 1.2 **ResultatAjoutDocument** \n HTTP 201 Created (+ ressource "DocumentReference")
+"Logiciel DUI" -> "Logiciel DUI ou SI tiers" : Flux 1.1 **Transmission données DUI** \n HTTP POST [base] (+ ressource "Bundle")
+"Logiciel DUI" <-- "Logiciel DUI ou SI tiers" : Flux 1.2 **Resultat transmission données DUI** \n HTTP 201 Created (+ ressource "Bundle")
 
 @enduml
