@@ -103,14 +103,4 @@ Le rôle de consommateur incarné par un système est de réceptionner et d’im
       Lien vers la description détaillée : <a href="description_flux_1_ajout_doc.html">flux 1</a>
     </td>
   </tr>
-  <tr>
-    <td>
-      <ul>
-      <li>Flux 2.1 - Ajout d'un lot de données DUI</li>
-      <li>Flux 2.2 - Résultat de l'ajout d'un lots de données DUI</li>
-      </ul>
-      {%include flux2.svg%} <br>
-      Lien vers la description détaillée : <a href="description_flux_2_ajout_lot_doc.html">flux 2</a>
-    </td>
-  </tr>
 </table>
