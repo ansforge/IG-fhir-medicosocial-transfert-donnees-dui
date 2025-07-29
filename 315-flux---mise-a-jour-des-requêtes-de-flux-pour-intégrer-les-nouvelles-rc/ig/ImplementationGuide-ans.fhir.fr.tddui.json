@@ -10,7 +10,7 @@
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2025-07-29T08:59:27+00:00",
+  "date" : "2025-07-29T12:29:24+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -713,18 +713,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/tddui-documentreference"
-      },
-      "name" : "TDDUI Document Reference",
-      "description" : "Profil générique créé dans le contexte du transfert de données DUI pour véhiculer un document au format CDA, inclus dans DocumentReference.attachment.data.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
       "reference" : {
@@ -884,23 +872,11 @@
         "valueString" : "Bundle"
       }],
       "reference" : {
-        "reference" : "Bundle/TDDUIBundleExample"
+        "reference" : "Bundle/ExampleTDDUIBundle"
       },
       "name" : "TDDUIBundleExample",
-      "description" : "Exemple de ressource Bundle suivant le profil TDDUIBundle",
+      "description" : "Exemple de bundle conforme au profil TDDUIBundle",
       "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "DocumentReference"
-      }],
-      "reference" : {
-        "reference" : "DocumentReference/TDDUIDocumentReferenceExample"
-      },
-      "name" : "TDDUIDocumentReferenceExample",
-      "description" : "Exemple de ressource DocumentReference suivant le profil TDDUIDocumentReference",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-documentreference"
     }],
     "page" : {
       "extension" : [{
