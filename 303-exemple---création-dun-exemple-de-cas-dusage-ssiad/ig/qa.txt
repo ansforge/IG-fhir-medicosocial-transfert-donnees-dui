@@ -1,9 +1,9 @@
 TDDUI : Validation Results
 =========================================
 
-err = 0, warn = 81, info = 27
+err = 0, warn = 82, info = 27
 IG Publisher Version: 2.0.12
-Generated Tue Jul 29 07:17:07 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.tddui#1.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/tddui)
+Generated Tue Jul 29 12:52:36 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.tddui#1.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/tddui)
  Build Errors : 0 / 34 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Bundle-TDDUIBundleExample : 0 / 0 / 7
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CapabilityStatement-TDDUIConsommateur : 0 / 1 / 1
@@ -14,7 +14,7 @@ Generated Tue Jul 29 07:17:07 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.tddui
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Encounter-tddui-encounter-sejour-example : 0 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.tddui : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Organization-tddui-organization-example : 0 / 1 / 2
- /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Patient-tddui-patient-example : 0 / 0 / 3
+ /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Patient-tddui-patient-example : 0 / 1 / 3
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Patient-tddui-patient-ins-example : 0 / 1 / 4
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-Encounter-sejour : 0 / 3 / 4
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-Organization : 0 / 3 / 3
@@ -81,6 +81,7 @@ INFORMATION: Organization/tddui-organization-example: Organization.meta.profile[
 WARNING: Organization/tddui-organization-example: Organization.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.250.1.71.4.2.2'
 == fsh-generated/resources/Patient-tddui-patient-example.json ==
 INFORMATION: Patient/tddui-patient-example: Patient.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+WARNING: Patient/tddui-patient-example: Patient.identifier[0].system: No definition could be found for URL value 'http://identifiant-ipp.com'
 INFORMATION: Patient/tddui-patient-example: Patient.name[0].extension[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 == fsh-generated/resources/Patient-tddui-patient-ins-example.json ==
 INFORMATION: Patient/tddui-patient-ins-example: Patient.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
