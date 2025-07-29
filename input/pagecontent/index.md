@@ -36,6 +36,12 @@ Ce guide d'implémentation contient :
 - L'étude des normes et standards au format pdf : [Etude des normes et standards](NormesStandards_TransfertDonneesDUI_V1.0.pdf)
 - Les spécifications fonctionnelles : section <a href="sfe.html"> Spécifications fonctionnelles</a>
 - Les spécifications techniques : sections <a href="description_flux.html">Volume 2 - Détail des transactions</a> et <a href="artifacts.html">Ressources de conformité</a>
+- Les annexes : 
+   * <a href="mapping_fonctionnelle_FHIR.html"> Mapping FHIR du modèle de contenu DUI</a>
+   * <a href="annexes_documents_reference.html">Documents de référence</a>
+   * <a href="annexes_acronymes.html">Acronymes</a>
+   * <a href="securite.html">Sécurité</a>
+   * <a href="downloads.html">Télerchargement et usages</a>
 
 <b>Remarque</b> : l'actuelle version de la spécification technique de contenu repose sur un périmètre restreint d'export des données de logiciels DUI :
 - NIR/traits d'identité principaux du patient ;
