@@ -1,13 +1,13 @@
 TDDUI : Validation Results
 =========================================
 
-err = 3, warn = 65, info = 18
+err = 3, warn = 63, info = 18
 $--
 Generated $--. FHIR version $-- for ans.fhir.fr.tddui#$-- (canonical = https://interop.esante.gouv.fr/ig/fhir/tddui)
- Build Errors : 11 / 34 / 1
+ Build Errors : 10 / 34 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Bundle-ExampleTDDUIBundle : 0 / 6 / 15
- /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CapabilityStatement-TDDUIConsommateur : 0 / 2 / 1
- /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CapabilityStatement-TDDUIProducteur : 0 / 2 / 1
+ /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CapabilityStatement-TDDUIConsommateur : 0 / 1 / 1
+ /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CapabilityStatement-TDDUIProducteur : 0 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CodeSystem-tddui-encounter-identifier : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CodeSystem-tddui-identifier : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Encounter-tddui-encounter-sejour-example : 0 / 1 / 1
@@ -62,7 +62,6 @@ ERROR: description_flux_synthese.html#/html/body/div/div/div/div/div/table/tr/td
 WARNING: /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/output/documentation.html#/html/body/div/div/div/div/div/script at Line 285, column 2: The <script> containing the javascript 'window.location.href'... is illegal and not allowed on the HL7 ci-build - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 ci-build (if it is justified and needed)
 ERROR: index.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 410, column 12: The link 'StructureDefinition-tddui-encounter-sejour.html' for "TDDUIEncounter" cannot be resolved
 ERROR: index.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 415, column 12: The link 'StructureDefinition-tddui-organization.html' for "TDDUIOrganization" cannot be resolved
-ERROR: index.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 445, column 12: The link 'description_flux_1_transmission_donnees.html' for "Flux 1 : Transmission de données DUI" cannot be resolved
 ERROR: sfe.html#/html/body/div/div/div/div/div/ul/li/a at Line 286, column 8: The link 'sfe_transmission_des_donnees_a_un_tiers.html' for "Transmission des données à un tiers" cannot be resolved
 ERROR: sfe_modelisation_contenu.html#/html/body/div/div/div/div/div/table/tr/td/ul/a at Line 1648, column 166: The link ' https://mos.esante.gouv.fr/NOS/JDV_J284-PrestationsDirects-SERAFIN/FHIR/JDV-J284-PrestationsDirects-SERAFIN/' for "JDV-J284-PrestationsDirects_SERAFIN" cannot be resolved
 ERROR: sfe_transfert_des_donnees_a_un_tiers.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 373, column 45: The link 'description_flux_1_ajout_doc.html' for "flux 1" cannot be resolved
@@ -88,10 +87,8 @@ WARNING: Bundle/ExampleTDDUIBundle: Bundle.entry[2].resource.identifier[0].syste
 WARNING: Bundle/ExampleTDDUIBundle: Bundle.entry[2].resource/*Encounter/tddui-encounter-sejour-example*/.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.250.2345.3245.13'
 == fsh-generated/resources/CapabilityStatement-TDDUIConsommateur.json ==
 WARNING: CapabilityStatement/TDDUIConsommateur: CapabilityStatement.implementationGuide[0]: A definition could not be found for Canonical URL 'https://interop.esante.gouv.fr/ig/fhir/tddui'
-WARNING: CapabilityStatement/TDDUIConsommateur: CapabilityStatement.rest[0].resource[0].profile: A definition could not be found for Canonical URL 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-documentreference'
 == fsh-generated/resources/CapabilityStatement-TDDUIProducteur.json ==
 WARNING: CapabilityStatement/TDDUIProducteur: CapabilityStatement.implementationGuide[0]: A definition could not be found for Canonical URL 'https://interop.esante.gouv.fr/ig/fhir/tddui'
-WARNING: CapabilityStatement/TDDUIProducteur: CapabilityStatement.rest[0].resource[0].profile: A definition could not be found for Canonical URL 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-documentreference'
 == fsh-generated/resources/CodeSystem-tddui-encounter-identifier.json ==
 == fsh-generated/resources/CodeSystem-tddui-identifier.json ==
 == fsh-generated/resources/Encounter-tddui-encounter-sejour-example.json ==
