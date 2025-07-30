@@ -440,7 +440,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Bundle.entry:DUIOrganization.resource","Bundle.entry.resource","","","",1,1,"","","","Organization {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-Organization]]} {[]}
+"Bundle.entry:DUIOrganization.resource","Bundle.entry.resource","","","",1,1,"","","","Organization {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization]]} {[]}
 ","A grouping of people or organizations with a common purpose","A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action.  Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, payer/insurer, etc.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"","","(also see master files messages)","Entity. Role, or Act","Organization(classCode=ORG, determinerCode=INST)"
 "Bundle.entry:DUIOrganization.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -558,7 +558,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Bundle.entry:DUIEncounterSejour.resource","Bundle.entry.resource","","Visit
-","",1,1,"","","","Encounter {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-Encounter-sejour]]} {[]}
+","",1,1,"","","","Encounter {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour]]} {[]}
 ","An interaction during which services are provided to the patient","An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"","","Entity. Role, or Act","Encounter[@moodCode='EVN']"
 "Bundle.entry:DUIEncounterSejour.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
