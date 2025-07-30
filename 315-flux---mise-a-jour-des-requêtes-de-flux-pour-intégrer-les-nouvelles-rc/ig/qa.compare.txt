@@ -1,11 +1,11 @@
 TDDUI : Validation Results
 =========================================
 
-err = 3, warn = 64, info = 20
+err = 3, warn = 64, info = 18
 $--
 Generated $--. FHIR version $-- for ans.fhir.fr.tddui#$-- (canonical = https://interop.esante.gouv.fr/ig/fhir/tddui)
  Build Errors : 5 / 34 / 1
- /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Bundle-ExampleTDDUIBundle : 0 / 6 / 20
+ /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Bundle-ExampleTDDUIBundle : 0 / 6 / 15
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CapabilityStatement-TDDUIConsommateur : 0 / 2 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CapabilityStatement-TDDUIProducteur : 0 / 2 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CodeSystem-tddui-encounter-identifier : 0 / 0 / 1
@@ -69,19 +69,17 @@ WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in 
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/Bundle-ExampleTDDUIBundle.json ==
-INFORMATION: Bundle/ExampleTDDUIBundle: Bundle.entry[0].resource.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/ExampleTDDUIBundle: Bundle.entry[0].resource.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/ExampleTDDUIBundle: Bundle.entry[0].resource.extension[0].extension[0].value.ofType(Coding): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445|2.1.0
+WARNING: Bundle/ExampleTDDUIBundle: Bundle.entry[0].resource.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.250.1.213.1.4.8'
 INFORMATION: Bundle/ExampleTDDUIBundle: Bundle.entry[0].resource.name[0].extension[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Bundle/ExampleTDDUIBundle: Bundle.entry[1].resource.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Bundle/ExampleTDDUIBundle: Bundle.entry[1].resource.extension[0].extension[0].value.ofType(Coding): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445|2.1.0
-WARNING: Bundle/ExampleTDDUIBundle: Bundle.entry[1].resource.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.250.1.213.1.4.8'
-INFORMATION: Bundle/ExampleTDDUIBundle: Bundle.entry[1].resource.name[0].extension[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Bundle/ExampleTDDUIBundle: Bundle.entry[1].resource/*Patient/tddui-patient-ins-example*/.extension[0].extension[0].value.ofType(Coding): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445|2.1.0
-WARNING: Bundle/ExampleTDDUIBundle: Bundle.entry[1].resource/*Patient/tddui-patient-ins-example*/.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.250.1.213.1.4.8'
-INFORMATION: Bundle/ExampleTDDUIBundle: Bundle.entry[2].resource.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-Organization|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
-WARNING: Bundle/ExampleTDDUIBundle: Bundle.entry[2].resource.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.250.1.71.4.2.2'
-WARNING: Bundle/ExampleTDDUIBundle: Bundle.entry[2].resource/*Organization/tddui-organization-example*/.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.250.1.71.4.2.2'
-WARNING: Bundle/ExampleTDDUIBundle: Bundle.entry[3].resource.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.250.2345.3245.13'
-WARNING: Bundle/ExampleTDDUIBundle: Bundle.entry[3].resource/*Encounter/tddui-encounter-sejour-example*/.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.250.2345.3245.13'
+INFORMATION: Bundle/ExampleTDDUIBundle: Bundle.entry[0].resource/*Patient/tddui-patient-ins-example*/.extension[0].extension[0].value.ofType(Coding): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445|2.1.0
+WARNING: Bundle/ExampleTDDUIBundle: Bundle.entry[0].resource/*Patient/tddui-patient-ins-example*/.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.250.1.213.1.4.8'
+INFORMATION: Bundle/ExampleTDDUIBundle: Bundle.entry[1].resource.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-Organization|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+WARNING: Bundle/ExampleTDDUIBundle: Bundle.entry[1].resource.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.250.1.71.4.2.2'
+WARNING: Bundle/ExampleTDDUIBundle: Bundle.entry[1].resource/*Organization/tddui-organization-example*/.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.250.1.71.4.2.2'
+WARNING: Bundle/ExampleTDDUIBundle: Bundle.entry[2].resource.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.250.2345.3245.13'
+WARNING: Bundle/ExampleTDDUIBundle: Bundle.entry[2].resource/*Encounter/tddui-encounter-sejour-example*/.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.250.2345.3245.13'
 == fsh-generated/resources/CapabilityStatement-TDDUIConsommateur.json ==
 WARNING: CapabilityStatement/TDDUIConsommateur: CapabilityStatement.implementationGuide[0]: A definition could not be found for Canonical URL 'https://interop.esante.gouv.fr/ig/fhir/tddui'
 WARNING: CapabilityStatement/TDDUIConsommateur: CapabilityStatement.rest[0].resource[0].profile: A definition could not be found for Canonical URL 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-documentreference'
