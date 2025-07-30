@@ -55,16 +55,6 @@ Le rôle de producteur incarné par un système est l’acteur à l’origine de
 
 Le rôle de consommateur incarné par un système est de réceptionner et d’importer les données dans son système (SI-tiers). 
 
-<table style="width:100%">
-  <tr>
-    <th>Processus collaboratif</th>
-    <th>Demandeur</th>
-  </tr>
-  <tr>
-    <td>Export des données d’un logiciel DUI</td>
-  </tr>
-</table>
-
 ### Identification des flux
 
 <table style="width:100%">
