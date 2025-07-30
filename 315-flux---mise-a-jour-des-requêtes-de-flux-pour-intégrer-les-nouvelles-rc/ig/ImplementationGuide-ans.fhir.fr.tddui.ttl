@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "TDDUI"] ; # 
   fhir:title [ fhir:v "Médicosocial - Transfert de données DUI"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-07-30T14:31:57+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-07-30T14:39:43+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -1278,21 +1278,21 @@
            a fhir:url ;
            fhir:v "sfe.html"^^xsd:anyURI
          ] ;
-         fhir:title [ fhir:v "Spécifications fonctionnelles" ] ;
+         fhir:title [ fhir:v "Volume 1 - Etude fonctionnelle" ] ;
          fhir:generation [ fhir:v "markdown" ] ;
          fhir:page ( [
            fhir:extension ( [
              fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
              fhir:value [
                a fhir:url ;
-               fhir:v "sfe_cadre_juridique.html"^^xsd:anyURI
+               fhir:v "sfe_cas_usage.html"^^xsd:anyURI
              ]
            ] ) ;
            fhir:name [
              a fhir:url ;
-             fhir:v "sfe_cadre_juridique.html"^^xsd:anyURI
+             fhir:v "sfe_cas_usage.html"^^xsd:anyURI
            ] ;
-           fhir:title [ fhir:v "Cadre juridique et orientations organisationnelles" ] ;
+           fhir:title [ fhir:v "Cas d'usage" ] ;
            fhir:generation [ fhir:v "markdown" ]
          ] [
            fhir:extension ( [
@@ -1313,14 +1313,14 @@
              fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
              fhir:value [
                a fhir:url ;
-               fhir:v "sfe_definition_processus.html"^^xsd:anyURI
+               fhir:v "sfe_transfert_des_donnees_a_un_tiers.html"^^xsd:anyURI
              ]
            ] ) ;
            fhir:name [
              a fhir:url ;
-             fhir:v "sfe_definition_processus.html"^^xsd:anyURI
+             fhir:v "sfe_transfert_des_donnees_a_un_tiers.html"^^xsd:anyURI
            ] ;
-           fhir:title [ fhir:v "Définition des processus collaboratifs" ] ;
+           fhir:title [ fhir:v "Transfert des données à un tiers" ] ;
            fhir:generation [ fhir:v "markdown" ]
          ] [
            fhir:extension ( [
@@ -1575,20 +1575,6 @@
              fhir:v "description_flux_2_ajout_lot_doc.html"^^xsd:anyURI
            ] ;
            fhir:title [ fhir:v "Flux 2 - Ajout d'un lot de documents" ] ;
-           fhir:generation [ fhir:v "markdown" ]
-         ] [
-           fhir:extension ( [
-             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-             fhir:value [
-               a fhir:url ;
-               fhir:v "description_flux_3_maj_doc.html"^^xsd:anyURI
-             ]
-           ] ) ;
-           fhir:name [
-             a fhir:url ;
-             fhir:v "description_flux_3_maj_doc.html"^^xsd:anyURI
-           ] ;
-           fhir:title [ fhir:v "Flux 3 - Mise à jour d'un document" ] ;
            fhir:generation [ fhir:v "markdown" ]
          ] )
        ] [
