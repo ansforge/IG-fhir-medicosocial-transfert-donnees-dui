@@ -37,21 +37,6 @@
 
 ### Liste des acteurs pour l’ensemble des processus
 
-#### Le demandeur
-
-Le demandeur est l’acteur à l’origine du besoin. Il peut s’agir d’une personne physique ou morale.
-
-<table style="width:100%">
-  <tr>
-    <th>Processus collaboratif</th>
-    <th>Demandeur</th>
-  </tr>
-  <tr>
-    <td rowspan=2>Export des données d’un logiciel DUI</td>
-    <td><b>ESSMS</b> : Etablissement qui accompagne l’usager. Il assure la gestion de l’accompagnement de l'usager à travers son logiciel DUI.</td>
-  </tr>
-</table>
-
 #### Le producteur 
 
 Le rôle de producteur incarné par un système est l’acteur à l’origine de l’export des données.
