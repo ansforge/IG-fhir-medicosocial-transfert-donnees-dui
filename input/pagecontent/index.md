@@ -83,7 +83,7 @@ Les flux décrits dans ce guide d'implémentation sont les suivants.
 
 | Flux | Emetteur | Récepteur |
 | ----- | ----- | ----- |
-| <a href="description_flux_1_transmission_donnees.html">Flux 1 : Transmission de données DUI</a> | Logiciel DUI | SI tiers |
+| <a href="description_flux_1_transmission_donnees_dui.html">Flux 1 : Transmission de données DUI</a> | Logiciel DUI | SI tiers |
 
 Pour en savoir davantage, rendez-vous sur la page <a href="description_flux_synthese.html">Synthèse des flux</a>.
 
