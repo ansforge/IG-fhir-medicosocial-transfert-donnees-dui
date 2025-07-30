@@ -75,7 +75,7 @@ Le rôle de consommateur incarné par un système est de réceptionner et d’im
   <tr>
     <td rowspan="2">
       <ul>
-      <li>Transférer les données d’un logiciel DUI vers un SI tiers</li>
+      <li>Transfert des données d'un logiciel DUI</li>
       </ul>
     </td>
     <td>

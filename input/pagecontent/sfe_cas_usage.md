@@ -6,11 +6,11 @@ Cette section décrit, **à titre d'exemple et de façon non exhaustive**, un en
     </p>
 </blockquote>
 
-#### Transférer les données d’un DUI vers un SI-tiers
+#### Transfert des données d’un logiciel DUI vers un SI-tiers
 
 <blockquote>
     <div class="note note">
-    <u>Cas d'usage SSIAD :</u> Transférer les données d’un logiciel DUI correspondant aux Services de soins infirmiers à domicile (SSIAD) vers un SI-tiers pour renforcer la connaissance et le pilotage de la branche médico-sociale grâce aux données financières, d'activités des ESMS, etc.</div>
+    <u>Cas d'usage SSIAD :</u> Transfert des données d’un logiciel DUI correspondant aux Services de soins infirmiers à domicile (SSIAD) vers un SI-tiers pour renforcer la connaissance et le pilotage de la branche médico-sociale grâce aux données financières, d'activités des ESMS, etc.</div>
 </blockquote>
     
 Ce cas d’usage s’inscrit dans le cadre du programme décliné en France, au niveau national pour déployer des solutions numériques au sein des établissements et services sociaux et medico-sociaux (ESSMS), favoriser l’interopérabilité et transférer des données d’un logiciel DUI (dossiers usagers informatisés) vers un Système d’Information tiers.
