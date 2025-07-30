@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Cadre juridique et orientations organisationnelles - Médicosocial - Transfert de données DUI v1.1.0</title>
+    <title>Professions du médico-social - Médicosocial - Transfert de données DUI v1.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -42,8 +42,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"2.1"}
-    h3,h4,h5,h6{--heading-prefix:"2.1"}</style>
+    <style type="text/css">h2{--heading-prefix:"5.4"}
+    h3,h4,h5,h6{--heading-prefix:"5.4"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -174,15 +174,15 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='sfe.html'><b>Volume 1 - Etude fonctionnelle</b></a></li><li><b>Cadre juridique et orientations organisationnelles</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='annexes.html'><b>Annexes</b></a></li><li><b>Professions du médico-social</b></li>
 
           <span style="float:right;">
 
-            <a href="sfe.html">&lt;prev</a> | 
+            <a href="annexes_acronymes.html">&lt;prev</a> | 
 
             <a href="#bottom">bottom</a>
 
-          | <a href="sfe_organisation_contexte_metier.html">next&gt;</a>
+          | <a href="securite.html">next&gt;</a>
 
           </span>
 
@@ -205,7 +205,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </style>
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Médicosocial - Transfert de données DUI - Local Development build (v1.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://interop.esante.gouv.fr/ig/fhir/tddui/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
-  <h2>Cadre juridique et orientations organisationnelles</h2>
+  <h2>Professions du médico-social</h2>
   
 
 
@@ -223,36 +223,50 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div>
 <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
-<p>L’étude menée dans cette version du volet correspond à l’expression des besoins définis lors des ateliers avec la CNSA et enrichis par l’ANS. Elle comprend :</p>
-<ul>
-  <li>Le contexte métier du volet ;</li>
-  <li>Une modélisation et une description détaillée des données administratives, ainsi que les données relatives aux grilles d’évaluations (GIR, GEVA) liées à l’accompagnement de l’usager ;</li>
-  <li>Une modélisation plus large et non détaillée du reste des données liées à l’accompagnement, des données médicales et des données liées à la coordination des différents acteurs.</li>
-</ul>
+<p>Table de correspondance des codes professions du médico-social n'ayant pas d'équivalence dans les référenciels officiels.</p>
 
-<p>Une version de cette spécification sera publiée a posteriori afin d’y intégrer la modélisation et la description détaillée de l’ensemble des données liées à l’accompagnement, aux données médicales et aux données liées à la coordination des différents acteurs.</p>
+<table>
+<tr>
+ <td rowspan="2">Code (Libellé)</td>
+        <td colspan="3" align="center">Equivalence dans les référentiels officiels (NOS/CI-SIS)</td>
+    </tr>
+    <tr>
+        <td align="center">Profession</td>
+        <td align="center">Rôle</td>
+        <td align="center">Mode d'exercice</td>
+    </tr>
+<tr>
+        <td>IDE (Infirmier diplômé d'état)</td>
+        <td>infirmier (code G15_60 / <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J01-XdsAuthorSpecialty-CISIS.html">JDV_J01-XdsAuthorSpecialty-CISIS</a>)</td>
+        <td></td>
+       <td></td>
+    </tr>
+<tr>
+        <td>IDEC (Infirmier diplômé d'état coordinateur)</td>
+        <td>infirmier (code G15_60 / <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J01-XdsAuthorSpecialty-CISIS.html">JDV_J01-XdsAuthorSpecialty-CISIS</a>)</td>
+        <td>Coordonnateur de parcours (code 330 / <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J47-FunctionCode-CISIS.html">JDV_J47-FunctionCode-CISIS</a>)</td>
+        <td></td>
+    </tr>
+<tr>
+           <td>IDEL (Infirmier libéral)</td>
+          <td>infirmier (code G15_60 / <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J01-XdsAuthorSpecialty-CISIS.html">JDV_J01-XdsAuthorSpecialty-CISIS</a>)</td>
+         <td></td>
+         <td>Libéral (code L / <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J117-ModeExercice-ENREG.html">JDV-J117-ModeExercice-ENREG</a>)</td>
+    </tr>
+<tr>
+        <td>Infirmier salarié</td>
+       <td>infirmier (code G15_60 / <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J01-XdsAuthorSpecialty-CISIS.html">JDV_J01-XdsAuthorSpecialty-CISIS</a>)</td>
+       <td></td>
+      <td>Salarié (code S / <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J117-ModeExercice-ENREG.html">JDV-J117-ModeExercice-ENREG</a>)</td>
+</tr>
+<tr>
+       <td>Infirmier bénévole</td>
+       <td>infirmier (code G15_60 / <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J01-XdsAuthorSpecialty-CISIS.html">JDV_J01-XdsAuthorSpecialty-CISIS</a>)</td>
+       <td></td>
+      <td>Bénévole (code B / <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J117-ModeExercice-ENREG.html">JDV-J117-ModeExercice-ENREG</a>)</td>
+</tr>
+</table>
 
-<p>A noter que les spécifications fonctionnelles de contenu sont des spécifications d’interopérabilité qui n’ont ni vocation à définir la structure interne et l’urbanisation des systèmes d’information, ni vocation à aborder la gestion des habilitations au sein des acteurs. Cette gestion des habilitations doit faire l’objet d’une étude préalable avant toute implémentation de ces interfaces dans le respect du cadre réglementaire de l’échange et du partage de données de santé.</p>
-
-<p>Par ailleurs, les contraintes de sécurité concernant les flux échangés ne sont pas traités dans ce document. En effet, les aspects relatifs à la sécurité sont du ressort du système d’information qui les implémentent.</p>
-
-<p>Le détail des échanges entre les acteurs est quant à lui décrit dans la partie dédiée aux flux.</p>
-
-<h3 id="exemples-de-cas-dusage">Exemples de cas d’usage</h3>
-
-<p>Les cas d’usage décrits ci-dessous correspondent à ceux pour lesquels le périmètre a été défini, ce qui n’exclut pas d'ajouter d’autres cas d’usage au fur et à mesure des besoins.
-Pour illustration, les cas d’usage suivants ont été identifiés :</p>
-<ul>
-  <li>Transférer les données d’un DUI pour répondre aux besoins d’un usager (changement d’ESSMS par exemple).</li>
-  <li>Transférer les données d’un DUI pour répondre aux besoins de l’ESSMS :
-    <ul>
-      <li>Permettre une reprise de données lors d‘un changement de logiciel DUI.</li>
-      <li>Transférer des données aux tutelles (CNSA, CNAM, ARS, CD, etc.).</li>
-    </ul>
-  </li>
-</ul>
-
-<p>Les cas d’usage doivent s’appuyer sur une assise juridique afin de légitimer le transfert des données notamment si ce dernier comporte des données personnelles ou médicales. Cet aspect est de la responsabilité des acteurs qui utilisent cette spécification. Cette dernière n’a pas vocation à légitimer les traitements des données.</p>
 
 
 
@@ -276,7 +290,7 @@ Pour illustration, les cas d’usage suivants ont été identifiés :</p>
             <tr>
               <td style="text-align:left">&#xA0;
 
-                <a href="sfe.html">&lt;prev</a>
+                <a href="annexes_acronymes.html">&lt;prev</a>
 
               </td>
               <td style="text-align:center">
@@ -284,7 +298,7 @@ Pour illustration, les cas d’usage suivants ont été identifiés :</p>
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="sfe_organisation_contexte_metier.html">next&gt;</a>
+                <a href="securite.html">next&gt;</a>
 
               </td>
             </tr>
