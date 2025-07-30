@@ -1,6 +1,6 @@
 ### Validateurs FHIR
 
-La plateforme de test [EVSClient](https://interop.esante.gouv.fr/evs/fhir/validator.seam?standard=31) propose un validateur FHIR par profil défini dans ce guide d'implémentation (cf onglet [Ressources de conformité](https://interop.esante.gouv.fr/ig/fhir/tddui/artifacts.html#structures-resource-profiles)).
+La plateforme de test [EVSClient](https://interop.esante.gouv.fr/evs/fhir/validator.seam?standard=31) propose un validateur FHIR par profil défini dans ce guide d'implémentation (cf onglet <a href="artifacts.html">Ressources de conformité</a>).
 
 La documentation de l'outil EVSClient est accessible [ici](https://interop.esante.gouv.fr/gazelle-documentation/EVS-Client/user.html).
 
