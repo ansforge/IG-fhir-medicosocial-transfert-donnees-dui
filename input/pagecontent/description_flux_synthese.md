@@ -6,8 +6,7 @@
   <tr>
     <td rowspan="2">
       <ul>
-      <li>Portabilité des données entre deux logiciels DUI</li>
-      <li>Transférer les données d’un logiciel DUI vers un SI tiers</li>
+      <li>Transfert des données d'un logiciel DUI</li>
       </ul>
     </td>
     <td>

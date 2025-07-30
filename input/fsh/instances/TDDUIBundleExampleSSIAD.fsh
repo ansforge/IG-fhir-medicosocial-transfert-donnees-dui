@@ -5,11 +5,6 @@ Description: "Exemple de bundle conforme au profil TDDUIBundle"
 Usage: #example
 * type = #transaction
 
-* entry[DUIPatient].fullUrl = "https://test-server.fr/Patient/tddui-patient-example"
-* entry[DUIPatient].resource = tddui-patient-example
-* entry[DUIPatient].request.method = #POST
-* entry[DUIPatient].request.url = "TDDUIPatient"
-
 * entry[DUIPatientINS].fullUrl = "https://test-server.fr/Patient/tddui-patient-ins-example"
 * entry[DUIPatientINS].resource = tddui-patient-ins-example
 * entry[DUIPatientINS].request.method = #POST

@@ -2,7 +2,7 @@ Profile: TDDUIBundle
 Parent: Bundle
 Id: tddui-bundle
 Title: "TDDUI Bundle"
-Description: "Profil générique créé dans le contexte du transfert de données DUI pour véhiculer un lot de documents au format CDA." 
+Description: "Profil générique créé dans le contexte du transfert des données d'un logiciel DUI." 
 
 * type = #transaction
 
