@@ -14,7 +14,6 @@
     <th>Pré-conditions</th>
   <td>
   <ul>
-  <li>L’usager est enregistré dans le logiciel DUI de l’ESSMS.</li>
   <li>Un SI Tiers a demandé à l’ESSMS de lui transmettre tout ou partie des données médico-sociales de l’usager.</li>
   </ul>
   </td>
