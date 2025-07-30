@@ -69,7 +69,7 @@ Les ressources profilées dans le cadre de ce guide d'implémentation sont les s
 
 | Ressource | Profil | Description |
 | ----- | ----- | ----- |
-| <a href="https://hl7.org/fhir/R4/bundle.html">Bundle</a> | [TDDUIBundle](StructureDefinition-tddui-bundle.html) | Profil générique créé dans le contexte du transfert des données d'un logiciel DUI |
+| <a href="https://hl7.org/fhir/R4/bundle.html">Bundle</a> | [TDDUIBundle](StructureDefinition-tddui-bundle.html) | Profil générique créé pour transmettre des données d'un logiciel DUI |
 | <a href="https://hl7.org/fhir/R4/encounter.html">Encounter</a> | [TDDUIEncounter](StructureDefinition-tddui-encounter-sejour.html) | Profil de la ressource Encounter permettant de regrouper les informations relatives au séjour d'un usager dans une structure ESSMS |
 | <a href="https://hl7.org/fhir/R4/organization.html">Organization</a> | [TDDUIOrganization](StructureDefinition-tddui-organization.html) | Profil de la ressource FRCoreOrganizationProfile permettant de représenter les entités juridiques. |
 | <a href="https://hl7.org/fhir/R4/Patient.html">Patient</a> | [TDDUIPatient](StructureDefinition-tddui-patient.html) | Profil de la ressource FrCorePatientProfile permettant de représenter un usager lorsque l'INS n'est pas transmis. |

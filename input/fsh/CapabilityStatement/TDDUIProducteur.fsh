@@ -17,17 +17,18 @@ Usage: #definition
 * rest.documentation = "Transmission de données DUI vers un SI tiers (flux 1)."
 * rest.security.cors = false
 * rest.security.description = "L’ANS propose des référentiels dédiés à la politique de sécurité (la PGSSI-S) et des mécanismes de sécurisation sont définis dans les volets de la couche Transport du Cadre d’Interopérabilité des systèmes d’information de santé (CI-SIS)"
+
 * rest.resource[0].type = #Patient
-* rest.resource[=].profile = Canonical(tddui-patient)
-* rest.resource[+].profile = Canonical(tddui-patient-ins)
+* rest.resource[=].supportedProfile = Canonical(tddui-patient)
+* rest.resource[+].supportedProfile = Canonical(tddui-patient-ins)
 * rest.resource[=].interaction[0].code = #create
 
 * rest.resource[1].type = #Organization
-* rest.resource[=].profile = Canonical(tddui-Organization)
+* rest.resource[=].supportedProfile = Canonical(tddui-organization)
 * rest.resource[=].interaction[0].code = #create
 
 * rest.resource[2].type = #Encounter
-* rest.resource[=].profile = Canonical(tddui-Encounter-sejour)
+* rest.resource[=].supportedProfile = Canonical(tddui-encounter-sejour)
 * rest.resource[=].interaction[0].code = #create
 
 * rest.interaction[0].code = #transaction
