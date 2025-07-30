@@ -35,15 +35,13 @@ Dans la continuité des travaux menés dans le cadre du programme ESMS numériqu
 Ce guide d'implémentation contient : 
 - L'étude des normes et standards au format pdf : [Etude des normes et standards](NormesStandards_TransfertDonneesDUI_V1.0.pdf)
 - Les spécifications fonctionnelles : section <a href="sfe.html"> Spécifications fonctionnelles</a>
-- La spécification technique de contenu : sections <a href="contenu_dossier.html">Contenu du dossier</a> et <a href="ressources_cda.html">Ressources de conformité</a>
+- La spécification technique de contenu :  <br>
+Il existe deux représentations techniques pour le contenu de l'export des données d'un logiciel DUI :
+  * une représentation basée sur le standard FHIR afin de s’aligner sur les recommandations européennes et pour s’adapter aux évolutions des <a href="sfe_cas_usage.html">cas d'usage</a> de ce volet.<br>
+  La représentation FHIR décrite dans ce guide est à privilégier pour toute nouvelle implémentation : sections <a href="contenu_dossier.html">Contenu du dossier</a> et <a href="ressources_cda.html">Ressources de conformité</a>
+  * une représentation basée sur le standard CDA qui est spécifiée dans le guide d'implémentation <a href="https://interop.esante.gouv.fr/ig/cda/tddui/">Médicosocial - Transfert de données DUI CDA</a>. Ce guide est restreint au cas d'usage SSIAD.
+Les évolutions de ce guide d’implémentation sont limitées à des corrections techniques. Ce guide d'implementation sera déprécié lorsque la transition des éditeurs de CDA vers FHIR sera achevée.
 - La spécification technique de transport : sections <a href="description_flux.html">Description des flux</a> et <a href="artifacts.html">Ressources de conformité</a>
-
-<b>Remarque</b> : l'actuelle version de la spécification technique de contenu repose sur un périmètre restreint d'export des données de logiciels DUI :
-- NIR/traits d'identité principaux du patient ;
-- évaluation de l'autonomie de l'usager accompagnée (ou non) de ses grilles d'évaluation structurées ou non structurées ;
-- évènements de l'agenda usager organisés par l’ESSMS entrant dans la thérapie de l’usager ;
-- transports de l'usager associé aux évènements de l'agenda usager ;
-- informations sur le séjour de l'usager.
 
 ### Lectorat cible
 

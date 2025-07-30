@@ -16,8 +16,11 @@ Description: "Exemple d'un séjour en ESSMS"
 
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode#HH // Code HH = Home Health (Cas d'usage SSIAD)
 
-// Commentaire
+// Date d'entrée
 * period.start = "2023-04-14"
+
+// Date prévisionnelle de sortie 
+* extension[TDDUI-plannedEndDate-r5].valueDateTime = "2023-05-05"
 
 // Identifiant du séjour
 * identifier[idStay]
