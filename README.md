@@ -14,7 +14,7 @@ Dans la continuité des travaux menés dans le cadre du programme ESMS numériqu
 
 
 ## Contexte technique du projet
-Les données du DUI seront structurées à l'aide de profils FHIR.
+Les données envoyées par les DUI(s) seront structurées par des profils FHIR.
 Le transport s'effectuera par échange de ressources FHIR suivant une API REST FHIR entre 2 acteurs.
 Il n'existe pas à l'heure actuelle d'architecture qui permettrait de stocker ces données médico-sociales, et donc de s'orienter vers une gestion telle que celle décrite dans le volet PDSm. 
 
