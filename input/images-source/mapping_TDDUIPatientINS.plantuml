@@ -1,0 +1,30 @@
+@startuml
+
+map "<&layers> name:usualName" as nameusualName #back:WhiteSmoke;header:LightGray {
+    nomUsage => family
+    prenomUtilise => given
+}
+
+map "<&layers> name:officialName" as nameofficialName #back:WhiteSmoke;header:LightGray {
+    prenom => <&plus> birth-list-given-name
+    nomNaissance => family
+    premierPrenomActeNaissance => given
+    civilite => prefix
+}
+
+map "**UsagerINS : TDDUIPatientINS**" as UsagerINS #back:MintCream;header:LightSeaGreen {
+    paysNaissance => <&plus> birthPlace.value[x].country
+    communeNaissance => <&plus> birthPlace.value[x].extension:inseeCode
+    numSecuriteSociale => <&layers> identifier:NSS
+    identifiantLocalUsagerESSMS => <&layers> identifier:PI
+    matriculeINS => <&layers> identifier:INS-NIR
+    matriculeINS => <&layers> identifier:INS-NIA
+    numeroIndividuInitial => <&layers> identifier:InitialNumberMDPH
+    sexe => gender
+    dateNaissance => birthDate
+    <&layers> name:usualName *-> nameusualName
+    <&layers> name:officialName *-> nameofficialName
+}
+
+
+@enduml

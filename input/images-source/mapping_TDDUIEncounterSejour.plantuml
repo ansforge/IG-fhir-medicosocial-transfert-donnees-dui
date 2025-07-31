@@ -1,0 +1,31 @@
+@startuml
+
+map "period" as period #back:WhiteSmoke;header:LightGray {
+    dateEntree => start
+    dateSortie => end
+}
+
+object "**TDDUIPatient**" as TDDUIPatient #LimeGreen {
+    Usager
+}
+
+map "**EntiteJuridique : TDDUIOrganization**" as TDDUIOrganization #back:LightGoldenRodYellow;header:Gold {
+    idNat_Struct => <&layers> identifier:idNatSt
+    raisonSocial => name
+}
+
+map "**Sejour : TDDUIEncounterSejour**" as Sejour #back:AliceBlue;header:LightSkyBlue {
+    dateEntreePrevisionnelle => <&plus> TDDUI-plannedStartDate-r5
+    dateSortiePrevisionnelle => <&plus> TDDUI-plannedEndDate-r5
+    dateAdmission => <&plus> TDDUIAdmissionDate
+    libelleModeEntree => <&plus> TDDUIEntryModelabel
+    libelleModeSortie => <&plus> TDDUIExitModeLabel
+    commentaire => <&plus> TDDUIComment
+    idSejour => <&layers> identifier:idStay
+    period *-> period
+}
+
+Sejour -u-> TDDUIPatient : subject
+Sejour -d-> TDDUIOrganization : serviceProvider
+
+@enduml

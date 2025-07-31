@@ -41,3 +41,22 @@ Description: "Profil de la ressource Encounter permettant de regrouper les infor
 * extension[TDDUIEntryModelabel] ^short = "Libellé du mode d’entée du séjour"
 * extension[TDDUIExitModeLabel] ^short = "Libellé du mode de sortie du séjour"
 * extension[TDDUIComment] ^short = "Commentaire relatif au séjour"
+
+Mapping:  ConceptMetier_TDDUIEncounterSejour
+Source:   TDDUIEncounterSejour
+Target: "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"
+Id:       specmetier-to-TDDUIEncounterSejour
+Title:    "Modèle de contenu DUI"
+* -> "Sejour"
+ 
+* identifier[idStay] -> "idSejour"
+* subject -> "Usager"
+* serviceProvider -> "EntiteJuridique"
+* extension[TDDUI-plannedStartDate-r5] -> "dateEntreePrevisionnelle"
+* extension[TDDUI-plannedEndDate-r5] -> "dateSortiePrevisionnelle"
+* extension[TDDUIAdmissionDate] -> "dateAdmission"
+* extension[TDDUIEntryModelabel] -> "libelleModeEntree"
+* extension[TDDUIExitModeLabel] -> "libelleModeSortie"
+* extension[TDDUIComment] -> "commentaire"
+* period.start -> "dateEntree"
+* period.end -> "dateSortie"
