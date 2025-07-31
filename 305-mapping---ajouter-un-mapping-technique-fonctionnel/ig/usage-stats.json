@@ -41,28 +41,22 @@
     }
   ],
   "profiles": {
-    "Encounter": [
-      {
-        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-Encounter-sejour",
-        "title": "TDDUI Encounter Sejour"
-      }
-    ],
-    "Organization": [
-      {
-        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-Organization",
-        "title": "TDDUI Organization"
-      }
-    ],
     "Bundle": [
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle",
         "title": "TDDUI Bundle"
       }
     ],
-    "DocumentReference": [
+    "Encounter": [
       {
-        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-documentreference",
-        "title": "TDDUI Document Reference"
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour",
+        "title": "TDDUI Encounter Sejour"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization",
+        "title": "TDDUI Organization"
       }
     ],
     "Patient": [
@@ -78,6 +72,7 @@
   },
   "usage": {
     "http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedEndDate": [
+      "Bundle.entry.resource",
       "Encounter"
     ],
     "http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedStartDate": [
@@ -105,6 +100,7 @@
       "Organization"
     ],
     "http://hl7.org/fhir/StructureDefinition/patient-birthPlace": [
+      "Bundle.entry.resource",
       "Patient"
     ],
     "http://hl7.org/fhir/StructureDefinition/regex": [
@@ -146,6 +142,7 @@
       "Patient.contact"
     ],
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability": [
+      "Bundle.entry.resource",
       "Patient"
     ],
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-description": [
@@ -155,6 +152,7 @@
       "Organization"
     ],
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name": [
+      "Bundle.entry.resource.name",
       "Patient.name"
     ],
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birthdate-update-indicator": [
@@ -170,6 +168,7 @@
       "Patient"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-admission-date": [
+      "Bundle.entry.resource",
       "Encounter"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order": [
@@ -179,9 +178,11 @@
       "Encounter"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-mode-label": [
+      "Bundle.entry.resource",
       "Encounter"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exit-mode-label": [
+      "Bundle.entry.resource",
       "Encounter"
     ]
   }
