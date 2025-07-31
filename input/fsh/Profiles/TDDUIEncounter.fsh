@@ -1,6 +1,6 @@
 Profile: TDDUIEncounterSejour
 Parent: Encounter
-Id: tddui-Encounter-sejour
+Id: tddui-encounter-sejour
 Title: "TDDUI Encounter Sejour"
 Description: "Profil de la ressource Encounter permettant de regrouper les informations relatives au séjour d'un usager dans une structure ESSMS" 
 // Identifiant
