@@ -38,16 +38,23 @@ Ce guide d'implémentation contient :
 - La spécification technique de contenu :  <br>
 Il existe deux représentations techniques pour le contenu de l'export des données d'un logiciel DUI :
   * une représentation basée sur le standard FHIR afin de s’aligner sur les recommandations européennes et pour s’adapter aux évolutions des <a href="sfe_cas_usage.html">cas d'usage</a> de ce volet.<br>
-  La représentation FHIR décrite dans ce guide est à privilégier pour toute nouvelle implémentation : sections <a href="contenu_dossier.html">Contenu du dossier</a> et <a href="ressources_cda.html">Ressources de conformité</a>
+  La représentation FHIR décrite dans ce guide est à privilégier pour toute nouvelle implémentation : section <a href="artifacts.html">Ressources de conformité</a>
   * une représentation basée sur le standard CDA qui est spécifiée dans le guide d'implémentation <a href="https://interop.esante.gouv.fr/ig/cda/tddui/">Médicosocial - Transfert de données DUI CDA</a>. Ce guide est restreint au cas d'usage SSIAD.
 Les évolutions de ce guide d’implémentation sont limitées à des corrections techniques. Ce guide d'implementation sera déprécié lorsque la transition des éditeurs de CDA vers FHIR sera achevée.
-- La spécification technique de transport : sections <a href="description_flux.html">Description des flux</a> et <a href="artifacts.html">Ressources de conformité</a>
+- La spécification technique de transport : sections <a href="description_flux.html">Volume 2 - Détail des transactions</a> et <a href="artifacts.html">Ressources de conformité</a>
+- Les annexes : 
+   * <a href="mapping_fonctionnelle_FHIR.html"> Mapping FHIR du modèle de contenu DUI</a>
+   * <a href="annexes_documents_reference.html">Documents de référence</a>
+   * <a href="annexes_acronymes.html">Acronymes</a>
+   * <a href="annexes_codes_professions_roles_modes_exercices.html">Professions du médico-social</a>
+   * <a href="securite.html">Sécurité</a>
+   * <a href="downloads.html">Télerchargement et usages</a>
 
 ### Lectorat cible
 
 Ce document s'adresse aux chefs de projets qui spécifient des projets avec des interfaces interopérables et aux développeurs des interfaces interopérables des systèmes implémentant le volet « Transfert de données DUI ». Il s'adresse également à toute autre personne intervenant dans le processus de mise en place de ces interfaces et à tout porteur de SI cherchant à transporter de manière interopérable des données usagers vers un autre SI ainsi que les éditeurs de logiciels DUI.
 
-L’hypothèse est faite que le lecteur est familier des standards CDA R2 et FHIR R4.
+L’hypothèse est faite que le lecteur est familier du standard FHIR R4.
 
 ### Utilisation
 
@@ -55,13 +62,9 @@ Les spécifications d'interopérabilité présentées dans ce volet ne présagen
 
 ### Standards utilisés
 
-Les données véhiculées dans ce volet sont spécifiées dans le format CDA R2 niveau 3.
+Les données véhiculées dans ce volet ainsi que les interactions entre les systèmes reposent sur le standard HL7 FHIR Release 4.
 
-Les interactions entre les systèmes reposent quant à elles sur le standard HL7 FHIR Release 4. Elles font référence à un certain nombre de ressources du standard ainsi qu’aux spécifications de l’API REST FHIR, basées sur le protocole HTTP. Les syntaxes retenues sont la syntaxe XML et JSON.
-
-#### Template CI-SIS de document CDA créé
-
-Le template CI-SIS de document CDA créé dans le cadre de ce guide d'implémentation est le suivant : <a href="ressources_cda.html#schémas-xsd">Export du dossier usager informatisé</a>
+Les interactions font référence à un certain nombre de ressources du standard ainsi qu’aux spécifications de l’API REST FHIR, basées sur le protocole HTTP. Les syntaxes retenues sont la syntaxe XML et JSON.
 
 #### Ressources FHIR profilées
 
@@ -69,7 +72,6 @@ Les ressources profilées dans le cadre de ce guide d'implémentation sont les s
 
 | Ressource | Profil | Description |
 | ----- | ----- | ----- |
-| <a href="https://hl7.org/fhir/R4/documentreference.html">DocumentReference</a> | [TDDUIDocumentReference](StructureDefinition-tddui-documentreference.html) | Profil générique créé dans le contexte du transfert de données DUI pour véhiculer un document au format CDA (inspiré du flux <a href="https://interop.esante.gouv.fr/ig/fhir/pdsm/3.0.1/StructureDefinition-pdsm-simplified-publish.html">PDSm Simplified Publish</a>) |
 | <a href="https://hl7.org/fhir/R4/bundle.html">Bundle</a> | [TDDUIBundle](StructureDefinition-tddui-bundle.html) | Profil générique créé dans le contexte du transfert de données DUI pour véhiculer un lot de documents au format CDA |
 
 ### Flux
@@ -79,8 +81,6 @@ Les flux décrits dans ce guide d'implémentation sont les suivants.
 | Flux | Emetteur | Récepteur |
 | ----- | ----- | ----- |
 | <a href="description_flux_1_ajout_doc.html">Flux 1 : Ajout d'un document</a> | Logiciel DUI | Logiciel DUI ou SI tiers |
-| <a href="description_flux_2_ajout_lot_doc.html">Flux 2 : Ajout d'un lot de documents</a> | Logiciel DUI | Logiciel DUI ou SI tiers |
-| <a href="description_flux_3_maj_doc.html">Flux 3 : Mise a jour d'un document</a> | Logiciel DUI | Logiciel DUI ou SI tiers |
 
 Pour en savoir davantage, rendez-vous sur la page <a href="description_flux_synthese.html">Synthèse des flux</a>.
 
