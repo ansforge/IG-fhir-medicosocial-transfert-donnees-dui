@@ -448,7 +448,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Patient.birthDate.extension:tddui-birth-order","Patient.birthDate.extension","tddui-birth-order","","",1,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order]]} {[]}
 ","Ordre d’enregistrement de la naissance dans le registre d’état civil de la commune de naissance pour le mois de la naissance. Il compose les 3 derniers chiffres du NIR de l'usager avant la clé de sécurité et permet de distinguer les personnes nées au même lieu et à la même période.  Il est obligatoire si le NIR n'est pas transmis.","Ordre d’enregistrement de la naissance dans le registre d’état civil de la commune de naissance pour le mois de la naissance. Il compose les 3 derniers chiffres du NIR de l'usager avant la clé de sécurité et permet de distinguer les personnes nées au même lieu et à la même période. Il est obligatoire si le NIR n'est pas transmis.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","ordreNaissance"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","ordreNaissanceEtatCivil"
 "Patient.birthDate.value","Patient.birthDate.value","","","",0,1,"","","","date {[]} {[]}
 ","Primitive value for date","The actual value","","","","","","","","","",,,,,"",,,,"date.value",0,1,"",""
 "Patient.deceased[x]","Patient.deceased[x]","","","",0,1,"","Y","Y","boolean {[]} {[]}

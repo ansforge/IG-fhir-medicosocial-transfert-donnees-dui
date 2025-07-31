@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "TDDUIBundle"] ; # 
   fhir:title [ fhir:v "TDDUI Bundle"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-07-31T12:36:00+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-07-31T13:22:53+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -3103,6 +3103,9 @@
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUIPatientINS" ] ;
+         fhir:map [ fhir:v "UsagerINS" ]
+       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "Entity. Role, or Act" ]
        ] [
@@ -4195,6 +4198,9 @@
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUIOrganization" ] ;
+         fhir:map [ fhir:v "EntiteJuridique" ]
+       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "Entity. Role, or Act" ]
        ] [
@@ -5291,6 +5297,9 @@
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUIEncounterSejour" ] ;
+         fhir:map [ fhir:v "Sejour" ]
+       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "Entity. Role, or Act" ]
        ] [
