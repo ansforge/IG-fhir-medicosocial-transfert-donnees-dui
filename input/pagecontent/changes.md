@@ -1,3 +1,19 @@
+### Release 2.0.0-ballot de l'Implementation Guide du volet "Transfert de dossier DUI"
+
+Modifications apportées dans cette release [2.0.0-ballot](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pulls?q=is%3Apr+is%3Aclosed+milestone%3A2.0.0-ballot) :
+
+* [Mise à jour de la dépendance avec l'IG terminonogies](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/323)
+* [ANS-006-150 - Création des profils TDDUI](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/325)
+* [ANS-006-150 - Restructuration du guide d'implémentation](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/327)
+* [Renommage et réorganisation de longlet spécifications fonctionnelles](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/328)
+* [ANS-006-150 -Création dun exemple de cas dusage ssiad](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/329)
+* [ANS-006-150 -Ajouter un mapping technique fonctionnel](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/331)
+* [ANS-006-150 -Mise a jour des requêtes de flux pour intégrer les nouvelles rc](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/333)
+* [Remise des anciens noms : mode entrée et mode sortie du séjour](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/334)
+* [Renommage de l'ordre de naissance](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/339)
+* [Mise à jour du lien vers les nouvelles issues](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/340)
+* [ANS-006-150 - Correction des erreurs remontées par le QA](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/341)
+
 ### Release 1.1.0 de l'Implementation Guide du volet "Transfert de dossier DUI"
 
 Modifications apportées dans cette release [1.1.0](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pulls?q=is%3Apr+is%3Aclosed+milestone%3A1.1.0) :
