@@ -1356,7 +1356,7 @@ Les classes EntiteJuridique, Lieu et Professionnel sont issues du MOS et sont pr
         </ul>
     Autre cas d'usage : le type de l'évènement est issu<br>
     <ul>
-      - du jeu de valeur issue de la terminologie Serafin correspondant aux familles 2-PrestationDirecte et 3-PrestationIndirecte. Jeu(x) de valeur(s) associé(s) : <a href=" https://mos.esante.gouv.fr/NOS/JDV_J284-PrestationsDirects-SERAFIN/FHIR/JDV-J284-PrestationsDirects-SERAFIN/">JDV-J284-PrestationsDirects_SERAFIN</a>, <a href="https://mos.esante.gouv.fr/NOS/JDV_J283-PrestationsIndirects-SERAFIN/FHIR/JDV-J283-PrestationsIndirects-SERAFIN/">JDV_J283-PrestationsIndirects_SERAFIN</a><br>
+      - du jeu de valeur issue de la terminologie Serafin correspondant aux familles 2-PrestationDirecte et 3-PrestationIndirecte. Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J284-PrestationsDirects-SERAFIN/FHIR/JDV-J284-PrestationsDirects-SERAFIN/">JDV-J284-PrestationsDirects_SERAFIN</a>, <a href="https://mos.esante.gouv.fr/NOS/JDV_J283-PrestationsIndirects-SERAFIN/FHIR/JDV-J283-PrestationsIndirects-SERAFIN/">JDV_J283-PrestationsIndirects_SERAFIN</a><br>
       - et/ou d’un texte non structuré véhiculant les autres types d’évènements.
       </ul>
     </td>

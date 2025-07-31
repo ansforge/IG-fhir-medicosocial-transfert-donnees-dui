@@ -74,7 +74,7 @@ Le rôle de consommateur incarné par un système est de réceptionner et d’im
       <li>Flux 1.2 - Résultat de la transmission de données DUI</li>
       </ul>
       {%include flux1.svg%} <br>
-      Lien vers la description détaillée : <a href="description_flux_1_ajout_doc.html">flux 1</a>
+      Lien vers la description détaillée : <a href="description_flux_1_transmission_donnees_dui.html">flux 1</a>
     </td>
   </tr>
 </table>

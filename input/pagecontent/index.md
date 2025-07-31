@@ -43,7 +43,7 @@ Il existe deux représentations techniques pour le contenu de l'export des donn�
 Les évolutions de ce guide d’implémentation sont limitées à des corrections techniques. Ce guide d'implementation sera déprécié lorsque la transition des éditeurs de CDA vers FHIR sera achevée.
 - La spécification technique de transport : sections <a href="description_flux.html">Volume 2 - Détail des transactions</a> et <a href="artifacts.html">Ressources de conformité</a>
 - Les annexes : 
-   * <a href="mapping_fonctionnelle_FHIR.html"> Mapping FHIR du modèle de contenu DUI</a>
+   * <a href="mapping_fonctionnel_FHIR.html"> Mapping FHIR du modèle de contenu DUI</a>
    * <a href="annexes_documents_reference.html">Documents de référence</a>
    * <a href="annexes_acronymes.html">Acronymes</a>
    * <a href="annexes_codes_professions_roles_modes_exercices.html">Professions du médico-social</a>
