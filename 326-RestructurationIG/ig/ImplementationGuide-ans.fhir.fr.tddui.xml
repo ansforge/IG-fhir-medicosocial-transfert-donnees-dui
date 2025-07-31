@@ -10,7 +10,7 @@
   <name value="TDDUI"/>
   <title value="Médicosocial - Transfert de données DUI"/>
   <status value="active"/>
-  <date value="2025-07-30T10:12:08+00:00"/>
+  <date value="2025-07-31T08:16:27+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -477,6 +477,61 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-comment"/>
+      </reference>
+      <name value="Commentaire"/>
+      <description value="Commentaire relatif au séjour."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-admission-date"/>
+      </reference>
+      <name value="Date d’admission"/>
+      <description value="Date d’admission dans la structure ESSMS."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-entry-mode-label"/>
+      </reference>
+      <name value="Libellé mode d'entrée"/>
+      <description value="Libellé du mode d’entée du séjour."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-exit-mode-label"/>
+      </reference>
+      <name value="Libellé mode de sortie"/>
+      <description value="Libellé du mode de sortie du séjour."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-birth-order"/>
+      </reference>
+      <name value="Ordre de naissance dans le registre d'état civil"/>
+      <description value="Ordre d’enregistrement de la naissance dans le registre d’état civil de la commune de naissance pour le mois de la naissance. Il compose les 3 derniers chiffres du NIR de l'usager avant la clé de sécurité et permet de distinguer les personnes nées au même lieu et à la même période. Il est obligatoire si le NIR n'est pas transmis."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -484,6 +539,83 @@
       </reference>
       <name value="TDDUI Bundle"/>
       <description value="Profil générique créé dans le contexte du transfert de données DUI pour véhiculer un lot de documents au format CDA."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/tddui-encounter-identifier"/>
+      </reference>
+      <name value="TDDUI Encounter FR Core CodeSystem v2-0203"/>
+      <description value="TDDUI Encounter's identifier"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-Encounter-sejour"/>
+      </reference>
+      <name value="TDDUI Encounter Sejour"/>
+      <description value="Profil de la ressource Encounter permettant de regrouper les informations relatives au séjour d'un usager dans une structure ESSMS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/tddui-identifier"/>
+      </reference>
+      <name value="TDDUI FR Core CodeSystem v2-0203"/>
+      <description value="TDDUI Patient's identifier"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-human-name"/>
+      </reference>
+      <name value="TDDUI Human Name DataType"/>
+      <description value="French profile of datatype HumanName with constraints on prefix and suffix | Profilage du type de données HumanName pour prise en compte de la civilté au niveau de l'élément prefix et du titre au niveau de l'élément suffix"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-Organization"/>
+      </reference>
+      <name value="TDDUI Organization"/>
+      <description value="Profil de la ressource FRCoreOrganizationProfile permettant de représenter les entités juridiques."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-patient"/>
+      </reference>
+      <name value="TDDUI Patient"/>
+      <description value="Profil de la ressource FrCorePatientProfile permettant de représenter un usager lorsque l'INS n'est pas transmis."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-patient-ins"/>
+      </reference>
+      <name value="TDDUI Patient INS"/>
+      <description value="Profil de la ressource FRCorePatientINSProfile permettant de représenter un usager lorsque l'INS est transmis."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -496,6 +628,50 @@
       <name value="TDDUI-Consommateur"/>
       <description value="Le rôle du consommateur est de recueillir les données du Dossier Usager Informatisé. Il peut recevoir un unique dossier ou un ensemble de dossiers, ainsi que des mises à jour de dossiers. Il correspond à un logiciel DUI ou un SI tiers."/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/tddui-encounter-sejour-example"/>
+      </reference>
+      <name value="tddui-encounter-sejour-example"/>
+      <description value="Exemple d'un séjour en ESSMS"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-Encounter-sejour"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/tddui-organization-example"/>
+      </reference>
+      <name value="tddui-organization-example"/>
+      <description value="ESSMS - Les Chênes Verts"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-Organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/tddui-patient-example"/>
+      </reference>
+      <name value="tddui-patient-example"/>
+      <description value="Exemple de la ressource TDDUIPatient"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/tddui-patient-ins-example"/>
+      </reference>
+      <name value="tddui-patient-ins-example"/>
+      <description value="Exemple de la ressource TDDUIPatientINS"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -532,10 +708,10 @@
         <generation value="markdown"/>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="sfe_cadre_juridique.html"/>
+            <valueUrl value="sfe_cas_usage.html"/>
           </extension>
-          <nameUrl value="sfe_cadre_juridique.html"/>
-          <title value="Cadre juridique et orientations organisationnelles"/>
+          <nameUrl value="sfe_cas_usage.html"/>
+          <title value="Cas d'usage"/>
           <generation value="markdown"/>
         </page>
         <page>
@@ -548,10 +724,10 @@
         </page>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="sfe_definition_processus.html"/>
+            <valueUrl value="sfe_transfert_des_donnees_a_un_tiers.html"/>
           </extension>
-          <nameUrl value="sfe_definition_processus.html"/>
-          <title value="Définition des processus collaboratifs"/>
+          <nameUrl value="sfe_transfert_des_donnees_a_un_tiers.html"/>
+          <title value="Transfert des données à un tiers"/>
           <generation value="markdown"/>
         </page>
         <page>

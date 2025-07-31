@@ -102,13 +102,13 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="sfe_cadre_juridique.html">Cadre juridique et orientations organisationnelles</a>
+        <a href="sfe_cas_usage.html">Cas d&apos;usage</a>
       </li>
       <li>
         <a href="sfe_organisation_contexte_metier.html">Organisation du contexte métier</a>
       </li>
       <li>
-        <a href="sfe_definition_processus.html">Définition des processus collaboratifs</a>
+        <a href="sfe_transfert_des_donnees_a_un_tiers.html">Transfert des données à un tiers</a>
       </li>
       <li>
         <a href="sfe_modelisation_contenu.html">Modélisation du contenu du DUI</a>
@@ -221,6 +221,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li>
          <a href="#2">Structures: Resource Profiles</a>
       </li>
+      <li>
+         <a href="#3">Structures: Data Type Profiles</a>
+      </li>
+      <li>
+         <a href="#4">Structures: Extension Definitions</a>
+      </li>
+      <li>
+         <a href="#5">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#6">Example: Example Instances</a>
+      </li>
    </ul>
 </div>
 <div xmlns="http://www.w3.org/1999/xhtml"
@@ -268,6 +280,189 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Profil générique créé dans le contexte du transfert de données DUI pour véhiculer un lot de documents au format CDA.</p>
 </td>
          </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-Encounter-sejour.html"
+                  title="StructureDefinition/tddui-Encounter-sejour">TDDUI Encounter Sejour</a>
+            </td>
+            <td>
+<p>Profil de la ressource Encounter permettant de regrouper les informations relatives au séjour d'un usager dans une structure ESSMS</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-Organization.html"
+                  title="StructureDefinition/tddui-Organization">TDDUI Organization</a>
+            </td>
+            <td>
+<p>Profil de la ressource FRCoreOrganizationProfile permettant de représenter les entités juridiques.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-patient.html"
+                  title="StructureDefinition/tddui-patient">TDDUI Patient</a>
+            </td>
+            <td>
+<p>Profil de la ressource FrCorePatientProfile permettant de représenter un usager lorsque l'INS n'est pas transmis.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-patient-ins.html"
+                  title="StructureDefinition/tddui-patient-ins">TDDUI Patient INS</a>
+            </td>
+            <td>
+<p>Profil de la ressource FRCorePatientINSProfile permettant de représenter un usager lorsque l'INS est transmis.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
+   <h3>Structures: Data Type Profiles </h3>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-human-name.html"
+                  title="StructureDefinition/tddui-human-name">TDDUI Human Name DataType</a>
+            </td>
+            <td>
+<table>
+  <tbody>
+    <tr>
+      <td>French profile of datatype HumanName with constraints on prefix and suffix</td>
+      <td>Profilage du type de données HumanName pour prise en compte de la civilté au niveau de l'élément prefix et du titre au niveau de l'élément suffix</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
+   <h3>Structures: Extension Definitions </h3>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-comment.html"
+                  title="StructureDefinition/tddui-comment">Commentaire</a>
+            </td>
+            <td>
+<p>Commentaire relatif au séjour.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-admission-date.html"
+                  title="StructureDefinition/tddui-admission-date">Date d’admission</a>
+            </td>
+            <td>
+<p>Date d’admission dans la structure ESSMS.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-entry-mode-label.html"
+                  title="StructureDefinition/tddui-entry-mode-label">Libellé mode d'entrée</a>
+            </td>
+            <td>
+<p>Libellé du mode d’entée du séjour.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-exit-mode-label.html"
+                  title="StructureDefinition/tddui-exit-mode-label">Libellé mode de sortie</a>
+            </td>
+            <td>
+<p>Libellé du mode de sortie du séjour.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-birth-order.html"
+                  title="StructureDefinition/tddui-birth-order">Ordre de naissance dans le registre d'état civil</a>
+            </td>
+            <td>
+<p>Ordre d’enregistrement de la naissance dans le registre d’état civil de la commune de naissance pour le mois de la naissance. Il compose les 3 derniers chiffres du NIR de l'usager avant la clé de sécurité et permet de distinguer les personnes nées au même lieu et à la même période. Il est obligatoire si le NIR n'est pas transmis.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="5"> </a>
+   <h3>Terminology: Code Systems </h3>
+    <p>These define new code systems used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-tddui-encounter-identifier.html"
+                  title="CodeSystem/tddui-encounter-identifier">TDDUI Encounter FR Core CodeSystem v2-0203</a>
+            </td>
+            <td>
+<p>TDDUI Encounter's identifier</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-tddui-identifier.html"
+                  title="CodeSystem/tddui-identifier">TDDUI FR Core CodeSystem v2-0203</a>
+            </td>
+            <td>
+<p>TDDUI Patient's identifier</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="6"> </a>
+   <h3>Example: Example Instances </h3>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-tddui-encounter-sejour-example.html"
+                  title="Encounter/tddui-encounter-sejour-example">tddui-encounter-sejour-example</a>
+            </td>
+            <td>
+<p>Exemple d'un séjour en ESSMS</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-tddui-organization-example.html"
+                  title="Organization/tddui-organization-example">tddui-organization-example</a>
+            </td>
+            <td>
+<p>ESSMS - Les Chênes Verts</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-tddui-patient-example.html"
+                  title="Patient/tddui-patient-example">tddui-patient-example</a>
+            </td>
+            <td>
+<p>Exemple de la ressource TDDUIPatient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-tddui-patient-ins-example.html"
+                  title="Patient/tddui-patient-ins-example">tddui-patient-ins-example</a>
+            </td>
+            <td>
+<p>Exemple de la ressource TDDUIPatientINS</p>
+</td>
+         </tr>
       </tbody>
    </table>
 </div>
@@ -310,7 +505,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jul 30, 2025 10:13+0000">2025-07-30</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 31, 2025 08:17+0000">2025-07-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
