@@ -102,7 +102,7 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
     Il est préconisé si le NIR ou l'identifiant local est véhiculé et que l'identité n'est pas qualifiée.</td>
   </tr>
    <tr>
-    <td>ordreNaissance : [0..1] Numerique </td>
+    <td>ordreNaissanceEtatCivil : [0..1] Numerique </td>
     <td>Ordre d’enregistrement de la naissance dans le registre d’état civil de la commune de naissance pour le mois de la naissance. Il compose les <a href="https://www.ameli.fr/llle-et-vilaine/assure/droits-demarches/principes/numero-securite-sociale">3 derniers chiffres du NIR de l'usager avant </a> la clé de sécurité et permet de distinguer les personnes nées au même lieu et à la même période.<br>
     Il est obligatoire si le NIR n'est pas transmis.</td>
   </tr>
