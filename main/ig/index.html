@@ -124,7 +124,7 @@
         <a href="description_flux_synthese.html">Synthèse des flux</a>
       </li>
       <li>
-        <a href="description_flux_1_ajout_doc.html">Flux 1 - Transmission de données DUI</a>
+        <a href="description_flux_1_transmission_donnees_dui.html">Flux 1 - Transmission de données DUI</a>
       </li>
     </ul>
   </li>
@@ -139,9 +139,6 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li>
-        <a href="mapping_fonctionnelle_FHIR.html">Mapping FHIR du modèle de contenu DUI</a>
-      </li>
       <li>
         <a href="annexes_documents_reference.html">Documents de référence</a>
       </li>
@@ -352,7 +349,27 @@ Les évolutions de ce guide d’implémentation sont limitées à des correction
     <tr>
       <td><a href="https://hl7.org/fhir/R4/bundle.html">Bundle</a></td>
       <td><a href="StructureDefinition-tddui-bundle.html">TDDUIBundle</a></td>
-      <td>Profil générique créé dans le contexte du transfert de données DUI pour véhiculer un lot de documents au format CDA</td>
+      <td>Profil générique créé pour transmettre des données d'un logiciel DUI</td>
+    </tr>
+    <tr>
+      <td><a href="https://hl7.org/fhir/R4/encounter.html">Encounter</a></td>
+      <td><a href="StructureDefinition-tddui-encounter-sejour.html">TDDUIEncounter</a></td>
+      <td>Profil de la ressource Encounter permettant de regrouper les informations relatives au séjour d'un usager dans une structure ESSMS</td>
+    </tr>
+    <tr>
+      <td><a href="https://hl7.org/fhir/R4/organization.html">Organization</a></td>
+      <td><a href="StructureDefinition-tddui-organization.html">TDDUIOrganization</a></td>
+      <td>Profil de la ressource FRCoreOrganizationProfile permettant de représenter les entités juridiques.</td>
+    </tr>
+    <tr>
+      <td><a href="https://hl7.org/fhir/R4/Patient.html">Patient</a></td>
+      <td><a href="StructureDefinition-tddui-patient.html">TDDUIPatient</a></td>
+      <td>Profil de la ressource FrCorePatientProfile permettant de représenter un usager lorsque l'INS n'est pas transmis.</td>
+    </tr>
+    <tr>
+      <td><a href="https://hl7.org/fhir/R4/Patient.html">Patient</a></td>
+      <td><a href="StructureDefinition-tddui-patient-ins.html">TDDUIPatientINS</a></td>
+      <td>Profil de la ressource FRCorePatientINSProfile permettant de représenter un usager lorsque l'INS est transmis.</td>
     </tr>
   </tbody>
 </table>
@@ -371,9 +388,9 @@ Les évolutions de ce guide d’implémentation sont limitées à des correction
   </thead>
   <tbody>
     <tr>
-      <td><a href="description_flux_1_ajout_doc.html">Flux 1 : Ajout d'un document</a></td>
+      <td><a href="description_flux_1_transmission_donnees_dui.html">Flux 1 : Transmission de données DUI</a></td>
       <td>Logiciel DUI</td>
-      <td>Logiciel DUI ou SI tiers</td>
+      <td>SI tiers</td>
     </tr>
   </tbody>
 </table>
@@ -452,7 +469,7 @@ Les évolutions de ce guide d’implémentation sont limitées à des correction
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 31, 2025 08:39+0000">2025-07-31</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 31, 2025 12:36+0000">2025-07-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |

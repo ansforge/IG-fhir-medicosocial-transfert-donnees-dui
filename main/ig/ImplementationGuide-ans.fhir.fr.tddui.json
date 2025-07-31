@@ -10,7 +10,7 @@
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2025-07-31T08:39:10+00:00",
+  "date" : "2025-07-31T12:36:00+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -707,7 +707,7 @@
         "reference" : "StructureDefinition/tddui-bundle"
       },
       "name" : "TDDUI Bundle",
-      "description" : "Profil générique créé dans le contexte du transfert de données DUI pour véhiculer un lot de documents au format CDA.",
+      "description" : "Profil générique créé pour transmettre des données d'un logiciel DUI.",
       "exampleBoolean" : false
     },
     {
@@ -728,7 +728,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/tddui-Encounter-sejour"
+        "reference" : "StructureDefinition/tddui-encounter-sejour"
       },
       "name" : "TDDUI Encounter Sejour",
       "description" : "Profil de la ressource Encounter permettant de regrouper les informations relatives au séjour d'un usager dans une structure ESSMS",
@@ -764,7 +764,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/tddui-Organization"
+        "reference" : "StructureDefinition/tddui-organization"
       },
       "name" : "TDDUI Organization",
       "description" : "Profil de la ressource FRCoreOrganizationProfile permettant de représenter les entités juridiques.",
@@ -803,7 +803,7 @@
         "reference" : "CapabilityStatement/TDDUIConsommateur"
       },
       "name" : "TDDUI-Consommateur",
-      "description" : "Le rôle du consommateur est de recueillir les données du Dossier Usager Informatisé. Il peut recevoir un unique dossier ou un ensemble de dossiers, ainsi que des mises à jour de dossiers. Il correspond à un logiciel DUI ou un SI tiers.",
+      "description" : "Le rôle du Consommateur est de recueillir les données d'un logiciel DUI. Il correspond à un SI tiers.",
       "exampleBoolean" : false
     },
     {
@@ -816,7 +816,7 @@
       },
       "name" : "tddui-encounter-sejour-example",
       "description" : "Exemple d'un séjour en ESSMS",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-Encounter-sejour"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour"
     },
     {
       "extension" : [{
@@ -828,7 +828,7 @@
       },
       "name" : "tddui-organization-example",
       "description" : "ESSMS - Les Chênes Verts",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-Organization"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization"
     },
     {
       "extension" : [{
@@ -863,8 +863,20 @@
         "reference" : "CapabilityStatement/TDDUIProducteur"
       },
       "name" : "TDDUI-Producteur",
-      "description" : "Le rôle du producteur est de créer et transmettre un document ou lots de Documents portant les informations du Dossier Usager Informatisé. Il correspond à un logiciel DUI.",
+      "description" : "Le rôle de Producteur est de transmettre des données de son logiciel DUI. Il correspond à un logiciel DUI.",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/ExampleTDDUIBundle"
+      },
+      "name" : "TDDUIBundleExample",
+      "description" : "Exemple de bundle conforme au profil TDDUIBundle",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle"
     }],
     "page" : {
       "extension" : [{
@@ -948,9 +960,9 @@
         {
           "extension" : [{
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "description_flux_1_ajout_doc.html"
+            "valueUrl" : "description_flux_1_transmission_donnees_dui.html"
           }],
-          "nameUrl" : "description_flux_1_ajout_doc.html",
+          "nameUrl" : "description_flux_1_transmission_donnees_dui.html",
           "title" : "Flux 1 - Transmission de données DUI",
           "generation" : "markdown"
         }]

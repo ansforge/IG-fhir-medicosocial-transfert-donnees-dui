@@ -10,7 +10,7 @@
   <name value="TDDUI"/>
   <title value="Médicosocial - Transfert de données DUI"/>
   <status value="active"/>
-  <date value="2025-07-31T08:39:10+00:00"/>
+  <date value="2025-07-31T12:36:00+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -538,7 +538,7 @@
         <reference value="StructureDefinition/tddui-bundle"/>
       </reference>
       <name value="TDDUI Bundle"/>
-      <description value="Profil générique créé dans le contexte du transfert de données DUI pour véhiculer un lot de documents au format CDA."/>
+      <description value="Profil générique créé pour transmettre des données d'un logiciel DUI."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -557,7 +557,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/tddui-Encounter-sejour"/>
+        <reference value="StructureDefinition/tddui-encounter-sejour"/>
       </reference>
       <name value="TDDUI Encounter Sejour"/>
       <description value="Profil de la ressource Encounter permettant de regrouper les informations relatives au séjour d'un usager dans une structure ESSMS"/>
@@ -590,7 +590,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/tddui-Organization"/>
+        <reference value="StructureDefinition/tddui-organization"/>
       </reference>
       <name value="TDDUI Organization"/>
       <description value="Profil de la ressource FRCoreOrganizationProfile permettant de représenter les entités juridiques."/>
@@ -626,7 +626,7 @@
         <reference value="CapabilityStatement/TDDUIConsommateur"/>
       </reference>
       <name value="TDDUI-Consommateur"/>
-      <description value="Le rôle du consommateur est de recueillir les données du Dossier Usager Informatisé. Il peut recevoir un unique dossier ou un ensemble de dossiers, ainsi que des mises à jour de dossiers. Il correspond à un logiciel DUI ou un SI tiers."/>
+      <description value="Le rôle du Consommateur est de recueillir les données d'un logiciel DUI. Il correspond à un SI tiers."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -638,7 +638,7 @@
       </reference>
       <name value="tddui-encounter-sejour-example"/>
       <description value="Exemple d'un séjour en ESSMS"/>
-      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-Encounter-sejour"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -649,7 +649,7 @@
       </reference>
       <name value="tddui-organization-example"/>
       <description value="ESSMS - Les Chênes Verts"/>
-      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-Organization"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -681,8 +681,19 @@
         <reference value="CapabilityStatement/TDDUIProducteur"/>
       </reference>
       <name value="TDDUI-Producteur"/>
-      <description value="Le rôle du producteur est de créer et transmettre un document ou lots de Documents portant les informations du Dossier Usager Informatisé. Il correspond à un logiciel DUI."/>
+      <description value="Le rôle de Producteur est de transmettre des données de son logiciel DUI. Il correspond à un logiciel DUI."/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/ExampleTDDUIBundle"/>
+      </reference>
+      <name value="TDDUIBundleExample"/>
+      <description value="Exemple de bundle conforme au profil TDDUIBundle"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
@@ -756,9 +767,9 @@
         </page>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="description_flux_1_ajout_doc.html"/>
+            <valueUrl value="description_flux_1_transmission_donnees_dui.html"/>
           </extension>
-          <nameUrl value="description_flux_1_ajout_doc.html"/>
+          <nameUrl value="description_flux_1_transmission_donnees_dui.html"/>
           <title value="Flux 1 - Transmission de données DUI"/>
           <generation value="markdown"/>
         </page>
