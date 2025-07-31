@@ -46,8 +46,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"5.2.14"}
-    h3,h4,h5,h6{--heading-prefix:"5.2.14"}</style>
+    <style type="text/css">h2{--heading-prefix:"7.13"}
+    h3,h4,h5,h6{--heading-prefix:"7.13"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -120,32 +120,7 @@
     </ul>
   </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Contenu du dossier CDA
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="contenu_dossier_contexte.html">Contexte</a>
-      </li>
-      <li>
-        <a href="mapping_fonctionnelle_technique.html">Mapping CDA du modèle de contenu DUI</a>
-      </li>
-      <li>
-        <a href="contenu_dossier_structure_cda.html">Structure générale du document CDA</a>
-      </li>
-      <li>
-        <a href="contenu_dossier_entete_cda.html">Entête du document CDA</a>
-      </li>
-      <li>
-        <a href="contenu_dossier_corps_cda.html">Corps du document CDA</a>
-      </li>
-      <li>
-        <a href="terminology_cda.html">Jeux de valeurs CDA</a>
-      </li>
-    </ul>
-  </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Description des flux FHIR
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Volume 2 - Détail des transactions
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
@@ -153,25 +128,12 @@
         <a href="description_flux_synthese.html">Synthèse des flux</a>
       </li>
       <li>
-        <a href="description_flux_1_ajout_doc.html">Flux 1 - Ajout d&apos;un document</a>
-      </li>
-      <li>
-        <a href="description_flux_2_ajout_lot_doc.html">Flux 2 - Ajout d&apos;un lot de documents</a>
+        <a href="description_flux_1_ajout_doc.html">Flux 1 - Transmission de données DUI</a>
       </li>
     </ul>
   </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Ressources de conformité
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="ressources_cda.html">Ressources CDA</a>
-      </li>
-      <li>
-        <a href="artifacts.html">Ressources FHIR</a>
-      </li>
-    </ul>
+  <li>
+    <a href="artifacts.html">Ressources de conformité</a>
   </li>
   <li>
     <a href="tests.html">Tests</a>
@@ -182,10 +144,10 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="annexes_documents_reference.html">Documents de référence</a>
+        <a href="mapping_fonctionnelle_FHIR.html">Mapping FHIR du modèle de contenu DUI</a>
       </li>
       <li>
-        <a href="annexes_nomenclatures.html">Nomenclatures de référence</a>
+        <a href="annexes_documents_reference.html">Documents de référence</a>
       </li>
       <li>
         <a href="annexes_acronymes.html">Acronymes</a>
@@ -193,30 +155,11 @@
       <li>
         <a href="annexes_codes_professions_roles_modes_exercices.html">Professions du médico-social</a>
       </li>
-    </ul>
-  </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Autres ressources
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
       <li>
         <a href="securite.html">Sécurité</a>
       </li>
       <li>
         <a href="downloads.html">Téléchargements et usage</a>
-      </li>
-      <li>
-        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">Spécifications FHIR</a>
-      </li>
-      <li>
-        <a target="_blank" href="https://hl7.org/cda/stds/core/">Spécifications CDA</a>
-      </li>
-      <li>
-        <a target="_blank" href="https://esante.gouv.fr/">Site de l&apos;ANS</a>
-      </li>
-      <li>
-        <a target="_blank" href="https://interop.esante.gouv.fr/ig/documentation/">Documentation</a>
       </li>
     </ul>
   </li>
@@ -235,7 +178,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='ressources_conformite.html'><b>Ressources de conformité</b></a></li><li><a href='artifacts.html'><b>Ressources FHIR</b></a></li><li><b>Ordre de naissance dans le registre d'état civil</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Ordre de naissance dans le registre d'état civil</b></li>
 
           <span style="float:right;">
 
@@ -416,7 +359,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 31, 2025 08:13+0000">2025-07-31</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#1.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 31, 2025 08:39+0000">2025-07-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
