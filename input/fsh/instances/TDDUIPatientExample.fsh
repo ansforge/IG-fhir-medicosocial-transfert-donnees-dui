@@ -11,6 +11,7 @@ Description: "Exemple de la ressource TDDUIPatient"
 * identifier[PI].system = "http://identifiant-ipp.com"
 * identifier[PI].value = "3480787529/194704032"
 
+
 * name[usualName].use = #usual
 * name[usualName].family = "DUPONT"
 

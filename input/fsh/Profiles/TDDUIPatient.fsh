@@ -16,3 +16,26 @@ Description: "Profil de la ressource FrCorePatientProfile permettant de représe
 * name[officialName] 1..1
 * name[usualName] 0..1
 * name only tddui-humanname
+
+Mapping:  ConceptMetier_TDDUIPatient
+Source:   TDDUIPatient
+Target: "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"
+Id:       specmetier-to-TDDUIPatient
+Title:    "Modèle de contenu DUI"
+* -> "Usager"
+ 
+* identifier[NSS] -> "numSecuriteSociale"
+* identifier[PI] -> "identifiantLocalUsagerESSMS"
+* identifier[InitialNumberMDPH] -> "numeroIndividuInitial"
+* name[officialName].family -> "nomNaissance"
+* name[usualName].family -> "nomUsage"
+* name[officialName].given -> "premierPrenomActeNaissance"
+* name[usualName].given -> "prenomUtilise"
+* name[officialName].extension[birth-list-given-name] -> "prenom"
+* name[officialName].prefix -> "civilite"
+* gender -> "sexe"
+* birthDate -> "dateNaissance"
+* birthDate.extension[tddui-birth-order] -> "ordreNaissance"
+* extension[birthPlace].valueAddress.extension[inseeCode] -> "communeNaissance"
+* extension[birthPlace].valueAddress.country -> "paysNaissance"
+
