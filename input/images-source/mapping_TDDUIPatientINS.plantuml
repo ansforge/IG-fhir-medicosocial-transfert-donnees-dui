@@ -14,7 +14,7 @@ map "<&layers> name:officialName" as nameofficialName #back:WhiteSmoke;header:Li
 
 map "**UsagerINS : TDDUIPatientINS**" as UsagerINS #back:MintCream;header:LightSeaGreen {
     paysNaissance => <&plus> birthPlace.value[x].country
-    ommuneNaissance => <&plus> birthPlace.value[x].extension:inseeCode
+    communeNaissance => <&plus> birthPlace.value[x].extension:inseeCode
     numSecuriteSociale => <&layers> identifier:NSS
     identifiantLocalUsagerESSMS => <&layers> identifier:PI
     matriculeINS => <&layers> identifier:INS-NIR
