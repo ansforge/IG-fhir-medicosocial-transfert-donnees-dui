@@ -1,0 +1,171 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "ExampleTDDUIBundle",
+  "meta" : {
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle"]
+  },
+  "type" : "transaction",
+  "entry" : [{
+    "fullUrl" : "https://test-server.fr/Patient/tddui-patient-ins-example",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "tddui-patient-ins-example",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_tddui-patient-ins-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Patient tddui-patient-ins-example</b></p><a name=\"tddui-patient-ins-example\"> </a><a name=\"hctddui-patient-ins-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-patient-ins.html\">TDDUI Patient INS</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">DUPONT  Male, Date de Naissance :1947-04-03 ( NIR définitif\u00a0(use:\u00a0official,\u00a0))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Noms alternatifs (voir plus bas)\">Nom alternatif :</td><td colspan=\"3\">Jean DUPONT (Official)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Moyens de contacter le Patient\">Contact Detail</td><td colspan=\"3\">12 rue des Lilas, 76748 Vittefleur, France(home)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The registered place of birth of the patient. A sytem may use the address.text if they don't store the birthPlace address in discrete elements.\"><a href=\"http://hl7.org/fhir/extensions/5.2.0/StructureDefinition-patient-birthPlace.html\">Patient Birth Place</a></td><td colspan=\"3\">Mazoires FRA </td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Reliabilility of the patient's identity | Précision sur le degré de fiabilité de l'identité du patient (si provisoire, validé... avec la justification : quelle type de pièce d'identité ?) avec la méthode de collection\">FR Core Patient Ident Reliability Extension:</td><td colspan=\"3\"><ul><li>identityStatus: <a href=\"https://hl7.fr/ig/fhir/core/2.1.0/CodeSystem-fr-core-cs-v2-0445.html#fr-core-cs-v2-0445-VALI\">FR Core CodeSystem v2-0445 VALI</a>: Identité validée</li></ul></td></tr></table></div>"
+      },
+      "extension" : [{
+        "extension" : [{
+          "url" : "identityStatus",
+          "valueCoding" : {
+            "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445",
+            "code" : "VALI"
+          }
+        }],
+        "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress" : {
+          "extension" : [{
+            "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code",
+            "valueCoding" : {
+              "system" : "https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM",
+              "code" : "63220"
+            }
+          }],
+          "city" : "Mazoires",
+          "country" : "FRA"
+        }
+      }],
+      "identifier" : [{
+        "use" : "official",
+        "type" : {
+          "coding" : [{
+            "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203",
+            "code" : "INS-NIR"
+          }]
+        },
+        "system" : "urn:oid:1.2.250.1.213.1.4.8",
+        "value" : "147720425367411"
+      }],
+      "name" : [{
+        "extension" : [{
+          "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name",
+          "valueString" : "Jean Stéphane Patrick"
+        }],
+        "use" : "official",
+        "family" : "DUPONT",
+        "given" : ["Jean"]
+      },
+      {
+        "use" : "usual",
+        "family" : "DUPONT"
+      }],
+      "gender" : "male",
+      "birthDate" : "1947-04-03",
+      "address" : [{
+        "use" : "home",
+        "text" : "12 rue des Lilas, 76748 Vittefleur, France",
+        "line" : ["12 rue des Lilas"],
+        "city" : "Vittefleur",
+        "postalCode" : "76748"
+      }]
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "TDDUIPatientINS"
+    }
+  },
+  {
+    "fullUrl" : "https://test-server.fr/Organization/tddui-organization-example",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "tddui-organization-example",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_tddui-organization-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Organisation tddui-organization-example</b></p><a name=\"tddui-organization-example\"> </a><a name=\"hctddui-organization-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-organization.html\">TDDUI Organization</a></p></div><p><b>identifier</b>: Identification nationale de structure définie par l’ANS dans le CI_SIS/1480787529</p><p><b>name</b>: Les Chênes Verts</p></div>"
+      },
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203",
+            "code" : "IDNST"
+          }]
+        },
+        "system" : "urn:oid:1.2.250.1.71.4.2.2",
+        "value" : "1480787529"
+      }],
+      "name" : "Les Chênes Verts"
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "TDDUIOrganization"
+    }
+  },
+  {
+    "fullUrl" : "https://test-server.fr/Encounter/tddui-encounter-sejour-example",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "id" : "tddui-encounter-sejour-example",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_tddui-encounter-sejour-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Venue tddui-encounter-sejour-example</b></p><a name=\"tddui-encounter-sejour-example\"> </a><a name=\"hctddui-encounter-sejour-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-encounter-sejour.html\">TDDUI Encounter Sejour</a></p></div><p><b>Date d’admission</b>: 2023-04-11</p><p><b>Libellé mode d'entrée</b>: Date de début du suivi post-opératoire : 14/04/2023</p><p><b>Libellé mode de sortie</b>: Sortie prévisionnelle prévue pour le 5 mai 2023</p><p><b>Extension Definition for Encounter.plannedEndDate for Version 5.0</b>: 2023-05-05</p><p><b>identifier</b>: Identifiant du séjour/3480787529/147720425367411-SEJOUR-1012</p><p><b>status</b>: In Progress</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/6.4.0/CodeSystem-v3-ActCode.html#v3-ActCode-HH\">ActCode HH</a>: home health</p><p><b>subject</b>: <a href=\"Patient-tddui-patient-ins-example.html\">DUPONT  Male, Date de Naissance :1947-04-03 ( NIR définitif\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>period</b>: 2023-04-14 --&gt; (ongoing)</p><p><b>serviceProvider</b>: <a href=\"Organization-tddui-organization-example.html\">Organization Les Chênes Verts</a></p></div>"
+      },
+      "extension" : [{
+        "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-admission-date",
+        "valueDateTime" : "2023-04-11"
+      },
+      {
+        "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-mode-label",
+        "valueString" : "Date de début du suivi post-opératoire : 14/04/2023"
+      },
+      {
+        "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exit-mode-label",
+        "valueString" : "Sortie prévisionnelle prévue pour le 5 mai 2023"
+      },
+      {
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedEndDate",
+        "valueDateTime" : "2023-05-05"
+      }],
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier",
+            "code" : "SEJ",
+            "display" : "Identifiant du séjour"
+          }]
+        },
+        "system" : "urn:oid:1.2.250.2345.3245.13",
+        "value" : "3480787529/147720425367411-SEJOUR-1012"
+      }],
+      "status" : "in-progress",
+      "class" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code" : "HH"
+      },
+      "subject" : {
+        "reference" : "Patient/tddui-patient-ins-example"
+      },
+      "period" : {
+        "start" : "2023-04-14"
+      },
+      "serviceProvider" : {
+        "reference" : "Organization/tddui-organization-example"
+      }
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "TDDUIEncounterSejour"
+    }
+  }]
+}
