@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : ImplementationGuide ans.fhir.fr.tddui</b></p><a name=\"ans.fhir.fr.tddui\"> </a><a name=\"hcans.fhir.fr.tddui\"> </a><h2>TDDUI</h2><p>LURL officielle pour ce guide dimplémentation est : </p><pre>https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui</pre></div>"
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui",
-  "version" : "1.1.0",
+  "version" : "2.0.0-ballot",
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2025-07-31T14:22:41+00:00",
+  "date" : "2025-08-01T06:26:01+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -40,16 +40,6 @@
     "version" : "6.5.0"
   },
   {
-    "id" : "hl7ext",
-    "extension" : [{
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
-      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"
-    }],
-    "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
-    "packageId" : "hl7.fhir.uv.extensions.r4",
-    "version" : "5.2.0"
-  },
-  {
     "id" : "hl7_fhir_fr_core",
     "uri" : "https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core",
     "packageId" : "hl7.fhir.fr.core",
@@ -60,6 +50,12 @@
     "uri" : "https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies",
     "packageId" : "ans.fr.terminologies",
     "version" : "1.1.0"
+  },
+  {
+    "id" : "hl7_fhir_uv_extensions",
+    "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+    "packageId" : "hl7.fhir.uv.extensions",
+    "version" : "5.2.0"
   }],
   "definition" : {
     "extension" : [{
@@ -80,7 +76,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "trial-use"
+        "valueString" : "public-comment"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -370,7 +366,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "trial-use"
+        "valueString" : "public-comment"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },

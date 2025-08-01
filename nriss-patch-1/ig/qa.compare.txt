@@ -1,17 +1,17 @@
 TDDUI : Validation Results
 =========================================
 
-err = 6, warn = 32, info = 17
+err = 8, warn = 32, info = 17
 $--
 Generated $--. FHIR version $-- for ans.fhir.fr.tddui#$-- (canonical = https://interop.esante.gouv.fr/ig/fhir/tddui)
- Build Errors : 5 / 3 / 0
+ Build Errors : 1 / 3 / 0
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Bundle-ExampleTDDUIBundle : 0 / 6 / 15
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CapabilityStatement-TDDUIConsommateur : 0 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CapabilityStatement-TDDUIProducteur : 0 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CodeSystem-tddui-encounter-identifier : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CodeSystem-tddui-identifier : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Encounter-tddui-encounter-sejour-example : 0 / 1 / 1
- /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.tddui : 0 / 0 / 1
+ /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.tddui : 1 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Organization-tddui-organization-example : 0 / 1 / 2
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Patient-tddui-patient-example : 0 / 1 / 3
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Patient-tddui-patient-ins-example : 0 / 1 / 4
@@ -28,22 +28,18 @@ Generated $--. FHIR version $-- for ans.fhir.fr.tddui#$-- (canonical = https://i
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-patient-ins : 3 / 3 / 1
 </table>
 == n/a ==
-ERROR: annexes.html#/html/body/div/div/div/div/div/ul/li/a at Line 227, column 8: The link 'mapping_fonctionnelle_FHIR.html' for "Mapping FHIR du modèle de contenu DUI" cannot be resolved
-ERROR: index.html#/html/body/div/div/div/div/div/ul/li/ul/li/a at Line 313, column 12: The link 'mapping_fonctionnelle_FHIR.html' for "Mapping FHIR du modèle de contenu DUI" cannot be resolved
-ERROR: sfe.html#/html/body/div/div/div/div/div/ul/li/a at Line 229, column 8: The link 'sfe_transmission_des_donnees_a_un_tiers.html' for "Transmission des données à un tiers" cannot be resolved
-ERROR: sfe_modelisation_contenu.html#/html/body/div/div/div/div/div/table/tr/td/ul/a at Line 1591, column 166: The link ' https://mos.esante.gouv.fr/NOS/JDV_J284-PrestationsDirects-SERAFIN/FHIR/JDV-J284-PrestationsDirects-SERAFIN/' for "JDV-J284-PrestationsDirects_SERAFIN" cannot be resolved
-ERROR: sfe_transfert_des_donnees_a_un_tiers.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 306, column 45: The link 'description_flux_1_ajout_doc.html' for "flux 1" cannot be resolved
+ERROR: ImplementationGuide/ans.fhir.fr.tddui: This IG is version 4.0.1, while the IG 'hl7.fhir.uv.extensions' is from version 5.0.0
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/Bundle-ExampleTDDUIBundle.json ==
-INFORMATION: Bundle/ExampleTDDUIBundle: Bundle.entry[0].resource.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/ExampleTDDUIBundle: Bundle.entry[0].resource.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Bundle/ExampleTDDUIBundle: Bundle.entry[0].resource.extension[0].extension[0].value.ofType(Coding): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445|2.1.0
 WARNING: Bundle/ExampleTDDUIBundle: Bundle.entry[0].resource.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.250.1.213.1.4.8'
-INFORMATION: Bundle/ExampleTDDUIBundle: Bundle.entry[0].resource.name[0].extension[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/ExampleTDDUIBundle: Bundle.entry[0].resource.name[0].extension[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Bundle/ExampleTDDUIBundle: Bundle.entry[0].resource/*Patient/tddui-patient-ins-example*/.extension[0].extension[0].value.ofType(Coding): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445|2.1.0
 WARNING: Bundle/ExampleTDDUIBundle: Bundle.entry[0].resource/*Patient/tddui-patient-ins-example*/.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.250.1.213.1.4.8'
-INFORMATION: Bundle/ExampleTDDUIBundle: Bundle.entry[1].resource.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/ExampleTDDUIBundle: Bundle.entry[1].resource.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 WARNING: Bundle/ExampleTDDUIBundle: Bundle.entry[1].resource.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.250.1.71.4.2.2'
 WARNING: Bundle/ExampleTDDUIBundle: Bundle.entry[1].resource/*Organization/tddui-organization-example*/.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.250.1.71.4.2.2'
 WARNING: Bundle/ExampleTDDUIBundle: Bundle.entry[2].resource.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.250.2345.3245.13'
@@ -57,18 +53,19 @@ WARNING: CapabilityStatement/TDDUIProducteur: CapabilityStatement.implementation
 == fsh-generated/resources/Encounter-tddui-encounter-sejour-example.json ==
 WARNING: Encounter/tddui-encounter-sejour-example: Encounter.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.250.2345.3245.13'
 == fsh-generated/resources/ImplementationGuide-ans.fhir.fr.tddui.json ==
+ERROR: ImplementationGuide/ans.fhir.fr.tddui: ImplementationGuide.dependsOn[3]: The ImplementationGuide is based on FHIR version 4.0.1 but package hl7.fhir.uv.extensions#5.2.0 is based on FHIR version 5.0.0. Use the package hl7.fhir.uv.extensions.r4 instead
 == fsh-generated/resources/Organization-tddui-organization-example.json ==
-INFORMATION: Organization/tddui-organization-example: Organization.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Organization/tddui-organization-example: Organization.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 WARNING: Organization/tddui-organization-example: Organization.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.250.1.71.4.2.2'
 == fsh-generated/resources/Patient-tddui-patient-example.json ==
-INFORMATION: Patient/tddui-patient-example: Patient.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Patient/tddui-patient-example: Patient.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 WARNING: Patient/tddui-patient-example: Patient.identifier[0].system: No definition could be found for URL value 'http://identifiant-ipp.com'
-INFORMATION: Patient/tddui-patient-example: Patient.name[0].extension[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Patient/tddui-patient-example: Patient.name[0].extension[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 == fsh-generated/resources/Patient-tddui-patient-ins-example.json ==
-INFORMATION: Patient/tddui-patient-ins-example: Patient.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Patient/tddui-patient-ins-example: Patient.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Patient/tddui-patient-ins-example: Patient.extension[0].extension[0].value.ofType(Coding): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445|2.1.0
 WARNING: Patient/tddui-patient-ins-example: Patient.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.250.1.213.1.4.8'
-INFORMATION: Patient/tddui-patient-ins-example: Patient.name[0].extension[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Patient/tddui-patient-ins-example: Patient.name[0].extension[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 == fsh-generated/resources/StructureDefinition-tddui-admission-date.json ==
 WARNING: StructureDefinition/tddui-admission-date: StructureDefinition.context[0]: Review the extension type for tddui-admission-date: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 == fsh-generated/resources/StructureDefinition-tddui-birth-order.json ==
