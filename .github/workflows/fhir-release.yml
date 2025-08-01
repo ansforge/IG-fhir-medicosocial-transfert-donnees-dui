@@ -13,7 +13,8 @@ jobs:
           path: igSource
       - uses: ansforge/IG-workflows@main
         with:      
-          repo_ig: "./igSource"   
+          repo_ig: "./igSource"
+          ig-publisher-version : "1.8.26"
           github_page: "true"
           github_page_token: ${{ secrets.GITHUB_TOKEN }}
           bake: "false"
