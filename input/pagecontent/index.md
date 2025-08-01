@@ -4,17 +4,28 @@ The Digital User File (DUI) centralizes all information concerning the person be
 The aim of this implementation guide is to define the specifications for DUI data transfer.
 </p>
 
-{% if site.data.info.releaselabel == 'ci-build' %}
+{% if site.data.info.releaselabel == 'public-comment
+' %}
 <div style="width: 65%">
 <blockquote class="stu-note">
 <p>
   <b>Attention !</b>
   <br>
- Cet Implementation Guide est actuellement en concertation.
+ Cet Implementation Guide est actuellement en concertation. La version courante est accessible à l'adresse : http://interop.esante.gouv.fr/ig/fhir/tddui
 </p>
 </blockquote>
 </div>
 {% endif %}
+
+
+{% if site.data.info.releaselabel == 'ci-build' %}
+<div style="width: 65%">
+    <blockquote class="stu-note">
+    <p>Cet Implementation Guide n'est pas la version courante, il s'agit de la version en intégration continue soumise à des changements fréquents uniquement destinée à suivre les travaux en cours. La version courante est accessible à l'adresse : http://interop.esante.gouv.fr/ig/fhir/tddui</p>
+    </blockquote>
+</div>
+{% endif %}
+
 
 <div class="figure" style="width:65%;">
     <img style="height: auto; width: 100%;" src="ci-sis-logo.png" alt="CI-SIS" title="Logo du CI-SIS">
