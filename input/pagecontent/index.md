@@ -4,8 +4,7 @@ The Digital User File (DUI) centralizes all information concerning the person be
 The aim of this implementation guide is to define the specifications for DUI data transfer.
 </p>
 
-{% if site.data.info.releaselabel == 'public-comment
-' %}
+{% if site.data.info.releaselabel == 'public-comment' %}
 <div style="width: 65%">
 <blockquote class="stu-note">
 <p>
