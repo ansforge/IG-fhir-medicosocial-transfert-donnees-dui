@@ -16,7 +16,7 @@ Les ressources utilisables sont :
 * [TDDUIEncounterSejour](StructureDefinition-tddui-encounter-sejour.html) représentant un séjour,
 * [TDDUIOrganization](StructureDefinition-tddui-organization.html) représentant une entité juridique
 
-Le producteur peut renseigner l'élément id des ressources transmises dans le bundle. Cet id pourra être utilisé pour faire le lien entre l'usager, son séjour et sa structure au niveau des références de la ressource Encounter.
+Pour faire le lien entre l'usager, son séjour et sa structure au niveau des références de la ressource Encounter, le Producteur peut utiliser différents éléments ([voir la spécification FHIR](https://build.fhir.org/bundle.html#references))
 
 ### Flux 1.2 Resultat de la transmission de données DUI
 
