@@ -1648,7 +1648,8 @@ Cette classe décrit le statut des ressources (Evenement, Evaluation).
   <tr>
     <td>statut : [1..1] Code</td>
     <td>Statut de la ressource impactée. <br>
-    Jeu(x) de valeur(s) associé(s) :  <a href="https://mos.esante.gouv.fr/NOS/JDV_J281-StatutsRessourcesMS/JDV_J281-StatutsRessourcesMS.pdf">JDV_J281-StatutsRessourcesMS</a>
+    Jeu(x) de valeur(s) associé(s) :  <a href="https://mos.esante.gouv.fr/NOS/JDV_J47-FunctionCode-CISIS/FHIR/JDV-J47-FunctionCode-CISIS">JDV_J281-StatutsRessourcesMS</a>
+    Les statuts permettant de décrire les évènements et les évaluations correspondent aux codes suivants : TERMINE, VALIDE, APPROUVE, PLANIFIE, REALISE, ANNULE.
     </td>
   </tr>
   <tr>
