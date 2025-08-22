@@ -10,13 +10,17 @@ La transmission de données d'un logiciel DUI est assurée par l'interaction FHI
 Où `[base]` est le point de contact FHIR.
 
 Les différentes ressources sont véhiculées via un bundle de type Transaction, les ressources sont véhiculées via l'élément : `Bundle.entry`.
-Les ressources utilisables sont :
+Les ressources utilisables sont conformes aux profils :
 * [TDDUIPatient](StructureDefinition-tddui-patient.html) représentant l'usager,
 * [TDDUIPatientINS](StructureDefinition-tddui-patient-ins.html) représentant l'usager transmis avec l'INS,
 * [TDDUIEncounterSejour](StructureDefinition-tddui-encounter-sejour.html) représentant un séjour,
 * [TDDUIOrganization](StructureDefinition-tddui-organization.html) représentant une entité juridique
 
+
 Pour faire le lien entre l'usager, son séjour et sa structure au niveau des références de la ressource Encounter, le Producteur peut utiliser différents éléments ([voir la spécification FHIR](https://build.fhir.org/bundle.html#references))
+
+Pour toutes ces ressources, seule la création est possible via l'intéraction FHIR <a href="https://hl7.org/fhir/R4/http.html#create">Create</a>.
+
 
 ### Flux 1.2 Resultat de la transmission de données DUI
 
