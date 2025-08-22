@@ -11,7 +11,7 @@
     </td>
     <td>
       <ul>
-      <li>Flux 1.1 - Transmission de données DUI : interaction « create » de FHIR</li>
+      <li>Flux 1.1 - Transmission de données DUI : interaction « transaction » de FHIR</li>
       <li>Flux 1.2 - Résultat de la transmission de données DUI : réponse à la requête HTTP POST</li>
       </ul>
       {%include flux1.svg%} <br>
