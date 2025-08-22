@@ -239,7 +239,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Où <code class="language-plaintext highlighter-rouge">[base]</code> est le point de contact FHIR.</p>
 
 <p>Les différentes ressources sont véhiculées via un bundle de type Transaction, les ressources sont véhiculées via l'élément : <code class="language-plaintext highlighter-rouge">Bundle.entry</code>.
-Les ressources utilisables sont :</p>
+Les ressources utilisables sont conformes aux profils :</p>
 <ul>
   <li><a href="StructureDefinition-tddui-patient.html">TDDUIPatient</a> représentant l'usager,</li>
   <li><a href="StructureDefinition-tddui-patient-ins.html">TDDUIPatientINS</a> représentant l'usager transmis avec l'INS,</li>
@@ -247,7 +247,7 @@ Les ressources utilisables sont :</p>
   <li><a href="StructureDefinition-tddui-organization.html">TDDUIOrganization</a> représentant une entité juridique</li>
 </ul>
 
-<p>Pour toutes ces ressources, seule la création est possible.</p>
+<p>Pour toutes ces ressources, seule la création est possible via l'intéraction FHIR <a href="https://hl7.org/fhir/R4/http.html#create">Create</a>.</p>
 
 <h3 id="flux-12-resultat-de-la-transmission-de-données-dui">Flux 1.2 Resultat de la transmission de données DUI</h3>
 
@@ -297,7 +297,7 @@ Aucune des ressources envoyées ne seront créées et le bundle corrigé doit ê
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 19, 2025 09:14+0000">2025-08-19</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Aug 22, 2025 13:25+0000">2025-08-22</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
