@@ -20,6 +20,7 @@ Pour faire le lien entre l'usager, son séjour et sa structure au niveau des ré
 
 ### Flux 1.2 Resultat de la transmission de données DUI
 
+Si la création des ressources contenue dans le Bundle est correctement effectuée, le Consommateur doit retourner un code HTTP 200 OK avec, dans le corps de la réponse, une ressource « Bundle » de type « transaction-response ».
 Le Bundle contient une entrée pour chaque ressource reçue dans le Bundle de la requête. Chaque entrée contient le statut de l’opération (201 Created) ainsi que les attributs mis à jour « id » et « versionId».
 
 Le producteur doit connaitre ces nouveaux id pour les utiliser dans les opérations suivantes.
