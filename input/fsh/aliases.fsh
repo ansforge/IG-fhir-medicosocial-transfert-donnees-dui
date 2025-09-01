@@ -45,6 +45,7 @@ Alias: $TRE-R24-TypeActiviteLiberale = https://mos.esante.gouv.fr/NOS/TRE_R24-Ty
 Alias: $TRE-G05-SousSectionTableauCNOP = https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP
 Alias: $TRE-R06-SectionTableauCNOP = https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP
 
+Alias: $terminologie-cisis = https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis
 
 Alias: $JDV-J79-CiviliteExercice-RASS = https://mos.esante.gouv.fr/NOS/JDV_J79-CiviliteExercice-RASS/FHIR/JDV-J79-CiviliteExercice-RASS
 Alias: $JDV-J78-Civilite-RASS = https://mos.esante.gouv.fr/NOS/JDV_J78-Civilite-RASS/FHIR/JDV-J78-Civilite-RASS
@@ -58,6 +59,8 @@ Alias: $JDV-J91-TypeSavoirFaire-RASS = https://mos.esante.gouv.fr/NOS/JDV_J91-Ty
 Alias: $JDV-J106-EnsembleProfession-RASS = https://mos.esante.gouv.fr/NOS/JDV_J106-EnsembleProfession-RASS/FHIR/JDV-J106-EnsembleProfession-RASS
 Alias: $JDV-J107-EnsembleSavoirFaire-RASS = https://mos.esante.gouv.fr/NOS/JDV_J107-EnsembleSavoirFaire-RASS/FHIR/JDV-J107-EnsembleSavoirFaire-RASS
 Alias: $JDV-J245-Civilite-CISIS = https://mos.esante.gouv.fr/NOS/JDV_J245-Civilite-CISIS/FHIR/JDV-J245-Civilite-CISIS
+
+Alias $jdv-type-evenement-ssiad-cisis = https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-evenement-ssiad-cisis
 
 // HL7
 Alias: $v2-0131 = http://terminology.hl7.org/CodeSystem/v2-0131

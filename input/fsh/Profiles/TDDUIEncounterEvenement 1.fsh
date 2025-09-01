@@ -1,0 +1,78 @@
+Profile: TDDUIEncounterEvenement
+Parent: Encounter
+Id: tddui-encounter-evenement
+Title: "TDDUI Encounter Evenement"
+Description: "Profil de la ressource Encounter permettant de regrouper les évènements liés à la prise en charge de l’usager dans une structure ESSMS."
+
+* insert FRCoreEncounterProfile
+
+* identifier 1..1
+
+// Type
+* type ^slicing.discriminator.type = #pattern
+* type ^slicing.discriminator.path = "coding.system"
+* type ^slicing.rules = #open
+
+* type contains
+    ssiad 0..* and
+    serafinDirect 0..* and
+    serafinIndirect 0..* and
+    text 0..*
+
+* type[ssiad].coding.code from $jdv-type-evenement-ssiad-cisis
+* type[ssiad].coding.system 1..1
+* type[ssiad].coding.system = $terminologie-cisis
+* type[ssiad] ^short = "Codes SSIAD"
+
+* type[serafinDirect].coding.code from https://mos.esante.gouv.fr/NOS/JDV_J284-PrestationsDirects_SERAFIN/FHIR/JDV-J284-PrestationsDirects-SERAFIN
+* type[serafinDirect].coding.system 1..1
+* type[serafinDirect].coding.system = "urn:oid:1.2.250.1.213.3.3.253"
+* type[serafinDirect] ^short = "Codes SERAFIN - Prestations directes"
+
+* type[serafinIndirect].coding.code from https://mos.esante.gouv.fr/NOS/JDV_J283-PrestationsIndirects_SERAFIN/FHIR/JDV-J283-PrestationsIndirects-SERAFIN
+* type[serafinIndirect].coding.system 1..1
+* type[serafinIndirect].coding.system = "urn:oid:1.2.250.1.213.3.3.252"
+* type[serafinIndirect] ^short = "Codes SERAFIN - Prestations indirectes"
+
+* type[text].coding.code 0..1
+* type[text].coding.code = http://terminology.hl7.org/CodeSystem/data-absent-reason#not-permitted
+* type[text].coding.display = "Not Permitted"
+* type[text].coding.system 1..1
+* type[text].coding.system = "urn:oid:2.16.840.1.113883.4.642.4.1048"
+* type[text].text 1..1
+* type[text] ^short = "Texte non structuré véhiculant les autres types d’évènements."
+
+// Usager
+* subject 1..1
+* subject only Reference(TDDUIPatient or TDDUIPatientINS)
+
+// ESSMS
+* serviceProvider only Reference(TDDUIOrganization)
+
+// Professionnel
+* participant.individual only Reference(TDDUIPractitioner or TDDUIPractitionerRole or RelatedPerson)
+
+* location 0..1
+
+* extension contains
+    TDDUIRessourcesUsed named TDDUIRessourcesUsed 0..* and
+    TDDUIEventLabel named TDDUIEventLabel 0..1 and
+    TDDUIComment named TDDUIComment 0..* and
+    TDDUIEventReport named TDDUIEventReport 0..1 and
+    TDDUIAttachment named TDDUIAttachment 0..* and
+    TDDUIEventOutsideService named TDDUIEventOutsideService 0..1  and
+    TDDUIEventReason named TDDUIEventReason 0..1  and
+    TDDUIPatientPresent named TDDUIPatientPresent 0..1  and
+    TDDUIMeal named TDDUIMeal 0..1
+
+* extension[TDDUIRessourcesUsed] ^short = "Ressources utilisées lors de l’évènement."
+* extension[TDDUIEventLabel] ^short = "Titre donné à l’évènement par la structure."
+* extension[TDDUIComment] ^short = "Commentaires sur le déroulé de l'évènement."
+* extension[TDDUIEventReport] ^short = "Zone de texte liée à l’événement pour compte rendu des actions réalisées."
+* extension[TDDUIAttachment] ^short = "Pièces jointes liées à l’événement."
+* extension[TDDUIEventOutsideService] ^short = "Evénement hors prestation prévue dans le projet personnalisé de l’usager."
+* extension[TDDUIEventReason] ^short = "Contexte justifiant la réalisation de l’évènement."
+* extension[TDDUIPatientPresent] ^short = "Evènement nécessitant ou non la présence physique de l’usager."
+* extension[TDDUIMeal] ^short = "Repas du professionnel prévu dans le cadre de l'événement."
+
+* partOf only Reference(TDDUIEncounterSejour)
