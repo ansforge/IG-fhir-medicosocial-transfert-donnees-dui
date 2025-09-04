@@ -1,4 +1,4 @@
-**Les flux présentés ci dessous doivent utiliser HTTPS**
+**Les flux présentés ci-dessous doivent utiliser HTTPS**
 
 <table style="width:100%">
   <tr>
