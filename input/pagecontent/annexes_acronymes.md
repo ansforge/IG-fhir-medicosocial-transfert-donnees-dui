@@ -13,7 +13,7 @@
   </tr>
   <tr>
     <td>CDA</td>
-    <td>Clinical Document</td>
+    <td>Clinical Document Architecture</td>
   </tr>
   <tr>
     <td>CI-SIS</td>
