@@ -10,7 +10,7 @@
   <name value="TDDUI"/>
   <title value="Médicosocial - Transfert de données DUI"/>
   <status value="active"/>
-  <date value="2025-09-10T10:00:26+00:00"/>
+  <date value="2025-09-10T13:51:57+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -774,11 +774,33 @@
         <valueString value="Encounter"/>
       </extension>
       <reference>
+        <reference value="Encounter/tddui-encounter-evenement-example"/>
+      </reference>
+      <name value="tddui-encounter-evenement-example"/>
+      <description value="Exemple d'un évènement"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
         <reference value="Encounter/tddui-encounter-sejour-example"/>
       </reference>
       <name value="tddui-encounter-sejour-example"/>
       <description value="Exemple d'un séjour en ESSMS"/>
       <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/tddui-event-location-example"/>
+      </reference>
+      <name value="tddui-event-location-example"/>
+      <description value="Lieu de l'évènement"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -815,6 +837,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/tddui-practitioner-example"/>
+      </reference>
+      <name value="tddui-practitioner-example"/>
+      <description value="Exemple d'un professionnel de santé"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/tddui-practitioner-role-example"/>
+      </reference>
+      <name value="tddui-practitioner-role-example"/>
+      <description value="Exemple d'un professionnel de santé"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CapabilityStatement"/>
       </extension>
       <reference>
@@ -823,6 +867,17 @@
       <name value="TDDUI-Producteur"/>
       <description value="Le rôle de Producteur est de transmettre des données de son logiciel DUI. Il correspond à un logiciel DUI."/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/tddui-task-transport-professionel-example"/>
+      </reference>
+      <name value="tddui-task-transport-professionel-example"/>
+      <description value="Exemple du transport du professionnel."/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

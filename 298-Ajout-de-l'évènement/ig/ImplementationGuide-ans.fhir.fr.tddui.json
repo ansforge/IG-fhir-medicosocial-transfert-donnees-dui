@@ -10,7 +10,7 @@
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2025-09-10T10:00:26+00:00",
+  "date" : "2025-09-10T13:51:57+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -964,11 +964,35 @@
         "valueString" : "Encounter"
       }],
       "reference" : {
+        "reference" : "Encounter/tddui-encounter-evenement-example"
+      },
+      "name" : "tddui-encounter-evenement-example",
+      "description" : "Exemple d'un évènement",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
         "reference" : "Encounter/tddui-encounter-sejour-example"
       },
       "name" : "tddui-encounter-sejour-example",
       "description" : "Exemple d'un séjour en ESSMS",
       "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/tddui-event-location-example"
+      },
+      "name" : "tddui-event-location-example",
+      "description" : "Lieu de l'évènement",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -1009,6 +1033,30 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/tddui-practitioner-example"
+      },
+      "name" : "tddui-practitioner-example",
+      "description" : "Exemple d'un professionnel de santé",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PractitionerRole"
+      }],
+      "reference" : {
+        "reference" : "PractitionerRole/tddui-practitioner-role-example"
+      },
+      "name" : "tddui-practitioner-role-example",
+      "description" : "Exemple d'un professionnel de santé",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CapabilityStatement"
       }],
       "reference" : {
@@ -1017,6 +1065,18 @@
       "name" : "TDDUI-Producteur",
       "description" : "Le rôle de Producteur est de transmettre des données de son logiciel DUI. Il correspond à un logiciel DUI.",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Task"
+      }],
+      "reference" : {
+        "reference" : "Task/tddui-task-transport-professionel-example"
+      },
+      "name" : "tddui-task-transport-professionel-example",
+      "description" : "Exemple du transport du professionnel.",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel"
     },
     {
       "extension" : [{
