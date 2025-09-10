@@ -58,6 +58,13 @@ Alias: $JDV-J91-TypeSavoirFaire-RASS = https://mos.esante.gouv.fr/NOS/JDV_J91-Ty
 Alias: $JDV-J106-EnsembleProfession-RASS = https://mos.esante.gouv.fr/NOS/JDV_J106-EnsembleProfession-RASS/FHIR/JDV-J106-EnsembleProfession-RASS
 Alias: $JDV-J107-EnsembleSavoirFaire-RASS = https://mos.esante.gouv.fr/NOS/JDV_J107-EnsembleSavoirFaire-RASS/FHIR/JDV-J107-EnsembleSavoirFaire-RASS
 Alias: $JDV-J245-Civilite-CISIS = https://mos.esante.gouv.fr/NOS/JDV_J245-Civilite-CISIS/FHIR/JDV-J245-Civilite-CISIS
+Alias: $JDV-J47-FunctionCode-CISIS = https://mos.esante.gouv.fr/NOS/JDV_J47-FunctionCode-CISIS/FHIR/JDV-J47-FunctionCode-CISIS
+Alias: $JDV-TypeEvenement-SSIAD-CISIS = https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-evenement-ssiad-cisis
+Alias: $JDV-J01-XdsAuthorSpecialty-CISIS = https://mos.esante.gouv.fr/NOS/JDV_J01-XdsAuthorSpecialty-CISIS/FHIR/JDV-J01-XdsAuthorSpecialty-CISIS
+Alias: $JDV-TypeMotorisation-CISIS = https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-motorisation-cisis
+Alias: $JDV-J282-TransportsLiesAuProjetIndividuel-SERAFIN = https://mos.esante.gouv.fr/NOS/JDV_J282-TransportsLiesAuProjetIndividuel_SERAFIN/FHIR/JDV-J282-TransportsLiesAuProjetIndividuel-SERAFIN
+Alias: $JDV-ModeDeTransport-CISIS = https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis
+
 
 // HL7
 Alias: $v2-0131 = http://terminology.hl7.org/CodeSystem/v2-0131
