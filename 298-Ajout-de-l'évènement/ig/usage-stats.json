@@ -12,6 +12,13 @@
       ]
     },
     {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment",
+      "title": "Pièce jointe de l’évènement",
+      "types": [
+        "Attachment"
+      ]
+    },
+    {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order",
       "title": "Ordre de naissance dans le registre d\u0027état civil",
       "types": [
@@ -33,10 +40,122 @@
       ]
     },
     {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-label",
+      "title": "Libellé de l\u0027évènement",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-reason",
+      "title": "Motif de l’évènement",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-report",
+      "title": "Rapport de l’évènement",
+      "types": [
+        "string"
+      ]
+    },
+    {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exit-mode-label",
       "title": "Libellé mode de sortie",
       "types": [
         "string"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-meal",
+      "title": "Repas",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-outside-service",
+      "title": "Evénement hors prestation",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-present",
+      "title": "Usager présent",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-profession",
+      "title": "TDDUI Profession",
+      "types": [
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used",
+      "title": "Ressources utilisées",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
       ]
     }
   ],
@@ -48,6 +167,10 @@
       }
     ],
     "Encounter": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement",
+        "title": "TDDUI Encounter Evenement"
+      },
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour",
         "title": "TDDUI Encounter Sejour"
@@ -68,6 +191,32 @@
         "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins",
         "title": "TDDUI Patient INS"
       }
+    ],
+    "Practitioner": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner",
+        "title": "TDDUI Practitioner"
+      }
+    ],
+    "PractitionerRole": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role",
+        "title": "TDDUI Practitioner Role"
+      }
+    ],
+    "Task": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport",
+        "title": "Transport"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel",
+        "title": "Transport Professionnel"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager",
+        "title": "Transport Usager"
+      }
     ]
   },
   "usage": {
@@ -85,6 +234,11 @@
       "StructureDefinition.snapshot.element.constraint"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.differential.element.binding",
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.differential.element.binding",
       "StructureDefinition.snapshot.element.binding"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
@@ -110,6 +264,7 @@
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.differential.element.type",
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
@@ -138,6 +293,9 @@
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-comment": [
       "Patient.contact"
     ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-estimated-discharge-date": [
+      "Encounter"
+    ],
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability": [
       "Bundle.entry.resource",
       "Patient"
@@ -164,8 +322,17 @@
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-nationality": [
       "Patient"
     ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-specialty": [
+      "Practitioner"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-service-type-duration": [
+      "PractitionerRole"
+    ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-admission-date": [
       "Bundle.entry.resource",
+      "Encounter"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment": [
       "Encounter"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order": [
@@ -178,8 +345,32 @@
       "Bundle.entry.resource",
       "Encounter"
     ],
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-label": [
+      "Encounter"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-reason": [
+      "Encounter"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-report": [
+      "Encounter"
+    ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exit-mode-label": [
       "Bundle.entry.resource",
+      "Encounter"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-meal": [
+      "Encounter"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-outside-service": [
+      "Encounter"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-present": [
+      "Encounter"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-profession": [
+      "PractitionerRole.code"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used": [
       "Encounter"
     ]
   }

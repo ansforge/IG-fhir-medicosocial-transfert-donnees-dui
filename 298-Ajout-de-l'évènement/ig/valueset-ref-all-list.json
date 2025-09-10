@@ -43,7 +43,8 @@
       "uses" : {
       },
       "StructureDefinition-tddui-patient.html" : "TDDUI Patient",
-      "StructureDefinition-tddui-patient-ins.html" : "TDDUI Patient INS"
+      "StructureDefinition-tddui-patient-ins.html" : "TDDUI Patient INS",
+      "StructureDefinition-tddui-practitioner.html" : "TDDUI Practitioner"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/bundle-type",
@@ -71,9 +72,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.79"],
       "uses" : {
       },
-      "StructureDefinition-tddui-patient.html" : "TDDUI Patient",
       "StructureDefinition-tddui-organization.html" : "TDDUI Organization",
-      "StructureDefinition-tddui-patient-ins.html" : "TDDUI Patient INS"
+      "StructureDefinition-tddui-practitioner-role.html" : "TDDUI Practitioner Role",
+      "StructureDefinition-tddui-patient.html" : "TDDUI Patient",
+      "StructureDefinition-tddui-patient-ins.html" : "TDDUI Patient INS",
+      "StructureDefinition-tddui-practitioner.html" : "TDDUI Practitioner",
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
@@ -90,6 +94,20 @@
       "StructureDefinition-tddui-organization.html" : "TDDUI Organization"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/days-of-week",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DaysOfWeek",
+      "title" : "DaysOfWeek",
+      "description" : "The days of the week.",
+      "systems" : ["http://hl7.org/fhir/days-of-week"],
+      "oids" : ["2.16.840.1.113883.4.642.3.512"],
+      "sources" : ["2.16.840.1.113883.4.642.3.512"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-practitioner-role.html" : "TDDUI Practitioner Role"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/diagnosis-role",
       "version" : "4.0.1",
       "status" : "draft",
@@ -101,7 +119,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.49"],
       "uses" : {
       },
-      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour"
+      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour",
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-admit-source",
@@ -115,7 +134,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.257"],
       "uses" : {
       },
-      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour"
+      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour",
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-diet",
@@ -129,7 +149,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.255"],
       "uses" : {
       },
-      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour"
+      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour",
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-discharge-disposition",
@@ -159,7 +180,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.262"],
       "uses" : {
       },
-      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour"
+      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour",
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-participant-type",
@@ -176,7 +198,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.250"],
       "uses" : {
       },
-      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour"
+      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour",
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-reason",
@@ -190,7 +213,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.261"],
       "uses" : {
       },
-      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour"
+      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour",
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-special-arrangements",
@@ -206,7 +230,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.253"],
       "uses" : {
       },
-      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour"
+      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour",
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-special-courtesy",
@@ -223,7 +248,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.252"],
       "uses" : {
       },
-      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour"
+      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour",
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-status",
@@ -237,7 +263,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.246"],
       "uses" : {
       },
-      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour"
+      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour",
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-type",
@@ -251,7 +278,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.248"],
       "uses" : {
       },
-      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour"
+      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour",
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/http-verb",
@@ -279,10 +307,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
-      "StructureDefinition-tddui-patient.html" : "TDDUI Patient",
       "StructureDefinition-tddui-organization.html" : "TDDUI Organization",
+      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour",
+      "StructureDefinition-tddui-patient.html" : "TDDUI Patient",
       "StructureDefinition-tddui-patient-ins.html" : "TDDUI Patient INS",
-      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour"
+      "StructureDefinition-tddui-practitioner.html" : "TDDUI Practitioner"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -296,10 +325,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-tddui-patient.html" : "TDDUI Patient",
       "StructureDefinition-tddui-organization.html" : "TDDUI Organization",
+      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour",
+      "StructureDefinition-tddui-patient.html" : "TDDUI Patient",
       "StructureDefinition-tddui-patient-ins.html" : "TDDUI Patient INS",
-      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour"
+      "StructureDefinition-tddui-practitioner.html" : "TDDUI Practitioner",
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -313,11 +344,17 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-tddui-patient.html" : "TDDUI Patient",
       "StructureDefinition-tddui-organization.html" : "TDDUI Organization",
-      "StructureDefinition-tddui-bundle.html" : "TDDUI Bundle",
+      "StructureDefinition-tddui-practitioner-role.html" : "TDDUI Practitioner Role",
+      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour",
+      "StructureDefinition-tddui-patient.html" : "TDDUI Patient",
       "StructureDefinition-tddui-patient-ins.html" : "TDDUI Patient INS",
-      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour"
+      "StructureDefinition-tddui-task-transport-usager.html" : "Transport Usager",
+      "StructureDefinition-tddui-task-transport-professionnel.html" : "Transport Professionnel",
+      "StructureDefinition-tddui-practitioner.html" : "TDDUI Practitioner",
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement",
+      "StructureDefinition-tddui-bundle.html" : "TDDUI Bundle",
+      "StructureDefinition-tddui-task-transport.html" : "Transport"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -362,9 +399,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.65"],
       "uses" : {
       },
+      "StructureDefinition-tddui-human-name.html" : "TDDUI Human Name DataType",
       "StructureDefinition-tddui-patient.html" : "TDDUI Patient",
-      "StructureDefinition-tddui-patient-ins.html" : "TDDUI Patient INS",
-      "StructureDefinition-tddui-human-name.html" : "TDDUI Human Name DataType"
+      "StructureDefinition-tddui-patient-ins.html" : "TDDUI Patient INS"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/organization-type",
@@ -394,6 +431,38 @@
       },
       "StructureDefinition-tddui-patient.html" : "TDDUI Patient",
       "StructureDefinition-tddui-patient-ins.html" : "TDDUI Patient INS"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/performer-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedurePerformerRoleCodes",
+      "title" : "Procedure Performer Role Codes",
+      "description" : "This example value set defines the set of codes that can be used to indicate a role of a procedure performer.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.433"],
+      "sources" : ["2.16.840.1.113883.4.642.3.433"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-task-transport-usager.html" : "Transport Usager",
+      "StructureDefinition-tddui-task-transport-professionnel.html" : "Transport Professionnel",
+      "StructureDefinition-tddui-task-transport.html" : "Transport"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-priority",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestPriority",
+      "title" : "Request priority",
+      "description" : "The clinical priority of a diagnostic order.",
+      "systems" : ["http://hl7.org/fhir/request-priority"],
+      "oids" : ["2.16.840.1.113883.4.642.3.115"],
+      "sources" : ["2.16.840.1.113883.4.642.3.115"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-task-transport-usager.html" : "Transport Usager",
+      "StructureDefinition-tddui-task-transport-professionnel.html" : "Transport Professionnel",
+      "StructureDefinition-tddui-task-transport.html" : "Transport"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/search-entry-mode",
@@ -427,9 +496,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.47"],
       "uses" : {
       },
-      "StructureDefinition-tddui-patient.html" : "TDDUI Patient",
       "StructureDefinition-tddui-organization.html" : "TDDUI Organization",
-      "StructureDefinition-tddui-patient-ins.html" : "TDDUI Patient INS"
+      "StructureDefinition-tddui-practitioner-role.html" : "TDDUI Practitioner Role",
+      "StructureDefinition-tddui-patient.html" : "TDDUI Patient",
+      "StructureDefinition-tddui-patient-ins.html" : "TDDUI Patient INS",
+      "StructureDefinition-tddui-practitioner.html" : "TDDUI Practitioner",
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/service-type",
@@ -443,7 +515,43 @@
       "sources" : ["2.16.840.1.113883.4.642.3.518"],
       "uses" : {
       },
-      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour"
+      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour",
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/task-intent",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "TaskIntent",
+      "title" : "TaskIntent",
+      "description" : "Distinguishes whether the task is a proposal, plan or full order.",
+      "systems" : [
+        "http://hl7.org/fhir/request-intent",
+        "http://hl7.org/fhir/task-intent"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1240"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1240"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-task-transport-usager.html" : "Transport Usager",
+      "StructureDefinition-tddui-task-transport-professionnel.html" : "Transport Professionnel",
+      "StructureDefinition-tddui-task-transport.html" : "Transport"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/task-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "TaskStatus",
+      "title" : "TaskStatus",
+      "description" : "The current status of the task.",
+      "systems" : ["http://hl7.org/fhir/task-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.790"],
+      "sources" : ["2.16.840.1.113883.4.642.3.790"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-task-transport-usager.html" : "Transport Usager",
+      "StructureDefinition-tddui-task-transport-professionnel.html" : "Transport Professionnel",
+      "StructureDefinition-tddui-task-transport.html" : "Transport"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v2-0092",
@@ -457,7 +565,20 @@
       "sources" : ["2.16.840.1.113883.21.40"],
       "uses" : {
       },
-      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour"
+      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour",
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-2.7-0360",
+      "version" : "0360",
+      "status" : "active",
+      "name" : "v2.0360.2.7",
+      "title" : "v2 table 0360, Version 2.7",
+      "description" : "FHIR Value set/code system definition for HL7 v2 table 0360 ver 2.9 ( Degree/License/Certificate)",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0360|2.7"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-practitioner.html" : "TDDUI Practitioner"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode",
@@ -471,7 +592,8 @@
       "sources" : ["2.16.840.1.113883.1.11.13955"],
       "uses" : {
       },
-      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour"
+      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour",
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-ActPriority",
@@ -485,7 +607,66 @@
       "sources" : ["2.16.840.1.113883.1.11.16866"],
       "uses" : {
       },
-      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour"
+      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour",
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-discharge-disposition",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "FRCoreValueSetEncounterDischargeDisposition",
+      "title" : "FR Core ValueSet Encounter discharge disposition",
+      "description" : "This value set defines a set of codes that can be used to where the patient left the hospital | Circonstances de sortie de l'hôpital.",
+      "systems" : [
+        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-circonstances-sortie",
+        "http://terminology.hl7.org/CodeSystem/discharge-disposition"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-identifier-type",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "FRCoreValueSetEncounterIdentifierType",
+      "title" : "FR Core ValueSet Encounter identifier type",
+      "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (Encounters).",
+      "systems" : [
+        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identifier-type"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-type",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "FRCoreValueSetEncounterType",
+      "title" : "FR Core ValueSet Encounter type",
+      "description" : "A coded type for an encounter | Jeu de valeurs des types de rencontre.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v2-0007",
+        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-type-admission"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-location-physical-type",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "FRCoreValueSetLocationPhysicalType",
+      "title" : "FR Core ValueSet Location physical type",
+      "description" : "French location physical type | Types de lieux physiques pour la France",
+      "systems" : [
+        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-physical-type"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
     },
     {
       "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-marital-status",
@@ -547,6 +728,42 @@
       "StructureDefinition-tddui-patient-ins.html" : "TDDUI Patient INS"
     },
     {
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-role-exercice",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "FRCoreValueSetPractitionerRoleExercice",
+      "title" : "FR Core ValueSet PractitionerRole Exercice",
+      "description" : "The exercice(s) of the practitioner.",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge",
+        "https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier",
+        "https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP",
+        "https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice",
+        "https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite",
+        "https://mos.esante.gouv.fr/NOS/TRE_R21-Fonction/FHIR/TRE-R21-Fonction",
+        "https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale",
+        "https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP",
+        "https://mos.esante.gouv.fr/NOS/TRE_R96-AutreFonctionSanitaire/FHIR/TRE-R96-AutreFonctionSanitaire"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-practitioner-role.html" : "TDDUI Practitioner Role"
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-specialty",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "FRCoreValueSetPractitionerSpecialty",
+      "title" : "FR Core ValueSet Practitioner specialty",
+      "description" : "The modalities of exercice of the practitioner, registered by an official organization for a period of time.",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-practitioner-role.html" : "TDDUI Practitioner Role"
+    },
+    {
       "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-relation-type",
       "version" : "2.1.0",
       "status" : "active",
@@ -560,6 +777,38 @@
       },
       "StructureDefinition-tddui-patient.html" : "TDDUI Patient",
       "StructureDefinition-tddui-patient-ins.html" : "TDDUI Patient INS"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-serafin-valueset",
+      "version" : "2.0.0-ballot",
+      "status" : "active",
+      "name" : "TDDUISerafinValueSet",
+      "title" : "TDDUI SERAFIN ValueSet",
+      "description" : "ValueSet contenant les codes SERAFIN (prestations directes et indirectes) pour le profil TDDUI Encounter Evenement.",
+      "systems" : ["https://smt.esante.gouv.fr/terminologie-SERAFINPH"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J01-XdsAuthorSpecialty-CISIS/FHIR/JDV-J01-XdsAuthorSpecialty-CISIS",
+      "version" : "20250721120000",
+      "status" : "active",
+      "name" : "JDV_J01_XdsAuthorSpecialty_CISIS",
+      "title" : null,
+      "description" : "XDS authorSpecialty CI-SIS",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge",
+        "https://mos.esante.gouv.fr/NOS/TRE_A02-ProfessionSavFaire-CISIS/FHIR/TRE-A02-ProfessionSavFaire-CISIS",
+        "https://mos.esante.gouv.fr/NOS/TRE_A00-ProducteurDocNonPS/FHIR/TRE-A00-ProducteurDocNonPS",
+        "https://mos.esante.gouv.fr/NOS/TRE_R95-UsagerTitre/FHIR/TRE-R95-UsagerTitre",
+        "https://mos.esante.gouv.fr/NOS/TRE_R94-ProfessionSocial/FHIR/TRE-R94-ProfessionSocial"
+      ],
+      "oids" : ["1.2.250.1.213.1.1.5.461"],
+      "sources" : ["1.2.250.1.213.1.1.5.461"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-profession.html" : "TDDUI Profession"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/JDV_J101-SecteurActivite-RASS/FHIR/JDV-J101-SecteurActivite-RASS",
@@ -576,6 +825,80 @@
       "uses" : {
       },
       "StructureDefinition-tddui-organization.html" : "TDDUI Organization"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J105-EnsembleDiplome-RASS/FHIR/JDV-J105-EnsembleDiplome-RASS",
+      "version" : "20250425120000",
+      "status" : "active",
+      "name" : "JDV_J105_EnsembleDiplome_RASS",
+      "title" : null,
+      "description" : "Ensemble des diplômes et qualifications du RASS",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R48-DiplomeEtatFrancais/FHIR/TRE-R48-DiplomeEtatFrancais",
+        "https://mos.esante.gouv.fr/NOS/TRE_R55-CertificatEtudeSpeciale/FHIR/TRE-R55-CertificatEtudeSpeciale",
+        "https://mos.esante.gouv.fr/NOS/TRE_R54-DiplomeUniversiteInterUniversitaire/FHIR/TRE-R54-DiplomeUniversiteInterUniversitaire",
+        "https://mos.esante.gouv.fr/NOS/TRE_R50-DESCGroupe1Diplome/FHIR/TRE-R50-DESCGroupe1Diplome",
+        "https://mos.esante.gouv.fr/NOS/TRE_R226-Dip2iemeCycleNQ/FHIR/TRE-R226-Dip2iemeCycleNQ",
+        "https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee",
+        "https://mos.esante.gouv.fr/NOS/TRE_R52-CapaciteDiplome/FHIR/TRE-R52-CapaciteDiplome",
+        "https://mos.esante.gouv.fr/NOS/TRE_R51-DESCGroupe2Diplome/FHIR/TRE-R51-DESCGroupe2Diplome",
+        "https://mos.esante.gouv.fr/NOS/TRE_R36-AutreDiplomeObtenu/FHIR/TRE-R36-AutreDiplomeObtenu",
+        "https://mos.esante.gouv.fr/NOS/TRE_R58-AutreTypeDiplome/FHIR/TRE-R58-AutreTypeDiplome",
+        "https://mos.esante.gouv.fr/NOS/TRE_R348-FormationSpecialiseeTransversale/FHIR/TRE-R348-FormationSpecialiseeTransversale",
+        "https://mos.esante.gouv.fr/NOS/TRE_R56-Attestation/FHIR/TRE-R56-Attestation",
+        "https://mos.esante.gouv.fr/NOS/TRE_R53-DiplomePaysEEE/FHIR/TRE-R53-DiplomePaysEEE",
+        "https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee"
+      ],
+      "oids" : ["1.2.250.1.213.1.6.1.173"],
+      "sources" : ["1.2.250.1.213.1.6.1.173"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-practitioner.html" : "TDDUI Practitioner"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J106-EnsembleProfession-RASS/FHIR/JDV-J106-EnsembleProfession-RASS",
+      "version" : "20250328120000",
+      "status" : "active",
+      "name" : "JDV_J106_EnsembleProfession_RASS",
+      "title" : null,
+      "description" : "Ensemble des professions du RASS",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R291-AutreProfession/FHIR/TRE-R291-AutreProfession",
+        "https://mos.esante.gouv.fr/NOS/TRE_R95-UsagerTitre/FHIR/TRE-R95-UsagerTitre",
+        "https://mos.esante.gouv.fr/NOS/TRE_G15-ProfessionSante/FHIR/TRE-G15-ProfessionSante",
+        "https://mos.esante.gouv.fr/NOS/TRE_R94-ProfessionSocial/FHIR/TRE-R94-ProfessionSocial"
+      ],
+      "oids" : ["1.2.250.1.213.1.6.1.174"],
+      "sources" : ["1.2.250.1.213.1.6.1.174"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-practitioner.html" : "TDDUI Practitioner"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J107-EnsembleSavoirFaire-RASS/FHIR/JDV-J107-EnsembleSavoirFaire-RASS",
+      "version" : "20241025120000",
+      "status" : "active",
+      "name" : "JDV_J107_EnsembleSavoirFaire_RASS",
+      "title" : null,
+      "description" : "Ensemble des savoir-faire et compétences du RASS",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R42-DESCnonQualifiant/FHIR/TRE-R42-DESCnonQualifiant",
+        "https://mos.esante.gouv.fr/NOS/TRE_R359-SurspecialiteTransversale/FHIR/TRE-R359-SurspecialiteTransversale",
+        "https://mos.esante.gouv.fr/NOS/TRE_R40-CompetenceExclusive/FHIR/TRE-R40-CompetenceExclusive",
+        "https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale",
+        "https://mos.esante.gouv.fr/NOS/TRE_R39-Competence/FHIR/TRE-R39-Competence",
+        "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r394-competence-metier",
+        "https://mos.esante.gouv.fr/NOS/TRE_R43-CapaciteSavoirFaire/FHIR/TRE-R43-CapaciteSavoirFaire",
+        "https://mos.esante.gouv.fr/NOS/TRE_R44-QualificationPAC/FHIR/TRE-R44-QualificationPAC",
+        "https://mos.esante.gouv.fr/NOS/TRE_G13-OrientationParticuliere/FHIR/TRE-G13-OrientationParticuliere",
+        "https://mos.esante.gouv.fr/NOS/TRE_R97-DroitExerciceCompl/FHIR/TRE-R97-DroitExerciceCompl",
+        "https://mos.esante.gouv.fr/NOS/TRE_R45-FonctionQualifiee/FHIR/TRE-R45-FonctionQualifiee"
+      ],
+      "oids" : ["1.2.250.1.213.1.6.1.175"],
+      "sources" : ["1.2.250.1.213.1.6.1.175"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-practitioner.html" : "TDDUI Practitioner"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/JDV_J129-CategorieEtablissement-RASS/FHIR/JDV-J129-CategorieEtablissement-RASS",
@@ -610,6 +933,66 @@
       "StructureDefinition-tddui-human-name.html" : "TDDUI Human Name DataType"
     },
     {
+      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J282-TransportsLiesAuProjetIndividuel_SERAFIN/FHIR/JDV-J282-TransportsLiesAuProjetIndividuel-SERAFIN",
+      "version" : "20241025120000",
+      "status" : "active",
+      "name" : "JDV_J282_TransportsLiesAuProjetIndividuel_SERAFIN",
+      "title" : null,
+      "description" : "Liste les natures des transports liés au projet individuel provenant de la terminologie SERAFIN",
+      "systems" : ["https://smt.esante.gouv.fr/terminologie-SERAFINPH"],
+      "oids" : ["1.2.250.1.213.3.3.251"],
+      "sources" : ["1.2.250.1.213.3.3.251"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-task-transport-usager.html" : "Transport Usager"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J283-PrestationsIndirects_SERAFIN/FHIR/JDV-J283-PrestationsIndirects-SERAFIN",
+      "version" : "20241025120000",
+      "status" : "active",
+      "name" : "JDV_J283_PrestationsIndirects_SERAFIN",
+      "title" : null,
+      "description" : "Liste des prestations indirects provenant de la terminologie SERAFIN",
+      "systems" : ["https://smt.esante.gouv.fr/terminologie-SERAFINPH"],
+      "oids" : ["1.2.250.1.213.3.3.252"],
+      "sources" : ["1.2.250.1.213.3.3.252"],
+      "uses" : {
+      },
+      "ValueSet-tddui-serafin-valueset.html" : "TDDUI SERAFIN ValueSet"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J284-PrestationsDirects_SERAFIN/FHIR/JDV-J284-PrestationsDirects-SERAFIN",
+      "version" : "20241025120000",
+      "status" : "active",
+      "name" : "JDV_J284_PrestationsDirects_SERAFIN",
+      "title" : null,
+      "description" : "Liste des prestations directs provenant de la terminologie SERAFIN",
+      "systems" : ["https://smt.esante.gouv.fr/terminologie-SERAFINPH"],
+      "oids" : ["1.2.250.1.213.3.3.253"],
+      "sources" : ["1.2.250.1.213.3.3.253"],
+      "uses" : {
+      },
+      "ValueSet-tddui-serafin-valueset.html" : "TDDUI SERAFIN ValueSet"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J47-FunctionCode-CISIS/FHIR/JDV-J47-FunctionCode-CISIS",
+      "version" : "20250523120000",
+      "status" : "active",
+      "name" : "JDV_J47_FunctionCode_CISIS",
+      "title" : null,
+      "description" : "Rôles fonctionnels",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge",
+        "https://mos.esante.gouv.fr/NOS/TRE_R258-RelationPriseCharge/FHIR/TRE-R258-RelationPriseCharge",
+        "https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction"
+      ],
+      "oids" : ["1.2.250.1.213.1.1.5.124"],
+      "sources" : ["1.2.250.1.213.1.1.5.124"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-practitioner-role.html" : "TDDUI Practitioner Role"
+    },
+    {
       "url" : "https://mos.esante.gouv.fr/NOS/JDV_J79-CiviliteExercice-RASS/FHIR/JDV-J79-CiviliteExercice-RASS",
       "version" : "20200424120000",
       "status" : "active",
@@ -624,6 +1007,155 @@
       "uses" : {
       },
       "StructureDefinition-tddui-human-name.html" : "TDDUI Human Name DataType"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J81-TypeDiplome-RASS/FHIR/JDV-J81-TypeDiplome-RASS",
+      "version" : "20230526120000",
+      "status" : "active",
+      "name" : "JDV_J81_TypeDiplome_RASS",
+      "title" : null,
+      "description" : "Types de diplôme du RASS",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome"
+      ],
+      "oids" : ["1.2.250.1.213.1.6.1.149"],
+      "sources" : ["1.2.250.1.213.1.6.1.149"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-practitioner.html" : "TDDUI Practitioner"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J89-CategorieProfessionnelle-RASS/FHIR/JDV-J89-CategorieProfessionnelle-RASS",
+      "version" : "20240329120000",
+      "status" : "active",
+      "name" : "JDV_J89_CategorieProfessionnelle_RASS",
+      "title" : null,
+      "description" : "Catégories professionnelles dans le RASS",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R09-CategorieProfessionnelle/FHIR/TRE-R09-CategorieProfessionnelle"
+      ],
+      "oids" : ["1.2.250.1.213.1.6.1.157"],
+      "sources" : ["1.2.250.1.213.1.6.1.157"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-practitioner.html" : "TDDUI Practitioner"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J91-TypeSavoirFaire-RASS/FHIR/JDV-J91-TypeSavoirFaire-RASS",
+      "version" : "20250625120000",
+      "status" : "active",
+      "name" : "JDV_J91_TypeSavoirFaire_RASS",
+      "title" : null,
+      "description" : "Types de savoir-faire des professionnels du RASS",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R04-TypeSavoirFaire/FHIR/TRE-R04-TypeSavoirFaire"
+      ],
+      "oids" : ["1.2.250.1.213.1.6.1.159"],
+      "sources" : ["1.2.250.1.213.1.6.1.159"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-practitioner.html" : "TDDUI Practitioner"
+    },
+    {
+      "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-detail-materiel-specialise-cisis",
+      "version" : "20250624152100",
+      "status" : "active",
+      "name" : "JdvDetailMaterielSpecialiseCisis",
+      "title" : "JDV Detail Materiel Specialise CISIS",
+      "description" : "JDV Detail Materiel Specialise CISIS",
+      "systems" : [
+        "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis"
+      ],
+      "oids" : ["1.2.250.1.213.1.1.5.808"],
+      "sources" : ["1.2.250.1.213.1.1.5.808"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-ressources-used.html" : "Ressources utilisées"
+    },
+    {
+      "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-detail-ressource-immobiliere-utilisee-cisis",
+      "version" : "20250624152100",
+      "status" : "active",
+      "name" : "JdvDetailRessourceImmobiliereUtiliseeCisis",
+      "title" : "JDV Detail Ressource Immobiliere Utilisee CISIS",
+      "description" : "JDV Detail Ressource Immobiliere Utilisee CISIS",
+      "systems" : [
+        "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis"
+      ],
+      "oids" : ["1.2.250.1.213.1.1.5.809"],
+      "sources" : ["1.2.250.1.213.1.1.5.809"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-ressources-used.html" : "Ressources utilisées"
+    },
+    {
+      "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis",
+      "version" : "20250624152101",
+      "status" : "active",
+      "name" : "JdvModeDeTransportCisis",
+      "title" : "JDV Mode De Transport CISIS",
+      "description" : "JDV Mode De Transport CISIS",
+      "systems" : [
+        "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis"
+      ],
+      "oids" : ["1.2.250.1.213.1.1.5.140"],
+      "sources" : ["1.2.250.1.213.1.1.5.140"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-task-transport-usager.html" : "Transport Usager",
+      "StructureDefinition-tddui-task-transport-professionnel.html" : "Transport Professionnel",
+      "StructureDefinition-tddui-task-transport.html" : "Transport"
+    },
+    {
+      "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-ressource-utilisee-cisis",
+      "version" : "20250624152100",
+      "status" : "active",
+      "name" : "JdvRessourceUtiliseeCisis",
+      "title" : "JDV Ressource Utilisee CISIS",
+      "description" : "JDV Ressource Utilisee CISIS",
+      "systems" : [
+        "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["1.2.250.1.213.1.1.5.807"],
+      "sources" : ["1.2.250.1.213.1.1.5.807"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-ressources-used.html" : "Ressources utilisées"
+    },
+    {
+      "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-evenement-ssiad-cisis",
+      "version" : "20250624152100",
+      "status" : "active",
+      "name" : "JdvTypeEvenementSsiadCisis",
+      "title" : "JDV Type Evenement Ssiad CISIS",
+      "description" : "JDV Type Evenement Ssiad CISIS",
+      "systems" : [
+        "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis"
+      ],
+      "oids" : ["1.2.250.1.213.1.1.5.811"],
+      "sources" : ["1.2.250.1.213.1.1.5.811"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
+    },
+    {
+      "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-motorisation-cisis",
+      "version" : "20250624152100",
+      "status" : "active",
+      "name" : "JdvTypeMotorisationCisis",
+      "title" : "JDV Type Motorisation CISIS",
+      "description" : "JDV Type Motorisation CISIS",
+      "systems" : [
+        "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis"
+      ],
+      "oids" : ["1.2.250.1.213.1.1.5.801"],
+      "sources" : ["1.2.250.1.213.1.1.5.801"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-task-transport-usager.html" : "Transport Usager",
+      "StructureDefinition-tddui-task-transport-professionnel.html" : "Transport Professionnel",
+      "StructureDefinition-tddui-task-transport.html" : "Transport"
     }
   ]
 }

@@ -13,6 +13,134 @@
       "https://hl7.fr/ig/fhir/core/2.1.0/ValueSet-fr-core-vs-patient-gender-INS.html" : "FR Core ValueSet Patient gender INS ValueSet"
     },
     {
+      "url" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
+      "status" : "active",
+      "name" : "SNOMED_CT",
+      "title" : "SNOMED CT core",
+      "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
+      "oids" : ["2.16.840.1.113883.6.96"],
+      "uses" : {
+      },
+      "https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-jdv-ressource-utilisee-cisis.html" : "JDV Ressource Utilisee CISIS"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/discharge-disposition",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "DischargeDisposition",
+      "title" : "Discharge disposition",
+      "description" : "This value set defines a set of codes that can be used to where the patient left the hospital.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1093"],
+      "uses" : {
+      },
+      "https://hl7.fr/ig/fhir/core/2.1.0/ValueSet-fr-core-vs-encounter-discharge-disposition.html" : "FR Core ValueSet Encounter discharge disposition"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0007",
+      "version" : "2.2.0",
+      "status" : "active",
+      "name" : "AdmissionType",
+      "title" : "admissionType",
+      "description" : "Code system of concepts specifying the circumstances under which the patient was or will be admitted.  Used in HL7 Version 2.x messaging in the PV1 segment.",
+      "oids" : ["2.16.840.1.113883.18.9"],
+      "uses" : {
+      },
+      "https://hl7.fr/ig/fhir/core/2.1.0/ValueSet-fr-core-vs-encounter-type.html" : "FR Core ValueSet Encounter type"
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-circonstances-sortie",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "FRCoreCodeSystemCirconstancesSortie",
+      "title" : "FR Core CodeSystem Circonstances Sortie",
+      "description" : "Discharge Disposition",
+      "uses" : {
+      },
+      "https://hl7.fr/ig/fhir/core/2.1.0/ValueSet-fr-core-vs-encounter-discharge-disposition.html" : "FR Core ValueSet Encounter discharge disposition"
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identifier-type",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "FRCoreCodeSystemIdentifierType",
+      "title" : "FR Core CodeSystem Identifier Type",
+      "description" : "Identifier type",
+      "uses" : {
+      },
+      "https://hl7.fr/ig/fhir/core/2.1.0/ValueSet-fr-core-vs-encounter-identifier-type.html" : "FR Core ValueSet Encounter identifier type"
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-physical-type",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "FRCoreCodeSystemLocationPhysicalType",
+      "title" : "FR Core CodeSystem Location Physical Type",
+      "description" : "Location physical type",
+      "uses" : {
+      },
+      "https://hl7.fr/ig/fhir/core/2.1.0/ValueSet-fr-core-vs-location-physical-type.html" : "FR Core ValueSet Location physical type"
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-type-admission",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "FRCoreCodeSystemTypeAdmission",
+      "title" : "FR Core CodeSystem Type Admission",
+      "description" : "Admission type",
+      "uses" : {
+      },
+      "https://hl7.fr/ig/fhir/core/2.1.0/ValueSet-fr-core-vs-encounter-type.html" : "FR Core ValueSet Encounter type"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_A00-ProducteurDocNonPS/FHIR/TRE-A00-ProducteurDocNonPS",
+      "version" : "20240329120000",
+      "status" : "active",
+      "name" : "TRE_A00_ProducteurDocNonPS",
+      "title" : null,
+      "description" : "Producteur de document non PS",
+      "oids" : ["1.2.250.1.213.1.1.4.6"],
+      "uses" : {
+      },
+      "https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-JDV-J01-XdsAuthorSpecialty-CISIS.html" : "JDV_J01_XdsAuthorSpecialty_CISIS"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_A02-ProfessionSavFaire-CISIS/FHIR/TRE-A02-ProfessionSavFaire-CISIS",
+      "version" : "20241213120000",
+      "status" : "active",
+      "name" : "TRE_A02_ProfessionSavFaire_CISIS",
+      "title" : null,
+      "description" : "Profession et savoir-faire CI-SIS",
+      "oids" : ["1.2.250.1.213.1.1.4.5"],
+      "uses" : {
+      },
+      "https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-JDV-J01-XdsAuthorSpecialty-CISIS.html" : "JDV_J01_XdsAuthorSpecialty_CISIS"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R258-RelationPriseCharge/FHIR/TRE-R258-RelationPriseCharge",
+      "version" : "20250523120000",
+      "status" : "active",
+      "name" : "TRE_R258_RelationPriseCharge",
+      "title" : null,
+      "description" : "Relation dans la prise en charge du patient",
+      "oids" : ["1.2.250.1.213.1.1.4.2.280"],
+      "uses" : {
+      },
+      "https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-JDV-J47-FunctionCode-CISIS.html" : "JDV_J47_FunctionCode_CISIS"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction",
+      "version" : "20231215120000",
+      "status" : "active",
+      "name" : "TRE_R259_HL7ParticipationFunction",
+      "title" : null,
+      "description" : "Rôles fonctionnels HL7",
+      "oids" : ["2.16.840.1.113883.5.88"],
+      "uses" : {
+      },
+      "https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-JDV-J47-FunctionCode-CISIS.html" : "JDV_J47_FunctionCode_CISIS"
+    },
+    {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_R81-Civilite/FHIR/TRE-R81-Civilite",
       "version" : "20231215120000",
       "status" : "active",
@@ -23,6 +151,71 @@
       "uses" : {
       },
       "https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-JDV-J245-Civilite-CISIS.html" : "JDV_J245_Civilite_CISIS"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge",
+      "version" : "20250721120000",
+      "status" : "active",
+      "name" : "TRE_R85_RolePriseCharge",
+      "title" : null,
+      "description" : "Rôle dans la prise en charge des patients ou des usagers",
+      "oids" : ["1.2.250.1.213.1.6.1.107"],
+      "uses" : {
+      },
+      "https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-JDV-J01-XdsAuthorSpecialty-CISIS.html" : "JDV_J01_XdsAuthorSpecialty_CISIS",
+      "https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-JDV-J47-FunctionCode-CISIS.html" : "JDV_J47_FunctionCode_CISIS"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R94-ProfessionSocial/FHIR/TRE-R94-ProfessionSocial",
+      "version" : "20241213120000",
+      "status" : "active",
+      "name" : "TRE_R94_ProfessionSocial",
+      "title" : null,
+      "description" : "Profession du social",
+      "oids" : ["1.2.250.1.213.1.6.1.4"],
+      "uses" : {
+      },
+      "https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-JDV-J01-XdsAuthorSpecialty-CISIS.html" : "JDV_J01_XdsAuthorSpecialty_CISIS"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R95-UsagerTitre/FHIR/TRE-R95-UsagerTitre",
+      "version" : "20241213120000",
+      "status" : "active",
+      "name" : "TRE_R95_UsagerTitre",
+      "title" : null,
+      "description" : "Usager de titre professionnel",
+      "oids" : ["1.2.250.1.213.1.6.1.109"],
+      "uses" : {
+      },
+      "https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-JDV-J01-XdsAuthorSpecialty-CISIS.html" : "JDV_J01_XdsAuthorSpecialty_CISIS"
+    },
+    {
+      "url" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+      "version" : "202505190000",
+      "status" : "active",
+      "name" : "TerminologieCISIS",
+      "title" : "TerminologieCISIS - Terminologie des concepts non trouvés dans les autres terminologies",
+      "description" : "Terminologie multi-domaines créée et maintenue par l'ANS contenant les termes non trouvés dans les autres terminologies internationales ou nationales.",
+      "oids" : ["1.2.250.1.213.1.1.4.322"],
+      "uses" : {
+      },
+      "https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-jdv-detail-materiel-specialise-cisis.html" : "JDV Detail Materiel Specialise CISIS",
+      "https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-jdv-type-motorisation-cisis.html" : "JDV Type Motorisation CISIS",
+      "https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-jdv-type-evenement-ssiad-cisis.html" : "JDV Type Evenement Ssiad CISIS",
+      "https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-jdv-mode-de-transport-cisis.html" : "JDV Mode De Transport CISIS",
+      "https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-jdv-detail-ressource-immobiliere-utilisee-cisis.html" : "JDV Detail Ressource Immobiliere Utilisee CISIS",
+      "https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-jdv-ressource-utilisee-cisis.html" : "JDV Ressource Utilisee CISIS"
+    },
+    {
+      "url" : "https://smt.esante.gouv.fr/terminologie-SERAFINPH",
+      "version" : "2023.1.0",
+      "status" : "active",
+      "name" : "SERAFIN_PH",
+      "title" : "Nomenclature des besoins et des prestations",
+      "description" : "Les nomenclatures des besoins et des prestations ont été élaborées par un groupe de travail issu du projet SERAFIN-PH porté par la Caisse nationale de Solidarité pour l’Autonomie (CNSA) et la Direction Générale de la Cohésion Sociale (DGCS).\nElles permettent de décrire, sur la base d’un langage commun, les besoins identifiés des personnes, et les prestations réalisées en réponse à ces besoins. Les usages locaux de ces nomenclatures montrent leur pertinence pour nouer autour des projets personnalisés d’accompagnement et de leurs déclinaisons opérationnelles un dialogue soutenu et permanent entre tous les acteurs concernés, de la personne accompagnée aux structures médico-sociales, acteurs de droit commun et jusqu’aux institutions de régulation (ARS, services déconcentrés et collectivités locales).",
+      "uses" : {
+      },
+      "https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-JDV-J282-TransportsLiesAuProjetIndividuel-SERAFIN.html" : "JDV_J282_TransportsLiesAuProjetIndividuel_SERAFIN"
     }
   ]
 }

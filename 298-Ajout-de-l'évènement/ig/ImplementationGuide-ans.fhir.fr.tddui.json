@@ -10,7 +10,7 @@
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2025-09-10T07:50:24+00:00",
+  "date" : "2025-09-10T10:00:26+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -643,7 +643,7 @@
         "reference" : "StructureDefinition/tddui-comment"
       },
       "name" : "Commentaire",
-      "description" : "Commentaire relatif au séjour.",
+      "description" : "Commentaire relatif au séjour et aux évènements.",
       "exampleBoolean" : false
     },
     {
@@ -656,6 +656,42 @@
       },
       "name" : "Date d’admission",
       "description" : "Date d’admission dans la structure ESSMS.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-outside-service"
+      },
+      "name" : "Evénement hors prestation",
+      "description" : "Evénement hors prestation prévue dans le projet personnalisé de l’usager.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/input-tddui-task-transport-codesystem"
+      },
+      "name" : "InputTaskTransportCodeSystem",
+      "description" : "CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les transports dans le cadre du DUI.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-event-label"
+      },
+      "name" : "Libellé de l'évènement",
+      "description" : "Titre donné à l’évènement par la structure.",
       "exampleBoolean" : false
     },
     {
@@ -688,10 +724,70 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/tddui-event-reason"
+      },
+      "name" : "Motif de l’évènement",
+      "description" : "Contexte justifiant la réalisation de l’évènement.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/tddui-birth-order"
       },
       "name" : "Ordre de naissance dans le registre d'état civil",
       "description" : "Ordre d’enregistrement de la naissance dans le registre d’état civil de la commune de naissance pour le mois de la naissance. Il compose les 3 derniers chiffres du NIR de l'usager avant la clé de sécurité et permet de distinguer les personnes nées au même lieu et à la même période. Il est obligatoire si le NIR n'est pas transmis.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-attachment"
+      },
+      "name" : "Pièce jointe de l’évènement",
+      "description" : "Pièces jointes liées à l’événement.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-event-report"
+      },
+      "name" : "Rapport de l’évènement",
+      "description" : "Zone de texte liée à l’événement pour compte rendu des actions réalisées.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-meal"
+      },
+      "name" : "Repas",
+      "description" : "Repas du professionnel prévu dans le cadre de l'événement.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-ressources-used"
+      },
+      "name" : "Ressources utilisées",
+      "description" : "Ressources utilisées lors de l’évènement.",
       "exampleBoolean" : false
     },
     {
@@ -704,6 +800,18 @@
       },
       "name" : "TDDUI Bundle",
       "description" : "Profil générique créé pour transmettre des données d'un logiciel DUI.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-encounter-evenement"
+      },
+      "name" : "TDDUI Encounter Evenement",
+      "description" : "Profil de la ressource Encounter permettant de regrouper les évènements liés à la prise en charge de l’usager dans une structure ESSMS.",
       "exampleBoolean" : false
     },
     {
@@ -793,6 +901,54 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-practitioner"
+      },
+      "name" : "TDDUI Practitioner",
+      "description" : "Profil de la ressource FRCorePractitionerProfile permettant de représenter un Profesionnel.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-practitioner-role"
+      },
+      "name" : "TDDUI Practitioner Role",
+      "description" : "Profil de la ressource FRCorePractitionerRole permettant de représenter un Professionnel.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-profession"
+      },
+      "name" : "TDDUI Profession",
+      "description" : "Extension permettant de représenter la profession du professionnel.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/tddui-serafin-valueset"
+      },
+      "name" : "TDDUI SERAFIN ValueSet",
+      "description" : "ValueSet contenant les codes SERAFIN (prestations directes et indirectes) pour le profil TDDUI Encounter Evenement.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CapabilityStatement"
       }],
       "reference" : {
@@ -873,6 +1029,54 @@
       "name" : "TDDUIBundleExample",
       "description" : "Exemple de bundle conforme au profil TDDUIBundle",
       "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-task-transport"
+      },
+      "name" : "Transport",
+      "description" : "Profil de la ressource Task permettant de représenter le transport.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-task-transport-professionnel"
+      },
+      "name" : "Transport Professionnel",
+      "description" : "Profil de la ressource TDDUITaskTransport permettant de représenter le transport du professionnel.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-task-transport-usager"
+      },
+      "name" : "Transport Usager",
+      "description" : "Profil de la ressource TDDUITaskTransport permettant de représenter le transport de l'usager.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-patient-present"
+      },
+      "name" : "Usager présent",
+      "description" : "Evènement nécessitant ou non la présence physique de l’usager.",
+      "exampleBoolean" : false
     }],
     "page" : {
       "extension" : [{

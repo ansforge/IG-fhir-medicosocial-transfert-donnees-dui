@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "TDDUI"] ; # 
   fhir:title [ fhir:v "Médicosocial - Transfert de données DUI"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-09-10T07:50:24+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-09-10T10:00:26+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -878,7 +878,7 @@
          fhir:reference [ fhir:v "StructureDefinition/tddui-comment" ]
        ] ;
        fhir:name [ fhir:v "Commentaire" ] ;
-       fhir:description [ fhir:v "Commentaire relatif au séjour." ] ;
+       fhir:description [ fhir:v "Commentaire relatif au séjour et aux évènements." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -897,6 +897,60 @@
        ] ;
        fhir:name [ fhir:v "Date d’admission" ] ;
        fhir:description [ fhir:v "Date d’admission dans la structure ESSMS." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-outside-service> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-outside-service" ]
+       ] ;
+       fhir:name [ fhir:v "Evénement hors prestation" ] ;
+       fhir:description [ fhir:v "Evénement hors prestation prévue dans le projet personnalisé de l’usager." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem> ;
+         fhir:reference [ fhir:v "CodeSystem/input-tddui-task-transport-codesystem" ]
+       ] ;
+       fhir:name [ fhir:v "InputTaskTransportCodeSystem" ] ;
+       fhir:description [ fhir:v "CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les transports dans le cadre du DUI." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-label> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-event-label" ]
+       ] ;
+       fhir:name [ fhir:v "Libellé de l'évènement" ] ;
+       fhir:description [ fhir:v "Titre donné à l’évènement par la structure." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -946,11 +1000,101 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-reason> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-event-reason" ]
+       ] ;
+       fhir:name [ fhir:v "Motif de l’évènement" ] ;
+       fhir:description [ fhir:v "Contexte justifiant la réalisation de l’évènement." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order> ;
          fhir:reference [ fhir:v "StructureDefinition/tddui-birth-order" ]
        ] ;
        fhir:name [ fhir:v "Ordre de naissance dans le registre d'état civil" ] ;
        fhir:description [ fhir:v "Ordre d’enregistrement de la naissance dans le registre d’état civil de la commune de naissance pour le mois de la naissance. Il compose les 3 derniers chiffres du NIR de l'usager avant la clé de sécurité et permet de distinguer les personnes nées au même lieu et à la même période. Il est obligatoire si le NIR n'est pas transmis." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-attachment" ]
+       ] ;
+       fhir:name [ fhir:v "Pièce jointe de l’évènement" ] ;
+       fhir:description [ fhir:v "Pièces jointes liées à l’événement." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-report> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-event-report" ]
+       ] ;
+       fhir:name [ fhir:v "Rapport de l’évènement" ] ;
+       fhir:description [ fhir:v "Zone de texte liée à l’événement pour compte rendu des actions réalisées." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-meal> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-meal" ]
+       ] ;
+       fhir:name [ fhir:v "Repas" ] ;
+       fhir:description [ fhir:v "Repas du professionnel prévu dans le cadre de l'événement." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-ressources-used" ]
+       ] ;
+       fhir:name [ fhir:v "Ressources utilisées" ] ;
+       fhir:description [ fhir:v "Ressources utilisées lors de l’évènement." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -969,6 +1113,24 @@
        ] ;
        fhir:name [ fhir:v "TDDUI Bundle" ] ;
        fhir:description [ fhir:v "Profil générique créé pour transmettre des données d'un logiciel DUI." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-encounter-evenement" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Encounter Evenement" ] ;
+       fhir:description [ fhir:v "Profil de la ressource Encounter permettant de regrouper les évènements liés à la prise en charge de l’usager dans une structure ESSMS." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1104,6 +1266,78 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-practitioner" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Practitioner" ] ;
+       fhir:description [ fhir:v "Profil de la ressource FRCorePractitionerProfile permettant de représenter un Profesionnel." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-practitioner-role" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Practitioner Role" ] ;
+       fhir:description [ fhir:v "Profil de la ressource FRCorePractitionerRole permettant de représenter un Professionnel." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-profession> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-profession" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Profession" ] ;
+       fhir:description [ fhir:v "Extension permettant de représenter la profession du professionnel." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-serafin-valueset> ;
+         fhir:reference [ fhir:v "ValueSet/tddui-serafin-valueset" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI SERAFIN ValueSet" ] ;
+       fhir:description [ fhir:v "ValueSet contenant les codes SERAFIN (prestations directes et indirectes) pour le profil TDDUI Encounter Evenement." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "CapabilityStatement"
          ]
        ] ) ;
@@ -1229,6 +1463,78 @@
          a fhir:canonical ;
          fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle"^^xsd:anyURI ;
          fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-task-transport" ]
+       ] ;
+       fhir:name [ fhir:v "Transport" ] ;
+       fhir:description [ fhir:v "Profil de la ressource Task permettant de représenter le transport." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-task-transport-professionnel" ]
+       ] ;
+       fhir:name [ fhir:v "Transport Professionnel" ] ;
+       fhir:description [ fhir:v "Profil de la ressource TDDUITaskTransport permettant de représenter le transport du professionnel." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-task-transport-usager" ]
+       ] ;
+       fhir:name [ fhir:v "Transport Usager" ] ;
+       fhir:description [ fhir:v "Profil de la ressource TDDUITaskTransport permettant de représenter le transport de l'usager." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-present> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-patient-present" ]
+       ] ;
+       fhir:name [ fhir:v "Usager présent" ] ;
+       fhir:description [ fhir:v "Evènement nécessitant ou non la présence physique de l’usager." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
        ]
      ] ) ;
      fhir:page [

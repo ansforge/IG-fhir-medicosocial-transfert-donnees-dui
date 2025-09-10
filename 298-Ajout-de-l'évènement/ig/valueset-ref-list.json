@@ -1,6 +1,64 @@
 {
   "codeSystems" : [
     {
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-discharge-disposition",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "FRCoreValueSetEncounterDischargeDisposition",
+      "title" : "FR Core ValueSet Encounter discharge disposition",
+      "description" : "This value set defines a set of codes that can be used to where the patient left the hospital | Circonstances de sortie de l'hôpital.",
+      "systems" : [
+        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-circonstances-sortie",
+        "http://terminology.hl7.org/CodeSystem/discharge-disposition"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-identifier-type",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "FRCoreValueSetEncounterIdentifierType",
+      "title" : "FR Core ValueSet Encounter identifier type",
+      "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (Encounters).",
+      "systems" : [
+        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identifier-type"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-type",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "FRCoreValueSetEncounterType",
+      "title" : "FR Core ValueSet Encounter type",
+      "description" : "A coded type for an encounter | Jeu de valeurs des types de rencontre.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v2-0007",
+        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-type-admission"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-location-physical-type",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "FRCoreValueSetLocationPhysicalType",
+      "title" : "FR Core ValueSet Location physical type",
+      "description" : "French location physical type | Types de lieux physiques pour la France",
+      "systems" : [
+        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-physical-type"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
+    },
+    {
       "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-gender-INS",
       "version" : "2.1.0",
       "status" : "active",
@@ -11,6 +69,38 @@
       "uses" : {
       },
       "StructureDefinition-tddui-patient.html" : "TDDUI Patient"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-serafin-valueset",
+      "version" : "2.0.0-ballot",
+      "status" : "active",
+      "name" : "TDDUISerafinValueSet",
+      "title" : "TDDUI SERAFIN ValueSet",
+      "description" : "ValueSet contenant les codes SERAFIN (prestations directes et indirectes) pour le profil TDDUI Encounter Evenement.",
+      "systems" : ["https://smt.esante.gouv.fr/terminologie-SERAFINPH"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J01-XdsAuthorSpecialty-CISIS/FHIR/JDV-J01-XdsAuthorSpecialty-CISIS",
+      "version" : "20250721120000",
+      "status" : "active",
+      "name" : "JDV_J01_XdsAuthorSpecialty_CISIS",
+      "title" : null,
+      "description" : "XDS authorSpecialty CI-SIS",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge",
+        "https://mos.esante.gouv.fr/NOS/TRE_A02-ProfessionSavFaire-CISIS/FHIR/TRE-A02-ProfessionSavFaire-CISIS",
+        "https://mos.esante.gouv.fr/NOS/TRE_A00-ProducteurDocNonPS/FHIR/TRE-A00-ProducteurDocNonPS",
+        "https://mos.esante.gouv.fr/NOS/TRE_R95-UsagerTitre/FHIR/TRE-R95-UsagerTitre",
+        "https://mos.esante.gouv.fr/NOS/TRE_R94-ProfessionSocial/FHIR/TRE-R94-ProfessionSocial"
+      ],
+      "oids" : ["1.2.250.1.213.1.1.5.461"],
+      "sources" : ["1.2.250.1.213.1.1.5.461"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-profession.html" : "TDDUI Profession"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/JDV_J245-Civilite-CISIS/FHIR/JDV-J245-Civilite-CISIS",
@@ -27,6 +117,163 @@
       "uses" : {
       },
       "StructureDefinition-tddui-human-name.html" : "TDDUI Human Name DataType"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J282-TransportsLiesAuProjetIndividuel_SERAFIN/FHIR/JDV-J282-TransportsLiesAuProjetIndividuel-SERAFIN",
+      "version" : "20241025120000",
+      "status" : "active",
+      "name" : "JDV_J282_TransportsLiesAuProjetIndividuel_SERAFIN",
+      "title" : null,
+      "description" : "Liste les natures des transports liés au projet individuel provenant de la terminologie SERAFIN",
+      "systems" : ["https://smt.esante.gouv.fr/terminologie-SERAFINPH"],
+      "oids" : ["1.2.250.1.213.3.3.251"],
+      "sources" : ["1.2.250.1.213.3.3.251"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-task-transport-usager.html" : "Transport Usager"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J283-PrestationsIndirects_SERAFIN/FHIR/JDV-J283-PrestationsIndirects-SERAFIN",
+      "version" : "20241025120000",
+      "status" : "active",
+      "name" : "JDV_J283_PrestationsIndirects_SERAFIN",
+      "title" : null,
+      "description" : "Liste des prestations indirects provenant de la terminologie SERAFIN",
+      "systems" : ["https://smt.esante.gouv.fr/terminologie-SERAFINPH"],
+      "oids" : ["1.2.250.1.213.3.3.252"],
+      "sources" : ["1.2.250.1.213.3.3.252"],
+      "uses" : {
+      },
+      "ValueSet-tddui-serafin-valueset.html" : "TDDUI SERAFIN ValueSet"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J284-PrestationsDirects_SERAFIN/FHIR/JDV-J284-PrestationsDirects-SERAFIN",
+      "version" : "20241025120000",
+      "status" : "active",
+      "name" : "JDV_J284_PrestationsDirects_SERAFIN",
+      "title" : null,
+      "description" : "Liste des prestations directs provenant de la terminologie SERAFIN",
+      "systems" : ["https://smt.esante.gouv.fr/terminologie-SERAFINPH"],
+      "oids" : ["1.2.250.1.213.3.3.253"],
+      "sources" : ["1.2.250.1.213.3.3.253"],
+      "uses" : {
+      },
+      "ValueSet-tddui-serafin-valueset.html" : "TDDUI SERAFIN ValueSet"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J47-FunctionCode-CISIS/FHIR/JDV-J47-FunctionCode-CISIS",
+      "version" : "20250523120000",
+      "status" : "active",
+      "name" : "JDV_J47_FunctionCode_CISIS",
+      "title" : null,
+      "description" : "Rôles fonctionnels",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge",
+        "https://mos.esante.gouv.fr/NOS/TRE_R258-RelationPriseCharge/FHIR/TRE-R258-RelationPriseCharge",
+        "https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction"
+      ],
+      "oids" : ["1.2.250.1.213.1.1.5.124"],
+      "sources" : ["1.2.250.1.213.1.1.5.124"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-practitioner-role.html" : "TDDUI Practitioner Role"
+    },
+    {
+      "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-detail-materiel-specialise-cisis",
+      "version" : "20250624152100",
+      "status" : "active",
+      "name" : "JdvDetailMaterielSpecialiseCisis",
+      "title" : "JDV Detail Materiel Specialise CISIS",
+      "description" : "JDV Detail Materiel Specialise CISIS",
+      "systems" : [
+        "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis"
+      ],
+      "oids" : ["1.2.250.1.213.1.1.5.808"],
+      "sources" : ["1.2.250.1.213.1.1.5.808"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-ressources-used.html" : "Ressources utilisées"
+    },
+    {
+      "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-detail-ressource-immobiliere-utilisee-cisis",
+      "version" : "20250624152100",
+      "status" : "active",
+      "name" : "JdvDetailRessourceImmobiliereUtiliseeCisis",
+      "title" : "JDV Detail Ressource Immobiliere Utilisee CISIS",
+      "description" : "JDV Detail Ressource Immobiliere Utilisee CISIS",
+      "systems" : [
+        "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis"
+      ],
+      "oids" : ["1.2.250.1.213.1.1.5.809"],
+      "sources" : ["1.2.250.1.213.1.1.5.809"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-ressources-used.html" : "Ressources utilisées"
+    },
+    {
+      "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis",
+      "version" : "20250624152101",
+      "status" : "active",
+      "name" : "JdvModeDeTransportCisis",
+      "title" : "JDV Mode De Transport CISIS",
+      "description" : "JDV Mode De Transport CISIS",
+      "systems" : [
+        "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis"
+      ],
+      "oids" : ["1.2.250.1.213.1.1.5.140"],
+      "sources" : ["1.2.250.1.213.1.1.5.140"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-task-transport.html" : "Transport"
+    },
+    {
+      "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-ressource-utilisee-cisis",
+      "version" : "20250624152100",
+      "status" : "active",
+      "name" : "JdvRessourceUtiliseeCisis",
+      "title" : "JDV Ressource Utilisee CISIS",
+      "description" : "JDV Ressource Utilisee CISIS",
+      "systems" : [
+        "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["1.2.250.1.213.1.1.5.807"],
+      "sources" : ["1.2.250.1.213.1.1.5.807"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-ressources-used.html" : "Ressources utilisées"
+    },
+    {
+      "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-evenement-ssiad-cisis",
+      "version" : "20250624152100",
+      "status" : "active",
+      "name" : "JdvTypeEvenementSsiadCisis",
+      "title" : "JDV Type Evenement Ssiad CISIS",
+      "description" : "JDV Type Evenement Ssiad CISIS",
+      "systems" : [
+        "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis"
+      ],
+      "oids" : ["1.2.250.1.213.1.1.5.811"],
+      "sources" : ["1.2.250.1.213.1.1.5.811"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
+    },
+    {
+      "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-motorisation-cisis",
+      "version" : "20250624152100",
+      "status" : "active",
+      "name" : "JdvTypeMotorisationCisis",
+      "title" : "JDV Type Motorisation CISIS",
+      "description" : "JDV Type Motorisation CISIS",
+      "systems" : [
+        "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis"
+      ],
+      "oids" : ["1.2.250.1.213.1.1.5.801"],
+      "sources" : ["1.2.250.1.213.1.1.5.801"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-task-transport.html" : "Transport"
     }
   ]
 }
