@@ -8,6 +8,9 @@ Description: "Profil de la ressource Encounter permettant de regrouper les évè
 
 * identifier 1..1
 
+* status.extension contains 
+    TDDUIEventCancelReason named tddui-event-cancel-reason 0..1
+
 // Types d'évènement
 * type ^slicing.discriminator.type = #pattern
 * type ^slicing.discriminator.path = "coding.system"
@@ -100,3 +103,6 @@ Title:    "Évènement"
 * period.start -> "dateDebutEvenement"
 * period.end -> "dateFinEvenement"
 * meta.lastUpdated -> "dateModificationEvenement"
+* status -> "Statut.statut"
+* participant.type -> "statut.auteur"
+* status.extension[tddui-event-cancel-reason] -> "statut.motifNonRealisation"
