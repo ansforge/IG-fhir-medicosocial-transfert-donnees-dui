@@ -27,3 +27,15 @@ Description: "Profil de la ressource TDDUITaskTransport permettant de représent
 * input[natureTransport].valueCodeableConcept from $JDV-J282-TransportsLiesAuProjetIndividuel-SERAFIN
 * input[natureTransport].type = InputTDDUITaskTransportCodeSystem#natureTransport
 * input[natureTransport] ^short = "Nature du transport de l'usager"
+
+Mapping:  ConceptMetier_TDDUITaskTransportusager
+Source:   TDDUITaskTransportUsager
+Target: "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"
+Id:       specmetier-to-TDDUITaskTransportUsager
+Title:    "Transport de l'usager"
+* -> "TransportUsager"
+
+* insert TDDUITaskTransportMapping
+* input[accompagnement] -> "accompagnement"
+* input[asepsieRigoureuse] -> "asepsieRigoureuse"
+* input[natureTransport] -> "natureTransport"

@@ -8,3 +8,15 @@ Description: "Profil de la ressource FRCorePractitionerProfile permettant de rep
 
 * name 0..1
 * name only tddui-humanname
+
+Mapping:  ConceptMetier_TDDUIPractitioner
+Source:   TDDUIPractitioner
+Target: "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"
+Id:       specmetier-to-TDDUIPractitioner
+Title:    "Professionnel"
+* -> "Professionnel"
+
+* identifier[idNatPs] -> "idNat_PS"
+* name.family -> "nom"
+* name.given -> "prenom"
+* name.prefix -> "civilite"

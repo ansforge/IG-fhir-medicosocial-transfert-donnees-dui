@@ -1,0 +1,15 @@
+RuleSet: TDDUITaskTransportMapping
+
+* identifier -> "idTrajet"
+* code -> "typeTransport"
+* owner -> "transporteur"
+* executionPeriod.start -> "dateDebutTransport"
+* executionPeriod.end -> "dateDebutTransport"
+* encounter -> "Evenement"
+* input[typeMotorisation] -> "typeMotorisation"
+* input[adresseDepart] -> "adresseDepart"
+* input[adresseDestination] -> "adresseDestination"
+* input[budgetPrevisionnel] -> "budgetPrevisionnel"
+* input[budgetReel] -> "budgetReel"
+* input[distance] -> "distanceTrajet"
+* input[dureeTheorique] -> "dureeTheoriqueTrajet"

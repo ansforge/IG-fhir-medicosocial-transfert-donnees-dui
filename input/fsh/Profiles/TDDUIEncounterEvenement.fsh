@@ -70,3 +70,33 @@ Description: "Profil de la ressource Encounter permettant de regrouper les évè
 * extension[TDDUIMeal] ^short = "Repas du professionnel prévu dans le cadre de l'événement."
 
 * partOf only Reference(TDDUIEncounterSejour)
+
+Mapping:  ConceptMetier_TDDUIEncounterEvenement
+Source:   TDDUIEncounterEvenement
+Target: "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"
+Id:       specmetier-to-TDDUIEncounterEvenement
+Title:    "Évènement"
+* -> "Événement"
+
+* identifier -> "idEvenement"
+* type -> "typeEvenement"
+* subject -> "Usager"
+* serviceProvider -> "structureEnCharge"
+* participant.individual -> "Professionnel"
+* location -> "lieuEvenement"
+* extension[TDDUIRessourcesUsed] -> "typeRessourceUtilisee"
+* extension[TDDUIRessourcesUsed].extension[TDDUIRessourceType] -> "typeRessourceUtilisee"
+* extension[TDDUIRessourcesUsed].extension[TDDUIMaterialDetail] -> "detailTypeRessourceUtilisee"
+* extension[TDDUIRessourcesUsed].extension[TDDUIFacilityResource] -> "detailTypeRessourceUtilisee"
+* extension[TDDUIEventLabel] -> "libelleEvenement"
+* extension[TDDUIComment] -> "commentaireEvenement"
+* extension[TDDUIEventReport] -> "compteRenduEvenement"
+* extension[TDDUIAttachment] -> "pieceJointeEvenement"
+* extension[TDDUIEventOutsideService] -> "evenementHorsPrestation"
+* extension[TDDUIEventReason] -> "motifEvenement"
+* extension[TDDUIPatientPresent] -> "usagerPresent"
+* extension[TDDUIMeal] -> "repas"
+* partOf -> "sejour"
+* period.start -> "dateDebutEvenement"
+* period.end -> "dateFinEvenement"
+* meta.lastUpdated -> "dateModificationEvenement"

@@ -16,3 +16,14 @@ Description: "Profil de la ressource FRCorePractitionerRole permettant de repré
 
 // Practitioner
 * practitioner only Reference(TDDUIPractitioner)
+
+Mapping:  ConceptMetier_TDDUIPractitionerRole
+Source:   TDDUIPractitionerRole
+Target: "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"
+Id:       specmetier-to-TDDUIPractitionerRole
+Title:    "Professionnel"
+* -> "Professionnel"
+
+* code -> "rôle"
+* code.extension[TDDUIProfession] -> "profession"
+* organization -> "etablissementDeRattachement"
