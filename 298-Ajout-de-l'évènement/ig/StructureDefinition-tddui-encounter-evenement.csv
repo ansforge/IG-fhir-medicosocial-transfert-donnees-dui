@@ -187,7 +187,19 @@ Le namespace est défini à partir de la racine d'identification (gérée par l'
 ","II.assigningAuthorityName but note that this is an improper use by the definition of the field.  Also Role.scoper","CX.4 / (CX.4,CX.9,CX.10)"
 "Encounter.status","Encounter.status","","","",1,1,"","Y","Y","code {[]} {[]}
 ","planned | arrived | triaged | in-progress | onleave | finished | cancelled +","planned | arrived | triaged | in-progress | onleave | finished | cancelled +.","Note that internal business rules will determine the appropriate transitions that may occur between statuses (and also classes).","","","","","","","","",,"required","Current state of the encounter.","http://hl7.org/fhir/ValueSet/encounter-status|4.0.1","",,,,"Encounter.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","Event.status",".statusCode","FiveWs.status","No clear equivalent in HL7 v2; active/finished could be inferred from PV1-44, PV1-45, PV2-24; inactive could be inferred from PV2-16"
+","Statut.statut","Event.status",".statusCode","FiveWs.status","No clear equivalent in HL7 v2; active/finished could be inferred from PV1-44, PV1-45, PV2-24; inactive could be inferred from PV2-16"
+"Encounter.status.id","Encounter.status.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references)","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"Encounter.status.extension","Encounter.status.extension","","","",0,*,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Encounter.status.extension:tddui-event-cancel-reason","Encounter.status.extension","tddui-event-cancel-reason","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-cancel-reason]]} {[]}
+","Évènement annulé","Motif associé au statut de non-réalisation de l’évènement.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","statut.motifNonRealisation"
+"Encounter.status.value","Encounter.status.value","","","",0,1,"","","","string {[]} {[]}
+","Primitive value for code","Primitive value for code","","","","","","","","","",,,,,"",,,,"string.value",0,1,"",""
 "Encounter.statusHistory","Encounter.statusHistory","","","",0,*,"","","","BackboneElement {[]} {[]}
 ","List of past encounter statuses","The status history permits the encounter resource to contain the status history without needing to read through the historical versions of the resource, or even have the server store them.","The current status is always found in the current version of the resource, not the status history.","","","","","","","","",,,,,"",,,,"Encounter.statusHistory",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a"
@@ -407,7 +419,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
 "Encounter.participant.type","Encounter.participant.type","","","",0,*,"","","Y","CodeableConcept {[]} {[]}
 ","Role of participant in encounter","Role of participant in encounter.","The participant type indicates how an individual participates in an encounter. It includes non-practitioner participants, and for practitioners this is to describe the action type in the context of this encounter (e.g. Admitting Dr, Attending Dr, Translator, Consulting Dr). This is different to the practitioner roles which are functional roles, derived from terms of employment, education, licensing, etc.","","","","","","","","",,"extensible","Role of participant in encounter.","http://hl7.org/fhir/ValueSet/encounter-participant-type|4.0.1","",,,,"Encounter.participant.type",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","Event.performer.function",".functionCode","ROL-3 (or maybe PRT-4)"
+","statut.auteur","Event.performer.function",".functionCode","ROL-3 (or maybe PRT-4)"
 "Encounter.participant.period","Encounter.participant.period","","","",0,1,"","","","Period {[]} {[]}
 ","Period of time during the encounter that the participant participated","The period of time that the specified participant participated in the encounter. These can overlap or be sub-sets of the overall encounter's period.","","","","","","","","","",,,,,"",,,,"Encounter.participant.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".time","ROL-5, ROL-6 (or maybe PRT-5)"

@@ -10,7 +10,7 @@
   <name value="TDDUI"/>
   <title value="Médicosocial - Transfert de données DUI"/>
   <status value="active"/>
-  <date value="2025-09-11T08:12:08+00:00"/>
+  <date value="2025-09-11T09:46:41+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -932,6 +932,17 @@
       </reference>
       <name value="Usager présent"/>
       <description value="Evènement nécessitant ou non la présence physique de l’usager."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-event-cancel-reason"/>
+      </reference>
+      <name value="Évènement annulé"/>
+      <description value="Motif associé au statut de non-réalisation de l’évènement."/>
       <exampleBoolean value="false"/>
     </resource>
     <page>
