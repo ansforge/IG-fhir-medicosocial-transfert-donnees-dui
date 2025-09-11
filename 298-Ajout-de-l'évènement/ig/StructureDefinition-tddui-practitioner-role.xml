@@ -17,7 +17,7 @@
   <name value="TDDUIPractitionerRole"/>
   <title value="TDDUI Practitioner Role"/>
   <status value="active"/>
-  <date value="2025-09-10T13:51:57+00:00"/>
+  <date value="2025-09-11T08:12:08+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -35,6 +35,11 @@
     </coding>
   </jurisdiction>
   <fhirVersion value="4.0.1"/>
+  <mapping>
+    <identity value="specmetier-to-TDDUIPractitionerRole"/>
+    <uri value="https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"/>
+    <name value="Professionnel"/>
+  </mapping>
   <mapping>
     <identity value="v2"/>
     <uri value="http://hl7.org/v2"/>
@@ -123,6 +128,10 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
+      <mapping>
+        <identity value="specmetier-to-TDDUIPractitionerRole"/>
+        <map value="Professionnel"/>
+      </mapping>
       <mapping>
         <identity value="rim"/>
         <map value="Entity. Role, or Act"/>
@@ -890,6 +899,10 @@
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
+        <identity value="specmetier-to-TDDUIPractitionerRole"/>
+        <map value="etablissementDeRattachement"/>
+      </mapping>
+      <mapping>
         <identity value="rim"/>
         <map value=".scoper"/>
       </mapping>
@@ -924,6 +937,10 @@
         <strength value="preferred"/>
         <valueSet value="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-role-exercice"/>
       </binding>
+      <mapping>
+        <identity value="specmetier-to-TDDUIPractitionerRole"/>
+        <map value="rôle"/>
+      </mapping>
       <mapping>
         <identity value="v2"/>
         <map value="PRD-1 / STF-18  / PRA-3  / PRT-4  / ROL-3 / ORC-12 / OBR-16 / PV1-7 / PV1-8 / PV1-9 / PV1-17"/>
@@ -1044,6 +1061,10 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
+      <mapping>
+        <identity value="specmetier-to-TDDUIPractitionerRole"/>
+        <map value="profession"/>
+      </mapping>
     </element>
     <element id="PractitionerRole.code.coding">
       <path value="PractitionerRole.code.coding"/>
@@ -1817,6 +1838,10 @@
   <differential>
     <element id="PractitionerRole">
       <path value="PractitionerRole"/>
+      <mapping>
+        <identity value="specmetier-to-TDDUIPractitionerRole"/>
+        <map value="Professionnel"/>
+      </mapping>
     </element>
     <element id="PractitionerRole.practitioner">
       <path value="PractitionerRole.practitioner"/>
@@ -1831,11 +1856,19 @@
         <code value="Reference"/>
         <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization"/>
       </type>
+      <mapping>
+        <identity value="specmetier-to-TDDUIPractitionerRole"/>
+        <map value="etablissementDeRattachement"/>
+      </mapping>
     </element>
     <element id="PractitionerRole.code">
       <path value="PractitionerRole.code"/>
       <short value="Rôle fonctionnel du professionnel."/>
       <max value="1"/>
+      <mapping>
+        <identity value="specmetier-to-TDDUIPractitionerRole"/>
+        <map value="rôle"/>
+      </mapping>
     </element>
     <element id="PractitionerRole.code.extension:tddui-profession">
       <path value="PractitionerRole.code.extension"/>
@@ -1846,6 +1879,10 @@
         <code value="Extension"/>
         <profile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-profession"/>
       </type>
+      <mapping>
+        <identity value="specmetier-to-TDDUIPractitionerRole"/>
+        <map value="profession"/>
+      </mapping>
     </element>
     <element id="PractitionerRole.code.coding">
       <path value="PractitionerRole.code.coding"/>

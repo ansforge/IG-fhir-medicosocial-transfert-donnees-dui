@@ -61,7 +61,7 @@
   <name value="TDDUITaskTransport"/>
   <title value="Transport"/>
   <status value="active"/>
-  <date value="2025-09-10T13:51:57+00:00"/>
+  <date value="2025-09-11T08:12:08+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -80,6 +80,11 @@
   </jurisdiction>
   <purpose value="&gt; **Note** : La ressource Task en FHIR R4 est utilisée pour représenter le Transport. Lors d'une montée de version vers FHIR R5, il conviendra d'utiliser la ressource Transport."/>
   <fhirVersion value="4.0.1"/>
+  <mapping>
+    <identity value="specmetier-to-TDDUITaskTransport"/>
+    <uri value="https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"/>
+    <name value="Transport"/>
+  </mapping>
   <mapping>
     <identity value="workflow"/>
     <uri value="http://hl7.org/fhir/workflow"/>
@@ -176,6 +181,10 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
+      <mapping>
+        <identity value="specmetier-to-TDDUITaskTransport"/>
+        <map value="Transport"/>
+      </mapping>
       <mapping>
         <identity value="rim"/>
         <map value="Entity. Role, or Act"/>
@@ -464,6 +473,10 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
+      <mapping>
+        <identity value="specmetier-to-TDDUITaskTransport"/>
+        <map value="idTrajet"/>
+      </mapping>
       <mapping>
         <identity value="workflow"/>
         <map value="Request.identifier, Event.identifier"/>
@@ -894,6 +907,10 @@
         <valueSet value="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis"/>
       </binding>
       <mapping>
+        <identity value="specmetier-to-TDDUITaskTransport"/>
+        <map value="typeTransport"/>
+      </mapping>
+      <mapping>
         <identity value="workflow"/>
         <map value="Request.code, Event.code"/>
       </mapping>
@@ -1041,6 +1058,10 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="true"/>
+      <mapping>
+        <identity value="specmetier-to-TDDUITaskTransport"/>
+        <map value="Evenement"/>
+      </mapping>
       <mapping>
         <identity value="workflow"/>
         <map value="Request.context, Event.context"/>
@@ -1191,6 +1212,10 @@
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
+        <identity value="specmetier-to-TDDUITaskTransport"/>
+        <map value="dateDebutTransport"/>
+      </mapping>
+      <mapping>
         <identity value="v2"/>
         <map value="DR.1"/>
       </mapping>
@@ -1226,6 +1251,10 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="true"/>
+      <mapping>
+        <identity value="specmetier-to-TDDUITaskTransport"/>
+        <map value="dateDebutTransport"/>
+      </mapping>
       <mapping>
         <identity value="v2"/>
         <map value="DR.2"/>
@@ -1426,6 +1455,10 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="true"/>
+      <mapping>
+        <identity value="specmetier-to-TDDUITaskTransport"/>
+        <map value="transporteur"/>
+      </mapping>
       <mapping>
         <identity value="workflow"/>
         <map value="Event.performer.actor, Request.performer"/>
@@ -2297,6 +2330,10 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
       <mapping>
+        <identity value="specmetier-to-TDDUITaskTransport"/>
+        <map value="typeMotorisation"/>
+      </mapping>
+      <mapping>
         <identity value="rim"/>
         <map value="???"/>
       </mapping>
@@ -2515,6 +2552,10 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
       <mapping>
+        <identity value="specmetier-to-TDDUITaskTransport"/>
+        <map value="adresseDepart"/>
+      </mapping>
+      <mapping>
         <identity value="rim"/>
         <map value="???"/>
       </mapping>
@@ -2728,6 +2769,10 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
+      <mapping>
+        <identity value="specmetier-to-TDDUITaskTransport"/>
+        <map value="adresseDestination"/>
+      </mapping>
       <mapping>
         <identity value="rim"/>
         <map value="???"/>
@@ -2943,6 +2988,10 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
       <mapping>
+        <identity value="specmetier-to-TDDUITaskTransport"/>
+        <map value="budgetPrevisionnel"/>
+      </mapping>
+      <mapping>
         <identity value="rim"/>
         <map value="???"/>
       </mapping>
@@ -3156,6 +3205,10 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
+      <mapping>
+        <identity value="specmetier-to-TDDUITaskTransport"/>
+        <map value="budgetReel"/>
+      </mapping>
       <mapping>
         <identity value="rim"/>
         <map value="???"/>
@@ -3371,6 +3424,10 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
       <mapping>
+        <identity value="specmetier-to-TDDUITaskTransport"/>
+        <map value="distanceTrajet"/>
+      </mapping>
+      <mapping>
         <identity value="rim"/>
         <map value="???"/>
       </mapping>
@@ -3584,6 +3641,10 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
+      <mapping>
+        <identity value="specmetier-to-TDDUITaskTransport"/>
+        <map value="dureeTheoriqueTrajet"/>
+      </mapping>
       <mapping>
         <identity value="rim"/>
         <map value="???"/>
@@ -4128,11 +4189,19 @@
   <differential>
     <element id="Task">
       <path value="Task"/>
+      <mapping>
+        <identity value="specmetier-to-TDDUITaskTransport"/>
+        <map value="Transport"/>
+      </mapping>
     </element>
     <element id="Task.identifier">
       <path value="Task.identifier"/>
       <min value="1"/>
       <max value="1"/>
+      <mapping>
+        <identity value="specmetier-to-TDDUITaskTransport"/>
+        <map value="idTrajet"/>
+      </mapping>
     </element>
     <element id="Task.code">
       <path value="Task.code"/>
@@ -4140,6 +4209,10 @@
         <strength value="required"/>
         <valueSet value="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis"/>
       </binding>
+      <mapping>
+        <identity value="specmetier-to-TDDUITaskTransport"/>
+        <map value="typeTransport"/>
+      </mapping>
     </element>
     <element id="Task.encounter">
       <path value="Task.encounter"/>
@@ -4148,6 +4221,10 @@
         <code value="Reference"/>
         <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement"/>
       </type>
+      <mapping>
+        <identity value="specmetier-to-TDDUITaskTransport"/>
+        <map value="Evenement"/>
+      </mapping>
     </element>
     <element id="Task.executionPeriod">
       <path value="Task.executionPeriod"/>
@@ -4156,10 +4233,18 @@
     <element id="Task.executionPeriod.start">
       <path value="Task.executionPeriod.start"/>
       <min value="1"/>
+      <mapping>
+        <identity value="specmetier-to-TDDUITaskTransport"/>
+        <map value="dateDebutTransport"/>
+      </mapping>
     </element>
     <element id="Task.executionPeriod.end">
       <path value="Task.executionPeriod.end"/>
       <min value="1"/>
+      <mapping>
+        <identity value="specmetier-to-TDDUITaskTransport"/>
+        <map value="dateDebutTransport"/>
+      </mapping>
     </element>
     <element id="Task.owner">
       <path value="Task.owner"/>
@@ -4167,6 +4252,10 @@
         <code value="Reference"/>
         <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization"/>
       </type>
+      <mapping>
+        <identity value="specmetier-to-TDDUITaskTransport"/>
+        <map value="transporteur"/>
+      </mapping>
     </element>
     <element id="Task.input">
       <path value="Task.input"/>
@@ -4184,6 +4273,10 @@
       <short value="Type de motorisation"/>
       <min value="0"/>
       <max value="1"/>
+      <mapping>
+        <identity value="specmetier-to-TDDUITaskTransport"/>
+        <map value="typeMotorisation"/>
+      </mapping>
     </element>
     <element id="Task.input:typeMotorisation.type">
       <path value="Task.input.type"/>
@@ -4210,6 +4303,10 @@
       <short value="Adresse de départ"/>
       <min value="0"/>
       <max value="1"/>
+      <mapping>
+        <identity value="specmetier-to-TDDUITaskTransport"/>
+        <map value="adresseDepart"/>
+      </mapping>
     </element>
     <element id="Task.input:adresseDepart.type">
       <path value="Task.input.type"/>
@@ -4232,6 +4329,10 @@
       <short value="Adresse de destination"/>
       <min value="0"/>
       <max value="1"/>
+      <mapping>
+        <identity value="specmetier-to-TDDUITaskTransport"/>
+        <map value="adresseDestination"/>
+      </mapping>
     </element>
     <element id="Task.input:adresseDestination.type">
       <path value="Task.input.type"/>
@@ -4254,6 +4355,10 @@
       <short value="Budget prévisionnel"/>
       <min value="0"/>
       <max value="1"/>
+      <mapping>
+        <identity value="specmetier-to-TDDUITaskTransport"/>
+        <map value="budgetPrevisionnel"/>
+      </mapping>
     </element>
     <element id="Task.input:budgetPrevisionnel.type">
       <path value="Task.input.type"/>
@@ -4276,6 +4381,10 @@
       <short value="Budget réel"/>
       <min value="0"/>
       <max value="1"/>
+      <mapping>
+        <identity value="specmetier-to-TDDUITaskTransport"/>
+        <map value="budgetReel"/>
+      </mapping>
     </element>
     <element id="Task.input:budgetReel.type">
       <path value="Task.input.type"/>
@@ -4298,6 +4407,10 @@
       <short value="Distance du trajet"/>
       <min value="0"/>
       <max value="1"/>
+      <mapping>
+        <identity value="specmetier-to-TDDUITaskTransport"/>
+        <map value="distanceTrajet"/>
+      </mapping>
     </element>
     <element id="Task.input:distance.type">
       <path value="Task.input.type"/>
@@ -4320,6 +4433,10 @@
       <short value="Durée théorique du trajet"/>
       <min value="0"/>
       <max value="1"/>
+      <mapping>
+        <identity value="specmetier-to-TDDUITaskTransport"/>
+        <map value="dureeTheoriqueTrajet"/>
+      </mapping>
     </element>
     <element id="Task.input:dureeTheorique.type">
       <path value="Task.input.type"/>

@@ -1,8 +1,8 @@
-"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: Workflow Pattern","Mapping: RIM Mapping","Mapping: FiveWs Pattern Mapping","Mapping: HL7 v2 Mapping"
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: Évènement","Mapping: Workflow Pattern","Mapping: RIM Mapping","Mapping: FiveWs Pattern Mapping","Mapping: HL7 v2 Mapping"
 "Encounter","Encounter","","Visit
 ","",0,*,"","","","null {[]} {[]}
 ","An interaction during which services are provided to the patient","An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.","","","","","","","","","",,,,,"",,,,"Encounter",0,*,"","dom-2:If the resource is contained in another resource, it SHALL NOT contain nested Resources {contained.contained.empty()}
-dom-3:If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource {contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()}dom-4:If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated {contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()}dom-5:If a resource is contained in another resource, it SHALL NOT have a security label {contained.meta.security.empty()}dom-6:A resource should have narrative for robust management {text.`div`.exists()}","Event","Entity. Role, or Act","Encounter[@moodCode='EVN']"
+dom-3:If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource {contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()}dom-4:If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated {contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()}dom-5:If a resource is contained in another resource, it SHALL NOT have a security label {contained.meta.security.empty()}dom-6:A resource should have narrative for robust management {text.`div`.exists()}","Événement","Event","Entity. Role, or Act","Encounter[@moodCode='EVN']"
 "Encounter.id","Encounter.id","","","",0,1,"","","Y","id {[]} {[]}
 ","Logical id of this artifact","The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.","The only time that a resource does not have an id is when it is being submitted to the server using a create operation.","","","","","","","","",,,,,"",,,,"Resource.id",0,1,"",""
 "Encounter.meta","Encounter.meta","","","",0,1,"","","Y","Meta {[]} {[]}
@@ -20,7 +20,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "Encounter.meta.lastUpdated","Encounter.meta.lastUpdated","","","",0,1,"","","Y","instant {[]} {[]}
 ","When the resource version last changed","When the resource last changed - e.g. when the version changed.","This value is always populated except when the resource is first being created. The server / resource manager sets this value; what a client provides is irrelevant. This is equivalent to the HTTP Last-Modified and SHOULD have the same value on a [read](http://hl7.org/fhir/R4/http.html#read) interaction.","","","","","","","","",,,,,"",,,,"Meta.lastUpdated",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
+","dateModificationEvenement"
 "Encounter.meta.source","Encounter.meta.source","","","",0,1,"","","Y","uri {[]} {[]}
 ","Identifies where the resource comes from","A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](http://hl7.org/fhir/R4/provenance.html#) information that can be used to track or differentiate the source of information in the resource. The source may identify another FHIR server, document, message, database, etc.","In the provenance resource, this corresponds to Provenance.entity.what[x]. The exact use of the source (and the implied Provenance.entity.role) is left to implementer discretion. Only one nominated source is allowed; for additional provenance details, a full Provenance resource should be used. 
 
@@ -63,39 +63,93 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Encounter.extension:TDDUIRessourcesUsed","Encounter.extension","TDDUIRessourcesUsed","","",0,*,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used]]} {[]}
 ","Ressources utilisées lors de l’évènement.","Ressources utilisées lors de l’évènement.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","typeRessourceUtilisee"
+"Encounter.extension:TDDUIRessourcesUsed.id","Encounter.extension.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Encounter.extension:TDDUIRessourcesUsed.extension","Encounter.extension.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"Encounter.extension:TDDUIRessourcesUsed.extension:TDDUIRessourceType","Encounter.extension.extension","TDDUIRessourceType","","",0,*,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","typeRessourceUtilisee"
+"Encounter.extension:TDDUIRessourcesUsed.extension:TDDUIRessourceType.id","Encounter.extension.extension.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Encounter.extension:TDDUIRessourcesUsed.extension:TDDUIRessourceType.extension","Encounter.extension.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Encounter.extension:TDDUIRessourcesUsed.extension:TDDUIRessourceType.url","Encounter.extension.extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""TDDUIRessourceType""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
+"Encounter.extension:TDDUIRessourcesUsed.extension:TDDUIRessourceType.value[x]","Encounter.extension.extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-ressource-utilisee-cisis","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","N/A"
+"Encounter.extension:TDDUIRessourcesUsed.extension:TDDUIMaterialDetail","Encounter.extension.extension","TDDUIMaterialDetail","","",0,*,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","detailTypeRessourceUtilisee"
+"Encounter.extension:TDDUIRessourcesUsed.extension:TDDUIMaterialDetail.id","Encounter.extension.extension.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Encounter.extension:TDDUIRessourcesUsed.extension:TDDUIMaterialDetail.extension","Encounter.extension.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Encounter.extension:TDDUIRessourcesUsed.extension:TDDUIMaterialDetail.url","Encounter.extension.extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""TDDUIMaterialDetail""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
+"Encounter.extension:TDDUIRessourcesUsed.extension:TDDUIMaterialDetail.value[x]","Encounter.extension.extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-detail-materiel-specialise-cisis","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","N/A"
+"Encounter.extension:TDDUIRessourcesUsed.extension:TDDUIFacilityResource","Encounter.extension.extension","TDDUIFacilityResource","","",0,*,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","detailTypeRessourceUtilisee"
+"Encounter.extension:TDDUIRessourcesUsed.extension:TDDUIFacilityResource.id","Encounter.extension.extension.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Encounter.extension:TDDUIRessourcesUsed.extension:TDDUIFacilityResource.extension","Encounter.extension.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Encounter.extension:TDDUIRessourcesUsed.extension:TDDUIFacilityResource.url","Encounter.extension.extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""TDDUIFacilityResource""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
+"Encounter.extension:TDDUIRessourcesUsed.extension:TDDUIFacilityResource.value[x]","Encounter.extension.extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-detail-ressource-immobiliere-utilisee-cisis","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","N/A"
+"Encounter.extension:TDDUIRessourcesUsed.url","Encounter.extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
+"Encounter.extension:TDDUIRessourcesUsed.value[x]","Encounter.extension.value[x]","","","",0,0,"","","","base64Binary {[]} {[]}
+boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[]}decimal {[]} {[]}id {[]} {[]}instant {[]} {[]}integer {[]} {[]}markdown {[]} {[]}oid {[]} {[]}positiveInt {[]} {[]}string {[]} {[]}time {[]} {[]}unsignedInt {[]} {[]}uri {[]} {[]}url {[]} {[]}uuid {[]} {[]}Address {[]} {[]}Age {[]} {[]}Annotation {[]} {[]}Attachment {[]} {[]}CodeableConcept {[]} {[]}Coding {[]} {[]}ContactPoint {[]} {[]}Count {[]} {[]}Distance {[]} {[]}Duration {[]} {[]}HumanName {[]} {[]}Identifier {[]} {[]}Money {[]} {[]}Period {[]} {[]}Quantity {[]} {[]}Range {[]} {[]}Ratio {[]} {[]}Reference {[]} {[]}SampledData {[]} {[]}Signature {[]} {[]}Timing {[]} {[]}ContactDetail {[]} {[]}Contributor {[]} {[]}DataRequirement {[]} {[]}Expression {[]} {[]}ParameterDefinition {[]} {[]}RelatedArtifact {[]} {[]}TriggerDefinition {[]} {[]}UsageContext {[]} {[]}Dosage {[]} {[]}Meta {[]} {[]}","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","N/A"
 "Encounter.extension:TDDUIEventLabel","Encounter.extension","TDDUIEventLabel","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-label]]} {[]}
 ","Titre donné à l’évènement par la structure.","Titre donné à l’évènement par la structure.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","libelleEvenement"
 "Encounter.extension:TDDUIComment","Encounter.extension","TDDUIComment","","",0,*,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment]]} {[]}
 ","Commentaires sur le déroulé de l'évènement.","Commentaire relatif au séjour et aux évènements.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","commentaireEvenement"
 "Encounter.extension:TDDUIEventReport","Encounter.extension","TDDUIEventReport","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-report]]} {[]}
 ","Zone de texte liée à l’événement pour compte rendu des actions réalisées.","Zone de texte liée à l’événement pour compte rendu des actions réalisées.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","compteRenduEvenement"
 "Encounter.extension:TDDUIAttachment","Encounter.extension","TDDUIAttachment","","",0,*,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment]]} {[]}
 ","Pièces jointes liées à l’événement.","Pièces jointes liées à l’événement.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","pieceJointeEvenement"
 "Encounter.extension:TDDUIEventOutsideService","Encounter.extension","TDDUIEventOutsideService","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-outside-service]]} {[]}
 ","Evénement hors prestation prévue dans le projet personnalisé de l’usager.","Evénement hors prestation prévue dans le projet personnalisé de l’usager.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","evenementHorsPrestation"
 "Encounter.extension:TDDUIEventReason","Encounter.extension","TDDUIEventReason","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-reason]]} {[]}
 ","Contexte justifiant la réalisation de l’évènement.","Contexte justifiant la réalisation de l’évènement.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","motifEvenement"
 "Encounter.extension:TDDUIPatientPresent","Encounter.extension","TDDUIPatientPresent","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-present]]} {[]}
 ","Evènement nécessitant ou non la présence physique de l’usager.","Evènement nécessitant ou non la présence physique de l’usager.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","usagerPresent"
 "Encounter.extension:TDDUIMeal","Encounter.extension","TDDUIMeal","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-meal]]} {[]}
 ","Repas du professionnel prévu dans le cadre de l'événement.","Repas du professionnel prévu dans le cadre de l'événement.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","repas"
 "Encounter.modifierExtension","Encounter.modifierExtension","","extensions
 user content","",0,*,"","Y","","Extension {[]} {[]}
 ","Extensions that cannot be ignored","May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
@@ -104,7 +158,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
 "Encounter.identifier","Encounter.identifier","","","",1,1,"","","Y","Identifier {[]} {[]}
 ","Identifier(s) by which this encounter is known | identifiant de la rencontre","Identifier(s) by which this encounter is known.Cet élément est multiévalué (pour ne pas bloquer les implémentations, car il arrive sur le terrain qu'il y ait plusieurs id pour une même admission, mais cette situation est considérée comme une anomalie)","","","","","","","","","",,,,,"",,,,"Encounter.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","Event.identifier",".id","FiveWs.identifier","PV1-19"
+","idEvenement","Event.identifier",".id","FiveWs.identifier","PV1-19"
 "Encounter.identifier.id","Encounter.identifier.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Encounter.identifier.extension","Encounter.identifier.extension","","extensions
@@ -204,7 +258,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Encounter.type","Encounter.type","","","",0,*,"","","Y","CodeableConcept {[]} {[]}
 ","Specific type of encounter","Specific type of encounter (e.g. e-mail consultation, surgical day-care, skilled nursing, rehabilitation).","Since there are many ways to further classify encounters, this element is 0..*.","","","","","","","","",,"example","","https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-type","","pattern:coding.system}
 ","",,"open","Encounter.type",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","Event.code",".code","FiveWs.class","PV1-4 / PV1-18"
+","typeEvenement","Event.code",".code","FiveWs.class","PV1-4 / PV1-18"
 "Encounter.type:ssiad","Encounter.type","ssiad","","",0,*,"","","Y","CodeableConcept {[]} {[]}
 ","Codes SSIAD","Specific type of encounter (e.g. e-mail consultation, surgical day-care, skilled nursing, rehabilitation).","Since there are many ways to further classify encounters, this element is 0..*.","","","","","","","","",,"example","The type of encounter.","http://hl7.org/fhir/ValueSet/encounter-type|4.0.1","",,,,"Encounter.type",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.code",".code","FiveWs.class","PV1-4 / PV1-18"
@@ -328,7 +382,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Encounter.subject","Encounter.subject","","patient
 ","",1,1,"","","Y","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient], CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins]]}
 ","The patient or group present at the encounter","The patient or group present at the encounter.","While the encounter is always about the patient, the patient might not actually be known in all contexts of use, and there may be a group of patients that could be anonymous (such as in a group therapy for Alcoholics Anonymous - where the recording of the encounter could be used for billing on the number of people/staff and not important to the context of the specific patients) or alternately in veterinary care a herd of sheep receiving treatment (where the animals are not individually tracked).","","","","","","","","",,,,,"",,,,"Encounter.subject",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","Event.subject",".participation[typeCode=SBJ]/role[classCode=PAT]","FiveWs.subject[x]","FiveWs.subject","PID-3"
+","Usager","Event.subject",".participation[typeCode=SBJ]/role[classCode=PAT]","FiveWs.subject[x]","FiveWs.subject","PID-3"
 "Encounter.episodeOfCare","Encounter.episodeOfCare","","","",0,*,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/EpisodeOfCare|4.0.1]]}
 ","Episode(s) of care that this encounter should be recorded against","Where a specific encounter should be classified as a part of a specific episode(s) of care this field should be used. This association can facilitate grouping of related encounters together for a specific purpose, such as government reporting, issue tracking, association via a common problem.  The association is recorded on the encounter as these are typically created after the episode of care and grouped on entry rather than editing the episode of care to append another encounter to it (the episode of care could span years).","","","","","","","","","",,,,,"",,,,"Encounter.episodeOfCare",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.context","n/a","FiveWs.context","PV1-54, PV1-53"
@@ -359,13 +413,28 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",".time","ROL-5, ROL-6 (or maybe PRT-5)"
 "Encounter.participant.individual","Encounter.participant.individual","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner], CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson]]}
 ","Persons involved in the encounter other than the patient","Persons involved in the encounter other than the patient.","","","","","","","","","",,,,,"",,,,"Encounter.participant.individual",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","Event.performer.actor",".role","FiveWs.who","ROL-4"
+","Professionnel","Event.performer.actor",".role","FiveWs.who","ROL-4"
 "Encounter.appointment","Encounter.appointment","","","",0,*,"","","Y","Reference {[]} {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment]]}
 ","The appointment that scheduled this encounter","The appointment that scheduled this encounter.","","","","","","","","","",,,,,"",,,,"Encounter.appointment",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.basedOn",".outboundRelationship[typeCode=FLFS].target[classCode=ENC, moodCode=APT]","SCH-1 / SCH-2"
 "Encounter.period","Encounter.period","","","",1,1,"","","","Period {[]} {[]}
 ","The start and end time of the encounter","The start and end time of the encounter.","If not (yet) known, the end of the Period may be omitted.","","","","","","","","",,,,,"",,,,"Encounter.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.occurrence[x]",".effectiveTime (low & high)","FiveWs.done[x]","PV1-44, PV1-45"
+"Encounter.period.id","Encounter.period.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Encounter.period.extension","Encounter.period.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"Encounter.period.start","Encounter.period.start","","","",0,1,"","","Y","dateTime {[]} {[]}
+","Starting time with inclusive boundary","The start of the period. The boundary is inclusive.","If the low element is missing, the meaning is that the low boundary is not known.","","","","","","","","",,,,,"",,,,"Period.start",0,1,"per-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","dateDebutEvenement","./low","DR.1"
+"Encounter.period.end","Encounter.period.end","","","",0,1,"","","Y","dateTime {[]} {[]}
+","End time with inclusive boundary, if not ongoing","The end of the period. If the end of the period is missing, it means no end was known or planned at the time the instance was created. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time.","The high value includes any matching date/time. i.e. 2012-02-03T10:00:00 is in a period that has an end value of 2012-02-03.","","","If the end of the period is missing, it means that the period is ongoing","","","","","",,,,,"",,,,"Period.end",0,1,"per-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","dateFinEvenement","./high","DR.2"
 "Encounter.length","Encounter.length","","","",0,1,"","","","Duration {[]} {[]}
 ","Quantity of time the encounter lasted (less time absent)","Quantity of time the encounter lasted. This excludes the time during leaves of absence.","May differ from the time the Encounter.period lasted because of leave of absence.","","","","","","","","",,,,,"",,,,"Encounter.length",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.occurrence[x]",".lengthOfStayQuantity","(PV1-45 less PV1-44) iff ( (PV1-44 not empty) and (PV1-45 not empty) ); units in minutes"
@@ -475,7 +544,7 @@ Le namespace est défini à partir de la racine d'identification (gérée par l'
 ",".dischargeDispositionCode","PV1-36"
 "Encounter.location","Encounter.location","","","",0,1,"","","","BackboneElement {[]} {[]}
 ","List of locations where the patient has been","List of locations where  the patient has been during this encounter.","Virtual encounters can be recorded in the Encounter by specifying a location reference to a location of type ""kind"" such as ""client's home"" and an encounter.class = ""virtual"".","","","","","","","","",,,,,"",,,,"Encounter.location",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-",".participation[typeCode=LOC]"
+","lieuEvenement",".participation[typeCode=LOC]"
 "Encounter.location.id","Encounter.location.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Encounter.location.extension","Encounter.location.extension","","extensions
@@ -504,7 +573,7 @@ There may be many levels in the hierachy, and this may only pic specific levels 
 ",".time"
 "Encounter.serviceProvider","Encounter.serviceProvider","","","",0,1,"","","","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization]]}
 ","The organization (facility) responsible for this encounter","The organization that is primarily responsible for this Encounter's services. This MAY be the same as the organization on the Patient record, however it could be different, such as if the actor performing the services was from an external organization (which may be billed seperately) for an external consultation.  Refer to the example bundle showing an abbreviated set of Encounters for a colonoscopy.","","","","","","","","","",,,,,"",,,,"Encounter.serviceProvider",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","Event.performer.actor",".particiaption[typeCode=PFM].role","PL.6  & PL.1"
+","structureEnCharge","Event.performer.actor",".particiaption[typeCode=PFM].role","PL.6  & PL.1"
 "Encounter.partOf","Encounter.partOf","","","",0,1,"","","","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour]]}
 ","Another Encounter this encounter is part of","Another Encounter of which this encounter is a part of (administratively or in time).","This is also used for associating a child's encounter back to the mother's encounter.Refer to the Notes section in the Patient resource for further details.","","","","","","","","",,,,,"",,,,"Encounter.partOf",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","Event.partOf",".inboundRelationship[typeCode=COMP].source[classCode=COMP, moodCode=EVN]"
+","sejour","Event.partOf",".inboundRelationship[typeCode=COMP].source[classCode=COMP, moodCode=EVN]"

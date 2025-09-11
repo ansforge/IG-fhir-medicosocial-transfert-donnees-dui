@@ -10,7 +10,7 @@
   "name" : "TDDUITaskTransport",
   "title" : "Transport",
   "status" : "active",
-  "date" : "2025-09-10T13:51:57+00:00",
+  "date" : "2025-09-11T08:12:08+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -30,6 +30,11 @@
   "purpose" : "> **Note** : La ressource Task en FHIR R4 est utilisée pour représenter le Transport. Lors d'une montée de version vers FHIR R5, il conviendra d'utiliser la ressource Transport.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
+    "identity" : "specmetier-to-TDDUITaskTransport",
+    "uri" : "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html",
+    "name" : "Transport"
+  },
+  {
     "identity" : "workflow",
     "uri" : "http://hl7.org/fhir/workflow",
     "name" : "Workflow Pattern"
@@ -130,6 +135,10 @@
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskTransport",
+        "map" : "Transport"
+      },
+      {
         "identity" : "rim",
         "map" : "Entity. Role, or Act"
       },
@@ -430,6 +439,10 @@
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskTransport",
+        "map" : "idTrajet"
+      },
+      {
         "identity" : "workflow",
         "map" : "Request.identifier, Event.identifier"
       },
@@ -875,6 +888,10 @@
         "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis"
       },
       "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskTransport",
+        "map" : "typeTransport"
+      },
+      {
         "identity" : "workflow",
         "map" : "Request.code, Event.code"
       },
@@ -1027,6 +1044,10 @@
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskTransport",
+        "map" : "Evenement"
+      },
+      {
         "identity" : "workflow",
         "map" : "Request.context, Event.context"
       },
@@ -1181,6 +1202,10 @@
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskTransport",
+        "map" : "dateDebutTransport"
+      },
+      {
         "identity" : "v2",
         "map" : "DR.1"
       },
@@ -1218,6 +1243,10 @@
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskTransport",
+        "map" : "dateDebutTransport"
+      },
+      {
         "identity" : "v2",
         "map" : "DR.2"
       },
@@ -1424,6 +1453,10 @@
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskTransport",
+        "map" : "transporteur"
+      },
+      {
         "identity" : "workflow",
         "map" : "Event.performer.actor, Request.performer"
       },
@@ -2318,6 +2351,10 @@
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskTransport",
+        "map" : "typeMotorisation"
+      },
+      {
         "identity" : "rim",
         "map" : "???"
       }]
@@ -2544,6 +2581,10 @@
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskTransport",
+        "map" : "adresseDepart"
+      },
+      {
         "identity" : "rim",
         "map" : "???"
       }]
@@ -2766,6 +2807,10 @@
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskTransport",
+        "map" : "adresseDestination"
+      },
+      {
         "identity" : "rim",
         "map" : "???"
       }]
@@ -2988,6 +3033,10 @@
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskTransport",
+        "map" : "budgetPrevisionnel"
+      },
+      {
         "identity" : "rim",
         "map" : "???"
       }]
@@ -3210,6 +3259,10 @@
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskTransport",
+        "map" : "budgetReel"
+      },
+      {
         "identity" : "rim",
         "map" : "???"
       }]
@@ -3432,6 +3485,10 @@
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskTransport",
+        "map" : "distanceTrajet"
+      },
+      {
         "identity" : "rim",
         "map" : "???"
       }]
@@ -3654,6 +3711,10 @@
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskTransport",
+        "map" : "dureeTheoriqueTrajet"
+      },
+      {
         "identity" : "rim",
         "map" : "???"
       }]
@@ -4212,13 +4273,21 @@
   "differential" : {
     "element" : [{
       "id" : "Task",
-      "path" : "Task"
+      "path" : "Task",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskTransport",
+        "map" : "Transport"
+      }]
     },
     {
       "id" : "Task.identifier",
       "path" : "Task.identifier",
       "min" : 1,
-      "max" : "1"
+      "max" : "1",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskTransport",
+        "map" : "idTrajet"
+      }]
     },
     {
       "id" : "Task.code",
@@ -4226,7 +4295,11 @@
       "binding" : {
         "strength" : "required",
         "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis"
-      }
+      },
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskTransport",
+        "map" : "typeTransport"
+      }]
     },
     {
       "id" : "Task.encounter",
@@ -4235,6 +4308,10 @@
       "type" : [{
         "code" : "Reference",
         "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement"]
+      }],
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskTransport",
+        "map" : "Evenement"
       }]
     },
     {
@@ -4245,12 +4322,20 @@
     {
       "id" : "Task.executionPeriod.start",
       "path" : "Task.executionPeriod.start",
-      "min" : 1
+      "min" : 1,
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskTransport",
+        "map" : "dateDebutTransport"
+      }]
     },
     {
       "id" : "Task.executionPeriod.end",
       "path" : "Task.executionPeriod.end",
-      "min" : 1
+      "min" : 1,
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskTransport",
+        "map" : "dateDebutTransport"
+      }]
     },
     {
       "id" : "Task.owner",
@@ -4258,6 +4343,10 @@
       "type" : [{
         "code" : "Reference",
         "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization"]
+      }],
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskTransport",
+        "map" : "transporteur"
       }]
     },
     {
@@ -4277,7 +4366,11 @@
       "sliceName" : "typeMotorisation",
       "short" : "Type de motorisation",
       "min" : 0,
-      "max" : "1"
+      "max" : "1",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskTransport",
+        "map" : "typeMotorisation"
+      }]
     },
     {
       "id" : "Task.input:typeMotorisation.type",
@@ -4306,7 +4399,11 @@
       "sliceName" : "adresseDepart",
       "short" : "Adresse de départ",
       "min" : 0,
-      "max" : "1"
+      "max" : "1",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskTransport",
+        "map" : "adresseDepart"
+      }]
     },
     {
       "id" : "Task.input:adresseDepart.type",
@@ -4331,7 +4428,11 @@
       "sliceName" : "adresseDestination",
       "short" : "Adresse de destination",
       "min" : 0,
-      "max" : "1"
+      "max" : "1",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskTransport",
+        "map" : "adresseDestination"
+      }]
     },
     {
       "id" : "Task.input:adresseDestination.type",
@@ -4356,7 +4457,11 @@
       "sliceName" : "budgetPrevisionnel",
       "short" : "Budget prévisionnel",
       "min" : 0,
-      "max" : "1"
+      "max" : "1",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskTransport",
+        "map" : "budgetPrevisionnel"
+      }]
     },
     {
       "id" : "Task.input:budgetPrevisionnel.type",
@@ -4381,7 +4486,11 @@
       "sliceName" : "budgetReel",
       "short" : "Budget réel",
       "min" : 0,
-      "max" : "1"
+      "max" : "1",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskTransport",
+        "map" : "budgetReel"
+      }]
     },
     {
       "id" : "Task.input:budgetReel.type",
@@ -4406,7 +4515,11 @@
       "sliceName" : "distance",
       "short" : "Distance du trajet",
       "min" : 0,
-      "max" : "1"
+      "max" : "1",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskTransport",
+        "map" : "distanceTrajet"
+      }]
     },
     {
       "id" : "Task.input:distance.type",
@@ -4431,7 +4544,11 @@
       "sliceName" : "dureeTheorique",
       "short" : "Durée théorique du trajet",
       "min" : 0,
-      "max" : "1"
+      "max" : "1",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskTransport",
+        "map" : "dureeTheoriqueTrajet"
+      }]
     },
     {
       "id" : "Task.input:dureeTheorique.type",

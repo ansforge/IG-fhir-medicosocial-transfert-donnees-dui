@@ -1,7 +1,7 @@
-"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: Workflow Pattern","Mapping: RIM Mapping","Mapping: FiveWs Pattern Mapping","Mapping: HL7 v2 Mapping"
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: Transport","Mapping: Workflow Pattern","Mapping: RIM Mapping","Mapping: FiveWs Pattern Mapping","Mapping: HL7 v2 Mapping"
 "Task","Task","","","",0,*,"","","","null {[]} {[]}
 ","A task to be performed","A task to be performed.","","","","","","","","","",,,,,"",,,,"Task",0,*,"","dom-2:If the resource is contained in another resource, it SHALL NOT contain nested Resources {contained.contained.empty()}
-dom-3:If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource {contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()}dom-4:If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated {contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()}dom-5:If a resource is contained in another resource, it SHALL NOT have a security label {contained.meta.security.empty()}dom-6:A resource should have narrative for robust management {text.`div`.exists()}inv-1:Last modified date must be greater than or equal to authored-on date. {lastModified.exists().not() or authoredOn.exists().not() or lastModified >= authoredOn}","Request, Event","Entity. Role, or Act","ControlAct[moodCode=INT]"
+dom-3:If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource {contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()}dom-4:If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated {contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()}dom-5:If a resource is contained in another resource, it SHALL NOT have a security label {contained.meta.security.empty()}dom-6:A resource should have narrative for robust management {text.`div`.exists()}inv-1:Last modified date must be greater than or equal to authored-on date. {lastModified.exists().not() or authoredOn.exists().not() or lastModified >= authoredOn}","Transport","Request, Event","Entity. Role, or Act","ControlAct[moodCode=INT]"
 "Task.id","Task.id","","","",0,1,"","","Y","id {[]} {[]}
 ","Logical id of this artifact","The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.","The only time that a resource does not have an id is when it is being submitted to the server using a create operation.","","","","","","","","",,,,,"",,,,"Resource.id",0,1,"",""
 "Task.meta","Task.meta","","","",0,1,"","","Y","Meta {[]} {[]}
@@ -32,7 +32,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
 "Task.identifier","Task.identifier","","","",1,1,"","","","Identifier {[]} {[]}
 ","Task Instance Identifier","The business identifier for this task.","","","","","","","","","",,,,,"",,,,"Task.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","Request.identifier, Event.identifier",".id","FiveWs.identifier"
+","idTrajet","Request.identifier, Event.identifier",".id","FiveWs.identifier"
 "Task.instantiatesCanonical","Task.instantiatesCanonical","","","",0,1,"","","Y","canonical {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/ActivityDefinition|4.0.1]]}
 ","Formal definition of task","The URL pointing to a *FHIR*-defined protocol, guideline, orderset or other definition that is adhered to in whole or in part by this Task.","","Enables a formal definition of how he task is to be performed, enabling automation.","","","","","","","",,,,,"",,,,"Task.instantiatesCanonical",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.instantiatesCanonical, Event.instantiatesCanonical",".outboundRelationship[typeCode=DEFN].target"
@@ -67,7 +67,7 @@ In most cases, Tasks will have an intent of ""order"".","","","","","","","","",
 ","Request.priority",".priorityCode","FiveWs.grade"
 "Task.code","Task.code","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
 ","Task Type","A name or code (or both) briefly describing what the task involves.","The title (eg ""My Tasks"", ""Outstanding Tasks for Patient X"") should go into the code.","","","","","","","","",,"required","","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis","",,,,"Task.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","Request.code, Event.code",".code","FiveWs.what[x]"
+","typeTransport","Request.code, Event.code",".code","FiveWs.what[x]"
 "Task.description","Task.description","","","",0,1,"","","Y","string {[]} {[]}
 ","Human-readable explanation of task","A free-text description of what is to be performed.","","","","","","","","","",,,,,"",,,,"Task.description",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".text"
@@ -80,7 +80,7 @@ In most cases, Tasks will have an intent of ""order"".","","","","","","","","",
 ","Request.subject, Event.subject",".participation[typeCode=RCT].role","FiveWs.subject[x]","FiveWs.subject"
 "Task.encounter","Task.encounter","","","",1,1,"","","Y","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement]]}
 ","Healthcare event during which this task originated","The healthcare event  (e.g. a patient and healthcare provider interaction) during which this task was created.","","For some tasks it may be important to know the link between the encounter the task originated within.","","","","","","","",,,,,"",,,,"Task.encounter",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","Request.context, Event.context",".inboundRelationship[typeCode=COMP].source[classCode=PCPR, moodCode=EVN]","FiveWs.context"
+","Evenement","Request.context, Event.context",".inboundRelationship[typeCode=COMP].source[classCode=PCPR, moodCode=EVN]","FiveWs.context"
 "Task.executionPeriod","Task.executionPeriod","","","",1,1,"","","Y","Period {[]} {[]}
 ","Start and end time of execution","Identifies the time action was first taken against the task (start) and/or the time final action was taken against the task prior to marking it as completed (end).","","","","","","","","","",,,,,"",,,,"Task.executionPeriod",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.occurrence[x]",".effectiveTime","FiveWs.done[x]"
@@ -94,11 +94,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Task.executionPeriod.start","Task.executionPeriod.start","","","",1,1,"","","Y","dateTime {[]} {[]}
 ","Starting time with inclusive boundary","The start of the period. The boundary is inclusive.","If the low element is missing, the meaning is that the low boundary is not known.","","","","","","","","",,,,,"",,,,"Period.start",0,1,"per-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","./low","DR.1"
+","dateDebutTransport","./low","DR.1"
 "Task.executionPeriod.end","Task.executionPeriod.end","","","",1,1,"","","Y","dateTime {[]} {[]}
 ","End time with inclusive boundary, if not ongoing","The end of the period. If the end of the period is missing, it means no end was known or planned at the time the instance was created. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time.","The high value includes any matching date/time. i.e. 2012-02-03T10:00:00 is in a period that has an end value of 2012-02-03.","","","If the end of the period is missing, it means that the period is ongoing","","","","","",,,,,"",,,,"Period.end",0,1,"per-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","./high","DR.2"
+","dateDebutTransport","./high","DR.2"
 "Task.authoredOn","Task.authoredOn","","Created Date
 ","",0,1,"","","","dateTime {[]} {[]}
 ","Task Creation Date","The date and time this task was created.","","Most often used along with lastUpdated to track duration of task to supporting monitoring and management.","","","","","","","",,,,,"",,,,"Task.authoredOn",0,1,"inv-1
@@ -118,7 +118,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Task.owner","Task.owner","","Performer
 Executer","",0,1,"","","Y","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization]]}
 ","Responsible individual","Individual organization or Device currently responsible for task execution.","Tasks may be created with an owner not yet identified.","Identifies who is expected to perform this task.","","","","","","","",,,,,"",,,,"Task.owner",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","Event.performer.actor, Request.performer",".participation[typeCode=PRF].role","FiveWs.actor"
+","transporteur","Event.performer.actor, Request.performer",".participation[typeCode=PRF].role","FiveWs.actor"
 "Task.location","Task.location","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Location|4.0.1]]}
 ","Where task occurs","Principal physical location where the this task is performed.","","Ties the event to where the records are likely kept and provides context around the event occurrence (e.g. if it occurred inside or outside a dedicated healthcare setting).","","","","","","","",,,,,"",,,,"Task.location",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.reasonCode, Event.reasonCode",".participation[typeCode=LOC].role","FiveWs.where[x]"
@@ -189,7 +189,7 @@ boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[
 "Task.input:typeMotorisation","Task.input","typeMotorisation","Supporting Information
 ","",0,1,"","","","BackboneElement {[]} {[]}
 ","Type de motorisation","Additional information that may be needed in the execution of the task.","","Resources and data used to perform the task.  This data is used in the business logic of task execution, and is stored separately because it varies between workflows.","","","","","","","",,,,,"",,,,"Task.input",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","???"
+","typeMotorisation","???"
 "Task.input:typeMotorisation.id","Task.input.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Task.input:typeMotorisation.extension","Task.input.extension","","extensions
@@ -217,7 +217,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Task.input:adresseDepart","Task.input","adresseDepart","Supporting Information
 ","",0,1,"","","","BackboneElement {[]} {[]}
 ","Adresse de départ","Additional information that may be needed in the execution of the task.","","Resources and data used to perform the task.  This data is used in the business logic of task execution, and is stored separately because it varies between workflows.","","","","","","","",,,,,"",,,,"Task.input",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","???"
+","adresseDepart","???"
 "Task.input:adresseDepart.id","Task.input.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Task.input:adresseDepart.extension","Task.input.extension","","extensions
@@ -245,7 +245,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Task.input:adresseDestination","Task.input","adresseDestination","Supporting Information
 ","",0,1,"","","","BackboneElement {[]} {[]}
 ","Adresse de destination","Additional information that may be needed in the execution of the task.","","Resources and data used to perform the task.  This data is used in the business logic of task execution, and is stored separately because it varies between workflows.","","","","","","","",,,,,"",,,,"Task.input",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","???"
+","adresseDestination","???"
 "Task.input:adresseDestination.id","Task.input.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Task.input:adresseDestination.extension","Task.input.extension","","extensions
@@ -273,7 +273,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Task.input:budgetPrevisionnel","Task.input","budgetPrevisionnel","Supporting Information
 ","",0,1,"","","","BackboneElement {[]} {[]}
 ","Budget prévisionnel","Additional information that may be needed in the execution of the task.","","Resources and data used to perform the task.  This data is used in the business logic of task execution, and is stored separately because it varies between workflows.","","","","","","","",,,,,"",,,,"Task.input",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","???"
+","budgetPrevisionnel","???"
 "Task.input:budgetPrevisionnel.id","Task.input.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Task.input:budgetPrevisionnel.extension","Task.input.extension","","extensions
@@ -301,7 +301,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Task.input:budgetReel","Task.input","budgetReel","Supporting Information
 ","",0,1,"","","","BackboneElement {[]} {[]}
 ","Budget réel","Additional information that may be needed in the execution of the task.","","Resources and data used to perform the task.  This data is used in the business logic of task execution, and is stored separately because it varies between workflows.","","","","","","","",,,,,"",,,,"Task.input",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","???"
+","budgetReel","???"
 "Task.input:budgetReel.id","Task.input.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Task.input:budgetReel.extension","Task.input.extension","","extensions
@@ -329,7 +329,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Task.input:distance","Task.input","distance","Supporting Information
 ","",0,1,"","","","BackboneElement {[]} {[]}
 ","Distance du trajet","Additional information that may be needed in the execution of the task.","","Resources and data used to perform the task.  This data is used in the business logic of task execution, and is stored separately because it varies between workflows.","","","","","","","",,,,,"",,,,"Task.input",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","???"
+","distanceTrajet","???"
 "Task.input:distance.id","Task.input.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Task.input:distance.extension","Task.input.extension","","extensions
@@ -357,7 +357,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Task.input:dureeTheorique","Task.input","dureeTheorique","Supporting Information
 ","",0,1,"","","","BackboneElement {[]} {[]}
 ","Durée théorique du trajet","Additional information that may be needed in the execution of the task.","","Resources and data used to perform the task.  This data is used in the business logic of task execution, and is stored separately because it varies between workflows.","","","","","","","",,,,,"",,,,"Task.input",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","???"
+","dureeTheoriqueTrajet","???"
 "Task.input:dureeTheorique.id","Task.input.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Task.input:dureeTheorique.extension","Task.input.extension","","extensions

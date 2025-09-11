@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "TDDUIPractitionerRole"] ; # 
   fhir:title [ fhir:v "TDDUI Practitioner Role"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-09-10T13:51:57+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-09-11T08:12:08+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -37,6 +37,10 @@
   ] ) ; # 
   fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
   fhir:mapping ( [
+     fhir:identity [ fhir:v "specmetier-to-TDDUIPractitionerRole" ] ;
+     fhir:uri [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"^^xsd:anyURI ] ;
+     fhir:name [ fhir:v "Professionnel" ]
+  ] [
      fhir:identity [ fhir:v "v2" ] ;
      fhir:uri [ fhir:v "http://hl7.org/v2"^^xsd:anyURI ] ;
      fhir:name [ fhir:v "HL7 v2 Mapping" ]
@@ -148,6 +152,9 @@
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUIPractitionerRole" ] ;
+         fhir:map [ fhir:v "Professionnel" ]
+       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "Entity. Role, or Act" ]
        ] [
@@ -1016,6 +1023,9 @@
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUIPractitionerRole" ] ;
+         fhir:map [ fhir:v "etablissementDeRattachement" ]
+       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v ".scoper" ]
        ] )
@@ -1057,6 +1067,9 @@
          ]
        ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUIPractitionerRole" ] ;
+         fhir:map [ fhir:v "rôle" ]
+       ] [
          fhir:identity [ fhir:v "v2" ] ;
          fhir:map [ fhir:v "PRD-1 / STF-18  / PRA-3  / PRT-4  / ROL-3 / ORC-12 / OBR-16 / PV1-7 / PV1-8 / PV1-9 / PV1-17" ]
        ] [
@@ -1189,7 +1202,11 @@
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
-       fhir:isSummary [ fhir:v false ]
+       fhir:isSummary [ fhir:v false ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUIPractitionerRole" ] ;
+         fhir:map [ fhir:v "profession" ]
+       ] )
      ] [
        fhir:id [ fhir:v "PractitionerRole.code.coding" ] ;
        fhir:path [ fhir:v "PractitionerRole.code.coding" ] ;
@@ -2052,7 +2069,11 @@
   fhir:differential [
      fhir:element ( [
        fhir:id [ fhir:v "PractitionerRole" ] ;
-       fhir:path [ fhir:v "PractitionerRole" ]
+       fhir:path [ fhir:v "PractitionerRole" ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUIPractitionerRole" ] ;
+         fhir:map [ fhir:v "Professionnel" ]
+       ] )
      ] [
        fhir:id [ fhir:v "PractitionerRole.practitioner" ] ;
        fhir:path [ fhir:v "PractitionerRole.practitioner" ] ;
@@ -2072,12 +2093,20 @@
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization>
          ] )
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUIPractitionerRole" ] ;
+         fhir:map [ fhir:v "etablissementDeRattachement" ]
        ] )
      ] [
        fhir:id [ fhir:v "PractitionerRole.code" ] ;
        fhir:path [ fhir:v "PractitionerRole.code" ] ;
        fhir:short [ fhir:v "Rôle fonctionnel du professionnel." ] ;
-       fhir:max [ fhir:v "1" ]
+       fhir:max [ fhir:v "1" ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUIPractitionerRole" ] ;
+         fhir:map [ fhir:v "rôle" ]
+       ] )
      ] [
        fhir:id [ fhir:v "PractitionerRole.code.extension:tddui-profession" ] ;
        fhir:path [ fhir:v "PractitionerRole.code.extension" ] ;
@@ -2090,6 +2119,10 @@
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-profession"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-profession>
          ] )
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUIPractitionerRole" ] ;
+         fhir:map [ fhir:v "profession" ]
        ] )
      ] [
        fhir:id [ fhir:v "PractitionerRole.code.coding" ] ;

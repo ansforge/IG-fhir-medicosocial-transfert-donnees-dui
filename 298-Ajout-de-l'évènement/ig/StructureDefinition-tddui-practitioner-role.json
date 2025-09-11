@@ -10,7 +10,7 @@
   "name" : "TDDUIPractitionerRole",
   "title" : "TDDUI Practitioner Role",
   "status" : "active",
-  "date" : "2025-09-10T13:51:57+00:00",
+  "date" : "2025-09-11T08:12:08+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -29,6 +29,11 @@
   }],
   "fhirVersion" : "4.0.1",
   "mapping" : [{
+    "identity" : "specmetier-to-TDDUIPractitionerRole",
+    "uri" : "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html",
+    "name" : "Professionnel"
+  },
+  {
     "identity" : "v2",
     "uri" : "http://hl7.org/v2",
     "name" : "HL7 v2 Mapping"
@@ -121,6 +126,10 @@
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
+        "identity" : "specmetier-to-TDDUIPractitionerRole",
+        "map" : "Professionnel"
+      },
+      {
         "identity" : "rim",
         "map" : "Entity. Role, or Act"
       },
@@ -916,6 +925,10 @@
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
+        "identity" : "specmetier-to-TDDUIPractitionerRole",
+        "map" : "etablissementDeRattachement"
+      },
+      {
         "identity" : "rim",
         "map" : ".scoper"
       }]
@@ -952,6 +965,10 @@
         "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-role-exercice"
       },
       "mapping" : [{
+        "identity" : "specmetier-to-TDDUIPractitionerRole",
+        "map" : "rôle"
+      },
+      {
         "identity" : "v2",
         "map" : "PRD-1 / STF-18  / PRA-3  / PRT-4  / ROL-3 / ORC-12 / OBR-16 / PV1-7 / PV1-8 / PV1-9 / PV1-17"
       },
@@ -1074,7 +1091,11 @@
         "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
       }],
       "isModifier" : false,
-      "isSummary" : false
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIPractitionerRole",
+        "map" : "profession"
+      }]
     },
     {
       "id" : "PractitionerRole.code.coding",
@@ -1874,7 +1895,11 @@
   "differential" : {
     "element" : [{
       "id" : "PractitionerRole",
-      "path" : "PractitionerRole"
+      "path" : "PractitionerRole",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIPractitionerRole",
+        "map" : "Professionnel"
+      }]
     },
     {
       "id" : "PractitionerRole.practitioner",
@@ -1890,13 +1915,21 @@
       "type" : [{
         "code" : "Reference",
         "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization"]
+      }],
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIPractitionerRole",
+        "map" : "etablissementDeRattachement"
       }]
     },
     {
       "id" : "PractitionerRole.code",
       "path" : "PractitionerRole.code",
       "short" : "Rôle fonctionnel du professionnel.",
-      "max" : "1"
+      "max" : "1",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIPractitionerRole",
+        "map" : "rôle"
+      }]
     },
     {
       "id" : "PractitionerRole.code.extension:tddui-profession",
@@ -1907,6 +1940,10 @@
       "type" : [{
         "code" : "Extension",
         "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-profession"]
+      }],
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIPractitionerRole",
+        "map" : "profession"
       }]
     },
     {

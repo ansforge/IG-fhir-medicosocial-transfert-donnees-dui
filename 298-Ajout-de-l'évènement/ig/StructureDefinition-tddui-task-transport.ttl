@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "TDDUITaskTransport"] ; # 
   fhir:title [ fhir:v "Transport"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-09-10T13:51:57+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-09-11T08:12:08+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -38,6 +38,10 @@
   fhir:purpose [ fhir:v "> **Note** : La ressource Task en FHIR R4 est utilisée pour représenter le Transport. Lors d'une montée de version vers FHIR R5, il conviendra d'utiliser la ressource Transport."] ; # 
   fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
   fhir:mapping ( [
+     fhir:identity [ fhir:v "specmetier-to-TDDUITaskTransport" ] ;
+     fhir:uri [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"^^xsd:anyURI ] ;
+     fhir:name [ fhir:v "Transport" ]
+  ] [
      fhir:identity [ fhir:v "workflow" ] ;
      fhir:uri [ fhir:v "http://hl7.org/fhir/workflow"^^xsd:anyURI ] ;
      fhir:name [ fhir:v "Workflow Pattern" ]
@@ -159,6 +163,9 @@
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUITaskTransport" ] ;
+         fhir:map [ fhir:v "Transport" ]
+       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "Entity. Role, or Act" ]
        ] [
@@ -478,6 +485,9 @@
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUITaskTransport" ] ;
+         fhir:map [ fhir:v "idTrajet" ]
+       ] [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Request.identifier, Event.identifier" ]
        ] [
@@ -968,6 +978,9 @@
          ]
        ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUITaskTransport" ] ;
+         fhir:map [ fhir:v "typeTransport" ]
+       ] [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Request.code, Event.code" ]
        ] [
@@ -1131,6 +1144,9 @@
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUITaskTransport" ] ;
+         fhir:map [ fhir:v "Evenement" ]
+       ] [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Request.context, Event.context" ]
        ] [
@@ -1290,6 +1306,9 @@
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUITaskTransport" ] ;
+         fhir:map [ fhir:v "dateDebutTransport" ]
+       ] [
          fhir:identity [ fhir:v "v2" ] ;
          fhir:map [ fhir:v "DR.1" ]
        ] [
@@ -1328,6 +1347,9 @@
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUITaskTransport" ] ;
+         fhir:map [ fhir:v "dateDebutTransport" ]
+       ] [
          fhir:identity [ fhir:v "v2" ] ;
          fhir:map [ fhir:v "DR.2" ]
        ] [
@@ -1558,6 +1580,9 @@
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUITaskTransport" ] ;
+         fhir:map [ fhir:v "transporteur" ]
+       ] [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Event.performer.actor, Request.performer" ]
        ] [
@@ -2465,6 +2490,9 @@
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUITaskTransport" ] ;
+         fhir:map [ fhir:v "typeMotorisation" ]
+       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "???" ]
        ] )
@@ -2711,6 +2739,9 @@
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUITaskTransport" ] ;
+         fhir:map [ fhir:v "adresseDepart" ]
+       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "???" ]
        ] )
@@ -2950,6 +2981,9 @@
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUITaskTransport" ] ;
+         fhir:map [ fhir:v "adresseDestination" ]
+       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "???" ]
        ] )
@@ -3189,6 +3223,9 @@
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUITaskTransport" ] ;
+         fhir:map [ fhir:v "budgetPrevisionnel" ]
+       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "???" ]
        ] )
@@ -3428,6 +3465,9 @@
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUITaskTransport" ] ;
+         fhir:map [ fhir:v "budgetReel" ]
+       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "???" ]
        ] )
@@ -3667,6 +3707,9 @@
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUITaskTransport" ] ;
+         fhir:map [ fhir:v "distanceTrajet" ]
+       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "???" ]
        ] )
@@ -3906,6 +3949,9 @@
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUITaskTransport" ] ;
+         fhir:map [ fhir:v "dureeTheoriqueTrajet" ]
+       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "???" ]
        ] )
@@ -4446,12 +4492,20 @@
   fhir:differential [
      fhir:element ( [
        fhir:id [ fhir:v "Task" ] ;
-       fhir:path [ fhir:v "Task" ]
+       fhir:path [ fhir:v "Task" ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUITaskTransport" ] ;
+         fhir:map [ fhir:v "Transport" ]
+       ] )
      ] [
        fhir:id [ fhir:v "Task.identifier" ] ;
        fhir:path [ fhir:v "Task.identifier" ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ]
+       fhir:max [ fhir:v "1" ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUITaskTransport" ] ;
+         fhir:map [ fhir:v "idTrajet" ]
+       ] )
      ] [
        fhir:id [ fhir:v "Task.code" ] ;
        fhir:path [ fhir:v "Task.code" ] ;
@@ -4461,7 +4515,11 @@
            fhir:v "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis"^^xsd:anyURI ;
            fhir:link <https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis>
          ]
-       ]
+       ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUITaskTransport" ] ;
+         fhir:map [ fhir:v "typeTransport" ]
+       ] )
      ] [
        fhir:id [ fhir:v "Task.encounter" ] ;
        fhir:path [ fhir:v "Task.encounter" ] ;
@@ -4472,6 +4530,10 @@
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement>
          ] )
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUITaskTransport" ] ;
+         fhir:map [ fhir:v "Evenement" ]
        ] )
      ] [
        fhir:id [ fhir:v "Task.executionPeriod" ] ;
@@ -4480,11 +4542,19 @@
      ] [
        fhir:id [ fhir:v "Task.executionPeriod.start" ] ;
        fhir:path [ fhir:v "Task.executionPeriod.start" ] ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ]
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUITaskTransport" ] ;
+         fhir:map [ fhir:v "dateDebutTransport" ]
+       ] )
      ] [
        fhir:id [ fhir:v "Task.executionPeriod.end" ] ;
        fhir:path [ fhir:v "Task.executionPeriod.end" ] ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ]
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUITaskTransport" ] ;
+         fhir:map [ fhir:v "dateDebutTransport" ]
+       ] )
      ] [
        fhir:id [ fhir:v "Task.owner" ] ;
        fhir:path [ fhir:v "Task.owner" ] ;
@@ -4494,6 +4564,10 @@
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization>
          ] )
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUITaskTransport" ] ;
+         fhir:map [ fhir:v "transporteur" ]
        ] )
      ] [
        fhir:id [ fhir:v "Task.input" ] ;
@@ -4511,7 +4585,11 @@
        fhir:sliceName [ fhir:v "typeMotorisation" ] ;
        fhir:short [ fhir:v "Type de motorisation" ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ]
+       fhir:max [ fhir:v "1" ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUITaskTransport" ] ;
+         fhir:map [ fhir:v "typeMotorisation" ]
+       ] )
      ] [
        fhir:id [ fhir:v "Task.input:typeMotorisation.type" ] ;
        fhir:path [ fhir:v "Task.input.type" ] ;
@@ -4541,7 +4619,11 @@
        fhir:sliceName [ fhir:v "adresseDepart" ] ;
        fhir:short [ fhir:v "Adresse de départ" ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ]
+       fhir:max [ fhir:v "1" ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUITaskTransport" ] ;
+         fhir:map [ fhir:v "adresseDepart" ]
+       ] )
      ] [
        fhir:id [ fhir:v "Task.input:adresseDepart.type" ] ;
        fhir:path [ fhir:v "Task.input.type" ] ;
@@ -4564,7 +4646,11 @@
        fhir:sliceName [ fhir:v "adresseDestination" ] ;
        fhir:short [ fhir:v "Adresse de destination" ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ]
+       fhir:max [ fhir:v "1" ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUITaskTransport" ] ;
+         fhir:map [ fhir:v "adresseDestination" ]
+       ] )
      ] [
        fhir:id [ fhir:v "Task.input:adresseDestination.type" ] ;
        fhir:path [ fhir:v "Task.input.type" ] ;
@@ -4587,7 +4673,11 @@
        fhir:sliceName [ fhir:v "budgetPrevisionnel" ] ;
        fhir:short [ fhir:v "Budget prévisionnel" ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ]
+       fhir:max [ fhir:v "1" ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUITaskTransport" ] ;
+         fhir:map [ fhir:v "budgetPrevisionnel" ]
+       ] )
      ] [
        fhir:id [ fhir:v "Task.input:budgetPrevisionnel.type" ] ;
        fhir:path [ fhir:v "Task.input.type" ] ;
@@ -4610,7 +4700,11 @@
        fhir:sliceName [ fhir:v "budgetReel" ] ;
        fhir:short [ fhir:v "Budget réel" ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ]
+       fhir:max [ fhir:v "1" ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUITaskTransport" ] ;
+         fhir:map [ fhir:v "budgetReel" ]
+       ] )
      ] [
        fhir:id [ fhir:v "Task.input:budgetReel.type" ] ;
        fhir:path [ fhir:v "Task.input.type" ] ;
@@ -4633,7 +4727,11 @@
        fhir:sliceName [ fhir:v "distance" ] ;
        fhir:short [ fhir:v "Distance du trajet" ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ]
+       fhir:max [ fhir:v "1" ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUITaskTransport" ] ;
+         fhir:map [ fhir:v "distanceTrajet" ]
+       ] )
      ] [
        fhir:id [ fhir:v "Task.input:distance.type" ] ;
        fhir:path [ fhir:v "Task.input.type" ] ;
@@ -4656,7 +4754,11 @@
        fhir:sliceName [ fhir:v "dureeTheorique" ] ;
        fhir:short [ fhir:v "Durée théorique du trajet" ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ]
+       fhir:max [ fhir:v "1" ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUITaskTransport" ] ;
+         fhir:map [ fhir:v "dureeTheoriqueTrajet" ]
+       ] )
      ] [
        fhir:id [ fhir:v "Task.input:dureeTheorique.type" ] ;
        fhir:path [ fhir:v "Task.input.type" ] ;
