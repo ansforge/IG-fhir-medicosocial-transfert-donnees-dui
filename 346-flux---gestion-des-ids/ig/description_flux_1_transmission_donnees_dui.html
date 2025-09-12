@@ -224,6 +224,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul id="markdown-toc">
   <li><a href="#flux-11---transmission-de-données-dui" id="markdown-toc-flux-11---transmission-de-données-dui">Flux 1.1 - Transmission de données DUI</a></li>
   <li><a href="#flux-12-resultat-de-la-transmission-de-données-dui" id="markdown-toc-flux-12-resultat-de-la-transmission-de-données-dui">Flux 1.2 Resultat de la transmission de données DUI</a></li>
+  <li><a href="#gestion-des-identifiants-dans-le-bundle" id="markdown-toc-gestion-des-identifiants-dans-le-bundle">Gestion des identifiants dans le Bundle</a></li>
 </ul>
 
 </div>
@@ -247,19 +248,27 @@ Les ressources utilisables sont conformes aux profils :</p>
   <li><a href="StructureDefinition-tddui-organization.html">TDDUIOrganization</a> représentant une entité juridique</li>
 </ul>
 
-<p>Pour faire le lien entre l'usager, son séjour et sa structure au niveau des références de la ressource Encounter, le Producteur peut utiliser différents éléments (<a href="https://build.fhir.org/bundle.html#references">voir la spécification FHIR</a>)</p>
-
 <p>Pour toutes ces ressources, seule la création est possible via l'intéraction FHIR <a href="https://hl7.org/fhir/R4/http.html#create">Create</a>.</p>
 
 <h3 id="flux-12-resultat-de-la-transmission-de-données-dui">Flux 1.2 Resultat de la transmission de données DUI</h3>
 
 <p>Si la création des ressources contenue dans le Bundle est correctement effectuée, le Consommateur doit retourner un code HTTP 200 OK avec, dans le corps de la réponse, une ressource « Bundle » de type « transaction-response ».
-Le Bundle contient une entrée pour chaque ressource reçue dans le Bundle de la requête. Chaque entrée contient le statut de l’opération (201 Created) ainsi que les attributs mis à jour « id » et « versionId».</p>
-
-<p>Le producteur doit connaitre ces nouveaux id pour les utiliser dans les opérations suivantes.</p>
+Le Bundle contient une entrée pour chaque ressource reçue dans le Bundle de la requête. Chaque entrée contient le statut de l’opération (201 Created) ainsi que les attributs « id » et « versionId» mis à jour .</p>
 
 <p>En cas d’échec, le Consommateur doit répondre avec le code HTTPS approprié tel que défini par l’API REST FHIR <a href="http://hl7.org/fhir/R4/http.html">(Http - FHIR v4.0.1 (hl7.org))</a>. Une ressource OperationOutcome doit également y être associé pour véhiculer les messages d’erreurs détaillant la raison de l’erreur <a href="http://hl7.org/fhir/R4/operationoutcome.html">(OperationOutcome - FHIR v4.0.1 (hl7.org))</a>.
 Aucune des ressources envoyées ne seront créées et le bundle corrigé doit être ré-envoyé.</p>
+
+<h3 id="gestion-des-identifiants-dans-le-bundle">Gestion des identifiants dans le Bundle</h3>
+<p>Lorsque tout ces éléments transitent au sein du même Bundle il est possible et parfois nécessaire de faire le lien entre l'usager, son séjour et sa structure au niveau des références de la ressource Encounter. Le Producteur peut utiliser :</p>
+<ul>
+  <li>la valeur de entry.fullUrl (qui peut être une URN de type urn:uuid:[uuid] ou une URL absolue)(Ex https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/[id]) ;</li>
+  <li>une référence relative construite avec le type et l’identifiant de la ressource (ex. Patient/[id]).
+Dans tous les cas, la référence doit correspondre soit au fullUrl d’une autre entrée du Bundle, soit au couple resourceType/id de la ressource ciblée.</li>
+</ul>
+
+<p>Pour plus d'information (<a href="https://build.fhir.org/bundle.html#references">voir la spécification FHIR</a>)</p>
+
+<p>Une fois créé, les identifiants techniques sont ré-assignés par le Consommateur <a href="https://build.fhir.org/http.html#create">voir la spécification FHIR</a>. Il assure que tout les champs faisant référence à un identifiant technique soit mis à jour avec le nouvel id <a href="https://build.fhir.org/http.html#url-fixing">voir la spécification FHIR</a>.Le producteur doit connaitre ces nouveaux id pour les utiliser dans les opérations suivantes.</p>
 
 
 
@@ -301,7 +310,7 @@ Aucune des ressources envoyées ne seront créées et le bundle corrigé doit ê
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Aug 22, 2025 13:39+0000">2025-08-22</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Sep 12, 2025 07:58+0000">2025-09-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |

@@ -10,7 +10,7 @@
   "name" : "TDDUIEncounterSejour",
   "title" : "TDDUI Encounter Sejour",
   "status" : "active",
-  "date" : "2025-08-22T13:38:23+00:00",
+  "date" : "2025-09-12T07:57:25+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -257,7 +257,7 @@
         }],
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/languages"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/languages|4.0.1"
       }
     },
     {
@@ -927,7 +927,7 @@
         }],
         "strength" : "extensible",
         "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/identifier-type"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/identifier-type|4.0.1"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -1078,7 +1078,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Organization"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Organization|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1659,7 +1659,7 @@
         }],
         "strength" : "example",
         "description" : "The type of encounter.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/encounter-type"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/encounter-type|4.0.1"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -1710,7 +1710,7 @@
         }],
         "strength" : "example",
         "description" : "Broad categorization of the service that is to be provided.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/service-type"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/service-type|4.0.1"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -1840,7 +1840,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/EpisodeOfCare"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/EpisodeOfCare|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1884,7 +1884,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/ServiceRequest"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/ServiceRequest|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -2088,7 +2088,7 @@
         }],
         "strength" : "extensible",
         "description" : "Role of participant in encounter.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/encounter-participant-type"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/encounter-participant-type|4.0.1"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -2151,9 +2151,9 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Practitioner",
-        "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-        "http://hl7.org/fhir/StructureDefinition/RelatedPerson"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Practitioner|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/RelatedPerson|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -2196,7 +2196,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Appointment"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Appointment|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -2495,7 +2495,7 @@
         }],
         "strength" : "preferred",
         "description" : "Reason why the encounter takes place.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/encounter-reason"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/encounter-reason|4.0.1"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -2531,10 +2531,10 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Condition",
-        "http://hl7.org/fhir/StructureDefinition/Procedure",
-        "http://hl7.org/fhir/StructureDefinition/Observation",
-        "http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Condition|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/Procedure|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/Observation|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -2723,8 +2723,8 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Condition",
-        "http://hl7.org/fhir/StructureDefinition/Procedure"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Condition|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/Procedure|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -2785,7 +2785,7 @@
         }],
         "strength" : "preferred",
         "description" : "The type of diagnosis this condition represents.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/diagnosis-role"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/diagnosis-role|4.0.1"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -2837,7 +2837,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Account"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Account|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -3045,8 +3045,8 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Location",
-        "http://hl7.org/fhir/StructureDefinition/Organization"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Location|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/Organization|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -3095,7 +3095,7 @@
         }],
         "strength" : "preferred",
         "description" : "From where the patient was admitted.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/encounter-admit-source"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/encounter-admit-source|4.0.1"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -3183,7 +3183,7 @@
         }],
         "strength" : "example",
         "description" : "Medical, cultural or ethical food preferences to help with catering requirements.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/encounter-diet"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/encounter-diet|4.0.1"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -3226,7 +3226,7 @@
         }],
         "strength" : "preferred",
         "description" : "Special courtesies.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/encounter-special-courtesy"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/encounter-special-courtesy|4.0.1"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -3269,7 +3269,7 @@
         }],
         "strength" : "preferred",
         "description" : "Special arrangements.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/encounter-special-arrangements"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/encounter-special-arrangements|4.0.1"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -3294,8 +3294,8 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Location",
-        "http://hl7.org/fhir/StructureDefinition/Organization"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Location|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/Organization|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -3348,7 +3348,7 @@
         }],
         "strength" : "example",
         "description" : "Discharge Disposition.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/encounter-discharge-disposition"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/encounter-discharge-disposition|4.0.1"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -3516,7 +3516,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Location"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Location|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -3618,7 +3618,7 @@
         }],
         "strength" : "example",
         "description" : "Physical form of the location.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/location-physical-type"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/location-physical-type|4.0.1"
       }
     },
     {
@@ -3713,7 +3713,7 @@
           "valueBoolean" : true
         }],
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Encounter"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Encounter|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
