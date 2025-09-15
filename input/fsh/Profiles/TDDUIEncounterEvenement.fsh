@@ -73,6 +73,8 @@ Description: "Profil de la ressource Encounter permettant de regrouper les évè
 * extension[TDDUIMeal] ^short = "Repas du professionnel prévu dans le cadre de l'événement."
 
 * partOf only Reference(TDDUIEncounterSejour)
+* period.start 1..1
+* period.end 1..1
 
 Mapping:  ConceptMetier_TDDUIEncounterEvenement
 Source:   TDDUIEncounterEvenement
@@ -87,7 +89,7 @@ Title:    "Évènement"
 * serviceProvider -> "structureEnCharge"
 * participant.individual -> "Professionnel"
 * location -> "lieuEvenement"
-* extension[TDDUIRessourcesUsed] -> "typeRessourceUtilisee"
+* extension[TDDUIRessourcesUsed] -> "RessourceUtilisee"
 * extension[TDDUIRessourcesUsed].extension[TDDUIRessourceType] -> "typeRessourceUtilisee"
 * extension[TDDUIRessourcesUsed].extension[TDDUIMaterialDetail] -> "detailTypeRessourceUtilisee"
 * extension[TDDUIRessourcesUsed].extension[TDDUIFacilityResource] -> "detailTypeRessourceUtilisee"
