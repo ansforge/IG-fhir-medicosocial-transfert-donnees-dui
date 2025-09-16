@@ -24,7 +24,7 @@ Pour toutes ces ressources, seule la création est possible via l'intéraction F
 
 ### Flux 1.2 Resultat de la transmission de données DUI
 
-Si la création des ressources contenues dans le Bundle est correctement effectuée, le Consommateur doit retourner un code HTTP 200 OK avec, dans le corps de la réponse, une ressource « Bundle » de type « transaction-response ».
+Si la création des ressources contenues dans le Bundle est correctement effectuée, le Consommateur doit retourner un code HTTP 200 OK avec, dans le corps de la réponse, une ressource « Bundle » de type « transaction-response ». [Voir la spécification FHIR](https://hl7.org/fhir/R4/http.html#transaction-response).
 Le Bundle contient une entrée pour chaque ressource reçue dans le Bundle de la requête. Chaque entrée contient le statut de l’opération (201 Created) ainsi que les attributs mis à jour « id » et « versionId».
 
 En cas d’échec, le Consommateur doit répondre avec le code HTTPS approprié tel que défini par l’API REST FHIR [(Http - FHIR v4.0.1 (hl7.org))](http://hl7.org/fhir/R4/http.html). Une ressource OperationOutcome doit également y être associé pour véhiculer les messages d’erreurs détaillant la raison de l’erreur [(OperationOutcome - FHIR v4.0.1 (hl7.org))](http://hl7.org/fhir/R4/operationoutcome.html).
