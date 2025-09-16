@@ -37,4 +37,4 @@ Dans tous les cas, la référence doit correspondre soit au fullUrl d’une autr
   
 Pour plus d'information ([voir la spécification FHIR](https://build.fhir.org/bundle.html#references))
 
-Une fois créé, les identifiants techniques sont ré-assignés par le Consommateur [voir la spécification FHIR](https://build.fhir.org/http.html#create). Il assure que tout les champs faisant référence à un identifiant technique soit mis à jour avec le nouvel id [voir la spécification FHIR](https://build.fhir.org/http.html#url-fixing).Le producteur doit connaitre ces nouveaux id pour les utiliser dans les opérations suivantes.
+Une fois créé, les identifiants techniques sont ré-assignés par le Consommateur [voir la spécification FHIR](http://hl7.org/fhir/R4/http.html#create). Il assure que tout les champs faisant référence à un identifiant technique soit mis à jour avec le nouvel id [voir la spécification FHIR](https://build.fhir.org/http.html#url-fixing).Le producteur doit connaitre ces nouveaux id pour les utiliser dans les opérations suivantes.
