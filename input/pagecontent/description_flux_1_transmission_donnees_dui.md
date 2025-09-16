@@ -30,11 +30,11 @@ En cas d’échec, le Consommateur doit répondre avec le code HTTPS approprié 
 Aucune des ressources envoyées ne seront créées et le bundle corrigé doit être ré-envoyé.
 
 ### Gestion des identifiants dans le Bundle
-Lorsque tout ces éléments transitent au sein du même Bundle il est possible et parfois nécessaire de faire le lien entre l'usager, son séjour et sa structure au niveau des références de la ressource Encounter. Le Producteur peut utiliser : 
+ Lorsque plusieurs créations de ressource transitent au sein du même Bundle, il est possible et parfois nécessaire de faire le lien entre elles. Par exemple, référencer un usager et une structure au sein d'un séjour. Le Producteur peut utiliser :
 * la valeur de entry.fullUrl (qui peut être une URN de type urn:uuid:[uuid] ou une URL absolue)(Ex https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/[id]) ;
 * une référence relative construite avec le type et l’identifiant technique (attribut id) de la ressource (ex. Patient/[id]).
 Dans tous les cas, la référence doit correspondre soit au fullUrl d’une autre entrée du Bundle, soit au couple resourceType/id de la ressource ciblée.
   
 Pour plus d'information ([voir la spécification FHIR](https://build.fhir.org/bundle.html#references))
 
-Une fois créé, les identifiants techniques sont ré-assignés par le Consommateur [voir la spécification FHIR](http://hl7.org/fhir/R4/http.html#create). Il assure que tout les champs faisant référence à un identifiant technique soit mis à jour avec le nouvel id [voir la spécification FHIR](https://build.fhir.org/http.html#url-fixing).Le producteur doit connaitre ces nouveaux id pour les utiliser dans les opérations suivantes.
+Une fois les ressources reçues et validées, les identifiants techniques sont ré-assignés par le Consommateur [voir la spécification FHIR](http://hl7.org/fhir/R4/http.html#create). Il assure que tout les champs faisant référence à un identifiant technique soit mis à jour avec le nouvel id [voir la spécification FHIR](https://build.fhir.org/http.html#url-fixing).Le producteur doit connaitre ces nouveaux id pour les utiliser dans les opérations suivantes.
