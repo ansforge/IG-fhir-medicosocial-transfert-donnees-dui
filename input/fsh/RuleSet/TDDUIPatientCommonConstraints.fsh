@@ -1,5 +1,5 @@
 
-RuleSet: TDDUIPatientIdSlices
+RuleSet: TDDUIPatientCommonConstraints
 
 
 * identifier contains
@@ -12,3 +12,6 @@ RuleSet: TDDUIPatientIdSlices
 * identifier[InitialNumberMDPH].type = TDDUIIdentifier#PIN "Patient initial number"
 * identifier[InitialNumberMDPH].system 1..
 * identifier[InitialNumberMDPH].value 1..
+
+* name[usualName] 0..1
+* name only tddui-humanname

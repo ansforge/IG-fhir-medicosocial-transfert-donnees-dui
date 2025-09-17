@@ -42,7 +42,7 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
   <tr>
     <td>identifiantLocalUsagerESSMS : [0..1] Identifiant</td>
     <td>Identifiant local de l’usager au sein de la structure.<br>
-    Cet identifiant est obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature TRE_G08-TypeIdentifiantPersonne), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS) : 3+FINESS/identifiantLocalUsagerESSMS</td>
+    Cet identifiant est obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS) : 3+FINESS/identifiantLocalUsagerESSMS</td>
   </tr>
    <tr>
     <td>numeroIndividuInitial : [0..1] Identifiant</td>
@@ -85,7 +85,7 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
   <tr>
     <td>sexe : [0..1] Code</td>
     <td>Sexe de la personne physique.<br>
-    Jeu(x) de valeur(s) associé(s) : <a href="https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J143-AdministrativeGender-CISIS.html">JDV-J143-AdministrativeGender-CISIS</a><br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J143-AdministrativeGender-CISIS/FHIR/JDV-J143-AdministrativeGender-CISIS">JDV-J143-AdministrativeGender-CISIS</a><br>
     Cet attribut fait partie des traits INS. Il est obligatoire si l’identité INS est qualifiée.<br>
     Il est préconisé si le NIR ou l'identifiant local est véhiculé et que l'identité n'est pas qualifiée.
     </td>
@@ -93,7 +93,7 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
   <tr>
     <td>civilite : [0..1] Code</td>
     <td>Civilité de l’usager.<br>
-    Jeu(x) de valeur(s) associé(s) :  <a href="https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J245-Civilite-CISIS.html">JDV_J245-Civilite-CISIS</a></td>
+    Jeu(x) de valeur(s) associé(s) :  <a href="https://mos.esante.gouv.fr/NOS/JDV_J245-Civilite-CISIS/FHIR/JDV-J245-Civilite-CISIS">JDV_J245-Civilite-CISIS</a></td>
   </tr>
   <tr>
     <td>dateNaissance : [0..1] Date</td>
@@ -109,14 +109,14 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
   <tr>
     <td>CommuneNaissance : [0..1] Code</td>
     <td>Commune de naissance de l’usager. Code officiel géographique (COG) de la commune.<br>
-    Jeu(x) de valeur(s) associé(s) : <a href="https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J120-CommuneHistorisee.html">JDV_J120-CommuneHistorisee</a><br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J120-CommuneHistorisee/FHIR/JDV-J120-CommuneHistorisee">JDV_J120-CommuneHistorisee</a><br>
     Cet attribut fait partie des traits INS. Il est obligatoire si l’identité INS est qualifiée.<br>
     Il est préconisé si le NIR ou l'identifiant local est véhiculé et que l'identité n'est pas qualifiée.</td>
   </tr>
    <tr>
     <td>departementNaissance : [0..1] Code</td>
     <td>Département de naissance de la personne. Code officiel géographique (COG) du département.<br>
-    Jeu(x) de valeur(s) associé(s) : <a href="https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J258-Departement.html">JDV-J258-Departement</a></td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J258-Departement/FHIR/JDV-J258-Departement">JDV-J258-Departement</a></td>
   </tr>
   <tr>
     <td>paysNaissance : [0..1] Code</td>
@@ -138,12 +138,12 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
   <tr>
     <td>paysNationalite : [0..*] Code</td>
     <td>Pays de nationalité actuelle ou rattachement de la nationalité à un espace de pays conventionné.<br>
-    Nomenclature(s) associée(s) : <a href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R89-RegroupementPays.html">TRE_R89-RegroupementPays</a></td>
+    Nomenclature(s) associée(s) : <a href="https://mos.esante.gouv.fr/NOS/TRE_R89-RegroupementPays/FHIR/TRE-R89-RegroupementPays">TRE_R89-RegroupementPays</a></td>
   </tr>
   <tr>
     <td>langueParlee : [0..*] Code</td>
     <td>Langue parlée par l’usager. <br>
-    Jeu(x) de valeur(s) associé(s) : <a href="https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J115-Langue-ENREG.html">JDV_J115-Langue-ENREG</a></td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J115-Langue-ENREG/FHIR/JDV-J115-Langue-ENREG">JDV_J115-Langue-ENREG</a></td>
   </tr>
   <tr>
     <td>dateDeces : [0..1] DateHeure</td>
@@ -157,12 +157,12 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
   <tr>
     <td>communeDeces : [0..1] Code</td>
     <td>Commune de décès de l’usager. Code officiel géographique (COG) de la commune.<br>
-    Jeu(x) de valeur(s) associé(s) : <a href="https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J120-CommuneHistorisee.html">JDV-J120-CommuneHistorisee</a></td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J120-CommuneHistorisee/FHIR/JDV-J120-CommuneHistorisee">JDV-J120-CommuneHistorisee</a></td>
   </tr>
   <tr>
     <td>departementDeces : [0..1] Code</td>
     <td>Département de décès de l’usager. Code officiel géographique (COG) du département.<br>
-    Jeu(x) de valeur(s) associé(s) : <a href="https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J258-Departement.html">JDV-J258-Departement</a></td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J258-Departement/FHIR/JDV-J258-Departement">JDV-J258-Departement</a></td>
   </tr>
   <tr>
     <td>paysDeces : [0..1] Code</td>
@@ -259,7 +259,7 @@ Adresse de télécommunication à laquelle l’usager peut être contactée (té
   <tr>
     <td>canal : [0..1] Code</td>
     <td>Code spécifiant le canal ou la manière dont s'établit la communication (téléphone, e-mail, URL, etc.).<br>
-    Nomenclature(s) associée(s) : <a href="https://mos.esante.gouv.fr/NOS/TRE_R200-CanalCommunication/TRE_R200-CanalCommunication.pdf">TRE_R200-CanalCommunication</a></td>
+    Nomenclature(s) associée(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J225-CanalCommunication-ROR/FHIR/JDV-J225-CanalCommunication-ROR">JDV-J225-CanalCommunication-ROR</a></td>
   </tr>
   <tr>
     <td>adresseTelecom : [0..1] Texte</td>
@@ -599,7 +599,7 @@ Détails de la prestation.
   <tr>
     <td>temporaliteAccueil : [0..1] Code</td>
     <td>Fréquence d'accueil lors d'une prise en charge en ESSMS.<br>
-    Nomenclature(s) associée(s) : <a href="https://mos.esante.gouv.fr/NOS/TRE_R240-TemporaliteAccueil/TRE_R240-TemporaliteAccueil.pdf">TRE_R240-TemporaliteAccueil</a></td>
+    Nomenclature(s) associée(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J30-TemporaliteAccueil-ROR/FHIR/JDV-J30-TemporaliteAccueil-ROR">JDV_J30-TemporaliteAccueil-ROR</a></td>
   </tr>
   <tr>
     <td>precisionOrientation : [0..1] Code</td>
@@ -698,12 +698,12 @@ Personne physique qui agit comme point de contact auprès d'une autre personne o
   <tr>
     <td>civilite : [0..1] Code</td>
     <td>Civilité du contact.<br>
-    jeu(x) de valeur(s) associé(s) :  <a href="https://interop.esante.gouv.fr/ig/nos/ValueSet-JDV-J245-Civilite-CISIS.html">JDV_J245-Civilite-CISIS</a></td>
+    jeu(x) de valeur(s) associé(s) :  <a href="https://mos.esante.gouv.fr/NOS/JDV_J245-Civilite-CISIS/FHIR/JDV-J245-Civilite-CISIS">JDV_J245-Civilite-CISIS</a></td>
   </tr>
   <tr>
     <td>paysNationalite : [0..*] Code</td>
     <td>Pays de nationalité de la personne contact, actuelle ou rattachement de la nationalité à un espace de pays conventionné<br>
-    Nomenclature(s) associée(s) : <a href="https://mos.esante.gouv.fr/NOS/TRE_R20-Pays/TRE_R20-Pays.pdf">TRE_R20-Pays</a></td>
+    Nomenclature(s) associée(s) : Norme ISO 3166</td>
   </tr>
   <tr>
     <td>profession : [0..1] Texte</td>
@@ -729,19 +729,19 @@ Personne physique qui agit comme point de contact auprès d'une autre personne o
   <tr>
     <td>role : [0..1] Code</td>
     <td>Rôle de la personne point de contact auprès d'une autre personne. Exemple dans le cas d'un patient, ce rôle indique si le point de contact est la personne à prévenir en cas d'urgence, la personne de confiance, etc.<br>
-    Nomenclature(s) associée(s) : <a href="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/TRE_R260-HL7RoleClass.pdf">TRE_R260-HL7RoleClass</a></td>
+    Nomenclature(s) associée(s) : <a href="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass">TRE_R260-HL7RoleClass</a></td>
   </tr>
   <tr>
     <td>relation : [0..1] Code</td>
     <td>Lien de la personne point de contact auprès d'une autre personne. Exemple dans le cas d'un patient, ce lien indique si le point de contact est son enfant, son frère, etc.<br>
     Nomenclature(s) associée(s) : <br>
-    <a href="https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/TRE_R216-HL7RoleCode.pdf">TRE_R216-HL7RoleCode</a><br>
-    <a href="https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/TRE_R217-ProtectionJuridique.pdf">TRE_R217-ProtectionJuridique</a></td>
+    <a href="https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode">TRE_R216-HL7RoleCode</a><br>
+    <a href="https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique">TRE_R217-ProtectionJuridique</a></td>
   </tr>
   <tr>
     <td>fonction : [0..1] Code</td>
     <td>Un titre, une position ou une fonction de la personne assurant le contact au sein de son organisation (directeur, secrétaire, etc.).
-    <a href="https://mos.esante.gouv.fr/NOS/TRE_R251-FonctionContact/TRE_R251-FonctionContact.pdf">TRE_R251-FonctionContact</a></td>
+    <a href="https://mos.esante.gouv.fr/NOS/TRE_R251-FonctionContact/FHIR/TRE-R251-FonctionContact">TRE_R251-FonctionContact</a></td>
   </tr>
   <tr>
     <td>ordreAppel : [0..1] Numérique</td>
@@ -789,7 +789,7 @@ Personne morale qui agit comme point de contact auprès d'une autre personne ou 
   <tr>
     <td>role : [0..1] Code</td>
     <td>Rôle de la personne point de contact auprès d'une autre personne. Exemple dans le cas d'un patient, ce rôle indique si le point de contact est la personne à prévenir en cas d'urgence, la personne de confiance, etc.<br>
-    Nomenclature(s) associée(s) : <a href="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/TRE_R260-HL7RoleClass.pdf">TRE_R260-HL7RoleClass</a></td>
+    Nomenclature(s) associée(s) : <a href="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass">TRE_R260-HL7RoleClass</a></td>
   </tr>
   <tr>
     <td>ordreAppel : [0..1] Numérique</td>
@@ -1030,7 +1030,7 @@ La classe EntiteJuridique est définie dans le MOS et est profilée pour ce vole
   </tr>
   <tr>
     <td>idSejour : [1..1] Identifiant</td>
-    <td>Cet identifiant est obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature TRE_G08-TypeIdentifiantPersonne), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de six caractères "SEJOUR" et numéro de dossier administratif du séjour dans le DUI (numeroDossier) : <br>idSejour = 3+FINESS/identifiantLocalUsagerESSMS-SEJOUR-numeroDossier</td>
+    <td>Cet identifiant est obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de six caractères "SEJOUR" et numéro de dossier administratif du séjour dans le DUI (numeroDossier) : <br>idSejour = 3+FINESS/identifiantLocalUsagerESSMS-SEJOUR-numeroDossier</td>
   </tr>
    <tr>
     <td>ESSMS : [1..1] EntiteJuridique</td>
@@ -1198,7 +1198,7 @@ Résultat de l'évaluation globale d'un usager.
   </tr>
   <tr>
     <td>idEvaluation : Identifiant [1..1]</td>
-    <td>Identifiant technique de l’évaluation obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature TRE_G08-TypeIdentifiantPersonne), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "EVAL" et du numéro de l’évaluation dans le DUI (numEvaluation) : <br>idEvaluation = 3+FINESS/identifiantLocalUsagerESSMS-EVAL-numEvaluation</td>
+    <td>Identifiant technique de l’évaluation obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "EVAL" et du numéro de l’évaluation dans le DUI (numEvaluation) : <br>idEvaluation = 3+FINESS/identifiantLocalUsagerESSMS-EVAL-numEvaluation</td>
   </tr>
    <tr>
     <td>typeEvaluation : [1..1] Code</td>
@@ -1251,7 +1251,7 @@ Ce niveau permet d'associer à un champ évalué de la classe "DetailEvaluation"
     - Evaluation AGGIR PA SSIAD : JDV_EvaluationAGGIRPA_CISIS avec l'OID 1.2.250.1.213.1.1.5.806 publié sur <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a><br>
     - Evaluation de la situation SSIAD : JDV_EvaluationSSIAD_CISIS avec l'OID 1.2.250.1.213.1.1.5.804
     publié sur <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a><br>
-    - Evaluation Serafin : Jeu de valeur issue de la terminologie Serafin correspondant à la famille 1-Besoin. Jeu(x) de valeur(s) associé(s) : <a href="https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J285-Besoins-SERAFIN.html">JDV-J285-Besoins_SERAFIN</a>
+    - Evaluation Serafin : Jeu de valeur issue de la terminologie Serafin correspondant à la famille 1-Besoin. Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J285-Besoins_SERAFIN/FHIR/JDV-J285-Besoins-SERAFIN">JDV-J285-Besoins_SERAFIN</a>
     </td>
   </tr>
   <tr>
@@ -1343,7 +1343,7 @@ Les classes EntiteJuridique, Lieu et Professionnel sont issues du MOS et sont pr
   </tr>
   <tr>
     <td>idEvenement : [1..1] Identifiant</td>
-    <td>Identifiant technique de l’évènement obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature TRE_G08-TypeIdentifiantPersonne), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de trois caractères "EVN" et du numéro de l’évènement dans le DUI (numEvenement) :<br> idEvenement = 3+FINESS/identifiantLocalUsagerESSMS-EVN-numEvenement</td>
+    <td>Identifiant technique de l’évènement obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de trois caractères "EVN" et du numéro de l’évènement dans le DUI (numEvenement) :<br> idEvenement = 3+FINESS/identifiantLocalUsagerESSMS-EVN-numEvenement</td>
   </tr>
    <tr>
     <td>typeEvenement : [0..*] Code ou Texte</td>
@@ -1351,12 +1351,12 @@ Les classes EntiteJuridique, Lieu et Professionnel sont issues du MOS et sont pr
     Cas d’usage SSIAD : le type de l'évènement est issu <br>
     <ul>
         - d'un code issu du jeu de valeur associé : JDV_TypeEvenementSSIAD_CISIS avec l'OID 1.2.250.1.213.1.1.5.811 publié sur <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a><br>
-        - peut contenir un code issu de la terminologie Serafin correspondant aux familles 2-PrestationDirecte et 3-PrestationIndirecte.  Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J284-PrestationsDirects_SERAFIN/FHIR/JDV-J284-PrestationsDirects-SERAFIN/">JDV-J284-PrestationsDirects_SERAFIN</a>, <a href="https://mos.esante.gouv.fr/NOS/JDV_J283-PrestationsIndirects-SERAFIN/FHIR/JDV-J283-PrestationsIndirects-SERAFIN/">JDV-J283-PrestationsIndirects_SERAFIN</a><br>
+        - peut contenir un code issu de la terminologie Serafin correspondant aux familles 2-PrestationDirecte et 3-PrestationIndirecte.  Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J284-PrestationsDirects_SERAFIN/FHIR/JDV-J284-PrestationsDirects-SERAFIN/">JDV-J284-PrestationsDirects_SERAFIN</a>, <a href="https://mos.esante.gouv.fr/NOS/JDV_J283-PrestationsIndirects_SERAFIN/FHIR/JDV-J283-PrestationsIndirects-SERAFIN">JDV-J283-PrestationsIndirects_SERAFIN</a><br>
         - peut contenir un texte non structuré véhiculant les autres types d’évènements.<br>
         </ul>
     Autre cas d'usage : le type de l'évènement est issu<br>
     <ul>
-      - du jeu de valeur issue de la terminologie Serafin correspondant aux familles 2-PrestationDirecte et 3-PrestationIndirecte. Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J284-PrestationsDirects_SERAFIN/FHIR/JDV-J284-PrestationsDirects-SERAFIN/">JDV-J284-PrestationsDirects_SERAFIN</a>, <a href="https://mos.esante.gouv.fr/NOS/JDV_J283-PrestationsIndirects-SERAFIN/FHIR/JDV-J283-PrestationsIndirects-SERAFIN/">JDV_J283-PrestationsIndirects_SERAFIN</a><br>
+      - du jeu de valeur issue de la terminologie Serafin correspondant aux familles 2-PrestationDirecte et 3-PrestationIndirecte. Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J284-PrestationsDirects_SERAFIN/FHIR/JDV-J284-PrestationsDirects-SERAFIN/">JDV-J284-PrestationsDirects_SERAFIN</a>, <a href="https://mos.esante.gouv.fr/NOS/JDV_J283-PrestationsIndirects_SERAFIN/FHIR/JDV-J283-PrestationsIndirects-SERAFIN">JDV_J283-PrestationsIndirects_SERAFIN</a><br>
       - et/ou d’un texte non structuré véhiculant les autres types d’évènements.
       </ul>
     </td>
@@ -1499,7 +1499,7 @@ Classe générique socle décrivant le transport d’une personne physique (prof
 
 Cette classe regroupe les items pouvant caractériser le transport du professionnel lors de l'évènement.
 
-L'identifiant technique du transport est obtenu dans ce contexte par par la concaténation du type d'identifiant national de personne (provenant de la nomenclature TRE_G08-TypeIdentifiantPersonne), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de cinq caractères "TPPro" et du numéro de transport du professionnel dans le DUI (idTransport) :<br> idTrajet = 3+FINESS/identifiantLocalUsagerESSMS-TPPro-idTransport
+L'identifiant technique du transport est obtenu dans ce contexte par par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de cinq caractères "TPPro" et du numéro de transport du professionnel dans le DUI (idTransport) :<br> idTrajet = 3+FINESS/identifiantLocalUsagerESSMS-TPPro-idTransport
 
 ##### Classe TransportUsager
 
@@ -1507,7 +1507,7 @@ L'identifiant technique du transport est obtenu dans ce contexte par par la conc
 
 Cette classe regroupe les items pouvant caractériser le transport de l'usager lors de l'évènement.
 
-L'identifiant technique du transport est obtenu dans ce contexte par par la concaténation du type d'identifiant national de personne (provenant de la nomenclature TRE_G08-TypeIdentifiantPersonne), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de cinq caractères "TPPat" et du numéro de transport de l'usager dans le DUI (idTransport) :<br> idTrajet = 3+FINESS/identifiantLocalUsagerESSMS-TPPat-idTransport
+L'identifiant technique du transport est obtenu dans ce contexte par par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de cinq caractères "TPPat" et du numéro de transport de l'usager dans le DUI (idTransport) :<br> idTrajet = 3+FINESS/identifiantLocalUsagerESSMS-TPPat-idTransport
 
 <table style="width:100%">
   <tr>
@@ -1526,7 +1526,7 @@ L'identifiant technique du transport est obtenu dans ce contexte par par la conc
     <td>natureTransport : [0..1] Code</td>
     <td>Nature du transport de l'usager.<br>
     Jeu de valeur issue de la terminologie Serafin correspondant aux familles (3.2.4.1, 3.2.4.2, 3.2.4.3).<br>
-    Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J282-TransportsLiesAuProjetIndividuel_SERAFIN/JDV_J282-TransportsLiesAuProjetIndividuel_SERAFIN.pdf">JDV_J282-TransportsLiesAuProjetIndividuel_SERAFIN</a>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J282-TransportsLiesAuProjetIndividuel_SERAFIN/FHIR/JDV-J282-TransportsLiesAuProjetIndividuel-SERAFIN">JDV_J282-TransportsLiesAuProjetIndividuel_SERAFIN</a>
     </td>
   </tr>
 </table>
@@ -1544,12 +1544,12 @@ Données d'identification pérennes d’une personne physique, qui travaille en 
   </tr>
   <tr>
     <td>idNat_PS : [1..1] Identifiant</td>
-    <td>Identification nationale principale du professionnel. Cette identification est obtenue par la concaténation du type d'identifiant national de personne (provenant de la nomenclature TRE_G08-TypeIdentifiantPersonne) et de l'identifiant de la personne physique. Voir la description complète de idNat_PS dans le MOS.</td>
+    <td>Identification nationale principale du professionnel. Cette identification est obtenue par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>) et de l'identifiant de la personne physique. Voir la description complète de idNat_PS dans le MOS.</td>
   </tr>
    <tr>
     <td>civilite : [0..1] Code</td>
     <td>Civilité de la personne. <br>
-    Jeu(x) de valeur(s) associé(s) :  <a href="https://mos.esante.gouv.fr/NOS/JDV_J245-Civilite-CISIS/JDV_J245-Civilite-CISIS.pdf">JDV_J245-Civilite-CISIS</a>
+    Jeu(x) de valeur(s) associé(s) :  <a href="https://mos.esante.gouv.fr/NOS/JDV_J245-Civilite-CISIS/FHIR/JDV-J245-Civilite-CISIS">JDV_J245-Civilite-CISIS</a>
     </td>
   </tr>
    <tr>
@@ -1563,19 +1563,19 @@ Données d'identification pérennes d’une personne physique, qui travaille en 
    <tr>
     <td>profession : [0..1] Code</td>
     <td>Profession / Spécialité du professionnel. <br>
-    Jeu(x) de valeur(s) associé(s) :  <a href="https://mos.esante.gouv.fr/NOS/JDV_J01-XdsAuthorSpecialty-CISIS/JDV_J01-XdsAuthorSpecialty-CISIS.pdf">JDV_J01-XdsAuthorSpecialty-CISIS</a>
+    Jeu(x) de valeur(s) associé(s) :  <a href="https://mos.esante.gouv.fr/NOS/JDV_J01-XdsAuthorSpecialty-CISIS/FHIR/JDV-J01-XdsAuthorSpecialty-CISIS">JDV_J01-XdsAuthorSpecialty-CISIS</a>
     </td>
   </tr>
   <tr>
     <td>role : [0..1] Code</td>
     <td>Rôle fonctionnel du professionnel. <br>
-    Jeu(x) de valeur(s) associé(s) :  <a href="https://mos.esante.gouv.fr/NOS/JDV_J47-FunctionCode-CISIS/JDV_J47-FunctionCode-CISIS.pdf">JDV-J47-FunctionCode-CISIS</a>
+    Jeu(x) de valeur(s) associé(s) :  <a href="https://mos.esante.gouv.fr/NOS/JDV_J47-FunctionCode-CISIS/FHIR/JDV-J47-FunctionCode-CISIS">JDV-J47-FunctionCode-CISIS</a>
     </td>
   </tr>
   <tr>
     <td>modeExercice : [0..1] Code</td>
     <td>Mode d'exercice du professionnel. Décrit selon quelle modalité est exercée l'activité du professionnel par rapport à son établissement de rattachement.<br>
-    Jeu(x) de valeur(s) associé(s) :  <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J117-ModeExercice-ENREG.html">JDV-J117-ModeExercice-ENREG</a>
+    Jeu(x) de valeur(s) associé(s) :  <a href="https://mos.esante.gouv.fr/NOS/JDV_J117-ModeExercice-ENREG/FHIR/JDV-J117-ModeExercice-ENREG">JDV-J117-ModeExercice-ENREG</a>
     </td>
   </tr>
   <tr>
@@ -1597,7 +1597,7 @@ Pour ce volet l'Entité Juridique est une personne morale inscrite dans le FINES
   </tr>
   <tr>
     <td>idNat_Struct : [1..1] Identifiant</td>
-    <td>Identification nationale de l'Entité juridique. Cette identification est obtenue par la concaténation du type d'identifiant national de structure (provenant de la nomenclature <a href="https://interop.esante.gouv.fr/ig/nos/CodeSystem-TRE-G07-TypeIdentifiantStructure.html">TRE_G07-TypeIdentifiantStructure</a>) et de l'identifiant de la structure: ** 1 + N° FINESS.</td>
+    <td>Identification nationale de l'Entité juridique. Cette identification est obtenue par la concaténation du type d'identifiant national de structure (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G07-TypeIdentifiantStructure/FHIR/TRE-G07-TypeIdentifiantStructure">TRE_G07-TypeIdentifiantStructure</a>) et de l'identifiant de la structure: ** 1 + N° FINESS.</td>
   </tr>
  <tr>
     <td>raisonSociale : [0..1] Texte</td>
@@ -1648,7 +1648,9 @@ Cette classe décrit le statut des ressources (Evenement, Evaluation).
   <tr>
     <td>statut : [1..1] Code</td>
     <td>Statut de la ressource impactée. <br>
-    Jeu(x) de valeur(s) associé(s) :  <a href="https://mos.esante.gouv.fr/NOS/JDV_J281-StatutsRessourcesMS/JDV_J281-StatutsRessourcesMS.pdf">JDV_J281-StatutsRessourcesMS</a>
+    Jeu(x) de valeur(s) associé(s) :  <a href="https://mos.esante.gouv.fr/NOS/JDV_J281-StatutsRessourcesMS/FHIR/JDV-J281-StatutsRessourcesMS">JDV_J281-StatutsRessourcesMS</a><br>
+    - Pour l'Evaluation seuls les codes suivants sont à utiliser : APPROUVE, VALIDE, TERMINE <br>
+    - Pour l'Evènement seuls les codes suivants sont à utiliser : PLANIFIE, VALIDE, REALISE, ANNULE
     </td>
   </tr>
   <tr>
