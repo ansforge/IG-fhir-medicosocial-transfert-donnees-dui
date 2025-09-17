@@ -1,9 +1,9 @@
 TDDUI : Validation Results
 =========================================
 
-err = 8, warn = 61, info = 30
+err = 8, warn = 63, info = 32
 IG Publisher Version: 2.0.17
-Generated Mon Sep 15 07:10:32 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.tddui#2.0.0-ballot (canonical = https://interop.esante.gouv.fr/ig/fhir/tddui)
+Generated Wed Sep 17 15:40:50 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.tddui#2.0.0-ballot (canonical = https://interop.esante.gouv.fr/ig/fhir/tddui)
  Build Errors : 1 / 3 / 0
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Bundle-ExampleTDDUIBundle : 0 / 6 / 15
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CapabilityStatement-TDDUIConsommateur : 0 / 1 / 1
@@ -18,7 +18,7 @@ Generated Mon Sep 15 07:10:32 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.tddui
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Organization-tddui-organization-example : 0 / 1 / 2
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Patient-tddui-patient-example : 0 / 1 / 3
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Patient-tddui-patient-ins-example : 0 / 1 / 4
- /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Practitioner-tddui-practitioner-example : 0 / 1 / 2
+ /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Practitioner-tddui-practitioner-example : 0 / 3 / 4
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/PractitionerRole-tddui-practitioner-role-example : 0 / 0 / 2
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-admission-date : 0 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-attachment : 0 / 1 / 1
@@ -98,8 +98,12 @@ INFORMATION: Patient/tddui-patient-ins-example: Patient.extension[0].extension[0
 WARNING: Patient/tddui-patient-ins-example: Patient.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.250.1.213.1.4.8'
 INFORMATION: Patient/tddui-patient-ins-example: Patient.name[0].extension[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 == fsh-generated/resources/Practitioner-tddui-practitioner-example.json ==
+INFORMATION: Practitioner/tddui-practitioner-example: Practitioner.qualification[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Practitioner/tddui-practitioner-example: Practitioner.qualification[1]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Practitioner/tddui-practitioner-example: Practitioner.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 WARNING: Practitioner/tddui-practitioner-example: Practitioner.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.250.1.71.4.2.1'
+WARNING: Practitioner/tddui-practitioner-example: Practitioner.qualification[0].code.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Practitioner/tddui-practitioner-example: Practitioner.qualification[1].code.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 == fsh-generated/resources/PractitionerRole-tddui-practitioner-role-example.json ==
 INFORMATION: PractitionerRole/tddui-practitioner-role-example: PractitionerRole.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 == fsh-generated/resources/StructureDefinition-tddui-admission-date.json ==
