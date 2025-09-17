@@ -4,7 +4,7 @@ Id: tddui-patient
 Title: "TDDUI Patient"
 Description: "Profil de la ressource FrCorePatientProfile permettant de représenter un usager lorsque l'INS n'est pas transmis."
 
-* insert TDDUIPatientIdSlices
+* insert TDDUIPatientCommonConstraints
 * birthDate.extension contains
     TDDUIBirthOrder named tddui-birth-order 1..1
 
@@ -14,8 +14,6 @@ Description: "Profil de la ressource FrCorePatientProfile permettant de représe
 * gender ^short = "male | female | unknown"
 
 * name[officialName] 1..1
-* name[usualName] 0..1
-* name only tddui-humanname
 
 Mapping:  ConceptMetier_TDDUIPatient
 Source:   TDDUIPatient

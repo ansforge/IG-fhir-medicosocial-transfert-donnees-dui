@@ -74,8 +74,7 @@ Les spécifications d'interopérabilité présentées dans ce volet ne présagen
 
 Les données véhiculées dans ce volet ainsi que les interactions entre les systèmes reposent sur le standard HL7 FHIR Release 4.
 
-Les interactions font référence à un certain nombre de ressources du standard ainsi qu’aux spécifications de l’API REST FHIR, basées sur le protocole HTTP. Les syntaxes retenues sont la syntaxe XML et JSON.
-
+Les interactions font référence à un certain nombre de ressources du standard ainsi qu’aux spécifications de l’API REST FHIR, basées sur le protocole HTTP dans sa version sécurisée HTTPS. Les syntaxes retenues sont la syntaxe XML et JSON.
 #### Ressources FHIR profilées
 
 Les ressources profilées dans le cadre de ce guide d'implémentation sont les suivantes : 
@@ -96,6 +95,7 @@ Les flux décrits dans ce guide d'implémentation sont les suivants.
 | ----- | ----- | ----- |
 | <a href="description_flux_1_transmission_donnees_dui.html">Flux 1 : Transmission de données DUI</a> | Logiciel DUI | SI tiers |
 
+Les flux présentés dans cette spécification doivent utiliser HTTPS.
 Pour en savoir davantage, rendez-vous sur la page <a href="description_flux_synthese.html">Synthèse des flux</a>.
 
 ### Dépendances
