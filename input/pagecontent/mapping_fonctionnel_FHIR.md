@@ -14,3 +14,18 @@ Ce mapping représente les données fonctionnelles trouvant leur équivalence da
 ### Mapping Sejour & EntiteJuridique
 
 <div>{%include mapping_TDDUIEncounterSejour.svg%}</div>
+
+### Mapping Professionnel
+
+<div>{%include TDDUIPractitioner.svg%}</div>
+<div>{%include TDDUIPractitionerRole.svg%}</div>
+
+### Mapping Evènement
+
+<div>{%include mapping_TDDUIEncounterEvenement.svg%}</div>
+
+### Mapping Transport
+
+<div>{%include TDDUITaskTransport.svg%}</div>
+<div>{%include TDDUITaskTransportProfessionnel.svg%}</div>
+<div>{%include TDDUITaskTransportUsager.svg%}</div>

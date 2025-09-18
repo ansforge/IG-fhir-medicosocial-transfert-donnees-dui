@@ -1,0 +1,18 @@
+@startuml
+
+map "rôle : code" as rôle #DarkGray {
+    profession => <&plus> tddui-profession
+}
+
+object "**TDDUIOrganization**" as TDDUIOrganization #bebada {
+    etablissementDeRattachement
+}
+
+map "**Professionnel : TDDUIPractitionerRole**" as Professionnel #b3de69 {
+    rôle => code
+}
+
+Professionnel::rle -u-> rôle
+Professionnel -d-> TDDUIOrganization : organization
+
+@enduml
