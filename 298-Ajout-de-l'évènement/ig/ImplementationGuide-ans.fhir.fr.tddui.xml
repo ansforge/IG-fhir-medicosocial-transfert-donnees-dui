@@ -10,7 +10,7 @@
   <name value="TDDUI"/>
   <title value="Médicosocial - Transfert de données DUI"/>
   <status value="active"/>
-  <date value="2025-09-18T09:40:01+00:00"/>
+  <date value="2025-09-18T12:48:58+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -873,11 +873,33 @@
         <valueString value="Task"/>
       </extension>
       <reference>
+        <reference value="Task/tddui-task-transport-example"/>
+      </reference>
+      <name value="tddui-task-transport-example"/>
+      <description value="Exemple du transport."/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
         <reference value="Task/tddui-task-transport-professionel-example"/>
       </reference>
       <name value="tddui-task-transport-professionel-example"/>
       <description value="Exemple du transport du professionnel."/>
       <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/tddui-task-transport-usager-example"/>
+      </reference>
+      <name value="tddui-task-transport-usager-example"/>
+      <description value="Exemple du transport de l'usager."/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

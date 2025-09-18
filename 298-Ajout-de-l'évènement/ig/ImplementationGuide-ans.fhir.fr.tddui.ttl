@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "TDDUI"] ; # 
   fhir:title [ fhir:v "Médicosocial - Transfert de données DUI"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-09-18T09:40:01+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-09-18T12:48:58+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -1529,6 +1529,25 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Task/tddui-task-transport-example> ;
+         fhir:reference [ fhir:v "Task/tddui-task-transport-example" ]
+       ] ;
+       fhir:name [ fhir:v "tddui-task-transport-example" ] ;
+       fhir:description [ fhir:v "Exemple du transport." ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport"^^xsd:anyURI ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Task"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Task/tddui-task-transport-professionel-example> ;
          fhir:reference [ fhir:v "Task/tddui-task-transport-professionel-example" ]
        ] ;
@@ -1538,6 +1557,25 @@
          a fhir:canonical ;
          fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel"^^xsd:anyURI ;
          fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Task"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Task/tddui-task-transport-usager-example> ;
+         fhir:reference [ fhir:v "Task/tddui-task-transport-usager-example" ]
+       ] ;
+       fhir:name [ fhir:v "tddui-task-transport-usager-example" ] ;
+       fhir:description [ fhir:v "Exemple du transport de l'usager." ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager"^^xsd:anyURI ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager>
        ]
      ] [
        fhir:extension ( [
