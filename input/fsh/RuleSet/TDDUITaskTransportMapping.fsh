@@ -4,7 +4,7 @@ RuleSet: TDDUITaskTransportMapping
 * code -> "typeTransport"
 * owner -> "transporteur"
 * executionPeriod.start -> "dateDebutTransport"
-* executionPeriod.end -> "dateDebutTransport"
+* executionPeriod.end -> "dateFinTransport"
 * encounter -> "Evenement"
 * input[typeMotorisation] -> "typeMotorisation"
 * input[adresseDepart] -> "adresseDepart"
