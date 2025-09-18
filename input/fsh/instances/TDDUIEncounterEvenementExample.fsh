@@ -15,7 +15,7 @@ Description: "Exemple d'un évènement"
 * type[ssiad].coding.system = "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis"
 * type[ssiad].coding.display = "Intervention d'un infirmer salarié"
 
-* type[text].text = "Type d'évènement non codé"
+* type[text].text = "Intervention"
 
 * subject = Reference(tddui-patient-ins-example)
 
