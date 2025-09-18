@@ -1,0 +1,65 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "c7c9fe6c-3593-43da-bded-8a4e21ff6828",
+  "meta" : {
+    "lastUpdated" : "2025-09-18T15:29:20.807+00:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-serafin-valueset",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion performed internally based on:</p><ul><li><a href=\"https://interop.esante.gouv.fr/terminologies/1.2.0/CodeSystem-terminologie-SERAFINPH.html\">codesystem Nomenclature des besoins et des prestations v2023.1.0 (CodeSystem)</a></li><li><a href=\"https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-JDV-J283-PrestationsIndirects-SERAFIN.html\">valueset JDV_J283_PrestationsIndirects_SERAFIN v20241025120000 (ValueSet)</a></li><li><a href=\"https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-JDV-J284-PrestationsDirects-SERAFIN.html\">valueset JDV_J284_PrestationsDirects_SERAFIN v20241025120000 (ValueSet)</a></li></ul></div><p>Ce jeu de valeur (ValueSet) contient 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Système</b></td><td><b>Display</b></td></tr></table></div>"
+      },
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-serafin-valueset",
+      "version" : "2.0.0-ballot",
+      "name" : "TDDUISerafinValueSet",
+      "title" : "TDDUI SERAFIN ValueSet",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-09-18T15:28:27+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "FR",
+          "display" : "FRANCE"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:341e7138-c49f-4984-ae3c-b7582c808850",
+        "timestamp" : "2025-09-18T15:30:08+00:00",
+        "total" : 0,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "https://mos.esante.gouv.fr/NOS/JDV_J283-PrestationsIndirects_SERAFIN/FHIR/JDV-J283-PrestationsIndirects-SERAFIN|20241025120000"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://smt.esante.gouv.fr/terminologie-SERAFINPH|2023.1.0"
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "https://mos.esante.gouv.fr/NOS/JDV_J284-PrestationsDirects_SERAFIN/FHIR/JDV-J284-PrestationsDirects-SERAFIN|20241025120000"
+        }]
+      }
+    }
+  }]
+}
