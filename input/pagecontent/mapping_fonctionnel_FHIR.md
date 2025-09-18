@@ -17,8 +17,8 @@ Ce mapping représente les données fonctionnelles trouvant leur équivalence da
 
 ### Mapping Professionnel
 
-<div>{%include TDDUIPractitioner.svg%}</div>
-<div>{%include TDDUIPractitionerRole.svg%}</div>
+<div>{%include mapping_TDDUIPractitioner.svg%}</div>
+<div>{%include mapping_TDDUIPractitionerRole.svg%}</div>
 
 ### Mapping Evènement
 
@@ -26,6 +26,6 @@ Ce mapping représente les données fonctionnelles trouvant leur équivalence da
 
 ### Mapping Transport
 
-<div>{%include TDDUITaskTransport.svg%}</div>
-<div>{%include TDDUITaskTransportProfessionnel.svg%}</div>
-<div>{%include TDDUITaskTransportUsager.svg%}</div>
+<div>{%include mapping_TDDUITaskTransport.svg%}</div>
+<div>{%include mapping_TDDUITaskTransportProfessionnel.svg%}</div>
+<div>{%include mapping_TDDUITaskTransportUsager.svg%}</div>
