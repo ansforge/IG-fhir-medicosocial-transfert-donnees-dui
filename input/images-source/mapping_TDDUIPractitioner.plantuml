@@ -1,0 +1,15 @@
+@startuml
+
+map "name" as name #DarkGray {
+    nom => family
+    prenom => given
+    civilite => prefix
+}
+
+map "**Professionnel : TDDUIPractitioner**" as Professionnel #d9d9d9 {
+    idNat_PS => <&layers> identifier:idNatPs
+    name *-> name
+}
+
+
+@enduml

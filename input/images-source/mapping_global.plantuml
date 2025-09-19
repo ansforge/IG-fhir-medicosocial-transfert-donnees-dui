@@ -1,17 +1,44 @@
 @startuml
 
-'Declaration des éléments
-rectangle "Vue fonctionnelle DUI" {
+rectangle "Événement \n [[StructureDefinition-tddui-encounter-evenement.html TDDUIEncounterEvenement]]" as Événement #8dd3c7 
 
-    rectangle "Sejour \n [[StructureDefinition-tddui-encounter-sejour.html TDDUI Encounter Sejour]] " as Sejour #LightSkyBlue;line:Black;text:Black
+rectangle "Sejour \n [[StructureDefinition-tddui-encounter-sejour.html TDDUIEncounterSejour]]" as Sejour #ffffb3 
 
-    rectangle "Entité juridique \n [[StructureDefinition-tddui-organization.html TDDUI Organization]]" as EJ #Gold;line:Black;text:Black
+rectangle "EntiteJuridique \n [[StructureDefinition-tddui-organization.html TDDUIOrganization]]" as EntiteJuridique #bebada 
 
-    rectangle "Usager \n [[StructureDefinition-tddui-patient.html TDDUI Patient]] \n [[StructureDefinition-tddui-patient-ins.html TDDUI Patient INS]]" as Usager #LimeGreen;line:Black;text:Black
-}
+rectangle "UsagerINS \n [[StructureDefinition-tddui-patient-ins.html TDDUIPatientINS]]" as UsagerINS #80b1d3 
 
-'Liens entre éléments
-Usager "1"--"*" Sejour
-Sejour "1..*"--"1" EJ
+rectangle "Usager \n [[StructureDefinition-tddui-patient.html TDDUIPatient]]" as Usager #fdb462 
+
+rectangle "Professionnel \n [[StructureDefinition-tddui-practitioner-role.html TDDUIPractitionerRole]]" as Professionnel #b3de69 
+
+rectangle "Professionnel \n [[StructureDefinition-tddui-practitioner.html TDDUIPractitioner]]" as Professionnel #d9d9d9 
+
+rectangle "TransportProfessionnel \n [[StructureDefinition-tddui-task-transport-professionnel.html TDDUITaskTransportProfessionnel]]" as TransportProfessionnel #bc80bd 
+
+rectangle "Transport \n [[StructureDefinition-tddui-task-transport-professionnel.html TDDUITaskTransportProfessionnel]]" as Transport #bc80bd 
+
+rectangle "TransportUsager \n [[StructureDefinition-tddui-task-transport-usager.html TDDUITaskTransportUsager]]" as TransportUsager #ccebc5 
+
+rectangle "Transport \n [[StructureDefinition-tddui-task-transport-usager.html TDDUITaskTransportUsager]]" as Transport #ccebc5 
+
+rectangle "Transport \n [[StructureDefinition-tddui-task-transport.html TDDUITaskTransport]]" as Transport #ffed6f 
+
+Événement -- "1..1" Usager
+Événement -- "1..1" UsagerINS
+Événement -- "0..1" Professionnel
+Événement -- "0..1" EntiteJuridique
+Événement -- "0..1" Sejour
+Sejour -- "1..1" Usager
+Sejour -- "1..1" UsagerINS
+Sejour -- "1..1" EntiteJuridique
+Professionnel -- "0..1" EntiteJuridique
+TransportProfessionnel -- "1..1" Événement
+TransportProfessionnel -- "0..1" EntiteJuridique
+TransportProfessionnel -- "1..1" Professionnel
+Transport -- "1..1" Événement
+Transport -- "0..1" EntiteJuridique
+TransportUsager -- "1..1" Événement
+TransportUsager -- "0..1" EntiteJuridique
 
 @enduml
