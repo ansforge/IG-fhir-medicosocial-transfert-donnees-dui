@@ -1515,11 +1515,11 @@ L'identifiant technique du transport est obtenu dans ce contexte par par la conc
     <th>Description</th>
   </tr>
   <tr>
-    <td>accompagnement : [0..1] Identifiant</td>
+    <td>accompagnement : [0..1] Indicateur</td>
     <td>Accompagnement nécessaire ou non de l'usager. </td>
   </tr>
   <tr>
-    <td>asepsieRigoureuse : [0..1] Identifiant</td>
+    <td>asepsieRigoureuse : [0..1] Indicateur</td>
     <td>Lors du transport de l'usager l'asepsie est rigoureusement respectée ou n'est pas nécessaire.</td>
   </tr>
   <tr>
@@ -1533,7 +1533,7 @@ L'identifiant technique du transport est obtenu dans ce contexte par par la conc
 
 ### Classes du MOS profilées pour ce volet
 
-##### Classe Profesionnel
+##### Classe Professionnel
 
 Données d'identification pérennes d’une personne physique, qui travaille en tant que professionnel (professionnel enregistré dans RPPS), personnel autorisé ou personnel d’établissement, dans les domaines sanitaire, médico-social et social.
 
