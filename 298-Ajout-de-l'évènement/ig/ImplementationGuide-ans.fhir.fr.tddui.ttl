@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "TDDUI"] ; # 
   fhir:title [ fhir:v "Médicosocial - Transfert de données DUI"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-09-18T14:47:30+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-09-23T09:18:22+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -1338,6 +1338,60 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-task-transport" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Task Transport" ] ;
+       fhir:description [ fhir:v "Profil de la ressource Task permettant de représenter le transport." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-task-transport-professionnel" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Task Transport Professionnel" ] ;
+       fhir:description [ fhir:v "Profil de la ressource TDDUITaskTransport permettant de représenter le transport du professionnel." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-task-transport-usager" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Task Transport Usager" ] ;
+       fhir:description [ fhir:v "Profil de la ressource TDDUITaskTransport permettant de représenter le transport de l'usager." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "CapabilityStatement"
          ]
        ] ) ;
@@ -1595,60 +1649,6 @@
          a fhir:canonical ;
          fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle"^^xsd:anyURI ;
          fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport> ;
-         fhir:reference [ fhir:v "StructureDefinition/tddui-task-transport" ]
-       ] ;
-       fhir:name [ fhir:v "Transport" ] ;
-       fhir:description [ fhir:v "Profil de la ressource Task permettant de représenter le transport." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel> ;
-         fhir:reference [ fhir:v "StructureDefinition/tddui-task-transport-professionnel" ]
-       ] ;
-       fhir:name [ fhir:v "Transport Professionnel" ] ;
-       fhir:description [ fhir:v "Profil de la ressource TDDUITaskTransport permettant de représenter le transport du professionnel." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager> ;
-         fhir:reference [ fhir:v "StructureDefinition/tddui-task-transport-usager" ]
-       ] ;
-       fhir:name [ fhir:v "Transport Usager" ] ;
-       fhir:description [ fhir:v "Profil de la ressource TDDUITaskTransport permettant de représenter le transport de l'usager." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
        ]
      ] [
        fhir:extension ( [

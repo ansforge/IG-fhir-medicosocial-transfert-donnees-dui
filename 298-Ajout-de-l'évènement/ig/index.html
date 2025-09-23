@@ -235,7 +235,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Active
           
-            as of 2025-09-18
+            as of 2025-09-23
           
         
       </td>
@@ -366,7 +366,7 @@ Les évolutions de ce guide d’implémentation sont limitées à des correction
     </tr>
     <tr>
       <td><a href="https://hl7.org/fhir/R4/encounter.html">Encounter</a></td>
-      <td><a href="StructureDefinition-tddui-encounter-sejour.html">TDDUIEncounter</a></td>
+      <td><a href="StructureDefinition-tddui-encounter-sejour.html">TDDUIEncounterSejour</a></td>
       <td>Profil de la ressource Encounter permettant de regrouper les informations relatives au séjour d'un usager dans une structure ESSMS</td>
     </tr>
     <tr>
@@ -383,6 +383,36 @@ Les évolutions de ce guide d’implémentation sont limitées à des correction
       <td><a href="https://hl7.org/fhir/R4/Patient.html">Patient</a></td>
       <td><a href="StructureDefinition-tddui-patient-ins.html">TDDUIPatientINS</a></td>
       <td>Profil de la ressource FRCorePatientINSProfile permettant de représenter un usager lorsque l'INS est transmis.</td>
+    </tr>
+    <tr>
+      <td><a href="https://hl7.org/fhir/R4/encounter.html">Encounter</a></td>
+      <td><a href="StructureDefinition-tddui-encounter-evenement.html">TDDUIEncounterEvenement</a></td>
+      <td>Profil de la ressource Encounter permettant de regrouper les informations relatives au séjour d'un usager dans une structure ESSMS</td>
+    </tr>
+    <tr>
+      <td><a href="https://hl7.org/fhir/R4/Practitioner.html">Practitioner</a></td>
+      <td><a href="StructureDefinition-tddui-practitioner.html">TDDUIPractitioner</a></td>
+      <td>Profil de la ressource FRCorePractitionerProfile permettant de représenter un Profesionnel.</td>
+    </tr>
+    <tr>
+      <td><a href="https://hl7.org/fhir/R4/PractitionerRole.html">PractitionerRole</a></td>
+      <td><a href="StructureDefinition-tddui-practitioner-role.html">TDDUIPractitionerRole</a></td>
+      <td>Profil de la ressource FRCorePractitionerRole permettant de représenter un Professionnel.</td>
+    </tr>
+    <tr>
+      <td><a href="https://hl7.org/fhir/R4/Task.html">Task</a></td>
+      <td><a href="StructureDefinition-tddui-task-transport.html">TDDUITaskTransport</a></td>
+      <td>Profil de la ressource Task permettant de représenter le transport.</td>
+    </tr>
+    <tr>
+      <td><a href="https://hl7.org/fhir/R4/Task.html">Task</a></td>
+      <td><a href="StructureDefinition-tddui-task-transport-professionnel.html">TDDUITaskTransportProfessionnel</a></td>
+      <td>Profil de la ressource TDDUITaskTransport permettant de représenter le transport du professionnel.</td>
+    </tr>
+    <tr>
+      <td><a href="https://hl7.org/fhir/R4/Task.html">Task</a></td>
+      <td><a href="StructureDefinition-tddui-task-transport-usager.html">TDDUITaskTransportUsager</a></td>
+      <td>Profil de la ressource TDDUITaskTransport permettant de représenter le transport de l'usager.</td>
     </tr>
   </tbody>
 </table>
@@ -491,7 +521,7 @@ Les évolutions de ce guide d’implémentation sont limitées à des correction
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 18, 2025 14:48+0000">2025-09-18</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 23, 2025 09:19+0000">2025-09-23</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |

@@ -42,9 +42,9 @@
   <url value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager"/>
   <version value="2.0.0-ballot"/>
   <name value="TDDUITaskTransportUsager"/>
-  <title value="Transport Usager"/>
+  <title value="TDDUI Task Transport Usager"/>
   <status value="active"/>
-  <date value="2025-09-18T14:47:30+00:00"/>
+  <date value="2025-09-23T09:18:22+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -3455,11 +3455,11 @@
       <isSummary value="false"/>
       <mapping>
         <identity value="specmetier-to-TDDUITaskTransportUsager"/>
-        <map value="distanceTrajet"/>
+        <map value="distance"/>
       </mapping>
       <mapping>
         <identity value="specmetier-to-TDDUITaskTransport"/>
-        <map value="distanceTrajet"/>
+        <map value="distance"/>
       </mapping>
       <mapping>
         <identity value="rim"/>
@@ -3677,11 +3677,11 @@
       <isSummary value="false"/>
       <mapping>
         <identity value="specmetier-to-TDDUITaskTransportUsager"/>
-        <map value="dureeTheoriqueTrajet"/>
+        <map value="dureeTheorique"/>
       </mapping>
       <mapping>
         <identity value="specmetier-to-TDDUITaskTransport"/>
-        <map value="dureeTheoriqueTrajet"/>
+        <map value="dureeTheorique"/>
       </mapping>
       <mapping>
         <identity value="rim"/>
@@ -4977,7 +4977,7 @@
       <sliceName value="distance"/>
       <mapping>
         <identity value="specmetier-to-TDDUITaskTransportUsager"/>
-        <map value="distanceTrajet"/>
+        <map value="distance"/>
       </mapping>
     </element>
     <element id="Task.input:dureeTheorique">
@@ -4985,7 +4985,7 @@
       <sliceName value="dureeTheorique"/>
       <mapping>
         <identity value="specmetier-to-TDDUITaskTransportUsager"/>
-        <map value="dureeTheoriqueTrajet"/>
+        <map value="dureeTheorique"/>
       </mapping>
     </element>
     <element id="Task.input:accompagnement">

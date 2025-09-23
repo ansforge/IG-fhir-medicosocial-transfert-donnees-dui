@@ -10,7 +10,7 @@
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2025-09-18T14:47:30+00:00",
+  "date" : "2025-09-23T09:18:22+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -949,6 +949,42 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-task-transport"
+      },
+      "name" : "TDDUI Task Transport",
+      "description" : "Profil de la ressource Task permettant de représenter le transport.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-task-transport-professionnel"
+      },
+      "name" : "TDDUI Task Transport Professionnel",
+      "description" : "Profil de la ressource TDDUITaskTransport permettant de représenter le transport du professionnel.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-task-transport-usager"
+      },
+      "name" : "TDDUI Task Transport Usager",
+      "description" : "Profil de la ressource TDDUITaskTransport permettant de représenter le transport de l'usager.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CapabilityStatement"
       }],
       "reference" : {
@@ -1113,42 +1149,6 @@
       "name" : "TDDUIBundleExample",
       "description" : "Exemple de bundle conforme au profil TDDUIBundle",
       "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/tddui-task-transport"
-      },
-      "name" : "Transport",
-      "description" : "Profil de la ressource Task permettant de représenter le transport.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/tddui-task-transport-professionnel"
-      },
-      "name" : "Transport Professionnel",
-      "description" : "Profil de la ressource TDDUITaskTransport permettant de représenter le transport du professionnel.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/tddui-task-transport-usager"
-      },
-      "name" : "Transport Usager",
-      "description" : "Profil de la ressource TDDUITaskTransport permettant de représenter le transport de l'usager.",
-      "exampleBoolean" : false
     },
     {
       "extension" : [{

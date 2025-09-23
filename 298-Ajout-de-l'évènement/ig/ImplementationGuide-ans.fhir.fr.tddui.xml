@@ -10,7 +10,7 @@
   <name value="TDDUI"/>
   <title value="Médicosocial - Transfert de données DUI"/>
   <status value="active"/>
-  <date value="2025-09-18T14:47:30+00:00"/>
+  <date value="2025-09-23T09:18:22+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -760,6 +760,39 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-task-transport"/>
+      </reference>
+      <name value="TDDUI Task Transport"/>
+      <description value="Profil de la ressource Task permettant de représenter le transport."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-task-transport-professionnel"/>
+      </reference>
+      <name value="TDDUI Task Transport Professionnel"/>
+      <description value="Profil de la ressource TDDUITaskTransport permettant de représenter le transport du professionnel."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-task-transport-usager"/>
+      </reference>
+      <name value="TDDUI Task Transport Usager"/>
+      <description value="Profil de la ressource TDDUITaskTransport permettant de représenter le transport de l'usager."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CapabilityStatement"/>
       </extension>
       <reference>
@@ -911,39 +944,6 @@
       <name value="TDDUIBundleExample"/>
       <description value="Exemple de bundle conforme au profil TDDUIBundle"/>
       <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/tddui-task-transport"/>
-      </reference>
-      <name value="Transport"/>
-      <description value="Profil de la ressource Task permettant de représenter le transport."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/tddui-task-transport-professionnel"/>
-      </reference>
-      <name value="Transport Professionnel"/>
-      <description value="Profil de la ressource TDDUITaskTransport permettant de représenter le transport du professionnel."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/tddui-task-transport-usager"/>
-      </reference>
-      <name value="Transport Usager"/>
-      <description value="Profil de la ressource TDDUITaskTransport permettant de représenter le transport de l'usager."/>
-      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

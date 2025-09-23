@@ -8,9 +8,9 @@
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel",
   "version" : "2.0.0-ballot",
   "name" : "TDDUITaskTransportProfessionnel",
-  "title" : "Transport Professionnel",
+  "title" : "TDDUI Task Transport Professionnel",
   "status" : "active",
-  "date" : "2025-09-18T14:47:30+00:00",
+  "date" : "2025-09-23T09:18:22+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -3537,11 +3537,11 @@
       "isSummary" : false,
       "mapping" : [{
         "identity" : "specmetier-to-TDDUITaskTransportProfessionnel",
-        "map" : "distanceTrajet"
+        "map" : "distance"
       },
       {
         "identity" : "specmetier-to-TDDUITaskTransport",
-        "map" : "distanceTrajet"
+        "map" : "distance"
       },
       {
         "identity" : "rim",
@@ -3767,11 +3767,11 @@
       "isSummary" : false,
       "mapping" : [{
         "identity" : "specmetier-to-TDDUITaskTransportProfessionnel",
-        "map" : "dureeTheoriqueTrajet"
+        "map" : "dureeTheorique"
       },
       {
         "identity" : "specmetier-to-TDDUITaskTransport",
-        "map" : "dureeTheoriqueTrajet"
+        "map" : "dureeTheorique"
       },
       {
         "identity" : "rim",
@@ -4450,7 +4450,7 @@
       "sliceName" : "distance",
       "mapping" : [{
         "identity" : "specmetier-to-TDDUITaskTransportProfessionnel",
-        "map" : "distanceTrajet"
+        "map" : "distance"
       }]
     },
     {
@@ -4459,7 +4459,7 @@
       "sliceName" : "dureeTheorique",
       "mapping" : [{
         "identity" : "specmetier-to-TDDUITaskTransportProfessionnel",
-        "map" : "dureeTheoriqueTrajet"
+        "map" : "dureeTheorique"
       }]
     }]
   }
