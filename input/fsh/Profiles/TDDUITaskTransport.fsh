@@ -1,7 +1,7 @@
 Profile: TDDUITaskTransport
 Parent: Task
 Id: tddui-task-transport
-Title: "Transport"
+Title: "TDDUI Task Transport"
 Description: "Profil de la ressource Task permettant de représenter le transport."
 
 * ^purpose = """

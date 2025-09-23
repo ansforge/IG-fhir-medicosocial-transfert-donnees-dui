@@ -1,7 +1,7 @@
 Profile: TDDUITaskTransportUsager
 Parent: TDDUITaskTransport
 Id: tddui-task-transport-usager
-Title: "Transport Usager"
+Title: "TDDUI Task Transport Usager"
 Description: "Profil de la ressource TDDUITaskTransport permettant de représenter le transport de l'usager."
 
 * input ^slicing.discriminator.type = #pattern

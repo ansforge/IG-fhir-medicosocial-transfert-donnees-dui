@@ -2,6 +2,10 @@
 Ce mapping représente les données fonctionnelles trouvant leur équivalence dans l'actuelle version des spécifications techniques.
 </p>
 
+<p style="background-color: #fff3cd; border:1px solid #ffeeba; padding: 5px; max-width: 790px;">
+<strong>Note :</strong> Pour visualiser l’entièreté du mapping, il est nécessaire de dézoomer.
+</p>
+
 ### Mapping global
 
 <div>{%include mapping_global.svg%}</div>

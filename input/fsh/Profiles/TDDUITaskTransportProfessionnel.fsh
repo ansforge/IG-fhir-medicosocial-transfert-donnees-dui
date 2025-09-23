@@ -1,7 +1,7 @@
 Profile: TDDUITaskTransportProfessionnel
 Parent: TDDUITaskTransport
 Id: tddui-task-transport-professionnel
-Title: "Transport Professionnel"
+Title: "TDDUI Task Transport Professionnel"
 Description: "Profil de la ressource TDDUITaskTransport permettant de représenter le transport du professionnel."
 
 // Professionnel

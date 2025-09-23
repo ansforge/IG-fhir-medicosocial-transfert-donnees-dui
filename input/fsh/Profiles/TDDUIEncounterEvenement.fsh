@@ -4,6 +4,10 @@ Id: tddui-encounter-evenement
 Title: "TDDUI Encounter Evenement"
 Description: "Profil de la ressource Encounter permettant de regrouper les évènements liés à la prise en charge de l’usager dans une structure ESSMS."
 
+* ^purpose = """
+    > **Note** : Le profil TDDUI ne peut pas hériter de FR Core Encounter à cause du type d'évènement qui est restreint à 1. Cependant, ce profil suit la plupart des règles de FR Core Encounter via un RuleSet.
+  """
+
 * insert FRCoreEncounterProfile
 
 * identifier 1..1
@@ -21,15 +25,19 @@ Description: "Profil de la ressource Encounter permettant de regrouper les évè
     serafin 0..* and
     text 0..*
 
+* type[ssiad].coding 1..1
+* type[ssiad].coding.code 1..1
 * type[ssiad].coding.code from $JDV-TypeEvenement-SSIAD-CISIS
 * type[ssiad].coding.system 1..1
 * type[ssiad].coding.system = "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis"
-* type[ssiad] ^short = "Codes SSIAD"
+* type[ssiad] ^short = "Type d'évènement SSIAD."
 
+* type[serafin].coding 1..1
+* type[serafin].coding.code 1..1
 * type[serafin].coding.code from TDDUISerafinValueSet
 * type[serafin].coding.system 1..1
 * type[serafin].coding.system = "https://smt.esante.gouv.fr/terminologie-SERAFINPH"
-* type[serafin] ^short = "Codes SERAFIN - Prestations directes et indirectes."
+* type[serafin] ^short = "Type d'évènement Serafin correspondant aux familles 2-PrestationDirecte et 3-PrestationIndirecte."
 
 * type[text].coding.code 0..1
 * type[text].coding.code = #not-permitted
