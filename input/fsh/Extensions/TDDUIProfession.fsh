@@ -1,6 +1,6 @@
 Extension: TDDUIProfession
 Id: tddui-profession
-Title: "TDDUI Profession"
+Title: "Profession"
 Description: "Extension permettant de représenter la profession du professionnel."
 Context: PractitionerRole.code
 
