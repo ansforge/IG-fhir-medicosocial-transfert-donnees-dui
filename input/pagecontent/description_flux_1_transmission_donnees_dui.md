@@ -14,8 +14,14 @@ Les ressources utilisables sont :
 * [TDDUIPatient](StructureDefinition-tddui-patient.html) représentant l'usager,
 * [TDDUIPatientINS](StructureDefinition-tddui-patient-ins.html) représentant l'usager transmis avec l'INS,
 * [TDDUIEncounterSejour](StructureDefinition-tddui-encounter-sejour.html) représentant un séjour,
-* [TDDUIOrganization](StructureDefinition-tddui-organization.html) représentant une entité juridique
-
+* [TDDUIOrganization](StructureDefinition-tddui-organization.html) représentant une entité juridique,
+* [TDDUIEncounterEvenement](StructureDefinition-tddui-encounter-evenement.html) représentant un événement lié à la prise en charge d'un usager,
+* [TDDUIPractitioner](StructureDefinition-tddui-practitioner.html) représentant un professionnel,
+* [TDDUIPractitionerRole](StructureDefinition-tddui-practitioner-role.html) représentant un professionnel,
+* [TDDUITaskTransport](StructureDefinition-tddui-task-transport.html) représentant le transport,
+* [TDDUITaskTransportProfessionnel](StructureDefinition-tddui-task-transport-professionnel.html) représentant le transport du professionnel,
+* [TDDUITaskTransportUsager](StructureDefinition-tddui-task-transport-usager.html) représentant le transport de l'usager
+  
 ### Flux 1.2 Resultat de la transmission de données DUI
 
 Si la création des ressources contenue dans le Bundle est correctement effectuée, le Consommateur doit retourner un code HTTPS 201 « Created » ainsi que les ressources créées avec les attributs `id`, `lastUpdated` et `versionId` mis à jour.
