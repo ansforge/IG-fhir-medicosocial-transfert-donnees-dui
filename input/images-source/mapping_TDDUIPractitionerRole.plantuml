@@ -14,6 +14,7 @@ object "**TDDUIPractitioner**" as TDDUIPractitioner #d9d9d9 {
 
 map "**Professionnel : TDDUIPractitionerRole**" as Professionnel #b3de69 {
     rôle => code
+    ModeExercice => <&plus> TDDUIExerciseMode
 }
 
 Professionnel::rle -u-> rôle

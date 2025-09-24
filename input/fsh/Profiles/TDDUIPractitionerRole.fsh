@@ -9,7 +9,10 @@ Description: "Profil de la ressource FRCorePractitionerRole permettant de repré
 * code.coding from $JDV-J47-FunctionCode-CISIS
 
 * code.extension contains 
-    TDDUIProfession named tddui-profession 0..1
+    TDDUIProfession named TDDUIProfession 0..1
+
+* extension contains
+    TDDUIExerciseMode named TDDUIProfession 0..1
 
 // Etablissement de rattachement 
 * organization only Reference(TDDUIOrganization)
@@ -27,3 +30,4 @@ Title:    "Professionnel"
 * code -> "rôle"
 * code.extension[TDDUIProfession] -> "profession"
 * organization -> "etablissementDeRattachement"
+* extension[TDDUIExerciseMode] -> "modeExercice"
