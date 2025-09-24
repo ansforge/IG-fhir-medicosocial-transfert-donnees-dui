@@ -10,7 +10,7 @@
   "name" : "TDDUIRessourcesUsed",
   "title" : "Ressources utilisées",
   "status" : "active",
-  "date" : "2025-09-23T13:40:00+00:00",
+  "date" : "2025-09-24T08:59:11+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -357,7 +357,7 @@
         "key" : "MatDetailOnlyIfTypeOrg206",
         "severity" : "error",
         "human" : "TDDUIMaterialDetail ne doit être utilisé que si TDDUIRessourceType vaut ORG-206 ou n'est pas renseigné.",
-        "expression" : "extension('TDDUIRessourceType').empty() or extension('TDDUIRessourceType').value.coding.code = 'ORG-206'",
+        "expression" : "(extension('TDDUIMaterialDetail').exists() = (extension('TDDUIRessourceType').empty() or extension('TDDUIRessourceType').value.coding.code = 'ORG-206'))",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used"
       }],
       "isModifier" : false,
@@ -531,7 +531,7 @@
         "key" : "FacilityOnlyIfTypeOrg207",
         "severity" : "error",
         "human" : "TDDUIFacilityResource ne doit être utilisé que si TDDUIRessourceType vaut ORG-207 ou n'est pas renseigné.",
-        "expression" : "extension('TDDUIRessourceType').empty() or extension('TDDUIRessourceType').value.coding.code = 'ORG-207'",
+        "expression" : "(extension('TDDUIFacilityResource').exists() = (extension('TDDUIRessourceType').empty() or extension('TDDUIRessourceType').value.coding.code = 'ORG-207'))",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used"
       }],
       "isModifier" : false,
@@ -923,7 +923,7 @@
         "key" : "MatDetailOnlyIfTypeOrg206",
         "severity" : "error",
         "human" : "TDDUIMaterialDetail ne doit être utilisé que si TDDUIRessourceType vaut ORG-206 ou n'est pas renseigné.",
-        "expression" : "extension('TDDUIRessourceType').empty() or extension('TDDUIRessourceType').value.coding.code = 'ORG-206'",
+        "expression" : "(extension('TDDUIMaterialDetail').exists() = (extension('TDDUIRessourceType').empty() or extension('TDDUIRessourceType').value.coding.code = 'ORG-206'))",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used"
       }]
     },
@@ -959,7 +959,7 @@
         "key" : "FacilityOnlyIfTypeOrg207",
         "severity" : "error",
         "human" : "TDDUIFacilityResource ne doit être utilisé que si TDDUIRessourceType vaut ORG-207 ou n'est pas renseigné.",
-        "expression" : "extension('TDDUIRessourceType').empty() or extension('TDDUIRessourceType').value.coding.code = 'ORG-207'",
+        "expression" : "(extension('TDDUIFacilityResource').exists() = (extension('TDDUIRessourceType').empty() or extension('TDDUIRessourceType').value.coding.code = 'ORG-207'))",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used"
       }]
     },

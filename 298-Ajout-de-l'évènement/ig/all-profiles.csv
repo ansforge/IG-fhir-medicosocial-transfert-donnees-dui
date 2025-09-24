@@ -797,7 +797,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "tddui-encounter-evenement","Encounter.extension:TDDUIRessourcesUsed.extension:TDDUIMaterialDetail","Encounter.extension.extension","TDDUIMaterialDetail","","",0,*,"","","","Extension {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}MatDetailOnlyIfTypeOrg206:TDDUIMaterialDetail ne doit être utilisé que si TDDUIRessourceType vaut ORG-206 ou n'est pas renseigné. {extension('TDDUIRessourceType').empty() or extension('TDDUIRessourceType').value.coding.code = 'ORG-206'}"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}MatDetailOnlyIfTypeOrg206:TDDUIMaterialDetail ne doit être utilisé que si TDDUIRessourceType vaut ORG-206 ou n'est pas renseigné. {(extension('TDDUIMaterialDetail').exists() = (extension('TDDUIRessourceType').empty() or extension('TDDUIRessourceType').value.coding.code = 'ORG-206'))}"
 "tddui-encounter-evenement","Encounter.extension:TDDUIRessourcesUsed.extension:TDDUIMaterialDetail.id","Encounter.extension.extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
 "tddui-encounter-evenement","Encounter.extension:TDDUIRessourcesUsed.extension:TDDUIMaterialDetail.extension","Encounter.extension.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
@@ -811,7 +811,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "tddui-encounter-evenement","Encounter.extension:TDDUIRessourcesUsed.extension:TDDUIFacilityResource","Encounter.extension.extension","TDDUIFacilityResource","","",0,*,"","","","Extension {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}FacilityOnlyIfTypeOrg207:TDDUIFacilityResource ne doit être utilisé que si TDDUIRessourceType vaut ORG-207 ou n'est pas renseigné. {extension('TDDUIRessourceType').empty() or extension('TDDUIRessourceType').value.coding.code = 'ORG-207'}"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}FacilityOnlyIfTypeOrg207:TDDUIFacilityResource ne doit être utilisé que si TDDUIRessourceType vaut ORG-207 ou n'est pas renseigné. {(extension('TDDUIFacilityResource').exists() = (extension('TDDUIRessourceType').empty() or extension('TDDUIRessourceType').value.coding.code = 'ORG-207'))}"
 "tddui-encounter-evenement","Encounter.extension:TDDUIRessourcesUsed.extension:TDDUIFacilityResource.id","Encounter.extension.extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
 "tddui-encounter-evenement","Encounter.extension:TDDUIRessourcesUsed.extension:TDDUIFacilityResource.extension","Encounter.extension.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
@@ -904,7 +904,7 @@ Le namespace est défini à partir de la racine d'identification (gérée par l'
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"tddui-encounter-evenement","Encounter.status.extension:tddui-event-cancel-reason","Encounter.status.extension","tddui-event-cancel-reason","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-cancel-reason]]} {[]}
+"tddui-encounter-evenement","Encounter.status.extension:TDDUIEventCancelReason","Encounter.status.extension","TDDUIEventCancelReason","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-cancel-reason]]} {[]}
 ","Évènement annulé","Motif associé au statut de non-réalisation de l’évènement.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -3708,7 +3708,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "tddui-practitioner-role","PractitionerRole.code.extension:tddui-profession","PractitionerRole.code.extension","tddui-profession","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-profession]]} {[]}
-","TDDUI Profession","Extension permettant de représenter la profession du professionnel.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Profession","Extension permettant de représenter la profession du professionnel.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "tddui-practitioner-role","PractitionerRole.code.coding","PractitionerRole.code.coding","","","",0,*,"","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J47-FunctionCode-CISIS/FHIR/JDV-J47-FunctionCode-CISIS","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -4186,7 +4186,7 @@ typeSavoirFaire","A reference to a code defined by a terminology system.","Codes
 ","A language the practitioner can use in patient communication","A language the practitioner can use in patient communication.","The structure aa-BB with this exact casing is one the most widely used notations for locale. However not all systems code this but instead have it as free text. Hence CodeableConcept instead of code as the data type.","Knowing which language a practitioner speaks can help in facilitating communication with patients.","","","","","","","",,"preferred","A human language.","http://hl7.org/fhir/ValueSet/languages","",,,,"Practitioner.communication",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-profession","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","TDDUI Profession","Extension permettant de représenter la profession du professionnel.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","Profession","Extension permettant de représenter la profession du professionnel.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "tddui-profession","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -4240,7 +4240,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "tddui-ressources-used","Extension.extension:TDDUIMaterialDetail","Extension.extension","TDDUIMaterialDetail","","",0,*,"","","","Extension {[]} {[]}
 ","Détail des ressources matérielles (ex: matériel médical, pédagogique)","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}MatDetailOnlyIfTypeOrg206:TDDUIMaterialDetail ne doit être utilisé que si TDDUIRessourceType vaut ORG-206 ou n'est pas renseigné. {extension('TDDUIRessourceType').empty() or extension('TDDUIRessourceType').value.coding.code = 'ORG-206'}"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}MatDetailOnlyIfTypeOrg206:TDDUIMaterialDetail ne doit être utilisé que si TDDUIRessourceType vaut ORG-206 ou n'est pas renseigné. {(extension('TDDUIMaterialDetail').exists() = (extension('TDDUIRessourceType').empty() or extension('TDDUIRessourceType').value.coding.code = 'ORG-206'))}"
 "tddui-ressources-used","Extension.extension:TDDUIMaterialDetail.id","Extension.extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
 "tddui-ressources-used","Extension.extension:TDDUIMaterialDetail.extension","Extension.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
@@ -4254,7 +4254,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "tddui-ressources-used","Extension.extension:TDDUIFacilityResource","Extension.extension","TDDUIFacilityResource","","",0,*,"","","","Extension {[]} {[]}
 ","Détail des ressources immobilières (ex: bâtiment, salle, chambre)","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}FacilityOnlyIfTypeOrg207:TDDUIFacilityResource ne doit être utilisé que si TDDUIRessourceType vaut ORG-207 ou n'est pas renseigné. {extension('TDDUIRessourceType').empty() or extension('TDDUIRessourceType').value.coding.code = 'ORG-207'}"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}FacilityOnlyIfTypeOrg207:TDDUIFacilityResource ne doit être utilisé que si TDDUIRessourceType vaut ORG-207 ou n'est pas renseigné. {(extension('TDDUIFacilityResource').exists() = (extension('TDDUIRessourceType').empty() or extension('TDDUIRessourceType').value.coding.code = 'ORG-207'))}"
 "tddui-ressources-used","Extension.extension:TDDUIFacilityResource.id","Extension.extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
 "tddui-ressources-used","Extension.extension:TDDUIFacilityResource.extension","Extension.extension.extension","","","",0,0,"","","","Extension {[]} {[]}

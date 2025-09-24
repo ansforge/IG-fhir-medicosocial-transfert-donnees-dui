@@ -83,7 +83,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","N/A"
 "Encounter.extension:TDDUIRessourcesUsed.extension:TDDUIMaterialDetail","Encounter.extension.extension","TDDUIMaterialDetail","","",0,*,"","","","Extension {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}MatDetailOnlyIfTypeOrg206:TDDUIMaterialDetail ne doit être utilisé que si TDDUIRessourceType vaut ORG-206 ou n'est pas renseigné. {extension('TDDUIRessourceType').empty() or extension('TDDUIRessourceType').value.coding.code = 'ORG-206'}","detailTypeRessourceUtilisee"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}MatDetailOnlyIfTypeOrg206:TDDUIMaterialDetail ne doit être utilisé que si TDDUIRessourceType vaut ORG-206 ou n'est pas renseigné. {(extension('TDDUIMaterialDetail').exists() = (extension('TDDUIRessourceType').empty() or extension('TDDUIRessourceType').value.coding.code = 'ORG-206'))}","detailTypeRessourceUtilisee"
 "Encounter.extension:TDDUIRessourcesUsed.extension:TDDUIMaterialDetail.id","Encounter.extension.extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Encounter.extension:TDDUIRessourcesUsed.extension:TDDUIMaterialDetail.extension","Encounter.extension.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
@@ -97,7 +97,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","N/A"
 "Encounter.extension:TDDUIRessourcesUsed.extension:TDDUIFacilityResource","Encounter.extension.extension","TDDUIFacilityResource","","",0,*,"","","","Extension {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}FacilityOnlyIfTypeOrg207:TDDUIFacilityResource ne doit être utilisé que si TDDUIRessourceType vaut ORG-207 ou n'est pas renseigné. {extension('TDDUIRessourceType').empty() or extension('TDDUIRessourceType').value.coding.code = 'ORG-207'}","detailTypeRessourceUtilisee"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}FacilityOnlyIfTypeOrg207:TDDUIFacilityResource ne doit être utilisé que si TDDUIRessourceType vaut ORG-207 ou n'est pas renseigné. {(extension('TDDUIFacilityResource').exists() = (extension('TDDUIRessourceType').empty() or extension('TDDUIRessourceType').value.coding.code = 'ORG-207'))}","detailTypeRessourceUtilisee"
 "Encounter.extension:TDDUIRessourcesUsed.extension:TDDUIFacilityResource.id","Encounter.extension.extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Encounter.extension:TDDUIRessourcesUsed.extension:TDDUIFacilityResource.extension","Encounter.extension.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
@@ -190,7 +190,7 @@ Le namespace est défini à partir de la racine d'identification (gérée par l'
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Encounter.status.extension:tddui-event-cancel-reason","Encounter.status.extension","tddui-event-cancel-reason","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-cancel-reason]]} {[]}
+"Encounter.status.extension:TDDUIEventCancelReason","Encounter.status.extension","TDDUIEventCancelReason","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-cancel-reason]]} {[]}
 ","Évènement annulé","Motif associé au statut de non-réalisation de l’évènement.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","statut.motifNonRealisation"

@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "TDDUIRessourcesUsed"] ; # 
   fhir:title [ fhir:v "Ressources utilisées"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-09-23T13:40:00+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-09-24T08:59:11+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -404,7 +404,7 @@
          fhir:key [ fhir:v "MatDetailOnlyIfTypeOrg206" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "TDDUIMaterialDetail ne doit être utilisé que si TDDUIRessourceType vaut ORG-206 ou n'est pas renseigné." ] ;
-         fhir:expression [ fhir:v "extension('TDDUIRessourceType').empty() or extension('TDDUIRessourceType').value.coding.code = 'ORG-206'" ] ;
+         fhir:expression [ fhir:v "(extension('TDDUIMaterialDetail').exists() = (extension('TDDUIRessourceType').empty() or extension('TDDUIRessourceType').value.coding.code = 'ORG-206'))" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used>
@@ -600,7 +600,7 @@
          fhir:key [ fhir:v "FacilityOnlyIfTypeOrg207" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "TDDUIFacilityResource ne doit être utilisé que si TDDUIRessourceType vaut ORG-207 ou n'est pas renseigné." ] ;
-         fhir:expression [ fhir:v "extension('TDDUIRessourceType').empty() or extension('TDDUIRessourceType').value.coding.code = 'ORG-207'" ] ;
+         fhir:expression [ fhir:v "(extension('TDDUIFacilityResource').exists() = (extension('TDDUIRessourceType').empty() or extension('TDDUIRessourceType').value.coding.code = 'ORG-207'))" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used>
@@ -970,7 +970,7 @@
          fhir:key [ fhir:v "MatDetailOnlyIfTypeOrg206" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "TDDUIMaterialDetail ne doit être utilisé que si TDDUIRessourceType vaut ORG-206 ou n'est pas renseigné." ] ;
-         fhir:expression [ fhir:v "extension('TDDUIRessourceType').empty() or extension('TDDUIRessourceType').value.coding.code = 'ORG-206'" ] ;
+         fhir:expression [ fhir:v "(extension('TDDUIMaterialDetail').exists() = (extension('TDDUIRessourceType').empty() or extension('TDDUIRessourceType').value.coding.code = 'ORG-206'))" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used>
@@ -1011,7 +1011,7 @@
          fhir:key [ fhir:v "FacilityOnlyIfTypeOrg207" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "TDDUIFacilityResource ne doit être utilisé que si TDDUIRessourceType vaut ORG-207 ou n'est pas renseigné." ] ;
-         fhir:expression [ fhir:v "extension('TDDUIRessourceType').empty() or extension('TDDUIRessourceType').value.coding.code = 'ORG-207'" ] ;
+         fhir:expression [ fhir:v "(extension('TDDUIFacilityResource').exists() = (extension('TDDUIRessourceType').empty() or extension('TDDUIRessourceType').value.coding.code = 'ORG-207'))" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used>

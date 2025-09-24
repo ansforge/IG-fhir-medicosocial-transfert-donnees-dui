@@ -10,7 +10,7 @@
   <name value="TDDUI"/>
   <title value="Médicosocial - Transfert de données DUI"/>
   <status value="active"/>
-  <date value="2025-09-23T13:40:00+00:00"/>
+  <date value="2025-09-24T08:59:11+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -587,6 +587,17 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/tddui-profession"/>
+      </reference>
+      <name value="Profession"/>
+      <description value="Extension permettant de représenter la profession du professionnel."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/tddui-event-report"/>
       </reference>
       <name value="Rapport de l’évènement"/>
@@ -734,17 +745,6 @@
       </reference>
       <name value="TDDUI Practitioner Role"/>
       <description value="Profil de la ressource FRCorePractitionerRole permettant de représenter un Professionnel."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/tddui-profession"/>
-      </reference>
-      <name value="TDDUI Profession"/>
-      <description value="Extension permettant de représenter la profession du professionnel."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

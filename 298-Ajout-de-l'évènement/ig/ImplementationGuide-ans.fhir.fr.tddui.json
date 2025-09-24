@@ -10,7 +10,7 @@
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2025-09-23T13:40:00+00:00",
+  "date" : "2025-09-24T08:59:11+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -760,6 +760,18 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/tddui-profession"
+      },
+      "name" : "Profession",
+      "description" : "Extension permettant de représenter la profession du professionnel.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/tddui-event-report"
       },
       "name" : "Rapport de l’évènement",
@@ -920,18 +932,6 @@
       },
       "name" : "TDDUI Practitioner Role",
       "description" : "Profil de la ressource FRCorePractitionerRole permettant de représenter un Professionnel.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/tddui-profession"
-      },
-      "name" : "TDDUI Profession",
-      "description" : "Extension permettant de représenter la profession du professionnel.",
       "exampleBoolean" : false
     },
     {

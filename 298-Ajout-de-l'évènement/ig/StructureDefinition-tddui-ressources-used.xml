@@ -26,7 +26,7 @@
   <name value="TDDUIRessourcesUsed"/>
   <title value="Ressources utilisées"/>
   <status value="active"/>
-  <date value="2025-09-23T13:40:00+00:00"/>
+  <date value="2025-09-24T08:59:11+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -360,7 +360,7 @@
         <key value="MatDetailOnlyIfTypeOrg206"/>
         <severity value="error"/>
         <human value="TDDUIMaterialDetail ne doit être utilisé que si TDDUIRessourceType vaut ORG-206 ou n'est pas renseigné."/>
-        <expression value="extension('TDDUIRessourceType').empty() or extension('TDDUIRessourceType').value.coding.code = 'ORG-206'"/>
+        <expression value="(extension('TDDUIMaterialDetail').exists() = (extension('TDDUIRessourceType').empty() or extension('TDDUIRessourceType').value.coding.code = 'ORG-206'))"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used"/>
       </constraint>
       <isModifier value="false"/>
@@ -527,7 +527,7 @@
         <key value="FacilityOnlyIfTypeOrg207"/>
         <severity value="error"/>
         <human value="TDDUIFacilityResource ne doit être utilisé que si TDDUIRessourceType vaut ORG-207 ou n'est pas renseigné."/>
-        <expression value="extension('TDDUIRessourceType').empty() or extension('TDDUIRessourceType').value.coding.code = 'ORG-207'"/>
+        <expression value="(extension('TDDUIFacilityResource').exists() = (extension('TDDUIRessourceType').empty() or extension('TDDUIRessourceType').value.coding.code = 'ORG-207'))"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used"/>
       </constraint>
       <isModifier value="false"/>
@@ -904,7 +904,7 @@
         <key value="MatDetailOnlyIfTypeOrg206"/>
         <severity value="error"/>
         <human value="TDDUIMaterialDetail ne doit être utilisé que si TDDUIRessourceType vaut ORG-206 ou n'est pas renseigné."/>
-        <expression value="extension('TDDUIRessourceType').empty() or extension('TDDUIRessourceType').value.coding.code = 'ORG-206'"/>
+        <expression value="(extension('TDDUIMaterialDetail').exists() = (extension('TDDUIRessourceType').empty() or extension('TDDUIRessourceType').value.coding.code = 'ORG-206'))"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used"/>
       </constraint>
     </element>
@@ -936,7 +936,7 @@
         <key value="FacilityOnlyIfTypeOrg207"/>
         <severity value="error"/>
         <human value="TDDUIFacilityResource ne doit être utilisé que si TDDUIRessourceType vaut ORG-207 ou n'est pas renseigné."/>
-        <expression value="extension('TDDUIRessourceType').empty() or extension('TDDUIRessourceType').value.coding.code = 'ORG-207'"/>
+        <expression value="(extension('TDDUIFacilityResource').exists() = (extension('TDDUIRessourceType').empty() or extension('TDDUIRessourceType').value.coding.code = 'ORG-207'))"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used"/>
       </constraint>
     </element>
