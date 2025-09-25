@@ -73,6 +73,8 @@ Description: "Profil de la ressource Encounter permettant de regrouper les évè
     TDDUIMeal named TDDUIMeal 0..1
 
 * extension[TDDUIRessourcesUsed] ^short = "Ressources utilisées lors de l’évènement."
+* obeys MatDetailOnlyIfTypeOrg206
+* obeys FacilityOnlyIfTypeOrg207
 * extension[TDDUIEventLabel] ^short = "Titre donné à l’évènement par la structure."
 * extension[TDDUIComment] ^short = "Commentaires sur le déroulé de l'évènement."
 * extension[TDDUIEventReport] ^short = "Zone de texte liée à l’événement pour compte rendu des actions réalisées."
@@ -118,3 +120,17 @@ Title:    "Évènement"
 * status -> "Statut.statut"
 * participant.type -> "statut.auteur"
 * status.extension[tddui-event-cancel-reason] -> "statut.motifNonRealisation"
+
+Invariant: MatDetailOnlyIfTypeOrg206
+Description: "TDDUIMaterialDetail ne doit être utilisé que si TDDUIRessourceType est présente et vaut ORG-206 ou n'est pas renseigné."
+Severity: #error
+Expression: "(Encounter.extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used').extension.where(url='TDDUIMaterialDetail').exists())
+    implies(Encounter.extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used').extension.where(url='TDDUIRessourceType').exists()
+    and(Encounter.extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used').extension.where(url='TDDUIRessourceType').value.coding.code='ORG-206'))"
+
+Invariant: FacilityOnlyIfTypeOrg207
+Description: "TDDUIFacilityResource ne doit être utilisé que si TDDUIRessourceType est présente et vaut ORG-207 ou n'est pas renseigné."
+Severity: #error
+Expression: "(Encounter.extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used').extension.where(url='TDDUIFacilityResource').exists())
+    implies(Encounter.extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used').extension.where(url='TDDUIRessourceType').exists()
+    and(Encounter.extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used').extension.where(url='TDDUIRessourceType').value.coding.code='ORG-207'))"
