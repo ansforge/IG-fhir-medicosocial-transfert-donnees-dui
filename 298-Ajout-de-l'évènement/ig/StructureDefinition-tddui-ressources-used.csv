@@ -26,7 +26,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","N/A"
 "Extension.extension:TDDUIMaterialDetail","Extension.extension","TDDUIMaterialDetail","","",0,*,"","","","Extension {[]} {[]}
 ","Détail des ressources matérielles (ex: matériel médical, pédagogique)","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}MatDetailOnlyIfTypeOrg206:TDDUIMaterialDetail ne doit être utilisé que si TDDUIRessourceType vaut ORG-206 ou n'est pas renseigné. {(extension('TDDUIMaterialDetail').exists() = (extension('TDDUIRessourceType').empty() or extension('TDDUIRessourceType').value.coding.code = 'ORG-206'))}"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Extension.extension:TDDUIMaterialDetail.id","Extension.extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Extension.extension:TDDUIMaterialDetail.extension","Extension.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
@@ -40,7 +40,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","N/A"
 "Extension.extension:TDDUIFacilityResource","Extension.extension","TDDUIFacilityResource","","",0,*,"","","","Extension {[]} {[]}
 ","Détail des ressources immobilières (ex: bâtiment, salle, chambre)","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}FacilityOnlyIfTypeOrg207:TDDUIFacilityResource ne doit être utilisé que si TDDUIRessourceType vaut ORG-207 ou n'est pas renseigné. {(extension('TDDUIFacilityResource').exists() = (extension('TDDUIRessourceType').empty() or extension('TDDUIRessourceType').value.coding.code = 'ORG-207'))}"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Extension.extension:TDDUIFacilityResource.id","Extension.extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Extension.extension:TDDUIFacilityResource.extension","Extension.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
