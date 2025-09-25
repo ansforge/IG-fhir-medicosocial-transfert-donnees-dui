@@ -1,0 +1,39 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "52e721bd-aa3b-4e5d-9fb3-1f3e39d4934b-48",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/52e721bd-aa3b-4e5d-9fb3-1f3e39d4934b-48",
+  "name" : "IntersectionEncounterReasonCodesAndEncounterReasonCodes",
+  "title" : "Intersection of Encounter Reason Codes And Encounter Reason Codes",
+  "status" : "draft",
+  "date" : "2025-09-25T06:41:36+00:00",
+  "compose" : {
+    "include" : [{
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "404684003"
+      }]
+    },
+    {
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "71388002"
+      }]
+    },
+    {
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "243796009"
+      }]
+    },
+    {
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "272379006"
+      }]
+    }]
+  }
+}
