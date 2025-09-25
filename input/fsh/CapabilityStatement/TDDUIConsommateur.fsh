@@ -18,6 +18,7 @@ Usage: #definition
 * rest.security.cors = false
 * rest.security.description = "L’ANS propose des référentiels dédiés à la politique de sécurité (la PGSSI-S) et des mécanismes de sécurisation sont définis dans les volets de la couche Transport du Cadre d’Interopérabilité des systèmes d’information de santé (CI-SIS)"
 
+
 * rest.resource[0].type = #Patient
 * rest.resource[=].supportedProfile[0] = Canonical(tddui-patient)
 * rest.resource[=].supportedProfile[+] = Canonical(tddui-patient-ins)
@@ -29,6 +30,21 @@ Usage: #definition
 
 * rest.resource[2].type = #Encounter
 * rest.resource[=].supportedProfile = Canonical(tddui-encounter-sejour)
+* rest.resource[=].supportedProfile[+] = Canonical(tddui-encounter-evenement)
+* rest.resource[=].interaction[0].code = #read
+
+* rest.resource[3].type = #Practitioner
+* rest.resource[=].supportedProfile = Canonical(tddui-practitioner)
+* rest.resource[=].interaction[0].code = #read
+
+* rest.resource[4].type = #PractitionerRole
+* rest.resource[=].supportedProfile = Canonical(tddui-practitioner-role)
+* rest.resource[=].interaction[0].code = #read
+
+* rest.resource[5].type = #Task
+* rest.resource[=].supportedProfile[0] = Canonical(tddui-task-transport)
+* rest.resource[=].supportedProfile[+] = Canonical(tddui-task-transport-professionnel)
+* rest.resource[=].supportedProfile[+] = Canonical(tddui-task-transport-usager)
 * rest.resource[=].interaction[0].code = #read
 
 * rest.interaction[0].code = #transaction
