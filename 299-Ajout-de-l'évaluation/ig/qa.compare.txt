@@ -26,7 +26,6 @@ Generated $--. FHIR version $-- for ans.fhir.fr.tddui#$-- (canonical = https://i
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Questionnaire-tddui-questionnaire-situation-ssiad : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-admission-date : 0 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-attachment : 0 / 1 / 1
- /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-auhtor : 0 / 2 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-birth-order : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-bundle : 0 / 0 / 2
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-cancel-reason : 0 / 2 / 1
@@ -49,6 +48,7 @@ Generated $--. FHIR version $-- for ans.fhir.fr.tddui#$-- (canonical = https://i
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-practitioner-role : 0 / 2 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-profession : 0 / 2 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-questionnaire-response : 0 / 1 / 1
+ /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-responsible : 0 / 2 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-ressources-used : 0 / 4 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-task-transport : 0 / 0 / 3
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-task-transport-professionnel : 0 / 0 / 2
@@ -60,7 +60,7 @@ Generated $--. FHIR version $-- for ans.fhir.fr.tddui#$-- (canonical = https://i
 </table>
 == n/a ==
 ERROR: ImplementationGuide/ans.fhir.fr.tddui: This IG is version 4.0.1, while the IG 'hl7.fhir.uv.extensions' is from version 5.0.0
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/tddui-auhtor.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/tddui-responsible.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
@@ -222,9 +222,6 @@ WARNING: Questionnaire/tddui-questionnaire-aggir-ph-ssiad: Questionnaire.item[11
 WARNING: StructureDefinition/tddui-admission-date: StructureDefinition.context[0]: Review the extension type for tddui-admission-date: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 == fsh-generated/resources/StructureDefinition-tddui-attachment.json ==
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment'): The Implementation Guide contains no examples for this extension
-== fsh-generated/resources/StructureDefinition-tddui-auhtor.json ==
-WARNING: StructureDefinition/tddui-auhtor: StructureDefinition.context[0]: Review the extension type for tddui-auhtor: extensions should not have a context of Element unless it's really intended that they can be used anywhere
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-auhtor'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-tddui-birth-order.json ==
 == fsh-generated/resources/StructureDefinition-tddui-bundle.json ==
 INFORMATION: StructureDefinition/tddui-bundle: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
@@ -301,6 +298,9 @@ WARNING: StructureDefinition/tddui-profession: StructureDefinition.snapshot.elem
 WARNING: StructureDefinition/tddui-profession: StructureDefinition.differential.element[4].binding.valueSet: There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J01-XdsAuthorSpecialty-CISIS/FHIR/JDV-J01-XdsAuthorSpecialty-CISIS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20250721120000', found versions: 1.3.0, 20250721120000. Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J01-XdsAuthorSpecialty-CISIS/FHIR/JDV-J01-XdsAuthorSpecialty-CISIS' to 'https://mos.esante.gouv.fr/NOS/JDV_J01-XdsAuthorSpecialty-CISIS/FHIR/JDV-J01-XdsAuthorSpecialty-CISIS|20250721120000'
 == fsh-generated/resources/StructureDefinition-tddui-questionnaire-response.json ==
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-tddui-responsible.json ==
+WARNING: StructureDefinition/tddui-responsible: StructureDefinition.context[0]: Review the extension type for tddui-responsible: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-responsible'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-tddui-ressources-used.json ==
 WARNING: StructureDefinition/tddui-ressources-used: StructureDefinition.snapshot.element[8].constraint[2]: MatDetailOnlyIfTypeOrg206: Reference to an unknown extension - double check that the URL 'TDDUIRessourceType' is correct
 WARNING: StructureDefinition/tddui-ressources-used: StructureDefinition.snapshot.element[8].constraint[2]: MatDetailOnlyIfTypeOrg206: The left side is inherently a collection, and so the expression 'extension('TDDUIRessourceType').value.coding.code = 'ORG-206'' may fail or return false if there is more than one item in the content being evaluated

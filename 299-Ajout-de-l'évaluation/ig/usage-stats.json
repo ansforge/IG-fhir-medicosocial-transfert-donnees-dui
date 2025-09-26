@@ -19,13 +19,6 @@
       ]
     },
     {
-      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-auhtor",
-      "title": "Auteur de l\u0027évaluation",
-      "types": [
-        "Reference"
-      ]
-    },
-    {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order",
       "title": "Ordre de naissance dans le registre d\u0027état civil",
       "types": [
@@ -115,6 +108,13 @@
         "Extension",
         "Coding",
         "string"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-responsible",
+      "title": "Responsable de l\u0027évaluation",
+      "types": [
+        "Reference"
       ]
     },
     {
@@ -365,9 +365,6 @@
       "Encounter",
       "QuestionnaireResponse"
     ],
-    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-auhtor": [
-      "QuestionnaireResponse"
-    ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order": [
       "Patient.birthDate"
     ],
@@ -406,6 +403,9 @@
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-profession": [
       "PractitionerRole.code"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-responsible": [
+      "QuestionnaireResponse"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used": [
       "Encounter"

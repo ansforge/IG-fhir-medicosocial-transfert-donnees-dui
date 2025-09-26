@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "TDDUI"] ; # 
   fhir:title [ fhir:v "Médicosocial - Transfert de données DUI"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-09-26T11:13:08+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-09-26T13:47:48+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -874,23 +874,6 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-auhtor> ;
-         fhir:reference [ fhir:v "StructureDefinition/tddui-auhtor" ]
-       ] ;
-       fhir:name [ fhir:v "Auteur de l'évaluation" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:extension"
-         ]
-       ] ) ;
-       fhir:reference [
          fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment> ;
          fhir:reference [ fhir:v "StructureDefinition/tddui-comment" ]
        ] ;
@@ -1148,6 +1131,23 @@
        ] ;
        fhir:name [ fhir:v "Repas" ] ;
        fhir:description [ fhir:v "Repas du professionnel prévu dans le cadre de l'événement." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-responsible> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-responsible" ]
+       ] ;
+       fhir:name [ fhir:v "Responsable de l'évaluation" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
