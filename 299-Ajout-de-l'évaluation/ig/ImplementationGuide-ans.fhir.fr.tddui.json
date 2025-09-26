@@ -10,7 +10,7 @@
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2025-09-23T15:17:50+00:00",
+  "date" : "2025-09-26T08:52:04+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -661,6 +661,30 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/tddui-questionnaire-aggir-pa-ssiad"
+      },
+      "name" : "Evaluation AGGIR PA SSIAD",
+      "description" : "Grille d'évaluation AGGIR PA SSIAD",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/tddui-questionnaire-aggir-ph-ssiad"
+      },
+      "name" : "Evaluation AGGIR PH SSIAD",
+      "description" : "Grille d'évaluation AGGIR PH SSIAD",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -1160,6 +1184,30 @@
       },
       "name" : "Usager présent",
       "description" : "Evènement nécessitant ou non la présence physique de l’usager.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/tddui-questionnaire-situation-ssiad"
+      },
+      "name" : "Évaluation de la situation SSIAD",
+      "description" : "Grille d'évaluation de la situation SSIAD",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/tddui-questionnaire-aggir-serafin"
+      },
+      "name" : "Évaluation SERAFIN",
+      "description" : "Grille d'évaluation SERAFIN",
       "exampleBoolean" : false
     },
     {

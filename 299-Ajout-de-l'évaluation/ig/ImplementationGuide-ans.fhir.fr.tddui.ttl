@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "TDDUI"] ; # 
   fhir:title [ fhir:v "Médicosocial - Transfert de données DUI"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-09-23T15:17:50+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-09-26T08:52:04+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -906,6 +906,42 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Questionnaire/tddui-questionnaire-aggir-pa-ssiad> ;
+         fhir:reference [ fhir:v "Questionnaire/tddui-questionnaire-aggir-pa-ssiad" ]
+       ] ;
+       fhir:name [ fhir:v "Evaluation AGGIR PA SSIAD" ] ;
+       fhir:description [ fhir:v "Grille d'évaluation AGGIR PA SSIAD" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Questionnaire/tddui-questionnaire-aggir-ph-ssiad> ;
+         fhir:reference [ fhir:v "Questionnaire/tddui-questionnaire-aggir-ph-ssiad" ]
+       ] ;
+       fhir:name [ fhir:v "Evaluation AGGIR PH SSIAD" ] ;
+       fhir:description [ fhir:v "Grille d'évaluation AGGIR PH SSIAD" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "StructureDefinition:extension"
          ]
        ] ) ;
@@ -1664,6 +1700,42 @@
        ] ;
        fhir:name [ fhir:v "Usager présent" ] ;
        fhir:description [ fhir:v "Evènement nécessitant ou non la présence physique de l’usager." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Questionnaire/tddui-questionnaire-situation-ssiad> ;
+         fhir:reference [ fhir:v "Questionnaire/tddui-questionnaire-situation-ssiad" ]
+       ] ;
+       fhir:name [ fhir:v "Évaluation de la situation SSIAD" ] ;
+       fhir:description [ fhir:v "Grille d'évaluation de la situation SSIAD" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Questionnaire/tddui-questionnaire-aggir-serafin> ;
+         fhir:reference [ fhir:v "Questionnaire/tddui-questionnaire-aggir-serafin" ]
+       ] ;
+       fhir:name [ fhir:v "Évaluation SERAFIN" ] ;
+       fhir:description [ fhir:v "Grille d'évaluation SERAFIN" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
