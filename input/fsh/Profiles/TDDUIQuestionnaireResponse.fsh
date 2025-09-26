@@ -14,7 +14,7 @@ Description: "Profil de la ressource QuestionnaireResponse utilisé pour transme
 * source only Reference(TDDUIPractitioner)
 
 * extension contains
-    TDDUIAuthor named TDDUIAuthor 0..1 and 
+    TDDUIResponsible named TDDUIResponsible 0..1 and 
     TDDUIAttachment named TDDUIAttachment 0..*
 
 * encounter 0..1
