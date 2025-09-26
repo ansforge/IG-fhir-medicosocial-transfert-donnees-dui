@@ -2,10 +2,14 @@ Instance: tddui-questionnaire-situation-ssiad
 InstanceOf: Questionnaire
 Description: "Grille d'évaluation de la situation SSIAD"
 Usage: #definition
+
 * title = "Évaluation de la situation SSIAD"
 * status = #active
 * code = $terminologie-cisis#MED-1290 "Evaluation de la situation SSIAD"
-* item[0].type = #boolean
+* item[0].type = #text
+* item[=].linkId = "commentaire"
+* item[=].text = "Commentaire"
+* item[+].type = #boolean
 * item[=].linkId = "incontinence"
 * item[=].code = $terminologie-cim-10#R32 "Incontinence urinaire, sans précision"
 * item[=].text = "Incontinence urinaire, sans précision"
