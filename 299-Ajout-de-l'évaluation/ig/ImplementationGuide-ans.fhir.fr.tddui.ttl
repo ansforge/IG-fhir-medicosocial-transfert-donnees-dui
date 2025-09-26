@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "TDDUI"] ; # 
   fhir:title [ fhir:v "Médicosocial - Transfert de données DUI"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-09-26T08:52:04+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-09-26T11:13:08+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -874,6 +874,23 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-auhtor> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-auhtor" ]
+       ] ;
+       fhir:name [ fhir:v "Auteur de l'évaluation" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment> ;
          fhir:reference [ fhir:v "StructureDefinition/tddui-comment" ]
        ] ;
@@ -1054,6 +1071,24 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-cancel-reason> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-cancel-reason" ]
+       ] ;
+       fhir:name [ fhir:v "Motif de non-réalisation de l’évènement et de l'évaluation" ] ;
+       fhir:description [ fhir:v "Motif associé au statut de non-réalisation de l’évènement et de l'évaluation." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order> ;
          fhir:reference [ fhir:v "StructureDefinition/tddui-birth-order" ]
        ] ;
@@ -1075,8 +1110,8 @@
          fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment> ;
          fhir:reference [ fhir:v "StructureDefinition/tddui-attachment" ]
        ] ;
-       fhir:name [ fhir:v "Pièce jointe de l’évènement" ] ;
-       fhir:description [ fhir:v "Pièces jointes liées à l’événement." ] ;
+       fhir:name [ fhir:v "Pièce jointe" ] ;
+       fhir:description [ fhir:v "Pièces jointes." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1347,6 +1382,24 @@
        ] ;
        fhir:name [ fhir:v "TDDUI Profession" ] ;
        fhir:description [ fhir:v "Extension permettant de représenter la profession du professionnel." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-questionnaire-response" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI QuestionnaireResponse" ] ;
+       fhir:description [ fhir:v "Profil de la ressource QuestionnaireResponse utilisé pour transmettre les réponses aux questionnaires dans le cadre des évaluations." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1736,24 +1789,6 @@
        ] ;
        fhir:name [ fhir:v "Évaluation SERAFIN" ] ;
        fhir:description [ fhir:v "Grille d'évaluation SERAFIN" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:extension"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-cancel-reason> ;
-         fhir:reference [ fhir:v "StructureDefinition/tddui-event-cancel-reason" ]
-       ] ;
-       fhir:name [ fhir:v "Évènement annulé" ] ;
-       fhir:description [ fhir:v "Motif associé au statut de non-réalisation de l’évènement." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false

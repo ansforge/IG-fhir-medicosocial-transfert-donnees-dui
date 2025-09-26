@@ -13,9 +13,16 @@
     },
     {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment",
-      "title": "Pièce jointe de l’évènement",
+      "title": "Pièce jointe",
       "types": [
         "Attachment"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-auhtor",
+      "title": "Auteur de l\u0027évaluation",
+      "types": [
+        "Reference"
       ]
     },
     {
@@ -23,6 +30,17 @@
       "title": "Ordre de naissance dans le registre d\u0027état civil",
       "types": [
         "positiveInt"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-cancel-reason",
+      "title": "Motif de non-réalisation de l’évènement et de l\u0027évaluation",
+      "types": [
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string"
       ]
     },
     {
@@ -36,17 +54,6 @@
       "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-mode-label",
       "title": "Libellé mode d\u0027entrée",
       "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-cancel-reason",
-      "title": "Évènement annulé",
-      "types": [
-        "CodeableConcept",
-        "string",
-        "Extension",
-        "Coding",
         "string"
       ]
     },
@@ -215,6 +222,12 @@
         "title": "TDDUI Practitioner Role"
       }
     ],
+    "QuestionnaireResponse": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response",
+        "title": "TDDUI QuestionnaireResponse"
+      }
+    ],
     "Task": [
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport",
@@ -349,10 +362,18 @@
       "Encounter"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment": [
-      "Encounter"
+      "Encounter",
+      "QuestionnaireResponse"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-auhtor": [
+      "QuestionnaireResponse"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order": [
       "Patient.birthDate"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-cancel-reason": [
+      "Encounter.status",
+      "QuestionnaireResponse.status"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment": [
       "Encounter"
@@ -360,9 +381,6 @@
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-mode-label": [
       "Bundle.entry.resource",
       "Encounter"
-    ],
-    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-cancel-reason": [
-      "Encounter.status"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-label": [
       "Encounter"
