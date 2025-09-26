@@ -1,6 +1,6 @@
-Instance: evaluation-aggir-ph-ssiad
+Instance: tddui-questionnaire-aggir-pa-ssiad
 InstanceOf: Questionnaire
-Description: "Grille d'évaluation AGGIR PH SSIAD"
+Description: "Grille d'évaluation AGGIR PA SSIAD"
 Usage: #definition
 * title = "Evaluation AGGIR PA SSIAD"
 * status = #active
@@ -47,9 +47,9 @@ Usage: #definition
 * item[=].text = "Fonctions de la pensée"
 * item[=].required = false
 * item[=].repeats = false
-* item[=].answerOption[0].valueCoding = $icf#qf0 "aucun facilitateur"
-* item[=].answerOption[+].valueCoding = $icf#qf2 "facilitateur modéré"
-* item[=].answerOption[+].valueCoding = $icf#qf4 "facilitateur absolu"
+* item[=].answerOption[0].valueCoding = #qf0 "aucun facilitateur"
+* item[=].answerOption[+].valueCoding = #qf2 "facilitateur modéré"
+* item[=].answerOption[+].valueCoding = #qf4 "facilitateur absolu"
 * item[+].item[0].type = #boolean
 * item[=].item[=].linkId = "orientation-spont"
 * item[=].item[=].code = $terminologie-cisis#MED-1307 "fait spontanément"
@@ -76,9 +76,9 @@ Usage: #definition
 * item[=].text = "Fonctions d'orientation"
 * item[=].required = false
 * item[=].repeats = false
-* item[=].answerOption[0].valueCoding = $icf#qf0 "aucun facilitateur"
-* item[=].answerOption[+].valueCoding = $icf#qf2 "facilitateur modéré"
-* item[=].answerOption[+].valueCoding = $icf#qf4 "facilitateur absolu"
+* item[=].answerOption[0].valueCoding = #qf0 "aucun facilitateur"
+* item[=].answerOption[+].valueCoding = #qf2 "facilitateur modéré"
+* item[=].answerOption[+].valueCoding = #qf4 "facilitateur absolu"
 * item[+].item[0].type = #boolean
 * item[=].item[=].linkId = "laver-spont"
 * item[=].item[=].code = $terminologie-cisis#MED-1307 "fait spontanément"
@@ -105,9 +105,9 @@ Usage: #definition
 * item[=].text = "Se laver"
 * item[=].required = false
 * item[=].repeats = false
-* item[=].answerOption[0].valueCoding = $icf#qf0 "aucun facilitateur"
-* item[=].answerOption[+].valueCoding = $icf#qf2 "facilitateur modéré"
-* item[=].answerOption[+].valueCoding = $icf#qf4 "facilitateur absolu"
+* item[=].answerOption[0].valueCoding = #qf0 "aucun facilitateur"
+* item[=].answerOption[+].valueCoding = #qf2 "facilitateur modéré"
+* item[=].answerOption[+].valueCoding = #qf4 "facilitateur absolu"
 * item[+].item[0].type = #boolean
 * item[=].item[=].linkId = "prendre-soin-spont"
 * item[=].item[=].code = $terminologie-cisis#MED-1307 "fait spontanément"
@@ -134,9 +134,9 @@ Usage: #definition
 * item[=].text = "Prendre soin des parties de son corps"
 * item[=].required = false
 * item[=].repeats = false
-* item[=].answerOption[0].valueCoding = $icf#qf0 "aucun facilitateur"
-* item[=].answerOption[+].valueCoding = $icf#qf2 "facilitateur modéré"
-* item[=].answerOption[+].valueCoding = $icf#qf4 "facilitateur absolu"
+* item[=].answerOption[0].valueCoding = #qf0 "aucun facilitateur"
+* item[=].answerOption[+].valueCoding = #qf2 "facilitateur modéré"
+* item[=].answerOption[+].valueCoding = #qf4 "facilitateur absolu"
 * item[+].item[0].type = #boolean
 * item[=].item[=].linkId = "mettre-vetement-spont"
 * item[=].item[=].code = $terminologie-cisis#MED-1307 "fait spontanément"
@@ -163,9 +163,9 @@ Usage: #definition
 * item[=].text = "Mettre des vêtements"
 * item[=].required = false
 * item[=].repeats = false
-* item[=].answerOption[0].valueCoding = $icf#qf0 "aucun facilitateur"
-* item[=].answerOption[+].valueCoding = $icf#qf2 "facilitateur modéré"
-* item[=].answerOption[+].valueCoding = $icf#qf4 "facilitateur absolu"
+* item[=].answerOption[0].valueCoding = #qf0 "aucun facilitateur"
+* item[=].answerOption[+].valueCoding = #qf2 "facilitateur modéré"
+* item[=].answerOption[+].valueCoding = #qf4 "facilitateur absolu"
 * item[+].item[0].type = #boolean
 * item[=].item[=].linkId = "motricite-fine-spont"
 * item[=].item[=].code = $terminologie-cisis#MED-1307 "fait spontanément"
@@ -188,13 +188,13 @@ Usage: #definition
 * item[=].item[=].text = "Commentaire"
 * item[=].type = #choice
 * item[=].linkId = "motricite-fine"
-* item[=].code = $icf#d440 "Activités de motricité fine"
+* item[=].code = $icf#d440 "Fine hand use"
 * item[=].text = "Activités de motricité fine"
 * item[=].required = false
 * item[=].repeats = false
-* item[=].answerOption[0].valueCoding = $icf#qf0 "aucun facilitateur"
-* item[=].answerOption[+].valueCoding = $icf#qf2 "facilitateur modéré"
-* item[=].answerOption[+].valueCoding = $icf#qf4 "facilitateur absolu"
+* item[=].answerOption[0].valueCoding = #qf0 "aucun facilitateur"
+* item[=].answerOption[+].valueCoding = #qf2 "facilitateur modéré"
+* item[=].answerOption[+].valueCoding = #qf4 "facilitateur absolu"
 * item[+].item[0].type = #boolean
 * item[=].item[=].linkId = "mettre-chaussure-spont"
 * item[=].item[=].code = $terminologie-cisis#MED-1307 "fait spontanément"
@@ -221,9 +221,9 @@ Usage: #definition
 * item[=].text = "Mettre des chaussures"
 * item[=].required = false
 * item[=].repeats = false
-* item[=].answerOption[0].valueCoding = $icf#qf0 "aucun facilitateur"
-* item[=].answerOption[+].valueCoding = $icf#qf2 "facilitateur modéré"
-* item[=].answerOption[+].valueCoding = $icf#qf4 "facilitateur absolu"
+* item[=].answerOption[0].valueCoding = #qf0 "aucun facilitateur"
+* item[=].answerOption[+].valueCoding = #qf2 "facilitateur modéré"
+* item[=].answerOption[+].valueCoding = #qf4 "facilitateur absolu"
 * item[+].item[0].type = #boolean
 * item[=].item[=].linkId = "manger-spont"
 * item[=].item[=].code = $terminologie-cisis#MED-1307 "fait spontanément"
@@ -250,9 +250,9 @@ Usage: #definition
 * item[=].text = "Manger"
 * item[=].required = false
 * item[=].repeats = false
-* item[=].answerOption[0].valueCoding = $icf#qf0 "aucun facilitateur"
-* item[=].answerOption[+].valueCoding = $icf#qf2 "facilitateur modéré"
-* item[=].answerOption[+].valueCoding = $icf#qf4 "facilitateur absolu"
+* item[=].answerOption[0].valueCoding = #qf0 "aucun facilitateur"
+* item[=].answerOption[+].valueCoding = #qf2 "facilitateur modéré"
+* item[=].answerOption[+].valueCoding = #qf4 "facilitateur absolu"
 * item[+].item[0].type = #boolean
 * item[=].item[=].linkId = "passage-aliment-spont"
 * item[=].item[=].code = $terminologie-cisis#MED-1307 "fait spontanément"
@@ -279,9 +279,9 @@ Usage: #definition
 * item[=].text = "Passage des aliments par l'estomac et les intestins"
 * item[=].required = false
 * item[=].repeats = false
-* item[=].answerOption[0].valueCoding = $icf#qf0 "aucun facilitateur"
-* item[=].answerOption[+].valueCoding = $icf#qf2 "facilitateur modéré"
-* item[=].answerOption[+].valueCoding = $icf#qf4 "facilitateur absolu"
+* item[=].answerOption[0].valueCoding = #qf0 "aucun facilitateur"
+* item[=].answerOption[+].valueCoding = #qf2 "facilitateur modéré"
+* item[=].answerOption[+].valueCoding = #qf4 "facilitateur absolu"
 * item[+].item[0].type = #boolean
 * item[=].item[=].linkId = "miction-spont"
 * item[=].item[=].code = $terminologie-cisis#MED-1307 "fait spontanément"
@@ -308,9 +308,9 @@ Usage: #definition
 * item[=].text = "Assurer la régulation de la miction"
 * item[=].required = false
 * item[=].repeats = false
-* item[=].answerOption[0].valueCoding = $icf#qf0 "aucun facilitateur"
-* item[=].answerOption[+].valueCoding = $icf#qf2 "facilitateur modéré"
-* item[=].answerOption[+].valueCoding = $icf#qf4 "facilitateur absolu"
+* item[=].answerOption[0].valueCoding = #qf0 "aucun facilitateur"
+* item[=].answerOption[+].valueCoding = #qf2 "facilitateur modéré"
+* item[=].answerOption[+].valueCoding = #qf4 "facilitateur absolu"
 * item[+].item[0].type = #boolean
 * item[=].item[=].linkId = "defecation-spont"
 * item[=].item[=].code = $terminologie-cisis#MED-1307 "fait spontanément"
@@ -337,9 +337,9 @@ Usage: #definition
 * item[=].text = "Assurer la régulation de la défécation"
 * item[=].required = false
 * item[=].repeats = false
-* item[=].answerOption[0].valueCoding = $icf#qf0 "aucun facilitateur"
-* item[=].answerOption[+].valueCoding = $icf#qf2 "facilitateur modéré"
-* item[=].answerOption[+].valueCoding = $icf#qf4 "facilitateur absolu"
+* item[=].answerOption[0].valueCoding = #qf0 "aucun facilitateur"
+* item[=].answerOption[+].valueCoding = #qf2 "facilitateur modéré"
+* item[=].answerOption[+].valueCoding = #qf4 "facilitateur absolu"
 * item[+].item[0].type = #boolean
 * item[=].item[=].linkId = "pos-corps-spont"
 * item[=].item[=].code = $terminologie-cisis#MED-1307 "fait spontanément"
@@ -366,9 +366,9 @@ Usage: #definition
 * item[=].text = "Changer la position corporelle de base"
 * item[=].required = false
 * item[=].repeats = false
-* item[=].answerOption[0].valueCoding = $icf#qf0 "aucun facilitateur"
-* item[=].answerOption[+].valueCoding = $icf#qf2 "facilitateur modéré"
-* item[=].answerOption[+].valueCoding = $icf#qf4 "facilitateur absolu"
+* item[=].answerOption[0].valueCoding = #qf0 "aucun facilitateur"
+* item[=].answerOption[+].valueCoding = #qf2 "facilitateur modéré"
+* item[=].answerOption[+].valueCoding = #qf4 "facilitateur absolu"
 * item[+].item[0].type = #boolean
 * item[=].item[=].linkId = "deplacer-maison-spont"
 * item[=].item[=].code = $terminologie-cisis#MED-1307 "fait spontanément"
@@ -395,9 +395,9 @@ Usage: #definition
 * item[=].text = "Se déplacer dans la maison"
 * item[=].required = false
 * item[=].repeats = false
-* item[=].answerOption[0].valueCoding = $icf#qf0 "aucun facilitateur"
-* item[=].answerOption[+].valueCoding = $icf#qf2 "facilitateur modéré"
-* item[=].answerOption[+].valueCoding = $icf#qf4 "facilitateur absolu"
+* item[=].answerOption[0].valueCoding = #qf0 "aucun facilitateur"
+* item[=].answerOption[+].valueCoding = #qf2 "facilitateur modéré"
+* item[=].answerOption[+].valueCoding = #qf4 "facilitateur absolu"
 * item[+].item[0].type = #boolean
 * item[=].item[=].linkId = "deplacer-dehors-spont"
 * item[=].item[=].code = $terminologie-cisis#MED-1307 "fait spontanément"
@@ -424,9 +424,9 @@ Usage: #definition
 * item[=].text = "Se déplacer en dehors de la maison et d'autres bâtiments"
 * item[=].required = false
 * item[=].repeats = false
-* item[=].answerOption[0].valueCoding = $icf#qf0 "aucun facilitateur"
-* item[=].answerOption[+].valueCoding = $icf#qf2 "facilitateur modéré"
-* item[=].answerOption[+].valueCoding = $icf#qf4 "facilitateur absolu"
+* item[=].answerOption[0].valueCoding = #qf0 "aucun facilitateur"
+* item[=].answerOption[+].valueCoding = #qf2 "facilitateur modéré"
+* item[=].answerOption[+].valueCoding = #qf4 "facilitateur absolu"
 * item[+].item[0].type = #boolean
 * item[=].item[=].linkId = "appareil-spont"
 * item[=].item[=].code = $terminologie-cisis#MED-1307 "fait spontanément"
@@ -453,6 +453,6 @@ Usage: #definition
 * item[=].text = "Utiliser d'autres appareils et techniques de communication précisés"
 * item[=].required = false
 * item[=].repeats = false
-* item[=].answerOption[0].valueCoding = $icf#qf0 "aucun facilitateur"
-* item[=].answerOption[+].valueCoding = $icf#qf2 "facilitateur modéré"
-* item[=].answerOption[+].valueCoding = $icf#qf4 "facilitateur absolu"
+* item[=].answerOption[0].valueCoding = #qf0 "aucun facilitateur"
+* item[=].answerOption[+].valueCoding = #qf2 "facilitateur modéré"
+* item[=].answerOption[+].valueCoding = #qf4 "facilitateur absolu"

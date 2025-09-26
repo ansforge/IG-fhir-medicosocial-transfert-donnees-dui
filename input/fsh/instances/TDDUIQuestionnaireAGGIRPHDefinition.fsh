@@ -1,4 +1,4 @@
-Instance: evaluation-aggir-ph-ssiad
+Instance: tddui-questionnaire-aggir-ph-ssiad
 InstanceOf: Questionnaire
 Description: "Grille d'évaluation AGGIR PH SSIAD"
 Usage: #definition
