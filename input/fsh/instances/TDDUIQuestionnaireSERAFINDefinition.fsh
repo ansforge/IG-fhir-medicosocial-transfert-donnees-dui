@@ -1,4 +1,4 @@
-Instance: tddui-questionnaire-aggir-serafin
+Instance: tddui-questionnaire-serafin
 InstanceOf: Questionnaire
 Description: "Grille d'évaluation SERAFIN"
 Usage: #definition

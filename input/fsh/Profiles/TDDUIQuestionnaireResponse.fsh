@@ -6,6 +6,14 @@ Description: "Profil de la ressource QuestionnaireResponse utilisé pour transme
 
 * identifier 1..1
 
+* questionnaire ^short = """
+Le profil permet de communiquer les grilles définies suivantes :
+- Evaluation AGGIR PA SSIAD
+- Evaluation AGGIR PH SSIAD
+- Evaluation SERAFIN
+- Evaluation situation SSIAD
+"""
+
 * subject 1..1
 * subject only Reference(TDDUIPatient or TDDUIPatientINS)
 
