@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "TDDUI"] ; # 
   fhir:title [ fhir:v "Médicosocial - Transfert de données DUI"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-09-29T14:52:40+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-09-29T15:54:50+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -1662,6 +1662,25 @@
        fhir:example [
          a fhir:boolean ;
          fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "QuestionnaireResponse"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/QuestionnaireResponse/tddui-questionnaire-response-aggir-pa-example> ;
+         fhir:reference [ fhir:v "QuestionnaireResponse/tddui-questionnaire-response-aggir-pa-example" ]
+       ] ;
+       fhir:name [ fhir:v "tddui-questionnaire-response-aggir-pa-example" ] ;
+       fhir:description [ fhir:v "Grille de réponse AGGIR PA" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"^^xsd:anyURI ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response>
        ]
      ] [
        fhir:extension ( [

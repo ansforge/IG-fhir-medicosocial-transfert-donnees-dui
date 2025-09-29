@@ -1,9 +1,9 @@
 TDDUI : Validation Results
 =========================================
 
-err = 93, warn = 71, info = 56
+err = 107, warn = 71, info = 56
 IG Publisher Version: 2.0.17
-Generated Mon Sep 29 14:55:34 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.tddui#2.0.0-ballot (canonical = https://interop.esante.gouv.fr/ig/fhir/tddui)
+Generated Mon Sep 29 15:57:43 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.tddui#2.0.0-ballot (canonical = https://interop.esante.gouv.fr/ig/fhir/tddui)
  Build Errors : 1 / 4 / 0
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Bundle-ExampleTDDUIBundle : 0 / 6 / 15
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CapabilityStatement-TDDUIConsommateur : 0 / 1 / 1
@@ -24,6 +24,7 @@ Generated Mon Sep 29 14:55:34 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.tddui
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Questionnaire-tddui-questionnaire-aggir-ph-ssiad : 30 / 0 / 11
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Questionnaire-tddui-questionnaire-serafin : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Questionnaire-tddui-questionnaire-situation-ssiad : 0 / 0 / 1
+ /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/QuestionnaireResponse-tddui-questionnaire-response-aggir-pa-example : 14 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/QuestionnaireResponse-tddui-questionnaire-response-aggir-ph-example : 10 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/QuestionnaireResponse-tddui-questionnaire-response-situation-ssiad-example : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-admission-date : 0 / 1 / 1
@@ -220,6 +221,21 @@ ERROR: Questionnaire/tddui-questionnaire-aggir-ph-ssiad: Questionnaire.item[0].i
 ERROR: Questionnaire/tddui-questionnaire-aggir-ph-ssiad: Questionnaire.item[0].item[9].answerOption[2].value.ofType(Coding).code: Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'
 == fsh-generated/resources/Questionnaire-tddui-questionnaire-serafin.json ==
 == fsh-generated/resources/Questionnaire-tddui-questionnaire-situation-ssiad.json ==
+== fsh-generated/resources/QuestionnaireResponse-tddui-questionnaire-response-aggir-pa-example.json ==
+ERROR: QuestionnaireResponse/tddui-questionnaire-response-aggir-pa-example: QuestionnaireResponse.item[0].answer[0].item[0].answer[0].value.ofType(Coding).code: Unknown code 'qf0' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'
+ERROR: QuestionnaireResponse/tddui-questionnaire-response-aggir-pa-example: QuestionnaireResponse.item[0].answer[0].item[1].answer[0].value.ofType(Coding).code: Unknown code 'qf0' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'
+ERROR: QuestionnaireResponse/tddui-questionnaire-response-aggir-pa-example: QuestionnaireResponse.item[0].answer[0].item[2].answer[0].value.ofType(Coding).code: Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'
+ERROR: QuestionnaireResponse/tddui-questionnaire-response-aggir-pa-example: QuestionnaireResponse.item[0].answer[0].item[3].answer[0].value.ofType(Coding).code: Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'
+ERROR: QuestionnaireResponse/tddui-questionnaire-response-aggir-pa-example: QuestionnaireResponse.item[0].answer[0].item[4].answer[0].value.ofType(Coding).code: Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'
+ERROR: QuestionnaireResponse/tddui-questionnaire-response-aggir-pa-example: QuestionnaireResponse.item[0].answer[0].item[5].answer[0].value.ofType(Coding).code: Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'
+ERROR: QuestionnaireResponse/tddui-questionnaire-response-aggir-pa-example: QuestionnaireResponse.item[0].answer[0].item[6].answer[0].value.ofType(Coding).code: Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'
+ERROR: QuestionnaireResponse/tddui-questionnaire-response-aggir-pa-example: QuestionnaireResponse.item[0].answer[0].item[7].answer[0].value.ofType(Coding).code: Unknown code 'qf0' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'
+ERROR: QuestionnaireResponse/tddui-questionnaire-response-aggir-pa-example: QuestionnaireResponse.item[0].answer[0].item[8].answer[0].value.ofType(Coding).code: Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'
+ERROR: QuestionnaireResponse/tddui-questionnaire-response-aggir-pa-example: QuestionnaireResponse.item[0].answer[0].item[9].answer[0].value.ofType(Coding).code: Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'
+ERROR: QuestionnaireResponse/tddui-questionnaire-response-aggir-pa-example: QuestionnaireResponse.item[0].answer[0].item[10].answer[0].value.ofType(Coding).code: Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'
+ERROR: QuestionnaireResponse/tddui-questionnaire-response-aggir-pa-example: QuestionnaireResponse.item[0].answer[0].item[11].answer[0].value.ofType(Coding).code: Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'
+ERROR: QuestionnaireResponse/tddui-questionnaire-response-aggir-pa-example: QuestionnaireResponse.item[0].answer[0].item[12].answer[0].value.ofType(Coding).code: Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'
+ERROR: QuestionnaireResponse/tddui-questionnaire-response-aggir-pa-example: QuestionnaireResponse.item[1].answer[0].value.ofType(Coding).code: Unknown code 'qf0' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'
 == fsh-generated/resources/QuestionnaireResponse-tddui-questionnaire-response-aggir-ph-example.json ==
 ERROR: QuestionnaireResponse/tddui-questionnaire-response-aggir-ph-example: QuestionnaireResponse.item[0].answer[0].item[0].answer[0].value.ofType(Coding).code: Unknown code 'qf0' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'
 ERROR: QuestionnaireResponse/tddui-questionnaire-response-aggir-ph-example: QuestionnaireResponse.item[0].answer[0].item[1].answer[0].value.ofType(Coding).code: Unknown code 'qf0' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'

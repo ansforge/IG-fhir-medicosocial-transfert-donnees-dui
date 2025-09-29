@@ -10,7 +10,7 @@
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2025-09-29T14:52:40+00:00",
+  "date" : "2025-09-29T15:54:50+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -1160,6 +1160,18 @@
       "name" : "TDDUI-Producteur",
       "description" : "Le rôle de Producteur est de transmettre des données de son logiciel DUI. Il correspond à un logiciel DUI.",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/tddui-questionnaire-response-aggir-pa-example"
+      },
+      "name" : "tddui-questionnaire-response-aggir-pa-example",
+      "description" : "Grille de réponse AGGIR PA",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
     },
     {
       "extension" : [{
