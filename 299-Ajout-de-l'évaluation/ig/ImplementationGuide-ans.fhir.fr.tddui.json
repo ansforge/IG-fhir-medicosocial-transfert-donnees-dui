@@ -10,7 +10,7 @@
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2025-09-29T08:20:50+00:00",
+  "date" : "2025-09-29T14:52:40+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -1167,10 +1167,22 @@
         "valueString" : "QuestionnaireResponse"
       }],
       "reference" : {
-        "reference" : "QuestionnaireResponse/tddui-questionnaire-response-aggir-ph"
+        "reference" : "QuestionnaireResponse/tddui-questionnaire-response-aggir-ph-example"
       },
-      "name" : "tddui-questionnaire-response-aggir-ph",
-      "description" : "Grille de répponse AGGIR PH",
+      "name" : "tddui-questionnaire-response-aggir-ph-example",
+      "description" : "Grille de réponse AGGIR PH",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/tddui-questionnaire-response-situation-ssiad-example"
+      },
+      "name" : "tddui-questionnaire-response-situation-ssiad-example",
+      "description" : "Grille de répponse de la situation SSIAD",
       "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
     },
     {
@@ -1251,7 +1263,7 @@
         "valueString" : "Questionnaire"
       }],
       "reference" : {
-        "reference" : "Questionnaire/tddui-questionnaire-aggir-serafin"
+        "reference" : "Questionnaire/tddui-questionnaire-serafin"
       },
       "name" : "Évaluation SERAFIN",
       "description" : "Grille d'évaluation SERAFIN",
