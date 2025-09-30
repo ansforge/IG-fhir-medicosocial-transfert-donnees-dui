@@ -51,7 +51,7 @@ Description: "Profil de la ressource Encounter permettant de regrouper les évè
 
 // Usager
 * subject 1..1
-* subject only Reference(TDDUIPatient or TDDUIPatientINS or Group)
+* subject only Reference(TDDUIPatient or TDDUIPatientINS)
 
 // ESSMS
 * serviceProvider only Reference(TDDUIOrganization)
