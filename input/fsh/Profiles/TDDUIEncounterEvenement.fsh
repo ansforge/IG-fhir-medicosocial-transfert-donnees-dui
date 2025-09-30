@@ -5,7 +5,7 @@ Title: "TDDUI Encounter Evenement"
 Description: "Profil de la ressource Encounter permettant de regrouper les évènements liés à la prise en charge de l’usager dans une structure ESSMS."
 
 * ^purpose = """
-    > **Note** : Le profil TDDUI ne peut pas hériter de FR Core Encounter à cause du type d'évènement qui est restreint à 1. Cependant, ce profil suit la plupart des règles de FR Core Encounter via un RuleSet.
+    > **Note** : Le profil TDDUIEncounterEvenement n'hérite pas du profil FRCoreEncounterProfile à cause de l'interdiction de véhiculer plusieurs types d'évènements. Cependant, le profil TDDUIEncounterEvenement suit les contraintes du profil FRCoreEncounterProfile excepté la contrainte sur la cardinalité de l'élément type (0..1).
   """
 
 * insert FRCoreEncounterProfile
@@ -51,7 +51,7 @@ Description: "Profil de la ressource Encounter permettant de regrouper les évè
 
 // Usager
 * subject 1..1
-* subject only Reference(TDDUIPatient or TDDUIPatientINS)
+* subject only Reference(TDDUIPatient or TDDUIPatientINS or Group)
 
 // ESSMS
 * serviceProvider only Reference(TDDUIOrganization)
@@ -122,14 +122,14 @@ Title:    "Évènement"
 * status.extension[tddui-event-cancel-reason] -> "statut.motifNonRealisation"
 
 Invariant: MatDetailOnlyIfTypeOrg206
-Description: "TDDUIMaterialDetail ne doit être utilisé que si TDDUIRessourceType est présente et vaut ORG-206 ou n'est pas renseigné."
+Description: "Le slice TDDUIMaterialDetail est utilisé uniquement lorsque le slice TDDUIRessourceType prend la valeur ORG-206."
 Severity: #error
 Expression: "(Encounter.extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used').extension.where(url='TDDUIMaterialDetail').exists())
     implies(Encounter.extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used').extension.where(url='TDDUIRessourceType').exists()
     and(Encounter.extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used').extension.where(url='TDDUIRessourceType').value.coding.code='ORG-206'))"
 
 Invariant: FacilityOnlyIfTypeOrg207
-Description: "TDDUIFacilityResource ne doit être utilisé que si TDDUIRessourceType est présente et vaut ORG-207 ou n'est pas renseigné."
+Description: "Le slice TDDUIFacilityResource est utilisé uniquement lorsque le slice TDDUIRessourceType prend la valeur ORG-207."
 Severity: #error
 Expression: "(Encounter.extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used').extension.where(url='TDDUIFacilityResource').exists())
     implies(Encounter.extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used').extension.where(url='TDDUIRessourceType').exists()
