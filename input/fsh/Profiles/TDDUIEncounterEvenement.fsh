@@ -56,7 +56,21 @@ Description: "Profil de la ressource Encounter permettant de regrouper les évè
 // ESSMS
 * serviceProvider only Reference(TDDUIOrganization)
 
-// Professionnel
+* participant ^slicing.discriminator.type = #pattern
+* participant ^slicing.discriminator.path = "type"
+* participant ^slicing.rules = #open
+
+* participant contains
+    auteurStatut 0..1 and
+    professionnel 0..1
+
+* participant[auteurStatut].type 1..1
+* participant[auteurStatut].type = http://terminology.hl7.org/CodeSystem/v3-ParticipationType#PART
+* participant[auteurStatut] ^short = "Professionnel ayant effectué la dernière modification du statut associé à la ressource."
+
+* participant[professionnel].type 1..1
+* participant[professionnel].type = http://terminology.hl7.org/CodeSystem/v3-ParticipationType#PPRF
+
 * participant.individual only Reference(TDDUIPractitioner or TDDUIPractitionerRole or RelatedPerson)
 
 * location 0..1
@@ -118,8 +132,8 @@ Title:    "Évènement"
 * period.end -> "dateFinEvenement"
 * meta.lastUpdated -> "dateModificationEvenement"
 * status -> "Statut.statut"
-* participant.type -> "statut.auteur"
-* status.extension[tddui-event-cancel-reason] -> "statut.motifNonRealisation"
+* participant.type -> "Statut.auteur"
+* status.extension[tddui-event-cancel-reason] -> "Statut.motifNonRealisation"
 
 Invariant: MatDetailOnlyIfTypeOrg206
 Description: "Le slice TDDUIMaterialDetail est utilisé uniquement lorsque le slice TDDUIRessourceType prend la valeur ORG-206."
