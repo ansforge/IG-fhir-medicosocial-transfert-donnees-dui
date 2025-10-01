@@ -1159,8 +1159,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "tddui-encounter-evenement","Encounter.participant:auteurStatut.type","Encounter.participant.type","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Role of participant in encounter","Role of participant in encounter.","The participant type indicates how an individual participates in an encounter. It includes non-practitioner participants, and for practitioners this is to describe the action type in the context of this encounter (e.g. Admitting Dr, Attending Dr, Translator, Consulting Dr). This is different to the practitioner roles which are functional roles, derived from terms of employment, education, licensing, etc.","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""http://terminology.hl7.org/CodeSystem/v3-ParticipationType""/>
-    <code value=""PART""/>
+    <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/TDDUIEncounterParticipant""/>
+    <code value=""AUT""/>
+    <display value=""Auteur du statut de la ressource""/>
   </coding>
 </valueCodeableConcept>","","","",,"extensible","Role of participant in encounter.","http://hl7.org/fhir/ValueSet/encounter-participant-type|4.0.1","",,,,"Encounter.participant.type",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -1189,7 +1190,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Role of participant in encounter","Role of participant in encounter.","The participant type indicates how an individual participates in an encounter. It includes non-practitioner participants, and for practitioners this is to describe the action type in the context of this encounter (e.g. Admitting Dr, Attending Dr, Translator, Consulting Dr). This is different to the practitioner roles which are functional roles, derived from terms of employment, education, licensing, etc.","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
     <system value=""http://terminology.hl7.org/CodeSystem/v3-ParticipationType""/>
-    <code value=""PPRF""/>
+    <code value=""PART""/>
   </coding>
 </valueCodeableConcept>","","","",,"extensible","Role of participant in encounter.","http://hl7.org/fhir/ValueSet/encounter-participant-type|4.0.1","",,,,"Encounter.participant.type",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "

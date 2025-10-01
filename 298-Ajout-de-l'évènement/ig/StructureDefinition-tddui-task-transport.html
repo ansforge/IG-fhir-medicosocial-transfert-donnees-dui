@@ -307,7 +307,7 @@
         
           Active
           
-            as of 2025-09-30
+            as of 2025-10-01
           
         
       </td>
@@ -1270,7 +1270,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Duration">Duration</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Content to use in performing the task</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // e7c6ee0d-3d1a-4418-9f9d-83016a452a76
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 5d8edb43-3c7f-402d-a7a7-2c3fc1eb2f75
 document.getElementById('cbtddui-task-transportK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('tddui-task-transportK'), 'binding', document.getElementById('cbtddui-task-transportK-binding').checked, document.getElementById('pptddui-task-transportK'));
 document.getElementById('cbtddui-task-transportK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1280,20 +1280,167 @@ filterDesc(document.getElementById('tddui-task-transportK'), 'obligation', docum
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformité</b></td><td><b>ValueSet / Code</b></td><td><b>URI</b></td></tr>
-<tr><td>Task.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="The current status of the task."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-task-status.html">TaskStatus</a><div><code>http://hl7.org/fhir/ValueSet/task-status|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/task-status|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Task.intent</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="Distinguishes whether the task is a proposal, plan or full order."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-task-intent.html">TaskIntent</a><div><code>http://hl7.org/fhir/ValueSet/task-intent|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/task-intent|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Task.code</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-jdv-mode-de-transport-cisis.html">JdvModeDeTransportCisis</a><div><code>https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis"></button></div></td></tr>
-<tr><td>Task.input.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc."></td></tr>
-<tr><td>Task.input:typeMotorisation.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc.">Pattern Value: <a title="InputTaskTransportCodeSystem" href="CodeSystem-input-tddui-task-transport-codesystem.html#input-tddui-task-transport-codesystem-typeMotorisation">typeMotorisation</a></td></tr>
-<tr><td>Task.input:typeMotorisation.value[x]</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-jdv-type-motorisation-cisis.html">JdvTypeMotorisationCisis</a><div><code>https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-motorisation-cisis</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-motorisation-cisis"></button></div></td></tr>
-<tr><td>Task.input:adresseDepart.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc.">Pattern Value: <a title="InputTaskTransportCodeSystem" href="CodeSystem-input-tddui-task-transport-codesystem.html#input-tddui-task-transport-codesystem-adresseDepart">adresseDepart</a></td></tr>
-<tr><td>Task.input:adresseDestination.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc.">Pattern Value: <a title="InputTaskTransportCodeSystem" href="CodeSystem-input-tddui-task-transport-codesystem.html#input-tddui-task-transport-codesystem-adresseDestination">adresseDestination</a></td></tr>
-<tr><td>Task.input:budgetPrevisionnel.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc.">Pattern Value: <a title="InputTaskTransportCodeSystem" href="CodeSystem-input-tddui-task-transport-codesystem.html#input-tddui-task-transport-codesystem-budgetPrevisionnel">budgetPrevisionnel</a></td></tr>
-<tr><td>Task.input:budgetReel.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc.">Pattern Value: <a title="InputTaskTransportCodeSystem" href="CodeSystem-input-tddui-task-transport-codesystem.html#input-tddui-task-transport-codesystem-budgetReel">budgetReel</a></td></tr>
-<tr><td>Task.input:distance.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc.">Pattern Value: <a title="InputTaskTransportCodeSystem" href="CodeSystem-input-tddui-task-transport-codesystem.html#input-tddui-task-transport-codesystem-distance">distance</a></td></tr>
-<tr><td>Task.input:dureeTheorique.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc.">Pattern Value: <a title="InputTaskTransportCodeSystem" href="CodeSystem-input-tddui-task-transport-codesystem.html#input-tddui-task-transport-codesystem-dureeTheorique">dureeTheorique</a></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Statut</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>Task.status</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td title="The current status of the task.">
+      <a href="http://hl7.org/fhir/R4/valueset-task-status.html" opacity="1.0">TaskStatus</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/task-status|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Task.intent</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td title="Distinguishes whether the task is a proposal, plan or full order.">
+      <a href="http://hl7.org/fhir/R4/valueset-task-intent.html" opacity="1.0">TaskIntent</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/task-intent|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Task.code</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-jdv-mode-de-transport-cisis.html" opacity="1.0">JDV Mode De Transport CISIS</a>
+      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 20250624152101, the version found through the package references">&#x1F4E6;20250624152101</td>
+    <td>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.2.0">Terminologies  de Santé v1.2</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Task.input.type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc."></td>
+    <td title="Version is not explicity stated. No matching value sets found">?</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>Task.input:typeMotorisation.​type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc."></td>
+    <td title="Version is not explicity stated. No matching value sets found">?</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>Task.input:typeMotorisation.​value[x]</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-jdv-type-motorisation-cisis.html" opacity="1.0">JDV Type Motorisation CISIS</a>
+      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-motorisation-cisis" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 20250624152100, the version found through the package references">&#x1F4E6;20250624152100</td>
+    <td>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.2.0">Terminologies  de Santé v1.2</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Task.input:adresseDepart.​type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc."></td>
+    <td title="Version is not explicity stated. No matching value sets found">?</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>Task.input:adresseDestination.​type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc."></td>
+    <td title="Version is not explicity stated. No matching value sets found">?</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>Task.input:budgetPrevisionnel.​type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc."></td>
+    <td title="Version is not explicity stated. No matching value sets found">?</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>Task.input:budgetReel.​type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc."></td>
+    <td title="Version is not explicity stated. No matching value sets found">?</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>Task.input:distance.​type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc."></td>
+    <td title="Version is not explicity stated. No matching value sets found">?</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>Task.input:dureeTheorique.​type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc."></td>
+    <td title="Version is not explicity stated. No matching value sets found">?</td>
+    <td>Unknown</td>
+  </tr>
 </table>
 
         
@@ -1303,16 +1450,100 @@ filterDesc(document.getElementById('tddui-task-transportK'), 'obligation', docum
             <a name="inv-key"> </a>
             <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
-<table class="list">
-<tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Détails</b></td><td><b>Requirements</b></td></tr>
-<tr><td>dom-2</td><td>error</td><td>Task</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
-<tr><td>dom-3</td><td>error</td><td>Task</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
-<tr><td>dom-4</td><td>error</td><td>Task</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
-<tr><td>dom-5</td><td>error</td><td>Task</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
-<tr><td>dom-6</td><td>best practice</td><td>Task</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td><b>**ALL** elements</b></td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td><b>**ALL** extensions</b></td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>inv-1</td><td>error</td><td>Task</td><td>Last modified date must be greater than or equal to authored-on date.<br/>: lastModified.exists().not() or authoredOn.exists().not() or lastModified &gt;= authoredOn</td><td></td></tr>
+<table class="list presentation" data-fhir="generated-heirarchy">
+  <tr>
+    <td width="60">
+      <b>Id</b>
+    </td>
+    <td>
+      <b>Grade</b>
+    </td>
+    <td>
+      <b>Path(s)</b>
+    </td>
+    <td>
+      <b>Description</b>
+    </td>
+    <td>
+      <b>Expression</b>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-2</td>
+    <td>error</td>
+    <td>Task</td>
+    <td>If the resource is contained in another resource, it SHALL NOT contain nested Resources</td>
+    <td>
+      <code>contained.contained.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-3</td>
+    <td>error</td>
+    <td>Task</td>
+    <td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource</td>
+    <td>
+      <code>contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-4</td>
+    <td>error</td>
+    <td>Task</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated</td>
+    <td>
+      <code>contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-5</td>
+    <td>error</td>
+    <td>Task</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a security label</td>
+    <td>
+      <code>contained.meta.security.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-6</td>
+    <td>best practice</td>
+    <td>Task</td>
+    <td>A resource should have narrative for robust management</td>
+    <td>
+      <code>text.`div`.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ele-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** elements</b>
+    </td>
+    <td>All FHIR elements must have a @value or children</td>
+    <td>
+      <code>hasValue() or (children().count() &gt; id.count())</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ext-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** extensions</b>
+    </td>
+    <td>Must have either extensions or value[x], not both</td>
+    <td>
+      <code>extension.exists() != value.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>inv-1</td>
+    <td>error</td>
+    <td>Task</td>
+    <td>Last modified date must be greater than or equal to authored-on date.</td>
+    <td>
+      <code>lastModified.exists().not() or authoredOn.exists().not() or lastModified &gt;= authoredOn</code>
+    </td>
+  </tr>
 </table>
 
           
@@ -1581,7 +1812,7 @@ filterDesc(document.getElementById('tddui-task-transportK'), 'obligation', docum
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Duration">Duration</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Content to use in performing the task</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // e7c6ee0d-3d1a-4418-9f9d-83016a452a76
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 5d8edb43-3c7f-402d-a7a7-2c3fc1eb2f75
 document.getElementById('cbtddui-task-transportD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('tddui-task-transportD'), 'binding', document.getElementById('cbtddui-task-transportD-binding').checked, document.getElementById('pptddui-task-transportD'));
 document.getElementById('cbtddui-task-transportD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1592,10 +1823,57 @@ filterDesc(document.getElementById('tddui-task-transportD'), 'obligation', docum
           <a name="tx"> </a>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings (Differential)</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformité</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>Task.code</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-jdv-mode-de-transport-cisis.html">JdvModeDeTransportCisis</a><div><code>https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis"></button></div></td></tr>
-<tr><td>Task.input:typeMotorisation.value[x]</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-jdv-type-motorisation-cisis.html">JdvTypeMotorisationCisis</a><div><code>https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-motorisation-cisis</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-motorisation-cisis"></button></div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Statut</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>Task.code</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-jdv-mode-de-transport-cisis.html" opacity="0.5">JDV Mode De Transport CISIS</a>
+      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 20250624152101, the version found through the package references">&#x1F4E6;20250624152101</td>
+    <td>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.2.0">Terminologies  de Santé v1.2</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Task.input:typeMotorisation.​value[x]</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-jdv-type-motorisation-cisis.html" opacity="0.5">JDV Type Motorisation CISIS</a>
+      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-motorisation-cisis" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 20250624152100, the version found through the package references">&#x1F4E6;20250624152100</td>
+    <td>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.2.0">Terminologies  de Santé v1.2</a>
+    </td>
+  </tr>
 </table>
 
         
@@ -3035,7 +3313,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Meta">Meta</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // e7c6ee0d-3d1a-4418-9f9d-83016a452a76
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 5d8edb43-3c7f-402d-a7a7-2c3fc1eb2f75
 document.getElementById('cbtddui-task-transportS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('tddui-task-transportS'), 'binding', document.getElementById('cbtddui-task-transportS-binding').checked, document.getElementById('pptddui-task-transportS'));
 document.getElementById('cbtddui-task-transportS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -3045,43 +3323,252 @@ filterDesc(document.getElementById('tddui-task-transportS'), 'obligation', docum
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformité</b></td><td><b>ValueSet / Code</b></td><td><b>URI</b></td></tr>
-<tr><td>Task.language</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td title="A human language."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a><div><code>http://hl7.org/fhir/ValueSet/languages|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/languages|4.0.1"></button></div><div>From the FHIR Standard</div><table class="grid">
+<table class="list" data-fhir="generated-heirarchy">
   <tr>
-    <td style="font-size: 11px">
-      <b>Bindings Additionnels</b>
+    <td>
+      <b>Path</b>
     </td>
-    <td style="font-size: 11px">But</td>
+    <td>
+      <b>Statut</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
   </tr>
   <tr>
-    <td style="font-size: 11px">
-      <a href="http://hl7.org/fhir/R4/valueset-all-languages.html" title="http://hl7.org/fhir/ValueSet/all-languages">AllLanguages</a>
+    <td>Task.language</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]" opacity="1.0">preferred</a>
     </td>
-    <td style="font-size: 11px">
-      <a href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html" title="Un binding requis, à utiliser lorsque la force de binding est 'extensible' ou 'preferred'">Binding Max</a>
+    <td title="A human language.">
+      <a href="http://hl7.org/fhir/R4/valueset-languages.html" opacity="1.0">Common Languages</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/languages|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
     </td>
   </tr>
-</table>
-</td></tr>
-<tr><td>Task.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="The current status of the task."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-task-status.html">TaskStatus</a><div><code>http://hl7.org/fhir/ValueSet/task-status|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/task-status|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Task.statusReason</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes to identify the reason for current status.  These will typically be specific to a particular workflow."></td></tr>
-<tr><td>Task.businessStatus</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="The domain-specific business-contextual sub-state of the task.  For example: &quot;Blood drawn&quot;, &quot;IV inserted&quot;, &quot;Awaiting physician signature&quot;, etc."></td></tr>
-<tr><td>Task.intent</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="Distinguishes whether the task is a proposal, plan or full order."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-task-intent.html">TaskIntent</a><div><code>http://hl7.org/fhir/ValueSet/task-intent|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/task-intent|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Task.priority</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="The task's priority."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-request-priority.html">RequestPriority</a><div><code>http://hl7.org/fhir/ValueSet/request-priority|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/request-priority|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Task.code</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-jdv-mode-de-transport-cisis.html">JdvModeDeTransportCisis</a><div><code>https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis"></button></div></td></tr>
-<tr><td>Task.performerType</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td title="The type(s) of task performers allowed."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-performer-role.html">ProcedurePerformerRoleCodes</a><div><code>http://hl7.org/fhir/ValueSet/performer-role|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/performer-role|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Task.reasonCode</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Indicates why the task is needed.  E.g. Suspended because patient admitted to hospital."></td></tr>
-<tr><td>Task.input.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc."></td></tr>
-<tr><td>Task.input:typeMotorisation.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc.">Pattern Value: <a title="InputTaskTransportCodeSystem" href="CodeSystem-input-tddui-task-transport-codesystem.html#input-tddui-task-transport-codesystem-typeMotorisation">typeMotorisation</a></td></tr>
-<tr><td>Task.input:typeMotorisation.value[x]</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-jdv-type-motorisation-cisis.html">JdvTypeMotorisationCisis</a><div><code>https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-motorisation-cisis</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-motorisation-cisis"></button></div></td></tr>
-<tr><td>Task.input:adresseDepart.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc.">Pattern Value: <a title="InputTaskTransportCodeSystem" href="CodeSystem-input-tddui-task-transport-codesystem.html#input-tddui-task-transport-codesystem-adresseDepart">adresseDepart</a></td></tr>
-<tr><td>Task.input:adresseDestination.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc.">Pattern Value: <a title="InputTaskTransportCodeSystem" href="CodeSystem-input-tddui-task-transport-codesystem.html#input-tddui-task-transport-codesystem-adresseDestination">adresseDestination</a></td></tr>
-<tr><td>Task.input:budgetPrevisionnel.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc.">Pattern Value: <a title="InputTaskTransportCodeSystem" href="CodeSystem-input-tddui-task-transport-codesystem.html#input-tddui-task-transport-codesystem-budgetPrevisionnel">budgetPrevisionnel</a></td></tr>
-<tr><td>Task.input:budgetReel.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc.">Pattern Value: <a title="InputTaskTransportCodeSystem" href="CodeSystem-input-tddui-task-transport-codesystem.html#input-tddui-task-transport-codesystem-budgetReel">budgetReel</a></td></tr>
-<tr><td>Task.input:distance.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc.">Pattern Value: <a title="InputTaskTransportCodeSystem" href="CodeSystem-input-tddui-task-transport-codesystem.html#input-tddui-task-transport-codesystem-distance">distance</a></td></tr>
-<tr><td>Task.input:dureeTheorique.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc.">Pattern Value: <a title="InputTaskTransportCodeSystem" href="CodeSystem-input-tddui-task-transport-codesystem.html#input-tddui-task-transport-codesystem-dureeTheorique">dureeTheorique</a></td></tr>
-<tr><td>Task.output.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Identified issues&quot;, &quot;Preliminary results&quot;, &quot;Filler order&quot;, &quot;Final results&quot;, etc."></td></tr>
+  <tr>
+    <td>Task.status</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td title="The current status of the task.">
+      <a href="http://hl7.org/fhir/R4/valueset-task-status.html" opacity="1.0">TaskStatus</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/task-status|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Task.statusReason</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Codes to identify the reason for current status.  These will typically be specific to a particular workflow."></td>
+    <td title="Version is not explicity stated. No matching value sets found">?</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>Task.businessStatus</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="The domain-specific business-contextual sub-state of the task.  For example: &quot;Blood drawn&quot;, &quot;IV inserted&quot;, &quot;Awaiting physician signature&quot;, etc."></td>
+    <td title="Version is not explicity stated. No matching value sets found">?</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>Task.intent</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td title="Distinguishes whether the task is a proposal, plan or full order.">
+      <a href="http://hl7.org/fhir/R4/valueset-task-intent.html" opacity="1.0">TaskIntent</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/task-intent|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Task.priority</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td title="The task's priority.">
+      <a href="http://hl7.org/fhir/R4/valueset-request-priority.html" opacity="1.0">Request priority</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/request-priority|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Task.code</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-jdv-mode-de-transport-cisis.html" opacity="1.0">JDV Mode De Transport CISIS</a>
+      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 20250624152101, the version found through the package references">&#x1F4E6;20250624152101</td>
+    <td>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.2.0">Terminologies  de Santé v1.2</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Task.performerType</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]" opacity="1.0">preferred</a>
+    </td>
+    <td title="The type(s) of task performers allowed.">
+      <a href="http://hl7.org/fhir/R4/valueset-performer-role.html" opacity="1.0">Procedure Performer Role Codes</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/performer-role|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Task.reasonCode</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Indicates why the task is needed.  E.g. Suspended because patient admitted to hospital."></td>
+    <td title="Version is not explicity stated. No matching value sets found">?</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>Task.input.type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc."></td>
+    <td title="Version is not explicity stated. No matching value sets found">?</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>Task.input:typeMotorisation.​type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc."></td>
+    <td title="Version is not explicity stated. No matching value sets found">?</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>Task.input:typeMotorisation.​value[x]</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-jdv-type-motorisation-cisis.html" opacity="1.0">JDV Type Motorisation CISIS</a>
+      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-motorisation-cisis" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 20250624152100, the version found through the package references">&#x1F4E6;20250624152100</td>
+    <td>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.2.0">Terminologies  de Santé v1.2</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Task.input:adresseDepart.​type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc."></td>
+    <td title="Version is not explicity stated. No matching value sets found">?</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>Task.input:adresseDestination.​type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc."></td>
+    <td title="Version is not explicity stated. No matching value sets found">?</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>Task.input:budgetPrevisionnel.​type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc."></td>
+    <td title="Version is not explicity stated. No matching value sets found">?</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>Task.input:budgetReel.​type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc."></td>
+    <td title="Version is not explicity stated. No matching value sets found">?</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>Task.input:distance.​type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc."></td>
+    <td title="Version is not explicity stated. No matching value sets found">?</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>Task.input:dureeTheorique.​type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc."></td>
+    <td title="Version is not explicity stated. No matching value sets found">?</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>Task.output.type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Identified issues&quot;, &quot;Preliminary results&quot;, &quot;Filler order&quot;, &quot;Final results&quot;, etc."></td>
+    <td title="Version is not explicity stated. No matching value sets found">?</td>
+    <td>Unknown</td>
+  </tr>
 </table>
 
         
@@ -3091,16 +3578,100 @@ filterDesc(document.getElementById('tddui-task-transportS'), 'obligation', docum
             <a name="inv-snap"> </a>
             <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
-<table class="list">
-<tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Détails</b></td><td><b>Requirements</b></td></tr>
-<tr><td>dom-2</td><td>error</td><td>Task</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
-<tr><td>dom-3</td><td>error</td><td>Task</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
-<tr><td>dom-4</td><td>error</td><td>Task</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
-<tr><td>dom-5</td><td>error</td><td>Task</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
-<tr><td>dom-6</td><td>best practice</td><td>Task</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td><b>**ALL** elements</b></td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td><b>**ALL** extensions</b></td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>inv-1</td><td>error</td><td>Task</td><td>Last modified date must be greater than or equal to authored-on date.<br/>: lastModified.exists().not() or authoredOn.exists().not() or lastModified &gt;= authoredOn</td><td></td></tr>
+<table class="list presentation" data-fhir="generated-heirarchy">
+  <tr>
+    <td width="60">
+      <b>Id</b>
+    </td>
+    <td>
+      <b>Grade</b>
+    </td>
+    <td>
+      <b>Path(s)</b>
+    </td>
+    <td>
+      <b>Description</b>
+    </td>
+    <td>
+      <b>Expression</b>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-2</td>
+    <td>error</td>
+    <td>Task</td>
+    <td>If the resource is contained in another resource, it SHALL NOT contain nested Resources</td>
+    <td>
+      <code>contained.contained.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-3</td>
+    <td>error</td>
+    <td>Task</td>
+    <td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource</td>
+    <td>
+      <code>contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-4</td>
+    <td>error</td>
+    <td>Task</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated</td>
+    <td>
+      <code>contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-5</td>
+    <td>error</td>
+    <td>Task</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a security label</td>
+    <td>
+      <code>contained.meta.security.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-6</td>
+    <td>best practice</td>
+    <td>Task</td>
+    <td>A resource should have narrative for robust management</td>
+    <td>
+      <code>text.`div`.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ele-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** elements</b>
+    </td>
+    <td>All FHIR elements must have a @value or children</td>
+    <td>
+      <code>hasValue() or (children().count() &gt; id.count())</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ext-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** extensions</b>
+    </td>
+    <td>Must have either extensions or value[x], not both</td>
+    <td>
+      <code>extension.exists() != value.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>inv-1</td>
+    <td>error</td>
+    <td>Task</td>
+    <td>Last modified date must be greater than or equal to authored-on date.</td>
+    <td>
+      <code>lastModified.exists().not() or authoredOn.exists().not() or lastModified &gt;= authoredOn</code>
+    </td>
+  </tr>
 </table>
 
           
@@ -4214,7 +4785,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Duration">Duration</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Content to use in performing the task</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // e7c6ee0d-3d1a-4418-9f9d-83016a452a76
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 5d8edb43-3c7f-402d-a7a7-2c3fc1eb2f75
 document.getElementById('cbtddui-task-transportKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('tddui-task-transportKA'), 'binding', document.getElementById('cbtddui-task-transportKA-binding').checked, document.getElementById('pptddui-task-transportKA'));
 document.getElementById('cbtddui-task-transportKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -4224,20 +4795,167 @@ filterDesc(document.getElementById('tddui-task-transportKA'), 'obligation', docu
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformité</b></td><td><b>ValueSet / Code</b></td><td><b>URI</b></td></tr>
-<tr><td>Task.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="The current status of the task."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-task-status.html">TaskStatus</a><div><code>http://hl7.org/fhir/ValueSet/task-status|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/task-status|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Task.intent</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="Distinguishes whether the task is a proposal, plan or full order."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-task-intent.html">TaskIntent</a><div><code>http://hl7.org/fhir/ValueSet/task-intent|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/task-intent|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Task.code</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-jdv-mode-de-transport-cisis.html">JdvModeDeTransportCisis</a><div><code>https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis"></button></div></td></tr>
-<tr><td>Task.input.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc."></td></tr>
-<tr><td>Task.input:typeMotorisation.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc.">Pattern Value: <a title="InputTaskTransportCodeSystem" href="CodeSystem-input-tddui-task-transport-codesystem.html#input-tddui-task-transport-codesystem-typeMotorisation">typeMotorisation</a></td></tr>
-<tr><td>Task.input:typeMotorisation.value[x]</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-jdv-type-motorisation-cisis.html">JdvTypeMotorisationCisis</a><div><code>https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-motorisation-cisis</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-motorisation-cisis"></button></div></td></tr>
-<tr><td>Task.input:adresseDepart.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc.">Pattern Value: <a title="InputTaskTransportCodeSystem" href="CodeSystem-input-tddui-task-transport-codesystem.html#input-tddui-task-transport-codesystem-adresseDepart">adresseDepart</a></td></tr>
-<tr><td>Task.input:adresseDestination.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc.">Pattern Value: <a title="InputTaskTransportCodeSystem" href="CodeSystem-input-tddui-task-transport-codesystem.html#input-tddui-task-transport-codesystem-adresseDestination">adresseDestination</a></td></tr>
-<tr><td>Task.input:budgetPrevisionnel.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc.">Pattern Value: <a title="InputTaskTransportCodeSystem" href="CodeSystem-input-tddui-task-transport-codesystem.html#input-tddui-task-transport-codesystem-budgetPrevisionnel">budgetPrevisionnel</a></td></tr>
-<tr><td>Task.input:budgetReel.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc.">Pattern Value: <a title="InputTaskTransportCodeSystem" href="CodeSystem-input-tddui-task-transport-codesystem.html#input-tddui-task-transport-codesystem-budgetReel">budgetReel</a></td></tr>
-<tr><td>Task.input:distance.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc.">Pattern Value: <a title="InputTaskTransportCodeSystem" href="CodeSystem-input-tddui-task-transport-codesystem.html#input-tddui-task-transport-codesystem-distance">distance</a></td></tr>
-<tr><td>Task.input:dureeTheorique.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc.">Pattern Value: <a title="InputTaskTransportCodeSystem" href="CodeSystem-input-tddui-task-transport-codesystem.html#input-tddui-task-transport-codesystem-dureeTheorique">dureeTheorique</a></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Statut</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>Task.status</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td title="The current status of the task.">
+      <a href="http://hl7.org/fhir/R4/valueset-task-status.html" opacity="1.0">TaskStatus</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/task-status|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Task.intent</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td title="Distinguishes whether the task is a proposal, plan or full order.">
+      <a href="http://hl7.org/fhir/R4/valueset-task-intent.html" opacity="1.0">TaskIntent</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/task-intent|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Task.code</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-jdv-mode-de-transport-cisis.html" opacity="1.0">JDV Mode De Transport CISIS</a>
+      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 20250624152101, the version found through the package references">&#x1F4E6;20250624152101</td>
+    <td>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.2.0">Terminologies  de Santé v1.2</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Task.input.type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc."></td>
+    <td title="Version is not explicity stated. No matching value sets found">?</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>Task.input:typeMotorisation.​type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc."></td>
+    <td title="Version is not explicity stated. No matching value sets found">?</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>Task.input:typeMotorisation.​value[x]</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-jdv-type-motorisation-cisis.html" opacity="1.0">JDV Type Motorisation CISIS</a>
+      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-motorisation-cisis" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 20250624152100, the version found through the package references">&#x1F4E6;20250624152100</td>
+    <td>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.2.0">Terminologies  de Santé v1.2</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Task.input:adresseDepart.​type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc."></td>
+    <td title="Version is not explicity stated. No matching value sets found">?</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>Task.input:adresseDestination.​type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc."></td>
+    <td title="Version is not explicity stated. No matching value sets found">?</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>Task.input:budgetPrevisionnel.​type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc."></td>
+    <td title="Version is not explicity stated. No matching value sets found">?</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>Task.input:budgetReel.​type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc."></td>
+    <td title="Version is not explicity stated. No matching value sets found">?</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>Task.input:distance.​type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc."></td>
+    <td title="Version is not explicity stated. No matching value sets found">?</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>Task.input:dureeTheorique.​type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc."></td>
+    <td title="Version is not explicity stated. No matching value sets found">?</td>
+    <td>Unknown</td>
+  </tr>
 </table>
 
         
@@ -4247,16 +4965,100 @@ filterDesc(document.getElementById('tddui-task-transportKA'), 'obligation', docu
             <a name="inv-all-key"> </a>
             <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
-<table class="list">
-<tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Détails</b></td><td><b>Requirements</b></td></tr>
-<tr><td>dom-2</td><td>error</td><td>Task</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
-<tr><td>dom-3</td><td>error</td><td>Task</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
-<tr><td>dom-4</td><td>error</td><td>Task</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
-<tr><td>dom-5</td><td>error</td><td>Task</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
-<tr><td>dom-6</td><td>best practice</td><td>Task</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td><b>**ALL** elements</b></td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td><b>**ALL** extensions</b></td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>inv-1</td><td>error</td><td>Task</td><td>Last modified date must be greater than or equal to authored-on date.<br/>: lastModified.exists().not() or authoredOn.exists().not() or lastModified &gt;= authoredOn</td><td></td></tr>
+<table class="list presentation" data-fhir="generated-heirarchy">
+  <tr>
+    <td width="60">
+      <b>Id</b>
+    </td>
+    <td>
+      <b>Grade</b>
+    </td>
+    <td>
+      <b>Path(s)</b>
+    </td>
+    <td>
+      <b>Description</b>
+    </td>
+    <td>
+      <b>Expression</b>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-2</td>
+    <td>error</td>
+    <td>Task</td>
+    <td>If the resource is contained in another resource, it SHALL NOT contain nested Resources</td>
+    <td>
+      <code>contained.contained.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-3</td>
+    <td>error</td>
+    <td>Task</td>
+    <td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource</td>
+    <td>
+      <code>contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-4</td>
+    <td>error</td>
+    <td>Task</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated</td>
+    <td>
+      <code>contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-5</td>
+    <td>error</td>
+    <td>Task</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a security label</td>
+    <td>
+      <code>contained.meta.security.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-6</td>
+    <td>best practice</td>
+    <td>Task</td>
+    <td>A resource should have narrative for robust management</td>
+    <td>
+      <code>text.`div`.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ele-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** elements</b>
+    </td>
+    <td>All FHIR elements must have a @value or children</td>
+    <td>
+      <code>hasValue() or (children().count() &gt; id.count())</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ext-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** extensions</b>
+    </td>
+    <td>Must have either extensions or value[x], not both</td>
+    <td>
+      <code>extension.exists() != value.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>inv-1</td>
+    <td>error</td>
+    <td>Task</td>
+    <td>Last modified date must be greater than or equal to authored-on date.</td>
+    <td>
+      <code>lastModified.exists().not() or authoredOn.exists().not() or lastModified &gt;= authoredOn</code>
+    </td>
+  </tr>
 </table>
 
           
@@ -4525,7 +5327,7 @@ filterDesc(document.getElementById('tddui-task-transportKA'), 'obligation', docu
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Duration">Duration</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Content to use in performing the task</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // e7c6ee0d-3d1a-4418-9f9d-83016a452a76
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 5d8edb43-3c7f-402d-a7a7-2c3fc1eb2f75
 document.getElementById('cbtddui-task-transportDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('tddui-task-transportDA'), 'binding', document.getElementById('cbtddui-task-transportDA-binding').checked, document.getElementById('pptddui-task-transportDA'));
 document.getElementById('cbtddui-task-transportDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -4535,10 +5337,57 @@ filterDesc(document.getElementById('tddui-task-transportDA'), 'obligation', docu
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings (Differential)</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformité</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>Task.code</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-jdv-mode-de-transport-cisis.html">JdvModeDeTransportCisis</a><div><code>https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis"></button></div></td></tr>
-<tr><td>Task.input:typeMotorisation.value[x]</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-jdv-type-motorisation-cisis.html">JdvTypeMotorisationCisis</a><div><code>https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-motorisation-cisis</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-motorisation-cisis"></button></div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Statut</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>Task.code</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-jdv-mode-de-transport-cisis.html" opacity="0.5">JDV Mode De Transport CISIS</a>
+      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 20250624152101, the version found through the package references">&#x1F4E6;20250624152101</td>
+    <td>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.2.0">Terminologies  de Santé v1.2</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Task.input:typeMotorisation.​value[x]</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-jdv-type-motorisation-cisis.html" opacity="0.5">JDV Type Motorisation CISIS</a>
+      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-motorisation-cisis" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 20250624152100, the version found through the package references">&#x1F4E6;20250624152100</td>
+    <td>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.2.0">Terminologies  de Santé v1.2</a>
+    </td>
+  </tr>
 </table>
 
         
@@ -5978,7 +6827,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Meta">Meta</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // e7c6ee0d-3d1a-4418-9f9d-83016a452a76
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 5d8edb43-3c7f-402d-a7a7-2c3fc1eb2f75
 document.getElementById('cbtddui-task-transportSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('tddui-task-transportSA'), 'binding', document.getElementById('cbtddui-task-transportSA-binding').checked, document.getElementById('pptddui-task-transportSA'));
 document.getElementById('cbtddui-task-transportSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -5988,43 +6837,252 @@ filterDesc(document.getElementById('tddui-task-transportSA'), 'obligation', docu
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformité</b></td><td><b>ValueSet / Code</b></td><td><b>URI</b></td></tr>
-<tr><td>Task.language</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td title="A human language."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a><div><code>http://hl7.org/fhir/ValueSet/languages|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/languages|4.0.1"></button></div><div>From the FHIR Standard</div><table class="grid">
+<table class="list" data-fhir="generated-heirarchy">
   <tr>
-    <td style="font-size: 11px">
-      <b>Bindings Additionnels</b>
+    <td>
+      <b>Path</b>
     </td>
-    <td style="font-size: 11px">But</td>
+    <td>
+      <b>Statut</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
   </tr>
   <tr>
-    <td style="font-size: 11px">
-      <a href="http://hl7.org/fhir/R4/valueset-all-languages.html" title="http://hl7.org/fhir/ValueSet/all-languages">AllLanguages</a>
+    <td>Task.language</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]" opacity="1.0">preferred</a>
     </td>
-    <td style="font-size: 11px">
-      <a href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html" title="Un binding requis, à utiliser lorsque la force de binding est 'extensible' ou 'preferred'">Binding Max</a>
+    <td title="A human language.">
+      <a href="http://hl7.org/fhir/R4/valueset-languages.html" opacity="1.0">Common Languages</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/languages|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
     </td>
   </tr>
-</table>
-</td></tr>
-<tr><td>Task.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="The current status of the task."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-task-status.html">TaskStatus</a><div><code>http://hl7.org/fhir/ValueSet/task-status|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/task-status|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Task.statusReason</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes to identify the reason for current status.  These will typically be specific to a particular workflow."></td></tr>
-<tr><td>Task.businessStatus</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="The domain-specific business-contextual sub-state of the task.  For example: &quot;Blood drawn&quot;, &quot;IV inserted&quot;, &quot;Awaiting physician signature&quot;, etc."></td></tr>
-<tr><td>Task.intent</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="Distinguishes whether the task is a proposal, plan or full order."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-task-intent.html">TaskIntent</a><div><code>http://hl7.org/fhir/ValueSet/task-intent|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/task-intent|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Task.priority</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="The task's priority."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-request-priority.html">RequestPriority</a><div><code>http://hl7.org/fhir/ValueSet/request-priority|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/request-priority|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Task.code</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-jdv-mode-de-transport-cisis.html">JdvModeDeTransportCisis</a><div><code>https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis"></button></div></td></tr>
-<tr><td>Task.performerType</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td title="The type(s) of task performers allowed."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-performer-role.html">ProcedurePerformerRoleCodes</a><div><code>http://hl7.org/fhir/ValueSet/performer-role|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/performer-role|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Task.reasonCode</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Indicates why the task is needed.  E.g. Suspended because patient admitted to hospital."></td></tr>
-<tr><td>Task.input.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc."></td></tr>
-<tr><td>Task.input:typeMotorisation.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc.">Pattern Value: <a title="InputTaskTransportCodeSystem" href="CodeSystem-input-tddui-task-transport-codesystem.html#input-tddui-task-transport-codesystem-typeMotorisation">typeMotorisation</a></td></tr>
-<tr><td>Task.input:typeMotorisation.value[x]</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-jdv-type-motorisation-cisis.html">JdvTypeMotorisationCisis</a><div><code>https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-motorisation-cisis</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-motorisation-cisis"></button></div></td></tr>
-<tr><td>Task.input:adresseDepart.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc.">Pattern Value: <a title="InputTaskTransportCodeSystem" href="CodeSystem-input-tddui-task-transport-codesystem.html#input-tddui-task-transport-codesystem-adresseDepart">adresseDepart</a></td></tr>
-<tr><td>Task.input:adresseDestination.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc.">Pattern Value: <a title="InputTaskTransportCodeSystem" href="CodeSystem-input-tddui-task-transport-codesystem.html#input-tddui-task-transport-codesystem-adresseDestination">adresseDestination</a></td></tr>
-<tr><td>Task.input:budgetPrevisionnel.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc.">Pattern Value: <a title="InputTaskTransportCodeSystem" href="CodeSystem-input-tddui-task-transport-codesystem.html#input-tddui-task-transport-codesystem-budgetPrevisionnel">budgetPrevisionnel</a></td></tr>
-<tr><td>Task.input:budgetReel.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc.">Pattern Value: <a title="InputTaskTransportCodeSystem" href="CodeSystem-input-tddui-task-transport-codesystem.html#input-tddui-task-transport-codesystem-budgetReel">budgetReel</a></td></tr>
-<tr><td>Task.input:distance.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc.">Pattern Value: <a title="InputTaskTransportCodeSystem" href="CodeSystem-input-tddui-task-transport-codesystem.html#input-tddui-task-transport-codesystem-distance">distance</a></td></tr>
-<tr><td>Task.input:dureeTheorique.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc.">Pattern Value: <a title="InputTaskTransportCodeSystem" href="CodeSystem-input-tddui-task-transport-codesystem.html#input-tddui-task-transport-codesystem-dureeTheorique">dureeTheorique</a></td></tr>
-<tr><td>Task.output.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Identified issues&quot;, &quot;Preliminary results&quot;, &quot;Filler order&quot;, &quot;Final results&quot;, etc."></td></tr>
+  <tr>
+    <td>Task.status</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td title="The current status of the task.">
+      <a href="http://hl7.org/fhir/R4/valueset-task-status.html" opacity="1.0">TaskStatus</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/task-status|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Task.statusReason</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Codes to identify the reason for current status.  These will typically be specific to a particular workflow."></td>
+    <td title="Version is not explicity stated. No matching value sets found">?</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>Task.businessStatus</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="The domain-specific business-contextual sub-state of the task.  For example: &quot;Blood drawn&quot;, &quot;IV inserted&quot;, &quot;Awaiting physician signature&quot;, etc."></td>
+    <td title="Version is not explicity stated. No matching value sets found">?</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>Task.intent</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td title="Distinguishes whether the task is a proposal, plan or full order.">
+      <a href="http://hl7.org/fhir/R4/valueset-task-intent.html" opacity="1.0">TaskIntent</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/task-intent|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Task.priority</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td title="The task's priority.">
+      <a href="http://hl7.org/fhir/R4/valueset-request-priority.html" opacity="1.0">Request priority</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/request-priority|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Task.code</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-jdv-mode-de-transport-cisis.html" opacity="1.0">JDV Mode De Transport CISIS</a>
+      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 20250624152101, the version found through the package references">&#x1F4E6;20250624152101</td>
+    <td>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.2.0">Terminologies  de Santé v1.2</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Task.performerType</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]" opacity="1.0">preferred</a>
+    </td>
+    <td title="The type(s) of task performers allowed.">
+      <a href="http://hl7.org/fhir/R4/valueset-performer-role.html" opacity="1.0">Procedure Performer Role Codes</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/performer-role|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Task.reasonCode</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Indicates why the task is needed.  E.g. Suspended because patient admitted to hospital."></td>
+    <td title="Version is not explicity stated. No matching value sets found">?</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>Task.input.type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc."></td>
+    <td title="Version is not explicity stated. No matching value sets found">?</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>Task.input:typeMotorisation.​type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc."></td>
+    <td title="Version is not explicity stated. No matching value sets found">?</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>Task.input:typeMotorisation.​value[x]</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-jdv-type-motorisation-cisis.html" opacity="1.0">JDV Type Motorisation CISIS</a>
+      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-motorisation-cisis" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 20250624152100, the version found through the package references">&#x1F4E6;20250624152100</td>
+    <td>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.2.0">Terminologies  de Santé v1.2</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Task.input:adresseDepart.​type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc."></td>
+    <td title="Version is not explicity stated. No matching value sets found">?</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>Task.input:adresseDestination.​type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc."></td>
+    <td title="Version is not explicity stated. No matching value sets found">?</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>Task.input:budgetPrevisionnel.​type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc."></td>
+    <td title="Version is not explicity stated. No matching value sets found">?</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>Task.input:budgetReel.​type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc."></td>
+    <td title="Version is not explicity stated. No matching value sets found">?</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>Task.input:distance.​type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc."></td>
+    <td title="Version is not explicity stated. No matching value sets found">?</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>Task.input:dureeTheorique.​type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Comparison source&quot;, &quot;Applicable consent&quot;, &quot;Concomitent Medications&quot;, etc."></td>
+    <td title="Version is not explicity stated. No matching value sets found">?</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>Task.output.type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. &quot;Identified issues&quot;, &quot;Preliminary results&quot;, &quot;Filler order&quot;, &quot;Final results&quot;, etc."></td>
+    <td title="Version is not explicity stated. No matching value sets found">?</td>
+    <td>Unknown</td>
+  </tr>
 </table>
 
         
@@ -6034,16 +7092,100 @@ filterDesc(document.getElementById('tddui-task-transportSA'), 'obligation', docu
             <a name="inv-all-snap"> </a>
             <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
-<table class="list">
-<tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Détails</b></td><td><b>Requirements</b></td></tr>
-<tr><td>dom-2</td><td>error</td><td>Task</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
-<tr><td>dom-3</td><td>error</td><td>Task</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
-<tr><td>dom-4</td><td>error</td><td>Task</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
-<tr><td>dom-5</td><td>error</td><td>Task</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
-<tr><td>dom-6</td><td>best practice</td><td>Task</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td><b>**ALL** elements</b></td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td><b>**ALL** extensions</b></td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>inv-1</td><td>error</td><td>Task</td><td>Last modified date must be greater than or equal to authored-on date.<br/>: lastModified.exists().not() or authoredOn.exists().not() or lastModified &gt;= authoredOn</td><td></td></tr>
+<table class="list presentation" data-fhir="generated-heirarchy">
+  <tr>
+    <td width="60">
+      <b>Id</b>
+    </td>
+    <td>
+      <b>Grade</b>
+    </td>
+    <td>
+      <b>Path(s)</b>
+    </td>
+    <td>
+      <b>Description</b>
+    </td>
+    <td>
+      <b>Expression</b>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-2</td>
+    <td>error</td>
+    <td>Task</td>
+    <td>If the resource is contained in another resource, it SHALL NOT contain nested Resources</td>
+    <td>
+      <code>contained.contained.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-3</td>
+    <td>error</td>
+    <td>Task</td>
+    <td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource</td>
+    <td>
+      <code>contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-4</td>
+    <td>error</td>
+    <td>Task</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated</td>
+    <td>
+      <code>contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-5</td>
+    <td>error</td>
+    <td>Task</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a security label</td>
+    <td>
+      <code>contained.meta.security.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-6</td>
+    <td>best practice</td>
+    <td>Task</td>
+    <td>A resource should have narrative for robust management</td>
+    <td>
+      <code>text.`div`.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ele-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** elements</b>
+    </td>
+    <td>All FHIR elements must have a @value or children</td>
+    <td>
+      <code>hasValue() or (children().count() &gt; id.count())</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ext-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** extensions</b>
+    </td>
+    <td>Must have either extensions or value[x], not both</td>
+    <td>
+      <code>extension.exists() != value.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>inv-1</td>
+    <td>error</td>
+    <td>Task</td>
+    <td>Last modified date must be greater than or equal to authored-on date.</td>
+    <td>
+      <code>lastModified.exists().not() or authoredOn.exists().not() or lastModified &gt;= authoredOn</code>
+    </td>
+  </tr>
 </table>
 
           
@@ -6321,7 +7463,7 @@ Résumé
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 30, 2025 16:48+0000">2025-09-30</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Oct 1, 2025 14:46+0000">2025-10-01</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
