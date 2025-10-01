@@ -21,7 +21,8 @@ Les ressources utilisables sont :
 * [TDDUITaskTransport](StructureDefinition-tddui-task-transport.html) représentant le transport,
 * [TDDUITaskTransportProfessionnel](StructureDefinition-tddui-task-transport-professionnel.html) représentant le transport du professionnel,
 * [TDDUITaskTransportUsager](StructureDefinition-tddui-task-transport-usager.html) représentant le transport de l'usager
-  
+* [TDDUITaskTransportUsager](StructureDefinition-tddui-task-transport-usager.html) représentant le transport de l'usager
+* [TDDUIQuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.html) représentant les réponses aux questionnaires dans le cadre des évaluations 
 ### Flux 1.2 Resultat de la transmission de données DUI
 
 Si la création des ressources contenue dans le Bundle est correctement effectuée, le Consommateur doit retourner un code HTTPS 201 « Created » ainsi que les ressources créées avec les attributs `id`, `lastUpdated` et `versionId` mis à jour.
