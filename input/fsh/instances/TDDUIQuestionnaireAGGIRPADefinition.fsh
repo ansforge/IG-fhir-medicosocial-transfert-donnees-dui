@@ -78,7 +78,7 @@ Usage: #definition
 * item[=].item[=].item[=].code = $terminologie-cisis#MED-1309 "fait correctement"
 * item[=].item[=].item[=].text = "fait correctement"
 * item[=].item[=].item[+].type = #boolean
-* item[=].item[=].item[=].linkId = "laver-commentaire"
+* item[=].item[=].item[=].linkId = "laver-habit"
 * item[=].item[=].item[=].code = $terminologie-cisis#MED-1310 "fait habituellement"
 * item[=].item[=].item[=].text = "fait habituellement"
 * item[=].item[=].item[+].type = #text

@@ -32,3 +32,29 @@ Le profil permet de communiquer les grilles définies suivantes :
 
 * status.extension contains
     TDDUICancelReason named TDDUICancelReason 0..1
+
+Mapping:  ConceptMetier_TDDUIQuestionnaireResponse
+Source:   TDDUIQuestionnaireResponse
+Target: "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"
+Id:       specmetier-to-TDDUIQuestionnaireResponse
+Title:    "Evaluation"
+* -> "Evaluation"
+
+* identifier -> "idEvaluation"
+* authored -> "dateEvaluation"
+* subject -> "Usager"
+* encounter -> "Evenement"
+* extension[TDDUIAttachment] -> "pieceJointeEvaluation"
+* extension[TDDUIResponsible] -> "Responsable"
+* author -> "Auteur"
+* source -> "Evaluateur"
+* status.extension[TDDUICancelReason] -> "Statut.motifNonRealisation"
+* meta.lastUpdated -> "Statut.dateStatut"
+* item.answer.valueCoding -> "resultatEvaluation"
+* item.text -> "commentaireEvaluation"
+* item.item -> "«premier niveau»DetailEvaluation"
+* item.item.answer -> "resultatChampsEvalue"
+* item.item.text -> "commentaire "
+* item.item.item -> "«deuxième niveau»DetailEvaluation"
+* item.item.item.answer -> "resultatChampsEvalue"
+* item.item.item.text -> "commentaire"

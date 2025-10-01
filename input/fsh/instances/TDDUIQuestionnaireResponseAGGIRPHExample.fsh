@@ -61,7 +61,7 @@ Usage: #example
 * item.answer.item[=].answer.item[+].linkId = "laver-correct"
 * item.answer.item[=].answer.item[=].text = "fait correctement"
 * item.answer.item[=].answer.item[=].answer.valueBoolean = false
-* item.answer.item[=].answer.item[+].linkId = "laver-commentaire"
+* item.answer.item[=].answer.item[+].linkId = "laver-habit"
 * item.answer.item[=].answer.item[=].text = "fait habituellement"
 * item.answer.item[=].answer.item[=].answer.valueBoolean = false
 * item.answer.item[+].linkId = "s'habiller"
