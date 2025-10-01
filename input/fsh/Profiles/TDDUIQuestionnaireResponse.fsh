@@ -14,6 +14,8 @@ Le profil permet de communiquer les grilles définies suivantes :
 - Evaluation situation SSIAD
 """
 
+* questionnaire 1..1
+
 * subject 1..1
 * subject only Reference(TDDUIPatient or TDDUIPatientINS)
 
