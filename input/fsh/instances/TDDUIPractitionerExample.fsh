@@ -8,9 +8,11 @@ Description: "Exemple d'un professionnel de santé"
 
 * qualification[degree].code.coding[degree].code = #DE09
 * qualification[degree].code.coding[degree].display = "DE Infirmier"
+* qualification[degree].code.coding[degree].system = "https://mos.esante.gouv.fr/NOS/TRE_R48-DiplomeEtatFrancais/FHIR/TRE-R48-DiplomeEtatFrancais"
 
 * qualification[exercicePro].code.coding[profession].code = #60
 * qualification[exercicePro].code.coding[profession].display = "Infirmier"
+* qualification[exercicePro].code.coding[profession].system = "https://mos.esante.gouv.fr/NOS/TRE_G15-ProfessionSante/FHIR/TRE-G15-ProfessionSante"
 
 * name.family = "Martin"
 * name.given = "Claire"

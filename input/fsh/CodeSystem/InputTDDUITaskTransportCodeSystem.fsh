@@ -15,6 +15,6 @@ Description: "CodeSystem pour la définition des éléments spécifiques des inp
 * #budgetReel "Budget réel pour assurer le transport de la personne physique."
 * #distance "Distance du transport de la personne physique."
 * #dureeTheorique "Durée théorique du transport de la personne physique."
-* #accompagnement "Accompagnement nécessaire ou non de l'usager. "
+* #accompagnement "Accompagnement nécessaire ou non de l'usager."
 * #asepsie "Lors du transport de l'usager l'asepsie est rigoureusement respectée ou n'est pas nécessaire."
 * #natureTransport "Nature du transport de l'usager."
