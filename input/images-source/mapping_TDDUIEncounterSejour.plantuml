@@ -10,7 +10,8 @@ object "**TDDUIPatient**" as TDDUIPatient #LimeGreen {
 }
 
 map "**EntiteJuridique : TDDUIOrganization**" as TDDUIOrganization #back:LightGoldenRodYellow;header:Gold {
-    ESSMS
+    idNat_Struct => <&layers> identifier:idNatSt
+    raisonSocial => name
 }
 
 map "**Sejour : TDDUIEncounterSejour**" as Sejour #back:AliceBlue;header:LightSkyBlue {

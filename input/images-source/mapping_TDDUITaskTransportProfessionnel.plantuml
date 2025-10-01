@@ -9,10 +9,6 @@ object "**TDDUIEncounterEvenement**" as TDDUIEncounterEvenement #8dd3c7 {
     Evenement
 }
 
-object "**TDDUIOrganization**" as TDDUIOrganization #bebada {
-    transporteur
-}
-
 object "**TDDUIPractitioner**" as TDDUIPractitioner #d9d9d9 {
     Professionnel
 }
@@ -20,6 +16,8 @@ object "**TDDUIPractitioner**" as TDDUIPractitioner #d9d9d9 {
 map "**TransportProfessionnel : TDDUITaskTransportProfessionnel**" as TransportProfessionnel #bc80bd {
     idTrajet => identifier
     typeTransport => code
+    Evenement => encounter
+    transporteur => owner
     typeMotorisation => <&layers> input:typeMotorisation
     adresseDepart => <&layers> input:adresseDepart
     adresseDestination => <&layers> input:adresseDestination
@@ -31,7 +29,6 @@ map "**TransportProfessionnel : TDDUITaskTransportProfessionnel**" as TransportP
 }
 
 TransportProfessionnel -u-> TDDUIPractitioner : for
-TransportProfessionnel -u-> TDDUIOrganization : owner
 TransportProfessionnel -u-> TDDUIEncounterEvenement : encounter
 
 @enduml
