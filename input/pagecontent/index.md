@@ -90,10 +90,10 @@ Les ressources profilées dans le cadre de ce guide d'implémentation sont les s
 | <a href="https://hl7.org/fhir/R4/encounter.html">Encounter</a> | [TDDUIEncounterEvenement](StructureDefinition-tddui-encounter-evenement.html) | Profil de la ressource Encounter permettant de regrouper les informations relatives au séjour d'un usager dans une structure ESSMS |
 | <a href="https://hl7.org/fhir/R4/Practitioner.html">Practitioner</a> | [TDDUIPractitioner](StructureDefinition-tddui-practitioner.html) | Profil de la ressource FRCorePractitionerProfile permettant de représenter un Profesionnel. |
 | <a href="https://hl7.org/fhir/R4/PractitionerRole.html">PractitionerRole</a> | [TDDUIPractitionerRole](StructureDefinition-tddui-practitioner-role.html) | Profil de la ressource FRCorePractitionerRole permettant de représenter un Professionnel. |
+| <a href="https://hl7.org/fhir/R4/QuestionnaireResponse.html">QuestionnaireResponse</a> | [TDDUIQuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.html) | Profil de la ressource QuestionnaireResponse utilisé pour transmettre les réponses aux questionnaires dans le cadre des évaluations. |
 | <a href="https://hl7.org/fhir/R4/Task.html">Task</a> | [TDDUITaskTransport](StructureDefinition-tddui-task-transport.html) | Profil de la ressource Task permettant de représenter le transport. |
 | <a href="https://hl7.org/fhir/R4/Task.html">Task</a> | [TDDUITaskTransportProfessionnel](StructureDefinition-tddui-task-transport-professionnel.html) | Profil de la ressource TDDUITaskTransport permettant de représenter le transport du professionnel. |
 | <a href="https://hl7.org/fhir/R4/Task.html">Task</a> | [TDDUITaskTransportUsager](StructureDefinition-tddui-task-transport-usager.html) | Profil de la ressource TDDUITaskTransport permettant de représenter le transport de l'usager. |
-| <a href="https://hl7.org/fhir/R4/QuestionnaireResponse.html">QUestionnaireResponse</a> | [TDDUIQuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.html) | Profil de la ressource QuestionnaireResponse utilisé pour transmettre les réponses aux questionnaires dans le cadre des évaluations. |
 
 ### Flux
 
