@@ -1,15 +1,11 @@
 @startuml
 
 map "meta" as meta #DarkGray {
-    dateModificationEvenement => lastUpdated
+    dateModificationEvenement\nStatut.dateStatut => lastUpdated
 }
 
 map "Statut.statut : status" as Statutstatut #DarkGray {
-    statut.motifNonRealisation => <&plus> tddui-event-cancel-reason
-}
-
-map "participant" as participant #DarkGray {
-    statut.auteur => type
+    Statut.motifNonRealisation => <&plus> tddui-event-cancel-reason
 }
 
 map "period" as period #DarkGray {
@@ -23,6 +19,7 @@ object "**TDDUIPatient**" as TDDUIPatient #fdb462 {
 
 object "**TDDUIPractitioner**" as TDDUIPractitioner #d9d9d9 {
     Professionnel
+    Statut.auteur
 }
 
 object "**TDDUIOrganization**" as TDDUIOrganization #bebada {
@@ -49,16 +46,15 @@ map "**Événement : TDDUIEncounterEvenement**" as Événement #8dd3c7 {
     idEvenement => identifier
     typeEvenement => type
     lieuEvenement => location
-    meta *-> meta
     Statut.statut => status
-    participant *-> participant
+    meta *-> meta
     period *-> period
 }
 
-Événement::Statut.statut -u-> Statutstatut
-Événement -d-> TDDUIPatient : subject
-Événement -l-> TDDUIPractitioner : participant.individual
-Événement -r-> TDDUIOrganization : serviceProvider
+Événement::Statut.statut -l-> Statutstatut
+Événement --> TDDUIPatient : subject
+Événement --> TDDUIPractitioner : participant.individual\n<&layers> participant:auteurStatut\n<&layers> participant:professionnel
+Événement --> TDDUIOrganization : serviceProvider
 Événement -u-> TDDUIEncounterSejour : partOf
 
 @enduml
