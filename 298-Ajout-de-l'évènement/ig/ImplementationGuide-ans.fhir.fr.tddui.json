@@ -10,7 +10,7 @@
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2025-10-02T09:38:01+00:00",
+  "date" : "2025-10-02T12:26:13+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -848,6 +848,18 @@
       },
       "name" : "TDDUI Encounter FR Core CodeSystem v2-0203",
       "description" : "TDDUI Encounter's identifier",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/TDDUIEncounterParticipant"
+      },
+      "name" : "TDDUI Encounter Participant Type",
+      "description" : "CodeSystem for the participant types in TDDUI Encounter",
       "exampleBoolean" : false
     },
     {
