@@ -24,7 +24,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "Encounter.meta.lastUpdated","Encounter.meta.lastUpdated","","","",0,1,"","","Y","instant {[]} {[]}
 ","When the resource version last changed","When the resource last changed - e.g. when the version changed.","This value is always populated except when the resource is first being created. The server / resource manager sets this value; what a client provides is irrelevant. This is equivalent to the HTTP Last-Modified and SHOULD have the same value on a [read](http://hl7.org/fhir/R4/http.html#read) interaction.","","","","","","","","",,,,,"",,,,"Meta.lastUpdated",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","dateModificationEvenement"
+","dateModificationEvenement, Statut.dateStatut"
 "Encounter.meta.source","Encounter.meta.source","","","",0,1,"","","Y","uri {[]} {[]}
 ","Identifies where the resource comes from","A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](http://hl7.org/fhir/R4/provenance.html#) information that can be used to track or differentiate the source of information in the resource. The source may identify another FHIR server, document, message, database, etc.","In the provenance resource, this corresponds to Provenance.entity.what[x]. The exact use of the source (and the implied Provenance.entity.role) is left to implementer discretion. Only one nominated source is allowed; for additional provenance details, a full Provenance resource should be used. 
 
@@ -392,7 +392,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Indicates the urgency of the encounter","Indicates the urgency of the encounter.","","","","","","","","","",,"example","Indicates the urgency of the encounter.","http://terminology.hl7.org/ValueSet/v3-ActPriority","",,,,"Encounter.priority",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".priorityCode","FiveWs.grade","PV2-25"
 "Encounter.subject","Encounter.subject","","patient
-","",1,1,"","","Y","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient], CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins]]}
+","",1,1,"","","Y","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient], CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins], CanonicalType[http://hl7.org/fhir/StructureDefinition/Group]]}
 ","The patient or group present at the encounter","The patient or group present at the encounter.","While the encounter is always about the patient, the patient might not actually be known in all contexts of use, and there may be a group of patients that could be anonymous (such as in a group therapy for Alcoholics Anonymous - where the recording of the encounter could be used for billing on the number of people/staff and not important to the context of the specific patients) or alternately in veterinary care a herd of sheep receiving treatment (where the animals are not individually tracked).","","","","","","","","",,,,,"",,,,"Encounter.subject",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Usager","Event.subject",".participation[typeCode=SBJ]/role[classCode=PAT]","FiveWs.subject[x]","FiveWs.subject","PID-3"
 "Encounter.episodeOfCare","Encounter.episodeOfCare","","","",0,*,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/EpisodeOfCare|4.0.1]]}
@@ -420,16 +420,16 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
 "Encounter.participant.type","Encounter.participant.type","","","",0,*,"","","Y","CodeableConcept {[]} {[]}
 ","Role of participant in encounter","Role of participant in encounter.","The participant type indicates how an individual participates in an encounter. It includes non-practitioner participants, and for practitioners this is to describe the action type in the context of this encounter (e.g. Admitting Dr, Attending Dr, Translator, Consulting Dr). This is different to the practitioner roles which are functional roles, derived from terms of employment, education, licensing, etc.","","","","","","","","",,"extensible","Role of participant in encounter.","http://hl7.org/fhir/ValueSet/encounter-participant-type|4.0.1","",,,,"Encounter.participant.type",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","Event.performer.function",".functionCode","ROL-3 (or maybe PRT-4)"
+","Statut.auteur","Event.performer.function",".functionCode","ROL-3 (or maybe PRT-4)"
 "Encounter.participant.period","Encounter.participant.period","","","",0,1,"","","","Period {[]} {[]}
 ","Period of time during the encounter that the participant participated","The period of time that the specified participant participated in the encounter. These can overlap or be sub-sets of the overall encounter's period.","","","","","","","","","",,,,,"",,,,"Encounter.participant.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".time","ROL-5, ROL-6 (or maybe PRT-5)"
 "Encounter.participant.individual","Encounter.participant.individual","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner], CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson]]}
 ","Persons involved in the encounter other than the patient","Persons involved in the encounter other than the patient.","","","","","","","","","",,,,,"",,,,"Encounter.participant.individual",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","Event.performer.actor",".role","FiveWs.who","ROL-4"
+","Professionnel","Event.performer.actor",".role","FiveWs.who","ROL-4"
 "Encounter.participant:auteurStatut","Encounter.participant","auteurStatut","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Professionnel ayant effectué la dernière modification du statut associé à la ressource.","The list of people responsible for providing the service.","","","","","","","","","",,,,,"",,,,"Encounter.participant",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","Statut.auteur","Event.performer",".participation[typeCode=PFM]","ROL"
+","Event.performer",".participation[typeCode=PFM]","ROL"
 "Encounter.participant:auteurStatut.id","Encounter.participant.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Encounter.participant:auteurStatut.extension","Encounter.participant.extension","","extensions
@@ -445,9 +445,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Encounter.participant:auteurStatut.type","Encounter.participant.type","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Role of participant in encounter","Role of participant in encounter.","The participant type indicates how an individual participates in an encounter. It includes non-practitioner participants, and for practitioners this is to describe the action type in the context of this encounter (e.g. Admitting Dr, Attending Dr, Translator, Consulting Dr). This is different to the practitioner roles which are functional roles, derived from terms of employment, education, licensing, etc.","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/TDDUIEncounterParticipant""/>
-    <code value=""AUT""/>
-    <display value=""Auteur du statut de la ressource""/>
+    <system value=""http://terminology.hl7.org/CodeSystem/v3-ParticipationType""/>
+    <code value=""PART""/>
   </coding>
 </valueCodeableConcept>","","","",,"extensible","Role of participant in encounter.","http://hl7.org/fhir/ValueSet/encounter-participant-type|4.0.1","",,,,"Encounter.participant.type",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.performer.function",".functionCode","ROL-3 (or maybe PRT-4)"
@@ -459,7 +458,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Event.performer.actor",".role","FiveWs.who","ROL-4"
 "Encounter.participant:professionnel","Encounter.participant","professionnel","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","List of participants involved in the encounter","The list of people responsible for providing the service.","","","","","","","","","",,,,,"",,,,"Encounter.participant",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","Professionnel","Event.performer",".participation[typeCode=PFM]","ROL"
+","Event.performer",".participation[typeCode=PFM]","ROL"
 "Encounter.participant:professionnel.id","Encounter.participant.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Encounter.participant:professionnel.extension","Encounter.participant.extension","","extensions
@@ -476,7 +475,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Role of participant in encounter","Role of participant in encounter.","The participant type indicates how an individual participates in an encounter. It includes non-practitioner participants, and for practitioners this is to describe the action type in the context of this encounter (e.g. Admitting Dr, Attending Dr, Translator, Consulting Dr). This is different to the practitioner roles which are functional roles, derived from terms of employment, education, licensing, etc.","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
     <system value=""http://terminology.hl7.org/CodeSystem/v3-ParticipationType""/>
-    <code value=""PART""/>
+    <code value=""PPRF""/>
   </coding>
 </valueCodeableConcept>","","","",,"extensible","Role of participant in encounter.","http://hl7.org/fhir/ValueSet/encounter-participant-type|4.0.1","",,,,"Encounter.participant.type",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.performer.function",".functionCode","ROL-3 (or maybe PRT-4)"

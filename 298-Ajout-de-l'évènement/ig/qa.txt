@@ -1,18 +1,17 @@
 TDDUI : Validation Results
 =========================================
 
-err = 8, warn = 68, info = 33
+err = 8, warn = 68, info = 34
 IG Publisher Version: 2.0.18
-Generated Wed Oct 01 14:48:22 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.tddui#2.0.0-ballot (canonical = https://interop.esante.gouv.fr/ig/fhir/tddui)
+Generated Thu Oct 02 09:40:42 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.tddui#2.0.0-ballot (canonical = https://interop.esante.gouv.fr/ig/fhir/tddui)
  Build Errors : 1 / 3 / 0
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Bundle-ExampleTDDUIBundle : 0 / 6 / 15
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CapabilityStatement-TDDUIConsommateur : 0 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CapabilityStatement-TDDUIProducteur : 0 / 1 / 1
- /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CodeSystem-TDDUIEncounterParticipant : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CodeSystem-input-tddui-task-transport-codesystem : 0 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CodeSystem-tddui-encounter-identifier : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CodeSystem-tddui-identifier : 0 / 0 / 1
- /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Encounter-tddui-encounter-evenement-example : 0 / 0 / 4
+ /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Encounter-tddui-encounter-evenement-example : 0 / 0 / 5
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Encounter-tddui-encounter-sejour-example : 0 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.tddui : 1 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Location-tddui-event-location-example : 0 / 0 / 1
@@ -75,13 +74,13 @@ WARNING: Bundle/ExampleTDDUIBundle: Bundle.entry[2].resource/*Encounter/tddui-en
 WARNING: CapabilityStatement/TDDUIConsommateur: CapabilityStatement.implementationGuide[0]: A definition could not be found for Canonical URL 'https://interop.esante.gouv.fr/ig/fhir/tddui'
 == fsh-generated/resources/CapabilityStatement-TDDUIProducteur.json ==
 WARNING: CapabilityStatement/TDDUIProducteur: CapabilityStatement.implementationGuide[0]: A definition could not be found for Canonical URL 'https://interop.esante.gouv.fr/ig/fhir/tddui'
-== fsh-generated/resources/CodeSystem-TDDUIEncounterParticipant.json ==
 == fsh-generated/resources/CodeSystem-input-tddui-task-transport-codesystem.json ==
 WARNING: CodeSystem/input-tddui-task-transport-codesystem: CodeSystem.concept[7].display: value should not start or finish with whitespace 'Accompagnement nécessaire ou non de l'usager. '
 == fsh-generated/resources/CodeSystem-tddui-encounter-identifier.json ==
 == fsh-generated/resources/CodeSystem-tddui-identifier.json ==
 == fsh-generated/resources/Encounter-tddui-encounter-evenement-example.json ==
 INFORMATION: Encounter/tddui-encounter-evenement-example: Encounter.type[1]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Encounter/tddui-encounter-evenement-example: Encounter.participant[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Encounter/tddui-encounter-evenement-example: Encounter.extension[0].extension[0].value.ofType(CodeableConcept).coding[0].display: 'Vehicle' is the default display; the code system http://snomed.info/sct has no Display Names for the language fr-FR
 INFORMATION: Encounter/tddui-encounter-evenement-example: Encounter.identifier[0].type: Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identifier-type|2.1.0
 == fsh-generated/resources/Encounter-tddui-encounter-sejour-example.json ==
