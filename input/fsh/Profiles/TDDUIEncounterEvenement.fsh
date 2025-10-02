@@ -51,7 +51,7 @@ Description: "Profil de la ressource Encounter permettant de regrouper les évè
 
 // Usager
 * subject 1..1
-* subject only Reference(TDDUIPatient or TDDUIPatientINS)
+* subject only Reference(TDDUIPatient or TDDUIPatientINS or Group)
 
 // ESSMS
 * serviceProvider only Reference(TDDUIOrganization)
@@ -130,7 +130,7 @@ Title:    "Évènement"
 * partOf -> "sejour"
 * period.start -> "dateDebutEvenement"
 * period.end -> "dateFinEvenement"
-* meta.lastUpdated -> "dateModificationEvenement"
+* meta.lastUpdated -> "dateModificationEvenement, Statut.dateStatut"
 * status -> "Statut.statut"
 * participant.type -> "Statut.auteur"
 * status.extension[tddui-event-cancel-reason] -> "Statut.motifNonRealisation"
