@@ -51,3 +51,9 @@ Usage: #definition
 * item[=].text = "Prise en charge IDE du diabète insulinotraité"
 * item[=].required = false
 * item[=].repeats = false
+* item[+].type = #boolean
+* item[=].linkId = "aucun-motif"
+* item[=].code = $terminologie-cisis#GEN-365 "Aucun de ces motifs"
+* item[=].text = "Aucun de ces motifs"
+* item[=].required = false
+* item[=].repeats = false
