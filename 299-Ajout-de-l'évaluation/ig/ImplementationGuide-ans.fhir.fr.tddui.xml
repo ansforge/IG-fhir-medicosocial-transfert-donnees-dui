@@ -10,7 +10,7 @@
   <name value="TDDUI"/>
   <title value="Médicosocial - Transfert de données DUI"/>
   <status value="active"/>
-  <date value="2025-10-01T16:07:51+00:00"/>
+  <date value="2025-10-03T13:32:59+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -496,28 +496,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Questionnaire"/>
-      </extension>
-      <reference>
-        <reference value="Questionnaire/tddui-questionnaire-aggir-pa-ssiad"/>
-      </reference>
-      <name value="Evaluation AGGIR PA SSIAD"/>
-      <description value="Grille d'évaluation AGGIR PA SSIAD"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Questionnaire"/>
-      </extension>
-      <reference>
-        <reference value="Questionnaire/tddui-questionnaire-aggir-ph-ssiad"/>
-      </reference>
-      <name value="Evaluation AGGIR PH SSIAD"/>
-      <description value="Grille d'évaluation AGGIR PH SSIAD"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -587,17 +565,6 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/tddui-cancel-reason"/>
-      </reference>
-      <name value="Motif de non-réalisation de l’évènement et de l'évaluation"/>
-      <description value="Motif associé au statut de non-réalisation de l’évènement et de l'évaluation."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/tddui-birth-order"/>
       </reference>
       <name value="Ordre de naissance dans le registre d'état civil"/>
@@ -642,9 +609,10 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/tddui-responsible"/>
+        <reference value="StructureDefinition/tddui-qr-participant"/>
       </reference>
-      <name value="Responsable de l'évaluation"/>
+      <name value="Responsable et auteur du statut de l'évaluation"/>
+      <description value="Extension permettant d'ajouter le responsable de l'évaluation et l'auteur du statut de l'évaluation dans un QuestionnaireResponse."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1048,6 +1016,28 @@
         <valueString value="Questionnaire"/>
       </extension>
       <reference>
+        <reference value="Questionnaire/tddui-questionnaire-aggir-pa-ssiad"/>
+      </reference>
+      <name value="Évaluation AGGIR PA SSIAD"/>
+      <description value="Grille d'évaluation AGGIR PA SSIAD"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/tddui-questionnaire-aggir-ph-ssiad"/>
+      </reference>
+      <name value="Évaluation AGGIR PH SSIAD"/>
+      <description value="Grille d'évaluation AGGIR PH SSIAD"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
         <reference value="Questionnaire/tddui-questionnaire-situation-ssiad"/>
       </reference>
       <name value="Évaluation de la situation SSIAD"/>
@@ -1063,6 +1053,17 @@
       </reference>
       <name value="Évaluation SERAFIN"/>
       <description value="Grille d'évaluation SERAFIN"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-event-cancel-reason"/>
+      </reference>
+      <name value="Évènement annulé"/>
+      <description value="Motif associé au statut de non-réalisation de l’évènement."/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

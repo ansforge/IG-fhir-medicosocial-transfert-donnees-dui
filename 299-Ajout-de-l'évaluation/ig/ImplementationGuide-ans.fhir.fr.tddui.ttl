@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "TDDUI"] ; # 
   fhir:title [ fhir:v "Médicosocial - Transfert de données DUI"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-10-01T16:07:51+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-03T13:32:59+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -906,42 +906,6 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "Questionnaire"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Questionnaire/tddui-questionnaire-aggir-pa-ssiad> ;
-         fhir:reference [ fhir:v "Questionnaire/tddui-questionnaire-aggir-pa-ssiad" ]
-       ] ;
-       fhir:name [ fhir:v "Evaluation AGGIR PA SSIAD" ] ;
-       fhir:description [ fhir:v "Grille d'évaluation AGGIR PA SSIAD" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "Questionnaire"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Questionnaire/tddui-questionnaire-aggir-ph-ssiad> ;
-         fhir:reference [ fhir:v "Questionnaire/tddui-questionnaire-aggir-ph-ssiad" ]
-       ] ;
-       fhir:name [ fhir:v "Evaluation AGGIR PH SSIAD" ] ;
-       fhir:description [ fhir:v "Grille d'évaluation AGGIR PH SSIAD" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
            fhir:v "StructureDefinition:extension"
          ]
        ] ) ;
@@ -1054,24 +1018,6 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-cancel-reason> ;
-         fhir:reference [ fhir:v "StructureDefinition/tddui-cancel-reason" ]
-       ] ;
-       fhir:name [ fhir:v "Motif de non-réalisation de l’évènement et de l'évaluation" ] ;
-       fhir:description [ fhir:v "Motif associé au statut de non-réalisation de l’évènement et de l'évaluation." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:extension"
-         ]
-       ] ) ;
-       fhir:reference [
          fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order> ;
          fhir:reference [ fhir:v "StructureDefinition/tddui-birth-order" ]
        ] ;
@@ -1144,10 +1090,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-responsible> ;
-         fhir:reference [ fhir:v "StructureDefinition/tddui-responsible" ]
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-qr-participant" ]
        ] ;
-       fhir:name [ fhir:v "Responsable de l'évaluation" ] ;
+       fhir:name [ fhir:v "Responsable et auteur du statut de l'évaluation" ] ;
+       fhir:description [ fhir:v "Extension permettant d'ajouter le responsable de l'évaluation et l'auteur du statut de l'évaluation dans un QuestionnaireResponse." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1823,6 +1770,42 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Questionnaire/tddui-questionnaire-aggir-pa-ssiad> ;
+         fhir:reference [ fhir:v "Questionnaire/tddui-questionnaire-aggir-pa-ssiad" ]
+       ] ;
+       fhir:name [ fhir:v "Évaluation AGGIR PA SSIAD" ] ;
+       fhir:description [ fhir:v "Grille d'évaluation AGGIR PA SSIAD" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Questionnaire/tddui-questionnaire-aggir-ph-ssiad> ;
+         fhir:reference [ fhir:v "Questionnaire/tddui-questionnaire-aggir-ph-ssiad" ]
+       ] ;
+       fhir:name [ fhir:v "Évaluation AGGIR PH SSIAD" ] ;
+       fhir:description [ fhir:v "Grille d'évaluation AGGIR PH SSIAD" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Questionnaire/tddui-questionnaire-situation-ssiad> ;
          fhir:reference [ fhir:v "Questionnaire/tddui-questionnaire-situation-ssiad" ]
        ] ;
@@ -1846,6 +1829,24 @@
        ] ;
        fhir:name [ fhir:v "Évaluation SERAFIN" ] ;
        fhir:description [ fhir:v "Grille d'évaluation SERAFIN" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-cancel-reason> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-event-cancel-reason" ]
+       ] ;
+       fhir:name [ fhir:v "Évènement annulé" ] ;
+       fhir:description [ fhir:v "Motif associé au statut de non-réalisation de l’évènement." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false

@@ -10,7 +10,7 @@
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2025-10-01T16:07:51+00:00",
+  "date" : "2025-10-03T13:32:59+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -661,30 +661,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Questionnaire"
-      }],
-      "reference" : {
-        "reference" : "Questionnaire/tddui-questionnaire-aggir-pa-ssiad"
-      },
-      "name" : "Evaluation AGGIR PA SSIAD",
-      "description" : "Grille d'évaluation AGGIR PA SSIAD",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Questionnaire"
-      }],
-      "reference" : {
-        "reference" : "Questionnaire/tddui-questionnaire-aggir-ph-ssiad"
-      },
-      "name" : "Evaluation AGGIR PH SSIAD",
-      "description" : "Grille d'évaluation AGGIR PH SSIAD",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -760,18 +736,6 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/tddui-cancel-reason"
-      },
-      "name" : "Motif de non-réalisation de l’évènement et de l'évaluation",
-      "description" : "Motif associé au statut de non-réalisation de l’évènement et de l'évaluation.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/tddui-birth-order"
       },
       "name" : "Ordre de naissance dans le registre d'état civil",
@@ -820,9 +784,10 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/tddui-responsible"
+        "reference" : "StructureDefinition/tddui-qr-participant"
       },
-      "name" : "Responsable de l'évaluation",
+      "name" : "Responsable et auteur du statut de l'évaluation",
+      "description" : "Extension permettant d'ajouter le responsable de l'évaluation et l'auteur du statut de l'évaluation dans un QuestionnaireResponse.",
       "exampleBoolean" : false
     },
     {
@@ -1263,6 +1228,30 @@
         "valueString" : "Questionnaire"
       }],
       "reference" : {
+        "reference" : "Questionnaire/tddui-questionnaire-aggir-pa-ssiad"
+      },
+      "name" : "Évaluation AGGIR PA SSIAD",
+      "description" : "Grille d'évaluation AGGIR PA SSIAD",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/tddui-questionnaire-aggir-ph-ssiad"
+      },
+      "name" : "Évaluation AGGIR PH SSIAD",
+      "description" : "Grille d'évaluation AGGIR PH SSIAD",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
         "reference" : "Questionnaire/tddui-questionnaire-situation-ssiad"
       },
       "name" : "Évaluation de la situation SSIAD",
@@ -1279,6 +1268,18 @@
       },
       "name" : "Évaluation SERAFIN",
       "description" : "Grille d'évaluation SERAFIN",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-event-cancel-reason"
+      },
+      "name" : "Évènement annulé",
+      "description" : "Motif associé au statut de non-réalisation de l’évènement.",
       "exampleBoolean" : false
     }],
     "page" : {

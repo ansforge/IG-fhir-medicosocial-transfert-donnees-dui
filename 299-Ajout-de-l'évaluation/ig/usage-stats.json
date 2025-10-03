@@ -26,17 +26,6 @@
       ]
     },
     {
-      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-cancel-reason",
-      "title": "Motif de non-réalisation de l’évènement et de l\u0027évaluation",
-      "types": [
-        "CodeableConcept",
-        "string",
-        "Extension",
-        "Coding",
-        "string"
-      ]
-    },
-    {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment",
       "title": "Commentaire",
       "types": [
@@ -47,6 +36,17 @@
       "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-mode-label",
       "title": "Libellé mode d\u0027entrée",
       "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-cancel-reason",
+      "title": "Évènement annulé",
+      "types": [
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
         "string"
       ]
     },
@@ -111,10 +111,61 @@
       ]
     },
     {
-      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-responsible",
-      "title": "Responsable de l\u0027évaluation",
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant",
+      "title": "Responsable et auteur du statut de l\u0027évaluation",
       "types": [
-        "Reference"
+        "Reference",
+        "Reference",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
       ]
     },
     {
@@ -244,10 +295,6 @@
     ]
   },
   "usage": {
-    "http://example.org/fhir/StructureDefinition/responseScale": [
-      "Questionnaire.item",
-      "Questionnaire.item.item"
-    ],
     "http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedEndDate": [
       "Bundle.entry.resource",
       "Encounter"
@@ -368,16 +415,15 @@
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order": [
       "Patient.birthDate"
     ],
-    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-cancel-reason": [
-      "Encounter.status",
-      "QuestionnaireResponse.status"
-    ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment": [
       "Encounter"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-mode-label": [
       "Bundle.entry.resource",
       "Encounter"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-cancel-reason": [
+      "Encounter.status"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-label": [
       "Encounter"
@@ -404,7 +450,7 @@
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-profession": [
       "PractitionerRole.code"
     ],
-    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-responsible": [
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant": [
       "QuestionnaireResponse"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used": [
