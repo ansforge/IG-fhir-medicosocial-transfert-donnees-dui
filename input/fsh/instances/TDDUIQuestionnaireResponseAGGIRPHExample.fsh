@@ -94,7 +94,7 @@ Usage: #example
 * item.answer.item[=].answer.item[+].linkId = "manger-habit"
 * item.answer.item[=].answer.item[=].text = "fait habituellement"
 * item.answer.item[=].answer.item[=].answer.valueBoolean = true
-* item.answer.item[+].linkId = "aller-aux-toilette"
+* item.answer.item[+].linkId = "aller-aux-toilettes"
 * item.answer.item[=].text = "Aller aux toilettes"
 * item.answer.item[=].answer.valueCoding = $icf#qf2 "facilitateur modéré"
 * item.answer.item[=].answer.item[0].linkId = "toilette-spont"
@@ -109,19 +109,19 @@ Usage: #example
 * item.answer.item[=].answer.item[+].linkId = "toilette-habit"
 * item.answer.item[=].answer.item[=].text = "fait habituellement"
 * item.answer.item[=].answer.item[=].answer.valueBoolean = true
-* item.answer.item[+].linkId = "position-corp"
+* item.answer.item[+].linkId = "position-corps"
 * item.answer.item[=].text = "Changer la position corporelle de base"
 * item.answer.item[=].answer.valueCoding = $icf#qf4 "facilitateur absolu"
-* item.answer.item[=].answer.item[0].linkId = "pos-cor-spont"
+* item.answer.item[=].answer.item[0].linkId = "position-corps-spont"
 * item.answer.item[=].answer.item[=].text = "fait spontanément"
 * item.answer.item[=].answer.item[=].answer.valueBoolean = false
-* item.answer.item[=].answer.item[+].linkId = "pos-cor-tot"
+* item.answer.item[=].answer.item[+].linkId = "position-corps-tot"
 * item.answer.item[=].answer.item[=].text = "fait totalement"
 * item.answer.item[=].answer.item[=].answer.valueBoolean = false
-* item.answer.item[=].answer.item[+].linkId = "pos-cor-correct"
+* item.answer.item[=].answer.item[+].linkId = "position-corps-correct"
 * item.answer.item[=].answer.item[=].text = "fait correctement"
 * item.answer.item[=].answer.item[=].answer.valueBoolean = false
-* item.answer.item[=].answer.item[+].linkId = "pos-corp-habit"
+* item.answer.item[=].answer.item[+].linkId = "position-corps-habit"
 * item.answer.item[=].answer.item[=].text = "fait habituellement"
 * item.answer.item[=].answer.item[=].answer.valueBoolean = false
 * item.answer.item[+].linkId = "deplacer-maison"

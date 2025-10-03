@@ -37,6 +37,3 @@ Usage: #example
 * item[+].linkId = "prise-charge-ide"
 * item[=].text = "Prise en charge IDE du diabète insulinotraité"
 * item[=].answer.valueBoolean = false
-* item[+].linkId = "aucun-motif"
-* item[=].text = "Aucun de ces motifs"
-* item[=].answer.valueBoolean = false

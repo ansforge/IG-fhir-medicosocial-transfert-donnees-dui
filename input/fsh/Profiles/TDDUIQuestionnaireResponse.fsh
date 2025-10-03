@@ -14,6 +14,8 @@ Le profil permet de communiquer les grilles définies suivantes :
 - Evaluation situation SSIAD
 """
 
+* status ^short = "Correspondance des statuts métier avec les codes FHIR : TERMINE -> in-progress, APPROUVE -> completed, VALIDE -> amended."
+
 * questionnaire 1..1
 
 * subject 1..1
@@ -24,14 +26,13 @@ Le profil permet de communiquer les grilles définies suivantes :
 * source only Reference(TDDUIPractitioner)
 
 * extension contains
-    TDDUIResponsible named TDDUIResponsible 0..1 and 
+    TDDUIQRParticipant named TDDUIQRParticipant 0..1 and 
     TDDUIAttachment named TDDUIAttachment 0..*
 
 * encounter 0..1
 * encounter only Reference(TDDUIEncounterEvenement)
 
-* status.extension contains
-    TDDUICancelReason named TDDUICancelReason 0..1
+* item 1..*
 
 Mapping:  ConceptMetier_TDDUIQuestionnaireResponse
 Source:   TDDUIQuestionnaireResponse
@@ -42,19 +43,23 @@ Title:    "Evaluation"
 
 * identifier -> "idEvaluation"
 * authored -> "dateEvaluation"
+* status -> "Statut"
+* extension[TDDUIQRParticipant].extension[TDDUIResponsible] -> "Statut.auteur"
+* questionnaire -> "typeEvaluation"
 * subject -> "Usager"
 * encounter -> "Evenement"
 * extension[TDDUIAttachment] -> "pieceJointeEvaluation"
-* extension[TDDUIResponsible] -> "Responsable"
+* extension[TDDUIQRParticipant].extension[TDDUIStatusAuthor] -> "Responsable"
 * author -> "Auteur"
 * source -> "Evaluateur"
-* status.extension[TDDUICancelReason] -> "Statut.motifNonRealisation"
 * meta.lastUpdated -> "Statut.dateStatut"
 * item.answer.valueCoding -> "resultatEvaluation"
-* item.text -> "commentaireEvaluation"
+* item.answer.valueString -> "commentaireEvaluation"
 * item.item -> "«premier niveau»DetailEvaluation"
+* item.item.linkId -> "champsEvalue"
 * item.item.answer -> "resultatChampsEvalue"
-* item.item.text -> "commentaire"
+* item.item.answer.valueString -> "commentaire"
 * item.item.item -> "«deuxième niveau»DetailEvaluation"
+* item.item.item.linkId -> "champsEvalue"
 * item.item.item.answer -> "resultatChampsEvalue"
-* item.item.item.text -> "commentaire"
+* item.item.item.answer.valueString -> "commentaire"

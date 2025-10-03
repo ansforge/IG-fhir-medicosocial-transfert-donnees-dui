@@ -15,7 +15,7 @@ Description: "Profil de la ressource Encounter permettant de regrouper les évè
 * status ^short = "Correspondance des statuts métier avec les codes FHIR : Planifié → planned, Validé → triaged, Réalisé → finished, Annulé → cancelled."
 
 * status.extension contains 
-    TDDUICancelReason named TDDUICancelReason 0..1
+    TDDUIEventCancelReason named TDDUIEventCancelReason 0..1
 
 // Types d'évènement
 * type ^slicing.discriminator.type = #pattern
@@ -117,4 +117,4 @@ Title:    "Évènement"
 * meta.lastUpdated -> "dateModificationEvenement"
 * status -> "Statut.statut"
 * participant.type -> "statut.auteur"
-* status.extension[TDDUICancelReason] -> "statut.motifNonRealisation"
+* status.extension[TDDUIEventCancelReason] -> "statut.motifNonRealisation"

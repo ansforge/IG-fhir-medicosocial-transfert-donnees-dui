@@ -3,7 +3,7 @@ InstanceOf: Questionnaire
 Description: "Grille d'évaluation AGGIR PH SSIAD"
 Usage: #definition
 
-* title = "Evaluation AGGIR PH SSIAD"
+* title = "Évaluation AGGIR PH SSIAD"
 * status = #active
 * code = $terminologie-cisis#MED-1292 "Evaluation AGGIR PH SSIAD"
 * item[0].type = #choice
@@ -183,7 +183,7 @@ Usage: #definition
 * item[=].item[=].item[=].linkId = "toilette-commentaire"
 * item[=].item[=].item[=].text = "Commentaire"
 * item[=].item[=].type = #choice
-* item[=].item[=].linkId = "aller-aux-toilette"
+* item[=].item[=].linkId = "aller-aux-toilettes"
 * item[=].item[=].code = $icf#d530 "Toileting"
 * item[=].item[=].text = "Aller aux toilettes"
 * item[=].item[=].required = false
@@ -192,27 +192,27 @@ Usage: #definition
 * item[=].item[=].answerOption[+].valueCoding = $icf#qf2 "facilitateur modéré"
 * item[=].item[=].answerOption[+].valueCoding = $icf#qf4 "facilitateur absolu"
 * item[=].item[+].item[0].type = #boolean
-* item[=].item[=].item[=].linkId = "pos-cor-spont"
+* item[=].item[=].item[=].linkId = "position-corps-spont"
 * item[=].item[=].item[=].code = $terminologie-cisis#MED-1307 "fait spontanément"
 * item[=].item[=].item[=].text = "fait spontanément"
 * item[=].item[=].item[=].repeats = false
 * item[=].item[=].item[+].type = #boolean
-* item[=].item[=].item[=].linkId = "pos-cor-tot"
+* item[=].item[=].item[=].linkId = "position-corps-tot"
 * item[=].item[=].item[=].code = $terminologie-cisis#MED-1308 "fait totalement"
 * item[=].item[=].item[=].text = "fait totalement"
 * item[=].item[=].item[+].type = #boolean
-* item[=].item[=].item[=].linkId = "pos-cor-correct"
+* item[=].item[=].item[=].linkId = "position-corps-correct"
 * item[=].item[=].item[=].code = $terminologie-cisis#MED-1309 "fait correctement"
 * item[=].item[=].item[=].text = "fait correctement"
 * item[=].item[=].item[+].type = #boolean
-* item[=].item[=].item[=].linkId = "pos-corp-habit"
+* item[=].item[=].item[=].linkId = "position-corps-habit"
 * item[=].item[=].item[=].code = $terminologie-cisis#MED-1310 "fait habituellement"
 * item[=].item[=].item[=].text = "fait habituellement"
 * item[=].item[=].item[+].type = #text
-* item[=].item[=].item[=].linkId = "pos-corp-commentaire"
+* item[=].item[=].item[=].linkId = "position-corps-commentaire"
 * item[=].item[=].item[=].text = "Commentaire"
 * item[=].item[=].type = #choice
-* item[=].item[=].linkId = "position-corp"
+* item[=].item[=].linkId = "position-corps"
 * item[=].item[=].code = $icf#d410 "Changing basic body position"
 * item[=].item[=].text = "Changer la position corporelle de base"
 * item[=].item[=].required = false

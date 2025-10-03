@@ -1,22 +1,18 @@
 @startuml
 
-map "item" as item #DarkGray {
-    commentaire => text
-    resultatEvaluation => answer.valueCoding
+map "DetailEvaluation: TDDUIQuestionnaireResponse" as item #DarkGray {
+    commentaire => item.answer.valueString
+    resultatEvaluation => item.answer.valueCoding
     premier_niveau_DetailEvaluation => item.item
     resultatChampsEvalue_niveau1 => item.item.answer
-    commentaireEvaluation_niveau1 => item.item.text
+    commentaireEvaluation_niveau1 => item.item.answer.valueString
     deuxieme_niveau_DetailEvaluation => item.item.item
     resultatChampsEvalue_niveau2 => item.item.item.answer
-    commentaireEvaluation_niveau2 => item.item.item.text
+    commentaireEvaluation_niveau2 => item.item.item.answer.valueString
 }
 
 map "meta" as meta #DarkGray {
     Statut.dateStatut => lastUpdated
-}
-
-map "status" as status #DarkGray {
-    Statut.motifNonRealisation => <&plus> TDDUICancelReason
 }
 
 object "**TDDUIPatient**" as TDDUIPatient_subject #80b1d3 {
@@ -32,14 +28,16 @@ object "**TDDUIPractitioner**" as TDDUIPractitioner_source #fccde5 {
 }
 
 map "**Evaluation : TDDUIQuestionnaireResponse**" as Evaluation #d9d9d9 {
-    Responsable => <&plus> TDDUIResponsible
+    Responsable => <&plus> TDDUIQRParticipant.extension:TDDUIResponsible
     pieceJointeEvaluation => <&plus> TDDUIAttachment
     idEvaluation => identifier
     dateEvaluation => authored
+    typeEvaluation => questionnaire
+    Statut.statut  => status
+    Statut.auteur => TDDUIQRParticipant.extension:TDDUIStatusAuthor
 }
 
 Evaluation -u-> meta
-Evaluation -> status
 Evaluation -l-> item
 
 Evaluation --> TDDUIPatient_subject : subject
