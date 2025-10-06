@@ -50,7 +50,7 @@ Usage: #example
 * item.answer.item[=].answer.item[=].text = "fait habituellement"
 * item.answer.item[=].answer.item[=].answer.valueBoolean = true
 * item.answer.item[+].linkId = "se-laver"
-* item.answer.item[=].text = "Se laver"
+* item.answer.item[=].text = "Se laver des parties du corps"
 * item.answer.item[=].answer.valueCoding = $icf#qf4 "facilitateur absolu"
 * item.answer.item[=].answer.item[0].linkId = "laver-spont"
 * item.answer.item[=].answer.item[=].text = "fait spontanément"

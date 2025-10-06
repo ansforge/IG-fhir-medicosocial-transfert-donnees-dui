@@ -34,6 +34,9 @@ Le profil permet de communiquer les grilles définies suivantes :
 * encounter only Reference(TDDUIEncounterEvenement)
 
 * item 1..*
+* item.extension contains TDDUIComment named TDDUIComment 0..1
+* item.item.extension contains TDDUIComment named TDDUIComment 0..1
+* item.item.item.extension contains TDDUIComment named TDDUIComment 0..1
 
 Mapping:  ConceptMetier_TDDUIQuestionnaireResponseAGGIR
 Source:   TDDUIQuestionnaireResponse
@@ -59,11 +62,12 @@ Title:    "EvaluationAGGIR"
 * item.item -> "«premier niveau»DetailEvaluation"
 * item.item.linkId -> "champsEvalue"
 * item.item.answer -> "resultatChampsEvalue"
+* item.item.extension[TDDUIComment] -> "commentaire"
 * item.item.answer.valueString -> "commentaire"
 * item.item.item -> "«deuxième niveau»DetailEvaluation"
 * item.item.item.linkId -> "champsEvalue"
 * item.item.item.answer -> "resultatChampsEvalue"
-* item.item.item.answer.valueString -> "commentaire"
+* item.item.item.extension[TDDUIComment] -> "commentaire"
 
 Mapping:  ConceptMetier_TDDUIQuestionnaireResponseSerafinSSIAD
 Source:   TDDUIQuestionnaireResponse
@@ -85,7 +89,7 @@ Title:    "EvaluationSERAFIN/SSIAD"
 * author -> "Auteur"
 * source -> "Evaluateur"
 * meta.lastUpdated -> "Statut.dateStatut"
-* item.answer.valueString -> "commentaire"
+* item.extension[TDDUIComment] -> "commentaire"
 * item -> "«premier niveau»DetailEvaluation"
 * item.linkId -> "champsEvalue"
 * item.answer -> "resultatChampsEvalue"

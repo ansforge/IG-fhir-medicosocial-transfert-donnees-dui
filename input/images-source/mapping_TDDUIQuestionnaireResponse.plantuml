@@ -5,18 +5,18 @@ map "**Evaluation AGGIR PH SSIAD, Evaluation AGGIR PA SSIAD : TDDUIQuestionnaire
     premier_niveau_DetailEvaluation => item.item
     champsEvalue_niveau1 => item.item.linkId
     resultatChampsEvalue_niveau1 => item.item.answer
-    commentaireEvaluation_niveau1 => item.item.answer.valueString
+    commentaire_niveau1 => item.item <&plus> TDDUIComment
     deuxieme_niveau_DetailEvaluation => item.item.item
     champsEvalue_niveau2 => item.item.item.linkId
     resultatChampsEvalue_niveau2 => item.item.item.answer
-    commentaireEvaluation_niveau2 => item.item.item.answer.valueString
+    commentaire_niveau2 => item.item.item <&plus> TDDUIComment
 }
 
 map "**Evaluation SERAFIN, Evaluation de la situation SSIAD : TDDUIQuestionnaireResponse**" as autre #DarkGray {
     premier_niveau_DetailEvaluation => item
     champsEvalue_niveau1 => item.linkId
     resultatChampsEvalue_niveau1 => item.answer
-    commentaireEvaluation_niveau1 => item.answer.valueString
+    commentaire_niveau1 => item <&plus> TDDUIComment
 }
 
 map "meta" as meta #DarkGray {
@@ -38,7 +38,7 @@ object "**TDDUIPractitioner**" as TDDUIPractitioner_source #fccde5 {
 map "**Evaluation : TDDUIQuestionnaireResponse**" as Evaluation #d9d9d9 {
     Responsable => <&plus> TDDUIQRParticipant.extension:TDDUIResponsible
     pieceJointeEvaluation => <&plus> TDDUIAttachment
-    commentaire => <&plus> TDDUIComment
+    commentaireEvaluation => <&plus> TDDUIComment
     idEvaluation => identifier
     dateEvaluation => authored
     typeEvaluation => questionnaire

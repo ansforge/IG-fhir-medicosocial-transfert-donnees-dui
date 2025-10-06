@@ -87,7 +87,7 @@ Usage: #definition
 * item[=].item[=].type = #choice
 * item[=].item[=].linkId = "se-laver"
 * item[=].item[=].code = $icf#d5100 "Washing body parts"
-* item[=].item[=].text = "Se laver"
+* item[=].item[=].text = "Se laver des parties du corps"
 * item[=].item[=].required = false
 * item[=].item[=].repeats = false
 * item[=].item[=].answerOption[0].valueCoding = $icf#qf0 "aucun facilitateur"
