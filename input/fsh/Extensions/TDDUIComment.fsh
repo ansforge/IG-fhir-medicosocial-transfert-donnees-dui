@@ -1,6 +1,6 @@
 Extension: TDDUIComment
 Id: tddui-comment
 Title: "Commentaire"
-Description: "Commentaire relatif au séjour et aux évènements."
-Context: Encounter
+Description: "Commentaire relatif au séjour, évènements et évaluations."
+Context: Encounter, QuestionnaireResponse
 * value[x] only string

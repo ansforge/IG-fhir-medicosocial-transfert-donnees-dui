@@ -452,8 +452,3 @@ Usage: #definition
 * item[=].answerOption[+].valueCoding = $terminologie-cisis#MED-342 "GIR-4"
 * item[=].answerOption[+].valueCoding = $terminologie-cisis#MED-343 "GIR-5"
 * item[=].answerOption[+].valueCoding = $terminologie-cisis#MED-344 "GIR-6"
-* item[+].type = #text
-* item[=].linkId = "commentaire-eval"
-* item[=].text = "Commentaire"
-* item[=].required = false
-* item[=].repeats = false

@@ -1,14 +1,22 @@
 @startuml
 
-map "DetailEvaluation: TDDUIQuestionnaireResponse" as item #DarkGray {
-    commentaire => item.answer.valueString
-    resultatEvaluation => item.answer.valueCoding
+map "**Evaluation AGGIR PH SSIAD, Evaluation AGGIR PA SSIAD : TDDUIQuestionnaireResponse**" as aggir #DarkGray {
+    resultatEvaluation => item.answer
     premier_niveau_DetailEvaluation => item.item
+    champsEvalue_niveau1 => item.item.linkId
     resultatChampsEvalue_niveau1 => item.item.answer
     commentaireEvaluation_niveau1 => item.item.answer.valueString
     deuxieme_niveau_DetailEvaluation => item.item.item
+    champsEvalue_niveau2 => item.item.item.linkId
     resultatChampsEvalue_niveau2 => item.item.item.answer
     commentaireEvaluation_niveau2 => item.item.item.answer.valueString
+}
+
+map "**Evaluation SERAFIN, Evaluation de la situation SSIAD : TDDUIQuestionnaireResponse**" as autre #DarkGray {
+    premier_niveau_DetailEvaluation => item
+    champsEvalue_niveau1 => item.linkId
+    resultatChampsEvalue_niveau1 => item.answer
+    commentaireEvaluation_niveau1 => item.answer.valueString
 }
 
 map "meta" as meta #DarkGray {
@@ -30,6 +38,7 @@ object "**TDDUIPractitioner**" as TDDUIPractitioner_source #fccde5 {
 map "**Evaluation : TDDUIQuestionnaireResponse**" as Evaluation #d9d9d9 {
     Responsable => <&plus> TDDUIQRParticipant.extension:TDDUIResponsible
     pieceJointeEvaluation => <&plus> TDDUIAttachment
+    commentaire => <&plus> TDDUIComment
     idEvaluation => identifier
     dateEvaluation => authored
     typeEvaluation => questionnaire
@@ -38,10 +47,11 @@ map "**Evaluation : TDDUIQuestionnaireResponse**" as Evaluation #d9d9d9 {
 }
 
 Evaluation -u-> meta
-Evaluation -l-> item
+Evaluation --> aggir : Evaluation AGGIR PH SSIAD\nEvaluation AGGIR PA SSIAD
+Evaluation --> autre : Evaluation SERAFIN\nEvaluation de la situation SSIAD
 
-Evaluation --> TDDUIPatient_subject : subject
-Evaluation --> TDDUIPractitioner_author : author
-Evaluation --> TDDUIPractitioner_source : source
+Evaluation -l-> TDDUIPatient_subject : subject
+Evaluation -r-> TDDUIPractitioner_author : author
+Evaluation -r-> TDDUIPractitioner_source : source
 
 @enduml

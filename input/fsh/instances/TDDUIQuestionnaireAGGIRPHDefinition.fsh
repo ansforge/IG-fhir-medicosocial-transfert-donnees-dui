@@ -307,8 +307,3 @@ Usage: #definition
 * item[=].item[=].answerOption[0].valueCoding = $icf#qf0 "aucun facilitateur"
 * item[=].item[=].answerOption[+].valueCoding = $icf#qf2 "facilitateur modéré"
 * item[=].item[=].answerOption[+].valueCoding = $icf#qf4 "facilitateur absolu"
-* item[+].type = #text
-* item[=].linkId = "commentaire-eval"
-* item[=].text = "Commentaire"
-* item[=].required = false
-* item[=].repeats = false

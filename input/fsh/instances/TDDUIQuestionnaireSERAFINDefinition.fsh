@@ -6,10 +6,8 @@ Usage: #definition
 * title = "Évaluation SERAFIN"
 * status = #active
 * code = $terminologie-cisis#MED-1291 "Evaluation SERAFIN"
-* item[0].type = #text
-* item[=].linkId = "commentaire-serafin"
-* item[=].text = "Commentaire"
-* item[+].type = #integer
+
+* item[0].type = #integer
 * item[=].linkId = "besoin-serafin"
 * item[=].code = $terminologie-SERAFINPH#1 "Besoins"
 * item[=].text = "Besoins"

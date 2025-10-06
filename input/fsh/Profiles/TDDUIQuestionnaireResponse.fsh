@@ -27,34 +27,35 @@ Le profil permet de communiquer les grilles définies suivantes :
 
 * extension contains
     TDDUIQRParticipant named TDDUIQRParticipant 0..1 and 
-    TDDUIAttachment named TDDUIAttachment 0..*
+    TDDUIAttachment named TDDUIAttachment 0..* and
+    TDDUIComment named TDDUIComment 0..1
 
 * encounter 0..1
 * encounter only Reference(TDDUIEncounterEvenement)
 
 * item 1..*
 
-Mapping:  ConceptMetier_TDDUIQuestionnaireResponse
+Mapping:  ConceptMetier_TDDUIQuestionnaireResponseAGGIR
 Source:   TDDUIQuestionnaireResponse
 Target: "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"
-Id:       specmetier-to-TDDUIQuestionnaireResponse
-Title:    "Evaluation"
-* -> "Evaluation"
+Id:       specmetier-to-TDDUIQuestionnaireResponseAGGIR
+Title:    "EvaluationAGGIR"
+* -> "EvaluationAGGIR"
 
 * identifier -> "idEvaluation"
 * authored -> "dateEvaluation"
-* status -> "Statut"
-* extension[TDDUIQRParticipant].extension[TDDUIResponsible] -> "Statut.auteur"
+* status -> "Statut.statut"
+* extension[TDDUIQRParticipant].extension[TDDUIStatusAuthor] -> "Statut.auteur"
+* extension[TDDUIComment] -> "commentaireEvaluation"
 * questionnaire -> "typeEvaluation"
 * subject -> "Usager"
 * encounter -> "Evenement"
 * extension[TDDUIAttachment] -> "pieceJointeEvaluation"
-* extension[TDDUIQRParticipant].extension[TDDUIStatusAuthor] -> "Responsable"
+* extension[TDDUIQRParticipant].extension[TDDUIResponsible] -> "Responsable"
 * author -> "Auteur"
 * source -> "Evaluateur"
 * meta.lastUpdated -> "Statut.dateStatut"
 * item.answer.valueCoding -> "resultatEvaluation"
-* item.answer.valueString -> "commentaireEvaluation"
 * item.item -> "«premier niveau»DetailEvaluation"
 * item.item.linkId -> "champsEvalue"
 * item.item.answer -> "resultatChampsEvalue"
@@ -63,3 +64,28 @@ Title:    "Evaluation"
 * item.item.item.linkId -> "champsEvalue"
 * item.item.item.answer -> "resultatChampsEvalue"
 * item.item.item.answer.valueString -> "commentaire"
+
+Mapping:  ConceptMetier_TDDUIQuestionnaireResponseSerafinSSIAD
+Source:   TDDUIQuestionnaireResponse
+Target: "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"
+Id:       specmetier-to-TDDUIQuestionnaireResponseSerafinSSIAD
+Title:    "EvaluationSERAFIN/SSIAD"
+* -> "EvaluationSERAFIN/SSIAD"
+
+* identifier -> "idEvaluation"
+* authored -> "dateEvaluation"
+* status -> "Statut.statut"
+* extension[TDDUIQRParticipant].extension[TDDUIStatusAuthor] -> "Statut.auteur"
+* extension[TDDUIComment] -> "commentaireEvaluation"
+* questionnaire -> "typeEvaluation"
+* subject -> "Usager"
+* encounter -> "Evenement"
+* extension[TDDUIAttachment] -> "pieceJointeEvaluation"
+* extension[TDDUIQRParticipant].extension[TDDUIResponsible] -> "Responsable"
+* author -> "Auteur"
+* source -> "Evaluateur"
+* meta.lastUpdated -> "Statut.dateStatut"
+* item.answer.valueString -> "commentaire"
+* item -> "«premier niveau»DetailEvaluation"
+* item.linkId -> "champsEvalue"
+* item.answer -> "resultatChampsEvalue"
