@@ -60,10 +60,6 @@ Usage: #definition
 * item[=].code = $terminologie-SERAFINPH#1.2 "Besoins en matière d’autonomie"
 * item[=].text = "Besoins en matière d'autonomie"
 * item[+].type = #integer
-* item[=].linkId = "besoin-autonomie-2"
-* item[=].code = $terminologie-SERAFINPH#1.2.1 "Besoins en matière d’autonomie"
-* item[=].text = "Besoins en matière d'autonomie"
-* item[+].type = #integer
 * item[=].linkId = "besoin-entretien-personnel"
 * item[=].code = $terminologie-SERAFINPH#1.2.1.1 "Besoins en lien avec l’entretien personnel"
 * item[=].text = "Besoins en lien avec l'entretien personnel"
@@ -86,10 +82,6 @@ Usage: #definition
 * item[+].type = #integer
 * item[=].linkId = "besoin-droit-citoyen"
 * item[=].code = $terminologie-SERAFINPH#1.3.1 "Besoins pour accéder aux droits et à la citoyenneté"
-* item[=].text = "Besoins pour accéder aux droits et à la citoyenneté"
-* item[+].type = #integer
-* item[=].linkId = "besoin-droit-citoyen-2"
-* item[=].code = $terminologie-SERAFINPH#1.3.1.1 "Besoins pour accéder aux droits et à la citoyenneté"
 * item[=].text = "Besoins pour accéder aux droits et à la citoyenneté"
 * item[+].type = #integer
 * item[=].linkId = "besoin-logement"
@@ -142,8 +134,4 @@ Usage: #definition
 * item[+].type = #integer
 * item[=].linkId = "besoin-economie"
 * item[=].code = $terminologie-SERAFINPH#1.3.5 "Besoins en matière de ressources et d'autosuffisance économique"
-* item[=].text = "Besoins en matière de ressources et d'autosuffisance économique"
-* item[+].type = #integer
-* item[=].linkId = "besoin-economie-2"
-* item[=].code = $terminologie-SERAFINPH#1.3.5.1 "Besoins en matière de ressources et d'autosuffisance économique"
 * item[=].text = "Besoins en matière de ressources et d'autosuffisance économique"
