@@ -23,9 +23,6 @@ Usage: #definition
 * item[=].item[=].item[=].linkId = "pensee-habit"
 * item[=].item[=].item[=].code = $terminologie-cisis#MED-1310 "fait habituellement"
 * item[=].item[=].item[=].text = "fait habituellement"
-* item[=].item[=].item[+].type = #text
-* item[=].item[=].item[=].linkId = "commentaire-pensee"
-* item[=].item[=].item[=].text = "Commentaire"
 * item[=].item[=].type = #choice
 * item[=].item[=].linkId = "fonction-pensee"
 * item[=].item[=].code = $icf#b160 "Thought functions"
@@ -52,9 +49,6 @@ Usage: #definition
 * item[=].item[=].item[=].linkId = "orientation-habit"
 * item[=].item[=].item[=].code = $terminologie-cisis#MED-1310 "fait habituellement"
 * item[=].item[=].item[=].text = "fait habituellement"
-* item[=].item[=].item[+].type = #text
-* item[=].item[=].item[=].linkId = "orientation-commentaire"
-* item[=].item[=].item[=].text = "Commentaire"
 * item[=].item[=].type = #choice
 * item[=].item[=].linkId = "fonction-orientation"
 * item[=].item[=].code = $icf#b114 "Orientation functions"
@@ -81,9 +75,6 @@ Usage: #definition
 * item[=].item[=].item[=].linkId = "laver-habit"
 * item[=].item[=].item[=].code = $terminologie-cisis#MED-1310 "fait habituellement"
 * item[=].item[=].item[=].text = "fait habituellement"
-* item[=].item[=].item[+].type = #text
-* item[=].item[=].item[=].linkId = "commentaire-se-laver"
-* item[=].item[=].item[=].text = "Commentaire"
 * item[=].item[=].type = #choice
 * item[=].item[=].linkId = "se-laver"
 * item[=].item[=].code = $icf#d5100 "Washing body parts"
@@ -110,9 +101,6 @@ Usage: #definition
 * item[=].item[=].item[=].linkId = "prendre-soin-habit"
 * item[=].item[=].item[=].code = $terminologie-cisis#MED-1310 "fait habituellement"
 * item[=].item[=].item[=].text = "fait habituellement"
-* item[=].item[=].item[+].type = #text
-* item[=].item[=].item[=].linkId = "prendre-soin-commentaire"
-* item[=].item[=].item[=].text = "Commentaire"
 * item[=].item[=].type = #choice
 * item[=].item[=].linkId = "prendre-soin"
 * item[=].item[=].code = $icf#d520 "Caring for body parts"
@@ -139,9 +127,6 @@ Usage: #definition
 * item[=].item[=].item[=].linkId = "mettre-vetement-habit"
 * item[=].item[=].item[=].code = $terminologie-cisis#MED-1310 "fait habituellement"
 * item[=].item[=].item[=].text = "fait habituellement"
-* item[=].item[=].item[+].type = #text
-* item[=].item[=].item[=].linkId = "mettre-vetement-commentaire"
-* item[=].item[=].item[=].text = "Commentaire"
 * item[=].item[=].type = #choice
 * item[=].item[=].linkId = "mettre-vetement"
 * item[=].item[=].code = $icf#d5400 "Putting on clothes"
@@ -168,9 +153,6 @@ Usage: #definition
 * item[=].item[=].item[=].linkId = "motricite-fine-habit"
 * item[=].item[=].item[=].code = $terminologie-cisis#MED-1310 "fait habituellement"
 * item[=].item[=].item[=].text = "fait habituellement"
-* item[=].item[=].item[+].type = #text
-* item[=].item[=].item[=].linkId = "motricite-fine-commentaire"
-* item[=].item[=].item[=].text = "Commentaire"
 * item[=].item[=].type = #choice
 * item[=].item[=].linkId = "motricite-fine"
 * item[=].item[=].code = $icf#d440 "Fine hand use"
@@ -197,9 +179,6 @@ Usage: #definition
 * item[=].item[=].item[=].linkId = "mettre-chaussure-habit"
 * item[=].item[=].item[=].code = $terminologie-cisis#MED-1310 "fait habituellement"
 * item[=].item[=].item[=].text = "fait habituellement"
-* item[=].item[=].item[+].type = #text
-* item[=].item[=].item[=].linkId = "mettre-chaussure-commentaire"
-* item[=].item[=].item[=].text = "Commentaire"
 * item[=].item[=].type = #choice
 * item[=].item[=].linkId = "mettre-chaussure"
 * item[=].item[=].code = $icf#d5402 "Putting on footwear"
@@ -226,9 +205,6 @@ Usage: #definition
 * item[=].item[=].item[=].linkId = "manger-habit"
 * item[=].item[=].item[=].code = $terminologie-cisis#MED-1310 "fait habituellement"
 * item[=].item[=].item[=].text = "fait habituellement"
-* item[=].item[=].item[+].type = #text
-* item[=].item[=].item[=].linkId = "manger-commentaire"
-* item[=].item[=].item[=].text = "Commentaire"
 * item[=].item[=].type = #choice
 * item[=].item[=].linkId = "manger"
 * item[=].item[=].code = $icf#d550 "Eating"
@@ -255,9 +231,6 @@ Usage: #definition
 * item[=].item[=].item[=].linkId = "passage-aliment-habit"
 * item[=].item[=].item[=].code = $terminologie-cisis#MED-1310 "fait habituellement"
 * item[=].item[=].item[=].text = "fait habituellement"
-* item[=].item[=].item[+].type = #text
-* item[=].item[=].item[=].linkId = "passage-aliment-commentaire"
-* item[=].item[=].item[=].text = "Commentaire"
 * item[=].item[=].type = #choice
 * item[=].item[=].linkId = "passage-aliment"
 * item[=].item[=].code = $icf#b5105 "Swallowing"
@@ -284,9 +257,6 @@ Usage: #definition
 * item[=].item[=].item[=].linkId = "miction-habit"
 * item[=].item[=].item[=].code = $terminologie-cisis#MED-1310 "fait habituellement"
 * item[=].item[=].item[=].text = "fait habituellement"
-* item[=].item[=].item[+].type = #text
-* item[=].item[=].item[=].linkId = "miction-commentaire"
-* item[=].item[=].item[=].text = "Commentaire"
 * item[=].item[=].type = #choice
 * item[=].item[=].linkId = "assurer-regulation-miction"
 * item[=].item[=].code = $icf#d5300 "Regulating urination"
@@ -313,9 +283,6 @@ Usage: #definition
 * item[=].item[=].item[=].linkId = "defecation-habit"
 * item[=].item[=].item[=].code = $terminologie-cisis#MED-1310 "fait habituellement"
 * item[=].item[=].item[=].text = "fait habituellement"
-* item[=].item[=].item[+].type = #text
-* item[=].item[=].item[=].linkId = "defecation-commentaire"
-* item[=].item[=].item[=].text = "Commentaire"
 * item[=].item[=].type = #choice
 * item[=].item[=].linkId = "assurer-regulation-defecation"
 * item[=].item[=].code = $icf#d5301 "Regulating defecation"
@@ -342,9 +309,6 @@ Usage: #definition
 * item[=].item[=].item[=].linkId = "position-corps-habit"
 * item[=].item[=].item[=].code = $terminologie-cisis#MED-1310 "fait habituellement"
 * item[=].item[=].item[=].text = "fait habituellement"
-* item[=].item[=].item[+].type = #text
-* item[=].item[=].item[=].linkId = "position-corps-commentaire"
-* item[=].item[=].item[=].text = "Commentaire"
 * item[=].item[=].type = #choice
 * item[=].item[=].linkId = "position-corps"
 * item[=].item[=].code = $icf#d410 "Changing basic body position"
@@ -371,9 +335,6 @@ Usage: #definition
 * item[=].item[=].item[=].linkId = "deplacer-maison-habit"
 * item[=].item[=].item[=].code = $terminologie-cisis#MED-1310 "fait habituellement"
 * item[=].item[=].item[=].text = "fait habituellement"
-* item[=].item[=].item[+].type = #text
-* item[=].item[=].item[=].linkId = "deplacer-maison-commentaire"
-* item[=].item[=].item[=].text = "Commentaire"
 * item[=].item[=].type = #choice
 * item[=].item[=].linkId = "deplacer-maison"
 * item[=].item[=].code = $icf#d4600 "Moving around within the home"
@@ -400,9 +361,6 @@ Usage: #definition
 * item[=].item[=].item[=].linkId = "deplacer-dehors-habit"
 * item[=].item[=].item[=].code = $terminologie-cisis#MED-1310 "fait habituellement"
 * item[=].item[=].item[=].text = "fait habituellement"
-* item[=].item[=].item[+].type = #text
-* item[=].item[=].item[=].linkId = "deplacer-dehors-commentaire"
-* item[=].item[=].item[=].text = "Commentaire"
 * item[=].item[=].type = #choice
 * item[=].item[=].linkId = "deplacer-dehors"
 * item[=].item[=].code = $icf#d4602 "Moving around outside the home and other buildings"
@@ -429,9 +387,6 @@ Usage: #definition
 * item[=].item[=].item[=].linkId = "appareil-habit"
 * item[=].item[=].item[=].code = $terminologie-cisis#MED-1310 "fait habituellement"
 * item[=].item[=].item[=].text = "fait habituellement"
-* item[=].item[=].item[+].type = #text
-* item[=].item[=].item[=].linkId = "appareil-commentaire"
-* item[=].item[=].item[=].text = "Commentaire"
 * item[=].item[=].type = #choice
 * item[=].item[=].linkId = "appareil-communication"
 * item[=].item[=].code = $icf#d3608 "Using communication devices and techniques, other specified"
