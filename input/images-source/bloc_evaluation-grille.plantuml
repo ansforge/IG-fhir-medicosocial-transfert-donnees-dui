@@ -1,4 +1,4 @@
-@startuml
+@startuml Evaluation
 
 hide empty methods
 
@@ -28,7 +28,7 @@ note right of Evaluation::resultat
 end note
 
 class "DetailEvaluation" as DetailEvaluationN1 <<premier niveau>> #LightGray {
-    champsEvalue: Code [1..1]
+    champsEvalue : Code [1..1]
     resultatChampsEvalue : [1..1]
     commentaire : Texte [0..1]
 }

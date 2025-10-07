@@ -1324,6 +1324,97 @@ Dans le cas d'une auto évaluation, l'auteur étant l'usager cet élément n'est
 <br>
 <u>Remarque</u> : Hormis le cas de l'auto évaluation, au moins un des 3 éléments (Evaluateur, Responsable, Auteur) doit être renseigné.
 
+#### Projet personnalisé
+
+<div style="text-align:center;">{%include bloc_projet_personnalise.svg%}</div>
+
+##### Classe Projet personnalisé
+Le projet personnalisé est un document co-construit par l'usager, son entourage et les professionnels du médico-social. Il s'agit d'un outil de coordination visant à répondre à long terme aux besoins et attentes de l'usager. Il regroupe les attentes, définit les objectifs et met en place un accompagnement pour favoriser le développement et l'autonomie de l'usager. 
+Le projet personnalisé est mis à jour à chaque événement de vie de l'usager ou au minimum une fois par an.
+
+##### Classe Besoin
+Chaque usager a des attentes et des besoins singuliers, que le professionnel s’emploie à intégrer dans le projet personnalisé en tenant compte de l'évolution de sa situation, de ses aspirations et ses spécificités. Le besoin peut découler des attentes.
+
+
+##### Classe Objectif
+L'objectif correspond au résultat à atteindre dans le cadre du projet personnalisé. Il peut être rattaché au besoin.
+
+
+##### Classe Action
+L'action est un acte mené dans le cadre du projet personnalisé. Elle peut être ratachée à un ou plusieurs objectifs.
+
+
+##### Classe MoyenRessource
+Le moyen ou la ressource sert à réaliser le projet personnalisé. Le moyen ou la ressource peut être rattaché à une action.
+
+
+##### Classe PrestationProjetPersonnalise
+La prestation désigne ce qui doit être accompli ou fourni à l'usager.Elle peut être rattachée à une action.
+
+
+##### Classe Attente
+L'attente de l'usager représente les souhaits, les désirs et les envies dans tous les domaines de sa vie. Elle peut être exprimée aussi bien par l'usager ainsi que par son entourage ou les professionnels du médico-social.
+
+
+##### Classe Bilan
+Un bilan est une analyse réalisée à la conclusion du projet personnalisé ou à une étape intermédiaire.
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>idBilan : [1..1] Identifiant</td>
+    <td>Identifiant métier unique du bilan.</td>
+ </tr>
+ <tr>
+    <td>dateBilan : [1..1] DateHeure</td>
+    <td>Date et heure du bilan.</td>
+ </tr>
+ <tr>
+    <td>categorieBilan : [0..1] Code</td>
+    <td>Catégorie du bilan.</td>
+ </tr>
+  <tr>
+    <td>perimetreBilan : [0..1] Texte</td>
+    <td>Périmètre du bilan.</td>
+ </tr>
+ <tr>
+    <td>problematiqueGlobaleUsager : [0..1] Texte</td>
+    <td>Problématique liée à l'usager.</td>
+ </tr>
+ <tr>
+    <td>synthesePreparationBilan : [0..*] Texte</td>
+    <td>Préparation du bilan.</td>
+ </tr>
+ <tr>
+    <td>corps : [1..1] Texte</td>
+    <td>Corps de la préparation.</td>
+ </tr>
+ <tr>
+    <td>auteur : [1..1] Texte</td>
+    <td>Auteur de la préparation.</td>
+ </tr>
+ <tr>
+    <td>syntheseBilan : [0..1] Texte</td>
+    <td>Synthèse du bilan.</td>
+ </tr>
+ <tr>
+    <td>inviteBilan : [0..1] Texte</td>
+    <td>Liste les personnes invitées à participer au bilan. Il peut s'agir de professionnels du médico-social ou de l'entourage familiale de l'usager.</td>
+ </tr>
+ <tr>
+    <td>dateProchainBilan : [0..1] DateHeure</td>
+    <td>Date du prochain bilan.</td>
+ </tr>
+ <tr>
+    <td>pieceJointeBilan : [0..*] ObjetBinaire</td>
+    <td>Pièce(s) jointe(s) au bilan.</td>
+ </tr>
+</table>    
+
+
 ### Partie Coordination des acteurs
 
 #### Evènement de l'agenda

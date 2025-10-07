@@ -1,0 +1,45 @@
+@startuml ProjetPersonnalise
+
+hide empty methods
+
+class Usager #LightPink
+class Attente #LightGray
+class Besoin #LightGray
+class Objectif #LightGray
+class Action #LightGray
+class MoyenRessource #LightGray
+class PrestationProjetPersonnalise #LightGray
+class Bilan #LightGray
+
+
+
+class ProjetPersonnalise #LightGray {
+    idProjetPersonnalise : Identifiant [1..1]
+    titreProjetPersonnalise : Texte [1..1]
+    descriptionProjetPersonnalise : Texte [0..1]
+    statutProjetPersonnalise : Statut [1..1]
+    typeProjetPersonnalise : Code [0..1]
+    modaliteCommunicationProjetPersonnalise : Texte [0..1]
+    accordUsagerProjetPersonnalise : Accord [0..*]
+    accordStructureProjetPersonnalise : Accord [1..*]
+    dateDebutMiseEnOeuvreProjetPersonnalise : DateHeure [0..1]
+    dateFinMiseEnOeuvreProjetPersonnalise : DateHeure [0..1]
+    entrantProjetPersonnalisee : ObjetBinaire [0..*]
+    }
+
+Usager "1" -- "0..*" ProjetPersonnalise
+ProjetPersonnalise "1" -- "0..*" Attente
+ProjetPersonnalise "1" -- "0..*" Besoin
+ProjetPersonnalise "1" - "0..*" Objectif
+ProjetPersonnalise "1" - "0..*" Action
+ProjetPersonnalise "1" -- "0..*" MoyenRessource
+ProjetPersonnalise "1" -- "0..*" PrestationProjetPersonnalise
+ProjetPersonnalise "1" -- "0..*" Bilan
+
+Besoin "0..*" -- "0..*" Objectif
+Objectif "0..*" -- "0..*" Action
+Action "0..1" -- "0..*" MoyenRessource
+Action "0..1" -- "0..*" PrestationProjetPersonnalise
+
+
+@enduml
