@@ -42,8 +42,8 @@ Mapping:  ConceptMetier_TDDUIQuestionnaireResponseAGGIR
 Source:   TDDUIQuestionnaireResponse
 Target: "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"
 Id:       specmetier-to-TDDUIQuestionnaireResponseAGGIR
-Title:    "EvaluationAGGIR"
-* -> "EvaluationAGGIR"
+Title:    "Modèle de contenu DUI"
+* -> "Evaluation AGGIR PA SSIAD, Evaluation AGGIR PH SSIAD"
 
 * identifier -> "idEvaluation"
 * authored -> "dateEvaluation"
@@ -58,7 +58,7 @@ Title:    "EvaluationAGGIR"
 * author -> "Auteur"
 * source -> "Evaluateur"
 * meta.lastUpdated -> "Statut.dateStatut"
-* item.answer.valueCoding -> "resultatEvaluation"
+* item.answer -> "resultatEvaluation"
 * item.item -> "«premier niveau»DetailEvaluation"
 * item.item.linkId -> "champsEvalue"
 * item.item.answer -> "resultatChampsEvalue"
@@ -72,8 +72,8 @@ Mapping:  ConceptMetier_TDDUIQuestionnaireResponseSerafinSSIAD
 Source:   TDDUIQuestionnaireResponse
 Target: "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"
 Id:       specmetier-to-TDDUIQuestionnaireResponseSerafinSSIAD
-Title:    "EvaluationSERAFIN/SSIAD"
-* -> "EvaluationSERAFIN/SSIAD"
+Title:    "Modèle de contenu DUI"
+* -> "Evaluation SERAFIN, Evaluation de la situation SSIAD"
 
 * identifier -> "idEvaluation"
 * authored -> "dateEvaluation"
