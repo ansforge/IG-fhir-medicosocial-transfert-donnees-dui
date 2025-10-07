@@ -106,7 +106,7 @@ Mapping:  ConceptMetier_TDDUIEncounterEvenement
 Source:   TDDUIEncounterEvenement
 Target: "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"
 Id:       specmetier-to-TDDUIEncounterEvenement
-Title:    "Évènement"
+Title:    "Modèle de contenu DUI"
 * -> "Événement"
 
 * identifier -> "idEvenement"

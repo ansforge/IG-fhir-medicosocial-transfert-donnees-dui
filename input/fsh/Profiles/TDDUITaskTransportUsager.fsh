@@ -32,7 +32,7 @@ Mapping:  ConceptMetier_TDDUITaskTransportusager
 Source:   TDDUITaskTransportUsager
 Target: "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"
 Id:       specmetier-to-TDDUITaskTransportUsager
-Title:    "Transport de l'usager"
+Title:    "Modèle de contenu DUI"
 * -> "TransportUsager"
 
 * insert TDDUITaskTransportMapping

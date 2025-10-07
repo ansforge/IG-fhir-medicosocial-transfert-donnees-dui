@@ -12,7 +12,7 @@ Mapping:  ConceptMetier_TDDUITaskTransportProfessionnel
 Source:   TDDUITaskTransportProfessionnel
 Target: "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"
 Id:       specmetier-to-TDDUITaskTransportProfessionnel
-Title:    "Transport du professionnel"
+Title:    "Modèle de contenu DUI"
 * -> "TransportProfessionnel"
 
 * insert TDDUITaskTransportMapping

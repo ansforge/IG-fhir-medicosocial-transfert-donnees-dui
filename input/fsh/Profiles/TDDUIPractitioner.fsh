@@ -13,7 +13,7 @@ Mapping:  ConceptMetier_TDDUIPractitioner
 Source:   TDDUIPractitioner
 Target: "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"
 Id:       specmetier-to-TDDUIPractitioner
-Title:    "Professionnel"
+Title:    "Modèle de contenu DUI"
 * -> "Professionnel"
 
 * identifier[idNatPs] -> "idNat_PS"

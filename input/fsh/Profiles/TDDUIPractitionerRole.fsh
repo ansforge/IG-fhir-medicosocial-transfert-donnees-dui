@@ -24,7 +24,7 @@ Mapping:  ConceptMetier_TDDUIPractitionerRole
 Source:   TDDUIPractitionerRole
 Target: "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"
 Id:       specmetier-to-TDDUIPractitionerRole
-Title:    "Professionnel"
+Title:    "Modèle de contenu DUI"
 * -> "Professionnel"
 
 * code -> "rôle"
