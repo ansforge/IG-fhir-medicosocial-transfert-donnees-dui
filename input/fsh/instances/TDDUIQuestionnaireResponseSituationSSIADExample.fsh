@@ -1,6 +1,6 @@
 Instance: tddui-questionnaire-response-situation-ssiad-example
 InstanceOf: TDDUIQuestionnaireResponse
-Description: "Grille de répponse de la situation SSIAD"
+Description: "Grille de réponse de la situation SSIAD"
 Usage: #example
 
 * identifier.value = "3480787529/147720425367411-EVAL-21564655"
