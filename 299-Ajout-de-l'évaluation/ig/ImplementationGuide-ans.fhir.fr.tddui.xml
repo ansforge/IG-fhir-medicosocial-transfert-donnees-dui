@@ -10,7 +10,7 @@
   <name value="TDDUI"/>
   <title value="Médicosocial - Transfert de données DUI"/>
   <status value="active"/>
-  <date value="2025-10-07T16:19:46+00:00"/>
+  <date value="2025-10-08T12:42:57+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -950,10 +950,32 @@
         <valueString value="QuestionnaireResponse"/>
       </extension>
       <reference>
+        <reference value="QuestionnaireResponse/tddui-questionnaire-response-serafin-precision-example"/>
+      </reference>
+      <name value="tddui-questionnaire-response-serafin-precision-example"/>
+      <description value="Evaluation SERAFIN pour un besoin d'hébergement adapté avec précision"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/tddui-questionnaire-response-serafin-sans-precision-example"/>
+      </reference>
+      <name value="tddui-questionnaire-response-serafin-sans-precision-example"/>
+      <description value="Evaluation SERAFIN pour un besoin d'hébergement adapté sans précision"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
         <reference value="QuestionnaireResponse/tddui-questionnaire-response-situation-ssiad-example"/>
       </reference>
       <name value="tddui-questionnaire-response-situation-ssiad-example"/>
-      <description value="Grille de répponse de la situation SSIAD"/>
+      <description value="Grille de réponse de la situation SSIAD"/>
       <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"/>
     </resource>
     <resource>

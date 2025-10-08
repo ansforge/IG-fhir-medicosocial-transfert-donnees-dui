@@ -10,7 +10,7 @@
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2025-10-07T16:19:46+00:00",
+  "date" : "2025-10-08T12:42:57+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -1156,10 +1156,34 @@
         "valueString" : "QuestionnaireResponse"
       }],
       "reference" : {
+        "reference" : "QuestionnaireResponse/tddui-questionnaire-response-serafin-precision-example"
+      },
+      "name" : "tddui-questionnaire-response-serafin-precision-example",
+      "description" : "Evaluation SERAFIN pour un besoin d'hébergement adapté avec précision",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/tddui-questionnaire-response-serafin-sans-precision-example"
+      },
+      "name" : "tddui-questionnaire-response-serafin-sans-precision-example",
+      "description" : "Evaluation SERAFIN pour un besoin d'hébergement adapté sans précision",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      }],
+      "reference" : {
         "reference" : "QuestionnaireResponse/tddui-questionnaire-response-situation-ssiad-example"
       },
       "name" : "tddui-questionnaire-response-situation-ssiad-example",
-      "description" : "Grille de répponse de la situation SSIAD",
+      "description" : "Grille de réponse de la situation SSIAD",
       "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
     },
     {
