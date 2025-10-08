@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "12620007-0d24-4977-946f-5ef69f9b9ee2-21",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/12620007-0d24-4977-946f-5ef69f9b9ee2-21",
+  "id" : "c06063e9-bc9a-447c-ab52-8c03b39b148f-21",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/c06063e9-bc9a-447c-ab52-8c03b39b148f-21",
   "name" : "IntersectionTDDUICommentAndTDDUIComment",
   "title" : "Intersection of Commentaire And Commentaire",
   "status" : "active",
-  "date" : "2025-10-07T14:59:31+00:00",
+  "date" : "2025-10-08T15:01:05+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -17,7 +17,7 @@
     "element" : [{
       "path" : "Extension",
       "short" : "Commentaire",
-      "definition" : "left: Commentaire relatif au séjour.; right: Commentaire relatif au séjour et aux évènements.",
+      "definition" : "left: Commentaire relatif au séjour.; right: \n- **Séjour** : commentaire relatif au séjour.\n- **Événement** : commentaires sur le déroulé de l’évènement.\n- **Évaluation** : commentaire libre sur le contenu ou le résultat de l’évaluation.\n- **Champ évalué** : commentaire spécifique à un item ou sous-item évalué.",
       "min" : 0,
       "max" : "*",
       "constraint" : [{
@@ -128,7 +128,7 @@
     },
     {
       "path" : "Extension.value[x]",
-      "short" : "Value of extension",
+      "short" : "left: Value of extension; right: Exemple de commentaire : Cet évènement a débuté plus tard l’usager était sous la douche à l’heure du début du rendez-vous.",
       "definition" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility] for a list).",
       "min" : 0,
       "max" : "1",

@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "TDDUI"] ; # 
   fhir:title [ fhir:v "Médicosocial - Transfert de données DUI"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-10-07T14:58:06+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-08T14:59:36+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -878,7 +878,7 @@
          fhir:reference [ fhir:v "StructureDefinition/tddui-comment" ]
        ] ;
        fhir:name [ fhir:v "Commentaire" ] ;
-       fhir:description [ fhir:v "Commentaire relatif au séjour et aux évènements." ] ;
+       fhir:description [ fhir:v "\n- **Séjour** : commentaire relatif au séjour.\n- **Événement** : commentaires sur le déroulé de l’évènement.\n- **Évaluation** : commentaire libre sur le contenu ou le résultat de l’évaluation.\n- **Champ évalué** : commentaire spécifique à un item ou sous-item évalué." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
