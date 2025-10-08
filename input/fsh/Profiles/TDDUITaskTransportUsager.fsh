@@ -4,6 +4,8 @@ Id: tddui-task-transport-usager
 Title: "TDDUI Task Transport Usager"
 Description: "Profil de la ressource TDDUITaskTransport permettant de représenter le transport de l'usager."
 
+* identifier.value ^short = "Format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-TPPat-idTransport."
+
 * input ^slicing.discriminator.type = #pattern
 * input ^slicing.discriminator.path = "type"
 * input ^slicing.rules = #open
