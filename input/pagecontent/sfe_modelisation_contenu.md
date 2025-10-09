@@ -1332,13 +1332,109 @@ Dans le cas d'une auto évaluation, l'auteur étant l'usager cet élément n'est
 Le projet personnalisé est un document co-construit par l'usager, son entourage et les professionnels du médico-social. Il s'agit d'un outil de coordination visant à répondre à long terme aux besoins et attentes de l'usager. Il regroupe les attentes, définit les objectifs et met en place un accompagnement pour favoriser le développement et l'autonomie de l'usager. 
 Le projet personnalisé est mis à jour à chaque événement de vie de l'usager ou au minimum une fois par an.
 
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>idObjectif : [1..1] Identifiant</td>
+    <td>Identifiant technique du moyen ou de la ressource obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "OBJE" et de l'identifiant de l'objectif dans le DUI (numObjectif) : <br>idObjectif = 3+FINESS/identifiantLocalUsagerESSMS-OBJE-numObjectif</td>
+  </tr>
+</table>
+
 ##### Classe Besoin
 Chaque usager a des attentes et des besoins singuliers, que le professionnel s’emploie à intégrer dans le projet personnalisé en tenant compte de l'évolution de sa situation, de ses aspirations et ses spécificités. Le besoin peut découler des attentes.
 
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>idBesoin : [1..1] Identifiant</td>
+    <td>Identifiant technique du moyen ou de la ressource obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "BESO" et de l'identifiant du besoin dans le DUI (numBesoin) : <br>idBesoin = 3+FINESS/identifiantLocalUsagerESSMS-BESO-numBesoin</td>
+  </tr>
+  <tr>
+    <td>typeBesoin : [0..1] Code</td>
+    <td>Type de besoin.<br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J285-Besoins_SERAFIN/FHIR/JDV-J285-Besoins-SERAFIN">JDV-J285-Besoins-SERAFIN</a></td>
+  </tr>
+  <tr>
+    <td>descriptionBesoin : [1..1] Texte</td>
+    <td>Description du besoin.</td>
+  </tr>
+  <tr>
+    <td>analyseProfessionnelBesoin : [0..*] Texte</td>
+    <td>Analyse du besoin par un professionnel.</td>
+  </tr>
+  <tr>
+    <td>commentaireBesoin : [0..*] Texte</td>
+    <td>Permet de compléter ou éclairer la description du besoin.</td>
+  </tr>
+  <tr>
+    <td>pieceJointeBesoin : [0..*] ObjetBinaire</td>
+    <td>Pièce(s) jointe(s)du besoin.</td>
+  </tr>
+</table>
 
 ##### Classe Objectif
 L'objectif correspond au résultat à atteindre dans le cadre du projet personnalisé. Il peut être rattaché au besoin.
 
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>idObjectif : [1..1] Identifiant</td>
+    <td>Identifiant technique du moyen ou de la ressource obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "OBJE" et de l'identifiant de l'objectif dans le DUI (numObjectif) : <br>idObjectif = 3+FINESS/identifiantLocalUsagerESSMS-OBJE-numObjectif</td>
+  </tr>
+  <tr>
+    <td>titreObjectif : [1..1] Texte</td>
+    <td>Titre de l'objectif.</td>
+  </tr>
+  <tr>
+    <td>descriptionObjectif : [1..1] Texte</td>
+    <td>Description de l'objectif.</td>
+  </tr>
+  <tr>
+    <td>domaineObjectif : [0..*] ConceptCode</td>
+    <td>Domaine de l'objectif. La notion de domaine renvoi à des référentiels locaux au sein des structures ESMS.</td>
+  </tr>
+  <tr>
+    <td>dateDebutObjectif : [0..1] DateHeure</td>
+    <td>Date de début de l'objectif.</td>
+  </tr>
+  <tr>
+    <td>dateFinObjectif : [0..1] DateHeure</td>
+    <td>Date de fin de l'objectif.</td>
+  </tr>
+  <tr>
+    <td>evaluationObjectif : [0..*] Evaluation</td>
+    <td>Evaluation de l'objectif.</td>
+  </tr>
+  <tr>
+    <td>avisUsagerObjectif : [0..1] Texte</td>
+    <td>Avis de l'usager sur l'objectif.</td>
+  </tr>
+  <tr>
+    <td>resultatAttenduObjectif : [0..1] Texte</td>
+    <td>Résultat attendu sur l'objectif.</td>
+  </tr>
+  <tr>
+    <td>statutObjectif : [1..1] statut</td>
+    <td>Statut de l'action.</td>
+  </tr>
+  <tr>
+    <td>strategieMiseEnOeuvreObjectif : [0..1] Texte</td>
+    <td>Stratégie mise en œuvre de l'objectif.</td>
+  </tr>
+  <tr>
+    <td>referentObjectif : [0..1] Professionnel</td>
+    <td>Référent de l'objectif.</td>
+  </tr>
+</table>
 
 ##### Classe Action
 L'action est un acte mené dans le cadre du projet personnalisé. Elle peut être ratachée à un ou plusieurs objectifs.
@@ -1348,6 +1444,50 @@ L'action est un acte mené dans le cadre du projet personnalisé. Elle peut êtr
     <th>Nom</th>
     <th>Description</th>
   </tr>
+  <tr>
+    <td>idAction : [1..1] Identifiant</td>
+    <td>Identifiant technique du moyen ou de la ressource obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "ACTI" et de l'identifiant de l'action dans le DUI (numAction) : <br>idAction = 3+FINESS/identifiantLocalUsagerESSMS-ACTI-numAction</td>
+  </tr> 
+  <tr>
+    <td>titreAction : [1..1] Texte</td>
+    <td>Titre de l'action à mener.</td>
+  </tr>
+  <tr>
+    <td>descriptionAction : [0..1] Texte</td>
+    <td>Description de l'action à mener.</td>
+  </tr>
+  <tr>
+    <td>dateDebutAction : [0..1] DateHeure</td>
+    <td>Date de début de l'action à mener.</td>
+  </tr>
+  <tr>
+    <td>dateFinAction : [0..1] DateHeure</td>
+    <td>Date de fin de l'action à mener.</td>
+  </tr>
+  <tr>
+    <td>evaluationAction : [0..*] Evaluation</td>
+    <td>Evaluation de l'action.</td>
+  </tr>
+  <tr>
+    <td>avisUsagerAction : [0..1] Texte</td>
+    <td>Avis de l'usager sur l'action.</td>
+  </tr>
+  <tr>
+    <td>resultatAttenduAction : [0..1] Texte</td>
+    <td>Résultat attendu de l'action.</td>
+  </tr>
+  <tr>
+    <td>statutAction : [1..1] statut</td>
+    <td>Statut de l'action.</td>
+  </tr>
+  <tr>
+    <td>referentAction : [0..1] Professionnel</td>
+    <td>Référent de l'action.</td>
+  </tr>
+    <tr>
+  <td>pieceJointeAction : [0..*] ObjetBinaire</td>
+  <td>Pièce(s) jointe(s) de l'action.</td>
+</tr>
 </table>
 
 ##### Classe MoyenRessource
@@ -1360,7 +1500,7 @@ Le moyen ou la ressource sert à réaliser le projet personnalisé. Le moyen ou 
   </tr>
   <tr>
     <td>idMoyenRessource : [1..1] Identifiant</td>
-    <td>Identifiant technique du moyen ou de la ressource obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "MORE" et de l'identifiant du moyen ou de la ressource dans le DUI (numMoyenRessource) : <br>idPrestation = 3+FINESS/identifiantLocalUsagerESSMS-MORE-numMoyenRessource</td>
+    <td>Identifiant technique du moyen ou de la ressource obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "MORE" et de l'identifiant du moyen ou de la ressource dans le DUI (numMoyenRessource) : <br>idMoyenRessource = 3+FINESS/identifiantLocalUsagerESSMS-MORE-numMoyenRessource</td>
   </tr> 
   <tr>
     <td>titreMoyenRessource : [1..1] Texte </td>
