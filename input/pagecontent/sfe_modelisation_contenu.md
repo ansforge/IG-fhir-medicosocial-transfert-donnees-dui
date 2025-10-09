@@ -1343,18 +1343,128 @@ L'objectif correspond au résultat à atteindre dans le cadre du projet personna
 ##### Classe Action
 L'action est un acte mené dans le cadre du projet personnalisé. Elle peut être ratachée à un ou plusieurs objectifs.
 
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+</table>
 
 ##### Classe MoyenRessource
 Le moyen ou la ressource sert à réaliser le projet personnalisé. Le moyen ou la ressource peut être rattaché à une action.
 
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>idMoyenRessource : [1..1] Identifiant</td>
+    <td>Identifiant technique du moyen ou de la ressource obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "MORE" et de l'identifiant du moyen ou de la ressource dans le DUI (numMoyenRessource) : <br>idPrestation = 3+FINESS/identifiantLocalUsagerESSMS-MORE-numMoyenRessource</td>
+  </tr> 
+  <tr>
+    <td>titreMoyenRessource : [1..1] Texte </td>
+    <td>Titre du moyen ou de la ressource à utiliser.</td>
+  </tr>
+  <tr>
+    <td>descriptionMoyenRessource : [0..1] Texte </td>
+    <td>Description du moyen ou de la ressource.</td>
+  </tr>
+  <tr>
+    <td>typeMoyenRessource : [0..1] Texte </td>
+    <td>Type du moyen ou de la ressource.<br>Distinction entre moyen et ressource si nécessaire.</td>
+  </tr>
+  <tr>
+    <td>dateDebutMoyenRessource : [0..1] DateHeure</td>
+    <td>Date de début du moyen ou de la ressource.</td>
+  </tr>
+  <tr>
+    <td>dateFinMoyenRessource : [0..1] DateHeure</td>
+    <td>Date de fin du moyen ou de la ressource.</td>
+  </tr>
+  <tr>
+    <td>evaluationMoyenRessource : [0..1] Evaluation</td>
+    <td>Evaluation du moyen ou de la ressource.</td>
+  </tr>
+  <tr>
+  <td>pieceJointeMoyenRessource : [0..*] ObjetBinaire</td>
+  <td>Pièce(s) jointe(s) du moyen ou de la ressource.</td>
+</tr>
+</table>
 
 ##### Classe PrestationProjetPersonnalise
 La prestation désigne ce qui doit être accompli ou fourni à l'usager.Elle peut être rattachée à une action.
 
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>idPrestation : [1..1] Identifiant</td>
+    <td>Identifiant technique de la prestation projet personalisé obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "PRES" et de l'identifiant de la prestation projet personalisé dans le DUI (numPrestation) : <br>idPrestation = 3+FINESS/identifiantLocalUsagerESSMS-PRES-numPrestation</td>
+  </tr>
+  <tr>
+    <td>titrePrestation : [1..1] Texte</td>
+    <td>Titre de la prestation à utiliser.</td>
+  </tr>
+  <tr>
+    <td>descriptionPrestation : [0..1] Texte</td>
+    <td>Description de la prestation.</td>
+  </tr>
+  <tr>
+    <td>typePrestation : [0..*] Code</td>
+    <td>Type de la prestation.<br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J283-PrestationsIndirects_SERAFIN/FHIR/JDV-J283-PrestationsIndirects-SERAFIN">JDV-J283-PrestationsIndirects-SERAFIN</a>, <a href="https://mos.esante.gouv.fr/NOS/JDV_J284-PrestationsDirects_SERAFIN/FHIR/JDV-J284-PrestationsDirects-SERAFIN">JDV-J284-PrestationsDirects-SERAFIN</a>
+</td>
+  </tr>
+<tr>
+  <td>dateDebutPrestation : [0..1] DateHeure</td>
+  <td>Date de début de la prestation.</td>
+</tr>
+<tr>
+  <td>dateFinPrestation : [0..1] DateHeure</td>
+  <td>Date de fin de la prestation.</td>
+</tr>
+<tr>
+  <td>evaluationPrestation : [0..1] Evaluation</td>
+  <td>Evaluation de la prestation.</td>
+</tr>
+<tr>
+  <td>statutPrestation : [1..1] Statut</td>
+  <td>Statut de la prestation.</td>
+</tr>
+<tr>
+  <td>pieceJointePrestation : [0..*] ObjetBinaire</td>
+  <td>Pièce(s) jointe(s) de la prestation.</td>
+</tr>
+</table> 
 
 ##### Classe Attente
 L'attente de l'usager représente les souhaits, les désirs et les envies dans tous les domaines de sa vie. Elle peut être exprimée aussi bien par l'usager ainsi que par son entourage ou les professionnels du médico-social.
 
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>idAttente : [1..1] Identifiant</td>
+    <td>Identifiant technique de l'attente obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "ATTE" et de l'identifiant de l'attente dans le DUI (numAttente) : <br>idAttente = 3+FINESS/identifiantLocalUsagerESSMS-ATTE-numAttente</td>
+  </tr>
+  <tr>
+    <td>origineAttente : [1..1] Texte</td>
+    <td>Acteur (personne physique ou personne morale) qui a un lien avec l'usager ou l'usager elle-même qui définit son attente.</td>
+  </tr>
+  <tr>
+    <td>descriptionAttente : [1..1] Texte</td>
+    <td>Description de l'attente, des souhaits de l'acteur pour l'usager.</td>
+  </tr>
+  <tr>
+    <td>commentaireAttente : [0..*] Texte</td>
+    <td>Permet de compléter ou éclairer la description de l'attente.</td>
+  </tr>
+</table> 
 
 ##### Classe Bilan
 Un bilan est une analyse réalisée à la conclusion du projet personnalisé ou à une étape intermédiaire.
@@ -1366,7 +1476,7 @@ Un bilan est une analyse réalisée à la conclusion du projet personnalisé ou 
   </tr>
   <tr>
     <td>idBilan : [1..1] Identifiant</td>
-    <td>Identifiant métier unique du bilan.</td>
+    <td>Identifiant technique du bilan obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "BILA" et de l'identifiant du bilan dans le DUI (numBilan) : <br>idBilan = 3+FINESS/identifiantLocalUsagerESSMS-BILA-numBilan</td>
  </tr>
  <tr>
     <td>dateBilan : [1..1] DateHeure</td>
@@ -1374,7 +1484,8 @@ Un bilan est une analyse réalisée à la conclusion du projet personnalisé ou 
  </tr>
  <tr>
     <td>categorieBilan : [0..1] Code</td>
-    <td>Catégorie du bilan.</td>
+    <td>Catégorie du bilan.<br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j366-statut-bilan-projet-personnalise-ms">JdvJ366StatutBilanProjetPersonnaliseMs</a></td>
  </tr>
   <tr>
     <td>perimetreBilan : [0..1] Texte</td>
@@ -1729,7 +1840,7 @@ Portion déterminée de l'espace où se sont déroulés des événements.
 
 ##### Classe Statut
 
-Cette classe décrit le statut des ressources (Evenement, Evaluation).
+Cette classe décrit le statut des ressources (Evenement, Evaluation, Projet personnalisé, ...).
 
 <table style="width:100%">
   <tr>
