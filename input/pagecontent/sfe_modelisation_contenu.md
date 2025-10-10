@@ -1338,8 +1338,49 @@ Le projet personnalisé est mis à jour à chaque événement de vie de l'usager
     <th>Description</th>
   </tr>
   <tr>
-    <td>idObjectif : [1..1] Identifiant</td>
-    <td>Identifiant technique du moyen ou de la ressource obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "OBJE" et de l'identifiant de l'objectif dans le DUI (numObjectif) : <br>idObjectif = 3+FINESS/identifiantLocalUsagerESSMS-OBJE-numObjectif</td>
+    <td>idProjetPersonnalise : [1..1] Identifiant</td>
+    <td>Identifiant technique du moyen ou de la ressource obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "PPER" et de l'identifiant de l'objectif dans le DUI (numProjetPersonnalise) : <br>idProjetPersonnalise = 3+FINESS/identifiantLocalUsagerESSMS-PPER-numProjetPersonnalise</td>
+  </tr>
+  <tr>
+    <td>titreProjetPersonnalise : [1..1] Texte</td>
+    <td>Titre du projet personnalisé.</td>
+  </tr>
+  <tr>
+    <td>descriptionProjetPersonnalise : [0..1] Texte</td>
+    <td>Description du projet personnalisé.</td>
+  </tr>
+  <tr>
+    <td>statutProjetPersonnalise : [1..1] <a href="#classe-statut">Statut</a></td>
+    <td>Statut du projet personnalisé.</td>
+  </tr>
+  <tr>
+    <td>typeProjetPersonnalise : [0..1] Code</td>
+    <td>Type de projet personnalisé.<br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j367-type-projet-personnalise-ms">JDV-J367-type-projet-personnalise-ms</td>
+  </tr>
+  <tr>
+    <td>modaliteCommunicationProjetPersonnalise : [0..1] Texte</td>
+    <td>Modalité de communication ou de transmission du projet personnalisé à l'usager et/ou à son entourage.</td>
+  </tr>
+  <tr>
+    <td>accordUsagerProjetPersonnalise : [0..*] <a href="#classe-accord">Accord</a></td>
+    <td>Accord de l'usager et/ou de son entourage.</td>
+  </tr>
+  <tr>
+    <td>accordStructureProjetPersonnalise : [1..*] <a href="#classe-accord">Accord</a></td>
+    <td>Accord de la structure.</td>
+  </tr>
+  <tr>
+    <td>dateDebutMiseEnOeuvreProjetPersonnalise : [0..1] DateHeure</td>
+    <td>Date de début de mise en œuvre du projet personnalisé.</td>
+  </tr>
+  <tr>
+    <td>dateFinMiseEnOeuvreProjetPersonnalise : [0..1] DateHeure</td>
+    <td>Date de fin de mise en œuvre du projet personnalisé.</td>
+  </tr>
+  <tr>
+    <td>entrantProjetPersonnalisee : [0..*] ObjetBinaire</td>
+    <td>Entrant(s) du projet personnalisé.</td>
   </tr>
 </table>
 
@@ -2009,6 +2050,29 @@ Cette classe décrit le statut des ressources (Evenement, Evaluation, Projet per
    <tr>
     <td>auteur : [0..1] Professionnel</td>
     <td>Le professionnel ayant effectué la dernière modification du statut associé à la ressource.</td>
+  </tr>
+</table>
+
+##### Classe Accord
+
+Cela correspond au consentement d'une personne physique ou morale.
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>auteur : [1..1] Texte</td>
+    <td>Acteur qui donne son accord.</td>
+  </tr>
+  <tr>
+    <td>dateSignature : [1..1] DateHeure</td>
+    <td>Date de délivrance de l'accord.</td>
+  </tr>
+  <tr>
+    <td>dureeValidite : [0..1] Periode</td>
+    <td>Durée de validité de l'accord</td>
   </tr>
 </table>
 
