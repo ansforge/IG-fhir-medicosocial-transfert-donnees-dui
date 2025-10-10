@@ -11,7 +11,9 @@ class MoyenRessource #LightGray
 class PrestationProjetPersonnalise #LightGray
 class Bilan #LightGray
 
-
+class Evaluation #LightGray
+class "DetailEvaluation" as DetailEvaluationN1 <<premier niveau>> #LightGray 
+class "DetailEvaluation" as DetailEvaluationN2 <<deuxième niveau>> #LightGray
 
 class ProjetPersonnalise #LightGray {
     idProjetPersonnalise : Identifiant [1..1]
@@ -28,18 +30,21 @@ class ProjetPersonnalise #LightGray {
     }
 
 Usager "1" -- "0..*" ProjetPersonnalise
-ProjetPersonnalise "1" -- "0..*" Bilan
-ProjetPersonnalise "1" -- "0..*" Attente
-ProjetPersonnalise "1" -- "0..*" Besoin
-ProjetPersonnalise "1" - "0..*" Objectif
+ProjetPersonnalise "1" - "0..*" Bilan
+Attente "0..*" - "1" ProjetPersonnalise
+ProjetPersonnalise "1" - "0..*" Besoin
+ProjetPersonnalise "1" -- "0..*" Objectif
 ProjetPersonnalise "1" - "0..*" Action
 ProjetPersonnalise "1" -- "0..*" MoyenRessource
-ProjetPersonnalise "1" -- "0..*" PrestationProjetPersonnalise
+ProjetPersonnalise "1" - "0..*" PrestationProjetPersonnalise
 
-Besoin "0..*" -- "0..*" Objectif
-Objectif "0..*" -- "0..*" Action
-Action "0..1" -- "0..*" MoyenRessource
+Besoin "0..*" - "0..*" Objectif
+Objectif "0..*" - "0..*" Action
+Action "0..1" - "0..*" MoyenRessource
 Action "0..1" -- "0..*" PrestationProjetPersonnalise
 
+Usager "1" - "0..*" Evaluation
+Evaluation "1" - "0..*" DetailEvaluationN1
+DetailEvaluationN1 "1" - "0..*" DetailEvaluationN2
 
 @enduml
