@@ -1411,7 +1411,7 @@ L'objectif correspond au résultat à atteindre dans le cadre du projet personna
     <td>Date de fin de l'objectif.</td>
   </tr>
   <tr>
-    <td>evaluationObjectif : [0..*] Evaluation</td>
+    <td>evaluationObjectif : [0..*] <a href="#classe-evaluation">Evaluation</a></td>
     <td>Evaluation de l'objectif.</td>
   </tr>
   <tr>
@@ -1423,7 +1423,7 @@ L'objectif correspond au résultat à atteindre dans le cadre du projet personna
     <td>Résultat attendu sur l'objectif.</td>
   </tr>
   <tr>
-    <td>statutObjectif : [1..1] statut</td>
+    <td>statutObjectif : [1..1] <a href="#classe-statut">Statut</a></td>
     <td>Statut de l'action.</td>
   </tr>
   <tr>
@@ -1431,7 +1431,7 @@ L'objectif correspond au résultat à atteindre dans le cadre du projet personna
     <td>Stratégie mise en œuvre de l'objectif.</td>
   </tr>
   <tr>
-    <td>referentObjectif : [0..1] Professionnel</td>
+    <td>referentObjectif : [0..1] <a href="#classe-professionnel">Professionnel</a></td>
     <td>Référent de l'objectif.</td>
   </tr>
 </table>
@@ -1465,7 +1465,7 @@ L'action est un acte mené dans le cadre du projet personnalisé. Elle peut êtr
     <td>Date de fin de l'action à mener.</td>
   </tr>
   <tr>
-    <td>evaluationAction : [0..*] Evaluation</td>
+    <td>evaluationAction : [0..*] <a href="#classe-evaluation">Evaluation</a></td>
     <td>Evaluation de l'action.</td>
   </tr>
   <tr>
@@ -1477,11 +1477,11 @@ L'action est un acte mené dans le cadre du projet personnalisé. Elle peut êtr
     <td>Résultat attendu de l'action.</td>
   </tr>
   <tr>
-    <td>statutAction : [1..1] statut</td>
+    <td>statutAction : [1..1] <a href="#classe-statut">Statut</a></td>
     <td>Statut de l'action.</td>
   </tr>
   <tr>
-    <td>referentAction : [0..1] Professionnel</td>
+    <td>referentAction : [0..1] <a href="#classe-professionnel">Professionnel</a></td>
     <td>Référent de l'action.</td>
   </tr>
     <tr>
@@ -1523,7 +1523,7 @@ Le moyen ou la ressource sert à réaliser le projet personnalisé. Le moyen ou 
     <td>Date de fin du moyen ou de la ressource.</td>
   </tr>
   <tr>
-    <td>evaluationMoyenRessource : [0..1] Evaluation</td>
+    <td>evaluationMoyenRessource : [0..1] <a href="#classe-evaluation">Evaluation</a></td>
     <td>Evaluation du moyen ou de la ressource.</td>
   </tr>
   <tr>
@@ -1567,11 +1567,11 @@ La prestation désigne ce qui doit être accompli ou fourni à l'usager.Elle peu
   <td>Date de fin de la prestation.</td>
 </tr>
 <tr>
-  <td>evaluationPrestation : [0..1] Evaluation</td>
+  <td>evaluationPrestation : [0..1] <a href="#classe-evaluation">Evaluation</a></td>
   <td>Evaluation de la prestation.</td>
 </tr>
 <tr>
-  <td>statutPrestation : [1..1] Statut</td>
+  <td>statutPrestation : [1..1] <a href="#classe-statut">Statut</a></td>
   <td>Statut de la prestation.</td>
 </tr>
 <tr>
