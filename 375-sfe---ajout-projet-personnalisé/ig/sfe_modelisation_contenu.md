@@ -652,17 +652,17 @@ L'objectif correspond au résultat à atteindre dans le cadre du projet personna
   * Description: Date de début de l'objectif.
 * Nom: dateFinObjectif : [0..1] DateHeure
   * Description: Date de fin de l'objectif.
-* Nom: evaluationObjectif : [0..*] Evaluation
+* Nom: evaluationObjectif : [0..*][Evaluation](#classe-evaluation)
   * Description: Evaluation de l'objectif.
 * Nom: avisUsagerObjectif : [0..1] Texte
   * Description: Avis de l'usager sur l'objectif.
 * Nom: resultatAttenduObjectif : [0..1] Texte
   * Description: Résultat attendu sur l'objectif.
-* Nom: statutObjectif : [1..1] statut
+* Nom: statutObjectif : [1..1][Statut](#classe-statut)
   * Description: Statut de l'action.
 * Nom: strategieMiseEnOeuvreObjectif : [0..1] Texte
   * Description: Stratégie mise en œuvre de l'objectif.
-* Nom: referentObjectif : [0..1] Professionnel
+* Nom: referentObjectif : [0..1][Professionnel](#classe-professionnel)
   * Description: Référent de l'objectif.
 
 ##### Classe Action
@@ -679,15 +679,15 @@ L'action est un acte mené dans le cadre du projet personnalisé. Elle peut êtr
   * Description: Date de début de l'action à mener.
 * Nom: dateFinAction : [0..1] DateHeure
   * Description: Date de fin de l'action à mener.
-* Nom: evaluationAction : [0..*] Evaluation
+* Nom: evaluationAction : [0..*][Evaluation](#classe-evaluation)
   * Description: Evaluation de l'action.
 * Nom: avisUsagerAction : [0..1] Texte
   * Description: Avis de l'usager sur l'action.
 * Nom: resultatAttenduAction : [0..1] Texte
   * Description: Résultat attendu de l'action.
-* Nom: statutAction : [1..1] statut
+* Nom: statutAction : [1..1][Statut](#classe-statut)
   * Description: Statut de l'action.
-* Nom: referentAction : [0..1] Professionnel
+* Nom: referentAction : [0..1][Professionnel](#classe-professionnel)
   * Description: Référent de l'action.
 * Nom: pieceJointeAction : [0..*] ObjetBinaire
   * Description: Pièce(s) jointe(s) de l'action.
@@ -708,7 +708,7 @@ Le moyen ou la ressource sert à réaliser le projet personnalisé. Le moyen ou 
   * Description: Date de début du moyen ou de la ressource.
 * Nom: dateFinMoyenRessource : [0..1] DateHeure
   * Description: Date de fin du moyen ou de la ressource.
-* Nom: evaluationMoyenRessource : [0..1] Evaluation
+* Nom: evaluationMoyenRessource : [0..1][Evaluation](#classe-evaluation)
   * Description: Evaluation du moyen ou de la ressource.
 * Nom: pieceJointeMoyenRessource : [0..*] ObjetBinaire
   * Description: Pièce(s) jointe(s) du moyen ou de la ressource.
@@ -729,9 +729,9 @@ La prestation désigne ce qui doit être accompli ou fourni à l'usager.Elle peu
   * Description: Date de début de la prestation.
 * Nom: dateFinPrestation : [0..1] DateHeure
   * Description: Date de fin de la prestation.
-* Nom: evaluationPrestation : [0..1] Evaluation
+* Nom: evaluationPrestation : [0..1][Evaluation](#classe-evaluation)
   * Description: Evaluation de la prestation.
-* Nom: statutPrestation : [1..1] Statut
+* Nom: statutPrestation : [1..1][Statut](#classe-statut)
   * Description: Statut de la prestation.
 * Nom: pieceJointePrestation : [0..*] ObjetBinaire
   * Description: Pièce(s) jointe(s) de la prestation.
