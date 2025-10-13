@@ -1,7 +1,7 @@
 Extension: TDDUIRessourcesUsed
 Id: tddui-ressources-used
 Title: "Ressources utilisées"
-Description: "Ressources utilisées lors de l’évènement."
+Description: "Ressources utilisées lors de l’évènement (ex : Batiment, matériel médical, véhicule)."
 Context: Encounter
 
 * extension ^slicing.discriminator.type = #value

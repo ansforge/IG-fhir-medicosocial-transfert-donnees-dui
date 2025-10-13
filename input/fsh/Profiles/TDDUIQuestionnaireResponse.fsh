@@ -5,7 +5,9 @@ Title: "TDDUI QuestionnaireResponse"
 Description: "Profil de la ressource QuestionnaireResponse utilisé pour transmettre les réponses aux questionnaires dans le cadre des évaluations." 
 
 * identifier 1..1
-* identifier.value ^short = "Format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-EVAL-numEvaluation."
+* identifier ^short = "Identifiant de l'évaluation"
+* identifier.value ^example[0].label = "L'identifiant de l'évaluation : 3+FINESS/identifiantLocalUsagerESSMS-EVAL-numEvaluation."
+* identifier.value ^example[0].valueIdentifier.value = "3480787529/147720425367411-EVAL-21564655"
 
 * questionnaire ^short = """
 Le profil permet de communiquer les grilles définies suivantes :
