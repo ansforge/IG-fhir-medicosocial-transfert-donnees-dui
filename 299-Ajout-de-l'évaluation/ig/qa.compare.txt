@@ -1,7 +1,7 @@
 TDDUI : Validation Results
 =========================================
 
-err = 108, warn = 62, info = 56
+err = 110, warn = 62, info = 56
 $--
 Generated $--. FHIR version $-- for ans.fhir.fr.tddui#$-- (canonical = https://interop.esante.gouv.fr/ig/fhir/tddui)
  Build Errors : 1 / 5 / 0
@@ -34,7 +34,7 @@ Generated $--. FHIR version $-- for ans.fhir.fr.tddui#$-- (canonical = https://i
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-birth-order : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-bundle : 0 / 0 / 2
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-comment : 0 / 0 / 1
- /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-encounter-evenement : 0 / 7 / 4
+ /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-encounter-evenement : 1 / 7 / 4
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-encounter-sejour : 0 / 3 / 3
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-entry-mode-label : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-event-cancel-reason : 0 / 2 / 1
@@ -53,7 +53,7 @@ Generated $--. FHIR version $-- for ans.fhir.fr.tddui#$-- (canonical = https://i
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-practitioner-role : 0 / 2 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-profession : 0 / 2 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-qr-participant : 0 / 1 / 1
- /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-questionnaire-response : 0 / 0 / 1
+ /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-questionnaire-response : 1 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-ressources-used : 0 / 4 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-task-transport : 0 / 0 / 3
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-task-transport-professionnel : 0 / 0 / 2
@@ -260,6 +260,7 @@ WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir
 INFORMATION: StructureDefinition/tddui-bundle: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
 == fsh-generated/resources/StructureDefinition-tddui-comment.json ==
 == fsh-generated/resources/StructureDefinition-tddui-encounter-evenement.json ==
+ERROR: StructureDefinition.differential.element[19].example[0]: Unrecognized property 'valueIdentifier'
 WARNING: StructureDefinition/tddui-encounter-evenement: StructureDefinition.snapshot.element[51].example[1].value.ofType(uri): No definition could be found for URL value '1.2.250.1.71.4.2.2.1330780321'
 WARNING: StructureDefinition/tddui-encounter-evenement: StructureDefinition.snapshot.element[51].example[2].value.ofType(uri): No definition could be found for URL value 'http://hopitalTest.fr/fhir/namingsystem/encounters'
 INFORMATION: StructureDefinition/tddui-encounter-evenement: StructureDefinition.snapshot.element[59].type[0].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/regex|5.2.0 is deprecated with the note: 'This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex'
@@ -332,6 +333,7 @@ WARNING: StructureDefinition/tddui-profession: StructureDefinition.differential.
 == fsh-generated/resources/StructureDefinition-tddui-qr-participant.json ==
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-tddui-questionnaire-response.json ==
+ERROR: StructureDefinition.differential.element[9].example[0]: Unrecognized property 'valueIdentifier'
 == fsh-generated/resources/StructureDefinition-tddui-ressources-used.json ==
 WARNING: StructureDefinition/tddui-ressources-used: StructureDefinition.snapshot.element[8].constraint[2]: MatDetailOnlyIfTypeOrg206: Reference to an unknown extension - double check that the URL 'TDDUIRessourceType' is correct
 WARNING: StructureDefinition/tddui-ressources-used: StructureDefinition.snapshot.element[8].constraint[2]: MatDetailOnlyIfTypeOrg206: The left side is inherently a collection, and so the expression 'extension('TDDUIRessourceType').value.coding.code = 'ORG-206'' may fail or return false if there is more than one item in the content being evaluated
