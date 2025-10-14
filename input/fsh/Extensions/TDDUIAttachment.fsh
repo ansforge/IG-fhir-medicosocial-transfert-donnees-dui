@@ -5,4 +5,4 @@ Description: "Pièces jointes liées à l’événement et à l'évaluation. L'e
 Context: Encounter
 
 * value[x] only Reference
-* valueReference only Reference(PDSm_SimplifiedPublish)
+* valueReference only Reference(TDDUIDocumentReference)
