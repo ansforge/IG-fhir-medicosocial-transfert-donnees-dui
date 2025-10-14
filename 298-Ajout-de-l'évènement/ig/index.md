@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui | *Version*:2.0.0-ballot |
-| Active as of 2025-10-10 | *Computable Name*:TDDUI |
+| Active as of 2025-10-14 | *Computable Name*:TDDUI |
 
  **Brief description of this Implementation Guide**
  The Digital User File (DUI) centralizes all information concerning the person being cared for in social and medico-social facilities and services. The aim of this implementation guide is to define the specifications for DUI data transfer. 
@@ -107,9 +107,6 @@ Pour en savoir davantage, rendez-vous sur la page [Synthèse des flux](descripti
 
 
 
-
-
-
 ## Resource Content
 
 ```json
@@ -121,7 +118,7 @@ Pour en savoir davantage, rendez-vous sur la page [Synthèse des flux](descripti
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2025-10-10T14:52:44+00:00",
+  "date" : "2025-10-14T09:28:59+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -174,16 +171,16 @@ Pour en savoir davantage, rendez-vous sur la page [Synthèse des flux](descripti
       "version" : "1.2.0"
     },
     {
-      "id" : "ans_fhir_fr_pdsm",
-      "uri" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/ImplementationGuide/ans.fhir.fr.pdsm",
-      "packageId" : "ans.fhir.fr.pdsm",
-      "version" : "3.1.0"
-    },
-    {
       "id" : "hl7_fhir_uv_extensions",
       "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
       "packageId" : "hl7.fhir.uv.extensions",
       "version" : "5.2.0"
+    },
+    {
+      "id" : "ihe_iti_mhd",
+      "uri" : "https://profiles.ihe.net/ITI/MHD/ImplementationGuide/ihe.iti.mhd",
+      "packageId" : "ihe.iti.mhd",
+      "version" : "4.2.0"
     }
   ],
   "definition" : {
@@ -1092,6 +1089,20 @@ Pour en savoir davantage, rendez-vous sur la page [Synthèse des flux](descripti
         },
         "name" : "TDDUI Bundle",
         "description" : "Profil générique créé pour transmettre des données d'un logiciel DUI.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/tddui-document-reference"
+        },
+        "name" : "TDDUI DocumentReference",
+        "description" : "Profil de la ressource TDDUIDocumentReference pour les pièces jointes liées à l’événement et à l'évaluation.",
         "exampleBoolean" : false
       },
       {

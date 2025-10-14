@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role | *Version*:2.0.0-ballot |
-| Active as of 2025-10-10 | *Computable Name*:TDDUIPractitionerRole |
+| Active as of 2025-10-14 | *Computable Name*:TDDUIPractitionerRole |
 
  
 Profil de la ressource FRCorePractitionerRole permettant de représenter un Professionnel. 
 
 **Usages:**
 
-* Refer to this Profile: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)
+* Refer to this Profile: [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md) and [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)
 * Examples for this Profile: [PractitionerRole/tddui-practitioner-role-example](PractitionerRole-tddui-practitioner-role-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-practitioner-role)
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-practitioner-r
   "name" : "TDDUIPractitionerRole",
   "title" : "TDDUI Practitioner Role",
   "status" : "active",
-  "date" : "2025-10-10T14:52:44+00:00",
+  "date" : "2025-10-14T09:28:59+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

@@ -10,7 +10,7 @@
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2025-10-10T14:52:44+00:00",
+  "date" : "2025-10-14T09:28:59+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -52,16 +52,16 @@
     "version" : "1.2.0"
   },
   {
-    "id" : "ans_fhir_fr_pdsm",
-    "uri" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/ImplementationGuide/ans.fhir.fr.pdsm",
-    "packageId" : "ans.fhir.fr.pdsm",
-    "version" : "3.1.0"
-  },
-  {
     "id" : "hl7_fhir_uv_extensions",
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions",
     "version" : "5.2.0"
+  },
+  {
+    "id" : "ihe_iti_mhd",
+    "uri" : "https://profiles.ihe.net/ITI/MHD/ImplementationGuide/ihe.iti.mhd",
+    "packageId" : "ihe.iti.mhd",
+    "version" : "4.2.0"
   }],
   "definition" : {
     "extension" : [{
@@ -830,6 +830,18 @@
       },
       "name" : "TDDUI Bundle",
       "description" : "Profil générique créé pour transmettre des données d'un logiciel DUI.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-document-reference"
+      },
+      "name" : "TDDUI DocumentReference",
+      "description" : "Profil de la ressource TDDUIDocumentReference pour les pièces jointes liées à l’événement et à l'évaluation.",
       "exampleBoolean" : false
     },
     {

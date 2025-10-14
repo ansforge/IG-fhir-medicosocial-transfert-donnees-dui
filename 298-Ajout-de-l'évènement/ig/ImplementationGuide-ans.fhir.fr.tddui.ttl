@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "TDDUI"] ; # 
   fhir:title [ fhir:v "Médicosocial - Transfert de données DUI"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-10-10T14:52:44+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-14T09:28:59+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -69,14 +69,6 @@
      fhir:packageId [ fhir:v "ans.fr.terminologies" ] ;
      fhir:version [ fhir:v "1.2.0" ]
   ] [
-     fhir:id [ fhir:v "ans_fhir_fr_pdsm" ] ;
-     fhir:uri [
-       fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/ImplementationGuide/ans.fhir.fr.pdsm"^^xsd:anyURI ;
-       fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/ImplementationGuide/ans.fhir.fr.pdsm>
-     ] ;
-     fhir:packageId [ fhir:v "ans.fhir.fr.pdsm" ] ;
-     fhir:version [ fhir:v "3.1.0" ]
-  ] [
      fhir:id [ fhir:v "hl7_fhir_uv_extensions" ] ;
      fhir:uri [
        fhir:v "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"^^xsd:anyURI ;
@@ -84,6 +76,14 @@
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.uv.extensions" ] ;
      fhir:version [ fhir:v "5.2.0" ]
+  ] [
+     fhir:id [ fhir:v "ihe_iti_mhd" ] ;
+     fhir:uri [
+       fhir:v "https://profiles.ihe.net/ITI/MHD/ImplementationGuide/ihe.iti.mhd"^^xsd:anyURI ;
+       fhir:link <https://profiles.ihe.net/ITI/MHD/ImplementationGuide/ihe.iti.mhd>
+     ] ;
+     fhir:packageId [ fhir:v "ihe.iti.mhd" ] ;
+     fhir:version [ fhir:v "4.2.0" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
@@ -1157,6 +1157,24 @@
        ] ;
        fhir:name [ fhir:v "TDDUI Bundle" ] ;
        fhir:description [ fhir:v "Profil générique créé pour transmettre des données d'un logiciel DUI." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-document-reference" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI DocumentReference" ] ;
+       fhir:description [ fhir:v "Profil de la ressource TDDUIDocumentReference pour les pièces jointes liées à l’événement et à l'évaluation." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false

@@ -10,7 +10,7 @@
   <name value="TDDUI"/>
   <title value="Médicosocial - Transfert de données DUI"/>
   <status value="active"/>
-  <date value="2025-10-10T14:52:44+00:00"/>
+  <date value="2025-10-14T09:28:59+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -47,15 +47,15 @@
     <packageId value="ans.fr.terminologies"/>
     <version value="1.2.0"/>
   </dependsOn>
-  <dependsOn id="ans_fhir_fr_pdsm">
-    <uri value="https://interop.esante.gouv.fr/ig/fhir/pdsm/ImplementationGuide/ans.fhir.fr.pdsm"/>
-    <packageId value="ans.fhir.fr.pdsm"/>
-    <version value="3.1.0"/>
-  </dependsOn>
   <dependsOn id="hl7_fhir_uv_extensions">
     <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
     <packageId value="hl7.fhir.uv.extensions"/>
     <version value="5.2.0"/>
+  </dependsOn>
+  <dependsOn id="ihe_iti_mhd">
+    <uri value="https://profiles.ihe.net/ITI/MHD/ImplementationGuide/ihe.iti.mhd"/>
+    <packageId value="ihe.iti.mhd"/>
+    <version value="4.2.0"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -651,6 +651,17 @@
       </reference>
       <name value="TDDUI Bundle"/>
       <description value="Profil générique créé pour transmettre des données d'un logiciel DUI."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-document-reference"/>
+      </reference>
+      <name value="TDDUI DocumentReference"/>
+      <description value="Profil de la ressource TDDUIDocumentReference pour les pièces jointes liées à l’événement et à l'évaluation."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
