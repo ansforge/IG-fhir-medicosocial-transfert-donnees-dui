@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used | *Version*:2.0.0-ballot |
-| Active as of 2025-10-14 | *Computable Name*:TDDUIRessourcesUsed |
+| Active as of 2025-10-15 | *Computable Name*:TDDUIRessourcesUsed |
 
 Ressources utilisées lors de l’évènement.
 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-ressources-use
   "name" : "TDDUIRessourcesUsed",
   "title" : "Ressources utilisées",
   "status" : "active",
-  "date" : "2025-10-14T09:28:59+00:00",
+  "date" : "2025-10-15T10:12:33+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

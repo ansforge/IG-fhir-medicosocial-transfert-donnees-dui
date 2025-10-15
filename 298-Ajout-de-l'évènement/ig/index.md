@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui | *Version*:2.0.0-ballot |
-| Active as of 2025-10-14 | *Computable Name*:TDDUI |
+| Active as of 2025-10-15 | *Computable Name*:TDDUI |
 
  **Brief description of this Implementation Guide**
  The Digital User File (DUI) centralizes all information concerning the person being cared for in social and medico-social facilities and services. The aim of this implementation guide is to define the specifications for DUI data transfer. 
@@ -118,7 +118,7 @@ Pour en savoir davantage, rendez-vous sur la page [Synthèse des flux](descripti
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2025-10-14T09:28:59+00:00",
+  "date" : "2025-10-15T10:12:33+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -1102,7 +1102,7 @@ Pour en savoir davantage, rendez-vous sur la page [Synthèse des flux](descripti
           "reference" : "StructureDefinition/tddui-document-reference"
         },
         "name" : "TDDUI DocumentReference",
-        "description" : "Profil de la ressource TDDUIDocumentReference pour les pièces jointes liées à l’événement et à l'évaluation.",
+        "description" : "Profil de la ressource SimplifiedPublishDocumentReference pour les pièces jointes liées à l’événement et à l'évaluation.",
         "exampleBoolean" : false
       },
       {
