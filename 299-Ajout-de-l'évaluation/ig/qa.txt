@@ -1,9 +1,9 @@
 TDDUI : Validation Results
 =========================================
 
-err = 110, warn = 62, info = 56
-IG Publisher Version: 2.0.20
-Generated Mon Oct 13 13:36:19 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.tddui#2.0.0-ballot (canonical = https://interop.esante.gouv.fr/ig/fhir/tddui)
+err = 111, warn = 63, info = 56
+IG Publisher Version: 2.0.21
+Generated Wed Oct 15 11:48:35 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.tddui#2.0.0-ballot (canonical = https://interop.esante.gouv.fr/ig/fhir/tddui)
  Build Errors : 1 / 5 / 0
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Bundle-ExampleTDDUIBundle : 0 / 6 / 15
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CapabilityStatement-TDDUIConsommateur : 0 / 1 / 1
@@ -11,7 +11,7 @@ Generated Mon Oct 13 13:36:19 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.tddui
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CodeSystem-input-tddui-task-transport-codesystem : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CodeSystem-tddui-encounter-identifier : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CodeSystem-tddui-identifier : 0 / 0 / 1
- /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Encounter-tddui-encounter-evenement-example : 0 / 0 / 4
+ /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Encounter-tddui-encounter-evenement-example : 1 / 1 / 4
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Encounter-tddui-encounter-sejour-example : 0 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.tddui : 1 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Location-tddui-event-location-example : 0 / 0 / 1
@@ -92,6 +92,8 @@ WARNING: CapabilityStatement/TDDUIProducteur: CapabilityStatement.implementation
 == fsh-generated/resources/Encounter-tddui-encounter-evenement-example.json ==
 INFORMATION: Encounter/tddui-encounter-evenement-example: Encounter.type[1]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Encounter/tddui-encounter-evenement-example: Encounter.extension[0].extension[0].value.ofType(CodeableConcept).coding[0].display: 'Vehicle' is the default display; the code system http://snomed.info/sct has no Display Names for the language fr-FR
+ERROR: Encounter/tddui-encounter-evenement-example: Encounter.extension[0].extension[0].value.ofType(CodeableConcept): Error from https://smt.esante.gouv.fr/fhir: Error: Could not compare as numbers: null and 202510150000
+WARNING: Encounter/tddui-encounter-evenement-example: Encounter.extension[0].extension[0].value.ofType(CodeableConcept): Could not confirm that the codings provided are in the value set https://smt.esante.gouv.fr/fhir/ValueSet/jdv-ressource-utilisee-cisis and a coding from this value set is required (class = SERVER_ERROR)
 INFORMATION: Encounter/tddui-encounter-evenement-example: Encounter.identifier[0].type: Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identifier-type|2.1.0
 == fsh-generated/resources/Encounter-tddui-encounter-sejour-example.json ==
 WARNING: Encounter/tddui-encounter-sejour-example: Encounter.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.250.2345.3245.13'

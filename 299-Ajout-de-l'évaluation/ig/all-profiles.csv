@@ -771,7 +771,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "tddui-encounter-evenement","Encounter.extension:TDDUIRessourcesUsed","Encounter.extension","TDDUIRessourcesUsed","","",0,*,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used]]} {[]}
-","Ressources utilisées lors de l’évènement.","Ressources utilisées lors de l’évènement (ex : Batiment, matériel médical, véhicule).","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Ressources utilisées lors de l’évènement.","Ressources utilisées lors de l’évènement (ex : chambre, matériel médical, véhicule).","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "tddui-encounter-evenement","Encounter.extension:TDDUIRessourcesUsed.id","Encounter.extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -4578,7 +4578,7 @@ decimal {[]} {[]}integer {[]} {[]}date {[]} {[]}dateTime {[]} {[]}time {[]} {[]}
 ","Nested questionnaire response items","Questions or sub-groups nested beneath a question or group.","","Reports can consist of complex nested groups.","","","","","","","",,,,,"",,,,"QuestionnaireResponse.item.item",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-ressources-used","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Ressources utilisées","Ressources utilisées lors de l’évènement (ex : Batiment, matériel médical, véhicule).","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","Ressources utilisées","Ressources utilisées lors de l’évènement (ex : chambre, matériel médical, véhicule).","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "tddui-ressources-used","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}

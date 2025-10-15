@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-profession | *Version*:2.0.0-ballot |
-| Active as of 2025-10-13 | *Computable Name*:TDDUIProfession |
+| Active as of 2025-10-15 | *Computable Name*:TDDUIProfession |
 
 Extension permettant de représenter la profession du professionnel.
 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-profession.csv
   "name" : "TDDUIProfession",
   "title" : "TDDUI Profession",
   "status" : "active",
-  "date" : "2025-10-13T13:31:44+00:00",
+  "date" : "2025-10-15T11:45:31+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

@@ -76,7 +76,7 @@ These define constraints on FHIR data types for systems conforming to this imple
 | [Rapport de l’évènement](StructureDefinition-tddui-event-report.md) | Zone de texte liée à l’événement pour compte rendu des actions réalisées. |
 | [Repas](StructureDefinition-tddui-meal.md) | Repas du professionnel prévu dans le cadre de l'événement. |
 | [Responsable et auteur du statut de l'évaluation](StructureDefinition-tddui-qr-participant.md) | Extension permettant d'ajouter le responsable de l'évaluation et l'auteur du statut de l'évaluation dans un QuestionnaireResponse. |
-| [Ressources utilisées](StructureDefinition-tddui-ressources-used.md) | Ressources utilisées lors de l’évènement (ex : Batiment, matériel médical, véhicule). |
+| [Ressources utilisées](StructureDefinition-tddui-ressources-used.md) | Ressources utilisées lors de l’évènement (ex : chambre, matériel médical, véhicule). |
 | [TDDUI Profession](StructureDefinition-tddui-profession.md) | Extension permettant de représenter la profession du professionnel. |
 | [Usager présent](StructureDefinition-tddui-patient-present.md) | Evènement nécessitant ou non la présence physique de l’usager. |
 | [Évènement annulé](StructureDefinition-tddui-event-cancel-reason.md) | Motif associé au statut de non-réalisation de l’évènement. |

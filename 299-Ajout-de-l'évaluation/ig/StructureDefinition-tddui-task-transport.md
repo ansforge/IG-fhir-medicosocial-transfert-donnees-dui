@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport | *Version*:2.0.0-ballot |
-| Active as of 2025-10-13 | *Computable Name*:TDDUITaskTransport |
+| Active as of 2025-10-15 | *Computable Name*:TDDUITaskTransport |
 
  
 Profil de la ressource Task permettant de représenter le transport. 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
   "name" : "TDDUITaskTransport",
   "title" : "TDDUI Task Transport",
   "status" : "active",
-  "date" : "2025-10-13T13:31:44+00:00",
+  "date" : "2025-10-15T11:45:31+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
