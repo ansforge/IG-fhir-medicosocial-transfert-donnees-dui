@@ -2,7 +2,7 @@ Profile: TDDUIPractitioner
 Parent: FRCorePractitionerProfile
 Id: tddui-practitioner
 Title: "TDDUI Practitioner"
-Description: "Profil de la ressource FRCorePractitionerProfile permettant de représenter un Profesionnel."
+Description: "Profil de la ressource FRCorePractitionerProfile permettant de représenter un professionnel du médicosocial dans le cadre de TDDUI."
 
 * identifier[idNatPs] 1..1
 
