@@ -12,7 +12,7 @@
 | Active as of 2025-10-15 | *Computable Name*:TDDUIPractitioner |
 
  
-Profil de la ressource FRCorePractitionerProfile permettant de représenter un Profesionnel. 
+Profil de la ressource FRCorePractitionerProfile permettant de représenter un professionnel du médicosocial dans le cadre de TDDUI. 
 
 **Usages:**
 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-practitioner.c
   "name" : "TDDUIPractitioner",
   "title" : "TDDUI Practitioner",
   "status" : "active",
-  "date" : "2025-10-15T11:45:31+00:00",
+  "date" : "2025-10-15T11:51:21+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -55,7 +55,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-practitioner.c
       ]
     }
   ],
-  "description" : "Profil de la ressource FRCorePractitionerProfile permettant de représenter un Profesionnel.",
+  "description" : "Profil de la ressource FRCorePractitionerProfile permettant de représenter un professionnel du médicosocial dans le cadre de TDDUI.",
   "jurisdiction" : [
     {
       "coding" : [
