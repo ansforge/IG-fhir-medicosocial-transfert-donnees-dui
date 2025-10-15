@@ -2,7 +2,7 @@ Profile: TDDUIPractitioner
 Parent: FRCorePractitionerProfile
 Id: tddui-practitioner
 Title: "TDDUI Practitioner"
-Description: "Profil de la ressource FRCorePractitionerProfile permettant de représenter un professionnel du médicosocial dans le cadre de TDDUI. Le profil AsPractitionerRoleProfile n'a pas été utilisé car il comportait trop de contraintes non présentes dans les DUI.
+Description: "Profil de la ressource FRCorePractitionerProfile permettant de représenter un professionnel du médicosocial dans le cadre de TDDUI. Le profil AsPractitionerRoleProfile n'a pas été utilisé car il comportait trop de contraintes non présentes dans les DUI."
 
 * identifier[idNatPs] 1..1
 
