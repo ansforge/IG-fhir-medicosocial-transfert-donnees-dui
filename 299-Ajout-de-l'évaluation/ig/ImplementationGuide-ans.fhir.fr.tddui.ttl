@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "TDDUI"] ; # 
   fhir:title [ fhir:v "Médicosocial - Transfert de données DUI"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-10-15T11:51:21+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-15T15:04:22+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -1292,7 +1292,7 @@
          fhir:reference [ fhir:v "StructureDefinition/tddui-practitioner" ]
        ] ;
        fhir:name [ fhir:v "TDDUI Practitioner" ] ;
-       fhir:description [ fhir:v "Profil de la ressource FRCorePractitionerProfile permettant de représenter un professionnel du médicosocial dans le cadre de TDDUI." ] ;
+       fhir:description [ fhir:v "Profil de la ressource FRCorePractitionerProfile permettant de représenter un professionnel du médicosocial dans le cadre de TDDUI. Le profil AsPractitionerRoleProfile n'a pas été utilisé car il comportait trop de contraintes non présentes dans les DUI." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
