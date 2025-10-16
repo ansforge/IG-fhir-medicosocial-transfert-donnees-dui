@@ -204,7 +204,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Médicosocial - Transfert de données DUI - Local Development build (v2.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://interop.esante.gouv.fr/ig/fhir/tddui/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Médicosocial - Transfert de données DUI - Local Development build (v2.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://interop.esante.gouv.fr/ig/fhir/tddui/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -228,10 +228,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#4">Structures: Extension Definitions</a>
       </li>
       <li>
-         <a href="#5">Terminology: Code Systems</a>
+         <a href="#5">Terminology: Value Sets</a>
       </li>
       <li>
-         <a href="#6">Example: Example Instances</a>
+         <a href="#6">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#7">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -282,6 +285,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-document-reference.html"
+                  title="StructureDefinition/tddui-document-reference">TDDUI DocumentReference</a>
+            </td>
+            <td>
+<p>Profil de la ressource SimplifiedPublishDocumentReference pour les pièces jointes liées à l’événement et à l'évaluation.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-encounter-evenement.html"
+                  title="StructureDefinition/tddui-encounter-evenement">TDDUI Encounter Evenement</a>
+            </td>
+            <td>
+<p>Profil de la ressource Encounter permettant de regrouper les évènements liés à la prise en charge de l’usager dans une structure ESSMS.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-tddui-encounter-sejour.html"
                   title="StructureDefinition/tddui-encounter-sejour">TDDUI Encounter Sejour</a>
             </td>
@@ -314,6 +335,51 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Profil de la ressource FRCorePatientINSProfile permettant de représenter un usager lorsque l'INS est transmis.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-practitioner.html"
+                  title="StructureDefinition/tddui-practitioner">TDDUI Practitioner</a>
+            </td>
+            <td>
+<p>Profil de la ressource FRCorePractitionerProfile permettant de représenter un Profesionnel.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-practitioner-role.html"
+                  title="StructureDefinition/tddui-practitioner-role">TDDUI Practitioner Role</a>
+            </td>
+            <td>
+<p>Profil de la ressource FRCorePractitionerRole permettant de représenter un Professionnel.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-task-transport.html"
+                  title="StructureDefinition/tddui-task-transport">TDDUI Task Transport</a>
+            </td>
+            <td>
+<p>Profil de la ressource Task permettant de représenter le transport.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-task-transport-professionnel.html"
+                  title="StructureDefinition/tddui-task-transport-professionnel">TDDUI Task Transport Professionnel</a>
+            </td>
+            <td>
+<p>Profil de la ressource TDDUITaskTransport permettant de représenter le transport du professionnel.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-task-transport-usager.html"
+                  title="StructureDefinition/tddui-task-transport-usager">TDDUI Task Transport Usager</a>
+            </td>
+            <td>
+<p>Profil de la ressource TDDUITaskTransport permettant de représenter le transport de l'usager.</p>
 </td>
          </tr>
       </tbody>
@@ -354,7 +420,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/tddui-comment">Commentaire</a>
             </td>
             <td>
-<p>Commentaire relatif au séjour.</p>
+
+<ul>
+  <li><strong>Séjour</strong> : commentaire relatif au séjour.</li>
+  <li><strong>Événement</strong> : commentaires sur le déroulé de l’évènement.</li>
+  <li><strong>Évaluation</strong> : commentaire libre sur le contenu ou le résultat de l’évaluation.</li>
+  <li><strong>Champ évalué</strong> : commentaire spécifique à un item ou sous-item évalué.</li>
+</ul>
 </td>
          </tr>
          <tr>
@@ -364,6 +436,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Date d’admission dans la structure ESSMS.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-outside-service.html"
+                  title="StructureDefinition/tddui-outside-service">Evénement hors prestation</a>
+            </td>
+            <td>
+<p>Evénement hors prestation prévue dans le projet personnalisé de l’usager.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-event-label.html"
+                  title="StructureDefinition/tddui-event-label">Libellé de l'évènement</a>
+            </td>
+            <td>
+<p>Titre donné à l’évènement par la structure.</p>
 </td>
          </tr>
          <tr>
@@ -386,6 +476,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-exercise-mode.html"
+                  title="StructureDefinition/tddui-exercise-mode">Mode d'exercice</a>
+            </td>
+            <td>
+<p>Extension permettant de représenter le mode d'exercice du professionnel.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-event-reason.html"
+                  title="StructureDefinition/tddui-event-reason">Motif de l’évènement</a>
+            </td>
+            <td>
+<p>Contexte justifiant la réalisation de l’évènement.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-tddui-birth-order.html"
                   title="StructureDefinition/tddui-birth-order">Ordre de naissance dans le registre d'état civil</a>
             </td>
@@ -393,9 +501,89 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Ordre d’enregistrement de la naissance dans le registre d’état civil de la commune de naissance pour le mois de la naissance. Il compose les 3 derniers chiffres du NIR de l'usager avant la clé de sécurité et permet de distinguer les personnes nées au même lieu et à la même période. Il est obligatoire si le NIR n'est pas transmis.</p>
 </td>
          </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-attachment.html"
+                  title="StructureDefinition/tddui-attachment">Pièce jointe</a>
+            </td>
+            <td>
+<p>Pièces jointes liées à l’événement et à l'évaluation. L'extension référence le profil PDSm_SimplifiedPublish.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-profession.html"
+                  title="StructureDefinition/tddui-profession">Profession</a>
+            </td>
+            <td>
+<p>Extension permettant de représenter la profession du professionnel.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-event-report.html"
+                  title="StructureDefinition/tddui-event-report">Rapport de l’évènement</a>
+            </td>
+            <td>
+<p>Zone de texte liée à l’événement pour compte rendu des actions réalisées.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-meal.html"
+                  title="StructureDefinition/tddui-meal">Repas</a>
+            </td>
+            <td>
+<p>Repas du professionnel prévu dans le cadre de l'événement.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-ressources-used.html"
+                  title="StructureDefinition/tddui-ressources-used">Ressources utilisées</a>
+            </td>
+            <td>
+<p>Ressources utilisées lors de l’évènement.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-patient-present.html"
+                  title="StructureDefinition/tddui-patient-present">Usager présent</a>
+            </td>
+            <td>
+<p>Evènement nécessitant ou non la présence physique de l’usager.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-event-cancel-reason.html"
+                  title="StructureDefinition/tddui-event-cancel-reason">Évènement annulé</a>
+            </td>
+            <td>
+<p>Motif associé au statut de non-réalisation de l’évènement.</p>
+</td>
+         </tr>
       </tbody>
    </table>
    <a name="5"> </a>
+   <h3>Terminology: Value Sets </h3>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-tddui-serafin-valueset.html"
+                  title="ValueSet/tddui-serafin-valueset">TDDUI SERAFIN ValueSet</a>
+            </td>
+            <td>
+<p>ValueSet contenant les codes SERAFIN (prestations directes et indirectes) pour le profil TDDUI Encounter Evenement.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="6"> </a>
    <h3>Terminology: Code Systems </h3>
     <p>These define new code systems used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -403,11 +591,29 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
+               <a href="CodeSystem-input-tddui-task-transport-codesystem.html"
+                  title="CodeSystem/input-tddui-task-transport-codesystem">InputTaskTransportCodeSystem</a>
+            </td>
+            <td>
+<p>CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les transports dans le cadre du DUI.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="CodeSystem-tddui-encounter-identifier.html"
                   title="CodeSystem/tddui-encounter-identifier">TDDUI Encounter FR Core CodeSystem v2-0203</a>
             </td>
             <td>
 <p>TDDUI Encounter's identifier</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-TDDUIEncounterParticipant.html"
+                  title="CodeSystem/TDDUIEncounterParticipant">TDDUI Encounter Participant Type</a>
+            </td>
+            <td>
+<p>CodeSystem for the participant types in TDDUI Encounter</p>
 </td>
          </tr>
          <tr>
@@ -421,7 +627,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="6"> </a>
+   <a name="7"> </a>
    <h3>Example: Example Instances </h3>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
 <table class="grid">
@@ -437,11 +643,29 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="Encounter-tddui-encounter-evenement-example.html"
+                  title="Encounter/tddui-encounter-evenement-example">tddui-encounter-evenement-example</a>
+            </td>
+            <td>
+<p>Exemple d'un évènement</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="Encounter-tddui-encounter-sejour-example.html"
                   title="Encounter/tddui-encounter-sejour-example">tddui-encounter-sejour-example</a>
             </td>
             <td>
 <p>Exemple d'un séjour en ESSMS</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-tddui-event-location-example.html"
+                  title="Location/tddui-event-location-example">tddui-event-location-example</a>
+            </td>
+            <td>
+<p>Lieu de l'évènement</p>
 </td>
          </tr>
          <tr>
@@ -469,6 +693,51 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Exemple de la ressource TDDUIPatientINS</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-tddui-practitioner-example.html"
+                  title="Practitioner/tddui-practitioner-example">tddui-practitioner-example</a>
+            </td>
+            <td>
+<p>Exemple d'un professionnel de santé</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-tddui-practitioner-role-example.html"
+                  title="PractitionerRole/tddui-practitioner-role-example">tddui-practitioner-role-example</a>
+            </td>
+            <td>
+<p>Exemple d'un professionnel de santé</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Task-tddui-task-transport-example.html"
+                  title="Task/tddui-task-transport-example">tddui-task-transport-example</a>
+            </td>
+            <td>
+<p>Exemple du transport.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Task-tddui-task-transport-professionel-example.html"
+                  title="Task/tddui-task-transport-professionel-example">tddui-task-transport-professionel-example</a>
+            </td>
+            <td>
+<p>Exemple du transport du professionnel.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Task-tddui-task-transport-usager-example.html"
+                  title="Task/tddui-task-transport-usager-example">tddui-task-transport-usager-example</a>
+            </td>
+            <td>
+<p>Exemple du transport de l'usager.</p>
 </td>
          </tr>
       </tbody>
@@ -513,7 +782,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 24, 2025 14:44+0000">2025-09-24</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 16, 2025 12:42+0000">2025-10-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
