@@ -1,0 +1,36 @@
+@startuml
+
+map "executionPeriod" as executionPeriod #DarkGray {
+    dateDebutTransport => start
+    dateFinTransport => end
+}
+
+object "**TDDUIEncounterEvenement**" as TDDUIEncounterEvenement #8dd3c7 {
+    Evenement
+}
+
+object "**TDDUIOrganization**" as TDDUIOrganization #bebada {
+    transporteur
+}
+
+map "**TransportUsager : TDDUITaskTransportUsager**" as TransportUsager #ccebc5 {
+    idTrajet => identifier
+    typeTransport => code
+    typeMotorisation => <&layers> input:typeMotorisation
+    adresseDepart => <&layers> input:adresseDepart
+    adresseDestination => <&layers> input:adresseDestination
+    budgetPrevisionnel => <&layers> input:budgetPrevisionnel
+    budgetReel => <&layers> input:budgetReel
+    distance => <&layers> input:distance
+    dureeTheorique => <&layers> input:dureeTheorique
+    accompagnement => <&layers> input:accompagnement
+    asepsieRigoureuse => <&layers> input:asepsieRigoureuse
+    natureTransport => <&layers> input:natureTransport
+    executionPeriod *-> executionPeriod
+}
+
+TransportUsager -d-> TDDUIEncounterEvenement : encounter
+TransportUsager -u-> TDDUIOrganization : owner
+
+
+@enduml

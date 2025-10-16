@@ -1,0 +1,60 @@
+@startuml
+
+map "meta" as meta #DarkGray {
+    dateModificationEvenement\nStatut.dateStatut => lastUpdated
+}
+
+map "Statut.statut : status" as Statutstatut #DarkGray {
+    Statut.motifNonRealisation => <&plus> tddui-event-cancel-reason
+}
+
+map "period" as period #DarkGray {
+    dateDebutEvenement => start
+    dateFinEvenement => end
+}
+
+object "**TDDUIPatient**" as TDDUIPatient #fdb462 {
+    Usager
+}
+
+object "**TDDUIPractitioner**" as TDDUIPractitioner #d9d9d9 {
+    Professionnel
+    Statut.auteur
+}
+
+object "**TDDUIOrganization**" as TDDUIOrganization #bebada {
+    structureEnCharge
+}
+
+object "**TDDUIEncounterSejour**" as TDDUIEncounterSejour #ffffb3 {
+    sejour
+}
+
+map "**Événement : TDDUIEncounterEvenement**" as Événement #8dd3c7 {
+    RessourceUtilisee => <&plus> TDDUIRessourcesUsed
+    typeRessourceUtilisee => <&plus> TDDUIRessourcesUsed.extension:TDDUIRessourceType
+    detailTypeRessourceUtilisee => <&plus> TDDUIRessourcesUsed.extension:TDDUIMaterialDetail
+    detailTypeRessourceUtilisee => <&plus> TDDUIRessourcesUsed.extension:TDDUIFacilityResource
+    libelleEvenement => <&plus> TDDUIEventLabel
+    commentaireEvenement => <&plus> TDDUIComment
+    compteRenduEvenement => <&plus> TDDUIEventReport
+    pieceJointeEvenement => <&plus> TDDUIAttachment
+    evenementHorsPrestation => <&plus> TDDUIEventOutsideService
+    motifEvenement => <&plus> TDDUIEventReason
+    usagerPresent => <&plus> TDDUIPatientPresent
+    repas => <&plus> TDDUIMeal
+    idEvenement => identifier
+    typeEvenement => type
+    lieuEvenement => location
+    Statut.statut => status    
+    period *-> period
+    meta *-> meta
+}
+
+Événement::Statut.statut -l-> Statutstatut
+Événement --> TDDUIPatient : subject
+Événement --> TDDUIPractitioner : participant.individual\n<&layers> participant:auteurStatut\n<&layers> participant:professionnel
+Événement --> TDDUIOrganization : serviceProvider
+Événement -u-> TDDUIEncounterSejour : partOf
+
+@enduml
