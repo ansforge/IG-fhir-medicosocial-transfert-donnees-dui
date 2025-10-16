@@ -6,10 +6,6 @@ Ce mapping représente les données fonctionnelles trouvant leur équivalence da
 <strong>Note :</strong> Pour visualiser l’entièreté du mapping, il est nécessaire de dézoomer.
 </p>
 
-### Mapping global
-
-<div>{%include mapping_global.svg%}</div>
-
 ### Mapping Usager
 
 <div>{%include mapping_TDDUIPatient.svg%}</div>
