@@ -1,4 +1,4 @@
-# TDDUI Encounter Evenement - Médicosocial - Transfert de données DUI v2.0.0-ballot
+# TDDUI Encounter Evenement - Médicosocial - Transfert de données DUI v2.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,15 +8,15 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement | *Version*:2.0.0-ballot |
-| Active as of 2025-10-15 | *Computable Name*:TDDUIEncounterEvenement |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement | *Version*:2.0.0 |
+| Active as of 2025-10-16 | *Computable Name*:TDDUIEncounterEvenement |
 
  
 Profil de la ressource Encounter permettant de regrouper les évènements liés à la prise en charge de l’usager dans une structure ESSMS. 
 
  
 >  
-**Note**: Le profil TDDUI ne peut pas hériter de FR Core Encounter à cause du type d'évènement qui est restreint à 1. Cependant, ce profil suit la plupart des règles de FR Core Encounter via un RuleSet. 
+**Note**: Le profil TDDUIEncounterEvenement n'hérite pas du profil FRCoreEncounterProfile à cause de l'interdiction de véhiculer plusieurs types d'évènements. Cependant, le profil TDDUIEncounterEvenement suit les contraintes du profil FRCoreEncounterProfile excepté la contrainte sur la cardinalité de l'élément type (0..1). 
  
 
 **Usages:**
@@ -43,11 +43,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-even
   "resourceType" : "StructureDefinition",
   "id" : "tddui-encounter-evenement",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement",
-  "version" : "2.0.0-ballot",
+  "version" : "2.0.0",
   "name" : "TDDUIEncounterEvenement",
   "title" : "TDDUI Encounter Evenement",
   "status" : "active",
-  "date" : "2025-10-15T15:04:22+00:00",
+  "date" : "2025-10-16T14:47:34+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -72,13 +72,13 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-even
       ]
     }
   ],
-  "purpose" : "> **Note** : Le profil TDDUI ne peut pas hériter de FR Core Encounter à cause du type d'évènement qui est restreint à 1. Cependant, ce profil suit la plupart des règles de FR Core Encounter via un RuleSet.",
+  "purpose" : "> **Note** : Le profil TDDUIEncounterEvenement n'hérite pas du profil FRCoreEncounterProfile à cause de l'interdiction de véhiculer plusieurs types d'évènements. Cependant, le profil TDDUIEncounterEvenement suit les contraintes du profil FRCoreEncounterProfile excepté la contrainte sur la cardinalité de l'élément type (0..1).",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
       "identity" : "specmetier-to-TDDUIEncounterEvenement",
       "uri" : "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html",
-      "name" : "Évènement"
+      "name" : "Modèle de contenu DUI"
     },
     {
       "identity" : "workflow",
@@ -111,6 +111,22 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-even
       {
         "id" : "Encounter",
         "path" : "Encounter",
+        "constraint" : [
+          {
+            "key" : "MatDetailOnlyIfTypeOrg206",
+            "severity" : "error",
+            "human" : "Le slice TDDUIMaterialDetail est utilisé uniquement lorsque le slice TDDUIRessourceType prend la valeur ORG-206.",
+            "expression" : "(Encounter.extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used').extension.where(url='TDDUIMaterialDetail').exists())\n    implies(Encounter.extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used').extension.where(url='TDDUIRessourceType').exists()\n    and(Encounter.extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used').extension.where(url='TDDUIRessourceType').value.coding.code='ORG-206'))",
+            "source" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement"
+          },
+          {
+            "key" : "FacilityOnlyIfTypeOrg207",
+            "severity" : "error",
+            "human" : "Le slice TDDUIFacilityResource est utilisé uniquement lorsque le slice TDDUIRessourceType prend la valeur ORG-207.",
+            "expression" : "(Encounter.extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used').extension.where(url='TDDUIFacilityResource').exists())\n    implies(Encounter.extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used').extension.where(url='TDDUIRessourceType').exists()\n    and(Encounter.extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used').extension.where(url='TDDUIRessourceType').value.coding.code='ORG-207'))",
+            "source" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement"
+          }
+        ],
         "mapping" : [
           {
             "identity" : "specmetier-to-TDDUIEncounterEvenement",
@@ -124,7 +140,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-even
         "mapping" : [
           {
             "identity" : "specmetier-to-TDDUIEncounterEvenement",
-            "map" : "dateModificationEvenement"
+            "map" : "dateModificationEvenement, Statut.dateStatut"
           }
         ]
       },
@@ -504,7 +520,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-even
         "mapping" : [
           {
             "identity" : "specmetier-to-TDDUIEncounterEvenement",
-            "map" : "statut.motifNonRealisation"
+            "map" : "Statut.motifNonRealisation"
           }
         ]
       },
@@ -643,7 +659,8 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-even
             "code" : "Reference",
             "targetProfile" : [
               "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient",
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins",
+              "http://hl7.org/fhir/StructureDefinition/Group"
             ]
           }
         ],
@@ -657,17 +674,16 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-even
       {
         "id" : "Encounter.participant",
         "path" : "Encounter.participant",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "pattern",
+              "path" : "type"
+            }
+          ],
+          "rules" : "open"
+        },
         "short" : "List of participants involved in the encounter | Liste des personnes impliquées dans la rencontre"
-      },
-      {
-        "id" : "Encounter.participant.type",
-        "path" : "Encounter.participant.type",
-        "mapping" : [
-          {
-            "identity" : "specmetier-to-TDDUIEncounterEvenement",
-            "map" : "statut.auteur"
-          }
-        ]
       },
       {
         "id" : "Encounter.participant.individual",
@@ -681,11 +697,89 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-even
               "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
             ]
           }
-        ],
+        ]
+      },
+      {
+        "id" : "Encounter.participant:auteurStatut",
+        "path" : "Encounter.participant",
+        "sliceName" : "auteurStatut",
+        "short" : "Professionnel ayant effectué la dernière modification du statut associé à la ressource.",
+        "min" : 0,
+        "max" : "1",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIEncounterEvenement",
+            "map" : "Statut.auteur"
+          }
+        ]
+      },
+      {
+        "id" : "Encounter.participant:auteurStatut.type",
+        "path" : "Encounter.participant.type",
+        "min" : 1,
+        "max" : "1",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/TDDUIEncounterParticipant",
+              "code" : "AUT",
+              "display" : "Auteur du statut de la ressource"
+            }
+          ]
+        }
+      },
+      {
+        "id" : "Encounter.participant:auteurStatut.individual",
+        "path" : "Encounter.participant.individual",
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner",
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role",
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "Encounter.participant:professionnel",
+        "path" : "Encounter.participant",
+        "sliceName" : "professionnel",
+        "min" : 0,
+        "max" : "1",
         "mapping" : [
           {
             "identity" : "specmetier-to-TDDUIEncounterEvenement",
             "map" : "Professionnel"
+          }
+        ]
+      },
+      {
+        "id" : "Encounter.participant:professionnel.type",
+        "path" : "Encounter.participant.type",
+        "min" : 1,
+        "max" : "1",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+              "code" : "PART"
+            }
+          ]
+        }
+      },
+      {
+        "id" : "Encounter.participant:professionnel.individual",
+        "path" : "Encounter.participant.individual",
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner",
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role",
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
+            ]
           }
         ]
       },

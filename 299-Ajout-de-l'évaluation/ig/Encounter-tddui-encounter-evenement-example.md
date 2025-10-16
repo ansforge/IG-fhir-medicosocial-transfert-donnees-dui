@@ -1,4 +1,4 @@
-# tddui-encounter-evenement-example - Médicosocial - Transfert de données DUI v2.0.0-ballot
+# tddui-encounter-evenement-example - Médicosocial - Transfert de données DUI v2.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -31,10 +31,10 @@ Profil: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenemen
 
 ### Participants
 
-| | |
-| :--- | :--- |
-| - | **Individual** |
-| * | [Practitioner Claire Martin](Practitioner-tddui-practitioner-example.md) |
+| | | |
+| :--- | :--- | :--- |
+| - | **Type** | **Individual** |
+| * | Participation | [Practitioner Claire Martin](Practitioner-tddui-practitioner-example.md) |
 
 **period**: 2023-04-14 10:30:00+0200 --> 2023-04-14 11:15:00+0200
 
@@ -135,6 +135,16 @@ Profil: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenemen
   },
   "participant" : [
     {
+      "type" : [
+        {
+          "coding" : [
+            {
+              "system" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+              "code" : "PART"
+            }
+          ]
+        }
+      ],
       "individual" : {
         "reference" : "Practitioner/tddui-practitioner-example"
       }

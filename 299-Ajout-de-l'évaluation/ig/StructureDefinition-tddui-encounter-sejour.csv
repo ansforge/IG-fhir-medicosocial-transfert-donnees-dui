@@ -46,7 +46,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","libelleModeSortie"
 "Encounter.extension:TDDUIComment","Encounter.extension","TDDUIComment","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment]]} {[]}
-","Commentaire relatif au séjour","Commentaire relatif au séjour, évènements et évaluations.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Commentaire relatif au séjour","
+- **Séjour** : commentaire relatif au séjour.
+- **Événement** : commentaires sur le déroulé de l’évènement.
+- **Évaluation** : commentaire libre sur le contenu ou le résultat de l’évaluation.
+- **Champ évalué** : commentaire spécifique à un item ou sous-item évalué.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","commentaire"
 "Encounter.modifierExtension","Encounter.modifierExtension","","extensions

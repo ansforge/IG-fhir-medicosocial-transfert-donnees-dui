@@ -1,4 +1,4 @@
-# Modélisation du contenu du DUI - Médicosocial - Transfert de données DUI v2.0.0-ballot
+# Modélisation du contenu du DUI - Médicosocial - Transfert de données DUI v2.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Volume 1 - Etude fonctionnelle**](sfe.md)
@@ -23,7 +23,7 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
 * Nom: numSecuriteSociale : [0..1] Identifiant
   * Description: Numéro de sécurité sociale de l'usager NIR (NSS-NIR) ou NIA (NSS-NIA) si l'usager est en attente de l'attribution d’un NIR.Le numéro de sécurité sociale est utilisé pour la facturation et le remboursement des prestations de santé de la personne prise en charge.
 * Nom: identifiantLocalUsagerESSMS : [0..1] Identifiant
-  * Description: Identifiant local de l’usager au sein de la structure.Cet identifiant est obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature TRE_G08-TypeIdentifiantPersonne), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS) : 3+FINESS/identifiantLocalUsagerESSMS
+  * Description: Identifiant local de l’usager au sein de la structure.Cet identifiant est obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature[TRE_G08-TypeIdentifiantPersonne](https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne)), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS) : 3+FINESS/identifiantLocalUsagerESSMS
 * Nom: numeroIndividuInitial : [0..1] Identifiant
   * Description: Numéro de l’individu attribué par la MDPH ayant créé le dossier Individu (= MDPH initiale).Synonyme = identifiantMDPH
 * Nom: nomNaissance : [1..1] Texte
@@ -37,17 +37,17 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
 * Nom: prenomUtilise : [0..1] Texte
   * Description: Prénom réellement porté par la personne physique dans la vie courante. Il peut s'agir du prénom usuel, du surnom ou du pseudonyme de la personne physique.S’il s’agit de l’identité qualifiée INS, il est obligatoire lorsqu’il est différent du premier prénom de naissance. C'est un trait complémentaire provenant du Référentiel National d'Identitovigilance (RNIV).
 * Nom: sexe : [0..1] Code
-  * Description: Sexe de la personne physique.Jeu(x) de valeur(s) associé(s) :[JDV-J143-AdministrativeGender-CISIS](https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J143-AdministrativeGender-CISIS.html)Cet attribut fait partie des traits INS. Il est obligatoire si l’identité INS est qualifiée.Il est préconisé si le NIR ou l'identifiant local est véhiculé et que l'identité n'est pas qualifiée.
+  * Description: Sexe de la personne physique.Jeu(x) de valeur(s) associé(s) :[JDV-J143-AdministrativeGender-CISIS](https://mos.esante.gouv.fr/NOS/JDV_J143-AdministrativeGender-CISIS/FHIR/JDV-J143-AdministrativeGender-CISIS)Cet attribut fait partie des traits INS. Il est obligatoire si l’identité INS est qualifiée.Il est préconisé si le NIR ou l'identifiant local est véhiculé et que l'identité n'est pas qualifiée.
 * Nom: civilite : [0..1] Code
-  * Description: Civilité de l’usager.Jeu(x) de valeur(s) associé(s) :[JDV_J245-Civilite-CISIS](https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J245-Civilite-CISIS.html)
+  * Description: Civilité de l’usager.Jeu(x) de valeur(s) associé(s) :[JDV_J245-Civilite-CISIS](https://mos.esante.gouv.fr/NOS/JDV_J245-Civilite-CISIS/FHIR/JDV-J245-Civilite-CISIS)
 * Nom: dateNaissance : [0..1] Date
   * Description: Date de naissance de l’usager. Cet attribut fait partie des traits INS. Il est obligatoire si l’identité INS est qualifiée.Il est préconisé si le NIR ou l'identifiant local est véhiculé et que l'identité n'est pas qualifiée.
 * Nom: ordreNaissanceEtatCivil : [0..1] Numerique
   * Description: Ordre d’enregistrement de la naissance dans le registre d’état civil de la commune de naissance pour le mois de la naissance. Il compose les[3 derniers chiffres du NIR de l'usager avant](https://www.ameli.fr/llle-et-vilaine/assure/droits-demarches/principes/numero-securite-sociale)la clé de sécurité et permet de distinguer les personnes nées au même lieu et à la même période.Il est obligatoire si le NIR n'est pas transmis.
 * Nom: CommuneNaissance : [0..1] Code
-  * Description: Commune de naissance de l’usager. Code officiel géographique (COG) de la commune.Jeu(x) de valeur(s) associé(s) :[JDV_J120-CommuneHistorisee](https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J120-CommuneHistorisee.html)Cet attribut fait partie des traits INS. Il est obligatoire si l’identité INS est qualifiée.Il est préconisé si le NIR ou l'identifiant local est véhiculé et que l'identité n'est pas qualifiée.
+  * Description: Commune de naissance de l’usager. Code officiel géographique (COG) de la commune.Jeu(x) de valeur(s) associé(s) :[JDV_J120-CommuneHistorisee](https://mos.esante.gouv.fr/NOS/JDV_J120-CommuneHistorisee/FHIR/JDV-J120-CommuneHistorisee)Cet attribut fait partie des traits INS. Il est obligatoire si l’identité INS est qualifiée.Il est préconisé si le NIR ou l'identifiant local est véhiculé et que l'identité n'est pas qualifiée.
 * Nom: departementNaissance : [0..1] Code
-  * Description: Département de naissance de la personne. Code officiel géographique (COG) du département.Jeu(x) de valeur(s) associé(s) :[JDV-J258-Departement](https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J258-Departement.html)
+  * Description: Département de naissance de la personne. Code officiel géographique (COG) du département.Jeu(x) de valeur(s) associé(s) :[JDV-J258-Departement](https://mos.esante.gouv.fr/NOS/JDV_J258-Departement/FHIR/JDV-J258-Departement)
 * Nom: paysNaissance : [0..1] Code
   * Description: Pays de naissance de la personne.Nomenclature(s) associée(s) : ISO 3166Cet attribut fait partie des traits INS. Il est obligatoire si l’identité INS est qualifiée.Il est préconisé si le NIR ou l'identifiant local est véhiculé et que l'identité n'est pas qualifiée.
 * Nom: situationFamiliale : [0..1] Code
@@ -55,17 +55,17 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
 * Nom: compositionFoyer : [0..1] Code
   * Description: Désigne avec qui vit l’usager dans son logement.Nomenclature(s) associée(s) : à définir
 * Nom: paysNationalite : [0..*] Code
-  * Description: Pays de nationalité actuelle ou rattachement de la nationalité à un espace de pays conventionné.Nomenclature(s) associée(s) :[TRE_R89-RegroupementPays](https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R89-RegroupementPays.html)
+  * Description: Pays de nationalité actuelle ou rattachement de la nationalité à un espace de pays conventionné.Nomenclature(s) associée(s) :[TRE_R89-RegroupementPays](https://mos.esante.gouv.fr/NOS/TRE_R89-RegroupementPays/FHIR/TRE-R89-RegroupementPays)
 * Nom: langueParlee : [0..*] Code
-  * Description: Langue parlée par l’usager.Jeu(x) de valeur(s) associé(s) :[JDV_J115-Langue-ENREG](https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J115-Langue-ENREG.html)
+  * Description: Langue parlée par l’usager.Jeu(x) de valeur(s) associé(s) :[JDV_J115-Langue-ENREG](https://mos.esante.gouv.fr/NOS/JDV_J115-Langue-ENREG/FHIR/JDV-J115-Langue-ENREG)
 * Nom: dateDeces : [0..1] DateHeure
   * Description: Date et heure de décès de l’usager.
 * Nom: causeMortalite : [0..*] Code
   * Description: Une ou plusieurs causes ayant entraîné la mort de l’usager.Nomenclature(s) associée(s) :[Terminologie CIM-10](https://smt.esante.gouv.fr/terminologie-cim-10)
 * Nom: communeDeces : [0..1] Code
-  * Description: Commune de décès de l’usager. Code officiel géographique (COG) de la commune.Jeu(x) de valeur(s) associé(s) :[JDV-J120-CommuneHistorisee](https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J120-CommuneHistorisee.html)
+  * Description: Commune de décès de l’usager. Code officiel géographique (COG) de la commune.Jeu(x) de valeur(s) associé(s) :[JDV-J120-CommuneHistorisee](https://mos.esante.gouv.fr/NOS/JDV_J120-CommuneHistorisee/FHIR/JDV-J120-CommuneHistorisee)
 * Nom: departementDeces : [0..1] Code
-  * Description: Département de décès de l’usager. Code officiel géographique (COG) du département.Jeu(x) de valeur(s) associé(s) :[JDV-J258-Departement](https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J258-Departement.html)
+  * Description: Département de décès de l’usager. Code officiel géographique (COG) du département.Jeu(x) de valeur(s) associé(s) :[JDV-J258-Departement](https://mos.esante.gouv.fr/NOS/JDV_J258-Departement/FHIR/JDV-J258-Departement)
 * Nom: paysDeces : [0..1] Code
   * Description: Pays de décès de l’usager.Nomenclature(s) associée(s) : Norme ISO 3166
 * Nom: photo : [0..*] ObjetBinaire
@@ -111,7 +111,7 @@ Adresse géopostale. Un emplacement auquel l’usager peut être trouvée, d'apr
 Adresse de télécommunication à laquelle l’usager peut être contactée (téléphone, fax, e-mail, URL, etc.).
 
 * Nom: canal : [0..1] Code
-  * Description: Code spécifiant le canal ou la manière dont s'établit la communication (téléphone, e-mail, URL, etc.).Nomenclature(s) associée(s) :[TRE_R200-CanalCommunication](https://mos.esante.gouv.fr/NOS/TRE_R200-CanalCommunication/TRE_R200-CanalCommunication.pdf)
+  * Description: Code spécifiant le canal ou la manière dont s'établit la communication (téléphone, e-mail, URL, etc.).Nomenclature(s) associée(s) :[JDV-J225-CanalCommunication-ROR](https://mos.esante.gouv.fr/NOS/JDV_J225-CanalCommunication-ROR/FHIR/JDV-J225-CanalCommunication-ROR)
 * Nom: adresseTelecom : [0..1] Texte
   * Description: Valeur de l'adresse de télécommunication dans le format induit par le canal de communication, par exemple un numéro de téléphone, une adresse de courrier électronique, une adresse URL, etc.
 * Nom: utilisation : [0..1] Texte
@@ -263,7 +263,7 @@ Ensemble des droits et prestations prévus par le Code de l'Action Sociale et de
 Détails de la prestation.
 
 * Nom: temporaliteAccueil : [0..1] Code
-  * Description: Fréquence d'accueil lors d'une prise en charge en ESSMS.Nomenclature(s) associée(s) :[TRE_R240-TemporaliteAccueil](https://mos.esante.gouv.fr/NOS/TRE_R240-TemporaliteAccueil/TRE_R240-TemporaliteAccueil.pdf)
+  * Description: Fréquence d'accueil lors d'une prise en charge en ESSMS.Nomenclature(s) associée(s) :[JDV_J30-TemporaliteAccueil-ROR](https://mos.esante.gouv.fr/NOS/JDV_J30-TemporaliteAccueil-ROR/FHIR/JDV-J30-TemporaliteAccueil-ROR)
 * Nom: precisionOrientation : [0..1] Code
   * Description: Précision de l'orientation à renseigner en fonction du type de droit.Nomenclature(s) associée(s) : à définir
 * Nom: frequence : [0..1] Mesure
@@ -307,9 +307,9 @@ Personne physique qui agit comme point de contact auprès d'une autre personne o
 * Nom: prenom : [0..1] Texte
   * Description: Prénom de la personne contact.
 * Nom: civilite : [0..1] Code
-  * Description: Civilité du contact.jeu(x) de valeur(s) associé(s) :[JDV_J245-Civilite-CISIS](https://interop.esante.gouv.fr/ig/nos/ValueSet-JDV-J245-Civilite-CISIS.html)
+  * Description: Civilité du contact.jeu(x) de valeur(s) associé(s) :[JDV_J245-Civilite-CISIS](https://mos.esante.gouv.fr/NOS/JDV_J245-Civilite-CISIS/FHIR/JDV-J245-Civilite-CISIS)
 * Nom: paysNationalite : [0..*] Code
-  * Description: Pays de nationalité de la personne contact, actuelle ou rattachement de la nationalité à un espace de pays conventionnéNomenclature(s) associée(s) :[TRE_R20-Pays](https://mos.esante.gouv.fr/NOS/TRE_R20-Pays/TRE_R20-Pays.pdf)
+  * Description: Pays de nationalité de la personne contact, actuelle ou rattachement de la nationalité à un espace de pays conventionnéNomenclature(s) associée(s) : Norme ISO 3166
 * Nom: profession : [0..1] Texte
   * Description: Profession de la personne contact.
 * Nom: situationFamiliale : [0..1] Code
@@ -321,11 +321,11 @@ Personne physique qui agit comme point de contact auprès d'une autre personne o
 * Nom: adresse : [0..1] Adresse
   * Description: Adresse géopostale du point de contact.
 * Nom: role : [0..1] Code
-  * Description: Rôle de la personne point de contact auprès d'une autre personne. Exemple dans le cas d'un patient, ce rôle indique si le point de contact est la personne à prévenir en cas d'urgence, la personne de confiance, etc.Nomenclature(s) associée(s) :[TRE_R260-HL7RoleClass](https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/TRE_R260-HL7RoleClass.pdf)
+  * Description: Rôle de la personne point de contact auprès d'une autre personne. Exemple dans le cas d'un patient, ce rôle indique si le point de contact est la personne à prévenir en cas d'urgence, la personne de confiance, etc.Nomenclature(s) associée(s) :[TRE_R260-HL7RoleClass](https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass)
 * Nom: relation : [0..1] Code
-  * Description: Lien de la personne point de contact auprès d'une autre personne. Exemple dans le cas d'un patient, ce lien indique si le point de contact est son enfant, son frère, etc.Nomenclature(s) associée(s) :[TRE_R216-HL7RoleCode](https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/TRE_R216-HL7RoleCode.pdf)[TRE_R217-ProtectionJuridique](https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/TRE_R217-ProtectionJuridique.pdf)
+  * Description: Lien de la personne point de contact auprès d'une autre personne. Exemple dans le cas d'un patient, ce lien indique si le point de contact est son enfant, son frère, etc.Nomenclature(s) associée(s) :[TRE_R216-HL7RoleCode](https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode)[TRE_R217-ProtectionJuridique](https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique)
 * Nom: fonction : [0..1] Code
-  * Description: Un titre, une position ou une fonction de la personne assurant le contact au sein de son organisation (directeur, secrétaire, etc.).[TRE_R251-FonctionContact](https://mos.esante.gouv.fr/NOS/TRE_R251-FonctionContact/TRE_R251-FonctionContact.pdf)
+  * Description: Un titre, une position ou une fonction de la personne assurant le contact au sein de son organisation (directeur, secrétaire, etc.).[TRE_R251-FonctionContact](https://mos.esante.gouv.fr/NOS/TRE_R251-FonctionContact/FHIR/TRE-R251-FonctionContact)
 * Nom: ordreAppel : [0..1] Numérique
   * Description: Ordre de priorité d’appel du contact (1 = priorité maximale).
 * Nom: commentaire : [0..1] Texte
@@ -348,7 +348,7 @@ Personne morale qui agit comme point de contact auprès d'une autre personne ou 
 * Nom: adresse : [0..1] Adresse
   * Description: Adresse géopostale du point de contact.
 * Nom: role : [0..1] Code
-  * Description: Rôle de la personne point de contact auprès d'une autre personne. Exemple dans le cas d'un patient, ce rôle indique si le point de contact est la personne à prévenir en cas d'urgence, la personne de confiance, etc.Nomenclature(s) associée(s) :[TRE_R260-HL7RoleClass](https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/TRE_R260-HL7RoleClass.pdf)
+  * Description: Rôle de la personne point de contact auprès d'une autre personne. Exemple dans le cas d'un patient, ce rôle indique si le point de contact est la personne à prévenir en cas d'urgence, la personne de confiance, etc.Nomenclature(s) associée(s) :[TRE_R260-HL7RoleClass](https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass)
 * Nom: ordreAppel : [0..1] Numérique
   * Description: Ordre de priorité d’appel du contact (1 = priorité maximale).
 * Nom: commentaire : [0..1] Texte
@@ -463,7 +463,7 @@ Séjour d’un usager dans un ESSMS.
 La classe EntiteJuridique est définie dans le MOS et est profilée pour ce volet.
 
 * Nom: idSejour : [1..1] Identifiant
-  * Description: Cet identifiant est obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature TRE_G08-TypeIdentifiantPersonne), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de six caractères "SEJOUR" et numéro de dossier administratif du séjour dans le DUI (numeroDossier) :idSejour = 3+FINESS/identifiantLocalUsagerESSMS-SEJOUR-numeroDossier
+  * Description: Cet identifiant est obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature[TRE_G08-TypeIdentifiantPersonne](https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne)), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de six caractères "SEJOUR" et numéro de dossier administratif du séjour dans le DUI (numeroDossier) :idSejour = 3+FINESS/identifiantLocalUsagerESSMS-SEJOUR-numeroDossier
 * Nom: ESSMS : [1..1] EntiteJuridique
   * Description: Établissement ou service social ou médico-social.
 * Nom: dateAdmission : [0..1] DateHeure
@@ -544,7 +544,7 @@ Admission prévisionnelle d’un usager dans un ESSMS.
 Résultat de l'évaluation globale d'un usager.
 
 * Nom: idEvaluation : Identifiant [1..1]
-  * Description: Identifiant technique de l’évaluation obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature TRE_G08-TypeIdentifiantPersonne), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "EVAL" et du numéro de l’évaluation dans le DUI (numEvaluation) :idEvaluation = 3+FINESS/identifiantLocalUsagerESSMS-EVAL-numEvaluation
+  * Description: Identifiant technique de l’évaluation obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature[TRE_G08-TypeIdentifiantPersonne](https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne)), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "EVAL" et du numéro de l’évaluation dans le DUI (numEvaluation) :idEvaluation = 3+FINESS/identifiantLocalUsagerESSMS-EVAL-numEvaluation
 * Nom: typeEvaluation : [1..1] Code
   * Description: Type de l’évaluation.Jeu(x) de valeur(s) associé(s) : JDV_TypeEvaluation_CISIS avec l'OID 1.2.250.1.213.1.1.5.802 publié sur[annexe-vocabulaire-et-jeux-de-valeurs](https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs)
 * Nom: dateEvaluation : [0..1] DateHeure
@@ -567,7 +567,7 @@ _Premier niveau de détail_
 Ce niveau permet d'associer à un champ évalué de la classe "DetailEvaluation", un résultat d'évaluation.
 
 * Nom: champsEvalue : [1..1] Code
-  * Description: Critère d'évaluation de la grille.Jeu(x) de valeur(s) associé(s) : un jeu de valeur par type d'évaluation- Evaluation AGGIR PH SSIAD : JDV_EvaluationAGGIRPH_CISIS avec l'OID 1.2.250.1.213.1.1.5.805 publié sur[annexe-vocabulaire-et-jeux-de-valeurs](https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs)- Evaluation AGGIR PA SSIAD : JDV_EvaluationAGGIRPA_CISIS avec l'OID 1.2.250.1.213.1.1.5.806 publié sur[annexe-vocabulaire-et-jeux-de-valeurs](https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs)- Evaluation de la situation SSIAD : JDV_EvaluationSSIAD_CISIS avec l'OID 1.2.250.1.213.1.1.5.804 publié sur[annexe-vocabulaire-et-jeux-de-valeurs](https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs)- Evaluation Serafin : Jeu de valeur issue de la terminologie Serafin correspondant à la famille 1-Besoin. Jeu(x) de valeur(s) associé(s) :[JDV-J285-Besoins_SERAFIN](https://interop.esante.gouv.fr/terminologies/ValueSet-JDV-J285-Besoins-SERAFIN.html)
+  * Description: Critère d'évaluation de la grille.Jeu(x) de valeur(s) associé(s) : un jeu de valeur par type d'évaluation- Evaluation AGGIR PH SSIAD : JDV_EvaluationAGGIRPH_CISIS avec l'OID 1.2.250.1.213.1.1.5.805 publié sur[annexe-vocabulaire-et-jeux-de-valeurs](https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs)- Evaluation AGGIR PA SSIAD : JDV_EvaluationAGGIRPA_CISIS avec l'OID 1.2.250.1.213.1.1.5.806 publié sur[annexe-vocabulaire-et-jeux-de-valeurs](https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs)- Evaluation de la situation SSIAD : JDV_EvaluationSSIAD_CISIS avec l'OID 1.2.250.1.213.1.1.5.804 publié sur[annexe-vocabulaire-et-jeux-de-valeurs](https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs)- Evaluation Serafin : Jeu de valeur issue de la terminologie Serafin correspondant à la famille 1-Besoin. Jeu(x) de valeur(s) associé(s) :[JDV-J285-Besoins_SERAFIN](https://mos.esante.gouv.fr/NOS/JDV_J285-Besoins_SERAFIN/FHIR/JDV-J285-Besoins-SERAFIN)
 * Nom: resultatChampsEvalue : [1..1]
   * Description: Résultat du champs évalué dont le type est défini selon la grille d'évaluation.- Evaluation AGGIR PH PA SSIAD : Le résultat du champ évalué peut véhiculer un code intermédiaire : JDV_ResultatEvaluation_CISIS avec l'OID 1.2.250.1.213.1.1.5.816 publié sur[annexe-vocabulaire-et-jeux-de-valeurs.](https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs)Pour les évaluations AGGIR PH PA SSIAD, chaque champ évalué doit être détaillé selon 4 critères dans un deuxième niveau de détail.- Evaluation de la situation SSIAD : Indicateur.- Evaluation Serafin : Numérique.
 * Nom: commentaire : [0..1] Texte
@@ -621,7 +621,7 @@ Evènements liés à la prise en charge de l’usager dans une structure ESSMS.
 Les classes EntiteJuridique, Lieu et Professionnel sont issues du MOS et sont profilées pour ce volet.
 
 * Nom: idEvenement : [1..1] Identifiant
-  * Description: Identifiant technique de l’évènement obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature TRE_G08-TypeIdentifiantPersonne), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de trois caractères "EVN" et du numéro de l’évènement dans le DUI (numEvenement) :idEvenement = 3+FINESS/identifiantLocalUsagerESSMS-EVN-numEvenement
+  * Description: Identifiant technique de l’évènement obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature[TRE_G08-TypeIdentifiantPersonne](https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne)), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de trois caractères "EVN" et du numéro de l’évènement dans le DUI (numEvenement) :idEvenement = 3+FINESS/identifiantLocalUsagerESSMS-EVN-numEvenement
 * Nom: typeEvenement : [0..*] Code ou Texte
   * Description: Type de l’évènement.Cas d’usage SSIAD : le type de l'évènement est issuAutre cas d'usage : le type de l'évènement est issu
 * Nom: libelleEvenement : [0..1] Texte
@@ -690,7 +690,7 @@ Classe générique socle décrivant le transport d’une personne physique (prof
 
 Cette classe regroupe les items pouvant caractériser le transport du professionnel lors de l'évènement.
 
-L'identifiant technique du transport est obtenu dans ce contexte par par la concaténation du type d'identifiant national de personne (provenant de la nomenclature TRE_G08-TypeIdentifiantPersonne), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de cinq caractères "TPPro" et du numéro de transport du professionnel dans le DUI (idTransport) :
+L'identifiant technique du transport est obtenu dans ce contexte par par la concaténation du type d'identifiant national de personne (provenant de la nomenclature [TRE_G08-TypeIdentifiantPersonne](https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne)), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de cinq caractères "TPPro" et du numéro de transport du professionnel dans le DUI (idTransport) :
  idTrajet = 3+FINESS/identifiantLocalUsagerESSMS-TPPro-idTransport
 
 ##### Classe TransportUsager
@@ -699,36 +699,36 @@ L'identifiant technique du transport est obtenu dans ce contexte par par la conc
 
 Cette classe regroupe les items pouvant caractériser le transport de l'usager lors de l'évènement.
 
-L'identifiant technique du transport est obtenu dans ce contexte par par la concaténation du type d'identifiant national de personne (provenant de la nomenclature TRE_G08-TypeIdentifiantPersonne), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de cinq caractères "TPPat" et du numéro de transport de l'usager dans le DUI (idTransport) :
+L'identifiant technique du transport est obtenu dans ce contexte par par la concaténation du type d'identifiant national de personne (provenant de la nomenclature [TRE_G08-TypeIdentifiantPersonne](https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne)), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de cinq caractères "TPPat" et du numéro de transport de l'usager dans le DUI (idTransport) :
  idTrajet = 3+FINESS/identifiantLocalUsagerESSMS-TPPat-idTransport
 
-* Nom: accompagnement : [0..1] Identifiant
+* Nom: accompagnement : [0..1] Indicateur
   * Description: Accompagnement nécessaire ou non de l'usager.
-* Nom: asepsieRigoureuse : [0..1] Identifiant
+* Nom: asepsieRigoureuse : [0..1] Indicateur
   * Description: Lors du transport de l'usager l'asepsie est rigoureusement respectée ou n'est pas nécessaire.
 * Nom: natureTransport : [0..1] Code
-  * Description: Nature du transport de l'usager.Jeu de valeur issue de la terminologie Serafin correspondant aux familles (3.2.4.1, 3.2.4.2, 3.2.4.3).Jeu(x) de valeur(s) associé(s) :[JDV_J282-TransportsLiesAuProjetIndividuel_SERAFIN](https://mos.esante.gouv.fr/NOS/JDV_J282-TransportsLiesAuProjetIndividuel_SERAFIN/JDV_J282-TransportsLiesAuProjetIndividuel_SERAFIN.pdf)
+  * Description: Nature du transport de l'usager.Jeu de valeur issue de la terminologie Serafin correspondant aux familles (3.2.4.1, 3.2.4.2, 3.2.4.3).Jeu(x) de valeur(s) associé(s) :[JDV_J282-TransportsLiesAuProjetIndividuel_SERAFIN](https://mos.esante.gouv.fr/NOS/JDV_J282-TransportsLiesAuProjetIndividuel_SERAFIN/FHIR/JDV-J282-TransportsLiesAuProjetIndividuel-SERAFIN)
 
 ### Classes du MOS profilées pour ce volet
 
-##### Classe Profesionnel
+##### Classe Professionnel
 
 Données d'identification pérennes d’une personne physique, qui travaille en tant que professionnel (professionnel enregistré dans RPPS), personnel autorisé ou personnel d’établissement, dans les domaines sanitaire, médico-social et social.
 
 * Nom: idNat_PS : [1..1] Identifiant
-  * Description: Identification nationale principale du professionnel. Cette identification est obtenue par la concaténation du type d'identifiant national de personne (provenant de la nomenclature TRE_G08-TypeIdentifiantPersonne) et de l'identifiant de la personne physique. Voir la description complète de idNat_PS dans le MOS.
+  * Description: Identification nationale principale du professionnel. Cette identification est obtenue par la concaténation du type d'identifiant national de personne (provenant de la nomenclature[TRE_G08-TypeIdentifiantPersonne](https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne)) et de l'identifiant de la personne physique. Voir la description complète de idNat_PS dans le MOS.
 * Nom: civilite : [0..1] Code
-  * Description: Civilité de la personne.Jeu(x) de valeur(s) associé(s) :[JDV_J245-Civilite-CISIS](https://mos.esante.gouv.fr/NOS/JDV_J245-Civilite-CISIS/JDV_J245-Civilite-CISIS.pdf)
+  * Description: Civilité de la personne.Jeu(x) de valeur(s) associé(s) :[JDV_J245-Civilite-CISIS](https://mos.esante.gouv.fr/NOS/JDV_J245-Civilite-CISIS/FHIR/JDV-J245-Civilite-CISIS)
 * Nom: nom : [0..1] Texte
   * Description: Nom d'usage de la personne.
 * Nom: prenom : [0..1] Texte
   * Description: Prénom usuel de la personne.
 * Nom: profession : [0..1] Code
-  * Description: Profession / Spécialité du professionnel.Jeu(x) de valeur(s) associé(s) :[JDV_J01-XdsAuthorSpecialty-CISIS](https://mos.esante.gouv.fr/NOS/JDV_J01-XdsAuthorSpecialty-CISIS/JDV_J01-XdsAuthorSpecialty-CISIS.pdf)
+  * Description: Profession / Spécialité du professionnel.Jeu(x) de valeur(s) associé(s) :[JDV_J01-XdsAuthorSpecialty-CISIS](https://mos.esante.gouv.fr/NOS/JDV_J01-XdsAuthorSpecialty-CISIS/FHIR/JDV-J01-XdsAuthorSpecialty-CISIS)
 * Nom: role : [0..1] Code
-  * Description: Rôle fonctionnel du professionnel.Jeu(x) de valeur(s) associé(s) :[JDV-J47-FunctionCode-CISIS](https://mos.esante.gouv.fr/NOS/JDV_J47-FunctionCode-CISIS/JDV_J47-FunctionCode-CISIS.pdf)
+  * Description: Rôle fonctionnel du professionnel.Jeu(x) de valeur(s) associé(s) :[JDV-J47-FunctionCode-CISIS](https://mos.esante.gouv.fr/NOS/JDV_J47-FunctionCode-CISIS/FHIR/JDV-J47-FunctionCode-CISIS)
 * Nom: modeExercice : [0..1] Code
-  * Description: Mode d'exercice du professionnel. Décrit selon quelle modalité est exercée l'activité du professionnel par rapport à son établissement de rattachement.Jeu(x) de valeur(s) associé(s) :[JDV-J117-ModeExercice-ENREG](https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J117-ModeExercice-ENREG.html)
+  * Description: Mode d'exercice du professionnel. Décrit selon quelle modalité est exercée l'activité du professionnel par rapport à son établissement de rattachement.Jeu(x) de valeur(s) associé(s) :[JDV-J117-ModeExercice-ENREG](https://mos.esante.gouv.fr/NOS/JDV_J117-ModeExercice-ENREG/FHIR/JDV-J117-ModeExercice-ENREG)
 * Nom: etablissementDeRattachement : [0..1] EntiteJuridique
   * Description: Structure juridique de rattachement du professionnel.
 
@@ -739,7 +739,7 @@ _Remarque_: Certaines professions du médico-social n'ont pas de correspondance 
 Pour ce volet l'Entité Juridique est une personne morale inscrite dans le FINESS.
 
 * Nom: idNat_Struct : [1..1] Identifiant
-  * Description: Identification nationale de l'Entité juridique. Cette identification est obtenue par la concaténation du type d'identifiant national de structure (provenant de la nomenclature[TRE_G07-TypeIdentifiantStructure](https://interop.esante.gouv.fr/ig/nos/CodeSystem-TRE-G07-TypeIdentifiantStructure.html)) et de l'identifiant de la structure: ** 1 + N° FINESS.
+  * Description: Identification nationale de l'Entité juridique. Cette identification est obtenue par la concaténation du type d'identifiant national de structure (provenant de la nomenclature[TRE_G07-TypeIdentifiantStructure](https://mos.esante.gouv.fr/NOS/TRE_G07-TypeIdentifiantStructure/FHIR/TRE-G07-TypeIdentifiantStructure)) et de l'identifiant de la structure: ** 1 + N° FINESS.
 * Nom: raisonSociale : [0..1] Texte
   * Description: La raison sociale est le nom de l'entité juridique. Elle figure obligatoirement dans les statuts de l'EJ.
 
@@ -763,7 +763,7 @@ Portion déterminée de l'espace où se sont déroulés des événements.
 Cette classe décrit le statut des ressources (Evenement, Evaluation).
 
 * Nom: statut : [1..1] Code
-  * Description: Statut de la ressource impactée.Jeu(x) de valeur(s) associé(s) :[JDV_J281-StatutsRessourcesMS](https://mos.esante.gouv.fr/NOS/JDV_J281-StatutsRessourcesMS/JDV_J281-StatutsRessourcesMS.pdf)
+  * Description: Statut de la ressource impactée.Jeu(x) de valeur(s) associé(s) :[JDV_J281-StatutsRessourcesMS](https://mos.esante.gouv.fr/NOS/JDV_J281-StatutsRessourcesMS/FHIR/JDV-J281-StatutsRessourcesMS)- Pour l'Evaluation seuls les codes suivants sont à utiliser : APPROUVE, VALIDE, TERMINE- Pour l'Evènement seuls les codes suivants sont à utiliser : PLANIFIE, VALIDE, REALISE, ANNULE
 * Nom: motifNonRealisation : [0..1] Code
   * Description: Motif associé au statut de non-réalisation de l’évènement.Jeu(x) de valeur(s) associé(s) : JDV_MotifNonRealisationEvenement_CISIS avec l'OID 1.2.250.1.213.1.1.5.803 publié sur[annexe-vocabulaire-et-jeux-de-valeurs](https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs)
 * Nom: dateStatut : [0..1] DateHeure

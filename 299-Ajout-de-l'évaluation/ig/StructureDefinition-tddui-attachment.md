@@ -1,4 +1,4 @@
-# Pièce jointe - Médicosocial - Transfert de données DUI v2.0.0-ballot
+# Pièce jointe - Médicosocial - Transfert de données DUI v2.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,10 +8,10 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment | *Version*:2.0.0-ballot |
-| Active as of 2025-10-15 | *Computable Name*:TDDUIAttachment |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment | *Version*:2.0.0 |
+| Active as of 2025-10-16 | *Computable Name*:TDDUIAttachment |
 
-Pièces jointes.
+Pièces jointes liées à l’événement et à l'évaluation. L'extension référence le profil PDSm_SimplifiedPublish.
 
 **Context of Use**
 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-attachment.csv
   "resourceType" : "StructureDefinition",
   "id" : "tddui-attachment",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment",
-  "version" : "2.0.0-ballot",
+  "version" : "2.0.0",
   "name" : "TDDUIAttachment",
   "title" : "Pièce jointe",
   "status" : "active",
-  "date" : "2025-10-15T15:04:22+00:00",
+  "date" : "2025-10-16T14:47:34+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -59,7 +59,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-attachment.csv
       ]
     }
   ],
-  "description" : "Pièces jointes.",
+  "description" : "Pièces jointes liées à l’événement et à l'évaluation. L'extension référence le profil PDSm_SimplifiedPublish.",
   "jurisdiction" : [
     {
       "coding" : [
@@ -96,7 +96,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-attachment.csv
         "id" : "Extension",
         "path" : "Extension",
         "short" : "Pièce jointe",
-        "definition" : "Pièces jointes."
+        "definition" : "Pièces jointes liées à l’événement et à l'évaluation. L'extension référence le profil PDSm_SimplifiedPublish."
       },
       {
         "id" : "Extension.extension",
@@ -113,7 +113,10 @@ Other representations of profile: [CSV](StructureDefinition-tddui-attachment.csv
         "path" : "Extension.value[x]",
         "type" : [
           {
-            "code" : "Attachment"
+            "code" : "Reference",
+            "targetProfile" : [
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"
+            ]
           }
         ]
       }

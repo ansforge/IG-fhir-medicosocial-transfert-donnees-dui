@@ -1,4 +1,4 @@
-# Accueil - Médicosocial - Transfert de données DUI v2.0.0-ballot
+# Accueil - Médicosocial - Transfert de données DUI v2.0.0
 
 * [**Table of Contents**](toc.md)
 * **Accueil**
@@ -7,14 +7,11 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui | *Version*:2.0.0-ballot |
-| Active as of 2025-10-15 | *Computable Name*:TDDUI |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui | *Version*:2.0.0 |
+| Active as of 2025-10-16 | *Computable Name*:TDDUI |
 
  **Brief description of this Implementation Guide**
  The Digital User File (DUI) centralizes all information concerning the person being cared for in social and medico-social facilities and services. The aim of this implementation guide is to define the specifications for DUI data transfer. 
-
-> **Attention !**
-Cet Implementation Guide est actuellement en concertation. La version courante est accessible à l'adresse : http://interop.esante.gouv.fr/ig/fhir/tddui
 
 ### Introduction
 
@@ -63,7 +60,7 @@ Les spécifications d'interopérabilité présentées dans ce volet ne présagen
 
 Les données véhiculées dans ce volet ainsi que les interactions entre les systèmes reposent sur le standard HL7 FHIR Release 4.
 
-Les interactions font référence à un certain nombre de ressources du standard ainsi qu’aux spécifications de l’API REST FHIR, basées sur le protocole HTTP. Les syntaxes retenues sont la syntaxe XML et JSON.
+Les interactions font référence à un certain nombre de ressources du standard ainsi qu’aux spécifications de l’API REST FHIR, basées sur le protocole HTTP dans sa version sécurisée HTTPS. Les syntaxes retenues sont la syntaxe XML et JSON.
 
 #### Ressources FHIR profilées
 
@@ -73,6 +70,7 @@ Les ressources profilées dans le cadre de ce guide d'implémentation sont les s
 | :--- | :--- | :--- |
 | Profil parent | Profil | Description |
 | [Bundle](http://hl7.org/fhir/StructureDefinition/Bundle) | [TDDUIBundle](StructureDefinition-tddui-bundle.md) | Profil générique créé pour transmettre des données d'un logiciel DUI. |
+| [MHD DocumentReference for Simplified Publish](https://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.SimplifiedPublish.DocumentReference) | [TDDUIDocumentReference](StructureDefinition-tddui-document-reference.md) | Profil de la ressource SimplifiedPublishDocumentReference pour les pièces jointes liées à l’événement et à l'évaluation. |
 | [Encounter](http://hl7.org/fhir/StructureDefinition/Encounter) | [TDDUIEncounterEvenement](StructureDefinition-tddui-encounter-evenement.md) | Profil de la ressource Encounter permettant de regrouper les évènements liés à la prise en charge de l’usager dans une structure ESSMS. |
 | [Encounter](http://hl7.org/fhir/StructureDefinition/Encounter) | [TDDUIEncounterSejour](StructureDefinition-tddui-encounter-sejour.md) | Profil de la ressource Encounter permettant de regrouper les informations relatives au séjour d'un usager dans une structure ESSMS |
 | [FR Core Organization Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization) | [TDDUIOrganization](StructureDefinition-tddui-organization.md) | Profil de la ressource FRCoreOrganizationProfile permettant de représenter les entités juridiques. |
@@ -103,9 +101,12 @@ Les flux décrits dans ce guide d'implémentation sont les suivants.
 | :--- | :--- | :--- |
 | [Flux 1 : Transmission de données DUI](description_flux_1_transmission_donnees_dui.md) | Logiciel DUI | SI tiers |
 
-Pour en savoir davantage, rendez-vous sur la page [Synthèse des flux](description_flux_synthese.md).
+Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en savoir davantage, rendez-vous sur la page [Synthèse des flux](description_flux_synthese.md).
 
 ### Dépendances
+
+
+
 
 
 
@@ -123,11 +124,11 @@ Pour en savoir davantage, rendez-vous sur la page [Synthèse des flux](descripti
   "resourceType" : "ImplementationGuide",
   "id" : "ans.fhir.fr.tddui",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui",
-  "version" : "2.0.0-ballot",
+  "version" : "2.0.0",
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2025-10-15T15:04:22+00:00",
+  "date" : "2025-10-16T14:47:34+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -184,6 +185,12 @@ Pour en savoir davantage, rendez-vous sur la page [Synthèse des flux](descripti
       "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
       "packageId" : "hl7.fhir.uv.extensions",
       "version" : "5.2.0"
+    },
+    {
+      "id" : "ihe_iti_mhd",
+      "uri" : "https://profiles.ihe.net/ITI/MHD/ImplementationGuide/ihe.iti.mhd",
+      "packageId" : "ihe.iti.mhd",
+      "version" : "4.2.0"
     }
   ],
   "definition" : {
@@ -209,7 +216,7 @@ Pour en savoir davantage, rendez-vous sur la page [Synthèse des flux](descripti
           },
           {
             "url" : "value",
-            "valueString" : "public-comment"
+            "valueString" : "trial-implementation"
           }
         ],
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -551,7 +558,7 @@ Pour en savoir davantage, rendez-vous sur la page [Synthèse des flux](descripti
           },
           {
             "url" : "value",
-            "valueString" : "public-comment"
+            "valueString" : "trial-implementation"
           }
         ],
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -881,7 +888,7 @@ Pour en savoir davantage, rendez-vous sur la page [Synthèse des flux](descripti
           "reference" : "StructureDefinition/tddui-comment"
         },
         "name" : "Commentaire",
-        "description" : "Commentaire relatif au séjour, évènements et évaluations.",
+        "description" : "\n- **Séjour** : commentaire relatif au séjour.\n- **Événement** : commentaires sur le déroulé de l’évènement.\n- **Évaluation** : commentaire libre sur le contenu ou le résultat de l’évaluation.\n- **Champ évalué** : commentaire spécifique à un item ou sous-item évalué.",
         "exampleBoolean" : false
       },
       {
@@ -976,6 +983,20 @@ Pour en savoir davantage, rendez-vous sur la page [Synthèse des flux](descripti
           }
         ],
         "reference" : {
+          "reference" : "StructureDefinition/tddui-exercise-mode"
+        },
+        "name" : "Mode d'exercice",
+        "description" : "Extension permettant de représenter le mode d'exercice du professionnel.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
           "reference" : "StructureDefinition/tddui-event-reason"
         },
         "name" : "Motif de l’évènement",
@@ -1007,7 +1028,7 @@ Pour en savoir davantage, rendez-vous sur la page [Synthèse des flux](descripti
           "reference" : "StructureDefinition/tddui-attachment"
         },
         "name" : "Pièce jointe",
-        "description" : "Pièces jointes.",
+        "description" : "Pièces jointes liées à l’événement et à l'évaluation. L'extension référence le profil PDSm_SimplifiedPublish.",
         "exampleBoolean" : false
       },
       {
@@ -1088,6 +1109,20 @@ Pour en savoir davantage, rendez-vous sur la page [Synthèse des flux](descripti
           }
         ],
         "reference" : {
+          "reference" : "StructureDefinition/tddui-document-reference"
+        },
+        "name" : "TDDUI DocumentReference",
+        "description" : "Profil de la ressource SimplifiedPublishDocumentReference pour les pièces jointes liées à l’événement et à l'évaluation.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
           "reference" : "StructureDefinition/tddui-encounter-evenement"
         },
         "name" : "TDDUI Encounter Evenement",
@@ -1106,6 +1141,20 @@ Pour en savoir davantage, rendez-vous sur la page [Synthèse des flux](descripti
         },
         "name" : "TDDUI Encounter FR Core CodeSystem v2-0203",
         "description" : "TDDUI Encounter's identifier",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/TDDUIEncounterParticipant"
+        },
+        "name" : "TDDUI Encounter Participant Type",
+        "description" : "CodeSystem for the participant types in TDDUI Encounter",
         "exampleBoolean" : false
       },
       {

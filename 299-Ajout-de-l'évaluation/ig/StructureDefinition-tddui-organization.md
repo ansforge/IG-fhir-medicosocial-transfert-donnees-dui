@@ -1,4 +1,4 @@
-# TDDUI Organization - Médicosocial - Transfert de données DUI v2.0.0-ballot
+# TDDUI Organization - Médicosocial - Transfert de données DUI v2.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization | *Version*:2.0.0-ballot |
-| Active as of 2025-10-15 | *Computable Name*:TDDUIOrganization |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization | *Version*:2.0.0 |
+| Active as of 2025-10-16 | *Computable Name*:TDDUIOrganization |
 
  
 Profil de la ressource FRCoreOrganizationProfile permettant de représenter les entités juridiques. 
@@ -17,7 +17,7 @@ Profil de la ressource FRCoreOrganizationProfile permettant de représenter les 
 **Usages:**
 
 * Use this Profile: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
-* Refer to this Profile: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md), [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md), [TDDUI Practitioner Role](StructureDefinition-tddui-practitioner-role.md) and [TDDUI Task Transport](StructureDefinition-tddui-task-transport.md)
+* Refer to this Profile: [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md), [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md), [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md), [TDDUI Practitioner Role](StructureDefinition-tddui-practitioner-role.md) and [TDDUI Task Transport](StructureDefinition-tddui-task-transport.md)
 * Examples for this Profile: [Les Chênes Verts](Organization-tddui-organization-example.md)
 * CapabilityStatements using this Profile: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
 
@@ -40,11 +40,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-organization.c
   "resourceType" : "StructureDefinition",
   "id" : "tddui-organization",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization",
-  "version" : "2.0.0-ballot",
+  "version" : "2.0.0",
   "name" : "TDDUIOrganization",
   "title" : "TDDUI Organization",
   "status" : "active",
-  "date" : "2025-10-15T15:04:22+00:00",
+  "date" : "2025-10-16T14:47:34+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

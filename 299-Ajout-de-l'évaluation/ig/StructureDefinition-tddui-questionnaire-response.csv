@@ -97,11 +97,15 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[]}decimal {[]} {[]}id {[]} {[]}instant {[]} {[]}integer {[]} {[]}markdown {[]} {[]}oid {[]} {[]}positiveInt {[]} {[]}string {[]} {[]}time {[]} {[]}unsignedInt {[]} {[]}uri {[]} {[]}url {[]} {[]}uuid {[]} {[]}Address {[]} {[]}Age {[]} {[]}Annotation {[]} {[]}Attachment {[]} {[]}CodeableConcept {[]} {[]}Coding {[]} {[]}ContactPoint {[]} {[]}Count {[]} {[]}Distance {[]} {[]}Duration {[]} {[]}HumanName {[]} {[]}Identifier {[]} {[]}Money {[]} {[]}Period {[]} {[]}Quantity {[]} {[]}Range {[]} {[]}Ratio {[]} {[]}Reference {[]} {[]}SampledData {[]} {[]}Signature {[]} {[]}Timing {[]} {[]}ContactDetail {[]} {[]}Contributor {[]} {[]}DataRequirement {[]} {[]}Expression {[]} {[]}ParameterDefinition {[]} {[]}RelatedArtifact {[]} {[]}TriggerDefinition {[]} {[]}UsageContext {[]} {[]}Dosage {[]} {[]}Meta {[]} {[]}","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
 "QuestionnaireResponse.extension:TDDUIAttachment","QuestionnaireResponse.extension","TDDUIAttachment","","",0,*,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment]]} {[]}
-","Pièce jointe","Pièces jointes.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Pièce jointe","Pièces jointes liées à l’événement et à l'évaluation. L'extension référence le profil PDSm_SimplifiedPublish.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","pieceJointeEvaluation","pieceJointeEvaluation"
 "QuestionnaireResponse.extension:TDDUIComment","QuestionnaireResponse.extension","TDDUIComment","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment]]} {[]}
-","Commentaire","Commentaire relatif au séjour, évènements et évaluations.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Commentaire","
+- **Séjour** : commentaire relatif au séjour.
+- **Événement** : commentaires sur le déroulé de l’évènement.
+- **Évaluation** : commentaire libre sur le contenu ou le résultat de l’évaluation.
+- **Champ évalué** : commentaire spécifique à un item ou sous-item évalué.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","commentaireEvaluation","commentaireEvaluation"
 "QuestionnaireResponse.modifierExtension","QuestionnaireResponse.modifierExtension","","extensions
@@ -186,7 +190,11 @@ qrs-1:Nested item can't be beneath both item and answer {(answer.exists() and it
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "QuestionnaireResponse.item.extension:TDDUIComment","QuestionnaireResponse.item.extension","TDDUIComment","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment]]} {[]}
-","Commentaire","Commentaire relatif au séjour, évènements et évaluations.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","Commentaire","
+- **Séjour** : commentaire relatif au séjour.
+- **Événement** : commentaires sur le déroulé de l’évènement.
+- **Évaluation** : commentaire libre sur le contenu ou le résultat de l’évaluation.
+- **Champ évalué** : commentaire spécifique à un item ou sous-item évalué.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","commentaire"
 "QuestionnaireResponse.item.modifierExtension","QuestionnaireResponse.item.modifierExtension","","extensions
@@ -237,7 +245,11 @@ decimal {[]} {[]}integer {[]} {[]}date {[]} {[]}dateTime {[]} {[]}time {[]} {[]}
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "QuestionnaireResponse.item.item.extension:TDDUIComment","QuestionnaireResponse.item.item.extension","TDDUIComment","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment]]} {[]}
-","Commentaire","Commentaire relatif au séjour, évènements et évaluations.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","Commentaire","
+- **Séjour** : commentaire relatif au séjour.
+- **Événement** : commentaires sur le déroulé de l’évènement.
+- **Évaluation** : commentaire libre sur le contenu ou le résultat de l’évaluation.
+- **Champ évalué** : commentaire spécifique à un item ou sous-item évalué.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","commentaire"
 "QuestionnaireResponse.item.item.modifierExtension","QuestionnaireResponse.item.item.modifierExtension","","extensions
@@ -288,7 +300,11 @@ decimal {[]} {[]}integer {[]} {[]}date {[]} {[]}dateTime {[]} {[]}time {[]} {[]}
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "QuestionnaireResponse.item.item.item.extension:TDDUIComment","QuestionnaireResponse.item.item.item.extension","TDDUIComment","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment]]} {[]}
-","Commentaire","Commentaire relatif au séjour, évènements et évaluations.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","Commentaire","
+- **Séjour** : commentaire relatif au séjour.
+- **Événement** : commentaires sur le déroulé de l’évènement.
+- **Évaluation** : commentaire libre sur le contenu ou le résultat de l’évaluation.
+- **Champ évalué** : commentaire spécifique à un item ou sous-item évalué.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","commentaire"
 "QuestionnaireResponse.item.item.item.modifierExtension","QuestionnaireResponse.item.item.item.modifierExtension","","extensions

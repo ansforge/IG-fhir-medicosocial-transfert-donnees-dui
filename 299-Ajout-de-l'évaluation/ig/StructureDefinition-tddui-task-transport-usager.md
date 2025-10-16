@@ -1,4 +1,4 @@
-# TDDUI Task Transport Usager - Médicosocial - Transfert de données DUI v2.0.0-ballot
+# TDDUI Task Transport Usager - Médicosocial - Transfert de données DUI v2.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager | *Version*:2.0.0-ballot |
-| Active as of 2025-10-15 | *Computable Name*:TDDUITaskTransportUsager |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager | *Version*:2.0.0 |
+| Active as of 2025-10-16 | *Computable Name*:TDDUITaskTransportUsager |
 
  
 Profil de la ressource TDDUITaskTransport permettant de représenter le transport de l'usager. 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
   "resourceType" : "StructureDefinition",
   "id" : "tddui-task-transport-usager",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager",
-  "version" : "2.0.0-ballot",
+  "version" : "2.0.0",
   "name" : "TDDUITaskTransportUsager",
   "title" : "TDDUI Task Transport Usager",
   "status" : "active",
-  "date" : "2025-10-15T15:04:22+00:00",
+  "date" : "2025-10-16T14:47:34+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -71,7 +71,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
     {
       "identity" : "specmetier-to-TDDUITaskTransportUsager",
       "uri" : "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html",
-      "name" : "Transport de l'usager"
+      "name" : "Modèle de contenu DUI"
     },
     {
       "identity" : "workflow",
@@ -114,10 +114,23 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
       {
         "id" : "Task.identifier",
         "path" : "Task.identifier",
+        "short" : "Identifiant du transport de l'usager",
         "mapping" : [
           {
             "identity" : "specmetier-to-TDDUITaskTransportUsager",
             "map" : "idTrajet"
+          }
+        ]
+      },
+      {
+        "id" : "Task.identifier.value",
+        "path" : "Task.identifier.value",
+        "example" : [
+          {
+            "label" : "Format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-TPPat-idTransport.",
+            "valueIdentifier" : {
+              "value" : "3480787529/147720425367411-TPPat-21564655"
+            }
           }
         ]
       },

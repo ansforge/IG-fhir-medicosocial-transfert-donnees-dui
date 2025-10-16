@@ -1,4 +1,4 @@
-# Transfert des données à un tiers - Médicosocial - Transfert de données DUI v2.0.0-ballot
+# Transfert des données à un tiers - Médicosocial - Transfert de données DUI v2.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Volume 1 - Etude fonctionnelle**](sfe.md)

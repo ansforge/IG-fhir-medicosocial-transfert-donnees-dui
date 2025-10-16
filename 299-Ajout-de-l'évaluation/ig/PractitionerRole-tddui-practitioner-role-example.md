@@ -1,4 +1,4 @@
-# tddui-practitioner-role-example - Médicosocial - Transfert de données DUI v2.0.0-ballot
+# tddui-practitioner-role-example - Médicosocial - Transfert de données DUI v2.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -7,6 +7,8 @@
 ## Example PractitionerRole: tddui-practitioner-role-example
 
 Profil: [TDDUI Practitioner Role](StructureDefinition-tddui-practitioner-role.md)
+
+**Mode d'exercice**: Salarié
 
 **practitioner**: [Practitioner Claire Martin](Practitioner-tddui-practitioner-example.md)
 
@@ -27,6 +29,20 @@ Profil: [TDDUI Practitioner Role](StructureDefinition-tddui-practitioner-role.md
       "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role"
     ]
   },
+  "extension" : [
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exercise-mode",
+      "valueCodeableConcept" : {
+        "coding" : [
+          {
+            "system" : "https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice",
+            "code" : "S",
+            "display" : "Salarié"
+          }
+        ]
+      }
+    }
+  ],
   "practitioner" : {
     "reference" : "Practitioner/tddui-practitioner-example"
   },
@@ -41,9 +57,9 @@ Profil: [TDDUI Practitioner Role](StructureDefinition-tddui-practitioner-role.md
           "valueCodeableConcept" : {
             "coding" : [
               {
-                "system" : "https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge",
-                "code" : "314",
-                "display" : "Ambulancier"
+                "system" : "https://mos.esante.gouv.fr/NOS/TRE_A02-ProfessionSavFaire-CISIS/FHIR/TRE-A02-ProfessionSavFaire-CISIS",
+                "code" : "G15_60",
+                "display" : "Infirmier"
               }
             ]
           }

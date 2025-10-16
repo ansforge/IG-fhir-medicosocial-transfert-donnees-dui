@@ -1,4 +1,4 @@
-# Ressources utilisées - Médicosocial - Transfert de données DUI v2.0.0-ballot
+# Ressources utilisées - Médicosocial - Transfert de données DUI v2.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used | *Version*:2.0.0-ballot |
-| Active as of 2025-10-15 | *Computable Name*:TDDUIRessourcesUsed |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used | *Version*:2.0.0 |
+| Active as of 2025-10-16 | *Computable Name*:TDDUIRessourcesUsed |
 
 Ressources utilisées lors de l’évènement (ex : chambre, matériel médical, véhicule).
 
@@ -45,11 +45,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-ressources-use
   "resourceType" : "StructureDefinition",
   "id" : "tddui-ressources-used",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used",
-  "version" : "2.0.0-ballot",
+  "version" : "2.0.0",
   "name" : "TDDUIRessourcesUsed",
   "title" : "Ressources utilisées",
   "status" : "active",
-  "date" : "2025-10-15T15:04:22+00:00",
+  "date" : "2025-10-16T14:47:34+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -105,7 +105,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-ressources-use
         "id" : "Extension.extension:TDDUIRessourceType",
         "path" : "Extension.extension",
         "sliceName" : "TDDUIRessourceType",
-        "short" : "Type de ressources utilisées dans le cadre de l’évènement (matériel, immobilier, véhicule).",
+        "short" : "Type de ressources utilisées dans le cadre de l’évènement.",
         "min" : 0,
         "max" : "1"
       },
@@ -136,18 +136,9 @@ Other representations of profile: [CSV](StructureDefinition-tddui-ressources-use
         "id" : "Extension.extension:TDDUIMaterialDetail",
         "path" : "Extension.extension",
         "sliceName" : "TDDUIMaterialDetail",
-        "short" : "Détail des ressources matérielles (ex: matériel médical, pédagogique)",
+        "short" : "Détail des ressources matérielles.",
         "min" : 0,
-        "max" : "*",
-        "constraint" : [
-          {
-            "key" : "MatDetailOnlyIfTypeOrg206",
-            "severity" : "error",
-            "human" : "TDDUIMaterialDetail ne doit être utilisé que si TDDUIRessourceType vaut ORG-206 ou n'est pas renseigné.",
-            "expression" : "extension('TDDUIRessourceType').empty() or extension('TDDUIRessourceType').value.coding.code = 'ORG-206'",
-            "source" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used"
-          }
-        ]
+        "max" : "*"
       },
       {
         "id" : "Extension.extension:TDDUIMaterialDetail.extension",
@@ -176,18 +167,9 @@ Other representations of profile: [CSV](StructureDefinition-tddui-ressources-use
         "id" : "Extension.extension:TDDUIFacilityResource",
         "path" : "Extension.extension",
         "sliceName" : "TDDUIFacilityResource",
-        "short" : "Détail des ressources immobilières (ex: bâtiment, salle, chambre)",
+        "short" : "Détail des ressources immobilières.",
         "min" : 0,
-        "max" : "*",
-        "constraint" : [
-          {
-            "key" : "FacilityOnlyIfTypeOrg207",
-            "severity" : "error",
-            "human" : "TDDUIFacilityResource ne doit être utilisé que si TDDUIRessourceType vaut ORG-207 ou n'est pas renseigné.",
-            "expression" : "extension('TDDUIRessourceType').empty() or extension('TDDUIRessourceType').value.coding.code = 'ORG-207'",
-            "source" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used"
-          }
-        ]
+        "max" : "*"
       },
       {
         "id" : "Extension.extension:TDDUIFacilityResource.extension",

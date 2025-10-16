@@ -1,4 +1,4 @@
-# TDDUI FR Core CodeSystem v2-0203 - Médicosocial - Transfert de données DUI v2.0.0-ballot
+# TDDUI FR Core CodeSystem v2-0203 - Médicosocial - Transfert de données DUI v2.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-identifier | *Version*:2.0.0-ballot |
-| Active as of 2025-10-15 | *Computable Name*:TDDUIIdentifier |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-identifier | *Version*:2.0.0 |
+| Active as of 2025-10-16 | *Computable Name*:TDDUIIdentifier |
 
  
 TDDUI Patient's identifier 
@@ -32,12 +32,12 @@ TDDUI Patient's identifier
     ]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-identifier",
-  "version" : "2.0.0-ballot",
+  "version" : "2.0.0",
   "name" : "TDDUIIdentifier",
   "title" : "TDDUI FR Core CodeSystem v2-0203",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-10-15T15:04:22+00:00",
+  "date" : "2025-10-16T14:47:34+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

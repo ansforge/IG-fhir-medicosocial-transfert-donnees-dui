@@ -1,4 +1,4 @@
-# TDDUI Task Transport - Médicosocial - Transfert de données DUI v2.0.0-ballot
+# TDDUI Task Transport - Médicosocial - Transfert de données DUI v2.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport | *Version*:2.0.0-ballot |
-| Active as of 2025-10-15 | *Computable Name*:TDDUITaskTransport |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport | *Version*:2.0.0 |
+| Active as of 2025-10-16 | *Computable Name*:TDDUITaskTransport |
 
  
 Profil de la ressource Task permettant de représenter le transport. 
@@ -43,11 +43,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
   "resourceType" : "StructureDefinition",
   "id" : "tddui-task-transport",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport",
-  "version" : "2.0.0-ballot",
+  "version" : "2.0.0",
   "name" : "TDDUITaskTransport",
   "title" : "TDDUI Task Transport",
   "status" : "active",
-  "date" : "2025-10-15T15:04:22+00:00",
+  "date" : "2025-10-16T14:47:34+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -78,7 +78,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
     {
       "identity" : "specmetier-to-TDDUITaskTransport",
       "uri" : "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html",
-      "name" : "Transport"
+      "name" : "Modèle de contenu DUI"
     },
     {
       "identity" : "workflow",

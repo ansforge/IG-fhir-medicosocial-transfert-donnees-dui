@@ -14,11 +14,11 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : ImplementationGuide ans.fhir.fr.tddui</b></p><a name=\"ans.fhir.fr.tddui\"> </a><a name=\"hcans.fhir.fr.tddui\"> </a><h2>TDDUI</h2><p>LURL officielle pour ce guide dimplémentation est : </p><pre>https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui</pre></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "2.0.0-ballot"] ; # 
+  fhir:version [ fhir:v "2.0.0"] ; # 
   fhir:name [ fhir:v "TDDUI"] ; # 
   fhir:title [ fhir:v "Médicosocial - Transfert de données DUI"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-10-15T15:04:22+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-16T14:47:34+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -76,6 +76,14 @@
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.uv.extensions" ] ;
      fhir:version [ fhir:v "5.2.0" ]
+  ] [
+     fhir:id [ fhir:v "ihe_iti_mhd" ] ;
+     fhir:uri [
+       fhir:v "https://profiles.ihe.net/ITI/MHD/ImplementationGuide/ihe.iti.mhd"^^xsd:anyURI ;
+       fhir:link <https://profiles.ihe.net/ITI/MHD/ImplementationGuide/ihe.iti.mhd>
+     ] ;
+     fhir:packageId [ fhir:v "ihe.iti.mhd" ] ;
+     fhir:version [ fhir:v "4.2.0" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
@@ -104,7 +112,7 @@
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "public-comment"
+           fhir:v "trial-implementation"
          ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
@@ -500,7 +508,7 @@
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "public-comment"
+           fhir:v "trial-implementation"
          ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
@@ -878,7 +886,7 @@
          fhir:reference [ fhir:v "StructureDefinition/tddui-comment" ]
        ] ;
        fhir:name [ fhir:v "Commentaire" ] ;
-       fhir:description [ fhir:v "Commentaire relatif au séjour, évènements et évaluations." ] ;
+       fhir:description [ fhir:v "\n- **Séjour** : commentaire relatif au séjour.\n- **Événement** : commentaires sur le déroulé de l’évènement.\n- **Évaluation** : commentaire libre sur le contenu ou le résultat de l’évaluation.\n- **Champ évalué** : commentaire spécifique à un item ou sous-item évalué." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1000,6 +1008,24 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exercise-mode> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-exercise-mode" ]
+       ] ;
+       fhir:name [ fhir:v "Mode d'exercice" ] ;
+       fhir:description [ fhir:v "Extension permettant de représenter le mode d'exercice du professionnel." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-reason> ;
          fhir:reference [ fhir:v "StructureDefinition/tddui-event-reason" ]
        ] ;
@@ -1040,7 +1066,7 @@
          fhir:reference [ fhir:v "StructureDefinition/tddui-attachment" ]
        ] ;
        fhir:name [ fhir:v "Pièce jointe" ] ;
-       fhir:description [ fhir:v "Pièces jointes." ] ;
+       fhir:description [ fhir:v "Pièces jointes liées à l’événement et à l'évaluation. L'extension référence le profil PDSm_SimplifiedPublish." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1144,6 +1170,24 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-document-reference" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI DocumentReference" ] ;
+       fhir:description [ fhir:v "Profil de la ressource SimplifiedPublishDocumentReference pour les pièces jointes liées à l’événement et à l'évaluation." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement> ;
          fhir:reference [ fhir:v "StructureDefinition/tddui-encounter-evenement" ]
        ] ;
@@ -1167,6 +1211,24 @@
        ] ;
        fhir:name [ fhir:v "TDDUI Encounter FR Core CodeSystem v2-0203" ] ;
        fhir:description [ fhir:v "TDDUI Encounter's identifier" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/TDDUIEncounterParticipant> ;
+         fhir:reference [ fhir:v "CodeSystem/TDDUIEncounterParticipant" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Encounter Participant Type" ] ;
+       fhir:description [ fhir:v "CodeSystem for the participant types in TDDUI Encounter" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false

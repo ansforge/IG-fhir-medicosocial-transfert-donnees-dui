@@ -1,6 +1,6 @@
 {
   "package": "ans.fhir.fr.tddui",
-  "version": "2.0.0-ballot",
+  "version": "2.0.0",
   "fhirVersion": "4.0.1",
   "jurisdiction": "FR",
   "extensions": [
@@ -15,7 +15,7 @@
       "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment",
       "title": "Pièce jointe",
       "types": [
-        "Attachment"
+        "Reference"
       ]
     },
     {
@@ -64,6 +64,17 @@
       "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-report",
       "title": "Rapport de l’évènement",
       "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exercise-mode",
+      "title": "Mode d\u0027exercice",
+      "types": [
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
         "string"
       ]
     },
@@ -229,6 +240,12 @@
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle",
         "title": "TDDUI Bundle"
+      }
+    ],
+    "DocumentReference": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference",
+        "title": "TDDUI DocumentReference"
       }
     ],
     "Encounter": [
@@ -433,6 +450,9 @@
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-report": [
       "Encounter"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exercise-mode": [
+      "PractitionerRole"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exit-mode-label": [
       "Bundle.entry.resource",

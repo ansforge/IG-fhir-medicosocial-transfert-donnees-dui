@@ -1,4 +1,4 @@
-# Commentaire - Médicosocial - Transfert de données DUI v2.0.0-ballot
+# Commentaire - Médicosocial - Transfert de données DUI v2.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,10 +8,13 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment | *Version*:2.0.0-ballot |
-| Active as of 2025-10-15 | *Computable Name*:TDDUIComment |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment | *Version*:2.0.0 |
+| Active as of 2025-10-16 | *Computable Name*:TDDUIComment |
 
-Commentaire relatif au séjour, évènements et évaluations.
+* **Séjour** : commentaire relatif au séjour.
+* **Événement** : commentaires sur le déroulé de l’évènement.
+* **Évaluation** : commentaire libre sur le contenu ou le résultat de l’évaluation.
+* **Champ évalué** : commentaire spécifique à un item ou sous-item évalué.
 
 **Context of Use**
 
@@ -43,11 +46,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-comment.csv), 
   "resourceType" : "StructureDefinition",
   "id" : "tddui-comment",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment",
-  "version" : "2.0.0-ballot",
+  "version" : "2.0.0",
   "name" : "TDDUIComment",
   "title" : "Commentaire",
   "status" : "active",
-  "date" : "2025-10-15T15:04:22+00:00",
+  "date" : "2025-10-16T14:47:34+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -60,7 +63,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-comment.csv), 
       ]
     }
   ],
-  "description" : "Commentaire relatif au séjour, évènements et évaluations.",
+  "description" : "\n- **Séjour** : commentaire relatif au séjour.\n- **Événement** : commentaires sur le déroulé de l’évènement.\n- **Évaluation** : commentaire libre sur le contenu ou le résultat de l’évaluation.\n- **Champ évalué** : commentaire spécifique à un item ou sous-item évalué.",
   "jurisdiction" : [
     {
       "coding" : [
@@ -86,10 +89,6 @@ Other representations of profile: [CSV](StructureDefinition-tddui-comment.csv), 
     {
       "type" : "element",
       "expression" : "Encounter"
-    },
-    {
-      "type" : "element",
-      "expression" : "QuestionnaireResponse"
     }
   ],
   "type" : "Extension",
@@ -101,7 +100,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-comment.csv), 
         "id" : "Extension",
         "path" : "Extension",
         "short" : "Commentaire",
-        "definition" : "Commentaire relatif au séjour, évènements et évaluations."
+        "definition" : "\n- **Séjour** : commentaire relatif au séjour.\n- **Événement** : commentaires sur le déroulé de l’évènement.\n- **Évaluation** : commentaire libre sur le contenu ou le résultat de l’évaluation.\n- **Champ évalué** : commentaire spécifique à un item ou sous-item évalué."
       },
       {
         "id" : "Extension.extension",
@@ -116,6 +115,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-comment.csv), 
       {
         "id" : "Extension.value[x]",
         "path" : "Extension.value[x]",
+        "short" : "Exemple de commentaire : Cet évènement a débuté plus tard l’usager était sous la douche à l’heure du début du rendez-vous.",
         "type" : [
           {
             "code" : "string"

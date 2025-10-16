@@ -1,4 +1,4 @@
-# tddui-encounter-sejour-example - Médicosocial - Transfert de données DUI v2.0.0-ballot
+# tddui-encounter-sejour-example - Médicosocial - Transfert de données DUI v2.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

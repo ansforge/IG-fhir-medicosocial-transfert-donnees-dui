@@ -1,4 +1,4 @@
-# Acronymes - Médicosocial - Transfert de données DUI v2.0.0-ballot
+# Acronymes - Médicosocial - Transfert de données DUI v2.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Annexes**](annexes.md)
@@ -11,7 +11,7 @@
 * Sigle / Acronyme: ARS
   * Définition: Agence Régionale de Santé
 * Sigle / Acronyme: CDA
-  * Définition: Clinical Document
+  * Définition: Clinical Document Architecture
 * Sigle / Acronyme: CI-SIS
   * Définition: Cadre d’Interopérabilité des Systèmes d’Information de Santé
 * Sigle / Acronyme: CNIL

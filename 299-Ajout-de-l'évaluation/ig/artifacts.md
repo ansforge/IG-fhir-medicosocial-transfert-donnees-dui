@@ -1,4 +1,4 @@
-# Artifacts Summary - Médicosocial - Transfert de données DUI v2.0.0-ballot
+# Artifacts Summary - Médicosocial - Transfert de données DUI v2.0.0
 
 * [**Table of Contents**](toc.md)
 * **Artifacts Summary**
@@ -34,6 +34,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 | | |
 | :--- | :--- |
 | [TDDUI Bundle](StructureDefinition-tddui-bundle.md) | Profil générique créé pour transmettre des données d'un logiciel DUI. |
+| [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md) | Profil de la ressource SimplifiedPublishDocumentReference pour les pièces jointes liées à l’événement et à l'évaluation. |
 | [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md) | Profil de la ressource Encounter permettant de regrouper les évènements liés à la prise en charge de l’usager dans une structure ESSMS. |
 | [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md) | Profil de la ressource Encounter permettant de regrouper les informations relatives au séjour d'un usager dans une structure ESSMS |
 | [TDDUI Organization](StructureDefinition-tddui-organization.md) | Profil de la ressource FRCoreOrganizationProfile permettant de représenter les entités juridiques. |
@@ -64,15 +65,20 @@ These define constraints on FHIR data types for systems conforming to this imple
 
 | | |
 | :--- | :--- |
-| [Commentaire](StructureDefinition-tddui-comment.md) | Commentaire relatif au séjour, évènements et évaluations. |
+| [Commentaire](StructureDefinition-tddui-comment.md) | * **Séjour** : commentaire relatif au séjour.
+* **Événement** : commentaires sur le déroulé de l’évènement.
+* **Évaluation** : commentaire libre sur le contenu ou le résultat de l’évaluation.
+* **Champ évalué** : commentaire spécifique à un item ou sous-item évalué.
+ |
 | [Date d’admission](StructureDefinition-tddui-admission-date.md) | Date d’admission dans la structure ESSMS. |
 | [Evénement hors prestation](StructureDefinition-tddui-outside-service.md) | Evénement hors prestation prévue dans le projet personnalisé de l’usager. |
 | [Libellé de l'évènement](StructureDefinition-tddui-event-label.md) | Titre donné à l’évènement par la structure. |
 | [Libellé mode d'entrée](StructureDefinition-tddui-entry-mode-label.md) | Libellé du mode d’entée du séjour. |
 | [Libellé mode de sortie](StructureDefinition-tddui-exit-mode-label.md) | Libellé du mode de sortie du séjour. |
+| [Mode d'exercice](StructureDefinition-tddui-exercise-mode.md) | Extension permettant de représenter le mode d'exercice du professionnel. |
 | [Motif de l’évènement](StructureDefinition-tddui-event-reason.md) | Contexte justifiant la réalisation de l’évènement. |
 | [Ordre de naissance dans le registre d'état civil](StructureDefinition-tddui-birth-order.md) | Ordre d’enregistrement de la naissance dans le registre d’état civil de la commune de naissance pour le mois de la naissance. Il compose les 3 derniers chiffres du NIR de l'usager avant la clé de sécurité et permet de distinguer les personnes nées au même lieu et à la même période. Il est obligatoire si le NIR n'est pas transmis. |
-| [Pièce jointe](StructureDefinition-tddui-attachment.md) | Pièces jointes. |
+| [Pièce jointe](StructureDefinition-tddui-attachment.md) | Pièces jointes liées à l’événement et à l'évaluation. L'extension référence le profil PDSm_SimplifiedPublish. |
 | [Rapport de l’évènement](StructureDefinition-tddui-event-report.md) | Zone de texte liée à l’événement pour compte rendu des actions réalisées. |
 | [Repas](StructureDefinition-tddui-meal.md) | Repas du professionnel prévu dans le cadre de l'événement. |
 | [Responsable et auteur du statut de l'évaluation](StructureDefinition-tddui-qr-participant.md) | Extension permettant d'ajouter le responsable de l'évaluation et l'auteur du statut de l'évaluation dans un QuestionnaireResponse. |
@@ -97,6 +103,7 @@ These define new code systems used by systems conforming to this implementation 
 | :--- | :--- |
 | [InputTaskTransportCodeSystem](CodeSystem-input-tddui-task-transport-codesystem.md) | CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les transports dans le cadre du DUI. |
 | [TDDUI Encounter FR Core CodeSystem v2-0203](CodeSystem-tddui-encounter-identifier.md) | TDDUI Encounter's identifier |
+| [TDDUI Encounter Participant Type](CodeSystem-TDDUIEncounterParticipant.md) | CodeSystem for the participant types in TDDUI Encounter |
 | [TDDUI FR Core CodeSystem v2-0203](CodeSystem-tddui-identifier.md) | TDDUI Patient's identifier |
 
 ### Example: Example Instances 
