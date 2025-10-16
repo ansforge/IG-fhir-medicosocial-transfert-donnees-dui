@@ -5,7 +5,7 @@ Title: "TDDUI Encounter Evenement"
 Description: "Profil de la ressource Encounter permettant de regrouper les évènements liés à la prise en charge de l’usager dans une structure ESSMS."
 
 * ^purpose = """
-    > **Note** : Le profil TDDUI ne peut pas hériter de FR Core Encounter à cause du type d'évènement qui est restreint à 1. Cependant, ce profil suit la plupart des règles de FR Core Encounter via un RuleSet.
+    > **Note** : Le profil TDDUIEncounterEvenement n'hérite pas du profil FRCoreEncounterProfile à cause de l'interdiction de véhiculer plusieurs types d'évènements. Cependant, le profil TDDUIEncounterEvenement suit les contraintes du profil FRCoreEncounterProfile excepté la contrainte sur la cardinalité de l'élément type (0..1).
   """
 
 * insert FRCoreEncounterProfile
@@ -55,12 +55,26 @@ Description: "Profil de la ressource Encounter permettant de regrouper les évè
 
 // Usager
 * subject 1..1
-* subject only Reference(TDDUIPatient or TDDUIPatientINS)
+* subject only Reference(TDDUIPatient or TDDUIPatientINS or Group)
 
 // ESSMS
 * serviceProvider only Reference(TDDUIOrganization)
 
-// Professionnel
+* participant ^slicing.discriminator.type = #pattern
+* participant ^slicing.discriminator.path = "type"
+* participant ^slicing.rules = #open
+
+* participant contains
+    auteurStatut 0..1 and
+    professionnel 0..1
+
+* participant[auteurStatut].type 1..1
+* participant[auteurStatut].type = TDDUIEncounterParticipant#AUT "Auteur du statut de la ressource"
+* participant[auteurStatut] ^short = "Professionnel ayant effectué la dernière modification du statut associé à la ressource."
+
+* participant[professionnel].type 1..1
+* participant[professionnel].type = http://terminology.hl7.org/CodeSystem/v3-ParticipationType#PART
+
 * participant.individual only Reference(TDDUIPractitioner or TDDUIPractitionerRole or RelatedPerson)
 
 * location 0..1
@@ -77,6 +91,8 @@ Description: "Profil de la ressource Encounter permettant de regrouper les évè
     TDDUIMeal named TDDUIMeal 0..1
 
 * extension[TDDUIRessourcesUsed] ^short = "Ressources utilisées lors de l’évènement."
+* obeys MatDetailOnlyIfTypeOrg206
+* obeys FacilityOnlyIfTypeOrg207
 * extension[TDDUIEventLabel] ^short = "Titre donné à l’évènement par la structure."
 * extension[TDDUIComment] ^short = "Commentaires sur le déroulé de l'évènement."
 * extension[TDDUIEventReport] ^short = "Zone de texte liée à l’événement pour compte rendu des actions réalisées."
@@ -94,14 +110,14 @@ Mapping:  ConceptMetier_TDDUIEncounterEvenement
 Source:   TDDUIEncounterEvenement
 Target: "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"
 Id:       specmetier-to-TDDUIEncounterEvenement
-Title:    "Évènement"
+Title:    "Modèle de contenu DUI"
 * -> "Événement"
 
 * identifier -> "idEvenement"
 * type -> "typeEvenement"
 * subject -> "Usager"
 * serviceProvider -> "structureEnCharge"
-* participant.individual -> "Professionnel"
+* participant[professionnel] -> "Professionnel"
 * location -> "lieuEvenement"
 * extension[TDDUIRessourcesUsed] -> "RessourceUtilisee"
 * extension[TDDUIRessourcesUsed].extension[TDDUIRessourceType] -> "typeRessourceUtilisee"
@@ -118,7 +134,21 @@ Title:    "Évènement"
 * partOf -> "sejour"
 * period.start -> "dateDebutEvenement"
 * period.end -> "dateFinEvenement"
-* meta.lastUpdated -> "dateModificationEvenement"
+* meta.lastUpdated -> "dateModificationEvenement, Statut.dateStatut"
 * status -> "Statut.statut"
-* participant.type -> "statut.auteur"
-* status.extension[TDDUIEventCancelReason] -> "statut.motifNonRealisation"
+* participant[auteurStatut] -> "Statut.auteur"
+* status.extension[tddui-event-cancel-reason] -> "Statut.motifNonRealisation"
+
+Invariant: MatDetailOnlyIfTypeOrg206
+Description: "Le slice TDDUIMaterialDetail est utilisé uniquement lorsque le slice TDDUIRessourceType prend la valeur ORG-206."
+Severity: #error
+Expression: "(Encounter.extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used').extension.where(url='TDDUIMaterialDetail').exists())
+    implies(Encounter.extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used').extension.where(url='TDDUIRessourceType').exists()
+    and(Encounter.extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used').extension.where(url='TDDUIRessourceType').value.coding.code='ORG-206'))"
+
+Invariant: FacilityOnlyIfTypeOrg207
+Description: "Le slice TDDUIFacilityResource est utilisé uniquement lorsque le slice TDDUIRessourceType prend la valeur ORG-207."
+Severity: #error
+Expression: "(Encounter.extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used').extension.where(url='TDDUIFacilityResource').exists())
+    implies(Encounter.extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used').extension.where(url='TDDUIRessourceType').exists()
+    and(Encounter.extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used').extension.where(url='TDDUIRessourceType').value.coding.code='ORG-207'))"

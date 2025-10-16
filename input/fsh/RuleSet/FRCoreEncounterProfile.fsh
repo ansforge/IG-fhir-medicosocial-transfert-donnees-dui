@@ -35,7 +35,7 @@ RuleSet: FRCoreEncounterProfile
 * type from FRCoreValueSetEncounterType (example)
 * type ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * type ^binding.extension[=].valueString = "EncounterType"
-* subject only Reference(FRCorePatientProfile)
+* subject only Reference(FRCorePatientProfile or Group)
 * participant ^short = "List of participants involved in the encounter | Liste des personnes impliquées dans la rencontre"
 * participant.individual only Reference(RelatedPerson or FRCorePractitionerProfile or PractitionerRole)
 * appointment only Reference(FRCoreAppointmentProfile)

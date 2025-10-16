@@ -21,7 +21,7 @@ Description: "Exemple d'un évènement"
 
 * serviceProvider = Reference(tddui-organization-example)
 
-* participant.individual = Reference(tddui-practitioner-example)
+* participant[professionnel].individual = Reference(tddui-practitioner-example)
 
 * partOf = Reference(tddui-encounter-sejour-example)
 

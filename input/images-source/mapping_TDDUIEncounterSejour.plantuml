@@ -9,9 +9,8 @@ object "**TDDUIPatient**" as TDDUIPatient #LimeGreen {
     Usager
 }
 
-map "**EntiteJuridique : TDDUIOrganization**" as TDDUIOrganization #back:LightGoldenRodYellow;header:Gold {
-    idNat_Struct => <&layers> identifier:idNatSt
-    raisonSocial => name
+object "**TDDUIOrganization**" as TDDUIOrganization #bebada {
+    ESSMS
 }
 
 map "**Sejour : TDDUIEncounterSejour**" as Sejour #back:AliceBlue;header:LightSkyBlue {

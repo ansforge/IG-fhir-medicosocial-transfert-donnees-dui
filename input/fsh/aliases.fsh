@@ -69,6 +69,7 @@ Alias: $JDV-TypeMotorisation-CISIS = https://smt.esante.gouv.fr/fhir/ValueSet/jd
 Alias: $JDV-J282-TransportsLiesAuProjetIndividuel-SERAFIN = https://mos.esante.gouv.fr/NOS/JDV_J282-TransportsLiesAuProjetIndividuel_SERAFIN/FHIR/JDV-J282-TransportsLiesAuProjetIndividuel-SERAFIN
 Alias: $JDV-ModeDeTransport-CISIS = https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis
 Alias: $JDV-MotifNonRealisationEvenement-CISIS = https://smt.esante.gouv.fr/fhir/ValueSet/jdv-motif-non-realisation-evenement-cisis
+Alias: $JDV-J117-ModeExercice-ENREG = https://mos.esante.gouv.fr/NOS/JDV_J117-ModeExercice-ENREG/FHIR/JDV-J117-ModeExercice-ENREG
 
 // HL7
 Alias: $v2-0131 = http://terminology.hl7.org/CodeSystem/v2-0131
