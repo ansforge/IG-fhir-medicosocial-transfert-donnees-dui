@@ -79,19 +79,54 @@ Les interactions font référence à un certain nombre de ressources du standard
 
 Les ressources profilées dans le cadre de ce guide d'implémentation sont les suivantes : 
 
-| Ressource | Profil | Description |
-| ----- | ----- | ----- |
-| <a href="https://hl7.org/fhir/R4/bundle.html">Bundle</a> | [TDDUIBundle](StructureDefinition-tddui-bundle.html) | Profil générique créé pour transmettre des données d'un logiciel DUI |
-| <a href="https://hl7.org/fhir/R4/encounter.html">Encounter</a> | [TDDUIEncounterEvenement](StructureDefinition-tddui-encounter-evenement.html) | Profil de la ressource Encounter permettant de regrouper les informations relatives au séjour d'un usager dans une structure ESSMS |
-| <a href="https://hl7.org/fhir/R4/encounter.html">Encounter</a> | [TDDUIEncounterSejour](StructureDefinition-tddui-encounter-sejour.html) | Profil de la ressource Encounter permettant de regrouper les informations relatives au séjour d'un usager dans une structure ESSMS |
-| <a href="https://hl7.org/fhir/R4/organization.html">Organization</a> | [TDDUIOrganization](StructureDefinition-tddui-organization.html) | Profil de la ressource FRCoreOrganizationProfile permettant de représenter les entités juridiques. |
-| <a href="https://hl7.org/fhir/R4/Patient.html">Patient</a> | [TDDUIPatient](StructureDefinition-tddui-patient.html) | Profil de la ressource FrCorePatientProfile permettant de représenter un usager lorsque l'INS n'est pas transmis. |
-| <a href="https://hl7.org/fhir/R4/Patient.html">Patient</a> | [TDDUIPatientINS](StructureDefinition-tddui-patient-ins.html) | Profil de la ressource FRCorePatientINSProfile permettant de représenter un usager lorsque l'INS est transmis. |
-| <a href="https://hl7.org/fhir/R4/Practitioner.html">Practitioner</a> | [TDDUIPractitioner](StructureDefinition-tddui-practitioner.html) | Profil de la ressource FRCorePractitionerProfile permettant de représenter un Profesionnel. |
-| <a href="https://hl7.org/fhir/R4/PractitionerRole.html">PractitionerRole</a> | [TDDUIPractitionerRole](StructureDefinition-tddui-practitioner-role.html) | Profil de la ressource FRCorePractitionerRole permettant de représenter un Professionnel. |
-| <a href="https://hl7.org/fhir/R4/Task.html">Task</a> | [TDDUITaskTransport](StructureDefinition-tddui-task-transport.html) | Profil de la ressource Task permettant de représenter le transport. |
-| <a href="https://hl7.org/fhir/R4/Task.html">Task</a> | [TDDUITaskTransportProfessionnel](StructureDefinition-tddui-task-transport-professionnel.html) | Profil de la ressource TDDUITaskTransport permettant de représenter le transport du professionnel. |
-| <a href="https://hl7.org/fhir/R4/Task.html">Task</a> | [TDDUITaskTransportUsager](StructureDefinition-tddui-task-transport-usager.html) | Profil de la ressource TDDUITaskTransport permettant de représenter le transport de l'usager. |
+{% sql {
+  "query" : "
+    SELECT 
+      json_extract(Json, '$.baseDefinition') as Parent, 
+      Name, 
+      Description, 
+      Web
+    FROM Resources
+    WHERE Type = 'StructureDefinition'
+      AND Id LIKE 'tddui%'
+      AND json_extract(Json, '$.kind') = 'resource'
+    ORDER BY Name
+  ",
+  "class" : "lines",
+  "columns" : [
+    { "title" : "Profil parent", "source" : "Parent" },
+    { "title" : "Profil", "type" : "link", "source" : "Name", "target" : "Web" },
+    { "title" : "Description", "type" : "markdown", "source" : "Description" }
+  ]
+} %}
+
+#### Instances de Questionnaire
+
+{% sql {
+  "query" : "
+    SELECT 
+      Id,
+      Description,
+      Web
+    FROM Resources
+    WHERE Type = 'Questionnaire'
+    ORDER BY Id
+  ",
+  "class" : "lines",
+  "columns" : [
+    {
+      "title" : "Questionnaire",
+      "type" : "link",
+      "source" : "Id",
+      "target" : "Web"
+    },
+    {
+      "title" : "Description",
+      "type" : "markdown",
+      "source" : "Description"
+    }
+  ]
+} %}
 
 ### Flux
 

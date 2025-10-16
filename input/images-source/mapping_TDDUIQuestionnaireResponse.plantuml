@@ -1,0 +1,62 @@
+@startuml
+
+map "**Evaluation AGGIR PH SSIAD, Evaluation AGGIR PA SSIAD : TDDUIQuestionnaireResponse**" as aggir #DarkGray {
+    resultatEvaluation => item.answer
+    premier_niveau_DetailEvaluation => item.item
+    champsEvalue_niveau1 => item.item.linkId
+    resultatChampsEvalue_niveau1 => item.item.answer
+    commentaire_niveau1 => item.item <&plus> TDDUIComment
+    deuxieme_niveau_DetailEvaluation => item.item.item
+    champsEvalue_niveau2 => item.item.item.linkId
+    resultatChampsEvalue_niveau2 => item.item.item.answer
+    commentaire_niveau2 => item.item.item <&plus> TDDUIComment
+}
+
+map "**Evaluation SERAFIN, Evaluation de la situation SSIAD : TDDUIQuestionnaireResponse**" as autre #DarkGray {
+    premier_niveau_DetailEvaluation => item
+    champsEvalue_niveau1 => item.linkId
+    resultatChampsEvalue_niveau1 => item.answer
+    commentaire_niveau1 => item <&plus> TDDUIComment
+}
+
+object "**TDDUIEncounterEvenement**" as TDDUIEncounterEvenement #8dd3c7 {
+    Evenement
+}
+
+map "meta" as meta #DarkGray {
+    Statut.dateStatut => lastUpdated
+}
+
+object "**TDDUIPatient**" as TDDUIPatient_subject #80b1d3 {
+    Usager
+}
+
+object "**TDDUIPractitioner**" as TDDUIPractitioner_author #fccde5 {
+    Auteur
+}
+
+object "**TDDUIPractitioner**" as TDDUIPractitioner_source #fccde5 {
+    Evaluateur
+}
+
+map "**Evaluation : TDDUIQuestionnaireResponse**" as Evaluation #d9d9d9 {
+    Responsable => <&plus> TDDUIQRParticipant.extension:TDDUIResponsible
+    pieceJointeEvaluation => <&plus> TDDUIAttachment
+    commentaireEvaluation => <&plus> TDDUIComment
+    idEvaluation => identifier
+    dateEvaluation => authored
+    typeEvaluation => questionnaire
+    Statut.statut  => status
+    Statut.auteur => TDDUIQRParticipant.extension:TDDUIStatusAuthor
+}
+
+Evaluation -u-> meta
+Evaluation --> aggir : Evaluation AGGIR PH SSIAD\nEvaluation AGGIR PA SSIAD
+Evaluation --> autre : Evaluation SERAFIN\nEvaluation de la situation SSIAD
+
+Evaluation -l-> TDDUIPatient_subject : subject
+Evaluation -r-> TDDUIPractitioner_author : author
+Evaluation -r-> TDDUIPractitioner_source : source
+ Evaluation -u-> TDDUIEncounterEvenement : encounter
+
+@enduml

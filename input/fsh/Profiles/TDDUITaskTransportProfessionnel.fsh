@@ -4,7 +4,10 @@ Id: tddui-task-transport-professionnel
 Title: "TDDUI Task Transport Professionnel"
 Description: "Profil de la ressource TDDUITaskTransport permettant de représenter le transport du professionnel."
 
+* identifier ^short = "Identifiant du transport du professionnel"
 * identifier.value ^short = "Format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-TPPro-idTransport."
+* identifier.value ^example[0].valueIdentifier.value = "3480787529/147720425367411-TPPro-21564655"
+
 
 // Professionnel
 * for 1..1

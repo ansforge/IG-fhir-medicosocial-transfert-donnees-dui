@@ -15,6 +15,7 @@ Description: "Exemple du transport."
 
 * code.coding.code = #ORG-204
 * code.coding.display = "Transport en commun"
+* code.coding.system = "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis"
 
 * input[budgetPrevisionnel].valueMoney.value = 2
 * input[budgetPrevisionnel].valueMoney.currency = #EUR
