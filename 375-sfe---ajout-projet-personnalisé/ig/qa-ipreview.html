@@ -101,7 +101,7 @@ This material derives from the HL7 Terminology (THO). THO is copyright &copy;198
     <ul>
       <li>
 
-          IG &copy; 2023+ ANS.  Package ans.fhir.fr.tddui#2.0.0 based on FHIR 4.0.1. Generated 2025-10-10 
+          IG &copy; 2023+ ANS.  Package ans.fhir.fr.tddui#2.0.0 based on FHIR 4.0.1. Generated 2025-10-17 
           
            
             Liens : Table des matières |
@@ -161,7 +161,7 @@ Médicosocial - Transfert de données DUI - Local Development build (v2.0.0) bui
 
           IG &copy; 2023+           <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>
 .  Package ans.fhir.fr.tddui#2.0.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
-. Generated           <span title="Fri, Oct 10, 2025 15:38+0000">2025-10-10</span>
+. Generated           <span title="Fri, Oct 17, 2025 12:16+0000">2025-10-17</span>
 
                     <br/>
 
@@ -193,7 +193,7 @@ Médicosocial - Transfert de données DUI - Local Development build (v2.0.0) bui
 
           IG &copy; 2023+           <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>
 .  Package ans.fhir.fr.tddui#2.0.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
-. Generated           <span title="Fri, Oct 10, 2025 15:38+0000">2025-10-10</span>
+. Generated           <span title="Fri, Oct 17, 2025 12:16+0000">2025-10-17</span>
 
                     <br/>
 
@@ -225,7 +225,7 @@ Médicosocial - Transfert de données DUI - Local Development build (v2.0.0) bui
 
           IG &copy; 2023+           <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>
 .  Package ans.fhir.fr.tddui#2.0.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
-. Generated           <span title="Fri, Oct 10, 2025 15:38+0000">2025-10-10</span>
+. Generated           <span title="Fri, Oct 17, 2025 12:16+0000">2025-10-17</span>
 
                     <br/>
 
@@ -1817,8 +1817,8 @@ Critère évalué.          <br/>
           <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">mos.esante.gouv.fr</a>
         </td>
         <td>
-Identifiant technique du moyen ou de la ressource obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature           <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>
-), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "PPER" et de l'identifiant de l'objectif dans le DUI (numProjetPersonnalise) :           <br/>
+Identifiant technique du projet personnalisé obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature           <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>
+), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "PPER" et de l'identifiant du projet personnalisé dans le DUI (numProjetPersonnalise) :           <br/>
 idProjetPersonnalise = 3+FINESS/identifiantLocalUsagerESSMS-PPER-numProjetPersonnalise
         </td>
       </tr>
@@ -1871,7 +1871,7 @@ Chaque usager a des attentes et des besoins singuliers, que le professionnel s�
   </tr>
   <tr>
     <td>idBesoin : [1..1] Identifiant</td>
-    <td>Identifiant technique du moyen ou de la ressource obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "BESO" et de l'identifiant du besoin dans le DUI (numBesoin) : <br/>idBesoin = 3+FINESS/identifiantLocalUsagerESSMS-BESO-numBesoin</td>
+    <td>Identifiant technique du besoin obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "BESO" et de l'identifiant du besoin dans le DUI (numBesoin) : <br/>idBesoin = 3+FINESS/identifiantLocalUsagerESSMS-BESO-numBesoin</td>
   </tr>
   <tr>
     <td>typeBesoin : [0..1] Code</td>
@@ -1906,7 +1906,7 @@ L'objectif correspond au résultat à atteindre dans le cadre du projet personna
   </tr>
   <tr>
     <td>idObjectif : [1..1] Identifiant</td>
-    <td>Identifiant technique du moyen ou de la ressource obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "OBJE" et de l'identifiant de l'objectif dans le DUI (numObjectif) : <br/>idObjectif = 3+FINESS/identifiantLocalUsagerESSMS-OBJE-numObjectif</td>
+    <td>Identifiant technique de l'objectif obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "OBJE" et de l'identifiant de l'objectif dans le DUI (numObjectif) : <br/>idObjectif = 3+FINESS/identifiantLocalUsagerESSMS-OBJE-numObjectif</td>
   </tr>
   <tr>
     <td>titreObjectif : [1..1] Texte</td>
@@ -1964,7 +1964,7 @@ L'action est un acte mené dans le cadre du projet personnalisé. Elle peut êtr
   </tr>
   <tr>
     <td>idAction : [1..1] Identifiant</td>
-    <td>Identifiant technique du moyen ou de la ressource obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "ACTI" et de l'identifiant de l'action dans le DUI (numAction) : <br/>idAction = 3+FINESS/identifiantLocalUsagerESSMS-ACTI-numAction</td>
+    <td>Identifiant technique de l'action obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "ACTI" et de l'identifiant de l'action dans le DUI (numAction) : <br/>idAction = 3+FINESS/identifiantLocalUsagerESSMS-ACTI-numAction</td>
   </tr> 
   <tr>
     <td>titreAction : [1..1] Texte</td>
@@ -2867,7 +2867,7 @@ Cela correspond au consentement d'une personne physique ou morale.
           <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">mos.esante.gouv.fr</a>
         </td>
         <td>
-Identifiant technique du moyen ou de la ressource obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature           <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>
+Identifiant technique du besoin obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature           <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>
 ), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "BESO" et de l'identifiant du besoin dans le DUI (numBesoin) :           <br/>
 idBesoin = 3+FINESS/identifiantLocalUsagerESSMS-BESO-numBesoin
         </td>
@@ -2893,7 +2893,7 @@ Type de besoin.          <br/>
           <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">mos.esante.gouv.fr</a>
         </td>
         <td>
-Identifiant technique du moyen ou de la ressource obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature           <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>
+Identifiant technique de l'objectif obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature           <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>
 ), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "OBJE" et de l'identifiant de l'objectif dans le DUI (numObjectif) :           <br/>
 idObjectif = 3+FINESS/identifiantLocalUsagerESSMS-OBJE-numObjectif
         </td>
@@ -2906,7 +2906,7 @@ idObjectif = 3+FINESS/identifiantLocalUsagerESSMS-OBJE-numObjectif
           <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">mos.esante.gouv.fr</a>
         </td>
         <td>
-Identifiant technique du moyen ou de la ressource obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature           <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>
+Identifiant technique de l'action obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature           <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>
 ), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "ACTI" et de l'identifiant de l'action dans le DUI (numAction) :           <br/>
 idAction = 3+FINESS/identifiantLocalUsagerESSMS-ACTI-numAction
         </td>
@@ -3275,7 +3275,7 @@ Chaque usager a des attentes et des besoins singuliers, que le professionnel s�
                   <td>idBesoin : [1..1] Identifiant</td>
 
                   <td>
-Identifiant technique du moyen ou de la ressource obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature                 <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>
+Identifiant technique du besoin obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature                 <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>
 ), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "BESO" et de l'identifiant du besoin dans le DUI (numBesoin) :                 <br/>
 idBesoin = 3+FINESS/identifiantLocalUsagerESSMS-BESO-numBesoin
               </td>
@@ -3355,7 +3355,7 @@ L'objectif correspond au résultat à atteindre dans le cadre du projet personna
                   <td>idObjectif : [1..1] Identifiant</td>
 
                   <td>
-Identifiant technique du moyen ou de la ressource obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature                 <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>
+Identifiant technique de l'objectif obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature                 <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>
 ), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "OBJE" et de l'identifiant de l'objectif dans le DUI (numObjectif) :                 <br/>
 idObjectif = 3+FINESS/identifiantLocalUsagerESSMS-OBJE-numObjectif
               </td>
@@ -3493,7 +3493,7 @@ L'action est un acte mené dans le cadre du projet personnalisé. Elle peut êtr
                   <td>idAction : [1..1] Identifiant</td>
 
                   <td>
-Identifiant technique du moyen ou de la ressource obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature                 <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>
+Identifiant technique de l'action obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature                 <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>
 ), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "ACTI" et de l'identifiant de l'action dans le DUI (numAction) :                 <br/>
 idAction = 3+FINESS/identifiantLocalUsagerESSMS-ACTI-numAction
               </td>
