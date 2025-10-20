@@ -1,6 +1,6 @@
 {
   "package": "ans.fhir.fr.tddui",
-  "version": "2.0.0-ballot",
+  "version": "2.0.0",
   "fhirVersion": "4.0.1",
   "jurisdiction": "FR",
   "extensions": [
@@ -13,9 +13,9 @@
     },
     {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment",
-      "title": "Pièce jointe de l’évènement",
+      "title": "Pièce jointe",
       "types": [
-        "Attachment"
+        "Reference"
       ]
     },
     {
@@ -43,11 +43,7 @@
       "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-cancel-reason",
       "title": "Évènement annulé",
       "types": [
-        "CodeableConcept",
-        "string",
-        "Extension",
-        "Coding",
-        "string"
+        "CodeableConcept"
       ]
     },
     {
@@ -112,13 +108,71 @@
     },
     {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-profession",
-      "title": "Profession",
+      "title": "TDDUI Profession",
       "types": [
         "CodeableConcept",
         "string",
         "Extension",
         "Coding",
         "string"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant",
+      "title": "Responsable et auteur du statut de l\u0027évaluation",
+      "types": [
+        "Reference",
+        "Reference",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
       ]
     },
     {
@@ -188,6 +242,12 @@
         "title": "TDDUI Bundle"
       }
     ],
+    "DocumentReference": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference",
+        "title": "TDDUI DocumentReference"
+      }
+    ],
     "Encounter": [
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement",
@@ -224,6 +284,12 @@
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role",
         "title": "TDDUI Practitioner Role"
+      }
+    ],
+    "QuestionnaireResponse": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response",
+        "title": "TDDUI QuestionnaireResponse"
       }
     ],
     "Task": [
@@ -356,13 +422,18 @@
       "Encounter"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment": [
-      "Encounter"
+      "Encounter",
+      "QuestionnaireResponse"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order": [
       "Patient.birthDate"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment": [
-      "Encounter"
+      "Encounter",
+      "QuestionnaireResponse",
+      "QuestionnaireResponse.item",
+      "QuestionnaireResponse.item.item",
+      "QuestionnaireResponse.item.item.item"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-mode-label": [
       "Bundle.entry.resource",
@@ -398,6 +469,9 @@
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-profession": [
       "PractitionerRole.code"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant": [
+      "QuestionnaireResponse"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used": [
       "Encounter"
