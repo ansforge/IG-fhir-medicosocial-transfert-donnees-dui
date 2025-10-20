@@ -11,7 +11,10 @@ Description: "Profil de la ressource Encounter permettant de regrouper les évè
 * insert FRCoreEncounterProfile
 
 * identifier 1..1
-* identifier.value ^short = "Format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-EVN-numEvenement."
+* identifier ^short = "Identifiant de l'évènement"
+* identifier.value ^example[0].label = "L'identifiant de l'évènement : 3+FINESS/identifiantLocalUsagerESSMS-EVAL-numEvenement."
+* identifier.value ^example[0].valueIdentifier.value = "3480787529/147720425367411-EVAL-21564655"
+
 
 * status ^short = "Correspondance des statuts métier avec les codes FHIR : Planifié → planned, Validé → triaged, Réalisé → finished, Annulé → cancelled."
 

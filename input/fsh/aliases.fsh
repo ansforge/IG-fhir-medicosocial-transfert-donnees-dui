@@ -9,7 +9,11 @@ Alias: $plannedStartDate-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extens
 Alias: $plannedEndDate-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedEndDate
 Alias: $UCUM = http://unitsofmeasure.org
 Alias: $rfc2445 = https://www.ietf.org/rfc/rfc2445
-Alias: $SCT = http://snomed.info/sct 
+Alias: $SCT = http://snomed.info/sct
+Alias: $terminologie-cisis = https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis
+Alias: $icf = http://hl7.org/fhir/sid/icf
+Alias: $terminologie-SERAFINPH = https://smt.esante.gouv.fr/terminologie-SERAFINPH
+Alias: $terminologie-cim-10 = https://smt.esante.gouv.fr/terminologie-cim-10
 
 // ANS
 Alias: $TRE-R81-Civilite = https://mos.esante.gouv.fr/NOS/TRE_R81-Civilite/FHIR/TRE-R81-Civilite

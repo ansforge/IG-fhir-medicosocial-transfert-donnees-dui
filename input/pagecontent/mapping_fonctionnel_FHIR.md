@@ -2,6 +2,10 @@
 Ce mapping représente les données fonctionnelles trouvant leur équivalence dans l'actuelle version des spécifications techniques.
 </p>
 
+<p style="background-color: #fff3cd; border:1px solid #ffeeba; padding: 5px; max-width: 790px;">
+<strong>Note :</strong> Pour visualiser l’entièreté du mapping, il est nécessaire de dézoomer.
+</p>
+
 ### Mapping Usager
 
 <div>{%include mapping_TDDUIPatient.svg%}</div>
@@ -26,5 +30,10 @@ Ce mapping représente les données fonctionnelles trouvant leur équivalence da
 
 ### Mapping Transport
 
+<div>{%include mapping_TDDUITaskTransport.svg%}</div>
 <div>{%include mapping_TDDUITaskTransportProfessionnel.svg%}</div>
 <div>{%include mapping_TDDUITaskTransportUsager.svg%}</div>
+
+### Mapping Evaluation
+
+<div>{%include mapping_TDDUIQuestionnaireResponse.svg%}</div>

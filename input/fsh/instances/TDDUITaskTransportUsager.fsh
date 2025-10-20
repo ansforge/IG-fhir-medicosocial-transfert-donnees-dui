@@ -15,6 +15,7 @@ Description: "Exemple du transport de l'usager."
 
 * code.coding.code = #ORG-156
 * code.coding.display = "Taxi"
+* code.coding.system = "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis"
 
 * input[budgetPrevisionnel].valueMoney.value = 2
 * input[budgetPrevisionnel].valueMoney.currency = #EUR
@@ -36,3 +37,4 @@ Description: "Exemple du transport de l'usager."
 * input[asepsieRigoureuse].valueBoolean = false
 * input[natureTransport].valueCodeableConcept.coding.code = #3.2.4
 * input[natureTransport].valueCodeableConcept.coding.display = "Transports liés au projet individuel"
+* input[natureTransport].valueCodeableConcept.coding.system = "https://smt.esante.gouv.fr/terminologie-SERAFINPH"
