@@ -518,7 +518,7 @@ Grille d'évaluation AGGIR PA SSIAD
   "version" : "2.0.0",
   "title" : "Évaluation AGGIR PA SSIAD",
   "status" : "active",
-  "date" : "2025-10-20T07:18:16+00:00",
+  "date" : "2025-10-20T09:45:38+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
