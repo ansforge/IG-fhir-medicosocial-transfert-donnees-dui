@@ -1,6 +1,6 @@
 {
   "package": "ans.fhir.fr.tddui",
-  "version": "2.0.0-ballot",
+  "version": "2.0.0",
   "fhirVersion": "4.0.1",
   "jurisdiction": "FR",
   "extensions": [
@@ -13,9 +13,9 @@
     },
     {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment",
-      "title": "Pièce jointe de l’évènement",
+      "title": "Pièce jointe",
       "types": [
-        "Attachment"
+        "Reference"
       ]
     },
     {
@@ -43,11 +43,7 @@
       "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-cancel-reason",
       "title": "Évènement annulé",
       "types": [
-        "CodeableConcept",
-        "string",
-        "Extension",
-        "Coding",
-        "string"
+        "CodeableConcept"
       ]
     },
     {
@@ -68,6 +64,17 @@
       "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-report",
       "title": "Rapport de l’évènement",
       "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exercise-mode",
+      "title": "Mode d\u0027exercice",
+      "types": [
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
         "string"
       ]
     },
@@ -108,6 +115,64 @@
         "Extension",
         "Coding",
         "string"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant",
+      "title": "Responsable et auteur du statut de l\u0027évaluation",
+      "types": [
+        "Reference",
+        "Reference",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
       ]
     },
     {
@@ -177,6 +242,12 @@
         "title": "TDDUI Bundle"
       }
     ],
+    "DocumentReference": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference",
+        "title": "TDDUI DocumentReference"
+      }
+    ],
     "Encounter": [
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement",
@@ -215,18 +286,24 @@
         "title": "TDDUI Practitioner Role"
       }
     ],
+    "QuestionnaireResponse": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response",
+        "title": "TDDUI QuestionnaireResponse"
+      }
+    ],
     "Task": [
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport",
-        "title": "Transport"
+        "title": "TDDUI Task Transport"
       },
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel",
-        "title": "Transport Professionnel"
+        "title": "TDDUI Task Transport Professionnel"
       },
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager",
-        "title": "Transport Usager"
+        "title": "TDDUI Task Transport Usager"
       }
     ]
   },
@@ -345,14 +422,19 @@
       "Encounter"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment": [
-      "Encounter"
+      "Encounter",
+      "QuestionnaireResponse"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order": [
       "Patient.birthDate"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment": [
       "Bundle.entry.resource",
-      "Encounter"
+      "Encounter",
+      "QuestionnaireResponse",
+      "QuestionnaireResponse.item",
+      "QuestionnaireResponse.item.item",
+      "QuestionnaireResponse.item.item.item"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-mode-label": [
       "Bundle.entry.resource",
@@ -373,6 +455,10 @@
       "Bundle.entry.resource",
       "Encounter"
     ],
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exercise-mode": [
+      "Bundle.entry.resource",
+      "PractitionerRole"
+    ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exit-mode-label": [
       "Bundle.entry.resource",
       "Encounter"
@@ -389,6 +475,9 @@
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-profession": [
       "Bundle.entry.resource.code",
       "PractitionerRole.code"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant": [
+      "QuestionnaireResponse"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used": [
       "Bundle.entry.resource",

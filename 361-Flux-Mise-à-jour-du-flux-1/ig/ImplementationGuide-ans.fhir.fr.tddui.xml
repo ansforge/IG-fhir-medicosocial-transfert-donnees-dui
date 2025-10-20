@@ -6,11 +6,11 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : ImplementationGuide ans.fhir.fr.tddui</b></p><a name="ans.fhir.fr.tddui"> </a><a name="hcans.fhir.fr.tddui"> </a><h2>TDDUI</h2><p>LURL officielle pour ce guide dimplémentation est : </p><pre>https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui</pre></div>
   </text>
   <url value="https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui"/>
-  <version value="2.0.0-ballot"/>
+  <version value="2.0.0"/>
   <name value="TDDUI"/>
   <title value="Médicosocial - Transfert de données DUI"/>
   <status value="active"/>
-  <date value="2025-10-01T08:29:05+00:00"/>
+  <date value="2025-10-20T13:10:23+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -52,6 +52,11 @@
     <packageId value="hl7.fhir.uv.extensions"/>
     <version value="5.2.0"/>
   </dependsOn>
+  <dependsOn id="ihe_iti_mhd">
+    <uri value="https://profiles.ihe.net/ITI/MHD/ImplementationGuide/ihe.iti.mhd"/>
+    <packageId value="ihe.iti.mhd"/>
+    <version value="4.2.0"/>
+  </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -66,7 +71,7 @@
         <valueString value="releaselabel"/>
       </extension>
       <extension url="value">
-        <valueString value="public-comment"/>
+        <valueString value="trial-implementation"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -277,7 +282,7 @@
         <valueCode value="releaselabel"/>
       </extension>
       <extension url="value">
-        <valueString value="public-comment"/>
+        <valueString value="trial-implementation"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -480,7 +485,7 @@
         <reference value="StructureDefinition/tddui-comment"/>
       </reference>
       <name value="Commentaire"/>
-      <description value="Commentaire relatif au séjour et aux évènements."/>
+      <description value="&#xA;- **Séjour** : commentaire relatif au séjour.&#xA;- **Événement** : commentaires sur le déroulé de l’évènement.&#xA;- **Évaluation** : commentaire libre sur le contenu ou le résultat de l’évaluation.&#xA;- **Champ évalué** : commentaire spécifique à un item ou sous-item évalué."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -554,6 +559,17 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/tddui-exercise-mode"/>
+      </reference>
+      <name value="Mode d'exercice"/>
+      <description value="Extension permettant de représenter le mode d'exercice du professionnel."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/tddui-event-reason"/>
       </reference>
       <name value="Motif de l’évènement"/>
@@ -578,8 +594,8 @@
       <reference>
         <reference value="StructureDefinition/tddui-attachment"/>
       </reference>
-      <name value="Pièce jointe de l’évènement"/>
-      <description value="Pièces jointes liées à l’événement."/>
+      <name value="Pièce jointe"/>
+      <description value="Pièces jointes liées à l’événement et à l'évaluation. L'extension référence le profil PDSm_SimplifiedPublish."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -609,10 +625,21 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/tddui-qr-participant"/>
+      </reference>
+      <name value="Responsable et auteur du statut de l'évaluation"/>
+      <description value="Extension permettant d'ajouter le responsable de l'évaluation et l'auteur du statut de l'évaluation dans un QuestionnaireResponse."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/tddui-ressources-used"/>
       </reference>
       <name value="Ressources utilisées"/>
-      <description value="Ressources utilisées lors de l’évènement."/>
+      <description value="Ressources utilisées lors de l’évènement (ex : chambre, matériel médical, véhicule)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -624,6 +651,17 @@
       </reference>
       <name value="TDDUI Bundle"/>
       <description value="Profil générique créé pour transmettre des données d'un logiciel DUI."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-document-reference"/>
+      </reference>
+      <name value="TDDUI DocumentReference"/>
+      <description value="Profil de la ressource SimplifiedPublishDocumentReference pour les pièces jointes liées à l’événement et à l'évaluation."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -646,6 +684,17 @@
       </reference>
       <name value="TDDUI Encounter FR Core CodeSystem v2-0203"/>
       <description value="TDDUI Encounter's identifier"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/TDDUIEncounterParticipant"/>
+      </reference>
+      <name value="TDDUI Encounter Participant Type"/>
+      <description value="CodeSystem for the participant types in TDDUI Encounter"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -722,7 +771,7 @@
         <reference value="StructureDefinition/tddui-practitioner"/>
       </reference>
       <name value="TDDUI Practitioner"/>
-      <description value="Profil de la ressource FRCorePractitionerProfile permettant de représenter un Profesionnel."/>
+      <description value="Profil de la ressource FRCorePractitionerProfile permettant de représenter un professionnel du médicosocial dans le cadre de TDDUI. Le profil AsPractitionerRoleProfile n'a pas été utilisé car il comportait trop de contraintes non présentes dans les DUI."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -749,6 +798,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-questionnaire-response"/>
+      </reference>
+      <name value="TDDUI QuestionnaireResponse"/>
+      <description value="Profil de la ressource QuestionnaireResponse utilisé pour transmettre les réponses aux questionnaires dans le cadre des évaluations."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -756,6 +816,39 @@
       </reference>
       <name value="TDDUI SERAFIN ValueSet"/>
       <description value="ValueSet contenant les codes SERAFIN (prestations directes et indirectes) pour le profil TDDUI Encounter Evenement."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-task-transport"/>
+      </reference>
+      <name value="TDDUI Task Transport"/>
+      <description value="Profil de la ressource Task permettant de représenter le transport."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-task-transport-professionnel"/>
+      </reference>
+      <name value="TDDUI Task Transport Professionnel"/>
+      <description value="Profil de la ressource TDDUITaskTransport permettant de représenter le transport du professionnel."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-task-transport-usager"/>
+      </reference>
+      <name value="TDDUI Task Transport Usager"/>
+      <description value="Profil de la ressource TDDUITaskTransport permettant de représenter le transport de l'usager."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -870,6 +963,61 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/tddui-questionnaire-response-aggir-pa-example"/>
+      </reference>
+      <name value="tddui-questionnaire-response-aggir-pa-example"/>
+      <description value="Grille de réponse AGGIR PA"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/tddui-questionnaire-response-aggir-ph-example"/>
+      </reference>
+      <name value="tddui-questionnaire-response-aggir-ph-example"/>
+      <description value="Grille de réponse AGGIR PH"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/tddui-questionnaire-response-serafin-precision-example"/>
+      </reference>
+      <name value="tddui-questionnaire-response-serafin-precision-example"/>
+      <description value="Evaluation SERAFIN pour un besoin d'hébergement adapté avec précision"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/tddui-questionnaire-response-serafin-sans-precision-example"/>
+      </reference>
+      <name value="tddui-questionnaire-response-serafin-sans-precision-example"/>
+      <description value="Evaluation SERAFIN pour un besoin d'hébergement adapté sans précision"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/tddui-questionnaire-response-situation-ssiad-example"/>
+      </reference>
+      <name value="tddui-questionnaire-response-situation-ssiad-example"/>
+      <description value="Grille de réponse de la situation SSIAD"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Task"/>
       </extension>
       <reference>
@@ -914,39 +1062,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/tddui-task-transport"/>
-      </reference>
-      <name value="Transport"/>
-      <description value="Profil de la ressource Task permettant de représenter le transport."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/tddui-task-transport-professionnel"/>
-      </reference>
-      <name value="Transport Professionnel"/>
-      <description value="Profil de la ressource TDDUITaskTransport permettant de représenter le transport du professionnel."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/tddui-task-transport-usager"/>
-      </reference>
-      <name value="Transport Usager"/>
-      <description value="Profil de la ressource TDDUITaskTransport permettant de représenter le transport de l'usager."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -954,6 +1069,50 @@
       </reference>
       <name value="Usager présent"/>
       <description value="Evènement nécessitant ou non la présence physique de l’usager."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/tddui-questionnaire-aggir-pa-ssiad"/>
+      </reference>
+      <name value="Évaluation AGGIR PA SSIAD"/>
+      <description value="Grille d'évaluation AGGIR PA SSIAD"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/tddui-questionnaire-aggir-ph-ssiad"/>
+      </reference>
+      <name value="Évaluation AGGIR PH SSIAD"/>
+      <description value="Grille d'évaluation AGGIR PH SSIAD"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/tddui-questionnaire-situation-ssiad"/>
+      </reference>
+      <name value="Évaluation de la situation SSIAD"/>
+      <description value="Grille d'évaluation de la situation SSIAD"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/tddui-questionnaire-serafin"/>
+      </reference>
+      <name value="Évaluation SERAFIN"/>
+      <description value="Grille d'évaluation SERAFIN"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

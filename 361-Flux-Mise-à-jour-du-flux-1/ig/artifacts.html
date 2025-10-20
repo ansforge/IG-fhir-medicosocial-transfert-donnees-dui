@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Artifacts Summary - Médicosocial - Transfert de données DUI v2.0.0-ballot</title>
+    <title>Artifacts Summary - Médicosocial - Transfert de données DUI v2.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -62,7 +62,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Médicosocial - Transfert de données DUI</span>
             <br/>
-            <span style="display:inline-block;">2.0.0-ballot - public-comment
+            <span style="display:inline-block;">2.0.0 - trial-implementation
 
 
 
@@ -204,7 +204,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Médicosocial - Transfert de données DUI - Local Development build (v2.0.0-ballot) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://interop.esante.gouv.fr/ig/fhir/tddui/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Médicosocial - Transfert de données DUI - Local Development build (v2.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://interop.esante.gouv.fr/ig/fhir/tddui/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -219,22 +219,25 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#1">Behavior: Capability Statements</a>
       </li>
       <li>
-         <a href="#2">Structures: Resource Profiles</a>
+         <a href="#2">Structures: Questionnaires</a>
       </li>
       <li>
-         <a href="#3">Structures: Data Type Profiles</a>
+         <a href="#3">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#4">Structures: Extension Definitions</a>
+         <a href="#4">Structures: Data Type Profiles</a>
       </li>
       <li>
-         <a href="#5">Terminology: Value Sets</a>
+         <a href="#5">Structures: Extension Definitions</a>
       </li>
       <li>
-         <a href="#6">Terminology: Code Systems</a>
+         <a href="#6">Terminology: Value Sets</a>
       </li>
       <li>
-         <a href="#7">Example: Example Instances</a>
+         <a href="#7">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#8">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -269,6 +272,50 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </tbody>
    </table>
    <a name="2"> </a>
+   <h3>Structures: Questionnaires </h3>
+    <p>These define forms used by systems conforming to this implementation guide to capture or expose data to end users.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-tddui-questionnaire-aggir-pa-ssiad.html"
+                  title="Questionnaire/tddui-questionnaire-aggir-pa-ssiad">Évaluation AGGIR PA SSIAD</a>
+            </td>
+            <td>
+<p>Grille d'évaluation AGGIR PA SSIAD</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-tddui-questionnaire-aggir-ph-ssiad.html"
+                  title="Questionnaire/tddui-questionnaire-aggir-ph-ssiad">Évaluation AGGIR PH SSIAD</a>
+            </td>
+            <td>
+<p>Grille d'évaluation AGGIR PH SSIAD</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-tddui-questionnaire-serafin.html"
+                  title="Questionnaire/tddui-questionnaire-serafin">Évaluation SERAFIN</a>
+            </td>
+            <td>
+<p>Grille d'évaluation SERAFIN</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-tddui-questionnaire-situation-ssiad.html"
+                  title="Questionnaire/tddui-questionnaire-situation-ssiad">Évaluation de la situation SSIAD</a>
+            </td>
+            <td>
+<p>Grille d'évaluation de la situation SSIAD</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
    <h3>Structures: Resource Profiles </h3>
     <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -281,6 +328,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Profil générique créé pour transmettre des données d'un logiciel DUI.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-document-reference.html"
+                  title="StructureDefinition/tddui-document-reference">TDDUI DocumentReference</a>
+            </td>
+            <td>
+<p>Profil de la ressource SimplifiedPublishDocumentReference pour les pièces jointes liées à l’événement et à l'évaluation.</p>
 </td>
          </tr>
          <tr>
@@ -334,7 +390,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/tddui-practitioner">TDDUI Practitioner</a>
             </td>
             <td>
-<p>Profil de la ressource FRCorePractitionerProfile permettant de représenter un Profesionnel.</p>
+<p>Profil de la ressource FRCorePractitionerProfile permettant de représenter un professionnel du médicosocial dans le cadre de TDDUI. Le profil AsPractitionerRoleProfile n'a pas été utilisé car il comportait trop de contraintes non présentes dans les DUI.</p>
 </td>
          </tr>
          <tr>
@@ -348,8 +404,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-questionnaire-response.html"
+                  title="StructureDefinition/tddui-questionnaire-response">TDDUI QuestionnaireResponse</a>
+            </td>
+            <td>
+<p>Profil de la ressource QuestionnaireResponse utilisé pour transmettre les réponses aux questionnaires dans le cadre des évaluations.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-tddui-task-transport.html"
-                  title="StructureDefinition/tddui-task-transport">Transport</a>
+                  title="StructureDefinition/tddui-task-transport">TDDUI Task Transport</a>
             </td>
             <td>
 <p>Profil de la ressource Task permettant de représenter le transport.</p>
@@ -358,7 +423,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-tddui-task-transport-professionnel.html"
-                  title="StructureDefinition/tddui-task-transport-professionnel">Transport Professionnel</a>
+                  title="StructureDefinition/tddui-task-transport-professionnel">TDDUI Task Transport Professionnel</a>
             </td>
             <td>
 <p>Profil de la ressource TDDUITaskTransport permettant de représenter le transport du professionnel.</p>
@@ -367,7 +432,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-tddui-task-transport-usager.html"
-                  title="StructureDefinition/tddui-task-transport-usager">Transport Usager</a>
+                  title="StructureDefinition/tddui-task-transport-usager">TDDUI Task Transport Usager</a>
             </td>
             <td>
 <p>Profil de la ressource TDDUITaskTransport permettant de représenter le transport de l'usager.</p>
@@ -375,7 +440,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="3"> </a>
+   <a name="4"> </a>
    <h3>Structures: Data Type Profiles </h3>
     <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -399,7 +464,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="4"> </a>
+   <a name="5"> </a>
    <h3>Structures: Extension Definitions </h3>
     <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -411,7 +476,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/tddui-comment">Commentaire</a>
             </td>
             <td>
-<p>Commentaire relatif au séjour et aux évènements.</p>
+
+<ul>
+  <li><strong>Séjour</strong> : commentaire relatif au séjour.</li>
+  <li><strong>Événement</strong> : commentaires sur le déroulé de l’évènement.</li>
+  <li><strong>Évaluation</strong> : commentaire libre sur le contenu ou le résultat de l’évaluation.</li>
+  <li><strong>Champ évalué</strong> : commentaire spécifique à un item ou sous-item évalué.</li>
+</ul>
 </td>
          </tr>
          <tr>
@@ -461,6 +532,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-exercise-mode.html"
+                  title="StructureDefinition/tddui-exercise-mode">Mode d'exercice</a>
+            </td>
+            <td>
+<p>Extension permettant de représenter le mode d'exercice du professionnel.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-tddui-event-reason.html"
                   title="StructureDefinition/tddui-event-reason">Motif de l’évènement</a>
             </td>
@@ -480,10 +560,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-tddui-attachment.html"
-                  title="StructureDefinition/tddui-attachment">Pièce jointe de l’évènement</a>
+                  title="StructureDefinition/tddui-attachment">Pièce jointe</a>
             </td>
             <td>
-<p>Pièces jointes liées à l’événement.</p>
+<p>Pièces jointes liées à l’événement et à l'évaluation. L'extension référence le profil PDSm_SimplifiedPublish.</p>
 </td>
          </tr>
          <tr>
@@ -506,11 +586,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-qr-participant.html"
+                  title="StructureDefinition/tddui-qr-participant">Responsable et auteur du statut de l'évaluation</a>
+            </td>
+            <td>
+<p>Extension permettant d'ajouter le responsable de l'évaluation et l'auteur du statut de l'évaluation dans un QuestionnaireResponse.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-tddui-ressources-used.html"
                   title="StructureDefinition/tddui-ressources-used">Ressources utilisées</a>
             </td>
             <td>
-<p>Ressources utilisées lors de l’évènement.</p>
+<p>Ressources utilisées lors de l’évènement (ex : chambre, matériel médical, véhicule).</p>
 </td>
          </tr>
          <tr>
@@ -542,7 +631,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="5"> </a>
+   <a name="6"> </a>
    <h3>Terminology: Value Sets </h3>
     <p>These define sets of codes used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -559,7 +648,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="6"> </a>
+   <a name="7"> </a>
    <h3>Terminology: Code Systems </h3>
     <p>These define new code systems used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -585,6 +674,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="CodeSystem-TDDUIEncounterParticipant.html"
+                  title="CodeSystem/TDDUIEncounterParticipant">TDDUI Encounter Participant Type</a>
+            </td>
+            <td>
+<p>CodeSystem for the participant types in TDDUI Encounter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="CodeSystem-tddui-identifier.html"
                   title="CodeSystem/tddui-identifier">TDDUI FR Core CodeSystem v2-0203</a>
             </td>
@@ -594,7 +692,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="7"> </a>
+   <a name="8"> </a>
    <h3>Example: Example Instances </h3>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
 <table class="grid">
@@ -682,6 +780,51 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="QuestionnaireResponse-tddui-questionnaire-response-aggir-pa-example.html"
+                  title="QuestionnaireResponse/tddui-questionnaire-response-aggir-pa-example">tddui-questionnaire-response-aggir-pa-example</a>
+            </td>
+            <td>
+<p>Grille de réponse AGGIR PA</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-tddui-questionnaire-response-aggir-ph-example.html"
+                  title="QuestionnaireResponse/tddui-questionnaire-response-aggir-ph-example">tddui-questionnaire-response-aggir-ph-example</a>
+            </td>
+            <td>
+<p>Grille de réponse AGGIR PH</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-tddui-questionnaire-response-serafin-precision-example.html"
+                  title="QuestionnaireResponse/tddui-questionnaire-response-serafin-precision-example">tddui-questionnaire-response-serafin-precision-example</a>
+            </td>
+            <td>
+<p>Evaluation SERAFIN pour un besoin d'hébergement adapté avec précision</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-tddui-questionnaire-response-serafin-sans-precision-example.html"
+                  title="QuestionnaireResponse/tddui-questionnaire-response-serafin-sans-precision-example">tddui-questionnaire-response-serafin-sans-precision-example</a>
+            </td>
+            <td>
+<p>Evaluation SERAFIN pour un besoin d'hébergement adapté sans précision</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-tddui-questionnaire-response-situation-ssiad-example.html"
+                  title="QuestionnaireResponse/tddui-questionnaire-response-situation-ssiad-example">tddui-questionnaire-response-situation-ssiad-example</a>
+            </td>
+            <td>
+<p>Grille de réponse de la situation SSIAD</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="Task-tddui-task-transport-example.html"
                   title="Task/tddui-task-transport-example">tddui-task-transport-example</a>
             </td>
@@ -749,7 +892,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Oct 1, 2025 08:30+0000">2025-10-01</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Oct 20, 2025 13:11+0000">2025-10-20</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
