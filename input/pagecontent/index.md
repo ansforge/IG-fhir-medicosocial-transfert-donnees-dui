@@ -74,19 +74,59 @@ Les spécifications d'interopérabilité présentées dans ce volet ne présagen
 
 Les données véhiculées dans ce volet ainsi que les interactions entre les systèmes reposent sur le standard HL7 FHIR Release 4.
 
-Les interactions font référence à un certain nombre de ressources du standard ainsi qu’aux spécifications de l’API REST FHIR, basées sur le protocole HTTP. Les syntaxes retenues sont la syntaxe XML et JSON.
-
+Les interactions font référence à un certain nombre de ressources du standard ainsi qu’aux spécifications de l’API REST FHIR, basées sur le protocole HTTP dans sa version sécurisée HTTPS. Les syntaxes retenues sont la syntaxe XML et JSON.
 #### Ressources FHIR profilées
 
 Les ressources profilées dans le cadre de ce guide d'implémentation sont les suivantes : 
 
-| Ressource | Profil | Description |
-| ----- | ----- | ----- |
-| <a href="https://hl7.org/fhir/R4/bundle.html">Bundle</a> | [TDDUIBundle](StructureDefinition-tddui-bundle.html) | Profil générique créé pour transmettre des données d'un logiciel DUI |
-| <a href="https://hl7.org/fhir/R4/encounter.html">Encounter</a> | [TDDUIEncounter](StructureDefinition-tddui-encounter-sejour.html) | Profil de la ressource Encounter permettant de regrouper les informations relatives au séjour d'un usager dans une structure ESSMS |
-| <a href="https://hl7.org/fhir/R4/organization.html">Organization</a> | [TDDUIOrganization](StructureDefinition-tddui-organization.html) | Profil de la ressource FRCoreOrganizationProfile permettant de représenter les entités juridiques. |
-| <a href="https://hl7.org/fhir/R4/Patient.html">Patient</a> | [TDDUIPatient](StructureDefinition-tddui-patient.html) | Profil de la ressource FrCorePatientProfile permettant de représenter un usager lorsque l'INS n'est pas transmis. |
-| <a href="https://hl7.org/fhir/R4/Patient.html">Patient</a> | [TDDUIPatientINS](StructureDefinition-tddui-patient-ins.html) | Profil de la ressource FRCorePatientINSProfile permettant de représenter un usager lorsque l'INS est transmis. |
+{% sql {
+  "query" : "
+    SELECT 
+      json_extract(Json, '$.baseDefinition') as Parent, 
+      Name, 
+      Description, 
+      Web
+    FROM Resources
+    WHERE Type = 'StructureDefinition'
+      AND Id LIKE 'tddui%'
+      AND json_extract(Json, '$.kind') = 'resource'
+    ORDER BY Name
+  ",
+  "class" : "lines",
+  "columns" : [
+    { "title" : "Profil parent", "source" : "Parent" },
+    { "title" : "Profil", "type" : "link", "source" : "Name", "target" : "Web" },
+    { "title" : "Description", "type" : "markdown", "source" : "Description" }
+  ]
+} %}
+
+#### Instances de Questionnaire
+
+{% sql {
+  "query" : "
+    SELECT 
+      Id,
+      Description,
+      Web
+    FROM Resources
+    WHERE Type = 'Questionnaire'
+    ORDER BY Id
+  ",
+  "class" : "lines",
+  "columns" : [
+    {
+      "title" : "Questionnaire",
+      "type" : "link",
+      "source" : "Id",
+      "target" : "Web"
+    },
+    {
+      "title" : "Description",
+      "type" : "markdown",
+      "source" : "Description"
+    }
+  ]
+} %}
 
 ### Flux
 
@@ -96,6 +136,7 @@ Les flux décrits dans ce guide d'implémentation sont les suivants.
 | ----- | ----- | ----- |
 | <a href="description_flux_1_transmission_donnees_dui.html">Flux 1 : Transmission de données DUI</a> | Logiciel DUI | SI tiers |
 
+Les flux présentés dans cette spécification doivent utiliser HTTPS.
 Pour en savoir davantage, rendez-vous sur la page <a href="description_flux_synthese.html">Synthèse des flux</a>.
 
 ### Dépendances

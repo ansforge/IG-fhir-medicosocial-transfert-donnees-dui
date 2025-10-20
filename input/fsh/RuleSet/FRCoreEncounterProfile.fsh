@@ -2,13 +2,6 @@ RuleSet: FRCoreEncounterProfile
 
 // FSH de FRCoreEncounterProfile 2.1.0 excepté le type (0..1) et partOf car bloquant pour TDDUIEncounterEvenement
 
-* meta.profile ^slicing.discriminator.type = #value
-* meta.profile ^slicing.discriminator.path = "$this"
-* meta.profile ^slicing.rules = #open
-* meta.profile ^slicing.description = "Slice based on the canonical url value"
-* meta.profile contains fr-canonical 0..1
-* meta.profile[fr-canonical] = Canonical(fr-core-encounter)
-
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
@@ -42,7 +35,7 @@ RuleSet: FRCoreEncounterProfile
 * type from FRCoreValueSetEncounterType (example)
 * type ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * type ^binding.extension[=].valueString = "EncounterType"
-* subject only Reference(FRCorePatientProfile)
+* subject only Reference(FRCorePatientProfile or Group)
 * participant ^short = "List of participants involved in the encounter | Liste des personnes impliquées dans la rencontre"
 * participant.individual only Reference(RelatedPerson or FRCorePractitionerProfile or PractitionerRole)
 * appointment only Reference(FRCoreAppointmentProfile)

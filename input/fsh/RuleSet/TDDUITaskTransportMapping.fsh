@@ -11,5 +11,5 @@ RuleSet: TDDUITaskTransportMapping
 * input[adresseDestination] -> "adresseDestination"
 * input[budgetPrevisionnel] -> "budgetPrevisionnel"
 * input[budgetReel] -> "budgetReel"
-* input[distance] -> "distanceTrajet"
-* input[dureeTheorique] -> "dureeTheoriqueTrajet"
+* input[distance] -> "distance"
+* input[dureeTheorique] -> "dureeTheorique"

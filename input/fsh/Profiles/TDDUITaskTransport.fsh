@@ -1,7 +1,7 @@
 Profile: TDDUITaskTransport
 Parent: Task
 Id: tddui-task-transport
-Title: "Transport"
+Title: "TDDUI Task Transport"
 Description: "Profil de la ressource Task permettant de représenter le transport."
 
 * ^purpose = """
@@ -80,7 +80,7 @@ Mapping:  ConceptMetier_TDDUITaskTransport
 Source:   TDDUITaskTransport
 Target: "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"
 Id:       specmetier-to-TDDUITaskTransport
-Title:    "Transport"
+Title:    "Modèle de contenu DUI"
 * -> "Transport"
 
 * insert TDDUITaskTransportMapping

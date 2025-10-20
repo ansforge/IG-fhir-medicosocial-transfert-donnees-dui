@@ -4,4 +4,4 @@ Title: "Évènement annulé"
 Description: "Motif associé au statut de non-réalisation de l’évènement."
 
 * value[x] only CodeableConcept
-* valueCodeableConcept.coding from $JDV-MotifNonRealisationEvenement-CISIS
+* valueCodeableConcept from $JDV-MotifNonRealisationEvenement-CISIS

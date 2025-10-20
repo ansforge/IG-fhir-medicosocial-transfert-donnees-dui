@@ -8,11 +8,17 @@ object "**TDDUIOrganization**" as TDDUIOrganization #bebada {
     etablissementDeRattachement
 }
 
+object "**TDDUIPractitioner**" as TDDUIPractitioner #d9d9d9 {
+    Professionnel
+}
+
 map "**Professionnel : TDDUIPractitionerRole**" as Professionnel #b3de69 {
     rôle => code
+    ModeExercice => <&plus> TDDUIExerciseMode
 }
 
 Professionnel::rle -u-> rôle
 Professionnel -d-> TDDUIOrganization : organization
+Professionnel -l-> TDDUIPractitioner : practitioner
 
 @enduml

@@ -9,7 +9,10 @@ Description: "Profil de la ressource FRCorePractitionerRole permettant de repré
 * code.coding from $JDV-J47-FunctionCode-CISIS
 
 * code.extension contains 
-    TDDUIProfession named tddui-profession 0..1
+    TDDUIProfession named TDDUIProfession 0..1
+
+* extension contains
+    TDDUIExerciseMode named TDDUIProfession 0..1
 
 // Etablissement de rattachement 
 * organization only Reference(TDDUIOrganization)
@@ -21,9 +24,10 @@ Mapping:  ConceptMetier_TDDUIPractitionerRole
 Source:   TDDUIPractitionerRole
 Target: "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"
 Id:       specmetier-to-TDDUIPractitionerRole
-Title:    "Professionnel"
+Title:    "Modèle de contenu DUI"
 * -> "Professionnel"
 
 * code -> "rôle"
 * code.extension[TDDUIProfession] -> "profession"
 * organization -> "etablissementDeRattachement"
+* extension[TDDUIExerciseMode] -> "modeExercice"

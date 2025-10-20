@@ -4,12 +4,22 @@ Id: tddui-encounter-evenement
 Title: "TDDUI Encounter Evenement"
 Description: "Profil de la ressource Encounter permettant de regrouper les évènements liés à la prise en charge de l’usager dans une structure ESSMS."
 
+* ^purpose = """
+    > **Note** : Le profil TDDUIEncounterEvenement n'hérite pas du profil FRCoreEncounterProfile à cause de l'interdiction de véhiculer plusieurs types d'évènements. Cependant, le profil TDDUIEncounterEvenement suit les contraintes du profil FRCoreEncounterProfile excepté la contrainte sur la cardinalité de l'élément type (0..1).
+  """
+
 * insert FRCoreEncounterProfile
 
 * identifier 1..1
+* identifier ^short = "Identifiant de l'évènement"
+* identifier.value ^example[0].label = "L'identifiant de l'évènement : 3+FINESS/identifiantLocalUsagerESSMS-EVAL-numEvenement."
+* identifier.value ^example[0].valueIdentifier.value = "3480787529/147720425367411-EVAL-21564655"
+
+
+* status ^short = "Correspondance des statuts métier avec les codes FHIR : Planifié → planned, Validé → triaged, Réalisé → finished, Annulé → cancelled."
 
 * status.extension contains 
-    TDDUIEventCancelReason named tddui-event-cancel-reason 0..1
+    TDDUIEventCancelReason named TDDUIEventCancelReason 0..1
 
 // Types d'évènement
 * type ^slicing.discriminator.type = #pattern
@@ -21,15 +31,19 @@ Description: "Profil de la ressource Encounter permettant de regrouper les évè
     serafin 0..* and
     text 0..*
 
+* type[ssiad].coding 1..1
+* type[ssiad].coding.code 1..1
 * type[ssiad].coding.code from $JDV-TypeEvenement-SSIAD-CISIS
 * type[ssiad].coding.system 1..1
 * type[ssiad].coding.system = "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis"
-* type[ssiad] ^short = "Codes SSIAD"
+* type[ssiad] ^short = "Type d'évènement SSIAD."
 
+* type[serafin].coding 1..1
+* type[serafin].coding.code 1..1
 * type[serafin].coding.code from TDDUISerafinValueSet
 * type[serafin].coding.system 1..1
 * type[serafin].coding.system = "https://smt.esante.gouv.fr/terminologie-SERAFINPH"
-* type[serafin] ^short = "Codes SERAFIN - Prestations directes et indirectes."
+* type[serafin] ^short = "Type d'évènement Serafin correspondant aux familles 2-PrestationDirecte et 3-PrestationIndirecte."
 
 * type[text].coding.code 0..1
 * type[text].coding.code = #not-permitted
@@ -41,12 +55,26 @@ Description: "Profil de la ressource Encounter permettant de regrouper les évè
 
 // Usager
 * subject 1..1
-* subject only Reference(TDDUIPatient or TDDUIPatientINS)
+* subject only Reference(TDDUIPatient or TDDUIPatientINS or Group)
 
 // ESSMS
 * serviceProvider only Reference(TDDUIOrganization)
 
-// Professionnel
+* participant ^slicing.discriminator.type = #pattern
+* participant ^slicing.discriminator.path = "type"
+* participant ^slicing.rules = #open
+
+* participant contains
+    auteurStatut 0..1 and
+    professionnel 0..1
+
+* participant[auteurStatut].type 1..1
+* participant[auteurStatut].type = TDDUIEncounterParticipant#AUT "Auteur du statut de la ressource"
+* participant[auteurStatut] ^short = "Professionnel ayant effectué la dernière modification du statut associé à la ressource."
+
+* participant[professionnel].type 1..1
+* participant[professionnel].type = http://terminology.hl7.org/CodeSystem/v3-ParticipationType#PART
+
 * participant.individual only Reference(TDDUIPractitioner or TDDUIPractitionerRole or RelatedPerson)
 
 * location 0..1
@@ -63,6 +91,8 @@ Description: "Profil de la ressource Encounter permettant de regrouper les évè
     TDDUIMeal named TDDUIMeal 0..1
 
 * extension[TDDUIRessourcesUsed] ^short = "Ressources utilisées lors de l’évènement."
+* obeys MatDetailOnlyIfTypeOrg206
+* obeys FacilityOnlyIfTypeOrg207
 * extension[TDDUIEventLabel] ^short = "Titre donné à l’évènement par la structure."
 * extension[TDDUIComment] ^short = "Commentaires sur le déroulé de l'évènement."
 * extension[TDDUIEventReport] ^short = "Zone de texte liée à l’événement pour compte rendu des actions réalisées."
@@ -80,14 +110,14 @@ Mapping:  ConceptMetier_TDDUIEncounterEvenement
 Source:   TDDUIEncounterEvenement
 Target: "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"
 Id:       specmetier-to-TDDUIEncounterEvenement
-Title:    "Évènement"
+Title:    "Modèle de contenu DUI"
 * -> "Événement"
 
 * identifier -> "idEvenement"
 * type -> "typeEvenement"
 * subject -> "Usager"
 * serviceProvider -> "structureEnCharge"
-* participant.individual -> "Professionnel"
+* participant[professionnel] -> "Professionnel"
 * location -> "lieuEvenement"
 * extension[TDDUIRessourcesUsed] -> "RessourceUtilisee"
 * extension[TDDUIRessourcesUsed].extension[TDDUIRessourceType] -> "typeRessourceUtilisee"
@@ -104,7 +134,21 @@ Title:    "Évènement"
 * partOf -> "sejour"
 * period.start -> "dateDebutEvenement"
 * period.end -> "dateFinEvenement"
-* meta.lastUpdated -> "dateModificationEvenement"
+* meta.lastUpdated -> "dateModificationEvenement, Statut.dateStatut"
 * status -> "Statut.statut"
-* participant.type -> "statut.auteur"
-* status.extension[tddui-event-cancel-reason] -> "statut.motifNonRealisation"
+* participant[auteurStatut] -> "Statut.auteur"
+* status.extension[tddui-event-cancel-reason] -> "Statut.motifNonRealisation"
+
+Invariant: MatDetailOnlyIfTypeOrg206
+Description: "Le slice TDDUIMaterialDetail est utilisé uniquement lorsque le slice TDDUIRessourceType prend la valeur ORG-206."
+Severity: #error
+Expression: "(Encounter.extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used').extension.where(url='TDDUIMaterialDetail').exists())
+    implies(Encounter.extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used').extension.where(url='TDDUIRessourceType').exists()
+    and(Encounter.extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used').extension.where(url='TDDUIRessourceType').value.coding.code='ORG-206'))"
+
+Invariant: FacilityOnlyIfTypeOrg207
+Description: "Le slice TDDUIFacilityResource est utilisé uniquement lorsque le slice TDDUIRessourceType prend la valeur ORG-207."
+Severity: #error
+Expression: "(Encounter.extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used').extension.where(url='TDDUIFacilityResource').exists())
+    implies(Encounter.extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used').extension.where(url='TDDUIRessourceType').exists()
+    and(Encounter.extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used').extension.where(url='TDDUIRessourceType').value.coding.code='ORG-207'))"
