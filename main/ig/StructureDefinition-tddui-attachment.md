@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-attachment.csv
   "name" : "TDDUIAttachment",
   "title" : "Pièce jointe",
   "status" : "active",
-  "date" : "2025-10-20T09:49:22+00:00",
+  "date" : "2025-10-20T13:54:58+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
