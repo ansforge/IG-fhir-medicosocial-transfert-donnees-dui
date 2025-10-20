@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui | *Version*:2.0.0 |
-| Active as of 2025-10-16 | *Computable Name*:TDDUI |
+| Active as of 2025-10-20 | *Computable Name*:TDDUI |
 
  **Brief description of this Implementation Guide**
  The Digital User File (DUI) centralizes all information concerning the person being cared for in social and medico-social facilities and services. The aim of this implementation guide is to define the specifications for DUI data transfer. 
@@ -68,17 +68,30 @@ Les ressources profilées dans le cadre de ce guide d'implémentation sont les s
 
 | | | |
 | :--- | :--- | :--- |
-| [Bundle](https://hl7.org/fhir/R4/bundle.html) | [TDDUIBundle](StructureDefinition-tddui-bundle.md) | Profil générique créé pour transmettre des données d'un logiciel DUI |
-| [Encounter](https://hl7.org/fhir/R4/encounter.html) | [TDDUIEncounterEvenement](StructureDefinition-tddui-encounter-evenement.md) | Profil de la ressource Encounter permettant de regrouper les informations relatives au séjour d'un usager dans une structure ESSMS |
-| [Encounter](https://hl7.org/fhir/R4/encounter.html) | [TDDUIEncounterSejour](StructureDefinition-tddui-encounter-sejour.md) | Profil de la ressource Encounter permettant de regrouper les informations relatives au séjour d'un usager dans une structure ESSMS |
-| [Organization](https://hl7.org/fhir/R4/organization.html) | [TDDUIOrganization](StructureDefinition-tddui-organization.md) | Profil de la ressource FRCoreOrganizationProfile permettant de représenter les entités juridiques. |
-| [Patient](https://hl7.org/fhir/R4/Patient.html) | [TDDUIPatient](StructureDefinition-tddui-patient.md) | Profil de la ressource FrCorePatientProfile permettant de représenter un usager lorsque l'INS n'est pas transmis. |
-| [Patient](https://hl7.org/fhir/R4/Patient.html) | [TDDUIPatientINS](StructureDefinition-tddui-patient-ins.md) | Profil de la ressource FRCorePatientINSProfile permettant de représenter un usager lorsque l'INS est transmis. |
-| [Practitioner](https://hl7.org/fhir/R4/Practitioner.html) | [TDDUIPractitioner](StructureDefinition-tddui-practitioner.md) | Profil de la ressource FRCorePractitionerProfile permettant de représenter un Profesionnel. |
-| [PractitionerRole](https://hl7.org/fhir/R4/PractitionerRole.html) | [TDDUIPractitionerRole](StructureDefinition-tddui-practitioner-role.md) | Profil de la ressource FRCorePractitionerRole permettant de représenter un Professionnel. |
-| [Task](https://hl7.org/fhir/R4/Task.html) | [TDDUITaskTransport](StructureDefinition-tddui-task-transport.md) | Profil de la ressource Task permettant de représenter le transport. |
-| [Task](https://hl7.org/fhir/R4/Task.html) | [TDDUITaskTransportProfessionnel](StructureDefinition-tddui-task-transport-professionnel.md) | Profil de la ressource TDDUITaskTransport permettant de représenter le transport du professionnel. |
-| [Task](https://hl7.org/fhir/R4/Task.html) | [TDDUITaskTransportUsager](StructureDefinition-tddui-task-transport-usager.md) | Profil de la ressource TDDUITaskTransport permettant de représenter le transport de l'usager. |
+| Profil parent | Profil | Description |
+| [Bundle](http://hl7.org/fhir/StructureDefinition/Bundle) | [TDDUIBundle](StructureDefinition-tddui-bundle.md) | Profil générique créé pour transmettre des données d'un logiciel DUI. |
+| [MHD DocumentReference for Simplified Publish](https://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.SimplifiedPublish.DocumentReference) | [TDDUIDocumentReference](StructureDefinition-tddui-document-reference.md) | Profil de la ressource SimplifiedPublishDocumentReference pour les pièces jointes liées à l’événement et à l'évaluation. |
+| [Encounter](http://hl7.org/fhir/StructureDefinition/Encounter) | [TDDUIEncounterEvenement](StructureDefinition-tddui-encounter-evenement.md) | Profil de la ressource Encounter permettant de regrouper les évènements liés à la prise en charge de l’usager dans une structure ESSMS. |
+| [Encounter](http://hl7.org/fhir/StructureDefinition/Encounter) | [TDDUIEncounterSejour](StructureDefinition-tddui-encounter-sejour.md) | Profil de la ressource Encounter permettant de regrouper les informations relatives au séjour d'un usager dans une structure ESSMS |
+| [FR Core Organization Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization) | [TDDUIOrganization](StructureDefinition-tddui-organization.md) | Profil de la ressource FRCoreOrganizationProfile permettant de représenter les entités juridiques. |
+| [FR Core Patient Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient) | [TDDUIPatient](StructureDefinition-tddui-patient.md) | Profil de la ressource FrCorePatientProfile permettant de représenter un usager lorsque l'INS n'est pas transmis. |
+| [FR Core Patient INS Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins) | [TDDUIPatientINS](StructureDefinition-tddui-patient-ins.md) | Profil de la ressource FRCorePatientINSProfile permettant de représenter un usager lorsque l'INS est transmis. |
+| [FR Core Practitioner Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner) | [TDDUIPractitioner](StructureDefinition-tddui-practitioner.md) | Profil de la ressource FRCorePractitionerProfile permettant de représenter un professionnel du médicosocial dans le cadre de TDDUI. Le profil AsPractitionerRoleProfile n'a pas été utilisé car il comportait trop de contraintes non présentes dans les DUI. |
+| [FR Core Practitioner Role](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role) | [TDDUIPractitionerRole](StructureDefinition-tddui-practitioner-role.md) | Profil de la ressource FRCorePractitionerRole permettant de représenter un Professionnel. |
+| [QuestionnaireResponse](http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse) | [TDDUIQuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md) | Profil de la ressource QuestionnaireResponse utilisé pour transmettre les réponses aux questionnaires dans le cadre des évaluations. |
+| [Task](http://hl7.org/fhir/StructureDefinition/Task) | [TDDUITaskTransport](StructureDefinition-tddui-task-transport.md) | Profil de la ressource Task permettant de représenter le transport. |
+| [TDDUI Task Transport](https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport) | [TDDUITaskTransportProfessionnel](StructureDefinition-tddui-task-transport-professionnel.md) | Profil de la ressource TDDUITaskTransport permettant de représenter le transport du professionnel. |
+| [TDDUI Task Transport](https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport) | [TDDUITaskTransportUsager](StructureDefinition-tddui-task-transport-usager.md) | Profil de la ressource TDDUITaskTransport permettant de représenter le transport de l'usager. |
+
+#### Instances de Questionnaire
+
+| | |
+| :--- | :--- |
+| Questionnaire | Description |
+| [tddui-questionnaire-aggir-pa-ssiad](Questionnaire-tddui-questionnaire-aggir-pa-ssiad.md) | Grille d'évaluation AGGIR PA SSIAD |
+| [tddui-questionnaire-aggir-ph-ssiad](Questionnaire-tddui-questionnaire-aggir-ph-ssiad.md) | Grille d'évaluation AGGIR PH SSIAD |
+| [tddui-questionnaire-serafin](Questionnaire-tddui-questionnaire-serafin.md) | Grille d'évaluation SERAFIN |
+| [tddui-questionnaire-situation-ssiad](Questionnaire-tddui-questionnaire-situation-ssiad.md) | Grille d'évaluation de la situation SSIAD |
 
 ### Flux
 
@@ -115,7 +128,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2025-10-16T12:41:56+00:00",
+  "date" : "2025-10-20T09:49:22+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -1026,20 +1039,6 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/tddui-profession"
-        },
-        "name" : "Profession",
-        "description" : "Extension permettant de représenter la profession du professionnel.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:extension"
-          }
-        ],
-        "reference" : {
           "reference" : "StructureDefinition/tddui-event-report"
         },
         "name" : "Rapport de l’évènement",
@@ -1068,10 +1067,24 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           }
         ],
         "reference" : {
+          "reference" : "StructureDefinition/tddui-qr-participant"
+        },
+        "name" : "Responsable et auteur du statut de l'évaluation",
+        "description" : "Extension permettant d'ajouter le responsable de l'évaluation et l'auteur du statut de l'évaluation dans un QuestionnaireResponse.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
           "reference" : "StructureDefinition/tddui-ressources-used"
         },
         "name" : "Ressources utilisées",
-        "description" : "Ressources utilisées lors de l’évènement.",
+        "description" : "Ressources utilisées lors de l’évènement (ex : chambre, matériel médical, véhicule).",
         "exampleBoolean" : false
       },
       {
@@ -1239,7 +1252,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           "reference" : "StructureDefinition/tddui-practitioner"
         },
         "name" : "TDDUI Practitioner",
-        "description" : "Profil de la ressource FRCorePractitionerProfile permettant de représenter un Profesionnel.",
+        "description" : "Profil de la ressource FRCorePractitionerProfile permettant de représenter un professionnel du médicosocial dans le cadre de TDDUI. Le profil AsPractitionerRoleProfile n'a pas été utilisé car il comportait trop de contraintes non présentes dans les DUI.",
         "exampleBoolean" : false
       },
       {
@@ -1254,6 +1267,34 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "TDDUI Practitioner Role",
         "description" : "Profil de la ressource FRCorePractitionerRole permettant de représenter un Professionnel.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/tddui-profession"
+        },
+        "name" : "TDDUI Profession",
+        "description" : "Extension permettant de représenter la profession du professionnel.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/tddui-questionnaire-response"
+        },
+        "name" : "TDDUI QuestionnaireResponse",
+        "description" : "Profil de la ressource QuestionnaireResponse utilisé pour transmettre les réponses aux questionnaires dans le cadre des évaluations.",
         "exampleBoolean" : false
       },
       {
@@ -1456,6 +1497,76 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "QuestionnaireResponse"
+          }
+        ],
+        "reference" : {
+          "reference" : "QuestionnaireResponse/tddui-questionnaire-response-aggir-pa-example"
+        },
+        "name" : "tddui-questionnaire-response-aggir-pa-example",
+        "description" : "Grille de réponse AGGIR PA",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "QuestionnaireResponse"
+          }
+        ],
+        "reference" : {
+          "reference" : "QuestionnaireResponse/tddui-questionnaire-response-aggir-ph-example"
+        },
+        "name" : "tddui-questionnaire-response-aggir-ph-example",
+        "description" : "Grille de réponse AGGIR PH",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "QuestionnaireResponse"
+          }
+        ],
+        "reference" : {
+          "reference" : "QuestionnaireResponse/tddui-questionnaire-response-serafin-precision-example"
+        },
+        "name" : "tddui-questionnaire-response-serafin-precision-example",
+        "description" : "Evaluation SERAFIN pour un besoin d'hébergement adapté avec précision",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "QuestionnaireResponse"
+          }
+        ],
+        "reference" : {
+          "reference" : "QuestionnaireResponse/tddui-questionnaire-response-serafin-sans-precision-example"
+        },
+        "name" : "tddui-questionnaire-response-serafin-sans-precision-example",
+        "description" : "Evaluation SERAFIN pour un besoin d'hébergement adapté sans précision",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "QuestionnaireResponse"
+          }
+        ],
+        "reference" : {
+          "reference" : "QuestionnaireResponse/tddui-questionnaire-response-situation-ssiad-example"
+        },
+        "name" : "tddui-questionnaire-response-situation-ssiad-example",
+        "description" : "Grille de réponse de la situation SSIAD",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "Task"
           }
         ],
@@ -1520,6 +1631,62 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "Usager présent",
         "description" : "Evènement nécessitant ou non la présence physique de l’usager.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Questionnaire"
+          }
+        ],
+        "reference" : {
+          "reference" : "Questionnaire/tddui-questionnaire-aggir-pa-ssiad"
+        },
+        "name" : "Évaluation AGGIR PA SSIAD",
+        "description" : "Grille d'évaluation AGGIR PA SSIAD",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Questionnaire"
+          }
+        ],
+        "reference" : {
+          "reference" : "Questionnaire/tddui-questionnaire-aggir-ph-ssiad"
+        },
+        "name" : "Évaluation AGGIR PH SSIAD",
+        "description" : "Grille d'évaluation AGGIR PH SSIAD",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Questionnaire"
+          }
+        ],
+        "reference" : {
+          "reference" : "Questionnaire/tddui-questionnaire-situation-ssiad"
+        },
+        "name" : "Évaluation de la situation SSIAD",
+        "description" : "Grille d'évaluation de la situation SSIAD",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Questionnaire"
+          }
+        ],
+        "reference" : {
+          "reference" : "Questionnaire/tddui-questionnaire-serafin"
+        },
+        "name" : "Évaluation SERAFIN",
+        "description" : "Grille d'évaluation SERAFIN",
         "exampleBoolean" : false
       },
       {

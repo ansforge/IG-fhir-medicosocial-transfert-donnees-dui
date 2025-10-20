@@ -9,9 +9,9 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used | *Version*:2.0.0 |
-| Active as of 2025-10-16 | *Computable Name*:TDDUIRessourcesUsed |
+| Active as of 2025-10-20 | *Computable Name*:TDDUIRessourcesUsed |
 
-Ressources utilisées lors de l’évènement.
+Ressources utilisées lors de l’évènement (ex : chambre, matériel médical, véhicule).
 
 **Context of Use**
 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-ressources-use
   "name" : "TDDUIRessourcesUsed",
   "title" : "Ressources utilisées",
   "status" : "active",
-  "date" : "2025-10-16T12:41:56+00:00",
+  "date" : "2025-10-20T09:49:22+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -62,7 +62,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-ressources-use
       ]
     }
   ],
-  "description" : "Ressources utilisées lors de l’évènement.",
+  "description" : "Ressources utilisées lors de l’évènement (ex : chambre, matériel médical, véhicule).",
   "jurisdiction" : [
     {
       "coding" : [
@@ -99,7 +99,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-ressources-use
         "id" : "Extension",
         "path" : "Extension",
         "short" : "Ressources utilisées",
-        "definition" : "Ressources utilisées lors de l’évènement."
+        "definition" : "Ressources utilisées lors de l’évènement (ex : chambre, matériel médical, véhicule)."
       },
       {
         "id" : "Extension.extension:TDDUIRessourceType",

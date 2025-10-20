@@ -10,7 +10,7 @@
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2025-10-16T12:41:56+00:00",
+  "date" : "2025-10-20T09:49:22+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -778,18 +778,6 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/tddui-profession"
-      },
-      "name" : "Profession",
-      "description" : "Extension permettant de représenter la profession du professionnel.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/tddui-event-report"
       },
       "name" : "Rapport de l’évènement",
@@ -814,10 +802,22 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/tddui-qr-participant"
+      },
+      "name" : "Responsable et auteur du statut de l'évaluation",
+      "description" : "Extension permettant d'ajouter le responsable de l'évaluation et l'auteur du statut de l'évaluation dans un QuestionnaireResponse.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/tddui-ressources-used"
       },
       "name" : "Ressources utilisées",
-      "description" : "Ressources utilisées lors de l’évènement.",
+      "description" : "Ressources utilisées lors de l’évènement (ex : chambre, matériel médical, véhicule).",
       "exampleBoolean" : false
     },
     {
@@ -961,7 +961,7 @@
         "reference" : "StructureDefinition/tddui-practitioner"
       },
       "name" : "TDDUI Practitioner",
-      "description" : "Profil de la ressource FRCorePractitionerProfile permettant de représenter un Profesionnel.",
+      "description" : "Profil de la ressource FRCorePractitionerProfile permettant de représenter un professionnel du médicosocial dans le cadre de TDDUI. Le profil AsPractitionerRoleProfile n'a pas été utilisé car il comportait trop de contraintes non présentes dans les DUI.",
       "exampleBoolean" : false
     },
     {
@@ -974,6 +974,30 @@
       },
       "name" : "TDDUI Practitioner Role",
       "description" : "Profil de la ressource FRCorePractitionerRole permettant de représenter un Professionnel.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-profession"
+      },
+      "name" : "TDDUI Profession",
+      "description" : "Extension permettant de représenter la profession du professionnel.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-questionnaire-response"
+      },
+      "name" : "TDDUI QuestionnaireResponse",
+      "description" : "Profil de la ressource QuestionnaireResponse utilisé pour transmettre les réponses aux questionnaires dans le cadre des évaluations.",
       "exampleBoolean" : false
     },
     {
@@ -1147,6 +1171,66 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/tddui-questionnaire-response-aggir-pa-example"
+      },
+      "name" : "tddui-questionnaire-response-aggir-pa-example",
+      "description" : "Grille de réponse AGGIR PA",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/tddui-questionnaire-response-aggir-ph-example"
+      },
+      "name" : "tddui-questionnaire-response-aggir-ph-example",
+      "description" : "Grille de réponse AGGIR PH",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/tddui-questionnaire-response-serafin-precision-example"
+      },
+      "name" : "tddui-questionnaire-response-serafin-precision-example",
+      "description" : "Evaluation SERAFIN pour un besoin d'hébergement adapté avec précision",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/tddui-questionnaire-response-serafin-sans-precision-example"
+      },
+      "name" : "tddui-questionnaire-response-serafin-sans-precision-example",
+      "description" : "Evaluation SERAFIN pour un besoin d'hébergement adapté sans précision",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/tddui-questionnaire-response-situation-ssiad-example"
+      },
+      "name" : "tddui-questionnaire-response-situation-ssiad-example",
+      "description" : "Grille de réponse de la situation SSIAD",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Task"
       }],
       "reference" : {
@@ -1202,6 +1286,54 @@
       },
       "name" : "Usager présent",
       "description" : "Evènement nécessitant ou non la présence physique de l’usager.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/tddui-questionnaire-aggir-pa-ssiad"
+      },
+      "name" : "Évaluation AGGIR PA SSIAD",
+      "description" : "Grille d'évaluation AGGIR PA SSIAD",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/tddui-questionnaire-aggir-ph-ssiad"
+      },
+      "name" : "Évaluation AGGIR PH SSIAD",
+      "description" : "Grille d'évaluation AGGIR PH SSIAD",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/tddui-questionnaire-situation-ssiad"
+      },
+      "name" : "Évaluation de la situation SSIAD",
+      "description" : "Grille d'évaluation de la situation SSIAD",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/tddui-questionnaire-serafin"
+      },
+      "name" : "Évaluation SERAFIN",
+      "description" : "Grille d'évaluation SERAFIN",
       "exampleBoolean" : false
     },
     {

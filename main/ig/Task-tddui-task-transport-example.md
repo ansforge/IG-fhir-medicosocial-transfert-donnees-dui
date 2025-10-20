@@ -51,6 +51,7 @@ Profil: [TDDUI Task Transport](StructureDefinition-tddui-task-transport.md)
   "code" : {
     "coding" : [
       {
+        "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
         "code" : "ORG-204",
         "display" : "Transport en commun"
       }

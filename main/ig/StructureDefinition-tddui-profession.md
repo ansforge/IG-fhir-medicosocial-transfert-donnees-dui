@@ -1,15 +1,15 @@
-# Profession - Médicosocial - Transfert de données DUI v2.0.0
+# TDDUI Profession - Médicosocial - Transfert de données DUI v2.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Profession**
+* **TDDUI Profession**
 
-## Extension: Profession 
+## Extension: TDDUI Profession 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-profession | *Version*:2.0.0 |
-| Active as of 2025-10-16 | *Computable Name*:TDDUIProfession |
+| Active as of 2025-10-20 | *Computable Name*:TDDUIProfession |
 
 Extension permettant de représenter la profession du professionnel.
 
@@ -47,9 +47,9 @@ Other representations of profile: [CSV](StructureDefinition-tddui-profession.csv
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-profession",
   "version" : "2.0.0",
   "name" : "TDDUIProfession",
-  "title" : "Profession",
+  "title" : "TDDUI Profession",
   "status" : "active",
-  "date" : "2025-10-16T12:41:56+00:00",
+  "date" : "2025-10-20T09:49:22+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -98,7 +98,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-profession.csv
       {
         "id" : "Extension",
         "path" : "Extension",
-        "short" : "Profession",
+        "short" : "TDDUI Profession",
         "definition" : "Extension permettant de représenter la profession du professionnel."
       },
       {

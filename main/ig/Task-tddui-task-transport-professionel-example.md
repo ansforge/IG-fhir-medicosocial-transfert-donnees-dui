@@ -57,6 +57,7 @@ Profil: [TDDUI Task Transport Professionnel](StructureDefinition-tddui-task-tran
   "code" : {
     "coding" : [
       {
+        "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
         "code" : "ORG-202",
         "display" : "Véhicule individuel"
       }

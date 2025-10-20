@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement | *Version*:2.0.0 |
-| Active as of 2025-10-16 | *Computable Name*:TDDUIEncounterEvenement |
+| Active as of 2025-10-20 | *Computable Name*:TDDUIEncounterEvenement |
 
  
 Profil de la ressource Encounter permettant de regrouper les évènements liés à la prise en charge de l’usager dans une structure ESSMS. 
@@ -21,7 +21,7 @@ Profil de la ressource Encounter permettant de regrouper les évènements liés 
 
 **Usages:**
 
-* Refer to this Profile: [TDDUI Task Transport](StructureDefinition-tddui-task-transport.md)
+* Refer to this Profile: [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md) and [TDDUI Task Transport](StructureDefinition-tddui-task-transport.md)
 * Examples for this Profile: [Encounter/tddui-encounter-evenement-example](Encounter-tddui-encounter-evenement-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-encounter-evenement)
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-even
   "name" : "TDDUIEncounterEvenement",
   "title" : "TDDUI Encounter Evenement",
   "status" : "active",
-  "date" : "2025-10-16T12:41:56+00:00",
+  "date" : "2025-10-20T09:49:22+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -406,7 +406,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-even
       {
         "id" : "Encounter.identifier",
         "path" : "Encounter.identifier",
-        "short" : "Identifier(s) by which this encounter is known | identifiant de la rencontre",
+        "short" : "Identifiant de l'évènement",
         "definition" : "Identifier(s) by which this encounter is known.Cet élément est multiévalué (pour ne pas bloquer les implémentations, car il arrive sur le terrain qu'il y ait plusieurs id pour une même admission, mais cette situation est considérée comme une anomalie)",
         "min" : 1,
         "max" : "1",
@@ -456,8 +456,15 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-even
       {
         "id" : "Encounter.identifier.value",
         "path" : "Encounter.identifier.value",
-        "short" : "Format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-EVN-numEvenement.",
-        "min" : 1
+        "min" : 1,
+        "example" : [
+          {
+            "label" : "L'identifiant de l'évènement : 3+FINESS/identifiantLocalUsagerESSMS-EVAL-numEvenement.",
+            "valueIdentifier" : {
+              "value" : "3480787529/147720425367411-EVAL-21564655"
+            }
+          }
+        ]
       },
       {
         "id" : "Encounter.identifier.assigner",

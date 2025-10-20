@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "TDDUI"] ; # 
   fhir:title [ fhir:v "Médicosocial - Transfert de données DUI"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-10-16T12:41:56+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-20T09:49:22+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -1080,24 +1080,6 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-profession> ;
-         fhir:reference [ fhir:v "StructureDefinition/tddui-profession" ]
-       ] ;
-       fhir:name [ fhir:v "Profession" ] ;
-       fhir:description [ fhir:v "Extension permettant de représenter la profession du professionnel." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:extension"
-         ]
-       ] ) ;
-       fhir:reference [
          fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-report> ;
          fhir:reference [ fhir:v "StructureDefinition/tddui-event-report" ]
        ] ;
@@ -1134,11 +1116,29 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-qr-participant" ]
+       ] ;
+       fhir:name [ fhir:v "Responsable et auteur du statut de l'évaluation" ] ;
+       fhir:description [ fhir:v "Extension permettant d'ajouter le responsable de l'évaluation et l'auteur du statut de l'évaluation dans un QuestionnaireResponse." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used> ;
          fhir:reference [ fhir:v "StructureDefinition/tddui-ressources-used" ]
        ] ;
        fhir:name [ fhir:v "Ressources utilisées" ] ;
-       fhir:description [ fhir:v "Ressources utilisées lors de l’évènement." ] ;
+       fhir:description [ fhir:v "Ressources utilisées lors de l’évènement (ex : chambre, matériel médical, véhicule)." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1354,7 +1354,7 @@
          fhir:reference [ fhir:v "StructureDefinition/tddui-practitioner" ]
        ] ;
        fhir:name [ fhir:v "TDDUI Practitioner" ] ;
-       fhir:description [ fhir:v "Profil de la ressource FRCorePractitionerProfile permettant de représenter un Profesionnel." ] ;
+       fhir:description [ fhir:v "Profil de la ressource FRCorePractitionerProfile permettant de représenter un professionnel du médicosocial dans le cadre de TDDUI. Le profil AsPractitionerRoleProfile n'a pas été utilisé car il comportait trop de contraintes non présentes dans les DUI." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1373,6 +1373,42 @@
        ] ;
        fhir:name [ fhir:v "TDDUI Practitioner Role" ] ;
        fhir:description [ fhir:v "Profil de la ressource FRCorePractitionerRole permettant de représenter un Professionnel." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-profession> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-profession" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Profession" ] ;
+       fhir:description [ fhir:v "Extension permettant de représenter la profession du professionnel." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-questionnaire-response" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI QuestionnaireResponse" ] ;
+       fhir:description [ fhir:v "Profil de la ressource QuestionnaireResponse utilisé pour transmettre les réponses aux questionnaires dans le cadre des évaluations." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1641,6 +1677,101 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "QuestionnaireResponse"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/QuestionnaireResponse/tddui-questionnaire-response-aggir-pa-example> ;
+         fhir:reference [ fhir:v "QuestionnaireResponse/tddui-questionnaire-response-aggir-pa-example" ]
+       ] ;
+       fhir:name [ fhir:v "tddui-questionnaire-response-aggir-pa-example" ] ;
+       fhir:description [ fhir:v "Grille de réponse AGGIR PA" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"^^xsd:anyURI ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "QuestionnaireResponse"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/QuestionnaireResponse/tddui-questionnaire-response-aggir-ph-example> ;
+         fhir:reference [ fhir:v "QuestionnaireResponse/tddui-questionnaire-response-aggir-ph-example" ]
+       ] ;
+       fhir:name [ fhir:v "tddui-questionnaire-response-aggir-ph-example" ] ;
+       fhir:description [ fhir:v "Grille de réponse AGGIR PH" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"^^xsd:anyURI ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "QuestionnaireResponse"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/QuestionnaireResponse/tddui-questionnaire-response-serafin-precision-example> ;
+         fhir:reference [ fhir:v "QuestionnaireResponse/tddui-questionnaire-response-serafin-precision-example" ]
+       ] ;
+       fhir:name [ fhir:v "tddui-questionnaire-response-serafin-precision-example" ] ;
+       fhir:description [ fhir:v "Evaluation SERAFIN pour un besoin d'hébergement adapté avec précision" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"^^xsd:anyURI ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "QuestionnaireResponse"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/QuestionnaireResponse/tddui-questionnaire-response-serafin-sans-precision-example> ;
+         fhir:reference [ fhir:v "QuestionnaireResponse/tddui-questionnaire-response-serafin-sans-precision-example" ]
+       ] ;
+       fhir:name [ fhir:v "tddui-questionnaire-response-serafin-sans-precision-example" ] ;
+       fhir:description [ fhir:v "Evaluation SERAFIN pour un besoin d'hébergement adapté sans précision" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"^^xsd:anyURI ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "QuestionnaireResponse"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/QuestionnaireResponse/tddui-questionnaire-response-situation-ssiad-example> ;
+         fhir:reference [ fhir:v "QuestionnaireResponse/tddui-questionnaire-response-situation-ssiad-example" ]
+       ] ;
+       fhir:name [ fhir:v "tddui-questionnaire-response-situation-ssiad-example" ] ;
+       fhir:description [ fhir:v "Grille de réponse de la situation SSIAD" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"^^xsd:anyURI ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "Task"
          ]
        ] ) ;
@@ -1726,6 +1857,78 @@
        ] ;
        fhir:name [ fhir:v "Usager présent" ] ;
        fhir:description [ fhir:v "Evènement nécessitant ou non la présence physique de l’usager." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Questionnaire/tddui-questionnaire-aggir-pa-ssiad> ;
+         fhir:reference [ fhir:v "Questionnaire/tddui-questionnaire-aggir-pa-ssiad" ]
+       ] ;
+       fhir:name [ fhir:v "Évaluation AGGIR PA SSIAD" ] ;
+       fhir:description [ fhir:v "Grille d'évaluation AGGIR PA SSIAD" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Questionnaire/tddui-questionnaire-aggir-ph-ssiad> ;
+         fhir:reference [ fhir:v "Questionnaire/tddui-questionnaire-aggir-ph-ssiad" ]
+       ] ;
+       fhir:name [ fhir:v "Évaluation AGGIR PH SSIAD" ] ;
+       fhir:description [ fhir:v "Grille d'évaluation AGGIR PH SSIAD" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Questionnaire/tddui-questionnaire-situation-ssiad> ;
+         fhir:reference [ fhir:v "Questionnaire/tddui-questionnaire-situation-ssiad" ]
+       ] ;
+       fhir:name [ fhir:v "Évaluation de la situation SSIAD" ] ;
+       fhir:description [ fhir:v "Grille d'évaluation de la situation SSIAD" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Questionnaire/tddui-questionnaire-serafin> ;
+         fhir:reference [ fhir:v "Questionnaire/tddui-questionnaire-serafin" ]
+       ] ;
+       fhir:name [ fhir:v "Évaluation SERAFIN" ] ;
+       fhir:description [ fhir:v "Grille d'évaluation SERAFIN" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false

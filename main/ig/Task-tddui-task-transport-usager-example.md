@@ -57,6 +57,7 @@ Profil: [TDDUI Task Transport Usager](StructureDefinition-tddui-task-transport-u
   "code" : {
     "coding" : [
       {
+        "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
         "code" : "ORG-156",
         "display" : "Taxi"
       }
@@ -164,6 +165,7 @@ Profil: [TDDUI Task Transport Usager](StructureDefinition-tddui-task-transport-u
       "valueCodeableConcept" : {
         "coding" : [
           {
+            "system" : "https://smt.esante.gouv.fr/terminologie-SERAFINPH",
             "code" : "3.2.4",
             "display" : "Transports liés au projet individuel"
           }

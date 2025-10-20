@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner | *Version*:2.0.0 |
-| Active as of 2025-10-16 | *Computable Name*:TDDUIPractitioner |
+| Active as of 2025-10-20 | *Computable Name*:TDDUIPractitioner |
 
  
-Profil de la ressource FRCorePractitionerProfile permettant de représenter un Profesionnel. 
+Profil de la ressource FRCorePractitionerProfile permettant de représenter un professionnel du médicosocial dans le cadre de TDDUI. Le profil AsPractitionerRoleProfile n'a pas été utilisé car il comportait trop de contraintes non présentes dans les DUI. 
 
 **Usages:**
 
-* Refer to this Profile: [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md), [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md), [TDDUI Practitioner Role](StructureDefinition-tddui-practitioner-role.md) and [TDDUI Task Transport Professionnel](StructureDefinition-tddui-task-transport-professionnel.md)
+* Refer to this Profile: [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md), [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md), [TDDUI Practitioner Role](StructureDefinition-tddui-practitioner-role.md), [Responsable et auteur du statut de l'évaluation](StructureDefinition-tddui-qr-participant.md)...Show 2 more,[TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md)and[TDDUI Task Transport Professionnel](StructureDefinition-tddui-task-transport-professionnel.md)
 * Examples for this Profile: [Practitioner/tddui-practitioner-example](Practitioner-tddui-practitioner-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-practitioner)
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-practitioner.c
   "name" : "TDDUIPractitioner",
   "title" : "TDDUI Practitioner",
   "status" : "active",
-  "date" : "2025-10-16T12:41:56+00:00",
+  "date" : "2025-10-20T09:49:22+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -55,7 +55,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-practitioner.c
       ]
     }
   ],
-  "description" : "Profil de la ressource FRCorePractitionerProfile permettant de représenter un Profesionnel.",
+  "description" : "Profil de la ressource FRCorePractitionerProfile permettant de représenter un professionnel du médicosocial dans le cadre de TDDUI. Le profil AsPractitionerRoleProfile n'a pas été utilisé car il comportait trop de contraintes non présentes dans les DUI.",
   "jurisdiction" : [
     {
       "coding" : [

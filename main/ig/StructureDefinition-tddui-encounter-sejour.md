@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour | *Version*:2.0.0 |
-| Active as of 2025-10-16 | *Computable Name*:TDDUIEncounterSejour |
+| Active as of 2025-10-20 | *Computable Name*:TDDUIEncounterSejour |
 
  
 Profil de la ressource Encounter permettant de regrouper les informations relatives au séjour d'un usager dans une structure ESSMS 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-sejo
   "name" : "TDDUIEncounterSejour",
   "title" : "TDDUI Encounter Sejour",
   "status" : "active",
-  "date" : "2025-10-16T12:41:56+00:00",
+  "date" : "2025-10-20T09:49:22+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -277,11 +277,6 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-sejo
         "min" : 1
       },
       {
-        "id" : "Encounter.identifier.value",
-        "path" : "Encounter.identifier.value",
-        "short" : "Format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-SEJOUR-numeroDossier."
-      },
-      {
         "id" : "Encounter.identifier:idStay",
         "path" : "Encounter.identifier",
         "sliceName" : "idStay",
@@ -308,6 +303,18 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-sejo
             }
           ]
         }
+      },
+      {
+        "id" : "Encounter.identifier:idStay.value",
+        "path" : "Encounter.identifier.value",
+        "example" : [
+          {
+            "label" : "L'identifiant de l'évènement : 3+FINESS/identifiantLocalUsagerESSMS-SEJOUR-numeroDossier.",
+            "valueIdentifier" : {
+              "value" : "3480787529/147720425367411-SEJOUR-21564655"
+            }
+          }
+        ]
       },
       {
         "id" : "Encounter.subject",

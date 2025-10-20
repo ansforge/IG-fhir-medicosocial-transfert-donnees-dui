@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager | *Version*:2.0.0 |
-| Active as of 2025-10-16 | *Computable Name*:TDDUITaskTransportUsager |
+| Active as of 2025-10-20 | *Computable Name*:TDDUITaskTransportUsager |
 
  
 Profil de la ressource TDDUITaskTransport permettant de représenter le transport de l'usager. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
   "name" : "TDDUITaskTransportUsager",
   "title" : "TDDUI Task Transport Usager",
   "status" : "active",
-  "date" : "2025-10-16T12:41:56+00:00",
+  "date" : "2025-10-20T09:49:22+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -114,6 +114,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
       {
         "id" : "Task.identifier",
         "path" : "Task.identifier",
+        "short" : "Identifiant du transport de l'usager",
         "mapping" : [
           {
             "identity" : "specmetier-to-TDDUITaskTransportUsager",
@@ -124,7 +125,14 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
       {
         "id" : "Task.identifier.value",
         "path" : "Task.identifier.value",
-        "short" : "Format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-TPPat-idTransport."
+        "example" : [
+          {
+            "label" : "Format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-TPPat-idTransport.",
+            "valueIdentifier" : {
+              "value" : "3480787529/147720425367411-TPPat-21564655"
+            }
+          }
+        ]
       },
       {
         "id" : "Task.code",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-cancel-reason | *Version*:2.0.0 |
-| Active as of 2025-10-16 | *Computable Name*:TDDUIEventCancelReason |
+| Active as of 2025-10-20 | *Computable Name*:TDDUIEventCancelReason |
 
 Motif associé au statut de non-réalisation de l’évènement.
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-event-cancel-r
   "name" : "TDDUIEventCancelReason",
   "title" : "Évènement annulé",
   "status" : "active",
-  "date" : "2025-10-16T12:41:56+00:00",
+  "date" : "2025-10-20T09:49:22+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -86,7 +86,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-event-cancel-r
   "context" : [
     {
       "type" : "element",
-      "expression" : "Encounter"
+      "expression" : "Element"
     }
   ],
   "type" : "Extension",
@@ -117,11 +117,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-event-cancel-r
           {
             "code" : "CodeableConcept"
           }
-        ]
-      },
-      {
-        "id" : "Extension.value[x].coding",
-        "path" : "Extension.value[x].coding",
+        ],
         "binding" : {
           "strength" : "required",
           "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-motif-non-realisation-evenement-cisis"

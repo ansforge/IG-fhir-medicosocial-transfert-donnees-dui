@@ -47,6 +47,7 @@ Profil: [TDDUI Practitioner](StructureDefinition-tddui-practitioner.md)
       "code" : {
         "coding" : [
           {
+            "system" : "https://mos.esante.gouv.fr/NOS/TRE_R48-DiplomeEtatFrancais/FHIR/TRE-R48-DiplomeEtatFrancais",
             "code" : "DE09",
             "display" : "DE Infirmier"
           }
@@ -57,6 +58,7 @@ Profil: [TDDUI Practitioner](StructureDefinition-tddui-practitioner.md)
       "code" : {
         "coding" : [
           {
+            "system" : "https://mos.esante.gouv.fr/NOS/TRE_G15-ProfessionSante/FHIR/TRE-G15-ProfessionSante",
             "code" : "60",
             "display" : "Infirmier"
           }
