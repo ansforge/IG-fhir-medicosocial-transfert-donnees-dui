@@ -16,9 +16,14 @@ Les différentes ressources sont véhiculées via l'élément : Bundle.entry. Le
 * [TDDUIPatient](StructureDefinition-tddui-patient.html) représentant l'usager,
 * [TDDUIPatientINS](StructureDefinition-tddui-patient-ins.html) représentant l'usager transmis avec l'INS,
 * [TDDUIEncounterSejour](StructureDefinition-tddui-encounter-sejour.html) représentant un séjour,
-* [TDDUIOrganization](StructureDefinition-tddui-organization.html) représentant une entité juridique
-
-
+* [TDDUIOrganization](StructureDefinition-tddui-organization.html) représentant une entité juridique,
+* [TDDUIEncounterEvenement](StructureDefinition-tddui-encounter-evenement.html) représentant un événement lié à la prise en charge d'un usager,
+* [TDDUIPractitioner](StructureDefinition-tddui-practitioner.html) représentant un professionnel,
+* [TDDUIPractitionerRole](StructureDefinition-tddui-practitioner-role.html) représentant un professionnel,
+* [TDDUITaskTransport](StructureDefinition-tddui-task-transport.html) représentant le transport,
+* [TDDUITaskTransportProfessionnel](StructureDefinition-tddui-task-transport-professionnel.html) représentant le transport du professionnel,
+* [TDDUITaskTransportUsager](StructureDefinition-tddui-task-transport-usager.html) représentant le transport de l'usager,
+* [TDDUIQuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.html) représentant les réponses aux questionnaires dans le cadre des évaluations.
 
 Pour toutes ces ressources, seule la création est possible via l'intéraction FHIR <a href="https://hl7.org/fhir/R4/http.html#create">Create</a>.
 
