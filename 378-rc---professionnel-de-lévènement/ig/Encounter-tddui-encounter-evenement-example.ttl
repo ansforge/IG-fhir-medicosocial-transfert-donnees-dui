@@ -1,0 +1,122 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/tddui/Encounter/tddui-encounter-evenement-example> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "tddui-encounter-evenement-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement"^^xsd:anyURI ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Venue tddui-encounter-evenement-example</b></p><a name=\"tddui-encounter-evenement-example\"> </a><a name=\"hctddui-encounter-evenement-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-encounter-evenement.html\">TDDUI Encounter Evenement</a></p></div><blockquote><p><b>Ressources utilisées</b></p><ul><li>TDDUIRessourceType: <span title=\"Codes:{http://snomed.info/sct 261324000}\">Vehicle</span></li></ul></blockquote><p><b>Rapport de l’évènement</b>: Observations cliniques : ; Recommandations pour les jours à venir : ; Prochaine visite : 15 avril 2023, 10h30 ; Remarque : Monsieur Dupont a compris les consignes pour la gestion de sa douleur et la mobilisation de sa hanche opérée.</p><p><b>Commentaire</b>: Cet évènement a débuté plus tard l’usager était sous la douche à l’heure du début du rendez-vous.</p><p><b>Libellé de l'évènement</b>: Visite à domicile pour soins infirmier.</p><p><b>Motif de l’évènement</b>: Suivi post-opératoire suite à intervention chirurgicale de la hanche.</p><p><b>identifier</b>: Visit Number/3480787529/147720425367411-EVN-12548</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-HH\">ActCode HH</a>: home health</p><p><b>type</b>: <span title=\"Codes:{https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis MED-1298}\">Intervention d'un infirmer salarié</span>, <span title=\"Codes:\">Intervention</span></p><p><b>subject</b>: <a href=\"Patient-tddui-patient-ins-example.html\">DUPONT  Male, Date de Naissance :1947-04-03 ( NIR définitif (use: official, ))</a></p><h3>Participants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Individual</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ParticipationType PART}\">Participation</span></td><td><a href=\"Practitioner-tddui-practitioner-example.html\">Practitioner Claire Martin </a></td></tr></table><p><b>period</b>: 2023-04-14 10:30:00+0200 --&gt; 2023-04-14 11:15:00+0200</p><h3>Locations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Location</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Location-tddui-event-location-example.html\">Location</a></td></tr></table><p><b>serviceProvider</b>: <a href=\"Organization-tddui-organization-example.html\">Organization Les Chênes Verts</a></p><p><b>partOf</b>: <a href=\"Encounter-tddui-encounter-sejour-example.html\">Encounter : extension = 2023-04-11,Date de début du suivi post-opératoire : 14/04/2023,Sortie prévisionnelle prévue pour le 5 mai 2023,2023-05-05; identifier = Identifiant du séjour: 3480787529/147720425367411-SEJOUR-1012; status = in-progress; class = home health (ActCode#HH); period = 2023-04-14 --&gt; (ongoing)</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "TDDUIRessourceType"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:261324000 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "261324000" ] ;
+           fhir:display [ fhir:v "Vehicle" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used"^^xsd:anyURI ]
+  ] [
+     fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-report"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "Observations cliniques : ; Recommandations pour les jours à venir : ; Prochaine visite : 15 avril 2023, 10h30 ; Remarque : Monsieur Dupont a compris les consignes pour la gestion de sa douleur et la mobilisation de sa hanche opérée."
+     ]
+  ] [
+     fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "Cet évènement a débuté plus tard l’usager était sous la douche à l’heure du début du rendez-vous."
+     ]
+  ] [
+     fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-label"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "Visite à domicile pour soins infirmier."
+     ]
+  ] [
+     fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-reason"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "Suivi post-opératoire suite à intervention chirurgicale de la hanche."
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identifier-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "VN" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identifier-type"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "3480787529/147720425367411-EVN-12548" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "finished"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "HH" ]
+  ] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "MED-1298" ] ;
+       fhir:display [ fhir:v "Intervention d'un infirmer salarié" ]
+     ] )
+  ] [
+     fhir:text [ fhir:v "Intervention" ]
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-patient-ins-example> ;
+     fhir:reference [ fhir:v "Patient/tddui-patient-ins-example" ]
+  ] ; # 
+  fhir:participant ( [
+     fhir:type ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "PART" ]
+       ] )
+     ] ) ;
+     fhir:individual [
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Practitioner/tddui-practitioner-example> ;
+       fhir:reference [ fhir:v "Practitioner/tddui-practitioner-example" ]
+     ]
+  ] ) ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2023-04-14T10:30:00+02:00"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2023-04-14T11:15:00+02:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:location ( [
+     fhir:location [
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Location/tddui-event-location-example> ;
+       fhir:reference [ fhir:v "Location/tddui-event-location-example" ]
+     ]
+  ] ) ; # 
+  fhir:serviceProvider [
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Organization/tddui-organization-example> ;
+     fhir:reference [ fhir:v "Organization/tddui-organization-example" ]
+  ] ; # 
+  fhir:partOf [
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Encounter/tddui-encounter-sejour-example> ;
+     fhir:reference [ fhir:v "Encounter/tddui-encounter-sejour-example" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
