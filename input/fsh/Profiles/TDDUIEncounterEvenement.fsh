@@ -66,14 +66,14 @@ Description: "Profil de la ressource Encounter permettant de regrouper les évè
 
 * participant contains
     auteurStatut 0..1 and
-    professionnel 0..1
+    professionnel 0..*
 
 * participant[auteurStatut].type 1..1
 * participant[auteurStatut].type = TDDUIEncounterParticipant#AUT "Auteur du statut de la ressource"
 * participant[auteurStatut] ^short = "Professionnel ayant effectué la dernière modification du statut associé à la ressource."
 
 * participant[professionnel].type 1..1
-* participant[professionnel].type = http://terminology.hl7.org/CodeSystem/v3-ParticipationType#PART
+* participant[professionnel].type = $ParticipationType#PART
 
 * participant.individual only Reference(TDDUIPractitioner or TDDUIPractitionerRole or RelatedPerson)
 
