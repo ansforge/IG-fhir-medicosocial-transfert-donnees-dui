@@ -8,11 +8,13 @@ Description: "Profil de la ressource Encounter permettant de regrouper les infor
 * identifier ^slicing.discriminator.type = #pattern
 * identifier ^slicing.discriminator.path = "type"
 * identifier ^slicing.rules = #open
- 
+
 * identifier contains
     idStay 1..1
 * identifier[idStay] ^short = "Identifiant métier unique du séjour"
 * identifier[idStay].type = TDDUIEncounterIdentifier#SEJ "Identifiant du séjour"
+* identifier[idStay].value ^example[0].label = "L'identifiant de l'évènement : 3+FINESS/identifiantLocalUsagerESSMS-SEJOUR-numeroDossier."
+* identifier[idStay].value ^example[0].valueIdentifier.value = "3480787529/147720425367411-SEJOUR-21564655"
 // Usager
 * subject 1..1
 * subject only Reference(TDDUIPatient or TDDUIPatientINS)

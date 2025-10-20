@@ -20,6 +20,7 @@ Description: "Exemple du transport du professionnel."
 
 * code.coding.code = #ORG-202
 * code.coding.display = "Véhicule individuel"
+* code.coding.system = "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis"
 
 * input[typeMotorisation].valueCodeableConcept.coding.code = #GEN-355
 * input[typeMotorisation].valueCodeableConcept.coding.display = "Véhicule électrique"
