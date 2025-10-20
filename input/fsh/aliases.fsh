@@ -87,7 +87,7 @@ Alias: $humanname-assembly-order = http://hl7.org/fhir/StructureDefinition/human
 Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo
 Alias: $ServiceType = http://terminology.hl7.org/CodeSystem/service-type
 Alias: $imposeProfile = http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile
-
+Alias: $ParticipationType = http://terminology.hl7.org/CodeSystem/v3-ParticipationType
 
 // ###############
 // # FrCore link #
