@@ -20,6 +20,8 @@ Description: "Profil générique créé pour transmettre des données d'un logic
     DUIPractitionerRole 0..* and
     DUITransportProfessionnel 0..* and
     DUITransportUsager 0..*
+    DUIDocumentReference 0..*
+    DUIQuestionnaireResponse 0..*
 
 * entry[DUIPatient].resource only TDDUIPatient
 * entry[DUIPatient] ^short = "Patient conforming to the TDDUIPatient profile, used to convey patients without an INS identity."
@@ -52,25 +54,31 @@ Description: "Profil générique créé pour transmettre des données d'un logic
 * entry[DUIEncounterEvenement].request.method = #POST
 
 * entry[DUIPractitioner].resource only TDDUIPractitioner
-* entry[DUIPractitioner] ^short = "Encounter conforming to the TDDUIPractitioner profile, used to convey the practitioner."
+* entry[DUIPractitioner] ^short = "Practitioner conforming to the TDDUIPractitioner profile, used to convey the practitioner."
 * entry[DUIPractitioner].resource 1..1
 * entry[DUIPractitioner].request 1..1
 * entry[DUIPractitioner].request.method = #POST
 
 * entry[DUIPractitionerRole].resource only TDDUIPractitionerRole
-* entry[DUIPractitionerRole] ^short = "Encounter conforming to the TDDUIPractitionerRole profile, used to convey the practitioner."
+* entry[DUIPractitionerRole] ^short = "PractitionerRole conforming to the TDDUIPractitionerRole profile, used to convey the practitioner."
 * entry[DUIPractitionerRole].resource 1..1
 * entry[DUIPractitionerRole].request 1..1
 * entry[DUIPractitionerRole].request.method = #POST
 
 * entry[DUITransportProfessionnel].resource only TDDUITaskTransportProfessionnel
-* entry[DUITransportProfessionnel] ^short = "Encounter conforming to the TDDUITaskTransportProfessionnel profile, used to convey the practitioner transportation."
+* entry[DUITransportProfessionnel] ^short = "Task conforming to the TDDUITaskTransportProfessionnel profile, used to convey the practitioner transportation."
 * entry[DUITransportProfessionnel].resource 1..1
 * entry[DUITransportProfessionnel].request 1..1
 * entry[DUITransportProfessionnel].request.method = #POST
 
 * entry[DUITransportUsager].resource only TDDUITaskTransportUsager
-* entry[DUITransportUsager] ^short = "Encounter conforming to the TDDUITaskTransportUsager profile, used to convey the patient transportation."
+* entry[DUITransportUsager] ^short = "Task conforming to the TDDUITaskTransportUsager profile, used to convey the patient transportation."
 * entry[DUITransportUsager].resource 1..1
 * entry[DUITransportUsager].request 1..1
 * entry[DUITransportUsager].request.method = #POST
+
+* entry[DUIDocumentReference].resource only TDDUIDocumentReference
+* entry[DUIDocumentReference]. ^short = "DocumentReference conforming to the TDDUIDocumentReference profile, used to convey evaluation attachement"
+* entry[DUIDocumentReference].resource 1..1
+* entry[DUIDocumentReference].request 1..1
+* entry[DUIDocumentReference].request.method = #POST
