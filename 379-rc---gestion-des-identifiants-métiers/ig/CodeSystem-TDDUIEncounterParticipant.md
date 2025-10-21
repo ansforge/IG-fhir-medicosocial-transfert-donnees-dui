@@ -37,7 +37,7 @@ CodeSystem for the participant types in TDDUI Encounter
   "title" : "TDDUI Encounter Participant Type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-10-21T08:17:45+00:00",
+  "date" : "2025-10-21T12:05:40+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

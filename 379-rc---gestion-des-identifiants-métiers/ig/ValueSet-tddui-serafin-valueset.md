@@ -60,7 +60,7 @@ Ce jeu de valeur (ValueSet) contient 0 concepts
   "title" : "TDDUI SERAFIN ValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-10-21T08:17:45+00:00",
+  "date" : "2025-10-21T12:05:40+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

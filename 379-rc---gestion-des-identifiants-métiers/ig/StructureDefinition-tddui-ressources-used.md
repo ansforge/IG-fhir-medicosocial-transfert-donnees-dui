@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-ressources-use
   "name" : "TDDUIRessourcesUsed",
   "title" : "Ressources utilisées",
   "status" : "active",
-  "date" : "2025-10-21T08:17:45+00:00",
+  "date" : "2025-10-21T12:05:40+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

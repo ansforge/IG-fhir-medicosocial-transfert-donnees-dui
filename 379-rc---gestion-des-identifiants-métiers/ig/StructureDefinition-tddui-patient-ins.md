@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient-ins.cs
   "name" : "TDDUIPatientINS",
   "title" : "TDDUI Patient INS",
   "status" : "active",
-  "date" : "2025-10-21T08:17:45+00:00",
+  "date" : "2025-10-21T12:05:40+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -160,12 +160,29 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient-ins.cs
         "id" : "Patient.identifier:PI",
         "path" : "Patient.identifier",
         "sliceName" : "PI",
-        "short" : "Hospital assigned patient identifier | IPP; Dans le cadre de ce volet, représente l'Identifiant local de l’usager au sein de la structure. Cet identifiant est obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature TRE_G08-TypeIdentifiantPersonne), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS) : 3+FINESS/identifiantLocalUsagerESSMS",
+        "short" : "Hospital assigned patient identifier | IPP; Dans le cadre de ce volet, représente l'Identifiant local de l’usager au sein de la structure.",
         "max" : "1",
         "mapping" : [
           {
             "identity" : "specmetier-to-TDDUIPatientINS",
             "map" : "identifiantLocalUsagerESSMS"
+          }
+        ]
+      },
+      {
+        "id" : "Patient.identifier:PI.system",
+        "path" : "Patient.identifier.system",
+        "patternUri" : "https://identifiant-medicosocial-localusager.cnsa.fr"
+      },
+      {
+        "id" : "Patient.identifier:PI.value",
+        "path" : "Patient.identifier.value",
+        "example" : [
+          {
+            "label" : "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS.",
+            "valueIdentifier" : {
+              "value" : "3480787529/194704032"
+            }
           }
         ]
       },

@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-even
   "name" : "TDDUIEncounterEvenement",
   "title" : "TDDUI Encounter Evenement",
   "status" : "active",
-  "date" : "2025-10-21T08:17:45+00:00",
+  "date" : "2025-10-21T12:05:40+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -442,6 +442,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-even
         "path" : "Encounter.identifier.system",
         "definition" : "Establishes the namespace for the value - that is, a URL that describes a set values that are unique.\r\nLe namespace est défini à partir de la racine d'identification (gérée par l'ANS) de l'organisation où a lieu la rencontre, concaténée avec par exemple le FINESS de l'établissent (ou FINEJ ou SIRET ou SIREN), cf annexe française des types de données HL7 en France.",
         "min" : 1,
+        "patternUri" : "https://identifiant-medicosocial-evenement.cnsa.fr",
         "example" : [
           {
             "label" : "OID de l'ANS de gestion des organisations (1.2.250.1.71.4.2.2) suivi du FINESS suivi de la branche z qui gère les id de venue/mouvements si l'établissement n'a pas d'OID (sinon utilisation de l'OID de l'établissement)",
@@ -459,9 +460,9 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-even
         "min" : 1,
         "example" : [
           {
-            "label" : "L'identifiant de l'évènement : 3+FINESS/identifiantLocalUsagerESSMS-EVAL-numEvenement.",
+            "label" : "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-EVN-numEvenement.",
             "valueIdentifier" : {
-              "value" : "3480787529/147720425367411-EVAL-21564655"
+              "value" : "3480787529/147720425367411-EVN-12548"
             }
           }
         ]

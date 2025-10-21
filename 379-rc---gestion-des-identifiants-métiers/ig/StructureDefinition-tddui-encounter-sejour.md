@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-sejo
   "name" : "TDDUIEncounterSejour",
   "title" : "TDDUI Encounter Sejour",
   "status" : "active",
-  "date" : "2025-10-21T08:17:45+00:00",
+  "date" : "2025-10-21T12:05:40+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -305,11 +305,16 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-sejo
         }
       },
       {
+        "id" : "Encounter.identifier:idStay.system",
+        "path" : "Encounter.identifier.system",
+        "patternUri" : "https://identifiant-medicosocial-sejour.cnsa.fr"
+      },
+      {
         "id" : "Encounter.identifier:idStay.value",
         "path" : "Encounter.identifier.value",
         "example" : [
           {
-            "label" : "L'identifiant de l'évènement : 3+FINESS/identifiantLocalUsagerESSMS-SEJOUR-numeroDossier.",
+            "label" : "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-SEJOUR-numeroDossier.",
             "valueIdentifier" : {
               "value" : "3480787529/147720425367411-SEJOUR-21564655"
             }

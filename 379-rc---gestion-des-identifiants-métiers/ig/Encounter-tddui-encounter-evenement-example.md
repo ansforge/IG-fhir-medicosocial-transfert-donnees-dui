@@ -27,7 +27,7 @@ Profil: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenemen
 
 **type**: Intervention d'un infirmer salarié, Intervention
 
-**subject**: [DUPONT Male, Date de Naissance :1947-04-03 ( NIR définitif (use: official, ))](Patient-tddui-patient-ins-example.md)
+**subject**: [DUPONT Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/194704032)](Patient-tddui-patient-ins-example.md)
 
 ### Participants
 
@@ -107,7 +107,7 @@ Profil: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenemen
           }
         ]
       },
-      "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identifier-type",
+      "system" : "https://identifiant-medicosocial-evenement.cnsa.fr",
       "value" : "3480787529/147720425367411-EVN-12548"
     }
   ],
