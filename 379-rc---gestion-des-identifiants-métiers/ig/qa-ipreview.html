@@ -1,0 +1,2379 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>IP Review</title>
+    <link rel="stylesheet" href="fhir.css"/>
+  </head>
+  <body>
+    <h2>Unattributed Code Systems</h2>
+    <ul>
+      <li>
+        <a href="Encounter-tddui-encounter-evenement-example.html">
+<code>https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identifier-type</code>        </a>
+      </li>
+      <li>
+        <a href="StructureDefinition-tddui-practitioner.html">
+<code>https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203</code>        </a>
+      </li>
+      <li>
+        <a href="Patient-tddui-patient-ins-example.html">
+<code>https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445</code>        </a>
+      </li>
+      <li>
+        <a href="StructureDefinition-tddui-encounter-evenement.html">
+<code>https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/TDDUIEncounterParticipant</code>        </a>
+      </li>
+      <li>
+        <a href="Task-tddui-task-transport-usager-example.html">
+<code>https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem</code>        </a>
+      </li>
+      <li>
+        <a href="StructureDefinition-tddui-encounter-sejour.html">
+<code>https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier</code>        </a>
+      </li>
+      <li>
+        <a href="StructureDefinition-tddui-patient.html">
+<code>https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-identifier</code>        </a>
+      </li>
+      <li>
+        <a href="PractitionerRole-tddui-practitioner-role-example.html">
+<code>https://mos.esante.gouv.fr/NOS/TRE_A02-ProfessionSavFaire-CISIS/FHIR/TRE-A02-ProfessionSavFaire-CISIS</code>        </a>
+      </li>
+      <li>
+        <a href="Practitioner-tddui-practitioner-example.html">
+<code>https://mos.esante.gouv.fr/NOS/TRE_G15-ProfessionSante/FHIR/TRE-G15-ProfessionSante</code>        </a>
+      </li>
+      <li>
+        <a href="Patient-tddui-patient-ins-example.html">
+<code>https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM</code>        </a>
+      </li>
+      <li>
+        <a href="PractitionerRole-tddui-practitioner-role-example.html">
+<code>https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice</code>        </a>
+      </li>
+      <li>
+        <a href="Practitioner-tddui-practitioner-example.html">
+<code>https://mos.esante.gouv.fr/NOS/TRE_R48-DiplomeEtatFrancais/FHIR/TRE-R48-DiplomeEtatFrancais</code>        </a>
+      </li>
+      <li>
+        <a href="PractitionerRole-tddui-practitioner-role-example.html">
+<code>https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge</code>        </a>
+      </li>
+      <li>
+        <a href="Task-tddui-task-transport-usager-example.html">
+<code>https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis</code>        </a>
+      </li>
+      <li>
+        <a href="Questionnaire-tddui-questionnaire-situation-ssiad.html">
+<code>https://smt.esante.gouv.fr/terminologie-cim-10</code>        </a>
+      </li>
+    </ul>
+    <h2>Copyright Fragment</h2>
+    <p style="color: maroon">
+      <b>This fragment is not visible to the reader</b>
+    </p>
+    <div>
+      <p>Certaines ressources sémantiques de ce guide sont protégées par des droits de propriété intellectuelle couverte par les déclarations ci-dessous. L’utilisation de ces ressources est soumise à l’acceptation et au respect des conditions précisées dans la licence d’utilisation de chacune d’entre elle.</p>
+
+      <ul>
+
+        <li>
+          <a href="https://github.com/etalab/licence-ouverte/blob/master/LO.md">LOv2</a>
+
+          <div onClick="if (document.getElementById('ipp2_1').innerHTML != '') {document.getElementById('ipp_1').innerHTML = document.getElementById('ipp2_1').innerHTML; document.getElementById('ipp2_1').innerHTML = ''}" id="ipp_1" data-fhir="generated">
+             <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span>
+          </div>
+          <div style="display: none" id="ipp2_1">
+
+            <ul>
+
+              <li>
+                <a href="https://interop.esante.gouv.fr/terminologies/1.2.0/CodeSystem-terminologie-SERAFINPH.html">Nomenclature des besoins et des prestations</a>
+:                 <a href="Questionnaire-tddui-questionnaire-serafin.html">Questionnaire/tddui-questionnaire-serafin</a>
+,                 <a href="StructureDefinition-tddui-task-transport-usager.html">TDDUITaskTransportUsager</a>
+ and                 <a href="Task-tddui-task-transport-usager-example.html">Task/tddui-task-transport-usager-example</a>
+              </li>
+
+
+            </ul>
+
+
+          </div>
+        </li>
+
+        <li>
+Copyright HL7. Licensed under creative commons public domain          <div onClick="if (document.getElementById('ipp2_2').innerHTML != '') {document.getElementById('ipp_2').innerHTML = document.getElementById('ipp2_2').innerHTML; document.getElementById('ipp2_2').innerHTML = ''}" id="ipp_2" data-fhir="generated">
+             <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span>
+          </div>
+          <div style="display: none" id="ipp2_2">
+
+            <ul>
+
+              <li>
+                <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v2-0007.html">admissionType</a>
+:                 <a href="StructureDefinition-tddui-encounter-evenement.html">TDDUIEncounterEvenement</a>
+              </li>
+
+
+            </ul>
+
+
+          </div>
+        </li>
+
+        <li>
+ISO maintains the copyright on the country codes, and controls its use carefully. For further details see the ISO 3166 web page:           <a href="https://www.iso.org/iso-3166-country-codes.html">https://www.iso.org/iso-3166-country-codes.html</a>
+          <div onClick="if (document.getElementById('ipp2_3').innerHTML != '') {document.getElementById('ipp_3').innerHTML = document.getElementById('ipp2_3').innerHTML; document.getElementById('ipp2_3').innerHTML = ''}" id="ipp_3" data-fhir="generated">
+             <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span>
+          </div>
+          <div style="display: none" id="ipp2_3">
+
+            <ul>
+
+              <li>
+                <a href="http://terminology.hl7.org/6.5.0/CodeSystem-ISO3166Part1.html">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>
+:                 <a href="CodeSystem-input-tddui-task-transport-codesystem.html">InputTDDUITaskTransportCodeSystem</a>
+,                 <a href="Questionnaire-tddui-questionnaire-aggir-pa-ssiad.html">Questionnaire/tddui-questionnaire-aggir-pa-ssiad</a>
+                <span onClick="document.getElementById('ips_3').innerHTML = document.getElementById('ips2_3').innerHTML" id="ips_3">
+... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 41 more</span>                </span>
+                <span style="display: none" id="ips2_3">
+, <a href="Questionnaire-tddui-questionnaire-aggir-ph-ssiad.html">Questionnaire/tddui-questionnaire-aggir-ph-ssiad</a>, <a href="Questionnaire-tddui-questionnaire-serafin.html">Questionnaire/tddui-questionnaire-serafin</a>, <a href="Questionnaire-tddui-questionnaire-situation-ssiad.html">Questionnaire/tddui-questionnaire-situation-ssiad</a>, <a href="index.html">TDDUI</a>, <a href="StructureDefinition-tddui-admission-date.html">TDDUIAdmissionDate</a>, <a href="StructureDefinition-tddui-attachment.html">TDDUIAttachment</a>, <a href="StructureDefinition-tddui-birth-order.html">TDDUIBirthOrder</a>, <a href="StructureDefinition-tddui-bundle.html">TDDUIBundle</a>, <a href="StructureDefinition-tddui-comment.html">TDDUIComment</a>, <a href="CapabilityStatement-TDDUIConsommateur.html">TDDUIConsommateur</a>, <a href="StructureDefinition-tddui-document-reference.html">TDDUIDocumentReference</a>, <a href="StructureDefinition-tddui-encounter-evenement.html">TDDUIEncounterEvenement</a>, <a href="CodeSystem-tddui-encounter-identifier.html">TDDUIEncounterIdentifier</a>, <a href="CodeSystem-TDDUIEncounterParticipant.html">TDDUIEncounterParticipant</a>, <a href="StructureDefinition-tddui-encounter-sejour.html">TDDUIEncounterSejour</a>, <a href="StructureDefinition-tddui-entry-mode-label.html">TDDUIEntryModelabel</a>, <a href="StructureDefinition-tddui-event-cancel-reason.html">TDDUIEventCancelReason</a>, <a href="StructureDefinition-tddui-event-label.html">TDDUIEventLabel</a>, <a href="StructureDefinition-tddui-outside-service.html">TDDUIEventOutsideService</a>, <a href="StructureDefinition-tddui-event-reason.html">TDDUIEventReason</a>, <a href="StructureDefinition-tddui-event-report.html">TDDUIEventReport</a>, <a href="StructureDefinition-tddui-exercise-mode.html">TDDUIExerciseMode</a>, <a href="StructureDefinition-tddui-exit-mode-label.html">TDDUIExitModeLabel</a>, <a href="CodeSystem-tddui-identifier.html">TDDUIIdentifier</a>, <a href="StructureDefinition-tddui-meal.html">TDDUIMeal</a>, <a href="StructureDefinition-tddui-organization.html">TDDUIOrganization</a>, <a href="StructureDefinition-tddui-patient.html">TDDUIPatient</a>, <a href="StructureDefinition-tddui-patient-ins.html">TDDUIPatientINS</a>, <a href="StructureDefinition-tddui-patient-present.html">TDDUIPatientPresent</a>, <a href="StructureDefinition-tddui-practitioner.html">TDDUIPractitioner</a>, <a href="StructureDefinition-tddui-practitioner-role.html">TDDUIPractitionerRole</a>, <a href="CapabilityStatement-TDDUIProducteur.html">TDDUIProducteur</a>, <a href="StructureDefinition-tddui-profession.html">TDDUIProfession</a>, <a href="StructureDefinition-tddui-qr-participant.html">TDDUIQRParticipant</a>, <a href="StructureDefinition-tddui-questionnaire-response.html">TDDUIQuestionnaireResponse</a>, <a href="StructureDefinition-tddui-ressources-used.html">TDDUIRessourcesUsed</a>, <a href="ValueSet-tddui-serafin-valueset.html">TDDUISerafinValueSet</a>, <a href="StructureDefinition-tddui-task-transport.html">TDDUITaskTransport</a>, <a href="StructureDefinition-tddui-task-transport-professionnel.html">TDDUITaskTransportProfessionnel</a>, <a href="StructureDefinition-tddui-task-transport-usager.html">TDDUITaskTransportUsager</a> and <a href="StructureDefinition-tddui-human-name.html">tddui-humanname</a>                </span>
+              </li>
+
+
+            </ul>
+
+
+          </div>
+        </li>
+
+        <li>
+Publications of the World Health Organization enjoy copyright protection in accordance with the provisions of Protocol 2 of the Universal Copyright Convention. All rights reserved.          <div onClick="if (document.getElementById('ipp2_4').innerHTML != '') {document.getElementById('ipp_4').innerHTML = document.getElementById('ipp2_4').innerHTML; document.getElementById('ipp2_4').innerHTML = ''}" id="ipp_4" data-fhir="generated">
+             <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span>
+          </div>
+          <div style="display: none" id="ipp2_4">
+
+            <ul>
+
+              <li>
+                <a href="http://terminology.hl7.org/6.5.0/CodeSystem-ICF.html">International Classification of Functioning, Disability and Health</a>
+:                 <a href="Questionnaire-tddui-questionnaire-aggir-pa-ssiad.html">Questionnaire/tddui-questionnaire-aggir-pa-ssiad</a>
+,                 <a href="Questionnaire-tddui-questionnaire-aggir-ph-ssiad.html">Questionnaire/tddui-questionnaire-aggir-ph-ssiad</a>
+,                 <a href="QuestionnaireResponse-tddui-questionnaire-response-aggir-pa-example.html">QuestionnaireResponse/tddui-questionnaire-response-aggir-pa-example</a>
+ and                 <a href="QuestionnaireResponse-tddui-questionnaire-response-aggir-ph-example.html">QuestionnaireResponse/tddui-questionnaire-response-aggir-ph-example</a>
+              </li>
+
+
+            </ul>
+
+
+          </div>
+        </li>
+
+        <li>
+This material contains content from           <a href="http://loinc.org">LOINC</a>
+. LOINC is copyright &copy; 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the           <a href="http://loinc.org/license">license</a>
+. LOINC&reg; is a registered United States trademark of Regenstrief Institute, Inc.          <div onClick="if (document.getElementById('ipp2_5').innerHTML != '') {document.getElementById('ipp_5').innerHTML = document.getElementById('ipp2_5').innerHTML; document.getElementById('ipp2_5').innerHTML = ''}" id="ipp_5" data-fhir="generated">
+             <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span>
+          </div>
+          <div style="display: none" id="ipp2_5">
+
+            <ul>
+
+              <li>
+                <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-loinc.html">LOINC</a>
+:                 <a href="StructureDefinition-tddui-document-reference.html">TDDUIDocumentReference</a>
+              </li>
+
+
+            </ul>
+
+
+          </div>
+        </li>
+
+        <li>
+This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact           <a href="https://www.snomed.org/get-snomed">https://www.snomed.org/get-snomed</a>
+ or           <a href="mailto:info@snomed.org">info@snomed.org</a>
+.          <div onClick="if (document.getElementById('ipp2_6').innerHTML != '') {document.getElementById('ipp_6').innerHTML = document.getElementById('ipp2_6').innerHTML; document.getElementById('ipp2_6').innerHTML = ''}" id="ipp_6" data-fhir="generated">
+             <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span>
+          </div>
+          <div style="display: none" id="ipp2_6">
+
+            <ul>
+
+              <li>
+                <a href="https://interop.esante.gouv.fr/terminologies/1.2.0/CodeSystem-900000000000207008-20250701.html">SNOMED Clinical Terms&amp;reg; (SNOMED CT&amp;reg;)</a>
+:                 <a href="Encounter-tddui-encounter-evenement-example.html">Encounter/tddui-encounter-evenement-example</a>
+ and                 <a href="StructureDefinition-tddui-ressources-used.html">TDDUIRessourcesUsed</a>
+              </li>
+
+
+            </ul>
+
+
+          </div>
+        </li>
+
+        <li>
+This material derives from the HL7 Terminology (THO). THO is copyright &copy;1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see:           <a href="https://terminology.hl7.org/license.html">https://terminology.hl7.org/license.html</a>
+          <div onClick="if (document.getElementById('ipp2_7').innerHTML != '') {document.getElementById('ipp_7').innerHTML = document.getElementById('ipp2_7').innerHTML; document.getElementById('ipp2_7').innerHTML = ''}" id="ipp_7" data-fhir="generated">
+             <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span>
+          </div>
+          <div style="display: none" id="ipp2_7">
+
+            <ul>
+
+              <li>
+                <a href="http://terminology.hl7.org/6.5.0/CodeSystem-discharge-disposition.html">Discharge disposition</a>
+:                 <a href="StructureDefinition-tddui-encounter-evenement.html">TDDUIEncounterEvenement</a>
+              </li>
+
+              <li>
+                <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v2-0203.html">identifierType</a>
+:                 <a href="Patient-tddui-patient-example.html">Patient/tddui-patient-example</a>
+,                 <a href="StructureDefinition-tddui-patient.html">TDDUIPatient</a>
+ and                 <a href="StructureDefinition-tddui-patient-ins.html">TDDUIPatientINS</a>
+              </li>
+
+              <li>
+                <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html">ActCode</a>
+:                 <a href="Bundle-ExampleTDDUIBundle.html">Bundle/ExampleTDDUIBundle</a>
+,                 <a href="Encounter-tddui-encounter-evenement-example.html">Encounter/tddui-encounter-evenement-example</a>
+ and                 <a href="Encounter-tddui-encounter-sejour-example.html">Encounter/tddui-encounter-sejour-example</a>
+              </li>
+
+              <li>
+                <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ParticipationType.html">ParticipationType</a>
+:                 <a href="Encounter-tddui-encounter-evenement-example.html">Encounter/tddui-encounter-evenement-example</a>
+ and                 <a href="StructureDefinition-tddui-encounter-evenement.html">TDDUIEncounterEvenement</a>
+              </li>
+
+
+            </ul>
+
+
+          </div>
+        </li>
+
+
+      </ul>
+
+
+    </div>
+    <h2>Copyright and Registered Trademark Uses</h2>
+    <ul>
+      <li>
+
+          IG &copy; 2023+ ANS.  Package ans.fhir.fr.tddui#2.0.0 based on FHIR 4.0.1. Generated 2025-10-21 
+          
+           
+            Liens : Table des matières |
+QA |
+Historique des versions
+Documentation
+ | New Issue
+
+          
+         (        <a href="toc.html">src</a>
+)
+      </li>
+      <li>
+Médicosocial - Transfert de données DUI - Local Development build (v2.0.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the Directory of published versions (        <a href="toc.html">src</a>
+)
+      </li>
+    </ul>
+    <h2>External References</h2>
+    <table class="grid">
+      <tr>
+        <th>
+          <b>Type</b>
+        </th>
+        <th>
+          <b>Reference</b>
+        </th>
+        <th>
+          <b>Content</b>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <a href="Bundle-ExampleTDDUIBundle.change.history.html">web</a>
+        </td>
+        <td>
+          <a href="https://esante.gouv.fr/">esante.gouv.fr</a>
+        </td>
+        <td>
+
+              <a id="hl7-logo" href="https://esante.gouv.fr/" data-no-external="true">
+<img src="assets/images/logo-ANS.svg" alt="ANS Logo" height="50"/>          </a>
+
+              <a id="hl7-search-lnk" href="searchform.html" data-no-external="true">
+<img src="assets/images/search.png" alt="Search FHIR"/>          </a>
+
+  
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Bundle-ExampleTDDUIBundle.change.history.html">web</a>
+        </td>
+        <td>
+          <a href="https://esante.gouv.fr">esante.gouv.fr</a>
+        </td>
+        <td>
+
+          IG &copy; 2023+           <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>
+.  Package ans.fhir.fr.tddui#2.0.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Oct 21, 2025 08:18+0000">2025-10-21</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)"></span>
+
+            Liens :           <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a>
+ |
+          <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA</a>
+ |
+          <a style="color: var(--footer-hyperlink-text-color)" href="https://interop.esante.gouv.fr/ig/fhir/tddui/history.html" target="_blank">Historique des versions</a>
+
+          <a style="color: var(--footer-hyperlink-text-color)" href="https://interop.esante.gouv.fr/ig/documentation" target="_blank">Documentation</a>
+
+ |           <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/issues/new" target="_blank">New Issue</a>
+
+
+          
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Bundle-ExampleTDDUIBundle.change.history.html">web</a>
+        </td>
+        <td>
+          <a href="https://interop.esante.gouv.fr/ig/documentation">interop.esante.gouv.fr</a>
+        </td>
+        <td>
+
+          IG &copy; 2023+           <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>
+.  Package ans.fhir.fr.tddui#2.0.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Oct 21, 2025 08:18+0000">2025-10-21</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)"></span>
+
+            Liens :           <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a>
+ |
+          <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA</a>
+ |
+          <a style="color: var(--footer-hyperlink-text-color)" href="https://interop.esante.gouv.fr/ig/fhir/tddui/history.html" target="_blank">Historique des versions</a>
+
+          <a style="color: var(--footer-hyperlink-text-color)" href="https://interop.esante.gouv.fr/ig/documentation" target="_blank">Documentation</a>
+
+ |           <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/issues/new" target="_blank">New Issue</a>
+
+
+          
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Bundle-ExampleTDDUIBundle.change.history.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/issues/new">github.com</a>
+        </td>
+        <td>
+
+          IG &copy; 2023+           <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>
+.  Package ans.fhir.fr.tddui#2.0.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Oct 21, 2025 08:18+0000">2025-10-21</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)"></span>
+
+            Liens :           <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a>
+ |
+          <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA</a>
+ |
+          <a style="color: var(--footer-hyperlink-text-color)" href="https://interop.esante.gouv.fr/ig/fhir/tddui/history.html" target="_blank">Historique des versions</a>
+
+          <a style="color: var(--footer-hyperlink-text-color)" href="https://interop.esante.gouv.fr/ig/documentation" target="_blank">Documentation</a>
+
+ |           <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/issues/new" target="_blank">New Issue</a>
+
+
+          
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Bundle-ExampleTDDUIBundle.change.history.html">web</a>
+        </td>
+        <td>
+          <a href="https://solidarites-sante.gouv.fr">solidarites-sante.gouv.fr</a>
+        </td>
+        <td>
+
+                        <a rel="nofollow" href="https://solidarites-sante.gouv.fr" title="Ministère des Solidarités et de la Santé (nouvelle fenêtre)" target="_blank">
+
+                
+                <img src="assets/images/logo-ministere.svg" alt="Ministère des Solidarités et de la Santé" width="133" loading="lazy" height="77"/>
+                
+              
+          </a>
+
+            
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Bundle-ExampleTDDUIBundle.change.history.html">web</a>
+        </td>
+        <td>
+          <a href="https://esante.gouv.fr/">esante.gouv.fr</a>
+        </td>
+        <td>
+
+                        <a rel="nofollow" href="https://esante.gouv.fr/" title="Agence du numérique en santé (nouvelle fenêtre)" target="_blank">
+
+                
+                <img src="assets/images/logo-ANS-footer.svg" alt="Agence du numérique en santé" width="106" loading="lazy" height="74"/>
+              
+          </a>
+
+            
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-tddui-bundle-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://en.wikipedia.org/wiki/HATEOAS">en.wikipedia.org</a>
+        </td>
+        <td>
+Both Bundle.link and Bundle.entry.link are defined to support providing additional context when Bundles are used (e.g.           <a href="http://en.wikipedia.org/wiki/HATEOAS">HATEOAS</a>
+).
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="annexes_codes_professions_roles_modes_exercices.html">web</a>
+        </td>
+        <td>
+          <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J01-XdsAuthorSpecialty-CISIS.html">ansforge.github.io</a>
+        </td>
+        <td>
+infirmier (code G15_60 /           <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J01-XdsAuthorSpecialty-CISIS.html">JDV_J01-XdsAuthorSpecialty-CISIS</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="annexes_codes_professions_roles_modes_exercices.html">web</a>
+        </td>
+        <td>
+          <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J47-FunctionCode-CISIS.html">ansforge.github.io</a>
+        </td>
+        <td>
+Coordonnateur de parcours (code 330 /           <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J47-FunctionCode-CISIS.html">JDV_J47-FunctionCode-CISIS</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="annexes_codes_professions_roles_modes_exercices.html">web</a>
+        </td>
+        <td>
+          <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J117-ModeExercice-ENREG.html">ansforge.github.io</a>
+        </td>
+        <td>
+Libéral (code L /           <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J117-ModeExercice-ENREG.html">JDV-J117-ModeExercice-ENREG</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="annexes_codes_professions_roles_modes_exercices.html">web</a>
+        </td>
+        <td>
+          <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J117-ModeExercice-ENREG.html">ansforge.github.io</a>
+        </td>
+        <td>
+Salarié (code S /           <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J117-ModeExercice-ENREG.html">JDV-J117-ModeExercice-ENREG</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="annexes_codes_professions_roles_modes_exercices.html">web</a>
+        </td>
+        <td>
+          <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J117-ModeExercice-ENREG.html">ansforge.github.io</a>
+        </td>
+        <td>
+Bénévole (code B /           <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J117-ModeExercice-ENREG.html">JDV-J117-ModeExercice-ENREG</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="annexes_documents_reference.html">web</a>
+        </td>
+        <td>
+          <a href="https://esante.gouv.fr/annexe-sources-des-donnees-personnes-et-structures">esante.gouv.fr</a>
+        </td>
+        <td>
+          <a href="https://esante.gouv.fr/annexe-sources-des-donnees-personnes-et-structures">Annexe – Source des données personnes et structures</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="annexes_documents_reference.html">web</a>
+        </td>
+        <td>
+          <a href="https://esante.gouv.fr/annexe-prise-en-charge-de-lins-dans-les-volets-du-ci-sis">esante.gouv.fr</a>
+        </td>
+        <td>
+          <a href="https://esante.gouv.fr/annexe-prise-en-charge-de-lins-dans-les-volets-du-ci-sis">Annexe – Prise en Charge de l'INS dans les volets du CI-SIS</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="annexes_documents_reference.html">web</a>
+        </td>
+        <td>
+          <a href="https://industriels.esante.gouv.fr/sites/default/files/media/document/asip_referentiel_identifiant_national_sante-liste-des-oid-des-autorites-d-affectation-des-ins_v0.1.pdf">industriels.esante.gouv.fr</a>
+        </td>
+        <td>
+          <a href="https://industriels.esante.gouv.fr/sites/default/files/media/document/asip_referentiel_identifiant_national_sante-liste-des-oid-des-autorites-d-affectation-des-ins_v0.1.pdf">Référentiel Identifiant national de santé</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="annexes_documents_reference.html">web</a>
+        </td>
+        <td>
+          <a href="https://esante.gouv.fr/">esante.gouv.fr</a>
+        </td>
+        <td>
+          <a href="https://esante.gouv.fr/">Site de l'ANS</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="annexes_documents_reference.html">web</a>
+        </td>
+        <td>
+          <a href="https://interop.esante.gouv.fr/ig/documentation/">interop.esante.gouv.fr</a>
+        </td>
+        <td>
+          <a href="https://interop.esante.gouv.fr/ig/documentation/">Documentation des guides d'implémentation de l'ANS</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pulls?q=is%3Apr+is%3Aclosed+milestone%3A2.0.0">github.com</a>
+        </td>
+        <td>
+Modifications apportées dans cette release           <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pulls?q=is%3Apr+is%3Aclosed+milestone%3A2.0.0">2.0.0</a>
+ :
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/368">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/368">Coquille SFE Modélisation Contenu</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/364">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/364">ANS-006-150 - Héritage TDDUIPatientINS</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/358">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/358">ANS-006-150 - Correction HTTPS</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/354">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/354">ANS-006-150 - Gestion des id</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/352">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/352">Modélisation - Statut d'un évènement et d'une évaluation</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/347">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/347">ANS-006-150 - Correction du flux 1</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pulls?q=is%3Apr+is%3Aclosed+milestone%3A2.0.0-ballot">github.com</a>
+        </td>
+        <td>
+Modifications apportées dans cette release           <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pulls?q=is%3Apr+is%3Aclosed+milestone%3A2.0.0-ballot">2.0.0-ballot</a>
+ :
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/323">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/323">Mise à jour de la dépendance avec l'IG terminonogies</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/325">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/325">ANS-006-150 - Création des profils TDDUI</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/327">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/327">ANS-006-150 - Restructuration du guide d'implémentation</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/328">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/328">Renommage et réorganisation de longlet spécifications fonctionnelles</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/329">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/329">ANS-006-150 -Création dun exemple de cas dusage ssiad</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/331">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/331">ANS-006-150 -Ajouter un mapping technique fonctionnel</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/333">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/333">ANS-006-150 -Mise a jour des requêtes de flux pour intégrer les nouvelles rc</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/334">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/334">Remise des anciens noms : mode entrée et mode sortie du séjour</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/339">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/339">Renommage de l'ordre de naissance</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/340">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/340">Mise à jour du lien vers les nouvelles issues</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/341">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/341">ANS-006-150 - Correction des erreurs remontées par le QA</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pulls?q=is%3Apr+is%3Aclosed+milestone%3A1.1.0">github.com</a>
+        </td>
+        <td>
+Modifications apportées dans cette release           <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pulls?q=is%3Apr+is%3Aclosed+milestone%3A1.1.0">1.1.0</a>
+ :
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/292">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/292">Ajout de l'Historique dans le Menu IG</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/290">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/290">Préparation de la release 110</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/255">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/255">Ajout JDV_ResultatQuestionEvaluation_CISIS</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/276">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/276">ANS-006-141 - Correction des erreurs et de plusieurs warning remontés par le contôle qualité de l'IG</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/269">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/269">ANS-006-141 - Mise a jour du mapping</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/268">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/268">ANS-006-141 - Mise à jour de l'exemple TDDUIBundleExample</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/266">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/266">ANS-006-141 - Mise a jour exemple &amp; nom validateur CDA</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/263">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/263">ANS-006-141 - #172 - Mise a jour contenu éléments transversaux</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/262">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/262">ANS-006-141 - #179 - Ajout du numéro de sécurité sociale dans les ST</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/261">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/261">ANS-006-141 - #165 - Mise a jour contenu sejour</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/260">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/260">ANS-006-141 - #169/#203/#165 - Mise a jour contenu evenement</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/259">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/259">ANS-006-141 - #215/#165/#213/#169 - Mise a jour contenu evaluation</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/258">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/258">ANS-006-141 - #202 - Ajout des entrées FR-Document-attache et FR-Type-document-attache</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/253">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/253">ANS-006-141 - MAJ templates génériques</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/250">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/250">ajout des ayants droit dans AMO et AMC</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/245">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/245">SFE - numero sécurité sociale NIR et NIA de l'usager</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/244">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/244">Ajout profession et rôle du PS</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/242">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/242">ANS-006-141 - MAJ Capability Statement Producteur - interaction patch</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/220">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/220">suppression statut juridique dans EJ</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/218">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/218">ajout JDV grille AGGIR SSIAD PA et PH</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/49">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/49">Rendre plus générique les cas d’usage, les rôles des acteurs sur le transfert de données</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/35">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/35">Corrections de l'IG</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/51">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/51">Supprimer les images .svg générées manuellement</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/36">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/36">Nettoyage de tableau + renommage des .md + autres</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/10">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/10">Ajout des spécifications pour la partie transport</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/11">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/11">Correctif au niveau du contenu CDA de la grille d'évaluation (section FR-Evaluation-du-statut-fonctionnel)</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="downloads.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/nmdp-bioinformatics/igloader">github.com</a>
+        </td>
+        <td>
+Pour cela, il suffit de télécharger le           <a href="package.tgz">package.tgz</a>
+ et l'importer dans un serveur, par exemple sur hapi en suivant ce           <a href="https://github.com/nmdp-bioinformatics/igloader">script python</a>
+ open source.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="index.html">web</a>
+        </td>
+        <td>
+          <a href="https://interop.esante.gouv.fr/ig/cda/tddui/">interop.esante.gouv.fr</a>
+        </td>
+        <td>
+une représentation basée sur le standard CDA qui est spécifiée dans le guide d'implémentation           <a href="https://interop.esante.gouv.fr/ig/cda/tddui/">Médicosocial - Transfert de données DUI CDA</a>
+. Ce guide est restreint au cas d'usage SSIAD.
+Les évolutions de ce guide d’implémentation sont limitées à des corrections techniques. Ce guide d'implementation sera déprécié lorsque la transition des éditeurs de CDA vers FHIR sera achevée.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="index.html">web</a>
+        </td>
+        <td>
+          <a href="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport">interop.esante.gouv.fr</a>
+        </td>
+        <td>
+          <a href="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport">TDDUI Task Transport</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="searchform.html">web</a>
+        </td>
+        <td>
+          <a href="https://esante.gouv.fr/">esante.gouv.fr</a>
+        </td>
+        <td>
+
+            <a id="hl7-logo" href="https://esante.gouv.fr/" data-no-external="true">
+<img src="assets/images/logo-ANS.svg" alt="ANS Logo" height="50">
+
+
+
+      <div id="ig-status">
+        <p><span style="font-size:12pt;font-weight:bold">Recherche sur Médicosocial - Transfert de données DUI (Current Build)</span>
+  
+<img src="assets/images/fra.svg" alt="France flag" title="France" height="16">
+
+
+          
+        
+      
+       <!-- /container -->
+  
+
+
+
+
+
+
+
+
+	<div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container">    <!-- container -->
+     <!-- HEADER CONTENT -->
+ 	      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+     <a href="http://hl7.org/fhir/index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html">Specification</a></li>
+            </ul>
+					</div>    <!-- /.nav-collapse -->
+				</div>    <!-- /.container -->
+			</nav>    <!-- /.navbar -->
+      		
+    <!-- /HEADER CONTENT -->				
+		</div>    <!-- /container -->
+	</div>    <!-- /segment-navbar -->
+	
+
+
+    <!-- ============BreadCrumb=============== -->
+
+      <!-- /container -->
+     <!-- /segment-breadcrumb -->
+
+	<div id="segment-content" class="segment">    <!-- segment-content -->
+	<div class="container">    <!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+
+
+<div class="col-12">
+
+<h2>Recherche Médicosocial - Transfert de données DUI (Current Build)</h2>
+
+<form id="searchForm">
+  <input name="q" id="q" placeholder="Recherche..." type="text" aria-label="Recherche sur qwant"/>
+  <button id="search" type="submit">Lancer la recherche</button>
+</form>
+
+
+
+<hr/>
+
+
+</div>
+
+    </div>    <!-- /inner-wrapper -->
+            </div>    <!-- /row -->
+        </div>    <!-- /container -->
+
+    </div>    <!-- /segment-content -->
+
+
+    
+
+
+				    <!-- /inner-wrapper -->
+                <!-- /row -->
+            <!-- /container -->
+        
+        <!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment">    <!-- segment-footer -->
+		<div class="container">    <!-- container -->
+			<div class="inner-wrapper">
+				<p>
+                  </p>
+			</div>    <!-- /inner-wrapper -->
+		</div>    <!-- /container -->
+	</div>    <!-- /segment-footer -->
+    <!-- disqus thread -->
+    <!-- disqus -->
+    <!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+		<div class="container">    <!-- container -->
+		</div>    <!-- /container -->
+	</div>    <!-- /segment-post-footer -->
+  <footer role="contentinfo" class="footer footer-principal">
+    <div class="footer__region1">
+      <div class="container">
+        <div class="row">
+  
+          <div class="col-md-6 col-lg-4 text-center text-md-left">
+            <div class="logos">        
+              <div class="logo logo--0">
+                <a rel="nofollow" href="https://solidarites-sante.gouv.fr" title="Ministère des Solidarités et de la Santé (nouvelle fenêtre)" target="_blank">
+                  
+                  <img src="assets/images/logo-ministere.svg" alt="Ministère des Solidarités et de la Santé" width="133" loading="lazy" height="77">
+                  
+                
+              
+          
+              <div class="logo logo--1">
+                <a rel="nofollow" href="https://esante.gouv.fr/" title="Agence du numérique en santé (nouvelle fenêtre)" target="_blank">
+                  
+                  <img src="assets/images/logo-ANS-footer.svg" alt="Agence du numérique en santé" width="106" loading="lazy" height="74">
+                
+              
+            
+          
+          
+          <div class="col-md-6 col-lg-4 text-center text-md-left">
+            <p class="footer__title">Agence du Numérique en Santé</p>
+            <p>2-10 Rue d'Oradour-sur-Glane 75015 Paris</p>
+  
+              <!-- <div class="m-social">
+              <ul class="m-social__list">        
+                <li class="m-social__item">
+                  <a class="m-social__link" href="https://www.linkedin.com/company/agence-du-numerique-en-sante/" target="_blank" rel="nofollow">
+                    <div class="m-social__icon">
+                      <svg class="svg-icon svg-linkedin" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#linkedin"></use></svg>
+                    </div>
+                    <span class="sr-only">linkedin</span>
+                  </a>
+                </li>
+                <li class="m-social__item">
+                  <a class="m-social__link" href="https://twitter.com/esante_gouv_fr" target="_blank" rel="nofollow">
+                    <div class="m-social__icon">
+                      <svg class="svg-icon svg-twitter" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#twitter"></use></svg>
+                    </div>
+                    <span class="sr-only">twitter</span>
+                  </a>
+                </li>
+                <li class="m-social__item">
+                  <a class="m-social__link" href="https://www.youtube.com/channel/UCd1zuSaU5cE1lRCpwv_HSMA" target="_blank" rel="nofollow">
+                    <div class="m-social__icon">
+                      <svg class="svg-icon svg-youtube" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#youtube"></use></svg>
+                    </div>
+                    <span class="sr-only">youtube</span>
+                  </a>
+                </li>
+                <li class="m-social__item">
+                  <a class="m-social__link" href="https://esante.gouv.fr/rss.xml" target="_blank" rel="nofollow">
+                    <div class="m-social__icon">
+                      <svg class="svg-icon svg-rss" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#rss"></use></svg>
+                    </div>
+                    <span class="sr-only">rss</span>
+                  </a>
+                </li>
+              </ul>
+            </div> -->
+          </div>
+          
+          <div class="col-6 col-lg-4">
+            <ul class="footer-list">
+              <li class="footer-list__item footer-list__item--hasIcon">
+                <a href="mailto:ci-sis@esante.gouv.fr" class="mailto-link">
+                  <svg aria-hidden="true" focusable="false" class="svg-icon svg-angle-right"><use href="assets/images/icon-sprite.svg#angle-right"></use></svg>Contact</a>
+                </li>
+                  <!-- <li class="footer-list__item">
+                  <a href="https://interop-pprod.esante.gouv.fr/ci-sis-specifications/wp-content/uploads/CGU_espace_de_tests_v1.1.pdf" class="file-link">Mentions légales</a>
+                </li> -->
+              </ul>
+            </div>
+  
+          
+        
+      
+      
+        <!-- <div class="footer__region2">
+        <div class="container">
+          <div class="footer-contentinfo">
+            <ul class="footer-list footer-list--inline">
+  
+            </ul>
+          </div>
+        </div>
+      </div> -->
+    
+    <script src="assets/js/jquery.js" type="text/javascript"> </script>         <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+    <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+    <script src="assets/js/ans-ig-addings.js" type="text/javascript"> </script>
+
+      
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+
+
+
+</img></a></div></img></a></div></div></div></div></div></div></footer></img></p></div></img>          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="searchform.html">web</a>
+        </td>
+        <td>
+          <a href="https://solidarites-sante.gouv.fr">solidarites-sante.gouv.fr</a>
+        </td>
+        <td>
+
+                          <a rel="nofollow" href="https://solidarites-sante.gouv.fr" title="Ministère des Solidarités et de la Santé (nouvelle fenêtre)" target="_blank">
+
+                  
+                  <img src="assets/images/logo-ministere.svg" alt="Ministère des Solidarités et de la Santé" width="133" loading="lazy" height="77">
+                  
+                
+              
+          
+              <div class="logo logo--1">
+                <a rel="nofollow" href="https://esante.gouv.fr/" title="Agence du numérique en santé (nouvelle fenêtre)" target="_blank">
+                  
+                  <img src="assets/images/logo-ANS-footer.svg" alt="Agence du numérique en santé" width="106" loading="lazy" height="74">
+                
+              
+            
+          
+          
+          <div class="col-md-6 col-lg-4 text-center text-md-left">
+            <p class="footer__title">Agence du Numérique en Santé</p>
+            <p>2-10 Rue d'Oradour-sur-Glane 75015 Paris</p>
+  
+              <!-- <div class="m-social">
+              <ul class="m-social__list">        
+                <li class="m-social__item">
+                  <a class="m-social__link" href="https://www.linkedin.com/company/agence-du-numerique-en-sante/" target="_blank" rel="nofollow">
+                    <div class="m-social__icon">
+                      <svg class="svg-icon svg-linkedin" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#linkedin"></use></svg>
+                    </div>
+                    <span class="sr-only">linkedin</span>
+                  </a>
+                </li>
+                <li class="m-social__item">
+                  <a class="m-social__link" href="https://twitter.com/esante_gouv_fr" target="_blank" rel="nofollow">
+                    <div class="m-social__icon">
+                      <svg class="svg-icon svg-twitter" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#twitter"></use></svg>
+                    </div>
+                    <span class="sr-only">twitter</span>
+                  </a>
+                </li>
+                <li class="m-social__item">
+                  <a class="m-social__link" href="https://www.youtube.com/channel/UCd1zuSaU5cE1lRCpwv_HSMA" target="_blank" rel="nofollow">
+                    <div class="m-social__icon">
+                      <svg class="svg-icon svg-youtube" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#youtube"></use></svg>
+                    </div>
+                    <span class="sr-only">youtube</span>
+                  </a>
+                </li>
+                <li class="m-social__item">
+                  <a class="m-social__link" href="https://esante.gouv.fr/rss.xml" target="_blank" rel="nofollow">
+                    <div class="m-social__icon">
+                      <svg class="svg-icon svg-rss" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#rss"></use></svg>
+                    </div>
+                    <span class="sr-only">rss</span>
+                  </a>
+                </li>
+              </ul>
+            </div> -->
+          </div>
+          
+          <div class="col-6 col-lg-4">
+            <ul class="footer-list">
+              <li class="footer-list__item footer-list__item--hasIcon">
+                <a href="mailto:ci-sis@esante.gouv.fr" class="mailto-link">
+                  <svg aria-hidden="true" focusable="false" class="svg-icon svg-angle-right"><use href="assets/images/icon-sprite.svg#angle-right"></use></svg>Contact</a>
+                </li>
+                  <!-- <li class="footer-list__item">
+                  <a href="https://interop-pprod.esante.gouv.fr/ci-sis-specifications/wp-content/uploads/CGU_espace_de_tests_v1.1.pdf" class="file-link">Mentions légales</a>
+                </li> -->
+              </ul>
+            </div>
+  
+          
+        
+      
+      
+        <!-- <div class="footer__region2">
+        <div class="container">
+          <div class="footer-contentinfo">
+            <ul class="footer-list footer-list--inline">
+  
+            </ul>
+          </div>
+        </div>
+      </div> -->
+    
+    <script src="assets/js/jquery.js" type="text/javascript"> </script>         <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+    <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+    <script src="assets/js/ans-ig-addings.js" type="text/javascript"> </script>
+
+      
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+
+
+
+</img></a></div></img>          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="searchform.html">web</a>
+        </td>
+        <td>
+          <a href="https://esante.gouv.fr/">esante.gouv.fr</a>
+        </td>
+        <td>
+
+                          <a rel="nofollow" href="https://esante.gouv.fr/" title="Agence du numérique en santé (nouvelle fenêtre)" target="_blank">
+
+                  
+                  <img src="assets/images/logo-ANS-footer.svg" alt="Agence du numérique en santé" width="106" loading="lazy" height="74">
+                
+              
+            
+          
+          
+          <div class="col-md-6 col-lg-4 text-center text-md-left">
+            <p class="footer__title">Agence du Numérique en Santé</p>
+            <p>2-10 Rue d'Oradour-sur-Glane 75015 Paris</p>
+  
+              <!-- <div class="m-social">
+              <ul class="m-social__list">        
+                <li class="m-social__item">
+                  <a class="m-social__link" href="https://www.linkedin.com/company/agence-du-numerique-en-sante/" target="_blank" rel="nofollow">
+                    <div class="m-social__icon">
+                      <svg class="svg-icon svg-linkedin" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#linkedin"></use></svg>
+                    </div>
+                    <span class="sr-only">linkedin</span>
+                  </a>
+                </li>
+                <li class="m-social__item">
+                  <a class="m-social__link" href="https://twitter.com/esante_gouv_fr" target="_blank" rel="nofollow">
+                    <div class="m-social__icon">
+                      <svg class="svg-icon svg-twitter" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#twitter"></use></svg>
+                    </div>
+                    <span class="sr-only">twitter</span>
+                  </a>
+                </li>
+                <li class="m-social__item">
+                  <a class="m-social__link" href="https://www.youtube.com/channel/UCd1zuSaU5cE1lRCpwv_HSMA" target="_blank" rel="nofollow">
+                    <div class="m-social__icon">
+                      <svg class="svg-icon svg-youtube" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#youtube"></use></svg>
+                    </div>
+                    <span class="sr-only">youtube</span>
+                  </a>
+                </li>
+                <li class="m-social__item">
+                  <a class="m-social__link" href="https://esante.gouv.fr/rss.xml" target="_blank" rel="nofollow">
+                    <div class="m-social__icon">
+                      <svg class="svg-icon svg-rss" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#rss"></use></svg>
+                    </div>
+                    <span class="sr-only">rss</span>
+                  </a>
+                </li>
+              </ul>
+            </div> -->
+          </div>
+          
+          <div class="col-6 col-lg-4">
+            <ul class="footer-list">
+              <li class="footer-list__item footer-list__item--hasIcon">
+                <a href="mailto:ci-sis@esante.gouv.fr" class="mailto-link">
+                  <svg aria-hidden="true" focusable="false" class="svg-icon svg-angle-right"><use href="assets/images/icon-sprite.svg#angle-right"></use></svg>Contact</a>
+                </li>
+                  <!-- <li class="footer-list__item">
+                  <a href="https://interop-pprod.esante.gouv.fr/ci-sis-specifications/wp-content/uploads/CGU_espace_de_tests_v1.1.pdf" class="file-link">Mentions légales</a>
+                </li> -->
+              </ul>
+            </div>
+  
+          
+        
+      
+      
+        <!-- <div class="footer__region2">
+        <div class="container">
+          <div class="footer-contentinfo">
+            <ul class="footer-list footer-list--inline">
+  
+            </ul>
+          </div>
+        </div>
+      </div> -->
+    
+    <script src="assets/js/jquery.js" type="text/javascript"> </script>         <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+    <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+    <script src="assets/js/ans-ig-addings.js" type="text/javascript"> </script>
+
+      
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+
+
+
+</img>          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_cas_usage.html">web</a>
+        </td>
+        <td>
+          <a href="https://www.cnsa.fr/informations-thematiques/systeme-dinformation-et-numerique/sidoba">www.cnsa.fr</a>
+        </td>
+        <td>
+La mise en œuvre de ce cas d'usage se matérialise par l'export partiel de données portant par exemple sur l’activité des Services de soins infirmiers à domicile (SSIAD) destinés aux personnages âgées et aux personnes handicapées, vers le système d’information de la CNSA (          <a href="https://www.cnsa.fr/informations-thematiques/systeme-dinformation-et-numerique/sidoba">SIDOBA</a>
+ = système d’information de l’offre de la branche autonomie).
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://esante.gouv.fr/annexe-prise-en-charge-de-lins-dans-les-volets-du-ci-sis">esante.gouv.fr</a>
+        </td>
+        <td>
+Le matricule INS est le numéro d’inscription au répertoire national d’identification des personnes physiques (NIR) ou le numéro identifiant d’attente (NIA) pour les personnes en instance d’attribution d’un NIR (Art. R. 1111-8-1.-I du CSP).          <br/>
+
+    Si le matricule INS de l'usager existe, il doit être véhiculé en priorité. Dans le cas où le matricule INS est renseigné, les traits INS (traits d'identité et traits complémentaires issus du RNIV) doivent être transmis conformément à l'          <a href="https://esante.gouv.fr/annexe-prise-en-charge-de-lins-dans-les-volets-du-ci-sis">annexe prise en charge de l'INS dans les volets du ci-sis</a>
+.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">mos.esante.gouv.fr</a>
+        </td>
+        <td>
+Identifiant local de l’usager au sein de la structure.          <br/>
+
+    Cet identifiant est obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature           <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>
+), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS) : 3+FINESS/identifiantLocalUsagerESSMS
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://mos.esante.gouv.fr/NOS/JDV_J143-AdministrativeGender-CISIS/FHIR/JDV-J143-AdministrativeGender-CISIS">mos.esante.gouv.fr</a>
+        </td>
+        <td>
+Sexe de la personne physique.          <br/>
+
+    Jeu(x) de valeur(s) associé(s) :           <a href="https://mos.esante.gouv.fr/NOS/JDV_J143-AdministrativeGender-CISIS/FHIR/JDV-J143-AdministrativeGender-CISIS">JDV-J143-AdministrativeGender-CISIS</a>
+          <br/>
+
+    Cet attribut fait partie des traits INS. Il est obligatoire si l’identité INS est qualifiée.          <br/>
+
+    Il est préconisé si le NIR ou l'identifiant local est véhiculé et que l'identité n'est pas qualifiée.
+    
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://mos.esante.gouv.fr/NOS/JDV_J245-Civilite-CISIS/FHIR/JDV-J245-Civilite-CISIS">mos.esante.gouv.fr</a>
+        </td>
+        <td>
+Civilité de l’usager.          <br/>
+
+    Jeu(x) de valeur(s) associé(s) :            <a href="https://mos.esante.gouv.fr/NOS/JDV_J245-Civilite-CISIS/FHIR/JDV-J245-Civilite-CISIS">JDV_J245-Civilite-CISIS</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://www.ameli.fr/llle-et-vilaine/assure/droits-demarches/principes/numero-securite-sociale">www.ameli.fr</a>
+        </td>
+        <td>
+Ordre d’enregistrement de la naissance dans le registre d’état civil de la commune de naissance pour le mois de la naissance. Il compose les           <a href="https://www.ameli.fr/llle-et-vilaine/assure/droits-demarches/principes/numero-securite-sociale">3 derniers chiffres du NIR de l'usager avant </a>
+ la clé de sécurité et permet de distinguer les personnes nées au même lieu et à la même période.          <br/>
+
+    Il est obligatoire si le NIR n'est pas transmis.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://mos.esante.gouv.fr/NOS/JDV_J120-CommuneHistorisee/FHIR/JDV-J120-CommuneHistorisee">mos.esante.gouv.fr</a>
+        </td>
+        <td>
+Commune de naissance de l’usager. Code officiel géographique (COG) de la commune.          <br/>
+
+    Jeu(x) de valeur(s) associé(s) :           <a href="https://mos.esante.gouv.fr/NOS/JDV_J120-CommuneHistorisee/FHIR/JDV-J120-CommuneHistorisee">JDV_J120-CommuneHistorisee</a>
+          <br/>
+
+    Cet attribut fait partie des traits INS. Il est obligatoire si l’identité INS est qualifiée.          <br/>
+
+    Il est préconisé si le NIR ou l'identifiant local est véhiculé et que l'identité n'est pas qualifiée.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://mos.esante.gouv.fr/NOS/JDV_J258-Departement/FHIR/JDV-J258-Departement">mos.esante.gouv.fr</a>
+        </td>
+        <td>
+Département de naissance de la personne. Code officiel géographique (COG) du département.          <br/>
+
+    Jeu(x) de valeur(s) associé(s) :           <a href="https://mos.esante.gouv.fr/NOS/JDV_J258-Departement/FHIR/JDV-J258-Departement">JDV-J258-Departement</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://mos.esante.gouv.fr/NOS/TRE_R89-RegroupementPays/FHIR/TRE-R89-RegroupementPays">mos.esante.gouv.fr</a>
+        </td>
+        <td>
+Pays de nationalité actuelle ou rattachement de la nationalité à un espace de pays conventionné.          <br/>
+
+    Nomenclature(s) associée(s) :           <a href="https://mos.esante.gouv.fr/NOS/TRE_R89-RegroupementPays/FHIR/TRE-R89-RegroupementPays">TRE_R89-RegroupementPays</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://mos.esante.gouv.fr/NOS/JDV_J115-Langue-ENREG/FHIR/JDV-J115-Langue-ENREG">mos.esante.gouv.fr</a>
+        </td>
+        <td>
+Langue parlée par l’usager.           <br/>
+
+    Jeu(x) de valeur(s) associé(s) :           <a href="https://mos.esante.gouv.fr/NOS/JDV_J115-Langue-ENREG/FHIR/JDV-J115-Langue-ENREG">JDV_J115-Langue-ENREG</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://smt.esante.gouv.fr/terminologie-cim-10">smt.esante.gouv.fr</a>
+        </td>
+        <td>
+Une ou plusieurs causes ayant entraîné la mort de l’usager.           <br/>
+
+    Nomenclature(s) associée(s) :           <a href="https://smt.esante.gouv.fr/terminologie-cim-10">Terminologie CIM-10</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://mos.esante.gouv.fr/NOS/JDV_J120-CommuneHistorisee/FHIR/JDV-J120-CommuneHistorisee">mos.esante.gouv.fr</a>
+        </td>
+        <td>
+Commune de décès de l’usager. Code officiel géographique (COG) de la commune.          <br/>
+
+    Jeu(x) de valeur(s) associé(s) :           <a href="https://mos.esante.gouv.fr/NOS/JDV_J120-CommuneHistorisee/FHIR/JDV-J120-CommuneHistorisee">JDV-J120-CommuneHistorisee</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://mos.esante.gouv.fr/NOS/JDV_J258-Departement/FHIR/JDV-J258-Departement">mos.esante.gouv.fr</a>
+        </td>
+        <td>
+Département de décès de l’usager. Code officiel géographique (COG) du département.          <br/>
+
+    Jeu(x) de valeur(s) associé(s) :           <a href="https://mos.esante.gouv.fr/NOS/JDV_J258-Departement/FHIR/JDV-J258-Departement">JDV-J258-Departement</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://mos.esante.gouv.fr/NOS/JDV_J225-CanalCommunication-ROR/FHIR/JDV-J225-CanalCommunication-ROR">mos.esante.gouv.fr</a>
+        </td>
+        <td>
+Code spécifiant le canal ou la manière dont s'établit la communication (téléphone, e-mail, URL, etc.).          <br/>
+
+    Nomenclature(s) associée(s) :           <a href="https://mos.esante.gouv.fr/NOS/JDV_J225-CanalCommunication-ROR/FHIR/JDV-J225-CanalCommunication-ROR">JDV-J225-CanalCommunication-ROR</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://mos.esante.gouv.fr/NOS/JDV_J30-TemporaliteAccueil-ROR/FHIR/JDV-J30-TemporaliteAccueil-ROR">mos.esante.gouv.fr</a>
+        </td>
+        <td>
+Fréquence d'accueil lors d'une prise en charge en ESSMS.          <br/>
+
+    Nomenclature(s) associée(s) :           <a href="https://mos.esante.gouv.fr/NOS/JDV_J30-TemporaliteAccueil-ROR/FHIR/JDV-J30-TemporaliteAccueil-ROR">JDV_J30-TemporaliteAccueil-ROR</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://mos.esante.gouv.fr/NOS/JDV_J245-Civilite-CISIS/FHIR/JDV-J245-Civilite-CISIS">mos.esante.gouv.fr</a>
+        </td>
+        <td>
+Civilité du contact.          <br/>
+
+    jeu(x) de valeur(s) associé(s) :            <a href="https://mos.esante.gouv.fr/NOS/JDV_J245-Civilite-CISIS/FHIR/JDV-J245-Civilite-CISIS">JDV_J245-Civilite-CISIS</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass">mos.esante.gouv.fr</a>
+        </td>
+        <td>
+Rôle de la personne point de contact auprès d'une autre personne. Exemple dans le cas d'un patient, ce rôle indique si le point de contact est la personne à prévenir en cas d'urgence, la personne de confiance, etc.          <br/>
+
+    Nomenclature(s) associée(s) :           <a href="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass">TRE_R260-HL7RoleClass</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode">mos.esante.gouv.fr</a>
+        </td>
+        <td>
+Lien de la personne point de contact auprès d'une autre personne. Exemple dans le cas d'un patient, ce lien indique si le point de contact est son enfant, son frère, etc.          <br/>
+
+    Nomenclature(s) associée(s) :           <br/>
+
+              <a href="https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode">TRE_R216-HL7RoleCode</a>
+          <br/>
+
+              <a href="https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique">TRE_R217-ProtectionJuridique</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique">mos.esante.gouv.fr</a>
+        </td>
+        <td>
+Lien de la personne point de contact auprès d'une autre personne. Exemple dans le cas d'un patient, ce lien indique si le point de contact est son enfant, son frère, etc.          <br/>
+
+    Nomenclature(s) associée(s) :           <br/>
+
+              <a href="https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode">TRE_R216-HL7RoleCode</a>
+          <br/>
+
+              <a href="https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique">TRE_R217-ProtectionJuridique</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://mos.esante.gouv.fr/NOS/TRE_R251-FonctionContact/FHIR/TRE-R251-FonctionContact">mos.esante.gouv.fr</a>
+        </td>
+        <td>
+Un titre, une position ou une fonction de la personne assurant le contact au sein de son organisation (directeur, secrétaire, etc.).
+              <a href="https://mos.esante.gouv.fr/NOS/TRE_R251-FonctionContact/FHIR/TRE-R251-FonctionContact">TRE_R251-FonctionContact</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">mos.esante.gouv.fr</a>
+        </td>
+        <td>
+Cet identifiant est obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature           <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>
+), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de six caractères "SEJOUR" et numéro de dossier administratif du séjour dans le DUI (numeroDossier) :           <br/>
+idSejour = 3+FINESS/identifiantLocalUsagerESSMS-SEJOUR-numeroDossier
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">mos.esante.gouv.fr</a>
+        </td>
+        <td>
+Identifiant technique de l’évaluation obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature           <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>
+), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "EVAL" et du numéro de l’évaluation dans le DUI (numEvaluation) :           <br/>
+idEvaluation = 3+FINESS/identifiantLocalUsagerESSMS-EVAL-numEvaluation
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">esante.gouv.fr</a>
+        </td>
+        <td>
+Type de l’évaluation.          <br/>
+
+    Jeu(x) de valeur(s) associé(s) : JDV_TypeEvaluation_CISIS avec l'OID 1.2.250.1.213.1.1.5.802 publié sur           <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a>
+
+    
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">esante.gouv.fr</a>
+        </td>
+        <td>
+Résultat global de l’évaluation. Le resultat est à renseigner uniquement lorsqu'il s'agit d'une Evaluation AGGIR PH SSIAD ou Evaluation AGGIR PA SSIAD          <br/>
+
+    - Evaluation AGGIR PH SSIAD : JDV_GIR_CISIS avec l'OID 1.2.250.1.213.1.1.5.53 publié sur           <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a>
+          <br/>
+
+    - Evaluation AGGIR PA SSIAD : JDV_GIR_CISIS avec l'OID 1.2.250.1.213.1.1.5.53 publié sur           <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a>
+
+    
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">esante.gouv.fr</a>
+        </td>
+        <td>
+Critère d'évaluation de la grille.          <br/>
+
+    Jeu(x) de valeur(s) associé(s) : un jeu de valeur par type d'évaluation           <br/>
+
+    - Evaluation AGGIR PH SSIAD :  JDV_EvaluationAGGIRPH_CISIS avec l'OID 1.2.250.1.213.1.1.5.805 publié sur           <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a>
+          <br/>
+
+    - Evaluation AGGIR PA SSIAD : JDV_EvaluationAGGIRPA_CISIS avec l'OID 1.2.250.1.213.1.1.5.806 publié sur           <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a>
+          <br/>
+
+    - Evaluation de la situation SSIAD : JDV_EvaluationSSIAD_CISIS avec l'OID 1.2.250.1.213.1.1.5.804
+    publié sur           <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a>
+          <br/>
+
+    - Evaluation Serafin : Jeu de valeur issue de la terminologie Serafin correspondant à la famille 1-Besoin. Jeu(x) de valeur(s) associé(s) :           <a href="https://mos.esante.gouv.fr/NOS/JDV_J285-Besoins_SERAFIN/FHIR/JDV-J285-Besoins-SERAFIN">JDV-J285-Besoins_SERAFIN</a>
+
+    
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://mos.esante.gouv.fr/NOS/JDV_J285-Besoins_SERAFIN/FHIR/JDV-J285-Besoins-SERAFIN">mos.esante.gouv.fr</a>
+        </td>
+        <td>
+Critère d'évaluation de la grille.          <br/>
+
+    Jeu(x) de valeur(s) associé(s) : un jeu de valeur par type d'évaluation           <br/>
+
+    - Evaluation AGGIR PH SSIAD :  JDV_EvaluationAGGIRPH_CISIS avec l'OID 1.2.250.1.213.1.1.5.805 publié sur           <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a>
+          <br/>
+
+    - Evaluation AGGIR PA SSIAD : JDV_EvaluationAGGIRPA_CISIS avec l'OID 1.2.250.1.213.1.1.5.806 publié sur           <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a>
+          <br/>
+
+    - Evaluation de la situation SSIAD : JDV_EvaluationSSIAD_CISIS avec l'OID 1.2.250.1.213.1.1.5.804
+    publié sur           <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a>
+          <br/>
+
+    - Evaluation Serafin : Jeu de valeur issue de la terminologie Serafin correspondant à la famille 1-Besoin. Jeu(x) de valeur(s) associé(s) :           <a href="https://mos.esante.gouv.fr/NOS/JDV_J285-Besoins_SERAFIN/FHIR/JDV-J285-Besoins-SERAFIN">JDV-J285-Besoins_SERAFIN</a>
+
+    
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">esante.gouv.fr</a>
+        </td>
+        <td>
+Résultat du champs évalué dont le type est défini selon la grille d'évaluation.          <br/>
+
+    - Evaluation AGGIR PH PA SSIAD : Le résultat du champ évalué peut véhiculer un code intermédiaire : JDV_ResultatEvaluation_CISIS avec l'OID 1.2.250.1.213.1.1.5.816 publié sur           <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs.</a>
+          <br/>
+
+    Pour les évaluations AGGIR PH PA SSIAD, chaque champ évalué doit être détaillé selon 4 critères dans un deuxième niveau de détail.          <br/>
+
+    - Evaluation de la situation SSIAD : Indicateur.          <br/>
+
+    - Evaluation Serafin : Numérique.
+    
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">esante.gouv.fr</a>
+        </td>
+        <td>
+Critère évalué.          <br/>
+
+    Jeu(x) de valeur(s) associé(s) :           <br/>
+
+    - Evaluation AGGIR PH PA SSIAD : JDV_ResultatQuestionEvaluation_CISIS avec l'OID 1.2.250.1.213.1.1.5.817 publié sur           <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs.</a>
+          <br/>
+
+    
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">mos.esante.gouv.fr</a>
+        </td>
+        <td>
+Identifiant technique de l’évènement obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature           <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>
+), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de trois caractères "EVN" et du numéro de l’évènement dans le DUI (numEvenement) :          <br/>
+ idEvenement = 3+FINESS/identifiantLocalUsagerESSMS-EVN-numEvenement
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">esante.gouv.fr</a>
+        </td>
+        <td>
+
+        - d'un code issu du jeu de valeur associé : JDV_TypeEvenementSSIAD_CISIS avec l'OID 1.2.250.1.213.1.1.5.811 publié sur           <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a>
+          <br/>
+
+        - peut contenir un code issu de la terminologie Serafin correspondant aux familles 2-PrestationDirecte et 3-PrestationIndirecte.  Jeu(x) de valeur(s) associé(s) :           <a href="https://mos.esante.gouv.fr/NOS/JDV_J284-PrestationsDirects_SERAFIN/FHIR/JDV-J284-PrestationsDirects-SERAFIN/">JDV-J284-PrestationsDirects_SERAFIN</a>
+,           <a href="https://mos.esante.gouv.fr/NOS/JDV_J283-PrestationsIndirects_SERAFIN/FHIR/JDV-J283-PrestationsIndirects-SERAFIN">JDV-J283-PrestationsIndirects_SERAFIN</a>
+          <br/>
+
+        - peut contenir un texte non structuré véhiculant les autres types d’évènements.          <br/>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://mos.esante.gouv.fr/NOS/JDV_J284-PrestationsDirects_SERAFIN/FHIR/JDV-J284-PrestationsDirects-SERAFIN/">mos.esante.gouv.fr</a>
+        </td>
+        <td>
+
+        - d'un code issu du jeu de valeur associé : JDV_TypeEvenementSSIAD_CISIS avec l'OID 1.2.250.1.213.1.1.5.811 publié sur           <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a>
+          <br/>
+
+        - peut contenir un code issu de la terminologie Serafin correspondant aux familles 2-PrestationDirecte et 3-PrestationIndirecte.  Jeu(x) de valeur(s) associé(s) :           <a href="https://mos.esante.gouv.fr/NOS/JDV_J284-PrestationsDirects_SERAFIN/FHIR/JDV-J284-PrestationsDirects-SERAFIN/">JDV-J284-PrestationsDirects_SERAFIN</a>
+,           <a href="https://mos.esante.gouv.fr/NOS/JDV_J283-PrestationsIndirects_SERAFIN/FHIR/JDV-J283-PrestationsIndirects-SERAFIN">JDV-J283-PrestationsIndirects_SERAFIN</a>
+          <br/>
+
+        - peut contenir un texte non structuré véhiculant les autres types d’évènements.          <br/>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://mos.esante.gouv.fr/NOS/JDV_J283-PrestationsIndirects_SERAFIN/FHIR/JDV-J283-PrestationsIndirects-SERAFIN">mos.esante.gouv.fr</a>
+        </td>
+        <td>
+
+        - d'un code issu du jeu de valeur associé : JDV_TypeEvenementSSIAD_CISIS avec l'OID 1.2.250.1.213.1.1.5.811 publié sur           <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a>
+          <br/>
+
+        - peut contenir un code issu de la terminologie Serafin correspondant aux familles 2-PrestationDirecte et 3-PrestationIndirecte.  Jeu(x) de valeur(s) associé(s) :           <a href="https://mos.esante.gouv.fr/NOS/JDV_J284-PrestationsDirects_SERAFIN/FHIR/JDV-J284-PrestationsDirects-SERAFIN/">JDV-J284-PrestationsDirects_SERAFIN</a>
+,           <a href="https://mos.esante.gouv.fr/NOS/JDV_J283-PrestationsIndirects_SERAFIN/FHIR/JDV-J283-PrestationsIndirects-SERAFIN">JDV-J283-PrestationsIndirects_SERAFIN</a>
+          <br/>
+
+        - peut contenir un texte non structuré véhiculant les autres types d’évènements.          <br/>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://mos.esante.gouv.fr/NOS/JDV_J284-PrestationsDirects_SERAFIN/FHIR/JDV-J284-PrestationsDirects-SERAFIN/">mos.esante.gouv.fr</a>
+        </td>
+        <td>
+
+      - du jeu de valeur issue de la terminologie Serafin correspondant aux familles 2-PrestationDirecte et 3-PrestationIndirecte. Jeu(x) de valeur(s) associé(s) :           <a href="https://mos.esante.gouv.fr/NOS/JDV_J284-PrestationsDirects_SERAFIN/FHIR/JDV-J284-PrestationsDirects-SERAFIN/">JDV-J284-PrestationsDirects_SERAFIN</a>
+,           <a href="https://mos.esante.gouv.fr/NOS/JDV_J283-PrestationsIndirects_SERAFIN/FHIR/JDV-J283-PrestationsIndirects-SERAFIN">JDV_J283-PrestationsIndirects_SERAFIN</a>
+          <br/>
+
+      - et/ou d’un texte non structuré véhiculant les autres types d’évènements.
+      
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://mos.esante.gouv.fr/NOS/JDV_J283-PrestationsIndirects_SERAFIN/FHIR/JDV-J283-PrestationsIndirects-SERAFIN">mos.esante.gouv.fr</a>
+        </td>
+        <td>
+
+      - du jeu de valeur issue de la terminologie Serafin correspondant aux familles 2-PrestationDirecte et 3-PrestationIndirecte. Jeu(x) de valeur(s) associé(s) :           <a href="https://mos.esante.gouv.fr/NOS/JDV_J284-PrestationsDirects_SERAFIN/FHIR/JDV-J284-PrestationsDirects-SERAFIN/">JDV-J284-PrestationsDirects_SERAFIN</a>
+,           <a href="https://mos.esante.gouv.fr/NOS/JDV_J283-PrestationsIndirects_SERAFIN/FHIR/JDV-J283-PrestationsIndirects-SERAFIN">JDV_J283-PrestationsIndirects_SERAFIN</a>
+          <br/>
+
+      - et/ou d’un texte non structuré véhiculant les autres types d’évènements.
+      
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">esante.gouv.fr</a>
+        </td>
+        <td>
+Type de ressources utilisées dans le cadre de l’évènement (matériel, immobilier, véhicule).          <br/>
+
+    Jeu(x) de valeur(s) associé(s) : JDV_RessourceUtilisee_CISIS avec l'OID 1.2.250.1.213.1.1.5.807 publié sur           <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a>
+
+    
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">esante.gouv.fr</a>
+        </td>
+        <td>
+Détail du type de ressources utilisées dans le cadre de l’évènement (pour matériel : matériel médical, matériel pédagogique ; pour immobilier : bâtiment, salle, chambre).          <br/>
+
+    Jeu(x) de valeur(s) associé(s) :          <br/>
+
+    - JDV_DetailMaterielSpecialise_CISIS avec l'OID 1.2.250.1.213.1.1.5.808 publié sur           <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a>
+          <br/>
+
+    - JDV_DetailRessourceImmobiliereUtilisee_CISIS avec l'OID 1.2.250.1.213.1.1.5.809 publié sur           <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a>
+
+    
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">esante.gouv.fr</a>
+        </td>
+        <td>
+Type de transport.          <br/>
+
+    Jeu(x) de valeur(s) associé(s) : JDV_ModeDeTransport_CISIS avec l'OID 1.2.250.1.213.1.1.5.140 
+    publié sur           <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a>
+
+    
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">esante.gouv.fr</a>
+        </td>
+        <td>
+Type de motorisation associée au véhicule utilisé lors du transport.          <br/>
+
+    Jeu(x) de valeur(s) associé(s) : JDV_TypeMotorisation_CISIS avec l'OID 1.2.250.1.213.1.1.5.801 publié sur           <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a>
+ 
+    
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">mos.esante.gouv.fr</a>
+        </td>
+        <td>
+L'identifiant technique du transport est obtenu dans ce contexte par par la concaténation du type d'identifiant national de personne (provenant de la nomenclature           <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>
+), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de cinq caractères "TPPro" et du numéro de transport du professionnel dans le DUI (idTransport) :          <br/>
+ idTrajet = 3+FINESS/identifiantLocalUsagerESSMS-TPPro-idTransport
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">mos.esante.gouv.fr</a>
+        </td>
+        <td>
+L'identifiant technique du transport est obtenu dans ce contexte par par la concaténation du type d'identifiant national de personne (provenant de la nomenclature           <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>
+), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de cinq caractères "TPPat" et du numéro de transport de l'usager dans le DUI (idTransport) :          <br/>
+ idTrajet = 3+FINESS/identifiantLocalUsagerESSMS-TPPat-idTransport
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://mos.esante.gouv.fr/NOS/JDV_J282-TransportsLiesAuProjetIndividuel_SERAFIN/FHIR/JDV-J282-TransportsLiesAuProjetIndividuel-SERAFIN">mos.esante.gouv.fr</a>
+        </td>
+        <td>
+Nature du transport de l'usager.          <br/>
+
+    Jeu de valeur issue de la terminologie Serafin correspondant aux familles (3.2.4.1, 3.2.4.2, 3.2.4.3).          <br/>
+
+    Jeu(x) de valeur(s) associé(s) :           <a href="https://mos.esante.gouv.fr/NOS/JDV_J282-TransportsLiesAuProjetIndividuel_SERAFIN/FHIR/JDV-J282-TransportsLiesAuProjetIndividuel-SERAFIN">JDV_J282-TransportsLiesAuProjetIndividuel_SERAFIN</a>
+
+    
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">mos.esante.gouv.fr</a>
+        </td>
+        <td>
+Identification nationale principale du professionnel. Cette identification est obtenue par la concaténation du type d'identifiant national de personne (provenant de la nomenclature           <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>
+) et de l'identifiant de la personne physique. Voir la description complète de idNat_PS dans le MOS.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://mos.esante.gouv.fr/NOS/JDV_J245-Civilite-CISIS/FHIR/JDV-J245-Civilite-CISIS">mos.esante.gouv.fr</a>
+        </td>
+        <td>
+Civilité de la personne.           <br/>
+
+    Jeu(x) de valeur(s) associé(s) :            <a href="https://mos.esante.gouv.fr/NOS/JDV_J245-Civilite-CISIS/FHIR/JDV-J245-Civilite-CISIS">JDV_J245-Civilite-CISIS</a>
+
+    
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://mos.esante.gouv.fr/NOS/JDV_J01-XdsAuthorSpecialty-CISIS/FHIR/JDV-J01-XdsAuthorSpecialty-CISIS">mos.esante.gouv.fr</a>
+        </td>
+        <td>
+Profession / Spécialité du professionnel.           <br/>
+
+    Jeu(x) de valeur(s) associé(s) :            <a href="https://mos.esante.gouv.fr/NOS/JDV_J01-XdsAuthorSpecialty-CISIS/FHIR/JDV-J01-XdsAuthorSpecialty-CISIS">JDV_J01-XdsAuthorSpecialty-CISIS</a>
+
+    
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://mos.esante.gouv.fr/NOS/JDV_J47-FunctionCode-CISIS/FHIR/JDV-J47-FunctionCode-CISIS">mos.esante.gouv.fr</a>
+        </td>
+        <td>
+Rôle fonctionnel du professionnel.           <br/>
+
+    Jeu(x) de valeur(s) associé(s) :            <a href="https://mos.esante.gouv.fr/NOS/JDV_J47-FunctionCode-CISIS/FHIR/JDV-J47-FunctionCode-CISIS">JDV-J47-FunctionCode-CISIS</a>
+
+    
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://mos.esante.gouv.fr/NOS/JDV_J117-ModeExercice-ENREG/FHIR/JDV-J117-ModeExercice-ENREG">mos.esante.gouv.fr</a>
+        </td>
+        <td>
+Mode d'exercice du professionnel. Décrit selon quelle modalité est exercée l'activité du professionnel par rapport à son établissement de rattachement.          <br/>
+
+    Jeu(x) de valeur(s) associé(s) :            <a href="https://mos.esante.gouv.fr/NOS/JDV_J117-ModeExercice-ENREG/FHIR/JDV-J117-ModeExercice-ENREG">JDV-J117-ModeExercice-ENREG</a>
+
+    
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://mos.esante.gouv.fr/NOS/TRE_G07-TypeIdentifiantStructure/FHIR/TRE-G07-TypeIdentifiantStructure">mos.esante.gouv.fr</a>
+        </td>
+        <td>
+Identification nationale de l'Entité juridique. Cette identification est obtenue par la concaténation du type d'identifiant national de structure (provenant de la nomenclature           <a href="https://mos.esante.gouv.fr/NOS/TRE_G07-TypeIdentifiantStructure/FHIR/TRE-G07-TypeIdentifiantStructure">TRE_G07-TypeIdentifiantStructure</a>
+) et de l'identifiant de la structure: ** 1 + N° FINESS.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://mos.esante.gouv.fr/NOS/JDV_J281-StatutsRessourcesMS/FHIR/JDV-J281-StatutsRessourcesMS">mos.esante.gouv.fr</a>
+        </td>
+        <td>
+Statut de la ressource impactée.           <br/>
+
+    Jeu(x) de valeur(s) associé(s) :            <a href="https://mos.esante.gouv.fr/NOS/JDV_J281-StatutsRessourcesMS/FHIR/JDV-J281-StatutsRessourcesMS">JDV_J281-StatutsRessourcesMS</a>
+          <br/>
+
+    - Pour l'Evaluation seuls les codes suivants sont à utiliser : APPROUVE, VALIDE, TERMINE           <br/>
+
+    - Pour l'Evènement seuls les codes suivants sont à utiliser : PLANIFIE, VALIDE, REALISE, ANNULE
+    
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">esante.gouv.fr</a>
+        </td>
+        <td>
+Motif associé au statut de non-réalisation de l’évènement.          <br/>
+
+    Jeu(x) de valeur(s) associé(s) : JDV_MotifNonRealisationEvenement_CISIS avec l'OID 1.2.250.1.213.1.1.5.803
+    publié sur           <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a>
+ 
+    
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="tests.html">web</a>
+        </td>
+        <td>
+          <a href="https://interop.esante.gouv.fr/evs/fhir/validator.seam?standard=31">interop.esante.gouv.fr</a>
+        </td>
+        <td>
+La plateforme de test           <a href="https://interop.esante.gouv.fr/evs/fhir/validator.seam?standard=31">EVSClient</a>
+ propose un validateur FHIR par profil défini dans ce guide d'implémentation (cf onglet           <a href="artifacts.html">Ressources de conformité</a>
+).
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="tests.html">web</a>
+        </td>
+        <td>
+          <a href="https://interop.esante.gouv.fr/gazelle-documentation/EVS-Client/user.html">interop.esante.gouv.fr</a>
+        </td>
+        <td>
+La documentation de l'outil EVSClient est accessible           <a href="https://interop.esante.gouv.fr/gazelle-documentation/EVS-Client/user.html">ici</a>
+.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="tests.html">web</a>
+        </td>
+        <td>
+          <a href="https://interop.esante.gouv.fr/ig/documentation/tests.html">interop.esante.gouv.fr</a>
+        </td>
+        <td>
+Le guide d'implémentation de l'ANS décrit sur           <a href="https://interop.esante.gouv.fr/ig/documentation/tests.html">cette page</a>
+ les différents outils de tests à disposition.
+        </td>
+      </tr>
+    </table>
+    <h2>Internal Images</h2>
+    <table class="grid">
+      <tr>
+        <td>
+ci-sis-logo.png          <br/>
+          <img src="ci-sis-logo.png" alt="ci-sis-logo.png" width="600px" height="auto"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+tree-filter.png          <br/>
+          <img src="tree-filter.png" alt="tree-filter.png" width="600px" height="auto"/>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
