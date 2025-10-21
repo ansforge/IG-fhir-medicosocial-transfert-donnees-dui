@@ -19,8 +19,8 @@ Description: "Profil générique créé pour transmettre des données d'un logic
     DUIPractitioner 0..* and
     DUIPractitionerRole 0..* and
     DUITransportProfessionnel 0..* and
-    DUITransportUsager 0..*
-    DUIDocumentReference 0..*
+    DUITransportUsager 0..* and
+    DUIDocumentReference 0..* and
     DUIQuestionnaireResponse 0..*
 
 * entry[DUIPatient].resource only TDDUIPatient

@@ -23,6 +23,12 @@ Les différentes ressources sont véhiculées via l'élément : Bundle.entry. Le
 * [TDDUITaskTransportProfessionnel](StructureDefinition-tddui-task-transport-professionnel.html) représentant le transport du professionnel,
 * [TDDUITaskTransportUsager](StructureDefinition-tddui-task-transport-usager.html) représentant le transport de l'usager,
 * [TDDUIQuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.html) représentant les réponses aux questionnaires dans le cadre des évaluations.
+  - La ressource QuestionnaireResponse doit être conforme à un des 4 Questionnaires suivants : 
+    - [tddui-questionnaire-aggir-pa-ssiad](Questionnaire-tddui-questionnaire-aggir-pa-ssiad.html)
+    - [tddui-questionnaire-aggir-ph-ssiad](Questionnaire-tddui-questionnaire-aggir-ph-ssiad.html)
+    - [tddui-questionnaire-serafin](Questionnaire-tddui-questionnaire-serafin.html)
+    - [tddui-questionnaire-situation-ssiad](Questionnaire-tddui-questionnaire-situation-ssiad.html)
+
 * [TDDUIDocumentReference](StructureDefinition-tddui-document-reference.html)
 Pour toutes ces ressources, seule la création est possible via l'intéraction FHIR <a href="https://hl7.org/fhir/R4/http.html#create">Create</a>.
 
