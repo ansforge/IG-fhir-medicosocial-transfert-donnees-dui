@@ -24,7 +24,7 @@ Description: "Exemple d'un séjour en ESSMS"
 
 // Identifiant du séjour
 * identifier[idStay]
-  * system = "urn:oid:1.2.250.2345.3245.13"
+  * system = "https://identifiant-medicosocial-sejour.cnsa.fr"
   * value = "3480787529/147720425367411-SEJOUR-1012"
 
 * subject = Reference(tddui-patient-ins-example)

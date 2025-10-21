@@ -4,6 +4,7 @@ Usage: #example
 Description: "Exemple du transport de l'usager."
 
 * identifier.value = "3480787529/147720425367411-TPU-154675"
+* identifier.system = "https://identifiant-medicosocial-transportusager.cnsa.fr"
 
 * status = #completed
 * intent = #plan

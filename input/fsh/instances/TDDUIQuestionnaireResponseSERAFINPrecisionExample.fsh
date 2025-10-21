@@ -4,6 +4,7 @@ Description: "Evaluation SERAFIN pour un besoin d'hébergement adapté avec pré
 Usage: #example
 
 * identifier.value = "3480787529/147720425367411-EVAL-21564655"
+* identifier.system = "https://identifiant-medicosocial-evaluation.cnsa.fr"
 
 * questionnaire = "https://interop.esante.gouv.fr/ig/fhir/tddui/Questionnaire/tddui-questionnaire-serafin"
 

@@ -3,7 +3,7 @@ InstanceOf: TDDUIEncounterEvenement
 Usage: #example
 Description: "Exemple d'un évènement"
 
-* identifier.system = "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identifier-type"
+* identifier.system = "https://identifiant-medicosocial-evenement.cnsa.fr"
 * identifier.value = "3480787529/147720425367411-EVN-12548"
 * identifier.type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identifier-type#VN
 
