@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle | *Version*:2.0.0 |
-| Active as of 2025-10-20 | *Computable Name*:TDDUIBundle |
+| Active as of 2025-10-21 | *Computable Name*:TDDUIBundle |
 
  
 Profil générique créé pour transmettre des données d'un logiciel DUI. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
   "name" : "TDDUIBundle",
   "title" : "TDDUI Bundle",
   "status" : "active",
-  "date" : "2025-10-20T13:10:23+00:00",
+  "date" : "2025-10-21T07:40:55+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -278,7 +278,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
         "id" : "Bundle.entry:DUIPractitioner",
         "path" : "Bundle.entry",
         "sliceName" : "DUIPractitioner",
-        "short" : "Encounter conforming to the TDDUIPractitioner profile, used to convey the practitioner.",
+        "short" : "Practitioner conforming to the TDDUIPractitioner profile, used to convey the practitioner.",
         "min" : 0,
         "max" : "*"
       },
@@ -309,7 +309,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
         "id" : "Bundle.entry:DUIPractitionerRole",
         "path" : "Bundle.entry",
         "sliceName" : "DUIPractitionerRole",
-        "short" : "Encounter conforming to the TDDUIPractitionerRole profile, used to convey the practitioner.",
+        "short" : "PractitionerRole conforming to the TDDUIPractitionerRole profile, used to convey the practitioner.",
         "min" : 0,
         "max" : "*"
       },
@@ -340,7 +340,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
         "id" : "Bundle.entry:DUITransportProfessionnel",
         "path" : "Bundle.entry",
         "sliceName" : "DUITransportProfessionnel",
-        "short" : "Encounter conforming to the TDDUITaskTransportProfessionnel profile, used to convey the practitioner transportation.",
+        "short" : "Task conforming to the TDDUITaskTransportProfessionnel profile, used to convey the practitioner transportation.",
         "min" : 0,
         "max" : "*"
       },
@@ -371,7 +371,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
         "id" : "Bundle.entry:DUITransportUsager",
         "path" : "Bundle.entry",
         "sliceName" : "DUITransportUsager",
-        "short" : "Encounter conforming to the TDDUITaskTransportUsager profile, used to convey the patient transportation.",
+        "short" : "Task conforming to the TDDUITaskTransportUsager profile, used to convey the patient transportation.",
         "min" : 0,
         "max" : "*"
       },
@@ -397,6 +397,44 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
         "id" : "Bundle.entry:DUITransportUsager.request.method",
         "path" : "Bundle.entry.request.method",
         "patternCode" : "POST"
+      },
+      {
+        "id" : "Bundle.entry:DUIDocumentReference",
+        "path" : "Bundle.entry",
+        "sliceName" : "DUIDocumentReference",
+        "short" : "DocumentReference conforming to the TDDUIDocumentReference profile, used to convey evaluation attachement",
+        "min" : 0,
+        "max" : "*"
+      },
+      {
+        "id" : "Bundle.entry:DUIDocumentReference.resource",
+        "path" : "Bundle.entry.resource",
+        "min" : 1,
+        "type" : [
+          {
+            "code" : "DocumentReference",
+            "profile" : [
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "Bundle.entry:DUIDocumentReference.request",
+        "path" : "Bundle.entry.request",
+        "min" : 1
+      },
+      {
+        "id" : "Bundle.entry:DUIDocumentReference.request.method",
+        "path" : "Bundle.entry.request.method",
+        "patternCode" : "POST"
+      },
+      {
+        "id" : "Bundle.entry:DUIQuestionnaireResponse",
+        "path" : "Bundle.entry",
+        "sliceName" : "DUIQuestionnaireResponse",
+        "min" : 0,
+        "max" : "*"
       }
     ]
   }

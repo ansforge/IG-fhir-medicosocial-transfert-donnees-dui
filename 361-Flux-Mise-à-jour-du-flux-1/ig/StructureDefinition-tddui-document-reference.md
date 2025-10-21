@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference | *Version*:2.0.0 |
-| Active as of 2025-10-20 | *Computable Name*:TDDUIDocumentReference |
+| Active as of 2025-10-21 | *Computable Name*:TDDUIDocumentReference |
 
  
 Profil de la ressource SimplifiedPublishDocumentReference pour les pièces jointes liées à l’événement et à l'évaluation. 
@@ -21,6 +21,7 @@ Profil de la ressource SimplifiedPublishDocumentReference pour les pièces joint
 
 **Usages:**
 
+* Use this Profile: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
 * Refer to this Profile: [Pièce jointe](StructureDefinition-tddui-attachment.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-document-reference)
@@ -46,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-document-refer
   "name" : "TDDUIDocumentReference",
   "title" : "TDDUI DocumentReference",
   "status" : "active",
-  "date" : "2025-10-20T13:10:23+00:00",
+  "date" : "2025-10-21T07:40:55+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -117,10 +118,6 @@ Other representations of profile: [CSV](StructureDefinition-tddui-document-refer
   "derivation" : "constraint",
   "differential" : {
     "element" : [
-      {
-        "id" : "DocumentReference",
-        "path" : "DocumentReference"
-      },
       {
         "id" : "DocumentReference.meta.versionId",
         "path" : "DocumentReference.meta.versionId",
