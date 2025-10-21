@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference | *Version*:2.0.0 |
-| Active as of 2025-10-20 | *Computable Name*:TDDUIDocumentReference |
+| Active as of 2025-10-21 | *Computable Name*:TDDUIDocumentReference |
 
  
 Profil de la ressource SimplifiedPublishDocumentReference pour les pièces jointes liées à l’événement et à l'évaluation. 
@@ -22,6 +22,7 @@ Profil de la ressource SimplifiedPublishDocumentReference pour les pièces joint
 **Usages:**
 
 * Refer to this Profile: [Pièce jointe](StructureDefinition-tddui-attachment.md)
+* CapabilityStatements using this Profile: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-document-reference)
 
@@ -46,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-document-refer
   "name" : "TDDUIDocumentReference",
   "title" : "TDDUI DocumentReference",
   "status" : "active",
-  "date" : "2025-10-20T12:22:03+00:00",
+  "date" : "2025-10-21T07:57:56+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

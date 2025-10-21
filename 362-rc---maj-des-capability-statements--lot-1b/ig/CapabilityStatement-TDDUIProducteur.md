@@ -70,9 +70,10 @@ Le tableau récapitulatif liste les ressources faisant partie de cette configura
 | [Encounter](#Encounter1-3) | Supported Profiles  [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md)  [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md) |  |  |  | y |  |  |  |  |
 | [Practitioner](#Practitioner1-4) | Supported Profiles  [TDDUI Practitioner](StructureDefinition-tddui-practitioner.md) |  |  |  | y |  |  |  |  |
 | [PractitionerRole](#PractitionerRole1-5) | Supported Profiles  [TDDUI Practitioner Role](StructureDefinition-tddui-practitioner-role.md) |  |  |  | y |  |  |  |  |
-| [Task](#Task1-6) | Supported Profiles  [TDDUI Task Transport](StructureDefinition-tddui-task-transport.md)  [TDDUI Task Transport Professionnel](StructureDefinition-tddui-task-transport-professionnel.md)  [TDDUI Task Transport Usager](StructureDefinition-tddui-task-transport-usager.md) |  |  |  | y |  |  |  |  |
+| [Task](#Task1-6) | Supported Profiles  [TDDUI Task Transport Professionnel](StructureDefinition-tddui-task-transport-professionnel.md)  [TDDUI Task Transport Usager](StructureDefinition-tddui-task-transport-usager.md) |  |  |  | y |  |  |  |  |
 | [QuestionnaireResponse](#QuestionnaireResponse1-7) | Supported Profiles  [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md) |  |  |  | y |  |  |  |  |
 | [Questionnaire](#Questionnaire1-8) |   |  |  |  | y |  |  |  |  |
+| [DocumentReference](#DocumentReference1-9) | Supported Profiles  [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md) |  |  |  | y |  |  |  |  |
 
 -------
 
@@ -166,7 +167,6 @@ Résumé des interactions
 * Supports `create`.
 
 Supported Profiles
-[TDDUI Task Transport](StructureDefinition-tddui-task-transport.md)
 [TDDUI Task Transport Professionnel](StructureDefinition-tddui-task-transport-professionnel.md)
 [TDDUI Task Transport Usager](StructureDefinition-tddui-task-transport-usager.md)
 
@@ -196,6 +196,21 @@ Reference Policy
 Résumé des interactions
 
 * Supports `create`.
+
+#### Resource Conformance: supported DocumentReference
+
+Ressource FHIR coeur
+
+[DocumentReference](http://hl7.org/fhir/R4/documentreference.html)
+
+Reference Policy
+
+Résumé des interactions
+
+* Supports `create`.
+
+Supported Profiles
+[TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md)
 
 
 
@@ -309,7 +324,6 @@ Résumé des interactions
         {
           "type" : "Task",
           "supportedProfile" : [
-            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport",
             "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel",
             "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager"
           ],
@@ -332,6 +346,17 @@ Résumé des interactions
         },
         {
           "type" : "Questionnaire",
+          "interaction" : [
+            {
+              "code" : "create"
+            }
+          ]
+        },
+        {
+          "type" : "DocumentReference",
+          "supportedProfile" : [
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"
+          ],
           "interaction" : [
             {
               "code" : "create"
