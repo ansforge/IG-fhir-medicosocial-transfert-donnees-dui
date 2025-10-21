@@ -53,9 +53,9 @@ Usage: #definition
 * rest.resource[7].type = #Questionnaire
 * rest.resource[=].interaction[0].code = #read
 
-*rest.resource[8].type = #DocumentReference
-*rest.resource[=].supportedProfile = Canonical(tddui-document-reference)
-*rest.resource[=].interaction[0].code = #read
+* rest.resource[8].type = #DocumentReference
+* rest.resource[=].supportedProfile = Canonical(tddui-document-reference)
+* rest.resource[=].interaction[0].code = #read
 
 * rest.interaction[0].code = #transaction
 * rest.interaction[=].documentation = "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle"
