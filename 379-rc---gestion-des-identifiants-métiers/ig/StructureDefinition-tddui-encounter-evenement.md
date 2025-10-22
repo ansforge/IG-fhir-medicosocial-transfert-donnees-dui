@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement | *Version*:2.0.0 |
-| Active as of 2025-10-21 | *Computable Name*:TDDUIEncounterEvenement |
+| Active as of 2025-10-22 | *Computable Name*:TDDUIEncounterEvenement |
 
  
 Profil de la ressource Encounter permettant de regrouper les évènements liés à la prise en charge de l’usager dans une structure ESSMS. 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-even
   "name" : "TDDUIEncounterEvenement",
   "title" : "TDDUI Encounter Evenement",
   "status" : "active",
-  "date" : "2025-10-21T12:05:40+00:00",
+  "date" : "2025-10-22T08:03:07+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -442,7 +442,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-even
         "path" : "Encounter.identifier.system",
         "definition" : "Establishes the namespace for the value - that is, a URL that describes a set values that are unique.\r\nLe namespace est défini à partir de la racine d'identification (gérée par l'ANS) de l'organisation où a lieu la rencontre, concaténée avec par exemple le FINESS de l'établissent (ou FINEJ ou SIRET ou SIREN), cf annexe française des types de données HL7 en France.",
         "min" : 1,
-        "patternUri" : "https://identifiant-medicosocial-evenement.cnsa.fr",
+        "patternUri" : "https://identifiant-medicosocial-evenement.esante.gouv.fr",
         "example" : [
           {
             "label" : "OID de l'ANS de gestion des organisations (1.2.250.1.71.4.2.2) suivi du FINESS suivi de la branche z qui gère les id de venue/mouvements si l'établissement n'a pas d'OID (sinon utilisation de l'OID de l'établissement)",

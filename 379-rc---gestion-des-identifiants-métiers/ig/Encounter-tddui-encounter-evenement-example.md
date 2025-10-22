@@ -107,7 +107,7 @@ Profil: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenemen
           }
         ]
       },
-      "system" : "https://identifiant-medicosocial-evenement.cnsa.fr",
+      "system" : "https://identifiant-medicosocial-evenement.esante.gouv.fr",
       "value" : "3480787529/147720425367411-EVN-12548"
     }
   ],

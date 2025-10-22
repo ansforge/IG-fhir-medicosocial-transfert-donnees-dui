@@ -77,16 +77,16 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 INFORMATION: Bundle/ExampleTDDUIBundle: Bundle.entry[0].resource.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Bundle/ExampleTDDUIBundle: Bundle.entry[0].resource.extension[0].extension[0].value.ofType(Coding): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445|2.1.0
 WARNING: Bundle/ExampleTDDUIBundle: Bundle.entry[0].resource.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.250.1.213.1.4.8'
-WARNING: Bundle/ExampleTDDUIBundle: Bundle.entry[0].resource.identifier[1].system: No definition could be found for URL value 'https://identifiant-medicosocial-localusager.cnsa.fr'
+WARNING: Bundle/ExampleTDDUIBundle: Bundle.entry[0].resource.identifier[1].system: No definition could be found for URL value 'https://identifiant-medicosocial-localusager.esante.gouv.fr'
 INFORMATION: Bundle/ExampleTDDUIBundle: Bundle.entry[0].resource.name[0].extension[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Bundle/ExampleTDDUIBundle: Bundle.entry[0].resource/*Patient/tddui-patient-ins-example*/.extension[0].extension[0].value.ofType(Coding): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445|2.1.0
 WARNING: Bundle/ExampleTDDUIBundle: Bundle.entry[0].resource/*Patient/tddui-patient-ins-example*/.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.250.1.213.1.4.8'
-WARNING: Bundle/ExampleTDDUIBundle: Bundle.entry[0].resource/*Patient/tddui-patient-ins-example*/.identifier[1].system: No definition could be found for URL value 'https://identifiant-medicosocial-localusager.cnsa.fr'
+WARNING: Bundle/ExampleTDDUIBundle: Bundle.entry[0].resource/*Patient/tddui-patient-ins-example*/.identifier[1].system: No definition could be found for URL value 'https://identifiant-medicosocial-localusager.esante.gouv.fr'
 INFORMATION: Bundle/ExampleTDDUIBundle: Bundle.entry[1].resource.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 WARNING: Bundle/ExampleTDDUIBundle: Bundle.entry[1].resource.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.250.1.71.4.2.2'
 WARNING: Bundle/ExampleTDDUIBundle: Bundle.entry[1].resource/*Organization/tddui-organization-example*/.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.250.1.71.4.2.2'
-WARNING: Bundle/ExampleTDDUIBundle: Bundle.entry[2].resource.identifier[0].system: No definition could be found for URL value 'https://identifiant-medicosocial-sejour.cnsa.fr'
-WARNING: Bundle/ExampleTDDUIBundle: Bundle.entry[2].resource/*Encounter/tddui-encounter-sejour-example*/.identifier[0].system: No definition could be found for URL value 'https://identifiant-medicosocial-sejour.cnsa.fr'
+WARNING: Bundle/ExampleTDDUIBundle: Bundle.entry[2].resource.identifier[0].system: No definition could be found for URL value 'https://identifiant-medicosocial-sejour.esante.gouv.fr'
+WARNING: Bundle/ExampleTDDUIBundle: Bundle.entry[2].resource/*Encounter/tddui-encounter-sejour-example*/.identifier[0].system: No definition could be found for URL value 'https://identifiant-medicosocial-sejour.esante.gouv.fr'
 == fsh-generated/resources/CapabilityStatement-TDDUIConsommateur.json ==
 WARNING: CapabilityStatement/TDDUIConsommateur: CapabilityStatement.implementationGuide[0]: A definition could not be found for Canonical URL 'https://interop.esante.gouv.fr/ig/fhir/tddui'
 == fsh-generated/resources/CapabilityStatement-TDDUIProducteur.json ==
@@ -102,9 +102,9 @@ INFORMATION: Encounter/tddui-encounter-evenement-example: Encounter.extension[0]
 ERROR: Encounter/tddui-encounter-evenement-example: Encounter.extension[0].extension[0].value.ofType(CodeableConcept): Error from https://smt.esante.gouv.fr/fhir: Error: Could not compare as numbers: null and 202510200000
 WARNING: Encounter/tddui-encounter-evenement-example: Encounter.extension[0].extension[0].value.ofType(CodeableConcept): Could not confirm that the codings provided are in the value set https://smt.esante.gouv.fr/fhir/ValueSet/jdv-ressource-utilisee-cisis and a coding from this value set is required (class = SERVER_ERROR)
 INFORMATION: Encounter/tddui-encounter-evenement-example: Encounter.identifier[0].type: Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identifier-type|2.1.0
-WARNING: Encounter/tddui-encounter-evenement-example: Encounter.identifier[0].system: No definition could be found for URL value 'https://identifiant-medicosocial-evenement.cnsa.fr'
+WARNING: Encounter/tddui-encounter-evenement-example: Encounter.identifier[0].system: No definition could be found for URL value 'https://identifiant-medicosocial-evenement.esante.gouv.fr'
 == fsh-generated/resources/Encounter-tddui-encounter-sejour-example.json ==
-WARNING: Encounter/tddui-encounter-sejour-example: Encounter.identifier[0].system: No definition could be found for URL value 'https://identifiant-medicosocial-sejour.cnsa.fr'
+WARNING: Encounter/tddui-encounter-sejour-example: Encounter.identifier[0].system: No definition could be found for URL value 'https://identifiant-medicosocial-sejour.esante.gouv.fr'
 == fsh-generated/resources/ImplementationGuide-ans.fhir.fr.tddui.json ==
 WARNING: ImplementationGuide/ans.fhir.fr.tddui: ImplementationGuide.definition.resource[0].description: value should not start or finish with whitespace '\n- **Séjour** : commentaire relatif au séjour.\n- **Événement** : commentaires sur le déroulé de l’évènement.\n- **Évaluation** : commentaire libre sur le contenu ou le résultat de l’évaluation.\n- **Champ évalué** : commentaire spécifique à un item ou sous-item évalué.'
 ERROR: ImplementationGuide/ans.fhir.fr.tddui: ImplementationGuide.dependsOn[3]: The ImplementationGuide is based on FHIR version 4.0.1 but package hl7.fhir.uv.extensions#5.2.0 is based on FHIR version 5.0.0. Use the package hl7.fhir.uv.extensions.r4 instead
@@ -115,13 +115,13 @@ INFORMATION: Organization/tddui-organization-example: Organization.meta.profile[
 WARNING: Organization/tddui-organization-example: Organization.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.250.1.71.4.2.2'
 == fsh-generated/resources/Patient-tddui-patient-example.json ==
 INFORMATION: Patient/tddui-patient-example: Patient.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
-WARNING: Patient/tddui-patient-example: Patient.identifier[0].system: No definition could be found for URL value 'https://identifiant-medicosocial-localusager.cnsa.fr'
+WARNING: Patient/tddui-patient-example: Patient.identifier[0].system: No definition could be found for URL value 'https://identifiant-medicosocial-localusager.esante.gouv.fr'
 INFORMATION: Patient/tddui-patient-example: Patient.name[0].extension[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 == fsh-generated/resources/Patient-tddui-patient-ins-example.json ==
 INFORMATION: Patient/tddui-patient-ins-example: Patient.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Patient/tddui-patient-ins-example: Patient.extension[0].extension[0].value.ofType(Coding): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445|2.1.0
 WARNING: Patient/tddui-patient-ins-example: Patient.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.250.1.213.1.4.8'
-WARNING: Patient/tddui-patient-ins-example: Patient.identifier[1].system: No definition could be found for URL value 'https://identifiant-medicosocial-localusager.cnsa.fr'
+WARNING: Patient/tddui-patient-ins-example: Patient.identifier[1].system: No definition could be found for URL value 'https://identifiant-medicosocial-localusager.esante.gouv.fr'
 INFORMATION: Patient/tddui-patient-ins-example: Patient.name[0].extension[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 == fsh-generated/resources/Practitioner-tddui-practitioner-example.json ==
 INFORMATION: Practitioner/tddui-practitioner-example: Practitioner.qualification[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
@@ -235,7 +235,7 @@ ERROR: Questionnaire/tddui-questionnaire-aggir-ph-ssiad: Questionnaire.item[0].i
 == fsh-generated/resources/Questionnaire-tddui-questionnaire-serafin.json ==
 == fsh-generated/resources/Questionnaire-tddui-questionnaire-situation-ssiad.json ==
 == fsh-generated/resources/QuestionnaireResponse-tddui-questionnaire-response-aggir-pa-example.json ==
-WARNING: QuestionnaireResponse/tddui-questionnaire-response-aggir-pa-example: QuestionnaireResponse.identifier.system: No definition could be found for URL value 'https://identifiant-medicosocial-evaluation.cnsa.fr'
+WARNING: QuestionnaireResponse/tddui-questionnaire-response-aggir-pa-example: QuestionnaireResponse.identifier.system: No definition could be found for URL value 'https://identifiant-medicosocial-evaluation.esante.gouv.fr'
 ERROR: QuestionnaireResponse/tddui-questionnaire-response-aggir-pa-example: QuestionnaireResponse.item[0].answer[0].item[0].answer[0].value.ofType(Coding).code: Unknown code 'qf0' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'
 ERROR: QuestionnaireResponse/tddui-questionnaire-response-aggir-pa-example: QuestionnaireResponse.item[0].answer[0].item[1].answer[0].value.ofType(Coding).code: Unknown code 'qf0' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'
 ERROR: QuestionnaireResponse/tddui-questionnaire-response-aggir-pa-example: QuestionnaireResponse.item[0].answer[0].item[2].answer[0].value.ofType(Coding).code: Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'
@@ -252,7 +252,7 @@ ERROR: QuestionnaireResponse/tddui-questionnaire-response-aggir-pa-example: Ques
 ERROR: QuestionnaireResponse/tddui-questionnaire-response-aggir-pa-example: QuestionnaireResponse.item[0].answer[0].item[13].answer[0].value.ofType(Coding).code: Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'
 ERROR: QuestionnaireResponse/tddui-questionnaire-response-aggir-pa-example: QuestionnaireResponse.item[0].answer[0].item[14].answer[0].value.ofType(Coding).code: Unknown code 'qf0' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'
 == fsh-generated/resources/QuestionnaireResponse-tddui-questionnaire-response-aggir-ph-example.json ==
-WARNING: QuestionnaireResponse/tddui-questionnaire-response-aggir-ph-example: QuestionnaireResponse.identifier.system: No definition could be found for URL value 'https://identifiant-medicosocial-evaluation.cnsa.fr'
+WARNING: QuestionnaireResponse/tddui-questionnaire-response-aggir-ph-example: QuestionnaireResponse.identifier.system: No definition could be found for URL value 'https://identifiant-medicosocial-evaluation.esante.gouv.fr'
 ERROR: QuestionnaireResponse/tddui-questionnaire-response-aggir-ph-example: QuestionnaireResponse.item[0].answer[0].item[0].answer[0].value.ofType(Coding).code: Unknown code 'qf0' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'
 ERROR: QuestionnaireResponse/tddui-questionnaire-response-aggir-ph-example: QuestionnaireResponse.item[0].answer[0].item[1].answer[0].value.ofType(Coding).code: Unknown code 'qf0' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'
 ERROR: QuestionnaireResponse/tddui-questionnaire-response-aggir-ph-example: QuestionnaireResponse.item[0].answer[0].item[2].answer[0].value.ofType(Coding).code: Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'
@@ -265,12 +265,12 @@ ERROR: QuestionnaireResponse/tddui-questionnaire-response-aggir-ph-example: Ques
 ERROR: QuestionnaireResponse/tddui-questionnaire-response-aggir-ph-example: QuestionnaireResponse.item[0].answer[0].item[9].answer[0].value.ofType(Coding).code: Unknown code 'qf0' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'
 == fsh-generated/resources/QuestionnaireResponse-tddui-questionnaire-response-serafin-precision-example.json ==
 ERROR: QuestionnaireResponse/tddui-questionnaire-response-serafin-precision-example: QuestionnaireResponse: The extension https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment is not allowed to be used at this point (this element is [QuestionnaireResponse]; allowed for this version = e:Encounter)
-WARNING: QuestionnaireResponse/tddui-questionnaire-response-serafin-precision-example: QuestionnaireResponse.identifier.system: No definition could be found for URL value 'https://identifiant-medicosocial-evaluation.cnsa.fr'
+WARNING: QuestionnaireResponse/tddui-questionnaire-response-serafin-precision-example: QuestionnaireResponse.identifier.system: No definition could be found for URL value 'https://identifiant-medicosocial-evaluation.esante.gouv.fr'
 == fsh-generated/resources/QuestionnaireResponse-tddui-questionnaire-response-serafin-sans-precision-example.json ==
 ERROR: QuestionnaireResponse/tddui-questionnaire-response-serafin-sans-precision-example: QuestionnaireResponse: The extension https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment is not allowed to be used at this point (this element is [QuestionnaireResponse]; allowed for this version = e:Encounter)
-WARNING: QuestionnaireResponse/tddui-questionnaire-response-serafin-sans-precision-example: QuestionnaireResponse.identifier.system: No definition could be found for URL value 'https://identifiant-medicosocial-evaluation.cnsa.fr'
+WARNING: QuestionnaireResponse/tddui-questionnaire-response-serafin-sans-precision-example: QuestionnaireResponse.identifier.system: No definition could be found for URL value 'https://identifiant-medicosocial-evaluation.esante.gouv.fr'
 == fsh-generated/resources/QuestionnaireResponse-tddui-questionnaire-response-situation-ssiad-example.json ==
-WARNING: QuestionnaireResponse/tddui-questionnaire-response-situation-ssiad-example: QuestionnaireResponse.identifier.system: No definition could be found for URL value 'https://identifiant-medicosocial-evaluation.cnsa.fr'
+WARNING: QuestionnaireResponse/tddui-questionnaire-response-situation-ssiad-example: QuestionnaireResponse.identifier.system: No definition could be found for URL value 'https://identifiant-medicosocial-evaluation.esante.gouv.fr'
 == fsh-generated/resources/StructureDefinition-tddui-admission-date.json ==
 == fsh-generated/resources/StructureDefinition-tddui-attachment.json ==
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment'): The Implementation Guide contains no examples for this extension
@@ -416,8 +416,8 @@ ERROR: StructureDefinition.differential.element[3].example[0]: Unrecognized prop
 INFORMATION: StructureDefinition/tddui-task-transport-usager: StructureDefinition.snapshot.element[56].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 == fsh-generated/resources/Task-tddui-task-transport-example.json ==
 == fsh-generated/resources/Task-tddui-task-transport-professionel-example.json ==
-WARNING: Task/tddui-task-transport-professionel-example: Task.identifier[0].system: No definition could be found for URL value 'https://identifiant-medicosocial-transportprofessionnel.cnsa.fr'
+WARNING: Task/tddui-task-transport-professionel-example: Task.identifier[0].system: No definition could be found for URL value 'https://identifiant-medicosocial-transportprofessionnel.esante.gouv.fr'
 == fsh-generated/resources/Task-tddui-task-transport-usager-example.json ==
-WARNING: Task/tddui-task-transport-usager-example: Task.identifier[0].system: No definition could be found for URL value 'https://identifiant-medicosocial-transportusager.cnsa.fr'
+WARNING: Task/tddui-task-transport-usager-example: Task.identifier[0].system: No definition could be found for URL value 'https://identifiant-medicosocial-transportusager.esante.gouv.fr'
 == fsh-generated/resources/ValueSet-tddui-serafin-valueset.json ==
 WARNING: ValueSet/tddui-serafin-valueset: ValueSet.compose.include[0]: This value set has a single include with multiple imported value sets. Per issue https://jira.hl7.org/browse/FHIR-25179, there has been confusion in the past whether these value sets are unioned or intersectioned. If this value set is contained in a package published prior to March 31 2022, it will be treated as a union, otherwise it will be treated as an intersection. If want a union, split the value set imports across multiple includes

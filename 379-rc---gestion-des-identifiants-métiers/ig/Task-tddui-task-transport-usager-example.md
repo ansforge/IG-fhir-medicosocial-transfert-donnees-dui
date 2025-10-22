@@ -8,7 +8,7 @@
 
 Profil: [TDDUI Task Transport Usager](StructureDefinition-tddui-task-transport-usager.md)
 
-**identifier**: `https://identifiant-medicosocial-transportusager.cnsa.fr`/3480787529/147720425367411-TPU-154675
+**identifier**: `https://identifiant-medicosocial-transportusager.esante.gouv.fr`/3480787529/147720425367411-TPU-154675
 
 **status**: Completed
 
@@ -49,7 +49,7 @@ Profil: [TDDUI Task Transport Usager](StructureDefinition-tddui-task-transport-u
   },
   "identifier" : [
     {
-      "system" : "https://identifiant-medicosocial-transportusager.cnsa.fr",
+      "system" : "https://identifiant-medicosocial-transportusager.esante.gouv.fr",
       "value" : "3480787529/147720425367411-TPU-154675"
     }
   ],

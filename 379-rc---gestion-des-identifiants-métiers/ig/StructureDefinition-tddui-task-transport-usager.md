@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager | *Version*:2.0.0 |
-| Active as of 2025-10-21 | *Computable Name*:TDDUITaskTransportUsager |
+| Active as of 2025-10-22 | *Computable Name*:TDDUITaskTransportUsager |
 
  
 Profil de la ressource TDDUITaskTransport permettant de représenter le transport de l'usager. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
   "name" : "TDDUITaskTransportUsager",
   "title" : "TDDUI Task Transport Usager",
   "status" : "active",
-  "date" : "2025-10-21T12:05:40+00:00",
+  "date" : "2025-10-22T08:03:07+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -125,7 +125,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
       {
         "id" : "Task.identifier.system",
         "path" : "Task.identifier.system",
-        "patternUri" : "https://identifiant-medicosocial-transportusager.cnsa.fr"
+        "patternUri" : "https://identifiant-medicosocial-transportusager.esante.gouv.fr"
       },
       {
         "id" : "Task.identifier.value",

@@ -88,7 +88,7 @@ DUPONT Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 348078
           }
         ]
       },
-      "system" : "https://identifiant-medicosocial-localusager.cnsa.fr",
+      "system" : "https://identifiant-medicosocial-localusager.esante.gouv.fr",
       "value" : "3480787529/194704032"
     }
   ],

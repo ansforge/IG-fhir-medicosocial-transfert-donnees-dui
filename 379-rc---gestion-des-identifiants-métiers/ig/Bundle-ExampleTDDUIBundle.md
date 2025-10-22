@@ -151,7 +151,7 @@ POST TDDUIEncounterSejour
                 }
               ]
             },
-            "system" : "https://identifiant-medicosocial-localusager.cnsa.fr",
+            "system" : "https://identifiant-medicosocial-localusager.esante.gouv.fr",
             "value" : "3480787529/194704032"
           }
         ],
@@ -267,7 +267,7 @@ POST TDDUIEncounterSejour
                 }
               ]
             },
-            "system" : "https://identifiant-medicosocial-sejour.cnsa.fr",
+            "system" : "https://identifiant-medicosocial-sejour.esante.gouv.fr",
             "value" : "3480787529/147720425367411-SEJOUR-1012"
           }
         ],
