@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-even
   "name" : "TDDUIEncounterEvenement",
   "title" : "TDDUI Encounter Evenement",
   "status" : "active",
-  "date" : "2025-10-22T08:03:07+00:00",
+  "date" : "2025-10-22T10:16:49+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -460,7 +460,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-even
         "min" : 1,
         "example" : [
           {
-            "label" : "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-EVN-numEvenement.",
+            "label" : "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-EVN-numEvenement",
             "valueIdentifier" : {
               "value" : "3480787529/147720425367411-EVN-12548"
             }

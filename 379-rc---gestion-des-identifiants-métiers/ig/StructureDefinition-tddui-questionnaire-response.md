@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-questionnaire-
   "name" : "TDDUIQuestionnaireResponse",
   "title" : "TDDUI QuestionnaireResponse",
   "status" : "active",
-  "date" : "2025-10-22T08:03:07+00:00",
+  "date" : "2025-10-22T10:16:49+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -257,14 +257,16 @@ Other representations of profile: [CSV](StructureDefinition-tddui-questionnaire-
       {
         "id" : "QuestionnaireResponse.identifier.system",
         "path" : "QuestionnaireResponse.identifier.system",
+        "min" : 1,
         "patternUri" : "https://identifiant-medicosocial-evaluation.esante.gouv.fr"
       },
       {
         "id" : "QuestionnaireResponse.identifier.value",
         "path" : "QuestionnaireResponse.identifier.value",
+        "min" : 1,
         "example" : [
           {
-            "label" : "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-EVAL-numEvaluation.",
+            "label" : "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-EVAL-numEvaluation",
             "valueIdentifier" : {
               "value" : "3480787529/147720425367411-EVAL-21564655"
             }

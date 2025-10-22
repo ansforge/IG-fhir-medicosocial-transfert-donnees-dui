@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
   "name" : "TDDUITaskTransportUsager",
   "title" : "TDDUI Task Transport Usager",
   "status" : "active",
-  "date" : "2025-10-22T08:03:07+00:00",
+  "date" : "2025-10-22T10:16:49+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -125,14 +125,16 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
       {
         "id" : "Task.identifier.system",
         "path" : "Task.identifier.system",
+        "min" : 1,
         "patternUri" : "https://identifiant-medicosocial-transportusager.esante.gouv.fr"
       },
       {
         "id" : "Task.identifier.value",
         "path" : "Task.identifier.value",
+        "min" : 1,
         "example" : [
           {
-            "label" : "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-TPPat-idTransport.",
+            "label" : "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-TPPat-idTransport",
             "valueIdentifier" : {
               "value" : "3480787529/147720425367411-TPPat-21564655"
             }
