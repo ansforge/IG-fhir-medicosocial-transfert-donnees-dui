@@ -3,7 +3,7 @@ InstanceOf: TDDUITaskTransportUsager
 Usage: #example
 Description: "Exemple du transport de l'usager."
 
-* identifier.value = "3480787529/147720425367411-TPU-154675"
+* identifier.value = "3480787529/147720425367411-TPPat-154675"
 * identifier.system = "https://identifiant-medicosocial-transportusager.esante.gouv.fr"
 
 * status = #completed

@@ -5,8 +5,10 @@ Title: "TDDUI Task Transport Professionnel"
 Description: "Profil de la ressource TDDUITaskTransport permettant de représenter le transport du professionnel."
 
 * identifier ^short = "Identifiant du transport du professionnel"
-* identifier.value ^example[0].label = "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-TPPro-idTransport."
+* identifier.value 1..1
+* identifier.value ^example[0].label = "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-TPPro-idTransport"
 * identifier.value ^example[0].valueIdentifier.value = "3480787529/147720425367411-TPPro-21564655"
+* identifier.system 1..1
 * identifier.system = "https://identifiant-medicosocial-transportprofessionnel.esante.gouv.fr"
 
 // Professionnel
