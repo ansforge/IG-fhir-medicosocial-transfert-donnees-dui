@@ -8,7 +8,7 @@ Description: "Profil de la ressource QuestionnaireResponse utilisé pour transme
 * identifier ^short = "Identifiant de l'évaluation"
 * identifier.value ^example[0].label = "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-EVAL-numEvaluation."
 * identifier.value ^example[0].valueIdentifier.value = "3480787529/147720425367411-EVAL-21564655"
-* identifier.system = "https://identifiant-medicosocial-evaluation.cnsa.fr"
+* identifier.system = "https://identifiant-medicosocial-evaluation.esante.gouv.fr"
 
 * questionnaire ^short = """
 Le profil permet de communiquer les grilles définies suivantes :

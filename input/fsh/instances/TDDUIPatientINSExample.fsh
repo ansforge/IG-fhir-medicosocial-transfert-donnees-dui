@@ -14,7 +14,7 @@ Description: "Exemple de la ressource TDDUIPatientINS"
 * identifier[INS-NIR].system = "urn:oid:1.2.250.1.213.1.4.8"
 * identifier[INS-NIR].value = "147720425367411"
 
-* identifier[PI].system = "https://identifiant-medicosocial-localusager.cnsa.fr"
+* identifier[PI].system = "https://identifiant-medicosocial-localusager.esante.gouv.fr"
 * identifier[PI].value = "3480787529/194704032"
 
 * name[usualName].use = #usual

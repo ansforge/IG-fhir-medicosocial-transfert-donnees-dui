@@ -15,7 +15,7 @@ Description: "Profil de la ressource Encounter permettant de regrouper les infor
 * identifier[idStay].type = TDDUIEncounterIdentifier#SEJ "Identifiant du séjour"
 * identifier[idStay].value ^example[0].label = "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-SEJOUR-numeroDossier."
 * identifier[idStay].value ^example[0].valueIdentifier.value = "3480787529/147720425367411-SEJOUR-21564655"
-* identifier[idStay].system = "https://identifiant-medicosocial-sejour.cnsa.fr"
+* identifier[idStay].system = "https://identifiant-medicosocial-sejour.esante.gouv.fr"
 
 // Usager
 * subject 1..1

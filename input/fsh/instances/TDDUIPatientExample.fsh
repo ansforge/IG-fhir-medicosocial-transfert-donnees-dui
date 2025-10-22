@@ -8,7 +8,7 @@ Description: "Exemple de la ressource TDDUIPatient"
 * extension[birthPlace].valueAddress.city = "Mazoires"
 * extension[birthPlace].valueAddress.country = "FRA"
 
-* identifier[PI].system = "https://identifiant-medicosocial-localusager.cnsa.fr"
+* identifier[PI].system = "https://identifiant-medicosocial-localusager.esante.gouv.fr"
 * identifier[PI].value = "3480787529/194704032"
 
 * name[usualName].use = #usual
