@@ -1,11 +1,11 @@
 TDDUI : Validation Results
 =========================================
 
-err = 125, warn = 94, info = 85
+err = 120, warn = 94, info = 88
 $--
 Generated $--. FHIR version $-- for ans.fhir.fr.tddui#$-- (canonical = https://interop.esante.gouv.fr/ig/fhir/tddui)
  Build Errors : 1 / 5 / 0
- /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Bundle-ExampleTDDUIBundle : 9 / 9 / 40
+ /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Bundle-ExampleTDDUIBundle : 4 / 9 / 43
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CapabilityStatement-TDDUIConsommateur : 0 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CapabilityStatement-TDDUIProducteur : 0 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CodeSystem-TDDUIEncounterParticipant : 0 / 0 / 1
@@ -74,11 +74,9 @@ WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in 
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/Bundle-ExampleTDDUIBundle.json ==
-ERROR: Bundle/ExampleTDDUIBundle: Bundle.entry[0]: Profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle|2.0.0, Element matches more than one slice - DUIPatientINS, DUIQuestionnaireResponse
-ERROR: Bundle/ExampleTDDUIBundle: Bundle.entry[1]: Profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle|2.0.0, Element matches more than one slice - DUIOrganization, DUIQuestionnaireResponse
-ERROR: Bundle/ExampleTDDUIBundle: Bundle.entry[2]: Profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle|2.0.0, Element matches more than one slice - DUIEncounterSejour, DUIQuestionnaireResponse
-ERROR: Bundle/ExampleTDDUIBundle: Bundle.entry[4]: Profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle|2.0.0, Element matches more than one slice - DUIPractitioner, DUIQuestionnaireResponse
-ERROR: Bundle/ExampleTDDUIBundle: Bundle.entry[5]: Profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle|2.0.0, Element matches more than one slice - DUIPractitionerRole, DUIQuestionnaireResponse
+INFORMATION: Bundle/ExampleTDDUIBundle: Bundle.entry[3]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/ExampleTDDUIBundle: Bundle.entry[6]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/ExampleTDDUIBundle: Bundle.entry[7]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Bundle/ExampleTDDUIBundle: Bundle.entry[0].resource.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Bundle/ExampleTDDUIBundle: Bundle.entry[0].resource.extension[0].extension[0].value.ofType(Coding): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445|2.1.0
 WARNING: Bundle/ExampleTDDUIBundle: Bundle.entry[0].resource.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.250.1.213.1.4.8'

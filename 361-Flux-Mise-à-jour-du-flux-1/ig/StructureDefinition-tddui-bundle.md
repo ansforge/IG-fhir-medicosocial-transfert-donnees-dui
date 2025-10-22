@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle | *Version*:2.0.0 |
-| Active as of 2025-10-21 | *Computable Name*:TDDUIBundle |
+| Active as of 2025-10-22 | *Computable Name*:TDDUIBundle |
 
  
 Profil générique créé pour transmettre des données d'un logiciel DUI. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
   "name" : "TDDUIBundle",
   "title" : "TDDUI Bundle",
   "status" : "active",
-  "date" : "2025-10-21T07:40:55+00:00",
+  "date" : "2025-10-22T07:21:52+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -433,8 +433,32 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
         "id" : "Bundle.entry:DUIQuestionnaireResponse",
         "path" : "Bundle.entry",
         "sliceName" : "DUIQuestionnaireResponse",
+        "short" : "QuestionnaireResponse conforming to the TDDUIQuestionnaireResponse profile, used to convey the evaluation",
         "min" : 0,
         "max" : "*"
+      },
+      {
+        "id" : "Bundle.entry:DUIQuestionnaireResponse.resource",
+        "path" : "Bundle.entry.resource",
+        "min" : 1,
+        "type" : [
+          {
+            "code" : "QuestionnaireResponse",
+            "profile" : [
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "Bundle.entry:DUIQuestionnaireResponse.request",
+        "path" : "Bundle.entry.request",
+        "min" : 1
+      },
+      {
+        "id" : "Bundle.entry:DUIQuestionnaireResponse.request.method",
+        "path" : "Bundle.entry.request.method",
+        "patternCode" : "POST"
       }
     ]
   }

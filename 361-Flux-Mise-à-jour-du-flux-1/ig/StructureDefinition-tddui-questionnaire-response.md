@@ -9,13 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response | *Version*:2.0.0 |
-| Active as of 2025-10-21 | *Computable Name*:TDDUIQuestionnaireResponse |
+| Active as of 2025-10-22 | *Computable Name*:TDDUIQuestionnaireResponse |
 
  
 Profil de la ressource QuestionnaireResponse utilisé pour transmettre les réponses aux questionnaires dans le cadre des évaluations. 
 
 **Usages:**
 
+* Use this Profile: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
 * Examples for this Profile: [QuestionnaireResponse/tddui-questionnaire-response-aggir-pa-example](QuestionnaireResponse-tddui-questionnaire-response-aggir-pa-example.md), [QuestionnaireResponse/tddui-questionnaire-response-aggir-ph-example](QuestionnaireResponse-tddui-questionnaire-response-aggir-ph-example.md), [QuestionnaireResponse/tddui-questionnaire-response-serafin-precision-example](QuestionnaireResponse-tddui-questionnaire-response-serafin-precision-example.md), [QuestionnaireResponse/tddui-questionnaire-response-serafin-sans-precision-example](QuestionnaireResponse-tddui-questionnaire-response-serafin-sans-precision-example.md) and [QuestionnaireResponse/tddui-questionnaire-response-situation-ssiad-example](QuestionnaireResponse-tddui-questionnaire-response-situation-ssiad-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-questionnaire-response)
@@ -41,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-questionnaire-
   "name" : "TDDUIQuestionnaireResponse",
   "title" : "TDDUI QuestionnaireResponse",
   "status" : "active",
-  "date" : "2025-10-21T07:40:55+00:00",
+  "date" : "2025-10-22T07:21:52+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
