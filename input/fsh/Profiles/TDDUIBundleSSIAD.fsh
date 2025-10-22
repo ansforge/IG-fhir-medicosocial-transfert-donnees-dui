@@ -82,3 +82,9 @@ Description: "Profil générique créé pour transmettre des données d'un logic
 * entry[DUIDocumentReference].resource 1..1
 * entry[DUIDocumentReference].request 1..1
 * entry[DUIDocumentReference].request.method = #POST
+
+* entry[DUIQuestionnaireResponse].resource only TDDUIQuestionnaireResponse
+* entry[DUIQuestionnaireResponse]. ^short = "QuestionnaireResponse conforming to the TDDUIQuestionnaireResponse profile, used to convey the evaluation"
+* entry[DUIQuestionnaireResponse].resource 1..1
+* entry[DUIQuestionnaireResponse].request 1..1
+* entry[DUIQuestionnaireResponse].request.method = #POST
