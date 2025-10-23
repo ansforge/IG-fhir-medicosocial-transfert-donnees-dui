@@ -29,6 +29,28 @@ Usage: #definition
 
 * rest.resource[2].type = #Encounter
 * rest.resource[=].supportedProfile = Canonical(tddui-encounter-sejour)
+* rest.resource[=].supportedProfile[+] = Canonical(tddui-encounter-evenement)
+* rest.resource[=].interaction[0].code = #create
+
+* rest.resource[3].type = #Practitioner
+* rest.resource[=].supportedProfile = Canonical(tddui-practitioner)
+* rest.resource[=].interaction[0].code = #create
+
+* rest.resource[4].type = #PractitionerRole
+* rest.resource[=].supportedProfile = Canonical(tddui-practitioner-role)
+* rest.resource[=].interaction[0].code = #create
+
+* rest.resource[5].type = #Task
+* rest.resource[=].supportedProfile[+] = Canonical(tddui-task-transport-professionnel)
+* rest.resource[=].supportedProfile[+] = Canonical(tddui-task-transport-usager)
+* rest.resource[=].interaction[0].code = #create
+
+* rest.resource[6].type = #QuestionnaireResponse
+* rest.resource[=].supportedProfile = Canonical(tddui-questionnaire-response)
+* rest.resource[=].interaction[0].code = #create
+
+* rest.resource[7].type = #DocumentReference
+* rest.resource[=].supportedProfile = Canonical(tddui-document-reference)
 * rest.resource[=].interaction[0].code = #create
 
 * rest.interaction[0].code = #transaction
