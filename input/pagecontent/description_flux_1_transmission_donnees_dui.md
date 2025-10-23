@@ -16,10 +16,21 @@ Les différentes ressources sont véhiculées via l'élément : Bundle.entry. Le
 * [TDDUIPatient](StructureDefinition-tddui-patient.html) représentant l'usager,
 * [TDDUIPatientINS](StructureDefinition-tddui-patient-ins.html) représentant l'usager transmis avec l'INS,
 * [TDDUIEncounterSejour](StructureDefinition-tddui-encounter-sejour.html) représentant un séjour,
-* [TDDUIOrganization](StructureDefinition-tddui-organization.html) représentant une entité juridique
+* [TDDUIOrganization](StructureDefinition-tddui-organization.html) représentant une entité juridique,
+* [TDDUIEncounterEvenement](StructureDefinition-tddui-encounter-evenement.html) représentant un événement lié à la prise en charge d'un usager,
+* [TDDUIPractitioner](StructureDefinition-tddui-practitioner.html) représentant un professionnel,
+* [TDDUIPractitionerRole](StructureDefinition-tddui-practitioner-role.html) représentant un professionnel,
+* [TDDUITaskTransportProfessionnel](StructureDefinition-tddui-task-transport-professionnel.html) représentant le transport du professionnel,
+* [TDDUITaskTransportUsager](StructureDefinition-tddui-task-transport-usager.html) représentant le transport de l'usager,
+* [TDDUIQuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.html) représentant les réponses aux questionnaires dans le cadre des évaluations.
+  - Lorsqu'une ressource QuestionnaireResponse est présente, elle doit être conforme à un des Questionnaires suivants : 
+    - [tddui-questionnaire-aggir-pa-ssiad](Questionnaire-tddui-questionnaire-aggir-pa-ssiad.html),
+    - [tddui-questionnaire-aggir-ph-ssiad](Questionnaire-tddui-questionnaire-aggir-ph-ssiad.html),
+    - [tddui-questionnaire-serafin](Questionnaire-tddui-questionnaire-serafin.html),
+    - [tddui-questionnaire-situation-ssiad](Questionnaire-tddui-questionnaire-situation-ssiad.html)
 
-
-
+* [TDDUIDocumentReference](StructureDefinition-tddui-document-reference.html) représentant les pièces jointes.
+  
 Pour toutes ces ressources, seule la création est possible via l'intéraction FHIR <a href="https://hl7.org/fhir/R4/http.html#create">Create</a>.
 
 ### Flux 1.2 Resultat de la transmission de données DUI
