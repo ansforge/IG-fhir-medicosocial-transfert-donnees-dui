@@ -21,7 +21,21 @@ Les différentes ressources sont véhiculées via l'élément : Bundle.entry. Le
 * [TDDUIPatient](StructureDefinition-tddui-patient.md) représentant l'usager,
 * [TDDUIPatientINS](StructureDefinition-tddui-patient-ins.md) représentant l'usager transmis avec l'INS,
 * [TDDUIEncounterSejour](StructureDefinition-tddui-encounter-sejour.md) représentant un séjour,
-* [TDDUIOrganization](StructureDefinition-tddui-organization.md) représentant une entité juridique
+* [TDDUIOrganization](StructureDefinition-tddui-organization.md) représentant une entité juridique,
+* [TDDUIEncounterEvenement](StructureDefinition-tddui-encounter-evenement.md) représentant un événement lié à la prise en charge d'un usager,
+* [TDDUIPractitioner](StructureDefinition-tddui-practitioner.md) représentant un professionnel,
+* [TDDUIPractitionerRole](StructureDefinition-tddui-practitioner-role.md) représentant un professionnel,
+* [TDDUITaskTransportProfessionnel](StructureDefinition-tddui-task-transport-professionnel.md) représentant le transport du professionnel,
+* [TDDUITaskTransportUsager](StructureDefinition-tddui-task-transport-usager.md) représentant le transport de l'usager,
+* [TDDUIQuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md) représentant les réponses aux questionnaires dans le cadre des évaluations. 
+* Lorsqu'une ressource QuestionnaireResponse est présente, elle doit être conforme à un des Questionnaires suivants : 
+* [tddui-questionnaire-aggir-pa-ssiad](Questionnaire-tddui-questionnaire-aggir-pa-ssiad.md),
+* [tddui-questionnaire-aggir-ph-ssiad](Questionnaire-tddui-questionnaire-aggir-ph-ssiad.md),
+* [tddui-questionnaire-serafin](Questionnaire-tddui-questionnaire-serafin.md),
+* [tddui-questionnaire-situation-ssiad](Questionnaire-tddui-questionnaire-situation-ssiad.md)
+ 
+ 
+* [TDDUIDocumentReference](StructureDefinition-tddui-document-reference.md) représentant les pièces jointes.
 
 Pour toutes ces ressources, seule la création est possible via l'intéraction FHIR [Create](https://hl7.org/fhir/R4/http.html#create).
 

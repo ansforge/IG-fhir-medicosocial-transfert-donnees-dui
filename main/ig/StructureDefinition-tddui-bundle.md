@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
   "name" : "TDDUIBundle",
   "title" : "TDDUI Bundle",
   "status" : "active",
-  "date" : "2025-10-23T09:18:35+00:00",
+  "date" : "2025-10-23T14:35:50+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -240,6 +240,223 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
       },
       {
         "id" : "Bundle.entry:DUIEncounterSejour.request.method",
+        "path" : "Bundle.entry.request.method",
+        "patternCode" : "POST"
+      },
+      {
+        "id" : "Bundle.entry:DUIEncounterEvenement",
+        "path" : "Bundle.entry",
+        "sliceName" : "DUIEncounterEvenement",
+        "short" : "Encounter conforming to the TDDUIEncounterEvenement profile, used to convey event linked to the patient patient's stay.",
+        "min" : 0,
+        "max" : "*"
+      },
+      {
+        "id" : "Bundle.entry:DUIEncounterEvenement.resource",
+        "path" : "Bundle.entry.resource",
+        "min" : 1,
+        "type" : [
+          {
+            "code" : "Encounter",
+            "profile" : [
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "Bundle.entry:DUIEncounterEvenement.request",
+        "path" : "Bundle.entry.request",
+        "min" : 1
+      },
+      {
+        "id" : "Bundle.entry:DUIEncounterEvenement.request.method",
+        "path" : "Bundle.entry.request.method",
+        "patternCode" : "POST"
+      },
+      {
+        "id" : "Bundle.entry:DUIPractitioner",
+        "path" : "Bundle.entry",
+        "sliceName" : "DUIPractitioner",
+        "short" : "Practitioner conforming to the TDDUIPractitioner profile, used to convey the practitioner.",
+        "min" : 0,
+        "max" : "*"
+      },
+      {
+        "id" : "Bundle.entry:DUIPractitioner.resource",
+        "path" : "Bundle.entry.resource",
+        "min" : 1,
+        "type" : [
+          {
+            "code" : "Practitioner",
+            "profile" : [
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "Bundle.entry:DUIPractitioner.request",
+        "path" : "Bundle.entry.request",
+        "min" : 1
+      },
+      {
+        "id" : "Bundle.entry:DUIPractitioner.request.method",
+        "path" : "Bundle.entry.request.method",
+        "patternCode" : "POST"
+      },
+      {
+        "id" : "Bundle.entry:DUIPractitionerRole",
+        "path" : "Bundle.entry",
+        "sliceName" : "DUIPractitionerRole",
+        "short" : "PractitionerRole conforming to the TDDUIPractitionerRole profile, used to convey the practitioner.",
+        "min" : 0,
+        "max" : "*"
+      },
+      {
+        "id" : "Bundle.entry:DUIPractitionerRole.resource",
+        "path" : "Bundle.entry.resource",
+        "min" : 1,
+        "type" : [
+          {
+            "code" : "PractitionerRole",
+            "profile" : [
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "Bundle.entry:DUIPractitionerRole.request",
+        "path" : "Bundle.entry.request",
+        "min" : 1
+      },
+      {
+        "id" : "Bundle.entry:DUIPractitionerRole.request.method",
+        "path" : "Bundle.entry.request.method",
+        "patternCode" : "POST"
+      },
+      {
+        "id" : "Bundle.entry:DUITransportProfessionnel",
+        "path" : "Bundle.entry",
+        "sliceName" : "DUITransportProfessionnel",
+        "short" : "Task conforming to the TDDUITaskTransportProfessionnel profile, used to convey the practitioner transportation.",
+        "min" : 0,
+        "max" : "*"
+      },
+      {
+        "id" : "Bundle.entry:DUITransportProfessionnel.resource",
+        "path" : "Bundle.entry.resource",
+        "min" : 1,
+        "type" : [
+          {
+            "code" : "Task",
+            "profile" : [
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "Bundle.entry:DUITransportProfessionnel.request",
+        "path" : "Bundle.entry.request",
+        "min" : 1
+      },
+      {
+        "id" : "Bundle.entry:DUITransportProfessionnel.request.method",
+        "path" : "Bundle.entry.request.method",
+        "patternCode" : "POST"
+      },
+      {
+        "id" : "Bundle.entry:DUITransportUsager",
+        "path" : "Bundle.entry",
+        "sliceName" : "DUITransportUsager",
+        "short" : "Task conforming to the TDDUITaskTransportUsager profile, used to convey the patient transportation.",
+        "min" : 0,
+        "max" : "*"
+      },
+      {
+        "id" : "Bundle.entry:DUITransportUsager.resource",
+        "path" : "Bundle.entry.resource",
+        "min" : 1,
+        "type" : [
+          {
+            "code" : "Task",
+            "profile" : [
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "Bundle.entry:DUITransportUsager.request",
+        "path" : "Bundle.entry.request",
+        "min" : 1
+      },
+      {
+        "id" : "Bundle.entry:DUITransportUsager.request.method",
+        "path" : "Bundle.entry.request.method",
+        "patternCode" : "POST"
+      },
+      {
+        "id" : "Bundle.entry:DUIDocumentReference",
+        "path" : "Bundle.entry",
+        "sliceName" : "DUIDocumentReference",
+        "short" : "DocumentReference conforming to the TDDUIDocumentReference profile, used to convey evaluation attachement",
+        "min" : 0,
+        "max" : "*"
+      },
+      {
+        "id" : "Bundle.entry:DUIDocumentReference.resource",
+        "path" : "Bundle.entry.resource",
+        "min" : 1,
+        "type" : [
+          {
+            "code" : "DocumentReference",
+            "profile" : [
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "Bundle.entry:DUIDocumentReference.request",
+        "path" : "Bundle.entry.request",
+        "min" : 1
+      },
+      {
+        "id" : "Bundle.entry:DUIDocumentReference.request.method",
+        "path" : "Bundle.entry.request.method",
+        "patternCode" : "POST"
+      },
+      {
+        "id" : "Bundle.entry:DUIQuestionnaireResponse",
+        "path" : "Bundle.entry",
+        "sliceName" : "DUIQuestionnaireResponse",
+        "short" : "QuestionnaireResponse conforming to the TDDUIQuestionnaireResponse profile, used to convey the evaluation",
+        "min" : 0,
+        "max" : "*"
+      },
+      {
+        "id" : "Bundle.entry:DUIQuestionnaireResponse.resource",
+        "path" : "Bundle.entry.resource",
+        "min" : 1,
+        "type" : [
+          {
+            "code" : "QuestionnaireResponse",
+            "profile" : [
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "Bundle.entry:DUIQuestionnaireResponse.request",
+        "path" : "Bundle.entry.request",
+        "min" : 1
+      },
+      {
+        "id" : "Bundle.entry:DUIQuestionnaireResponse.request.method",
         "path" : "Bundle.entry.request.method",
         "patternCode" : "POST"
       }

@@ -20,7 +20,7 @@ Ressources utilisées lors de l’évènement (ex : chambre, matériel médical,
 **Usages:**
 
 * Use this Extension: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)
-* Examples for this Extension: [Encounter/tddui-encounter-evenement-example](Encounter-tddui-encounter-evenement-example.md)
+* Examples for this Extension: [Bundle/ExampleTDDUIBundle](Bundle-ExampleTDDUIBundle.md) and [Encounter/tddui-encounter-evenement-example](Encounter-tddui-encounter-evenement-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-ressources-used)
 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-ressources-use
   "name" : "TDDUIRessourcesUsed",
   "title" : "Ressources utilisées",
   "status" : "active",
-  "date" : "2025-10-23T09:18:35+00:00",
+  "date" : "2025-10-23T14:35:50+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

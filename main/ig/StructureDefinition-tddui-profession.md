@@ -20,7 +20,7 @@ Extension permettant de représenter la profession du professionnel.
 **Usages:**
 
 * Use this Extension: [TDDUI Practitioner Role](StructureDefinition-tddui-practitioner-role.md)
-* Examples for this Extension: [PractitionerRole/tddui-practitioner-role-example](PractitionerRole-tddui-practitioner-role-example.md)
+* Examples for this Extension: [Bundle/ExampleTDDUIBundle](Bundle-ExampleTDDUIBundle.md) and [PractitionerRole/tddui-practitioner-role-example](PractitionerRole-tddui-practitioner-role-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-profession)
 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-profession.csv
   "name" : "TDDUIProfession",
   "title" : "TDDUI Profession",
   "status" : "active",
-  "date" : "2025-10-23T09:18:35+00:00",
+  "date" : "2025-10-23T14:35:50+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

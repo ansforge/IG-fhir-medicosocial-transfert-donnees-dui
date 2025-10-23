@@ -16,7 +16,9 @@ Profil de la ressource TDDUITaskTransport permettant de représenter le transpor
 
 **Usages:**
 
+* Use this Profile: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
 * Examples for this Profile: [Task/tddui-task-transport-professionel-example](Task-tddui-task-transport-professionel-example.md)
+* CapabilityStatements using this Profile: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-task-transport-professionnel)
 
@@ -41,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
   "name" : "TDDUITaskTransportProfessionnel",
   "title" : "TDDUI Task Transport Professionnel",
   "status" : "active",
-  "date" : "2025-10-23T09:18:35+00:00",
+  "date" : "2025-10-23T14:35:50+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

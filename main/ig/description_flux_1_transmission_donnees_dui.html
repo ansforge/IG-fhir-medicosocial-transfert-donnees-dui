@@ -245,7 +245,25 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="StructureDefinition-tddui-patient.html">TDDUIPatient</a> représentant l'usager,</li>
   <li><a href="StructureDefinition-tddui-patient-ins.html">TDDUIPatientINS</a> représentant l'usager transmis avec l'INS,</li>
   <li><a href="StructureDefinition-tddui-encounter-sejour.html">TDDUIEncounterSejour</a> représentant un séjour,</li>
-  <li><a href="StructureDefinition-tddui-organization.html">TDDUIOrganization</a> représentant une entité juridique</li>
+  <li><a href="StructureDefinition-tddui-organization.html">TDDUIOrganization</a> représentant une entité juridique,</li>
+  <li><a href="StructureDefinition-tddui-encounter-evenement.html">TDDUIEncounterEvenement</a> représentant un événement lié à la prise en charge d'un usager,</li>
+  <li><a href="StructureDefinition-tddui-practitioner.html">TDDUIPractitioner</a> représentant un professionnel,</li>
+  <li><a href="StructureDefinition-tddui-practitioner-role.html">TDDUIPractitionerRole</a> représentant un professionnel,</li>
+  <li><a href="StructureDefinition-tddui-task-transport-professionnel.html">TDDUITaskTransportProfessionnel</a> représentant le transport du professionnel,</li>
+  <li><a href="StructureDefinition-tddui-task-transport-usager.html">TDDUITaskTransportUsager</a> représentant le transport de l'usager,</li>
+  <li><a href="StructureDefinition-tddui-questionnaire-response.html">TDDUIQuestionnaireResponse</a> représentant les réponses aux questionnaires dans le cadre des évaluations.
+    <ul>
+      <li>Lorsqu'une ressource QuestionnaireResponse est présente, elle doit être conforme à un des Questionnaires suivants :
+        <ul>
+          <li><a href="Questionnaire-tddui-questionnaire-aggir-pa-ssiad.html">tddui-questionnaire-aggir-pa-ssiad</a>,</li>
+          <li><a href="Questionnaire-tddui-questionnaire-aggir-ph-ssiad.html">tddui-questionnaire-aggir-ph-ssiad</a>,</li>
+          <li><a href="Questionnaire-tddui-questionnaire-serafin.html">tddui-questionnaire-serafin</a>,</li>
+          <li><a href="Questionnaire-tddui-questionnaire-situation-ssiad.html">tddui-questionnaire-situation-ssiad</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="StructureDefinition-tddui-document-reference.html">TDDUIDocumentReference</a> représentant les pièces jointes.</li>
 </ul>
 
 <p>Pour toutes ces ressources, seule la création est possible via l'intéraction FHIR <a href="https://hl7.org/fhir/R4/http.html#create">Create</a>.</p>
@@ -310,7 +328,7 @@ Dans tous les cas, la référence doit correspondre soit au fullUrl d’une autr
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 23, 2025 09:19+0000">2025-10-23</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 23, 2025 14:37+0000">2025-10-23</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
