@@ -8,12 +8,13 @@
 
 Profil: [TDDUI Patient INS](StructureDefinition-tddui-patient-ins.md)
 
-DUPONT Male, Date de Naissance :1947-04-03 ( NIR définitif (use: official, ))
+DUPONT Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/194704032)
 
 -------
 
 | | |
 | :--- | :--- |
+| Other Id: | NIR définitif/147720425367411 (use: official, ) |
 | Nom alternatif : | Jean DUPONT (Official) |
 | Contact Detail | 12 rue des Lilas, 76748 Vittefleur, France(home) |
 | [Patient Birth Place](http://hl7.org/fhir/extensions/5.2.0/StructureDefinition-patient-birthPlace.html) | Mazoires FRA |
@@ -76,6 +77,19 @@ DUPONT Male, Date de Naissance :1947-04-03 ( NIR définitif (use: official, )
       },
       "system" : "urn:oid:1.2.250.1.213.1.4.8",
       "value" : "147720425367411"
+    },
+    {
+      "type" : {
+        "coding" : [
+          {
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "PI",
+            "display" : "Patient internal identifier"
+          }
+        ]
+      },
+      "system" : "https://identifiant-medicosocial-localusager.esante.gouv.fr",
+      "value" : "3480787529/194704032"
     }
   ],
   "name" : [

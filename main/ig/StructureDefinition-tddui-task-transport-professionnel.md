@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel | *Version*:2.0.0 |
-| Active as of 2025-10-20 | *Computable Name*:TDDUITaskTransportProfessionnel |
+| Active as of 2025-10-23 | *Computable Name*:TDDUITaskTransportProfessionnel |
 
  
 Profil de la ressource TDDUITaskTransport permettant de représenter le transport du professionnel. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
   "name" : "TDDUITaskTransportProfessionnel",
   "title" : "TDDUI Task Transport Professionnel",
   "status" : "active",
-  "date" : "2025-10-20T13:54:58+00:00",
+  "date" : "2025-10-23T09:18:35+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -123,12 +123,18 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
         ]
       },
       {
+        "id" : "Task.identifier.system",
+        "path" : "Task.identifier.system",
+        "min" : 1,
+        "patternUri" : "https://identifiant-medicosocial-transportprofessionnel.esante.gouv.fr"
+      },
+      {
         "id" : "Task.identifier.value",
         "path" : "Task.identifier.value",
-        "short" : "Format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-TPPro-idTransport.",
+        "min" : 1,
         "example" : [
           {
-            "label" : "General",
+            "label" : "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-TPPro-idTransport",
             "valueIdentifier" : {
               "value" : "3480787529/147720425367411-TPPro-21564655"
             }

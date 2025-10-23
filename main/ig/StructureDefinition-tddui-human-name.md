@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name | *Version*:2.0.0 |
-| Active as of 2025-10-20 | *Computable Name*:tddui-humanname |
+| Active as of 2025-10-23 | *Computable Name*:tddui-humanname |
 
  
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-human-name.csv
   "name" : "tddui-humanname",
   "title" : "TDDUI Human Name DataType",
   "status" : "active",
-  "date" : "2025-10-20T13:54:58+00:00",
+  "date" : "2025-10-23T09:18:35+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

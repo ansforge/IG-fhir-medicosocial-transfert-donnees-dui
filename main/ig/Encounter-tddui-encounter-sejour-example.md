@@ -22,7 +22,7 @@ Profil: [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md)
 
 **class**: [ActCode HH](http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-HH): home health
 
-**subject**: [DUPONT Male, Date de Naissance :1947-04-03 ( NIR définitif (use: official, ))](Patient-tddui-patient-ins-example.md)
+**subject**: [DUPONT Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/194704032)](Patient-tddui-patient-ins-example.md)
 
 **period**: 2023-04-14 --> (ongoing)
 
@@ -70,7 +70,7 @@ Profil: [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md)
           }
         ]
       },
-      "system" : "urn:oid:1.2.250.2345.3245.13",
+      "system" : "https://identifiant-medicosocial-sejour.esante.gouv.fr",
       "value" : "3480787529/147720425367411-SEJOUR-1012"
     }
   ],

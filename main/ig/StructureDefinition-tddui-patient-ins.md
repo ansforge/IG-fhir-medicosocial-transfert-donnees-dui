@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins | *Version*:2.0.0 |
-| Active as of 2025-10-20 | *Computable Name*:TDDUIPatientINS |
+| Active as of 2025-10-23 | *Computable Name*:TDDUIPatientINS |
 
  
 Profil de la ressource FRCorePatientINSProfile permettant de représenter un usager lorsque l'INS est transmis. 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient-ins.cs
   "name" : "TDDUIPatientINS",
   "title" : "TDDUI Patient INS",
   "status" : "active",
-  "date" : "2025-10-20T13:54:58+00:00",
+  "date" : "2025-10-23T09:18:35+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -160,12 +160,29 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient-ins.cs
         "id" : "Patient.identifier:PI",
         "path" : "Patient.identifier",
         "sliceName" : "PI",
-        "short" : "Hospital assigned patient identifier | IPP; Dans le cadre de ce volet, représente l'Identifiant local de l’usager au sein de la structure. Cet identifiant est obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature TRE_G08-TypeIdentifiantPersonne), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS) : 3+FINESS/identifiantLocalUsagerESSMS",
+        "short" : "Hospital assigned patient identifier | IPP; Dans le cadre de ce volet, représente l'Identifiant local de l’usager au sein de la structure.",
         "max" : "1",
         "mapping" : [
           {
             "identity" : "specmetier-to-TDDUIPatientINS",
             "map" : "identifiantLocalUsagerESSMS"
+          }
+        ]
+      },
+      {
+        "id" : "Patient.identifier:PI.system",
+        "path" : "Patient.identifier.system",
+        "patternUri" : "https://identifiant-medicosocial-localusager.esante.gouv.fr"
+      },
+      {
+        "id" : "Patient.identifier:PI.value",
+        "path" : "Patient.identifier.value",
+        "example" : [
+          {
+            "label" : "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS",
+            "valueIdentifier" : {
+              "value" : "3480787529/194704032"
+            }
           }
         ]
       },

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response | *Version*:2.0.0 |
-| Active as of 2025-10-20 | *Computable Name*:TDDUIQuestionnaireResponse |
+| Active as of 2025-10-23 | *Computable Name*:TDDUIQuestionnaireResponse |
 
  
 Profil de la ressource QuestionnaireResponse utilisé pour transmettre les réponses aux questionnaires dans le cadre des évaluations. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-questionnaire-
   "name" : "TDDUIQuestionnaireResponse",
   "title" : "TDDUI QuestionnaireResponse",
   "status" : "active",
-  "date" : "2025-10-20T13:54:58+00:00",
+  "date" : "2025-10-23T09:18:35+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -255,11 +255,18 @@ Other representations of profile: [CSV](StructureDefinition-tddui-questionnaire-
         ]
       },
       {
+        "id" : "QuestionnaireResponse.identifier.system",
+        "path" : "QuestionnaireResponse.identifier.system",
+        "min" : 1,
+        "patternUri" : "https://identifiant-medicosocial-evaluation.esante.gouv.fr"
+      },
+      {
         "id" : "QuestionnaireResponse.identifier.value",
         "path" : "QuestionnaireResponse.identifier.value",
+        "min" : 1,
         "example" : [
           {
-            "label" : "L'identifiant de l'évaluation : 3+FINESS/identifiantLocalUsagerESSMS-EVAL-numEvaluation.",
+            "label" : "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-EVAL-numEvaluation",
             "valueIdentifier" : {
               "value" : "3480787529/147720425367411-EVAL-21564655"
             }
