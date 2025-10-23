@@ -50,10 +50,7 @@ Usage: #definition
 * rest.resource[=].supportedProfile = Canonical(tddui-questionnaire-response)
 * rest.resource[=].interaction[0].code = #read
 
-* rest.resource[7].type = #Questionnaire
-* rest.resource[=].interaction[0].code = #read
-
-* rest.resource[8].type = #DocumentReference
+* rest.resource[7].type = #DocumentReference
 * rest.resource[=].supportedProfile = Canonical(tddui-document-reference)
 * rest.resource[=].interaction[0].code = #read
 
