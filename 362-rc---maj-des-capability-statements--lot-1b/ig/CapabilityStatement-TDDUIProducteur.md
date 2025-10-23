@@ -72,8 +72,7 @@ Le tableau récapitulatif liste les ressources faisant partie de cette configura
 | [PractitionerRole](#PractitionerRole1-5) | Supported Profiles  [TDDUI Practitioner Role](StructureDefinition-tddui-practitioner-role.md) |  |  |  | y |  |  |  |  |
 | [Task](#Task1-6) | Supported Profiles  [TDDUI Task Transport Professionnel](StructureDefinition-tddui-task-transport-professionnel.md)  [TDDUI Task Transport Usager](StructureDefinition-tddui-task-transport-usager.md) |  |  |  | y |  |  |  |  |
 | [QuestionnaireResponse](#QuestionnaireResponse1-7) | Supported Profiles  [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md) |  |  |  | y |  |  |  |  |
-| [Questionnaire](#Questionnaire1-8) |   |  |  |  | y |  |  |  |  |
-| [DocumentReference](#DocumentReference1-9) | Supported Profiles  [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md) |  |  |  | y |  |  |  |  |
+| [DocumentReference](#DocumentReference1-8) | Supported Profiles  [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md) |  |  |  | y |  |  |  |  |
 
 -------
 
@@ -184,18 +183,6 @@ Résumé des interactions
 
 Supported Profiles
 [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md)
-
-#### Resource Conformance: supported Questionnaire
-
-Ressource FHIR coeur
-
-[Questionnaire](http://hl7.org/fhir/R4/questionnaire.html)
-
-Reference Policy
-
-Résumé des interactions
-
-* Supports `create`.
 
 #### Resource Conformance: supported DocumentReference
 
@@ -338,14 +325,6 @@ Supported Profiles
           "supportedProfile" : [
             "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
           ],
-          "interaction" : [
-            {
-              "code" : "create"
-            }
-          ]
-        },
-        {
-          "type" : "Questionnaire",
           "interaction" : [
             {
               "code" : "create"
