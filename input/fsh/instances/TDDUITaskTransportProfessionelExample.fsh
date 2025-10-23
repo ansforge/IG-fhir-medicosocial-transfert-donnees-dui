@@ -4,6 +4,7 @@ Usage: #example
 Description: "Exemple du transport du professionnel."
 
 * identifier.value = "3480787529/147720425367411-TPPro-154674"
+* identifier.system = "https://identifiant-medicosocial-transportprofessionnel.esante.gouv.fr"
 
 * status = #completed
 
