@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
   "name" : "TDDUITaskTransportUsager",
   "title" : "TDDUI Task Transport Usager",
   "status" : "active",
-  "date" : "2025-10-24T07:43:46+00:00",
+  "date" : "2025-10-24T09:56:53+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -137,9 +137,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
         "example" : [
           {
             "label" : "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-TPPat-idTransport",
-            "valueIdentifier" : {
-              "value" : "3480787529/147720425367411-TPPat-21564655"
-            }
+            "valueString" : "3480787529/147720425367411-TPPat-21564655"
           }
         ]
       },

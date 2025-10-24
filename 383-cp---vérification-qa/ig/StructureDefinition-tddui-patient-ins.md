@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient-ins.cs
   "name" : "TDDUIPatientINS",
   "title" : "TDDUI Patient INS",
   "status" : "active",
-  "date" : "2025-10-24T07:43:46+00:00",
+  "date" : "2025-10-24T09:56:53+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -180,9 +180,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient-ins.cs
         "example" : [
           {
             "label" : "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS",
-            "valueIdentifier" : {
-              "value" : "3480787529/194704032"
-            }
+            "valueString" : "3480787529/194704032"
           }
         ]
       },
