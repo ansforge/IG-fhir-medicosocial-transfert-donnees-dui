@@ -1,0 +1,121 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/tddui/Task/tddui-task-transport-professionel-example> a fhir:Task ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "tddui-task-transport-professionel-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel"^^xsd:anyURI ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Task tddui-task-transport-professionel-example</b></p><a name=\"tddui-task-transport-professionel-example\"> </a><a name=\"hctddui-task-transport-professionel-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-task-transport-professionnel.html\">TDDUI Task Transport Professionnel</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-transportprofessionnel.esante.gouv.fr</code>/3480787529/147720425367411-TPPro-154674</p><p><b>status</b>: Completed</p><p><b>intent</b>: plan</p><p><b>code</b>: <span title=\"Codes:{https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis ORG-202}\">Véhicule individuel</span></p><p><b>for</b>: <a href=\"Practitioner-tddui-practitioner-example.html\">Practitioner Claire Martin </a></p><p><b>encounter</b>: <a href=\"Encounter-tddui-encounter-evenement-example.html\">Encounter : extension = ,Observations cliniques : ; Recommandations pour les jours à venir : ; Prochaine visite : 15 avril 2023, 10h30 ; Remarque : Monsieur Dupont a compris les consignes pour la gestion de sa douleur et la mobilisation de sa hanche opérée.,Cet évènement a débuté plus tard l’usager était sous la douche à l’heure du début du rendez-vous.,Visite à domicile pour soins infirmier.,Suivi post-opératoire suite à intervention chirurgicale de la hanche.; identifier = Visit Number; status = finished; class = home health (ActCode#HH); type = Intervention d'un infirmer salarié,; period = 2023-04-14 10:30:00+0200 --&gt; 2023-04-14 11:15:00+0200</a></p><p><b>executionPeriod</b>: 2023-04-14 10:30:00+0200 --&gt; 2023-04-14 11:15:00+0200</p><p><b>owner</b>: <a href=\"Organization-tddui-organization-example.html\">Organization Les Chênes Verts</a></p><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes:{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem typeMotorisation}\">Type de motorisation associée au véhicule utilisé lors du transport.</span></p><p><b>value</b>: <span title=\"Codes:{https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis GEN-355}\">Véhicule électrique</span></p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes:{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem budgetPrevisionnel}\">Budget prévisionnel pour assurer le transport de la personne physique.</span></p><p><b>value</b>: <span title=\"Euro\">€2,00</span> (EUR)</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes:{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem budgetReel}\">Budget réel pour assurer le transport de la personne physique.</span></p><p><b>value</b>: <span title=\"Euro\">€2,00</span> (EUR)</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes:{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem distance}\">Distance du transport de la personne physique.</span></p><p><b>value</b>: No display for Distance  (value : 4; unit : kilometers; system : http://unitsofmeasure.org; code : km)</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes:{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem dureeTheorique}\">Durée théorique du transport de la personne physique.</span></p><p><b>value</b>: No display for Duration  (value : 10; unit : minutes; system : http://unitsofmeasure.org; code : min)</p></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://identifiant-medicosocial-transportprofessionnel.esante.gouv.fr"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "3480787529/147720425367411-TPPro-154674" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:intent [ fhir:v "plan"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "ORG-202" ] ;
+       fhir:display [ fhir:v "Véhicule individuel" ]
+     ] )
+  ] ; # 
+  fhir:for [
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Practitioner/tddui-practitioner-example> ;
+     fhir:reference [ fhir:v "Practitioner/tddui-practitioner-example" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Encounter/tddui-encounter-evenement-example> ;
+     fhir:reference [ fhir:v "Encounter/tddui-encounter-evenement-example" ]
+  ] ; # 
+  fhir:executionPeriod [
+     fhir:start [ fhir:v "2023-04-14T10:30:00+02:00"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2023-04-14T11:15:00+02:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:owner [
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Organization/tddui-organization-example> ;
+     fhir:reference [ fhir:v "Organization/tddui-organization-example" ]
+  ] ; # 
+  fhir:input ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "typeMotorisation" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "GEN-355" ] ;
+         fhir:display [ fhir:v "Véhicule électrique" ]
+       ] )
+     ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "budgetPrevisionnel" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Money ;
+       fhir:value [ fhir:v "2"^^xsd:decimal ] ;
+       fhir:currency [ fhir:v "EUR" ]
+     ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "budgetReel" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Money ;
+       fhir:value [ fhir:v "2"^^xsd:decimal ] ;
+       fhir:currency [ fhir:v "EUR" ]
+     ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "distance" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Distance ;
+       fhir:value [ fhir:v "4"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "kilometers" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "km" ]
+     ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "dureeTheorique" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Duration ;
+       fhir:value [ fhir:v "10"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "minutes" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "min" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

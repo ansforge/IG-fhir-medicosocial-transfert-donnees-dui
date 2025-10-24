@@ -1,0 +1,50 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/tddui/Practitioner/tddui-practitioner-example> a fhir:Practitioner ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "tddui-practitioner-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner"^^xsd:anyURI ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Praticien tddui-practitioner-example</b></p><a name=\"tddui-practitioner-example\"> </a><a name=\"hctddui-practitioner-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-practitioner.html\">TDDUI Practitioner</a></p></div><p><b>identifier</b>: <code>urn:oid:1.2.250.1.71.4.2.1</code>/10103441234</p><p><b>name</b>: Claire Martin </p><blockquote><p><b>qualification</b></p><p><b>code</b>: <span title=\"Codes:{https://mos.esante.gouv.fr/NOS/TRE_R48-DiplomeEtatFrancais/FHIR/TRE-R48-DiplomeEtatFrancais DE09}\">DE Infirmier</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>code</b>: <span title=\"Codes:{https://mos.esante.gouv.fr/NOS/TRE_G15-ProfessionSante/FHIR/TRE-G15-ProfessionSante 60}\">Infirmier</span></p></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:1.2.250.1.71.4.2.1"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "10103441234" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Martin" ] ;
+     fhir:given ( [ fhir:v "Claire" ] ) ;
+     fhir:prefix ( [ fhir:v "MME" ] )
+  ] ) ; # 
+  fhir:qualification ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R48-DiplomeEtatFrancais/FHIR/TRE-R48-DiplomeEtatFrancais"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE09" ] ;
+         fhir:display [ fhir:v "DE Infirmier" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://mos.esante.gouv.fr/NOS/TRE_G15-ProfessionSante/FHIR/TRE-G15-ProfessionSante"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "60" ] ;
+         fhir:display [ fhir:v "Infirmier" ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
