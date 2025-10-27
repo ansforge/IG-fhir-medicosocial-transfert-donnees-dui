@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/TDDUIEncounterParticipant | *Version*:2.0.0 |
-| Active as of 2025-10-24 | *Computable Name*:TDDUIEncounterParticipant |
+| Active as of 2025-10-27 | *Computable Name*:TDDUIEncounterParticipant |
 
  
 CodeSystem for the participant types in TDDUI Encounter 
@@ -28,7 +28,7 @@ CodeSystem for the participant types in TDDUI Encounter
   "id" : "TDDUIEncounterParticipant",
   "meta" : {
     "profile" : [
-      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1"
     ]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/TDDUIEncounterParticipant",
@@ -37,7 +37,7 @@ CodeSystem for the participant types in TDDUI Encounter
   "title" : "TDDUI Encounter Participant Type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-10-24T09:56:53+00:00",
+  "date" : "2025-10-27T08:54:54+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-serafin-valueset | *Version*:2.0.0 |
-| Active as of 2025-10-24 | *Computable Name*:TDDUISerafinValueSet |
+| Active as of 2025-10-27 | *Computable Name*:TDDUISerafinValueSet |
 
  
 ValueSet contenant les codes SERAFIN (prestations directes et indirectes) pour le profil TDDUI Encounter Evenement. 
@@ -20,7 +20,7 @@ ValueSet contenant les codes SERAFIN (prestations directes et indirectes) pour l
 
 ### Logical Definition (CLD)
 
-Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
+Profil: [Shareable ValueSetversion: null4.0.1)](http://hl7.org/fhir/R4/shareablevalueset.html)
 
 * Importe tous les codes contenus dans lintersection de [JDV_J283_PrestationsIndirects_SERAFIN](https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-JDV-J283-PrestationsIndirects-SERAFIN.html) and [JDV_J284_PrestationsDirects_SERAFIN](https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-JDV-J284-PrestationsDirects-SERAFIN.html)
 
@@ -52,7 +52,9 @@ Ce jeu de valeur (ValueSet) contient 0 concepts
   "resourceType" : "ValueSet",
   "id" : "tddui-serafin-valueset",
   "meta" : {
-    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+    "profile" : [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
+    ]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-serafin-valueset",
   "version" : "2.0.0",
@@ -60,7 +62,7 @@ Ce jeu de valeur (ValueSet) contient 0 concepts
   "title" : "TDDUI SERAFIN ValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-10-24T09:56:53+00:00",
+  "date" : "2025-10-27T08:54:54+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -89,8 +91,8 @@ Ce jeu de valeur (ValueSet) contient 0 concepts
     "include" : [
       {
         "valueSet" : [
-          "https://mos.esante.gouv.fr/NOS/JDV_J283-PrestationsIndirects_SERAFIN/FHIR/JDV-J283-PrestationsIndirects-SERAFIN",
-          "https://mos.esante.gouv.fr/NOS/JDV_J284-PrestationsDirects_SERAFIN/FHIR/JDV-J284-PrestationsDirects-SERAFIN"
+          "https://mos.esante.gouv.fr/NOS/JDV_J283-PrestationsIndirects_SERAFIN/FHIR/JDV-J283-PrestationsIndirects-SERAFIN|20241025120000",
+          "https://mos.esante.gouv.fr/NOS/JDV_J284-PrestationsDirects_SERAFIN/FHIR/JDV-J284-PrestationsDirects-SERAFIN|20241025120000"
         ]
       }
     ]
