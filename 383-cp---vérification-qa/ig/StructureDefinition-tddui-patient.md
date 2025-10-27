@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient.csv), 
   "name" : "TDDUIPatient",
   "title" : "TDDUI Patient",
   "status" : "active",
-  "date" : "2025-10-27T08:54:54+00:00",
+  "date" : "2025-10-27T14:34:13+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -105,7 +105,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient.csv), 
   "kind" : "resource",
   "abstract" : false,
   "type" : "Patient",
-  "baseDefinition" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.1.0",
+  "baseDefinition" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -235,7 +235,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient.csv), 
           {
             "code" : "HumanName",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name|2.0.0"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name"
             ]
           }
         ]
@@ -249,7 +249,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient.csv), 
           {
             "code" : "HumanName",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name|2.0.0"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name"
             ]
           }
         ]
@@ -284,7 +284,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient.csv), 
           {
             "code" : "HumanName",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name|2.0.0"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name"
             ]
           }
         ]
@@ -336,7 +336,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient.csv), 
         "short" : "male | female | unknown",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-gender-INS|2.1.0"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-gender-INS"
         },
         "mapping" : [
           {
@@ -381,7 +381,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient.csv), 
           {
             "code" : "Extension",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order|2.0.0"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order"
             ]
           }
         ],

@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-sejo
   "name" : "TDDUIEncounterSejour",
   "title" : "TDDUI Encounter Sejour",
   "status" : "active",
-  "date" : "2025-10-27T08:54:54+00:00",
+  "date" : "2025-10-27T14:34:13+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -100,7 +100,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-sejo
   "kind" : "resource",
   "abstract" : false,
   "type" : "Encounter",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Encounter|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Encounter",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -185,7 +185,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-sejo
           {
             "code" : "Extension",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-admission-date|2.0.0"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-admission-date"
             ]
           }
         ],
@@ -207,7 +207,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-sejo
           {
             "code" : "Extension",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-mode-label|2.0.0"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-mode-label"
             ]
           }
         ],
@@ -229,7 +229,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-sejo
           {
             "code" : "Extension",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exit-mode-label|2.0.0"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exit-mode-label"
             ]
           }
         ],
@@ -251,7 +251,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-sejo
           {
             "code" : "Extension",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment|2.0.0"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment"
             ]
           }
         ],
@@ -329,8 +329,8 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-sejo
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient|2.0.0",
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins|2.0.0"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient",
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"
             ]
           }
         ],
@@ -369,7 +369,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-sejo
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization|2.0.0"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization"
             ]
           }
         ],

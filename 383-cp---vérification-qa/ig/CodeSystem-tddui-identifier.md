@@ -28,7 +28,7 @@ TDDUI Patient's identifier
   "id" : "tddui-identifier",
   "meta" : {
     "profile" : [
-      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1"
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
     ]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-identifier",
@@ -37,7 +37,7 @@ TDDUI Patient's identifier
   "title" : "TDDUI FR Core CodeSystem v2-0203",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-10-27T08:54:54+00:00",
+  "date" : "2025-10-27T14:34:13+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-profession.csv
   "name" : "TDDUIProfession",
   "title" : "TDDUI Profession",
   "status" : "active",
-  "date" : "2025-10-27T08:54:54+00:00",
+  "date" : "2025-10-27T14:34:13+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -91,7 +91,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-profession.csv
     }
   ],
   "type" : "Extension",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -126,7 +126,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-profession.csv
         "path" : "Extension.value[x].coding",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J01-XdsAuthorSpecialty-CISIS/FHIR/JDV-J01-XdsAuthorSpecialty-CISIS|20250721120000"
+          "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J01-XdsAuthorSpecialty-CISIS/FHIR/JDV-J01-XdsAuthorSpecialty-CISIS"
         }
       }
     ]

@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-admission-date
   "name" : "TDDUIAdmissionDate",
   "title" : "Date d’admission",
   "status" : "active",
-  "date" : "2025-10-27T08:54:54+00:00",
+  "date" : "2025-10-27T14:34:13+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -89,7 +89,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-admission-date
     }
   ],
   "type" : "Extension",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
     "element" : [

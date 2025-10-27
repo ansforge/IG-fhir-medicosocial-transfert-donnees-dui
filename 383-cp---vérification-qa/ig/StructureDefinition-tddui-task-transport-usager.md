@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
   "name" : "TDDUITaskTransportUsager",
   "title" : "TDDUI Task Transport Usager",
   "status" : "active",
-  "date" : "2025-10-27T08:54:54+00:00",
+  "date" : "2025-10-27T14:34:13+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -99,7 +99,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
   "kind" : "resource",
   "abstract" : false,
   "type" : "Task",
-  "baseDefinition" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport|2.0.0",
+  "baseDefinition" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -374,7 +374,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J282-TransportsLiesAuProjetIndividuel_SERAFIN/FHIR/JDV-J282-TransportsLiesAuProjetIndividuel-SERAFIN|20241025120000"
+          "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J282-TransportsLiesAuProjetIndividuel_SERAFIN/FHIR/JDV-J282-TransportsLiesAuProjetIndividuel-SERAFIN"
         }
       }
     ]

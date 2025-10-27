@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "TDDUI"] ; # 
   fhir:title [ fhir:v "Médicosocial - Transfert de données DUI"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-10-27T08:54:54+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-27T14:34:13+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -128,21 +128,6 @@
          fhir:value [
            a fhir:string ;
            fhir:v "true"
-         ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "pin-canonicals"
-         ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "pin-all"
          ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
@@ -539,21 +524,6 @@
          fhir:value [
            a fhir:string ;
            fhir:v "true"
-         ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:code ;
-           fhir:v "pin-canonicals"
-         ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "pin-all"
          ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
@@ -1549,8 +1519,8 @@
        fhir:description [ fhir:v "Exemple d'un évènement" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement|2.0.0"^^xsd:anyURI ;
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement|2.0.0>
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement"^^xsd:anyURI ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement>
        ]
      ] [
        fhir:extension ( [
@@ -1568,8 +1538,8 @@
        fhir:description [ fhir:v "Exemple d'un séjour en ESSMS" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour|2.0.0"^^xsd:anyURI ;
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour|2.0.0>
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour"^^xsd:anyURI ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour>
        ]
      ] [
        fhir:extension ( [
@@ -1605,8 +1575,8 @@
        fhir:description [ fhir:v "ESSMS - Les Chênes Verts" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization|2.0.0"^^xsd:anyURI ;
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization|2.0.0>
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization"^^xsd:anyURI ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization>
        ]
      ] [
        fhir:extension ( [
@@ -1624,8 +1594,8 @@
        fhir:description [ fhir:v "Exemple de la ressource TDDUIPatient" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient|2.0.0"^^xsd:anyURI ;
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient|2.0.0>
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient"^^xsd:anyURI ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient>
        ]
      ] [
        fhir:extension ( [
@@ -1643,8 +1613,8 @@
        fhir:description [ fhir:v "Exemple de la ressource TDDUIPatientINS" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins|2.0.0"^^xsd:anyURI ;
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins|2.0.0>
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"^^xsd:anyURI ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins>
        ]
      ] [
        fhir:extension ( [
@@ -1662,8 +1632,8 @@
        fhir:description [ fhir:v "Exemple d'un professionnel de santé" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner|2.0.0"^^xsd:anyURI ;
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner|2.0.0>
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner"^^xsd:anyURI ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner>
        ]
      ] [
        fhir:extension ( [
@@ -1681,8 +1651,8 @@
        fhir:description [ fhir:v "Exemple d'un professionnel de santé" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role|2.0.0"^^xsd:anyURI ;
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role|2.0.0>
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role"^^xsd:anyURI ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role>
        ]
      ] [
        fhir:extension ( [
@@ -1718,8 +1688,8 @@
        fhir:description [ fhir:v "Grille de réponse AGGIR PA" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response|2.0.0"^^xsd:anyURI ;
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response|2.0.0>
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"^^xsd:anyURI ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response>
        ]
      ] [
        fhir:extension ( [
@@ -1737,8 +1707,8 @@
        fhir:description [ fhir:v "Grille de réponse AGGIR PH" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response|2.0.0"^^xsd:anyURI ;
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response|2.0.0>
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"^^xsd:anyURI ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response>
        ]
      ] [
        fhir:extension ( [
@@ -1756,8 +1726,8 @@
        fhir:description [ fhir:v "Evaluation SERAFIN pour un besoin d'hébergement adapté avec précision" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response|2.0.0"^^xsd:anyURI ;
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response|2.0.0>
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"^^xsd:anyURI ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response>
        ]
      ] [
        fhir:extension ( [
@@ -1775,8 +1745,8 @@
        fhir:description [ fhir:v "Evaluation SERAFIN pour un besoin d'hébergement adapté sans précision" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response|2.0.0"^^xsd:anyURI ;
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response|2.0.0>
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"^^xsd:anyURI ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response>
        ]
      ] [
        fhir:extension ( [
@@ -1794,8 +1764,8 @@
        fhir:description [ fhir:v "Grille de réponse de la situation SSIAD" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response|2.0.0"^^xsd:anyURI ;
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response|2.0.0>
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"^^xsd:anyURI ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response>
        ]
      ] [
        fhir:extension ( [
@@ -1813,8 +1783,8 @@
        fhir:description [ fhir:v "Exemple du transport." ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport|2.0.0"^^xsd:anyURI ;
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport|2.0.0>
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport"^^xsd:anyURI ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport>
        ]
      ] [
        fhir:extension ( [
@@ -1832,8 +1802,8 @@
        fhir:description [ fhir:v "Exemple du transport du professionnel." ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel|2.0.0"^^xsd:anyURI ;
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel|2.0.0>
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel"^^xsd:anyURI ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel>
        ]
      ] [
        fhir:extension ( [
@@ -1851,8 +1821,8 @@
        fhir:description [ fhir:v "Exemple du transport de l'usager." ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager|2.0.0"^^xsd:anyURI ;
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager|2.0.0>
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager"^^xsd:anyURI ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager>
        ]
      ] [
        fhir:extension ( [
@@ -1870,8 +1840,8 @@
        fhir:description [ fhir:v "Exemple de bundle conforme au profil TDDUIBundle" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle|2.0.0"^^xsd:anyURI ;
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle|2.0.0>
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle"^^xsd:anyURI ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle>
        ]
      ] [
        fhir:extension ( [

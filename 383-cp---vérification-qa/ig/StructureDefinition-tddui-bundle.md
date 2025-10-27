@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
   "name" : "TDDUIBundle",
   "title" : "TDDUI Bundle",
   "status" : "active",
-  "date" : "2025-10-27T08:54:54+00:00",
+  "date" : "2025-10-27T14:34:13+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -92,7 +92,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
   "kind" : "resource",
   "abstract" : false,
   "type" : "Bundle",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Bundle|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Bundle",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -135,7 +135,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
           {
             "code" : "Patient",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient|2.0.0"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient"
             ]
           }
         ]
@@ -166,7 +166,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
           {
             "code" : "Patient",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins|2.0.0"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"
             ]
           }
         ]
@@ -197,7 +197,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
           {
             "code" : "Organization",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization|2.0.0"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization"
             ]
           }
         ]
@@ -228,7 +228,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
           {
             "code" : "Encounter",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour|2.0.0"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour"
             ]
           }
         ]
@@ -259,7 +259,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
           {
             "code" : "Encounter",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement|2.0.0"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement"
             ]
           }
         ]
@@ -290,7 +290,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
           {
             "code" : "Practitioner",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner|2.0.0"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner"
             ]
           }
         ]
@@ -321,7 +321,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
           {
             "code" : "PractitionerRole",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role|2.0.0"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role"
             ]
           }
         ]
@@ -352,7 +352,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
           {
             "code" : "Task",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel|2.0.0"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel"
             ]
           }
         ]
@@ -383,7 +383,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
           {
             "code" : "Task",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager|2.0.0"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager"
             ]
           }
         ]
@@ -414,7 +414,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
           {
             "code" : "DocumentReference",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference|2.0.0"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"
             ]
           }
         ]
@@ -445,7 +445,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
           {
             "code" : "QuestionnaireResponse",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response|2.0.0"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
             ]
           }
         ]

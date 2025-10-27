@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-questionnaire-
   "name" : "TDDUIQuestionnaireResponse",
   "title" : "TDDUI QuestionnaireResponse",
   "status" : "active",
-  "date" : "2025-10-27T08:54:54+00:00",
+  "date" : "2025-10-27T14:34:13+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -99,7 +99,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-questionnaire-
   "kind" : "resource",
   "abstract" : false,
   "type" : "QuestionnaireResponse",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -155,7 +155,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-questionnaire-
           {
             "code" : "Extension",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant|2.0.0"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant"
             ]
           }
         ]
@@ -200,7 +200,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-questionnaire-
           {
             "code" : "Extension",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment|2.0.0"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment"
             ]
           }
         ],
@@ -225,7 +225,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-questionnaire-
           {
             "code" : "Extension",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment|2.0.0"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment"
             ]
           }
         ],
@@ -312,8 +312,8 @@ Other representations of profile: [CSV](StructureDefinition-tddui-questionnaire-
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient|2.0.0",
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins|2.0.0"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient",
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"
             ]
           }
         ],
@@ -335,7 +335,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-questionnaire-
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement|2.0.0"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement"
             ]
           }
         ],
@@ -371,7 +371,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-questionnaire-
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner|2.0.0"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner"
             ]
           }
         ],
@@ -393,7 +393,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-questionnaire-
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner|2.0.0"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner"
             ]
           }
         ],
@@ -443,7 +443,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-questionnaire-
           {
             "code" : "Extension",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment|2.0.0"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment"
             ]
           }
         ],
@@ -517,7 +517,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-questionnaire-
           {
             "code" : "Extension",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment|2.0.0"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment"
             ]
           }
         ],
@@ -587,7 +587,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-questionnaire-
           {
             "code" : "Extension",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment|2.0.0"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment"
             ]
           }
         ],

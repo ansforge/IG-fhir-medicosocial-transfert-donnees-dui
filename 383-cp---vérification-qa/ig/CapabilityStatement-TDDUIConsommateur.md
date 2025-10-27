@@ -65,14 +65,14 @@ Le tableau récapitulatif liste les ressources faisant partie de cette configura
 
 | | | | | | | | | | |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| [Patient](#Patient1-1) | Supported Profiles  [TDDUI Patientversion: 2.0.0)](StructureDefinition-tddui-patient.md)  [TDDUI Patient INSversion: 2.0.0)](StructureDefinition-tddui-patient-ins.md) | y |  |  |  |  |  |  |  |
-| [Organization](#Organization1-2) | Supported Profiles  [TDDUI Organizationversion: 2.0.0)](StructureDefinition-tddui-organization.md) | y |  |  |  |  |  |  |  |
-| [Encounter](#Encounter1-3) | Supported Profiles  [TDDUI Encounter Sejourversion: 2.0.0)](StructureDefinition-tddui-encounter-sejour.md)  [TDDUI Encounter Evenementversion: 2.0.0)](StructureDefinition-tddui-encounter-evenement.md) | y |  |  |  |  |  |  |  |
-| [Practitioner](#Practitioner1-4) | Supported Profiles  [TDDUI Practitionerversion: 2.0.0)](StructureDefinition-tddui-practitioner.md) | y |  |  |  |  |  |  |  |
-| [PractitionerRole](#PractitionerRole1-5) | Supported Profiles  [TDDUI Practitioner Roleversion: 2.0.0)](StructureDefinition-tddui-practitioner-role.md) | y |  |  |  |  |  |  |  |
-| [Task](#Task1-6) | Supported Profiles  [TDDUI Task Transport Professionnelversion: 2.0.0)](StructureDefinition-tddui-task-transport-professionnel.md)  [TDDUI Task Transport Usagerversion: 2.0.0)](StructureDefinition-tddui-task-transport-usager.md) | y |  |  |  |  |  |  |  |
-| [QuestionnaireResponse](#QuestionnaireResponse1-7) | Supported Profiles  [TDDUI QuestionnaireResponseversion: 2.0.0)](StructureDefinition-tddui-questionnaire-response.md) | y |  |  |  |  |  |  |  |
-| [DocumentReference](#DocumentReference1-8) | Supported Profiles  [TDDUI DocumentReferenceversion: 2.0.0)](StructureDefinition-tddui-document-reference.md) | y |  |  |  |  |  |  |  |
+| [Patient](#Patient1-1) | Supported Profiles  [TDDUI Patient](StructureDefinition-tddui-patient.md)  [TDDUI Patient INS](StructureDefinition-tddui-patient-ins.md) | y |  |  |  |  |  |  |  |
+| [Organization](#Organization1-2) | Supported Profiles  [TDDUI Organization](StructureDefinition-tddui-organization.md) | y |  |  |  |  |  |  |  |
+| [Encounter](#Encounter1-3) | Supported Profiles  [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md)  [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md) | y |  |  |  |  |  |  |  |
+| [Practitioner](#Practitioner1-4) | Supported Profiles  [TDDUI Practitioner](StructureDefinition-tddui-practitioner.md) | y |  |  |  |  |  |  |  |
+| [PractitionerRole](#PractitionerRole1-5) | Supported Profiles  [TDDUI Practitioner Role](StructureDefinition-tddui-practitioner-role.md) | y |  |  |  |  |  |  |  |
+| [Task](#Task1-6) | Supported Profiles  [TDDUI Task Transport Professionnel](StructureDefinition-tddui-task-transport-professionnel.md)  [TDDUI Task Transport Usager](StructureDefinition-tddui-task-transport-usager.md) | y |  |  |  |  |  |  |  |
+| [QuestionnaireResponse](#QuestionnaireResponse1-7) | Supported Profiles  [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md) | y |  |  |  |  |  |  |  |
+| [DocumentReference](#DocumentReference1-8) | Supported Profiles  [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md) | y |  |  |  |  |  |  |  |
 
 -------
 
@@ -89,8 +89,8 @@ Résumé des interactions
 * Supports `read`.
 
 Supported Profiles
-[TDDUI Patientversion: 2.0.0)](StructureDefinition-tddui-patient.md)
-[TDDUI Patient INSversion: 2.0.0)](StructureDefinition-tddui-patient-ins.md)
+[TDDUI Patient](StructureDefinition-tddui-patient.md)
+[TDDUI Patient INS](StructureDefinition-tddui-patient-ins.md)
 
 #### Resource Conformance: supported Organization
 
@@ -105,7 +105,7 @@ Résumé des interactions
 * Supports `read`.
 
 Supported Profiles
-[TDDUI Organizationversion: 2.0.0)](StructureDefinition-tddui-organization.md)
+[TDDUI Organization](StructureDefinition-tddui-organization.md)
 
 #### Resource Conformance: supported Encounter
 
@@ -120,8 +120,8 @@ Résumé des interactions
 * Supports `read`.
 
 Supported Profiles
-[TDDUI Encounter Sejourversion: 2.0.0)](StructureDefinition-tddui-encounter-sejour.md)
-[TDDUI Encounter Evenementversion: 2.0.0)](StructureDefinition-tddui-encounter-evenement.md)
+[TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md)
+[TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)
 
 #### Resource Conformance: supported Practitioner
 
@@ -136,7 +136,7 @@ Résumé des interactions
 * Supports `read`.
 
 Supported Profiles
-[TDDUI Practitionerversion: 2.0.0)](StructureDefinition-tddui-practitioner.md)
+[TDDUI Practitioner](StructureDefinition-tddui-practitioner.md)
 
 #### Resource Conformance: supported PractitionerRole
 
@@ -151,7 +151,7 @@ Résumé des interactions
 * Supports `read`.
 
 Supported Profiles
-[TDDUI Practitioner Roleversion: 2.0.0)](StructureDefinition-tddui-practitioner-role.md)
+[TDDUI Practitioner Role](StructureDefinition-tddui-practitioner-role.md)
 
 #### Resource Conformance: supported Task
 
@@ -166,8 +166,8 @@ Résumé des interactions
 * Supports `read`.
 
 Supported Profiles
-[TDDUI Task Transport Professionnelversion: 2.0.0)](StructureDefinition-tddui-task-transport-professionnel.md)
-[TDDUI Task Transport Usagerversion: 2.0.0)](StructureDefinition-tddui-task-transport-usager.md)
+[TDDUI Task Transport Professionnel](StructureDefinition-tddui-task-transport-professionnel.md)
+[TDDUI Task Transport Usager](StructureDefinition-tddui-task-transport-usager.md)
 
 #### Resource Conformance: supported QuestionnaireResponse
 
@@ -182,7 +182,7 @@ Résumé des interactions
 * Supports `read`.
 
 Supported Profiles
-[TDDUI QuestionnaireResponseversion: 2.0.0)](StructureDefinition-tddui-questionnaire-response.md)
+[TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md)
 
 #### Resource Conformance: supported DocumentReference
 
@@ -197,7 +197,7 @@ Résumé des interactions
 * Supports `read`.
 
 Supported Profiles
-[TDDUI DocumentReferenceversion: 2.0.0)](StructureDefinition-tddui-document-reference.md)
+[TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md)
 
 
 
@@ -254,8 +254,8 @@ Supported Profiles
         {
           "type" : "Patient",
           "supportedProfile" : [
-            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient|2.0.0",
-            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins|2.0.0"
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient",
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"
           ],
           "interaction" : [
             {
@@ -266,7 +266,7 @@ Supported Profiles
         {
           "type" : "Organization",
           "supportedProfile" : [
-            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization|2.0.0"
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization"
           ],
           "interaction" : [
             {
@@ -277,8 +277,8 @@ Supported Profiles
         {
           "type" : "Encounter",
           "supportedProfile" : [
-            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour|2.0.0",
-            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement|2.0.0"
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour",
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement"
           ],
           "interaction" : [
             {
@@ -289,7 +289,7 @@ Supported Profiles
         {
           "type" : "Practitioner",
           "supportedProfile" : [
-            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner|2.0.0"
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner"
           ],
           "interaction" : [
             {
@@ -300,7 +300,7 @@ Supported Profiles
         {
           "type" : "PractitionerRole",
           "supportedProfile" : [
-            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role|2.0.0"
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role"
           ],
           "interaction" : [
             {
@@ -311,8 +311,8 @@ Supported Profiles
         {
           "type" : "Task",
           "supportedProfile" : [
-            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel|2.0.0",
-            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager|2.0.0"
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel",
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager"
           ],
           "interaction" : [
             {
@@ -323,7 +323,7 @@ Supported Profiles
         {
           "type" : "QuestionnaireResponse",
           "supportedProfile" : [
-            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response|2.0.0"
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
           ],
           "interaction" : [
             {
@@ -334,7 +334,7 @@ Supported Profiles
         {
           "type" : "DocumentReference",
           "supportedProfile" : [
-            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference|2.0.0"
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"
           ],
           "interaction" : [
             {
