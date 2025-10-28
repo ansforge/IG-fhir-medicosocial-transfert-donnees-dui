@@ -32,7 +32,7 @@ Description: "Exemple d'un évènement"
 
 * extension[TDDUIRessourcesUsed].extension[TDDUIRessourceType].valueCodeableConcept.coding.system = "http://snomed.info/sct"
 * extension[TDDUIRessourcesUsed].extension[TDDUIRessourceType].valueCodeableConcept.coding.code = #261324000
-* extension[TDDUIRessourcesUsed].extension[TDDUIRessourceType].valueCodeableConcept.coding.display = "Vehicle"
+* extension[TDDUIRessourcesUsed].extension[TDDUIRessourceType].valueCodeableConcept.coding.display = "véhicule"
 * extension[TDDUIEventReport].valueString = "Observations cliniques : ; Recommandations pour les jours à venir : ; Prochaine visite : 15 avril 2023, 10h30 ; Remarque : Monsieur Dupont a compris les consignes pour la gestion de sa douleur et la mobilisation de sa hanche opérée."
 * extension[TDDUIComment].valueString = "Cet évènement a débuté plus tard l’usager était sous la douche à l’heure du début du rendez-vous."
 * extension[TDDUIEventLabel].valueString = "Visite à domicile pour soins infirmier."
