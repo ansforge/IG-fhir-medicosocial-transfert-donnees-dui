@@ -9,7 +9,7 @@
 Profil: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)
 
 > **Ressources utilisées**
-* TDDUIRessourceType: véhicule
+* TDDUIRessourceType: Matériel spécialisé
 
 **Rapport de l’évènement**: Observations cliniques : ; Recommandations pour les jours à venir : ; Prochaine visite : 15 avril 2023, 10h30 ; Remarque : Monsieur Dupont a compris les consignes pour la gestion de sa douleur et la mobilisation de sa hanche opérée.
 
@@ -47,7 +47,7 @@ Profil: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenemen
 
 **serviceProvider**: [Organization Les Chênes Verts](Organization-tddui-organization-example.md)
 
-**partOf**: [Encounter : extension = 2023-04-11,Date de début du suivi post-opératoire : 14/04/2023,Sortie prévisionnelle prévue pour le 5 mai 2023,2023-05-05; identifier = Identifiant du séjour: 3480787529/147720425367411-SEJOUR-1012; status = in-progress; class = home health (ActCode#HH); period = 2023-04-14 --> (ongoing)](Encounter-tddui-encounter-sejour-example.md)
+**partOf**: [Encounter : extension = 2023-04-11,Date de début du suivi post-opératoire : 14/04/2023,Sortie prévisionnelle prévue pour le 5 mai 2023,2023-05-05; identifier = Identifiant du séjour: 3480787529/147720425367411-SEJOUR-1012; status = in-progress; class = home health (ActCode#HH); period = 2023-04-14 --> (en cours)](Encounter-tddui-encounter-sejour-example.md)
 
 
 
@@ -70,9 +70,9 @@ Profil: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenemen
           "valueCodeableConcept" : {
             "coding" : [
               {
-                "system" : "http://snomed.info/sct",
-                "code" : "261324000",
-                "display" : "véhicule"
+                "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+                "code" : "ORG-206",
+                "display" : "Matériel spécialisé"
               }
             ]
           }

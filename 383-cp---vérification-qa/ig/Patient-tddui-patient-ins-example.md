@@ -14,7 +14,7 @@ DUPONT Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 348078
 
 | | |
 | :--- | :--- |
-| Other Id: | NIR définitif/147720425367411 (use: official, ) |
+| Other Id: | NIR définitif/147720425367411 (utilisation : official, ) |
 | Nom alternatif : | Jean DUPONT (Official) |
 | Contact Detail | 12 rue des Lilas, 76748 Vittefleur, France(home) |
 | [Patient Birth Place](http://hl7.org/fhir/extensions/5.2.0/StructureDefinition-patient-birthPlace.html) | Mazoires FRA |
