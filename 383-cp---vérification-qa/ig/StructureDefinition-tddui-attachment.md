@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment | *Version*:2.0.0 |
-| Active as of 2025-10-27 | *Computable Name*:TDDUIAttachment |
+| Active as of 2025-10-28 | *Computable Name*:TDDUIAttachment |
 
 Pièces jointes liées à l’événement et à l'évaluation. L'extension référence le profil PDSm_SimplifiedPublish.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-attachment.csv
   "name" : "TDDUIAttachment",
   "title" : "Pièce jointe",
   "status" : "active",
-  "date" : "2025-10-27T14:34:13+00:00",
+  "date" : "2025-10-28T10:21:51+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 Profil: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)
 
 > **Ressources utilisées**
-* TDDUIRessourceType: Vehicle
+* TDDUIRessourceType: véhicule
 
 **Rapport de l’évènement**: Observations cliniques : ; Recommandations pour les jours à venir : ; Prochaine visite : 15 avril 2023, 10h30 ; Remarque : Monsieur Dupont a compris les consignes pour la gestion de sa douleur et la mobilisation de sa hanche opérée.
 
@@ -72,7 +72,7 @@ Profil: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenemen
               {
                 "system" : "http://snomed.info/sct",
                 "code" : "261324000",
-                "display" : "Vehicle"
+                "display" : "véhicule"
               }
             ]
           }

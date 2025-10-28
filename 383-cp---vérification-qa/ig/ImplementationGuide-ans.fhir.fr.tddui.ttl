@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "TDDUI"] ; # 
   fhir:title [ fhir:v "Médicosocial - Transfert de données DUI"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-10-27T14:34:13+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-28T10:21:51+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -128,6 +128,21 @@
          fhir:value [
            a fhir:string ;
            fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "path-expansion-params"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "../../expansion-params.json"
          ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
@@ -524,6 +539,21 @@
          fhir:value [
            a fhir:string ;
            fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "path-expansion-params"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "../../expansion-params.json"
          ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]

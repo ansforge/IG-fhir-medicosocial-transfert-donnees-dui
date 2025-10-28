@@ -12,17 +12,17 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Terminology Server Report for TDDUI</h1>
- <p>Generated Mon Oct 27 14:41:43 UTC 2025, FHIR version 4.0.1 for ans.fhir.fr.tddui#2.0.0 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/tddui">https://interop.esante.gouv.fr/ig/fhir/tddui</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/tddui/history.html">history</a>))</p>
+ <p>Generated Tue Oct 28 10:26:19 UTC 2025, FHIR version 4.0.1 for ans.fhir.fr.tddui#2.0.0 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/tddui">https://interop.esante.gouv.fr/ig/fhir/tddui</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/tddui/history.html">history</a>))</p>
 <p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
 <h2>Terminology Parameters</h2>
 <ul>
   <li>
-    <b>x-system-cache-id</b>
-:     <code>dc8fd4bc-091a-424a-8a3b-6198ef146891</code>
+    <b>system-version</b>
+:     <code>http://snomed.info/sct|http://snomed.info/sct/11000315107</code>
   </li>
   <li>
-    <b>defaultDisplayLanguage</b>
-:     <code>fr-FR</code>
+    <b>displayLanguage</b>
+:     <code>fr</code>
   </li>
 </ul>
 <h2>Tx Manager report for 'https://tx.fhir.org/tx-reg'</h2>
@@ -64,7 +64,7 @@
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
-    <td>urn:uuid:afb435d9-2c58-4c24-ac0e-edf0b253bdc9</td>
+    <td>urn:uuid:8883fadd-7d23-46a9-b806-7dc1103d9372</td>
     <td>urn:ietf:bcp:13</td>
     <td>auth = , candidates=http://tx.fhir.org/r4|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4</td>
   </tr>
@@ -78,7 +78,7 @@
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
-    <td>urn:uuid:b259ccdd-0fa1-4735-ace6-203a8f1b1c5f</td>
+    <td>urn:uuid:c37f41d8-8180-46a2-b8a3-57418f2604a6</td>
     <td>urn:ietf:bcp:13</td>
     <td>auth = , candidates=http://tx.fhir.org/r4|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4</td>
   </tr>
@@ -307,30 +307,30 @@
     <td>auth = https://smt.esante.gouv.fr/fhir, candidates=</td>
   </tr>
   <tr>
-    <td>Found candidate server http://tx.fhir.org/r4</td>
-    <td>http://tx.fhir.org/r4</td>
+    <td>Found authoritative server https://smt.esante.gouv.fr/fhir</td>
+    <td>https://smt.esante.gouv.fr/fhir</td>
     <td>null</td>
     <td>http://snomed.info/sct</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|https://smt.esante.gouv.fr/fhir|https://apps.health.belgium.be/ontoserver/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4</td>
+    <td>auth = https://smt.esante.gouv.fr/fhir, candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|https://apps.health.belgium.be/ontoserver/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4</td>
   </tr>
   <tr>
-    <td>Found candidate server http://tx.fhir.org/r4</td>
-    <td>http://tx.fhir.org/r4</td>
+    <td>Found authoritative server https://smt.esante.gouv.fr/fhir</td>
+    <td>https://smt.esante.gouv.fr/fhir</td>
     <td>null</td>
     <td>http://snomed.info/sct</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|https://smt.esante.gouv.fr/fhir|https://apps.health.belgium.be/ontoserver/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4</td>
+    <td>auth = https://smt.esante.gouv.fr/fhir, candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|https://apps.health.belgium.be/ontoserver/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4</td>
   </tr>
   <tr>
-    <td>Found partially authoritative server https://smt.esante.gouv.fr/fhir</td>
+    <td>Found authoritative server https://smt.esante.gouv.fr/fhir</td>
     <td>https://smt.esante.gouv.fr/fhir</td>
     <td>https://smt.esante.gouv.fr/fhir/ValueSet/jdv-ressource-utilisee-cisis|20250624152100</td>
     <td>[https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis, http://snomed.info/sct]</td>
-    <td>[auth = https://smt.esante.gouv.fr/fhir, candidates=, auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|https://smt.esante.gouv.fr/fhir|https://apps.health.belgium.be/ontoserver/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4]</td>
+    <td>[auth = https://smt.esante.gouv.fr/fhir, candidates=, auth = https://smt.esante.gouv.fr/fhir, candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|https://apps.health.belgium.be/ontoserver/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4]</td>
   </tr>
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
-    <td>urn:uuid:e3883267-bab3-473a-98c5-bf80c6ace5db</td>
+    <td>urn:uuid:157f0e1d-284d-49a6-aaa7-63a47059b35f</td>
     <td>urn:iso:std:iso:4217</td>
     <td>auth = , candidates=http://tx.fhir.org/r4|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4</td>
   </tr>
@@ -379,7 +379,7 @@
 </table>
 <h2>Primary Server: https://tx.fhir.org/r4</h2>
 <a href="https://tx.fhir.org/r4"></a>
-<p>Use Count: 38. Code Systems used: </p>
+<p>Use Count: 37. Code Systems used: </p>
 <table class="grid">
   <tr>
     <th>
@@ -401,14 +401,6 @@
     <td>22</td>
     <td>
       <a href="http://terminology.hl7.org/6.5.0/CodeSystem-ICF.html">International Classification of Functioning, Disability and Health</a>
-    </td>
-  </tr>
-  <tr>
-    <td>http://snomed.info/sct</td>
-    <td>0</td>
-    <td>2</td>
-    <td>
-      <a href="https://interop.esante.gouv.fr/terminologies/1.2.0/CodeSystem-900000000000207008-20250701.html">SNOMED CT core</a>
     </td>
   </tr>
   <tr>
@@ -472,7 +464,7 @@
 </table>
 <h2>Server: https://smt.esante.gouv.fr/fhir</h2>
 <a href="https://smt.esante.gouv.fr/fhir"></a>
-<p>Use Count: 8. Code Systems used: </p>
+<p>Use Count: 9. Code Systems used: </p>
 <table class="grid">
   <tr>
     <th>
@@ -491,7 +483,7 @@
   <tr>
     <td>http://snomed.info/sct</td>
     <td>0</td>
-    <td>1</td>
+    <td>3</td>
     <td>
       <a href="https://interop.esante.gouv.fr/terminologies/1.2.0/CodeSystem-900000000000207008-20250701.html">SNOMED CT core</a>
     </td>

@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui | *Version*:2.0.0 |
-| Active as of 2025-10-27 | *Computable Name*:TDDUI |
+| Active as of 2025-10-28 | *Computable Name*:TDDUI |
 
  **Brief description of this Implementation Guide**
  The Digital User File (DUI) centralizes all information concerning the person being cared for in social and medico-social facilities and services. The aim of this implementation guide is to define the specifications for DUI data transfer. 
@@ -128,7 +128,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2025-10-27T14:34:13+00:00",
+  "date" : "2025-10-28T10:21:51+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -230,6 +230,19 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           {
             "url" : "value",
             "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "path-expansion-params"
+          },
+          {
+            "url" : "value",
+            "valueString" : "../../expansion-params.json"
           }
         ],
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -572,6 +585,19 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           {
             "url" : "value",
             "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "path-expansion-params"
+          },
+          {
+            "url" : "value",
+            "valueString" : "../../expansion-params.json"
           }
         ],
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"

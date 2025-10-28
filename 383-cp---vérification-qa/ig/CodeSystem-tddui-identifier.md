@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-identifier | *Version*:2.0.0 |
-| Active as of 2025-10-27 | *Computable Name*:TDDUIIdentifier |
+| Active as of 2025-10-28 | *Computable Name*:TDDUIIdentifier |
 
  
 TDDUI Patient's identifier 
@@ -37,7 +37,7 @@ TDDUI Patient's identifier
   "title" : "TDDUI FR Core CodeSystem v2-0203",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-10-27T14:34:13+00:00",
+  "date" : "2025-10-28T10:21:51+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
