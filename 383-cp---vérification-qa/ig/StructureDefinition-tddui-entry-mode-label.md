@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-mode-label | *Version*:2.0.0 |
-| Active as of 2025-10-28 | *Computable Name*:TDDUIEntryModelabel |
+| Active as of 2025-10-29 | *Computable Name*:TDDUIEntryModelabel |
 
 Libellé du mode d’entée du séjour.
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-entry-mode-lab
   "name" : "TDDUIEntryModelabel",
   "title" : "Libellé mode d'entrée",
   "status" : "active",
-  "date" : "2025-10-28T15:41:17+00:00",
+  "date" : "2025-10-29T10:41:12+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

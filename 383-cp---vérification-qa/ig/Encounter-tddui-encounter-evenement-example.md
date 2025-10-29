@@ -10,6 +10,7 @@ Profil: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenemen
 
 > **Ressources utilisées**
 * TDDUIRessourceType: Matériel spécialisé
+* TDDUIMaterialDetail: Materiel médical
 
 **Rapport de l’évènement**: Observations cliniques : ; Recommandations pour les jours à venir : ; Prochaine visite : 15 avril 2023, 10h30 ; Remarque : Monsieur Dupont a compris les consignes pour la gestion de sa douleur et la mobilisation de sa hanche opérée.
 
@@ -73,6 +74,18 @@ Profil: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenemen
                 "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
                 "code" : "ORG-206",
                 "display" : "Matériel spécialisé"
+              }
+            ]
+          }
+        },
+        {
+          "url" : "TDDUIMaterialDetail",
+          "valueCodeableConcept" : {
+            "coding" : [
+              {
+                "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+                "code" : "ORG-208",
+                "display" : "Materiel médical"
               }
             ]
           }
