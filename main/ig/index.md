@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui | *Version*:2.0.0 |
-| Active as of 2025-10-23 | *Computable Name*:TDDUI |
+| Active as of 2025-10-29 | *Computable Name*:TDDUI |
 
  **Brief description of this Implementation Guide**
  The Digital User File (DUI) centralizes all information concerning the person being cared for in social and medico-social facilities and services. The aim of this implementation guide is to define the specifications for DUI data transfer. 
@@ -128,7 +128,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2025-10-23T14:35:50+00:00",
+  "date" : "2025-10-29T16:42:45+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -230,6 +230,19 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           {
             "url" : "value",
             "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "path-expansion-params"
+          },
+          {
+            "url" : "value",
+            "valueString" : "../../expansion-params.json"
           }
         ],
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -534,6 +547,12 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
       },
       {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters",
+        "valueReference" : {
+          "reference" : "Parameters/expansion-parameters"
+        }
+      },
+      {
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
         "valueCode" : "hl7.fhir.uv.tools.r4#0.8.0"
       },
@@ -572,6 +591,19 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           {
             "url" : "value",
             "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "path-expansion-params"
+          },
+          {
+            "url" : "value",
+            "valueString" : "../../expansion-params.json"
           }
         ],
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"

@@ -30,9 +30,9 @@ Profil: [TDDUI Task Transport Professionnel](StructureDefinition-tddui-task-tran
 
 > **input****type**:Budget réel pour assurer le transport de la personne physique.**value**:€2,00(EUR)
 
-> **input****type**:Distance du transport de la personne physique.**value**: No display for Distance (value : 4; unit : kilometers; system : http://unitsofmeasure.org; code : km)
+> **input****type**:Distance du transport de la personne physique.**value**: Pas daffichage pour {0} (value : 4; unit : kilometers; system : http://unitsofmeasure.org; code : km)
 
-> **input****type**:Durée théorique du transport de la personne physique.**value**: No display for Duration (value : 10; unit : minutes; system : http://unitsofmeasure.org; code : min)
+> **input****type**:Durée théorique du transport de la personne physique.**value**: Pas daffichage pour {0} (value : 10; unit : minutes; system : http://unitsofmeasure.org; code : min)
 
 
 
