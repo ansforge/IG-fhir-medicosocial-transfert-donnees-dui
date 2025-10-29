@@ -13,7 +13,7 @@ Description: "Profil de la ressource Encounter permettant de regrouper les évè
 * identifier 1..1
 * identifier ^short = "Identifiant de l'évènement"
 * identifier.value ^example[0].label = "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-EVN-numEvenement"
-* identifier.value ^example[0].valueIdentifier.value = "3480787529/147720425367411-EVN-12548"
+* identifier.value ^example[0].valueString = "3480787529/147720425367411-EVN-12548"
 * identifier.system = "https://identifiant-medicosocial-evenement.esante.gouv.fr"
 
 * status ^short = "Correspondance des statuts métier avec les codes FHIR : Planifié → planned, Validé → triaged, Réalisé → finished, Annulé → cancelled."

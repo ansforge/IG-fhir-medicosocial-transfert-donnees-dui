@@ -7,7 +7,7 @@ Description: "Profil de la ressource TDDUITaskTransport permettant de représent
 * identifier ^short = "Identifiant du transport de l'usager"
 * identifier.value 1..1
 * identifier.value ^example[0].label = "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-TPPat-idTransport"
-* identifier.value ^example[0].valueIdentifier.value = "3480787529/147720425367411-TPPat-21564655"
+* identifier.value ^example[0].valueString = "3480787529/147720425367411-TPPat-21564655"
 * identifier.system 1..1
 * identifier.system = "https://identifiant-medicosocial-transportusager.esante.gouv.fr"
 
