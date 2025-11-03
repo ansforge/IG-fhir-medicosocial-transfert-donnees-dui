@@ -1,3 +1,15 @@
+### Release 2.1.0-ballot de l'Implementation Guide du volet "Transfert de dossier DUI"
+
+Modifications apportées dans cette release [2.1.0-ballot](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pulls?q=is%3Apr+is%3Aclosed+milestone%3A2.1.0-ballot) :
+
+* [ANS-006-150 - Ajout des blocs "Evènement" et "Evaluation" au flux 1](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/373)
+* [ANS-006-150 - Mise à jour des Capability Statements](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/372)
+* [ANS-006-150 - Ajout de l'évènement](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/367)
+* [ANS-006-150 - Verification du QA](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/385)
+* [ANS-006-150 - Gestion des identifiants métiers](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/381)
+* [ANS-006-150- Modification cardinalité du professionnel pour l'évènement](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/380)
+* [ANS-006-150 - Ajout de l'évaluation](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/374)
+
 ### Release 2.0.0 de l'Implementation Guide du volet "Transfert de dossier DUI"
 
 Modifications apportées dans cette release [2.0.0](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pulls?q=is%3Apr+is%3Aclosed+milestone%3A2.0.0) :
