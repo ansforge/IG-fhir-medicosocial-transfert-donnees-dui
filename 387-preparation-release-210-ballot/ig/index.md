@@ -13,6 +13,9 @@
  **Brief description of this Implementation Guide**
  The Digital User File (DUI) centralizes all information concerning the person being cared for in social and medico-social facilities and services. The aim of this implementation guide is to define the specifications for DUI data transfer. 
 
+> **Attention !**
+Cet Implementation Guide est actuellement en concertation. La version courante est accessible à l'adresse : http://interop.esante.gouv.fr/ig/fhir/tddui
+
 ### Introduction
 
 Le Programme ESMS numérique, porté par la Caisse Nationale de Solidarité pour l'Autonomie (CNSA), vise à généraliser l’utilisation du numérique dans les établissements et services sociaux et médico-sociaux (ESSMS). Il repose principalement sur le déploiement d’un Dossier Usager Informatisé (DUI) pour chaque personne accompagnée. Ce DUI centralise l’ensemble des informations qui concerne la personne accompagnée en structure et service sociale et médico-sociale, et son parcours de santé et de vie. Ce dossier unique comprend :
@@ -128,7 +131,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2025-11-03T10:12:49+00:00",
+  "date" : "2025-11-03T10:48:41+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -216,7 +219,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           },
           {
             "url" : "value",
-            "valueString" : "trial-implementation"
+            "valueString" : "public-comment"
           }
         ],
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -577,7 +580,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           },
           {
             "url" : "value",
-            "valueString" : "trial-implementation"
+            "valueString" : "public-comment"
           }
         ],
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"

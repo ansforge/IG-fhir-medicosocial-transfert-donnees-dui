@@ -73,7 +73,7 @@ Grille d'évaluation de la situation SSIAD
   "version" : "2.1.0-ballot",
   "title" : "Évaluation de la situation SSIAD",
   "status" : "active",
-  "date" : "2025-11-03T10:12:49+00:00",
+  "date" : "2025-11-03T10:48:41+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
