@@ -1,4 +1,4 @@
-# TDDUI SERAFIN ValueSet - Médicosocial - Transfert de données DUI v2.0.0
+# TDDUI SERAFIN ValueSet - Médicosocial - Transfert de données DUI v2.1.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-serafin-valueset | *Version*:2.0.0 |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-serafin-valueset | *Version*:2.1.0-ballot |
 | Active as of 2025-11-03 | *Computable Name*:TDDUISerafinValueSet |
 
  
@@ -55,12 +55,12 @@ Ce jeu de valeur (ValueSet) contient 0 concepts
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-serafin-valueset",
-  "version" : "2.0.0",
+  "version" : "2.1.0-ballot",
   "name" : "TDDUISerafinValueSet",
   "title" : "TDDUI SERAFIN ValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-11-03T09:45:25+00:00",
+  "date" : "2025-11-03T10:12:49+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

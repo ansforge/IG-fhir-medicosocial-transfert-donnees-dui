@@ -1,4 +1,4 @@
-# TDDUI Organization - Médicosocial - Transfert de données DUI v2.0.0
+# TDDUI Organization - Médicosocial - Transfert de données DUI v2.1.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization | *Version*:2.0.0 |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization | *Version*:2.1.0-ballot |
 | Active as of 2025-11-03 | *Computable Name*:TDDUIOrganization |
 
  
@@ -40,11 +40,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-organization.c
   "resourceType" : "StructureDefinition",
   "id" : "tddui-organization",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization",
-  "version" : "2.0.0",
+  "version" : "2.1.0-ballot",
   "name" : "TDDUIOrganization",
   "title" : "TDDUI Organization",
   "status" : "active",
-  "date" : "2025-11-03T09:45:25+00:00",
+  "date" : "2025-11-03T10:12:49+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

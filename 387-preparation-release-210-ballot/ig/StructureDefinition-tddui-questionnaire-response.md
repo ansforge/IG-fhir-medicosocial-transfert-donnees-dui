@@ -1,4 +1,4 @@
-# TDDUI QuestionnaireResponse - Médicosocial - Transfert de données DUI v2.0.0
+# TDDUI QuestionnaireResponse - Médicosocial - Transfert de données DUI v2.1.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response | *Version*:2.0.0 |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response | *Version*:2.1.0-ballot |
 | Active as of 2025-11-03 | *Computable Name*:TDDUIQuestionnaireResponse |
 
  
@@ -39,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-questionnaire-
   "resourceType" : "StructureDefinition",
   "id" : "tddui-questionnaire-response",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response",
-  "version" : "2.0.0",
+  "version" : "2.1.0-ballot",
   "name" : "TDDUIQuestionnaireResponse",
   "title" : "TDDUI QuestionnaireResponse",
   "status" : "active",
-  "date" : "2025-11-03T09:45:25+00:00",
+  "date" : "2025-11-03T10:12:49+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

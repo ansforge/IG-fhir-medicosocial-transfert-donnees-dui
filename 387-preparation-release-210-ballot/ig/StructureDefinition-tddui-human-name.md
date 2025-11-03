@@ -1,4 +1,4 @@
-# TDDUI Human Name DataType - Médicosocial - Transfert de données DUI v2.0.0
+# TDDUI Human Name DataType - Médicosocial - Transfert de données DUI v2.1.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name | *Version*:2.0.0 |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name | *Version*:2.1.0-ballot |
 | Active as of 2025-11-03 | *Computable Name*:tddui-humanname |
 
  
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-human-name.csv
   "resourceType" : "StructureDefinition",
   "id" : "tddui-human-name",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name",
-  "version" : "2.0.0",
+  "version" : "2.1.0-ballot",
   "name" : "tddui-humanname",
   "title" : "TDDUI Human Name DataType",
   "status" : "active",
-  "date" : "2025-11-03T09:45:25+00:00",
+  "date" : "2025-11-03T10:12:49+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
