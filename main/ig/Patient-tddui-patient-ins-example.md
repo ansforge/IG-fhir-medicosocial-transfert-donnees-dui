@@ -1,4 +1,4 @@
-# tddui-patient-ins-example - Médicosocial - Transfert de données DUI v2.0.0
+# tddui-patient-ins-example - Médicosocial - Transfert de données DUI v2.1.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -14,11 +14,11 @@ DUPONT Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 348078
 
 | | |
 | :--- | :--- |
-| Other Id: | NIR définitif/147720425367411 (utilisation : official, ) |
+| Autre identifiant : | NIR définitif/147720425367411 (utilisation : official, ) |
 | Nom alternatif : | Jean DUPONT (Official) |
-| Contact Detail | 12 rue des Lilas, 76748 Vittefleur, France(home) |
+| Coordonnées | 12 rue des Lilas, 76748 Vittefleur, France(home) |
 | [Patient Birth Place](http://hl7.org/fhir/extensions/5.2.0/StructureDefinition-patient-birthPlace.html) | Mazoires FRA |
-| FR Core Patient Ident Reliability Extension: | * identityStatus: [FR Core CodeSystem v2-0445 VALI](https://hl7.fr/ig/fhir/core/2.1.0/CodeSystem-fr-core-cs-v2-0445.html#fr-core-cs-v2-0445-VALI): Identité validée
+| FR Core Patient Ident Reliability Extension: | * identityStatus: [FR Core CodeSystem v2-0445: VALI](https://hl7.fr/ig/fhir/core/2.1.0/CodeSystem-fr-core-cs-v2-0445.html#fr-core-cs-v2-0445-VALI) (Identité validée)
  |
 
 

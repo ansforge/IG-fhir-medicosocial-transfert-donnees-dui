@@ -1,4 +1,4 @@
-# tddui-patient-example - Médicosocial - Transfert de données DUI v2.0.0
+# tddui-patient-example - Médicosocial - Transfert de données DUI v2.1.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -15,7 +15,7 @@ DUPONT Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 348078
 | | |
 | :--- | :--- |
 | Nom alternatif : | Jean DUPONT (Official) |
-| Contact Detail | 12 rue des Lilas, 76748 Vittefleur, France(home) |
+| Coordonnées | 12 rue des Lilas, 76748 Vittefleur, France(home) |
 | [Patient Birth Place](http://hl7.org/fhir/extensions/5.2.0/StructureDefinition-patient-birthPlace.html) | Mazoires FRA |
 
 

@@ -1,4 +1,4 @@
-# Libellé mode de sortie - Médicosocial - Transfert de données DUI v2.0.0
+# Libellé mode de sortie - Médicosocial - Transfert de données DUI v2.1.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exit-mode-label | *Version*:2.0.0 |
-| Active as of 2025-10-29 | *Computable Name*:TDDUIExitModeLabel |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exit-mode-label | *Version*:2.1.0-ballot |
+| Active as of 2025-11-04 | *Computable Name*:TDDUIExitModeLabel |
 
 Libellé du mode de sortie du séjour.
 
@@ -43,11 +43,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-exit-mode-labe
   "resourceType" : "StructureDefinition",
   "id" : "tddui-exit-mode-label",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exit-mode-label",
-  "version" : "2.0.0",
+  "version" : "2.1.0-ballot",
   "name" : "TDDUIExitModeLabel",
   "title" : "Libellé mode de sortie",
   "status" : "active",
-  "date" : "2025-10-29T16:42:45+00:00",
+  "date" : "2025-11-04T09:41:06+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

@@ -1,4 +1,4 @@
-# Artifacts Summary - Médicosocial - Transfert de données DUI v2.0.0
+# Artifacts Summary - Médicosocial - Transfert de données DUI v2.1.0-ballot
 
 * [**Table of Contents**](toc.md)
 * **Artifacts Summary**

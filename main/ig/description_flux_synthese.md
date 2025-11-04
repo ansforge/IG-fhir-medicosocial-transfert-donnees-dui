@@ -1,4 +1,4 @@
-# Synthèse des flux - Médicosocial - Transfert de données DUI v2.0.0
+# Synthèse des flux - Médicosocial - Transfert de données DUI v2.1.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Volume 2 - Détail des transactions**](description_flux.md)
