@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "11a3daad-b3b7-4d1a-82f1-25de278175b6-23",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/11a3daad-b3b7-4d1a-82f1-25de278175b6-23",
+  "id" : "b97639f1-4626-4272-b44a-b64420422ce5-20",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/b97639f1-4626-4272-b44a-b64420422ce5-20",
   "name" : "UnionTDDUIEncounterSejourAndTDDUIEncounterSejour",
   "title" : "Union of TDDUI Encounter Sejour And TDDUI Encounter Sejour",
   "status" : "active",
-  "date" : "2025-11-04T09:43:17+00:00",
+  "date" : "2025-11-04T14:54:11+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -198,7 +198,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/11a3daad-b3b7-4d1a-82f1-25de278175b6-17"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/languages"
       }
     },
     {
@@ -882,7 +882,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "The type of encounter.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/11a3daad-b3b7-4d1a-82f1-25de278175b6-26"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/encounter-type"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -927,7 +927,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Broad categorization of the service that is to be provided.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/11a3daad-b3b7-4d1a-82f1-25de278175b6-29"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/service-type"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -994,12 +994,8 @@
       "type" : [{
         "code" : "Reference",
         "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient",
-        "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"]
-      },
-      {
-        "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient",
-        "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"]
+        "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins",
+        "#sd-tddui-patient-tddui-patient"]
       }],
       "constraint" : [{
         "extension" : [{
@@ -1659,7 +1655,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "Reason why the encounter takes place.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/11a3daad-b3b7-4d1a-82f1-25de278175b6-47"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/encounter-reason"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -1933,7 +1929,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "The type of diagnosis this condition represents.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/11a3daad-b3b7-4d1a-82f1-25de278175b6-50"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/diagnosis-role"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -2223,7 +2219,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "From where the patient was admitted.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/11a3daad-b3b7-4d1a-82f1-25de278175b6-53"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/encounter-admit-source"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -2299,7 +2295,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Medical, cultural or ethical food preferences to help with catering requirements.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/11a3daad-b3b7-4d1a-82f1-25de278175b6-56"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/encounter-diet"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -2336,7 +2332,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "Special courtesies.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/11a3daad-b3b7-4d1a-82f1-25de278175b6-59"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/encounter-special-courtesy"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -2373,7 +2369,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "Special arrangements.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/11a3daad-b3b7-4d1a-82f1-25de278175b6-62"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/encounter-special-arrangements"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -2444,7 +2440,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Discharge Disposition.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/11a3daad-b3b7-4d1a-82f1-25de278175b6-65"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/encounter-discharge-disposition"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -2694,7 +2690,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Physical form of the location.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/11a3daad-b3b7-4d1a-82f1-25de278175b6-68"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/location-physical-type"
       }
     },
     {

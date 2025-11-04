@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "11a3daad-b3b7-4d1a-82f1-25de278175b6-24",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/11a3daad-b3b7-4d1a-82f1-25de278175b6-24",
+  "id" : "b97639f1-4626-4272-b44a-b64420422ce5-21",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/b97639f1-4626-4272-b44a-b64420422ce5-21",
   "name" : "IntersectionTDDUIEncounterSejourAndTDDUIEncounterSejour",
   "title" : "Intersection of TDDUI Encounter Sejour And TDDUI Encounter Sejour",
   "status" : "active",
-  "date" : "2025-11-04T09:43:17+00:00",
+  "date" : "2025-11-04T14:54:11+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -1011,6 +1011,12 @@
       "alias" : ["patient"],
       "min" : 1,
       "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient",
+        "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins",
+        "#sd-tddui-patient-tddui-patient"]
+      }],
       "constraint" : [{
         "extension" : [{
           "url" : "http://hl7.org/fhir/4.0/StructureDefinition/extension-ElementDefinition.constraint.xpath",
