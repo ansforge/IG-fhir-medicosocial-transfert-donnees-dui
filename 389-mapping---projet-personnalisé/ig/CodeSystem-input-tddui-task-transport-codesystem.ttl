@@ -1,0 +1,88 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "input-tddui-task-transport-codesystem"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/shareablecodesystem>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem input-tddui-task-transport-codesystem</b></p><a name=\"input-tddui-task-transport-codesystem\"> </a><a name=\"hcinput-tddui-task-transport-codesystem\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"http://hl7.org/fhir/R4/shareablecodesystem.html\">Shareable CodeSystem</a></p></div><p>This case-sensitive code system <code>https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">typeMotorisation<a name=\"input-tddui-task-transport-codesystem-typeMotorisation\"> </a></td><td>Type de motorisation associée au véhicule utilisé lors du transport.</td></tr><tr><td style=\"white-space:nowrap\">adresseDepart<a name=\"input-tddui-task-transport-codesystem-adresseDepart\"> </a></td><td>Adresse de départ du transport.</td></tr><tr><td style=\"white-space:nowrap\">adresseDestination<a name=\"input-tddui-task-transport-codesystem-adresseDestination\"> </a></td><td>Adresse de destination du transport.</td></tr><tr><td style=\"white-space:nowrap\">budgetPrevisionnel<a name=\"input-tddui-task-transport-codesystem-budgetPrevisionnel\"> </a></td><td>Budget prévisionnel pour assurer le transport de la personne physique.</td></tr><tr><td style=\"white-space:nowrap\">budgetReel<a name=\"input-tddui-task-transport-codesystem-budgetReel\"> </a></td><td>Budget réel pour assurer le transport de la personne physique.</td></tr><tr><td style=\"white-space:nowrap\">distance<a name=\"input-tddui-task-transport-codesystem-distance\"> </a></td><td>Distance du transport de la personne physique.</td></tr><tr><td style=\"white-space:nowrap\">dureeTheorique<a name=\"input-tddui-task-transport-codesystem-dureeTheorique\"> </a></td><td>Durée théorique du transport de la personne physique.</td></tr><tr><td style=\"white-space:nowrap\">accompagnement<a name=\"input-tddui-task-transport-codesystem-accompagnement\"> </a></td><td>Accompagnement nécessaire ou non de l'usager. </td></tr><tr><td style=\"white-space:nowrap\">asepsie<a name=\"input-tddui-task-transport-codesystem-asepsie\"> </a></td><td>Lors du transport de l'usager l'asepsie est rigoureusement respectée ou n'est pas nécessaire.</td></tr><tr><td style=\"white-space:nowrap\">natureTransport<a name=\"input-tddui-task-transport-codesystem-natureTransport\"> </a></td><td>Nature du transport de l'usager.</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem"^^xsd:anyURI ;
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem>
+  ] ; # 
+  fhir:version [ fhir:v "2.1.0-ballot"] ; # 
+  fhir:name [ fhir:v "InputTDDUITaskTransportCodeSystem"] ; # 
+  fhir:title [ fhir:v "InputTaskTransportCodeSystem"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-11-10T08:33:48+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "ANS"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "ANS" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://esante.gouv.fr" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les transports dans le cadre du DUI."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "FR" ] ;
+       fhir:display [ fhir:v "FRANCE" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:compositional [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "10"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "typeMotorisation" ] ;
+     fhir:display [ fhir:v "Type de motorisation associée au véhicule utilisé lors du transport." ]
+  ] [
+     fhir:code [ fhir:v "adresseDepart" ] ;
+     fhir:display [ fhir:v "Adresse de départ du transport." ]
+  ] [
+     fhir:code [ fhir:v "adresseDestination" ] ;
+     fhir:display [ fhir:v "Adresse de destination du transport." ]
+  ] [
+     fhir:code [ fhir:v "budgetPrevisionnel" ] ;
+     fhir:display [ fhir:v "Budget prévisionnel pour assurer le transport de la personne physique." ]
+  ] [
+     fhir:code [ fhir:v "budgetReel" ] ;
+     fhir:display [ fhir:v "Budget réel pour assurer le transport de la personne physique." ]
+  ] [
+     fhir:code [ fhir:v "distance" ] ;
+     fhir:display [ fhir:v "Distance du transport de la personne physique." ]
+  ] [
+     fhir:code [ fhir:v "dureeTheorique" ] ;
+     fhir:display [ fhir:v "Durée théorique du transport de la personne physique." ]
+  ] [
+     fhir:code [ fhir:v "accompagnement" ] ;
+     fhir:display [ fhir:v "Accompagnement nécessaire ou non de l'usager. " ]
+  ] [
+     fhir:code [ fhir:v "asepsie" ] ;
+     fhir:display [ fhir:v "Lors du transport de l'usager l'asepsie est rigoureusement respectée ou n'est pas nécessaire." ]
+  ] [
+     fhir:code [ fhir:v "natureTransport" ] ;
+     fhir:display [ fhir:v "Nature du transport de l'usager." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
