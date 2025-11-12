@@ -42,9 +42,23 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1"],
       "uses" : {
       },
-      "StructureDefinition-tddui-practitioner.html" : "TDDUI Practitioner",
       "StructureDefinition-tddui-patient.html" : "TDDUI Patient",
-      "StructureDefinition-tddui-patient-ins.html" : "TDDUI Patient INS"
+      "StructureDefinition-tddui-patient-ins.html" : "TDDUI Patient INS",
+      "StructureDefinition-tddui-practitioner.html" : "TDDUI Practitioner"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/body-site",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTBodyStructures",
+      "title" : "SNOMED CT Body Structures",
+      "description" : "This value set includes all codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 442083009 (Anatomical or acquired body site (body structure)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.141"],
+      "sources" : ["2.16.840.1.113883.4.642.3.141"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-service-request-besoin.html" : "TDDUI ServiceRequest Besoin"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/bundle-type",
@@ -61,6 +75,92 @@
       "StructureDefinition-tddui-bundle.html" : "TDDUI Bundle"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/care-plan-activity-kind",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CarePlanActivityKind",
+      "title" : "Care Plan Activity Kind",
+      "description" : "Resource types defined as part of FHIR that can be represented as in-line definitions of a care plan activity.",
+      "systems" : ["http://hl7.org/fhir/resource-types"],
+      "oids" : ["2.16.840.1.113883.4.642.3.145"],
+      "sources" : ["2.16.840.1.113883.4.642.3.145"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-careplan-projet-perso.html" : "TDDUI CarePlan Projet Perso"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-plan-activity-outcome",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CarePlanActivityOutcome",
+      "title" : "Care Plan Activity Outcome",
+      "description" : "Example codes indicating the outcome of a care plan activity. Note that these are in no way complete and might not even be appropriate for some uses.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.149"],
+      "sources" : ["2.16.840.1.113883.4.642.3.149"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-careplan-projet-perso.html" : "TDDUI CarePlan Projet Perso"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-plan-activity-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CarePlanActivityStatus",
+      "title" : "CarePlanActivityStatus",
+      "description" : "Codes that reflect the current state of a care plan activity within its overall life cycle.",
+      "systems" : ["http://hl7.org/fhir/care-plan-activity-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.146"],
+      "sources" : ["2.16.840.1.113883.4.642.3.146"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-careplan-projet-perso.html" : "TDDUI CarePlan Projet Perso"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-plan-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CarePlanCategory",
+      "title" : "Care Plan Category",
+      "description" : "Example codes indicating the category a care plan falls within.  Note that these are in no way complete and might not even be appropriate for some uses.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.148"],
+      "sources" : ["2.16.840.1.113883.4.642.3.148"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-careplan-projet-perso.html" : "TDDUI CarePlan Projet Perso"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-plan-intent",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CarePlanIntent",
+      "title" : "Care Plan Intent",
+      "description" : "Codes indicating the degree of authority/intentionality associated with a care plan.",
+      "systems" : ["http://hl7.org/fhir/request-intent"],
+      "oids" : ["2.16.840.1.113883.4.642.3.150"],
+      "sources" : ["2.16.840.1.113883.4.642.3.150"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-careplan-projet-perso.html" : "TDDUI CarePlan Projet Perso"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/clinical-findings",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTClinicalFindings",
+      "title" : "SNOMED CT Clinical Findings",
+      "description" : "This value set includes all the \"Clinical finding\" [SNOMED CT](http://snomed.info/sct) codes - concepts where concept is-a 404684003 (Clinical finding (finding)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.232"],
+      "sources" : ["2.16.840.1.113883.4.642.3.232"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-goal-objectif.html" : "TDDUI Goal Objectif",
+      "StructureDefinition-tddui-careplan-projet-perso.html" : "TDDUI CarePlan Projet Perso",
+      "StructureDefinition-tddui-goal-attente.html" : "TDDUI Goal Attente"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/common-tags",
       "version" : "4.0.1",
       "status" : "draft",
@@ -72,14 +172,14 @@
       "sources" : ["2.16.840.1.113883.4.642.3.79"],
       "uses" : {
       },
+      "StructureDefinition-tddui-patient.html" : "TDDUI Patient",
+      "StructureDefinition-tddui-practitioner-role.html" : "TDDUI Practitioner Role",
+      "StructureDefinition-tddui-questionnaire-response.html" : "TDDUI QuestionnaireResponse",
+      "StructureDefinition-tddui-patient-ins.html" : "TDDUI Patient INS",
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement",
       "StructureDefinition-tddui-organization.html" : "TDDUI Organization",
       "StructureDefinition-tddui-document-reference.html" : "TDDUI DocumentReference",
-      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement",
-      "StructureDefinition-tddui-practitioner.html" : "TDDUI Practitioner",
-      "StructureDefinition-tddui-patient.html" : "TDDUI Patient",
-      "StructureDefinition-tddui-patient-ins.html" : "TDDUI Patient INS",
-      "StructureDefinition-tddui-questionnaire-response.html" : "TDDUI QuestionnaireResponse",
-      "StructureDefinition-tddui-practitioner-role.html" : "TDDUI Practitioner Role"
+      "StructureDefinition-tddui-practitioner.html" : "TDDUI Practitioner"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/composition-status",
@@ -94,6 +194,141 @@
       "uses" : {
       },
       "StructureDefinition-tddui-document-reference.html" : "TDDUI DocumentReference"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/consent-action",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConsentActionCodes",
+      "title" : "Consent Action Codes",
+      "description" : "This value set includes sample Consent Action codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/consentaction"],
+      "oids" : ["2.16.840.1.113883.4.642.3.753"],
+      "sources" : ["2.16.840.1.113883.4.642.3.753"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-consent.html" : "TDDUI Consent"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/consent-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConsentCategoryCodes",
+      "title" : "Consent Category Codes",
+      "description" : "This value set includes sample Consent Directive Type codes, including several consent directive related LOINC codes; HL7 VALUE SET: ActConsentType(2.16.840.1.113883.1.11.19897); examples of US realm consent directive legal descriptions and references to online and/or downloadable forms such as the SSA-827 Authorization to Disclose Information to the Social Security Administration; and other anticipated consent directives related to participation in a clinical trial, medical procedures, reproductive procedures; health care directive (Living Will); advance directive, do not resuscitate (DNR); Physician Orders for Life-Sustaining Treatment (POLST)",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "http://loinc.org",
+        "http://terminology.hl7.org/CodeSystem/consentcategorycodes"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.751"],
+      "sources" : ["2.16.840.1.113883.4.642.3.751"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-consent.html" : "TDDUI Consent"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/consent-content-class",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConsentContentClass",
+      "title" : "Consent Content Class",
+      "description" : "This value set includes the FHIR resource types, along with some other important content class codes",
+      "systems" : [
+        "urn:ietf:rfc:3986",
+        "urn:ietf:bcp:13",
+        "http://hl7.org/fhir/resource-types",
+        "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.747"],
+      "sources" : ["2.16.840.1.113883.4.642.3.747"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-consent.html" : "TDDUI Consent"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/consent-content-code",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConsentContentCodes",
+      "title" : "Consent Content Codes",
+      "description" : "This example value set contains all LOINC code",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.748"],
+      "sources" : ["2.16.840.1.113883.4.642.3.748"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-consent.html" : "TDDUI Consent"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/consent-data-meaning",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConsentDataMeaning",
+      "title" : "ConsentDataMeaning",
+      "description" : "How a resource reference is interpreted when testing consent restrictions.",
+      "systems" : ["http://hl7.org/fhir/consent-data-meaning"],
+      "oids" : ["2.16.840.1.113883.4.642.3.759"],
+      "sources" : ["2.16.840.1.113883.4.642.3.759"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-consent.html" : "TDDUI Consent"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/consent-policy",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConsentPolicyRuleCodes",
+      "title" : "Consent PolicyRule Codes",
+      "description" : "This value set includes sample Regulatory consent policy types from the US and other regions.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/consentpolicycodes"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1014"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1014"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-consent.html" : "TDDUI Consent"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/consent-provision-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConsentProvisionType",
+      "title" : "ConsentProvisionType",
+      "description" : "How a rule statement is applied, such as adding additional consent or removing consent.",
+      "systems" : ["http://hl7.org/fhir/consent-provision-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.757"],
+      "sources" : ["2.16.840.1.113883.4.642.3.757"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-consent.html" : "TDDUI Consent"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/consent-scope",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConsentScopeCodes",
+      "title" : "Consent Scope Codes",
+      "description" : "This value set includes the four Consent scope codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/consentscope"],
+      "oids" : ["2.16.840.1.113883.4.642.3.761"],
+      "sources" : ["2.16.840.1.113883.4.642.3.761"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-consent.html" : "TDDUI Consent"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/consent-state-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConsentState",
+      "title" : "ConsentState",
+      "description" : "Indicates the state of the consent.",
+      "systems" : ["http://hl7.org/fhir/consent-state-codes"],
+      "oids" : ["2.16.840.1.113883.4.642.3.755"],
+      "sources" : ["2.16.840.1.113883.4.642.3.755"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-consent.html" : "TDDUI Consent"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
@@ -135,8 +370,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.49"],
       "uses" : {
       },
-      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour",
-      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement",
+      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/document-reference-status",
@@ -178,8 +413,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.257"],
       "uses" : {
       },
-      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour",
-      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement",
+      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-diet",
@@ -193,8 +428,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.255"],
       "uses" : {
       },
-      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour",
-      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement",
+      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-discharge-disposition",
@@ -224,8 +459,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.262"],
       "uses" : {
       },
-      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour",
-      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement",
+      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-participant-type",
@@ -242,8 +477,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.250"],
       "uses" : {
       },
-      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour",
-      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement",
+      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-reason",
@@ -257,8 +492,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.261"],
       "uses" : {
       },
-      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour",
-      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement",
+      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-special-arrangements",
@@ -274,8 +509,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.253"],
       "uses" : {
       },
-      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour",
-      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement",
+      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-special-courtesy",
@@ -292,8 +527,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.252"],
       "uses" : {
       },
-      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour",
-      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement",
+      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-status",
@@ -307,8 +542,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.246"],
       "uses" : {
       },
-      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour",
-      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement",
+      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-type",
@@ -322,8 +557,83 @@
       "sources" : ["2.16.840.1.113883.4.642.3.248"],
       "uses" : {
       },
-      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour",
-      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement",
+      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/goal-achievement",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "GoalAchievementStatus",
+      "title" : "Goal achievement status",
+      "description" : "Describes the progression, or lack thereof, towards the goal against the target.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/goal-achievement"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1374"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1374"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-goal-objectif.html" : "TDDUI Goal Objectif",
+      "StructureDefinition-tddui-goal-attente.html" : "TDDUI Goal Attente"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/goal-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "GoalCategory",
+      "title" : "Goal category",
+      "description" : "Example codes for grouping goals to use for filtering or presentation.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/goal-category"],
+      "oids" : ["2.16.840.1.113883.4.642.3.275"],
+      "sources" : ["2.16.840.1.113883.4.642.3.275"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-goal-objectif.html" : "TDDUI Goal Objectif",
+      "StructureDefinition-tddui-goal-attente.html" : "TDDUI Goal Attente"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/goal-priority",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "GoalPriority",
+      "title" : "Goal priority",
+      "description" : "Indicates the level of importance associated with reaching or sustaining a goal.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/goal-priority"],
+      "oids" : ["2.16.840.1.113883.4.642.3.273"],
+      "sources" : ["2.16.840.1.113883.4.642.3.273"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-goal-objectif.html" : "TDDUI Goal Objectif",
+      "StructureDefinition-tddui-goal-attente.html" : "TDDUI Goal Attente"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/goal-start-event",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "GoalStartEvent",
+      "title" : "Goal start event",
+      "description" : "Identifies types of events that might trigger the start of a goal.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.279"],
+      "sources" : ["2.16.840.1.113883.4.642.3.279"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-goal-objectif.html" : "TDDUI Goal Objectif",
+      "StructureDefinition-tddui-goal-attente.html" : "TDDUI Goal Attente"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/goal-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "GoalLifecycleStatus",
+      "title" : "GoalLifecycleStatus",
+      "description" : "Codes that reflect the current state of a goal and whether the goal is still being targeted.",
+      "systems" : ["http://hl7.org/fhir/goal-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.271"],
+      "sources" : ["2.16.840.1.113883.4.642.3.271"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-goal-objectif.html" : "TDDUI Goal Objectif",
+      "StructureDefinition-tddui-goal-attente.html" : "TDDUI Goal Attente"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/http-verb",
@@ -351,14 +661,17 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
-      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour",
-      "StructureDefinition-tddui-organization.html" : "TDDUI Organization",
-      "StructureDefinition-tddui-practitioner.html" : "TDDUI Practitioner",
       "StructureDefinition-tddui-patient.html" : "TDDUI Patient",
-      "StructureDefinition-tddui-patient-ins.html" : "TDDUI Patient INS",
-      "StructureDefinition-tddui-task-transport-professionnel.html" : "TDDUI Task Transport Professionnel",
+      "StructureDefinition-tddui-service-request-besoin.html" : "TDDUI ServiceRequest Besoin",
+      "StructureDefinition-tddui-task-transport-usager.html" : "TDDUI Task Transport Usager",
       "StructureDefinition-tddui-questionnaire-response.html" : "TDDUI QuestionnaireResponse",
-      "StructureDefinition-tddui-task-transport-usager.html" : "TDDUI Task Transport Usager"
+      "StructureDefinition-tddui-task-transport-professionnel.html" : "TDDUI Task Transport Professionnel",
+      "StructureDefinition-tddui-goal-objectif.html" : "TDDUI Goal Objectif",
+      "StructureDefinition-tddui-patient-ins.html" : "TDDUI Patient INS",
+      "StructureDefinition-tddui-goal-attente.html" : "TDDUI Goal Attente",
+      "StructureDefinition-tddui-organization.html" : "TDDUI Organization",
+      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour",
+      "StructureDefinition-tddui-practitioner.html" : "TDDUI Practitioner"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -372,15 +685,18 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour",
-      "StructureDefinition-tddui-organization.html" : "TDDUI Organization",
-      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement",
-      "StructureDefinition-tddui-practitioner.html" : "TDDUI Practitioner",
       "StructureDefinition-tddui-patient.html" : "TDDUI Patient",
-      "StructureDefinition-tddui-patient-ins.html" : "TDDUI Patient INS",
-      "StructureDefinition-tddui-task-transport-professionnel.html" : "TDDUI Task Transport Professionnel",
+      "StructureDefinition-tddui-service-request-besoin.html" : "TDDUI ServiceRequest Besoin",
+      "StructureDefinition-tddui-task-transport-usager.html" : "TDDUI Task Transport Usager",
       "StructureDefinition-tddui-questionnaire-response.html" : "TDDUI QuestionnaireResponse",
-      "StructureDefinition-tddui-task-transport-usager.html" : "TDDUI Task Transport Usager"
+      "StructureDefinition-tddui-task-transport-professionnel.html" : "TDDUI Task Transport Professionnel",
+      "StructureDefinition-tddui-goal-objectif.html" : "TDDUI Goal Objectif",
+      "StructureDefinition-tddui-patient-ins.html" : "TDDUI Patient INS",
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement",
+      "StructureDefinition-tddui-goal-attente.html" : "TDDUI Goal Attente",
+      "StructureDefinition-tddui-organization.html" : "TDDUI Organization",
+      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour",
+      "StructureDefinition-tddui-practitioner.html" : "TDDUI Practitioner"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -394,19 +710,24 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-tddui-bundle.html" : "TDDUI Bundle",
-      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour",
-      "StructureDefinition-tddui-organization.html" : "TDDUI Organization",
-      "StructureDefinition-tddui-document-reference.html" : "TDDUI DocumentReference",
-      "StructureDefinition-tddui-task-transport.html" : "TDDUI Task Transport",
-      "StructureDefinition-tddui-patient-ins.html" : "TDDUI Patient INS",
-      "StructureDefinition-tddui-task-transport-professionnel.html" : "TDDUI Task Transport Professionnel",
-      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement",
-      "StructureDefinition-tddui-practitioner.html" : "TDDUI Practitioner",
       "StructureDefinition-tddui-patient.html" : "TDDUI Patient",
+      "StructureDefinition-tddui-service-request-besoin.html" : "TDDUI ServiceRequest Besoin",
+      "StructureDefinition-tddui-task-transport-usager.html" : "TDDUI Task Transport Usager",
       "StructureDefinition-tddui-questionnaire-response.html" : "TDDUI QuestionnaireResponse",
+      "StructureDefinition-tddui-bundle.html" : "TDDUI Bundle",
+      "StructureDefinition-tddui-task-transport-professionnel.html" : "TDDUI Task Transport Professionnel",
+      "StructureDefinition-tddui-goal-objectif.html" : "TDDUI Goal Objectif",
+      "StructureDefinition-tddui-task-transport.html" : "TDDUI Task Transport",
+      "StructureDefinition-tddui-goal-attente.html" : "TDDUI Goal Attente",
       "StructureDefinition-tddui-practitioner-role.html" : "TDDUI Practitioner Role",
-      "StructureDefinition-tddui-task-transport-usager.html" : "TDDUI Task Transport Usager"
+      "StructureDefinition-tddui-patient-ins.html" : "TDDUI Patient INS",
+      "StructureDefinition-tddui-careplan-projet-perso.html" : "TDDUI CarePlan Projet Perso",
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement",
+      "StructureDefinition-tddui-organization.html" : "TDDUI Organization",
+      "StructureDefinition-tddui-consent.html" : "TDDUI Consent",
+      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour",
+      "StructureDefinition-tddui-document-reference.html" : "TDDUI DocumentReference",
+      "StructureDefinition-tddui-practitioner.html" : "TDDUI Practitioner"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -440,6 +761,34 @@
       "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-as-needed-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTMedicationAsNeededReasonCodes",
+      "title" : "SNOMED CT Medication As Needed Reason Codes",
+      "description" : "This value set includes all clinical findings from SNOMED CT - provided as an exemplar value set.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.96"],
+      "sources" : ["2.16.840.1.113883.4.642.3.96"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-service-request-besoin.html" : "TDDUI ServiceRequest Besoin"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTMedicationCodes",
+      "title" : "SNOMED CT Medication Codes",
+      "description" : "This value set includes all drug or medicament substance codes and all pharmaceutical/biologic products from SNOMED CT - provided as an exemplar value set.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.375"],
+      "sources" : ["2.16.840.1.113883.4.642.3.375"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-careplan-projet-perso.html" : "TDDUI CarePlan Projet Perso"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/mimetypes",
       "version" : "4.0.1",
       "status" : "active",
@@ -465,10 +814,25 @@
       "sources" : ["2.16.840.1.113883.4.642.3.65"],
       "uses" : {
       },
-      "StructureDefinition-tddui-human-name.html" : "TDDUI Human Name DataType",
-      "StructureDefinition-tddui-practitioner.html" : "TDDUI Practitioner",
       "StructureDefinition-tddui-patient.html" : "TDDUI Patient",
-      "StructureDefinition-tddui-patient-ins.html" : "TDDUI Patient INS"
+      "StructureDefinition-tddui-patient-ins.html" : "TDDUI Patient INS",
+      "StructureDefinition-tddui-human-name.html" : "TDDUI Human Name DataType",
+      "StructureDefinition-tddui-practitioner.html" : "TDDUI Practitioner"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LOINCCodes",
+      "title" : "LOINC Codes",
+      "description" : "This value set includes all LOINC codes",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.396"],
+      "sources" : ["2.16.840.1.113883.4.642.3.396"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-goal-objectif.html" : "TDDUI Goal Objectif",
+      "StructureDefinition-tddui-goal-attente.html" : "TDDUI Goal Attente"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/organization-type",
@@ -483,6 +847,20 @@
       "uses" : {
       },
       "StructureDefinition-tddui-organization.html" : "TDDUI Organization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/participant-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ParticipantRoles",
+      "title" : "Participant Roles",
+      "description" : "Roles of participants that may be included in a care team.  Defined as: Is a Person, Healthcare professional (occupation) or Healthcare related organization (qualifier value).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.152"],
+      "sources" : ["2.16.840.1.113883.4.642.3.152"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-service-request-besoin.html" : "TDDUI ServiceRequest Besoin"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
@@ -511,9 +889,38 @@
       "sources" : ["2.16.840.1.113883.4.642.3.433"],
       "uses" : {
       },
-      "StructureDefinition-tddui-task-transport.html" : "TDDUI Task Transport",
+      "StructureDefinition-tddui-task-transport-usager.html" : "TDDUI Task Transport Usager",
       "StructureDefinition-tddui-task-transport-professionnel.html" : "TDDUI Task Transport Professionnel",
-      "StructureDefinition-tddui-task-transport-usager.html" : "TDDUI Task Transport Usager"
+      "StructureDefinition-tddui-task-transport.html" : "TDDUI Task Transport"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/procedure-code",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedureCodes(SNOMEDCT)",
+      "title" : "Procedure Codes (SNOMED CT)",
+      "description" : "Procedure Code: All SNOMED CT procedure codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.427"],
+      "sources" : ["2.16.840.1.113883.4.642.3.427"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-service-request-besoin.html" : "TDDUI ServiceRequest Besoin",
+      "StructureDefinition-tddui-careplan-projet-perso.html" : "TDDUI CarePlan Projet Perso"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/procedure-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedureReasonCodes",
+      "title" : "Procedure Reason Codes",
+      "description" : "This example value set defines the set of codes that can be used to indicate a reason for a procedure.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.432"],
+      "sources" : ["2.16.840.1.113883.4.642.3.432"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-service-request-besoin.html" : "TDDUI ServiceRequest Besoin"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/questionnaire-answers",
@@ -544,6 +951,20 @@
       "StructureDefinition-tddui-questionnaire-response.html" : "TDDUI QuestionnaireResponse"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/request-intent",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestIntent",
+      "title" : "RequestIntent",
+      "description" : "Codes indicating the degree of authority/intentionality associated with a request.",
+      "systems" : ["http://hl7.org/fhir/request-intent"],
+      "oids" : ["2.16.840.1.113883.4.642.3.113"],
+      "sources" : ["2.16.840.1.113883.4.642.3.113"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-service-request-besoin.html" : "TDDUI ServiceRequest Besoin"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/request-priority",
       "version" : "4.0.1",
       "status" : "draft",
@@ -555,9 +976,39 @@
       "sources" : ["2.16.840.1.113883.4.642.3.115"],
       "uses" : {
       },
-      "StructureDefinition-tddui-task-transport.html" : "TDDUI Task Transport",
+      "StructureDefinition-tddui-service-request-besoin.html" : "TDDUI ServiceRequest Besoin",
+      "StructureDefinition-tddui-task-transport-usager.html" : "TDDUI Task Transport Usager",
       "StructureDefinition-tddui-task-transport-professionnel.html" : "TDDUI Task Transport Professionnel",
-      "StructureDefinition-tddui-task-transport-usager.html" : "TDDUI Task Transport Usager"
+      "StructureDefinition-tddui-task-transport.html" : "TDDUI Task Transport"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestStatus",
+      "title" : "RequestStatus",
+      "description" : "Codes identifying the lifecycle stage of a request.",
+      "systems" : ["http://hl7.org/fhir/request-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.111"],
+      "sources" : ["2.16.840.1.113883.4.642.3.111"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-service-request-besoin.html" : "TDDUI ServiceRequest Besoin",
+      "StructureDefinition-tddui-careplan-projet-perso.html" : "TDDUI CarePlan Projet Perso"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/resource-types",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ResourceType",
+      "title" : "ResourceType",
+      "description" : "One of the resource types defined as part of this version of FHIR.",
+      "systems" : ["http://hl7.org/fhir/resource-types"],
+      "oids" : ["2.16.840.1.113883.4.642.3.27"],
+      "sources" : ["2.16.840.1.113883.4.642.3.27"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-careplan-projet-perso.html" : "TDDUI CarePlan Projet Perso"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/search-entry-mode",
@@ -591,14 +1042,37 @@
       "sources" : ["2.16.840.1.113883.4.642.3.47"],
       "uses" : {
       },
-      "StructureDefinition-tddui-organization.html" : "TDDUI Organization",
-      "StructureDefinition-tddui-document-reference.html" : "TDDUI DocumentReference",
-      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement",
-      "StructureDefinition-tddui-practitioner.html" : "TDDUI Practitioner",
       "StructureDefinition-tddui-patient.html" : "TDDUI Patient",
-      "StructureDefinition-tddui-patient-ins.html" : "TDDUI Patient INS",
+      "StructureDefinition-tddui-practitioner-role.html" : "TDDUI Practitioner Role",
       "StructureDefinition-tddui-questionnaire-response.html" : "TDDUI QuestionnaireResponse",
-      "StructureDefinition-tddui-practitioner-role.html" : "TDDUI Practitioner Role"
+      "StructureDefinition-tddui-patient-ins.html" : "TDDUI Patient INS",
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement",
+      "StructureDefinition-tddui-organization.html" : "TDDUI Organization",
+      "StructureDefinition-tddui-consent.html" : "TDDUI Consent",
+      "StructureDefinition-tddui-document-reference.html" : "TDDUI DocumentReference",
+      "StructureDefinition-tddui-practitioner.html" : "TDDUI Practitioner"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/security-role-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SecurityRoleType",
+      "title" : "SecurityRoleType",
+      "description" : "This example FHIR value set is comprised of example Actor Type codes, which can be used to value FHIR agents, actors, and other role         elements such as those specified in financial transactions. The FHIR Actor value set is based on    DICOM Audit Message, C402;   ASTM Standard, E1762-95 [2013]; selected codes and          derived actor roles from HL7 RoleClass OID 2.16.840.1.113883.5.110;    HL7 Role Code 2.16.840.1.113883.5.111, including AgentRoleType;          HL7 ParticipationType OID: 2.16.840.1.113883.5.90; and    HL7 ParticipationFunction codes OID: 2.16.840.1.113883.5.88.           This value set includes, by reference, role codes from external code systems: NUCC Health Care Provider Taxonomy OID: 2.16.840.1.113883.6.101;          North American Industry Classification System [NAICS]OID: 2.16.840.1.113883.6.85; IndustryClassificationSystem 2.16.840.1.113883.1.11.16039;          and US Census Occupation Code OID: 2.16.840.1.113883.6.243 for relevant recipient or custodian codes not included in this value set.            If no source is indicated in the definition comments, then these are example FHIR codes.          It can be extended with appropriate roles described by SNOMED as well as those described in the HL7 Role Based Access Control Catalog and the          HL7 Healthcare (Security and Privacy) Access Control Catalog.            In Role-Based Access Control (RBAC), permissions are operations on an object that a user wishes to access. Permissions are grouped into roles.          A role characterizes the functions a user is allowed to perform. Roles are assigned to users. If the user's role has the appropriate permissions          to access an object, then that user is granted access to the object. FHIR readily enables RBAC, as FHIR Resources are object types and the CRUDE          events (the FHIR equivalent to permissions in the RBAC scheme) are operations on those objects.          In Attribute-Based Access Control (ABAC), a user requests to perform operations on objects. That user's access request is granted or denied          based on a set of access control policies that are specified in terms of attributes and conditions. FHIR readily enables ABAC, as instances of          a Resource in FHIR (again, Resources are object types) can have attributes associated with them. These attributes include security tags,          environment conditions, and a host of user and object characteristics, which are the same attributes as those used in ABAC. Attributes help          define the access control policies that determine the operations a user may perform on a Resource (in FHIR) or object (in ABAC). For example,          a tag (or attribute) may specify that the identified Resource (object) is not to be further disclosed without explicit consent from the patient.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/extra-security-role-type",
+        "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+        "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+        "http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction",
+        "http://terminology.hl7.org/CodeSystem/contractsignertypecodes",
+        "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+        "http://dicom.nema.org/resources/ontology/DCM"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.978"],
+      "sources" : ["2.16.840.1.113883.4.642.3.978"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-consent.html" : "TDDUI Consent"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/service-type",
@@ -612,8 +1086,22 @@
       "sources" : ["2.16.840.1.113883.4.642.3.518"],
       "uses" : {
       },
-      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour",
-      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement",
+      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/servicerequest-orderdetail",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ServiceRequestOrderDetailsCodes",
+      "title" : "Service Request Order Details Codes",
+      "description" : "An example value set of Codified order entry details concepts.  These concepts only make sense in the context of what is being ordered.  This example is for a patient ventilation order",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.435"],
+      "sources" : ["2.16.840.1.113883.4.642.3.435"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-service-request-besoin.html" : "TDDUI ServiceRequest Besoin"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/task-intent",
@@ -630,9 +1118,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1240"],
       "uses" : {
       },
-      "StructureDefinition-tddui-task-transport.html" : "TDDUI Task Transport",
+      "StructureDefinition-tddui-task-transport-usager.html" : "TDDUI Task Transport Usager",
       "StructureDefinition-tddui-task-transport-professionnel.html" : "TDDUI Task Transport Professionnel",
-      "StructureDefinition-tddui-task-transport-usager.html" : "TDDUI Task Transport Usager"
+      "StructureDefinition-tddui-task-transport.html" : "TDDUI Task Transport"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/task-status",
@@ -646,9 +1134,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.790"],
       "uses" : {
       },
-      "StructureDefinition-tddui-task-transport.html" : "TDDUI Task Transport",
+      "StructureDefinition-tddui-task-transport-usager.html" : "TDDUI Task Transport Usager",
       "StructureDefinition-tddui-task-transport-professionnel.html" : "TDDUI Task Transport Professionnel",
-      "StructureDefinition-tddui-task-transport-usager.html" : "TDDUI Task Transport Usager"
+      "StructureDefinition-tddui-task-transport.html" : "TDDUI Task Transport"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v2-0092",
@@ -662,8 +1150,8 @@
       "sources" : ["2.16.840.1.113883.21.40"],
       "uses" : {
       },
-      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour",
-      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement",
+      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v2-2.7-0360",
@@ -701,8 +1189,8 @@
       "sources" : ["2.16.840.1.113883.1.11.13955"],
       "uses" : {
       },
-      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour",
-      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement",
+      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-ActPriority",
@@ -716,8 +1204,36 @@
       "sources" : ["2.16.840.1.113883.1.11.16866"],
       "uses" : {
       },
-      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour",
-      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement",
+      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-PurposeOfUse",
+      "version" : "3.1.0",
+      "status" : "active",
+      "name" : "PurposeOfUse",
+      "title" : "PurposeOfUse",
+      "description" : "Supports communication of purpose of use at a general level.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActReason"],
+      "oids" : ["2.16.840.1.113883.1.11.20448"],
+      "sources" : ["2.16.840.1.113883.1.11.20448"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-consent.html" : "TDDUI Consent"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ServiceDeliveryLocationRoleType",
+      "title" : "ServiceDeliveryLocationRoleType",
+      "description" : "A role of a place that further classifies the setting (e.g., accident site, road side, work site, community location) in which services are delivered.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-RoleCode"],
+      "oids" : ["2.16.840.1.113883.1.11.17660"],
+      "sources" : ["2.16.840.1.113883.1.11.17660"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-service-request-besoin.html" : "TDDUI ServiceRequest Besoin"
     },
     {
       "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-discharge-disposition",
@@ -1189,6 +1705,20 @@
       "ValueSet-tddui-serafin-valueset.html" : "TDDUI SERAFIN ValueSet"
     },
     {
+      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J285-Besoins_SERAFIN/FHIR/JDV-J285-Besoins-SERAFIN",
+      "version" : "20241025120000",
+      "status" : "active",
+      "name" : "JDV_J285_Besoins_SERAFIN",
+      "title" : null,
+      "description" : "Liste des besoins provenant de la terminologie SERAFIN",
+      "systems" : ["https://smt.esante.gouv.fr/terminologie-SERAFINPH"],
+      "oids" : ["1.2.250.1.213.3.3.254"],
+      "sources" : ["1.2.250.1.213.3.3.254"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-service-request-besoin.html" : "TDDUI ServiceRequest Besoin"
+    },
+    {
       "url" : "https://mos.esante.gouv.fr/NOS/JDV_J47-FunctionCode-CISIS/FHIR/JDV-J47-FunctionCode-CISIS",
       "version" : "20250523120000",
       "status" : "active",
@@ -1319,9 +1849,9 @@
       "sources" : ["1.2.250.1.213.1.1.5.140"],
       "uses" : {
       },
-      "StructureDefinition-tddui-task-transport.html" : "TDDUI Task Transport",
+      "StructureDefinition-tddui-task-transport-usager.html" : "TDDUI Task Transport Usager",
       "StructureDefinition-tddui-task-transport-professionnel.html" : "TDDUI Task Transport Professionnel",
-      "StructureDefinition-tddui-task-transport-usager.html" : "TDDUI Task Transport Usager"
+      "StructureDefinition-tddui-task-transport.html" : "TDDUI Task Transport"
     },
     {
       "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-motif-non-realisation-evenement-cisis",
@@ -1387,9 +1917,9 @@
       "sources" : ["1.2.250.1.213.1.1.5.801"],
       "uses" : {
       },
-      "StructureDefinition-tddui-task-transport.html" : "TDDUI Task Transport",
+      "StructureDefinition-tddui-task-transport-usager.html" : "TDDUI Task Transport Usager",
       "StructureDefinition-tddui-task-transport-professionnel.html" : "TDDUI Task Transport Professionnel",
-      "StructureDefinition-tddui-task-transport-usager.html" : "TDDUI Task Transport Usager"
+      "StructureDefinition-tddui-task-transport.html" : "TDDUI Task Transport"
     }
   ]
 }

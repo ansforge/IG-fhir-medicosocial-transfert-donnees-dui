@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response | *Version*:2.1.0-ballot |
-| Active as of 2025-11-10 | *Computable Name*:TDDUIQuestionnaireResponse |
+| Active as of 2025-11-12 | *Computable Name*:TDDUIQuestionnaireResponse |
 
  
 Profil de la ressource QuestionnaireResponse utilisé pour transmettre les réponses aux questionnaires dans le cadre des évaluations. 
@@ -17,6 +17,7 @@ Profil de la ressource QuestionnaireResponse utilisé pour transmettre les répo
 **Usages:**
 
 * Use this Profile: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
+* Refer to this Profile: [Lien vers l'évaluation](StructureDefinition-tddui-evaluation-reference.md)
 * Examples for this Profile: [QuestionnaireResponse/tddui-questionnaire-response-aggir-pa-example](QuestionnaireResponse-tddui-questionnaire-response-aggir-pa-example.md), [QuestionnaireResponse/tddui-questionnaire-response-aggir-ph-example](QuestionnaireResponse-tddui-questionnaire-response-aggir-ph-example.md), [QuestionnaireResponse/tddui-questionnaire-response-serafin-precision-example](QuestionnaireResponse-tddui-questionnaire-response-serafin-precision-example.md), [QuestionnaireResponse/tddui-questionnaire-response-serafin-sans-precision-example](QuestionnaireResponse-tddui-questionnaire-response-serafin-sans-precision-example.md) and [QuestionnaireResponse/tddui-questionnaire-response-situation-ssiad-example](QuestionnaireResponse-tddui-questionnaire-response-situation-ssiad-example.md)
 * CapabilityStatements using this Profile: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
 
@@ -43,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-questionnaire-
   "name" : "TDDUIQuestionnaireResponse",
   "title" : "TDDUI QuestionnaireResponse",
   "status" : "active",
-  "date" : "2025-11-10T08:33:48+00:00",
+  "date" : "2025-11-12T08:37:23+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

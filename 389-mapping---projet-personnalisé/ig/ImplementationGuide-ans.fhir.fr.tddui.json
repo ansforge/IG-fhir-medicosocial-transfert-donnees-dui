@@ -10,7 +10,7 @@
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2025-11-10T08:33:48+00:00",
+  "date" : "2025-11-12T08:37:23+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -758,6 +758,30 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/tddui-evaluation-reference"
+      },
+      "name" : "Lien vers l'évaluation",
+      "description" : "Liens vers l'évaluation, utilisables dans le profil TDDUIGoalObjectif.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-careplan-reference"
+      },
+      "name" : "Lien vers le projet personnel",
+      "description" : "Liens vers le projet personnel, utilisables dans le profil TDDUIGoalObjectif.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/tddui-exercise-mode"
       },
       "name" : "Mode d'exercice",
@@ -866,6 +890,30 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/tddui-careplan-projet-perso"
+      },
+      "name" : "TDDUI CarePlan Projet Perso",
+      "description" : "Profil de la ressource TDDUICarePlan permettant de représenter le projet personnel de l'usager.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-consent"
+      },
+      "name" : "TDDUI Consent",
+      "description" : "Profil de la ressource TDDUIConsent permettant de représenter les attentes de l'usager.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/tddui-document-reference"
       },
       "name" : "TDDUI DocumentReference",
@@ -930,6 +978,30 @@
       },
       "name" : "TDDUI FR Core CodeSystem v2-0203",
       "description" : "TDDUI Patient's identifier",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-goal-attente"
+      },
+      "name" : "TDDUI Goal Attente",
+      "description" : "Profil de la ressource TDDUIGoal permettant de représenter les attentes de l'usager.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-goal-objectif"
+      },
+      "name" : "TDDUI Goal Objectif",
+      "description" : "Profil de la ressource TDDUIGoalObjectif permettant de représenter les résultats à atteindre dans le cadre du projet personnalisé.",
       "exampleBoolean" : false
     },
     {
@@ -1038,6 +1110,18 @@
       },
       "name" : "TDDUI SERAFIN ValueSet",
       "description" : "ValueSet contenant les codes SERAFIN (prestations directes et indirectes) pour le profil TDDUI Encounter Evenement.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-service-request-besoin"
+      },
+      "name" : "TDDUI ServiceRequest Besoin",
+      "description" : "Profil de la ressource TDDUIServiceRequestBesoin permettant de représenter les besoins de l'usager.",
       "exampleBoolean" : false
     },
     {

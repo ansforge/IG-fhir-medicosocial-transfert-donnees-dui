@@ -10,7 +10,7 @@
   <name value="TDDUI"/>
   <title value="Médicosocial - Transfert de données DUI"/>
   <status value="active"/>
-  <date value="2025-11-10T08:33:48+00:00"/>
+  <date value="2025-11-12T08:37:23+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -580,6 +580,28 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/tddui-evaluation-reference"/>
+      </reference>
+      <name value="Lien vers l'évaluation"/>
+      <description value="Liens vers l'évaluation, utilisables dans le profil TDDUIGoalObjectif."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-careplan-reference"/>
+      </reference>
+      <name value="Lien vers le projet personnel"/>
+      <description value="Liens vers le projet personnel, utilisables dans le profil TDDUIGoalObjectif."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/tddui-exercise-mode"/>
       </reference>
       <name value="Mode d'exercice"/>
@@ -679,6 +701,28 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/tddui-careplan-projet-perso"/>
+      </reference>
+      <name value="TDDUI CarePlan Projet Perso"/>
+      <description value="Profil de la ressource TDDUICarePlan permettant de représenter le projet personnel de l'usager."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-consent"/>
+      </reference>
+      <name value="TDDUI Consent"/>
+      <description value="Profil de la ressource TDDUIConsent permettant de représenter les attentes de l'usager."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/tddui-document-reference"/>
       </reference>
       <name value="TDDUI DocumentReference"/>
@@ -738,6 +782,28 @@
       </reference>
       <name value="TDDUI FR Core CodeSystem v2-0203"/>
       <description value="TDDUI Patient's identifier"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-goal-attente"/>
+      </reference>
+      <name value="TDDUI Goal Attente"/>
+      <description value="Profil de la ressource TDDUIGoal permettant de représenter les attentes de l'usager."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-goal-objectif"/>
+      </reference>
+      <name value="TDDUI Goal Objectif"/>
+      <description value="Profil de la ressource TDDUIGoalObjectif permettant de représenter les résultats à atteindre dans le cadre du projet personnalisé."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -837,6 +903,17 @@
       </reference>
       <name value="TDDUI SERAFIN ValueSet"/>
       <description value="ValueSet contenant les codes SERAFIN (prestations directes et indirectes) pour le profil TDDUI Encounter Evenement."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-service-request-besoin"/>
+      </reference>
+      <name value="TDDUI ServiceRequest Besoin"/>
+      <description value="Profil de la ressource TDDUIServiceRequestBesoin permettant de représenter les besoins de l'usager."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

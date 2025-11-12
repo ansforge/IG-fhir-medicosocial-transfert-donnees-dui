@@ -26,6 +26,13 @@
       ]
     },
     {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference",
+      "title": "Lien vers le projet personnel",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment",
       "title": "Commentaire",
       "types": [
@@ -37,6 +44,13 @@
       "title": "Libellé mode d\u0027entrée",
       "types": [
         "string"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-evaluation-reference",
+      "title": "Lien vers l\u0027évaluation",
+      "types": [
+        "Reference"
       ]
     },
     {
@@ -242,6 +256,18 @@
         "title": "TDDUI Bundle"
       }
     ],
+    "CarePlan": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-perso",
+        "title": "TDDUI CarePlan Projet Perso"
+      }
+    ],
+    "Consent": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent",
+        "title": "TDDUI Consent"
+      }
+    ],
     "DocumentReference": [
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference",
@@ -256,6 +282,16 @@
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour",
         "title": "TDDUI Encounter Sejour"
+      }
+    ],
+    "Goal": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente",
+        "title": "TDDUI Goal Attente"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif",
+        "title": "TDDUI Goal Objectif"
       }
     ],
     "Organization": [
@@ -292,6 +328,12 @@
         "title": "TDDUI QuestionnaireResponse"
       }
     ],
+    "ServiceRequest": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin",
+        "title": "TDDUI ServiceRequest Besoin"
+      }
+    ],
     "Task": [
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport",
@@ -308,6 +350,9 @@
     ]
   },
   "usage": {
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.period": [
+      "Consent"
+    ],
     "http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedEndDate": [
       "Bundle.entry.resource",
       "Encounter"
@@ -425,11 +470,15 @@
       "Encounter"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment": [
+      "CarePlan",
       "Encounter",
       "QuestionnaireResponse"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order": [
       "Patient.birthDate"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference": [
+      "Goal"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment": [
       "Bundle.entry.resource",
@@ -442,6 +491,9 @@
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-mode-label": [
       "Bundle.entry.resource",
       "Encounter"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-evaluation-reference": [
+      "Goal"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-cancel-reason": [
       "Encounter.status"

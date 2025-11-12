@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient | *Version*:2.1.0-ballot |
-| Active as of 2025-11-10 | *Computable Name*:TDDUIPatient |
+| Active as of 2025-11-12 | *Computable Name*:TDDUIPatient |
 
  
 Profil de la ressource FrCorePatientProfile permettant de représenter un usager lorsque l'INS n'est pas transmis. 
@@ -17,7 +17,7 @@ Profil de la ressource FrCorePatientProfile permettant de représenter un usager
 **Usages:**
 
 * Use this Profile: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
-* Refer to this Profile: [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md), [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md), [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md) and [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md)
+* Refer to this Profile: [TDDUI CarePlan Projet Perso](StructureDefinition-tddui-careplan-projet-perso.md), [TDDUI Consent](StructureDefinition-tddui-consent.md), [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md), [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)...Show 5 more,[TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md),[TDDUI Goal Attente](StructureDefinition-tddui-goal-attente.md),[TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md),[TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md)and[TDDUI ServiceRequest Besoin](StructureDefinition-tddui-service-request-besoin.md)
 * Examples for this Profile: [Patient/tddui-patient-example](Patient-tddui-patient-example.md)
 * CapabilityStatements using this Profile: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient.csv), 
   "name" : "TDDUIPatient",
   "title" : "TDDUI Patient",
   "status" : "active",
-  "date" : "2025-11-10T08:33:48+00:00",
+  "date" : "2025-11-12T08:37:23+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

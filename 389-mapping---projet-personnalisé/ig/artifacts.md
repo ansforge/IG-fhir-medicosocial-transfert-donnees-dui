@@ -34,15 +34,20 @@ These define constraints on FHIR resources for systems conforming to this implem
 | | |
 | :--- | :--- |
 | [TDDUI Bundle](StructureDefinition-tddui-bundle.md) | Profil générique créé pour transmettre des données d'un logiciel DUI. |
+| [TDDUI CarePlan Projet Perso](StructureDefinition-tddui-careplan-projet-perso.md) | Profil de la ressource TDDUICarePlan permettant de représenter le projet personnel de l'usager. |
+| [TDDUI Consent](StructureDefinition-tddui-consent.md) | Profil de la ressource TDDUIConsent permettant de représenter les attentes de l'usager. |
 | [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md) | Profil de la ressource SimplifiedPublishDocumentReference pour les pièces jointes liées à l’événement et à l'évaluation. |
 | [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md) | Profil de la ressource Encounter permettant de regrouper les évènements liés à la prise en charge de l’usager dans une structure ESSMS. |
 | [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md) | Profil de la ressource Encounter permettant de regrouper les informations relatives au séjour d'un usager dans une structure ESSMS |
+| [TDDUI Goal Attente](StructureDefinition-tddui-goal-attente.md) | Profil de la ressource TDDUIGoal permettant de représenter les attentes de l'usager. |
+| [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md) | Profil de la ressource TDDUIGoalObjectif permettant de représenter les résultats à atteindre dans le cadre du projet personnalisé. |
 | [TDDUI Organization](StructureDefinition-tddui-organization.md) | Profil de la ressource FRCoreOrganizationProfile permettant de représenter les entités juridiques. |
 | [TDDUI Patient](StructureDefinition-tddui-patient.md) | Profil de la ressource FrCorePatientProfile permettant de représenter un usager lorsque l'INS n'est pas transmis. |
 | [TDDUI Patient INS](StructureDefinition-tddui-patient-ins.md) | Profil de la ressource FRCorePatientINSProfile permettant de représenter un usager lorsque l'INS est transmis. |
 | [TDDUI Practitioner](StructureDefinition-tddui-practitioner.md) | Profil de la ressource FRCorePractitionerProfile permettant de représenter un professionnel du médicosocial dans le cadre de TDDUI. Le profil AsPractitionerRoleProfile n'a pas été utilisé car il comportait trop de contraintes non présentes dans les DUI. |
 | [TDDUI Practitioner Role](StructureDefinition-tddui-practitioner-role.md) | Profil de la ressource FRCorePractitionerRole permettant de représenter un Professionnel. |
 | [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md) | Profil de la ressource QuestionnaireResponse utilisé pour transmettre les réponses aux questionnaires dans le cadre des évaluations. |
+| [TDDUI ServiceRequest Besoin](StructureDefinition-tddui-service-request-besoin.md) | Profil de la ressource TDDUIServiceRequestBesoin permettant de représenter les besoins de l'usager. |
 | [TDDUI Task Transport](StructureDefinition-tddui-task-transport.md) | Profil de la ressource Task permettant de représenter le transport. |
 | [TDDUI Task Transport Professionnel](StructureDefinition-tddui-task-transport-professionnel.md) | Profil de la ressource TDDUITaskTransport permettant de représenter le transport du professionnel. |
 | [TDDUI Task Transport Usager](StructureDefinition-tddui-task-transport-usager.md) | Profil de la ressource TDDUITaskTransport permettant de représenter le transport de l'usager. |
@@ -75,6 +80,8 @@ These define constraints on FHIR data types for systems conforming to this imple
 | [Libellé de l'évènement](StructureDefinition-tddui-event-label.md) | Titre donné à l’évènement par la structure. |
 | [Libellé mode d'entrée](StructureDefinition-tddui-entry-mode-label.md) | Libellé du mode d’entée du séjour. |
 | [Libellé mode de sortie](StructureDefinition-tddui-exit-mode-label.md) | Libellé du mode de sortie du séjour. |
+| [Lien vers l'évaluation](StructureDefinition-tddui-evaluation-reference.md) | Liens vers l'évaluation, utilisables dans le profil TDDUIGoalObjectif. |
+| [Lien vers le projet personnel](StructureDefinition-tddui-careplan-reference.md) | Liens vers le projet personnel, utilisables dans le profil TDDUIGoalObjectif. |
 | [Mode d'exercice](StructureDefinition-tddui-exercise-mode.md) | Extension permettant de représenter le mode d'exercice du professionnel. |
 | [Motif de l’évènement](StructureDefinition-tddui-event-reason.md) | Contexte justifiant la réalisation de l’évènement. |
 | [Ordre de naissance dans le registre d'état civil](StructureDefinition-tddui-birth-order.md) | Ordre d’enregistrement de la naissance dans le registre d’état civil de la commune de naissance pour le mois de la naissance. Il compose les 3 derniers chiffres du NIR de l'usager avant la clé de sécurité et permet de distinguer les personnes nées au même lieu et à la même période. Il est obligatoire si le NIR n'est pas transmis. |
