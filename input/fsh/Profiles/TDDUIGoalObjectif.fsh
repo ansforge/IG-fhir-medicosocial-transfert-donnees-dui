@@ -5,7 +5,7 @@ Title: "TDDUI Goal Objectif"
 Description: "Profil de la ressource TDDUIGoalObjectif permettant de représenter les résultats à atteindre dans le cadre du projet personnalisé." 
 
 * extension contains
-    TDDUIEvaluationRef named referenceEvaluation 0..*
+    TDDUIEvaluationRef named referenceEvaluation 0..* and
     TDDUICarePlanProjetPersoRef named referenceProjetPerso 1..1
 
 * identifier 1..1
