@@ -11,7 +11,7 @@ Description: "Profil de la ressource TDDUIGoalObjectif permettant de représente
 * identifier 1..1
 * identifier ^short = "Identifiant de l'objectif"
 * identifier.value ^example[0].label = "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-PPObjectif-identifiantObjectif"
-* identifier.value ^example[0].valueString = "3480787529/147720425367411-EVN-12548"
+//* identifier.value ^example[0].valueString = "3480787529/147720425367411-EVN-12548"
 
 * target.detailString 0..1
 
@@ -23,13 +23,21 @@ Description: "Profil de la ressource TDDUIGoalObjectif permettant de représente
 * subject only Reference(TDDUIPatient or TDDUIPatientINS)
 
 * note ^slicing.discriminator.type = #pattern
-* note ^slicing.discriminator.path = "authorString"
+* note ^slicing.discriminator.path = "$this"
 * note ^slicing.rules = #open
 
 * note contains
     titreObjectif 1..1 and
     avisUsagerObjectif 0..1 and
     strategieMiseEnOeuvreObjectif 0..1
-* note[titreObjectif].authorString = "Titre de l'objectif"
-* note[avisUsagerObjectif].authorString = "Avis de l'usager sur l'objectif"
-* note[strategieMiseEnOeuvreObjectif].authorString = "Stratégie de mise en œuvre de l'objectif"
+* note[titreObjectif] ^short = "Titre de l'objectif"
+* note[titreObjectif].extension contains TDDUIGoalNote named TDDUIGoalNoteExtension 1..1
+* note[titreObjectif].extension[TDDUIGoalNote].valueCode = #titreObjectif
+
+* note[avisUsagerObjectif] ^short = "Avis de l'usager sur l'objectif"
+* note[avisUsagerObjectif].extension contains TDDUIGoalNote named TDDUIGoalNoteExtension 1..1
+* note[avisUsagerObjectif].extension[TDDUIGoalNote].valueCode = #avisUsagerObjectif
+
+* note[strategieMiseEnOeuvreObjectif] ^short = "Stratégie de mise en œuvre de l'objectif"
+* note[strategieMiseEnOeuvreObjectif].extension contains TDDUIGoalNote named TDDUIGoalNoteExtension 1..1
+* note[strategieMiseEnOeuvreObjectif].extension[TDDUIGoalNote].valueCode = #strategieMiseEnOeuvreObjectif
