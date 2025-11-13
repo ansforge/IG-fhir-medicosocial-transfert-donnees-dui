@@ -15,7 +15,7 @@ Description: "Profil de la ressource TDDUICarePlan permettant de représenter le
 * title 1..1
 
 * category 0..1
-* category.coding from $JDV-J367-TypeProjetPersonnaliseMs
+* category from $JDV-J367-TypeProjetPersonnaliseMs (required)
 
 * supportingInfo ^slicing.discriminator.type = #pattern
 * supportingInfo ^slicing.discriminator.path = "display"
