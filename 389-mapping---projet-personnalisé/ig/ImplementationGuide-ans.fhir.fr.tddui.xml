@@ -10,7 +10,7 @@
   <name value="TDDUI"/>
   <title value="Médicosocial - Transfert de données DUI"/>
   <status value="active"/>
-  <date value="2025-11-12T08:37:23+00:00"/>
+  <date value="2025-11-13T10:43:15+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -544,6 +544,39 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/input-tddui-task-action-codesystem"/>
+      </reference>
+      <name value="InputTDDUITaskActionCodeSystem"/>
+      <description value="CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les actions du projet personnalisé."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/input-tddui-task-moyen-ressource-codesystem"/>
+      </reference>
+      <name value="InputTDDUITaskMoyenRessourceCodeSystem"/>
+      <description value="CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les moyens et ressources du projet personnalisé."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/input-tddui-task-prestation-codesystem"/>
+      </reference>
+      <name value="InputTDDUITaskPrestationCodeSystem"/>
+      <description value="CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les prestations du projet personnalisé."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -715,7 +748,7 @@
         <reference value="StructureDefinition/tddui-consent"/>
       </reference>
       <name value="TDDUI Consent"/>
-      <description value="Profil de la ressource TDDUIConsent permettant de représenter les attentes de l'usager."/>
+      <description value="Profil de la ressource TDDUIConsent permettant de représenter l'accord de l'usager et de la structure."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -793,6 +826,39 @@
       </reference>
       <name value="TDDUI Goal Attente"/>
       <description value="Profil de la ressource TDDUIGoal permettant de représenter les attentes de l'usager."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-goal-note"/>
+      </reference>
+      <name value="TDDUI Goal Note"/>
+      <description value="Extension pour discriminer l'élément Goal.note."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/tddui-goal-note-cs"/>
+      </reference>
+      <name value="TDDUI Goal Note CodeSystem"/>
+      <description value="CodeSystem définissant les types de notes pour l'élément Goal.note"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/tddui-goal-note-vs"/>
+      </reference>
+      <name value="TDDUI Goal Note ValueSet"/>
+      <description value="ValueSet définissant les types de notes pour l'élément Goal.note."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -914,6 +980,39 @@
       </reference>
       <name value="TDDUI ServiceRequest Besoin"/>
       <description value="Profil de la ressource TDDUIServiceRequestBesoin permettant de représenter les besoins de l'usager."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-task-action"/>
+      </reference>
+      <name value="TDDUI Task Action"/>
+      <description value="Profil de la ressource Task permettant de représenter les actions réalisés dans le cadre du projet personnalisé."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-task-prestation"/>
+      </reference>
+      <name value="TDDUI Task Action"/>
+      <description value="Profil de la ressource Task permettant de représenter les prestations du projet personnalisé."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-task-moyen-ressource"/>
+      </reference>
+      <name value="TDDUI Task MoyenRessource"/>
+      <description value="Profil de la ressource Task permettant de représenter les moyens ou ressources utilisées dans le cadre du projet personnalisé."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

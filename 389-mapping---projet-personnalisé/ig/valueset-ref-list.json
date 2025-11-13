@@ -71,6 +71,20 @@
       "StructureDefinition-tddui-patient.html" : "TDDUI Patient"
     },
     {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-goal-note-vs",
+      "version" : "2.1.0-ballot",
+      "status" : "active",
+      "name" : "TDDUIGoalNoteVS",
+      "title" : "TDDUI Goal Note ValueSet",
+      "description" : "ValueSet définissant les types de notes pour l'élément Goal.note.",
+      "systems" : [
+        "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-goal-note-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-goal-note.html" : "TDDUI Goal Note"
+    },
+    {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-serafin-valueset",
       "version" : "2.1.0-ballot",
       "status" : "active",
@@ -80,6 +94,7 @@
       "systems" : ["https://smt.esante.gouv.fr/terminologie-SERAFINPH"],
       "uses" : {
       },
+      "StructureDefinition-tddui-task-prestation.html" : "TDDUI Task Action",
       "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
     },
     {
@@ -327,6 +342,22 @@
       "uses" : {
       },
       "StructureDefinition-tddui-ressources-used.html" : "Ressources utilisées"
+    },
+    {
+      "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j367-type-projet-personnalise-ms",
+      "version" : "20250422120000",
+      "status" : "active",
+      "name" : "JdvJ367TypeProjetPersonnaliseMs",
+      "title" : "Jdv J367 Type Projet Personnalise Ms",
+      "description" : "Cette nomenclature donne le type de projet personnalisé qui est un document co-construit par l'usager, son entourage familial et professionnel du médico-social.",
+      "systems" : [
+        "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r390-type-projet-personnalise"
+      ],
+      "oids" : ["1.2.250.1.213.3.4.221"],
+      "sources" : ["1.2.250.1.213.3.4.221"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-careplan-projet-perso.html" : "TDDUI CarePlan Projet Perso"
     },
     {
       "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis",

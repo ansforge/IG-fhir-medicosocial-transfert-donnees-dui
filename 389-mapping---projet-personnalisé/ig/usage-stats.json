@@ -100,6 +100,13 @@
       ]
     },
     {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-note",
+      "title": "TDDUI Goal Note",
+      "types": [
+        "code"
+      ]
+    },
+    {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-meal",
       "title": "Repas",
       "types": [
@@ -336,6 +343,18 @@
     ],
     "Task": [
       {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action",
+        "title": "TDDUI Task Action"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource",
+        "title": "TDDUI Task MoyenRessource"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-prestation",
+        "title": "TDDUI Task Action"
+      },
+      {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport",
         "title": "TDDUI Task Transport"
       },
@@ -472,7 +491,8 @@
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment": [
       "CarePlan",
       "Encounter",
-      "QuestionnaireResponse"
+      "QuestionnaireResponse",
+      "ServiceRequest"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order": [
       "Patient.birthDate"
@@ -517,6 +537,9 @@
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exit-mode-label": [
       "Bundle.entry.resource",
       "Encounter"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-note": [
+      "Goal.note"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-meal": [
       "Encounter"

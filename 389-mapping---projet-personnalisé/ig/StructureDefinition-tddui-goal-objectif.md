@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif | *Version*:2.1.0-ballot |
-| Active as of 2025-11-12 | *Computable Name*:TDDUIGoalObjectif |
+| Active as of 2025-11-13 | *Computable Name*:TDDUIGoalObjectif |
 
  
 Profil de la ressource TDDUIGoalObjectif permettant de représenter les résultats à atteindre dans le cadre du projet personnalisé. 
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Implementation Guide
+* Refer to this Profile: [TDDUI Task Action](StructureDefinition-tddui-task-action.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-goal-objectif)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-objectif.
   "name" : "TDDUIGoalObjectif",
   "title" : "TDDUI Goal Objectif",
   "status" : "active",
-  "date" : "2025-11-12T08:37:23+00:00",
+  "date" : "2025-11-13T10:43:15+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -153,7 +153,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-objectif.
         "example" : [
           {
             "label" : "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-PPObjectif-identifiantObjectif",
-            "valueString" : "3480787529/147720425367411-EVN-12548"
+            "valueString" : "123456"
           }
         ]
       },
@@ -233,7 +233,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-objectif.
           "discriminator" : [
             {
               "type" : "pattern",
-              "path" : "authorString"
+              "path" : "$this"
             }
           ],
           "rules" : "open"
@@ -244,103 +244,100 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-objectif.
         "id" : "Goal.note:titreObjectif",
         "path" : "Goal.note",
         "sliceName" : "titreObjectif",
+        "short" : "Titre de l'objectif",
         "min" : 1,
         "max" : "1"
       },
       {
-        "id" : "Goal.note:titreObjectif.author[x]",
-        "path" : "Goal.note.author[x]",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "type",
-              "path" : "$this"
-            }
-          ],
-          "ordered" : false,
-          "rules" : "open"
-        }
+        "id" : "Goal.note:titreObjectif.extension",
+        "path" : "Goal.note.extension",
+        "min" : 1
       },
       {
-        "id" : "Goal.note:titreObjectif.author[x]:authorString",
-        "path" : "Goal.note.author[x]",
-        "sliceName" : "authorString",
-        "min" : 0,
+        "id" : "Goal.note:titreObjectif.extension:TDDUIGoalNoteExtension",
+        "path" : "Goal.note.extension",
+        "sliceName" : "TDDUIGoalNoteExtension",
+        "min" : 1,
         "max" : "1",
         "type" : [
           {
-            "code" : "string"
+            "code" : "Extension",
+            "profile" : [
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-note"
+            ]
           }
-        ],
-        "patternString" : "Titre de l'objectif"
+        ]
+      },
+      {
+        "id" : "Goal.note:titreObjectif.extension:TDDUIGoalNoteExtension.value[x]",
+        "path" : "Goal.note.extension.value[x]",
+        "patternCode" : "titreObjectif"
       },
       {
         "id" : "Goal.note:avisUsagerObjectif",
         "path" : "Goal.note",
         "sliceName" : "avisUsagerObjectif",
+        "short" : "Avis de l'usager sur l'objectif",
         "min" : 0,
         "max" : "1"
       },
       {
-        "id" : "Goal.note:avisUsagerObjectif.author[x]",
-        "path" : "Goal.note.author[x]",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "type",
-              "path" : "$this"
-            }
-          ],
-          "ordered" : false,
-          "rules" : "open"
-        }
+        "id" : "Goal.note:avisUsagerObjectif.extension",
+        "path" : "Goal.note.extension",
+        "min" : 1
       },
       {
-        "id" : "Goal.note:avisUsagerObjectif.author[x]:authorString",
-        "path" : "Goal.note.author[x]",
-        "sliceName" : "authorString",
-        "min" : 0,
+        "id" : "Goal.note:avisUsagerObjectif.extension:TDDUIGoalNoteExtension",
+        "path" : "Goal.note.extension",
+        "sliceName" : "TDDUIGoalNoteExtension",
+        "min" : 1,
         "max" : "1",
         "type" : [
           {
-            "code" : "string"
+            "code" : "Extension",
+            "profile" : [
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-note"
+            ]
           }
-        ],
-        "patternString" : "Avis de l'usager sur l'objectif"
+        ]
+      },
+      {
+        "id" : "Goal.note:avisUsagerObjectif.extension:TDDUIGoalNoteExtension.value[x]",
+        "path" : "Goal.note.extension.value[x]",
+        "patternCode" : "avisUsagerObjectif"
       },
       {
         "id" : "Goal.note:strategieMiseEnOeuvreObjectif",
         "path" : "Goal.note",
         "sliceName" : "strategieMiseEnOeuvreObjectif",
+        "short" : "Stratégie de mise en œuvre de l'objectif",
         "min" : 0,
         "max" : "1"
       },
       {
-        "id" : "Goal.note:strategieMiseEnOeuvreObjectif.author[x]",
-        "path" : "Goal.note.author[x]",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "type",
-              "path" : "$this"
-            }
-          ],
-          "ordered" : false,
-          "rules" : "open"
-        }
+        "id" : "Goal.note:strategieMiseEnOeuvreObjectif.extension",
+        "path" : "Goal.note.extension",
+        "min" : 1
       },
       {
-        "id" : "Goal.note:strategieMiseEnOeuvreObjectif.author[x]:authorString",
-        "path" : "Goal.note.author[x]",
-        "sliceName" : "authorString",
-        "min" : 0,
+        "id" : "Goal.note:strategieMiseEnOeuvreObjectif.extension:TDDUIGoalNoteExtension",
+        "path" : "Goal.note.extension",
+        "sliceName" : "TDDUIGoalNoteExtension",
+        "min" : 1,
         "max" : "1",
         "type" : [
           {
-            "code" : "string"
+            "code" : "Extension",
+            "profile" : [
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-note"
+            ]
           }
-        ],
-        "patternString" : "Stratégie de mise en œuvre de l'objectif"
+        ]
+      },
+      {
+        "id" : "Goal.note:strategieMiseEnOeuvreObjectif.extension:TDDUIGoalNoteExtension.value[x]",
+        "path" : "Goal.note.extension.value[x]",
+        "patternCode" : "strategieMiseEnOeuvreObjectif"
       }
     ]
   }

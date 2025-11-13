@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-perso | *Version*:2.1.0-ballot |
-| Active as of 2025-11-12 | *Computable Name*:TDDUICarePlanProjetPerso |
+| Active as of 2025-11-13 | *Computable Name*:TDDUICarePlanProjetPerso |
 
  
 Profil de la ressource TDDUICarePlan permettant de représenter le projet personnel de l'usager. 
 
 **Usages:**
 
-* Refer to this Profile: [Lien vers le projet personnel](StructureDefinition-tddui-careplan-reference.md) and [TDDUI ServiceRequest Besoin](StructureDefinition-tddui-service-request-besoin.md)
+* Refer to this Profile: [Lien vers le projet personnel](StructureDefinition-tddui-careplan-reference.md), [TDDUI ServiceRequest Besoin](StructureDefinition-tddui-service-request-besoin.md), [TDDUI Task Action](StructureDefinition-tddui-task-action.md), [TDDUI Task MoyenRessource](StructureDefinition-tddui-task-moyen-ressource.md) and [TDDUI Task Action](StructureDefinition-tddui-task-prestation.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-careplan-projet-perso)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
   "name" : "TDDUICarePlanProjetPerso",
   "title" : "TDDUI CarePlan Projet Perso",
   "status" : "active",
-  "date" : "2025-11-12T08:37:23+00:00",
+  "date" : "2025-11-13T10:43:15+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -137,9 +137,23 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
         "max" : "1"
       },
       {
+        "id" : "CarePlan.identifier.value",
+        "path" : "CarePlan.identifier.value",
+        "example" : [
+          {
+            "label" : "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-PPER-numProjetPersonnalise",
+            "valueString" : "123456"
+          }
+        ]
+      },
+      {
         "id" : "CarePlan.category",
         "path" : "CarePlan.category",
-        "max" : "1"
+        "max" : "1",
+        "binding" : {
+          "strength" : "required",
+          "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j367-type-projet-personnalise-ms"
+        }
       },
       {
         "id" : "CarePlan.title",
@@ -171,14 +185,14 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
           ],
           "rules" : "open"
         },
-        "min" : 2
+        "min" : 1
       },
       {
         "id" : "CarePlan.supportingInfo:usager",
         "path" : "CarePlan.supportingInfo",
         "sliceName" : "usager",
         "short" : "Référence à l'accord de l'usager.",
-        "min" : 1,
+        "min" : 0,
         "max" : "1",
         "type" : [
           {
@@ -201,7 +215,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
         "sliceName" : "structure",
         "short" : "Référence à l'accord de la structure.",
         "min" : 1,
-        "max" : "1",
+        "max" : "*",
         "type" : [
           {
             "code" : "Reference",
@@ -216,6 +230,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
         "path" : "CarePlan.supportingInfo.display",
         "min" : 1,
         "patternString" : "Consentement de la structure"
+      },
+      {
+        "id" : "CarePlan.note",
+        "path" : "CarePlan.note",
+        "max" : "1"
       }
     ]
   }

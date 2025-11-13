@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente | *Version*:2.1.0-ballot |
-| Active as of 2025-11-12 | *Computable Name*:TDDUIGoalAttente |
+| Active as of 2025-11-13 | *Computable Name*:TDDUIGoalAttente |
 
  
 Profil de la ressource TDDUIGoal permettant de représenter les attentes de l'usager. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-attente.c
   "name" : "TDDUIGoalAttente",
   "title" : "TDDUI Goal Attente",
   "status" : "active",
-  "date" : "2025-11-12T08:37:23+00:00",
+  "date" : "2025-11-13T10:43:15+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -96,6 +96,36 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-attente.c
         "path" : "Goal"
       },
       {
+        "id" : "Goal.extension",
+        "path" : "Goal.extension",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "value",
+              "path" : "url"
+            }
+          ],
+          "ordered" : false,
+          "rules" : "open"
+        },
+        "min" : 1
+      },
+      {
+        "id" : "Goal.extension:referenceProjetPerso",
+        "path" : "Goal.extension",
+        "sliceName" : "referenceProjetPerso",
+        "min" : 1,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Extension",
+            "profile" : [
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference"
+            ]
+          }
+        ]
+      },
+      {
         "id" : "Goal.identifier",
         "path" : "Goal.identifier",
         "short" : "Identifiant de l'attente",
@@ -108,7 +138,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-attente.c
         "example" : [
           {
             "label" : "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-PPAttente-identifiantAttente",
-            "valueString" : "3480787529/147720425367411-EVN-12548"
+            "valueString" : "123456"
           }
         ]
       },
@@ -141,12 +171,6 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-attente.c
             ]
           }
         ]
-      },
-      {
-        "id" : "Goal.addresses",
-        "path" : "Goal.addresses",
-        "min" : 1,
-        "max" : "1"
       }
     ]
   }

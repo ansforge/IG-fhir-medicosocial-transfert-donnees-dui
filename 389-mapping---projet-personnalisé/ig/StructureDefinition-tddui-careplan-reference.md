@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference | *Version*:2.1.0-ballot |
-| Active as of 2025-11-12 | *Computable Name*:TDDUICarePlanProjetPersoRef |
+| Active as of 2025-11-13 | *Computable Name*:TDDUICarePlanProjetPersoRef |
 
 Liens vers le projet personnel, utilisables dans le profil TDDUIGoalObjectif.
 
@@ -19,7 +19,7 @@ Liens vers le projet personnel, utilisables dans le profil TDDUIGoalObjectif.
 
 **Usages:**
 
-* Use this Extension: [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md)
+* Use this Extension: [TDDUI Goal Attente](StructureDefinition-tddui-goal-attente.md) and [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-careplan-reference)
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-refer
   "name" : "TDDUICarePlanProjetPersoRef",
   "title" : "Lien vers le projet personnel",
   "status" : "active",
-  "date" : "2025-11-12T08:37:23+00:00",
+  "date" : "2025-11-13T10:43:15+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

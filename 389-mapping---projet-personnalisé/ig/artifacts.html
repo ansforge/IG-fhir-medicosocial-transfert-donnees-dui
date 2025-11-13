@@ -345,7 +345,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/tddui-consent">TDDUI Consent</a>
             </td>
             <td>
-<p>Profil de la ressource TDDUIConsent permettant de représenter les attentes de l'usager.</p>
+<p>Profil de la ressource TDDUIConsent permettant de représenter l'accord de l'usager et de la structure.</p>
 </td>
          </tr>
          <tr>
@@ -454,6 +454,33 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Profil de la ressource TDDUIServiceRequestBesoin permettant de représenter les besoins de l'usager.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-task-action.html"
+                  title="StructureDefinition/tddui-task-action">TDDUI Task Action</a>
+            </td>
+            <td>
+<p>Profil de la ressource Task permettant de représenter les actions réalisés dans le cadre du projet personnalisé.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-task-prestation.html"
+                  title="StructureDefinition/tddui-task-prestation">TDDUI Task Action</a>
+            </td>
+            <td>
+<p>Profil de la ressource Task permettant de représenter les prestations du projet personnalisé.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-task-moyen-ressource.html"
+                  title="StructureDefinition/tddui-task-moyen-ressource">TDDUI Task MoyenRessource</a>
+            </td>
+            <td>
+<p>Profil de la ressource Task permettant de représenter les moyens ou ressources utilisées dans le cadre du projet personnalisé.</p>
 </td>
          </tr>
          <tr>
@@ -667,6 +694,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-goal-note.html"
+                  title="StructureDefinition/tddui-goal-note">TDDUI Goal Note</a>
+            </td>
+            <td>
+<p>Extension pour discriminer l'élément Goal.note.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-tddui-profession.html"
                   title="StructureDefinition/tddui-profession">TDDUI Profession</a>
             </td>
@@ -702,6 +738,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
+               <a href="ValueSet-tddui-goal-note-vs.html"
+                  title="ValueSet/tddui-goal-note-vs">TDDUI Goal Note ValueSet</a>
+            </td>
+            <td>
+<p>ValueSet définissant les types de notes pour l'élément Goal.note.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="ValueSet-tddui-serafin-valueset.html"
                   title="ValueSet/tddui-serafin-valueset">TDDUI SERAFIN ValueSet</a>
             </td>
@@ -717,6 +762,33 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-input-tddui-task-action-codesystem.html"
+                  title="CodeSystem/input-tddui-task-action-codesystem">InputTDDUITaskActionCodeSystem</a>
+            </td>
+            <td>
+<p>CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les actions du projet personnalisé.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-input-tddui-task-moyen-ressource-codesystem.html"
+                  title="CodeSystem/input-tddui-task-moyen-ressource-codesystem">InputTDDUITaskMoyenRessourceCodeSystem</a>
+            </td>
+            <td>
+<p>CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les moyens et ressources du projet personnalisé.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-input-tddui-task-prestation-codesystem.html"
+                  title="CodeSystem/input-tddui-task-prestation-codesystem">InputTDDUITaskPrestationCodeSystem</a>
+            </td>
+            <td>
+<p>CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les prestations du projet personnalisé.</p>
+</td>
+         </tr>
          <tr>
             <td style="column-width:30%">
                <a href="CodeSystem-input-tddui-task-transport-codesystem.html"
@@ -751,6 +823,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>TDDUI Patient's identifier</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-tddui-goal-note-cs.html"
+                  title="CodeSystem/tddui-goal-note-cs">TDDUI Goal Note CodeSystem</a>
+            </td>
+            <td>
+<p>CodeSystem définissant les types de notes pour l'élément Goal.note</p>
 </td>
          </tr>
       </tbody>
@@ -955,7 +1036,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.1.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 12, 2025 08:37+0000">2025-11-12</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.1.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Nov 13, 2025 10:43+0000">2025-11-13</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |

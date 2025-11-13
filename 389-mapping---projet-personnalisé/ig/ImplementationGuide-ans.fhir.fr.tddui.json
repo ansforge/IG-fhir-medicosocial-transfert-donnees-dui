@@ -10,7 +10,7 @@
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2025-11-12T08:37:23+00:00",
+  "date" : "2025-11-13T10:43:15+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -719,6 +719,42 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/input-tddui-task-action-codesystem"
+      },
+      "name" : "InputTDDUITaskActionCodeSystem",
+      "description" : "CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les actions du projet personnalisé.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/input-tddui-task-moyen-ressource-codesystem"
+      },
+      "name" : "InputTDDUITaskMoyenRessourceCodeSystem",
+      "description" : "CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les moyens et ressources du projet personnalisé.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/input-tddui-task-prestation-codesystem"
+      },
+      "name" : "InputTDDUITaskPrestationCodeSystem",
+      "description" : "CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les prestations du projet personnalisé.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -905,7 +941,7 @@
         "reference" : "StructureDefinition/tddui-consent"
       },
       "name" : "TDDUI Consent",
-      "description" : "Profil de la ressource TDDUIConsent permettant de représenter les attentes de l'usager.",
+      "description" : "Profil de la ressource TDDUIConsent permettant de représenter l'accord de l'usager et de la structure.",
       "exampleBoolean" : false
     },
     {
@@ -990,6 +1026,42 @@
       },
       "name" : "TDDUI Goal Attente",
       "description" : "Profil de la ressource TDDUIGoal permettant de représenter les attentes de l'usager.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-goal-note"
+      },
+      "name" : "TDDUI Goal Note",
+      "description" : "Extension pour discriminer l'élément Goal.note.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/tddui-goal-note-cs"
+      },
+      "name" : "TDDUI Goal Note CodeSystem",
+      "description" : "CodeSystem définissant les types de notes pour l'élément Goal.note",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/tddui-goal-note-vs"
+      },
+      "name" : "TDDUI Goal Note ValueSet",
+      "description" : "ValueSet définissant les types de notes pour l'élément Goal.note.",
       "exampleBoolean" : false
     },
     {
@@ -1122,6 +1194,42 @@
       },
       "name" : "TDDUI ServiceRequest Besoin",
       "description" : "Profil de la ressource TDDUIServiceRequestBesoin permettant de représenter les besoins de l'usager.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-task-action"
+      },
+      "name" : "TDDUI Task Action",
+      "description" : "Profil de la ressource Task permettant de représenter les actions réalisés dans le cadre du projet personnalisé.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-task-prestation"
+      },
+      "name" : "TDDUI Task Action",
+      "description" : "Profil de la ressource Task permettant de représenter les prestations du projet personnalisé.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-task-moyen-ressource"
+      },
+      "name" : "TDDUI Task MoyenRessource",
+      "description" : "Profil de la ressource Task permettant de représenter les moyens ou ressources utilisées dans le cadre du projet personnalisé.",
       "exampleBoolean" : false
     },
     {

@@ -1,7 +1,7 @@
 TDDUI : Validation Results
 =========================================
 
-err = 110, warn = 118, info = 82
+err = 109, warn = 125, info = 89
 $--
 Generated $--. FHIR version $-- for ans.fhir.fr.tddui#$-- (canonical = https://interop.esante.gouv.fr/ig/fhir/tddui)
  Build Errors : 1 / 6 / 0
@@ -9,8 +9,12 @@ Generated $--. FHIR version $-- for ans.fhir.fr.tddui#$-- (canonical = https://i
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CapabilityStatement-TDDUIConsommateur : 0 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CapabilityStatement-TDDUIProducteur : 0 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CodeSystem-TDDUIEncounterParticipant : 0 / 0 / 1
+ /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CodeSystem-input-tddui-task-action-codesystem : 0 / 0 / 1
+ /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CodeSystem-input-tddui-task-moyen-ressource-codesystem : 0 / 0 / 1
+ /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CodeSystem-input-tddui-task-prestation-codesystem : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CodeSystem-input-tddui-task-transport-codesystem : 0 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CodeSystem-tddui-encounter-identifier : 0 / 0 / 1
+ /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CodeSystem-tddui-goal-note-cs : 0 / 2 / 2
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CodeSystem-tddui-identifier : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Encounter-tddui-encounter-evenement-example : 0 / 1 / 3
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Encounter-tddui-encounter-sejour-example : 0 / 1 / 1
@@ -50,7 +54,8 @@ Generated $--. FHIR version $-- for ans.fhir.fr.tddui#$-- (canonical = https://i
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-exercise-mode : 0 / 2 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-exit-mode-label : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-goal-attente : 0 / 1 / 1
- /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-goal-objectif : 1 / 1 / 3
+ /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-goal-note : 0 / 1 / 1
+ /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-goal-objectif : 0 / 1 / 3
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-human-name : 0 / 5 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-meal : 0 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-organization : 0 / 3 / 4
@@ -65,18 +70,22 @@ Generated $--. FHIR version $-- for ans.fhir.fr.tddui#$-- (canonical = https://i
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-questionnaire-response : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-ressources-used : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-service-request-besoin : 0 / 2 / 1
+ /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-task-action : 0 / 1 / 3
+ /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-task-moyen-ressource : 0 / 1 / 3
+ /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-task-prestation : 0 / 1 / 3
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-task-transport : 0 / 0 / 3
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-task-transport-professionnel : 0 / 0 / 2
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-task-transport-usager : 0 / 0 / 2
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Task-tddui-task-transport-example : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Task-tddui-task-transport-professionel-example : 0 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Task-tddui-task-transport-usager-example : 0 / 1 / 1
+ /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/ValueSet-tddui-goal-note-vs : 0 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/ValueSet-tddui-serafin-valueset : 0 / 1 / 1
 </table>
 == n/a ==
 ERROR: ImplementationGuide/ans.fhir.fr.tddui: This IG is version 4.0.1, while the IG 'hl7.fhir.uv.extensions' is from version 5.0.0
-WARNING: index.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 368, column 26: The link 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport' for "TDDUI Task Transport" is a canonical link and is therefore unsafe with regard to versions
-WARNING: index.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 369, column 26: The link 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport' for "TDDUI Task Transport" is a canonical link and is therefore unsafe with regard to versions
+WARNING: index.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 371, column 26: The link 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport' for "TDDUI Task Transport" is a canonical link and is therefore unsafe with regard to versions
+WARNING: index.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 372, column 26: The link 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport' for "TDDUI Task Transport" is a canonical link and is therefore unsafe with regard to versions
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
@@ -114,9 +123,16 @@ WARNING: CapabilityStatement/TDDUIConsommateur: CapabilityStatement.implementati
 == fsh-generated/resources/CapabilityStatement-TDDUIProducteur.json ==
 WARNING: CapabilityStatement/TDDUIProducteur: CapabilityStatement.implementationGuide[0]: A definition could not be found for Canonical URL 'https://interop.esante.gouv.fr/ig/fhir/tddui'
 == fsh-generated/resources/CodeSystem-TDDUIEncounterParticipant.json ==
+== fsh-generated/resources/CodeSystem-input-tddui-task-action-codesystem.json ==
+== fsh-generated/resources/CodeSystem-input-tddui-task-moyen-ressource-codesystem.json ==
+== fsh-generated/resources/CodeSystem-input-tddui-task-prestation-codesystem.json ==
 == fsh-generated/resources/CodeSystem-input-tddui-task-transport-codesystem.json ==
 WARNING: CodeSystem/input-tddui-task-transport-codesystem: CodeSystem.concept[7].display: value should not start or finish with whitespace 'Accompagnement nécessaire ou non de l'usager. '
 == fsh-generated/resources/CodeSystem-tddui-encounter-identifier.json ==
+== fsh-generated/resources/CodeSystem-tddui-goal-note-cs.json ==
+INFORMATION: CodeSystem/tddui-goal-note-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/tddui-goal-note-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/tddui-goal-note-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-tddui-identifier.json ==
 == fsh-generated/resources/Encounter-tddui-encounter-evenement-example.json ==
 INFORMATION: Encounter/tddui-encounter-evenement-example: Encounter.type[1]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement|2.1.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
@@ -296,8 +312,8 @@ WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir
 == fsh-generated/resources/StructureDefinition-tddui-bundle.json ==
 INFORMATION: StructureDefinition/tddui-bundle: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
 == fsh-generated/resources/StructureDefinition-tddui-careplan-projet-perso.json ==
-INFORMATION: StructureDefinition/tddui-careplan-projet-perso: StructureDefinition.differential.element[7].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-INFORMATION: StructureDefinition/tddui-careplan-projet-perso: StructureDefinition.snapshot.element[29].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/tddui-careplan-projet-perso: StructureDefinition.differential.element[8].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/tddui-careplan-projet-perso: StructureDefinition.snapshot.element[37].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-perso'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-tddui-careplan-reference.json ==
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference'): The Implementation Guide contains no examples for this extension
@@ -382,10 +398,11 @@ WARNING: StructureDefinition/tddui-exercise-mode: StructureDefinition.differenti
 == fsh-generated/resources/StructureDefinition-tddui-exit-mode-label.json ==
 == fsh-generated/resources/StructureDefinition-tddui-goal-attente.json ==
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-tddui-goal-note.json ==
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-note'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-tddui-goal-objectif.json ==
 INFORMATION: StructureDefinition/tddui-goal-objectif: StructureDefinition.differential.element[11].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/tddui-goal-objectif: StructureDefinition.snapshot.element[39].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-ERROR: StructureDefinition/tddui-goal-objectif: StructureDefinition.snapshot.element[39].slicing.discriminator[0]: The discriminator path 'authorString' does not appear to be valid for the element that is being sliced 'Goal.note'
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-tddui-human-name.json ==
 WARNING: StructureDefinition/tddui-human-name: StructureDefinition.snapshot.element[3].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/humanname-assembly-order'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.1.0, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/humanname-assembly-order' to 'http://hl7.org/fhir/StructureDefinition/humanname-assembly-order|5.2.0'
@@ -437,8 +454,20 @@ WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir
 == fsh-generated/resources/StructureDefinition-tddui-questionnaire-response.json ==
 == fsh-generated/resources/StructureDefinition-tddui-ressources-used.json ==
 == fsh-generated/resources/StructureDefinition-tddui-service-request-besoin.json ==
-WARNING: StructureDefinition/tddui-service-request-besoin: StructureDefinition.snapshot.element[39].binding.valueSet: There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '3.0.0', found versions: 2.0.0, 3.0.0. Suggested fix: change the canonical reference from 'http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType' to 'http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType|3.0.0'
+WARNING: StructureDefinition/tddui-service-request-besoin: StructureDefinition.snapshot.element[40].binding.valueSet: There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '3.0.0', found versions: 2.0.0, 3.0.0. Suggested fix: change the canonical reference from 'http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType' to 'http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType|3.0.0'
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-tddui-task-action.json ==
+INFORMATION: StructureDefinition/tddui-task-action: StructureDefinition.differential.element[4].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/tddui-task-action: StructureDefinition.snapshot.element[52].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-tddui-task-moyen-ressource.json ==
+INFORMATION: StructureDefinition/tddui-task-moyen-ressource: StructureDefinition.differential.element[5].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/tddui-task-moyen-ressource: StructureDefinition.snapshot.element[52].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-tddui-task-prestation.json ==
+INFORMATION: StructureDefinition/tddui-task-prestation: StructureDefinition.differential.element[5].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/tddui-task-prestation: StructureDefinition.snapshot.element[52].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-prestation'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-tddui-task-transport.json ==
 INFORMATION: StructureDefinition/tddui-task-transport: StructureDefinition.differential.element[8].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/tddui-task-transport: StructureDefinition.snapshot.element[48].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
@@ -451,5 +480,7 @@ INFORMATION: StructureDefinition/tddui-task-transport-usager: StructureDefinitio
 WARNING: Task/tddui-task-transport-professionel-example: Task.identifier[0].system: No definition could be found for URL value 'https://identifiant-medicosocial-transportprofessionnel.esante.gouv.fr'
 == fsh-generated/resources/Task-tddui-task-transport-usager-example.json ==
 WARNING: Task/tddui-task-transport-usager-example: Task.identifier[0].system: No definition could be found for URL value 'https://identifiant-medicosocial-transportusager.esante.gouv.fr'
+== fsh-generated/resources/ValueSet-tddui-goal-note-vs.json ==
+WARNING: ValueSet/tddui-goal-note-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-tddui-serafin-valueset.json ==
 WARNING: ValueSet/tddui-serafin-valueset: ValueSet.compose.include[0]: This value set has a single include with multiple imported value sets. Per issue https://jira.hl7.org/browse/FHIR-25179, there has been confusion in the past whether these value sets are unioned or intersectioned. If this value set is contained in a package published prior to March 31 2022, it will be treated as a union, otherwise it will be treated as an intersection. If want a union, split the value set imports across multiple includes

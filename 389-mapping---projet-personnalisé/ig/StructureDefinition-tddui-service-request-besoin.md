@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin | *Version*:2.1.0-ballot |
-| Active as of 2025-11-12 | *Computable Name*:TDDUIServiceRequestBesoin |
+| Active as of 2025-11-13 | *Computable Name*:TDDUIServiceRequestBesoin |
 
  
 Profil de la ressource TDDUIServiceRequestBesoin permettant de représenter les besoins de l'usager. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-service-reques
   "name" : "TDDUIServiceRequestBesoin",
   "title" : "TDDUI ServiceRequest Besoin",
   "status" : "active",
-  "date" : "2025-11-12T08:37:23+00:00",
+  "date" : "2025-11-13T10:43:15+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -106,6 +106,35 @@ Other representations of profile: [CSV](StructureDefinition-tddui-service-reques
         "path" : "ServiceRequest"
       },
       {
+        "id" : "ServiceRequest.extension",
+        "path" : "ServiceRequest.extension",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "value",
+              "path" : "url"
+            }
+          ],
+          "ordered" : false,
+          "rules" : "open"
+        }
+      },
+      {
+        "id" : "ServiceRequest.extension:pieceJointeBesoin",
+        "path" : "ServiceRequest.extension",
+        "sliceName" : "pieceJointeBesoin",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "Extension",
+            "profile" : [
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment"
+            ]
+          }
+        ]
+      },
+      {
         "id" : "ServiceRequest.identifier",
         "path" : "ServiceRequest.identifier",
         "short" : "Identifiant du besoin",
@@ -118,7 +147,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-service-reques
         "example" : [
           {
             "label" : "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-PPBesoin-identifiantBesoin",
-            "valueString" : "3480787529/147720425367411-EVN-12548"
+            "valueString" : "123456"
           }
         ]
       },
