@@ -1,7 +1,7 @@
 Profile: TDDUITaskPrestation
 Parent: Task
 Id: tddui-task-prestation
-Title: "TDDUI Task Action"
+Title: "TDDUI Task Prestation"
 Description: "Profil de la ressource Task permettant de représenter les prestations du projet personnalisé."
 
 * identifier 1..1
@@ -42,3 +42,23 @@ Description: "Profil de la ressource Task permettant de représenter les prestat
 
 * basedOn 1..1
 * basedOn only Reference(TDDUICarePlanProjetPerso)
+
+Mapping:  ConceptMetier_TDDUITaskPrestation
+Source:   TDDUITaskPrestation
+Target: "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"
+Id:       specmetier-to-TDDUITaskPrestation
+Title:    "Modèle de contenu DUI"
+* -> "PrestationProjetPersonnalise"
+
+* status -> "statutPrestation"
+* identifier -> "identifiantPrestation"
+* input[titre] -> "titrePrestation"
+* description -> "descriptionPrestation"
+* input[typePrestation] -> "typePrestation"
+* executionPeriod.start -> "dateDebutPrestation"
+* executionPeriod.end -> "dateFinPrestation"
+* input[evaluation] -> "evaluationPrestation"
+* input[pieceJointe] -> "pieceJointePrestation"
+* input[evaluationNonStructuree] -> "evaluationNonStructureePrestation"
+* partOf -> "Action"
+* basedOn -> "ProjetPersonnalise"

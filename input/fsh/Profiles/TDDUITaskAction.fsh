@@ -52,3 +52,25 @@ Description: "Profil de la ressource Task permettant de représenter les actions
 
 * basedOn 1..1
 * basedOn only Reference(TDDUICarePlanProjetPerso)
+
+Mapping:  ConceptMetier_TDDUITaskAction
+Source:   TDDUITaskAction
+Target: "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"
+Id:       specmetier-to-TDDUITaskAction
+Title:    "Modèle de contenu DUI"
+* -> "Besoin"
+
+* status -> "statutAction"
+* identifier -> "identifiantAction"
+* owner -> "referentAction"
+* input[titre] -> "titreAction"
+* description -> "descriptionAction"
+* executionPeriod.start -> "dateDebutAction"
+* executionPeriod.end -> "dateFinAction"
+* input[evaluation] -> "evaluationAction"
+* input[pieceJointe] -> "pieceJointeAction"
+* input[evaluationNonStructuree] -> "evaluationNonStructureeAction"
+* input[avisUsager] -> "avisUsagerAction"
+* input[resultatAttendu] -> "resultatAttenduAction"
+* input[objectif] -> "Objectif"
+* basedOn -> "ProjetPersonnalise"

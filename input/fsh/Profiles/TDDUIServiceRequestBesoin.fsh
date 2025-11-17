@@ -21,3 +21,18 @@ Description: "Profil de la ressource TDDUIServiceRequestBesoin permettant de rep
 * basedOn only Reference(TDDUICarePlanProjetPerso)
 
 * subject only Reference(TDDUIPatient or TDDUIPatientINS)
+
+Mapping:  ConceptMetier_TDDUIServiceRequestBesoin
+Source:   TDDUIServiceRequestBesoin
+Target: "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"
+Id:       specmetier-to-TDDUIServiceRequestBesoin
+Title:    "Modèle de contenu DUI"
+* -> "Besoin"
+
+* identifier -> "identifiantBesoin"
+* category -> "typeBesoin"
+* code.text -> "descriptionBesoin"
+* orderDetail.text -> "analyseProfessionnelBesoin"
+* note.text -> "commentaireBesoin"
+* extension[pieceJointeBesoin] -> "pieceJointeBesoin"
+* basedOn -> "ProjetPersonnalise"

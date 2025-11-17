@@ -16,3 +16,16 @@ Description: "Profil de la ressource TDDUIGoal permettant de représenter les at
 * expressedBy only Reference(TDDUIPractitionerRole or TDDUIPractitioner or TDDUIPatient or TDDUIPatientINS or FRCoreRelatedPersonProfile)
 
 * subject only Reference(TDDUIPatient or TDDUIPatientINS)
+
+Mapping:  ConceptMetier_TDDUIGoalAttente
+Source:   TDDUIGoalAttente
+Target: "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"
+Id:       specmetier-to-TDDUIGoalAttente
+Title:    "Modèle de contenu DUI"
+* -> "Attente"
+
+* identifier -> "identifiantAttente"
+* expressedBy -> "origineAttente"
+* description.text -> "descriptionAttente"
+* note.text -> "commentaireAttente"
+* extension[referenceProjetPerso].valueReference -> "ProjetPersonnalise"

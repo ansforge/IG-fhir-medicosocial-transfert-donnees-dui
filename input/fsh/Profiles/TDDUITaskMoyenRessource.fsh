@@ -40,3 +40,22 @@ Description: "Profil de la ressource Task permettant de représenter les moyens 
 
 * partOf 0..1
 * partOf only Reference(TDDUITaskAction)
+
+Mapping:  ConceptMetier_TDDUITaskMoyenRessource
+Source:   TDDUITaskMoyenRessource
+Target: "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"
+Id:       specmetier-to-TDDUITaskMoyenRessource
+Title:    "Modèle de contenu DUI"
+* -> "MoyenRessource"
+
+* identifier -> "identifiantMoyenRessource"
+* input[titre] -> "titreMoyenRessource"
+* description -> "descriptionMoyenRessource"
+* code -> "typeMoyenRessource"
+* executionPeriod.start -> "dateDebutMoyenRessource"
+* executionPeriod.end -> "dateFinMoyenRessource"
+* input[evaluation] -> "evaluationMoyenRessource"
+* input[pieceJointe] -> "pieceJointeMoyenRessource"
+* input[evaluationNonStructuree] -> "evaluationNonStructureeMoyenRessource"
+* basedOn -> "ProjetPersonnalise"
+* partOf -> "Action"
