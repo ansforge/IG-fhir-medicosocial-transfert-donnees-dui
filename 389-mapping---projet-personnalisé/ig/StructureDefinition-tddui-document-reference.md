@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference | *Version*:2.1.0-ballot |
-| Active as of 2025-11-13 | *Computable Name*:TDDUIDocumentReference |
+| Active as of 2025-11-17 | *Computable Name*:TDDUIDocumentReference |
 
  
 Profil de la ressource SimplifiedPublishDocumentReference pour les pièces jointes liées à l’événement et à l'évaluation. 
@@ -22,7 +22,7 @@ Profil de la ressource SimplifiedPublishDocumentReference pour les pièces joint
 **Usages:**
 
 * Use this Profile: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
-* Refer to this Profile: [Pièce jointe](StructureDefinition-tddui-attachment.md), [TDDUI Task Action](StructureDefinition-tddui-task-action.md), [TDDUI Task MoyenRessource](StructureDefinition-tddui-task-moyen-ressource.md) and [TDDUI Task Action](StructureDefinition-tddui-task-prestation.md)
+* Refer to this Profile: [Pièce jointe](StructureDefinition-tddui-attachment.md), [TDDUI Task Action](StructureDefinition-tddui-task-action.md), [TDDUI Task MoyenRessource](StructureDefinition-tddui-task-moyen-ressource.md) and [TDDUI Task Prestation](StructureDefinition-tddui-task-prestation.md)
 * CapabilityStatements using this Profile: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-document-reference)
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-document-refer
   "name" : "TDDUIDocumentReference",
   "title" : "TDDUI DocumentReference",
   "status" : "active",
-  "date" : "2025-11-13T10:43:15+00:00",
+  "date" : "2025-11-17T16:08:32+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

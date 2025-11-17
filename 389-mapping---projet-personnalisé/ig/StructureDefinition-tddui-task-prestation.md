@@ -1,15 +1,15 @@
-# TDDUI Task Action - Médicosocial - Transfert de données DUI v2.1.0-ballot
+# TDDUI Task Prestation - Médicosocial - Transfert de données DUI v2.1.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **TDDUI Task Action**
+* **TDDUI Task Prestation**
 
-## Resource Profile: TDDUI Task Action 
+## Resource Profile: TDDUI Task Prestation 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-prestation | *Version*:2.1.0-ballot |
-| Active as of 2025-11-13 | *Computable Name*:TDDUITaskPrestation |
+| Active as of 2025-11-17 | *Computable Name*:TDDUITaskPrestation |
 
  
 Profil de la ressource Task permettant de représenter les prestations du projet personnalisé. 
@@ -39,9 +39,9 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-prestatio
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-prestation",
   "version" : "2.1.0-ballot",
   "name" : "TDDUITaskPrestation",
-  "title" : "TDDUI Task Action",
+  "title" : "TDDUI Task Prestation",
   "status" : "active",
-  "date" : "2025-11-13T10:43:15+00:00",
+  "date" : "2025-11-17T16:08:32+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -68,6 +68,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-prestatio
   ],
   "fhirVersion" : "4.0.1",
   "mapping" : [
+    {
+      "identity" : "specmetier-to-TDDUITaskPrestation",
+      "uri" : "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html",
+      "name" : "Modèle de contenu DUI"
+    },
     {
       "identity" : "workflow",
       "uri" : "http://hl7.org/fhir/workflow",
@@ -98,14 +103,26 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-prestatio
     "element" : [
       {
         "id" : "Task",
-        "path" : "Task"
+        "path" : "Task",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUITaskPrestation",
+            "map" : "PrestationProjetPersonnalise"
+          }
+        ]
       },
       {
         "id" : "Task.identifier",
         "path" : "Task.identifier",
         "short" : "Identifiant de l'action",
         "min" : 1,
-        "max" : "1"
+        "max" : "1",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUITaskPrestation",
+            "map" : "identifiantPrestation"
+          }
+        ]
       },
       {
         "id" : "Task.identifier.value",
@@ -129,6 +146,12 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-prestatio
               "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-perso"
             ]
           }
+        ],
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUITaskPrestation",
+            "map" : "ProjetPersonnalise"
+          }
         ]
       },
       {
@@ -141,6 +164,52 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-prestatio
             "targetProfile" : [
               "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"
             ]
+          }
+        ],
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUITaskPrestation",
+            "map" : "Action"
+          }
+        ]
+      },
+      {
+        "id" : "Task.status",
+        "path" : "Task.status",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUITaskPrestation",
+            "map" : "statutPrestation"
+          }
+        ]
+      },
+      {
+        "id" : "Task.description",
+        "path" : "Task.description",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUITaskPrestation",
+            "map" : "descriptionPrestation"
+          }
+        ]
+      },
+      {
+        "id" : "Task.executionPeriod.start",
+        "path" : "Task.executionPeriod.start",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUITaskPrestation",
+            "map" : "dateDebutPrestation"
+          }
+        ]
+      },
+      {
+        "id" : "Task.executionPeriod.end",
+        "path" : "Task.executionPeriod.end",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUITaskPrestation",
+            "map" : "dateFinPrestation"
           }
         ]
       },
@@ -164,7 +233,13 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-prestatio
         "sliceName" : "titre",
         "short" : "Titre de l’action",
         "min" : 1,
-        "max" : "1"
+        "max" : "1",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUITaskPrestation",
+            "map" : "titrePrestation"
+          }
+        ]
       },
       {
         "id" : "Task.input:titre.type",
@@ -193,7 +268,13 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-prestatio
         "sliceName" : "typePrestation",
         "short" : "Type de la prestation.",
         "min" : 0,
-        "max" : "*"
+        "max" : "*",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUITaskPrestation",
+            "map" : "typePrestation"
+          }
+        ]
       },
       {
         "id" : "Task.input:typePrestation.type",
@@ -225,7 +306,13 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-prestatio
         "path" : "Task.input",
         "sliceName" : "evaluation",
         "min" : 0,
-        "max" : "1"
+        "max" : "1",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUITaskPrestation",
+            "map" : "evaluationPrestation"
+          }
+        ]
       },
       {
         "id" : "Task.input:pieceJointe",
@@ -233,7 +320,13 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-prestatio
         "sliceName" : "pieceJointe",
         "short" : "Pièce jointe associée",
         "min" : 0,
-        "max" : "*"
+        "max" : "*",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUITaskPrestation",
+            "map" : "pieceJointePrestation"
+          }
+        ]
       },
       {
         "id" : "Task.input:pieceJointe.type",
@@ -265,7 +358,13 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-prestatio
         "sliceName" : "evaluationNonStructuree",
         "short" : "EValuation non structurée",
         "min" : 0,
-        "max" : "1"
+        "max" : "1",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUITaskPrestation",
+            "map" : "evaluationNonStructureePrestation"
+          }
+        ]
       },
       {
         "id" : "Task.input:evaluationNonStructuree.type",

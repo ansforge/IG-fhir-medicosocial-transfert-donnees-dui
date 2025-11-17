@@ -49,8 +49,8 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md) | Profil de la ressource QuestionnaireResponse utilisé pour transmettre les réponses aux questionnaires dans le cadre des évaluations. |
 | [TDDUI ServiceRequest Besoin](StructureDefinition-tddui-service-request-besoin.md) | Profil de la ressource TDDUIServiceRequestBesoin permettant de représenter les besoins de l'usager. |
 | [TDDUI Task Action](StructureDefinition-tddui-task-action.md) | Profil de la ressource Task permettant de représenter les actions réalisés dans le cadre du projet personnalisé. |
-| [TDDUI Task Action](StructureDefinition-tddui-task-prestation.md) | Profil de la ressource Task permettant de représenter les prestations du projet personnalisé. |
 | [TDDUI Task MoyenRessource](StructureDefinition-tddui-task-moyen-ressource.md) | Profil de la ressource Task permettant de représenter les moyens ou ressources utilisées dans le cadre du projet personnalisé. |
+| [TDDUI Task Prestation](StructureDefinition-tddui-task-prestation.md) | Profil de la ressource Task permettant de représenter les prestations du projet personnalisé. |
 | [TDDUI Task Transport](StructureDefinition-tddui-task-transport.md) | Profil de la ressource Task permettant de représenter le transport. |
 | [TDDUI Task Transport Professionnel](StructureDefinition-tddui-task-transport-professionnel.md) | Profil de la ressource TDDUITaskTransport permettant de représenter le transport du professionnel. |
 | [TDDUI Task Transport Usager](StructureDefinition-tddui-task-transport-usager.md) | Profil de la ressource TDDUITaskTransport permettant de représenter le transport de l'usager. |

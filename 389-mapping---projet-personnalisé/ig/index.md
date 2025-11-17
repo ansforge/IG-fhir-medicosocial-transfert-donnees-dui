@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui | *Version*:2.1.0-ballot |
-| Active as of 2025-11-13 | *Computable Name*:TDDUI |
+| Active as of 2025-11-17 | *Computable Name*:TDDUI |
 
  **Brief description of this Implementation Guide**
  The Digital User File (DUI) centralizes all information concerning the person being cared for in social and medico-social facilities and services. The aim of this implementation guide is to define the specifications for DUI data transfer. 
@@ -139,7 +139,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2025-11-13T10:43:15+00:00",
+  "date" : "2025-11-17T16:08:32+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -177,7 +177,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
       ],
       "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
       "packageId" : "hl7.terminology.r4",
-      "version" : "6.5.0"
+      "version" : "7.0.0"
     },
     {
       "id" : "hl7_fhir_fr_core",
@@ -189,7 +189,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
       "id" : "ans_fr_terminologies",
       "uri" : "https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies",
       "packageId" : "ans.fr.terminologies",
-      "version" : "1.2.0"
+      "version" : "1.4.0"
     },
     {
       "id" : "hl7_fhir_uv_extensions",
@@ -1558,10 +1558,10 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/tddui-task-prestation"
+          "reference" : "StructureDefinition/tddui-task-moyen-ressource"
         },
-        "name" : "TDDUI Task Action",
-        "description" : "Profil de la ressource Task permettant de représenter les prestations du projet personnalisé.",
+        "name" : "TDDUI Task MoyenRessource",
+        "description" : "Profil de la ressource Task permettant de représenter les moyens ou ressources utilisées dans le cadre du projet personnalisé.",
         "exampleBoolean" : false
       },
       {
@@ -1572,10 +1572,10 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/tddui-task-moyen-ressource"
+          "reference" : "StructureDefinition/tddui-task-prestation"
         },
-        "name" : "TDDUI Task MoyenRessource",
-        "description" : "Profil de la ressource Task permettant de représenter les moyens ou ressources utilisées dans le cadre du projet personnalisé.",
+        "name" : "TDDUI Task Prestation",
+        "description" : "Profil de la ressource Task permettant de représenter les prestations du projet personnalisé.",
         "exampleBoolean" : false
       },
       {

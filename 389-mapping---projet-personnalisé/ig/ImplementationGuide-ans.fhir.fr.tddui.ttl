@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "TDDUI"] ; # 
   fhir:title [ fhir:v "Médicosocial - Transfert de données DUI"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-11-13T10:43:15+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-11-17T16:08:32+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -60,7 +60,7 @@
        fhir:l <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "6.5.0" ]
+     fhir:version [ fhir:v "7.0.0" ]
   ] [
      fhir:id [ fhir:v "hl7_fhir_fr_core" ] ;
      fhir:uri [
@@ -76,7 +76,7 @@
        fhir:l <https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies>
      ] ;
      fhir:packageId [ fhir:v "ans.fr.terminologies" ] ;
-     fhir:version [ fhir:v "1.2.0" ]
+     fhir:version [ fhir:v "1.4.0" ]
   ] [
      fhir:id [ fhir:v "hl7_fhir_uv_extensions" ] ;
      fhir:uri [
@@ -2368,11 +2368,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-prestation> ;
-         fhir:reference [ fhir:v "StructureDefinition/tddui-task-prestation" ]
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-task-moyen-ressource" ]
        ] ;
-       fhir:name [ fhir:v "TDDUI Task Action" ] ;
-       fhir:description [ fhir:v "Profil de la ressource Task permettant de représenter les prestations du projet personnalisé." ] ;
+       fhir:name [ fhir:v "TDDUI Task MoyenRessource" ] ;
+       fhir:description [ fhir:v "Profil de la ressource Task permettant de représenter les moyens ou ressources utilisées dans le cadre du projet personnalisé." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -2389,11 +2389,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource> ;
-         fhir:reference [ fhir:v "StructureDefinition/tddui-task-moyen-ressource" ]
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-prestation> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-task-prestation" ]
        ] ;
-       fhir:name [ fhir:v "TDDUI Task MoyenRessource" ] ;
-       fhir:description [ fhir:v "Profil de la ressource Task permettant de représenter les moyens ou ressources utilisées dans le cadre du projet personnalisé." ] ;
+       fhir:name [ fhir:v "TDDUI Task Prestation" ] ;
+       fhir:description [ fhir:v "Profil de la ressource Task permettant de représenter les prestations du projet personnalisé." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente | *Version*:2.1.0-ballot |
-| Active as of 2025-11-13 | *Computable Name*:TDDUIGoalAttente |
+| Active as of 2025-11-17 | *Computable Name*:TDDUIGoalAttente |
 
  
 Profil de la ressource TDDUIGoal permettant de représenter les attentes de l'usager. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-attente.c
   "name" : "TDDUIGoalAttente",
   "title" : "TDDUI Goal Attente",
   "status" : "active",
-  "date" : "2025-11-13T10:43:15+00:00",
+  "date" : "2025-11-17T16:08:32+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -69,6 +69,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-attente.c
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
+      "identity" : "specmetier-to-TDDUIGoalAttente",
+      "uri" : "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html",
+      "name" : "Modèle de contenu DUI"
+    },
+    {
       "identity" : "v2",
       "uri" : "http://hl7.org/v2",
       "name" : "HL7 v2 Mapping"
@@ -93,7 +98,13 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-attente.c
     "element" : [
       {
         "id" : "Goal",
-        "path" : "Goal"
+        "path" : "Goal",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIGoalAttente",
+            "map" : "Attente"
+          }
+        ]
       },
       {
         "id" : "Goal.extension",
@@ -126,11 +137,27 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-attente.c
         ]
       },
       {
+        "id" : "Goal.extension:referenceProjetPerso.value[x]",
+        "path" : "Goal.extension.value[x]",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIGoalAttente",
+            "map" : "ProjetPersonnalise"
+          }
+        ]
+      },
+      {
         "id" : "Goal.identifier",
         "path" : "Goal.identifier",
         "short" : "Identifiant de l'attente",
         "min" : 1,
-        "max" : "1"
+        "max" : "1",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIGoalAttente",
+            "map" : "identifiantAttente"
+          }
+        ]
       },
       {
         "id" : "Goal.identifier.value",
@@ -139,6 +166,16 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-attente.c
           {
             "label" : "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-PPAttente-identifiantAttente",
             "valueString" : "123456"
+          }
+        ]
+      },
+      {
+        "id" : "Goal.description.text",
+        "path" : "Goal.description.text",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIGoalAttente",
+            "map" : "descriptionAttente"
           }
         ]
       },
@@ -169,6 +206,22 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-attente.c
               "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins",
               "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person"
             ]
+          }
+        ],
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIGoalAttente",
+            "map" : "origineAttente"
+          }
+        ]
+      },
+      {
+        "id" : "Goal.note.text",
+        "path" : "Goal.note.text",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIGoalAttente",
+            "map" : "commentaireAttente"
           }
         ]
       }

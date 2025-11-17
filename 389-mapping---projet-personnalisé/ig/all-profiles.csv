@@ -3426,6 +3426,17 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Lien vers le projet personnel","Liens vers le projet personnel, utilisables dans le profil TDDUIGoalObjectif.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"tddui-goal-attente","Goal.extension:referenceProjetPerso.id","Goal.extension.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"tddui-goal-attente","Goal.extension:referenceProjetPerso.extension","Goal.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"tddui-goal-attente","Goal.extension:referenceProjetPerso.url","Goal.extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"tddui-goal-attente","Goal.extension:referenceProjetPerso.value[x]","Goal.extension.value[x]","","","",0,1,"","","","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-perso]]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
 "tddui-goal-attente","Goal.modifierExtension","Goal.modifierExtension","","extensions
 user content","",0,*,"","Y","","Extension {[]} {[]}
 ","Extensions that cannot be ignored","May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
@@ -3475,6 +3486,19 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "tddui-goal-attente","Goal.description","Goal.description","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Code or text describing goal","Human-readable and/or coded description of a specific desired objective of care, such as ""control blood pressure"" or ""negotiate an obstacle course"" or ""dance with child at wedding"".","If no code is available, use CodeableConcept.text.","Without a description of what's trying to be achieved, element has no purpose.","","","","","","","",,"example","Codes providing the details of a particular goal.  This will generally be system or implementation guide-specific.  In many systems, only the text element will be used.","http://hl7.org/fhir/ValueSet/clinical-findings|4.0.1","",,,,"Goal.description",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
+"tddui-goal-attente","Goal.description.id","Goal.description.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"tddui-goal-attente","Goal.description.extension","Goal.description.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"tddui-goal-attente","Goal.description.coding","Goal.description.coding","","","",0,*,"","","Y","Coding {[]} {[]}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"tddui-goal-attente","Goal.description.text","Goal.description.text","","","",0,1,"","","Y","string {[]} {[]}
+","Plain text representation of the concept","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
 "tddui-goal-attente","Goal.subject","Goal.subject","","","",1,1,"","","Y","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient], CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins]]}
 ","Who this goal is intended for","Identifies the patient, group or organization for whom the goal is being established.","","Subject is optional to support annonymized reporting.","","","","","","","",,,,,"",,,,"Goal.subject",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -3522,6 +3546,22 @@ Duration {[]} {[]}","Reach goal on or before","Indicates either the date or the 
 "
 "tddui-goal-attente","Goal.note","Goal.note","","","",0,*,"","","","Annotation {[]} {[]}
 ","Comments about the goal","Any comments related to the goal.","May be used for progress notes, concerns or other related information that doesn't actually describe the goal itself.","There's a need to capture information about the goal that doesn't actually describe the goal.","","","","","","","",,,,,"",,,,"Goal.note",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"tddui-goal-attente","Goal.note.id","Goal.note.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"tddui-goal-attente","Goal.note.extension","Goal.note.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"tddui-goal-attente","Goal.note.author[x]","Goal.note.author[x]","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner|4.0.1], CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient|4.0.1], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson|4.0.1], CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization|4.0.1]]}
+string {[]} {[]}","Individual responsible for the annotation","The individual responsible for making the annotation.","Organization is used when there's no need for specific attribution as to who made the comment.","","","","","","","","",,,,,"",,,,"Annotation.author[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"tddui-goal-attente","Goal.note.time","Goal.note.time","","","",0,1,"","","Y","dateTime {[]} {[]}
+","When the annotation was made","Indicates when this particular annotation was made.","","","","","","","","","",,,,,"",,,,"Annotation.time",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"tddui-goal-attente","Goal.note.text","Goal.note.text","","","",1,1,"","","Y","markdown {[]} {[]}
+","The annotation  - text content (as markdown)","The text of the annotation in markdown format.","","","","","","","","","",,,,,"",,,,"Annotation.text",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-goal-attente","Goal.outcomeCode","Goal.outcomeCode","","","",0,*,"","","","CodeableConcept {[]} {[]}
 ","What result was achieved regarding the goal?","Identifies the change (or lack of change) at the point when the status of the goal is assessed.","Note that this should not duplicate the goal status.","Outcome tracking is a key aspect of care planning.","","","","","","","",,"example","The result of the goal; e.g. ""25% increase in shoulder mobility"", ""Anxiety reduced to moderate levels"".  ""15 kg weight loss sustained over 6 months"".","http://hl7.org/fhir/ValueSet/clinical-findings|4.0.1","",,,,"Goal.outcomeCode",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -6825,10 +6865,36 @@ groupIdentifier","",0,1,"","","Y","Identifier {[]} {[]}
 ","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","What is being requested/ordered","A code that identifies a particular service (i.e., procedure, diagnostic investigation, or panel of investigations) that have been requested.","Many laboratory and radiology procedure codes embed the specimen/organ system in the test order name, for example,  serum or serum/plasma glucose, or a chest x-ray. The specimen might not be recorded separately from the test code.","","","","","","","","",,"example","Codes for tests or services that can be carried out by a designated individual, organization or healthcare service.  For laboratory, LOINC is  (preferred)[http://build.fhir.org/terminologies.html#preferred].","http://hl7.org/fhir/ValueSet/procedure-code|4.0.1","",,,,"ServiceRequest.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
+"tddui-service-request-besoin","ServiceRequest.code.id","ServiceRequest.code.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"tddui-service-request-besoin","ServiceRequest.code.extension","ServiceRequest.code.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"tddui-service-request-besoin","ServiceRequest.code.coding","ServiceRequest.code.coding","","","",0,*,"","","Y","Coding {[]} {[]}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"tddui-service-request-besoin","ServiceRequest.code.text","ServiceRequest.code.text","","","",0,1,"","","Y","string {[]} {[]}
+","Plain text representation of the concept","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
 "tddui-service-request-besoin","ServiceRequest.orderDetail","ServiceRequest.orderDetail","","detailed instructions
 ","",0,*,"","","Y","CodeableConcept {[]} {[]}
 ","Additional order information","Additional details and instructions about the how the services are to be delivered.   For example, and order for a urinary catheter may have an order detail for an external or indwelling catheter, or an order for a bandage may require additional instructions specifying how the bandage should be applied.","For information from the medical record intended to support the delivery of the requested services, use the `supportingInformation` element.","","","","","","","","",,"example","Codified order entry details which are based on order context.","http://hl7.org/fhir/ValueSet/servicerequest-orderdetail|4.0.1","",,,,"ServiceRequest.orderDetail",0,*,"prr-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"tddui-service-request-besoin","ServiceRequest.orderDetail.id","ServiceRequest.orderDetail.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"tddui-service-request-besoin","ServiceRequest.orderDetail.extension","ServiceRequest.orderDetail.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"tddui-service-request-besoin","ServiceRequest.orderDetail.coding","ServiceRequest.orderDetail.coding","","","",0,*,"","","Y","Coding {[]} {[]}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"tddui-service-request-besoin","ServiceRequest.orderDetail.text","ServiceRequest.orderDetail.text","","","",0,1,"","","Y","string {[]} {[]}
+","Plain text representation of the concept","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-service-request-besoin","ServiceRequest.quantity[x]","ServiceRequest.quantity[x]","","","",0,1,"","","Y","Quantity {[]} {[]}
 Ratio {[]} {[]}Range {[]} {[]}","Service amount","An amount of service being requested which can be a quantity ( for example $1,500 home modification), a ratio ( for example, 20 half day visits per month), or a range (2.0 to 1.8 Gy per fraction).","","When ordering a service the number of service items may need to be specified separately from the the service item.","","","","","","","",,,,,"",,,,"ServiceRequest.quantity[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -6891,6 +6957,22 @@ AOE","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/Structu
 "
 "tddui-service-request-besoin","ServiceRequest.note","ServiceRequest.note","","","",0,*,"","","","Annotation {[]} {[]}
 ","Comments","Any other notes and comments made about the service request. For example, internal billing notes.","","","","","","","","","",,,,,"",,,,"ServiceRequest.note",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"tddui-service-request-besoin","ServiceRequest.note.id","ServiceRequest.note.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"tddui-service-request-besoin","ServiceRequest.note.extension","ServiceRequest.note.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"tddui-service-request-besoin","ServiceRequest.note.author[x]","ServiceRequest.note.author[x]","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner|4.0.1], CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient|4.0.1], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson|4.0.1], CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization|4.0.1]]}
+string {[]} {[]}","Individual responsible for the annotation","The individual responsible for making the annotation.","Organization is used when there's no need for specific attribution as to who made the comment.","","","","","","","","",,,,,"",,,,"Annotation.author[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"tddui-service-request-besoin","ServiceRequest.note.time","ServiceRequest.note.time","","","",0,1,"","","Y","dateTime {[]} {[]}
+","When the annotation was made","Indicates when this particular annotation was made.","","","","","","","","","",,,,,"",,,,"Annotation.time",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"tddui-service-request-besoin","ServiceRequest.note.text","ServiceRequest.note.text","","","",1,1,"","","Y","markdown {[]} {[]}
+","The annotation  - text content (as markdown)","The text of the annotation in markdown format.","","","","","","","","","",,,,,"",,,,"Annotation.text",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-service-request-besoin","ServiceRequest.patientInstruction","ServiceRequest.patientInstruction","","","",0,1,"","","Y","string {[]} {[]}
 ","Patient or consumer-oriented instructions","Instructions in terms that are understood by the patient or consumer.","","","","","","","","","",,,,,"",,,,"ServiceRequest.patientInstruction",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -7007,6 +7089,21 @@ In most cases, Tasks will have an intent of ""order"".","","","","","","","","",
 "
 "tddui-task-action","Task.executionPeriod","Task.executionPeriod","","","",0,1,"","","Y","Period {[]} {[]}
 ","Start and end time of execution","Identifies the time action was first taken against the task (start) and/or the time final action was taken against the task prior to marking it as completed (end).","","","","","","","","","",,,,,"",,,,"Task.executionPeriod",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"tddui-task-action","Task.executionPeriod.id","Task.executionPeriod.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"tddui-task-action","Task.executionPeriod.extension","Task.executionPeriod.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"tddui-task-action","Task.executionPeriod.start","Task.executionPeriod.start","","","",0,1,"","","Y","dateTime {[]} {[]}
+","Starting time with inclusive boundary","The start of the period. The boundary is inclusive.","If the low element is missing, the meaning is that the low boundary is not known.","","","","","","","","",,,,,"",,,,"Period.start",0,1,"per-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"tddui-task-action","Task.executionPeriod.end","Task.executionPeriod.end","","","",0,1,"","","Y","dateTime {[]} {[]}
+","End time with inclusive boundary, if not ongoing","The end of the period. If the end of the period is missing, it means no end was known or planned at the time the instance was created. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time.","The high value includes any matching date/time. i.e. 2012-02-03T10:00:00 is in a period that has an end value of 2012-02-03.","","","If the end of the period is missing, it means that the period is ongoing","","","","","",,,,,"",,,,"Period.end",0,1,"per-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-action","Task.authoredOn","Task.authoredOn","","Created Date
 ","",0,1,"","","","dateTime {[]} {[]}
@@ -7423,6 +7520,21 @@ In most cases, Tasks will have an intent of ""order"".","","","","","","","","",
 "tddui-task-moyen-ressource","Task.executionPeriod","Task.executionPeriod","","","",0,1,"","","Y","Period {[]} {[]}
 ","Start and end time of execution","Identifies the time action was first taken against the task (start) and/or the time final action was taken against the task prior to marking it as completed (end).","","","","","","","","","",,,,,"",,,,"Task.executionPeriod",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
+"tddui-task-moyen-ressource","Task.executionPeriod.id","Task.executionPeriod.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"tddui-task-moyen-ressource","Task.executionPeriod.extension","Task.executionPeriod.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"tddui-task-moyen-ressource","Task.executionPeriod.start","Task.executionPeriod.start","","","",0,1,"","","Y","dateTime {[]} {[]}
+","Starting time with inclusive boundary","The start of the period. The boundary is inclusive.","If the low element is missing, the meaning is that the low boundary is not known.","","","","","","","","",,,,,"",,,,"Period.start",0,1,"per-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"tddui-task-moyen-ressource","Task.executionPeriod.end","Task.executionPeriod.end","","","",0,1,"","","Y","dateTime {[]} {[]}
+","End time with inclusive boundary, if not ongoing","The end of the period. If the end of the period is missing, it means no end was known or planned at the time the instance was created. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time.","The high value includes any matching date/time. i.e. 2012-02-03T10:00:00 is in a period that has an end value of 2012-02-03.","","","If the end of the period is missing, it means that the period is ongoing","","","","","",,,,,"",,,,"Period.end",0,1,"per-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
 "tddui-task-moyen-ressource","Task.authoredOn","Task.authoredOn","","Created Date
 ","",0,1,"","","","dateTime {[]} {[]}
 ","Task Creation Date","The date and time this task was created.","","Most often used along with lastUpdated to track duration of task to supporting monitoring and management.","","","","","","","",,,,,"",,,,"Task.authoredOn",0,1,"inv-1
@@ -7753,6 +7865,21 @@ In most cases, Tasks will have an intent of ""order"".","","","","","","","","",
 "
 "tddui-task-prestation","Task.executionPeriod","Task.executionPeriod","","","",0,1,"","","Y","Period {[]} {[]}
 ","Start and end time of execution","Identifies the time action was first taken against the task (start) and/or the time final action was taken against the task prior to marking it as completed (end).","","","","","","","","","",,,,,"",,,,"Task.executionPeriod",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"tddui-task-prestation","Task.executionPeriod.id","Task.executionPeriod.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"tddui-task-prestation","Task.executionPeriod.extension","Task.executionPeriod.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"tddui-task-prestation","Task.executionPeriod.start","Task.executionPeriod.start","","","",0,1,"","","Y","dateTime {[]} {[]}
+","Starting time with inclusive boundary","The start of the period. The boundary is inclusive.","If the low element is missing, the meaning is that the low boundary is not known.","","","","","","","","",,,,,"",,,,"Period.start",0,1,"per-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"tddui-task-prestation","Task.executionPeriod.end","Task.executionPeriod.end","","","",0,1,"","","Y","dateTime {[]} {[]}
+","End time with inclusive boundary, if not ongoing","The end of the period. If the end of the period is missing, it means no end was known or planned at the time the instance was created. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time.","The high value includes any matching date/time. i.e. 2012-02-03T10:00:00 is in a period that has an end value of 2012-02-03.","","","If the end of the period is missing, it means that the period is ongoing","","","","","",,,,,"",,,,"Period.end",0,1,"per-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-prestation","Task.authoredOn","Task.authoredOn","","Created Date
 ","",0,1,"","","","dateTime {[]} {[]}

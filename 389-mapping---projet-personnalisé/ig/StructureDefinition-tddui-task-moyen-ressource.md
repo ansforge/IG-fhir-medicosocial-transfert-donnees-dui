@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource | *Version*:2.1.0-ballot |
-| Active as of 2025-11-13 | *Computable Name*:TDDUITaskMoyenRessource |
+| Active as of 2025-11-17 | *Computable Name*:TDDUITaskMoyenRessource |
 
  
 Profil de la ressource Task permettant de représenter les moyens ou ressources utilisées dans le cadre du projet personnalisé. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-moyen-res
   "name" : "TDDUITaskMoyenRessource",
   "title" : "TDDUI Task MoyenRessource",
   "status" : "active",
-  "date" : "2025-11-13T10:43:15+00:00",
+  "date" : "2025-11-17T16:08:32+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -68,6 +68,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-moyen-res
   ],
   "fhirVersion" : "4.0.1",
   "mapping" : [
+    {
+      "identity" : "specmetier-to-TDDUITaskMoyenRessource",
+      "uri" : "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html",
+      "name" : "Modèle de contenu DUI"
+    },
     {
       "identity" : "workflow",
       "uri" : "http://hl7.org/fhir/workflow",
@@ -98,14 +103,26 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-moyen-res
     "element" : [
       {
         "id" : "Task",
-        "path" : "Task"
+        "path" : "Task",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUITaskMoyenRessource",
+            "map" : "MoyenRessource"
+          }
+        ]
       },
       {
         "id" : "Task.identifier",
         "path" : "Task.identifier",
         "short" : "Identifiant du moyen ou de la ressource",
         "min" : 1,
-        "max" : "1"
+        "max" : "1",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUITaskMoyenRessource",
+            "map" : "identifiantMoyenRessource"
+          }
+        ]
       },
       {
         "id" : "Task.identifier.value",
@@ -129,6 +146,12 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-moyen-res
               "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-perso"
             ]
           }
+        ],
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUITaskMoyenRessource",
+            "map" : "ProjetPersonnalise"
+          }
         ]
       },
       {
@@ -141,6 +164,52 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-moyen-res
             "targetProfile" : [
               "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"
             ]
+          }
+        ],
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUITaskMoyenRessource",
+            "map" : "Action"
+          }
+        ]
+      },
+      {
+        "id" : "Task.code",
+        "path" : "Task.code",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUITaskMoyenRessource",
+            "map" : "typeMoyenRessource"
+          }
+        ]
+      },
+      {
+        "id" : "Task.description",
+        "path" : "Task.description",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUITaskMoyenRessource",
+            "map" : "descriptionMoyenRessource"
+          }
+        ]
+      },
+      {
+        "id" : "Task.executionPeriod.start",
+        "path" : "Task.executionPeriod.start",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUITaskMoyenRessource",
+            "map" : "dateDebutMoyenRessource"
+          }
+        ]
+      },
+      {
+        "id" : "Task.executionPeriod.end",
+        "path" : "Task.executionPeriod.end",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUITaskMoyenRessource",
+            "map" : "dateFinMoyenRessource"
           }
         ]
       },
@@ -164,7 +233,13 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-moyen-res
         "sliceName" : "titre",
         "short" : "Titre du moyen ou de la ressource",
         "min" : 1,
-        "max" : "1"
+        "max" : "1",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUITaskMoyenRessource",
+            "map" : "titreMoyenRessource"
+          }
+        ]
       },
       {
         "id" : "Task.input:titre.type",
@@ -193,7 +268,13 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-moyen-res
         "sliceName" : "evaluation",
         "short" : "Evaluation structurée",
         "min" : 0,
-        "max" : "1"
+        "max" : "1",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUITaskMoyenRessource",
+            "map" : "evaluationMoyenRessource"
+          }
+        ]
       },
       {
         "id" : "Task.input:evaluation.type",
@@ -225,7 +306,13 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-moyen-res
         "sliceName" : "pieceJointe",
         "short" : "Pièce jointe associée",
         "min" : 0,
-        "max" : "*"
+        "max" : "*",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUITaskMoyenRessource",
+            "map" : "pieceJointeMoyenRessource"
+          }
+        ]
       },
       {
         "id" : "Task.input:pieceJointe.type",
@@ -257,7 +344,13 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-moyen-res
         "sliceName" : "evaluationNonStructuree",
         "short" : "EValuation non structurée",
         "min" : 0,
-        "max" : "1"
+        "max" : "1",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUITaskMoyenRessource",
+            "map" : "evaluationNonStructureeMoyenRessource"
+          }
+        ]
       },
       {
         "id" : "Task.input:evaluationNonStructuree.type",

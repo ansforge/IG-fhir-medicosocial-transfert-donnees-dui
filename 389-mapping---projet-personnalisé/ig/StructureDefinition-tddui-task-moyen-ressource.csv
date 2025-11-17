@@ -1,7 +1,7 @@
-"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: Workflow Pattern","Mapping: RIM Mapping","Mapping: FiveWs Pattern Mapping","Mapping: HL7 v2 Mapping"
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: Modèle de contenu DUI","Mapping: Workflow Pattern","Mapping: RIM Mapping","Mapping: FiveWs Pattern Mapping","Mapping: HL7 v2 Mapping"
 "Task","Task","","","",0,*,"","","","null {[]} {[]}
 ","A task to be performed","A task to be performed.","","","","","","","","","",,,,,"",,,,"Task",0,*,"","dom-2:If the resource is contained in another resource, it SHALL NOT contain nested Resources {contained.contained.empty()}
-dom-3:If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource {contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()}dom-4:If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated {contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()}dom-5:If a resource is contained in another resource, it SHALL NOT have a security label {contained.meta.security.empty()}dom-6:A resource should have narrative for robust management {text.`div`.exists()}inv-1:Last modified date must be greater than or equal to authored-on date. {lastModified.exists().not() or authoredOn.exists().not() or lastModified >= authoredOn}","Request, Event","Entity. Role, or Act","ControlAct[moodCode=INT]"
+dom-3:If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource {contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()}dom-4:If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated {contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()}dom-5:If a resource is contained in another resource, it SHALL NOT have a security label {contained.meta.security.empty()}dom-6:A resource should have narrative for robust management {text.`div`.exists()}inv-1:Last modified date must be greater than or equal to authored-on date. {lastModified.exists().not() or authoredOn.exists().not() or lastModified >= authoredOn}","MoyenRessource","Request, Event","Entity. Role, or Act","ControlAct[moodCode=INT]"
 "Task.id","Task.id","","","",0,1,"","","Y","id {[]} {[]}
 ","Logical id of this artifact","The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.","The only time that a resource does not have an id is when it is being submitted to the server using a create operation.","","","","","","","","",,,,,"",,,,"Resource.id",0,1,"",""
 "Task.meta","Task.meta","","","",0,1,"","","Y","Meta {[]} {[]}
@@ -32,7 +32,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
 "Task.identifier","Task.identifier","","","",1,1,"","","","Identifier {[]} {[]}
 ","Identifiant du moyen ou de la ressource","The business identifier for this task.","","","","","","","","","",,,,,"",,,,"Task.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","Request.identifier, Event.identifier",".id","FiveWs.identifier"
+","identifiantMoyenRessource","Request.identifier, Event.identifier",".id","FiveWs.identifier"
 "Task.identifier.id","Task.identifier.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Task.identifier.extension","Task.identifier.extension","","extensions
@@ -66,13 +66,13 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Event.instantiatesUrl",".outboundRelationship[typeCode=DEFN].target"
 "Task.basedOn","Task.basedOn","","","",1,1,"","","Y","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-perso]]}
 ","Request fulfilled by this task","BasedOn refers to a higher-level authorization that triggered the creation of the task.  It references a ""request"" resource such as a ServiceRequest, MedicationRequest, ServiceRequest, CarePlan, etc. which is distinct from the ""request"" resource the task is seeking to fulfill.  This latter resource is referenced by FocusOn.  For example, based on a ServiceRequest (= BasedOn), a task is created to fulfill a procedureRequest ( = FocusOn ) to collect a specimen from a patient.","","","","","","","","","",,,,,"",,,,"Task.basedOn",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","Request.basedOn, Event.basedOn",".outboundRelationship[typeCode=FLFS].target[moodCode=INT]"
+","ProjetPersonnalise","Request.basedOn, Event.basedOn",".outboundRelationship[typeCode=FLFS].target[moodCode=INT]"
 "Task.groupIdentifier","Task.groupIdentifier","","","",0,1,"","","Y","Identifier {[]} {[]}
 ","Requisition or grouper id","An identifier that links together multiple tasks and other requests that were created in the same context.","","Billing and/or reporting can be linked to whether multiple requests were created as a single unit.","","","","","","","",,,,,"",,,,"Task.groupIdentifier",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.groupIdentifier",".inboundRelationship[typeCode=COMP].source[moodCode=INT].id"
 "Task.partOf","Task.partOf","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action]]}
 ","Composite task","Task that this particular task is part of.","This should usually be 0..1.","Allows tasks to be broken down into sub-steps (and this division can occur independent of the original task).","","","","","","","",,,,,"",,,,"Task.partOf",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","Event.partOf",".inboundRelationship[typeCode=COMP].source[moodCode=INT]"
+","Action","Event.partOf",".inboundRelationship[typeCode=COMP].source[moodCode=INT]"
 "Task.status","Task.status","","","",1,1,"","Y","Y","code {[]} {[]}
 ","draft | requested | received | accepted | +","The current status of the task.","","These states enable coordination of task status with off-the-shelf workflow solutions that support automation of tasks.","","","","","","","",,"required","The current status of the task.","http://hl7.org/fhir/ValueSet/task-status|4.0.1","",,,,"Task.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.status, Event.status",".statusCode","FiveWs.status"
@@ -92,10 +92,10 @@ In most cases, Tasks will have an intent of ""order"".","","","","","","","","",
 ","Request.priority",".priorityCode","FiveWs.grade"
 "Task.code","Task.code","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
 ","Task Type","A name or code (or both) briefly describing what the task involves.","The title (eg ""My Tasks"", ""Outstanding Tasks for Patient X"") should go into the code.","","","","","","","","",,"example","Codes to identify what the task involves.  These will typically be specific to a particular workflow.","http://hl7.org/fhir/ValueSet/task-code|4.0.1","",,,,"Task.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","Request.code, Event.code",".code","FiveWs.what[x]"
+","typeMoyenRessource","Request.code, Event.code",".code","FiveWs.what[x]"
 "Task.description","Task.description","","","",0,1,"","","Y","string {[]} {[]}
 ","Human-readable explanation of task","A free-text description of what is to be performed.","","","","","","","","","",,,,,"",,,,"Task.description",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-",".text"
+","descriptionMoyenRessource",".text"
 "Task.focus","Task.focus","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource|4.0.1]]}
 ","What task is acting on","The request being actioned or the resource being manipulated by this task.","If multiple resources need to be manipulated, use sub-tasks.  (This ensures that status can be tracked independently for each referenced resource.).","Used to identify the thing to be done.","","","","","","","",,,,,"",,,,"Task.focus",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".outboundRelationship[typeCode=SUBJ].target","FiveWs.what[x]"
@@ -109,6 +109,21 @@ In most cases, Tasks will have an intent of ""order"".","","","","","","","","",
 "Task.executionPeriod","Task.executionPeriod","","","",0,1,"","","Y","Period {[]} {[]}
 ","Start and end time of execution","Identifies the time action was first taken against the task (start) and/or the time final action was taken against the task prior to marking it as completed (end).","","","","","","","","","",,,,,"",,,,"Task.executionPeriod",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.occurrence[x]",".effectiveTime","FiveWs.done[x]"
+"Task.executionPeriod.id","Task.executionPeriod.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Task.executionPeriod.extension","Task.executionPeriod.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"Task.executionPeriod.start","Task.executionPeriod.start","","","",0,1,"","","Y","dateTime {[]} {[]}
+","Starting time with inclusive boundary","The start of the period. The boundary is inclusive.","If the low element is missing, the meaning is that the low boundary is not known.","","","","","","","","",,,,,"",,,,"Period.start",0,1,"per-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","dateDebutMoyenRessource","./low","DR.1"
+"Task.executionPeriod.end","Task.executionPeriod.end","","","",0,1,"","","Y","dateTime {[]} {[]}
+","End time with inclusive boundary, if not ongoing","The end of the period. If the end of the period is missing, it means no end was known or planned at the time the instance was created. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time.","The high value includes any matching date/time. i.e. 2012-02-03T10:00:00 is in a period that has an end value of 2012-02-03.","","","If the end of the period is missing, it means that the period is ongoing","","","","","",,,,,"",,,,"Period.end",0,1,"per-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","dateFinMoyenRessource","./high","DR.2"
 "Task.authoredOn","Task.authoredOn","","Created Date
 ","",0,1,"","","","dateTime {[]} {[]}
 ","Task Creation Date","The date and time this task was created.","","Most often used along with lastUpdated to track duration of task to supporting monitoring and management.","","","","","","","",,,,,"",,,,"Task.authoredOn",0,1,"inv-1
@@ -199,7 +214,7 @@ boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[
 "Task.input:titre","Task.input","titre","Supporting Information
 ","",1,1,"","","","BackboneElement {[]} {[]}
 ","Titre du moyen ou de la ressource","Additional information that may be needed in the execution of the task.","","Resources and data used to perform the task.  This data is used in the business logic of task execution, and is stored separately because it varies between workflows.","","","","","","","",,,,,"",,,,"Task.input",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","???"
+","titreMoyenRessource","???"
 "Task.input:titre.id","Task.input.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Task.input:titre.extension","Task.input.extension","","extensions
@@ -227,7 +242,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Task.input:evaluation","Task.input","evaluation","Supporting Information
 ","",0,1,"","","","BackboneElement {[]} {[]}
 ","Evaluation structurée","Additional information that may be needed in the execution of the task.","","Resources and data used to perform the task.  This data is used in the business logic of task execution, and is stored separately because it varies between workflows.","","","","","","","",,,,,"",,,,"Task.input",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","???"
+","evaluationMoyenRessource","???"
 "Task.input:evaluation.id","Task.input.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Task.input:evaluation.extension","Task.input.extension","","extensions
@@ -255,7 +270,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Task.input:pieceJointe","Task.input","pieceJointe","Supporting Information
 ","",0,*,"","","","BackboneElement {[]} {[]}
 ","Pièce jointe associée","Additional information that may be needed in the execution of the task.","","Resources and data used to perform the task.  This data is used in the business logic of task execution, and is stored separately because it varies between workflows.","","","","","","","",,,,,"",,,,"Task.input",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","???"
+","pieceJointeMoyenRessource","???"
 "Task.input:pieceJointe.id","Task.input.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Task.input:pieceJointe.extension","Task.input.extension","","extensions
@@ -283,7 +298,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Task.input:evaluationNonStructuree","Task.input","evaluationNonStructuree","Supporting Information
 ","",0,1,"","","","BackboneElement {[]} {[]}
 ","EValuation non structurée","Additional information that may be needed in the execution of the task.","","Resources and data used to perform the task.  This data is used in the business logic of task execution, and is stored separately because it varies between workflows.","","","","","","","",,,,,"",,,,"Task.input",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","???"
+","evaluationNonStructureeMoyenRessource","???"
 "Task.input:evaluationNonStructuree.id","Task.input.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Task.input:evaluationNonStructuree.extension","Task.input.extension","","extensions

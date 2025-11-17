@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin | *Version*:2.1.0-ballot |
-| Active as of 2025-11-13 | *Computable Name*:TDDUIServiceRequestBesoin |
+| Active as of 2025-11-17 | *Computable Name*:TDDUIServiceRequestBesoin |
 
  
 Profil de la ressource TDDUIServiceRequestBesoin permettant de représenter les besoins de l'usager. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-service-reques
   "name" : "TDDUIServiceRequestBesoin",
   "title" : "TDDUI ServiceRequest Besoin",
   "status" : "active",
-  "date" : "2025-11-13T10:43:15+00:00",
+  "date" : "2025-11-17T16:08:32+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -68,6 +68,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-service-reques
   ],
   "fhirVersion" : "4.0.1",
   "mapping" : [
+    {
+      "identity" : "specmetier-to-TDDUIServiceRequestBesoin",
+      "uri" : "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html",
+      "name" : "Modèle de contenu DUI"
+    },
     {
       "identity" : "workflow",
       "uri" : "http://hl7.org/fhir/workflow",
@@ -103,7 +108,13 @@ Other representations of profile: [CSV](StructureDefinition-tddui-service-reques
     "element" : [
       {
         "id" : "ServiceRequest",
-        "path" : "ServiceRequest"
+        "path" : "ServiceRequest",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIServiceRequestBesoin",
+            "map" : "Besoin"
+          }
+        ]
       },
       {
         "id" : "ServiceRequest.extension",
@@ -132,6 +143,12 @@ Other representations of profile: [CSV](StructureDefinition-tddui-service-reques
               "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment"
             ]
           }
+        ],
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIServiceRequestBesoin",
+            "map" : "pieceJointeBesoin"
+          }
         ]
       },
       {
@@ -139,7 +156,13 @@ Other representations of profile: [CSV](StructureDefinition-tddui-service-reques
         "path" : "ServiceRequest.identifier",
         "short" : "Identifiant du besoin",
         "min" : 1,
-        "max" : "1"
+        "max" : "1",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIServiceRequestBesoin",
+            "map" : "identifiantBesoin"
+          }
+        ]
       },
       {
         "id" : "ServiceRequest.identifier.value",
@@ -163,6 +186,12 @@ Other representations of profile: [CSV](StructureDefinition-tddui-service-reques
               "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-perso"
             ]
           }
+        ],
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIServiceRequestBesoin",
+            "map" : "ProjetPersonnalise"
+          }
         ]
       },
       {
@@ -172,12 +201,38 @@ Other representations of profile: [CSV](StructureDefinition-tddui-service-reques
         "binding" : {
           "strength" : "required",
           "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J285-Besoins_SERAFIN/FHIR/JDV-J285-Besoins-SERAFIN"
-        }
+        },
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIServiceRequestBesoin",
+            "map" : "typeBesoin"
+          }
+        ]
       },
       {
         "id" : "ServiceRequest.code",
         "path" : "ServiceRequest.code",
         "min" : 1
+      },
+      {
+        "id" : "ServiceRequest.code.text",
+        "path" : "ServiceRequest.code.text",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIServiceRequestBesoin",
+            "map" : "descriptionBesoin"
+          }
+        ]
+      },
+      {
+        "id" : "ServiceRequest.orderDetail.text",
+        "path" : "ServiceRequest.orderDetail.text",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIServiceRequestBesoin",
+            "map" : "analyseProfessionnelBesoin"
+          }
+        ]
       },
       {
         "id" : "ServiceRequest.subject",
@@ -189,6 +244,16 @@ Other representations of profile: [CSV](StructureDefinition-tddui-service-reques
               "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient",
               "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"
             ]
+          }
+        ]
+      },
+      {
+        "id" : "ServiceRequest.note.text",
+        "path" : "ServiceRequest.note.text",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIServiceRequestBesoin",
+            "map" : "commentaireBesoin"
           }
         ]
       }

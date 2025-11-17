@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-meal | *Version*:2.1.0-ballot |
-| Active as of 2025-11-13 | *Computable Name*:TDDUIMeal |
+| Active as of 2025-11-17 | *Computable Name*:TDDUIMeal |
 
 Repas du professionnel prévu dans le cadre de l'événement.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-meal.csv), [Ex
   "name" : "TDDUIMeal",
   "title" : "Repas",
   "status" : "active",
-  "date" : "2025-11-13T10:43:15+00:00",
+  "date" : "2025-11-17T16:08:32+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

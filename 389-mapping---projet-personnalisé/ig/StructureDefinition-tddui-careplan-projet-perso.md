@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-perso | *Version*:2.1.0-ballot |
-| Active as of 2025-11-13 | *Computable Name*:TDDUICarePlanProjetPerso |
+| Active as of 2025-11-17 | *Computable Name*:TDDUICarePlanProjetPerso |
 
  
 Profil de la ressource TDDUICarePlan permettant de représenter le projet personnel de l'usager. 
 
 **Usages:**
 
-* Refer to this Profile: [Lien vers le projet personnel](StructureDefinition-tddui-careplan-reference.md), [TDDUI ServiceRequest Besoin](StructureDefinition-tddui-service-request-besoin.md), [TDDUI Task Action](StructureDefinition-tddui-task-action.md), [TDDUI Task MoyenRessource](StructureDefinition-tddui-task-moyen-ressource.md) and [TDDUI Task Action](StructureDefinition-tddui-task-prestation.md)
+* Refer to this Profile: [Lien vers le projet personnel](StructureDefinition-tddui-careplan-reference.md), [TDDUI ServiceRequest Besoin](StructureDefinition-tddui-service-request-besoin.md), [TDDUI Task Action](StructureDefinition-tddui-task-action.md), [TDDUI Task MoyenRessource](StructureDefinition-tddui-task-moyen-ressource.md) and [TDDUI Task Prestation](StructureDefinition-tddui-task-prestation.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-careplan-projet-perso)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
   "name" : "TDDUICarePlanProjetPerso",
   "title" : "TDDUI CarePlan Projet Perso",
   "status" : "active",
-  "date" : "2025-11-13T10:43:15+00:00",
+  "date" : "2025-11-17T16:08:32+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
