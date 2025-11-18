@@ -35,7 +35,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 | :--- | :--- |
 | [TDDUI Bundle](StructureDefinition-tddui-bundle.md) | Profil générique créé pour transmettre des données d'un logiciel DUI. |
 | [TDDUI CarePlan Projet Perso](StructureDefinition-tddui-careplan-projet-perso.md) | Profil de la ressource TDDUICarePlan permettant de représenter le projet personnel de l'usager. |
-| [TDDUI Consent](StructureDefinition-tddui-consent.md) | Profil de la ressource TDDUIConsent permettant de représenter l'accord de l'usager et de la structure. |
+| [TDDUI Consent](StructureDefinition-tddui-consent-accord.md) | Profil de la ressource TDDUIConsent permettant de représenter l'accord de l'usager et de la structure. |
 | [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md) | Profil de la ressource SimplifiedPublishDocumentReference pour les pièces jointes liées à l’événement et à l'évaluation. |
 | [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md) | Profil de la ressource Encounter permettant de regrouper les évènements liés à la prise en charge de l’usager dans une structure ESSMS. |
 | [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md) | Profil de la ressource Encounter permettant de regrouper les informations relatives au séjour d'un usager dans une structure ESSMS |
@@ -128,7 +128,9 @@ These are example instances that show what data produced and consumed by systems
 
 | | |
 | :--- | :--- |
+| [Projet personnalisé de Mme Dupont](CarePlan-tddui-careplan-projet-perso-example.md) | Exemple d'un projet personnalisé |
 | [TDDUIBundleExample](Bundle-ExampleTDDUIBundle.md) | Exemple de bundle conforme au profil TDDUIBundle |
+| [tddui-consent-accord-example](Consent-tddui-consent-accord-example.md) | Exemple d'un accord de la structure |
 | [tddui-encounter-evenement-example](Encounter-tddui-encounter-evenement-example.md) | Exemple d'un évènement |
 | [tddui-encounter-sejour-example](Encounter-tddui-encounter-sejour-example.md) | Exemple d'un séjour en ESSMS |
 | [tddui-event-location-example](Location-tddui-event-location-example.md) | Lieu de l'évènement |

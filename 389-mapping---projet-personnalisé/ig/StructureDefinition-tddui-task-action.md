@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action | *Version*:2.1.0-ballot |
-| Active as of 2025-11-17 | *Computable Name*:TDDUITaskAction |
+| Active as of 2025-11-18 | *Computable Name*:TDDUITaskAction |
 
  
 Profil de la ressource Task permettant de représenter les actions réalisés dans le cadre du projet personnalisé. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-action.cs
   "name" : "TDDUITaskAction",
   "title" : "TDDUI Task Action",
   "status" : "active",
-  "date" : "2025-11-17T16:08:32+00:00",
+  "date" : "2025-11-18T10:18:37+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

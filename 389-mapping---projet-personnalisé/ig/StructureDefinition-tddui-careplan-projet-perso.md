@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-perso | *Version*:2.1.0-ballot |
-| Active as of 2025-11-17 | *Computable Name*:TDDUICarePlanProjetPerso |
+| Active as of 2025-11-18 | *Computable Name*:TDDUICarePlanProjetPerso |
 
  
 Profil de la ressource TDDUICarePlan permettant de représenter le projet personnel de l'usager. 
@@ -17,6 +17,7 @@ Profil de la ressource TDDUICarePlan permettant de représenter le projet person
 **Usages:**
 
 * Refer to this Profile: [Lien vers le projet personnel](StructureDefinition-tddui-careplan-reference.md), [TDDUI ServiceRequest Besoin](StructureDefinition-tddui-service-request-besoin.md), [TDDUI Task Action](StructureDefinition-tddui-task-action.md), [TDDUI Task MoyenRessource](StructureDefinition-tddui-task-moyen-ressource.md) and [TDDUI Task Prestation](StructureDefinition-tddui-task-prestation.md)
+* Examples for this Profile: [CarePlan/tddui-careplan-projet-perso-example](CarePlan-tddui-careplan-projet-perso-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-careplan-projet-perso)
 
@@ -41,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
   "name" : "TDDUICarePlanProjetPerso",
   "title" : "TDDUI CarePlan Projet Perso",
   "status" : "active",
-  "date" : "2025-11-17T16:08:32+00:00",
+  "date" : "2025-11-18T10:18:37+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -198,7 +199,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord"
             ]
           }
         ]
@@ -207,7 +208,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
         "id" : "CarePlan.supportingInfo:usager.display",
         "path" : "CarePlan.supportingInfo.display",
         "min" : 1,
-        "patternString" : "Consentement de l'usager"
+        "patternString" : "Consentement usager"
       },
       {
         "id" : "CarePlan.supportingInfo:structure",
@@ -220,7 +221,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord"
             ]
           }
         ]
@@ -229,7 +230,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
         "id" : "CarePlan.supportingInfo:structure.display",
         "path" : "CarePlan.supportingInfo.display",
         "min" : 1,
-        "patternString" : "Consentement de la structure"
+        "patternString" : "Consentement structure"
       },
       {
         "id" : "CarePlan.note",

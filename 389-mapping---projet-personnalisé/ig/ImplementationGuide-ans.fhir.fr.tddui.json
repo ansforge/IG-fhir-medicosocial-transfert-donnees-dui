@@ -10,7 +10,7 @@
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2025-11-17T16:08:32+00:00",
+  "date" : "2025-11-18T10:18:37+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -863,6 +863,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CarePlan"
+      }],
+      "reference" : {
+        "reference" : "CarePlan/tddui-careplan-projet-perso-example"
+      },
+      "name" : "Projet personnalisé de Mme Dupont",
+      "description" : "Exemple d'un projet personnalisé",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-perso"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -938,7 +950,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/tddui-consent"
+        "reference" : "StructureDefinition/tddui-consent-accord"
       },
       "name" : "TDDUI Consent",
       "description" : "Profil de la ressource TDDUIConsent permettant de représenter l'accord de l'usager et de la structure.",
@@ -1267,6 +1279,18 @@
       "name" : "TDDUI Task Transport Usager",
       "description" : "Profil de la ressource TDDUITaskTransport permettant de représenter le transport de l'usager.",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Consent"
+      }],
+      "reference" : {
+        "reference" : "Consent/tddui-consent-accord-example"
+      },
+      "name" : "tddui-consent-accord-example",
+      "description" : "Exemple d'un accord de la structure",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord"
     },
     {
       "extension" : [{

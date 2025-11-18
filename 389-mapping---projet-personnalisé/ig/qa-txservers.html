@@ -12,7 +12,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Terminology Server Report for TDDUI</h1>
- <p>Generated Mon Nov 17 16:12:32 UTC 2025, FHIR version 4.0.1 for ans.fhir.fr.tddui#2.1.0-ballot (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/tddui">https://interop.esante.gouv.fr/ig/fhir/tddui</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/tddui/history.html">history</a>))</p>
+ <p>Generated Tue Nov 18 10:22:38 UTC 2025, FHIR version 4.0.1 for ans.fhir.fr.tddui#2.1.0-ballot (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/tddui">https://interop.esante.gouv.fr/ig/fhir/tddui</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/tddui/history.html">history</a>))</p>
 <p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
 <h2>Terminology Parameters</h2>
 <ul>
@@ -64,7 +64,7 @@
   <tr>
     <td>Found candidate server https://tx.fhir.org/r4</td>
     <td>https://tx.fhir.org/r4</td>
-    <td>urn:uuid:3a4d70e0-2fa7-494d-bcae-387b4a072185</td>
+    <td>urn:uuid:66da8c45-0db0-4640-80c1-a61c898b88eb</td>
     <td>urn:ietf:bcp:13</td>
     <td>auth = , candidates=https://tx.fhir.org/r4</td>
   </tr>
@@ -78,7 +78,7 @@
   <tr>
     <td>Found candidate server https://tx.fhir.org/r4</td>
     <td>https://tx.fhir.org/r4</td>
-    <td>urn:uuid:dd17c5f0-f76b-4a0f-873d-cf99c405f93c</td>
+    <td>urn:uuid:7a4e60d0-99da-4916-8cef-5cbb52fbf737</td>
     <td>urn:ietf:bcp:13</td>
     <td>auth = , candidates=https://tx.fhir.org/r4</td>
   </tr>
@@ -309,7 +309,7 @@
   <tr>
     <td>Found candidate server https://tx.fhir.org/r4</td>
     <td>https://tx.fhir.org/r4</td>
-    <td>urn:uuid:ed1e3d07-58c3-45c2-9634-4c879cad3c03</td>
+    <td>urn:uuid:883418e6-6a1c-4bf2-ae81-875a76aa7de4</td>
     <td>urn:iso:std:iso:4217</td>
     <td>auth = , candidates=https://tx.fhir.org/r4</td>
   </tr>
@@ -319,6 +319,20 @@
     <td>http://hl7.org/fhir/ValueSet/currencies|4.0.1</td>
     <td>urn:iso:std:iso:4217</td>
     <td>auth = , candidates=https://tx.fhir.org/r4</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4</td>
+  </tr>
+  <tr>
+    <td>Found partially authoritative server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>http://hl7.org/fhir/ValueSet/consent-category|4.0.1</td>
+    <td>[http://terminology.hl7.org/CodeSystem/v3-ActCode, http://loinc.org, http://terminology.hl7.org/CodeSystem/consentcategorycodes]</td>
+    <td>[auth = http://tx.fhir.org/r4, candidates=https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4, auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4, auth = http://tx.fhir.org/r4, candidates=https://tx.ontoserver.csiro.au/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4]</td>
   </tr>
   <tr>
     <td>Use primary server for http://unstats.un.org/unsd/methods/m49/m49.htm</td>
@@ -409,7 +423,7 @@
 </table>
 <h2>Primary Server: https://tx.fhir.org/r4</h2>
 <a href="https://tx.fhir.org/r4"></a>
-<p>Use Count: 37. Code Systems used: </p>
+<p>Use Count: 38. Code Systems used: </p>
 <table class="grid">
   <tr>
     <th>
@@ -431,6 +445,30 @@
     <td>22</td>
     <td>
       <a href="http://terminology.hl7.org/6.5.0/CodeSystem-ICF.html">International Classification of Functioning, Disability and Health</a>
+    </td>
+  </tr>
+  <tr>
+    <td>http://loinc.org</td>
+    <td>0</td>
+    <td>2</td>
+    <td>
+      <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-loinc.html">Logical Observation Identifiers, Names and Codes (LOINC)</a>
+    </td>
+  </tr>
+  <tr>
+    <td>http://terminology.hl7.org/CodeSystem/consentcategorycodes</td>
+    <td>0</td>
+    <td>1</td>
+    <td>
+      <a href="http://terminology.hl7.org/7.0.0/CodeSystem-consentcategorycodes.html">Consent Category Codes</a>
+    </td>
+  </tr>
+  <tr>
+    <td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td>
+    <td>0</td>
+    <td>1</td>
+    <td>
+      <a href="http://terminology.hl7.org/7.0.0/CodeSystem-v3-ActCode.html">ActCode</a>
     </td>
   </tr>
   <tr>

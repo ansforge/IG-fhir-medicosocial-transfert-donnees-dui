@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui | *Version*:2.1.0-ballot |
-| Active as of 2025-11-17 | *Computable Name*:TDDUI |
+| Active as of 2025-11-18 | *Computable Name*:TDDUI |
 
  **Brief description of this Implementation Guide**
  The Digital User File (DUI) centralizes all information concerning the person being cared for in social and medico-social facilities and services. The aim of this implementation guide is to define the specifications for DUI data transfer. 
@@ -74,7 +74,7 @@ Les ressources profilées dans le cadre de ce guide d'implémentation sont les s
 | Profil parent | Profil | Description |
 | [Bundle](http://hl7.org/fhir/StructureDefinition/Bundle) | [TDDUIBundle](StructureDefinition-tddui-bundle.md) | Profil générique créé pour transmettre des données d'un logiciel DUI. |
 | [CarePlan](http://hl7.org/fhir/StructureDefinition/CarePlan) | [TDDUICarePlanProjetPerso](StructureDefinition-tddui-careplan-projet-perso.md) | Profil de la ressource TDDUICarePlan permettant de représenter le projet personnel de l'usager. |
-| [Consent](http://hl7.org/fhir/StructureDefinition/Consent) | [TDDUIConsent](StructureDefinition-tddui-consent.md) | Profil de la ressource TDDUIConsent permettant de représenter l'accord de l'usager et de la structure. |
+| [Consent](http://hl7.org/fhir/StructureDefinition/Consent) | [TDDUIConsentAccord](StructureDefinition-tddui-consent-accord.md) | Profil de la ressource TDDUIConsent permettant de représenter l'accord de l'usager et de la structure. |
 | [MHD DocumentReference for Simplified Publish](https://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.SimplifiedPublish.DocumentReference) | [TDDUIDocumentReference](StructureDefinition-tddui-document-reference.md) | Profil de la ressource SimplifiedPublishDocumentReference pour les pièces jointes liées à l’événement et à l'évaluation. |
 | [Encounter](http://hl7.org/fhir/StructureDefinition/Encounter) | [TDDUIEncounterEvenement](StructureDefinition-tddui-encounter-evenement.md) | Profil de la ressource Encounter permettant de regrouper les évènements liés à la prise en charge de l’usager dans une structure ESSMS. |
 | [Encounter](http://hl7.org/fhir/StructureDefinition/Encounter) | [TDDUIEncounterSejour](StructureDefinition-tddui-encounter-sejour.md) | Profil de la ressource Encounter permettant de regrouper les informations relatives au séjour d'un usager dans une structure ESSMS |
@@ -139,7 +139,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2025-11-17T16:08:32+00:00",
+  "date" : "2025-11-18T10:18:37+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -1148,6 +1148,20 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CarePlan"
+          }
+        ],
+        "reference" : {
+          "reference" : "CarePlan/tddui-careplan-projet-perso-example"
+        },
+        "name" : "Projet personnalisé de Mme Dupont",
+        "description" : "Exemple d'un projet personnalisé",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-perso"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:extension"
           }
         ],
@@ -1236,7 +1250,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/tddui-consent"
+          "reference" : "StructureDefinition/tddui-consent-accord"
         },
         "name" : "TDDUI Consent",
         "description" : "Profil de la ressource TDDUIConsent permettant de représenter l'accord de l'usager et de la structure.",
@@ -1619,6 +1633,20 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "name" : "TDDUI Task Transport Usager",
         "description" : "Profil de la ressource TDDUITaskTransport permettant de représenter le transport de l'usager.",
         "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Consent"
+          }
+        ],
+        "reference" : {
+          "reference" : "Consent/tddui-consent-accord-example"
+        },
+        "name" : "tddui-consent-accord-example",
+        "description" : "Exemple d'un accord de la structure",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord"
       },
       {
         "extension" : [

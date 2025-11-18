@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent | *Version*:2.1.0-ballot |
-| Active as of 2025-11-17 | *Computable Name*:TDDUIConsent |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord | *Version*:2.1.0-ballot |
+| Active as of 2025-11-18 | *Computable Name*:TDDUIConsentAccord |
 
  
 Profil de la ressource TDDUIConsent permettant de représenter l'accord de l'usager et de la structure. 
@@ -17,8 +17,9 @@ Profil de la ressource TDDUIConsent permettant de représenter l'accord de l'usa
 **Usages:**
 
 * Refer to this Profile: [TDDUI CarePlan Projet Perso](StructureDefinition-tddui-careplan-projet-perso.md)
+* Examples for this Profile: [Consent/tddui-consent-accord-example](Consent-tddui-consent-accord-example.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-consent)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-consent-accord)
 
 ### Formal Views of Profile Content
 
@@ -26,7 +27,7 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
  
 
-Other representations of profile: [CSV](StructureDefinition-tddui-consent.csv), [Excel](StructureDefinition-tddui-consent.xlsx), [Schematron](StructureDefinition-tddui-consent.sch) 
+Other representations of profile: [CSV](StructureDefinition-tddui-consent-accord.csv), [Excel](StructureDefinition-tddui-consent-accord.xlsx), [Schematron](StructureDefinition-tddui-consent-accord.sch) 
 
 
 
@@ -35,13 +36,13 @@ Other representations of profile: [CSV](StructureDefinition-tddui-consent.csv), 
 ```json
 {
   "resourceType" : "StructureDefinition",
-  "id" : "tddui-consent",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent",
+  "id" : "tddui-consent-accord",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord",
   "version" : "2.1.0-ballot",
-  "name" : "TDDUIConsent",
+  "name" : "TDDUIConsentAccord",
   "title" : "TDDUI Consent",
   "status" : "active",
-  "date" : "2025-11-17T16:08:32+00:00",
+  "date" : "2025-11-18T10:18:37+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

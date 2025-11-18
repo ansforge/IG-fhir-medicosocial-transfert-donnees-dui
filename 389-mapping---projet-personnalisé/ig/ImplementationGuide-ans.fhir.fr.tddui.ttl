@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "TDDUI"] ; # 
   fhir:title [ fhir:v "Médicosocial - Transfert de données DUI"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-11-17T16:08:32+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-11-18T10:18:37+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -1755,6 +1755,28 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "CarePlan"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CarePlan/tddui-careplan-projet-perso-example> ;
+         fhir:reference [ fhir:v "CarePlan/tddui-careplan-projet-perso-example" ]
+       ] ;
+       fhir:name [ fhir:v "Projet personnalisé de Mme Dupont" ] ;
+       fhir:description [ fhir:v "Exemple d'un projet personnalisé" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-perso"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-perso>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "StructureDefinition:extension"
          ]
        ] ) ;
@@ -1885,8 +1907,8 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent> ;
-         fhir:reference [ fhir:v "StructureDefinition/tddui-consent" ]
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-consent-accord" ]
        ] ;
        fhir:name [ fhir:v "TDDUI Consent" ] ;
        fhir:description [ fhir:v "Profil de la ressource TDDUIConsent permettant de représenter l'accord de l'usager et de la structure." ] ;
@@ -2460,6 +2482,28 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Consent"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Consent/tddui-consent-accord-example> ;
+         fhir:reference [ fhir:v "Consent/tddui-consent-accord-example" ]
+       ] ;
+       fhir:name [ fhir:v "tddui-consent-accord-example" ] ;
+       fhir:description [ fhir:v "Exemple d'un accord de la structure" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord>
        ]
      ] [
        fhir:extension ( [

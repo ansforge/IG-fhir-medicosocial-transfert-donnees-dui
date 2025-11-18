@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif | *Version*:2.1.0-ballot |
-| Active as of 2025-11-17 | *Computable Name*:TDDUIGoalObjectif |
+| Active as of 2025-11-18 | *Computable Name*:TDDUIGoalObjectif |
 
  
 Profil de la ressource TDDUIGoalObjectif permettant de représenter les résultats à atteindre dans le cadre du projet personnalisé. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-objectif.
   "name" : "TDDUIGoalObjectif",
   "title" : "TDDUI Goal Objectif",
   "status" : "active",
-  "date" : "2025-11-17T16:08:32+00:00",
+  "date" : "2025-11-18T10:18:37+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -233,12 +233,32 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-objectif.
           "discriminator" : [
             {
               "type" : "pattern",
-              "path" : "$this"
+              "path" : "extension.where(url = 'http://hl7.org/fhir/StructureDefinition/goal-note-extension').valueCode"
             }
           ],
           "rules" : "open"
         },
         "min" : 1
+      },
+      {
+        "id" : "Goal.note.extension",
+        "path" : "Goal.note.extension",
+        "min" : 1
+      },
+      {
+        "id" : "Goal.note.extension:TDDUIGoalNoteExtension",
+        "path" : "Goal.note.extension",
+        "sliceName" : "TDDUIGoalNoteExtension",
+        "min" : 1,
+        "max" : "3",
+        "type" : [
+          {
+            "code" : "Extension",
+            "profile" : [
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-note"
+            ]
+          }
+        ]
       },
       {
         "id" : "Goal.note:titreObjectif",
@@ -247,11 +267,6 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-objectif.
         "short" : "Titre de l'objectif",
         "min" : 1,
         "max" : "1"
-      },
-      {
-        "id" : "Goal.note:titreObjectif.extension",
-        "path" : "Goal.note.extension",
-        "min" : 1
       },
       {
         "id" : "Goal.note:titreObjectif.extension:TDDUIGoalNoteExtension",
@@ -282,11 +297,6 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-objectif.
         "max" : "1"
       },
       {
-        "id" : "Goal.note:avisUsagerObjectif.extension",
-        "path" : "Goal.note.extension",
-        "min" : 1
-      },
-      {
         "id" : "Goal.note:avisUsagerObjectif.extension:TDDUIGoalNoteExtension",
         "path" : "Goal.note.extension",
         "sliceName" : "TDDUIGoalNoteExtension",
@@ -313,11 +323,6 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-objectif.
         "short" : "Stratégie de mise en œuvre de l'objectif",
         "min" : 0,
         "max" : "1"
-      },
-      {
-        "id" : "Goal.note:strategieMiseEnOeuvreObjectif.extension",
-        "path" : "Goal.note.extension",
-        "min" : 1
       },
       {
         "id" : "Goal.note:strategieMiseEnOeuvreObjectif.extension:TDDUIGoalNoteExtension",

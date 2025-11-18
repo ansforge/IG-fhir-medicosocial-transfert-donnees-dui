@@ -10,7 +10,7 @@
   <name value="TDDUI"/>
   <title value="Médicosocial - Transfert de données DUI"/>
   <status value="active"/>
-  <date value="2025-11-17T16:08:32+00:00"/>
+  <date value="2025-11-18T10:18:37+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -676,6 +676,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CarePlan"/>
+      </extension>
+      <reference>
+        <reference value="CarePlan/tddui-careplan-projet-perso-example"/>
+      </reference>
+      <name value="Projet personnalisé de Mme Dupont"/>
+      <description value="Exemple d'un projet personnalisé"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-perso"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -745,7 +756,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/tddui-consent"/>
+        <reference value="StructureDefinition/tddui-consent-accord"/>
       </reference>
       <name value="TDDUI Consent"/>
       <description value="Profil de la ressource TDDUIConsent permettant de représenter l'accord de l'usager et de la structure."/>
@@ -1047,6 +1058,17 @@
       <name value="TDDUI Task Transport Usager"/>
       <description value="Profil de la ressource TDDUITaskTransport permettant de représenter le transport de l'usager."/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Consent"/>
+      </extension>
+      <reference>
+        <reference value="Consent/tddui-consent-accord-example"/>
+      </reference>
+      <name value="tddui-consent-accord-example"/>
+      <description value="Exemple d'un accord de la structure"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
