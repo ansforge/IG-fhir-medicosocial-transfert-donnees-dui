@@ -3717,7 +3717,7 @@ Duration {[]} {[]}","Reach goal on or before","Indicates either the date or the 
 ","Issues addressed by this goal","The identified conditions and other health record elements that are intended to be addressed by the goal.","","Allows specific goals to explicitly linked to the concerns they're dealing with - makes the goal more understandable.","","","","","","","",,,,,"",,,,"Goal.addresses",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-goal-objectif","Goal.note","Goal.note","","","",1,*,"","","","Annotation {[]} {[]}
-","Comments about the goal","Any comments related to the goal.","May be used for progress notes, concerns or other related information that doesn't actually describe the goal itself.","There's a need to capture information about the goal that doesn't actually describe the goal.","","","","","","","",,,,,"","pattern:extension.where(url = 'http://hl7.org/fhir/StructureDefinition/goal-note-extension').valueCode}
+","Comments about the goal","Any comments related to the goal.","May be used for progress notes, concerns or other related information that doesn't actually describe the goal itself.","There's a need to capture information about the goal that doesn't actually describe the goal.","","","","","","","",,,,,"","pattern:extension('https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-note').value}
 ","",,"open","Goal.note",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-goal-objectif","Goal.note.id","Goal.note.id","","","",0,1,"","","","string {[]} {[]}

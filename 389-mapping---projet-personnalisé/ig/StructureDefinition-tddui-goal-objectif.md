@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-objectif.
   "name" : "TDDUIGoalObjectif",
   "title" : "TDDUI Goal Objectif",
   "status" : "active",
-  "date" : "2025-11-18T10:31:28+00:00",
+  "date" : "2025-11-18T14:30:08+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -234,7 +234,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-objectif.
           "discriminator" : [
             {
               "type" : "pattern",
-              "path" : "extension.where(url = 'http://hl7.org/fhir/StructureDefinition/goal-note-extension').valueCode"
+              "path" : "extension('https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-note').value"
             }
           ],
           "rules" : "open"

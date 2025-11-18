@@ -37,7 +37,7 @@ CodeSystem pour la définition des éléments spécifiques des input dans la res
   "title" : "InputTDDUITaskMoyenRessourceCodeSystem",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-11-18T10:31:28+00:00",
+  "date" : "2025-11-18T14:30:08+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

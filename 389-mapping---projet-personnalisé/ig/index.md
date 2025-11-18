@@ -139,7 +139,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2025-11-18T10:31:28+00:00",
+  "date" : "2025-11-18T14:30:08+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-note.csv)
   "name" : "TDDUIGoalNote",
   "title" : "TDDUI Goal Note",
   "status" : "active",
-  "date" : "2025-11-18T10:31:28+00:00",
+  "date" : "2025-11-18T14:30:08+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
