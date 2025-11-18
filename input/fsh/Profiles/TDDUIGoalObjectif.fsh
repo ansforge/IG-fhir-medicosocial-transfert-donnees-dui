@@ -22,22 +22,24 @@ Description: "Profil de la ressource TDDUIGoalObjectif permettant de représente
 
 * subject only Reference(TDDUIPatient or TDDUIPatientINS)
 
+* note.extension contains
+    TDDUIGoalNote named TDDUIGoalNoteExtension 1..3
 * note ^slicing.discriminator.type = #pattern
-* note ^slicing.discriminator.path = "$this"
+* note ^slicing.discriminator.path = "extension.where(url = 'http://hl7.org/fhir/StructureDefinition/goal-note-extension').valueCode"
 * note ^slicing.rules = #open
-
 * note contains
     titreObjectif 1..1 and
     avisUsagerObjectif 0..1 and
     strategieMiseEnOeuvreObjectif 0..1
 * note[titreObjectif] ^short = "Titre de l'objectif"
-* note[titreObjectif].extension contains TDDUIGoalNote named TDDUIGoalNoteExtension 1..1
-* note[titreObjectif].extension[TDDUIGoalNote].valueCode = #titreObjectif
+* note[titreObjectif].extension[TDDUIGoalNoteExtension] 1..1
+* note[titreObjectif].extension[TDDUIGoalNoteExtension].valueCode = #titreObjectif
 
 * note[avisUsagerObjectif] ^short = "Avis de l'usager sur l'objectif"
-* note[avisUsagerObjectif].extension contains TDDUIGoalNote named TDDUIGoalNoteExtension 1..1
-* note[avisUsagerObjectif].extension[TDDUIGoalNote].valueCode = #avisUsagerObjectif
+* note[avisUsagerObjectif].extension[TDDUIGoalNoteExtension] 1..1
+* note[avisUsagerObjectif].extension[TDDUIGoalNoteExtension].valueCode = #avisUsagerObjectif
 
 * note[strategieMiseEnOeuvreObjectif] ^short = "Stratégie de mise en œuvre de l'objectif"
-* note[strategieMiseEnOeuvreObjectif].extension contains TDDUIGoalNote named TDDUIGoalNoteExtension 1..1
-* note[strategieMiseEnOeuvreObjectif].extension[TDDUIGoalNote].valueCode = #strategieMiseEnOeuvreObjectif
+* note[strategieMiseEnOeuvreObjectif].extension[TDDUIGoalNoteExtension] 1..1
+* note[strategieMiseEnOeuvreObjectif].extension[TDDUIGoalNoteExtension].valueCode = #strategieMiseEnOeuvreObjectif
+ 

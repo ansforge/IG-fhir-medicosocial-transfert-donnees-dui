@@ -14,4 +14,4 @@ Description: "Exemple d'un projet personnalisé"
 * subject = Reference(tddui-patient-ins-example)
 
 * supportingInfo[structure] = Reference(tddui-consent-accord-example)
-* supportingInfo[structure].extension[TDDUICarePlanSupportingInfo].valueCode = #accordStructure
+* supportingInfo[structure].display = "Consentement structure"

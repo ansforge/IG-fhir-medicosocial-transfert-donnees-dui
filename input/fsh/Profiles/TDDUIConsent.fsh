@@ -1,6 +1,6 @@
-Profile: TDDUIConsent
+Profile: TDDUIConsentAccord
 Parent: Consent
-Id: tddui-consent
+Id: tddui-consent-accord
 Title: "TDDUI Consent"
 Description: "Profil de la ressource TDDUIConsent permettant de représenter l'accord de l'usager et de la structure." 
 

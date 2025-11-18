@@ -25,12 +25,12 @@ Description: "Profil de la ressource TDDUICarePlan permettant de représenter le
     usager 0..1 and
     structure 1..*
 
-* supportingInfo[usager] only Reference(TDDUIConsent)
-* supportingInfo[usager].display = "Consentement de l'usager"
+* supportingInfo[usager] only Reference(TDDUIConsentAccord)
+* supportingInfo[usager].display = "Consentement usager"
 * supportingInfo[usager] ^short = "Référence à l'accord de l'usager."
-* supportingInfo[structure] only Reference(TDDUIConsent)
+* supportingInfo[structure] only Reference(TDDUIConsentAccord)
 * supportingInfo[structure] ^short = "Référence à l'accord de la structure."
-* supportingInfo[structure].display = "Consentement de la structure"
+* supportingInfo[structure].display = "Consentement structure"
 
 * subject only Reference(TDDUIPatient or TDDUIPatientINS)
 
