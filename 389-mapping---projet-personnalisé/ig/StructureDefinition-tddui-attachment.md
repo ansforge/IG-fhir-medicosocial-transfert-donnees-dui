@@ -19,7 +19,7 @@ Pièces jointes liées à l’événement et à l'évaluation. L'extension réf�
 
 **Usages:**
 
-* Use this Extension: [TDDUI CarePlan Projet Perso](StructureDefinition-tddui-careplan-projet-perso.md), [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md), [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md) and [TDDUI ServiceRequest Besoin](StructureDefinition-tddui-service-request-besoin.md)
+* Use this Extension: [TDDUI CarePlan Projet Perso](StructureDefinition-tddui-careplan-projet-perso.md), [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md), [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md), [TDDUI ServiceRequest Besoin](StructureDefinition-tddui-service-request-besoin.md) and [TDDUI Task Bilan](StructureDefinition-tddui-task-bilan.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-attachment)
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-attachment.csv
   "name" : "TDDUIAttachment",
   "title" : "Pièce jointe",
   "status" : "active",
-  "date" : "2025-11-18T14:30:08+00:00",
+  "date" : "2025-11-18T15:24:05+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

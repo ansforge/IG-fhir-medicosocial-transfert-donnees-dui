@@ -16,7 +16,7 @@ Profil de la ressource TDDUICarePlan permettant de représenter le projet person
 
 **Usages:**
 
-* Refer to this Profile: [Lien vers le projet personnel](StructureDefinition-tddui-careplan-reference.md), [TDDUI ServiceRequest Besoin](StructureDefinition-tddui-service-request-besoin.md), [TDDUI Task Action](StructureDefinition-tddui-task-action.md), [TDDUI Task MoyenRessource](StructureDefinition-tddui-task-moyen-ressource.md) and [TDDUI Task Prestation](StructureDefinition-tddui-task-prestation.md)
+* Refer to this Profile: [Lien vers le projet personnalisé](StructureDefinition-tddui-careplan-reference.md), [TDDUI ServiceRequest Besoin](StructureDefinition-tddui-service-request-besoin.md), [TDDUI Task Action](StructureDefinition-tddui-task-action.md), [TDDUI Task Bilan](StructureDefinition-tddui-task-bilan.md)...Show 2 more,[TDDUI Task MoyenRessource](StructureDefinition-tddui-task-moyen-ressource.md)and[TDDUI Task Prestation](StructureDefinition-tddui-task-prestation.md)
 * Examples for this Profile: [CarePlan/tddui-careplan-projet-perso-example](CarePlan-tddui-careplan-projet-perso-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-careplan-projet-perso)
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
   "name" : "TDDUICarePlanProjetPerso",
   "title" : "TDDUI CarePlan Projet Perso",
   "status" : "active",
-  "date" : "2025-11-18T14:30:08+00:00",
+  "date" : "2025-11-18T15:24:05+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -69,6 +69,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
   ],
   "fhirVersion" : "4.0.1",
   "mapping" : [
+    {
+      "identity" : "specmetier-to-TDDUICarePlanProjetPerso",
+      "uri" : "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html",
+      "name" : "Modèle de contenu DUI"
+    },
     {
       "identity" : "workflow",
       "uri" : "http://hl7.org/fhir/workflow",
@@ -99,7 +104,13 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
     "element" : [
       {
         "id" : "CarePlan",
-        "path" : "CarePlan"
+        "path" : "CarePlan",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUICarePlanProjetPerso",
+            "map" : "ProjetPersonnalise"
+          }
+        ]
       },
       {
         "id" : "CarePlan.extension",
@@ -128,6 +139,12 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
               "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment"
             ]
           }
+        ],
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUICarePlanProjetPerso",
+            "map" : "entrantProjetPersonnalisee"
+          }
         ]
       },
       {
@@ -135,7 +152,13 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
         "path" : "CarePlan.identifier",
         "short" : "Identifiant du projet personnel",
         "min" : 1,
-        "max" : "1"
+        "max" : "1",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUICarePlanProjetPerso",
+            "map" : "identifiantProjetPersonnalise"
+          }
+        ]
       },
       {
         "id" : "CarePlan.identifier.value",
@@ -148,18 +171,50 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
         ]
       },
       {
+        "id" : "CarePlan.status",
+        "path" : "CarePlan.status",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUICarePlanProjetPerso",
+            "map" : "statutProjetPersonnalise"
+          }
+        ]
+      },
+      {
         "id" : "CarePlan.category",
         "path" : "CarePlan.category",
         "max" : "1",
         "binding" : {
           "strength" : "required",
           "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j367-type-projet-personnalise-ms"
-        }
+        },
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUICarePlanProjetPerso",
+            "map" : "typeProjetPersonnalise"
+          }
+        ]
       },
       {
         "id" : "CarePlan.title",
         "path" : "CarePlan.title",
-        "min" : 1
+        "min" : 1,
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUICarePlanProjetPerso",
+            "map" : "titreProjetPersonnalise"
+          }
+        ]
+      },
+      {
+        "id" : "CarePlan.description",
+        "path" : "CarePlan.description",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUICarePlanProjetPerso",
+            "map" : "descriptionProjetPersonnalise"
+          }
+        ]
       },
       {
         "id" : "CarePlan.subject",
@@ -171,6 +226,32 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
               "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient",
               "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"
             ]
+          }
+        ],
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUICarePlanProjetPerso",
+            "map" : "Usager"
+          }
+        ]
+      },
+      {
+        "id" : "CarePlan.period.start",
+        "path" : "CarePlan.period.start",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUICarePlanProjetPerso",
+            "map" : "dateDebutMiseEnOeuvreProjetPersonnalise"
+          }
+        ]
+      },
+      {
+        "id" : "CarePlan.period.end",
+        "path" : "CarePlan.period.end",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUICarePlanProjetPerso",
+            "map" : "dateFinMiseEnOeuvreProjetPersonnalise"
           }
         ]
       },
@@ -202,6 +283,12 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
               "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord"
             ]
           }
+        ],
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUICarePlanProjetPerso",
+            "map" : "accordUsagerProjetPersonnalise"
+          }
         ]
       },
       {
@@ -224,6 +311,12 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
               "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord"
             ]
           }
+        ],
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUICarePlanProjetPerso",
+            "map" : "accordStructureProjetPersonnalise"
+          }
         ]
       },
       {
@@ -235,7 +328,13 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
       {
         "id" : "CarePlan.note",
         "path" : "CarePlan.note",
-        "max" : "1"
+        "max" : "1",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUICarePlanProjetPerso",
+            "map" : "modaliteCommunicationProjetPersonnalise"
+          }
+        ]
       }
     ]
   }

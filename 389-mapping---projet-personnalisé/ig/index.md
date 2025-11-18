@@ -88,6 +88,7 @@ Les ressources profilées dans le cadre de ce guide d'implémentation sont les s
 | [QuestionnaireResponse](http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse) | [TDDUIQuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md) | Profil de la ressource QuestionnaireResponse utilisé pour transmettre les réponses aux questionnaires dans le cadre des évaluations. |
 | [ServiceRequest](http://hl7.org/fhir/StructureDefinition/ServiceRequest) | [TDDUIServiceRequestBesoin](StructureDefinition-tddui-service-request-besoin.md) | Profil de la ressource TDDUIServiceRequestBesoin permettant de représenter les besoins de l'usager. |
 | [Task](http://hl7.org/fhir/StructureDefinition/Task) | [TDDUITaskAction](StructureDefinition-tddui-task-action.md) | Profil de la ressource Task permettant de représenter les actions réalisés dans le cadre du projet personnalisé. |
+| [Task](http://hl7.org/fhir/StructureDefinition/Task) | [TDDUITaskBilan](StructureDefinition-tddui-task-bilan.md) | Profil de la ressource Task permettant de représenter le bilan du projet personnalisé. |
 | [Task](http://hl7.org/fhir/StructureDefinition/Task) | [TDDUITaskMoyenRessource](StructureDefinition-tddui-task-moyen-ressource.md) | Profil de la ressource Task permettant de représenter les moyens ou ressources utilisées dans le cadre du projet personnalisé. |
 | [Task](http://hl7.org/fhir/StructureDefinition/Task) | [TDDUITaskPrestation](StructureDefinition-tddui-task-prestation.md) | Profil de la ressource Task permettant de représenter les prestations du projet personnalisé. |
 | [Task](http://hl7.org/fhir/StructureDefinition/Task) | [TDDUITaskTransport](StructureDefinition-tddui-task-transport.md) | Profil de la ressource Task permettant de représenter le transport. |
@@ -139,7 +140,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2025-11-18T14:30:08+00:00",
+  "date" : "2025-11-18T15:24:05+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -966,6 +967,20 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "RelatedPerson"
+          }
+        ],
+        "reference" : {
+          "reference" : "RelatedPerson/fr-core-related-person-example"
+        },
+        "name" : "fr-core-related-person-example",
+        "description" : "Exemple de la famille de l'usager.",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "CodeSystem"
           }
         ],
@@ -988,6 +1003,20 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "InputTDDUITaskActionCodeSystem",
         "description" : "CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les actions du projet personnalisé.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/input-tddui-task-bilan-codesystem"
+        },
+        "name" : "InputTDDUITaskBilanCodeSystem",
+        "description" : "CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour le bilan du projet personnalisé.",
         "exampleBoolean" : false
       },
       {
@@ -1084,8 +1113,8 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "reference" : {
           "reference" : "StructureDefinition/tddui-careplan-reference"
         },
-        "name" : "Lien vers le projet personnel",
-        "description" : "Liens vers le projet personnel, utilisables dans le profil TDDUIGoalObjectif.",
+        "name" : "Lien vers le projet personnalisé",
+        "description" : "Liens vers le projet personnalisé, utilisables dans le profil TDDUIGoalObjectif.",
         "exampleBoolean" : false
       },
       {
@@ -1128,6 +1157,20 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "Ordre de naissance dans le registre d'état civil",
         "description" : "Ordre d’enregistrement de la naissance dans le registre d’état civil de la commune de naissance pour le mois de la naissance. Il compose les 3 derniers chiffres du NIR de l'usager avant la clé de sécurité et permet de distinguer les personnes nées au même lieu et à la même période. Il est obligatoire si le NIR n'est pas transmis.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/output-tddui-task-bilan-codesystem"
+        },
+        "name" : "OutputTDDUITaskBilanCodeSystem",
+        "description" : "CodeSystem pour la définition des éléments spécifiques des output dans la ressource Task utilisée pour le bilan du projet personnalisé.",
         "exampleBoolean" : false
       },
       {
@@ -1246,13 +1289,55 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/tddui-care-plan-supportinginfo"
+        },
+        "name" : "TDDUI CarePlan SupportingInfo",
+        "description" : "Extension pour discriminer l'élément CarePlan.supportingInfo.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/tddui-care-plan-supportingInfo-cs"
+        },
+        "name" : "TDDUI CarePlan supportingInfo CodeSystem",
+        "description" : "CodeSystem définissant les types de notes pour l'élément CarePlan.supportingInfo.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/tddui-care-plan-supportingInfo-vs"
+        },
+        "name" : "TDDUI CarePlan supportingInfo ValueSet",
+        "description" : "ValueSet définissant les types de notes pour l'élément CarePlan.supportingInfo.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:resource"
           }
         ],
         "reference" : {
           "reference" : "StructureDefinition/tddui-consent-accord"
         },
-        "name" : "TDDUI Consent",
+        "name" : "TDDUI Consent Accord",
         "description" : "Profil de la ressource TDDUIConsent permettant de représenter l'accord de l'usager et de la structure.",
         "exampleBoolean" : false
       },
@@ -1572,6 +1657,20 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           }
         ],
         "reference" : {
+          "reference" : "StructureDefinition/tddui-task-bilan"
+        },
+        "name" : "TDDUI Task Bilan",
+        "description" : "Profil de la ressource Task permettant de représenter le bilan du projet personnalisé.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
           "reference" : "StructureDefinition/tddui-task-moyen-ressource"
         },
         "name" : "TDDUI Task MoyenRessource",
@@ -1703,6 +1802,34 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "name" : "tddui-event-location-example",
         "description" : "Lieu de l'évènement",
         "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Goal"
+          }
+        ],
+        "reference" : {
+          "reference" : "Goal/tddui-goal-attente-famille-example"
+        },
+        "name" : "tddui-goal-attente-famille-example",
+        "description" : "Exemple des attentes de la famille dans le cadre du projet personnalisé.",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Goal"
+          }
+        ],
+        "reference" : {
+          "reference" : "Goal/tddui-goal-attente-usager-example"
+        },
+        "name" : "tddui-goal-attente-usager-example",
+        "description" : "Exemple des attentes de l'usager dans le cadre du projet personnalisé.",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente"
       },
       {
         "extension" : [

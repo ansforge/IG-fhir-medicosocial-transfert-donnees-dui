@@ -8,7 +8,7 @@
 
 Profil: [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md)
 
-**Lien vers le projet personnel**: [CarePlan Projet personnalisé de Mme Dupont](CarePlan-tddui-careplan-projet-perso-example.md)
+**Lien vers le projet personnalisé**: [CarePlan Projet personnalisé de Mme Dupont](CarePlan-tddui-careplan-projet-perso-example.md)
 
 **identifier**: 3480787529/147720425367411-PPAttente-12549
 

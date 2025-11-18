@@ -17,7 +17,7 @@ Profil de la ressource FRCorePatientINSProfile permettant de représenter un usa
 **Usages:**
 
 * Use this Profile: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
-* Refer to this Profile: [TDDUI CarePlan Projet Perso](StructureDefinition-tddui-careplan-projet-perso.md), [TDDUI Consent](StructureDefinition-tddui-consent-accord.md), [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md), [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)...Show 5 more,[TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md),[TDDUI Goal Attente](StructureDefinition-tddui-goal-attente.md),[TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md),[TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md)and[TDDUI ServiceRequest Besoin](StructureDefinition-tddui-service-request-besoin.md)
+* Refer to this Profile: [TDDUI CarePlan Projet Perso](StructureDefinition-tddui-careplan-projet-perso.md), [TDDUI Consent Accord](StructureDefinition-tddui-consent-accord.md), [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md), [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)...Show 6 more,[TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md),[TDDUI Goal Attente](StructureDefinition-tddui-goal-attente.md),[TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md),[TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md),[TDDUI ServiceRequest Besoin](StructureDefinition-tddui-service-request-besoin.md)and[TDDUI Task Bilan](StructureDefinition-tddui-task-bilan.md)
 * Examples for this Profile: [Patient/tddui-patient-ins-example](Patient-tddui-patient-ins-example.md)
 * CapabilityStatements using this Profile: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient-ins.cs
   "name" : "TDDUIPatientINS",
   "title" : "TDDUI Patient INS",
   "status" : "active",
-  "date" : "2025-11-18T14:30:08+00:00",
+  "date" : "2025-11-18T15:24:05+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

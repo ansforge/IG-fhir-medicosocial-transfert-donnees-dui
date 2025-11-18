@@ -1,10 +1,10 @@
-# TDDUI Consent - Médicosocial - Transfert de données DUI v2.1.0-ballot
+# TDDUI Consent Accord - Médicosocial - Transfert de données DUI v2.1.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **TDDUI Consent**
+* **TDDUI Consent Accord**
 
-## Resource Profile: TDDUI Consent 
+## Resource Profile: TDDUI Consent Accord 
 
 | | |
 | :--- | :--- |
@@ -40,9 +40,9 @@ Other representations of profile: [CSV](StructureDefinition-tddui-consent-accord
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord",
   "version" : "2.1.0-ballot",
   "name" : "TDDUIConsentAccord",
-  "title" : "TDDUI Consent",
+  "title" : "TDDUI Consent Accord",
   "status" : "active",
-  "date" : "2025-11-18T14:30:08+00:00",
+  "date" : "2025-11-18T15:24:05+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -144,6 +144,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-consent-accord
           {
             "code" : "Reference",
             "targetProfile" : [
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization",
               "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role",
               "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner",
               "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person",

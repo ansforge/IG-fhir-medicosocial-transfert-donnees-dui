@@ -26,8 +26,15 @@
       ]
     },
     {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-care-plan-supportinginfo",
+      "title": "TDDUI CarePlan SupportingInfo",
+      "types": [
+        "code"
+      ]
+    },
+    {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference",
-      "title": "Lien vers le projet personnel",
+      "title": "Lien vers le projet personnalisé",
       "types": [
         "Reference"
       ]
@@ -272,7 +279,7 @@
     "Consent": [
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord",
-        "title": "TDDUI Consent"
+        "title": "TDDUI Consent Accord"
       }
     ],
     "DocumentReference": [
@@ -345,6 +352,10 @@
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action",
         "title": "TDDUI Task Action"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-bilan",
+        "title": "TDDUI Task Bilan"
       },
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource",
@@ -492,13 +503,15 @@
       "CarePlan",
       "Encounter",
       "QuestionnaireResponse",
-      "ServiceRequest"
+      "ServiceRequest",
+      "Task"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order": [
       "Patient.birthDate"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference": [
-      "Goal"
+      "Goal",
+      "Task"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment": [
       "Bundle.entry.resource",

@@ -16,7 +16,7 @@ Profil de la ressource TDDUIGoal permettant de représenter les attentes de l'us
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Implementation Guide
+* Examples for this Profile: [Goal/tddui-goal-attente-famille-example](Goal-tddui-goal-attente-famille-example.md) and [Goal/tddui-goal-attente-usager-example](Goal-tddui-goal-attente-usager-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-goal-attente)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-attente.c
   "name" : "TDDUIGoalAttente",
   "title" : "TDDUI Goal Attente",
   "status" : "active",
-  "date" : "2025-11-18T14:30:08+00:00",
+  "date" : "2025-11-18T15:24:05+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -134,11 +134,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-attente.c
               "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference"
             ]
           }
-        ]
-      },
-      {
-        "id" : "Goal.extension:referenceProjetPerso.value[x]",
-        "path" : "Goal.extension.value[x]",
+        ],
         "mapping" : [
           {
             "identity" : "specmetier-to-TDDUIGoalAttente",

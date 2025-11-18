@@ -10,7 +10,7 @@
   <name value="TDDUI"/>
   <title value="Médicosocial - Transfert de données DUI"/>
   <status value="active"/>
-  <date value="2025-11-18T14:30:08+00:00"/>
+  <date value="2025-11-18T15:24:05+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -533,6 +533,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/fr-core-related-person-example"/>
+      </reference>
+      <name value="fr-core-related-person-example"/>
+      <description value="Exemple de la famille de l'usager."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
@@ -551,6 +562,17 @@
       </reference>
       <name value="InputTDDUITaskActionCodeSystem"/>
       <description value="CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les actions du projet personnalisé."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/input-tddui-task-bilan-codesystem"/>
+      </reference>
+      <name value="InputTDDUITaskBilanCodeSystem"/>
+      <description value="CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour le bilan du projet personnalisé."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -626,8 +648,8 @@
       <reference>
         <reference value="StructureDefinition/tddui-careplan-reference"/>
       </reference>
-      <name value="Lien vers le projet personnel"/>
-      <description value="Liens vers le projet personnel, utilisables dans le profil TDDUIGoalObjectif."/>
+      <name value="Lien vers le projet personnalisé"/>
+      <description value="Liens vers le projet personnalisé, utilisables dans le profil TDDUIGoalObjectif."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -661,6 +683,17 @@
       </reference>
       <name value="Ordre de naissance dans le registre d'état civil"/>
       <description value="Ordre d’enregistrement de la naissance dans le registre d’état civil de la commune de naissance pour le mois de la naissance. Il compose les 3 derniers chiffres du NIR de l'usager avant la clé de sécurité et permet de distinguer les personnes nées au même lieu et à la même période. Il est obligatoire si le NIR n'est pas transmis."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/output-tddui-task-bilan-codesystem"/>
+      </reference>
+      <name value="OutputTDDUITaskBilanCodeSystem"/>
+      <description value="CodeSystem pour la définition des éléments spécifiques des output dans la ressource Task utilisée pour le bilan du projet personnalisé."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -753,12 +786,45 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-care-plan-supportinginfo"/>
+      </reference>
+      <name value="TDDUI CarePlan SupportingInfo"/>
+      <description value="Extension pour discriminer l'élément CarePlan.supportingInfo."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/tddui-care-plan-supportingInfo-cs"/>
+      </reference>
+      <name value="TDDUI CarePlan supportingInfo CodeSystem"/>
+      <description value="CodeSystem définissant les types de notes pour l'élément CarePlan.supportingInfo."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/tddui-care-plan-supportingInfo-vs"/>
+      </reference>
+      <name value="TDDUI CarePlan supportingInfo ValueSet"/>
+      <description value="ValueSet définissant les types de notes pour l'élément CarePlan.supportingInfo."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/tddui-consent-accord"/>
       </reference>
-      <name value="TDDUI Consent"/>
+      <name value="TDDUI Consent Accord"/>
       <description value="Profil de la ressource TDDUIConsent permettant de représenter l'accord de l'usager et de la structure."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1009,6 +1075,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/tddui-task-bilan"/>
+      </reference>
+      <name value="TDDUI Task Bilan"/>
+      <description value="Profil de la ressource Task permettant de représenter le bilan du projet personnalisé."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/tddui-task-moyen-ressource"/>
       </reference>
       <name value="TDDUI Task MoyenRessource"/>
@@ -1113,6 +1190,28 @@
       <name value="tddui-event-location-example"/>
       <description value="Lieu de l'évènement"/>
       <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Goal"/>
+      </extension>
+      <reference>
+        <reference value="Goal/tddui-goal-attente-famille-example"/>
+      </reference>
+      <name value="tddui-goal-attente-famille-example"/>
+      <description value="Exemple des attentes de la famille dans le cadre du projet personnalisé."/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Goal"/>
+      </extension>
+      <reference>
+        <reference value="Goal/tddui-goal-attente-usager-example"/>
+      </reference>
+      <name value="tddui-goal-attente-usager-example"/>
+      <description value="Exemple des attentes de l'usager dans le cadre du projet personnalisé."/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

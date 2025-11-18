@@ -1,0 +1,35 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "tddui-care-plan-supportingInfo-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs tddui-care-plan-supportingInfo-vs</b></p><a name=\"tddui-care-plan-supportingInfo-vs\"> </a><a name=\"hctddui-care-plan-supportingInfo-vs\"> </a><ul><li>Include tous les codes définis dans <a href=\"CodeSystem-tddui-care-plan-supportingInfo-cs.html\"><code>https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-care-plan-supportingInfo-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;2.1.0-ballot</span></li></ul></div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-care-plan-supportingInfo-vs",
+  "version" : "2.1.0-ballot",
+  "name" : "TDDUICarePlanSupportingInfoVS",
+  "title" : "TDDUI CarePlan supportingInfo ValueSet",
+  "status" : "active",
+  "date" : "2025-11-18T15:24:05+00:00",
+  "publisher" : "ANS",
+  "contact" : [{
+    "name" : "ANS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "ValueSet définissant les types de notes pour l'élément CarePlan.supportingInfo.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-care-plan-supportingInfo-cs"
+    }]
+  }
+}

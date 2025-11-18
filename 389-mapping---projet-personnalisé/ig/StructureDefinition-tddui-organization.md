@@ -17,7 +17,7 @@ Profil de la ressource FRCoreOrganizationProfile permettant de représenter les 
 **Usages:**
 
 * Use this Profile: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
-* Refer to this Profile: [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md), [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md), [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md), [TDDUI Practitioner Role](StructureDefinition-tddui-practitioner-role.md) and [TDDUI Task Transport](StructureDefinition-tddui-task-transport.md)
+* Refer to this Profile: [TDDUI Consent Accord](StructureDefinition-tddui-consent-accord.md), [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md), [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md), [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md)...Show 3 more,[TDDUI Practitioner Role](StructureDefinition-tddui-practitioner-role.md),[TDDUI Task Bilan](StructureDefinition-tddui-task-bilan.md)and[TDDUI Task Transport](StructureDefinition-tddui-task-transport.md)
 * Examples for this Profile: [Les Chênes Verts](Organization-tddui-organization-example.md)
 * CapabilityStatements using this Profile: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-organization.c
   "name" : "TDDUIOrganization",
   "title" : "TDDUI Organization",
   "status" : "active",
-  "date" : "2025-11-18T14:30:08+00:00",
+  "date" : "2025-11-18T15:24:05+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

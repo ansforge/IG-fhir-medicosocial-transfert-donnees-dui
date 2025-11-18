@@ -1,17 +1,17 @@
-# Lien vers le projet personnel - Médicosocial - Transfert de données DUI v2.1.0-ballot
+# Lien vers le projet personnalisé - Médicosocial - Transfert de données DUI v2.1.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Lien vers le projet personnel**
+* **Lien vers le projet personnalisé**
 
-## Extension: Lien vers le projet personnel 
+## Extension: Lien vers le projet personnalisé 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference | *Version*:2.1.0-ballot |
 | Active as of 2025-11-18 | *Computable Name*:TDDUICarePlanProjetPersoRef |
 
-Liens vers le projet personnel, utilisables dans le profil TDDUIGoalObjectif.
+Liens vers le projet personnalisé, utilisables dans le profil TDDUIGoalObjectif.
 
 **Context of Use**
 
@@ -19,8 +19,8 @@ Liens vers le projet personnel, utilisables dans le profil TDDUIGoalObjectif.
 
 **Usages:**
 
-* Use this Extension: [TDDUI Goal Attente](StructureDefinition-tddui-goal-attente.md) and [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md)
-* Examples for this Extension: [Goal/tddui-goal-objectif-example](Goal-tddui-goal-objectif-example.md)
+* Use this Extension: [TDDUI Goal Attente](StructureDefinition-tddui-goal-attente.md), [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md) and [TDDUI Task Bilan](StructureDefinition-tddui-task-bilan.md)
+* Examples for this Extension: [Goal/tddui-goal-attente-famille-example](Goal-tddui-goal-attente-famille-example.md), [Goal/tddui-goal-attente-usager-example](Goal-tddui-goal-attente-usager-example.md) and [Goal/tddui-goal-objectif-example](Goal-tddui-goal-objectif-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-careplan-reference)
 
@@ -45,9 +45,9 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-refer
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference",
   "version" : "2.1.0-ballot",
   "name" : "TDDUICarePlanProjetPersoRef",
-  "title" : "Lien vers le projet personnel",
+  "title" : "Lien vers le projet personnalisé",
   "status" : "active",
-  "date" : "2025-11-18T14:30:08+00:00",
+  "date" : "2025-11-18T15:24:05+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -60,7 +60,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-refer
       ]
     }
   ],
-  "description" : "Liens vers le projet personnel, utilisables dans le profil TDDUIGoalObjectif.",
+  "description" : "Liens vers le projet personnalisé, utilisables dans le profil TDDUIGoalObjectif.",
   "jurisdiction" : [
     {
       "coding" : [
@@ -96,8 +96,8 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-refer
       {
         "id" : "Extension",
         "path" : "Extension",
-        "short" : "Lien vers le projet personnel",
-        "definition" : "Liens vers le projet personnel, utilisables dans le profil TDDUIGoalObjectif."
+        "short" : "Lien vers le projet personnalisé",
+        "definition" : "Liens vers le projet personnalisé, utilisables dans le profil TDDUIGoalObjectif."
       },
       {
         "id" : "Extension.extension",

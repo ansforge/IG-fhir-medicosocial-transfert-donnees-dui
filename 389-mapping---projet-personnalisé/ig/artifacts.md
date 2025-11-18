@@ -35,7 +35,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 | :--- | :--- |
 | [TDDUI Bundle](StructureDefinition-tddui-bundle.md) | Profil générique créé pour transmettre des données d'un logiciel DUI. |
 | [TDDUI CarePlan Projet Perso](StructureDefinition-tddui-careplan-projet-perso.md) | Profil de la ressource TDDUICarePlan permettant de représenter le projet personnel de l'usager. |
-| [TDDUI Consent](StructureDefinition-tddui-consent-accord.md) | Profil de la ressource TDDUIConsent permettant de représenter l'accord de l'usager et de la structure. |
+| [TDDUI Consent Accord](StructureDefinition-tddui-consent-accord.md) | Profil de la ressource TDDUIConsent permettant de représenter l'accord de l'usager et de la structure. |
 | [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md) | Profil de la ressource SimplifiedPublishDocumentReference pour les pièces jointes liées à l’événement et à l'évaluation. |
 | [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md) | Profil de la ressource Encounter permettant de regrouper les évènements liés à la prise en charge de l’usager dans une structure ESSMS. |
 | [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md) | Profil de la ressource Encounter permettant de regrouper les informations relatives au séjour d'un usager dans une structure ESSMS |
@@ -49,6 +49,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md) | Profil de la ressource QuestionnaireResponse utilisé pour transmettre les réponses aux questionnaires dans le cadre des évaluations. |
 | [TDDUI ServiceRequest Besoin](StructureDefinition-tddui-service-request-besoin.md) | Profil de la ressource TDDUIServiceRequestBesoin permettant de représenter les besoins de l'usager. |
 | [TDDUI Task Action](StructureDefinition-tddui-task-action.md) | Profil de la ressource Task permettant de représenter les actions réalisés dans le cadre du projet personnalisé. |
+| [TDDUI Task Bilan](StructureDefinition-tddui-task-bilan.md) | Profil de la ressource Task permettant de représenter le bilan du projet personnalisé. |
 | [TDDUI Task MoyenRessource](StructureDefinition-tddui-task-moyen-ressource.md) | Profil de la ressource Task permettant de représenter les moyens ou ressources utilisées dans le cadre du projet personnalisé. |
 | [TDDUI Task Prestation](StructureDefinition-tddui-task-prestation.md) | Profil de la ressource Task permettant de représenter les prestations du projet personnalisé. |
 | [TDDUI Task Transport](StructureDefinition-tddui-task-transport.md) | Profil de la ressource Task permettant de représenter le transport. |
@@ -84,7 +85,7 @@ These define constraints on FHIR data types for systems conforming to this imple
 | [Libellé mode d'entrée](StructureDefinition-tddui-entry-mode-label.md) | Libellé du mode d’entée du séjour. |
 | [Libellé mode de sortie](StructureDefinition-tddui-exit-mode-label.md) | Libellé du mode de sortie du séjour. |
 | [Lien vers l'évaluation](StructureDefinition-tddui-evaluation-reference.md) | Liens vers l'évaluation, utilisables dans le profil TDDUIGoalObjectif. |
-| [Lien vers le projet personnel](StructureDefinition-tddui-careplan-reference.md) | Liens vers le projet personnel, utilisables dans le profil TDDUIGoalObjectif. |
+| [Lien vers le projet personnalisé](StructureDefinition-tddui-careplan-reference.md) | Liens vers le projet personnalisé, utilisables dans le profil TDDUIGoalObjectif. |
 | [Mode d'exercice](StructureDefinition-tddui-exercise-mode.md) | Extension permettant de représenter le mode d'exercice du professionnel. |
 | [Motif de l’évènement](StructureDefinition-tddui-event-reason.md) | Contexte justifiant la réalisation de l’évènement. |
 | [Ordre de naissance dans le registre d'état civil](StructureDefinition-tddui-birth-order.md) | Ordre d’enregistrement de la naissance dans le registre d’état civil de la commune de naissance pour le mois de la naissance. Il compose les 3 derniers chiffres du NIR de l'usager avant la clé de sécurité et permet de distinguer les personnes nées au même lieu et à la même période. Il est obligatoire si le NIR n'est pas transmis. |
@@ -93,6 +94,7 @@ These define constraints on FHIR data types for systems conforming to this imple
 | [Repas](StructureDefinition-tddui-meal.md) | Repas du professionnel prévu dans le cadre de l'événement. |
 | [Responsable et auteur du statut de l'évaluation](StructureDefinition-tddui-qr-participant.md) | Extension permettant d'ajouter le responsable de l'évaluation et l'auteur du statut de l'évaluation dans un QuestionnaireResponse. |
 | [Ressources utilisées](StructureDefinition-tddui-ressources-used.md) | Ressources utilisées lors de l’évènement (ex : chambre, matériel médical, véhicule). |
+| [TDDUI CarePlan SupportingInfo](StructureDefinition-tddui-care-plan-supportinginfo.md) | Extension pour discriminer l'élément CarePlan.supportingInfo. |
 | [TDDUI Goal Note](StructureDefinition-tddui-goal-note.md) | Extension pour discriminer l'élément Goal.note. |
 | [TDDUI Profession](StructureDefinition-tddui-profession.md) | Extension permettant de représenter la profession du professionnel. |
 | [Usager présent](StructureDefinition-tddui-patient-present.md) | Evènement nécessitant ou non la présence physique de l’usager. |
@@ -104,6 +106,7 @@ These define sets of codes used by systems conforming to this implementation gui
 
 | | |
 | :--- | :--- |
+| [TDDUI CarePlan supportingInfo ValueSet](ValueSet-tddui-care-plan-supportingInfo-vs.md) | ValueSet définissant les types de notes pour l'élément CarePlan.supportingInfo. |
 | [TDDUI Goal Note ValueSet](ValueSet-tddui-goal-note-vs.md) | ValueSet définissant les types de notes pour l'élément Goal.note. |
 | [TDDUI SERAFIN ValueSet](ValueSet-tddui-serafin-valueset.md) | ValueSet contenant les codes SERAFIN (prestations directes et indirectes) pour le profil TDDUI Encounter Evenement. |
 
@@ -114,9 +117,12 @@ These define new code systems used by systems conforming to this implementation 
 | | |
 | :--- | :--- |
 | [InputTDDUITaskActionCodeSystem](CodeSystem-input-tddui-task-action-codesystem.md) | CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les actions du projet personnalisé. |
+| [InputTDDUITaskBilanCodeSystem](CodeSystem-input-tddui-task-bilan-codesystem.md) | CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour le bilan du projet personnalisé. |
 | [InputTDDUITaskMoyenRessourceCodeSystem](CodeSystem-input-tddui-task-moyen-ressource-codesystem.md) | CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les moyens et ressources du projet personnalisé. |
 | [InputTDDUITaskPrestationCodeSystem](CodeSystem-input-tddui-task-prestation-codesystem.md) | CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les prestations du projet personnalisé. |
 | [InputTaskTransportCodeSystem](CodeSystem-input-tddui-task-transport-codesystem.md) | CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les transports dans le cadre du DUI. |
+| [OutputTDDUITaskBilanCodeSystem](CodeSystem-output-tddui-task-bilan-codesystem.md) | CodeSystem pour la définition des éléments spécifiques des output dans la ressource Task utilisée pour le bilan du projet personnalisé. |
+| [TDDUI CarePlan supportingInfo CodeSystem](CodeSystem-tddui-care-plan-supportingInfo-cs.md) | CodeSystem définissant les types de notes pour l'élément CarePlan.supportingInfo. |
 | [TDDUI Encounter FR Core CodeSystem v2-0203](CodeSystem-tddui-encounter-identifier.md) | TDDUI Encounter's identifier |
 | [TDDUI Encounter Participant Type](CodeSystem-TDDUIEncounterParticipant.md) | CodeSystem for the participant types in TDDUI Encounter |
 | [TDDUI FR Core CodeSystem v2-0203](CodeSystem-tddui-identifier.md) | TDDUI Patient's identifier |
@@ -130,10 +136,13 @@ These are example instances that show what data produced and consumed by systems
 | :--- | :--- |
 | [Projet personnalisé de Mme Dupont](CarePlan-tddui-careplan-projet-perso-example.md) | Exemple d'un projet personnalisé |
 | [TDDUIBundleExample](Bundle-ExampleTDDUIBundle.md) | Exemple de bundle conforme au profil TDDUIBundle |
+| [fr-core-related-person-example](RelatedPerson-fr-core-related-person-example.md) | Exemple de la famille de l'usager. |
 | [tddui-consent-accord-example](Consent-tddui-consent-accord-example.md) | Exemple d'un accord de la structure |
 | [tddui-encounter-evenement-example](Encounter-tddui-encounter-evenement-example.md) | Exemple d'un évènement |
 | [tddui-encounter-sejour-example](Encounter-tddui-encounter-sejour-example.md) | Exemple d'un séjour en ESSMS |
 | [tddui-event-location-example](Location-tddui-event-location-example.md) | Lieu de l'évènement |
+| [tddui-goal-attente-famille-example](Goal-tddui-goal-attente-famille-example.md) | Exemple des attentes de la famille dans le cadre du projet personnalisé. |
+| [tddui-goal-attente-usager-example](Goal-tddui-goal-attente-usager-example.md) | Exemple des attentes de l'usager dans le cadre du projet personnalisé. |
 | [tddui-goal-objectif-example](Goal-tddui-goal-objectif-example.md) | Exemple des attentes de la famille dans le cadre du projet personnalisé. |
 | [tddui-organization-example](Organization-tddui-organization-example.md) | ESSMS - Les Chênes Verts |
 | [tddui-patient-example](Patient-tddui-patient-example.md) | Exemple de la ressource TDDUIPatient |

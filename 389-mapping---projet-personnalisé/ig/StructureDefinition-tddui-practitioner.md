@@ -17,7 +17,7 @@ Profil de la ressource FRCorePractitionerProfile permettant de représenter un p
 **Usages:**
 
 * Use this Profile: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
-* Refer to this Profile: [TDDUI Consent](StructureDefinition-tddui-consent-accord.md), [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md), [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md), [TDDUI Goal Attente](StructureDefinition-tddui-goal-attente.md)...Show 5 more,[TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md),[TDDUI Practitioner Role](StructureDefinition-tddui-practitioner-role.md),[Responsable et auteur du statut de l'évaluation](StructureDefinition-tddui-qr-participant.md),[TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md)and[TDDUI Task Transport Professionnel](StructureDefinition-tddui-task-transport-professionnel.md)
+* Refer to this Profile: [TDDUI Consent Accord](StructureDefinition-tddui-consent-accord.md), [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md), [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md), [TDDUI Goal Attente](StructureDefinition-tddui-goal-attente.md)...Show 6 more,[TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md),[TDDUI Practitioner Role](StructureDefinition-tddui-practitioner-role.md),[Responsable et auteur du statut de l'évaluation](StructureDefinition-tddui-qr-participant.md),[TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md),[TDDUI Task Bilan](StructureDefinition-tddui-task-bilan.md)and[TDDUI Task Transport Professionnel](StructureDefinition-tddui-task-transport-professionnel.md)
 * Examples for this Profile: [Practitioner/tddui-practitioner-example](Practitioner-tddui-practitioner-example.md)
 * CapabilityStatements using this Profile: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-practitioner.c
   "name" : "TDDUIPractitioner",
   "title" : "TDDUI Practitioner",
   "status" : "active",
-  "date" : "2025-11-18T14:30:08+00:00",
+  "date" : "2025-11-18T15:24:05+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

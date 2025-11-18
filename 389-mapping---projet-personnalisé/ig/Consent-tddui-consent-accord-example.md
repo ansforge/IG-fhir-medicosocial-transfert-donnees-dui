@@ -6,7 +6,7 @@
 
 ## Example Consent: tddui-consent-accord-example
 
-Profil: [TDDUI Consent](StructureDefinition-tddui-consent-accord.md)
+Profil: [TDDUI Consent Accord](StructureDefinition-tddui-consent-accord.md)
 
 **status**: Active
 

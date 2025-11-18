@@ -1,0 +1,30 @@
+{
+  "resourceType" : "Goal",
+  "id" : "tddui-goal-attente-famille-example",
+  "meta" : {
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : But tddui-goal-attente-famille-example</b></p><a name=\"tddui-goal-attente-famille-example\"> </a><a name=\"hctddui-goal-attente-famille-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-goal-attente.html\">TDDUI Goal Attente</a></p></div><p><b>Lien vers le projet personnalisé</b>: <a href=\"CarePlan-tddui-careplan-projet-perso-example.html\">CarePlan Projet personnalisé de Mme Dupont</a></p><p><b>identifier</b>: 3480787529/147720425367411-PPAttente-12549</p><p><b>lifecycleStatus</b>: Active</p><p><b>description</b>: <span title=\"Codes :\">- Prévenir les chutes<br/>- Stabiliser le poids et le plaisir alimentaire<br/>- Maintenir le lien familial (visios)</span></p><p><b>subject</b>: <a href=\"Patient-tddui-patient-ins-example.html\">DUPONT  Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/194704032)</a></p><p><b>expressedBy</b>: <a href=\"RelatedPerson-fr-core-related-person-example.html\">RelatedPerson : identifier = 3480787529/147720425367411-PPAttente-12549-famille; relationship = Enfant</a></p></div>"
+  },
+  "extension" : [{
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference",
+    "valueReference" : {
+      "reference" : "CarePlan/tddui-careplan-projet-perso-example"
+    }
+  }],
+  "identifier" : [{
+    "value" : "3480787529/147720425367411-PPAttente-12549"
+  }],
+  "lifecycleStatus" : "active",
+  "description" : {
+    "text" : "- Prévenir les chutes\n- Stabiliser le poids et le plaisir alimentaire\n- Maintenir le lien familial (visios)"
+  },
+  "subject" : {
+    "reference" : "Patient/tddui-patient-ins-example"
+  },
+  "expressedBy" : {
+    "reference" : "RelatedPerson/fr-core-related-person-example"
+  }
+}

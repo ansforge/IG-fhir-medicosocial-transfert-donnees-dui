@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "TDDUI"] ; # 
   fhir:title [ fhir:v "Médicosocial - Transfert de données DUI"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-11-18T14:30:08+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-11-18T15:24:05+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -1482,6 +1482,27 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "RelatedPerson"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/RelatedPerson/fr-core-related-person-example> ;
+         fhir:reference [ fhir:v "RelatedPerson/fr-core-related-person-example" ]
+       ] ;
+       fhir:name [ fhir:v "fr-core-related-person-example" ] ;
+       fhir:description [ fhir:v "Exemple de la famille de l'usager." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "CodeSystem"
          ]
        ] ) ;
@@ -1512,6 +1533,27 @@
        ] ;
        fhir:name [ fhir:v "InputTDDUITaskActionCodeSystem" ] ;
        fhir:description [ fhir:v "CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les actions du projet personnalisé." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-bilan-codesystem> ;
+         fhir:reference [ fhir:v "CodeSystem/input-tddui-task-bilan-codesystem" ]
+       ] ;
+       fhir:name [ fhir:v "InputTDDUITaskBilanCodeSystem" ] ;
+       fhir:description [ fhir:v "CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour le bilan du projet personnalisé." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1657,8 +1699,8 @@
          fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference> ;
          fhir:reference [ fhir:v "StructureDefinition/tddui-careplan-reference" ]
        ] ;
-       fhir:name [ fhir:v "Lien vers le projet personnel" ] ;
-       fhir:description [ fhir:v "Liens vers le projet personnel, utilisables dans le profil TDDUIGoalObjectif." ] ;
+       fhir:name [ fhir:v "Lien vers le projet personnalisé" ] ;
+       fhir:description [ fhir:v "Liens vers le projet personnalisé, utilisables dans le profil TDDUIGoalObjectif." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1722,6 +1764,27 @@
        ] ;
        fhir:name [ fhir:v "Ordre de naissance dans le registre d'état civil" ] ;
        fhir:description [ fhir:v "Ordre d’enregistrement de la naissance dans le registre d’état civil de la commune de naissance pour le mois de la naissance. Il compose les 3 derniers chiffres du NIR de l'usager avant la clé de sécurité et permet de distinguer les personnes nées au même lieu et à la même période. Il est obligatoire si le NIR n'est pas transmis." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/output-tddui-task-bilan-codesystem> ;
+         fhir:reference [ fhir:v "CodeSystem/output-tddui-task-bilan-codesystem" ]
+       ] ;
+       fhir:name [ fhir:v "OutputTDDUITaskBilanCodeSystem" ] ;
+       fhir:description [ fhir:v "CodeSystem pour la définition des éléments spécifiques des output dans la ressource Task utilisée pour le bilan du projet personnalisé." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1903,6 +1966,69 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-care-plan-supportinginfo> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-care-plan-supportinginfo" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI CarePlan SupportingInfo" ] ;
+       fhir:description [ fhir:v "Extension pour discriminer l'élément CarePlan.supportingInfo." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-care-plan-supportingInfo-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/tddui-care-plan-supportingInfo-cs" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI CarePlan supportingInfo CodeSystem" ] ;
+       fhir:description [ fhir:v "CodeSystem définissant les types de notes pour l'élément CarePlan.supportingInfo." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-care-plan-supportingInfo-vs> ;
+         fhir:reference [ fhir:v "ValueSet/tddui-care-plan-supportingInfo-vs" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI CarePlan supportingInfo ValueSet" ] ;
+       fhir:description [ fhir:v "ValueSet définissant les types de notes pour l'élément CarePlan.supportingInfo." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
@@ -1910,7 +2036,7 @@
          fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord> ;
          fhir:reference [ fhir:v "StructureDefinition/tddui-consent-accord" ]
        ] ;
-       fhir:name [ fhir:v "TDDUI Consent" ] ;
+       fhir:name [ fhir:v "TDDUI Consent Accord" ] ;
        fhir:description [ fhir:v "Profil de la ressource TDDUIConsent permettant de représenter l'accord de l'usager et de la structure." ] ;
        fhir:example [
          a fhir:Boolean ;
@@ -2390,6 +2516,27 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-bilan> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-task-bilan" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Task Bilan" ] ;
+       fhir:description [ fhir:v "Profil de la ressource Task permettant de représenter le bilan du projet personnalisé." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource> ;
          fhir:reference [ fhir:v "StructureDefinition/tddui-task-moyen-ressource" ]
        ] ;
@@ -2590,6 +2737,50 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Goal"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Goal/tddui-goal-attente-famille-example> ;
+         fhir:reference [ fhir:v "Goal/tddui-goal-attente-famille-example" ]
+       ] ;
+       fhir:name [ fhir:v "tddui-goal-attente-famille-example" ] ;
+       fhir:description [ fhir:v "Exemple des attentes de la famille dans le cadre du projet personnalisé." ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Goal"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Goal/tddui-goal-attente-usager-example> ;
+         fhir:reference [ fhir:v "Goal/tddui-goal-attente-usager-example" ]
+       ] ;
+       fhir:name [ fhir:v "tddui-goal-attente-usager-example" ] ;
+       fhir:description [ fhir:v "Exemple des attentes de l'usager dans le cadre du projet personnalisé." ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente>
        ]
      ] [
        fhir:extension ( [
