@@ -139,7 +139,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2025-11-18T10:18:37+00:00",
+  "date" : "2025-11-18T10:31:28+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -1708,6 +1708,20 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Goal"
+          }
+        ],
+        "reference" : {
+          "reference" : "Goal/tddui-goal-objectif-example"
+        },
+        "name" : "tddui-goal-objectif-example",
+        "description" : "Exemple des attentes de la famille dans le cadre du projet personnalisé.",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "Organization"
           }
         ],
@@ -1857,6 +1871,20 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "name" : "tddui-questionnaire-response-situation-ssiad-example",
         "description" : "Grille de réponse de la situation SSIAD",
         "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ServiceRequest"
+          }
+        ],
+        "reference" : {
+          "reference" : "ServiceRequest/tddui-servicerequest-besoin-example"
+        },
+        "name" : "tddui-servicerequest-besoin-example",
+        "description" : "Exemple d'un besoin de l'usager.",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin"
       },
       {
         "extension" : [

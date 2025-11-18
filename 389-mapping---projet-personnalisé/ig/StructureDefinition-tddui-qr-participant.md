@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-qr-participant
   "name" : "TDDUIQRParticipant",
   "title" : "Responsable et auteur du statut de l'évaluation",
   "status" : "active",
-  "date" : "2025-11-18T10:18:37+00:00",
+  "date" : "2025-11-18T10:31:28+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

@@ -1,0 +1,63 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/tddui/Goal/tddui-goal-objectif-example> a fhir:Goal ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "tddui-goal-objectif-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif"^^xsd:anyURI ;
+       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : But tddui-goal-objectif-example</b></p><a name=\"tddui-goal-objectif-example\"> </a><a name=\"hctddui-goal-objectif-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-goal-objectif.html\">TDDUI Goal Objectif</a></p></div><p><b>Lien vers le projet personnel</b>: <a href=\"CarePlan-tddui-careplan-projet-perso-example.html\">CarePlan Projet personnalisé de Mme Dupont</a></p><p><b>identifier</b>: 3480787529/147720425367411-PPAttente-12549</p><p><b>lifecycleStatus</b>: Active</p><p><b>description</b>: <span title=\"Codes :\">L'objectif est d'améliorer l'autonomie de Mme Dupont dans les activités de la vie quotidienne.</span></p><p><b>subject</b>: <a href=\"Patient-tddui-patient-ins-example.html\">DUPONT  Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/194704032)</a></p><p><b>addresses</b>: <a href=\"ServiceRequest-tddui-servicerequest-besoin-example.html\">ServiceRequest </a></p><p><b>note</b>: </p><blockquote><div><p>Améliorer l'autonomie de Mme Dupont dans les activités de la vie quotidienne.</p>\n</div></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference"^^xsd:anyURI ;
+       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CarePlan/tddui-careplan-projet-perso-example> ;
+       fhir:reference [ fhir:v "CarePlan/tddui-careplan-projet-perso-example" ]
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "3480787529/147720425367411-PPAttente-12549" ]
+  ] ) ; # 
+  fhir:lifecycleStatus [ fhir:v "active"] ; # 
+  fhir:description [
+     fhir:text [ fhir:v "L'objectif est d'améliorer l'autonomie de Mme Dupont dans les activités de la vie quotidienne." ]
+  ] ; # 
+  fhir:subject [
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-patient-ins-example> ;
+     fhir:reference [ fhir:v "Patient/tddui-patient-ins-example" ]
+  ] ; # 
+  fhir:addresses ( [
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/ServiceRequest/tddui-servicerequest-besoin-example> ;
+     fhir:reference [ fhir:v "ServiceRequest/tddui-servicerequest-besoin-example" ]
+  ] ) ; # 
+  fhir:note ( [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-note"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-note>
+       ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "titreObjectif"
+       ]
+     ] ) ;
+     fhir:text [ fhir:v "Améliorer l'autonomie de Mme Dupont dans les activités de la vie quotidienne." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

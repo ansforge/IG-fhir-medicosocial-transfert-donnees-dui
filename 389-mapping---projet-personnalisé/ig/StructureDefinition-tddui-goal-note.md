@@ -20,6 +20,7 @@ Extension pour discriminer l'élément Goal.note.
 **Usages:**
 
 * Use this Extension: [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md)
+* Examples for this Extension: [Goal/tddui-goal-objectif-example](Goal-tddui-goal-objectif-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-goal-note)
 
@@ -48,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-note.csv)
   "name" : "TDDUIGoalNote",
   "title" : "TDDUI Goal Note",
   "status" : "active",
-  "date" : "2025-11-18T10:18:37+00:00",
+  "date" : "2025-11-18T10:31:28+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
