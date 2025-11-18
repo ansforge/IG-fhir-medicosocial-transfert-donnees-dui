@@ -1,7 +1,7 @@
 Extension: TDDUICarePlanProjetPersoRef
 Id: tddui-careplan-reference
-Title: "Lien vers le projet personnel"
-Description: "Liens vers le projet personnel, utilisables dans le profil TDDUIGoalObjectif."
+Title: "Lien vers le projet personnalisé"
+Description: "Liens vers le projet personnalisé, utilisables dans le profil TDDUIGoalObjectif."
 Context: Goal
 
 * value[x] only Reference

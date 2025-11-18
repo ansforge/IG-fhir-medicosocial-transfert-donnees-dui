@@ -35,3 +35,23 @@ Description: "Profil de la ressource TDDUICarePlan permettant de représenter le
 * subject only Reference(TDDUIPatient or TDDUIPatientINS)
 
 * note 0..1
+
+Mapping:  ConceptMetier_TDDUICarePlanProjetPerso
+Source:   TDDUICarePlanProjetPerso
+Target: "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"
+Id:       specmetier-to-TDDUICarePlanProjetPerso
+Title:    "Modèle de contenu DUI"
+* -> "ProjetPersonnalise"
+
+* identifier -> "identifiantProjetPersonnalise"
+* title -> "titreProjetPersonnalise"
+* description -> "descriptionProjetPersonnalise"
+* status -> "statutProjetPersonnalise"
+* category -> "typeProjetPersonnalise"
+* note -> "modaliteCommunicationProjetPersonnalise"
+* supportingInfo[usager] -> "accordUsagerProjetPersonnalise"
+* supportingInfo[structure] -> "accordStructureProjetPersonnalise"
+* period.start -> "dateDebutMiseEnOeuvreProjetPersonnalise"
+* period.end -> "dateFinMiseEnOeuvreProjetPersonnalise"
+* extension[entrantProjetPerso] -> "entrantProjetPersonnalisee" //Pourquoi Personnalisee ?
+* subject -> "Usager"

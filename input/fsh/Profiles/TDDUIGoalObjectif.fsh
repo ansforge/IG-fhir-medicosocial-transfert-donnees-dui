@@ -46,3 +46,19 @@ Description: "Profil de la ressource TDDUIGoalObjectif permettant de représente
 * note[strategieMiseEnOeuvreObjectif].extension[TDDUIGoalNoteExtension] 1..1
 * note[strategieMiseEnOeuvreObjectif].extension[TDDUIGoalNoteExtension].valueCode = #strategieMiseEnOeuvreObjectif
  
+Mapping:  ConceptMetier_TDDUIGoalObjectif
+Source:   TDDUIGoalObjectif
+Target: "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"
+Id:       specmetier-to-TDDUIGoalObjectif
+Title:    "Modèle de contenu DUI"
+* -> "Objectif"
+
+* identifier -> "identifiantObjectif"
+* note[titreObjectif].text -> "titreObjectif"
+* description.text -> "descriptionObjectif"
+* category -> "domaineObjectif"
+* target.dueDate -> "dateFinObjectif"
+* extension[referenceEvaluation] -> "evaluationObjectif"
+* note[avisUsagerObjectif].text -> "avisUsagerObjectif"
+* target.detailString -> "resultatAttenduObjectif"
+* note[strategieMiseEnOeuvreObjectif].text -> "strategieMiseEnOeuvreObjectif"
