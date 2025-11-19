@@ -58,7 +58,7 @@ Source:   TDDUITaskAction
 Target: "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"
 Id:       specmetier-to-TDDUITaskAction
 Title:    "Modèle de contenu DUI"
-* -> "Besoin"
+* -> "Action"
 
 * status -> "statutAction"
 * identifier -> "identifiantAction"
