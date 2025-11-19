@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "TDDUIConsentAccord"] ; # 
   fhir:title [ fhir:v "TDDUI Consent Accord"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-11-18T15:24:05+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-11-19T16:22:07+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -43,6 +43,13 @@
   ] ) ; # 
   fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
   fhir:mapping ( [
+     fhir:identity [ fhir:v "specmetier-to-TDDUIConsentAccord" ] ;
+     fhir:uri [
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"^^xsd:anyURI ;
+       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html>
+     ] ;
+     fhir:name [ fhir:v "Modèle de contenu DUI" ]
+  ] [
      fhir:identity [ fhir:v "workflow" ] ;
      fhir:uri [
        fhir:v "http://hl7.org/fhir/workflow"^^xsd:anyURI ;
@@ -229,6 +236,9 @@
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUIConsentAccord" ] ;
+         fhir:map [ fhir:v "Accord" ]
+       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "Entity. Role, or Act" ]
        ] [
@@ -557,6 +567,9 @@
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUIConsentAccord" ] ;
+         fhir:map [ fhir:v "dureeValidite" ]
+       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "n/a" ]
        ] [
@@ -924,6 +937,9 @@
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUIConsentAccord" ] ;
+         fhir:map [ fhir:v "dateSignature" ]
+       ] [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Event.occurrence[x]" ]
        ] [
@@ -989,6 +1005,9 @@
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUIConsentAccord" ] ;
+         fhir:map [ fhir:v "auteur" ]
+       ] [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Event.performer" ]
        ] [
@@ -2719,7 +2738,11 @@
   fhir:differential [
      fhir:element ( [
        fhir:id [ fhir:v "Consent" ] ;
-       fhir:path [ fhir:v "Consent" ]
+       fhir:path [ fhir:v "Consent" ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUIConsentAccord" ] ;
+         fhir:map [ fhir:v "Accord" ]
+       ] )
      ] [
        fhir:id [ fhir:v "Consent.extension" ] ;
        fhir:path [ fhir:v "Consent.extension" ] ;
@@ -2746,11 +2769,19 @@
            fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.period"^^xsd:anyURI ;
            fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.period>
          ] )
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUIConsentAccord" ] ;
+         fhir:map [ fhir:v "dureeValidite" ]
        ] )
      ] [
        fhir:id [ fhir:v "Consent.dateTime" ] ;
        fhir:path [ fhir:v "Consent.dateTime" ] ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ]
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUIConsentAccord" ] ;
+         fhir:map [ fhir:v "dateSignature" ]
+       ] )
      ] [
        fhir:id [ fhir:v "Consent.performer" ] ;
        fhir:path [ fhir:v "Consent.performer" ] ;
@@ -2780,6 +2811,10 @@
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"^^xsd:anyURI ;
            fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins>
          ] )
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUIConsentAccord" ] ;
+         fhir:map [ fhir:v "auteur" ]
        ] )
      ] )
   ] . # 

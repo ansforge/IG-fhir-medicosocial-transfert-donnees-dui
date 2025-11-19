@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord | *Version*:2.1.0-ballot |
-| Active as of 2025-11-18 | *Computable Name*:TDDUIConsentAccord |
+| Active as of 2025-11-19 | *Computable Name*:TDDUIConsentAccord |
 
  
 Profil de la ressource TDDUIConsent permettant de représenter l'accord de l'usager et de la structure. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-consent-accord
   "name" : "TDDUIConsentAccord",
   "title" : "TDDUI Consent Accord",
   "status" : "active",
-  "date" : "2025-11-18T15:24:05+00:00",
+  "date" : "2025-11-19T16:22:07+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -69,6 +69,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-consent-accord
   ],
   "fhirVersion" : "4.0.1",
   "mapping" : [
+    {
+      "identity" : "specmetier-to-TDDUIConsentAccord",
+      "uri" : "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html",
+      "name" : "Modèle de contenu DUI"
+    },
     {
       "identity" : "workflow",
       "uri" : "http://hl7.org/fhir/workflow",
@@ -99,7 +104,13 @@ Other representations of profile: [CSV](StructureDefinition-tddui-consent-accord
     "element" : [
       {
         "id" : "Consent",
-        "path" : "Consent"
+        "path" : "Consent",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIConsentAccord",
+            "map" : "Accord"
+          }
+        ]
       },
       {
         "id" : "Consent.extension",
@@ -128,12 +139,24 @@ Other representations of profile: [CSV](StructureDefinition-tddui-consent-accord
               "http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.period"
             ]
           }
+        ],
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIConsentAccord",
+            "map" : "dureeValidite"
+          }
         ]
       },
       {
         "id" : "Consent.dateTime",
         "path" : "Consent.dateTime",
-        "min" : 1
+        "min" : 1,
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIConsentAccord",
+            "map" : "dateSignature"
+          }
+        ]
       },
       {
         "id" : "Consent.performer",
@@ -151,6 +174,12 @@ Other representations of profile: [CSV](StructureDefinition-tddui-consent-accord
               "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient",
               "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"
             ]
+          }
+        ],
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIConsentAccord",
+            "map" : "auteur"
           }
         ]
       }

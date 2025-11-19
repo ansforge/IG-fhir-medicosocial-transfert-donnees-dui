@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif | *Version*:2.1.0-ballot |
-| Active as of 2025-11-18 | *Computable Name*:TDDUIGoalObjectif |
+| Active as of 2025-11-19 | *Computable Name*:TDDUIGoalObjectif |
 
  
 Profil de la ressource TDDUIGoalObjectif permettant de représenter les résultats à atteindre dans le cadre du projet personnalisé. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-objectif.
   "name" : "TDDUIGoalObjectif",
   "title" : "TDDUI Goal Objectif",
   "status" : "active",
-  "date" : "2025-11-18T15:24:05+00:00",
+  "date" : "2025-11-19T16:22:07+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -156,6 +156,12 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-objectif.
               "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference"
             ]
           }
+        ],
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIGoalObjectif",
+            "map" : "ProjetPersonnalise"
+          }
         ]
       },
       {
@@ -178,6 +184,16 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-objectif.
           {
             "label" : "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-PPObjectif-identifiantObjectif",
             "valueString" : "123456"
+          }
+        ]
+      },
+      {
+        "id" : "Goal.lifecycleStatus",
+        "path" : "Goal.lifecycleStatus",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIGoalObjectif",
+            "map" : "statutObjectif"
           }
         ]
       },
@@ -211,6 +227,38 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-objectif.
               "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient",
               "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"
             ]
+          }
+        ]
+      },
+      {
+        "id" : "Goal.start[x]",
+        "path" : "Goal.start[x]",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "type",
+              "path" : "$this"
+            }
+          ],
+          "ordered" : false,
+          "rules" : "open"
+        }
+      },
+      {
+        "id" : "Goal.start[x]:startDate",
+        "path" : "Goal.start[x]",
+        "sliceName" : "startDate",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "date"
+          }
+        ],
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIGoalObjectif",
+            "map" : "dateDebutObjectif"
           }
         ]
       },
@@ -292,6 +340,12 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-objectif.
               "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person"
             ]
           }
+        ],
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIGoalObjectif",
+            "map" : "referentObjectif"
+          }
         ]
       },
       {
@@ -305,6 +359,12 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-objectif.
             "targetProfile" : [
               "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin"
             ]
+          }
+        ],
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIGoalObjectif",
+            "map" : "Besoin"
           }
         ]
       },

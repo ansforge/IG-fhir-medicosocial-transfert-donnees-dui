@@ -15,7 +15,7 @@
   <name value="TDDUIConsentAccord"/>
   <title value="TDDUI Consent Accord"/>
   <status value="active"/>
-  <date value="2025-11-18T15:24:05+00:00"/>
+  <date value="2025-11-19T16:22:07+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -33,6 +33,11 @@
     </coding>
   </jurisdiction>
   <fhirVersion value="4.0.1"/>
+  <mapping>
+    <identity value="specmetier-to-TDDUIConsentAccord"/>
+    <uri value="https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"/>
+    <name value="Modèle de contenu DUI"/>
+  </mapping>
   <mapping>
     <identity value="workflow"/>
     <uri value="http://hl7.org/fhir/workflow"/>
@@ -162,6 +167,10 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
+      <mapping>
+        <identity value="specmetier-to-TDDUIConsentAccord"/>
+        <map value="Accord"/>
+      </mapping>
       <mapping>
         <identity value="rim"/>
         <map value="Entity. Role, or Act"/>
@@ -424,6 +433,10 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
+      <mapping>
+        <identity value="specmetier-to-TDDUIConsentAccord"/>
+        <map value="dureeValidite"/>
+      </mapping>
       <mapping>
         <identity value="rim"/>
         <map value="n/a"/>
@@ -724,6 +737,10 @@
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
+        <identity value="specmetier-to-TDDUIConsentAccord"/>
+        <map value="dateSignature"/>
+      </mapping>
+      <mapping>
         <identity value="workflow"/>
         <map value="Event.occurrence[x]"/>
       </mapping>
@@ -772,6 +789,10 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="true"/>
+      <mapping>
+        <identity value="specmetier-to-TDDUIConsentAccord"/>
+        <map value="auteur"/>
+      </mapping>
       <mapping>
         <identity value="workflow"/>
         <map value="Event.performer"/>
@@ -2101,6 +2122,10 @@
   <differential>
     <element id="Consent">
       <path value="Consent"/>
+      <mapping>
+        <identity value="specmetier-to-TDDUIConsentAccord"/>
+        <map value="Accord"/>
+      </mapping>
     </element>
     <element id="Consent.extension">
       <path value="Consent.extension"/>
@@ -2122,10 +2147,18 @@
         <code value="Extension"/>
         <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.period"/>
       </type>
+      <mapping>
+        <identity value="specmetier-to-TDDUIConsentAccord"/>
+        <map value="dureeValidite"/>
+      </mapping>
     </element>
     <element id="Consent.dateTime">
       <path value="Consent.dateTime"/>
       <min value="1"/>
+      <mapping>
+        <identity value="specmetier-to-TDDUIConsentAccord"/>
+        <map value="dateSignature"/>
+      </mapping>
     </element>
     <element id="Consent.performer">
       <path value="Consent.performer"/>
@@ -2140,6 +2173,10 @@
         <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient"/>
         <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"/>
       </type>
+      <mapping>
+        <identity value="specmetier-to-TDDUIConsentAccord"/>
+        <map value="auteur"/>
+      </mapping>
     </element>
   </differential>
 </StructureDefinition>

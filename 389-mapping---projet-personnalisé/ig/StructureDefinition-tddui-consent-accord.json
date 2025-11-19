@@ -10,7 +10,7 @@
   "name" : "TDDUIConsentAccord",
   "title" : "TDDUI Consent Accord",
   "status" : "active",
-  "date" : "2025-11-18T15:24:05+00:00",
+  "date" : "2025-11-19T16:22:07+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -29,6 +29,11 @@
   }],
   "fhirVersion" : "4.0.1",
   "mapping" : [{
+    "identity" : "specmetier-to-TDDUIConsentAccord",
+    "uri" : "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html",
+    "name" : "Modèle de contenu DUI"
+  },
+  {
     "identity" : "workflow",
     "uri" : "http://hl7.org/fhir/workflow",
     "name" : "Workflow Pattern"
@@ -162,6 +167,10 @@
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
+        "identity" : "specmetier-to-TDDUIConsentAccord",
+        "map" : "Accord"
+      },
+      {
         "identity" : "rim",
         "map" : "Entity. Role, or Act"
       },
@@ -435,6 +444,10 @@
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
+        "identity" : "specmetier-to-TDDUIConsentAccord",
+        "map" : "dureeValidite"
+      },
+      {
         "identity" : "rim",
         "map" : "n/a"
       },
@@ -744,6 +757,10 @@
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
+        "identity" : "specmetier-to-TDDUIConsentAccord",
+        "map" : "dateSignature"
+      },
+      {
         "identity" : "workflow",
         "map" : "Event.occurrence[x]"
       },
@@ -794,6 +811,10 @@
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
+        "identity" : "specmetier-to-TDDUIConsentAccord",
+        "map" : "auteur"
+      },
+      {
         "identity" : "workflow",
         "map" : "Event.performer"
       },
@@ -2177,7 +2198,11 @@
   "differential" : {
     "element" : [{
       "id" : "Consent",
-      "path" : "Consent"
+      "path" : "Consent",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIConsentAccord",
+        "map" : "Accord"
+      }]
     },
     {
       "id" : "Consent.extension",
@@ -2200,12 +2225,20 @@
       "type" : [{
         "code" : "Extension",
         "profile" : ["http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.period"]
+      }],
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIConsentAccord",
+        "map" : "dureeValidite"
       }]
     },
     {
       "id" : "Consent.dateTime",
       "path" : "Consent.dateTime",
-      "min" : 1
+      "min" : 1,
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIConsentAccord",
+        "map" : "dateSignature"
+      }]
     },
     {
       "id" : "Consent.performer",
@@ -2220,6 +2253,10 @@
         "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person",
         "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient",
         "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"]
+      }],
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIConsentAccord",
+        "map" : "auteur"
       }]
     }]
   }

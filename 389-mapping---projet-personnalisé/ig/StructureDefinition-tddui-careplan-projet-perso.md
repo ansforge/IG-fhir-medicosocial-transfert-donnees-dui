@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-perso | *Version*:2.1.0-ballot |
-| Active as of 2025-11-18 | *Computable Name*:TDDUICarePlanProjetPerso |
+| Active as of 2025-11-19 | *Computable Name*:TDDUICarePlanProjetPerso |
 
  
 Profil de la ressource TDDUICarePlan permettant de représenter le projet personnel de l'usager. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
   "name" : "TDDUICarePlanProjetPerso",
   "title" : "TDDUI CarePlan Projet Perso",
   "status" : "active",
-  "date" : "2025-11-18T15:24:05+00:00",
+  "date" : "2025-11-19T16:22:07+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
