@@ -1,0 +1,31 @@
+@startuml
+
+map "period" as period #DarkGray {
+    dateDebutMiseEnOeuvreProjetPersonnalise => start
+    dateFinMiseEnOeuvreProjetPersonnalise => end
+}
+
+object "**TDDUIPatient**" as TDDUIPatient_subject #fdb462 {
+    Usager
+}
+
+object "**TDDUIConsentAccord**" as TDDUIConsentAccord #8dd3c7 {
+    accordStructure
+    accordUsager
+}
+
+map "**ProjetPersonnalise : TDDUICarePlanProjetPerso**" as ProjetPersonnalise #8dd3c7 {
+    entrantProjetPersonnalisee => <&plus> entrantProjetPerso
+    identifiantProjetPersonnalise => identifier
+    statutProjetPersonnalise => status
+    typeProjetPersonnalise => category
+    titreProjetPersonnalise => title
+    descriptionProjetPersonnalise => description
+    modaliteCommunicationProjetPersonnalise => note
+    period *-> period
+}
+
+ProjetPersonnalise -u-> TDDUIPatient_subject : subject
+ProjetPersonnalise -d-> TDDUIConsentAccord : supportingInfo
+
+@enduml

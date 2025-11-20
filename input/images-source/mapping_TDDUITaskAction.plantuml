@@ -1,0 +1,29 @@
+@startuml
+
+map "executionPeriod" as executionPeriod #DarkGray {
+    dateDebutAction => start
+    dateFinAction => end
+}
+
+object "**TDDUICarePlanProjetPerso**" as TDDUICarePlanProjetPerso_basedOn #8dd3c7 {
+    ProjetPersonnalise
+}
+
+map "**Action : TDDUITaskAction**" as Action #d9d9d9 {
+    identifiantAction => identifier
+    statutAction => status
+    descriptionAction => description
+    referentAction => owner
+    titreAction => <&layers> input:titre
+    evaluationAction => <&layers> input:evaluation
+    avisUsagerAction => <&layers> input:avisUsager
+    resultatAttenduAction => <&layers> input:resultatAttendu
+    pieceJointeAction => <&layers> input:pieceJointe
+    evaluationNonStructureeAction => <&layers> input:evaluationNonStructuree
+    Objectif => <&layers> input:objectif
+    executionPeriod *-> executionPeriod
+}
+
+Action -u-> TDDUICarePlanProjetPerso_basedOn : basedOn
+
+@enduml

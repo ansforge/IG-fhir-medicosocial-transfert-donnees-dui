@@ -1,0 +1,14 @@
+@startuml
+
+object "**TDDUIOrganization**" as TDDUIOrganization_performer #fb8072 {
+    auteur
+}
+
+map "**Accord : TDDUIConsentAccord**" as Accord #8dd3c7 {
+    dureeValidite => <&plus> TDDUI-consentPeriod-r5
+    dateSignature => dateTime
+}
+
+Accord -u-> TDDUIOrganization_performer : performer
+
+@enduml

@@ -1,0 +1,49 @@
+@startuml
+
+map "description" as description #DarkGray {
+    descriptionObjectif => text
+}
+
+map "target" as target #DarkGray {
+    resultatAttenduObjectif => <&layers> detail[x]:detailString
+    dateFinObjectif => <&layers> due[x]:dueDate
+}
+
+map "<&layers> note:titreObjectif" as notetitreObjectif #DarkGray {
+    titreObjectif => text
+}
+
+map "<&layers> note:avisUsagerObjectif" as noteavisUsagerObjectif #DarkGray {
+    avisUsagerObjectif => text
+}
+
+map "<&layers> note:strategieMiseEnOeuvreObjectif" as notestrategieMiseEnOeuvreObjectif #DarkGray {
+    strategieMiseEnOeuvreObjectif => text
+}
+
+object "**TDDUIPractitionerRole**" as TDDUIPractitionerRole_expressedBy #fdb462 {
+    referentObjectif
+}
+
+object "**TDDUIServiceRequestBesoin**" as TDDUIServiceRequestBesoin_addresses #fccde5 {
+    Besoin
+}
+
+map "**Objectif : TDDUIGoalObjectif**" as Objectif #fb8072 {
+    evaluationObjectif => <&plus> referenceEvaluation
+    ProjetPersonnalise => <&plus> referenceProjetPerso
+    identifiantObjectif => identifier
+    statutObjectif => lifecycleStatus
+    domaineObjectif => category
+    dateDebutObjectif => <&layers> start[x]:startDate
+    description *-> description
+    target *-> target
+    <&layers> note:titreObjectif *-> notetitreObjectif
+    <&layers> note:avisUsagerObjectif *-> noteavisUsagerObjectif
+    <&layers> note:strategieMiseEnOeuvreObjectif *-> notestrategieMiseEnOeuvreObjectif
+}
+
+Objectif -u-> TDDUIPractitionerRole_expressedBy : expressedBy
+Objectif -d-> TDDUIServiceRequestBesoin_addresses : addresses
+
+@enduml

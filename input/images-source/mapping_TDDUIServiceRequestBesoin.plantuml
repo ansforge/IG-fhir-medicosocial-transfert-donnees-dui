@@ -1,0 +1,30 @@
+@startuml
+
+map "code" as code #DarkGray {
+    descriptionBesoin => text
+}
+
+map "orderDetail" as orderDetail #DarkGray {
+    analyseProfessionnelBesoin => text
+}
+
+map "note" as note #DarkGray {
+    commentaireBesoin => text
+}
+
+object "**TDDUICarePlanProjetPerso**" as TDDUICarePlanProjetPerso_basedOn #8dd3c7 {
+    ProjetPersonnalise
+}
+
+map "**Besoin : TDDUIServiceRequestBesoin**" as Besoin #fccde5 {
+    pieceJointeBesoin => <&plus> pieceJointeBesoin
+    identifiantBesoin => identifier
+    typeBesoin => category
+    code *-> code
+    orderDetail *-> orderDetail
+    note *-> note
+}
+
+Besoin -u-> TDDUICarePlanProjetPerso_basedOn : basedOn
+
+@enduml
