@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-note | *Version*:2.1.0-ballot |
-| Active as of 2025-11-19 | *Computable Name*:TDDUIGoalNote |
+| Active as of 2025-11-20 | *Computable Name*:TDDUIGoalNote |
 
 Extension pour discriminer l'élément Goal.note.
 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-note.csv)
   "name" : "TDDUIGoalNote",
   "title" : "TDDUI Goal Note",
   "status" : "active",
-  "date" : "2025-11-19T16:22:07+00:00",
+  "date" : "2025-11-20T10:32:05+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
