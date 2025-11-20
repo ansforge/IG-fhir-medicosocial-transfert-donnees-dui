@@ -3,14 +3,14 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="tddui-goal-note-cs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : CodeSystem tddui-goal-note-cs</b></p><a name="tddui-goal-note-cs"> </a><a name="hctddui-goal-note-cs"> </a><p>This  code system <code>https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-goal-note-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">titreObjectif<a name="tddui-goal-note-cs-titreObjectif"> </a></td><td>Titre de l'objectif</td></tr><tr><td style="white-space:nowrap">avisUsagerObjectif<a name="tddui-goal-note-cs-avisUsagerObjectif"> </a></td><td>Avis de l'usager sur l'objectif</td></tr><tr><td style="white-space:nowrap">strategieMiseEnOeuvreObjectif<a name="tddui-goal-note-cs-strategieMiseEnOeuvreObjectif"> </a></td><td>Stratégie de mise en œuvre de l'objectif</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : CodeSystem tddui-goal-note-cs</b></p><a name="tddui-goal-note-cs"> </a><a name="hctddui-goal-note-cs"> </a><p>This  code system <code>https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-goal-note-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">titreObjectif<a name="tddui-goal-note-cs-titreObjectif"> </a></td><td>Titre de l'objectif</td></tr><tr><td style="white-space:nowrap">avisUsagerObjectif<a name="tddui-goal-note-cs-avisUsagerObjectif"> </a></td><td>Avis de l'usager sur l'objectif</td></tr><tr><td style="white-space:nowrap">strategieMiseEnOeuvreObjectif<a name="tddui-goal-note-cs-strategieMiseEnOeuvreObjectif"> </a></td><td>Stratégie de mise en œuvre de l'objectif</td></tr><tr><td style="white-space:nowrap">origineAttente<a name="tddui-goal-note-cs-origineAttente"> </a></td><td>Acteur (personne physique ou personne morale) qui a un lien avec l'usager ou l'usager elle-même qui définit son attente.</td></tr><tr><td style="white-space:nowrap">commentaireAttente<a name="tddui-goal-note-cs-commentaireAttente"> </a></td><td>Permet de compléter ou éclairer la description de l'attente.</td></tr></table></div>
   </text>
   <url value="https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-goal-note-cs"/>
   <version value="2.1.0-ballot"/>
   <name value="TDDUIGoalNoteCS"/>
   <title value="TDDUI Goal Note CodeSystem"/>
   <status value="active"/>
-  <date value="2025-11-20T10:32:05+00:00"/>
+  <date value="2025-11-20T16:06:37+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -28,7 +28,7 @@
     </coding>
   </jurisdiction>
   <content value="complete"/>
-  <count value="3"/>
+  <count value="5"/>
   <concept>
     <code value="titreObjectif"/>
     <display value="Titre de l'objectif"/>
@@ -40,5 +40,13 @@
   <concept>
     <code value="strategieMiseEnOeuvreObjectif"/>
     <display value="Stratégie de mise en œuvre de l'objectif"/>
+  </concept>
+  <concept>
+    <code value="origineAttente"/>
+    <display value="Acteur (personne physique ou personne morale) qui a un lien avec l'usager ou l'usager elle-même qui définit son attente."/>
+  </concept>
+  <concept>
+    <code value="commentaireAttente"/>
+    <display value="Permet de compléter ou éclairer la description de l'attente."/>
   </concept>
 </CodeSystem>

@@ -34,7 +34,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 | | |
 | :--- | :--- |
 | [TDDUI Bundle](StructureDefinition-tddui-bundle.md) | Profil générique créé pour transmettre des données d'un logiciel DUI. |
-| [TDDUI CarePlan Projet Perso](StructureDefinition-tddui-careplan-projet-perso.md) | Profil de la ressource TDDUICarePlan permettant de représenter le projet personnel de l'usager. |
+| [TDDUI CarePlan Projet Personalisé](StructureDefinition-tddui-careplan-projet-personalise.md) | Profil de la ressource TDDUICarePlan permettant de représenter le projet personalisé de l'usager. |
 | [TDDUI Consent Accord](StructureDefinition-tddui-consent-accord.md) | Profil de la ressource TDDUIConsent permettant de représenter l'accord de l'usager et de la structure. |
 | [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md) | Profil de la ressource SimplifiedPublishDocumentReference pour les pièces jointes liées à l’événement et à l'évaluation. |
 | [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md) | Profil de la ressource Encounter permettant de regrouper les évènements liés à la prise en charge de l’usager dans une structure ESSMS. |
@@ -134,19 +134,22 @@ These are example instances that show what data produced and consumed by systems
 
 | | |
 | :--- | :--- |
-| [Projet personnalisé de Mme Dupont](CarePlan-tddui-careplan-projet-perso-example.md) | Exemple d'un projet personnalisé |
+| [Projet personnalisé de Mme Jeanne L.](CarePlan-tddui-careplan-projet-perso-pa-example.md) | Exemple d'un projet personnalisé PA |
 | [TDDUIBundleExample](Bundle-ExampleTDDUIBundle.md) | Exemple de bundle conforme au profil TDDUIBundle |
 | [fr-core-related-person-example](RelatedPerson-fr-core-related-person-example.md) | Exemple de la famille de l'usager. |
 | [tddui-consent-accord-example](Consent-tddui-consent-accord-example.md) | Exemple d'un accord de la structure |
 | [tddui-encounter-evenement-example](Encounter-tddui-encounter-evenement-example.md) | Exemple d'un évènement |
 | [tddui-encounter-sejour-example](Encounter-tddui-encounter-sejour-example.md) | Exemple d'un séjour en ESSMS |
 | [tddui-event-location-example](Location-tddui-event-location-example.md) | Lieu de l'évènement |
-| [tddui-goal-attente-famille-example](Goal-tddui-goal-attente-famille-example.md) | Exemple des attentes de la famille dans le cadre du projet personnalisé. |
-| [tddui-goal-attente-usager-example](Goal-tddui-goal-attente-usager-example.md) | Exemple des attentes de l'usager dans le cadre du projet personnalisé. |
-| [tddui-goal-objectif-example](Goal-tddui-goal-objectif-example.md) | Exemple des attentes de la famille dans le cadre du projet personnalisé. |
+| [tddui-goal-attente-famille-pa-example](Goal-tddui-goal-attente-famille-pa-example.md) | Exemple des attentes de la famille dans le cadre du projet personnalisé PA. |
+| [tddui-goal-attente-usager-pa-example](Goal-tddui-goal-attente-usager-pa-example.md) | Exemple des attentes de l'usager dans le cadre du projet personnalisé PA. |
+| [tddui-goal-objectif-1-pa-example](Goal-tddui-goal-objectif-1-pa-example.md) | Exemple d'un objectif dans le cadre du projet personnalisé PA. |
+| [tddui-goal-objectif-2-pa-example](Goal-tddui-goal-objectif-2-pa-example.md) | Exemple d'un objectif dans le cadre du projet personnalisé PA. |
+| [tddui-goal-objectif-3-pa-example](Goal-tddui-goal-objectif-3-pa-example.md) | Exemple d'un objectif dans le cadre du projet personnalisé PA. |
 | [tddui-organization-example](Organization-tddui-organization-example.md) | ESSMS - Les Chênes Verts |
 | [tddui-patient-example](Patient-tddui-patient-example.md) | Exemple de la ressource TDDUIPatient |
 | [tddui-patient-ins-example](Patient-tddui-patient-ins-example.md) | Exemple de la ressource TDDUIPatientINS |
+| [tddui-patient-pa-example-pp](Patient-tddui-patient-pa-example-pp.md) | Exemple de la ressource TDDUIPatient dans le cadre d'un projet personnalisé PA |
 | [tddui-practitioner-example](Practitioner-tddui-practitioner-example.md) | Exemple d'un professionnel de santé |
 | [tddui-practitioner-role-example](PractitionerRole-tddui-practitioner-role-example.md) | Exemple d'un professionnel de santé |
 | [tddui-questionnaire-response-aggir-pa-example](QuestionnaireResponse-tddui-questionnaire-response-aggir-pa-example.md) | Grille de réponse AGGIR PA |
@@ -154,7 +157,11 @@ These are example instances that show what data produced and consumed by systems
 | [tddui-questionnaire-response-serafin-precision-example](QuestionnaireResponse-tddui-questionnaire-response-serafin-precision-example.md) | Evaluation SERAFIN pour un besoin d'hébergement adapté avec précision |
 | [tddui-questionnaire-response-serafin-sans-precision-example](QuestionnaireResponse-tddui-questionnaire-response-serafin-sans-precision-example.md) | Evaluation SERAFIN pour un besoin d'hébergement adapté sans précision |
 | [tddui-questionnaire-response-situation-ssiad-example](QuestionnaireResponse-tddui-questionnaire-response-situation-ssiad-example.md) | Grille de réponse de la situation SSIAD |
-| [tddui-servicerequest-besoin-example](ServiceRequest-tddui-servicerequest-besoin-example.md) | Exemple d'un besoin de l'usager. |
+| [tddui-servicerequest-besoin-pa-example](ServiceRequest-tddui-servicerequest-besoin-pa-example.md) | Exemple d'un besoin de l'usager dans le cadre du projet personnalisé PA. |
+| [tddui-task-action-1-pa-example](Task-tddui-task-action-1-pa-example.md) | Exemple des actions de l'objectif 1 dans le cadre du projet personnalisé PA. |
+| [tddui-task-action-2-pa-example](Task-tddui-task-action-2-pa-example.md) | Exemple des actions de l'objectif 2 dans le cadre du projet personnalisé PA. |
+| [tddui-task-action-3-pa-example](Task-tddui-task-action-3-pa-example.md) | Exemple des actions de l'objectif 3 dans le cadre du projet personnalisé PA. |
+| [tddui-task-moyen-ressource-pa-example](Task-tddui-task-moyen-ressource-pa-example.md) | Exemple des moyens et ressources dans le cadre du projet personnalisé PA. |
 | [tddui-task-transport-example](Task-tddui-task-transport-example.md) | Exemple du transport. |
 | [tddui-task-transport-professionel-example](Task-tddui-task-transport-professionel-example.md) | Exemple du transport du professionnel. |
 | [tddui-task-transport-usager-example](Task-tddui-task-transport-usager-example.md) | Exemple du transport de l'usager. |

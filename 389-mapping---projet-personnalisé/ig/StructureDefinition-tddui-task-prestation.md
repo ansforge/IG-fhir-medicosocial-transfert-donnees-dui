@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-prestatio
   "name" : "TDDUITaskPrestation",
   "title" : "TDDUI Task Prestation",
   "status" : "active",
-  "date" : "2025-11-20T10:32:05+00:00",
+  "date" : "2025-11-20T16:06:37+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -143,7 +143,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-prestatio
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-perso"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personalise"
             ]
           }
         ],

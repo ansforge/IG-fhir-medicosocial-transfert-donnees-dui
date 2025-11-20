@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Task xmlns="http://hl7.org/fhir">
+  <id value="tddui-task-action-2-pa-example"/>
+  <meta>
+    <profile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : Task tddui-task-action-2-pa-example</b></p><a name="tddui-task-action-2-pa-example"> </a><a name="hctddui-task-action-2-pa-example"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="StructureDefinition-tddui-task-action.html">TDDUI Task Action</a></p></div><p><b>identifier</b>: 3480787529/123456789-PPAction-12345</p><p><b>basedOn</b>: <a href="CarePlan-tddui-careplan-projet-perso-pa-example.html">CarePlan Projet personnalisé de Mme Jeanne L.</a></p><p><b>status</b>: In Progress</p><p><b>intent</b>: plan</p><p><b>description</b>: 
+IDE (Interne)
+- Pesée mensuelle et dépistage dénutrition
+- Surveillance hydratation/appétit (transmissions)
+Animateur·trice (Interne)
+- Atelier cuisine mensuel co‑animé avec résidents
+- Recueil préférences culinaires
+Cuisine/économe (Interne)
+- Menus enrichis adaptés aux goûts (textures, portions)
+</p><blockquote><p><b>input</b></p><p><b>type</b>: <span title="Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem titre}">Titre de l'action à mener.</span></p><p><b>value</b>: Actions pour atteindre l'objectif 2</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title="Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem objectif}">Objectif(s).</span></p><p><b>value</b>: <a href="Goal-tddui-goal-objectif-2-pa-example.html">Goal : extension = -&gt;CarePlan Projet personnalisé de Mme Jeanne L.; identifier = 3480787529/123456789-PPObjectif-12345; lifecycleStatus = active; description = ; note = Objectif 2</a></p></blockquote></div>
+  </text>
+  <identifier>
+    <value value="3480787529/123456789-PPAction-12345"/>
+  </identifier>
+  <basedOn>
+    <reference value="CarePlan/tddui-careplan-projet-perso-pa-example"/>
+  </basedOn>
+  <status value="in-progress"/>
+  <intent value="plan"/>
+  <description value="&#xA;IDE (Interne)&#xA;- Pesée mensuelle et dépistage dénutrition&#xA;- Surveillance hydratation/appétit (transmissions)&#xA;Animateur·trice (Interne)&#xA;- Atelier cuisine mensuel co‑animé avec résidents&#xA;- Recueil préférences culinaires&#xA;Cuisine/économe (Interne)&#xA;- Menus enrichis adaptés aux goûts (textures, portions)&#xA;"/>
+  <input>
+    <type>
+      <coding>
+        <system value="https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem"/>
+        <code value="titre"/>
+      </coding>
+    </type>
+    <valueString value="Actions pour atteindre l'objectif 2"/>
+  </input>
+  <input>
+    <type>
+      <coding>
+        <system value="https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem"/>
+        <code value="objectif"/>
+      </coding>
+    </type>
+    <valueReference>
+      <reference value="Goal/tddui-goal-objectif-2-pa-example"/>
+    </valueReference>
+  </input>
+</Task>

@@ -11,7 +11,7 @@
   fhir:id [ fhir:v "tddui-goal-note-cs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem tddui-goal-note-cs</b></p><a name=\"tddui-goal-note-cs\"> </a><a name=\"hctddui-goal-note-cs\"> </a><p>This  code system <code>https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-goal-note-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">titreObjectif<a name=\"tddui-goal-note-cs-titreObjectif\"> </a></td><td>Titre de l'objectif</td></tr><tr><td style=\"white-space:nowrap\">avisUsagerObjectif<a name=\"tddui-goal-note-cs-avisUsagerObjectif\"> </a></td><td>Avis de l'usager sur l'objectif</td></tr><tr><td style=\"white-space:nowrap\">strategieMiseEnOeuvreObjectif<a name=\"tddui-goal-note-cs-strategieMiseEnOeuvreObjectif\"> </a></td><td>Stratégie de mise en œuvre de l'objectif</td></tr></table></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem tddui-goal-note-cs</b></p><a name=\"tddui-goal-note-cs\"> </a><a name=\"hctddui-goal-note-cs\"> </a><p>This  code system <code>https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-goal-note-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">titreObjectif<a name=\"tddui-goal-note-cs-titreObjectif\"> </a></td><td>Titre de l'objectif</td></tr><tr><td style=\"white-space:nowrap\">avisUsagerObjectif<a name=\"tddui-goal-note-cs-avisUsagerObjectif\"> </a></td><td>Avis de l'usager sur l'objectif</td></tr><tr><td style=\"white-space:nowrap\">strategieMiseEnOeuvreObjectif<a name=\"tddui-goal-note-cs-strategieMiseEnOeuvreObjectif\"> </a></td><td>Stratégie de mise en œuvre de l'objectif</td></tr><tr><td style=\"white-space:nowrap\">origineAttente<a name=\"tddui-goal-note-cs-origineAttente\"> </a></td><td>Acteur (personne physique ou personne morale) qui a un lien avec l'usager ou l'usager elle-même qui définit son attente.</td></tr><tr><td style=\"white-space:nowrap\">commentaireAttente<a name=\"tddui-goal-note-cs-commentaireAttente\"> </a></td><td>Permet de compléter ou éclairer la description de l'attente.</td></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:url [
      fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-goal-note-cs"^^xsd:anyURI ;
@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "TDDUIGoalNoteCS"] ; # 
   fhir:title [ fhir:v "TDDUI Goal Note CodeSystem"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-11-20T10:32:05+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-11-20T16:06:37+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -42,7 +42,7 @@
      ] )
   ] ) ; # 
   fhir:content [ fhir:v "complete"] ; # 
-  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
   fhir:concept ( [
      fhir:code [ fhir:v "titreObjectif" ] ;
      fhir:display [ fhir:v "Titre de l'objectif" ]
@@ -52,6 +52,12 @@
   ] [
      fhir:code [ fhir:v "strategieMiseEnOeuvreObjectif" ] ;
      fhir:display [ fhir:v "Stratégie de mise en œuvre de l'objectif" ]
+  ] [
+     fhir:code [ fhir:v "origineAttente" ] ;
+     fhir:display [ fhir:v "Acteur (personne physique ou personne morale) qui a un lien avec l'usager ou l'usager elle-même qui définit son attente." ]
+  ] [
+     fhir:code [ fhir:v "commentaireAttente" ] ;
+     fhir:display [ fhir:v "Permet de compléter ou éclairer la description de l'attente." ]
   ] ) . # 
 
 # -------------------------------------------------------------------------------------

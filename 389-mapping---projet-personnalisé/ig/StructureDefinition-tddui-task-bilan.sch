@@ -12,10 +12,6 @@
   <sch:pattern>
     <sch:title>f:Task</sch:title>
     <sch:rule context="f:Task">
-      <sch:assert test="count(f:extension[@url = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference']) &gt;= 1">extension with URL = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference': minimum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference']) &lt;= 1">extension with URL = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment']) &gt;= 1">extension with URL = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment': minimum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment']) &lt;= 1">extension with URL = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:identifier) &gt;= 1">identifier: minimum cardinality of 'identifier' is 1</sch:assert>
       <sch:assert test="count(f:identifier) &lt;= 1">identifier: maximum cardinality of 'identifier' is 1</sch:assert>
       <sch:assert test="count(f:basedOn) &gt;= 1">basedOn: minimum cardinality of 'basedOn' is 1</sch:assert>

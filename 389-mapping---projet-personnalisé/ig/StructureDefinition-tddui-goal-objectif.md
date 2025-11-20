@@ -17,7 +17,7 @@ Profil de la ressource TDDUIGoalObjectif permettant de représenter les résulta
 **Usages:**
 
 * Refer to this Profile: [TDDUI Task Action](StructureDefinition-tddui-task-action.md)
-* Examples for this Profile: [Goal/tddui-goal-objectif-example](Goal-tddui-goal-objectif-example.md)
+* Examples for this Profile: [Goal/tddui-goal-objectif-1-pa-example](Goal-tddui-goal-objectif-1-pa-example.md), [Goal/tddui-goal-objectif-2-pa-example](Goal-tddui-goal-objectif-2-pa-example.md) and [Goal/tddui-goal-objectif-3-pa-example](Goal-tddui-goal-objectif-3-pa-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-goal-objectif)
 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-objectif.
   "name" : "TDDUIGoalObjectif",
   "title" : "TDDUI Goal Objectif",
   "status" : "active",
-  "date" : "2025-11-20T10:32:05+00:00",
+  "date" : "2025-11-20T16:06:37+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

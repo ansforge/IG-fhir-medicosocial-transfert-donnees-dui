@@ -31,7 +31,7 @@ CodeSystem définissant les types de notes pour l'élément Goal.note
   "name" : "TDDUIGoalNoteCS",
   "title" : "TDDUI Goal Note CodeSystem",
   "status" : "active",
-  "date" : "2025-11-20T10:32:05+00:00",
+  "date" : "2025-11-20T16:06:37+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -57,7 +57,7 @@ CodeSystem définissant les types de notes pour l'élément Goal.note
     }
   ],
   "content" : "complete",
-  "count" : 3,
+  "count" : 5,
   "concept" : [
     {
       "code" : "titreObjectif",
@@ -70,6 +70,14 @@ CodeSystem définissant les types de notes pour l'élément Goal.note
     {
       "code" : "strategieMiseEnOeuvreObjectif",
       "display" : "Stratégie de mise en œuvre de l'objectif"
+    },
+    {
+      "code" : "origineAttente",
+      "display" : "Acteur (personne physique ou personne morale) qui a un lien avec l'usager ou l'usager elle-même qui définit son attente."
+    },
+    {
+      "code" : "commentaireAttente",
+      "display" : "Permet de compléter ou éclairer la description de l'attente."
     }
   ]
 }

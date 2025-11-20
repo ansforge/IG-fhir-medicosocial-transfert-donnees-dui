@@ -8,7 +8,7 @@
 
 Profil: [FR Core Related Person Profile](https://hl7.fr/ig/fhir/core/2.1.0/StructureDefinition-fr-core-related-person.html)
 
-**identifier**: 3480787529/147720425367411-PPAttente-12549-famille
+**identifier**: 3480787529/123456789-PPAttente-1234-enfant
 
 **patient**: [DUPONT Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/194704032)](Patient-tddui-patient-ins-example.md)
 
@@ -29,7 +29,7 @@ Profil: [FR Core Related Person Profile](https://hl7.fr/ig/fhir/core/2.1.0/Struc
   },
   "identifier" : [
     {
-      "value" : "3480787529/147720425367411-PPAttente-12549-famille"
+      "value" : "3480787529/123456789-PPAttente-1234-enfant"
     }
   ],
   "patient" : {

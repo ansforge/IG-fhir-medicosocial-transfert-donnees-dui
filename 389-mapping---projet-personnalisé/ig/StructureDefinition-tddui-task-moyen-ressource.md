@@ -16,7 +16,7 @@ Profil de la ressource Task permettant de représenter les moyens ou ressources 
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Implementation Guide
+* Examples for this Profile: [Task/tddui-task-moyen-ressource-pa-example](Task-tddui-task-moyen-ressource-pa-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-task-moyen-ressource)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-moyen-res
   "name" : "TDDUITaskMoyenRessource",
   "title" : "TDDUI Task MoyenRessource",
   "status" : "active",
-  "date" : "2025-11-20T10:32:05+00:00",
+  "date" : "2025-11-20T16:06:37+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -143,7 +143,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-moyen-res
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-perso"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personalise"
             ]
           }
         ],
@@ -248,7 +248,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-moyen-res
           "coding" : [
             {
               "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-moyen-ressource-codesystem",
-              "code" : "type"
+              "code" : "titre"
             }
           ]
         }
@@ -342,7 +342,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-moyen-res
         "id" : "Task.input:evaluationNonStructuree",
         "path" : "Task.input",
         "sliceName" : "evaluationNonStructuree",
-        "short" : "EValuation non structurée",
+        "short" : "Evaluation non structurée",
         "min" : 0,
         "max" : "1",
         "mapping" : [

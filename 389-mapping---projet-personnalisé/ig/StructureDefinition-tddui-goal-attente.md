@@ -16,7 +16,7 @@ Profil de la ressource TDDUIGoal permettant de représenter les attentes de l'us
 
 **Usages:**
 
-* Examples for this Profile: [Goal/tddui-goal-attente-famille-example](Goal-tddui-goal-attente-famille-example.md) and [Goal/tddui-goal-attente-usager-example](Goal-tddui-goal-attente-usager-example.md)
+* Examples for this Profile: [Goal/tddui-goal-attente-famille-pa-example](Goal-tddui-goal-attente-famille-pa-example.md) and [Goal/tddui-goal-attente-usager-pa-example](Goal-tddui-goal-attente-usager-pa-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-goal-attente)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-attente.c
   "name" : "TDDUIGoalAttente",
   "title" : "TDDUI Goal Attente",
   "status" : "active",
-  "date" : "2025-11-20T10:32:05+00:00",
+  "date" : "2025-11-20T16:06:37+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -189,21 +189,46 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-attente.c
         ]
       },
       {
-        "id" : "Goal.expressedBy",
-        "path" : "Goal.expressedBy",
+        "id" : "Goal.note",
+        "path" : "Goal.note",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "pattern",
+              "path" : "extension('https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-note').value"
+            }
+          ],
+          "rules" : "open"
+        },
+        "min" : 1
+      },
+      {
+        "id" : "Goal.note.extension",
+        "path" : "Goal.note.extension",
+        "min" : 1
+      },
+      {
+        "id" : "Goal.note.extension:TDDUIGoalNoteExtension",
+        "path" : "Goal.note.extension",
+        "sliceName" : "TDDUIGoalNoteExtension",
         "min" : 1,
+        "max" : "2",
         "type" : [
           {
-            "code" : "Reference",
-            "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role",
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner",
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient",
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins",
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person"
+            "code" : "Extension",
+            "profile" : [
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-note"
             ]
           }
-        ],
+        ]
+      },
+      {
+        "id" : "Goal.note:origineAttente",
+        "path" : "Goal.note",
+        "sliceName" : "origineAttente",
+        "short" : "Originie de l'attente",
+        "min" : 1,
+        "max" : "1",
         "mapping" : [
           {
             "identity" : "specmetier-to-TDDUIGoalAttente",
@@ -212,14 +237,58 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-attente.c
         ]
       },
       {
-        "id" : "Goal.note.text",
-        "path" : "Goal.note.text",
+        "id" : "Goal.note:origineAttente.extension:TDDUIGoalNoteExtension",
+        "path" : "Goal.note.extension",
+        "sliceName" : "TDDUIGoalNoteExtension",
+        "min" : 1,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Extension",
+            "profile" : [
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-note"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "Goal.note:origineAttente.extension:TDDUIGoalNoteExtension.value[x]",
+        "path" : "Goal.note.extension.value[x]",
+        "patternCode" : "origineAttente"
+      },
+      {
+        "id" : "Goal.note:commentaireAttente",
+        "path" : "Goal.note",
+        "sliceName" : "commentaireAttente",
+        "short" : "Commentaire de l'attente",
+        "min" : 0,
+        "max" : "*",
         "mapping" : [
           {
             "identity" : "specmetier-to-TDDUIGoalAttente",
             "map" : "commentaireAttente"
           }
         ]
+      },
+      {
+        "id" : "Goal.note:commentaireAttente.extension:TDDUIGoalNoteExtension",
+        "path" : "Goal.note.extension",
+        "sliceName" : "TDDUIGoalNoteExtension",
+        "min" : 1,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Extension",
+            "profile" : [
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-note"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "Goal.note:commentaireAttente.extension:TDDUIGoalNoteExtension.value[x]",
+        "path" : "Goal.note.extension.value[x]",
+        "patternCode" : "commentaireAttente"
       }
     ]
   }

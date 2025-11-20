@@ -16,7 +16,7 @@ Profil de la ressource TDDUIConsent permettant de représenter l'accord de l'usa
 
 **Usages:**
 
-* Refer to this Profile: [TDDUI CarePlan Projet Perso](StructureDefinition-tddui-careplan-projet-perso.md)
+* Refer to this Profile: [TDDUI CarePlan Projet Personalisé](StructureDefinition-tddui-careplan-projet-personalise.md)
 * Examples for this Profile: [Consent/tddui-consent-accord-example](Consent-tddui-consent-accord-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-consent-accord)
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-consent-accord
   "name" : "TDDUIConsentAccord",
   "title" : "TDDUI Consent Accord",
   "status" : "active",
-  "date" : "2025-11-20T10:32:05+00:00",
+  "date" : "2025-11-20T16:06:37+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -167,7 +167,6 @@ Other representations of profile: [CSV](StructureDefinition-tddui-consent-accord
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization",
               "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role",
               "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner",
               "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person",

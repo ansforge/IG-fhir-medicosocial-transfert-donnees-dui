@@ -17,8 +17,8 @@ Profil de la ressource FrCorePatientProfile permettant de représenter un usager
 **Usages:**
 
 * Use this Profile: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
-* Refer to this Profile: [TDDUI CarePlan Projet Perso](StructureDefinition-tddui-careplan-projet-perso.md), [TDDUI Consent Accord](StructureDefinition-tddui-consent-accord.md), [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md), [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)...Show 6 more,[TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md),[TDDUI Goal Attente](StructureDefinition-tddui-goal-attente.md),[TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md),[TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md),[TDDUI ServiceRequest Besoin](StructureDefinition-tddui-service-request-besoin.md)and[TDDUI Task Bilan](StructureDefinition-tddui-task-bilan.md)
-* Examples for this Profile: [Patient/tddui-patient-example](Patient-tddui-patient-example.md)
+* Refer to this Profile: [TDDUI CarePlan Projet Personalisé](StructureDefinition-tddui-careplan-projet-personalise.md), [TDDUI Consent Accord](StructureDefinition-tddui-consent-accord.md), [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md), [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)...Show 6 more,[TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md),[TDDUI Goal Attente](StructureDefinition-tddui-goal-attente.md),[TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md),[TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md),[TDDUI ServiceRequest Besoin](StructureDefinition-tddui-service-request-besoin.md)and[TDDUI Task Bilan](StructureDefinition-tddui-task-bilan.md)
+* Examples for this Profile: [Patient/tddui-patient-example](Patient-tddui-patient-example.md) and [Patient/tddui-patient-pa-example-pp](Patient-tddui-patient-pa-example-pp.md)
 * CapabilityStatements using this Profile: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-patient)
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient.csv), 
   "name" : "TDDUIPatient",
   "title" : "TDDUI Patient",
   "status" : "active",
-  "date" : "2025-11-20T10:32:05+00:00",
+  "date" : "2025-11-20T16:06:37+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

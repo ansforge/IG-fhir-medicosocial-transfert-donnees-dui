@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-bilan.csv
   "name" : "TDDUITaskBilan",
   "title" : "TDDUI Task Bilan",
   "status" : "active",
-  "date" : "2025-11-20T10:32:05+00:00",
+  "date" : "2025-11-20T16:06:37+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -123,30 +123,14 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-bilan.csv
           ],
           "ordered" : false,
           "rules" : "open"
-        },
-        "min" : 2
-      },
-      {
-        "id" : "Task.extension:referenceProjetPerso",
-        "path" : "Task.extension",
-        "sliceName" : "referenceProjetPerso",
-        "min" : 1,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference"
-            ]
-          }
-        ]
+        }
       },
       {
         "id" : "Task.extension:pieceJointeBilan",
         "path" : "Task.extension",
         "sliceName" : "pieceJointeBilan",
-        "min" : 1,
-        "max" : "1",
+        "min" : 0,
+        "max" : "*",
         "type" : [
           {
             "code" : "Extension",
@@ -183,7 +167,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-bilan.csv
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-perso"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personalise"
             ]
           }
         ],
@@ -364,7 +348,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-bilan.csv
         "path" : "Task.input.value[x]",
         "type" : [
           {
-            "code" : "date"
+            "code" : "dateTime"
           }
         ]
       },
@@ -527,8 +511,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-bilan.csv
               "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner",
               "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient",
               "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins",
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person",
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person"
             ]
           }
         ]

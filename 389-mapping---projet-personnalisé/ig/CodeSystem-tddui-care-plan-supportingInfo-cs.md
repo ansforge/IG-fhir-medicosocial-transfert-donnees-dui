@@ -31,7 +31,7 @@ CodeSystem définissant les types de notes pour l'élément CarePlan.supportingI
   "name" : "TDDUICarePlanSupportingInfoCS",
   "title" : "TDDUI CarePlan supportingInfo CodeSystem",
   "status" : "active",
-  "date" : "2025-11-20T10:32:05+00:00",
+  "date" : "2025-11-20T16:06:37+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

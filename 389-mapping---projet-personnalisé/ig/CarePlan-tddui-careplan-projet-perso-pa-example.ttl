@@ -1,0 +1,39 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/tddui/CarePlan/tddui-careplan-projet-perso-pa-example> a fhir:CarePlan ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "tddui-careplan-projet-perso-pa-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personalise"^^xsd:anyURI ;
+       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personalise>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : PlanDeSoins tddui-careplan-projet-perso-pa-example</b></p><a name=\"tddui-careplan-projet-perso-pa-example\"> </a><a name=\"hctddui-careplan-projet-perso-pa-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-careplan-projet-personalise.html\">TDDUI CarePlan Projet Personalisé</a></p></div><p><b>identifier</b>: 3480787529/123456789-PPER-1234</p><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>title</b>: Projet personnalisé de Mme Jeanne L.</p><p><b>subject</b>: <a href=\"Patient-tddui-patient-pa-example-pp.html\">Jeanne L. (official) Female, Date de Naissance inconnue ( Patient internal identifier: 3480787529/123456789)</a></p><p><b>supportingInfo</b>: <a href=\"Consent-tddui-consent-accord-example.html\">Consentement structure</a></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "3480787529/123456789-PPER-1234" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "plan"] ; # 
+  fhir:title [ fhir:v "Projet personnalisé de Mme Jeanne L."] ; # 
+  fhir:subject [
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-patient-pa-example-pp> ;
+     fhir:reference [ fhir:v "Patient/tddui-patient-pa-example-pp" ]
+  ] ; # 
+  fhir:supportingInfo ( [
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Consent/tddui-consent-accord-example> ;
+     fhir:reference [ fhir:v "Consent/tddui-consent-accord-example" ] ;
+     fhir:display [ fhir:v "Consentement structure" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

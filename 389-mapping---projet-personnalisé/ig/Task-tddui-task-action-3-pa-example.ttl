@@ -1,0 +1,64 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/tddui/Task/tddui-task-action-3-pa-example> a fhir:Task ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "tddui-task-action-3-pa-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"^^xsd:anyURI ;
+       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Task tddui-task-action-3-pa-example</b></p><a name=\"tddui-task-action-3-pa-example\"> </a><a name=\"hctddui-task-action-3-pa-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-task-action.html\">TDDUI Task Action</a></p></div><p><b>identifier</b>: 3480787529/123456789-PPAction-123456</p><p><b>basedOn</b>: <a href=\"CarePlan-tddui-careplan-projet-perso-pa-example.html\">CarePlan Projet personnalisé de Mme Jeanne L.</a></p><p><b>status</b>: In Progress</p><p><b>intent</b>: plan</p><p><b>description</b>: \n•Animateur·trice (Interne)\n- Inscription chorale et club lecture\n- Organisation planning activités\nAS / Référent·e projet (Interne)\n- Mise en place visios hebdomadaires (tablette)\n- Accompagnement ponctuel si fatigue\nPsychologue (Interne)\n- Entretien de satisfaction semestriel\n</p><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem titre}\">Titre de l'action à mener.</span></p><p><b>value</b>: Actions pour atteindre l'objectif 3</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem objectif}\">Objectif(s).</span></p><p><b>value</b>: <a href=\"Goal-tddui-goal-objectif-3-pa-example.html\">Goal : extension = -&gt;CarePlan Projet personnalisé de Mme Jeanne L.; identifier = 3480787529/123456789-PPObjectif-123456; lifecycleStatus = active; description = ; note = Objectif 3</a></p></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "3480787529/123456789-PPAction-123456" ]
+  ] ) ; # 
+  fhir:basedOn ( [
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CarePlan/tddui-careplan-projet-perso-pa-example> ;
+     fhir:reference [ fhir:v "CarePlan/tddui-careplan-projet-perso-pa-example" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "in-progress"] ; # 
+  fhir:intent [ fhir:v "plan"] ; # 
+  fhir:description [ fhir:v "\n•Animateur·trice (Interne)\n- Inscription chorale et club lecture\n- Organisation planning activités\nAS / Référent·e projet (Interne)\n- Mise en place visios hebdomadaires (tablette)\n- Accompagnement ponctuel si fatigue\nPsychologue (Interne)\n- Entretien de satisfaction semestriel\n"] ; # 
+  fhir:input ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem"^^xsd:anyURI ;
+           fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem>
+         ] ;
+         fhir:code [ fhir:v "titre" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "Actions pour atteindre l'objectif 3"
+     ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem"^^xsd:anyURI ;
+           fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem>
+         ] ;
+         fhir:code [ fhir:v "objectif" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Goal/tddui-goal-objectif-3-pa-example> ;
+       fhir:reference [ fhir:v "Goal/tddui-goal-objectif-3-pa-example" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

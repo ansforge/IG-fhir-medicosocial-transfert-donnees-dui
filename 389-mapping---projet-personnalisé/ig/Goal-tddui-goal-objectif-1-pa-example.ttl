@@ -1,0 +1,63 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/tddui/Goal/tddui-goal-objectif-1-pa-example> a fhir:Goal ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "tddui-goal-objectif-1-pa-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif"^^xsd:anyURI ;
+       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : But tddui-goal-objectif-1-pa-example</b></p><a name=\"tddui-goal-objectif-1-pa-example\"> </a><a name=\"hctddui-goal-objectif-1-pa-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-goal-objectif.html\">TDDUI Goal Objectif</a></p></div><p><b>Lien vers le projet personnalisé</b>: <a href=\"CarePlan-tddui-careplan-projet-perso-pa-example.html\">CarePlan Projet personnalisé de Mme Jeanne L.</a></p><p><b>identifier</b>: 3480787529/123456789-PPObjectif-1234</p><p><b>lifecycleStatus</b>: Active</p><p><b>description</b>: <span title=\"Codes :\">Réduire le risque de chute et la peur associée en 6 mois.</span></p><p><b>subject</b>: <a href=\"Patient-tddui-patient-pa-example-pp.html\">Jeanne L. (official) Female, Date de Naissance inconnue ( Patient internal identifier: 3480787529/123456789)</a></p><p><b>addresses</b>: <a href=\"ServiceRequest-tddui-servicerequest-besoin-pa-example.html\">ServiceRequest </a></p><p><b>note</b>: </p><blockquote><div><p>Objectif 1</p>\n</div></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference"^^xsd:anyURI ;
+       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CarePlan/tddui-careplan-projet-perso-pa-example> ;
+       fhir:reference [ fhir:v "CarePlan/tddui-careplan-projet-perso-pa-example" ]
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "3480787529/123456789-PPObjectif-1234" ]
+  ] ) ; # 
+  fhir:lifecycleStatus [ fhir:v "active"] ; # 
+  fhir:description [
+     fhir:text [ fhir:v "Réduire le risque de chute et la peur associée en 6 mois." ]
+  ] ; # 
+  fhir:subject [
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-patient-pa-example-pp> ;
+     fhir:reference [ fhir:v "Patient/tddui-patient-pa-example-pp" ]
+  ] ; # 
+  fhir:addresses ( [
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/ServiceRequest/tddui-servicerequest-besoin-pa-example> ;
+     fhir:reference [ fhir:v "ServiceRequest/tddui-servicerequest-besoin-pa-example" ]
+  ] ) ; # 
+  fhir:note ( [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-note"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-note>
+       ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "titreObjectif"
+       ]
+     ] ) ;
+     fhir:text [ fhir:v "Objectif 1" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
