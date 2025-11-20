@@ -8,7 +8,7 @@ Description: "CodeSystem pour la définition des éléments spécifiques des inp
 * ^content = #complete
 * ^experimental = false
 
-* #type "Type du moyen ou de la ressource. Distinction entre moyen et ressource si nécessaire."
+* #titre "Titre du moyen ou de la ressource à utiliser."
 * #evaluation "Evaluation du moyen ou de la ressource."
 * #pieceJointe "Pièce jointe du moyen/ressource."
 * #evaluationNonStructuree "Evaluation si elle n’est pas structurée."

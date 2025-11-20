@@ -1,7 +1,11 @@
 @startuml
 
-object "**TDDUIOrganization**" as TDDUIOrganization_performer #fb8072 {
-    auteur
+object "**TDDUIPractitioner**" as TDDUIPractitioner #b3de69 {
+    Auteur
+}
+
+object "**TDDUIPatient**" as TDDUIPatient_subject #fdb462 {
+    Usager
 }
 
 map "**Accord : TDDUIConsentAccord**" as Accord #8dd3c7 {
@@ -9,6 +13,7 @@ map "**Accord : TDDUIConsentAccord**" as Accord #8dd3c7 {
     dateSignature => dateTime
 }
 
-Accord -u-> TDDUIOrganization_performer : performer
+Accord -u-> TDDUIPractitioner : performer
+Accord -u-> TDDUIPatient_subject : performer
 
 @enduml

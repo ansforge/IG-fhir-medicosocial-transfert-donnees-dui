@@ -36,8 +36,6 @@ Description: "Profil de la ressource TDDUIGoalObjectif permettant de représente
 * note[titreObjectif].extension[TDDUIGoalNoteExtension] 1..1
 * note[titreObjectif].extension[TDDUIGoalNoteExtension].valueCode = #titreObjectif
 
-
-
 * note[avisUsagerObjectif] ^short = "Avis de l'usager sur l'objectif"
 * note[avisUsagerObjectif].extension[TDDUIGoalNoteExtension] 1..1
 * note[avisUsagerObjectif].extension[TDDUIGoalNoteExtension].valueCode = #avisUsagerObjectif

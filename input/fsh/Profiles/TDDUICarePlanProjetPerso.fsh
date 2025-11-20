@@ -1,8 +1,8 @@
-Profile: TDDUICarePlanProjetPerso
+Profile: TDDUICarePlanProjetPersonalise
 Parent: CarePlan
-Id: tddui-careplan-projet-perso
-Title: "TDDUI CarePlan Projet Perso"
-Description: "Profil de la ressource TDDUICarePlan permettant de représenter le projet personnel de l'usager." 
+Id: tddui-careplan-projet-personalise
+Title: "TDDUI CarePlan Projet Personalisé"
+Description: "Profil de la ressource TDDUICarePlan permettant de représenter le projet personalisé de l'usager." 
 
 * extension contains
     TDDUIAttachment named entrantProjetPerso 0..*
@@ -36,10 +36,10 @@ Description: "Profil de la ressource TDDUICarePlan permettant de représenter le
 
 * note 0..1
 
-Mapping:  ConceptMetier_TDDUICarePlanProjetPerso
-Source:   TDDUICarePlanProjetPerso
+Mapping:  ConceptMetier_TDDUICarePlanProjetPersonalise
+Source:   TDDUICarePlanProjetPersonalise
 Target: "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"
-Id:       specmetier-to-TDDUICarePlanProjetPerso
+Id:       specmetier-to-TDDUICarePlanProjetPersonalise
 Title:    "Modèle de contenu DUI"
 * -> "ProjetPersonnalise"
 

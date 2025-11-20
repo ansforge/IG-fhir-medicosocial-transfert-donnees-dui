@@ -12,10 +12,23 @@ Description: "Profil de la ressource TDDUIGoal permettant de représenter les at
 * identifier.value ^example[0].label = "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-PPAttente-identifiantAttente"
 //* identifier.value ^example[0].valueString = "3480787529/147720425367411-EVN-12548"
 
-* expressedBy 1..1
-* expressedBy only Reference(TDDUIPractitionerRole or TDDUIPractitioner or TDDUIPatient or TDDUIPatientINS or FRCoreRelatedPersonProfile)
-
 * subject only Reference(TDDUIPatient or TDDUIPatientINS)
+
+* note ^slicing.discriminator.type = #pattern
+* note ^slicing.discriminator.path = "extension('https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-note').value"
+* note ^slicing.rules = #open
+* note contains
+    origineAttente 1..1 and
+    commentaireAttente 0..*
+* note.extension contains
+    TDDUIGoalNote named TDDUIGoalNoteExtension 1..2
+* note[origineAttente] ^short = "Originie de l'attente"
+* note[origineAttente].extension[TDDUIGoalNoteExtension] 1..1
+* note[origineAttente].extension[TDDUIGoalNoteExtension].valueCode = #origineAttente
+
+* note[commentaireAttente] ^short = "Commentaire de l'attente"
+* note[commentaireAttente].extension[TDDUIGoalNoteExtension] 1..1
+* note[commentaireAttente].extension[TDDUIGoalNoteExtension].valueCode = #commentaireAttente
 
 Mapping:  ConceptMetier_TDDUIGoalAttente
 Source:   TDDUIGoalAttente
@@ -25,7 +38,7 @@ Title:    "Modèle de contenu DUI"
 * -> "Attente"
 
 * identifier -> "identifiantAttente"
-* expressedBy -> "origineAttente"
 * description.text -> "descriptionAttente"
-* note.text -> "commentaireAttente"
+* note[origineAttente] -> "origineAttente"
+* note[commentaireAttente] -> "commentaireAttente"
 * extension[referenceProjetPerso] -> "ProjetPersonnalise"

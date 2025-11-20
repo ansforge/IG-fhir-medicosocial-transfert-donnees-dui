@@ -18,7 +18,7 @@ Description: "Profil de la ressource TDDUIServiceRequestBesoin permettant de rep
 * code 1..1
 
 * basedOn 1..1
-* basedOn only Reference(TDDUICarePlanProjetPerso)
+* basedOn only Reference(TDDUICarePlanProjetPersonalise)
 
 * subject only Reference(TDDUIPatient or TDDUIPatientINS)
 

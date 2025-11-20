@@ -8,7 +8,7 @@ Description: "Profil de la ressource TDDUIConsent permettant de représenter l'a
     $consentPeriod-r5 named TDDUI-consentPeriod-r5 0..1 
 
 * performer 1..1
-* performer only Reference(TDDUIOrganization or TDDUIPractitionerRole or TDDUIPractitioner or FRCoreRelatedPersonProfile or TDDUIPatient or TDDUIPatientINS)
+* performer only Reference(TDDUIPractitionerRole or TDDUIPractitioner or FRCoreRelatedPersonProfile or TDDUIPatient or TDDUIPatientINS)
 
 * dateTime 1..1
 

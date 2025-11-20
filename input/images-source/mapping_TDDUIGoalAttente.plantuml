@@ -4,21 +4,13 @@ map "description" as description #DarkGray {
     descriptionAttente => text
 }
 
-map "note" as note #DarkGray {
-    commentaireAttente => text
-}
-
-object "**TDDUIPractitionerRole**" as TDDUIPractitionerRole_expressedBy #fdb462 {
-    origineAttente
-}
-
 map "**Attente : TDDUIGoalAttente**" as Attente #bebada {
     ProjetPersonnalise => <&plus> referenceProjetPerso
     identifiantAttente => identifier
+    origineAttente => <&layers> note:origineAttente
+    commentaireAttente => <&layers> note:commentaireAttente
     description *-> description
-    note *-> note
 }
 
-Attente -u-> TDDUIPractitionerRole_expressedBy : expressedBy
 
 @enduml

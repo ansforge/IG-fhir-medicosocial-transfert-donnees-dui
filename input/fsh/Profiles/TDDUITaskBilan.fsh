@@ -9,11 +9,10 @@ Description: "Profil de la ressource Task permettant de représenter le bilan du
 * executionPeriod.start 1..1
 
 * basedOn 1..1
-* basedOn only Reference(TDDUICarePlanProjetPerso)
+* basedOn only Reference(TDDUICarePlanProjetPersonalise)
 
 * extension contains
-    TDDUICarePlanProjetPersoRef named referenceProjetPerso 1..1 and
-    TDDUIAttachment named pieceJointeBilan 1..1
+    TDDUIAttachment named pieceJointeBilan 0..*
 
 * input ^slicing.discriminator.type = #pattern
 * input ^slicing.discriminator.path = "type"
@@ -39,7 +38,7 @@ Description: "Profil de la ressource Task permettant de représenter le bilan du
 * input[invite] ^short = "Liste des personnes invitées à participer au bilan"
 
 * input[dateProchainBilan].type = InputTDDUITaskBilanCodeSystem#dateProchainBilan
-* input[dateProchainBilan].value[x] only date
+* input[dateProchainBilan].value[x] only dateTime
 * input[dateProchainBilan] ^short = "Date du prochain bilan"
 
 * input[synthesePreparationBilan].type = InputTDDUITaskBilanCodeSystem#synthesePreparationBilan
@@ -57,7 +56,7 @@ Description: "Profil de la ressource Task permettant de représenter le bilan du
 * output[syntheseBilan].value[x] only Annotation
 * output[syntheseBilan].valueAnnotation.text 1..1
 * output[syntheseBilan].valueAnnotation.authorReference 1..1
-* output[syntheseBilan].valueAnnotation.authorReference only Reference(TDDUIPractitioner or TDDUIPatient or TDDUIPatientINS or FRCoreRelatedPersonProfile or TDDUIOrganization)
+* output[syntheseBilan].valueAnnotation.authorReference only Reference(TDDUIPractitioner or TDDUIPatient or TDDUIPatientINS or FRCoreRelatedPersonProfile)
 * output[syntheseBilan] ^short = "Synthèse du bilan"
 
 Mapping:  ConceptMetier_TDDUITaskBilan

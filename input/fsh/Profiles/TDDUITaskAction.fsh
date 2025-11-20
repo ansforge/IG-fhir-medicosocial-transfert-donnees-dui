@@ -51,7 +51,7 @@ Description: "Profil de la ressource Task permettant de représenter les actions
 * input[objectif] ^short = "Objectif"
 
 * basedOn 1..1
-* basedOn only Reference(TDDUICarePlanProjetPerso)
+* basedOn only Reference(TDDUICarePlanProjetPersonalise)
 
 Mapping:  ConceptMetier_TDDUITaskAction
 Source:   TDDUITaskAction

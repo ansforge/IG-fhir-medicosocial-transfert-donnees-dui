@@ -19,7 +19,7 @@ Description: "Profil de la ressource Task permettant de représenter les moyens 
     pieceJointe 0..* and 
     evaluationNonStructuree 0..1
 
-* input[titre].type = InputTDDUITaskMoyenRessourceCodeSystem#type
+* input[titre].type = InputTDDUITaskMoyenRessourceCodeSystem#titre
 * input[titre].value[x] only string
 * input[titre] ^short = "Titre du moyen ou de la ressource"
 
@@ -33,10 +33,10 @@ Description: "Profil de la ressource Task permettant de représenter les moyens 
 
 * input[evaluationNonStructuree].type = InputTDDUITaskMoyenRessourceCodeSystem#evaluationNonStructuree
 * input[evaluationNonStructuree].value[x] only Reference(TDDUIDocumentReference)
-* input[evaluationNonStructuree] ^short = "EValuation non structurée"
+* input[evaluationNonStructuree] ^short = "Evaluation non structurée"
 
 * basedOn 1..1
-* basedOn only Reference(TDDUICarePlanProjetPerso)
+* basedOn only Reference(TDDUICarePlanProjetPersonalise)
 
 * partOf 0..1
 * partOf only Reference(TDDUITaskAction)

@@ -41,7 +41,7 @@ Description: "Profil de la ressource Task permettant de représenter les prestat
 * partOf only Reference(TDDUITaskAction)
 
 * basedOn 1..1
-* basedOn only Reference(TDDUICarePlanProjetPerso)
+* basedOn only Reference(TDDUICarePlanProjetPersonalise)
 
 Mapping:  ConceptMetier_TDDUITaskPrestation
 Source:   TDDUITaskPrestation
