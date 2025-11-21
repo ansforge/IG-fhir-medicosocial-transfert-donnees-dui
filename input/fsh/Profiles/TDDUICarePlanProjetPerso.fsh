@@ -1,16 +1,19 @@
-Profile: TDDUICarePlanProjetPersonalise
+Profile: TDDUICarePlanProjetPersonnalise
 Parent: CarePlan
-Id: tddui-careplan-projet-personalise
+Id: tddui-careplan-projet-personnalise
 Title: "TDDUI CarePlan Projet Personalisé"
-Description: "Profil de la ressource TDDUICarePlan permettant de représenter le projet personalisé de l'usager." 
+Description: "Profil de la ressource TDDUICarePlan permettant de représenter le projet personnalisé de l'usager." 
 
 * extension contains
     TDDUIAttachment named entrantProjetPerso 0..*
 
 * identifier 1..1
-* identifier ^short = "Identifiant du projet personnel"
+* identifier ^short = "Identifiant du projet personnalisé"
+* identifier.value 1..1
 * identifier.value ^example[0].label = "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-PPER-numProjetPersonnalise"
-//* identifier.value ^example[0].valueString = "3480787529/147720425367411-EVN-12548"
+* identifier.value ^example[0].valueString = "3480787529/123456789-PPER-1234"
+* identifier.system 1..1
+* identifier.system = "https://identifiant-medicosocial-projetpersonnalise.esante.gouv.fr"
 
 * title 1..1
 
@@ -36,10 +39,10 @@ Description: "Profil de la ressource TDDUICarePlan permettant de représenter le
 
 * note 0..1
 
-Mapping:  ConceptMetier_TDDUICarePlanProjetPersonalise
-Source:   TDDUICarePlanProjetPersonalise
+Mapping:  ConceptMetier_TDDUICarePlanProjetPersonnalise
+Source:   TDDUICarePlanProjetPersonnalise
 Target: "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"
-Id:       specmetier-to-TDDUICarePlanProjetPersonalise
+Id:       specmetier-to-TDDUICarePlanProjetPersonnalise
 Title:    "Modèle de contenu DUI"
 * -> "ProjetPersonnalise"
 

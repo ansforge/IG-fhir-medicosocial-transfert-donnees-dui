@@ -10,8 +10,11 @@ Description: "Profil de la ressource TDDUIGoalObjectif permettant de représente
 
 * identifier 1..1
 * identifier ^short = "Identifiant de l'objectif"
-* identifier.value ^example[0].label = "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-PPObjectif-identifiantObjectif"
-//* identifier.value ^example[0].valueString = "3480787529/147720425367411-EVN-12548"
+* identifier.value 1..1
+* identifier.value ^example[0].label = "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-OBJE-numObjectif"
+* identifier.value ^example[0].valueString = "3480787529/123456789-OBJE-1234"
+* identifier.system 1..1
+* identifier.system = "https://identifiant-medicosocial-objectif.esante.gouv.fr"
 
 * target.detailString 0..1
 

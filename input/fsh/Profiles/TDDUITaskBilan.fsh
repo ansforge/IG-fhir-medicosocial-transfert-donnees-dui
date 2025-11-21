@@ -5,11 +5,17 @@ Title: "TDDUI Task Bilan"
 Description: "Profil de la ressource Task permettant de représenter le bilan du projet personnalisé."
 
 * identifier 1..1
+* identifier ^short = "Identifiant du bilan"
+* identifier.value 1..1
+* identifier.value ^example[0].label = "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-BILA-numBilan"
+* identifier.value ^example[0].valueString = "3480787529/123456789-BILA-1234"
+* identifier.system 1..1
+* identifier.system = "https://identifiant-medicosocial-bilan.esante.gouv.fr"
 
 * executionPeriod.start 1..1
 
 * basedOn 1..1
-* basedOn only Reference(TDDUICarePlanProjetPersonalise)
+* basedOn only Reference(TDDUICarePlanProjetPersonnalise)
 
 * extension contains
     TDDUIAttachment named pieceJointeBilan 0..*

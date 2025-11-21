@@ -9,8 +9,11 @@ Description: "Profil de la ressource TDDUIGoal permettant de représenter les at
 
 * identifier 1..1
 * identifier ^short = "Identifiant de l'attente"
-* identifier.value ^example[0].label = "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-PPAttente-identifiantAttente"
-//* identifier.value ^example[0].valueString = "3480787529/147720425367411-EVN-12548"
+* identifier.value 1..1
+* identifier.value ^example[0].label = "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-ATTE-numAttente"
+* identifier.value ^example[0].valueString = "3480787529/123456789-ATTE-1234"
+* identifier.system 1..1
+* identifier.system = "https://identifiant-medicosocial-attente.esante.gouv.fr"
 
 * subject only Reference(TDDUIPatient or TDDUIPatientINS)
 

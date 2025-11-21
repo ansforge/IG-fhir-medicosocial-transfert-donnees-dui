@@ -6,8 +6,11 @@ Description: "Profil de la ressource Task permettant de représenter les moyens 
 
 * identifier 1..1
 * identifier ^short = "Identifiant du moyen ou de la ressource"
-* identifier.value ^example[0].label = "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-PPMoyenRessource-identifiantMoyenRessource"
-//* identifier.value ^example[0].valueString = "3480787529/147720425367411-EVN-12548"
+* identifier.value 1..1
+* identifier.value ^example[0].label = "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-MORE-numMoyenRessource"
+* identifier.value ^example[0].valueString = "3480787529/123456789-MORE-1234"
+* identifier.system 1..1
+* identifier.system = "https://identifiant-medicosocial-moyenressource.esante.gouv.fr"
 
 * input ^slicing.discriminator.type = #pattern
 * input ^slicing.discriminator.path = "type"
@@ -36,7 +39,7 @@ Description: "Profil de la ressource Task permettant de représenter les moyens 
 * input[evaluationNonStructuree] ^short = "Evaluation non structurée"
 
 * basedOn 1..1
-* basedOn only Reference(TDDUICarePlanProjetPersonalise)
+* basedOn only Reference(TDDUICarePlanProjetPersonnalise)
 
 * partOf 0..1
 * partOf only Reference(TDDUITaskAction)

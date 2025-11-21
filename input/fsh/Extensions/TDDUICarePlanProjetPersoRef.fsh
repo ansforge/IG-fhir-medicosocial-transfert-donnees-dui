@@ -5,4 +5,4 @@ Description: "Liens vers le projet personnalisé, utilisables dans le profil TDD
 Context: Goal
 
 * value[x] only Reference
-* valueReference only Reference(TDDUICarePlanProjetPersonalise)
+* valueReference only Reference(TDDUICarePlanProjetPersonnalise)

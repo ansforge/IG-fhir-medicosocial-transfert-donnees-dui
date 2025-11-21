@@ -6,8 +6,11 @@ Description: "Profil de la ressource TDDUIServiceRequestBesoin permettant de rep
 
 * identifier 1..1
 * identifier ^short = "Identifiant du besoin"
-* identifier.value ^example[0].label = "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-PPBesoin-identifiantBesoin"
-//* identifier.value ^example[0].valueString = "3480787529/147720425367411-EVN-12548"
+* identifier.value 1..1
+* identifier.value ^example[0].label = "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-BESO-numBesoin"
+* identifier.value ^example[0].valueString = "3480787529/123456789-BESO-1234"
+* identifier.system 1..1
+* identifier.system = "https://identifiant-medicosocial-besoin.esante.gouv.fr"
 
 * extension contains
     TDDUIAttachment named pieceJointeBesoin 0..*
@@ -18,7 +21,7 @@ Description: "Profil de la ressource TDDUIServiceRequestBesoin permettant de rep
 * code 1..1
 
 * basedOn 1..1
-* basedOn only Reference(TDDUICarePlanProjetPersonalise)
+* basedOn only Reference(TDDUICarePlanProjetPersonnalise)
 
 * subject only Reference(TDDUIPatient or TDDUIPatientINS)
 

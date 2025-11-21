@@ -3,7 +3,8 @@ InstanceOf: TDDUIGoalObjectif
 Usage: #example
 Description: "Exemple d'un objectif dans le cadre du projet personnalisé PA."
 
-* identifier.value = "3480787529/123456789-PPObjectif-12345"
+* identifier.value = "3480787529/123456789-OBJE-12345"
+* identifier.system = "https://identifiant-medicosocial-objectif.esante.gouv.fr"
 
 * lifecycleStatus = #active
 
@@ -13,7 +14,7 @@ Description: "Exemple d'un objectif dans le cadre du projet personnalisé PA."
 
 * subject = Reference(tddui-patient-pa-example-pp)
 
-* extension[referenceProjetPerso].valueReference = Reference(tddui-careplan-projet-perso-pa-example)
+* extension[referenceProjetPerso].valueReference = Reference(tddui-careplan-projet-personnalise-pa-example)
 
 * note[titreObjectif].text = "Objectif 2"
 * note[titreObjectif].extension[TDDUIGoalNoteExtension].valueCode = #titreObjectif

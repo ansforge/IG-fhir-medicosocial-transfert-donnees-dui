@@ -3,7 +3,8 @@ InstanceOf: TDDUITaskAction
 Usage: #example
 Description: "Exemple des actions de l'objectif 2 dans le cadre du projet personnalisé PA." 
 
-* identifier.value = "3480787529/123456789-PPAction-12345"
+* identifier.value = "3480787529/123456789-ACTI-12345"
+* identifier.system = "https://identifiant-medicosocial-action.esante.gouv.fr"
 
 * description  = "
 IDE (Interne)
@@ -16,7 +17,7 @@ Cuisine/économe (Interne)
 - Menus enrichis adaptés aux goûts (textures, portions)
 "
 
-* basedOn = Reference(tddui-careplan-projet-perso-pa-example)
+* basedOn = Reference(tddui-careplan-projet-personnalise-pa-example)
 
 * status = #in-progress
 

@@ -3,7 +3,8 @@ InstanceOf: TDDUIGoalAttente
 Usage: #example
 Description: "Exemple des attentes de la famille dans le cadre du projet personnalisé PA."
 
-* identifier.value = "3480787529/123456789-PPAttente-1234"
+* identifier.value = "3480787529/123456789-ATTE-1234"
+* identifier.system = "https://identifiant-medicosocial-attente.esante.gouv.fr"
 
 * lifecycleStatus = #active
 
@@ -16,4 +17,4 @@ Description: "Exemple des attentes de la famille dans le cadre du projet personn
 - Stabiliser le poids et le plaisir alimentaire
 - Maintenir le lien familial (visios)"
 
-* extension[referenceProjetPerso].valueReference = Reference(tddui-careplan-projet-perso-pa-example)
+* extension[referenceProjetPerso].valueReference = Reference(tddui-careplan-projet-personnalise-pa-example)

@@ -3,7 +3,8 @@ InstanceOf: TDDUITaskAction
 Usage: #example
 Description: "Exemple des actions de l'objectif 1 dans le cadre du projet personnalisé PA." 
 
-* identifier.value = "3480787529/123456789-PPAction-1234"
+* identifier.value = "3480787529/123456789-ACTI-1234"
+* identifier.system = "https://identifiant-medicosocial-action.esante.gouv.fr"
 
 * description  = "
 Ergothérapeute (Externe)
@@ -26,7 +27,7 @@ Psychologue (Interne)
 - Soutien à la gestion de l'appréhension  
 "
 
-* basedOn = Reference(tddui-careplan-projet-perso-pa-example)
+* basedOn = Reference(tddui-careplan-projet-personnalise-pa-example)
 
 * status = #in-progress
 

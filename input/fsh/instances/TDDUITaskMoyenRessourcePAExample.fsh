@@ -3,7 +3,8 @@ InstanceOf: TDDUITaskMoyenRessource
 Usage: #example
 Description: "Exemple des moyens et ressources dans le cadre du projet personnalisé PA." 
 
-* identifier.value = "3480787529/123456789-PPMoyenRessource-1234"
+* identifier.value = "3480787529/123456789-MORE-1234"
+* identifier.system = "https://identifiant-medicosocial-moyenressource.esante.gouv.fr"
 
 * description  = "
 Objectif 1 :
@@ -22,7 +23,7 @@ Objectif 3 :
 - Convocations CVS, salle d'activité
 "
 
-* basedOn = Reference(tddui-careplan-projet-perso-pa-example)
+* basedOn = Reference(tddui-careplan-projet-personnalise-pa-example)
 
 * status = #in-progress
 
