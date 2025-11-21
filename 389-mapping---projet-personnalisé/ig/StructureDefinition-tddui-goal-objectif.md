@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif | *Version*:2.1.0-ballot |
-| Active as of 2025-11-20 | *Computable Name*:TDDUIGoalObjectif |
+| Active as of 2025-11-21 | *Computable Name*:TDDUIGoalObjectif |
 
  
 Profil de la ressource TDDUIGoalObjectif permettant de représenter les résultats à atteindre dans le cadre du projet personnalisé. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-objectif.
   "name" : "TDDUIGoalObjectif",
   "title" : "TDDUI Goal Objectif",
   "status" : "active",
-  "date" : "2025-11-20T16:06:37+00:00",
+  "date" : "2025-11-21T09:00:00+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -178,12 +178,19 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-objectif.
         ]
       },
       {
+        "id" : "Goal.identifier.system",
+        "path" : "Goal.identifier.system",
+        "min" : 1,
+        "patternUri" : "https://identifiant-medicosocial-objectif.esante.gouv.fr"
+      },
+      {
         "id" : "Goal.identifier.value",
         "path" : "Goal.identifier.value",
+        "min" : 1,
         "example" : [
           {
-            "label" : "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-PPObjectif-identifiantObjectif",
-            "valueString" : "123456"
+            "label" : "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-OBJE-numObjectif",
+            "valueString" : "3480787529/123456789-OBJE-1234"
           }
         ]
       },

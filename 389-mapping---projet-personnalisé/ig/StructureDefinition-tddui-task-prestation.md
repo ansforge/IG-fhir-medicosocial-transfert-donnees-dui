@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-prestation | *Version*:2.1.0-ballot |
-| Active as of 2025-11-20 | *Computable Name*:TDDUITaskPrestation |
+| Active as of 2025-11-21 | *Computable Name*:TDDUITaskPrestation |
 
  
 Profil de la ressource Task permettant de représenter les prestations du projet personnalisé. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-prestatio
   "name" : "TDDUITaskPrestation",
   "title" : "TDDUI Task Prestation",
   "status" : "active",
-  "date" : "2025-11-20T16:06:37+00:00",
+  "date" : "2025-11-21T09:00:00+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -125,12 +125,19 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-prestatio
         ]
       },
       {
+        "id" : "Task.identifier.system",
+        "path" : "Task.identifier.system",
+        "min" : 1,
+        "patternUri" : "https://identifiant-medicosocial-prestation.esante.gouv.fr"
+      },
+      {
         "id" : "Task.identifier.value",
         "path" : "Task.identifier.value",
+        "min" : 1,
         "example" : [
           {
-            "label" : "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-ACTI-numAction",
-            "valueString" : "123456"
+            "label" : "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-PRES-numPrestation",
+            "valueString" : "3480787529/123456789-PRES-1234"
           }
         ]
       },
@@ -143,7 +150,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-prestatio
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personalise"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise"
             ]
           }
         ],

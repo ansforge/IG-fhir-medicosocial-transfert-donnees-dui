@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin | *Version*:2.1.0-ballot |
-| Active as of 2025-11-20 | *Computable Name*:TDDUIServiceRequestBesoin |
+| Active as of 2025-11-21 | *Computable Name*:TDDUIServiceRequestBesoin |
 
  
 Profil de la ressource TDDUIServiceRequestBesoin permettant de représenter les besoins de l'usager. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-service-reques
   "name" : "TDDUIServiceRequestBesoin",
   "title" : "TDDUI ServiceRequest Besoin",
   "status" : "active",
-  "date" : "2025-11-20T16:06:37+00:00",
+  "date" : "2025-11-21T09:00:00+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -166,12 +166,19 @@ Other representations of profile: [CSV](StructureDefinition-tddui-service-reques
         ]
       },
       {
+        "id" : "ServiceRequest.identifier.system",
+        "path" : "ServiceRequest.identifier.system",
+        "min" : 1,
+        "patternUri" : "https://identifiant-medicosocial-besoin.esante.gouv.fr"
+      },
+      {
         "id" : "ServiceRequest.identifier.value",
         "path" : "ServiceRequest.identifier.value",
+        "min" : 1,
         "example" : [
           {
-            "label" : "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-PPBesoin-identifiantBesoin",
-            "valueString" : "123456"
+            "label" : "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-BESO-numBesoin",
+            "valueString" : "3480787529/123456789-BESO-1234"
           }
         ]
       },
@@ -184,7 +191,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-service-reques
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personalise"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise"
             ]
           }
         ],

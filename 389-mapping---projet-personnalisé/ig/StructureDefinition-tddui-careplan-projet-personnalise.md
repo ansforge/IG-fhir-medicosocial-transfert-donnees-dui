@@ -8,18 +8,18 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personalise | *Version*:2.1.0-ballot |
-| Active as of 2025-11-20 | *Computable Name*:TDDUICarePlanProjetPersonalise |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise | *Version*:2.1.0-ballot |
+| Active as of 2025-11-21 | *Computable Name*:TDDUICarePlanProjetPersonnalise |
 
  
-Profil de la ressource TDDUICarePlan permettant de représenter le projet personalisé de l'usager. 
+Profil de la ressource TDDUICarePlan permettant de représenter le projet personnalisé de l'usager. 
 
 **Usages:**
 
 * Refer to this Profile: [Lien vers le projet personnalisé](StructureDefinition-tddui-careplan-reference.md), [TDDUI ServiceRequest Besoin](StructureDefinition-tddui-service-request-besoin.md), [TDDUI Task Action](StructureDefinition-tddui-task-action.md), [TDDUI Task Bilan](StructureDefinition-tddui-task-bilan.md)...Show 2 more,[TDDUI Task MoyenRessource](StructureDefinition-tddui-task-moyen-ressource.md)and[TDDUI Task Prestation](StructureDefinition-tddui-task-prestation.md)
-* Examples for this Profile: [CarePlan/tddui-careplan-projet-perso-pa-example](CarePlan-tddui-careplan-projet-perso-pa-example.md)
+* Examples for this Profile: [CarePlan/tddui-careplan-projet-personnalise-pa-example](CarePlan-tddui-careplan-projet-personnalise-pa-example.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-careplan-projet-personalise)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-careplan-projet-personnalise)
 
 ### Formal Views of Profile Content
 
@@ -27,7 +27,7 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
  
 
-Other representations of profile: [CSV](StructureDefinition-tddui-careplan-projet-personalise.csv), [Excel](StructureDefinition-tddui-careplan-projet-personalise.xlsx), [Schematron](StructureDefinition-tddui-careplan-projet-personalise.sch) 
+Other representations of profile: [CSV](StructureDefinition-tddui-careplan-projet-personnalise.csv), [Excel](StructureDefinition-tddui-careplan-projet-personnalise.xlsx), [Schematron](StructureDefinition-tddui-careplan-projet-personnalise.sch) 
 
 
 
@@ -36,13 +36,13 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
 ```json
 {
   "resourceType" : "StructureDefinition",
-  "id" : "tddui-careplan-projet-personalise",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personalise",
+  "id" : "tddui-careplan-projet-personnalise",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise",
   "version" : "2.1.0-ballot",
-  "name" : "TDDUICarePlanProjetPersonalise",
+  "name" : "TDDUICarePlanProjetPersonnalise",
   "title" : "TDDUI CarePlan Projet Personalisé",
   "status" : "active",
-  "date" : "2025-11-20T16:06:37+00:00",
+  "date" : "2025-11-21T09:00:00+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -55,7 +55,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
       ]
     }
   ],
-  "description" : "Profil de la ressource TDDUICarePlan permettant de représenter le projet personalisé de l'usager.",
+  "description" : "Profil de la ressource TDDUICarePlan permettant de représenter le projet personnalisé de l'usager.",
   "jurisdiction" : [
     {
       "coding" : [
@@ -70,7 +70,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
-      "identity" : "specmetier-to-TDDUICarePlanProjetPersonalise",
+      "identity" : "specmetier-to-TDDUICarePlanProjetPersonnalise",
       "uri" : "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html",
       "name" : "Modèle de contenu DUI"
     },
@@ -107,7 +107,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
         "path" : "CarePlan",
         "mapping" : [
           {
-            "identity" : "specmetier-to-TDDUICarePlanProjetPersonalise",
+            "identity" : "specmetier-to-TDDUICarePlanProjetPersonnalise",
             "map" : "ProjetPersonnalise"
           }
         ]
@@ -142,7 +142,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
         ],
         "mapping" : [
           {
-            "identity" : "specmetier-to-TDDUICarePlanProjetPersonalise",
+            "identity" : "specmetier-to-TDDUICarePlanProjetPersonnalise",
             "map" : "entrantProjetPersonnalisee"
           }
         ]
@@ -150,23 +150,30 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
       {
         "id" : "CarePlan.identifier",
         "path" : "CarePlan.identifier",
-        "short" : "Identifiant du projet personnel",
+        "short" : "Identifiant du projet personnalisé",
         "min" : 1,
         "max" : "1",
         "mapping" : [
           {
-            "identity" : "specmetier-to-TDDUICarePlanProjetPersonalise",
+            "identity" : "specmetier-to-TDDUICarePlanProjetPersonnalise",
             "map" : "identifiantProjetPersonnalise"
           }
         ]
       },
       {
+        "id" : "CarePlan.identifier.system",
+        "path" : "CarePlan.identifier.system",
+        "min" : 1,
+        "patternUri" : "https://identifiant-medicosocial-projetpersonnalise.esante.gouv.fr"
+      },
+      {
         "id" : "CarePlan.identifier.value",
         "path" : "CarePlan.identifier.value",
+        "min" : 1,
         "example" : [
           {
             "label" : "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-PPER-numProjetPersonnalise",
-            "valueString" : "123456"
+            "valueString" : "3480787529/123456789-PPER-1234"
           }
         ]
       },
@@ -175,7 +182,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
         "path" : "CarePlan.status",
         "mapping" : [
           {
-            "identity" : "specmetier-to-TDDUICarePlanProjetPersonalise",
+            "identity" : "specmetier-to-TDDUICarePlanProjetPersonnalise",
             "map" : "statutProjetPersonnalise"
           }
         ]
@@ -190,7 +197,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
         },
         "mapping" : [
           {
-            "identity" : "specmetier-to-TDDUICarePlanProjetPersonalise",
+            "identity" : "specmetier-to-TDDUICarePlanProjetPersonnalise",
             "map" : "typeProjetPersonnalise"
           }
         ]
@@ -201,7 +208,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
         "min" : 1,
         "mapping" : [
           {
-            "identity" : "specmetier-to-TDDUICarePlanProjetPersonalise",
+            "identity" : "specmetier-to-TDDUICarePlanProjetPersonnalise",
             "map" : "titreProjetPersonnalise"
           }
         ]
@@ -211,7 +218,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
         "path" : "CarePlan.description",
         "mapping" : [
           {
-            "identity" : "specmetier-to-TDDUICarePlanProjetPersonalise",
+            "identity" : "specmetier-to-TDDUICarePlanProjetPersonnalise",
             "map" : "descriptionProjetPersonnalise"
           }
         ]
@@ -230,7 +237,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
         ],
         "mapping" : [
           {
-            "identity" : "specmetier-to-TDDUICarePlanProjetPersonalise",
+            "identity" : "specmetier-to-TDDUICarePlanProjetPersonnalise",
             "map" : "Usager"
           }
         ]
@@ -240,7 +247,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
         "path" : "CarePlan.period.start",
         "mapping" : [
           {
-            "identity" : "specmetier-to-TDDUICarePlanProjetPersonalise",
+            "identity" : "specmetier-to-TDDUICarePlanProjetPersonnalise",
             "map" : "dateDebutMiseEnOeuvreProjetPersonnalise"
           }
         ]
@@ -250,7 +257,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
         "path" : "CarePlan.period.end",
         "mapping" : [
           {
-            "identity" : "specmetier-to-TDDUICarePlanProjetPersonalise",
+            "identity" : "specmetier-to-TDDUICarePlanProjetPersonnalise",
             "map" : "dateFinMiseEnOeuvreProjetPersonnalise"
           }
         ]
@@ -286,7 +293,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
         ],
         "mapping" : [
           {
-            "identity" : "specmetier-to-TDDUICarePlanProjetPersonalise",
+            "identity" : "specmetier-to-TDDUICarePlanProjetPersonnalise",
             "map" : "accordUsagerProjetPersonnalise"
           }
         ]
@@ -314,7 +321,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
         ],
         "mapping" : [
           {
-            "identity" : "specmetier-to-TDDUICarePlanProjetPersonalise",
+            "identity" : "specmetier-to-TDDUICarePlanProjetPersonnalise",
             "map" : "accordStructureProjetPersonnalise"
           }
         ]
@@ -331,7 +338,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
         "max" : "1",
         "mapping" : [
           {
-            "identity" : "specmetier-to-TDDUICarePlanProjetPersonalise",
+            "identity" : "specmetier-to-TDDUICarePlanProjetPersonnalise",
             "map" : "modaliteCommunicationProjetPersonnalise"
           }
         ]

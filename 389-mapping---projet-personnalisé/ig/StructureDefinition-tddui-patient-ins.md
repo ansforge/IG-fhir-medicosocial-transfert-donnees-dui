@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins | *Version*:2.1.0-ballot |
-| Active as of 2025-11-20 | *Computable Name*:TDDUIPatientINS |
+| Active as of 2025-11-21 | *Computable Name*:TDDUIPatientINS |
 
  
 Profil de la ressource FRCorePatientINSProfile permettant de représenter un usager lorsque l'INS est transmis. 
@@ -17,7 +17,7 @@ Profil de la ressource FRCorePatientINSProfile permettant de représenter un usa
 **Usages:**
 
 * Use this Profile: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
-* Refer to this Profile: [TDDUI CarePlan Projet Personalisé](StructureDefinition-tddui-careplan-projet-personalise.md), [TDDUI Consent Accord](StructureDefinition-tddui-consent-accord.md), [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md), [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)...Show 6 more,[TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md),[TDDUI Goal Attente](StructureDefinition-tddui-goal-attente.md),[TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md),[TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md),[TDDUI ServiceRequest Besoin](StructureDefinition-tddui-service-request-besoin.md)and[TDDUI Task Bilan](StructureDefinition-tddui-task-bilan.md)
+* Refer to this Profile: [TDDUI CarePlan Projet Personalisé](StructureDefinition-tddui-careplan-projet-personnalise.md), [TDDUI Consent Accord](StructureDefinition-tddui-consent-accord.md), [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md), [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)...Show 6 more,[TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md),[TDDUI Goal Attente](StructureDefinition-tddui-goal-attente.md),[TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md),[TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md),[TDDUI ServiceRequest Besoin](StructureDefinition-tddui-service-request-besoin.md)and[TDDUI Task Bilan](StructureDefinition-tddui-task-bilan.md)
 * Examples for this Profile: [Patient/tddui-patient-ins-example](Patient-tddui-patient-ins-example.md)
 * CapabilityStatements using this Profile: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient-ins.cs
   "name" : "TDDUIPatientINS",
   "title" : "TDDUI Patient INS",
   "status" : "active",
-  "date" : "2025-11-20T16:06:37+00:00",
+  "date" : "2025-11-21T09:00:00+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

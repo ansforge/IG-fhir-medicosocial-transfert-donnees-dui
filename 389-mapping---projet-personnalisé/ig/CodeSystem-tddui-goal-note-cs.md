@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-goal-note-cs | *Version*:2.1.0-ballot |
-| Active as of 2025-11-20 | *Computable Name*:TDDUIGoalNoteCS |
+| Active as of 2025-11-21 | *Computable Name*:TDDUIGoalNoteCS |
 
  
 CodeSystem définissant les types de notes pour l'élément Goal.note 
@@ -31,7 +31,7 @@ CodeSystem définissant les types de notes pour l'élément Goal.note
   "name" : "TDDUIGoalNoteCS",
   "title" : "TDDUI Goal Note CodeSystem",
   "status" : "active",
-  "date" : "2025-11-20T16:06:37+00:00",
+  "date" : "2025-11-21T09:00:00+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

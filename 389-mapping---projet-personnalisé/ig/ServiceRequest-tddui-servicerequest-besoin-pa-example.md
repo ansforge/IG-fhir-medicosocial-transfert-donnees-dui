@@ -8,9 +8,9 @@
 
 Profil: [TDDUI ServiceRequest Besoin](StructureDefinition-tddui-service-request-besoin.md)
 
-**identifier**: 3480787529/123456789-PPBesoin-1234
+**identifier**: `https://identifiant-medicosocial-besoin.esante.gouv.fr`/3480787529/123456789-BESO-1234
 
-**basedOn**: [CarePlan Projet personnalisé de Mme Jeanne L.](CarePlan-tddui-careplan-projet-perso-pa-example.md)
+**basedOn**: [CarePlan Projet personnalisé de Mme Jeanne L.](CarePlan-tddui-careplan-projet-personnalise-pa-example.md)
 
 **status**: Active
 
@@ -37,12 +37,13 @@ Besoin de maintien du lien social et d'activités récréatives.
   },
   "identifier" : [
     {
-      "value" : "3480787529/123456789-PPBesoin-1234"
+      "system" : "https://identifiant-medicosocial-besoin.esante.gouv.fr",
+      "value" : "3480787529/123456789-BESO-1234"
     }
   ],
   "basedOn" : [
     {
-      "reference" : "CarePlan/tddui-careplan-projet-perso-pa-example"
+      "reference" : "CarePlan/tddui-careplan-projet-personnalise-pa-example"
     }
   ],
   "status" : "active",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action | *Version*:2.1.0-ballot |
-| Active as of 2025-11-20 | *Computable Name*:TDDUITaskAction |
+| Active as of 2025-11-21 | *Computable Name*:TDDUITaskAction |
 
  
 Profil de la ressource Task permettant de représenter les actions réalisés dans le cadre du projet personnalisé. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-action.cs
   "name" : "TDDUITaskAction",
   "title" : "TDDUI Task Action",
   "status" : "active",
-  "date" : "2025-11-20T16:06:37+00:00",
+  "date" : "2025-11-21T09:00:00+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -126,12 +126,19 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-action.cs
         ]
       },
       {
+        "id" : "Task.identifier.system",
+        "path" : "Task.identifier.system",
+        "min" : 1,
+        "patternUri" : "https://identifiant-medicosocial-action.esante.gouv.fr"
+      },
+      {
         "id" : "Task.identifier.value",
         "path" : "Task.identifier.value",
+        "min" : 1,
         "example" : [
           {
             "label" : "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-ACTI-numAction",
-            "valueString" : "123456"
+            "valueString" : "3480787529/123456789-ACTI-1234"
           }
         ]
       },
@@ -144,7 +151,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-action.cs
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personalise"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise"
             ]
           }
         ],

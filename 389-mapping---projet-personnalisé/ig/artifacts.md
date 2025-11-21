@@ -34,7 +34,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 | | |
 | :--- | :--- |
 | [TDDUI Bundle](StructureDefinition-tddui-bundle.md) | Profil générique créé pour transmettre des données d'un logiciel DUI. |
-| [TDDUI CarePlan Projet Personalisé](StructureDefinition-tddui-careplan-projet-personalise.md) | Profil de la ressource TDDUICarePlan permettant de représenter le projet personalisé de l'usager. |
+| [TDDUI CarePlan Projet Personalisé](StructureDefinition-tddui-careplan-projet-personnalise.md) | Profil de la ressource TDDUICarePlan permettant de représenter le projet personnalisé de l'usager. |
 | [TDDUI Consent Accord](StructureDefinition-tddui-consent-accord.md) | Profil de la ressource TDDUIConsent permettant de représenter l'accord de l'usager et de la structure. |
 | [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md) | Profil de la ressource SimplifiedPublishDocumentReference pour les pièces jointes liées à l’événement et à l'évaluation. |
 | [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md) | Profil de la ressource Encounter permettant de regrouper les évènements liés à la prise en charge de l’usager dans une structure ESSMS. |
@@ -134,7 +134,7 @@ These are example instances that show what data produced and consumed by systems
 
 | | |
 | :--- | :--- |
-| [Projet personnalisé de Mme Jeanne L.](CarePlan-tddui-careplan-projet-perso-pa-example.md) | Exemple d'un projet personnalisé PA |
+| [Projet personnalisé de Mme Jeanne L.](CarePlan-tddui-careplan-projet-personnalise-pa-example.md) | Exemple d'un projet personnalisé PA |
 | [TDDUIBundleExample](Bundle-ExampleTDDUIBundle.md) | Exemple de bundle conforme au profil TDDUIBundle |
 | [fr-core-related-person-example](RelatedPerson-fr-core-related-person-example.md) | Exemple de la famille de l'usager. |
 | [tddui-consent-accord-example](Consent-tddui-consent-accord-example.md) | Exemple d'un accord de la structure |

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-bilan | *Version*:2.1.0-ballot |
-| Active as of 2025-11-20 | *Computable Name*:TDDUITaskBilan |
+| Active as of 2025-11-21 | *Computable Name*:TDDUITaskBilan |
 
  
 Profil de la ressource Task permettant de représenter le bilan du projet personnalisé. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-bilan.csv
   "name" : "TDDUITaskBilan",
   "title" : "TDDUI Task Bilan",
   "status" : "active",
-  "date" : "2025-11-20T16:06:37+00:00",
+  "date" : "2025-11-21T09:00:00+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -149,12 +149,30 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-bilan.csv
       {
         "id" : "Task.identifier",
         "path" : "Task.identifier",
+        "short" : "Identifiant du bilan",
         "min" : 1,
         "max" : "1",
         "mapping" : [
           {
             "identity" : "specmetier-to-TDDUITaskBilan",
             "map" : "identifiantBilan"
+          }
+        ]
+      },
+      {
+        "id" : "Task.identifier.system",
+        "path" : "Task.identifier.system",
+        "min" : 1,
+        "patternUri" : "https://identifiant-medicosocial-bilan.esante.gouv.fr"
+      },
+      {
+        "id" : "Task.identifier.value",
+        "path" : "Task.identifier.value",
+        "min" : 1,
+        "example" : [
+          {
+            "label" : "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-BILA-numBilan",
+            "valueString" : "3480787529/123456789-BILA-1234"
           }
         ]
       },
@@ -167,7 +185,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-bilan.csv
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personalise"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise"
             ]
           }
         ],

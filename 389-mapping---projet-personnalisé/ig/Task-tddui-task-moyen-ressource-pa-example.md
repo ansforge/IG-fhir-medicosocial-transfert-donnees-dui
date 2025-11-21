@@ -8,9 +8,9 @@
 
 Profil: [TDDUI Task MoyenRessource](StructureDefinition-tddui-task-moyen-ressource.md)
 
-**identifier**: 3480787529/123456789-PPMoyenRessource-1234
+**identifier**: `https://identifiant-medicosocial-moyenressource.esante.gouv.fr`/3480787529/123456789-MORE-1234
 
-**basedOn**: [CarePlan Projet personnalisé de Mme Jeanne L.](CarePlan-tddui-careplan-projet-perso-pa-example.md)
+**basedOn**: [CarePlan Projet personnalisé de Mme Jeanne L.](CarePlan-tddui-careplan-projet-personnalise-pa-example.md)
 
 **status**: In Progress
 
@@ -40,12 +40,13 @@ Profil: [TDDUI Task MoyenRessource](StructureDefinition-tddui-task-moyen-ressour
   },
   "identifier" : [
     {
-      "value" : "3480787529/123456789-PPMoyenRessource-1234"
+      "system" : "https://identifiant-medicosocial-moyenressource.esante.gouv.fr",
+      "value" : "3480787529/123456789-MORE-1234"
     }
   ],
   "basedOn" : [
     {
-      "reference" : "CarePlan/tddui-careplan-projet-perso-pa-example"
+      "reference" : "CarePlan/tddui-careplan-projet-personnalise-pa-example"
     }
   ],
   "status" : "in-progress",

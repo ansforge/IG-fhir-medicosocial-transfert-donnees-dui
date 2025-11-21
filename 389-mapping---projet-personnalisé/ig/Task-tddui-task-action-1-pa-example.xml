@@ -6,7 +6,7 @@
     <profile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : Task tddui-task-action-1-pa-example</b></p><a name="tddui-task-action-1-pa-example"> </a><a name="hctddui-task-action-1-pa-example"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="StructureDefinition-tddui-task-action.html">TDDUI Task Action</a></p></div><p><b>identifier</b>: 3480787529/123456789-PPAction-1234</p><p><b>basedOn</b>: <a href="CarePlan-tddui-careplan-projet-perso-pa-example.html">CarePlan Projet personnalisé de Mme Jeanne L.</a></p><p><b>status</b>: In Progress</p><p><b>intent</b>: plan</p><p><b>description</b>: 
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : Task tddui-task-action-1-pa-example</b></p><a name="tddui-task-action-1-pa-example"> </a><a name="hctddui-task-action-1-pa-example"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="StructureDefinition-tddui-task-action.html">TDDUI Task Action</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-action.esante.gouv.fr</code>/3480787529/123456789-ACTI-1234</p><p><b>basedOn</b>: <a href="CarePlan-tddui-careplan-projet-personnalise-pa-example.html">CarePlan Projet personnalisé de Mme Jeanne L.</a></p><p><b>status</b>: In Progress</p><p><b>intent</b>: plan</p><p><b>description</b>: 
 Ergothérapeute (Externe)
 - Évaluation et aménagement chambre (éclairage, barres, tapis)
 - Formation à l'utilisation des aides techniques
@@ -25,13 +25,14 @@ AS (Interne)
 
 Psychologue (Interne) 
 - Soutien à la gestion de l'appréhension  
-</p><blockquote><p><b>input</b></p><p><b>type</b>: <span title="Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem titre}">Titre de l'action à mener.</span></p><p><b>value</b>: Actions pour atteindre l'objectif 1</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title="Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem objectif}">Objectif(s).</span></p><p><b>value</b>: <a href="Goal-tddui-goal-objectif-1-pa-example.html">Goal : extension = -&gt;CarePlan Projet personnalisé de Mme Jeanne L.; identifier = 3480787529/123456789-PPObjectif-1234; lifecycleStatus = active; description = ; note = Objectif 1</a></p></blockquote></div>
+</p><blockquote><p><b>input</b></p><p><b>type</b>: <span title="Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem titre}">Titre de l'action à mener.</span></p><p><b>value</b>: Actions pour atteindre l'objectif 1</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title="Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem objectif}">Objectif(s).</span></p><p><b>value</b>: <a href="Goal-tddui-goal-objectif-1-pa-example.html">Goal : extension = -&gt;CarePlan Projet personnalisé de Mme Jeanne L.; identifier = https://identifiant-medicosocial-objectif.esante.gouv.fr#3480787529/123456789-OBJE-1234; lifecycleStatus = active; description = ; note = Objectif 1</a></p></blockquote></div>
   </text>
   <identifier>
-    <value value="3480787529/123456789-PPAction-1234"/>
+    <system value="https://identifiant-medicosocial-action.esante.gouv.fr"/>
+    <value value="3480787529/123456789-ACTI-1234"/>
   </identifier>
   <basedOn>
-    <reference value="CarePlan/tddui-careplan-projet-perso-pa-example"/>
+    <reference value="CarePlan/tddui-careplan-projet-personnalise-pa-example"/>
   </basedOn>
   <status value="in-progress"/>
   <intent value="plan"/>

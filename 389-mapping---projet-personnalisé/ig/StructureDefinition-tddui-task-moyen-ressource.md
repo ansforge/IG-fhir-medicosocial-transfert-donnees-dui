@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource | *Version*:2.1.0-ballot |
-| Active as of 2025-11-20 | *Computable Name*:TDDUITaskMoyenRessource |
+| Active as of 2025-11-21 | *Computable Name*:TDDUITaskMoyenRessource |
 
  
 Profil de la ressource Task permettant de représenter les moyens ou ressources utilisées dans le cadre du projet personnalisé. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-moyen-res
   "name" : "TDDUITaskMoyenRessource",
   "title" : "TDDUI Task MoyenRessource",
   "status" : "active",
-  "date" : "2025-11-20T16:06:37+00:00",
+  "date" : "2025-11-21T09:00:00+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -125,12 +125,19 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-moyen-res
         ]
       },
       {
+        "id" : "Task.identifier.system",
+        "path" : "Task.identifier.system",
+        "min" : 1,
+        "patternUri" : "https://identifiant-medicosocial-moyenressource.esante.gouv.fr"
+      },
+      {
         "id" : "Task.identifier.value",
         "path" : "Task.identifier.value",
+        "min" : 1,
         "example" : [
           {
-            "label" : "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-PPMoyenRessource-identifiantMoyenRessource",
-            "valueString" : "123456"
+            "label" : "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-MORE-numMoyenRessource",
+            "valueString" : "3480787529/123456789-MORE-1234"
           }
         ]
       },
@@ -143,7 +150,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-moyen-res
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personalise"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise"
             ]
           }
         ],

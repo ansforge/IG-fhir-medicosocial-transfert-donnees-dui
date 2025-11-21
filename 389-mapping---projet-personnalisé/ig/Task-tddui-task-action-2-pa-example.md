@@ -8,9 +8,9 @@
 
 Profil: [TDDUI Task Action](StructureDefinition-tddui-task-action.md)
 
-**identifier**: 3480787529/123456789-PPAction-12345
+**identifier**: `https://identifiant-medicosocial-action.esante.gouv.fr`/3480787529/123456789-ACTI-12345
 
-**basedOn**: [CarePlan Projet personnalisé de Mme Jeanne L.](CarePlan-tddui-careplan-projet-perso-pa-example.md)
+**basedOn**: [CarePlan Projet personnalisé de Mme Jeanne L.](CarePlan-tddui-careplan-projet-personnalise-pa-example.md)
 
 **status**: In Progress
 
@@ -20,7 +20,7 @@ Profil: [TDDUI Task Action](StructureDefinition-tddui-task-action.md)
 
 > **input****type**:Titre de l'action à mener.**value**: Actions pour atteindre l'objectif 2
 
-> **input****type**:Objectif(s).**value**:[Goal : extension = ->CarePlan Projet personnalisé de Mme Jeanne L.; identifier = 3480787529/123456789-PPObjectif-12345; lifecycleStatus = active; description = ; note = Objectif 2](Goal-tddui-goal-objectif-2-pa-example.md)
+> **input****type**:Objectif(s).**value**:[Goal : extension = ->CarePlan Projet personnalisé de Mme Jeanne L.; identifier = https://identifiant-medicosocial-objectif.esante.gouv.fr#3480787529/123456789-OBJE-12345; lifecycleStatus = active; description = ; note = Objectif 2](Goal-tddui-goal-objectif-2-pa-example.md)
 
 
 
@@ -37,12 +37,13 @@ Profil: [TDDUI Task Action](StructureDefinition-tddui-task-action.md)
   },
   "identifier" : [
     {
-      "value" : "3480787529/123456789-PPAction-12345"
+      "system" : "https://identifiant-medicosocial-action.esante.gouv.fr",
+      "value" : "3480787529/123456789-ACTI-12345"
     }
   ],
   "basedOn" : [
     {
-      "reference" : "CarePlan/tddui-careplan-projet-perso-pa-example"
+      "reference" : "CarePlan/tddui-careplan-projet-personnalise-pa-example"
     }
   ],
   "status" : "in-progress",

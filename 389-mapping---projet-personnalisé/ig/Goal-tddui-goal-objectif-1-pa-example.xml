@@ -6,16 +6,17 @@
     <profile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif"/>
   </meta>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : But tddui-goal-objectif-1-pa-example</b></p><a name="tddui-goal-objectif-1-pa-example"> </a><a name="hctddui-goal-objectif-1-pa-example"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="StructureDefinition-tddui-goal-objectif.html">TDDUI Goal Objectif</a></p></div><p><b>Lien vers le projet personnalisé</b>: <a href="CarePlan-tddui-careplan-projet-perso-pa-example.html">CarePlan Projet personnalisé de Mme Jeanne L.</a></p><p><b>identifier</b>: 3480787529/123456789-PPObjectif-1234</p><p><b>lifecycleStatus</b>: Active</p><p><b>description</b>: <span title="Codes :">Réduire le risque de chute et la peur associée en 6 mois.</span></p><p><b>subject</b>: <a href="Patient-tddui-patient-pa-example-pp.html">Jeanne L. (official) Female, Date de Naissance inconnue ( Patient internal identifier: 3480787529/123456789)</a></p><p><b>addresses</b>: <a href="ServiceRequest-tddui-servicerequest-besoin-pa-example.html">ServiceRequest </a></p><p><b>note</b>: </p><blockquote><div><p>Objectif 1</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : But tddui-goal-objectif-1-pa-example</b></p><a name="tddui-goal-objectif-1-pa-example"> </a><a name="hctddui-goal-objectif-1-pa-example"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="StructureDefinition-tddui-goal-objectif.html">TDDUI Goal Objectif</a></p></div><p><b>Lien vers le projet personnalisé</b>: <a href="CarePlan-tddui-careplan-projet-personnalise-pa-example.html">CarePlan Projet personnalisé de Mme Jeanne L.</a></p><p><b>identifier</b>: <code>https://identifiant-medicosocial-objectif.esante.gouv.fr</code>/3480787529/123456789-OBJE-1234</p><p><b>lifecycleStatus</b>: Active</p><p><b>description</b>: <span title="Codes :">Réduire le risque de chute et la peur associée en 6 mois.</span></p><p><b>subject</b>: <a href="Patient-tddui-patient-pa-example-pp.html">Jeanne L. (official) Female, Date de Naissance inconnue ( Patient internal identifier: 3480787529/123456789)</a></p><p><b>addresses</b>: <a href="ServiceRequest-tddui-servicerequest-besoin-pa-example.html">ServiceRequest </a></p><p><b>note</b>: </p><blockquote><div><p>Objectif 1</p>
 </div></blockquote></div>
   </text>
   <extension url="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference">
     <valueReference>
-      <reference value="CarePlan/tddui-careplan-projet-perso-pa-example"/>
+      <reference value="CarePlan/tddui-careplan-projet-personnalise-pa-example"/>
     </valueReference>
   </extension>
   <identifier>
-    <value value="3480787529/123456789-PPObjectif-1234"/>
+    <system value="https://identifiant-medicosocial-objectif.esante.gouv.fr"/>
+    <value value="3480787529/123456789-OBJE-1234"/>
   </identifier>
   <lifecycleStatus value="active"/>
   <description>

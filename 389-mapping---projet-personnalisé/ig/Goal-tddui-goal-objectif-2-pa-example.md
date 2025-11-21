@@ -8,9 +8,9 @@
 
 Profil: [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md)
 
-**Lien vers le projet personnalisé**: [CarePlan Projet personnalisé de Mme Jeanne L.](CarePlan-tddui-careplan-projet-perso-pa-example.md)
+**Lien vers le projet personnalisé**: [CarePlan Projet personnalisé de Mme Jeanne L.](CarePlan-tddui-careplan-projet-personnalise-pa-example.md)
 
-**identifier**: 3480787529/123456789-PPObjectif-12345
+**identifier**: `https://identifiant-medicosocial-objectif.esante.gouv.fr`/3480787529/123456789-OBJE-12345
 
 **lifecycleStatus**: Active
 
@@ -44,13 +44,14 @@ Objectif 2
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference",
       "valueReference" : {
-        "reference" : "CarePlan/tddui-careplan-projet-perso-pa-example"
+        "reference" : "CarePlan/tddui-careplan-projet-personnalise-pa-example"
       }
     }
   ],
   "identifier" : [
     {
-      "value" : "3480787529/123456789-PPObjectif-12345"
+      "system" : "https://identifiant-medicosocial-objectif.esante.gouv.fr",
+      "value" : "3480787529/123456789-OBJE-12345"
     }
   ],
   "lifecycleStatus" : "active",

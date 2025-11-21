@@ -6,9 +6,9 @@
 
 ## Example CarePlan: Projet personnalisé de Mme Jeanne L.
 
-Profil: [TDDUI CarePlan Projet Personalisé](StructureDefinition-tddui-careplan-projet-personalise.md)
+Profil: [TDDUI CarePlan Projet Personalisé](StructureDefinition-tddui-careplan-projet-personnalise.md)
 
-**identifier**: 3480787529/123456789-PPER-1234
+**identifier**: `https://identifiant-medicosocial-projetpersonnalise.esante.gouv.fr`/3480787529/123456789-PPER-1234
 
 **status**: Active
 
@@ -27,14 +27,15 @@ Profil: [TDDUI CarePlan Projet Personalisé](StructureDefinition-tddui-careplan-
 ```json
 {
   "resourceType" : "CarePlan",
-  "id" : "tddui-careplan-projet-perso-pa-example",
+  "id" : "tddui-careplan-projet-personnalise-pa-example",
   "meta" : {
     "profile" : [
-      "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personalise"
+      "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise"
     ]
   },
   "identifier" : [
     {
+      "system" : "https://identifiant-medicosocial-projetpersonnalise.esante.gouv.fr",
       "value" : "3480787529/123456789-PPER-1234"
     }
   ],
