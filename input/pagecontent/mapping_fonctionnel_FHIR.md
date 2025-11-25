@@ -36,7 +36,7 @@ Ce mapping représente les données fonctionnelles trouvant leur équivalence da
 
 ### Vue globale du Projet Personnalisé
 
-<div>{%include mapping_projetPersonnalise_global.puml.svg%}</div>
+<div>{%include mapping_projetPersonnalise_global.svg%}</div>
 
 #### Mapping Projet Personnalisé
 
