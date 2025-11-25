@@ -70,6 +70,7 @@ Alias: $JDV-MotifNonRealisationEvenement-CISIS = https://smt.esante.gouv.fr/fhir
 Alias: $JDV-J117-ModeExercice-ENREG = https://mos.esante.gouv.fr/NOS/JDV_J117-ModeExercice-ENREG/FHIR/JDV-J117-ModeExercice-ENREG
 Alias: $JDV-J285-Besoins-Serafin = https://mos.esante.gouv.fr/NOS/JDV_J285-Besoins_SERAFIN/FHIR/JDV-J285-Besoins-SERAFIN
 Alias: $JDV-J367-TypeProjetPersonnaliseMs = https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j367-type-projet-personnalise-ms
+Alias: $JDV-J366-StatutBilanProjetPersonnaliseMs = https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j366-statut-bilan-projet-personnalise-ms
 
 // HL7
 Alias: $v2-0131 = http://terminology.hl7.org/CodeSystem/v2-0131

@@ -13,5 +13,4 @@ Description: "CodeSystem pour la définition des éléments spécifiques des inp
 * #avisUsager "Avis de l'usager sur l'action."
 * #resultatAttendu "Résultat attendu de l'action."
 * #pieceJointe "Pièce(s) jointe(s) de l'action."
-* #evaluationNonStructuree "Évaluation non structurée de l’action."
 * #objectif "Objectif(s)."

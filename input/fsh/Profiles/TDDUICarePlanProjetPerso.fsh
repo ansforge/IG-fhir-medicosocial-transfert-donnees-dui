@@ -1,8 +1,8 @@
 Profile: TDDUICarePlanProjetPersonnalise
 Parent: CarePlan
 Id: tddui-careplan-projet-personnalise
-Title: "TDDUI CarePlan Projet Personalisé"
-Description: "Profil de la ressource TDDUICarePlan permettant de représenter le projet personnalisé de l'usager." 
+Title: "TDDUI CarePlan Projet Personalise"
+Description: "Profil de la ressource CarePlan représentant le projet personnalisé d'un usager." 
 
 * extension contains
     TDDUIAttachment named entrantProjetPerso 0..*
@@ -25,15 +25,15 @@ Description: "Profil de la ressource TDDUICarePlan permettant de représenter le
 * supportingInfo ^slicing.rules = #open
 
 * supportingInfo contains
-    usager 0..1 and
-    structure 1..*
+    accordUsager 0..* and
+    accordStructure 1..*
 
-* supportingInfo[usager] only Reference(TDDUIConsentAccord)
-* supportingInfo[usager].display = "Consentement usager"
-* supportingInfo[usager] ^short = "Référence à l'accord de l'usager."
-* supportingInfo[structure] only Reference(TDDUIConsentAccord)
-* supportingInfo[structure] ^short = "Référence à l'accord de la structure."
-* supportingInfo[structure].display = "Consentement structure"
+* supportingInfo[accordUsager] only Reference(TDDUIConsentAccord)
+* supportingInfo[accordUsager].display = "Consentement usager"
+* supportingInfo[accordUsager] ^short = "Référence à l'accord de l'usager et/ou de son entourage."
+* supportingInfo[accordStructure] only Reference(TDDUIConsentAccord)
+* supportingInfo[accordStructure] ^short = "Référence à l'accord de la structure."
+* supportingInfo[accordStructure].display = "Consentement structure"
 
 * subject only Reference(TDDUIPatient or TDDUIPatientINS)
 
@@ -46,14 +46,15 @@ Id:       specmetier-to-TDDUICarePlanProjetPersonnalise
 Title:    "Modèle de contenu DUI"
 * -> "ProjetPersonnalise"
 
-* identifier -> "identifiantProjetPersonnalise"
+* identifier -> "idProjetPersonnalise"
+* meta.lastUpdated -> "statutProjetPersonnalise.dateStatut"
 * title -> "titreProjetPersonnalise"
 * description -> "descriptionProjetPersonnalise"
-* status -> "statutProjetPersonnalise"
+* status -> "statutProjetPersonnalise.statut"
 * category -> "typeProjetPersonnalise"
 * note -> "modaliteCommunicationProjetPersonnalise"
-* supportingInfo[usager] -> "accordUsagerProjetPersonnalise"
-* supportingInfo[structure] -> "accordStructureProjetPersonnalise"
+* supportingInfo[accordUsager] -> "accordUsagerProjetPersonnalise"
+* supportingInfo[accordStructure] -> "accordStructureProjetPersonnalise"
 * period.start -> "dateDebutMiseEnOeuvreProjetPersonnalise"
 * period.end -> "dateFinMiseEnOeuvreProjetPersonnalise"
 * extension[entrantProjetPerso] -> "entrantProjetPersonnalisee" //Pourquoi Personnalisee ?

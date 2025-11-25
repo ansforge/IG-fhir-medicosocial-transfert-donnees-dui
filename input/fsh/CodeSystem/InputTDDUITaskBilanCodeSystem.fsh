@@ -12,4 +12,5 @@ Description: "CodeSystem pour la définition des éléments spécifiques des inp
 * #problematique "Problématique liée à l'usager."
 * #invite "Liste des personnes invitées à participer au bilan."
 * #dateProchainBilan "Date du prochain bilan."
+* #pieceJointe "Pièce jointe du moyen/ressource."
 * #synthesePreparationBilan "Préparation du bilan."

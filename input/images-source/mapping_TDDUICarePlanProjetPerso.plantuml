@@ -10,14 +10,15 @@ object "**TDDUIPatient**" as TDDUIPatient_subject #fdb462 {
 }
 
 object "**TDDUIConsentAccord**" as TDDUIConsentAccord #8dd3c7 {
-    accordStructure
-    accordUsager
+    accordStructureProjetPersonnalise
+    accordUsagerProjetPersonnalise
 }
 
 map "**ProjetPersonnalise : TDDUICarePlanProjetPerso**" as ProjetPersonnalise #8dd3c7 {
-    entrantProjetPersonnalisee => <&plus> entrantProjetPerso
-    identifiantProjetPersonnalise => identifier
-    statutProjetPersonnalise => status
+    entrantProjetPersonnalise => <&plus> entrantProjetPerso
+    idProjetPersonnalise => identifier
+    statutProjetPersonnalise.statut => status
+    statutProjetPersonnalise.dateStatut => meta.lastUpdated
     typeProjetPersonnalise => category
     titreProjetPersonnalise => title
     descriptionProjetPersonnalise => description

@@ -2,7 +2,7 @@ Profile: TDDUIGoalAttente
 Parent: Goal
 Id: tddui-goal-attente
 Title: "TDDUI Goal Attente"
-Description: "Profil de la ressource TDDUIGoal permettant de représenter les attentes de l'usager." 
+Description: "Profil de la ressource Goal permettant de représenter les attentes pour un usager."
 
 * extension contains
     TDDUICarePlanProjetPersoRef named referenceProjetPerso 1..1
@@ -40,7 +40,7 @@ Id:       specmetier-to-TDDUIGoalAttente
 Title:    "Modèle de contenu DUI"
 * -> "Attente"
 
-* identifier -> "identifiantAttente"
+* identifier -> "idAttente"
 * description.text -> "descriptionAttente"
 * note[origineAttente] -> "origineAttente"
 * note[commentaireAttente] -> "commentaireAttente"

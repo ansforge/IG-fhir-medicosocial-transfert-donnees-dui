@@ -2,7 +2,7 @@ Profile: TDDUIGoalObjectif
 Parent: Goal
 Id: tddui-goal-objectif
 Title: "TDDUI Goal Objectif"
-Description: "Profil de la ressource TDDUIGoalObjectif permettant de représenter les résultats à atteindre dans le cadre du projet personnalisé." 
+Description: "Profil de la ressource Goal permettant de représenter les résultats à atteindre dans le cadre du projet personnalisé." 
 
 * extension contains
     TDDUIEvaluationRef named referenceEvaluation 0..* and
@@ -18,7 +18,7 @@ Description: "Profil de la ressource TDDUIGoalObjectif permettant de représente
 
 * target.detailString 0..1
 
-* expressedBy only Reference(TDDUIPractitionerRole or TDDUIPractitioner or TDDUIPatient or TDDUIPatientINS or FRCoreRelatedPersonProfile)
+* expressedBy only Reference(TDDUIPractitionerRole or TDDUIPractitioner)
 
 * addresses 1..1
 * addresses only Reference(TDDUIServiceRequestBesoin)
@@ -54,8 +54,9 @@ Id:       specmetier-to-TDDUIGoalObjectif
 Title:    "Modèle de contenu DUI"
 * -> "Objectif"
 
-* identifier -> "identifiantObjectif"
-* lifecycleStatus -> "statutObjectif"
+* identifier -> "idObjectif"
+* lifecycleStatus -> "statutObjectif.statut"
+* meta.lastUpdated -> "statutObjectif.dateStatut"
 * addresses -> "Besoin"
 * expressedBy -> "referentObjectif"
 * note[titreObjectif].text -> "titreObjectif"

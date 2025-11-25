@@ -20,8 +20,7 @@ Description: "Profil de la ressource Task permettant de représenter les prestat
     titre 1..1 and
     typePrestation 0..* and
     evaluation 0..1 and
-    pieceJointe 0..* and 
-    evaluationNonStructuree 0..1
+    pieceJointe 0..*
 
 * input[titre].type = InputTDDUITaskPrestationCodeSystem#titre
 * input[titre].value[x] only string
@@ -32,13 +31,13 @@ Description: "Profil de la ressource Task permettant de représenter les prestat
 * input[typePrestation].valueCodeableConcept from TDDUISerafinValueSet
 * input[typePrestation] ^short = "Type de la prestation."
 
+* input[evaluation].type = InputTDDUITaskPrestationCodeSystem#evaluation
+* input[evaluation].value[x] only Reference(TDDUIQuestionnaireResponse)
+* input[evaluation] ^short = "Évaluation"
+
 * input[pieceJointe].type = InputTDDUITaskPrestationCodeSystem#pieceJointe
 * input[pieceJointe].value[x] only Reference(TDDUIDocumentReference)
 * input[pieceJointe] ^short = "Pièce jointe associée"
-
-* input[evaluationNonStructuree].type = InputTDDUITaskPrestationCodeSystem#evaluationNonStructuree
-* input[evaluationNonStructuree].value[x] only Reference(TDDUIDocumentReference)
-* input[evaluationNonStructuree] ^short = "EValuation non structurée"
 
 * partOf 0..1
 * partOf only Reference(TDDUITaskAction)
@@ -53,8 +52,9 @@ Id:       specmetier-to-TDDUITaskPrestation
 Title:    "Modèle de contenu DUI"
 * -> "PrestationProjetPersonnalise"
 
-* status -> "statutPrestation"
-* identifier -> "identifiantPrestation"
+* status -> "statutPrestation.statut"
+* meta.lastUpdated -> "statutPrestation.dateStatut"
+* identifier -> "idPrestation"
 * input[titre] -> "titrePrestation"
 * description -> "descriptionPrestation"
 * input[typePrestation] -> "typePrestation"
@@ -62,6 +62,5 @@ Title:    "Modèle de contenu DUI"
 * executionPeriod.end -> "dateFinPrestation"
 * input[evaluation] -> "evaluationPrestation"
 * input[pieceJointe] -> "pieceJointePrestation"
-* input[evaluationNonStructuree] -> "evaluationNonStructureePrestation"
 * partOf -> "Action"
 * basedOn -> "ProjetPersonnalise"

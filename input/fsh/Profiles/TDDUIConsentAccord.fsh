@@ -2,7 +2,7 @@ Profile: TDDUIConsentAccord
 Parent: Consent
 Id: tddui-consent-accord
 Title: "TDDUI Consent Accord"
-Description: "Profil de la ressource TDDUIConsent permettant de représenter l'accord de l'usager et de la structure." 
+Description: "Profil de la ressource Consent permettant de représenter l'accord de l'usager, de son entourage ou de la structure." 
 
 * extension contains
     $consentPeriod-r5 named TDDUI-consentPeriod-r5 0..1 

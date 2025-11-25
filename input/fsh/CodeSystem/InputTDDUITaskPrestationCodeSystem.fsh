@@ -12,4 +12,3 @@ Description: "CodeSystem pour la définition des éléments spécifiques des inp
 * #typePrestation "Type de la prestation."
 * #evaluation "Evaluation de l'action."
 * #pieceJointe "Pièce(s) jointe(s) de l'action."
-* #evaluationNonStructuree "Évaluation non structurée de l’action."

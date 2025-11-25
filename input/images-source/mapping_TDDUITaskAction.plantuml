@@ -5,13 +5,14 @@ map "executionPeriod" as executionPeriod #DarkGray {
     dateFinAction => end
 }
 
-object "**TDDUICarePlanProjetPerso**" as TDDUICarePlanProjetPerso_basedOn #8dd3c7 {
+object "**TDDUICarePlanProjetPersonnalise**" as TDDUICarePlanProjetPersonnalise_basedOn #8dd3c7 {
     ProjetPersonnalise
 }
 
 map "**Action : TDDUITaskAction**" as Action #d9d9d9 {
-    identifiantAction => identifier
-    statutAction => status
+    idAction => identifier
+    statutAction.statut => status
+    statutAction.dateStatut => meta.lastUpdated
     descriptionAction => description
     referentAction => owner
     titreAction => <&layers> input:titre
@@ -19,11 +20,10 @@ map "**Action : TDDUITaskAction**" as Action #d9d9d9 {
     avisUsagerAction => <&layers> input:avisUsager
     resultatAttenduAction => <&layers> input:resultatAttendu
     pieceJointeAction => <&layers> input:pieceJointe
-    evaluationNonStructureeAction => <&layers> input:evaluationNonStructuree
     Objectif => <&layers> input:objectif
     executionPeriod *-> executionPeriod
 }
 
-Action -u-> TDDUICarePlanProjetPerso_basedOn : basedOn
+Action -u-> TDDUICarePlanProjetPersonnalise_basedOn : basedOn
 
 @enduml

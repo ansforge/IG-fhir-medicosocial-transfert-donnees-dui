@@ -14,5 +14,5 @@ Description: "Exemple d'un projet personnalisé PA"
 
 * subject = Reference(tddui-patient-pa-example-pp)
 
-* supportingInfo[structure] = Reference(tddui-consent-accord-example)
-* supportingInfo[structure].display = "Consentement structure"
+* supportingInfo[accordStructure] = Reference(tddui-consent-accord-example)
+* supportingInfo[accordStructure].display = "Consentement structure"

@@ -12,13 +12,13 @@ Description: "Profil de la ressource Task permettant de représenter le bilan du
 * identifier.system 1..1
 * identifier.system = "https://identifiant-medicosocial-bilan.esante.gouv.fr"
 
+* code from $JDV-J366-StatutBilanProjetPersonnaliseMs
+
+* executionPeriod 1..1
 * executionPeriod.start 1..1
 
 * basedOn 1..1
 * basedOn only Reference(TDDUICarePlanProjetPersonnalise)
-
-* extension contains
-    TDDUIAttachment named pieceJointeBilan 0..*
 
 * input ^slicing.discriminator.type = #pattern
 * input ^slicing.discriminator.path = "type"
@@ -27,7 +27,8 @@ Description: "Profil de la ressource Task permettant de représenter le bilan du
 * input contains
     perimetre 0..1 and
     problematique 0..1 and
-    invite 0..* and
+    invite 0..1 and 
+    pieceJointe 0..* and
     dateProchainBilan 0..1 and 
     synthesePreparationBilan 0..*
 
@@ -43,12 +44,19 @@ Description: "Profil de la ressource Task permettant de représenter le bilan du
 * input[invite].value[x] only string
 * input[invite] ^short = "Liste des personnes invitées à participer au bilan"
 
+* input[pieceJointe].type = InputTDDUITaskBilanCodeSystem#pieceJointe
+* input[pieceJointe].value[x] only Reference(TDDUIDocumentReference)
+* input[pieceJointe] ^short = "Pièce jointe du bilan"
+
 * input[dateProchainBilan].type = InputTDDUITaskBilanCodeSystem#dateProchainBilan
 * input[dateProchainBilan].value[x] only dateTime
 * input[dateProchainBilan] ^short = "Date du prochain bilan"
 
 * input[synthesePreparationBilan].type = InputTDDUITaskBilanCodeSystem#synthesePreparationBilan
 * input[synthesePreparationBilan].value[x] only Annotation
+* input[synthesePreparationBilan].valueAnnotation.text 1..1
+* input[synthesePreparationBilan].valueAnnotation.authorReference 1..1
+* input[synthesePreparationBilan].valueAnnotation.authorReference only Reference(TDDUIPractitioner)
 * input[synthesePreparationBilan] ^short = "Préparation du bilan"
 
 * output ^slicing.discriminator.type = #pattern
@@ -59,10 +67,7 @@ Description: "Profil de la ressource Task permettant de représenter le bilan du
     syntheseBilan 0..1
 
 * output[syntheseBilan].type = OutputTDDUITaskBilanCodeSystem#syntheseBilan
-* output[syntheseBilan].value[x] only Annotation
-* output[syntheseBilan].valueAnnotation.text 1..1
-* output[syntheseBilan].valueAnnotation.authorReference 1..1
-* output[syntheseBilan].valueAnnotation.authorReference only Reference(TDDUIPractitioner or TDDUIPatient or TDDUIPatientINS or FRCoreRelatedPersonProfile)
+* output[syntheseBilan].value[x] only string
 * output[syntheseBilan] ^short = "Synthèse du bilan"
 
 Mapping:  ConceptMetier_TDDUITaskBilan
@@ -72,7 +77,7 @@ Id:       specmetier-to-TDDUITaskBilan
 Title:    "Modèle de contenu DUI"
 * -> "Bilan"
 
-* identifier -> "identifiantBilan"
+* identifier -> "idBilan"
 * executionPeriod.start -> "dateBilan"
 * code -> "categorieBilan"
 * input[perimetre] -> "perimetreBilan"
@@ -84,4 +89,4 @@ Title:    "Modèle de contenu DUI"
 * input[synthesePreparationBilan].valueAnnotation.authorReference -> "synthesePreparationBilan.auteur"
 * output[syntheseBilan] -> "syntheseBilan"
 * basedOn -> "ProjetPersonnalise"
-* extension[pieceJointeBilan] -> "pieceJointeBilan"
+* input[pieceJointe] -> "pieceJointeBilan"

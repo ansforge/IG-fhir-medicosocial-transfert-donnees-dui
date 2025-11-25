@@ -2,7 +2,7 @@ Profile: TDDUIServiceRequestBesoin
 Parent: ServiceRequest
 Id: tddui-service-request-besoin
 Title: "TDDUI ServiceRequest Besoin"
-Description: "Profil de la ressource TDDUIServiceRequestBesoin permettant de représenter les besoins de l'usager." 
+Description: "Profil de la ressource ServiceRequest permettant de représenter les besoins de l'usager." 
 
 * identifier 1..1
 * identifier ^short = "Identifiant du besoin"
@@ -19,6 +19,7 @@ Description: "Profil de la ressource TDDUIServiceRequestBesoin permettant de rep
 * category from $JDV-J285-Besoins-Serafin (required)
 
 * code 1..1
+* code.text 1..1
 
 * basedOn 1..1
 * basedOn only Reference(TDDUICarePlanProjetPersonnalise)
@@ -32,7 +33,7 @@ Id:       specmetier-to-TDDUIServiceRequestBesoin
 Title:    "Modèle de contenu DUI"
 * -> "Besoin"
 
-* identifier -> "identifiantBesoin"
+* identifier -> "idBesoin"
 * category -> "typeBesoin"
 * code.text -> "descriptionBesoin"
 * orderDetail.text -> "analyseProfessionnelBesoin"

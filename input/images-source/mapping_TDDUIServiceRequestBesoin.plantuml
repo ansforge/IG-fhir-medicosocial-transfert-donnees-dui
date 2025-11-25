@@ -12,19 +12,19 @@ map "note" as note #DarkGray {
     commentaireBesoin => text
 }
 
-object "**TDDUICarePlanProjetPerso**" as TDDUICarePlanProjetPerso_basedOn #8dd3c7 {
+object "**TDDUICarePlanProjetPersonnalise**" as TDDUICarePlanProjetPersonnalise_basedOn #8dd3c7 {
     ProjetPersonnalise
 }
 
 map "**Besoin : TDDUIServiceRequestBesoin**" as Besoin #fccde5 {
     pieceJointeBesoin => <&plus> pieceJointeBesoin
-    identifiantBesoin => identifier
+    idBesoin => identifier
     typeBesoin => category
     code *-> code
     orderDetail *-> orderDetail
     note *-> note
 }
 
-Besoin -u-> TDDUICarePlanProjetPerso_basedOn : basedOn
+Besoin -u-> TDDUICarePlanProjetPersonnalise_basedOn : basedOn
 
 @enduml

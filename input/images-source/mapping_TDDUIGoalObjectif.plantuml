@@ -1,27 +1,15 @@
 @startuml
 
-map "description" as description #DarkGray {
-    descriptionObjectif => text
-}
-
 map "target" as target #DarkGray {
     resultatAttenduObjectif => <&layers> detail[x]:detailString
     dateFinObjectif => <&layers> due[x]:dueDate
 }
 
-map "<&layers> note:titreObjectif" as notetitreObjectif #DarkGray {
-    titreObjectif => text
-}
-
-map "<&layers> note:avisUsagerObjectif" as noteavisUsagerObjectif #DarkGray {
-    avisUsagerObjectif => text
-}
-
-map "<&layers> note:strategieMiseEnOeuvreObjectif" as notestrategieMiseEnOeuvreObjectif #DarkGray {
-    strategieMiseEnOeuvreObjectif => text
-}
-
 object "**TDDUIPractitionerRole**" as TDDUIPractitionerRole_expressedBy #fdb462 {
+    referentObjectif
+}
+
+object "**TDDUIPractitioner**" as TDDUIPractitioner_expressedBy #d9d9d9 {
     referentObjectif
 }
 
@@ -33,17 +21,19 @@ map "**Objectif : TDDUIGoalObjectif**" as Objectif #fb8072 {
     evaluationObjectif => <&plus> referenceEvaluation
     ProjetPersonnalise => <&plus> referenceProjetPerso
     identifiantObjectif => identifier
-    statutObjectif => lifecycleStatus
+    statutObjectif.statut => lifecycleStatus
+    statutObjectif.dateStatut => meta.lastUpdated
     domaineObjectif => category
     dateDebutObjectif => <&layers> start[x]:startDate
-    description *-> description
+    descriptionObjectif => description.text
     target *-> target
-    <&layers> note:titreObjectif *-> notetitreObjectif
-    <&layers> note:avisUsagerObjectif *-> noteavisUsagerObjectif
-    <&layers> note:strategieMiseEnOeuvreObjectif *-> notestrategieMiseEnOeuvreObjectif
+    noteTitreObjectif => note:titreObjectif.text
+    avisUsagerObjectif => note:avisUsagerObjectif.text
+    strategieMiseEnOeuvreObjectif=> note:strategieMiseEnOeuvreObjectif.text
 }
 
 Objectif -u-> TDDUIPractitionerRole_expressedBy : expressedBy
+Objectif -u-> TDDUIPractitioner_expressedBy : expressedBy
 Objectif -d-> TDDUIServiceRequestBesoin_addresses : addresses
 
 @enduml
