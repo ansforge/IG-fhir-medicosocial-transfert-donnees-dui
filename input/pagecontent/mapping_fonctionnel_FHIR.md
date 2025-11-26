@@ -34,42 +34,38 @@ Ce mapping représente les données fonctionnelles trouvant leur équivalence da
 
 <div>{%include mapping_TDDUIQuestionnaireResponse.svg%}</div>
 
-### Vue globale du Projet Personnalisé
-
-<div>{%include mapping_projetPersonnalise_global.svg%}</div>
-
-#### Mapping Projet Personnalisé
+### Mapping Projet Personnalisé
 
 <div>{%include mapping_TDDUICarePlanProjetPerso.svg%}</div>
 
-##### Mapping Accord
+#### Mapping Accord
 
 <div>{%include mapping_TDDUIConsentAccord.svg%}</div>
 
-#### Mapping Besoin
+### Mapping Besoin
 
 <div>{%include mapping_TDDUIServiceRequestBesoin.svg%}</div>
 
-#### Mapping Objectif
+### Mapping Objectif
 
 <div>{%include mapping_TDDUIGoalObjectif.svg%}</div>
 
-#### Mapping MoyenRessource
+### Mapping MoyenRessource
 
 <div>{%include mapping_TDDUITaskMoyenRessource.svg%}</div>
 
-#### Mapping Action
+### Mapping Action
 
 <div>{%include mapping_TDDUITaskAction.svg%}</div>
 
-#### Mapping Prestation
+### Mapping Prestation
 
 <div>{%include mapping_TDDUITaskPrestation.svg%}</div>
 
-#### Mapping Attente
+### Mapping Attente
 
 <div>{%include mapping_TDDUIGoalAttente.svg%}</div>
 
-#### Mapping Bilan
+### Mapping Bilan
 
 <div>{%include mapping_TDDUITaskBilan.svg%}</div>
