@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-prestation-codesystem | *Version*:2.1.0-ballot |
-| Active as of 2025-11-21 | *Computable Name*:InputTDDUITaskPrestationCodeSystem |
+| Active as of 2025-11-26 | *Computable Name*:InputTDDUITaskPrestationCodeSystem |
 
  
 CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les prestations du projet personnalisé. 
@@ -37,7 +37,7 @@ CodeSystem pour la définition des éléments spécifiques des input dans la res
   "title" : "InputTDDUITaskPrestationCodeSystem",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-11-21T09:00:00+00:00",
+  "date" : "2025-11-26T10:17:34+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -65,7 +65,7 @@ CodeSystem pour la définition des éléments spécifiques des input dans la res
   "caseSensitive" : true,
   "compositional" : false,
   "content" : "complete",
-  "count" : 5,
+  "count" : 4,
   "concept" : [
     {
       "code" : "titre",
@@ -82,10 +82,6 @@ CodeSystem pour la définition des éléments spécifiques des input dans la res
     {
       "code" : "pieceJointe",
       "display" : "Pièce(s) jointe(s) de l'action."
-    },
-    {
-      "code" : "evaluationNonStructuree",
-      "display" : "Évaluation non structurée de l’action."
     }
   ]
 }

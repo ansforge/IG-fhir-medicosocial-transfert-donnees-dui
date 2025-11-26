@@ -9,10 +9,10 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif | *Version*:2.1.0-ballot |
-| Active as of 2025-11-21 | *Computable Name*:TDDUIGoalObjectif |
+| Active as of 2025-11-26 | *Computable Name*:TDDUIGoalObjectif |
 
  
-Profil de la ressource TDDUIGoalObjectif permettant de représenter les résultats à atteindre dans le cadre du projet personnalisé. 
+Profil de la ressource Goal permettant de représenter les résultats à atteindre dans le cadre du projet personnalisé. 
 
 **Usages:**
 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-objectif.
   "name" : "TDDUIGoalObjectif",
   "title" : "TDDUI Goal Objectif",
   "status" : "active",
-  "date" : "2025-11-21T09:00:00+00:00",
+  "date" : "2025-11-26T10:17:34+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -55,7 +55,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-objectif.
       ]
     }
   ],
-  "description" : "Profil de la ressource TDDUIGoalObjectif permettant de représenter les résultats à atteindre dans le cadre du projet personnalisé.",
+  "description" : "Profil de la ressource Goal permettant de représenter les résultats à atteindre dans le cadre du projet personnalisé.",
   "jurisdiction" : [
     {
       "coding" : [
@@ -104,6 +104,16 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-objectif.
           {
             "identity" : "specmetier-to-TDDUIGoalObjectif",
             "map" : "Objectif"
+          }
+        ]
+      },
+      {
+        "id" : "Goal.meta.lastUpdated",
+        "path" : "Goal.meta.lastUpdated",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIGoalObjectif",
+            "map" : "statutObjectif.dateStatut"
           }
         ]
       },
@@ -173,7 +183,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-objectif.
         "mapping" : [
           {
             "identity" : "specmetier-to-TDDUIGoalObjectif",
-            "map" : "identifiantObjectif"
+            "map" : "idObjectif"
           }
         ]
       },
@@ -200,7 +210,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-objectif.
         "mapping" : [
           {
             "identity" : "specmetier-to-TDDUIGoalObjectif",
-            "map" : "statutObjectif"
+            "map" : "statutObjectif.statut"
           }
         ]
       },
@@ -341,10 +351,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-objectif.
             "code" : "Reference",
             "targetProfile" : [
               "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role",
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner",
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient",
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins",
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner"
             ]
           }
         ],

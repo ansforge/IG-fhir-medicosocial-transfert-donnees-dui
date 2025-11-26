@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource | *Version*:2.1.0-ballot |
-| Active as of 2025-11-21 | *Computable Name*:TDDUITaskMoyenRessource |
+| Active as of 2025-11-26 | *Computable Name*:TDDUITaskMoyenRessource |
 
  
 Profil de la ressource Task permettant de représenter les moyens ou ressources utilisées dans le cadre du projet personnalisé. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-moyen-res
   "name" : "TDDUITaskMoyenRessource",
   "title" : "TDDUI Task MoyenRessource",
   "status" : "active",
-  "date" : "2025-11-21T09:00:00+00:00",
+  "date" : "2025-11-26T10:17:34+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -120,7 +120,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-moyen-res
         "mapping" : [
           {
             "identity" : "specmetier-to-TDDUITaskMoyenRessource",
-            "map" : "identifiantMoyenRessource"
+            "map" : "idMoyenRessource"
           }
         ]
       },
@@ -181,8 +181,8 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-moyen-res
         ]
       },
       {
-        "id" : "Task.code",
-        "path" : "Task.code",
+        "id" : "Task.code.text",
+        "path" : "Task.code.text",
         "mapping" : [
           {
             "identity" : "specmetier-to-TDDUITaskMoyenRessource",
@@ -273,7 +273,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-moyen-res
         "id" : "Task.input:evaluation",
         "path" : "Task.input",
         "sliceName" : "evaluation",
-        "short" : "Evaluation structurée",
+        "short" : "Evaluation",
         "min" : 0,
         "max" : "1",
         "mapping" : [
@@ -335,44 +335,6 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-moyen-res
       },
       {
         "id" : "Task.input:pieceJointe.value[x]",
-        "path" : "Task.input.value[x]",
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Task.input:evaluationNonStructuree",
-        "path" : "Task.input",
-        "sliceName" : "evaluationNonStructuree",
-        "short" : "Evaluation non structurée",
-        "min" : 0,
-        "max" : "1",
-        "mapping" : [
-          {
-            "identity" : "specmetier-to-TDDUITaskMoyenRessource",
-            "map" : "evaluationNonStructureeMoyenRessource"
-          }
-        ]
-      },
-      {
-        "id" : "Task.input:evaluationNonStructuree.type",
-        "path" : "Task.input.type",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-moyen-ressource-codesystem",
-              "code" : "evaluationNonStructuree"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "Task.input:evaluationNonStructuree.value[x]",
         "path" : "Task.input.value[x]",
         "type" : [
           {

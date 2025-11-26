@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-bilan | *Version*:2.1.0-ballot |
-| Active as of 2025-11-21 | *Computable Name*:TDDUITaskBilan |
+| Active as of 2025-11-26 | *Computable Name*:TDDUITaskBilan |
 
  
 Profil de la ressource Task permettant de représenter le bilan du projet personnalisé. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-bilan.csv
   "name" : "TDDUITaskBilan",
   "title" : "TDDUI Task Bilan",
   "status" : "active",
-  "date" : "2025-11-21T09:00:00+00:00",
+  "date" : "2025-11-26T10:17:34+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -112,41 +112,6 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-bilan.csv
         ]
       },
       {
-        "id" : "Task.extension",
-        "path" : "Task.extension",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "value",
-              "path" : "url"
-            }
-          ],
-          "ordered" : false,
-          "rules" : "open"
-        }
-      },
-      {
-        "id" : "Task.extension:pieceJointeBilan",
-        "path" : "Task.extension",
-        "sliceName" : "pieceJointeBilan",
-        "min" : 0,
-        "max" : "*",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment"
-            ]
-          }
-        ],
-        "mapping" : [
-          {
-            "identity" : "specmetier-to-TDDUITaskBilan",
-            "map" : "pieceJointeBilan"
-          }
-        ]
-      },
-      {
         "id" : "Task.identifier",
         "path" : "Task.identifier",
         "short" : "Identifiant du bilan",
@@ -155,7 +120,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-bilan.csv
         "mapping" : [
           {
             "identity" : "specmetier-to-TDDUITaskBilan",
-            "map" : "identifiantBilan"
+            "map" : "idBilan"
           }
         ]
       },
@@ -199,12 +164,21 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-bilan.csv
       {
         "id" : "Task.code",
         "path" : "Task.code",
+        "binding" : {
+          "strength" : "required",
+          "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j366-statut-bilan-projet-personnalise-ms"
+        },
         "mapping" : [
           {
             "identity" : "specmetier-to-TDDUITaskBilan",
             "map" : "categorieBilan"
           }
         ]
+      },
+      {
+        "id" : "Task.executionPeriod",
+        "path" : "Task.executionPeriod",
+        "min" : 1
       },
       {
         "id" : "Task.executionPeriod.start",
@@ -306,7 +280,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-bilan.csv
         "sliceName" : "invite",
         "short" : "Liste des personnes invitées à participer au bilan",
         "min" : 0,
-        "max" : "*",
+        "max" : "1",
         "mapping" : [
           {
             "identity" : "specmetier-to-TDDUITaskBilan",
@@ -332,6 +306,44 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-bilan.csv
         "type" : [
           {
             "code" : "string"
+          }
+        ]
+      },
+      {
+        "id" : "Task.input:pieceJointe",
+        "path" : "Task.input",
+        "sliceName" : "pieceJointe",
+        "short" : "Pièce jointe du bilan",
+        "min" : 0,
+        "max" : "*",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUITaskBilan",
+            "map" : "pieceJointeBilan"
+          }
+        ]
+      },
+      {
+        "id" : "Task.input:pieceJointe.type",
+        "path" : "Task.input.type",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-bilan-codesystem",
+              "code" : "pieceJointe"
+            }
+          ]
+        }
+      },
+      {
+        "id" : "Task.input:pieceJointe.value[x]",
+        "path" : "Task.input.value[x]",
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"
+            ]
           }
         ]
       },
@@ -417,22 +429,20 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-bilan.csv
           ],
           "ordered" : false,
           "rules" : "open"
-        }
+        },
+        "min" : 1
       },
       {
         "id" : "Task.input:synthesePreparationBilan.value[x].author[x]:authorReference",
         "path" : "Task.input.value[x].author[x]",
         "sliceName" : "authorReference",
-        "min" : 0,
+        "min" : 1,
         "max" : "1",
         "type" : [
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://hl7.org/fhir/StructureDefinition/Practitioner",
-              "http://hl7.org/fhir/StructureDefinition/Patient",
-              "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-              "http://hl7.org/fhir/StructureDefinition/Organization"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner"
             ]
           }
         ],
@@ -497,40 +507,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-bilan.csv
         "path" : "Task.output.value[x]",
         "type" : [
           {
-            "code" : "Annotation"
-          }
-        ]
-      },
-      {
-        "id" : "Task.output:syntheseBilan.value[x].author[x]",
-        "path" : "Task.output.value[x].author[x]",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "type",
-              "path" : "$this"
-            }
-          ],
-          "ordered" : false,
-          "rules" : "open"
-        },
-        "min" : 1
-      },
-      {
-        "id" : "Task.output:syntheseBilan.value[x].author[x]:authorReference",
-        "path" : "Task.output.value[x].author[x]",
-        "sliceName" : "authorReference",
-        "min" : 1,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner",
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient",
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins",
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person"
-            ]
+            "code" : "string"
           }
         ]
       }

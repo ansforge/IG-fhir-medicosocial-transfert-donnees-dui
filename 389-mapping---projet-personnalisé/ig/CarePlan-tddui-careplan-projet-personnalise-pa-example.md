@@ -6,7 +6,7 @@
 
 ## Example CarePlan: Projet personnalisé de Mme Jeanne L.
 
-Profil: [TDDUI CarePlan Projet Personalisé](StructureDefinition-tddui-careplan-projet-personnalise.md)
+Profil: [TDDUI CarePlan Projet Personalise](StructureDefinition-tddui-careplan-projet-personnalise.md)
 
 **identifier**: `https://identifiant-medicosocial-projetpersonnalise.esante.gouv.fr`/3480787529/123456789-PPER-1234
 

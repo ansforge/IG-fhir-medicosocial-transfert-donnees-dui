@@ -1,18 +1,18 @@
-# TDDUI CarePlan Projet Personalisé - Médicosocial - Transfert de données DUI v2.1.0-ballot
+# TDDUI CarePlan Projet Personalise - Médicosocial - Transfert de données DUI v2.1.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **TDDUI CarePlan Projet Personalisé**
+* **TDDUI CarePlan Projet Personalise**
 
-## Resource Profile: TDDUI CarePlan Projet Personalisé 
+## Resource Profile: TDDUI CarePlan Projet Personalise 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise | *Version*:2.1.0-ballot |
-| Active as of 2025-11-21 | *Computable Name*:TDDUICarePlanProjetPersonnalise |
+| Active as of 2025-11-26 | *Computable Name*:TDDUICarePlanProjetPersonnalise |
 
  
-Profil de la ressource TDDUICarePlan permettant de représenter le projet personnalisé de l'usager. 
+Profil de la ressource CarePlan représentant le projet personnalisé d'un usager. 
 
 **Usages:**
 
@@ -40,9 +40,9 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise",
   "version" : "2.1.0-ballot",
   "name" : "TDDUICarePlanProjetPersonnalise",
-  "title" : "TDDUI CarePlan Projet Personalisé",
+  "title" : "TDDUI CarePlan Projet Personalise",
   "status" : "active",
-  "date" : "2025-11-21T09:00:00+00:00",
+  "date" : "2025-11-26T10:17:34+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -55,7 +55,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
       ]
     }
   ],
-  "description" : "Profil de la ressource TDDUICarePlan permettant de représenter le projet personnalisé de l'usager.",
+  "description" : "Profil de la ressource CarePlan représentant le projet personnalisé d'un usager.",
   "jurisdiction" : [
     {
       "coding" : [
@@ -113,6 +113,16 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
         ]
       },
       {
+        "id" : "CarePlan.meta.lastUpdated",
+        "path" : "CarePlan.meta.lastUpdated",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUICarePlanProjetPersonnalise",
+            "map" : "statutProjetPersonnalise.dateStatut"
+          }
+        ]
+      },
+      {
         "id" : "CarePlan.extension",
         "path" : "CarePlan.extension",
         "slicing" : {
@@ -156,7 +166,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
         "mapping" : [
           {
             "identity" : "specmetier-to-TDDUICarePlanProjetPersonnalise",
-            "map" : "identifiantProjetPersonnalise"
+            "map" : "idProjetPersonnalise"
           }
         ]
       },
@@ -183,7 +193,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
         "mapping" : [
           {
             "identity" : "specmetier-to-TDDUICarePlanProjetPersonnalise",
-            "map" : "statutProjetPersonnalise"
+            "map" : "statutProjetPersonnalise.statut"
           }
         ]
       },
@@ -277,12 +287,12 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
         "min" : 1
       },
       {
-        "id" : "CarePlan.supportingInfo:usager",
+        "id" : "CarePlan.supportingInfo:accordUsager",
         "path" : "CarePlan.supportingInfo",
-        "sliceName" : "usager",
-        "short" : "Référence à l'accord de l'usager.",
+        "sliceName" : "accordUsager",
+        "short" : "Référence à l'accord de l'usager et/ou de son entourage.",
         "min" : 0,
-        "max" : "1",
+        "max" : "*",
         "type" : [
           {
             "code" : "Reference",
@@ -299,15 +309,15 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
         ]
       },
       {
-        "id" : "CarePlan.supportingInfo:usager.display",
+        "id" : "CarePlan.supportingInfo:accordUsager.display",
         "path" : "CarePlan.supportingInfo.display",
         "min" : 1,
         "patternString" : "Consentement usager"
       },
       {
-        "id" : "CarePlan.supportingInfo:structure",
+        "id" : "CarePlan.supportingInfo:accordStructure",
         "path" : "CarePlan.supportingInfo",
-        "sliceName" : "structure",
+        "sliceName" : "accordStructure",
         "short" : "Référence à l'accord de la structure.",
         "min" : 1,
         "max" : "*",
@@ -327,7 +337,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
         ]
       },
       {
-        "id" : "CarePlan.supportingInfo:structure.display",
+        "id" : "CarePlan.supportingInfo:accordStructure.display",
         "path" : "CarePlan.supportingInfo.display",
         "min" : 1,
         "patternString" : "Consentement structure"

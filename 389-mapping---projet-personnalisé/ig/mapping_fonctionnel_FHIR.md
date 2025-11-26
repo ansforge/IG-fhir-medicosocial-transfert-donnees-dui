@@ -8,8 +8,6 @@
 
  Ce mapping représente les données fonctionnelles trouvant leur équivalence dans l'actuelle version des spécifications techniques. 
 
- **Note :** Pour visualiser l’entièreté du mapping, il est nécessaire de dézoomer. 
-
 ### Mapping Usager
 
 ### Mapping Entité Juridique

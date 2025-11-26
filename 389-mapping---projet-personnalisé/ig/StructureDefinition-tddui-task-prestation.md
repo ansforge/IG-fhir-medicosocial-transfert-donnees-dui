@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-prestation | *Version*:2.1.0-ballot |
-| Active as of 2025-11-21 | *Computable Name*:TDDUITaskPrestation |
+| Active as of 2025-11-26 | *Computable Name*:TDDUITaskPrestation |
 
  
 Profil de la ressource Task permettant de représenter les prestations du projet personnalisé. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-prestatio
   "name" : "TDDUITaskPrestation",
   "title" : "TDDUI Task Prestation",
   "status" : "active",
-  "date" : "2025-11-21T09:00:00+00:00",
+  "date" : "2025-11-26T10:17:34+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -112,6 +112,16 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-prestatio
         ]
       },
       {
+        "id" : "Task.meta.lastUpdated",
+        "path" : "Task.meta.lastUpdated",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUITaskPrestation",
+            "map" : "statutPrestation.dateStatut"
+          }
+        ]
+      },
+      {
         "id" : "Task.identifier",
         "path" : "Task.identifier",
         "short" : "Identifiant de l'action",
@@ -120,7 +130,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-prestatio
         "mapping" : [
           {
             "identity" : "specmetier-to-TDDUITaskPrestation",
-            "map" : "identifiantPrestation"
+            "map" : "idPrestation"
           }
         ]
       },
@@ -186,7 +196,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-prestatio
         "mapping" : [
           {
             "identity" : "specmetier-to-TDDUITaskPrestation",
-            "map" : "statutPrestation"
+            "map" : "statutPrestation.statut"
           }
         ]
       },
@@ -312,12 +322,37 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-prestatio
         "id" : "Task.input:evaluation",
         "path" : "Task.input",
         "sliceName" : "evaluation",
+        "short" : "Évaluation",
         "min" : 0,
         "max" : "1",
         "mapping" : [
           {
             "identity" : "specmetier-to-TDDUITaskPrestation",
             "map" : "evaluationPrestation"
+          }
+        ]
+      },
+      {
+        "id" : "Task.input:evaluation.type",
+        "path" : "Task.input.type",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-prestation-codesystem",
+              "code" : "evaluation"
+            }
+          ]
+        }
+      },
+      {
+        "id" : "Task.input:evaluation.value[x]",
+        "path" : "Task.input.value[x]",
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
+            ]
           }
         ]
       },
@@ -349,44 +384,6 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-prestatio
       },
       {
         "id" : "Task.input:pieceJointe.value[x]",
-        "path" : "Task.input.value[x]",
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Task.input:evaluationNonStructuree",
-        "path" : "Task.input",
-        "sliceName" : "evaluationNonStructuree",
-        "short" : "EValuation non structurée",
-        "min" : 0,
-        "max" : "1",
-        "mapping" : [
-          {
-            "identity" : "specmetier-to-TDDUITaskPrestation",
-            "map" : "evaluationNonStructureePrestation"
-          }
-        ]
-      },
-      {
-        "id" : "Task.input:evaluationNonStructuree.type",
-        "path" : "Task.input.type",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-prestation-codesystem",
-              "code" : "evaluationNonStructuree"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "Task.input:evaluationNonStructuree.value[x]",
         "path" : "Task.input.value[x]",
         "type" : [
           {

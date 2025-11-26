@@ -9,10 +9,10 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin | *Version*:2.1.0-ballot |
-| Active as of 2025-11-21 | *Computable Name*:TDDUIServiceRequestBesoin |
+| Active as of 2025-11-26 | *Computable Name*:TDDUIServiceRequestBesoin |
 
  
-Profil de la ressource TDDUIServiceRequestBesoin permettant de représenter les besoins de l'usager. 
+Profil de la ressource ServiceRequest permettant de représenter les besoins de l'usager. 
 
 **Usages:**
 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-service-reques
   "name" : "TDDUIServiceRequestBesoin",
   "title" : "TDDUI ServiceRequest Besoin",
   "status" : "active",
-  "date" : "2025-11-21T09:00:00+00:00",
+  "date" : "2025-11-26T10:17:34+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -55,7 +55,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-service-reques
       ]
     }
   ],
-  "description" : "Profil de la ressource TDDUIServiceRequestBesoin permettant de représenter les besoins de l'usager.",
+  "description" : "Profil de la ressource ServiceRequest permettant de représenter les besoins de l'usager.",
   "jurisdiction" : [
     {
       "coding" : [
@@ -161,7 +161,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-service-reques
         "mapping" : [
           {
             "identity" : "specmetier-to-TDDUIServiceRequestBesoin",
-            "map" : "identifiantBesoin"
+            "map" : "idBesoin"
           }
         ]
       },
@@ -225,6 +225,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-service-reques
       {
         "id" : "ServiceRequest.code.text",
         "path" : "ServiceRequest.code.text",
+        "min" : 1,
         "mapping" : [
           {
             "identity" : "specmetier-to-TDDUIServiceRequestBesoin",

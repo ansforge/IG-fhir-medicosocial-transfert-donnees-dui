@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action | *Version*:2.1.0-ballot |
-| Active as of 2025-11-21 | *Computable Name*:TDDUITaskAction |
+| Active as of 2025-11-26 | *Computable Name*:TDDUITaskAction |
 
  
 Profil de la ressource Task permettant de représenter les actions réalisés dans le cadre du projet personnalisé. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-action.cs
   "name" : "TDDUITaskAction",
   "title" : "TDDUI Task Action",
   "status" : "active",
-  "date" : "2025-11-21T09:00:00+00:00",
+  "date" : "2025-11-26T10:17:34+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -113,6 +113,16 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-action.cs
         ]
       },
       {
+        "id" : "Task.meta.lastUpdated",
+        "path" : "Task.meta.lastUpdated",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUITaskAction",
+            "map" : "statutAction.dateStatut"
+          }
+        ]
+      },
+      {
         "id" : "Task.identifier",
         "path" : "Task.identifier",
         "short" : "Identifiant de l'action",
@@ -121,7 +131,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-action.cs
         "mapping" : [
           {
             "identity" : "specmetier-to-TDDUITaskAction",
-            "map" : "identifiantAction"
+            "map" : "idAction"
           }
         ]
       },
@@ -168,7 +178,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-action.cs
         "mapping" : [
           {
             "identity" : "specmetier-to-TDDUITaskAction",
-            "map" : "statutAction"
+            "map" : "statutAction.statut"
           }
         ]
       },
@@ -205,6 +215,15 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-action.cs
       {
         "id" : "Task.owner",
         "path" : "Task.owner",
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner",
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role"
+            ]
+          }
+        ],
         "mapping" : [
           {
             "identity" : "specmetier-to-TDDUITaskAction",
@@ -265,7 +284,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-action.cs
         "id" : "Task.input:evaluation",
         "path" : "Task.input",
         "sliceName" : "evaluation",
-        "short" : "Évaluation structurée associée",
+        "short" : "Évaluation",
         "min" : 0,
         "max" : "*",
         "mapping" : [
@@ -397,44 +416,6 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-action.cs
       },
       {
         "id" : "Task.input:pieceJointe.value[x]",
-        "path" : "Task.input.value[x]",
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Task.input:evaluationNonStructuree",
-        "path" : "Task.input",
-        "sliceName" : "evaluationNonStructuree",
-        "short" : "EValuation non structurée",
-        "min" : 0,
-        "max" : "*",
-        "mapping" : [
-          {
-            "identity" : "specmetier-to-TDDUITaskAction",
-            "map" : "evaluationNonStructureeAction"
-          }
-        ]
-      },
-      {
-        "id" : "Task.input:evaluationNonStructuree.type",
-        "path" : "Task.input.type",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-moyen-ressource-codesystem",
-              "code" : "evaluationNonStructuree"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "Task.input:evaluationNonStructuree.value[x]",
         "path" : "Task.input.value[x]",
         "type" : [
           {

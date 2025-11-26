@@ -9,10 +9,10 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente | *Version*:2.1.0-ballot |
-| Active as of 2025-11-21 | *Computable Name*:TDDUIGoalAttente |
+| Active as of 2025-11-26 | *Computable Name*:TDDUIGoalAttente |
 
  
-Profil de la ressource TDDUIGoal permettant de représenter les attentes de l'usager. 
+Profil de la ressource Goal permettant de représenter les attentes pour un usager. 
 
 **Usages:**
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-attente.c
   "name" : "TDDUIGoalAttente",
   "title" : "TDDUI Goal Attente",
   "status" : "active",
-  "date" : "2025-11-21T09:00:00+00:00",
+  "date" : "2025-11-26T10:17:34+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -54,7 +54,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-attente.c
       ]
     }
   ],
-  "description" : "Profil de la ressource TDDUIGoal permettant de représenter les attentes de l'usager.",
+  "description" : "Profil de la ressource Goal permettant de représenter les attentes pour un usager.",
   "jurisdiction" : [
     {
       "coding" : [
@@ -151,7 +151,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-attente.c
         "mapping" : [
           {
             "identity" : "specmetier-to-TDDUIGoalAttente",
-            "map" : "identifiantAttente"
+            "map" : "idAttente"
           }
         ]
       },
