@@ -620,11 +620,12 @@ Le projet personnalisé est un document co-construit par l'usager, son entourage
   * Description: Identifiant technique du projet personnalisé obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature[TRE_G08-TypeIdentifiantPersonne](https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne)), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "PPER" et de l'identifiant du projet personnalisé dans le DUI (numProjetPersonnalise) :idProjetPersonnalise = 3+FINESS/identifiantLocalUsagerESSMS-PPER-numProjetPersonnalise
 * Nom: titreProjetPersonnalise : [1..1] Texte
   * Description: Titre du projet personnalisé.
-
-##### Classe Besoin
-
-Chaque usager a des attentes et des besoins singuliers, que le professionnel s’emploie à intégrer dans le projet personnalisé en tenant compte de l'évolution de sa situation, de ses aspirations et ses spécificités. Le besoin peut découler des attentes.
-
+* Nom: descriptionProjetPersonnalise : [0..1] Texte
+  * Description: Description du projet personnalisé.
+* Nom: statutProjetPersonnalise : [1..1][Statut](#classe-statut)
+  * Description: Statut du projet personnalisé.
+* Nom: typeProjetPersonnalise : [0..1] Code
+  * Description: Type de projet personnalisé.Jeu(x) de valeur(s) associé(s) :[JDV-J367-type-projet-personnalise-ms</td> </tr>modaliteCommunicationProjetPersonnalise : [0..1] TexteModalité de communication ou de transmission du projet personnalisé à l'usager et/ou à son entourage.accordUsagerProjetPersonnalise : [0..*][Accord](#classe-accord)Accord de l'usager et/ou de son entourage.</table> ##### Classe Besoin Chaque usager a des attentes et des besoins singuliers, que le professionnel s’emploie à intégrer dans le projet personnalisé en tenant compte de l'évolution de sa situation, de ses aspirations et ses spécificités. Le besoin peut découler des attentes.
 * Nom: idBesoin : [1..1] Identifiant
   * Description: Identifiant technique du besoin obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature[TRE_G08-TypeIdentifiantPersonne](https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne)), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "BESO" et de l'identifiant du besoin dans le DUI (numBesoin) :idBesoin = 3+FINESS/identifiantLocalUsagerESSMS-BESO-numBesoin
 * Nom: typeBesoin : [0..1] Code
@@ -638,10 +639,7 @@ Chaque usager a des attentes et des besoins singuliers, que le professionnel s�
 * Nom: pieceJointeBesoin : [0..*] ObjetBinaire
   * Description: Pièce(s) jointe(s)du besoin.
 
-##### Classe Objectif
-
-L'objectif correspond au résultat à atteindre dans le cadre du projet personnalisé. Il peut être rattaché au besoin.
-
+##### Classe Objectif L'objectif correspond au résultat à atteindre dans le cadre du projet personnalisé. Il peut être rattaché au besoin.
 * Nom: idObjectif : [1..1] Identifiant
   * Description: Identifiant technique de l'objectif obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature[TRE_G08-TypeIdentifiantPersonne](https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne)), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "OBJE" et de l'identifiant de l'objectif dans le DUI (numObjectif) :idObjectif = 3+FINESS/identifiantLocalUsagerESSMS-OBJE-numObjectif
 * Nom: titreObjectif : [1..1] Texte
@@ -667,10 +665,7 @@ L'objectif correspond au résultat à atteindre dans le cadre du projet personna
 * Nom: referentObjectif : [0..1][Professionnel](#classe-professionnel)
   * Description: Référent de l'objectif.
 
-##### Classe Action
-
-L'action est un acte mené dans le cadre du projet personnalisé. Elle peut être ratachée à un ou plusieurs objectifs.
-
+##### Classe Action L'action est un acte mené dans le cadre du projet personnalisé. Elle peut être ratachée à un ou plusieurs objectifs.
 * Nom: idAction : [1..1] Identifiant
   * Description: Identifiant technique de l'action obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature[TRE_G08-TypeIdentifiantPersonne](https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne)), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "ACTI" et de l'identifiant de l'action dans le DUI (numAction) :idAction = 3+FINESS/identifiantLocalUsagerESSMS-ACTI-numAction
 * Nom: titreAction : [1..1] Texte
@@ -694,10 +689,7 @@ L'action est un acte mené dans le cadre du projet personnalisé. Elle peut êtr
 * Nom: pieceJointeAction : [0..*] ObjetBinaire
   * Description: Pièce(s) jointe(s) de l'action.
 
-##### Classe MoyenRessource
-
-Le moyen ou la ressource sert à réaliser le projet personnalisé. Le moyen ou la ressource peut être rattaché à une action.
-
+##### Classe MoyenRessource Le moyen ou la ressource sert à réaliser le projet personnalisé. Le moyen ou la ressource peut être rattaché à une action.
 * Nom: idMoyenRessource : [1..1] Identifiant
   * Description: Identifiant technique du moyen ou de la ressource obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature[TRE_G08-TypeIdentifiantPersonne](https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne)), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "MORE" et de l'identifiant du moyen ou de la ressource dans le DUI (numMoyenRessource) :idMoyenRessource = 3+FINESS/identifiantLocalUsagerESSMS-MORE-numMoyenRessource
 * Nom: titreMoyenRessource : [1..1] Texte
@@ -715,10 +707,7 @@ Le moyen ou la ressource sert à réaliser le projet personnalisé. Le moyen ou 
 * Nom: pieceJointeMoyenRessource : [0..*] ObjetBinaire
   * Description: Pièce(s) jointe(s) du moyen ou de la ressource.
 
-##### Classe PrestationProjetPersonnalise
-
-La prestation désigne ce qui doit être accompli ou fourni à l'usager.Elle peut être rattachée à une action.
-
+##### Classe PrestationProjetPersonnalise La prestation désigne ce qui doit être accompli ou fourni à l'usager.Elle peut être rattachée à une action.
 * Nom: idPrestation : [1..1] Identifiant
   * Description: Identifiant technique de la prestation projet personalisé obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature[TRE_G08-TypeIdentifiantPersonne](https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne)), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "PRES" et de l'identifiant de la prestation projet personalisé dans le DUI (numPrestation) :idPrestation = 3+FINESS/identifiantLocalUsagerESSMS-PRES-numPrestation
 * Nom: titrePrestation : [1..1] Texte
@@ -738,10 +727,7 @@ La prestation désigne ce qui doit être accompli ou fourni à l'usager.Elle peu
 * Nom: pieceJointePrestation : [0..*] ObjetBinaire
   * Description: Pièce(s) jointe(s) de la prestation.
 
-##### Classe Attente
-
-L'attente de l'usager représente les souhaits, les désirs et les envies dans tous les domaines de sa vie. Elle peut être exprimée aussi bien par l'usager ainsi que par son entourage ou les professionnels du médico-social.
-
+##### Classe Attente L'attente de l'usager représente les souhaits, les désirs et les envies dans tous les domaines de sa vie. Elle peut être exprimée aussi bien par l'usager ainsi que par son entourage ou les professionnels du médico-social.
 * Nom: idAttente : [1..1] Identifiant
   * Description: Identifiant technique de l'attente obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature[TRE_G08-TypeIdentifiantPersonne](https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne)), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "ATTE" et de l'identifiant de l'attente dans le DUI (numAttente) :idAttente = 3+FINESS/identifiantLocalUsagerESSMS-ATTE-numAttente
 * Nom: origineAttente : [1..1] Texte
@@ -751,10 +737,7 @@ L'attente de l'usager représente les souhaits, les désirs et les envies dans t
 * Nom: commentaireAttente : [0..*] Texte
   * Description: Permet de compléter ou éclairer la description de l'attente.
 
-##### Classe Bilan
-
-Un bilan est une analyse réalisée à la conclusion du projet personnalisé ou à une étape intermédiaire.
-
+##### Classe Bilan Un bilan est une analyse réalisée à la conclusion du projet personnalisé ou à une étape intermédiaire.
 * Nom: idBilan : [1..1] Identifiant
   * Description: Identifiant technique du bilan obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature[TRE_G08-TypeIdentifiantPersonne](https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne)), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "BILA" et de l'identifiant du bilan dans le DUI (numBilan) :idBilan = 3+FINESS/identifiantLocalUsagerESSMS-BILA-numBilan
 * Nom: dateBilan : [1..1] DateHeure
@@ -780,16 +763,7 @@ Un bilan est une analyse réalisée à la conclusion du projet personnalisé ou 
 * Nom: pieceJointeBilan : [0..*] ObjetBinaire
   * Description: Pièce(s) jointe(s) au bilan.
 
-### Partie Coordination des acteurs
-
-#### Evènement de l'agenda
-
-##### Classe Evenement
-
-Evènements liés à la prise en charge de l’usager dans une structure ESSMS.
-
-Les classes EntiteJuridique, Lieu et Professionnel sont issues du MOS et sont profilées pour ce volet.
-
+### Partie Coordination des acteurs #### Evènement de l'agenda##### Classe Evenement Evènements liés à la prise en charge de l’usager dans une structure ESSMS. Les classes EntiteJuridique, Lieu et Professionnel sont issues du MOS et sont profilées pour ce volet.
 * Nom: idEvenement : [1..1] Identifiant
   * Description: Identifiant technique de l’évènement obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature[TRE_G08-TypeIdentifiantPersonne](https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne)), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de trois caractères "EVN" et du numéro de l’évènement dans le DUI (numEvenement) :idEvenement = 3+FINESS/identifiantLocalUsagerESSMS-EVN-numEvenement
 * Nom: typeEvenement : [0..*] Code ou Texte
@@ -825,10 +799,7 @@ Les classes EntiteJuridique, Lieu et Professionnel sont issues du MOS et sont pr
 * Nom: dateModificationEvenement : [0..1] DateHeure
   * Description: Date de la dernière modification de l'événement.
 
-##### Classe Transport
-
-Classe générique socle décrivant le transport d’une personne physique (professionnel, usger) lors d’un évènement.
-
+##### Classe Transport Classe générique socle décrivant le transport d’une personne physique (professionnel, usger) lors d’un évènement.
 * Nom: idTrajet : [1..1] Identifiant
   * Description: Identifiant technique du transport.
 * Nom: typeTransport : [0..1] Code
@@ -854,24 +825,7 @@ Classe générique socle décrivant le transport d’une personne physique (prof
 * Nom: dateFinTransport : [1..1] DateHeure
   * Description: Date de fin du transport de la personne physique.
 
-##### Classe TransportProfessionnel
-
-** Classe spécialisée, hérite de la classe Transport
-
-Cette classe regroupe les items pouvant caractériser le transport du professionnel lors de l'évènement.
-
-L'identifiant technique du transport est obtenu dans ce contexte par par la concaténation du type d'identifiant national de personne (provenant de la nomenclature [TRE_G08-TypeIdentifiantPersonne](https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne)), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de cinq caractères "TPPro" et du numéro de transport du professionnel dans le DUI (idTransport) :
- idTrajet = 3+FINESS/identifiantLocalUsagerESSMS-TPPro-idTransport
-
-##### Classe TransportUsager
-
-** Classe spécialisée, hérite de la classe Transport
-
-Cette classe regroupe les items pouvant caractériser le transport de l'usager lors de l'évènement.
-
-L'identifiant technique du transport est obtenu dans ce contexte par par la concaténation du type d'identifiant national de personne (provenant de la nomenclature [TRE_G08-TypeIdentifiantPersonne](https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne)), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de cinq caractères "TPPat" et du numéro de transport de l'usager dans le DUI (idTransport) :
- idTrajet = 3+FINESS/identifiantLocalUsagerESSMS-TPPat-idTransport
-
+##### Classe TransportProfessionnel ** Classe spécialisée, hérite de la classe Transport Cette classe regroupe les items pouvant caractériser le transport du professionnel lors de l'évènement. L'identifiant technique du transport est obtenu dans ce contexte par par la concaténation du type d'identifiant national de personne (provenant de la nomenclature[TRE_G08-TypeIdentifiantPersonne](https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne)), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de cinq caractères "TPPro" et du numéro de transport du professionnel dans le DUI (idTransport) :idTrajet = 3+FINESS/identifiantLocalUsagerESSMS-TPPro-idTransport ##### Classe TransportUsager ** Classe spécialisée, hérite de la classe Transport Cette classe regroupe les items pouvant caractériser le transport de l'usager lors de l'évènement. L'identifiant technique du transport est obtenu dans ce contexte par par la concaténation du type d'identifiant national de personne (provenant de la nomenclature[TRE_G08-TypeIdentifiantPersonne](https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne)), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de cinq caractères "TPPat" et du numéro de transport de l'usager dans le DUI (idTransport) :idTrajet = 3+FINESS/identifiantLocalUsagerESSMS-TPPat-idTransport
 * Nom: accompagnement : [0..1] Indicateur
   * Description: Accompagnement nécessaire ou non de l'usager.
 * Nom: asepsieRigoureuse : [0..1] Indicateur
@@ -879,12 +833,7 @@ L'identifiant technique du transport est obtenu dans ce contexte par par la conc
 * Nom: natureTransport : [0..1] Code
   * Description: Nature du transport de l'usager.Jeu de valeur issue de la terminologie Serafin correspondant aux familles (3.2.4.1, 3.2.4.2, 3.2.4.3).Jeu(x) de valeur(s) associé(s) :[JDV_J282-TransportsLiesAuProjetIndividuel_SERAFIN](https://mos.esante.gouv.fr/NOS/JDV_J282-TransportsLiesAuProjetIndividuel_SERAFIN/FHIR/JDV-J282-TransportsLiesAuProjetIndividuel-SERAFIN)
 
-### Classes du MOS profilées pour ce volet
-
-##### Classe Professionnel
-
-Données d'identification pérennes d’une personne physique, qui travaille en tant que professionnel (professionnel enregistré dans RPPS), personnel autorisé ou personnel d’établissement, dans les domaines sanitaire, médico-social et social.
-
+### Classes du MOS profilées pour ce volet ##### Classe Professionnel Données d'identification pérennes d’une personne physique, qui travaille en tant que professionnel (professionnel enregistré dans RPPS), personnel autorisé ou personnel d’établissement, dans les domaines sanitaire, médico-social et social.
 * Nom: idNat_PS : [1..1] Identifiant
   * Description: Identification nationale principale du professionnel. Cette identification est obtenue par la concaténation du type d'identifiant national de personne (provenant de la nomenclature[TRE_G08-TypeIdentifiantPersonne](https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne)) et de l'identifiant de la personne physique. Voir la description complète de idNat_PS dans le MOS.
 * Nom: civilite : [0..1] Code
@@ -902,21 +851,13 @@ Données d'identification pérennes d’une personne physique, qui travaille en 
 * Nom: etablissementDeRattachement : [0..1] EntiteJuridique
   * Description: Structure juridique de rattachement du professionnel.
 
-_Remarque_: Certaines professions du médico-social n'ont pas de correspondance directe dans les référentiels du CI-SIS. L'annexe [Professions du médico-social](annexes_codes_professions_roles_modes_exercices.md) donne la correspondance entre la profession du médico-social et le triptyque "profession/rôle/mode d'exercice" référencé dans les jeux de valeurs du CI-SIS.
-
-##### Classe Entité Juridique
-
-Pour ce volet l'Entité Juridique est une personne morale inscrite dans le FINESS.
-
+_Remarque_: Certaines professions du médico-social n'ont pas de correspondance directe dans les référentiels du CI-SIS. L'annexe[Professions du médico-social](annexes_codes_professions_roles_modes_exercices.md)donne la correspondance entre la profession du médico-social et le triptyque "profession/rôle/mode d'exercice" référencé dans les jeux de valeurs du CI-SIS. ##### Classe Entité Juridique Pour ce volet l'Entité Juridique est une personne morale inscrite dans le FINESS.
 * Nom: idNat_Struct : [1..1] Identifiant
   * Description: Identification nationale de l'Entité juridique. Cette identification est obtenue par la concaténation du type d'identifiant national de structure (provenant de la nomenclature[TRE_G07-TypeIdentifiantStructure](https://mos.esante.gouv.fr/NOS/TRE_G07-TypeIdentifiantStructure/FHIR/TRE-G07-TypeIdentifiantStructure)) et de l'identifiant de la structure: ** 1 + N° FINESS.
 * Nom: raisonSociale : [0..1] Texte
   * Description: La raison sociale est le nom de l'entité juridique. Elle figure obligatoirement dans les statuts de l'EJ.
 
-##### Classe Lieu
-
-Portion déterminée de l'espace où se sont déroulés des événements.
-
+##### Classe Lieu Portion déterminée de l'espace où se sont déroulés des événements.
 * Nom: identifiant : [0..*] Identifiant
   * Description: Identifiant(s) métier du lieu.
 * Nom: nom : [0..1] Texte
@@ -926,12 +867,7 @@ Portion déterminée de l'espace où se sont déroulés des événements.
 * Nom: telecommunication : [0..1] Telecommunication
   * Description: Adresse(s) de télécommunication du lieu (numéro de téléphone, adresse email, URL, etc.).
 
-### Classes génériques
-
-##### Classe Statut
-
-Cette classe décrit le statut des ressources (Evenement, Evaluation, Projet personnalisé, …).
-
+### Classes génériques ##### Classe Statut Cette classe décrit le statut des ressources (Evenement, Evaluation, Projet personnalisé, ...).
 * Nom: statut : [1..1] Code
   * Description: Statut de la ressource impactée.Jeu(x) de valeur(s) associé(s) :[JDV_J281-StatutsRessourcesMS](https://mos.esante.gouv.fr/NOS/JDV_J281-StatutsRessourcesMS/FHIR/JDV-J281-StatutsRessourcesMS)- Pour l'Evaluation seuls les codes suivants sont à utiliser : APPROUVE, VALIDE, TERMINE- Pour l'Evènement seuls les codes suivants sont à utiliser : PLANIFIE, VALIDE, REALISE, ANNULE
 * Nom: motifNonRealisation : [0..1] Code
@@ -941,10 +877,7 @@ Cette classe décrit le statut des ressources (Evenement, Evaluation, Projet per
 * Nom: auteur : [0..1] Professionnel
   * Description: Le professionnel ayant effectué la dernière modification du statut associé à la ressource.
 
-##### Classe Accord
-
-Cela correspond au consentement d'une personne physique ou morale.
-
+##### Classe Accord Cela correspond au consentement d'une personne physique ou morale.
 * Nom: auteur : [1..1] Texte
   * Description: Acteur qui donne son accord.
 * Nom: dateSignature : [1..1] DateHeure
@@ -952,12 +885,7 @@ Cela correspond au consentement d'une personne physique ou morale.
 * Nom: dureeValidite : [0..1] Periode
   * Description: Durée de validité de l'accord
 
-### Contraintes par cas d'usage sur le modèle DUI
-
-Dans les tableaux ci-dessous il est précisé pour chaque cas d'usage, les données du DUI qui sont réellement utilisées.
-
-#### Mapping Usager
-
+### Contraintes par cas d'usage sur le modèle DUI Dans les tableaux ci-dessous il est précisé pour chaque cas d'usage, les données du DUI qui sont réellement utilisées. #### Mapping Usager
 * Attribut: matriculeINS
   * Utilisé pour le cas d'usage SSIAD: Oui
 * Attribut: numSecuriteSociale
@@ -988,7 +916,6 @@ Dans les tableaux ci-dessous il est précisé pour chaque cas d'usage, les donn�
   * Utilisé pour le cas d'usage SSIAD: Oui
 
 ##### Mapping Adresse (usager)
-
 * Attribut: numeroVoie
   * Utilisé pour le cas d'usage SSIAD: Non
 * Attribut: libelleVoie
@@ -999,7 +926,6 @@ Dans les tableaux ci-dessous il est précisé pour chaque cas d'usage, les donn�
   * Utilisé pour le cas d'usage SSIAD: Oui
 
 #### Mapping Séjour
-
 * Attribut: idSejour
   * Utilisé pour le cas d'usage SSIAD: Non
 * Attribut: dateAdmission
@@ -1015,10 +941,7 @@ Dans les tableaux ci-dessous il est précisé pour chaque cas d'usage, les donn�
 * Attribut: dateSortie
   * Utilisé pour le cas d'usage SSIAD: Oui
 
-#### Partie Accompagnement
-
-##### Mapping Evaluation
-
+#### Partie Accompagnement ##### Mapping Evaluation
 * Attribut: idEvaluation
   * Utilisé pour le cas d'usage SSIAD: Non
 * Attribut: typeEvaluation
@@ -1039,7 +962,6 @@ Dans les tableaux ci-dessous il est précisé pour chaque cas d'usage, les donn�
   * Utilisé pour le cas d'usage SSIAD: Oui
 
 ###### Mapping Détail Evaluation (niveau 1,2)
-
 * Attribut: champsEvalue
   * Utilisé pour le cas d'usage SSIAD: Oui
 * Attribut: champsEvalue
@@ -1049,10 +971,7 @@ Dans les tableaux ci-dessous il est précisé pour chaque cas d'usage, les donn�
 * Attribut: statut du détail de l'évaluation
   * Utilisé pour le cas d'usage SSIAD: Oui
 
-#### Partie Coordination des acteurs
-
-##### Mapping Evènement de l'agenda
-
+#### Partie Coordination des acteurs ##### Mapping Evènement de l'agenda
 * Attribut: idEvenement
   * Utilisé pour le cas d'usage SSIAD: Non
 * Attribut: typeEvenement
@@ -1077,7 +996,6 @@ Dans les tableaux ci-dessous il est précisé pour chaque cas d'usage, les donn�
   * Utilisé pour le cas d'usage SSIAD: Non
 
 ###### Mapping Statut de l'évènement
-
 * Attribut: identifiant du statut
   * Utilisé pour le cas d'usage SSIAD: Non
 * Attribut: code du statut
@@ -1085,14 +1003,13 @@ Dans les tableaux ci-dessous il est précisé pour chaque cas d'usage, les donn�
 * Attribut: date du statut
   * Utilisé pour le cas d'usage SSIAD: Non
 
-#### Partie Structure
-
-##### Mapping Entité Juridique
-
+#### Partie Structure ##### Mapping Entité Juridique
 * Attribut: idNat_Struct
   * Utilisé pour le cas d'usage SSIAD: Non
 * Attribut: FINESS de la structure extrait de idNat_Struct
   * Utilisé pour le cas d'usage SSIAD: Oui
 * Attribut: raisonSociale
   * Utilisé pour le cas d'usage SSIAD: Oui
+
+](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j367-type-projet-personnalise-ms)
 

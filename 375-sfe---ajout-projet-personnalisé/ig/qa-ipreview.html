@@ -161,7 +161,7 @@ Médicosocial - Transfert de données DUI - Local Development build (v2.0.0) bui
 
           IG &copy; 2023+           <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>
 .  Package ans.fhir.fr.tddui#2.0.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
-. Generated           <span title="Thu, Nov 27, 2025 15:46+0000">2025-11-27</span>
+. Generated           <span title="Thu, Nov 27, 2025 16:17+0000">2025-11-27</span>
 
                     <br/>
 
@@ -193,7 +193,7 @@ Médicosocial - Transfert de données DUI - Local Development build (v2.0.0) bui
 
           IG &copy; 2023+           <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>
 .  Package ans.fhir.fr.tddui#2.0.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
-. Generated           <span title="Thu, Nov 27, 2025 15:46+0000">2025-11-27</span>
+. Generated           <span title="Thu, Nov 27, 2025 16:17+0000">2025-11-27</span>
 
                     <br/>
 
@@ -225,7 +225,7 @@ Médicosocial - Transfert de données DUI - Local Development build (v2.0.0) bui
 
           IG &copy; 2023+           <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>
 .  Package ans.fhir.fr.tddui#2.0.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
-. Generated           <span title="Thu, Nov 27, 2025 15:46+0000">2025-11-27</span>
+. Generated           <span title="Thu, Nov 27, 2025 16:17+0000">2025-11-27</span>
 
                     <br/>
 
@@ -1839,6 +1839,1027 @@ idProjetPersonnalise = 3+FINESS/identifiantLocalUsagerESSMS-PPER-numProjetPerson
           <a href="sfe_modelisation_contenu.html">web</a>
         </td>
         <td>
+          <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j367-type-projet-personnalise-ms">smt.esante.gouv.fr</a>
+        </td>
+        <td>
+Type de projet personnalisé.          <br/>
+
+    Jeu(x) de valeur(s) associé(s) :           <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j367-type-projet-personnalise-ms">
+JDV-J367-type-projet-personnalise-ms&lt;/td&gt;
+  &lt;/tr&gt;
+  <tr>
+    <td>modaliteCommunicationProjetPersonnalise : [0..1] Texte</td>
+    <td>Modalité de communication ou de transmission du projet personnalisé à l'usager et/ou à son entourage.</td>
+  </tr>
+  <tr>
+    <td><a name="l5008">​</a>accordUsagerProjetPersonnalise : [0..*] <a href="#classe-accord">Accord</a></td>
+    <td>Accord de l'usager et/ou de son entourage.</td>
+  </tr>
+&lt;/table&gt;
+
+##### Classe Besoin
+Chaque usager a des attentes et des besoins singuliers, que le professionnel s’emploie à intégrer dans le projet personnalisé en tenant compte de l'évolution de sa situation, de ses aspirations et ses spécificités. Le besoin peut découler des attentes.
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>idBesoin : [1..1] Identifiant</td>
+    <td>Identifiant technique du besoin obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "BESO" et de l'identifiant du besoin dans le DUI (numBesoin) : <br/>idBesoin = 3+FINESS/identifiantLocalUsagerESSMS-BESO-numBesoin</td>
+  </tr>
+  <tr>
+    <td>typeBesoin : [0..1] Code</td>
+    <td>Type de besoin.<br/>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J285-Besoins_SERAFIN/FHIR/JDV-J285-Besoins-SERAFIN">JDV-J285-Besoins-SERAFIN</a></td>
+  </tr>
+  <tr>
+    <td>descriptionBesoin : [1..1] Texte</td>
+    <td>Description du besoin.</td>
+  </tr>
+  <tr>
+    <td>analyseProfessionnelBesoin : [0..*] Texte</td>
+    <td>Analyse du besoin par un professionnel.</td>
+  </tr>
+  <tr>
+    <td>commentaireBesoin : [0..*] Texte</td>
+    <td>Permet de compléter ou éclairer la description du besoin.</td>
+  </tr>
+  <tr>
+    <td>pieceJointeBesoin : [0..*] ObjetBinaire</td>
+    <td>Pièce(s) jointe(s)du besoin.</td>
+  </tr>
+</table>
+
+##### Classe Objectif
+L'objectif correspond au résultat à atteindre dans le cadre du projet personnalisé. Il peut être rattaché au besoin.
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>idObjectif : [1..1] Identifiant</td>
+    <td>Identifiant technique de l'objectif obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "OBJE" et de l'identifiant de l'objectif dans le DUI (numObjectif) : <br/>idObjectif = 3+FINESS/identifiantLocalUsagerESSMS-OBJE-numObjectif</td>
+  </tr>
+  <tr>
+    <td>titreObjectif : [1..1] Texte</td>
+    <td>Titre de l'objectif.</td>
+  </tr>
+  <tr>
+    <td>descriptionObjectif : [1..1] Texte</td>
+    <td>Description de l'objectif.</td>
+  </tr>
+  <tr>
+    <td>domaineObjectif : [0..*] ConceptCode</td>
+    <td>Domaine de l'objectif. La notion de domaine renvoi à des référentiels locaux au sein des structures ESMS.</td>
+  </tr>
+  <tr>
+    <td>dateDebutObjectif : [0..1] DateHeure</td>
+    <td>Date de début de l'objectif.</td>
+  </tr>
+  <tr>
+    <td>dateFinObjectif : [0..1] DateHeure</td>
+    <td>Date de fin de l'objectif.</td>
+  </tr>
+  <tr>
+    <td>evaluationObjectif : [0..*] <a href="#classe-evaluation">Evaluation</a></td>
+    <td>Evaluation de l'objectif.</td>
+  </tr>
+  <tr>
+    <td>avisUsagerObjectif : [0..1] Texte</td>
+    <td>Avis de l'usager sur l'objectif.</td>
+  </tr>
+  <tr>
+    <td>resultatAttenduObjectif : [0..1] Texte</td>
+    <td>Résultat attendu sur l'objectif.</td>
+  </tr>
+  <tr>
+    <td><a name="l5193">​</a>statutObjectif : [1..1] <a href="#classe-statut">Statut</a></td>
+    <td>Statut de l'action.</td>
+  </tr>
+  <tr>
+    <td>strategieMiseEnOeuvreObjectif : [0..1] Texte</td>
+    <td>Stratégie mise en œuvre de l'objectif.</td>
+  </tr>
+  <tr>
+    <td><a name="l5213">​</a>referentObjectif : [0..1] <a href="#classe-professionnel">Professionnel</a></td>
+    <td>Référent de l'objectif.</td>
+  </tr>
+</table>
+
+##### Classe Action
+L'action est un acte mené dans le cadre du projet personnalisé. Elle peut être ratachée à un ou plusieurs objectifs.
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>idAction : [1..1] Identifiant</td>
+    <td>Identifiant technique de l'action obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "ACTI" et de l'identifiant de l'action dans le DUI (numAction) : <br/>idAction = 3+FINESS/identifiantLocalUsagerESSMS-ACTI-numAction</td>
+  </tr> 
+  <tr>
+    <td>titreAction : [1..1] Texte</td>
+    <td>Titre de l'action à mener.</td>
+  </tr>
+  <tr>
+    <td>descriptionAction : [0..1] Texte</td>
+    <td>Description de l'action à mener.</td>
+  </tr>
+  <tr>
+    <td>dateDebutAction : [0..1] DateHeure</td>
+    <td>Date de début de l'action à mener.</td>
+  </tr>
+  <tr>
+    <td>dateFinAction : [0..1] DateHeure</td>
+    <td>Date de fin de l'action à mener.</td>
+  </tr>
+  <tr>
+    <td>evaluationAction : [0..*] <a href="#classe-evaluation">Evaluation</a></td>
+    <td>Evaluation de l'action.</td>
+  </tr>
+  <tr>
+    <td>avisUsagerAction : [0..1] Texte</td>
+    <td>Avis de l'usager sur l'action.</td>
+  </tr>
+  <tr>
+    <td>resultatAttenduAction : [0..1] Texte</td>
+    <td>Résultat attendu de l'action.</td>
+  </tr>
+  <tr>
+    <td><a name="l5315">​</a>statutAction : [1..1] <a href="#classe-statut">Statut</a></td>
+    <td>Statut de l'action.</td>
+  </tr>
+  <tr>
+    <td><a name="l5326">​</a>referentAction : [0..1] <a href="#classe-professionnel">Professionnel</a></td>
+    <td>Référent de l'action.</td>
+  </tr>
+    <tr>
+  <td>pieceJointeAction : [0..*] ObjetBinaire</td>
+  <td>Pièce(s) jointe(s) de l'action.</td>
+</tr>
+</table>
+
+##### Classe MoyenRessource
+Le moyen ou la ressource sert à réaliser le projet personnalisé. Le moyen ou la ressource peut être rattaché à une action.
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>idMoyenRessource : [1..1] Identifiant</td>
+    <td>Identifiant technique du moyen ou de la ressource obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "MORE" et de l'identifiant du moyen ou de la ressource dans le DUI (numMoyenRessource) : <br/>idMoyenRessource = 3+FINESS/identifiantLocalUsagerESSMS-MORE-numMoyenRessource</td>
+  </tr> 
+  <tr>
+    <td>titreMoyenRessource : [1..1] Texte </td>
+    <td>Titre du moyen ou de la ressource à utiliser.</td>
+  </tr>
+  <tr>
+    <td>descriptionMoyenRessource : [0..1] Texte </td>
+    <td>Description du moyen ou de la ressource.</td>
+  </tr>
+  <tr>
+    <td>typeMoyenRessource : [0..1] Texte </td>
+    <td>Type du moyen ou de la ressource.<br/>Distinction entre moyen et ressource si nécessaire.</td>
+  </tr>
+  <tr>
+    <td>dateDebutMoyenRessource : [0..1] DateHeure</td>
+    <td>Date de début du moyen ou de la ressource.</td>
+  </tr>
+  <tr>
+    <td>dateFinMoyenRessource : [0..1] DateHeure</td>
+    <td>Date de fin du moyen ou de la ressource.</td>
+  </tr>
+  <tr>
+    <td>evaluationMoyenRessource : [0..1] <a href="#classe-evaluation">Evaluation</a></td>
+    <td>Evaluation du moyen ou de la ressource.</td>
+  </tr>
+  <tr>
+    <td>pieceJointeMoyenRessource : [0..*] ObjetBinaire</td>
+    <td>Pièce(s) jointe(s) du moyen ou de la ressource.</td>
+  </tr>
+</table>
+
+##### Classe PrestationProjetPersonnalise
+La prestation désigne ce qui doit être accompli ou fourni à l'usager.Elle peut être rattachée à une action.
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>idPrestation : [1..1] Identifiant</td>
+    <td>Identifiant technique de la prestation projet personalisé obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "PRES" et de l'identifiant de la prestation projet personalisé dans le DUI (numPrestation) : <br/>idPrestation = 3+FINESS/identifiantLocalUsagerESSMS-PRES-numPrestation</td>
+  </tr>
+  <tr>
+    <td>titrePrestation : [1..1] Texte</td>
+    <td>Titre de la prestation à utiliser.</td>
+  </tr>
+  <tr>
+    <td>descriptionPrestation : [0..1] Texte</td>
+    <td>Description de la prestation.</td>
+  </tr>
+  <tr>
+    <td>typePrestation : [0..*] Code</td>
+    <td>Type de la prestation.<br/>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J283-PrestationsIndirects_SERAFIN/FHIR/JDV-J283-PrestationsIndirects-SERAFIN">JDV-J283-PrestationsIndirects-SERAFIN</a>, <a href="https://mos.esante.gouv.fr/NOS/JDV_J284-PrestationsDirects_SERAFIN/FHIR/JDV-J284-PrestationsDirects-SERAFIN">JDV-J284-PrestationsDirects-SERAFIN</a>
+    </td>
+  </tr>
+<tr>
+  <td>dateDebutPrestation : [0..1] DateHeure</td>
+  <td>Date de début de la prestation.</td>
+</tr>
+<tr>
+  <td>dateFinPrestation : [0..1] DateHeure</td>
+  <td>Date de fin de la prestation.</td>
+</tr>
+<tr>
+  <td>evaluationPrestation : [0..1] <a href="#classe-evaluation">Evaluation</a></td>
+  <td>Evaluation de la prestation.</td>
+</tr>
+<tr>
+  <td><a name="l5529">​</a>statutPrestation : [1..1] <a href="#classe-statut">Statut</a></td>
+  <td>Statut de la prestation.</td>
+</tr>
+<tr>
+  <td>pieceJointePrestation : [0..*] ObjetBinaire</td>
+  <td>Pièce(s) jointe(s) de la prestation.</td>
+</tr>
+</table> 
+
+##### Classe Attente
+L'attente de l'usager représente les souhaits, les désirs et les envies dans tous les domaines de sa vie. Elle peut être exprimée aussi bien par l'usager ainsi que par son entourage ou les professionnels du médico-social.
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>idAttente : [1..1] Identifiant</td>
+    <td>Identifiant technique de l'attente obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "ATTE" et de l'identifiant de l'attente dans le DUI (numAttente) : <br/>idAttente = 3+FINESS/identifiantLocalUsagerESSMS-ATTE-numAttente</td>
+  </tr>
+  <tr>
+    <td>origineAttente : [1..1] Texte</td>
+    <td>Acteur (personne physique ou personne morale) qui a un lien avec l'usager ou l'usager elle-même qui définit son attente.</td>
+  </tr>
+  <tr>
+    <td>descriptionAttente : [1..1] Texte</td>
+    <td>Description de l'attente, des souhaits de l'acteur pour l'usager.</td>
+  </tr>
+  <tr>
+    <td>commentaireAttente : [0..*] Texte</td>
+    <td>Permet de compléter ou éclairer la description de l'attente.</td>
+  </tr>
+</table> 
+
+##### Classe Bilan
+Un bilan est une analyse réalisée à la conclusion du projet personnalisé ou à une étape intermédiaire.
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>idBilan : [1..1] Identifiant</td>
+    <td>Identifiant technique du bilan obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "BILA" et de l'identifiant du bilan dans le DUI (numBilan) : <br/>idBilan = 3+FINESS/identifiantLocalUsagerESSMS-BILA-numBilan</td>
+ </tr>
+ <tr>
+    <td>dateBilan : [1..1] DateHeure</td>
+    <td>Date et heure du bilan.</td>
+ </tr>
+ <tr>
+    <td>categorieBilan : [0..1] Code</td>
+    <td>Catégorie du bilan.<br/>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j366-statut-bilan-projet-personnalise-ms">JdvJ366StatutBilanProjetPersonnaliseMs</a></td>
+ </tr>
+  <tr>
+    <td>perimetreBilan : [0..1] Texte</td>
+    <td>Périmètre du bilan.</td>
+ </tr>
+ <tr>
+    <td>problematiqueGlobaleUsager : [0..1] Texte</td>
+    <td>Problématique liée à l'usager.</td>
+ </tr>
+ <tr>
+    <td>synthesePreparationBilan : [0..*] Texte</td>
+    <td>Préparation du bilan.</td>
+ </tr>
+ <tr>
+    <td>corps : [1..1] Texte</td>
+    <td>Corps de la préparation.</td>
+ </tr>
+ <tr>
+    <td>auteur : [1..1] Texte</td>
+    <td>Auteur de la préparation.</td>
+ </tr>
+ <tr>
+    <td>syntheseBilan : [0..1] Texte</td>
+    <td>Synthèse du bilan.</td>
+ </tr>
+ <tr>
+    <td>inviteBilan : [0..1] Texte</td>
+    <td>Liste les personnes invitées à participer au bilan. Il peut s'agir de professionnels du médico-social ou de l'entourage familiale de l'usager.</td>
+ </tr>
+ <tr>
+    <td>dateProchainBilan : [0..1] DateHeure</td>
+    <td>Date du prochain bilan.</td>
+ </tr>
+ <tr>
+    <td>pieceJointeBilan : [0..*] ObjetBinaire</td>
+    <td>Pièce(s) jointe(s) au bilan.</td>
+ </tr>
+</table>    
+
+
+### Partie Coordination des acteurs
+
+#### Evènement de l'agenda
+
+<div style="text-align:center;"><svg xmlns="http://www.w3.org/2000/svg" contentStyleType="text/css" viewBox="0 0 557 976" zoomAndPan="magnify" data-diagram-type="CLASS" preserveAspectRatio="none" width="557px" xmlns:xlink="http://www.w3.org/1999/xlink" style="width:557px;height:976px;background:#FFFFFF;" version="1.1" height="976px"><defs></defs><g>  <!-- class Usager --><g data-entity="Usager" id="entity_Usager" data-uid="ent0002" class="entity" data-source-line="4"><rect rx="2.5" ry="2.5" width="81.376" x="7" y="452" style="stroke:#181818;stroke-width:0.5;" fill="#FFB6C1" height="40"></rect><ellipse cx="22" cy="468" rx="11" ry="11" style="stroke:#181818;stroke-width:1;" fill="#ADD1B2"></ellipse><path d="M24.9688,473.6406 Q24.3906,473.9375 23.75,474.0781 Q23.1094,474.2344 22.4063,474.2344 Q19.9063,474.2344 18.5781,472.5938 Q17.2656,470.9375 17.2656,467.8125 Q17.2656,464.6875 18.5781,463.0313 Q19.9063,461.375 22.4063,461.375 Q23.1094,461.375 23.75,461.5313 Q24.4063,461.6875 24.9688,461.9844 L24.9688,464.7031 Q24.3438,464.125 23.75,463.8594 Q23.1563,463.5781 22.5313,463.5781 Q21.1875,463.5781 20.5,464.6563 Q19.8125,465.7188 19.8125,467.8125 Q19.8125,469.9063 20.5,470.9844 Q21.1875,472.0469 22.5313,472.0469 Q23.1563,472.0469 23.75,471.7813 Q24.3438,471.5 24.9688,470.9219 L24.9688,473.6406 Z " fill="#000000"></path><text lengthAdjust="spacing" x="36" font-size="14" textLength="49.376" y="472.8467" font-family="sans-serif" fill="#000000">Usager</text><line y1="484" x1="8" y2="484" style="stroke:#181818;stroke-width:0.5;" x2="87.376"></line></g>  <!-- class TransportProfessionnel --><g data-entity="TransportProfessionnel" id="entity_TransportProfessionnel" data-uid="ent0003" class="entity" data-source-line="6"><rect rx="2.5" ry="2.5" width="193.3486" x="52" y="327.5" style="stroke:#181818;stroke-width:0.5;" fill="#D3D3D3" height="40"></rect><ellipse cx="67" cy="343.5" rx="11" ry="11" style="stroke:#181818;stroke-width:1;" fill="#ADD1B2"></ellipse><path d="M69.9688,349.1406 Q69.3906,349.4375 68.75,349.5781 Q68.1094,349.7344 67.4063,349.7344 Q64.9063,349.7344 63.5781,348.0938 Q62.2656,346.4375 62.2656,343.3125 Q62.2656,340.1875 63.5781,338.5313 Q64.9063,336.875 67.4063,336.875 Q68.1094,336.875 68.75,337.0313 Q69.4063,337.1875 69.9688,337.4844 L69.9688,340.2031 Q69.3438,339.625 68.75,339.3594 Q68.1563,339.0781 67.5313,339.0781 Q66.1875,339.0781 65.5,340.1563 Q64.8125,341.2188 64.8125,343.3125 Q64.8125,345.4063 65.5,346.4844 Q66.1875,347.5469 67.5313,347.5469 Q68.1563,347.5469 68.75,347.2813 Q69.3438,347 69.9688,346.4219 L69.9688,349.1406 Z " fill="#000000"></path><text lengthAdjust="spacing" x="81" font-size="14" textLength="161.3486" y="348.3467" font-family="sans-serif" fill="#000000">TransportProfessionnel</text><line y1="359.5" x1="53" y2="359.5" style="stroke:#181818;stroke-width:0.5;" x2="244.3486"></line></g>  <!-- class Evaluation --><g data-entity="Evaluation" id="entity_Evaluation" data-uid="ent0004" class="entity" data-source-line="8"><rect rx="2.5" ry="2.5" width="105.8691" x="70.5" y="929" style="stroke:#181818;stroke-width:0.5;" fill="#FFFFE0" height="40"></rect><ellipse cx="85.5" cy="945" rx="11" ry="11" style="stroke:#181818;stroke-width:1;" fill="#ADD1B2"></ellipse><path d="M88.4688,950.6406 Q87.8906,950.9375 87.25,951.0781 Q86.6094,951.2344 85.9063,951.2344 Q83.4063,951.2344 82.0781,949.5938 Q80.7656,947.9375 80.7656,944.8125 Q80.7656,941.6875 82.0781,940.0313 Q83.4063,938.375 85.9063,938.375 Q86.6094,938.375 87.25,938.5313 Q87.9063,938.6875 88.4688,938.9844 L88.4688,941.7031 Q87.8438,941.125 87.25,940.8594 Q86.6563,940.5781 86.0313,940.5781 Q84.6875,940.5781 84,941.6563 Q83.3125,942.7188 83.3125,944.8125 Q83.3125,946.9063 84,947.9844 Q84.6875,949.0469 86.0313,949.0469 Q86.6563,949.0469 87.25,948.7813 Q87.8438,948.5 88.4688,947.9219 L88.4688,950.6406 Z " fill="#000000"></path><text lengthAdjust="spacing" x="99.5" font-size="14" textLength="73.8691" y="949.8467" font-family="sans-serif" fill="#000000">Evaluation</text><line y1="961" x1="71.5" y2="961" style="stroke:#181818;stroke-width:0.5;" x2="175.3691"></line></g>  <!-- class Professionnel --><g data-entity="Professionnel" id="entity_Professionnel" data-uid="ent0005" class="entity" data-source-line="10"><rect rx="2.5" ry="2.5" width="125.5977" x="123.5" y="452" style="stroke:#181818;stroke-width:0.5;" fill="#D3D3D3" height="40"></rect><ellipse cx="138.5" cy="468" rx="11" ry="11" style="stroke:#181818;stroke-width:1;" fill="#ADD1B2"></ellipse><path d="M141.4688,473.6406 Q140.8906,473.9375 140.25,474.0781 Q139.6094,474.2344 138.9063,474.2344 Q136.4063,474.2344 135.0781,472.5938 Q133.7656,470.9375 133.7656,467.8125 Q133.7656,464.6875 135.0781,463.0313 Q136.4063,461.375 138.9063,461.375 Q139.6094,461.375 140.25,461.5313 Q140.9063,461.6875 141.4688,461.9844 L141.4688,464.7031 Q140.8438,464.125 140.25,463.8594 Q139.6563,463.5781 139.0313,463.5781 Q137.6875,463.5781 137,464.6563 Q136.3125,465.7188 136.3125,467.8125 Q136.3125,469.9063 137,470.9844 Q137.6875,472.0469 139.0313,472.0469 Q139.6563,472.0469 140.25,471.7813 Q140.8438,471.5 141.4688,470.9219 L141.4688,473.6406 Z " fill="#000000"></path><text lengthAdjust="spacing" x="152.5" font-size="14" textLength="93.5977" y="472.8467" font-family="sans-serif" fill="#000000">Professionnel</text><line y1="484" x1="124.5" y2="484" style="stroke:#181818;stroke-width:0.5;" x2="248.0977"></line></g>  <!-- class Statut --><g data-entity="Statut" id="entity_Statut" data-uid="ent0006" class="entity" data-source-line="12"><rect rx="2.5" ry="2.5" width="74.8066" x="212" y="929" style="stroke:#181818;stroke-width:0.5;" fill="#D3D3D3" height="40"></rect><ellipse cx="227" cy="945" rx="11" ry="11" style="stroke:#181818;stroke-width:1;" fill="#ADD1B2"></ellipse><path d="M229.9688,950.6406 Q229.3906,950.9375 228.75,951.0781 Q228.1094,951.2344 227.4063,951.2344 Q224.9063,951.2344 223.5781,949.5938 Q222.2656,947.9375 222.2656,944.8125 Q222.2656,941.6875 223.5781,940.0313 Q224.9063,938.375 227.4063,938.375 Q228.1094,938.375 228.75,938.5313 Q229.4063,938.6875 229.9688,938.9844 L229.9688,941.7031 Q229.3438,941.125 228.75,940.8594 Q228.1563,940.5781 227.5313,940.5781 Q226.1875,940.5781 225.5,941.6563 Q224.8125,942.7188 224.8125,944.8125 Q224.8125,946.9063 225.5,947.9844 Q226.1875,949.0469 227.5313,949.0469 Q228.1563,949.0469 228.75,948.7813 Q229.3438,948.5 229.9688,947.9219 L229.9688,950.6406 Z " fill="#000000"></path><text lengthAdjust="spacing" x="241" font-size="14" textLength="42.8066" y="949.8467" font-family="sans-serif" fill="#000000">Statut</text><line y1="961" x1="213" y2="961" style="stroke:#181818;stroke-width:0.5;" x2="285.8066"></line></g>  <!-- class Transport --><g data-entity="Transport" id="entity_Transport" data-uid="ent0007" class="entity" data-source-line="14"><rect rx="2.5" ry="2.5" width="285.5127" x="138.5" y="7" style="stroke:#181818;stroke-width:0.5;" fill="#D3D3D3" height="235.5625"></rect><ellipse cx="243.1309" cy="23" rx="11" ry="11" style="stroke:#181818;stroke-width:1;" fill="#ADD1B2"></ellipse><path d="M246.0996,28.6406 Q245.5215,28.9375 244.8809,29.0781 Q244.2402,29.2344 243.5371,29.2344 Q241.0371,29.2344 239.709,27.5938 Q238.3965,25.9375 238.3965,22.8125 Q238.3965,19.6875 239.709,18.0313 Q241.0371,16.375 243.5371,16.375 Q244.2402,16.375 244.8809,16.5313 Q245.5371,16.6875 246.0996,16.9844 L246.0996,19.7031 Q245.4746,19.125 244.8809,18.8594 Q244.2871,18.5781 243.6621,18.5781 Q242.3184,18.5781 241.6309,19.6563 Q240.9434,20.7188 240.9434,22.8125 Q240.9434,24.9063 241.6309,25.9844 Q242.3184,27.0469 243.6621,27.0469 Q244.2871,27.0469 244.8809,26.7813 Q245.4746,26.5 246.0996,25.9219 L246.0996,28.6406 Z " fill="#000000"></path><text lengthAdjust="spacing" x="263.6309" font-size="14" textLength="67.751" y="27.8467" font-family="sans-serif" fill="#000000">Transport</text><line y1="39" x1="139.5" y2="39" style="stroke:#181818;stroke-width:0.5;" x2="423.0127"></line><text lengthAdjust="spacing" x="144.5" font-size="14" textLength="181.002" y="55.9951" font-family="sans-serif" fill="#000000">idTrajet : Identifiant [1..1]</text><text lengthAdjust="spacing" x="144.5" font-size="14" textLength="190.5723" y="72.292" font-family="sans-serif" fill="#000000">typeTransport : Code [0..1]</text><text lengthAdjust="spacing" x="144.5" font-size="14" textLength="209.8564" y="88.5889" font-family="sans-serif" fill="#000000">typeMotorisation : Code [0..1]</text><text lengthAdjust="spacing" x="144.5" font-size="14" textLength="246.6338" y="104.8857" font-family="sans-serif" fill="#000000">transporteur : EntiteJuridique [0..1]</text><text lengthAdjust="spacing" x="144.5" font-size="14" textLength="214.8809" y="121.1826" font-family="sans-serif" fill="#000000">adresseDepart : Adresse [0..1]</text><text lengthAdjust="spacing" x="144.5" font-size="14" textLength="247.1123" y="137.4795" font-family="sans-serif" fill="#000000">adresseDestination : Adresse [0..1]</text><text lengthAdjust="spacing" x="144.5" font-size="14" textLength="248.2744" y="153.7764" font-family="sans-serif" fill="#000000">budgetPrevisionnel : Montant [0..1]</text><text lengthAdjust="spacing" x="144.5" font-size="14" textLength="194.1338" y="170.0732" font-family="sans-serif" fill="#000000">budgetReel : Montant [0..1]</text><text lengthAdjust="spacing" x="144.5" font-size="14" textLength="166.2568" y="186.3701" font-family="sans-serif" fill="#000000">distance : Mesure [0..1]</text><text lengthAdjust="spacing" x="144.5" font-size="14" textLength="218.2988" y="202.667" font-family="sans-serif" fill="#000000">dureeTheorique : Mesure [0..1]</text><text lengthAdjust="spacing" x="144.5" font-size="14" textLength="273.5127" y="218.9639" font-family="sans-serif" fill="#000000">dateDebutTransport : DateHeure [1..1]</text><text lengthAdjust="spacing" x="144.5" font-size="14" textLength="251.6855" y="235.2607" font-family="sans-serif" fill="#000000">dateFinTransport : DateHeure [1..1]</text></g>  <!-- class TransportUsager --><g data-entity="TransportUsager" id="entity_TransportUsager" data-uid="ent0008" class="entity" data-source-line="29"><rect rx="2.5" ry="2.5" width="270.7539" x="280" y="303" style="stroke:#181818;stroke-width:0.5;" fill="#D3D3D3" height="88.8906"></rect><ellipse cx="352.5635" cy="319" rx="11" ry="11" style="stroke:#181818;stroke-width:1;" fill="#ADD1B2"></ellipse><path d="M355.5322,324.6406 Q354.9541,324.9375 354.3135,325.0781 Q353.6729,325.2344 352.9697,325.2344 Q350.4697,325.2344 349.1416,323.5938 Q347.8291,321.9375 347.8291,318.8125 Q347.8291,315.6875 349.1416,314.0313 Q350.4697,312.375 352.9697,312.375 Q353.6729,312.375 354.3135,312.5313 Q354.9697,312.6875 355.5322,312.9844 L355.5322,315.7031 Q354.9072,315.125 354.3135,314.8594 Q353.7197,314.5781 353.0947,314.5781 Q351.751,314.5781 351.0635,315.6563 Q350.376,316.7188 350.376,318.8125 Q350.376,320.9063 351.0635,321.9844 Q351.751,323.0469 353.0947,323.0469 Q353.7197,323.0469 354.3135,322.7813 Q354.9072,322.5 355.5322,321.9219 L355.5322,324.6406 Z " fill="#000000"></path><text lengthAdjust="spacing" x="373.0635" font-size="14" textLength="117.127" y="323.8467" font-family="sans-serif" fill="#000000">TransportUsager</text><line y1="335" x1="281" y2="335" style="stroke:#181818;stroke-width:0.5;" x2="549.7539"></line><text lengthAdjust="spacing" x="286" font-size="14" textLength="253.1211" y="351.9951" font-family="sans-serif" fill="#000000">accompagnement : Indicateur [0..1]</text><text lengthAdjust="spacing" x="286" font-size="14" textLength="258.7539" y="368.292" font-family="sans-serif" fill="#000000">asepsieRigoureuse : Indicateur [0..1]</text><text lengthAdjust="spacing" x="286" font-size="14" textLength="205.4814" y="384.5889" font-family="sans-serif" fill="#000000">natureTransport : Code [0..1]</text></g>  <!-- class Evenement --><g data-entity="Evenement" id="entity_Evenement" data-uid="ent0009" class="entity" data-source-line="35"><rect rx="2.5" ry="2.5" width="340.2959" x="16.5" y="552" style="stroke:#181818;stroke-width:0.5;" fill="#D3D3D3" height="317.0469"></rect><ellipse cx="142.4761" cy="568" rx="11" ry="11" style="stroke:#181818;stroke-width:1;" fill="#ADD1B2"></ellipse><path d="M145.4448,573.6406 Q144.8667,573.9375 144.2261,574.0781 Q143.5854,574.2344 142.8823,574.2344 Q140.3823,574.2344 139.0542,572.5938 Q137.7417,570.9375 137.7417,567.8125 Q137.7417,564.6875 139.0542,563.0313 Q140.3823,561.375 142.8823,561.375 Q143.5854,561.375 144.2261,561.5313 Q144.8823,561.6875 145.4448,561.9844 L145.4448,564.7031 Q144.8198,564.125 144.2261,563.8594 Q143.6323,563.5781 143.0073,563.5781 Q141.6636,563.5781 140.9761,564.6563 Q140.2886,565.7188 140.2886,567.8125 Q140.2886,569.9063 140.9761,570.9844 Q141.6636,572.0469 143.0073,572.0469 Q143.6323,572.0469 144.2261,571.7813 Q144.8198,571.5 145.4448,570.9219 L145.4448,573.6406 Z " fill="#000000"></path><text lengthAdjust="spacing" x="162.9761" font-size="14" textLength="79.8438" y="572.8467" font-family="sans-serif" fill="#000000">Evenement</text><line y1="584" x1="17.5" y2="584" style="stroke:#181818;stroke-width:0.5;" x2="355.7959"></line><text lengthAdjust="spacing" x="22.5" font-size="14" textLength="219.9668" y="600.9951" font-family="sans-serif" fill="#000000">idEvenement : Identifiant [1..1]</text><text lengthAdjust="spacing" x="22.5" font-size="14" textLength="200.7578" y="617.292" font-family="sans-serif" fill="#000000">typeEvenement : Code [0..*]</text><text lengthAdjust="spacing" x="22.5" font-size="14" textLength="216.7744" y="633.5889" font-family="sans-serif" fill="#000000">libelleEvenement : Texte [0..1]</text><text lengthAdjust="spacing" x="22.5" font-size="14" textLength="266.5469" y="649.8857" font-family="sans-serif" fill="#000000">commentaireEvenement : Texte [0..*]</text><text lengthAdjust="spacing" x="22.5" font-size="14" textLength="272.9658" y="666.1826" font-family="sans-serif" fill="#000000">compteRenduEvenement : Texte [0..1]</text><text lengthAdjust="spacing" x="22.5" font-size="14" textLength="298.0059" y="682.4795" font-family="sans-serif" fill="#000000">pieceJointeEvenement : ObjetBinaire [0..*]</text><text lengthAdjust="spacing" x="22.5" font-size="14" textLength="189.9912" y="698.7764" font-family="sans-serif" fill="#000000">lieuEvenement : Lieu [0..1]</text><text lengthAdjust="spacing" x="22.5" font-size="14" textLength="290.7461" y="715.0732" font-family="sans-serif" fill="#000000">structureEnCharge : EntiteJuridique [0..1]</text><text lengthAdjust="spacing" x="22.5" font-size="14" textLength="285.6055" y="731.3701" font-family="sans-serif" fill="#000000">dateDebutEvenement : DateHeure [1..1]</text><text lengthAdjust="spacing" x="22.5" font-size="14" textLength="263.7783" y="747.667" font-family="sans-serif" fill="#000000">dateFinEvenement : DateHeure [1..1]</text><text lengthAdjust="spacing" x="22.5" font-size="14" textLength="309.2373" y="763.9639" font-family="sans-serif" fill="#000000">evenementHorsPrestation : Indicateur [0..1]</text><text lengthAdjust="spacing" x="22.5" font-size="14" textLength="211.6133" y="780.2607" font-family="sans-serif" fill="#000000">motifEvenement : Texte [0..1]</text><text lengthAdjust="spacing" x="22.5" font-size="14" textLength="227.5752" y="796.5576" font-family="sans-serif" fill="#000000">usagerPresent : Indicateur [0..1]</text><text lengthAdjust="spacing" x="22.5" font-size="14" textLength="165.6211" y="812.8545" font-family="sans-serif" fill="#000000">repas : Indicateur [0..1]</text><text lengthAdjust="spacing" x="22.5" font-size="14" textLength="245.2734" y="829.1514" font-family="sans-serif" fill="#000000">typeRessourceUtilisee : Code [0..*]</text><text lengthAdjust="spacing" x="22.5" font-size="14" textLength="287.6836" y="845.4482" font-family="sans-serif" fill="#000000">detailTypeRessourceUtilisee : Code [0..*]</text><text lengthAdjust="spacing" x="22.5" font-size="14" textLength="328.2959" y="861.7451" font-family="sans-serif" fill="#000000">dateModificationEvenement : DateHeure [0..1]</text></g>  <!-- link Usager to Evenement --><g data-entity-2="Evenement" data-entity-1="Usager" id="link_Usager_Evenement" data-uid="lnk10" class="link" data-source-line="55"><path codeLine="55" d="M58.87,492.35 C67.37,506.81 79.87,528.08 93.77,551.73" style="stroke:#181818;stroke-width:1;" id="Usager-Evenement" fill="none"></path><text lengthAdjust="spacing" x="52.8366" font-size="13" textLength="8.271" y="511.9194" font-family="sans-serif" fill="#000000">1</text><text lengthAdjust="spacing" x="65.7151" font-size="13" textLength="23.0356" y="540.7453" font-family="sans-serif" fill="#000000">0..*</text></g>  <!-- link Professionnel to Evenement --><g data-entity-2="Evenement" data-entity-1="Professionnel" id="link_Professionnel_Evenement" data-uid="lnk11" class="link" data-source-line="56"><path codeLine="56" d="M186.5,492.35 C186.5,506.81 186.5,528.08 186.5,551.73" style="stroke:#181818;stroke-width:1;" id="Professionnel-Evenement" fill="none"></path><text lengthAdjust="spacing" x="160.4682" font-size="13" textLength="23.0356" y="511.9194" font-family="sans-serif" fill="#000000">0..*</text><text lengthAdjust="spacing" x="162.9367" font-size="13" textLength="23.0356" y="540.7453" font-family="sans-serif" fill="#000000">0..*</text></g>  <!-- reverse link Transport to TransportProfessionnel --><g data-entity-2="TransportProfessionnel" data-entity-1="Transport" id="link_Transport_TransportProfessionnel" data-uid="lnk12" class="link" data-source-line="57"><path codeLine="57" d="M201.6138,258.4437 C181.8438,291.2237 171.85,307.78 160.08,327.31" style="stroke:#181818;stroke-width:1;" id="Transport-backto-TransportProfessionnel" fill="none"></path><polygon style="stroke:#181818;stroke-width:1;" fill="none" points="210.91,243.03,196.4759,255.345,206.7517,261.5424,210.91,243.03"></polygon></g>  <!-- reverse link Transport to TransportUsager --><g data-entity-2="TransportUsager" data-entity-1="Transport" id="link_Transport_TransportUsager" data-uid="lnk13" class="link" data-source-line="58"><path codeLine="58" d="M361.9688,258.4118 C374.9388,279.7518 378.35,285.36 388.95,302.81" style="stroke:#181818;stroke-width:1;" id="Transport-backto-TransportUsager" fill="none"></path><polygon style="stroke:#181818;stroke-width:1;" fill="none" points="352.62,243.03,356.8415,261.5281,367.096,255.2956,352.62,243.03"></polygon></g>  <!-- link TransportUsager to Evenement --><g data-entity-2="Evenement" data-entity-1="TransportUsager" id="link_TransportUsager_Evenement" data-uid="lnk14" class="link" data-source-line="59"><path codeLine="59" d="M387.88,392.05 C362.6,431.9 323.61,493.35 286.66,551.61" style="stroke:#181818;stroke-width:1;" id="TransportUsager-Evenement" fill="none"></path><text lengthAdjust="spacing" x="358.9113" font-size="13" textLength="23.0356" y="412.1056" font-family="sans-serif" fill="#000000">0..*</text><text lengthAdjust="spacing" x="283.0167" font-size="13" textLength="8.271" y="541.1393" font-family="sans-serif" fill="#000000">1</text></g>  <!-- link TransportProfessionnel to Professionnel --><g data-entity-2="Professionnel" data-entity-1="TransportProfessionnel" id="link_TransportProfessionnel_Professionnel" data-uid="lnk15" class="link" data-source-line="60"><path codeLine="60" d="M154.44,367.64 C161.58,390.65 173.48,429.04 180.6,451.99" style="stroke:#181818;stroke-width:1;" id="TransportProfessionnel-Professionnel" fill="none"></path><text lengthAdjust="spacing" x="129.8322" font-size="13" textLength="23.0356" y="387.4993" font-family="sans-serif" fill="#000000">0..*</text><text lengthAdjust="spacing" x="169.7908" font-size="13" textLength="8.271" y="440.9953" font-family="sans-serif" fill="#000000">1</text></g>  <!-- link Evenement to Evaluation --><g data-entity-2="Evaluation" data-entity-1="Evenement" id="link_Evenement_Evaluation" data-uid="lnk16" class="link" data-source-line="61"><path codeLine="61" d="M144.48,869.25 C138.16,892.97 132.48,914.3 128.63,928.76" style="stroke:#181818;stroke-width:1;" id="Evenement-Evaluation" fill="none"></path><text lengthAdjust="spacing" x="117.8758" font-size="13" textLength="24.8066" y="889.3717" font-family="sans-serif" fill="#000000">0..1</text><text lengthAdjust="spacing" x="102.8296" font-size="13" textLength="24.8066" y="918.0437" font-family="sans-serif" fill="#000000">0..1</text></g>  <!-- link Evenement to Statut --><g data-entity-2="Statut" data-entity-1="Evenement" id="link_Evenement_Statut" data-uid="lnk17" class="link" data-source-line="62"><path codeLine="62" d="M228.52,869.25 C234.84,892.97 240.52,914.3 244.37,928.76" style="stroke:#181818;stroke-width:1;" id="Evenement-Statut" fill="none"></path><text lengthAdjust="spacing" x="222.361" font-size="13" textLength="8.271" y="889.3717" font-family="sans-serif" fill="#000000">1</text><text lengthAdjust="spacing" x="216.725" font-size="13" textLength="23.0356" y="918.0437" font-family="sans-serif" fill="#000000">0..*</text></g></g></svg></div>
+
+##### Classe Evenement
+
+Evènements liés à la prise en charge de l’usager dans une structure ESSMS.
+
+Les classes EntiteJuridique, Lieu et Professionnel sont issues du MOS et sont profilées pour ce volet.
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>idEvenement : [1..1] Identifiant</td>
+    <td>Identifiant technique de l’évènement obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de trois caractères "EVN" et du numéro de l’évènement dans le DUI (numEvenement) :<br/> idEvenement = 3+FINESS/identifiantLocalUsagerESSMS-EVN-numEvenement</td>
+  </tr>
+   <tr>
+    <td>typeEvenement : [0..*] Code ou Texte</td>
+    <td>Type de l’évènement.<br/>
+    Cas d’usage SSIAD : le type de l'évènement est issu <br/>
+    <ul>
+        - d'un code issu du jeu de valeur associé : JDV_TypeEvenementSSIAD_CISIS avec l'OID 1.2.250.1.213.1.1.5.811 publié sur <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a><br/>
+        - peut contenir un code issu de la terminologie Serafin correspondant aux familles 2-PrestationDirecte et 3-PrestationIndirecte.  Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J284-PrestationsDirects_SERAFIN/FHIR/JDV-J284-PrestationsDirects-SERAFIN/">JDV-J284-PrestationsDirects_SERAFIN</a>, <a href="https://mos.esante.gouv.fr/NOS/JDV_J283-PrestationsIndirects_SERAFIN/FHIR/JDV-J283-PrestationsIndirects-SERAFIN">JDV-J283-PrestationsIndirects_SERAFIN</a><br/>
+        - peut contenir un texte non structuré véhiculant les autres types d’évènements.<br/>
+        </ul>
+    Autre cas d'usage : le type de l'évènement est issu<br/>
+    <ul>
+      - du jeu de valeur issue de la terminologie Serafin correspondant aux familles 2-PrestationDirecte et 3-PrestationIndirecte. Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J284-PrestationsDirects_SERAFIN/FHIR/JDV-J284-PrestationsDirects-SERAFIN/">JDV-J284-PrestationsDirects_SERAFIN</a>, <a href="https://mos.esante.gouv.fr/NOS/JDV_J283-PrestationsIndirects_SERAFIN/FHIR/JDV-J283-PrestationsIndirects-SERAFIN">JDV_J283-PrestationsIndirects_SERAFIN</a><br/>
+      - et/ou d’un texte non structuré véhiculant les autres types d’évènements.
+      </ul>
+    </td>
+  </tr>
+    <tr>
+    <td>libelleEvenement : [0..1] Texte</td>
+    <td>Titre donné à l’évènement par la structure.</td>
+  </tr>
+   <tr>
+    <td>commentaireEvenement : [0..*] Texte</td>
+    <td>Commentaires sur le déroulé de l'évènement.</td>
+  </tr>
+  <tr>
+    <td>compteRenduEvenement : [0..1] Texte</td>
+    <td>Zone de texte liée à l’événement pour compte rendu des actions réalisées.</td>
+  </tr>
+  <tr>
+    <td>pieceJointeEvenement : [0..*] ObjetBinaire</td>
+    <td>Pièces jointes liées à l’événement.</td>
+  </tr>
+   <tr>
+    <td>lieuEvenement : [0..1] Lieu</td>
+    <td>Localisation d’exécution de l’évènement.</td>
+  </tr>
+<tr>
+    <td>structureEnCharge : [0..1] EntiteJuridique</td>
+    <td>Structure de rattachement de l'usager en charge de l'évènement.</td>
+  </tr>
+<tr>
+    <td>dateDebutEvenement : [1..1] DateHeure</td>
+    <td>Date et heure de début de l'évènement.</td>
+  </tr>
+  <tr>
+    <td>dateFinEvenement : [1..1] DateHeure</td>
+    <td>Date et heure de fin de l'évènement.</td>
+  </tr>
+ <tr>
+    <td>evenementHorsPrestation : [0..1] Indicateur</td>
+    <td>Evénement hors prestation prévue dans le projet personnalisé de l’usager (ex : école).</td>
+  </tr>
+<tr>
+    <td>motifEvenement : [0..1] Texte</td>
+    <td>Contexte justifiant la réalisation de l’évènement (souvent décrit dans le projet personnalisé).</td>
+  </tr>
+<tr>
+    <td>usagerPresent : [0..1] Indicateur</td>
+    <td>Evènement nécessitant ou non la présence physique de l’usager.</td>
+  </tr>
+  <tr>
+   <td>repas : [0..1] Indicateur</td>
+    <td>Repas du professionnel prévu dans le cadre de l'événement.</td>
+  </tr>
+ <tr>
+   <td>typeRessourceUtilisee: [0..*] Code</td>
+    <td>Type de ressources utilisées dans le cadre de l’évènement (matériel, immobilier, véhicule).<br/>
+    Jeu(x) de valeur(s) associé(s) : JDV_RessourceUtilisee_CISIS avec l'OID 1.2.250.1.213.1.1.5.807 publié sur <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a>
+    </td>
+  </tr>
+  <tr>
+   <td>detailTypeRessourceUtilisee: [0..*] Code</td>
+    <td>Détail du type de ressources utilisées dans le cadre de l’évènement (pour matériel : matériel médical, matériel pédagogique ; pour immobilier : bâtiment, salle, chambre).<br/>
+    Jeu(x) de valeur(s) associé(s) :<br/>
+    - JDV_DetailMaterielSpecialise_CISIS avec l'OID 1.2.250.1.213.1.1.5.808 publié sur <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a><br/>
+    - JDV_DetailRessourceImmobiliereUtilisee_CISIS avec l'OID 1.2.250.1.213.1.1.5.809 publié sur <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a>
+    </td>
+  </tr>
+  <tr>
+    <td>dateModificationEvenement : [0..1] DateHeure</td>
+    <td>Date de la dernière modification de l'événement.</td>
+  </tr>
+</table>
+
+##### Classe Transport
+
+Classe générique socle décrivant le transport d’une personne physique (professionnel, usger) lors d’un évènement.
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>idTrajet : [1..1] Identifiant</td>
+    <td>Identifiant technique du transport. </td>
+  </tr>
+  <tr>
+    <td>typeTransport : [0..1] Code</td>
+    <td>Type de transport.<br/>
+    Jeu(x) de valeur(s) associé(s) : JDV_ModeDeTransport_CISIS avec l'OID 1.2.250.1.213.1.1.5.140 
+    publié sur <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a>
+    </td>
+  </tr>
+   <tr>
+    <td>typeMotorisation : [0..1] Code</td>
+    <td>Type de motorisation associée au véhicule utilisé lors du transport.<br/>
+    Jeu(x) de valeur(s) associé(s) : JDV_TypeMotorisation_CISIS avec l'OID 1.2.250.1.213.1.1.5.801 publié sur <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a> 
+    </td>
+  </tr>
+  <tr>
+    <td>transporteur : [0..1] EntiteJuridique</td>
+    <td>Structure juridique définissant le transporteur.</td>
+  </tr>
+ <tr>
+    <td>adresseDepart : [0..1] Adresse</td>
+    <td>Adresse de départ du transport.</td>
+  </tr>
+  <tr>
+    <td>adresseDestination : [0..1] Adresse</td>
+    <td>Adresse de destination du transport.</td>
+  </tr>
+<tr>
+    <td>budgetPrevisionnel : [0..1] Montant</td>
+    <td>Budget prévisionnel pour assurer le transport de la personne physique.</td>
+  </tr>
+  <tr>
+    <td>budgetReel : [0..1] Montant</td>
+    <td>Budget réel pour assurer le transport de la personne physique.</td>
+  </tr>
+  <tr>
+    <td>distance : [0..1] Mesure</td>
+    <td>Distance du transport de la personne physique.</td>
+  </tr>
+  <tr>
+    <td>dureeTheorique : [0..1] Mesure</td>
+    <td>Durée théorique du transport de la personne physique.</td>
+  </tr>
+  <tr>
+    <td>dateDebutTransport : [1..1] DateHeure</td>
+    <td>Date de début du transport de la personne physique.</td>
+  </tr>
+  <tr>
+    <td>dateFinTransport : [1..1] DateHeure</td>
+    <td>Date de fin du transport de la personne physique.</td>
+  </tr>
+</table>
+
+##### Classe TransportProfessionnel
+
+** Classe spécialisée, hérite de la classe Transport
+
+Cette classe regroupe les items pouvant caractériser le transport du professionnel lors de l'évènement.
+
+L'identifiant technique du transport est obtenu dans ce contexte par par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de cinq caractères "TPPro" et du numéro de transport du professionnel dans le DUI (idTransport) :<br/> idTrajet = 3+FINESS/identifiantLocalUsagerESSMS-TPPro-idTransport
+
+##### Classe TransportUsager
+
+** Classe spécialisée, hérite de la classe Transport
+
+Cette classe regroupe les items pouvant caractériser le transport de l'usager lors de l'évènement.
+
+L'identifiant technique du transport est obtenu dans ce contexte par par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de cinq caractères "TPPat" et du numéro de transport de l'usager dans le DUI (idTransport) :<br/> idTrajet = 3+FINESS/identifiantLocalUsagerESSMS-TPPat-idTransport
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>accompagnement : [0..1] Indicateur</td>
+    <td>Accompagnement nécessaire ou non de l'usager. </td>
+  </tr>
+  <tr>
+    <td>asepsieRigoureuse : [0..1] Indicateur</td>
+    <td>Lors du transport de l'usager l'asepsie est rigoureusement respectée ou n'est pas nécessaire.</td>
+  </tr>
+  <tr>
+    <td>natureTransport : [0..1] Code</td>
+    <td>Nature du transport de l'usager.<br/>
+    Jeu de valeur issue de la terminologie Serafin correspondant aux familles (3.2.4.1, 3.2.4.2, 3.2.4.3).<br/>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J282-TransportsLiesAuProjetIndividuel_SERAFIN/FHIR/JDV-J282-TransportsLiesAuProjetIndividuel-SERAFIN">JDV_J282-TransportsLiesAuProjetIndividuel_SERAFIN</a>
+    </td>
+  </tr>
+</table>
+
+### Classes du MOS profilées pour ce volet
+
+##### Classe Professionnel
+
+Données d'identification pérennes d’une personne physique, qui travaille en tant que professionnel (professionnel enregistré dans RPPS), personnel autorisé ou personnel d’établissement, dans les domaines sanitaire, médico-social et social.
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>idNat_PS : [1..1] Identifiant</td>
+    <td>Identification nationale principale du professionnel. Cette identification est obtenue par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>) et de l'identifiant de la personne physique. Voir la description complète de idNat_PS dans le MOS.</td>
+  </tr>
+   <tr>
+    <td>civilite : [0..1] Code</td>
+    <td>Civilité de la personne. <br/>
+    Jeu(x) de valeur(s) associé(s) :  <a href="https://mos.esante.gouv.fr/NOS/JDV_J245-Civilite-CISIS/FHIR/JDV-J245-Civilite-CISIS">JDV_J245-Civilite-CISIS</a>
+    </td>
+  </tr>
+   <tr>
+    <td>nom : [0..1] Texte</td>
+    <td>Nom d'usage de la personne.</td>
+  </tr>
+   <tr>
+    <td>prenom : [0..1] Texte</td>
+    <td>Prénom usuel de la personne.</td>
+  </tr>
+   <tr>
+    <td>profession : [0..1] Code</td>
+    <td>Profession / Spécialité du professionnel. <br/>
+    Jeu(x) de valeur(s) associé(s) :  <a href="https://mos.esante.gouv.fr/NOS/JDV_J01-XdsAuthorSpecialty-CISIS/FHIR/JDV-J01-XdsAuthorSpecialty-CISIS">JDV_J01-XdsAuthorSpecialty-CISIS</a>
+    </td>
+  </tr>
+  <tr>
+    <td>role : [0..1] Code</td>
+    <td>Rôle fonctionnel du professionnel. <br/>
+    Jeu(x) de valeur(s) associé(s) :  <a href="https://mos.esante.gouv.fr/NOS/JDV_J47-FunctionCode-CISIS/FHIR/JDV-J47-FunctionCode-CISIS">JDV-J47-FunctionCode-CISIS</a>
+    </td>
+  </tr>
+  <tr>
+    <td>modeExercice : [0..1] Code</td>
+    <td>Mode d'exercice du professionnel. Décrit selon quelle modalité est exercée l'activité du professionnel par rapport à son établissement de rattachement.<br/>
+    Jeu(x) de valeur(s) associé(s) :  <a href="https://mos.esante.gouv.fr/NOS/JDV_J117-ModeExercice-ENREG/FHIR/JDV-J117-ModeExercice-ENREG">JDV-J117-ModeExercice-ENREG</a>
+    </td>
+  </tr>
+  <tr>
+    <td>etablissementDeRattachement : [0..1] EntiteJuridique</td>
+    <td>Structure juridique de rattachement du professionnel.</td>
+  </tr>
+</table>
+
+<u>Remarque</u>: Certaines professions du médico-social n'ont pas de correspondance directe dans les référentiels du CI-SIS. L'annexe <a href="annexes_codes_professions_roles_modes_exercices.html">Professions du médico-social</a> donne la correspondance entre la profession du médico-social et le triptyque "profession/rôle/mode d'exercice" référencé dans les jeux de valeurs du CI-SIS.
+
+##### Classe Entité Juridique
+
+Pour ce volet l'Entité Juridique est une personne morale inscrite dans le FINESS.
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>idNat_Struct : [1..1] Identifiant</td>
+    <td>Identification nationale de l'Entité juridique. Cette identification est obtenue par la concaténation du type d'identifiant national de structure (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G07-TypeIdentifiantStructure/FHIR/TRE-G07-TypeIdentifiantStructure">TRE_G07-TypeIdentifiantStructure</a>) et de l'identifiant de la structure: ** 1 + N° FINESS.</td>
+  </tr>
+ <tr>
+    <td>raisonSociale : [0..1] Texte</td>
+    <td>La raison sociale est le nom de l'entité juridique. Elle figure obligatoirement dans les statuts de l'EJ. </td>
+  </tr>
+</table>
+
+
+##### Classe Lieu
+
+Portion déterminée de l'espace où se sont déroulés des événements.
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>identifiant : [0..*] Identifiant</td>
+    <td>Identifiant(s) métier du lieu.</td>
+  </tr>
+  <tr>
+    <td>nom : [0..1] Texte</td>
+    <td>Nom, exprimé sous la forme de texte, du lieu.</td>
+  </tr>
+  <tr>
+    <td>adresse : [0..1] Adresse</td>
+    <td>Adresse géopostale du lieu.</td>
+  </tr>
+  <tr>
+    <td>telecommunication : [0..1] Telecommunication</td>
+    <td>Adresse(s) de télécommunication du lieu (numéro de téléphone, adresse email, URL, etc.).</td>
+  </tr>
+</table>
+
+
+### Classes génériques
+
+##### Classe Statut
+
+Cette classe décrit le statut des ressources (Evenement, Evaluation, Projet personnalisé, ...).
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>statut : [1..1] Code</td>
+    <td>Statut de la ressource impactée. <br/>
+    Jeu(x) de valeur(s) associé(s) :  <a href="https://mos.esante.gouv.fr/NOS/JDV_J281-StatutsRessourcesMS/FHIR/JDV-J281-StatutsRessourcesMS">JDV_J281-StatutsRessourcesMS</a><br/>
+    - Pour l'Evaluation seuls les codes suivants sont à utiliser : APPROUVE, VALIDE, TERMINE <br/>
+    - Pour l'Evènement seuls les codes suivants sont à utiliser : PLANIFIE, VALIDE, REALISE, ANNULE
+    </td>
+  </tr>
+  <tr>
+   <td>motifNonRealisation : [0..1] Code</td>
+    <td>Motif associé au statut de non-réalisation de l’évènement.<br/>
+    Jeu(x) de valeur(s) associé(s) : JDV_MotifNonRealisationEvenement_CISIS avec l'OID 1.2.250.1.213.1.1.5.803
+    publié sur <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a> 
+    </td>
+  </tr>
+   <tr>
+    <td>dateStatut : [0..1] DateHeure</td>
+    <td>Date et heure du renseignement du statut.</td>
+  </tr>
+   <tr>
+    <td>auteur : [0..1] Professionnel</td>
+    <td>Le professionnel ayant effectué la dernière modification du statut associé à la ressource.</td>
+  </tr>
+</table>
+
+##### Classe Accord
+
+Cela correspond au consentement d'une personne physique ou morale.
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>auteur : [1..1] Texte</td>
+    <td>Acteur qui donne son accord.</td>
+  </tr>
+  <tr>
+    <td>dateSignature : [1..1] DateHeure</td>
+    <td>Date de délivrance de l'accord.</td>
+  </tr>
+  <tr>
+    <td>dureeValidite : [0..1] Periode</td>
+    <td>Durée de validité de l'accord</td>
+  </tr>
+</table>
+
+### Contraintes par cas d'usage sur le modèle DUI
+
+ Dans les tableaux ci-dessous il est précisé pour chaque cas d'usage, les données du DUI qui sont réellement utilisées.
+
+#### Mapping Usager
+
+<table style="width:100%">
+<tr>
+  <th>Attribut</th>
+  <th>Utilisé pour le cas d'usage SSIAD</th>
+</tr>
+<tr>
+  <td>matriculeINS</td>
+  <td>Oui</td>
+</tr>
+<tr>
+  <td>numSecuriteSociale</td>
+  <td>Oui</td>
+</tr>
+<tr>
+  <td>identifiantLocalUsagerESSMS</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>numeroIndividuInitial</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>nomNaissance</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>nomUsage</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>prenom</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>premierPrenomActeNaissance</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>prenomUtilise</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>sexe</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>dateNaissance</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>ordreNaissance</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>communeNaissance</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>paysNaissance</td>
+ <td>Oui</td>
+</tr>
+</table>
+
+##### Mapping Adresse (usager)
+
+<table style="width:100%">
+<tr>
+  <th>Attribut</th>
+  <th>Utilisé pour le cas d'usage SSIAD</th>
+</tr>
+<tr>
+  <td>numeroVoie</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>libelleVoie</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>codePostal</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>localite</td>
+ <td>Oui</td>
+</tr>
+</table>
+
+
+#### Mapping Séjour
+
+<table style="width:100%">
+<tr>
+  <th>Attribut</th>
+  <th>Utilisé pour le cas d'usage SSIAD</th>
+</tr>
+<tr>
+  <td>idSejour</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>dateAdmission</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>ESSMS</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>modeEntree</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>dateEntree</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>modeSortie</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>dateSortie</td>
+ <td>Oui</td>
+</tr>
+</table>
+
+#### Partie Accompagnement
+
+##### Mapping Evaluation
+
+<table style="width:100%">
+<tr>
+  <th>Attribut</th>
+  <th>Utilisé pour le cas d'usage SSIAD</th>
+</tr>
+<tr>
+  <td>idEvaluation</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>typeEvaluation</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>statut de l'évaluation</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>dateEvaluation</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>professionnel réalisant l'évaluation</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>idNat_PS Identifiant de l'évaluateur</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>idNat_Struct Identifiant de l'établissement de rattachement de l'évaluateur</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>composants du détail de l'évaluation</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>pieceJointeEvaluation</td>
+ <td>Oui</td>
+</tr>
+</table>
+
+###### Mapping Détail Evaluation (niveau 1,2)
+
+<table style="width:100%">
+<tr>
+  <th>Attribut</th>
+  <th>Utilisé pour le cas d'usage SSIAD</th>
+</tr>
+<tr>
+  <td>champsEvalue</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>champsEvalue</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>resultatChampsEvalue</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>statut du détail de l'évaluation</td>
+ <td>Oui</td>
+</tr>
+</table>
+
+#### Partie Coordination des acteurs
+
+##### Mapping Evènement de l'agenda
+
+<table style="width:100%">
+<tr>
+  <th>Attribut</th>
+  <th>Utilisé pour le cas d'usage SSIAD</th>
+</tr>
+<tr>
+  <td>idEvenement</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>typeEvenement</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>libelleEvenement</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>dateDebutEvenement</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>dateFinEvenement</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>lieuEvenement</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>structureEnCharge</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>Fonction (rôle et mode d'exercice) du professionnel ayant réalisé l'évènement</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>Nom et prénom du professionnel ayant réalisé l'évènement</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>Etablissement de rattachement du professionnel</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>Caractéristiques de l'évènement (Commentaire, pièce jointe, transport de l'usager, statut métier de l'évènement, transport d'un professionnel ayant participé à l'évènement)</td>
+ <td>Non</td>
+</tr>
+</table>
+
+###### Mapping Statut de l'évènement
+
+<table style="width:100%">
+<tr>
+  <th>Attribut</th>
+  <th>Utilisé pour le cas d'usage SSIAD</th>
+</tr>
+<tr>
+  <td>identifiant du statut</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>code du statut</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>date du statut</td>
+ <td>Non</td>
+</tr>
+</table>
+
+#### Partie Structure
+
+##### Mapping Entité Juridique
+
+<table style="width:100%">
+<tr>
+  <th>Attribut</th>
+  <th>Utilisé pour le cas d'usage SSIAD</th>
+</tr>
+<tr>
+  <td>idNat_Struct</td>
+ <td>Non</td>
+</tr>
+<tr>
+  <td>FINESS de la structure extrait de idNat_Struct</td>
+ <td>Oui</td>
+</tr>
+<tr>
+  <td>raisonSociale</td>
+ <td>Oui</td>
+</tr>
+</table>
+
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
           <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">mos.esante.gouv.fr</a>
         </td>
         <td>
@@ -2167,22 +3188,2360 @@ Type de motorisation associée au véhicule utilisé lors du transport.         
           <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">mos.esante.gouv.fr</a>
         </td>
         <td>
+JDV-J367-type-projet-personnalise-ms&lt;/td&gt;
+  &lt;/tr&gt;
+            <tr>
+
+                <td>modaliteCommunicationProjetPersonnalise : [0..1] Texte</td>
+
+                <td>Modalité de communication ou de transmission du projet personnalisé à l'usager et/ou à son entourage.</td>
+
+  
+          </tr>
+
+            <tr>
+
+                <td>
+              <a name="l5008">​</a>
+accordUsagerProjetPersonnalise : [0..*]               <a href="#classe-accord">Accord</a>
+            </td>
+
+                <td>Accord de l'usager et/ou de son entourage.</td>
+
+  
+          </tr>
+
+&lt;/table&gt;
+
+##### Classe Besoin
+Chaque usager a des attentes et des besoins singuliers, que le professionnel s’emploie à intégrer dans le projet personnalisé en tenant compte de l'évolution de sa situation, de ses aspirations et ses spécificités. Le besoin peut découler des attentes.
+
+          <table style="width:100%">
+
+              <tr>
+
+                  <th>Nom</th>
+
+                  <th>Description</th>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>idBesoin : [1..1] Identifiant</td>
+
+                  <td>
+Identifiant technique du besoin obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature                 <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>
+), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "BESO" et de l'identifiant du besoin dans le DUI (numBesoin) :                 <br/>
+idBesoin = 3+FINESS/identifiantLocalUsagerESSMS-BESO-numBesoin
+              </td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>typeBesoin : [0..1] Code</td>
+
+                  <td>
+Type de besoin.                <br/>
+
+    Jeu(x) de valeur(s) associé(s) :                 <a href="https://mos.esante.gouv.fr/NOS/JDV_J285-Besoins_SERAFIN/FHIR/JDV-J285-Besoins-SERAFIN">JDV-J285-Besoins-SERAFIN</a>
+              </td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>descriptionBesoin : [1..1] Texte</td>
+
+                  <td>Description du besoin.</td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>analyseProfessionnelBesoin : [0..*] Texte</td>
+
+                  <td>Analyse du besoin par un professionnel.</td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>commentaireBesoin : [0..*] Texte</td>
+
+                  <td>Permet de compléter ou éclairer la description du besoin.</td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>pieceJointeBesoin : [0..*] ObjetBinaire</td>
+
+                  <td>Pièce(s) jointe(s)du besoin.</td>
+
+  
+            </tr>
+
+
+          </table>
+
+
+##### Classe Objectif
+L'objectif correspond au résultat à atteindre dans le cadre du projet personnalisé. Il peut être rattaché au besoin.
+
+          <table style="width:100%">
+
+              <tr>
+
+                  <th>Nom</th>
+
+                  <th>Description</th>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>idObjectif : [1..1] Identifiant</td>
+
+                  <td>
+Identifiant technique de l'objectif obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature                 <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>
+), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "OBJE" et de l'identifiant de l'objectif dans le DUI (numObjectif) :                 <br/>
+idObjectif = 3+FINESS/identifiantLocalUsagerESSMS-OBJE-numObjectif
+              </td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>titreObjectif : [1..1] Texte</td>
+
+                  <td>Titre de l'objectif.</td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>descriptionObjectif : [1..1] Texte</td>
+
+                  <td>Description de l'objectif.</td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>domaineObjectif : [0..*] ConceptCode</td>
+
+                  <td>Domaine de l'objectif. La notion de domaine renvoi à des référentiels locaux au sein des structures ESMS.</td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>dateDebutObjectif : [0..1] DateHeure</td>
+
+                  <td>Date de début de l'objectif.</td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>dateFinObjectif : [0..1] DateHeure</td>
+
+                  <td>Date de fin de l'objectif.</td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>
+evaluationObjectif : [0..*]                 <a href="#classe-evaluation">Evaluation</a>
+              </td>
+
+                  <td>Evaluation de l'objectif.</td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>avisUsagerObjectif : [0..1] Texte</td>
+
+                  <td>Avis de l'usager sur l'objectif.</td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>resultatAttenduObjectif : [0..1] Texte</td>
+
+                  <td>Résultat attendu sur l'objectif.</td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>
+                <a name="l5193">​</a>
+statutObjectif : [1..1]                 <a href="#classe-statut">Statut</a>
+              </td>
+
+                  <td>Statut de l'action.</td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>strategieMiseEnOeuvreObjectif : [0..1] Texte</td>
+
+                  <td>Stratégie mise en œuvre de l'objectif.</td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>
+                <a name="l5213">​</a>
+referentObjectif : [0..1]                 <a href="#classe-professionnel">Professionnel</a>
+              </td>
+
+                  <td>Référent de l'objectif.</td>
+
+  
+            </tr>
+
+
+          </table>
+
+
+##### Classe Action
+L'action est un acte mené dans le cadre du projet personnalisé. Elle peut être ratachée à un ou plusieurs objectifs.
+
+          <table style="width:100%">
+
+              <tr>
+
+                  <th>Nom</th>
+
+                  <th>Description</th>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>idAction : [1..1] Identifiant</td>
+
+                  <td>
+Identifiant technique de l'action obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature                 <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>
+), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "ACTI" et de l'identifiant de l'action dans le DUI (numAction) :                 <br/>
+idAction = 3+FINESS/identifiantLocalUsagerESSMS-ACTI-numAction
+              </td>
+
+  
+            </tr>
+ 
+              <tr>
+
+                  <td>titreAction : [1..1] Texte</td>
+
+                  <td>Titre de l'action à mener.</td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>descriptionAction : [0..1] Texte</td>
+
+                  <td>Description de l'action à mener.</td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>dateDebutAction : [0..1] DateHeure</td>
+
+                  <td>Date de début de l'action à mener.</td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>dateFinAction : [0..1] DateHeure</td>
+
+                  <td>Date de fin de l'action à mener.</td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>
+evaluationAction : [0..*]                 <a href="#classe-evaluation">Evaluation</a>
+              </td>
+
+                  <td>Evaluation de l'action.</td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>avisUsagerAction : [0..1] Texte</td>
+
+                  <td>Avis de l'usager sur l'action.</td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>resultatAttenduAction : [0..1] Texte</td>
+
+                  <td>Résultat attendu de l'action.</td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>
+                <a name="l5315">​</a>
+statutAction : [1..1]                 <a href="#classe-statut">Statut</a>
+              </td>
+
+                  <td>Statut de l'action.</td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>
+                <a name="l5326">​</a>
+referentAction : [0..1]                 <a href="#classe-professionnel">Professionnel</a>
+              </td>
+
+                  <td>Référent de l'action.</td>
+
+  
+            </tr>
+
+                <tr>
+
+                <td>pieceJointeAction : [0..*] ObjetBinaire</td>
+
+                <td>Pièce(s) jointe(s) de l'action.</td>
+
+
+            </tr>
+
+
+          </table>
+
+
+##### Classe MoyenRessource
+Le moyen ou la ressource sert à réaliser le projet personnalisé. Le moyen ou la ressource peut être rattaché à une action.
+
+          <table style="width:100%">
+
+              <tr>
+
+                  <th>Nom</th>
+
+                  <th>Description</th>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>idMoyenRessource : [1..1] Identifiant</td>
+
+                  <td>
+Identifiant technique du moyen ou de la ressource obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature                 <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>
+), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "MORE" et de l'identifiant du moyen ou de la ressource dans le DUI (numMoyenRessource) :                 <br/>
+idMoyenRessource = 3+FINESS/identifiantLocalUsagerESSMS-MORE-numMoyenRessource
+              </td>
+
+  
+            </tr>
+ 
+              <tr>
+
+                  <td>titreMoyenRessource : [1..1] Texte </td>
+
+                  <td>Titre du moyen ou de la ressource à utiliser.</td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>descriptionMoyenRessource : [0..1] Texte </td>
+
+                  <td>Description du moyen ou de la ressource.</td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>typeMoyenRessource : [0..1] Texte </td>
+
+                  <td>
+Type du moyen ou de la ressource.                <br/>
+Distinction entre moyen et ressource si nécessaire.
+              </td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>dateDebutMoyenRessource : [0..1] DateHeure</td>
+
+                  <td>Date de début du moyen ou de la ressource.</td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>dateFinMoyenRessource : [0..1] DateHeure</td>
+
+                  <td>Date de fin du moyen ou de la ressource.</td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>
+evaluationMoyenRessource : [0..1]                 <a href="#classe-evaluation">Evaluation</a>
+              </td>
+
+                  <td>Evaluation du moyen ou de la ressource.</td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>pieceJointeMoyenRessource : [0..*] ObjetBinaire</td>
+
+                  <td>Pièce(s) jointe(s) du moyen ou de la ressource.</td>
+
+  
+            </tr>
+
+
+          </table>
+
+
+##### Classe PrestationProjetPersonnalise
+La prestation désigne ce qui doit être accompli ou fourni à l'usager.Elle peut être rattachée à une action.
+
+          <table style="width:100%">
+
+              <tr>
+
+                  <th>Nom</th>
+
+                  <th>Description</th>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>idPrestation : [1..1] Identifiant</td>
+
+                  <td>
+Identifiant technique de la prestation projet personalisé obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature                 <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>
+), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "PRES" et de l'identifiant de la prestation projet personalisé dans le DUI (numPrestation) :                 <br/>
+idPrestation = 3+FINESS/identifiantLocalUsagerESSMS-PRES-numPrestation
+              </td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>titrePrestation : [1..1] Texte</td>
+
+                  <td>Titre de la prestation à utiliser.</td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>descriptionPrestation : [0..1] Texte</td>
+
+                  <td>Description de la prestation.</td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>typePrestation : [0..*] Code</td>
+
+                  <td>
+Type de la prestation.                <br/>
+
+    Jeu(x) de valeur(s) associé(s) :                 <a href="https://mos.esante.gouv.fr/NOS/JDV_J283-PrestationsIndirects_SERAFIN/FHIR/JDV-J283-PrestationsIndirects-SERAFIN">JDV-J283-PrestationsIndirects-SERAFIN</a>
+,                 <a href="https://mos.esante.gouv.fr/NOS/JDV_J284-PrestationsDirects_SERAFIN/FHIR/JDV-J284-PrestationsDirects-SERAFIN">JDV-J284-PrestationsDirects-SERAFIN</a>
+
+    
+              </td>
+
+  
+            </tr>
+
+            <tr>
+
+                <td>dateDebutPrestation : [0..1] DateHeure</td>
+
+                <td>Date de début de la prestation.</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>dateFinPrestation : [0..1] DateHeure</td>
+
+                <td>Date de fin de la prestation.</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>
+evaluationPrestation : [0..1]                 <a href="#classe-evaluation">Evaluation</a>
+              </td>
+
+                <td>Evaluation de la prestation.</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>
+                <a name="l5529">​</a>
+statutPrestation : [1..1]                 <a href="#classe-statut">Statut</a>
+              </td>
+
+                <td>Statut de la prestation.</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>pieceJointePrestation : [0..*] ObjetBinaire</td>
+
+                <td>Pièce(s) jointe(s) de la prestation.</td>
+
+
+            </tr>
+
+
+          </table>
+ 
+
+##### Classe Attente
+L'attente de l'usager représente les souhaits, les désirs et les envies dans tous les domaines de sa vie. Elle peut être exprimée aussi bien par l'usager ainsi que par son entourage ou les professionnels du médico-social.
+
+          <table style="width:100%">
+
+              <tr>
+
+                  <th>Nom</th>
+
+                  <th>Description</th>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>idAttente : [1..1] Identifiant</td>
+
+                  <td>
+Identifiant technique de l'attente obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature                 <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>
+), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "ATTE" et de l'identifiant de l'attente dans le DUI (numAttente) :                 <br/>
+idAttente = 3+FINESS/identifiantLocalUsagerESSMS-ATTE-numAttente
+              </td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>origineAttente : [1..1] Texte</td>
+
+                  <td>Acteur (personne physique ou personne morale) qui a un lien avec l'usager ou l'usager elle-même qui définit son attente.</td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>descriptionAttente : [1..1] Texte</td>
+
+                  <td>Description de l'attente, des souhaits de l'acteur pour l'usager.</td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>commentaireAttente : [0..*] Texte</td>
+
+                  <td>Permet de compléter ou éclairer la description de l'attente.</td>
+
+  
+            </tr>
+
+
+          </table>
+ 
+
+##### Classe Bilan
+Un bilan est une analyse réalisée à la conclusion du projet personnalisé ou à une étape intermédiaire.
+
+          <table style="width:100%">
+
+              <tr>
+
+                  <th>Nom</th>
+
+                  <th>Description</th>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>idBilan : [1..1] Identifiant</td>
+
+                  <td>
+Identifiant technique du bilan obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature                 <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>
+), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "BILA" et de l'identifiant du bilan dans le DUI (numBilan) :                 <br/>
+idBilan = 3+FINESS/identifiantLocalUsagerESSMS-BILA-numBilan
+              </td>
+
+ 
+            </tr>
+
+             <tr>
+
+                  <td>dateBilan : [1..1] DateHeure</td>
+
+                  <td>Date et heure du bilan.</td>
+
+ 
+            </tr>
+
+             <tr>
+
+                  <td>categorieBilan : [0..1] Code</td>
+
+                  <td>
+Catégorie du bilan.                <br/>
+
+    Jeu(x) de valeur(s) associé(s) :                 <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j366-statut-bilan-projet-personnalise-ms">JdvJ366StatutBilanProjetPersonnaliseMs</a>
+              </td>
+
+ 
+            </tr>
+
+              <tr>
+
+                  <td>perimetreBilan : [0..1] Texte</td>
+
+                  <td>Périmètre du bilan.</td>
+
+ 
+            </tr>
+
+             <tr>
+
+                  <td>problematiqueGlobaleUsager : [0..1] Texte</td>
+
+                  <td>Problématique liée à l'usager.</td>
+
+ 
+            </tr>
+
+             <tr>
+
+                  <td>synthesePreparationBilan : [0..*] Texte</td>
+
+                  <td>Préparation du bilan.</td>
+
+ 
+            </tr>
+
+             <tr>
+
+                  <td>corps : [1..1] Texte</td>
+
+                  <td>Corps de la préparation.</td>
+
+ 
+            </tr>
+
+             <tr>
+
+                  <td>auteur : [1..1] Texte</td>
+
+                  <td>Auteur de la préparation.</td>
+
+ 
+            </tr>
+
+             <tr>
+
+                  <td>syntheseBilan : [0..1] Texte</td>
+
+                  <td>Synthèse du bilan.</td>
+
+ 
+            </tr>
+
+             <tr>
+
+                  <td>inviteBilan : [0..1] Texte</td>
+
+                  <td>Liste les personnes invitées à participer au bilan. Il peut s'agir de professionnels du médico-social ou de l'entourage familiale de l'usager.</td>
+
+ 
+            </tr>
+
+             <tr>
+
+                  <td>dateProchainBilan : [0..1] DateHeure</td>
+
+                  <td>Date du prochain bilan.</td>
+
+ 
+            </tr>
+
+             <tr>
+
+                  <td>pieceJointeBilan : [0..*] ObjetBinaire</td>
+
+                  <td>Pièce(s) jointe(s) au bilan.</td>
+
+ 
+            </tr>
+
+
+          </table>
+    
+
+
+### Partie Coordination des acteurs
+
+#### Evènement de l'agenda
+
+          <div style="text-align:center;">
+            <svg xmlns="http://www.w3.org/2000/svg" contentStyleType="text/css" viewBox="0 0 557 976" zoomAndPan="magnify" data-diagram-type="CLASS" preserveAspectRatio="none" width="557px" xmlns:xlink="http://www.w3.org/1999/xlink" style="width:557px;height:976px;background:#FFFFFF;" version="1.1" height="976px">
+              <defs></defs>
+              <g>
+                <!-- class Usager -->
+                <g data-entity="Usager" id="entity_Usager" data-uid="ent0002" class="entity" data-source-line="4">
+                  <rect rx="2.5" ry="2.5" width="81.376" x="7" y="452" style="stroke:#181818;stroke-width:0.5;" fill="#FFB6C1" height="40"></rect>
+                  <ellipse cx="22" cy="468" rx="11" ry="11" style="stroke:#181818;stroke-width:1;" fill="#ADD1B2"></ellipse>
+                  <path d="M24.9688,473.6406 Q24.3906,473.9375 23.75,474.0781 Q23.1094,474.2344 22.4063,474.2344 Q19.9063,474.2344 18.5781,472.5938 Q17.2656,470.9375 17.2656,467.8125 Q17.2656,464.6875 18.5781,463.0313 Q19.9063,461.375 22.4063,461.375 Q23.1094,461.375 23.75,461.5313 Q24.4063,461.6875 24.9688,461.9844 L24.9688,464.7031 Q24.3438,464.125 23.75,463.8594 Q23.1563,463.5781 22.5313,463.5781 Q21.1875,463.5781 20.5,464.6563 Q19.8125,465.7188 19.8125,467.8125 Q19.8125,469.9063 20.5,470.9844 Q21.1875,472.0469 22.5313,472.0469 Q23.1563,472.0469 23.75,471.7813 Q24.3438,471.5 24.9688,470.9219 L24.9688,473.6406 Z " fill="#000000"></path>
+                  <text lengthAdjust="spacing" x="36" font-size="14" textLength="49.376" y="472.8467" font-family="sans-serif" fill="#000000">Usager</text>
+                  <line y1="484" x1="8" y2="484" style="stroke:#181818;stroke-width:0.5;" x2="87.376"></line>
+                </g>
+                <!-- class TransportProfessionnel -->
+                <g data-entity="TransportProfessionnel" id="entity_TransportProfessionnel" data-uid="ent0003" class="entity" data-source-line="6">
+                  <rect rx="2.5" ry="2.5" width="193.3486" x="52" y="327.5" style="stroke:#181818;stroke-width:0.5;" fill="#D3D3D3" height="40"></rect>
+                  <ellipse cx="67" cy="343.5" rx="11" ry="11" style="stroke:#181818;stroke-width:1;" fill="#ADD1B2"></ellipse>
+                  <path d="M69.9688,349.1406 Q69.3906,349.4375 68.75,349.5781 Q68.1094,349.7344 67.4063,349.7344 Q64.9063,349.7344 63.5781,348.0938 Q62.2656,346.4375 62.2656,343.3125 Q62.2656,340.1875 63.5781,338.5313 Q64.9063,336.875 67.4063,336.875 Q68.1094,336.875 68.75,337.0313 Q69.4063,337.1875 69.9688,337.4844 L69.9688,340.2031 Q69.3438,339.625 68.75,339.3594 Q68.1563,339.0781 67.5313,339.0781 Q66.1875,339.0781 65.5,340.1563 Q64.8125,341.2188 64.8125,343.3125 Q64.8125,345.4063 65.5,346.4844 Q66.1875,347.5469 67.5313,347.5469 Q68.1563,347.5469 68.75,347.2813 Q69.3438,347 69.9688,346.4219 L69.9688,349.1406 Z " fill="#000000"></path>
+                  <text lengthAdjust="spacing" x="81" font-size="14" textLength="161.3486" y="348.3467" font-family="sans-serif" fill="#000000">TransportProfessionnel</text>
+                  <line y1="359.5" x1="53" y2="359.5" style="stroke:#181818;stroke-width:0.5;" x2="244.3486"></line>
+                </g>
+                <!-- class Evaluation -->
+                <g data-entity="Evaluation" id="entity_Evaluation" data-uid="ent0004" class="entity" data-source-line="8">
+                  <rect rx="2.5" ry="2.5" width="105.8691" x="70.5" y="929" style="stroke:#181818;stroke-width:0.5;" fill="#FFFFE0" height="40"></rect>
+                  <ellipse cx="85.5" cy="945" rx="11" ry="11" style="stroke:#181818;stroke-width:1;" fill="#ADD1B2"></ellipse>
+                  <path d="M88.4688,950.6406 Q87.8906,950.9375 87.25,951.0781 Q86.6094,951.2344 85.9063,951.2344 Q83.4063,951.2344 82.0781,949.5938 Q80.7656,947.9375 80.7656,944.8125 Q80.7656,941.6875 82.0781,940.0313 Q83.4063,938.375 85.9063,938.375 Q86.6094,938.375 87.25,938.5313 Q87.9063,938.6875 88.4688,938.9844 L88.4688,941.7031 Q87.8438,941.125 87.25,940.8594 Q86.6563,940.5781 86.0313,940.5781 Q84.6875,940.5781 84,941.6563 Q83.3125,942.7188 83.3125,944.8125 Q83.3125,946.9063 84,947.9844 Q84.6875,949.0469 86.0313,949.0469 Q86.6563,949.0469 87.25,948.7813 Q87.8438,948.5 88.4688,947.9219 L88.4688,950.6406 Z " fill="#000000"></path>
+                  <text lengthAdjust="spacing" x="99.5" font-size="14" textLength="73.8691" y="949.8467" font-family="sans-serif" fill="#000000">Evaluation</text>
+                  <line y1="961" x1="71.5" y2="961" style="stroke:#181818;stroke-width:0.5;" x2="175.3691"></line>
+                </g>
+                <!-- class Professionnel -->
+                <g data-entity="Professionnel" id="entity_Professionnel" data-uid="ent0005" class="entity" data-source-line="10">
+                  <rect rx="2.5" ry="2.5" width="125.5977" x="123.5" y="452" style="stroke:#181818;stroke-width:0.5;" fill="#D3D3D3" height="40"></rect>
+                  <ellipse cx="138.5" cy="468" rx="11" ry="11" style="stroke:#181818;stroke-width:1;" fill="#ADD1B2"></ellipse>
+                  <path d="M141.4688,473.6406 Q140.8906,473.9375 140.25,474.0781 Q139.6094,474.2344 138.9063,474.2344 Q136.4063,474.2344 135.0781,472.5938 Q133.7656,470.9375 133.7656,467.8125 Q133.7656,464.6875 135.0781,463.0313 Q136.4063,461.375 138.9063,461.375 Q139.6094,461.375 140.25,461.5313 Q140.9063,461.6875 141.4688,461.9844 L141.4688,464.7031 Q140.8438,464.125 140.25,463.8594 Q139.6563,463.5781 139.0313,463.5781 Q137.6875,463.5781 137,464.6563 Q136.3125,465.7188 136.3125,467.8125 Q136.3125,469.9063 137,470.9844 Q137.6875,472.0469 139.0313,472.0469 Q139.6563,472.0469 140.25,471.7813 Q140.8438,471.5 141.4688,470.9219 L141.4688,473.6406 Z " fill="#000000"></path>
+                  <text lengthAdjust="spacing" x="152.5" font-size="14" textLength="93.5977" y="472.8467" font-family="sans-serif" fill="#000000">Professionnel</text>
+                  <line y1="484" x1="124.5" y2="484" style="stroke:#181818;stroke-width:0.5;" x2="248.0977"></line>
+                </g>
+                <!-- class Statut -->
+                <g data-entity="Statut" id="entity_Statut" data-uid="ent0006" class="entity" data-source-line="12">
+                  <rect rx="2.5" ry="2.5" width="74.8066" x="212" y="929" style="stroke:#181818;stroke-width:0.5;" fill="#D3D3D3" height="40"></rect>
+                  <ellipse cx="227" cy="945" rx="11" ry="11" style="stroke:#181818;stroke-width:1;" fill="#ADD1B2"></ellipse>
+                  <path d="M229.9688,950.6406 Q229.3906,950.9375 228.75,951.0781 Q228.1094,951.2344 227.4063,951.2344 Q224.9063,951.2344 223.5781,949.5938 Q222.2656,947.9375 222.2656,944.8125 Q222.2656,941.6875 223.5781,940.0313 Q224.9063,938.375 227.4063,938.375 Q228.1094,938.375 228.75,938.5313 Q229.4063,938.6875 229.9688,938.9844 L229.9688,941.7031 Q229.3438,941.125 228.75,940.8594 Q228.1563,940.5781 227.5313,940.5781 Q226.1875,940.5781 225.5,941.6563 Q224.8125,942.7188 224.8125,944.8125 Q224.8125,946.9063 225.5,947.9844 Q226.1875,949.0469 227.5313,949.0469 Q228.1563,949.0469 228.75,948.7813 Q229.3438,948.5 229.9688,947.9219 L229.9688,950.6406 Z " fill="#000000"></path>
+                  <text lengthAdjust="spacing" x="241" font-size="14" textLength="42.8066" y="949.8467" font-family="sans-serif" fill="#000000">Statut</text>
+                  <line y1="961" x1="213" y2="961" style="stroke:#181818;stroke-width:0.5;" x2="285.8066"></line>
+                </g>
+                <!-- class Transport -->
+                <g data-entity="Transport" id="entity_Transport" data-uid="ent0007" class="entity" data-source-line="14">
+                  <rect rx="2.5" ry="2.5" width="285.5127" x="138.5" y="7" style="stroke:#181818;stroke-width:0.5;" fill="#D3D3D3" height="235.5625"></rect>
+                  <ellipse cx="243.1309" cy="23" rx="11" ry="11" style="stroke:#181818;stroke-width:1;" fill="#ADD1B2"></ellipse>
+                  <path d="M246.0996,28.6406 Q245.5215,28.9375 244.8809,29.0781 Q244.2402,29.2344 243.5371,29.2344 Q241.0371,29.2344 239.709,27.5938 Q238.3965,25.9375 238.3965,22.8125 Q238.3965,19.6875 239.709,18.0313 Q241.0371,16.375 243.5371,16.375 Q244.2402,16.375 244.8809,16.5313 Q245.5371,16.6875 246.0996,16.9844 L246.0996,19.7031 Q245.4746,19.125 244.8809,18.8594 Q244.2871,18.5781 243.6621,18.5781 Q242.3184,18.5781 241.6309,19.6563 Q240.9434,20.7188 240.9434,22.8125 Q240.9434,24.9063 241.6309,25.9844 Q242.3184,27.0469 243.6621,27.0469 Q244.2871,27.0469 244.8809,26.7813 Q245.4746,26.5 246.0996,25.9219 L246.0996,28.6406 Z " fill="#000000"></path>
+                  <text lengthAdjust="spacing" x="263.6309" font-size="14" textLength="67.751" y="27.8467" font-family="sans-serif" fill="#000000">Transport</text>
+                  <line y1="39" x1="139.5" y2="39" style="stroke:#181818;stroke-width:0.5;" x2="423.0127"></line>
+                  <text lengthAdjust="spacing" x="144.5" font-size="14" textLength="181.002" y="55.9951" font-family="sans-serif" fill="#000000">idTrajet : Identifiant [1..1]</text>
+                  <text lengthAdjust="spacing" x="144.5" font-size="14" textLength="190.5723" y="72.292" font-family="sans-serif" fill="#000000">typeTransport : Code [0..1]</text>
+                  <text lengthAdjust="spacing" x="144.5" font-size="14" textLength="209.8564" y="88.5889" font-family="sans-serif" fill="#000000">typeMotorisation : Code [0..1]</text>
+                  <text lengthAdjust="spacing" x="144.5" font-size="14" textLength="246.6338" y="104.8857" font-family="sans-serif" fill="#000000">transporteur : EntiteJuridique [0..1]</text>
+                  <text lengthAdjust="spacing" x="144.5" font-size="14" textLength="214.8809" y="121.1826" font-family="sans-serif" fill="#000000">adresseDepart : Adresse [0..1]</text>
+                  <text lengthAdjust="spacing" x="144.5" font-size="14" textLength="247.1123" y="137.4795" font-family="sans-serif" fill="#000000">adresseDestination : Adresse [0..1]</text>
+                  <text lengthAdjust="spacing" x="144.5" font-size="14" textLength="248.2744" y="153.7764" font-family="sans-serif" fill="#000000">budgetPrevisionnel : Montant [0..1]</text>
+                  <text lengthAdjust="spacing" x="144.5" font-size="14" textLength="194.1338" y="170.0732" font-family="sans-serif" fill="#000000">budgetReel : Montant [0..1]</text>
+                  <text lengthAdjust="spacing" x="144.5" font-size="14" textLength="166.2568" y="186.3701" font-family="sans-serif" fill="#000000">distance : Mesure [0..1]</text>
+                  <text lengthAdjust="spacing" x="144.5" font-size="14" textLength="218.2988" y="202.667" font-family="sans-serif" fill="#000000">dureeTheorique : Mesure [0..1]</text>
+                  <text lengthAdjust="spacing" x="144.5" font-size="14" textLength="273.5127" y="218.9639" font-family="sans-serif" fill="#000000">dateDebutTransport : DateHeure [1..1]</text>
+                  <text lengthAdjust="spacing" x="144.5" font-size="14" textLength="251.6855" y="235.2607" font-family="sans-serif" fill="#000000">dateFinTransport : DateHeure [1..1]</text>
+                </g>
+                <!-- class TransportUsager -->
+                <g data-entity="TransportUsager" id="entity_TransportUsager" data-uid="ent0008" class="entity" data-source-line="29">
+                  <rect rx="2.5" ry="2.5" width="270.7539" x="280" y="303" style="stroke:#181818;stroke-width:0.5;" fill="#D3D3D3" height="88.8906"></rect>
+                  <ellipse cx="352.5635" cy="319" rx="11" ry="11" style="stroke:#181818;stroke-width:1;" fill="#ADD1B2"></ellipse>
+                  <path d="M355.5322,324.6406 Q354.9541,324.9375 354.3135,325.0781 Q353.6729,325.2344 352.9697,325.2344 Q350.4697,325.2344 349.1416,323.5938 Q347.8291,321.9375 347.8291,318.8125 Q347.8291,315.6875 349.1416,314.0313 Q350.4697,312.375 352.9697,312.375 Q353.6729,312.375 354.3135,312.5313 Q354.9697,312.6875 355.5322,312.9844 L355.5322,315.7031 Q354.9072,315.125 354.3135,314.8594 Q353.7197,314.5781 353.0947,314.5781 Q351.751,314.5781 351.0635,315.6563 Q350.376,316.7188 350.376,318.8125 Q350.376,320.9063 351.0635,321.9844 Q351.751,323.0469 353.0947,323.0469 Q353.7197,323.0469 354.3135,322.7813 Q354.9072,322.5 355.5322,321.9219 L355.5322,324.6406 Z " fill="#000000"></path>
+                  <text lengthAdjust="spacing" x="373.0635" font-size="14" textLength="117.127" y="323.8467" font-family="sans-serif" fill="#000000">TransportUsager</text>
+                  <line y1="335" x1="281" y2="335" style="stroke:#181818;stroke-width:0.5;" x2="549.7539"></line>
+                  <text lengthAdjust="spacing" x="286" font-size="14" textLength="253.1211" y="351.9951" font-family="sans-serif" fill="#000000">accompagnement : Indicateur [0..1]</text>
+                  <text lengthAdjust="spacing" x="286" font-size="14" textLength="258.7539" y="368.292" font-family="sans-serif" fill="#000000">asepsieRigoureuse : Indicateur [0..1]</text>
+                  <text lengthAdjust="spacing" x="286" font-size="14" textLength="205.4814" y="384.5889" font-family="sans-serif" fill="#000000">natureTransport : Code [0..1]</text>
+                </g>
+                <!-- class Evenement -->
+                <g data-entity="Evenement" id="entity_Evenement" data-uid="ent0009" class="entity" data-source-line="35">
+                  <rect rx="2.5" ry="2.5" width="340.2959" x="16.5" y="552" style="stroke:#181818;stroke-width:0.5;" fill="#D3D3D3" height="317.0469"></rect>
+                  <ellipse cx="142.4761" cy="568" rx="11" ry="11" style="stroke:#181818;stroke-width:1;" fill="#ADD1B2"></ellipse>
+                  <path d="M145.4448,573.6406 Q144.8667,573.9375 144.2261,574.0781 Q143.5854,574.2344 142.8823,574.2344 Q140.3823,574.2344 139.0542,572.5938 Q137.7417,570.9375 137.7417,567.8125 Q137.7417,564.6875 139.0542,563.0313 Q140.3823,561.375 142.8823,561.375 Q143.5854,561.375 144.2261,561.5313 Q144.8823,561.6875 145.4448,561.9844 L145.4448,564.7031 Q144.8198,564.125 144.2261,563.8594 Q143.6323,563.5781 143.0073,563.5781 Q141.6636,563.5781 140.9761,564.6563 Q140.2886,565.7188 140.2886,567.8125 Q140.2886,569.9063 140.9761,570.9844 Q141.6636,572.0469 143.0073,572.0469 Q143.6323,572.0469 144.2261,571.7813 Q144.8198,571.5 145.4448,570.9219 L145.4448,573.6406 Z " fill="#000000"></path>
+                  <text lengthAdjust="spacing" x="162.9761" font-size="14" textLength="79.8438" y="572.8467" font-family="sans-serif" fill="#000000">Evenement</text>
+                  <line y1="584" x1="17.5" y2="584" style="stroke:#181818;stroke-width:0.5;" x2="355.7959"></line>
+                  <text lengthAdjust="spacing" x="22.5" font-size="14" textLength="219.9668" y="600.9951" font-family="sans-serif" fill="#000000">idEvenement : Identifiant [1..1]</text>
+                  <text lengthAdjust="spacing" x="22.5" font-size="14" textLength="200.7578" y="617.292" font-family="sans-serif" fill="#000000">typeEvenement : Code [0..*]</text>
+                  <text lengthAdjust="spacing" x="22.5" font-size="14" textLength="216.7744" y="633.5889" font-family="sans-serif" fill="#000000">libelleEvenement : Texte [0..1]</text>
+                  <text lengthAdjust="spacing" x="22.5" font-size="14" textLength="266.5469" y="649.8857" font-family="sans-serif" fill="#000000">commentaireEvenement : Texte [0..*]</text>
+                  <text lengthAdjust="spacing" x="22.5" font-size="14" textLength="272.9658" y="666.1826" font-family="sans-serif" fill="#000000">compteRenduEvenement : Texte [0..1]</text>
+                  <text lengthAdjust="spacing" x="22.5" font-size="14" textLength="298.0059" y="682.4795" font-family="sans-serif" fill="#000000">pieceJointeEvenement : ObjetBinaire [0..*]</text>
+                  <text lengthAdjust="spacing" x="22.5" font-size="14" textLength="189.9912" y="698.7764" font-family="sans-serif" fill="#000000">lieuEvenement : Lieu [0..1]</text>
+                  <text lengthAdjust="spacing" x="22.5" font-size="14" textLength="290.7461" y="715.0732" font-family="sans-serif" fill="#000000">structureEnCharge : EntiteJuridique [0..1]</text>
+                  <text lengthAdjust="spacing" x="22.5" font-size="14" textLength="285.6055" y="731.3701" font-family="sans-serif" fill="#000000">dateDebutEvenement : DateHeure [1..1]</text>
+                  <text lengthAdjust="spacing" x="22.5" font-size="14" textLength="263.7783" y="747.667" font-family="sans-serif" fill="#000000">dateFinEvenement : DateHeure [1..1]</text>
+                  <text lengthAdjust="spacing" x="22.5" font-size="14" textLength="309.2373" y="763.9639" font-family="sans-serif" fill="#000000">evenementHorsPrestation : Indicateur [0..1]</text>
+                  <text lengthAdjust="spacing" x="22.5" font-size="14" textLength="211.6133" y="780.2607" font-family="sans-serif" fill="#000000">motifEvenement : Texte [0..1]</text>
+                  <text lengthAdjust="spacing" x="22.5" font-size="14" textLength="227.5752" y="796.5576" font-family="sans-serif" fill="#000000">usagerPresent : Indicateur [0..1]</text>
+                  <text lengthAdjust="spacing" x="22.5" font-size="14" textLength="165.6211" y="812.8545" font-family="sans-serif" fill="#000000">repas : Indicateur [0..1]</text>
+                  <text lengthAdjust="spacing" x="22.5" font-size="14" textLength="245.2734" y="829.1514" font-family="sans-serif" fill="#000000">typeRessourceUtilisee : Code [0..*]</text>
+                  <text lengthAdjust="spacing" x="22.5" font-size="14" textLength="287.6836" y="845.4482" font-family="sans-serif" fill="#000000">detailTypeRessourceUtilisee : Code [0..*]</text>
+                  <text lengthAdjust="spacing" x="22.5" font-size="14" textLength="328.2959" y="861.7451" font-family="sans-serif" fill="#000000">dateModificationEvenement : DateHeure [0..1]</text>
+                </g>
+                <!-- link Usager to Evenement -->
+                <g data-entity-2="Evenement" data-entity-1="Usager" id="link_Usager_Evenement" data-uid="lnk10" class="link" data-source-line="55">
+                  <path codeLine="55" d="M58.87,492.35 C67.37,506.81 79.87,528.08 93.77,551.73" style="stroke:#181818;stroke-width:1;" id="Usager-Evenement" fill="none"></path>
+                  <text lengthAdjust="spacing" x="52.8366" font-size="13" textLength="8.271" y="511.9194" font-family="sans-serif" fill="#000000">1</text>
+                  <text lengthAdjust="spacing" x="65.7151" font-size="13" textLength="23.0356" y="540.7453" font-family="sans-serif" fill="#000000">0..*</text>
+                </g>
+                <!-- link Professionnel to Evenement -->
+                <g data-entity-2="Evenement" data-entity-1="Professionnel" id="link_Professionnel_Evenement" data-uid="lnk11" class="link" data-source-line="56">
+                  <path codeLine="56" d="M186.5,492.35 C186.5,506.81 186.5,528.08 186.5,551.73" style="stroke:#181818;stroke-width:1;" id="Professionnel-Evenement" fill="none"></path>
+                  <text lengthAdjust="spacing" x="160.4682" font-size="13" textLength="23.0356" y="511.9194" font-family="sans-serif" fill="#000000">0..*</text>
+                  <text lengthAdjust="spacing" x="162.9367" font-size="13" textLength="23.0356" y="540.7453" font-family="sans-serif" fill="#000000">0..*</text>
+                </g>
+                <!-- reverse link Transport to TransportProfessionnel -->
+                <g data-entity-2="TransportProfessionnel" data-entity-1="Transport" id="link_Transport_TransportProfessionnel" data-uid="lnk12" class="link" data-source-line="57">
+                  <path codeLine="57" d="M201.6138,258.4437 C181.8438,291.2237 171.85,307.78 160.08,327.31" style="stroke:#181818;stroke-width:1;" id="Transport-backto-TransportProfessionnel" fill="none"></path>
+                  <polygon style="stroke:#181818;stroke-width:1;" fill="none" points="210.91,243.03,196.4759,255.345,206.7517,261.5424,210.91,243.03"></polygon>
+                </g>
+                <!-- reverse link Transport to TransportUsager -->
+                <g data-entity-2="TransportUsager" data-entity-1="Transport" id="link_Transport_TransportUsager" data-uid="lnk13" class="link" data-source-line="58">
+                  <path codeLine="58" d="M361.9688,258.4118 C374.9388,279.7518 378.35,285.36 388.95,302.81" style="stroke:#181818;stroke-width:1;" id="Transport-backto-TransportUsager" fill="none"></path>
+                  <polygon style="stroke:#181818;stroke-width:1;" fill="none" points="352.62,243.03,356.8415,261.5281,367.096,255.2956,352.62,243.03"></polygon>
+                </g>
+                <!-- link TransportUsager to Evenement -->
+                <g data-entity-2="Evenement" data-entity-1="TransportUsager" id="link_TransportUsager_Evenement" data-uid="lnk14" class="link" data-source-line="59">
+                  <path codeLine="59" d="M387.88,392.05 C362.6,431.9 323.61,493.35 286.66,551.61" style="stroke:#181818;stroke-width:1;" id="TransportUsager-Evenement" fill="none"></path>
+                  <text lengthAdjust="spacing" x="358.9113" font-size="13" textLength="23.0356" y="412.1056" font-family="sans-serif" fill="#000000">0..*</text>
+                  <text lengthAdjust="spacing" x="283.0167" font-size="13" textLength="8.271" y="541.1393" font-family="sans-serif" fill="#000000">1</text>
+                </g>
+                <!-- link TransportProfessionnel to Professionnel -->
+                <g data-entity-2="Professionnel" data-entity-1="TransportProfessionnel" id="link_TransportProfessionnel_Professionnel" data-uid="lnk15" class="link" data-source-line="60">
+                  <path codeLine="60" d="M154.44,367.64 C161.58,390.65 173.48,429.04 180.6,451.99" style="stroke:#181818;stroke-width:1;" id="TransportProfessionnel-Professionnel" fill="none"></path>
+                  <text lengthAdjust="spacing" x="129.8322" font-size="13" textLength="23.0356" y="387.4993" font-family="sans-serif" fill="#000000">0..*</text>
+                  <text lengthAdjust="spacing" x="169.7908" font-size="13" textLength="8.271" y="440.9953" font-family="sans-serif" fill="#000000">1</text>
+                </g>
+                <!-- link Evenement to Evaluation -->
+                <g data-entity-2="Evaluation" data-entity-1="Evenement" id="link_Evenement_Evaluation" data-uid="lnk16" class="link" data-source-line="61">
+                  <path codeLine="61" d="M144.48,869.25 C138.16,892.97 132.48,914.3 128.63,928.76" style="stroke:#181818;stroke-width:1;" id="Evenement-Evaluation" fill="none"></path>
+                  <text lengthAdjust="spacing" x="117.8758" font-size="13" textLength="24.8066" y="889.3717" font-family="sans-serif" fill="#000000">0..1</text>
+                  <text lengthAdjust="spacing" x="102.8296" font-size="13" textLength="24.8066" y="918.0437" font-family="sans-serif" fill="#000000">0..1</text>
+                </g>
+                <!-- link Evenement to Statut -->
+                <g data-entity-2="Statut" data-entity-1="Evenement" id="link_Evenement_Statut" data-uid="lnk17" class="link" data-source-line="62">
+                  <path codeLine="62" d="M228.52,869.25 C234.84,892.97 240.52,914.3 244.37,928.76" style="stroke:#181818;stroke-width:1;" id="Evenement-Statut" fill="none"></path>
+                  <text lengthAdjust="spacing" x="222.361" font-size="13" textLength="8.271" y="889.3717" font-family="sans-serif" fill="#000000">1</text>
+                  <text lengthAdjust="spacing" x="216.725" font-size="13" textLength="23.0356" y="918.0437" font-family="sans-serif" fill="#000000">0..*</text>
+                </g>
+              </g>
+            </svg>
+          </div>
+
+
+##### Classe Evenement
+
+Evènements liés à la prise en charge de l’usager dans une structure ESSMS.
+
+Les classes EntiteJuridique, Lieu et Professionnel sont issues du MOS et sont profilées pour ce volet.
+
+          <table style="width:100%">
+
+              <tr>
+
+                  <th>Nom</th>
+
+                  <th>Description</th>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>idEvenement : [1..1] Identifiant</td>
+
+                  <td>
+Identifiant technique de l’évènement obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature                 <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>
+), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de trois caractères "EVN" et du numéro de l’évènement dans le DUI (numEvenement) :                <br/>
+ idEvenement = 3+FINESS/identifiantLocalUsagerESSMS-EVN-numEvenement
+              </td>
+
+  
+            </tr>
+
+               <tr>
+
+                  <td>typeEvenement : [0..*] Code ou Texte</td>
+
+                  <td>
+Type de l’évènement.                <br/>
+
+    Cas d’usage SSIAD : le type de l'évènement est issu                 <br/>
+
+                    <ul>
+
+        - d'un code issu du jeu de valeur associé : JDV_TypeEvenementSSIAD_CISIS avec l'OID 1.2.250.1.213.1.1.5.811 publié sur                   <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a>
+                  <br/>
+
+        - peut contenir un code issu de la terminologie Serafin correspondant aux familles 2-PrestationDirecte et 3-PrestationIndirecte.  Jeu(x) de valeur(s) associé(s) :                   <a href="https://mos.esante.gouv.fr/NOS/JDV_J284-PrestationsDirects_SERAFIN/FHIR/JDV-J284-PrestationsDirects-SERAFIN/">JDV-J284-PrestationsDirects_SERAFIN</a>
+,                   <a href="https://mos.esante.gouv.fr/NOS/JDV_J283-PrestationsIndirects_SERAFIN/FHIR/JDV-J283-PrestationsIndirects-SERAFIN">JDV-J283-PrestationsIndirects_SERAFIN</a>
+                  <br/>
+
+        - peut contenir un texte non structuré véhiculant les autres types d’évènements.                  <br/>
+
+        
+                </ul>
+
+    Autre cas d'usage : le type de l'évènement est issu                <br/>
+
+                    <ul>
+
+      - du jeu de valeur issue de la terminologie Serafin correspondant aux familles 2-PrestationDirecte et 3-PrestationIndirecte. Jeu(x) de valeur(s) associé(s) :                   <a href="https://mos.esante.gouv.fr/NOS/JDV_J284-PrestationsDirects_SERAFIN/FHIR/JDV-J284-PrestationsDirects-SERAFIN/">JDV-J284-PrestationsDirects_SERAFIN</a>
+,                   <a href="https://mos.esante.gouv.fr/NOS/JDV_J283-PrestationsIndirects_SERAFIN/FHIR/JDV-J283-PrestationsIndirects-SERAFIN">JDV_J283-PrestationsIndirects_SERAFIN</a>
+                  <br/>
+
+      - et/ou d’un texte non structuré véhiculant les autres types d’évènements.
+      
+                </ul>
+
+    
+              </td>
+
+  
+            </tr>
+
+                <tr>
+
+                  <td>libelleEvenement : [0..1] Texte</td>
+
+                  <td>Titre donné à l’évènement par la structure.</td>
+
+  
+            </tr>
+
+               <tr>
+
+                  <td>commentaireEvenement : [0..*] Texte</td>
+
+                  <td>Commentaires sur le déroulé de l'évènement.</td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>compteRenduEvenement : [0..1] Texte</td>
+
+                  <td>Zone de texte liée à l’événement pour compte rendu des actions réalisées.</td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>pieceJointeEvenement : [0..*] ObjetBinaire</td>
+
+                  <td>Pièces jointes liées à l’événement.</td>
+
+  
+            </tr>
+
+               <tr>
+
+                  <td>lieuEvenement : [0..1] Lieu</td>
+
+                  <td>Localisation d’exécution de l’évènement.</td>
+
+  
+            </tr>
+
+            <tr>
+
+                  <td>structureEnCharge : [0..1] EntiteJuridique</td>
+
+                  <td>Structure de rattachement de l'usager en charge de l'évènement.</td>
+
+  
+            </tr>
+
+            <tr>
+
+                  <td>dateDebutEvenement : [1..1] DateHeure</td>
+
+                  <td>Date et heure de début de l'évènement.</td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>dateFinEvenement : [1..1] DateHeure</td>
+
+                  <td>Date et heure de fin de l'évènement.</td>
+
+  
+            </tr>
+
+             <tr>
+
+                  <td>evenementHorsPrestation : [0..1] Indicateur</td>
+
+                  <td>Evénement hors prestation prévue dans le projet personnalisé de l’usager (ex : école).</td>
+
+  
+            </tr>
+
+            <tr>
+
+                  <td>motifEvenement : [0..1] Texte</td>
+
+                  <td>Contexte justifiant la réalisation de l’évènement (souvent décrit dans le projet personnalisé).</td>
+
+  
+            </tr>
+
+            <tr>
+
+                  <td>usagerPresent : [0..1] Indicateur</td>
+
+                  <td>Evènement nécessitant ou non la présence physique de l’usager.</td>
+
+  
+            </tr>
+
+              <tr>
+
+                 <td>repas : [0..1] Indicateur</td>
+
+                  <td>Repas du professionnel prévu dans le cadre de l'événement.</td>
+
+  
+            </tr>
+
+             <tr>
+
+                 <td>typeRessourceUtilisee: [0..*] Code</td>
+
+                  <td>
+Type de ressources utilisées dans le cadre de l’évènement (matériel, immobilier, véhicule).                <br/>
+
+    Jeu(x) de valeur(s) associé(s) : JDV_RessourceUtilisee_CISIS avec l'OID 1.2.250.1.213.1.1.5.807 publié sur                 <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a>
+
+    
+              </td>
+
+  
+            </tr>
+
+              <tr>
+
+                 <td>detailTypeRessourceUtilisee: [0..*] Code</td>
+
+                  <td>
+Détail du type de ressources utilisées dans le cadre de l’évènement (pour matériel : matériel médical, matériel pédagogique ; pour immobilier : bâtiment, salle, chambre).                <br/>
+
+    Jeu(x) de valeur(s) associé(s) :                <br/>
+
+    - JDV_DetailMaterielSpecialise_CISIS avec l'OID 1.2.250.1.213.1.1.5.808 publié sur                 <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a>
+                <br/>
+
+    - JDV_DetailRessourceImmobiliereUtilisee_CISIS avec l'OID 1.2.250.1.213.1.1.5.809 publié sur                 <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a>
+
+    
+              </td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>dateModificationEvenement : [0..1] DateHeure</td>
+
+                  <td>Date de la dernière modification de l'événement.</td>
+
+  
+            </tr>
+
+
+          </table>
+
+
+##### Classe Transport
+
+Classe générique socle décrivant le transport d’une personne physique (professionnel, usger) lors d’un évènement.
+
+          <table style="width:100%">
+
+              <tr>
+
+                  <th>Nom</th>
+
+                  <th>Description</th>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>idTrajet : [1..1] Identifiant</td>
+
+                  <td>Identifiant technique du transport. </td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>typeTransport : [0..1] Code</td>
+
+                  <td>
+Type de transport.                <br/>
+
+    Jeu(x) de valeur(s) associé(s) : JDV_ModeDeTransport_CISIS avec l'OID 1.2.250.1.213.1.1.5.140 
+    publié sur                 <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a>
+
+    
+              </td>
+
+  
+            </tr>
+
+               <tr>
+
+                  <td>typeMotorisation : [0..1] Code</td>
+
+                  <td>
+Type de motorisation associée au véhicule utilisé lors du transport.                <br/>
+
+    Jeu(x) de valeur(s) associé(s) : JDV_TypeMotorisation_CISIS avec l'OID 1.2.250.1.213.1.1.5.801 publié sur                 <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a>
+ 
+    
+              </td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>transporteur : [0..1] EntiteJuridique</td>
+
+                  <td>Structure juridique définissant le transporteur.</td>
+
+  
+            </tr>
+
+             <tr>
+
+                  <td>adresseDepart : [0..1] Adresse</td>
+
+                  <td>Adresse de départ du transport.</td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>adresseDestination : [0..1] Adresse</td>
+
+                  <td>Adresse de destination du transport.</td>
+
+  
+            </tr>
+
+            <tr>
+
+                  <td>budgetPrevisionnel : [0..1] Montant</td>
+
+                  <td>Budget prévisionnel pour assurer le transport de la personne physique.</td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>budgetReel : [0..1] Montant</td>
+
+                  <td>Budget réel pour assurer le transport de la personne physique.</td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>distance : [0..1] Mesure</td>
+
+                  <td>Distance du transport de la personne physique.</td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>dureeTheorique : [0..1] Mesure</td>
+
+                  <td>Durée théorique du transport de la personne physique.</td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>dateDebutTransport : [1..1] DateHeure</td>
+
+                  <td>Date de début du transport de la personne physique.</td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>dateFinTransport : [1..1] DateHeure</td>
+
+                  <td>Date de fin du transport de la personne physique.</td>
+
+  
+            </tr>
+
+
+          </table>
+
+
+##### Classe TransportProfessionnel
+
+** Classe spécialisée, hérite de la classe Transport
+
+Cette classe regroupe les items pouvant caractériser le transport du professionnel lors de l'évènement.
+
 L'identifiant technique du transport est obtenu dans ce contexte par par la concaténation du type d'identifiant national de personne (provenant de la nomenclature           <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>
 ), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de cinq caractères "TPPro" et du numéro de transport du professionnel dans le DUI (idTransport) :          <br/>
  idTrajet = 3+FINESS/identifiantLocalUsagerESSMS-TPPro-idTransport
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <a href="sfe_modelisation_contenu.html">web</a>
-        </td>
-        <td>
-          <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">mos.esante.gouv.fr</a>
-        </td>
-        <td>
+
+##### Classe TransportUsager
+
+** Classe spécialisée, hérite de la classe Transport
+
+Cette classe regroupe les items pouvant caractériser le transport de l'usager lors de l'évènement.
+
 L'identifiant technique du transport est obtenu dans ce contexte par par la concaténation du type d'identifiant national de personne (provenant de la nomenclature           <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>
 ), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de cinq caractères "TPPat" et du numéro de transport de l'usager dans le DUI (idTransport) :          <br/>
  idTrajet = 3+FINESS/identifiantLocalUsagerESSMS-TPPat-idTransport
+
+          <table style="width:100%">
+
+              <tr>
+
+                  <th>Nom</th>
+
+                  <th>Description</th>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>accompagnement : [0..1] Indicateur</td>
+
+                  <td>Accompagnement nécessaire ou non de l'usager. </td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>asepsieRigoureuse : [0..1] Indicateur</td>
+
+                  <td>Lors du transport de l'usager l'asepsie est rigoureusement respectée ou n'est pas nécessaire.</td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>natureTransport : [0..1] Code</td>
+
+                  <td>
+Nature du transport de l'usager.                <br/>
+
+    Jeu de valeur issue de la terminologie Serafin correspondant aux familles (3.2.4.1, 3.2.4.2, 3.2.4.3).                <br/>
+
+    Jeu(x) de valeur(s) associé(s) :                 <a href="https://mos.esante.gouv.fr/NOS/JDV_J282-TransportsLiesAuProjetIndividuel_SERAFIN/FHIR/JDV-J282-TransportsLiesAuProjetIndividuel-SERAFIN">JDV_J282-TransportsLiesAuProjetIndividuel_SERAFIN</a>
+
+    
+              </td>
+
+  
+            </tr>
+
+
+          </table>
+
+
+### Classes du MOS profilées pour ce volet
+
+##### Classe Professionnel
+
+Données d'identification pérennes d’une personne physique, qui travaille en tant que professionnel (professionnel enregistré dans RPPS), personnel autorisé ou personnel d’établissement, dans les domaines sanitaire, médico-social et social.
+
+          <table style="width:100%">
+
+              <tr>
+
+                  <th>Nom</th>
+
+                  <th>Description</th>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>idNat_PS : [1..1] Identifiant</td>
+
+                  <td>
+Identification nationale principale du professionnel. Cette identification est obtenue par la concaténation du type d'identifiant national de personne (provenant de la nomenclature                 <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>
+) et de l'identifiant de la personne physique. Voir la description complète de idNat_PS dans le MOS.
+              </td>
+
+  
+            </tr>
+
+               <tr>
+
+                  <td>civilite : [0..1] Code</td>
+
+                  <td>
+Civilité de la personne.                 <br/>
+
+    Jeu(x) de valeur(s) associé(s) :                  <a href="https://mos.esante.gouv.fr/NOS/JDV_J245-Civilite-CISIS/FHIR/JDV-J245-Civilite-CISIS">JDV_J245-Civilite-CISIS</a>
+
+    
+              </td>
+
+  
+            </tr>
+
+               <tr>
+
+                  <td>nom : [0..1] Texte</td>
+
+                  <td>Nom d'usage de la personne.</td>
+
+  
+            </tr>
+
+               <tr>
+
+                  <td>prenom : [0..1] Texte</td>
+
+                  <td>Prénom usuel de la personne.</td>
+
+  
+            </tr>
+
+               <tr>
+
+                  <td>profession : [0..1] Code</td>
+
+                  <td>
+Profession / Spécialité du professionnel.                 <br/>
+
+    Jeu(x) de valeur(s) associé(s) :                  <a href="https://mos.esante.gouv.fr/NOS/JDV_J01-XdsAuthorSpecialty-CISIS/FHIR/JDV-J01-XdsAuthorSpecialty-CISIS">JDV_J01-XdsAuthorSpecialty-CISIS</a>
+
+    
+              </td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>role : [0..1] Code</td>
+
+                  <td>
+Rôle fonctionnel du professionnel.                 <br/>
+
+    Jeu(x) de valeur(s) associé(s) :                  <a href="https://mos.esante.gouv.fr/NOS/JDV_J47-FunctionCode-CISIS/FHIR/JDV-J47-FunctionCode-CISIS">JDV-J47-FunctionCode-CISIS</a>
+
+    
+              </td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>modeExercice : [0..1] Code</td>
+
+                  <td>
+Mode d'exercice du professionnel. Décrit selon quelle modalité est exercée l'activité du professionnel par rapport à son établissement de rattachement.                <br/>
+
+    Jeu(x) de valeur(s) associé(s) :                  <a href="https://mos.esante.gouv.fr/NOS/JDV_J117-ModeExercice-ENREG/FHIR/JDV-J117-ModeExercice-ENREG">JDV-J117-ModeExercice-ENREG</a>
+
+    
+              </td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>etablissementDeRattachement : [0..1] EntiteJuridique</td>
+
+                  <td>Structure juridique de rattachement du professionnel.</td>
+
+  
+            </tr>
+
+
+          </table>
+
+
+          <u>Remarque</u>
+: Certaines professions du médico-social n'ont pas de correspondance directe dans les référentiels du CI-SIS. L'annexe           <a href="annexes_codes_professions_roles_modes_exercices.html">Professions du médico-social</a>
+ donne la correspondance entre la profession du médico-social et le triptyque "profession/rôle/mode d'exercice" référencé dans les jeux de valeurs du CI-SIS.
+
+##### Classe Entité Juridique
+
+Pour ce volet l'Entité Juridique est une personne morale inscrite dans le FINESS.
+
+          <table style="width:100%">
+
+              <tr>
+
+                  <th>Nom</th>
+
+                  <th>Description</th>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>idNat_Struct : [1..1] Identifiant</td>
+
+                  <td>
+Identification nationale de l'Entité juridique. Cette identification est obtenue par la concaténation du type d'identifiant national de structure (provenant de la nomenclature                 <a href="https://mos.esante.gouv.fr/NOS/TRE_G07-TypeIdentifiantStructure/FHIR/TRE-G07-TypeIdentifiantStructure">TRE_G07-TypeIdentifiantStructure</a>
+) et de l'identifiant de la structure: ** 1 + N° FINESS.
+              </td>
+
+  
+            </tr>
+
+             <tr>
+
+                  <td>raisonSociale : [0..1] Texte</td>
+
+                  <td>La raison sociale est le nom de l'entité juridique. Elle figure obligatoirement dans les statuts de l'EJ. </td>
+
+  
+            </tr>
+
+
+          </table>
+
+
+
+##### Classe Lieu
+
+Portion déterminée de l'espace où se sont déroulés des événements.
+
+          <table style="width:100%">
+
+              <tr>
+
+                  <th>Nom</th>
+
+                  <th>Description</th>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>identifiant : [0..*] Identifiant</td>
+
+                  <td>Identifiant(s) métier du lieu.</td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>nom : [0..1] Texte</td>
+
+                  <td>Nom, exprimé sous la forme de texte, du lieu.</td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>adresse : [0..1] Adresse</td>
+
+                  <td>Adresse géopostale du lieu.</td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>telecommunication : [0..1] Telecommunication</td>
+
+                  <td>Adresse(s) de télécommunication du lieu (numéro de téléphone, adresse email, URL, etc.).</td>
+
+  
+            </tr>
+
+
+          </table>
+
+
+
+### Classes génériques
+
+##### Classe Statut
+
+Cette classe décrit le statut des ressources (Evenement, Evaluation, Projet personnalisé, ...).
+
+          <table style="width:100%">
+
+              <tr>
+
+                  <th>Nom</th>
+
+                  <th>Description</th>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>statut : [1..1] Code</td>
+
+                  <td>
+Statut de la ressource impactée.                 <br/>
+
+    Jeu(x) de valeur(s) associé(s) :                  <a href="https://mos.esante.gouv.fr/NOS/JDV_J281-StatutsRessourcesMS/FHIR/JDV-J281-StatutsRessourcesMS">JDV_J281-StatutsRessourcesMS</a>
+                <br/>
+
+    - Pour l'Evaluation seuls les codes suivants sont à utiliser : APPROUVE, VALIDE, TERMINE                 <br/>
+
+    - Pour l'Evènement seuls les codes suivants sont à utiliser : PLANIFIE, VALIDE, REALISE, ANNULE
+    
+              </td>
+
+  
+            </tr>
+
+              <tr>
+
+                 <td>motifNonRealisation : [0..1] Code</td>
+
+                  <td>
+Motif associé au statut de non-réalisation de l’évènement.                <br/>
+
+    Jeu(x) de valeur(s) associé(s) : JDV_MotifNonRealisationEvenement_CISIS avec l'OID 1.2.250.1.213.1.1.5.803
+    publié sur                 <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a>
+ 
+    
+              </td>
+
+  
+            </tr>
+
+               <tr>
+
+                  <td>dateStatut : [0..1] DateHeure</td>
+
+                  <td>Date et heure du renseignement du statut.</td>
+
+  
+            </tr>
+
+               <tr>
+
+                  <td>auteur : [0..1] Professionnel</td>
+
+                  <td>Le professionnel ayant effectué la dernière modification du statut associé à la ressource.</td>
+
+  
+            </tr>
+
+
+          </table>
+
+
+##### Classe Accord
+
+Cela correspond au consentement d'une personne physique ou morale.
+
+          <table style="width:100%">
+
+              <tr>
+
+                  <th>Nom</th>
+
+                  <th>Description</th>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>auteur : [1..1] Texte</td>
+
+                  <td>Acteur qui donne son accord.</td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>dateSignature : [1..1] DateHeure</td>
+
+                  <td>Date de délivrance de l'accord.</td>
+
+  
+            </tr>
+
+              <tr>
+
+                  <td>dureeValidite : [0..1] Periode</td>
+
+                  <td>Durée de validité de l'accord</td>
+
+  
+            </tr>
+
+
+          </table>
+
+
+### Contraintes par cas d'usage sur le modèle DUI
+
+ Dans les tableaux ci-dessous il est précisé pour chaque cas d'usage, les données du DUI qui sont réellement utilisées.
+
+#### Mapping Usager
+
+          <table style="width:100%">
+
+            <tr>
+
+                <th>Attribut</th>
+
+                <th>Utilisé pour le cas d'usage SSIAD</th>
+
+
+            </tr>
+
+            <tr>
+
+                <td>matriculeINS</td>
+
+                <td>Oui</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>numSecuriteSociale</td>
+
+                <td>Oui</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>identifiantLocalUsagerESSMS</td>
+
+               <td>Oui</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>numeroIndividuInitial</td>
+
+               <td>Oui</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>nomNaissance</td>
+
+               <td>Oui</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>nomUsage</td>
+
+               <td>Oui</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>prenom</td>
+
+               <td>Non</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>premierPrenomActeNaissance</td>
+
+               <td>Oui</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>prenomUtilise</td>
+
+               <td>Non</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>sexe</td>
+
+               <td>Oui</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>dateNaissance</td>
+
+               <td>Oui</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>ordreNaissance</td>
+
+               <td>Oui</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>communeNaissance</td>
+
+               <td>Non</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>paysNaissance</td>
+
+               <td>Oui</td>
+
+
+            </tr>
+
+
+          </table>
+
+
+##### Mapping Adresse (usager)
+
+          <table style="width:100%">
+
+            <tr>
+
+                <th>Attribut</th>
+
+                <th>Utilisé pour le cas d'usage SSIAD</th>
+
+
+            </tr>
+
+            <tr>
+
+                <td>numeroVoie</td>
+
+               <td>Non</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>libelleVoie</td>
+
+               <td>Non</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>codePostal</td>
+
+               <td>Oui</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>localite</td>
+
+               <td>Oui</td>
+
+
+            </tr>
+
+
+          </table>
+
+
+
+#### Mapping Séjour
+
+          <table style="width:100%">
+
+            <tr>
+
+                <th>Attribut</th>
+
+                <th>Utilisé pour le cas d'usage SSIAD</th>
+
+
+            </tr>
+
+            <tr>
+
+                <td>idSejour</td>
+
+               <td>Non</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>dateAdmission</td>
+
+               <td>Non</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>ESSMS</td>
+
+               <td>Non</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>modeEntree</td>
+
+               <td>Non</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>dateEntree</td>
+
+               <td>Oui</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>modeSortie</td>
+
+               <td>Non</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>dateSortie</td>
+
+               <td>Oui</td>
+
+
+            </tr>
+
+
+          </table>
+
+
+#### Partie Accompagnement
+
+##### Mapping Evaluation
+
+          <table style="width:100%">
+
+            <tr>
+
+                <th>Attribut</th>
+
+                <th>Utilisé pour le cas d'usage SSIAD</th>
+
+
+            </tr>
+
+            <tr>
+
+                <td>idEvaluation</td>
+
+               <td>Non</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>typeEvaluation</td>
+
+               <td>Oui</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>statut de l'évaluation</td>
+
+               <td>Oui</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>dateEvaluation</td>
+
+               <td>Oui</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>professionnel réalisant l'évaluation</td>
+
+               <td>Non</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>idNat_PS Identifiant de l'évaluateur</td>
+
+               <td>Non</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>idNat_Struct Identifiant de l'établissement de rattachement de l'évaluateur</td>
+
+               <td>Non</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>composants du détail de l'évaluation</td>
+
+               <td>Oui</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>pieceJointeEvaluation</td>
+
+               <td>Oui</td>
+
+
+            </tr>
+
+
+          </table>
+
+
+###### Mapping Détail Evaluation (niveau 1,2)
+
+          <table style="width:100%">
+
+            <tr>
+
+                <th>Attribut</th>
+
+                <th>Utilisé pour le cas d'usage SSIAD</th>
+
+
+            </tr>
+
+            <tr>
+
+                <td>champsEvalue</td>
+
+               <td>Oui</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>champsEvalue</td>
+
+               <td>Oui</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>resultatChampsEvalue</td>
+
+               <td>Oui</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>statut du détail de l'évaluation</td>
+
+               <td>Oui</td>
+
+
+            </tr>
+
+
+          </table>
+
+
+#### Partie Coordination des acteurs
+
+##### Mapping Evènement de l'agenda
+
+          <table style="width:100%">
+
+            <tr>
+
+                <th>Attribut</th>
+
+                <th>Utilisé pour le cas d'usage SSIAD</th>
+
+
+            </tr>
+
+            <tr>
+
+                <td>idEvenement</td>
+
+               <td>Non</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>typeEvenement</td>
+
+               <td>Oui</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>libelleEvenement</td>
+
+               <td>Non</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>dateDebutEvenement</td>
+
+               <td>Oui</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>dateFinEvenement</td>
+
+               <td>Oui</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>lieuEvenement</td>
+
+               <td>Non</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>structureEnCharge</td>
+
+               <td>Non</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>Fonction (rôle et mode d'exercice) du professionnel ayant réalisé l'évènement</td>
+
+               <td>Oui</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>Nom et prénom du professionnel ayant réalisé l'évènement</td>
+
+               <td>Non</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>Etablissement de rattachement du professionnel</td>
+
+               <td>Non</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>Caractéristiques de l'évènement (Commentaire, pièce jointe, transport de l'usager, statut métier de l'évènement, transport d'un professionnel ayant participé à l'évènement)</td>
+
+               <td>Non</td>
+
+
+            </tr>
+
+
+          </table>
+
+
+###### Mapping Statut de l'évènement
+
+          <table style="width:100%">
+
+            <tr>
+
+                <th>Attribut</th>
+
+                <th>Utilisé pour le cas d'usage SSIAD</th>
+
+
+            </tr>
+
+            <tr>
+
+                <td>identifiant du statut</td>
+
+               <td>Non</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>code du statut</td>
+
+               <td>Oui</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>date du statut</td>
+
+               <td>Non</td>
+
+
+            </tr>
+
+
+          </table>
+
+
+#### Partie Structure
+
+##### Mapping Entité Juridique
+
+          <table style="width:100%">
+
+            <tr>
+
+                <th>Attribut</th>
+
+                <th>Utilisé pour le cas d'usage SSIAD</th>
+
+
+            </tr>
+
+            <tr>
+
+                <td>idNat_Struct</td>
+
+               <td>Non</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>FINESS de la structure extrait de idNat_Struct</td>
+
+               <td>Oui</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>raisonSociale</td>
+
+               <td>Oui</td>
+
+
+            </tr>
+
+
+          </table>
+
+
         </td>
       </tr>
       <tr>
