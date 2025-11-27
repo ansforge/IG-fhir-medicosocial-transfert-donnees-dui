@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role | *Version*:2.1.0-ballot |
-| Active as of 2025-11-26 | *Computable Name*:TDDUIPractitionerRole |
+| Active as of 2025-11-27 | *Computable Name*:TDDUIPractitionerRole |
 
  
 Profil de la ressource FRCorePractitionerRole permettant de représenter un Professionnel. 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-practitioner-r
   "name" : "TDDUIPractitionerRole",
   "title" : "TDDUI Practitioner Role",
   "status" : "active",
-  "date" : "2025-11-26T10:17:34+00:00",
+  "date" : "2025-11-27T09:05:35+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

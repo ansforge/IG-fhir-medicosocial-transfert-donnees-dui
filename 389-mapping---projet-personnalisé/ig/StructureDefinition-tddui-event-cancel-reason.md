@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-cancel-reason | *Version*:2.1.0-ballot |
-| Active as of 2025-11-26 | *Computable Name*:TDDUIEventCancelReason |
+| Active as of 2025-11-27 | *Computable Name*:TDDUIEventCancelReason |
 
 Motif associé au statut de non-réalisation de l’évènement.
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-event-cancel-r
   "name" : "TDDUIEventCancelReason",
   "title" : "Évènement annulé",
   "status" : "active",
-  "date" : "2025-11-26T10:17:34+00:00",
+  "date" : "2025-11-27T09:05:35+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

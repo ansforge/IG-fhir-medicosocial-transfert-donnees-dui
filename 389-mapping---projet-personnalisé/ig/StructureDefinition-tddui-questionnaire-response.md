@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response | *Version*:2.1.0-ballot |
-| Active as of 2025-11-26 | *Computable Name*:TDDUIQuestionnaireResponse |
+| Active as of 2025-11-27 | *Computable Name*:TDDUIQuestionnaireResponse |
 
  
 Profil de la ressource QuestionnaireResponse utilisé pour transmettre les réponses aux questionnaires dans le cadre des évaluations. 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-questionnaire-
   "name" : "TDDUIQuestionnaireResponse",
   "title" : "TDDUI QuestionnaireResponse",
   "status" : "active",
-  "date" : "2025-11-26T10:17:34+00:00",
+  "date" : "2025-11-27T09:05:35+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
