@@ -1331,12 +1331,12 @@ Dans le cas d'une auto évaluation, l'auteur étant l'usager cet élément n'est
 ##### Classe Projet personnalisé
 Le projet personnalisé est un document co-construit par l'usager, son entourage et les professionnels du médico-social. Il s'agit d'un outil de coordination visant à répondre à long terme aux besoins et attentes de l'usager. Il regroupe les attentes, définit les objectifs et met en place un accompagnement pour favoriser le développement et l'autonomie de l'usager. 
 Le projet personnalisé est mis à jour à chaque événement de vie de l'usager ou au minimum une fois par an.
-
+<!--
 <table style="width:100%">
   <tr>
     <th>Nom</th>
     <th>Description</th>
-  </tr>
+  </tr> 
   <tr>
     <td>idProjetPersonnalise : [1..1] Identifiant</td>
     <td>Identifiant technique du projet personnalisé obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "PPER" et de l'identifiant du projet personnalisé dans le DUI (numProjetPersonnalise) : <br>idProjetPersonnalise = 3+FINESS/identifiantLocalUsagerESSMS-PPER-numProjetPersonnalise</td>
@@ -1383,7 +1383,7 @@ Le projet personnalisé est mis à jour à chaque événement de vie de l'usager
     <td>Entrant(s) du projet personnalisé.</td>
   </tr>
 </table>
-
+-->
 ##### Classe Besoin
 Chaque usager a des attentes et des besoins singuliers, que le professionnel s’emploie à intégrer dans le projet personnalisé en tenant compte de l'évolution de sa situation, de ses aspirations et ses spécificités. Le besoin peut découler des attentes.
 
@@ -1568,9 +1568,9 @@ Le moyen ou la ressource sert à réaliser le projet personnalisé. Le moyen ou 
     <td>Evaluation du moyen ou de la ressource.</td>
   </tr>
   <tr>
-  <td>pieceJointeMoyenRessource : [0..*] ObjetBinaire</td>
-  <td>Pièce(s) jointe(s) du moyen ou de la ressource.</td>
-</tr>
+    <td>pieceJointeMoyenRessource : [0..*] ObjetBinaire</td>
+    <td>Pièce(s) jointe(s) du moyen ou de la ressource.</td>
+  </tr>
 </table>
 
 ##### Classe PrestationProjetPersonnalise
@@ -1597,7 +1597,7 @@ La prestation désigne ce qui doit être accompli ou fourni à l'usager.Elle peu
     <td>typePrestation : [0..*] Code</td>
     <td>Type de la prestation.<br>
     Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J283-PrestationsIndirects_SERAFIN/FHIR/JDV-J283-PrestationsIndirects-SERAFIN">JDV-J283-PrestationsIndirects-SERAFIN</a>, <a href="https://mos.esante.gouv.fr/NOS/JDV_J284-PrestationsDirects_SERAFIN/FHIR/JDV-J284-PrestationsDirects-SERAFIN">JDV-J284-PrestationsDirects-SERAFIN</a>
-</td>
+    </td>
   </tr>
 <tr>
   <td>dateDebutPrestation : [0..1] DateHeure</td>
