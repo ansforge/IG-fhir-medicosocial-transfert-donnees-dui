@@ -1344,6 +1344,27 @@ Le projet personnalisé est un document co-construit par l'usager, son entourage
     <td>titreProjetPersonnalise : [1..1] Texte</td>
     <td>Titre du projet personnalisé.</td>
   </tr>
+   <tr>
+    <td>descriptionProjetPersonnalise : [0..1] Texte</td>
+    <td>Description du projet personnalisé.</td>
+  </tr>
+  <tr>
+    <td>statutProjetPersonnalise : [1..1] <a href="#classe-statut">Statut</a></td>
+    <td>Statut du projet personnalisé.</td>
+  </tr>
+  <tr>
+    <td>typeProjetPersonnalise : [0..1] Code</td>
+    <td>Type de projet personnalisé.<br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j367-type-projet-personnalise-ms">JDV-J367-type-projet-personnalise-ms</td>
+  </tr>
+  <tr>
+    <td>modaliteCommunicationProjetPersonnalise : [0..1] Texte</td>
+    <td>Modalité de communication ou de transmission du projet personnalisé à l'usager et/ou à son entourage.</td>
+  </tr>
+  <tr>
+    <td>accordUsagerProjetPersonnalise : [0..*] <a href="#classe-accord">Accord</a></td>
+    <td>Accord de l'usager et/ou de son entourage.</td>
+  </tr>
 </table>
 
 ##### Classe Besoin
