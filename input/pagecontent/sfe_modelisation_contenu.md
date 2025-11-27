@@ -1329,61 +1329,8 @@ Dans le cas d'une auto évaluation, l'auteur étant l'usager cet élément n'est
 <div style="text-align:center;">{%include bloc_projet_personnalise.svg%}</div>
 
 ##### Classe Projet personnalisé
-Le projet personnalisé est un document co-construit par l'usager, son entourage et les professionnels du médico-social. Il s'agit d'un outil de coordination visant à répondre à long terme aux besoins et attentes de l'usager. Il regroupe les attentes, définit les objectifs et met en place un accompagnement pour favoriser le développement et l'autonomie de l'usager. 
-Le projet personnalisé est mis à jour à chaque événement de vie de l'usager ou au minimum une fois par an.
-<!--
-<table style="width:100%">
-  <tr>
-    <th>Nom</th>
-    <th>Description</th>
-  </tr> 
-  <tr>
-    <td>idProjetPersonnalise : [1..1] Identifiant</td>
-    <td>Identifiant technique du projet personnalisé obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "PPER" et de l'identifiant du projet personnalisé dans le DUI (numProjetPersonnalise) : <br>idProjetPersonnalise = 3+FINESS/identifiantLocalUsagerESSMS-PPER-numProjetPersonnalise</td>
-  </tr>
-  <tr>
-    <td>titreProjetPersonnalise : [1..1] Texte</td>
-    <td>Titre du projet personnalisé.</td>
-  </tr>
-  <tr>
-    <td>descriptionProjetPersonnalise : [0..1] Texte</td>
-    <td>Description du projet personnalisé.</td>
-  </tr>
-  <tr>
-    <td>statutProjetPersonnalise : [1..1] <a href="#classe-statut">Statut</a></td>
-    <td>Statut du projet personnalisé.</td>
-  </tr>
-  <tr>
-    <td>typeProjetPersonnalise : [0..1] Code</td>
-    <td>Type de projet personnalisé.<br>
-    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j367-type-projet-personnalise-ms">JDV-J367-type-projet-personnalise-ms</td>
-  </tr>
-  <tr>
-    <td>modaliteCommunicationProjetPersonnalise : [0..1] Texte</td>
-    <td>Modalité de communication ou de transmission du projet personnalisé à l'usager et/ou à son entourage.</td>
-  </tr>
-  <tr>
-    <td>accordUsagerProjetPersonnalise : [0..*] <a href="#classe-accord">Accord</a></td>
-    <td>Accord de l'usager et/ou de son entourage.</td>
-  </tr>
-  <tr>
-    <td>accordStructureProjetPersonnalise : [1..*] <a href="#classe-accord">Accord</a></td>
-    <td>Accord de la structure.</td>
-  </tr>
-  <tr>
-    <td>dateDebutMiseEnOeuvreProjetPersonnalise : [0..1] DateHeure</td>
-    <td>Date de début de mise en œuvre du projet personnalisé.</td>
-  </tr>
-  <tr>
-    <td>dateFinMiseEnOeuvreProjetPersonnalise : [0..1] DateHeure</td>
-    <td>Date de fin de mise en œuvre du projet personnalisé.</td>
-  </tr>
-  <tr>
-    <td>entrantProjetPersonnalisee : [0..*] ObjetBinaire</td>
-    <td>Entrant(s) du projet personnalisé.</td>
-  </tr>
-</table>
--->
+Le projet personnalisé est un document co-construit par l'usager, son entourage et les professionnels du médico-social. Il s'agit d'un outil de coordination visant à répondre à long terme aux besoins et attentes de l'usager. Il regroupe les attentes, définit les objectifs et met en place un accompagnement pour favoriser le développement et l'autonomie de l'usager. Le projet personnalisé est mis à jour à chaque événement de vie de l'usager ou au minimum une fois par an.
+
 ##### Classe Besoin
 Chaque usager a des attentes et des besoins singuliers, que le professionnel s’emploie à intégrer dans le projet personnalisé en tenant compte de l'évolution de sa situation, de ses aspirations et ses spécificités. Le besoin peut découler des attentes.
 
