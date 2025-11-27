@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-attente.c
   "name" : "TDDUIGoalAttente",
   "title" : "TDDUI Goal Attente",
   "status" : "active",
-  "date" : "2025-11-27T09:05:35+00:00",
+  "date" : "2025-11-27T16:23:25+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -139,6 +139,21 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-attente.c
           {
             "identity" : "specmetier-to-TDDUIGoalAttente",
             "map" : "ProjetPersonnalise"
+          }
+        ]
+      },
+      {
+        "id" : "Goal.extension:pieceJointeAttente",
+        "path" : "Goal.extension",
+        "sliceName" : "pieceJointeAttente",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "Extension",
+            "profile" : [
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment"
+            ]
           }
         ]
       },

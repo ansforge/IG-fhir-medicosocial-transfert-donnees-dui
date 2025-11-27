@@ -140,7 +140,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2025-11-27T09:05:35+00:00",
+  "date" : "2025-11-27T16:23:25+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -925,6 +925,20 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "DocumentReference"
+          }
+        ],
+        "reference" : {
+          "reference" : "DocumentReference/bilan-objectif-1-projet-personnalise-pa-example-pp"
+        },
+        "name" : "Bilan Objectif 1",
+        "description" : "Bilan de l'objectif 1 du projet personnalisé",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:extension"
           }
         ],
@@ -948,6 +962,20 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "name" : "Date d’admission",
         "description" : "Date d’admission dans la structure ESSMS.",
         "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "DocumentReference"
+          }
+        ],
+        "reference" : {
+          "reference" : "DocumentReference/entrant-projet-personnalise-pa-example-pp"
+        },
+        "name" : "Entrant Projet Personnalisé PA",
+        "description" : "Entrant Projet Personnalisé PA au format PDF",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"
       },
       {
         "extension" : [
@@ -1849,34 +1877,6 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Goal"
-          }
-        ],
-        "reference" : {
-          "reference" : "Goal/tddui-goal-objectif-2-pa-example"
-        },
-        "name" : "tddui-goal-objectif-2-pa-example",
-        "description" : "Exemple d'un objectif dans le cadre du projet personnalisé PA.",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Goal"
-          }
-        ],
-        "reference" : {
-          "reference" : "Goal/tddui-goal-objectif-3-pa-example"
-        },
-        "name" : "tddui-goal-objectif-3-pa-example",
-        "description" : "Exemple d'un objectif dans le cadre du projet personnalisé PA.",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "Organization"
           }
         ],
@@ -1947,6 +1947,20 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Practitioner"
+          }
+        ],
+        "reference" : {
+          "reference" : "Practitioner/tddui-practitioner-ide-pp-example"
+        },
+        "name" : "tddui-practitioner-ide-pp-example",
+        "description" : "Exemple d'un IDE",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "PractitionerRole"
           }
         ],
@@ -1982,6 +1996,20 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           "reference" : "QuestionnaireResponse/tddui-questionnaire-response-aggir-pa-example"
         },
         "name" : "tddui-questionnaire-response-aggir-pa-example",
+        "description" : "Grille de réponse AGGIR PA",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "QuestionnaireResponse"
+          }
+        ],
+        "reference" : {
+          "reference" : "QuestionnaireResponse/tddui-questionnaire-response-aggir-pa-example-pp"
+        },
+        "name" : "tddui-questionnaire-response-aggir-pa-example-pp",
         "description" : "Grille de réponse AGGIR PA",
         "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
       },
@@ -2049,9 +2077,37 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           }
         ],
         "reference" : {
-          "reference" : "ServiceRequest/tddui-servicerequest-besoin-pa-example"
+          "reference" : "ServiceRequest/tddui-servicerequest-besoin-1-pa-example"
         },
-        "name" : "tddui-servicerequest-besoin-pa-example",
+        "name" : "tddui-servicerequest-besoin-1-pa-example",
+        "description" : "Exemple d'un besoin de l'usager dans le cadre du projet personnalisé PA.",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ServiceRequest"
+          }
+        ],
+        "reference" : {
+          "reference" : "ServiceRequest/tddui-servicerequest-besoin-2-pa-example"
+        },
+        "name" : "tddui-servicerequest-besoin-2-pa-example",
+        "description" : "Exemple d'un besoin de l'usager dans le cadre du projet personnalisé PA.",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ServiceRequest"
+          }
+        ],
+        "reference" : {
+          "reference" : "ServiceRequest/tddui-servicerequest-besoin-3-pa-example"
+        },
+        "name" : "tddui-servicerequest-besoin-3-pa-example",
         "description" : "Exemple d'un besoin de l'usager dans le cadre du projet personnalisé PA.",
         "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin"
       },
@@ -2063,10 +2119,10 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           }
         ],
         "reference" : {
-          "reference" : "Task/tddui-task-action-1-pa-example"
+          "reference" : "Task/tddui-task-action-1-as-pa-example"
         },
-        "name" : "tddui-task-action-1-pa-example",
-        "description" : "Exemple des actions de l'objectif 1 dans le cadre du projet personnalisé PA.",
+        "name" : "tddui-task-action-1-as-pa-example",
+        "description" : "Exemple d'une action de l'objectif 1 réalisée par l'AS dans le cadre du projet personnalisé PA.",
         "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"
       },
       {
@@ -2077,10 +2133,10 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           }
         ],
         "reference" : {
-          "reference" : "Task/tddui-task-action-2-pa-example"
+          "reference" : "Task/tddui-task-action-1-ergo-pa-example"
         },
-        "name" : "tddui-task-action-2-pa-example",
-        "description" : "Exemple des actions de l'objectif 2 dans le cadre du projet personnalisé PA.",
+        "name" : "tddui-task-action-1-ergo-pa-example",
+        "description" : "Exemple d'une action de l'objectif 1 réalisée par l'ergothérapeute dans le cadre du projet personnalisé PA.",
         "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"
       },
       {
@@ -2091,10 +2147,10 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           }
         ],
         "reference" : {
-          "reference" : "Task/tddui-task-action-3-pa-example"
+          "reference" : "Task/tddui-task-action-1-ide-pa-example"
         },
-        "name" : "tddui-task-action-3-pa-example",
-        "description" : "Exemple des actions de l'objectif 3 dans le cadre du projet personnalisé PA.",
+        "name" : "tddui-task-action-1-ide-pa-example",
+        "description" : "Exemple d'une action de l'objectif 1 réalisée par l'IDE dans le cadre du projet personnalisé PA.",
         "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"
       },
       {
@@ -2105,10 +2161,122 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           }
         ],
         "reference" : {
-          "reference" : "Task/tddui-task-moyen-ressource-pa-example"
+          "reference" : "Task/tddui-task-action-1-kine-pa-example"
         },
-        "name" : "tddui-task-moyen-ressource-pa-example",
-        "description" : "Exemple des moyens et ressources dans le cadre du projet personnalisé PA.",
+        "name" : "tddui-task-action-1-kine-pa-example",
+        "description" : "Exemple d'une action de l'objectif 1 réalisée par le kinésithérapeute dans le cadre du projet personnalisé PA.",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Task"
+          }
+        ],
+        "reference" : {
+          "reference" : "Task/tddui-task-action-1-psy-pa-example"
+        },
+        "name" : "tddui-task-action-1-psy-pa-example",
+        "description" : "Exemple d'une action de l'objectif 1 réalisée par le psychologue dans le cadre du projet personnalisé PA.",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Task"
+          }
+        ],
+        "reference" : {
+          "reference" : "Task/tddui-task-action-2-as-pa-example"
+        },
+        "name" : "tddui-task-action-2-as-pa-example",
+        "description" : "Exemple d'une action de l'objectif 1 réalisée par l'AS dans le cadre du projet personnalisé PA.",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Task"
+          }
+        ],
+        "reference" : {
+          "reference" : "Task/tddui-task-action-2-ergo-pa-example"
+        },
+        "name" : "tddui-task-action-2-ergo-pa-example",
+        "description" : "Exemple d'une action de l'objectif 1 réalisée par l'ergothérapeute dans le cadre du projet personnalisé PA.",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Task"
+          }
+        ],
+        "reference" : {
+          "reference" : "Task/tddui-task-action-2-ide-pa-example"
+        },
+        "name" : "tddui-task-action-2-ide-pa-example",
+        "description" : "Exemple d'une action de l'objectif 1 réalisée par l'IDE dans le cadre du projet personnalisé PA.",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Task"
+          }
+        ],
+        "reference" : {
+          "reference" : "Task/tddui-task-action-2-kine-pa-example"
+        },
+        "name" : "tddui-task-action-2-kine-pa-example",
+        "description" : "Exemple d'une action de l'objectif 1 réalisée par le kinésithérapeute dans le cadre du projet personnalisé PA.",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Task"
+          }
+        ],
+        "reference" : {
+          "reference" : "Task/tddui-task-moyen-ressource-ergo-1-pa-example"
+        },
+        "name" : "tddui-task-moyen-ressource-ergo-1-pa-example",
+        "description" : "Exemple des moyens et ressources de l'objectif 1 dans le cadre du projet personnalisé PA.",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Task"
+          }
+        ],
+        "reference" : {
+          "reference" : "Task/tddui-task-moyen-ressource-ide-1-pa-example"
+        },
+        "name" : "tddui-task-moyen-ressource-ide-1-pa-example",
+        "description" : "Exemple des moyens et ressources de l'objectif 1 dans le cadre du projet personnalisé PA.",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Task"
+          }
+        ],
+        "reference" : {
+          "reference" : "Task/tddui-task-moyen-ressource-kine-1-pa-example"
+        },
+        "name" : "tddui-task-moyen-ressource-kine-1-pa-example",
+        "description" : "Exemple des moyens et ressources de l'objectif 1 dans le cadre du projet personnalisé PA.",
         "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource"
       },
       {

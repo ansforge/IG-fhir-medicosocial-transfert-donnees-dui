@@ -10,7 +10,7 @@ Profil: [TDDUI Goal Attente](StructureDefinition-tddui-goal-attente.md)
 
 **Lien vers le projet personnalisé**: [CarePlan Projet personnalisé de Mme Jeanne L.](CarePlan-tddui-careplan-projet-personnalise-pa-example.md)
 
-**identifier**: `https://identifiant-medicosocial-attente.esante.gouv.fr`/3480787529/123456789-ATTE-1234
+**identifier**: `https://identifiant-medicosocial-attente.esante.gouv.fr`/3480787529/123456789-ATTE-1235
 
 **lifecycleStatus**: Active
 
@@ -24,7 +24,7 @@ Profil: [TDDUI Goal Attente](StructureDefinition-tddui-goal-attente.md)
 
 > 
 
-Famille
+Usager
 
 
 
@@ -51,7 +51,7 @@ Famille
   "identifier" : [
     {
       "system" : "https://identifiant-medicosocial-attente.esante.gouv.fr",
-      "value" : "3480787529/123456789-ATTE-1234"
+      "value" : "3480787529/123456789-ATTE-1235"
     }
   ],
   "lifecycleStatus" : "active",
@@ -69,7 +69,7 @@ Famille
           "valueCode" : "origineAttente"
         }
       ],
-      "text" : "Famille"
+      "text" : "Usager"
     }
   ]
 }

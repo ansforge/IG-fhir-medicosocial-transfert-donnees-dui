@@ -134,6 +134,8 @@ These are example instances that show what data produced and consumed by systems
 
 | | |
 | :--- | :--- |
+| [Bilan Objectif 1](DocumentReference-bilan-objectif-1-projet-personnalise-pa-example-pp.md) | Bilan de l'objectif 1 du projet personnalisé |
+| [Entrant Projet Personnalisé PA](DocumentReference-entrant-projet-personnalise-pa-example-pp.md) | Entrant Projet Personnalisé PA au format PDF |
 | [Projet personnalisé de Mme Jeanne L.](CarePlan-tddui-careplan-projet-personnalise-pa-example.md) | Exemple d'un projet personnalisé PA |
 | [TDDUIBundleExample](Bundle-ExampleTDDUIBundle.md) | Exemple de bundle conforme au profil TDDUIBundle |
 | [fr-core-related-person-example](RelatedPerson-fr-core-related-person-example.md) | Exemple de la famille de l'usager. |
@@ -144,24 +146,34 @@ These are example instances that show what data produced and consumed by systems
 | [tddui-goal-attente-famille-pa-example](Goal-tddui-goal-attente-famille-pa-example.md) | Exemple des attentes de la famille dans le cadre du projet personnalisé PA. |
 | [tddui-goal-attente-usager-pa-example](Goal-tddui-goal-attente-usager-pa-example.md) | Exemple des attentes de l'usager dans le cadre du projet personnalisé PA. |
 | [tddui-goal-objectif-1-pa-example](Goal-tddui-goal-objectif-1-pa-example.md) | Exemple d'un objectif dans le cadre du projet personnalisé PA. |
-| [tddui-goal-objectif-2-pa-example](Goal-tddui-goal-objectif-2-pa-example.md) | Exemple d'un objectif dans le cadre du projet personnalisé PA. |
-| [tddui-goal-objectif-3-pa-example](Goal-tddui-goal-objectif-3-pa-example.md) | Exemple d'un objectif dans le cadre du projet personnalisé PA. |
 | [tddui-organization-example](Organization-tddui-organization-example.md) | ESSMS - Les Chênes Verts |
 | [tddui-patient-example](Patient-tddui-patient-example.md) | Exemple de la ressource TDDUIPatient |
 | [tddui-patient-ins-example](Patient-tddui-patient-ins-example.md) | Exemple de la ressource TDDUIPatientINS |
 | [tddui-patient-pa-example-pp](Patient-tddui-patient-pa-example-pp.md) | Exemple de la ressource TDDUIPatient dans le cadre d'un projet personnalisé PA |
 | [tddui-practitioner-example](Practitioner-tddui-practitioner-example.md) | Exemple d'un professionnel de santé |
+| [tddui-practitioner-ide-pp-example](Practitioner-tddui-practitioner-ide-pp-example.md) | Exemple d'un IDE |
 | [tddui-practitioner-role-example](PractitionerRole-tddui-practitioner-role-example.md) | Exemple d'un professionnel de santé |
 | [tddui-questionnaire-response-aggir-pa-example](QuestionnaireResponse-tddui-questionnaire-response-aggir-pa-example.md) | Grille de réponse AGGIR PA |
+| [tddui-questionnaire-response-aggir-pa-example-pp](QuestionnaireResponse-tddui-questionnaire-response-aggir-pa-example-pp.md) | Grille de réponse AGGIR PA |
 | [tddui-questionnaire-response-aggir-ph-example](QuestionnaireResponse-tddui-questionnaire-response-aggir-ph-example.md) | Grille de réponse AGGIR PH |
 | [tddui-questionnaire-response-serafin-precision-example](QuestionnaireResponse-tddui-questionnaire-response-serafin-precision-example.md) | Evaluation SERAFIN pour un besoin d'hébergement adapté avec précision |
 | [tddui-questionnaire-response-serafin-sans-precision-example](QuestionnaireResponse-tddui-questionnaire-response-serafin-sans-precision-example.md) | Evaluation SERAFIN pour un besoin d'hébergement adapté sans précision |
 | [tddui-questionnaire-response-situation-ssiad-example](QuestionnaireResponse-tddui-questionnaire-response-situation-ssiad-example.md) | Grille de réponse de la situation SSIAD |
-| [tddui-servicerequest-besoin-pa-example](ServiceRequest-tddui-servicerequest-besoin-pa-example.md) | Exemple d'un besoin de l'usager dans le cadre du projet personnalisé PA. |
-| [tddui-task-action-1-pa-example](Task-tddui-task-action-1-pa-example.md) | Exemple des actions de l'objectif 1 dans le cadre du projet personnalisé PA. |
-| [tddui-task-action-2-pa-example](Task-tddui-task-action-2-pa-example.md) | Exemple des actions de l'objectif 2 dans le cadre du projet personnalisé PA. |
-| [tddui-task-action-3-pa-example](Task-tddui-task-action-3-pa-example.md) | Exemple des actions de l'objectif 3 dans le cadre du projet personnalisé PA. |
-| [tddui-task-moyen-ressource-pa-example](Task-tddui-task-moyen-ressource-pa-example.md) | Exemple des moyens et ressources dans le cadre du projet personnalisé PA. |
+| [tddui-servicerequest-besoin-1-pa-example](ServiceRequest-tddui-servicerequest-besoin-1-pa-example.md) | Exemple d'un besoin de l'usager dans le cadre du projet personnalisé PA. |
+| [tddui-servicerequest-besoin-2-pa-example](ServiceRequest-tddui-servicerequest-besoin-2-pa-example.md) | Exemple d'un besoin de l'usager dans le cadre du projet personnalisé PA. |
+| [tddui-servicerequest-besoin-3-pa-example](ServiceRequest-tddui-servicerequest-besoin-3-pa-example.md) | Exemple d'un besoin de l'usager dans le cadre du projet personnalisé PA. |
+| [tddui-task-action-1-as-pa-example](Task-tddui-task-action-1-as-pa-example.md) | Exemple d'une action de l'objectif 1 réalisée par l'AS dans le cadre du projet personnalisé PA. |
+| [tddui-task-action-1-ergo-pa-example](Task-tddui-task-action-1-ergo-pa-example.md) | Exemple d'une action de l'objectif 1 réalisée par l'ergothérapeute dans le cadre du projet personnalisé PA. |
+| [tddui-task-action-1-ide-pa-example](Task-tddui-task-action-1-ide-pa-example.md) | Exemple d'une action de l'objectif 1 réalisée par l'IDE dans le cadre du projet personnalisé PA. |
+| [tddui-task-action-1-kine-pa-example](Task-tddui-task-action-1-kine-pa-example.md) | Exemple d'une action de l'objectif 1 réalisée par le kinésithérapeute dans le cadre du projet personnalisé PA. |
+| [tddui-task-action-1-psy-pa-example](Task-tddui-task-action-1-psy-pa-example.md) | Exemple d'une action de l'objectif 1 réalisée par le psychologue dans le cadre du projet personnalisé PA. |
+| [tddui-task-action-2-as-pa-example](Task-tddui-task-action-2-as-pa-example.md) | Exemple d'une action de l'objectif 1 réalisée par l'AS dans le cadre du projet personnalisé PA. |
+| [tddui-task-action-2-ergo-pa-example](Task-tddui-task-action-2-ergo-pa-example.md) | Exemple d'une action de l'objectif 1 réalisée par l'ergothérapeute dans le cadre du projet personnalisé PA. |
+| [tddui-task-action-2-ide-pa-example](Task-tddui-task-action-2-ide-pa-example.md) | Exemple d'une action de l'objectif 1 réalisée par l'IDE dans le cadre du projet personnalisé PA. |
+| [tddui-task-action-2-kine-pa-example](Task-tddui-task-action-2-kine-pa-example.md) | Exemple d'une action de l'objectif 1 réalisée par le kinésithérapeute dans le cadre du projet personnalisé PA. |
+| [tddui-task-moyen-ressource-ergo-1-pa-example](Task-tddui-task-moyen-ressource-ergo-1-pa-example.md) | Exemple des moyens et ressources de l'objectif 1 dans le cadre du projet personnalisé PA. |
+| [tddui-task-moyen-ressource-ide-1-pa-example](Task-tddui-task-moyen-ressource-ide-1-pa-example.md) | Exemple des moyens et ressources de l'objectif 1 dans le cadre du projet personnalisé PA. |
+| [tddui-task-moyen-ressource-kine-1-pa-example](Task-tddui-task-moyen-ressource-kine-1-pa-example.md) | Exemple des moyens et ressources de l'objectif 1 dans le cadre du projet personnalisé PA. |
 | [tddui-task-transport-example](Task-tddui-task-transport-example.md) | Exemple du transport. |
 | [tddui-task-transport-professionel-example](Task-tddui-task-transport-professionel-example.md) | Exemple du transport du professionnel. |
 | [tddui-task-transport-usager-example](Task-tddui-task-transport-usager-example.md) | Exemple du transport de l'usager. |

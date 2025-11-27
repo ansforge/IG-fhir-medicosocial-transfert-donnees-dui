@@ -16,7 +16,7 @@ Profil de la ressource Task permettant de représenter les moyens ou ressources 
 
 **Usages:**
 
-* Examples for this Profile: [Task/tddui-task-moyen-ressource-pa-example](Task-tddui-task-moyen-ressource-pa-example.md)
+* Examples for this Profile: [Task/tddui-task-moyen-ressource-ergo-1-pa-example](Task-tddui-task-moyen-ressource-ergo-1-pa-example.md), [Task/tddui-task-moyen-ressource-ide-1-pa-example](Task-tddui-task-moyen-ressource-ide-1-pa-example.md) and [Task/tddui-task-moyen-ressource-kine-1-pa-example](Task-tddui-task-moyen-ressource-kine-1-pa-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-task-moyen-ressource)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-moyen-res
   "name" : "TDDUITaskMoyenRessource",
   "title" : "TDDUI Task MoyenRessource",
   "status" : "active",
-  "date" : "2025-11-27T09:05:35+00:00",
+  "date" : "2025-11-27T16:23:25+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

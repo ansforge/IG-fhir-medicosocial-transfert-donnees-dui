@@ -19,7 +19,8 @@ Pièces jointes liées à l’événement et à l'évaluation. L'extension réf�
 
 **Usages:**
 
-* Use this Extension: [TDDUI CarePlan Projet Personalise](StructureDefinition-tddui-careplan-projet-personnalise.md), [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md), [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md) and [TDDUI ServiceRequest Besoin](StructureDefinition-tddui-service-request-besoin.md)
+* Use this Extension: [TDDUI CarePlan Projet Personalise](StructureDefinition-tddui-careplan-projet-personnalise.md), [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md), [TDDUI Goal Attente](StructureDefinition-tddui-goal-attente.md), [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md)...Show 2 more,[TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md)and[TDDUI ServiceRequest Besoin](StructureDefinition-tddui-service-request-besoin.md)
+* Examples for this Extension: [CarePlan/tddui-careplan-projet-personnalise-pa-example](CarePlan-tddui-careplan-projet-personnalise-pa-example.md) and [Goal/tddui-goal-objectif-1-pa-example](Goal-tddui-goal-objectif-1-pa-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-attachment)
 
@@ -46,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-attachment.csv
   "name" : "TDDUIAttachment",
   "title" : "Pièce jointe",
   "status" : "active",
-  "date" : "2025-11-27T09:05:35+00:00",
+  "date" : "2025-11-27T16:23:25+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

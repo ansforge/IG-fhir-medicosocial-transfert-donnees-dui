@@ -8,6 +8,8 @@
 
 Profil: [TDDUI CarePlan Projet Personalise](StructureDefinition-tddui-careplan-projet-personnalise.md)
 
+**Pièce jointe**: [DocumentReference : masterIdentifier = 3480787529/123456789-PPER-entrant-1234; status = current](DocumentReference-entrant-projet-personnalise-pa-example-pp.md)
+
 **identifier**: `https://identifiant-medicosocial-projetpersonnalise.esante.gouv.fr`/3480787529/123456789-PPER-1234
 
 **status**: Active
@@ -33,6 +35,14 @@ Profil: [TDDUI CarePlan Projet Personalise](StructureDefinition-tddui-careplan-p
       "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise"
     ]
   },
+  "extension" : [
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment",
+      "valueReference" : {
+        "reference" : "DocumentReference/entrant-projet-personnalise-pa-example-pp"
+      }
+    }
+  ],
   "identifier" : [
     {
       "system" : "https://identifiant-medicosocial-projetpersonnalise.esante.gouv.fr",

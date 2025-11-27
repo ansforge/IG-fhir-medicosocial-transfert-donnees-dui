@@ -37,7 +37,7 @@ CodeSystem pour la définition des éléments spécifiques des output dans la re
   "title" : "OutputTDDUITaskBilanCodeSystem",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-11-27T09:05:35+00:00",
+  "date" : "2025-11-27T16:23:25+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

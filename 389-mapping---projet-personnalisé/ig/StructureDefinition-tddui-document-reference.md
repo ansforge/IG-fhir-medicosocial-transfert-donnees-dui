@@ -23,6 +23,7 @@ Profil de la ressource SimplifiedPublishDocumentReference pour les pièces joint
 
 * Use this Profile: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
 * Refer to this Profile: [Pièce jointe](StructureDefinition-tddui-attachment.md), [TDDUI Task Action](StructureDefinition-tddui-task-action.md), [TDDUI Task Bilan](StructureDefinition-tddui-task-bilan.md), [TDDUI Task MoyenRessource](StructureDefinition-tddui-task-moyen-ressource.md) and [TDDUI Task Prestation](StructureDefinition-tddui-task-prestation.md)
+* Examples for this Profile: [DocumentReference/bilan-objectif-1-projet-personnalise-pa-example-pp](DocumentReference-bilan-objectif-1-projet-personnalise-pa-example-pp.md) and [DocumentReference/entrant-projet-personnalise-pa-example-pp](DocumentReference-entrant-projet-personnalise-pa-example-pp.md)
 * CapabilityStatements using this Profile: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-document-reference)
@@ -48,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-document-refer
   "name" : "TDDUIDocumentReference",
   "title" : "TDDUI DocumentReference",
   "status" : "active",
-  "date" : "2025-11-27T09:05:35+00:00",
+  "date" : "2025-11-27T16:23:25+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

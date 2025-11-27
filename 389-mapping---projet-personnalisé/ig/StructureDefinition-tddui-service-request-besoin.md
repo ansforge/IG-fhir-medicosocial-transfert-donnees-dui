@@ -17,7 +17,7 @@ Profil de la ressource ServiceRequest permettant de représenter les besoins de 
 **Usages:**
 
 * Refer to this Profile: [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md)
-* Examples for this Profile: [ServiceRequest/tddui-servicerequest-besoin-pa-example](ServiceRequest-tddui-servicerequest-besoin-pa-example.md)
+* Examples for this Profile: [ServiceRequest/tddui-servicerequest-besoin-1-pa-example](ServiceRequest-tddui-servicerequest-besoin-1-pa-example.md), [ServiceRequest/tddui-servicerequest-besoin-2-pa-example](ServiceRequest-tddui-servicerequest-besoin-2-pa-example.md) and [ServiceRequest/tddui-servicerequest-besoin-3-pa-example](ServiceRequest-tddui-servicerequest-besoin-3-pa-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-service-request-besoin)
 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-service-reques
   "name" : "TDDUIServiceRequestBesoin",
   "title" : "TDDUI ServiceRequest Besoin",
   "status" : "active",
-  "date" : "2025-11-27T09:05:35+00:00",
+  "date" : "2025-11-27T16:23:25+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

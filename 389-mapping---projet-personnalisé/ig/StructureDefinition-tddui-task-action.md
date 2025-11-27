@@ -17,7 +17,7 @@ Profil de la ressource Task permettant de représenter les actions réalisés da
 **Usages:**
 
 * Refer to this Profile: [TDDUI Task MoyenRessource](StructureDefinition-tddui-task-moyen-ressource.md) and [TDDUI Task Prestation](StructureDefinition-tddui-task-prestation.md)
-* Examples for this Profile: [Task/tddui-task-action-1-pa-example](Task-tddui-task-action-1-pa-example.md), [Task/tddui-task-action-2-pa-example](Task-tddui-task-action-2-pa-example.md) and [Task/tddui-task-action-3-pa-example](Task-tddui-task-action-3-pa-example.md)
+* Examples for this Profile: [Task/tddui-task-action-1-as-pa-example](Task-tddui-task-action-1-as-pa-example.md), [Task/tddui-task-action-1-ergo-pa-example](Task-tddui-task-action-1-ergo-pa-example.md), [Task/tddui-task-action-1-ide-pa-example](Task-tddui-task-action-1-ide-pa-example.md), [Task/tddui-task-action-1-kine-pa-example](Task-tddui-task-action-1-kine-pa-example.md)...Show 5 more,[Task/tddui-task-action-1-psy-pa-example](Task-tddui-task-action-1-psy-pa-example.md),[Task/tddui-task-action-2-as-pa-example](Task-tddui-task-action-2-as-pa-example.md),[Task/tddui-task-action-2-ergo-pa-example](Task-tddui-task-action-2-ergo-pa-example.md),[Task/tddui-task-action-2-ide-pa-example](Task-tddui-task-action-2-ide-pa-example.md)and[Task/tddui-task-action-2-kine-pa-example](Task-tddui-task-action-2-kine-pa-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-task-action)
 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-action.cs
   "name" : "TDDUITaskAction",
   "title" : "TDDUI Task Action",
   "status" : "active",
-  "date" : "2025-11-27T09:05:35+00:00",
+  "date" : "2025-11-27T16:23:25+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

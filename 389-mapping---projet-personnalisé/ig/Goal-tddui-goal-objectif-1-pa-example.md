@@ -10,6 +10,8 @@ Profil: [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md)
 
 **Lien vers le projet personnalisé**: [CarePlan Projet personnalisé de Mme Jeanne L.](CarePlan-tddui-careplan-projet-personnalise-pa-example.md)
 
+**Pièce jointe**: [DocumentReference : masterIdentifier = 3480787529/123456789-PPER-bilanObj-1234; status = current](DocumentReference-bilan-objectif-1-projet-personnalise-pa-example-pp.md)
+
 **identifier**: `https://identifiant-medicosocial-objectif.esante.gouv.fr`/3480787529/123456789-OBJE-1234
 
 **lifecycleStatus**: Active
@@ -18,7 +20,7 @@ Profil: [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md)
 
 **subject**: [Jeanne L. (official) Female, Date de Naissance inconnue ( Patient internal identifier: 3480787529/123456789)](Patient-tddui-patient-pa-example-pp.md)
 
-**addresses**: [ServiceRequest](ServiceRequest-tddui-servicerequest-besoin-pa-example.md)
+**addresses**: [ServiceRequest](ServiceRequest-tddui-servicerequest-besoin-1-pa-example.md)
 
 **note**: 
 
@@ -46,6 +48,12 @@ Objectif 1
       "valueReference" : {
         "reference" : "CarePlan/tddui-careplan-projet-personnalise-pa-example"
       }
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment",
+      "valueReference" : {
+        "reference" : "DocumentReference/bilan-objectif-1-projet-personnalise-pa-example-pp"
+      }
     }
   ],
   "identifier" : [
@@ -63,7 +71,7 @@ Objectif 1
   },
   "addresses" : [
     {
-      "reference" : "ServiceRequest/tddui-servicerequest-besoin-pa-example"
+      "reference" : "ServiceRequest/tddui-servicerequest-besoin-1-pa-example"
     }
   ],
   "note" : [
