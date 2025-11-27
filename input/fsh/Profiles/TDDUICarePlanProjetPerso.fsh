@@ -57,5 +57,5 @@ Title:    "Modèle de contenu DUI"
 * supportingInfo[accordStructure] -> "accordStructureProjetPersonnalise"
 * period.start -> "dateDebutMiseEnOeuvreProjetPersonnalise"
 * period.end -> "dateFinMiseEnOeuvreProjetPersonnalise"
-* extension[entrantProjetPerso] -> "entrantProjetPersonnalisee" //Pourquoi Personnalisee ?
+* extension[entrantProjetPerso] -> "entrantProjetPersonnalise"
 * subject -> "Usager"
