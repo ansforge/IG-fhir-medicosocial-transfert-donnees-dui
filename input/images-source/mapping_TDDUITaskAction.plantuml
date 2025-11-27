@@ -13,6 +13,7 @@ map "**Action : TDDUITaskAction**" as Action #d9d9d9 {
     idAction => identifier
     statutAction.statut => status
     statutAction.dateStatut => meta.lastUpdated
+    statutAction.auteur => <&plus> auteurStatut
     descriptionAction => description
     referentAction => owner
     titreAction => <&layers> input:titre

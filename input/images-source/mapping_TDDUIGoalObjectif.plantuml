@@ -23,6 +23,7 @@ map "**Objectif : TDDUIGoalObjectif**" as Objectif #fb8072 {
     identifiantObjectif => identifier
     statutObjectif.statut => lifecycleStatus
     statutObjectif.dateStatut => meta.lastUpdated
+    statutObjectif.auteur => <&plus> auteurStatut
     domaineObjectif => category
     dateDebutObjectif => <&layers> start[x]:startDate
     descriptionObjectif => description.text

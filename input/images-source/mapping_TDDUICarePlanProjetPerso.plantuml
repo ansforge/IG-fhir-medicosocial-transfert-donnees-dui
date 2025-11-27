@@ -19,6 +19,7 @@ map "**ProjetPersonnalise : TDDUICarePlanProjetPersonnalise**" as ProjetPersonna
     idProjetPersonnalise => identifier
     statutProjetPersonnalise.statut => status
     statutProjetPersonnalise.dateStatut => meta.lastUpdated
+    statutProjetPersonnalise.auteur => <&plus> auteurStatut
     typeProjetPersonnalise => category
     titreProjetPersonnalise => title
     descriptionProjetPersonnalise => description

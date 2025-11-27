@@ -17,6 +17,9 @@ Description: "Profil de la ressource CarePlan représentant le projet personnali
 
 * title 1..1
 
+* status.extension contains 
+    TDDUIStatusAuthor named auteurStatut 0..1
+
 * category 0..1
 * category from $JDV-J367-TypeProjetPersonnaliseMs (required)
 
@@ -48,6 +51,7 @@ Title:    "Modèle de contenu DUI"
 
 * identifier -> "idProjetPersonnalise"
 * meta.lastUpdated -> "statutProjetPersonnalise.dateStatut"
+* status.extension[auteurStatut] -> "statutProjetPersonnalise.auteur"
 * title -> "titreProjetPersonnalise"
 * description -> "descriptionProjetPersonnalise"
 * status -> "statutProjetPersonnalise.statut"

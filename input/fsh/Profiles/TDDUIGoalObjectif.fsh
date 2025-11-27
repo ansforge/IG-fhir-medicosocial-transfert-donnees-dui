@@ -17,6 +17,9 @@ Description: "Profil de la ressource Goal permettant de représenter les résult
 * identifier.system 1..1
 * identifier.system = "https://identifiant-medicosocial-objectif.esante.gouv.fr"
 
+* lifecycleStatus.extension contains 
+    TDDUIStatusAuthor named auteurStatut 0..1
+
 * target.detailString 0..1
 
 * expressedBy only Reference(TDDUIPractitionerRole or TDDUIPractitioner)
@@ -58,6 +61,7 @@ Title:    "Modèle de contenu DUI"
 * identifier -> "idObjectif"
 * lifecycleStatus -> "statutObjectif.statut"
 * meta.lastUpdated -> "statutObjectif.dateStatut"
+* lifecycleStatus.extension[auteurStatut] -> "statutObjectif.auteur"
 * addresses -> "Besoin"
 * expressedBy -> "referentObjectif"
 * note[titreObjectif].text -> "titreObjectif"

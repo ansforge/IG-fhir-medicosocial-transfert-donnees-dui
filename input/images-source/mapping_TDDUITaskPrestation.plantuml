@@ -17,6 +17,7 @@ map "**PrestationProjetPersonnalise : TDDUITaskPrestation**" as PrestationProjet
     idPrestation => identifier
     statutPrestation.statut => status
     statutPrestation.dateStatut => meta.lastUpdated
+    statutPrestation.auteur => <&plus> auteurStatut
     descriptionPrestation => description
     titrePrestation => <&layers> input:titre
     typePrestation => <&layers> input:typePrestation

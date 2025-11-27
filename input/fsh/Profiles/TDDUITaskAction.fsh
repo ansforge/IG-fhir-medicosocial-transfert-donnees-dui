@@ -12,6 +12,9 @@ Description: "Profil de la ressource Task permettant de représenter les actions
 * identifier.system 1..1
 * identifier.system = "https://identifiant-medicosocial-action.esante.gouv.fr"
 
+* status.extension contains 
+    TDDUIStatusAuthor named auteurStatut 0..1
+
 * input ^slicing.discriminator.type = #pattern
 * input ^slicing.discriminator.path = "type"
 * input ^slicing.rules = #open
@@ -62,6 +65,7 @@ Title:    "Modèle de contenu DUI"
 
 * status -> "statutAction.statut"
 * meta.lastUpdated -> "statutAction.dateStatut"
+* status.extension[auteurStatut] -> "statutAction.auteur"
 * identifier -> "idAction"
 * owner -> "referentAction"
 * input[titre] -> "titreAction"
