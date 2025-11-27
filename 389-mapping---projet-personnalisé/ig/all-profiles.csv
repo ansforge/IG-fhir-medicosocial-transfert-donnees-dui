@@ -1647,6 +1647,18 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 This element is labeled as a modifier because the status contains the code entered-in-error that marks the plan as not currently valid.","Allows clinicians to determine whether the plan is actionable or not.","","","","","","","",,"required","Indicates whether the plan is currently being acted upon, represents future intentions or is now a historical record.","http://hl7.org/fhir/ValueSet/request-status|4.0.1","",,,,"CarePlan.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
+"tddui-careplan-projet-personnalise","CarePlan.status.id","CarePlan.status.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references)","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"tddui-careplan-projet-personnalise","CarePlan.status.extension","CarePlan.status.extension","","","",0,*,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"tddui-careplan-projet-personnalise","CarePlan.status.extension:auteurStatut","CarePlan.status.extension","auteurStatut","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-status-author]]} {[]}
+","TDDUI Profession","Extension permettant de représenter la profession du professionnel.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"tddui-careplan-projet-personnalise","CarePlan.status.value","CarePlan.status.value","","","",0,1,"","","","string {[]} {[]}
+","Primitive value for code","Primitive value for code","","","","","","","","","",,,,,"",,,,"string.value",0,1,"",""
 "tddui-careplan-projet-personnalise","CarePlan.intent","CarePlan.intent","","","",1,1,"","Y","Y","code {[]} {[]}
 ","proposal | plan | order | option","Indicates the level of authority/intentionality associated with the care plan and where the care plan fits into the workflow chain.","This element is labeled as a modifier because the intent alters when and how the resource is actually applicable.","Proposals/recommendations, plans and orders all use the same structure and can exist in the same fulfillment chain.","","","","","","","",,"required","Codes indicating the degree of authority/intentionality associated with a care plan.","http://hl7.org/fhir/ValueSet/care-plan-intent|4.0.1","",,,,"CarePlan.intent",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -3802,6 +3814,18 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "tddui-goal-objectif","Goal.lifecycleStatus","Goal.lifecycleStatus","","","",1,1,"","Y","Y","code {[]} {[]}
 ","proposed | planned | accepted | active | on-hold | completed | cancelled | entered-in-error | rejected","The state of the goal throughout its lifecycle.","This element is labeled as a modifier because the lifecycleStatus contains codes that mark the resource as not currently valid.","Allows knowing whether goal needs to be further tracked.","","","","","","","",,"required","Codes that reflect the current state of a goal and whether the goal is still being targeted.","http://hl7.org/fhir/ValueSet/goal-status|4.0.1","",,,,"Goal.lifecycleStatus",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
+"tddui-goal-objectif","Goal.lifecycleStatus.id","Goal.lifecycleStatus.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references)","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"tddui-goal-objectif","Goal.lifecycleStatus.extension","Goal.lifecycleStatus.extension","","","",0,*,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"tddui-goal-objectif","Goal.lifecycleStatus.extension:auteurStatut","Goal.lifecycleStatus.extension","auteurStatut","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-status-author]]} {[]}
+","TDDUI Profession","Extension permettant de représenter la profession du professionnel.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"tddui-goal-objectif","Goal.lifecycleStatus.value","Goal.lifecycleStatus.value","","","",0,1,"","","","string {[]} {[]}
+","Primitive value for code","Primitive value for code","","","","","","","","","",,,,,"",,,,"string.value",0,1,"",""
 "tddui-goal-objectif","Goal.achievementStatus","Goal.achievementStatus","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
 ","in-progress | improving | worsening | no-change | achieved | sustaining | not-achieved | no-progress | not-attainable","Describes the progression, or lack thereof, towards the goal against the target.","","","","","","","","","",,"preferred","Indicates the progression, or lack thereof, towards the goal against the target.","http://hl7.org/fhir/ValueSet/goal-achievement|4.0.1","",,,,"Goal.achievementStatus",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -7167,6 +7191,21 @@ string {[]} {[]}","Individual responsible for the annotation","The individual re
 "tddui-service-request-besoin","ServiceRequest.relevantHistory","ServiceRequest.relevantHistory","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Provenance|4.0.1]]}
 ","Request provenance","Key events in the history of the request.","This might not include provenances for all versions of the request – only those deemed “relevant” or important.This SHALL NOT include the Provenance associated with this current version of the resource.  (If that provenance is deemed to be a “relevant” change, it will need to be added as part of a later update.  Until then, it can be queried directly as the Provenance that points to this version using _revincludeAll Provenances should have some historical version of this Request as their subject.","","","","","","","","",,,,,"",,,,"ServiceRequest.relevantHistory",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
+"tddui-status-author","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","TDDUI Profession","Extension permettant de représenter la profession du professionnel.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"tddui-status-author","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"tddui-status-author","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"tddui-status-author","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-status-author""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"tddui-status-author","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner], CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role]]}
+","Auteur du statut.","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
 "tddui-task-action","Task","Task","","","",0,*,"","","","null {[]} {[]}
 ","A task to be performed","A task to be performed.","","","","","","","","","",,,,,"",,,,"Task",0,*,"","dom-2:If the resource is contained in another resource, it SHALL NOT contain nested Resources {contained.contained.empty()}
 dom-3:If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource {contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()}dom-4:If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated {contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()}dom-5:If a resource is contained in another resource, it SHALL NOT have a security label {contained.meta.security.empty()}dom-6:A resource should have narrative for robust management {text.`div`.exists()}inv-1:Last modified date must be greater than or equal to authored-on date. {lastModified.exists().not() or authoredOn.exists().not() or lastModified >= authoredOn}"
@@ -7271,6 +7310,18 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "tddui-task-action","Task.status","Task.status","","","",1,1,"","Y","Y","code {[]} {[]}
 ","draft | requested | received | accepted | +","The current status of the task.","","These states enable coordination of task status with off-the-shelf workflow solutions that support automation of tasks.","","","","","","","",,"required","The current status of the task.","http://hl7.org/fhir/ValueSet/task-status|4.0.1","",,,,"Task.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
+"tddui-task-action","Task.status.id","Task.status.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references)","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"tddui-task-action","Task.status.extension","Task.status.extension","","","",0,*,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"tddui-task-action","Task.status.extension:auteurStatut","Task.status.extension","auteurStatut","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-status-author]]} {[]}
+","TDDUI Profession","Extension permettant de représenter la profession du professionnel.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"tddui-task-action","Task.status.value","Task.status.value","","","",0,1,"","","","string {[]} {[]}
+","Primitive value for code","Primitive value for code","","","","","","","","","",,,,,"",,,,"string.value",0,1,"",""
 "tddui-task-action","Task.statusReason","Task.statusReason","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
 ","Reason for current status","An explanation as to why this task is held, failed, was refused, etc.","This applies to the current status.  Look at the history of the task to see reasons for past statuses.","","","","","","","","",,"example","Codes to identify the reason for current status.  These will typically be specific to a particular workflow.","","",,,,"Task.statusReason",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -8481,6 +8532,18 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "tddui-task-prestation","Task.status","Task.status","","","",1,1,"","Y","Y","code {[]} {[]}
 ","draft | requested | received | accepted | +","The current status of the task.","","These states enable coordination of task status with off-the-shelf workflow solutions that support automation of tasks.","","","","","","","",,"required","The current status of the task.","http://hl7.org/fhir/ValueSet/task-status|4.0.1","",,,,"Task.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
+"tddui-task-prestation","Task.status.id","Task.status.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references)","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"tddui-task-prestation","Task.status.extension","Task.status.extension","","","",0,*,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"tddui-task-prestation","Task.status.extension:auteurStatut","Task.status.extension","auteurStatut","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-status-author]]} {[]}
+","TDDUI Profession","Extension permettant de représenter la profession du professionnel.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"tddui-task-prestation","Task.status.value","Task.status.value","","","",0,1,"","","","string {[]} {[]}
+","Primitive value for code","Primitive value for code","","","","","","","","","",,,,,"",,,,"string.value",0,1,"",""
 "tddui-task-prestation","Task.statusReason","Task.statusReason","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
 ","Reason for current status","An explanation as to why this task is held, failed, was refused, etc.","This applies to the current status.  Look at the history of the task to see reasons for past statuses.","","","","","","","","",,"example","Codes to identify the reason for current status.  These will typically be specific to a particular workflow.","","",,,,"Task.statusReason",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "

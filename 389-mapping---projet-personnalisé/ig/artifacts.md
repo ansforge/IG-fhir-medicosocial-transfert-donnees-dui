@@ -97,6 +97,7 @@ These define constraints on FHIR data types for systems conforming to this imple
 | [TDDUI CarePlan SupportingInfo](StructureDefinition-tddui-care-plan-supportinginfo.md) | Extension pour discriminer l'élément CarePlan.supportingInfo. |
 | [TDDUI Goal Note](StructureDefinition-tddui-goal-note.md) | Extension pour discriminer l'élément Goal.note. |
 | [TDDUI Profession](StructureDefinition-tddui-profession.md) | Extension permettant de représenter la profession du professionnel. |
+| [TDDUI Profession](StructureDefinition-tddui-status-author.md) | Extension permettant de représenter la profession du professionnel. |
 | [Usager présent](StructureDefinition-tddui-patient-present.md) | Evènement nécessitant ou non la présence physique de l’usager. |
 | [Évènement annulé](StructureDefinition-tddui-event-cancel-reason.md) | Motif associé au statut de non-réalisation de l’évènement. |
 

@@ -261,6 +261,13 @@
         "Dosage",
         "Meta"
       ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-status-author",
+      "title": "TDDUI Profession",
+      "types": [
+        "Reference"
+      ]
     }
   ],
   "profiles": {
@@ -572,6 +579,11 @@
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used": [
       "Bundle.entry.resource",
       "Encounter"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-status-author": [
+      "CarePlan.status",
+      "Goal.lifecycleStatus",
+      "Task.status"
     ]
   }
 }

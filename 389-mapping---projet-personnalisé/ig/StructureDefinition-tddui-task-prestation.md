@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-prestatio
   "name" : "TDDUITaskPrestation",
   "title" : "TDDUI Task Prestation",
   "status" : "active",
-  "date" : "2025-11-27T16:23:25+00:00",
+  "date" : "2025-11-27T17:29:29+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -197,6 +197,41 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-prestatio
           {
             "identity" : "specmetier-to-TDDUITaskPrestation",
             "map" : "statutPrestation.statut"
+          }
+        ]
+      },
+      {
+        "id" : "Task.status.extension",
+        "path" : "Task.status.extension",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "value",
+              "path" : "url"
+            }
+          ],
+          "ordered" : false,
+          "rules" : "open"
+        }
+      },
+      {
+        "id" : "Task.status.extension:auteurStatut",
+        "path" : "Task.status.extension",
+        "sliceName" : "auteurStatut",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Extension",
+            "profile" : [
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-status-author"
+            ]
+          }
+        ],
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUITaskPrestation",
+            "map" : "statutPrestation.auteur"
           }
         ]
       },

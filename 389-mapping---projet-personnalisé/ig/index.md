@@ -140,7 +140,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2025-11-27T16:23:25+00:00",
+  "date" : "2025-11-27T17:29:29+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -1605,6 +1605,20 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "TDDUI Practitioner Role",
         "description" : "Profil de la ressource FRCorePractitionerRole permettant de représenter un Professionnel.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/tddui-status-author"
+        },
+        "name" : "TDDUI Profession",
+        "description" : "Extension permettant de représenter la profession du professionnel.",
         "exampleBoolean" : false
       },
       {

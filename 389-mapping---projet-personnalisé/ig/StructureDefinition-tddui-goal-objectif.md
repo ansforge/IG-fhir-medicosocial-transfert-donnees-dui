@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-objectif.
   "name" : "TDDUIGoalObjectif",
   "title" : "TDDUI Goal Objectif",
   "status" : "active",
-  "date" : "2025-11-27T16:23:25+00:00",
+  "date" : "2025-11-27T17:29:29+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -226,6 +226,41 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-objectif.
           {
             "identity" : "specmetier-to-TDDUIGoalObjectif",
             "map" : "statutObjectif.statut"
+          }
+        ]
+      },
+      {
+        "id" : "Goal.lifecycleStatus.extension",
+        "path" : "Goal.lifecycleStatus.extension",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "value",
+              "path" : "url"
+            }
+          ],
+          "ordered" : false,
+          "rules" : "open"
+        }
+      },
+      {
+        "id" : "Goal.lifecycleStatus.extension:auteurStatut",
+        "path" : "Goal.lifecycleStatus.extension",
+        "sliceName" : "auteurStatut",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Extension",
+            "profile" : [
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-status-author"
+            ]
+          }
+        ],
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIGoalObjectif",
+            "map" : "statutObjectif.auteur"
           }
         ]
       },

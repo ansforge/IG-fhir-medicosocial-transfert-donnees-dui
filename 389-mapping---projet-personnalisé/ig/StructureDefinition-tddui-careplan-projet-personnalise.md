@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
   "name" : "TDDUICarePlanProjetPersonnalise",
   "title" : "TDDUI CarePlan Projet Personalise",
   "status" : "active",
-  "date" : "2025-11-27T16:23:25+00:00",
+  "date" : "2025-11-27T17:29:29+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -194,6 +194,41 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
           {
             "identity" : "specmetier-to-TDDUICarePlanProjetPersonnalise",
             "map" : "statutProjetPersonnalise.statut"
+          }
+        ]
+      },
+      {
+        "id" : "CarePlan.status.extension",
+        "path" : "CarePlan.status.extension",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "value",
+              "path" : "url"
+            }
+          ],
+          "ordered" : false,
+          "rules" : "open"
+        }
+      },
+      {
+        "id" : "CarePlan.status.extension:auteurStatut",
+        "path" : "CarePlan.status.extension",
+        "sliceName" : "auteurStatut",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Extension",
+            "profile" : [
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-status-author"
+            ]
+          }
+        ],
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUICarePlanProjetPersonnalise",
+            "map" : "statutProjetPersonnalise.auteur"
           }
         ]
       },
