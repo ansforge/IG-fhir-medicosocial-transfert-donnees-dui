@@ -1451,10 +1451,6 @@ L'objectif correspond au résultat à atteindre dans le cadre du projet personna
     <td>Date de fin de l'objectif.</td>
   </tr>
   <tr>
-    <td>evaluationObjectif : [0..*] <a href="#classe-evaluation">Evaluation</a></td>
-    <td>Evaluation de l'objectif.</td>
-  </tr>
-  <tr>
     <td>avisUsagerObjectif : [0..1] Texte</td>
     <td>Avis de l'usager sur l'objectif.</td>
   </tr>
