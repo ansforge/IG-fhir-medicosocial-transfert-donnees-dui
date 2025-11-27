@@ -1355,7 +1355,7 @@ Le projet personnalisé est un document co-construit par l'usager, son entourage
   <tr>
     <td>typeProjetPersonnalise : [0..1] Code</td>
     <td>Type de projet personnalisé.<br>
-    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j367-type-projet-personnalise-ms">JDV-J367-type-projet-personnalise-ms</td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j367-type-projet-personnalise-ms">JDV-J367-type-projet-personnalise-ms</a></td>
   </tr>
   <tr>
     <td>modaliteCommunicationProjetPersonnalise : [0..1] Texte</td>
@@ -1364,6 +1364,22 @@ Le projet personnalisé est un document co-construit par l'usager, son entourage
   <tr>
     <td>accordUsagerProjetPersonnalise : [0..*] <a href="#classe-accord">Accord</a></td>
     <td>Accord de l'usager et/ou de son entourage.</td>
+  </tr>
+   <tr>
+    <td>accordStructureProjetPersonnalise : [1..*] <a href="#classe-accord">Accord</a></td>
+    <td>Accord de la structure.</td>
+  </tr>
+  <tr>
+    <td>dateDebutMiseEnOeuvreProjetPersonnalise : [0..1] DateHeure</td>
+    <td>Date de début de mise en œuvre du projet personnalisé.</td>
+  </tr>
+  <tr>
+    <td>dateFinMiseEnOeuvreProjetPersonnalise : [0..1] DateHeure</td>
+    <td>Date de fin de mise en œuvre du projet personnalisé.</td>
+  </tr>
+  <tr>
+    <td>entrantProjetPersonnalisee : [0..*] ObjetBinaire</td>
+    <td>Entrant(s) du projet personnalisé.</td>
   </tr>
 </table>
 
