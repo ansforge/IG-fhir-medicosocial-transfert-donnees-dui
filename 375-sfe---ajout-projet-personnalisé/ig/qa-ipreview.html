@@ -73,14 +73,14 @@ This material derives from the HL7 Terminology (THO). THO is copyright &copy;198
             <ul>
 
               <li>
-                <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v2-0203.html">identifierType</a>
+                <a href="http://terminology.hl7.org/7.0.0/CodeSystem-v2-0203.html">identifierType</a>
 :                 <a href="Patient-tddui-patient-example.html">Patient/tddui-patient-example</a>
 ,                 <a href="StructureDefinition-tddui-patient.html">TDDUIPatient</a>
  and                 <a href="StructureDefinition-tddui-patient-ins.html">TDDUIPatientINS</a>
               </li>
 
               <li>
-                <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html">ActCode</a>
+                <a href="http://terminology.hl7.org/7.0.0/CodeSystem-v3-ActCode.html">ActCode</a>
 :                 <a href="Bundle-ExampleTDDUIBundle.html">Bundle/ExampleTDDUIBundle</a>
  and                 <a href="Encounter-tddui-encounter-sejour-example.html">Encounter/tddui-encounter-sejour-example</a>
               </li>
@@ -101,7 +101,7 @@ This material derives from the HL7 Terminology (THO). THO is copyright &copy;198
     <ul>
       <li>
 
-          IG &copy; 2023+ ANS.  Package ans.fhir.fr.tddui#2.0.0 based on FHIR 4.0.1. Generated 2025-10-17 
+          IG &copy; 2023+ ANS.  Package ans.fhir.fr.tddui#2.0.0 based on FHIR 4.0.1. Generated 2025-11-27 
           
            
             Liens : Table des matières |
@@ -161,7 +161,7 @@ Médicosocial - Transfert de données DUI - Local Development build (v2.0.0) bui
 
           IG &copy; 2023+           <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>
 .  Package ans.fhir.fr.tddui#2.0.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
-. Generated           <span title="Fri, Oct 17, 2025 12:16+0000">2025-10-17</span>
+. Generated           <span title="Thu, Nov 27, 2025 15:06+0000">2025-11-27</span>
 
                     <br/>
 
@@ -193,7 +193,7 @@ Médicosocial - Transfert de données DUI - Local Development build (v2.0.0) bui
 
           IG &copy; 2023+           <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>
 .  Package ans.fhir.fr.tddui#2.0.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
-. Generated           <span title="Fri, Oct 17, 2025 12:16+0000">2025-10-17</span>
+. Generated           <span title="Thu, Nov 27, 2025 15:06+0000">2025-11-27</span>
 
                     <br/>
 
@@ -225,7 +225,7 @@ Médicosocial - Transfert de données DUI - Local Development build (v2.0.0) bui
 
           IG &copy; 2023+           <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>
 .  Package ans.fhir.fr.tddui#2.0.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
-. Generated           <span title="Fri, Oct 17, 2025 12:16+0000">2025-10-17</span>
+. Generated           <span title="Thu, Nov 27, 2025 15:06+0000">2025-11-27</span>
 
                     <br/>
 
@@ -1383,7 +1383,19 @@ Les évolutions de ce guide d’implémentation sont limitées à des correction
           <a href="https://www.cnsa.fr/informations-thematiques/systeme-dinformation-et-numerique/sidoba">www.cnsa.fr</a>
         </td>
         <td>
-La mise en œuvre de ce cas d'usage se matérialise par l'export partiel de données portant par exemple sur l’activité des Services de soins infirmiers à domicile (SSIAD) destinés aux personnages âgées et aux personnes handicapées, vers le système d’information de la CNSA (          <a href="https://www.cnsa.fr/informations-thematiques/systeme-dinformation-et-numerique/sidoba">SIDOBA</a>
+La mise en œuvre de ce cas d'usage se matérialise par l'export partiel de données portant sur l’activité des Services de soins infirmiers à domicile (SSIAD) destinés aux personnages âgées et aux personnes handicapées, vers le système d’information de la CNSA (          <a href="https://www.cnsa.fr/informations-thematiques/systeme-dinformation-et-numerique/sidoba">SIDOBA</a>
+ = système d’information de l’offre de la branche autonomie).
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_cas_usage.html">web</a>
+        </td>
+        <td>
+          <a href="https://www.cnsa.fr/informations-thematiques/systeme-dinformation-et-numerique/sidoba">www.cnsa.fr</a>
+        </td>
+        <td>
+Dans ce cas d'usage, le Projet personnalisé de l'usager est envoyé par le logiciel DUI vers le système d’information de la CNSA (          <a href="https://www.cnsa.fr/informations-thematiques/systeme-dinformation-et-numerique/sidoba">SIDOBA</a>
  = système d’information de l’offre de la branche autonomie).
         </td>
       </tr>
@@ -1860,7 +1872,7 @@ JDV-J367-type-projet-personnalise-ms&lt;/td&gt;
     <td>Entrant(s) du projet personnalisé.</td>
   </tr>
 &lt;/table&gt;
-
+--&gt;
 ##### Classe Besoin
 Chaque usager a des attentes et des besoins singuliers, que le professionnel s’emploie à intégrer dans le projet personnalisé en tenant compte de l'évolution de sa situation, de ses aspirations et ses spécificités. Le besoin peut découler des attentes.
 
@@ -2045,9 +2057,9 @@ Le moyen ou la ressource sert à réaliser le projet personnalisé. Le moyen ou 
     <td>Evaluation du moyen ou de la ressource.</td>
   </tr>
   <tr>
-  <td>pieceJointeMoyenRessource : [0..*] ObjetBinaire</td>
-  <td>Pièce(s) jointe(s) du moyen ou de la ressource.</td>
-</tr>
+    <td>pieceJointeMoyenRessource : [0..*] ObjetBinaire</td>
+    <td>Pièce(s) jointe(s) du moyen ou de la ressource.</td>
+  </tr>
 </table>
 
 ##### Classe PrestationProjetPersonnalise
@@ -2074,7 +2086,7 @@ La prestation désigne ce qui doit être accompli ou fourni à l'usager.Elle peu
     <td>typePrestation : [0..*] Code</td>
     <td>Type de la prestation.<br/>
     Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J283-PrestationsIndirects_SERAFIN/FHIR/JDV-J283-PrestationsIndirects-SERAFIN">JDV-J283-PrestationsIndirects-SERAFIN</a>, <a href="https://mos.esante.gouv.fr/NOS/JDV_J284-PrestationsDirects_SERAFIN/FHIR/JDV-J284-PrestationsDirects-SERAFIN">JDV-J284-PrestationsDirects-SERAFIN</a>
-</td>
+    </td>
   </tr>
 <tr>
   <td>dateDebutPrestation : [0..1] DateHeure</td>
@@ -2950,7 +2962,7 @@ Type de la prestation.          <br/>
     Jeu(x) de valeur(s) associé(s) :           <a href="https://mos.esante.gouv.fr/NOS/JDV_J283-PrestationsIndirects_SERAFIN/FHIR/JDV-J283-PrestationsIndirects-SERAFIN">JDV-J283-PrestationsIndirects-SERAFIN</a>
 ,           <a href="https://mos.esante.gouv.fr/NOS/JDV_J284-PrestationsDirects_SERAFIN/FHIR/JDV-J284-PrestationsDirects-SERAFIN">JDV-J284-PrestationsDirects-SERAFIN</a>
 
-
+    
         </td>
       </tr>
       <tr>
@@ -2966,7 +2978,7 @@ Type de la prestation.          <br/>
     Jeu(x) de valeur(s) associé(s) :           <a href="https://mos.esante.gouv.fr/NOS/JDV_J283-PrestationsIndirects_SERAFIN/FHIR/JDV-J283-PrestationsIndirects-SERAFIN">JDV-J283-PrestationsIndirects-SERAFIN</a>
 ,           <a href="https://mos.esante.gouv.fr/NOS/JDV_J284-PrestationsDirects_SERAFIN/FHIR/JDV-J284-PrestationsDirects-SERAFIN">JDV-J284-PrestationsDirects-SERAFIN</a>
 
-
+    
         </td>
       </tr>
       <tr>
@@ -3255,7 +3267,7 @@ accordStructureProjetPersonnalise : [1..*]               <a href="#classe-accord
           </tr>
 
 &lt;/table&gt;
-
+--&gt;
 ##### Classe Besoin
 Chaque usager a des attentes et des besoins singuliers, que le professionnel s’emploie à intégrer dans le projet personnalisé en tenant compte de l'évolution de sa situation, de ses aspirations et ses spécificités. Le besoin peut découler des attentes.
 
@@ -3691,11 +3703,11 @@ evaluationMoyenRessource : [0..1]                 <a href="#classe-evaluation">E
 
               <tr>
 
-                <td>pieceJointeMoyenRessource : [0..*] ObjetBinaire</td>
+                  <td>pieceJointeMoyenRessource : [0..*] ObjetBinaire</td>
 
-                <td>Pièce(s) jointe(s) du moyen ou de la ressource.</td>
+                  <td>Pièce(s) jointe(s) du moyen ou de la ressource.</td>
 
-
+  
             </tr>
 
 
@@ -3757,7 +3769,7 @@ Type de la prestation.                <br/>
     Jeu(x) de valeur(s) associé(s) :                 <a href="https://mos.esante.gouv.fr/NOS/JDV_J283-PrestationsIndirects_SERAFIN/FHIR/JDV-J283-PrestationsIndirects-SERAFIN">JDV-J283-PrestationsIndirects-SERAFIN</a>
 ,                 <a href="https://mos.esante.gouv.fr/NOS/JDV_J284-PrestationsDirects_SERAFIN/FHIR/JDV-J284-PrestationsDirects-SERAFIN">JDV-J284-PrestationsDirects-SERAFIN</a>
 
-
+    
               </td>
 
   

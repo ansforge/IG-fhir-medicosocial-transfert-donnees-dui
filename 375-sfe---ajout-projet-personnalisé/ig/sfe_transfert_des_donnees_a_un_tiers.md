@@ -22,18 +22,15 @@
 
 #### Le producteur
 
-Le rôle de producteur incarné par un système est l’acteur à l’origine de l’export des données.
-
-* Processus collaboratif: Export des données d’un logiciel DUI
-  * Producteur: **DUI**: Logiciel Métier utilisé par les ESSMS permettant de gérer les dossiers des usagers avant, pendant et après son accompagnement
+Le rôle de producteur incarné par un système correspond à l’acteur à l’origine de l’export des données d’un logiciel DUI.
 
 #### Le consommateur
 
-Le rôle de consommateur incarné par un système est de réceptionner et d’importer les données dans son système (SI-tiers).
+Le rôle de consommateur incarné par un système se caractérise par réceptionner puis importer l’export des données DUI dans son système (SI-tiers).
 
 ### Identification des flux
 
-* Processus métier: * Transfert des données d'un logiciel DUI
+* Processus métier: * Export des données d'un logiciel DUI
 
   * Flux techniques: * Flux 1.1 - Transmission de données DUI
 * Flux 1.2 - Résultat de la transmission de données DUI

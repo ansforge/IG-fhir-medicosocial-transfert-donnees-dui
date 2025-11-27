@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui | *Version*:2.0.0 |
-| Active as of 2025-10-17 | *Computable Name*:TDDUI |
+| Active as of 2025-11-27 | *Computable Name*:TDDUI |
 
  **Brief description of this Implementation Guide**
  The Digital User File (DUI) centralizes all information concerning the person being cared for in social and medico-social facilities and services. The aim of this implementation guide is to define the specifications for DUI data transfer. 
@@ -106,7 +106,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2025-10-17T12:16:13+00:00",
+  "date" : "2025-11-27T15:06:56+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -144,7 +144,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
       ],
       "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
       "packageId" : "hl7.terminology.r4",
-      "version" : "6.5.0"
+      "version" : "7.0.0"
     },
     {
       "id" : "hl7_fhir_fr_core",
@@ -156,7 +156,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
       "id" : "ans_fr_terminologies",
       "uri" : "https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies",
       "packageId" : "ans.fr.terminologies",
-      "version" : "1.2.0"
+      "version" : "1.4.0"
     },
     {
       "id" : "hl7_fhir_uv_extensions",

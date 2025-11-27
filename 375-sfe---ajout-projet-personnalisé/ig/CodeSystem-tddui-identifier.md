@@ -9,12 +9,12 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-identifier | *Version*:2.0.0 |
-| Active as of 2025-10-17 | *Computable Name*:TDDUIIdentifier |
+| Active as of 2025-11-27 | *Computable Name*:TDDUIIdentifier |
 
  
 TDDUI Patient's identifier 
 
- This Code system is referenced in the content logical definition of the following value sets: 
+ Cette terminologie de référence (CodeSystem) est référencé dans la définition de contenu des jeux de valeurs (ValueSet) suivants : 
 
 * Cette terminologie de référence (CodeSystem) nest pas utilisée ici; elle peut être utilisée ailleurs (par exemple spécifications et/ou implémentations qui utilisent ce contenu)
 
@@ -37,7 +37,7 @@ TDDUI Patient's identifier
   "title" : "TDDUI FR Core CodeSystem v2-0203",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-10-17T12:16:13+00:00",
+  "date" : "2025-11-27T15:06:56+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

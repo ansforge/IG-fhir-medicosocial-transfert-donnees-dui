@@ -20,11 +20,11 @@ Profil: [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md)
 
 **status**: In Progress
 
-**class**: [ActCode HH](http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-HH): home health
+**class**: [ActCode: HH](http://terminology.hl7.org/7.0.0/CodeSystem-v3-ActCode.html#v3-ActCode-HH) (home health)
 
 **subject**: [DUPONT Male, Date de Naissance :1947-04-03 ( NIR définitif (use: official, ))](Patient-tddui-patient-ins-example.md)
 
-**period**: 2023-04-14 --> (ongoing)
+**period**: 2023-04-14 --> (en cours)
 
 **serviceProvider**: [Organization Les Chênes Verts](Organization-tddui-organization-example.md)
 

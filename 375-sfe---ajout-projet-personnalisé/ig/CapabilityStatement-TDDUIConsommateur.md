@@ -20,17 +20,17 @@ Le rôle du Consommateur est de recueillir les données d'un logiciel DUI. Il co
 
 * Version du guide dimplémentation : {0} 
 * Version de FHIR : 4.0.1 
-* Supported Formats: `application/fhir+xml`, `application/fhir+json`
+* Formats supportés : `application/fhir+xml`, `application/fhir+json`
 * Publié sur : 2024-06-20 09:51:35+0200 
 * Publié par : ANS 
 
-> **Note aux implémenteurs : capacités FHIR**Any FHIR capability may be 'allowed' by the system unless explicitly marked as 'SHALL NOT'. A few items are marked as MAY in the Implementation Guide to highlight their potential relevance to the use case.
+> **Note aux implémenteurs : capacités FHIR**Toute capacité FHIR peut être 'autorisée' par le système sauf si elle est explicitement marquée comme 'SHALL NOT'. Quelques éléments sont marqués comme MAY dans le guide dimplémentation pour souligner leur pertinence potentielle pour le cas dusage.
 
 ### DOIT prendre en charge les guides d’implémentation suivants.
 
 * https://interop.esante.gouv.fr/ig/fhir/tddui
 
-## FHIR RESTful Capabilities
+## Capacités RESTful FHIR
 
 ### Mode: client
 
@@ -43,78 +43,78 @@ Réception de données transmises depuis un logiciel DUI (flux 1).
 L’ANS propose des référentiels dédiés à la politique de sécurité (la PGSSI-S) et des mécanismes de sécurisation sont définis dans les volets de la couche Transport du Cadre d’Interopérabilité des systèmes d’information de santé (CI-SIS)
 
 
-**Summary of System-wide Interactions**
+**Résumé des interactions au niveau du système**
 
-* Supports the `transaction`Les interactions sont décrites comme suit :
+* Supporte le/la `transaction`Les interactions sont décrites comme suit :
 
 https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle
 
 
-### Capabilities by Resource/Profile
+### Capacités par ressource/profil
 
 #### Résumé
 
 Le tableau récapitulatif liste les ressources faisant partie de cette configuration, et pour chaque ressource, il liste :
 
-* The relevant profiles (if any)
+* Les profils pertinents (le cas échéant)
 * Les interactions supportées par chaque ressource (**R**ead, **S**earch, **U**pdate, and **C**reate, are always shown, while **VR**ead, **P**atch, **D**elete, **H**istory on **I**nstance, or **H**istory on **T**les types sont seulement présents si au moins une des ressources les prend en charge.
 * Les paramètres de recherche (SearchParameters) requis, recommandés, optionnels (le cas échéant).
-* The linked resources enabled for `_include`
-* The other resources enabled for `_revinclude`
-* The operations on the resource (if any)
+* Les ressources liées activées pour `_include`
+* Les autres ressources activées pour `_revinclude`
+* Les opérations sur la ressource (le cas échéant)
 
 | | | | | | | | | | |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| [Patient](#Patient1-1) | Supported Profiles  [TDDUI Patient](StructureDefinition-tddui-patient.md)  [TDDUI Patient INS](StructureDefinition-tddui-patient-ins.md) | y |  |  |  |  |  |  |  |
-| [Organization](#Organization1-2) | Supported Profiles  [TDDUI Organization](StructureDefinition-tddui-organization.md) | y |  |  |  |  |  |  |  |
-| [Encounter](#Encounter1-3) | Supported Profiles  [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md) | y |  |  |  |  |  |  |  |
+| [Patient](#Patient1-1) | Profils supportés  [TDDUI Patient](StructureDefinition-tddui-patient.md)  [TDDUI Patient INS](StructureDefinition-tddui-patient-ins.md) | y |  |  |  |  |  |  |  |
+| [Organization](#Organization1-2) | Profils supportés  [TDDUI Organization](StructureDefinition-tddui-organization.md) | y |  |  |  |  |  |  |  |
+| [Encounter](#Encounter1-3) | Profils supportés  [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md) | y |  |  |  |  |  |  |  |
 
 -------
 
-#### Resource Conformance: supported Patient
+#### Conformité de la ressource : supported Patient
 
 Ressource FHIR coeur
 
 [Patient](http://hl7.org/fhir/R4/patient.html)
 
-Reference Policy
+Politique de référence
 
 Résumé des interactions
 
-* Supports `read`.
+* Supporte `read`.
 
-Supported Profiles
+Profils supportés
 [TDDUI Patient](StructureDefinition-tddui-patient.md)
 [TDDUI Patient INS](StructureDefinition-tddui-patient-ins.md)
 
-#### Resource Conformance: supported Organization
+#### Conformité de la ressource : supported Organization
 
 Ressource FHIR coeur
 
 [Organization](http://hl7.org/fhir/R4/organization.html)
 
-Reference Policy
+Politique de référence
 
 Résumé des interactions
 
-* Supports `read`.
+* Supporte `read`.
 
-Supported Profiles
+Profils supportés
 [TDDUI Organization](StructureDefinition-tddui-organization.md)
 
-#### Resource Conformance: supported Encounter
+#### Conformité de la ressource : supported Encounter
 
 Ressource FHIR coeur
 
 [Encounter](http://hl7.org/fhir/R4/encounter.html)
 
-Reference Policy
+Politique de référence
 
 Résumé des interactions
 
-* Supports `read`.
+* Supporte `read`.
 
-Supported Profiles
+Profils supportés
 [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md)
 
 
