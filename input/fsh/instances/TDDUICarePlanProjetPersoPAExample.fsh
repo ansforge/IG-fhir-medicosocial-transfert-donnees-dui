@@ -6,6 +6,8 @@ Description: "Exemple d'un projet personnalisé PA"
 * identifier.value = "3480787529/123456789-PPER-1234"
 * identifier.system = "https://identifiant-medicosocial-projetpersonnalise.esante.gouv.fr"
 
+* extension[entrantProjetPerso].valueReference = Reference(entrant-projet-personnalise-pa-example-pp)
+
 * title = "Projet personnalisé de Mme Jeanne L."
 
 * status = #active

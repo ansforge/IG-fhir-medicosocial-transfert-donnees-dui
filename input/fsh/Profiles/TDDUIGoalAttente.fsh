@@ -5,7 +5,8 @@ Title: "TDDUI Goal Attente"
 Description: "Profil de la ressource Goal permettant de représenter les attentes pour un usager."
 
 * extension contains
-    TDDUICarePlanProjetPersoRef named referenceProjetPerso 1..1
+    TDDUICarePlanProjetPersoRef named referenceProjetPerso 1..1 and
+    TDDUIAttachment named pieceJointeAttente 0..*
 
 * identifier 1..1
 * identifier ^short = "Identifiant de l'attente"

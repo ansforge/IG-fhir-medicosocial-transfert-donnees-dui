@@ -1,4 +1,4 @@
-Instance: tddui-servicerequest-besoin-pa-example
+Instance: tddui-servicerequest-besoin-1-pa-example
 InstanceOf: TDDUIServiceRequestBesoin
 Usage: #example
 Description: "Exemple d'un besoin de l'usager dans le cadre du projet personnalisé PA." 
@@ -12,8 +12,6 @@ Description: "Exemple d'un besoin de l'usager dans le cadre du projet personnali
 
 * intent = #plan
 
-* code.text = "Besoin d'aide pour la mobilité et les déplacements.
-Besoin en terme de nutrition et alimentation.
-Besoin de maintien du lien social et d'activités récréatives."
+* code.text = "Besoin d'aide pour la mobilité et les déplacements."
 
 * subject = Reference(tddui-patient-pa-example-pp)

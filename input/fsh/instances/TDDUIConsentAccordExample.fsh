@@ -13,4 +13,4 @@ Description: "Exemple d'un accord de la structure"
 
 * dateTime = "2024-01-15T09:00:00+01:00"
 
-* performer = Reference(tddui-practitioner-example)
+* performer = Reference(tddui-practitioner-ide-pp-example)

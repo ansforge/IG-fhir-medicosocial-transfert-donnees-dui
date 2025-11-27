@@ -3,12 +3,12 @@ InstanceOf: TDDUIGoalAttente
 Usage: #example
 Description: "Exemple des attentes de l'usager dans le cadre du projet personnalisé PA."
 
-* identifier.value = "3480787529/123456789-ATTE-1234"
+* identifier.value = "3480787529/123456789-ATTE-1235"
 * identifier.system = "https://identifiant-medicosocial-attente.esante.gouv.fr"
 
 * lifecycleStatus = #active
 
-* note[origineAttente].text = "Famille"
+* note[origineAttente].text = "Usager"
 * note[origineAttente].extension[TDDUIGoalNoteExtension].valueCode = #origineAttente
 
 * subject = Reference(tddui-patient-pa-example-pp)

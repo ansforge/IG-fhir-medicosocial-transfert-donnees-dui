@@ -6,7 +6,8 @@ Description: "Profil de la ressource Goal permettant de représenter les résult
 
 * extension contains
     TDDUIEvaluationRef named referenceEvaluation 0..* and
-    TDDUICarePlanProjetPersoRef named referenceProjetPerso 1..1
+    TDDUICarePlanProjetPersoRef named referenceProjetPerso 1..1 and
+    TDDUIAttachment named pieceJointeObjectif 0..*
 
 * identifier 1..1
 * identifier ^short = "Identifiant de l'objectif"
