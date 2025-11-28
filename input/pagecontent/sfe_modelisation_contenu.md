@@ -1374,7 +1374,7 @@ Le projet personnalisé est un document co-construit par l'usager, son entourage
     <td>Date de fin de mise en œuvre du projet personnalisé.</td>
   </tr>
   <tr>
-    <td>entrantProjetPersonnalisee : [0..*] ObjetBinaire</td>
+    <td>entrantProjetPersonnalise : [0..*] ObjetBinaire</td>
     <td>Entrant(s) du projet personnalisé.</td>
   </tr>
 </table>
@@ -1439,11 +1439,11 @@ L'objectif correspond au résultat à atteindre dans le cadre du projet personna
     <td>Domaine de l'objectif. La notion de domaine renvoi à des référentiels locaux au sein des structures ESMS.</td>
   </tr>
   <tr>
-    <td>dateDebutObjectif : [0..1] DateHeure</td>
+    <td>dateDebutObjectif : [0..1] Date</td>
     <td>Date de début de l'objectif.</td>
   </tr>
   <tr>
-    <td>dateFinObjectif : [0..1] DateHeure</td>
+    <td>dateFinObjectif : [0..1] Date</td>
     <td>Date de fin de l'objectif.</td>
   </tr>
   <tr>
