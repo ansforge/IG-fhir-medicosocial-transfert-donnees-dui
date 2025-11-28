@@ -45,6 +45,9 @@ Action "0..1" -- "0..*" PrestationProjetPersonnalise
 
 Usager "1" - "0..*" Evaluation
 Objectif "1" - "0..*" Evaluation
+Action "1" - "0..*" Evaluation
+MoyenRessource "1" - "0..1" Evaluation
+PrestationProjetPersonnalise "1" - "0..1" Evaluation
 Evaluation "1" - "0..*" DetailEvaluationN1
 DetailEvaluationN1 "1" - "0..*" DetailEvaluationN2
 

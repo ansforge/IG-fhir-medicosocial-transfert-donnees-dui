@@ -1501,10 +1501,6 @@ L'action est un acte mené dans le cadre du projet personnalisé. Elle peut êtr
     <td>Date de fin de l'action à mener.</td>
   </tr>
   <tr>
-    <td>evaluationAction : [0..*] <a href="#classe-evaluation">Evaluation</a></td>
-    <td>Evaluation de l'action.</td>
-  </tr>
-  <tr>
     <td>avisUsagerAction : [0..1] Texte</td>
     <td>Avis de l'usager sur l'action.</td>
   </tr>
@@ -1559,10 +1555,6 @@ Le moyen ou la ressource sert à réaliser le projet personnalisé. Le moyen ou 
     <td>Date de fin du moyen ou de la ressource.</td>
   </tr>
   <tr>
-    <td>evaluationMoyenRessource : [0..1] <a href="#classe-evaluation">Evaluation</a></td>
-    <td>Evaluation du moyen ou de la ressource.</td>
-  </tr>
-  <tr>
     <td>pieceJointeMoyenRessource : [0..*] ObjetBinaire</td>
     <td>Pièce(s) jointe(s) du moyen ou de la ressource.</td>
   </tr>
@@ -1601,10 +1593,6 @@ La prestation désigne ce qui doit être accompli ou fourni à l'usager.Elle peu
 <tr>
   <td>dateFinPrestation : [0..1] DateHeure</td>
   <td>Date de fin de la prestation.</td>
-</tr>
-<tr>
-  <td>evaluationPrestation : [0..1] <a href="#classe-evaluation">Evaluation</a></td>
-  <td>Evaluation de la prestation.</td>
 </tr>
 <tr>
   <td>statutPrestation : [1..1] <a href="#classe-statut">Statut</a></td>
