@@ -1,12 +1,12 @@
 Instance: tddui-task-action-2-ide-pa-example
 InstanceOf: TDDUITaskAction
 Usage: #example
-Description: "Exemple d'une action de l'objectif 1 réalisée par l'IDE dans le cadre du projet personnalisé PA." 
+Description: "Exemple d'une action de l'objectif 2 réalisée par l'IDE dans le cadre du projet personnalisé PA." 
 
 * identifier.value = "3480787529/123456789-ACTI-12342"
 * identifier.system = "https://identifiant-medicosocial-action.esante.gouv.fr"
 
-* description  = "Réévaluer les traitements avec médecin coord"
+* description  = "Pesée mensuelle et dépistage dénutrition"
 
 * owner = Reference(tddui-practitioner-ide-pp-example)
 
@@ -16,6 +16,6 @@ Description: "Exemple d'une action de l'objectif 1 réalisée par l'IDE dans le 
 
 * intent = #plan
 
-* input[titre].valueString = "Action de l'IDE pour atteindre l'objectif 1"
+* input[titre].valueString = "Action de l'IDE pour atteindre l'objectif 2"
 
-* input[objectif].valueReference = Reference(tddui-goal-objectif-1-pa-example)
+* input[objectif].valueReference = Reference(tddui-goal-objectif-2-pa-example)

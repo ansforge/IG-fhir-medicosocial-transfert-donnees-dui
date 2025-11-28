@@ -24,7 +24,6 @@ Description: "Profil de la ressource Goal permettant de représenter les résult
 
 * expressedBy only Reference(TDDUIPractitionerRole or TDDUIPractitioner)
 
-* addresses 1..1
 * addresses only Reference(TDDUIServiceRequestBesoin)
 
 * subject only Reference(TDDUIPatient or TDDUIPatientINS)

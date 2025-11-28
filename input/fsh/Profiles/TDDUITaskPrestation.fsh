@@ -5,7 +5,7 @@ Title: "TDDUI Task Prestation"
 Description: "Profil de la ressource Task permettant de représenter les prestations du projet personnalisé."
 
 * identifier 1..1
-* identifier ^short = "Identifiant de l'action"
+* identifier ^short = "Identifiant de la prestation"
 * identifier.value 1..1
 * identifier.value ^example[0].label = "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-PRES-numPrestation"
 * identifier.value ^example[0].valueString = "3480787529/123456789-PRES-1234"

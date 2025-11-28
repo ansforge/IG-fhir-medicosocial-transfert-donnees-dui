@@ -20,10 +20,10 @@ TDDUICarePlanProjetPerso <-- TDDUITaskAction : task.basedOn (1..1)
 TDDUICarePlanProjetPerso <-- TDDUITaskMoyenRessource : task.basedOn (1..1)
 
 TDDUIServiceRequestBesoin <- TDDUIGoalObjectif : TDDUIServiceRequestBesoin.addresses (0..*)
-TDDUIGoalObjectif <- TDDUITaskAction : TDDUITaskAction.for (0..*)
-TDDUITaskAction <- TDDUITaskMoyenRessource  : TDDUITaskMoyenRessource.parfOf (0..1)
+TDDUIGoalObjectif <- TDDUITaskAction : TDDUITaskAction.input (0..*)
+TDDUITaskAction <- TDDUITaskMoyenRessource : TDDUITaskMoyenRessource.partOf (0..1)
 
-TDDUITaskAction --> TDDUITaskPrestation : TDDUITaskPrestationProjetPerso.parfOf (0..1)
+TDDUITaskAction <-- TDDUITaskPrestation : TDDUITaskPrestationProjetPerso.partOf (0..1)
 TDDUICarePlanProjetPerso <- TDDUITaskPrestation : task.basedOn (1..1)
 
 TDDUICarePlanProjetPerso <- TDDUITaskBilan : task.basedOn (1..1)
