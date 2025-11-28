@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
   "name" : "TDDUIBundle",
   "title" : "TDDUI Bundle",
   "status" : "active",
-  "date" : "2025-11-28T10:36:38+00:00",
+  "date" : "2025-11-28T15:30:37+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

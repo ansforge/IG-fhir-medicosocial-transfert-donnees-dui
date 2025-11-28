@@ -634,7 +634,7 @@ Le projet personnalisé est un document co-construit par l'usager, son entourage
   * Description: Date de début de mise en œuvre du projet personnalisé.
 * Nom: dateFinMiseEnOeuvreProjetPersonnalise : [0..1] DateHeure
   * Description: Date de fin de mise en œuvre du projet personnalisé.
-* Nom: entrantProjetPersonnalisee : [0..*] ObjetBinaire
+* Nom: entrantProjetPersonnalise : [0..*] ObjetBinaire
   * Description: Entrant(s) du projet personnalisé.
 
 ##### Classe Besoin
@@ -666,9 +666,9 @@ L'objectif correspond au résultat à atteindre dans le cadre du projet personna
   * Description: Description de l'objectif.
 * Nom: domaineObjectif : [0..*] ConceptCode
   * Description: Domaine de l'objectif. La notion de domaine renvoi à des référentiels locaux au sein des structures ESMS.
-* Nom: dateDebutObjectif : [0..1] DateHeure
+* Nom: dateDebutObjectif : [0..1] Date
   * Description: Date de début de l'objectif.
-* Nom: dateFinObjectif : [0..1] DateHeure
+* Nom: dateFinObjectif : [0..1] Date
   * Description: Date de fin de l'objectif.
 * Nom: avisUsagerObjectif : [0..1] Texte
   * Description: Avis de l'usager sur l'objectif.
