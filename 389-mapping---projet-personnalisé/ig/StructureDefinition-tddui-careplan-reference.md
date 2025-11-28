@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference | *Version*:2.1.0-ballot |
-| Active as of 2025-11-27 | *Computable Name*:TDDUICarePlanProjetPersoRef |
+| Active as of 2025-11-28 | *Computable Name*:TDDUICarePlanProjetPersoRef |
 
 Liens vers le projet personnalisé, utilisables dans le profil TDDUIGoalObjectif.
 
@@ -20,7 +20,7 @@ Liens vers le projet personnalisé, utilisables dans le profil TDDUIGoalObjectif
 **Usages:**
 
 * Use this Extension: [TDDUI Goal Attente](StructureDefinition-tddui-goal-attente.md) and [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md)
-* Examples for this Extension: [Goal/tddui-goal-attente-famille-pa-example](Goal-tddui-goal-attente-famille-pa-example.md), [Goal/tddui-goal-attente-usager-pa-example](Goal-tddui-goal-attente-usager-pa-example.md) and [Goal/tddui-goal-objectif-1-pa-example](Goal-tddui-goal-objectif-1-pa-example.md)
+* Examples for this Extension: [Goal/tddui-goal-attente-famille-pa-example](Goal-tddui-goal-attente-famille-pa-example.md), [Goal/tddui-goal-attente-usager-pa-example](Goal-tddui-goal-attente-usager-pa-example.md), [Goal/tddui-goal-objectif-1-ime-example](Goal-tddui-goal-objectif-1-ime-example.md), [Goal/tddui-goal-objectif-1-pa-example](Goal-tddui-goal-objectif-1-pa-example.md)...Show 3 more,[Goal/tddui-goal-objectif-2-ime-example](Goal-tddui-goal-objectif-2-ime-example.md),[Goal/tddui-goal-objectif-2-pa-example](Goal-tddui-goal-objectif-2-pa-example.md)and[Goal/tddui-goal-objectif-3-pa-example](Goal-tddui-goal-objectif-3-pa-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-careplan-reference)
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-refer
   "name" : "TDDUICarePlanProjetPersoRef",
   "title" : "Lien vers le projet personnalisé",
   "status" : "active",
-  "date" : "2025-11-27T17:29:29+00:00",
+  "date" : "2025-11-28T10:30:25+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource | *Version*:2.1.0-ballot |
-| Active as of 2025-11-27 | *Computable Name*:TDDUITaskMoyenRessource |
+| Active as of 2025-11-28 | *Computable Name*:TDDUITaskMoyenRessource |
 
  
 Profil de la ressource Task permettant de représenter les moyens ou ressources utilisées dans le cadre du projet personnalisé. 
 
 **Usages:**
 
-* Examples for this Profile: [Task/tddui-task-moyen-ressource-ergo-1-pa-example](Task-tddui-task-moyen-ressource-ergo-1-pa-example.md), [Task/tddui-task-moyen-ressource-ide-1-pa-example](Task-tddui-task-moyen-ressource-ide-1-pa-example.md) and [Task/tddui-task-moyen-ressource-kine-1-pa-example](Task-tddui-task-moyen-ressource-kine-1-pa-example.md)
+* Examples for this Profile: [Task/tddui-task-moyen-ressource-ergo-1-pa-example](Task-tddui-task-moyen-ressource-ergo-1-pa-example.md), [Task/tddui-task-moyen-ressource-ide-1-pa-example](Task-tddui-task-moyen-ressource-ide-1-pa-example.md), [Task/tddui-task-moyen-ressource-ide-2-pa-example](Task-tddui-task-moyen-ressource-ide-2-pa-example.md) and [Task/tddui-task-moyen-ressource-kine-1-pa-example](Task-tddui-task-moyen-ressource-kine-1-pa-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-task-moyen-ressource)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-moyen-res
   "name" : "TDDUITaskMoyenRessource",
   "title" : "TDDUI Task MoyenRessource",
   "status" : "active",
-  "date" : "2025-11-27T17:29:29+00:00",
+  "date" : "2025-11-28T10:30:25+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

@@ -1,0 +1,25 @@
+{
+  "resourceType" : "CarePlan",
+  "id" : "tddui-careplan-projet-personnalise-ime-example",
+  "meta" : {
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : PlanDeSoins tddui-careplan-projet-personnalise-ime-example</b></p><a name=\"tddui-careplan-projet-personnalise-ime-example\"> </a><a name=\"hctddui-careplan-projet-personnalise-ime-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-careplan-projet-personnalise.html\">TDDUI CarePlan Projet Personalise</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-projetpersonnalise.esante.gouv.fr</code>/3480787529/123456-PPER-12</p><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>title</b>: Projet personnalisé de Hugo en IME</p><p><b>subject</b>: <a href=\"Patient-tddui-patient-pp-ime-example.html\">Hugo D. (official) (sexe non précisé), Date de Naissance inconnue ( Patient internal identifier: 3480787529/123456)</a></p><p><b>supportingInfo</b>: <a href=\"Consent-tddui-consent-accord-ime-example.html\">Consentement structure</a></p></div>"
+  },
+  "identifier" : [{
+    "system" : "https://identifiant-medicosocial-projetpersonnalise.esante.gouv.fr",
+    "value" : "3480787529/123456-PPER-12"
+  }],
+  "status" : "active",
+  "intent" : "plan",
+  "title" : "Projet personnalisé de Hugo en IME",
+  "subject" : {
+    "reference" : "Patient/tddui-patient-pp-ime-example"
+  },
+  "supportingInfo" : [{
+    "reference" : "Consent/tddui-consent-accord-ime-example",
+    "display" : "Consentement structure"
+  }]
+}

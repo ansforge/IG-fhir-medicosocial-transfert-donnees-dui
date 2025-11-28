@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif | *Version*:2.1.0-ballot |
-| Active as of 2025-11-27 | *Computable Name*:TDDUIGoalObjectif |
+| Active as of 2025-11-28 | *Computable Name*:TDDUIGoalObjectif |
 
  
 Profil de la ressource Goal permettant de représenter les résultats à atteindre dans le cadre du projet personnalisé. 
@@ -17,7 +17,7 @@ Profil de la ressource Goal permettant de représenter les résultats à atteind
 **Usages:**
 
 * Refer to this Profile: [TDDUI Task Action](StructureDefinition-tddui-task-action.md)
-* Examples for this Profile: [Goal/tddui-goal-objectif-1-pa-example](Goal-tddui-goal-objectif-1-pa-example.md)
+* Examples for this Profile: [Goal/tddui-goal-objectif-1-ime-example](Goal-tddui-goal-objectif-1-ime-example.md), [Goal/tddui-goal-objectif-1-pa-example](Goal-tddui-goal-objectif-1-pa-example.md), [Goal/tddui-goal-objectif-2-ime-example](Goal-tddui-goal-objectif-2-ime-example.md), [Goal/tddui-goal-objectif-2-pa-example](Goal-tddui-goal-objectif-2-pa-example.md) and [Goal/tddui-goal-objectif-3-pa-example](Goal-tddui-goal-objectif-3-pa-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-goal-objectif)
 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-objectif.
   "name" : "TDDUIGoalObjectif",
   "title" : "TDDUI Goal Objectif",
   "status" : "active",
-  "date" : "2025-11-27T17:29:29+00:00",
+  "date" : "2025-11-28T10:30:25+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -415,8 +415,6 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-objectif.
       {
         "id" : "Goal.addresses",
         "path" : "Goal.addresses",
-        "min" : 1,
-        "max" : "1",
         "type" : [
           {
             "code" : "Reference",

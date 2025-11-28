@@ -10,7 +10,7 @@
   <name value="TDDUI"/>
   <title value="Médicosocial - Transfert de données DUI"/>
   <status value="active"/>
-  <date value="2025-11-27T17:29:29+00:00"/>
+  <date value="2025-11-28T10:30:25+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -506,7 +506,7 @@
         <reference value="DocumentReference/bilan-objectif-1-projet-personnalise-pa-example-pp"/>
       </reference>
       <name value="Bilan Objectif 1"/>
-      <description value="Bilan de l'objectif 1 du projet personnalisé"/>
+      <description value="Bilan de l'objectif 1 du projet personnalisé PA au format PDF"/>
       <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"/>
     </resource>
     <resource>
@@ -728,6 +728,17 @@
       <name value="Pièce jointe"/>
       <description value="Pièces jointes liées à l’événement et à l'évaluation. L'extension référence le profil PDSm_SimplifiedPublish."/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CarePlan"/>
+      </extension>
+      <reference>
+        <reference value="CarePlan/tddui-careplan-projet-personnalise-ime-example"/>
+      </reference>
+      <name value="Projet personnalisé de Hugo en IME"/>
+      <description value="Exemple du projet personnalisé d'un enfant en IME"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1182,6 +1193,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Consent"/>
+      </extension>
+      <reference>
+        <reference value="Consent/tddui-consent-accord-ime-example"/>
+      </reference>
+      <name value="tddui-consent-accord-ime-example"/>
+      <description value="Exemple d'un accord de la structure"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CapabilityStatement"/>
       </extension>
       <reference>
@@ -1251,9 +1273,53 @@
         <valueString value="Goal"/>
       </extension>
       <reference>
+        <reference value="Goal/tddui-goal-objectif-1-ime-example"/>
+      </reference>
+      <name value="tddui-goal-objectif-1-ime-example"/>
+      <description value="Exemple d'un objectif dans le cadre du projet personnalisé en IME."/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Goal"/>
+      </extension>
+      <reference>
         <reference value="Goal/tddui-goal-objectif-1-pa-example"/>
       </reference>
       <name value="tddui-goal-objectif-1-pa-example"/>
+      <description value="Exemple d'un objectif dans le cadre du projet personnalisé PA."/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Goal"/>
+      </extension>
+      <reference>
+        <reference value="Goal/tddui-goal-objectif-2-ime-example"/>
+      </reference>
+      <name value="tddui-goal-objectif-2-ime-example"/>
+      <description value="Exemple d'un objectif dans le cadre du projet personnalisé en IME."/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Goal"/>
+      </extension>
+      <reference>
+        <reference value="Goal/tddui-goal-objectif-2-pa-example"/>
+      </reference>
+      <name value="tddui-goal-objectif-2-pa-example"/>
+      <description value="Exemple d'un objectif dans le cadre du projet personnalisé PA."/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Goal"/>
+      </extension>
+      <reference>
+        <reference value="Goal/tddui-goal-objectif-3-pa-example"/>
+      </reference>
+      <name value="tddui-goal-objectif-3-pa-example"/>
       <description value="Exemple d'un objectif dans le cadre du projet personnalisé PA."/>
       <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif"/>
     </resource>
@@ -1299,6 +1365,17 @@
       </reference>
       <name value="tddui-patient-pa-example-pp"/>
       <description value="Exemple de la ressource TDDUIPatient dans le cadre d'un projet personnalisé PA"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/tddui-patient-pp-ime-example"/>
+      </reference>
+      <name value="tddui-patient-pp-ime-example"/>
+      <description value="Exemple de la ressource TDDUIPatient dans le cadre d'un projet personnalisé en IME"/>
       <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient"/>
     </resource>
     <resource>
@@ -1449,10 +1526,21 @@
         <valueString value="Task"/>
       </extension>
       <reference>
-        <reference value="Task/tddui-task-action-1-as-pa-example"/>
+        <reference value="Task/tddui-task-action-1-aesh-ime-example"/>
       </reference>
-      <name value="tddui-task-action-1-as-pa-example"/>
-      <description value="Exemple d'une action de l'objectif 1 réalisée par l'AS dans le cadre du projet personnalisé PA."/>
+      <name value="tddui-task-action-1-aesh-ime-example"/>
+      <description value="Exemple d'une action de l'objectif 1 réalisée par l'AESH dans le cadre du projet personnalisé en IME."/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/tddui-task-action-1-educ-ime-example"/>
+      </reference>
+      <name value="tddui-task-action-1-educ-ime-example"/>
+      <description value="Exemple d'une action de l'objectif 1 réalisée par l'éducateur spécialisé dans le cadre du projet personnalisé en IME."/>
       <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"/>
     </resource>
     <resource>
@@ -1493,32 +1581,10 @@
         <valueString value="Task"/>
       </extension>
       <reference>
-        <reference value="Task/tddui-task-action-1-psy-pa-example"/>
+        <reference value="Task/tddui-task-action-2-anim-pa-example"/>
       </reference>
-      <name value="tddui-task-action-1-psy-pa-example"/>
-      <description value="Exemple d'une action de l'objectif 1 réalisée par le psychologue dans le cadre du projet personnalisé PA."/>
-      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Task"/>
-      </extension>
-      <reference>
-        <reference value="Task/tddui-task-action-2-as-pa-example"/>
-      </reference>
-      <name value="tddui-task-action-2-as-pa-example"/>
-      <description value="Exemple d'une action de l'objectif 1 réalisée par l'AS dans le cadre du projet personnalisé PA."/>
-      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Task"/>
-      </extension>
-      <reference>
-        <reference value="Task/tddui-task-action-2-ergo-pa-example"/>
-      </reference>
-      <name value="tddui-task-action-2-ergo-pa-example"/>
-      <description value="Exemple d'une action de l'objectif 1 réalisée par l'ergothérapeute dans le cadre du projet personnalisé PA."/>
+      <name value="tddui-task-action-2-anim-pa-example"/>
+      <description value="Exemple d'une action de l'objectif 1 réalisée par l'animatrice dans le cadre du projet personnalisé PA."/>
       <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"/>
     </resource>
     <resource>
@@ -1529,7 +1595,7 @@
         <reference value="Task/tddui-task-action-2-ide-pa-example"/>
       </reference>
       <name value="tddui-task-action-2-ide-pa-example"/>
-      <description value="Exemple d'une action de l'objectif 1 réalisée par l'IDE dans le cadre du projet personnalisé PA."/>
+      <description value="Exemple d'une action de l'objectif 2 réalisée par l'IDE dans le cadre du projet personnalisé PA."/>
       <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"/>
     </resource>
     <resource>
@@ -1537,10 +1603,10 @@
         <valueString value="Task"/>
       </extension>
       <reference>
-        <reference value="Task/tddui-task-action-2-kine-pa-example"/>
+        <reference value="Task/tddui-task-action-3-psy-pa-example"/>
       </reference>
-      <name value="tddui-task-action-2-kine-pa-example"/>
-      <description value="Exemple d'une action de l'objectif 1 réalisée par le kinésithérapeute dans le cadre du projet personnalisé PA."/>
+      <name value="tddui-task-action-3-psy-pa-example"/>
+      <description value="Exemple d'une action de l'objectif 3 réalisée par le psychologue dans le cadre du projet personnalisé PA."/>
       <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"/>
     </resource>
     <resource>
@@ -1563,6 +1629,17 @@
       </reference>
       <name value="tddui-task-moyen-ressource-ide-1-pa-example"/>
       <description value="Exemple des moyens et ressources de l'objectif 1 dans le cadre du projet personnalisé PA."/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/tddui-task-moyen-ressource-ide-2-pa-example"/>
+      </reference>
+      <name value="tddui-task-moyen-ressource-ide-2-pa-example"/>
+      <description value="Exemple des moyens et ressources de l'objectif 2 dans le cadre du projet personnalisé PA."/>
       <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource"/>
     </resource>
     <resource>

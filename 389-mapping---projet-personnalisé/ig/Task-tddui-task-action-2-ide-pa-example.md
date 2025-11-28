@@ -16,13 +16,13 @@ Profil: [TDDUI Task Action](StructureDefinition-tddui-task-action.md)
 
 **intent**: plan
 
-**description**: Réévaluer les traitements avec médecin coord
+**description**: Pesée mensuelle et dépistage dénutrition
 
 **owner**: [Practitioner Élodie Bernard](Practitioner-tddui-practitioner-ide-pp-example.md)
 
-> **input****type**:Titre de l'action à mener.**value**: Action de l'IDE pour atteindre l'objectif 1
+> **input****type**:Titre de l'action à mener.**value**: Action de l'IDE pour atteindre l'objectif 2
 
-> **input****type**:Objectif(s).**value**:[Goal : extension = ->CarePlan Projet personnalisé de Mme Jeanne L.,->DocumentReference : masterIdentifier = 3480787529/123456789-PPER-bilanObj-1234; status = current; identifier = https://identifiant-medicosocial-objectif.esante.gouv.fr#3480787529/123456789-OBJE-1234; lifecycleStatus = active; description = ; note = Objectif 1](Goal-tddui-goal-objectif-1-pa-example.md)
+> **input****type**:Objectif(s).**value**:[Goal : extension = ->CarePlan Projet personnalisé de Mme Jeanne L.; identifier = https://identifiant-medicosocial-objectif.esante.gouv.fr#3480787529/123456789-OBJE-1235; lifecycleStatus = active; description = ; note = Objectif 2](Goal-tddui-goal-objectif-2-pa-example.md)
 
 
 
@@ -50,7 +50,7 @@ Profil: [TDDUI Task Action](StructureDefinition-tddui-task-action.md)
   ],
   "status" : "in-progress",
   "intent" : "plan",
-  "description" : "Réévaluer les traitements avec médecin coord",
+  "description" : "Pesée mensuelle et dépistage dénutrition",
   "owner" : {
     "reference" : "Practitioner/tddui-practitioner-ide-pp-example"
   },
@@ -64,7 +64,7 @@ Profil: [TDDUI Task Action](StructureDefinition-tddui-task-action.md)
           }
         ]
       },
-      "valueString" : "Action de l'IDE pour atteindre l'objectif 1"
+      "valueString" : "Action de l'IDE pour atteindre l'objectif 2"
     },
     {
       "type" : {
@@ -76,7 +76,7 @@ Profil: [TDDUI Task Action](StructureDefinition-tddui-task-action.md)
         ]
       },
       "valueReference" : {
-        "reference" : "Goal/tddui-goal-objectif-1-pa-example"
+        "reference" : "Goal/tddui-goal-objectif-2-pa-example"
       }
     }
   ]
