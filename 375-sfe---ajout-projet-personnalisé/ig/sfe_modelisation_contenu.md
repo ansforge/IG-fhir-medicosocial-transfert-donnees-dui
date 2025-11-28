@@ -697,8 +697,6 @@ L'action est un acte mené dans le cadre du projet personnalisé. Elle peut êtr
   * Description: Date de début de l'action à mener.
 * Nom: dateFinAction : [0..1] DateHeure
   * Description: Date de fin de l'action à mener.
-* Nom: evaluationAction : [0..*][Evaluation](#classe-evaluation)
-  * Description: Evaluation de l'action.
 * Nom: avisUsagerAction : [0..1] Texte
   * Description: Avis de l'usager sur l'action.
 * Nom: resultatAttenduAction : [0..1] Texte
@@ -726,8 +724,6 @@ Le moyen ou la ressource sert à réaliser le projet personnalisé. Le moyen ou 
   * Description: Date de début du moyen ou de la ressource.
 * Nom: dateFinMoyenRessource : [0..1] DateHeure
   * Description: Date de fin du moyen ou de la ressource.
-* Nom: evaluationMoyenRessource : [0..1][Evaluation](#classe-evaluation)
-  * Description: Evaluation du moyen ou de la ressource.
 * Nom: pieceJointeMoyenRessource : [0..*] ObjetBinaire
   * Description: Pièce(s) jointe(s) du moyen ou de la ressource.
 
@@ -747,8 +743,6 @@ La prestation désigne ce qui doit être accompli ou fourni à l'usager.Elle peu
   * Description: Date de début de la prestation.
 * Nom: dateFinPrestation : [0..1] DateHeure
   * Description: Date de fin de la prestation.
-* Nom: evaluationPrestation : [0..1][Evaluation](#classe-evaluation)
-  * Description: Evaluation de la prestation.
 * Nom: statutPrestation : [1..1][Statut](#classe-statut)
   * Description: Statut de la prestation.
 * Nom: pieceJointePrestation : [0..*] ObjetBinaire
