@@ -1349,10 +1349,6 @@ Le projet personnalisé est un document co-construit par l'usager, son entourage
     <td>Description du projet personnalisé.</td>
   </tr>
   <tr>
-    <td>statutProjetPersonnalise : [1..1] <a href="#classe-statut">Statut</a></td>
-    <td>Statut du projet personnalisé.</td>
-  </tr>
-  <tr>
     <td>typeProjetPersonnalise : [0..1] Code</td>
     <td>Type de projet personnalisé.<br>
     Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j367-type-projet-personnalise-ms">JDV-J367-type-projet-personnalise-ms</a></td>
@@ -1459,10 +1455,6 @@ L'objectif correspond au résultat à atteindre dans le cadre du projet personna
     <td>Résultat attendu sur l'objectif.</td>
   </tr>
   <tr>
-    <td>statutObjectif : [1..1] <a href="#classe-statut">Statut</a></td>
-    <td>Statut de l'action.</td>
-  </tr>
-  <tr>
     <td>strategieMiseEnOeuvreObjectif : [0..1] Texte</td>
     <td>Stratégie mise en œuvre de l'objectif.</td>
   </tr>
@@ -1507,10 +1499,6 @@ L'action est un acte mené dans le cadre du projet personnalisé. Elle peut êtr
   <tr>
     <td>resultatAttenduAction : [0..1] Texte</td>
     <td>Résultat attendu de l'action.</td>
-  </tr>
-  <tr>
-    <td>statutAction : [1..1] <a href="#classe-statut">Statut</a></td>
-    <td>Statut de l'action.</td>
   </tr>
   <tr>
     <td>referentAction : [0..1] <a href="#classe-professionnel">Professionnel</a></td>
@@ -1593,10 +1581,6 @@ La prestation désigne ce qui doit être accompli ou fourni à l'usager.Elle peu
 <tr>
   <td>dateFinPrestation : [0..1] DateHeure</td>
   <td>Date de fin de la prestation.</td>
-</tr>
-<tr>
-  <td>statutPrestation : [1..1] <a href="#classe-statut">Statut</a></td>
-  <td>Statut de la prestation.</td>
 </tr>
 <tr>
   <td>pieceJointePrestation : [0..*] ObjetBinaire</td>

@@ -15,6 +15,8 @@ class Evaluation #LightGray
 class "DetailEvaluation" as DetailEvaluationN1 <<premier niveau>> #LightGray 
 class "DetailEvaluation" as DetailEvaluationN2 <<deuxième niveau>> #LightGray
 
+class Statut #LightGray
+
 class ProjetPersonnalise #LightGray {
     idProjetPersonnalise : Identifiant [1..1]
     titreProjetPersonnalise : Texte [1..1]
@@ -38,8 +40,13 @@ ProjetPersonnalise "1" - "0..*" Action
 ProjetPersonnalise "1" -- "0..*" MoyenRessource
 ProjetPersonnalise "1" - "0..*" PrestationProjetPersonnalise
 
+ProjetPersonnalise "1" -- "1" Statut
+Objectif "1" -- "1" Statut
+Action "1" -- "1" Statut
+PrestationProjetPersonnalise "1" -- "1" Statut
+
 Besoin "0..*" - "0..*" Objectif
-Objectif "0..*" - "0..*" Action
+Objectif "0..*" -- "0..*" Action
 Action "0..1" - "0..*" MoyenRessource
 Action "0..1" -- "0..*" PrestationProjetPersonnalise
 
@@ -48,7 +55,7 @@ Objectif "1" - "0..*" Evaluation
 Action "1" - "0..*" Evaluation
 MoyenRessource "1" - "0..1" Evaluation
 PrestationProjetPersonnalise "1" - "0..1" Evaluation
-Evaluation "1" - "0..*" DetailEvaluationN1
-DetailEvaluationN1 "1" - "0..*" DetailEvaluationN2
+Evaluation "1" -- "0..*" DetailEvaluationN1
+DetailEvaluationN1 "1" -- "0..*" DetailEvaluationN2
 
 @enduml
