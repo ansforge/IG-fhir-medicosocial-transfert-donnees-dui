@@ -622,8 +622,6 @@ Le projet personnalisé est un document co-construit par l'usager, son entourage
   * Description: Titre du projet personnalisé.
 * Nom: descriptionProjetPersonnalise : [0..1] Texte
   * Description: Description du projet personnalisé.
-* Nom: statutProjetPersonnalise : [1..1][Statut](#classe-statut)
-  * Description: Statut du projet personnalisé.
 * Nom: typeProjetPersonnalise : [0..1] Code
   * Description: Type de projet personnalisé.Jeu(x) de valeur(s) associé(s) :[JDV-J367-type-projet-personnalise-ms](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j367-type-projet-personnalise-ms)
 * Nom: modaliteCommunicationProjetPersonnalise : [0..1] Texte
@@ -676,8 +674,6 @@ L'objectif correspond au résultat à atteindre dans le cadre du projet personna
   * Description: Avis de l'usager sur l'objectif.
 * Nom: resultatAttenduObjectif : [0..1] Texte
   * Description: Résultat attendu sur l'objectif.
-* Nom: statutObjectif : [1..1][Statut](#classe-statut)
-  * Description: Statut de l'action.
 * Nom: strategieMiseEnOeuvreObjectif : [0..1] Texte
   * Description: Stratégie mise en œuvre de l'objectif.
 * Nom: referentObjectif : [0..1][Professionnel](#classe-professionnel)
@@ -701,8 +697,6 @@ L'action est un acte mené dans le cadre du projet personnalisé. Elle peut êtr
   * Description: Avis de l'usager sur l'action.
 * Nom: resultatAttenduAction : [0..1] Texte
   * Description: Résultat attendu de l'action.
-* Nom: statutAction : [1..1][Statut](#classe-statut)
-  * Description: Statut de l'action.
 * Nom: referentAction : [0..1][Professionnel](#classe-professionnel)
   * Description: Référent de l'action.
 * Nom: pieceJointeAction : [0..*] ObjetBinaire
@@ -743,8 +737,6 @@ La prestation désigne ce qui doit être accompli ou fourni à l'usager.Elle peu
   * Description: Date de début de la prestation.
 * Nom: dateFinPrestation : [0..1] DateHeure
   * Description: Date de fin de la prestation.
-* Nom: statutPrestation : [1..1][Statut](#classe-statut)
-  * Description: Statut de la prestation.
 * Nom: pieceJointePrestation : [0..*] ObjetBinaire
   * Description: Pièce(s) jointe(s) de la prestation.
 
