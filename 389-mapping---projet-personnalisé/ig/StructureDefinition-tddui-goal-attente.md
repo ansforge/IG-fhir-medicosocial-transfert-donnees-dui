@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente | *Version*:2.1.0-ballot |
-| Active as of 2025-11-28 | *Computable Name*:TDDUIGoalAttente |
+| Active as of 2025-12-01 | *Computable Name*:TDDUIGoalAttente |
 
  
 Profil de la ressource Goal permettant de représenter les attentes pour un usager. 
 
-**Usages:**
+**Utilisations:**
 
-* Examples for this Profile: [Goal/tddui-goal-attente-famille-pa-example](Goal-tddui-goal-attente-famille-pa-example.md) and [Goal/tddui-goal-attente-usager-pa-example](Goal-tddui-goal-attente-usager-pa-example.md)
+* Exemples pour ce Profil: [Goal/tddui-goal-attente-famille-pa-example](Goal-tddui-goal-attente-famille-pa-example.md) and [Goal/tddui-goal-attente-usager-pa-example](Goal-tddui-goal-attente-usager-pa-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-goal-attente)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-attente.c
   "name" : "TDDUIGoalAttente",
   "title" : "TDDUI Goal Attente",
   "status" : "active",
-  "date" : "2025-11-28T10:30:25+00:00",
+  "date" : "2025-12-01T08:11:14+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

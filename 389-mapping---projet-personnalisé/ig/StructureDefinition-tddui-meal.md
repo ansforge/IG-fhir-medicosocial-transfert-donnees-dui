@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-meal | *Version*:2.1.0-ballot |
-| Active as of 2025-11-28 | *Computable Name*:TDDUIMeal |
+| Active as of 2025-12-01 | *Computable Name*:TDDUIMeal |
 
 Repas du professionnel prévu dans le cadre de l'événement.
 
@@ -17,9 +17,9 @@ Repas du professionnel prévu dans le cadre de l'événement.
 
 **Usage info**
 
-**Usages:**
+**Utilisations:**
 
-* Use this Extension: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)
+* Utiliser ce Extension: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-meal)
 
@@ -31,7 +31,7 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 Other representations of profile: [CSV](StructureDefinition-tddui-meal.csv), [Excel](StructureDefinition-tddui-meal.xlsx), [Schematron](StructureDefinition-tddui-meal.sch) 
 
-#### Constraints
+#### Contraintes
 
 
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-meal.csv), [Ex
   "name" : "TDDUIMeal",
   "title" : "Repas",
   "status" : "active",
-  "date" : "2025-11-28T10:30:25+00:00",
+  "date" : "2025-12-01T08:11:14+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

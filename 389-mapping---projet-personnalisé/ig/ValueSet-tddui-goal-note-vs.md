@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-goal-note-vs | *Version*:2.1.0-ballot |
-| Active as of 2025-11-28 | *Computable Name*:TDDUIGoalNoteVS |
+| Active as of 2025-12-01 | *Computable Name*:TDDUIGoalNoteVS |
 
  
 ValueSet définissant les types de notes pour l'élément Goal.note. 
@@ -18,13 +18,17 @@ ValueSet définissant les types de notes pour l'élément Goal.note.
 
 * [TDDUI Goal Note](StructureDefinition-tddui-goal-note.md)
 
-### Logical Definition (CLD)
+### Définition logique (CLD)
 
 * Include tous les codes définis dans [`https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-goal-note-cs`](CodeSystem-tddui-goal-note-cs.md)version 📦2.1.0-ballot
 
  
 
 ### Expansion
+
+Expansion effectuée en interne basée sur [codesystem TDDUI Goal Note CodeSystem v2.1.0-ballot (CodeSystem)](CodeSystem-tddui-goal-note-cs.md)
+
+Ce jeu de valeur (ValueSet) contient 5 concepts
 
 -------
 
@@ -52,7 +56,7 @@ ValueSet définissant les types de notes pour l'élément Goal.note.
   "name" : "TDDUIGoalNoteVS",
   "title" : "TDDUI Goal Note ValueSet",
   "status" : "active",
-  "date" : "2025-11-28T10:30:25+00:00",
+  "date" : "2025-12-01T08:11:14+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

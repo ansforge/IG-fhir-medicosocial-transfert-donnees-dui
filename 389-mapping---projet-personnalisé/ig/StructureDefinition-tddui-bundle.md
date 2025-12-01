@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle | *Version*:2.1.0-ballot |
-| Active as of 2025-11-28 | *Computable Name*:TDDUIBundle |
+| Active as of 2025-12-01 | *Computable Name*:TDDUIBundle |
 
  
 Profil générique créé pour transmettre des données d'un logiciel DUI. 
 
-**Usages:**
+**Utilisations:**
 
-* Examples for this Profile: [Bundle/ExampleTDDUIBundle](Bundle-ExampleTDDUIBundle.md)
+* Exemples pour ce Profil: [Bundle/ExampleTDDUIBundle](Bundle-ExampleTDDUIBundle.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-bundle)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
   "name" : "TDDUIBundle",
   "title" : "TDDUI Bundle",
   "status" : "active",
-  "date" : "2025-11-28T10:30:25+00:00",
+  "date" : "2025-12-01T08:11:14+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

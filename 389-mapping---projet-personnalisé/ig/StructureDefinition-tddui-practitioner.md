@@ -9,17 +9,17 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner | *Version*:2.1.0-ballot |
-| Active as of 2025-11-28 | *Computable Name*:TDDUIPractitioner |
+| Active as of 2025-12-01 | *Computable Name*:TDDUIPractitioner |
 
  
 Profil de la ressource FRCorePractitionerProfile permettant de représenter un professionnel du médicosocial dans le cadre de TDDUI. Le profil AsPractitionerRoleProfile n'a pas été utilisé car il comportait trop de contraintes non présentes dans les DUI. 
 
-**Usages:**
+**Utilisations:**
 
-* Use this Profile: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
-* Refer to this Profile: [TDDUI Consent Accord](StructureDefinition-tddui-consent-accord.md), [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md), [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md), [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md)...Show 7 more,[TDDUI Practitioner Role](StructureDefinition-tddui-practitioner-role.md),[Responsable et auteur du statut de l'évaluation](StructureDefinition-tddui-qr-participant.md),[TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md),[TDDUI Profession](StructureDefinition-tddui-status-author.md),[TDDUI Task Action](StructureDefinition-tddui-task-action.md),[TDDUI Task Bilan](StructureDefinition-tddui-task-bilan.md)and[TDDUI Task Transport Professionnel](StructureDefinition-tddui-task-transport-professionnel.md)
-* Examples for this Profile: [Practitioner/tddui-practitioner-example](Practitioner-tddui-practitioner-example.md) and [Practitioner/tddui-practitioner-ide-pp-example](Practitioner-tddui-practitioner-ide-pp-example.md)
-* CapabilityStatements using this Profile: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
+* Utiliser ce Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
+* Référer à ce Profil: [TDDUI Consent Accord](StructureDefinition-tddui-consent-accord.md), [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md), [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md), [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md)...Show 7 more,[TDDUI Practitioner Role](StructureDefinition-tddui-practitioner-role.md),[Responsable et auteur du statut de l'évaluation](StructureDefinition-tddui-qr-participant.md),[TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md),[TDDUI Profession](StructureDefinition-tddui-status-author.md),[TDDUI Task Action](StructureDefinition-tddui-task-action.md),[TDDUI Task Bilan](StructureDefinition-tddui-task-bilan.md)and[TDDUI Task Transport Professionnel](StructureDefinition-tddui-task-transport-professionnel.md)
+* Exemples pour ce Profil: [Practitioner/tddui-practitioner-example](Practitioner-tddui-practitioner-example.md) and [Practitioner/tddui-practitioner-ide-pp-example](Practitioner-tddui-practitioner-ide-pp-example.md)
+* CapabilityStatements utilisant ce Profil: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-practitioner)
 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-practitioner.c
   "name" : "TDDUIPractitioner",
   "title" : "TDDUI Practitioner",
   "status" : "active",
-  "date" : "2025-11-28T10:30:25+00:00",
+  "date" : "2025-12-01T08:11:14+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

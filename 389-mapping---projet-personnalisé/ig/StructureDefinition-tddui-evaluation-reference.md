@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-evaluation-reference | *Version*:2.1.0-ballot |
-| Active as of 2025-11-28 | *Computable Name*:TDDUIEvaluationRef |
+| Active as of 2025-12-01 | *Computable Name*:TDDUIEvaluationRef |
 
 Liens vers l'évaluation, utilisables dans le profil TDDUIGoalObjectif.
 
@@ -17,9 +17,9 @@ Liens vers l'évaluation, utilisables dans le profil TDDUIGoalObjectif.
 
 **Usage info**
 
-**Usages:**
+**Utilisations:**
 
-* Use this Extension: [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md)
+* Utiliser ce Extension: [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-evaluation-reference)
 
@@ -31,7 +31,7 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 Other representations of profile: [CSV](StructureDefinition-tddui-evaluation-reference.csv), [Excel](StructureDefinition-tddui-evaluation-reference.xlsx), [Schematron](StructureDefinition-tddui-evaluation-reference.sch) 
 
-#### Constraints
+#### Contraintes
 
 
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-evaluation-ref
   "name" : "TDDUIEvaluationRef",
   "title" : "Lien vers l'évaluation",
   "status" : "active",
-  "date" : "2025-11-28T10:30:25+00:00",
+  "date" : "2025-12-01T08:11:14+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

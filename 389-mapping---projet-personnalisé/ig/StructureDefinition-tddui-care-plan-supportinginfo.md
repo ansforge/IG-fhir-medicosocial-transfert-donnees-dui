@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-care-plan-supportinginfo | *Version*:2.1.0-ballot |
-| Active as of 2025-11-28 | *Computable Name*:TDDUICarePlanSupportingInfo |
+| Active as of 2025-12-01 | *Computable Name*:TDDUICarePlanSupportingInfo |
 
 Extension pour discriminer l'élément CarePlan.supportingInfo.
 
@@ -17,9 +17,9 @@ Extension pour discriminer l'élément CarePlan.supportingInfo.
 
 **Usage info**
 
-**Usages:**
+**Utilisations:**
 
-* This Extension is not used by any profiles in this Implementation Guide
+* Ce Extension nest utilisé par aucun profil dans ce guide dimplémentation
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-care-plan-supportinginfo)
 
@@ -31,9 +31,9 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 Other representations of profile: [CSV](StructureDefinition-tddui-care-plan-supportinginfo.csv), [Excel](StructureDefinition-tddui-care-plan-supportinginfo.xlsx), [Schematron](StructureDefinition-tddui-care-plan-supportinginfo.sch) 
 
-#### Terminology Bindings
+#### Bindings terminologiques
 
-#### Constraints
+#### Contraintes
 
 
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-care-plan-supp
   "name" : "TDDUICarePlanSupportingInfo",
   "title" : "TDDUI CarePlan SupportingInfo",
   "status" : "active",
-  "date" : "2025-11-28T10:30:25+00:00",
+  "date" : "2025-12-01T08:11:14+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

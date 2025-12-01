@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-care-plan-supportingInfo-vs | *Version*:2.1.0-ballot |
-| Active as of 2025-11-28 | *Computable Name*:TDDUICarePlanSupportingInfoVS |
+| Active as of 2025-12-01 | *Computable Name*:TDDUICarePlanSupportingInfoVS |
 
  
 ValueSet définissant les types de notes pour l'élément CarePlan.supportingInfo. 
@@ -18,13 +18,17 @@ ValueSet définissant les types de notes pour l'élément CarePlan.supportingInf
 
 * [TDDUI CarePlan SupportingInfo](StructureDefinition-tddui-care-plan-supportinginfo.md)
 
-### Logical Definition (CLD)
+### Définition logique (CLD)
 
 * Include tous les codes définis dans [`https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-care-plan-supportingInfo-cs`](CodeSystem-tddui-care-plan-supportingInfo-cs.md)version 📦2.1.0-ballot
 
  
 
 ### Expansion
+
+Expansion effectuée en interne basée sur [codesystem TDDUI CarePlan supportingInfo CodeSystem v2.1.0-ballot (CodeSystem)](CodeSystem-tddui-care-plan-supportingInfo-cs.md)
+
+Ce jeu de valeur (ValueSet) contient 2 concepts
 
 -------
 
@@ -52,7 +56,7 @@ ValueSet définissant les types de notes pour l'élément CarePlan.supportingInf
   "name" : "TDDUICarePlanSupportingInfoVS",
   "title" : "TDDUI CarePlan supportingInfo ValueSet",
   "status" : "active",
-  "date" : "2025-11-28T10:30:25+00:00",
+  "date" : "2025-12-01T08:11:14+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

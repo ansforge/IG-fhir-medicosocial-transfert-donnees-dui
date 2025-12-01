@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-serafin-valueset | *Version*:2.1.0-ballot |
-| Active as of 2025-11-28 | *Computable Name*:TDDUISerafinValueSet |
+| Active as of 2025-12-01 | *Computable Name*:TDDUISerafinValueSet |
 
  
 ValueSet contenant les codes SERAFIN (prestations directes et indirectes) pour le profil TDDUI Encounter Evenement. 
@@ -19,7 +19,7 @@ ValueSet contenant les codes SERAFIN (prestations directes et indirectes) pour l
 * [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)
 * [TDDUI Task Prestation](StructureDefinition-tddui-task-prestation.md)
 
-### Logical Definition (CLD)
+### Définition logique (CLD)
 
 Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
 
@@ -28,6 +28,12 @@ Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
  
 
 ### Expansion
+
+Expansion effectuée en interne basée sur :
+
+* [codesystem Nomenclature des besoins et des prestations v2023.1.0 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-terminologie-SERAFINPH.html)
+* [valueset JDV_J283_PrestationsIndirects_SERAFIN v20241025120000 (ValueSet)](https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J283-PrestationsIndirects-SERAFIN.html)
+* [valueset JDV_J284_PrestationsDirects_SERAFIN v20241025120000 (ValueSet)](https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J284-PrestationsDirects-SERAFIN.html)
 
 Ce jeu de valeur (ValueSet) contient 0 concepts
 
@@ -61,7 +67,7 @@ Ce jeu de valeur (ValueSet) contient 0 concepts
   "title" : "TDDUI SERAFIN ValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-11-28T10:30:25+00:00",
+  "date" : "2025-12-01T08:11:14+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

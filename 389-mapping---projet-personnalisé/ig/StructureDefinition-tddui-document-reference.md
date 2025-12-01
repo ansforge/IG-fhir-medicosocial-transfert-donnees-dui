@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference | *Version*:2.1.0-ballot |
-| Active as of 2025-11-28 | *Computable Name*:TDDUIDocumentReference |
+| Active as of 2025-12-01 | *Computable Name*:TDDUIDocumentReference |
 
  
 Profil de la ressource SimplifiedPublishDocumentReference pour les pièces jointes liées à l’événement et à l'évaluation. 
@@ -19,12 +19,12 @@ Profil de la ressource SimplifiedPublishDocumentReference pour les pièces joint
 **Note**: Le profil TDDUIDocumentReference n'hérite pas du profil PDSm_SimplifiedPublish à cause de la référence vers les profils ASPractitioner et ASPractitionerRole 
  
 
-**Usages:**
+**Utilisations:**
 
-* Use this Profile: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
-* Refer to this Profile: [Pièce jointe](StructureDefinition-tddui-attachment.md), [TDDUI Task Action](StructureDefinition-tddui-task-action.md), [TDDUI Task Bilan](StructureDefinition-tddui-task-bilan.md), [TDDUI Task MoyenRessource](StructureDefinition-tddui-task-moyen-ressource.md) and [TDDUI Task Prestation](StructureDefinition-tddui-task-prestation.md)
-* Examples for this Profile: [DocumentReference/bilan-objectif-1-projet-personnalise-pa-example-pp](DocumentReference-bilan-objectif-1-projet-personnalise-pa-example-pp.md) and [DocumentReference/entrant-projet-personnalise-pa-example-pp](DocumentReference-entrant-projet-personnalise-pa-example-pp.md)
-* CapabilityStatements using this Profile: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
+* Utiliser ce Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
+* Référer à ce Profil: [Pièce jointe](StructureDefinition-tddui-attachment.md), [TDDUI Task Action](StructureDefinition-tddui-task-action.md), [TDDUI Task Bilan](StructureDefinition-tddui-task-bilan.md), [TDDUI Task MoyenRessource](StructureDefinition-tddui-task-moyen-ressource.md) and [TDDUI Task Prestation](StructureDefinition-tddui-task-prestation.md)
+* Exemples pour ce Profil: [DocumentReference/bilan-objectif-1-projet-personnalise-pa-example-pp](DocumentReference-bilan-objectif-1-projet-personnalise-pa-example-pp.md) and [DocumentReference/entrant-projet-personnalise-pa-example-pp](DocumentReference-entrant-projet-personnalise-pa-example-pp.md)
+* CapabilityStatements utilisant ce Profil: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-document-reference)
 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-document-refer
   "name" : "TDDUIDocumentReference",
   "title" : "TDDUI DocumentReference",
   "status" : "active",
-  "date" : "2025-11-28T10:30:25+00:00",
+  "date" : "2025-12-01T08:11:14+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
