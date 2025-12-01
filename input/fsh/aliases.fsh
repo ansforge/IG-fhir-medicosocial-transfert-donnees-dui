@@ -92,7 +92,7 @@ Alias: $ParticipationType = http://terminology.hl7.org/CodeSystem/v3-Participati
 // Extensions R5
 Alias: $plannedStartDate-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedStartDate
 Alias: $plannedEndDate-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedEndDate
-Alias :$consentPeriod-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.period
+Alias: $consentPeriod-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.period
 // ###############
 // # FrCore link #
 // ###############
