@@ -2007,7 +2007,7 @@ Cette classe décrit le statut des ressources (Evenement, Evaluation, Projet per
     - Pour l'Evaluation seuls les codes suivants sont à utiliser : APPROUVE, VALIDE, TERMINE <br>
     - Pour l'Evènement seuls les codes suivants sont à utiliser : PLANIFIE, VALIDE, REALISE, ANNULE <br>
     - Pour le projet personnalisé seuls les codes suivants sont à utiliser : NONDEBUTE, ENPREPARATION, CREATION, ENREALISATION, TERMINE <br>
-    - Pour l'Objectif, l'Action et la Prestation du Projet personnalisé seuls les codes suivants sont à utiliser : ENPREPARATION, ACTIF, TERMINE, ANNULER
+    - Pour l'Objectif, l'Action et la Prestation du Projet personnalisé seuls les codes suivants sont à utiliser : ENPREPARATION, ACTIF, TERMINE, ANNULE
     </td>
   </tr>
   <tr>
