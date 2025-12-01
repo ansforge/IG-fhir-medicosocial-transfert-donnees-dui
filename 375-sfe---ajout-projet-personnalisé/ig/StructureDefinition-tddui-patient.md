@@ -9,17 +9,17 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient | *Version*:2.0.0 |
-| Active as of 2025-11-28 | *Computable Name*:TDDUIPatient |
+| Active as of 2025-12-01 | *Computable Name*:TDDUIPatient |
 
  
 Profil de la ressource FrCorePatientProfile permettant de représenter un usager lorsque l'INS n'est pas transmis. 
 
-**Usages:**
+**Utilisations:**
 
-* Use this Profile: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
-* Refer to this Profile: [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md)
-* Examples for this Profile: [Patient/tddui-patient-example](Patient-tddui-patient-example.md)
-* CapabilityStatements using this Profile: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
+* Utiliser ce Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
+* Référer à ce Profil: [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md)
+* Exemples pour ce Profil: [Patient/tddui-patient-example](Patient-tddui-patient-example.md)
+* CapabilityStatements utilisant ce Profil: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-patient)
 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient.csv), 
   "name" : "TDDUIPatient",
   "title" : "TDDUI Patient",
   "status" : "active",
-  "date" : "2025-11-28T15:30:37+00:00",
+  "date" : "2025-12-01T13:44:25+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name | *Version*:2.0.0 |
-| Active as of 2025-11-28 | *Computable Name*:tddui-humanname |
+| Active as of 2025-12-01 | *Computable Name*:tddui-humanname |
 
  
 
@@ -19,9 +19,9 @@
 
  
 
-**Usages:**
+**Utilisations:**
 
-* Use this DataType Profile: [TDDUI Patient INS](StructureDefinition-tddui-patient-ins.md) and [TDDUI Patient](StructureDefinition-tddui-patient.md)
+* Utiliser ce Profil de type de données: [TDDUI Patient INS](StructureDefinition-tddui-patient-ins.md) and [TDDUI Patient](StructureDefinition-tddui-patient.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-human-name)
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-human-name.csv
   "name" : "tddui-humanname",
   "title" : "TDDUI Human Name DataType",
   "status" : "active",
-  "date" : "2025-11-28T15:30:37+00:00",
+  "date" : "2025-12-01T13:44:25+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

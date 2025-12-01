@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exit-mode-label | *Version*:2.0.0 |
-| Active as of 2025-11-28 | *Computable Name*:TDDUIExitModeLabel |
+| Active as of 2025-12-01 | *Computable Name*:TDDUIExitModeLabel |
 
 Libellé du mode de sortie du séjour.
 
@@ -17,10 +17,10 @@ Libellé du mode de sortie du séjour.
 
 **Usage info**
 
-**Usages:**
+**Utilisations:**
 
-* Use this Extension: [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md)
-* Examples for this Extension: [Bundle/ExampleTDDUIBundle](Bundle-ExampleTDDUIBundle.md) and [Encounter/tddui-encounter-sejour-example](Encounter-tddui-encounter-sejour-example.md)
+* Utiliser ce Extension: [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md)
+* Exemples pour ce Extension: [Bundle/ExampleTDDUIBundle](Bundle-ExampleTDDUIBundle.md) and [Encounter/tddui-encounter-sejour-example](Encounter-tddui-encounter-sejour-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-exit-mode-label)
 
@@ -32,7 +32,7 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 Other representations of profile: [CSV](StructureDefinition-tddui-exit-mode-label.csv), [Excel](StructureDefinition-tddui-exit-mode-label.xlsx), [Schematron](StructureDefinition-tddui-exit-mode-label.sch) 
 
-#### Constraints
+#### Contraintes
 
 
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-exit-mode-labe
   "name" : "TDDUIExitModeLabel",
   "title" : "Libellé mode de sortie",
   "status" : "active",
-  "date" : "2025-11-28T15:30:37+00:00",
+  "date" : "2025-12-01T13:44:25+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

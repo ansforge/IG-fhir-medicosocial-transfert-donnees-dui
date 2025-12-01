@@ -755,7 +755,7 @@ L'attente de l'usager représente les souhaits, les désirs et les envies dans t
 
 ##### Classe Bilan
 
-Un bilan est une analyse réalisée à la conclusion du projet personnalisé ou à une étape intermédiaire.
+Un bilan est une évaluation du projet personnalisé qui est réalisé à la conclusion de celui-ci ou à une étape intermédiaire. La réévaluation du projet personnalisé s'effectue à minima une fois par an ou dès lors que l’usager le demande ou qu’un changement est observé.
 
 * Nom: idBilan : [1..1] Identifiant
   * Description: Identifiant technique du bilan obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature[TRE_G08-TypeIdentifiantPersonne](https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne)), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "BILA" et de l'identifiant du bilan dans le DUI (numBilan) :idBilan = 3+FINESS/identifiantLocalUsagerESSMS-BILA-numBilan
@@ -767,12 +767,6 @@ Un bilan est une analyse réalisée à la conclusion du projet personnalisé ou 
   * Description: Périmètre du bilan.
 * Nom: problematiqueGlobaleUsager : [0..1] Texte
   * Description: Problématique liée à l'usager.
-* Nom: synthesePreparationBilan : [0..*] Texte
-  * Description: Préparation du bilan.
-* Nom: corps : [1..1] Texte
-  * Description: Corps de la préparation.
-* Nom: auteur : [1..1] Texte
-  * Description: Auteur de la préparation.
 * Nom: syntheseBilan : [0..1] Texte
   * Description: Synthèse du bilan.
 * Nom: inviteBilan : [0..1] Texte
@@ -781,6 +775,15 @@ Un bilan est une analyse réalisée à la conclusion du projet personnalisé ou 
   * Description: Date du prochain bilan.
 * Nom: pieceJointeBilan : [0..*] ObjetBinaire
   * Description: Pièce(s) jointe(s) au bilan.
+
+###### Classe SynthèsePreparationBilan
+
+Préparation du bilan du projet personnalisé.
+
+* Nom: corps : [1..1] Texte
+  * Description: Corps de la préparation.
+* Nom: auteur : [1..1] ([Professionnel](#classe-professionnel),[Usager](#classe-usager),[Contact personne physique](#classe-contactpersonnephysique))
+  * Description: Auteur de la préparation de bilan. Cet auteur peut référencer un professionnel, l'usager ou une personne de son entourage.
 
 ### Partie Coordination des acteurs
 
@@ -935,7 +938,7 @@ Portion déterminée de l'espace où se sont déroulés des événements.
 Cette classe décrit le statut des ressources (Evenement, Evaluation, Projet personnalisé, …).
 
 * Nom: statut : [1..1] Code
-  * Description: Statut de la ressource impactée.Jeu(x) de valeur(s) associé(s) :[JDV_J281-StatutsRessourcesMS](https://mos.esante.gouv.fr/NOS/JDV_J281-StatutsRessourcesMS/FHIR/JDV-J281-StatutsRessourcesMS)- Pour l'Evaluation seuls les codes suivants sont à utiliser : APPROUVE, VALIDE, TERMINE- Pour l'Evènement seuls les codes suivants sont à utiliser : PLANIFIE, VALIDE, REALISE, ANNULE
+  * Description: Statut de la ressource impactée.Jeu(x) de valeur(s) associé(s) :[JDV_J281-StatutsRessourcesMS](https://mos.esante.gouv.fr/NOS/JDV_J281-StatutsRessourcesMS/FHIR/JDV-J281-StatutsRessourcesMS)- Pour l'Evaluation seuls les codes suivants sont à utiliser : APPROUVE, VALIDE, TERMINE- Pour l'Evènement seuls les codes suivants sont à utiliser : PLANIFIE, VALIDE, REALISE, ANNULE- Pour le projet personnalisé seuls les codes suivants sont à utiliser : NONDEBUTE, ENPREPARATION, CREATION, ENREALISATION, TERMINE- Pour l'Objectif, l'Action et la Prestation du Projet personnalisé seuls les codes suivants sont à utiliser : ENPREPARATION, ACTIF, TERMINE, ANNULER
 * Nom: motifNonRealisation : [0..1] Code
   * Description: Motif associé au statut de non-réalisation de l’évènement.Jeu(x) de valeur(s) associé(s) : JDV_MotifNonRealisationEvenement_CISIS avec l'OID 1.2.250.1.213.1.1.5.803 publié sur[annexe-vocabulaire-et-jeux-de-valeurs](https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs)
 * Nom: dateStatut : [0..1] DateHeure
@@ -947,8 +950,8 @@ Cette classe décrit le statut des ressources (Evenement, Evaluation, Projet per
 
 Cela correspond au consentement d'une personne physique ou morale.
 
-* Nom: auteur : [1..1] Texte
-  * Description: Acteur qui donne son accord.
+* Nom: auteur : [1..1] ([Professionnel](#classe-professionnel),[Usager](#classe-usager),[Contact personne physique](#classe-contactpersonnephysique))
+  * Description: Acteur (personne physique ou morale) qui donne son accord. L'auteur de l'accord peut référencer un professionnel, l'usager ou une personne de son entourage.
 * Nom: dateSignature : [1..1] DateHeure
   * Description: Date de délivrance de l'accord.
 * Nom: dureeValidite : [0..1] Periode

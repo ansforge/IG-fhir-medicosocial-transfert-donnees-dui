@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment | *Version*:2.0.0 |
-| Active as of 2025-11-28 | *Computable Name*:TDDUIComment |
+| Active as of 2025-12-01 | *Computable Name*:TDDUIComment |
 
 Commentaire relatif au séjour.
 
@@ -17,9 +17,9 @@ Commentaire relatif au séjour.
 
 **Usage info**
 
-**Usages:**
+**Utilisations:**
 
-* Use this Extension: [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md)
+* Utiliser ce Extension: [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-comment)
 
@@ -31,7 +31,7 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 Other representations of profile: [CSV](StructureDefinition-tddui-comment.csv), [Excel](StructureDefinition-tddui-comment.xlsx), [Schematron](StructureDefinition-tddui-comment.sch) 
 
-#### Constraints
+#### Contraintes
 
 
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-comment.csv), 
   "name" : "TDDUIComment",
   "title" : "Commentaire",
   "status" : "active",
-  "date" : "2025-11-28T15:30:37+00:00",
+  "date" : "2025-12-01T13:44:25+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

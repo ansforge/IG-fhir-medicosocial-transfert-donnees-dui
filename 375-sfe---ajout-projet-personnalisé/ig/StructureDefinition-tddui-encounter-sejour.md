@@ -9,16 +9,16 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour | *Version*:2.0.0 |
-| Active as of 2025-11-28 | *Computable Name*:TDDUIEncounterSejour |
+| Active as of 2025-12-01 | *Computable Name*:TDDUIEncounterSejour |
 
  
 Profil de la ressource Encounter permettant de regrouper les informations relatives au séjour d'un usager dans une structure ESSMS 
 
-**Usages:**
+**Utilisations:**
 
-* Use this Profile: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
-* Examples for this Profile: [Encounter/tddui-encounter-sejour-example](Encounter-tddui-encounter-sejour-example.md)
-* CapabilityStatements using this Profile: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
+* Utiliser ce Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
+* Exemples pour ce Profil: [Encounter/tddui-encounter-sejour-example](Encounter-tddui-encounter-sejour-example.md)
+* CapabilityStatements utilisant ce Profil: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-encounter-sejour)
 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-sejo
   "name" : "TDDUIEncounterSejour",
   "title" : "TDDUI Encounter Sejour",
   "status" : "active",
-  "date" : "2025-11-28T15:30:37+00:00",
+  "date" : "2025-12-01T13:44:25+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
