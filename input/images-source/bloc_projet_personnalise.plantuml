@@ -10,6 +10,7 @@ class Action #LightGray
 class MoyenRessource #LightGray
 class PrestationProjetPersonnalise #LightGray
 class Bilan #LightGray
+class SynthesePreparationBilan #LightGray
 
 class Evaluation #LightGray
 class "DetailEvaluation" as DetailEvaluationN1 <<premier niveau>> #LightGray 
@@ -33,6 +34,8 @@ class ProjetPersonnalise #LightGray {
 
 Usager "1" -- "0..*" ProjetPersonnalise
 ProjetPersonnalise "1" - "0..*" Bilan
+Bilan "1" - "0..*" SynthesePreparationBilan
+
 Attente "0..*" - "1" ProjetPersonnalise
 ProjetPersonnalise "1" - "0..*" Besoin
 ProjetPersonnalise "1" -- "0..*" Objectif

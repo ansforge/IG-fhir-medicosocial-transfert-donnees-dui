@@ -1615,7 +1615,7 @@ L'attente de l'usager représente les souhaits, les désirs et les envies dans t
 </table> 
 
 ##### Classe Bilan
-Un bilan est une analyse réalisée à la conclusion du projet personnalisé ou à une étape intermédiaire.
+Un bilan est une évaluation du projet personnalisé qui est réalisé à la conclusion de celui-ci ou à une étape intermédiaire. La réévaluation du projet personnalisé s'effectue à minima une fois par an ou dès lors que l’usager le demande ou qu’un changement est observé.
 
 <table style="width:100%">
   <tr>
@@ -1644,18 +1644,6 @@ Un bilan est une analyse réalisée à la conclusion du projet personnalisé ou 
     <td>Problématique liée à l'usager.</td>
  </tr>
  <tr>
-    <td>synthesePreparationBilan : [0..*] Texte</td>
-    <td>Préparation du bilan.</td>
- </tr>
- <tr>
-    <td>corps : [1..1] Texte</td>
-    <td>Corps de la préparation.</td>
- </tr>
- <tr>
-    <td>auteur : [1..1] Texte</td>
-    <td>Auteur de la préparation.</td>
- </tr>
- <tr>
     <td>syntheseBilan : [0..1] Texte</td>
     <td>Synthèse du bilan.</td>
  </tr>
@@ -1673,6 +1661,23 @@ Un bilan est une analyse réalisée à la conclusion du projet personnalisé ou 
  </tr>
 </table>    
 
+###### Classe SynthèsePreparationBilan
+Préparation du bilan du projet personnalisé.
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+<tr>
+    <td>corps : [1..1] Texte</td>
+    <td>Corps de la préparation.</td>
+ </tr>
+ <tr>
+    <td>auteur : [1..1] (<a href="#classe-professionnel">Professionnel</a>, <a href="#classe-usager">Usager</a>, <a href="#classe-contactpersonnephysique">Contact personne physique</a>)</td>
+    <td>Auteur de la préparation de bilan. Cet auteur peut référencer un professionnel, l'usager ou une personne de son entourage.</td>
+ </tr>
+</table>   
 
 ### Partie Coordination des acteurs
 
@@ -2000,7 +2005,9 @@ Cette classe décrit le statut des ressources (Evenement, Evaluation, Projet per
     <td>Statut de la ressource impactée. <br>
     Jeu(x) de valeur(s) associé(s) :  <a href="https://mos.esante.gouv.fr/NOS/JDV_J281-StatutsRessourcesMS/FHIR/JDV-J281-StatutsRessourcesMS">JDV_J281-StatutsRessourcesMS</a><br>
     - Pour l'Evaluation seuls les codes suivants sont à utiliser : APPROUVE, VALIDE, TERMINE <br>
-    - Pour l'Evènement seuls les codes suivants sont à utiliser : PLANIFIE, VALIDE, REALISE, ANNULE
+    - Pour l'Evènement seuls les codes suivants sont à utiliser : PLANIFIE, VALIDE, REALISE, ANNULE <br>
+    - Pour le projet personnalisé seuls les codes suivants sont à utiliser : NONDEBUTE, ENPREPARATION, CREATION, ENREALISATION, TERMINE <br>
+    - Pour l'Objectif, l'Action et la Prestation du Projet personnalisé seuls les codes suivants sont à utiliser : ENPREPARATION, ACTIF, TERMINE, ANNULER
     </td>
   </tr>
   <tr>
@@ -2030,8 +2037,8 @@ Cela correspond au consentement d'une personne physique ou morale.
     <th>Description</th>
   </tr>
   <tr>
-    <td>auteur : [1..1] Texte</td>
-    <td>Acteur qui donne son accord.</td>
+    <td>auteur : [1..1] (<a href="#classe-professionnel">Professionnel</a>, <a href="#classe-usager">Usager</a>, <a href="#classe-contactpersonnephysique">Contact personne physique</a>)</td>
+    <td>Acteur (personne physique ou morale) qui donne son accord. L'auteur de l'accord peut référencer un professionnel, l'usager ou une personne de son entourage.</td>
   </tr>
   <tr>
     <td>dateSignature : [1..1] DateHeure</td>
