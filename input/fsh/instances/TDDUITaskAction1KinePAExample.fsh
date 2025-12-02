@@ -1,4 +1,4 @@
-Instance: tddui-task-action-1-kine-pa-example
+Instance: tddui-pp-pa-task-action-1-kine-example
 InstanceOf: TDDUITaskAction
 Usage: #example
 Description: "Exemple d'une action de l'objectif 1 réalisée par le kinésithérapeute dans le cadre du projet personnalisé PA." 
@@ -10,7 +10,7 @@ Description: "Exemple d'une action de l'objectif 1 réalisée par le kinésithé
 
 * owner.display = "Kinésithérapeute"
 
-* basedOn = Reference(tddui-careplan-projet-personnalise-pa-example)
+* basedOn = Reference(tddui-pp-ime-careplan-example)
 
 * status = #in-progress
 
@@ -18,4 +18,4 @@ Description: "Exemple d'une action de l'objectif 1 réalisée par le kinésithé
 
 * input[titre].valueString = "Action du kinésithérapeute pour atteindre l'objectif 1"
 
-* input[objectif].valueReference = Reference(tddui-goal-objectif-1-pa-example)
+* input[objectif].valueReference = Reference(tddui-pp-pa-goal-objectif-1-example)

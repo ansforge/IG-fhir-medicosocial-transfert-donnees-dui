@@ -1,4 +1,4 @@
-Instance: tddui-questionnaire-response-aggir-pa-example-pp
+Instance: tddui-pp-pa-questionnaire-response-aggir-pa-example
 InstanceOf: TDDUIQuestionnaireResponse
 Description: "Grille de réponse AGGIR PA"
 Usage: #example
@@ -9,7 +9,7 @@ Usage: #example
 * questionnaire = "https://interop.esante.gouv.fr/ig/fhir/tddui/Questionnaire/tddui-questionnaire-aggir-pa-ssiad"
 
 * status = #completed
-* subject = Reference(tddui-patient-pa-example-pp)
+* subject = Reference(tddui-pp-pa-patient-example-pp)
 
 * item.linkId = "resultat-eval"
 * item.text = "Résultat évaluation"

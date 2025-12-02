@@ -1,4 +1,4 @@
-Instance: tddui-careplan-projet-personnalise-ime-example
+Instance: tddui-pp-ime-careplan-example
 InstanceOf: TDDUICarePlanProjetPersonnalise
 Usage: #example
 Description: "Exemple du projet personnalisé d'un enfant en IME"
@@ -12,7 +12,7 @@ Description: "Exemple du projet personnalisé d'un enfant en IME"
 
 * intent = #plan
 
-* subject = Reference(tddui-patient-pp-ime-example)
+* subject = Reference(tddui-pp-ime-patient-example)
 
-* supportingInfo[accordStructure] = Reference(tddui-consent-accord-ime-example)
+* supportingInfo[accordStructure] = Reference(tddui-pp-ime-consent-accord-example)
 * supportingInfo[accordStructure].display = "Consentement structure"

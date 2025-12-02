@@ -1,4 +1,4 @@
-Instance: tddui-task-action-1-aesh-ime-example
+Instance: tddui-pp-ime-task-action-1-aesh-example
 InstanceOf: TDDUITaskAction
 Usage: #example
 Description: "Exemple d'une action de l'objectif 1 réalisée par l'AESH dans le cadre du projet personnalisé en IME." 
@@ -10,7 +10,7 @@ Description: "Exemple d'une action de l'objectif 1 réalisée par l'AESH dans le
 
 * owner.display = "AESH"
 
-* basedOn = Reference(tddui-careplan-projet-personnalise-ime-example)
+* basedOn = Reference(tddui-pp-ime-careplan-example)
 
 * status = #in-progress
 

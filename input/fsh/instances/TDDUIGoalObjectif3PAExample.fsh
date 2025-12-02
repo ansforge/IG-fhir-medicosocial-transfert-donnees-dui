@@ -1,4 +1,4 @@
-Instance: tddui-goal-objectif-3-pa-example
+Instance: tddui-pp-pa-goal-objectif-3-example
 InstanceOf: TDDUIGoalObjectif
 Usage: #example
 Description: "Exemple d'un objectif dans le cadre du projet personnalisé PA."
@@ -10,11 +10,11 @@ Description: "Exemple d'un objectif dans le cadre du projet personnalisé PA."
 
 * description.text = "Maintenir le lien social."
 
-* addresses = Reference(tddui-servicerequest-besoin-3-pa-example)
+* addresses = Reference(tddui-pp-pa-servicerequest-besoin-3-example)
 
-* subject = Reference(tddui-patient-pa-example-pp)
+* subject = Reference(tddui-pp-pa-patient-example-pp)
 
-* extension[referenceProjetPerso].valueReference = Reference(tddui-careplan-projet-personnalise-pa-example)
+* extension[referenceProjetPerso].valueReference = Reference(tddui-pp-pa-careplan-example)
 
 * note[titreObjectif].text = "Objectif 3"
 * note[titreObjectif].extension[TDDUIGoalNoteExtension].valueCode = #titreObjectif

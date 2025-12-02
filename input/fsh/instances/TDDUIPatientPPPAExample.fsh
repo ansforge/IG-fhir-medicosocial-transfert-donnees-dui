@@ -1,4 +1,4 @@
-Instance: tddui-patient-pa-example-pp
+Instance: tddui-pp-pa-patient-example-pp
 InstanceOf: TDDUIPatient
 Usage: #example
 Description: "Exemple de la ressource TDDUIPatient dans le cadre d'un projet personnalisé PA"

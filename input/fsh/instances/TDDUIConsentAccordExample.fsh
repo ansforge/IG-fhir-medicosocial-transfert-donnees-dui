@@ -1,4 +1,4 @@
-Instance: tddui-consent-accord-example
+Instance: tddui-pp-pa-consent-accord-example
 InstanceOf: TDDUIConsentAccord
 Usage: #example
 Description: "Exemple d'un accord de la structure"

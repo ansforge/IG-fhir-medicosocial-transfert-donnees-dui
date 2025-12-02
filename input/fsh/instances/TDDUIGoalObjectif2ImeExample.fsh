@@ -1,4 +1,4 @@
-Instance: tddui-goal-objectif-2-ime-example
+Instance: tddui-pp-ime-goal-objectif-2-example
 InstanceOf: TDDUIGoalObjectif
 Usage: #example
 Description: "Exemple d'un objectif dans le cadre du projet personnalisé en IME."
@@ -10,9 +10,9 @@ Description: "Exemple d'un objectif dans le cadre du projet personnalisé en IME
 
 * description.text = "Atteindre le niveau lecteur débutant (décodage syllabique) en 9 mois."
 
-* subject = Reference(tddui-patient-pp-ime-example)
+* subject = Reference(tddui-pp-ime-patient-example)
 
-* extension[referenceProjetPerso].valueReference = Reference(tddui-careplan-projet-personnalise-ime-example)
+* extension[referenceProjetPerso].valueReference = Reference(tddui-pp-ime-careplan-example)
 
 * note[titreObjectif].text = "Objectif 2"
 * note[titreObjectif].extension[TDDUIGoalNoteExtension].valueCode = #titreObjectif

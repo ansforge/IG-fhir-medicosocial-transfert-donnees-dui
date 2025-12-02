@@ -1,4 +1,4 @@
-Instance: tddui-task-action-2-anim-pa-example
+Instance: tddui-pp-pa-task-action-2-anim-example
 InstanceOf: TDDUITaskAction
 Usage: #example
 Description: "Exemple d'une action de l'objectif 1 réalisée par l'animatrice dans le cadre du projet personnalisé PA." 
@@ -10,7 +10,7 @@ Description: "Exemple d'une action de l'objectif 1 réalisée par l'animatrice d
 
 * owner.display = "Animatrice"
 
-* basedOn = Reference(tddui-careplan-projet-personnalise-pa-example)
+* basedOn = Reference(tddui-pp-ime-careplan-example)
 
 * status = #in-progress
 
@@ -18,4 +18,4 @@ Description: "Exemple d'une action de l'objectif 1 réalisée par l'animatrice d
 
 * input[titre].valueString = "Action de l'animatrice pour atteindre l'objectif 2"
 
-* input[objectif].valueReference = Reference(tddui-goal-objectif-2-pa-example)
+* input[objectif].valueReference = Reference(tddui-pp-pa-goal-objectif-2-example)

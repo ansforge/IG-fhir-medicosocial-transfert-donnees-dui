@@ -1,4 +1,4 @@
-Instance: tddui-patient-pp-ime-example
+Instance: tddui-pp-ime-patient-example
 InstanceOf: TDDUIPatient
 Usage: #example
 Description: "Exemple de la ressource TDDUIPatient dans le cadre d'un projet personnalisé en IME"

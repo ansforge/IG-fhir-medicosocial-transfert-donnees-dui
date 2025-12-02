@@ -1,4 +1,4 @@
-Instance: bilan-objectif-1-projet-personnalise-pa-example-pp
+Instance: tddui-pp-pa-documentreference-bilan-objectif-1-example
 InstanceOf: TDDUIDocumentReference
 Title: "Bilan Objectif 1"
 Description: "Bilan de l'objectif 1 du projet personnalisé PA au format PDF"
@@ -7,7 +7,7 @@ Description: "Bilan de l'objectif 1 du projet personnalisé PA au format PDF"
 
 * status = #current
 
-* subject = Reference(tddui-patient-pa-example-pp)
+* subject = Reference(tddui-pp-pa-patient-example-pp)
 
 * author = Reference(tddui-organization-example)
 

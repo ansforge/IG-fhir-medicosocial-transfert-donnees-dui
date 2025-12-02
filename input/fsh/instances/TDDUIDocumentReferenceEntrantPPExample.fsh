@@ -1,4 +1,4 @@
-Instance: entrant-projet-personnalise-pa-example-pp
+Instance: tddui-pp-pa-documentreference-entrant-example
 InstanceOf: TDDUIDocumentReference
 Title: "Entrant Projet Personnalisé PA"
 Description: "Entrant Projet Personnalisé PA au format PDF"
@@ -7,7 +7,7 @@ Description: "Entrant Projet Personnalisé PA au format PDF"
 
 * status = #current
 
-* subject = Reference(tddui-patient-pa-example-pp)
+* subject = Reference(tddui-pp-pa-patient-example-pp)
 
 * author = Reference(tddui-organization-example)
 

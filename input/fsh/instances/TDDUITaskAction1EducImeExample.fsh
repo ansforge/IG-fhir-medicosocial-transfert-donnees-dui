@@ -1,4 +1,4 @@
-Instance: tddui-task-action-1-educ-ime-example
+Instance: tddui-pp-ime-task-action-1-educ-example
 InstanceOf: TDDUITaskAction
 Usage: #example
 Description: "Exemple d'une action de l'objectif 1 réalisée par l'éducateur spécialisé dans le cadre du projet personnalisé en IME." 
@@ -10,7 +10,7 @@ Description: "Exemple d'une action de l'objectif 1 réalisée par l'éducateur s
 
 * owner.display = "AESH"
 
-* basedOn = Reference(tddui-careplan-projet-personnalise-ime-example)
+* basedOn = Reference(tddui-pp-ime-careplan-example)
 
 * status = #in-progress
 

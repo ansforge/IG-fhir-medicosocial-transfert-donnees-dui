@@ -1,4 +1,4 @@
-Instance: tddui-task-action-3-psy-pa-example
+Instance: tddui-pp-pa-task-action-3-psy-example
 InstanceOf: TDDUITaskAction
 Usage: #example
 Description: "Exemple d'une action de l'objectif 3 réalisée par le psychologue dans le cadre du projet personnalisé PA." 
@@ -10,7 +10,7 @@ Description: "Exemple d'une action de l'objectif 3 réalisée par le psychologue
 
 * owner.display = "Psychologue"
 
-* basedOn = Reference(tddui-careplan-projet-personnalise-pa-example)
+* basedOn = Reference(tddui-pp-ime-careplan-example)
 
 * status = #in-progress
 
@@ -18,4 +18,4 @@ Description: "Exemple d'une action de l'objectif 3 réalisée par le psychologue
 
 * input[titre].valueString = "Action du psychologue pour atteindre l'objectif 3"
 
-* input[objectif].valueReference = Reference(tddui-goal-objectif-3-pa-example)
+* input[objectif].valueReference = Reference(tddui-pp-pa-goal-objectif-3-example)

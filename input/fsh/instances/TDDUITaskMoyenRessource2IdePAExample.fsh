@@ -1,4 +1,4 @@
-Instance: tddui-task-moyen-ressource-ide-2-pa-example
+Instance: tddui-pp-pa-task-moyen-ressource-ide-2-example
 InstanceOf: TDDUITaskMoyenRessource
 Usage: #example
 Description: "Exemple des moyens et ressources de l'objectif 2 dans le cadre du projet personnalisé PA." 
@@ -8,9 +8,9 @@ Description: "Exemple des moyens et ressources de l'objectif 2 dans le cadre du 
 
 * description  = "Carnet de suivi poids"
 
-* basedOn = Reference(tddui-careplan-projet-personnalise-pa-example)
+* basedOn = Reference(tddui-pp-pa-careplan-example)
 
-* partOf = Reference(tddui-task-action-2-ide-pa-example)
+* partOf = Reference(tddui-pp-pa-task-action-2-ide-example)
 
 * status = #in-progress
 

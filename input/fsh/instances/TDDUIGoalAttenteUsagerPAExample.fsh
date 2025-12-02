@@ -1,4 +1,4 @@
-Instance: tddui-goal-attente-usager-pa-example
+Instance: tddui-pp-pa-goal-attente-usager-example
 InstanceOf: TDDUIGoalAttente
 Usage: #example
 Description: "Exemple des attentes de l'usager dans le cadre du projet personnalisé PA."
@@ -11,10 +11,10 @@ Description: "Exemple des attentes de l'usager dans le cadre du projet personnal
 * note[origineAttente].text = "Usager"
 * note[origineAttente].extension[TDDUIGoalNoteExtension].valueCode = #origineAttente
 
-* subject = Reference(tddui-patient-pa-example-pp)
+* subject = Reference(tddui-pp-pa-patient-example-pp)
 
 * description.text = "- Garder la main sur l'organisation de ses journées 
 - Participer à une chorale et à un club lecture
 - Se sentir en sécurité lors des déplacements"
 
-* extension[referenceProjetPerso].valueReference = Reference(tddui-careplan-projet-personnalise-pa-example)
+* extension[referenceProjetPerso].valueReference = Reference(tddui-pp-pa-careplan-example)

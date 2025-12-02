@@ -1,4 +1,4 @@
-Instance: tddui-goal-attente-famille-pa-example
+Instance: tddui-pp-pa-goal-attente-famille-example
 InstanceOf: TDDUIGoalAttente
 Usage: #example
 Description: "Exemple des attentes de la famille dans le cadre du projet personnalisé PA."
@@ -11,10 +11,10 @@ Description: "Exemple des attentes de la famille dans le cadre du projet personn
 * note[origineAttente].text = "Famille"
 * note[origineAttente].extension[TDDUIGoalNoteExtension].valueCode = #origineAttente
 
-* subject = Reference(tddui-patient-pa-example-pp)
+* subject = Reference(tddui-pp-pa-patient-example-pp)
 
 * description.text = "- Prévenir les chutes
 - Stabiliser le poids et le plaisir alimentaire
 - Maintenir le lien familial (visios)"
 
-* extension[referenceProjetPerso].valueReference = Reference(tddui-careplan-projet-personnalise-pa-example)
+* extension[referenceProjetPerso].valueReference = Reference(tddui-pp-pa-careplan-example)
