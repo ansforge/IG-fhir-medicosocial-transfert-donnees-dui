@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise | *Version*:2.1.0-ballot |
-| Active as of 2025-12-01 | *Computable Name*:TDDUICarePlanProjetPersonnalise |
+| Active as of 2025-12-02 | *Computable Name*:TDDUICarePlanProjetPersonnalise |
 
  
 Profil de la ressource CarePlan représentant le projet personnalisé d'un usager. 
@@ -17,7 +17,7 @@ Profil de la ressource CarePlan représentant le projet personnalisé d'un usage
 **Utilisations:**
 
 * Référer à ce Profil: [Lien vers le projet personnalisé](StructureDefinition-tddui-careplan-reference.md), [TDDUI ServiceRequest Besoin](StructureDefinition-tddui-service-request-besoin.md), [TDDUI Task Action](StructureDefinition-tddui-task-action.md), [TDDUI Task Bilan](StructureDefinition-tddui-task-bilan.md)...Show 2 more,[TDDUI Task MoyenRessource](StructureDefinition-tddui-task-moyen-ressource.md)and[TDDUI Task Prestation](StructureDefinition-tddui-task-prestation.md)
-* Exemples pour ce Profil: [CarePlan/tddui-careplan-projet-personnalise-ime-example](CarePlan-tddui-careplan-projet-personnalise-ime-example.md) and [CarePlan/tddui-careplan-projet-personnalise-pa-example](CarePlan-tddui-careplan-projet-personnalise-pa-example.md)
+* Exemples pour ce Profil: [CarePlan/tddui-pp-ime-careplan-example](CarePlan-tddui-pp-ime-careplan-example.md) and [CarePlan/tddui-pp-pa-careplan-example](CarePlan-tddui-pp-pa-careplan-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-careplan-projet-personnalise)
 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
   "name" : "TDDUICarePlanProjetPersonnalise",
   "title" : "TDDUI CarePlan Projet Personalise",
   "status" : "active",
-  "date" : "2025-12-01T09:05:19+00:00",
+  "date" : "2025-12-02T17:18:03+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

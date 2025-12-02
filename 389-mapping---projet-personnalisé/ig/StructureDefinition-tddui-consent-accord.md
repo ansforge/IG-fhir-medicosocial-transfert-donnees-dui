@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord | *Version*:2.1.0-ballot |
-| Active as of 2025-12-01 | *Computable Name*:TDDUIConsentAccord |
+| Active as of 2025-12-02 | *Computable Name*:TDDUIConsentAccord |
 
  
 Profil de la ressource Consent permettant de représenter l'accord de l'usager, de son entourage ou de la structure. 
@@ -17,7 +17,7 @@ Profil de la ressource Consent permettant de représenter l'accord de l'usager, 
 **Utilisations:**
 
 * Référer à ce Profil: [TDDUI CarePlan Projet Personalise](StructureDefinition-tddui-careplan-projet-personnalise.md)
-* Exemples pour ce Profil: [Consent/tddui-consent-accord-example](Consent-tddui-consent-accord-example.md) and [Consent/tddui-consent-accord-ime-example](Consent-tddui-consent-accord-ime-example.md)
+* Exemples pour ce Profil: [Consent/tddui-pp-ime-consent-accord-example](Consent-tddui-pp-ime-consent-accord-example.md) and [Consent/tddui-pp-pa-consent-accord-example](Consent-tddui-pp-pa-consent-accord-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-consent-accord)
 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-consent-accord
   "name" : "TDDUIConsentAccord",
   "title" : "TDDUI Consent Accord",
   "status" : "active",
-  "date" : "2025-12-01T09:05:19+00:00",
+  "date" : "2025-12-02T17:18:03+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

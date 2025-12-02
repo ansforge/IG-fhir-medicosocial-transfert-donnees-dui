@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-care-plan-supportinginfo | *Version*:2.1.0-ballot |
-| Active as of 2025-12-01 | *Computable Name*:TDDUICarePlanSupportingInfo |
+| Active as of 2025-12-02 | *Computable Name*:TDDUICarePlanSupportingInfo |
 
 Extension pour discriminer l'élément CarePlan.supportingInfo.
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-care-plan-supp
   "name" : "TDDUICarePlanSupportingInfo",
   "title" : "TDDUI CarePlan SupportingInfo",
   "status" : "active",
-  "date" : "2025-12-01T09:05:19+00:00",
+  "date" : "2025-12-02T17:18:03+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

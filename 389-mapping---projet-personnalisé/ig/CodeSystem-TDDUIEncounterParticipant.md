@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/TDDUIEncounterParticipant | *Version*:2.1.0-ballot |
-| Active as of 2025-12-01 | *Computable Name*:TDDUIEncounterParticipant |
+| Active as of 2025-12-02 | *Computable Name*:TDDUIEncounterParticipant |
 
  
 CodeSystem for the participant types in TDDUI Encounter 
@@ -37,7 +37,7 @@ CodeSystem for the participant types in TDDUI Encounter
   "title" : "TDDUI Encounter Participant Type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-01T09:05:19+00:00",
+  "date" : "2025-12-02T17:18:03+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

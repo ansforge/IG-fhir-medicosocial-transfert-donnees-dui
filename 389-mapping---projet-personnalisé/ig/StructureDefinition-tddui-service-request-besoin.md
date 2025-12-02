@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin | *Version*:2.1.0-ballot |
-| Active as of 2025-12-01 | *Computable Name*:TDDUIServiceRequestBesoin |
+| Active as of 2025-12-02 | *Computable Name*:TDDUIServiceRequestBesoin |
 
  
 Profil de la ressource ServiceRequest permettant de représenter les besoins de l'usager. 
@@ -17,7 +17,7 @@ Profil de la ressource ServiceRequest permettant de représenter les besoins de 
 **Utilisations:**
 
 * Référer à ce Profil: [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md)
-* Exemples pour ce Profil: [ServiceRequest/tddui-servicerequest-besoin-1-pa-example](ServiceRequest-tddui-servicerequest-besoin-1-pa-example.md), [ServiceRequest/tddui-servicerequest-besoin-2-pa-example](ServiceRequest-tddui-servicerequest-besoin-2-pa-example.md) and [ServiceRequest/tddui-servicerequest-besoin-3-pa-example](ServiceRequest-tddui-servicerequest-besoin-3-pa-example.md)
+* Exemples pour ce Profil: [ServiceRequest/tddui-pp-pa-servicerequest-besoin-1-example](ServiceRequest-tddui-pp-pa-servicerequest-besoin-1-example.md), [ServiceRequest/tddui-pp-pa-servicerequest-besoin-2-example](ServiceRequest-tddui-pp-pa-servicerequest-besoin-2-example.md) and [ServiceRequest/tddui-pp-pa-servicerequest-besoin-3-example](ServiceRequest-tddui-pp-pa-servicerequest-besoin-3-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-service-request-besoin)
 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-service-reques
   "name" : "TDDUIServiceRequestBesoin",
   "title" : "TDDUI ServiceRequest Besoin",
   "status" : "active",
-  "date" : "2025-12-01T09:05:19+00:00",
+  "date" : "2025-12-02T17:18:03+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

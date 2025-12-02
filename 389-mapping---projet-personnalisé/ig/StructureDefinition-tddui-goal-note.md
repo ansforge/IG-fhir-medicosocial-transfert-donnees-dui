@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-note | *Version*:2.1.0-ballot |
-| Active as of 2025-12-01 | *Computable Name*:TDDUIGoalNote |
+| Active as of 2025-12-02 | *Computable Name*:TDDUIGoalNote |
 
 Extension pour discriminer l'élément Goal.note.
 
@@ -20,7 +20,7 @@ Extension pour discriminer l'élément Goal.note.
 **Utilisations:**
 
 * Utiliser ce Extension: [TDDUI Goal Attente](StructureDefinition-tddui-goal-attente.md) and [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md)
-* Exemples pour ce Extension: [Goal/tddui-goal-attente-famille-pa-example](Goal-tddui-goal-attente-famille-pa-example.md), [Goal/tddui-goal-attente-usager-pa-example](Goal-tddui-goal-attente-usager-pa-example.md), [Goal/tddui-goal-objectif-1-ime-example](Goal-tddui-goal-objectif-1-ime-example.md), [Goal/tddui-goal-objectif-1-pa-example](Goal-tddui-goal-objectif-1-pa-example.md)...Show 3 more,[Goal/tddui-goal-objectif-2-ime-example](Goal-tddui-goal-objectif-2-ime-example.md),[Goal/tddui-goal-objectif-2-pa-example](Goal-tddui-goal-objectif-2-pa-example.md)and[Goal/tddui-goal-objectif-3-pa-example](Goal-tddui-goal-objectif-3-pa-example.md)
+* Exemples pour ce Extension: [Goal/tddui-pp-ime-goal-objectif-1-example](Goal-tddui-pp-ime-goal-objectif-1-example.md), [Goal/tddui-pp-ime-goal-objectif-2-example](Goal-tddui-pp-ime-goal-objectif-2-example.md), [Goal/tddui-pp-pa-goal-attente-famille-example](Goal-tddui-pp-pa-goal-attente-famille-example.md), [Goal/tddui-pp-pa-goal-attente-usager-example](Goal-tddui-pp-pa-goal-attente-usager-example.md)...Show 3 more,[Goal/tddui-pp-pa-goal-objectif-1-example](Goal-tddui-pp-pa-goal-objectif-1-example.md),[Goal/tddui-pp-pa-goal-objectif-2-example](Goal-tddui-pp-pa-goal-objectif-2-example.md)and[Goal/tddui-pp-pa-goal-objectif-3-example](Goal-tddui-pp-pa-goal-objectif-3-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-goal-note)
 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-note.csv)
   "name" : "TDDUIGoalNote",
   "title" : "TDDUI Goal Note",
   "status" : "active",
-  "date" : "2025-12-01T09:05:19+00:00",
+  "date" : "2025-12-02T17:18:03+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

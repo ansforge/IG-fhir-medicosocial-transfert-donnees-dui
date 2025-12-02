@@ -22,6 +22,7 @@
     <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style-ans.css"/>
     <link rel="stylesheet" href="assets/css/style-add-ans.css"/>
     <!-- Placeholder for child template CSS declarations -->
@@ -50,6 +51,7 @@
     h3,h4,h5,h6{--heading-prefix:"7.28"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
+
         <!-- Placeholder for child template header declarations -->
 <div id="family-nav">
     <a id="hl7-search-lnk" data-no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
@@ -199,7 +201,6 @@
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
-
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Médicosocial - Transfert de données DUI - version de développement local (v2.1.0-ballot) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/fhir/tddui/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
   
@@ -307,7 +308,7 @@
         
           Active
           
-            as of 2025-12-01
+            as of 2025-12-02
           
         
       </td>
@@ -1510,7 +1511,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Content to use in performing the task<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J282-TransportsLiesAuProjetIndividuel-SERAFIN.html" title="https://mos.esante.gouv.fr/NOS/JDV_J282-TransportsLiesAuProjetIndividuel_SERAFIN/FHIR/JDV-J282-TransportsLiesAuProjetIndividuel-SERAFIN" class="binding">JDV_J282_TransportsLiesAuProjetIndividuel_SERAFIN</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 39676214-296d-4b11-8174-a677ee228f72
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // fb786bcf-622f-4e4c-bbcf-d859970a0df4
 document.getElementById('cbtddui-task-transport-usagerK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('tddui-task-transport-usagerK'), 'binding', document.getElementById('cbtddui-task-transport-usagerK-binding').checked, document.getElementById('pptddui-task-transport-usagerK'));
 document.getElementById('cbtddui-task-transport-usagerK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2037,7 +2038,7 @@ filterDesc(document.getElementById('tddui-task-transport-usagerK'), 'obligation'
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Content to use in performing the task</span><br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J282-TransportsLiesAuProjetIndividuel-SERAFIN.html" title="https://mos.esante.gouv.fr/NOS/JDV_J282-TransportsLiesAuProjetIndividuel_SERAFIN/FHIR/JDV-J282-TransportsLiesAuProjetIndividuel-SERAFIN" class="binding">JDV_J282_TransportsLiesAuProjetIndividuel_SERAFIN</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 39676214-296d-4b11-8174-a677ee228f72
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // fb786bcf-622f-4e4c-bbcf-d859970a0df4
 document.getElementById('cbtddui-task-transport-usagerD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('tddui-task-transport-usagerD'), 'binding', document.getElementById('cbtddui-task-transport-usagerD-binding').checked, document.getElementById('pptddui-task-transport-usagerD'));
 document.getElementById('cbtddui-task-transport-usagerD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -3824,7 +3825,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Meta">Meta</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 39676214-296d-4b11-8174-a677ee228f72
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // fb786bcf-622f-4e4c-bbcf-d859970a0df4
 document.getElementById('cbtddui-task-transport-usagerS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('tddui-task-transport-usagerS'), 'binding', document.getElementById('cbtddui-task-transport-usagerS-binding').checked, document.getElementById('pptddui-task-transport-usagerS'));
 document.getElementById('cbtddui-task-transport-usagerS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -5632,7 +5633,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Content to use in performing the task<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J282-TransportsLiesAuProjetIndividuel-SERAFIN.html" title="https://mos.esante.gouv.fr/NOS/JDV_J282-TransportsLiesAuProjetIndividuel_SERAFIN/FHIR/JDV-J282-TransportsLiesAuProjetIndividuel-SERAFIN" class="binding">JDV_J282_TransportsLiesAuProjetIndividuel_SERAFIN</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 39676214-296d-4b11-8174-a677ee228f72
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // fb786bcf-622f-4e4c-bbcf-d859970a0df4
 document.getElementById('cbtddui-task-transport-usagerKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('tddui-task-transport-usagerKA'), 'binding', document.getElementById('cbtddui-task-transport-usagerKA-binding').checked, document.getElementById('pptddui-task-transport-usagerKA'));
 document.getElementById('cbtddui-task-transport-usagerKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -6159,7 +6160,7 @@ filterDesc(document.getElementById('tddui-task-transport-usagerKA'), 'obligation
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Content to use in performing the task</span><br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J282-TransportsLiesAuProjetIndividuel-SERAFIN.html" title="https://mos.esante.gouv.fr/NOS/JDV_J282-TransportsLiesAuProjetIndividuel_SERAFIN/FHIR/JDV-J282-TransportsLiesAuProjetIndividuel-SERAFIN" class="binding">JDV_J282_TransportsLiesAuProjetIndividuel_SERAFIN</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 39676214-296d-4b11-8174-a677ee228f72
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // fb786bcf-622f-4e4c-bbcf-d859970a0df4
 document.getElementById('cbtddui-task-transport-usagerDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('tddui-task-transport-usagerDA'), 'binding', document.getElementById('cbtddui-task-transport-usagerDA-binding').checked, document.getElementById('pptddui-task-transport-usagerDA'));
 document.getElementById('cbtddui-task-transport-usagerDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -7945,7 +7946,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Meta">Meta</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 39676214-296d-4b11-8174-a677ee228f72
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // fb786bcf-622f-4e4c-bbcf-d859970a0df4
 document.getElementById('cbtddui-task-transport-usagerSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('tddui-task-transport-usagerSA'), 'binding', document.getElementById('cbtddui-task-transport-usagerSA-binding').checked, document.getElementById('pptddui-task-transport-usagerSA'));
 document.getElementById('cbtddui-task-transport-usagerSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -8671,7 +8672,7 @@ Résumé
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.1.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Dec 1, 2025 09:05+0000">2025-12-01</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.1.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Dec 2, 2025 17:18+0000">2025-12-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
