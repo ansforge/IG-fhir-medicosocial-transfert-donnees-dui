@@ -2,7 +2,7 @@ Profile: TDDUITaskAction
 Parent: Task
 Id: tddui-task-action
 Title: "TDDUI Task Action"
-Description: "Profil de la ressource Task permettant de représenter les actions réalisés dans le cadre du projet personnalisé."
+Description: "Profil de la ressource Task permettant de représenter les actions réalisées dans le cadre du projet personnalisé."
 
 * identifier 1..1
 * identifier ^short = "Identifiant de l'action"
