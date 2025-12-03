@@ -1,4 +1,4 @@
-# TDDUI Practitioner - Médicosocial - Transfert de données DUI v2.1.0-ballot
+# TDDUI Practitioner - Médicosocial - Transfert de données DUI v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner | *Version*:2.1.0-ballot |
-| Active as of 2025-12-02 | *Computable Name*:TDDUIPractitioner |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner | *Version*:2.1.0 |
+| Active as of 2025-12-03 | *Computable Name*:TDDUIPractitioner |
 
  
 Profil de la ressource FRCorePractitionerProfile permettant de représenter un professionnel du médicosocial dans le cadre de TDDUI. Le profil AsPractitionerRoleProfile n'a pas été utilisé car il comportait trop de contraintes non présentes dans les DUI. 
@@ -40,11 +40,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-practitioner.c
   "resourceType" : "StructureDefinition",
   "id" : "tddui-practitioner",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner",
-  "version" : "2.1.0-ballot",
+  "version" : "2.1.0",
   "name" : "TDDUIPractitioner",
   "title" : "TDDUI Practitioner",
   "status" : "active",
-  "date" : "2025-12-02T08:47:08+00:00",
+  "date" : "2025-12-03T08:35:48+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

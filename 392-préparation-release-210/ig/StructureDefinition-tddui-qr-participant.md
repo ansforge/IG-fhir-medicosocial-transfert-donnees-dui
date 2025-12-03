@@ -1,4 +1,4 @@
-# Responsable et auteur du statut de l'évaluation - Médicosocial - Transfert de données DUI v2.1.0-ballot
+# Responsable et auteur du statut de l'évaluation - Médicosocial - Transfert de données DUI v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant | *Version*:2.1.0-ballot |
-| Active as of 2025-12-02 | *Computable Name*:TDDUIQRParticipant |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant | *Version*:2.1.0 |
+| Active as of 2025-12-03 | *Computable Name*:TDDUIQRParticipant |
 
 Extension permettant d'ajouter le responsable de l'évaluation et l'auteur du statut de l'évaluation dans un QuestionnaireResponse.
 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-qr-participant
   "resourceType" : "StructureDefinition",
   "id" : "tddui-qr-participant",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant",
-  "version" : "2.1.0-ballot",
+  "version" : "2.1.0",
   "name" : "TDDUIQRParticipant",
   "title" : "Responsable et auteur du statut de l'évaluation",
   "status" : "active",
-  "date" : "2025-12-02T08:47:08+00:00",
+  "date" : "2025-12-03T08:35:48+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

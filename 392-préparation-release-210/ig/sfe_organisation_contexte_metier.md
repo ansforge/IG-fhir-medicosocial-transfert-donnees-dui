@@ -1,4 +1,4 @@
-# Organisation du contexte métier - Médicosocial - Transfert de données DUI v2.1.0-ballot
+# Organisation du contexte métier - Médicosocial - Transfert de données DUI v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Volume 1 - Etude fonctionnelle**](sfe.md)

@@ -1,4 +1,4 @@
-# Pièce jointe - Médicosocial - Transfert de données DUI v2.1.0-ballot
+# Pièce jointe - Médicosocial - Transfert de données DUI v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment | *Version*:2.1.0-ballot |
-| Active as of 2025-12-02 | *Computable Name*:TDDUIAttachment |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment | *Version*:2.1.0 |
+| Active as of 2025-12-03 | *Computable Name*:TDDUIAttachment |
 
 Pièces jointes liées à l’événement et à l'évaluation. L'extension référence le profil PDSm_SimplifiedPublish.
 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-attachment.csv
   "resourceType" : "StructureDefinition",
   "id" : "tddui-attachment",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment",
-  "version" : "2.1.0-ballot",
+  "version" : "2.1.0",
   "name" : "TDDUIAttachment",
   "title" : "Pièce jointe",
   "status" : "active",
-  "date" : "2025-12-02T08:47:08+00:00",
+  "date" : "2025-12-03T08:35:48+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
