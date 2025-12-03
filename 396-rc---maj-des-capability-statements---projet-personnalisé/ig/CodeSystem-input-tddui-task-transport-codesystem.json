@@ -1,0 +1,78 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "input-tddui-task-transport-codesystem",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem input-tddui-task-transport-codesystem</b></p><a name=\"input-tddui-task-transport-codesystem\"> </a><a name=\"hcinput-tddui-task-transport-codesystem\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"http://hl7.org/fhir/R4/shareablecodesystem.html\">Shareable CodeSystem</a></p></div><p>This case-sensitive code system <code>https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">typeMotorisation<a name=\"input-tddui-task-transport-codesystem-typeMotorisation\"> </a></td><td>Type de motorisation associée au véhicule utilisé lors du transport.</td></tr><tr><td style=\"white-space:nowrap\">adresseDepart<a name=\"input-tddui-task-transport-codesystem-adresseDepart\"> </a></td><td>Adresse de départ du transport.</td></tr><tr><td style=\"white-space:nowrap\">adresseDestination<a name=\"input-tddui-task-transport-codesystem-adresseDestination\"> </a></td><td>Adresse de destination du transport.</td></tr><tr><td style=\"white-space:nowrap\">budgetPrevisionnel<a name=\"input-tddui-task-transport-codesystem-budgetPrevisionnel\"> </a></td><td>Budget prévisionnel pour assurer le transport de la personne physique.</td></tr><tr><td style=\"white-space:nowrap\">budgetReel<a name=\"input-tddui-task-transport-codesystem-budgetReel\"> </a></td><td>Budget réel pour assurer le transport de la personne physique.</td></tr><tr><td style=\"white-space:nowrap\">distance<a name=\"input-tddui-task-transport-codesystem-distance\"> </a></td><td>Distance du transport de la personne physique.</td></tr><tr><td style=\"white-space:nowrap\">dureeTheorique<a name=\"input-tddui-task-transport-codesystem-dureeTheorique\"> </a></td><td>Durée théorique du transport de la personne physique.</td></tr><tr><td style=\"white-space:nowrap\">accompagnement<a name=\"input-tddui-task-transport-codesystem-accompagnement\"> </a></td><td>Accompagnement nécessaire ou non de l'usager. </td></tr><tr><td style=\"white-space:nowrap\">asepsie<a name=\"input-tddui-task-transport-codesystem-asepsie\"> </a></td><td>Lors du transport de l'usager l'asepsie est rigoureusement respectée ou n'est pas nécessaire.</td></tr><tr><td style=\"white-space:nowrap\">natureTransport<a name=\"input-tddui-task-transport-codesystem-natureTransport\"> </a></td><td>Nature du transport de l'usager.</td></tr></table></div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+  "version" : "2.1.0-ballot",
+  "name" : "InputTDDUITaskTransportCodeSystem",
+  "title" : "InputTaskTransportCodeSystem",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-12-03T10:26:00+00:00",
+  "publisher" : "ANS",
+  "contact" : [{
+    "name" : "ANS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les transports dans le cadre du DUI.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
+  "caseSensitive" : true,
+  "compositional" : false,
+  "content" : "complete",
+  "count" : 10,
+  "concept" : [{
+    "code" : "typeMotorisation",
+    "display" : "Type de motorisation associée au véhicule utilisé lors du transport."
+  },
+  {
+    "code" : "adresseDepart",
+    "display" : "Adresse de départ du transport."
+  },
+  {
+    "code" : "adresseDestination",
+    "display" : "Adresse de destination du transport."
+  },
+  {
+    "code" : "budgetPrevisionnel",
+    "display" : "Budget prévisionnel pour assurer le transport de la personne physique."
+  },
+  {
+    "code" : "budgetReel",
+    "display" : "Budget réel pour assurer le transport de la personne physique."
+  },
+  {
+    "code" : "distance",
+    "display" : "Distance du transport de la personne physique."
+  },
+  {
+    "code" : "dureeTheorique",
+    "display" : "Durée théorique du transport de la personne physique."
+  },
+  {
+    "code" : "accompagnement",
+    "display" : "Accompagnement nécessaire ou non de l'usager. "
+  },
+  {
+    "code" : "asepsie",
+    "display" : "Lors du transport de l'usager l'asepsie est rigoureusement respectée ou n'est pas nécessaire."
+  },
+  {
+    "code" : "natureTransport",
+    "display" : "Nature du transport de l'usager."
+  }]
+}
