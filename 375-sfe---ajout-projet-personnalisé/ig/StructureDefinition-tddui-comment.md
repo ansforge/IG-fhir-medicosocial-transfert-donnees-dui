@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment | *Version*:2.0.0 |
-| Active as of 2025-12-01 | *Computable Name*:TDDUIComment |
+| Active as of 2025-12-04 | *Computable Name*:TDDUIComment |
 
 Commentaire relatif au séjour.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-comment.csv), 
   "name" : "TDDUIComment",
   "title" : "Commentaire",
   "status" : "active",
-  "date" : "2025-12-01T15:03:01+00:00",
+  "date" : "2025-12-04T12:50:12+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
