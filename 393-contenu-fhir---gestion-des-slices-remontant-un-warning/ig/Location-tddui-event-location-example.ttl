@@ -1,0 +1,30 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/tddui/Location/tddui-event-location-example> a fhir:Location ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "tddui-event-location-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location"^^xsd:anyURI ;
+       fhir:l <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Localisation tddui-event-location-example</b></p><a name=\"tddui-event-location-example\"> </a><a name=\"hctddui-event-location-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"https://hl7.fr/ig/fhir/core/2.1.0/StructureDefinition-fr-core-location.html\">FR Core Location Profile</a></p></div><p><b>address</b>: 12 rue des Lilas Vittefleur 76748 FR </p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:address [
+     fhir:line ( [ fhir:v "12 rue des Lilas" ] ) ;
+     fhir:city [ fhir:v "Vittefleur" ] ;
+     fhir:postalCode [ fhir:v "76748" ] ;
+     fhir:country [ fhir:v "FR" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

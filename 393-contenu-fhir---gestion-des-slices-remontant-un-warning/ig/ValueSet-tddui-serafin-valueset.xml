@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="tddui-serafin-valueset"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : EnsembleValeurs tddui-serafin-valueset</b></p><a name="tddui-serafin-valueset"> </a><a name="hctddui-serafin-valueset"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="http://hl7.org/fhir/R4/shareablevalueset.html">Shareable ValueSet</a></p></div><ul><li>Importe tous les codes contenus dans lintersection de <a href="https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J283-PrestationsIndirects-SERAFIN.html">JDV_J283_PrestationsIndirects_SERAFIN</a> and <a href="https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J284-PrestationsDirects-SERAFIN.html">JDV_J284_PrestationsDirects_SERAFIN</a></li></ul></div>
+  </text>
+  <url value="https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-serafin-valueset"/>
+  <version value="2.1.0-ballot"/>
+  <name value="TDDUISerafinValueSet"/>
+  <title value="TDDUI SERAFIN ValueSet"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-12-04T14:33:34+00:00"/>
+  <publisher value="ANS"/>
+  <contact>
+    <name value="ANS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <description value="ValueSet contenant les codes SERAFIN (prestations directes et indirectes) pour le profil TDDUI Encounter Evenement."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="FRANCE"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J283-PrestationsIndirects_SERAFIN/FHIR/JDV-J283-PrestationsIndirects-SERAFIN"/>
+      <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J284-PrestationsDirects_SERAFIN/FHIR/JDV-J284-PrestationsDirects-SERAFIN"/>
+    </include>
+  </compose>
+</ValueSet>
