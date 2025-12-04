@@ -2004,9 +2004,9 @@ Cette classe décrit le statut des ressources (Evenement, Evaluation, Projet per
     <td>statut : [1..1] Code</td>
     <td>Statut de la ressource impactée. <br>
     Jeu(x) de valeur(s) associé(s) :  <a href="https://mos.esante.gouv.fr/NOS/JDV_J281-StatutsRessourcesMS/FHIR/JDV-J281-StatutsRessourcesMS">JDV_J281-StatutsRessourcesMS</a><br>
-    - Pour l'Evaluation seuls les codes suivants sont à utiliser : APPROUVE, VALIDE, TERMINE <br>
+    - Pour l'Evaluation seuls les codes suivants sont à utiliser : CREATION, APPROUVE, VALIDE, TERMINE <br>
     - Pour l'Evènement seuls les codes suivants sont à utiliser : PLANIFIE, VALIDE, REALISE, ANNULE <br>
-    - Pour le projet personnalisé seuls les codes suivants sont à utiliser : NONDEBUTE, ENPREPARATION, CREATION, ENREALISATION, TERMINE <br>
+    - Pour le projet personnalisé seuls les codes suivants sont à utiliser : ENPREPARATION, ENCOURS, ENPAUSE, TERMINE <br>
     - Pour l'Objectif, l'Action et la Prestation du Projet personnalisé seuls les codes suivants sont à utiliser : ENPREPARATION, ACTIF, TERMINE, ANNULE
     </td>
   </tr>
