@@ -12,6 +12,14 @@ object "**TDDUIPractitioner**" as TDDUIPractitioner #b3de69 {
     synthesePreparationBilan.auteur
 }
 
+object "**TDDUIPatient**" as TDDUIPatient #fdb462 {
+    synthesePreparationBilan.auteur
+}
+
+object "**FRCoreRelatedPerson**" as FRCoreRelatedPerson #80b1d3 {
+    synthesePreparationBilan.auteur
+}
+
 object "**TDDUICarePlanProjetPersonnalise**" as TDDUICarePlanProjetPersonnalise_basedOn #8dd3c7 {
     ProjetPersonnalise
 }
@@ -30,7 +38,9 @@ map "**Bilan : TDDUITaskBilan**" as Bilan #d9d9d9 {
 }
 
 Bilan::synthesePreparationBilan -u-> synthesePreparationBilan
-synthesePreparationBilan -d-> TDDUIPractitioner : author
+synthesePreparationBilan --> TDDUIPractitioner : author
+synthesePreparationBilan --> TDDUIPatient : author
+synthesePreparationBilan -> FRCoreRelatedPerson : author
 Bilan -d-> TDDUICarePlanProjetPersonnalise_basedOn : basedOn
 
 @enduml

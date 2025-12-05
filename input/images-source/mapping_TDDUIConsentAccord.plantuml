@@ -5,7 +5,11 @@ object "**TDDUIPractitioner**" as TDDUIPractitioner #b3de69 {
 }
 
 object "**TDDUIPatient**" as TDDUIPatient_subject #fdb462 {
-    Usager
+    Auteur
+}
+
+object "**FRCoreRelatedPerson**" as FRCoreRelatedPerson #80b1d3 {
+    Auteur
 }
 
 map "**Accord : TDDUIConsentAccord**" as Accord #8dd3c7 {
@@ -15,5 +19,6 @@ map "**Accord : TDDUIConsentAccord**" as Accord #8dd3c7 {
 
 Accord -u-> TDDUIPractitioner : performer
 Accord -u-> TDDUIPatient_subject : performer
+Accord -u-> FRCoreRelatedPerson : performer
 
 @enduml

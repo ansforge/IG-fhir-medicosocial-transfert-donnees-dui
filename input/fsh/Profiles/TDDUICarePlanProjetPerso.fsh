@@ -17,6 +17,8 @@ Description: "Profil de la ressource CarePlan représentant le projet personnali
 
 * title 1..1
 
+* status ^short = "Correspondance des statuts métier avec les codes FHIR : ENPREPARATION → draft, ENCOURS → active, ENPAUSE → on-hold, TERMINE → completed."
+
 * status.extension contains 
     TDDUIStatusAuthor named auteurStatut 0..1
 

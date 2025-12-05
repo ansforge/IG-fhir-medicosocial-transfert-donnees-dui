@@ -12,6 +12,8 @@ Description: "Profil de la ressource Task permettant de représenter les prestat
 * identifier.system 1..1
 * identifier.system = "https://identifiant-medicosocial-prestation.esante.gouv.fr"
 
+* status ^short = "Correspondance des statuts métier avec les codes FHIR : ENPREPARATION → draft, ACTIF → in-progress, TERMINE → completed, ANNULE → cancelled."
+
 * status.extension contains 
     TDDUIStatusAuthor named auteurStatut 0..1
 

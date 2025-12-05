@@ -17,6 +17,8 @@ Description: "Profil de la ressource Goal permettant de représenter les résult
 * identifier.system 1..1
 * identifier.system = "https://identifiant-medicosocial-objectif.esante.gouv.fr"
 
+* lifecycleStatus ^short = "Correspondance des statuts métier avec les codes FHIR : ENPREPARATION → planned, ACTIF → active, TERMINE → completed, ANNULE → cancelled."
+
 * lifecycleStatus.extension contains 
     TDDUIStatusAuthor named auteurStatut 0..1
 

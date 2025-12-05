@@ -11,6 +11,8 @@ Description: "Profil de la ressource Task permettant de représenter les actions
 * identifier.value ^example[0].valueString = "3480787529/123456789-ACTI-1234"
 * identifier.system 1..1
 * identifier.system = "https://identifiant-medicosocial-action.esante.gouv.fr"
+ 
+* status ^short = "Correspondance des statuts métier avec les codes FHIR : ENPREPARATION → draft, ACTIF → in-progress, TERMINE → completed, ANNULE → cancelled."
 
 * status.extension contains 
     TDDUIStatusAuthor named auteurStatut 0..1
