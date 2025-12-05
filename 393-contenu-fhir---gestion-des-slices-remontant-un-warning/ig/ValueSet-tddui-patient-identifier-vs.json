@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "tddui-patient-identifier-vs",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs tddui-patient-identifier-vs</b></p><a name=\"tddui-patient-identifier-vs\"> </a><a name=\"hctddui-patient-identifier-vs\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"http://hl7.org/fhir/R4/shareablevalueset.html\">Shareable ValueSet</a></p></div><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Inclut tous les codes définis dans <a href=\"CodeSystem-tddui-identifier.html\"><code>https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-identifier</code></a><span title=\"La version nest pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification\"> version &#x1F4E6;2.1.0-ballot</span></li><li>Importe tous les codes contenu dans <a href=\"http://hl7.org/fhir/R4/valueset-identifier-type.html\">IdentifierType</a></li><li>Inclut tous les codes définis dans <a href=\"http://terminology.hl7.org/7.0.0/CodeSystem-v2-0203.html\"><code>http://terminology.hl7.org/CodeSystem/v2-0203</code></a><span title=\"La version nest pas explicitement indiquée, ce qui signifie quelle est fixée à 5.0.0, la version trouvée via les références de package\"> version &#x1F4E6;5.0.0</span></li><li>Inclut tous les codes définis dans <a href=\"https://hl7.fr/ig/fhir/core/2.1.0/CodeSystem-fr-core-cs-v2-0203.html\"><code>https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203</code></a><span title=\"La version nest pas explicitement indiquée, ce qui signifie quelle est fixée à 2.1.0, la version trouvée via les références de package\"> version &#x1F4E6;2.1.0</span></li></ul></div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-patient-identifier-vs",
+  "version" : "2.1.0-ballot",
+  "name" : "TDDUIPatientIdentifierVs",
+  "title" : "TDDUI Patient Identifier ValueSet",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-12-05T08:38:20+00:00",
+  "publisher" : "ANS",
+  "contact" : [{
+    "name" : "ANS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "ValueSet for TDDUI Patient's identifier types",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-identifier"
+    },
+    {
+      "valueSet" : ["http://hl7.org/fhir/ValueSet/identifier-type"]
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0203"
+    },
+    {
+      "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203"
+    }]
+  }
+}

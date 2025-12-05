@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement | *Version*:2.1.0-ballot |
-| Active as of 2025-12-04 | *Computable Name*:TDDUIEncounterEvenement |
+| Active as of 2025-12-05 | *Computable Name*:TDDUIEncounterEvenement |
 
  
 Profil de la ressource Encounter permettant de regrouper les évènements liés à la prise en charge de l’usager dans une structure ESSMS. 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-even
   "name" : "TDDUIEncounterEvenement",
   "title" : "TDDUI Encounter Evenement",
   "status" : "active",
-  "date" : "2025-12-04T14:33:34+00:00",
+  "date" : "2025-12-05T08:38:20+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -548,14 +548,8 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-even
           "rules" : "open"
         },
         "binding" : {
-          "extension" : [
-            {
-              "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString" : "EncounterType"
-            }
-          ],
-          "strength" : "example",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-type"
+          "strength" : "required",
+          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-type-vs"
         },
         "mapping" : [
           {
@@ -685,6 +679,14 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-even
           "rules" : "open"
         },
         "short" : "List of participants involved in the encounter | Liste des personnes impliquées dans la rencontre"
+      },
+      {
+        "id" : "Encounter.participant.type",
+        "path" : "Encounter.participant.type",
+        "binding" : {
+          "strength" : "required",
+          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-participant-vs"
+        }
       },
       {
         "id" : "Encounter.participant.individual",

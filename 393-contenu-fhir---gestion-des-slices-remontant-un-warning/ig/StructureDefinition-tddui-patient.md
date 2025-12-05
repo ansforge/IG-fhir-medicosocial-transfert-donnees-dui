@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient | *Version*:2.1.0-ballot |
-| Active as of 2025-12-04 | *Computable Name*:TDDUIPatient |
+| Active as of 2025-12-05 | *Computable Name*:TDDUIPatient |
 
  
 Profil de la ressource FrCorePatientProfile permettant de représenter un usager lorsque l'INS n'est pas transmis. 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient.csv), 
   "name" : "TDDUIPatient",
   "title" : "TDDUI Patient",
   "status" : "active",
-  "date" : "2025-12-04T14:33:34+00:00",
+  "date" : "2025-12-05T08:38:20+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -144,6 +144,18 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient.csv), 
             "map" : "communeNaissance"
           }
         ]
+      },
+      {
+        "id" : "Patient.identifier",
+        "path" : "Patient.identifier"
+      },
+      {
+        "id" : "Patient.identifier.type",
+        "path" : "Patient.identifier.type",
+        "binding" : {
+          "strength" : "required",
+          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-patient-identifier-vs"
+        }
       },
       {
         "id" : "Patient.identifier:NSS",

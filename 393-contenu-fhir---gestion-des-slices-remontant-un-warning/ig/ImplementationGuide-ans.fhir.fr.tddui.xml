@@ -10,7 +10,7 @@
   <name value="TDDUI"/>
   <title value="Médicosocial - Transfert de données DUI"/>
   <status value="active"/>
-  <date value="2025-12-04T14:33:34+00:00"/>
+  <date value="2025-12-05T08:38:20+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -701,10 +701,21 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/tddui-encounter-identifier"/>
+        <reference value="CodeSystem/tddui-encounter-identifier-cs"/>
       </reference>
       <name value="TDDUI Encounter FR Core CodeSystem v2-0203"/>
       <description value="TDDUI Encounter's identifier"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/tddui-encounter-identifier-vs"/>
+      </reference>
+      <name value="TDDUI Encounter Identifier Type ValueSet"/>
+      <description value="ValueSet for TDDUI Encounter's identifier types"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -720,6 +731,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/tddui-encounter-participant-vs"/>
+      </reference>
+      <name value="TDDUI Encounter Participant ValueSet"/>
+      <description value="ValueSet for TDDUI Encounter's participants"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -727,6 +749,17 @@
       </reference>
       <name value="TDDUI Encounter Sejour"/>
       <description value="Profil de la ressource Encounter permettant de regrouper les informations relatives au séjour d'un usager dans une structure ESSMS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/tddui-encounter-type-vs"/>
+      </reference>
+      <name value="TDDUI Encounter Type ValueSet"/>
+      <description value="ValueSet for TDDUI Encounter's types"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -771,6 +804,17 @@
       </reference>
       <name value="TDDUI Patient"/>
       <description value="Profil de la ressource FrCorePatientProfile permettant de représenter un usager lorsque l'INS n'est pas transmis."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/tddui-patient-identifier-vs"/>
+      </reference>
+      <name value="TDDUI Patient Identifier ValueSet"/>
+      <description value="ValueSet for TDDUI Patient's identifier types"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

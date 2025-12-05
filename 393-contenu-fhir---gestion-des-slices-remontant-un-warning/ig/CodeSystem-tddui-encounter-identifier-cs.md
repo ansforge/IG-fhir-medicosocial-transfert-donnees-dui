@@ -8,15 +8,15 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier | *Version*:2.1.0-ballot |
-| Active as of 2025-12-04 | *Computable Name*:TDDUIEncounterIdentifier |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier-cs | *Version*:2.1.0-ballot |
+| Active as of 2025-12-05 | *Computable Name*:TDDUIEncounterIdentifierCs |
 
  
 TDDUI Encounter's identifier 
 
  Cette terminologie de référence (CodeSystem) est référencé dans la définition de contenu des jeux de valeurs (ValueSet) suivants : 
 
-* Cette terminologie de référence (CodeSystem) nest pas utilisée ici; elle peut être utilisée ailleurs (par exemple spécifications et/ou implémentations qui utilisent ce contenu)
+* [TDDUIEncounterIdentifierVs](ValueSet-tddui-encounter-identifier-vs.md)
 
 
 
@@ -25,19 +25,19 @@ TDDUI Encounter's identifier
 ```json
 {
   "resourceType" : "CodeSystem",
-  "id" : "tddui-encounter-identifier",
+  "id" : "tddui-encounter-identifier-cs",
   "meta" : {
     "profile" : [
       "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
     ]
   },
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier-cs",
   "version" : "2.1.0-ballot",
-  "name" : "TDDUIEncounterIdentifier",
+  "name" : "TDDUIEncounterIdentifierCs",
   "title" : "TDDUI Encounter FR Core CodeSystem v2-0203",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-04T14:33:34+00:00",
+  "date" : "2025-12-05T08:38:20+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

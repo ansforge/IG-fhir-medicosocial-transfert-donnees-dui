@@ -1,9 +1,11 @@
+
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>TDDUI Encounter FR Core CodeSystem v2-0203 - Médicosocial - Transfert de données DUI v2.1.0-ballot</title>
+    <title>TDDUI Encounter Participant ValueSet - JSON Representation - Médicosocial - Transfert de données DUI v2.1.0-ballot</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -43,8 +45,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"7.40"}
-    h3,h4,h5,h6{--heading-prefix:"7.40"}</style>
+    <style type="text/css">h2{--heading-prefix:"7.39"}
+    h3,h4,h5,h6{--heading-prefix:"7.39"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -176,15 +178,15 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>TDDUI Encounter FR Core CodeSystem v2-0203</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>TDDUI Encounter Participant ValueSet</b></li>
 
           <span style="float:right;">
 
-            <a href="CodeSystem-input-tddui-task-transport-codesystem.ttl.html">&lt;prev</a> | 
+            <a href="ValueSet-tddui-encounter-participant-vs.xml.html">&lt;prev</a> | 
 
             <a href="#bottom">bottom</a>
 
-          | <a href="CodeSystem-tddui-encounter-identifier-testing.html">next&gt;</a>
+          | <a href="ValueSet-tddui-encounter-participant-vs.ttl.html">next&gt;</a>
 
           </span>
 
@@ -197,9 +199,9 @@
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
-<div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Médicosocial - Transfert de données DUI - version de développement local (v2.1.0-ballot) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/fhir/tddui/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
-  
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">Médicosocial - Transfert de données DUI - version de développement local (v2.1.0-ballot) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/fhir/tddui/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
+
 
 
 
@@ -210,29 +212,29 @@
 
 <ul class="nav nav-tabs">
 
-  <li class="active">
-    <a href="#">Narrative Content</a>
+  <li>
+    <a href="ValueSet-tddui-encounter-participant-vs.html">Narrative Content</a>
   </li>
 
 
 
   
     <li>
-      <a href="CodeSystem-tddui-encounter-identifier.xml.html">XML</a>
+      <a href="ValueSet-tddui-encounter-participant-vs.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
     </li>
   
 
 
   
     <li>
-      <a href="CodeSystem-tddui-encounter-identifier.json.html">JSON</a>
-    </li>
-  
-
-
-  
-    <li>
-      <a href="CodeSystem-tddui-encounter-identifier.ttl.html">TTL</a>
+      <a href="ValueSet-tddui-encounter-participant-vs.ttl.html">TTL</a>
     </li>
   
 
@@ -240,80 +242,97 @@
 
 </ul>
 
-  <a name="root"> </a>
-  <h2 id="root">CodeSystem: TDDUI Encounter FR Core CodeSystem v2-0203
 
-  </h2>
+<a name="root"> </a>
+
+
+<h2 id="root">: TDDUI Encounter Participant ValueSet - JSON Representation</h2>
 
   <table class="colsi">
-
-    <tr>
-      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier"/></span>
-      </td>
-      <td><i>Version</i>:
-      <span class="copy-text">2.1.0-ballot<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier|2.1.0-ballot"/></span>
-      </td>
-    </tr>
-
     <tr>
 
-
-
-
-
-
-
-      <td colspan="4">
+      <td colspan="2">
         
           Active
           
-            as of 2025-12-04
+            as of 2025-12-05
           
         
       </td>
 
-
-
-      <td><i>Computable Name</i>: <span style="font-family: monospace;">TDDUIEncounterIdentifier</span></td>
     </tr>
-
-
-
-
   </table>
 
-<p>
-<p>TDDUI Encounter's identifier</p>
 
-</p>
+<p><a href="ValueSet-tddui-encounter-participant-vs.json" no-download="true">Raw json</a> | <a href="ValueSet-tddui-encounter-participant-vs.json" download>Download</a></p>
 
   <!-- insert intro if present -->
   
 
 
 
-  <p>
-  Cette terminologie de référence (CodeSystem) est référencé dans la définition de contenu des jeux de valeurs (ValueSet) suivants :
-  </p>
+  <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet">resourceType</a>" : "ValueSet",
+  "<a href="http://hl7.org/fhir/R4/resource.html#ValueSet.id">id</a>" : "tddui-encounter-participant-vs",
+  "<a href="http://hl7.org/fhir/R4/resource.html#ValueSet.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+      <a href="http://hl7.org/fhir/R4/shareablevalueset.html" style="color: Maroon">&#x1F517;</a> "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R4/domainresource.html#ValueSet.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : EnsembleValeurs tddui-encounter-participant-vs&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;tddui-encounter-participant-vs\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hctddui-encounter-participant-vs\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profil: &lt;a href=\&quot;http://hl7.org/fhir/R4/shareablevalueset.html\&quot;&gt;Shareable ValueSet&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Inclut tous les codes définis dans &lt;a href=\&quot;CodeSystem-TDDUIEncounterParticipant.html\&quot;&gt;&lt;code&gt;https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/TDDUIEncounterParticipant&lt;/code&gt;&lt;/a&gt;&lt;span title=\&quot;La version nest pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification\&quot;&gt; version &amp;#x1F4E6;2.1.0-ballot&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Importe tous les codes contenu dans &lt;a href=\&quot;http://hl7.org/fhir/R4/valueset-encounter-participant-type.html\&quot;&gt;Participant type&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-participant-vs",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "2.1.0-ballot",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a>" : "TDDUIEncounterParticipantVs",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a>" : "TDDUI Encounter Participant ValueSet",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">experimental</a>" : false,
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2025-12-05T08:38:20+00:00",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a>" : "ANS",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "ANS",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "https://esante.gouv.fr"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">description</a>" : "ValueSet for TDDUI Encounter's participants",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.jurisdiction">jurisdiction</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:iso:std:iso:3166",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "FR",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "FRANCE"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>" : {
+    "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/TDDUIEncounterParticipant"
+      },
+      {
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.valueSet">valueSet</a>" : [
+          <a href="http://hl7.org/fhir/R4/valueset-encounter-participant-type.html" style="color: Maroon">&#x1F517;</a> "http://hl7.org/fhir/ValueSet/encounter-participant-type"
+        ]
+      }
+    ]
+  }
+}</code></pre>
 
-  
-<ul><li>Cette terminologie de référence (CodeSystem) nest pas utilisée ici; elle peut être utilisée ailleurs (par exemple spécifications et/ou implémentations qui utilisent ce contenu)</li></ul>
-
-
-  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"></p><a name="tddui-encounter-identifier"> </a><a name="hctddui-encounter-identifier"> </a>
-<div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"></p><p style="margin-bottom: 0px">Profil: <a href="http://hl7.org/fhir/R4/shareablecodesystem.html">Shareable CodeSystem</a></p></div><p>This case-sensitive code system <code>https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier</code> defines the following code:</p>
-<table class="codes" data-fhir="generated"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Affichage</b></td></tr>
-<tr><td style="white-space:nowrap">SEJ<a name="tddui-encounter-identifier-SEJ"> </a></td>
-<td>Identifiant du séjour</td></tr></table></div>
-
-  
 
   <!-- insert notes if present -->
   
 
 
-
-  
 
 </div>
         </div>  <!-- /inner-wrapper -->
@@ -335,7 +354,7 @@
             <tr>
               <td style="text-align:left">&#xA0;
 
-                <a href="CodeSystem-input-tddui-task-transport-codesystem.ttl.html">&lt;prev</a>
+                <a href="ValueSet-tddui-encounter-participant-vs.xml.html">&lt;prev</a>
 
               </td>
               <td style="text-align:center">
@@ -343,7 +362,7 @@
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="CodeSystem-tddui-encounter-identifier-testing.html">next&gt;</a>
+                <a href="ValueSet-tddui-encounter-participant-vs.ttl.html">next&gt;</a>
 
               </td>
             </tr>
@@ -353,7 +372,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.1.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 4, 2025 14:33+0000">2025-12-04</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.1.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 5, 2025 08:38+0000">2025-12-05</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
@@ -492,3 +511,4 @@
   </footer>
   </body>
 </html>
+

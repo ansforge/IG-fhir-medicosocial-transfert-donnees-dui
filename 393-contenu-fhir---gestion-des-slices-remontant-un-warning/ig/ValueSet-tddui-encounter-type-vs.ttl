@@ -1,0 +1,76 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-type-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "tddui-encounter-type-vs"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/shareablevalueset"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/shareablevalueset>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs tddui-encounter-type-vs</b></p><a name=\"tddui-encounter-type-vs\"> </a><a name=\"hctddui-encounter-type-vs\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"http://hl7.org/fhir/R4/shareablevalueset.html\">Shareable ValueSet</a></p></div><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Importe tous les codes contenu dans <a href=\"https://hl7.fr/ig/fhir/core/2.1.0/ValueSet-fr-core-vs-encounter-type.html\">FR Core ValueSet Encounter type</a></li><li>Importe tous les codes contenu dans <a href=\"ValueSet-tddui-serafin-valueset.html\">TDDUI SERAFIN ValueSet</a></li><li>Importe tous les codes contenu dans <a href=\"https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-type-evenement-ssiad-cisis.html\">JDV Type Evenement Ssiad CISIS</a></li><li>Inclut tous les codes définis dans <a href=\"http://terminology.hl7.org/7.0.0/CodeSystem-data-absent-reason.html\"><code>http://terminology.hl7.org/CodeSystem/data-absent-reason</code></a><span title=\"La version nest pas explicitement indiquée, ce qui signifie quelle est fixée à 1.0.0, la version trouvée via les références de package\"> version ?1.0.0</span></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-type-vs"^^xsd:anyURI ;
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-type-vs>
+  ] ; # 
+  fhir:version [ fhir:v "2.1.0-ballot"] ; # 
+  fhir:name [ fhir:v "TDDUIEncounterTypeVs"] ; # 
+  fhir:title [ fhir:v "TDDUI Encounter Type ValueSet"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-12-05T08:38:20+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "ANS"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "ANS" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://esante.gouv.fr" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "ValueSet for TDDUI Encounter's types"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "FR" ] ;
+       fhir:display [ fhir:v "FRANCE" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:valueSet ( [
+         fhir:v "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-type"^^xsd:anyURI ;
+         fhir:l <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-type>
+       ] )
+     ] [
+       fhir:valueSet ( [
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-serafin-valueset"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-serafin-valueset>
+       ] )
+     ] [
+       fhir:valueSet ( [
+         fhir:v "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-evenement-ssiad-cisis"^^xsd:anyURI ;
+         fhir:l <https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-evenement-ssiad-cisis>
+       ] )
+     ] [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/data-absent-reason"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/data-absent-reason>
+       ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

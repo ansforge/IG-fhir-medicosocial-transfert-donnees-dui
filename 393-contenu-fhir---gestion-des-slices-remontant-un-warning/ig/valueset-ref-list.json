@@ -1,6 +1,38 @@
 {
   "codeSystems" : [
     {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-participant-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ParticipantType",
+      "title" : "Participant type",
+      "description" : "This value set defines a set of codes that can be used to indicate how an individual participates in an encounter.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/participant-type",
+        "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.250"],
+      "sources" : ["2.16.840.1.113883.4.642.3.250"],
+      "uses" : {
+      },
+      "ValueSet-tddui-encounter-participant-vs.html" : "TDDUI Encounter Participant ValueSet"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Identifier Type Codes",
+      "title" : "IdentifierType",
+      "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0203"],
+      "oids" : ["2.16.840.1.113883.4.642.3.45"],
+      "sources" : ["2.16.840.1.113883.4.642.3.45"],
+      "uses" : {
+      },
+      "ValueSet-tddui-encounter-identifier-vs.html" : "TDDUI Encounter Identifier Type ValueSet",
+      "ValueSet-tddui-patient-identifier-vs.html" : "TDDUI Patient Identifier ValueSet"
+    },
+    {
       "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-discharge-disposition",
       "version" : "2.1.0",
       "status" : "active",
@@ -42,7 +74,7 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
+      "ValueSet-tddui-encounter-type-vs.html" : "TDDUI Encounter Type ValueSet"
     },
     {
       "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-location-physical-type",
@@ -71,6 +103,72 @@
       "StructureDefinition-tddui-patient.html" : "TDDUI Patient"
     },
     {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-identifier-vs",
+      "version" : "2.1.0-ballot",
+      "status" : "active",
+      "name" : "TDDUIEncounterIdentifierVs",
+      "title" : "TDDUI Encounter Identifier Type ValueSet",
+      "description" : "ValueSet for TDDUI Encounter's identifier types",
+      "systems" : [
+        "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier-cs",
+        "http://terminology.hl7.org/CodeSystem/v2-0203"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-participant-vs",
+      "version" : "2.1.0-ballot",
+      "status" : "active",
+      "name" : "TDDUIEncounterParticipantVs",
+      "title" : "TDDUI Encounter Participant ValueSet",
+      "description" : "ValueSet for TDDUI Encounter's participants",
+      "systems" : [
+        "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/TDDUIEncounterParticipant",
+        "http://terminology.hl7.org/CodeSystem/participant-type",
+        "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-type-vs",
+      "version" : "2.1.0-ballot",
+      "status" : "active",
+      "name" : "TDDUIEncounterTypeVs",
+      "title" : "TDDUI Encounter Type ValueSet",
+      "description" : "ValueSet for TDDUI Encounter's types",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v2-0007",
+        "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-type-admission",
+        "https://smt.esante.gouv.fr/terminologie-SERAFINPH",
+        "http://terminology.hl7.org/CodeSystem/data-absent-reason"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-patient-identifier-vs",
+      "version" : "2.1.0-ballot",
+      "status" : "active",
+      "name" : "TDDUIPatientIdentifierVs",
+      "title" : "TDDUI Patient Identifier ValueSet",
+      "description" : "ValueSet for TDDUI Patient's identifier types",
+      "systems" : [
+        "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-identifier",
+        "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-patient.html" : "TDDUI Patient",
+      "StructureDefinition-tddui-patient-ins.html" : "TDDUI Patient INS"
+    },
+    {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-serafin-valueset",
       "version" : "2.1.0-ballot",
       "status" : "active",
@@ -80,7 +178,8 @@
       "systems" : ["https://smt.esante.gouv.fr/terminologie-SERAFINPH"],
       "uses" : {
       },
-      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement",
+      "ValueSet-tddui-encounter-type-vs.html" : "TDDUI Encounter Type ValueSet"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/JDV_J01-XdsAuthorSpecialty-CISIS/FHIR/JDV-J01-XdsAuthorSpecialty-CISIS",
@@ -377,7 +476,8 @@
       "sources" : ["1.2.250.1.213.1.1.5.811"],
       "uses" : {
       },
-      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement",
+      "ValueSet-tddui-encounter-type-vs.html" : "TDDUI Encounter Type ValueSet"
     },
     {
       "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-motorisation-cisis",

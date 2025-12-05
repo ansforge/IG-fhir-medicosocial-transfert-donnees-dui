@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "TDDUI"] ; # 
   fhir:title [ fhir:v "Médicosocial - Transfert de données DUI"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-12-04T14:33:34+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-12-05T08:38:20+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -1801,11 +1801,32 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier> ;
-         fhir:reference [ fhir:v "CodeSystem/tddui-encounter-identifier" ]
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/tddui-encounter-identifier-cs" ]
        ] ;
        fhir:name [ fhir:v "TDDUI Encounter FR Core CodeSystem v2-0203" ] ;
        fhir:description [ fhir:v "TDDUI Encounter's identifier" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-identifier-vs> ;
+         fhir:reference [ fhir:v "ValueSet/tddui-encounter-identifier-vs" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Encounter Identifier Type ValueSet" ] ;
+       fhir:description [ fhir:v "ValueSet for TDDUI Encounter's identifier types" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1839,6 +1860,27 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-participant-vs> ;
+         fhir:reference [ fhir:v "ValueSet/tddui-encounter-participant-vs" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Encounter Participant ValueSet" ] ;
+       fhir:description [ fhir:v "ValueSet for TDDUI Encounter's participants" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
@@ -1848,6 +1890,27 @@
        ] ;
        fhir:name [ fhir:v "TDDUI Encounter Sejour" ] ;
        fhir:description [ fhir:v "Profil de la ressource Encounter permettant de regrouper les informations relatives au séjour d'un usager dans une structure ESSMS" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-type-vs> ;
+         fhir:reference [ fhir:v "ValueSet/tddui-encounter-type-vs" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Encounter Type ValueSet" ] ;
+       fhir:description [ fhir:v "ValueSet for TDDUI Encounter's types" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1932,6 +1995,27 @@
        ] ;
        fhir:name [ fhir:v "TDDUI Patient" ] ;
        fhir:description [ fhir:v "Profil de la ressource FrCorePatientProfile permettant de représenter un usager lorsque l'INS n'est pas transmis." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-patient-identifier-vs> ;
+         fhir:reference [ fhir:v "ValueSet/tddui-patient-identifier-vs" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Patient Identifier ValueSet" ] ;
+       fhir:description [ fhir:v "ValueSet for TDDUI Patient's identifier types" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
