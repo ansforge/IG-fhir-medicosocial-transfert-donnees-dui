@@ -11,8 +11,9 @@ Description: "Profil de la ressource Encounter permettant de regrouper les infor
 
 * identifier contains
     idStay 1..1
+* identifier[idStay].type from TDDUIEncounterIdentifierVs (required)
 * identifier[idStay] ^short = "Identifiant métier unique du séjour"
-* identifier[idStay].type = TDDUIEncounterIdentifier#SEJ "Identifiant du séjour"
+* identifier[idStay].type = TDDUIEncounterIdentifierCs#SEJ "Identifiant du séjour"
 * identifier[idStay].value 1..1
 * identifier[idStay].value ^example[0].label = "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-SEJOUR-numeroDossier"
 * identifier[idStay].value ^example[0].valueString = "3480787529/147720425367411-SEJOUR-21564655"

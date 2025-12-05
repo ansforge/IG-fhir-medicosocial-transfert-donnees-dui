@@ -1,9 +1,11 @@
 
 RuleSet: TDDUIPatientCommonConstraints
 
+* identifier.type from TDDUIPatientIdentifierVs (required)
+
 * identifier contains
     InitialNumberMDPH 0..1
-  
+
 * identifier[PI] ..1
 * identifier[PI] ^short = "Hospital assigned patient identifier | IPP; Dans le cadre de ce volet, représente l'Identifiant local de l’usager au sein de la structure."
 * identifier[PI].value ^example[0].label = "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS"
