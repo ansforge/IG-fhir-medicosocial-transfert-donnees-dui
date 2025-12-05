@@ -47,34 +47,17 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for TDDUI</h1>
- <p>Generated Wed Dec 03 10:26:24 UTC 2025, FHIR version 4.0.1 for ans.fhir.fr.tddui#2.1.0-ballot (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/tddui">https://interop.esante.gouv.fr/ig/fhir/tddui</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/tddui/history.html">history</a>)). See <a href="qa.html">Full QA Report</a> &amp; <a href="qa-ipreview.html">IP</a></p>
+ <p>Generated Fri Dec 05 09:58:29 UTC 2025, FHIR version 4.0.1 for ans.fhir.fr.tddui#2.1.0-ballot (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/tddui">https://interop.esante.gouv.fr/ig/fhir/tddui</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/tddui/history.html">history</a>)). See <a href="qa.html">Full QA Report</a> &amp; <a href="qa-ipreview.html">IP</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v2.0.27</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ans.fhir.fr.tddui, Canonical = https://interop.esante.gouv.fr/ig/fhir/tddui</td></tr>
  <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
  <tr><td>Language Info:</td><td>This IG has no language information</td></tr>
  <tr><td>Publication Request:</td><td><table class="grid">
- <tr><td>package-id</d><td>ans.fhir.fr.tddui</td></tr>
- <tr><td>version</d><td>2.1.0-ballot</td></tr>
- <tr><td>path</d><td>https://interop.esante.gouv.fr/ig/fhir/tddui/2.1.0-ballot</td></tr>
- <tr><td>Pub-Mode</d><td>working release</td></tr>
- <tr><td>status</d><td>release</td></tr>
- <tr><td>Release-Label</d><td>public-comment</td></tr>
- <tr><td>Sequence (Group)</d><td>public-comment</td></tr>
- <tr><td>desc</d><td>Ce document présente les spécifications fonctionnelles et techniques du volet « Transfert de Données DUI » (TDDUI). Ces dernières spécifient le contenu et le transport des données DUI d'un logiciel DUI vers un autre logiciel DUI ou un SI tiers.</td></tr>
- <tr><td>descmd</d><td><p>Release 2.1.0-ballot du guide d'Implémentation du volet «Transfert de Données DUI » (TDDUI)</p>
-</td></tr>
- <tr><td>changes</d><td>changes.html</td></tr>
- <tr><td>category</d><td>Patient Summary</td></tr>
- <tr><td>title</d><td>Guide d'implémentation FHIR pour le transfert de donnees DUI</td></tr>
- <tr><td>ci-build</d><td>https://ansforge.github.io/IG-fhir-medicosocial-transfert-donnees-dui/main/ig/</td></tr>
  <tr><td>RelatedIgs</d><td>(None Found)</td></tr>
 </table>
-<ul><li>Error fetching package-list from https://interop.esante.gouv.fr/ig/fhir/tddui: Error parsing JSON source: Unexpected content '<' in json format at Line 1 (path=[null]) <img src="icon-error.gif" height="16px" width="16px"/></li>
-<li>This appears to be the first publication, so first must be true <img src="icon-error.gif" height="16px" width="16px"/></li>
-<li>descmd cannot contain a ' <img src="icon-error.gif" height="16px" width="16px"/></li>
-<li>This IG is not yet published at all, so there must be "first" : true in the publication request <img src="icon-error.gif" height="16px" width="16px"/></li>
-<li>No publication request introduction found (needed for first publication) <img src="icon-error.gif" height="16px" width="16px"/></li>
+<ul><li>Version 2.1.0-ballot has already been published <img src="icon-warning.png" height="16px" width="16px"/></li>
+<li>Publication Request is for version v2.1.0-ballot which is already published <img src="icon-error.gif" height="16px" width="16px"/></li>
 </ul>
 </td></tr>
  <tr><td>Supressed Messages:</td><td><a href="#suppressed">19 Suppressed Issues</a>
@@ -899,24 +882,24 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Consent&#8203;.category[0]&#8203;.coding[0]&#8203;.display (l20&#8203;/c6)</b></td><td><b>error</b></td><td><b>Wrong whitespace in Display Name 'Patient Consent' for http://loinc.org#59284-0. Valid display is 'Patient Consent' (for the language(s) 'fr')</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l46">log</a>, or see <a href="#vmi408" onClick="document.getElementById('vmi408').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Display_Name_WS_for__should_be_one_of__instead_of</span><div id="vmi408" style="display:none"><br/><pre>0 0 : start
-734 734 : 0ms  : Analysing http://hl7.org/fhir/ValueSet/consent-category|4.0.1 for validation purposes
-734 0   : 0ms  : Parameters: disp-lang=fr, default-to-latest
-734 0   : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-734 0   : 0ms  : Prepare include: "(http://terminology.hl7.org/CodeSystem/consentcategorycodes)"
-734 0   : 0ms  : CodeSystem found: "http://terminology.hl7.org/CodeSystem/consentcategorycodes|1.0.1"
-734 0   : 0ms  : Prepare include: "(^http://terminology.hl7.org/ValueSet/v3-ActConsentType)"
-734 0   : 0ms    : Analysing http://terminology.hl7.org/ValueSet/v3-ActConsentType|3.0.0 for validation purposes
-734 0   : 0ms    : Prepare include: "(http://terminology.hl7.org/CodeSystem/v3-ActCode)(concept<<_ActConsentType)"
-766 32  : 32ms   : CodeSystem found: "http://terminology.hl7.org/CodeSystem/v3-ActCode|9.0.0"
-766 0   : 32ms : Prepare include: "(http://loinc.org)(59284-0,57016-8,57017-6,64292-6)"
-766 0   : 32ms : CodeSystem found: "http://loinc.org|2.81"
-766 0   : 32ms : Validate "[http://loinc.org#59284-0 ("Patient Consent")]"
-766 0   : 32ms : Check "http://loinc.org#59284-0"
-766 0   : 32ms : Check included value set http://terminology.hl7.org/ValueSet/v3-ActConsentType
-766 0   : 32ms   : Check "http://loinc.org#59284-0"
-766 0   : 32ms : CodeSystem found: http://loinc.org|2.81 for http://loinc.org
-766 0   : 32ms : check code in (http://loinc.org)(59284-0,57016-8,57017-6,64292-6) at CodeableConcept.coding[0]
-766 0   : 32ms : Code "59284-0" found in http://loinc.org|2.81
+1032 1032: 0ms  : Analysing http://hl7.org/fhir/ValueSet/consent-category|4.0.1 for validation purposes
+1032 0  : 0ms  : Parameters: disp-lang=fr, default-to-latest
+1032 0  : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+1032 0  : 0ms  : Prepare include: "(http://terminology.hl7.org/CodeSystem/consentcategorycodes)"
+1032 0  : 0ms  : CodeSystem found: "http://terminology.hl7.org/CodeSystem/consentcategorycodes|1.0.1"
+1032 0  : 0ms  : Prepare include: "(^http://terminology.hl7.org/ValueSet/v3-ActConsentType)"
+1032 0  : 0ms    : Analysing http://terminology.hl7.org/ValueSet/v3-ActConsentType|3.0.0 for validation purposes
+1032 0  : 0ms    : Prepare include: "(http://terminology.hl7.org/CodeSystem/v3-ActCode)(concept<<_ActConsentType)"
+1079 47 : 47ms   : CodeSystem found: "http://terminology.hl7.org/CodeSystem/v3-ActCode|9.0.0"
+1079 0  : 47ms : Prepare include: "(http://loinc.org)(59284-0,57016-8,57017-6,64292-6)"
+1079 0  : 47ms : CodeSystem found: "http://loinc.org|2.81"
+1079 0  : 47ms : Validate "[http://loinc.org#59284-0 ("Patient Consent")]"
+1079 0  : 47ms : Check "http://loinc.org#59284-0"
+1079 0  : 47ms : Check included value set http://terminology.hl7.org/ValueSet/v3-ActConsentType
+1079 0  : 47ms   : Check "http://loinc.org#59284-0"
+1079 0  : 47ms : CodeSystem found: http://loinc.org|2.81 for http://loinc.org
+1079 0  : 47ms : check code in (http://loinc.org)(59284-0,57016-8,57017-6,64292-6) at CodeableConcept.coding[0]
+1079 0  : 47ms : Code "59284-0" found in http://loinc.org|2.81
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffebcc">
@@ -934,24 +917,24 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Consent&#8203;.category[0]&#8203;.coding[0]&#8203;.display (l20&#8203;/c6)</b></td><td><b>error</b></td><td><b>Wrong whitespace in Display Name 'Patient Consent' for http://loinc.org#59284-0. Valid display is 'Patient Consent' (for the language(s) 'fr')</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l46">log</a>, or see <a href="#vmi410" onClick="document.getElementById('vmi410').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Display_Name_WS_for__should_be_one_of__instead_of</span><div id="vmi410" style="display:none"><br/><pre>0 0 : start
-734 734 : 0ms  : Analysing http://hl7.org/fhir/ValueSet/consent-category|4.0.1 for validation purposes
-734 0   : 0ms  : Parameters: disp-lang=fr, default-to-latest
-734 0   : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-734 0   : 0ms  : Prepare include: "(http://terminology.hl7.org/CodeSystem/consentcategorycodes)"
-734 0   : 0ms  : CodeSystem found: "http://terminology.hl7.org/CodeSystem/consentcategorycodes|1.0.1"
-734 0   : 0ms  : Prepare include: "(^http://terminology.hl7.org/ValueSet/v3-ActConsentType)"
-734 0   : 0ms    : Analysing http://terminology.hl7.org/ValueSet/v3-ActConsentType|3.0.0 for validation purposes
-734 0   : 0ms    : Prepare include: "(http://terminology.hl7.org/CodeSystem/v3-ActCode)(concept<<_ActConsentType)"
-766 32  : 32ms   : CodeSystem found: "http://terminology.hl7.org/CodeSystem/v3-ActCode|9.0.0"
-766 0   : 32ms : Prepare include: "(http://loinc.org)(59284-0,57016-8,57017-6,64292-6)"
-766 0   : 32ms : CodeSystem found: "http://loinc.org|2.81"
-766 0   : 32ms : Validate "[http://loinc.org#59284-0 ("Patient Consent")]"
-766 0   : 32ms : Check "http://loinc.org#59284-0"
-766 0   : 32ms : Check included value set http://terminology.hl7.org/ValueSet/v3-ActConsentType
-766 0   : 32ms   : Check "http://loinc.org#59284-0"
-766 0   : 32ms : CodeSystem found: http://loinc.org|2.81 for http://loinc.org
-766 0   : 32ms : check code in (http://loinc.org)(59284-0,57016-8,57017-6,64292-6) at CodeableConcept.coding[0]
-766 0   : 32ms : Code "59284-0" found in http://loinc.org|2.81
+1032 1032: 0ms  : Analysing http://hl7.org/fhir/ValueSet/consent-category|4.0.1 for validation purposes
+1032 0  : 0ms  : Parameters: disp-lang=fr, default-to-latest
+1032 0  : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+1032 0  : 0ms  : Prepare include: "(http://terminology.hl7.org/CodeSystem/consentcategorycodes)"
+1032 0  : 0ms  : CodeSystem found: "http://terminology.hl7.org/CodeSystem/consentcategorycodes|1.0.1"
+1032 0  : 0ms  : Prepare include: "(^http://terminology.hl7.org/ValueSet/v3-ActConsentType)"
+1032 0  : 0ms    : Analysing http://terminology.hl7.org/ValueSet/v3-ActConsentType|3.0.0 for validation purposes
+1032 0  : 0ms    : Prepare include: "(http://terminology.hl7.org/CodeSystem/v3-ActCode)(concept<<_ActConsentType)"
+1079 47 : 47ms   : CodeSystem found: "http://terminology.hl7.org/CodeSystem/v3-ActCode|9.0.0"
+1079 0  : 47ms : Prepare include: "(http://loinc.org)(59284-0,57016-8,57017-6,64292-6)"
+1079 0  : 47ms : CodeSystem found: "http://loinc.org|2.81"
+1079 0  : 47ms : Validate "[http://loinc.org#59284-0 ("Patient Consent")]"
+1079 0  : 47ms : Check "http://loinc.org#59284-0"
+1079 0  : 47ms : Check included value set http://terminology.hl7.org/ValueSet/v3-ActConsentType
+1079 0  : 47ms   : Check "http://loinc.org#59284-0"
+1079 0  : 47ms : CodeSystem found: http://loinc.org|2.81 for http://loinc.org
+1079 0  : 47ms : check code in (http://loinc.org)(59284-0,57016-8,57017-6,64292-6) at CodeableConcept.coding[0]
+1079 0  : 47ms : Code "59284-0" found in http://loinc.org|2.81
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffebcc">
@@ -1334,13 +1317,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[1]&#8203;.code[0]&#8203;.display (l1&#8203;/c145002)</b></td><td><b>information</b></td><td><b>'Orientation functions' is the default display; the code system http://hl7.org/fhir/sid/icf has no Display Names for the language fr</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l18">log</a>, or see <a href="#vmi453" onClick="document.getElementById('vmi453').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_LANG_NONE</span><div id="vmi453" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#b114 ("Orientation functions")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#b114"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#b114 ("Orientation functions")]"
+15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#b114"
+15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1378,13 +1361,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[2]&#8203;.code[0]&#8203;.display (l1&#8203;/c146377)</b></td><td><b>information</b></td><td><b>'Washing body parts' is the default display; the code system http://hl7.org/fhir/sid/icf has no Display Names for the language fr</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l19">log</a>, or see <a href="#vmi457" onClick="document.getElementById('vmi457').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_LANG_NONE</span><div id="vmi457" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d5100 ("Washing body parts")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#d5100"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d5100 ("Washing body parts")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#d5100"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1422,13 +1405,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[3]&#8203;.code[0]&#8203;.display (l1&#8203;/c147740)</b></td><td><b>information</b></td><td><b>'Caring for body parts' is the default display; the code system http://hl7.org/fhir/sid/icf has no Display Names for the language fr</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l20">log</a>, or see <a href="#vmi461" onClick="document.getElementById('vmi461').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_LANG_NONE</span><div id="vmi461" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d520 ("Caring for body parts")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#d520"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d520 ("Caring for body parts")]"
+15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#d520"
+15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1466,13 +1449,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[4]&#8203;.code[0]&#8203;.display (l1&#8203;/c149140)</b></td><td><b>information</b></td><td><b>'Putting on clothes' is the default display; the code system http://hl7.org/fhir/sid/icf has no Display Names for the language fr</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l21">log</a>, or see <a href="#vmi465" onClick="document.getElementById('vmi465').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_LANG_NONE</span><div id="vmi465" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d5400 ("Putting on clothes")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#d5400"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d5400 ("Putting on clothes")]"
+15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#d5400"
+15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1515,8 +1498,8 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
 0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
 0 0     : 0ms  : Prepare include: "()"
 0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d440 ("Fine hand use")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#d440"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 15ms : Check "http://hl7.org/fhir/sid/icf#d440"
+15 0    : 15ms : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1554,13 +1537,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[6]&#8203;.code[0]&#8203;.display (l1&#8203;/c151928)</b></td><td><b>information</b></td><td><b>'Putting on footwear' is the default display; the code system http://hl7.org/fhir/sid/icf has no Display Names for the language fr</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l23">log</a>, or see <a href="#vmi473" onClick="document.getElementById('vmi473').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_LANG_NONE</span><div id="vmi473" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d5402 ("Putting on footwear")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#d5402"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d5402 ("Putting on footwear")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#d5402"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1642,13 +1625,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[8]&#8203;.code[0]&#8203;.display (l1&#8203;/c154643)</b></td><td><b>information</b></td><td><b>'Swallowing' is the default display; the code system http://hl7.org/fhir/sid/icf has no Display Names for the language fr</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l25">log</a>, or see <a href="#vmi481" onClick="document.getElementById('vmi481').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_LANG_NONE</span><div id="vmi481" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#b5105 ("Swallowing")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#b5105"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#b5105 ("Swallowing")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#b5105"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1692,7 +1675,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
 0 0     : 0ms  : Prepare include: "()"
 0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d5300 ("Regulating urination")]"
 0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#d5300"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 16ms : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1736,7 +1719,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
 0 0     : 0ms  : Prepare include: "()"
 0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d5301 ("Regulating defecation")]"
 0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#d5301"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 15ms : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1774,13 +1757,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[11]&#8203;.code[0]&#8203;.display (l1&#8203;/c158878)</b></td><td><b>information</b></td><td><b>'Changing basic body position' is the default display; the code system http://hl7.org/fhir/sid/icf has no Display Names for the language fr</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l28">log</a>, or see <a href="#vmi493" onClick="document.getElementById('vmi493').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_LANG_NONE</span><div id="vmi493" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d410 ("Changing basic body position")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#d410"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d410 ("Changing basic body position")]"
+15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#d410"
+15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1818,13 +1801,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[12]&#8203;.code[0]&#8203;.display (l1&#8203;/c160298)</b></td><td><b>information</b></td><td><b>'Moving around within the home' is the default display; the code system http://hl7.org/fhir/sid/icf has no Display Names for the language fr</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l29">log</a>, or see <a href="#vmi497" onClick="document.getElementById('vmi497').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_LANG_NONE</span><div id="vmi497" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d4600 ("Moving around within the home")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#d4600"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d4600 ("Moving around within the home")]"
+15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#d4600"
+15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1906,13 +1889,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[14]&#8203;.code[0]&#8203;.display (l1&#8203;/c163210)</b></td><td><b>information</b></td><td><b>'Using communication devices and techniques, other specified' is the default display; the code system http://hl7.org/fhir/sid/icf has no Display Names for the language fr</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l31">log</a>, or see <a href="#vmi505" onClick="document.getElementById('vmi505').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_LANG_NONE</span><div id="vmi505" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d3608 ("Using communication devices and techniques, other specified")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#d3608"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d3608 ("Using communication devices and techniques, other specified")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#d3608"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -2004,13 +1987,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[1]&#8203;.code[0]&#8203;.display (l1&#8203;/c100304)</b></td><td><b>information</b></td><td><b>'Orientation functions' is the default display; the code system http://hl7.org/fhir/sid/icf has no Display Names for the language fr</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l18">log</a>, or see <a href="#vmi513" onClick="document.getElementById('vmi513').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_LANG_NONE</span><div id="vmi513" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#b114 ("Orientation functions")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#b114"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#b114 ("Orientation functions")]"
+15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#b114"
+15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -2052,9 +2035,9 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
 0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
 0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
 0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d510 ("Washing oneself")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#d510"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 16ms : Validate "[http://hl7.org/fhir/sid/icf#d510 ("Washing oneself")]"
+16 0    : 16ms : Check "http://hl7.org/fhir/sid/icf#d510"
+16 0    : 16ms : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -2098,7 +2081,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
 0 0     : 0ms  : Prepare include: "()"
 0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d540 ("Dressing")]"
 0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#d540"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 15ms : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -2186,7 +2169,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
 0 0     : 0ms  : Prepare include: "()"
 0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d530 ("Toileting")]"
 0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#d530"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 16ms : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -2224,13 +2207,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[6]&#8203;.code[0]&#8203;.display (l1&#8203;/c107050)</b></td><td><b>information</b></td><td><b>'Changing basic body position' is the default display; the code system http://hl7.org/fhir/sid/icf has no Display Names for the language fr</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l28">log</a>, or see <a href="#vmi533" onClick="document.getElementById('vmi533').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_LANG_NONE</span><div id="vmi533" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d410 ("Changing basic body position")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#d410"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d410 ("Changing basic body position")]"
+15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#d410"
+15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -2268,13 +2251,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[7]&#8203;.code[0]&#8203;.display (l1&#8203;/c108470)</b></td><td><b>information</b></td><td><b>'Moving around within the home' is the default display; the code system http://hl7.org/fhir/sid/icf has no Display Names for the language fr</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l29">log</a>, or see <a href="#vmi537" onClick="document.getElementById('vmi537').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_LANG_NONE</span><div id="vmi537" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d4600 ("Moving around within the home")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#d4600"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d4600 ("Moving around within the home")]"
+15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#d4600"
+15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -2356,13 +2339,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[9]&#8203;.code[0]&#8203;.display (l1&#8203;/c111407)</b></td><td><b>information</b></td><td><b>'Using communication devices and techniques, other specified' is the default display; the code system http://hl7.org/fhir/sid/icf has no Display Names for the language fr</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l31">log</a>, or see <a href="#vmi545" onClick="document.getElementById('vmi545').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_LANG_NONE</span><div id="vmi545" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d3608 ("Using communication devices and techniques, other specified")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#d3608"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d3608 ("Using communication devices and techniques, other specified")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#d3608"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -2887,13 +2870,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[36]&#8203;.type[0]&#8203;.extension[1] (l1&#8203;/c98066)</b></td><td><b>information</b></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/regex|5.2.0 is deprecated with the note: 'This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DEPENDS_ON_DEPRECATED_NOTE</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[36]&#8203;.type[0]&#8203;.extension[1] (l1&#8203;/c98152)</b></td><td><b>information</b></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/regex|5.2.0 is deprecated with the note: 'This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DEPENDS_ON_DEPRECATED_NOTE</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[16]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c183179)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[16]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c183412)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[53]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c116132)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[53]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c116218)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
    </tr>
 </table>
 <hr/>
@@ -3258,10 +3241,10 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[23]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c209771)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[23]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c209953)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[58]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c168065)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[58]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c168099)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
    </tr>
 </table>
 <hr/>
@@ -3538,10 +3521,10 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[13]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c253300)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[13]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c253609)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[68]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c186227)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[68]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c186385)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
    </tr>
 </table>
 <hr/>
@@ -3595,10 +3578,10 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[13]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c214595)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[13]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c214904)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[68]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c163171)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[68]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c163329)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/interop&#8203;.esante&#8203;.gouv&#8203;.fr&#8203;/ig&#8203;/fhir&#8203;/tddui&#8203;/StructureDefinition&#8203;/tddui-task-prestation')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>

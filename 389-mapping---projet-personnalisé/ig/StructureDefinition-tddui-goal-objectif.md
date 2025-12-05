@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif | *Version*:2.1.0-ballot |
-| Active as of 2025-12-03 | *Computable Name*:TDDUIGoalObjectif |
+| Active as of 2025-12-05 | *Computable Name*:TDDUIGoalObjectif |
 
  
 Profil de la ressource Goal permettant de représenter les résultats à atteindre dans le cadre du projet personnalisé. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-objectif.
   "name" : "TDDUIGoalObjectif",
   "title" : "TDDUI Goal Objectif",
   "status" : "active",
-  "date" : "2025-12-03T10:22:03+00:00",
+  "date" : "2025-12-05T09:54:12+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -222,6 +222,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-objectif.
       {
         "id" : "Goal.lifecycleStatus",
         "path" : "Goal.lifecycleStatus",
+        "short" : "Correspondance des statuts métier avec les codes FHIR : ENPREPARATION → planned, ACTIF → active, TERMINE → completed, ANNULE → cancelled.",
         "mapping" : [
           {
             "identity" : "specmetier-to-TDDUIGoalObjectif",
