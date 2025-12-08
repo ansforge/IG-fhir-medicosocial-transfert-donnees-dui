@@ -70,7 +70,7 @@
 
 
 
-  <img alt="France flag" src="assets/images/fra.svg" height="16" title="France"/>
+  <span title="">FR</span>
 
 
             </span>
@@ -200,7 +200,7 @@
         <div class="row">
           <div class="inner-wrapper">
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Médicosocial - Transfert de données DUI - version de développement local (v2.1.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/fhir/tddui/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Médicosocial - Transfert de données DUI - Local Development build (v2.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://interop.esante.gouv.fr/ig/fhir/tddui/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -256,24 +256,24 @@
 
 
 
-  <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">{
+  <pre class="json" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">{
   "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter">resourceType</a>" : "Encounter",
-  "<a href="http://hl7.org/fhir/R4/resource.html#Encounter.id">id</a>" : "tddui-encounter-evenement-example",
-  "<a href="http://hl7.org/fhir/R4/resource.html#Encounter.meta">meta</a>" : {
+  "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.id">id</a>" : "tddui-encounter-evenement-example",
+  "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.meta">meta</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
       <a href="StructureDefinition-tddui-encounter-evenement.html" style="color: Maroon">&#x1F517;</a> "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement"
     ]
   },
-  "<a href="http://hl7.org/fhir/R4/domainresource.html#Encounter.text">text</a>" : {
+  "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : Venue tddui-encounter-evenement-example&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;tddui-encounter-evenement-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hctddui-encounter-evenement-example\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profil: &lt;a href=\&quot;StructureDefinition-tddui-encounter-evenement.html\&quot;&gt;TDDUI Encounter Evenement&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Ressources utilisées&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;TDDUIRessourceType: &lt;span title=\&quot;Codes :{https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis ORG-206}\&quot;&gt;Matériel spécialisé&lt;/span&gt;&lt;/li&gt;&lt;li&gt;TDDUIMaterialDetail: &lt;span title=\&quot;Codes :{https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis ORG-208}\&quot;&gt;Materiel médical&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;Rapport de l’évènement&lt;/b&gt;: Observations cliniques : ; Recommandations pour les jours à venir : ; Prochaine visite : 15 avril 2023, 10h30 ; Remarque : Monsieur Dupont a compris les consignes pour la gestion de sa douleur et la mobilisation de sa hanche opérée.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Commentaire&lt;/b&gt;: Cet évènement a débuté plus tard l’usager était sous la douche à l’heure du début du rendez-vous.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Libellé de l'évènement&lt;/b&gt;: Visite à domicile pour soins infirmier.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Motif de l’évènement&lt;/b&gt;: Suivi post-opératoire suite à intervention chirurgicale de la hanche.&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: Visit Number/3480787529/147720425367411-EVN-12548&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Finished&lt;/p&gt;&lt;p&gt;&lt;b&gt;class&lt;/b&gt;: &lt;a href=\&quot;http://terminology.hl7.org/7.0.0/CodeSystem-v3-ActCode.html#v3-ActCode-HH\&quot;&gt;ActCode: HH&lt;/a&gt; (home health)&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes :{https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis MED-1298}\&quot;&gt;Intervention d'un infirmer salarié&lt;/span&gt;, &lt;span title=\&quot;Codes :\&quot;&gt;Intervention&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-tddui-patient-ins-example.html\&quot;&gt;DUPONT  Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/194704032)&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;Participants&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Individual&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes :{http://terminology.hl7.org/CodeSystem/v3-ParticipationType PART}\&quot;&gt;Participation&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Practitioner-tddui-practitioner-example.html\&quot;&gt;Practitioner Claire Martin &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: 2023-04-14 10:30:00+0200 --&amp;gt; 2023-04-14 11:15:00+0200&lt;/p&gt;&lt;h3&gt;Locations&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Location&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Location-tddui-event-location-example.html\&quot;&gt;Location&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;serviceProvider&lt;/b&gt;: &lt;a href=\&quot;Organization-tddui-organization-example.html\&quot;&gt;Organization Les Chênes Verts&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;partOf&lt;/b&gt;: &lt;a href=\&quot;Encounter-tddui-encounter-sejour-example.html\&quot;&gt;Encounter : extension = 2023-04-11,Date de début du suivi post-opératoire : 14/04/2023,Sortie prévisionnelle prévue pour le 5 mai 2023,2023-05-05; identifier = Identifiant du séjour: 3480787529/147720425367411-SEJOUR-1012; status = in-progress; class = home health (ActCode#HH); period = 2023-04-14 --&amp;gt; (en cours)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Encounter tddui-encounter-evenement-example&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;tddui-encounter-evenement-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hctddui-encounter-evenement-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;tddui-encounter-evenement-example-fr-FR\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profil: &lt;a href=\&quot;StructureDefinition-tddui-encounter-evenement.html\&quot;&gt;TDDUI Encounter Evenement&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Ressources utilisées&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;TDDUIRessourceType: &lt;span title=\&quot;Codes:{https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis ORG-206}\&quot;&gt;Matériel spécialisé&lt;/span&gt;&lt;/li&gt;&lt;li&gt;TDDUIMaterialDetail: &lt;span title=\&quot;Codes:{https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis ORG-208}\&quot;&gt;Materiel médical&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;Rapport de l’évènement&lt;/b&gt;: Observations cliniques : ; Recommandations pour les jours à venir : ; Prochaine visite : 15 avril 2023, 10h30 ; Remarque : Monsieur Dupont a compris les consignes pour la gestion de sa douleur et la mobilisation de sa hanche opérée.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Commentaire&lt;/b&gt;: Cet évènement a débuté plus tard l’usager était sous la douche à l’heure du début du rendez-vous.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Libellé de l'évènement&lt;/b&gt;: Visite à domicile pour soins infirmier.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Motif de l’évènement&lt;/b&gt;: Suivi post-opératoire suite à intervention chirurgicale de la hanche.&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: Visit Number/3480787529/147720425367411-EVN-12548&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Finished&lt;/p&gt;&lt;p&gt;&lt;b&gt;class&lt;/b&gt;: &lt;a href=\&quot;http://terminology.hl7.org/6.2.0/CodeSystem-v3-ActCode.html#v3-ActCode-HH\&quot;&gt;ActCode HH&lt;/a&gt;: home health&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes:{https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis MED-1298}\&quot;&gt;Intervention d'un infirmer salarié&lt;/span&gt;, &lt;span title=\&quot;Codes:\&quot;&gt;Intervention&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-tddui-patient-ins-example.html\&quot;&gt;DUPONT  Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/194704032)&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;Participants&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Individual&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/v3-ParticipationType PART}\&quot;&gt;Participation&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Practitioner-tddui-practitioner-example.html\&quot;&gt;Practitioner Claire Martin &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: 2023-04-14 10:30:00+0200 --&amp;gt; 2023-04-14 11:15:00+0200&lt;/p&gt;&lt;h3&gt;Locations&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Location&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Location-tddui-event-location-example.html\&quot;&gt;Location&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;serviceProvider&lt;/b&gt;: &lt;a href=\&quot;Organization-tddui-organization-example.html\&quot;&gt;Organization Les Chênes Verts&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;partOf&lt;/b&gt;: &lt;a href=\&quot;Encounter-tddui-encounter-sejour-example.html\&quot;&gt;Encounter : extension = 2023-04-11,Date de début du suivi post-opératoire : 14/04/2023,Sortie prévisionnelle prévue pour le 5 mai 2023,2023-05-05; identifier = Identifiant du séjour: 3480787529/147720425367411-SEJOUR-1012; status = in-progress; class = home health (ActCode#HH); period = 2023-04-14 --&amp;gt; (ongoing)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"
   },
-  "<a href="http://hl7.org/fhir/R4/domainresource.html#Encounter.extension">extension</a>" : [
+  "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.extension">extension</a>" : [
     {
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Extension.extension">extension</a>" : [
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>" : [
         {
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "TDDUIRessourceType",
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCodeableConcept</a>" : {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>" : {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
               {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
@@ -285,7 +285,7 @@
         },
         {
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "TDDUIMaterialDetail",
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCodeableConcept</a>" : {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>" : {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
               {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
@@ -300,19 +300,19 @@
     },
     {
       "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-report",
-      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "Observations cliniques : ; Recommandations pour les jours à venir : ; Prochaine visite : 15 avril 2023, 10h30 ; Remarque : Monsieur Dupont a compris les consignes pour la gestion de sa douleur et la mobilisation de sa hanche opérée."
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "Observations cliniques : ; Recommandations pour les jours à venir : ; Prochaine visite : 15 avril 2023, 10h30 ; Remarque : Monsieur Dupont a compris les consignes pour la gestion de sa douleur et la mobilisation de sa hanche opérée."
     },
     {
       "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment",
-      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "Cet évènement a débuté plus tard l’usager était sous la douche à l’heure du début du rendez-vous."
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "Cet évènement a débuté plus tard l’usager était sous la douche à l’heure du début du rendez-vous."
     },
     {
       "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-label",
-      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "Visite à domicile pour soins infirmier."
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "Visite à domicile pour soins infirmier."
     },
     {
       "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-reason",
-      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "Suivi post-opératoire suite à intervention chirurgicale de la hanche."
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "Suivi post-opératoire suite à intervention chirurgicale de la hanche."
     }
   ],
   "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.identifier">identifier</a>" : [
@@ -431,7 +431,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Dec 8, 2025 13:48+0000">2025-12-08</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Dec 8, 2025 14:22+0000">2025-12-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |

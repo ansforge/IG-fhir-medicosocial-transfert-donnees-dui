@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "b34a9a9c-e726-46a4-8933-9cf79a69c940-63",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/b34a9a9c-e726-46a4-8933-9cf79a69c940-63",
+  "id" : "be06d15b-0800-47a6-b9dd-e7eb95723eeb-57",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/be06d15b-0800-47a6-b9dd-e7eb95723eeb-57",
   "name" : "IntersectionTDDUIEncounterEvenementAndTDDUIEncounterEvenement",
   "title" : "Intersection of TDDUI Encounter Evenement And TDDUI Encounter Evenement",
   "status" : "active",
-  "date" : "2025-12-08T13:51:11+00:00",
+  "date" : "2025-12-08T14:23:34+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -1905,6 +1905,13 @@
       "alias" : ["patient"],
       "min" : 1,
       "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient",
+        "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins",
+        "http://hl7.org/fhir/StructureDefinition/Group",
+        "#sd-tddui-patient-tddui-patient"]
+      }],
       "constraint" : [{
         "extension" : [{
           "url" : "http://hl7.org/fhir/4.0/StructureDefinition/extension-ElementDefinition.constraint.xpath",

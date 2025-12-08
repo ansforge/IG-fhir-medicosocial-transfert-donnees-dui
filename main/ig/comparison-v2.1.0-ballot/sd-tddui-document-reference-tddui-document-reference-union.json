@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "b34a9a9c-e726-46a4-8933-9cf79a69c940-20",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/b34a9a9c-e726-46a4-8933-9cf79a69c940-20",
+  "id" : "be06d15b-0800-47a6-b9dd-e7eb95723eeb-20",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/be06d15b-0800-47a6-b9dd-e7eb95723eeb-20",
   "name" : "UnionTDDUIDocumentReferenceAndTDDUIDocumentReference",
   "title" : "Union of TDDUI DocumentReference And TDDUI DocumentReference",
   "status" : "active",
-  "date" : "2025-12-08T13:51:11+00:00",
+  "date" : "2025-12-08T14:23:34+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -372,7 +372,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Codes that represent various types of tags, commonly workflow-related; e.g. \"Needs review by Dr. Jones\".",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/b34a9a9c-e726-46a4-8933-9cf79a69c940-23"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/common-tags"
       }
     },
     {
@@ -883,12 +883,8 @@
       "type" : [{
         "code" : "Reference",
         "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient",
-        "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"]
-      },
-      {
-        "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient",
-        "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"]
+        "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins",
+        "#sd-tddui-patient-tddui-patient"]
       }],
       "constraint" : [{
         "extension" : [{
@@ -2400,12 +2396,8 @@
       "type" : [{
         "code" : "Reference",
         "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient",
-        "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"]
-      },
-      {
-        "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient",
-        "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"]
+        "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins",
+        "#sd-tddui-patient-tddui-patient"]
       }],
       "constraint" : [{
         "extension" : [{

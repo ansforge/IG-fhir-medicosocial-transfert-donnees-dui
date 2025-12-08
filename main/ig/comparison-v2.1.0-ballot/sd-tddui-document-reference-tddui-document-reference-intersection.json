@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "b34a9a9c-e726-46a4-8933-9cf79a69c940-21",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/b34a9a9c-e726-46a4-8933-9cf79a69c940-21",
+  "id" : "be06d15b-0800-47a6-b9dd-e7eb95723eeb-21",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/be06d15b-0800-47a6-b9dd-e7eb95723eeb-21",
   "name" : "IntersectionTDDUIDocumentReferenceAndTDDUIDocumentReference",
   "title" : "Intersection of TDDUI DocumentReference And TDDUI DocumentReference",
   "status" : "active",
-  "date" : "2025-12-08T13:51:11+00:00",
+  "date" : "2025-12-08T14:23:34+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -892,6 +892,12 @@
       "definition" : "Who or what the document is about. The document can be about a person, (patient or healthcare practitioner), a device (e.g. a machine) or even a group of subjects (such as a document about a herd of farm animals, or a set of patients that share a common exposure).",
       "min" : 1,
       "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient",
+        "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins",
+        "#sd-tddui-patient-tddui-patient"]
+      }],
       "constraint" : [{
         "extension" : [{
           "url" : "http://hl7.org/fhir/4.0/StructureDefinition/extension-ElementDefinition.constraint.xpath",
@@ -2411,6 +2417,12 @@
       "definition" : "The Patient Information as known when the document was published. May be a reference to a version specific, or contained.",
       "min" : 0,
       "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient",
+        "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins",
+        "#sd-tddui-patient-tddui-patient"]
+      }],
       "constraint" : [{
         "extension" : [{
           "url" : "http://hl7.org/fhir/4.0/StructureDefinition/extension-ElementDefinition.constraint.xpath",
