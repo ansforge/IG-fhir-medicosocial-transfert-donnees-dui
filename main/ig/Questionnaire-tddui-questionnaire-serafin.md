@@ -1,0 +1,449 @@
+# Évaluation SERAFIN - Médicosocial - Transfert de données DUI v2.1.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Évaluation SERAFIN**
+
+## Questionnaire: Évaluation SERAFIN 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/Questionnaire/tddui-questionnaire-serafin | *Version*:2.1.0 |
+| Active as of 2025-12-08 | *Computable Name*: |
+
+ 
+Grille d'évaluation SERAFIN 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Questionnaire",
+  "id" : "tddui-questionnaire-serafin",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/Questionnaire/tddui-questionnaire-serafin",
+  "version" : "2.1.0",
+  "title" : "Évaluation SERAFIN",
+  "status" : "active",
+  "date" : "2025-12-08T13:48:42+00:00",
+  "publisher" : "ANS",
+  "contact" : [
+    {
+      "name" : "ANS",
+      "telecom" : [
+        {
+          "system" : "url",
+          "value" : "https://esante.gouv.fr"
+        }
+      ]
+    }
+  ],
+  "description" : "Grille d'évaluation SERAFIN",
+  "jurisdiction" : [
+    {
+      "coding" : [
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "FR",
+          "display" : "FRANCE"
+        }
+      ]
+    }
+  ],
+  "code" : [
+    {
+      "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+      "code" : "MED-1291",
+      "display" : "Evaluation SERAFIN"
+    }
+  ],
+  "item" : [
+    {
+      "linkId" : "besoin-serafin",
+      "code" : [
+        {
+          "system" : "https://smt.esante.gouv.fr/terminologie-SERAFINPH",
+          "code" : "1",
+          "display" : "Besoins"
+        }
+      ],
+      "text" : "Besoins",
+      "type" : "integer"
+    },
+    {
+      "linkId" : "besoin-sante-som-psy",
+      "code" : [
+        {
+          "system" : "https://smt.esante.gouv.fr/terminologie-SERAFINPH",
+          "code" : "1.1",
+          "display" : "Besoins en matière de santé somatique ou psychique"
+        }
+      ],
+      "text" : "Besoins en matière de santé somatique ou psychique",
+      "type" : "integer"
+    },
+    {
+      "linkId" : "besoin-fonc-ment",
+      "code" : [
+        {
+          "system" : "https://smt.esante.gouv.fr/terminologie-SERAFINPH",
+          "code" : "1.1.1",
+          "display" : "Besoins en matière de fonctions mentales, psychiques, cognitives et du système nerveux"
+        }
+      ],
+      "text" : "Besoins en matière de fonctions mentales, psychiques, cognitives et du système nerveux",
+      "type" : "integer"
+    },
+    {
+      "linkId" : "besoin-fonc-sensorielle",
+      "code" : [
+        {
+          "system" : "https://smt.esante.gouv.fr/terminologie-SERAFINPH",
+          "code" : "1.1.2",
+          "display" : "Besoins en matière de fonctions sensorielles"
+        }
+      ],
+      "text" : "Besoins en matière de fonctions sensorielles",
+      "type" : "integer"
+    },
+    {
+      "linkId" : "besoin-douleur",
+      "code" : [
+        {
+          "system" : "https://smt.esante.gouv.fr/terminologie-SERAFINPH",
+          "code" : "1.1.3",
+          "display" : "Besoins en matière de douleur"
+        }
+      ],
+      "text" : "Besoins en matière de douleur",
+      "type" : "integer"
+    },
+    {
+      "linkId" : "besoin-voix",
+      "code" : [
+        {
+          "system" : "https://smt.esante.gouv.fr/terminologie-SERAFINPH",
+          "code" : "1.1.4",
+          "display" : "Besoins relatifs à la voix, à la parole et à l’appareil bucco-dentaire"
+        }
+      ],
+      "text" : "Besoins relatifs à la voix, à la parole et à l'appareil bucco-dentaire",
+      "type" : "integer"
+    },
+    {
+      "linkId" : "besoin-cardio-vasc",
+      "code" : [
+        {
+          "system" : "https://smt.esante.gouv.fr/terminologie-SERAFINPH",
+          "code" : "1.1.5",
+          "display" : "Besoins en matière de fonctions cardio-vasculaire, hématopoïétique, immunitaire et respiratoire"
+        }
+      ],
+      "text" : "Besoins en matière de fonctions cardio-vasculaire, hématopoïétique, immunitaire et respiratoire",
+      "type" : "integer"
+    },
+    {
+      "linkId" : "besoin-dig",
+      "code" : [
+        {
+          "system" : "https://smt.esante.gouv.fr/terminologie-SERAFINPH",
+          "code" : "1.1.6",
+          "display" : "Besoins en matière de fonctions digestive, métabolique et endocrinienne"
+        }
+      ],
+      "text" : "Besoins en matière de fonctions digestive, métabolique et endocrinienne",
+      "type" : "integer"
+    },
+    {
+      "linkId" : "besoin-genito-uri",
+      "code" : [
+        {
+          "system" : "https://smt.esante.gouv.fr/terminologie-SERAFINPH",
+          "code" : "1.1.7",
+          "display" : "Besoins en matière de fonctions génito-urinaire et reproductive"
+        }
+      ],
+      "text" : "Besoins en matière de fonctions génito-urinaire et reproductive",
+      "type" : "integer"
+    },
+    {
+      "linkId" : "besoin-loco-mot",
+      "code" : [
+        {
+          "system" : "https://smt.esante.gouv.fr/terminologie-SERAFINPH",
+          "code" : "1.1.8",
+          "display" : "Besoins en matière de fonctions locomotrices"
+        }
+      ],
+      "text" : "Besoins en matière de fonctions locomotrices",
+      "type" : "integer"
+    },
+    {
+      "linkId" : "besoin-peau",
+      "code" : [
+        {
+          "system" : "https://smt.esante.gouv.fr/terminologie-SERAFINPH",
+          "code" : "1.1.9",
+          "display" : "Besoins relatifs à la peau et aux structures associées"
+        }
+      ],
+      "text" : "Besoins relatifs à la peau et aux structures associées",
+      "type" : "integer"
+    },
+    {
+      "linkId" : "besoin-entretien",
+      "code" : [
+        {
+          "system" : "https://smt.esante.gouv.fr/terminologie-SERAFINPH",
+          "code" : "1.1.10",
+          "display" : "Besoins pour entretenir et prendre soin de sa santé"
+        }
+      ],
+      "text" : "Besoins pour entretenir et prendre soin de sa santé",
+      "type" : "integer"
+    },
+    {
+      "linkId" : "besoin-autonomie",
+      "code" : [
+        {
+          "system" : "https://smt.esante.gouv.fr/terminologie-SERAFINPH",
+          "code" : "1.2",
+          "display" : "Besoins en matière d’autonomie"
+        }
+      ],
+      "text" : "Besoins en matière d'autonomie",
+      "type" : "integer"
+    },
+    {
+      "linkId" : "besoin-entretien-personnel",
+      "code" : [
+        {
+          "system" : "https://smt.esante.gouv.fr/terminologie-SERAFINPH",
+          "code" : "1.2.1.1",
+          "display" : "Besoins en lien avec l’entretien personnel"
+        }
+      ],
+      "text" : "Besoins en lien avec l'entretien personnel",
+      "type" : "integer"
+    },
+    {
+      "linkId" : "besoin-relations",
+      "code" : [
+        {
+          "system" : "https://smt.esante.gouv.fr/terminologie-SERAFINPH",
+          "code" : "1.2.1.2",
+          "display" : "Besoins en lien avec les relations et les interactions avec autrui"
+        }
+      ],
+      "text" : "Besoins en lien avec les relations et les interactions avec autrui",
+      "type" : "integer"
+    },
+    {
+      "linkId" : "besoin-mobilite",
+      "code" : [
+        {
+          "system" : "https://smt.esante.gouv.fr/terminologie-SERAFINPH",
+          "code" : "1.2.1.3",
+          "display" : "Besoins pour la mobilité"
+        }
+      ],
+      "text" : "Besoins pour la mobilité",
+      "type" : "integer"
+    },
+    {
+      "linkId" : "besoin-decision",
+      "code" : [
+        {
+          "system" : "https://smt.esante.gouv.fr/terminologie-SERAFINPH",
+          "code" : "1.2.1.4",
+          "display" : "Besoins pour prendre des décisions adaptées et pour la sécurité"
+        }
+      ],
+      "text" : "Besoins pour prendre des décisions adaptées et pour la sécurité",
+      "type" : "integer"
+    },
+    {
+      "linkId" : "besoin-participation-sociale",
+      "code" : [
+        {
+          "system" : "https://smt.esante.gouv.fr/terminologie-SERAFINPH",
+          "code" : "1.3",
+          "display" : "Besoins pour la participation sociale"
+        }
+      ],
+      "text" : "Besoins pour la participation sociale",
+      "type" : "integer"
+    },
+    {
+      "linkId" : "besoin-droit-citoyen",
+      "code" : [
+        {
+          "system" : "https://smt.esante.gouv.fr/terminologie-SERAFINPH",
+          "code" : "1.3.1",
+          "display" : "Besoins pour accéder aux droits et à la citoyenneté"
+        }
+      ],
+      "text" : "Besoins pour accéder aux droits et à la citoyenneté",
+      "type" : "integer"
+    },
+    {
+      "linkId" : "besoin-logement",
+      "code" : [
+        {
+          "system" : "https://smt.esante.gouv.fr/terminologie-SERAFINPH",
+          "code" : "1.3.2",
+          "display" : "Besoins pour vivre dans un logement et accomplir les activités domestiques"
+        }
+      ],
+      "text" : "Besoins pour vivre dans un logement et accomplir les activités domestiques",
+      "type" : "integer"
+    },
+    {
+      "linkId" : "besoin-vivre-logement",
+      "code" : [
+        {
+          "system" : "https://smt.esante.gouv.fr/terminologie-SERAFINPH",
+          "code" : "1.3.2.1",
+          "display" : "Besoins pour vivre dans un logement"
+        }
+      ],
+      "text" : "Besoins pour vivre dans un logement",
+      "type" : "integer"
+    },
+    {
+      "linkId" : "besoin-activite-dom",
+      "code" : [
+        {
+          "system" : "https://smt.esante.gouv.fr/terminologie-SERAFINPH",
+          "code" : "1.3.2.2",
+          "display" : "Besoins pour accomplir les activités domestiques"
+        }
+      ],
+      "text" : "Besoins pour accomplir les activités domestiques",
+      "type" : "integer"
+    },
+    {
+      "linkId" : "besoin-insertion-sociale",
+      "code" : [
+        {
+          "system" : "https://smt.esante.gouv.fr/terminologie-SERAFINPH",
+          "code" : "1.3.3",
+          "display" : "Besoins pour l'insertion sociale et professionnelle et pour exercer ses rôles sociaux"
+        }
+      ],
+      "text" : "Besoins pour l'insertion sociale et professionnelle et pour exercer ses rôles sociaux",
+      "type" : "integer"
+    },
+    {
+      "linkId" : "besoin-vie-scolaire",
+      "code" : [
+        {
+          "system" : "https://smt.esante.gouv.fr/terminologie-SERAFINPH",
+          "code" : "1.3.3.1",
+          "display" : "Besoins en lien avec la vie scolaire et étudiante"
+        }
+      ],
+      "text" : "Besoins en lien avec la vie scolaire et étudiante",
+      "type" : "integer"
+    },
+    {
+      "linkId" : "besoin-activite-domestique",
+      "code" : [
+        {
+          "system" : "https://smt.esante.gouv.fr/terminologie-SERAFINPH",
+          "code" : "1.3.3.2",
+          "display" : "Besoins en lien avec le travail et l’emploi"
+        }
+      ],
+      "text" : "Besoins en lien avec le travail et l’emploi",
+      "type" : "integer"
+    },
+    {
+      "linkId" : "besoin-apprentissage",
+      "code" : [
+        {
+          "system" : "https://smt.esante.gouv.fr/terminologie-SERAFINPH",
+          "code" : "1.3.3.3",
+          "display" : "Besoins transversaux en matière d'apprentissages"
+        }
+      ],
+      "text" : "Besoins transversaux en matière d'apprentissages",
+      "type" : "integer"
+    },
+    {
+      "linkId" : "besoin-famille",
+      "code" : [
+        {
+          "system" : "https://smt.esante.gouv.fr/terminologie-SERAFINPH",
+          "code" : "1.3.3.4",
+          "display" : "Besoins pour la vie familiale, la parentalité, la vie affective et sexuelle"
+        }
+      ],
+      "text" : "Besoins pour la vie familiale, la parentalité, la vie affective et sexuelle",
+      "type" : "integer"
+    },
+    {
+      "linkId" : "besoin-pair-aidant",
+      "code" : [
+        {
+          "system" : "https://smt.esante.gouv.fr/terminologie-SERAFINPH",
+          "code" : "1.3.3.5",
+          "display" : "Besoins pour apprendre à être pair-aidant"
+        }
+      ],
+      "text" : "Besoins pour apprendre à être pair-aidant",
+      "type" : "integer"
+    },
+    {
+      "linkId" : "besoin-vie-sociale-moyen-transport",
+      "code" : [
+        {
+          "system" : "https://smt.esante.gouv.fr/terminologie-SERAFINPH",
+          "code" : "1.3.4",
+          "display" : "Besoins pour participer à la vie sociale et se déplacer avec un moyen de transport"
+        }
+      ],
+      "text" : "Besoins pour participer à la vie sociale et se déplacer avec un moyen de transport",
+      "type" : "integer"
+    },
+    {
+      "linkId" : "besoin-vie-sociale",
+      "code" : [
+        {
+          "system" : "https://smt.esante.gouv.fr/terminologie-SERAFINPH",
+          "code" : "1.3.4.1",
+          "display" : "Besoins pour participer à la vie sociale"
+        }
+      ],
+      "text" : "Besoins pour participer à la vie sociale",
+      "type" : "integer"
+    },
+    {
+      "linkId" : "besoin-moyen-transport",
+      "code" : [
+        {
+          "system" : "https://smt.esante.gouv.fr/terminologie-SERAFINPH",
+          "code" : "1.3.4.2",
+          "display" : "Besoins pour se déplacer avec un moyen de transport"
+        }
+      ],
+      "text" : "Besoins pour se déplacer avec un moyen de transport",
+      "type" : "integer"
+    },
+    {
+      "linkId" : "besoin-economie",
+      "code" : [
+        {
+          "system" : "https://smt.esante.gouv.fr/terminologie-SERAFINPH",
+          "code" : "1.3.5",
+          "display" : "Besoins en matière de ressources et d'autosuffisance économique"
+        }
+      ],
+      "text" : "Besoins en matière de ressources et d'autosuffisance économique",
+      "type" : "integer"
+    }
+  ]
+}
+
+```
