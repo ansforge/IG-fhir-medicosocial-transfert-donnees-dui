@@ -9,9 +9,9 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment | *Version*:2.1.0-ballot |
-| Active as of 2025-12-05 | *Computable Name*:TDDUIAttachment |
+| Active as of 2025-12-09 | *Computable Name*:TDDUIAttachment |
 
-Pièces jointes liées à l’événement et à l'évaluation. L'extension référence le profil PDSm_SimplifiedPublish.
+Ce profil permet de véhiculer des pièces jointes que ce soit pour l'évaluation, l'évènement ou le projet personnalisé. L'extension référence le profil PDSm_SimplifiedPublish.
 
 **Context of Use**
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-attachment.csv
   "name" : "TDDUIAttachment",
   "title" : "Pièce jointe",
   "status" : "active",
-  "date" : "2025-12-05T09:54:12+00:00",
+  "date" : "2025-12-09T10:26:43+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -60,7 +60,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-attachment.csv
       ]
     }
   ],
-  "description" : "Pièces jointes liées à l’événement et à l'évaluation. L'extension référence le profil PDSm_SimplifiedPublish.",
+  "description" : "Ce profil permet de véhiculer des pièces jointes que ce soit pour l'évaluation, l'évènement ou le projet personnalisé. L'extension référence le profil PDSm_SimplifiedPublish.",
   "jurisdiction" : [
     {
       "coding" : [
@@ -109,7 +109,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-attachment.csv
         "id" : "Extension",
         "path" : "Extension",
         "short" : "Pièce jointe",
-        "definition" : "Pièces jointes liées à l’événement et à l'évaluation. L'extension référence le profil PDSm_SimplifiedPublish."
+        "definition" : "Ce profil permet de véhiculer des pièces jointes que ce soit pour l'évaluation, l'évènement ou le projet personnalisé. L'extension référence le profil PDSm_SimplifiedPublish."
       },
       {
         "id" : "Extension.extension",

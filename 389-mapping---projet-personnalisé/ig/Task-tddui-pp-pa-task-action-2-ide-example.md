@@ -18,7 +18,7 @@ Profil: [TDDUI Task Action](StructureDefinition-tddui-task-action.md)
 
 **description**: Pesée mensuelle et dépistage dénutrition
 
-**owner**: [Practitioner Élodie Bernard](Practitioner-tddui-practitioner-ide-pp-example.md)
+**owner**: `tddui-practitioner-ide-pp-example`
 
 > **input****type**:Titre de l'action à mener.**value**: Action de l'IDE pour atteindre l'objectif 2
 
@@ -52,7 +52,7 @@ Profil: [TDDUI Task Action](StructureDefinition-tddui-task-action.md)
   "intent" : "plan",
   "description" : "Pesée mensuelle et dépistage dénutrition",
   "owner" : {
-    "reference" : "Practitioner/tddui-practitioner-ide-pp-example"
+    "reference" : "tddui-practitioner-ide-pp-example"
   },
   "input" : [
     {

@@ -89,15 +89,15 @@ These define constraints on FHIR data types for systems conforming to this imple
 | [Mode d'exercice](StructureDefinition-tddui-exercise-mode.md) | Extension permettant de représenter le mode d'exercice du professionnel. |
 | [Motif de l’évènement](StructureDefinition-tddui-event-reason.md) | Contexte justifiant la réalisation de l’évènement. |
 | [Ordre de naissance dans le registre d'état civil](StructureDefinition-tddui-birth-order.md) | Ordre d’enregistrement de la naissance dans le registre d’état civil de la commune de naissance pour le mois de la naissance. Il compose les 3 derniers chiffres du NIR de l'usager avant la clé de sécurité et permet de distinguer les personnes nées au même lieu et à la même période. Il est obligatoire si le NIR n'est pas transmis. |
-| [Pièce jointe](StructureDefinition-tddui-attachment.md) | Pièces jointes liées à l’événement et à l'évaluation. L'extension référence le profil PDSm_SimplifiedPublish. |
+| [Pièce jointe](StructureDefinition-tddui-attachment.md) | Ce profil permet de véhiculer des pièces jointes que ce soit pour l'évaluation, l'évènement ou le projet personnalisé. L'extension référence le profil PDSm_SimplifiedPublish. |
 | [Rapport de l’évènement](StructureDefinition-tddui-event-report.md) | Zone de texte liée à l’événement pour compte rendu des actions réalisées. |
 | [Repas](StructureDefinition-tddui-meal.md) | Repas du professionnel prévu dans le cadre de l'événement. |
 | [Responsable et auteur du statut de l'évaluation](StructureDefinition-tddui-qr-participant.md) | Extension permettant d'ajouter le responsable de l'évaluation et l'auteur du statut de l'évaluation dans un QuestionnaireResponse. |
 | [Ressources utilisées](StructureDefinition-tddui-ressources-used.md) | Ressources utilisées lors de l’évènement (ex : chambre, matériel médical, véhicule). |
+| [TDDUI Auteur statut](StructureDefinition-tddui-status-author.md) | Extension permettant de représenter la profession du professionnel. |
 | [TDDUI CarePlan SupportingInfo](StructureDefinition-tddui-care-plan-supportinginfo.md) | Extension pour discriminer l'élément CarePlan.supportingInfo. |
 | [TDDUI Goal Note](StructureDefinition-tddui-goal-note.md) | Extension pour discriminer l'élément Goal.note. |
 | [TDDUI Profession](StructureDefinition-tddui-profession.md) | Extension permettant de représenter la profession du professionnel. |
-| [TDDUI Profession](StructureDefinition-tddui-status-author.md) | Extension permettant de représenter la profession du professionnel. |
 | [Usager présent](StructureDefinition-tddui-patient-present.md) | Evènement nécessitant ou non la présence physique de l’usager. |
 | [Évènement annulé](StructureDefinition-tddui-event-cancel-reason.md) | Motif associé au statut de non-réalisation de l’évènement. |
 
@@ -135,10 +135,6 @@ These are example instances that show what data produced and consumed by systems
 
 | | |
 | :--- | :--- |
-| [Bilan Objectif 1](DocumentReference-tddui-pp-pa-documentreference-bilan-objectif-1-example.md) | Bilan de l'objectif 1 du projet personnalisé PA au format PDF |
-| [Entrant Projet Personnalisé PA](DocumentReference-tddui-pp-pa-documentreference-entrant-example.md) | Entrant Projet Personnalisé PA au format PDF |
-| [Projet personnalisé de Hugo en IME](CarePlan-tddui-pp-ime-careplan-example.md) | Exemple du projet personnalisé d'un enfant en IME |
-| [Projet personnalisé de Mme Jeanne L.](CarePlan-tddui-pp-pa-careplan-example.md) | Exemple d'un projet personnalisé PA |
 | [TDDUIBundleExample](Bundle-ExampleTDDUIBundle.md) | Exemple de bundle conforme au profil TDDUIBundle |
 | [fr-core-related-person-example](RelatedPerson-fr-core-related-person-example.md) | Exemple de la famille de l'usager. |
 | [tddui-encounter-evenement-example](Encounter-tddui-encounter-evenement-example.md) | Exemple d'un évènement |
@@ -147,19 +143,24 @@ These are example instances that show what data produced and consumed by systems
 | [tddui-organization-example](Organization-tddui-organization-example.md) | ESSMS - Les Chênes Verts |
 | [tddui-patient-example](Patient-tddui-patient-example.md) | Exemple de la ressource TDDUIPatient |
 | [tddui-patient-ins-example](Patient-tddui-patient-ins-example.md) | Exemple de la ressource TDDUIPatientINS |
+| [tddui-pp-ime-careplan-example](CarePlan-tddui-pp-ime-careplan-example.md) | Exemple du projet personnalisé d'un enfant en IME |
 | [tddui-pp-ime-consent-accord-example](Consent-tddui-pp-ime-consent-accord-example.md) | Exemple d'un accord de la structure |
 | [tddui-pp-ime-goal-objectif-1-example](Goal-tddui-pp-ime-goal-objectif-1-example.md) | Exemple d'un objectif dans le cadre du projet personnalisé en IME. |
 | [tddui-pp-ime-goal-objectif-2-example](Goal-tddui-pp-ime-goal-objectif-2-example.md) | Exemple d'un objectif dans le cadre du projet personnalisé en IME. |
 | [tddui-pp-ime-patient-example](Patient-tddui-pp-ime-patient-example.md) | Exemple de la ressource TDDUIPatient dans le cadre d'un projet personnalisé en IME |
 | [tddui-pp-ime-task-action-1-aesh-example](Task-tddui-pp-ime-task-action-1-aesh-example.md) | Exemple d'une action de l'objectif 1 réalisée par l'AESH dans le cadre du projet personnalisé en IME. |
 | [tddui-pp-ime-task-action-1-educ-example](Task-tddui-pp-ime-task-action-1-educ-example.md) | Exemple d'une action de l'objectif 1 réalisée par l'éducateur spécialisé dans le cadre du projet personnalisé en IME. |
+| [tddui-pp-pa-careplan-example](CarePlan-tddui-pp-pa-careplan-example.md) | Exemple d'un projet personnalisé PA |
 | [tddui-pp-pa-consent-accord-example](Consent-tddui-pp-pa-consent-accord-example.md) | Exemple d'un accord de la structure |
+| [tddui-pp-pa-documentreference-bilan-objectif-1-example](DocumentReference-tddui-pp-pa-documentreference-bilan-objectif-1-example.md) | Bilan de l'objectif 1 du projet personnalisé PA au format PDF |
+| [tddui-pp-pa-documentreference-entrant-example](DocumentReference-tddui-pp-pa-documentreference-entrant-example.md) | Entrant Projet Personnalisé PA au format PDF |
 | [tddui-pp-pa-goal-attente-famille-example](Goal-tddui-pp-pa-goal-attente-famille-example.md) | Exemple des attentes de la famille dans le cadre du projet personnalisé PA. |
 | [tddui-pp-pa-goal-attente-usager-example](Goal-tddui-pp-pa-goal-attente-usager-example.md) | Exemple des attentes de l'usager dans le cadre du projet personnalisé PA. |
 | [tddui-pp-pa-goal-objectif-1-example](Goal-tddui-pp-pa-goal-objectif-1-example.md) | Exemple d'un objectif dans le cadre du projet personnalisé PA. |
 | [tddui-pp-pa-goal-objectif-2-example](Goal-tddui-pp-pa-goal-objectif-2-example.md) | Exemple d'un objectif dans le cadre du projet personnalisé PA. |
 | [tddui-pp-pa-goal-objectif-3-example](Goal-tddui-pp-pa-goal-objectif-3-example.md) | Exemple d'un objectif dans le cadre du projet personnalisé PA. |
 | [tddui-pp-pa-patient-example-pp](Patient-tddui-pp-pa-patient-example-pp.md) | Exemple de la ressource TDDUIPatient dans le cadre d'un projet personnalisé PA |
+| [tddui-pp-pa-practitioner-ide-example](Practitioner-tddui-pp-pa-practitioner-ide-example.md) | Exemple d'un IDE |
 | [tddui-pp-pa-questionnaire-response-aggir-pa-example](QuestionnaireResponse-tddui-pp-pa-questionnaire-response-aggir-pa-example.md) | Grille de réponse AGGIR PA |
 | [tddui-pp-pa-servicerequest-besoin-1-example](ServiceRequest-tddui-pp-pa-servicerequest-besoin-1-example.md) | Exemple d'un besoin de l'usager dans le cadre du projet personnalisé PA. |
 | [tddui-pp-pa-servicerequest-besoin-2-example](ServiceRequest-tddui-pp-pa-servicerequest-besoin-2-example.md) | Exemple d'un besoin de l'usager dans le cadre du projet personnalisé PA. |
@@ -175,7 +176,6 @@ These are example instances that show what data produced and consumed by systems
 | [tddui-pp-pa-task-moyen-ressource-ide-2-example](Task-tddui-pp-pa-task-moyen-ressource-ide-2-example.md) | Exemple des moyens et ressources de l'objectif 2 dans le cadre du projet personnalisé PA. |
 | [tddui-pp-pa-task-moyen-ressource-kine-1-example](Task-tddui-pp-pa-task-moyen-ressource-kine-1-example.md) | Exemple des moyens et ressources de l'objectif 1 dans le cadre du projet personnalisé PA. |
 | [tddui-practitioner-example](Practitioner-tddui-practitioner-example.md) | Exemple d'un professionnel de santé |
-| [tddui-practitioner-ide-pp-example](Practitioner-tddui-practitioner-ide-pp-example.md) | Exemple d'un IDE |
 | [tddui-practitioner-role-example](PractitionerRole-tddui-practitioner-role-example.md) | Exemple d'un professionnel de santé |
 | [tddui-questionnaire-response-aggir-pa-example](QuestionnaireResponse-tddui-questionnaire-response-aggir-pa-example.md) | Grille de réponse AGGIR PA |
 | [tddui-questionnaire-response-aggir-ph-example](QuestionnaireResponse-tddui-questionnaire-response-aggir-ph-example.md) | Grille de réponse AGGIR PH |

@@ -53,7 +53,7 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "CarePlan.extension:entrantProjetPerso","CarePlan.extension","entrantProjetPerso","","",0,*,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment]]} {[]}
-","Pièce jointe","Pièces jointes liées à l’événement et à l'évaluation. L'extension référence le profil PDSm_SimplifiedPublish.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Pièce jointe","Ce profil permet de véhiculer des pièces jointes que ce soit pour l'évaluation, l'évènement ou le projet personnalisé. L'extension référence le profil PDSm_SimplifiedPublish.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","entrantProjetPersonnalise"
 "CarePlan.modifierExtension","CarePlan.modifierExtension","","extensions
@@ -119,7 +119,7 @@ This element is labeled as a modifier because the status contains the code enter
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "CarePlan.status.extension:auteurStatut","CarePlan.status.extension","auteurStatut","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-status-author]]} {[]}
-","TDDUI Profession","Extension permettant de représenter la profession du professionnel.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","TDDUI Auteur statut","Extension permettant de représenter la profession du professionnel.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","statutProjetPersonnalise.auteur"
 "CarePlan.status.value","CarePlan.status.value","","","",0,1,"","","","string {[]} {[]}

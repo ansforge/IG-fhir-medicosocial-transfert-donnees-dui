@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui | *Version*:2.1.0-ballot |
-| Active as of 2025-12-05 | *Computable Name*:TDDUI |
+| Active as of 2025-12-09 | *Computable Name*:TDDUI |
 
  **Brief description of this Implementation Guide**
  The Digital User File (DUI) centralizes all information concerning the person being cared for in social and medico-social facilities and services. The aim of this implementation guide is to define the specifications for DUI data transfer. 
@@ -140,7 +140,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2025-12-05T09:54:12+00:00",
+  "date" : "2025-12-09T10:26:43+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -925,20 +925,6 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "DocumentReference"
-          }
-        ],
-        "reference" : {
-          "reference" : "DocumentReference/tddui-pp-pa-documentreference-bilan-objectif-1-example"
-        },
-        "name" : "Bilan Objectif 1",
-        "description" : "Bilan de l'objectif 1 du projet personnalisé PA au format PDF",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:extension"
           }
         ],
@@ -962,20 +948,6 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "name" : "Date d’admission",
         "description" : "Date d’admission dans la structure ESSMS.",
         "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "DocumentReference"
-          }
-        ],
-        "reference" : {
-          "reference" : "DocumentReference/tddui-pp-pa-documentreference-entrant-example"
-        },
-        "name" : "Entrant Projet Personnalisé PA",
-        "description" : "Entrant Projet Personnalisé PA au format PDF",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"
       },
       {
         "extension" : [
@@ -1212,36 +1184,8 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           "reference" : "StructureDefinition/tddui-attachment"
         },
         "name" : "Pièce jointe",
-        "description" : "Pièces jointes liées à l’événement et à l'évaluation. L'extension référence le profil PDSm_SimplifiedPublish.",
+        "description" : "Ce profil permet de véhiculer des pièces jointes que ce soit pour l'évaluation, l'évènement ou le projet personnalisé. L'extension référence le profil PDSm_SimplifiedPublish.",
         "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "CarePlan"
-          }
-        ],
-        "reference" : {
-          "reference" : "CarePlan/tddui-pp-ime-careplan-example"
-        },
-        "name" : "Projet personnalisé de Hugo en IME",
-        "description" : "Exemple du projet personnalisé d'un enfant en IME",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "CarePlan"
-          }
-        ],
-        "reference" : {
-          "reference" : "CarePlan/tddui-pp-pa-careplan-example"
-        },
-        "name" : "Projet personnalisé de Mme Jeanne L.",
-        "description" : "Exemple d'un projet personnalisé PA",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise"
       },
       {
         "extension" : [
@@ -1297,6 +1241,20 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "Ressources utilisées",
         "description" : "Ressources utilisées lors de l’évènement (ex : chambre, matériel médical, véhicule).",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/tddui-status-author"
+        },
+        "name" : "TDDUI Auteur statut",
+        "description" : "Extension permettant de représenter la profession du professionnel.",
         "exampleBoolean" : false
       },
       {
@@ -1629,20 +1587,6 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/tddui-status-author"
-        },
-        "name" : "TDDUI Profession",
-        "description" : "Extension permettant de représenter la profession du professionnel.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:extension"
-          }
-        ],
-        "reference" : {
           "reference" : "StructureDefinition/tddui-profession"
         },
         "name" : "TDDUI Profession",
@@ -1891,6 +1835,20 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CarePlan"
+          }
+        ],
+        "reference" : {
+          "reference" : "CarePlan/tddui-pp-ime-careplan-example"
+        },
+        "name" : "tddui-pp-ime-careplan-example",
+        "description" : "Exemple du projet personnalisé d'un enfant en IME",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "Consent"
           }
         ],
@@ -1975,6 +1933,20 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CarePlan"
+          }
+        ],
+        "reference" : {
+          "reference" : "CarePlan/tddui-pp-pa-careplan-example"
+        },
+        "name" : "tddui-pp-pa-careplan-example",
+        "description" : "Exemple d'un projet personnalisé PA",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "Consent"
           }
         ],
@@ -1984,6 +1956,34 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "name" : "tddui-pp-pa-consent-accord-example",
         "description" : "Exemple d'un accord de la structure",
         "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "DocumentReference"
+          }
+        ],
+        "reference" : {
+          "reference" : "DocumentReference/tddui-pp-pa-documentreference-bilan-objectif-1-example"
+        },
+        "name" : "tddui-pp-pa-documentreference-bilan-objectif-1-example",
+        "description" : "Bilan de l'objectif 1 du projet personnalisé PA au format PDF",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "DocumentReference"
+          }
+        ],
+        "reference" : {
+          "reference" : "DocumentReference/tddui-pp-pa-documentreference-entrant-example"
+        },
+        "name" : "tddui-pp-pa-documentreference-entrant-example",
+        "description" : "Entrant Projet Personnalisé PA au format PDF",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"
       },
       {
         "extension" : [
@@ -2068,6 +2068,20 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "name" : "tddui-pp-pa-patient-example-pp",
         "description" : "Exemple de la ressource TDDUIPatient dans le cadre d'un projet personnalisé PA",
         "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Practitioner"
+          }
+        ],
+        "reference" : {
+          "reference" : "Practitioner/tddui-pp-pa-practitioner-ide-example"
+        },
+        "name" : "tddui-pp-pa-practitioner-ide-example",
+        "description" : "Exemple d'un IDE",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner"
       },
       {
         "extension" : [
@@ -2277,20 +2291,6 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-practitioner-example",
         "description" : "Exemple d'un professionnel de santé",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Practitioner"
-          }
-        ],
-        "reference" : {
-          "reference" : "Practitioner/tddui-practitioner-ide-pp-example"
-        },
-        "name" : "tddui-practitioner-ide-pp-example",
-        "description" : "Exemple d'un IDE",
         "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner"
       },
       {

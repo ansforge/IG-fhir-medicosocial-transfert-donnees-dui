@@ -1,10 +1,10 @@
-# Projet personnalisé de Hugo en IME - Médicosocial - Transfert de données DUI v2.1.0-ballot
+# tddui-pp-ime-careplan-example - Médicosocial - Transfert de données DUI v2.1.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Projet personnalisé de Hugo en IME**
+* **tddui-pp-ime-careplan-example**
 
-## Example CarePlan: Projet personnalisé de Hugo en IME
+## Example CarePlan: tddui-pp-ime-careplan-example
 
 Profil: [TDDUI CarePlan Projet Personalise](StructureDefinition-tddui-careplan-projet-personnalise.md)
 

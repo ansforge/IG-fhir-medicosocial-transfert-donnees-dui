@@ -10,7 +10,7 @@
   <name value="TDDUI"/>
   <title value="Médicosocial - Transfert de données DUI"/>
   <status value="active"/>
-  <date value="2025-12-05T09:54:12+00:00"/>
+  <date value="2025-12-09T10:26:43+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -500,17 +500,6 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="DocumentReference"/>
-      </extension>
-      <reference>
-        <reference value="DocumentReference/tddui-pp-pa-documentreference-bilan-objectif-1-example"/>
-      </reference>
-      <name value="Bilan Objectif 1"/>
-      <description value="Bilan de l'objectif 1 du projet personnalisé PA au format PDF"/>
-      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -530,17 +519,6 @@
       <name value="Date d’admission"/>
       <description value="Date d’admission dans la structure ESSMS."/>
       <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="DocumentReference"/>
-      </extension>
-      <reference>
-        <reference value="DocumentReference/tddui-pp-pa-documentreference-entrant-example"/>
-      </reference>
-      <name value="Entrant Projet Personnalisé PA"/>
-      <description value="Entrant Projet Personnalisé PA au format PDF"/>
-      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -726,30 +704,8 @@
         <reference value="StructureDefinition/tddui-attachment"/>
       </reference>
       <name value="Pièce jointe"/>
-      <description value="Pièces jointes liées à l’événement et à l'évaluation. L'extension référence le profil PDSm_SimplifiedPublish."/>
+      <description value="Ce profil permet de véhiculer des pièces jointes que ce soit pour l'évaluation, l'évènement ou le projet personnalisé. L'extension référence le profil PDSm_SimplifiedPublish."/>
       <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CarePlan"/>
-      </extension>
-      <reference>
-        <reference value="CarePlan/tddui-pp-ime-careplan-example"/>
-      </reference>
-      <name value="Projet personnalisé de Hugo en IME"/>
-      <description value="Exemple du projet personnalisé d'un enfant en IME"/>
-      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CarePlan"/>
-      </extension>
-      <reference>
-        <reference value="CarePlan/tddui-pp-pa-careplan-example"/>
-      </reference>
-      <name value="Projet personnalisé de Mme Jeanne L."/>
-      <description value="Exemple d'un projet personnalisé PA"/>
-      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -793,6 +749,17 @@
       </reference>
       <name value="Ressources utilisées"/>
       <description value="Ressources utilisées lors de l’évènement (ex : chambre, matériel médical, véhicule)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-status-author"/>
+      </reference>
+      <name value="TDDUI Auteur statut"/>
+      <description value="Extension permettant de représenter la profession du professionnel."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1053,17 +1020,6 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/tddui-status-author"/>
-      </reference>
-      <name value="TDDUI Profession"/>
-      <description value="Extension permettant de représenter la profession du professionnel."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/tddui-profession"/>
       </reference>
       <name value="TDDUI Profession"/>
@@ -1259,6 +1215,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CarePlan"/>
+      </extension>
+      <reference>
+        <reference value="CarePlan/tddui-pp-ime-careplan-example"/>
+      </reference>
+      <name value="tddui-pp-ime-careplan-example"/>
+      <description value="Exemple du projet personnalisé d'un enfant en IME"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Consent"/>
       </extension>
       <reference>
@@ -1325,6 +1292,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CarePlan"/>
+      </extension>
+      <reference>
+        <reference value="CarePlan/tddui-pp-pa-careplan-example"/>
+      </reference>
+      <name value="tddui-pp-pa-careplan-example"/>
+      <description value="Exemple d'un projet personnalisé PA"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Consent"/>
       </extension>
       <reference>
@@ -1333,6 +1311,28 @@
       <name value="tddui-pp-pa-consent-accord-example"/>
       <description value="Exemple d'un accord de la structure"/>
       <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DocumentReference"/>
+      </extension>
+      <reference>
+        <reference value="DocumentReference/tddui-pp-pa-documentreference-bilan-objectif-1-example"/>
+      </reference>
+      <name value="tddui-pp-pa-documentreference-bilan-objectif-1-example"/>
+      <description value="Bilan de l'objectif 1 du projet personnalisé PA au format PDF"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DocumentReference"/>
+      </extension>
+      <reference>
+        <reference value="DocumentReference/tddui-pp-pa-documentreference-entrant-example"/>
+      </reference>
+      <name value="tddui-pp-pa-documentreference-entrant-example"/>
+      <description value="Entrant Projet Personnalisé PA au format PDF"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1399,6 +1399,17 @@
       <name value="tddui-pp-pa-patient-example-pp"/>
       <description value="Exemple de la ressource TDDUIPatient dans le cadre d'un projet personnalisé PA"/>
       <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/tddui-pp-pa-practitioner-ide-example"/>
+      </reference>
+      <name value="tddui-pp-pa-practitioner-ide-example"/>
+      <description value="Exemple d'un IDE"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1563,17 +1574,6 @@
       </reference>
       <name value="tddui-practitioner-example"/>
       <description value="Exemple d'un professionnel de santé"/>
-      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Practitioner"/>
-      </extension>
-      <reference>
-        <reference value="Practitioner/tddui-practitioner-ide-pp-example"/>
-      </reference>
-      <name value="tddui-practitioner-ide-pp-example"/>
-      <description value="Exemple d'un IDE"/>
       <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner"/>
     </resource>
     <resource>

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-care-plan-supportingInfo-cs | *Version*:2.1.0-ballot |
-| Active as of 2025-12-05 | *Computable Name*:TDDUICarePlanSupportingInfoCS |
+| Active as of 2025-12-09 | *Computable Name*:TDDUICarePlanSupportingInfoCS |
 
  
 CodeSystem définissant les types de notes pour l'élément CarePlan.supportingInfo. 
@@ -31,7 +31,7 @@ CodeSystem définissant les types de notes pour l'élément CarePlan.supportingI
   "name" : "TDDUICarePlanSupportingInfoCS",
   "title" : "TDDUI CarePlan supportingInfo CodeSystem",
   "status" : "active",
-  "date" : "2025-12-05T09:54:12+00:00",
+  "date" : "2025-12-09T10:26:43+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

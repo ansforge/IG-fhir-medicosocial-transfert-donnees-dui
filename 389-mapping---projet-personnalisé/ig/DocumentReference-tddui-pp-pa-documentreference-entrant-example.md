@@ -1,10 +1,10 @@
-# Entrant Projet Personnalisé PA - Médicosocial - Transfert de données DUI v2.1.0-ballot
+# tddui-pp-pa-documentreference-entrant-example - Médicosocial - Transfert de données DUI v2.1.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Entrant Projet Personnalisé PA**
+* **tddui-pp-pa-documentreference-entrant-example**
 
-## Example DocumentReference: Entrant Projet Personnalisé PA
+## Example DocumentReference: tddui-pp-pa-documentreference-entrant-example
 
 Profil: [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md)
 

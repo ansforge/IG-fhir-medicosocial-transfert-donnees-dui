@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "TDDUI"] ; # 
   fhir:title [ fhir:v "Médicosocial - Transfert de données DUI"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-12-05T09:54:12+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-12-09T10:26:43+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -1419,28 +1419,6 @@
          ] ;
          fhir:value [
            a fhir:String ;
-           fhir:v "DocumentReference"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/DocumentReference/tddui-pp-pa-documentreference-bilan-objectif-1-example> ;
-         fhir:reference [ fhir:v "DocumentReference/tddui-pp-pa-documentreference-bilan-objectif-1-example" ]
-       ] ;
-       fhir:name [ fhir:v "Bilan Objectif 1" ] ;
-       fhir:description [ fhir:v "Bilan de l'objectif 1 du projet personnalisé PA au format PDF" ] ;
-       fhir:example [
-         a fhir:Canonical ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
            fhir:v "StructureDefinition:extension"
          ]
        ] ) ;
@@ -1474,28 +1452,6 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "DocumentReference"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/DocumentReference/tddui-pp-pa-documentreference-entrant-example> ;
-         fhir:reference [ fhir:v "DocumentReference/tddui-pp-pa-documentreference-entrant-example" ]
-       ] ;
-       fhir:name [ fhir:v "Entrant Projet Personnalisé PA" ] ;
-       fhir:description [ fhir:v "Entrant Projet Personnalisé PA au format PDF" ] ;
-       fhir:example [
-         a fhir:Canonical ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference>
        ]
      ] [
        fhir:extension ( [
@@ -1849,54 +1805,10 @@
          fhir:reference [ fhir:v "StructureDefinition/tddui-attachment" ]
        ] ;
        fhir:name [ fhir:v "Pièce jointe" ] ;
-       fhir:description [ fhir:v "Pièces jointes liées à l’événement et à l'évaluation. L'extension référence le profil PDSm_SimplifiedPublish." ] ;
+       fhir:description [ fhir:v "Ce profil permet de véhiculer des pièces jointes que ce soit pour l'évaluation, l'évènement ou le projet personnalisé. L'extension référence le profil PDSm_SimplifiedPublish." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "CarePlan"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CarePlan/tddui-pp-ime-careplan-example> ;
-         fhir:reference [ fhir:v "CarePlan/tddui-pp-ime-careplan-example" ]
-       ] ;
-       fhir:name [ fhir:v "Projet personnalisé de Hugo en IME" ] ;
-       fhir:description [ fhir:v "Exemple du projet personnalisé d'un enfant en IME" ] ;
-       fhir:example [
-         a fhir:Canonical ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "CarePlan"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CarePlan/tddui-pp-pa-careplan-example> ;
-         fhir:reference [ fhir:v "CarePlan/tddui-pp-pa-careplan-example" ]
-       ] ;
-       fhir:name [ fhir:v "Projet personnalisé de Mme Jeanne L." ] ;
-       fhir:description [ fhir:v "Exemple d'un projet personnalisé PA" ] ;
-       fhir:example [
-         a fhir:Canonical ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise>
        ]
      ] [
        fhir:extension ( [
@@ -1978,6 +1890,27 @@
        ] ;
        fhir:name [ fhir:v "Ressources utilisées" ] ;
        fhir:description [ fhir:v "Ressources utilisées lors de l’évènement (ex : chambre, matériel médical, véhicule)." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-status-author> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-status-author" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Auteur statut" ] ;
+       fhir:description [ fhir:v "Extension permettant de représenter la profession du professionnel." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -2477,27 +2410,6 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-status-author> ;
-         fhir:reference [ fhir:v "StructureDefinition/tddui-status-author" ]
-       ] ;
-       fhir:name [ fhir:v "TDDUI Profession" ] ;
-       fhir:description [ fhir:v "Extension permettant de représenter la profession du professionnel." ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:extension"
-         ]
-       ] ) ;
-       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-profession> ;
          fhir:reference [ fhir:v "StructureDefinition/tddui-profession" ]
        ] ;
@@ -2877,6 +2789,28 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "CarePlan"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CarePlan/tddui-pp-ime-careplan-example> ;
+         fhir:reference [ fhir:v "CarePlan/tddui-pp-ime-careplan-example" ]
+       ] ;
+       fhir:name [ fhir:v "tddui-pp-ime-careplan-example" ] ;
+       fhir:description [ fhir:v "Exemple du projet personnalisé d'un enfant en IME" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "Consent"
          ]
        ] ) ;
@@ -3009,6 +2943,28 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "CarePlan"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CarePlan/tddui-pp-pa-careplan-example> ;
+         fhir:reference [ fhir:v "CarePlan/tddui-pp-pa-careplan-example" ]
+       ] ;
+       fhir:name [ fhir:v "tddui-pp-pa-careplan-example" ] ;
+       fhir:description [ fhir:v "Exemple d'un projet personnalisé PA" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "Consent"
          ]
        ] ) ;
@@ -3022,6 +2978,50 @@
          a fhir:Canonical ;
          fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord"^^xsd:anyURI ;
          fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "DocumentReference"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/DocumentReference/tddui-pp-pa-documentreference-bilan-objectif-1-example> ;
+         fhir:reference [ fhir:v "DocumentReference/tddui-pp-pa-documentreference-bilan-objectif-1-example" ]
+       ] ;
+       fhir:name [ fhir:v "tddui-pp-pa-documentreference-bilan-objectif-1-example" ] ;
+       fhir:description [ fhir:v "Bilan de l'objectif 1 du projet personnalisé PA au format PDF" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "DocumentReference"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/DocumentReference/tddui-pp-pa-documentreference-entrant-example> ;
+         fhir:reference [ fhir:v "DocumentReference/tddui-pp-pa-documentreference-entrant-example" ]
+       ] ;
+       fhir:name [ fhir:v "tddui-pp-pa-documentreference-entrant-example" ] ;
+       fhir:description [ fhir:v "Entrant Projet Personnalisé PA au format PDF" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference>
        ]
      ] [
        fhir:extension ( [
@@ -3154,6 +3154,28 @@
          a fhir:Canonical ;
          fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient"^^xsd:anyURI ;
          fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Practitioner"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Practitioner/tddui-pp-pa-practitioner-ide-example> ;
+         fhir:reference [ fhir:v "Practitioner/tddui-pp-pa-practitioner-ide-example" ]
+       ] ;
+       fhir:name [ fhir:v "tddui-pp-pa-practitioner-ide-example" ] ;
+       fhir:description [ fhir:v "Exemple d'un IDE" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner>
        ]
      ] [
        fhir:extension ( [
@@ -3480,28 +3502,6 @@
        ] ;
        fhir:name [ fhir:v "tddui-practitioner-example" ] ;
        fhir:description [ fhir:v "Exemple d'un professionnel de santé" ] ;
-       fhir:example [
-         a fhir:Canonical ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "Practitioner"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Practitioner/tddui-practitioner-ide-pp-example> ;
-         fhir:reference [ fhir:v "Practitioner/tddui-practitioner-ide-pp-example" ]
-       ] ;
-       fhir:name [ fhir:v "tddui-practitioner-ide-pp-example" ] ;
-       fhir:description [ fhir:v "Exemple d'un IDE" ] ;
        fhir:example [
          a fhir:Canonical ;
          fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner"^^xsd:anyURI ;
