@@ -12,7 +12,7 @@ object "**TDDUIPractitioner**" as TDDUIPractitioner #b3de69 {
     synthesePreparationBilan.auteur
 }
 
-object "**TDDUIPatient**" as TDDUIPatient #fdb462 {
+object "**TDDUIPatient/TDDUIPatientINS**" as TDDUIPatient #fdb462 {
     synthesePreparationBilan.auteur
 }
 
@@ -25,10 +25,10 @@ object "**TDDUICarePlanProjetPersonnalise**" as TDDUICarePlanProjetPersonnalise_
 }
 
 map "**Bilan : TDDUITaskBilan**" as Bilan #d9d9d9 {
-    pieceJointeBilan => <&plus> pieceJointeBilan
     idBilan => identifier
     categorieBilan => code
     perimetreBilan => <&layers> input:perimetre
+    pieceJointeBilan => <&plus> input:pieceJointe
     problematiqueGlobaleUsager => <&layers> input:problematique
     inviteBilan => <&layers> input:invite
     dateProchainBilan => <&layers> input:dateProchainBilan
@@ -37,10 +37,9 @@ map "**Bilan : TDDUITaskBilan**" as Bilan #d9d9d9 {
     synthesePreparationBilan => <&layers> input:synthesePreparationBilan
 }
 
-Bilan::synthesePreparationBilan -u-> synthesePreparationBilan
+Bilan::synthesePreparationBilan -down-> synthesePreparationBilan
 synthesePreparationBilan --> TDDUIPractitioner : author
 synthesePreparationBilan --> TDDUIPatient : author
-synthesePreparationBilan -> FRCoreRelatedPerson : author
-Bilan -d-> TDDUICarePlanProjetPersonnalise_basedOn : basedOn
-
+synthesePreparationBilan --> FRCoreRelatedPerson : author
+Bilan -u-> TDDUICarePlanProjetPersonnalise_basedOn : basedOn
 @enduml

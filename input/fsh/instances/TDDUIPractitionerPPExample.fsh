@@ -1,4 +1,4 @@
-Instance: tddui-practitioner-ide-pp-example
+Instance: tddui-pp-pa-practitioner-ide-example
 InstanceOf: TDDUIPractitioner
 Usage: #example
 Description: "Exemple d'un IDE"

@@ -1,6 +1,6 @@
 Extension: TDDUIStatusAuthor
 Id: tddui-status-author
-Title: "TDDUI Profession"
+Title: "TDDUI Auteur statut"
 Description: "Extension permettant de représenter la profession du professionnel."
 Context: Goal.lifecycleStatus, CarePlan.status, Task.status
 

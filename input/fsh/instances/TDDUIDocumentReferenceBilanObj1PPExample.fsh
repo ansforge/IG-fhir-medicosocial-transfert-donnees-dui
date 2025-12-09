@@ -1,6 +1,5 @@
 Instance: tddui-pp-pa-documentreference-bilan-objectif-1-example
 InstanceOf: TDDUIDocumentReference
-Title: "Bilan Objectif 1"
 Description: "Bilan de l'objectif 1 du projet personnalisé PA au format PDF"
 
 * masterIdentifier.value = "3480787529/123456789-PPER-bilanObj-1234"

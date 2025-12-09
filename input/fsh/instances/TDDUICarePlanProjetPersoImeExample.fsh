@@ -1,6 +1,7 @@
 Instance: tddui-pp-ime-careplan-example
 InstanceOf: TDDUICarePlanProjetPersonnalise
 Usage: #example
+Title: "tddui-pp-ime-careplan-example"
 Description: "Exemple du projet personnalisé d'un enfant en IME"
 
 * identifier.value = "3480787529/123456-PPER-12"

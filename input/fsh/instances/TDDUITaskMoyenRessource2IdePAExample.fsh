@@ -3,7 +3,7 @@ InstanceOf: TDDUITaskMoyenRessource
 Usage: #example
 Description: "Exemple des moyens et ressources de l'objectif 2 dans le cadre du projet personnalisé PA." 
 
-* identifier.value = "3480787529/123456789-MORE-1236"
+* identifier.value = "3480787529/123456789-MORE-123615"
 * identifier.system = "https://identifiant-medicosocial-moyenressource.esante.gouv.fr"
 
 * description  = "Carnet de suivi poids"

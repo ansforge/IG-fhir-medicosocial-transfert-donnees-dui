@@ -1,6 +1,7 @@
 Instance: tddui-pp-pa-careplan-example
 InstanceOf: TDDUICarePlanProjetPersonnalise
 Usage: #example
+Title: "tddui-pp-pa-careplan-example"
 Description: "Exemple d'un projet personnalisé PA"
 
 * identifier.value = "3480787529/123456789-PPER-1234"

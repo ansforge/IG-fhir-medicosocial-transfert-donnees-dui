@@ -20,9 +20,9 @@ map "**Besoin : TDDUIServiceRequestBesoin**" as Besoin #fccde5 {
     pieceJointeBesoin => <&plus> pieceJointeBesoin
     idBesoin => identifier
     typeBesoin => category
-    code *-> code
+    code *--> code
     orderDetail *-> orderDetail
-    note *-> note
+    note *--> note
 }
 
 Besoin -u-> TDDUICarePlanProjetPersonnalise_basedOn : basedOn
