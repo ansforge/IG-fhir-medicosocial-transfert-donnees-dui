@@ -1,9 +1,9 @@
 TDDUI : Validation Results
 =========================================
 
-err = 111, warn = 141, info = 97
+err = 111, warn = 139, info = 96
 IG Publisher Version: 2.0.28
-Generated Wed Dec 10 10:54:59 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.tddui#2.1.0-ballot (canonical = https://interop.esante.gouv.fr/ig/fhir/tddui)
+Generated Wed Dec 10 17:10:24 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.tddui#2.1.0-ballot (canonical = https://interop.esante.gouv.fr/ig/fhir/tddui)
  Build Errors : 1 / 6 / 0
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Bundle-ExampleTDDUIBundle : 0 / 8 / 35
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CapabilityStatement-TDDUIConsommateur : 0 / 1 / 1
@@ -17,7 +17,7 @@ Generated Wed Dec 10 10:54:59 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.tddui
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CodeSystem-input-tddui-task-prestation-codesystem : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CodeSystem-input-tddui-task-transport-codesystem : 0 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CodeSystem-output-tddui-task-bilan-codesystem : 0 / 0 / 1
- /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CodeSystem-tddui-discriminator-cs : 0 / 2 / 2
+ /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CodeSystem-tddui-discriminator-cs : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CodeSystem-tddui-encounter-identifier : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CodeSystem-tddui-identifier : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Consent-tddui-pp-ime-consent-accord-example : 1 / 1 / 1
@@ -166,9 +166,6 @@ WARNING: CarePlan/tddui-pp-pa-careplan-example: CarePlan.identifier[0].system: N
 WARNING: CodeSystem/input-tddui-task-transport-codesystem: CodeSystem.concept[7].display: value should not start or finish with whitespace 'Accompagnement nécessaire ou non de l'usager. '
 == fsh-generated/resources/CodeSystem-output-tddui-task-bilan-codesystem.json ==
 == fsh-generated/resources/CodeSystem-tddui-discriminator-cs.json ==
-INFORMATION: CodeSystem/tddui-discriminator-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
-WARNING: CodeSystem/tddui-discriminator-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
-WARNING: CodeSystem/tddui-discriminator-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-tddui-encounter-identifier.json ==
 == fsh-generated/resources/CodeSystem-tddui-identifier.json ==
 == fsh-generated/resources/Consent-tddui-pp-ime-consent-accord-example.json ==

@@ -29,12 +29,18 @@ CodeSystem définissant les codes discriminants.
 {
   "resourceType" : "CodeSystem",
   "id" : "tddui-discriminator-cs",
+  "meta" : {
+    "profile" : [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs",
   "version" : "2.1.0-ballot",
   "name" : "TDDUIDiscriminatorCS",
   "title" : "TDDUI Discriminator CodeSystem",
   "status" : "active",
-  "date" : "2025-12-10T10:50:40+00:00",
+  "experimental" : false,
+  "date" : "2025-12-10T17:05:10+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -59,6 +65,8 @@ CodeSystem définissant les codes discriminants.
       ]
     }
   ],
+  "caseSensitive" : true,
+  "compositional" : false,
   "content" : "complete",
   "count" : 7,
   "concept" : [
