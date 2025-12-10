@@ -63,11 +63,11 @@
     "name" : "OutputTDDUITaskBilanCodeSystem"
   },
   {
-    "id" : "tddui-care-plan-supportingInfo-cs",
+    "id" : "tddui-discriminator-cs",
     "type" : "CodeSystem",
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-care-plan-supportingInfo-cs",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs",
     "version" : "2.1.0-ballot",
-    "name" : "TDDUICarePlanSupportingInfoCS"
+    "name" : "TDDUIDiscriminatorCS"
   },
   {
     "id" : "tddui-encounter-identifier",
@@ -75,13 +75,6 @@
     "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier",
     "version" : "2.1.0-ballot",
     "name" : "TDDUIEncounterIdentifier"
-  },
-  {
-    "id" : "tddui-goal-note-cs",
-    "type" : "CodeSystem",
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-goal-note-cs",
-    "version" : "2.1.0-ballot",
-    "name" : "TDDUIGoalNoteCS"
   },
   {
     "id" : "tddui-identifier",
@@ -150,13 +143,6 @@
     "name" : "TDDUIBundle"
   },
   {
-    "id" : "tddui-care-plan-supportinginfo",
-    "type" : "StructureDefinition",
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-care-plan-supportinginfo",
-    "version" : "2.1.0-ballot",
-    "name" : "TDDUICarePlanSupportingInfo"
-  },
-  {
     "id" : "tddui-careplan-projet-personnalise",
     "type" : "StructureDefinition",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise",
@@ -183,6 +169,13 @@
     "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord",
     "version" : "2.1.0-ballot",
     "name" : "TDDUIConsentAccord"
+  },
+  {
+    "id" : "tddui-discriminator",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator",
+    "version" : "2.1.0-ballot",
+    "name" : "TDDUIDiscriminator"
   },
   {
     "id" : "tddui-document-reference",
@@ -267,13 +260,6 @@
     "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente",
     "version" : "2.1.0-ballot",
     "name" : "TDDUIGoalAttente"
-  },
-  {
-    "id" : "tddui-goal-note",
-    "type" : "StructureDefinition",
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-note",
-    "version" : "2.1.0-ballot",
-    "name" : "TDDUIGoalNote"
   },
   {
     "id" : "tddui-goal-objectif",
@@ -444,11 +430,25 @@
     "name" : "TDDUICarePlanSupportingInfoVS"
   },
   {
-    "id" : "tddui-goal-note-vs",
+    "id" : "tddui-discriminator-vs",
     "type" : "ValueSet",
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-goal-note-vs",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-discriminator-vs",
     "version" : "2.1.0-ballot",
-    "name" : "TDDUIGoalNoteVS"
+    "name" : "TDDUIDiscriminatorVS"
+  },
+  {
+    "id" : "tddui-goal-attente-note-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-goal-attente-note-vs",
+    "version" : "2.1.0-ballot",
+    "name" : "TDDUIGoalAttenteNoteVS"
+  },
+  {
+    "id" : "tddui-goal-objectif-note-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-goal-objectif-note-vs",
+    "version" : "2.1.0-ballot",
+    "name" : "TDDUIGoalObjectifNoteVS"
   },
   {
     "id" : "tddui-serafin-valueset",

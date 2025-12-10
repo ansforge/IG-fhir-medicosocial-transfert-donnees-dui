@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise | *Version*:2.1.0-ballot |
-| Active as of 2025-12-09 | *Computable Name*:TDDUICarePlanProjetPersonnalise |
+| Active as of 2025-12-10 | *Computable Name*:TDDUICarePlanProjetPersonnalise |
 
  
 Profil de la ressource CarePlan représentant le projet personnalisé d'un usager. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
   "name" : "TDDUICarePlanProjetPersonnalise",
   "title" : "TDDUI CarePlan Projet Personalise",
   "status" : "active",
-  "date" : "2025-12-09T10:26:43+00:00",
+  "date" : "2025-12-10T10:50:40+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -315,12 +315,32 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
           "discriminator" : [
             {
               "type" : "pattern",
-              "path" : "display"
+              "path" : "extension('https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator').value"
             }
           ],
           "rules" : "open"
         },
         "min" : 1
+      },
+      {
+        "id" : "CarePlan.supportingInfo.extension",
+        "path" : "CarePlan.supportingInfo.extension",
+        "min" : 1
+      },
+      {
+        "id" : "CarePlan.supportingInfo.extension:TDDUIDiscriminator",
+        "path" : "CarePlan.supportingInfo.extension",
+        "sliceName" : "TDDUIDiscriminator",
+        "min" : 1,
+        "max" : "2",
+        "type" : [
+          {
+            "code" : "Extension",
+            "profile" : [
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator"
+            ]
+          }
+        ]
       },
       {
         "id" : "CarePlan.supportingInfo:accordUsager",
@@ -345,10 +365,35 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
         ]
       },
       {
-        "id" : "CarePlan.supportingInfo:accordUsager.display",
-        "path" : "CarePlan.supportingInfo.display",
+        "id" : "CarePlan.supportingInfo:accordUsager.extension:TDDUIDiscriminator",
+        "path" : "CarePlan.supportingInfo.extension",
+        "sliceName" : "TDDUIDiscriminator",
         "min" : 1,
-        "patternString" : "Consentement usager"
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Extension",
+            "profile" : [
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "CarePlan.supportingInfo:accordUsager.extension:TDDUIDiscriminator.value[x]",
+        "path" : "CarePlan.supportingInfo.extension.value[x]",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs",
+              "code" : "accordUsager"
+            }
+          ]
+        },
+        "binding" : {
+          "strength" : "required",
+          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-care-plan-supportingInfo-vs"
+        }
       },
       {
         "id" : "CarePlan.supportingInfo:accordStructure",
@@ -373,10 +418,35 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
         ]
       },
       {
-        "id" : "CarePlan.supportingInfo:accordStructure.display",
-        "path" : "CarePlan.supportingInfo.display",
+        "id" : "CarePlan.supportingInfo:accordStructure.extension:TDDUIDiscriminator",
+        "path" : "CarePlan.supportingInfo.extension",
+        "sliceName" : "TDDUIDiscriminator",
         "min" : 1,
-        "patternString" : "Consentement structure"
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Extension",
+            "profile" : [
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "CarePlan.supportingInfo:accordStructure.extension:TDDUIDiscriminator.value[x]",
+        "path" : "CarePlan.supportingInfo.extension.value[x]",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs",
+              "code" : "accordStructure"
+            }
+          ]
+        },
+        "binding" : {
+          "strength" : "required",
+          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-care-plan-supportingInfo-vs"
+        }
       },
       {
         "id" : "CarePlan.note",

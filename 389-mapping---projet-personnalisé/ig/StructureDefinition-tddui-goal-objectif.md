@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif | *Version*:2.1.0-ballot |
-| Active as of 2025-12-09 | *Computable Name*:TDDUIGoalObjectif |
+| Active as of 2025-12-10 | *Computable Name*:TDDUIGoalObjectif |
 
  
 Profil de la ressource Goal permettant de représenter les résultats à atteindre dans le cadre du projet personnalisé. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-objectif.
   "name" : "TDDUIGoalObjectif",
   "title" : "TDDUI Goal Objectif",
   "status" : "active",
-  "date" : "2025-12-09T10:26:43+00:00",
+  "date" : "2025-12-10T10:50:40+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -438,7 +438,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-objectif.
           "discriminator" : [
             {
               "type" : "pattern",
-              "path" : "extension('https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-note').value"
+              "path" : "extension('https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator').value"
             }
           ],
           "rules" : "open"
@@ -451,16 +451,16 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-objectif.
         "min" : 1
       },
       {
-        "id" : "Goal.note.extension:TDDUIGoalNoteExtension",
+        "id" : "Goal.note.extension:TDDUIDiscriminator",
         "path" : "Goal.note.extension",
-        "sliceName" : "TDDUIGoalNoteExtension",
+        "sliceName" : "TDDUIDiscriminator",
         "min" : 1,
         "max" : "3",
         "type" : [
           {
             "code" : "Extension",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-note"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator"
             ]
           }
         ]
@@ -474,24 +474,35 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-objectif.
         "max" : "1"
       },
       {
-        "id" : "Goal.note:titreObjectif.extension:TDDUIGoalNoteExtension",
+        "id" : "Goal.note:titreObjectif.extension:TDDUIDiscriminator",
         "path" : "Goal.note.extension",
-        "sliceName" : "TDDUIGoalNoteExtension",
+        "sliceName" : "TDDUIDiscriminator",
         "min" : 1,
         "max" : "1",
         "type" : [
           {
             "code" : "Extension",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-note"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator"
             ]
           }
         ]
       },
       {
-        "id" : "Goal.note:titreObjectif.extension:TDDUIGoalNoteExtension.value[x]",
+        "id" : "Goal.note:titreObjectif.extension:TDDUIDiscriminator.value[x]",
         "path" : "Goal.note.extension.value[x]",
-        "patternCode" : "titreObjectif"
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs",
+              "code" : "titreObjectif"
+            }
+          ]
+        },
+        "binding" : {
+          "strength" : "required",
+          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-goal-objectif-note-vs"
+        }
       },
       {
         "id" : "Goal.note:titreObjectif.text",
@@ -512,24 +523,35 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-objectif.
         "max" : "1"
       },
       {
-        "id" : "Goal.note:avisUsagerObjectif.extension:TDDUIGoalNoteExtension",
+        "id" : "Goal.note:avisUsagerObjectif.extension:TDDUIDiscriminator",
         "path" : "Goal.note.extension",
-        "sliceName" : "TDDUIGoalNoteExtension",
+        "sliceName" : "TDDUIDiscriminator",
         "min" : 1,
         "max" : "1",
         "type" : [
           {
             "code" : "Extension",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-note"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator"
             ]
           }
         ]
       },
       {
-        "id" : "Goal.note:avisUsagerObjectif.extension:TDDUIGoalNoteExtension.value[x]",
+        "id" : "Goal.note:avisUsagerObjectif.extension:TDDUIDiscriminator.value[x]",
         "path" : "Goal.note.extension.value[x]",
-        "patternCode" : "avisUsagerObjectif"
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs",
+              "code" : "avisUsagerObjectif"
+            }
+          ]
+        },
+        "binding" : {
+          "strength" : "required",
+          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-goal-objectif-note-vs"
+        }
       },
       {
         "id" : "Goal.note:avisUsagerObjectif.text",
@@ -550,24 +572,35 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-objectif.
         "max" : "1"
       },
       {
-        "id" : "Goal.note:strategieMiseEnOeuvreObjectif.extension:TDDUIGoalNoteExtension",
+        "id" : "Goal.note:strategieMiseEnOeuvreObjectif.extension:TDDUIDiscriminator",
         "path" : "Goal.note.extension",
-        "sliceName" : "TDDUIGoalNoteExtension",
+        "sliceName" : "TDDUIDiscriminator",
         "min" : 1,
         "max" : "1",
         "type" : [
           {
             "code" : "Extension",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-note"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator"
             ]
           }
         ]
       },
       {
-        "id" : "Goal.note:strategieMiseEnOeuvreObjectif.extension:TDDUIGoalNoteExtension.value[x]",
+        "id" : "Goal.note:strategieMiseEnOeuvreObjectif.extension:TDDUIDiscriminator.value[x]",
         "path" : "Goal.note.extension.value[x]",
-        "patternCode" : "strategieMiseEnOeuvreObjectif"
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs",
+              "code" : "strategieMiseEnOeuvreObjectif"
+            }
+          ]
+        },
+        "binding" : {
+          "strength" : "required",
+          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-goal-objectif-note-vs"
+        }
       },
       {
         "id" : "Goal.note:strategieMiseEnOeuvreObjectif.text",

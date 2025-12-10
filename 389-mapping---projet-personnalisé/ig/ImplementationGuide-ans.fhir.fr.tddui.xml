@@ -10,7 +10,7 @@
   <name value="TDDUI"/>
   <title value="Médicosocial - Transfert de données DUI"/>
   <status value="active"/>
-  <date value="2025-12-09T10:26:43+00:00"/>
+  <date value="2025-12-10T10:50:40+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -786,28 +786,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/tddui-care-plan-supportinginfo"/>
-      </reference>
-      <name value="TDDUI CarePlan SupportingInfo"/>
-      <description value="Extension pour discriminer l'élément CarePlan.supportingInfo."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/tddui-care-plan-supportingInfo-cs"/>
-      </reference>
-      <name value="TDDUI CarePlan supportingInfo CodeSystem"/>
-      <description value="CodeSystem définissant les types de notes pour l'élément CarePlan.supportingInfo."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -826,6 +804,39 @@
       </reference>
       <name value="TDDUI Consent Accord"/>
       <description value="Profil de la ressource Consent permettant de représenter l'accord de l'usager, de son entourage ou de la structure."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/tddui-discriminator-cs"/>
+      </reference>
+      <name value="TDDUI Discriminator CodeSystem"/>
+      <description value="CodeSystem définissant les codes discriminants."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-discriminator"/>
+      </reference>
+      <name value="TDDUI Discriminator Extension"/>
+      <description value="Extension pour discriminer les éléments CarePlan.supportingInfo et Goal.note."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/tddui-discriminator-vs"/>
+      </reference>
+      <name value="TDDUI Discriminator ValueSet"/>
+      <description value="ValueSet définissant les codes discriminants."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -907,34 +918,12 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/tddui-goal-note"/>
-      </reference>
-      <name value="TDDUI Goal Note"/>
-      <description value="Extension pour discriminer l'élément Goal.note."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/tddui-goal-note-cs"/>
-      </reference>
-      <name value="TDDUI Goal Note CodeSystem"/>
-      <description value="CodeSystem définissant les types de notes pour l'élément Goal.note"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/tddui-goal-note-vs"/>
+        <reference value="ValueSet/tddui-goal-attente-note-vs"/>
       </reference>
-      <name value="TDDUI Goal Note ValueSet"/>
+      <name value="TDDUI Goal Attente Note ValueSet"/>
       <description value="ValueSet définissant les types de notes pour l'élément Goal.note."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -947,6 +936,17 @@
       </reference>
       <name value="TDDUI Goal Objectif"/>
       <description value="Profil de la ressource Goal permettant de représenter les résultats à atteindre dans le cadre du projet personnalisé."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/tddui-goal-objectif-note-vs"/>
+      </reference>
+      <name value="TDDUI Goal Objectif Note ValueSet"/>
+      <description value="ValueSet définissant les types de notes pour l'élément Goal.note."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

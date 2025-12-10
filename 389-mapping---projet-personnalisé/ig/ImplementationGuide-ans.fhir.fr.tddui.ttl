@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "TDDUI"] ; # 
   fhir:title [ fhir:v "Médicosocial - Transfert de données DUI"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-12-09T10:26:43+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-12-10T10:50:40+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -1965,48 +1965,6 @@
          ] ;
          fhir:value [
            a fhir:String ;
-           fhir:v "StructureDefinition:extension"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-care-plan-supportinginfo> ;
-         fhir:reference [ fhir:v "StructureDefinition/tddui-care-plan-supportinginfo" ]
-       ] ;
-       fhir:name [ fhir:v "TDDUI CarePlan SupportingInfo" ] ;
-       fhir:description [ fhir:v "Extension pour discriminer l'élément CarePlan.supportingInfo." ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "CodeSystem"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-care-plan-supportingInfo-cs> ;
-         fhir:reference [ fhir:v "CodeSystem/tddui-care-plan-supportingInfo-cs" ]
-       ] ;
-       fhir:name [ fhir:v "TDDUI CarePlan supportingInfo CodeSystem" ] ;
-       fhir:description [ fhir:v "CodeSystem définissant les types de notes pour l'élément CarePlan.supportingInfo." ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
            fhir:v "ValueSet"
          ]
        ] ) ;
@@ -2037,6 +1995,69 @@
        ] ;
        fhir:name [ fhir:v "TDDUI Consent Accord" ] ;
        fhir:description [ fhir:v "Profil de la ressource Consent permettant de représenter l'accord de l'usager, de son entourage ou de la structure." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/tddui-discriminator-cs" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Discriminator CodeSystem" ] ;
+       fhir:description [ fhir:v "CodeSystem définissant les codes discriminants." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-discriminator" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Discriminator Extension" ] ;
+       fhir:description [ fhir:v "Extension pour discriminer les éléments CarePlan.supportingInfo et Goal.note." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-discriminator-vs> ;
+         fhir:reference [ fhir:v "ValueSet/tddui-discriminator-vs" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Discriminator ValueSet" ] ;
+       fhir:description [ fhir:v "ValueSet définissant les codes discriminants." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -2196,56 +2217,14 @@
          ] ;
          fhir:value [
            a fhir:String ;
-           fhir:v "StructureDefinition:extension"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-note> ;
-         fhir:reference [ fhir:v "StructureDefinition/tddui-goal-note" ]
-       ] ;
-       fhir:name [ fhir:v "TDDUI Goal Note" ] ;
-       fhir:description [ fhir:v "Extension pour discriminer l'élément Goal.note." ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "CodeSystem"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-goal-note-cs> ;
-         fhir:reference [ fhir:v "CodeSystem/tddui-goal-note-cs" ]
-       ] ;
-       fhir:name [ fhir:v "TDDUI Goal Note CodeSystem" ] ;
-       fhir:description [ fhir:v "CodeSystem définissant les types de notes pour l'élément Goal.note" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
            fhir:v "ValueSet"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-goal-note-vs> ;
-         fhir:reference [ fhir:v "ValueSet/tddui-goal-note-vs" ]
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-goal-attente-note-vs> ;
+         fhir:reference [ fhir:v "ValueSet/tddui-goal-attente-note-vs" ]
        ] ;
-       fhir:name [ fhir:v "TDDUI Goal Note ValueSet" ] ;
+       fhir:name [ fhir:v "TDDUI Goal Attente Note ValueSet" ] ;
        fhir:description [ fhir:v "ValueSet définissant les types de notes pour l'élément Goal.note." ] ;
        fhir:example [
          a fhir:Boolean ;
@@ -2268,6 +2247,27 @@
        ] ;
        fhir:name [ fhir:v "TDDUI Goal Objectif" ] ;
        fhir:description [ fhir:v "Profil de la ressource Goal permettant de représenter les résultats à atteindre dans le cadre du projet personnalisé." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-goal-objectif-note-vs> ;
+         fhir:reference [ fhir:v "ValueSet/tddui-goal-objectif-note-vs" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Goal Objectif Note ValueSet" ] ;
+       fhir:description [ fhir:v "ValueSet définissant les types de notes pour l'élément Goal.note." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

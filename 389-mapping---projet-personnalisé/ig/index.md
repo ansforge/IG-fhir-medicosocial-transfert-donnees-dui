@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui | *Version*:2.1.0-ballot |
-| Active as of 2025-12-09 | *Computable Name*:TDDUI |
+| Active as of 2025-12-10 | *Computable Name*:TDDUI |
 
  **Brief description of this Implementation Guide**
  The Digital User File (DUI) centralizes all information concerning the person being cared for in social and medico-social facilities and services. The aim of this implementation guide is to define the specifications for DUI data transfer. 
@@ -140,7 +140,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2025-12-09T10:26:43+00:00",
+  "date" : "2025-12-10T10:50:40+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -1289,34 +1289,6 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:extension"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/tddui-care-plan-supportinginfo"
-        },
-        "name" : "TDDUI CarePlan SupportingInfo",
-        "description" : "Extension pour discriminer l'élément CarePlan.supportingInfo.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "CodeSystem"
-          }
-        ],
-        "reference" : {
-          "reference" : "CodeSystem/tddui-care-plan-supportingInfo-cs"
-        },
-        "name" : "TDDUI CarePlan supportingInfo CodeSystem",
-        "description" : "CodeSystem définissant les types de notes pour l'élément CarePlan.supportingInfo.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "ValueSet"
           }
         ],
@@ -1339,6 +1311,48 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "TDDUI Consent Accord",
         "description" : "Profil de la ressource Consent permettant de représenter l'accord de l'usager, de son entourage ou de la structure.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/tddui-discriminator-cs"
+        },
+        "name" : "TDDUI Discriminator CodeSystem",
+        "description" : "CodeSystem définissant les codes discriminants.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/tddui-discriminator"
+        },
+        "name" : "TDDUI Discriminator Extension",
+        "description" : "Extension pour discriminer les éléments CarePlan.supportingInfo et Goal.note.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/tddui-discriminator-vs"
+        },
+        "name" : "TDDUI Discriminator ValueSet",
+        "description" : "ValueSet définissant les codes discriminants.",
         "exampleBoolean" : false
       },
       {
@@ -1443,41 +1457,13 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:extension"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/tddui-goal-note"
-        },
-        "name" : "TDDUI Goal Note",
-        "description" : "Extension pour discriminer l'élément Goal.note.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "CodeSystem"
-          }
-        ],
-        "reference" : {
-          "reference" : "CodeSystem/tddui-goal-note-cs"
-        },
-        "name" : "TDDUI Goal Note CodeSystem",
-        "description" : "CodeSystem définissant les types de notes pour l'élément Goal.note",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "ValueSet"
           }
         ],
         "reference" : {
-          "reference" : "ValueSet/tddui-goal-note-vs"
+          "reference" : "ValueSet/tddui-goal-attente-note-vs"
         },
-        "name" : "TDDUI Goal Note ValueSet",
+        "name" : "TDDUI Goal Attente Note ValueSet",
         "description" : "ValueSet définissant les types de notes pour l'élément Goal.note.",
         "exampleBoolean" : false
       },
@@ -1493,6 +1479,20 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "TDDUI Goal Objectif",
         "description" : "Profil de la ressource Goal permettant de représenter les résultats à atteindre dans le cadre du projet personnalisé.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/tddui-goal-objectif-note-vs"
+        },
+        "name" : "TDDUI Goal Objectif Note ValueSet",
+        "description" : "ValueSet définissant les types de notes pour l'élément Goal.note.",
         "exampleBoolean" : false
       },
       {

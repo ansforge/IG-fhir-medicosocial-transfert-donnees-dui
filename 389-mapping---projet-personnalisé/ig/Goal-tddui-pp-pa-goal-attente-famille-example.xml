@@ -26,8 +26,13 @@
     <reference value="Patient/tddui-pp-pa-patient-example-pp"/>
   </subject>
   <note>
-    <extension url="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-note">
-      <valueCode value="origineAttente"/>
+    <extension url="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs"/>
+          <code value="origineAttente"/>
+        </coding>
+      </valueCodeableConcept>
     </extension>
     <text value="Famille"/>
   </note>

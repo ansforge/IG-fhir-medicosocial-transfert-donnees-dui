@@ -70,8 +70,15 @@ Objectif 2
     {
       "extension" : [
         {
-          "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-note",
-          "valueCode" : "titreObjectif"
+          "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator",
+          "valueCodeableConcept" : {
+            "coding" : [
+              {
+                "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs",
+                "code" : "titreObjectif"
+              }
+            ]
+          }
         }
       ],
       "text" : "Objectif 2"

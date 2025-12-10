@@ -95,8 +95,7 @@ These define constraints on FHIR data types for systems conforming to this imple
 | [Responsable et auteur du statut de l'évaluation](StructureDefinition-tddui-qr-participant.md) | Extension permettant d'ajouter le responsable de l'évaluation et l'auteur du statut de l'évaluation dans un QuestionnaireResponse. |
 | [Ressources utilisées](StructureDefinition-tddui-ressources-used.md) | Ressources utilisées lors de l’évènement (ex : chambre, matériel médical, véhicule). |
 | [TDDUI Auteur statut](StructureDefinition-tddui-status-author.md) | Extension permettant de représenter la profession du professionnel. |
-| [TDDUI CarePlan SupportingInfo](StructureDefinition-tddui-care-plan-supportinginfo.md) | Extension pour discriminer l'élément CarePlan.supportingInfo. |
-| [TDDUI Goal Note](StructureDefinition-tddui-goal-note.md) | Extension pour discriminer l'élément Goal.note. |
+| [TDDUI Discriminator Extension](StructureDefinition-tddui-discriminator.md) | Extension pour discriminer les éléments CarePlan.supportingInfo et Goal.note. |
 | [TDDUI Profession](StructureDefinition-tddui-profession.md) | Extension permettant de représenter la profession du professionnel. |
 | [Usager présent](StructureDefinition-tddui-patient-present.md) | Evènement nécessitant ou non la présence physique de l’usager. |
 | [Évènement annulé](StructureDefinition-tddui-event-cancel-reason.md) | Motif associé au statut de non-réalisation de l’évènement. |
@@ -108,7 +107,9 @@ These define sets of codes used by systems conforming to this implementation gui
 | | |
 | :--- | :--- |
 | [TDDUI CarePlan supportingInfo ValueSet](ValueSet-tddui-care-plan-supportingInfo-vs.md) | ValueSet définissant les types de notes pour l'élément CarePlan.supportingInfo. |
-| [TDDUI Goal Note ValueSet](ValueSet-tddui-goal-note-vs.md) | ValueSet définissant les types de notes pour l'élément Goal.note. |
+| [TDDUI Discriminator ValueSet](ValueSet-tddui-discriminator-vs.md) | ValueSet définissant les codes discriminants. |
+| [TDDUI Goal Attente Note ValueSet](ValueSet-tddui-goal-attente-note-vs.md) | ValueSet définissant les types de notes pour l'élément Goal.note. |
+| [TDDUI Goal Objectif Note ValueSet](ValueSet-tddui-goal-objectif-note-vs.md) | ValueSet définissant les types de notes pour l'élément Goal.note. |
 | [TDDUI SERAFIN ValueSet](ValueSet-tddui-serafin-valueset.md) | ValueSet contenant les codes SERAFIN (prestations directes et indirectes) pour le profil TDDUI Encounter Evenement. |
 
 ### Terminology: Code Systems 
@@ -123,11 +124,10 @@ These define new code systems used by systems conforming to this implementation 
 | [InputTDDUITaskPrestationCodeSystem](CodeSystem-input-tddui-task-prestation-codesystem.md) | CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les prestations du projet personnalisé. |
 | [InputTaskTransportCodeSystem](CodeSystem-input-tddui-task-transport-codesystem.md) | CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les transports dans le cadre du DUI. |
 | [OutputTDDUITaskBilanCodeSystem](CodeSystem-output-tddui-task-bilan-codesystem.md) | CodeSystem pour la définition des éléments spécifiques des output dans la ressource Task utilisée pour le bilan du projet personnalisé. |
-| [TDDUI CarePlan supportingInfo CodeSystem](CodeSystem-tddui-care-plan-supportingInfo-cs.md) | CodeSystem définissant les types de notes pour l'élément CarePlan.supportingInfo. |
+| [TDDUI Discriminator CodeSystem](CodeSystem-tddui-discriminator-cs.md) | CodeSystem définissant les codes discriminants. |
 | [TDDUI Encounter FR Core CodeSystem v2-0203](CodeSystem-tddui-encounter-identifier.md) | TDDUI Encounter's identifier |
 | [TDDUI Encounter Participant Type](CodeSystem-TDDUIEncounterParticipant.md) | CodeSystem for the participant types in TDDUI Encounter |
 | [TDDUI FR Core CodeSystem v2-0203](CodeSystem-tddui-identifier.md) | TDDUI Patient's identifier |
-| [TDDUI Goal Note CodeSystem](CodeSystem-tddui-goal-note-cs.md) | CodeSystem définissant les types de notes pour l'élément Goal.note |
 
 ### Example: Example Instances 
 

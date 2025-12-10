@@ -20,7 +20,7 @@ Profil: [TDDUI CarePlan Projet Personalise](StructureDefinition-tddui-careplan-p
 
 **subject**: [Jeanne L. (official) Female, Date de Naissance inconnue ( Patient internal identifier: 3480787529/123456789)](Patient-tddui-pp-pa-patient-example-pp.md)
 
-**supportingInfo**: [Consentement structure](Consent-tddui-pp-pa-consent-accord-example.md)
+**supportingInfo**: [Consent : status = active; scope = Privacy Consent; category = Patient Consent; dateTime = 2024-01-15 09:00:00+0100](Consent-tddui-pp-pa-consent-accord-example.md)
 
 
 
@@ -57,8 +57,20 @@ Profil: [TDDUI CarePlan Projet Personalise](StructureDefinition-tddui-careplan-p
   },
   "supportingInfo" : [
     {
-      "reference" : "Consent/tddui-pp-pa-consent-accord-example",
-      "display" : "Consentement structure"
+      "extension" : [
+        {
+          "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator",
+          "valueCodeableConcept" : {
+            "coding" : [
+              {
+                "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs",
+                "code" : "accordStructure"
+              }
+            ]
+          }
+        }
+      ],
+      "reference" : "Consent/tddui-pp-pa-consent-accord-example"
     }
   ]
 }

@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-care-plan-supportingInfo-vs | *Version*:2.1.0-ballot |
-| Active as of 2025-12-09 | *Computable Name*:TDDUICarePlanSupportingInfoVS |
+| Active as of 2025-12-10 | *Computable Name*:TDDUICarePlanSupportingInfoVS |
 
  
 ValueSet définissant les types de notes pour l'élément CarePlan.supportingInfo. 
 
  **References** 
 
-* [TDDUI CarePlan SupportingInfo](StructureDefinition-tddui-care-plan-supportinginfo.md)
+* [TDDUI CarePlan Projet Personalise](StructureDefinition-tddui-careplan-projet-personnalise.md)
 
 ### Définition logique (CLD)
 
@@ -50,7 +50,7 @@ ValueSet définissant les types de notes pour l'élément CarePlan.supportingInf
   "name" : "TDDUICarePlanSupportingInfoVS",
   "title" : "TDDUI CarePlan supportingInfo ValueSet",
   "status" : "active",
-  "date" : "2025-12-09T10:26:43+00:00",
+  "date" : "2025-12-10T10:50:40+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -78,7 +78,31 @@ ValueSet définissant les types de notes pour l'élément CarePlan.supportingInf
   "compose" : {
     "include" : [
       {
-        "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-care-plan-supportingInfo-cs"
+        "valueSet" : [
+          "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-discriminator-vs"
+        ]
+      }
+    ],
+    "exclude" : [
+      {
+        "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs",
+        "concept" : [
+          {
+            "code" : "titreObjectif"
+          },
+          {
+            "code" : "avisUsagerObjectif"
+          },
+          {
+            "code" : "strategieMiseEnOeuvreObjectif"
+          },
+          {
+            "code" : "origineAttente"
+          },
+          {
+            "code" : "commentaireAttente"
+          }
+        ]
       }
     ]
   }

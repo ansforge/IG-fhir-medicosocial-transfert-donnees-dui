@@ -26,13 +26,6 @@
       ]
     },
     {
-      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-care-plan-supportinginfo",
-      "title": "TDDUI CarePlan SupportingInfo",
-      "types": [
-        "code"
-      ]
-    },
-    {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference",
       "title": "Lien vers le projet personnalisé",
       "types": [
@@ -44,6 +37,13 @@
       "title": "Commentaire",
       "types": [
         "string"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator",
+      "title": "TDDUI Discriminator Extension",
+      "types": [
+        "CodeableConcept"
       ]
     },
     {
@@ -104,13 +104,6 @@
       "title": "Libellé mode de sortie",
       "types": [
         "string"
-      ]
-    },
-    {
-      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-note",
-      "title": "TDDUI Goal Note",
-      "types": [
-        "code"
       ]
     },
     {
@@ -527,6 +520,10 @@
       "QuestionnaireResponse.item.item",
       "QuestionnaireResponse.item.item.item"
     ],
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator": [
+      "CarePlan.supportingInfo",
+      "Goal.note"
+    ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-mode-label": [
       "Bundle.entry.resource",
       "Encounter"
@@ -556,9 +553,6 @@
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exit-mode-label": [
       "Bundle.entry.resource",
       "Encounter"
-    ],
-    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-note": [
-      "Goal.note"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-meal": [
       "Encounter"

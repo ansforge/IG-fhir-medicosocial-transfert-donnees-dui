@@ -713,20 +713,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-tddui-care-plan-supportinginfo.html"
-                  title="StructureDefinition/tddui-care-plan-supportinginfo">TDDUI CarePlan SupportingInfo</a>
+               <a href="StructureDefinition-tddui-discriminator.html"
+                  title="StructureDefinition/tddui-discriminator">TDDUI Discriminator Extension</a>
             </td>
             <td>
-<p>Extension pour discriminer l'élément CarePlan.supportingInfo.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-tddui-goal-note.html"
-                  title="StructureDefinition/tddui-goal-note">TDDUI Goal Note</a>
-            </td>
-            <td>
-<p>Extension pour discriminer l'élément Goal.note.</p>
+<p>Extension pour discriminer les éléments CarePlan.supportingInfo et Goal.note.</p>
 </td>
          </tr>
          <tr>
@@ -775,8 +766,26 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-tddui-goal-note-vs.html"
-                  title="ValueSet/tddui-goal-note-vs">TDDUI Goal Note ValueSet</a>
+               <a href="ValueSet-tddui-discriminator-vs.html"
+                  title="ValueSet/tddui-discriminator-vs">TDDUI Discriminator ValueSet</a>
+            </td>
+            <td>
+<p>ValueSet définissant les codes discriminants.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-tddui-goal-attente-note-vs.html"
+                  title="ValueSet/tddui-goal-attente-note-vs">TDDUI Goal Attente Note ValueSet</a>
+            </td>
+            <td>
+<p>ValueSet définissant les types de notes pour l'élément Goal.note.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-tddui-goal-objectif-note-vs.html"
+                  title="ValueSet/tddui-goal-objectif-note-vs">TDDUI Goal Objectif Note ValueSet</a>
             </td>
             <td>
 <p>ValueSet définissant les types de notes pour l'élément Goal.note.</p>
@@ -855,11 +864,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="CodeSystem-tddui-care-plan-supportingInfo-cs.html"
-                  title="CodeSystem/tddui-care-plan-supportingInfo-cs">TDDUI CarePlan supportingInfo CodeSystem</a>
+               <a href="CodeSystem-tddui-discriminator-cs.html"
+                  title="CodeSystem/tddui-discriminator-cs">TDDUI Discriminator CodeSystem</a>
             </td>
             <td>
-<p>CodeSystem définissant les types de notes pour l'élément CarePlan.supportingInfo.</p>
+<p>CodeSystem définissant les codes discriminants.</p>
 </td>
          </tr>
          <tr>
@@ -887,15 +896,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>TDDUI Patient's identifier</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="CodeSystem-tddui-goal-note-cs.html"
-                  title="CodeSystem/tddui-goal-note-cs">TDDUI Goal Note CodeSystem</a>
-            </td>
-            <td>
-<p>CodeSystem définissant les types de notes pour l'élément Goal.note</p>
 </td>
          </tr>
       </tbody>
@@ -1397,7 +1397,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.1.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Dec 9, 2025 10:26+0000">2025-12-09</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.1.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Dec 10, 2025 10:50+0000">2025-12-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |

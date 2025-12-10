@@ -6,7 +6,7 @@
   },
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : PlanDeSoins tddui-pp-pa-careplan-example</b></p><a name=\"tddui-pp-pa-careplan-example\"> </a><a name=\"hctddui-pp-pa-careplan-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-careplan-projet-personnalise.html\">TDDUI CarePlan Projet Personalise</a></p></div><p><b>Pièce jointe</b>: <a href=\"DocumentReference-tddui-pp-pa-documentreference-entrant-example.html\">DocumentReference : masterIdentifier = 3480787529/123456789-PPER-entrant-1234; status = current</a></p><p><b>identifier</b>: <code>https://identifiant-medicosocial-projetpersonnalise.esante.gouv.fr</code>/3480787529/123456789-PPER-1234</p><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>title</b>: Projet personnalisé de Mme Jeanne L.</p><p><b>subject</b>: <a href=\"Patient-tddui-pp-pa-patient-example-pp.html\">Jeanne L. (official) Female, Date de Naissance inconnue ( Patient internal identifier: 3480787529/123456789)</a></p><p><b>supportingInfo</b>: <a href=\"Consent-tddui-pp-pa-consent-accord-example.html\">Consentement structure</a></p></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : PlanDeSoins tddui-pp-pa-careplan-example</b></p><a name=\"tddui-pp-pa-careplan-example\"> </a><a name=\"hctddui-pp-pa-careplan-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-careplan-projet-personnalise.html\">TDDUI CarePlan Projet Personalise</a></p></div><p><b>Pièce jointe</b>: <a href=\"DocumentReference-tddui-pp-pa-documentreference-entrant-example.html\">DocumentReference : masterIdentifier = 3480787529/123456789-PPER-entrant-1234; status = current</a></p><p><b>identifier</b>: <code>https://identifiant-medicosocial-projetpersonnalise.esante.gouv.fr</code>/3480787529/123456789-PPER-1234</p><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>title</b>: Projet personnalisé de Mme Jeanne L.</p><p><b>subject</b>: <a href=\"Patient-tddui-pp-pa-patient-example-pp.html\">Jeanne L. (official) Female, Date de Naissance inconnue ( Patient internal identifier: 3480787529/123456789)</a></p><p><b>supportingInfo</b>: <a href=\"Consent-tddui-pp-pa-consent-accord-example.html\">Consent : status = active; scope = Privacy Consent; category = Patient Consent; dateTime = 2024-01-15 09:00:00+0100</a></p></div>"
   },
   "extension" : [{
     "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment",
@@ -25,7 +25,15 @@
     "reference" : "Patient/tddui-pp-pa-patient-example-pp"
   },
   "supportingInfo" : [{
-    "reference" : "Consent/tddui-pp-pa-consent-accord-example",
-    "display" : "Consentement structure"
+    "extension" : [{
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs",
+          "code" : "accordStructure"
+        }]
+      }
+    }],
+    "reference" : "Consent/tddui-pp-pa-consent-accord-example"
   }]
 }
