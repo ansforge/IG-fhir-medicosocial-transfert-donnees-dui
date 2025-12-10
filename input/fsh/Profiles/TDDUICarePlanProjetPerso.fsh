@@ -32,9 +32,9 @@ Description: "Profil de la ressource CarePlan représentant le projet personnali
 * supportingInfo contains
     accordUsager 0..* and
     accordStructure 1..*
-* note.extension contains
+* supportingInfo.extension contains
     TDDUIDiscriminator named TDDUIDiscriminator 1..2
-
+    
 * supportingInfo[accordUsager] only Reference(TDDUIConsentAccord)
 * supportingInfo[accordUsager].extension[TDDUIDiscriminator] 1..1
 * supportingInfo[accordUsager].extension[TDDUIDiscriminator].valueCodeableConcept from TDDUICarePlanSupportingInfoVS (required)
