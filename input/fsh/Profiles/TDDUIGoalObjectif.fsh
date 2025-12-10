@@ -32,26 +32,29 @@ Description: "Profil de la ressource Goal permettant de représenter les résult
 
 
 * note ^slicing.discriminator.type = #pattern
-* note ^slicing.discriminator.path = "extension('https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-note').value"
+* note ^slicing.discriminator.path = "extension('https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator').value"
 * note ^slicing.rules = #open
 * note contains
     titreObjectif 1..1 and
     avisUsagerObjectif 0..1 and
     strategieMiseEnOeuvreObjectif 0..1
 * note.extension contains
-    TDDUIGoalNote named TDDUIGoalNoteExtension 1..3
+    TDDUIDiscriminator named TDDUIDiscriminator 1..3
 * note[titreObjectif] ^short = "Titre de l'objectif"
-* note[titreObjectif].extension[TDDUIGoalNoteExtension] 1..1
-* note[titreObjectif].extension[TDDUIGoalNoteExtension].valueCode = #titreObjectif
+* note[titreObjectif].extension[TDDUIDiscriminator] 1..1
+* note[titreObjectif].extension[TDDUIDiscriminator].valueCodeableConcept from TDDUIGoalObjectifNoteVS (required)
+* note[titreObjectif].extension[TDDUIDiscriminator].valueCodeableConcept = TDDUIDiscriminatorCS#titreObjectif
 
 * note[avisUsagerObjectif] ^short = "Avis de l'usager sur l'objectif"
-* note[avisUsagerObjectif].extension[TDDUIGoalNoteExtension] 1..1
-* note[avisUsagerObjectif].extension[TDDUIGoalNoteExtension].valueCode = #avisUsagerObjectif
+* note[avisUsagerObjectif].extension[TDDUIDiscriminator] 1..1
+* note[avisUsagerObjectif].extension[TDDUIDiscriminator].valueCodeableConcept from TDDUIGoalObjectifNoteVS (required)
+* note[avisUsagerObjectif].extension[TDDUIDiscriminator].valueCodeableConcept = TDDUIDiscriminatorCS#avisUsagerObjectif
 
 * note[strategieMiseEnOeuvreObjectif] ^short = "Stratégie de mise en œuvre de l'objectif"
-* note[strategieMiseEnOeuvreObjectif].extension[TDDUIGoalNoteExtension] 1..1
-* note[strategieMiseEnOeuvreObjectif].extension[TDDUIGoalNoteExtension].valueCode = #strategieMiseEnOeuvreObjectif
- 
+* note[strategieMiseEnOeuvreObjectif].extension[TDDUIDiscriminator] 1..1
+* note[strategieMiseEnOeuvreObjectif].extension[TDDUIDiscriminator].valueCodeableConcept from TDDUIGoalObjectifNoteVS (required)
+* note[strategieMiseEnOeuvreObjectif].extension[TDDUIDiscriminator].valueCodeableConcept = TDDUIDiscriminatorCS#strategieMiseEnOeuvreObjectif
+
 Mapping:  ConceptMetier_TDDUIGoalObjectif
 Source:   TDDUIGoalObjectif
 Target: "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"

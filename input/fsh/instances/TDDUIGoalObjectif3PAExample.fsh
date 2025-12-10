@@ -17,4 +17,4 @@ Description: "Exemple d'un objectif dans le cadre du projet personnalisé PA."
 * extension[referenceProjetPerso].valueReference = Reference(tddui-pp-pa-careplan-example)
 
 * note[titreObjectif].text = "Objectif 3"
-* note[titreObjectif].extension[TDDUIGoalNoteExtension].valueCode = #titreObjectif
+* note[titreObjectif].extension[TDDUIDiscriminator].valueCodeableConcept.coding.code = #titreObjectif

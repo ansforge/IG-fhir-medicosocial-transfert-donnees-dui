@@ -8,7 +8,7 @@ Description: "Exemple d'une action de l'objectif 1 réalisée par l'IDE dans le 
 
 * description  = "Atelier éducation risque de chute"
 
-* owner = Reference(tddui-practitioner-ide-pp-example)
+* owner = Reference(tddui-pp-pa-practitioner-ide-example)
 
 * basedOn = Reference(tddui-pp-ime-careplan-example)
 

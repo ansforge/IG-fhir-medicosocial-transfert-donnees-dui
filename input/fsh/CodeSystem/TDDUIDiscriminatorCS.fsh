@@ -1,7 +1,10 @@
-CodeSystem: TDDUIGoalNoteCS
-Id: tddui-goal-note-cs
-Title: "TDDUI Goal Note CodeSystem"
-Description: "CodeSystem définissant les types de notes pour l'élément Goal.note"
+CodeSystem: TDDUIDiscriminatorCS
+Id: tddui-discriminator-cs
+Title: "TDDUI Discriminator CodeSystem"
+Description: "CodeSystem définissant les codes discriminants."
+* #accordUsager "Accord de l'usager"
+* #accordStructure "Accord de la structure"
+
 * #titreObjectif "Titre de l'objectif"
 * #avisUsagerObjectif "Avis de l'usager sur l'objectif"
 * #strategieMiseEnOeuvreObjectif "Stratégie de mise en œuvre de l'objectif"

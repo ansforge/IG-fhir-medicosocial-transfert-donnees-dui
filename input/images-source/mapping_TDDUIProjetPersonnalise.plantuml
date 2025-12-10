@@ -2,7 +2,7 @@
 
 hide empty methods
 
-class TDDUIPatient_et_INS #LightPink
+class TDDUIPatient_TDDUIPatientINS #LightPink
 class TDDUIGoalAttente #LightGray
 class TDDUIServiceRequestBesoin #LightGray
 class TDDUIGoalObjectif #LightGray
@@ -12,7 +12,7 @@ class TDDUITaskPrestation #LightGray
 class TDDUITaskBilan #LightGray
 class TDDUICarePlanProjetPersonalise #LightGray
 
-TDDUIPatient_et_INS <-- TDDUICarePlanProjetPersonalise : CarePlan.subject
+TDDUIPatient_TDDUIPatientINS <-- TDDUICarePlanProjetPersonalise : CarePlan.subject
 
 TDDUICarePlanProjetPersonalise <-- TDDUIServiceRequestBesoin : ServiceRequest.basedOn
 TDDUICarePlanProjetPersonalise <-- TDDUIGoalObjectif : Goal.extension[TDDUICarePlanProjetPersonalise]

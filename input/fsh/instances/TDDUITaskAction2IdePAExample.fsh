@@ -8,7 +8,7 @@ Description: "Exemple d'une action de l'objectif 2 réalisée par l'IDE dans le 
 
 * description  = "Pesée mensuelle et dépistage dénutrition"
 
-* owner = Reference(tddui-practitioner-ide-pp-example)
+* owner = Reference(tddui-pp-pa-practitioner-ide-example)
 
 * basedOn = Reference(tddui-pp-ime-careplan-example)
 

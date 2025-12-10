@@ -16,4 +16,4 @@ Description: "Exemple du projet personnalisé d'un enfant en IME"
 * subject = Reference(tddui-pp-ime-patient-example)
 
 * supportingInfo[accordStructure] = Reference(tddui-pp-ime-consent-accord-example)
-* supportingInfo[accordStructure].display = "Consentement structure"
+* supportingInfo[accordStructure].extension[TDDUIDiscriminator].valueCodeableConcept = TDDUIDiscriminatorCS#accordStructure

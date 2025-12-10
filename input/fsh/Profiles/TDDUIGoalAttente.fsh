@@ -19,20 +19,22 @@ Description: "Profil de la ressource Goal permettant de représenter les attente
 * subject only Reference(TDDUIPatient or TDDUIPatientINS)
 
 * note ^slicing.discriminator.type = #pattern
-* note ^slicing.discriminator.path = "extension('https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-note').value"
+* note ^slicing.discriminator.path = "extension('https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator').value"
 * note ^slicing.rules = #open
 * note contains
     origineAttente 1..1 and
     commentaireAttente 0..*
 * note.extension contains
-    TDDUIGoalNote named TDDUIGoalNoteExtension 1..2
+    TDDUIDiscriminator named TDDUIDiscriminator 1..2
 * note[origineAttente] ^short = "Originie de l'attente"
-* note[origineAttente].extension[TDDUIGoalNoteExtension] 1..1
-* note[origineAttente].extension[TDDUIGoalNoteExtension].valueCode = #origineAttente
+* note[origineAttente].extension[TDDUIDiscriminator] 1..1
+* note[origineAttente].extension[TDDUIDiscriminator].valueCodeableConcept from TDDUIGoalAttenteNoteVS (required)
+* note[origineAttente].extension[TDDUIDiscriminator].valueCodeableConcept = TDDUIDiscriminatorCS#origineAttente
 
 * note[commentaireAttente] ^short = "Commentaire de l'attente"
-* note[commentaireAttente].extension[TDDUIGoalNoteExtension] 1..1
-* note[commentaireAttente].extension[TDDUIGoalNoteExtension].valueCode = #commentaireAttente
+* note[commentaireAttente].extension[TDDUIDiscriminator] 1..1
+* note[commentaireAttente].extension[TDDUIDiscriminator].valueCodeableConcept from TDDUIGoalAttenteNoteVS (required)
+* note[commentaireAttente].extension[TDDUIDiscriminator].valueCodeableConcept = TDDUIDiscriminatorCS#commentaireAttente
 
 Mapping:  ConceptMetier_TDDUIGoalAttente
 Source:   TDDUIGoalAttente

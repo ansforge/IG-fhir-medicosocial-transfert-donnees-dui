@@ -9,7 +9,7 @@ Description: "Exemple des attentes de la famille dans le cadre du projet personn
 * lifecycleStatus = #active
 
 * note[origineAttente].text = "Famille"
-* note[origineAttente].extension[TDDUIGoalNoteExtension].valueCode = #origineAttente
+* note[origineAttente].extension[TDDUIDiscriminator].valueCodeableConcept.coding.code = #origineAttente
 
 * subject = Reference(tddui-pp-pa-patient-example-pp)
 

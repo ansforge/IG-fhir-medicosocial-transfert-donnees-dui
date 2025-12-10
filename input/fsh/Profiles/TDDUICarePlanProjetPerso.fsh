@@ -26,19 +26,26 @@ Description: "Profil de la ressource CarePlan représentant le projet personnali
 * category from $JDV-J367-TypeProjetPersonnaliseMs (required)
 
 * supportingInfo ^slicing.discriminator.type = #pattern
-* supportingInfo ^slicing.discriminator.path = "display"
+* supportingInfo ^slicing.discriminator.path = "extension('https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator').value"
 * supportingInfo ^slicing.rules = #open
 
 * supportingInfo contains
     accordUsager 0..* and
     accordStructure 1..*
+* note.extension contains
+    TDDUIDiscriminator named TDDUIDiscriminator 1..2
 
 * supportingInfo[accordUsager] only Reference(TDDUIConsentAccord)
-* supportingInfo[accordUsager].display = "Consentement usager"
+* supportingInfo[accordUsager].extension[TDDUIDiscriminator] 1..1
+* supportingInfo[accordUsager].extension[TDDUIDiscriminator].valueCodeableConcept from TDDUICarePlanSupportingInfoVS (required)
+* supportingInfo[accordUsager].extension[TDDUIDiscriminator].valueCodeableConcept = TDDUIDiscriminatorCS#accordUsager
 * supportingInfo[accordUsager] ^short = "Référence à l'accord de l'usager et/ou de son entourage."
+
 * supportingInfo[accordStructure] only Reference(TDDUIConsentAccord)
+* supportingInfo[accordStructure].extension[TDDUIDiscriminator] 1..1
+* supportingInfo[accordStructure].extension[TDDUIDiscriminator].valueCodeableConcept from TDDUICarePlanSupportingInfoVS (required)
+* supportingInfo[accordStructure].extension[TDDUIDiscriminator].valueCodeableConcept = TDDUIDiscriminatorCS#accordStructure
 * supportingInfo[accordStructure] ^short = "Référence à l'accord de la structure."
-* supportingInfo[accordStructure].display = "Consentement structure"
 
 * subject only Reference(TDDUIPatient or TDDUIPatientINS)
 

@@ -9,7 +9,7 @@ Description: "Exemple des attentes de l'usager dans le cadre du projet personnal
 * lifecycleStatus = #active
 
 * note[origineAttente].text = "Usager"
-* note[origineAttente].extension[TDDUIGoalNoteExtension].valueCode = #origineAttente
+* note[origineAttente].extension[TDDUIDiscriminator].valueCodeableConcept.coding.code = #origineAttente
 
 * subject = Reference(tddui-pp-pa-patient-example-pp)
 
