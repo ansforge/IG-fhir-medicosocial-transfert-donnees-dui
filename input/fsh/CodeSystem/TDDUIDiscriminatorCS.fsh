@@ -2,6 +2,12 @@ CodeSystem: TDDUIDiscriminatorCS
 Id: tddui-discriminator-cs
 Title: "TDDUI Discriminator CodeSystem"
 Description: "CodeSystem définissant les codes discriminants."
+* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+* ^caseSensitive = true
+* ^compositional = false
+* ^content = #complete
+* ^experimental = false
+
 * #accordUsager "Accord de l'usager"
 * #accordStructure "Accord de la structure"
 
