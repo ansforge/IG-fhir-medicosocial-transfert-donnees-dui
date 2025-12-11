@@ -12,7 +12,7 @@
 | Active as of 2025-12-11 | *Computable Name*:TDDUIDocumentReference |
 
  
-Profil de la ressource SimplifiedPublishDocumentReference pour les pièces jointes liées à l’événement et à l'évaluation. 
+Profil de la ressource SimplifiedPublishDocumentReference permettant de véhiculer des pièces jointes que ce soit pour l'évaluation, l'évènement ou le projet personnalisé. 
 
  
 >  
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-document-refer
   "name" : "TDDUIDocumentReference",
   "title" : "TDDUI DocumentReference",
   "status" : "active",
-  "date" : "2025-12-11T09:07:04+00:00",
+  "date" : "2025-12-11T13:02:12+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -62,7 +62,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-document-refer
       ]
     }
   ],
-  "description" : "Profil de la ressource SimplifiedPublishDocumentReference pour les pièces jointes liées à l’événement et à l'évaluation.",
+  "description" : "Profil de la ressource SimplifiedPublishDocumentReference permettant de véhiculer des pièces jointes que ce soit pour l'évaluation, l'évènement ou le projet personnalisé.",
   "jurisdiction" : [
     {
       "coding" : [

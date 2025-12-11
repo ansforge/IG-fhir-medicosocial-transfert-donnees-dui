@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
   "name" : "TDDUICarePlanProjetPersonnalise",
   "title" : "TDDUI CarePlan Projet Personalise",
   "status" : "active",
-  "date" : "2025-12-11T09:07:04+00:00",
+  "date" : "2025-12-11T13:02:12+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

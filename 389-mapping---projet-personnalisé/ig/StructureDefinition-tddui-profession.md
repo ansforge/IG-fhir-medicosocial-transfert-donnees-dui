@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-profession.csv
   "name" : "TDDUIProfession",
   "title" : "TDDUI Profession",
   "status" : "active",
-  "date" : "2025-12-11T09:07:04+00:00",
+  "date" : "2025-12-11T13:02:12+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

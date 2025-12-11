@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "TDDUI"] ; # 
   fhir:title [ fhir:v "Médicosocial - Transfert de données DUI"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-12-11T09:07:04+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-12-11T13:02:12+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -1805,7 +1805,7 @@
          fhir:reference [ fhir:v "StructureDefinition/tddui-attachment" ]
        ] ;
        fhir:name [ fhir:v "Pièce jointe" ] ;
-       fhir:description [ fhir:v "Ce profil permet de véhiculer des pièces jointes que ce soit pour l'évaluation, l'évènement ou le projet personnalisé. L'extension référence le profil PDSm_SimplifiedPublish." ] ;
+       fhir:description [ fhir:v "Extension permettant de véhiculer des pièces jointes que ce soit pour l'évaluation, l'évènement ou le projet personnalisé. L'extension référence le profil PDSm_SimplifiedPublish." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -2078,7 +2078,7 @@
          fhir:reference [ fhir:v "StructureDefinition/tddui-document-reference" ]
        ] ;
        fhir:name [ fhir:v "TDDUI DocumentReference" ] ;
-       fhir:description [ fhir:v "Profil de la ressource SimplifiedPublishDocumentReference pour les pièces jointes liées à l’événement et à l'évaluation." ] ;
+       fhir:description [ fhir:v "Profil de la ressource SimplifiedPublishDocumentReference permettant de véhiculer des pièces jointes que ce soit pour l'évaluation, l'évènement ou le projet personnalisé." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

@@ -47,34 +47,17 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for TDDUI</h1>
- <p>Generated Thu Dec 11 09:12:23 UTC 2025, FHIR version 4.0.1 for ans.fhir.fr.tddui#2.1.0-ballot (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/tddui">https://interop.esante.gouv.fr/ig/fhir/tddui</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/tddui/history.html">history</a>)). See <a href="qa.html">Full QA Report</a> &amp; <a href="qa-ipreview.html">IP</a></p>
+ <p>Generated Thu Dec 11 13:07:15 UTC 2025, FHIR version 4.0.1 for ans.fhir.fr.tddui#2.1.0-ballot (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/tddui">https://interop.esante.gouv.fr/ig/fhir/tddui</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/tddui/history.html">history</a>)). See <a href="qa.html">Full QA Report</a> &amp; <a href="qa-ipreview.html">IP</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
- <tr><td>Publisher Version:</td><td><span style="background-color: #ffcccc">IG Publisher Version: v2.0.28. The latest official release version is unknown <a href="https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar">Download Latest</a></span></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v2.0.28</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ans.fhir.fr.tddui, Canonical = https://interop.esante.gouv.fr/ig/fhir/tddui</td></tr>
  <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
  <tr><td>Language Info:</td><td>This IG has no language information</td></tr>
  <tr><td>Publication Request:</td><td><table class="grid">
- <tr><td>package-id</d><td>ans.fhir.fr.tddui</td></tr>
- <tr><td>version</d><td>2.1.0-ballot</td></tr>
- <tr><td>path</d><td>https://interop.esante.gouv.fr/ig/fhir/tddui/2.1.0-ballot</td></tr>
- <tr><td>Pub-Mode</d><td>working release</td></tr>
- <tr><td>status</d><td>release</td></tr>
- <tr><td>Release-Label</d><td>public-comment</td></tr>
- <tr><td>Sequence (Group)</d><td>public-comment</td></tr>
- <tr><td>desc</d><td>Ce document présente les spécifications fonctionnelles et techniques du volet « Transfert de Données DUI » (TDDUI). Ces dernières spécifient le contenu et le transport des données DUI d'un logiciel DUI vers un autre logiciel DUI ou un SI tiers.</td></tr>
- <tr><td>descmd</d><td><p>Release 2.1.0-ballot du guide d'Implémentation du volet «Transfert de Données DUI » (TDDUI)</p>
-</td></tr>
- <tr><td>changes</d><td>changes.html</td></tr>
- <tr><td>category</d><td>Patient Summary</td></tr>
- <tr><td>title</d><td>Guide d'implémentation FHIR pour le transfert de donnees DUI</td></tr>
- <tr><td>ci-build</d><td>https://ansforge.github.io/IG-fhir-medicosocial-transfert-donnees-dui/main/ig/</td></tr>
  <tr><td>RelatedIgs</d><td>(None Found)</td></tr>
 </table>
-<ul><li>Error fetching package-list from https://interop.esante.gouv.fr/ig/fhir/tddui: Error parsing JSON source: Unexpected content '<' in json format at Line 1 (path=[null]) <img src="icon-error.gif" height="16px" width="16px"/></li>
-<li>This appears to be the first publication, so first must be true <img src="icon-error.gif" height="16px" width="16px"/></li>
-<li>descmd cannot contain a ' <img src="icon-error.gif" height="16px" width="16px"/></li>
-<li>This IG is not yet published at all, so there must be "first" : true in the publication request <img src="icon-error.gif" height="16px" width="16px"/></li>
-<li>No publication request introduction found (needed for first publication) <img src="icon-error.gif" height="16px" width="16px"/></li>
+<ul><li>Version 2.1.0-ballot has already been published <img src="icon-warning.png" height="16px" width="16px"/></li>
+<li>Publication Request is for version v2.1.0-ballot which is already published <img src="icon-error.gif" height="16px" width="16px"/></li>
 </ul>
 </td></tr>
  <tr><td>Supressed Messages:</td><td><a href="#suppressed">19 Suppressed Issues</a>
@@ -844,24 +827,24 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Consent&#8203;.category[0]&#8203;.coding[0]&#8203;.display (l20&#8203;/c6)</b></td><td><b>error</b></td><td><b>Wrong whitespace in Display Name 'Patient Consent' for http://loinc.org#59284-0. Valid display is 'Patient Consent' (for the language(s) 'fr')</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l50">log</a>, or see <a href="#vmi375" onClick="document.getElementById('vmi375').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Display_Name_WS_for__should_be_one_of__instead_of</span><div id="vmi375" style="display:none"><br/><pre>0 0 : start
-1015 1015: 0ms  : Analysing http://hl7.org/fhir/ValueSet/consent-category|4.0.1 for validation purposes
-1015 0  : 0ms  : Parameters: disp-lang=fr, default-to-latest
-1015 0  : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-1015 0  : 0ms  : Prepare include: "(http://terminology.hl7.org/CodeSystem/consentcategorycodes)"
-1015 0  : 0ms  : CodeSystem found: "http://terminology.hl7.org/CodeSystem/consentcategorycodes|1.0.1"
-1015 0  : 0ms  : Prepare include: "(^http://terminology.hl7.org/ValueSet/v3-ActConsentType)"
-1015 0  : 0ms    : Analysing http://terminology.hl7.org/ValueSet/v3-ActConsentType|3.0.0 for validation purposes
-1015 0  : 0ms    : Prepare include: "(http://terminology.hl7.org/CodeSystem/v3-ActCode)(concept<<_ActConsentType)"
-1062 47 : 47ms   : CodeSystem found: "http://terminology.hl7.org/CodeSystem/v3-ActCode|9.0.0"
-1062 0  : 47ms : Prepare include: "(http://loinc.org)(59284-0,57016-8,57017-6,64292-6)"
-1062 0  : 47ms : CodeSystem found: "http://loinc.org|2.81"
-1062 0  : 47ms : Validate "[http://loinc.org#59284-0 ("Patient Consent")]"
-1062 0  : 47ms : Check "http://loinc.org#59284-0"
-1062 0  : 47ms : Check included value set http://terminology.hl7.org/ValueSet/v3-ActConsentType
-1062 0  : 47ms   : Check "http://loinc.org#59284-0"
-1062 0  : 47ms : CodeSystem found: http://loinc.org|2.81 for http://loinc.org
-1062 0  : 47ms : check code in (http://loinc.org)(59284-0,57016-8,57017-6,64292-6) at CodeableConcept.coding[0]
-1062 0  : 47ms : Code "59284-0" found in http://loinc.org|2.81
+1297 1297: 0ms  : Analysing http://hl7.org/fhir/ValueSet/consent-category|4.0.1 for validation purposes
+1297 0  : 0ms  : Parameters: disp-lang=fr, default-to-latest
+1297 0  : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+1297 0  : 0ms  : Prepare include: "(http://terminology.hl7.org/CodeSystem/consentcategorycodes)"
+1297 0  : 0ms  : CodeSystem found: "http://terminology.hl7.org/CodeSystem/consentcategorycodes|1.0.1"
+1297 0  : 0ms  : Prepare include: "(^http://terminology.hl7.org/ValueSet/v3-ActConsentType)"
+1297 0  : 0ms    : Analysing http://terminology.hl7.org/ValueSet/v3-ActConsentType|3.0.0 for validation purposes
+1297 0  : 0ms    : Prepare include: "(http://terminology.hl7.org/CodeSystem/v3-ActCode)(concept<<_ActConsentType)"
+1375 78 : 78ms   : CodeSystem found: "http://terminology.hl7.org/CodeSystem/v3-ActCode|9.0.0"
+1375 0  : 78ms : Prepare include: "(http://loinc.org)(59284-0,57016-8,57017-6,64292-6)"
+1375 0  : 78ms : CodeSystem found: "http://loinc.org|2.81"
+1375 0  : 78ms : Validate "[http://loinc.org#59284-0 ("Patient Consent")]"
+1375 0  : 78ms : Check "http://loinc.org#59284-0"
+1375 0  : 78ms : Check included value set http://terminology.hl7.org/ValueSet/v3-ActConsentType
+1375 0  : 78ms   : Check "http://loinc.org#59284-0"
+1375 0  : 78ms : CodeSystem found: http://loinc.org|2.81 for http://loinc.org
+1375 0  : 78ms : check code in (http://loinc.org)(59284-0,57016-8,57017-6,64292-6) at CodeableConcept.coding[0]
+1375 0  : 78ms : Code "59284-0" found in http://loinc.org|2.81
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffebcc">
@@ -879,24 +862,24 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Consent&#8203;.category[0]&#8203;.coding[0]&#8203;.display (l20&#8203;/c6)</b></td><td><b>error</b></td><td><b>Wrong whitespace in Display Name 'Patient Consent' for http://loinc.org#59284-0. Valid display is 'Patient Consent' (for the language(s) 'fr')</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l50">log</a>, or see <a href="#vmi377" onClick="document.getElementById('vmi377').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Display_Name_WS_for__should_be_one_of__instead_of</span><div id="vmi377" style="display:none"><br/><pre>0 0 : start
-1015 1015: 0ms  : Analysing http://hl7.org/fhir/ValueSet/consent-category|4.0.1 for validation purposes
-1015 0  : 0ms  : Parameters: disp-lang=fr, default-to-latest
-1015 0  : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-1015 0  : 0ms  : Prepare include: "(http://terminology.hl7.org/CodeSystem/consentcategorycodes)"
-1015 0  : 0ms  : CodeSystem found: "http://terminology.hl7.org/CodeSystem/consentcategorycodes|1.0.1"
-1015 0  : 0ms  : Prepare include: "(^http://terminology.hl7.org/ValueSet/v3-ActConsentType)"
-1015 0  : 0ms    : Analysing http://terminology.hl7.org/ValueSet/v3-ActConsentType|3.0.0 for validation purposes
-1015 0  : 0ms    : Prepare include: "(http://terminology.hl7.org/CodeSystem/v3-ActCode)(concept<<_ActConsentType)"
-1062 47 : 47ms   : CodeSystem found: "http://terminology.hl7.org/CodeSystem/v3-ActCode|9.0.0"
-1062 0  : 47ms : Prepare include: "(http://loinc.org)(59284-0,57016-8,57017-6,64292-6)"
-1062 0  : 47ms : CodeSystem found: "http://loinc.org|2.81"
-1062 0  : 47ms : Validate "[http://loinc.org#59284-0 ("Patient Consent")]"
-1062 0  : 47ms : Check "http://loinc.org#59284-0"
-1062 0  : 47ms : Check included value set http://terminology.hl7.org/ValueSet/v3-ActConsentType
-1062 0  : 47ms   : Check "http://loinc.org#59284-0"
-1062 0  : 47ms : CodeSystem found: http://loinc.org|2.81 for http://loinc.org
-1062 0  : 47ms : check code in (http://loinc.org)(59284-0,57016-8,57017-6,64292-6) at CodeableConcept.coding[0]
-1062 0  : 47ms : Code "59284-0" found in http://loinc.org|2.81
+1297 1297: 0ms  : Analysing http://hl7.org/fhir/ValueSet/consent-category|4.0.1 for validation purposes
+1297 0  : 0ms  : Parameters: disp-lang=fr, default-to-latest
+1297 0  : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+1297 0  : 0ms  : Prepare include: "(http://terminology.hl7.org/CodeSystem/consentcategorycodes)"
+1297 0  : 0ms  : CodeSystem found: "http://terminology.hl7.org/CodeSystem/consentcategorycodes|1.0.1"
+1297 0  : 0ms  : Prepare include: "(^http://terminology.hl7.org/ValueSet/v3-ActConsentType)"
+1297 0  : 0ms    : Analysing http://terminology.hl7.org/ValueSet/v3-ActConsentType|3.0.0 for validation purposes
+1297 0  : 0ms    : Prepare include: "(http://terminology.hl7.org/CodeSystem/v3-ActCode)(concept<<_ActConsentType)"
+1375 78 : 78ms   : CodeSystem found: "http://terminology.hl7.org/CodeSystem/v3-ActCode|9.0.0"
+1375 0  : 78ms : Prepare include: "(http://loinc.org)(59284-0,57016-8,57017-6,64292-6)"
+1375 0  : 78ms : CodeSystem found: "http://loinc.org|2.81"
+1375 0  : 78ms : Validate "[http://loinc.org#59284-0 ("Patient Consent")]"
+1375 0  : 78ms : Check "http://loinc.org#59284-0"
+1375 0  : 78ms : Check included value set http://terminology.hl7.org/ValueSet/v3-ActConsentType
+1375 0  : 78ms   : Check "http://loinc.org#59284-0"
+1375 0  : 78ms : CodeSystem found: http://loinc.org|2.81 for http://loinc.org
+1375 0  : 78ms : check code in (http://loinc.org)(59284-0,57016-8,57017-6,64292-6) at CodeableConcept.coding[0]
+1375 0  : 78ms : Code "59284-0" found in http://loinc.org|2.81
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffebcc">
@@ -1235,13 +1218,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[0]&#8203;.code[0]&#8203;.display (l1&#8203;/c143634)</b></td><td><b>information</b></td><td><b>'Thought functions' is the default display; the code system http://hl7.org/fhir/sid/icf has no Display Names for the language fr</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l15">log</a>, or see <a href="#vmi416" onClick="document.getElementById('vmi416').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_LANG_NONE</span><div id="vmi416" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#b160 ("Thought functions")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#b160"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#b160 ("Thought functions")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#b160"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1257,13 +1240,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[0]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c143934)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l17">log</a>, or see <a href="#vmi418" onClick="document.getElementById('vmi418').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi418" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1279,13 +1262,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[1]&#8203;.code[0]&#8203;.display (l1&#8203;/c145002)</b></td><td><b>information</b></td><td><b>'Orientation functions' is the default display; the code system http://hl7.org/fhir/sid/icf has no Display Names for the language fr</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l19">log</a>, or see <a href="#vmi420" onClick="document.getElementById('vmi420').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_LANG_NONE</span><div id="vmi420" style="display:none"><br/><pre>0 0 : start
-15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
-15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-15 0    : 0ms  : Prepare include: "()"
-15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#b114 ("Orientation functions")]"
-15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#b114"
-15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
+0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+0 0     : 0ms  : Prepare include: "()"
+0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#b114 ("Orientation functions")]"
+16 16   : 16ms : Check "http://hl7.org/fhir/sid/icf#b114"
+16 0    : 16ms : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1301,13 +1284,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[1]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c145303)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l17">log</a>, or see <a href="#vmi422" onClick="document.getElementById('vmi422').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi422" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1323,13 +1306,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[2]&#8203;.code[0]&#8203;.display (l1&#8203;/c146377)</b></td><td><b>information</b></td><td><b>'Washing body parts' is the default display; the code system http://hl7.org/fhir/sid/icf has no Display Names for the language fr</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l20">log</a>, or see <a href="#vmi424" onClick="document.getElementById('vmi424').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_LANG_NONE</span><div id="vmi424" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d5100 ("Washing body parts")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#d5100"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d5100 ("Washing body parts")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#d5100"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1345,13 +1328,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[2]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c146684)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l17">log</a>, or see <a href="#vmi426" onClick="document.getElementById('vmi426').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi426" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1389,13 +1372,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[3]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c148055)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l17">log</a>, or see <a href="#vmi430" onClick="document.getElementById('vmi430').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi430" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1433,13 +1416,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[4]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c149438)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l17">log</a>, or see <a href="#vmi434" onClick="document.getElementById('vmi434').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi434" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1477,13 +1460,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[5]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c150833)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l17">log</a>, or see <a href="#vmi438" onClick="document.getElementById('vmi438').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi438" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1521,13 +1504,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[6]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c152227)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l17">log</a>, or see <a href="#vmi442" onClick="document.getElementById('vmi442').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi442" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1565,13 +1548,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[7]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c153590)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l17">log</a>, or see <a href="#vmi446" onClick="document.getElementById('vmi446').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi446" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1609,13 +1592,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[8]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c154972)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l17">log</a>, or see <a href="#vmi450" onClick="document.getElementById('vmi450').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi450" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1631,13 +1614,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[9]&#8203;.code[0]&#8203;.display (l1&#8203;/c156082)</b></td><td><b>information</b></td><td><b>'Regulating urination' is the default display; the code system http://hl7.org/fhir/sid/icf has no Display Names for the language fr</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l27">log</a>, or see <a href="#vmi452" onClick="document.getElementById('vmi452').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_LANG_NONE</span><div id="vmi452" style="display:none"><br/><pre>0 0 : start
-16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
-16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-16 0    : 0ms  : Prepare include: "()"
-16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d5300 ("Regulating urination")]"
-16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#d5300"
-16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
+0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+0 0     : 0ms  : Prepare include: "()"
+0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d5300 ("Regulating urination")]"
+0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#d5300"
+0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1653,13 +1636,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[9]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c156395)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l17">log</a>, or see <a href="#vmi454" onClick="document.getElementById('vmi454').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi454" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1697,13 +1680,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[10]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c157793)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l17">log</a>, or see <a href="#vmi458" onClick="document.getElementById('vmi458').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi458" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1719,13 +1702,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[11]&#8203;.code[0]&#8203;.display (l1&#8203;/c158878)</b></td><td><b>information</b></td><td><b>'Changing basic body position' is the default display; the code system http://hl7.org/fhir/sid/icf has no Display Names for the language fr</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l29">log</a>, or see <a href="#vmi460" onClick="document.getElementById('vmi460').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_LANG_NONE</span><div id="vmi460" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d410 ("Changing basic body position")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#d410"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d410 ("Changing basic body position")]"
+15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#d410"
+15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1741,13 +1724,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[11]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c159194)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l17">log</a>, or see <a href="#vmi462" onClick="document.getElementById('vmi462').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi462" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1763,13 +1746,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[12]&#8203;.code[0]&#8203;.display (l1&#8203;/c160298)</b></td><td><b>information</b></td><td><b>'Moving around within the home' is the default display; the code system http://hl7.org/fhir/sid/icf has no Display Names for the language fr</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l30">log</a>, or see <a href="#vmi464" onClick="document.getElementById('vmi464').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_LANG_NONE</span><div id="vmi464" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d4600 ("Moving around within the home")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#d4600"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d4600 ("Moving around within the home")]"
+15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#d4600"
+15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1785,13 +1768,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[12]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c160602)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l17">log</a>, or see <a href="#vmi466" onClick="document.getElementById('vmi466').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi466" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1829,13 +1812,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[13]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c162065)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l17">log</a>, or see <a href="#vmi470" onClick="document.getElementById('vmi470').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi470" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1873,13 +1856,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[14]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c163555)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l17">log</a>, or see <a href="#vmi474" onClick="document.getElementById('vmi474').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi474" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1905,13 +1888,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[0]&#8203;.code[0]&#8203;.display (l1&#8203;/c98936)</b></td><td><b>information</b></td><td><b>'Thought functions' is the default display; the code system http://hl7.org/fhir/sid/icf has no Display Names for the language fr</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l15">log</a>, or see <a href="#vmi476" onClick="document.getElementById('vmi476').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_LANG_NONE</span><div id="vmi476" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#b160 ("Thought functions")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#b160"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#b160 ("Thought functions")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#b160"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1927,13 +1910,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[0]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c99236)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l17">log</a>, or see <a href="#vmi478" onClick="document.getElementById('vmi478').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi478" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1949,13 +1932,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[1]&#8203;.code[0]&#8203;.display (l1&#8203;/c100304)</b></td><td><b>information</b></td><td><b>'Orientation functions' is the default display; the code system http://hl7.org/fhir/sid/icf has no Display Names for the language fr</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l19">log</a>, or see <a href="#vmi480" onClick="document.getElementById('vmi480').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_LANG_NONE</span><div id="vmi480" style="display:none"><br/><pre>0 0 : start
-15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
-15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-15 0    : 0ms  : Prepare include: "()"
-15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#b114 ("Orientation functions")]"
-15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#b114"
-15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
+0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+0 0     : 0ms  : Prepare include: "()"
+0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#b114 ("Orientation functions")]"
+16 16   : 16ms : Check "http://hl7.org/fhir/sid/icf#b114"
+16 0    : 16ms : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1971,13 +1954,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[1]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c100605)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l17">log</a>, or see <a href="#vmi482" onClick="document.getElementById('vmi482').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi482" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1993,13 +1976,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[2]&#8203;.code[0]&#8203;.display (l1&#8203;/c101675)</b></td><td><b>information</b></td><td><b>'Washing oneself' is the default display; the code system http://hl7.org/fhir/sid/icf has no Display Names for the language fr</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l33">log</a>, or see <a href="#vmi484" onClick="document.getElementById('vmi484').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_LANG_NONE</span><div id="vmi484" style="display:none"><br/><pre>0 0 : start
-16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
-16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-16 0    : 0ms  : Prepare include: "()"
-16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d510 ("Washing oneself")]"
-16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#d510"
-16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
+0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+0 0     : 0ms  : Prepare include: "()"
+0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d510 ("Washing oneself")]"
+0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#d510"
+15 15   : 15ms : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -2015,13 +1998,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[2]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c101961)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l17">log</a>, or see <a href="#vmi486" onClick="document.getElementById('vmi486').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi486" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -2037,13 +2020,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[3]&#8203;.code[0]&#8203;.display (l1&#8203;/c103002)</b></td><td><b>information</b></td><td><b>'Dressing' is the default display; the code system http://hl7.org/fhir/sid/icf has no Display Names for the language fr</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l34">log</a>, or see <a href="#vmi488" onClick="document.getElementById('vmi488').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_LANG_NONE</span><div id="vmi488" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d540 ("Dressing")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#d540"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d540 ("Dressing")]"
+15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#d540"
+15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -2059,13 +2042,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[3]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c103290)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l17">log</a>, or see <a href="#vmi490" onClick="document.getElementById('vmi490').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi490" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -2103,13 +2086,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[4]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c104621)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l17">log</a>, or see <a href="#vmi494" onClick="document.getElementById('vmi494').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi494" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -2125,13 +2108,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[5]&#8203;.code[0]&#8203;.display (l1&#8203;/c105676)</b></td><td><b>information</b></td><td><b>'Toileting' is the default display; the code system http://hl7.org/fhir/sid/icf has no Display Names for the language fr</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l35">log</a>, or see <a href="#vmi496" onClick="document.getElementById('vmi496').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_LANG_NONE</span><div id="vmi496" style="display:none"><br/><pre>0 0 : start
-16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
-16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-16 0    : 0ms  : Prepare include: "()"
-16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d530 ("Toileting")]"
-16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#d530"
-16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
+0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+0 0     : 0ms  : Prepare include: "()"
+0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d530 ("Toileting")]"
+0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#d530"
+0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -2147,13 +2130,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[5]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c105973)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l17">log</a>, or see <a href="#vmi498" onClick="document.getElementById('vmi498').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi498" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -2169,13 +2152,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[6]&#8203;.code[0]&#8203;.display (l1&#8203;/c107050)</b></td><td><b>information</b></td><td><b>'Changing basic body position' is the default display; the code system http://hl7.org/fhir/sid/icf has no Display Names for the language fr</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l29">log</a>, or see <a href="#vmi500" onClick="document.getElementById('vmi500').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_LANG_NONE</span><div id="vmi500" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d410 ("Changing basic body position")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#d410"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d410 ("Changing basic body position")]"
+15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#d410"
+15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -2191,13 +2174,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[6]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c107366)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l17">log</a>, or see <a href="#vmi502" onClick="document.getElementById('vmi502').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi502" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -2213,13 +2196,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[7]&#8203;.code[0]&#8203;.display (l1&#8203;/c108470)</b></td><td><b>information</b></td><td><b>'Moving around within the home' is the default display; the code system http://hl7.org/fhir/sid/icf has no Display Names for the language fr</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l30">log</a>, or see <a href="#vmi504" onClick="document.getElementById('vmi504').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_LANG_NONE</span><div id="vmi504" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d4600 ("Moving around within the home")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#d4600"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d4600 ("Moving around within the home")]"
+15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#d4600"
+15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -2235,13 +2218,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[7]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c108774)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l17">log</a>, or see <a href="#vmi506" onClick="document.getElementById('vmi506').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi506" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -2279,13 +2262,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[8]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c110242)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l17">log</a>, or see <a href="#vmi510" onClick="document.getElementById('vmi510').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi510" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -2323,13 +2306,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[9]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c111752)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l17">log</a>, or see <a href="#vmi514" onClick="document.getElementById('vmi514').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi514" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -2446,13 +2429,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>QuestionnaireResponse&#8203;.item[0]&#8203;.answer[0]&#8203;.item[5]&#8203;.answer[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l297&#8203;/c20)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l17">log</a>, or see <a href="#vmi523" onClick="document.getElementById('vmi523').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi523" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -2468,13 +2451,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>QuestionnaireResponse&#8203;.item[0]&#8203;.answer[0]&#8203;.item[7]&#8203;.answer[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l399&#8203;/c20)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l17">log</a>, or see <a href="#vmi525" onClick="document.getElementById('vmi525').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi525" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -2490,24 +2473,24 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>QuestionnaireResponse&#8203;.item[0]&#8203;.answer[0]&#8203;.item[9]&#8203;.answer[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l501&#8203;/c20)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l17">log</a>, or see <a href="#vmi527" onClick="document.getElementById('vmi527').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi527" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>QuestionnaireResponse&#8203;.item[0]&#8203;.answer[0]&#8203;.item[10]&#8203;.answer[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l552&#8203;/c20)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l17">log</a>, or see <a href="#vmi528" onClick="document.getElementById('vmi528').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi528" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -2613,24 +2596,24 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>QuestionnaireResponse&#8203;.item[0]&#8203;.answer[0]&#8203;.item[4]&#8203;.answer[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l246&#8203;/c20)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l17">log</a>, or see <a href="#vmi538" onClick="document.getElementById('vmi538').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi538" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>QuestionnaireResponse&#8203;.item[0]&#8203;.answer[0]&#8203;.item[5]&#8203;.answer[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l297&#8203;/c20)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l17">log</a>, or see <a href="#vmi539" onClick="document.getElementById('vmi539').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi539" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -2819,13 +2802,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[36]&#8203;.type[0]&#8203;.extension[1] (l1&#8203;/c129254)</b></td><td><b>information</b></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/regex|5.2.0 is deprecated with the note: 'This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DEPENDS_ON_DEPRECATED_NOTE</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[36]&#8203;.type[0]&#8203;.extension[1] (l1&#8203;/c129258)</b></td><td><b>information</b></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/regex|5.2.0 is deprecated with the note: 'This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DEPENDS_ON_DEPRECATED_NOTE</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[16]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c232599)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[16]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c232603)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[53]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c147416)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[53]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c147420)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
    </tr>
 </table>
 <hr/>
@@ -2881,121 +2864,121 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[21]&#8203;.constraint[1] (l1&#8203;/c102276)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them (expression.exists())'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[21]&#8203;.constraint[1] (l1&#8203;/c102326)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them (expression.exists())'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[21]&#8203;.binding&#8203;.valueSet (l1&#8203;/c102467)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20251029120000', found versions: 1.3.0 (from ans.fr.nos#1.3.0), 20251029120000 (from ans.fr.terminologies#1.4.0). Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS' to 'https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS|20251029120000'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[21]&#8203;.binding&#8203;.valueSet (l1&#8203;/c102517)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20251029120000', found versions: 1.3.0 (from ans.fr.nos#1.3.0), 20251029120000 (from ans.fr.terminologies#1.4.0). Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS' to 'https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS|20251029120000'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[22]&#8203;.constraint[1] (l1&#8203;/c104662)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them (expression.exists())'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[22]&#8203;.constraint[1] (l1&#8203;/c104712)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them (expression.exists())'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[22]&#8203;.binding&#8203;.valueSet (l1&#8203;/c104855)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20230922120000', found versions: 1.3.0 (from ans.fr.nos#1.3.0), 20230922120000 (from ans.fr.terminologies#1.4.0). Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS' to 'https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS|20230922120000'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[22]&#8203;.binding&#8203;.valueSet (l1&#8203;/c104905)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20230922120000', found versions: 1.3.0 (from ans.fr.nos#1.3.0), 20230922120000 (from ans.fr.terminologies#1.4.0). Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS' to 'https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS|20230922120000'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[35]&#8203;.constraint[1] (l1&#8203;/c124306)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them (expression.exists())'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[35]&#8203;.constraint[1] (l1&#8203;/c124356)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them (expression.exists())'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[51]&#8203;.constraint[1] (l1&#8203;/c144875)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them (expression.exists())'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[51]&#8203;.constraint[1] (l1&#8203;/c144925)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them (expression.exists())'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[51]&#8203;.binding&#8203;.valueSet (l1&#8203;/c145070)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20251029120000', found versions: 1.3.0 (from ans.fr.nos#1.3.0), 20251029120000 (from ans.fr.terminologies#1.4.0). Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS' to 'https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS|20251029120000'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[51]&#8203;.binding&#8203;.valueSet (l1&#8203;/c145120)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20251029120000', found versions: 1.3.0 (from ans.fr.nos#1.3.0), 20251029120000 (from ans.fr.terminologies#1.4.0). Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS' to 'https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS|20251029120000'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[57]&#8203;.constraint[1] (l1&#8203;/c153836)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them (expression.exists())'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[57]&#8203;.constraint[1] (l1&#8203;/c153886)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them (expression.exists())'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[57]&#8203;.binding&#8203;.valueSet (l1&#8203;/c154181)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-ActCode'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '3.0.0', found versions: 2.0.0 (from hl7.terminology.r4#5.0.0), 3.0.0 (from hl7.terminology.r4#7.0.0). Suggested fix: change the canonical reference from 'http://terminology.hl7.org/ValueSet/v3-ActCode' to 'http://terminology.hl7.org/ValueSet/v3-ActCode|3.0.0'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[57]&#8203;.binding&#8203;.valueSet (l1&#8203;/c154231)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-ActCode'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '3.0.0', found versions: 2.0.0 (from hl7.terminology.r4#5.0.0), 3.0.0 (from hl7.terminology.r4#7.0.0). Suggested fix: change the canonical reference from 'http://terminology.hl7.org/ValueSet/v3-ActCode' to 'http://terminology.hl7.org/ValueSet/v3-ActCode|3.0.0'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[59]&#8203;.constraint[1] (l1&#8203;/c156762)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them (expression.exists())'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[59]&#8203;.constraint[1] (l1&#8203;/c156812)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them (expression.exists())'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[59]&#8203;.binding&#8203;.valueSet (l1&#8203;/c156990)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS/FHIR/JDV-J02-XdsHealthcareFacilityTypeCode-CISIS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20250523120000', found versions: 1.3.0 (from ans.fr.nos#1.3.0), 20250523120000 (from ans.fr.terminologies#1.4.0). Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS/FHIR/JDV-J02-XdsHealthcareFacilityTypeCode-CISIS' to 'https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS/FHIR/JDV-J02-XdsHealthcareFacilityTypeCode-CISIS|20250523120000'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[59]&#8203;.binding&#8203;.valueSet (l1&#8203;/c157040)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS/FHIR/JDV-J02-XdsHealthcareFacilityTypeCode-CISIS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20250523120000', found versions: 1.3.0 (from ans.fr.nos#1.3.0), 20250523120000 (from ans.fr.terminologies#1.4.0). Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS/FHIR/JDV-J02-XdsHealthcareFacilityTypeCode-CISIS' to 'https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS/FHIR/JDV-J02-XdsHealthcareFacilityTypeCode-CISIS|20250523120000'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[60]&#8203;.constraint[1] (l1&#8203;/c159180)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them (expression.exists())'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[60]&#8203;.constraint[1] (l1&#8203;/c159230)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them (expression.exists())'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[60]&#8203;.binding&#8203;.valueSet (l1&#8203;/c159394)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J04-XdsPracticeSettingCode-CISIS/FHIR/JDV-J04-XdsPracticeSettingCode-CISIS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20240927120000', found versions: 1.3.0 (from ans.fr.nos#1.3.0), 20240927120000 (from ans.fr.terminologies#1.4.0). Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J04-XdsPracticeSettingCode-CISIS/FHIR/JDV-J04-XdsPracticeSettingCode-CISIS' to 'https://mos.esante.gouv.fr/NOS/JDV_J04-XdsPracticeSettingCode-CISIS/FHIR/JDV-J04-XdsPracticeSettingCode-CISIS|20240927120000'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[60]&#8203;.binding&#8203;.valueSet (l1&#8203;/c159444)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J04-XdsPracticeSettingCode-CISIS/FHIR/JDV-J04-XdsPracticeSettingCode-CISIS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20240927120000', found versions: 1.3.0 (from ans.fr.nos#1.3.0), 20240927120000 (from ans.fr.terminologies#1.4.0). Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J04-XdsPracticeSettingCode-CISIS/FHIR/JDV-J04-XdsPracticeSettingCode-CISIS' to 'https://mos.esante.gouv.fr/NOS/JDV_J04-XdsPracticeSettingCode-CISIS/FHIR/JDV-J04-XdsPracticeSettingCode-CISIS|20240927120000'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[4]&#8203;.constraint[0] (l1&#8203;/c163744)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them (expression.exists())'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[4]&#8203;.constraint[0] (l1&#8203;/c163794)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them (expression.exists())'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[4]&#8203;.binding&#8203;.valueSet (l1&#8203;/c163880)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20251029120000', found versions: 1.3.0 (from ans.fr.nos#1.3.0), 20251029120000 (from ans.fr.terminologies#1.4.0). Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS' to 'https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS|20251029120000'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[4]&#8203;.binding&#8203;.valueSet (l1&#8203;/c163930)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20251029120000', found versions: 1.3.0 (from ans.fr.nos#1.3.0), 20251029120000 (from ans.fr.terminologies#1.4.0). Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS' to 'https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS|20251029120000'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[5]&#8203;.constraint[0] (l1&#8203;/c164712)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them (expression.exists())'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[5]&#8203;.constraint[0] (l1&#8203;/c164762)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them (expression.exists())'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[5]&#8203;.binding&#8203;.valueSet (l1&#8203;/c164850)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20230922120000', found versions: 1.3.0 (from ans.fr.nos#1.3.0), 20230922120000 (from ans.fr.terminologies#1.4.0). Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS' to 'https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS|20230922120000'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[5]&#8203;.binding&#8203;.valueSet (l1&#8203;/c164900)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20230922120000', found versions: 1.3.0 (from ans.fr.nos#1.3.0), 20230922120000 (from ans.fr.terminologies#1.4.0). Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS' to 'https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS|20230922120000'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[11]&#8203;.constraint[0] (l1&#8203;/c167681)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them (expression.exists())'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[11]&#8203;.constraint[0] (l1&#8203;/c167731)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them (expression.exists())'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[19]&#8203;.constraint[0] (l1&#8203;/c169691)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them (expression.exists())'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[19]&#8203;.constraint[0] (l1&#8203;/c169741)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them (expression.exists())'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[19]&#8203;.binding&#8203;.valueSet (l1&#8203;/c169831)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20251029120000', found versions: 1.3.0 (from ans.fr.nos#1.3.0), 20251029120000 (from ans.fr.terminologies#1.4.0). Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS' to 'https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS|20251029120000'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[19]&#8203;.binding&#8203;.valueSet (l1&#8203;/c169881)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20251029120000', found versions: 1.3.0 (from ans.fr.nos#1.3.0), 20251029120000 (from ans.fr.terminologies#1.4.0). Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS' to 'https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS|20251029120000'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[21]&#8203;.constraint[0] (l1&#8203;/c170532)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them (expression.exists())'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[21]&#8203;.constraint[0] (l1&#8203;/c170582)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them (expression.exists())'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[22]&#8203;.constraint[0] (l1&#8203;/c171462)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them (expression.exists())'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[22]&#8203;.constraint[0] (l1&#8203;/c171512)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them (expression.exists())'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[22]&#8203;.binding&#8203;.valueSet (l1&#8203;/c171634)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS/FHIR/JDV-J02-XdsHealthcareFacilityTypeCode-CISIS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20250523120000', found versions: 1.3.0 (from ans.fr.nos#1.3.0), 20250523120000 (from ans.fr.terminologies#1.4.0). Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS/FHIR/JDV-J02-XdsHealthcareFacilityTypeCode-CISIS' to 'https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS/FHIR/JDV-J02-XdsHealthcareFacilityTypeCode-CISIS|20250523120000'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[22]&#8203;.binding&#8203;.valueSet (l1&#8203;/c171684)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS/FHIR/JDV-J02-XdsHealthcareFacilityTypeCode-CISIS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20250523120000', found versions: 1.3.0 (from ans.fr.nos#1.3.0), 20250523120000 (from ans.fr.terminologies#1.4.0). Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS/FHIR/JDV-J02-XdsHealthcareFacilityTypeCode-CISIS' to 'https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS/FHIR/JDV-J02-XdsHealthcareFacilityTypeCode-CISIS|20250523120000'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[23]&#8203;.constraint[0] (l1&#8203;/c172543)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them (expression.exists())'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[23]&#8203;.constraint[0] (l1&#8203;/c172593)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them (expression.exists())'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-21</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[23]&#8203;.binding&#8203;.valueSet (l1&#8203;/c172701)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J04-XdsPracticeSettingCode-CISIS/FHIR/JDV-J04-XdsPracticeSettingCode-CISIS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20240927120000', found versions: 1.3.0 (from ans.fr.nos#1.3.0), 20240927120000 (from ans.fr.terminologies#1.4.0). Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J04-XdsPracticeSettingCode-CISIS/FHIR/JDV-J04-XdsPracticeSettingCode-CISIS' to 'https://mos.esante.gouv.fr/NOS/JDV_J04-XdsPracticeSettingCode-CISIS/FHIR/JDV-J04-XdsPracticeSettingCode-CISIS|20240927120000'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[23]&#8203;.binding&#8203;.valueSet (l1&#8203;/c172751)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J04-XdsPracticeSettingCode-CISIS/FHIR/JDV-J04-XdsPracticeSettingCode-CISIS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20240927120000', found versions: 1.3.0 (from ans.fr.nos#1.3.0), 20240927120000 (from ans.fr.terminologies#1.4.0). Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J04-XdsPracticeSettingCode-CISIS/FHIR/JDV-J04-XdsPracticeSettingCode-CISIS' to 'https://mos.esante.gouv.fr/NOS/JDV_J04-XdsPracticeSettingCode-CISIS/FHIR/JDV-J04-XdsPracticeSettingCode-CISIS|20240927120000'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[4]&#8203;.constraint[0] (l1&#8203;/c163744)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-type' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[4]&#8203;.constraint[0] (l1&#8203;/c163794)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-type' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[5]&#8203;.constraint[0] (l1&#8203;/c164712)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-category' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[5]&#8203;.constraint[0] (l1&#8203;/c164762)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-category' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[11]&#8203;.constraint[0] (l1&#8203;/c167681)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-securityLabel' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[11]&#8203;.constraint[0] (l1&#8203;/c167731)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-securityLabel' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[19]&#8203;.constraint[0] (l1&#8203;/c169691)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-format' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[19]&#8203;.constraint[0] (l1&#8203;/c169741)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-format' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[21]&#8203;.constraint[0] (l1&#8203;/c170532)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-context-event' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[21]&#8203;.constraint[0] (l1&#8203;/c170582)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-context-event' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[22]&#8203;.constraint[0] (l1&#8203;/c171462)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-ProducteurDoc-simplified' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[22]&#8203;.constraint[0] (l1&#8203;/c171512)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-ProducteurDoc-simplified' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[23]&#8203;.constraint[0] (l1&#8203;/c172543)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-ProducteurDoc-simplified' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[23]&#8203;.constraint[0] (l1&#8203;/c172593)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-ProducteurDoc-simplified' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[21]&#8203;.constraint[1] (l1&#8203;/c102276)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-type' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[21]&#8203;.constraint[1] (l1&#8203;/c102326)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-type' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[22]&#8203;.constraint[1] (l1&#8203;/c104662)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-category' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[22]&#8203;.constraint[1] (l1&#8203;/c104712)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-category' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[35]&#8203;.constraint[1] (l1&#8203;/c124306)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-securityLabel' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[35]&#8203;.constraint[1] (l1&#8203;/c124356)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-securityLabel' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[51]&#8203;.constraint[1] (l1&#8203;/c144875)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-format' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[51]&#8203;.constraint[1] (l1&#8203;/c144925)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-format' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[57]&#8203;.constraint[1] (l1&#8203;/c153836)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-context-event' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[57]&#8203;.constraint[1] (l1&#8203;/c153886)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-context-event' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[59]&#8203;.constraint[1] (l1&#8203;/c156762)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-ProducteurDoc-simplified' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[59]&#8203;.constraint[1] (l1&#8203;/c156812)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-ProducteurDoc-simplified' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[60]&#8203;.constraint[1] (l1&#8203;/c159180)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-ProducteurDoc-simplified' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[60]&#8203;.constraint[1] (l1&#8203;/c159230)</b></td><td><b>information</b></td><td><b>The constraint 'constr-bind-ProducteurDoc-simplified' has no computable expression, so validators will not be able to check it</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">ED_INVARIANT_NO_EXPRESSION</span></td>
    </tr>
 </table>
 <hr/>
@@ -3008,31 +2991,31 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[51]&#8203;.example[1]&#8203;.value&#8203;.ofType(uri) (l1&#8203;/c236220)</b></td><td><b>warning</b></td><td><b>No definition could be found for URL value '1.2.250.1.71.4.2.2.1330780321'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_URL_Resolve</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[51]&#8203;.example[1]&#8203;.value&#8203;.ofType(uri) (l1&#8203;/c236224)</b></td><td><b>warning</b></td><td><b>No definition could be found for URL value '1.2.250.1.71.4.2.2.1330780321'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_URL_Resolve</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[51]&#8203;.example[2]&#8203;.value&#8203;.ofType(uri) (l1&#8203;/c236334)</b></td><td><b>warning</b></td><td><b>No definition could be found for URL value 'http://hopitalTest.fr/fhir/namingsystem/encounters'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_URL_Resolve</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[51]&#8203;.example[2]&#8203;.value&#8203;.ofType(uri) (l1&#8203;/c236338)</b></td><td><b>warning</b></td><td><b>No definition could be found for URL value 'http://hopitalTest.fr/fhir/namingsystem/encounters'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_URL_Resolve</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[66]&#8203;.binding&#8203;.valueSet (l1&#8203;/c253377)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-ActEncounterCode'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '3.0.0', found versions: 2.0.0 (from hl7.terminology.r4#5.0.0), 3.0.0 (from hl7.terminology.r4#7.0.0). Suggested fix: change the canonical reference from 'http://terminology.hl7.org/ValueSet/v3-ActEncounterCode' to 'http://terminology.hl7.org/ValueSet/v3-ActEncounterCode|3.0.0'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[66]&#8203;.binding&#8203;.valueSet (l1&#8203;/c253381)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-ActEncounterCode'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '3.0.0', found versions: 2.0.0 (from hl7.terminology.r4#5.0.0), 3.0.0 (from hl7.terminology.r4#7.0.0). Suggested fix: change the canonical reference from 'http://terminology.hl7.org/ValueSet/v3-ActEncounterCode' to 'http://terminology.hl7.org/ValueSet/v3-ActEncounterCode|3.0.0'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[78]&#8203;.binding&#8203;.valueSet (l1&#8203;/c268835)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-ActEncounterCode'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '3.0.0', found versions: 2.0.0 (from hl7.terminology.r4#5.0.0), 3.0.0 (from hl7.terminology.r4#7.0.0). Suggested fix: change the canonical reference from 'http://terminology.hl7.org/ValueSet/v3-ActEncounterCode' to 'http://terminology.hl7.org/ValueSet/v3-ActEncounterCode|3.0.0'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[78]&#8203;.binding&#8203;.valueSet (l1&#8203;/c268839)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-ActEncounterCode'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '3.0.0', found versions: 2.0.0 (from hl7.terminology.r4#5.0.0), 3.0.0 (from hl7.terminology.r4#7.0.0). Suggested fix: change the canonical reference from 'http://terminology.hl7.org/ValueSet/v3-ActEncounterCode' to 'http://terminology.hl7.org/ValueSet/v3-ActEncounterCode|3.0.0'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[118]&#8203;.binding&#8203;.valueSet (l1&#8203;/c317394)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-ActPriority'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '3.0.0', found versions: 2.0.0 (from hl7.terminology.r4#5.0.0), 3.0.0 (from hl7.terminology.r4#7.0.0). Suggested fix: change the canonical reference from 'http://terminology.hl7.org/ValueSet/v3-ActPriority' to 'http://terminology.hl7.org/ValueSet/v3-ActPriority|3.0.0'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[118]&#8203;.binding&#8203;.valueSet (l1&#8203;/c317398)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-ActPriority'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '3.0.0', found versions: 2.0.0 (from hl7.terminology.r4#5.0.0), 3.0.0 (from hl7.terminology.r4#7.0.0). Suggested fix: change the canonical reference from 'http://terminology.hl7.org/ValueSet/v3-ActPriority' to 'http://terminology.hl7.org/ValueSet/v3-ActPriority|3.0.0'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[18]&#8203;.example[0]&#8203;.value&#8203;.ofType(uri) (l1&#8203;/c415729)</b></td><td><b>warning</b></td><td><b>No definition could be found for URL value '1.2.250.1.71.4.2.2.1330780321'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_URL_Resolve</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[18]&#8203;.example[0]&#8203;.value&#8203;.ofType(uri) (l1&#8203;/c415733)</b></td><td><b>warning</b></td><td><b>No definition could be found for URL value '1.2.250.1.71.4.2.2.1330780321'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_URL_Resolve</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[18]&#8203;.example[1]&#8203;.value&#8203;.ofType(uri) (l1&#8203;/c415843)</b></td><td><b>warning</b></td><td><b>No definition could be found for URL value 'http://hopitalTest.fr/fhir/namingsystem/encounters'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_URL_Resolve</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[18]&#8203;.example[1]&#8203;.value&#8203;.ofType(uri) (l1&#8203;/c415847)</b></td><td><b>warning</b></td><td><b>No definition could be found for URL value 'http://hopitalTest.fr/fhir/namingsystem/encounters'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_URL_Resolve</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[26]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c417380)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[26]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c417384)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[41]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c420105)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[41]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c420109)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[0]&#8203;.constraint[5] (l1&#8203;/c177721)</b></td><td><b>warning</b></td><td><b>MatDetailOnlyIfTypeOrg206: The left side is inherently a collection, and so the expression 'Encounter.extension.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used').extension.where(url = 'TDDUIRessourceType').value.coding.code = 'ORG-206'' may fail or return false if there is more than one item in the content being evaluated</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">FHIRPATH_COLLECTION_STATUS_OPERATION_LEFT</span></td>
@@ -3041,10 +3024,10 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[0]&#8203;.constraint[6] (l1&#8203;/c178578)</b></td><td><b>warning</b></td><td><b>FacilityOnlyIfTypeOrg207: The left side is inherently a collection, and so the expression 'Encounter.extension.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used').extension.where(url = 'TDDUIRessourceType').value.coding.code = 'ORG-207'' may fail or return false if there is more than one item in the content being evaluated</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">FHIRPATH_COLLECTION_STATUS_OPERATION_LEFT</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[80]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c269656)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[80]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c269660)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[122]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c321466)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[122]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c321470)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
    </tr>
 </table>
 <hr/>
@@ -3174,10 +3157,10 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[9]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c149020)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[9]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c149024)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[42]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c119659)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[42]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c119663)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
    </tr>
 </table>
 <hr/>
@@ -3190,10 +3173,10 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[23]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c232602)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[23]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c232606)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[58]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c190191)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[58]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c190195)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
    </tr>
 </table>
 <hr/>
@@ -3444,7 +3427,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[48]&#8203;.binding&#8203;.valueSet (l1&#8203;/c99677)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '3.0.0', found versions: 2.0.0 (from hl7.terminology.r4#5.0.0), 3.0.0 (from hl7.terminology.r4#7.0.0). Suggested fix: change the canonical reference from 'http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType' to 'http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType|3.0.0'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[48]&#8203;.binding&#8203;.valueSet (l1&#8203;/c99681)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '3.0.0', found versions: 2.0.0 (from hl7.terminology.r4#5.0.0), 3.0.0 (from hl7.terminology.r4#7.0.0). Suggested fix: change the canonical reference from 'http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType' to 'http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType|3.0.0'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
    </tr>
 </table>
 <hr/>
