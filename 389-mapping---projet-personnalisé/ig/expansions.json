@@ -1,14 +1,17 @@
 {
   "resourceType" : "Bundle",
-  "id" : "7bc880b8-b527-49ef-b1b8-f5881666fa19",
+  "id" : "97553f79-2d60-4fdd-b597-ea3298637ec8",
   "meta" : {
-    "lastUpdated" : "2025-12-10T17:05:10.249+00:00"
+    "lastUpdated" : "2025-12-11T09:07:04.361+00:00"
   },
   "type" : "collection",
   "entry" : [{
     "fullUrl" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-care-plan-supportingInfo-vs",
     "resource" : {
       "resourceType" : "ValueSet",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+      },
       "text" : {
         "status" : "generated",
         "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion effectuée en interne basée sur :</p><ul><li><a href=\"CodeSystem-tddui-discriminator-cs.html\">codesystem TDDUI Discriminator CodeSystem v2.1.0-ballot (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs|2.1.0-ballot\" title=\"Cliquer pour copier lURL\" class=\"btn-copy\"> </button></span></li><li><a href=\"ValueSet-tddui-discriminator-vs.html\">valueset TDDUI Discriminator ValueSet v2.1.0-ballot (ValueSet)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-discriminator-vs|2.1.0-ballot\" title=\"Cliquer pour copier lURL\" class=\"btn-copy\"> </button></span></li></ul></div><p>Ce jeu de valeur (ValueSet) contient 2 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>Système</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage (fr)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs-accordUsager\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-tddui-discriminator-cs.html#tddui-discriminator-cs-accordUsager\">accordUsager</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs&quot;, &quot;version&quot;: &quot;2.1.0-ballot&quot;, &quot;code&quot;: &quot;accordUsager&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs&quot;&gt;&lt;version value=&quot;2.1.0-ballot&quot;&gt;&lt;code value=&quot;accordUsager&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs-accordStructure\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-tddui-discriminator-cs.html#tddui-discriminator-cs-accordStructure\">accordStructure</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs&quot;, &quot;version&quot;: &quot;2.1.0-ballot&quot;, &quot;code&quot;: &quot;accordStructure&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs&quot;&gt;&lt;version value=&quot;2.1.0-ballot&quot;&gt;&lt;code value=&quot;accordStructure&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
@@ -18,7 +21,8 @@
       "name" : "TDDUICarePlanSupportingInfoVS",
       "title" : "TDDUI CarePlan supportingInfo ValueSet",
       "status" : "active",
-      "date" : "2025-12-10T17:05:10+00:00",
+      "experimental" : false,
+      "date" : "2025-12-11T09:07:04+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -27,8 +31,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:b3c64458-43fe-4ea2-a916-77cf3fffbd9f",
-        "timestamp" : "2025-12-10T17:08:55+00:00",
+        "identifier" : "urn:uuid:7a51f561-79b2-440b-bdf7-e45007d271a5",
+        "timestamp" : "2025-12-11T09:10:57+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -70,6 +74,9 @@
     "fullUrl" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-discriminator-vs",
     "resource" : {
       "resourceType" : "ValueSet",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+      },
       "text" : {
         "status" : "generated",
         "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion effectuée en interne basée sur <a href=\"CodeSystem-tddui-discriminator-cs.html\">codesystem TDDUI Discriminator CodeSystem v2.1.0-ballot (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs|2.1.0-ballot\" title=\"Cliquer pour copier lURL\" class=\"btn-copy\"> </button></span></p><p>Ce jeu de valeur (ValueSet) contient 7 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>Système</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage (fr)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs-accordUsager\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-tddui-discriminator-cs.html#tddui-discriminator-cs-accordUsager\">accordUsager</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs&quot;, &quot;version&quot;: &quot;2.1.0-ballot&quot;, &quot;code&quot;: &quot;accordUsager&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs&quot;&gt;&lt;version value=&quot;2.1.0-ballot&quot;&gt;&lt;code value=&quot;accordUsager&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs-accordStructure\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-tddui-discriminator-cs.html#tddui-discriminator-cs-accordStructure\">accordStructure</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs&quot;, &quot;version&quot;: &quot;2.1.0-ballot&quot;, &quot;code&quot;: &quot;accordStructure&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs&quot;&gt;&lt;version value=&quot;2.1.0-ballot&quot;&gt;&lt;code value=&quot;accordStructure&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs-titreObjectif\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-tddui-discriminator-cs.html#tddui-discriminator-cs-titreObjectif\">titreObjectif</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs&quot;, &quot;version&quot;: &quot;2.1.0-ballot&quot;, &quot;code&quot;: &quot;titreObjectif&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs&quot;&gt;&lt;version value=&quot;2.1.0-ballot&quot;&gt;&lt;code value=&quot;titreObjectif&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs-avisUsagerObjectif\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-tddui-discriminator-cs.html#tddui-discriminator-cs-avisUsagerObjectif\">avisUsagerObjectif</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs&quot;, &quot;version&quot;: &quot;2.1.0-ballot&quot;, &quot;code&quot;: &quot;avisUsagerObjectif&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs&quot;&gt;&lt;version value=&quot;2.1.0-ballot&quot;&gt;&lt;code value=&quot;avisUsagerObjectif&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs-strategieMiseEnOeuvreObjectif\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-tddui-discriminator-cs.html#tddui-discriminator-cs-strategieMiseEnOeuvreObjectif\">strategieMiseEnOeuvreObjectif</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs&quot;, &quot;version&quot;: &quot;2.1.0-ballot&quot;, &quot;code&quot;: &quot;strategieMiseEnOeuvreObjectif&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs&quot;&gt;&lt;version value=&quot;2.1.0-ballot&quot;&gt;&lt;code value=&quot;strategieMiseEnOeuvreObjectif&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs-origineAttente\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-tddui-discriminator-cs.html#tddui-discriminator-cs-origineAttente\">origineAttente</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs&quot;, &quot;version&quot;: &quot;2.1.0-ballot&quot;, &quot;code&quot;: &quot;origineAttente&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs&quot;&gt;&lt;version value=&quot;2.1.0-ballot&quot;&gt;&lt;code value=&quot;origineAttente&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs-commentaireAttente\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-tddui-discriminator-cs.html#tddui-discriminator-cs-commentaireAttente\">commentaireAttente</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs&quot;, &quot;version&quot;: &quot;2.1.0-ballot&quot;, &quot;code&quot;: &quot;commentaireAttente&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs&quot;&gt;&lt;version value=&quot;2.1.0-ballot&quot;&gt;&lt;code value=&quot;commentaireAttente&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
@@ -79,7 +86,8 @@
       "name" : "TDDUIDiscriminatorVS",
       "title" : "TDDUI Discriminator ValueSet",
       "status" : "active",
-      "date" : "2025-12-10T17:05:10+00:00",
+      "experimental" : false,
+      "date" : "2025-12-11T09:07:04+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -88,8 +96,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:330a3c8e-c1e6-425d-ba31-be01a550fccd",
-        "timestamp" : "2025-12-10T17:08:55+00:00",
+        "identifier" : "urn:uuid:8b5c99bd-c13f-4c6b-b681-29a5a9139bdc",
+        "timestamp" : "2025-12-11T09:10:57+00:00",
         "total" : 7,
         "offset" : 0,
         "parameter" : [{
@@ -147,6 +155,9 @@
     "fullUrl" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-goal-attente-note-vs",
     "resource" : {
       "resourceType" : "ValueSet",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+      },
       "text" : {
         "status" : "generated",
         "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion effectuée en interne basée sur :</p><ul><li><a href=\"CodeSystem-tddui-discriminator-cs.html\">codesystem TDDUI Discriminator CodeSystem v2.1.0-ballot (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs|2.1.0-ballot\" title=\"Cliquer pour copier lURL\" class=\"btn-copy\"> </button></span></li><li><a href=\"ValueSet-tddui-discriminator-vs.html\">valueset TDDUI Discriminator ValueSet v2.1.0-ballot (ValueSet)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-discriminator-vs|2.1.0-ballot\" title=\"Cliquer pour copier lURL\" class=\"btn-copy\"> </button></span></li></ul></div><p>Ce jeu de valeur (ValueSet) contient 2 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>Système</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage (fr)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs-origineAttente\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-tddui-discriminator-cs.html#tddui-discriminator-cs-origineAttente\">origineAttente</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs&quot;, &quot;version&quot;: &quot;2.1.0-ballot&quot;, &quot;code&quot;: &quot;origineAttente&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs&quot;&gt;&lt;version value=&quot;2.1.0-ballot&quot;&gt;&lt;code value=&quot;origineAttente&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs-commentaireAttente\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-tddui-discriminator-cs.html#tddui-discriminator-cs-commentaireAttente\">commentaireAttente</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs&quot;, &quot;version&quot;: &quot;2.1.0-ballot&quot;, &quot;code&quot;: &quot;commentaireAttente&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs&quot;&gt;&lt;version value=&quot;2.1.0-ballot&quot;&gt;&lt;code value=&quot;commentaireAttente&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
@@ -156,7 +167,8 @@
       "name" : "TDDUIGoalAttenteNoteVS",
       "title" : "TDDUI Goal Attente Note ValueSet",
       "status" : "active",
-      "date" : "2025-12-10T17:05:10+00:00",
+      "experimental" : false,
+      "date" : "2025-12-11T09:07:04+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -165,8 +177,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:c1bf735b-e843-4873-bab7-052994b5629d",
-        "timestamp" : "2025-12-10T17:08:55+00:00",
+        "identifier" : "urn:uuid:6a287b53-b6c1-49c9-9683-faeb641fcbd2",
+        "timestamp" : "2025-12-11T09:10:57+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -208,6 +220,9 @@
     "fullUrl" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-goal-objectif-note-vs",
     "resource" : {
       "resourceType" : "ValueSet",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+      },
       "text" : {
         "status" : "generated",
         "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion effectuée en interne basée sur :</p><ul><li><a href=\"CodeSystem-tddui-discriminator-cs.html\">codesystem TDDUI Discriminator CodeSystem v2.1.0-ballot (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs|2.1.0-ballot\" title=\"Cliquer pour copier lURL\" class=\"btn-copy\"> </button></span></li><li><a href=\"ValueSet-tddui-discriminator-vs.html\">valueset TDDUI Discriminator ValueSet v2.1.0-ballot (ValueSet)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-discriminator-vs|2.1.0-ballot\" title=\"Cliquer pour copier lURL\" class=\"btn-copy\"> </button></span></li></ul></div><p>Ce jeu de valeur (ValueSet) contient 3 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>Système</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage (fr)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs-titreObjectif\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-tddui-discriminator-cs.html#tddui-discriminator-cs-titreObjectif\">titreObjectif</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs&quot;, &quot;version&quot;: &quot;2.1.0-ballot&quot;, &quot;code&quot;: &quot;titreObjectif&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs&quot;&gt;&lt;version value=&quot;2.1.0-ballot&quot;&gt;&lt;code value=&quot;titreObjectif&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs-avisUsagerObjectif\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-tddui-discriminator-cs.html#tddui-discriminator-cs-avisUsagerObjectif\">avisUsagerObjectif</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs&quot;, &quot;version&quot;: &quot;2.1.0-ballot&quot;, &quot;code&quot;: &quot;avisUsagerObjectif&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs&quot;&gt;&lt;version value=&quot;2.1.0-ballot&quot;&gt;&lt;code value=&quot;avisUsagerObjectif&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs-strategieMiseEnOeuvreObjectif\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-tddui-discriminator-cs.html#tddui-discriminator-cs-strategieMiseEnOeuvreObjectif\">strategieMiseEnOeuvreObjectif</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs&quot;, &quot;version&quot;: &quot;2.1.0-ballot&quot;, &quot;code&quot;: &quot;strategieMiseEnOeuvreObjectif&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs&quot;&gt;&lt;version value=&quot;2.1.0-ballot&quot;&gt;&lt;code value=&quot;strategieMiseEnOeuvreObjectif&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
@@ -217,7 +232,8 @@
       "name" : "TDDUIGoalObjectifNoteVS",
       "title" : "TDDUI Goal Objectif Note ValueSet",
       "status" : "active",
-      "date" : "2025-12-10T17:05:10+00:00",
+      "experimental" : false,
+      "date" : "2025-12-11T09:07:04+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -226,8 +242,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:bf31657f-ec12-4a4f-8e90-50b1b24a68d1",
-        "timestamp" : "2025-12-10T17:08:55+00:00",
+        "identifier" : "urn:uuid:128dea77-8085-4bb3-931b-5c358a691130",
+        "timestamp" : "2025-12-11T09:10:57+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -286,7 +302,7 @@
       "title" : "TDDUI SERAFIN ValueSet",
       "status" : "active",
       "experimental" : false,
-      "date" : "2025-12-10T17:05:10+00:00",
+      "date" : "2025-12-11T09:07:04+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -295,8 +311,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:0e028f37-0e58-4d50-9581-43370505db68",
-        "timestamp" : "2025-12-10T17:08:55+00:00",
+        "identifier" : "urn:uuid:99b02418-eb00-4a05-99e0-cbb4540c2188",
+        "timestamp" : "2025-12-11T09:10:57+00:00",
         "total" : 0,
         "offset" : 0,
         "parameter" : [{

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-discriminator-vs | *Version*:2.1.0-ballot |
-| Active as of 2025-12-10 | *Computable Name*:TDDUIDiscriminatorVS |
+| Active as of 2025-12-11 | *Computable Name*:TDDUIDiscriminatorVS |
 
  
 ValueSet définissant les codes discriminants. 
@@ -48,12 +48,16 @@ ValueSet définissant les codes discriminants.
 {
   "resourceType" : "ValueSet",
   "id" : "tddui-discriminator-vs",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+  },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-discriminator-vs",
   "version" : "2.1.0-ballot",
   "name" : "TDDUIDiscriminatorVS",
   "title" : "TDDUI Discriminator ValueSet",
   "status" : "active",
-  "date" : "2025-12-10T17:05:10+00:00",
+  "experimental" : false,
+  "date" : "2025-12-11T09:07:04+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

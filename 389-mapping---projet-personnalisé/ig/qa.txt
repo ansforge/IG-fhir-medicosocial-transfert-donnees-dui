@@ -1,9 +1,9 @@
 TDDUI : Validation Results
 =========================================
 
-err = 111, warn = 139, info = 96
-IG Publisher Version: 2.0.28
-Generated Wed Dec 10 17:10:24 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.tddui#2.1.0-ballot (canonical = https://interop.esante.gouv.fr/ig/fhir/tddui)
+err = 111, warn = 135, info = 96
+IG Publisher Version: 2.0.28 Out of date - current version is null
+Generated Thu Dec 11 09:12:23 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.tddui#2.1.0-ballot (canonical = https://interop.esante.gouv.fr/ig/fhir/tddui)
  Build Errors : 1 / 6 / 0
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Bundle-ExampleTDDUIBundle : 0 / 8 / 35
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CapabilityStatement-TDDUIConsommateur : 0 / 1 / 1
@@ -116,10 +116,10 @@ Generated Wed Dec 10 17:10:24 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.tddui
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Task-tddui-task-transport-example : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Task-tddui-task-transport-professionel-example : 0 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Task-tddui-task-transport-usager-example : 0 / 1 / 1
- /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/ValueSet-tddui-care-plan-supportingInfo-vs : 0 / 1 / 1
- /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/ValueSet-tddui-discriminator-vs : 0 / 1 / 1
- /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/ValueSet-tddui-goal-attente-note-vs : 0 / 1 / 1
- /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/ValueSet-tddui-goal-objectif-note-vs : 0 / 1 / 1
+ /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/ValueSet-tddui-care-plan-supportingInfo-vs : 0 / 0 / 1
+ /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/ValueSet-tddui-discriminator-vs : 0 / 0 / 1
+ /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/ValueSet-tddui-goal-attente-note-vs : 0 / 0 / 1
+ /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/ValueSet-tddui-goal-objectif-note-vs : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/ValueSet-tddui-serafin-valueset : 0 / 1 / 1
 </table>
 == n/a ==
@@ -578,12 +578,8 @@ WARNING: Task/tddui-task-transport-professionel-example: Task.identifier[0].syst
 == fsh-generated/resources/Task-tddui-task-transport-usager-example.json ==
 WARNING: Task/tddui-task-transport-usager-example: Task.identifier[0].system: No definition could be found for URL value 'https://identifiant-medicosocial-transportusager.esante.gouv.fr'
 == fsh-generated/resources/ValueSet-tddui-care-plan-supportingInfo-vs.json ==
-WARNING: ValueSet/tddui-care-plan-supportingInfo-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-tddui-discriminator-vs.json ==
-WARNING: ValueSet/tddui-discriminator-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-tddui-goal-attente-note-vs.json ==
-WARNING: ValueSet/tddui-goal-attente-note-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-tddui-goal-objectif-note-vs.json ==
-WARNING: ValueSet/tddui-goal-objectif-note-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-tddui-serafin-valueset.json ==
 WARNING: ValueSet/tddui-serafin-valueset: ValueSet.compose.include[0]: This value set has a single include with multiple imported value sets. Per issue https://jira.hl7.org/browse/FHIR-25179, there has been confusion in the past whether these value sets are unioned or intersectioned. If this value set is contained in a package published prior to March 31 2022, it will be treated as a union, otherwise it will be treated as an intersection. If want a union, split the value set imports across multiple includes

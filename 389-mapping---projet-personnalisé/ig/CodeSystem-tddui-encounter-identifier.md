@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier | *Version*:2.1.0-ballot |
-| Active as of 2025-12-10 | *Computable Name*:TDDUIEncounterIdentifier |
+| Active as of 2025-12-11 | *Computable Name*:TDDUIEncounterIdentifier |
 
  
 TDDUI Encounter's identifier 
@@ -37,7 +37,7 @@ TDDUI Encounter's identifier
   "title" : "TDDUI Encounter FR Core CodeSystem v2-0203",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-10T17:05:10+00:00",
+  "date" : "2025-12-11T09:07:04+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
