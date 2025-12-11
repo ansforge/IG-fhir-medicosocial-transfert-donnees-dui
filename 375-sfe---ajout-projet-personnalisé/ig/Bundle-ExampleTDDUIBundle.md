@@ -6,68 +6,6 @@
 
 ## Example Bundle: TDDUIBundleExample
 
-Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
-
-Bundle ExampleTDDUIBundle de type transaction
-
--------
-
-Entrée 1 - fullUrl = https://test-server.fr/Patient/tddui-patient-ins-example
-
-Ressource Patient :
-
-> 
-
-Profil: [TDDUI Patient INS](StructureDefinition-tddui-patient-ins.md)
-
-DUPONT Male, Date de Naissance :1947-04-03 ( NIR définitif (use: official, ))
--------
-
-Requête :
-
-```
-POST TDDUIPatientINS
-
-```
-
--------
-
-Entrée 2 - fullUrl = https://test-server.fr/Organization/tddui-organization-example
-
-Ressource Organization :
-
-> 
-
-Profil: [TDDUI Organization](StructureDefinition-tddui-organization.md)
-
-**identifier**: Identification nationale de structure définie par l’ANS dans le CI_SIS/1480787529**name**: Les Chênes Verts
-
-Requête :
-
-```
-POST TDDUIOrganization
-
-```
-
--------
-
-Entrée 3 - fullUrl = https://test-server.fr/Encounter/tddui-encounter-sejour-example
-
-Ressource Encounter :
-
-> 
-
-Profil: [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md)
-
-**Date d’admission**: 2023-04-11**Libellé mode d'entrée**: Date de début du suivi post-opératoire : 14/04/2023**Libellé mode de sortie**: Sortie prévisionnelle prévue pour le 5 mai 2023**Extension Definition for Encounter.plannedEndDate for Version 5.0**: 2023-05-05**identifier**: Identifiant du séjour/3480787529/147720425367411-SEJOUR-1012**status**: In Progress**class**:home health**subject**:[DUPONT Male, Date de Naissance :1947-04-03 ( NIR définitif (use: official, ))](Patient-tddui-patient-ins-example.md)**serviceProvider**:[Organization Les Chênes Verts](Organization-tddui-organization-example.md)
-
-Requête :
-
-```
-POST TDDUIEncounterSejour
-
-```
-
 
 
 ## Resource Content
