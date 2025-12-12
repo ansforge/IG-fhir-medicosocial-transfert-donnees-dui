@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-reason | *Version*:2.1.0-ballot |
-| Active as of 2025-12-11 | *Computable Name*:TDDUIEventReason |
+| Active as of 2025-12-12 | *Computable Name*:TDDUIEventReason |
 
 Contexte justifiant la réalisation de l’évènement.
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-event-reason.c
   "name" : "TDDUIEventReason",
   "title" : "Motif de l’évènement",
   "status" : "active",
-  "date" : "2025-12-11T13:02:12+00:00",
+  "date" : "2025-12-12T08:56:07+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

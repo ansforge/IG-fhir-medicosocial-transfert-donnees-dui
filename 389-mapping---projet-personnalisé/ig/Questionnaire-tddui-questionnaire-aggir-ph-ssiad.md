@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/Questionnaire/tddui-questionnaire-aggir-ph-ssiad | *Version*:2.1.0-ballot |
-| Active as of 2025-12-11 | *Computable Name*: |
+| Active as of 2025-12-12 | *Computable Name*: |
 
  
 Grille d'évaluation AGGIR PH SSIAD 
@@ -26,7 +26,7 @@ Grille d'évaluation AGGIR PH SSIAD
   "version" : "2.1.0-ballot",
   "title" : "Évaluation AGGIR PH SSIAD",
   "status" : "active",
-  "date" : "2025-12-11T13:02:12+00:00",
+  "date" : "2025-12-12T08:56:07+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

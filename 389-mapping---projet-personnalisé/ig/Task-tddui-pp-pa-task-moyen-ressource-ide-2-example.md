@@ -25,7 +25,7 @@ Profil: [TDDUI Task MoyenRessource](StructureDefinition-tddui-task-moyen-ressour
 | | | |
 | :--- | :--- | :--- |
 | - | **Type** | **Value[x]** |
-| * | Titre du moyen ou de la ressource à utiliser. | Moyens mis en œuvre pour l'objectif 2(avec rattachement SERAFIN‑PH) |
+| * | Titre du moyen ou de la ressource à utiliser. | Moyens mis en œuvre pour l'objectif 2 (avec rattachement SERAFIN‑PH) |
 
 
 
@@ -69,7 +69,7 @@ Profil: [TDDUI Task MoyenRessource](StructureDefinition-tddui-task-moyen-ressour
           }
         ]
       },
-      "valueString" : "Moyens mis en œuvre pour l'objectif 2(avec rattachement SERAFIN‑PH)"
+      "valueString" : "Moyens mis en œuvre pour l'objectif 2 (avec rattachement SERAFIN‑PH)"
     }
   ]
 }

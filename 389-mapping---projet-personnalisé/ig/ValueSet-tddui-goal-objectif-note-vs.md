@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-goal-objectif-note-vs | *Version*:2.1.0-ballot |
-| Active as of 2025-12-11 | *Computable Name*:TDDUIGoalObjectifNoteVS |
+| Active as of 2025-12-12 | *Computable Name*:TDDUIGoalObjectifNoteVS |
 
  
 ValueSet définissant les types de notes pour l'élément Goal.note. 
@@ -54,7 +54,7 @@ ValueSet définissant les types de notes pour l'élément Goal.note.
   "title" : "TDDUI Goal Objectif Note ValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-11T13:02:12+00:00",
+  "date" : "2025-12-12T08:56:07+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour | *Version*:2.1.0-ballot |
-| Active as of 2025-12-11 | *Computable Name*:TDDUIEncounterSejour |
+| Active as of 2025-12-12 | *Computable Name*:TDDUIEncounterSejour |
 
  
 Profil de la ressource Encounter permettant de regrouper les informations relatives au séjour d'un usager dans une structure ESSMS 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-sejo
   "name" : "TDDUIEncounterSejour",
   "title" : "TDDUI Encounter Sejour",
   "status" : "active",
-  "date" : "2025-12-11T13:02:12+00:00",
+  "date" : "2025-12-12T08:56:07+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
