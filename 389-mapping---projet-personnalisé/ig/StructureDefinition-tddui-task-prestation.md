@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-prestatio
   "name" : "TDDUITaskPrestation",
   "title" : "TDDUI Task Prestation",
   "status" : "active",
-  "date" : "2025-12-12T09:34:59+00:00",
+  "date" : "2025-12-12T10:25:32+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
