@@ -16,4 +16,4 @@ Description: "Exemple des moyens et ressources de l'objectif 2 dans le cadre du 
 
 * intent = #plan
 
-* input[titre].valueString = "Moyens mis en œuvre pour l'objectif 2(avec rattachement SERAFIN‑PH)"
+* input[titre].valueString = "Moyens mis en œuvre pour l'objectif 2 (avec rattachement SERAFIN‑PH)"
