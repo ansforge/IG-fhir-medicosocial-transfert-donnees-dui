@@ -3,6 +3,8 @@ Parent: FRCoreOrganizationProfile
 Id: tddui-organization
 Title: "TDDUI Organization"
 Description: "Profil de la ressource FRCoreOrganizationProfile permettant de représenter les entités juridiques." 
+
+* identifier.type from FRCoreValueSetOrganizationIdentifierType
 * identifier[idNatSt] 1..1
 
 Mapping:  ConceptMetier_TDDUIOganization
