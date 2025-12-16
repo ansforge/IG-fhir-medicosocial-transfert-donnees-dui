@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-participant-vs | *Version*:2.1.0-ballot |
-| Active as of 2025-12-05 | *Computable Name*:TDDUIEncounterParticipantVs |
+| Active as of 2025-12-16 | *Computable Name*:TDDUIEncounterParticipantVs |
 
  
 ValueSet for TDDUI Encounter's participants 
@@ -20,25 +20,9 @@ ValueSet for TDDUI Encounter's participants
 
 ### Définition logique (CLD)
 
-Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
-
-Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
-
-* Inclut tous les codes définis dans [`https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/TDDUIEncounterParticipant`](CodeSystem-TDDUIEncounterParticipant.md)version 📦2.1.0-ballot
-* Importe tous les codes contenu dans [Participant type](http://hl7.org/fhir/R4/valueset-encounter-participant-type.html)
-
  
 
 ### Expansion
-
-Expansion effectuée en interne basée sur :
-
-* [codesystem Participant type v1.0.1 (CodeSystem)](http://terminology.hl7.org/7.0.0/CodeSystem-participant-type.html)
-* [codesystem ParticipationType v5.0.0 (CodeSystem)](http://terminology.hl7.org/7.0.0/CodeSystem-v3-ParticipationType.html)
-* [codesystem TDDUI Encounter Participant Type v2.1.0-ballot (CodeSystem)](CodeSystem-TDDUIEncounterParticipant.md)
-* [valueset Participant type v4.0.1 (ValueSet)](http://hl7.org/fhir/R4/valueset-encounter-participant-type.html)
-
-Ce jeu de valeur (ValueSet) contient 13 concepts
 
 -------
 
@@ -70,7 +54,7 @@ Ce jeu de valeur (ValueSet) contient 13 concepts
   "title" : "TDDUI Encounter Participant ValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-05T08:38:20+00:00",
+  "date" : "2025-12-16T16:02:43+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

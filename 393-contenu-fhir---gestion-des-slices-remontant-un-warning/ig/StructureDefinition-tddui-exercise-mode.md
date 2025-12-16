@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exercise-mode | *Version*:2.1.0-ballot |
-| Active as of 2025-12-05 | *Computable Name*:TDDUIExerciseMode |
+| Active as of 2025-12-16 | *Computable Name*:TDDUIExerciseMode |
 
 Extension permettant de représenter le mode d'exercice du professionnel.
 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-exercise-mode.
   "name" : "TDDUIExerciseMode",
   "title" : "Mode d'exercice",
   "status" : "active",
-  "date" : "2025-12-05T08:38:20+00:00",
+  "date" : "2025-12-16T16:02:43+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

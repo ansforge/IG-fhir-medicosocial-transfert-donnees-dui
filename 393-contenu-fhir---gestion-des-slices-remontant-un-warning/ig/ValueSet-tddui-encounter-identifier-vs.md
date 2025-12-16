@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-identifier-vs | *Version*:2.1.0-ballot |
-| Active as of 2025-12-05 | *Computable Name*:TDDUIEncounterIdentifierVs |
+| Active as of 2025-12-16 | *Computable Name*:TDDUIEncounterIdentifierVs |
 
  
 ValueSet for TDDUI Encounter's identifier types 
@@ -20,24 +20,9 @@ ValueSet for TDDUI Encounter's identifier types
 
 ### Définition logique (CLD)
 
-Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
-
-Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
-
-* Inclut tous les codes définis dans [`https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier-cs`](CodeSystem-tddui-encounter-identifier-cs.md)version 📦2.1.0-ballot
-* Importe tous les codes contenu dans [IdentifierType](http://hl7.org/fhir/R4/valueset-identifier-type.html)
-
  
 
 ### Expansion
-
-Expansion effectuée en interne basée sur :
-
-* [codesystem identifierType v5.0.0 (CodeSystem)](http://terminology.hl7.org/7.0.0/CodeSystem-v2-0203.html)
-* [codesystem TDDUI Encounter FR Core CodeSystem v2-0203 v2.1.0-ballot (CodeSystem)](CodeSystem-tddui-encounter-identifier-cs.md)
-* [valueset IdentifierType v4.0.1 (ValueSet)](http://hl7.org/fhir/R4/valueset-identifier-type.html)
-
-Ce jeu de valeur (ValueSet) contient 19 concepts
 
 -------
 
@@ -69,7 +54,7 @@ Ce jeu de valeur (ValueSet) contient 19 concepts
   "title" : "TDDUI Encounter Identifier Type ValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-05T08:38:20+00:00",
+  "date" : "2025-12-16T16:02:43+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
