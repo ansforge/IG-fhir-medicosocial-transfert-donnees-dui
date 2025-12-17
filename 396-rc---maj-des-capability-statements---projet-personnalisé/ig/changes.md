@@ -1,9 +1,13 @@
-# Historique des changements - Médicosocial - Transfert de données DUI v2.1.0-ballot
+# Historique des changements - Médicosocial - Transfert de données DUI v2.1.0
 
 * [**Table of Contents**](toc.md)
 * **Historique des changements**
 
 ## Historique des changements
+
+### Release 2.1.0 de l'Implementation Guide du volet "Transfert de dossier DUI"
+
+Aucune modification apportée dans la release 2.1.0 par rapport à la release de concertation 2.1.0-ballot.
 
 ### Release 2.1.0-ballot de l'Implementation Guide du volet "Transfert de dossier DUI"
 

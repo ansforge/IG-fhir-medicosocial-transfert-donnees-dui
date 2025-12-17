@@ -1,4 +1,4 @@
-# Rapport de l’évènement - Médicosocial - Transfert de données DUI v2.1.0-ballot
+# Rapport de l’évènement - Médicosocial - Transfert de données DUI v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-report | *Version*:2.1.0-ballot |
-| Active as of 2025-12-03 | *Computable Name*:TDDUIEventReport |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-report | *Version*:2.1.0 |
+| Active as of 2025-12-17 | *Computable Name*:TDDUIEventReport |
 
 Zone de texte liée à l’événement pour compte rendu des actions réalisées.
 
@@ -43,11 +43,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-event-report.c
   "resourceType" : "StructureDefinition",
   "id" : "tddui-event-report",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-report",
-  "version" : "2.1.0-ballot",
+  "version" : "2.1.0",
   "name" : "TDDUIEventReport",
   "title" : "Rapport de l’évènement",
   "status" : "active",
-  "date" : "2025-12-03T10:26:00+00:00",
+  "date" : "2025-12-17T10:39:00+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

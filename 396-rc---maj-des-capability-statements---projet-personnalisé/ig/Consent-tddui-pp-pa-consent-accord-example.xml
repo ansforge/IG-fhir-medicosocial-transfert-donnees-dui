@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Consent xmlns="http://hl7.org/fhir">
+  <id value="tddui-pp-pa-consent-accord-example"/>
+  <meta>
+    <profile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : Consent tddui-pp-pa-consent-accord-example</b></p><a name="tddui-pp-pa-consent-accord-example"> </a><a name="hctddui-pp-pa-consent-accord-example"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="StructureDefinition-tddui-consent-accord.html">TDDUI Consent Accord</a></p></div><p><b>status</b>: Active</p><p><b>scope</b>: <span title="Codes :{http://terminology.hl7.org/CodeSystem/consentscope patient-privacy}">Privacy Consent</span></p><p><b>category</b>: <span title="Codes :{http://loinc.org 59284-0}">Patient Consent</span></p><p><b>dateTime</b>: 2024-01-15 09:00:00+0100</p><p><b>performer</b>: <a href="Practitioner-tddui-pp-pa-practitioner-ide-example.html">Practitioner Élodie Bernard </a></p><h3>Policies</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Authority</b></td></tr><tr><td style="display: none">*</td><td><a href="https://www.cnsa.fr/">https://www.cnsa.fr/</a></td></tr></table></div>
+  </text>
+  <status value="active"/>
+  <scope>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/consentscope"/>
+      <code value="patient-privacy"/>
+      <display value="Privacy Consent"/>
+    </coding>
+  </scope>
+  <category>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="59284-0"/>
+      <display value="Patient Consent"/>
+    </coding>
+  </category>
+  <dateTime value="2024-01-15T09:00:00+01:00"/>
+  <performer>
+    <reference value="Practitioner/tddui-pp-pa-practitioner-ide-example"/>
+  </performer>
+  <policy>
+    <authority value="https://www.cnsa.fr/"/>
+  </policy>
+</Consent>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="tddui-goal-objectif-note-vs"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : EnsembleValeurs tddui-goal-objectif-note-vs</b></p><a name="tddui-goal-objectif-note-vs"> </a><a name="hctddui-goal-objectif-note-vs"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="http://hl7.org/fhir/R4/shareablevalueset.html">Shareable ValueSet</a></p></div><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Importe tous les codes contenu dans <a href="ValueSet-tddui-discriminator-vs.html">TDDUI Discriminator ValueSet</a></li></ul><p>Ce jeu de valeur (ValueSet) exclut les codes selon les règles suivantes :</p><ul><li>Exclut ce(s) code(s) tel quil(s) est (sont) défini(s) dans <a href="CodeSystem-tddui-discriminator-cs.html"><code>https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs</code></a><span title="La version nest pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification"> version &#x1F4E6;2.1.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td><a href="CodeSystem-tddui-discriminator-cs.html#tddui-discriminator-cs-accordUsager">accordUsager</a></td><td style="color: #cccccc">Accord de l'usager</td></tr><tr><td><a href="CodeSystem-tddui-discriminator-cs.html#tddui-discriminator-cs-accordStructure">accordStructure</a></td><td style="color: #cccccc">Accord de la structure</td></tr><tr><td><a href="CodeSystem-tddui-discriminator-cs.html#tddui-discriminator-cs-origineAttente">origineAttente</a></td><td style="color: #cccccc">Acteur (personne physique ou personne morale) qui a un lien avec l'usager ou l'usager elle-même qui définit son attente.</td></tr><tr><td><a href="CodeSystem-tddui-discriminator-cs.html#tddui-discriminator-cs-commentaireAttente">commentaireAttente</a></td><td style="color: #cccccc">Permet de compléter ou éclairer la description de l'attente.</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-goal-objectif-note-vs"/>
+  <version value="2.1.0"/>
+  <name value="TDDUIGoalObjectifNoteVS"/>
+  <title value="TDDUI Goal Objectif Note ValueSet"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-12-17T10:39:00+00:00"/>
+  <publisher value="ANS"/>
+  <contact>
+    <name value="ANS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <description value="ValueSet définissant les types de notes pour l'élément Goal.note."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="FRANCE"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <valueSet value="https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-discriminator-vs"/>
+    </include>
+    <exclude>
+      <system value="https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs"/>
+      <concept>
+        <code value="accordUsager"/>
+      </concept>
+      <concept>
+        <code value="accordStructure"/>
+      </concept>
+      <concept>
+        <code value="origineAttente"/>
+      </concept>
+      <concept>
+        <code value="commentaireAttente"/>
+      </concept>
+    </exclude>
+  </compose>
+</ValueSet>
