@@ -26,6 +26,13 @@
       ]
     },
     {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference",
+      "title": "Lien vers le projet personnalisé",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment",
       "title": "Commentaire",
       "types": [
@@ -33,10 +40,24 @@
       ]
     },
     {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator",
+      "title": "TDDUI Discriminator Extension",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-mode-label",
       "title": "Libellé mode d\u0027entrée",
       "types": [
         "string"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-evaluation-reference",
+      "title": "Lien vers l\u0027évaluation",
+      "types": [
+        "Reference"
       ]
     },
     {
@@ -233,6 +254,13 @@
         "Dosage",
         "Meta"
       ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-status-author",
+      "title": "TDDUI Auteur statut",
+      "types": [
+        "Reference"
+      ]
     }
   ],
   "profiles": {
@@ -240,6 +268,18 @@
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle",
         "title": "TDDUI Bundle"
+      }
+    ],
+    "CarePlan": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise",
+        "title": "TDDUI CarePlan Projet Personalise"
+      }
+    ],
+    "Consent": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord",
+        "title": "TDDUI Consent Accord"
       }
     ],
     "DocumentReference": [
@@ -256,6 +296,16 @@
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour",
         "title": "TDDUI Encounter Sejour"
+      }
+    ],
+    "Goal": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente",
+        "title": "TDDUI Goal Attente"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif",
+        "title": "TDDUI Goal Objectif"
       }
     ],
     "Organization": [
@@ -292,7 +342,29 @@
         "title": "TDDUI QuestionnaireResponse"
       }
     ],
+    "ServiceRequest": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin",
+        "title": "TDDUI ServiceRequest Besoin"
+      }
+    ],
     "Task": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action",
+        "title": "TDDUI Task Action"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-bilan",
+        "title": "TDDUI Task Bilan"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource",
+        "title": "TDDUI Task MoyenRessource"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-prestation",
+        "title": "TDDUI Task Prestation"
+      },
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport",
         "title": "TDDUI Task Transport"
@@ -308,6 +380,9 @@
     ]
   },
   "usage": {
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.period": [
+      "Consent"
+    ],
     "http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedEndDate": [
       "Bundle.entry.resource",
       "Encounter"
@@ -355,6 +430,9 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
       "StructureDefinition.differential.element.type",
       "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters": [
+      "ImplementationGuide.definition"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
       "ImplementationGuide.definition"
@@ -422,11 +500,17 @@
       "Encounter"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment": [
+      "CarePlan",
       "Encounter",
-      "QuestionnaireResponse"
+      "Goal",
+      "QuestionnaireResponse",
+      "ServiceRequest"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order": [
       "Patient.birthDate"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference": [
+      "Goal"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment": [
       "Bundle.entry.resource",
@@ -436,9 +520,16 @@
       "QuestionnaireResponse.item.item",
       "QuestionnaireResponse.item.item.item"
     ],
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator": [
+      "CarePlan.supportingInfo",
+      "Goal.note"
+    ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-mode-label": [
       "Bundle.entry.resource",
       "Encounter"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-evaluation-reference": [
+      "Goal"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-cancel-reason": [
       "Encounter.status"
@@ -482,6 +573,11 @@
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used": [
       "Bundle.entry.resource",
       "Encounter"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-status-author": [
+      "CarePlan.status",
+      "Goal.lifecycleStatus",
+      "Task.status"
     ]
   }
 }

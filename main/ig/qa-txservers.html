@@ -3,6 +3,7 @@
 <head>
   <title>TDDUI : Terminology Server Report</title>
   <link href="fhir.css" rel="stylesheet"/>
+  <meta charset="utf-8"/>
   <style>
     span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
     span.toggle  { background-color: #e6f2ff; color: black; border: solid 1px #0056b3; padding: 2px; font-size: 10px }
@@ -11,7 +12,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Terminology Server Report for TDDUI</h1>
- <p>Generated Mon Dec 08 14:25:08 UTC 2025, FHIR version 4.0.1 for ans.fhir.fr.tddui#2.1.0 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/tddui">https://interop.esante.gouv.fr/ig/fhir/tddui</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/tddui/history.html">history</a>))</p>
+ <p>Generated Wed Dec 17 08:48:24 UTC 2025, FHIR version 4.0.1 for ans.fhir.fr.tddui#2.1.0 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/tddui">https://interop.esante.gouv.fr/ig/fhir/tddui</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/tddui/history.html">history</a>))</p>
 <p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
 <h2>Terminology Parameters</h2>
 <ul>
@@ -24,7 +25,7 @@
 :     <code>fr</code>
   </li>
 </ul>
-<h2>Tx Manager report for 'http://tx.fhir.org/tx-reg'</h2>
+<h2>Tx Manager report for 'https://tx.fhir.org/tx-reg'</h2>
 <p>
   <b>Decisions</b>
 </p>
@@ -47,200 +48,256 @@
     </td>
   </tr>
   <tr>
-    <td>System not handled by any servers. Using primary server</td>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td>null</td>
-    <td>http://hl7.org/fhir/fhir-types</td>
-    <td>auth = , candidates=</td>
+    <td>urn:ietf:bcp:13</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4</td>
   </tr>
   <tr>
-    <td>Fallback: primary server</td>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td>null</td>
-    <td>http://hl7.org/fhir/fhir-types</td>
-    <td>auth = , candidates=</td>
+    <td>urn:ietf:bcp:47</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>urn:iso:std:iso:3166</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4</td>
   </tr>
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td>http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1</td>
     <td>[http://unstats.un.org/unsd/methods/m49/m49.htm, urn:iso:std:iso:3166, urn:iso:std:iso:3166:-2]</td>
-    <td>[auth = , candidates=http://tx.fhir.org/r4|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4, auth = , candidates=http://tx.fhir.org/r4, auth = , candidates=http://tx.fhir.org/r4]</td>
+    <td>[auth = , candidates=http://tx.fhir.org/r4|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4, auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4, auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|http://tx.hl7europe.eu/r4|https://tx.hl7chile.cl/r4]</td>
   </tr>
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
-    <td>urn:uuid:4e73cba9-3e7b-4a07-94f4-e7a9155e817b</td>
+    <td>urn:uuid:1e1709f6-508a-4798-9185-d169ae966c95</td>
     <td>urn:ietf:bcp:13</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4</td>
-  </tr>
-  <tr>
-    <td>Found candidate server http://tx.fhir.org/r4</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>http://hl7.org/fhir/ValueSet/mimetypes|4.0.1</td>
-    <td>urn:ietf:bcp:13</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4</td>
-  </tr>
-  <tr>
-    <td>Found candidate server http://tx.fhir.org/r4</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>urn:uuid:10608817-72f5-40c4-8d8b-f04d200fa0f7</td>
-    <td>urn:ietf:bcp:13</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4</td>
   </tr>
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td>http://hl7.org/fhir/ValueSet/mimetypes|4.0.1</td>
     <td>urn:ietf:bcp:13</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>urn:uuid:bcd3d3de-4aaa-4883-b8d0-1f89bd11ac8b</td>
+    <td>urn:ietf:bcp:13</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>http://hl7.org/fhir/ValueSet/mimetypes|4.0.1</td>
+    <td>urn:ietf:bcp:13</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4</td>
   </tr>
   <tr>
     <td>Found authoritative server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td>null</td>
     <td>http://hl7.org/fhir/sid/icf</td>
-    <td>auth = http://tx.fhir.org/r4, candidates=http://tx.hl7europe.eu/r4</td>
+    <td>auth = http://tx.fhir.org/r4, candidates=http://tx.hl7europe.eu/r4|https://tx.hl7chile.cl/r4</td>
   </tr>
   <tr>
     <td>Found authoritative server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td>null</td>
     <td>http://hl7.org/fhir/sid/icf</td>
-    <td>auth = http://tx.fhir.org/r4, candidates=http://tx.hl7europe.eu/r4</td>
+    <td>auth = http://tx.fhir.org/r4, candidates=http://tx.hl7europe.eu/r4|https://tx.hl7chile.cl/r4</td>
   </tr>
   <tr>
     <td>Found authoritative server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td>null</td>
     <td>http://hl7.org/fhir/sid/icf</td>
-    <td>auth = http://tx.fhir.org/r4, candidates=http://tx.hl7europe.eu/r4</td>
+    <td>auth = http://tx.fhir.org/r4, candidates=http://tx.hl7europe.eu/r4|https://tx.hl7chile.cl/r4</td>
   </tr>
   <tr>
     <td>Found authoritative server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td>null</td>
     <td>http://hl7.org/fhir/sid/icf</td>
-    <td>auth = http://tx.fhir.org/r4, candidates=http://tx.hl7europe.eu/r4</td>
+    <td>auth = http://tx.fhir.org/r4, candidates=http://tx.hl7europe.eu/r4|https://tx.hl7chile.cl/r4</td>
   </tr>
   <tr>
     <td>Found authoritative server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td>null</td>
     <td>http://hl7.org/fhir/sid/icf</td>
-    <td>auth = http://tx.fhir.org/r4, candidates=http://tx.hl7europe.eu/r4</td>
+    <td>auth = http://tx.fhir.org/r4, candidates=http://tx.hl7europe.eu/r4|https://tx.hl7chile.cl/r4</td>
   </tr>
   <tr>
     <td>Found authoritative server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td>null</td>
     <td>http://hl7.org/fhir/sid/icf</td>
-    <td>auth = http://tx.fhir.org/r4, candidates=http://tx.hl7europe.eu/r4</td>
+    <td>auth = http://tx.fhir.org/r4, candidates=http://tx.hl7europe.eu/r4|https://tx.hl7chile.cl/r4</td>
   </tr>
   <tr>
     <td>Found authoritative server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td>null</td>
     <td>http://hl7.org/fhir/sid/icf</td>
-    <td>auth = http://tx.fhir.org/r4, candidates=http://tx.hl7europe.eu/r4</td>
+    <td>auth = http://tx.fhir.org/r4, candidates=http://tx.hl7europe.eu/r4|https://tx.hl7chile.cl/r4</td>
   </tr>
   <tr>
     <td>Found authoritative server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td>null</td>
     <td>http://hl7.org/fhir/sid/icf</td>
-    <td>auth = http://tx.fhir.org/r4, candidates=http://tx.hl7europe.eu/r4</td>
+    <td>auth = http://tx.fhir.org/r4, candidates=http://tx.hl7europe.eu/r4|https://tx.hl7chile.cl/r4</td>
   </tr>
   <tr>
     <td>Found authoritative server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td>null</td>
     <td>http://hl7.org/fhir/sid/icf</td>
-    <td>auth = http://tx.fhir.org/r4, candidates=http://tx.hl7europe.eu/r4</td>
+    <td>auth = http://tx.fhir.org/r4, candidates=http://tx.hl7europe.eu/r4|https://tx.hl7chile.cl/r4</td>
   </tr>
   <tr>
     <td>Found authoritative server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td>null</td>
     <td>http://hl7.org/fhir/sid/icf</td>
-    <td>auth = http://tx.fhir.org/r4, candidates=http://tx.hl7europe.eu/r4</td>
+    <td>auth = http://tx.fhir.org/r4, candidates=http://tx.hl7europe.eu/r4|https://tx.hl7chile.cl/r4</td>
   </tr>
   <tr>
     <td>Found authoritative server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td>null</td>
     <td>http://hl7.org/fhir/sid/icf</td>
-    <td>auth = http://tx.fhir.org/r4, candidates=http://tx.hl7europe.eu/r4</td>
+    <td>auth = http://tx.fhir.org/r4, candidates=http://tx.hl7europe.eu/r4|https://tx.hl7chile.cl/r4</td>
   </tr>
   <tr>
     <td>Found authoritative server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td>null</td>
     <td>http://hl7.org/fhir/sid/icf</td>
-    <td>auth = http://tx.fhir.org/r4, candidates=http://tx.hl7europe.eu/r4</td>
+    <td>auth = http://tx.fhir.org/r4, candidates=http://tx.hl7europe.eu/r4|https://tx.hl7chile.cl/r4</td>
   </tr>
   <tr>
     <td>Found authoritative server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td>null</td>
     <td>http://hl7.org/fhir/sid/icf</td>
-    <td>auth = http://tx.fhir.org/r4, candidates=http://tx.hl7europe.eu/r4</td>
+    <td>auth = http://tx.fhir.org/r4, candidates=http://tx.hl7europe.eu/r4|https://tx.hl7chile.cl/r4</td>
   </tr>
   <tr>
     <td>Found authoritative server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td>null</td>
     <td>http://hl7.org/fhir/sid/icf</td>
-    <td>auth = http://tx.fhir.org/r4, candidates=http://tx.hl7europe.eu/r4</td>
+    <td>auth = http://tx.fhir.org/r4, candidates=http://tx.hl7europe.eu/r4|https://tx.hl7chile.cl/r4</td>
   </tr>
   <tr>
     <td>Found authoritative server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td>null</td>
     <td>http://hl7.org/fhir/sid/icf</td>
-    <td>auth = http://tx.fhir.org/r4, candidates=http://tx.hl7europe.eu/r4</td>
+    <td>auth = http://tx.fhir.org/r4, candidates=http://tx.hl7europe.eu/r4|https://tx.hl7chile.cl/r4</td>
   </tr>
   <tr>
     <td>Found authoritative server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td>null</td>
     <td>http://hl7.org/fhir/sid/icf</td>
-    <td>auth = http://tx.fhir.org/r4, candidates=http://tx.hl7europe.eu/r4</td>
+    <td>auth = http://tx.fhir.org/r4, candidates=http://tx.hl7europe.eu/r4|https://tx.hl7chile.cl/r4</td>
   </tr>
   <tr>
     <td>Found authoritative server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td>null</td>
     <td>http://hl7.org/fhir/sid/icf</td>
-    <td>auth = http://tx.fhir.org/r4, candidates=http://tx.hl7europe.eu/r4</td>
+    <td>auth = http://tx.fhir.org/r4, candidates=http://tx.hl7europe.eu/r4|https://tx.hl7chile.cl/r4</td>
   </tr>
   <tr>
     <td>Found authoritative server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td>null</td>
     <td>http://hl7.org/fhir/sid/icf</td>
-    <td>auth = http://tx.fhir.org/r4, candidates=http://tx.hl7europe.eu/r4</td>
+    <td>auth = http://tx.fhir.org/r4, candidates=http://tx.hl7europe.eu/r4|https://tx.hl7chile.cl/r4</td>
   </tr>
   <tr>
     <td>Found authoritative server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td>null</td>
     <td>http://hl7.org/fhir/sid/icf</td>
-    <td>auth = http://tx.fhir.org/r4, candidates=http://tx.hl7europe.eu/r4</td>
+    <td>auth = http://tx.fhir.org/r4, candidates=http://tx.hl7europe.eu/r4|https://tx.hl7chile.cl/r4</td>
   </tr>
   <tr>
     <td>Found authoritative server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td>null</td>
     <td>http://hl7.org/fhir/sid/icf</td>
-    <td>auth = http://tx.fhir.org/r4, candidates=http://tx.hl7europe.eu/r4</td>
+    <td>auth = http://tx.fhir.org/r4, candidates=http://tx.hl7europe.eu/r4|https://tx.hl7chile.cl/r4</td>
   </tr>
   <tr>
     <td>Found authoritative server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td>null</td>
     <td>http://hl7.org/fhir/sid/icf</td>
-    <td>auth = http://tx.fhir.org/r4, candidates=http://tx.hl7europe.eu/r4</td>
+    <td>auth = http://tx.fhir.org/r4, candidates=http://tx.hl7europe.eu/r4|https://tx.hl7chile.cl/r4</td>
+  </tr>
+  <tr>
+    <td>Found authoritative server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://hl7.org/fhir/sid/icf</td>
+    <td>auth = http://tx.fhir.org/r4, candidates=http://tx.hl7europe.eu/r4|https://tx.hl7chile.cl/r4</td>
+  </tr>
+  <tr>
+    <td>Found authoritative server https://smt.esante.gouv.fr/fhir</td>
+    <td>https://smt.esante.gouv.fr/fhir</td>
+    <td>null</td>
+    <td>https://smt.esante.gouv.fr/terminologie-cim-10</td>
+    <td>auth = https://smt.esante.gouv.fr/fhir, candidates=</td>
+  </tr>
+  <tr>
+    <td>Found authoritative server https://smt.esante.gouv.fr/fhir</td>
+    <td>https://smt.esante.gouv.fr/fhir</td>
+    <td>null</td>
+    <td>https://smt.esante.gouv.fr/terminologie-cim-10</td>
+    <td>auth = https://smt.esante.gouv.fr/fhir, candidates=</td>
+  </tr>
+  <tr>
+    <td>Found authoritative server https://smt.esante.gouv.fr/fhir</td>
+    <td>https://smt.esante.gouv.fr/fhir</td>
+    <td>null</td>
+    <td>https://smt.esante.gouv.fr/terminologie-cim-10</td>
+    <td>auth = https://smt.esante.gouv.fr/fhir, candidates=</td>
+  </tr>
+  <tr>
+    <td>Found authoritative server https://smt.esante.gouv.fr/fhir</td>
+    <td>https://smt.esante.gouv.fr/fhir</td>
+    <td>null</td>
+    <td>https://smt.esante.gouv.fr/terminologie-cim-10</td>
+    <td>auth = https://smt.esante.gouv.fr/fhir, candidates=</td>
+  </tr>
+  <tr>
+    <td>Found authoritative server https://smt.esante.gouv.fr/fhir</td>
+    <td>https://smt.esante.gouv.fr/fhir</td>
+    <td>null</td>
+    <td>https://smt.esante.gouv.fr/terminologie-cim-10</td>
+    <td>auth = https://smt.esante.gouv.fr/fhir, candidates=</td>
+  </tr>
+  <tr>
+    <td>Found authoritative server https://smt.esante.gouv.fr/fhir</td>
+    <td>https://smt.esante.gouv.fr/fhir</td>
+    <td>null</td>
+    <td>https://smt.esante.gouv.fr/terminologie-cim-10</td>
+    <td>auth = https://smt.esante.gouv.fr/fhir, candidates=</td>
   </tr>
   <tr>
     <td>Found authoritative server https://smt.esante.gouv.fr/fhir</td>
@@ -257,53 +314,95 @@
     <td>auth = https://smt.esante.gouv.fr/fhir, candidates=</td>
   </tr>
   <tr>
+    <td>Found authoritative server https://smt.esante.gouv.fr/fhir</td>
+    <td>https://smt.esante.gouv.fr/fhir</td>
+    <td>null</td>
+    <td>https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM</td>
+    <td>auth = https://smt.esante.gouv.fr/fhir, candidates=</td>
+  </tr>
+  <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
-    <td>urn:uuid:1f92c522-051e-4a35-9340-6a361ccb1b04</td>
+    <td>urn:uuid:414587c3-3afb-4c04-9ee5-867c1de97760</td>
     <td>urn:iso:std:iso:4217</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4</td>
   </tr>
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td>http://hl7.org/fhir/ValueSet/currencies|4.0.1</td>
     <td>urn:iso:std:iso:4217</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4</td>
+  </tr>
+  <tr>
+    <td>Found partially authoritative server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>http://hl7.org/fhir/ValueSet/consent-category|4.0.1</td>
+    <td>[http://terminology.hl7.org/CodeSystem/v3-ActCode, http://loinc.org, http://terminology.hl7.org/CodeSystem/consentcategorycodes]</td>
+    <td>[auth = http://tx.fhir.org/r4, candidates=https://tx.hl7.org.au/fhir|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4, auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4, auth = http://tx.fhir.org/r4, candidates=https://tx.hl7.org.au/fhir|https://tx.ontoserver.csiro.au/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4]</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>urn:uuid:8fd14b77-c916-4cb4-a3f5-6f60b875c27d</td>
+    <td>urn:ietf:bcp:13</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>http://hl7.org/fhir/ValueSet/mimetypes|4.0.1</td>
+    <td>urn:ietf:bcp:13</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>http://hl7.org/fhir/ValueSet/languages|4.0.1</td>
+    <td>urn:ietf:bcp:47</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4</td>
   </tr>
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td>http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1</td>
     <td>[http://unstats.un.org/unsd/methods/m49/m49.htm, urn:iso:std:iso:3166, urn:iso:std:iso:3166:-2]</td>
-    <td>[auth = , candidates=http://tx.fhir.org/r4|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4, auth = , candidates=http://tx.fhir.org/r4, auth = , candidates=http://tx.fhir.org/r4]</td>
+    <td>[auth = , candidates=http://tx.fhir.org/r4|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4, auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4, auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|http://tx.hl7europe.eu/r4|https://tx.hl7chile.cl/r4]</td>
   </tr>
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td></td>
     <td>urn:iso:std:iso:3166</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4</td>
   </tr>
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td></td>
     <td>urn:iso:std:iso:3166</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4</td>
   </tr>
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td></td>
     <td>urn:iso:std:iso:3166</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4</td>
   </tr>
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td></td>
     <td>urn:iso:std:iso:3166:-2</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|http://tx.hl7europe.eu/r4|https://tx.hl7chile.cl/r4</td>
   </tr>
 </table>
 <p>
@@ -319,45 +418,21 @@
     </td>
   </tr>
   <tr>
-    <td>urn:ietf:bcp:13</td>
+    <td>http://interop.esante.gouv.fr/ig/fhir/tddui</td>
     <td style="background-color: #ffe3e3">
-      <span title="http://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;url=urn%3Aietf%3Abcp%3A13&amp;usage=publication">Error resolving system urn:ietf:bcp:13: Bad Request</span>
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=http%3A%2F%2Finterop.esante.gouv.fr%2Fig%2Ffhir%2Ftddui&amp;usage=publication">Error resolving valueSet http://interop.esante.gouv.fr/ig/fhir/tddui: Bad Request</span>
     </td>
   </tr>
   <tr>
-    <td>urn:ietf:bcp:13|null</td>
+    <td>https://interop.esante.gouv.fr/ig/fhir/tddui</td>
     <td style="background-color: #ffe3e3">
-      <span title="http://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;url=urn%3Aietf%3Abcp%3A13%7Cnull&amp;usage=publication">Error resolving CodeSystem urn:ietf:bcp:13|null: Bad Request</span>
-    </td>
-  </tr>
-  <tr>
-    <td>urn:iso:std:iso:3166</td>
-    <td style="background-color: #ffe3e3">
-      <span title="http://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;url=urn%3Aiso%3Astd%3Aiso%3A3166&amp;usage=publication">Error resolving system urn:iso:std:iso:3166: Bad Request</span>
-    </td>
-  </tr>
-  <tr>
-    <td>urn:iso:std:iso:3166:-2</td>
-    <td style="background-color: #ffe3e3">
-      <span title="http://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;url=urn%3Aiso%3Astd%3Aiso%3A3166%3A-2&amp;usage=publication">Error resolving system urn:iso:std:iso:3166:-2: Bad Request</span>
-    </td>
-  </tr>
-  <tr>
-    <td>urn:iso:std:iso:4217</td>
-    <td style="background-color: #ffe3e3">
-      <span title="http://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;url=urn%3Aiso%3Astd%3Aiso%3A4217&amp;usage=publication">Error resolving system urn:iso:std:iso:4217: Bad Request</span>
-    </td>
-  </tr>
-  <tr>
-    <td>urn:iso:std:iso:4217|null</td>
-    <td style="background-color: #ffe3e3">
-      <span title="http://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;url=urn%3Aiso%3Astd%3Aiso%3A4217%7Cnull&amp;usage=publication">Error resolving CodeSystem urn:iso:std:iso:4217|null: Bad Request</span>
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=https%3A%2F%2Finterop.esante.gouv.fr%2Fig%2Ffhir%2Ftddui&amp;usage=publication">Error resolving valueSet https://interop.esante.gouv.fr/ig/fhir/tddui: Bad Request</span>
     </td>
   </tr>
 </table>
-<h2>Primary Server: http://tx.fhir.org/r4</h2>
-<a href="http://tx.fhir.org/r4"></a>
-<p>Use Count: 36. Code Systems used: </p>
+<h2>Primary Server: https://tx.fhir.org/r4</h2>
+<a href="https://tx.fhir.org/r4"></a>
+<p>Use Count: 43. Code Systems used: </p>
 <table class="grid">
   <tr>
     <th>
@@ -374,17 +449,35 @@
     </th>
   </tr>
   <tr>
-    <td>http://hl7.org/fhir/fhir-types</td>
-    <td>0</td>
-    <td>1</td>
-    <td></td>
-  </tr>
-  <tr>
     <td>http://hl7.org/fhir/sid/icf</td>
     <td>0</td>
-    <td>21</td>
+    <td>22</td>
     <td>
-      <a href="http://terminology.hl7.org/6.2.0/CodeSystem-ICF.html">International Classification of Functioning, Disability and Health</a>
+      <a href="http://terminology.hl7.org/6.5.0/CodeSystem-ICF.html">International Classification of Functioning, Disability and Health</a>
+    </td>
+  </tr>
+  <tr>
+    <td>http://loinc.org</td>
+    <td>0</td>
+    <td>2</td>
+    <td>
+      <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-loinc.html">Logical Observation Identifiers, Names and Codes (LOINC)</a>
+    </td>
+  </tr>
+  <tr>
+    <td>http://terminology.hl7.org/CodeSystem/consentcategorycodes</td>
+    <td>0</td>
+    <td>1</td>
+    <td>
+      <a href="http://terminology.hl7.org/7.0.1/CodeSystem-consentcategorycodes.html">Consent Category Codes</a>
+    </td>
+  </tr>
+  <tr>
+    <td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td>
+    <td>0</td>
+    <td>1</td>
+    <td>
+      <a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-ActCode.html">ActCode</a>
     </td>
   </tr>
   <tr>
@@ -396,15 +489,23 @@
   <tr>
     <td>urn:ietf:bcp:13</td>
     <td>0</td>
-    <td>4</td>
+    <td>7</td>
     <td></td>
+  </tr>
+  <tr>
+    <td>urn:ietf:bcp:47</td>
+    <td>0</td>
+    <td>2</td>
+    <td>
+      <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ietf3066.html">Tags for the Identification of Languages</a>
+    </td>
   </tr>
   <tr>
     <td>urn:iso:std:iso:3166</td>
     <td>3</td>
-    <td>2</td>
+    <td>3</td>
     <td>
-      <a href="http://terminology.hl7.org/4.0.0/CodeSystem-ISO3166Part1.html">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>
+      <a href="http://terminology.hl7.org/6.5.0/CodeSystem-ISO3166Part1.html">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>
     </td>
   </tr>
   <tr>
@@ -412,7 +513,7 @@
     <td>1</td>
     <td>2</td>
     <td>
-      <a href="http://terminology.hl7.org/4.0.0/CodeSystem-ISO3166Part2.html">ISO 3166 Part 2 Country Subdivision Codes</a>
+      <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-iso3166-2.html">ISO 3166-2 Codes for the representation of names of countries and their subdivisions — Part 2: Country subdivision code</a>
     </td>
   </tr>
   <tr>
@@ -422,9 +523,33 @@
     <td></td>
   </tr>
 </table>
+<p>ValueSets fetched:</p>
+<ul>
+  <li>http://interop.esante.gouv.fr/ig/fhir/tddui</li>
+  <li>https://interop.esante.gouv.fr/ig/fhir/tddui</li>
+</ul>
+<h2>Server: https://tx.fhir.org/r4</h2>
+<a href="https://tx.fhir.org/r4"></a>
+<p>Use Count: 6. Code Systems used: </p>
+<table class="grid">
+  <tr>
+    <th>
+      <b>System</b>
+    </th>
+    <th>
+      <b>#Exp.</b>
+    </th>
+    <th>
+      <b>#Val.</b>
+    </th>
+    <th>
+      <b>Details</b>
+    </th>
+  </tr>
+</table>
 <h2>Server: https://smt.esante.gouv.fr/fhir</h2>
 <a href="https://smt.esante.gouv.fr/fhir"></a>
-<p>Use Count: 2. Code Systems used: </p>
+<p>Use Count: 7. Code Systems used: </p>
 <table class="grid">
   <tr>
     <th>
@@ -443,9 +568,17 @@
   <tr>
     <td>https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM</td>
     <td>0</td>
-    <td>2</td>
+    <td>3</td>
     <td>
       <a href="https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R13-CommuneOM.html">TRE_R13_CommuneOM</a>
+    </td>
+  </tr>
+  <tr>
+    <td>https://smt.esante.gouv.fr/terminologie-cim-10</td>
+    <td>0</td>
+    <td>6</td>
+    <td>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-terminologie-cim-10.html">Classification internationale des maladies et des problèmes de santé connexes - 10ème révision - Version française à usage PMSI (Programme Médicalisé des Systèmes d'Information)</a>
     </td>
   </tr>
 </table>

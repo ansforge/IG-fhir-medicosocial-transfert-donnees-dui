@@ -71,6 +71,65 @@
       "StructureDefinition-tddui-patient.html" : "TDDUI Patient"
     },
     {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-care-plan-supportingInfo-vs",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "TDDUICarePlanSupportingInfoVS",
+      "title" : "TDDUI CarePlan supportingInfo ValueSet",
+      "description" : "ValueSet définissant les types de notes pour l'élément CarePlan.supportingInfo.",
+      "systems" : [
+        "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-careplan-projet-personnalise.html" : "TDDUI CarePlan Projet Personalise"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-discriminator-vs",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "TDDUIDiscriminatorVS",
+      "title" : "TDDUI Discriminator ValueSet",
+      "description" : "ValueSet définissant les codes discriminants.",
+      "systems" : [
+        "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-discriminator.html" : "TDDUI Discriminator Extension",
+      "ValueSet-tddui-goal-attente-note-vs.html" : "TDDUI Goal Attente Note ValueSet",
+      "ValueSet-tddui-care-plan-supportingInfo-vs.html" : "TDDUI CarePlan supportingInfo ValueSet",
+      "ValueSet-tddui-goal-objectif-note-vs.html" : "TDDUI Goal Objectif Note ValueSet"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-goal-attente-note-vs",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "TDDUIGoalAttenteNoteVS",
+      "title" : "TDDUI Goal Attente Note ValueSet",
+      "description" : "ValueSet définissant les types de notes pour l'élément Goal.note.",
+      "systems" : [
+        "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-goal-attente.html" : "TDDUI Goal Attente"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-goal-objectif-note-vs",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "TDDUIGoalObjectifNoteVS",
+      "title" : "TDDUI Goal Objectif Note ValueSet",
+      "description" : "ValueSet définissant les types de notes pour l'élément Goal.note.",
+      "systems" : [
+        "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-goal-objectif.html" : "TDDUI Goal Objectif"
+    },
+    {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-serafin-valueset",
       "version" : "2.1.0",
       "status" : "active",
@@ -80,6 +139,7 @@
       "systems" : ["https://smt.esante.gouv.fr/terminologie-SERAFINPH"],
       "uses" : {
       },
+      "StructureDefinition-tddui-task-prestation.html" : "TDDUI Task Prestation",
       "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
     },
     {
@@ -265,6 +325,20 @@
       "ValueSet-tddui-serafin-valueset.html" : "TDDUI SERAFIN ValueSet"
     },
     {
+      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J285-Besoins_SERAFIN/FHIR/JDV-J285-Besoins-SERAFIN",
+      "version" : "20241025120000",
+      "status" : "active",
+      "name" : "JDV_J285_Besoins_SERAFIN",
+      "title" : null,
+      "description" : "Liste des besoins provenant de la terminologie SERAFIN",
+      "systems" : ["https://smt.esante.gouv.fr/terminologie-SERAFINPH"],
+      "oids" : ["1.2.250.1.213.3.3.254"],
+      "sources" : ["1.2.250.1.213.3.3.254"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-service-request-besoin.html" : "TDDUI ServiceRequest Besoin"
+    },
+    {
       "url" : "https://mos.esante.gouv.fr/NOS/JDV_J47-FunctionCode-CISIS/FHIR/JDV-J47-FunctionCode-CISIS",
       "version" : "20250523120000",
       "status" : "active",
@@ -313,6 +387,38 @@
       "uses" : {
       },
       "StructureDefinition-tddui-ressources-used.html" : "Ressources utilisées"
+    },
+    {
+      "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j366-statut-bilan-projet-personnalise-ms",
+      "version" : "20250415120000",
+      "status" : "active",
+      "name" : "JdvJ366StatutBilanProjetPersonnaliseMs",
+      "title" : "Jdv J366 Statut Bilan Projet Personnalise Ms",
+      "description" : "Statut du bilan du projet personnalisé.",
+      "systems" : [
+        "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r389-statut-bilan-projet-personnalise"
+      ],
+      "oids" : ["1.2.250.1.213.3.4.220"],
+      "sources" : ["1.2.250.1.213.3.4.220"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-task-bilan.html" : "TDDUI Task Bilan"
+    },
+    {
+      "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j367-type-projet-personnalise-ms",
+      "version" : "20250422120000",
+      "status" : "active",
+      "name" : "JdvJ367TypeProjetPersonnaliseMs",
+      "title" : "Jdv J367 Type Projet Personnalise Ms",
+      "description" : "Cette nomenclature donne le type de projet personnalisé qui est un document co-construit par l'usager, son entourage familial et professionnel du médico-social.",
+      "systems" : [
+        "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r390-type-projet-personnalise"
+      ],
+      "oids" : ["1.2.250.1.213.3.4.221"],
+      "sources" : ["1.2.250.1.213.3.4.221"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-careplan-projet-personnalise.html" : "TDDUI CarePlan Projet Personalise"
     },
     {
       "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis",
