@@ -2,13 +2,6 @@ Instance: tddui-pp-ime-bundle-example
 InstanceOf: TDDUIBundle
 Description: "Exemple de bundle conforme au profil TDDUIBundle contenant le projet personnalisé en IME"
 Usage: #example
-* type = #transaction
-
-Instance: ExampleTDDUIBundleIME
-InstanceOf: TDDUIBundle
-Title: "TDDUIBundleExampleIME"
-Description: "Exemple de bundle Projet Personnalisé IME conforme au profil TDDUIBundle"
-Usage: #example
 
 * type = #transaction
 
