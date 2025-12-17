@@ -1,0 +1,22 @@
+Instance: tddui-pp-pa-goal-objectif-1-example
+InstanceOf: TDDUIGoalObjectif
+Usage: #example
+Description: "Exemple d'un objectif dans le cadre du projet personnalisé PA."
+
+* identifier.value = "3480787529/123456789-OBJE-1234"
+* identifier.system = "https://identifiant-medicosocial-objectif.esante.gouv.fr"
+
+* extension[pieceJointeObjectif].valueReference = Reference(tddui-pp-pa-documentreference-bilan-objectif-1-example)
+
+* lifecycleStatus = #active
+
+* description.text = "Réduire le risque de chute et la peur associée en 6 mois."
+
+* addresses = Reference(tddui-pp-pa-servicerequest-besoin-1-example)
+
+* subject = Reference(tddui-pp-pa-patient-example-pp)
+
+* extension[referenceProjetPerso].valueReference = Reference(tddui-pp-pa-careplan-example)
+
+* note[titreObjectif].text = "Objectif 1"
+* note[titreObjectif].extension[TDDUIDiscriminator].valueCodeableConcept.coding.code = #titreObjectif
