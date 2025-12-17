@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-moyen-res
   "name" : "TDDUITaskMoyenRessource",
   "title" : "TDDUI Task MoyenRessource",
   "status" : "active",
-  "date" : "2025-12-17T09:55:45+00:00",
+  "date" : "2025-12-17T14:41:39+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -233,6 +233,14 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-moyen-res
           "rules" : "open"
         },
         "min" : 1
+      },
+      {
+        "id" : "Task.input.type",
+        "path" : "Task.input.type",
+        "binding" : {
+          "strength" : "required",
+          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-moyen-ressource-valueset"
+        }
       },
       {
         "id" : "Task.input:titre",

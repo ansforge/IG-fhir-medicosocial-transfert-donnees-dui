@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "TDDUI"] ; # 
   fhir:title [ fhir:v "Médicosocial - Transfert de données DUI"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-12-17T09:55:45+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-12-17T14:41:39+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -1524,6 +1524,27 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset> ;
+         fhir:reference [ fhir:v "ValueSet/input-tddui-task-transport-valueset" ]
+       ] ;
+       fhir:name [ fhir:v "InputTaskTransportValueSet" ] ;
+       fhir:description [ fhir:v "ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les transports dans le cadre du DUI." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "CodeSystem"
          ]
        ] ) ;
@@ -1533,6 +1554,27 @@
        ] ;
        fhir:name [ fhir:v "InputTDDUITaskActionCodeSystem" ] ;
        fhir:description [ fhir:v "CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les actions du projet personnalisé." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-action-valueset> ;
+         fhir:reference [ fhir:v "ValueSet/input-tddui-task-action-valueset" ]
+       ] ;
+       fhir:name [ fhir:v "InputTDDUITaskActionValueSet" ] ;
+       fhir:description [ fhir:v "ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les actions du projet personnalisé." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1566,6 +1608,27 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-bilan-valueset> ;
+         fhir:reference [ fhir:v "ValueSet/input-tddui-task-bilan-valueset" ]
+       ] ;
+       fhir:name [ fhir:v "InputTDDUITaskBilanValueSet" ] ;
+       fhir:description [ fhir:v "ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour le bilan du projet personnalisé." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "CodeSystem"
          ]
        ] ) ;
@@ -1587,6 +1650,27 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-moyen-ressource-valueset> ;
+         fhir:reference [ fhir:v "ValueSet/input-tddui-task-moyen-ressource-valueset" ]
+       ] ;
+       fhir:name [ fhir:v "InputTDDUITaskMoyenRessourceValueSet" ] ;
+       fhir:description [ fhir:v "ValueSet  pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les moyens et ressources du projet personnalisé." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "CodeSystem"
          ]
        ] ) ;
@@ -1596,6 +1680,27 @@
        ] ;
        fhir:name [ fhir:v "InputTDDUITaskPrestationCodeSystem" ] ;
        fhir:description [ fhir:v "CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les prestations du projet personnalisé." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-prestation-valueset> ;
+         fhir:reference [ fhir:v "ValueSet/input-tddui-task-prestation-valueset" ]
+       ] ;
+       fhir:name [ fhir:v "InputTDDUITaskPrestationValueSet" ] ;
+       fhir:description [ fhir:v "ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les prestations du projet personnalisé." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1785,6 +1890,27 @@
        ] ;
        fhir:name [ fhir:v "OutputTDDUITaskBilanCodeSystem" ] ;
        fhir:description [ fhir:v "CodeSystem pour la définition des éléments spécifiques des output dans la ressource Task utilisée pour le bilan du projet personnalisé." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/output-tddui-task-bilan-valueset> ;
+         fhir:reference [ fhir:v "ValueSet/output-tddui-task-bilan-valueset" ]
+       ] ;
+       fhir:name [ fhir:v "OutputTDDUITaskBilanValueSet" ] ;
+       fhir:description [ fhir:v "ValueSet pour la définition des éléments spécifiques des output dans la ressource Task utilisée pour le bilan du projet personnalisé." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

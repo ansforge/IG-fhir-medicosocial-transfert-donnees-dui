@@ -106,6 +106,12 @@ These define sets of codes used by systems conforming to this implementation gui
 
 | | |
 | :--- | :--- |
+| [InputTDDUITaskActionValueSet](ValueSet-input-tddui-task-action-valueset.md) | ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les actions du projet personnalisé. |
+| [InputTDDUITaskBilanValueSet](ValueSet-input-tddui-task-bilan-valueset.md) | ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour le bilan du projet personnalisé. |
+| [InputTDDUITaskMoyenRessourceValueSet](ValueSet-input-tddui-task-moyen-ressource-valueset.md) | ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les moyens et ressources du projet personnalisé. |
+| [InputTDDUITaskPrestationValueSet](ValueSet-input-tddui-task-prestation-valueset.md) | ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les prestations du projet personnalisé. |
+| [InputTaskTransportValueSet](ValueSet-input-tddui-task-transport-valueset.md) | ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les transports dans le cadre du DUI. |
+| [OutputTDDUITaskBilanValueSet](ValueSet-output-tddui-task-bilan-valueset.md) | ValueSet pour la définition des éléments spécifiques des output dans la ressource Task utilisée pour le bilan du projet personnalisé. |
 | [TDDUI CarePlan supportingInfo ValueSet](ValueSet-tddui-care-plan-supportingInfo-vs.md) | ValueSet définissant les types de notes pour l'élément CarePlan.supportingInfo. |
 | [TDDUI Discriminator ValueSet](ValueSet-tddui-discriminator-vs.md) | ValueSet définissant les codes discriminants. |
 | [TDDUI Encounter Identifier Type ValueSet](ValueSet-tddui-encounter-identifier-vs.md) | ValueSet for TDDUI Encounter's identifier types |

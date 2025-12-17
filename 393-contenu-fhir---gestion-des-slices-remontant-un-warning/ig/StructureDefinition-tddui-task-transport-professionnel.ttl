@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "TDDUITaskTransportProfessionnel"] ; # 
   fhir:title [ fhir:v "TDDUI Task Transport Professionnel"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-12-17T09:55:45+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-12-17T14:41:39+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -2975,18 +2975,11 @@
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
        fhir:binding [
-         fhir:extension ( [
-           fhir:url [
-             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ;
-             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName>
-           ] ;
-           fhir:value [
-             a fhir:String ;
-             fhir:v "TaskInputParameterType"
-           ]
-         ] ) ;
-         fhir:strength [ fhir:v "example" ] ;
-         fhir:description [ fhir:v "Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. \"Comparison source\", \"Applicable consent\", \"Concomitent Medications\", etc." ]
+         fhir:strength [ fhir:v "required" ] ;
+         fhir:valueSet [
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset"^^xsd:anyURI ;
+           fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset>
+         ]
        ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "rim" ] ;
@@ -3493,18 +3486,11 @@
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
        fhir:binding [
-         fhir:extension ( [
-           fhir:url [
-             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ;
-             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName>
-           ] ;
-           fhir:value [
-             a fhir:String ;
-             fhir:v "TaskInputParameterType"
-           ]
-         ] ) ;
-         fhir:strength [ fhir:v "example" ] ;
-         fhir:description [ fhir:v "Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. \"Comparison source\", \"Applicable consent\", \"Concomitent Medications\", etc." ]
+         fhir:strength [ fhir:v "required" ] ;
+         fhir:valueSet [
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset"^^xsd:anyURI ;
+           fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset>
+         ]
        ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "rim" ] ;
@@ -3773,18 +3759,11 @@
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
        fhir:binding [
-         fhir:extension ( [
-           fhir:url [
-             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ;
-             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName>
-           ] ;
-           fhir:value [
-             a fhir:String ;
-             fhir:v "TaskInputParameterType"
-           ]
-         ] ) ;
-         fhir:strength [ fhir:v "example" ] ;
-         fhir:description [ fhir:v "Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. \"Comparison source\", \"Applicable consent\", \"Concomitent Medications\", etc." ]
+         fhir:strength [ fhir:v "required" ] ;
+         fhir:valueSet [
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset"^^xsd:anyURI ;
+           fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset>
+         ]
        ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "rim" ] ;
@@ -4046,18 +4025,11 @@
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
        fhir:binding [
-         fhir:extension ( [
-           fhir:url [
-             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ;
-             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName>
-           ] ;
-           fhir:value [
-             a fhir:String ;
-             fhir:v "TaskInputParameterType"
-           ]
-         ] ) ;
-         fhir:strength [ fhir:v "example" ] ;
-         fhir:description [ fhir:v "Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. \"Comparison source\", \"Applicable consent\", \"Concomitent Medications\", etc." ]
+         fhir:strength [ fhir:v "required" ] ;
+         fhir:valueSet [
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset"^^xsd:anyURI ;
+           fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset>
+         ]
        ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "rim" ] ;
@@ -4319,18 +4291,11 @@
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
        fhir:binding [
-         fhir:extension ( [
-           fhir:url [
-             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ;
-             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName>
-           ] ;
-           fhir:value [
-             a fhir:String ;
-             fhir:v "TaskInputParameterType"
-           ]
-         ] ) ;
-         fhir:strength [ fhir:v "example" ] ;
-         fhir:description [ fhir:v "Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. \"Comparison source\", \"Applicable consent\", \"Concomitent Medications\", etc." ]
+         fhir:strength [ fhir:v "required" ] ;
+         fhir:valueSet [
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset"^^xsd:anyURI ;
+           fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset>
+         ]
        ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "rim" ] ;
@@ -4592,18 +4557,11 @@
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
        fhir:binding [
-         fhir:extension ( [
-           fhir:url [
-             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ;
-             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName>
-           ] ;
-           fhir:value [
-             a fhir:String ;
-             fhir:v "TaskInputParameterType"
-           ]
-         ] ) ;
-         fhir:strength [ fhir:v "example" ] ;
-         fhir:description [ fhir:v "Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. \"Comparison source\", \"Applicable consent\", \"Concomitent Medications\", etc." ]
+         fhir:strength [ fhir:v "required" ] ;
+         fhir:valueSet [
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset"^^xsd:anyURI ;
+           fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset>
+         ]
        ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "rim" ] ;
@@ -4865,18 +4823,11 @@
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
        fhir:binding [
-         fhir:extension ( [
-           fhir:url [
-             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ;
-             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName>
-           ] ;
-           fhir:value [
-             a fhir:String ;
-             fhir:v "TaskInputParameterType"
-           ]
-         ] ) ;
-         fhir:strength [ fhir:v "example" ] ;
-         fhir:description [ fhir:v "Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. \"Comparison source\", \"Applicable consent\", \"Concomitent Medications\", etc." ]
+         fhir:strength [ fhir:v "required" ] ;
+         fhir:valueSet [
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset"^^xsd:anyURI ;
+           fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset>
+         ]
        ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "rim" ] ;
@@ -5138,18 +5089,11 @@
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
        fhir:binding [
-         fhir:extension ( [
-           fhir:url [
-             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ;
-             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName>
-           ] ;
-           fhir:value [
-             a fhir:String ;
-             fhir:v "TaskInputParameterType"
-           ]
-         ] ) ;
-         fhir:strength [ fhir:v "example" ] ;
-         fhir:description [ fhir:v "Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. \"Comparison source\", \"Applicable consent\", \"Concomitent Medications\", etc." ]
+         fhir:strength [ fhir:v "required" ] ;
+         fhir:valueSet [
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset"^^xsd:anyURI ;
+           fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset>
+         ]
        ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "rim" ] ;

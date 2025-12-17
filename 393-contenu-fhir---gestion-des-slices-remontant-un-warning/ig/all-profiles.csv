@@ -7603,7 +7603,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "tddui-task-action","Task.input.type","Task.input.type","","Name
 ","",1,1,"","","","CodeableConcept {[]} {[]}
-","Label for the input","A code or description indicating how the input is intended to be used as part of the task execution.","If referencing a BPMN workflow or Protocol, the ""system"" is the URL for the workflow definition and the code is the ""name"" of the required input.","Inputs are named to enable task automation to bind data and pass it from one task to the next.","","","","","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Label for the input","A code or description indicating how the input is intended to be used as part of the task execution.","If referencing a BPMN workflow or Protocol, the ""system"" is the URL for the workflow definition and the code is the ""name"" of the required input.","Inputs are named to enable task automation to bind data and pass it from one task to the next.","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-action-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-action","Task.input.value[x]","Task.input.value[x]","","","",1,1,"","","","base64Binary {[]} {[]}
 boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[]}decimal {[]} {[]}id {[]} {[]}instant {[]} {[]}integer {[]} {[]}markdown {[]} {[]}oid {[]} {[]}positiveInt {[]} {[]}string {[]} {[]}time {[]} {[]}unsignedInt {[]} {[]}uri {[]} {[]}url {[]} {[]}uuid {[]} {[]}Address {[]} {[]}Age {[]} {[]}Annotation {[]} {[]}Attachment {[]} {[]}CodeableConcept {[]} {[]}Coding {[]} {[]}ContactPoint {[]} {[]}Count {[]} {[]}Distance {[]} {[]}Duration {[]} {[]}HumanName {[]} {[]}Identifier {[]} {[]}Money {[]} {[]}Period {[]} {[]}Quantity {[]} {[]}Range {[]} {[]}Ratio {[]} {[]}Reference {[]} {[]}SampledData {[]} {[]}Signature {[]} {[]}Timing {[]} {[]}ContactDetail {[]} {[]}Contributor {[]} {[]}DataRequirement {[]} {[]}Expression {[]} {[]}ParameterDefinition {[]} {[]}RelatedArtifact {[]} {[]}TriggerDefinition {[]} {[]}UsageContext {[]} {[]}Dosage {[]} {[]}Meta {[]} {[]}","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -7631,7 +7631,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem""/>
     <code value=""titre""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-action-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-action","Task.input:titre.value[x]","Task.input.value[x]","","","",1,1,"","","","string {[]} {[]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -7659,7 +7659,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem""/>
     <code value=""evaluation""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-action-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-action","Task.input:evaluation.value[x]","Task.input.value[x]","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response]]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -7687,7 +7687,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem""/>
     <code value=""avisUsager""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-action-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-action","Task.input:avisUsager.value[x]","Task.input.value[x]","","","",1,1,"","","","string {[]} {[]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -7715,7 +7715,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem""/>
     <code value=""resultatAttendu""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-action-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-action","Task.input:resultatAttendu.value[x]","Task.input.value[x]","","","",1,1,"","","","string {[]} {[]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -7743,7 +7743,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem""/>
     <code value=""pieceJointe""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-action-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-action","Task.input:pieceJointe.value[x]","Task.input.value[x]","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference]]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -7771,7 +7771,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem""/>
     <code value=""objectif""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-action-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-action","Task.input:objectif.value[x]","Task.input.value[x]","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif]]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -8005,7 +8005,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "tddui-task-bilan","Task.input.type","Task.input.type","","Name
 ","",1,1,"","","","CodeableConcept {[]} {[]}
-","Label for the input","A code or description indicating how the input is intended to be used as part of the task execution.","If referencing a BPMN workflow or Protocol, the ""system"" is the URL for the workflow definition and the code is the ""name"" of the required input.","Inputs are named to enable task automation to bind data and pass it from one task to the next.","","","","","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Label for the input","A code or description indicating how the input is intended to be used as part of the task execution.","If referencing a BPMN workflow or Protocol, the ""system"" is the URL for the workflow definition and the code is the ""name"" of the required input.","Inputs are named to enable task automation to bind data and pass it from one task to the next.","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-bilan-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-bilan","Task.input.value[x]","Task.input.value[x]","","","",1,1,"","","","base64Binary {[]} {[]}
 boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[]}decimal {[]} {[]}id {[]} {[]}instant {[]} {[]}integer {[]} {[]}markdown {[]} {[]}oid {[]} {[]}positiveInt {[]} {[]}string {[]} {[]}time {[]} {[]}unsignedInt {[]} {[]}uri {[]} {[]}url {[]} {[]}uuid {[]} {[]}Address {[]} {[]}Age {[]} {[]}Annotation {[]} {[]}Attachment {[]} {[]}CodeableConcept {[]} {[]}Coding {[]} {[]}ContactPoint {[]} {[]}Count {[]} {[]}Distance {[]} {[]}Duration {[]} {[]}HumanName {[]} {[]}Identifier {[]} {[]}Money {[]} {[]}Period {[]} {[]}Quantity {[]} {[]}Range {[]} {[]}Ratio {[]} {[]}Reference {[]} {[]}SampledData {[]} {[]}Signature {[]} {[]}Timing {[]} {[]}ContactDetail {[]} {[]}Contributor {[]} {[]}DataRequirement {[]} {[]}Expression {[]} {[]}ParameterDefinition {[]} {[]}RelatedArtifact {[]} {[]}TriggerDefinition {[]} {[]}UsageContext {[]} {[]}Dosage {[]} {[]}Meta {[]} {[]}","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -8033,7 +8033,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-bilan-codesystem""/>
     <code value=""perimetre""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-bilan-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-bilan","Task.input:perimetre.value[x]","Task.input.value[x]","","","",1,1,"","","","string {[]} {[]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -8061,7 +8061,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-bilan-codesystem""/>
     <code value=""problematique""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-bilan-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-bilan","Task.input:problematique.value[x]","Task.input.value[x]","","","",1,1,"","","","string {[]} {[]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -8089,7 +8089,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-bilan-codesystem""/>
     <code value=""invite""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-bilan-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-bilan","Task.input:invite.value[x]","Task.input.value[x]","","","",1,1,"","","","string {[]} {[]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -8117,7 +8117,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-bilan-codesystem""/>
     <code value=""pieceJointe""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-bilan-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-bilan","Task.input:pieceJointe.value[x]","Task.input.value[x]","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference]]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -8145,7 +8145,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-bilan-codesystem""/>
     <code value=""dateProchainBilan""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-bilan-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-bilan","Task.input:dateProchainBilan.value[x]","Task.input.value[x]","","","",1,1,"","","","dateTime {[]} {[]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -8173,7 +8173,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-bilan-codesystem""/>
     <code value=""synthesePreparationBilan""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-bilan-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-bilan","Task.input:synthesePreparationBilan.value[x]","Task.input.value[x]","","","",1,1,"","","","Annotation {[]} {[]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -8216,7 +8216,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "tddui-task-bilan","Task.output.type","Task.output.type","","Name
 ","",1,1,"","","","CodeableConcept {[]} {[]}
-","Label for output","The name of the Output parameter.","","Outputs are named to enable task automation to bind data and pass it from one task to the next.","","","","","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Identified issues"", ""Preliminary results"", ""Filler order"", ""Final results"", etc.","","",,,,"Task.output.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Label for output","The name of the Output parameter.","","Outputs are named to enable task automation to bind data and pass it from one task to the next.","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/output-tddui-task-bilan-valueset","",,,,"Task.output.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-bilan","Task.output.value[x]","Task.output.value[x]","","","",1,1,"","","","base64Binary {[]} {[]}
 boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[]}decimal {[]} {[]}id {[]} {[]}instant {[]} {[]}integer {[]} {[]}markdown {[]} {[]}oid {[]} {[]}positiveInt {[]} {[]}string {[]} {[]}time {[]} {[]}unsignedInt {[]} {[]}uri {[]} {[]}url {[]} {[]}uuid {[]} {[]}Address {[]} {[]}Age {[]} {[]}Annotation {[]} {[]}Attachment {[]} {[]}CodeableConcept {[]} {[]}Coding {[]} {[]}ContactPoint {[]} {[]}Count {[]} {[]}Distance {[]} {[]}Duration {[]} {[]}HumanName {[]} {[]}Identifier {[]} {[]}Money {[]} {[]}Period {[]} {[]}Quantity {[]} {[]}Range {[]} {[]}Ratio {[]} {[]}Reference {[]} {[]}SampledData {[]} {[]}Signature {[]} {[]}Timing {[]} {[]}ContactDetail {[]} {[]}Contributor {[]} {[]}DataRequirement {[]} {[]}Expression {[]} {[]}ParameterDefinition {[]} {[]}RelatedArtifact {[]} {[]}TriggerDefinition {[]} {[]}UsageContext {[]} {[]}Dosage {[]} {[]}Meta {[]} {[]}","Result of output","The value of the Output parameter as a basic type.","","Task outputs can take any form.","","","","","","","",,,,,"",,,,"Task.output.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -8243,7 +8243,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/output-tddui-task-bilan-codesystem""/>
     <code value=""syntheseBilan""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Identified issues"", ""Preliminary results"", ""Filler order"", ""Final results"", etc.","","",,,,"Task.output.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/output-tddui-task-bilan-valueset","",,,,"Task.output.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-bilan","Task.output:syntheseBilan.value[x]","Task.output.value[x]","","","",1,1,"","","","string {[]} {[]}
 ","Result of output","The value of the Output parameter as a basic type.","","Task outputs can take any form.","","","","","","","",,,,,"",,,,"Task.output.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -8468,7 +8468,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "tddui-task-moyen-ressource","Task.input.type","Task.input.type","","Name
 ","",1,1,"","","","CodeableConcept {[]} {[]}
-","Label for the input","A code or description indicating how the input is intended to be used as part of the task execution.","If referencing a BPMN workflow or Protocol, the ""system"" is the URL for the workflow definition and the code is the ""name"" of the required input.","Inputs are named to enable task automation to bind data and pass it from one task to the next.","","","","","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Label for the input","A code or description indicating how the input is intended to be used as part of the task execution.","If referencing a BPMN workflow or Protocol, the ""system"" is the URL for the workflow definition and the code is the ""name"" of the required input.","Inputs are named to enable task automation to bind data and pass it from one task to the next.","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-moyen-ressource-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-moyen-ressource","Task.input.value[x]","Task.input.value[x]","","","",1,1,"","","","base64Binary {[]} {[]}
 boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[]}decimal {[]} {[]}id {[]} {[]}instant {[]} {[]}integer {[]} {[]}markdown {[]} {[]}oid {[]} {[]}positiveInt {[]} {[]}string {[]} {[]}time {[]} {[]}unsignedInt {[]} {[]}uri {[]} {[]}url {[]} {[]}uuid {[]} {[]}Address {[]} {[]}Age {[]} {[]}Annotation {[]} {[]}Attachment {[]} {[]}CodeableConcept {[]} {[]}Coding {[]} {[]}ContactPoint {[]} {[]}Count {[]} {[]}Distance {[]} {[]}Duration {[]} {[]}HumanName {[]} {[]}Identifier {[]} {[]}Money {[]} {[]}Period {[]} {[]}Quantity {[]} {[]}Range {[]} {[]}Ratio {[]} {[]}Reference {[]} {[]}SampledData {[]} {[]}Signature {[]} {[]}Timing {[]} {[]}ContactDetail {[]} {[]}Contributor {[]} {[]}DataRequirement {[]} {[]}Expression {[]} {[]}ParameterDefinition {[]} {[]}RelatedArtifact {[]} {[]}TriggerDefinition {[]} {[]}UsageContext {[]} {[]}Dosage {[]} {[]}Meta {[]} {[]}","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -8496,7 +8496,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-moyen-ressource-codesystem""/>
     <code value=""titre""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-moyen-ressource-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-moyen-ressource","Task.input:titre.value[x]","Task.input.value[x]","","","",1,1,"","","","string {[]} {[]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -8524,7 +8524,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-moyen-ressource-codesystem""/>
     <code value=""evaluation""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-moyen-ressource-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-moyen-ressource","Task.input:evaluation.value[x]","Task.input.value[x]","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response]]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -8552,7 +8552,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-moyen-ressource-codesystem""/>
     <code value=""pieceJointe""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-moyen-ressource-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-moyen-ressource","Task.input:pieceJointe.value[x]","Task.input.value[x]","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference]]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -8825,7 +8825,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "tddui-task-prestation","Task.input.type","Task.input.type","","Name
 ","",1,1,"","","","CodeableConcept {[]} {[]}
-","Label for the input","A code or description indicating how the input is intended to be used as part of the task execution.","If referencing a BPMN workflow or Protocol, the ""system"" is the URL for the workflow definition and the code is the ""name"" of the required input.","Inputs are named to enable task automation to bind data and pass it from one task to the next.","","","","","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Label for the input","A code or description indicating how the input is intended to be used as part of the task execution.","If referencing a BPMN workflow or Protocol, the ""system"" is the URL for the workflow definition and the code is the ""name"" of the required input.","Inputs are named to enable task automation to bind data and pass it from one task to the next.","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-prestation-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-prestation","Task.input.value[x]","Task.input.value[x]","","","",1,1,"","","","base64Binary {[]} {[]}
 boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[]}decimal {[]} {[]}id {[]} {[]}instant {[]} {[]}integer {[]} {[]}markdown {[]} {[]}oid {[]} {[]}positiveInt {[]} {[]}string {[]} {[]}time {[]} {[]}unsignedInt {[]} {[]}uri {[]} {[]}url {[]} {[]}uuid {[]} {[]}Address {[]} {[]}Age {[]} {[]}Annotation {[]} {[]}Attachment {[]} {[]}CodeableConcept {[]} {[]}Coding {[]} {[]}ContactPoint {[]} {[]}Count {[]} {[]}Distance {[]} {[]}Duration {[]} {[]}HumanName {[]} {[]}Identifier {[]} {[]}Money {[]} {[]}Period {[]} {[]}Quantity {[]} {[]}Range {[]} {[]}Ratio {[]} {[]}Reference {[]} {[]}SampledData {[]} {[]}Signature {[]} {[]}Timing {[]} {[]}ContactDetail {[]} {[]}Contributor {[]} {[]}DataRequirement {[]} {[]}Expression {[]} {[]}ParameterDefinition {[]} {[]}RelatedArtifact {[]} {[]}TriggerDefinition {[]} {[]}UsageContext {[]} {[]}Dosage {[]} {[]}Meta {[]} {[]}","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -8853,7 +8853,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-prestation-codesystem""/>
     <code value=""titre""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-prestation-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-prestation","Task.input:titre.value[x]","Task.input.value[x]","","","",1,1,"","","","string {[]} {[]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -8881,7 +8881,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-prestation-codesystem""/>
     <code value=""typePrestation""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-prestation-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-prestation","Task.input:typePrestation.value[x]","Task.input.value[x]","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-serafin-valueset","",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -8909,7 +8909,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-prestation-codesystem""/>
     <code value=""evaluation""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-prestation-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-prestation","Task.input:evaluation.value[x]","Task.input.value[x]","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response]]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -8937,7 +8937,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-prestation-codesystem""/>
     <code value=""pieceJointe""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-prestation-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-prestation","Task.input:pieceJointe.value[x]","Task.input.value[x]","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference]]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -9171,7 +9171,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "tddui-task-transport-professionnel","Task.input.type","Task.input.type","","Name
 ","",1,1,"","","","CodeableConcept {[]} {[]}
-","Label for the input","A code or description indicating how the input is intended to be used as part of the task execution.","If referencing a BPMN workflow or Protocol, the ""system"" is the URL for the workflow definition and the code is the ""name"" of the required input.","Inputs are named to enable task automation to bind data and pass it from one task to the next.","","","","","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Label for the input","A code or description indicating how the input is intended to be used as part of the task execution.","If referencing a BPMN workflow or Protocol, the ""system"" is the URL for the workflow definition and the code is the ""name"" of the required input.","Inputs are named to enable task automation to bind data and pass it from one task to the next.","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-transport-professionnel","Task.input.value[x]","Task.input.value[x]","","","",1,1,"","","","base64Binary {[]} {[]}
 boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[]}decimal {[]} {[]}id {[]} {[]}instant {[]} {[]}integer {[]} {[]}markdown {[]} {[]}oid {[]} {[]}positiveInt {[]} {[]}string {[]} {[]}time {[]} {[]}unsignedInt {[]} {[]}uri {[]} {[]}url {[]} {[]}uuid {[]} {[]}Address {[]} {[]}Age {[]} {[]}Annotation {[]} {[]}Attachment {[]} {[]}CodeableConcept {[]} {[]}Coding {[]} {[]}ContactPoint {[]} {[]}Count {[]} {[]}Distance {[]} {[]}Duration {[]} {[]}HumanName {[]} {[]}Identifier {[]} {[]}Money {[]} {[]}Period {[]} {[]}Quantity {[]} {[]}Range {[]} {[]}Ratio {[]} {[]}Reference {[]} {[]}SampledData {[]} {[]}Signature {[]} {[]}Timing {[]} {[]}ContactDetail {[]} {[]}Contributor {[]} {[]}DataRequirement {[]} {[]}Expression {[]} {[]}ParameterDefinition {[]} {[]}RelatedArtifact {[]} {[]}TriggerDefinition {[]} {[]}UsageContext {[]} {[]}Dosage {[]} {[]}Meta {[]} {[]}","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -9199,7 +9199,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem""/>
     <code value=""typeMotorisation""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-transport-professionnel","Task.input:typeMotorisation.value[x]","Task.input.value[x]","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,"required","","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-motorisation-cisis","",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -9227,7 +9227,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem""/>
     <code value=""adresseDepart""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-transport-professionnel","Task.input:adresseDepart.value[x]","Task.input.value[x]","","","",1,1,"","","","Address {[]} {[]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -9255,7 +9255,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem""/>
     <code value=""adresseDestination""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-transport-professionnel","Task.input:adresseDestination.value[x]","Task.input.value[x]","","","",1,1,"","","","Address {[]} {[]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -9283,7 +9283,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem""/>
     <code value=""budgetPrevisionnel""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-transport-professionnel","Task.input:budgetPrevisionnel.value[x]","Task.input.value[x]","","","",1,1,"","","","Money {[]} {[]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -9311,7 +9311,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem""/>
     <code value=""budgetReel""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-transport-professionnel","Task.input:budgetReel.value[x]","Task.input.value[x]","","","",1,1,"","","","Money {[]} {[]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -9339,7 +9339,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem""/>
     <code value=""distance""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-transport-professionnel","Task.input:distance.value[x]","Task.input.value[x]","","","",1,1,"","","","Distance {[]} {[]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -9367,7 +9367,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem""/>
     <code value=""dureeTheorique""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-transport-professionnel","Task.input:dureeTheorique.value[x]","Task.input.value[x]","","","",1,1,"","","","Duration {[]} {[]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -9601,7 +9601,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "tddui-task-transport-usager","Task.input.type","Task.input.type","","Name
 ","",1,1,"","","","CodeableConcept {[]} {[]}
-","Label for the input","A code or description indicating how the input is intended to be used as part of the task execution.","If referencing a BPMN workflow or Protocol, the ""system"" is the URL for the workflow definition and the code is the ""name"" of the required input.","Inputs are named to enable task automation to bind data and pass it from one task to the next.","","","","","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Label for the input","A code or description indicating how the input is intended to be used as part of the task execution.","If referencing a BPMN workflow or Protocol, the ""system"" is the URL for the workflow definition and the code is the ""name"" of the required input.","Inputs are named to enable task automation to bind data and pass it from one task to the next.","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-transport-usager","Task.input.value[x]","Task.input.value[x]","","","",1,1,"","","","base64Binary {[]} {[]}
 boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[]}decimal {[]} {[]}id {[]} {[]}instant {[]} {[]}integer {[]} {[]}markdown {[]} {[]}oid {[]} {[]}positiveInt {[]} {[]}string {[]} {[]}time {[]} {[]}unsignedInt {[]} {[]}uri {[]} {[]}url {[]} {[]}uuid {[]} {[]}Address {[]} {[]}Age {[]} {[]}Annotation {[]} {[]}Attachment {[]} {[]}CodeableConcept {[]} {[]}Coding {[]} {[]}ContactPoint {[]} {[]}Count {[]} {[]}Distance {[]} {[]}Duration {[]} {[]}HumanName {[]} {[]}Identifier {[]} {[]}Money {[]} {[]}Period {[]} {[]}Quantity {[]} {[]}Range {[]} {[]}Ratio {[]} {[]}Reference {[]} {[]}SampledData {[]} {[]}Signature {[]} {[]}Timing {[]} {[]}ContactDetail {[]} {[]}Contributor {[]} {[]}DataRequirement {[]} {[]}Expression {[]} {[]}ParameterDefinition {[]} {[]}RelatedArtifact {[]} {[]}TriggerDefinition {[]} {[]}UsageContext {[]} {[]}Dosage {[]} {[]}Meta {[]} {[]}","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -9629,7 +9629,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem""/>
     <code value=""typeMotorisation""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-transport-usager","Task.input:typeMotorisation.value[x]","Task.input.value[x]","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,"required","","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-motorisation-cisis","",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -9657,7 +9657,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem""/>
     <code value=""adresseDepart""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-transport-usager","Task.input:adresseDepart.value[x]","Task.input.value[x]","","","",1,1,"","","","Address {[]} {[]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -9685,7 +9685,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem""/>
     <code value=""adresseDestination""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-transport-usager","Task.input:adresseDestination.value[x]","Task.input.value[x]","","","",1,1,"","","","Address {[]} {[]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -9713,7 +9713,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem""/>
     <code value=""budgetPrevisionnel""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-transport-usager","Task.input:budgetPrevisionnel.value[x]","Task.input.value[x]","","","",1,1,"","","","Money {[]} {[]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -9741,7 +9741,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem""/>
     <code value=""budgetReel""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-transport-usager","Task.input:budgetReel.value[x]","Task.input.value[x]","","","",1,1,"","","","Money {[]} {[]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -9769,7 +9769,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem""/>
     <code value=""distance""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-transport-usager","Task.input:distance.value[x]","Task.input.value[x]","","","",1,1,"","","","Distance {[]} {[]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -9797,7 +9797,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem""/>
     <code value=""dureeTheorique""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-transport-usager","Task.input:dureeTheorique.value[x]","Task.input.value[x]","","","",1,1,"","","","Duration {[]} {[]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -9825,7 +9825,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem""/>
     <code value=""accompagnement""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-transport-usager","Task.input:accompagnement.value[x]","Task.input.value[x]","","","",1,1,"","","","boolean {[]} {[]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -9853,7 +9853,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem""/>
     <code value=""asepsie""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-transport-usager","Task.input:asepsieRigoureuse.value[x]","Task.input.value[x]","","","",1,1,"","","","boolean {[]} {[]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -9881,7 +9881,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem""/>
     <code value=""natureTransport""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-transport-usager","Task.input:natureTransport.value[x]","Task.input.value[x]","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J282-TransportsLiesAuProjetIndividuel_SERAFIN/FHIR/JDV-J282-TransportsLiesAuProjetIndividuel-SERAFIN","",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -10090,7 +10090,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "tddui-task-transport","Task.input.type","Task.input.type","","Name
 ","",1,1,"","","","CodeableConcept {[]} {[]}
-","Label for the input","A code or description indicating how the input is intended to be used as part of the task execution.","If referencing a BPMN workflow or Protocol, the ""system"" is the URL for the workflow definition and the code is the ""name"" of the required input.","Inputs are named to enable task automation to bind data and pass it from one task to the next.","","","","","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Label for the input","A code or description indicating how the input is intended to be used as part of the task execution.","If referencing a BPMN workflow or Protocol, the ""system"" is the URL for the workflow definition and the code is the ""name"" of the required input.","Inputs are named to enable task automation to bind data and pass it from one task to the next.","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-transport","Task.input.value[x]","Task.input.value[x]","","","",1,1,"","","","base64Binary {[]} {[]}
 boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[]}decimal {[]} {[]}id {[]} {[]}instant {[]} {[]}integer {[]} {[]}markdown {[]} {[]}oid {[]} {[]}positiveInt {[]} {[]}string {[]} {[]}time {[]} {[]}unsignedInt {[]} {[]}uri {[]} {[]}url {[]} {[]}uuid {[]} {[]}Address {[]} {[]}Age {[]} {[]}Annotation {[]} {[]}Attachment {[]} {[]}CodeableConcept {[]} {[]}Coding {[]} {[]}ContactPoint {[]} {[]}Count {[]} {[]}Distance {[]} {[]}Duration {[]} {[]}HumanName {[]} {[]}Identifier {[]} {[]}Money {[]} {[]}Period {[]} {[]}Quantity {[]} {[]}Range {[]} {[]}Ratio {[]} {[]}Reference {[]} {[]}SampledData {[]} {[]}Signature {[]} {[]}Timing {[]} {[]}ContactDetail {[]} {[]}Contributor {[]} {[]}DataRequirement {[]} {[]}Expression {[]} {[]}ParameterDefinition {[]} {[]}RelatedArtifact {[]} {[]}TriggerDefinition {[]} {[]}UsageContext {[]} {[]}Dosage {[]} {[]}Meta {[]} {[]}","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -10118,7 +10118,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem""/>
     <code value=""typeMotorisation""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-transport","Task.input:typeMotorisation.value[x]","Task.input.value[x]","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,"required","","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-motorisation-cisis","",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -10146,7 +10146,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem""/>
     <code value=""adresseDepart""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-transport","Task.input:adresseDepart.value[x]","Task.input.value[x]","","","",1,1,"","","","Address {[]} {[]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -10174,7 +10174,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem""/>
     <code value=""adresseDestination""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-transport","Task.input:adresseDestination.value[x]","Task.input.value[x]","","","",1,1,"","","","Address {[]} {[]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -10202,7 +10202,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem""/>
     <code value=""budgetPrevisionnel""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-transport","Task.input:budgetPrevisionnel.value[x]","Task.input.value[x]","","","",1,1,"","","","Money {[]} {[]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -10230,7 +10230,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem""/>
     <code value=""budgetReel""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-transport","Task.input:budgetReel.value[x]","Task.input.value[x]","","","",1,1,"","","","Money {[]} {[]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -10258,7 +10258,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem""/>
     <code value=""distance""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-transport","Task.input:distance.value[x]","Task.input.value[x]","","","",1,1,"","","","Distance {[]} {[]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -10286,7 +10286,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem""/>
     <code value=""dureeTheorique""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-task-transport","Task.input:dureeTheorique.value[x]","Task.input.value[x]","","","",1,1,"","","","Duration {[]} {[]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

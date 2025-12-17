@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
   "name" : "TDDUITaskTransport",
   "title" : "TDDUI Task Transport",
   "status" : "active",
-  "date" : "2025-12-17T09:55:45+00:00",
+  "date" : "2025-12-17T14:41:39+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -219,6 +219,14 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
             }
           ],
           "rules" : "open"
+        }
+      },
+      {
+        "id" : "Task.input.type",
+        "path" : "Task.input.type",
+        "binding" : {
+          "strength" : "required",
+          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset"
         }
       },
       {

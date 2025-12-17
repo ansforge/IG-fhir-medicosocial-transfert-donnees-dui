@@ -29,8 +29,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
-      "ValueSet-tddui-patient-identifier-vs.html" : "TDDUI Patient Identifier ValueSet",
-      "ValueSet-tddui-encounter-identifier-vs.html" : "TDDUI Encounter Identifier Type ValueSet"
+      "ValueSet-tddui-encounter-identifier-vs.html" : "TDDUI Encounter Identifier Type ValueSet",
+      "ValueSet-tddui-patient-identifier-vs.html" : "TDDUI Patient Identifier ValueSet"
     },
     {
       "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-discharge-disposition",
@@ -115,6 +115,90 @@
       "StructureDefinition-tddui-patient.html" : "TDDUI Patient"
     },
     {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-action-valueset",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "InputTDDUITaskActionValueSet",
+      "title" : "InputTDDUITaskActionValueSet",
+      "description" : "ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les actions du projet personnalisé.",
+      "systems" : [
+        "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-task-action.html" : "TDDUI Task Action"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-bilan-valueset",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "InputTDDUITaskBilanValueSet",
+      "title" : "InputTDDUITaskBilanValueSet",
+      "description" : "ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour le bilan du projet personnalisé.",
+      "systems" : [
+        "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-bilan-codesystem"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-task-bilan.html" : "TDDUI Task Bilan"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-moyen-ressource-valueset",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "InputTDDUITaskMoyenRessourceValueSet",
+      "title" : "InputTDDUITaskMoyenRessourceValueSet",
+      "description" : "ValueSet  pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les moyens et ressources du projet personnalisé.",
+      "systems" : [
+        "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-moyen-ressource-codesystem"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-task-moyen-ressource.html" : "TDDUI Task MoyenRessource"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-prestation-valueset",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "InputTDDUITaskPrestationValueSet",
+      "title" : "InputTDDUITaskPrestationValueSet",
+      "description" : "ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les prestations du projet personnalisé.",
+      "systems" : [
+        "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-prestation-codesystem"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-task-prestation.html" : "TDDUI Task Prestation"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "InputTDDUITaskTransportValueSet",
+      "title" : "InputTaskTransportValueSet",
+      "description" : "ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les transports dans le cadre du DUI.",
+      "systems" : [
+        "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-task-transport.html" : "TDDUI Task Transport"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/output-tddui-task-bilan-valueset",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "OutputTDDUITaskBilanValueSet",
+      "title" : "OutputTDDUITaskBilanValueSet",
+      "description" : "ValueSet pour la définition des éléments spécifiques des output dans la ressource Task utilisée pour le bilan du projet personnalisé.",
+      "systems" : [
+        "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/output-tddui-task-bilan-codesystem"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-task-bilan.html" : "TDDUI Task Bilan"
+    },
+    {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-care-plan-supportingInfo-vs",
       "version" : "2.1.0",
       "status" : "active",
@@ -140,10 +224,10 @@
       ],
       "uses" : {
       },
-      "ValueSet-tddui-care-plan-supportingInfo-vs.html" : "TDDUI CarePlan supportingInfo ValueSet",
-      "StructureDefinition-tddui-discriminator.html" : "TDDUI Discriminator Extension",
       "ValueSet-tddui-goal-attente-note-vs.html" : "TDDUI Goal Attente Note ValueSet",
-      "ValueSet-tddui-goal-objectif-note-vs.html" : "TDDUI Goal Objectif Note ValueSet"
+      "ValueSet-tddui-care-plan-supportingInfo-vs.html" : "TDDUI CarePlan supportingInfo ValueSet",
+      "ValueSet-tddui-goal-objectif-note-vs.html" : "TDDUI Goal Objectif Note ValueSet",
+      "StructureDefinition-tddui-discriminator.html" : "TDDUI Discriminator Extension"
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-identifier-vs",
@@ -249,8 +333,8 @@
       "systems" : ["https://smt.esante.gouv.fr/terminologie-SERAFINPH"],
       "uses" : {
       },
-      "StructureDefinition-tddui-task-prestation.html" : "TDDUI Task Prestation",
       "ValueSet-tddui-encounter-type-vs.html" : "TDDUI Encounter Type ValueSet",
+      "StructureDefinition-tddui-task-prestation.html" : "TDDUI Task Prestation",
       "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
     },
     {

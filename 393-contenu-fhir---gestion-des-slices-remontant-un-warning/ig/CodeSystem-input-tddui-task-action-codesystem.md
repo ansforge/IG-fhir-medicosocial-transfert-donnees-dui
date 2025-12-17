@@ -16,7 +16,7 @@ CodeSystem pour la définition des éléments spécifiques des input dans la res
 
  Cette terminologie de référence (CodeSystem) est référencé dans la définition de contenu des jeux de valeurs (ValueSet) suivants : 
 
-* Cette terminologie de référence (CodeSystem) nest pas utilisée ici; elle peut être utilisée ailleurs (par exemple spécifications et/ou implémentations qui utilisent ce contenu)
+* [InputTDDUITaskActionValueSet](ValueSet-input-tddui-task-action-valueset.md)
 
 
 
@@ -37,7 +37,7 @@ CodeSystem pour la définition des éléments spécifiques des input dans la res
   "title" : "InputTDDUITaskActionCodeSystem",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-17T09:55:45+00:00",
+  "date" : "2025-12-17T14:41:39+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
