@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-action.cs
   "name" : "TDDUITaskAction",
   "title" : "TDDUI Task Action",
   "status" : "active",
-  "date" : "2025-12-17T08:43:13+00:00",
+  "date" : "2025-12-17T14:24:53+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

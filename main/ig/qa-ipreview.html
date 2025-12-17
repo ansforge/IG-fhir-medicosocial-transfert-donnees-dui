@@ -385,7 +385,7 @@ Médicosocial - Transfert de données DUI - version de développement local (v2.
 
           IG &copy; 2023+           <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>
 .  Package ans.fhir.fr.tddui#2.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
-. Generated           <span title="Wed, Dec 17, 2025 08:43+0000">2025-12-17</span>
+. Generated           <span title="Wed, Dec 17, 2025 14:24+0000">2025-12-17</span>
 
                     <br/>
 
@@ -417,7 +417,7 @@ Médicosocial - Transfert de données DUI - version de développement local (v2.
 
           IG &copy; 2023+           <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>
 .  Package ans.fhir.fr.tddui#2.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
-. Generated           <span title="Wed, Dec 17, 2025 08:43+0000">2025-12-17</span>
+. Generated           <span title="Wed, Dec 17, 2025 14:24+0000">2025-12-17</span>
 
                     <br/>
 
@@ -449,7 +449,7 @@ Médicosocial - Transfert de données DUI - version de développement local (v2.
 
           IG &copy; 2023+           <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>
 .  Package ans.fhir.fr.tddui#2.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
-. Generated           <span title="Wed, Dec 17, 2025 08:43+0000">2025-12-17</span>
+. Generated           <span title="Wed, Dec 17, 2025 14:24+0000">2025-12-17</span>
 
                     <br/>
 
@@ -1707,7 +1707,19 @@ Les évolutions de ce guide d’implémentation sont limitées à des correction
           <a href="https://www.cnsa.fr/informations-thematiques/systeme-dinformation-et-numerique/sidoba">www.cnsa.fr</a>
         </td>
         <td>
-La mise en œuvre de ce cas d'usage se matérialise par l'export partiel de données portant par exemple sur l’activité des Services de soins infirmiers à domicile (SSIAD) destinés aux personnages âgées et aux personnes handicapées, vers le système d’information de la CNSA (          <a href="https://www.cnsa.fr/informations-thematiques/systeme-dinformation-et-numerique/sidoba">SIDOBA</a>
+La mise en œuvre de ce cas d'usage se matérialise par l'export partiel de données portant sur l’activité des Services de soins infirmiers à domicile (SSIAD) destinés aux personnages âgées et aux personnes handicapées, vers le système d’information de la CNSA (          <a href="https://www.cnsa.fr/informations-thematiques/systeme-dinformation-et-numerique/sidoba">SIDOBA</a>
+ = système d’information de l’offre de la branche autonomie).
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_cas_usage.html">web</a>
+        </td>
+        <td>
+          <a href="https://www.cnsa.fr/informations-thematiques/systeme-dinformation-et-numerique/sidoba">www.cnsa.fr</a>
+        </td>
+        <td>
+Dans ce cas d'usage, le Projet personnalisé de l'usager est envoyé par le logiciel DUI vers le système d’information de la CNSA (          <a href="https://www.cnsa.fr/informations-thematiques/systeme-dinformation-et-numerique/sidoba">SIDOBA</a>
  = système d’information de l’offre de la branche autonomie).
         </td>
       </tr>
@@ -2141,6 +2153,181 @@ Critère évalué.          <br/>
           <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">mos.esante.gouv.fr</a>
         </td>
         <td>
+Identifiant technique du projet personnalisé obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature           <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>
+), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "PPER" et de l'identifiant du projet personnalisé dans le DUI (numProjetPersonnalise) :           <br/>
+idProjetPersonnalise = 3+FINESS/identifiantLocalUsagerESSMS-PPER-numProjetPersonnalise
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j367-type-projet-personnalise-ms">smt.esante.gouv.fr</a>
+        </td>
+        <td>
+Type de projet personnalisé.          <br/>
+
+    Jeu(x) de valeur(s) associé(s) :           <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j367-type-projet-personnalise-ms">JDV-J367-type-projet-personnalise-ms</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">mos.esante.gouv.fr</a>
+        </td>
+        <td>
+Identifiant technique du besoin obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature           <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>
+), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "BESO" et de l'identifiant du besoin dans le DUI (numBesoin) :           <br/>
+idBesoin = 3+FINESS/identifiantLocalUsagerESSMS-BESO-numBesoin
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://mos.esante.gouv.fr/NOS/JDV_J285-Besoins_SERAFIN/FHIR/JDV-J285-Besoins-SERAFIN">mos.esante.gouv.fr</a>
+        </td>
+        <td>
+Type de besoin.          <br/>
+
+    Jeu(x) de valeur(s) associé(s) :           <a href="https://mos.esante.gouv.fr/NOS/JDV_J285-Besoins_SERAFIN/FHIR/JDV-J285-Besoins-SERAFIN">JDV-J285-Besoins-SERAFIN</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">mos.esante.gouv.fr</a>
+        </td>
+        <td>
+Identifiant technique de l'objectif obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature           <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>
+), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "OBJE" et de l'identifiant de l'objectif dans le DUI (numObjectif) :           <br/>
+idObjectif = 3+FINESS/identifiantLocalUsagerESSMS-OBJE-numObjectif
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">mos.esante.gouv.fr</a>
+        </td>
+        <td>
+Identifiant technique de l'action obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature           <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>
+), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "ACTI" et de l'identifiant de l'action dans le DUI (numAction) :           <br/>
+idAction = 3+FINESS/identifiantLocalUsagerESSMS-ACTI-numAction
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">mos.esante.gouv.fr</a>
+        </td>
+        <td>
+Identifiant technique du moyen ou de la ressource obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature           <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>
+), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "MORE" et de l'identifiant du moyen ou de la ressource dans le DUI (numMoyenRessource) :           <br/>
+idMoyenRessource = 3+FINESS/identifiantLocalUsagerESSMS-MORE-numMoyenRessource
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">mos.esante.gouv.fr</a>
+        </td>
+        <td>
+Identifiant technique de la prestation projet personalisé obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature           <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>
+), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "PRES" et de l'identifiant de la prestation projet personalisé dans le DUI (numPrestation) :           <br/>
+idPrestation = 3+FINESS/identifiantLocalUsagerESSMS-PRES-numPrestation
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://mos.esante.gouv.fr/NOS/JDV_J283-PrestationsIndirects_SERAFIN/FHIR/JDV-J283-PrestationsIndirects-SERAFIN">mos.esante.gouv.fr</a>
+        </td>
+        <td>
+Type de la prestation.          <br/>
+
+    Jeu(x) de valeur(s) associé(s) :           <a href="https://mos.esante.gouv.fr/NOS/JDV_J283-PrestationsIndirects_SERAFIN/FHIR/JDV-J283-PrestationsIndirects-SERAFIN">JDV-J283-PrestationsIndirects-SERAFIN</a>
+,           <a href="https://mos.esante.gouv.fr/NOS/JDV_J284-PrestationsDirects_SERAFIN/FHIR/JDV-J284-PrestationsDirects-SERAFIN">JDV-J284-PrestationsDirects-SERAFIN</a>
+
+    
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://mos.esante.gouv.fr/NOS/JDV_J284-PrestationsDirects_SERAFIN/FHIR/JDV-J284-PrestationsDirects-SERAFIN">mos.esante.gouv.fr</a>
+        </td>
+        <td>
+Type de la prestation.          <br/>
+
+    Jeu(x) de valeur(s) associé(s) :           <a href="https://mos.esante.gouv.fr/NOS/JDV_J283-PrestationsIndirects_SERAFIN/FHIR/JDV-J283-PrestationsIndirects-SERAFIN">JDV-J283-PrestationsIndirects-SERAFIN</a>
+,           <a href="https://mos.esante.gouv.fr/NOS/JDV_J284-PrestationsDirects_SERAFIN/FHIR/JDV-J284-PrestationsDirects-SERAFIN">JDV-J284-PrestationsDirects-SERAFIN</a>
+
+    
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">mos.esante.gouv.fr</a>
+        </td>
+        <td>
+Identifiant technique de l'attente obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature           <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>
+), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "ATTE" et de l'identifiant de l'attente dans le DUI (numAttente) :           <br/>
+idAttente = 3+FINESS/identifiantLocalUsagerESSMS-ATTE-numAttente
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">mos.esante.gouv.fr</a>
+        </td>
+        <td>
+Identifiant technique du bilan obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature           <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>
+), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "BILA" et de l'identifiant du bilan dans le DUI (numBilan) :           <br/>
+idBilan = 3+FINESS/identifiantLocalUsagerESSMS-BILA-numBilan
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j366-statut-bilan-projet-personnalise-ms">smt.esante.gouv.fr</a>
+        </td>
+        <td>
+Catégorie du bilan.          <br/>
+
+    Jeu(x) de valeur(s) associé(s) :           <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j366-statut-bilan-projet-personnalise-ms">JdvJ366StatutBilanProjetPersonnaliseMs</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">mos.esante.gouv.fr</a>
+        </td>
+        <td>
 Identifiant technique de l’évènement obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature           <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>
 ), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de trois caractères "EVN" et du numéro de l’évènement dans le DUI (numEvenement) :          <br/>
  idEvenement = 3+FINESS/identifiantLocalUsagerESSMS-EVN-numEvenement
@@ -2449,9 +2636,13 @@ Statut de la ressource impactée.           <br/>
     Jeu(x) de valeur(s) associé(s) :            <a href="https://mos.esante.gouv.fr/NOS/JDV_J281-StatutsRessourcesMS/FHIR/JDV-J281-StatutsRessourcesMS">JDV_J281-StatutsRessourcesMS</a>
           <br/>
 
-    - Pour l'Evaluation seuls les codes suivants sont à utiliser : APPROUVE, VALIDE, TERMINE           <br/>
+    - Pour l'Evaluation seuls les codes suivants sont à utiliser : ENPREPARATION, APPROUVE, VALIDE, TERMINE           <br/>
 
-    - Pour l'Evènement seuls les codes suivants sont à utiliser : PLANIFIE, VALIDE, REALISE, ANNULE
+    - Pour l'Evènement seuls les codes suivants sont à utiliser : PLANIFIE, VALIDE, ANNULE, TERMINE           <br/>
+
+    - Pour le projet personnalisé seuls les codes suivants sont à utiliser : ENPREPARATION, ENCOURS, ENPAUSE, TERMINE           <br/>
+
+    - Pour l'Objectif, l'Action et la Prestation du Projet personnalisé seuls les codes suivants sont à utiliser : ENPREPARATION, ACTIF, TERMINE, ANNULE
     
         </td>
       </tr>
