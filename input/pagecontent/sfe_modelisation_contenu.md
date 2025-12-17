@@ -1324,6 +1324,361 @@ Dans le cas d'une auto évaluation, l'auteur étant l'usager cet élément n'est
 <br>
 <u>Remarque</u> : Hormis le cas de l'auto évaluation, au moins un des 3 éléments (Evaluateur, Responsable, Auteur) doit être renseigné.
 
+#### Projet personnalisé
+
+<div style="text-align:center;">{%include bloc_projet_personnalise.svg%}</div>
+
+##### Classe Projet personnalisé
+Le projet personnalisé est un document co-construit par l'usager, son entourage et les professionnels du médico-social. Il s'agit d'un outil de coordination visant à répondre à long terme aux besoins et attentes de l'usager. Il regroupe les attentes, définit les objectifs et met en place un accompagnement pour favoriser le développement et l'autonomie de l'usager. Le projet personnalisé est mis à jour à chaque événement de vie de l'usager ou au minimum une fois par an.
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr> 
+  <tr>
+    <td>idProjetPersonnalise : [1..1] Identifiant</td>
+    <td>Identifiant technique du projet personnalisé obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "PPER" et de l'identifiant du projet personnalisé dans le DUI (numProjetPersonnalise) : <br>idProjetPersonnalise = 3+FINESS/identifiantLocalUsagerESSMS-PPER-numProjetPersonnalise</td>
+  </tr>
+  <tr>
+    <td>titreProjetPersonnalise : [1..1] Texte</td>
+    <td>Titre du projet personnalisé.</td>
+  </tr>
+   <tr>
+    <td>descriptionProjetPersonnalise : [0..1] Texte</td>
+    <td>Description du projet personnalisé.</td>
+  </tr>
+  <tr>
+    <td>typeProjetPersonnalise : [0..1] Code</td>
+    <td>Type de projet personnalisé.<br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j367-type-projet-personnalise-ms">JDV-J367-type-projet-personnalise-ms</a></td>
+  </tr>
+  <tr>
+    <td>modaliteCommunicationProjetPersonnalise : [0..1] Texte</td>
+    <td>Modalité de communication ou de transmission du projet personnalisé à l'usager et/ou à son entourage.</td>
+  </tr>
+  <tr>
+    <td>accordUsagerProjetPersonnalise : [0..*] <a href="#classe-accord">Accord</a></td>
+    <td>Accord de l'usager et/ou de son entourage.</td>
+  </tr>
+   <tr>
+    <td>accordStructureProjetPersonnalise : [1..*] <a href="#classe-accord">Accord</a></td>
+    <td>Accord de la structure.</td>
+  </tr>
+  <tr>
+    <td>dateDebutMiseEnOeuvreProjetPersonnalise : [0..1] DateHeure</td>
+    <td>Date de début de mise en œuvre du projet personnalisé.</td>
+  </tr>
+  <tr>
+    <td>dateFinMiseEnOeuvreProjetPersonnalise : [0..1] DateHeure</td>
+    <td>Date de fin de mise en œuvre du projet personnalisé.</td>
+  </tr>
+  <tr>
+    <td>entrantProjetPersonnalise : [0..*] ObjetBinaire</td>
+    <td>Entrant(s) du projet personnalisé.</td>
+  </tr>
+</table>
+
+##### Classe Besoin
+Chaque usager a des attentes et des besoins singuliers, que le professionnel s’emploie à intégrer dans le projet personnalisé en tenant compte de l'évolution de sa situation, de ses aspirations et ses spécificités. Le besoin peut découler des attentes.
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>idBesoin : [1..1] Identifiant</td>
+    <td>Identifiant technique du besoin obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "BESO" et de l'identifiant du besoin dans le DUI (numBesoin) : <br>idBesoin = 3+FINESS/identifiantLocalUsagerESSMS-BESO-numBesoin</td>
+  </tr>
+  <tr>
+    <td>typeBesoin : [0..1] Code</td>
+    <td>Type de besoin.<br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J285-Besoins_SERAFIN/FHIR/JDV-J285-Besoins-SERAFIN">JDV-J285-Besoins-SERAFIN</a></td>
+  </tr>
+  <tr>
+    <td>descriptionBesoin : [1..1] Texte</td>
+    <td>Description du besoin.</td>
+  </tr>
+  <tr>
+    <td>analyseProfessionnelBesoin : [0..*] Texte</td>
+    <td>Analyse du besoin par un professionnel.</td>
+  </tr>
+  <tr>
+    <td>commentaireBesoin : [0..*] Texte</td>
+    <td>Permet de compléter ou éclairer la description du besoin.</td>
+  </tr>
+  <tr>
+    <td>pieceJointeBesoin : [0..*] ObjetBinaire</td>
+    <td>Pièce(s) jointe(s)du besoin.</td>
+  </tr>
+</table>
+
+##### Classe Objectif
+L'objectif correspond au résultat à atteindre dans le cadre du projet personnalisé. Il peut être rattaché au besoin.
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>idObjectif : [1..1] Identifiant</td>
+    <td>Identifiant technique de l'objectif obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "OBJE" et de l'identifiant de l'objectif dans le DUI (numObjectif) : <br>idObjectif = 3+FINESS/identifiantLocalUsagerESSMS-OBJE-numObjectif</td>
+  </tr>
+  <tr>
+    <td>titreObjectif : [1..1] Texte</td>
+    <td>Titre de l'objectif.</td>
+  </tr>
+  <tr>
+    <td>descriptionObjectif : [1..1] Texte</td>
+    <td>Description de l'objectif.</td>
+  </tr>
+  <tr>
+    <td>domaineObjectif : [0..*] ConceptCode</td>
+    <td>Domaine de l'objectif. La notion de domaine renvoi à des référentiels locaux au sein des structures ESMS.</td>
+  </tr>
+  <tr>
+    <td>dateDebutObjectif : [0..1] Date</td>
+    <td>Date de début de l'objectif.</td>
+  </tr>
+  <tr>
+    <td>dateFinObjectif : [0..1] Date</td>
+    <td>Date de fin de l'objectif.</td>
+  </tr>
+  <tr>
+    <td>avisUsagerObjectif : [0..1] Texte</td>
+    <td>Avis de l'usager sur l'objectif.</td>
+  </tr>
+  <tr>
+    <td>resultatAttenduObjectif : [0..1] Texte</td>
+    <td>Résultat attendu sur l'objectif.</td>
+  </tr>
+  <tr>
+    <td>strategieMiseEnOeuvreObjectif : [0..1] Texte</td>
+    <td>Stratégie mise en œuvre de l'objectif.</td>
+  </tr>
+  <tr>
+    <td>referentObjectif : [0..1] <a href="#classe-professionnel">Professionnel</a></td>
+    <td>Référent de l'objectif.</td>
+  </tr>
+</table>
+
+##### Classe Action
+L'action est un acte mené dans le cadre du projet personnalisé. Elle peut être ratachée à un ou plusieurs objectifs.
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>idAction : [1..1] Identifiant</td>
+    <td>Identifiant technique de l'action obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "ACTI" et de l'identifiant de l'action dans le DUI (numAction) : <br>idAction = 3+FINESS/identifiantLocalUsagerESSMS-ACTI-numAction</td>
+  </tr> 
+  <tr>
+    <td>titreAction : [1..1] Texte</td>
+    <td>Titre de l'action à mener.</td>
+  </tr>
+  <tr>
+    <td>descriptionAction : [0..1] Texte</td>
+    <td>Description de l'action à mener.</td>
+  </tr>
+  <tr>
+    <td>dateDebutAction : [0..1] DateHeure</td>
+    <td>Date de début de l'action à mener.</td>
+  </tr>
+  <tr>
+    <td>dateFinAction : [0..1] DateHeure</td>
+    <td>Date de fin de l'action à mener.</td>
+  </tr>
+  <tr>
+    <td>avisUsagerAction : [0..1] Texte</td>
+    <td>Avis de l'usager sur l'action.</td>
+  </tr>
+  <tr>
+    <td>resultatAttenduAction : [0..1] Texte</td>
+    <td>Résultat attendu de l'action.</td>
+  </tr>
+  <tr>
+    <td>referentAction : [0..1] <a href="#classe-professionnel">Professionnel</a></td>
+    <td>Référent de l'action.</td>
+  </tr>
+    <tr>
+  <td>pieceJointeAction : [0..*] ObjetBinaire</td>
+  <td>Pièce(s) jointe(s) de l'action.</td>
+</tr>
+</table>
+
+##### Classe MoyenRessource
+Le moyen ou la ressource sert à réaliser le projet personnalisé. Le moyen ou la ressource peut être rattaché à une action.
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>idMoyenRessource : [1..1] Identifiant</td>
+    <td>Identifiant technique du moyen ou de la ressource obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "MORE" et de l'identifiant du moyen ou de la ressource dans le DUI (numMoyenRessource) : <br>idMoyenRessource = 3+FINESS/identifiantLocalUsagerESSMS-MORE-numMoyenRessource</td>
+  </tr> 
+  <tr>
+    <td>titreMoyenRessource : [1..1] Texte </td>
+    <td>Titre du moyen ou de la ressource à utiliser.</td>
+  </tr>
+  <tr>
+    <td>descriptionMoyenRessource : [0..1] Texte </td>
+    <td>Description du moyen ou de la ressource.</td>
+  </tr>
+  <tr>
+    <td>typeMoyenRessource : [0..1] Texte </td>
+    <td>Type du moyen ou de la ressource.<br>Distinction entre moyen et ressource si nécessaire.</td>
+  </tr>
+  <tr>
+    <td>dateDebutMoyenRessource : [0..1] DateHeure</td>
+    <td>Date de début du moyen ou de la ressource.</td>
+  </tr>
+  <tr>
+    <td>dateFinMoyenRessource : [0..1] DateHeure</td>
+    <td>Date de fin du moyen ou de la ressource.</td>
+  </tr>
+  <tr>
+    <td>pieceJointeMoyenRessource : [0..*] ObjetBinaire</td>
+    <td>Pièce(s) jointe(s) du moyen ou de la ressource.</td>
+  </tr>
+</table>
+
+##### Classe PrestationProjetPersonnalise
+La prestation désigne ce qui doit être accompli ou fourni à l'usager.Elle peut être rattachée à une action.
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>idPrestation : [1..1] Identifiant</td>
+    <td>Identifiant technique de la prestation projet personalisé obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "PRES" et de l'identifiant de la prestation projet personalisé dans le DUI (numPrestation) : <br>idPrestation = 3+FINESS/identifiantLocalUsagerESSMS-PRES-numPrestation</td>
+  </tr>
+  <tr>
+    <td>titrePrestation : [1..1] Texte</td>
+    <td>Titre de la prestation à utiliser.</td>
+  </tr>
+  <tr>
+    <td>descriptionPrestation : [0..1] Texte</td>
+    <td>Description de la prestation.</td>
+  </tr>
+  <tr>
+    <td>typePrestation : [0..*] Code</td>
+    <td>Type de la prestation.<br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J283-PrestationsIndirects_SERAFIN/FHIR/JDV-J283-PrestationsIndirects-SERAFIN">JDV-J283-PrestationsIndirects-SERAFIN</a>, <a href="https://mos.esante.gouv.fr/NOS/JDV_J284-PrestationsDirects_SERAFIN/FHIR/JDV-J284-PrestationsDirects-SERAFIN">JDV-J284-PrestationsDirects-SERAFIN</a>
+    </td>
+  </tr>
+<tr>
+  <td>dateDebutPrestation : [0..1] DateHeure</td>
+  <td>Date de début de la prestation.</td>
+</tr>
+<tr>
+  <td>dateFinPrestation : [0..1] DateHeure</td>
+  <td>Date de fin de la prestation.</td>
+</tr>
+<tr>
+  <td>pieceJointePrestation : [0..*] ObjetBinaire</td>
+  <td>Pièce(s) jointe(s) de la prestation.</td>
+</tr>
+</table> 
+
+##### Classe Attente
+L'attente de l'usager représente les souhaits, les désirs et les envies dans tous les domaines de sa vie. Elle peut être exprimée aussi bien par l'usager ainsi que par son entourage ou les professionnels du médico-social.
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>idAttente : [1..1] Identifiant</td>
+    <td>Identifiant technique de l'attente obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "ATTE" et de l'identifiant de l'attente dans le DUI (numAttente) : <br>idAttente = 3+FINESS/identifiantLocalUsagerESSMS-ATTE-numAttente</td>
+  </tr>
+  <tr>
+    <td>origineAttente : [1..1] Texte</td>
+    <td>Acteur (personne physique ou personne morale) qui a un lien avec l'usager ou l'usager elle-même qui définit son attente.</td>
+  </tr>
+  <tr>
+    <td>descriptionAttente : [1..1] Texte</td>
+    <td>Description de l'attente, des souhaits de l'acteur pour l'usager.</td>
+  </tr>
+  <tr>
+    <td>commentaireAttente : [0..*] Texte</td>
+    <td>Permet de compléter ou éclairer la description de l'attente.</td>
+  </tr>
+</table> 
+
+##### Classe Bilan
+Un bilan est une évaluation du projet personnalisé qui est réalisé à la conclusion de celui-ci ou à une étape intermédiaire. La réévaluation du projet personnalisé s'effectue à minima une fois par an ou dès lors que l’usager le demande ou qu’un changement est observé.
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>idBilan : [1..1] Identifiant</td>
+    <td>Identifiant technique du bilan obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "BILA" et de l'identifiant du bilan dans le DUI (numBilan) : <br>idBilan = 3+FINESS/identifiantLocalUsagerESSMS-BILA-numBilan</td>
+ </tr>
+ <tr>
+    <td>dateBilan : [1..1] DateHeure</td>
+    <td>Date et heure du bilan.</td>
+ </tr>
+ <tr>
+    <td>categorieBilan : [0..1] Code</td>
+    <td>Catégorie du bilan.<br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j366-statut-bilan-projet-personnalise-ms">JdvJ366StatutBilanProjetPersonnaliseMs</a></td>
+ </tr>
+  <tr>
+    <td>perimetreBilan : [0..1] Texte</td>
+    <td>Périmètre du bilan.</td>
+ </tr>
+ <tr>
+    <td>problematiqueGlobaleUsager : [0..1] Texte</td>
+    <td>Problématique liée à l'usager.</td>
+ </tr>
+ <tr>
+    <td>syntheseBilan : [0..1] Texte</td>
+    <td>Synthèse du bilan.</td>
+ </tr>
+ <tr>
+    <td>inviteBilan : [0..1] Texte</td>
+    <td>Liste les personnes invitées à participer au bilan. Il peut s'agir de professionnels du médico-social ou de l'entourage familiale de l'usager.</td>
+ </tr>
+ <tr>
+    <td>dateProchainBilan : [0..1] DateHeure</td>
+    <td>Date du prochain bilan.</td>
+ </tr>
+ <tr>
+    <td>pieceJointeBilan : [0..*] ObjetBinaire</td>
+    <td>Pièce(s) jointe(s) au bilan.</td>
+ </tr>
+</table>    
+
+###### Classe SynthèsePreparationBilan
+Préparation du bilan du projet personnalisé.
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+<tr>
+    <td>corps : [1..1] Texte</td>
+    <td>Corps de la préparation.</td>
+ </tr>
+ <tr>
+    <td>auteur : [1..1] (<a href="#classe-professionnel">Professionnel</a>, <a href="#classe-usager">Usager</a>, <a href="#classe-contactpersonnephysique">Contact personne physique</a>)</td>
+    <td>Auteur de la préparation de bilan. Cet auteur peut référencer un professionnel, l'usager ou une personne de son entourage.</td>
+ </tr>
+</table>   
+
 ### Partie Coordination des acteurs
 
 #### Evènement de l'agenda
@@ -1638,7 +1993,7 @@ Portion déterminée de l'espace où se sont déroulés des événements.
 
 ##### Classe Statut
 
-Cette classe décrit le statut des ressources (Evenement, Evaluation).
+Cette classe décrit le statut des ressources (Evenement, Evaluation, Projet personnalisé, ...).
 
 <table style="width:100%">
   <tr>
@@ -1649,8 +2004,10 @@ Cette classe décrit le statut des ressources (Evenement, Evaluation).
     <td>statut : [1..1] Code</td>
     <td>Statut de la ressource impactée. <br>
     Jeu(x) de valeur(s) associé(s) :  <a href="https://mos.esante.gouv.fr/NOS/JDV_J281-StatutsRessourcesMS/FHIR/JDV-J281-StatutsRessourcesMS">JDV_J281-StatutsRessourcesMS</a><br>
-    - Pour l'Evaluation seuls les codes suivants sont à utiliser : APPROUVE, VALIDE, TERMINE <br>
-    - Pour l'Evènement seuls les codes suivants sont à utiliser : PLANIFIE, VALIDE, REALISE, ANNULE
+    - Pour l'Evaluation seuls les codes suivants sont à utiliser : ENPREPARATION, APPROUVE, VALIDE, TERMINE <br>
+    - Pour l'Evènement seuls les codes suivants sont à utiliser : PLANIFIE, VALIDE, ANNULE, TERMINE <br>
+    - Pour le projet personnalisé seuls les codes suivants sont à utiliser : ENPREPARATION, ENCOURS, ENPAUSE, TERMINE <br>
+    - Pour l'Objectif, l'Action et la Prestation du Projet personnalisé seuls les codes suivants sont à utiliser : ENPREPARATION, ACTIF, TERMINE, ANNULE
     </td>
   </tr>
   <tr>
@@ -1670,305 +2027,25 @@ Cette classe décrit le statut des ressources (Evenement, Evaluation).
   </tr>
 </table>
 
-### Contraintes par cas d'usage sur le modèle DUI
+##### Classe Accord
 
- Dans les tableaux ci-dessous il est précisé pour chaque cas d'usage, les données du DUI qui sont réellement utilisées.
-
-#### Mapping Usager
+Cela correspond au consentement d'une personne physique ou morale.
 
 <table style="width:100%">
-<tr>
-  <th>Attribut</th>
-  <th>Utilisé pour le cas d'usage SSIAD</th>
-</tr>
-<tr>
-  <td>matriculeINS</td>
-  <td>Oui</td>
-</tr>
-<tr>
-  <td>numSecuriteSociale</td>
-  <td>Oui</td>
-</tr>
-<tr>
-  <td>identifiantLocalUsagerESSMS</td>
- <td>Oui</td>
-</tr>
-<tr>
-  <td>numeroIndividuInitial</td>
- <td>Oui</td>
-</tr>
-<tr>
-  <td>nomNaissance</td>
- <td>Oui</td>
-</tr>
-<tr>
-  <td>nomUsage</td>
- <td>Oui</td>
-</tr>
-<tr>
-  <td>prenom</td>
- <td>Non</td>
-</tr>
-<tr>
-  <td>premierPrenomActeNaissance</td>
- <td>Oui</td>
-</tr>
-<tr>
-  <td>prenomUtilise</td>
- <td>Non</td>
-</tr>
-<tr>
-  <td>sexe</td>
- <td>Oui</td>
-</tr>
-<tr>
-  <td>dateNaissance</td>
- <td>Oui</td>
-</tr>
-<tr>
-  <td>ordreNaissance</td>
- <td>Oui</td>
-</tr>
-<tr>
-  <td>communeNaissance</td>
- <td>Non</td>
-</tr>
-<tr>
-  <td>paysNaissance</td>
- <td>Oui</td>
-</tr>
-</table>
-
-##### Mapping Adresse (usager)
-
-<table style="width:100%">
-<tr>
-  <th>Attribut</th>
-  <th>Utilisé pour le cas d'usage SSIAD</th>
-</tr>
-<tr>
-  <td>numeroVoie</td>
- <td>Non</td>
-</tr>
-<tr>
-  <td>libelleVoie</td>
- <td>Non</td>
-</tr>
-<tr>
-  <td>codePostal</td>
- <td>Oui</td>
-</tr>
-<tr>
-  <td>localite</td>
- <td>Oui</td>
-</tr>
-</table>
-
-
-#### Mapping Séjour
-
-<table style="width:100%">
-<tr>
-  <th>Attribut</th>
-  <th>Utilisé pour le cas d'usage SSIAD</th>
-</tr>
-<tr>
-  <td>idSejour</td>
- <td>Non</td>
-</tr>
-<tr>
-  <td>dateAdmission</td>
- <td>Non</td>
-</tr>
-<tr>
-  <td>ESSMS</td>
- <td>Non</td>
-</tr>
-<tr>
-  <td>modeEntree</td>
- <td>Non</td>
-</tr>
-<tr>
-  <td>dateEntree</td>
- <td>Oui</td>
-</tr>
-<tr>
-  <td>modeSortie</td>
- <td>Non</td>
-</tr>
-<tr>
-  <td>dateSortie</td>
- <td>Oui</td>
-</tr>
-</table>
-
-#### Partie Accompagnement
-
-##### Mapping Evaluation
-
-<table style="width:100%">
-<tr>
-  <th>Attribut</th>
-  <th>Utilisé pour le cas d'usage SSIAD</th>
-</tr>
-<tr>
-  <td>idEvaluation</td>
- <td>Non</td>
-</tr>
-<tr>
-  <td>typeEvaluation</td>
- <td>Oui</td>
-</tr>
-<tr>
-  <td>statut de l'évaluation</td>
- <td>Oui</td>
-</tr>
-<tr>
-  <td>dateEvaluation</td>
- <td>Oui</td>
-</tr>
-<tr>
-  <td>professionnel réalisant l'évaluation</td>
- <td>Non</td>
-</tr>
-<tr>
-  <td>idNat_PS Identifiant de l'évaluateur</td>
- <td>Non</td>
-</tr>
-<tr>
-  <td>idNat_Struct Identifiant de l'établissement de rattachement de l'évaluateur</td>
- <td>Non</td>
-</tr>
-<tr>
-  <td>composants du détail de l'évaluation</td>
- <td>Oui</td>
-</tr>
-<tr>
-  <td>pieceJointeEvaluation</td>
- <td>Oui</td>
-</tr>
-</table>
-
-###### Mapping Détail Evaluation (niveau 1,2)
-
-<table style="width:100%">
-<tr>
-  <th>Attribut</th>
-  <th>Utilisé pour le cas d'usage SSIAD</th>
-</tr>
-<tr>
-  <td>champsEvalue</td>
- <td>Oui</td>
-</tr>
-<tr>
-  <td>champsEvalue</td>
- <td>Oui</td>
-</tr>
-<tr>
-  <td>resultatChampsEvalue</td>
- <td>Oui</td>
-</tr>
-<tr>
-  <td>statut du détail de l'évaluation</td>
- <td>Oui</td>
-</tr>
-</table>
-
-#### Partie Coordination des acteurs
-
-##### Mapping Evènement de l'agenda
-
-<table style="width:100%">
-<tr>
-  <th>Attribut</th>
-  <th>Utilisé pour le cas d'usage SSIAD</th>
-</tr>
-<tr>
-  <td>idEvenement</td>
- <td>Non</td>
-</tr>
-<tr>
-  <td>typeEvenement</td>
- <td>Oui</td>
-</tr>
-<tr>
-  <td>libelleEvenement</td>
- <td>Non</td>
-</tr>
-<tr>
-  <td>dateDebutEvenement</td>
- <td>Oui</td>
-</tr>
-<tr>
-  <td>dateFinEvenement</td>
- <td>Oui</td>
-</tr>
-<tr>
-  <td>lieuEvenement</td>
- <td>Non</td>
-</tr>
-<tr>
-  <td>structureEnCharge</td>
- <td>Non</td>
-</tr>
-<tr>
-  <td>Fonction (rôle et mode d'exercice) du professionnel ayant réalisé l'évènement</td>
- <td>Oui</td>
-</tr>
-<tr>
-  <td>Nom et prénom du professionnel ayant réalisé l'évènement</td>
- <td>Non</td>
-</tr>
-<tr>
-  <td>Etablissement de rattachement du professionnel</td>
- <td>Non</td>
-</tr>
-<tr>
-  <td>Caractéristiques de l'évènement (Commentaire, pièce jointe, transport de l'usager, statut métier de l'évènement, transport d'un professionnel ayant participé à l'évènement)</td>
- <td>Non</td>
-</tr>
-</table>
-
-###### Mapping Statut de l'évènement
-
-<table style="width:100%">
-<tr>
-  <th>Attribut</th>
-  <th>Utilisé pour le cas d'usage SSIAD</th>
-</tr>
-<tr>
-  <td>identifiant du statut</td>
- <td>Non</td>
-</tr>
-<tr>
-  <td>code du statut</td>
- <td>Oui</td>
-</tr>
-<tr>
-  <td>date du statut</td>
- <td>Non</td>
-</tr>
-</table>
-
-#### Partie Structure
-
-##### Mapping Entité Juridique
-
-<table style="width:100%">
-<tr>
-  <th>Attribut</th>
-  <th>Utilisé pour le cas d'usage SSIAD</th>
-</tr>
-<tr>
-  <td>idNat_Struct</td>
- <td>Non</td>
-</tr>
-<tr>
-  <td>FINESS de la structure extrait de idNat_Struct</td>
- <td>Oui</td>
-</tr>
-<tr>
-  <td>raisonSociale</td>
- <td>Oui</td>
-</tr>
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>auteur : [1..1] (<a href="#classe-professionnel">Professionnel</a>, <a href="#classe-usager">Usager</a>, <a href="#classe-contactpersonnephysique">Contact personne physique</a>)</td>
+    <td>Acteur (personne physique ou morale) qui donne son accord. L'auteur de l'accord peut référencer un professionnel, l'usager ou une personne de son entourage.</td>
+  </tr>
+  <tr>
+    <td>dateSignature : [1..1] DateHeure</td>
+    <td>Date de délivrance de l'accord.</td>
+  </tr>
+  <tr>
+    <td>dureeValidite : [0..1] Periode</td>
+    <td>Durée de validité de l'accord</td>
+  </tr>
 </table>
