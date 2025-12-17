@@ -1,0 +1,45 @@
+@startuml
+
+map "executionPeriod" as executionPeriod #DarkGray {
+    dateBilan => start
+}
+
+map "synthesePreparationBilan : <&layers> input:synthesePreparationBilan" as synthesePreparationBilan #DarkGray {
+        synthesePreparationBilan.corps => text
+}
+
+object "**TDDUIPractitioner**" as TDDUIPractitioner #b3de69 {
+    synthesePreparationBilan.auteur
+}
+
+object "**TDDUIPatient/TDDUIPatientINS**" as TDDUIPatient #fdb462 {
+    synthesePreparationBilan.auteur
+}
+
+object "**FRCoreRelatedPerson**" as FRCoreRelatedPerson #80b1d3 {
+    synthesePreparationBilan.auteur
+}
+
+object "**TDDUICarePlanProjetPersonnalise**" as TDDUICarePlanProjetPersonnalise_basedOn #8dd3c7 {
+    ProjetPersonnalise
+}
+
+map "**Bilan : TDDUITaskBilan**" as Bilan #d9d9d9 {
+    idBilan => identifier
+    categorieBilan => code
+    perimetreBilan => <&layers> input:perimetre
+    pieceJointeBilan => <&plus> input:pieceJointe
+    problematiqueGlobaleUsager => <&layers> input:problematique
+    inviteBilan => <&layers> input:invite
+    dateProchainBilan => <&layers> input:dateProchainBilan
+    syntheseBilan => <&layers> output:syntheseBilan
+    executionPeriod *-> executionPeriod
+    synthesePreparationBilan => <&layers> input:synthesePreparationBilan
+}
+
+Bilan::synthesePreparationBilan -down-> synthesePreparationBilan
+synthesePreparationBilan --> TDDUIPractitioner : author
+synthesePreparationBilan --> TDDUIPatient : author
+synthesePreparationBilan --> FRCoreRelatedPerson : author
+Bilan -u-> TDDUICarePlanProjetPersonnalise_basedOn : basedOn
+@enduml

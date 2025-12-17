@@ -13,7 +13,7 @@ map "period" as period #DarkGray {
     dateFinEvenement => end
 }
 
-object "**TDDUIPatient**" as TDDUIPatient #fdb462 {
+object "**TDDUIPatient/TDDUIPatientINS**" as TDDUIPatient #fdb462 {
     Usager
 }
 
@@ -48,7 +48,7 @@ map "**Événement : TDDUIEncounterEvenement**" as Événement #8dd3c7 {
     lieuEvenement => location
     Statut.statut => status    
     period *-> period
-    meta *-> meta
+    meta *--> meta
 }
 
 Événement::Statut.statut -l-> Statutstatut

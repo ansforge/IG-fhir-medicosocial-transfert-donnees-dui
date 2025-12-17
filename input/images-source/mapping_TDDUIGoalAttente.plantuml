@@ -1,0 +1,16 @@
+@startuml
+
+map "description" as description #DarkGray {
+    descriptionAttente => text
+}
+
+map "**Attente : TDDUIGoalAttente**" as Attente #bebada {
+    ProjetPersonnalise => <&plus> referenceProjetPerso
+    idAttente => identifier
+    origineAttente => <&layers> note:origineAttente
+    commentaireAttente => <&layers> note:commentaireAttente
+    description *-> description
+}
+
+
+@enduml
