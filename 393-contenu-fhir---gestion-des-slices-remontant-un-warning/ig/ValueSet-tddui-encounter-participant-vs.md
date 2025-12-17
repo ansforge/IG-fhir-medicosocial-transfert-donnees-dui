@@ -1,4 +1,4 @@
-# TDDUI Encounter Participant ValueSet - Médicosocial - Transfert de données DUI v2.1.0-ballot
+# TDDUI Encounter Participant ValueSet - Médicosocial - Transfert de données DUI v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-participant-vs | *Version*:2.1.0-ballot |
-| Active as of 2025-12-16 | *Computable Name*:TDDUIEncounterParticipantVs |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-participant-vs | *Version*:2.1.0 |
+| Active as of 2025-12-17 | *Computable Name*:TDDUIEncounterParticipantVs |
 
  
 ValueSet for TDDUI Encounter's participants 
@@ -49,12 +49,12 @@ ValueSet for TDDUI Encounter's participants
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-participant-vs",
-  "version" : "2.1.0-ballot",
+  "version" : "2.1.0",
   "name" : "TDDUIEncounterParticipantVs",
   "title" : "TDDUI Encounter Participant ValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-16T16:02:43+00:00",
+  "date" : "2025-12-17T09:55:45+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

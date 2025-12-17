@@ -1,4 +1,4 @@
-# TDDUI DocumentReference - Médicosocial - Transfert de données DUI v2.1.0-ballot
+# TDDUI DocumentReference - Médicosocial - Transfert de données DUI v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,11 +8,11 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference | *Version*:2.1.0-ballot |
-| Active as of 2025-12-16 | *Computable Name*:TDDUIDocumentReference |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference | *Version*:2.1.0 |
+| Active as of 2025-12-17 | *Computable Name*:TDDUIDocumentReference |
 
  
-Profil de la ressource SimplifiedPublishDocumentReference pour les pièces jointes liées à l’événement et à l'évaluation. 
+Profil de la ressource SimplifiedPublishDocumentReference permettant de véhiculer des pièces jointes que ce soit pour l'évaluation, l'évènement ou le projet personnalisé. 
 
  
 >  
@@ -22,7 +22,8 @@ Profil de la ressource SimplifiedPublishDocumentReference pour les pièces joint
 **Utilisations:**
 
 * Utiliser ce Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
-* Référer à ce Profil: [Pièce jointe](StructureDefinition-tddui-attachment.md)
+* Référer à ce Profil: [Pièce jointe](StructureDefinition-tddui-attachment.md), [TDDUI Task Action](StructureDefinition-tddui-task-action.md), [TDDUI Task Bilan](StructureDefinition-tddui-task-bilan.md), [TDDUI Task MoyenRessource](StructureDefinition-tddui-task-moyen-ressource.md) and [TDDUI Task Prestation](StructureDefinition-tddui-task-prestation.md)
+* Exemples pour ce Profil: [DocumentReference/tddui-pp-pa-documentreference-bilan-objectif-1-example](DocumentReference-tddui-pp-pa-documentreference-bilan-objectif-1-example.md) and [DocumentReference/tddui-pp-pa-documentreference-entrant-example](DocumentReference-tddui-pp-pa-documentreference-entrant-example.md)
 * CapabilityStatements utilisant ce Profil: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-document-reference)
@@ -44,11 +45,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-document-refer
   "resourceType" : "StructureDefinition",
   "id" : "tddui-document-reference",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference",
-  "version" : "2.1.0-ballot",
+  "version" : "2.1.0",
   "name" : "TDDUIDocumentReference",
   "title" : "TDDUI DocumentReference",
   "status" : "active",
-  "date" : "2025-12-16T16:02:43+00:00",
+  "date" : "2025-12-17T09:55:45+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -61,7 +62,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-document-refer
       ]
     }
   ],
-  "description" : "Profil de la ressource SimplifiedPublishDocumentReference pour les pièces jointes liées à l’événement et à l'évaluation.",
+  "description" : "Profil de la ressource SimplifiedPublishDocumentReference permettant de véhiculer des pièces jointes que ce soit pour l'évaluation, l'évènement ou le projet personnalisé.",
   "jurisdiction" : [
     {
       "coding" : [

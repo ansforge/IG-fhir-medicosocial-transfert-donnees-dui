@@ -1,4 +1,4 @@
-# TDDUI Practitioner Role - Médicosocial - Transfert de données DUI v2.1.0-ballot
+# TDDUI Practitioner Role - Médicosocial - Transfert de données DUI v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role | *Version*:2.1.0-ballot |
-| Active as of 2025-12-16 | *Computable Name*:TDDUIPractitionerRole |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role | *Version*:2.1.0 |
+| Active as of 2025-12-17 | *Computable Name*:TDDUIPractitionerRole |
 
  
 Profil de la ressource FRCorePractitionerRole permettant de représenter un Professionnel. 
@@ -17,7 +17,7 @@ Profil de la ressource FRCorePractitionerRole permettant de représenter un Prof
 **Utilisations:**
 
 * Utiliser ce Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
-* Référer à ce Profil: [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md) and [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)
+* Référer à ce Profil: [TDDUI Consent Accord](StructureDefinition-tddui-consent-accord.md), [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md), [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md), [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md)...Show 2 more,[TDDUI Auteur statut](StructureDefinition-tddui-status-author.md)and[TDDUI Task Action](StructureDefinition-tddui-task-action.md)
 * Exemples pour ce Profil: [PractitionerRole/tddui-practitioner-role-example](PractitionerRole-tddui-practitioner-role-example.md)
 * CapabilityStatements utilisant ce Profil: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
 
@@ -40,11 +40,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-practitioner-r
   "resourceType" : "StructureDefinition",
   "id" : "tddui-practitioner-role",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role",
-  "version" : "2.1.0-ballot",
+  "version" : "2.1.0",
   "name" : "TDDUIPractitionerRole",
   "title" : "TDDUI Practitioner Role",
   "status" : "active",
-  "date" : "2025-12-16T16:02:43+00:00",
+  "date" : "2025-12-17T09:55:45+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

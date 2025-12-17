@@ -1,4 +1,4 @@
-# Évaluation AGGIR PA SSIAD - Médicosocial - Transfert de données DUI v2.1.0-ballot
+# Évaluation AGGIR PA SSIAD - Médicosocial - Transfert de données DUI v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/Questionnaire/tddui-questionnaire-aggir-pa-ssiad | *Version*:2.1.0-ballot |
-| Active as of 2025-12-16 | *Computable Name*: |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/Questionnaire/tddui-questionnaire-aggir-pa-ssiad | *Version*:2.1.0 |
+| Active as of 2025-12-17 | *Computable Name*: |
 
  
 Grille d'évaluation AGGIR PA SSIAD 
@@ -23,10 +23,10 @@ Grille d'évaluation AGGIR PA SSIAD
   "resourceType" : "Questionnaire",
   "id" : "tddui-questionnaire-aggir-pa-ssiad",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/Questionnaire/tddui-questionnaire-aggir-pa-ssiad",
-  "version" : "2.1.0-ballot",
+  "version" : "2.1.0",
   "title" : "Évaluation AGGIR PA SSIAD",
   "status" : "active",
-  "date" : "2025-12-16T16:02:43+00:00",
+  "date" : "2025-12-17T09:55:45+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

@@ -1,4 +1,4 @@
-# TDDUI QuestionnaireResponse - Médicosocial - Transfert de données DUI v2.1.0-ballot
+# TDDUI QuestionnaireResponse - Médicosocial - Transfert de données DUI v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response | *Version*:2.1.0-ballot |
-| Active as of 2025-12-16 | *Computable Name*:TDDUIQuestionnaireResponse |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response | *Version*:2.1.0 |
+| Active as of 2025-12-17 | *Computable Name*:TDDUIQuestionnaireResponse |
 
  
 Profil de la ressource QuestionnaireResponse utilisé pour transmettre les réponses aux questionnaires dans le cadre des évaluations. 
@@ -17,7 +17,8 @@ Profil de la ressource QuestionnaireResponse utilisé pour transmettre les répo
 **Utilisations:**
 
 * Utiliser ce Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
-* Exemples pour ce Profil: [QuestionnaireResponse/tddui-questionnaire-response-aggir-pa-example](QuestionnaireResponse-tddui-questionnaire-response-aggir-pa-example.md), [QuestionnaireResponse/tddui-questionnaire-response-aggir-ph-example](QuestionnaireResponse-tddui-questionnaire-response-aggir-ph-example.md), [QuestionnaireResponse/tddui-questionnaire-response-serafin-precision-example](QuestionnaireResponse-tddui-questionnaire-response-serafin-precision-example.md), [QuestionnaireResponse/tddui-questionnaire-response-serafin-sans-precision-example](QuestionnaireResponse-tddui-questionnaire-response-serafin-sans-precision-example.md) and [QuestionnaireResponse/tddui-questionnaire-response-situation-ssiad-example](QuestionnaireResponse-tddui-questionnaire-response-situation-ssiad-example.md)
+* Référer à ce Profil: [Lien vers l'évaluation](StructureDefinition-tddui-evaluation-reference.md), [TDDUI Task Action](StructureDefinition-tddui-task-action.md), [TDDUI Task MoyenRessource](StructureDefinition-tddui-task-moyen-ressource.md) and [TDDUI Task Prestation](StructureDefinition-tddui-task-prestation.md)
+* Exemples pour ce Profil: [QuestionnaireResponse/tddui-pp-pa-questionnaire-response-aggir-pa-example](QuestionnaireResponse-tddui-pp-pa-questionnaire-response-aggir-pa-example.md), [QuestionnaireResponse/tddui-questionnaire-response-aggir-pa-example](QuestionnaireResponse-tddui-questionnaire-response-aggir-pa-example.md), [QuestionnaireResponse/tddui-questionnaire-response-aggir-ph-example](QuestionnaireResponse-tddui-questionnaire-response-aggir-ph-example.md), [QuestionnaireResponse/tddui-questionnaire-response-serafin-precision-example](QuestionnaireResponse-tddui-questionnaire-response-serafin-precision-example.md)...Show 2 more,[QuestionnaireResponse/tddui-questionnaire-response-serafin-sans-precision-example](QuestionnaireResponse-tddui-questionnaire-response-serafin-sans-precision-example.md)and[QuestionnaireResponse/tddui-questionnaire-response-situation-ssiad-example](QuestionnaireResponse-tddui-questionnaire-response-situation-ssiad-example.md)
 * CapabilityStatements utilisant ce Profil: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-questionnaire-response)
@@ -39,11 +40,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-questionnaire-
   "resourceType" : "StructureDefinition",
   "id" : "tddui-questionnaire-response",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response",
-  "version" : "2.1.0-ballot",
+  "version" : "2.1.0",
   "name" : "TDDUIQuestionnaireResponse",
   "title" : "TDDUI QuestionnaireResponse",
   "status" : "active",
-  "date" : "2025-12-16T16:02:43+00:00",
+  "date" : "2025-12-17T09:55:45+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

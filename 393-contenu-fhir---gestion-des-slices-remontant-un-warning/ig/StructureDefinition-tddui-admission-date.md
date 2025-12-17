@@ -1,4 +1,4 @@
-# Date d’admission - Médicosocial - Transfert de données DUI v2.1.0-ballot
+# Date d’admission - Médicosocial - Transfert de données DUI v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-admission-date | *Version*:2.1.0-ballot |
-| Active as of 2025-12-16 | *Computable Name*:TDDUIAdmissionDate |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-admission-date | *Version*:2.1.0 |
+| Active as of 2025-12-17 | *Computable Name*:TDDUIAdmissionDate |
 
 Date d’admission dans la structure ESSMS.
 
@@ -43,11 +43,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-admission-date
   "resourceType" : "StructureDefinition",
   "id" : "tddui-admission-date",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-admission-date",
-  "version" : "2.1.0-ballot",
+  "version" : "2.1.0",
   "name" : "TDDUIAdmissionDate",
   "title" : "Date d’admission",
   "status" : "active",
-  "date" : "2025-12-16T16:02:43+00:00",
+  "date" : "2025-12-17T09:55:45+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

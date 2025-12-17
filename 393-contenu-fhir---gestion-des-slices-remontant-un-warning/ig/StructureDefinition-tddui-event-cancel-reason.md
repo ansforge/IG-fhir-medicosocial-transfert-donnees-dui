@@ -1,4 +1,4 @@
-# Évènement annulé - Médicosocial - Transfert de données DUI v2.1.0-ballot
+# Évènement annulé - Médicosocial - Transfert de données DUI v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-cancel-reason | *Version*:2.1.0-ballot |
-| Active as of 2025-12-16 | *Computable Name*:TDDUIEventCancelReason |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-cancel-reason | *Version*:2.1.0 |
+| Active as of 2025-12-17 | *Computable Name*:TDDUIEventCancelReason |
 
 Motif associé au statut de non-réalisation de l’évènement.
 
@@ -44,11 +44,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-event-cancel-r
   "resourceType" : "StructureDefinition",
   "id" : "tddui-event-cancel-reason",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-cancel-reason",
-  "version" : "2.1.0-ballot",
+  "version" : "2.1.0",
   "name" : "TDDUIEventCancelReason",
   "title" : "Évènement annulé",
   "status" : "active",
-  "date" : "2025-12-16T16:02:43+00:00",
+  "date" : "2025-12-17T09:55:45+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -86,7 +86,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-event-cancel-r
   "context" : [
     {
       "type" : "element",
-      "expression" : "Element"
+      "expression" : "Encounter.status"
     }
   ],
   "type" : "Extension",
