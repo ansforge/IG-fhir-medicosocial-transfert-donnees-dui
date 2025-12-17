@@ -1,4 +1,4 @@
-# tddui-encounter-sejour-example - Médicosocial - Transfert de données DUI v2.1.0-ballot
+# tddui-encounter-sejour-example - Médicosocial - Transfert de données DUI v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -20,7 +20,7 @@ Profil: [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md)
 
 **status**: In Progress
 
-**class**: [ActCode: HH](http://terminology.hl7.org/7.0.0/CodeSystem-v3-ActCode.html#v3-ActCode-HH) (home health)
+**class**: [ActCode: HH](http://terminology.hl7.org/7.0.1/CodeSystem-v3-ActCode.html#v3-ActCode-HH) (home health)
 
 **subject**: [DUPONT Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/194704032)](Patient-tddui-patient-ins-example.md)
 

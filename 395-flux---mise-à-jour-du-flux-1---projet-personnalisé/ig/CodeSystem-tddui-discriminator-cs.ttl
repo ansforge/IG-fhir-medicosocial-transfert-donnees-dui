@@ -1,0 +1,338 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "tddui-discriminator-cs"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/shareablecodesystem>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem tddui-discriminator-cs</b></p><a name=\"tddui-discriminator-cs\"> </a><a name=\"hctddui-discriminator-cs\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"http://hl7.org/fhir/R4/shareablecodesystem.html\">Shareable CodeSystem</a></p></div><p>This case-sensitive code system <code>https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">accordUsager<a name=\"tddui-discriminator-cs-accordUsager\"> </a></td><td>Accord de l'usager</td></tr><tr><td style=\"white-space:nowrap\">accordStructure<a name=\"tddui-discriminator-cs-accordStructure\"> </a></td><td>Accord de la structure</td></tr><tr><td style=\"white-space:nowrap\">titreObjectif<a name=\"tddui-discriminator-cs-titreObjectif\"> </a></td><td>Titre de l'objectif</td></tr><tr><td style=\"white-space:nowrap\">avisUsagerObjectif<a name=\"tddui-discriminator-cs-avisUsagerObjectif\"> </a></td><td>Avis de l'usager sur l'objectif</td></tr><tr><td style=\"white-space:nowrap\">strategieMiseEnOeuvreObjectif<a name=\"tddui-discriminator-cs-strategieMiseEnOeuvreObjectif\"> </a></td><td>Stratégie de mise en œuvre de l'objectif</td></tr><tr><td style=\"white-space:nowrap\">origineAttente<a name=\"tddui-discriminator-cs-origineAttente\"> </a></td><td>Acteur (personne physique ou personne morale) qui a un lien avec l'usager ou l'usager elle-même qui définit son attente.</td></tr><tr><td style=\"white-space:nowrap\">commentaireAttente<a name=\"tddui-discriminator-cs-commentaireAttente\"> </a></td><td>Permet de compléter ou éclairer la description de l'attente.</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs"^^xsd:anyURI ;
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs>
+  ] ; # 
+  fhir:version [ fhir:v "2.1.0"] ; # 
+  fhir:name [ fhir:v "TDDUIDiscriminatorCS"] ; # 
+  fhir:title [ fhir:v "TDDUI Discriminator CodeSystem"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-12-17T09:35:57+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "ANS"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "ANS" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://esante.gouv.fr" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "CodeSystem définissant les codes discriminants."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "FR" ] ;
+       fhir:display [ fhir:v "FRANCE" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:compositional [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "7"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "accordUsager" ] ;
+     fhir:display [ fhir:v "Accord de l'usager" ] ;
+     fhir:designation ( [
+       fhir:use [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra>
+         ] ;
+         fhir:code [ fhir:v "preferredForLanguage" ]
+       ] ;
+       fhir:value [ fhir:v "Accord de l'usager" ]
+     ] [
+       fhir:use [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra>
+         ] ;
+         fhir:code [ fhir:v "preferredForLanguage" ]
+       ] ;
+       fhir:value [ fhir:v "Accord de l'usager" ]
+     ] [
+       fhir:use [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra>
+         ] ;
+         fhir:code [ fhir:v "preferredForLanguage" ]
+       ] ;
+       fhir:value [ fhir:v "Accord de l'usager" ]
+     ] [
+       fhir:use [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra>
+         ] ;
+         fhir:code [ fhir:v "preferredForLanguage" ]
+       ] ;
+       fhir:value [ fhir:v "Accord de l'usager" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "accordStructure" ] ;
+     fhir:display [ fhir:v "Accord de la structure" ] ;
+     fhir:designation ( [
+       fhir:use [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra>
+         ] ;
+         fhir:code [ fhir:v "preferredForLanguage" ]
+       ] ;
+       fhir:value [ fhir:v "Accord de la structure" ]
+     ] [
+       fhir:use [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra>
+         ] ;
+         fhir:code [ fhir:v "preferredForLanguage" ]
+       ] ;
+       fhir:value [ fhir:v "Accord de la structure" ]
+     ] [
+       fhir:use [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra>
+         ] ;
+         fhir:code [ fhir:v "preferredForLanguage" ]
+       ] ;
+       fhir:value [ fhir:v "Accord de la structure" ]
+     ] [
+       fhir:use [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra>
+         ] ;
+         fhir:code [ fhir:v "preferredForLanguage" ]
+       ] ;
+       fhir:value [ fhir:v "Accord de la structure" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "titreObjectif" ] ;
+     fhir:display [ fhir:v "Titre de l'objectif" ] ;
+     fhir:designation ( [
+       fhir:use [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra>
+         ] ;
+         fhir:code [ fhir:v "preferredForLanguage" ]
+       ] ;
+       fhir:value [ fhir:v "Titre de l'objectif" ]
+     ] [
+       fhir:use [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra>
+         ] ;
+         fhir:code [ fhir:v "preferredForLanguage" ]
+       ] ;
+       fhir:value [ fhir:v "Titre de l'objectif" ]
+     ] [
+       fhir:use [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra>
+         ] ;
+         fhir:code [ fhir:v "preferredForLanguage" ]
+       ] ;
+       fhir:value [ fhir:v "Titre de l'objectif" ]
+     ] [
+       fhir:use [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra>
+         ] ;
+         fhir:code [ fhir:v "preferredForLanguage" ]
+       ] ;
+       fhir:value [ fhir:v "Titre de l'objectif" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "avisUsagerObjectif" ] ;
+     fhir:display [ fhir:v "Avis de l'usager sur l'objectif" ] ;
+     fhir:designation ( [
+       fhir:use [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra>
+         ] ;
+         fhir:code [ fhir:v "preferredForLanguage" ]
+       ] ;
+       fhir:value [ fhir:v "Avis de l'usager sur l'objectif" ]
+     ] [
+       fhir:use [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra>
+         ] ;
+         fhir:code [ fhir:v "preferredForLanguage" ]
+       ] ;
+       fhir:value [ fhir:v "Avis de l'usager sur l'objectif" ]
+     ] [
+       fhir:use [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra>
+         ] ;
+         fhir:code [ fhir:v "preferredForLanguage" ]
+       ] ;
+       fhir:value [ fhir:v "Avis de l'usager sur l'objectif" ]
+     ] [
+       fhir:use [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra>
+         ] ;
+         fhir:code [ fhir:v "preferredForLanguage" ]
+       ] ;
+       fhir:value [ fhir:v "Avis de l'usager sur l'objectif" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "strategieMiseEnOeuvreObjectif" ] ;
+     fhir:display [ fhir:v "Stratégie de mise en œuvre de l'objectif" ] ;
+     fhir:designation ( [
+       fhir:use [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra>
+         ] ;
+         fhir:code [ fhir:v "preferredForLanguage" ]
+       ] ;
+       fhir:value [ fhir:v "Stratégie de mise en œuvre de l'objectif" ]
+     ] [
+       fhir:use [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra>
+         ] ;
+         fhir:code [ fhir:v "preferredForLanguage" ]
+       ] ;
+       fhir:value [ fhir:v "Stratégie de mise en œuvre de l'objectif" ]
+     ] [
+       fhir:use [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra>
+         ] ;
+         fhir:code [ fhir:v "preferredForLanguage" ]
+       ] ;
+       fhir:value [ fhir:v "Stratégie de mise en œuvre de l'objectif" ]
+     ] [
+       fhir:use [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra>
+         ] ;
+         fhir:code [ fhir:v "preferredForLanguage" ]
+       ] ;
+       fhir:value [ fhir:v "Stratégie de mise en œuvre de l'objectif" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "origineAttente" ] ;
+     fhir:display [ fhir:v "Acteur (personne physique ou personne morale) qui a un lien avec l'usager ou l'usager elle-même qui définit son attente." ] ;
+     fhir:designation ( [
+       fhir:use [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra>
+         ] ;
+         fhir:code [ fhir:v "preferredForLanguage" ]
+       ] ;
+       fhir:value [ fhir:v "Acteur (personne physique ou personne morale) qui a un lien avec l'usager ou l'usager elle-même qui définit son attente." ]
+     ] [
+       fhir:use [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra>
+         ] ;
+         fhir:code [ fhir:v "preferredForLanguage" ]
+       ] ;
+       fhir:value [ fhir:v "Acteur (personne physique ou personne morale) qui a un lien avec l'usager ou l'usager elle-même qui définit son attente." ]
+     ] [
+       fhir:use [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra>
+         ] ;
+         fhir:code [ fhir:v "preferredForLanguage" ]
+       ] ;
+       fhir:value [ fhir:v "Acteur (personne physique ou personne morale) qui a un lien avec l'usager ou l'usager elle-même qui définit son attente." ]
+     ] [
+       fhir:use [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra>
+         ] ;
+         fhir:code [ fhir:v "preferredForLanguage" ]
+       ] ;
+       fhir:value [ fhir:v "Acteur (personne physique ou personne morale) qui a un lien avec l'usager ou l'usager elle-même qui définit son attente." ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "commentaireAttente" ] ;
+     fhir:display [ fhir:v "Permet de compléter ou éclairer la description de l'attente." ] ;
+     fhir:designation ( [
+       fhir:use [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra>
+         ] ;
+         fhir:code [ fhir:v "preferredForLanguage" ]
+       ] ;
+       fhir:value [ fhir:v "Permet de compléter ou éclairer la description de l'attente." ]
+     ] [
+       fhir:use [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra>
+         ] ;
+         fhir:code [ fhir:v "preferredForLanguage" ]
+       ] ;
+       fhir:value [ fhir:v "Permet de compléter ou éclairer la description de l'attente." ]
+     ] [
+       fhir:use [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra>
+         ] ;
+         fhir:code [ fhir:v "preferredForLanguage" ]
+       ] ;
+       fhir:value [ fhir:v "Permet de compléter ou éclairer la description de l'attente." ]
+     ] [
+       fhir:use [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra>
+         ] ;
+         fhir:code [ fhir:v "preferredForLanguage" ]
+       ] ;
+       fhir:value [ fhir:v "Permet de compléter ou éclairer la description de l'attente." ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

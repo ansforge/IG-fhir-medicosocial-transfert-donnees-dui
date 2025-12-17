@@ -1,4 +1,4 @@
-# Pièce jointe - Médicosocial - Transfert de données DUI v2.1.0-ballot
+# Pièce jointe - Médicosocial - Transfert de données DUI v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,10 +8,10 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment | *Version*:2.1.0-ballot |
-| Active as of 2025-12-03 | *Computable Name*:TDDUIAttachment |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment | *Version*:2.1.0 |
+| Active as of 2025-12-17 | *Computable Name*:TDDUIAttachment |
 
-Pièces jointes liées à l’événement et à l'évaluation. L'extension référence le profil PDSm_SimplifiedPublish.
+Extension permettant de véhiculer des pièces jointes que ce soit pour l'évaluation, l'évènement ou le projet personnalisé. L'extension référence le profil PDSm_SimplifiedPublish.
 
 **Context of Use**
 
@@ -19,7 +19,8 @@ Pièces jointes liées à l’événement et à l'évaluation. L'extension réf�
 
 **Utilisations:**
 
-* Utiliser ce Extension: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md) and [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md)
+* Utiliser ce Extension: [TDDUI CarePlan Projet Personalise](StructureDefinition-tddui-careplan-projet-personnalise.md), [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md), [TDDUI Goal Attente](StructureDefinition-tddui-goal-attente.md), [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md)...Show 2 more,[TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md)and[TDDUI ServiceRequest Besoin](StructureDefinition-tddui-service-request-besoin.md)
+* Exemples pour ce Extension: [Bundle/tddui-pp-pa-bundle-example](Bundle-tddui-pp-pa-bundle-example.md), [CarePlan/tddui-pp-pa-careplan-example](CarePlan-tddui-pp-pa-careplan-example.md) and [Goal/tddui-pp-pa-goal-objectif-1-example](Goal-tddui-pp-pa-goal-objectif-1-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-attachment)
 
@@ -42,11 +43,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-attachment.csv
   "resourceType" : "StructureDefinition",
   "id" : "tddui-attachment",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment",
-  "version" : "2.1.0-ballot",
+  "version" : "2.1.0",
   "name" : "TDDUIAttachment",
   "title" : "Pièce jointe",
   "status" : "active",
-  "date" : "2025-12-03T09:03:10+00:00",
+  "date" : "2025-12-17T09:35:57+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -59,7 +60,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-attachment.csv
       ]
     }
   ],
-  "description" : "Pièces jointes liées à l’événement et à l'évaluation. L'extension référence le profil PDSm_SimplifiedPublish.",
+  "description" : "Extension permettant de véhiculer des pièces jointes que ce soit pour l'évaluation, l'évènement ou le projet personnalisé. L'extension référence le profil PDSm_SimplifiedPublish.",
   "jurisdiction" : [
     {
       "coding" : [
@@ -85,6 +86,18 @@ Other representations of profile: [CSV](StructureDefinition-tddui-attachment.csv
     {
       "type" : "element",
       "expression" : "Encounter"
+    },
+    {
+      "type" : "element",
+      "expression" : "CarePlan"
+    },
+    {
+      "type" : "element",
+      "expression" : "Goal"
+    },
+    {
+      "type" : "element",
+      "expression" : "ServiceRequest"
     }
   ],
   "type" : "Extension",
@@ -96,7 +109,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-attachment.csv
         "id" : "Extension",
         "path" : "Extension",
         "short" : "Pièce jointe",
-        "definition" : "Pièces jointes liées à l’événement et à l'évaluation. L'extension référence le profil PDSm_SimplifiedPublish."
+        "definition" : "Extension permettant de véhiculer des pièces jointes que ce soit pour l'évaluation, l'évènement ou le projet personnalisé. L'extension référence le profil PDSm_SimplifiedPublish."
       },
       {
         "id" : "Extension.extension",

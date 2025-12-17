@@ -1,4 +1,4 @@
-# Flux 1 - Transmission de données DUI - Médicosocial - Transfert de données DUI v2.1.0-ballot
+# Flux 1 - Transmission de données DUI - Médicosocial - Transfert de données DUI v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Volume 2 - Détail des transactions**](description_flux.md)
@@ -36,6 +36,15 @@ Les différentes ressources sont véhiculées via l'élément : Bundle.entry. Le
  
  
 * [TDDUIDocumentReference](StructureDefinition-tddui-document-reference.md) représentant les pièces jointes.
+* [TDDUICarePlanProjetPersonnalise](StructureDefinition-tddui-careplan-projet-personnalise.md) représentant le projet personnalisé.
+* [TDDUIConsentAccord](StructureDefinition-tddui-consent-accord.md) représentant l'accord de l'usager, de son entourage ou de la structure.
+* [TDDUIGoalAttente](StructureDefinition-tddui-goal-attente.md) représentant les attentes pour un usager.
+* [TDDUIGoalObjectif](StructureDefinition-tddui-goal-objectif.md) représentant les résultats à atteindre.
+* [TDDUIServiceRequestBesoin](StructureDefinition-tddui-service-request-besoin.md) représentant les besoins de l'usager.
+* [TDDUITaskAction](StructureDefinition-tddui-task-action.md) représentant les actions réalisées.
+* [TDDUITaskBilan](StructureDefinition-tddui-task-bilan.md) représentant le bilan.
+* [TDDUITaskMoyenRessource](StructureDefinition-tddui-task-moyen-ressource.md) représentant les moyens ou ressources utilisées.
+* [TDDUITaskPrestation](StructureDefinition-tddui-task-prestation.md) représentant les prestations.
 
 Pour toutes ces ressources, seule la création est possible via l'intéraction FHIR [Create](https://hl7.org/fhir/R4/http.html#create).
 

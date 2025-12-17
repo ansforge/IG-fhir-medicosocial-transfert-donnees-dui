@@ -1,211 +1,10 @@
-# TDDUIBundleExample - Médicosocial - Transfert de données DUI v2.1.0-ballot
+# TDDUIBundleExample - Médicosocial - Transfert de données DUI v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **TDDUIBundleExample**
 
 ## Example Bundle: TDDUIBundleExample
-
-Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
-
-Bundle ExampleTDDUIBundle de type transaction
-
--------
-
-Entrée 1 - fullUrl = https://test-server.fr/Patient/tddui-patient-ins-example
-
-Ressource Patient :
-
-> 
-
-Profil: [TDDUI Patient INS](StructureDefinition-tddui-patient-ins.md)
-
-DUPONT Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/194704032)
--------
-
-Requête :
-
-```
-POST TDDUIPatientINS
-
-```
-
--------
-
-Entrée 2 - fullUrl = https://test-server.fr/Organization/tddui-organization-example
-
-Ressource Organization :
-
-> 
-
-Profil: [TDDUI Organization](StructureDefinition-tddui-organization.md)
-
-**identifier**: Identification nationale de structure définie par l’ANS dans le CI_SIS/1480787529**name**: Les Chênes Verts
-
-Requête :
-
-```
-POST TDDUIOrganization
-
-```
-
--------
-
-Entrée 3 - fullUrl = https://test-server.fr/Encounter/tddui-encounter-sejour-example
-
-Ressource Encounter :
-
-> 
-
-Profil: [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md)
-
-**Date d’admission**: 2023-04-11**Libellé mode d'entrée**: Date de début du suivi post-opératoire : 14/04/2023**Libellé mode de sortie**: Sortie prévisionnelle prévue pour le 5 mai 2023**Extension Definition for Encounter.plannedEndDate for Version 5.0**: 2023-05-05**identifier**: Identifiant du séjour/3480787529/147720425367411-SEJOUR-1012**status**: In Progress**class**:home health**subject**:[DUPONT Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/194704032)](Patient-tddui-patient-ins-example.md)**serviceProvider**:[Organization Les Chênes Verts](Organization-tddui-organization-example.md)
-
-Requête :
-
-```
-POST TDDUIEncounterSejour
-
-```
-
--------
-
-Entrée 4 - fullUrl = https://test-server.fr/Encounter/tddui-encounter-evenement-example
-
-Ressource Encounter :
-
-> 
-
-Profil: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)
-
-> **Ressources utilisées**
-* TDDUIRessourceType: Matériel spécialisé
-* TDDUIMaterialDetail: Materiel médical
-
-**Rapport de l’évènement**: Observations cliniques : ; Recommandations pour les jours à venir : ; Prochaine visite : 15 avril 2023, 10h30 ; Remarque : Monsieur Dupont a compris les consignes pour la gestion de sa douleur et la mobilisation de sa hanche opérée.**Commentaire**: Cet évènement a débuté plus tard l’usager était sous la douche à l’heure du début du rendez-vous.**Libellé de l'évènement**: Visite à domicile pour soins infirmier.**Motif de l’évènement**: Suivi post-opératoire suite à intervention chirurgicale de la hanche.**identifier**: Visit Number/3480787529/147720425367411-EVN-12548**status**: completed**class**:home health**type**:Intervention d'un infirmer salarié,Intervention**subject**:[DUPONT Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/194704032)](Patient-tddui-patient-ins-example.md)**partOf**:[Encounter : extension = 2023-04-11,Date de début du suivi post-opératoire : 14/04/2023,Sortie prévisionnelle prévue pour le 5 mai 2023,2023-05-05; identifier = Identifiant du séjour: 3480787529/147720425367411-SEJOUR-1012; status = in-progress; class = home health (ActCode#HH); period = 2023-04-14 --> (en cours)](Encounter-tddui-encounter-sejour-example.md)**serviceProvider**:[Organization Les Chênes Verts](Organization-tddui-organization-example.md)
-
-### Participants
-
-| | |
-| :--- | :--- |
-| - | **Type** |
-| * | Participation |
-
-### Locations
-
-| | |
-| :--- | :--- |
-| - | **Location** |
-| * | [Location](Location-tddui-event-location-example.md) |
-
-
-Requête :
-
-```
-POST TDDUIEncounterEvenement
-
-```
-
--------
-
-Entrée 5 - fullUrl = https://test-server.fr/Practitioner/tddui-practitioner-example
-
-Ressource Practitioner :
-
-> 
-
-Profil: [TDDUI Practitioner](StructureDefinition-tddui-practitioner.md)
-
-**identifier**:`urn:oid:1.2.250.1.71.4.2.1`/10103441234**name**: Claire Martin
-> **qualification****code**:DE Infirmier
-
-> **qualification****code**:Infirmier
-
-Requête :
-
-```
-POST TDDUIPractitioner
-
-```
-
--------
-
-Entrée 6 - fullUrl = https://test-server.fr/PractitionerRole/tddui-practitioner-role-example
-
-Ressource PractitionerRole :
-
-> 
-
-Profil: [TDDUI Practitioner Role](StructureDefinition-tddui-practitioner-role.md)
-
-**Mode d'exercice**:Salarié**practitioner**:[Practitioner Claire Martin](Practitioner-tddui-practitioner-example.md)**organization**:[Organization Les Chênes Verts](Organization-tddui-organization-example.md)**code**:Coordonnateur de parcours
-
-Requête :
-
-```
-POST TDDUIPractitionerRole
-
-```
-
--------
-
-Entrée 7 - fullUrl = https://test-server.fr/Task/tddui-task-transport-professionel-example
-
-Ressource Task :
-
-> 
-
-Profil: [TDDUI Task Transport Professionnel](StructureDefinition-tddui-task-transport-professionnel.md)
-
-**identifier**:`https://identifiant-medicosocial-transportprofessionnel.esante.gouv.fr`/3480787529/147720425367411-TPPro-154674**status**: Completed**intent**: Plan**code**:Véhicule individuel**for**:[Practitioner Claire Martin](Practitioner-tddui-practitioner-example.md)**encounter**:[Encounter : extension = ,Observations cliniques : ; Recommandations pour les jours à venir : ; Prochaine visite : 15 avril 2023, 10h30 ; Remarque : Monsieur Dupont a compris les consignes pour la gestion de sa douleur et la mobilisation de sa hanche opérée.,Cet évènement a débuté plus tard l’usager était sous la douche à l’heure du début du rendez-vous.,Visite à domicile pour soins infirmier.,Suivi post-opératoire suite à intervention chirurgicale de la hanche.; identifier = Visit Number; status = finished; class = home health (ActCode#HH); type = Intervention d'un infirmer salarié,; period = 2023-04-14 10:30:00+0200 --> 2023-04-14 11:15:00+0200](Encounter-tddui-encounter-evenement-example.md)**executionPeriod**: 2023-04-14 10:30:00+0200 --> 2023-04-14 11:15:00+0200**owner**:[Organization Les Chênes Verts](Organization-tddui-organization-example.md)
-> **input****type**:Type de motorisation associée au véhicule utilisé lors du transport.**value**:Véhicule électrique
-
-> **input****type**:Budget prévisionnel pour assurer le transport de la personne physique.**value**:€2,00(EUR)
-
-> **input****type**:Budget réel pour assurer le transport de la personne physique.**value**:€2,00(EUR)
-
-> **input****type**:Distance du transport de la personne physique.**value**: Pas daffichage pour {0} (value : 4; unit : kilometers; system : http://unitsofmeasure.org; code : km)
-
-> **input****type**:Durée théorique du transport de la personne physique.**value**: Pas daffichage pour {0} (value : 10; unit : minutes; system : http://unitsofmeasure.org; code : min)
-
-Requête :
-
-```
-POST TDDUITaskTransportProfessionnel
-
-```
-
--------
-
-Entrée 8 - fullUrl = https://test-server.fr/Task/tddui-task-transport-usager-example
-
-Ressource Task :
-
-> 
-
-Profil: [TDDUI Task Transport Usager](StructureDefinition-tddui-task-transport-usager.md)
-
-**identifier**:`https://identifiant-medicosocial-transportusager.esante.gouv.fr`/3480787529/147720425367411-TPPat-154675**status**: Completed**intent**: Plan**code**:Taxi**encounter**:[Encounter : extension = ,Observations cliniques : ; Recommandations pour les jours à venir : ; Prochaine visite : 15 avril 2023, 10h30 ; Remarque : Monsieur Dupont a compris les consignes pour la gestion de sa douleur et la mobilisation de sa hanche opérée.,Cet évènement a débuté plus tard l’usager était sous la douche à l’heure du début du rendez-vous.,Visite à domicile pour soins infirmier.,Suivi post-opératoire suite à intervention chirurgicale de la hanche.; identifier = Visit Number; status = finished; class = home health (ActCode#HH); type = Intervention d'un infirmer salarié,; period = 2023-04-14 10:30:00+0200 --> 2023-04-14 11:15:00+0200](Encounter-tddui-encounter-evenement-example.md)**executionPeriod**: 2023-04-14 10:30:00+0200 --> 2023-04-14 11:15:00+0200
-> **input****type**:Budget prévisionnel pour assurer le transport de la personne physique.**value**:€2,00(EUR)
-
-> **input****type**:Budget réel pour assurer le transport de la personne physique.**value**:€2,00(EUR)
-
-> **input****type**:Distance du transport de la personne physique.**value**: Pas daffichage pour {0} (value : 4; unit : kilometers; system : http://unitsofmeasure.org; code : km)
-
-> **input****type**:Durée théorique du transport de la personne physique.**value**: Pas daffichage pour {0} (value : 10; unit : minutes; system : http://unitsofmeasure.org; code : min)
-
-> **input****type**:Accompagnement nécessaire ou non de l'usager.**value**: true
-
-> **input****type**:Lors du transport de l'usager l'asepsie est rigoureusement respectée ou n'est pas nécessaire.**value**: false
-
-> **input****type**:Nature du transport de l'usager.**value**:Transports liés au projet individuel
-
-Requête :
-
-```
-POST TDDUITaskTransportUsager
-
-```
 
 
 
@@ -375,7 +174,7 @@ POST TDDUITaskTransportUsager
         },
         "text" : {
           "status" : "extensions",
-          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_tddui-encounter-sejour-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Venue tddui-encounter-sejour-example</b></p><a name=\"tddui-encounter-sejour-example\"> </a><a name=\"hctddui-encounter-sejour-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-encounter-sejour.html\">TDDUI Encounter Sejour</a></p></div><p><b>Date d’admission</b>: 2023-04-11</p><p><b>Libellé mode d'entrée</b>: Date de début du suivi post-opératoire : 14/04/2023</p><p><b>Libellé mode de sortie</b>: Sortie prévisionnelle prévue pour le 5 mai 2023</p><p><b>Extension Definition for Encounter.plannedEndDate for Version 5.0</b>: 2023-05-05</p><p><b>identifier</b>: Identifiant du séjour/3480787529/147720425367411-SEJOUR-1012</p><p><b>status</b>: In Progress</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/7.0.0/CodeSystem-v3-ActCode.html#v3-ActCode-HH\">ActCode: HH</a> (home health)</p><p><b>subject</b>: <a href=\"Patient-tddui-patient-ins-example.html\">DUPONT  Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/194704032)</a></p><p><b>period</b>: 2023-04-14 --&gt; (en cours)</p><p><b>serviceProvider</b>: <a href=\"Organization-tddui-organization-example.html\">Organization Les Chênes Verts</a></p></div>"
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_tddui-encounter-sejour-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Venue tddui-encounter-sejour-example</b></p><a name=\"tddui-encounter-sejour-example\"> </a><a name=\"hctddui-encounter-sejour-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-encounter-sejour.html\">TDDUI Encounter Sejour</a></p></div><p><b>Date d’admission</b>: 2023-04-11</p><p><b>Libellé mode d'entrée</b>: Date de début du suivi post-opératoire : 14/04/2023</p><p><b>Libellé mode de sortie</b>: Sortie prévisionnelle prévue pour le 5 mai 2023</p><p><b>Extension Definition for Encounter.plannedEndDate for Version 5.0</b>: 2023-05-05</p><p><b>identifier</b>: Identifiant du séjour/3480787529/147720425367411-SEJOUR-1012</p><p><b>status</b>: In Progress</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/7.0.1/CodeSystem-v3-ActCode.html#v3-ActCode-HH\">ActCode: HH</a> (home health)</p><p><b>subject</b>: <a href=\"Patient-tddui-patient-ins-example.html\">DUPONT  Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/194704032)</a></p><p><b>period</b>: 2023-04-14 --&gt; (en cours)</p><p><b>serviceProvider</b>: <a href=\"Organization-tddui-organization-example.html\">Organization Les Chênes Verts</a></p></div>"
         },
         "extension" : [
           {
@@ -442,7 +241,7 @@ POST TDDUITaskTransportUsager
         },
         "text" : {
           "status" : "extensions",
-          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_tddui-encounter-evenement-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Venue tddui-encounter-evenement-example</b></p><a name=\"tddui-encounter-evenement-example\"> </a><a name=\"hctddui-encounter-evenement-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-encounter-evenement.html\">TDDUI Encounter Evenement</a></p></div><blockquote><p><b>Ressources utilisées</b></p><ul><li>TDDUIRessourceType: <span title=\"Codes :{https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis ORG-206}\">Matériel spécialisé</span></li><li>TDDUIMaterialDetail: <span title=\"Codes :{https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis ORG-208}\">Materiel médical</span></li></ul></blockquote><p><b>Rapport de l’évènement</b>: Observations cliniques : ; Recommandations pour les jours à venir : ; Prochaine visite : 15 avril 2023, 10h30 ; Remarque : Monsieur Dupont a compris les consignes pour la gestion de sa douleur et la mobilisation de sa hanche opérée.</p><p><b>Commentaire</b>: Cet évènement a débuté plus tard l’usager était sous la douche à l’heure du début du rendez-vous.</p><p><b>Libellé de l'évènement</b>: Visite à domicile pour soins infirmier.</p><p><b>Motif de l’évènement</b>: Suivi post-opératoire suite à intervention chirurgicale de la hanche.</p><p><b>identifier</b>: Visit Number/3480787529/147720425367411-EVN-12548</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/7.0.0/CodeSystem-v3-ActCode.html#v3-ActCode-HH\">ActCode: HH</a> (home health)</p><p><b>type</b>: <span title=\"Codes :{https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis MED-1298}\">Intervention d'un infirmer salarié</span>, <span title=\"Codes :\">Intervention</span></p><p><b>subject</b>: <a href=\"Patient-tddui-patient-ins-example.html\">DUPONT  Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/194704032)</a></p><h3>Participants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Individual</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes :{http://terminology.hl7.org/CodeSystem/v3-ParticipationType PART}\">Participation</span></td><td><a href=\"Practitioner-tddui-practitioner-example.html\">Practitioner Claire Martin </a></td></tr></table><p><b>period</b>: 2023-04-14 10:30:00+0200 --&gt; 2023-04-14 11:15:00+0200</p><h3>Locations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Location</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Location-tddui-event-location-example.html\">Location</a></td></tr></table><p><b>serviceProvider</b>: <a href=\"Organization-tddui-organization-example.html\">Organization Les Chênes Verts</a></p><p><b>partOf</b>: <a href=\"Encounter-tddui-encounter-sejour-example.html\">Encounter : extension = 2023-04-11,Date de début du suivi post-opératoire : 14/04/2023,Sortie prévisionnelle prévue pour le 5 mai 2023,2023-05-05; identifier = Identifiant du séjour: 3480787529/147720425367411-SEJOUR-1012; status = in-progress; class = home health (ActCode#HH); period = 2023-04-14 --&gt; (en cours)</a></p></div>"
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_tddui-encounter-evenement-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Venue tddui-encounter-evenement-example</b></p><a name=\"tddui-encounter-evenement-example\"> </a><a name=\"hctddui-encounter-evenement-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-encounter-evenement.html\">TDDUI Encounter Evenement</a></p></div><blockquote><p><b>Ressources utilisées</b></p><ul><li>TDDUIRessourceType: <span title=\"Codes :{https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis ORG-206}\">Matériel spécialisé</span></li><li>TDDUIMaterialDetail: <span title=\"Codes :{https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis ORG-208}\">Materiel médical</span></li></ul></blockquote><p><b>Rapport de l’évènement</b>: Observations cliniques : ; Recommandations pour les jours à venir : ; Prochaine visite : 15 avril 2023, 10h30 ; Remarque : Monsieur Dupont a compris les consignes pour la gestion de sa douleur et la mobilisation de sa hanche opérée.</p><p><b>Commentaire</b>: Cet évènement a débuté plus tard l’usager était sous la douche à l’heure du début du rendez-vous.</p><p><b>Libellé de l'évènement</b>: Visite à domicile pour soins infirmier.</p><p><b>Motif de l’évènement</b>: Suivi post-opératoire suite à intervention chirurgicale de la hanche.</p><p><b>identifier</b>: Visit Number/3480787529/147720425367411-EVN-12548</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/7.0.1/CodeSystem-v3-ActCode.html#v3-ActCode-HH\">ActCode: HH</a> (home health)</p><p><b>type</b>: <span title=\"Codes :{https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis MED-1298}\">Intervention d'un infirmer salarié</span>, <span title=\"Codes :\">Intervention</span></p><p><b>subject</b>: <a href=\"Patient-tddui-patient-ins-example.html\">DUPONT  Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/194704032)</a></p><h3>Participants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Individual</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes :{http://terminology.hl7.org/CodeSystem/v3-ParticipationType PART}\">Participation</span></td><td><a href=\"Practitioner-tddui-practitioner-example.html\">Practitioner Claire Martin </a></td></tr></table><p><b>period</b>: 2023-04-14 10:30:00+0200 --&gt; 2023-04-14 11:15:00+0200</p><h3>Locations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Location</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Location-tddui-event-location-example.html\">Location</a></td></tr></table><p><b>serviceProvider</b>: <a href=\"Organization-tddui-organization-example.html\">Organization Les Chênes Verts</a></p><p><b>partOf</b>: <a href=\"Encounter-tddui-encounter-sejour-example.html\">Encounter : extension = 2023-04-11,Date de début du suivi post-opératoire : 14/04/2023,Sortie prévisionnelle prévue pour le 5 mai 2023,2023-05-05; identifier = Identifiant du séjour: 3480787529/147720425367411-SEJOUR-1012; status = in-progress; class = home health (ActCode#HH); period = 2023-04-14 --&gt; (en cours)</a></p></div>"
         },
         "extension" : [
           {

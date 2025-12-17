@@ -1,6 +1,30 @@
 {
   "codeSystems" : [
     {
+      "url" : "http://dicom.nema.org/resources/ontology/DCM",
+      "version" : "2022.4.20221006",
+      "status" : "active",
+      "name" : "DICOMTerminologyDefinitions",
+      "title" : "DICOM Controlled Terminology Definitions",
+      "description" : "DICOM Code Definitions (Coding Scheme Designator \"DCM\" Coding Scheme Version 2022.4.20221006",
+      "oids" : ["1.2.840.10008.2.16.4"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
+    },
+    {
+      "url" : "http://hl7.org/fhir/CodeSystem/task-code",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "TaskCode",
+      "title" : "Task Codes",
+      "description" : "Codes indicating the type of action that is expected to be performed",
+      "oids" : ["2.16.840.1.113883.4.642.4.1397"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-task-code.html" : "Task Codes"
+    },
+    {
       "url" : "http://hl7.org/fhir/address-type",
       "version" : "4.0.1",
       "status" : "active",
@@ -50,6 +74,18 @@
       "http://hl7.org/fhir/R4/valueset-bundle-type.html" : "BundleType"
     },
     {
+      "url" : "http://hl7.org/fhir/care-plan-activity-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CarePlanActivityStatus",
+      "title" : "CarePlanActivityStatus",
+      "description" : "Codes that reflect the current state of a care plan activity within its overall life cycle.",
+      "oids" : ["2.16.840.1.113883.4.642.4.147"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-care-plan-activity-status.html" : "CarePlanActivityStatus"
+    },
+    {
       "url" : "http://hl7.org/fhir/composition-status",
       "version" : "4.0.1",
       "status" : "draft",
@@ -60,6 +96,42 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-composition-status.html" : "CompositionStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/consent-data-meaning",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConsentDataMeaning",
+      "title" : "ConsentDataMeaning",
+      "description" : "How a resource reference is interpreted when testing consent restrictions.",
+      "oids" : ["2.16.840.1.113883.4.642.4.760"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-consent-data-meaning.html" : "ConsentDataMeaning"
+    },
+    {
+      "url" : "http://hl7.org/fhir/consent-provision-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConsentProvisionType",
+      "title" : "ConsentProvisionType",
+      "description" : "How a rule statement is applied, such as adding additional consent or removing consent.",
+      "oids" : ["2.16.840.1.113883.4.642.4.758"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-consent-provision-type.html" : "ConsentProvisionType"
+    },
+    {
+      "url" : "http://hl7.org/fhir/consent-state-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConsentState",
+      "title" : "ConsentState",
+      "description" : "Indicates the state of the consent.",
+      "oids" : ["2.16.840.1.113883.4.642.4.756"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-consent-state-codes.html" : "ConsentState"
     },
     {
       "url" : "http://hl7.org/fhir/days-of-week",
@@ -120,6 +192,18 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-encounter-status.html" : "EncounterStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/goal-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "GoalLifecycleStatus",
+      "title" : "GoalLifecycleStatus",
+      "description" : "Codes that reflect the current state of a goal and whether the goal is still being targeted.",
+      "oids" : ["2.16.840.1.113883.4.642.4.272"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-goal-status.html" : "GoalLifecycleStatus"
     },
     {
       "url" : "http://hl7.org/fhir/http-verb",
@@ -191,6 +275,8 @@
       "oids" : ["2.16.840.1.113883.4.642.4.114"],
       "uses" : {
       },
+      "http://hl7.org/fhir/R4/valueset-request-intent.html" : "RequestIntent",
+      "http://hl7.org/fhir/R4/valueset-care-plan-intent.html" : "Care Plan Intent",
       "http://hl7.org/fhir/R4/valueset-task-intent.html" : "TaskIntent"
     },
     {
@@ -204,6 +290,31 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-request-priority.html" : "Request priority"
+    },
+    {
+      "url" : "http://hl7.org/fhir/request-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestStatus",
+      "title" : "RequestStatus",
+      "description" : "Codes identifying the lifecycle stage of a request.",
+      "oids" : ["2.16.840.1.113883.4.642.4.112"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-request-status.html" : "RequestStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/resource-types",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ResourceType",
+      "title" : "ResourceType",
+      "description" : "One of the resource types defined as part of this version of FHIR.",
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-care-plan-activity-kind.html" : "Care Plan Activity Kind",
+      "http://hl7.org/fhir/R4/valueset-consent-content-class.html" : "Consent Content Class",
+      "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType"
     },
     {
       "url" : "http://hl7.org/fhir/search-entry-mode",
@@ -251,7 +362,10 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
-      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J07-XdsTypeCode-CISIS.html" : "JDV_J07_XdsTypeCode_CISIS"
+      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J07-XdsTypeCode-CISIS.html" : "JDV_J07_XdsTypeCode_CISIS",
+      "http://hl7.org/fhir/R4/valueset-consent-category.html" : "Consent Category Codes",
+      "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes",
+      "http://hl7.org/fhir/R4/valueset-consent-content-code.html" : "Consent Content Codes"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -263,10 +377,20 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
+      "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
       "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-ressource-utilisee-cisis.html" : "JDV Ressource Utilisee CISIS",
+      "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
+      "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
+      "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
+      "http://hl7.org/fhir/R4/valueset-goal-start-event.html" : "Goal start event",
+      "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
+      "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
       "http://hl7.org/fhir/R4/valueset-questionnaire-answers.html" : "Questionnaire Answer Codes",
-      "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes"
+      "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
+      "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
+      "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles",
+      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+      "http://hl7.org/fhir/R4/valueset-care-plan-activity-outcome.html" : "Care Plan Activity Outcome"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/admit-source",
@@ -293,6 +417,54 @@
       "http://hl7.org/fhir/R4/valueset-common-tags.html" : "Common Tags"
     },
     {
+      "url" : "http://terminology.hl7.org/CodeSystem/consentaction",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ConsentActionCodes",
+      "title" : "Consent Action Codes",
+      "description" : "This value set includes sample Consent Action codes.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1227"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-consent-action.html" : "Consent Action Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/consentcategorycodes",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ConsentCategoryCodes",
+      "title" : "Consent Category Codes",
+      "description" : "This value set includes sample Consent Directive Type codes, including several consent directive related LOINC codes; HL7 VALUE SET: ActConsentType(2.16.840.1.113883.1.11.19897); examples of US realm consent directive legal descriptions and references to online and/or downloadable forms such as the SSA-827 Authorization to Disclose Information to the Social Security Administration; and other anticipated consent directives related to participation in a clinical trial, medical procedures, reproductive procedures; health care directive (Living Will); advance directive, do not resuscitate (DNR); Physician Orders for Life-Sustaining Treatment (POLST)",
+      "oids" : ["2.16.840.1.113883.4.642.1.1226"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-consent-category.html" : "Consent Category Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/consentpolicycodes",
+      "version" : "3.0.1",
+      "status" : "active",
+      "name" : "ConsentPolicyRuleCodes",
+      "title" : "Consent PolicyRule Codes",
+      "description" : "This value set includes sample Regulatory consent policy types from the US and other regions.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1229"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-consent-policy.html" : "Consent PolicyRule Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/consentscope",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "ConsentScopeCodes",
+      "title" : "Consent Scope Codes",
+      "description" : "This value set includes the four Consent scope codes.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1228"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-consent-scope.html" : "Consent Scope Codes"
+    },
+    {
       "url" : "http://terminology.hl7.org/CodeSystem/contactentity-type",
       "version" : "1.0.0",
       "status" : "draft",
@@ -303,6 +475,18 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-contactentity-type.html" : "Contact entity type"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/contractsignertypecodes",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ContractSignerTypeCodes",
+      "title" : "Contract Signer Type Codes",
+      "description" : "This value set includes sample Contract Signer Type codes.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1201"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/diagnosis-role",
@@ -338,8 +522,8 @@
       "oids" : ["2.16.840.1.113883.4.642.1.1093"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-encounter-discharge-disposition.html" : "Discharge disposition",
-      "https://hl7.fr/ig/fhir/core/2.1.0/ValueSet-fr-core-vs-encounter-discharge-disposition.html" : "FR Core ValueSet Encounter discharge disposition"
+      "https://hl7.fr/ig/fhir/core/2.1.0/ValueSet-fr-core-vs-encounter-discharge-disposition.html" : "FR Core ValueSet Encounter discharge disposition",
+      "http://hl7.org/fhir/R4/valueset-encounter-discharge-disposition.html" : "Discharge disposition"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/encounter-special-arrangements",
@@ -364,6 +548,53 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-encounter-type.html" : "Encounter type"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/extra-security-role-type",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "SecurityRoleType",
+      "title" : "Security Role Type",
+      "description" : "This CodeSystem contains Additional FHIR-defined Security Role types not defined elsewhere",
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/goal-achievement",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "GoalAchievementStatus",
+      "title" : "Goal achievement status",
+      "description" : "Describes the progression, or lack thereof, towards the goal against the target.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1375"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-goal-achievement.html" : "Goal achievement status"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/goal-category",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "GoalCategory",
+      "title" : "Goal category",
+      "description" : "Codes for grouping goals to use for filtering or presentation.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1097"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-goal-category.html" : "Goal category"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/goal-priority",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "GoalPriority",
+      "title" : "Goal priority",
+      "description" : "Indicates the level of importance associated with reaching or sustaining a goal.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1096"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-goal-priority.html" : "Goal priority"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/location-physical-type",
@@ -415,7 +646,7 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0007",
-      "version" : "2.2.0",
+      "version" : "3.0.0",
       "status" : "active",
       "name" : "AdmissionType",
       "title" : "admissionType",
@@ -427,7 +658,7 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0092",
-      "version" : "2.1.0",
+      "version" : "3.0.0",
       "status" : "active",
       "name" : "ReAdmissionIndicator",
       "title" : "re-admissionIndicator",
@@ -435,11 +666,11 @@
       "oids" : ["2.16.840.1.113883.18.36"],
       "uses" : {
       },
-      "http://terminology.hl7.org/7.0.0/ValueSet-v2-0092.html" : "hl7VS-re-admissionIndicator"
+      "http://terminology.hl7.org/7.0.1/ValueSet-v2-0092.html" : "hl7VS-re-admissionIndicator"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0131",
-      "version" : "2.1.0",
+      "version" : "3.0.0",
       "status" : "active",
       "name" : "ContactRole2",
       "title" : "contactRole2",
@@ -447,8 +678,8 @@
       "oids" : ["2.16.840.1.113883.18.58"],
       "uses" : {
       },
-      "https://hl7.fr/ig/fhir/core/2.1.0/ValueSet-fr-core-vs-patient-contact-role.html" : "FR Core ValueSet Patient contact role",
-      "http://hl7.org/fhir/R4/valueset-patient-contactrelationship.html" : "Patient Contact Relationship "
+      "http://hl7.org/fhir/R4/valueset-patient-contactrelationship.html" : "Patient Contact Relationship ",
+      "https://hl7.fr/ig/fhir/core/2.1.0/ValueSet-fr-core-vs-patient-contact-role.html" : "FR Core ValueSet Patient contact role"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
@@ -472,8 +703,8 @@
       "oids" : ["2.16.840.1.113883.5.4"],
       "uses" : {
       },
-      "http://terminology.hl7.org/7.0.0/ValueSet-v3-ActEncounterCode.html" : "ActEncounterCode",
-      "http://terminology.hl7.org/7.0.0/ValueSet-v3-ActCode.html" : "v3 Code System ActCode"
+      "http://terminology.hl7.org/7.0.1/ValueSet-v3-ActCode.html" : "v3 Code System ActCode",
+      "http://terminology.hl7.org/7.0.1/ValueSet-v3-ActEncounterCode.html" : "ActEncounterCode"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ActPriority",
@@ -485,7 +716,19 @@
       "oids" : ["2.16.840.1.113883.5.7"],
       "uses" : {
       },
-      "http://terminology.hl7.org/7.0.0/ValueSet-v3-ActPriority.html" : "ActPriority"
+      "http://terminology.hl7.org/7.0.1/ValueSet-v3-ActPriority.html" : "ActPriority"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "version" : "3.1.0",
+      "status" : "active",
+      "name" : "ActReason",
+      "title" : "ActReason",
+      "description" : "A set of codes specifying the motivation, cause, or rationale of an Act, when such rationale is not reasonably represented as an ActRelationship of type \"has reason\" linking to another Act.\r\n\r\n*Examples:* Example reasons that might qualify for being coded in this field might be: \"routine requirement\", \"infectious disease reporting requirement\", \"on patient request\", \"required by law\".",
+      "oids" : ["2.16.840.1.113883.5.8"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/7.0.1/ValueSet-v3-PurposeOfUse.html" : "PurposeOfUse"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-EncounterSpecialCourtesy",
@@ -521,8 +764,20 @@
       "oids" : ["2.16.840.1.113883.5.1008"],
       "uses" : {
       },
-      "https://hl7.fr/ig/fhir/core/2.1.0/ValueSet-fr-core-vs-marital-status.html" : "FR Core ValueSet Patient gender INS ValueSet",
-      "http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html" : "Special courtesy"
+      "http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html" : "Special courtesy",
+      "https://hl7.fr/ig/fhir/core/2.1.0/ValueSet-fr-core-vs-marital-status.html" : "FR Core ValueSet Patient gender INS ValueSet"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ParticipationFunction",
+      "title" : "ParticipationFunction",
+      "description" : "This code is used to specify the exact function an actor had in a service in all necessary detail. This domain may include local extensions (CWE).",
+      "oids" : ["2.16.840.1.113883.5.88"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
@@ -534,7 +789,33 @@
       "oids" : ["2.16.840.1.113883.5.90"],
       "uses" : {
       },
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
       "http://hl7.org/fhir/R4/valueset-encounter-participant-type.html" : "Participant type"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+      "version" : "4.0.0",
+      "status" : "active",
+      "name" : "RoleClass",
+      "title" : "RoleClass",
+      "description" : "Codes for the Role class hierarchy. The values in this hierarchy, represent a Role which is an association or relationship between two entities - the entity that plays the role and the entity that scopes the role. Roles names are derived from the name of the playing entity in that role.\r\n\r\nThe role hierarchy stems from three core concepts, or abstract domains:\r\n\r\n *  **RoleClassOntological** is an abstract domain that collects roles in which the playing entity is defined or specified by the scoping entity.\r\n *  **RoleClassPartitive** collects roles in which the playing entity is in some sense a \"part\" of the scoping entity.\r\n *  **RoleClassAssociative** collects all of the remaining forms of association between the playing entity and the scoping entity. This set of roles is further partitioned between:\r\n    \r\n     *  **RoleClassPassive** which are roles in which the playing entity is used, known, treated, handled, built, or destroyed, etc. under the auspices of the scoping entity. The playing entity is passive in these roles in that the role exists without an agreement from the playing entity.\r\n     *  **RoleClassMutualRelationship** which are relationships based on mutual behavior of the two entities. The basis of these relationship may be formal agreements or they may be *de facto* behavior. Thus, this sub-domain is further divided into:\r\n        \r\n         *  **RoleClassRelationshipFormal** in which the relationship is formally defined, frequently by a contract or agreement.\r\n         *  **Personal relationship** which inks two people in a personal relationship.\r\n\r\nThe hierarchy discussed above is represented In the current vocabulary tables as a set of abstract domains, with the exception of the \"Personal relationship\" which is a leaf concept.\r\n\r\n*OpenIssue:* Description copied from Concept Domain of same name. Must be verified.",
+      "oids" : ["2.16.840.1.113883.5.110"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "RoleCode",
+      "title" : "RoleCode",
+      "description" : "A set of codes further specifying the kind of Role; specific classification codes for further qualifying RoleClass codes.",
+      "oids" : ["2.16.840.1.113883.5.111"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/7.0.1/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType",
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
     },
     {
       "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-circonstances-sortie",
@@ -603,6 +884,17 @@
       "https://hl7.fr/ig/fhir/core/2.1.0/ValueSet-fr-core-vs-organization-type.html" : "FR Core ValueSet Organization type"
     },
     {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "TDDUIDiscriminatorCS",
+      "title" : "TDDUI Discriminator CodeSystem",
+      "description" : "CodeSystem définissant les codes discriminants.",
+      "uses" : {
+      },
+      "ValueSet-tddui-discriminator-vs.html" : "TDDUI Discriminator ValueSet"
+    },
+    {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_A00-ProducteurDocNonPS/FHIR/TRE-A00-ProducteurDocNonPS",
       "version" : "20240329120000",
       "status" : "active",
@@ -612,9 +904,9 @@
       "oids" : ["1.2.250.1.213.1.1.4.6"],
       "uses" : {
       },
+      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J04-XdsPracticeSettingCode-CISIS.html" : "JDV_J04_XdsPracticeSettingCode_CISIS",
       "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J02-XdsHealthcareFacilityTypeCode-CISIS.html" : "JDV_J02_XdsHealthcareFacilityTypeCode_CISIS",
-      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J01-XdsAuthorSpecialty-CISIS.html" : "JDV_J01_XdsAuthorSpecialty_CISIS",
-      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J04-XdsPracticeSettingCode-CISIS.html" : "JDV_J04_XdsPracticeSettingCode_CISIS"
+      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J01-XdsAuthorSpecialty-CISIS.html" : "JDV_J01_XdsAuthorSpecialty_CISIS"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_A01-CadreExercice/FHIR/TRE-A01-CadreExercice",
@@ -904,8 +1196,8 @@
       "oids" : ["1.2.250.1.213.1.6.1.18"],
       "uses" : {
       },
-      "https://hl7.fr/ig/fhir/core/2.1.0/ValueSet-fr-core-vs-practitioner-role-exercice.html" : "FR Core ValueSet PractitionerRole Exercice",
-      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J117-ModeExercice-ENREG.html" : "JDV_J117_ModeExercice_ENREG"
+      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J117-ModeExercice-ENREG.html" : "JDV_J117_ModeExercice_ENREG",
+      "https://hl7.fr/ig/fhir/core/2.1.0/ValueSet-fr-core-vs-practitioner-role-exercice.html" : "FR Core ValueSet PractitionerRole Exercice"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale",
@@ -1266,9 +1558,9 @@
       "oids" : ["1.2.250.1.213.1.6.1.107"],
       "uses" : {
       },
-      "https://hl7.fr/ig/fhir/core/2.1.0/ValueSet-fr-core-vs-practitioner-role-exercice.html" : "FR Core ValueSet PractitionerRole Exercice",
       "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J01-XdsAuthorSpecialty-CISIS.html" : "JDV_J01_XdsAuthorSpecialty_CISIS",
-      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J47-FunctionCode-CISIS.html" : "JDV_J47_FunctionCode_CISIS"
+      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J47-FunctionCode-CISIS.html" : "JDV_J47_FunctionCode_CISIS",
+      "https://hl7.fr/ig/fhir/core/2.1.0/ValueSet-fr-core-vs-practitioner-role-exercice.html" : "FR Core ValueSet PractitionerRole Exercice"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_R94-ProfessionSocial/FHIR/TRE-R94-ProfessionSocial",
@@ -1280,8 +1572,8 @@
       "oids" : ["1.2.250.1.213.1.6.1.4"],
       "uses" : {
       },
-      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J106-EnsembleProfession-RASS.html" : "JDV_J106_EnsembleProfession_RASS",
-      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J01-XdsAuthorSpecialty-CISIS.html" : "JDV_J01_XdsAuthorSpecialty_CISIS"
+      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J01-XdsAuthorSpecialty-CISIS.html" : "JDV_J01_XdsAuthorSpecialty_CISIS",
+      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J106-EnsembleProfession-RASS.html" : "JDV_J106_EnsembleProfession_RASS"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_R95-UsagerTitre/FHIR/TRE-R95-UsagerTitre",
@@ -1293,8 +1585,8 @@
       "oids" : ["1.2.250.1.213.1.6.1.109"],
       "uses" : {
       },
-      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J106-EnsembleProfession-RASS.html" : "JDV_J106_EnsembleProfession_RASS",
-      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J01-XdsAuthorSpecialty-CISIS.html" : "JDV_J01_XdsAuthorSpecialty_CISIS"
+      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J01-XdsAuthorSpecialty-CISIS.html" : "JDV_J01_XdsAuthorSpecialty_CISIS",
+      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J106-EnsembleProfession-RASS.html" : "JDV_J106_EnsembleProfession_RASS"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_R96-AutreFonctionSanitaire/FHIR/TRE-R96-AutreFonctionSanitaire",
@@ -1330,13 +1622,37 @@
       "oids" : ["1.2.250.1.213.1.1.4.322"],
       "uses" : {
       },
-      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-type-evenement-ssiad-cisis.html" : "JDV Type Evenement Ssiad CISIS",
-      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-type-motorisation-cisis.html" : "JDV Type Motorisation CISIS",
+      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-ressource-utilisee-cisis.html" : "JDV Ressource Utilisee CISIS",
       "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-motif-non-realisation-evenement-cisis.html" : "JDV Motif Non Realisation Evenement CISIS",
-      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-detail-ressource-immobiliere-utilisee-cisis.html" : "JDV Detail Ressource Immobiliere Utilisee CISIS",
       "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-mode-de-transport-cisis.html" : "JDV Mode De Transport CISIS",
+      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-type-motorisation-cisis.html" : "JDV Type Motorisation CISIS",
+      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-detail-ressource-immobiliere-utilisee-cisis.html" : "JDV Detail Ressource Immobiliere Utilisee CISIS",
       "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-detail-materiel-specialise-cisis.html" : "JDV Detail Materiel Specialise CISIS",
-      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-ressource-utilisee-cisis.html" : "JDV Ressource Utilisee CISIS"
+      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-type-evenement-ssiad-cisis.html" : "JDV Type Evenement Ssiad CISIS"
+    },
+    {
+      "url" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r389-statut-bilan-projet-personnalise",
+      "version" : "20250418120000",
+      "status" : "active",
+      "name" : "TreR389StatutBilanProjetPersonnalise",
+      "title" : "Tre R389 Statut Bilan Projet Personnalise",
+      "description" : "Statut du bilan du projet personnalisé.",
+      "oids" : ["1.2.250.1.213.3.3.257"],
+      "uses" : {
+      },
+      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-j366-statut-bilan-projet-personnalise-ms.html" : "Jdv J366 Statut Bilan Projet Personnalise Ms"
+    },
+    {
+      "url" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r390-type-projet-personnalise",
+      "version" : "20250422120000",
+      "status" : "active",
+      "name" : "TreR390TypeProjetPersonnalise",
+      "title" : "Tre R390 Type Projet Personnalise",
+      "description" : "Cette nomenclature donne le type de projet personnalisé qui est un document co-construit par l'usager, son entourage familial et professionnel du médico-social.",
+      "oids" : ["1.2.250.1.213.3.3.258"],
+      "uses" : {
+      },
+      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-j367-type-projet-personnalise-ms.html" : "Jdv J367 Type Projet Personnalise Ms"
     },
     {
       "url" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r394-competence-metier",
@@ -1359,7 +1675,8 @@
       "description" : "Les nomenclatures des besoins et des prestations ont été élaborées par un groupe de travail issu du projet SERAFIN-PH porté par la Caisse nationale de Solidarité pour l’Autonomie (CNSA) et la Direction Générale de la Cohésion Sociale (DGCS).\nElles permettent de décrire, sur la base d’un langage commun, les besoins identifiés des personnes, et les prestations réalisées en réponse à ces besoins. Les usages locaux de ces nomenclatures montrent leur pertinence pour nouer autour des projets personnalisés d’accompagnement et de leurs déclinaisons opérationnelles un dialogue soutenu et permanent entre tous les acteurs concernés, de la personne accompagnée aux structures médico-sociales, acteurs de droit commun et jusqu’aux institutions de régulation (ARS, services déconcentrés et collectivités locales).",
       "uses" : {
       },
-      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J282-TransportsLiesAuProjetIndividuel-SERAFIN.html" : "JDV_J282_TransportsLiesAuProjetIndividuel_SERAFIN"
+      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J282-TransportsLiesAuProjetIndividuel-SERAFIN.html" : "JDV_J282_TransportsLiesAuProjetIndividuel_SERAFIN",
+      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J285-Besoins-SERAFIN.html" : "JDV_J285_Besoins_SERAFIN"
     },
     {
       "url" : "urn:ietf:bcp:47",
