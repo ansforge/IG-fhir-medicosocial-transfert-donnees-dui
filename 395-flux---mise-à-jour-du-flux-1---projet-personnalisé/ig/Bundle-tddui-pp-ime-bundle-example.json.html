@@ -256,7 +256,7 @@
 
 
 
-  <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">{
+  <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">{
   "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle">resourceType</a>" : "Bundle",
   "<a href="http://hl7.org/fhir/R4/resource.html#Bundle.id">id</a>" : "tddui-pp-ime-bundle-example",
   "<a href="http://hl7.org/fhir/R4/resource.html#Bundle.meta">meta</a>" : {
@@ -264,7 +264,373 @@
       <a href="StructureDefinition-tddui-bundle.html" style="color: Maroon">&#x1F517;</a> "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle"
     ]
   },
-  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.type">type</a>" : "transaction"
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.type">type</a>" : "transaction",
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "https://test-server.fr/Patient/tddui-pp-ime-patient-example",
+      "<a href="http://hl7.org/fhir/R4/patient.html#Patient">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/patient.html">resourceType</a>" : "Patient",
+        "<a href="http://hl7.org/fhir/R4/resource.html#Patient.id">id</a>" : "tddui-pp-ime-patient-example",
+        "<a href="http://hl7.org/fhir/R4/resource.html#Patient.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-tddui-patient.html" style="color: Maroon">&#x1F517;</a> "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/domainresource.html#Patient.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Patient_tddui-pp-ime-patient-example\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : Patient tddui-pp-ime-patient-example&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;tddui-pp-ime-patient-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hctddui-pp-ime-patient-example\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profil: &lt;a href=\&quot;StructureDefinition-tddui-patient.html\&quot;&gt;TDDUI Patient&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p style=\&quot;border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\&quot;&gt;Hugo D. (official) (sexe non précisé), Date de Naissance inconnue ( Patient internal identifier: 3480787529/123456)&lt;/p&gt;&lt;hr/&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">identifier</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">type</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "PI",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Patient internal identifier"
+                }
+              ]
+            },
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "https://identifiant-medicosocial-localusager.esante.gouv.fr",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "3480787529/123456"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.name">name</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.use">use</a>" : "official",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.family">family</a>" : "D.",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.given">given</a>" : [
+              "Hugo"
+            ]
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request">request</a>" : {
+        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.method">method</a>" : "POST",
+        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.url">url</a>" : "TDDUIPatient"
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "https://test-server.fr/Consent/tddui-pp-ime-consent-accord-example",
+      "<a href="http://hl7.org/fhir/R4/consent.html#Consent">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/consent.html">resourceType</a>" : "Consent",
+        "<a href="http://hl7.org/fhir/R4/resource.html#Consent.id">id</a>" : "tddui-pp-ime-consent-accord-example",
+        "<a href="http://hl7.org/fhir/R4/resource.html#Consent.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-tddui-consent-accord.html" style="color: Maroon">&#x1F517;</a> "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/domainresource.html#Consent.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Consent_tddui-pp-ime-consent-accord-example\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : Consent tddui-pp-ime-consent-accord-example&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;tddui-pp-ime-consent-accord-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hctddui-pp-ime-consent-accord-example\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profil: &lt;a href=\&quot;StructureDefinition-tddui-consent-accord.html\&quot;&gt;TDDUI Consent Accord&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;p&gt;&lt;b&gt;scope&lt;/b&gt;: &lt;span title=\&quot;Codes :{http://terminology.hl7.org/CodeSystem/consentscope patient-privacy}\&quot;&gt;Privacy Consent&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\&quot;Codes :{http://loinc.org 59284-0}\&quot;&gt;Patient Consent&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;dateTime&lt;/b&gt;: 2024-01-15 09:00:00+0100&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;a href=\&quot;Practitioner-tddui-practitioner-example.html\&quot;&gt;Practitioner Claire Martin &lt;/a&gt;&lt;/p&gt;&lt;h3&gt;Policies&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Authority&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;https://www.cnsa.fr/\&quot;&gt;https://www.cnsa.fr/&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/consent.html#Consent.status">status</a>" : "active",
+        "<a href="http://hl7.org/fhir/R4/consent.html#Consent.scope">scope</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/consentscope",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "patient-privacy",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Privacy Consent"
+            }
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/consent.html#Consent.category">category</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "59284-0",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Patient Consent"
+              }
+            ]
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/consent.html#Consent.dateTime">dateTime</a>" : "2024-01-15T09:00:00+01:00",
+        "<a href="http://hl7.org/fhir/R4/consent.html#Consent.performer">performer</a>" : [
+          {
+            <a href="Practitioner-tddui-practitioner-example.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Practitioner/tddui-practitioner-example"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/consent.html#Consent.policy">policy</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/consent.html#Consent.policy.authority">authority</a>" : "https://www.cnsa.fr/"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request">request</a>" : {
+        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.method">method</a>" : "POST",
+        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.url">url</a>" : "TDDUIConsentAccord"
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "https://test-server.fr/CarePlan/tddui-pp-ime-careplan-example",
+      "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/careplan.html">resourceType</a>" : "CarePlan",
+        "<a href="http://hl7.org/fhir/R4/resource.html#CarePlan.id">id</a>" : "tddui-pp-ime-careplan-example",
+        "<a href="http://hl7.org/fhir/R4/resource.html#CarePlan.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-tddui-careplan-projet-personnalise.html" style="color: Maroon">&#x1F517;</a> "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/domainresource.html#CarePlan.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;CarePlan_tddui-pp-ime-careplan-example\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : PlanDeSoins tddui-pp-ime-careplan-example&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;tddui-pp-ime-careplan-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hctddui-pp-ime-careplan-example\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profil: &lt;a href=\&quot;StructureDefinition-tddui-careplan-projet-personnalise.html\&quot;&gt;TDDUI CarePlan Projet Personalise&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;https://identifiant-medicosocial-projetpersonnalise.esante.gouv.fr&lt;/code&gt;/3480787529/123456-PPER-12&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: Plan&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Projet personnalisé de Hugo en IME&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-tddui-pp-ime-patient-example.html\&quot;&gt;Hugo D. (official) (sexe non précisé), Date de Naissance inconnue ( Patient internal identifier: 3480787529/123456)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;supportingInfo&lt;/b&gt;: &lt;a href=\&quot;Consent-tddui-pp-ime-consent-accord-example.html\&quot;&gt;Consent : status = active; scope = Privacy Consent; category = Patient Consent; dateTime = 2024-01-15 09:00:00+0100&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.identifier">identifier</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "https://identifiant-medicosocial-projetpersonnalise.esante.gouv.fr",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "3480787529/123456-PPER-12"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.status">status</a>" : "active",
+        "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.intent">intent</a>" : "plan",
+        "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.title">title</a>" : "Projet personnalisé de Hugo en IME",
+        "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.subject">subject</a>" : {
+          <a href="Patient-tddui-pp-ime-patient-example.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/tddui-pp-ime-patient-example"
+        },
+        "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.supportingInfo">supportingInfo</a>" : [
+          {
+            <a href="Consent-tddui-pp-ime-consent-accord-example.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Reference.extension">extension</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator",
+                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCodeableConcept</a>" : {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "accordStructure"
+                    }
+                  ]
+                }
+              }
+            ],
+            "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Consent/tddui-pp-ime-consent-accord-example"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request">request</a>" : {
+        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.method">method</a>" : "POST",
+        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.url">url</a>" : "TDDUICarePlanProjetPersonnalise"
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "https://test-server.fr/Goal/tddui-pp-ime-goal-objectif-1-example",
+      "<a href="http://hl7.org/fhir/R4/goal.html#Goal">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/goal.html">resourceType</a>" : "Goal",
+        "<a href="http://hl7.org/fhir/R4/resource.html#Goal.id">id</a>" : "tddui-pp-ime-goal-objectif-1-example",
+        "<a href="http://hl7.org/fhir/R4/resource.html#Goal.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-tddui-goal-objectif.html" style="color: Maroon">&#x1F517;</a> "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/domainresource.html#Goal.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Goal_tddui-pp-ime-goal-objectif-1-example\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : But tddui-pp-ime-goal-objectif-1-example&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;tddui-pp-ime-goal-objectif-1-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hctddui-pp-ime-goal-objectif-1-example\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profil: &lt;a href=\&quot;StructureDefinition-tddui-goal-objectif.html\&quot;&gt;TDDUI Goal Objectif&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;Lien vers le projet personnalisé&lt;/b&gt;: &lt;a href=\&quot;CarePlan-tddui-pp-ime-careplan-example.html\&quot;&gt;CarePlan Projet personnalisé de Hugo en IME&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;https://identifiant-medicosocial-objectif.esante.gouv.fr&lt;/code&gt;/3480787529/123456-OBJE-1234&lt;/p&gt;&lt;p&gt;&lt;b&gt;lifecycleStatus&lt;/b&gt;: Active&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: &lt;span title=\&quot;Codes :\&quot;&gt;Tolérer 20 min de cour avec casque anti‑bruit en 4 mois.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-tddui-pp-ime-patient-example.html\&quot;&gt;Hugo D. (official) (sexe non précisé), Date de Naissance inconnue ( Patient internal identifier: 3480787529/123456)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;note&lt;/b&gt;: &lt;/p&gt;&lt;blockquote&gt;&lt;div&gt;&lt;p&gt;Objectif 1&lt;/p&gt;\n&lt;/div&gt;&lt;/blockquote&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/domainresource.html#Goal.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueReference</a>" : {
+              <a href="CarePlan-tddui-pp-ime-careplan-example.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "CarePlan/tddui-pp-ime-careplan-example"
+            }
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/goal.html#Goal.identifier">identifier</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "https://identifiant-medicosocial-objectif.esante.gouv.fr",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "3480787529/123456-OBJE-1234"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/goal.html#Goal.lifecycleStatus">lifecycleStatus</a>" : "active",
+        "<a href="http://hl7.org/fhir/R4/goal.html#Goal.description">description</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Tolérer 20 min de cour avec casque anti‑bruit en 4 mois."
+        },
+        "<a href="http://hl7.org/fhir/R4/goal.html#Goal.subject">subject</a>" : {
+          <a href="Patient-tddui-pp-ime-patient-example.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/tddui-pp-ime-patient-example"
+        },
+        "<a href="http://hl7.org/fhir/R4/goal.html#Goal.note">note</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Annotation.extension">extension</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator",
+                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCodeableConcept</a>" : {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "titreObjectif"
+                    }
+                  ]
+                }
+              }
+            ],
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Annotation#Annotation.text">text</a>" : "Objectif 1"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request">request</a>" : {
+        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.method">method</a>" : "POST",
+        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.url">url</a>" : "TDDUIGoalObjectif"
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "https://test-server.fr/Goal/tddui-pp-ime-goal-objectif-2-example",
+      "<a href="http://hl7.org/fhir/R4/goal.html#Goal">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/goal.html">resourceType</a>" : "Goal",
+        "<a href="http://hl7.org/fhir/R4/resource.html#Goal.id">id</a>" : "tddui-pp-ime-goal-objectif-2-example",
+        "<a href="http://hl7.org/fhir/R4/resource.html#Goal.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-tddui-goal-objectif.html" style="color: Maroon">&#x1F517;</a> "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/domainresource.html#Goal.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Goal_tddui-pp-ime-goal-objectif-2-example\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : But tddui-pp-ime-goal-objectif-2-example&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;tddui-pp-ime-goal-objectif-2-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hctddui-pp-ime-goal-objectif-2-example\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profil: &lt;a href=\&quot;StructureDefinition-tddui-goal-objectif.html\&quot;&gt;TDDUI Goal Objectif&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;Lien vers le projet personnalisé&lt;/b&gt;: &lt;a href=\&quot;CarePlan-tddui-pp-ime-careplan-example.html\&quot;&gt;CarePlan Projet personnalisé de Hugo en IME&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;https://identifiant-medicosocial-objectif.esante.gouv.fr&lt;/code&gt;/3480787529/123456-OBJE-1235&lt;/p&gt;&lt;p&gt;&lt;b&gt;lifecycleStatus&lt;/b&gt;: Active&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: &lt;span title=\&quot;Codes :\&quot;&gt;Atteindre le niveau lecteur débutant (décodage syllabique) en 9 mois.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-tddui-pp-ime-patient-example.html\&quot;&gt;Hugo D. (official) (sexe non précisé), Date de Naissance inconnue ( Patient internal identifier: 3480787529/123456)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;note&lt;/b&gt;: &lt;/p&gt;&lt;blockquote&gt;&lt;div&gt;&lt;p&gt;Objectif 2&lt;/p&gt;\n&lt;/div&gt;&lt;/blockquote&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/domainresource.html#Goal.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueReference</a>" : {
+              <a href="CarePlan-tddui-pp-ime-careplan-example.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "CarePlan/tddui-pp-ime-careplan-example"
+            }
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/goal.html#Goal.identifier">identifier</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "https://identifiant-medicosocial-objectif.esante.gouv.fr",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "3480787529/123456-OBJE-1235"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/goal.html#Goal.lifecycleStatus">lifecycleStatus</a>" : "active",
+        "<a href="http://hl7.org/fhir/R4/goal.html#Goal.description">description</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Atteindre le niveau lecteur débutant (décodage syllabique) en 9 mois."
+        },
+        "<a href="http://hl7.org/fhir/R4/goal.html#Goal.subject">subject</a>" : {
+          <a href="Patient-tddui-pp-ime-patient-example.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/tddui-pp-ime-patient-example"
+        },
+        "<a href="http://hl7.org/fhir/R4/goal.html#Goal.note">note</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Annotation.extension">extension</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator",
+                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCodeableConcept</a>" : {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "titreObjectif"
+                    }
+                  ]
+                }
+              }
+            ],
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Annotation#Annotation.text">text</a>" : "Objectif 2"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request">request</a>" : {
+        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.method">method</a>" : "POST",
+        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.url">url</a>" : "TDDUIGoalObjectif"
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "https://test-server.fr/Task/tddui-pp-ime-task-action-1-aesh-example",
+      "<a href="http://hl7.org/fhir/R4/task.html#Task">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/task.html">resourceType</a>" : "Task",
+        "<a href="http://hl7.org/fhir/R4/resource.html#Task.id">id</a>" : "tddui-pp-ime-task-action-1-aesh-example",
+        "<a href="http://hl7.org/fhir/R4/resource.html#Task.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-tddui-task-action.html" style="color: Maroon">&#x1F517;</a> "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/domainresource.html#Task.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Task_tddui-pp-ime-task-action-1-aesh-example\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : Task tddui-pp-ime-task-action-1-aesh-example&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;tddui-pp-ime-task-action-1-aesh-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hctddui-pp-ime-task-action-1-aesh-example\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profil: &lt;a href=\&quot;StructureDefinition-tddui-task-action.html\&quot;&gt;TDDUI Task Action&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;https://identifiant-medicosocial-action.esante.gouv.fr&lt;/code&gt;/3480787529/123456-ACTI-1234&lt;/p&gt;&lt;p&gt;&lt;b&gt;basedOn&lt;/b&gt;: &lt;a href=\&quot;CarePlan-tddui-pp-ime-careplan-example.html\&quot;&gt;CarePlan Projet personnalisé de Hugo en IME&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: In Progress&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: plan&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Vérification port du casque&lt;/p&gt;&lt;p&gt;&lt;b&gt;owner&lt;/b&gt;: AESH&lt;/p&gt;&lt;h3&gt;Inputs&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem titre}\&quot;&gt;Titre de l'action à mener.&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Action de l'AS pour atteindre l'objectif 1&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/task.html#Task.identifier">identifier</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "https://identifiant-medicosocial-action.esante.gouv.fr",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "3480787529/123456-ACTI-1234"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/task.html#Task.basedOn">basedOn</a>" : [
+          {
+            <a href="CarePlan-tddui-pp-ime-careplan-example.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "CarePlan/tddui-pp-ime-careplan-example"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/task.html#Task.status">status</a>" : "in-progress",
+        "<a href="http://hl7.org/fhir/R4/task.html#Task.intent">intent</a>" : "plan",
+        "<a href="http://hl7.org/fhir/R4/task.html#Task.description">description</a>" : "Vérification port du casque",
+        "<a href="http://hl7.org/fhir/R4/task.html#Task.owner">owner</a>" : {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "AESH"
+        },
+        "<a href="http://hl7.org/fhir/R4/task.html#Task.input">input</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/task.html#Task.input.type">type</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "titre"
+                }
+              ]
+            },
+            "<a href="http://hl7.org/fhir/R4/task.html#Task.input.value_x_">valueString</a>" : "Action de l'AS pour atteindre l'objectif 1"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request">request</a>" : {
+        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.method">method</a>" : "POST",
+        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.url">url</a>" : "TDDUITaskAction"
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "https://test-server.fr/Task/tddui-pp-ime-task-action-1-educ-example",
+      "<a href="http://hl7.org/fhir/R4/task.html#Task">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/task.html">resourceType</a>" : "Task",
+        "<a href="http://hl7.org/fhir/R4/resource.html#Task.id">id</a>" : "tddui-pp-ime-task-action-1-educ-example",
+        "<a href="http://hl7.org/fhir/R4/resource.html#Task.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-tddui-task-action.html" style="color: Maroon">&#x1F517;</a> "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/domainresource.html#Task.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Task_tddui-pp-ime-task-action-1-educ-example\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : Task tddui-pp-ime-task-action-1-educ-example&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;tddui-pp-ime-task-action-1-educ-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hctddui-pp-ime-task-action-1-educ-example\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profil: &lt;a href=\&quot;StructureDefinition-tddui-task-action.html\&quot;&gt;TDDUI Task Action&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;https://identifiant-medicosocial-action.esante.gouv.fr&lt;/code&gt;/3480787529/123456-ACTI-1235&lt;/p&gt;&lt;p&gt;&lt;b&gt;basedOn&lt;/b&gt;: &lt;a href=\&quot;CarePlan-tddui-pp-ime-careplan-example.html\&quot;&gt;CarePlan Projet personnalisé de Hugo en IME&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: In Progress&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: plan&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Lecture guidée sur tablette 15 min/jour&lt;/p&gt;&lt;p&gt;&lt;b&gt;owner&lt;/b&gt;: AESH&lt;/p&gt;&lt;h3&gt;Inputs&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem titre}\&quot;&gt;Titre de l'action à mener.&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Action de l'éducateur spécialisé pour atteindre l'objectif 2&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/task.html#Task.identifier">identifier</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "https://identifiant-medicosocial-action.esante.gouv.fr",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "3480787529/123456-ACTI-1235"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/task.html#Task.basedOn">basedOn</a>" : [
+          {
+            <a href="CarePlan-tddui-pp-ime-careplan-example.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "CarePlan/tddui-pp-ime-careplan-example"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/task.html#Task.status">status</a>" : "in-progress",
+        "<a href="http://hl7.org/fhir/R4/task.html#Task.intent">intent</a>" : "plan",
+        "<a href="http://hl7.org/fhir/R4/task.html#Task.description">description</a>" : "Lecture guidée sur tablette 15 min/jour",
+        "<a href="http://hl7.org/fhir/R4/task.html#Task.owner">owner</a>" : {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "AESH"
+        },
+        "<a href="http://hl7.org/fhir/R4/task.html#Task.input">input</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/task.html#Task.input.type">type</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "titre"
+                }
+              ]
+            },
+            "<a href="http://hl7.org/fhir/R4/task.html#Task.input.value_x_">valueString</a>" : "Action de l'éducateur spécialisé pour atteindre l'objectif 2"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request">request</a>" : {
+        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.method">method</a>" : "POST",
+        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.url">url</a>" : "TDDUITaskAction"
+      }
+    }
+  ]
 }</code></pre>
 
 
@@ -311,7 +677,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Dec 17, 2025 09:35+0000">2025-12-17</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Dec 17, 2025 09:57+0000">2025-12-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |

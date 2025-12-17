@@ -137,7 +137,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2025-12-17T09:35:57+00:00",
+  "date" : "2025-12-17T09:57:45+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -2470,20 +2470,6 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "TDDUIBundleExample",
         "description" : "Exemple de bundle conforme au profil TDDUIBundle",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Bundle"
-          }
-        ],
-        "reference" : {
-          "reference" : "Bundle/ExampleTDDUIBundleIME"
-        },
-        "name" : "TDDUIBundleExampleIME",
-        "description" : "Exemple de bundle Projet Personnalisé IME conforme au profil TDDUIBundle",
         "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle"
       },
       {

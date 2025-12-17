@@ -136,7 +136,6 @@ These are example instances that show what data produced and consumed by systems
 | | |
 | :--- | :--- |
 | [TDDUIBundleExample](Bundle-ExampleTDDUIBundle.md) | Exemple de bundle conforme au profil TDDUIBundle |
-| [TDDUIBundleExampleIME](Bundle-ExampleTDDUIBundleIME.md) | Exemple de bundle Projet Personnalisé IME conforme au profil TDDUIBundle |
 | [fr-core-related-person-example](RelatedPerson-fr-core-related-person-example.md) | Exemple de la famille de l'usager. |
 | [tddui-encounter-evenement-example](Encounter-tddui-encounter-evenement-example.md) | Exemple d'un évènement |
 | [tddui-encounter-sejour-example](Encounter-tddui-encounter-sejour-example.md) | Exemple d'un séjour en ESSMS |

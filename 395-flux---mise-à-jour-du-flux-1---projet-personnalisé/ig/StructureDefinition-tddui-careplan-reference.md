@@ -20,7 +20,7 @@ Liens vers le projet personnalisé, utilisables dans le profil TDDUIGoalObjectif
 **Utilisations:**
 
 * Utiliser ce Extension: [TDDUI Goal Attente](StructureDefinition-tddui-goal-attente.md) and [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md)
-* Exemples pour ce Extension: [Bundle/ExampleTDDUIBundleIME](Bundle-ExampleTDDUIBundleIME.md), [Bundle/tddui-pp-pa-bundle-example](Bundle-tddui-pp-pa-bundle-example.md), [Goal/tddui-pp-ime-goal-objectif-1-example](Goal-tddui-pp-ime-goal-objectif-1-example.md), [Goal/tddui-pp-ime-goal-objectif-2-example](Goal-tddui-pp-ime-goal-objectif-2-example.md)...Show 5 more,[Goal/tddui-pp-pa-goal-attente-famille-example](Goal-tddui-pp-pa-goal-attente-famille-example.md),[Goal/tddui-pp-pa-goal-attente-usager-example](Goal-tddui-pp-pa-goal-attente-usager-example.md),[Goal/tddui-pp-pa-goal-objectif-1-example](Goal-tddui-pp-pa-goal-objectif-1-example.md),[Goal/tddui-pp-pa-goal-objectif-2-example](Goal-tddui-pp-pa-goal-objectif-2-example.md)and[Goal/tddui-pp-pa-goal-objectif-3-example](Goal-tddui-pp-pa-goal-objectif-3-example.md)
+* Exemples pour ce Extension: [Bundle/tddui-pp-ime-bundle-example](Bundle-tddui-pp-ime-bundle-example.md), [Bundle/tddui-pp-pa-bundle-example](Bundle-tddui-pp-pa-bundle-example.md), [Goal/tddui-pp-ime-goal-objectif-1-example](Goal-tddui-pp-ime-goal-objectif-1-example.md), [Goal/tddui-pp-ime-goal-objectif-2-example](Goal-tddui-pp-ime-goal-objectif-2-example.md)...Show 5 more,[Goal/tddui-pp-pa-goal-attente-famille-example](Goal-tddui-pp-pa-goal-attente-famille-example.md),[Goal/tddui-pp-pa-goal-attente-usager-example](Goal-tddui-pp-pa-goal-attente-usager-example.md),[Goal/tddui-pp-pa-goal-objectif-1-example](Goal-tddui-pp-pa-goal-objectif-1-example.md),[Goal/tddui-pp-pa-goal-objectif-2-example](Goal-tddui-pp-pa-goal-objectif-2-example.md)and[Goal/tddui-pp-pa-goal-objectif-3-example](Goal-tddui-pp-pa-goal-objectif-3-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-careplan-reference)
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-refer
   "name" : "TDDUICarePlanProjetPersoRef",
   "title" : "Lien vers le projet personnalisé",
   "status" : "active",
-  "date" : "2025-12-17T09:35:57+00:00",
+  "date" : "2025-12-17T09:57:45+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
