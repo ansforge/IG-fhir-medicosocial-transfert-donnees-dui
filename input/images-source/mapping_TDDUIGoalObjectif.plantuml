@@ -1,0 +1,40 @@
+@startuml
+
+map "target" as target #DarkGray {
+    resultatAttenduObjectif => <&layers> detail[x]:detailString
+    dateFinObjectif => <&layers> due[x]:dueDate
+}
+
+object "**TDDUIPractitionerRole**" as TDDUIPractitionerRole_expressedBy #fdb462 {
+    referentObjectif
+}
+
+object "**TDDUIPractitioner**" as TDDUIPractitioner_expressedBy #d9d9d9 {
+    referentObjectif
+}
+
+object "**TDDUIServiceRequestBesoin**" as TDDUIServiceRequestBesoin_addresses #fccde5 {
+    Besoin
+}
+
+map "**Objectif : TDDUIGoalObjectif**" as Objectif #fb8072 {
+    evaluationObjectif => <&plus> referenceEvaluation
+    ProjetPersonnalise => <&plus> referenceProjetPerso
+    idObjectif => identifier
+    statutObjectif.statut => lifecycleStatus
+    statutObjectif.dateStatut => meta.lastUpdated
+    statutObjectif.auteur => <&plus> auteurStatut
+    domaineObjectif => category
+    dateDebutObjectif => <&layers> start[x]:startDate
+    descriptionObjectif => description.text
+    target *-> target
+    titreObjectif => note:titreObjectif.text
+    avisUsagerObjectif => note:avisUsagerObjectif.text
+    strategieMiseEnOeuvreObjectif=> note:strategieMiseEnOeuvreObjectif.text
+}
+
+Objectif -u-> TDDUIPractitionerRole_expressedBy : expressedBy
+Objectif -u-> TDDUIPractitioner_expressedBy : expressedBy
+Objectif -d-> TDDUIServiceRequestBesoin_addresses : addresses
+
+@enduml

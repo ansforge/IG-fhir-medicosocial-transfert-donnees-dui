@@ -5,8 +5,6 @@ Alias: $JDV-J04-XdsPracticeSettingCode-CISIS = https://mos.esante.gouv.fr/NOS/JD
 Alias: $JDV-J10-XdsFormatCode-CISIS = https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS
 Alias: $TRE-A04-Loinc = https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc
 Alias: $TRE-A03-ClasseDocument = https://mos.esante.gouv.fr/NOS/TRE_A03-ClasseDocument/FHIR/TRE-A03-ClasseDocument
-Alias: $plannedStartDate-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedStartDate
-Alias: $plannedEndDate-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedEndDate
 Alias: $UCUM = http://unitsofmeasure.org
 Alias: $rfc2445 = https://www.ietf.org/rfc/rfc2445
 Alias: $SCT = http://snomed.info/sct
@@ -70,6 +68,9 @@ Alias: $JDV-J282-TransportsLiesAuProjetIndividuel-SERAFIN = https://mos.esante.g
 Alias: $JDV-ModeDeTransport-CISIS = https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis
 Alias: $JDV-MotifNonRealisationEvenement-CISIS = https://smt.esante.gouv.fr/fhir/ValueSet/jdv-motif-non-realisation-evenement-cisis
 Alias: $JDV-J117-ModeExercice-ENREG = https://mos.esante.gouv.fr/NOS/JDV_J117-ModeExercice-ENREG/FHIR/JDV-J117-ModeExercice-ENREG
+Alias: $JDV-J285-Besoins-Serafin = https://mos.esante.gouv.fr/NOS/JDV_J285-Besoins_SERAFIN/FHIR/JDV-J285-Besoins-SERAFIN
+Alias: $JDV-J367-TypeProjetPersonnaliseMs = https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j367-type-projet-personnalise-ms
+Alias: $JDV-J366-StatutBilanProjetPersonnaliseMs = https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j366-statut-bilan-projet-personnalise-ms
 
 // HL7
 Alias: $v2-0131 = http://terminology.hl7.org/CodeSystem/v2-0131
@@ -88,7 +89,10 @@ Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workfl
 Alias: $ServiceType = http://terminology.hl7.org/CodeSystem/service-type
 Alias: $imposeProfile = http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile
 Alias: $ParticipationType = http://terminology.hl7.org/CodeSystem/v3-ParticipationType
-
+// Extensions R5
+Alias: $plannedStartDate-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedStartDate
+Alias: $plannedEndDate-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedEndDate
+Alias: $consentPeriod-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.period
 // ###############
 // # FrCore link #
 // ###############

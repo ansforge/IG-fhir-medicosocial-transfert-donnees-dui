@@ -1,0 +1,57 @@
+Profile: TDDUITaskMoyenRessource
+Parent: Task
+Id: tddui-task-moyen-ressource
+Title: "TDDUI Task MoyenRessource"
+Description: "Profil de la ressource Task permettant de représenter les moyens ou ressources utilisées dans le cadre du projet personnalisé."
+
+* identifier 1..1
+* identifier ^short = "Identifiant du moyen ou de la ressource"
+* identifier.value 1..1
+* identifier.value ^example[0].label = "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-MORE-numMoyenRessource"
+* identifier.value ^example[0].valueString = "3480787529/123456789-MORE-1234"
+* identifier.system 1..1
+* identifier.system = "https://identifiant-medicosocial-moyenressource.esante.gouv.fr"
+
+* input ^slicing.discriminator.type = #pattern
+* input ^slicing.discriminator.path = "type"
+* input ^slicing.rules = #open
+
+* input contains
+    titre 1..1 and
+    evaluation 0..1 and
+    pieceJointe 0..*
+* input[titre].type = InputTDDUITaskMoyenRessourceCodeSystem#titre
+* input[titre].value[x] only string
+* input[titre] ^short = "Titre du moyen ou de la ressource"
+
+* input[evaluation].type = InputTDDUITaskMoyenRessourceCodeSystem#evaluation
+* input[evaluation].value[x] only Reference(TDDUIQuestionnaireResponse)
+* input[evaluation] ^short = "Evaluation"
+
+* input[pieceJointe].type = InputTDDUITaskMoyenRessourceCodeSystem#pieceJointe
+* input[pieceJointe].value[x] only Reference(TDDUIDocumentReference)
+* input[pieceJointe] ^short = "Pièce jointe associée"
+
+* basedOn 1..1
+* basedOn only Reference(TDDUICarePlanProjetPersonnalise)
+
+* partOf 0..1
+* partOf only Reference(TDDUITaskAction)
+
+Mapping:  ConceptMetier_TDDUITaskMoyenRessource
+Source:   TDDUITaskMoyenRessource
+Target: "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"
+Id:       specmetier-to-TDDUITaskMoyenRessource
+Title:    "Modèle de contenu DUI"
+* -> "MoyenRessource"
+
+* identifier -> "idMoyenRessource"
+* input[titre] -> "titreMoyenRessource"
+* description -> "descriptionMoyenRessource"
+* code.text -> "typeMoyenRessource"
+* executionPeriod.start -> "dateDebutMoyenRessource"
+* executionPeriod.end -> "dateFinMoyenRessource"
+* input[evaluation] -> "evaluationMoyenRessource"
+* input[pieceJointe] -> "pieceJointeMoyenRessource"
+* basedOn -> "ProjetPersonnalise"
+* partOf -> "Action"

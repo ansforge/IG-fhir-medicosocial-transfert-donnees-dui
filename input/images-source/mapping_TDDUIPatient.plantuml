@@ -23,11 +23,11 @@ map "**Usager : TDDUIPatient**" as Usager #back:TECHNOLOGY;header:LimeGreen {
     identifiantLocalUsagerESSMS => <&layers> identifier:PI
     numeroIndividuInitial => <&layers> identifier:InitialNumberMDPH
     sexe => gender
-    <&layers> name:usualName *-> nameusualName
+    <&layers> name:usualName *--> nameusualName
     <&layers> name:officialName *-> nameofficialName
     dateNaissance => birthDate
 }
 
-Usager::dateNaissance -u-> dateNaissance
+Usager::dateNaissance --> dateNaissance
 
 @enduml
