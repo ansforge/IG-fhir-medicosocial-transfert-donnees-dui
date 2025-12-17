@@ -1,0 +1,24 @@
+@startuml
+
+object "**TDDUIPractitioner**" as TDDUIPractitioner #b3de69 {
+    Auteur
+}
+
+object "**TDDUIPatient/TDDUIPatientINS**" as TDDUIPatient_subject #fdb462 {
+    Auteur
+}
+
+object "**FRCoreRelatedPerson**" as FRCoreRelatedPerson #80b1d3 {
+    Auteur
+}
+
+map "**Accord : TDDUIConsentAccord**" as Accord #8dd3c7 {
+    dureeValidite => <&plus> TDDUI-consentPeriod-r5
+    dateSignature => dateTime
+}
+
+Accord -u-> TDDUIPractitioner : performer
+Accord -u-> TDDUIPatient_subject : performer
+Accord -u-> FRCoreRelatedPerson : performer
+
+@enduml
