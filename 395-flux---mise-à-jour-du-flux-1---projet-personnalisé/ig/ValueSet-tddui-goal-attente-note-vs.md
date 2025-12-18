@@ -54,7 +54,7 @@ ValueSet définissant les types de notes pour l'élément Goal.note.
   "title" : "TDDUI Goal Attente Note ValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-18T14:56:52+00:00",
+  "date" : "2025-12-18T16:46:13+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

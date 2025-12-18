@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
   "name" : "TDDUITaskTransportProfessionnel",
   "title" : "TDDUI Task Transport Professionnel",
   "status" : "active",
-  "date" : "2025-12-18T14:56:52+00:00",
+  "date" : "2025-12-18T16:46:13+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

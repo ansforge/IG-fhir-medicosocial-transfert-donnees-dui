@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
   "name" : "TDDUIBundle",
   "title" : "TDDUI Bundle",
   "status" : "active",
-  "date" : "2025-12-18T14:56:52+00:00",
+  "date" : "2025-12-18T16:46:13+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -743,7 +743,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
         "id" : "Bundle.entry:RelatedPerson",
         "path" : "Bundle.entry",
         "sliceName" : "RelatedPerson",
-        "short" : "RelatedPerson conforming to the FrCoreRelatedPerson profile, used to convey information about a person related to the patient.",
+        "short" : "RelatedPerson conforming to the FrCoreRelatedPerson profile, used to convey information about the user's contacts.",
         "min" : 0,
         "max" : "*"
       },
