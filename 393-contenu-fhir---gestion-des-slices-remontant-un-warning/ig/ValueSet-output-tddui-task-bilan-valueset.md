@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/output-tddui-task-bilan-valueset | *Version*:2.1.0 |
-| Active as of 2025-12-17 | *Computable Name*:OutputTDDUITaskBilanValueSet |
+| Active as of 2025-12-18 | *Computable Name*:OutputTDDUITaskBilanValueSet |
 
  
 ValueSet pour la définition des éléments spécifiques des output dans la ressource Task utilisée pour le bilan du projet personnalisé. 
@@ -54,7 +54,7 @@ ValueSet pour la définition des éléments spécifiques des output dans la ress
   "title" : "OutputTDDUITaskBilanValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-17T14:41:39+00:00",
+  "date" : "2025-12-18T10:03:00+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
