@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-goal-attente-note-vs | *Version*:2.1.0 |
-| Active as of 2025-12-17 | *Computable Name*:TDDUIGoalAttenteNoteVS |
+| Active as of 2025-12-18 | *Computable Name*:TDDUIGoalAttenteNoteVS |
 
  
 ValueSet définissant les types de notes pour l'élément Goal.note. 
@@ -54,7 +54,7 @@ ValueSet définissant les types de notes pour l'élément Goal.note.
   "title" : "TDDUI Goal Attente Note ValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-17T10:39:00+00:00",
+  "date" : "2025-12-18T14:20:56+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

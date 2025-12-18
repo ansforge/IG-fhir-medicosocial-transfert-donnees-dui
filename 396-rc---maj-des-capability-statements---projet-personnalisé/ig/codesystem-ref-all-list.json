@@ -276,8 +276,8 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-care-plan-intent.html" : "Care Plan Intent",
-      "http://hl7.org/fhir/R4/valueset-request-intent.html" : "RequestIntent",
-      "http://hl7.org/fhir/R4/valueset-task-intent.html" : "TaskIntent"
+      "http://hl7.org/fhir/R4/valueset-task-intent.html" : "TaskIntent",
+      "http://hl7.org/fhir/R4/valueset-request-intent.html" : "RequestIntent"
     },
     {
       "url" : "http://hl7.org/fhir/request-priority",
@@ -312,9 +312,9 @@
       "description" : "One of the resource types defined as part of this version of FHIR.",
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-care-plan-activity-kind.html" : "Care Plan Activity Kind",
       "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType",
-      "http://hl7.org/fhir/R4/valueset-consent-content-class.html" : "Consent Content Class"
+      "http://hl7.org/fhir/R4/valueset-consent-content-class.html" : "Consent Content Class",
+      "http://hl7.org/fhir/R4/valueset-care-plan-activity-kind.html" : "Care Plan Activity Kind"
     },
     {
       "url" : "http://hl7.org/fhir/search-entry-mode",
@@ -362,9 +362,9 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
+      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J07-XdsTypeCode-CISIS.html" : "JDV_J07_XdsTypeCode_CISIS",
       "http://hl7.org/fhir/R4/valueset-consent-category.html" : "Consent Category Codes",
       "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes",
-      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J07-XdsTypeCode-CISIS.html" : "JDV_J07_XdsTypeCode_CISIS",
       "http://hl7.org/fhir/R4/valueset-consent-content-code.html" : "Consent Content Codes"
     },
     {
@@ -377,20 +377,20 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles",
-      "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
-      "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
-      "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
-      "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
-      "http://hl7.org/fhir/R4/valueset-goal-start-event.html" : "Goal start event",
-      "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
-      "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
-      "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
-      "http://hl7.org/fhir/R4/valueset-questionnaire-answers.html" : "Questionnaire Answer Codes",
-      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
       "http://hl7.org/fhir/R4/valueset-care-plan-activity-outcome.html" : "Care Plan Activity Outcome",
+      "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles",
+      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-ressource-utilisee-cisis.html" : "JDV Ressource Utilisee CISIS",
+      "http://hl7.org/fhir/R4/valueset-questionnaire-answers.html" : "Questionnaire Answer Codes",
+      "http://hl7.org/fhir/R4/valueset-goal-start-event.html" : "Goal start event",
+      "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
+      "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
+      "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
+      "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
+      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+      "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
+      "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
       "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
-      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-ressource-utilisee-cisis.html" : "JDV Ressource Utilisee CISIS"
+      "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/admit-source",
@@ -522,8 +522,8 @@
       "oids" : ["2.16.840.1.113883.4.642.1.1093"],
       "uses" : {
       },
-      "https://hl7.fr/ig/fhir/core/2.1.0/ValueSet-fr-core-vs-encounter-discharge-disposition.html" : "FR Core ValueSet Encounter discharge disposition",
-      "http://hl7.org/fhir/R4/valueset-encounter-discharge-disposition.html" : "Discharge disposition"
+      "http://hl7.org/fhir/R4/valueset-encounter-discharge-disposition.html" : "Discharge disposition",
+      "https://hl7.fr/ig/fhir/core/2.1.0/ValueSet-fr-core-vs-encounter-discharge-disposition.html" : "FR Core ValueSet Encounter discharge disposition"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/encounter-special-arrangements",
@@ -678,8 +678,8 @@
       "oids" : ["2.16.840.1.113883.18.58"],
       "uses" : {
       },
-      "https://hl7.fr/ig/fhir/core/2.1.0/ValueSet-fr-core-vs-patient-contact-role.html" : "FR Core ValueSet Patient contact role",
-      "http://hl7.org/fhir/R4/valueset-patient-contactrelationship.html" : "Patient Contact Relationship "
+      "http://hl7.org/fhir/R4/valueset-patient-contactrelationship.html" : "Patient Contact Relationship ",
+      "https://hl7.fr/ig/fhir/core/2.1.0/ValueSet-fr-core-vs-patient-contact-role.html" : "FR Core ValueSet Patient contact role"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
@@ -703,8 +703,8 @@
       "oids" : ["2.16.840.1.113883.5.4"],
       "uses" : {
       },
-      "http://terminology.hl7.org/7.0.1/ValueSet-v3-ActEncounterCode.html" : "ActEncounterCode",
-      "http://terminology.hl7.org/7.0.1/ValueSet-v3-ActCode.html" : "v3 Code System ActCode"
+      "http://terminology.hl7.org/7.0.1/ValueSet-v3-ActCode.html" : "v3 Code System ActCode",
+      "http://terminology.hl7.org/7.0.1/ValueSet-v3-ActEncounterCode.html" : "ActEncounterCode"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ActPriority",
@@ -789,8 +789,8 @@
       "oids" : ["2.16.840.1.113883.5.90"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-encounter-participant-type.html" : "Participant type",
-      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
+      "http://hl7.org/fhir/R4/valueset-encounter-participant-type.html" : "Participant type"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
@@ -814,8 +814,8 @@
       "oids" : ["2.16.840.1.113883.5.111"],
       "uses" : {
       },
-      "http://terminology.hl7.org/7.0.1/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType",
-      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
+      "http://terminology.hl7.org/7.0.1/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType"
     },
     {
       "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-circonstances-sortie",
@@ -990,8 +990,8 @@
       "oids" : ["URN"],
       "uses" : {
       },
-      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J06-XdsClassCode-CISIS.html" : "JDV_J06_XdsClassCode_CISIS",
-      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J10-XdsFormatCode-CISIS.html" : "JDV_J10_XdsFormatCode_CISIS"
+      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J10-XdsFormatCode-CISIS.html" : "JDV_J10_XdsFormatCode_CISIS",
+      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J06-XdsClassCode-CISIS.html" : "JDV_J06_XdsClassCode_CISIS"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_A11-IheFormatCode/FHIR/TRE-A11-IheFormatCode",
@@ -1063,8 +1063,8 @@
       "oids" : ["1.2.250.1.71.4.2.4"],
       "uses" : {
       },
-      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J02-XdsHealthcareFacilityTypeCode-CISIS.html" : "JDV_J02_XdsHealthcareFacilityTypeCode_CISIS",
-      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J101-SecteurActivite-RASS.html" : "JDV_J101_SecteurActivite_RASS"
+      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J101-SecteurActivite-RASS.html" : "JDV_J101_SecteurActivite_RASS",
+      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J02-XdsHealthcareFacilityTypeCode-CISIS.html" : "JDV_J02_XdsHealthcareFacilityTypeCode_CISIS"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_R04-TypeSavoirFaire/FHIR/TRE-R04-TypeSavoirFaire",
@@ -1558,9 +1558,9 @@
       "oids" : ["1.2.250.1.213.1.6.1.107"],
       "uses" : {
       },
-      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J01-XdsAuthorSpecialty-CISIS.html" : "JDV_J01_XdsAuthorSpecialty_CISIS",
+      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J47-FunctionCode-CISIS.html" : "JDV_J47_FunctionCode_CISIS",
       "https://hl7.fr/ig/fhir/core/2.1.0/ValueSet-fr-core-vs-practitioner-role-exercice.html" : "FR Core ValueSet PractitionerRole Exercice",
-      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J47-FunctionCode-CISIS.html" : "JDV_J47_FunctionCode_CISIS"
+      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J01-XdsAuthorSpecialty-CISIS.html" : "JDV_J01_XdsAuthorSpecialty_CISIS"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_R94-ProfessionSocial/FHIR/TRE-R94-ProfessionSocial",
@@ -1622,12 +1622,12 @@
       "oids" : ["1.2.250.1.213.1.1.4.322"],
       "uses" : {
       },
-      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-detail-ressource-immobiliere-utilisee-cisis.html" : "JDV Detail Ressource Immobiliere Utilisee CISIS",
-      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-mode-de-transport-cisis.html" : "JDV Mode De Transport CISIS",
-      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-type-evenement-ssiad-cisis.html" : "JDV Type Evenement Ssiad CISIS",
       "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-detail-materiel-specialise-cisis.html" : "JDV Detail Materiel Specialise CISIS",
-      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-motif-non-realisation-evenement-cisis.html" : "JDV Motif Non Realisation Evenement CISIS",
+      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-type-evenement-ssiad-cisis.html" : "JDV Type Evenement Ssiad CISIS",
       "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-ressource-utilisee-cisis.html" : "JDV Ressource Utilisee CISIS",
+      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-detail-ressource-immobiliere-utilisee-cisis.html" : "JDV Detail Ressource Immobiliere Utilisee CISIS",
+      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-motif-non-realisation-evenement-cisis.html" : "JDV Motif Non Realisation Evenement CISIS",
+      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-mode-de-transport-cisis.html" : "JDV Mode De Transport CISIS",
       "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-type-motorisation-cisis.html" : "JDV Type Motorisation CISIS"
     },
     {
