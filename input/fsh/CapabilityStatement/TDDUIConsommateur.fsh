@@ -44,6 +44,10 @@ Usage: #definition
 * rest.resource[5].type = #Task
 * rest.resource[=].supportedProfile[0] = Canonical(tddui-task-transport-professionnel)
 * rest.resource[=].supportedProfile[+] = Canonical(tddui-task-transport-usager)
+* rest.resource[=].supportedProfile[+] = Canonical(tddui-task-action)
+* rest.resource[=].supportedProfile[+] = Canonical(tddui-task-bilan)
+* rest.resource[=].supportedProfile[+] = Canonical(tddui-task-moyen-ressource)
+* rest.resource[=].supportedProfile[+] = Canonical(tddui-task-prestation)
 * rest.resource[=].interaction[0].code = #read
 
 * rest.resource[6].type = #QuestionnaireResponse
@@ -52,6 +56,27 @@ Usage: #definition
 
 * rest.resource[7].type = #DocumentReference
 * rest.resource[=].supportedProfile = Canonical(tddui-document-reference)
+* rest.resource[=].interaction[0].code = #read
+
+* rest.resource[8].type = #CarePlan
+* rest.resource[=].supportedProfile = Canonical(tddui-careplan-projet-personnalise)
+* rest.resource[=].interaction[0].code = #read
+
+* rest.resource[9].type = #Consent
+* rest.resource[=].supportedProfile = Canonical(tddui-consent-accord)
+* rest.resource[=].interaction[0].code = #read
+
+* rest.resource[10].type = #Goal
+* rest.resource[=].supportedProfile[0] = Canonical(tddui-goal-attente)
+* rest.resource[=].supportedProfile[+] = Canonical(tddui-goal-objectif)
+* rest.resource[=].interaction[0].code = #read
+
+* rest.resource[11].type = #ServiceRequest
+* rest.resource[=].supportedProfile = Canonical(tddui-service-request-besoin)
+* rest.resource[=].interaction[0].code = #read
+
+* rest.resource[12].type = #RelatedPerson
+* rest.resource[=].supportedProfile = Canonical(fr-core-related-person)
 * rest.resource[=].interaction[0].code = #read
 
 * rest.interaction[0].code = #transaction
