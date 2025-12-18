@@ -155,7 +155,7 @@ Description: "Profil générique créé pour transmettre des données d'un logic
 * entry[DUITaskPrestation].request.method = #POST
 
 * entry[RelatedPerson].resource only FRCoreRelatedPersonProfile
-* entry[RelatedPerson] ^short = "RelatedPerson conforming to the FrCoreRelatedPerson profile, used to convey information about a person related to the patient."
+* entry[RelatedPerson] ^short = "RelatedPerson conforming to the FrCoreRelatedPerson profile, used to convey information about the user's contacts."
 * entry[RelatedPerson].resource 1..1
 * entry[RelatedPerson].request 1..1
 * entry[RelatedPerson].request.method = #POST
