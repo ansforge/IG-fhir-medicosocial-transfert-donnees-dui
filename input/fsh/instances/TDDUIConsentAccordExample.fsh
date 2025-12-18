@@ -7,7 +7,7 @@ Description: "Exemple d'un accord de la structure"
 
 * scope = http://terminology.hl7.org/CodeSystem/consentscope#patient-privacy "Privacy Consent"
 
-* category = http://loinc.org#59284-0 "Patient Consent"
+* category = http://loinc.org#59284-0
 
 * policy.authority = "https://www.cnsa.fr/"
 
