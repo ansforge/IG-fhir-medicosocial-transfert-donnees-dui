@@ -28,6 +28,8 @@ Description: "Profil de la ressource Task permettant de représenter le transpor
 * encounter 1..1
 * encounter only Reference(TDDUIEncounterEvenement)
 
+* input.type from InputTDDUITaskTransportValueSet (required)
+
 * input ^slicing.discriminator.type = #pattern
 * input ^slicing.discriminator.path = "type"
 * input ^slicing.rules = #open

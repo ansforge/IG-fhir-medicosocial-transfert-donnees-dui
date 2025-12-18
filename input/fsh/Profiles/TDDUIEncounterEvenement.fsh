@@ -21,6 +21,8 @@ Description: "Profil de la ressource Encounter permettant de regrouper les évè
 * status.extension contains 
     TDDUIEventCancelReason named TDDUIEventCancelReason 0..1
 
+* type from TDDUIEncounterTypeVs (required)
+
 // Types d'évènement
 * type ^slicing.discriminator.type = #pattern
 * type ^slicing.discriminator.path = "coding.system"
@@ -59,6 +61,8 @@ Description: "Profil de la ressource Encounter permettant de regrouper les évè
 
 // ESSMS
 * serviceProvider only Reference(TDDUIOrganization)
+
+* participant.type from TDDUIEncounterParticipantVs (required)
 
 * participant ^slicing.discriminator.type = #pattern
 * participant ^slicing.discriminator.path = "type"

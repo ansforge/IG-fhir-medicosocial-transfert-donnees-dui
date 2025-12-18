@@ -17,6 +17,8 @@ Description: "Profil de la ressource Task permettant de représenter les prestat
 * status.extension contains 
     TDDUIStatusAuthor named auteurStatut 0..1
 
+* input.type from InputTDDUITaskPrestationValueSet (required)
+
 * input ^slicing.discriminator.type = #pattern
 * input ^slicing.discriminator.path = "type"
 * input ^slicing.rules = #open
