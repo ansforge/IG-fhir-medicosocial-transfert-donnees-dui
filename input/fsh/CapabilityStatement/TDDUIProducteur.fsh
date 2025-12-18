@@ -74,5 +74,9 @@ Usage: #definition
 * rest.resource[=].supportedProfile = Canonical(tddui-service-request-besoin)
 * rest.resource[=].interaction[0].code = #create
 
+* rest.resource[12].type = #RelatedPerson
+* rest.resource[=].supportedProfile = Canonical(fr-core-related-person)
+* rest.resource[=].interaction[0].code = #create
+
 * rest.interaction[0].code = #transaction
 * rest.interaction[=].documentation = "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle"
