@@ -54,7 +54,7 @@ ValueSet pour la définition des éléments spécifiques des input dans la resso
   "title" : "InputTaskTransportValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-18T17:22:25+00:00",
+  "date" : "2025-12-18T17:25:31+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

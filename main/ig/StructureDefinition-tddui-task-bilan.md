@@ -16,8 +16,8 @@ Profil de la ressource Task permettant de représenter le bilan du projet person
 
 **Utilisations:**
 
+* Utiliser ce Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
 * CapabilityStatements utilisant ce Profil: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
-* Ce Profil nest utilisé par aucun profil dans ce guide dimplémentation
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-task-bilan)
 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-bilan.csv
   "name" : "TDDUITaskBilan",
   "title" : "TDDUI Task Bilan",
   "status" : "active",
-  "date" : "2025-12-18T17:22:25+00:00",
+  "date" : "2025-12-18T17:25:31+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

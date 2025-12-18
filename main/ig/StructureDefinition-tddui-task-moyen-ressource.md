@@ -16,6 +16,7 @@ Profil de la ressource Task permettant de représenter les moyens ou ressources 
 
 **Utilisations:**
 
+* Utiliser ce Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
 * Exemples pour ce Profil: [Task/tddui-pp-pa-task-moyen-ressource-ergo-1-example](Task-tddui-pp-pa-task-moyen-ressource-ergo-1-example.md), [Task/tddui-pp-pa-task-moyen-ressource-ide-1-example](Task-tddui-pp-pa-task-moyen-ressource-ide-1-example.md), [Task/tddui-pp-pa-task-moyen-ressource-ide-2-example](Task-tddui-pp-pa-task-moyen-ressource-ide-2-example.md) and [Task/tddui-pp-pa-task-moyen-ressource-kine-1-example](Task-tddui-pp-pa-task-moyen-ressource-kine-1-example.md)
 * CapabilityStatements utilisant ce Profil: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
 
@@ -42,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-moyen-res
   "name" : "TDDUITaskMoyenRessource",
   "title" : "TDDUI Task MoyenRessource",
   "status" : "active",
-  "date" : "2025-12-18T17:22:25+00:00",
+  "date" : "2025-12-18T17:25:31+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

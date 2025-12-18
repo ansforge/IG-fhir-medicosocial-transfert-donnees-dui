@@ -242,6 +242,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Où <code class="language-plaintext highlighter-rouge">[base]</code> est le point de contact FHIR.</p>
 
 <p>Les différentes ressources sont véhiculées via l'élément : Bundle.entry. Les ressources utilisables sont conformes aux profils :</p>
+
 <ul>
   <li><a href="StructureDefinition-tddui-patient.html">TDDUIPatient</a> représentant l'usager,</li>
   <li><a href="StructureDefinition-tddui-patient-ins.html">TDDUIPatientINS</a> représentant l'usager transmis avec l'INS,</li>
@@ -265,6 +266,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </ul>
   </li>
   <li><a href="StructureDefinition-tddui-document-reference.html">TDDUIDocumentReference</a> représentant les pièces jointes.</li>
+  <li><a href="StructureDefinition-tddui-careplan-projet-personnalise.html">TDDUICarePlanProjetPersonnalise</a> représentant le projet personnalisé.</li>
+  <li><a href="StructureDefinition-tddui-consent-accord.html">TDDUIConsentAccord</a> représentant l'accord de l'usager, de son entourage ou de la structure.</li>
+  <li><a href="StructureDefinition-tddui-goal-attente.html">TDDUIGoalAttente</a> représentant les attentes pour un usager.</li>
+  <li><a href="StructureDefinition-tddui-goal-objectif.html">TDDUIGoalObjectif</a> représentant les résultats à atteindre.</li>
+  <li><a href="StructureDefinition-tddui-service-request-besoin.html">TDDUIServiceRequestBesoin</a> représentant les besoins de l'usager.</li>
+  <li><a href="StructureDefinition-tddui-task-action.html">TDDUITaskAction</a> représentant les actions réalisées.</li>
+  <li><a href="StructureDefinition-tddui-task-bilan.html">TDDUITaskBilan</a> représentant le bilan.</li>
+  <li><a href="StructureDefinition-tddui-task-moyen-ressource.html">TDDUITaskMoyenRessource</a> représentant les moyens ou ressources utilisées.</li>
+  <li><a href="StructureDefinition-tddui-task-prestation.html">TDDUITaskPrestation</a> représentant les prestations.</li>
+  <li><a href="https://hl7.fr/ig/fhir/core/StructureDefinition-fr-core-related-person.html">FrCoreRelatedPerson</a> représentant les contacts de l'usager.</li>
 </ul>
 
 <p>Pour toutes ces ressources, seule la création est possible via l'intéraction FHIR <a href="https://hl7.org/fhir/R4/http.html#create">Create</a>.</p>
@@ -329,7 +340,7 @@ Dans tous les cas, la référence doit correspondre soit au fullUrl d’une autr
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 18, 2025 17:22+0000">2025-12-18</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 18, 2025 17:25+0000">2025-12-18</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |

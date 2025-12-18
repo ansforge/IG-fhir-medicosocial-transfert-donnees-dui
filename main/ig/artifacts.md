@@ -153,6 +153,7 @@ These are example instances that show what data produced and consumed by systems
 | [tddui-organization-example](Organization-tddui-organization-example.md) | ESSMS - Les Chênes Verts |
 | [tddui-patient-example](Patient-tddui-patient-example.md) | Exemple de la ressource TDDUIPatient |
 | [tddui-patient-ins-example](Patient-tddui-patient-ins-example.md) | Exemple de la ressource TDDUIPatientINS |
+| [tddui-pp-ime-bundle-example](Bundle-tddui-pp-ime-bundle-example.md) | Exemple de bundle conforme au profil TDDUIBundle contenant le projet personnalisé en IME |
 | [tddui-pp-ime-careplan-example](CarePlan-tddui-pp-ime-careplan-example.md) | Exemple du projet personnalisé d'un enfant en IME |
 | [tddui-pp-ime-consent-accord-example](Consent-tddui-pp-ime-consent-accord-example.md) | Exemple d'un accord de la structure |
 | [tddui-pp-ime-goal-objectif-1-example](Goal-tddui-pp-ime-goal-objectif-1-example.md) | Exemple d'un objectif dans le cadre du projet personnalisé en IME. |
@@ -160,6 +161,7 @@ These are example instances that show what data produced and consumed by systems
 | [tddui-pp-ime-patient-example](Patient-tddui-pp-ime-patient-example.md) | Exemple de la ressource TDDUIPatient dans le cadre d'un projet personnalisé en IME |
 | [tddui-pp-ime-task-action-1-aesh-example](Task-tddui-pp-ime-task-action-1-aesh-example.md) | Exemple d'une action de l'objectif 1 réalisée par l'AESH dans le cadre du projet personnalisé en IME. |
 | [tddui-pp-ime-task-action-1-educ-example](Task-tddui-pp-ime-task-action-1-educ-example.md) | Exemple d'une action de l'objectif 1 réalisée par l'éducateur spécialisé dans le cadre du projet personnalisé en IME. |
+| [tddui-pp-pa-bundle-example](Bundle-tddui-pp-pa-bundle-example.md) | Exemple de bundle conforme au profil TDDUIBundle contenant le projet personnalisé PA. |
 | [tddui-pp-pa-careplan-example](CarePlan-tddui-pp-pa-careplan-example.md) | Exemple d'un projet personnalisé PA |
 | [tddui-pp-pa-consent-accord-example](Consent-tddui-pp-pa-consent-accord-example.md) | Exemple d'un accord de la structure |
 | [tddui-pp-pa-documentreference-bilan-objectif-1-example](DocumentReference-tddui-pp-pa-documentreference-bilan-objectif-1-example.md) | Bilan de l'objectif 1 du projet personnalisé PA au format PDF |

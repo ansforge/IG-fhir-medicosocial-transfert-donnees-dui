@@ -18,7 +18,7 @@ Profil: [TDDUI CarePlan Projet Personalise](StructureDefinition-tddui-careplan-p
 
 **subject**: [Hugo D. (official) (sexe non précisé), Date de Naissance inconnue ( Patient internal identifier: 3480787529/123456)](Patient-tddui-pp-ime-patient-example.md)
 
-**supportingInfo**: [Consent : status = active; scope = Privacy Consent; category = Patient Consent; dateTime = 2024-01-15 09:00:00+0100](Consent-tddui-pp-ime-consent-accord-example.md)
+**supportingInfo**: [Consent : status = active; scope = Privacy Consent; category = Consent Document; dateTime = 2024-01-15 09:00:00+0100](Consent-tddui-pp-ime-consent-accord-example.md)
 
 
 

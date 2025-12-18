@@ -16,6 +16,7 @@ Profil de la ressource ServiceRequest permettant de représenter les besoins de 
 
 **Utilisations:**
 
+* Utiliser ce Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
 * Référer à ce Profil: [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md)
 * Exemples pour ce Profil: [ServiceRequest/tddui-pp-pa-servicerequest-besoin-1-example](ServiceRequest-tddui-pp-pa-servicerequest-besoin-1-example.md), [ServiceRequest/tddui-pp-pa-servicerequest-besoin-2-example](ServiceRequest-tddui-pp-pa-servicerequest-besoin-2-example.md) and [ServiceRequest/tddui-pp-pa-servicerequest-besoin-3-example](ServiceRequest-tddui-pp-pa-servicerequest-besoin-3-example.md)
 * CapabilityStatements utilisant ce Profil: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
@@ -43,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-service-reques
   "name" : "TDDUIServiceRequestBesoin",
   "title" : "TDDUI ServiceRequest Besoin",
   "status" : "active",
-  "date" : "2025-12-18T17:22:25+00:00",
+  "date" : "2025-12-18T17:25:31+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
