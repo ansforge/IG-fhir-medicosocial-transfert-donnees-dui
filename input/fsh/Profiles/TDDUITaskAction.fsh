@@ -17,7 +17,7 @@ Description: "Profil de la ressource Task permettant de représenter les actions
 * status.extension contains 
     TDDUIStatusAuthor named auteurStatut 0..1
 
-* input.type from InputTDDUITaskActionValueSet
+* input.type from InputTDDUITaskActionValueSet (required)
 
 * input ^slicing.discriminator.type = #pattern
 * input ^slicing.discriminator.path = "type"

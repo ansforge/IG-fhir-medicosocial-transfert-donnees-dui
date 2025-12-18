@@ -20,7 +20,7 @@ Description: "Profil de la ressource Task permettant de représenter le bilan du
 * basedOn 1..1
 * basedOn only Reference(TDDUICarePlanProjetPersonnalise)
 
-* input.type from InputTDDUITaskBilanValueSet
+* input.type from InputTDDUITaskBilanValueSet (required)
 
 * input ^slicing.discriminator.type = #pattern
 * input ^slicing.discriminator.path = "type"
@@ -61,7 +61,7 @@ Description: "Profil de la ressource Task permettant de représenter le bilan du
 * input[synthesePreparationBilan].valueAnnotation.authorReference only Reference(TDDUIPractitioner or TDDUIPatient or TDDUIPatientINS or FRCoreRelatedPersonProfile)
 * input[synthesePreparationBilan] ^short = "Préparation du bilan"
 
-* output.type from OutputTDDUITaskBilanValueSet
+* output.type from OutputTDDUITaskBilanValueSet (required)
 
 * output ^slicing.discriminator.type = #pattern
 * output ^slicing.discriminator.path = "type"

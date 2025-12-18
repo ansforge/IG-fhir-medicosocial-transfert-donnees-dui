@@ -12,7 +12,7 @@ Description: "Profil de la ressource Task permettant de représenter les moyens 
 * identifier.system 1..1
 * identifier.system = "https://identifiant-medicosocial-moyenressource.esante.gouv.fr"
 
-* input.type from InputTDDUITaskMoyenRessourceValueSet
+* input.type from InputTDDUITaskMoyenRessourceValueSet (required)
 
 * input ^slicing.discriminator.type = #pattern
 * input ^slicing.discriminator.path = "type"
