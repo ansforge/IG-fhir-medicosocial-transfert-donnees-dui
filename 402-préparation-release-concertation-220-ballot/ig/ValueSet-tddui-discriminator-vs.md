@@ -49,7 +49,9 @@ ValueSet définissant les codes discriminants.
   "resourceType" : "ValueSet",
   "id" : "tddui-discriminator-vs",
   "meta" : {
-    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+    "profile" : [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
+    ]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-discriminator-vs",
   "version" : "2.2.0-ballot",
@@ -57,7 +59,7 @@ ValueSet définissant les codes discriminants.
   "title" : "TDDUI Discriminator ValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-18T10:47:46+00:00",
+  "date" : "2025-12-18T16:17:40+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

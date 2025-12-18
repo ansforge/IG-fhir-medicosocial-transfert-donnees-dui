@@ -46,7 +46,9 @@ ValueSet définissant les types de notes pour l'élément Goal.note.
   "resourceType" : "ValueSet",
   "id" : "tddui-goal-objectif-note-vs",
   "meta" : {
-    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+    "profile" : [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
+    ]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-goal-objectif-note-vs",
   "version" : "2.2.0-ballot",
@@ -54,7 +56,7 @@ ValueSet définissant les types de notes pour l'élément Goal.note.
   "title" : "TDDUI Goal Objectif Note ValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-18T10:47:46+00:00",
+  "date" : "2025-12-18T16:17:40+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -83,7 +85,7 @@ ValueSet définissant les types de notes pour l'élément Goal.note.
     "include" : [
       {
         "valueSet" : [
-          "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-discriminator-vs"
+          "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-discriminator-vs|2.2.0-ballot"
         ]
       }
     ],

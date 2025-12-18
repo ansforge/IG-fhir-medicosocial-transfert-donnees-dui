@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
   "name" : "TDDUIBundle",
   "title" : "TDDUI Bundle",
   "status" : "active",
-  "date" : "2025-12-18T10:47:46+00:00",
+  "date" : "2025-12-18T16:17:40+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -92,7 +92,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
   "kind" : "resource",
   "abstract" : false,
   "type" : "Bundle",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Bundle",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Bundle|4.0.1",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -135,7 +135,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
           {
             "code" : "Patient",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient|2.2.0-ballot"
             ]
           }
         ]
@@ -166,7 +166,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
           {
             "code" : "Patient",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins|2.2.0-ballot"
             ]
           }
         ]
@@ -197,7 +197,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
           {
             "code" : "Organization",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization|2.2.0-ballot"
             ]
           }
         ]
@@ -228,7 +228,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
           {
             "code" : "Encounter",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour|2.2.0-ballot"
             ]
           }
         ]
@@ -259,7 +259,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
           {
             "code" : "Encounter",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement|2.2.0-ballot"
             ]
           }
         ]
@@ -290,7 +290,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
           {
             "code" : "Practitioner",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner|2.2.0-ballot"
             ]
           }
         ]
@@ -321,7 +321,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
           {
             "code" : "PractitionerRole",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role|2.2.0-ballot"
             ]
           }
         ]
@@ -352,7 +352,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
           {
             "code" : "Task",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel|2.2.0-ballot"
             ]
           }
         ]
@@ -383,7 +383,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
           {
             "code" : "Task",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager|2.2.0-ballot"
             ]
           }
         ]
@@ -414,7 +414,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
           {
             "code" : "DocumentReference",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference|2.2.0-ballot"
             ]
           }
         ]
@@ -445,7 +445,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
           {
             "code" : "QuestionnaireResponse",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response|2.2.0-ballot"
             ]
           }
         ]

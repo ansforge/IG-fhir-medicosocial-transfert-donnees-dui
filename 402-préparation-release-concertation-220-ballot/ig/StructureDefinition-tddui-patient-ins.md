@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient-ins.cs
   "name" : "TDDUIPatientINS",
   "title" : "TDDUI Patient INS",
   "status" : "active",
-  "date" : "2025-12-18T10:47:46+00:00",
+  "date" : "2025-12-18T16:17:40+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -105,7 +105,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient-ins.cs
   "kind" : "resource",
   "abstract" : false,
   "type" : "Patient",
-  "baseDefinition" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins",
+  "baseDefinition" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.1.0",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -270,7 +270,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient-ins.cs
           {
             "code" : "HumanName",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name|2.2.0-ballot"
             ]
           }
         ]
@@ -284,7 +284,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient-ins.cs
           {
             "code" : "HumanName",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name|2.2.0-ballot"
             ]
           }
         ]
@@ -317,7 +317,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient-ins.cs
           {
             "code" : "HumanName",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name|2.2.0-ballot"
             ]
           }
         ]

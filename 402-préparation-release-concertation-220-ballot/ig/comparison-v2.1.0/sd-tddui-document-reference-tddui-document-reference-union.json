@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "d48b6602-67b6-44e8-94cf-5dba441e3309-20",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/d48b6602-67b6-44e8-94cf-5dba441e3309-20",
+  "id" : "7919d8c6-4bbc-40a6-b4f4-e9c725574280-20",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/7919d8c6-4bbc-40a6-b4f4-e9c725574280-20",
   "name" : "UnionTDDUIDocumentReferenceAndTDDUIDocumentReference",
   "title" : "Union of TDDUI DocumentReference And TDDUI DocumentReference",
   "status" : "active",
-  "date" : "2025-12-18T10:50:41+00:00",
+  "date" : "2025-12-18T16:20:41+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -372,7 +372,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Codes that represent various types of tags, commonly workflow-related; e.g. \"Needs review by Dr. Jones\".",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/d48b6602-67b6-44e8-94cf-5dba441e3309-23"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/7919d8c6-4bbc-40a6-b4f4-e9c725574280-23"
       }
     },
     {
@@ -427,7 +427,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/languages"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/7919d8c6-4bbc-40a6-b4f4-e9c725574280-26"
       }
     },
     {
@@ -787,7 +787,7 @@
       "isSummary" : true,
       "binding" : {
         "strength" : "preferred",
-        "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/7919d8c6-4bbc-40a6-b4f4-e9c725574280-29"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -851,7 +851,7 @@
       "isSummary" : true,
       "binding" : {
         "strength" : "preferred",
-        "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/7919d8c6-4bbc-40a6-b4f4-e9c725574280-32"
       },
       "mapping" : [{
         "identity" : "w5",
@@ -887,8 +887,8 @@
       },
       {
         "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient",
-        "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"]
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient|2.2.0-ballot",
+        "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins|2.2.0-ballot"]
       }],
       "constraint" : [{
         "extension" : [{
@@ -1770,7 +1770,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/languages"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/7919d8c6-4bbc-40a6-b4f4-e9c725574280-26"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -2003,7 +2003,7 @@
       "isSummary" : true,
       "binding" : {
         "strength" : "preferred",
-        "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/7919d8c6-4bbc-40a6-b4f4-e9c725574280-68"
       },
       "mapping" : [{
         "identity" : "fhircomposition",
@@ -2234,7 +2234,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "This list of codes represents the main clinical acts being documented.",
-        "valueSet" : "http://terminology.hl7.org/ValueSet/v3-ActCode"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/7919d8c6-4bbc-40a6-b4f4-e9c725574280-71"
       },
       "mapping" : [{
         "identity" : "fhircomposition",
@@ -2320,7 +2320,7 @@
       "isSummary" : false,
       "binding" : {
         "strength" : "preferred",
-        "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS/FHIR/JDV-J02-XdsHealthcareFacilityTypeCode-CISIS"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/7919d8c6-4bbc-40a6-b4f4-e9c725574280-74"
       },
       "mapping" : [{
         "identity" : "fhircomposition",
@@ -2372,7 +2372,7 @@
       "isSummary" : false,
       "binding" : {
         "strength" : "preferred",
-        "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J04-XdsPracticeSettingCode-CISIS/FHIR/JDV-J04-XdsPracticeSettingCode-CISIS"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/7919d8c6-4bbc-40a6-b4f4-e9c725574280-77"
       },
       "mapping" : [{
         "identity" : "fhircomposition",
@@ -2404,8 +2404,8 @@
       },
       {
         "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient",
-        "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"]
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient|2.2.0-ballot",
+        "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins|2.2.0-ballot"]
       }],
       "constraint" : [{
         "extension" : [{

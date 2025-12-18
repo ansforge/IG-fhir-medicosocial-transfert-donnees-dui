@@ -71,8 +71,8 @@ Le rôle de Producteur est de transmettre des données de son logiciel DUI. Il c
         {
           "type" : "Patient",
           "supportedProfile" : [
-            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient",
-            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient|2.2.0-ballot",
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins|2.2.0-ballot"
           ],
           "interaction" : [
             {
@@ -83,7 +83,7 @@ Le rôle de Producteur est de transmettre des données de son logiciel DUI. Il c
         {
           "type" : "Organization",
           "supportedProfile" : [
-            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization"
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization|2.2.0-ballot"
           ],
           "interaction" : [
             {
@@ -94,8 +94,8 @@ Le rôle de Producteur est de transmettre des données de son logiciel DUI. Il c
         {
           "type" : "Encounter",
           "supportedProfile" : [
-            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour",
-            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement"
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour|2.2.0-ballot",
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement|2.2.0-ballot"
           ],
           "interaction" : [
             {
@@ -106,7 +106,7 @@ Le rôle de Producteur est de transmettre des données de son logiciel DUI. Il c
         {
           "type" : "Practitioner",
           "supportedProfile" : [
-            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner"
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner|2.2.0-ballot"
           ],
           "interaction" : [
             {
@@ -117,7 +117,7 @@ Le rôle de Producteur est de transmettre des données de son logiciel DUI. Il c
         {
           "type" : "PractitionerRole",
           "supportedProfile" : [
-            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role"
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role|2.2.0-ballot"
           ],
           "interaction" : [
             {
@@ -128,8 +128,8 @@ Le rôle de Producteur est de transmettre des données de son logiciel DUI. Il c
         {
           "type" : "Task",
           "supportedProfile" : [
-            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel",
-            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager"
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel|2.2.0-ballot",
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager|2.2.0-ballot"
           ],
           "interaction" : [
             {
@@ -140,7 +140,7 @@ Le rôle de Producteur est de transmettre des données de son logiciel DUI. Il c
         {
           "type" : "QuestionnaireResponse",
           "supportedProfile" : [
-            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response|2.2.0-ballot"
           ],
           "interaction" : [
             {
@@ -151,7 +151,7 @@ Le rôle de Producteur est de transmettre des données de son logiciel DUI. Il c
         {
           "type" : "DocumentReference",
           "supportedProfile" : [
-            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference|2.2.0-ballot"
           ],
           "interaction" : [
             {

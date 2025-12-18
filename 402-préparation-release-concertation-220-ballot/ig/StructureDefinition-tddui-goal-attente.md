@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-attente.c
   "name" : "TDDUIGoalAttente",
   "title" : "TDDUI Goal Attente",
   "status" : "active",
-  "date" : "2025-12-18T10:47:46+00:00",
+  "date" : "2025-12-18T16:17:40+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -92,7 +92,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-attente.c
   "kind" : "resource",
   "abstract" : false,
   "type" : "Goal",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Goal",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Goal|4.0.1",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -131,7 +131,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-attente.c
           {
             "code" : "Extension",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference|2.2.0-ballot"
             ]
           }
         ],
@@ -152,7 +152,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-attente.c
           {
             "code" : "Extension",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment|2.2.0-ballot"
             ]
           }
         ]
@@ -204,8 +204,8 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-attente.c
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient",
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient|2.2.0-ballot",
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins|2.2.0-ballot"
             ]
           }
         ]
@@ -239,7 +239,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-attente.c
           {
             "code" : "Extension",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator|2.2.0-ballot"
             ]
           }
         ]
@@ -268,7 +268,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-attente.c
           {
             "code" : "Extension",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator|2.2.0-ballot"
             ]
           }
         ]
@@ -286,7 +286,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-attente.c
         },
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-goal-attente-note-vs"
+          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-goal-attente-note-vs|2.2.0-ballot"
         }
       },
       {
@@ -313,7 +313,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-attente.c
           {
             "code" : "Extension",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator|2.2.0-ballot"
             ]
           }
         ]
@@ -331,7 +331,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-attente.c
         },
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-goal-attente-note-vs"
+          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-goal-attente-note-vs|2.2.0-ballot"
         }
       }
     ]

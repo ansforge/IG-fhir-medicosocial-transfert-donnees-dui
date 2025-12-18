@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
   "name" : "TDDUICarePlanProjetPersonnalise",
   "title" : "TDDUI CarePlan Projet Personalise",
   "status" : "active",
-  "date" : "2025-12-18T10:47:46+00:00",
+  "date" : "2025-12-18T16:17:40+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -98,7 +98,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
   "kind" : "resource",
   "abstract" : false,
   "type" : "CarePlan",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/CarePlan",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/CarePlan|4.0.1",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -146,7 +146,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
           {
             "code" : "Extension",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment|2.2.0-ballot"
             ]
           }
         ],
@@ -222,7 +222,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
           {
             "code" : "Extension",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-status-author"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-status-author|2.2.0-ballot"
             ]
           }
         ],
@@ -239,7 +239,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
         "max" : "1",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j367-type-projet-personnalise-ms"
+          "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j367-type-projet-personnalise-ms|20250422120000"
         },
         "mapping" : [
           {
@@ -276,8 +276,8 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient",
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient|2.2.0-ballot",
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins|2.2.0-ballot"
             ]
           }
         ],
@@ -337,7 +337,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
           {
             "code" : "Extension",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator|2.2.0-ballot"
             ]
           }
         ]
@@ -353,7 +353,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord|2.2.0-ballot"
             ]
           }
         ],
@@ -374,7 +374,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
           {
             "code" : "Extension",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator|2.2.0-ballot"
             ]
           }
         ]
@@ -392,7 +392,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
         },
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-care-plan-supportingInfo-vs"
+          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-care-plan-supportingInfo-vs|2.2.0-ballot"
         }
       },
       {
@@ -406,7 +406,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord|2.2.0-ballot"
             ]
           }
         ],
@@ -427,7 +427,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
           {
             "code" : "Extension",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator|2.2.0-ballot"
             ]
           }
         ]
@@ -445,7 +445,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
         },
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-care-plan-supportingInfo-vs"
+          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-care-plan-supportingInfo-vs|2.2.0-ballot"
         }
       },
       {
