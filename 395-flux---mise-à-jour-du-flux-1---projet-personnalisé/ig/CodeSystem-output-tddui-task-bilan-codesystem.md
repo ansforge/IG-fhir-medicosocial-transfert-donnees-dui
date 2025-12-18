@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/output-tddui-task-bilan-codesystem | *Version*:2.1.0 |
-| Active as of 2025-12-17 | *Computable Name*:OutputTDDUITaskBilanCodeSystem |
+| Active as of 2025-12-18 | *Computable Name*:OutputTDDUITaskBilanCodeSystem |
 
  
 CodeSystem pour la définition des éléments spécifiques des output dans la ressource Task utilisée pour le bilan du projet personnalisé. 
@@ -37,7 +37,7 @@ CodeSystem pour la définition des éléments spécifiques des output dans la re
   "title" : "OutputTDDUITaskBilanCodeSystem",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-17T09:57:45+00:00",
+  "date" : "2025-12-18T09:45:01+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

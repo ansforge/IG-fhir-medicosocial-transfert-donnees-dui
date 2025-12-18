@@ -12,7 +12,7 @@ Profil: [TDDUI Consent Accord](StructureDefinition-tddui-consent-accord.md)
 
 **scope**: Privacy Consent
 
-**category**: Patient Consent
+**category**: Consent Document
 
 **dateTime**: 2024-01-15 09:00:00+0100
 
@@ -53,8 +53,7 @@ Profil: [TDDUI Consent Accord](StructureDefinition-tddui-consent-accord.md)
       "coding" : [
         {
           "system" : "http://loinc.org",
-          "code" : "59284-0",
-          "display" : "Patient Consent"
+          "code" : "59284-0"
         }
       ]
     }
