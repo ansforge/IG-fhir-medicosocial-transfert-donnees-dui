@@ -21,7 +21,18 @@ Description: "Profil générique créé pour transmettre des données d'un logic
     DUITransportProfessionnel 0..* and
     DUITransportUsager 0..* and
     DUIDocumentReference 0..* and
-    DUIQuestionnaireResponse 0..*
+    DUIQuestionnaireResponse 0..* and 
+    DUICarePlanProjetPersonnalise 0..* and
+    DUIConsentAccord 0..* and
+    DUIGoalAttente 0..* and
+    DUIGoalObjectif 0..* and
+    DUIServiceRequestBesoin 0..* and
+    DUITaskAction 0..* and
+    DUITaskBilan 0..* and 
+    DUITaskMoyenRessource 0..* and
+    DUITaskPrestation 0..* and
+    RelatedPerson 0..*
+
 
 * entry[DUIPatient].resource only TDDUIPatient
 * entry[DUIPatient] ^short = "Patient conforming to the TDDUIPatient profile, used to convey patients without an INS identity."
@@ -88,3 +99,63 @@ Description: "Profil générique créé pour transmettre des données d'un logic
 * entry[DUIQuestionnaireResponse].resource 1..1
 * entry[DUIQuestionnaireResponse].request 1..1
 * entry[DUIQuestionnaireResponse].request.method = #POST
+
+* entry[DUICarePlanProjetPersonnalise].resource only TDDUICarePlanProjetPersonnalise
+* entry[DUICarePlanProjetPersonnalise]. ^short = "CarePlan conforming to the TDDUICarePlanProjetPersonnalise profile, used to convey the personalized care plan"
+* entry[DUICarePlanProjetPersonnalise].resource 1..1
+* entry[DUICarePlanProjetPersonnalise].request 1..1
+* entry[DUICarePlanProjetPersonnalise].request.method = #POST
+
+* entry[DUIConsentAccord].resource only TDDUIConsentAccord
+* entry[DUIConsentAccord]. ^short = "Consent conforming to the TDDUIConsentAccord profile, used to document the patient’s and the organization’s agreement"
+* entry[DUIConsentAccord].resource 1..1
+* entry[DUIConsentAccord].request 1..1
+* entry[DUIConsentAccord].request.method = #POST
+
+* entry[DUIGoalAttente].resource only TDDUIGoalAttente
+* entry[DUIGoalAttente]. ^short = "Goal conforming to the TDDUIGoalAttente profile, used to convey the patient’s expectations"
+* entry[DUIGoalAttente].resource 1..1
+* entry[DUIGoalAttente].request 1..1
+* entry[DUIGoalAttente].request.method = #POST
+
+* entry[DUIGoalObjectif].resource only TDDUIGoalObjectif
+* entry[DUIGoalObjectif]. ^short = "Goal conforming to the TDDUIGoalObjectif profile, used to convey the objectives of the personalized care plan"
+* entry[DUIGoalObjectif].resource 1..1
+* entry[DUIGoalObjectif].request 1..1
+* entry[DUIGoalObjectif].request.method = #POST
+
+* entry[DUIServiceRequestBesoin].resource only TDDUIServiceRequestBesoin
+* entry[DUIServiceRequestBesoin]. ^short = "ServiceRequest conforming to the TDDUIServiceRequestBesoin profile, used to convey the needs"
+* entry[DUIServiceRequestBesoin].resource 1..1
+* entry[DUIServiceRequestBesoin].request 1..1
+* entry[DUIServiceRequestBesoin].request.method = #POST
+
+* entry[DUITaskAction].resource only TDDUITaskAction
+* entry[DUITaskAction]. ^short = "Task conforming to the TDDUITaskAction profile, used to convey the actions to be performed"
+* entry[DUITaskAction].resource 1..1
+* entry[DUITaskAction].request 1..1
+* entry[DUITaskAction].request.method = #POST
+
+* entry[DUITaskBilan].resource only TDDUITaskBilan
+* entry[DUITaskBilan]. ^short = "Task conforming to the TDDUITaskBilan profile, used to convey the summary"
+* entry[DUITaskBilan].resource 1..1
+* entry[DUITaskBilan].request 1..1
+* entry[DUITaskBilan].request.method = #POST
+
+* entry[DUITaskMoyenRessource].resource only TDDUITaskMoyenRessource
+* entry[DUITaskMoyenRessource]. ^short = "Task conforming to the TDDUITaskMoyenRessource profile, used to convey the means and resources"
+* entry[DUITaskMoyenRessource].resource 1..1
+* entry[DUITaskMoyenRessource].request 1..1
+* entry[DUITaskMoyenRessource].request.method = #POST
+
+* entry[DUITaskPrestation].resource only TDDUITaskPrestation
+* entry[DUITaskPrestation]. ^short = "Task conforming to the TDDUITaskPrestation profile, used to convey the services provided"
+* entry[DUITaskPrestation].resource 1..1
+* entry[DUITaskPrestation].request 1..1
+* entry[DUITaskPrestation].request.method = #POST
+
+* entry[RelatedPerson].resource only FRCoreRelatedPersonProfile
+* entry[RelatedPerson] ^short = "RelatedPerson conforming to the FrCoreRelatedPerson profile, used to convey information about the user's contacts."
+* entry[RelatedPerson].resource 1..1
+* entry[RelatedPerson].request 1..1
+* entry[RelatedPerson].request.method = #POST
