@@ -140,6 +140,13 @@ Profil: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenemen
       ]
     },
     {
+      "coding" : [
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+          "code" : "not-permitted",
+          "display" : "Not Permitted"
+        }
+      ],
       "text" : "Intervention"
     }
   ],

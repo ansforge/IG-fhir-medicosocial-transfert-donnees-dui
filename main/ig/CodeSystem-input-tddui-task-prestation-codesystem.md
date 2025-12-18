@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-prestation-codesystem | *Version*:2.1.0 |
-| Active as of 2025-12-17 | *Computable Name*:InputTDDUITaskPrestationCodeSystem |
+| Active as of 2025-12-18 | *Computable Name*:InputTDDUITaskPrestationCodeSystem |
 
  
 CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les prestations du projet personnalisé. 
 
  Cette terminologie de référence (CodeSystem) est référencé dans la définition de contenu des jeux de valeurs (ValueSet) suivants : 
 
-* Cette terminologie de référence (CodeSystem) nest pas utilisée ici; elle peut être utilisée ailleurs (par exemple spécifications et/ou implémentations qui utilisent ce contenu)
+* [InputTDDUITaskPrestationValueSet](ValueSet-input-tddui-task-prestation-valueset.md)
 
 
 
@@ -37,7 +37,7 @@ CodeSystem pour la définition des éléments spécifiques des input dans la res
   "title" : "InputTDDUITaskPrestationCodeSystem",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-17T14:24:53+00:00",
+  "date" : "2025-12-18T17:03:49+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
