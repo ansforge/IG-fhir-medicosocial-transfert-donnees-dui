@@ -1,4 +1,4 @@
-# tddui-task-transport-usager-example - Médicosocial - Transfert de données DUI v2.1.0
+# tddui-task-transport-usager-example - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

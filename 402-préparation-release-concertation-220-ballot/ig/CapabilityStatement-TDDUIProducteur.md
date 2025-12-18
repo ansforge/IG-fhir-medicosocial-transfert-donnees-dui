@@ -1,4 +1,4 @@
-# TDDUI-Producteur - Médicosocial - Transfert de données DUI v2.1.0
+# TDDUI-Producteur - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/CapabilityStatement/TDDUIProducteur | *Version*:2.1.0 |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/CapabilityStatement/TDDUIProducteur | *Version*:2.2.0-ballot |
 | Active as of 2024-06-20 | *Computable Name*:TDDUIProducteur |
 
  
@@ -25,7 +25,7 @@ Le rôle de Producteur est de transmettre des données de son logiciel DUI. Il c
   "resourceType" : "CapabilityStatement",
   "id" : "TDDUIProducteur",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CapabilityStatement/TDDUIProducteur",
-  "version" : "2.1.0",
+  "version" : "2.2.0-ballot",
   "name" : "TDDUIProducteur",
   "title" : "TDDUI-Producteur",
   "status" : "active",

@@ -1,4 +1,4 @@
-# Évaluation AGGIR PH SSIAD - Médicosocial - Transfert de données DUI v2.1.0
+# Évaluation AGGIR PH SSIAD - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/Questionnaire/tddui-questionnaire-aggir-ph-ssiad | *Version*:2.1.0 |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/Questionnaire/tddui-questionnaire-aggir-ph-ssiad | *Version*:2.2.0-ballot |
 | Active as of 2025-12-18 | *Computable Name*: |
 
  
@@ -23,10 +23,10 @@ Grille d'évaluation AGGIR PH SSIAD
   "resourceType" : "Questionnaire",
   "id" : "tddui-questionnaire-aggir-ph-ssiad",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/Questionnaire/tddui-questionnaire-aggir-ph-ssiad",
-  "version" : "2.1.0",
+  "version" : "2.2.0-ballot",
   "title" : "Évaluation AGGIR PH SSIAD",
   "status" : "active",
-  "date" : "2025-12-18T09:03:55+00:00",
+  "date" : "2025-12-18T10:47:46+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

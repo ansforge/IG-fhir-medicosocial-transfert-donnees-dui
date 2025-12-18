@@ -1,4 +1,4 @@
-# TDDUI-Consommateur - Médicosocial - Transfert de données DUI v2.1.0
+# TDDUI-Consommateur - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/CapabilityStatement/TDDUIConsommateur | *Version*:2.1.0 |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/CapabilityStatement/TDDUIConsommateur | *Version*:2.2.0-ballot |
 | Active as of 2024-06-20 | *Computable Name*:TDDUIConsommateur |
 
  
@@ -25,7 +25,7 @@ Le rôle du Consommateur est de recueillir les données d'un logiciel DUI. Il co
   "resourceType" : "CapabilityStatement",
   "id" : "TDDUIConsommateur",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CapabilityStatement/TDDUIConsommateur",
-  "version" : "2.1.0",
+  "version" : "2.2.0-ballot",
   "name" : "TDDUIConsommateur",
   "title" : "TDDUI-Consommateur",
   "status" : "active",
