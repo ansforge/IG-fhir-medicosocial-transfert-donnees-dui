@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
   "name" : "TDDUIBundle",
   "title" : "TDDUI Bundle",
   "status" : "active",
-  "date" : "2025-12-18T09:45:01+00:00",
+  "date" : "2025-12-18T14:56:52+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -736,6 +736,37 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
       },
       {
         "id" : "Bundle.entry:DUITaskPrestation.request.method",
+        "path" : "Bundle.entry.request.method",
+        "patternCode" : "POST"
+      },
+      {
+        "id" : "Bundle.entry:RelatedPerson",
+        "path" : "Bundle.entry",
+        "sliceName" : "RelatedPerson",
+        "short" : "RelatedPerson conforming to the FrCoreRelatedPerson profile, used to convey information about a person related to the patient.",
+        "min" : 0,
+        "max" : "*"
+      },
+      {
+        "id" : "Bundle.entry:RelatedPerson.resource",
+        "path" : "Bundle.entry.resource",
+        "min" : 1,
+        "type" : [
+          {
+            "code" : "RelatedPerson",
+            "profile" : [
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "Bundle.entry:RelatedPerson.request",
+        "path" : "Bundle.entry.request",
+        "min" : 1
+      },
+      {
+        "id" : "Bundle.entry:RelatedPerson.request.method",
         "path" : "Bundle.entry.request.method",
         "patternCode" : "POST"
       }
