@@ -1,0 +1,76 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-bilan-codesystem> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "input-tddui-task-bilan-codesystem"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/shareablecodesystem>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem input-tddui-task-bilan-codesystem</b></p><a name=\"input-tddui-task-bilan-codesystem\"> </a><a name=\"hcinput-tddui-task-bilan-codesystem\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"http://hl7.org/fhir/R4/shareablecodesystem.html\">Shareable CodeSystem</a></p></div><p>This case-sensitive code system <code>https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-bilan-codesystem</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">perimetre<a name=\"input-tddui-task-bilan-codesystem-perimetre\"> </a></td><td>Périmètre du bilan.</td></tr><tr><td style=\"white-space:nowrap\">problematique<a name=\"input-tddui-task-bilan-codesystem-problematique\"> </a></td><td>Problématique liée à l'usager.</td></tr><tr><td style=\"white-space:nowrap\">invite<a name=\"input-tddui-task-bilan-codesystem-invite\"> </a></td><td>Liste des personnes invitées à participer au bilan.</td></tr><tr><td style=\"white-space:nowrap\">dateProchainBilan<a name=\"input-tddui-task-bilan-codesystem-dateProchainBilan\"> </a></td><td>Date du prochain bilan.</td></tr><tr><td style=\"white-space:nowrap\">pieceJointe<a name=\"input-tddui-task-bilan-codesystem-pieceJointe\"> </a></td><td>Pièce jointe du moyen/ressource.</td></tr><tr><td style=\"white-space:nowrap\">synthesePreparationBilan<a name=\"input-tddui-task-bilan-codesystem-synthesePreparationBilan\"> </a></td><td>Préparation du bilan.</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-bilan-codesystem"^^xsd:anyURI ;
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-bilan-codesystem>
+  ] ; # 
+  fhir:version [ fhir:v "2.1.0"] ; # 
+  fhir:name [ fhir:v "InputTDDUITaskBilanCodeSystem"] ; # 
+  fhir:title [ fhir:v "InputTDDUITaskBilanCodeSystem"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-12-18T09:03:55+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "ANS"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "ANS" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://esante.gouv.fr" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour le bilan du projet personnalisé."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "FR" ] ;
+       fhir:display [ fhir:v "FRANCE" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:compositional [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "6"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "perimetre" ] ;
+     fhir:display [ fhir:v "Périmètre du bilan." ]
+  ] [
+     fhir:code [ fhir:v "problematique" ] ;
+     fhir:display [ fhir:v "Problématique liée à l'usager." ]
+  ] [
+     fhir:code [ fhir:v "invite" ] ;
+     fhir:display [ fhir:v "Liste des personnes invitées à participer au bilan." ]
+  ] [
+     fhir:code [ fhir:v "dateProchainBilan" ] ;
+     fhir:display [ fhir:v "Date du prochain bilan." ]
+  ] [
+     fhir:code [ fhir:v "pieceJointe" ] ;
+     fhir:display [ fhir:v "Pièce jointe du moyen/ressource." ]
+  ] [
+     fhir:code [ fhir:v "synthesePreparationBilan" ] ;
+     fhir:display [ fhir:v "Préparation du bilan." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

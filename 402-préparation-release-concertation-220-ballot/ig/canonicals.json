@@ -1,0 +1,460 @@
+[
+  {
+    "id" : "TDDUIConsommateur",
+    "type" : "CapabilityStatement",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CapabilityStatement/TDDUIConsommateur",
+    "version" : "2.1.0",
+    "name" : "TDDUIConsommateur"
+  },
+  {
+    "id" : "TDDUIProducteur",
+    "type" : "CapabilityStatement",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CapabilityStatement/TDDUIProducteur",
+    "version" : "2.1.0",
+    "name" : "TDDUIProducteur"
+  },
+  {
+    "id" : "TDDUIEncounterParticipant",
+    "type" : "CodeSystem",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/TDDUIEncounterParticipant",
+    "version" : "2.1.0",
+    "name" : "TDDUIEncounterParticipant"
+  },
+  {
+    "id" : "input-tddui-task-action-codesystem",
+    "type" : "CodeSystem",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem",
+    "version" : "2.1.0",
+    "name" : "InputTDDUITaskActionCodeSystem"
+  },
+  {
+    "id" : "input-tddui-task-bilan-codesystem",
+    "type" : "CodeSystem",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-bilan-codesystem",
+    "version" : "2.1.0",
+    "name" : "InputTDDUITaskBilanCodeSystem"
+  },
+  {
+    "id" : "input-tddui-task-moyen-ressource-codesystem",
+    "type" : "CodeSystem",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-moyen-ressource-codesystem",
+    "version" : "2.1.0",
+    "name" : "InputTDDUITaskMoyenRessourceCodeSystem"
+  },
+  {
+    "id" : "input-tddui-task-prestation-codesystem",
+    "type" : "CodeSystem",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-prestation-codesystem",
+    "version" : "2.1.0",
+    "name" : "InputTDDUITaskPrestationCodeSystem"
+  },
+  {
+    "id" : "input-tddui-task-transport-codesystem",
+    "type" : "CodeSystem",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+    "version" : "2.1.0",
+    "name" : "InputTDDUITaskTransportCodeSystem"
+  },
+  {
+    "id" : "output-tddui-task-bilan-codesystem",
+    "type" : "CodeSystem",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/output-tddui-task-bilan-codesystem",
+    "version" : "2.1.0",
+    "name" : "OutputTDDUITaskBilanCodeSystem"
+  },
+  {
+    "id" : "tddui-discriminator-cs",
+    "type" : "CodeSystem",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs",
+    "version" : "2.1.0",
+    "name" : "TDDUIDiscriminatorCS"
+  },
+  {
+    "id" : "tddui-encounter-identifier",
+    "type" : "CodeSystem",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier",
+    "version" : "2.1.0",
+    "name" : "TDDUIEncounterIdentifier"
+  },
+  {
+    "id" : "tddui-identifier",
+    "type" : "CodeSystem",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-identifier",
+    "version" : "2.1.0",
+    "name" : "TDDUIIdentifier"
+  },
+  {
+    "id" : "ans.fhir.fr.tddui",
+    "type" : "ImplementationGuide",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui",
+    "version" : "2.1.0",
+    "name" : "TDDUI"
+  },
+  {
+    "id" : "tddui-questionnaire-aggir-pa-ssiad",
+    "type" : "Questionnaire",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/Questionnaire/tddui-questionnaire-aggir-pa-ssiad",
+    "version" : "2.1.0"
+  },
+  {
+    "id" : "tddui-questionnaire-aggir-ph-ssiad",
+    "type" : "Questionnaire",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/Questionnaire/tddui-questionnaire-aggir-ph-ssiad",
+    "version" : "2.1.0"
+  },
+  {
+    "id" : "tddui-questionnaire-serafin",
+    "type" : "Questionnaire",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/Questionnaire/tddui-questionnaire-serafin",
+    "version" : "2.1.0"
+  },
+  {
+    "id" : "tddui-questionnaire-situation-ssiad",
+    "type" : "Questionnaire",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/Questionnaire/tddui-questionnaire-situation-ssiad",
+    "version" : "2.1.0"
+  },
+  {
+    "id" : "tddui-admission-date",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-admission-date",
+    "version" : "2.1.0",
+    "name" : "TDDUIAdmissionDate"
+  },
+  {
+    "id" : "tddui-attachment",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment",
+    "version" : "2.1.0",
+    "name" : "TDDUIAttachment"
+  },
+  {
+    "id" : "tddui-birth-order",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order",
+    "version" : "2.1.0",
+    "name" : "TDDUIBirthOrder"
+  },
+  {
+    "id" : "tddui-bundle",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle",
+    "version" : "2.1.0",
+    "name" : "TDDUIBundle"
+  },
+  {
+    "id" : "tddui-careplan-projet-personnalise",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise",
+    "version" : "2.1.0",
+    "name" : "TDDUICarePlanProjetPersonnalise"
+  },
+  {
+    "id" : "tddui-careplan-reference",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference",
+    "version" : "2.1.0",
+    "name" : "TDDUICarePlanProjetPersoRef"
+  },
+  {
+    "id" : "tddui-comment",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment",
+    "version" : "2.1.0",
+    "name" : "TDDUIComment"
+  },
+  {
+    "id" : "tddui-consent-accord",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord",
+    "version" : "2.1.0",
+    "name" : "TDDUIConsentAccord"
+  },
+  {
+    "id" : "tddui-discriminator",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator",
+    "version" : "2.1.0",
+    "name" : "TDDUIDiscriminator"
+  },
+  {
+    "id" : "tddui-document-reference",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference",
+    "version" : "2.1.0",
+    "name" : "TDDUIDocumentReference"
+  },
+  {
+    "id" : "tddui-encounter-evenement",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement",
+    "version" : "2.1.0",
+    "name" : "TDDUIEncounterEvenement"
+  },
+  {
+    "id" : "tddui-encounter-sejour",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour",
+    "version" : "2.1.0",
+    "name" : "TDDUIEncounterSejour"
+  },
+  {
+    "id" : "tddui-entry-mode-label",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-mode-label",
+    "version" : "2.1.0",
+    "name" : "TDDUIEntryModelabel"
+  },
+  {
+    "id" : "tddui-evaluation-reference",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-evaluation-reference",
+    "version" : "2.1.0",
+    "name" : "TDDUIEvaluationRef"
+  },
+  {
+    "id" : "tddui-event-cancel-reason",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-cancel-reason",
+    "version" : "2.1.0",
+    "name" : "TDDUIEventCancelReason"
+  },
+  {
+    "id" : "tddui-event-label",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-label",
+    "version" : "2.1.0",
+    "name" : "TDDUIEventLabel"
+  },
+  {
+    "id" : "tddui-event-reason",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-reason",
+    "version" : "2.1.0",
+    "name" : "TDDUIEventReason"
+  },
+  {
+    "id" : "tddui-event-report",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-report",
+    "version" : "2.1.0",
+    "name" : "TDDUIEventReport"
+  },
+  {
+    "id" : "tddui-exercise-mode",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exercise-mode",
+    "version" : "2.1.0",
+    "name" : "TDDUIExerciseMode"
+  },
+  {
+    "id" : "tddui-exit-mode-label",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exit-mode-label",
+    "version" : "2.1.0",
+    "name" : "TDDUIExitModeLabel"
+  },
+  {
+    "id" : "tddui-goal-attente",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente",
+    "version" : "2.1.0",
+    "name" : "TDDUIGoalAttente"
+  },
+  {
+    "id" : "tddui-goal-objectif",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif",
+    "version" : "2.1.0",
+    "name" : "TDDUIGoalObjectif"
+  },
+  {
+    "id" : "tddui-human-name",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name",
+    "version" : "2.1.0",
+    "name" : "tddui-humanname"
+  },
+  {
+    "id" : "tddui-meal",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-meal",
+    "version" : "2.1.0",
+    "name" : "TDDUIMeal"
+  },
+  {
+    "id" : "tddui-organization",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization",
+    "version" : "2.1.0",
+    "name" : "TDDUIOrganization"
+  },
+  {
+    "id" : "tddui-outside-service",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-outside-service",
+    "version" : "2.1.0",
+    "name" : "TDDUIEventOutsideService"
+  },
+  {
+    "id" : "tddui-patient",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient",
+    "version" : "2.1.0",
+    "name" : "TDDUIPatient"
+  },
+  {
+    "id" : "tddui-patient-ins",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins",
+    "version" : "2.1.0",
+    "name" : "TDDUIPatientINS"
+  },
+  {
+    "id" : "tddui-patient-present",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-present",
+    "version" : "2.1.0",
+    "name" : "TDDUIPatientPresent"
+  },
+  {
+    "id" : "tddui-practitioner",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner",
+    "version" : "2.1.0",
+    "name" : "TDDUIPractitioner"
+  },
+  {
+    "id" : "tddui-practitioner-role",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role",
+    "version" : "2.1.0",
+    "name" : "TDDUIPractitionerRole"
+  },
+  {
+    "id" : "tddui-profession",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-profession",
+    "version" : "2.1.0",
+    "name" : "TDDUIProfession"
+  },
+  {
+    "id" : "tddui-qr-participant",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant",
+    "version" : "2.1.0",
+    "name" : "TDDUIQRParticipant"
+  },
+  {
+    "id" : "tddui-questionnaire-response",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response",
+    "version" : "2.1.0",
+    "name" : "TDDUIQuestionnaireResponse"
+  },
+  {
+    "id" : "tddui-ressources-used",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used",
+    "version" : "2.1.0",
+    "name" : "TDDUIRessourcesUsed"
+  },
+  {
+    "id" : "tddui-service-request-besoin",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin",
+    "version" : "2.1.0",
+    "name" : "TDDUIServiceRequestBesoin"
+  },
+  {
+    "id" : "tddui-status-author",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-status-author",
+    "version" : "2.1.0",
+    "name" : "TDDUIStatusAuthor"
+  },
+  {
+    "id" : "tddui-task-action",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action",
+    "version" : "2.1.0",
+    "name" : "TDDUITaskAction"
+  },
+  {
+    "id" : "tddui-task-bilan",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-bilan",
+    "version" : "2.1.0",
+    "name" : "TDDUITaskBilan"
+  },
+  {
+    "id" : "tddui-task-moyen-ressource",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource",
+    "version" : "2.1.0",
+    "name" : "TDDUITaskMoyenRessource"
+  },
+  {
+    "id" : "tddui-task-prestation",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-prestation",
+    "version" : "2.1.0",
+    "name" : "TDDUITaskPrestation"
+  },
+  {
+    "id" : "tddui-task-transport",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport",
+    "version" : "2.1.0",
+    "name" : "TDDUITaskTransport"
+  },
+  {
+    "id" : "tddui-task-transport-professionnel",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel",
+    "version" : "2.1.0",
+    "name" : "TDDUITaskTransportProfessionnel"
+  },
+  {
+    "id" : "tddui-task-transport-usager",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager",
+    "version" : "2.1.0",
+    "name" : "TDDUITaskTransportUsager"
+  },
+  {
+    "id" : "tddui-care-plan-supportingInfo-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-care-plan-supportingInfo-vs",
+    "version" : "2.1.0",
+    "name" : "TDDUICarePlanSupportingInfoVS"
+  },
+  {
+    "id" : "tddui-discriminator-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-discriminator-vs",
+    "version" : "2.1.0",
+    "name" : "TDDUIDiscriminatorVS"
+  },
+  {
+    "id" : "tddui-goal-attente-note-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-goal-attente-note-vs",
+    "version" : "2.1.0",
+    "name" : "TDDUIGoalAttenteNoteVS"
+  },
+  {
+    "id" : "tddui-goal-objectif-note-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-goal-objectif-note-vs",
+    "version" : "2.1.0",
+    "name" : "TDDUIGoalObjectifNoteVS"
+  },
+  {
+    "id" : "tddui-serafin-valueset",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-serafin-valueset",
+    "version" : "2.1.0",
+    "name" : "TDDUISerafinValueSet"
+  }
+]
