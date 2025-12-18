@@ -129,7 +129,11 @@ Le rôle du Consommateur est de recueillir les données d'un logiciel DUI. Il co
           "type" : "Task",
           "supportedProfile" : [
             "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel",
-            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager"
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager",
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action",
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-bilan",
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource",
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-prestation"
           ],
           "interaction" : [
             {
@@ -152,6 +156,62 @@ Le rôle du Consommateur est de recueillir les données d'un logiciel DUI. Il co
           "type" : "DocumentReference",
           "supportedProfile" : [
             "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"
+          ],
+          "interaction" : [
+            {
+              "code" : "read"
+            }
+          ]
+        },
+        {
+          "type" : "CarePlan",
+          "supportedProfile" : [
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise"
+          ],
+          "interaction" : [
+            {
+              "code" : "read"
+            }
+          ]
+        },
+        {
+          "type" : "Consent",
+          "supportedProfile" : [
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord"
+          ],
+          "interaction" : [
+            {
+              "code" : "read"
+            }
+          ]
+        },
+        {
+          "type" : "Goal",
+          "supportedProfile" : [
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente",
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif"
+          ],
+          "interaction" : [
+            {
+              "code" : "read"
+            }
+          ]
+        },
+        {
+          "type" : "ServiceRequest",
+          "supportedProfile" : [
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin"
+          ],
+          "interaction" : [
+            {
+              "code" : "read"
+            }
+          ]
+        },
+        {
+          "type" : "RelatedPerson",
+          "supportedProfile" : [
+            "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person"
           ],
           "interaction" : [
             {

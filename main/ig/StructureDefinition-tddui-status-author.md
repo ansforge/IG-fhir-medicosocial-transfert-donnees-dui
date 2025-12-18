@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-status-author.
   "name" : "TDDUIStatusAuthor",
   "title" : "TDDUI Auteur statut",
   "status" : "active",
-  "date" : "2025-12-18T17:03:49+00:00",
+  "date" : "2025-12-18T17:22:25+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
