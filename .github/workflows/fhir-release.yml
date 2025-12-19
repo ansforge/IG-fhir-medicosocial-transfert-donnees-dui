@@ -11,10 +11,9 @@ jobs:
       - uses: actions/checkout@v3
         with:      
           path: igSource
-      - uses: ansforge/IG-workflows@main
+      - uses: ansforge/IG-workflows@nr-test-ig-registry-push
         with:      
-          repo_ig: "./igSource"
-          ig-publisher-version : "1.8.22"
+          repo_ig: "./igSource"   
           github_page: "true"
           github_page_token: ${{ secrets.GITHUB_TOKEN }}
           bake: "false"
