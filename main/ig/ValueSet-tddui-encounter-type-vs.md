@@ -56,7 +56,7 @@ ValueSet for TDDUI Encounter's types
   "title" : "TDDUI Encounter Type ValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-19T09:25:15+00:00",
+  "date" : "2025-12-19T09:58:03+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-bilan.csv
   "name" : "TDDUITaskBilan",
   "title" : "TDDUI Task Bilan",
   "status" : "active",
-  "date" : "2025-12-19T09:25:15+00:00",
+  "date" : "2025-12-19T09:58:03+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
