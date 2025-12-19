@@ -1,4 +1,4 @@
-# TDDUI Practitioner - Médicosocial - Transfert de données DUI v2.1.0
+# TDDUI Practitioner - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner | *Version*:2.1.0 |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner | *Version*:2.2.0-ballot |
 | Active as of 2025-12-19 | *Computable Name*:TDDUIPractitioner |
 
  
@@ -40,11 +40,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-practitioner.c
   "resourceType" : "StructureDefinition",
   "id" : "tddui-practitioner",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner",
-  "version" : "2.1.0",
+  "version" : "2.2.0-ballot",
   "name" : "TDDUIPractitioner",
   "title" : "TDDUI Practitioner",
   "status" : "active",
-  "date" : "2025-12-19T08:44:55+00:00",
+  "date" : "2025-12-19T09:03:44+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -100,7 +100,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-practitioner.c
   "kind" : "resource",
   "abstract" : false,
   "type" : "Practitioner",
-  "baseDefinition" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner",
+  "baseDefinition" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner|2.1.0",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -139,7 +139,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-practitioner.c
           {
             "code" : "HumanName",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name|2.2.0-ballot"
             ]
           }
         ]

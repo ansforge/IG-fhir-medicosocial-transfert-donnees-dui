@@ -66,7 +66,7 @@ In most cases, Tasks will have an intent of ""order"".","","","","","","","","",
 ","routine | urgent | asap | stat","Indicates how quickly the Task should be addressed with respect to other requests.","","Used to identify the service level expected while performing a task.","","If missing, this task should be performed with normal priority","","","","","",,"required","The task's priority.","http://hl7.org/fhir/ValueSet/request-priority|4.0.1","",,,,"Task.priority",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.priority",".priorityCode","FiveWs.grade"
 "Task.code","Task.code","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
-","Task Type","A name or code (or both) briefly describing what the task involves.","The title (eg ""My Tasks"", ""Outstanding Tasks for Patient X"") should go into the code.","","","","","","","","",,"required","","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis","",,,,"Task.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Task Type","A name or code (or both) briefly describing what the task involves.","The title (eg ""My Tasks"", ""Outstanding Tasks for Patient X"") should go into the code.","","","","","","","","",,"required","","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis|20250624152101","",,,,"Task.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","typeTransport","Request.code, Event.code",".code","FiveWs.what[x]"
 "Task.description","Task.description","","","",0,1,"","","Y","string {[]} {[]}
 ","Human-readable explanation of task","A free-text description of what is to be performed.","","","","","","","","","",,,,,"",,,,"Task.description",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -78,7 +78,7 @@ In most cases, Tasks will have an intent of ""order"".","","","","","","","","",
 ","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource|4.0.1]]}
 ","Beneficiary of the Task","The entity who benefits from the performance of the service specified in the task (e.g., the patient).","","Used to track tasks outstanding for a beneficiary.  Do not use to track the task owner or creator (see owner and creator respectively).  This can also affect access control.","","","","","","","",,,,,"",,,,"Task.for",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.subject, Event.subject",".participation[typeCode=RCT].role","FiveWs.subject[x]","FiveWs.subject"
-"Task.encounter","Task.encounter","","","",1,1,"","","Y","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement]]}
+"Task.encounter","Task.encounter","","","",1,1,"","","Y","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement|2.2.0-ballot]]}
 ","Healthcare event during which this task originated","The healthcare event  (e.g. a patient and healthcare provider interaction) during which this task was created.","","For some tasks it may be important to know the link between the encounter the task originated within.","","","","","","","",,,,,"",,,,"Task.encounter",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Evenement","Request.context, Event.context",".inboundRelationship[typeCode=COMP].source[classCode=PCPR, moodCode=EVN]","FiveWs.context"
 "Task.executionPeriod","Task.executionPeriod","","","",1,1,"","","Y","Period {[]} {[]}
@@ -116,7 +116,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Requested performer","The kind of participant that should perform the task.","","Use to distinguish tasks on different activity queues.","","","","","","","",,"preferred","The type(s) of task performers allowed.","http://hl7.org/fhir/ValueSet/performer-role|4.0.1","",,,,"Task.performerType",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.performer.role, Request.performerType",".participation[typeCode=PRF].role.code","FiveWs.actor"
 "Task.owner","Task.owner","","Performer
-Executer","",0,1,"","","Y","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization]]}
+Executer","",0,1,"","","Y","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization|2.2.0-ballot]]}
 ","Responsible individual","Individual organization or Device currently responsible for task execution.","Tasks may be created with an owner not yet identified.","Identifies who is expected to perform this task.","","","","","","","",,,,,"",,,,"Task.owner",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","transporteur","Event.performer.actor, Request.performer",".participation[typeCode=PRF].role","FiveWs.actor"
 "Task.location","Task.location","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Location|4.0.1]]}
@@ -181,7 +181,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
 "Task.input.type","Task.input.type","","Name
 ","",1,1,"","","","CodeableConcept {[]} {[]}
-","Label for the input","A code or description indicating how the input is intended to be used as part of the task execution.","If referencing a BPMN workflow or Protocol, the ""system"" is the URL for the workflow definition and the code is the ""name"" of the required input.","Inputs are named to enable task automation to bind data and pass it from one task to the next.","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Label for the input","A code or description indicating how the input is intended to be used as part of the task execution.","If referencing a BPMN workflow or Protocol, the ""system"" is the URL for the workflow definition and the code is the ""name"" of the required input.","Inputs are named to enable task automation to bind data and pass it from one task to the next.","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset|2.2.0-ballot","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","???"
 "Task.input.value[x]","Task.input.value[x]","","","",1,1,"","","","base64Binary {[]} {[]}
 boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[]}decimal {[]} {[]}id {[]} {[]}instant {[]} {[]}integer {[]} {[]}markdown {[]} {[]}oid {[]} {[]}positiveInt {[]} {[]}string {[]} {[]}time {[]} {[]}unsignedInt {[]} {[]}uri {[]} {[]}url {[]} {[]}uuid {[]} {[]}Address {[]} {[]}Age {[]} {[]}Annotation {[]} {[]}Attachment {[]} {[]}CodeableConcept {[]} {[]}Coding {[]} {[]}ContactPoint {[]} {[]}Count {[]} {[]}Distance {[]} {[]}Duration {[]} {[]}HumanName {[]} {[]}Identifier {[]} {[]}Money {[]} {[]}Period {[]} {[]}Quantity {[]} {[]}Range {[]} {[]}Ratio {[]} {[]}Reference {[]} {[]}SampledData {[]} {[]}Signature {[]} {[]}Timing {[]} {[]}ContactDetail {[]} {[]}Contributor {[]} {[]}DataRequirement {[]} {[]}Expression {[]} {[]}ParameterDefinition {[]} {[]}RelatedArtifact {[]} {[]}TriggerDefinition {[]} {[]}UsageContext {[]} {[]}Dosage {[]} {[]}Meta {[]} {[]}","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -209,10 +209,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem""/>
     <code value=""typeMotorisation""/>
   </coding>
-</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset|2.2.0-ballot","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","???"
 "Task.input:typeMotorisation.value[x]","Task.input.value[x]","","","",1,1,"","","","CodeableConcept {[]} {[]}
-","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,"required","","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-motorisation-cisis","",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,"required","","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-motorisation-cisis|20250624152100","",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","???"
 "Task.input:adresseDepart","Task.input","adresseDepart","Supporting Information
 ","",0,1,"","","","BackboneElement {[]} {[]}
@@ -237,7 +237,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem""/>
     <code value=""adresseDepart""/>
   </coding>
-</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset|2.2.0-ballot","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","???"
 "Task.input:adresseDepart.value[x]","Task.input.value[x]","","","",1,1,"","","","Address {[]} {[]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -265,7 +265,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem""/>
     <code value=""adresseDestination""/>
   </coding>
-</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset|2.2.0-ballot","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","???"
 "Task.input:adresseDestination.value[x]","Task.input.value[x]","","","",1,1,"","","","Address {[]} {[]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -293,7 +293,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem""/>
     <code value=""budgetPrevisionnel""/>
   </coding>
-</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset|2.2.0-ballot","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","???"
 "Task.input:budgetPrevisionnel.value[x]","Task.input.value[x]","","","",1,1,"","","","Money {[]} {[]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -321,7 +321,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem""/>
     <code value=""budgetReel""/>
   </coding>
-</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset|2.2.0-ballot","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","???"
 "Task.input:budgetReel.value[x]","Task.input.value[x]","","","",1,1,"","","","Money {[]} {[]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -349,7 +349,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem""/>
     <code value=""distance""/>
   </coding>
-</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset|2.2.0-ballot","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","???"
 "Task.input:distance.value[x]","Task.input.value[x]","","","",1,1,"","","","Distance {[]} {[]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -377,7 +377,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem""/>
     <code value=""dureeTheorique""/>
   </coding>
-</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset|2.2.0-ballot","",,,,"Task.input.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","???"
 "Task.input:dureeTheorique.value[x]","Task.input.value[x]","","","",1,1,"","","","Duration {[]} {[]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

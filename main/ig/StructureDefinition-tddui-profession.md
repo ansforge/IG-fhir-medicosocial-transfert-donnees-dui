@@ -1,4 +1,4 @@
-# TDDUI Profession - Médicosocial - Transfert de données DUI v2.1.0
+# TDDUI Profession - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-profession | *Version*:2.1.0 |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-profession | *Version*:2.2.0-ballot |
 | Active as of 2025-12-19 | *Computable Name*:TDDUIProfession |
 
 Extension permettant de représenter la profession du professionnel.
@@ -45,11 +45,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-profession.csv
   "resourceType" : "StructureDefinition",
   "id" : "tddui-profession",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-profession",
-  "version" : "2.1.0",
+  "version" : "2.2.0-ballot",
   "name" : "TDDUIProfession",
   "title" : "TDDUI Profession",
   "status" : "active",
-  "date" : "2025-12-19T08:44:55+00:00",
+  "date" : "2025-12-19T09:03:44+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -91,7 +91,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-profession.csv
     }
   ],
   "type" : "Extension",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -126,7 +126,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-profession.csv
         "path" : "Extension.value[x].coding",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J01-XdsAuthorSpecialty-CISIS/FHIR/JDV-J01-XdsAuthorSpecialty-CISIS"
+          "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J01-XdsAuthorSpecialty-CISIS/FHIR/JDV-J01-XdsAuthorSpecialty-CISIS|20250721120000"
         }
       }
     ]

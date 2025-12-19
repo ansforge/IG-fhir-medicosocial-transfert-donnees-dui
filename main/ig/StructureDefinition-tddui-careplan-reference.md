@@ -1,4 +1,4 @@
-# Lien vers le projet personnalisé - Médicosocial - Transfert de données DUI v2.1.0
+# Lien vers le projet personnalisé - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference | *Version*:2.1.0 |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference | *Version*:2.2.0-ballot |
 | Active as of 2025-12-19 | *Computable Name*:TDDUICarePlanProjetPersoRef |
 
 Liens vers le projet personnalisé, utilisables dans le profil TDDUIGoalObjectif.
@@ -43,11 +43,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-refer
   "resourceType" : "StructureDefinition",
   "id" : "tddui-careplan-reference",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference",
-  "version" : "2.1.0",
+  "version" : "2.2.0-ballot",
   "name" : "TDDUICarePlanProjetPersoRef",
   "title" : "Lien vers le projet personnalisé",
   "status" : "active",
-  "date" : "2025-12-19T08:44:55+00:00",
+  "date" : "2025-12-19T09:03:44+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -89,7 +89,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-refer
     }
   ],
   "type" : "Extension",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -116,7 +116,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-refer
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise|2.2.0-ballot"
             ]
           }
         ]

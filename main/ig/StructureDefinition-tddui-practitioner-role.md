@@ -1,4 +1,4 @@
-# TDDUI Practitioner Role - Médicosocial - Transfert de données DUI v2.1.0
+# TDDUI Practitioner Role - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role | *Version*:2.1.0 |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role | *Version*:2.2.0-ballot |
 | Active as of 2025-12-19 | *Computable Name*:TDDUIPractitionerRole |
 
  
@@ -40,11 +40,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-practitioner-r
   "resourceType" : "StructureDefinition",
   "id" : "tddui-practitioner-role",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role",
-  "version" : "2.1.0",
+  "version" : "2.2.0-ballot",
   "name" : "TDDUIPractitionerRole",
   "title" : "TDDUI Practitioner Role",
   "status" : "active",
-  "date" : "2025-12-19T08:44:55+00:00",
+  "date" : "2025-12-19T09:03:44+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -100,7 +100,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-practitioner-r
   "kind" : "resource",
   "abstract" : false,
   "type" : "PractitionerRole",
-  "baseDefinition" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role",
+  "baseDefinition" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role|2.1.0",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -124,7 +124,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-practitioner-r
           {
             "code" : "Extension",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exercise-mode"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exercise-mode|2.2.0-ballot"
             ]
           }
         ],
@@ -142,7 +142,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-practitioner-r
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner|2.2.0-ballot"
             ]
           }
         ]
@@ -154,7 +154,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-practitioner-r
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization|2.2.0-ballot"
             ]
           }
         ],
@@ -187,7 +187,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-practitioner-r
           {
             "code" : "Extension",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-profession"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-profession|2.2.0-ballot"
             ]
           }
         ],
@@ -203,7 +203,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-practitioner-r
         "path" : "PractitionerRole.code.coding",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J47-FunctionCode-CISIS/FHIR/JDV-J47-FunctionCode-CISIS"
+          "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J47-FunctionCode-CISIS/FHIR/JDV-J47-FunctionCode-CISIS|20250523120000"
         }
       }
     ]

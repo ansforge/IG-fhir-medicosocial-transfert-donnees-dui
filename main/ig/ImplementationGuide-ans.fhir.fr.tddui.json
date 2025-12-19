@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : ImplementationGuide ans.fhir.fr.tddui</b></p><a name=\"ans.fhir.fr.tddui\"> </a><a name=\"hcans.fhir.fr.tddui\"> </a><h2>TDDUI</h2><p>LURL officielle pour ce guide dimplémentation est : </p><pre>https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui</pre></div>"
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui",
-  "version" : "2.1.0",
+  "version" : "2.2.0-ballot",
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2025-12-19T08:44:55+00:00",
+  "date" : "2025-12-19T09:03:44+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -82,7 +82,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "trial-implementation"
+        "valueString" : "public-comment"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -105,6 +105,17 @@
       {
         "url" : "value",
         "valueString" : "../../expansion-params.json"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "pin-canonicals"
+      },
+      {
+        "url" : "value",
+        "valueString" : "pin-all"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -389,7 +400,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "trial-implementation"
+        "valueString" : "public-comment"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -412,6 +423,17 @@
       {
         "url" : "value",
         "valueString" : "../../expansion-params.json"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "pin-canonicals"
+      },
+      {
+        "url" : "value",
+        "valueString" : "pin-all"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -1506,7 +1528,7 @@
       },
       "name" : "tddui-encounter-evenement-example",
       "description" : "Exemple d'un évènement",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement|2.2.0-ballot"
     },
     {
       "extension" : [{
@@ -1518,7 +1540,7 @@
       },
       "name" : "tddui-encounter-sejour-example",
       "description" : "Exemple d'un séjour en ESSMS",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour|2.2.0-ballot"
     },
     {
       "extension" : [{
@@ -1542,7 +1564,7 @@
       },
       "name" : "tddui-organization-example",
       "description" : "ESSMS - Les Chênes Verts",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization|2.2.0-ballot"
     },
     {
       "extension" : [{
@@ -1554,7 +1576,7 @@
       },
       "name" : "tddui-patient-example",
       "description" : "Exemple de la ressource TDDUIPatient",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient|2.2.0-ballot"
     },
     {
       "extension" : [{
@@ -1566,7 +1588,7 @@
       },
       "name" : "tddui-patient-ins-example",
       "description" : "Exemple de la ressource TDDUIPatientINS",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins|2.2.0-ballot"
     },
     {
       "extension" : [{
@@ -1578,7 +1600,7 @@
       },
       "name" : "tddui-pp-ime-bundle-example",
       "description" : "Exemple de bundle conforme au profil TDDUIBundle contenant le projet personnalisé en IME",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle|2.2.0-ballot"
     },
     {
       "extension" : [{
@@ -1590,7 +1612,7 @@
       },
       "name" : "tddui-pp-ime-careplan-example",
       "description" : "Exemple du projet personnalisé d'un enfant en IME",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise|2.2.0-ballot"
     },
     {
       "extension" : [{
@@ -1602,7 +1624,7 @@
       },
       "name" : "tddui-pp-ime-consent-accord-example",
       "description" : "Exemple d'un accord de la structure",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord|2.2.0-ballot"
     },
     {
       "extension" : [{
@@ -1614,7 +1636,7 @@
       },
       "name" : "tddui-pp-ime-goal-objectif-1-example",
       "description" : "Exemple d'un objectif dans le cadre du projet personnalisé en IME.",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif|2.2.0-ballot"
     },
     {
       "extension" : [{
@@ -1626,7 +1648,7 @@
       },
       "name" : "tddui-pp-ime-goal-objectif-2-example",
       "description" : "Exemple d'un objectif dans le cadre du projet personnalisé en IME.",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif|2.2.0-ballot"
     },
     {
       "extension" : [{
@@ -1638,7 +1660,7 @@
       },
       "name" : "tddui-pp-ime-patient-example",
       "description" : "Exemple de la ressource TDDUIPatient dans le cadre d'un projet personnalisé en IME",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient|2.2.0-ballot"
     },
     {
       "extension" : [{
@@ -1650,7 +1672,7 @@
       },
       "name" : "tddui-pp-ime-task-action-1-aesh-example",
       "description" : "Exemple d'une action de l'objectif 1 réalisée par l'AESH dans le cadre du projet personnalisé en IME.",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action|2.2.0-ballot"
     },
     {
       "extension" : [{
@@ -1662,7 +1684,7 @@
       },
       "name" : "tddui-pp-ime-task-action-1-educ-example",
       "description" : "Exemple d'une action de l'objectif 1 réalisée par l'éducateur spécialisé dans le cadre du projet personnalisé en IME.",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action|2.2.0-ballot"
     },
     {
       "extension" : [{
@@ -1674,7 +1696,7 @@
       },
       "name" : "tddui-pp-pa-bundle-example",
       "description" : "Exemple de bundle conforme au profil TDDUIBundle contenant le projet personnalisé PA.",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle|2.2.0-ballot"
     },
     {
       "extension" : [{
@@ -1686,7 +1708,7 @@
       },
       "name" : "tddui-pp-pa-careplan-example",
       "description" : "Exemple d'un projet personnalisé PA",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise|2.2.0-ballot"
     },
     {
       "extension" : [{
@@ -1698,7 +1720,7 @@
       },
       "name" : "tddui-pp-pa-consent-accord-example",
       "description" : "Exemple d'un accord de la structure",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord|2.2.0-ballot"
     },
     {
       "extension" : [{
@@ -1710,7 +1732,7 @@
       },
       "name" : "tddui-pp-pa-documentreference-bilan-objectif-1-example",
       "description" : "Bilan de l'objectif 1 du projet personnalisé PA au format PDF",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference|2.2.0-ballot"
     },
     {
       "extension" : [{
@@ -1722,7 +1744,7 @@
       },
       "name" : "tddui-pp-pa-documentreference-entrant-example",
       "description" : "Entrant Projet Personnalisé PA au format PDF",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference|2.2.0-ballot"
     },
     {
       "extension" : [{
@@ -1734,7 +1756,7 @@
       },
       "name" : "tddui-pp-pa-goal-attente-famille-example",
       "description" : "Exemple des attentes de la famille dans le cadre du projet personnalisé PA.",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente|2.2.0-ballot"
     },
     {
       "extension" : [{
@@ -1746,7 +1768,7 @@
       },
       "name" : "tddui-pp-pa-goal-attente-usager-example",
       "description" : "Exemple des attentes de l'usager dans le cadre du projet personnalisé PA.",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente|2.2.0-ballot"
     },
     {
       "extension" : [{
@@ -1758,7 +1780,7 @@
       },
       "name" : "tddui-pp-pa-goal-objectif-1-example",
       "description" : "Exemple d'un objectif dans le cadre du projet personnalisé PA.",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif|2.2.0-ballot"
     },
     {
       "extension" : [{
@@ -1770,7 +1792,7 @@
       },
       "name" : "tddui-pp-pa-goal-objectif-2-example",
       "description" : "Exemple d'un objectif dans le cadre du projet personnalisé PA.",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif|2.2.0-ballot"
     },
     {
       "extension" : [{
@@ -1782,7 +1804,7 @@
       },
       "name" : "tddui-pp-pa-goal-objectif-3-example",
       "description" : "Exemple d'un objectif dans le cadre du projet personnalisé PA.",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif|2.2.0-ballot"
     },
     {
       "extension" : [{
@@ -1794,7 +1816,7 @@
       },
       "name" : "tddui-pp-pa-patient-example-pp",
       "description" : "Exemple de la ressource TDDUIPatient dans le cadre d'un projet personnalisé PA",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient|2.2.0-ballot"
     },
     {
       "extension" : [{
@@ -1806,7 +1828,7 @@
       },
       "name" : "tddui-pp-pa-practitioner-ide-example",
       "description" : "Exemple d'un IDE",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner|2.2.0-ballot"
     },
     {
       "extension" : [{
@@ -1818,7 +1840,7 @@
       },
       "name" : "tddui-pp-pa-questionnaire-response-aggir-pa-example",
       "description" : "Grille de réponse AGGIR PA",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response|2.2.0-ballot"
     },
     {
       "extension" : [{
@@ -1830,7 +1852,7 @@
       },
       "name" : "tddui-pp-pa-servicerequest-besoin-1-example",
       "description" : "Exemple d'un besoin de l'usager dans le cadre du projet personnalisé PA.",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin|2.2.0-ballot"
     },
     {
       "extension" : [{
@@ -1842,7 +1864,7 @@
       },
       "name" : "tddui-pp-pa-servicerequest-besoin-2-example",
       "description" : "Exemple d'un besoin de l'usager dans le cadre du projet personnalisé PA.",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin|2.2.0-ballot"
     },
     {
       "extension" : [{
@@ -1854,7 +1876,7 @@
       },
       "name" : "tddui-pp-pa-servicerequest-besoin-3-example",
       "description" : "Exemple d'un besoin de l'usager dans le cadre du projet personnalisé PA.",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin|2.2.0-ballot"
     },
     {
       "extension" : [{
@@ -1866,7 +1888,7 @@
       },
       "name" : "tddui-pp-pa-task-action-1-ergo-example",
       "description" : "Exemple d'une action de l'objectif 1 réalisée par l'ergothérapeute dans le cadre du projet personnalisé PA.",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action|2.2.0-ballot"
     },
     {
       "extension" : [{
@@ -1878,7 +1900,7 @@
       },
       "name" : "tddui-pp-pa-task-action-1-ide-example",
       "description" : "Exemple d'une action de l'objectif 1 réalisée par l'IDE dans le cadre du projet personnalisé PA.",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action|2.2.0-ballot"
     },
     {
       "extension" : [{
@@ -1890,7 +1912,7 @@
       },
       "name" : "tddui-pp-pa-task-action-1-kine-example",
       "description" : "Exemple d'une action de l'objectif 1 réalisée par le kinésithérapeute dans le cadre du projet personnalisé PA.",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action|2.2.0-ballot"
     },
     {
       "extension" : [{
@@ -1902,7 +1924,7 @@
       },
       "name" : "tddui-pp-pa-task-action-2-anim-example",
       "description" : "Exemple d'une action de l'objectif 1 réalisée par l'animatrice dans le cadre du projet personnalisé PA.",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action|2.2.0-ballot"
     },
     {
       "extension" : [{
@@ -1914,7 +1936,7 @@
       },
       "name" : "tddui-pp-pa-task-action-2-ide-example",
       "description" : "Exemple d'une action de l'objectif 2 réalisée par l'IDE dans le cadre du projet personnalisé PA.",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action|2.2.0-ballot"
     },
     {
       "extension" : [{
@@ -1926,7 +1948,7 @@
       },
       "name" : "tddui-pp-pa-task-action-3-psy-example",
       "description" : "Exemple d'une action de l'objectif 3 réalisée par le psychologue dans le cadre du projet personnalisé PA.",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action|2.2.0-ballot"
     },
     {
       "extension" : [{
@@ -1938,7 +1960,7 @@
       },
       "name" : "tddui-pp-pa-task-moyen-ressource-ergo-1-example",
       "description" : "Exemple des moyens et ressources de l'objectif 1 dans le cadre du projet personnalisé PA.",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource|2.2.0-ballot"
     },
     {
       "extension" : [{
@@ -1950,7 +1972,7 @@
       },
       "name" : "tddui-pp-pa-task-moyen-ressource-ide-1-example",
       "description" : "Exemple des moyens et ressources de l'objectif 1 dans le cadre du projet personnalisé PA.",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource|2.2.0-ballot"
     },
     {
       "extension" : [{
@@ -1962,7 +1984,7 @@
       },
       "name" : "tddui-pp-pa-task-moyen-ressource-ide-2-example",
       "description" : "Exemple des moyens et ressources de l'objectif 2 dans le cadre du projet personnalisé PA.",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource|2.2.0-ballot"
     },
     {
       "extension" : [{
@@ -1974,7 +1996,7 @@
       },
       "name" : "tddui-pp-pa-task-moyen-ressource-kine-1-example",
       "description" : "Exemple des moyens et ressources de l'objectif 1 dans le cadre du projet personnalisé PA.",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource|2.2.0-ballot"
     },
     {
       "extension" : [{
@@ -1986,7 +2008,7 @@
       },
       "name" : "tddui-practitioner-example",
       "description" : "Exemple d'un professionnel de santé",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner|2.2.0-ballot"
     },
     {
       "extension" : [{
@@ -1998,7 +2020,7 @@
       },
       "name" : "tddui-practitioner-role-example",
       "description" : "Exemple d'un professionnel de santé",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role|2.2.0-ballot"
     },
     {
       "extension" : [{
@@ -2022,7 +2044,7 @@
       },
       "name" : "tddui-questionnaire-response-aggir-pa-example",
       "description" : "Grille de réponse AGGIR PA",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response|2.2.0-ballot"
     },
     {
       "extension" : [{
@@ -2034,7 +2056,7 @@
       },
       "name" : "tddui-questionnaire-response-aggir-ph-example",
       "description" : "Grille de réponse AGGIR PH",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response|2.2.0-ballot"
     },
     {
       "extension" : [{
@@ -2046,7 +2068,7 @@
       },
       "name" : "tddui-questionnaire-response-serafin-precision-example",
       "description" : "Evaluation SERAFIN pour un besoin d'hébergement adapté avec précision",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response|2.2.0-ballot"
     },
     {
       "extension" : [{
@@ -2058,7 +2080,7 @@
       },
       "name" : "tddui-questionnaire-response-serafin-sans-precision-example",
       "description" : "Evaluation SERAFIN pour un besoin d'hébergement adapté sans précision",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response|2.2.0-ballot"
     },
     {
       "extension" : [{
@@ -2070,7 +2092,7 @@
       },
       "name" : "tddui-questionnaire-response-situation-ssiad-example",
       "description" : "Grille de réponse de la situation SSIAD",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response|2.2.0-ballot"
     },
     {
       "extension" : [{
@@ -2082,7 +2104,7 @@
       },
       "name" : "tddui-task-transport-example",
       "description" : "Exemple du transport.",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport|2.2.0-ballot"
     },
     {
       "extension" : [{
@@ -2094,7 +2116,7 @@
       },
       "name" : "tddui-task-transport-professionel-example",
       "description" : "Exemple du transport du professionnel.",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel|2.2.0-ballot"
     },
     {
       "extension" : [{
@@ -2106,7 +2128,7 @@
       },
       "name" : "tddui-task-transport-usager-example",
       "description" : "Exemple du transport de l'usager.",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager|2.2.0-ballot"
     },
     {
       "extension" : [{
@@ -2118,7 +2140,7 @@
       },
       "name" : "TDDUIBundleExample",
       "description" : "Exemple de bundle conforme au profil TDDUIBundle",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle|2.2.0-ballot"
     },
     {
       "extension" : [{
