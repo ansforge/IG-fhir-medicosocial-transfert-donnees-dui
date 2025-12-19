@@ -1,4 +1,4 @@
-# TDDUI Task Transport Usager - Médicosocial - Transfert de données DUI v2.1.0
+# TDDUI Task Transport Usager - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager | *Version*:2.1.0 |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager | *Version*:2.2.0-ballot |
 | Active as of 2025-12-19 | *Computable Name*:TDDUITaskTransportUsager |
 
  
@@ -39,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
   "resourceType" : "StructureDefinition",
   "id" : "tddui-task-transport-usager",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager",
-  "version" : "2.1.0",
+  "version" : "2.2.0-ballot",
   "name" : "TDDUITaskTransportUsager",
   "title" : "TDDUI Task Transport Usager",
   "status" : "active",
-  "date" : "2025-12-19T08:22:07+00:00",
+  "date" : "2025-12-19T09:47:21+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -99,7 +99,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
   "kind" : "resource",
   "abstract" : false,
   "type" : "Task",
-  "baseDefinition" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport",
+  "baseDefinition" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport|2.2.0-ballot",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -374,7 +374,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J282-TransportsLiesAuProjetIndividuel_SERAFIN/FHIR/JDV-J282-TransportsLiesAuProjetIndividuel-SERAFIN"
+          "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J282-TransportsLiesAuProjetIndividuel_SERAFIN/FHIR/JDV-J282-TransportsLiesAuProjetIndividuel-SERAFIN|20241025120000"
         }
       }
     ]

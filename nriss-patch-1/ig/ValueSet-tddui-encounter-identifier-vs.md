@@ -1,4 +1,4 @@
-# TDDUI Encounter Identifier Type ValueSet - Médicosocial - Transfert de données DUI v2.1.0
+# TDDUI Encounter Identifier Type ValueSet - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-identifier-vs | *Version*:2.1.0 |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-identifier-vs | *Version*:2.2.0-ballot |
 | Active as of 2025-12-19 | *Computable Name*:TDDUIEncounterIdentifierVs |
 
  
@@ -46,15 +46,17 @@ ValueSet for TDDUI Encounter's identifier types
   "resourceType" : "ValueSet",
   "id" : "tddui-encounter-identifier-vs",
   "meta" : {
-    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+    "profile" : [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
+    ]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-identifier-vs",
-  "version" : "2.1.0",
+  "version" : "2.2.0-ballot",
   "name" : "TDDUIEncounterIdentifierVs",
   "title" : "TDDUI Encounter Identifier Type ValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-19T08:22:07+00:00",
+  "date" : "2025-12-19T09:47:21+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -85,7 +87,7 @@ ValueSet for TDDUI Encounter's identifier types
         "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier-cs"
       },
       {
-        "valueSet" : ["http://hl7.org/fhir/ValueSet/identifier-type"]
+        "valueSet" : ["http://hl7.org/fhir/ValueSet/identifier-type|4.0.1"]
       }
     ]
   }

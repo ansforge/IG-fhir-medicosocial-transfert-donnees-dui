@@ -1,0 +1,55 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "8d8140eb-c62a-421a-9a00-7af900114ab5-95",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/8d8140eb-c62a-421a-9a00-7af900114ab5-95",
+  "name" : "UnionActPriorityAndActPriority",
+  "title" : "Union of ActPriority And ActPriority",
+  "status" : "active",
+  "date" : "2025-12-19T09:50:26+00:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "A"
+      },
+      {
+        "code" : "CR"
+      },
+      {
+        "code" : "EL"
+      },
+      {
+        "code" : "EM"
+      },
+      {
+        "code" : "P"
+      },
+      {
+        "code" : "PRN"
+      },
+      {
+        "code" : "R"
+      },
+      {
+        "code" : "RR"
+      },
+      {
+        "code" : "S"
+      },
+      {
+        "code" : "T"
+      },
+      {
+        "code" : "UD"
+      },
+      {
+        "code" : "UR"
+      }]
+    },
+    {
+      "valueSet" : ["http://terminology.hl7.org/ValueSet/v3-ActPriorityCallback"]
+    },
+    {
+      "valueSet" : ["http://terminology.hl7.org/ValueSet/v3-xEncounterAdmissionUrgency"]
+    }]
+  }
+}

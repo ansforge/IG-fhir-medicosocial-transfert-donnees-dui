@@ -52,7 +52,7 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"QuestionnaireResponse.extension:TDDUIQRParticipant","QuestionnaireResponse.extension","TDDUIQRParticipant","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant]]} {[]}
+"QuestionnaireResponse.extension:TDDUIQRParticipant","QuestionnaireResponse.extension","TDDUIQRParticipant","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant|2.2.0-ballot]]} {[]}
 ","Responsable et auteur du statut de l'évaluation","Extension permettant d'ajouter le responsable de l'évaluation et l'auteur du statut de l'évaluation dans un QuestionnaireResponse.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -74,7 +74,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "QuestionnaireResponse.extension:TDDUIQRParticipant.extension:TDDUIResponsible.url","QuestionnaireResponse.extension.extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""TDDUIResponsible""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
-"QuestionnaireResponse.extension:TDDUIQRParticipant.extension:TDDUIResponsible.value[x]","QuestionnaireResponse.extension.extension.value[x]","","","",0,1,"","","","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner]]}
+"QuestionnaireResponse.extension:TDDUIQRParticipant.extension:TDDUIResponsible.value[x]","QuestionnaireResponse.extension.extension.value[x]","","","",0,1,"","","","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner|2.2.0-ballot]]}
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
 "QuestionnaireResponse.extension:TDDUIQRParticipant.extension:TDDUIStatusAuthor","QuestionnaireResponse.extension.extension","TDDUIStatusAuthor","","",0,1,"","","","Extension {[]} {[]}
@@ -88,7 +88,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "QuestionnaireResponse.extension:TDDUIQRParticipant.extension:TDDUIStatusAuthor.url","QuestionnaireResponse.extension.extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""TDDUIStatusAuthor""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
-"QuestionnaireResponse.extension:TDDUIQRParticipant.extension:TDDUIStatusAuthor.value[x]","QuestionnaireResponse.extension.extension.value[x]","","","",0,1,"","","","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner]]}
+"QuestionnaireResponse.extension:TDDUIQRParticipant.extension:TDDUIStatusAuthor.value[x]","QuestionnaireResponse.extension.extension.value[x]","","","",0,1,"","","","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner|2.2.0-ballot]]}
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
 "QuestionnaireResponse.extension:TDDUIQRParticipant.url","QuestionnaireResponse.extension.url","","","",1,1,"","","","uri {[]} {[]}
@@ -96,11 +96,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "QuestionnaireResponse.extension:TDDUIQRParticipant.value[x]","QuestionnaireResponse.extension.value[x]","","","",0,0,"","","","base64Binary {[]} {[]}
 boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[]}decimal {[]} {[]}id {[]} {[]}instant {[]} {[]}integer {[]} {[]}markdown {[]} {[]}oid {[]} {[]}positiveInt {[]} {[]}string {[]} {[]}time {[]} {[]}unsignedInt {[]} {[]}uri {[]} {[]}url {[]} {[]}uuid {[]} {[]}Address {[]} {[]}Age {[]} {[]}Annotation {[]} {[]}Attachment {[]} {[]}CodeableConcept {[]} {[]}Coding {[]} {[]}ContactPoint {[]} {[]}Count {[]} {[]}Distance {[]} {[]}Duration {[]} {[]}HumanName {[]} {[]}Identifier {[]} {[]}Money {[]} {[]}Period {[]} {[]}Quantity {[]} {[]}Range {[]} {[]}Ratio {[]} {[]}Reference {[]} {[]}SampledData {[]} {[]}Signature {[]} {[]}Timing {[]} {[]}ContactDetail {[]} {[]}Contributor {[]} {[]}DataRequirement {[]} {[]}Expression {[]} {[]}ParameterDefinition {[]} {[]}RelatedArtifact {[]} {[]}TriggerDefinition {[]} {[]}UsageContext {[]} {[]}Dosage {[]} {[]}Meta {[]} {[]}","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
-"QuestionnaireResponse.extension:TDDUIAttachment","QuestionnaireResponse.extension","TDDUIAttachment","","",0,*,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment]]} {[]}
+"QuestionnaireResponse.extension:TDDUIAttachment","QuestionnaireResponse.extension","TDDUIAttachment","","",0,*,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment|2.2.0-ballot]]} {[]}
 ","Pièce jointe","Extension permettant de véhiculer des pièces jointes que ce soit pour l'évaluation, l'évènement ou le projet personnalisé. L'extension référence le profil PDSm_SimplifiedPublish.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","pieceJointeEvaluation","pieceJointeEvaluation"
-"QuestionnaireResponse.extension:TDDUIComment","QuestionnaireResponse.extension","TDDUIComment","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment]]} {[]}
+"QuestionnaireResponse.extension:TDDUIComment","QuestionnaireResponse.extension","TDDUIComment","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment|2.2.0-ballot]]} {[]}
 ","Commentaire","
 - **Séjour** : commentaire relatif au séjour.
 - **Événement** : commentaires sur le déroulé de l’évènement.
@@ -161,10 +161,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Correspondance des statuts métier avec les codes FHIR : TERMINE -> in-progress, APPROUVE -> completed, VALIDE -> amended.","The position of the questionnaire response within its overall lifecycle.","This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid.","The information on Questionnaire resources  may possibly be gathered during multiple sessions and altered after considered being finished.","","","","","","","",,"required","Lifecycle status of the questionnaire response.","http://hl7.org/fhir/ValueSet/questionnaire-answers-status|4.0.1","",,,,"QuestionnaireResponse.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Statut.statut","Statut.statut","Event.status",".statusCode (also whether there's a revisionControlAct - and possibly mood to distinguish ""in-progress"" from ""published)","FiveWs.status"
 "QuestionnaireResponse.subject","QuestionnaireResponse.subject","","Patient
-Focus","",1,1,"","","Y","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient], CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins]]}
+Focus","",1,1,"","","Y","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient|2.2.0-ballot], CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins|2.2.0-ballot]]}
 ","The subject of the questions","The subject of the questionnaire response.  This could be a patient, organization, practitioner, device, etc.  This is who/what the answers apply to, but is not necessarily the source of information.","If the Questionnaire declared a subjectType, the resource pointed to by this element must be an instance of one of the listed types.","Allows linking the answers to the individual the answers describe.  May also affect access control.","","","","","","","",,,,,"",,,,"QuestionnaireResponse.subject",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Usager","Usager","Event.subject",".participation[typeCode=SBJ].role","FiveWs.subject[x]","FiveWs.subject"
-"QuestionnaireResponse.encounter","QuestionnaireResponse.encounter","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement]]}
+"QuestionnaireResponse.encounter","QuestionnaireResponse.encounter","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement|2.2.0-ballot]]}
 ","Encounter created as part of","The Encounter during which this questionnaire response was created or to which the creation of this record is tightly associated.","This will typically be the encounter the event occurred within, but some activities may be initiated prior to or after the official completion of an encounter but still be tied to the context of the encounter. A questionnaire that was initiated during an encounter but not fully completed during the encounter would still generally be associated with the encounter.","Provides context for the information that was captured.  May also affect access control.","","","","","","","",,,,,"",,,,"QuestionnaireResponse.encounter",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Evenement","Evenement","Event.encounter",".inboundRelationship(typeCode=COMP].source[classCode<=PCPR, moodCode=EVN]","FiveWs.context"
 "QuestionnaireResponse.authored","QuestionnaireResponse.authored","","Date Created
@@ -174,10 +174,10 @@ Date publishedDate IssuedDate updated","",0,1,"","","Y","dateTime {[]} {[]}
 This element is optional to allow for systems that might not know the value, however it SHOULD be populated if possible.","Clinicians need to be able to check the date that the information in the questionnaire was collected, to derive the context of the answers.","","","","","","","",,,,,"",,,,"QuestionnaireResponse.authored",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","dateEvaluation","dateEvaluation","Event.occurrence[x]",".participation[typeCode=AUT].time","FiveWs.recorded"
 "QuestionnaireResponse.author","QuestionnaireResponse.author","","Laboratory
-ServicePractitionerDepartmentCompanyPerformer","",0,1,"","","Y","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner]]}
+ServicePractitionerDepartmentCompanyPerformer","",0,1,"","","Y","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner|2.2.0-ballot]]}
 ","Person who received and recorded the answers","Person who received the answers to the questions in the QuestionnaireResponse and recorded them in the system.","Mapping a subject's answers to multiple choice options and determining what to put in the textual answer is a matter of interpretation.  Authoring by device would indicate that some portion of the questionnaire had been auto-populated.","Need to know who interpreted the subject's answers to the questions in the questionnaire, and selected the appropriate options for answers.","","","","","","","",,,,,"",,,,"QuestionnaireResponse.author",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Auteur","Auteur","Event.performer",".participation[typeCode=AUT].role","FiveWs.author"
-"QuestionnaireResponse.source","QuestionnaireResponse.source","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner]]}
+"QuestionnaireResponse.source","QuestionnaireResponse.source","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner|2.2.0-ballot]]}
 ","The person who answered the questions","The person who answered the questions about the subject.","If not specified, no inference can be made about who provided the data.","When answering questions about a subject that is minor, incapable of answering or an animal, another human source may answer the questions.","","","","","","","",,,,,"",,,,"QuestionnaireResponse.source",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Evaluateur","Evaluateur",".participation[typeCode=INF].role","FiveWs.source"
 "QuestionnaireResponse.item","QuestionnaireResponse.item","","","",1,*,"","","","BackboneElement {[]} {[]}
@@ -189,7 +189,7 @@ qrs-1:Nested item can't be beneath both item and answer {(answer.exists() and it
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"QuestionnaireResponse.item.extension:TDDUIComment","QuestionnaireResponse.item.extension","TDDUIComment","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment]]} {[]}
+"QuestionnaireResponse.item.extension:TDDUIComment","QuestionnaireResponse.item.extension","TDDUIComment","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment|2.2.0-ballot]]} {[]}
 ","Commentaire","
 - **Séjour** : commentaire relatif au séjour.
 - **Événement** : commentaires sur le déroulé de l’évènement.
@@ -244,7 +244,7 @@ decimal {[]} {[]}integer {[]} {[]}date {[]} {[]}dateTime {[]} {[]}time {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"QuestionnaireResponse.item.item.extension:TDDUIComment","QuestionnaireResponse.item.item.extension","TDDUIComment","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment]]} {[]}
+"QuestionnaireResponse.item.item.extension:TDDUIComment","QuestionnaireResponse.item.item.extension","TDDUIComment","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment|2.2.0-ballot]]} {[]}
 ","Commentaire","
 - **Séjour** : commentaire relatif au séjour.
 - **Événement** : commentaires sur le déroulé de l’évènement.
@@ -299,7 +299,7 @@ decimal {[]} {[]}integer {[]} {[]}date {[]} {[]}dateTime {[]} {[]}time {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"QuestionnaireResponse.item.item.item.extension:TDDUIComment","QuestionnaireResponse.item.item.item.extension","TDDUIComment","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment]]} {[]}
+"QuestionnaireResponse.item.item.item.extension:TDDUIComment","QuestionnaireResponse.item.item.item.extension","TDDUIComment","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment|2.2.0-ballot]]} {[]}
 ","Commentaire","
 - **Séjour** : commentaire relatif au séjour.
 - **Événement** : commentaires sur le déroulé de l’évènement.

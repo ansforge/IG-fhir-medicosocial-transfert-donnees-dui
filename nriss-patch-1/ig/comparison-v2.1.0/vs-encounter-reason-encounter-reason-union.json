@@ -1,0 +1,39 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "8d8140eb-c62a-421a-9a00-7af900114ab5-101",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/8d8140eb-c62a-421a-9a00-7af900114ab5-101",
+  "name" : "UnionEncounterReasonCodesAndEncounterReasonCodes",
+  "title" : "Union of Encounter Reason Codes And Encounter Reason Codes",
+  "status" : "draft",
+  "date" : "2025-12-19T09:50:26+00:00",
+  "compose" : {
+    "include" : [{
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "404684003"
+      }]
+    },
+    {
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "71388002"
+      }]
+    },
+    {
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "243796009"
+      }]
+    },
+    {
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "272379006"
+      }]
+    }]
+  }
+}
