@@ -1,4 +1,4 @@
-# TDDUI Goal Attente Note ValueSet - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Goal Attente Note ValueSet - Médicosocial - Transfert de données DUI v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-goal-attente-note-vs | *Version*:2.2.0-ballot |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-goal-attente-note-vs | *Version*:2.1.0 |
 | Active as of 2025-12-19 | *Computable Name*:TDDUIGoalAttenteNoteVS |
 
  
@@ -46,17 +46,15 @@ ValueSet définissant les types de notes pour l'élément Goal.note.
   "resourceType" : "ValueSet",
   "id" : "tddui-goal-attente-note-vs",
   "meta" : {
-    "profile" : [
-      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
-    ]
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-goal-attente-note-vs",
-  "version" : "2.2.0-ballot",
+  "version" : "2.1.0",
   "name" : "TDDUIGoalAttenteNoteVS",
   "title" : "TDDUI Goal Attente Note ValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-19T08:32:44+00:00",
+  "date" : "2025-12-19T08:44:55+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -85,7 +83,7 @@ ValueSet définissant les types de notes pour l'élément Goal.note.
     "include" : [
       {
         "valueSet" : [
-          "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-discriminator-vs|2.2.0-ballot"
+          "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-discriminator-vs"
         ]
       }
     ],

@@ -1,4 +1,4 @@
-# InputTDDUITaskPrestationCodeSystem - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# InputTDDUITaskPrestationCodeSystem - Médicosocial - Transfert de données DUI v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-prestation-codesystem | *Version*:2.2.0-ballot |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-prestation-codesystem | *Version*:2.1.0 |
 | Active as of 2025-12-19 | *Computable Name*:InputTDDUITaskPrestationCodeSystem |
 
  
@@ -28,16 +28,16 @@ CodeSystem pour la définition des éléments spécifiques des input dans la res
   "id" : "input-tddui-task-prestation-codesystem",
   "meta" : {
     "profile" : [
-      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1"
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
     ]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-prestation-codesystem",
-  "version" : "2.2.0-ballot",
+  "version" : "2.1.0",
   "name" : "InputTDDUITaskPrestationCodeSystem",
   "title" : "InputTDDUITaskPrestationCodeSystem",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-19T08:32:44+00:00",
+  "date" : "2025-12-19T08:44:55+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

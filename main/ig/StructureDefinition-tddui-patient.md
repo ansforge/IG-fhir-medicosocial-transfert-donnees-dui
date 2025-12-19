@@ -1,4 +1,4 @@
-# TDDUI Patient - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Patient - Médicosocial - Transfert de données DUI v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient | *Version*:2.2.0-ballot |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient | *Version*:2.1.0 |
 | Active as of 2025-12-19 | *Computable Name*:TDDUIPatient |
 
  
@@ -40,11 +40,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient.csv), 
   "resourceType" : "StructureDefinition",
   "id" : "tddui-patient",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient",
-  "version" : "2.2.0-ballot",
+  "version" : "2.1.0",
   "name" : "TDDUIPatient",
   "title" : "TDDUI Patient",
   "status" : "active",
-  "date" : "2025-12-19T08:32:44+00:00",
+  "date" : "2025-12-19T08:44:55+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -105,7 +105,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient.csv), 
   "kind" : "resource",
   "abstract" : false,
   "type" : "Patient",
-  "baseDefinition" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.1.0",
+  "baseDefinition" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -154,7 +154,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient.csv), 
         "path" : "Patient.identifier.type",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-patient-identifier-vs|2.2.0-ballot"
+          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-patient-identifier-vs"
         }
       },
       {
@@ -247,7 +247,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient.csv), 
           {
             "code" : "HumanName",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name|2.2.0-ballot"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name"
             ]
           }
         ]
@@ -261,7 +261,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient.csv), 
           {
             "code" : "HumanName",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name|2.2.0-ballot"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name"
             ]
           }
         ]
@@ -296,7 +296,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient.csv), 
           {
             "code" : "HumanName",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name|2.2.0-ballot"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name"
             ]
           }
         ]
@@ -348,7 +348,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient.csv), 
         "short" : "male | female | unknown",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-gender-INS|2.1.0"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-gender-INS"
         },
         "mapping" : [
           {
@@ -393,7 +393,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient.csv), 
           {
             "code" : "Extension",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order|2.2.0-ballot"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order"
             ]
           }
         ],

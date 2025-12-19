@@ -1,4 +1,4 @@
-# TDDUI Consent Accord - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Consent Accord - Médicosocial - Transfert de données DUI v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord | *Version*:2.2.0-ballot |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord | *Version*:2.1.0 |
 | Active as of 2025-12-19 | *Computable Name*:TDDUIConsentAccord |
 
  
@@ -40,11 +40,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-consent-accord
   "resourceType" : "StructureDefinition",
   "id" : "tddui-consent-accord",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord",
-  "version" : "2.2.0-ballot",
+  "version" : "2.1.0",
   "name" : "TDDUIConsentAccord",
   "title" : "TDDUI Consent Accord",
   "status" : "active",
-  "date" : "2025-12-19T08:32:44+00:00",
+  "date" : "2025-12-19T08:44:55+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -100,7 +100,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-consent-accord
   "kind" : "resource",
   "abstract" : false,
   "type" : "Consent",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Consent|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Consent",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -169,11 +169,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-consent-accord
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role|2.2.0-ballot",
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner|2.2.0-ballot",
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person|2.1.0",
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient|2.2.0-ballot",
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins|2.2.0-ballot"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role",
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person",
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient",
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"
             ]
           }
         ],

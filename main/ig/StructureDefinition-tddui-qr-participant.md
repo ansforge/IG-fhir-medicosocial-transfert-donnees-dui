@@ -1,4 +1,4 @@
-# Responsable et auteur du statut de l'évaluation - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# Responsable et auteur du statut de l'évaluation - Médicosocial - Transfert de données DUI v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant | *Version*:2.2.0-ballot |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant | *Version*:2.1.0 |
 | Active as of 2025-12-19 | *Computable Name*:TDDUIQRParticipant |
 
 Extension permettant d'ajouter le responsable de l'évaluation et l'auteur du statut de l'évaluation dans un QuestionnaireResponse.
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-qr-participant
   "resourceType" : "StructureDefinition",
   "id" : "tddui-qr-participant",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant",
-  "version" : "2.2.0-ballot",
+  "version" : "2.1.0",
   "name" : "TDDUIQRParticipant",
   "title" : "Responsable et auteur du statut de l'évaluation",
   "status" : "active",
-  "date" : "2025-12-19T08:32:44+00:00",
+  "date" : "2025-12-19T08:44:55+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -88,7 +88,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-qr-participant
     }
   ],
   "type" : "Extension",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -123,7 +123,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-qr-participant
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner|2.2.0-ballot"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner"
             ]
           }
         ]
@@ -153,7 +153,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-qr-participant
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner|2.2.0-ballot"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner"
             ]
           }
         ]

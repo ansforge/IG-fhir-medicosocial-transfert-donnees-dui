@@ -1,4 +1,4 @@
-# TDDUI Task Bilan - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Task Bilan - Médicosocial - Transfert de données DUI v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-bilan | *Version*:2.2.0-ballot |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-bilan | *Version*:2.1.0 |
 | Active as of 2025-12-19 | *Computable Name*:TDDUITaskBilan |
 
  
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-bilan.csv
   "resourceType" : "StructureDefinition",
   "id" : "tddui-task-bilan",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-bilan",
-  "version" : "2.2.0-ballot",
+  "version" : "2.1.0",
   "name" : "TDDUITaskBilan",
   "title" : "TDDUI Task Bilan",
   "status" : "active",
-  "date" : "2025-12-19T08:32:44+00:00",
+  "date" : "2025-12-19T08:44:55+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -98,7 +98,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-bilan.csv
   "kind" : "resource",
   "abstract" : false,
   "type" : "Task",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Task|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Task",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -151,7 +151,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-bilan.csv
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise|2.2.0-ballot"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise"
             ]
           }
         ],
@@ -167,7 +167,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-bilan.csv
         "path" : "Task.code",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j366-statut-bilan-projet-personnalise-ms|20250415120000"
+          "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j366-statut-bilan-projet-personnalise-ms"
         },
         "mapping" : [
           {
@@ -210,7 +210,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-bilan.csv
         "path" : "Task.input.type",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-bilan-valueset|2.2.0-ballot"
+          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-bilan-valueset"
         }
       },
       {
@@ -351,7 +351,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-bilan.csv
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference|2.2.0-ballot"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"
             ]
           }
         ]
@@ -451,10 +451,10 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-bilan.csv
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner|2.2.0-ballot",
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient|2.2.0-ballot",
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins|2.2.0-ballot",
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person|2.1.0"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner",
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient",
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person"
             ]
           }
         ],
@@ -493,7 +493,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-bilan.csv
         "path" : "Task.output.type",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/output-tddui-task-bilan-valueset|2.2.0-ballot"
+          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/output-tddui-task-bilan-valueset"
         }
       },
       {

@@ -1,4 +1,4 @@
-# tddui-pp-pa-task-moyen-ressource-ide-1-example - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# tddui-pp-pa-task-moyen-ressource-ide-1-example - Médicosocial - Transfert de données DUI v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

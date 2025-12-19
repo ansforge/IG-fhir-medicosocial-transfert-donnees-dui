@@ -1,4 +1,4 @@
-# TDDUI Task Transport - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Task Transport - Médicosocial - Transfert de données DUI v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport | *Version*:2.2.0-ballot |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport | *Version*:2.1.0 |
 | Active as of 2025-12-19 | *Computable Name*:TDDUITaskTransport |
 
  
@@ -43,11 +43,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
   "resourceType" : "StructureDefinition",
   "id" : "tddui-task-transport",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport",
-  "version" : "2.2.0-ballot",
+  "version" : "2.1.0",
   "name" : "TDDUITaskTransport",
   "title" : "TDDUI Task Transport",
   "status" : "active",
-  "date" : "2025-12-19T08:32:44+00:00",
+  "date" : "2025-12-19T08:44:55+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -104,7 +104,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
   "kind" : "resource",
   "abstract" : false,
   "type" : "Task",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Task|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Task",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -135,7 +135,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
         "path" : "Task.code",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis|20250624152101"
+          "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis"
         },
         "mapping" : [
           {
@@ -152,7 +152,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement|2.2.0-ballot"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement"
             ]
           }
         ],
@@ -197,7 +197,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization|2.2.0-ballot"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization"
             ]
           }
         ],
@@ -226,7 +226,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
         "path" : "Task.input.type",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset|2.2.0-ballot"
+          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset"
         }
       },
       {
@@ -265,7 +265,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-motorisation-cisis|20250624152100"
+          "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-motorisation-cisis"
         }
       },
       {

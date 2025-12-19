@@ -1,4 +1,4 @@
-# Accueil - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# Accueil - Médicosocial - Transfert de données DUI v2.1.0
 
 * [**Table of Contents**](toc.md)
 * **Accueil**
@@ -7,14 +7,11 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui | *Version*:2.2.0-ballot |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui | *Version*:2.1.0 |
 | Active as of 2025-12-19 | *Computable Name*:TDDUI |
 
  **Brief description of this Implementation Guide**
  The Digital User File (DUI) centralizes all information concerning the person being cared for in social and medico-social facilities and services. The aim of this implementation guide is to define the specifications for DUI data transfer. 
-
-> **Attention !**
-Cet Implementation Guide est actuellement en concertation. La version courante est accessible à l'adresse : http://interop.esante.gouv.fr/ig/fhir/tddui
 
 ### Introduction
 
@@ -72,28 +69,28 @@ Les ressources profilées dans le cadre de ce guide d'implémentation sont les s
 | | | |
 | :--- | :--- | :--- |
 | Profil parent | Profil | Description |
-| [Bundle](http://hl7.org/fhir/StructureDefinition/Bundle|4.0.1) | [TDDUIBundle](StructureDefinition-tddui-bundle.md) | Profil générique créé pour transmettre des données d'un logiciel DUI. |
-| [CarePlan](http://hl7.org/fhir/StructureDefinition/CarePlan|4.0.1) | [TDDUICarePlanProjetPersonnalise](StructureDefinition-tddui-careplan-projet-personnalise.md) | Profil de la ressource CarePlan représentant le projet personnalisé d'un usager. |
-| [Consent](http://hl7.org/fhir/StructureDefinition/Consent|4.0.1) | [TDDUIConsentAccord](StructureDefinition-tddui-consent-accord.md) | Profil de la ressource Consent permettant de représenter l'accord de l'usager, de son entourage ou de la structure. |
-| [MHD DocumentReference for Simplified Publish](https://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.SimplifiedPublish.DocumentReference|4.2.0) | [TDDUIDocumentReference](StructureDefinition-tddui-document-reference.md) | Profil de la ressource SimplifiedPublishDocumentReference permettant de véhiculer des pièces jointes que ce soit pour l'évaluation, l'évènement ou le projet personnalisé. |
-| [Encounter](http://hl7.org/fhir/StructureDefinition/Encounter|4.0.1) | [TDDUIEncounterEvenement](StructureDefinition-tddui-encounter-evenement.md) | Profil de la ressource Encounter permettant de regrouper les évènements liés à la prise en charge de l’usager dans une structure ESSMS. |
-| [Encounter](http://hl7.org/fhir/StructureDefinition/Encounter|4.0.1) | [TDDUIEncounterSejour](StructureDefinition-tddui-encounter-sejour.md) | Profil de la ressource Encounter permettant de regrouper les informations relatives au séjour d'un usager dans une structure ESSMS |
-| [Goal](http://hl7.org/fhir/StructureDefinition/Goal|4.0.1) | [TDDUIGoalAttente](StructureDefinition-tddui-goal-attente.md) | Profil de la ressource Goal permettant de représenter les attentes pour un usager. |
-| [Goal](http://hl7.org/fhir/StructureDefinition/Goal|4.0.1) | [TDDUIGoalObjectif](StructureDefinition-tddui-goal-objectif.md) | Profil de la ressource Goal permettant de représenter les résultats à atteindre dans le cadre du projet personnalisé. |
-| [FR Core Organization Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.1.0) | [TDDUIOrganization](StructureDefinition-tddui-organization.md) | Profil de la ressource FRCoreOrganizationProfile permettant de représenter les entités juridiques. |
-| [FR Core Patient Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.1.0) | [TDDUIPatient](StructureDefinition-tddui-patient.md) | Profil de la ressource FrCorePatientProfile permettant de représenter un usager lorsque l'INS n'est pas transmis. |
-| [FR Core Patient INS Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.1.0) | [TDDUIPatientINS](StructureDefinition-tddui-patient-ins.md) | Profil de la ressource FRCorePatientINSProfile permettant de représenter un usager lorsque l'INS est transmis. |
-| [FR Core Practitioner Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner|2.1.0) | [TDDUIPractitioner](StructureDefinition-tddui-practitioner.md) | Profil de la ressource FRCorePractitionerProfile permettant de représenter un professionnel du médicosocial dans le cadre de TDDUI. Le profil AsPractitionerRoleProfile n'a pas été utilisé car il comportait trop de contraintes non présentes dans les DUI. |
-| [FR Core Practitioner Role](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role|2.1.0) | [TDDUIPractitionerRole](StructureDefinition-tddui-practitioner-role.md) | Profil de la ressource FRCorePractitionerRole permettant de représenter un Professionnel. |
-| [QuestionnaireResponse](http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse|4.0.1) | [TDDUIQuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md) | Profil de la ressource QuestionnaireResponse utilisé pour transmettre les réponses aux questionnaires dans le cadre des évaluations. |
-| [ServiceRequest](http://hl7.org/fhir/StructureDefinition/ServiceRequest|4.0.1) | [TDDUIServiceRequestBesoin](StructureDefinition-tddui-service-request-besoin.md) | Profil de la ressource ServiceRequest permettant de représenter les besoins de l'usager. |
-| [Task](http://hl7.org/fhir/StructureDefinition/Task|4.0.1) | [TDDUITaskAction](StructureDefinition-tddui-task-action.md) | Profil de la ressource Task permettant de représenter les actions réalisées dans le cadre du projet personnalisé. |
-| [Task](http://hl7.org/fhir/StructureDefinition/Task|4.0.1) | [TDDUITaskBilan](StructureDefinition-tddui-task-bilan.md) | Profil de la ressource Task permettant de représenter le bilan du projet personnalisé. |
-| [Task](http://hl7.org/fhir/StructureDefinition/Task|4.0.1) | [TDDUITaskMoyenRessource](StructureDefinition-tddui-task-moyen-ressource.md) | Profil de la ressource Task permettant de représenter les moyens ou ressources utilisées dans le cadre du projet personnalisé. |
-| [Task](http://hl7.org/fhir/StructureDefinition/Task|4.0.1) | [TDDUITaskPrestation](StructureDefinition-tddui-task-prestation.md) | Profil de la ressource Task permettant de représenter les prestations du projet personnalisé. |
-| [Task](http://hl7.org/fhir/StructureDefinition/Task|4.0.1) | [TDDUITaskTransport](StructureDefinition-tddui-task-transport.md) | Profil de la ressource Task permettant de représenter le transport. |
-| [TDDUI Task Transport](https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport|2.2.0-ballot) | [TDDUITaskTransportProfessionnel](StructureDefinition-tddui-task-transport-professionnel.md) | Profil de la ressource TDDUITaskTransport permettant de représenter le transport du professionnel. |
-| [TDDUI Task Transport](https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport|2.2.0-ballot) | [TDDUITaskTransportUsager](StructureDefinition-tddui-task-transport-usager.md) | Profil de la ressource TDDUITaskTransport permettant de représenter le transport de l'usager. |
+| [Bundle](http://hl7.org/fhir/StructureDefinition/Bundle) | [TDDUIBundle](StructureDefinition-tddui-bundle.md) | Profil générique créé pour transmettre des données d'un logiciel DUI. |
+| [CarePlan](http://hl7.org/fhir/StructureDefinition/CarePlan) | [TDDUICarePlanProjetPersonnalise](StructureDefinition-tddui-careplan-projet-personnalise.md) | Profil de la ressource CarePlan représentant le projet personnalisé d'un usager. |
+| [Consent](http://hl7.org/fhir/StructureDefinition/Consent) | [TDDUIConsentAccord](StructureDefinition-tddui-consent-accord.md) | Profil de la ressource Consent permettant de représenter l'accord de l'usager, de son entourage ou de la structure. |
+| [MHD DocumentReference for Simplified Publish](https://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.SimplifiedPublish.DocumentReference) | [TDDUIDocumentReference](StructureDefinition-tddui-document-reference.md) | Profil de la ressource SimplifiedPublishDocumentReference permettant de véhiculer des pièces jointes que ce soit pour l'évaluation, l'évènement ou le projet personnalisé. |
+| [Encounter](http://hl7.org/fhir/StructureDefinition/Encounter) | [TDDUIEncounterEvenement](StructureDefinition-tddui-encounter-evenement.md) | Profil de la ressource Encounter permettant de regrouper les évènements liés à la prise en charge de l’usager dans une structure ESSMS. |
+| [Encounter](http://hl7.org/fhir/StructureDefinition/Encounter) | [TDDUIEncounterSejour](StructureDefinition-tddui-encounter-sejour.md) | Profil de la ressource Encounter permettant de regrouper les informations relatives au séjour d'un usager dans une structure ESSMS |
+| [Goal](http://hl7.org/fhir/StructureDefinition/Goal) | [TDDUIGoalAttente](StructureDefinition-tddui-goal-attente.md) | Profil de la ressource Goal permettant de représenter les attentes pour un usager. |
+| [Goal](http://hl7.org/fhir/StructureDefinition/Goal) | [TDDUIGoalObjectif](StructureDefinition-tddui-goal-objectif.md) | Profil de la ressource Goal permettant de représenter les résultats à atteindre dans le cadre du projet personnalisé. |
+| [FR Core Organization Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization) | [TDDUIOrganization](StructureDefinition-tddui-organization.md) | Profil de la ressource FRCoreOrganizationProfile permettant de représenter les entités juridiques. |
+| [FR Core Patient Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient) | [TDDUIPatient](StructureDefinition-tddui-patient.md) | Profil de la ressource FrCorePatientProfile permettant de représenter un usager lorsque l'INS n'est pas transmis. |
+| [FR Core Patient INS Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins) | [TDDUIPatientINS](StructureDefinition-tddui-patient-ins.md) | Profil de la ressource FRCorePatientINSProfile permettant de représenter un usager lorsque l'INS est transmis. |
+| [FR Core Practitioner Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner) | [TDDUIPractitioner](StructureDefinition-tddui-practitioner.md) | Profil de la ressource FRCorePractitionerProfile permettant de représenter un professionnel du médicosocial dans le cadre de TDDUI. Le profil AsPractitionerRoleProfile n'a pas été utilisé car il comportait trop de contraintes non présentes dans les DUI. |
+| [FR Core Practitioner Role](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role) | [TDDUIPractitionerRole](StructureDefinition-tddui-practitioner-role.md) | Profil de la ressource FRCorePractitionerRole permettant de représenter un Professionnel. |
+| [QuestionnaireResponse](http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse) | [TDDUIQuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md) | Profil de la ressource QuestionnaireResponse utilisé pour transmettre les réponses aux questionnaires dans le cadre des évaluations. |
+| [ServiceRequest](http://hl7.org/fhir/StructureDefinition/ServiceRequest) | [TDDUIServiceRequestBesoin](StructureDefinition-tddui-service-request-besoin.md) | Profil de la ressource ServiceRequest permettant de représenter les besoins de l'usager. |
+| [Task](http://hl7.org/fhir/StructureDefinition/Task) | [TDDUITaskAction](StructureDefinition-tddui-task-action.md) | Profil de la ressource Task permettant de représenter les actions réalisées dans le cadre du projet personnalisé. |
+| [Task](http://hl7.org/fhir/StructureDefinition/Task) | [TDDUITaskBilan](StructureDefinition-tddui-task-bilan.md) | Profil de la ressource Task permettant de représenter le bilan du projet personnalisé. |
+| [Task](http://hl7.org/fhir/StructureDefinition/Task) | [TDDUITaskMoyenRessource](StructureDefinition-tddui-task-moyen-ressource.md) | Profil de la ressource Task permettant de représenter les moyens ou ressources utilisées dans le cadre du projet personnalisé. |
+| [Task](http://hl7.org/fhir/StructureDefinition/Task) | [TDDUITaskPrestation](StructureDefinition-tddui-task-prestation.md) | Profil de la ressource Task permettant de représenter les prestations du projet personnalisé. |
+| [Task](http://hl7.org/fhir/StructureDefinition/Task) | [TDDUITaskTransport](StructureDefinition-tddui-task-transport.md) | Profil de la ressource Task permettant de représenter le transport. |
+| [TDDUI Task Transport](https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport) | [TDDUITaskTransportProfessionnel](StructureDefinition-tddui-task-transport-professionnel.md) | Profil de la ressource TDDUITaskTransport permettant de représenter le transport du professionnel. |
+| [TDDUI Task Transport](https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport) | [TDDUITaskTransportUsager](StructureDefinition-tddui-task-transport-usager.md) | Profil de la ressource TDDUITaskTransport permettant de représenter le transport de l'usager. |
 
 #### Instances de Questionnaire
 
@@ -136,11 +133,11 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
   "resourceType" : "ImplementationGuide",
   "id" : "ans.fhir.fr.tddui",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui",
-  "version" : "2.2.0-ballot",
+  "version" : "2.1.0",
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2025-12-19T08:32:44+00:00",
+  "date" : "2025-12-19T08:44:55+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -228,7 +225,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           },
           {
             "url" : "value",
-            "valueString" : "public-comment"
+            "valueString" : "trial-implementation"
           }
         ],
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -255,19 +252,6 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           {
             "url" : "value",
             "valueString" : "../../expansion-params.json"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueString" : "pin-canonicals"
-          },
-          {
-            "url" : "value",
-            "valueString" : "pin-all"
           }
         ],
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -602,7 +586,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           },
           {
             "url" : "value",
-            "valueString" : "public-comment"
+            "valueString" : "trial-implementation"
           }
         ],
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -629,19 +613,6 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           {
             "url" : "value",
             "valueString" : "../../expansion-params.json"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueCode" : "pin-canonicals"
-          },
-          {
-            "url" : "value",
-            "valueString" : "pin-all"
           }
         ],
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -1925,7 +1896,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-encounter-evenement-example",
         "description" : "Exemple d'un évènement",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement|2.2.0-ballot"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement"
       },
       {
         "extension" : [
@@ -1939,7 +1910,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-encounter-sejour-example",
         "description" : "Exemple d'un séjour en ESSMS",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour|2.2.0-ballot"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour"
       },
       {
         "extension" : [
@@ -1967,7 +1938,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-organization-example",
         "description" : "ESSMS - Les Chênes Verts",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization|2.2.0-ballot"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization"
       },
       {
         "extension" : [
@@ -1981,7 +1952,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-patient-example",
         "description" : "Exemple de la ressource TDDUIPatient",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient|2.2.0-ballot"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient"
       },
       {
         "extension" : [
@@ -1995,7 +1966,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-patient-ins-example",
         "description" : "Exemple de la ressource TDDUIPatientINS",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins|2.2.0-ballot"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"
       },
       {
         "extension" : [
@@ -2009,7 +1980,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-pp-ime-bundle-example",
         "description" : "Exemple de bundle conforme au profil TDDUIBundle contenant le projet personnalisé en IME",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle|2.2.0-ballot"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle"
       },
       {
         "extension" : [
@@ -2023,7 +1994,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-pp-ime-careplan-example",
         "description" : "Exemple du projet personnalisé d'un enfant en IME",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise|2.2.0-ballot"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise"
       },
       {
         "extension" : [
@@ -2037,7 +2008,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-pp-ime-consent-accord-example",
         "description" : "Exemple d'un accord de la structure",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord|2.2.0-ballot"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord"
       },
       {
         "extension" : [
@@ -2051,7 +2022,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-pp-ime-goal-objectif-1-example",
         "description" : "Exemple d'un objectif dans le cadre du projet personnalisé en IME.",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif|2.2.0-ballot"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif"
       },
       {
         "extension" : [
@@ -2065,7 +2036,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-pp-ime-goal-objectif-2-example",
         "description" : "Exemple d'un objectif dans le cadre du projet personnalisé en IME.",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif|2.2.0-ballot"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif"
       },
       {
         "extension" : [
@@ -2079,7 +2050,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-pp-ime-patient-example",
         "description" : "Exemple de la ressource TDDUIPatient dans le cadre d'un projet personnalisé en IME",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient|2.2.0-ballot"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient"
       },
       {
         "extension" : [
@@ -2093,7 +2064,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-pp-ime-task-action-1-aesh-example",
         "description" : "Exemple d'une action de l'objectif 1 réalisée par l'AESH dans le cadre du projet personnalisé en IME.",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action|2.2.0-ballot"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"
       },
       {
         "extension" : [
@@ -2107,7 +2078,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-pp-ime-task-action-1-educ-example",
         "description" : "Exemple d'une action de l'objectif 1 réalisée par l'éducateur spécialisé dans le cadre du projet personnalisé en IME.",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action|2.2.0-ballot"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"
       },
       {
         "extension" : [
@@ -2121,7 +2092,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-pp-pa-bundle-example",
         "description" : "Exemple de bundle conforme au profil TDDUIBundle contenant le projet personnalisé PA.",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle|2.2.0-ballot"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle"
       },
       {
         "extension" : [
@@ -2135,7 +2106,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-pp-pa-careplan-example",
         "description" : "Exemple d'un projet personnalisé PA",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise|2.2.0-ballot"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise"
       },
       {
         "extension" : [
@@ -2149,7 +2120,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-pp-pa-consent-accord-example",
         "description" : "Exemple d'un accord de la structure",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord|2.2.0-ballot"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord"
       },
       {
         "extension" : [
@@ -2163,7 +2134,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-pp-pa-documentreference-bilan-objectif-1-example",
         "description" : "Bilan de l'objectif 1 du projet personnalisé PA au format PDF",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference|2.2.0-ballot"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"
       },
       {
         "extension" : [
@@ -2177,7 +2148,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-pp-pa-documentreference-entrant-example",
         "description" : "Entrant Projet Personnalisé PA au format PDF",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference|2.2.0-ballot"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"
       },
       {
         "extension" : [
@@ -2191,7 +2162,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-pp-pa-goal-attente-famille-example",
         "description" : "Exemple des attentes de la famille dans le cadre du projet personnalisé PA.",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente|2.2.0-ballot"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente"
       },
       {
         "extension" : [
@@ -2205,7 +2176,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-pp-pa-goal-attente-usager-example",
         "description" : "Exemple des attentes de l'usager dans le cadre du projet personnalisé PA.",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente|2.2.0-ballot"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente"
       },
       {
         "extension" : [
@@ -2219,7 +2190,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-pp-pa-goal-objectif-1-example",
         "description" : "Exemple d'un objectif dans le cadre du projet personnalisé PA.",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif|2.2.0-ballot"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif"
       },
       {
         "extension" : [
@@ -2233,7 +2204,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-pp-pa-goal-objectif-2-example",
         "description" : "Exemple d'un objectif dans le cadre du projet personnalisé PA.",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif|2.2.0-ballot"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif"
       },
       {
         "extension" : [
@@ -2247,7 +2218,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-pp-pa-goal-objectif-3-example",
         "description" : "Exemple d'un objectif dans le cadre du projet personnalisé PA.",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif|2.2.0-ballot"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif"
       },
       {
         "extension" : [
@@ -2261,7 +2232,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-pp-pa-patient-example-pp",
         "description" : "Exemple de la ressource TDDUIPatient dans le cadre d'un projet personnalisé PA",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient|2.2.0-ballot"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient"
       },
       {
         "extension" : [
@@ -2275,7 +2246,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-pp-pa-practitioner-ide-example",
         "description" : "Exemple d'un IDE",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner|2.2.0-ballot"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner"
       },
       {
         "extension" : [
@@ -2289,7 +2260,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-pp-pa-questionnaire-response-aggir-pa-example",
         "description" : "Grille de réponse AGGIR PA",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response|2.2.0-ballot"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
       },
       {
         "extension" : [
@@ -2303,7 +2274,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-pp-pa-servicerequest-besoin-1-example",
         "description" : "Exemple d'un besoin de l'usager dans le cadre du projet personnalisé PA.",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin|2.2.0-ballot"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin"
       },
       {
         "extension" : [
@@ -2317,7 +2288,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-pp-pa-servicerequest-besoin-2-example",
         "description" : "Exemple d'un besoin de l'usager dans le cadre du projet personnalisé PA.",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin|2.2.0-ballot"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin"
       },
       {
         "extension" : [
@@ -2331,7 +2302,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-pp-pa-servicerequest-besoin-3-example",
         "description" : "Exemple d'un besoin de l'usager dans le cadre du projet personnalisé PA.",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin|2.2.0-ballot"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin"
       },
       {
         "extension" : [
@@ -2345,7 +2316,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-pp-pa-task-action-1-ergo-example",
         "description" : "Exemple d'une action de l'objectif 1 réalisée par l'ergothérapeute dans le cadre du projet personnalisé PA.",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action|2.2.0-ballot"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"
       },
       {
         "extension" : [
@@ -2359,7 +2330,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-pp-pa-task-action-1-ide-example",
         "description" : "Exemple d'une action de l'objectif 1 réalisée par l'IDE dans le cadre du projet personnalisé PA.",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action|2.2.0-ballot"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"
       },
       {
         "extension" : [
@@ -2373,7 +2344,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-pp-pa-task-action-1-kine-example",
         "description" : "Exemple d'une action de l'objectif 1 réalisée par le kinésithérapeute dans le cadre du projet personnalisé PA.",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action|2.2.0-ballot"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"
       },
       {
         "extension" : [
@@ -2387,7 +2358,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-pp-pa-task-action-2-anim-example",
         "description" : "Exemple d'une action de l'objectif 1 réalisée par l'animatrice dans le cadre du projet personnalisé PA.",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action|2.2.0-ballot"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"
       },
       {
         "extension" : [
@@ -2401,7 +2372,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-pp-pa-task-action-2-ide-example",
         "description" : "Exemple d'une action de l'objectif 2 réalisée par l'IDE dans le cadre du projet personnalisé PA.",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action|2.2.0-ballot"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"
       },
       {
         "extension" : [
@@ -2415,7 +2386,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-pp-pa-task-action-3-psy-example",
         "description" : "Exemple d'une action de l'objectif 3 réalisée par le psychologue dans le cadre du projet personnalisé PA.",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action|2.2.0-ballot"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"
       },
       {
         "extension" : [
@@ -2429,7 +2400,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-pp-pa-task-moyen-ressource-ergo-1-example",
         "description" : "Exemple des moyens et ressources de l'objectif 1 dans le cadre du projet personnalisé PA.",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource|2.2.0-ballot"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource"
       },
       {
         "extension" : [
@@ -2443,7 +2414,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-pp-pa-task-moyen-ressource-ide-1-example",
         "description" : "Exemple des moyens et ressources de l'objectif 1 dans le cadre du projet personnalisé PA.",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource|2.2.0-ballot"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource"
       },
       {
         "extension" : [
@@ -2457,7 +2428,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-pp-pa-task-moyen-ressource-ide-2-example",
         "description" : "Exemple des moyens et ressources de l'objectif 2 dans le cadre du projet personnalisé PA.",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource|2.2.0-ballot"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource"
       },
       {
         "extension" : [
@@ -2471,7 +2442,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-pp-pa-task-moyen-ressource-kine-1-example",
         "description" : "Exemple des moyens et ressources de l'objectif 1 dans le cadre du projet personnalisé PA.",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource|2.2.0-ballot"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource"
       },
       {
         "extension" : [
@@ -2485,7 +2456,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-practitioner-example",
         "description" : "Exemple d'un professionnel de santé",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner|2.2.0-ballot"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner"
       },
       {
         "extension" : [
@@ -2499,7 +2470,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-practitioner-role-example",
         "description" : "Exemple d'un professionnel de santé",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role|2.2.0-ballot"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role"
       },
       {
         "extension" : [
@@ -2527,7 +2498,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-questionnaire-response-aggir-pa-example",
         "description" : "Grille de réponse AGGIR PA",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response|2.2.0-ballot"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
       },
       {
         "extension" : [
@@ -2541,7 +2512,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-questionnaire-response-aggir-ph-example",
         "description" : "Grille de réponse AGGIR PH",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response|2.2.0-ballot"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
       },
       {
         "extension" : [
@@ -2555,7 +2526,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-questionnaire-response-serafin-precision-example",
         "description" : "Evaluation SERAFIN pour un besoin d'hébergement adapté avec précision",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response|2.2.0-ballot"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
       },
       {
         "extension" : [
@@ -2569,7 +2540,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-questionnaire-response-serafin-sans-precision-example",
         "description" : "Evaluation SERAFIN pour un besoin d'hébergement adapté sans précision",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response|2.2.0-ballot"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
       },
       {
         "extension" : [
@@ -2583,7 +2554,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-questionnaire-response-situation-ssiad-example",
         "description" : "Grille de réponse de la situation SSIAD",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response|2.2.0-ballot"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
       },
       {
         "extension" : [
@@ -2597,7 +2568,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-task-transport-example",
         "description" : "Exemple du transport.",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport|2.2.0-ballot"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport"
       },
       {
         "extension" : [
@@ -2611,7 +2582,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-task-transport-professionel-example",
         "description" : "Exemple du transport du professionnel.",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel|2.2.0-ballot"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel"
       },
       {
         "extension" : [
@@ -2625,7 +2596,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-task-transport-usager-example",
         "description" : "Exemple du transport de l'usager.",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager|2.2.0-ballot"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager"
       },
       {
         "extension" : [
@@ -2639,7 +2610,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "TDDUIBundleExample",
         "description" : "Exemple de bundle conforme au profil TDDUIBundle",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle|2.2.0-ballot"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle"
       },
       {
         "extension" : [

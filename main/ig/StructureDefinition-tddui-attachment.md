@@ -1,4 +1,4 @@
-# Pièce jointe - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# Pièce jointe - Médicosocial - Transfert de données DUI v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment | *Version*:2.2.0-ballot |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment | *Version*:2.1.0 |
 | Active as of 2025-12-19 | *Computable Name*:TDDUIAttachment |
 
 Extension permettant de véhiculer des pièces jointes que ce soit pour l'évaluation, l'évènement ou le projet personnalisé. L'extension référence le profil PDSm_SimplifiedPublish.
@@ -43,11 +43,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-attachment.csv
   "resourceType" : "StructureDefinition",
   "id" : "tddui-attachment",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment",
-  "version" : "2.2.0-ballot",
+  "version" : "2.1.0",
   "name" : "TDDUIAttachment",
   "title" : "Pièce jointe",
   "status" : "active",
-  "date" : "2025-12-19T08:32:44+00:00",
+  "date" : "2025-12-19T08:44:55+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -101,7 +101,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-attachment.csv
     }
   ],
   "type" : "Extension",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -128,7 +128,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-attachment.csv
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference|2.2.0-ballot"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"
             ]
           }
         ]

@@ -1,4 +1,4 @@
-# Ressources utilisées - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# Ressources utilisées - Médicosocial - Transfert de données DUI v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used | *Version*:2.2.0-ballot |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used | *Version*:2.1.0 |
 | Active as of 2025-12-19 | *Computable Name*:TDDUIRessourcesUsed |
 
 Ressources utilisées lors de l’évènement (ex : chambre, matériel médical, véhicule).
@@ -45,11 +45,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-ressources-use
   "resourceType" : "StructureDefinition",
   "id" : "tddui-ressources-used",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used",
-  "version" : "2.2.0-ballot",
+  "version" : "2.1.0",
   "name" : "TDDUIRessourcesUsed",
   "title" : "Ressources utilisées",
   "status" : "active",
-  "date" : "2025-12-19T08:32:44+00:00",
+  "date" : "2025-12-19T08:44:55+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -91,7 +91,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-ressources-use
     }
   ],
   "type" : "Extension",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -129,7 +129,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-ressources-use
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-ressource-utilisee-cisis|20250624152100"
+          "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-ressource-utilisee-cisis"
         }
       },
       {
@@ -160,7 +160,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-ressources-use
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-detail-materiel-specialise-cisis|20250624152100"
+          "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-detail-materiel-specialise-cisis"
         }
       },
       {
@@ -191,7 +191,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-ressources-use
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-detail-ressource-immobiliere-utilisee-cisis|20250624152100"
+          "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-detail-ressource-immobiliere-utilisee-cisis"
         }
       },
       {

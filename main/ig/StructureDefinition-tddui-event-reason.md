@@ -1,4 +1,4 @@
-# Motif de l’évènement - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# Motif de l’évènement - Médicosocial - Transfert de données DUI v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-reason | *Version*:2.2.0-ballot |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-reason | *Version*:2.1.0 |
 | Active as of 2025-12-19 | *Computable Name*:TDDUIEventReason |
 
 Contexte justifiant la réalisation de l’évènement.
@@ -43,11 +43,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-event-reason.c
   "resourceType" : "StructureDefinition",
   "id" : "tddui-event-reason",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-reason",
-  "version" : "2.2.0-ballot",
+  "version" : "2.1.0",
   "name" : "TDDUIEventReason",
   "title" : "Motif de l’évènement",
   "status" : "active",
-  "date" : "2025-12-19T08:32:44+00:00",
+  "date" : "2025-12-19T08:44:55+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -89,7 +89,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-event-reason.c
     }
   ],
   "type" : "Extension",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
     "element" : [

@@ -1,4 +1,4 @@
-# OutputTDDUITaskBilanValueSet - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# OutputTDDUITaskBilanValueSet - Médicosocial - Transfert de données DUI v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/output-tddui-task-bilan-valueset | *Version*:2.2.0-ballot |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/output-tddui-task-bilan-valueset | *Version*:2.1.0 |
 | Active as of 2025-12-19 | *Computable Name*:OutputTDDUITaskBilanValueSet |
 
  
@@ -46,17 +46,15 @@ ValueSet pour la définition des éléments spécifiques des output dans la ress
   "resourceType" : "ValueSet",
   "id" : "output-tddui-task-bilan-valueset",
   "meta" : {
-    "profile" : [
-      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
-    ]
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/output-tddui-task-bilan-valueset",
-  "version" : "2.2.0-ballot",
+  "version" : "2.1.0",
   "name" : "OutputTDDUITaskBilanValueSet",
   "title" : "OutputTDDUITaskBilanValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-19T08:32:44+00:00",
+  "date" : "2025-12-19T08:44:55+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
