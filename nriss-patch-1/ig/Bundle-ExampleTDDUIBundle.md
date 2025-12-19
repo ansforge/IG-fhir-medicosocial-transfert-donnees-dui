@@ -1,0 +1,779 @@
+# TDDUIBundleExample - Médicosocial - Transfert de données DUI v2.1.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **TDDUIBundleExample**
+
+## Example Bundle: TDDUIBundleExample
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Bundle",
+  "id" : "ExampleTDDUIBundle",
+  "meta" : {
+    "profile" : [
+      "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle"
+    ]
+  },
+  "type" : "transaction",
+  "entry" : [
+    {
+      "fullUrl" : "https://test-server.fr/Patient/tddui-patient-ins-example",
+      "resource" : {
+        "resourceType" : "Patient",
+        "id" : "tddui-patient-ins-example",
+        "meta" : {
+          "profile" : [
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"
+          ]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_tddui-patient-ins-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Patient tddui-patient-ins-example</b></p><a name=\"tddui-patient-ins-example\"> </a><a name=\"hctddui-patient-ins-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-patient-ins.html\">TDDUI Patient INS</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">DUPONT  Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/194704032)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Autre identifiant (voir ci-dessus)\">Autre identifiant :</td><td colspan=\"3\">NIR définitif/147720425367411 (utilisation : official, )</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Noms alternatifs (voir plus bas)\">Nom alternatif :</td><td colspan=\"3\">Jean DUPONT (Official)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Moyens de contacter le Patient\">Coordonnées</td><td colspan=\"3\">12 rue des Lilas, 76748 Vittefleur, France(home)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The registered place of birth of the patient. A sytem may use the address.text if they don't store the birthPlace address in discrete elements.\"><a href=\"http://hl7.org/fhir/extensions/5.2.0/StructureDefinition-patient-birthPlace.html\">Patient Birth Place</a></td><td colspan=\"3\">Mazoires FRA </td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Reliabilility of the patient's identity | Précision sur le degré de fiabilité de l'identité du patient (si provisoire, validé... avec la justification : quelle type de pièce d'identité ?) avec la méthode de collection\">FR Core Patient Ident Reliability Extension:</td><td colspan=\"3\"><ul><li>identityStatus: <a href=\"https://hl7.fr/ig/fhir/core/2.1.0/CodeSystem-fr-core-cs-v2-0445.html#fr-core-cs-v2-0445-VALI\">FR Core CodeSystem v2-0445: VALI</a> (Identité validée)</li></ul></td></tr></table></div>"
+        },
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "identityStatus",
+                "valueCoding" : {
+                  "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445",
+                  "code" : "VALI"
+                }
+              }
+            ],
+            "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+            "valueAddress" : {
+              "extension" : [
+                {
+                  "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code",
+                  "valueCoding" : {
+                    "system" : "https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM",
+                    "code" : "63220"
+                  }
+                }
+              ],
+              "city" : "Mazoires",
+              "country" : "FRA"
+            }
+          }
+        ],
+        "identifier" : [
+          {
+            "use" : "official",
+            "type" : {
+              "coding" : [
+                {
+                  "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203",
+                  "code" : "INS-NIR"
+                }
+              ]
+            },
+            "system" : "urn:oid:1.2.250.1.213.1.4.8",
+            "value" : "147720425367411"
+          },
+          {
+            "type" : {
+              "coding" : [
+                {
+                  "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code" : "PI",
+                  "display" : "Patient internal identifier"
+                }
+              ]
+            },
+            "system" : "https://identifiant-medicosocial-localusager.esante.gouv.fr",
+            "value" : "3480787529/194704032"
+          }
+        ],
+        "name" : [
+          {
+            "extension" : [
+              {
+                "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name",
+                "valueString" : "Jean Stéphane Patrick"
+              }
+            ],
+            "use" : "official",
+            "family" : "DUPONT",
+            "given" : ["Jean"]
+          },
+          {
+            "use" : "usual",
+            "family" : "DUPONT"
+          }
+        ],
+        "gender" : "male",
+        "birthDate" : "1947-04-03",
+        "address" : [
+          {
+            "use" : "home",
+            "text" : "12 rue des Lilas, 76748 Vittefleur, France",
+            "line" : ["12 rue des Lilas"],
+            "city" : "Vittefleur",
+            "postalCode" : "76748"
+          }
+        ]
+      },
+      "request" : {
+        "method" : "POST",
+        "url" : "TDDUIPatientINS"
+      }
+    },
+    {
+      "fullUrl" : "https://test-server.fr/Organization/tddui-organization-example",
+      "resource" : {
+        "resourceType" : "Organization",
+        "id" : "tddui-organization-example",
+        "meta" : {
+          "profile" : [
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization"
+          ]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_tddui-organization-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Organisation tddui-organization-example</b></p><a name=\"tddui-organization-example\"> </a><a name=\"hctddui-organization-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-organization.html\">TDDUI Organization</a></p></div><p><b>identifier</b>: Identification nationale de structure définie par l’ANS dans le CI_SIS/1480787529</p><p><b>name</b>: Les Chênes Verts</p></div>"
+        },
+        "identifier" : [
+          {
+            "type" : {
+              "coding" : [
+                {
+                  "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203",
+                  "code" : "IDNST"
+                }
+              ]
+            },
+            "system" : "urn:oid:1.2.250.1.71.4.2.2",
+            "value" : "1480787529"
+          }
+        ],
+        "name" : "Les Chênes Verts"
+      },
+      "request" : {
+        "method" : "POST",
+        "url" : "TDDUIOrganization"
+      }
+    },
+    {
+      "fullUrl" : "https://test-server.fr/Encounter/tddui-encounter-sejour-example",
+      "resource" : {
+        "resourceType" : "Encounter",
+        "id" : "tddui-encounter-sejour-example",
+        "meta" : {
+          "profile" : [
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour"
+          ]
+        },
+        "text" : {
+          "status" : "extensions",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_tddui-encounter-sejour-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Venue tddui-encounter-sejour-example</b></p><a name=\"tddui-encounter-sejour-example\"> </a><a name=\"hctddui-encounter-sejour-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-encounter-sejour.html\">TDDUI Encounter Sejour</a></p></div><p><b>Date d’admission</b>: 2023-04-11</p><p><b>Libellé mode d'entrée</b>: Date de début du suivi post-opératoire : 14/04/2023</p><p><b>Libellé mode de sortie</b>: Sortie prévisionnelle prévue pour le 5 mai 2023</p><p><b>Extension Definition for Encounter.plannedEndDate for Version 5.0</b>: 2023-05-05</p><p><b>identifier</b>: Identifiant du séjour/3480787529/147720425367411-SEJOUR-1012</p><p><b>status</b>: In Progress</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/7.0.1/CodeSystem-v3-ActCode.html#v3-ActCode-HH\">ActCode: HH</a> (home health)</p><p><b>subject</b>: <a href=\"Patient-tddui-patient-ins-example.html\">DUPONT  Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/194704032)</a></p><p><b>period</b>: 2023-04-14 --&gt; (en cours)</p><p><b>serviceProvider</b>: <a href=\"Organization-tddui-organization-example.html\">Organization Les Chênes Verts</a></p></div>"
+        },
+        "extension" : [
+          {
+            "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-admission-date",
+            "valueDateTime" : "2023-04-11"
+          },
+          {
+            "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-mode-label",
+            "valueString" : "Date de début du suivi post-opératoire : 14/04/2023"
+          },
+          {
+            "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exit-mode-label",
+            "valueString" : "Sortie prévisionnelle prévue pour le 5 mai 2023"
+          },
+          {
+            "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedEndDate",
+            "valueDateTime" : "2023-05-05"
+          }
+        ],
+        "identifier" : [
+          {
+            "type" : {
+              "coding" : [
+                {
+                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier-cs",
+                  "code" : "SEJ",
+                  "display" : "Identifiant du séjour"
+                }
+              ]
+            },
+            "system" : "https://identifiant-medicosocial-sejour.esante.gouv.fr",
+            "value" : "3480787529/147720425367411-SEJOUR-1012"
+          }
+        ],
+        "status" : "in-progress",
+        "class" : {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code" : "HH"
+        },
+        "subject" : {
+          "reference" : "Patient/tddui-patient-ins-example"
+        },
+        "period" : {
+          "start" : "2023-04-14"
+        },
+        "serviceProvider" : {
+          "reference" : "Organization/tddui-organization-example"
+        }
+      },
+      "request" : {
+        "method" : "POST",
+        "url" : "TDDUIEncounterSejour"
+      }
+    },
+    {
+      "fullUrl" : "https://test-server.fr/Encounter/tddui-encounter-evenement-example",
+      "resource" : {
+        "resourceType" : "Encounter",
+        "id" : "tddui-encounter-evenement-example",
+        "meta" : {
+          "profile" : [
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement"
+          ]
+        },
+        "text" : {
+          "status" : "extensions",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_tddui-encounter-evenement-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Venue tddui-encounter-evenement-example</b></p><a name=\"tddui-encounter-evenement-example\"> </a><a name=\"hctddui-encounter-evenement-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-encounter-evenement.html\">TDDUI Encounter Evenement</a></p></div><blockquote><p><b>Ressources utilisées</b></p><ul><li>TDDUIRessourceType: <span title=\"Codes :{https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis ORG-206}\">Matériel spécialisé</span></li><li>TDDUIMaterialDetail: <span title=\"Codes :{https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis ORG-208}\">Materiel médical</span></li></ul></blockquote><p><b>Rapport de l’évènement</b>: Observations cliniques : ; Recommandations pour les jours à venir : ; Prochaine visite : 15 avril 2023, 10h30 ; Remarque : Monsieur Dupont a compris les consignes pour la gestion de sa douleur et la mobilisation de sa hanche opérée.</p><p><b>Commentaire</b>: Cet évènement a débuté plus tard l’usager était sous la douche à l’heure du début du rendez-vous.</p><p><b>Libellé de l'évènement</b>: Visite à domicile pour soins infirmier.</p><p><b>Motif de l’évènement</b>: Suivi post-opératoire suite à intervention chirurgicale de la hanche.</p><p><b>identifier</b>: Visit Number/3480787529/147720425367411-EVN-12548</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/7.0.1/CodeSystem-v3-ActCode.html#v3-ActCode-HH\">ActCode: HH</a> (home health)</p><p><b>type</b>: <span title=\"Codes :{https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis MED-1298}\">Intervention d'un infirmer salarié</span>, <span title=\"Codes :{http://terminology.hl7.org/CodeSystem/data-absent-reason not-permitted}\">Intervention</span></p><p><b>subject</b>: <a href=\"Patient-tddui-patient-ins-example.html\">DUPONT  Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/194704032)</a></p><h3>Participants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Individual</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes :{http://terminology.hl7.org/CodeSystem/v3-ParticipationType PART}\">Participation</span></td><td><a href=\"Practitioner-tddui-practitioner-example.html\">Practitioner Claire Martin </a></td></tr></table><p><b>period</b>: 2023-04-14 10:30:00+0200 --&gt; 2023-04-14 11:15:00+0200</p><h3>Locations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Location</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Location-tddui-event-location-example.html\">Location</a></td></tr></table><p><b>serviceProvider</b>: <a href=\"Organization-tddui-organization-example.html\">Organization Les Chênes Verts</a></p><p><b>partOf</b>: <a href=\"Encounter-tddui-encounter-sejour-example.html\">Encounter : extension = 2023-04-11,Date de début du suivi post-opératoire : 14/04/2023,Sortie prévisionnelle prévue pour le 5 mai 2023,2023-05-05; identifier = Identifiant du séjour: 3480787529/147720425367411-SEJOUR-1012; status = in-progress; class = home health (ActCode#HH); period = 2023-04-14 --&gt; (en cours)</a></p></div>"
+        },
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "TDDUIRessourceType",
+                "valueCodeableConcept" : {
+                  "coding" : [
+                    {
+                      "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+                      "code" : "ORG-206",
+                      "display" : "Matériel spécialisé"
+                    }
+                  ]
+                }
+              },
+              {
+                "url" : "TDDUIMaterialDetail",
+                "valueCodeableConcept" : {
+                  "coding" : [
+                    {
+                      "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+                      "code" : "ORG-208",
+                      "display" : "Materiel médical"
+                    }
+                  ]
+                }
+              }
+            ],
+            "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used"
+          },
+          {
+            "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-report",
+            "valueString" : "Observations cliniques : ; Recommandations pour les jours à venir : ; Prochaine visite : 15 avril 2023, 10h30 ; Remarque : Monsieur Dupont a compris les consignes pour la gestion de sa douleur et la mobilisation de sa hanche opérée."
+          },
+          {
+            "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment",
+            "valueString" : "Cet évènement a débuté plus tard l’usager était sous la douche à l’heure du début du rendez-vous."
+          },
+          {
+            "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-label",
+            "valueString" : "Visite à domicile pour soins infirmier."
+          },
+          {
+            "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-reason",
+            "valueString" : "Suivi post-opératoire suite à intervention chirurgicale de la hanche."
+          }
+        ],
+        "identifier" : [
+          {
+            "type" : {
+              "coding" : [
+                {
+                  "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identifier-type",
+                  "code" : "VN"
+                }
+              ]
+            },
+            "system" : "https://identifiant-medicosocial-evenement.esante.gouv.fr",
+            "value" : "3480787529/147720425367411-EVN-12548"
+          }
+        ],
+        "status" : "finished",
+        "class" : {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code" : "HH"
+        },
+        "type" : [
+          {
+            "coding" : [
+              {
+                "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+                "code" : "MED-1298",
+                "display" : "Intervention d'un infirmer salarié"
+              }
+            ]
+          },
+          {
+            "coding" : [
+              {
+                "system" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+                "code" : "not-permitted",
+                "display" : "Not Permitted"
+              }
+            ],
+            "text" : "Intervention"
+          }
+        ],
+        "subject" : {
+          "reference" : "Patient/tddui-patient-ins-example"
+        },
+        "participant" : [
+          {
+            "type" : [
+              {
+                "coding" : [
+                  {
+                    "system" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                    "code" : "PART"
+                  }
+                ]
+              }
+            ],
+            "individual" : {
+              "reference" : "Practitioner/tddui-practitioner-example"
+            }
+          }
+        ],
+        "period" : {
+          "start" : "2023-04-14T10:30:00+02:00",
+          "end" : "2023-04-14T11:15:00+02:00"
+        },
+        "location" : [
+          {
+            "location" : {
+              "reference" : "Location/tddui-event-location-example"
+            }
+          }
+        ],
+        "serviceProvider" : {
+          "reference" : "Organization/tddui-organization-example"
+        },
+        "partOf" : {
+          "reference" : "Encounter/tddui-encounter-sejour-example"
+        }
+      },
+      "request" : {
+        "method" : "POST",
+        "url" : "TDDUIEncounterEvenement"
+      }
+    },
+    {
+      "fullUrl" : "https://test-server.fr/Practitioner/tddui-practitioner-example",
+      "resource" : {
+        "resourceType" : "Practitioner",
+        "id" : "tddui-practitioner-example",
+        "meta" : {
+          "profile" : [
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner"
+          ]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_tddui-practitioner-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Praticien tddui-practitioner-example</b></p><a name=\"tddui-practitioner-example\"> </a><a name=\"hctddui-practitioner-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-practitioner.html\">TDDUI Practitioner</a></p></div><p><b>identifier</b>: <code>urn:oid:1.2.250.1.71.4.2.1</code>/10103441234</p><p><b>name</b>: Claire Martin </p><blockquote><p><b>qualification</b></p><p><b>code</b>: <span title=\"Codes :{https://mos.esante.gouv.fr/NOS/TRE_R48-DiplomeEtatFrancais/FHIR/TRE-R48-DiplomeEtatFrancais DE09}\">DE Infirmier</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>code</b>: <span title=\"Codes :{https://mos.esante.gouv.fr/NOS/TRE_G15-ProfessionSante/FHIR/TRE-G15-ProfessionSante 60}\">Infirmier</span></p></blockquote></div>"
+        },
+        "identifier" : [
+          {
+            "system" : "urn:oid:1.2.250.1.71.4.2.1",
+            "value" : "10103441234"
+          }
+        ],
+        "name" : [
+          {
+            "family" : "Martin",
+            "given" : ["Claire"],
+            "prefix" : ["MME"]
+          }
+        ],
+        "qualification" : [
+          {
+            "code" : {
+              "coding" : [
+                {
+                  "system" : "https://mos.esante.gouv.fr/NOS/TRE_R48-DiplomeEtatFrancais/FHIR/TRE-R48-DiplomeEtatFrancais",
+                  "code" : "DE09",
+                  "display" : "DE Infirmier"
+                }
+              ]
+            }
+          },
+          {
+            "code" : {
+              "coding" : [
+                {
+                  "system" : "https://mos.esante.gouv.fr/NOS/TRE_G15-ProfessionSante/FHIR/TRE-G15-ProfessionSante",
+                  "code" : "60",
+                  "display" : "Infirmier"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "request" : {
+        "method" : "POST",
+        "url" : "TDDUIPractitioner"
+      }
+    },
+    {
+      "fullUrl" : "https://test-server.fr/PractitionerRole/tddui-practitioner-role-example",
+      "resource" : {
+        "resourceType" : "PractitionerRole",
+        "id" : "tddui-practitioner-role-example",
+        "meta" : {
+          "profile" : [
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role"
+          ]
+        },
+        "text" : {
+          "status" : "extensions",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PractitionerRole_tddui-practitioner-role-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : PractitionerRole tddui-practitioner-role-example</b></p><a name=\"tddui-practitioner-role-example\"> </a><a name=\"hctddui-practitioner-role-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-practitioner-role.html\">TDDUI Practitioner Role</a></p></div><p><b>Mode d'exercice</b>: <span title=\"Codes :{https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice S}\">Salarié</span></p><p><b>practitioner</b>: <a href=\"Practitioner-tddui-practitioner-example.html\">Practitioner Claire Martin </a></p><p><b>organization</b>: <a href=\"Organization-tddui-organization-example.html\">Organization Les Chênes Verts</a></p><p><b>code</b>: <span title=\"Codes :{https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge 330}\">Coordonnateur de parcours</span></p></div>"
+        },
+        "extension" : [
+          {
+            "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exercise-mode",
+            "valueCodeableConcept" : {
+              "coding" : [
+                {
+                  "system" : "https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice",
+                  "code" : "S",
+                  "display" : "Salarié"
+                }
+              ]
+            }
+          }
+        ],
+        "practitioner" : {
+          "reference" : "Practitioner/tddui-practitioner-example"
+        },
+        "organization" : {
+          "reference" : "Organization/tddui-organization-example"
+        },
+        "code" : [
+          {
+            "extension" : [
+              {
+                "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-profession",
+                "valueCodeableConcept" : {
+                  "coding" : [
+                    {
+                      "system" : "https://mos.esante.gouv.fr/NOS/TRE_A02-ProfessionSavFaire-CISIS/FHIR/TRE-A02-ProfessionSavFaire-CISIS",
+                      "code" : "G15_60",
+                      "display" : "Infirmier"
+                    }
+                  ]
+                }
+              }
+            ],
+            "coding" : [
+              {
+                "system" : "https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge",
+                "code" : "330",
+                "display" : "Coordonnateur de parcours"
+              }
+            ]
+          }
+        ]
+      },
+      "request" : {
+        "method" : "POST",
+        "url" : "TDDUIPractitionerRole"
+      }
+    },
+    {
+      "fullUrl" : "https://test-server.fr/Task/tddui-task-transport-professionel-example",
+      "resource" : {
+        "resourceType" : "Task",
+        "id" : "tddui-task-transport-professionel-example",
+        "meta" : {
+          "profile" : [
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel"
+          ]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_tddui-task-transport-professionel-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Task tddui-task-transport-professionel-example</b></p><a name=\"tddui-task-transport-professionel-example\"> </a><a name=\"hctddui-task-transport-professionel-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-task-transport-professionnel.html\">TDDUI Task Transport Professionnel</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-transportprofessionnel.esante.gouv.fr</code>/3480787529/147720425367411-TPPro-154674</p><p><b>status</b>: Completed</p><p><b>intent</b>: plan</p><p><b>code</b>: <span title=\"Codes :{https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis ORG-202}\">Véhicule individuel</span></p><p><b>for</b>: <a href=\"Practitioner-tddui-practitioner-example.html\">Practitioner Claire Martin </a></p><p><b>encounter</b>: <a href=\"Encounter-tddui-encounter-evenement-example.html\">Encounter : extension = ,Observations cliniques : ; Recommandations pour les jours à venir : ; Prochaine visite : 15 avril 2023, 10h30 ; Remarque : Monsieur Dupont a compris les consignes pour la gestion de sa douleur et la mobilisation de sa hanche opérée.,Cet évènement a débuté plus tard l’usager était sous la douche à l’heure du début du rendez-vous.,Visite à domicile pour soins infirmier.,Suivi post-opératoire suite à intervention chirurgicale de la hanche.; identifier = Visit Number; status = finished; class = home health (ActCode#HH); type = Intervention d'un infirmer salarié,Not Permitted; period = 2023-04-14 10:30:00+0200 --&gt; 2023-04-14 11:15:00+0200</a></p><p><b>executionPeriod</b>: 2023-04-14 10:30:00+0200 --&gt; 2023-04-14 11:15:00+0200</p><p><b>owner</b>: <a href=\"Organization-tddui-organization-example.html\">Organization Les Chênes Verts</a></p><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem typeMotorisation}\">Type de motorisation associée au véhicule utilisé lors du transport.</span></p><p><b>value</b>: <span title=\"Codes :{https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis GEN-355}\">Véhicule électrique</span></p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem budgetPrevisionnel}\">Budget prévisionnel pour assurer le transport de la personne physique.</span></p><p><b>value</b>: <span title=\"Euro\">€2,00</span> (EUR)</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem budgetReel}\">Budget réel pour assurer le transport de la personne physique.</span></p><p><b>value</b>: <span title=\"Euro\">€2,00</span> (EUR)</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem distance}\">Distance du transport de la personne physique.</span></p><p><b>value</b>: Pas daffichage pour {0}  (value : 4; unit : kilometers; system : http://unitsofmeasure.org; code : km)</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem dureeTheorique}\">Durée théorique du transport de la personne physique.</span></p><p><b>value</b>: Pas daffichage pour {0}  (value : 10; unit : minutes; system : http://unitsofmeasure.org; code : min)</p></blockquote></div>"
+        },
+        "identifier" : [
+          {
+            "system" : "https://identifiant-medicosocial-transportprofessionnel.esante.gouv.fr",
+            "value" : "3480787529/147720425367411-TPPro-154674"
+          }
+        ],
+        "status" : "completed",
+        "intent" : "plan",
+        "code" : {
+          "coding" : [
+            {
+              "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+              "code" : "ORG-202",
+              "display" : "Véhicule individuel"
+            }
+          ]
+        },
+        "for" : {
+          "reference" : "Practitioner/tddui-practitioner-example"
+        },
+        "encounter" : {
+          "reference" : "Encounter/tddui-encounter-evenement-example"
+        },
+        "executionPeriod" : {
+          "start" : "2023-04-14T10:30:00+02:00",
+          "end" : "2023-04-14T11:15:00+02:00"
+        },
+        "owner" : {
+          "reference" : "Organization/tddui-organization-example"
+        },
+        "input" : [
+          {
+            "type" : {
+              "coding" : [
+                {
+                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+                  "code" : "typeMotorisation"
+                }
+              ]
+            },
+            "valueCodeableConcept" : {
+              "coding" : [
+                {
+                  "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+                  "code" : "GEN-355",
+                  "display" : "Véhicule électrique"
+                }
+              ]
+            }
+          },
+          {
+            "type" : {
+              "coding" : [
+                {
+                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+                  "code" : "budgetPrevisionnel"
+                }
+              ]
+            },
+            "valueMoney" : {
+              "value" : 2,
+              "currency" : "EUR"
+            }
+          },
+          {
+            "type" : {
+              "coding" : [
+                {
+                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+                  "code" : "budgetReel"
+                }
+              ]
+            },
+            "valueMoney" : {
+              "value" : 2,
+              "currency" : "EUR"
+            }
+          },
+          {
+            "type" : {
+              "coding" : [
+                {
+                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+                  "code" : "distance"
+                }
+              ]
+            },
+            "valueDistance" : {
+              "value" : 4,
+              "unit" : "kilometers",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "km"
+            }
+          },
+          {
+            "type" : {
+              "coding" : [
+                {
+                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+                  "code" : "dureeTheorique"
+                }
+              ]
+            },
+            "valueDuration" : {
+              "value" : 10,
+              "unit" : "minutes",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "min"
+            }
+          }
+        ]
+      },
+      "request" : {
+        "method" : "POST",
+        "url" : "TDDUITaskTransportProfessionnel"
+      }
+    },
+    {
+      "fullUrl" : "https://test-server.fr/Task/tddui-task-transport-usager-example",
+      "resource" : {
+        "resourceType" : "Task",
+        "id" : "tddui-task-transport-usager-example",
+        "meta" : {
+          "profile" : [
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager"
+          ]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_tddui-task-transport-usager-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Task tddui-task-transport-usager-example</b></p><a name=\"tddui-task-transport-usager-example\"> </a><a name=\"hctddui-task-transport-usager-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-task-transport-usager.html\">TDDUI Task Transport Usager</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-transportusager.esante.gouv.fr</code>/3480787529/147720425367411-TPPat-154675</p><p><b>status</b>: Completed</p><p><b>intent</b>: plan</p><p><b>code</b>: <span title=\"Codes :{https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis ORG-156}\">Taxi</span></p><p><b>encounter</b>: <a href=\"Encounter-tddui-encounter-evenement-example.html\">Encounter : extension = ,Observations cliniques : ; Recommandations pour les jours à venir : ; Prochaine visite : 15 avril 2023, 10h30 ; Remarque : Monsieur Dupont a compris les consignes pour la gestion de sa douleur et la mobilisation de sa hanche opérée.,Cet évènement a débuté plus tard l’usager était sous la douche à l’heure du début du rendez-vous.,Visite à domicile pour soins infirmier.,Suivi post-opératoire suite à intervention chirurgicale de la hanche.; identifier = Visit Number; status = finished; class = home health (ActCode#HH); type = Intervention d'un infirmer salarié,Not Permitted; period = 2023-04-14 10:30:00+0200 --&gt; 2023-04-14 11:15:00+0200</a></p><p><b>executionPeriod</b>: 2023-04-14 10:30:00+0200 --&gt; 2023-04-14 11:15:00+0200</p><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem budgetPrevisionnel}\">Budget prévisionnel pour assurer le transport de la personne physique.</span></p><p><b>value</b>: <span title=\"Euro\">€2,00</span> (EUR)</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem budgetReel}\">Budget réel pour assurer le transport de la personne physique.</span></p><p><b>value</b>: <span title=\"Euro\">€2,00</span> (EUR)</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem distance}\">Distance du transport de la personne physique.</span></p><p><b>value</b>: Pas daffichage pour {0}  (value : 4; unit : kilometers; system : http://unitsofmeasure.org; code : km)</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem dureeTheorique}\">Durée théorique du transport de la personne physique.</span></p><p><b>value</b>: Pas daffichage pour {0}  (value : 10; unit : minutes; system : http://unitsofmeasure.org; code : min)</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem accompagnement}\">Accompagnement nécessaire ou non de l'usager. </span></p><p><b>value</b>: true</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem asepsie}\">Lors du transport de l'usager l'asepsie est rigoureusement respectée ou n'est pas nécessaire.</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem natureTransport}\">Nature du transport de l'usager.</span></p><p><b>value</b>: <span title=\"Codes :{https://smt.esante.gouv.fr/terminologie-SERAFINPH 3.2.4}\">Transports liés au projet individuel</span></p></blockquote></div>"
+        },
+        "identifier" : [
+          {
+            "system" : "https://identifiant-medicosocial-transportusager.esante.gouv.fr",
+            "value" : "3480787529/147720425367411-TPPat-154675"
+          }
+        ],
+        "status" : "completed",
+        "intent" : "plan",
+        "code" : {
+          "coding" : [
+            {
+              "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+              "code" : "ORG-156",
+              "display" : "Taxi"
+            }
+          ]
+        },
+        "encounter" : {
+          "reference" : "Encounter/tddui-encounter-evenement-example"
+        },
+        "executionPeriod" : {
+          "start" : "2023-04-14T10:30:00+02:00",
+          "end" : "2023-04-14T11:15:00+02:00"
+        },
+        "input" : [
+          {
+            "type" : {
+              "coding" : [
+                {
+                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+                  "code" : "budgetPrevisionnel"
+                }
+              ]
+            },
+            "valueMoney" : {
+              "value" : 2,
+              "currency" : "EUR"
+            }
+          },
+          {
+            "type" : {
+              "coding" : [
+                {
+                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+                  "code" : "budgetReel"
+                }
+              ]
+            },
+            "valueMoney" : {
+              "value" : 2,
+              "currency" : "EUR"
+            }
+          },
+          {
+            "type" : {
+              "coding" : [
+                {
+                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+                  "code" : "distance"
+                }
+              ]
+            },
+            "valueDistance" : {
+              "value" : 4,
+              "unit" : "kilometers",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "km"
+            }
+          },
+          {
+            "type" : {
+              "coding" : [
+                {
+                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+                  "code" : "dureeTheorique"
+                }
+              ]
+            },
+            "valueDuration" : {
+              "value" : 10,
+              "unit" : "minutes",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "min"
+            }
+          },
+          {
+            "type" : {
+              "coding" : [
+                {
+                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+                  "code" : "accompagnement"
+                }
+              ]
+            },
+            "valueBoolean" : true
+          },
+          {
+            "type" : {
+              "coding" : [
+                {
+                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+                  "code" : "asepsie"
+                }
+              ]
+            },
+            "valueBoolean" : false
+          },
+          {
+            "type" : {
+              "coding" : [
+                {
+                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+                  "code" : "natureTransport"
+                }
+              ]
+            },
+            "valueCodeableConcept" : {
+              "coding" : [
+                {
+                  "system" : "https://smt.esante.gouv.fr/terminologie-SERAFINPH",
+                  "code" : "3.2.4",
+                  "display" : "Transports liés au projet individuel"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "request" : {
+        "method" : "POST",
+        "url" : "TDDUITaskTransportUsager"
+      }
+    }
+  ]
+}
+
+```

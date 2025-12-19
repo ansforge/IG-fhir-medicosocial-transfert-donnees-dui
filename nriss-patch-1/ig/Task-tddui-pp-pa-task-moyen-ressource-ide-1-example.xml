@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Task xmlns="http://hl7.org/fhir">
+  <id value="tddui-pp-pa-task-moyen-ressource-ide-1-example"/>
+  <meta>
+    <profile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : Task tddui-pp-pa-task-moyen-ressource-ide-1-example</b></p><a name="tddui-pp-pa-task-moyen-ressource-ide-1-example"> </a><a name="hctddui-pp-pa-task-moyen-ressource-ide-1-example"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="StructureDefinition-tddui-task-moyen-ressource.html">TDDUI Task MoyenRessource</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-moyenressource.esante.gouv.fr</code>/3480787529/123456789-MORE-1236</p><p><b>basedOn</b>: <a href="CarePlan-tddui-pp-pa-careplan-example.html">CarePlan Projet personnalisé de Mme Jeanne L.</a></p><p><b>partOf</b>: <a href="Task-tddui-pp-pa-task-action-1-ide-example.html">Task : identifier = https://identifiant-medicosocial-action.esante.gouv.fr#3480787529/123456789-ACTI-1236; status = in-progress; intent = plan; description = Atelier éducation risque de chute</a></p><p><b>status</b>: In Progress</p><p><b>intent</b>: plan</p><p><b>description</b>: Temps de coordination IDE/médecin coordonnateur</p><h3>Inputs</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-moyen-ressource-codesystem titre}">Titre du moyen ou de la ressource à utiliser.</span></td><td>Moyens mis en œuvre pour l'objectif 1 (avec rattachement SERAFIN‑PH)</td></tr></table></div>
+  </text>
+  <identifier>
+    <system value="https://identifiant-medicosocial-moyenressource.esante.gouv.fr"/>
+    <value value="3480787529/123456789-MORE-1236"/>
+  </identifier>
+  <basedOn>
+    <reference value="CarePlan/tddui-pp-pa-careplan-example"/>
+  </basedOn>
+  <partOf>
+    <reference value="Task/tddui-pp-pa-task-action-1-ide-example"/>
+  </partOf>
+  <status value="in-progress"/>
+  <intent value="plan"/>
+  <description value="Temps de coordination IDE/médecin coordonnateur"/>
+  <input>
+    <type>
+      <coding>
+        <system value="https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-moyen-ressource-codesystem"/>
+        <code value="titre"/>
+      </coding>
+    </type>
+    <valueString value="Moyens mis en œuvre pour l'objectif 1 (avec rattachement SERAFIN‑PH)"/>
+  </input>
+</Task>

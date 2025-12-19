@@ -1,0 +1,69 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/tddui/Goal/tddui-pp-ime-goal-objectif-2-example> a fhir:Goal ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "tddui-pp-ime-goal-objectif-2-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif"^^xsd:anyURI ;
+       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : But tddui-pp-ime-goal-objectif-2-example</b></p><a name=\"tddui-pp-ime-goal-objectif-2-example\"> </a><a name=\"hctddui-pp-ime-goal-objectif-2-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-goal-objectif.html\">TDDUI Goal Objectif</a></p></div><p><b>Lien vers le projet personnalisé</b>: <a href=\"CarePlan-tddui-pp-ime-careplan-example.html\">CarePlan Projet personnalisé de Hugo en IME</a></p><p><b>identifier</b>: <code>https://identifiant-medicosocial-objectif.esante.gouv.fr</code>/3480787529/123456-OBJE-1235</p><p><b>lifecycleStatus</b>: Active</p><p><b>description</b>: <span title=\"Codes :\">Atteindre le niveau lecteur débutant (décodage syllabique) en 9 mois.</span></p><p><b>subject</b>: <a href=\"Patient-tddui-pp-ime-patient-example.html\">Hugo D. (official) (sexe non précisé), Date de Naissance inconnue ( Patient internal identifier: 3480787529/123456)</a></p><p><b>note</b>: </p><blockquote><div><p>Objectif 2</p>\n</div></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference"^^xsd:anyURI ;
+       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CarePlan/tddui-pp-ime-careplan-example> ;
+       fhir:reference [ fhir:v "CarePlan/tddui-pp-ime-careplan-example" ]
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "https://identifiant-medicosocial-objectif.esante.gouv.fr"^^xsd:anyURI ;
+       fhir:l <https://identifiant-medicosocial-objectif.esante.gouv.fr>
+     ] ;
+     fhir:value [ fhir:v "3480787529/123456-OBJE-1235" ]
+  ] ) ; # 
+  fhir:lifecycleStatus [ fhir:v "active"] ; # 
+  fhir:description [
+     fhir:text [ fhir:v "Atteindre le niveau lecteur débutant (décodage syllabique) en 9 mois." ]
+  ] ; # 
+  fhir:subject [
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-pp-ime-patient-example> ;
+     fhir:reference [ fhir:v "Patient/tddui-pp-ime-patient-example" ]
+  ] ; # 
+  fhir:note ( [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator>
+       ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs"^^xsd:anyURI ;
+             fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs>
+           ] ;
+           fhir:code [ fhir:v "titreObjectif" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:text [ fhir:v "Objectif 2" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

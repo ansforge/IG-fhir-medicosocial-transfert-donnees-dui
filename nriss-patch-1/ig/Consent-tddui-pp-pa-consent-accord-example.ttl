@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/tddui/Consent/tddui-pp-pa-consent-accord-example> a fhir:Consent ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "tddui-pp-pa-consent-accord-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord"^^xsd:anyURI ;
+       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Consent tddui-pp-pa-consent-accord-example</b></p><a name=\"tddui-pp-pa-consent-accord-example\"> </a><a name=\"hctddui-pp-pa-consent-accord-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-consent-accord.html\">TDDUI Consent Accord</a></p></div><p><b>status</b>: Active</p><p><b>scope</b>: <span title=\"Codes :{http://terminology.hl7.org/CodeSystem/consentscope patient-privacy}\">Privacy Consent</span></p><p><b>category</b>: <span title=\"Codes :{http://loinc.org 59284-0}\">Consent Document</span></p><p><b>dateTime</b>: 2024-01-15 09:00:00+0100</p><p><b>performer</b>: <a href=\"Practitioner-tddui-pp-pa-practitioner-ide-example.html\">Practitioner Élodie Bernard </a></p><h3>Policies</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Authority</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"https://www.cnsa.fr/\">https://www.cnsa.fr/</a></td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:scope [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/consentscope"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/consentscope>
+       ] ;
+       fhir:code [ fhir:v "patient-privacy" ] ;
+       fhir:display [ fhir:v "Privacy Consent" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       a loinc:59284-0 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "59284-0" ]
+     ] )
+  ] ) ; # 
+  fhir:dateTime [ fhir:v "2024-01-15T09:00:00+01:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Practitioner/tddui-pp-pa-practitioner-ide-example> ;
+     fhir:reference [ fhir:v "Practitioner/tddui-pp-pa-practitioner-ide-example" ]
+  ] ) ; # 
+  fhir:policy ( [
+     fhir:authority [
+       fhir:v "https://www.cnsa.fr/"^^xsd:anyURI ;
+       fhir:l <https://www.cnsa.fr/>
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

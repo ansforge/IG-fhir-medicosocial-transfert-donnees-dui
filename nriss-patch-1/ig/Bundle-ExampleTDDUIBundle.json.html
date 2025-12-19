@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>TDDUIBundleExample - JSON Representation - Médicosocial - Transfert de données DUI v2.0.0-ballot</title>
+    <title>TDDUIBundleExample - JSON Representation - Médicosocial - Transfert de données DUI v2.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -20,6 +20,7 @@
     <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style-ans.css"/>
     <link rel="stylesheet" href="assets/css/style-add-ans.css"/>
     <!-- Placeholder for child template CSS declarations -->
@@ -44,10 +45,11 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"7.20"}
-    h3,h4,h5,h6{--heading-prefix:"7.20"}</style>
+    <style type="text/css">h2{--heading-prefix:"7.127"}
+    h3,h4,h5,h6{--heading-prefix:"7.127"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
+
         <!-- Placeholder for child template header declarations -->
 <div id="family-nav">
     <a id="hl7-search-lnk" data-no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
@@ -64,7 +66,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Médicosocial - Transfert de données DUI</span>
             <br/>
-            <span style="display:inline-block;">2.0.0-ballot - public-comment
+            <span style="display:inline-block;">2.1.0 - trial-implementation
 
 
 
@@ -197,9 +199,8 @@
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
-
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Médicosocial - Transfert de données DUI - Local Development build (v2.0.0-ballot) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://interop.esante.gouv.fr/ig/fhir/tddui/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Médicosocial - Transfert de données DUI - version de développement local (v2.1.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/fhir/tddui/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
 
 
 
@@ -255,10 +256,10 @@
 
 
 
-  <pre class="json" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">{
+  <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">{
   "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle">resourceType</a>" : "Bundle",
-  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.id">id</a>" : "ExampleTDDUIBundle",
-  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.meta">meta</a>" : {
+  "<a href="http://hl7.org/fhir/R4/resource.html#Bundle.id">id</a>" : "ExampleTDDUIBundle",
+  "<a href="http://hl7.org/fhir/R4/resource.html#Bundle.meta">meta</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
       <a href="StructureDefinition-tddui-bundle.html" style="color: Maroon">&#x1F517;</a> "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle"
     ]
@@ -269,22 +270,22 @@
       "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "https://test-server.fr/Patient/tddui-patient-ins-example",
       "<a href="http://hl7.org/fhir/R4/patient.html#Patient">resource</a>" : {
         "<a href="http://hl7.org/fhir/R4/patient.html">resourceType</a>" : "Patient",
-        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.id">id</a>" : "tddui-patient-ins-example",
-        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.meta">meta</a>" : {
+        "<a href="http://hl7.org/fhir/R4/resource.html#Patient.id">id</a>" : "tddui-patient-ins-example",
+        "<a href="http://hl7.org/fhir/R4/resource.html#Patient.meta">meta</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
             <a href="StructureDefinition-tddui-patient-ins.html" style="color: Maroon">&#x1F517;</a> "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"
           ]
         },
-        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.text">text</a>" : {
+        "<a href="http://hl7.org/fhir/R4/domainresource.html#Patient.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Patient_tddui-patient-ins-example\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : Patient tddui-patient-ins-example&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;tddui-patient-ins-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hctddui-patient-ins-example\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profil: &lt;a href=\&quot;StructureDefinition-tddui-patient-ins.html\&quot;&gt;TDDUI Patient INS&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p style=\&quot;border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\&quot;&gt;DUPONT  Male, Date de Naissance :1947-04-03 ( NIR définitif\u00a0(use:\u00a0official,\u00a0))&lt;/p&gt;&lt;hr/&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Noms alternatifs (voir plus bas)\&quot;&gt;Nom alternatif :&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;Jean DUPONT (Official)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Moyens de contacter le Patient\&quot;&gt;Contact Detail&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;12 rue des Lilas, 76748 Vittefleur, France(home)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;The registered place of birth of the patient. A sytem may use the address.text if they don't store the birthPlace address in discrete elements.\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/extensions/5.2.0/StructureDefinition-patient-birthPlace.html\&quot;&gt;Patient Birth Place&lt;/a&gt;&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;Mazoires FRA &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Reliabilility of the patient's identity | Précision sur le degré de fiabilité de l'identité du patient (si provisoire, validé... avec la justification : quelle type de pièce d'identité ?) avec la méthode de collection\&quot;&gt;FR Core Patient Ident Reliability Extension:&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;&lt;ul&gt;&lt;li&gt;identityStatus: &lt;a href=\&quot;https://hl7.fr/ig/fhir/core/2.1.0/CodeSystem-fr-core-cs-v2-0445.html#fr-core-cs-v2-0445-VALI\&quot;&gt;FR Core CodeSystem v2-0445 VALI&lt;/a&gt;: Identité validée&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Patient_tddui-patient-ins-example\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : Patient tddui-patient-ins-example&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;tddui-patient-ins-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hctddui-patient-ins-example\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profil: &lt;a href=\&quot;StructureDefinition-tddui-patient-ins.html\&quot;&gt;TDDUI Patient INS&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p style=\&quot;border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\&quot;&gt;DUPONT  Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/194704032)&lt;/p&gt;&lt;hr/&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Autre identifiant (voir ci-dessus)\&quot;&gt;Autre identifiant :&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;NIR définitif/147720425367411\u00a0(utilisation :\u00a0official,\u00a0)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Noms alternatifs (voir plus bas)\&quot;&gt;Nom alternatif :&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;Jean DUPONT (Official)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Moyens de contacter le Patient\&quot;&gt;Coordonnées&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;12 rue des Lilas, 76748 Vittefleur, France(home)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;The registered place of birth of the patient. A sytem may use the address.text if they don't store the birthPlace address in discrete elements.\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/extensions/5.2.0/StructureDefinition-patient-birthPlace.html\&quot;&gt;Patient Birth Place&lt;/a&gt;&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;Mazoires FRA &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Reliabilility of the patient's identity | Précision sur le degré de fiabilité de l'identité du patient (si provisoire, validé... avec la justification : quelle type de pièce d'identité ?) avec la méthode de collection\&quot;&gt;FR Core Patient Ident Reliability Extension:&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;&lt;ul&gt;&lt;li&gt;identityStatus: &lt;a href=\&quot;https://hl7.fr/ig/fhir/core/2.1.0/CodeSystem-fr-core-cs-v2-0445.html#fr-core-cs-v2-0445-VALI\&quot;&gt;FR Core CodeSystem v2-0445: VALI&lt;/a&gt; (Identité validée)&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
         },
-        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.extension">extension</a>" : [
+        "<a href="http://hl7.org/fhir/R4/domainresource.html#Patient.extension">extension</a>" : [
           {
-            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>" : [
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Extension.extension">extension</a>" : [
               {
                 "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "identityStatus",
-                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCoding</a>" : {
+                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCoding</a>" : {
                   "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445",
                   "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "VALI"
                 }
@@ -294,11 +295,11 @@
           },
           {
             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
-            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueAddress</a>" : {
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.extension">extension</a>" : [
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueAddress</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Address.extension">extension</a>" : [
                 {
                   "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code",
-                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCoding</a>" : {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCoding</a>" : {
                     "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM",
                     "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "63220"
                   }
@@ -322,14 +323,27 @@
             },
             "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "urn:oid:1.2.250.1.213.1.4.8",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "147720425367411"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">type</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "PI",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Patient internal identifier"
+                }
+              ]
+            },
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "https://identifiant-medicosocial-localusager.esante.gouv.fr",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "3480787529/194704032"
           }
         ],
         "<a href="http://hl7.org/fhir/R4/patient.html#Patient.name">name</a>" : [
           {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.extension">extension</a>" : [
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#HumanName.extension">extension</a>" : [
               {
                 "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name",
-                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "Jean Stéphane Patrick"
+                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "Jean Stéphane Patrick"
               }
             ],
             "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.use">use</a>" : "official",
@@ -366,13 +380,13 @@
       "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "https://test-server.fr/Organization/tddui-organization-example",
       "<a href="http://hl7.org/fhir/R4/organization.html#Organization">resource</a>" : {
         "<a href="http://hl7.org/fhir/R4/organization.html">resourceType</a>" : "Organization",
-        "<a href="http://hl7.org/fhir/R4/organization.html#Organization.id">id</a>" : "tddui-organization-example",
-        "<a href="http://hl7.org/fhir/R4/organization.html#Organization.meta">meta</a>" : {
+        "<a href="http://hl7.org/fhir/R4/resource.html#Organization.id">id</a>" : "tddui-organization-example",
+        "<a href="http://hl7.org/fhir/R4/resource.html#Organization.meta">meta</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
             <a href="StructureDefinition-tddui-organization.html" style="color: Maroon">&#x1F517;</a> "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization"
           ]
         },
-        "<a href="http://hl7.org/fhir/R4/organization.html#Organization.text">text</a>" : {
+        "<a href="http://hl7.org/fhir/R4/domainresource.html#Organization.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Organization_tddui-organization-example\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : Organisation tddui-organization-example&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;tddui-organization-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hctddui-organization-example\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profil: &lt;a href=\&quot;StructureDefinition-tddui-organization.html\&quot;&gt;TDDUI Organization&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: Identification nationale de structure définie par l’ANS dans le CI_SIS/1480787529&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Les Chênes Verts&lt;/p&gt;&lt;/div&gt;"
         },
@@ -401,32 +415,32 @@
       "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "https://test-server.fr/Encounter/tddui-encounter-sejour-example",
       "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter">resource</a>" : {
         "<a href="http://hl7.org/fhir/R4/encounter.html">resourceType</a>" : "Encounter",
-        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.id">id</a>" : "tddui-encounter-sejour-example",
-        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.meta">meta</a>" : {
+        "<a href="http://hl7.org/fhir/R4/resource.html#Encounter.id">id</a>" : "tddui-encounter-sejour-example",
+        "<a href="http://hl7.org/fhir/R4/resource.html#Encounter.meta">meta</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
             <a href="StructureDefinition-tddui-encounter-sejour.html" style="color: Maroon">&#x1F517;</a> "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour"
           ]
         },
-        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.text">text</a>" : {
+        "<a href="http://hl7.org/fhir/R4/domainresource.html#Encounter.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Encounter_tddui-encounter-sejour-example\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : Venue tddui-encounter-sejour-example&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;tddui-encounter-sejour-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hctddui-encounter-sejour-example\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profil: &lt;a href=\&quot;StructureDefinition-tddui-encounter-sejour.html\&quot;&gt;TDDUI Encounter Sejour&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;Date d’admission&lt;/b&gt;: 2023-04-11&lt;/p&gt;&lt;p&gt;&lt;b&gt;Libellé mode d'entrée&lt;/b&gt;: Date de début du suivi post-opératoire : 14/04/2023&lt;/p&gt;&lt;p&gt;&lt;b&gt;Libellé mode de sortie&lt;/b&gt;: Sortie prévisionnelle prévue pour le 5 mai 2023&lt;/p&gt;&lt;p&gt;&lt;b&gt;Extension Definition for Encounter.plannedEndDate for Version 5.0&lt;/b&gt;: 2023-05-05&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: Identifiant du séjour/3480787529/147720425367411-SEJOUR-1012&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: In Progress&lt;/p&gt;&lt;p&gt;&lt;b&gt;class&lt;/b&gt;: &lt;a href=\&quot;http://terminology.hl7.org/6.2.0/CodeSystem-v3-ActCode.html#v3-ActCode-HH\&quot;&gt;ActCode HH&lt;/a&gt;: home health&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-tddui-patient-ins-example.html\&quot;&gt;DUPONT  Male, Date de Naissance :1947-04-03 ( NIR définitif\u00a0(use:\u00a0official,\u00a0))&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: 2023-04-14 --&amp;gt; (ongoing)&lt;/p&gt;&lt;p&gt;&lt;b&gt;serviceProvider&lt;/b&gt;: &lt;a href=\&quot;Organization-tddui-organization-example.html\&quot;&gt;Organization Les Chênes Verts&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Encounter_tddui-encounter-sejour-example\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : Venue tddui-encounter-sejour-example&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;tddui-encounter-sejour-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hctddui-encounter-sejour-example\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profil: &lt;a href=\&quot;StructureDefinition-tddui-encounter-sejour.html\&quot;&gt;TDDUI Encounter Sejour&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;Date d’admission&lt;/b&gt;: 2023-04-11&lt;/p&gt;&lt;p&gt;&lt;b&gt;Libellé mode d'entrée&lt;/b&gt;: Date de début du suivi post-opératoire : 14/04/2023&lt;/p&gt;&lt;p&gt;&lt;b&gt;Libellé mode de sortie&lt;/b&gt;: Sortie prévisionnelle prévue pour le 5 mai 2023&lt;/p&gt;&lt;p&gt;&lt;b&gt;Extension Definition for Encounter.plannedEndDate for Version 5.0&lt;/b&gt;: 2023-05-05&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: Identifiant du séjour/3480787529/147720425367411-SEJOUR-1012&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: In Progress&lt;/p&gt;&lt;p&gt;&lt;b&gt;class&lt;/b&gt;: &lt;a href=\&quot;http://terminology.hl7.org/7.0.1/CodeSystem-v3-ActCode.html#v3-ActCode-HH\&quot;&gt;ActCode: HH&lt;/a&gt; (home health)&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-tddui-patient-ins-example.html\&quot;&gt;DUPONT  Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/194704032)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: 2023-04-14 --&amp;gt; (en cours)&lt;/p&gt;&lt;p&gt;&lt;b&gt;serviceProvider&lt;/b&gt;: &lt;a href=\&quot;Organization-tddui-organization-example.html\&quot;&gt;Organization Les Chênes Verts&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"
         },
-        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.extension">extension</a>" : [
+        "<a href="http://hl7.org/fhir/R4/domainresource.html#Encounter.extension">extension</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-admission-date",
-            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDateTime</a>" : "2023-04-11"
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDateTime</a>" : "2023-04-11"
           },
           {
             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-mode-label",
-            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "Date de début du suivi post-opératoire : 14/04/2023"
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "Date de début du suivi post-opératoire : 14/04/2023"
           },
           {
             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exit-mode-label",
-            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "Sortie prévisionnelle prévue pour le 5 mai 2023"
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "Sortie prévisionnelle prévue pour le 5 mai 2023"
           },
           {
             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedEndDate",
-            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDateTime</a>" : "2023-05-05"
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDateTime</a>" : "2023-05-05"
           }
         ],
         "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.identifier">identifier</a>" : [
@@ -434,13 +448,13 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">type</a>" : {
               "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
                 {
-                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier-cs",
                   "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "SEJ",
                   "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Identifiant du séjour"
                 }
               ]
             },
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "urn:oid:1.2.250.2345.3245.13",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "https://identifiant-medicosocial-sejour.esante.gouv.fr",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "3480787529/147720425367411-SEJOUR-1012"
           }
         ],
@@ -462,6 +476,554 @@
       "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request">request</a>" : {
         "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.method">method</a>" : "POST",
         "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.url">url</a>" : "TDDUIEncounterSejour"
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "https://test-server.fr/Encounter/tddui-encounter-evenement-example",
+      "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/encounter.html">resourceType</a>" : "Encounter",
+        "<a href="http://hl7.org/fhir/R4/resource.html#Encounter.id">id</a>" : "tddui-encounter-evenement-example",
+        "<a href="http://hl7.org/fhir/R4/resource.html#Encounter.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-tddui-encounter-evenement.html" style="color: Maroon">&#x1F517;</a> "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/domainresource.html#Encounter.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Encounter_tddui-encounter-evenement-example\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : Venue tddui-encounter-evenement-example&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;tddui-encounter-evenement-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hctddui-encounter-evenement-example\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profil: &lt;a href=\&quot;StructureDefinition-tddui-encounter-evenement.html\&quot;&gt;TDDUI Encounter Evenement&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Ressources utilisées&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;TDDUIRessourceType: &lt;span title=\&quot;Codes :{https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis ORG-206}\&quot;&gt;Matériel spécialisé&lt;/span&gt;&lt;/li&gt;&lt;li&gt;TDDUIMaterialDetail: &lt;span title=\&quot;Codes :{https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis ORG-208}\&quot;&gt;Materiel médical&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;Rapport de l’évènement&lt;/b&gt;: Observations cliniques : ; Recommandations pour les jours à venir : ; Prochaine visite : 15 avril 2023, 10h30 ; Remarque : Monsieur Dupont a compris les consignes pour la gestion de sa douleur et la mobilisation de sa hanche opérée.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Commentaire&lt;/b&gt;: Cet évènement a débuté plus tard l’usager était sous la douche à l’heure du début du rendez-vous.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Libellé de l'évènement&lt;/b&gt;: Visite à domicile pour soins infirmier.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Motif de l’évènement&lt;/b&gt;: Suivi post-opératoire suite à intervention chirurgicale de la hanche.&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: Visit Number/3480787529/147720425367411-EVN-12548&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Finished&lt;/p&gt;&lt;p&gt;&lt;b&gt;class&lt;/b&gt;: &lt;a href=\&quot;http://terminology.hl7.org/7.0.1/CodeSystem-v3-ActCode.html#v3-ActCode-HH\&quot;&gt;ActCode: HH&lt;/a&gt; (home health)&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes :{https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis MED-1298}\&quot;&gt;Intervention d'un infirmer salarié&lt;/span&gt;, &lt;span title=\&quot;Codes :{http://terminology.hl7.org/CodeSystem/data-absent-reason not-permitted}\&quot;&gt;Intervention&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-tddui-patient-ins-example.html\&quot;&gt;DUPONT  Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/194704032)&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;Participants&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Individual&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes :{http://terminology.hl7.org/CodeSystem/v3-ParticipationType PART}\&quot;&gt;Participation&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Practitioner-tddui-practitioner-example.html\&quot;&gt;Practitioner Claire Martin &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: 2023-04-14 10:30:00+0200 --&amp;gt; 2023-04-14 11:15:00+0200&lt;/p&gt;&lt;h3&gt;Locations&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Location&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Location-tddui-event-location-example.html\&quot;&gt;Location&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;serviceProvider&lt;/b&gt;: &lt;a href=\&quot;Organization-tddui-organization-example.html\&quot;&gt;Organization Les Chênes Verts&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;partOf&lt;/b&gt;: &lt;a href=\&quot;Encounter-tddui-encounter-sejour-example.html\&quot;&gt;Encounter : extension = 2023-04-11,Date de début du suivi post-opératoire : 14/04/2023,Sortie prévisionnelle prévue pour le 5 mai 2023,2023-05-05; identifier = Identifiant du séjour: 3480787529/147720425367411-SEJOUR-1012; status = in-progress; class = home health (ActCode#HH); period = 2023-04-14 --&amp;gt; (en cours)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/domainresource.html#Encounter.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Extension.extension">extension</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "TDDUIRessourceType",
+                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCodeableConcept</a>" : {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "ORG-206",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Matériel spécialisé"
+                    }
+                  ]
+                }
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "TDDUIMaterialDetail",
+                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCodeableConcept</a>" : {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "ORG-208",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Materiel médical"
+                    }
+                  ]
+                }
+              }
+            ],
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-report",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "Observations cliniques : ; Recommandations pour les jours à venir : ; Prochaine visite : 15 avril 2023, 10h30 ; Remarque : Monsieur Dupont a compris les consignes pour la gestion de sa douleur et la mobilisation de sa hanche opérée."
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "Cet évènement a débuté plus tard l’usager était sous la douche à l’heure du début du rendez-vous."
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-label",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "Visite à domicile pour soins infirmier."
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-reason",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "Suivi post-opératoire suite à intervention chirurgicale de la hanche."
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.identifier">identifier</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">type</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identifier-type",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "VN"
+                }
+              ]
+            },
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "https://identifiant-medicosocial-evenement.esante.gouv.fr",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "3480787529/147720425367411-EVN-12548"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.status">status</a>" : "finished",
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.class">class</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "HH"
+        },
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.type">type</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "MED-1298",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Intervention d'un infirmer salarié"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "not-permitted",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Not Permitted"
+              }
+            ],
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Intervention"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.subject">subject</a>" : {
+          <a href="Patient-tddui-patient-ins-example.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/tddui-patient-ins-example"
+        },
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.participant">participant</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.participant.type">type</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "PART"
+                  }
+                ]
+              }
+            ],
+            "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.participant.individual">individual</a>" : {
+              <a href="Practitioner-tddui-practitioner-example.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Practitioner/tddui-practitioner-example"
+            }
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.period">period</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2023-04-14T10:30:00+02:00",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">end</a>" : "2023-04-14T11:15:00+02:00"
+        },
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location">location</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location.location">location</a>" : {
+              <a href="Location-tddui-event-location-example.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Location/tddui-event-location-example"
+            }
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.serviceProvider">serviceProvider</a>" : {
+          <a href="Organization-tddui-organization-example.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Organization/tddui-organization-example"
+        },
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.partOf">partOf</a>" : {
+          <a href="Encounter-tddui-encounter-sejour-example.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Encounter/tddui-encounter-sejour-example"
+        }
+      },
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request">request</a>" : {
+        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.method">method</a>" : "POST",
+        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.url">url</a>" : "TDDUIEncounterEvenement"
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "https://test-server.fr/Practitioner/tddui-practitioner-example",
+      "<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/practitioner.html">resourceType</a>" : "Practitioner",
+        "<a href="http://hl7.org/fhir/R4/resource.html#Practitioner.id">id</a>" : "tddui-practitioner-example",
+        "<a href="http://hl7.org/fhir/R4/resource.html#Practitioner.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-tddui-practitioner.html" style="color: Maroon">&#x1F517;</a> "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/domainresource.html#Practitioner.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Practitioner_tddui-practitioner-example\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : Praticien tddui-practitioner-example&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;tddui-practitioner-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hctddui-practitioner-example\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profil: &lt;a href=\&quot;StructureDefinition-tddui-practitioner.html\&quot;&gt;TDDUI Practitioner&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;urn:oid:1.2.250.1.71.4.2.1&lt;/code&gt;/10103441234&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Claire Martin &lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;qualification&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes :{https://mos.esante.gouv.fr/NOS/TRE_R48-DiplomeEtatFrancais/FHIR/TRE-R48-DiplomeEtatFrancais DE09}\&quot;&gt;DE Infirmier&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;qualification&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes :{https://mos.esante.gouv.fr/NOS/TRE_G15-ProfessionSante/FHIR/TRE-G15-ProfessionSante 60}\&quot;&gt;Infirmier&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.identifier">identifier</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "urn:oid:1.2.250.1.71.4.2.1",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "10103441234"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.name">name</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.family">family</a>" : "Martin",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.given">given</a>" : [
+              "Claire"
+            ],
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.prefix">prefix</a>" : [
+              "MME"
+            ]
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.qualification">qualification</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.qualification.code">code</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://mos.esante.gouv.fr/NOS/TRE_R48-DiplomeEtatFrancais/FHIR/TRE-R48-DiplomeEtatFrancais",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "DE09",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "DE Infirmier"
+                }
+              ]
+            }
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.qualification.code">code</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://mos.esante.gouv.fr/NOS/TRE_G15-ProfessionSante/FHIR/TRE-G15-ProfessionSante",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "60",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Infirmier"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request">request</a>" : {
+        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.method">method</a>" : "POST",
+        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.url">url</a>" : "TDDUIPractitioner"
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "https://test-server.fr/PractitionerRole/tddui-practitioner-role-example",
+      "<a href="http://hl7.org/fhir/R4/practitionerrole.html#PractitionerRole">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/practitionerrole.html">resourceType</a>" : "PractitionerRole",
+        "<a href="http://hl7.org/fhir/R4/resource.html#PractitionerRole.id">id</a>" : "tddui-practitioner-role-example",
+        "<a href="http://hl7.org/fhir/R4/resource.html#PractitionerRole.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-tddui-practitioner-role.html" style="color: Maroon">&#x1F517;</a> "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/domainresource.html#PractitionerRole.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;PractitionerRole_tddui-practitioner-role-example\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : PractitionerRole tddui-practitioner-role-example&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;tddui-practitioner-role-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hctddui-practitioner-role-example\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profil: &lt;a href=\&quot;StructureDefinition-tddui-practitioner-role.html\&quot;&gt;TDDUI Practitioner Role&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;Mode d'exercice&lt;/b&gt;: &lt;span title=\&quot;Codes :{https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice S}\&quot;&gt;Salarié&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;practitioner&lt;/b&gt;: &lt;a href=\&quot;Practitioner-tddui-practitioner-example.html\&quot;&gt;Practitioner Claire Martin &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;organization&lt;/b&gt;: &lt;a href=\&quot;Organization-tddui-organization-example.html\&quot;&gt;Organization Les Chênes Verts&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes :{https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge 330}\&quot;&gt;Coordonnateur de parcours&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/domainresource.html#PractitionerRole.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exercise-mode",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCodeableConcept</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "S",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Salarié"
+                }
+              ]
+            }
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/practitionerrole.html#PractitionerRole.practitioner">practitioner</a>" : {
+          <a href="Practitioner-tddui-practitioner-example.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Practitioner/tddui-practitioner-example"
+        },
+        "<a href="http://hl7.org/fhir/R4/practitionerrole.html#PractitionerRole.organization">organization</a>" : {
+          <a href="Organization-tddui-organization-example.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Organization/tddui-organization-example"
+        },
+        "<a href="http://hl7.org/fhir/R4/practitionerrole.html#PractitionerRole.code">code</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#CodeableConcept.extension">extension</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-profession",
+                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCodeableConcept</a>" : {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://mos.esante.gouv.fr/NOS/TRE_A02-ProfessionSavFaire-CISIS/FHIR/TRE-A02-ProfessionSavFaire-CISIS",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "G15_60",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Infirmier"
+                    }
+                  ]
+                }
+              }
+            ],
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "330",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Coordonnateur de parcours"
+              }
+            ]
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request">request</a>" : {
+        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.method">method</a>" : "POST",
+        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.url">url</a>" : "TDDUIPractitionerRole"
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "https://test-server.fr/Task/tddui-task-transport-professionel-example",
+      "<a href="http://hl7.org/fhir/R4/task.html#Task">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/task.html">resourceType</a>" : "Task",
+        "<a href="http://hl7.org/fhir/R4/resource.html#Task.id">id</a>" : "tddui-task-transport-professionel-example",
+        "<a href="http://hl7.org/fhir/R4/resource.html#Task.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-tddui-task-transport-professionnel.html" style="color: Maroon">&#x1F517;</a> "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/domainresource.html#Task.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Task_tddui-task-transport-professionel-example\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : Task tddui-task-transport-professionel-example&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;tddui-task-transport-professionel-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hctddui-task-transport-professionel-example\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profil: &lt;a href=\&quot;StructureDefinition-tddui-task-transport-professionnel.html\&quot;&gt;TDDUI Task Transport Professionnel&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;https://identifiant-medicosocial-transportprofessionnel.esante.gouv.fr&lt;/code&gt;/3480787529/147720425367411-TPPro-154674&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: plan&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes :{https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis ORG-202}\&quot;&gt;Véhicule individuel&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;for&lt;/b&gt;: &lt;a href=\&quot;Practitioner-tddui-practitioner-example.html\&quot;&gt;Practitioner Claire Martin &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;a href=\&quot;Encounter-tddui-encounter-evenement-example.html\&quot;&gt;Encounter : extension = ,Observations cliniques : ; Recommandations pour les jours à venir : ; Prochaine visite : 15 avril 2023, 10h30 ; Remarque : Monsieur Dupont a compris les consignes pour la gestion de sa douleur et la mobilisation de sa hanche opérée.,Cet évènement a débuté plus tard l’usager était sous la douche à l’heure du début du rendez-vous.,Visite à domicile pour soins infirmier.,Suivi post-opératoire suite à intervention chirurgicale de la hanche.; identifier = Visit Number; status = finished; class = home health (ActCode#HH); type = Intervention d'un infirmer salarié,Not Permitted; period = 2023-04-14 10:30:00+0200 --&amp;gt; 2023-04-14 11:15:00+0200&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;executionPeriod&lt;/b&gt;: 2023-04-14 10:30:00+0200 --&amp;gt; 2023-04-14 11:15:00+0200&lt;/p&gt;&lt;p&gt;&lt;b&gt;owner&lt;/b&gt;: &lt;a href=\&quot;Organization-tddui-organization-example.html\&quot;&gt;Organization Les Chênes Verts&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;input&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem typeMotorisation}\&quot;&gt;Type de motorisation associée au véhicule utilisé lors du transport.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=\&quot;Codes :{https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis GEN-355}\&quot;&gt;Véhicule électrique&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;input&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem budgetPrevisionnel}\&quot;&gt;Budget prévisionnel pour assurer le transport de la personne physique.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=\&quot;Euro\&quot;&gt;€2,00&lt;/span&gt; (EUR)&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;input&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem budgetReel}\&quot;&gt;Budget réel pour assurer le transport de la personne physique.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=\&quot;Euro\&quot;&gt;€2,00&lt;/span&gt; (EUR)&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;input&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem distance}\&quot;&gt;Distance du transport de la personne physique.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Pas daffichage pour {0}  (value : 4; unit : kilometers; system : http://unitsofmeasure.org; code : km)&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;input&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem dureeTheorique}\&quot;&gt;Durée théorique du transport de la personne physique.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Pas daffichage pour {0}  (value : 10; unit : minutes; system : http://unitsofmeasure.org; code : min)&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/task.html#Task.identifier">identifier</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "https://identifiant-medicosocial-transportprofessionnel.esante.gouv.fr",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "3480787529/147720425367411-TPPro-154674"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/task.html#Task.status">status</a>" : "completed",
+        "<a href="http://hl7.org/fhir/R4/task.html#Task.intent">intent</a>" : "plan",
+        "<a href="http://hl7.org/fhir/R4/task.html#Task.code">code</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "ORG-202",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Véhicule individuel"
+            }
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/task.html#Task.for">for</a>" : {
+          <a href="Practitioner-tddui-practitioner-example.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Practitioner/tddui-practitioner-example"
+        },
+        "<a href="http://hl7.org/fhir/R4/task.html#Task.encounter">encounter</a>" : {
+          <a href="Encounter-tddui-encounter-evenement-example.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Encounter/tddui-encounter-evenement-example"
+        },
+        "<a href="http://hl7.org/fhir/R4/task.html#Task.executionPeriod">executionPeriod</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2023-04-14T10:30:00+02:00",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">end</a>" : "2023-04-14T11:15:00+02:00"
+        },
+        "<a href="http://hl7.org/fhir/R4/task.html#Task.owner">owner</a>" : {
+          <a href="Organization-tddui-organization-example.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Organization/tddui-organization-example"
+        },
+        "<a href="http://hl7.org/fhir/R4/task.html#Task.input">input</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/task.html#Task.input.type">type</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "typeMotorisation"
+                }
+              ]
+            },
+            "<a href="http://hl7.org/fhir/R4/task.html#Task.input.value_x_">valueCodeableConcept</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "GEN-355",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Véhicule électrique"
+                }
+              ]
+            }
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/task.html#Task.input.type">type</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "budgetPrevisionnel"
+                }
+              ]
+            },
+            "<a href="http://hl7.org/fhir/R4/task.html#Task.input.value_x_">valueMoney</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.value">value</a>" : 2,
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.currency">currency</a>" : "EUR"
+            }
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/task.html#Task.input.type">type</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "budgetReel"
+                }
+              ]
+            },
+            "<a href="http://hl7.org/fhir/R4/task.html#Task.input.value_x_">valueMoney</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.value">value</a>" : 2,
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.currency">currency</a>" : "EUR"
+            }
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/task.html#Task.input.type">type</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "distance"
+                }
+              ]
+            },
+            "<a href="http://hl7.org/fhir/R4/task.html#Task.input.value_x_">valueDistance</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Distance.value">value</a>" : 4,
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Distance.unit">unit</a>" : "kilometers",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Distance.system">system</a>" : "http://unitsofmeasure.org",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Distance.code">code</a>" : "km"
+            }
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/task.html#Task.input.type">type</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "dureeTheorique"
+                }
+              ]
+            },
+            "<a href="http://hl7.org/fhir/R4/task.html#Task.input.value_x_">valueDuration</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Duration.value">value</a>" : 10,
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Duration.unit">unit</a>" : "minutes",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Duration.system">system</a>" : "http://unitsofmeasure.org",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Duration.code">code</a>" : "min"
+            }
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request">request</a>" : {
+        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.method">method</a>" : "POST",
+        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.url">url</a>" : "TDDUITaskTransportProfessionnel"
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "https://test-server.fr/Task/tddui-task-transport-usager-example",
+      "<a href="http://hl7.org/fhir/R4/task.html#Task">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/task.html">resourceType</a>" : "Task",
+        "<a href="http://hl7.org/fhir/R4/resource.html#Task.id">id</a>" : "tddui-task-transport-usager-example",
+        "<a href="http://hl7.org/fhir/R4/resource.html#Task.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-tddui-task-transport-usager.html" style="color: Maroon">&#x1F517;</a> "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/domainresource.html#Task.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Task_tddui-task-transport-usager-example\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : Task tddui-task-transport-usager-example&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;tddui-task-transport-usager-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hctddui-task-transport-usager-example\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profil: &lt;a href=\&quot;StructureDefinition-tddui-task-transport-usager.html\&quot;&gt;TDDUI Task Transport Usager&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;https://identifiant-medicosocial-transportusager.esante.gouv.fr&lt;/code&gt;/3480787529/147720425367411-TPPat-154675&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: plan&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes :{https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis ORG-156}\&quot;&gt;Taxi&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;a href=\&quot;Encounter-tddui-encounter-evenement-example.html\&quot;&gt;Encounter : extension = ,Observations cliniques : ; Recommandations pour les jours à venir : ; Prochaine visite : 15 avril 2023, 10h30 ; Remarque : Monsieur Dupont a compris les consignes pour la gestion de sa douleur et la mobilisation de sa hanche opérée.,Cet évènement a débuté plus tard l’usager était sous la douche à l’heure du début du rendez-vous.,Visite à domicile pour soins infirmier.,Suivi post-opératoire suite à intervention chirurgicale de la hanche.; identifier = Visit Number; status = finished; class = home health (ActCode#HH); type = Intervention d'un infirmer salarié,Not Permitted; period = 2023-04-14 10:30:00+0200 --&amp;gt; 2023-04-14 11:15:00+0200&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;executionPeriod&lt;/b&gt;: 2023-04-14 10:30:00+0200 --&amp;gt; 2023-04-14 11:15:00+0200&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;input&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem budgetPrevisionnel}\&quot;&gt;Budget prévisionnel pour assurer le transport de la personne physique.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=\&quot;Euro\&quot;&gt;€2,00&lt;/span&gt; (EUR)&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;input&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem budgetReel}\&quot;&gt;Budget réel pour assurer le transport de la personne physique.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=\&quot;Euro\&quot;&gt;€2,00&lt;/span&gt; (EUR)&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;input&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem distance}\&quot;&gt;Distance du transport de la personne physique.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Pas daffichage pour {0}  (value : 4; unit : kilometers; system : http://unitsofmeasure.org; code : km)&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;input&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem dureeTheorique}\&quot;&gt;Durée théorique du transport de la personne physique.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Pas daffichage pour {0}  (value : 10; unit : minutes; system : http://unitsofmeasure.org; code : min)&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;input&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem accompagnement}\&quot;&gt;Accompagnement nécessaire ou non de l'usager. &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: true&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;input&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem asepsie}\&quot;&gt;Lors du transport de l'usager l'asepsie est rigoureusement respectée ou n'est pas nécessaire.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: false&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;input&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem natureTransport}\&quot;&gt;Nature du transport de l'usager.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=\&quot;Codes :{https://smt.esante.gouv.fr/terminologie-SERAFINPH 3.2.4}\&quot;&gt;Transports liés au projet individuel&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/task.html#Task.identifier">identifier</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "https://identifiant-medicosocial-transportusager.esante.gouv.fr",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "3480787529/147720425367411-TPPat-154675"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/task.html#Task.status">status</a>" : "completed",
+        "<a href="http://hl7.org/fhir/R4/task.html#Task.intent">intent</a>" : "plan",
+        "<a href="http://hl7.org/fhir/R4/task.html#Task.code">code</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "ORG-156",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Taxi"
+            }
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/task.html#Task.encounter">encounter</a>" : {
+          <a href="Encounter-tddui-encounter-evenement-example.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Encounter/tddui-encounter-evenement-example"
+        },
+        "<a href="http://hl7.org/fhir/R4/task.html#Task.executionPeriod">executionPeriod</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2023-04-14T10:30:00+02:00",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">end</a>" : "2023-04-14T11:15:00+02:00"
+        },
+        "<a href="http://hl7.org/fhir/R4/task.html#Task.input">input</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/task.html#Task.input.type">type</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "budgetPrevisionnel"
+                }
+              ]
+            },
+            "<a href="http://hl7.org/fhir/R4/task.html#Task.input.value_x_">valueMoney</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.value">value</a>" : 2,
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.currency">currency</a>" : "EUR"
+            }
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/task.html#Task.input.type">type</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "budgetReel"
+                }
+              ]
+            },
+            "<a href="http://hl7.org/fhir/R4/task.html#Task.input.value_x_">valueMoney</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.value">value</a>" : 2,
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.currency">currency</a>" : "EUR"
+            }
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/task.html#Task.input.type">type</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "distance"
+                }
+              ]
+            },
+            "<a href="http://hl7.org/fhir/R4/task.html#Task.input.value_x_">valueDistance</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Distance.value">value</a>" : 4,
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Distance.unit">unit</a>" : "kilometers",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Distance.system">system</a>" : "http://unitsofmeasure.org",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Distance.code">code</a>" : "km"
+            }
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/task.html#Task.input.type">type</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "dureeTheorique"
+                }
+              ]
+            },
+            "<a href="http://hl7.org/fhir/R4/task.html#Task.input.value_x_">valueDuration</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Duration.value">value</a>" : 10,
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Duration.unit">unit</a>" : "minutes",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Duration.system">system</a>" : "http://unitsofmeasure.org",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Duration.code">code</a>" : "min"
+            }
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/task.html#Task.input.type">type</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "accompagnement"
+                }
+              ]
+            },
+            "<a href="http://hl7.org/fhir/R4/task.html#Task.input.value_x_">valueBoolean</a>" : true
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/task.html#Task.input.type">type</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "asepsie"
+                }
+              ]
+            },
+            "<a href="http://hl7.org/fhir/R4/task.html#Task.input.value_x_">valueBoolean</a>" : false
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/task.html#Task.input.type">type</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "natureTransport"
+                }
+              ]
+            },
+            "<a href="http://hl7.org/fhir/R4/task.html#Task.input.value_x_">valueCodeableConcept</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://smt.esante.gouv.fr/terminologie-SERAFINPH",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "3.2.4",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Transports liés au projet individuel"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request">request</a>" : {
+        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.method">method</a>" : "POST",
+        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.url">url</a>" : "TDDUITaskTransportUsager"
       }
     }
   ]
@@ -511,7 +1073,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Aug 1, 2025 06:40+0000">2025-08-01</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 19, 2025 08:22+0000">2025-12-19</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |

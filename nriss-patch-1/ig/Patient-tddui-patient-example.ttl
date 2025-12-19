@@ -12,22 +12,31 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient"^^xsd:anyURI ;
-       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient>
+       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Patient tddui-patient-example</b></p><a name=\"tddui-patient-example\"> </a><a name=\"hctddui-patient-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-patient.html\">TDDUI Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">DUPONT  Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/194704032)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Noms alternatifs (voir plus bas)\">Nom alternatif :</td><td colspan=\"3\">Jean DUPONT (Official)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Moyens de contacter le Patient\">Contact Detail</td><td colspan=\"3\">12 rue des Lilas, 76748 Vittefleur, France(home)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The registered place of birth of the patient. A sytem may use the address.text if they don't store the birthPlace address in discrete elements.\"><a href=\"http://hl7.org/fhir/extensions/5.2.0/StructureDefinition-patient-birthPlace.html\">Patient Birth Place</a></td><td colspan=\"3\">Mazoires FRA </td></tr></table></div>"^^rdf:XMLLiteral
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Patient tddui-patient-example</b></p><a name=\"tddui-patient-example\"> </a><a name=\"hctddui-patient-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-patient.html\">TDDUI Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">DUPONT  Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/194704032)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Noms alternatifs (voir plus bas)\">Nom alternatif :</td><td colspan=\"3\">Jean DUPONT (Official)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Moyens de contacter le Patient\">Coordonnées</td><td colspan=\"3\">12 rue des Lilas, 76748 Vittefleur, France(home)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The registered place of birth of the patient. A sytem may use the address.text if they don't store the birthPlace address in discrete elements.\"><a href=\"http://hl7.org/fhir/extensions/5.2.0/StructureDefinition-patient-birthPlace.html\">Patient Birth Place</a></td><td colspan=\"3\">Mazoires FRA </td></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:extension ( [
-     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"^^xsd:anyURI ] ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/patient-birthPlace>
+     ] ;
      fhir:value [
        a fhir:Address ;
        fhir:extension ( [
-         fhir:url [ fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code"^^xsd:anyURI ;
+           fhir:l <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code>
+         ] ;
          fhir:value [
            a fhir:Coding ;
-           fhir:system [ fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM"^^xsd:anyURI ;
+             fhir:l <https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM>
+           ] ;
            fhir:code [ fhir:v "63220" ]
          ]
        ] ) ;
@@ -38,19 +47,28 @@
   fhir:identifier ( [
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/v2-0203>
+         ] ;
          fhir:code [ fhir:v "PI" ] ;
          fhir:display [ fhir:v "Patient internal identifier" ]
        ] )
      ] ;
-     fhir:system [ fhir:v "http://identifiant-ipp.com"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "https://identifiant-medicosocial-localusager.esante.gouv.fr"^^xsd:anyURI ;
+       fhir:l <https://identifiant-medicosocial-localusager.esante.gouv.fr>
+     ] ;
      fhir:value [ fhir:v "3480787529/194704032" ]
   ] ) ; # 
   fhir:name ( [
      fhir:extension ( [
-       fhir:url [ fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name"^^xsd:anyURI ] ;
+       fhir:url [
+         fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name"^^xsd:anyURI ;
+         fhir:l <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name>
+       ] ;
        fhir:value [
-         a fhir:string ;
+         a fhir:String ;
          fhir:v "Jean Stéphane Patrick"
        ]
      ] ) ;
@@ -65,9 +83,12 @@
   fhir:birthDate [
      fhir:v "1947-04-03"^^xsd:date ;
      fhir:extension ( [
-       fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order"^^xsd:anyURI ] ;
+       fhir:url [
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order>
+       ] ;
        fhir:value [
-         a fhir:positiveInt ;
+         a fhir:PositiveInt ;
          fhir:v "2"^^xsd:positiveInteger
        ]
      ] )

@@ -6,11 +6,11 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : ImplementationGuide ans.fhir.fr.tddui</b></p><a name="ans.fhir.fr.tddui"> </a><a name="hcans.fhir.fr.tddui"> </a><h2>TDDUI</h2><p>LURL officielle pour ce guide dimplémentation est : </p><pre>https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui</pre></div>
   </text>
   <url value="https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui"/>
-  <version value="2.0.0-ballot"/>
+  <version value="2.1.0"/>
   <name value="TDDUI"/>
   <title value="Médicosocial - Transfert de données DUI"/>
   <status value="active"/>
-  <date value="2025-08-01T06:39:39+00:00"/>
+  <date value="2025-12-19T08:22:07+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -35,7 +35,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="6.5.0"/>
+    <version value="7.0.1"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_fr_core">
     <uri value="https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core"/>
@@ -45,12 +45,17 @@
   <dependsOn id="ans_fr_terminologies">
     <uri value="https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies"/>
     <packageId value="ans.fr.terminologies"/>
-    <version value="1.2.0"/>
+    <version value="1.4.0"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_uv_extensions">
     <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
     <packageId value="hl7.fhir.uv.extensions"/>
     <version value="5.2.0"/>
+  </dependsOn>
+  <dependsOn id="ihe_iti_mhd">
+    <uri value="https://profiles.ihe.net/ITI/MHD/ImplementationGuide/ihe.iti.mhd"/>
+    <packageId value="ihe.iti.mhd"/>
+    <version value="4.2.0"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -66,7 +71,7 @@
         <valueString value="releaselabel"/>
       </extension>
       <extension url="value">
-        <valueString value="public-comment"/>
+        <valueString value="trial-implementation"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -75,6 +80,14 @@
       </extension>
       <extension url="value">
         <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-expansion-params"/>
+      </extension>
+      <extension url="value">
+        <valueString value="../../expansion-params.json"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -261,8 +274,13 @@
         <valueString value="true"/>
       </extension>
     </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters">
+      <valueReference>
+        <reference value="Parameters/expansion-parameters"/>
+      </valueReference>
+    </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools.r4#0.7.1"/>
+      <valueCode value="hl7.fhir.uv.tools.r4#0.9.0"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -277,7 +295,7 @@
         <valueCode value="releaselabel"/>
       </extension>
       <extension url="value">
-        <valueString value="public-comment"/>
+        <valueString value="trial-implementation"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -286,6 +304,14 @@
       </extension>
       <extension url="value">
         <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-expansion-params"/>
+      </extension>
+      <extension url="value">
+        <valueString value="../../expansion-params.json"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -480,7 +506,7 @@
         <reference value="StructureDefinition/tddui-comment"/>
       </reference>
       <name value="Commentaire"/>
-      <description value="Commentaire relatif au séjour."/>
+      <description value="&#xA;- **Séjour** : commentaire relatif au séjour.&#xA;- **Événement** : commentaires sur le déroulé de l’évènement.&#xA;- **Évaluation** : commentaire libre sur le contenu ou le résultat de l’évaluation.&#xA;- **Champ évalué** : commentaire spécifique à un item ou sous-item évalué."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -492,6 +518,149 @@
       </reference>
       <name value="Date d’admission"/>
       <description value="Date d’admission dans la structure ESSMS."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-outside-service"/>
+      </reference>
+      <name value="Evénement hors prestation"/>
+      <description value="Evénement hors prestation prévue dans le projet personnalisé de l’usager."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/fr-core-related-person-example"/>
+      </reference>
+      <name value="fr-core-related-person-example"/>
+      <description value="Exemple de la famille de l'usager."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/input-tddui-task-transport-codesystem"/>
+      </reference>
+      <name value="InputTaskTransportCodeSystem"/>
+      <description value="CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les transports dans le cadre du DUI."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/input-tddui-task-transport-valueset"/>
+      </reference>
+      <name value="InputTaskTransportValueSet"/>
+      <description value="ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les transports dans le cadre du DUI."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/input-tddui-task-action-codesystem"/>
+      </reference>
+      <name value="InputTDDUITaskActionCodeSystem"/>
+      <description value="CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les actions du projet personnalisé."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/input-tddui-task-action-valueset"/>
+      </reference>
+      <name value="InputTDDUITaskActionValueSet"/>
+      <description value="ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les actions du projet personnalisé."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/input-tddui-task-bilan-codesystem"/>
+      </reference>
+      <name value="InputTDDUITaskBilanCodeSystem"/>
+      <description value="CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour le bilan du projet personnalisé."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/input-tddui-task-bilan-valueset"/>
+      </reference>
+      <name value="InputTDDUITaskBilanValueSet"/>
+      <description value="ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour le bilan du projet personnalisé."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/input-tddui-task-moyen-ressource-codesystem"/>
+      </reference>
+      <name value="InputTDDUITaskMoyenRessourceCodeSystem"/>
+      <description value="CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les moyens et ressources du projet personnalisé."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/input-tddui-task-moyen-ressource-valueset"/>
+      </reference>
+      <name value="InputTDDUITaskMoyenRessourceValueSet"/>
+      <description value="ValueSet  pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les moyens et ressources du projet personnalisé."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/input-tddui-task-prestation-codesystem"/>
+      </reference>
+      <name value="InputTDDUITaskPrestationCodeSystem"/>
+      <description value="CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les prestations du projet personnalisé."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/input-tddui-task-prestation-valueset"/>
+      </reference>
+      <name value="InputTDDUITaskPrestationValueSet"/>
+      <description value="ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les prestations du projet personnalisé."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-event-label"/>
+      </reference>
+      <name value="Libellé de l'évènement"/>
+      <description value="Titre donné à l’évènement par la structure."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -521,10 +690,142 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/tddui-evaluation-reference"/>
+      </reference>
+      <name value="Lien vers l'évaluation"/>
+      <description value="Liens vers l'évaluation, utilisables dans le profil TDDUIGoalObjectif."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-careplan-reference"/>
+      </reference>
+      <name value="Lien vers le projet personnalisé"/>
+      <description value="Liens vers le projet personnalisé, utilisables dans le profil TDDUIGoalObjectif."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-exercise-mode"/>
+      </reference>
+      <name value="Mode d'exercice"/>
+      <description value="Extension permettant de représenter le mode d'exercice du professionnel."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-event-reason"/>
+      </reference>
+      <name value="Motif de l’évènement"/>
+      <description value="Contexte justifiant la réalisation de l’évènement."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/tddui-birth-order"/>
       </reference>
       <name value="Ordre de naissance dans le registre d'état civil"/>
       <description value="Ordre d’enregistrement de la naissance dans le registre d’état civil de la commune de naissance pour le mois de la naissance. Il compose les 3 derniers chiffres du NIR de l'usager avant la clé de sécurité et permet de distinguer les personnes nées au même lieu et à la même période. Il est obligatoire si le NIR n'est pas transmis."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/output-tddui-task-bilan-codesystem"/>
+      </reference>
+      <name value="OutputTDDUITaskBilanCodeSystem"/>
+      <description value="CodeSystem pour la définition des éléments spécifiques des output dans la ressource Task utilisée pour le bilan du projet personnalisé."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/output-tddui-task-bilan-valueset"/>
+      </reference>
+      <name value="OutputTDDUITaskBilanValueSet"/>
+      <description value="ValueSet pour la définition des éléments spécifiques des output dans la ressource Task utilisée pour le bilan du projet personnalisé."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-attachment"/>
+      </reference>
+      <name value="Pièce jointe"/>
+      <description value="Extension permettant de véhiculer des pièces jointes que ce soit pour l'évaluation, l'évènement ou le projet personnalisé. L'extension référence le profil PDSm_SimplifiedPublish."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-event-report"/>
+      </reference>
+      <name value="Rapport de l’évènement"/>
+      <description value="Zone de texte liée à l’événement pour compte rendu des actions réalisées."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-meal"/>
+      </reference>
+      <name value="Repas"/>
+      <description value="Repas du professionnel prévu dans le cadre de l'événement."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-qr-participant"/>
+      </reference>
+      <name value="Responsable et auteur du statut de l'évaluation"/>
+      <description value="Extension permettant d'ajouter le responsable de l'évaluation et l'auteur du statut de l'évaluation dans un QuestionnaireResponse."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-ressources-used"/>
+      </reference>
+      <name value="Ressources utilisées"/>
+      <description value="Ressources utilisées lors de l’évènement (ex : chambre, matériel médical, véhicule)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-status-author"/>
+      </reference>
+      <name value="TDDUI Auteur statut"/>
+      <description value="Extension permettant de représenter la profession du professionnel."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -540,13 +841,134 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-careplan-projet-personnalise"/>
+      </reference>
+      <name value="TDDUI CarePlan Projet Personalise"/>
+      <description value="Profil de la ressource CarePlan représentant le projet personnalisé d'un usager."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/tddui-care-plan-supportingInfo-vs"/>
+      </reference>
+      <name value="TDDUI CarePlan supportingInfo ValueSet"/>
+      <description value="ValueSet définissant les types de notes pour l'élément CarePlan.supportingInfo."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-consent-accord"/>
+      </reference>
+      <name value="TDDUI Consent Accord"/>
+      <description value="Profil de la ressource Consent permettant de représenter l'accord de l'usager, de son entourage ou de la structure."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/tddui-encounter-identifier"/>
+        <reference value="CodeSystem/tddui-discriminator-cs"/>
+      </reference>
+      <name value="TDDUI Discriminator CodeSystem"/>
+      <description value="CodeSystem définissant les codes discriminants."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-discriminator"/>
+      </reference>
+      <name value="TDDUI Discriminator Extension"/>
+      <description value="Extension pour discriminer les éléments CarePlan.supportingInfo et Goal.note."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/tddui-discriminator-vs"/>
+      </reference>
+      <name value="TDDUI Discriminator ValueSet"/>
+      <description value="ValueSet définissant les codes discriminants."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-document-reference"/>
+      </reference>
+      <name value="TDDUI DocumentReference"/>
+      <description value="Profil de la ressource SimplifiedPublishDocumentReference permettant de véhiculer des pièces jointes que ce soit pour l'évaluation, l'évènement ou le projet personnalisé."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-encounter-evenement"/>
+      </reference>
+      <name value="TDDUI Encounter Evenement"/>
+      <description value="Profil de la ressource Encounter permettant de regrouper les évènements liés à la prise en charge de l’usager dans une structure ESSMS."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/tddui-encounter-identifier-cs"/>
       </reference>
       <name value="TDDUI Encounter FR Core CodeSystem v2-0203"/>
       <description value="TDDUI Encounter's identifier"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/tddui-encounter-identifier-vs"/>
+      </reference>
+      <name value="TDDUI Encounter Identifier Type ValueSet"/>
+      <description value="ValueSet for TDDUI Encounter's identifier types"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/TDDUIEncounterParticipant"/>
+      </reference>
+      <name value="TDDUI Encounter Participant Type"/>
+      <description value="CodeSystem for the participant types in TDDUI Encounter"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/tddui-encounter-participant-vs"/>
+      </reference>
+      <name value="TDDUI Encounter Participant ValueSet"/>
+      <description value="ValueSet for TDDUI Encounter's participants"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -562,6 +984,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/tddui-encounter-type-vs"/>
+      </reference>
+      <name value="TDDUI Encounter Type ValueSet"/>
+      <description value="ValueSet for TDDUI Encounter's types"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
@@ -569,6 +1002,50 @@
       </reference>
       <name value="TDDUI FR Core CodeSystem v2-0203"/>
       <description value="TDDUI Patient's identifier"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-goal-attente"/>
+      </reference>
+      <name value="TDDUI Goal Attente"/>
+      <description value="Profil de la ressource Goal permettant de représenter les attentes pour un usager."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/tddui-goal-attente-note-vs"/>
+      </reference>
+      <name value="TDDUI Goal Attente Note ValueSet"/>
+      <description value="ValueSet définissant les types de notes pour l'élément Goal.note."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-goal-objectif"/>
+      </reference>
+      <name value="TDDUI Goal Objectif"/>
+      <description value="Profil de la ressource Goal permettant de représenter les résultats à atteindre dans le cadre du projet personnalisé."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/tddui-goal-objectif-note-vs"/>
+      </reference>
+      <name value="TDDUI Goal Objectif Note ValueSet"/>
+      <description value="ValueSet définissant les types de notes pour l'élément Goal.note."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -606,6 +1083,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/tddui-patient-identifier-vs"/>
+      </reference>
+      <name value="TDDUI Patient Identifier ValueSet"/>
+      <description value="ValueSet for TDDUI Patient's identifier types"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -613,6 +1101,149 @@
       </reference>
       <name value="TDDUI Patient INS"/>
       <description value="Profil de la ressource FRCorePatientINSProfile permettant de représenter un usager lorsque l'INS est transmis."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-practitioner"/>
+      </reference>
+      <name value="TDDUI Practitioner"/>
+      <description value="Profil de la ressource FRCorePractitionerProfile permettant de représenter un professionnel du médicosocial dans le cadre de TDDUI. Le profil AsPractitionerRoleProfile n'a pas été utilisé car il comportait trop de contraintes non présentes dans les DUI."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-practitioner-role"/>
+      </reference>
+      <name value="TDDUI Practitioner Role"/>
+      <description value="Profil de la ressource FRCorePractitionerRole permettant de représenter un Professionnel."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-profession"/>
+      </reference>
+      <name value="TDDUI Profession"/>
+      <description value="Extension permettant de représenter la profession du professionnel."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-questionnaire-response"/>
+      </reference>
+      <name value="TDDUI QuestionnaireResponse"/>
+      <description value="Profil de la ressource QuestionnaireResponse utilisé pour transmettre les réponses aux questionnaires dans le cadre des évaluations."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/tddui-serafin-valueset"/>
+      </reference>
+      <name value="TDDUI SERAFIN ValueSet"/>
+      <description value="ValueSet contenant les codes SERAFIN (prestations directes et indirectes) pour le profil TDDUI Encounter Evenement."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-service-request-besoin"/>
+      </reference>
+      <name value="TDDUI ServiceRequest Besoin"/>
+      <description value="Profil de la ressource ServiceRequest permettant de représenter les besoins de l'usager."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-task-action"/>
+      </reference>
+      <name value="TDDUI Task Action"/>
+      <description value="Profil de la ressource Task permettant de représenter les actions réalisées dans le cadre du projet personnalisé."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-task-bilan"/>
+      </reference>
+      <name value="TDDUI Task Bilan"/>
+      <description value="Profil de la ressource Task permettant de représenter le bilan du projet personnalisé."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-task-moyen-ressource"/>
+      </reference>
+      <name value="TDDUI Task MoyenRessource"/>
+      <description value="Profil de la ressource Task permettant de représenter les moyens ou ressources utilisées dans le cadre du projet personnalisé."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-task-prestation"/>
+      </reference>
+      <name value="TDDUI Task Prestation"/>
+      <description value="Profil de la ressource Task permettant de représenter les prestations du projet personnalisé."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-task-transport"/>
+      </reference>
+      <name value="TDDUI Task Transport"/>
+      <description value="Profil de la ressource Task permettant de représenter le transport."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-task-transport-professionnel"/>
+      </reference>
+      <name value="TDDUI Task Transport Professionnel"/>
+      <description value="Profil de la ressource TDDUITaskTransport permettant de représenter le transport du professionnel."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-task-transport-usager"/>
+      </reference>
+      <name value="TDDUI Task Transport Usager"/>
+      <description value="Profil de la ressource TDDUITaskTransport permettant de représenter le transport de l'usager."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -631,11 +1262,33 @@
         <valueString value="Encounter"/>
       </extension>
       <reference>
+        <reference value="Encounter/tddui-encounter-evenement-example"/>
+      </reference>
+      <name value="tddui-encounter-evenement-example"/>
+      <description value="Exemple d'un évènement"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
         <reference value="Encounter/tddui-encounter-sejour-example"/>
       </reference>
       <name value="tddui-encounter-sejour-example"/>
       <description value="Exemple d'un séjour en ESSMS"/>
       <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/tddui-event-location-example"/>
+      </reference>
+      <name value="tddui-event-location-example"/>
+      <description value="Lieu de l'évènement"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -672,6 +1325,402 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/tddui-pp-ime-bundle-example"/>
+      </reference>
+      <name value="tddui-pp-ime-bundle-example"/>
+      <description value="Exemple de bundle conforme au profil TDDUIBundle contenant le projet personnalisé en IME"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CarePlan"/>
+      </extension>
+      <reference>
+        <reference value="CarePlan/tddui-pp-ime-careplan-example"/>
+      </reference>
+      <name value="tddui-pp-ime-careplan-example"/>
+      <description value="Exemple du projet personnalisé d'un enfant en IME"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Consent"/>
+      </extension>
+      <reference>
+        <reference value="Consent/tddui-pp-ime-consent-accord-example"/>
+      </reference>
+      <name value="tddui-pp-ime-consent-accord-example"/>
+      <description value="Exemple d'un accord de la structure"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Goal"/>
+      </extension>
+      <reference>
+        <reference value="Goal/tddui-pp-ime-goal-objectif-1-example"/>
+      </reference>
+      <name value="tddui-pp-ime-goal-objectif-1-example"/>
+      <description value="Exemple d'un objectif dans le cadre du projet personnalisé en IME."/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Goal"/>
+      </extension>
+      <reference>
+        <reference value="Goal/tddui-pp-ime-goal-objectif-2-example"/>
+      </reference>
+      <name value="tddui-pp-ime-goal-objectif-2-example"/>
+      <description value="Exemple d'un objectif dans le cadre du projet personnalisé en IME."/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/tddui-pp-ime-patient-example"/>
+      </reference>
+      <name value="tddui-pp-ime-patient-example"/>
+      <description value="Exemple de la ressource TDDUIPatient dans le cadre d'un projet personnalisé en IME"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/tddui-pp-ime-task-action-1-aesh-example"/>
+      </reference>
+      <name value="tddui-pp-ime-task-action-1-aesh-example"/>
+      <description value="Exemple d'une action de l'objectif 1 réalisée par l'AESH dans le cadre du projet personnalisé en IME."/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/tddui-pp-ime-task-action-1-educ-example"/>
+      </reference>
+      <name value="tddui-pp-ime-task-action-1-educ-example"/>
+      <description value="Exemple d'une action de l'objectif 1 réalisée par l'éducateur spécialisé dans le cadre du projet personnalisé en IME."/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/tddui-pp-pa-bundle-example"/>
+      </reference>
+      <name value="tddui-pp-pa-bundle-example"/>
+      <description value="Exemple de bundle conforme au profil TDDUIBundle contenant le projet personnalisé PA."/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CarePlan"/>
+      </extension>
+      <reference>
+        <reference value="CarePlan/tddui-pp-pa-careplan-example"/>
+      </reference>
+      <name value="tddui-pp-pa-careplan-example"/>
+      <description value="Exemple d'un projet personnalisé PA"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Consent"/>
+      </extension>
+      <reference>
+        <reference value="Consent/tddui-pp-pa-consent-accord-example"/>
+      </reference>
+      <name value="tddui-pp-pa-consent-accord-example"/>
+      <description value="Exemple d'un accord de la structure"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DocumentReference"/>
+      </extension>
+      <reference>
+        <reference value="DocumentReference/tddui-pp-pa-documentreference-bilan-objectif-1-example"/>
+      </reference>
+      <name value="tddui-pp-pa-documentreference-bilan-objectif-1-example"/>
+      <description value="Bilan de l'objectif 1 du projet personnalisé PA au format PDF"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DocumentReference"/>
+      </extension>
+      <reference>
+        <reference value="DocumentReference/tddui-pp-pa-documentreference-entrant-example"/>
+      </reference>
+      <name value="tddui-pp-pa-documentreference-entrant-example"/>
+      <description value="Entrant Projet Personnalisé PA au format PDF"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Goal"/>
+      </extension>
+      <reference>
+        <reference value="Goal/tddui-pp-pa-goal-attente-famille-example"/>
+      </reference>
+      <name value="tddui-pp-pa-goal-attente-famille-example"/>
+      <description value="Exemple des attentes de la famille dans le cadre du projet personnalisé PA."/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Goal"/>
+      </extension>
+      <reference>
+        <reference value="Goal/tddui-pp-pa-goal-attente-usager-example"/>
+      </reference>
+      <name value="tddui-pp-pa-goal-attente-usager-example"/>
+      <description value="Exemple des attentes de l'usager dans le cadre du projet personnalisé PA."/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Goal"/>
+      </extension>
+      <reference>
+        <reference value="Goal/tddui-pp-pa-goal-objectif-1-example"/>
+      </reference>
+      <name value="tddui-pp-pa-goal-objectif-1-example"/>
+      <description value="Exemple d'un objectif dans le cadre du projet personnalisé PA."/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Goal"/>
+      </extension>
+      <reference>
+        <reference value="Goal/tddui-pp-pa-goal-objectif-2-example"/>
+      </reference>
+      <name value="tddui-pp-pa-goal-objectif-2-example"/>
+      <description value="Exemple d'un objectif dans le cadre du projet personnalisé PA."/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Goal"/>
+      </extension>
+      <reference>
+        <reference value="Goal/tddui-pp-pa-goal-objectif-3-example"/>
+      </reference>
+      <name value="tddui-pp-pa-goal-objectif-3-example"/>
+      <description value="Exemple d'un objectif dans le cadre du projet personnalisé PA."/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/tddui-pp-pa-patient-example-pp"/>
+      </reference>
+      <name value="tddui-pp-pa-patient-example-pp"/>
+      <description value="Exemple de la ressource TDDUIPatient dans le cadre d'un projet personnalisé PA"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/tddui-pp-pa-practitioner-ide-example"/>
+      </reference>
+      <name value="tddui-pp-pa-practitioner-ide-example"/>
+      <description value="Exemple d'un IDE"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/tddui-pp-pa-questionnaire-response-aggir-pa-example"/>
+      </reference>
+      <name value="tddui-pp-pa-questionnaire-response-aggir-pa-example"/>
+      <description value="Grille de réponse AGGIR PA"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/tddui-pp-pa-servicerequest-besoin-1-example"/>
+      </reference>
+      <name value="tddui-pp-pa-servicerequest-besoin-1-example"/>
+      <description value="Exemple d'un besoin de l'usager dans le cadre du projet personnalisé PA."/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/tddui-pp-pa-servicerequest-besoin-2-example"/>
+      </reference>
+      <name value="tddui-pp-pa-servicerequest-besoin-2-example"/>
+      <description value="Exemple d'un besoin de l'usager dans le cadre du projet personnalisé PA."/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/tddui-pp-pa-servicerequest-besoin-3-example"/>
+      </reference>
+      <name value="tddui-pp-pa-servicerequest-besoin-3-example"/>
+      <description value="Exemple d'un besoin de l'usager dans le cadre du projet personnalisé PA."/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/tddui-pp-pa-task-action-1-ergo-example"/>
+      </reference>
+      <name value="tddui-pp-pa-task-action-1-ergo-example"/>
+      <description value="Exemple d'une action de l'objectif 1 réalisée par l'ergothérapeute dans le cadre du projet personnalisé PA."/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/tddui-pp-pa-task-action-1-ide-example"/>
+      </reference>
+      <name value="tddui-pp-pa-task-action-1-ide-example"/>
+      <description value="Exemple d'une action de l'objectif 1 réalisée par l'IDE dans le cadre du projet personnalisé PA."/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/tddui-pp-pa-task-action-1-kine-example"/>
+      </reference>
+      <name value="tddui-pp-pa-task-action-1-kine-example"/>
+      <description value="Exemple d'une action de l'objectif 1 réalisée par le kinésithérapeute dans le cadre du projet personnalisé PA."/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/tddui-pp-pa-task-action-2-anim-example"/>
+      </reference>
+      <name value="tddui-pp-pa-task-action-2-anim-example"/>
+      <description value="Exemple d'une action de l'objectif 1 réalisée par l'animatrice dans le cadre du projet personnalisé PA."/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/tddui-pp-pa-task-action-2-ide-example"/>
+      </reference>
+      <name value="tddui-pp-pa-task-action-2-ide-example"/>
+      <description value="Exemple d'une action de l'objectif 2 réalisée par l'IDE dans le cadre du projet personnalisé PA."/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/tddui-pp-pa-task-action-3-psy-example"/>
+      </reference>
+      <name value="tddui-pp-pa-task-action-3-psy-example"/>
+      <description value="Exemple d'une action de l'objectif 3 réalisée par le psychologue dans le cadre du projet personnalisé PA."/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/tddui-pp-pa-task-moyen-ressource-ergo-1-example"/>
+      </reference>
+      <name value="tddui-pp-pa-task-moyen-ressource-ergo-1-example"/>
+      <description value="Exemple des moyens et ressources de l'objectif 1 dans le cadre du projet personnalisé PA."/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/tddui-pp-pa-task-moyen-ressource-ide-1-example"/>
+      </reference>
+      <name value="tddui-pp-pa-task-moyen-ressource-ide-1-example"/>
+      <description value="Exemple des moyens et ressources de l'objectif 1 dans le cadre du projet personnalisé PA."/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/tddui-pp-pa-task-moyen-ressource-ide-2-example"/>
+      </reference>
+      <name value="tddui-pp-pa-task-moyen-ressource-ide-2-example"/>
+      <description value="Exemple des moyens et ressources de l'objectif 2 dans le cadre du projet personnalisé PA."/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/tddui-pp-pa-task-moyen-ressource-kine-1-example"/>
+      </reference>
+      <name value="tddui-pp-pa-task-moyen-ressource-kine-1-example"/>
+      <description value="Exemple des moyens et ressources de l'objectif 1 dans le cadre du projet personnalisé PA."/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/tddui-practitioner-example"/>
+      </reference>
+      <name value="tddui-practitioner-example"/>
+      <description value="Exemple d'un professionnel de santé"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/tddui-practitioner-role-example"/>
+      </reference>
+      <name value="tddui-practitioner-role-example"/>
+      <description value="Exemple d'un professionnel de santé"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CapabilityStatement"/>
       </extension>
       <reference>
@@ -683,6 +1732,94 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/tddui-questionnaire-response-aggir-pa-example"/>
+      </reference>
+      <name value="tddui-questionnaire-response-aggir-pa-example"/>
+      <description value="Grille de réponse AGGIR PA"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/tddui-questionnaire-response-aggir-ph-example"/>
+      </reference>
+      <name value="tddui-questionnaire-response-aggir-ph-example"/>
+      <description value="Grille de réponse AGGIR PH"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/tddui-questionnaire-response-serafin-precision-example"/>
+      </reference>
+      <name value="tddui-questionnaire-response-serafin-precision-example"/>
+      <description value="Evaluation SERAFIN pour un besoin d'hébergement adapté avec précision"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/tddui-questionnaire-response-serafin-sans-precision-example"/>
+      </reference>
+      <name value="tddui-questionnaire-response-serafin-sans-precision-example"/>
+      <description value="Evaluation SERAFIN pour un besoin d'hébergement adapté sans précision"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/tddui-questionnaire-response-situation-ssiad-example"/>
+      </reference>
+      <name value="tddui-questionnaire-response-situation-ssiad-example"/>
+      <description value="Grille de réponse de la situation SSIAD"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/tddui-task-transport-example"/>
+      </reference>
+      <name value="tddui-task-transport-example"/>
+      <description value="Exemple du transport."/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/tddui-task-transport-professionel-example"/>
+      </reference>
+      <name value="tddui-task-transport-professionel-example"/>
+      <description value="Exemple du transport du professionnel."/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/tddui-task-transport-usager-example"/>
+      </reference>
+      <name value="tddui-task-transport-usager-example"/>
+      <description value="Exemple du transport de l'usager."/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Bundle"/>
       </extension>
       <reference>
@@ -691,6 +1828,72 @@
       <name value="TDDUIBundleExample"/>
       <description value="Exemple de bundle conforme au profil TDDUIBundle"/>
       <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-patient-present"/>
+      </reference>
+      <name value="Usager présent"/>
+      <description value="Evènement nécessitant ou non la présence physique de l’usager."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/tddui-questionnaire-aggir-pa-ssiad"/>
+      </reference>
+      <name value="Évaluation AGGIR PA SSIAD"/>
+      <description value="Grille d'évaluation AGGIR PA SSIAD"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/tddui-questionnaire-aggir-ph-ssiad"/>
+      </reference>
+      <name value="Évaluation AGGIR PH SSIAD"/>
+      <description value="Grille d'évaluation AGGIR PH SSIAD"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/tddui-questionnaire-situation-ssiad"/>
+      </reference>
+      <name value="Évaluation de la situation SSIAD"/>
+      <description value="Grille d'évaluation de la situation SSIAD"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/tddui-questionnaire-serafin"/>
+      </reference>
+      <name value="Évaluation SERAFIN"/>
+      <description value="Grille d'évaluation SERAFIN"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-event-cancel-reason"/>
+      </reference>
+      <name value="Évènement annulé"/>
+      <description value="Motif associé au statut de non-réalisation de l’évènement."/>
+      <exampleBoolean value="false"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
