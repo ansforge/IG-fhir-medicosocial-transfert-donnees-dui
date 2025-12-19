@@ -1,4 +1,4 @@
-# tddui-pp-ime-task-action-1-aesh-example - Médicosocial - Transfert de données DUI v2.1.0
+# tddui-pp-ime-task-action-1-aesh-example - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

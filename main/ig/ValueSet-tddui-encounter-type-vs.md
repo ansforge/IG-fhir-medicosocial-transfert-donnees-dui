@@ -1,4 +1,4 @@
-# TDDUI Encounter Type ValueSet - Médicosocial - Transfert de données DUI v2.1.0
+# TDDUI Encounter Type ValueSet - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-type-vs | *Version*:2.1.0 |
-| Active as of 2025-12-18 | *Computable Name*:TDDUIEncounterTypeVs |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-type-vs | *Version*:2.2.0-ballot |
+| Active as of 2025-12-19 | *Computable Name*:TDDUIEncounterTypeVs |
 
  
 ValueSet for TDDUI Encounter's types 
@@ -46,15 +46,17 @@ ValueSet for TDDUI Encounter's types
   "resourceType" : "ValueSet",
   "id" : "tddui-encounter-type-vs",
   "meta" : {
-    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+    "profile" : [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
+    ]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-type-vs",
-  "version" : "2.1.0",
+  "version" : "2.2.0-ballot",
   "name" : "TDDUIEncounterTypeVs",
   "title" : "TDDUI Encounter Type ValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-18T17:25:31+00:00",
+  "date" : "2025-12-19T08:32:44+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -83,7 +85,7 @@ ValueSet for TDDUI Encounter's types
     "include" : [
       {
         "valueSet" : [
-          "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-type"
+          "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-type|2.1.0"
         ]
       },
       {
@@ -93,7 +95,7 @@ ValueSet for TDDUI Encounter's types
       },
       {
         "valueSet" : [
-          "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-evenement-ssiad-cisis"
+          "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-evenement-ssiad-cisis|20250624152100"
         ]
       },
       {

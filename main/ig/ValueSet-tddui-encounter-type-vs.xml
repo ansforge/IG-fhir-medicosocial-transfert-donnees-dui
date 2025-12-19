@@ -3,18 +3,18 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="tddui-encounter-type-vs"/>
   <meta>
-    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : EnsembleValeurs tddui-encounter-type-vs</b></p><a name="tddui-encounter-type-vs"> </a><a name="hctddui-encounter-type-vs"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="http://hl7.org/fhir/R4/shareablevalueset.html">Shareable ValueSet</a></p></div><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Importe tous les codes contenu dans <a href="https://hl7.fr/ig/fhir/core/2.1.0/ValueSet-fr-core-vs-encounter-type.html">FR Core ValueSet Encounter type</a></li><li>Importe tous les codes contenu dans <a href="ValueSet-tddui-serafin-valueset.html">TDDUI SERAFIN ValueSet</a></li><li>Importe tous les codes contenu dans <a href="https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-type-evenement-ssiad-cisis.html">JDV Type Evenement Ssiad CISIS</a></li><li>Inclut tous les codes définis dans <a href="http://terminology.hl7.org/7.0.1/CodeSystem-data-absent-reason.html"><code>http://terminology.hl7.org/CodeSystem/data-absent-reason</code></a><span title="La version nest pas explicitement indiquée, ce qui signifie quelle est fixée à 1.0.0, la version trouvée via les références de package"> version &#x1F4E6;1.0.0</span></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : EnsembleValeurs tddui-encounter-type-vs</b></p><a name="tddui-encounter-type-vs"> </a><a name="hctddui-encounter-type-vs"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="http://hl7.org/fhir/R4/shareablevalueset.html">Shareable ValueSetversion : null4.0.1)</a></p></div><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Importe tous les codes contenu dans <a href="https://hl7.fr/ig/fhir/core/2.1.0/ValueSet-fr-core-vs-encounter-type.html">FR Core ValueSet Encounter type</a></li><li>Importe tous les codes contenu dans <a href="ValueSet-tddui-serafin-valueset.html">TDDUI SERAFIN ValueSet</a></li><li>Importe tous les codes contenu dans <a href="https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-type-evenement-ssiad-cisis.html">JDV Type Evenement Ssiad CISIS</a></li><li>Inclut tous les codes définis dans <a href="http://terminology.hl7.org/7.0.1/CodeSystem-data-absent-reason.html"><code>http://terminology.hl7.org/CodeSystem/data-absent-reason</code></a><span title="La version nest pas explicitement indiquée, ce qui signifie quelle est fixée à 1.0.0, la version trouvée via les références de package"> version &#x1F4E6;1.0.0</span></li></ul></div>
   </text>
   <url value="https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-type-vs"/>
-  <version value="2.1.0"/>
+  <version value="2.2.0-ballot"/>
   <name value="TDDUIEncounterTypeVs"/>
   <title value="TDDUI Encounter Type ValueSet"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2025-12-18T17:25:31+00:00"/>
+  <date value="2025-12-19T08:32:44+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -33,13 +33,13 @@
   </jurisdiction>
   <compose>
     <include>
-      <valueSet value="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-type"/>
+      <valueSet value="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-type|2.1.0"/>
     </include>
     <include>
       <valueSet value="https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-serafin-valueset"/>
     </include>
     <include>
-      <valueSet value="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-evenement-ssiad-cisis"/>
+      <valueSet value="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-evenement-ssiad-cisis|20250624152100"/>
     </include>
     <include>
       <system value="http://terminology.hl7.org/CodeSystem/data-absent-reason"/>

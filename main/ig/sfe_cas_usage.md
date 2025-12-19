@@ -1,4 +1,4 @@
-# Cas d'usage - Médicosocial - Transfert de données DUI v2.1.0
+# Cas d'usage - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Volume 1 - Etude fonctionnelle**](sfe.md)

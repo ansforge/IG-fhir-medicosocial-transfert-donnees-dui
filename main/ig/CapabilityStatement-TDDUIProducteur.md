@@ -1,4 +1,4 @@
-# TDDUI-Producteur - Médicosocial - Transfert de données DUI v2.1.0
+# TDDUI-Producteur - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/CapabilityStatement/TDDUIProducteur | *Version*:2.1.0 |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/CapabilityStatement/TDDUIProducteur | *Version*:2.2.0-ballot |
 | Active as of 2024-06-20 | *Computable Name*:TDDUIProducteur |
 
  
@@ -25,7 +25,7 @@ Le rôle de Producteur est de transmettre des données de son logiciel DUI. Il c
   "resourceType" : "CapabilityStatement",
   "id" : "TDDUIProducteur",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CapabilityStatement/TDDUIProducteur",
-  "version" : "2.1.0",
+  "version" : "2.2.0-ballot",
   "name" : "TDDUIProducteur",
   "title" : "TDDUI-Producteur",
   "status" : "active",
@@ -71,8 +71,8 @@ Le rôle de Producteur est de transmettre des données de son logiciel DUI. Il c
         {
           "type" : "Patient",
           "supportedProfile" : [
-            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient",
-            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient|2.2.0-ballot",
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins|2.2.0-ballot"
           ],
           "interaction" : [
             {
@@ -83,7 +83,7 @@ Le rôle de Producteur est de transmettre des données de son logiciel DUI. Il c
         {
           "type" : "Organization",
           "supportedProfile" : [
-            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization"
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization|2.2.0-ballot"
           ],
           "interaction" : [
             {
@@ -94,8 +94,8 @@ Le rôle de Producteur est de transmettre des données de son logiciel DUI. Il c
         {
           "type" : "Encounter",
           "supportedProfile" : [
-            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour",
-            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement"
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour|2.2.0-ballot",
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement|2.2.0-ballot"
           ],
           "interaction" : [
             {
@@ -106,7 +106,7 @@ Le rôle de Producteur est de transmettre des données de son logiciel DUI. Il c
         {
           "type" : "Practitioner",
           "supportedProfile" : [
-            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner"
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner|2.2.0-ballot"
           ],
           "interaction" : [
             {
@@ -117,7 +117,7 @@ Le rôle de Producteur est de transmettre des données de son logiciel DUI. Il c
         {
           "type" : "PractitionerRole",
           "supportedProfile" : [
-            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role"
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role|2.2.0-ballot"
           ],
           "interaction" : [
             {
@@ -128,12 +128,12 @@ Le rôle de Producteur est de transmettre des données de son logiciel DUI. Il c
         {
           "type" : "Task",
           "supportedProfile" : [
-            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel",
-            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager",
-            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action",
-            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-bilan",
-            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource",
-            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-prestation"
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel|2.2.0-ballot",
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager|2.2.0-ballot",
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action|2.2.0-ballot",
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-bilan|2.2.0-ballot",
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource|2.2.0-ballot",
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-prestation|2.2.0-ballot"
           ],
           "interaction" : [
             {
@@ -144,7 +144,7 @@ Le rôle de Producteur est de transmettre des données de son logiciel DUI. Il c
         {
           "type" : "QuestionnaireResponse",
           "supportedProfile" : [
-            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response|2.2.0-ballot"
           ],
           "interaction" : [
             {
@@ -155,7 +155,7 @@ Le rôle de Producteur est de transmettre des données de son logiciel DUI. Il c
         {
           "type" : "DocumentReference",
           "supportedProfile" : [
-            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference|2.2.0-ballot"
           ],
           "interaction" : [
             {
@@ -166,7 +166,7 @@ Le rôle de Producteur est de transmettre des données de son logiciel DUI. Il c
         {
           "type" : "CarePlan",
           "supportedProfile" : [
-            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise"
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise|2.2.0-ballot"
           ],
           "interaction" : [
             {
@@ -177,7 +177,7 @@ Le rôle de Producteur est de transmettre des données de son logiciel DUI. Il c
         {
           "type" : "Consent",
           "supportedProfile" : [
-            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord"
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord|2.2.0-ballot"
           ],
           "interaction" : [
             {
@@ -188,8 +188,8 @@ Le rôle de Producteur est de transmettre des données de son logiciel DUI. Il c
         {
           "type" : "Goal",
           "supportedProfile" : [
-            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente",
-            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif"
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente|2.2.0-ballot",
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif|2.2.0-ballot"
           ],
           "interaction" : [
             {
@@ -200,7 +200,7 @@ Le rôle de Producteur est de transmettre des données de son logiciel DUI. Il c
         {
           "type" : "ServiceRequest",
           "supportedProfile" : [
-            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin"
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin|2.2.0-ballot"
           ],
           "interaction" : [
             {
@@ -211,7 +211,7 @@ Le rôle de Producteur est de transmettre des données de son logiciel DUI. Il c
         {
           "type" : "RelatedPerson",
           "supportedProfile" : [
-            "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person"
+            "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person|2.1.0"
           ],
           "interaction" : [
             {

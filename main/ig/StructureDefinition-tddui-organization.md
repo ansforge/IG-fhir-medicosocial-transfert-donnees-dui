@@ -1,4 +1,4 @@
-# TDDUI Organization - Médicosocial - Transfert de données DUI v2.1.0
+# TDDUI Organization - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization | *Version*:2.1.0 |
-| Active as of 2025-12-18 | *Computable Name*:TDDUIOrganization |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization | *Version*:2.2.0-ballot |
+| Active as of 2025-12-19 | *Computable Name*:TDDUIOrganization |
 
  
 Profil de la ressource FRCoreOrganizationProfile permettant de représenter les entités juridiques. 
@@ -40,11 +40,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-organization.c
   "resourceType" : "StructureDefinition",
   "id" : "tddui-organization",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization",
-  "version" : "2.1.0",
+  "version" : "2.2.0-ballot",
   "name" : "TDDUIOrganization",
   "title" : "TDDUI Organization",
   "status" : "active",
-  "date" : "2025-12-18T17:25:31+00:00",
+  "date" : "2025-12-19T08:32:44+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -100,7 +100,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-organization.c
   "kind" : "resource",
   "abstract" : false,
   "type" : "Organization",
-  "baseDefinition" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization",
+  "baseDefinition" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.1.0",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -124,7 +124,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-organization.c
         "path" : "Organization.identifier.type",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-identifier-type"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-identifier-type|2.1.0"
         }
       },
       {

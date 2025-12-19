@@ -1,9 +1,19 @@
-# Historique des changements - Médicosocial - Transfert de données DUI v2.1.0
+# Historique des changements - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * **Historique des changements**
 
 ## Historique des changements
+
+### Release 2.2.0-ballot de l'Implementation Guide du volet "Transfert de dossier DUI"
+
+Modifications apportées dans cette release [2.2.0-ballot](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pulls?q=is%3Apr+is%3Aclosed+milestone%3A2.2.0-ballot) :
+
+* [SFE - Ajout du Projet Personnalisé](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/376)
+* [ANS-006-168 - Ajout du projet personnalisé](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/391)
+* [ANS-006-168 - Mise à jour du flux 1](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/400)
+* [ANS-006-168 - Mise à jour des Capability Statements](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/401)
+* [ANS-006-168 - Gestion des slices remontant un warning](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/397)
 
 ### Release 2.1.0 de l'Implementation Guide du volet "Transfert de dossier DUI"
 

@@ -1,4 +1,4 @@
-# TDDUI Patient Identifier ValueSet - Médicosocial - Transfert de données DUI v2.1.0
+# TDDUI Patient Identifier ValueSet - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-patient-identifier-vs | *Version*:2.1.0 |
-| Active as of 2025-12-18 | *Computable Name*:TDDUIPatientIdentifierVs |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-patient-identifier-vs | *Version*:2.2.0-ballot |
+| Active as of 2025-12-19 | *Computable Name*:TDDUIPatientIdentifierVs |
 
  
 ValueSet for TDDUI Patient's identifier types 
@@ -47,15 +47,17 @@ ValueSet for TDDUI Patient's identifier types
   "resourceType" : "ValueSet",
   "id" : "tddui-patient-identifier-vs",
   "meta" : {
-    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+    "profile" : [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
+    ]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-patient-identifier-vs",
-  "version" : "2.1.0",
+  "version" : "2.2.0-ballot",
   "name" : "TDDUIPatientIdentifierVs",
   "title" : "TDDUI Patient Identifier ValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-18T17:25:31+00:00",
+  "date" : "2025-12-19T08:32:44+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -86,7 +88,7 @@ ValueSet for TDDUI Patient's identifier types
         "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-identifier"
       },
       {
-        "valueSet" : ["http://hl7.org/fhir/ValueSet/identifier-type"]
+        "valueSet" : ["http://hl7.org/fhir/ValueSet/identifier-type|4.0.1"]
       },
       {
         "system" : "http://terminology.hl7.org/CodeSystem/v2-0203"
