@@ -673,10 +673,9 @@ Quantification de la prise en charge.
 <!-- object data="bloc_environnement_ressources.svg" type="image/svg+xml"></object -->
 <div style="text-align:center;">{%include bloc_environnement_ressources.svg%}</div>
 
+##### Classe Contact
 
-##### Classe ContactPersonnePhysique
-
-Personne physique qui agit comme point de contact auprès d'une autre personne ou d'un autre service.
+Un contact peut être un membre de la famille ou un proche de l’Usager. Il peut s’agir par exemple d’un aidant, de la personne de confiance de l’Usager…
 
 <table style="width:100%">
   <tr>
@@ -684,73 +683,72 @@ Personne physique qui agit comme point de contact auprès d'une autre personne o
     <th>Description</th>
   </tr>
   <tr>
-    <td>identifiantContactPP : [0..1] Identifiant</td>
-    <td>Identifiant du contact</td>
-  </tr>
-  <tr>
-    <td>nom : [0..1] Texte</td>
-    <td>Nom de la personne contact.</td>
-  </tr>
-  <tr>
-    <td>prenom : [0..1] Texte</td>
-    <td>Prénom de la personne contact.</td>
-  </tr>
-  <tr>
-    <td>civilite : [0..1] Code</td>
-    <td>Civilité du contact.<br>
-    jeu(x) de valeur(s) associé(s) :  <a href="https://mos.esante.gouv.fr/NOS/JDV_J245-Civilite-CISIS/FHIR/JDV-J245-Civilite-CISIS">JDV_J245-Civilite-CISIS</a></td>
-  </tr>
-  <tr>
-    <td>paysNationalite : [0..*] Code</td>
-    <td>Pays de nationalité de la personne contact, actuelle ou rattachement de la nationalité à un espace de pays conventionné<br>
-    Nomenclature(s) associée(s) : Norme ISO 3166</td>
-  </tr>
-  <tr>
-    <td>profession : [0..1] Texte</td>
-    <td>Profession de la personne contact.</td>
-  </tr>
-  <tr>
-    <td>situationFamiliale : [0..1] Code</td>
-    <td>Situation familiale de la personne contact (célibataire, divorcée, etc.).<br>
-    Nomenclature(s) associée(s) : à définir</td>
-  </tr>
-  <tr>
-    <td>dateNaissance : [0..1] Date</td>
-    <td>Date de naissance de la personne contact.</td>
-  </tr>
-  <tr>
-    <td>telecommunication : [0..*] Telecommunication</td>
-    <td>Adresse(s) de télécommunication du contact (numéro de téléphone, adresse email, URL, etc.).</td>
-  </tr>
-  <tr>
-    <td>adresse : [0..1] Adresse</td>
-    <td>Adresse géopostale du point de contact.</td>
-  </tr>
-  <tr>
     <td>role : [0..1] Code</td>
     <td>Rôle de la personne point de contact auprès d'une autre personne. Exemple dans le cas d'un patient, ce rôle indique si le point de contact est la personne à prévenir en cas d'urgence, la personne de confiance, etc.<br>
-    Nomenclature(s) associée(s) : <a href="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass">TRE_R260-HL7RoleClass</a></td>
+    Jeux de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J265-RoleMembreCercleDeSoins-CISIS/FHIR/JDV-J265-RoleMembreCercleDeSoins-CISIS">JDV-J265-RoleMembreCercleDeSoins-CISIS</a></td>
+  </tr>
+  <tr>
+    <td>description : [0..1] Texte</td>
+    <td>Une description du contact..</td>
   </tr>
   <tr>
     <td>relation : [0..1] Code</td>
     <td>Lien de la personne point de contact auprès d'une autre personne. Exemple dans le cas d'un patient, ce lien indique si le point de contact est son enfant, son frère, etc.<br>
-    Nomenclature(s) associée(s) : <br>
-    <a href="https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode">TRE_R216-HL7RoleCode</a><br>
-    <a href="https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique">TRE_R217-ProtectionJuridique</a></td>
+    Jeux de valeur(s) associé(s) : <br>
+    <a href="https://mos.esante.gouv.fr/NOS/JDV_J14-QualiteRepresentantLegal-CISIS/FHIR/JDV-J14-QualiteRepresentantLegal-CISIS">JDV-J14-QualiteRepresentantLegal-CISIS</a><br>
+    <a href="https://mos.esante.gouv.fr/NOS/JDV_J11-RelationPatient-CISIS/FHIR/JDV-J11-RelationPatient-CISIS">JDV-J11-RelationPatient-CISIS</a>
+    </td>
+  </tr>
+</table>
+
+##### Classe PersonnePhysique
+
+Une personne physique est un individu titulaire de droits et d'obligations caractérisé par une identité civile.
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
   </tr>
   <tr>
-    <td>fonction : [0..1] Code</td>
-    <td>Un titre, une position ou une fonction de la personne assurant le contact au sein de son organisation (directeur, secrétaire, etc.).
-    <a href="https://mos.esante.gouv.fr/NOS/TRE_R251-FonctionContact/FHIR/TRE-R251-FonctionContact">TRE_R251-FonctionContact</a></td>
+    <td>identifiantPP : [0..1] Identifiant</td>
+    <td>Identifiant de  la personne physique.</td>
   </tr>
   <tr>
-    <td>ordreAppel : [0..1] Numérique</td>
-    <td>Ordre de priorité d’appel du contact (1 = priorité maximale).</td>
+    <td>nomNaissance : [0..1] Texte</td>
+    <td>Nom de naissance de la personne.<br>
+    Synonymes : nom patronymique, nom de famille.</td>
+  </tr>
+  <tr>
+    <td>prenom : [0..*] Texte</td>
+    <td>Prénom(s) de la personne déclarés à sa naissance.</td>
+  </tr>
+  <tr>
+    <td>civilite : [0..1] Code</td>
+    <td>Civilité de la personne physique.<br>
+    jeu(x) de valeur(s) associé(s) :  <a href="https://mos.esante.gouv.fr/NOS/JDV_J245-Civilite-CISIS/FHIR/JDV-J245-Civilite-CISIS">JDV_J245-Civilite-CISIS</a></td>
+  </tr>
+  <tr>
+    <td>paysNationalite : [0..*] Code</td>
+    <td>Pays de nationalité de la personne physique, actuelle ou rattachement de la nationalité à un espace de pays conventionné<br>
+    Nomenclature(s) associée(s) : Norme ISO 3166</td>
+  </tr>
+  <tr>
+    <td>dateNaissance : [0..1] Date</td>
+    <td>Date de naissance de la personne physique.</td>
+  </tr>
+   <tr>
+    <td>adresse : [0..1]  <a href="#classe-adresse">Adresse</a></td>
+    <td>Adresse géopostale du point de la personne physique.</td>
+  </tr>
+  <tr>
+    <td>telecommunication : [0..*] <a href="#classe-telecommunication">Telecommunication</a></td>
+    <td>Adresse(s) de télécommunication de la personne physique (numéro de téléphone, adresse email, URL, etc.).</td>
   </tr>
   <tr>
     <td>commentaire : [0..1] Texte</td>
-    <td>Commentaire relatif au contact.</td>
-  </tr>
+    <td>Commentaire relatif à la personne physique.</td>
+</tr>
 </table>
 
 ##### Classe  ContactPersonneMorale
@@ -2037,7 +2035,7 @@ Cela correspond au consentement d'une personne physique ou morale.
     <th>Description</th>
   </tr>
   <tr>
-    <td>auteur : [1..1] (<a href="#classe-professionnel">Professionnel</a>, <a href="#classe-usager">Usager</a>, <a href="#classe-contactpersonnephysique">Contact personne physique</a>)</td>
+    <td>auteur : [1..1] (<a href="#classe-professionnel">Professionnel</a>, <a href="#classe-usager">Usager</a>, <a href="#classe-contact">Contact personne physique</a>)</td>
     <td>Acteur (personne physique ou morale) qui donne son accord. L'auteur de l'accord peut référencer un professionnel, l'usager ou une personne de son entourage.</td>
   </tr>
   <tr>
