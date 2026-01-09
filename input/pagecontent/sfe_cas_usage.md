@@ -44,4 +44,19 @@ Pour ce cas d'usage les modalités d’envoi des données usager au SI-tiers son
   * les Prestations mises en place dans le cadre du Projet personnalisé ;
   * les Bilans réalisés dans le cadre du Projet personnalisé.
  
+ ##### Cas d'usage SERAFIN - Mise à jour des blocs Administratif, Coordination des acteurs et Accompagnement
+
+La mise à jour des blocs "Administratif, Coordination des acteurs et Accompagnement" entre dans la définition des moyens, ressources et de l'accompagnement mis en oeuvre pour l'usager en adéquation avec les besoins SERAFIN répertoriés en autre dans le Projet personnalisé.
+Dans ce cas d'usage, les objets métiers suivants sont enrichis ou créés :
+  * la Mobilité de l'usager, son permis de conduire et son Séjour (bloc Administratif) ;
+  * la Période scolaire de l'usager (bloc Accompagnement) ;
+  * l'évènement de l'agenda usager (bloc Coordination des acteurs)
+
+De plus dans ce cas d'usage le type d'évaluation selon la classification CIM11 est créé.
+
+<blockquote class="stu-note">
+    <p>
+   Les types d'évaluations de la déficience selon FINESS et de la déficience selon le tableau de la performance ANAP font partie d'un travail d'alignement avec la CIM11. Ces travaux sont menés par le CGTS à l'ANS. En fonction de l'avancé de ces travaux ces nouveaux types d'évaluations feront partie de futurs lots.
+    </p>
+</blockquote>
  
