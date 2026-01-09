@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-admission-date | *Version*:2.2.0-ballot |
-| Active as of 2026-01-05 | *Computable Name*:TDDUIAdmissionDate |
+| Active as of 2026-01-09 | *Computable Name*:TDDUIAdmissionDate |
 
 Date d’admission dans la structure ESSMS.
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-admission-date
   "name" : "TDDUIAdmissionDate",
   "title" : "Date d’admission",
   "status" : "active",
-  "date" : "2026-01-05T13:05:46+00:00",
+  "date" : "2026-01-09T15:52:02+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization | *Version*:2.2.0-ballot |
-| Active as of 2026-01-05 | *Computable Name*:TDDUIOrganization |
+| Active as of 2026-01-09 | *Computable Name*:TDDUIOrganization |
 
  
 Profil de la ressource FRCoreOrganizationProfile permettant de représenter les entités juridiques. 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-organization.c
   "name" : "TDDUIOrganization",
   "title" : "TDDUI Organization",
   "status" : "active",
-  "date" : "2026-01-05T13:05:46+00:00",
+  "date" : "2026-01-09T15:52:02+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
