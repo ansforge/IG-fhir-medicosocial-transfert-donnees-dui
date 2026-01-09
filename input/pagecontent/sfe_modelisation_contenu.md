@@ -1672,7 +1672,7 @@ Préparation du bilan du projet personnalisé.
     <td>Corps de la préparation.</td>
  </tr>
  <tr>
-    <td>auteur : [1..1] (<a href="#classe-professionnel">Professionnel</a>, <a href="#classe-usager">Usager</a>, <a href="#classe-contactpersonnephysique">Contact personne physique</a>)</td>
+    <td>auteur : [1..1] (<a href="#classe-professionnel">Professionnel</a>, <a href="#classe-usager">Usager</a>, <a href="#classe-contact">Contact personne physique</a>)</td>
     <td>Auteur de la préparation de bilan. Cet auteur peut référencer un professionnel, l'usager ou une personne de son entourage.</td>
  </tr>
 </table>   
