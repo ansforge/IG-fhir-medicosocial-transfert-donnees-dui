@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-consent-accord
   "name" : "TDDUIConsentAccord",
   "title" : "TDDUI Consent Accord",
   "status" : "active",
-  "date" : "2026-01-09T09:20:56+00:00",
+  "date" : "2026-01-09T10:00:38+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

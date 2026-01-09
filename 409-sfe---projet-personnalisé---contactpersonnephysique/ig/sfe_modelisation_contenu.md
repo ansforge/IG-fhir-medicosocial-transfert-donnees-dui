@@ -332,9 +332,9 @@ Une personne physique est un individu titulaire de droits et d'obligations carac
 
 ##### Classe ContactPersonneMorale
 
-Personne morale qui agit comme point de contact auprès d'une autre personne ou d'un autre service.
+Personne morale qui agit comme point de contact auprès d'un établissement, structure ou autre personne morale.
 
-* Nom: identifiantContactPP : [0..1] Identifiant
+* Nom: identifiantContactPM : [0..1] Identifiant
   * Description: Identifiant du contact
 * Nom: libelle : [0..1] Texte
   * Description: Libellé du contact.
