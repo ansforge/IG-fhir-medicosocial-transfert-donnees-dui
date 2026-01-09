@@ -781,7 +781,7 @@ Préparation du bilan du projet personnalisé.
 
 * Nom: corps : [1..1] Texte
   * Description: Corps de la préparation.
-* Nom: auteur : [1..1] ([Professionnel](#classe-professionnel),[Usager](#classe-usager),[Contact personne physique](#classe-contactpersonnephysique))
+* Nom: auteur : [1..1] ([Professionnel](#classe-professionnel),[Usager](#classe-usager),[Contact personne physique](#classe-contact))
   * Description: Auteur de la préparation de bilan. Cet auteur peut référencer un professionnel, l'usager ou une personne de son entourage.
 
 ### Partie Coordination des acteurs

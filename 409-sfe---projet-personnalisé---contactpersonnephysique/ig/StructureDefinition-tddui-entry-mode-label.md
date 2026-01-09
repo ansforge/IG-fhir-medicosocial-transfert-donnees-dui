@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-entry-mode-lab
   "name" : "TDDUIEntryModelabel",
   "title" : "Libellé mode d'entrée",
   "status" : "active",
-  "date" : "2026-01-09T10:00:38+00:00",
+  "date" : "2026-01-09T10:25:42+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
