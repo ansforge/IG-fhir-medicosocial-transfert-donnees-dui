@@ -10,6 +10,8 @@ class Evaluation #LightYellow
 
 class Professionnel #LightGray 
 
+class EntiteJuridique #LightGray 
+
 class Statut #LightYellow 
 
 class Transport #LightGray {
@@ -53,8 +55,17 @@ class Evenement #LightGray {
     dateModificationEvenement : DateHeure [0..1]
 }
 
+class Participant #LightGray {
+    presenceParticipant : Indicateur [0..1]
+    roleParticipantEJ : Code [0..1]
+    modeExerciceParticipantPP : Code [0..1]
+    participantInterne : Indicateur [0..1]
+}
+
 Usager "1" -- "0..*" Evenement
-Professionnel "0..*" -- "0..*" Evenement
+Participant "0..*" -- "0..*" Evenement
+Professionnel "0..1" -- "0..*" Participant
+EntiteJuridique "0..1" -- "0..*" Participant
 Transport <|-- TransportProfessionnel
 Transport <|-- TransportUsager
 TransportUsager "0..*" -- "1" Evenement

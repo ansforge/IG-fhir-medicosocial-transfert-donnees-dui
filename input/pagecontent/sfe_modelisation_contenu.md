@@ -128,12 +128,17 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
   <tr>
     <td>situationFamiliale : [0..1] Code</td>
     <td>Situation familiale de l’usager.<br>
-    Nomenclature(s) associée(s) : à définir</td>
+    Jeu(x) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J176-SituationVieQuotidienne-MDPH/FHIR/JDV-J176-SituationVieQuotidienne-MDPH">JDV-J176-SituationVieQuotidienne-MDPH</a></td>
   </tr>
   <tr>
     <td>compositionFoyer : [0..1] Code</td>
     <td>Désigne avec qui vit l’usager dans son logement.<br>
-    Nomenclature(s) associée(s) : à définir</td>
+    Jeu(x) associé(s) : en cours de création NOS</td>
+  </tr>
+  <tr>
+    <td>descriptionCompositionFoyer : [0..1] Texte</td>
+    <td>Description de la composition du foyer, c’est-à-dire des personnes qui vivent dans le logement avec l'usager.
+    </td>
   </tr>
   <tr>
     <td>paysNationalite : [0..*] Code</td>
@@ -168,6 +173,14 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
     <td>paysDeces : [0..1] Code</td>
     <td>Pays de décès de l’usager.<br>
     Nomenclature(s) associée(s) : Norme ISO 3166</td>
+  </tr>
+  <tr>
+    <td>adresseCourrier : [0..*] <a href="#classe-courrier">Courrier</a></td>
+    <td>Adresse de courrier de l’usager.</td>
+  </tr>
+  <tr>
+    <td>telecommunication : [0..*] <a href="#classe-telecommunication">Telecommunication</a></td>
+    <td>Telecommunication de l'usager.</td>
   </tr>
   <tr>
     <td>photo : [0..*] ObjetBinaire </td>
@@ -283,7 +296,7 @@ Adresse de courrier de l’usager.
   <tr>
     <td>typeCourrier : [0..1] Code</td>
     <td>Type de courrier.<br>
-    Nomenclature(s) associée(s) : à définir</td>
+    Jeu(x) associé(s) : en cours de création NOS</td>
   </tr>
   <tr>
     <td>idAdresse : [0..1] Identifiant</td>
@@ -1782,7 +1795,47 @@ Les classes EntiteJuridique, Lieu et Professionnel sont issues du MOS et sont pr
     <td>dateModificationEvenement : [0..1] DateHeure</td>
     <td>Date de la dernière modification de l'événement.</td>
   </tr>
+   <tr>
+    <td>validationUsager : [0..1] Indicateur</td>
+    <td>Accord de l'usager<br>
+1 =  validation de l'usager<br>
+0 =  refus de l'usager</td>
+  </tr>
 </table>
+
+##### Classe Participant
+
+Le Participant est une personne morale ou physique prenant part à l'événement.
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>presenceParticipant : [0..1] Indicateur</td>
+    <td>Indique la présence du participant à l'événement.<br>
+1= participant présent<br>
+0= participant absent </td>
+  </tr>
+  <tr>
+    <td>roleParticipantEJ : [0..1] Code</td>
+    <td>Role du participant vis à vis de l'événement (mandataire judiciaire, structure en charge).<br>
+    Jeu(x) de valeur(s) associé(s) : en construction NOS</td>
+  </tr>
+  <tr>
+    <td>modeExerciceParticipantPP : [0..1] Code</td>
+    <td>Mode d'exercice de la personne physique. Le mode d'exercice décrit selon quelle modalité une activité est exercée au regard de l'évènement.<br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J117-ModeExercice-ENREG/FHIR/JDV-J117-ModeExercice-ENREG">JDV-J117-ModeExercice-ENREG</a>
+    </td>
+  </tr>
+  <tr>
+    <td>participantInterne : [0..1] Indicateur</td>
+    <td>Indique si le participant (personne Physique) est interne ou externe à la structure<br>
+1 = interne<br>
+0 = externe</td>
+  </tr>
+  </table>
 
 ##### Classe Transport
 
