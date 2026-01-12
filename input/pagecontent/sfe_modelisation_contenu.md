@@ -1046,8 +1046,24 @@ La classe EntiteJuridique est définie dans le MOS et est profilée pour ce vole
     <td>Cet identifiant est obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de six caractères "SEJOUR" et numéro de dossier administratif du séjour dans le DUI (numeroDossier) : <br>idSejour = 3+FINESS/identifiantLocalUsagerESSMS-SEJOUR-numeroDossier</td>
   </tr>
    <tr>
-    <td>ESSMS : [1..1] EntiteJuridique</td>
+    <td>numeroDossierAdministratifSejour : [0..1] Identifiant</td>
+    <td>Numéro de dossier administratif du séjour.</td>
+  </tr>
+   <tr>
+    <td>ESSMSAccueil : [1..1] EntiteJuridique</td>
     <td>Établissement ou service social ou médico-social.</td>
+  </tr>
+  <tr>
+    <td>numeroDossierESSMSProvenance : [0..1] Identifiant</td>
+    <td>Numéro de dossier administratif dans l'ESSMS de provenance.</td>
+  </tr>
+   <tr>
+    <td>ESSMSProvenance : [1..1] EntiteJuridique</td>
+    <td>Établissement ou service social ou médico-social de provenance.</td>
+  </tr>
+  <tr>
+    <td>dateEntreeESSMSProvenance : [0..1] DateHeure</td>
+    <td>Date d'entrée dans l'ESSMS de provenance.</td>
   </tr>
   <tr>
     <td>dateAdmission : [0..1] DateHeure</td>
@@ -1062,6 +1078,11 @@ La classe EntiteJuridique est définie dans le MOS et est profilée pour ce vole
     <td>Date d’entrée dans le séjour.</td>
   </tr>
   <tr>
+    <td>provenance : [0..1] Code</td>
+    <td>Mode d'entrée du séjour.<br>
+    Jeu(x) de valeur(s) associé(s) : jdv-modalite-entree-cisis avec l'OID 1.2.250.1.213.1.1.5.73 publié sur <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a></td>
+  </tr>
+  <tr>
     <td>libelleModeEntree : [0..1] Texte</td>
     <td>Libellé du mode d’entée du séjour.</td>
   </tr>
@@ -1073,9 +1094,23 @@ La classe EntiteJuridique est définie dans le MOS et est profilée pour ce vole
     <td>dateSortie : [0..1] DateHeure</td>
     <td>Date de sortie du séjour.</td>
   </tr>
+   <tr>
+    <td>motifSortie : [0..1] Code</td>
+    <td>Mode de sortie/destination du séjour.<br>
+    Jeu(x) de valeur(s) associé(s) : jdv-modalite-sortie-cisis avec l'OID 1.2.250.1.213.1.1.5.74 publié sur <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a></td>
+  </tr>
   <tr>
     <td>libelleModeSortie : [0..1] Texte</td>
     <td>Libellé du mode de sortie du séjour.</td>
+  </tr>
+  <tr>
+    <td>origineDemande : [0..1] Texte</td>
+    <td>Désignation de la personne ou de la structure qui est à l'origine du séjour.</td>
+  </tr>
+   <tr>
+    <td>modaliteAccueil : [0..1] Code</td>
+    <td>Mode de fonctionnement FINESS utilisé pour l'usager.<br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J226-ModaliteAccueil-ROR/FHIR/JDV-J226-ModaliteAccueil-ROR">JDV-J226-ModaliteAccueil-ROR</a></td>
   </tr>
   <tr>
     <td>commentaire : [0..1] Texte</td>
