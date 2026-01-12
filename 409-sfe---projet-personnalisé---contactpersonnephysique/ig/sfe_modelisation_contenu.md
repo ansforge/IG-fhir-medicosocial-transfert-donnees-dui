@@ -319,6 +319,8 @@ Une personne physique est un individu titulaire de droits et d'obligations carac
   * Description: Prénom(s) de la personne déclarés à sa naissance.
 * Nom: civilite : [0..1] Code
   * Description: Civilité de la personne physique.jeu(x) de valeur(s) associé(s) :[JDV_J245-Civilite-CISIS](https://mos.esante.gouv.fr/NOS/JDV_J245-Civilite-CISIS/FHIR/JDV-J245-Civilite-CISIS)
+* Nom: sexe : [0..1] Code
+  * Description: Sexe de la personne physique.Jeu(x) de valeur(s) associé(s) :[JDV-J143-AdministrativeGender-CISIS](https://mos.esante.gouv.fr/NOS/JDV_J143-AdministrativeGender-CISIS/FHIR/JDV-J143-AdministrativeGender-CISIS)
 * Nom: paysNationalite : [0..*] Code
   * Description: Pays de nationalité de la personne physique, actuelle ou rattachement de la nationalité à un espace de pays conventionnéNomenclature(s) associée(s) : Norme ISO 3166
 * Nom: dateNaissance : [0..1] Date

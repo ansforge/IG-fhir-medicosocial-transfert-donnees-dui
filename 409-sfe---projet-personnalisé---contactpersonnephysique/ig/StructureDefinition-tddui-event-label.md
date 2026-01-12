@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-label | *Version*:2.2.0-ballot |
-| Active as of 2026-01-09 | *Computable Name*:TDDUIEventLabel |
+| Active as of 2026-01-12 | *Computable Name*:TDDUIEventLabel |
 
 Titre donné à l’évènement par la structure.
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-event-label.cs
   "name" : "TDDUIEventLabel",
   "title" : "Libellé de l'évènement",
   "status" : "active",
-  "date" : "2026-01-09T10:25:42+00:00",
+  "date" : "2026-01-12T10:02:02+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
