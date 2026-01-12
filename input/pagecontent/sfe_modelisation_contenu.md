@@ -729,6 +729,12 @@ Une personne physique est un individu titulaire de droits et d'obligations carac
     jeu(x) de valeur(s) associé(s) :  <a href="https://mos.esante.gouv.fr/NOS/JDV_J245-Civilite-CISIS/FHIR/JDV-J245-Civilite-CISIS">JDV_J245-Civilite-CISIS</a></td>
   </tr>
   <tr>
+    <td>sexe : [0..1] Code</td>
+    <td>Sexe de la personne physique.<br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J143-AdministrativeGender-CISIS/FHIR/JDV-J143-AdministrativeGender-CISIS">JDV-J143-AdministrativeGender-CISIS</a>
+    </td>
+  </tr>
+  <tr>
     <td>paysNationalite : [0..*] Code</td>
     <td>Pays de nationalité de la personne physique, actuelle ou rattachement de la nationalité à un espace de pays conventionné<br>
     Nomenclature(s) associée(s) : Norme ISO 3166</td>
