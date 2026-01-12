@@ -470,22 +470,38 @@ La classe EntiteJuridique est définie dans le MOS et est profilée pour ce vole
 
 * Nom: idSejour : [1..1] Identifiant
   * Description: Cet identifiant est obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature[TRE_G08-TypeIdentifiantPersonne](https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne)), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de six caractères "SEJOUR" et numéro de dossier administratif du séjour dans le DUI (numeroDossier) :idSejour = 3+FINESS/identifiantLocalUsagerESSMS-SEJOUR-numeroDossier
-* Nom: ESSMS : [1..1] EntiteJuridique
+* Nom: numeroDossierAdministratifSejour : [0..1] Identifiant
+  * Description: Numéro de dossier administratif du séjour.
+* Nom: ESSMSAccueil : [1..1] EntiteJuridique
   * Description: Établissement ou service social ou médico-social.
+* Nom: numeroDossierESSMSProvenance : [0..1] Identifiant
+  * Description: Numéro de dossier administratif dans l'ESSMS de provenance.
+* Nom: ESSMSProvenance : [1..1] EntiteJuridique
+  * Description: Établissement ou service social ou médico-social de provenance.
+* Nom: dateEntreeESSMSProvenance : [0..1] DateHeure
+  * Description: Date d'entrée dans l'ESSMS de provenance.
 * Nom: dateAdmission : [0..1] DateHeure
   * Description: Date d’admission de l'usager dans la structure ESSMS.
 * Nom: dateEntreePrevisionnelle : [0..1] DateHeure
   * Description: Date d’entrée prévisionnelle dans le séjour.
 * Nom: dateEntree : [0..1] DateHeure
   * Description: Date d’entrée dans le séjour.
+* Nom: provenance : [0..1] Code
+  * Description: Mode d'entrée du séjour.Jeu(x) de valeur(s) associé(s) : jdv-modalite-entree-cisis avec l'OID 1.2.250.1.213.1.1.5.73 publié sur[annexe-vocabulaire-et-jeux-de-valeurs](https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs)
 * Nom: libelleModeEntree : [0..1] Texte
   * Description: Libellé du mode d’entée du séjour.
 * Nom: dateSortiePrevisionnelle : [0..1] DateHeure
   * Description: Date de sortie prévisionnelle du séjour.
 * Nom: dateSortie : [0..1] DateHeure
   * Description: Date de sortie du séjour.
+* Nom: motifSortie : [0..1] Code
+  * Description: Mode de sortie/destination du séjour.Jeu(x) de valeur(s) associé(s) : jdv-modalite-sortie-cisis avec l'OID 1.2.250.1.213.1.1.5.74 publié sur[annexe-vocabulaire-et-jeux-de-valeurs](https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs)
 * Nom: libelleModeSortie : [0..1] Texte
   * Description: Libellé du mode de sortie du séjour.
+* Nom: origineDemande : [0..1] Texte
+  * Description: Désignation de la personne ou de la structure qui est à l'origine du séjour.
+* Nom: modaliteAccueil : [0..1] Code
+  * Description: Mode de fonctionnement FINESS utilisé pour l'usager.Jeu(x) de valeur(s) associé(s) :[JDV-J226-ModaliteAccueil-ROR](https://mos.esante.gouv.fr/NOS/JDV_J226-ModaliteAccueil-ROR/FHIR/JDV-J226-ModaliteAccueil-ROR)
 * Nom: commentaire : [0..1] Texte
   * Description: Commentaire relatif au séjour.
 
