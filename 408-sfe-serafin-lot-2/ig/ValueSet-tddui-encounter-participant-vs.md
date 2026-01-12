@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-participant-vs | *Version*:2.2.0-ballot |
-| Active as of 2026-01-09 | *Computable Name*:TDDUIEncounterParticipantVs |
+| Active as of 2026-01-12 | *Computable Name*:TDDUIEncounterParticipantVs |
 
  
 ValueSet for TDDUI Encounter's participants 
@@ -56,7 +56,7 @@ ValueSet for TDDUI Encounter's participants
   "title" : "TDDUI Encounter Participant ValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-09T15:52:02+00:00",
+  "date" : "2026-01-12T15:02:59+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

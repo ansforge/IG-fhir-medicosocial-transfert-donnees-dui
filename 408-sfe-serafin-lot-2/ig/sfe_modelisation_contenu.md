@@ -51,9 +51,11 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
 * Nom: paysNaissance : [0..1] Code
   * Description: Pays de naissance de la personne.Nomenclature(s) associée(s) : ISO 3166Cet attribut fait partie des traits INS. Il est obligatoire si l’identité INS est qualifiée.Il est préconisé si le NIR ou l'identifiant local est véhiculé et que l'identité n'est pas qualifiée.
 * Nom: situationFamiliale : [0..1] Code
-  * Description: Situation familiale de l’usager.Nomenclature(s) associée(s) : à définir
+  * Description: Situation familiale de l’usager.Jeu(x) associé(s) :[JDV-J176-SituationVieQuotidienne-MDPH](https://mos.esante.gouv.fr/NOS/JDV_J176-SituationVieQuotidienne-MDPH/FHIR/JDV-J176-SituationVieQuotidienne-MDPH)
 * Nom: compositionFoyer : [0..1] Code
-  * Description: Désigne avec qui vit l’usager dans son logement.Nomenclature(s) associée(s) : à définir
+  * Description: Désigne avec qui vit l’usager dans son logement.Jeu(x) associé(s) : en cours de création NOS
+* Nom: descriptionCompositionFoyer : [0..1] Texte
+  * Description: Description de la composition du foyer, c’est-à-dire des personnes qui vivent dans le logement avec l'usager.
 * Nom: paysNationalite : [0..*] Code
   * Description: Pays de nationalité actuelle ou rattachement de la nationalité à un espace de pays conventionné.Nomenclature(s) associée(s) :[TRE_R89-RegroupementPays](https://mos.esante.gouv.fr/NOS/TRE_R89-RegroupementPays/FHIR/TRE-R89-RegroupementPays)
 * Nom: langueParlee : [0..*] Code
@@ -68,6 +70,10 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
   * Description: Département de décès de l’usager. Code officiel géographique (COG) du département.Jeu(x) de valeur(s) associé(s) :[JDV-J258-Departement](https://mos.esante.gouv.fr/NOS/JDV_J258-Departement/FHIR/JDV-J258-Departement)
 * Nom: paysDeces : [0..1] Code
   * Description: Pays de décès de l’usager.Nomenclature(s) associée(s) : Norme ISO 3166
+* Nom: adresseCourrier : [0..*][Courrier](#classe-courrier)
+  * Description: Adresse de courrier de l’usager.
+* Nom: telecommunication : [0..*][Telecommunication](#classe-telecommunication)
+  * Description: Telecommunication de l'usager.
 * Nom: photo : [0..*] ObjetBinaire
   * Description: Photo de l’usager.
 * Nom: commentaire : [0..1] Texte
@@ -122,7 +128,7 @@ Adresse de télécommunication à laquelle l’usager peut être contactée (té
 Adresse de courrier de l’usager.
 
 * Nom: typeCourrier : [0..1] Code
-  * Description: Type de courrier.Nomenclature(s) associée(s) : à définir
+  * Description: Type de courrier.Jeu(x) associé(s) : en cours de création NOS
 * Nom: idAdresse : [0..1] Identifiant
   * Description: Adresse à utiliser pour l’envoi du type de courrier.
 * Nom: libelleDestinataire : [0..1] Texte
@@ -829,6 +835,21 @@ Les classes EntiteJuridique, Lieu et Professionnel sont issues du MOS et sont pr
   * Description: Détail du type de ressources utilisées dans le cadre de l’évènement (pour matériel : matériel médical, matériel pédagogique ; pour immobilier : bâtiment, salle, chambre).Jeu(x) de valeur(s) associé(s) :- JDV_DetailMaterielSpecialise_CISIS avec l'OID 1.2.250.1.213.1.1.5.808 publié sur[annexe-vocabulaire-et-jeux-de-valeurs](https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs)- JDV_DetailRessourceImmobiliereUtilisee_CISIS avec l'OID 1.2.250.1.213.1.1.5.809 publié sur[annexe-vocabulaire-et-jeux-de-valeurs](https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs)
 * Nom: dateModificationEvenement : [0..1] DateHeure
   * Description: Date de la dernière modification de l'événement.
+* Nom: validationUsager : [0..1] Indicateur
+  * Description: Accord de l'usager1 = validation de l'usager0 = refus de l'usager
+
+##### Classe Participant
+
+Le Participant est une personne morale ou physique prenant part à l'événement.
+
+* Nom: presenceParticipant : [0..1] Indicateur
+  * Description: Indique la présence du participant à l'événement.1= participant présent0= participant absent
+* Nom: roleParticipantEJ : [0..1] Code
+  * Description: Role du participant vis à vis de l'événement (mandataire judiciaire, structure en charge).Jeu(x) de valeur(s) associé(s) : en construction NOS
+* Nom: modeExerciceParticipantPP : [0..1] Code
+  * Description: Mode d'exercice de la personne physique. Le mode d'exercice décrit selon quelle modalité une activité est exercée au regard de l'évènement.Jeu(x) de valeur(s) associé(s) :[JDV-J117-ModeExercice-ENREG](https://mos.esante.gouv.fr/NOS/JDV_J117-ModeExercice-ENREG/FHIR/JDV-J117-ModeExercice-ENREG)
+* Nom: participantInterne : [0..1] Indicateur
+  * Description: Indique si le participant (personne Physique) est interne ou externe à la structure1 = interne0 = externe
 
 ##### Classe Transport
 
