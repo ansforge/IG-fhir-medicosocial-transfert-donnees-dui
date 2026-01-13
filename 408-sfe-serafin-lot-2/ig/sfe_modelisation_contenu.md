@@ -422,7 +422,7 @@ Relevé d'Identité Bancaire.
 Moyen de transport utilisé par l’usager.
 
 * Nom: type : [0..1] Code
-  * Description: Type de moyen de transport.
+  * Description: Type de moyen de transport.Jeu(x) de valeur(s) associé(s) : JDV Mode De Transport CISIS avec l'OID 1.2.250.1.213.1.1.5.140 publié sur[annexe-vocabulaire-et-jeux-de-valeurs](https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs)
 * Nom: observationAmenagement : [0..1] Texte
   * Description: Observation sur l’aménagement du moyen de transport.
 
@@ -430,10 +430,12 @@ Moyen de transport utilisé par l’usager.
 
 Permis de conduire de l’usager.
 
+* Nom: numPermisConduire : [0..1] Identifiant
+  * Description: Numéro du permis de conduire de l'usager.
 * Nom: categorie : [0..1] Code
-  * Description: Catégorie du permis de conduire.
+  * Description: Catégorie du permis de conduire.Jeu(x) de valeur(s) associé(s) : en cours de création NOS
 * Nom: type : [0..1] Code
-  * Description: Type du permis de conduire.
+  * Description: Type du permis de conduire.Jeu(x) de valeur(s) associé(s) : en cours de création NOS
 * Nom: dateObtention : [0..1] Date
   * Description: Date d’obtention du permis de conduire.
 * Nom: dateValidite : [0..1] Date
@@ -807,6 +809,39 @@ Préparation du bilan du projet personnalisé.
 * Nom: auteur : [1..1] ([Professionnel](#classe-professionnel),[Usager](#classe-usager),[Contact personne physique](#classe-contactpersonnephysique))
   * Description: Auteur de la préparation de bilan. Cet auteur peut référencer un professionnel, l'usager ou une personne de son entourage.
 
+#### Parcours
+
+##### Classe PeriodeScolaire
+
+La période scolaire représente un temps de scolarisation pour l'usager ainsi que les caractéristiques de cette période. L'ensemble des périodes scolaires constitue le parcours scolaire de la personne.
+
+La classe EntiteGeographique est issue du MOS et est profilée pour ce volet.
+
+* Nom: idPeriodeScolaire : [1..1] Identifiant
+  * Description: Identifiant technique unique de la période scolaire obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature[TRE_G08-TypeIdentifiantPersonne](https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne)), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "PSCO" et du numéro de la période scolaire dans le DUI (numPeriodeScolaire) :idPeriodeScolaire = 3+FINESS/identifiantLocalUsagerESSMS-PSCO-numPeriodeScolaire
+* Nom: dateDebutPeriodeScolaire : [0..1] Date
+  * Description: Date de début de la période de scolaire. La date de début peut être différente d'une année scolaire civile habituelle.
+* Nom: dateFinPeriodeScolaire : [0..1] Date
+  * Description: Date de fin de la période scolaire. La date de fin peut être différente d'une année scolaire civile habituelle.
+* Nom: niveauScolaireReel : [0..1] ConceptCode
+  * Description: Niveau scolaire réel de l'usager.
+* Nom: niveauScolaireSuivi : [0..1] ConceptCode
+  * Description: Niveau scolaire suivi de l'usager.
+* Nom: typeEnseignementSpecialise : [0..*] ConceptCode
+  * Description: Type enseignement spécialisé.
+* Nom: referentScolaire : [0..*][PersonnePhysique](#PersonnePhysique)
+  * Description: Référent scolaire de l'usager pour cette année de scolarité.
+* Nom: contactReferentScolaire : [0..*][Telecommunication](#classe-telecommunication)
+  * Description: Télécommunication du référent scolaire.
+* Nom: ecole : [0..1][EntiteGeographique](#classe-entité-géographique)
+  * Description: Structure dans laquelle la période scolaire se déroule.
+* Nom: diplome : [0..*] ConceptCode
+  * Description: Diplôme obtenu au cours de la période scolaire.
+* Nom: volumeScolarisation : [0..1] Numerique
+  * Description: Volume horaire de scolarisation de l'usager sur la période de scolarité.
+* Nom: commentaireAnneeScolaire : [0..1] Texte
+  * Description: Commentaire sur l'année scolaire.
+
 ### Partie Coordination des acteurs
 
 #### Evènement de l'agenda
@@ -954,6 +989,19 @@ Pour ce volet l'Entité Juridique est une personne morale inscrite dans le FINES
   * Description: Identification nationale de l'Entité juridique. Cette identification est obtenue par la concaténation du type d'identifiant national de structure (provenant de la nomenclature[TRE_G07-TypeIdentifiantStructure](https://mos.esante.gouv.fr/NOS/TRE_G07-TypeIdentifiantStructure/FHIR/TRE-G07-TypeIdentifiantStructure)) et de l'identifiant de la structure: ** 1 + N° FINESS.
 * Nom: raisonSociale : [0..1] Texte
   * Description: La raison sociale est le nom de l'entité juridique. Elle figure obligatoirement dans les statuts de l'EJ.
+
+##### Classe Entité Géographique
+
+Pour ce volet l'Entité Géographique est une personne morale.
+
+* Nom: idNat_Struct : [1..1] Identifiant
+  * Description: Identification nationale de l'Entité géographique. Cette identification est obtenue par la concaténation du type d'identifiant national de structure (provenant de la nomenclature[TRE_G07-TypeIdentifiantStructure](https://mos.esante.gouv.fr/NOS/TRE_G07-TypeIdentifiantStructure/FHIR/TRE-G07-TypeIdentifiantStructure)) et de l'identifiant de la structure: ** 3 + N° SIRET (pour les établissements qui ne sont pas de santé).
+* Nom: numeroEducationNationale : [0..1] Texte
+  * Description: Le "numéro éducation nationale de l'établissement" est un numéro associé délivré par l’Éducation nationale, pour tous les établissements et services pour enfants et adolescents handicapés qui emploient du personnel de l’Education nationale.
+* Nom: denominationEG : [0..1] Texte
+  * Description: Nom sous lequel l'entité géographique exerce son activité.
+* Nom: adresseEG : [0..1][Adresse](#classe-adresse)
+  * Description: Adresse(s) géopostale(s) de l'entité géographique.
 
 ##### Classe Lieu
 

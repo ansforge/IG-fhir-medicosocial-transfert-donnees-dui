@@ -321,7 +321,7 @@ This material derives from the HL7 Terminology (THO). THO is copyright &copy;198
     <ul>
       <li>
 
-          IG &copy; 2023+ ANS.  Package ans.fhir.fr.tddui#2.2.0-ballot based on FHIR 4.0.1. Generated 2026-01-12 
+          IG &copy; 2023+ ANS.  Package ans.fhir.fr.tddui#2.2.0-ballot based on FHIR 4.0.1. Generated 2026-01-13 
           
            
             Liens : Table des matières |
@@ -392,7 +392,7 @@ Médicosocial - Transfert de données DUI - version de développement local (v2.
 
           IG &copy; 2023+           <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>
 .  Package ans.fhir.fr.tddui#2.2.0-ballot based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
-. Generated           <span title="Mon, Jan 12, 2026 15:45+0000">2026-01-12</span>
+. Generated           <span title="Tue, Jan 13, 2026 07:15+0000">2026-01-13</span>
 
                     <br/>
 
@@ -424,7 +424,7 @@ Médicosocial - Transfert de données DUI - version de développement local (v2.
 
           IG &copy; 2023+           <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>
 .  Package ans.fhir.fr.tddui#2.2.0-ballot based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
-. Generated           <span title="Mon, Jan 12, 2026 15:45+0000">2026-01-12</span>
+. Generated           <span title="Tue, Jan 13, 2026 07:15+0000">2026-01-13</span>
 
                     <br/>
 
@@ -456,7 +456,7 @@ Médicosocial - Transfert de données DUI - version de développement local (v2.
 
           IG &copy; 2023+           <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>
 .  Package ans.fhir.fr.tddui#2.2.0-ballot based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
-. Generated           <span title="Mon, Jan 12, 2026 15:45+0000">2026-01-12</span>
+. Generated           <span title="Tue, Jan 13, 2026 07:15+0000">2026-01-13</span>
 
                     <br/>
 
@@ -2098,6 +2098,19 @@ Un titre, une position ou une fonction de la personne assurant le contact au sei
           <a href="sfe_modelisation_contenu.html">web</a>
         </td>
         <td>
+          <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">esante.gouv.fr</a>
+        </td>
+        <td>
+Type de moyen de transport.          <br/>
+
+    Jeu(x) de valeur(s) associé(s) : JDV Mode De Transport CISIS avec l'OID 1.2.250.1.213.1.1.5.140 publié sur           <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
           <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">mos.esante.gouv.fr</a>
         </td>
         <td>
@@ -2467,6 +2480,20 @@ Catégorie du bilan.          <br/>
           <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">mos.esante.gouv.fr</a>
         </td>
         <td>
+Identifiant technique unique de la période scolaire obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature           <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>
+), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "PSCO" et du numéro de la période scolaire dans le DUI (numPeriodeScolaire) :          <br/>
+ idPeriodeScolaire = 3+FINESS/identifiantLocalUsagerESSMS-PSCO-numPeriodeScolaire
+    
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">mos.esante.gouv.fr</a>
+        </td>
+        <td>
 Identifiant technique de l’évènement obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature           <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>
 ), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de trois caractères "EVN" et du numéro de l’évènement dans le DUI (numEvenement) :          <br/>
  idEvenement = 3+FINESS/identifiantLocalUsagerESSMS-EVN-numEvenement
@@ -2775,6 +2802,18 @@ Mode d'exercice du professionnel. Décrit selon quelle modalité est exercée l'
         <td>
 Identification nationale de l'Entité juridique. Cette identification est obtenue par la concaténation du type d'identifiant national de structure (provenant de la nomenclature           <a href="https://mos.esante.gouv.fr/NOS/TRE_G07-TypeIdentifiantStructure/FHIR/TRE-G07-TypeIdentifiantStructure">TRE_G07-TypeIdentifiantStructure</a>
 ) et de l'identifiant de la structure: ** 1 + N° FINESS.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://mos.esante.gouv.fr/NOS/TRE_G07-TypeIdentifiantStructure/FHIR/TRE-G07-TypeIdentifiantStructure">mos.esante.gouv.fr</a>
+        </td>
+        <td>
+Identification nationale de l'Entité géographique. Cette identification est obtenue par la concaténation du type d'identifiant national de structure (provenant de la nomenclature           <a href="https://mos.esante.gouv.fr/NOS/TRE_G07-TypeIdentifiantStructure/FHIR/TRE-G07-TypeIdentifiantStructure">TRE_G07-TypeIdentifiantStructure</a>
+) et de l'identifiant de la structure: ** 3 + N° SIRET (pour les établissements qui ne sont pas de santé).
         </td>
       </tr>
       <tr>
