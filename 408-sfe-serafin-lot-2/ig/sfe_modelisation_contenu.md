@@ -575,6 +575,10 @@ Résultat de l'évaluation globale d'un usager.
   * Description: Date et heure de l’évaluation.
 * Nom: resultatEvaluation : [0..1] Le type du résultat est dépendant du type d'évaluation
   * Description: Résultat global de l’évaluation. Le resultat est à renseigner uniquement lorsqu'il s'agit d'une Evaluation AGGIR PH SSIAD ou Evaluation AGGIR PA SSIAD- Evaluation AGGIR PH SSIAD : JDV_GIR_CISIS avec l'OID 1.2.250.1.213.1.1.5.53 publié sur[annexe-vocabulaire-et-jeux-de-valeurs](https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs)- Evaluation AGGIR PA SSIAD : JDV_GIR_CISIS avec l'OID 1.2.250.1.213.1.1.5.53 publié sur[annexe-vocabulaire-et-jeux-de-valeurs](https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs)
+* Nom: modaliteEvaluation : [0..1] Texte
+  * Description: Mode d'évaluation.
+* Nom: autoEvaluation : [0..1] Indicateur
+  * Description: Indique si l'évaluation est une auto-évaluation.1 = L'évaluation est une auto-évaluation0 = L'évaluation n'est pas une évaluation
 * Nom: commentaireEvaluation : [0..1] Texte
   * Description: Commentaire libre sur l’évaluation.
 * Nom: pieceJointeEvaluation : [0..*] ObjetBinaire
