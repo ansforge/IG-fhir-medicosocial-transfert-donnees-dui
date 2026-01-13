@@ -757,54 +757,6 @@ Une personne physique est un individu titulaire de droits et d'obligations carac
 </tr>
 </table>
 
-##### Classe  ContactPersonneMorale
-
-Personne morale qui agit comme point de contact auprès d'un établissement, structure ou autre personne morale.
-
-<table style="width:100%">
-  <tr>
-    <th>Nom</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>identifiantContactPM : [0..1] Identifiant</td>
-    <td>Identifiant du contact</td>
-  </tr>
-  <tr>
-    <td>libelle : [0..1] Texte</td>
-    <td>Libellé du contact.</td>
-  </tr>
-  <tr>
-    <td>raisonSociale : [0..1] Texte</td>
-    <td>Raison sociale du contact.</td>
-  </tr>
-  <tr>
-    <td>typeOrgansime : [0..1] Code</td>
-    <td>Type d’organisme du contact.</td>
-  </tr>
-  <tr>
-    <td>telecommunication : [0..*] Telecommunication</td>
-    <td>Adresse(s) de télécommunication du contact (numéro de téléphone, adresse email, URL, etc.).</td>
-  </tr>
-  <tr>
-    <td>adresse : [0..1] Adresse</td>
-    <td>Adresse géopostale du point de contact.</td>
-  </tr>
-  <tr>
-    <td>role : [0..1] Code</td>
-    <td>Rôle de la personne point de contact auprès d'une autre personne. Exemple dans le cas d'un patient, ce rôle indique si le point de contact est la personne à prévenir en cas d'urgence, la personne de confiance, etc.<br>
-    Nomenclature(s) associée(s) : <a href="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass">TRE_R260-HL7RoleClass</a></td>
-  </tr>
-  <tr>
-    <td>ordreAppel : [0..1] Numérique</td>
-    <td>Ordre de priorité d’appel du contact (1 = priorité maximale).</td>
-  </tr>
-  <tr>
-    <td>commentaire : [0..1] Texte</td>
-    <td>Commentaire relatif au contact.</td>
-  </tr>
-</table>
-
 ##### Classe Ressource
 
 Ressource perçue par l’usager.

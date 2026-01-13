@@ -24,18 +24,6 @@ class PersonnePhysique #LightBlue {
     commentaire : Texte [0..1]
 }
 
-class ContactPersonneMorale #LightBlue {
-    identifiantContactPM : Identifiant [0..1]
-    libelle : Texte [0..1]
-    raisonSociale : Texte [0..1]
-    typeOrganisme : Code [0..1]
-    adresse : Adresse [0..1]
-    telecommunication : Telecommunication [0..*]
-    role : Code [0..1]
-    ordreAppel : Numerique [0..1]
-    commentaire : Texte [0..1]
-}
-
 class MesureProtection #LightBlue {
     typeMesureProtection : Code [0..1]
     nom : Texte [0..1]
@@ -88,7 +76,6 @@ class CompteBancaire #LightBlue {
 Contact "*" -- "1" Usager
 PersonnePhysique "1" -- "1" Contact
 
-ContactPersonneMorale "*" -- "1" Usager 
 PermisConduire "*" - "1" Usager 
 Usager"1" - "*" Transport 
 Usager "1" -- "*" MesureProtection
