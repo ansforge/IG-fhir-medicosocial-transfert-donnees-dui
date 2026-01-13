@@ -332,29 +332,6 @@ Une personne physique est un individu titulaire de droits et d'obligations carac
 * Nom: commentaire : [0..1] Texte
   * Description: Commentaire relatif à la personne physique.
 
-##### Classe ContactPersonneMorale
-
-Personne morale qui agit comme point de contact auprès d'un établissement, structure ou autre personne morale.
-
-* Nom: identifiantContactPM : [0..1] Identifiant
-  * Description: Identifiant du contact
-* Nom: libelle : [0..1] Texte
-  * Description: Libellé du contact.
-* Nom: raisonSociale : [0..1] Texte
-  * Description: Raison sociale du contact.
-* Nom: typeOrgansime : [0..1] Code
-  * Description: Type d’organisme du contact.
-* Nom: telecommunication : [0..*] Telecommunication
-  * Description: Adresse(s) de télécommunication du contact (numéro de téléphone, adresse email, URL, etc.).
-* Nom: adresse : [0..1] Adresse
-  * Description: Adresse géopostale du point de contact.
-* Nom: role : [0..1] Code
-  * Description: Rôle de la personne point de contact auprès d'une autre personne. Exemple dans le cas d'un patient, ce rôle indique si le point de contact est la personne à prévenir en cas d'urgence, la personne de confiance, etc.Nomenclature(s) associée(s) :[TRE_R260-HL7RoleClass](https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass)
-* Nom: ordreAppel : [0..1] Numérique
-  * Description: Ordre de priorité d’appel du contact (1 = priorité maximale).
-* Nom: commentaire : [0..1] Texte
-  * Description: Commentaire relatif au contact.
-
 ##### Classe Ressource
 
 Ressource perçue par l’usager.
