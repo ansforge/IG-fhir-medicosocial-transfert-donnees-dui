@@ -10,7 +10,11 @@ class Responsable #LightGray
 
 class Auteur #LightGray
 
+class Porteur #LightGray
+
 class Professionnel #LightGray
+
+class EntiteJuridique #LightGray
 
 class Statut #LightYellow
 
@@ -19,6 +23,8 @@ class Evaluation #LightGray {
     typeEvaluation : Code [1..1]
     dateEvaluation : DateHeure [0..1]
     resultatEvaluation : [0..1]
+    modaliteEvaluation : Texte [0..1]
+    autoEvaluation : Indicateur [0..1]
     commentaireEvaluation : Texte [0..1]
     pieceJointeEvaluation : ObjetBinaire [0..*]
 }
@@ -51,10 +57,15 @@ Professionnel <|-- Evaluateur
 Professionnel <|-- Responsable
 Professionnel <|-- Auteur
 
+EntiteJuridique <|-- Porteur
+
 Evaluateur "0..1" -- "0..*" Evaluation
 Responsable "0..1" -- "0..*" Evaluation
 Auteur "0..1" -- "0..*" Evaluation
 Usager "1" -- "0..*" Evaluation
+
+Porteur "0..1" -- "0..*" Evaluation
+
 Evaluation "1" -- "0..*" DetailEvaluationN1
 DetailEvaluationN1 "1" -- "0..*" DetailEvaluationN2
 Evaluation "1" -- "0..*" Statut

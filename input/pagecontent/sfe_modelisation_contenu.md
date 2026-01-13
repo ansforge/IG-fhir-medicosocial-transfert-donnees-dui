@@ -1272,6 +1272,16 @@ Résultat de l'évaluation globale d'un usager.
     - Evaluation AGGIR PA SSIAD : JDV_GIR_CISIS avec l'OID 1.2.250.1.213.1.1.5.53 publié sur <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a>
     </td>
   </tr>
+  <tr>
+    <td>modaliteEvaluation : [0..1] Texte</td>
+    <td>Mode d'évaluation.</td>
+  </tr>
+  <tr>
+    <td>autoEvaluation : [0..1] Indicateur</td>
+    <td>Indique si l'évaluation est une auto-évaluation.<br>
+1 = L'évaluation est une auto-évaluation<br>
+0 = L'évaluation n'est pas une évaluation</td>
+  </tr>
    <tr>
     <td>commentaireEvaluation : [0..1] Texte</td>
     <td>Commentaire libre sur l’évaluation.</td>
