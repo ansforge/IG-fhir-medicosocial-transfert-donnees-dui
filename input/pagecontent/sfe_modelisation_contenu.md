@@ -946,7 +946,8 @@ Moyen de transport utilisé par l’usager.
   </tr>
   <tr>
     <td>type : [0..1] Code</td>
-    <td>Type de moyen de transport.</td>
+    <td>Type de moyen de transport.<br>
+    Jeu(x) de valeur(s) associé(s) : JDV Mode De Transport CISIS avec l'OID 1.2.250.1.213.1.1.5.140 publié sur <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a></td>
   </tr>
   <tr>
     <td>observationAmenagement : [0..1] Texte</td>
@@ -964,12 +965,18 @@ Permis de conduire de l’usager.
     <th>Description</th>
   </tr>
   <tr>
+    <td>numPermisConduire : [0..1] Identifiant</td>
+    <td>Numéro du permis de conduire de l'usager.</td>
+  </tr>
+  <tr>
     <td>categorie : [0..1] Code</td>
-    <td>Catégorie du permis de conduire.</td>
+    <td>Catégorie du permis de conduire.<br>
+    Jeu(x) de valeur(s) associé(s) : en cours de création NOS</td>
   </tr>
   <tr>
     <td>type : [0..1] Code</td>
-    <td>Type du permis de conduire.</td>
+    <td>Type du permis de conduire.<br>
+    Jeu(x) de valeur(s) associé(s) : en cours de création NOS</td>
   </tr>
   <tr>
     <td>dateObtention : [0..1] Date</td>
@@ -1727,6 +1734,72 @@ Préparation du bilan du projet personnalisé.
  </tr>
 </table>   
 
+#### Parcours
+
+<div style="text-align:center;">{%include bloc_periode_scolaire.svg%}</div>
+
+##### Classe PeriodeScolaire
+
+La période scolaire représente un temps de scolarisation pour l'usager ainsi que les caractéristiques de cette période. L'ensemble des périodes scolaires constitue le parcours scolaire de la personne.
+
+La classe EntiteGeographique est issue du MOS et est profilée pour ce volet.
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>idPeriodeScolaire : [1..1] Identifiant</td>
+    <td>Identifiant technique unique de la période scolaire obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "PSCO" et du numéro de la période scolaire dans le DUI (numPeriodeScolaire) :<br> idPeriodeScolaire = 3+FINESS/identifiantLocalUsagerESSMS-PSCO-numPeriodeScolaire
+    </td>
+ </tr>
+  <tr>
+    <td>dateDebutPeriodeScolaire : [0..1] Date</td>
+    <td>Date de début de la période de scolaire. La date de début peut être différente d'une année scolaire civile habituelle.</td>
+ </tr>
+ <tr>
+    <td>dateFinPeriodeScolaire : [0..1] Date</td>
+    <td>Date de fin de la période scolaire. La date de fin peut être différente d'une année scolaire civile habituelle.</td>
+ </tr>
+ <tr>
+    <td>niveauScolaireReel : [0..1] ConceptCode</td>
+    <td>Niveau scolaire réel de l'usager.</td>
+ </tr>
+ <tr>
+    <td>niveauScolaireSuivi : [0..1] ConceptCode</td>
+    <td>Niveau scolaire suivi de l'usager.</td>
+ </tr>
+  <tr>
+    <td>typeEnseignementSpecialise : [0..*] ConceptCode</td>
+    <td>Type enseignement spécialisé.</td>
+ </tr>
+ <tr>
+    <td>referentScolaire : [0..*] <a href="#PersonnePhysique">PersonnePhysique</a></td>
+    <td>Référent scolaire de l'usager pour cette année de scolarité.</td>
+ </tr>
+ <tr>
+    <td>contactReferentScolaire : [0..*] <a href="#classe-telecommunication">Telecommunication</a></td>
+    <td>Télécommunication du référent scolaire.</td>
+ </tr>
+ <tr>
+    <td>ecole : [0..1] <a href="#classe-entité-géographique">EntiteGeographique</a></td>
+    <td>Structure dans laquelle la période scolaire se déroule.</td>
+ </tr>
+ <tr>
+    <td>diplome : [0..*] ConceptCode</td>
+    <td>Diplôme obtenu au cours de la période scolaire.</td>
+ </tr>
+ <tr>
+    <td>volumeScolarisation : [0..1] Numerique</td>
+    <td>Volume horaire de scolarisation de l'usager sur la période de scolarité.</td>
+ </tr>
+  <tr>
+    <td>commentaireAnneeScolaire : [0..1] Texte</td>
+    <td>Commentaire sur l'année scolaire.</td>
+ </tr>
+  </table>
+
 ### Partie Coordination des acteurs
 
 #### Evènement de l'agenda
@@ -2048,6 +2121,33 @@ Pour ce volet l'Entité Juridique est une personne morale inscrite dans le FINES
   </tr>
 </table>
 
+##### Classe Entité Géographique
+
+Pour ce volet l'Entité Géographique est une personne morale.
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>idNat_Struct : [1..1] Identifiant</td>
+    <td>Identification nationale de l'Entité géographique. Cette identification est obtenue par la concaténation du type d'identifiant national de structure (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G07-TypeIdentifiantStructure/FHIR/TRE-G07-TypeIdentifiantStructure">TRE_G07-TypeIdentifiantStructure</a>) et de l'identifiant de la structure: ** 3 + N° SIRET (pour les établissements qui ne sont pas de santé).</td>
+  </tr>
+   <tr>
+    <td>numeroEducationNationale : [0..1] Texte</td>
+    <td>Le "numéro éducation nationale de l'établissement" est un numéro associé délivré par l’Éducation nationale, pour tous les établissements et services pour enfants et adolescents handicapés qui emploient du personnel de l’Education nationale.</td>
+  </tr>
+ <tr>
+    <td>denominationEG : [0..1] Texte</td>
+    <td>Nom sous lequel l'entité géographique exerce son activité.</td>
+  </tr>
+  <tr>
+    <td>adresseEG : [0..1] <a href="#classe-adresse">Adresse</a></td>
+    <td>Adresse(s) géopostale(s) de l'entité géographique.</td>
+  </tr>
+
+</table>
 
 ##### Classe Lieu
 
