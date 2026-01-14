@@ -828,11 +828,11 @@ La classe EntiteGeographique est issue du MOS et est profilée pour ce volet.
 * Nom: dateFinPeriodeScolaire : [0..1] Date
   * Description: Date de fin de la période scolaire. La date de fin peut être différente d'une année scolaire civile habituelle.
 * Nom: niveauScolaireReel : [0..1] ConceptCode
-  * Description: Niveau scolaire réel de l'usager.
+  * Description: Niveau scolaire réel de l'usager.Jeu(x) de valeur(s) associé(s) : en cours de création NOS
 * Nom: niveauScolaireSuivi : [0..1] ConceptCode
-  * Description: Niveau scolaire suivi de l'usager.
+  * Description: Niveau scolaire suivi de l'usager.Jeu(x) de valeur(s) associé(s) : en cours de création NOS
 * Nom: typeEnseignementSpecialise : [0..*] ConceptCode
-  * Description: Type enseignement spécialisé.
+  * Description: Type enseignement spécialisé.Jeu(x) de valeur(s) associé(s) : en cours de création NOS
 * Nom: referentScolaire : [0..*][PersonnePhysique](#PersonnePhysique)
   * Description: Référent scolaire de l'usager pour cette année de scolarité.
 * Nom: contactReferentScolaire : [0..*][Telecommunication](#classe-telecommunication)
@@ -840,9 +840,9 @@ La classe EntiteGeographique est issue du MOS et est profilée pour ce volet.
 * Nom: ecole : [0..1][EntiteGeographique](#classe-entité-géographique)
   * Description: Structure dans laquelle la période scolaire se déroule.
 * Nom: diplome : [0..*] ConceptCode
-  * Description: Diplôme obtenu au cours de la période scolaire.
+  * Description: Diplôme obtenu au cours de la période scolaire.Jeu(x) de valeur(s) associé(s) :[JDV-J81-TypeDiplome-RASS](https://mos.esante.gouv.fr/NOS/JDV_J81-TypeDiplome-RASS/FHIR/JDV-J81-TypeDiplome-RASS)
 * Nom: volumeScolarisation : [0..1] Numerique
-  * Description: Volume horaire de scolarisation de l'usager sur la période de scolarité.
+  * Description: Volume horaire de scolarisation de l'usager sur la période de scolarité. L'unité correspond ici à la demi-journée.
 * Nom: commentaireAnneeScolaire : [0..1] Texte
   * Description: Commentaire sur l'année scolaire.
 

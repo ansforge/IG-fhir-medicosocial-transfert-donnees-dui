@@ -2006,18 +2006,21 @@ Le détail de l’évaluation de ce champ peut être transmis à travers un deux
  </tr>
  <tr>
     <td>niveauScolaireReel : [0..1] ConceptCode</td>
-    <td>Niveau scolaire réel de l'usager.</td>
+    <td>Niveau scolaire réel de l'usager.<br/>
+    Jeu(x) de valeur(s) associé(s) : en cours de création NOS</td>
  </tr>
  <tr>
     <td>niveauScolaireSuivi : [0..1] ConceptCode</td>
-    <td>Niveau scolaire suivi de l'usager.</td>
+    <td>Niveau scolaire suivi de l'usager.<br/>
+    Jeu(x) de valeur(s) associé(s) : en cours de création NOS</td>
  </tr>
   <tr>
     <td>typeEnseignementSpecialise : [0..*] ConceptCode</td>
-    <td>Type enseignement spécialisé.</td>
+    <td>Type enseignement spécialisé.<br/>
+    Jeu(x) de valeur(s) associé(s) : en cours de création NOS</td>
  </tr>
  <tr>
-    <td><a name="l6170">​</a>referentScolaire : [0..*] <a href="#PersonnePhysique">PersonnePhysique</a></td>
+    <td><a name="l6176">​</a>referentScolaire : [0..*] <a href="#PersonnePhysique">PersonnePhysique</a></td>
     <td>Référent scolaire de l'usager pour cette année de scolarité.</td>
  </tr>
  <tr>
@@ -2030,11 +2033,12 @@ Le détail de l’évaluation de ce champ peut être transmis à travers un deux
  </tr>
  <tr>
     <td>diplome : [0..*] ConceptCode</td>
-    <td>Diplôme obtenu au cours de la période scolaire.</td>
+    <td>Diplôme obtenu au cours de la période scolaire.<br/>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J81-TypeDiplome-RASS/FHIR/JDV-J81-TypeDiplome-RASS">JDV-J81-TypeDiplome-RASS</a></td>
  </tr>
  <tr>
     <td>volumeScolarisation : [0..1] Numerique</td>
-    <td>Volume horaire de scolarisation de l'usager sur la période de scolarité.</td>
+    <td>Volume horaire de scolarisation de l'usager sur la période de scolarité. L'unité correspond ici à la demi-journée.</td>
  </tr>
   <tr>
     <td>commentaireAnneeScolaire : [0..1] Texte</td>
@@ -2519,7 +2523,7 @@ Le détail de l’évaluation de ce champ peut être transmis à travers un deux
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.2.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jan 13, 2026 10:01+0000">2026-01-13</span>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.2.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jan 14, 2026 09:54+0000">2026-01-14</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
