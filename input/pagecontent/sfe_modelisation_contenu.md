@@ -1774,15 +1774,18 @@ La classe EntiteGeographique est issue du MOS et est profilée pour ce volet.
  </tr>
  <tr>
     <td>niveauScolaireReel : [0..1] ConceptCode</td>
-    <td>Niveau scolaire réel de l'usager.</td>
+    <td>Niveau scolaire réel de l'usager.<br>
+    Jeu(x) de valeur(s) associé(s) : en cours de création NOS</td>
  </tr>
  <tr>
     <td>niveauScolaireSuivi : [0..1] ConceptCode</td>
-    <td>Niveau scolaire suivi de l'usager.</td>
+    <td>Niveau scolaire suivi de l'usager.<br>
+    Jeu(x) de valeur(s) associé(s) : en cours de création NOS</td>
  </tr>
   <tr>
     <td>typeEnseignementSpecialise : [0..*] ConceptCode</td>
-    <td>Type enseignement spécialisé.</td>
+    <td>Type enseignement spécialisé.<br>
+    Jeu(x) de valeur(s) associé(s) : en cours de création NOS</td>
  </tr>
  <tr>
     <td>referentScolaire : [0..*] <a href="#PersonnePhysique">PersonnePhysique</a></td>
@@ -1798,11 +1801,12 @@ La classe EntiteGeographique est issue du MOS et est profilée pour ce volet.
  </tr>
  <tr>
     <td>diplome : [0..*] ConceptCode</td>
-    <td>Diplôme obtenu au cours de la période scolaire.</td>
+    <td>Diplôme obtenu au cours de la période scolaire.<br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J81-TypeDiplome-RASS/FHIR/JDV-J81-TypeDiplome-RASS">JDV-J81-TypeDiplome-RASS</a></td>
  </tr>
  <tr>
     <td>volumeScolarisation : [0..1] Numerique</td>
-    <td>Volume horaire de scolarisation de l'usager sur la période de scolarité.</td>
+    <td>Volume horaire de scolarisation de l'usager sur la période de scolarité. L'unité correspond ici à la demi-journée.</td>
  </tr>
   <tr>
     <td>commentaireAnneeScolaire : [0..1] Texte</td>
