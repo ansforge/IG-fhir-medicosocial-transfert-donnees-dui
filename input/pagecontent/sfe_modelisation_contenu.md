@@ -1774,12 +1774,12 @@ La classe EntiteGeographique est issue du MOS et est profilée pour ce volet.
  </tr>
  <tr>
     <td>niveauScolaireReel : [0..1] ConceptCode</td>
-    <td>Niveau scolaire réel de l'usager.<br>
+    <td>Situation scolaire réelle de l'usager.<br>
     Jeu(x) de valeur(s) associé(s) : en cours de création NOS</td>
  </tr>
  <tr>
     <td>niveauScolaireSuivi : [0..1] ConceptCode</td>
-    <td>Niveau scolaire suivi de l'usager.<br>
+    <td>Situation scolaire suivie de l'usager.<br>
     Jeu(x) de valeur(s) associé(s) : en cours de création NOS</td>
  </tr>
   <tr>
