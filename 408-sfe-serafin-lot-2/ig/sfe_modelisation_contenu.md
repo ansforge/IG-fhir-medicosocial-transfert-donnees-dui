@@ -828,9 +828,9 @@ La classe EntiteGeographique est issue du MOS et est profilée pour ce volet.
 * Nom: dateFinPeriodeScolaire : [0..1] Date
   * Description: Date de fin de la période scolaire. La date de fin peut être différente d'une année scolaire civile habituelle.
 * Nom: niveauScolaireReel : [0..1] ConceptCode
-  * Description: Niveau scolaire réel de l'usager.Jeu(x) de valeur(s) associé(s) : en cours de création NOS
+  * Description: Situation scolaire réelle de l'usager.Jeu(x) de valeur(s) associé(s) : en cours de création NOS
 * Nom: niveauScolaireSuivi : [0..1] ConceptCode
-  * Description: Niveau scolaire suivi de l'usager.Jeu(x) de valeur(s) associé(s) : en cours de création NOS
+  * Description: Situation scolaire suivie de l'usager.Jeu(x) de valeur(s) associé(s) : en cours de création NOS
 * Nom: typeEnseignementSpecialise : [0..*] ConceptCode
   * Description: Type enseignement spécialisé.Jeu(x) de valeur(s) associé(s) : en cours de création NOS
 * Nom: referentScolaire : [0..*][PersonnePhysique](#PersonnePhysique)

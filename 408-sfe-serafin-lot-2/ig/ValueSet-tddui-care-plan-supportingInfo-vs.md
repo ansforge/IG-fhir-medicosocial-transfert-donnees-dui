@@ -56,7 +56,7 @@ ValueSet définissant les types de notes pour l'élément CarePlan.supportingInf
   "title" : "TDDUI CarePlan supportingInfo ValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-14T09:54:26+00:00",
+  "date" : "2026-01-14T10:22:18+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
