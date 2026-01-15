@@ -53,7 +53,7 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
 * Nom: situationFamiliale : [0..1] Code
   * Description: Situation familiale de l’usager.Jeu(x) associé(s) :[JDV-J176-SituationVieQuotidienne-MDPH](https://mos.esante.gouv.fr/NOS/JDV_J176-SituationVieQuotidienne-MDPH/FHIR/JDV-J176-SituationVieQuotidienne-MDPH)
 * Nom: compositionFoyer : [0..1] Code
-  * Description: Désigne avec qui vit l’usager dans son logement.Jeu(x) associé(s) : en cours de création NOS
+  * Description: Désigne avec qui vit l’usager dans son logement.Jeu(x) associé(s) : Jeu(x) associé(s) :[JDV-J385-composition-foyer-ms](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j385-composition-foyer-ms)
 * Nom: descriptionCompositionFoyer : [0..1] Texte
   * Description: Description de la composition du foyer, c’est-à-dire des personnes qui vivent dans le logement avec l'usager.
 * Nom: paysNationalite : [0..*] Code
