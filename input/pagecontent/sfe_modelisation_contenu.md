@@ -133,7 +133,7 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
   <tr>
     <td>compositionFoyer : [0..1] Code</td>
     <td>Désigne avec qui vit l’usager dans son logement.<br>
-    Jeu(x) associé(s) : en cours de création NOS</td>
+    Jeu(x) associé(s) : Jeu(x) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j385-composition-foyer-ms">JDV-J385-composition-foyer-ms</a></td>
   </tr>
   <tr>
     <td>descriptionCompositionFoyer : [0..1] Texte</td>
