@@ -685,11 +685,11 @@ Un contact peut être un membre de la famille ou un proche de l’Usager. Il peu
   <tr>
     <td>role : [0..1] Code</td>
     <td>Rôle de la personne point de contact auprès d'une autre personne. Exemple dans le cas d'un patient, ce rôle indique si le point de contact est la personne à prévenir en cas d'urgence, la personne de confiance, etc.<br>
-    Jeux de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J265-RoleMembreCercleDeSoins-CISIS/FHIR/JDV-J265-RoleMembreCercleDeSoins-CISIS">JDV-J265-RoleMembreCercleDeSoins-CISIS</a></td>
+    Jeux de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j384-role-membre-famille-ms">JDV-J384-role-membre-famille-ms</a></td>
   </tr>
   <tr>
     <td>description : [0..1] Texte</td>
-    <td>Une description du contact..</td>
+    <td>Une description du contact.</td>
   </tr>
   <tr>
     <td>relation : [0..1] Code</td>
