@@ -301,9 +301,9 @@ Quantification de la prise en charge.
 Un contact peut être un membre de la famille ou un proche de l’Usager. Il peut s’agir par exemple d’un aidant, de la personne de confiance de l’Usager…
 
 * Nom: role : [0..1] Code
-  * Description: Rôle de la personne point de contact auprès d'une autre personne. Exemple dans le cas d'un patient, ce rôle indique si le point de contact est la personne à prévenir en cas d'urgence, la personne de confiance, etc.Jeux de valeur(s) associé(s) :[JDV-J265-RoleMembreCercleDeSoins-CISIS](https://mos.esante.gouv.fr/NOS/JDV_J265-RoleMembreCercleDeSoins-CISIS/FHIR/JDV-J265-RoleMembreCercleDeSoins-CISIS)
+  * Description: Rôle de la personne point de contact auprès d'une autre personne. Exemple dans le cas d'un patient, ce rôle indique si le point de contact est la personne à prévenir en cas d'urgence, la personne de confiance, etc.Jeux de valeur(s) associé(s) :[JDV-J384-role-membre-famille-ms](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j384-role-membre-famille-ms)
 * Nom: description : [0..1] Texte
-  * Description: Une description du contact..
+  * Description: Une description du contact.
 * Nom: relation : [0..1] Code
   * Description: Lien de la personne point de contact auprès d'une autre personne. Exemple dans le cas d'un patient, ce lien indique si le point de contact est son enfant, son frère, etc.Jeux de valeur(s) associé(s) :[JDV-J14-QualiteRepresentantLegal-CISIS](https://mos.esante.gouv.fr/NOS/JDV_J14-QualiteRepresentantLegal-CISIS/FHIR/JDV-J14-QualiteRepresentantLegal-CISIS)[JDV-J11-RelationPatient-CISIS](https://mos.esante.gouv.fr/NOS/JDV_J11-RelationPatient-CISIS/FHIR/JDV-J11-RelationPatient-CISIS)
 

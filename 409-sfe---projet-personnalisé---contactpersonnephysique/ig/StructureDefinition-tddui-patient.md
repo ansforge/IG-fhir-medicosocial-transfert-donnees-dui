@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient | *Version*:2.2.0-ballot |
-| Active as of 2026-01-13 | *Computable Name*:TDDUIPatient |
+| Active as of 2026-01-15 | *Computable Name*:TDDUIPatient |
 
  
 Profil de la ressource FrCorePatientProfile permettant de représenter un usager lorsque l'INS n'est pas transmis. 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient.csv), 
   "name" : "TDDUIPatient",
   "title" : "TDDUI Patient",
   "status" : "active",
-  "date" : "2026-01-13T16:51:50+00:00",
+  "date" : "2026-01-15T13:52:15+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
