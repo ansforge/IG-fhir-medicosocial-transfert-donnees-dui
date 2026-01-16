@@ -51,3 +51,11 @@ L'export du Projet personnalisé est composé des éléments métiers suivants :
 * les Prestations mises en place dans le cadre du Projet personnalisé ;
 * les Bilans réalisés dans le cadre du Projet personnalisé.
 
+##### Cas d'usage SERAFIN - Droits sociaux et de santé, Projet de vie, Partie « Presence Absence »
+
+Dans ce cas d'usage, les objets métiers suivants sont enrichis ou créés :
+
+* les droits sociaux et de santé de l'usager ;
+* le Projet de vie de l'usager ;
+* la partie « Présence Absence ».
+

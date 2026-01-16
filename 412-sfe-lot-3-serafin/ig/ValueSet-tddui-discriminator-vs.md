@@ -59,7 +59,7 @@ ValueSet définissant les codes discriminants.
   "title" : "TDDUI Discriminator ValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-16T14:20:20+00:00",
+  "date" : "2026-01-16T16:24:54+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
