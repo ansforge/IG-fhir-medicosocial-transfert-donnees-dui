@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-admission-date
   "name" : "TDDUIAdmissionDate",
   "title" : "Date d’admission",
   "status" : "active",
-  "date" : "2026-01-20T16:02:03+00:00",
+  "date" : "2026-01-20T17:55:30+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
