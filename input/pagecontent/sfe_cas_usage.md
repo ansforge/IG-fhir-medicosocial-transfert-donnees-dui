@@ -35,22 +35,22 @@ Pour ce cas d'usage les modalités d’envoi des données usager au SI-tiers son
   Dans ce cas d'usage, le Projet personnalisé de l'usager est envoyé par le logiciel DUI vers le système d’information de la CNSA (<a href="https://www.cnsa.fr/informations-thematiques/systeme-dinformation-et-numerique/sidoba">SIDOBA</a> = système d’information de l’offre de la branche autonomie).
 
   L'export du Projet personnalisé est composé des éléments métiers suivants :
-  * le Projet Personnalisé de l'usager ;
-  * les Attentes de l'usager que le professionnel a intégrées au Projet personnalisé ; 
-  * les Besoins de l'usager que le professionnel a intégrés au Projet personnalisé ;  
-  * les Objectifs dans le cadre du Projet personnalisé ;
-  * les Actions menées dans le cadre du Projet personnalisé ;
-  * les Moyens et les Ressources à mettre en place pour réaliser le Projet personnalisé ;
-  * les Prestations mises en place dans le cadre du Projet personnalisé ;
-  * les Bilans réalisés dans le cadre du Projet personnalisé.
+  * le Projet Personnalisé de l'usager 
+  * les Attentes de l'usager que le professionnel a intégrées au Projet personnalisé
+  * les Besoins de l'usager que le professionnel a intégrés au Projet personnalisé  
+  * les Objectifs dans le cadre du Projet personnalisé
+  * les Actions menées dans le cadre du Projet personnalisé
+  * les Moyens et les Ressources à mettre en place pour réaliser le Projet personnalisé
+  * les Prestations mises en place dans le cadre du Projet personnalisé
+  * les Bilans réalisés dans le cadre du Projet personnalisé
  
  ##### Cas d'usage SERAFIN - Mise à jour des blocs Administratif, Coordination des acteurs et Accompagnement
 
 La mise à jour des blocs "Administratif, Coordination des acteurs et Accompagnement" entre dans la définition des moyens, ressources et de l'accompagnement mis en oeuvre pour l'usager en adéquation avec les besoins SERAFIN répertoriés en autre dans le Projet personnalisé.
 Dans ce cas d'usage, les objets métiers suivants sont enrichis ou créés :
-  * la Mobilité de l'usager, son permis de conduire et son Séjour (bloc Administratif) ;
-  * la Période scolaire de l'usager (bloc Accompagnement) ;
-  * l'évènement de l'agenda usager (bloc Coordination des acteurs).
+  * la Mobilité de l'usager, son permis de conduire et son Séjour (bloc Administratif) 
+  * la Période scolaire de l'usager (bloc Accompagnement) 
+  * l'évènement de l'agenda usager (bloc Coordination des acteurs)
 
 <blockquote class="stu-note">
     <p>
@@ -61,11 +61,11 @@ Dans ce cas d'usage, les objets métiers suivants sont enrichis ou créés :
   ##### Cas d'usage SERAFIN - Droits sociaux et de santé, Projet de vie, Présence Absence
 
 Dans ce cas d'usage, les objets métiers suivants sont enrichis ou créés :
-  * La demande d'orientation adressée par la CDAPH ;
-  * La Décision d'orientation prise par la CDAPH ;
-  * L'ensemble des droits et prestations ;
-  * Les détails de la prestation ;
-  * La description des modalités d’accueil ;
-  * La quantification de la prise en charge ;
-  * Le projet de vie ;
-  * Présence, absence de l'usager.
+  * La demande d'orientation adressée par la CDAPH 
+  * La Décision d'orientation prise par la CDAPH 
+  * L'ensemble des droits et prestations 
+  * Les détails de la prestation 
+  * La description des modalités d’accueil 
+  * La quantification de la prise en charge 
+  * Le projet de vie 
+  * Présence, absence de l'usager
