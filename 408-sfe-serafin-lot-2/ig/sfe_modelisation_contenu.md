@@ -22,10 +22,10 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
   * Description: Le matricule INS est le numéro d’inscription au répertoire national d’identification des personnes physiques (NIR) ou le numéro identifiant d’attente (NIA) pour les personnes en instance d’attribution d’un NIR (Art. R. 1111-8-1.-I du CSP).Si le matricule INS de l'usager existe, il doit être véhiculé en priorité. Dans le cas où le matricule INS est renseigné, les traits INS (traits d'identité et traits complémentaires issus du RNIV) doivent être transmis conformément à l'[annexe prise en charge de l'INS dans les volets du ci-sis](https://esante.gouv.fr/annexe-prise-en-charge-de-lins-dans-les-volets-du-ci-sis).
 * Nom: numSecuriteSociale : [0..1] Identifiant
   * Description: Numéro de sécurité sociale de l'usager NIR (NSS-NIR) ou NIA (NSS-NIA) si l'usager est en attente de l'attribution d’un NIR.Le numéro de sécurité sociale est utilisé pour la facturation et le remboursement des prestations de santé de la personne prise en charge.
-* Nom: identifiantLocalUsagerESSMS : [0..1] Identifiant
-  * Description: Identifiant local de l’usager au sein de la structure.Cet identifiant est obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature[TRE_G08-TypeIdentifiantPersonne](https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne)), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS) : 3+FINESS/identifiantLocalUsagerESSMS
+* Nom: identifiantUsagerESSMS : [0..1] Identifiant
+  * Description: Identifiant de l’usager au sein de la structure.Cet identifiant est obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature[TRE_G08-TypeIdentifiantPersonne](https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne)), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS) : 3+FINESS/identifiantLocalUsagerESSMS
 * Nom: numeroIndividuInitial : [0..1] Identifiant
-  * Description: Numéro de l’individu attribué par la MDPH ayant créé le dossier Individu (= MDPH initiale).Synonyme = identifiantMDPH
+  * Description: Numéro de l’individu attribué par la MDPH ayant créé le dossier Individu (= MDPH initiale).Cet identifiant est obtenu par la concaténation du numéro de l'individu local attribué par la MDPH ayant créé le dossier Individu (identifiantIndividuMDPHInitial) et du numéro de la MDPH (identifiantMDPH) : identifiantIndividuMDPHInitial/identifiantMDPHSynonyme = identifiantMDPH
 * Nom: nomNaissance : [1..1] Texte
   * Description: Toute personne possède un nom de famille (appelé auparavant nom patronymique). Ce nom figure sur l'acte de naissance. Il peut s'agir par exemple du nom du père.Cet attribut fait partie des traits INS. Il est obligatoire si l’identité INS est qualifiée.
 * Nom: nomUsage : [0..1] Texte
@@ -81,7 +81,7 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
 
 ##### Classe Adresse
 
-Adresse géopostale. Un emplacement auquel l’usager peut être trouvée, d'après la norme AFNOR NF Z10-011.
+Adresse géopostale. Un emplacement auquel l’usager peut être trouvé, d'après la norme AFNOR NF Z10-011.
 
 * Nom: idAdresse : [0..1] Identifiant
   * Description: Identifiant fonctionnel de l’adresse.

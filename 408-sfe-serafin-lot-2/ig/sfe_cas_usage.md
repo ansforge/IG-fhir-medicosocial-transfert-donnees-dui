@@ -59,7 +59,5 @@ La mise à jour des blocs "Administratif, Coordination des acteurs et Accompagne
 * la Période scolaire de l'usager (bloc Accompagnement) ;
 * l'évènement de l'agenda usager (bloc Coordination des acteurs)
 
-De plus dans ce cas d'usage le type d'évaluation selon la classification CIM11 est créé.
-
-> Les types d'évaluations de la déficience selon FINESS et de la déficience selon le tableau de la performance ANAP font partie d'un travail d'alignement avec la CIM11. Ces travaux sont menés par le CGTS à l'ANS. En fonction de l'avancé de ces travaux ces nouveaux types d'évaluations feront partie de futurs lots.
+> Les types d'évaluations de la déficience selon la classification CIM11, FINESS et de la déficience selon le tableau de la performance ANAP font partie d'un travail d'alignement avec la CIM11. Ces travaux sont menés par le CGTS à l'ANS. En fonction de l'avancé de ces travaux ces nouveaux types d'évaluations feront partie de futurs lots.
 
