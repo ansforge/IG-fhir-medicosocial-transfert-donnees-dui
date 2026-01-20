@@ -40,13 +40,14 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
      Le numéro de sécurité sociale est utilisé pour la facturation et le remboursement des prestations de santé de la personne prise en charge.</td>
   </tr>
   <tr>
-    <td>identifiantLocalUsagerESSMS : [0..1] Identifiant</td>
-    <td>Identifiant local de l’usager au sein de la structure.<br>
+    <td>identifiantUsagerESSMS : [0..1] Identifiant</td>
+    <td>Identifiant de l’usager au sein de la structure.<br>
     Cet identifiant est obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS) : 3+FINESS/identifiantLocalUsagerESSMS</td>
   </tr>
    <tr>
     <td>numeroIndividuInitial : [0..1] Identifiant</td>
     <td>Numéro de l’individu attribué par la MDPH ayant créé le dossier Individu (= MDPH initiale).<br>
+    Cet identifiant est obtenu par la concaténation du numéro de l'individu local attribué par la MDPH ayant créé le dossier Individu (identifiantIndividuMDPHInitial) et du numéro de la MDPH (identifiantMDPH) : identifiantIndividuMDPHInitial/identifiantMDPH<br>
     Synonyme = identifiantMDPH</td>
   </tr>
   <tr>
@@ -194,7 +195,7 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
 
 ##### Classe Adresse
 
-Adresse géopostale. Un emplacement auquel l’usager peut être trouvée, d'après la norme AFNOR NF Z10-011.
+Adresse géopostale. Un emplacement auquel l’usager peut être trouvé, d'après la norme AFNOR NF Z10-011.
 
 <table style="width:100%">
   <tr>
