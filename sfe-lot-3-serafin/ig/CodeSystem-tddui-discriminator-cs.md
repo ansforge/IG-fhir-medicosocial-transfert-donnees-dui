@@ -40,7 +40,7 @@ CodeSystem définissant les codes discriminants.
   "title" : "TDDUI Discriminator CodeSystem",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-20T15:34:05+00:00",
+  "date" : "2026-01-20T16:02:03+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

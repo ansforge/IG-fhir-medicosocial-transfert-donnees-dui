@@ -57,7 +57,20 @@ La mise à jour des blocs "Administratif, Coordination des acteurs et Accompagne
 
 * la Mobilité de l'usager, son permis de conduire et son Séjour (bloc Administratif) ;
 * la Période scolaire de l'usager (bloc Accompagnement) ;
-* l'évènement de l'agenda usager (bloc Coordination des acteurs)
+* l'évènement de l'agenda usager (bloc Coordination des acteurs).
 
 > Les types d'évaluations de la déficience selon la classification CIM11, FINESS et de la déficience selon le tableau de la performance ANAP font partie d'un travail d'alignement avec la CIM11. Ces travaux sont menés par le CGTS à l'ANS. En fonction de l'avancé de ces travaux ces nouveaux types d'évaluations feront partie de futurs lots.
+
+##### Cas d'usage SERAFIN - Droits sociaux et de santé, Projet de vie, Présence Absence
+
+Dans ce cas d'usage, les objets métiers suivants sont enrichis ou créés :
+
+* La demande d'orientation adressée par la CDAPH ;
+* La Décision d'orientation prise par la CDAPH ;
+* L'ensemble des droits et prestations ;
+* Les détails de la prestation ;
+* La description des modalités d’accueil ;
+* La quantification de la prise en charge ;
+* Le projet de vie ;
+* Présence, absence de l'usager.
 
