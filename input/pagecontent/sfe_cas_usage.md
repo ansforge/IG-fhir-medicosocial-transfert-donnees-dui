@@ -6,11 +6,11 @@ Cette section décrit, **à titre d'exemple et de façon non exhaustive**, un en
     </p>
 </blockquote>
 
-#### Transfert des données d’un logiciel DUI vers un SI-tiers
+### Transfert des données d’un logiciel DUI vers un SI-tiers
 
 Ces cas d’usage s’inscrivent dans le cadre du programme décliné en France, au niveau national pour déployer des solutions numériques au sein des établissements et services sociaux et medico-sociaux (ESSMS), favoriser l’interopérabilité et transférer des données d’un logiciel DUI (dossiers usagers informatisés) vers un Système d’Information tiers.
 
-##### Cas d'usage SSIAD
+#### Cas d'usage SSIAD
 
 Il s'agit du transfert des données d’un logiciel DUI correspondant aux Services de soins infirmiers à domicile (SSIAD) vers un SI-tiers pour renforcer la connaissance et le pilotage de la branche médico-sociale grâce aux données financières, d'activités des ESMS, etc.
 
@@ -28,7 +28,7 @@ Pour ce cas d'usage les modalités d’envoi des données usager au SI-tiers son
 * Le DUI envoie au minimum une semaine d'historique par usager
 * Le DUI envoie au maximum cinq semaines d'historique par usager
 
-##### Cas d'usage SERAFIN - Projet personnalisé
+#### Cas d'usage SERAFIN - Projet personnalisé
 
  Le Projet personnalisé est un outil de coordination visant à répondre à long terme aux besoins et attentes de la personne accueillie. Il est conçu pour et, si possible, avec la personne prise en charge.
 
@@ -44,7 +44,7 @@ Pour ce cas d'usage les modalités d’envoi des données usager au SI-tiers son
   * les Prestations mises en place dans le cadre du Projet personnalisé
   * les Bilans réalisés dans le cadre du Projet personnalisé
  
-##### Cas d'usage SERAFIN - Mise à jour des blocs Administratif, Coordination des acteurs et Accompagnement
+#### Cas d'usage SERAFIN - Mise à jour des blocs Administratif, Coordination des acteurs et Accompagnement
 
 La mise à jour des blocs "Administratif, Coordination des acteurs et Accompagnement" entre dans la définition des moyens, ressources et de l'accompagnement mis en oeuvre pour l'usager en adéquation avec les besoins SERAFIN répertoriés en autre dans le Projet personnalisé.
 Dans ce cas d'usage, les objets métiers suivants sont enrichis ou créés :
@@ -58,7 +58,7 @@ Dans ce cas d'usage, les objets métiers suivants sont enrichis ou créés :
     </p>
 </blockquote>
  
-##### Cas d'usage SERAFIN - Droits sociaux et de santé, Projet de vie, Présence Absence
+#### Cas d'usage SERAFIN - Droits sociaux et de santé, Projet de vie, Présence Absence
 
 Dans ce cas d'usage, les objets métiers suivants sont enrichis ou créés :
   * La demande d'orientation adressée par la CDAPH 
