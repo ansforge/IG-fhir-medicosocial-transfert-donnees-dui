@@ -226,6 +226,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#représentation-globale-du-dui" id="markdown-toc-représentation-globale-du-dui">Représentation globale du DUI</a></li>
   <li><a href="#données-administratives" id="markdown-toc-données-administratives">Données administratives</a></li>
   <li><a href="#partie-accompagnement" id="markdown-toc-partie-accompagnement">Partie Accompagnement</a></li>
+  <li><a href="#partie-coordination-des-acteurs" id="markdown-toc-partie-coordination-des-acteurs">Partie Coordination des acteurs</a></li>
+  <li><a href="#classes-du-mos-profilées-pour-ce-volet" id="markdown-toc-classes-du-mos-profilées-pour-ce-volet">Classes du MOS profilées pour ce volet</a></li>
+  <li><a href="#classes-génériques" id="markdown-toc-classes-génériques">Classes génériques</a></li>
 </ul>
 
 </div>
@@ -1653,11 +1656,11 @@ Le détail de l’évaluation de ce champ peut être transmis à travers un deux
     <td>Modalité de communication ou de transmission du projet personnalisé à l'usager et/ou à son entourage.</td>
   </tr>
   <tr>
-    <td><a name="l5282">​</a>accordUsagerProjetPersonnalise : [0..*] <a href="#classe-accord">Accord</a></td>
+    <td>accordUsagerProjetPersonnalise : [0..*] <a href="#classe-accord">Accord</a></td>
     <td>Accord de l'usager et/ou de son entourage.</td>
   </tr>
    <tr>
-    <td><a name="l5293">​</a>accordStructureProjetPersonnalise : [1..*] <a href="#classe-accord">Accord</a></td>
+    <td>accordStructureProjetPersonnalise : [1..*] <a href="#classe-accord">Accord</a></td>
     <td>Accord de la structure.</td>
   </tr>
   <tr>
@@ -1754,7 +1757,7 @@ Le détail de l’évaluation de ce champ peut être transmis à travers un deux
     <td>Stratégie mise en œuvre de l'objectif.</td>
   </tr>
   <tr>
-    <td><a name="l5516">​</a>referentObjectif : [0..1] <a href="#classe-professionnel">Professionnel</a></td>
+    <td>referentObjectif : [0..1] <a href="#classe-professionnel">Professionnel</a></td>
     <td>Référent de l'objectif.</td>
   </tr>
 </table>
@@ -1796,7 +1799,7 @@ Le détail de l’évaluation de ce champ peut être transmis à travers un deux
     <td>Résultat attendu de l'action.</td>
   </tr>
   <tr>
-    <td><a name="l5613">​</a>referentAction : [0..1] <a href="#classe-professionnel">Professionnel</a></td>
+    <td>referentAction : [0..1] <a href="#classe-professionnel">Professionnel</a></td>
     <td>Référent de l'action.</td>
   </tr>
     <tr>
@@ -1969,7 +1972,7 @@ Le détail de l’évaluation de ce champ peut être transmis à travers un deux
     <td>Corps de la préparation.</td>
  </tr>
  <tr>
-    <td><a name="l6009">​</a>auteur : [1..1] (<a href="#classe-professionnel">Professionnel</a>, <a href="#classe-usager">Usager</a>, <a href="#classe-contactpersonnephysique">Contact personne physique</a>)</td>
+    <td>auteur : [1..1] (<a href="#classe-professionnel">Professionnel</a>, <a href="#classe-usager">Usager</a>, <a href="#classe-contactpersonnephysique">Contact personne physique</a>)</td>
     <td>Auteur de la préparation de bilan. Cet auteur peut référencer un professionnel, l'usager ou une personne de son entourage.</td>
  </tr>
 </table>
@@ -1989,8 +1992,8 @@ Le détail de l’évaluation de ce champ peut être transmis à travers un deux
   </tr>
   <tr>
     <td>idProjetVie : [1..1] Identifiant</td>
-    <td>Identifiant technique unique du projet de vie obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de trois caractères "PDV" et de l'identifiant local du projet de vie dans le DUI (idLocalProjetVie) :<br/> idProjetVie = 3+FINESS/identifiantLocalUsagerESSMS-PDV-idLocalProjetVie
- &lt;/tr&gt;
+    <td>Identifiant technique unique du projet de vie obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de trois caractères "PDV" et de l'identifiant local du projet de vie dans le DUI (idLocalProjetVie) :<br/> idProjetVie = 3+FINESS/identifiantLocalUsagerESSMS-PDV-idLocalProjetVie</td>
+ </tr>
  <tr>
     <td>titreProjetVie : [1..1] Texte</td>
     <td>Titre du projet de vie.</td>
@@ -2007,19 +2010,19 @@ Le détail de l’évaluation de ce champ peut être transmis à travers un deux
     <td>aspirationSouhait : [0..*] Texte</td>
     <td>Ambition, désir de l'usager pouvant porter sur tous les domaines de sa vie.</td>
  </tr>
-&lt;/table&gt;
+</table>
 
-##### Classe StatutProjetVie
+<h5 id="classe-statutprojetvie">Classe StatutProjetVie</h5>
 
-** Classe spécialisée, hérite de la classe Statut
+<p>** Classe spécialisée, hérite de la classe Statut</p>
 
-Cette classe regroupe les items pouvant caractériser le Statut du projet de vie.
+<p>Cette classe regroupe les items pouvant caractériser le Statut du projet de vie.</p>
 
-##### Classe PeriodeScolaire
+<h5 id="classe-periodescolaire">Classe PeriodeScolaire</h5>
 
-La période scolaire représente un temps de scolarisation pour l'usager ainsi que les caractéristiques de cette période. L'ensemble des périodes scolaires constitue le parcours scolaire de la personne.
+<p>La période scolaire représente un temps de scolarisation pour l'usager ainsi que les caractéristiques de cette période. L'ensemble des périodes scolaires constitue le parcours scolaire de la personne.</p>
 
-La classe EntiteGeographique est issue du MOS et est profilée pour ce volet.
+<p>La classe EntiteGeographique est issue du MOS et est profilée pour ce volet.</p>
 
 <table style="width:100%">
   <tr>
@@ -2055,7 +2058,7 @@ La classe EntiteGeographique est issue du MOS et est profilée pour ce volet.
     Jeu(x) de valeur(s) associé(s) : en cours de création NOS</td>
  </tr>
  <tr>
-    <td><a name="l6276">​</a>referentScolaire : [0..*] <a href="#PersonnePhysique">PersonnePhysique</a></td>
+    <td><a name="l6309">​</a>referentScolaire : [0..*] <a href="#PersonnePhysique">PersonnePhysique</a></td>
     <td>Référent scolaire de l'usager pour cette année de scolarité.</td>
  </tr>
  <tr>
@@ -2063,7 +2066,7 @@ La classe EntiteGeographique est issue du MOS et est profilée pour ce volet.
     <td>Télécommunication du référent scolaire.</td>
  </tr>
  <tr>
-    <td><a name="l6298">​</a>ecole : [0..1] <a href="#classe-entité-géographique">EntiteGeographique</a></td>
+    <td>ecole : [0..1] <a href="#classe-entité-géographique">EntiteGeographique</a></td>
     <td>Structure dans laquelle la période scolaire se déroule.</td>
  </tr>
  <tr>
@@ -2081,17 +2084,17 @@ La classe EntiteGeographique est issue du MOS et est profilée pour ce volet.
  </tr>
 </table>
 
-### Partie Coordination des acteurs
+<h3 id="partie-coordination-des-acteurs">Partie Coordination des acteurs</h3>
 
-#### Evènement de l'agenda
+<h4 id="evènement-de-lagenda">Evènement de l'agenda</h4>
 
 <div style="text-align:center;"><svg xmlns="http://www.w3.org/2000/svg" contentStyleType="text/css" viewBox="0 0 608 1141" zoomAndPan="magnify" data-diagram-type="CLASS" preserveAspectRatio="none" width="608px" xmlns:xlink="http://www.w3.org/1999/xlink" style="width:608px;height:1141px;background:#FFFFFF;" version="1.1" height="1141px"><defs></defs><g>  <!-- class Usager --><g data-entity="Usager" id="entity_Usager" data-uid="ent0002" class="entity" data-source-line="4"><rect rx="2.5" ry="2.5" width="81.376" x="7" y="584.5" style="stroke:#181818;stroke-width:0.5;" fill="#FFB6C1" height="40"></rect><ellipse cx="22" cy="600.5" rx="11" ry="11" style="stroke:#181818;stroke-width:1;" fill="#ADD1B2"></ellipse><path d="M24.9688,606.1406 Q24.3906,606.4375 23.75,606.5781 Q23.1094,606.7344 22.4063,606.7344 Q19.9063,606.7344 18.5781,605.0938 Q17.2656,603.4375 17.2656,600.3125 Q17.2656,597.1875 18.5781,595.5313 Q19.9063,593.875 22.4063,593.875 Q23.1094,593.875 23.75,594.0313 Q24.4063,594.1875 24.9688,594.4844 L24.9688,597.2031 Q24.3438,596.625 23.75,596.3594 Q23.1563,596.0781 22.5313,596.0781 Q21.1875,596.0781 20.5,597.1563 Q19.8125,598.2188 19.8125,600.3125 Q19.8125,602.4063 20.5,603.4844 Q21.1875,604.5469 22.5313,604.5469 Q23.1563,604.5469 23.75,604.2813 Q24.3438,604 24.9688,603.4219 L24.9688,606.1406 Z " fill="#000000"></path><text lengthAdjust="spacing" x="36" font-size="14" textLength="49.376" y="605.3467" font-family="sans-serif" fill="#000000">Usager</text><line y1="616.5" x1="8" y2="616.5" style="stroke:#181818;stroke-width:0.5;" x2="87.376"></line></g>  <!-- class TransportProfessionnel --><g data-entity="TransportProfessionnel" id="entity_TransportProfessionnel" data-uid="ent0003" class="entity" data-source-line="6"><rect rx="2.5" ry="2.5" width="193.3486" x="98" y="327.5" style="stroke:#181818;stroke-width:0.5;" fill="#D3D3D3" height="40"></rect><ellipse cx="113" cy="343.5" rx="11" ry="11" style="stroke:#181818;stroke-width:1;" fill="#ADD1B2"></ellipse><path d="M115.9688,349.1406 Q115.3906,349.4375 114.75,349.5781 Q114.1094,349.7344 113.4063,349.7344 Q110.9063,349.7344 109.5781,348.0938 Q108.2656,346.4375 108.2656,343.3125 Q108.2656,340.1875 109.5781,338.5313 Q110.9063,336.875 113.4063,336.875 Q114.1094,336.875 114.75,337.0313 Q115.4063,337.1875 115.9688,337.4844 L115.9688,340.2031 Q115.3438,339.625 114.75,339.3594 Q114.1563,339.0781 113.5313,339.0781 Q112.1875,339.0781 111.5,340.1563 Q110.8125,341.2188 110.8125,343.3125 Q110.8125,345.4063 111.5,346.4844 Q112.1875,347.5469 113.5313,347.5469 Q114.1563,347.5469 114.75,347.2813 Q115.3438,347 115.9688,346.4219 L115.9688,349.1406 Z " fill="#000000"></path><text lengthAdjust="spacing" x="127" font-size="14" textLength="161.3486" y="348.3467" font-family="sans-serif" fill="#000000">TransportProfessionnel</text><line y1="359.5" x1="99" y2="359.5" style="stroke:#181818;stroke-width:0.5;" x2="290.3486"></line></g>  <!-- class Evaluation --><g data-entity="Evaluation" id="entity_Evaluation" data-uid="ent0004" class="entity" data-source-line="8"><rect rx="2.5" ry="2.5" width="105.8691" x="154.5" y="1094" style="stroke:#181818;stroke-width:0.5;" fill="#FFFFE0" height="40"></rect><ellipse cx="169.5" cy="1110" rx="11" ry="11" style="stroke:#181818;stroke-width:1;" fill="#ADD1B2"></ellipse><path d="M172.4688,1115.6406 Q171.8906,1115.9375 171.25,1116.0781 Q170.6094,1116.2344 169.9063,1116.2344 Q167.4063,1116.2344 166.0781,1114.5938 Q164.7656,1112.9375 164.7656,1109.8125 Q164.7656,1106.6875 166.0781,1105.0313 Q167.4063,1103.375 169.9063,1103.375 Q170.6094,1103.375 171.25,1103.5313 Q171.9063,1103.6875 172.4688,1103.9844 L172.4688,1106.7031 Q171.8438,1106.125 171.25,1105.8594 Q170.6563,1105.5781 170.0313,1105.5781 Q168.6875,1105.5781 168,1106.6563 Q167.3125,1107.7188 167.3125,1109.8125 Q167.3125,1111.9063 168,1112.9844 Q168.6875,1114.0469 170.0313,1114.0469 Q170.6563,1114.0469 171.25,1113.7813 Q171.8438,1113.5 172.4688,1112.9219 L172.4688,1115.6406 Z " fill="#000000"></path><text lengthAdjust="spacing" x="183.5" font-size="14" textLength="73.8691" y="1114.8467" font-family="sans-serif" fill="#000000">Evaluation</text><line y1="1126" x1="155.5" y2="1126" style="stroke:#181818;stroke-width:0.5;" x2="259.3691"></line></g>  <!-- class Professionnel --><g data-entity="Professionnel" id="entity_Professionnel" data-uid="ent0005" class="entity" data-source-line="10"><rect rx="2.5" ry="2.5" width="125.5977" x="121.5" y="452" style="stroke:#181818;stroke-width:0.5;" fill="#D3D3D3" height="40"></rect><ellipse cx="136.5" cy="468" rx="11" ry="11" style="stroke:#181818;stroke-width:1;" fill="#ADD1B2"></ellipse><path d="M139.4688,473.6406 Q138.8906,473.9375 138.25,474.0781 Q137.6094,474.2344 136.9063,474.2344 Q134.4063,474.2344 133.0781,472.5938 Q131.7656,470.9375 131.7656,467.8125 Q131.7656,464.6875 133.0781,463.0313 Q134.4063,461.375 136.9063,461.375 Q137.6094,461.375 138.25,461.5313 Q138.9063,461.6875 139.4688,461.9844 L139.4688,464.7031 Q138.8438,464.125 138.25,463.8594 Q137.6563,463.5781 137.0313,463.5781 Q135.6875,463.5781 135,464.6563 Q134.3125,465.7188 134.3125,467.8125 Q134.3125,469.9063 135,470.9844 Q135.6875,472.0469 137.0313,472.0469 Q137.6563,472.0469 138.25,471.7813 Q138.8438,471.5 139.4688,470.9219 L139.4688,473.6406 Z " fill="#000000"></path><text lengthAdjust="spacing" x="150.5" font-size="14" textLength="93.5977" y="472.8467" font-family="sans-serif" fill="#000000">Professionnel</text><line y1="484" x1="122.5" y2="484" style="stroke:#181818;stroke-width:0.5;" x2="246.0977"></line></g>  <!-- class EntiteJuridique --><g data-entity="EntiteJuridique" id="entity_EntiteJuridique" data-uid="ent0006" class="entity" data-source-line="12"><rect rx="2.5" ry="2.5" width="134.9971" x="283" y="452" style="stroke:#181818;stroke-width:0.5;" fill="#D3D3D3" height="40"></rect><ellipse cx="298" cy="468" rx="11" ry="11" style="stroke:#181818;stroke-width:1;" fill="#ADD1B2"></ellipse><path d="M300.9688,473.6406 Q300.3906,473.9375 299.75,474.0781 Q299.1094,474.2344 298.4063,474.2344 Q295.9063,474.2344 294.5781,472.5938 Q293.2656,470.9375 293.2656,467.8125 Q293.2656,464.6875 294.5781,463.0313 Q295.9063,461.375 298.4063,461.375 Q299.1094,461.375 299.75,461.5313 Q300.4063,461.6875 300.9688,461.9844 L300.9688,464.7031 Q300.3438,464.125 299.75,463.8594 Q299.1563,463.5781 298.5313,463.5781 Q297.1875,463.5781 296.5,464.6563 Q295.8125,465.7188 295.8125,467.8125 Q295.8125,469.9063 296.5,470.9844 Q297.1875,472.0469 298.5313,472.0469 Q299.1563,472.0469 299.75,471.7813 Q300.3438,471.5 300.9688,470.9219 L300.9688,473.6406 Z " fill="#000000"></path><text lengthAdjust="spacing" x="312" font-size="14" textLength="102.9971" y="472.8467" font-family="sans-serif" fill="#000000">EntiteJuridique</text><line y1="484" x1="284" y2="484" style="stroke:#181818;stroke-width:0.5;" x2="416.9971"></line></g>  <!-- class Statut --><g data-entity="Statut" id="entity_Statut" data-uid="ent0007" class="entity" data-source-line="14"><rect rx="2.5" ry="2.5" width="74.8066" x="296" y="1094" style="stroke:#181818;stroke-width:0.5;" fill="#FFFFE0" height="40"></rect><ellipse cx="311" cy="1110" rx="11" ry="11" style="stroke:#181818;stroke-width:1;" fill="#ADD1B2"></ellipse><path d="M313.9688,1115.6406 Q313.3906,1115.9375 312.75,1116.0781 Q312.1094,1116.2344 311.4063,1116.2344 Q308.9063,1116.2344 307.5781,1114.5938 Q306.2656,1112.9375 306.2656,1109.8125 Q306.2656,1106.6875 307.5781,1105.0313 Q308.9063,1103.375 311.4063,1103.375 Q312.1094,1103.375 312.75,1103.5313 Q313.4063,1103.6875 313.9688,1103.9844 L313.9688,1106.7031 Q313.3438,1106.125 312.75,1105.8594 Q312.1563,1105.5781 311.5313,1105.5781 Q310.1875,1105.5781 309.5,1106.6563 Q308.8125,1107.7188 308.8125,1109.8125 Q308.8125,1111.9063 309.5,1112.9844 Q310.1875,1114.0469 311.5313,1114.0469 Q312.1563,1114.0469 312.75,1113.7813 Q313.3438,1113.5 313.9688,1112.9219 L313.9688,1115.6406 Z " fill="#000000"></path><text lengthAdjust="spacing" x="325" font-size="14" textLength="42.8066" y="1114.8467" font-family="sans-serif" fill="#000000">Statut</text><line y1="1126" x1="297" y2="1126" style="stroke:#181818;stroke-width:0.5;" x2="369.8066"></line></g>  <!-- class Transport --><g data-entity="Transport" id="entity_Transport" data-uid="ent0008" class="entity" data-source-line="16"><rect rx="2.5" ry="2.5" width="285.5127" x="184.5" y="7" style="stroke:#181818;stroke-width:0.5;" fill="#D3D3D3" height="235.5625"></rect><ellipse cx="289.1309" cy="23" rx="11" ry="11" style="stroke:#181818;stroke-width:1;" fill="#ADD1B2"></ellipse><path d="M292.0996,28.6406 Q291.5215,28.9375 290.8809,29.0781 Q290.2402,29.2344 289.5371,29.2344 Q287.0371,29.2344 285.709,27.5938 Q284.3965,25.9375 284.3965,22.8125 Q284.3965,19.6875 285.709,18.0313 Q287.0371,16.375 289.5371,16.375 Q290.2402,16.375 290.8809,16.5313 Q291.5371,16.6875 292.0996,16.9844 L292.0996,19.7031 Q291.4746,19.125 290.8809,18.8594 Q290.2871,18.5781 289.6621,18.5781 Q288.3184,18.5781 287.6309,19.6563 Q286.9434,20.7188 286.9434,22.8125 Q286.9434,24.9063 287.6309,25.9844 Q288.3184,27.0469 289.6621,27.0469 Q290.2871,27.0469 290.8809,26.7813 Q291.4746,26.5 292.0996,25.9219 L292.0996,28.6406 Z " fill="#000000"></path><text lengthAdjust="spacing" x="309.6309" font-size="14" textLength="67.751" y="27.8467" font-family="sans-serif" fill="#000000">Transport</text><line y1="39" x1="185.5" y2="39" style="stroke:#181818;stroke-width:0.5;" x2="469.0127"></line><text lengthAdjust="spacing" x="190.5" font-size="14" textLength="181.002" y="55.9951" font-family="sans-serif" fill="#000000">idTrajet : Identifiant [1..1]</text><text lengthAdjust="spacing" x="190.5" font-size="14" textLength="190.5723" y="72.292" font-family="sans-serif" fill="#000000">typeTransport : Code [0..1]</text><text lengthAdjust="spacing" x="190.5" font-size="14" textLength="209.8564" y="88.5889" font-family="sans-serif" fill="#000000">typeMotorisation : Code [0..1]</text><text lengthAdjust="spacing" x="190.5" font-size="14" textLength="246.6338" y="104.8857" font-family="sans-serif" fill="#000000">transporteur : EntiteJuridique [0..1]</text><text lengthAdjust="spacing" x="190.5" font-size="14" textLength="214.8809" y="121.1826" font-family="sans-serif" fill="#000000">adresseDepart : Adresse [0..1]</text><text lengthAdjust="spacing" x="190.5" font-size="14" textLength="247.1123" y="137.4795" font-family="sans-serif" fill="#000000">adresseDestination : Adresse [0..1]</text><text lengthAdjust="spacing" x="190.5" font-size="14" textLength="248.2744" y="153.7764" font-family="sans-serif" fill="#000000">budgetPrevisionnel : Montant [0..1]</text><text lengthAdjust="spacing" x="190.5" font-size="14" textLength="194.1338" y="170.0732" font-family="sans-serif" fill="#000000">budgetReel : Montant [0..1]</text><text lengthAdjust="spacing" x="190.5" font-size="14" textLength="166.2568" y="186.3701" font-family="sans-serif" fill="#000000">distance : Mesure [0..1]</text><text lengthAdjust="spacing" x="190.5" font-size="14" textLength="218.2988" y="202.667" font-family="sans-serif" fill="#000000">dureeTheorique : Mesure [0..1]</text><text lengthAdjust="spacing" x="190.5" font-size="14" textLength="273.5127" y="218.9639" font-family="sans-serif" fill="#000000">dateDebutTransport : DateHeure [1..1]</text><text lengthAdjust="spacing" x="190.5" font-size="14" textLength="251.6855" y="235.2607" font-family="sans-serif" fill="#000000">dateFinTransport : DateHeure [1..1]</text></g>  <!-- class TransportUsager --><g data-entity="TransportUsager" id="entity_TransportUsager" data-uid="ent0009" class="entity" data-source-line="31"><rect rx="2.5" ry="2.5" width="270.7539" x="331" y="303" style="stroke:#181818;stroke-width:0.5;" fill="#D3D3D3" height="88.8906"></rect><ellipse cx="403.5635" cy="319" rx="11" ry="11" style="stroke:#181818;stroke-width:1;" fill="#ADD1B2"></ellipse><path d="M406.5322,324.6406 Q405.9541,324.9375 405.3135,325.0781 Q404.6729,325.2344 403.9697,325.2344 Q401.4697,325.2344 400.1416,323.5938 Q398.8291,321.9375 398.8291,318.8125 Q398.8291,315.6875 400.1416,314.0313 Q401.4697,312.375 403.9697,312.375 Q404.6729,312.375 405.3135,312.5313 Q405.9697,312.6875 406.5322,312.9844 L406.5322,315.7031 Q405.9072,315.125 405.3135,314.8594 Q404.7197,314.5781 404.0947,314.5781 Q402.751,314.5781 402.0635,315.6563 Q401.376,316.7188 401.376,318.8125 Q401.376,320.9063 402.0635,321.9844 Q402.751,323.0469 404.0947,323.0469 Q404.7197,323.0469 405.3135,322.7813 Q405.9072,322.5 406.5322,321.9219 L406.5322,324.6406 Z " fill="#000000"></path><text lengthAdjust="spacing" x="424.0635" font-size="14" textLength="117.127" y="323.8467" font-family="sans-serif" fill="#000000">TransportUsager</text><line y1="335" x1="332" y2="335" style="stroke:#181818;stroke-width:0.5;" x2="600.7539"></line><text lengthAdjust="spacing" x="337" font-size="14" textLength="253.1211" y="351.9951" font-family="sans-serif" fill="#000000">accompagnement : Indicateur [0..1]</text><text lengthAdjust="spacing" x="337" font-size="14" textLength="258.7539" y="368.292" font-family="sans-serif" fill="#000000">asepsieRigoureuse : Indicateur [0..1]</text><text lengthAdjust="spacing" x="337" font-size="14" textLength="205.4814" y="384.5889" font-family="sans-serif" fill="#000000">natureTransport : Code [0..1]</text></g>  <!-- class Evenement --><g data-entity="Evenement" id="entity_Evenement" data-uid="ent0010" class="entity" data-source-line="37"><rect rx="2.5" ry="2.5" width="340.2959" x="100.5" y="717" style="stroke:#181818;stroke-width:0.5;" fill="#D3D3D3" height="317.0469"></rect><ellipse cx="226.4761" cy="733" rx="11" ry="11" style="stroke:#181818;stroke-width:1;" fill="#ADD1B2"></ellipse><path d="M229.4448,738.6406 Q228.8667,738.9375 228.2261,739.0781 Q227.5854,739.2344 226.8823,739.2344 Q224.3823,739.2344 223.0542,737.5938 Q221.7417,735.9375 221.7417,732.8125 Q221.7417,729.6875 223.0542,728.0313 Q224.3823,726.375 226.8823,726.375 Q227.5854,726.375 228.2261,726.5313 Q228.8823,726.6875 229.4448,726.9844 L229.4448,729.7031 Q228.8198,729.125 228.2261,728.8594 Q227.6323,728.5781 227.0073,728.5781 Q225.6636,728.5781 224.9761,729.6563 Q224.2886,730.7188 224.2886,732.8125 Q224.2886,734.9063 224.9761,735.9844 Q225.6636,737.0469 227.0073,737.0469 Q227.6323,737.0469 228.2261,736.7813 Q228.8198,736.5 229.4448,735.9219 L229.4448,738.6406 Z " fill="#000000"></path><text lengthAdjust="spacing" x="246.9761" font-size="14" textLength="79.8438" y="737.8467" font-family="sans-serif" fill="#000000">Evenement</text><line y1="749" x1="101.5" y2="749" style="stroke:#181818;stroke-width:0.5;" x2="439.7959"></line><text lengthAdjust="spacing" x="106.5" font-size="14" textLength="219.9668" y="765.9951" font-family="sans-serif" fill="#000000">idEvenement : Identifiant [1..1]</text><text lengthAdjust="spacing" x="106.5" font-size="14" textLength="200.7578" y="782.292" font-family="sans-serif" fill="#000000">typeEvenement : Code [0..*]</text><text lengthAdjust="spacing" x="106.5" font-size="14" textLength="216.7744" y="798.5889" font-family="sans-serif" fill="#000000">libelleEvenement : Texte [0..1]</text><text lengthAdjust="spacing" x="106.5" font-size="14" textLength="266.5469" y="814.8857" font-family="sans-serif" fill="#000000">commentaireEvenement : Texte [0..*]</text><text lengthAdjust="spacing" x="106.5" font-size="14" textLength="272.9658" y="831.1826" font-family="sans-serif" fill="#000000">compteRenduEvenement : Texte [0..1]</text><text lengthAdjust="spacing" x="106.5" font-size="14" textLength="298.0059" y="847.4795" font-family="sans-serif" fill="#000000">pieceJointeEvenement : ObjetBinaire [0..*]</text><text lengthAdjust="spacing" x="106.5" font-size="14" textLength="189.9912" y="863.7764" font-family="sans-serif" fill="#000000">lieuEvenement : Lieu [0..1]</text><text lengthAdjust="spacing" x="106.5" font-size="14" textLength="290.7461" y="880.0732" font-family="sans-serif" fill="#000000">structureEnCharge : EntiteJuridique [0..1]</text><text lengthAdjust="spacing" x="106.5" font-size="14" textLength="285.6055" y="896.3701" font-family="sans-serif" fill="#000000">dateDebutEvenement : DateHeure [1..1]</text><text lengthAdjust="spacing" x="106.5" font-size="14" textLength="263.7783" y="912.667" font-family="sans-serif" fill="#000000">dateFinEvenement : DateHeure [1..1]</text><text lengthAdjust="spacing" x="106.5" font-size="14" textLength="309.2373" y="928.9639" font-family="sans-serif" fill="#000000">evenementHorsPrestation : Indicateur [0..1]</text><text lengthAdjust="spacing" x="106.5" font-size="14" textLength="211.6133" y="945.2607" font-family="sans-serif" fill="#000000">motifEvenement : Texte [0..1]</text><text lengthAdjust="spacing" x="106.5" font-size="14" textLength="227.5752" y="961.5576" font-family="sans-serif" fill="#000000">usagerPresent : Indicateur [0..1]</text><text lengthAdjust="spacing" x="106.5" font-size="14" textLength="165.6211" y="977.8545" font-family="sans-serif" fill="#000000">repas : Indicateur [0..1]</text><text lengthAdjust="spacing" x="106.5" font-size="14" textLength="245.2734" y="994.1514" font-family="sans-serif" fill="#000000">typeRessourceUtilisee : Code [0..*]</text><text lengthAdjust="spacing" x="106.5" font-size="14" textLength="287.6836" y="1010.4482" font-family="sans-serif" fill="#000000">detailTypeRessourceUtilisee : Code [0..*]</text><text lengthAdjust="spacing" x="106.5" font-size="14" textLength="328.2959" y="1026.7451" font-family="sans-serif" fill="#000000">dateModificationEvenement : DateHeure [0..1]</text></g>  <!-- class Participant --><g data-entity="Participant" id="entity_Participant" data-uid="ent0011" class="entity" data-source-line="57"><rect rx="2.5" ry="2.5" width="295.1035" x="123" y="552" style="stroke:#181818;stroke-width:0.5;" fill="#D3D3D3" height="105.1875"></rect><ellipse cx="228.5161" cy="568" rx="11" ry="11" style="stroke:#181818;stroke-width:1;" fill="#ADD1B2"></ellipse><path d="M231.4849,573.6406 Q230.9067,573.9375 230.2661,574.0781 Q229.6255,574.2344 228.9224,574.2344 Q226.4224,574.2344 225.0942,572.5938 Q223.7817,570.9375 223.7817,567.8125 Q223.7817,564.6875 225.0942,563.0313 Q226.4224,561.375 228.9224,561.375 Q229.6255,561.375 230.2661,561.5313 Q230.9224,561.6875 231.4849,561.9844 L231.4849,564.7031 Q230.8599,564.125 230.2661,563.8594 Q229.6724,563.5781 229.0474,563.5781 Q227.7036,563.5781 227.0161,564.6563 Q226.3286,565.7188 226.3286,567.8125 Q226.3286,569.9063 227.0161,570.9844 Q227.7036,572.0469 229.0474,572.0469 Q229.6724,572.0469 230.2661,571.7813 Q230.8599,571.5 231.4849,570.9219 L231.4849,573.6406 Z " fill="#000000"></path><text lengthAdjust="spacing" x="249.0161" font-size="14" textLength="75.5713" y="572.8467" font-family="sans-serif" fill="#000000">Participant</text><line y1="584" x1="124" y2="584" style="stroke:#181818;stroke-width:0.5;" x2="417.1035"></line><text lengthAdjust="spacing" x="129" font-size="14" textLength="266.4102" y="600.9951" font-family="sans-serif" fill="#000000">presenceParticipant : Indicateur [0..1]</text><text lengthAdjust="spacing" x="129" font-size="14" textLength="206.917" y="617.292" font-family="sans-serif" fill="#000000">roleParticipantEJ : Code [0..1]</text><text lengthAdjust="spacing" x="129" font-size="14" textLength="283.1035" y="633.5889" font-family="sans-serif" fill="#000000">modeExerciceParticipantPP : Code [0..1]</text><text lengthAdjust="spacing" x="129" font-size="14" textLength="252.8545" y="649.8857" font-family="sans-serif" fill="#000000">participantInterne : Indicateur [0..1]</text></g>  <!-- link Usager to Evenement --><g data-entity-2="Evenement" data-entity-1="Usager" id="link_Usager_Evenement" data-uid="lnk12" class="link" data-source-line="64"><path codeLine="64" d="M63.54,624.85 C80.56,645.39 109.2,679.93 139.83,716.88" style="stroke:#181818;stroke-width:1;" id="Usager-Evenement" fill="none"></path><text lengthAdjust="spacing" x="58.7616" font-size="13" textLength="8.271" y="644.4194" font-family="sans-serif" fill="#000000">1</text><text lengthAdjust="spacing" x="109.9373" font-size="13" textLength="23.0356" y="705.9025" font-family="sans-serif" fill="#000000">0..*</text></g>  <!-- link Participant to Evenement --><g data-entity-2="Evenement" data-entity-1="Participant" id="link_Participant_Evenement" data-uid="lnk13" class="link" data-source-line="65"><path codeLine="65" d="M270.5,657.05 C270.5,674.67 270.5,695.4 270.5,716.95" style="stroke:#181818;stroke-width:1;" id="Participant-Evenement" fill="none"></path><text lengthAdjust="spacing" x="245.9501" font-size="13" textLength="23.0356" y="677.1824" font-family="sans-serif" fill="#000000">0..*</text><text lengthAdjust="spacing" x="246.9367" font-size="13" textLength="23.0356" y="705.9759" font-family="sans-serif" fill="#000000">0..*</text></g>  <!-- link Professionnel to Participant --><g data-entity-2="Participant" data-entity-1="Professionnel" id="link_Professionnel_Participant" data-uid="lnk14" class="link" data-source-line="66"><path codeLine="66" d="M197.19,492.26 C207.52,507.92 222.59,530.79 236.38,551.73" style="stroke:#181818;stroke-width:1;" id="Professionnel-Participant" fill="none"></path><text lengthAdjust="spacing" x="173.5541" font-size="13" textLength="24.8066" y="512.1531" font-family="sans-serif" fill="#000000">0..1</text><text lengthAdjust="spacing" x="207.5306" font-size="13" textLength="23.0356" y="541.0713" font-family="sans-serif" fill="#000000">0..*</text></g>  <!-- link EntiteJuridique to Participant --><g data-entity-2="Participant" data-entity-1="EntiteJuridique" id="link_EntiteJuridique_Participant" data-uid="lnk15" class="link" data-source-line="67"><path codeLine="67" d="M338.7,492.26 C329.09,507.92 315.07,530.79 302.24,551.73" style="stroke:#181818;stroke-width:1;" id="EntiteJuridique-Participant" fill="none"></path><text lengthAdjust="spacing" x="308.1201" font-size="13" textLength="24.8066" y="512.1531" font-family="sans-serif" fill="#000000">0..1</text><text lengthAdjust="spacing" x="281.8289" font-size="13" textLength="23.0356" y="541.0713" font-family="sans-serif" fill="#000000">0..*</text></g>  <!-- reverse link Transport to TransportProfessionnel --><g data-entity-2="TransportProfessionnel" data-entity-1="Transport" id="link_Transport_TransportProfessionnel" data-uid="lnk16" class="link" data-source-line="68"><path codeLine="68" d="M247.6138,258.4437 C227.8438,291.2237 217.85,307.78 206.08,327.31" style="stroke:#181818;stroke-width:1;" id="Transport-backto-TransportProfessionnel" fill="none"></path><polygon style="stroke:#181818;stroke-width:1;" fill="none" points="256.91,243.03,242.4759,255.345,252.7517,261.5424,256.91,243.03"></polygon></g>  <!-- reverse link Transport to TransportUsager --><g data-entity-2="TransportUsager" data-entity-1="Transport" id="link_Transport_TransportUsager" data-uid="lnk17" class="link" data-source-line="69"><path codeLine="69" d="M410.8676,258.2578 C424.3176,279.5978 427.96,285.36 438.96,302.81" style="stroke:#181818;stroke-width:1;" id="Transport-backto-TransportUsager" fill="none"></path><polygon style="stroke:#181818;stroke-width:1;" fill="none" points="401.27,243.03,405.7917,261.457,415.9436,255.0586,401.27,243.03"></polygon></g>  <!-- link TransportUsager to Evenement --><g data-entity-2="Evenement" data-entity-1="TransportUsager" id="link_TransportUsager_Evenement" data-uid="lnk18" class="link" data-source-line="70"><path codeLine="70" d="M469.38,392.13 C471.85,453.51 470.56,567.83 435.5,657 C427.48,677.4 416.97,697.53 405.14,716.82" style="stroke:#181818;stroke-width:1;" id="TransportUsager-Evenement" fill="none"></path><text lengthAdjust="spacing" x="445.1346" font-size="13" textLength="23.0356" y="411.8713" font-family="sans-serif" fill="#000000">0..*</text><text lengthAdjust="spacing" x="403.4673" font-size="13" textLength="8.271" y="705.8396" font-family="sans-serif" fill="#000000">1</text></g>  <!-- link TransportProfessionnel to Professionnel --><g data-entity-2="Professionnel" data-entity-1="TransportProfessionnel" id="link_TransportProfessionnel_Professionnel" data-uid="lnk19" class="link" data-source-line="71"><path codeLine="71" d="M192.94,367.64 C191.06,390.65 187.93,429.04 186.05,451.99" style="stroke:#181818;stroke-width:1;" id="TransportProfessionnel-Professionnel" fill="none"></path><text lengthAdjust="spacing" x="166.2229" font-size="13" textLength="23.0356" y="387.4993" font-family="sans-serif" fill="#000000">0..*</text><text lengthAdjust="spacing" x="177.4292" font-size="13" textLength="8.271" y="440.9953" font-family="sans-serif" fill="#000000">1</text></g>  <!-- link Evenement to Evaluation --><g data-entity-2="Evaluation" data-entity-1="Evenement" id="link_Evenement_Evaluation" data-uid="lnk20" class="link" data-source-line="72"><path codeLine="72" d="M228.48,1034.25 C222.16,1057.97 216.48,1079.3 212.63,1093.76" style="stroke:#181818;stroke-width:1;" id="Evenement-Evaluation" fill="none"></path><text lengthAdjust="spacing" x="201.8758" font-size="13" textLength="24.8066" y="1054.3717" font-family="sans-serif" fill="#000000">0..1</text><text lengthAdjust="spacing" x="186.8296" font-size="13" textLength="24.8066" y="1083.0437" font-family="sans-serif" fill="#000000">0..1</text></g>  <!-- link Evenement to Statut --><g data-entity-2="Statut" data-entity-1="Evenement" id="link_Evenement_Statut" data-uid="lnk21" class="link" data-source-line="73"><path codeLine="73" d="M312.52,1034.25 C318.84,1057.97 324.52,1079.3 328.37,1093.76" style="stroke:#181818;stroke-width:1;" id="Evenement-Statut" fill="none"></path><text lengthAdjust="spacing" x="306.361" font-size="13" textLength="8.271" y="1054.3717" font-family="sans-serif" fill="#000000">1</text><text lengthAdjust="spacing" x="300.725" font-size="13" textLength="23.0356" y="1083.0437" font-family="sans-serif" fill="#000000">0..*</text></g></g></svg></div>
 
-##### Classe Evenement
+<h5 id="classe-evenement">Classe Evenement</h5>
 
-Evènements liés à la prise en charge de l’usager dans une structure ESSMS.
+<p>Evènements liés à la prise en charge de l’usager dans une structure ESSMS.</p>
 
-Les classes EntiteJuridique, Lieu et Professionnel sont issues du MOS et sont profilées pour ce volet.
+<p>Les classes EntiteJuridique, Lieu et Professionnel sont issues du MOS et sont profilées pour ce volet.</p>
 
 <table style="width:100%">
   <tr>
@@ -2192,9 +2195,9 @@ Les classes EntiteJuridique, Lieu et Professionnel sont issues du MOS et sont pr
   </tr>
 </table>
 
-##### Classe Participant
+<h5 id="classe-participant">Classe Participant</h5>
 
-Le Participant est une personne morale ou physique prenant part à l'événement.
+<p>Le Participant est une personne morale ou physique prenant part à l'événement.</p>
 
 <table style="width:100%">
   <tr>
@@ -2226,9 +2229,9 @@ Le Participant est une personne morale ou physique prenant part à l'événement
   </tr>
   </table>
 
-##### Classe Transport
+<h5 id="classe-transport-1">Classe Transport</h5>
 
-Classe générique socle décrivant le transport d’une personne physique (professionnel, usger) lors d’un évènement.
+<p>Classe générique socle décrivant le transport d’une personne physique (professionnel, usger) lors d’un évènement.</p>
 
 <table style="width:100%">
   <tr>
@@ -2290,21 +2293,21 @@ Classe générique socle décrivant le transport d’une personne physique (prof
   </tr>
 </table>
 
-##### Classe TransportProfessionnel
+<h5 id="classe-transportprofessionnel">Classe TransportProfessionnel</h5>
 
-** Classe spécialisée, hérite de la classe Transport
+<p>** Classe spécialisée, hérite de la classe Transport</p>
 
-Cette classe regroupe les items pouvant caractériser le transport du professionnel lors de l'évènement.
+<p>Cette classe regroupe les items pouvant caractériser le transport du professionnel lors de l'évènement.</p>
 
-L'identifiant technique du transport est obtenu dans ce contexte par par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de cinq caractères "TPPro" et du numéro de transport du professionnel dans le DUI (idTransport) :<br/> idTrajet = 3+FINESS/identifiantLocalUsagerESSMS-TPPro-idTransport
+<p>L'identifiant technique du transport est obtenu dans ce contexte par par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de cinq caractères "TPPro" et du numéro de transport du professionnel dans le DUI (idTransport) :<br/> idTrajet = 3+FINESS/identifiantLocalUsagerESSMS-TPPro-idTransport</p>
 
-##### Classe TransportUsager
+<h5 id="classe-transportusager">Classe TransportUsager</h5>
 
-** Classe spécialisée, hérite de la classe Transport
+<p>** Classe spécialisée, hérite de la classe Transport</p>
 
-Cette classe regroupe les items pouvant caractériser le transport de l'usager lors de l'évènement.
+<p>Cette classe regroupe les items pouvant caractériser le transport de l'usager lors de l'évènement.</p>
 
-L'identifiant technique du transport est obtenu dans ce contexte par par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de cinq caractères "TPPat" et du numéro de transport de l'usager dans le DUI (idTransport) :<br/> idTrajet = 3+FINESS/identifiantLocalUsagerESSMS-TPPat-idTransport
+<p>L'identifiant technique du transport est obtenu dans ce contexte par par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de cinq caractères "TPPat" et du numéro de transport de l'usager dans le DUI (idTransport) :<br/> idTrajet = 3+FINESS/identifiantLocalUsagerESSMS-TPPat-idTransport</p>
 
 <table style="width:100%">
   <tr>
@@ -2328,11 +2331,11 @@ L'identifiant technique du transport est obtenu dans ce contexte par par la conc
   </tr>
 </table>
 
-### Classes du MOS profilées pour ce volet
+<h3 id="classes-du-mos-profilées-pour-ce-volet">Classes du MOS profilées pour ce volet</h3>
 
-##### Classe Professionnel
+<h5 id="classe-professionnel">Classe Professionnel</h5>
 
-Données d'identification pérennes d’une personne physique, qui travaille en tant que professionnel (professionnel enregistré dans RPPS), personnel autorisé ou personnel d’établissement, dans les domaines sanitaire, médico-social et social.
+<p>Données d'identification pérennes d’une personne physique, qui travaille en tant que professionnel (professionnel enregistré dans RPPS), personnel autorisé ou personnel d’établissement, dans les domaines sanitaire, médico-social et social.</p>
 
 <table style="width:100%">
   <tr>
@@ -2381,11 +2384,11 @@ Données d'identification pérennes d’une personne physique, qui travaille en 
   </tr>
 </table>
 
-<u>Remarque</u>: Certaines professions du médico-social n'ont pas de correspondance directe dans les référentiels du CI-SIS. L'annexe <a href="annexes_codes_professions_roles_modes_exercices.html">Professions du médico-social</a> donne la correspondance entre la profession du médico-social et le triptyque "profession/rôle/mode d'exercice" référencé dans les jeux de valeurs du CI-SIS.
+<p><u>Remarque</u>: Certaines professions du médico-social n'ont pas de correspondance directe dans les référentiels du CI-SIS. L'annexe <a href="annexes_codes_professions_roles_modes_exercices.html">Professions du médico-social</a> donne la correspondance entre la profession du médico-social et le triptyque "profession/rôle/mode d'exercice" référencé dans les jeux de valeurs du CI-SIS.</p>
 
-##### Classe Entité Juridique
+<h5 id="classe-entité-juridique">Classe Entité Juridique</h5>
 
-Pour ce volet l'Entité Juridique est une personne morale inscrite dans le FINESS.
+<p>Pour ce volet l'Entité Juridique est une personne morale inscrite dans le FINESS.</p>
 
 <table style="width:100%">
   <tr>
@@ -2402,9 +2405,9 @@ Pour ce volet l'Entité Juridique est une personne morale inscrite dans le FINES
   </tr>
 </table>
 
-##### Classe Entité Géographique
+<h5 id="classe-entité-géographique">Classe Entité Géographique</h5>
 
-Pour ce volet l'Entité Géographique est une personne morale.
+<p>Pour ce volet l'Entité Géographique est une personne morale.</p>
 
 <table style="width:100%">
   <tr>
@@ -2430,9 +2433,9 @@ Pour ce volet l'Entité Géographique est une personne morale.
 
 </table>
 
-##### Classe Lieu
+<h5 id="classe-lieu">Classe Lieu</h5>
 
-Portion déterminée de l'espace où se sont déroulés des événements.
+<p>Portion déterminée de l'espace où se sont déroulés des événements.</p>
 
 <table style="width:100%">
   <tr>
@@ -2457,12 +2460,11 @@ Portion déterminée de l'espace où se sont déroulés des événements.
   </tr>
 </table>
 
+<h3 id="classes-génériques">Classes génériques</h3>
 
-### Classes génériques
+<h5 id="classe-statut">Classe Statut</h5>
 
-##### Classe Statut
-
-Cette classe décrit le statut des ressources (Evenement, Evaluation, Projet personnalisé, ...).
+<p>Cette classe décrit le statut des ressources (Evenement, Evaluation, Projet personnalisé, …).</p>
 
 <table style="width:100%">
   <tr>
@@ -2496,9 +2498,9 @@ Cette classe décrit le statut des ressources (Evenement, Evaluation, Projet per
   </tr>
 </table>
 
-##### Classe Accord
+<h5 id="classe-accord">Classe Accord</h5>
 
-Cela correspond au consentement d'une personne physique ou morale.
+<p>Cela correspond au consentement d'une personne physique ou morale.</p>
 
 <table style="width:100%">
   <tr>
@@ -2506,7 +2508,7 @@ Cela correspond au consentement d'une personne physique ou morale.
     <th>Description</th>
   </tr>
   <tr>
-    <td><a name="l7365">​</a>auteur : [1..1] (<a href="#classe-professionnel">Professionnel</a>, <a href="#classe-usager">Usager</a>, <a href="#classe-contactpersonnephysique">Contact personne physique</a>)</td>
+    <td>auteur : [1..1] (<a href="#classe-professionnel">Professionnel</a>, <a href="#classe-usager">Usager</a>, <a href="#classe-contactpersonnephysique">Contact personne physique</a>)</td>
     <td>Acteur (personne physique ou morale) qui donne son accord. L'auteur de l'accord peut référencer un professionnel, l'usager ou une personne de son entourage.</td>
   </tr>
   <tr>
@@ -2518,7 +2520,6 @@ Cela correspond au consentement d'une personne physique ou morale.
     <td>Durée de validité de l'accord</td>
   </tr>
 </table>
-</td></tr></table>
 
 
 
@@ -2560,7 +2561,7 @@ Cela correspond au consentement d'une personne physique ou morale.
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.2.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jan 21, 2026 14:06+0000">2026-01-21</span>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.2.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jan 21, 2026 14:35+0000">2026-01-21</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
