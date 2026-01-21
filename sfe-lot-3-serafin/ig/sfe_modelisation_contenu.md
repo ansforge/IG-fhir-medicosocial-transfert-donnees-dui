@@ -815,12 +815,12 @@ Préparation du bilan du projet personnalisé.
 
 #### Parcours
 
-##### Classe PeriodeScolaire
+##### Classe ProjetDeVie
 
-La période scolaire représente un temps de scolarisation pour l'usager ainsi que les caractéristiques de cette période. L'ensemble des périodes scolaires constitue le parcours scolaire de la personne.
+Le projet de vie est l’expression de la projection dans l’avenir de l'usager. Le projet de vie peut concerner tous les domaines de la vie de la personne.
 
-La classe EntiteGeographique est issue du MOS et est profilée pour ce volet.
-
+* Nom: idProjetVie : [1..1] Identifiant
+  * Description: Identifiant technique unique du projet de vie obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature[TRE_G08-TypeIdentifiantPersonne](https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne)), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de trois caractères "PDV" et de l'identifiant local du projet de vie dans le DUI (idLocalProjetVie) :idProjetVie = 3+FINESS/identifiantLocalUsagerESSMS-PDV-idLocalProjetVie </tr> titreProjetVie : [1..1] Texte Titre du projet de vie.  dateDebutProjetVie : [0..1] Date Date de début du projet de vie.  dateFinProjetVie : [0..1] Date Date de fin du projet de vie.  aspirationSouhait : [0..*] Texte Ambition, désir de l'usager pouvant porter sur tous les domaines de sa vie. </table> ##### Classe StatutProjetVie ** Classe spécialisée, hérite de la classe Statut Cette classe regroupe les items pouvant caractériser le Statut du projet de vie. ##### Classe PeriodeScolaire La période scolaire représente un temps de scolarisation pour l'usager ainsi que les caractéristiques de cette période. L'ensemble des périodes scolaires constitue le parcours scolaire de la personne. La classe EntiteGeographique est issue du MOS et est profilée pour ce volet.
 * Nom: idPeriodeScolaire : [1..1] Identifiant
   * Description: Identifiant technique unique de la période scolaire obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature[TRE_G08-TypeIdentifiantPersonne](https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne)), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "PSCO" et du numéro de la période scolaire dans le DUI (numPeriodeScolaire) :idPeriodeScolaire = 3+FINESS/identifiantLocalUsagerESSMS-PSCO-numPeriodeScolaire
 * Nom: dateDebutPeriodeScolaire : [0..1] Date
@@ -846,16 +846,7 @@ La classe EntiteGeographique est issue du MOS et est profilée pour ce volet.
 * Nom: commentaireAnneeScolaire : [0..1] Texte
   * Description: Commentaire sur l'année scolaire.
 
-### Partie Coordination des acteurs
-
-#### Evènement de l'agenda
-
-##### Classe Evenement
-
-Evènements liés à la prise en charge de l’usager dans une structure ESSMS.
-
-Les classes EntiteJuridique, Lieu et Professionnel sont issues du MOS et sont profilées pour ce volet.
-
+### Partie Coordination des acteurs #### Evènement de l'agenda##### Classe Evenement Evènements liés à la prise en charge de l’usager dans une structure ESSMS. Les classes EntiteJuridique, Lieu et Professionnel sont issues du MOS et sont profilées pour ce volet.
 * Nom: idEvenement : [1..1] Identifiant
   * Description: Identifiant technique de l’évènement obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature[TRE_G08-TypeIdentifiantPersonne](https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne)), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de trois caractères "EVN" et du numéro de l’évènement dans le DUI (numEvenement) :idEvenement = 3+FINESS/identifiantLocalUsagerESSMS-EVN-numEvenement
 * Nom: typeEvenement : [0..*] Code ou Texte
@@ -893,10 +884,7 @@ Les classes EntiteJuridique, Lieu et Professionnel sont issues du MOS et sont pr
 * Nom: validationUsager : [0..1] Indicateur
   * Description: Accord de l'usager1 = validation de l'usager0 = refus de l'usager
 
-##### Classe Participant
-
-Le Participant est une personne morale ou physique prenant part à l'événement.
-
+##### Classe Participant Le Participant est une personne morale ou physique prenant part à l'événement.
 * Nom: presenceParticipant : [0..1] Indicateur
   * Description: Indique la présence du participant à l'événement.1= participant présent0= participant absent
 * Nom: roleParticipantEJ : [0..1] Code
@@ -906,10 +894,7 @@ Le Participant est une personne morale ou physique prenant part à l'événement
 * Nom: participantInterne : [0..1] Indicateur
   * Description: Indique si le participant (personne Physique) est interne ou externe à la structure1 = interne0 = externe
 
-##### Classe Transport
-
-Classe générique socle décrivant le transport d’une personne physique (professionnel, usger) lors d’un évènement.
-
+##### Classe Transport Classe générique socle décrivant le transport d’une personne physique (professionnel, usger) lors d’un évènement.
 * Nom: idTrajet : [1..1] Identifiant
   * Description: Identifiant technique du transport.
 * Nom: typeTransport : [0..1] Code
@@ -935,24 +920,7 @@ Classe générique socle décrivant le transport d’une personne physique (prof
 * Nom: dateFinTransport : [1..1] DateHeure
   * Description: Date de fin du transport de la personne physique.
 
-##### Classe TransportProfessionnel
-
-** Classe spécialisée, hérite de la classe Transport
-
-Cette classe regroupe les items pouvant caractériser le transport du professionnel lors de l'évènement.
-
-L'identifiant technique du transport est obtenu dans ce contexte par par la concaténation du type d'identifiant national de personne (provenant de la nomenclature [TRE_G08-TypeIdentifiantPersonne](https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne)), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de cinq caractères "TPPro" et du numéro de transport du professionnel dans le DUI (idTransport) :
- idTrajet = 3+FINESS/identifiantLocalUsagerESSMS-TPPro-idTransport
-
-##### Classe TransportUsager
-
-** Classe spécialisée, hérite de la classe Transport
-
-Cette classe regroupe les items pouvant caractériser le transport de l'usager lors de l'évènement.
-
-L'identifiant technique du transport est obtenu dans ce contexte par par la concaténation du type d'identifiant national de personne (provenant de la nomenclature [TRE_G08-TypeIdentifiantPersonne](https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne)), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de cinq caractères "TPPat" et du numéro de transport de l'usager dans le DUI (idTransport) :
- idTrajet = 3+FINESS/identifiantLocalUsagerESSMS-TPPat-idTransport
-
+##### Classe TransportProfessionnel ** Classe spécialisée, hérite de la classe Transport Cette classe regroupe les items pouvant caractériser le transport du professionnel lors de l'évènement. L'identifiant technique du transport est obtenu dans ce contexte par par la concaténation du type d'identifiant national de personne (provenant de la nomenclature[TRE_G08-TypeIdentifiantPersonne](https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne)), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de cinq caractères "TPPro" et du numéro de transport du professionnel dans le DUI (idTransport) :idTrajet = 3+FINESS/identifiantLocalUsagerESSMS-TPPro-idTransport ##### Classe TransportUsager ** Classe spécialisée, hérite de la classe Transport Cette classe regroupe les items pouvant caractériser le transport de l'usager lors de l'évènement. L'identifiant technique du transport est obtenu dans ce contexte par par la concaténation du type d'identifiant national de personne (provenant de la nomenclature[TRE_G08-TypeIdentifiantPersonne](https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne)), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de cinq caractères "TPPat" et du numéro de transport de l'usager dans le DUI (idTransport) :idTrajet = 3+FINESS/identifiantLocalUsagerESSMS-TPPat-idTransport
 * Nom: accompagnement : [0..1] Indicateur
   * Description: Accompagnement nécessaire ou non de l'usager.
 * Nom: asepsieRigoureuse : [0..1] Indicateur
@@ -960,12 +928,7 @@ L'identifiant technique du transport est obtenu dans ce contexte par par la conc
 * Nom: natureTransport : [0..1] Code
   * Description: Nature du transport de l'usager.Jeu de valeur issue de la terminologie Serafin correspondant aux familles (3.2.4.1, 3.2.4.2, 3.2.4.3).Jeu(x) de valeur(s) associé(s) :[JDV_J282-TransportsLiesAuProjetIndividuel_SERAFIN](https://mos.esante.gouv.fr/NOS/JDV_J282-TransportsLiesAuProjetIndividuel_SERAFIN/FHIR/JDV-J282-TransportsLiesAuProjetIndividuel-SERAFIN)
 
-### Classes du MOS profilées pour ce volet
-
-##### Classe Professionnel
-
-Données d'identification pérennes d’une personne physique, qui travaille en tant que professionnel (professionnel enregistré dans RPPS), personnel autorisé ou personnel d’établissement, dans les domaines sanitaire, médico-social et social.
-
+### Classes du MOS profilées pour ce volet ##### Classe Professionnel Données d'identification pérennes d’une personne physique, qui travaille en tant que professionnel (professionnel enregistré dans RPPS), personnel autorisé ou personnel d’établissement, dans les domaines sanitaire, médico-social et social.
 * Nom: idNat_PS : [1..1] Identifiant
   * Description: Identification nationale principale du professionnel. Cette identification est obtenue par la concaténation du type d'identifiant national de personne (provenant de la nomenclature[TRE_G08-TypeIdentifiantPersonne](https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne)) et de l'identifiant de la personne physique. Voir la description complète de idNat_PS dans le MOS.
 * Nom: civilite : [0..1] Code
@@ -983,21 +946,13 @@ Données d'identification pérennes d’une personne physique, qui travaille en 
 * Nom: etablissementDeRattachement : [0..1] EntiteJuridique
   * Description: Structure juridique de rattachement du professionnel.
 
-_Remarque_: Certaines professions du médico-social n'ont pas de correspondance directe dans les référentiels du CI-SIS. L'annexe [Professions du médico-social](annexes_codes_professions_roles_modes_exercices.md) donne la correspondance entre la profession du médico-social et le triptyque "profession/rôle/mode d'exercice" référencé dans les jeux de valeurs du CI-SIS.
-
-##### Classe Entité Juridique
-
-Pour ce volet l'Entité Juridique est une personne morale inscrite dans le FINESS.
-
+_Remarque_: Certaines professions du médico-social n'ont pas de correspondance directe dans les référentiels du CI-SIS. L'annexe[Professions du médico-social](annexes_codes_professions_roles_modes_exercices.md)donne la correspondance entre la profession du médico-social et le triptyque "profession/rôle/mode d'exercice" référencé dans les jeux de valeurs du CI-SIS. ##### Classe Entité Juridique Pour ce volet l'Entité Juridique est une personne morale inscrite dans le FINESS.
 * Nom: idNat_Struct : [1..1] Identifiant
   * Description: Identification nationale de l'Entité juridique. Cette identification est obtenue par la concaténation du type d'identifiant national de structure (provenant de la nomenclature[TRE_G07-TypeIdentifiantStructure](https://mos.esante.gouv.fr/NOS/TRE_G07-TypeIdentifiantStructure/FHIR/TRE-G07-TypeIdentifiantStructure)) et de l'identifiant de la structure: ** 1 + N° FINESS.
 * Nom: raisonSociale : [0..1] Texte
   * Description: La raison sociale est le nom de l'entité juridique. Elle figure obligatoirement dans les statuts de l'EJ.
 
-##### Classe Entité Géographique
-
-Pour ce volet l'Entité Géographique est une personne morale.
-
+##### Classe Entité Géographique Pour ce volet l'Entité Géographique est une personne morale.
 * Nom: idNat_Struct : [1..1] Identifiant
   * Description: Identification nationale de l'Entité géographique. Cette identification est obtenue par la concaténation du type d'identifiant national de structure (provenant de la nomenclature[TRE_G07-TypeIdentifiantStructure](https://mos.esante.gouv.fr/NOS/TRE_G07-TypeIdentifiantStructure/FHIR/TRE-G07-TypeIdentifiantStructure)) et de l'identifiant de la structure: ** 3 + N° SIRET (pour les établissements qui ne sont pas de santé).
 * Nom: numeroEducationNationale : [0..1] Texte
@@ -1007,10 +962,7 @@ Pour ce volet l'Entité Géographique est une personne morale.
 * Nom: adresseEG : [0..1][Adresse](#classe-adresse)
   * Description: Adresse(s) géopostale(s) de l'entité géographique.
 
-##### Classe Lieu
-
-Portion déterminée de l'espace où se sont déroulés des événements.
-
+##### Classe Lieu Portion déterminée de l'espace où se sont déroulés des événements.
 * Nom: identifiant : [0..*] Identifiant
   * Description: Identifiant(s) métier du lieu.
 * Nom: nom : [0..1] Texte
@@ -1020,12 +972,7 @@ Portion déterminée de l'espace où se sont déroulés des événements.
 * Nom: telecommunication : [0..1] Telecommunication
   * Description: Adresse(s) de télécommunication du lieu (numéro de téléphone, adresse email, URL, etc.).
 
-### Classes génériques
-
-##### Classe Statut
-
-Cette classe décrit le statut des ressources (Evenement, Evaluation, Projet personnalisé, …).
-
+### Classes génériques ##### Classe Statut Cette classe décrit le statut des ressources (Evenement, Evaluation, Projet personnalisé, ...).
 * Nom: statut : [1..1] Code
   * Description: Statut de la ressource impactée.Jeu(x) de valeur(s) associé(s) :[JDV_J281-StatutsRessourcesMS](https://mos.esante.gouv.fr/NOS/JDV_J281-StatutsRessourcesMS/FHIR/JDV-J281-StatutsRessourcesMS)- Pour l'Evaluation seuls les codes suivants sont à utiliser : ENPREPARATION, APPROUVE, VALIDE, TERMINE- Pour l'Evènement seuls les codes suivants sont à utiliser : PLANIFIE, VALIDE, ANNULE, TERMINE- Pour le projet personnalisé seuls les codes suivants sont à utiliser : ENPREPARATION, ENCOURS, ENPAUSE, TERMINE- Pour l'Objectif, l'Action et la Prestation du Projet personnalisé seuls les codes suivants sont à utiliser : ENPREPARATION, ACTIF, TERMINE, ANNULE
 * Nom: motifNonRealisation : [0..1] Code
@@ -1035,14 +982,13 @@ Cette classe décrit le statut des ressources (Evenement, Evaluation, Projet per
 * Nom: auteur : [0..1] Professionnel
   * Description: Le professionnel ayant effectué la dernière modification du statut associé à la ressource.
 
-##### Classe Accord
-
-Cela correspond au consentement d'une personne physique ou morale.
-
+##### Classe Accord Cela correspond au consentement d'une personne physique ou morale.
 * Nom: auteur : [1..1] ([Professionnel](#classe-professionnel),[Usager](#classe-usager),[Contact personne physique](#classe-contactpersonnephysique))
   * Description: Acteur (personne physique ou morale) qui donne son accord. L'auteur de l'accord peut référencer un professionnel, l'usager ou une personne de son entourage.
 * Nom: dateSignature : [1..1] DateHeure
   * Description: Date de délivrance de l'accord.
 * Nom: dureeValidite : [0..1] Periode
   * Description: Durée de validité de l'accord
+
+
 
