@@ -44,7 +44,7 @@ Pour ce cas d'usage les modalités d’envoi des données usager au SI-tiers son
   * les Prestations mises en place dans le cadre du Projet personnalisé
   * les Bilans réalisés dans le cadre du Projet personnalisé
  
- ##### Cas d'usage SERAFIN - Mise à jour des blocs Administratif, Coordination des acteurs et Accompagnement
+##### Cas d'usage SERAFIN - Mise à jour des blocs Administratif, Coordination des acteurs et Accompagnement
 
 La mise à jour des blocs "Administratif, Coordination des acteurs et Accompagnement" entre dans la définition des moyens, ressources et de l'accompagnement mis en oeuvre pour l'usager en adéquation avec les besoins SERAFIN répertoriés en autre dans le Projet personnalisé.
 Dans ce cas d'usage, les objets métiers suivants sont enrichis ou créés :
@@ -58,7 +58,7 @@ Dans ce cas d'usage, les objets métiers suivants sont enrichis ou créés :
     </p>
 </blockquote>
  
-  ##### Cas d'usage SERAFIN - Droits sociaux et de santé, Projet de vie, Présence Absence
+##### Cas d'usage SERAFIN - Droits sociaux et de santé, Projet de vie, Présence Absence
 
 Dans ce cas d'usage, les objets métiers suivants sont enrichis ou créés :
   * La demande d'orientation adressée par la CDAPH 
