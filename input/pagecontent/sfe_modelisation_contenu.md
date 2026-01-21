@@ -1760,7 +1760,7 @@ Le projet de vie est l’expression de la projection dans l’avenir de l'usager
   </tr>
   <tr>
     <td>idProjetVie : [1..1] Identifiant</td>
-    <td>Identifiant technique unique du projet de vie obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de trois caractères "PDV" et de l'identifiant local du projet de vie dans le DUI (idLocalProjetVie) :<br> idProjetVie = 3+FINESS/identifiantLocalUsagerESSMS-PDV-idLocalProjetVie
+    <td>Identifiant technique unique du projet de vie obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de trois caractères "PDV" et de l'identifiant local du projet de vie dans le DUI (idLocalProjetVie) :<br> idProjetVie = 3+FINESS/identifiantLocalUsagerESSMS-PDV-idLocalProjetVie</td>
  </tr>
  <tr>
     <td>titreProjetVie : [1..1] Texte</td>
