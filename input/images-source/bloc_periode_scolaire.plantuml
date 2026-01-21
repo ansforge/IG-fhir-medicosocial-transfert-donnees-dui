@@ -22,7 +22,7 @@ class PeriodeScolaire #PeachPuff {
     commentaireAnneeScolaire : Texte [0..1]
 }
 
-class ProjetDeVie #PeachPuff {
+class ProjetVie #PeachPuff {
     identifiantProjetVie : Identifiant [1..1]
     titreProjetVie : Texte [1..1]
     dateDebutProjetVie : Date [0..1]
@@ -31,10 +31,10 @@ class ProjetDeVie #PeachPuff {
     }
 
 Usager "1" -- "*" PeriodeScolaire
-Usager "1" - "*" ProjetDeVie
+Usager "1" - "*" ProjetVie
 
 Statut <|-- StatutProjetVie
 
-ProjetDeVie "1" - "1" StatutProjetVie
+ProjetVie "1" - "1" StatutProjetVie
 
 @enduml
