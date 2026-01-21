@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-objectif.
   "name" : "TDDUIGoalObjectif",
   "title" : "TDDUI Goal Objectif",
   "status" : "active",
-  "date" : "2026-01-21T09:01:08+00:00",
+  "date" : "2026-01-21T09:55:17+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
