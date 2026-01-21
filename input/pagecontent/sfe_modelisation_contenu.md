@@ -1749,6 +1749,43 @@ Préparation du bilan du projet personnalisé.
 
 <div style="text-align:center;">{%include bloc_periode_scolaire.svg%}</div>
 
+##### Classe ProjetDeVie
+
+Le projet de vie est l’expression de la projection dans l’avenir de l'usager. Le projet de vie peut concerner tous les domaines de la vie de la personne.
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>idProjetVie : [1..1] Identifiant</td>
+    <td>Identifiant technique unique du projet de vie obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de trois caractères "PDV" et de l'identifiant local du projet de vie dans le DUI (idLocalProjetVie) :<br> idProjetVie = 3+FINESS/identifiantLocalUsagerESSMS-PDV-idLocalProjetVie
+ </tr>
+ <tr>
+    <td>titreProjetVie : [1..1] Texte</td>
+    <td>Titre du projet de vie.</td>
+ </tr>
+ <tr>
+    <td>dateDebutProjetVie : [0..1] Date</td>
+    <td>Date de début du projet de vie.</td>
+ </tr>
+ <tr>
+    <td>dateFinProjetVie : [0..1] Date</td>
+    <td>Date de fin du projet de vie.</td>
+ </tr>
+ <tr>
+    <td>aspirationSouhait : [0..*] Texte</td>
+    <td>Ambition, désir de l'usager pouvant porter sur tous les domaines de sa vie.</td>
+ </tr>
+</table>
+
+##### Classe StatutProjetVie
+
+** Classe spécialisée, hérite de la classe Statut
+
+Cette classe regroupe les items pouvant caractériser le Statut du projet de vie.
+
 ##### Classe PeriodeScolaire
 
 La période scolaire représente un temps de scolarisation pour l'usager ainsi que les caractéristiques de cette période. L'ensemble des périodes scolaires constitue le parcours scolaire de la personne.
@@ -1813,7 +1850,7 @@ La classe EntiteGeographique est issue du MOS et est profilée pour ce volet.
     <td>commentaireAnneeScolaire : [0..1] Texte</td>
     <td>Commentaire sur l'année scolaire.</td>
  </tr>
-  </table>
+</table>
 
 ### Partie Coordination des acteurs
 
