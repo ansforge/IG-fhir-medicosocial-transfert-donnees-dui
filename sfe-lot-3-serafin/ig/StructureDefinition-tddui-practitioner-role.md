@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-practitioner-r
   "name" : "TDDUIPractitionerRole",
   "title" : "TDDUI Practitioner Role",
   "status" : "active",
-  "date" : "2026-01-21T13:58:49+00:00",
+  "date" : "2026-01-21T14:06:50+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

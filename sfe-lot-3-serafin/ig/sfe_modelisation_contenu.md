@@ -815,7 +815,7 @@ Préparation du bilan du projet personnalisé.
 
 #### Parcours
 
-##### Classe ProjetDeVie
+##### Classe ProjetVie
 
 Le projet de vie est l’expression de la projection dans l’avenir de l'usager. Le projet de vie peut concerner tous les domaines de la vie de la personne.
 
