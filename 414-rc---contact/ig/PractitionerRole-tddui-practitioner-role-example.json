@@ -1,0 +1,44 @@
+{
+  "resourceType" : "PractitionerRole",
+  "id" : "tddui-practitioner-role-example",
+  "meta" : {
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : PractitionerRole tddui-practitioner-role-example</b></p><a name=\"tddui-practitioner-role-example\"> </a><a name=\"hctddui-practitioner-role-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-practitioner-role.html\">TDDUI Practitioner Role</a></p></div><p><b>Mode d'exercice</b>: <span title=\"Codes :{https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice S}\">Salarié</span></p><p><b>practitioner</b>: <a href=\"Practitioner-tddui-practitioner-example.html\">Practitioner Claire Martin </a></p><p><b>organization</b>: <a href=\"Organization-tddui-organization-example.html\">Organization Les Chênes Verts</a></p><p><b>code</b>: <span title=\"Codes :{https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge 330}\">Coordonnateur de parcours</span></p></div>"
+  },
+  "extension" : [{
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exercise-mode",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice",
+        "code" : "S",
+        "display" : "Salarié"
+      }]
+    }
+  }],
+  "practitioner" : {
+    "reference" : "Practitioner/tddui-practitioner-example"
+  },
+  "organization" : {
+    "reference" : "Organization/tddui-organization-example"
+  },
+  "code" : [{
+    "extension" : [{
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-profession",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://mos.esante.gouv.fr/NOS/TRE_A02-ProfessionSavFaire-CISIS/FHIR/TRE-A02-ProfessionSavFaire-CISIS",
+          "code" : "G15_60",
+          "display" : "Infirmier"
+        }]
+      }
+    }],
+    "coding" : [{
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge",
+      "code" : "330",
+      "display" : "Coordonnateur de parcours"
+    }]
+  }]
+}
