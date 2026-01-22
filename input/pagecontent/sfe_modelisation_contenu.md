@@ -711,7 +711,7 @@ Une personne physique est un individu titulaire de droits et d'obligations carac
     <th>Description</th>
   </tr>
   <tr>
-    <td>identifiantPP : [0..1] Identifiant</td>
+    <td>identifiantPP : [1..1] Identifiant</td>
     <td>Identifiant de  la personne physique.</td>
   </tr>
   <tr>
