@@ -12,9 +12,9 @@ Profil: [TDDUI Practitioner](StructureDefinition-tddui-practitioner.md)
 
 **name**: Claire Martin 
 
-> **qualification****code**:DE Infirmier
+> **qualification****code**: DE Infirmier
 
-> **qualification****code**:Infirmier
+> **qualification****code**: Infirmier
 
 
 

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role | *Version*:2.2.0-ballot |
-| Active as of 2026-01-15 | *Computable Name*:TDDUIPractitionerRole |
+| Active as of 2026-01-22 | *Computable Name*:TDDUIPractitionerRole |
 
  
 Profil de la ressource FRCorePractitionerRole permettant de représenter un Professionnel. 
@@ -17,7 +17,7 @@ Profil de la ressource FRCorePractitionerRole permettant de représenter un Prof
 **Utilisations:**
 
 * Utiliser ce Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
-* Référer à ce Profil: [TDDUI Consent Accord](StructureDefinition-tddui-consent-accord.md), [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md), [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md), [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md)...Show 2 more,[TDDUI Auteur statut](StructureDefinition-tddui-status-author.md)and[TDDUI Task Action](StructureDefinition-tddui-task-action.md)
+* Référer à ce Profil: [TDDUI Consent Accord](StructureDefinition-tddui-consent-accord.md), [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md), [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md), [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md)... Show 2 more, [TDDUI Auteur statut](StructureDefinition-tddui-status-author.md) and [TDDUI Task Action](StructureDefinition-tddui-task-action.md)
 * Exemples pour ce Profil: [PractitionerRole/tddui-practitioner-role-example](PractitionerRole-tddui-practitioner-role-example.md)
 * CapabilityStatements utilisant ce Profil: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-practitioner-r
   "name" : "TDDUIPractitionerRole",
   "title" : "TDDUI Practitioner Role",
   "status" : "active",
-  "date" : "2026-01-15T13:52:15+00:00",
+  "date" : "2026-01-22T17:48:29+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

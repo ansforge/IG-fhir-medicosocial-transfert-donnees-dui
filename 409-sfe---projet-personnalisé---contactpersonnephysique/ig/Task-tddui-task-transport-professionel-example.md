@@ -16,7 +16,7 @@ Profil: [TDDUI Task Transport Professionnel](StructureDefinition-tddui-task-tran
 
 **code**: Véhicule individuel
 
-**for**: [Practitioner Claire Martin](Practitioner-tddui-practitioner-example.md)
+**for**: [Practitioner Claire Martin ](Practitioner-tddui-practitioner-example.md)
 
 **encounter**: [Encounter : extension = ,Observations cliniques : ; Recommandations pour les jours à venir : ; Prochaine visite : 15 avril 2023, 10h30 ; Remarque : Monsieur Dupont a compris les consignes pour la gestion de sa douleur et la mobilisation de sa hanche opérée.,Cet évènement a débuté plus tard l’usager était sous la douche à l’heure du début du rendez-vous.,Visite à domicile pour soins infirmier.,Suivi post-opératoire suite à intervention chirurgicale de la hanche.; identifier = Visit Number; status = finished; class = home health (ActCode#HH); type = Intervention d'un infirmer salarié,Not Permitted; period = 2023-04-14 10:30:00+0200 --> 2023-04-14 11:15:00+0200](Encounter-tddui-encounter-evenement-example.md)
 
@@ -24,15 +24,15 @@ Profil: [TDDUI Task Transport Professionnel](StructureDefinition-tddui-task-tran
 
 **owner**: [Organization Les Chênes Verts](Organization-tddui-organization-example.md)
 
-> **input****type**:Type de motorisation associée au véhicule utilisé lors du transport.**value**:Véhicule électrique
+> **input****type**: Type de motorisation associée au véhicule utilisé lors du transport.**value**: Véhicule électrique
 
-> **input****type**:Budget prévisionnel pour assurer le transport de la personne physique.**value**:€2,00(EUR)
+> **input****type**: Budget prévisionnel pour assurer le transport de la personne physique.**value**: €2,00 (EUR)
 
-> **input****type**:Budget réel pour assurer le transport de la personne physique.**value**:€2,00(EUR)
+> **input****type**: Budget réel pour assurer le transport de la personne physique.**value**: €2,00 (EUR)
 
-> **input****type**:Distance du transport de la personne physique.**value**: Pas daffichage pour {0} (value : 4; unit : kilometers; system : http://unitsofmeasure.org; code : km)
+> **input****type**: Distance du transport de la personne physique.**value**: Pas daffichage pour {0} (value : 4; unit : kilometers; system : http://unitsofmeasure.org; code : km)
 
-> **input****type**:Durée théorique du transport de la personne physique.**value**: Pas daffichage pour {0} (value : 10; unit : minutes; system : http://unitsofmeasure.org; code : min)
+> **input****type**: Durée théorique du transport de la personne physique.**value**: Pas daffichage pour {0} (value : 10; unit : minutes; system : http://unitsofmeasure.org; code : min)
 
 
 

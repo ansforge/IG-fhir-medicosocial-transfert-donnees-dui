@@ -14,7 +14,7 @@ Profil: [TDDUI Goal Attente](StructureDefinition-tddui-goal-attente.md)
 
 **lifecycleStatus**: Active
 
-**description**: - Garder la main sur l'organisation de ses journées
+**description**: - Garder la main sur l'organisation de ses journées 
 - Participer à une chorale et à un club lecture
 - Se sentir en sécurité lors des déplacements
 

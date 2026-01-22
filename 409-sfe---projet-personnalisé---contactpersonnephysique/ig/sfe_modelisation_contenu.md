@@ -43,7 +43,7 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
 * Nom: dateNaissance : [0..1] Date
   * Description: Date de naissance de l’usager. Cet attribut fait partie des traits INS. Il est obligatoire si l’identité INS est qualifiée.Il est préconisé si le NIR ou l'identifiant local est véhiculé et que l'identité n'est pas qualifiée.
 * Nom: ordreNaissanceEtatCivil : [0..1] Numerique
-  * Description: Ordre d’enregistrement de la naissance dans le registre d’état civil de la commune de naissance pour le mois de la naissance. Il compose les[3 derniers chiffres du NIR de l'usager avant](https://www.ameli.fr/llle-et-vilaine/assure/droits-demarches/principes/numero-securite-sociale)la clé de sécurité et permet de distinguer les personnes nées au même lieu et à la même période.Il est obligatoire si le NIR n'est pas transmis.
+  * Description: Ordre d’enregistrement de la naissance dans le registre d’état civil de la commune de naissance pour le mois de la naissance. Il compose les[3 derniers chiffres du NIR de l'usager avant ](https://www.ameli.fr/llle-et-vilaine/assure/droits-demarches/principes/numero-securite-sociale)la clé de sécurité et permet de distinguer les personnes nées au même lieu et à la même période.Il est obligatoire si le NIR n'est pas transmis.
 * Nom: CommuneNaissance : [0..1] Code
   * Description: Commune de naissance de l’usager. Code officiel géographique (COG) de la commune.Jeu(x) de valeur(s) associé(s) :[JDV_J120-CommuneHistorisee](https://mos.esante.gouv.fr/NOS/JDV_J120-CommuneHistorisee/FHIR/JDV-J120-CommuneHistorisee)Cet attribut fait partie des traits INS. Il est obligatoire si l’identité INS est qualifiée.Il est préconisé si le NIR ou l'identifiant local est véhiculé et que l'identité n'est pas qualifiée.
 * Nom: departementNaissance : [0..1] Code
@@ -311,7 +311,7 @@ Un contact peut être un membre de la famille ou un proche de l’Usager. Il peu
 
 Une personne physique est un individu titulaire de droits et d'obligations caractérisé par une identité civile.
 
-* Nom: identifiantPP : [0..1] Identifiant
+* Nom: identifiantPP : [1..1] Identifiant
   * Description: Identifiant de la personne physique.
 * Nom: nomNaissance : [0..1] Texte
   * Description: Nom de naissance de la personne.Synonymes : nom patronymique, nom de famille.

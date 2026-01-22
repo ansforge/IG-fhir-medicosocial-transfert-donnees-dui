@@ -20,19 +20,19 @@ Profil: [TDDUI Task Transport Usager](StructureDefinition-tddui-task-transport-u
 
 **executionPeriod**: 2023-04-14 10:30:00+0200 --> 2023-04-14 11:15:00+0200
 
-> **input****type**:Budget prévisionnel pour assurer le transport de la personne physique.**value**:€2,00(EUR)
+> **input****type**: Budget prévisionnel pour assurer le transport de la personne physique.**value**: €2,00 (EUR)
 
-> **input****type**:Budget réel pour assurer le transport de la personne physique.**value**:€2,00(EUR)
+> **input****type**: Budget réel pour assurer le transport de la personne physique.**value**: €2,00 (EUR)
 
-> **input****type**:Distance du transport de la personne physique.**value**: Pas daffichage pour {0} (value : 4; unit : kilometers; system : http://unitsofmeasure.org; code : km)
+> **input****type**: Distance du transport de la personne physique.**value**: Pas daffichage pour {0} (value : 4; unit : kilometers; system : http://unitsofmeasure.org; code : km)
 
-> **input****type**:Durée théorique du transport de la personne physique.**value**: Pas daffichage pour {0} (value : 10; unit : minutes; system : http://unitsofmeasure.org; code : min)
+> **input****type**: Durée théorique du transport de la personne physique.**value**: Pas daffichage pour {0} (value : 10; unit : minutes; system : http://unitsofmeasure.org; code : min)
 
-> **input****type**:Accompagnement nécessaire ou non de l'usager.**value**: true
+> **input****type**: Accompagnement nécessaire ou non de l'usager. **value**: true
 
-> **input****type**:Lors du transport de l'usager l'asepsie est rigoureusement respectée ou n'est pas nécessaire.**value**: false
+> **input****type**: Lors du transport de l'usager l'asepsie est rigoureusement respectée ou n'est pas nécessaire.**value**: false
 
-> **input****type**:Nature du transport de l'usager.**value**:Transports liés au projet individuel
+> **input****type**: Nature du transport de l'usager.**value**: Transports liés au projet individuel
 
 
 

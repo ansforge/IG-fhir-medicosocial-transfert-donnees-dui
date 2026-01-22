@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exit-mode-label | *Version*:2.2.0-ballot |
-| Active as of 2026-01-15 | *Computable Name*:TDDUIExitModeLabel |
+| Active as of 2026-01-22 | *Computable Name*:TDDUIExitModeLabel |
 
 Libellé du mode de sortie du séjour.
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-exit-mode-labe
   "name" : "TDDUIExitModeLabel",
   "title" : "Libellé mode de sortie",
   "status" : "active",
-  "date" : "2026-01-15T13:52:15+00:00",
+  "date" : "2026-01-22T17:48:29+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
