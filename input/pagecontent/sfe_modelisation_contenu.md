@@ -1943,8 +1943,8 @@ Le Participant est une personne morale ou physique prenant part à l'événement
   </tr>
   <tr>
     <td>roleParticipantEJ : [0..1] Code</td>
-    <td>Role du participant vis à vis de l'événement (mandataire judiciaire, structure en charge).<br>
-    Jeu(x) de valeur(s) associé(s) : en construction NOS</td>
+    <td>Role du participant vis à vis de l'événement (mandataire judiciaire, structure en charge de l'événement).<br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j387-role-participant-ms">JDV-J387-ROLE-PARTICIPANT-MS</a></td>
   </tr>
   <tr>
     <td>modeExerciceParticipantPP : [0..1] Code</td>
