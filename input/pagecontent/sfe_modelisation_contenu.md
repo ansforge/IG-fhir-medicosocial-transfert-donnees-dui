@@ -1259,7 +1259,8 @@ Résultat de l'évaluation globale d'un usager.
    <tr>
     <td>typeEvaluation : [1..1] Code</td>
     <td>Type de l’évaluation.<br>
-    Jeu(x) de valeur(s) associé(s) : JDV_TypeEvaluation_CISIS avec l'OID 1.2.250.1.213.1.1.5.802 publié sur <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a>
+    Jeu(x) de valeur(s) associé(s) : JDV_TypeEvaluation_CISIS avec l'OID 1.2.250.1.213.1.1.5.802 publié sur <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a><br>
+    Lorsque le type d'évaluation est "Autre type d'évaluation" la grille d'évaluation est véhiculée en pièce jointe de l'évaluation, sous la forme d'une grille non structurée (en pdf) ne faisant pas partie des évaluations nationales ou internationales connues.
     </td>
   </tr>
     <tr>
