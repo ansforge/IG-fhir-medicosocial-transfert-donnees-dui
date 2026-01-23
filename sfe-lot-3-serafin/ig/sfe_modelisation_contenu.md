@@ -570,7 +570,7 @@ Résultat de l'évaluation globale d'un usager.
 * Nom: idEvaluation : Identifiant [1..1]
   * Description: Identifiant technique de l’évaluation obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature[TRE_G08-TypeIdentifiantPersonne](https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne)), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "EVAL" et du numéro de l’évaluation dans le DUI (numEvaluation) :idEvaluation = 3+FINESS/identifiantLocalUsagerESSMS-EVAL-numEvaluation
 * Nom: typeEvaluation : [1..1] Code
-  * Description: Type de l’évaluation.Jeu(x) de valeur(s) associé(s) : JDV_TypeEvaluation_CISIS avec l'OID 1.2.250.1.213.1.1.5.802 publié sur[annexe-vocabulaire-et-jeux-de-valeurs](https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs)
+  * Description: Type de l’évaluation.Jeu(x) de valeur(s) associé(s) : JDV_TypeEvaluation_CISIS avec l'OID 1.2.250.1.213.1.1.5.802 publié sur[annexe-vocabulaire-et-jeux-de-valeurs](https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs)Lorsque le type d'évaluation est "Autre type d'évaluation" la grille d'évaluation est véhiculée en pièce jointe de l'évaluation, sous la forme d'une grille non structurée (en pdf) ne faisant pas partie des évaluations nationales ou internationales connues.
 * Nom: dateEvaluation : [0..1] DateHeure
   * Description: Date et heure de l’évaluation.
 * Nom: resultatEvaluation : [0..1] Le type du résultat est dépendant du type d'évaluation
