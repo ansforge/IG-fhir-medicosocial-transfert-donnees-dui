@@ -8,7 +8,7 @@
 
 Cette section décrit, **à titre d'exemple et de façon non exhaustive**, un ensemble de cas d'usage correspondant à l’expression des besoins définis lors des ateliers avec la CNSA et les acteurs du médico-social.
 
-> **Point d'attention**Les cas d’usage doivent s’appuyer sur une assise juridique afin de légitimer le transfert des données notamment si ce dernier comporte des données personnelles ou médicales. Cet aspect est de la responsabilité des acteurs qui utilisent cette spécification. Cette dernière n’a pas vocation à légitimer les traitements des données.
+>  **Point d'attention** Les cas d’usage doivent s’appuyer sur une assise juridique afin de légitimer le transfert des données notamment si ce dernier comporte des données personnelles ou médicales. Cet aspect est de la responsabilité des acteurs qui utilisent cette spécification. Cette dernière n’a pas vocation à légitimer les traitements des données. 
 
 #### Transfert des données d’un logiciel DUI vers un SI-tiers
 
@@ -59,5 +59,5 @@ La mise à jour des blocs "Administratif, Coordination des acteurs et Accompagne
 * la Période scolaire de l'usager (bloc Accompagnement) ;
 * l'évènement de l'agenda usager (bloc Coordination des acteurs)
 
-> Les types d'évaluations de la déficience selon la classification CIM11, FINESS et de la déficience selon le tableau de la performance ANAP font partie d'un travail d'alignement avec la CIM11. Ces travaux sont menés par le CGTS à l'ANS. En fonction de l'avancé de ces travaux ces nouveaux types d'évaluations feront partie de futurs lots.
+>  Les types d'évaluations de la déficience selon la classification CIM11, FINESS et de la déficience selon le tableau de la performance ANAP font partie d'un travail d'alignement avec la CIM11. Ces travaux sont menés par le CGTS à l'ANS. En fonction de l'avancé de ces travaux ces nouveaux types d'évaluations feront partie de futurs lots. 
 

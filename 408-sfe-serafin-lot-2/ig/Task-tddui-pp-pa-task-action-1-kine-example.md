@@ -20,9 +20,9 @@ Profil: [TDDUI Task Action](StructureDefinition-tddui-task-action.md)
 
 **owner**: Kinésithérapeute
 
-> **input****type**:Titre de l'action à mener.**value**: Action du kinésithérapeute pour atteindre l'objectif 1
+> **input****type**: Titre de l'action à mener.**value**: Action du kinésithérapeute pour atteindre l'objectif 1
 
-> **input****type**:Objectif(s).**value**:[Goal : extension = ->CarePlan Projet personnalisé de Mme Jeanne L.,->DocumentReference : masterIdentifier = 3480787529/123456789-PPER-bilanObj-1234; status = current; identifier = https://identifiant-medicosocial-objectif.esante.gouv.fr#3480787529/123456789-OBJE-1234; lifecycleStatus = active; description = ; note = Objectif 1](Goal-tddui-pp-pa-goal-objectif-1-example.md)
+> **input****type**: Objectif(s).**value**: [Goal : extension = ->CarePlan Projet personnalisé de Mme Jeanne L.,->DocumentReference : masterIdentifier = 3480787529/123456789-PPER-bilanObj-1234; status = current; identifier = https://identifiant-medicosocial-objectif.esante.gouv.fr#3480787529/123456789-OBJE-1234; lifecycleStatus = active; description = ; note = Objectif 1](Goal-tddui-pp-pa-goal-objectif-1-example.md)
 
 
 

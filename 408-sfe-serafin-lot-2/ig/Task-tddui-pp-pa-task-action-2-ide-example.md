@@ -18,11 +18,11 @@ Profil: [TDDUI Task Action](StructureDefinition-tddui-task-action.md)
 
 **description**: Pesée mensuelle et dépistage dénutrition
 
-**owner**: [Practitioner Élodie Bernard](Practitioner-tddui-pp-pa-practitioner-ide-example.md)
+**owner**: [Practitioner Élodie Bernard ](Practitioner-tddui-pp-pa-practitioner-ide-example.md)
 
-> **input****type**:Titre de l'action à mener.**value**: Action de l'IDE pour atteindre l'objectif 2
+> **input****type**: Titre de l'action à mener.**value**: Action de l'IDE pour atteindre l'objectif 2
 
-> **input****type**:Objectif(s).**value**:[Goal : extension = ->CarePlan Projet personnalisé de Mme Jeanne L.; identifier = https://identifiant-medicosocial-objectif.esante.gouv.fr#3480787529/123456789-OBJE-1235; lifecycleStatus = active; description = ; note = Objectif 2](Goal-tddui-pp-pa-goal-objectif-2-example.md)
+> **input****type**: Objectif(s).**value**: [Goal : extension = ->CarePlan Projet personnalisé de Mme Jeanne L.; identifier = https://identifiant-medicosocial-objectif.esante.gouv.fr#3480787529/123456789-OBJE-1235; lifecycleStatus = active; description = ; note = Objectif 2](Goal-tddui-pp-pa-goal-objectif-2-example.md)
 
 
 

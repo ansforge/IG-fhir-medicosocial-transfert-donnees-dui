@@ -16,7 +16,7 @@ Profil: [TDDUI Consent Accord](StructureDefinition-tddui-consent-accord.md)
 
 **dateTime**: 2024-01-15 09:00:00+0100
 
-**performer**: [Practitioner Élodie Bernard](Practitioner-tddui-pp-pa-practitioner-ide-example.md)
+**performer**: [Practitioner Élodie Bernard ](Practitioner-tddui-pp-pa-practitioner-ide-example.md)
 
 ### Policies
 
