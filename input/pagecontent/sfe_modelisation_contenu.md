@@ -1786,7 +1786,7 @@ La classe EntiteGeographique est issue du MOS et est profilée pour ce volet.
   <tr>
     <td>typeEnseignementSpecialise : [0..*] ConceptCode</td>
     <td>Type enseignement spécialisé.<br>
-    Jeu(x) de valeur(s) associé(s) : en cours de création NOS</td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j386-type-enseignement-specialise-ms">JDV-J386-TYPE-ENSEIGNEMENT-SPECIALISE-MS</a></td>
  </tr>
  <tr>
     <td>referentScolaire : [0..*] <a href="#PersonnePhysique">PersonnePhysique</a></td>
