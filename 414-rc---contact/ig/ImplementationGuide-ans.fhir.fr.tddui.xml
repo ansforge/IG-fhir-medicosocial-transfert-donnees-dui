@@ -10,7 +10,7 @@
   <name value="TDDUI"/>
   <title value="Médicosocial - Transfert de données DUI"/>
   <status value="active"/>
-  <date value="2026-01-21T15:58:27+00:00"/>
+  <date value="2026-01-23T10:30:04+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -1077,6 +1077,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-nationality"/>
+      </reference>
+      <name value="TDDUI Nationality Extension"/>
+      <description value="The nationality of the patient or a related person."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -1161,6 +1172,17 @@
       </reference>
       <name value="TDDUI QuestionnaireResponse"/>
       <description value="Profil de la ressource QuestionnaireResponse utilisé pour transmettre les réponses aux questionnaires dans le cadre des évaluations."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-related-person-contact"/>
+      </reference>
+      <name value="TDDUI RelatedPerson Contact"/>
+      <description value="Profil de la ressource FRCoreRelatedPersonProfile permettant de représenter le contact PersonnePhyisique."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

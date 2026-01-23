@@ -10,7 +10,7 @@
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2026-01-21T15:58:27+00:00",
+  "date" : "2026-01-23T10:30:04+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -1305,6 +1305,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-nationality"
+      },
+      "name" : "TDDUI Nationality Extension",
+      "description" : "The nationality of the patient or a related person.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -1396,6 +1408,18 @@
       },
       "name" : "TDDUI QuestionnaireResponse",
       "description" : "Profil de la ressource QuestionnaireResponse utilisé pour transmettre les réponses aux questionnaires dans le cadre des évaluations.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-related-person-contact"
+      },
+      "name" : "TDDUI RelatedPerson Contact",
+      "description" : "Profil de la ressource FRCoreRelatedPersonProfile permettant de représenter le contact PersonnePhyisique.",
       "exampleBoolean" : false
     },
     {

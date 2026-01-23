@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "TDDUI"] ; # 
   fhir:title [ fhir:v "Médicosocial - Transfert de données DUI"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-01-21T15:58:27+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-01-23T10:30:04+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -2538,6 +2538,27 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-nationality> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-nationality" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Nationality Extension" ] ;
+       fhir:description [ fhir:v "The nationality of the patient or a related person." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
@@ -2694,6 +2715,27 @@
        ] ;
        fhir:name [ fhir:v "TDDUI QuestionnaireResponse" ] ;
        fhir:description [ fhir:v "Profil de la ressource QuestionnaireResponse utilisé pour transmettre les réponses aux questionnaires dans le cadre des évaluations." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-related-person-contact" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI RelatedPerson Contact" ] ;
+       fhir:description [ fhir:v "Profil de la ressource FRCoreRelatedPersonProfile permettant de représenter le contact PersonnePhyisique." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
