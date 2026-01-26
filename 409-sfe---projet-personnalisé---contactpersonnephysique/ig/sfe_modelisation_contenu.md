@@ -301,7 +301,7 @@ Quantification de la prise en charge.
 Un contact peut être un membre de la famille ou un proche de l’Usager. Il peut s’agir par exemple d’un aidant, de la personne de confiance de l’Usager…
 
 * Nom: role : [0..1] Code
-  * Description: Rôle de la personne point de contact auprès d'une autre personne. Exemple dans le cas d'un patient, ce rôle indique si le point de contact est la personne à prévenir en cas d'urgence, la personne de confiance, etc.Jeux de valeur(s) associé(s) :[JDV-J384-role-membre-famille-ms](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j384-role-membre-famille-ms)
+  * Description: Rôle de la personne point de contact auprès d'une autre personne. Exemple dans le cas d'un usager, ce rôle indique si le point de contact est la personne à prévenir en cas d'urgence, la personne de confiance, etc.Jeux de valeur(s) associé(s) :[JDV-J384-role-membre-famille-ms](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j384-role-membre-famille-ms/$expand)
 * Nom: description : [0..1] Texte
   * Description: Une description du contact.
 * Nom: relation : [0..1] Code
@@ -322,7 +322,7 @@ Une personne physique est un individu titulaire de droits et d'obligations carac
 * Nom: sexe : [0..1] Code
   * Description: Sexe de la personne physique.Jeu(x) de valeur(s) associé(s) :[JDV-J143-AdministrativeGender-CISIS](https://mos.esante.gouv.fr/NOS/JDV_J143-AdministrativeGender-CISIS/FHIR/JDV-J143-AdministrativeGender-CISIS)
 * Nom: paysNationalite : [0..*] Code
-  * Description: Pays de nationalité de la personne physique, actuelle ou rattachement de la nationalité à un espace de pays conventionnéNomenclature(s) associée(s) : Norme ISO 3166
+  * Description: Pays de nationalité de la personne physique.Nomenclature(s) associée(s) : Norme ISO 3166
 * Nom: dateNaissance : [0..1] Date
   * Description: Date de naissance de la personne physique.
 * Nom: adresse : [0..1][Adresse](#classe-adresse)
@@ -601,7 +601,7 @@ Le projet personnalisé est un document co-construit par l'usager, son entourage
 * Nom: descriptionProjetPersonnalise : [0..1] Texte
   * Description: Description du projet personnalisé.
 * Nom: typeProjetPersonnalise : [0..1] Code
-  * Description: Type de projet personnalisé.Jeu(x) de valeur(s) associé(s) :[JDV-J367-type-projet-personnalise-ms](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j367-type-projet-personnalise-ms)
+  * Description: Type de projet personnalisé.Jeu(x) de valeur(s) associé(s) :[JDV-J367-type-projet-personnalise-ms](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j367-type-projet-personnalise-ms/$expand)
 * Nom: modaliteCommunicationProjetPersonnalise : [0..1] Texte
   * Description: Modalité de communication ou de transmission du projet personnalisé à l'usager et/ou à son entourage.
 * Nom: accordUsagerProjetPersonnalise : [0..*][Accord](#classe-accord)
@@ -740,7 +740,7 @@ Un bilan est une évaluation du projet personnalisé qui est réalisé à la con
 * Nom: dateBilan : [1..1] DateHeure
   * Description: Date et heure du bilan.
 * Nom: categorieBilan : [0..1] Code
-  * Description: Catégorie du bilan.Jeu(x) de valeur(s) associé(s) :[JdvJ366StatutBilanProjetPersonnaliseMs](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j366-statut-bilan-projet-personnalise-ms)
+  * Description: Catégorie du bilan.Jeu(x) de valeur(s) associé(s) :[JdvJ366StatutBilanProjetPersonnaliseMs](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j366-statut-bilan-projet-personnalise-ms/$expand)
 * Nom: perimetreBilan : [0..1] Texte
   * Description: Périmètre du bilan.
 * Nom: problematiqueGlobaleUsager : [0..1] Texte
