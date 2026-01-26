@@ -684,7 +684,7 @@ Un contact peut être un membre de la famille ou un proche de l’Usager. Il peu
   </tr>
   <tr>
     <td>role : [0..1] Code</td>
-    <td>Rôle de la personne point de contact auprès d'une autre personne. Exemple dans le cas d'un patient, ce rôle indique si le point de contact est la personne à prévenir en cas d'urgence, la personne de confiance, etc.<br>
+    <td>Rôle de la personne point de contact auprès d'une autre personne. Exemple dans le cas d'un usager, ce rôle indique si le point de contact est la personne à prévenir en cas d'urgence, la personne de confiance, etc.<br>
     Jeux de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j384-role-membre-famille-ms/$expand">JDV-J384-role-membre-famille-ms</a></td>
   </tr>
   <tr>
@@ -712,7 +712,7 @@ Une personne physique est un individu titulaire de droits et d'obligations carac
   </tr>
   <tr>
     <td>identifiantPP : [1..1] Identifiant</td>
-    <td>Identifiant de  la personne physique.</td>
+    <td>Identifiant de la personne physique.</td>
   </tr>
   <tr>
     <td>nomNaissance : [0..1] Texte</td>
@@ -736,7 +736,7 @@ Une personne physique est un individu titulaire de droits et d'obligations carac
   </tr>
   <tr>
     <td>paysNationalite : [0..*] Code</td>
-    <td>Pays de nationalité de la personne physique, actuelle ou rattachement de la nationalité à un espace de pays conventionné<br>
+    <td>Pays de nationalité de la personne physique.<br>
     Nomenclature(s) associée(s) : Norme ISO 3166</td>
   </tr>
   <tr>
