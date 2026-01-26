@@ -53,7 +53,7 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
 * Nom: situationFamiliale : [0..1] Code
   * Description: Situation familiale de l’usager.Jeu(x) associé(s) :[JDV-J176-SituationVieQuotidienne-MDPH](https://mos.esante.gouv.fr/NOS/JDV_J176-SituationVieQuotidienne-MDPH/FHIR/JDV-J176-SituationVieQuotidienne-MDPH)
 * Nom: compositionFoyer : [0..1] Code
-  * Description: Désigne avec qui vit l’usager dans son logement.Jeu(x) associé(s) : Jeu(x) associé(s) :[JDV-J385-composition-foyer-ms](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j385-composition-foyer-ms)
+  * Description: Désigne avec qui vit l’usager dans son logement.Jeu(x) associé(s) : Jeu(x) associé(s) :[JDV-J385-composition-foyer-ms](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j385-composition-foyer-ms/$expand)
 * Nom: descriptionCompositionFoyer : [0..1] Texte
   * Description: Description de la composition du foyer, c’est-à-dire des personnes qui vivent dans le logement avec l'usager.
 * Nom: paysNationalite : [0..*] Code
@@ -651,7 +651,7 @@ Le projet personnalisé est un document co-construit par l'usager, son entourage
 * Nom: descriptionProjetPersonnalise : [0..1] Texte
   * Description: Description du projet personnalisé.
 * Nom: typeProjetPersonnalise : [0..1] Code
-  * Description: Type de projet personnalisé.Jeu(x) de valeur(s) associé(s) :[JDV-J367-type-projet-personnalise-ms](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j367-type-projet-personnalise-ms)
+  * Description: Type de projet personnalisé.Jeu(x) de valeur(s) associé(s) :[JDV-J367-type-projet-personnalise-ms](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j367-type-projet-personnalise-ms/$expand)
 * Nom: modaliteCommunicationProjetPersonnalise : [0..1] Texte
   * Description: Modalité de communication ou de transmission du projet personnalisé à l'usager et/ou à son entourage.
 * Nom: accordUsagerProjetPersonnalise : [0..*][Accord](#classe-accord)
@@ -790,7 +790,7 @@ Un bilan est une évaluation du projet personnalisé qui est réalisé à la con
 * Nom: dateBilan : [1..1] DateHeure
   * Description: Date et heure du bilan.
 * Nom: categorieBilan : [0..1] Code
-  * Description: Catégorie du bilan.Jeu(x) de valeur(s) associé(s) :[JdvJ366StatutBilanProjetPersonnaliseMs](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j366-statut-bilan-projet-personnalise-ms)
+  * Description: Catégorie du bilan.Jeu(x) de valeur(s) associé(s) :[JdvJ366StatutBilanProjetPersonnaliseMs](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j366-statut-bilan-projet-personnalise-ms/$expand)
 * Nom: perimetreBilan : [0..1] Texte
   * Description: Périmètre du bilan.
 * Nom: problematiqueGlobaleUsager : [0..1] Texte
@@ -832,7 +832,7 @@ La classe EntiteGeographique est issue du MOS et est profilée pour ce volet.
 * Nom: niveauScolaireSuivi : [0..1] ConceptCode
   * Description: Situation scolaire suivie de l'usager.Jeu(x) de valeur(s) associé(s) : en cours de création NOS
 * Nom: typeEnseignementSpecialise : [0..*] ConceptCode
-  * Description: Type enseignement spécialisé.Jeu(x) de valeur(s) associé(s) :[JDV-J386-TYPE-ENSEIGNEMENT-SPECIALISE-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j386-type-enseignement-specialise-ms)
+  * Description: Type enseignement spécialisé.Jeu(x) de valeur(s) associé(s) :[JDV-J386-TYPE-ENSEIGNEMENT-SPECIALISE-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j386-type-enseignement-specialise-ms/$expand)
 * Nom: referentScolaire : [0..*][PersonnePhysique](#PersonnePhysique)
   * Description: Référent scolaire de l'usager pour cette année de scolarité.
 * Nom: contactReferentScolaire : [0..*][Telecommunication](#classe-telecommunication)
@@ -900,7 +900,7 @@ Le Participant est une personne morale ou physique prenant part à l'événement
 * Nom: presenceParticipant : [0..1] Indicateur
   * Description: Indique la présence du participant à l'événement.1= participant présent0= participant absent
 * Nom: roleParticipantEJ : [0..1] Code
-  * Description: Role du participant vis à vis de l'événement (mandataire judiciaire, structure en charge de l'événement).Jeu(x) de valeur(s) associé(s) :[JDV-J387-ROLE-PARTICIPANT-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j387-role-participant-ms)
+  * Description: Role du participant vis à vis de l'événement (mandataire judiciaire, structure en charge de l'événement).Jeu(x) de valeur(s) associé(s) :[JDV-J387-ROLE-PARTICIPANT-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j387-role-participant-ms/$expand)
 * Nom: modeExerciceParticipantPP : [0..1] Code
   * Description: Mode d'exercice de la personne physique. Le mode d'exercice décrit selon quelle modalité une activité est exercée au regard de l'évènement.Jeu(x) de valeur(s) associé(s) :[JDV-J117-ModeExercice-ENREG](https://mos.esante.gouv.fr/NOS/JDV_J117-ModeExercice-ENREG/FHIR/JDV-J117-ModeExercice-ENREG)
 * Nom: participantInterne : [0..1] Indicateur

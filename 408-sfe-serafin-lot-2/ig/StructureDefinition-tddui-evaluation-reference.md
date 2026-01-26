@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-evaluation-reference | *Version*:2.2.0-ballot |
-| Active as of 2026-01-23 | *Computable Name*:TDDUIEvaluationRef |
+| Active as of 2026-01-26 | *Computable Name*:TDDUIEvaluationRef |
 
 Liens vers l'évaluation, utilisables dans le profil TDDUIGoalObjectif.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-evaluation-ref
   "name" : "TDDUIEvaluationRef",
   "title" : "Lien vers l'évaluation",
   "status" : "active",
-  "date" : "2026-01-23T15:15:31+00:00",
+  "date" : "2026-01-26T08:31:39+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
