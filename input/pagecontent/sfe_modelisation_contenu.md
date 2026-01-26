@@ -685,7 +685,7 @@ Un contact peut être un membre de la famille ou un proche de l’Usager. Il peu
   <tr>
     <td>role : [0..1] Code</td>
     <td>Rôle de la personne point de contact auprès d'une autre personne. Exemple dans le cas d'un patient, ce rôle indique si le point de contact est la personne à prévenir en cas d'urgence, la personne de confiance, etc.<br>
-    Jeux de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j384-role-membre-famille-ms">JDV-J384-role-membre-famille-ms</a></td>
+    Jeux de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j384-role-membre-famille-ms/$expand">JDV-J384-role-membre-famille-ms</a></td>
   </tr>
   <tr>
     <td>description : [0..1] Texte</td>
@@ -1307,7 +1307,7 @@ Le projet personnalisé est un document co-construit par l'usager, son entourage
   <tr>
     <td>typeProjetPersonnalise : [0..1] Code</td>
     <td>Type de projet personnalisé.<br>
-    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j367-type-projet-personnalise-ms">JDV-J367-type-projet-personnalise-ms</a></td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j367-type-projet-personnalise-ms/$expand">JDV-J367-type-projet-personnalise-ms</a></td>
   </tr>
   <tr>
     <td>modaliteCommunicationProjetPersonnalise : [0..1] Texte</td>
@@ -1589,7 +1589,7 @@ Un bilan est une évaluation du projet personnalisé qui est réalisé à la con
  <tr>
     <td>categorieBilan : [0..1] Code</td>
     <td>Catégorie du bilan.<br>
-    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j366-statut-bilan-projet-personnalise-ms">JdvJ366StatutBilanProjetPersonnaliseMs</a></td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j366-statut-bilan-projet-personnalise-ms/$expand">JdvJ366StatutBilanProjetPersonnaliseMs</a></td>
  </tr>
   <tr>
     <td>perimetreBilan : [0..1] Texte</td>
