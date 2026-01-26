@@ -4,33 +4,23 @@ hide empty methods
 
 class Usager #LightPink
 
-class ContactPersonnePhysique #LightBlue {
-    identifiantContactPP : Identifiant [0..1]
-    nom : Texte [0..1]
-    prenom : Texte [0..1]
+class Contact #LightBlue {
+    role : Code [0..1]
+    description : Texte [0..1]
+    relation : Code [0..1]
+    }
+
+
+class PersonnePhysique #LightBlue {
+    identifiantPP : Identifiant [1..1]
+    nomNaissance : Texte [0..1]
+    prenom : Texte [0..*]
     civilite : Code [0..1]
+    sexe : Code [0..1]
     paysNationalite : Code [0..*]
-    profession : Texte [0..1]
-    situationFamiliale : Code [0..1]
     dateNaissance : Date [0..1]
     adresse : Adresse [0..1]
     telecommunication : Telecommunication [0..*]
-    role : Code [0..1]
-    relation : Code [0..1]
-    fonction : Code [0..1]
-    ordreAppel : Numerique [0..1]
-    commentaire : Texte [0..1]
-}
-
-class ContactPersonneMorale #LightBlue {
-    identifiantContactPM : Identifiant [0..1]
-    libelle : Texte [0..1]
-    raisonSociale : Texte [0..1]
-    typeOrganisme : Code [0..1]
-    adresse : Adresse [0..1]
-    telecommunication : Telecommunication [0..*]
-    role : Code [0..1]
-    ordreAppel : Numerique [0..1]
     commentaire : Texte [0..1]
 }
 
@@ -58,7 +48,7 @@ class PermisConduire #LightBlue {
 
 class Ressource #LightBlue {
     type : Code [0..1]
-    contactOrganisme :  Contact  [0..1]
+    contactOrganisme :  ContactPersonneMorale  [0..1]
     montant : Montant [0..1]
     frequence : Mesure [0..1]
     dateDebut : Date [0..1]
@@ -83,8 +73,9 @@ class CompteBancaire #LightBlue {
     RIB : RIB [0..1]
 }
 
-ContactPersonnePhysique "*" -- "1" Usager
-ContactPersonneMorale "*" -- "1" Usager 
+Contact "*" -- "1" Usager
+PersonnePhysique "1" -- "1" Contact
+
 PermisConduire "*" - "1" Usager 
 Usager"1" - "*" Transport 
 Usager "1" -- "*" MesureProtection

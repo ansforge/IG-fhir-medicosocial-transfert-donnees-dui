@@ -45,7 +45,7 @@ class Decision #LightYellow {
 
 class DroitPrestation #LightYellow {
     idDroitPrestation : Identifiant [1..1]
-    contactOrganisme : Contact [0..*]
+    contactOrganisme : ContactPersonneMorale [0..*]
     numeroAllocataire : Identifiant [0..1]
     typeDroitPrestation : Code [1..1]
     natureDroit : Code [1..1]
