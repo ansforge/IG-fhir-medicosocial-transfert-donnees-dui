@@ -43,7 +43,7 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
 * Nom: dateNaissance : [0..1] Date
   * Description: Date de naissance de l’usager. Cet attribut fait partie des traits INS. Il est obligatoire si l’identité INS est qualifiée.Il est préconisé si le NIR ou l'identifiant local est véhiculé et que l'identité n'est pas qualifiée.
 * Nom: ordreNaissanceEtatCivil : [0..1] Numerique
-  * Description: Ordre d’enregistrement de la naissance dans le registre d’état civil de la commune de naissance pour le mois de la naissance. Il compose les[3 derniers chiffres du NIR de l'usager avant](https://www.ameli.fr/llle-et-vilaine/assure/droits-demarches/principes/numero-securite-sociale)la clé de sécurité et permet de distinguer les personnes nées au même lieu et à la même période.Il est obligatoire si le NIR n'est pas transmis.
+  * Description: Ordre d’enregistrement de la naissance dans le registre d’état civil de la commune de naissance pour le mois de la naissance. Il compose les[3 derniers chiffres du NIR de l'usager avant ](https://www.ameli.fr/llle-et-vilaine/assure/droits-demarches/principes/numero-securite-sociale)la clé de sécurité et permet de distinguer les personnes nées au même lieu et à la même période.Il est obligatoire si le NIR n'est pas transmis.
 * Nom: CommuneNaissance : [0..1] Code
   * Description: Commune de naissance de l’usager. Code officiel géographique (COG) de la commune.Jeu(x) de valeur(s) associé(s) :[JDV_J120-CommuneHistorisee](https://mos.esante.gouv.fr/NOS/JDV_J120-CommuneHistorisee/FHIR/JDV-J120-CommuneHistorisee)Cet attribut fait partie des traits INS. Il est obligatoire si l’identité INS est qualifiée.Il est préconisé si le NIR ou l'identifiant local est véhiculé et que l'identité n'est pas qualifiée.
 * Nom: departementNaissance : [0..1] Code
@@ -296,63 +296,41 @@ Quantification de la prise en charge.
 
 #### Environnement et ressources
 
-##### Classe ContactPersonnePhysique
+##### Classe Contact
 
-Personne physique qui agit comme point de contact auprès d'une autre personne ou d'un autre service.
+Un contact peut être un membre de la famille ou un proche de l’Usager. Il peut s’agir par exemple d’un aidant, de la personne de confiance de l’Usager…
 
-* Nom: identifiantContactPP : [0..1] Identifiant
-  * Description: Identifiant du contact
-* Nom: nom : [0..1] Texte
-  * Description: Nom de la personne contact.
-* Nom: prenom : [0..1] Texte
-  * Description: Prénom de la personne contact.
-* Nom: civilite : [0..1] Code
-  * Description: Civilité du contact.jeu(x) de valeur(s) associé(s) :[JDV_J245-Civilite-CISIS](https://mos.esante.gouv.fr/NOS/JDV_J245-Civilite-CISIS/FHIR/JDV-J245-Civilite-CISIS)
-* Nom: paysNationalite : [0..*] Code
-  * Description: Pays de nationalité de la personne contact, actuelle ou rattachement de la nationalité à un espace de pays conventionnéNomenclature(s) associée(s) : Norme ISO 3166
-* Nom: profession : [0..1] Texte
-  * Description: Profession de la personne contact.
-* Nom: situationFamiliale : [0..1] Code
-  * Description: Situation familiale de la personne contact (célibataire, divorcée, etc.).Nomenclature(s) associée(s) : à définir
-* Nom: dateNaissance : [0..1] Date
-  * Description: Date de naissance de la personne contact.
-* Nom: telecommunication : [0..*] Telecommunication
-  * Description: Adresse(s) de télécommunication du contact (numéro de téléphone, adresse email, URL, etc.).
-* Nom: adresse : [0..1] Adresse
-  * Description: Adresse géopostale du point de contact.
 * Nom: role : [0..1] Code
-  * Description: Rôle de la personne point de contact auprès d'une autre personne. Exemple dans le cas d'un patient, ce rôle indique si le point de contact est la personne à prévenir en cas d'urgence, la personne de confiance, etc.Nomenclature(s) associée(s) :[TRE_R260-HL7RoleClass](https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass)
+  * Description: Rôle de la personne point de contact auprès d'une autre personne. Exemple dans le cas d'un usager, ce rôle indique si le point de contact est la personne à prévenir en cas d'urgence, la personne de confiance, etc.Jeux de valeur(s) associé(s) :[JDV-J384-role-membre-famille-ms](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j384-role-membre-famille-ms/$expand)
+* Nom: description : [0..1] Texte
+  * Description: Une description du contact.
 * Nom: relation : [0..1] Code
-  * Description: Lien de la personne point de contact auprès d'une autre personne. Exemple dans le cas d'un patient, ce lien indique si le point de contact est son enfant, son frère, etc.Nomenclature(s) associée(s) :[TRE_R216-HL7RoleCode](https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode)[TRE_R217-ProtectionJuridique](https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique)
-* Nom: fonction : [0..1] Code
-  * Description: Un titre, une position ou une fonction de la personne assurant le contact au sein de son organisation (directeur, secrétaire, etc.).[TRE_R251-FonctionContact](https://mos.esante.gouv.fr/NOS/TRE_R251-FonctionContact/FHIR/TRE-R251-FonctionContact)
-* Nom: ordreAppel : [0..1] Numérique
-  * Description: Ordre de priorité d’appel du contact (1 = priorité maximale).
+  * Description: Lien de la personne point de contact auprès d'une autre personne. Exemple dans le cas d'un patient, ce lien indique si le point de contact est son enfant, son frère, etc.Jeux de valeur(s) associé(s) :[JDV-J14-QualiteRepresentantLegal-CISIS](https://mos.esante.gouv.fr/NOS/JDV_J14-QualiteRepresentantLegal-CISIS/FHIR/JDV-J14-QualiteRepresentantLegal-CISIS)[JDV-J11-RelationPatient-CISIS](https://mos.esante.gouv.fr/NOS/JDV_J11-RelationPatient-CISIS/FHIR/JDV-J11-RelationPatient-CISIS)
+
+##### Classe PersonnePhysique
+
+Une personne physique est un individu titulaire de droits et d'obligations caractérisé par une identité civile.
+
+* Nom: identifiantPP : [1..1] Identifiant
+  * Description: Identifiant de la personne physique.
+* Nom: nomNaissance : [0..1] Texte
+  * Description: Nom de naissance de la personne.Synonymes : nom patronymique, nom de famille.
+* Nom: prenom : [0..*] Texte
+  * Description: Prénom(s) de la personne déclarés à sa naissance.
+* Nom: civilite : [0..1] Code
+  * Description: Civilité de la personne physique.jeu(x) de valeur(s) associé(s) :[JDV_J245-Civilite-CISIS](https://mos.esante.gouv.fr/NOS/JDV_J245-Civilite-CISIS/FHIR/JDV-J245-Civilite-CISIS)
+* Nom: sexe : [0..1] Code
+  * Description: Sexe de la personne physique.Jeu(x) de valeur(s) associé(s) :[JDV-J143-AdministrativeGender-CISIS](https://mos.esante.gouv.fr/NOS/JDV_J143-AdministrativeGender-CISIS/FHIR/JDV-J143-AdministrativeGender-CISIS)
+* Nom: paysNationalite : [0..*] Code
+  * Description: Pays de nationalité de la personne physique.Nomenclature(s) associée(s) : Norme ISO 3166
+* Nom: dateNaissance : [0..1] Date
+  * Description: Date de naissance de la personne physique.
+* Nom: adresse : [0..1][Adresse](#classe-adresse)
+  * Description: Adresse géopostale du point de la personne physique.
+* Nom: telecommunication : [0..*][Telecommunication](#classe-telecommunication)
+  * Description: Adresse(s) de télécommunication de la personne physique (numéro de téléphone, adresse email, URL, etc.).
 * Nom: commentaire : [0..1] Texte
-  * Description: Commentaire relatif au contact.
-
-##### Classe ContactPersonneMorale
-
-Personne morale qui agit comme point de contact auprès d'une autre personne ou d'un autre service.
-
-* Nom: identifiantContactPP : [0..1] Identifiant
-  * Description: Identifiant du contact
-* Nom: libelle : [0..1] Texte
-  * Description: Libellé du contact.
-* Nom: raisonSociale : [0..1] Texte
-  * Description: Raison sociale du contact.
-* Nom: typeOrgansime : [0..1] Code
-  * Description: Type d’organisme du contact.
-* Nom: telecommunication : [0..*] Telecommunication
-  * Description: Adresse(s) de télécommunication du contact (numéro de téléphone, adresse email, URL, etc.).
-* Nom: adresse : [0..1] Adresse
-  * Description: Adresse géopostale du point de contact.
-* Nom: role : [0..1] Code
-  * Description: Rôle de la personne point de contact auprès d'une autre personne. Exemple dans le cas d'un patient, ce rôle indique si le point de contact est la personne à prévenir en cas d'urgence, la personne de confiance, etc.Nomenclature(s) associée(s) :[TRE_R260-HL7RoleClass](https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass)
-* Nom: ordreAppel : [0..1] Numérique
-  * Description: Ordre de priorité d’appel du contact (1 = priorité maximale).
-* Nom: commentaire : [0..1] Texte
-  * Description: Commentaire relatif au contact.
+  * Description: Commentaire relatif à la personne physique.
 
 ##### Classe Ressource
 
@@ -623,7 +601,7 @@ Le projet personnalisé est un document co-construit par l'usager, son entourage
 * Nom: descriptionProjetPersonnalise : [0..1] Texte
   * Description: Description du projet personnalisé.
 * Nom: typeProjetPersonnalise : [0..1] Code
-  * Description: Type de projet personnalisé.Jeu(x) de valeur(s) associé(s) :[JDV-J367-type-projet-personnalise-ms](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j367-type-projet-personnalise-ms)
+  * Description: Type de projet personnalisé.Jeu(x) de valeur(s) associé(s) :[JDV-J367-type-projet-personnalise-ms](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j367-type-projet-personnalise-ms/$expand)
 * Nom: modaliteCommunicationProjetPersonnalise : [0..1] Texte
   * Description: Modalité de communication ou de transmission du projet personnalisé à l'usager et/ou à son entourage.
 * Nom: accordUsagerProjetPersonnalise : [0..*][Accord](#classe-accord)
@@ -762,7 +740,7 @@ Un bilan est une évaluation du projet personnalisé qui est réalisé à la con
 * Nom: dateBilan : [1..1] DateHeure
   * Description: Date et heure du bilan.
 * Nom: categorieBilan : [0..1] Code
-  * Description: Catégorie du bilan.Jeu(x) de valeur(s) associé(s) :[JdvJ366StatutBilanProjetPersonnaliseMs](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j366-statut-bilan-projet-personnalise-ms)
+  * Description: Catégorie du bilan.Jeu(x) de valeur(s) associé(s) :[JdvJ366StatutBilanProjetPersonnaliseMs](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j366-statut-bilan-projet-personnalise-ms/$expand)
 * Nom: perimetreBilan : [0..1] Texte
   * Description: Périmètre du bilan.
 * Nom: problematiqueGlobaleUsager : [0..1] Texte
@@ -782,7 +760,7 @@ Préparation du bilan du projet personnalisé.
 
 * Nom: corps : [1..1] Texte
   * Description: Corps de la préparation.
-* Nom: auteur : [1..1] ([Professionnel](#classe-professionnel),[Usager](#classe-usager),[Contact personne physique](#classe-contactpersonnephysique))
+* Nom: auteur : [1..1] ([Professionnel](#classe-professionnel),[Usager](#classe-usager),[Contact personne physique](#classe-contact))
   * Description: Auteur de la préparation de bilan. Cet auteur peut référencer un professionnel, l'usager ou une personne de son entourage.
 
 ### Partie Coordination des acteurs
@@ -950,7 +928,7 @@ Cette classe décrit le statut des ressources (Evenement, Evaluation, Projet per
 
 Cela correspond au consentement d'une personne physique ou morale.
 
-* Nom: auteur : [1..1] ([Professionnel](#classe-professionnel),[Usager](#classe-usager),[Contact personne physique](#classe-contactpersonnephysique))
+* Nom: auteur : [1..1] ([Professionnel](#classe-professionnel),[Usager](#classe-usager),[Contact personne physique](#classe-contact))
   * Description: Acteur (personne physique ou morale) qui donne son accord. L'auteur de l'accord peut référencer un professionnel, l'usager ou une personne de son entourage.
 * Nom: dateSignature : [1..1] DateHeure
   * Description: Date de délivrance de l'accord.

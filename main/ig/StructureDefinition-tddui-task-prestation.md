@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-prestation | *Version*:2.2.0-ballot |
-| Active as of 2025-12-19 | *Computable Name*:TDDUITaskPrestation |
+| Active as of 2026-01-26 | *Computable Name*:TDDUITaskPrestation |
 
  
 Profil de la ressource Task permettant de représenter les prestations du projet personnalisé. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-prestatio
   "name" : "TDDUITaskPrestation",
   "title" : "TDDUI Task Prestation",
   "status" : "active",
-  "date" : "2025-12-19T09:58:03+00:00",
+  "date" : "2026-01-26T12:56:49+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

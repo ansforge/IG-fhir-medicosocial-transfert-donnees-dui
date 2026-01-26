@@ -35,7 +35,7 @@ Profil: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenemen
 | | | |
 | :--- | :--- | :--- |
 | - | **Type** | **Individual** |
-| * | Participation | [Practitioner Claire Martin](Practitioner-tddui-practitioner-example.md) |
+| * | Participation | [Practitioner Claire Martin ](Practitioner-tddui-practitioner-example.md) |
 
 **period**: 2023-04-14 10:30:00+0200 --> 2023-04-14 11:15:00+0200
 

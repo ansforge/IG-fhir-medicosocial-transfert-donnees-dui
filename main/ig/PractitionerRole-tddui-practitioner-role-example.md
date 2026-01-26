@@ -10,7 +10,7 @@ Profil: [TDDUI Practitioner Role](StructureDefinition-tddui-practitioner-role.md
 
 **Mode d'exercice**: Salarié
 
-**practitioner**: [Practitioner Claire Martin](Practitioner-tddui-practitioner-example.md)
+**practitioner**: [Practitioner Claire Martin ](Practitioner-tddui-practitioner-example.md)
 
 **organization**: [Organization Les Chênes Verts](Organization-tddui-organization-example.md)
 

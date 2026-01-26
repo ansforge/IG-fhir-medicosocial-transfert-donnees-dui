@@ -20,9 +20,9 @@ Profil: [TDDUI Task Action](StructureDefinition-tddui-task-action.md)
 
 **owner**: Animatrice
 
-> **input****type**:Titre de l'action à mener.**value**: Action de l'animatrice pour atteindre l'objectif 2
+> **input****type**: Titre de l'action à mener.**value**: Action de l'animatrice pour atteindre l'objectif 2
 
-> **input****type**:Objectif(s).**value**:[Goal : extension = ->CarePlan Projet personnalisé de Mme Jeanne L.; identifier = https://identifiant-medicosocial-objectif.esante.gouv.fr#3480787529/123456789-OBJE-1235; lifecycleStatus = active; description = ; note = Objectif 2](Goal-tddui-pp-pa-goal-objectif-2-example.md)
+> **input****type**: Objectif(s).**value**: [Goal : extension = ->CarePlan Projet personnalisé de Mme Jeanne L.; identifier = https://identifiant-medicosocial-objectif.esante.gouv.fr#3480787529/123456789-OBJE-1235; lifecycleStatus = active; description = ; note = Objectif 2](Goal-tddui-pp-pa-goal-objectif-2-example.md)
 
 
 

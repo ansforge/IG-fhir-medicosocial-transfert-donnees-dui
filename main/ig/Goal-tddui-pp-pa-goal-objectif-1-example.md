@@ -20,7 +20,7 @@ Profil: [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md)
 
 **subject**: [Jeanne L. (official) Female, Date de Naissance inconnue ( Patient internal identifier: 3480787529/123456789)](Patient-tddui-pp-pa-patient-example-pp.md)
 
-**addresses**: [ServiceRequest](ServiceRequest-tddui-pp-pa-servicerequest-besoin-1-example.md)
+**addresses**: [ServiceRequest ](ServiceRequest-tddui-pp-pa-servicerequest-besoin-1-example.md)
 
 **note**: 
 

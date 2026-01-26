@@ -8,13 +8,13 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui | *Version*:2.2.0-ballot |
-| Active as of 2025-12-19 | *Computable Name*:TDDUI |
+| Active as of 2026-01-26 | *Computable Name*:TDDUI |
 
  **Brief description of this Implementation Guide**
  The Digital User File (DUI) centralizes all information concerning the person being cared for in social and medico-social facilities and services. The aim of this implementation guide is to define the specifications for DUI data transfer. 
 
-> **Attention !**
-Cet Implementation Guide est actuellement en concertation. La version courante est accessible à l'adresse : http://interop.esante.gouv.fr/ig/fhir/tddui
+>  **Attention !** 
+ Cet Implementation Guide est actuellement en concertation. La version courante est accessible à l'adresse : http://interop.esante.gouv.fr/ig/fhir/tddui 
 
 ### Introduction
 
@@ -32,7 +32,7 @@ Dans la continuité des travaux menés dans le cadre du programme ESMS numériqu
 Ce guide d'implémentation contient :
 
 * L'étude des normes et standards au format pdf : [Etude des normes et standards](NormesStandards_TransfertDonneesDUI_V1.0.pdf)
-* Les spécifications fonctionnelles : section [Spécifications fonctionnelles](sfe.md)
+* Les spécifications fonctionnelles : section [ Spécifications fonctionnelles](sfe.md)
 * La spécification technique de contenu : 
  Il existe deux représentations techniques pour le contenu de l'export des données d'un logiciel DUI : 
 * une représentation basée sur le standard FHIR afin de s’aligner sur les recommandations européennes et pour s’adapter aux évolutions des [cas d'usage](sfe_cas_usage.md) de ce volet.
@@ -41,7 +41,7 @@ Ce guide d'implémentation contient :
  
 * La spécification technique de transport : sections [Volume 2 - Détail des transactions](description_flux.md) et [Ressources de conformité](artifacts.md)
 * Les annexes : 
-* [Mapping FHIR du modèle de contenu DUI](mapping_fonctionnel_FHIR.md)
+* [ Mapping FHIR du modèle de contenu DUI](mapping_fonctionnel_FHIR.md)
 * [Documents de référence](annexes_documents_reference.md)
 * [Acronymes](annexes_acronymes.md)
 * [Professions du médico-social](annexes_codes_professions_roles_modes_exercices.md)
@@ -140,7 +140,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2025-12-19T09:58:03+00:00",
+  "date" : "2026-01-26T12:56:49+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

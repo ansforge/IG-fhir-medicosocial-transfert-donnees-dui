@@ -20,9 +20,9 @@ Profil: [TDDUI Task Action](StructureDefinition-tddui-task-action.md)
 
 **owner**: Psychologue
 
-> **input****type**:Titre de l'action à mener.**value**: Action du psychologue pour atteindre l'objectif 3
+> **input****type**: Titre de l'action à mener.**value**: Action du psychologue pour atteindre l'objectif 3
 
-> **input****type**:Objectif(s).**value**:[Goal : extension = ->CarePlan Projet personnalisé de Mme Jeanne L.; identifier = https://identifiant-medicosocial-objectif.esante.gouv.fr#3480787529/123456789-OBJE-1236; lifecycleStatus = active; description = ; note = Objectif 3](Goal-tddui-pp-pa-goal-objectif-3-example.md)
+> **input****type**: Objectif(s).**value**: [Goal : extension = ->CarePlan Projet personnalisé de Mme Jeanne L.; identifier = https://identifiant-medicosocial-objectif.esante.gouv.fr#3480787529/123456789-OBJE-1236; lifecycleStatus = active; description = ; note = Objectif 3](Goal-tddui-pp-pa-goal-objectif-3-example.md)
 
 
 
