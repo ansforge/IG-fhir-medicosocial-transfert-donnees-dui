@@ -134,7 +134,7 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
   <tr>
     <td>compositionFoyer : [0..1] Code</td>
     <td>Désigne avec qui vit l’usager dans son logement.<br>
-    Jeu(x) associé(s) : Jeu(x) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j385-composition-foyer-ms">JDV-J385-composition-foyer-ms</a></td>
+    Jeu(x) associé(s) : Jeu(x) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j385-composition-foyer-ms/$expand">JDV-J385-composition-foyer-ms</a></td>
   </tr>
   <tr>
     <td>descriptionCompositionFoyer : [0..1] Texte</td>
@@ -1417,7 +1417,7 @@ Le projet personnalisé est un document co-construit par l'usager, son entourage
   <tr>
     <td>typeProjetPersonnalise : [0..1] Code</td>
     <td>Type de projet personnalisé.<br>
-    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j367-type-projet-personnalise-ms">JDV-J367-type-projet-personnalise-ms</a></td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j367-type-projet-personnalise-ms/$expand">JDV-J367-type-projet-personnalise-ms</a></td>
   </tr>
   <tr>
     <td>modaliteCommunicationProjetPersonnalise : [0..1] Texte</td>
@@ -1699,7 +1699,7 @@ Un bilan est une évaluation du projet personnalisé qui est réalisé à la con
  <tr>
     <td>categorieBilan : [0..1] Code</td>
     <td>Catégorie du bilan.<br>
-    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j366-statut-bilan-projet-personnalise-ms">JdvJ366StatutBilanProjetPersonnaliseMs</a></td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j366-statut-bilan-projet-personnalise-ms/$expand">JdvJ366StatutBilanProjetPersonnaliseMs</a></td>
  </tr>
   <tr>
     <td>perimetreBilan : [0..1] Texte</td>
@@ -1786,7 +1786,7 @@ La classe EntiteGeographique est issue du MOS et est profilée pour ce volet.
   <tr>
     <td>typeEnseignementSpecialise : [0..*] ConceptCode</td>
     <td>Type enseignement spécialisé.<br>
-    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j386-type-enseignement-specialise-ms">JDV-J386-TYPE-ENSEIGNEMENT-SPECIALISE-MS</a></td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j386-type-enseignement-specialise-ms/$expand">JDV-J386-TYPE-ENSEIGNEMENT-SPECIALISE-MS</a></td>
  </tr>
  <tr>
     <td>referentScolaire : [0..*] <a href="#PersonnePhysique">PersonnePhysique</a></td>
@@ -1944,7 +1944,7 @@ Le Participant est une personne morale ou physique prenant part à l'événement
   <tr>
     <td>roleParticipantEJ : [0..1] Code</td>
     <td>Role du participant vis à vis de l'événement (mandataire judiciaire, structure en charge de l'événement).<br>
-    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j387-role-participant-ms">JDV-J387-ROLE-PARTICIPANT-MS</a></td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j387-role-participant-ms/$expand">JDV-J387-ROLE-PARTICIPANT-MS</a></td>
   </tr>
   <tr>
     <td>modeExerciceParticipantPP : [0..1] Code</td>
