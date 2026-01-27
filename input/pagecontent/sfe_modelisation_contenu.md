@@ -143,8 +143,8 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
   </tr>
   <tr>
     <td>paysNationalite : [0..*] Code</td>
-    <td>Pays de nationalité actuelle ou rattachement de la nationalité à un espace de pays conventionné.<br>
-    Nomenclature(s) associée(s) : <a href="https://mos.esante.gouv.fr/NOS/TRE_R89-RegroupementPays/FHIR/TRE-R89-RegroupementPays">TRE_R89-RegroupementPays</a></td>
+    <td>Pays de nationalité de l'usager.<br>
+    Nomenclature(s) associée(s) : ISO 3166</td>
   </tr>
   <tr>
     <td>langueParlee : [0..*] Code</td>
@@ -263,7 +263,7 @@ Adresse géopostale. Un emplacement auquel l’usager peut être trouvé, d'apr�
 
 ##### Classe Telecommunication
 
-Adresse de télécommunication à laquelle l’usager peut être contactée (téléphone, fax, e-mail, URL, etc.).
+Adresse de télécommunication à laquelle l’usager peut être contactée (téléphone, fax, e-mail, URL, etc.). Cet objet provient du MOS, il a été profilé pour ce volet.
 
 <table style="width:100%">
   <tr>
@@ -271,12 +271,12 @@ Adresse de télécommunication à laquelle l’usager peut être contactée (té
     <th>Description</th>
   </tr>
   <tr>
-    <td>canal : [0..1] Code</td>
+    <td>canal : [1..1] Code</td>
     <td>Code spécifiant le canal ou la manière dont s'établit la communication (téléphone, e-mail, URL, etc.).<br>
     Nomenclature(s) associée(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J225-CanalCommunication-ROR/FHIR/JDV-J225-CanalCommunication-ROR">JDV-J225-CanalCommunication-ROR</a></td>
   </tr>
   <tr>
-    <td>adresseTelecom : [0..1] Texte</td>
+    <td>adresseTelecom : [1..1] Texte</td>
     <td>Valeur de l'adresse de télécommunication dans le format induit par le canal de communication, par exemple un numéro de téléphone, une adresse de courrier électronique, une adresse URL, etc.</td>
   </tr>
     <tr>
