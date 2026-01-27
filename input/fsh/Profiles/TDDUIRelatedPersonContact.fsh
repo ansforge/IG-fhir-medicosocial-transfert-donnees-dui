@@ -2,13 +2,22 @@ Profile: TDDUIRelatedPersonContact
 Parent: FRCoreRelatedPersonProfile
 Id: tddui-related-person-contact
 Title: "TDDUI RelatedPerson Contact"
-Description: "Profil de la ressource FRCoreRelatedPersonProfile permettant de représenter le contact PersonnePhyisique."
+Description: "Profil de la ressource FRCoreRelatedPersonProfile permettant de représenter le contact PersonnePhysique."
 
 * extension contains 
     tddui-nationality named nationality 0..* and
     tddui-comment named comment 0..1
 
 * patient only Reference(TDDUIPatient or TDDUIPatientINS)
+
+* relationship contains
+    LegalProtection 0..1
+
+* relationship[RelationType] from TDDUIRelation (required)
+* relationship[RelationType].coding.system = "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode"
+
+* relationship[LegalProtection] from TDDUIProtectionJuridique (required)
+* relationship[LegalProtection].coding.system = "https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique"
 
 * name only tddui-humanname
 
@@ -34,5 +43,3 @@ Title:    "Modèle de contenu DUI"
 * address -> "adresse"
 * telecom -> "telecommunication"
 * extension[comment] -> "commentaire"
-
-
