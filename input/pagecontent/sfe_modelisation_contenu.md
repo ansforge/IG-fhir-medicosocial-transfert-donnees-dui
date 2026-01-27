@@ -1804,7 +1804,7 @@ La classe EntiteGeographique est issue du MOS et est profilée pour ce volet.
  </tr>
   </table>
 
-  ##### Classe ReferentScolaire
+##### Classe ReferentScolaire
 
 ** Classe spécialisée, hérite de la classe PersonnePhysique
 
