@@ -117,11 +117,11 @@ Adresse géopostale. Un emplacement auquel l’usager peut être trouvé, d'apr�
 Adresse de télécommunication à laquelle l’usager peut être contactée (téléphone, fax, e-mail, URL, etc.). Cet objet provient du MOS, il a été profilé pour ce volet.
 
 * Nom: canal : [1..1] Code
-  * Description: Code spécifiant le canal ou la manière dont s'établit la communication (téléphone, e-mail, URL, etc.).Nomenclature(s) associée(s) :[JDV-J225-CanalCommunication-ROR](https://mos.esante.gouv.fr/NOS/JDV_J225-CanalCommunication-ROR/FHIR/JDV-J225-CanalCommunication-ROR)
+  * Description: Code spécifiant le canal ou la manière dont s'établit la communication (téléphone, e-mail, URL, etc.).Jeu(x) de valeur associé(s) :[JDV-J225-CanalCommunication-ROR](https://mos.esante.gouv.fr/NOS/JDV_J225-CanalCommunication-ROR/FHIR/JDV-J225-CanalCommunication-ROR)
 * Nom: adresseTelecom : [1..1] Texte
   * Description: Valeur de l'adresse de télécommunication dans le format induit par le canal de communication, par exemple un numéro de téléphone, une adresse de courrier électronique, une adresse URL, etc.
-* Nom: utilisation : [0..1] Texte
-  * Description: Précise l'utilisation du canal de communication (par exemple à des fins professionnelles, privées, etc.).
+* Nom: utilisation : [0..1] Code
+  * Description: Précise l'utilisation du canal de communication (par exemple à des fins professionnelles, privées, etc.).Jeu(x) de valeur associé(s) :[contact-point-use](http://hl7.org/fhir/contact-point-use)
 
 ##### Classe Courrier
 
