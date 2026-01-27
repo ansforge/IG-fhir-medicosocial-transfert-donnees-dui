@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui | *Version*:2.2.0-ballot |
-| Active as of 2026-01-23 | *Computable Name*:TDDUI |
+| Active as of 2026-01-27 | *Computable Name*:TDDUI |
 
  **Brief description of this Implementation Guide**
  The Digital User File (DUI) centralizes all information concerning the person being cared for in social and medico-social facilities and services. The aim of this implementation guide is to define the specifications for DUI data transfer. 
@@ -86,7 +86,7 @@ Les ressources profilées dans le cadre de ce guide d'implémentation sont les s
 | [FR Core Practitioner Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner|2.1.0) | [TDDUIPractitioner](StructureDefinition-tddui-practitioner.md) | Profil de la ressource FRCorePractitionerProfile permettant de représenter un professionnel du médicosocial dans le cadre de TDDUI. Le profil AsPractitionerRoleProfile n'a pas été utilisé car il comportait trop de contraintes non présentes dans les DUI. |
 | [FR Core Practitioner Role](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role|2.1.0) | [TDDUIPractitionerRole](StructureDefinition-tddui-practitioner-role.md) | Profil de la ressource FRCorePractitionerRole permettant de représenter un Professionnel. |
 | [QuestionnaireResponse](http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse|4.0.1) | [TDDUIQuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md) | Profil de la ressource QuestionnaireResponse utilisé pour transmettre les réponses aux questionnaires dans le cadre des évaluations. |
-| [FR Core Related Person Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person|2.1.0) | [TDDUIRelatedPersonContact](StructureDefinition-tddui-related-person-contact.md) | Profil de la ressource FRCoreRelatedPersonProfile permettant de représenter le contact PersonnePhyisique. |
+| [FR Core Related Person Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person|2.1.0) | [TDDUIRelatedPersonContact](StructureDefinition-tddui-related-person-contact.md) | Profil de la ressource FRCoreRelatedPersonProfile permettant de représenter le contact PersonnePhysique. |
 | [ServiceRequest](http://hl7.org/fhir/StructureDefinition/ServiceRequest|4.0.1) | [TDDUIServiceRequestBesoin](StructureDefinition-tddui-service-request-besoin.md) | Profil de la ressource ServiceRequest permettant de représenter les besoins de l'usager. |
 | [Task](http://hl7.org/fhir/StructureDefinition/Task|4.0.1) | [TDDUITaskAction](StructureDefinition-tddui-task-action.md) | Profil de la ressource Task permettant de représenter les actions réalisées dans le cadre du projet personnalisé. |
 | [Task](http://hl7.org/fhir/StructureDefinition/Task|4.0.1) | [TDDUITaskBilan](StructureDefinition-tddui-task-bilan.md) | Profil de la ressource Task permettant de représenter le bilan du projet personnalisé. |
@@ -141,7 +141,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2026-01-23T10:30:04+00:00",
+  "date" : "2026-01-27T15:50:42+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -994,20 +994,6 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "RelatedPerson"
-          }
-        ],
-        "reference" : {
-          "reference" : "RelatedPerson/fr-core-related-person-example"
-        },
-        "name" : "fr-core-related-person-example",
-        "description" : "Exemple de la famille de l'usager.",
-        "exampleBoolean" : true
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "CodeSystem"
           }
         ],
@@ -1778,6 +1764,20 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/tddui-protection-juridique"
+        },
+        "name" : "TDDUI Protection Juridique",
+        "description" : "ValueSet définissant la protection juridique.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:resource"
           }
         ],
@@ -1799,7 +1799,21 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           "reference" : "StructureDefinition/tddui-related-person-contact"
         },
         "name" : "TDDUI RelatedPerson Contact",
-        "description" : "Profil de la ressource FRCoreRelatedPersonProfile permettant de représenter le contact PersonnePhyisique.",
+        "description" : "Profil de la ressource FRCoreRelatedPersonProfile permettant de représenter le contact PersonnePhysique.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/tddui-relation"
+        },
+        "name" : "TDDUI Relation",
+        "description" : "ValueSet définissant les relations.",
         "exampleBoolean" : false
       },
       {
@@ -2613,6 +2627,20 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "name" : "tddui-questionnaire-response-situation-ssiad-example",
         "description" : "Grille de réponse de la situation SSIAD",
         "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response|2.2.0-ballot"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "RelatedPerson"
+          }
+        ],
+        "reference" : {
+          "reference" : "RelatedPerson/tddui-related-person-contact-example"
+        },
+        "name" : "tddui-related-person-contact-example",
+        "description" : "Exemple de la famille de l'usager.",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact|2.2.0-ballot"
       },
       {
         "extension" : [

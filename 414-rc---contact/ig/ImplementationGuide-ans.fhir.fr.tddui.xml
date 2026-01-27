@@ -10,7 +10,7 @@
   <name value="TDDUI"/>
   <title value="Médicosocial - Transfert de données DUI"/>
   <status value="active"/>
-  <date value="2026-01-23T10:30:04+00:00"/>
+  <date value="2026-01-27T15:50:42+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -546,17 +546,6 @@
       <name value="Evénement hors prestation"/>
       <description value="Evénement hors prestation prévue dans le projet personnalisé de l’usager."/>
       <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="RelatedPerson"/>
-      </extension>
-      <reference>
-        <reference value="RelatedPerson/fr-core-related-person-example"/>
-      </reference>
-      <name value="fr-core-related-person-example"/>
-      <description value="Exemple de la famille de l'usager."/>
-      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1165,6 +1154,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/tddui-protection-juridique"/>
+      </reference>
+      <name value="TDDUI Protection Juridique"/>
+      <description value="ValueSet définissant la protection juridique."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -1182,7 +1182,18 @@
         <reference value="StructureDefinition/tddui-related-person-contact"/>
       </reference>
       <name value="TDDUI RelatedPerson Contact"/>
-      <description value="Profil de la ressource FRCoreRelatedPersonProfile permettant de représenter le contact PersonnePhyisique."/>
+      <description value="Profil de la ressource FRCoreRelatedPersonProfile permettant de représenter le contact PersonnePhysique."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/tddui-relation"/>
+      </reference>
+      <name value="TDDUI Relation"/>
+      <description value="ValueSet définissant les relations."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1822,6 +1833,17 @@
       <name value="tddui-questionnaire-response-situation-ssiad-example"/>
       <description value="Grille de réponse de la situation SSIAD"/>
       <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response|2.2.0-ballot"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/tddui-related-person-contact-example"/>
+      </reference>
+      <name value="tddui-related-person-contact-example"/>
+      <description value="Exemple de la famille de l'usager."/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact|2.2.0-ballot"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

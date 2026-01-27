@@ -47,7 +47,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [TDDUI Practitioner](StructureDefinition-tddui-practitioner.md) | Profil de la ressource FRCorePractitionerProfile permettant de représenter un professionnel du médicosocial dans le cadre de TDDUI. Le profil AsPractitionerRoleProfile n'a pas été utilisé car il comportait trop de contraintes non présentes dans les DUI. |
 | [TDDUI Practitioner Role](StructureDefinition-tddui-practitioner-role.md) | Profil de la ressource FRCorePractitionerRole permettant de représenter un Professionnel. |
 | [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md) | Profil de la ressource QuestionnaireResponse utilisé pour transmettre les réponses aux questionnaires dans le cadre des évaluations. |
-| [TDDUI RelatedPerson Contact](StructureDefinition-tddui-related-person-contact.md) | Profil de la ressource FRCoreRelatedPersonProfile permettant de représenter le contact PersonnePhyisique. |
+| [TDDUI RelatedPerson Contact](StructureDefinition-tddui-related-person-contact.md) | Profil de la ressource FRCoreRelatedPersonProfile permettant de représenter le contact PersonnePhysique. |
 | [TDDUI ServiceRequest Besoin](StructureDefinition-tddui-service-request-besoin.md) | Profil de la ressource ServiceRequest permettant de représenter les besoins de l'usager. |
 | [TDDUI Task Action](StructureDefinition-tddui-task-action.md) | Profil de la ressource Task permettant de représenter les actions réalisées dans le cadre du projet personnalisé. |
 | [TDDUI Task Bilan](StructureDefinition-tddui-task-bilan.md) | Profil de la ressource Task permettant de représenter le bilan du projet personnalisé. |
@@ -122,6 +122,8 @@ These define sets of codes used by systems conforming to this implementation gui
 | [TDDUI Goal Attente Note ValueSet](ValueSet-tddui-goal-attente-note-vs.md) | ValueSet définissant les types de notes pour l'élément Goal.note. |
 | [TDDUI Goal Objectif Note ValueSet](ValueSet-tddui-goal-objectif-note-vs.md) | ValueSet définissant les types de notes pour l'élément Goal.note. |
 | [TDDUI Patient Identifier ValueSet](ValueSet-tddui-patient-identifier-vs.md) | ValueSet for TDDUI Patient's identifier types |
+| [TDDUI Protection Juridique](ValueSet-tddui-protection-juridique.md) | ValueSet définissant la protection juridique. |
+| [TDDUI Relation](ValueSet-tddui-relation.md) | ValueSet définissant les relations. |
 | [TDDUI SERAFIN ValueSet](ValueSet-tddui-serafin-valueset.md) | ValueSet contenant les codes SERAFIN (prestations directes et indirectes) pour le profil TDDUI Encounter Evenement. |
 
 ### Terminology: Code Systems 
@@ -148,7 +150,6 @@ These are example instances that show what data produced and consumed by systems
 | | |
 | :--- | :--- |
 | [TDDUIBundleExample](Bundle-ExampleTDDUIBundle.md) | Exemple de bundle conforme au profil TDDUIBundle |
-| [fr-core-related-person-example](RelatedPerson-fr-core-related-person-example.md) | Exemple de la famille de l'usager. |
 | [tddui-encounter-evenement-example](Encounter-tddui-encounter-evenement-example.md) | Exemple d'un évènement |
 | [tddui-encounter-sejour-example](Encounter-tddui-encounter-sejour-example.md) | Exemple d'un séjour en ESSMS |
 | [tddui-event-location-example](Location-tddui-event-location-example.md) | Lieu de l'évènement |
@@ -196,6 +197,7 @@ These are example instances that show what data produced and consumed by systems
 | [tddui-questionnaire-response-serafin-precision-example](QuestionnaireResponse-tddui-questionnaire-response-serafin-precision-example.md) | Evaluation SERAFIN pour un besoin d'hébergement adapté avec précision |
 | [tddui-questionnaire-response-serafin-sans-precision-example](QuestionnaireResponse-tddui-questionnaire-response-serafin-sans-precision-example.md) | Evaluation SERAFIN pour un besoin d'hébergement adapté sans précision |
 | [tddui-questionnaire-response-situation-ssiad-example](QuestionnaireResponse-tddui-questionnaire-response-situation-ssiad-example.md) | Grille de réponse de la situation SSIAD |
+| [tddui-related-person-contact-example](RelatedPerson-tddui-related-person-contact-example.md) | Exemple de la famille de l'usager. |
 | [tddui-task-transport-example](Task-tddui-task-transport-example.md) | Exemple du transport. |
 | [tddui-task-transport-professionel-example](Task-tddui-task-transport-professionel-example.md) | Exemple du transport du professionnel. |
 | [tddui-task-transport-usager-example](Task-tddui-task-transport-usager-example.md) | Exemple du transport de l'usager. |

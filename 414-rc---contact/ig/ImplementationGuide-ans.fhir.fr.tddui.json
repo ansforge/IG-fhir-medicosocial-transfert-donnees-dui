@@ -10,7 +10,7 @@
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2026-01-23T10:30:04+00:00",
+  "date" : "2026-01-27T15:50:42+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -729,18 +729,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "RelatedPerson"
-      }],
-      "reference" : {
-        "reference" : "RelatedPerson/fr-core-related-person-example"
-      },
-      "name" : "fr-core-related-person-example",
-      "description" : "Exemple de la famille de l'usager.",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
       "reference" : {
@@ -1401,6 +1389,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/tddui-protection-juridique"
+      },
+      "name" : "TDDUI Protection Juridique",
+      "description" : "ValueSet définissant la protection juridique.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -1419,7 +1419,19 @@
         "reference" : "StructureDefinition/tddui-related-person-contact"
       },
       "name" : "TDDUI RelatedPerson Contact",
-      "description" : "Profil de la ressource FRCoreRelatedPersonProfile permettant de représenter le contact PersonnePhyisique.",
+      "description" : "Profil de la ressource FRCoreRelatedPersonProfile permettant de représenter le contact PersonnePhysique.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/tddui-relation"
+      },
+      "name" : "TDDUI Relation",
+      "description" : "ValueSet définissant les relations.",
       "exampleBoolean" : false
     },
     {
@@ -2117,6 +2129,18 @@
       "name" : "tddui-questionnaire-response-situation-ssiad-example",
       "description" : "Grille de réponse de la situation SSIAD",
       "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response|2.2.0-ballot"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/tddui-related-person-contact-example"
+      },
+      "name" : "tddui-related-person-contact-example",
+      "description" : "Exemple de la famille de l'usager.",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact|2.2.0-ballot"
     },
     {
       "extension" : [{

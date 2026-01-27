@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact | *Version*:2.2.0-ballot |
-| Active as of 2026-01-23 | *Computable Name*:TDDUIRelatedPersonContact |
+| Active as of 2026-01-27 | *Computable Name*:TDDUIRelatedPersonContact |
 
  
-Profil de la ressource FRCoreRelatedPersonProfile permettant de représenter le contact PersonnePhyisique. 
+Profil de la ressource FRCoreRelatedPersonProfile permettant de représenter le contact PersonnePhysique. 
 
 **Utilisations:**
 
-* Ce Profil nest utilisé par aucun profil dans ce guide dimplémentation
+* Exemples pour ce Profil: [RelatedPerson/tddui-related-person-contact-example](RelatedPerson-tddui-related-person-contact-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-related-person-contact)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-related-person
   "name" : "TDDUIRelatedPersonContact",
   "title" : "TDDUI RelatedPerson Contact",
   "status" : "active",
-  "date" : "2026-01-23T10:30:04+00:00",
+  "date" : "2026-01-27T15:50:42+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -54,7 +54,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-related-person
       ]
     }
   ],
-  "description" : "Profil de la ressource FRCoreRelatedPersonProfile permettant de représenter le contact PersonnePhyisique.",
+  "description" : "Profil de la ressource FRCoreRelatedPersonProfile permettant de représenter le contact PersonnePhysique.",
   "jurisdiction" : [
     {
       "coding" : [
@@ -184,6 +184,32 @@ Other representations of profile: [CSV](StructureDefinition-tddui-related-person
             ]
           }
         ]
+      },
+      {
+        "id" : "RelatedPerson.relationship:RelationType",
+        "path" : "RelatedPerson.relationship",
+        "sliceName" : "RelationType",
+        "binding" : {
+          "strength" : "required",
+          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-relation|2.2.0-ballot"
+        }
+      },
+      {
+        "id" : "RelatedPerson.relationship:LegalProtection",
+        "path" : "RelatedPerson.relationship",
+        "sliceName" : "LegalProtection",
+        "min" : 0,
+        "max" : "1",
+        "binding" : {
+          "strength" : "required",
+          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-protection-juridique|2.2.0-ballot"
+        }
+      },
+      {
+        "id" : "RelatedPerson.relationship:LegalProtection.coding.system",
+        "path" : "RelatedPerson.relationship.coding.system",
+        "min" : 1,
+        "patternUri" : "https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique"
       },
       {
         "id" : "RelatedPerson.name",
