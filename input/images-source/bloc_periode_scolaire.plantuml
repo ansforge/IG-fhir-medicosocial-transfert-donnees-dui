@@ -19,9 +19,7 @@ class PeriodeScolaire #PeachPuff {
     commentaireAnneeScolaire : Texte [0..1]
 }
 
-class ReferentScolaire #PeachPuff {
-    contactReferentScolaire  : Telecommunication [0..*]
-}
+class ReferentScolaire #PeachPuff
 
 Usager "1" - "*" PeriodeScolaire
 PersonnePhysique <|-- ReferentScolaire
