@@ -51,9 +51,9 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
 * Nom: paysNaissance : [0..1] Code
   * Description: Pays de naissance de la personne.Nomenclature(s) associée(s) : ISO 3166Cet attribut fait partie des traits INS. Il est obligatoire si l’identité INS est qualifiée.Il est préconisé si le NIR ou l'identifiant local est véhiculé et que l'identité n'est pas qualifiée.
 * Nom: situationFamiliale : [0..1] Code
-  * Description: Situation familiale de l’usager.Jeu(x) associé(s) :[JDV-J176-SituationVieQuotidienne-MDPH](https://mos.esante.gouv.fr/NOS/JDV_J176-SituationVieQuotidienne-MDPH/FHIR/JDV-J176-SituationVieQuotidienne-MDPH)
+  * Description: Situation familiale de l’usager.Jeu(x) de valeur(s) associé(s) :[JDV-J176-SituationVieQuotidienne-MDPH](https://mos.esante.gouv.fr/NOS/JDV_J176-SituationVieQuotidienne-MDPH/FHIR/JDV-J176-SituationVieQuotidienne-MDPH)
 * Nom: compositionFoyer : [0..1] Code
-  * Description: Désigne avec qui vit l’usager dans son logement.Jeu(x) associé(s) : Jeu(x) associé(s) :[JDV-J385-composition-foyer-ms](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j385-composition-foyer-ms/$expand)
+  * Description: Désigne avec qui vit l’usager dans son logement.Jeu(x) de valeur(s) associé(s) :[JDV-J385-composition-foyer-ms](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j385-composition-foyer-ms/$expand)
 * Nom: descriptionCompositionFoyer : [0..1] Texte
   * Description: Description de la composition du foyer, c’est-à-dire des personnes qui vivent dans le logement avec l'usager.
 * Nom: paysNationalite : [0..*] Code
@@ -83,8 +83,6 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
 
 Adresse géopostale. Un emplacement auquel l’usager peut être trouvé, d'après la norme AFNOR NF Z10-011.
 
-* Nom: idAdresse : [0..1] Identifiant
-  * Description: Identifiant fonctionnel de l’adresse.
 * Nom: type : [0..1] Code
   * Description: Indique le ou les types d'adresse tel que "Adresse du domicile", "Adresse du domicile de secours", etc.
 * Nom: numeroVoie : [0..1] Texte
@@ -121,16 +119,14 @@ Adresse de télécommunication à laquelle l’usager peut être contactée (té
 * Nom: adresseTelecom : [1..1] Texte
   * Description: Valeur de l'adresse de télécommunication dans le format induit par le canal de communication, par exemple un numéro de téléphone, une adresse de courrier électronique, une adresse URL, etc.
 * Nom: utilisation : [0..1] Code
-  * Description: Précise l'utilisation du canal de communication (par exemple à des fins professionnelles, privées, etc.).Jeu(x) de valeur associé(s) :[contact-point-use](http://hl7.org/fhir/contact-point-use)
+  * Description: Précise l'utilisation du canal de communication (par exemple à des fins professionnelles, privées, etc.).Jeu(x) de valeur associé(s) : JDV en cours de d'analyse NOS
 
 ##### Classe Courrier
 
 Adresse de courrier de l’usager.
 
 * Nom: typeCourrier : [0..1] Code
-  * Description: Type de courrier.Jeu(x) associé(s) : en cours de création NOS
-* Nom: idAdresse : [0..1] Identifiant
-  * Description: Adresse à utiliser pour l’envoi du type de courrier.
+  * Description: Type de courrier qui peut être adressé à l'usager.Jeu(x) associé(s) : en cours de création NOS
 * Nom: libelleDestinataire : [0..1] Texte
   * Description: Libellé du destinataire du courrier.Par exemple nom et prénom dans le cas d’une personne physique.
 * Nom: organismeDomiciliation : [0..1] Texte
@@ -833,8 +829,6 @@ La classe EntiteGeographique est issue du MOS et est profilée pour ce volet.
   * Description: Situation scolaire suivie de l'usager.Jeu(x) de valeur(s) associé(s) : en cours de création NOS
 * Nom: typeEnseignementSpecialise : [0..*] ConceptCode
   * Description: Type enseignement spécialisé.Jeu(x) de valeur(s) associé(s) :[JDV-J386-TYPE-ENSEIGNEMENT-SPECIALISE-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j386-type-enseignement-specialise-ms/$expand)
-* Nom: referentScolaire : [0..*][PersonnePhysique](#PersonnePhysique)
-  * Description: Référent scolaire de l'usager pour cette année de scolarité.
 * Nom: contactReferentScolaire : [0..*][Telecommunication](#classe-telecommunication)
   * Description: Télécommunication du référent scolaire.
 * Nom: ecole : [0..1][EntiteGeographique](#classe-entité-géographique)
@@ -845,6 +839,15 @@ La classe EntiteGeographique est issue du MOS et est profilée pour ce volet.
   * Description: Volume horaire de scolarisation de l'usager sur la période de scolarité. L'unité correspond ici à la demi-journée.
 * Nom: commentaireAnneeScolaire : [0..1] Texte
   * Description: Commentaire sur l'année scolaire.
+
+##### Classe ReferentScolaire
+
+** Classe spécialisée, hérite de la classe PersonnePhysique
+
+La loi place l’enseignant référent comme l’acteur central des actions conduites en direction des élèves handicapés. Il est l’interlocuteur privilégié des parents et des différents acteurs autour de la scolarisation d’un enfant, qu’il soit scolarisé en école ordinaire ou bien dans le milieu spécialisé.
+
+* Nom: contactReferentScolaire : [0..*][Telecommunication](#classe-telecommunication)
+  * Description: Télécommunication du référent scolaire.
 
 ### Partie Coordination des acteurs
 
