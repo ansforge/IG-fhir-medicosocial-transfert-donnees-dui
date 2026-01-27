@@ -846,9 +846,6 @@ La classe EntiteGeographique est issue du MOS et est profilée pour ce volet.
 
 La loi place l’enseignant référent comme l’acteur central des actions conduites en direction des élèves handicapés. Il est l’interlocuteur privilégié des parents et des différents acteurs autour de la scolarisation d’un enfant, qu’il soit scolarisé en école ordinaire ou bien dans le milieu spécialisé.
 
-* Nom: contactReferentScolaire : [0..*][Telecommunication](#classe-telecommunication)
-  * Description: Télécommunication du référent scolaire.
-
 ### Partie Coordination des acteurs
 
 #### Evènement de l'agenda
