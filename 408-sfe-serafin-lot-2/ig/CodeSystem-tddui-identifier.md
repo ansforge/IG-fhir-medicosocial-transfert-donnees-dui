@@ -37,7 +37,7 @@ TDDUI Patient's identifier
   "title" : "TDDUI FR Core CodeSystem v2-0203",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-27T15:24:55+00:00",
+  "date" : "2026-01-27T16:32:30+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
