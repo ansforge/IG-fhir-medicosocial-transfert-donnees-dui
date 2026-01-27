@@ -273,15 +273,16 @@ Adresse de télécommunication à laquelle l’usager peut être contactée (té
   <tr>
     <td>canal : [1..1] Code</td>
     <td>Code spécifiant le canal ou la manière dont s'établit la communication (téléphone, e-mail, URL, etc.).<br>
-    Nomenclature(s) associée(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J225-CanalCommunication-ROR/FHIR/JDV-J225-CanalCommunication-ROR">JDV-J225-CanalCommunication-ROR</a></td>
+    Jeu(x) de valeur associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J225-CanalCommunication-ROR/FHIR/JDV-J225-CanalCommunication-ROR">JDV-J225-CanalCommunication-ROR</a></td>
   </tr>
   <tr>
     <td>adresseTelecom : [1..1] Texte</td>
     <td>Valeur de l'adresse de télécommunication dans le format induit par le canal de communication, par exemple un numéro de téléphone, une adresse de courrier électronique, une adresse URL, etc.</td>
   </tr>
     <tr>
-    <td>utilisation : [0..1] Texte</td>
-    <td>Précise l'utilisation du canal de communication (par exemple à des fins professionnelles, privées, etc.).</td>
+    <td>utilisation : [0..1] Code</td>
+    <td>Précise l'utilisation du canal de communication (par exemple à des fins professionnelles, privées, etc.).<br>
+    Jeu(x) de valeur associé(s) : <a href="http://hl7.org/fhir/contact-point-use">contact-point-use</a></td>
   </tr>
 </table>
 
