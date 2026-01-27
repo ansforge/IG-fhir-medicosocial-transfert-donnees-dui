@@ -57,7 +57,7 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
 * Nom: descriptionCompositionFoyer : [0..1] Texte
   * Description: Description de la composition du foyer, c’est-à-dire des personnes qui vivent dans le logement avec l'usager.
 * Nom: paysNationalite : [0..*] Code
-  * Description: Pays de nationalité actuelle ou rattachement de la nationalité à un espace de pays conventionné.Nomenclature(s) associée(s) :[TRE_R89-RegroupementPays](https://mos.esante.gouv.fr/NOS/TRE_R89-RegroupementPays/FHIR/TRE-R89-RegroupementPays)
+  * Description: Pays de nationalité de l'usager.Nomenclature(s) associée(s) : ISO 3166
 * Nom: langueParlee : [0..*] Code
   * Description: Langue parlée par l’usager.Jeu(x) de valeur(s) associé(s) :[JDV_J115-Langue-ENREG](https://mos.esante.gouv.fr/NOS/JDV_J115-Langue-ENREG/FHIR/JDV-J115-Langue-ENREG)
 * Nom: dateDeces : [0..1] DateHeure
@@ -114,11 +114,11 @@ Adresse géopostale. Un emplacement auquel l’usager peut être trouvé, d'apr�
 
 ##### Classe Telecommunication
 
-Adresse de télécommunication à laquelle l’usager peut être contactée (téléphone, fax, e-mail, URL, etc.).
+Adresse de télécommunication à laquelle l’usager peut être contactée (téléphone, fax, e-mail, URL, etc.). Cet objet provient du MOS, il a été profilé pour ce volet.
 
-* Nom: canal : [0..1] Code
+* Nom: canal : [1..1] Code
   * Description: Code spécifiant le canal ou la manière dont s'établit la communication (téléphone, e-mail, URL, etc.).Nomenclature(s) associée(s) :[JDV-J225-CanalCommunication-ROR](https://mos.esante.gouv.fr/NOS/JDV_J225-CanalCommunication-ROR/FHIR/JDV-J225-CanalCommunication-ROR)
-* Nom: adresseTelecom : [0..1] Texte
+* Nom: adresseTelecom : [1..1] Texte
   * Description: Valeur de l'adresse de télécommunication dans le format induit par le canal de communication, par exemple un numéro de téléphone, une adresse de courrier électronique, une adresse URL, etc.
 * Nom: utilisation : [0..1] Texte
   * Description: Précise l'utilisation du canal de communication (par exemple à des fins professionnelles, privées, etc.).

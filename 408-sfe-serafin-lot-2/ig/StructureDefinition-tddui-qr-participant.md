@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant | *Version*:2.2.0-ballot |
-| Active as of 2026-01-26 | *Computable Name*:TDDUIQRParticipant |
+| Active as of 2026-01-27 | *Computable Name*:TDDUIQRParticipant |
 
 Extension permettant d'ajouter le responsable de l'évaluation et l'auteur du statut de l'évaluation dans un QuestionnaireResponse.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-qr-participant
   "name" : "TDDUIQRParticipant",
   "title" : "Responsable et auteur du statut de l'évaluation",
   "status" : "active",
-  "date" : "2026-01-26T08:31:39+00:00",
+  "date" : "2026-01-27T09:38:15+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

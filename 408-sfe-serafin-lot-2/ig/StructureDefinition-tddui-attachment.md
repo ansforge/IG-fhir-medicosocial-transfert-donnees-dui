@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment | *Version*:2.2.0-ballot |
-| Active as of 2026-01-26 | *Computable Name*:TDDUIAttachment |
+| Active as of 2026-01-27 | *Computable Name*:TDDUIAttachment |
 
 Extension permettant de véhiculer des pièces jointes que ce soit pour l'évaluation, l'évènement ou le projet personnalisé. L'extension référence le profil PDSm_SimplifiedPublish.
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-attachment.csv
   "name" : "TDDUIAttachment",
   "title" : "Pièce jointe",
   "status" : "active",
-  "date" : "2026-01-26T08:31:39+00:00",
+  "date" : "2026-01-27T09:38:15+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
