@@ -129,12 +129,12 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
   <tr>
     <td>situationFamiliale : [0..1] Code</td>
     <td>Situation familiale de l’usager.<br>
-    Jeu(x) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J176-SituationVieQuotidienne-MDPH/FHIR/JDV-J176-SituationVieQuotidienne-MDPH">JDV-J176-SituationVieQuotidienne-MDPH</a></td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J176-SituationVieQuotidienne-MDPH/FHIR/JDV-J176-SituationVieQuotidienne-MDPH">JDV-J176-SituationVieQuotidienne-MDPH</a></td>
   </tr>
   <tr>
     <td>compositionFoyer : [0..1] Code</td>
     <td>Désigne avec qui vit l’usager dans son logement.<br>
-    Jeu(x) associé(s) : Jeu(x) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j385-composition-foyer-ms/$expand">JDV-J385-composition-foyer-ms</a></td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j385-composition-foyer-ms/$expand">JDV-J385-composition-foyer-ms</a></td>
   </tr>
   <tr>
     <td>descriptionCompositionFoyer : [0..1] Texte</td>
@@ -201,10 +201,6 @@ Adresse géopostale. Un emplacement auquel l’usager peut être trouvé, d'apr�
   <tr>
     <th>Nom</th>
     <th>Description</th>
-  </tr>
-  <tr>
-    <td>idAdresse : [0..1] Identifiant </td>
-    <td>Identifiant fonctionnel de l’adresse.</td>
   </tr>
   <tr>
     <td>type : [0..1] Code</td>
@@ -282,7 +278,7 @@ Adresse de télécommunication à laquelle l’usager peut être contactée (té
     <tr>
     <td>utilisation : [0..1] Code</td>
     <td>Précise l'utilisation du canal de communication (par exemple à des fins professionnelles, privées, etc.).<br>
-    Jeu(x) de valeur associé(s) : <a href="http://hl7.org/fhir/contact-point-use">contact-point-use</a></td>
+    Jeu(x) de valeur associé(s) : JDV en cours de d'analyse NOS</td>
   </tr>
 </table>
 
@@ -297,12 +293,8 @@ Adresse de courrier de l’usager.
   </tr>
   <tr>
     <td>typeCourrier : [0..1] Code</td>
-    <td>Type de courrier.<br>
+    <td>Type de courrier qui peut être adressé à l'usager.<br>
     Jeu(x) associé(s) : en cours de création NOS</td>
-  </tr>
-  <tr>
-    <td>idAdresse : [0..1] Identifiant</td>
-    <td>Adresse à utiliser pour l’envoi du type de courrier.</td>
   </tr>
   <tr>
     <td>libelleDestinataire : [0..1] Texte</td>
@@ -1790,10 +1782,6 @@ La classe EntiteGeographique est issue du MOS et est profilée pour ce volet.
     Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j386-type-enseignement-specialise-ms/$expand">JDV-J386-TYPE-ENSEIGNEMENT-SPECIALISE-MS</a></td>
  </tr>
  <tr>
-    <td>referentScolaire : [0..*] <a href="#PersonnePhysique">PersonnePhysique</a></td>
-    <td>Référent scolaire de l'usager pour cette année de scolarité.</td>
- </tr>
- <tr>
     <td>contactReferentScolaire : [0..*] <a href="#classe-telecommunication">Telecommunication</a></td>
     <td>Télécommunication du référent scolaire.</td>
  </tr>
@@ -1815,6 +1803,24 @@ La classe EntiteGeographique est issue du MOS et est profilée pour ce volet.
     <td>Commentaire sur l'année scolaire.</td>
  </tr>
   </table>
+
+  ##### Classe ReferentScolaire
+
+** Classe spécialisée, hérite de la classe PersonnePhysique
+
+La loi place l’enseignant référent comme l’acteur central des actions conduites en direction des élèves handicapés. Il est l’interlocuteur privilégié des parents et des différents acteurs autour de la scolarisation d’un enfant, qu’il soit scolarisé en école ordinaire ou bien dans le milieu spécialisé.
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>contactReferentScolaire : [0..*] <a href="#classe-telecommunication">Telecommunication</a></td>
+    <td>Télécommunication du référent scolaire.</td>
+ </tr>
+ </table>
+
 
 ### Partie Coordination des acteurs
 

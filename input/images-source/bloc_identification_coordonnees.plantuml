@@ -34,7 +34,6 @@ class Usager #LightPink {
 }
 
 class Adresse #PaleGreen {
-    idAdresse : Identifiant [1..1]
     type : Code [0..1]
     numeroVoie : Texte [0..1]
     libelleVoie : Texte [0..1]
@@ -54,13 +53,13 @@ class Telecommunication #PaleGreen {
 
 class Courrier #PaleGreen {
     typeCourrier : Code [0..1]
-    idAdresse : Identifiant [0..1]
     libelleDestinataire : Texte [0..1]
     organismeDomiciliation : Texte [0..1]
 }
 
-Adresse "*" - "1" Usager
-Usager "1" - "*" Telecommunication
-Usager "1" -- "*" Courrier
+Usager "1" -- "*" Adresse
+Usager "1" -- "*" Telecommunication
+Usager "1" - "*" Courrier
+Courrier "1" - "0..1" Adresse
 
 @enduml
