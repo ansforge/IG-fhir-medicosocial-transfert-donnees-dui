@@ -1,6 +1,6 @@
-ValueSet: TDDUIPatientIdentifierVs
-Id: tddui-patient-identifier-vs
-Title: "TDDUI Patient Identifier ValueSet"
+ValueSet: TDDUIPatientIdentifier
+Id: tddui-patient-identifier
+Title: "TDDUI Patient Identifier"
 Description: "ValueSet for TDDUI Patient's identifier types"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^experimental = false

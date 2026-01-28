@@ -1,9 +1,9 @@
-ValueSet: TDDUIEncounterIdentifierVs
-Id: tddui-encounter-identifier-vs
-Title: "TDDUI Encounter Identifier Type ValueSet"
+ValueSet: TDDUIEncounterIdentifier
+Id: tddui-encounter-identifier
+Title: "TDDUI Encounter Identifier Type"
 Description: "ValueSet for TDDUI Encounter's identifier types"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^experimental = false
 
-* include codes from system TDDUIEncounterIdentifierCs
+* include codes from system TDDUIEncounterIdentifier
 * include codes from valueset http://hl7.org/fhir/ValueSet/identifier-type
