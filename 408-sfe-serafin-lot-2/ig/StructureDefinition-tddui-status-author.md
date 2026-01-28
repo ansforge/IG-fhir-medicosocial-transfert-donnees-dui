@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-status-author | *Version*:2.2.0-ballot |
-| Active as of 2026-01-27 | *Computable Name*:TDDUIStatusAuthor |
+| Active as of 2026-01-28 | *Computable Name*:TDDUIStatusAuthor |
 
 Extension permettant de représenter la profession du professionnel.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-status-author.
   "name" : "TDDUIStatusAuthor",
   "title" : "TDDUI Auteur statut",
   "status" : "active",
-  "date" : "2026-01-27T16:32:30+00:00",
+  "date" : "2026-01-28T15:17:38+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
