@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle | *Version*:2.2.0-ballot |
-| Active as of 2026-01-27 | *Computable Name*:TDDUIBundle |
+| Active as of 2026-01-28 | *Computable Name*:TDDUIBundle |
 
  
 Profil générique créé pour transmettre des données d'un logiciel DUI. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
   "name" : "TDDUIBundle",
   "title" : "TDDUI Bundle",
   "status" : "active",
-  "date" : "2026-01-27T15:50:42+00:00",
+  "date" : "2026-01-28T14:07:57+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -740,33 +740,33 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
         "patternCode" : "POST"
       },
       {
-        "id" : "Bundle.entry:RelatedPerson",
+        "id" : "Bundle.entry:DUIRelatedPersonContact",
         "path" : "Bundle.entry",
-        "sliceName" : "RelatedPerson",
-        "short" : "RelatedPerson conforming to the FrCoreRelatedPerson profile, used to convey information about the user's contacts.",
+        "sliceName" : "DUIRelatedPersonContact",
+        "short" : "RelatedPerson conforming to the TDDUIRelatedPersonContact profile, used to convey information about the contact person.",
         "min" : 0,
         "max" : "*"
       },
       {
-        "id" : "Bundle.entry:RelatedPerson.resource",
+        "id" : "Bundle.entry:DUIRelatedPersonContact.resource",
         "path" : "Bundle.entry.resource",
         "min" : 1,
         "type" : [
           {
             "code" : "RelatedPerson",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person|2.1.0"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact|2.2.0-ballot"
             ]
           }
         ]
       },
       {
-        "id" : "Bundle.entry:RelatedPerson.request",
+        "id" : "Bundle.entry:DUIRelatedPersonContact.request",
         "path" : "Bundle.entry.request",
         "min" : 1
       },
       {
-        "id" : "Bundle.entry:RelatedPerson.request.method",
+        "id" : "Bundle.entry:DUIRelatedPersonContact.request.method",
         "path" : "Bundle.entry.request.method",
         "patternCode" : "POST"
       }

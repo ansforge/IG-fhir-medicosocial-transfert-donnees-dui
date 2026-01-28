@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "TDDUI"] ; # 
   fhir:title [ fhir:v "Médicosocial - Transfert de données DUI"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-01-27T15:50:42+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-01-28T14:07:57+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -1497,6 +1497,27 @@
        ] ;
        fhir:name [ fhir:v "Date d’admission" ] ;
        fhir:description [ fhir:v "Date d’admission dans la structure ESSMS." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact-description> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-related-person-contact-description" ]
+       ] ;
+       fhir:name [ fhir:v "Description" ] ;
+       fhir:description [ fhir:v "Description du contact PersonnePhysique." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -4041,7 +4062,7 @@
          fhir:reference [ fhir:v "RelatedPerson/tddui-related-person-contact-example" ]
        ] ;
        fhir:name [ fhir:v "tddui-related-person-contact-example" ] ;
-       fhir:description [ fhir:v "Exemple de la famille de l'usager." ] ;
+       fhir:description [ fhir:v "Exemple d'un contact." ] ;
        fhir:example [
          a fhir:Canonical ;
          fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact|2.2.0-ballot"^^xsd:anyURI ;

@@ -81,6 +81,7 @@ These define constraints on FHIR data types for systems conforming to this imple
 * **Champ évalué** : commentaire spécifique à un item ou sous-item évalué.
  |
 | [Date d’admission](StructureDefinition-tddui-admission-date.md) | Date d’admission dans la structure ESSMS. |
+| [Description](StructureDefinition-tddui-related-person-contact-description.md) | Description du contact PersonnePhysique. |
 | [Evénement hors prestation](StructureDefinition-tddui-outside-service.md) | Evénement hors prestation prévue dans le projet personnalisé de l’usager. |
 | [Libellé de l'évènement](StructureDefinition-tddui-event-label.md) | Titre donné à l’évènement par la structure. |
 | [Libellé mode d'entrée](StructureDefinition-tddui-entry-mode-label.md) | Libellé du mode d’entée du séjour. |
@@ -197,7 +198,7 @@ These are example instances that show what data produced and consumed by systems
 | [tddui-questionnaire-response-serafin-precision-example](QuestionnaireResponse-tddui-questionnaire-response-serafin-precision-example.md) | Evaluation SERAFIN pour un besoin d'hébergement adapté avec précision |
 | [tddui-questionnaire-response-serafin-sans-precision-example](QuestionnaireResponse-tddui-questionnaire-response-serafin-sans-precision-example.md) | Evaluation SERAFIN pour un besoin d'hébergement adapté sans précision |
 | [tddui-questionnaire-response-situation-ssiad-example](QuestionnaireResponse-tddui-questionnaire-response-situation-ssiad-example.md) | Grille de réponse de la situation SSIAD |
-| [tddui-related-person-contact-example](RelatedPerson-tddui-related-person-contact-example.md) | Exemple de la famille de l'usager. |
+| [tddui-related-person-contact-example](RelatedPerson-tddui-related-person-contact-example.md) | Exemple d'un contact. |
 | [tddui-task-transport-example](Task-tddui-task-transport-example.md) | Exemple du transport. |
 | [tddui-task-transport-professionel-example](Task-tddui-task-transport-professionel-example.md) | Exemple du transport du professionnel. |
 | [tddui-task-transport-usager-example](Task-tddui-task-transport-usager-example.md) | Exemple du transport de l'usager. |

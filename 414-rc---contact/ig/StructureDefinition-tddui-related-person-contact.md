@@ -9,14 +9,17 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact | *Version*:2.2.0-ballot |
-| Active as of 2026-01-27 | *Computable Name*:TDDUIRelatedPersonContact |
+| Active as of 2026-01-28 | *Computable Name*:TDDUIRelatedPersonContact |
 
  
 Profil de la ressource FRCoreRelatedPersonProfile permettant de représenter le contact PersonnePhysique. 
 
 **Utilisations:**
 
+* Utiliser ce Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
+* Référer à ce Profil: [TDDUI Consent Accord](StructureDefinition-tddui-consent-accord.md) and [TDDUI Task Bilan](StructureDefinition-tddui-task-bilan.md)
 * Exemples pour ce Profil: [RelatedPerson/tddui-related-person-contact-example](RelatedPerson-tddui-related-person-contact-example.md)
+* CapabilityStatements utilisant ce Profil: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-related-person-contact)
 
@@ -41,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-related-person
   "name" : "TDDUIRelatedPersonContact",
   "title" : "TDDUI RelatedPerson Contact",
   "status" : "active",
-  "date" : "2026-01-27T15:50:42+00:00",
+  "date" : "2026-01-28T14:07:57+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -163,6 +166,27 @@ Other representations of profile: [CSV](StructureDefinition-tddui-related-person
         ]
       },
       {
+        "id" : "RelatedPerson.extension:description",
+        "path" : "RelatedPerson.extension",
+        "sliceName" : "description",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Extension",
+            "profile" : [
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact-description|2.2.0-ballot"
+            ]
+          }
+        ],
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIRelatedPersonContact",
+            "map" : "description"
+          }
+        ]
+      },
+      {
         "id" : "RelatedPerson.identifier",
         "path" : "RelatedPerson.identifier",
         "mapping" : [
@@ -186,13 +210,30 @@ Other representations of profile: [CSV](StructureDefinition-tddui-related-person
         ]
       },
       {
+        "id" : "RelatedPerson.relationship:Role",
+        "path" : "RelatedPerson.relationship",
+        "sliceName" : "Role",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIRelatedPersonContact",
+            "map" : "role"
+          }
+        ]
+      },
+      {
         "id" : "RelatedPerson.relationship:RelationType",
         "path" : "RelatedPerson.relationship",
         "sliceName" : "RelationType",
         "binding" : {
           "strength" : "required",
           "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-relation|2.2.0-ballot"
-        }
+        },
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIRelatedPersonContact",
+            "map" : "Relation"
+          }
+        ]
       },
       {
         "id" : "RelatedPerson.relationship:LegalProtection",
@@ -203,7 +244,13 @@ Other representations of profile: [CSV](StructureDefinition-tddui-related-person
         "binding" : {
           "strength" : "required",
           "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-protection-juridique|2.2.0-ballot"
-        }
+        },
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIRelatedPersonContact",
+            "map" : "Relation"
+          }
+        ]
       },
       {
         "id" : "RelatedPerson.relationship:LegalProtection.coding.system",
@@ -220,6 +267,16 @@ Other representations of profile: [CSV](StructureDefinition-tddui-related-person
             "profile" : [
               "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name|2.2.0-ballot"
             ]
+          }
+        ]
+      },
+      {
+        "id" : "RelatedPerson.name.family",
+        "path" : "RelatedPerson.name.family",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIRelatedPersonContact",
+            "map" : "nomNaissance"
           }
         ]
       },

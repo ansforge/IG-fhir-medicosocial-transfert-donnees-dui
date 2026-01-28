@@ -67,6 +67,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 - **Champ évalué** : commentaire spécifique à un item ou sous-item évalué.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","commentaire"
+"RelatedPerson.extension:description","RelatedPerson.extension","description","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact-description|2.2.0-ballot]]} {[]}
+","Description","Description du contact PersonnePhysique.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","description"
 "RelatedPerson.modifierExtension","RelatedPerson.modifierExtension","","extensions
 user content","",0,*,"","Y","","Extension {[]} {[]}
 ","Extensions that cannot be ignored","May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
@@ -88,7 +92,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","code","FiveWs.class","NK1-3"
 "RelatedPerson.relationship:Role","RelatedPerson.relationship","Role","","",0,1,"","","Y","CodeableConcept {[]} {[]}
 ","The nature of the relationship. Rôle de la personne. Ex : personne de confiance, aidant ...","The nature of the relationship between a patient and the related person.","","We need to know the relationship with the patient since it influences the interpretation of the information attributed to this person.","","","","","","","",,"preferred","","https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-contact-role|2.1.0","",,,,"RelatedPerson.relationship",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","code","FiveWs.class","NK1-3"
+","role","code","FiveWs.class","NK1-3"
 "RelatedPerson.relationship:Role.id","RelatedPerson.relationship.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "RelatedPerson.relationship:Role.extension","RelatedPerson.relationship.extension","","extensions
@@ -126,7 +130,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","./originalText[mediaType/code=""text/plain""]/data","C*E.9. But note many systems use C*E.2 for this"
 "RelatedPerson.relationship:RelationType","RelatedPerson.relationship","RelationType","","",0,*,"","","Y","CodeableConcept {[]} {[]}
 ","The nature of the relationship. Relation de la personne. Ex : Mère, époux, enfant ...","The nature of the relationship between a patient and the related person.","","We need to know the relationship with the patient since it influences the interpretation of the information attributed to this person.","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-relation|2.2.0-ballot","",,,,"RelatedPerson.relationship",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","code","FiveWs.class","NK1-3"
+","Relation","code","FiveWs.class","NK1-3"
 "RelatedPerson.relationship:RelationType.id","RelatedPerson.relationship.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "RelatedPerson.relationship:RelationType.extension","RelatedPerson.relationship.extension","","extensions
@@ -164,7 +168,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","./originalText[mediaType/code=""text/plain""]/data","C*E.9. But note many systems use C*E.2 for this"
 "RelatedPerson.relationship:LegalProtection","RelatedPerson.relationship","LegalProtection","","",0,1,"","","Y","CodeableConcept {[]} {[]}
 ","The nature of the relationship","The nature of the relationship between a patient and the related person.","","We need to know the relationship with the patient since it influences the interpretation of the information attributed to this person.","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-protection-juridique|2.2.0-ballot","",,,,"RelatedPerson.relationship",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","code","FiveWs.class","NK1-3"
+","Relation","code","FiveWs.class","NK1-3"
 "RelatedPerson.relationship:LegalProtection.id","RelatedPerson.relationship.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "RelatedPerson.relationship:LegalProtection.extension","RelatedPerson.relationship.extension","","extensions
@@ -223,7 +227,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "RelatedPerson.name.family","RelatedPerson.name.family","","surname
 ","",0,1,"","","Y","string {[]} {[]}
 ","Family name (often called 'Surname')","The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father.","Family Name may be decomposed into specific parts using extensions (de, nl, es related cultures).","","","","","","","","",,,,,"",,,,"HumanName.family",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","./part[partType = FAM]","XPN.1/FN.1"
+","nomNaissance","./part[partType = FAM]","XPN.1/FN.1"
 "RelatedPerson.name.given","RelatedPerson.name.given","","first name
 middle name","",0,*,"","","Y","string {[]} {[]}
 ","Given names (not always 'first'). Includes middle names","Given name.","If only initials are recorded, they may be used in place of the full name parts. Initials may be separated into multiple given names but often aren't due to paractical limitations.  This element is not called ""first name"" since given names do not always come first.","","","","","","","","",,,,,"",,,,"HumanName.given",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

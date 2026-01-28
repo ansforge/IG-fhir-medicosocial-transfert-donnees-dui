@@ -10,7 +10,7 @@
   <name value="TDDUI"/>
   <title value="Médicosocial - Transfert de données DUI"/>
   <status value="active"/>
-  <date value="2026-01-27T15:50:42+00:00"/>
+  <date value="2026-01-28T14:07:57+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -534,6 +534,17 @@
       </reference>
       <name value="Date d’admission"/>
       <description value="Date d’admission dans la structure ESSMS."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-related-person-contact-description"/>
+      </reference>
+      <name value="Description"/>
+      <description value="Description du contact PersonnePhysique."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1842,7 +1853,7 @@
         <reference value="RelatedPerson/tddui-related-person-contact-example"/>
       </reference>
       <name value="tddui-related-person-contact-example"/>
-      <description value="Exemple de la famille de l'usager."/>
+      <description value="Exemple d'un contact."/>
       <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact|2.2.0-ballot"/>
     </resource>
     <resource>
