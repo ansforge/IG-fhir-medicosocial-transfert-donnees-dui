@@ -75,7 +75,7 @@ Usage: #definition
 * rest.resource[=].interaction[0].code = #create
 
 * rest.resource[12].type = #RelatedPerson
-* rest.resource[=].supportedProfile = Canonical(fr-core-related-person)
+* rest.resource[=].supportedProfile = Canonical(tddui-related-person-contact)
 * rest.resource[=].interaction[0].code = #create
 
 * rest.interaction[0].code = #transaction

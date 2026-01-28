@@ -1,0 +1,25 @@
+@startuml
+
+map "name" as name #DarkGray {
+    nomNaissance => family
+    prenom => given
+    civilite => prefix
+}
+
+map "**ContactPersonnePhysique : TDDUIRelatedPersonContact**" as ContactPersonnePhysique #fccde5 {
+    paysNationalite => <&plus> nationality
+    commentaire => <&plus> comment
+    description => <&plus> description
+    identifiantPP => identifier
+    role => <&layers> relationship:Role
+    Relation => <&layers> relationship:RelationType
+    Relation => <&layers> relationship:LegalProtection
+    telecommunication => telecom
+    sexe => gender
+    dateNaissance => birthDate
+    adresse => address
+    name *-> name
+}
+
+
+@enduml

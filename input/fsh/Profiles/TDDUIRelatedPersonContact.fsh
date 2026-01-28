@@ -6,12 +6,15 @@ Description: "Profil de la ressource FRCoreRelatedPersonProfile permettant de re
 
 * extension contains 
     tddui-nationality named nationality 0..* and
-    tddui-comment named comment 0..1
+    tddui-comment named comment 0..1 and 
+    tddui-related-person-contact-description named description 0..1
 
 * patient only Reference(TDDUIPatient or TDDUIPatientINS)
 
 * relationship contains
     LegalProtection 0..1
+
+// Slice Role à ajouter lorsque les NOS du mois de janvier seront disponibles
 
 * relationship[RelationType] from TDDUIRelation (required)
 * relationship[RelationType].coding.system = "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode"
@@ -34,7 +37,7 @@ Title:    "Modèle de contenu DUI"
 * -> "ContactPersonnePhysique"
  
 * identifier -> "identifiantPP"
-// * name.family -> "nomNaissance"
+* name.family -> "nomNaissance"
 * name.given -> "prenom"
 * name.prefix -> "civilite"
 * gender -> "sexe"
@@ -43,3 +46,7 @@ Title:    "Modèle de contenu DUI"
 * address -> "adresse"
 * telecom -> "telecommunication"
 * extension[comment] -> "commentaire"
+* extension[description] -> "description"
+* relationship[Role] -> "role"
+* relationship[RelationType] -> "Relation"
+* relationship[LegalProtection] -> "Relation"

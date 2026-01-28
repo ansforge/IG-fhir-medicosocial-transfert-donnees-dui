@@ -7,6 +7,9 @@ Ce mapping représente les données fonctionnelles trouvant leur équivalence da
 <div>{%include mapping_TDDUIPatient.svg%}</div>
 <div>{%include mapping_TDDUIPatientINS.svg%}</div>
 
+### Mapping contact PersonnePhysique
+<div>{%include mapping_TDDUIRelatedPersonContact.svg%}</div>
+
 ### Mapping Entité Juridique
 
 <div>{%include mapping_TDDUIOrganization.svg%}</div>

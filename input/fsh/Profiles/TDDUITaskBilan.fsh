@@ -58,7 +58,7 @@ Description: "Profil de la ressource Task permettant de représenter le bilan du
 * input[synthesePreparationBilan].value[x] only Annotation
 * input[synthesePreparationBilan].valueAnnotation.text 1..1
 * input[synthesePreparationBilan].valueAnnotation.authorReference 1..1
-* input[synthesePreparationBilan].valueAnnotation.authorReference only Reference(TDDUIPractitioner or TDDUIPatient or TDDUIPatientINS or FRCoreRelatedPersonProfile)
+* input[synthesePreparationBilan].valueAnnotation.authorReference only Reference(TDDUIPractitioner or TDDUIPatient or TDDUIPatientINS or TDDUIRelatedPersonContact)
 * input[synthesePreparationBilan] ^short = "Préparation du bilan"
 
 * output.type from OutputTDDUITaskBilanValueSet (required)
