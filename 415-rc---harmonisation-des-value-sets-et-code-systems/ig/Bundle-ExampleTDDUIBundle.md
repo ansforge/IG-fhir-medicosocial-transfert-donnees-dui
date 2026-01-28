@@ -199,7 +199,7 @@
             "type" : {
               "coding" : [
                 {
-                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier-cs",
+                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier",
                   "code" : "SEJ",
                   "display" : "Identifiant du séjour"
                 }

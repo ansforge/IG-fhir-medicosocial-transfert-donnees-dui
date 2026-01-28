@@ -1,10 +1,10 @@
-# TDDUI FR Core CodeSystem v2-0203 - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Patient's Identifier - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **TDDUI FR Core CodeSystem v2-0203**
+* **TDDUI Patient's Identifier**
 
-## CodeSystem: TDDUI FR Core CodeSystem v2-0203 
+## CodeSystem: TDDUI Patient's Identifier 
 
 | | |
 | :--- | :--- |
@@ -16,7 +16,7 @@ TDDUI Patient's identifier
 
  Cette terminologie de référence (CodeSystem) est référencé dans la définition de contenu des jeux de valeurs (ValueSet) suivants : 
 
-* [TDDUIPatientIdentifierVs](ValueSet-tddui-patient-identifier-vs.md)
+* [TDDUIPatientIdentifier](ValueSet-tddui-patient-identifier.md)
 
 
 
@@ -34,10 +34,10 @@ TDDUI Patient's identifier
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-identifier",
   "version" : "2.2.0-ballot",
   "name" : "TDDUIIdentifier",
-  "title" : "TDDUI FR Core CodeSystem v2-0203",
+  "title" : "TDDUI Patient's Identifier",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-28T14:23:39+00:00",
+  "date" : "2026-01-28T15:00:38+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

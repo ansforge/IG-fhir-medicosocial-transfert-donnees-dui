@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient-ins.cs
   "name" : "TDDUIPatientINS",
   "title" : "TDDUI Patient INS",
   "status" : "active",
-  "date" : "2026-01-28T14:23:39+00:00",
+  "date" : "2026-01-28T15:00:38+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -154,7 +154,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient-ins.cs
         "path" : "Patient.identifier.type",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-patient-identifier-vs|2.2.0-ballot"
+          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-patient-identifier|2.2.0-ballot"
         }
       },
       {

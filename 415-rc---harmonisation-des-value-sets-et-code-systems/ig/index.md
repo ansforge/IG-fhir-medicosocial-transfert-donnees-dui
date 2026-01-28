@@ -140,7 +140,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2026-01-28T14:23:39+00:00",
+  "date" : "2026-01-28T15:00:38+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -1497,27 +1497,13 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "CodeSystem"
-          }
-        ],
-        "reference" : {
-          "reference" : "CodeSystem/tddui-encounter-identifier-cs"
-        },
-        "name" : "TDDUI Encounter FR Core CodeSystem v2-0203",
-        "description" : "TDDUI Encounter's identifier",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "ValueSet"
           }
         ],
         "reference" : {
-          "reference" : "ValueSet/tddui-encounter-identifier-vs"
+          "reference" : "ValueSet/tddui-encounter-identifier"
         },
-        "name" : "TDDUI Encounter Identifier Type ValueSet",
+        "name" : "TDDUI Encounter Identifier Type",
         "description" : "ValueSet for TDDUI Encounter's identifier types",
         "exampleBoolean" : false
       },
@@ -1585,10 +1571,10 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           }
         ],
         "reference" : {
-          "reference" : "CodeSystem/tddui-identifier"
+          "reference" : "CodeSystem/tddui-encounter-identifier"
         },
-        "name" : "TDDUI FR Core CodeSystem v2-0203",
-        "description" : "TDDUI Patient's identifier",
+        "name" : "TDDUI Encounter's Identifier",
+        "description" : "TDDUI Encounter's identifier",
         "exampleBoolean" : false
       },
       {
@@ -1697,9 +1683,9 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           }
         ],
         "reference" : {
-          "reference" : "ValueSet/tddui-patient-identifier-vs"
+          "reference" : "ValueSet/tddui-patient-identifier"
         },
-        "name" : "TDDUI Patient Identifier ValueSet",
+        "name" : "TDDUI Patient Identifier",
         "description" : "ValueSet for TDDUI Patient's identifier types",
         "exampleBoolean" : false
       },
@@ -1715,6 +1701,20 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "TDDUI Patient INS",
         "description" : "Profil de la ressource FRCorePatientINSProfile permettant de représenter un usager lorsque l'INS est transmis.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/tddui-identifier"
+        },
+        "name" : "TDDUI Patient's Identifier",
+        "description" : "TDDUI Patient's identifier",
         "exampleBoolean" : false
       },
       {

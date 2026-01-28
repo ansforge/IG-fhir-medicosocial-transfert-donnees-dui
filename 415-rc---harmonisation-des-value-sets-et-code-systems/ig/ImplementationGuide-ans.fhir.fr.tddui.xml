@@ -10,7 +10,7 @@
   <name value="TDDUI"/>
   <title value="Médicosocial - Transfert de données DUI"/>
   <status value="active"/>
-  <date value="2026-01-28T14:23:39+00:00"/>
+  <date value="2026-01-28T15:00:38+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -945,23 +945,12 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/tddui-encounter-identifier-cs"/>
-      </reference>
-      <name value="TDDUI Encounter FR Core CodeSystem v2-0203"/>
-      <description value="TDDUI Encounter's identifier"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/tddui-encounter-identifier-vs"/>
+        <reference value="ValueSet/tddui-encounter-identifier"/>
       </reference>
-      <name value="TDDUI Encounter Identifier Type ValueSet"/>
+      <name value="TDDUI Encounter Identifier Type"/>
       <description value="ValueSet for TDDUI Encounter's identifier types"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1014,10 +1003,10 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/tddui-identifier"/>
+        <reference value="CodeSystem/tddui-encounter-identifier"/>
       </reference>
-      <name value="TDDUI FR Core CodeSystem v2-0203"/>
-      <description value="TDDUI Patient's identifier"/>
+      <name value="TDDUI Encounter's Identifier"/>
+      <description value="TDDUI Encounter's identifier"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1102,9 +1091,9 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/tddui-patient-identifier-vs"/>
+        <reference value="ValueSet/tddui-patient-identifier"/>
       </reference>
-      <name value="TDDUI Patient Identifier ValueSet"/>
+      <name value="TDDUI Patient Identifier"/>
       <description value="ValueSet for TDDUI Patient's identifier types"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1117,6 +1106,17 @@
       </reference>
       <name value="TDDUI Patient INS"/>
       <description value="Profil de la ressource FRCorePatientINSProfile permettant de représenter un usager lorsque l'INS est transmis."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/tddui-identifier"/>
+      </reference>
+      <name value="TDDUI Patient's Identifier"/>
+      <description value="TDDUI Patient's identifier"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
