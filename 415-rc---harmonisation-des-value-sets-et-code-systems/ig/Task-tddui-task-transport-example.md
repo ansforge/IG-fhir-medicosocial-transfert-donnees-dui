@@ -69,7 +69,7 @@ Profil: [TDDUI Task Transport](StructureDefinition-tddui-task-transport.md)
       "type" : {
         "coding" : [
           {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport",
             "code" : "budgetPrevisionnel"
           }
         ]
@@ -83,7 +83,7 @@ Profil: [TDDUI Task Transport](StructureDefinition-tddui-task-transport.md)
       "type" : {
         "coding" : [
           {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport",
             "code" : "budgetReel"
           }
         ]
@@ -97,7 +97,7 @@ Profil: [TDDUI Task Transport](StructureDefinition-tddui-task-transport.md)
       "type" : {
         "coding" : [
           {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport",
             "code" : "distance"
           }
         ]
@@ -113,7 +113,7 @@ Profil: [TDDUI Task Transport](StructureDefinition-tddui-task-transport.md)
       "type" : {
         "coding" : [
           {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport",
             "code" : "dureeTheorique"
           }
         ]

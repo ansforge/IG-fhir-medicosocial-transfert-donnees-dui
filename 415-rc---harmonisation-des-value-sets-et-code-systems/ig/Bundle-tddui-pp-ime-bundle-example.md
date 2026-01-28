@@ -148,7 +148,7 @@
                 "valueCodeableConcept" : {
                   "coding" : [
                     {
-                      "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs",
+                      "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator",
                       "code" : "accordStructure"
                     }
                   ]
@@ -207,7 +207,7 @@
                 "valueCodeableConcept" : {
                   "coding" : [
                     {
-                      "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs",
+                      "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator",
                       "code" : "titreObjectif"
                     }
                   ]
@@ -266,7 +266,7 @@
                 "valueCodeableConcept" : {
                   "coding" : [
                     {
-                      "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs",
+                      "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator",
                       "code" : "titreObjectif"
                     }
                   ]
@@ -294,7 +294,7 @@
         },
         "text" : {
           "status" : "generated",
-          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_tddui-pp-ime-task-action-1-aesh-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Task tddui-pp-ime-task-action-1-aesh-example</b></p><a name=\"tddui-pp-ime-task-action-1-aesh-example\"> </a><a name=\"hctddui-pp-ime-task-action-1-aesh-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-task-action.html\">TDDUI Task Action</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-action.esante.gouv.fr</code>/3480787529/123456-ACTI-1234</p><p><b>basedOn</b>: <a href=\"CarePlan-tddui-pp-ime-careplan-example.html\">CarePlan Projet personnalisé de Hugo en IME</a></p><p><b>status</b>: In Progress</p><p><b>intent</b>: plan</p><p><b>description</b>: Vérification port du casque</p><p><b>owner</b>: AESH</p><h3>Inputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem titre}\">Titre de l'action à mener.</span></td><td>Action de l'AS pour atteindre l'objectif 1</td></tr></table></div>"
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_tddui-pp-ime-task-action-1-aesh-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Task tddui-pp-ime-task-action-1-aesh-example</b></p><a name=\"tddui-pp-ime-task-action-1-aesh-example\"> </a><a name=\"hctddui-pp-ime-task-action-1-aesh-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-task-action.html\">TDDUI Task Action</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-action.esante.gouv.fr</code>/3480787529/123456-ACTI-1234</p><p><b>basedOn</b>: <a href=\"CarePlan-tddui-pp-ime-careplan-example.html\">CarePlan Projet personnalisé de Hugo en IME</a></p><p><b>status</b>: In Progress</p><p><b>intent</b>: plan</p><p><b>description</b>: Vérification port du casque</p><p><b>owner</b>: AESH</p><h3>Inputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action titre}\">Titre de l'action à mener.</span></td><td>Action de l'AS pour atteindre l'objectif 1</td></tr></table></div>"
         },
         "identifier" : [
           {
@@ -318,7 +318,7 @@
             "type" : {
               "coding" : [
                 {
-                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem",
+                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action",
                   "code" : "titre"
                 }
               ]
@@ -344,7 +344,7 @@
         },
         "text" : {
           "status" : "generated",
-          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_tddui-pp-ime-task-action-1-educ-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Task tddui-pp-ime-task-action-1-educ-example</b></p><a name=\"tddui-pp-ime-task-action-1-educ-example\"> </a><a name=\"hctddui-pp-ime-task-action-1-educ-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-task-action.html\">TDDUI Task Action</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-action.esante.gouv.fr</code>/3480787529/123456-ACTI-1235</p><p><b>basedOn</b>: <a href=\"CarePlan-tddui-pp-ime-careplan-example.html\">CarePlan Projet personnalisé de Hugo en IME</a></p><p><b>status</b>: In Progress</p><p><b>intent</b>: plan</p><p><b>description</b>: Lecture guidée sur tablette 15 min/jour</p><p><b>owner</b>: AESH</p><h3>Inputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem titre}\">Titre de l'action à mener.</span></td><td>Action de l'éducateur spécialisé pour atteindre l'objectif 2</td></tr></table></div>"
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_tddui-pp-ime-task-action-1-educ-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Task tddui-pp-ime-task-action-1-educ-example</b></p><a name=\"tddui-pp-ime-task-action-1-educ-example\"> </a><a name=\"hctddui-pp-ime-task-action-1-educ-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-task-action.html\">TDDUI Task Action</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-action.esante.gouv.fr</code>/3480787529/123456-ACTI-1235</p><p><b>basedOn</b>: <a href=\"CarePlan-tddui-pp-ime-careplan-example.html\">CarePlan Projet personnalisé de Hugo en IME</a></p><p><b>status</b>: In Progress</p><p><b>intent</b>: plan</p><p><b>description</b>: Lecture guidée sur tablette 15 min/jour</p><p><b>owner</b>: AESH</p><h3>Inputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action titre}\">Titre de l'action à mener.</span></td><td>Action de l'éducateur spécialisé pour atteindre l'objectif 2</td></tr></table></div>"
         },
         "identifier" : [
           {
@@ -368,7 +368,7 @@
             "type" : {
               "coding" : [
                 {
-                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem",
+                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action",
                   "code" : "titre"
                 }
               ]

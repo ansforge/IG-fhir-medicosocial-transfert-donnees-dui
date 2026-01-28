@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
   "name" : "TDDUITaskTransportUsager",
   "title" : "TDDUI Task Transport Usager",
   "status" : "active",
-  "date" : "2026-01-28T15:00:38+00:00",
+  "date" : "2026-01-28T15:51:30+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -288,7 +288,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport",
               "code" : "accompagnement"
             }
           ]
@@ -323,7 +323,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport",
               "code" : "asepsie"
             }
           ]
@@ -358,7 +358,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport",
               "code" : "natureTransport"
             }
           ]

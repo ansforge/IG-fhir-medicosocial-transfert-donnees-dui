@@ -82,7 +82,7 @@ Objectif 1
           "valueCodeableConcept" : {
             "coding" : [
               {
-                "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs",
+                "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator",
                 "code" : "titreObjectif"
               }
             ]

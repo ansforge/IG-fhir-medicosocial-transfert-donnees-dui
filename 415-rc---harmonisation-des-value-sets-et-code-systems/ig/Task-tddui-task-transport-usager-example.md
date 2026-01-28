@@ -76,7 +76,7 @@ Profil: [TDDUI Task Transport Usager](StructureDefinition-tddui-task-transport-u
       "type" : {
         "coding" : [
           {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport",
             "code" : "budgetPrevisionnel"
           }
         ]
@@ -90,7 +90,7 @@ Profil: [TDDUI Task Transport Usager](StructureDefinition-tddui-task-transport-u
       "type" : {
         "coding" : [
           {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport",
             "code" : "budgetReel"
           }
         ]
@@ -104,7 +104,7 @@ Profil: [TDDUI Task Transport Usager](StructureDefinition-tddui-task-transport-u
       "type" : {
         "coding" : [
           {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport",
             "code" : "distance"
           }
         ]
@@ -120,7 +120,7 @@ Profil: [TDDUI Task Transport Usager](StructureDefinition-tddui-task-transport-u
       "type" : {
         "coding" : [
           {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport",
             "code" : "dureeTheorique"
           }
         ]
@@ -136,7 +136,7 @@ Profil: [TDDUI Task Transport Usager](StructureDefinition-tddui-task-transport-u
       "type" : {
         "coding" : [
           {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport",
             "code" : "accompagnement"
           }
         ]
@@ -147,7 +147,7 @@ Profil: [TDDUI Task Transport Usager](StructureDefinition-tddui-task-transport-u
       "type" : {
         "coding" : [
           {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport",
             "code" : "asepsie"
           }
         ]
@@ -158,7 +158,7 @@ Profil: [TDDUI Task Transport Usager](StructureDefinition-tddui-task-transport-u
       "type" : {
         "coding" : [
           {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport",
             "code" : "natureTransport"
           }
         ]

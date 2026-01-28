@@ -157,7 +157,7 @@
                 "valueCodeableConcept" : {
                   "coding" : [
                     {
-                      "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs",
+                      "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator",
                       "code" : "accordStructure"
                     }
                   ]
@@ -300,7 +300,7 @@
                 "valueCodeableConcept" : {
                   "coding" : [
                     {
-                      "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs",
+                      "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator",
                       "code" : "origineAttente"
                     }
                   ]
@@ -359,7 +359,7 @@
                 "valueCodeableConcept" : {
                   "coding" : [
                     {
-                      "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs",
+                      "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator",
                       "code" : "origineAttente"
                     }
                   ]
@@ -429,7 +429,7 @@
                 "valueCodeableConcept" : {
                   "coding" : [
                     {
-                      "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs",
+                      "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator",
                       "code" : "titreObjectif"
                     }
                   ]
@@ -493,7 +493,7 @@
                 "valueCodeableConcept" : {
                   "coding" : [
                     {
-                      "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs",
+                      "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator",
                       "code" : "titreObjectif"
                     }
                   ]
@@ -557,7 +557,7 @@
                 "valueCodeableConcept" : {
                   "coding" : [
                     {
-                      "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs",
+                      "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator",
                       "code" : "titreObjectif"
                     }
                   ]
@@ -792,7 +792,7 @@
         },
         "text" : {
           "status" : "generated",
-          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_tddui-pp-pa-task-action-1-ergo-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Task tddui-pp-pa-task-action-1-ergo-example</b></p><a name=\"tddui-pp-pa-task-action-1-ergo-example\"> </a><a name=\"hctddui-pp-pa-task-action-1-ergo-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-task-action.html\">TDDUI Task Action</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-action.esante.gouv.fr</code>/3480787529/123456789-ACTI-1235</p><p><b>basedOn</b>: <a href=\"CarePlan-tddui-pp-ime-careplan-example.html\">CarePlan Projet personnalisé de Hugo en IME</a></p><p><b>status</b>: In Progress</p><p><b>intent</b>: plan</p><p><b>description</b>: Évaluer et aménagr la chambre (éclairage, barres, tapis)</p><p><b>owner</b>: Ergothérapeute</p><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem titre}\">Titre de l'action à mener.</span></p><p><b>value</b>: Action de l'ergothérapeute pour atteindre l'objectif 1</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem objectif}\">Objectif(s).</span></p><p><b>value</b>: <a href=\"Goal-tddui-pp-pa-goal-objectif-1-example.html\">Goal : extension = -&gt;CarePlan Projet personnalisé de Mme Jeanne L.,-&gt;DocumentReference : masterIdentifier = 3480787529/123456789-PPER-bilanObj-1234; status = current; identifier = https://identifiant-medicosocial-objectif.esante.gouv.fr#3480787529/123456789-OBJE-1234; lifecycleStatus = active; description = ; note = Objectif 1</a></p></blockquote></div>"
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_tddui-pp-pa-task-action-1-ergo-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Task tddui-pp-pa-task-action-1-ergo-example</b></p><a name=\"tddui-pp-pa-task-action-1-ergo-example\"> </a><a name=\"hctddui-pp-pa-task-action-1-ergo-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-task-action.html\">TDDUI Task Action</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-action.esante.gouv.fr</code>/3480787529/123456789-ACTI-1235</p><p><b>basedOn</b>: <a href=\"CarePlan-tddui-pp-ime-careplan-example.html\">CarePlan Projet personnalisé de Hugo en IME</a></p><p><b>status</b>: In Progress</p><p><b>intent</b>: plan</p><p><b>description</b>: Évaluer et aménagr la chambre (éclairage, barres, tapis)</p><p><b>owner</b>: Ergothérapeute</p><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action titre}\">Titre de l'action à mener.</span></p><p><b>value</b>: Action de l'ergothérapeute pour atteindre l'objectif 1</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action objectif}\">Objectif(s).</span></p><p><b>value</b>: <a href=\"Goal-tddui-pp-pa-goal-objectif-1-example.html\">Goal : extension = -&gt;CarePlan Projet personnalisé de Mme Jeanne L.,-&gt;DocumentReference : masterIdentifier = 3480787529/123456789-PPER-bilanObj-1234; status = current; identifier = https://identifiant-medicosocial-objectif.esante.gouv.fr#3480787529/123456789-OBJE-1234; lifecycleStatus = active; description = ; note = Objectif 1</a></p></blockquote></div>"
         },
         "identifier" : [
           {
@@ -816,7 +816,7 @@
             "type" : {
               "coding" : [
                 {
-                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem",
+                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action",
                   "code" : "titre"
                 }
               ]
@@ -827,7 +827,7 @@
             "type" : {
               "coding" : [
                 {
-                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem",
+                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action",
                   "code" : "objectif"
                 }
               ]
@@ -855,7 +855,7 @@
         },
         "text" : {
           "status" : "generated",
-          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_tddui-pp-pa-task-action-1-ide-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Task tddui-pp-pa-task-action-1-ide-example</b></p><a name=\"tddui-pp-pa-task-action-1-ide-example\"> </a><a name=\"hctddui-pp-pa-task-action-1-ide-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-task-action.html\">TDDUI Task Action</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-action.esante.gouv.fr</code>/3480787529/123456789-ACTI-1236</p><p><b>basedOn</b>: <a href=\"CarePlan-tddui-pp-ime-careplan-example.html\">CarePlan Projet personnalisé de Hugo en IME</a></p><p><b>status</b>: In Progress</p><p><b>intent</b>: plan</p><p><b>description</b>: Atelier éducation risque de chute</p><p><b>owner</b>: <a href=\"Practitioner-tddui-pp-pa-practitioner-ide-example.html\">Practitioner Élodie Bernard </a></p><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem titre}\">Titre de l'action à mener.</span></p><p><b>value</b>: Action de l'IDE pour atteindre l'objectif 1</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem objectif}\">Objectif(s).</span></p><p><b>value</b>: <a href=\"Goal-tddui-pp-pa-goal-objectif-1-example.html\">Goal : extension = -&gt;CarePlan Projet personnalisé de Mme Jeanne L.,-&gt;DocumentReference : masterIdentifier = 3480787529/123456789-PPER-bilanObj-1234; status = current; identifier = https://identifiant-medicosocial-objectif.esante.gouv.fr#3480787529/123456789-OBJE-1234; lifecycleStatus = active; description = ; note = Objectif 1</a></p></blockquote></div>"
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_tddui-pp-pa-task-action-1-ide-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Task tddui-pp-pa-task-action-1-ide-example</b></p><a name=\"tddui-pp-pa-task-action-1-ide-example\"> </a><a name=\"hctddui-pp-pa-task-action-1-ide-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-task-action.html\">TDDUI Task Action</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-action.esante.gouv.fr</code>/3480787529/123456789-ACTI-1236</p><p><b>basedOn</b>: <a href=\"CarePlan-tddui-pp-ime-careplan-example.html\">CarePlan Projet personnalisé de Hugo en IME</a></p><p><b>status</b>: In Progress</p><p><b>intent</b>: plan</p><p><b>description</b>: Atelier éducation risque de chute</p><p><b>owner</b>: <a href=\"Practitioner-tddui-pp-pa-practitioner-ide-example.html\">Practitioner Élodie Bernard </a></p><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action titre}\">Titre de l'action à mener.</span></p><p><b>value</b>: Action de l'IDE pour atteindre l'objectif 1</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action objectif}\">Objectif(s).</span></p><p><b>value</b>: <a href=\"Goal-tddui-pp-pa-goal-objectif-1-example.html\">Goal : extension = -&gt;CarePlan Projet personnalisé de Mme Jeanne L.,-&gt;DocumentReference : masterIdentifier = 3480787529/123456789-PPER-bilanObj-1234; status = current; identifier = https://identifiant-medicosocial-objectif.esante.gouv.fr#3480787529/123456789-OBJE-1234; lifecycleStatus = active; description = ; note = Objectif 1</a></p></blockquote></div>"
         },
         "identifier" : [
           {
@@ -879,7 +879,7 @@
             "type" : {
               "coding" : [
                 {
-                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem",
+                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action",
                   "code" : "titre"
                 }
               ]
@@ -890,7 +890,7 @@
             "type" : {
               "coding" : [
                 {
-                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem",
+                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action",
                   "code" : "objectif"
                 }
               ]
@@ -918,7 +918,7 @@
         },
         "text" : {
           "status" : "generated",
-          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_tddui-pp-pa-task-action-1-kine-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Task tddui-pp-pa-task-action-1-kine-example</b></p><a name=\"tddui-pp-pa-task-action-1-kine-example\"> </a><a name=\"hctddui-pp-pa-task-action-1-kine-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-task-action.html\">TDDUI Task Action</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-action.esante.gouv.fr</code>/3480787529/123456789-ACTI-1237</p><p><b>basedOn</b>: <a href=\"CarePlan-tddui-pp-ime-careplan-example.html\">CarePlan Projet personnalisé de Hugo en IME</a></p><p><b>status</b>: In Progress</p><p><b>intent</b>: plan</p><p><b>description</b>: Programme équilibre/marche 2×/semaine 12 semaines</p><p><b>owner</b>: Kinésithérapeute</p><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem titre}\">Titre de l'action à mener.</span></p><p><b>value</b>: Action du kinésithérapeute pour atteindre l'objectif 1</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem objectif}\">Objectif(s).</span></p><p><b>value</b>: <a href=\"Goal-tddui-pp-pa-goal-objectif-1-example.html\">Goal : extension = -&gt;CarePlan Projet personnalisé de Mme Jeanne L.,-&gt;DocumentReference : masterIdentifier = 3480787529/123456789-PPER-bilanObj-1234; status = current; identifier = https://identifiant-medicosocial-objectif.esante.gouv.fr#3480787529/123456789-OBJE-1234; lifecycleStatus = active; description = ; note = Objectif 1</a></p></blockquote></div>"
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_tddui-pp-pa-task-action-1-kine-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Task tddui-pp-pa-task-action-1-kine-example</b></p><a name=\"tddui-pp-pa-task-action-1-kine-example\"> </a><a name=\"hctddui-pp-pa-task-action-1-kine-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-task-action.html\">TDDUI Task Action</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-action.esante.gouv.fr</code>/3480787529/123456789-ACTI-1237</p><p><b>basedOn</b>: <a href=\"CarePlan-tddui-pp-ime-careplan-example.html\">CarePlan Projet personnalisé de Hugo en IME</a></p><p><b>status</b>: In Progress</p><p><b>intent</b>: plan</p><p><b>description</b>: Programme équilibre/marche 2×/semaine 12 semaines</p><p><b>owner</b>: Kinésithérapeute</p><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action titre}\">Titre de l'action à mener.</span></p><p><b>value</b>: Action du kinésithérapeute pour atteindre l'objectif 1</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action objectif}\">Objectif(s).</span></p><p><b>value</b>: <a href=\"Goal-tddui-pp-pa-goal-objectif-1-example.html\">Goal : extension = -&gt;CarePlan Projet personnalisé de Mme Jeanne L.,-&gt;DocumentReference : masterIdentifier = 3480787529/123456789-PPER-bilanObj-1234; status = current; identifier = https://identifiant-medicosocial-objectif.esante.gouv.fr#3480787529/123456789-OBJE-1234; lifecycleStatus = active; description = ; note = Objectif 1</a></p></blockquote></div>"
         },
         "identifier" : [
           {
@@ -942,7 +942,7 @@
             "type" : {
               "coding" : [
                 {
-                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem",
+                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action",
                   "code" : "titre"
                 }
               ]
@@ -953,7 +953,7 @@
             "type" : {
               "coding" : [
                 {
-                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem",
+                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action",
                   "code" : "objectif"
                 }
               ]
@@ -981,7 +981,7 @@
         },
         "text" : {
           "status" : "generated",
-          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_tddui-pp-pa-task-action-2-anim-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Task tddui-pp-pa-task-action-2-anim-example</b></p><a name=\"tddui-pp-pa-task-action-2-anim-example\"> </a><a name=\"hctddui-pp-pa-task-action-2-anim-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-task-action.html\">TDDUI Task Action</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-action.esante.gouv.fr</code>/3480787529/123456789-ACTI-12341</p><p><b>basedOn</b>: <a href=\"CarePlan-tddui-pp-ime-careplan-example.html\">CarePlan Projet personnalisé de Hugo en IME</a></p><p><b>status</b>: In Progress</p><p><b>intent</b>: plan</p><p><b>description</b>: Atelier cuisine mensuel co‑animé avec résidents</p><p><b>owner</b>: Animatrice</p><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem titre}\">Titre de l'action à mener.</span></p><p><b>value</b>: Action de l'animatrice pour atteindre l'objectif 2</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem objectif}\">Objectif(s).</span></p><p><b>value</b>: <a href=\"Goal-tddui-pp-pa-goal-objectif-2-example.html\">Goal : extension = -&gt;CarePlan Projet personnalisé de Mme Jeanne L.; identifier = https://identifiant-medicosocial-objectif.esante.gouv.fr#3480787529/123456789-OBJE-1235; lifecycleStatus = active; description = ; note = Objectif 2</a></p></blockquote></div>"
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_tddui-pp-pa-task-action-2-anim-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Task tddui-pp-pa-task-action-2-anim-example</b></p><a name=\"tddui-pp-pa-task-action-2-anim-example\"> </a><a name=\"hctddui-pp-pa-task-action-2-anim-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-task-action.html\">TDDUI Task Action</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-action.esante.gouv.fr</code>/3480787529/123456789-ACTI-12341</p><p><b>basedOn</b>: <a href=\"CarePlan-tddui-pp-ime-careplan-example.html\">CarePlan Projet personnalisé de Hugo en IME</a></p><p><b>status</b>: In Progress</p><p><b>intent</b>: plan</p><p><b>description</b>: Atelier cuisine mensuel co‑animé avec résidents</p><p><b>owner</b>: Animatrice</p><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action titre}\">Titre de l'action à mener.</span></p><p><b>value</b>: Action de l'animatrice pour atteindre l'objectif 2</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action objectif}\">Objectif(s).</span></p><p><b>value</b>: <a href=\"Goal-tddui-pp-pa-goal-objectif-2-example.html\">Goal : extension = -&gt;CarePlan Projet personnalisé de Mme Jeanne L.; identifier = https://identifiant-medicosocial-objectif.esante.gouv.fr#3480787529/123456789-OBJE-1235; lifecycleStatus = active; description = ; note = Objectif 2</a></p></blockquote></div>"
         },
         "identifier" : [
           {
@@ -1005,7 +1005,7 @@
             "type" : {
               "coding" : [
                 {
-                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem",
+                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action",
                   "code" : "titre"
                 }
               ]
@@ -1016,7 +1016,7 @@
             "type" : {
               "coding" : [
                 {
-                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem",
+                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action",
                   "code" : "objectif"
                 }
               ]
@@ -1044,7 +1044,7 @@
         },
         "text" : {
           "status" : "generated",
-          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_tddui-pp-pa-task-action-2-ide-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Task tddui-pp-pa-task-action-2-ide-example</b></p><a name=\"tddui-pp-pa-task-action-2-ide-example\"> </a><a name=\"hctddui-pp-pa-task-action-2-ide-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-task-action.html\">TDDUI Task Action</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-action.esante.gouv.fr</code>/3480787529/123456789-ACTI-12342</p><p><b>basedOn</b>: <a href=\"CarePlan-tddui-pp-ime-careplan-example.html\">CarePlan Projet personnalisé de Hugo en IME</a></p><p><b>status</b>: In Progress</p><p><b>intent</b>: plan</p><p><b>description</b>: Pesée mensuelle et dépistage dénutrition</p><p><b>owner</b>: <a href=\"Practitioner-tddui-pp-pa-practitioner-ide-example.html\">Practitioner Élodie Bernard </a></p><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem titre}\">Titre de l'action à mener.</span></p><p><b>value</b>: Action de l'IDE pour atteindre l'objectif 2</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem objectif}\">Objectif(s).</span></p><p><b>value</b>: <a href=\"Goal-tddui-pp-pa-goal-objectif-2-example.html\">Goal : extension = -&gt;CarePlan Projet personnalisé de Mme Jeanne L.; identifier = https://identifiant-medicosocial-objectif.esante.gouv.fr#3480787529/123456789-OBJE-1235; lifecycleStatus = active; description = ; note = Objectif 2</a></p></blockquote></div>"
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_tddui-pp-pa-task-action-2-ide-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Task tddui-pp-pa-task-action-2-ide-example</b></p><a name=\"tddui-pp-pa-task-action-2-ide-example\"> </a><a name=\"hctddui-pp-pa-task-action-2-ide-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-task-action.html\">TDDUI Task Action</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-action.esante.gouv.fr</code>/3480787529/123456789-ACTI-12342</p><p><b>basedOn</b>: <a href=\"CarePlan-tddui-pp-ime-careplan-example.html\">CarePlan Projet personnalisé de Hugo en IME</a></p><p><b>status</b>: In Progress</p><p><b>intent</b>: plan</p><p><b>description</b>: Pesée mensuelle et dépistage dénutrition</p><p><b>owner</b>: <a href=\"Practitioner-tddui-pp-pa-practitioner-ide-example.html\">Practitioner Élodie Bernard </a></p><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action titre}\">Titre de l'action à mener.</span></p><p><b>value</b>: Action de l'IDE pour atteindre l'objectif 2</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action objectif}\">Objectif(s).</span></p><p><b>value</b>: <a href=\"Goal-tddui-pp-pa-goal-objectif-2-example.html\">Goal : extension = -&gt;CarePlan Projet personnalisé de Mme Jeanne L.; identifier = https://identifiant-medicosocial-objectif.esante.gouv.fr#3480787529/123456789-OBJE-1235; lifecycleStatus = active; description = ; note = Objectif 2</a></p></blockquote></div>"
         },
         "identifier" : [
           {
@@ -1068,7 +1068,7 @@
             "type" : {
               "coding" : [
                 {
-                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem",
+                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action",
                   "code" : "titre"
                 }
               ]
@@ -1079,7 +1079,7 @@
             "type" : {
               "coding" : [
                 {
-                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem",
+                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action",
                   "code" : "objectif"
                 }
               ]
@@ -1107,7 +1107,7 @@
         },
         "text" : {
           "status" : "generated",
-          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_tddui-pp-pa-task-action-3-psy-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Task tddui-pp-pa-task-action-3-psy-example</b></p><a name=\"tddui-pp-pa-task-action-3-psy-example\"> </a><a name=\"hctddui-pp-pa-task-action-3-psy-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-task-action.html\">TDDUI Task Action</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-action.esante.gouv.fr</code>/3480787529/123456789-ACTI-1238</p><p><b>basedOn</b>: <a href=\"CarePlan-tddui-pp-ime-careplan-example.html\">CarePlan Projet personnalisé de Hugo en IME</a></p><p><b>status</b>: In Progress</p><p><b>intent</b>: plan</p><p><b>description</b>: Entretien de satisfaction semestriel</p><p><b>owner</b>: Psychologue</p><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem titre}\">Titre de l'action à mener.</span></p><p><b>value</b>: Action du psychologue pour atteindre l'objectif 3</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem objectif}\">Objectif(s).</span></p><p><b>value</b>: <a href=\"Goal-tddui-pp-pa-goal-objectif-3-example.html\">Goal : extension = -&gt;CarePlan Projet personnalisé de Mme Jeanne L.; identifier = https://identifiant-medicosocial-objectif.esante.gouv.fr#3480787529/123456789-OBJE-1236; lifecycleStatus = active; description = ; note = Objectif 3</a></p></blockquote></div>"
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_tddui-pp-pa-task-action-3-psy-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Task tddui-pp-pa-task-action-3-psy-example</b></p><a name=\"tddui-pp-pa-task-action-3-psy-example\"> </a><a name=\"hctddui-pp-pa-task-action-3-psy-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-task-action.html\">TDDUI Task Action</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-action.esante.gouv.fr</code>/3480787529/123456789-ACTI-1238</p><p><b>basedOn</b>: <a href=\"CarePlan-tddui-pp-ime-careplan-example.html\">CarePlan Projet personnalisé de Hugo en IME</a></p><p><b>status</b>: In Progress</p><p><b>intent</b>: plan</p><p><b>description</b>: Entretien de satisfaction semestriel</p><p><b>owner</b>: Psychologue</p><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action titre}\">Titre de l'action à mener.</span></p><p><b>value</b>: Action du psychologue pour atteindre l'objectif 3</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action objectif}\">Objectif(s).</span></p><p><b>value</b>: <a href=\"Goal-tddui-pp-pa-goal-objectif-3-example.html\">Goal : extension = -&gt;CarePlan Projet personnalisé de Mme Jeanne L.; identifier = https://identifiant-medicosocial-objectif.esante.gouv.fr#3480787529/123456789-OBJE-1236; lifecycleStatus = active; description = ; note = Objectif 3</a></p></blockquote></div>"
         },
         "identifier" : [
           {
@@ -1131,7 +1131,7 @@
             "type" : {
               "coding" : [
                 {
-                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem",
+                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action",
                   "code" : "titre"
                 }
               ]
@@ -1142,7 +1142,7 @@
             "type" : {
               "coding" : [
                 {
-                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem",
+                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action",
                   "code" : "objectif"
                 }
               ]
@@ -1170,7 +1170,7 @@
         },
         "text" : {
           "status" : "generated",
-          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_tddui-pp-pa-task-moyen-ressource-ergo-1-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Task tddui-pp-pa-task-moyen-ressource-ergo-1-example</b></p><a name=\"tddui-pp-pa-task-moyen-ressource-ergo-1-example\"> </a><a name=\"hctddui-pp-pa-task-moyen-ressource-ergo-1-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-task-moyen-ressource.html\">TDDUI Task MoyenRessource</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-moyenressource.esante.gouv.fr</code>/3480787529/123456789-MORE-1234</p><p><b>basedOn</b>: <a href=\"CarePlan-tddui-pp-pa-careplan-example.html\">CarePlan Projet personnalisé de Mme Jeanne L.</a></p><p><b>partOf</b>: <a href=\"Task-tddui-pp-pa-task-action-1-ergo-example.html\">Task : identifier = https://identifiant-medicosocial-action.esante.gouv.fr#3480787529/123456789-ACTI-1235; status = in-progress; intent = plan; description = Évaluer et aménagr la chambre (éclairage, barres, tapis)</a></p><p><b>status</b>: In Progress</p><p><b>intent</b>: plan</p><p><b>description</b>: Barres d'appui et balisage lumineux (budget EHPAD)</p><h3>Inputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-moyen-ressource-codesystem titre}\">Titre du moyen ou de la ressource à utiliser.</span></td><td>Moyens mis en œuvre pour l'objectif 1 (avec rattachement SERAFIN‑PH)</td></tr></table></div>"
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_tddui-pp-pa-task-moyen-ressource-ergo-1-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Task tddui-pp-pa-task-moyen-ressource-ergo-1-example</b></p><a name=\"tddui-pp-pa-task-moyen-ressource-ergo-1-example\"> </a><a name=\"hctddui-pp-pa-task-moyen-ressource-ergo-1-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-task-moyen-ressource.html\">TDDUI Task MoyenRessource</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-moyenressource.esante.gouv.fr</code>/3480787529/123456789-MORE-1234</p><p><b>basedOn</b>: <a href=\"CarePlan-tddui-pp-pa-careplan-example.html\">CarePlan Projet personnalisé de Mme Jeanne L.</a></p><p><b>partOf</b>: <a href=\"Task-tddui-pp-pa-task-action-1-ergo-example.html\">Task : identifier = https://identifiant-medicosocial-action.esante.gouv.fr#3480787529/123456789-ACTI-1235; status = in-progress; intent = plan; description = Évaluer et aménagr la chambre (éclairage, barres, tapis)</a></p><p><b>status</b>: In Progress</p><p><b>intent</b>: plan</p><p><b>description</b>: Barres d'appui et balisage lumineux (budget EHPAD)</p><h3>Inputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-moyen-ressource titre}\">Titre du moyen ou de la ressource à utiliser.</span></td><td>Moyens mis en œuvre pour l'objectif 1 (avec rattachement SERAFIN‑PH)</td></tr></table></div>"
         },
         "identifier" : [
           {
@@ -1196,7 +1196,7 @@
             "type" : {
               "coding" : [
                 {
-                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-moyen-ressource-codesystem",
+                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-moyen-ressource",
                   "code" : "titre"
                 }
               ]
@@ -1222,7 +1222,7 @@
         },
         "text" : {
           "status" : "generated",
-          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_tddui-pp-pa-task-moyen-ressource-ide-1-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Task tddui-pp-pa-task-moyen-ressource-ide-1-example</b></p><a name=\"tddui-pp-pa-task-moyen-ressource-ide-1-example\"> </a><a name=\"hctddui-pp-pa-task-moyen-ressource-ide-1-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-task-moyen-ressource.html\">TDDUI Task MoyenRessource</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-moyenressource.esante.gouv.fr</code>/3480787529/123456789-MORE-1236</p><p><b>basedOn</b>: <a href=\"CarePlan-tddui-pp-pa-careplan-example.html\">CarePlan Projet personnalisé de Mme Jeanne L.</a></p><p><b>partOf</b>: <a href=\"Task-tddui-pp-pa-task-action-1-ide-example.html\">Task : identifier = https://identifiant-medicosocial-action.esante.gouv.fr#3480787529/123456789-ACTI-1236; status = in-progress; intent = plan; description = Atelier éducation risque de chute</a></p><p><b>status</b>: In Progress</p><p><b>intent</b>: plan</p><p><b>description</b>: Temps de coordination IDE/médecin coordonnateur</p><h3>Inputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-moyen-ressource-codesystem titre}\">Titre du moyen ou de la ressource à utiliser.</span></td><td>Moyens mis en œuvre pour l'objectif 1 (avec rattachement SERAFIN‑PH)</td></tr></table></div>"
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_tddui-pp-pa-task-moyen-ressource-ide-1-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Task tddui-pp-pa-task-moyen-ressource-ide-1-example</b></p><a name=\"tddui-pp-pa-task-moyen-ressource-ide-1-example\"> </a><a name=\"hctddui-pp-pa-task-moyen-ressource-ide-1-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-task-moyen-ressource.html\">TDDUI Task MoyenRessource</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-moyenressource.esante.gouv.fr</code>/3480787529/123456789-MORE-1236</p><p><b>basedOn</b>: <a href=\"CarePlan-tddui-pp-pa-careplan-example.html\">CarePlan Projet personnalisé de Mme Jeanne L.</a></p><p><b>partOf</b>: <a href=\"Task-tddui-pp-pa-task-action-1-ide-example.html\">Task : identifier = https://identifiant-medicosocial-action.esante.gouv.fr#3480787529/123456789-ACTI-1236; status = in-progress; intent = plan; description = Atelier éducation risque de chute</a></p><p><b>status</b>: In Progress</p><p><b>intent</b>: plan</p><p><b>description</b>: Temps de coordination IDE/médecin coordonnateur</p><h3>Inputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-moyen-ressource titre}\">Titre du moyen ou de la ressource à utiliser.</span></td><td>Moyens mis en œuvre pour l'objectif 1 (avec rattachement SERAFIN‑PH)</td></tr></table></div>"
         },
         "identifier" : [
           {
@@ -1248,7 +1248,7 @@
             "type" : {
               "coding" : [
                 {
-                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-moyen-ressource-codesystem",
+                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-moyen-ressource",
                   "code" : "titre"
                 }
               ]
@@ -1274,7 +1274,7 @@
         },
         "text" : {
           "status" : "generated",
-          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_tddui-pp-pa-task-moyen-ressource-ide-2-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Task tddui-pp-pa-task-moyen-ressource-ide-2-example</b></p><a name=\"tddui-pp-pa-task-moyen-ressource-ide-2-example\"> </a><a name=\"hctddui-pp-pa-task-moyen-ressource-ide-2-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-task-moyen-ressource.html\">TDDUI Task MoyenRessource</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-moyenressource.esante.gouv.fr</code>/3480787529/123456789-MORE-123615</p><p><b>basedOn</b>: <a href=\"CarePlan-tddui-pp-pa-careplan-example.html\">CarePlan Projet personnalisé de Mme Jeanne L.</a></p><p><b>partOf</b>: <a href=\"Task-tddui-pp-pa-task-action-2-ide-example.html\">Task : identifier = https://identifiant-medicosocial-action.esante.gouv.fr#3480787529/123456789-ACTI-12342; status = in-progress; intent = plan; description = Pesée mensuelle et dépistage dénutrition</a></p><p><b>status</b>: In Progress</p><p><b>intent</b>: plan</p><p><b>description</b>: Carnet de suivi poids</p><h3>Inputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-moyen-ressource-codesystem titre}\">Titre du moyen ou de la ressource à utiliser.</span></td><td>Moyens mis en œuvre pour l'objectif 2 (avec rattachement SERAFIN‑PH)</td></tr></table></div>"
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_tddui-pp-pa-task-moyen-ressource-ide-2-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Task tddui-pp-pa-task-moyen-ressource-ide-2-example</b></p><a name=\"tddui-pp-pa-task-moyen-ressource-ide-2-example\"> </a><a name=\"hctddui-pp-pa-task-moyen-ressource-ide-2-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-task-moyen-ressource.html\">TDDUI Task MoyenRessource</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-moyenressource.esante.gouv.fr</code>/3480787529/123456789-MORE-123615</p><p><b>basedOn</b>: <a href=\"CarePlan-tddui-pp-pa-careplan-example.html\">CarePlan Projet personnalisé de Mme Jeanne L.</a></p><p><b>partOf</b>: <a href=\"Task-tddui-pp-pa-task-action-2-ide-example.html\">Task : identifier = https://identifiant-medicosocial-action.esante.gouv.fr#3480787529/123456789-ACTI-12342; status = in-progress; intent = plan; description = Pesée mensuelle et dépistage dénutrition</a></p><p><b>status</b>: In Progress</p><p><b>intent</b>: plan</p><p><b>description</b>: Carnet de suivi poids</p><h3>Inputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-moyen-ressource titre}\">Titre du moyen ou de la ressource à utiliser.</span></td><td>Moyens mis en œuvre pour l'objectif 2 (avec rattachement SERAFIN‑PH)</td></tr></table></div>"
         },
         "identifier" : [
           {
@@ -1300,7 +1300,7 @@
             "type" : {
               "coding" : [
                 {
-                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-moyen-ressource-codesystem",
+                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-moyen-ressource",
                   "code" : "titre"
                 }
               ]
@@ -1326,7 +1326,7 @@
         },
         "text" : {
           "status" : "generated",
-          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_tddui-pp-pa-task-moyen-ressource-kine-1-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Task tddui-pp-pa-task-moyen-ressource-kine-1-example</b></p><a name=\"tddui-pp-pa-task-moyen-ressource-kine-1-example\"> </a><a name=\"hctddui-pp-pa-task-moyen-ressource-kine-1-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-task-moyen-ressource.html\">TDDUI Task MoyenRessource</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-moyenressource.esante.gouv.fr</code>/3480787529/123456789-MORE-1235</p><p><b>basedOn</b>: <a href=\"CarePlan-tddui-pp-pa-careplan-example.html\">CarePlan Projet personnalisé de Mme Jeanne L.</a></p><p><b>partOf</b>: <a href=\"Task-tddui-pp-pa-task-action-1-kine-example.html\">Task : identifier = https://identifiant-medicosocial-action.esante.gouv.fr#3480787529/123456789-ACTI-1237; status = in-progress; intent = plan; description = Programme équilibre/marche 2×/semaine 12 semaines</a></p><p><b>status</b>: In Progress</p><p><b>intent</b>: plan</p><p><b>description</b>: 30 h de kinésithérapie/6 mois</p><h3>Inputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-moyen-ressource-codesystem titre}\">Titre du moyen ou de la ressource à utiliser.</span></td><td>Moyens mis en œuvre pour l'objectif 1 (avec rattachement SERAFIN‑PH)</td></tr></table></div>"
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_tddui-pp-pa-task-moyen-ressource-kine-1-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Task tddui-pp-pa-task-moyen-ressource-kine-1-example</b></p><a name=\"tddui-pp-pa-task-moyen-ressource-kine-1-example\"> </a><a name=\"hctddui-pp-pa-task-moyen-ressource-kine-1-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-task-moyen-ressource.html\">TDDUI Task MoyenRessource</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-moyenressource.esante.gouv.fr</code>/3480787529/123456789-MORE-1235</p><p><b>basedOn</b>: <a href=\"CarePlan-tddui-pp-pa-careplan-example.html\">CarePlan Projet personnalisé de Mme Jeanne L.</a></p><p><b>partOf</b>: <a href=\"Task-tddui-pp-pa-task-action-1-kine-example.html\">Task : identifier = https://identifiant-medicosocial-action.esante.gouv.fr#3480787529/123456789-ACTI-1237; status = in-progress; intent = plan; description = Programme équilibre/marche 2×/semaine 12 semaines</a></p><p><b>status</b>: In Progress</p><p><b>intent</b>: plan</p><p><b>description</b>: 30 h de kinésithérapie/6 mois</p><h3>Inputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-moyen-ressource titre}\">Titre du moyen ou de la ressource à utiliser.</span></td><td>Moyens mis en œuvre pour l'objectif 1 (avec rattachement SERAFIN‑PH)</td></tr></table></div>"
         },
         "identifier" : [
           {
@@ -1352,7 +1352,7 @@
             "type" : {
               "coding" : [
                 {
-                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-moyen-ressource-codesystem",
+                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-moyen-ressource",
                   "code" : "titre"
                 }
               ]

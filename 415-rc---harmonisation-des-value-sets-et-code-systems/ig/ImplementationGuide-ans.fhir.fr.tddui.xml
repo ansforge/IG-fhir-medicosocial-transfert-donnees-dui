@@ -10,7 +10,7 @@
   <name value="TDDUI"/>
   <title value="Médicosocial - Transfert de données DUI"/>
   <status value="active"/>
-  <date value="2026-01-28T15:00:38+00:00"/>
+  <date value="2026-01-28T15:51:30+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -560,23 +560,12 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/input-tddui-task-transport-codesystem"/>
-      </reference>
-      <name value="InputTaskTransportCodeSystem"/>
-      <description value="CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les transports dans le cadre du DUI."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/input-tddui-task-transport-valueset"/>
+        <reference value="ValueSet/input-tddui-task-transport"/>
       </reference>
-      <name value="InputTaskTransportValueSet"/>
+      <name value="InputTaskTransport"/>
       <description value="ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les transports dans le cadre du DUI."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -585,10 +574,10 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/input-tddui-task-action-codesystem"/>
+        <reference value="CodeSystem/input-tddui-task-transport"/>
       </reference>
-      <name value="InputTDDUITaskActionCodeSystem"/>
-      <description value="CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les actions du projet personnalisé."/>
+      <name value="InputTaskTransport"/>
+      <description value="CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les transports dans le cadre du DUI."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -596,9 +585,9 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/input-tddui-task-action-valueset"/>
+        <reference value="ValueSet/input-tddui-task-action"/>
       </reference>
-      <name value="InputTDDUITaskActionValueSet"/>
+      <name value="InputTDDUITaskAction"/>
       <description value="ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les actions du projet personnalisé."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -607,10 +596,10 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/input-tddui-task-bilan-codesystem"/>
+        <reference value="CodeSystem/input-tddui-task-action"/>
       </reference>
-      <name value="InputTDDUITaskBilanCodeSystem"/>
-      <description value="CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour le bilan du projet personnalisé."/>
+      <name value="InputTDDUITaskAction"/>
+      <description value="CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les actions du projet personnalisé."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -618,9 +607,9 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/input-tddui-task-bilan-valueset"/>
+        <reference value="ValueSet/input-tddui-task-bilan"/>
       </reference>
-      <name value="InputTDDUITaskBilanValueSet"/>
+      <name value="InputTDDUITaskBilan"/>
       <description value="ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour le bilan du projet personnalisé."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -629,10 +618,10 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/input-tddui-task-moyen-ressource-codesystem"/>
+        <reference value="CodeSystem/input-tddui-task-bilan"/>
       </reference>
-      <name value="InputTDDUITaskMoyenRessourceCodeSystem"/>
-      <description value="CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les moyens et ressources du projet personnalisé."/>
+      <name value="InputTDDUITaskBilan"/>
+      <description value="CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour le bilan du projet personnalisé."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -640,9 +629,9 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/input-tddui-task-moyen-ressource-valueset"/>
+        <reference value="ValueSet/input-tddui-task-moyen-ressource"/>
       </reference>
-      <name value="InputTDDUITaskMoyenRessourceValueSet"/>
+      <name value="InputTDDUITaskMoyenRessource"/>
       <description value="ValueSet  pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les moyens et ressources du projet personnalisé."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -651,10 +640,10 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/input-tddui-task-prestation-codesystem"/>
+        <reference value="CodeSystem/input-tddui-task-moyen-ressource"/>
       </reference>
-      <name value="InputTDDUITaskPrestationCodeSystem"/>
-      <description value="CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les prestations du projet personnalisé."/>
+      <name value="InputTDDUITaskMoyenRessource"/>
+      <description value="CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les moyens et ressources du projet personnalisé."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -662,10 +651,21 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/input-tddui-task-prestation-valueset"/>
+        <reference value="ValueSet/input-tddui-task-prestation"/>
       </reference>
-      <name value="InputTDDUITaskPrestationValueSet"/>
+      <name value="InputTDDUITaskPrestation"/>
       <description value="ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les prestations du projet personnalisé."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/input-tddui-task-prestation"/>
+      </reference>
+      <name value="InputTDDUITaskPrestation"/>
+      <description value="CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les prestations du projet personnalisé."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -758,24 +758,24 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
+        <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/output-tddui-task-bilan-codesystem"/>
+        <reference value="ValueSet/output-tddui-task-bilan"/>
       </reference>
-      <name value="OutputTDDUITaskBilanCodeSystem"/>
-      <description value="CodeSystem pour la définition des éléments spécifiques des output dans la ressource Task utilisée pour le bilan du projet personnalisé."/>
+      <name value="OutputTDDUITaskBilan"/>
+      <description value="ValueSet pour la définition des éléments spécifiques des output dans la ressource Task utilisée pour le bilan du projet personnalisé."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
+        <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="ValueSet/output-tddui-task-bilan-valueset"/>
+        <reference value="CodeSystem/output-tddui-task-bilan"/>
       </reference>
-      <name value="OutputTDDUITaskBilanValueSet"/>
-      <description value="ValueSet pour la définition des éléments spécifiques des output dans la ressource Task utilisée pour le bilan du projet personnalisé."/>
+      <name value="OutputTDDUITaskBilan"/>
+      <description value="CodeSystem pour la définition des éléments spécifiques des output dans la ressource Task utilisée pour le bilan du projet personnalisé."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -871,9 +871,9 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/tddui-care-plan-supportingInfo-vs"/>
+        <reference value="ValueSet/tddui-care-plan-supportingInfo"/>
       </reference>
-      <name value="TDDUI CarePlan supportingInfo ValueSet"/>
+      <name value="TDDUI CarePlan supportingInfo"/>
       <description value="ValueSet définissant les types de notes pour l'élément CarePlan.supportingInfo."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -890,12 +890,23 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/tddui-discriminator"/>
+      </reference>
+      <name value="TDDUI Discriminator"/>
+      <description value="ValueSet définissant les codes discriminants."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/tddui-discriminator-cs"/>
+        <reference value="CodeSystem/tddui-discriminator"/>
       </reference>
-      <name value="TDDUI Discriminator CodeSystem"/>
+      <name value="TDDUI Discriminator"/>
       <description value="CodeSystem définissant les codes discriminants."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -908,17 +919,6 @@
       </reference>
       <name value="TDDUI Discriminator Extension"/>
       <description value="Extension pour discriminer les éléments CarePlan.supportingInfo et Goal.note."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/tddui-discriminator-vs"/>
-      </reference>
-      <name value="TDDUI Discriminator ValueSet"/>
-      <description value="ValueSet définissant les codes discriminants."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -956,24 +956,24 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
+        <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/TDDUIEncounterParticipant"/>
+        <reference value="ValueSet/tddui-encounter-participant"/>
       </reference>
-      <name value="TDDUI Encounter Participant Type"/>
-      <description value="CodeSystem for the participant types in TDDUI Encounter"/>
+      <name value="TDDUI Encounter Participant"/>
+      <description value="ValueSet for TDDUI Encounter's participants"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
+        <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="ValueSet/tddui-encounter-participant-vs"/>
+        <reference value="CodeSystem/tddui-encounter-participant"/>
       </reference>
-      <name value="TDDUI Encounter Participant ValueSet"/>
-      <description value="ValueSet for TDDUI Encounter's participants"/>
+      <name value="TDDUI Encounter Participant Type"/>
+      <description value="CodeSystem définissant les types de participants dans le profil TDDUIEncounterEvenement."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -992,9 +992,9 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/tddui-encounter-type-vs"/>
+        <reference value="ValueSet/tddui-encounter-type"/>
       </reference>
-      <name value="TDDUI Encounter Type ValueSet"/>
+      <name value="TDDUI Encounter Type"/>
       <description value="ValueSet for TDDUI Encounter's types"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1025,9 +1025,9 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/tddui-goal-attente-note-vs"/>
+        <reference value="ValueSet/tddui-goal-attente-note"/>
       </reference>
-      <name value="TDDUI Goal Attente Note ValueSet"/>
+      <name value="TDDUI Goal Attente Note"/>
       <description value="ValueSet définissant les types de notes pour l'élément Goal.note."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1047,9 +1047,9 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/tddui-goal-objectif-note-vs"/>
+        <reference value="ValueSet/tddui-goal-objectif-note"/>
       </reference>
-      <name value="TDDUI Goal Objectif Note ValueSet"/>
+      <name value="TDDUI Goal Objectif Note"/>
       <description value="ValueSet définissant les types de notes pour l'élément Goal.note."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1168,9 +1168,9 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/tddui-serafin-valueset"/>
+        <reference value="ValueSet/tddui-serafin"/>
       </reference>
-      <name value="TDDUI SERAFIN ValueSet"/>
+      <name value="TDDUI SERAFIN"/>
       <description value="ValueSet contenant les codes SERAFIN (prestations directes et indirectes) pour le profil TDDUI Encounter Evenement."/>
       <exampleBoolean value="false"/>
     </resource>

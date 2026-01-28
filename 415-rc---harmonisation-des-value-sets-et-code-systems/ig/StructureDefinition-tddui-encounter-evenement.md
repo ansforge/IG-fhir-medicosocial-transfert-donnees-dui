@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-even
   "name" : "TDDUIEncounterEvenement",
   "title" : "TDDUI Encounter Evenement",
   "status" : "active",
-  "date" : "2026-01-28T15:00:38+00:00",
+  "date" : "2026-01-28T15:51:30+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -549,7 +549,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-even
         },
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-type-vs|2.2.0-ballot"
+          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-type|2.2.0-ballot"
         },
         "mapping" : [
           {
@@ -613,7 +613,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-even
         "min" : 1,
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-serafin-valueset|2.2.0-ballot"
+          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-serafin|2.2.0-ballot"
         }
       },
       {
@@ -685,7 +685,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-even
         "path" : "Encounter.participant.type",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-participant-vs|2.2.0-ballot"
+          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-participant|2.2.0-ballot"
         }
       },
       {
@@ -724,7 +724,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-even
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/TDDUIEncounterParticipant",
+              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-participant",
               "code" : "AUT",
               "display" : "Auteur du statut de la ressource"
             }

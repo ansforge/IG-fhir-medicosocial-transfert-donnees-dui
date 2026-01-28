@@ -140,7 +140,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2026-01-28T15:00:38+00:00",
+  "date" : "2026-01-28T15:51:30+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -1007,27 +1007,13 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "CodeSystem"
-          }
-        ],
-        "reference" : {
-          "reference" : "CodeSystem/input-tddui-task-transport-codesystem"
-        },
-        "name" : "InputTaskTransportCodeSystem",
-        "description" : "CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les transports dans le cadre du DUI.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "ValueSet"
           }
         ],
         "reference" : {
-          "reference" : "ValueSet/input-tddui-task-transport-valueset"
+          "reference" : "ValueSet/input-tddui-task-transport"
         },
-        "name" : "InputTaskTransportValueSet",
+        "name" : "InputTaskTransport",
         "description" : "ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les transports dans le cadre du DUI.",
         "exampleBoolean" : false
       },
@@ -1039,10 +1025,10 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           }
         ],
         "reference" : {
-          "reference" : "CodeSystem/input-tddui-task-action-codesystem"
+          "reference" : "CodeSystem/input-tddui-task-transport"
         },
-        "name" : "InputTDDUITaskActionCodeSystem",
-        "description" : "CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les actions du projet personnalisé.",
+        "name" : "InputTaskTransport",
+        "description" : "CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les transports dans le cadre du DUI.",
         "exampleBoolean" : false
       },
       {
@@ -1053,9 +1039,9 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           }
         ],
         "reference" : {
-          "reference" : "ValueSet/input-tddui-task-action-valueset"
+          "reference" : "ValueSet/input-tddui-task-action"
         },
-        "name" : "InputTDDUITaskActionValueSet",
+        "name" : "InputTDDUITaskAction",
         "description" : "ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les actions du projet personnalisé.",
         "exampleBoolean" : false
       },
@@ -1067,10 +1053,10 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           }
         ],
         "reference" : {
-          "reference" : "CodeSystem/input-tddui-task-bilan-codesystem"
+          "reference" : "CodeSystem/input-tddui-task-action"
         },
-        "name" : "InputTDDUITaskBilanCodeSystem",
-        "description" : "CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour le bilan du projet personnalisé.",
+        "name" : "InputTDDUITaskAction",
+        "description" : "CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les actions du projet personnalisé.",
         "exampleBoolean" : false
       },
       {
@@ -1081,9 +1067,9 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           }
         ],
         "reference" : {
-          "reference" : "ValueSet/input-tddui-task-bilan-valueset"
+          "reference" : "ValueSet/input-tddui-task-bilan"
         },
-        "name" : "InputTDDUITaskBilanValueSet",
+        "name" : "InputTDDUITaskBilan",
         "description" : "ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour le bilan du projet personnalisé.",
         "exampleBoolean" : false
       },
@@ -1095,10 +1081,10 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           }
         ],
         "reference" : {
-          "reference" : "CodeSystem/input-tddui-task-moyen-ressource-codesystem"
+          "reference" : "CodeSystem/input-tddui-task-bilan"
         },
-        "name" : "InputTDDUITaskMoyenRessourceCodeSystem",
-        "description" : "CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les moyens et ressources du projet personnalisé.",
+        "name" : "InputTDDUITaskBilan",
+        "description" : "CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour le bilan du projet personnalisé.",
         "exampleBoolean" : false
       },
       {
@@ -1109,9 +1095,9 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           }
         ],
         "reference" : {
-          "reference" : "ValueSet/input-tddui-task-moyen-ressource-valueset"
+          "reference" : "ValueSet/input-tddui-task-moyen-ressource"
         },
-        "name" : "InputTDDUITaskMoyenRessourceValueSet",
+        "name" : "InputTDDUITaskMoyenRessource",
         "description" : "ValueSet  pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les moyens et ressources du projet personnalisé.",
         "exampleBoolean" : false
       },
@@ -1123,10 +1109,10 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           }
         ],
         "reference" : {
-          "reference" : "CodeSystem/input-tddui-task-prestation-codesystem"
+          "reference" : "CodeSystem/input-tddui-task-moyen-ressource"
         },
-        "name" : "InputTDDUITaskPrestationCodeSystem",
-        "description" : "CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les prestations du projet personnalisé.",
+        "name" : "InputTDDUITaskMoyenRessource",
+        "description" : "CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les moyens et ressources du projet personnalisé.",
         "exampleBoolean" : false
       },
       {
@@ -1137,10 +1123,24 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           }
         ],
         "reference" : {
-          "reference" : "ValueSet/input-tddui-task-prestation-valueset"
+          "reference" : "ValueSet/input-tddui-task-prestation"
         },
-        "name" : "InputTDDUITaskPrestationValueSet",
+        "name" : "InputTDDUITaskPrestation",
         "description" : "ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les prestations du projet personnalisé.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/input-tddui-task-prestation"
+        },
+        "name" : "InputTDDUITaskPrestation",
+        "description" : "CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les prestations du projet personnalisé.",
         "exampleBoolean" : false
       },
       {
@@ -1259,28 +1259,28 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "CodeSystem"
+            "valueString" : "ValueSet"
           }
         ],
         "reference" : {
-          "reference" : "CodeSystem/output-tddui-task-bilan-codesystem"
+          "reference" : "ValueSet/output-tddui-task-bilan"
         },
-        "name" : "OutputTDDUITaskBilanCodeSystem",
-        "description" : "CodeSystem pour la définition des éléments spécifiques des output dans la ressource Task utilisée pour le bilan du projet personnalisé.",
+        "name" : "OutputTDDUITaskBilan",
+        "description" : "ValueSet pour la définition des éléments spécifiques des output dans la ressource Task utilisée pour le bilan du projet personnalisé.",
         "exampleBoolean" : false
       },
       {
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
+            "valueString" : "CodeSystem"
           }
         ],
         "reference" : {
-          "reference" : "ValueSet/output-tddui-task-bilan-valueset"
+          "reference" : "CodeSystem/output-tddui-task-bilan"
         },
-        "name" : "OutputTDDUITaskBilanValueSet",
-        "description" : "ValueSet pour la définition des éléments spécifiques des output dans la ressource Task utilisée pour le bilan du projet personnalisé.",
+        "name" : "OutputTDDUITaskBilan",
+        "description" : "CodeSystem pour la définition des éléments spécifiques des output dans la ressource Task utilisée pour le bilan du projet personnalisé.",
         "exampleBoolean" : false
       },
       {
@@ -1403,9 +1403,9 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           }
         ],
         "reference" : {
-          "reference" : "ValueSet/tddui-care-plan-supportingInfo-vs"
+          "reference" : "ValueSet/tddui-care-plan-supportingInfo"
         },
-        "name" : "TDDUI CarePlan supportingInfo ValueSet",
+        "name" : "TDDUI CarePlan supportingInfo",
         "description" : "ValueSet définissant les types de notes pour l'élément CarePlan.supportingInfo.",
         "exampleBoolean" : false
       },
@@ -1427,13 +1427,27 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/tddui-discriminator"
+        },
+        "name" : "TDDUI Discriminator",
+        "description" : "ValueSet définissant les codes discriminants.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "CodeSystem"
           }
         ],
         "reference" : {
-          "reference" : "CodeSystem/tddui-discriminator-cs"
+          "reference" : "CodeSystem/tddui-discriminator"
         },
-        "name" : "TDDUI Discriminator CodeSystem",
+        "name" : "TDDUI Discriminator",
         "description" : "CodeSystem définissant les codes discriminants.",
         "exampleBoolean" : false
       },
@@ -1449,20 +1463,6 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "TDDUI Discriminator Extension",
         "description" : "Extension pour discriminer les éléments CarePlan.supportingInfo et Goal.note.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/tddui-discriminator-vs"
-        },
-        "name" : "TDDUI Discriminator ValueSet",
-        "description" : "ValueSet définissant les codes discriminants.",
         "exampleBoolean" : false
       },
       {
@@ -1511,28 +1511,28 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "CodeSystem"
+            "valueString" : "ValueSet"
           }
         ],
         "reference" : {
-          "reference" : "CodeSystem/TDDUIEncounterParticipant"
+          "reference" : "ValueSet/tddui-encounter-participant"
         },
-        "name" : "TDDUI Encounter Participant Type",
-        "description" : "CodeSystem for the participant types in TDDUI Encounter",
+        "name" : "TDDUI Encounter Participant",
+        "description" : "ValueSet for TDDUI Encounter's participants",
         "exampleBoolean" : false
       },
       {
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
+            "valueString" : "CodeSystem"
           }
         ],
         "reference" : {
-          "reference" : "ValueSet/tddui-encounter-participant-vs"
+          "reference" : "CodeSystem/tddui-encounter-participant"
         },
-        "name" : "TDDUI Encounter Participant ValueSet",
-        "description" : "ValueSet for TDDUI Encounter's participants",
+        "name" : "TDDUI Encounter Participant Type",
+        "description" : "CodeSystem définissant les types de participants dans le profil TDDUIEncounterEvenement.",
         "exampleBoolean" : false
       },
       {
@@ -1557,9 +1557,9 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           }
         ],
         "reference" : {
-          "reference" : "ValueSet/tddui-encounter-type-vs"
+          "reference" : "ValueSet/tddui-encounter-type"
         },
-        "name" : "TDDUI Encounter Type ValueSet",
+        "name" : "TDDUI Encounter Type",
         "description" : "ValueSet for TDDUI Encounter's types",
         "exampleBoolean" : false
       },
@@ -1599,9 +1599,9 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           }
         ],
         "reference" : {
-          "reference" : "ValueSet/tddui-goal-attente-note-vs"
+          "reference" : "ValueSet/tddui-goal-attente-note"
         },
-        "name" : "TDDUI Goal Attente Note ValueSet",
+        "name" : "TDDUI Goal Attente Note",
         "description" : "ValueSet définissant les types de notes pour l'élément Goal.note.",
         "exampleBoolean" : false
       },
@@ -1627,9 +1627,9 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           }
         ],
         "reference" : {
-          "reference" : "ValueSet/tddui-goal-objectif-note-vs"
+          "reference" : "ValueSet/tddui-goal-objectif-note"
         },
-        "name" : "TDDUI Goal Objectif Note ValueSet",
+        "name" : "TDDUI Goal Objectif Note",
         "description" : "ValueSet définissant les types de notes pour l'élément Goal.note.",
         "exampleBoolean" : false
       },
@@ -1781,9 +1781,9 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           }
         ],
         "reference" : {
-          "reference" : "ValueSet/tddui-serafin-valueset"
+          "reference" : "ValueSet/tddui-serafin"
         },
-        "name" : "TDDUI SERAFIN ValueSet",
+        "name" : "TDDUI SERAFIN",
         "description" : "ValueSet contenant les codes SERAFIN (prestations directes et indirectes) pour le profil TDDUI Encounter Evenement.",
         "exampleBoolean" : false
       },

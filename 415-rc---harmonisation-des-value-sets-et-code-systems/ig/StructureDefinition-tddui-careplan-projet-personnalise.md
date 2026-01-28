@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
   "name" : "TDDUICarePlanProjetPersonnalise",
   "title" : "TDDUI CarePlan Projet Personalise",
   "status" : "active",
-  "date" : "2026-01-28T15:00:38+00:00",
+  "date" : "2026-01-28T15:51:30+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -387,14 +387,14 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs",
+              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator",
               "code" : "accordUsager"
             }
           ]
         },
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-care-plan-supportingInfo-vs|2.2.0-ballot"
+          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-care-plan-supportingInfo|2.2.0-ballot"
         }
       },
       {
@@ -440,14 +440,14 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs",
+              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator",
               "code" : "accordStructure"
             }
           ]
         },
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-care-plan-supportingInfo-vs|2.2.0-ballot"
+          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-care-plan-supportingInfo|2.2.0-ballot"
         }
       },
       {
