@@ -18,4 +18,4 @@ Description: "Exemple d'un projet personnalisé PA"
 * subject = Reference(tddui-pp-pa-patient-example-pp)
 
 * supportingInfo[accordStructure] = Reference(tddui-pp-pa-consent-accord-example)
-* supportingInfo[accordStructure].extension[TDDUIDiscriminator].valueCodeableConcept = TDDUIDiscriminatorCS#accordStructure
+* supportingInfo[accordStructure].extension[TDDUIDiscriminator].valueCodeableConcept = TDDUIDiscriminator#accordStructure

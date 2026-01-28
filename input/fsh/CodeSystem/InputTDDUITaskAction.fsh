@@ -1,6 +1,6 @@
-CodeSystem: InputTDDUITaskActionCodeSystem
-Id: input-tddui-task-action-codesystem
-Title: "InputTDDUITaskActionCodeSystem"
+CodeSystem: InputTDDUITaskAction
+Id: input-tddui-task-action
+Title: "InputTDDUITaskAction"
 Description: "CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les actions du projet personnalisé."
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
 * ^caseSensitive = true

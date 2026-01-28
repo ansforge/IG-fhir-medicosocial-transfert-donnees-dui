@@ -17,7 +17,7 @@ Description: "Profil de la ressource Task permettant de représenter les actions
 * status.extension contains 
     TDDUIStatusAuthor named auteurStatut 0..1
 
-* input.type from InputTDDUITaskActionValueSet (required)
+* input.type from InputTDDUITaskAction (required)
 
 * input ^slicing.discriminator.type = #pattern
 * input ^slicing.discriminator.path = "type"
@@ -31,27 +31,27 @@ Description: "Profil de la ressource Task permettant de représenter les actions
     pieceJointe 0..* and
     objectif 0..*
 
-* input[titre].type = InputTDDUITaskActionCodeSystem#titre
+* input[titre].type = InputTDDUITaskAction#titre
 * input[titre].value[x] only string
 * input[titre] ^short = "Titre de l’action"
 
-* input[evaluation].type = InputTDDUITaskActionCodeSystem#evaluation
+* input[evaluation].type = InputTDDUITaskAction#evaluation
 * input[evaluation].value[x] only Reference(TDDUIQuestionnaireResponse)
 * input[evaluation] ^short = "Évaluation"
 
-* input[avisUsager].type = InputTDDUITaskActionCodeSystem#avisUsager
+* input[avisUsager].type = InputTDDUITaskAction#avisUsager
 * input[avisUsager].value[x] only string
 * input[avisUsager] ^short = "Avis de l'usager"
 
-* input[resultatAttendu].type = InputTDDUITaskActionCodeSystem#resultatAttendu
+* input[resultatAttendu].type = InputTDDUITaskAction#resultatAttendu
 * input[resultatAttendu].value[x] only string
 * input[resultatAttendu] ^short = "Résultat attendu"
 
-* input[pieceJointe].type = InputTDDUITaskActionCodeSystem#pieceJointe
+* input[pieceJointe].type = InputTDDUITaskAction#pieceJointe
 * input[pieceJointe].value[x] only Reference(TDDUIDocumentReference)
 * input[pieceJointe] ^short = "Pièce jointe associée"
 
-* input[objectif].type = InputTDDUITaskActionCodeSystem#objectif
+* input[objectif].type = InputTDDUITaskAction#objectif
 * input[objectif].value[x] only Reference(TDDUIGoalObjectif)
 * input[objectif] ^short = "Objectif"
 

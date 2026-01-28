@@ -21,7 +21,7 @@ Description: "Profil de la ressource Encounter permettant de regrouper les évè
 * status.extension contains 
     TDDUIEventCancelReason named TDDUIEventCancelReason 0..1
 
-* type from TDDUIEncounterTypeVs (required)
+* type from TDDUIEncounterType (required)
 
 // Types d'évènement
 * type ^slicing.discriminator.type = #pattern
@@ -42,7 +42,7 @@ Description: "Profil de la ressource Encounter permettant de regrouper les évè
 
 * type[serafin].coding 1..1
 * type[serafin].coding.code 1..1
-* type[serafin].coding.code from TDDUISerafinValueSet
+* type[serafin].coding.code from TDDUISerafin
 * type[serafin].coding.system 1..1
 * type[serafin].coding.system = "https://smt.esante.gouv.fr/terminologie-SERAFINPH"
 * type[serafin] ^short = "Type d'évènement Serafin correspondant aux familles 2-PrestationDirecte et 3-PrestationIndirecte."
@@ -62,7 +62,7 @@ Description: "Profil de la ressource Encounter permettant de regrouper les évè
 // ESSMS
 * serviceProvider only Reference(TDDUIOrganization)
 
-* participant.type from TDDUIEncounterParticipantVs (required)
+* participant.type from TDDUIEncounterParticipant (required)
 
 * participant ^slicing.discriminator.type = #pattern
 * participant ^slicing.discriminator.path = "type"

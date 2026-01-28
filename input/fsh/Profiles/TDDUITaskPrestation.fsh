@@ -17,7 +17,7 @@ Description: "Profil de la ressource Task permettant de représenter les prestat
 * status.extension contains 
     TDDUIStatusAuthor named auteurStatut 0..1
 
-* input.type from InputTDDUITaskPrestationValueSet (required)
+* input.type from InputTDDUITaskPrestation (required)
 
 * input ^slicing.discriminator.type = #pattern
 * input ^slicing.discriminator.path = "type"
@@ -29,20 +29,20 @@ Description: "Profil de la ressource Task permettant de représenter les prestat
     evaluation 0..1 and
     pieceJointe 0..*
 
-* input[titre].type = InputTDDUITaskPrestationCodeSystem#titre
+* input[titre].type = InputTDDUITaskPrestation#titre
 * input[titre].value[x] only string
 * input[titre] ^short = "Titre de l’action"
 
-* input[typePrestation].type = InputTDDUITaskPrestationCodeSystem#typePrestation
+* input[typePrestation].type = InputTDDUITaskPrestation#typePrestation
 * input[typePrestation].value[x] only CodeableConcept
-* input[typePrestation].valueCodeableConcept from TDDUISerafinValueSet
+* input[typePrestation].valueCodeableConcept from TDDUISerafin
 * input[typePrestation] ^short = "Type de la prestation."
 
-* input[evaluation].type = InputTDDUITaskPrestationCodeSystem#evaluation
+* input[evaluation].type = InputTDDUITaskPrestation#evaluation
 * input[evaluation].value[x] only Reference(TDDUIQuestionnaireResponse)
 * input[evaluation] ^short = "Évaluation"
 
-* input[pieceJointe].type = InputTDDUITaskPrestationCodeSystem#pieceJointe
+* input[pieceJointe].type = InputTDDUITaskPrestation#pieceJointe
 * input[pieceJointe].value[x] only Reference(TDDUIDocumentReference)
 * input[pieceJointe] ^short = "Pièce jointe associée"
 

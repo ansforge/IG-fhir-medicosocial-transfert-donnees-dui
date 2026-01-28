@@ -1,7 +1,7 @@
 CodeSystem: TDDUIEncounterParticipant
-Id: TDDUIEncounterParticipant
+Id: tddui-encounter-participant
 Title: "TDDUI Encounter Participant Type"
-Description: "CodeSystem for the participant types in TDDUI Encounter"
+Description: "CodeSystem définissant les types de participants dans le profil TDDUIEncounterEvenement."
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
 
 * ^caseSensitive = true

@@ -20,7 +20,7 @@ Description: "Profil de la ressource Task permettant de représenter le bilan du
 * basedOn 1..1
 * basedOn only Reference(TDDUICarePlanProjetPersonnalise)
 
-* input.type from InputTDDUITaskBilanValueSet (required)
+* input.type from InputTDDUITaskBilan (required)
 
 * input ^slicing.discriminator.type = #pattern
 * input ^slicing.discriminator.path = "type"
@@ -34,34 +34,34 @@ Description: "Profil de la ressource Task permettant de représenter le bilan du
     dateProchainBilan 0..1 and 
     synthesePreparationBilan 0..*
 
-* input[perimetre].type = InputTDDUITaskBilanCodeSystem#perimetre
+* input[perimetre].type = InputTDDUITaskBilan#perimetre
 * input[perimetre].value[x] only string
 * input[perimetre] ^short = "Périmètre du bilan"
 
-* input[problematique].type = InputTDDUITaskBilanCodeSystem#problematique
+* input[problematique].type = InputTDDUITaskBilan#problematique
 * input[problematique].value[x] only string
 * input[problematique] ^short = "Problématique liée à l'usager"
 
-* input[invite].type = InputTDDUITaskBilanCodeSystem#invite
+* input[invite].type = InputTDDUITaskBilan#invite
 * input[invite].value[x] only string
 * input[invite] ^short = "Liste des personnes invitées à participer au bilan"
 
-* input[pieceJointe].type = InputTDDUITaskBilanCodeSystem#pieceJointe
+* input[pieceJointe].type = InputTDDUITaskBilan#pieceJointe
 * input[pieceJointe].value[x] only Reference(TDDUIDocumentReference)
 * input[pieceJointe] ^short = "Pièce jointe du bilan"
 
-* input[dateProchainBilan].type = InputTDDUITaskBilanCodeSystem#dateProchainBilan
+* input[dateProchainBilan].type = InputTDDUITaskBilan#dateProchainBilan
 * input[dateProchainBilan].value[x] only dateTime
 * input[dateProchainBilan] ^short = "Date du prochain bilan"
 
-* input[synthesePreparationBilan].type = InputTDDUITaskBilanCodeSystem#synthesePreparationBilan
+* input[synthesePreparationBilan].type = InputTDDUITaskBilan#synthesePreparationBilan
 * input[synthesePreparationBilan].value[x] only Annotation
 * input[synthesePreparationBilan].valueAnnotation.text 1..1
 * input[synthesePreparationBilan].valueAnnotation.authorReference 1..1
 * input[synthesePreparationBilan].valueAnnotation.authorReference only Reference(TDDUIPractitioner or TDDUIPatient or TDDUIPatientINS or FRCoreRelatedPersonProfile)
 * input[synthesePreparationBilan] ^short = "Préparation du bilan"
 
-* output.type from OutputTDDUITaskBilanValueSet (required)
+* output.type from OutputTDDUITaskBilan (required)
 
 * output ^slicing.discriminator.type = #pattern
 * output ^slicing.discriminator.path = "type"
@@ -70,7 +70,7 @@ Description: "Profil de la ressource Task permettant de représenter le bilan du
 * output contains
     syntheseBilan 0..1
 
-* output[syntheseBilan].type = OutputTDDUITaskBilanCodeSystem#syntheseBilan
+* output[syntheseBilan].type = OutputTDDUITaskBilan#syntheseBilan
 * output[syntheseBilan].value[x] only string
 * output[syntheseBilan] ^short = "Synthèse du bilan"
 

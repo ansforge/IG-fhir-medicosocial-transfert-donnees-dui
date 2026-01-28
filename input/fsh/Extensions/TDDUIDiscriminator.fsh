@@ -5,4 +5,4 @@ Description: 	"Extension pour discriminer les éléments CarePlan.supportingInfo
 Context: CarePlan.supportingInfo, Goal.note
 
 * value[x] only CodeableConcept
-* valueCodeableConcept from TDDUIDiscriminatorVS (required)
+* valueCodeableConcept from TDDUIDiscriminator (required)

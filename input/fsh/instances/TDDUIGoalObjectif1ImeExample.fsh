@@ -15,4 +15,4 @@ Description: "Exemple d'un objectif dans le cadre du projet personnalisé en IME
 * extension[referenceProjetPerso].valueReference = Reference(tddui-pp-ime-careplan-example)
 
 * note[titreObjectif].text = "Objectif 1"
-* note[titreObjectif].extension[TDDUIDiscriminator].valueCodeableConcept = TDDUIDiscriminatorCS#titreObjectif
+* note[titreObjectif].extension[TDDUIDiscriminator].valueCodeableConcept = TDDUIDiscriminator#titreObjectif
