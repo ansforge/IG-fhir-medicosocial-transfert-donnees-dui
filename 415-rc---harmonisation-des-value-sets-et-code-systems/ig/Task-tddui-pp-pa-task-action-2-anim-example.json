@@ -1,0 +1,44 @@
+{
+  "resourceType" : "Task",
+  "id" : "tddui-pp-pa-task-action-2-anim-example",
+  "meta" : {
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Task tddui-pp-pa-task-action-2-anim-example</b></p><a name=\"tddui-pp-pa-task-action-2-anim-example\"> </a><a name=\"hctddui-pp-pa-task-action-2-anim-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-task-action.html\">TDDUI Task Action</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-action.esante.gouv.fr</code>/3480787529/123456789-ACTI-12341</p><p><b>basedOn</b>: <a href=\"CarePlan-tddui-pp-ime-careplan-example.html\">CarePlan Projet personnalisé de Hugo en IME</a></p><p><b>status</b>: In Progress</p><p><b>intent</b>: plan</p><p><b>description</b>: Atelier cuisine mensuel co‑animé avec résidents</p><p><b>owner</b>: Animatrice</p><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem titre}\">Titre de l'action à mener.</span></p><p><b>value</b>: Action de l'animatrice pour atteindre l'objectif 2</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem objectif}\">Objectif(s).</span></p><p><b>value</b>: <a href=\"Goal-tddui-pp-pa-goal-objectif-2-example.html\">Goal : extension = -&gt;CarePlan Projet personnalisé de Mme Jeanne L.; identifier = https://identifiant-medicosocial-objectif.esante.gouv.fr#3480787529/123456789-OBJE-1235; lifecycleStatus = active; description = ; note = Objectif 2</a></p></blockquote></div>"
+  },
+  "identifier" : [{
+    "system" : "https://identifiant-medicosocial-action.esante.gouv.fr",
+    "value" : "3480787529/123456789-ACTI-12341"
+  }],
+  "basedOn" : [{
+    "reference" : "CarePlan/tddui-pp-ime-careplan-example"
+  }],
+  "status" : "in-progress",
+  "intent" : "plan",
+  "description" : "Atelier cuisine mensuel co‑animé avec résidents",
+  "owner" : {
+    "display" : "Animatrice"
+  },
+  "input" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem",
+        "code" : "titre"
+      }]
+    },
+    "valueString" : "Action de l'animatrice pour atteindre l'objectif 2"
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem",
+        "code" : "objectif"
+      }]
+    },
+    "valueReference" : {
+      "reference" : "Goal/tddui-pp-pa-goal-objectif-2-example"
+    }
+  }]
+}
