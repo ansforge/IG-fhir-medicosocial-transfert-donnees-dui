@@ -24,7 +24,6 @@ class Evaluation #LightGray {
     dateEvaluation : DateHeure [0..1]
     resultatEvaluation : [0..1]
     modaliteEvaluation : Texte [0..1]
-    autoEvaluation : Indicateur [0..1]
     commentaireEvaluation : Texte [0..1]
     pieceJointeEvaluation : ObjetBinaire [0..*]
 }
@@ -54,6 +53,7 @@ note right of DetailEvaluationN2::resultatChampsEvalue
 end note
 
 Professionnel <|-- Evaluateur
+Usager <|-- Evaluateur
 Professionnel <|-- Responsable
 Professionnel <|-- Auteur
 

@@ -1359,11 +1359,9 @@ Ce niveau permet d'associer à un champ évalué de la classe "DetailEvaluation"
 
 ##### Classe Evaluateur
 
-** Classe spécialisée, hérite de la classe Professionnel du MOS profilée pour ce volet.
+** Classe spécialisée, hérite soit de la classe Professionnel du MOS profilée pour ce volet soit de la classe Usager dans le cas d'une auto évaluation, où l'évaluateur correspond à l'usager.
 
 Cette classe regroupe les items pouvant caractériser la personne ayant réalisé l'évaluation.<br>
-
-Dans le cas d'une auto évaluation, l'évaluateur étant l'usager cet élément n'est pas requis.
 
 ##### Classe Responsable
 
