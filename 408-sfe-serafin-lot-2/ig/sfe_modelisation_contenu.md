@@ -44,7 +44,7 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
   * Description: Date de naissance de l’usager. Cet attribut fait partie des traits INS. Il est obligatoire si l’identité INS est qualifiée.Il est préconisé si le NIR ou l'identifiant local est véhiculé et que l'identité n'est pas qualifiée.
 * Nom: ordreNaissanceEtatCivil : [0..1] Numerique
   * Description: Ordre d’enregistrement de la naissance dans le registre d’état civil de la commune de naissance pour le mois de la naissance. Il compose les[3 derniers chiffres du NIR de l'usager avant ](https://www.ameli.fr/llle-et-vilaine/assure/droits-demarches/principes/numero-securite-sociale)la clé de sécurité et permet de distinguer les personnes nées au même lieu et à la même période.Il est obligatoire si le NIR n'est pas transmis.
-* Nom: CommuneNaissance : [0..1] Code
+* Nom: communeNaissance : [0..1] Code
   * Description: Commune de naissance de l’usager. Code officiel géographique (COG) de la commune.Jeu(x) de valeur(s) associé(s) :[JDV_J120-CommuneHistorisee](https://mos.esante.gouv.fr/NOS/JDV_J120-CommuneHistorisee/FHIR/JDV-J120-CommuneHistorisee)Cet attribut fait partie des traits INS. Il est obligatoire si l’identité INS est qualifiée.Il est préconisé si le NIR ou l'identifiant local est véhiculé et que l'identité n'est pas qualifiée.
 * Nom: departementNaissance : [0..1] Code
   * Description: Département de naissance de la personne. Code officiel géographique (COG) du département.Jeu(x) de valeur(s) associé(s) :[JDV-J258-Departement](https://mos.esante.gouv.fr/NOS/JDV_J258-Departement/FHIR/JDV-J258-Departement)
@@ -52,7 +52,7 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
   * Description: Pays de naissance de la personne.Nomenclature(s) associée(s) : ISO 3166Cet attribut fait partie des traits INS. Il est obligatoire si l’identité INS est qualifiée.Il est préconisé si le NIR ou l'identifiant local est véhiculé et que l'identité n'est pas qualifiée.
 * Nom: situationFamiliale : [0..1] Code
   * Description: Situation familiale de l’usager.Jeu(x) de valeur(s) associé(s) :[JDV-J176-SituationVieQuotidienne-MDPH](https://mos.esante.gouv.fr/NOS/JDV_J176-SituationVieQuotidienne-MDPH/FHIR/JDV-J176-SituationVieQuotidienne-MDPH)
-* Nom: compositionFoyer : [0..1] Code
+* Nom: compositionFoyer : [0..*] Code
   * Description: Désigne avec qui vit l’usager dans son logement.Jeu(x) de valeur(s) associé(s) :[JDV-J385-composition-foyer-ms](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j385-composition-foyer-ms/$expand)
 * Nom: descriptionCompositionFoyer : [0..1] Texte
   * Description: Description de la composition du foyer, c’est-à-dire des personnes qui vivent dans le logement avec l'usager.
