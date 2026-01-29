@@ -413,7 +413,7 @@ Relevé d'Identité Bancaire.
 * Nom: BIC : [0..1] Identifiant
   * Description: Bank Identifer Code.
 
-##### Classe Transport
+##### Classe TransportUsager
 
 Moyen de transport utilisé par l’usager.
 
