@@ -108,7 +108,7 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
     Il est obligatoire si le NIR n'est pas transmis.</td>
   </tr>
   <tr>
-    <td>CommuneNaissance : [0..1] Code</td>
+    <td>communeNaissance : [0..1] Code</td>
     <td>Commune de naissance de l’usager. Code officiel géographique (COG) de la commune.<br>
     Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J120-CommuneHistorisee/FHIR/JDV-J120-CommuneHistorisee">JDV_J120-CommuneHistorisee</a><br>
     Cet attribut fait partie des traits INS. Il est obligatoire si l’identité INS est qualifiée.<br>
@@ -132,7 +132,7 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
     Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J176-SituationVieQuotidienne-MDPH/FHIR/JDV-J176-SituationVieQuotidienne-MDPH">JDV-J176-SituationVieQuotidienne-MDPH</a></td>
   </tr>
   <tr>
-    <td>compositionFoyer : [0..1] Code</td>
+    <td>compositionFoyer : [0..*] Code</td>
     <td>Désigne avec qui vit l’usager dans son logement.<br>
     Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j385-composition-foyer-ms/$expand">JDV-J385-composition-foyer-ms</a></td>
   </tr>
