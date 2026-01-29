@@ -67,21 +67,22 @@ class Participant #LightGray {
 
 Usager "1" -- "0..*" Evenement
 Participant "0..*" -- "1..*" Evenement
-Professionnel "0..1" -- "0..*" Participant
+Professionnel "0..1" - "0..*" Participant
 
 Transport <|-- TransportProfessionnel
 Transport <|-- TransportUsager
 
 TransportUsager "0..*" -- "1" Evenement
-TransportProfessionnel "0..*" - "1" Professionnel
+Professionnel "1" -- "0..*" TransportProfessionnel
+
 Evenement "0..1" -- "0..1" Evaluation
 Evenement "1" -- "0..*" Statut
 
 EntiteJuridique <|-- StructureEnCharge
-EntiteJuridique <|-- StructureRattachement
+EntiteJuridique <|- StructureRattachement
 
 StructureEnCharge "0..1" -- "0..*" Participant
-StructureRattachement "0..1" -- "0..1" Participant
+StructureRattachement "0..1" - "0..1" Participant
 Evenement "0..*" -- "0..1" StructureRattachement
 
 @enduml
