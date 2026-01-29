@@ -610,11 +610,9 @@ Ce niveau permet d'associer à un champ évalué de la classe "DetailEvaluation"
 
 ##### Classe Evaluateur
 
-** Classe spécialisée, hérite de la classe Professionnel du MOS profilée pour ce volet.
+** Classe spécialisée, hérite soit de la classe Professionnel du MOS profilée pour ce volet soit de la classe Usager dans le cas d'une auto évaluation, où l'évaluateur correspond à l'usager.
 
 Cette classe regroupe les items pouvant caractériser la personne ayant réalisé l'évaluation.
-
-Dans le cas d'une auto évaluation, l'évaluateur étant l'usager cet élément n'est pas requis.
 
 ##### Classe Responsable
 
@@ -845,6 +843,12 @@ La classe EntiteGeographique est issue du MOS et est profilée pour ce volet.
 ** Classe spécialisée, hérite de la classe PersonnePhysique
 
 La loi place l’enseignant référent comme l’acteur central des actions conduites en direction des élèves handicapés. Il est l’interlocuteur privilégié des parents et des différents acteurs autour de la scolarisation d’un enfant, qu’il soit scolarisé en école ordinaire ou bien dans le milieu spécialisé.
+
+##### Classe Ecole
+
+** Classe spécialisée, hérite de la classe EntiteGeographique qui est issue du MOS et qui est profilée pour ce volet.
+
+Cette classe correspond à la structure dans laquelle la période scolaire de l'usager se déroule.
 
 ### Partie Coordination des acteurs
 
