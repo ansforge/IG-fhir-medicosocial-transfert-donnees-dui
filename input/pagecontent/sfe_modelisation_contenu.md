@@ -929,7 +929,7 @@ Relevé d'Identité Bancaire.
   </tr>
 </table>
 
-##### Classe Transport
+##### Classe TransportUsager
 
 Moyen de transport utilisé par l’usager.
 
