@@ -1871,11 +1871,7 @@ Les classes EntiteJuridique, Lieu et Professionnel sont issues du MOS et sont pr
     <td>lieuEvenement : [0..1] Lieu</td>
     <td>Localisation d’exécution de l’évènement.</td>
   </tr>
-<tr>
-    <td>structureEnCharge : [0..1] EntiteJuridique</td>
-    <td>Structure de rattachement de l'usager en charge de l'évènement.</td>
-  </tr>
-<tr>
+  <tr>
     <td>dateDebutEvenement : [1..1] DateHeure</td>
     <td>Date et heure de début de l'évènement.</td>
   </tr>
@@ -1919,7 +1915,7 @@ Les classes EntiteJuridique, Lieu et Professionnel sont issues du MOS et sont pr
   </tr>
    <tr>
     <td>validationUsager : [0..1] Indicateur</td>
-    <td>Accord de l'usager<br>
+    <td>Validation par l'usager que l'événement a eu lieu.<br>
 1 =  validation de l'usager<br>
 0 =  refus de l'usager</td>
   </tr>
@@ -1944,12 +1940,6 @@ Le Participant est une personne morale ou physique prenant part à l'événement
     <td>roleParticipantEJ : [0..1] Code</td>
     <td>Role du participant vis à vis de l'événement (mandataire judiciaire, structure en charge de l'événement).<br>
     Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j387-role-participant-ms/$expand">JDV-J387-ROLE-PARTICIPANT-MS</a></td>
-  </tr>
-  <tr>
-    <td>modeExerciceParticipantPP : [0..1] Code</td>
-    <td>Mode d'exercice de la personne physique. Le mode d'exercice décrit selon quelle modalité une activité est exercée au regard de l'évènement.<br>
-    Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J117-ModeExercice-ENREG/FHIR/JDV-J117-ModeExercice-ENREG">JDV-J117-ModeExercice-ENREG</a>
-    </td>
   </tr>
   <tr>
     <td>participantInterne : [0..1] Indicateur</td>
