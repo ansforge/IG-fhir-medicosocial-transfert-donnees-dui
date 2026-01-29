@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-event-label.cs
   "name" : "TDDUIEventLabel",
   "title" : "Libellé de l'évènement",
   "status" : "active",
-  "date" : "2026-01-29T15:10:00+00:00",
+  "date" : "2026-01-29T16:09:55+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
