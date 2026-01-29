@@ -53,6 +53,7 @@ Alias: $JDV-J78-Civilite-RASS = https://mos.esante.gouv.fr/NOS/JDV_J78-Civilite-
 Alias: $JDV-J129-CategorieEtablissement-RASS = https://mos.esante.gouv.fr/NOS/JDV_J129-CategorieEtablissement-RASS/FHIR/JDV-J129-CategorieEtablissement-RASS
 Alias: $JDV-J105-EnsembleDiplome-RASS = https://mos.esante.gouv.fr/NOS/JDV_J105-EnsembleDiplome-RASS/FHIR/JDV-J105-EnsembleDiplome-RASS
 Alias: $JDV-J101-SecteurActivite-RASS = https://mos.esante.gouv.fr/NOS/JDV_J101-SecteurActivite-RASS/FHIR/JDV-J101-SecteurActivite-RASS
+Alias: $JDV-J226-ModaliteAccueil-ROR = https://mos.esante.gouv.fr/NOS/JDV_J226-ModaliteAccueil-ROR/FHIR/JDV-J226-ModaliteAccueil-ROR
 
 Alias: $JDV-J81-TypeDiplome-RASS = https://mos.esante.gouv.fr/NOS/JDV_J81-TypeDiplome-RASS/FHIR/JDV-J81-TypeDiplome-RASS
 Alias: $JDV-J89-CategorieProfessionnelle-RASS = https://mos.esante.gouv.fr/NOS/JDV_J89-CategorieProfessionnelle-RASS/FHIR/JDV-J89-CategorieProfessionnelle-RASS
@@ -71,6 +72,8 @@ Alias: $JDV-J117-ModeExercice-ENREG = https://mos.esante.gouv.fr/NOS/JDV_J117-Mo
 Alias: $JDV-J285-Besoins-Serafin = https://mos.esante.gouv.fr/NOS/JDV_J285-Besoins_SERAFIN/FHIR/JDV-J285-Besoins-SERAFIN
 Alias: $JDV-J367-TypeProjetPersonnaliseMs = https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j367-type-projet-personnalise-ms
 Alias: $JDV-J366-StatutBilanProjetPersonnaliseMs = https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j366-statut-bilan-projet-personnalise-ms
+Alias: $jdv-modalite-entree-cisis = https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-entree-cisis
+Alias: $jdv-modalite-sortie-cisis = https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-sortie-cisis
 
 // HL7
 Alias: $v2-0131 = http://terminology.hl7.org/CodeSystem/v2-0131

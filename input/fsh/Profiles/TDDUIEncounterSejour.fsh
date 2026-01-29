@@ -49,6 +49,13 @@ Description: "Profil de la ressource Encounter permettant de regrouper les infor
 * extension[TDDUIExitModeLabel] ^short = "Libellé du mode de sortie du séjour"
 * extension[TDDUIComment] ^short = "Commentaire relatif au séjour"
 
+* hospitalization.origin 1..1
+* hospitalization.origin only Reference(TDDUIOrganization)
+
+* serviceType from JDV-J226-ModaliteAccueil-ROR (required)
+* admitSource from jdv-modalite-entree-cisis (required)
+* dischargeDisposition from jdv-modalite-sortie-cisis (required)
+
 Mapping:  ConceptMetier_TDDUIEncounterSejour
 Source:   TDDUIEncounterSejour
 Target: "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"
@@ -67,3 +74,7 @@ Title:    "Modèle de contenu DUI"
 * extension[TDDUIComment] -> "commentaire"
 * period.start -> "dateEntree"
 * period.end -> "dateSortie"
+* hospitalization.origin -> "ESSMSProvenance"
+* serviceType -> "modaliteAccueil"
+* admitSource -> "provenance"
+* dischargeDisposition -> "motifSortie"
