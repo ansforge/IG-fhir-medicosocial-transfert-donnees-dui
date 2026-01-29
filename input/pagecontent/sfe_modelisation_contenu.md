@@ -1270,12 +1270,6 @@ Résultat de l'évaluation globale d'un usager.
     <td>modaliteEvaluation : [0..1] Texte</td>
     <td>Mode d'évaluation.</td>
   </tr>
-  <tr>
-    <td>autoEvaluation : [0..1] Indicateur</td>
-    <td>Indique si l'évaluation est une auto-évaluation.<br>
-1 = L'évaluation est une auto-évaluation<br>
-0 = L'évaluation n'est pas une évaluation</td>
-  </tr>
    <tr>
     <td>commentaireEvaluation : [0..1] Texte</td>
     <td>Commentaire libre sur l’évaluation.</td>
@@ -1380,6 +1374,12 @@ Cette classe regroupe les items pouvant caractériser la personne ayant rédigé
 Dans le cas d'une auto évaluation, l'auteur étant l'usager cet élément n'est pas requis.<br>
 <br>
 <u>Remarque</u> : Hormis le cas de l'auto évaluation, au moins un des 3 éléments (Evaluateur, Responsable, Auteur) doit être renseigné.
+
+##### Classe Porteur
+
+** Classe spécialisée, hérite de la classe EntiteJuridique du MOS profilée pour ce volet.
+
+Cette classe correspond à la personne morale porteuse de l'évaluation de l'usager. 
 
 #### Projet personnalisé
 
