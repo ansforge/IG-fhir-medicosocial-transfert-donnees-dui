@@ -50,7 +50,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-comment.csv), 
   "name" : "TDDUIComment",
   "title" : "Commentaire",
   "status" : "active",
-  "date" : "2026-01-29T10:42:42+00:00",
+  "date" : "2026-01-29T15:10:00+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

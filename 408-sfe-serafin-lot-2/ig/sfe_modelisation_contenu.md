@@ -878,8 +878,6 @@ Les classes EntiteJuridique, Lieu et Professionnel sont issues du MOS et sont pr
   * Description: Pièces jointes liées à l’événement.
 * Nom: lieuEvenement : [0..1] Lieu
   * Description: Localisation d’exécution de l’évènement.
-* Nom: structureEnCharge : [0..1] EntiteJuridique
-  * Description: Structure de rattachement de l'usager en charge de l'évènement.
 * Nom: dateDebutEvenement : [1..1] DateHeure
   * Description: Date et heure de début de l'évènement.
 * Nom: dateFinEvenement : [1..1] DateHeure
@@ -899,7 +897,7 @@ Les classes EntiteJuridique, Lieu et Professionnel sont issues du MOS et sont pr
 * Nom: dateModificationEvenement : [0..1] DateHeure
   * Description: Date de la dernière modification de l'événement.
 * Nom: validationUsager : [0..1] Indicateur
-  * Description: Accord de l'usager1 = validation de l'usager0 = refus de l'usager
+  * Description: Validation par l'usager que l'événement a eu lieu.1 = validation de l'usager0 = refus de l'usager
 
 ##### Classe Participant
 
@@ -909,8 +907,6 @@ Le Participant est une personne morale ou physique prenant part à l'événement
   * Description: Indique la présence du participant à l'événement.1= participant présent0= participant absent
 * Nom: roleParticipantEJ : [0..1] Code
   * Description: Role du participant vis à vis de l'événement (mandataire judiciaire, structure en charge de l'événement).Jeu(x) de valeur(s) associé(s) :[JDV-J387-ROLE-PARTICIPANT-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j387-role-participant-ms/$expand)
-* Nom: modeExerciceParticipantPP : [0..1] Code
-  * Description: Mode d'exercice de la personne physique. Le mode d'exercice décrit selon quelle modalité une activité est exercée au regard de l'évènement.Jeu(x) de valeur(s) associé(s) :[JDV-J117-ModeExercice-ENREG](https://mos.esante.gouv.fr/NOS/JDV_J117-ModeExercice-ENREG/FHIR/JDV-J117-ModeExercice-ENREG)
 * Nom: participantInterne : [0..1] Indicateur
   * Description: Indique si le participant (personne Physique) est interne ou externe à la structure1 = interne0 = externe
 
