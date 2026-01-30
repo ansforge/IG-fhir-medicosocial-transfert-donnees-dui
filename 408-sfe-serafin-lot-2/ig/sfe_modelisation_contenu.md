@@ -889,7 +889,7 @@ Les classes EntiteJuridique, Lieu et Professionnel sont issues du MOS et sont pr
 * Nom: usagerPresent : [0..1] Indicateur
   * Description: Evènement nécessitant ou non la présence physique de l’usager.
 * Nom: repas : [0..1] Indicateur
-  * Description: Repas du professionnel prévu dans le cadre de l'événement.
+  * Description: Repas du professionnel prévu dans le cadre de l'évènement.
 * Nom: typeRessourceUtilisee: [0..*] Code
   * Description: Type de ressources utilisées dans le cadre de l’évènement (matériel, immobilier, véhicule).Jeu(x) de valeur(s) associé(s) : JDV_RessourceUtilisee_CISIS avec l'OID 1.2.250.1.213.1.1.5.807 publié sur[annexe-vocabulaire-et-jeux-de-valeurs](https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs)
 * Nom: detailTypeRessourceUtilisee: [0..*] Code
@@ -909,6 +909,20 @@ Le Participant est une personne morale ou physique prenant part à l'événement
   * Description: Role du participant vis à vis de l'événement (mandataire judiciaire, structure en charge de l'événement).Jeu(x) de valeur(s) associé(s) :[JDV-J387-ROLE-PARTICIPANT-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j387-role-participant-ms/$expand)
 * Nom: participantInterne : [0..1] Indicateur
   * Description: Indique si le participant (personne Physique) est interne ou externe à la structure1 = interne0 = externe
+
+##### Classe StructureEnCharge
+
+** Classe spécialisée, hérite de la classe EntiteJuridique qui est issue du MOS et qui est profilée pour ce volet.
+
+Cette classe correspond à la structure en charge de l'évènement. Cette structure peut être différente de la structure de rattachement de l'usager.
+
+##### Classe StructureRattachement
+
+** Classe spécialisée, hérite de la classe EntiteJuridique qui est issue du MOS et qui est profilée pour ce volet.
+
+Cette classe correspond à la structure dans laquelle l'usager est rattaché.
+
+Le lien est créé entre la classe Participant et la classe StructureRattachement si le participant en tant que personne physique est interne à la structure de rattachement de l'usager. Dans le cas contraire ce lien n'est pas créé.
 
 ##### Classe Transport
 
