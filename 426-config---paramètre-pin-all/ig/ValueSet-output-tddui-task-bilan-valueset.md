@@ -46,9 +46,7 @@ ValueSet pour la définition des éléments spécifiques des output dans la ress
   "resourceType" : "ValueSet",
   "id" : "output-tddui-task-bilan-valueset",
   "meta" : {
-    "profile" : [
-      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
-    ]
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/output-tddui-task-bilan-valueset",
   "version" : "2.2.0-ballot",
@@ -56,7 +54,7 @@ ValueSet pour la définition des éléments spécifiques des output dans la ress
   "title" : "OutputTDDUITaskBilanValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-30T15:49:47+00:00",
+  "date" : "2026-01-30T16:02:23+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

@@ -46,9 +46,7 @@ ValueSet for TDDUI Encounter's identifier types
   "resourceType" : "ValueSet",
   "id" : "tddui-encounter-identifier-vs",
   "meta" : {
-    "profile" : [
-      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
-    ]
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-identifier-vs",
   "version" : "2.2.0-ballot",
@@ -56,7 +54,7 @@ ValueSet for TDDUI Encounter's identifier types
   "title" : "TDDUI Encounter Identifier Type ValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-30T15:49:47+00:00",
+  "date" : "2026-01-30T16:02:23+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -87,7 +85,7 @@ ValueSet for TDDUI Encounter's identifier types
         "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier-cs"
       },
       {
-        "valueSet" : ["http://hl7.org/fhir/ValueSet/identifier-type|4.0.1"]
+        "valueSet" : ["http://hl7.org/fhir/ValueSet/identifier-type"]
       }
     ]
   }
