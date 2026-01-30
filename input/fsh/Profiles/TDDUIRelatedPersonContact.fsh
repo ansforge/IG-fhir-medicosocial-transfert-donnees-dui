@@ -2,7 +2,7 @@ Profile: TDDUIRelatedPersonContact
 Parent: FRCoreRelatedPersonProfile
 Id: tddui-related-person-contact
 Title: "TDDUI RelatedPerson Contact"
-Description: "Profil de la ressource FRCoreRelatedPersonProfile permettant de représenter le contact PersonnePhysique."
+Description: "Profil de la ressource FRCoreRelatedPersonProfile permettant de représenter un contact de l'usager."
 
 * extension contains 
     tddui-nationality named nationality 0..* and
@@ -48,5 +48,5 @@ Title:    "Modèle de contenu DUI"
 * extension[comment] -> "commentaire"
 * extension[description] -> "description"
 * relationship[Role] -> "role"
-* relationship[RelationType] -> "Relation"
-* relationship[LegalProtection] -> "Relation"
+* relationship[RelationType] -> "relation"
+* relationship[LegalProtection] -> "relation"

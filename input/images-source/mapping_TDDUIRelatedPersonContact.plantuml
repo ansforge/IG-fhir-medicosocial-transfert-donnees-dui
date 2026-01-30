@@ -6,14 +6,13 @@ map "name" as name #DarkGray {
     civilite => prefix
 }
 
-map "**ContactPersonnePhysique : TDDUIRelatedPersonContact**" as ContactPersonnePhysique #fccde5 {
+map "**Contact : TDDUIRelatedPersonContact**" as Contact #fccde5 {
     paysNationalite => <&plus> nationality
     commentaire => <&plus> comment
     description => <&plus> description
     identifiantPP => identifier
     role => <&layers> relationship:Role
-    Relation => <&layers> relationship:RelationType
-    RelationProtectionJuridique => <&layers> relationship:LegalProtection
+    Relation => <&layers> relationship:RelationType / <&layers> relationship:LegalProtection
     telecommunication => telecom
     sexe => gender
     dateNaissance => birthDate
