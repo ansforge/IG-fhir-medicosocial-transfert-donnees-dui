@@ -17,10 +17,18 @@ map "**Sejour : TDDUIEncounterSejour**" as Sejour #back:AliceBlue;header:LightSk
     dateEntreePrevisionnelle => <&plus> TDDUI-plannedStartDate-r5
     dateSortiePrevisionnelle => <&plus> TDDUI-plannedEndDate-r5
     dateAdmission => <&plus> TDDUIAdmissionDate
+    dateEntreeESSMSProvenance => <&plus> TDDUIEntryDateOrigin
     libelleModeEntree => <&plus> TDDUIEntryModelabel
     libelleModeSortie => <&plus> TDDUIExitModeLabel
     commentaire => <&plus> TDDUIComment
     idSejour => <&layers> identifier:idStay
+    numeroDossierAdministratifSejour => <&layers> identifier:AdministrativeFileNumber
+    ESSMSProvenance => hospitalization.origin
+    numeroDossierESSMSProvenance => hospitalization.preAdmissionIdentifier
+    modaliteAccueil => serviceType
+    provenance => hospitalization.admitSource
+    motifSortie => hospitalization.dischargeDisposition
+    origineDemande => participant.individual.display
     period *-> period
 }
 

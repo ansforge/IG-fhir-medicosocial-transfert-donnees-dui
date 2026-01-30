@@ -11,7 +11,7 @@ Description: "Profil de la ressource Encounter permettant de regrouper les infor
 
 * identifier contains
     idStay 1..1 and
-    idDossierAdministratif 0..1
+    AdministrativeFileNumber 0..1
 * identifier[idStay].type from TDDUIEncounterIdentifierVs (required)
 * identifier[idStay] ^short = "Identifiant métier unique du séjour"
 * identifier[idStay].type = TDDUIEncounterIdentifierCs#SEJ "Identifiant du séjour"
@@ -21,14 +21,14 @@ Description: "Profil de la ressource Encounter permettant de regrouper les infor
 * identifier[idStay].system 1..1
 * identifier[idStay].system = "https://identifiant-medicosocial-sejour.esante.gouv.fr"
 
-* identifier[idDossierAdministratif].type from TDDUIEncounterIdentifierVs (required)
-* identifier[idDossierAdministratif] ^short = "Numéro de dossier administratif du séjour"
-* identifier[idDossierAdministratif].type = TDDUIEncounterIdentifierCs#NUMDOSS "Numéro de dossier administratif du séjour"
-* identifier[idDossierAdministratif].value 1..1
-// * identifier[idDossierAdministratif].value ^example[0].label = "Numéro de dossier administratif du séjour"
-// * identifier[idDossierAdministratif].value ^example[0].valueString = "DA-21564655"
-* identifier[idDossierAdministratif].system 1..1
-* identifier[idDossierAdministratif].system = "https://identifiant-medicosocial-sejour.esante.gouv.fr"
+* identifier[AdministrativeFileNumber].type from TDDUIEncounterIdentifierVs (required)
+* identifier[AdministrativeFileNumber] ^short = "Numéro de dossier administratif du séjour"
+* identifier[AdministrativeFileNumber].type = TDDUIEncounterIdentifierCs#NUMDOSS "Numéro de dossier administratif du séjour"
+* identifier[AdministrativeFileNumber].value 1..1
+* identifier[AdministrativeFileNumber].value ^example[0].label = "Numéro de dossier administratif du séjour"
+* identifier[AdministrativeFileNumber].value ^example[0].valueString = "21564655"
+* identifier[AdministrativeFileNumber].system 1..1
+* identifier[AdministrativeFileNumber].system = "https://identifiant-medicosocial-sejour.esante.gouv.fr" // System ?
 
 // Usager
 * subject 1..1
@@ -77,7 +77,7 @@ Title:    "Modèle de contenu DUI"
 * -> "Sejour"
  
 * identifier[idStay] -> "idSejour"
-* identifier[idDossierAdministratif] -> "numeroDossierAdministratifSejour"
+* identifier[AdministrativeFileNumber] -> "numeroDossierAdministratifSejour"
 * subject -> "Usager"
 * serviceProvider -> "EntiteJuridique"
 * extension[TDDUI-plannedStartDate-r5] -> "dateEntreePrevisionnelle"

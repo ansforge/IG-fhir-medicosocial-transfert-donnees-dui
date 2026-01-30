@@ -27,5 +27,12 @@ Description: "Exemple d'un séjour en ESSMS"
   * system = "https://identifiant-medicosocial-sejour.esante.gouv.fr"
   * value = "3480787529/147720425367411-SEJOUR-1012"
 
+* identifier[AdministrativeFileNumber]
+  * system = "https://identifiant-medicosocial-sejour.esante.gouv.fr"
+  * value = "1012"
+
+* hospitalization.admitSource =  https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis#GEN-092.06.07 "Autre modalité d'entrée"
+* hospitalization.origin = Reference(tddui-organization-origine-example)
+
 * subject = Reference(tddui-patient-ins-example)
 * serviceProvider = Reference(tddui-organization-example)
