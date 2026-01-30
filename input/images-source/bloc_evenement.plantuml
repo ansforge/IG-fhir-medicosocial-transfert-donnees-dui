@@ -62,27 +62,27 @@ class Evenement #LightGray {
 class Participant #LightGray {
     presenceParticipant : Indicateur [0..1]
     roleParticipantEJ : Code [0..1]
-    participantInterne : Indicateur [0..1]
 }
 
-Usager "1" -- "0..*" Evenement
-Participant "0..*" -- "1..*" Evenement
-Professionnel "0..1" - "0..*" Participant
-
+Transport <|- TransportUsager
 Transport <|-- TransportProfessionnel
-Transport <|-- TransportUsager
-
-TransportUsager "0..*" -- "1" Evenement
-Professionnel "1" -- "0..*" TransportProfessionnel
-
-Evenement "0..1" -- "0..1" Evaluation
-Evenement "1" -- "0..*" Statut
 
 EntiteJuridique <|-- StructureEnCharge
 EntiteJuridique <|- StructureRattachement
 
+Evenement "0..*" -- "1" Usager
+Participant "0..*" -- "1..*" Evenement
+Professionnel "0..1" -- "0..*" Participant
+
+
+TransportUsager "0..*" -- "1" Evenement
+
+TransportProfessionnel "0..1" -- "1" Professionnel
+
+Evenement "0..1" -- "0..1" Evaluation
+Evenement "1" -- "0..*" Statut
+
 StructureEnCharge "0..1" -- "0..*" Participant
-StructureRattachement "0..1" - "0..1" Participant
-Evenement "0..*" -- "0..1" StructureRattachement
+StructureRattachement "0..1" -- "0..1" Participant
 
 @enduml

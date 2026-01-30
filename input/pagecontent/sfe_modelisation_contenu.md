@@ -1893,7 +1893,7 @@ Les classes EntiteJuridique, Lieu et Professionnel sont issues du MOS et sont pr
   </tr>
   <tr>
    <td>repas : [0..1] Indicateur</td>
-    <td>Repas du professionnel prévu dans le cadre de l'événement.</td>
+    <td>Repas du professionnel prévu dans le cadre de l'évènement.</td>
   </tr>
  <tr>
    <td>typeRessourceUtilisee: [0..*] Code</td>
@@ -1948,6 +1948,20 @@ Le Participant est une personne morale ou physique prenant part à l'événement
 0 = externe</td>
   </tr>
   </table>
+
+##### Classe StructureEnCharge
+
+** Classe spécialisée, hérite de la classe EntiteJuridique qui est issue du MOS et qui est profilée pour ce volet.
+
+Cette classe correspond à la structure en charge de l'évènement. Cette structure peut être différente de la structure de rattachement de l'usager.
+
+##### Classe StructureRattachement
+
+** Classe spécialisée, hérite de la classe EntiteJuridique qui est issue du MOS et qui est profilée pour ce volet.
+
+Cette classe correspond à la structure dans laquelle l'usager est rattaché.
+
+Le lien est créé entre la classe Participant et la classe StructureRattachement si le participant en tant que personne physique est interne à la structure de rattachement de l'usager. Dans le cas contraire ce lien n'est pas créé.
 
 ##### Classe Transport
 
