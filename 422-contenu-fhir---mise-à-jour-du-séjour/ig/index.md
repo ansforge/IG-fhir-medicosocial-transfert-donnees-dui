@@ -140,7 +140,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2026-01-30T11:01:37+00:00",
+  "date" : "2026-01-30T14:32:15+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -1981,6 +1981,20 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "tddui-organization-example",
         "description" : "ESSMS - Les Chênes Verts",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization|2.2.0-ballot"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Organization"
+          }
+        ],
+        "reference" : {
+          "reference" : "Organization/tddui-organization-origine-example"
+        },
+        "name" : "tddui-organization-origine-example",
+        "description" : "ESSMS - Les Résidences du Lac",
         "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization|2.2.0-ballot"
       },
       {

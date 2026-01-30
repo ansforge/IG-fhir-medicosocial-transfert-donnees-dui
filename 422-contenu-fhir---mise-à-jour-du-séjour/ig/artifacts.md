@@ -152,6 +152,7 @@ These are example instances that show what data produced and consumed by systems
 | [tddui-encounter-sejour-example](Encounter-tddui-encounter-sejour-example.md) | Exemple d'un séjour en ESSMS |
 | [tddui-event-location-example](Location-tddui-event-location-example.md) | Lieu de l'évènement |
 | [tddui-organization-example](Organization-tddui-organization-example.md) | ESSMS - Les Chênes Verts |
+| [tddui-organization-origine-example](Organization-tddui-organization-origine-example.md) | ESSMS - Les Résidences du Lac |
 | [tddui-patient-example](Patient-tddui-patient-example.md) | Exemple de la ressource TDDUIPatient |
 | [tddui-patient-ins-example](Patient-tddui-patient-ins-example.md) | Exemple de la ressource TDDUIPatientINS |
 | [tddui-pp-ime-bundle-example](Bundle-tddui-pp-ime-bundle-example.md) | Exemple de bundle conforme au profil TDDUIBundle contenant le projet personnalisé en IME |

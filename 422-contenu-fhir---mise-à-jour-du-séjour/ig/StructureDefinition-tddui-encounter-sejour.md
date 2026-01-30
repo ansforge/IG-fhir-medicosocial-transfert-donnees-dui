@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-sejo
   "name" : "TDDUIEncounterSejour",
   "title" : "TDDUI Encounter Sejour",
   "status" : "active",
-  "date" : "2026-01-30T11:01:37+00:00",
+  "date" : "2026-01-30T14:32:15+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -326,9 +326,9 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-sejo
         ]
       },
       {
-        "id" : "Encounter.identifier:idDossierAdministratif",
+        "id" : "Encounter.identifier:AdministrativeFileNumber",
         "path" : "Encounter.identifier",
-        "sliceName" : "idDossierAdministratif",
+        "sliceName" : "AdministrativeFileNumber",
         "short" : "Numéro de dossier administratif du séjour",
         "min" : 0,
         "max" : "1",
@@ -340,7 +340,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-sejo
         ]
       },
       {
-        "id" : "Encounter.identifier:idDossierAdministratif.type",
+        "id" : "Encounter.identifier:AdministrativeFileNumber.type",
         "path" : "Encounter.identifier.type",
         "min" : 1,
         "patternCodeableConcept" : {
@@ -358,15 +358,21 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-sejo
         }
       },
       {
-        "id" : "Encounter.identifier:idDossierAdministratif.system",
+        "id" : "Encounter.identifier:AdministrativeFileNumber.system",
         "path" : "Encounter.identifier.system",
         "min" : 1,
         "patternUri" : "https://identifiant-medicosocial-sejour.esante.gouv.fr"
       },
       {
-        "id" : "Encounter.identifier:idDossierAdministratif.value",
+        "id" : "Encounter.identifier:AdministrativeFileNumber.value",
         "path" : "Encounter.identifier.value",
-        "min" : 1
+        "min" : 1,
+        "example" : [
+          {
+            "label" : "Numéro de dossier administratif du séjour",
+            "valueString" : "21564655"
+          }
+        ]
       },
       {
         "id" : "Encounter.serviceType",

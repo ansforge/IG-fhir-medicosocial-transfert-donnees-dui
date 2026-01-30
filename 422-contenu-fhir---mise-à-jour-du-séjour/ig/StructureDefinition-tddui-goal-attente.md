@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-attente.c
   "name" : "TDDUIGoalAttente",
   "title" : "TDDUI Goal Attente",
   "status" : "active",
-  "date" : "2026-01-30T11:01:37+00:00",
+  "date" : "2026-01-30T14:32:15+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

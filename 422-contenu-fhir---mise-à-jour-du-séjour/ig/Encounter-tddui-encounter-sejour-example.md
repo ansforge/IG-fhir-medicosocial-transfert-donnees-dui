@@ -16,7 +16,7 @@ Profil: [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md)
 
 **Extension Definition for Encounter.plannedEndDate for Version 5.0**: 2023-05-05
 
-**identifier**: Identifiant du séjour/3480787529/147720425367411-SEJOUR-1012
+**identifier**: Identifiant du séjour/3480787529/147720425367411-SEJOUR-1012, Numéro de dossier administratif du séjour/1012
 
 **status**: In Progress
 
@@ -25,6 +25,13 @@ Profil: [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md)
 **subject**: [DUPONT Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/194704032)](Patient-tddui-patient-ins-example.md)
 
 **period**: 2023-04-14 --> (en cours)
+
+### Hospitalizations
+
+| | | |
+| :--- | :--- | :--- |
+| - | **Origin** | **AdmitSource** |
+| * | [Organization Les Résidences du Lac](Organization-tddui-organization-origine-example.md) | Autre modalité d'entrée |
 
 **serviceProvider**: [Organization Les Chênes Verts](Organization-tddui-organization-example.md)
 
@@ -72,6 +79,19 @@ Profil: [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md)
       },
       "system" : "https://identifiant-medicosocial-sejour.esante.gouv.fr",
       "value" : "3480787529/147720425367411-SEJOUR-1012"
+    },
+    {
+      "type" : {
+        "coding" : [
+          {
+            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier-cs",
+            "code" : "NUMDOSS",
+            "display" : "Numéro de dossier administratif du séjour"
+          }
+        ]
+      },
+      "system" : "https://identifiant-medicosocial-sejour.esante.gouv.fr",
+      "value" : "1012"
     }
   ],
   "status" : "in-progress",
@@ -84,6 +104,20 @@ Profil: [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md)
   },
   "period" : {
     "start" : "2023-04-14"
+  },
+  "hospitalization" : {
+    "origin" : {
+      "reference" : "Organization/tddui-organization-origine-example"
+    },
+    "admitSource" : {
+      "coding" : [
+        {
+          "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+          "code" : "GEN-092.06.07",
+          "display" : "Autre modalité d'entrée"
+        }
+      ]
+    }
   },
   "serviceProvider" : {
     "reference" : "Organization/tddui-organization-example"
