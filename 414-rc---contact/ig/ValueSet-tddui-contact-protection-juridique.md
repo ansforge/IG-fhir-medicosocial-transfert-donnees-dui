@@ -1,18 +1,18 @@
-# TDDUI Relation - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Protection Juridique - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **TDDUI Relation**
+* **TDDUI Protection Juridique**
 
-## ValueSet: TDDUI Relation 
+## ValueSet: TDDUI Protection Juridique 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-relation | *Version*:2.2.0-ballot |
-| Active as of 2026-01-29 | *Computable Name*:TDDUIRelation |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-contact-protection-juridique | *Version*:2.2.0-ballot |
+| Active as of 2026-01-30 | *Computable Name*:TDDUIContactProtectionJuridique |
 
  
-ValueSet définissant les relations. 
+ValueSet définissant la protection juridique. 
 
  **References** 
 
@@ -44,19 +44,19 @@ ValueSet définissant les relations.
 ```json
 {
   "resourceType" : "ValueSet",
-  "id" : "tddui-relation",
+  "id" : "tddui-contact-protection-juridique",
   "meta" : {
     "profile" : [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
     ]
   },
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-relation",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-contact-protection-juridique",
   "version" : "2.2.0-ballot",
-  "name" : "TDDUIRelation",
-  "title" : "TDDUI Relation",
+  "name" : "TDDUIContactProtectionJuridique",
+  "title" : "TDDUI Protection Juridique",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-29T08:29:40+00:00",
+  "date" : "2026-01-30T16:24:47+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -69,7 +69,7 @@ ValueSet définissant les relations.
       ]
     }
   ],
-  "description" : "ValueSet définissant les relations.",
+  "description" : "ValueSet définissant la protection juridique.",
   "jurisdiction" : [
     {
       "coding" : [
@@ -84,33 +84,7 @@ ValueSet définissant les relations.
   "compose" : {
     "include" : [
       {
-        "valueSet" : [
-          "https://mos.esante.gouv.fr/NOS/JDV_J11-RelationPatient-CISIS/FHIR/JDV-J11-RelationPatient-CISIS|20200424120000"
-        ]
-      },
-      {
-        "valueSet" : [
-          "https://mos.esante.gouv.fr/NOS/JDV_J14-QualiteRepresentantLegal-CISIS/FHIR/JDV-J14-QualiteRepresentantLegal-CISIS|20241213120000"
-        ]
-      }
-    ],
-    "exclude" : [
-      {
-        "system" : "https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique",
-        "concept" : [
-          {
-            "code" : "TUTEUR",
-            "display" : "Tuteur"
-          },
-          {
-            "code" : "CURATEUR",
-            "display" : "Curateur"
-          },
-          {
-            "code" : "MSVG",
-            "display" : "Mandataire de sauvegarde"
-          }
-        ]
+        "system" : "https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique"
       }
     ]
   }

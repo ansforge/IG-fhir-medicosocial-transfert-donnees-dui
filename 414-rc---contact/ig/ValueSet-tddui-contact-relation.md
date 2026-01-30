@@ -1,18 +1,18 @@
-# TDDUI Protection Juridique - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Relation - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **TDDUI Protection Juridique**
+* **TDDUI Relation**
 
-## ValueSet: TDDUI Protection Juridique 
+## ValueSet: TDDUI Relation 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-protection-juridique | *Version*:2.2.0-ballot |
-| Active as of 2026-01-29 | *Computable Name*:TDDUIProtectionJuridique |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-contact-relation | *Version*:2.2.0-ballot |
+| Active as of 2026-01-30 | *Computable Name*:TDDUIContactRelation |
 
  
-ValueSet définissant la protection juridique. 
+ValueSet définissant les relations. 
 
  **References** 
 
@@ -44,19 +44,19 @@ ValueSet définissant la protection juridique.
 ```json
 {
   "resourceType" : "ValueSet",
-  "id" : "tddui-protection-juridique",
+  "id" : "tddui-contact-relation",
   "meta" : {
     "profile" : [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
     ]
   },
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-protection-juridique",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-contact-relation",
   "version" : "2.2.0-ballot",
-  "name" : "TDDUIProtectionJuridique",
-  "title" : "TDDUI Protection Juridique",
+  "name" : "TDDUIContactRelation",
+  "title" : "TDDUI Relation",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-29T08:29:40+00:00",
+  "date" : "2026-01-30T16:24:47+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -69,7 +69,7 @@ ValueSet définissant la protection juridique.
       ]
     }
   ],
-  "description" : "ValueSet définissant la protection juridique.",
+  "description" : "ValueSet définissant les relations.",
   "jurisdiction" : [
     {
       "coding" : [
@@ -84,7 +84,33 @@ ValueSet définissant la protection juridique.
   "compose" : {
     "include" : [
       {
-        "system" : "https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique"
+        "valueSet" : [
+          "https://mos.esante.gouv.fr/NOS/JDV_J11-RelationPatient-CISIS/FHIR/JDV-J11-RelationPatient-CISIS|20200424120000"
+        ]
+      },
+      {
+        "valueSet" : [
+          "https://mos.esante.gouv.fr/NOS/JDV_J14-QualiteRepresentantLegal-CISIS/FHIR/JDV-J14-QualiteRepresentantLegal-CISIS|20241213120000"
+        ]
+      }
+    ],
+    "exclude" : [
+      {
+        "system" : "https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique",
+        "concept" : [
+          {
+            "code" : "TUTEUR",
+            "display" : "Tuteur"
+          },
+          {
+            "code" : "CURATEUR",
+            "display" : "Curateur"
+          },
+          {
+            "code" : "MSVG",
+            "display" : "Mandataire de sauvegarde"
+          }
+        ]
       }
     ]
   }

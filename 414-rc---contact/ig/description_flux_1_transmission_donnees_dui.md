@@ -45,7 +45,7 @@ Les différentes ressources sont véhiculées via l'élément : Bundle.entry. Le
 * [TDDUITaskBilan](StructureDefinition-tddui-task-bilan.md) représentant le bilan.
 * [TDDUITaskMoyenRessource](StructureDefinition-tddui-task-moyen-ressource.md) représentant les moyens ou ressources utilisées.
 * [TDDUITaskPrestation](StructureDefinition-tddui-task-prestation.md) représentant les prestations.
-* [TDDUIRelatedPersonContact](StructureDefinition-tddui-related-person-contact.md) représentant le contact PersonnePhysique.
+* [TDDUIRelatedPersonContact](StructureDefinition-tddui-related-person-contact.md) représentant un contact de l'usager.
 
 Pour toutes ces ressources, seule la création est possible via l'intéraction FHIR [Create](https://hl7.org/fhir/R4/http.html#create).
 

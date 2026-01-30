@@ -10,7 +10,7 @@
 
 ### Mapping Usager
 
-### Mapping contact PersonnePhysique
+### Mapping Contact
 
 ### Mapping Entité Juridique
 

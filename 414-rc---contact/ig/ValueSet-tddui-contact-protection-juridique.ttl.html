@@ -1,9 +1,11 @@
+
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>TDDUI Protection Juridique - Médicosocial - Transfert de données DUI v2.2.0-ballot</title>
+    <title>TDDUI Protection Juridique - TTL Representation - Médicosocial - Transfert de données DUI v2.2.0-ballot</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -180,11 +182,11 @@
 
           <span style="float:right;">
 
-            <a href="ValueSet-tddui-patient-identifier-vs.ttl.html">&lt;prev</a> | 
+            <a href="ValueSet-tddui-contact-protection-juridique.json.html">&lt;prev</a> | 
 
             <a href="#bottom">bottom</a>
 
-          | <a href="ValueSet-tddui-protection-juridique-testing.html">next&gt;</a>
+          | <a href="ValueSet-tddui-contact-relation.html">next&gt;</a>
 
           </span>
 
@@ -197,9 +199,9 @@
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
-<div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Médicosocial - Transfert de données DUI - version de développement local (v2.2.0-ballot) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/fhir/tddui/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
-  
+<div style="counter-reset: section 9" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">Médicosocial - Transfert de données DUI - version de développement local (v2.2.0-ballot) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/fhir/tddui/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
+
 
 
 
@@ -210,29 +212,29 @@
 
 <ul class="nav nav-tabs">
 
-  <li class="active">
-    <a href="#">Narrative Content</a>
+  <li>
+    <a href="ValueSet-tddui-contact-protection-juridique.html">Narrative Content</a>
   </li>
 
 
 
   
     <li>
-      <a href="ValueSet-tddui-protection-juridique.xml.html">XML</a>
+      <a href="ValueSet-tddui-contact-protection-juridique.xml.html">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="ValueSet-tddui-protection-juridique.json.html">JSON</a>
+      <a href="ValueSet-tddui-contact-protection-juridique.json.html">JSON</a>
     </li>
   
 
 
   
-    <li>
-      <a href="ValueSet-tddui-protection-juridique.ttl.html">TTL</a>
+    <li class="active">
+      <a href="#">TTL</a>
     </li>
   
 
@@ -240,121 +242,97 @@
 
 </ul>
 
-  <a name="root"> </a>
-  <h2 id="root">ValueSet: TDDUI Protection Juridique
 
-  </h2>
+<a name="root"> </a>
+
+
+<h2 id="root">: TDDUI Protection Juridique - TTL Representation</h2>
+
   <table class="colsi">
-
-    <tr>
-      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-protection-juridique<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-protection-juridique"/></span>
-      </td>
-      <td><i>Version</i>:
-      <span class="copy-text">2.2.0-ballot<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-protection-juridique|2.2.0-ballot"/></span>
-      </td>
-    </tr>
-
     <tr>
 
-
-
-
-
-
-
-      <td colspan="4">
+      <td colspan="2">
         
           Active
           
-            as of 2026-01-29
+            as of 2026-01-30
           
         
       </td>
 
-
-
-      <td><i>Computable Name</i>: <span style="font-family: monospace;">TDDUIProtectionJuridique</span></td>
     </tr>
-
-
-
-
   </table>
 
-<p>
-<p>ValueSet définissant la protection juridique.</p>
 
-</p>
-
-
-  <p>
-    <b>References</b>
-  </p>
-  
-<ul>
- <li><a href="StructureDefinition-tddui-related-person-contact.html">TDDUI RelatedPerson Contact</a></li>
-</ul>
-
+<p><a href="ValueSet-tddui-contact-protection-juridique.ttl" no-download="true">Raw ttl</a> | <a href="ValueSet-tddui-contact-protection-juridique.ttl" download>Download</a></p>
 
   <!-- insert intro if present -->
   
 
 
 
-  <a name="definition"> </a>
+  <pre class="rdf" data-fhir="generated" style="white-space: pre; overflow: hidden"><code class="language-turtle">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 
-<!-- Content Logical Definition heading in the fragment -->
-  <h3>Définition logique (CLD)</h3>
-<div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated"><p class="res-header-id"></p><a name="tddui-protection-juridique"> </a><a name="hctddui-protection-juridique"> </a>
-<div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"></p><p style="margin-bottom: 0px">Profil: <a href="http://hl7.org/fhir/R4/shareablevalueset.html">Shareable ValueSetversion : null4.0.1)</a></p></div>
-<ul><li>Include tous les codes définis dans <a href="https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R217-ProtectionJuridique.html"><code>https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique</code></a><span title="La version nest pas explicitement indiquée, ce qui signifie quelle est fixée à 20231215120000, la version trouvée via les références de package"> version &#x1F4E6;20231215120000</span></li></ul></div>
+# - resource -------------------------------------------------------------------
 
-  <p>&#160;</p>
-  <a name="expansion"> </a>
-  <h3 id="expansion">Expansion</h3>
+ a fhir:ValueSet ;
+  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
+  <a href="http://hl7.org/fhir/R4/resource.html#ValueSet.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;tddui-contact-protection-juridique&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/resource.html#ValueSet.meta">fhir:meta</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:l</a> &lt;http://hl7.org/fhir/StructureDefinition/shareablevalueset?version=4.0.1&gt;     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/domainresource.html#ValueSet.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">fhir:div</a> [ <a href="http://hl7.org/fhir/R4/narrative.html#xhtml">fhir:v</a> &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : EnsembleValeurs tddui-contact-protection-juridique&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;tddui-contact-protection-juridique\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hctddui-contact-protection-juridique\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profil: &lt;a href=\&quot;http://hl7.org/fhir/R4/shareablevalueset.html\&quot;&gt;Shareable ValueSetversion : null4.0.1)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;Include tous les codes définis dans &lt;a href=\&quot;https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R217-ProtectionJuridique.html\&quot;&gt;&lt;code&gt;https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique&lt;/code&gt;&lt;/a&gt;&lt;span title=\&quot;La version nest pas explicitement indiquée, ce qui signifie quelle est fixée à 20231215120000, la version trouvée via les références de package\&quot;&gt; version ?20231215120000&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">fhir:url</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-contact-protection-juridique&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-contact-protection-juridique&gt;
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;2.2.0-ballot&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;TDDUIContactProtectionJuridique&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;TDDUI Protection Juridique&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;active&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">fhir:experimental</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false] ; # 
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2026-01-30T16:24:47+00:00&quot;^^xsd:dateTime] ; # 
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ANS&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">fhir:contact</a> ( [
+<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ANS&quot; ] ;
+    ( <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:telecom</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;url&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;https://esante.gouv.fr&quot; ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;ValueSet définissant la protection juridique.&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.jurisdiction">fhir:jurisdiction</a> ( [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;urn:iso:std:iso:3166&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;urn:iso:std:iso:3166&gt;       ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;FR&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;FRANCE&quot; ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">fhir:compose</a> [
+    ( <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">fhir:include</a> [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique&gt;       ]     ] )
+  ] . # 
 
-  <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated"><p class="res-header-id"/><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion effectuée en interne basée sur <a href="https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R217-ProtectionJuridique.html">codesystem TRE_R217_ProtectionJuridique v20231215120000 (CodeSystem)</a><span class="copy-text-inline"><button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique|20231215120000" title="Cliquer pour copier lURL" class="btn-copy"> </button></span></p><p>Ce jeu de valeur (ValueSet) contient 3 concepts</p><table class="codes" data-fhir="generated"><tr><td><b>Système</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>Affichage (fr)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name="x-https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique-TUTEUR"> </a><code>https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique</code></td><td style="white-space:nowrap">  <a href="https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R217-ProtectionJuridique.html#TRE-R217-ProtectionJuridique-TUTEUR">TUTEUR</a></td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique&quot;, &quot;version&quot;: &quot;20231215120000&quot;, &quot;code&quot;: &quot;TUTEUR&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique&quot;&gt;&lt;version value=&quot;20231215120000&quot;&gt;&lt;code value=&quot;TUTEUR&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique-CURATEUR"> </a><code>https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique</code></td><td style="white-space:nowrap">  <a href="https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R217-ProtectionJuridique.html#TRE-R217-ProtectionJuridique-CURATEUR">CURATEUR</a></td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique&quot;, &quot;version&quot;: &quot;20231215120000&quot;, &quot;code&quot;: &quot;CURATEUR&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique&quot;&gt;&lt;version value=&quot;20231215120000&quot;&gt;&lt;code value=&quot;CURATEUR&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique-MSVG"> </a><code>https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique</code></td><td style="white-space:nowrap">  <a href="https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R217-ProtectionJuridique.html#TRE-R217-ProtectionJuridique-MSVG">MSVG</a></td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique&quot;, &quot;version&quot;: &quot;20231215120000&quot;, &quot;code&quot;: &quot;MSVG&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique&quot;&gt;&lt;version value=&quot;20231215120000&quot;&gt;&lt;code value=&quot;MSVG&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button></span></td></tr></table></div>
+</code></pre>
 
-  <hr/>
-  <p>
-    Explanation of the columns that may appear on this page:
-  </p>
-  <table class="grid">
-    <tr>
-      <td>Level</td>
-      <td>A few code lists that FHIR defines are hierarchical - each code is assigned a level.
-          In this scheme, some codes are under other codes, and imply that the code they are under also applies</td>
-    </tr>
-    <tr>
-      <td>System</td>
-      <td>The source of the definition of the code (when the value set draws in codes defined elsewhere)</td>
-    </tr>
-    <tr>
-      <td>Code</td>
-      <td>The code (used as the code in the resource instance)</td>
-    </tr>
-    <tr>
-      <td>Display</td>
-      <td>The display (used in the <i>display</i> element of a <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>). If there is no display, implementers should not simply display the code, but map the concept into their application</td>
-    </tr>
-    <tr>
-      <td>Definition</td>
-      <td>An explanation of the meaning of the concept</td>
-    </tr>
-    <tr>
-      <td>Comments</td>
-      <td>Additional notes about how to use the code</td>
-    </tr>
-  </table>
 
-  
 
   <!-- insert notes if present -->
   
 
 
-
-  
 
 </div>
         </div>  <!-- /inner-wrapper -->
@@ -376,7 +354,7 @@
             <tr>
               <td style="text-align:left">&#xA0;
 
-                <a href="ValueSet-tddui-patient-identifier-vs.ttl.html">&lt;prev</a>
+                <a href="ValueSet-tddui-contact-protection-juridique.json.html">&lt;prev</a>
 
               </td>
               <td style="text-align:center">
@@ -384,7 +362,7 @@
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="ValueSet-tddui-protection-juridique-testing.html">next&gt;</a>
+                <a href="ValueSet-tddui-contact-relation.html">next&gt;</a>
 
               </td>
             </tr>
@@ -394,7 +372,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.2.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jan 29, 2026 08:29+0000">2026-01-29</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.2.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jan 30, 2026 16:24+0000">2026-01-30</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |

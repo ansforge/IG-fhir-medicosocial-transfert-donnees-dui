@@ -9,10 +9,10 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact | *Version*:2.2.0-ballot |
-| Active as of 2026-01-29 | *Computable Name*:TDDUIRelatedPersonContact |
+| Active as of 2026-01-30 | *Computable Name*:TDDUIRelatedPersonContact |
 
  
-Profil de la ressource FRCoreRelatedPersonProfile permettant de représenter le contact PersonnePhysique. 
+Profil de la ressource FRCoreRelatedPersonProfile permettant de représenter un contact de l'usager. 
 
 **Utilisations:**
 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-related-person
   "name" : "TDDUIRelatedPersonContact",
   "title" : "TDDUI RelatedPerson Contact",
   "status" : "active",
-  "date" : "2026-01-29T08:29:40+00:00",
+  "date" : "2026-01-30T16:24:47+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -57,7 +57,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-related-person
       ]
     }
   ],
-  "description" : "Profil de la ressource FRCoreRelatedPersonProfile permettant de représenter le contact PersonnePhysique.",
+  "description" : "Profil de la ressource FRCoreRelatedPersonProfile permettant de représenter un contact de l'usager.",
   "jurisdiction" : [
     {
       "coding" : [
@@ -226,12 +226,12 @@ Other representations of profile: [CSV](StructureDefinition-tddui-related-person
         "sliceName" : "RelationType",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-relation|2.2.0-ballot"
+          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-contact-relation|2.2.0-ballot"
         },
         "mapping" : [
           {
             "identity" : "specmetier-to-TDDUIRelatedPersonContact",
-            "map" : "Relation"
+            "map" : "relation"
           }
         ]
       },
@@ -243,12 +243,12 @@ Other representations of profile: [CSV](StructureDefinition-tddui-related-person
         "max" : "1",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-protection-juridique|2.2.0-ballot"
+          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-contact-protection-juridique|2.2.0-ballot"
         },
         "mapping" : [
           {
             "identity" : "specmetier-to-TDDUIRelatedPersonContact",
-            "map" : "Relation"
+            "map" : "relation"
           }
         ]
       },
