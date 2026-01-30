@@ -79,6 +79,7 @@ These define constraints on FHIR data types for systems conforming to this imple
 * **Évaluation** : commentaire libre sur le contenu ou le résultat de l’évaluation.
 * **Champ évalué** : commentaire spécifique à un item ou sous-item évalué.
  |
+| [Date d'entrée dans l'ESSMS de provenance](StructureDefinition-tddui-entry-date-origin.md) | Extension permettant de véhiculer la date d'entrée dans l'ESSMS de provenance. |
 | [Date d’admission](StructureDefinition-tddui-admission-date.md) | Date d’admission dans la structure ESSMS. |
 | [Evénement hors prestation](StructureDefinition-tddui-outside-service.md) | Evénement hors prestation prévue dans le projet personnalisé de l’usager. |
 | [Libellé de l'évènement](StructureDefinition-tddui-event-label.md) | Titre donné à l’évènement par la structure. |

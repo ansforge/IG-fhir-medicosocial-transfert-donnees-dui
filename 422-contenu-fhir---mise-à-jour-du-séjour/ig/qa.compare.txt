@@ -1,7 +1,7 @@
 TDDUI : Validation Results
 =========================================
 
-err = 109, warn = 120, info = 4534
+err = 109, warn = 121, info = 4569
 $--
 Generated $--. FHIR version $-- for ans.fhir.fr.tddui#$-- (canonical = https://interop.esante.gouv.fr/ig/fhir/tddui)
  Build Errors : 3 / 4 / 0
@@ -70,7 +70,8 @@ Generated $--. FHIR version $-- for ans.fhir.fr.tddui#$-- (canonical = https://i
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-discriminator : 0 / 0 / 9
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-document-reference : 0 / 14 / 147
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-encounter-evenement : 0 / 4 / 312
- /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-encounter-sejour : 0 / 0 / 131
+ /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-encounter-sejour : 0 / 0 / 160
+ /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-entry-date-origin : 0 / 1 / 7
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-entry-mode-label : 0 / 0 / 7
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-evaluation-reference : 0 / 1 / 9
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-event-cancel-reason : 0 / 1 / 9
@@ -293,56 +294,56 @@ WARNING: Goal/tddui-pp-pa-goal-objectif-2-example: Goal.identifier[0].system: No
 == fsh-generated/resources/Goal-tddui-pp-pa-goal-objectif-3-example.json ==
 WARNING: Goal/tddui-pp-pa-goal-objectif-3-example: Goal.identifier[0].system: No definition could be found for URL value 'https://identifiant-medicosocial-objectif.esante.gouv.fr'
 == fsh-generated/resources/ImplementationGuide-ans.fhir.fr.tddui.json ==
-INFORMATION: ImplementationGuide.definition.resource[69].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[70].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[72].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[73].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[74].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[75].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[76].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[77].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[78].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[70].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[71].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[73].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[74].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[75].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[76].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[77].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[78].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord to 2.2.0-ballot
 INFORMATION: ImplementationGuide.definition.resource[79].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[80].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[81].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[80].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[81].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient to 2.2.0-ballot
 INFORMATION: ImplementationGuide.definition.resource[82].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[83].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[84].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[85].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[86].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[83].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[84].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[85].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[86].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord to 2.2.0-ballot
 INFORMATION: ImplementationGuide.definition.resource[87].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[88].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[88].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference to 2.2.0-ballot
 INFORMATION: ImplementationGuide.definition.resource[89].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[90].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[90].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente to 2.2.0-ballot
 INFORMATION: ImplementationGuide.definition.resource[91].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif to 2.2.0-ballot
 INFORMATION: ImplementationGuide.definition.resource[92].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[93].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[94].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[95].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[96].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[93].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[94].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[95].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[96].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response to 2.2.0-ballot
 INFORMATION: ImplementationGuide.definition.resource[97].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin to 2.2.0-ballot
 INFORMATION: ImplementationGuide.definition.resource[98].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[99].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[99].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin to 2.2.0-ballot
 INFORMATION: ImplementationGuide.definition.resource[100].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action to 2.2.0-ballot
 INFORMATION: ImplementationGuide.definition.resource[101].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action to 2.2.0-ballot
 INFORMATION: ImplementationGuide.definition.resource[102].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action to 2.2.0-ballot
 INFORMATION: ImplementationGuide.definition.resource[103].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action to 2.2.0-ballot
 INFORMATION: ImplementationGuide.definition.resource[104].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[105].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[105].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action to 2.2.0-ballot
 INFORMATION: ImplementationGuide.definition.resource[106].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource to 2.2.0-ballot
 INFORMATION: ImplementationGuide.definition.resource[107].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource to 2.2.0-ballot
 INFORMATION: ImplementationGuide.definition.resource[108].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[109].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[110].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[112].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[109].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[110].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[111].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role to 2.2.0-ballot
 INFORMATION: ImplementationGuide.definition.resource[113].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response to 2.2.0-ballot
 INFORMATION: ImplementationGuide.definition.resource[114].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response to 2.2.0-ballot
 INFORMATION: ImplementationGuide.definition.resource[115].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response to 2.2.0-ballot
 INFORMATION: ImplementationGuide.definition.resource[116].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[117].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[118].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[119].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[120].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[117].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[118].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[119].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[120].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[121].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle to 2.2.0-ballot
 ERROR: ImplementationGuide/ans.fhir.fr.tddui: ImplementationGuide.definition.extension[28].url: No definition could be found for URL value 'http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters'
 WARNING: ImplementationGuide/ans.fhir.fr.tddui: ImplementationGuide.definition.resource[0].description: value should not start or finish with whitespace '\n- **Séjour** : commentaire relatif au séjour.\n- **Événement** : commentaires sur le déroulé de l’évènement.\n- **Évaluation** : commentaire libre sur le contenu ou le résultat de l’évaluation.\n- **Champ évalué** : commentaire spécifique à un item ou sous-item évalué.'
 ERROR: ImplementationGuide/ans.fhir.fr.tddui: ImplementationGuide.dependsOn[3]: The ImplementationGuide is based on FHIR version 4.0.1 but package hl7.fhir.uv.extensions#5.2.0 is based on FHIR version 5.0.0. Use the package hl7.fhir.uv.extensions.r4 instead
@@ -2195,95 +2196,132 @@ INFORMATION: StructureDefinition.snapshot.element[22].constraint[0].source: Pinn
 INFORMATION: StructureDefinition.snapshot.element[23].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[24].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[25].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[26].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[27].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[27].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[28].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[28].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[29].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[29].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[29].binding.valueSet: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-identifier-vs to 2.2.0-ballot
 INFORMATION: StructureDefinition.snapshot.element[30].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[31].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[32].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[32].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/v3-ActEncounterCode to 3.0.0
 INFORMATION: StructureDefinition.snapshot.element[33].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[34].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[35].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[35].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[36].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[36].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[37].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[37].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/v3-ActEncounterCode to 3.0.0
+INFORMATION: StructureDefinition.snapshot.element[37].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[38].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[38].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[39].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[40].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[41].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[41].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/v3-ActPriority to 3.0.0
-INFORMATION: StructureDefinition.snapshot.element[42].type[0].targetProfile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient to 2.2.0-ballot
-INFORMATION: StructureDefinition.snapshot.element[42].type[0].targetProfile[1]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins to 2.2.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[41].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/v3-ActEncounterCode to 3.0.0
 INFORMATION: StructureDefinition.snapshot.element[42].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[43].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[44].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[44].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[45].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[45].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[46].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[46].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/v3-ActEncounterCode to 3.0.0
 INFORMATION: StructureDefinition.snapshot.element[47].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[47].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[48].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[48].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[49].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[49].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J226-ModaliteAccueil-ROR/FHIR/JDV-J226-ModaliteAccueil-ROR to 20250828120000
 INFORMATION: StructureDefinition.snapshot.element[50].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[50].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/v3-ActPriority to 3.0.0
+INFORMATION: StructureDefinition.snapshot.element[51].type[0].targetProfile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient to 2.2.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[51].type[0].targetProfile[1]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins to 2.2.0-ballot
 INFORMATION: StructureDefinition.snapshot.element[51].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[52].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[53].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[55].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[55].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[54].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[56].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[56].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[57].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[57].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[58].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[59].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[60].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[61].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[62].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[62].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[63].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[63].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[64].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[64].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[65].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[66].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[67].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[68].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[69].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[70].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[70].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[71].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[71].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[72].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[72].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[73].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[74].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[75].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[76].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[76].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/v2-0092 to 2.0.0
-INFORMATION: StructureDefinition.snapshot.element[77].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[78].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[78].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[79].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[79].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[80].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[81].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[82].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[83].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[84].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[84].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[85].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[85].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[86].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[86].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[87].type[0].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-date-origin to 2.2.0-ballot
 INFORMATION: StructureDefinition.snapshot.element[87].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[87].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[88].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[88].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[89].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[90].type[0].targetProfile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization to 2.2.0-ballot
 INFORMATION: StructureDefinition.snapshot.element[90].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[91].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[91].binding.valueSet: Pinned the version of https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-entree-cisis to 20250624152100
+INFORMATION: StructureDefinition.snapshot.element[92].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[92].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/v2-0092 to 2.0.0
+INFORMATION: StructureDefinition.snapshot.element[93].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[94].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[95].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[96].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[97].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[97].binding.valueSet: Pinned the version of https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-sortie-cisis to 20250624152100
+INFORMATION: StructureDefinition.snapshot.element[98].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[100].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[100].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[101].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[101].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[102].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[103].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[104].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[105].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[106].type[0].targetProfile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization to 2.2.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[106].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[107].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.differential.element[4].type[0].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-admission-date to 2.2.0-ballot
 INFORMATION: StructureDefinition.differential.element[5].type[0].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-mode-label to 2.2.0-ballot
 INFORMATION: StructureDefinition.differential.element[6].type[0].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exit-mode-label to 2.2.0-ballot
 INFORMATION: StructureDefinition.differential.element[7].type[0].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment to 2.2.0-ballot
 INFORMATION: StructureDefinition.differential.element[10].binding.valueSet: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-identifier-vs to 2.2.0-ballot
-INFORMATION: StructureDefinition.differential.element[13].type[0].targetProfile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient to 2.2.0-ballot
-INFORMATION: StructureDefinition.differential.element[13].type[0].targetProfile[1]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins to 2.2.0-ballot
-INFORMATION: StructureDefinition.differential.element[16].type[0].targetProfile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization to 2.2.0-ballot
+INFORMATION: StructureDefinition.differential.element[14].binding.valueSet: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-identifier-vs to 2.2.0-ballot
+INFORMATION: StructureDefinition.differential.element[17].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J226-ModaliteAccueil-ROR/FHIR/JDV-J226-ModaliteAccueil-ROR to 20250828120000
+INFORMATION: StructureDefinition.differential.element[18].type[0].targetProfile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient to 2.2.0-ballot
+INFORMATION: StructureDefinition.differential.element[18].type[0].targetProfile[1]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins to 2.2.0-ballot
+INFORMATION: StructureDefinition.differential.element[23].type[0].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-date-origin to 2.2.0-ballot
+INFORMATION: StructureDefinition.differential.element[25].type[0].targetProfile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization to 2.2.0-ballot
+INFORMATION: StructureDefinition.differential.element[26].binding.valueSet: Pinned the version of https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-entree-cisis to 20250624152100
+INFORMATION: StructureDefinition.differential.element[27].binding.valueSet: Pinned the version of https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-sortie-cisis to 20250624152100
+INFORMATION: StructureDefinition.differential.element[28].type[0].targetProfile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization to 2.2.0-ballot
 INFORMATION: StructureDefinition/tddui-encounter-sejour: StructureDefinition.differential.element[8].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/tddui-encounter-sejour: StructureDefinition.snapshot.element[15].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+== fsh-generated/resources/StructureDefinition-tddui-entry-date-origin.json ==
+INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[0].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[0].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[2].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[2].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[4].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-date-origin'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-tddui-entry-mode-label.json ==
 INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[0].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1

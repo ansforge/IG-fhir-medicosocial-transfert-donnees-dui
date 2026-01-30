@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour | *Version*:2.2.0-ballot |
-| Active as of 2026-01-29 | *Computable Name*:TDDUIEncounterSejour |
+| Active as of 2026-01-30 | *Computable Name*:TDDUIEncounterSejour |
 
  
 Profil de la ressource Encounter permettant de regrouper les informations relatives au séjour d'un usager dans une structure ESSMS 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-sejo
   "name" : "TDDUIEncounterSejour",
   "title" : "TDDUI Encounter Sejour",
   "status" : "active",
-  "date" : "2026-01-29T15:49:35+00:00",
+  "date" : "2026-01-30T11:01:37+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -326,6 +326,63 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-sejo
         ]
       },
       {
+        "id" : "Encounter.identifier:idDossierAdministratif",
+        "path" : "Encounter.identifier",
+        "sliceName" : "idDossierAdministratif",
+        "short" : "Numéro de dossier administratif du séjour",
+        "min" : 0,
+        "max" : "1",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIEncounterSejour",
+            "map" : "numeroDossierAdministratifSejour"
+          }
+        ]
+      },
+      {
+        "id" : "Encounter.identifier:idDossierAdministratif.type",
+        "path" : "Encounter.identifier.type",
+        "min" : 1,
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier-cs",
+              "code" : "NUMDOSS",
+              "display" : "Numéro de dossier administratif du séjour"
+            }
+          ]
+        },
+        "binding" : {
+          "strength" : "required",
+          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-identifier-vs|2.2.0-ballot"
+        }
+      },
+      {
+        "id" : "Encounter.identifier:idDossierAdministratif.system",
+        "path" : "Encounter.identifier.system",
+        "min" : 1,
+        "patternUri" : "https://identifiant-medicosocial-sejour.esante.gouv.fr"
+      },
+      {
+        "id" : "Encounter.identifier:idDossierAdministratif.value",
+        "path" : "Encounter.identifier.value",
+        "min" : 1
+      },
+      {
+        "id" : "Encounter.serviceType",
+        "path" : "Encounter.serviceType",
+        "binding" : {
+          "strength" : "required",
+          "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J226-ModaliteAccueil-ROR/FHIR/JDV-J226-ModaliteAccueil-ROR|20250828120000"
+        },
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIEncounterSejour",
+            "map" : "modaliteAccueil"
+          }
+        ]
+      },
+      {
         "id" : "Encounter.subject",
         "path" : "Encounter.subject",
         "min" : 1,
@@ -346,6 +403,16 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-sejo
         ]
       },
       {
+        "id" : "Encounter.participant.individual.display",
+        "path" : "Encounter.participant.individual.display",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIEncounterSejour",
+            "map" : "origineDemande"
+          }
+        ]
+      },
+      {
         "id" : "Encounter.period.start",
         "path" : "Encounter.period.start",
         "mapping" : [
@@ -362,6 +429,98 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-sejo
           {
             "identity" : "specmetier-to-TDDUIEncounterSejour",
             "map" : "dateSortie"
+          }
+        ]
+      },
+      {
+        "id" : "Encounter.hospitalization.extension",
+        "path" : "Encounter.hospitalization.extension",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "value",
+              "path" : "url"
+            }
+          ],
+          "ordered" : false,
+          "rules" : "open"
+        }
+      },
+      {
+        "id" : "Encounter.hospitalization.extension:TDDUIEntryDateOrigin",
+        "path" : "Encounter.hospitalization.extension",
+        "sliceName" : "TDDUIEntryDateOrigin",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Extension",
+            "profile" : [
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-date-origin|2.2.0-ballot"
+            ]
+          }
+        ],
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIEncounterSejour",
+            "map" : "dateEntreeESSMSProvenance"
+          }
+        ]
+      },
+      {
+        "id" : "Encounter.hospitalization.preAdmissionIdentifier",
+        "path" : "Encounter.hospitalization.preAdmissionIdentifier",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIEncounterSejour",
+            "map" : "numeroDossierESSMSProvenance"
+          }
+        ]
+      },
+      {
+        "id" : "Encounter.hospitalization.origin",
+        "path" : "Encounter.hospitalization.origin",
+        "min" : 1,
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization|2.2.0-ballot"
+            ]
+          }
+        ],
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIEncounterSejour",
+            "map" : "ESSMSProvenance"
+          }
+        ]
+      },
+      {
+        "id" : "Encounter.hospitalization.admitSource",
+        "path" : "Encounter.hospitalization.admitSource",
+        "binding" : {
+          "strength" : "required",
+          "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-entree-cisis|20250624152100"
+        },
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIEncounterSejour",
+            "map" : "provenance"
+          }
+        ]
+      },
+      {
+        "id" : "Encounter.hospitalization.dischargeDisposition",
+        "path" : "Encounter.hospitalization.dischargeDisposition",
+        "binding" : {
+          "strength" : "required",
+          "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-sortie-cisis|20250624152100"
+        },
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIEncounterSejour",
+            "map" : "motifSortie"
           }
         ]
       },

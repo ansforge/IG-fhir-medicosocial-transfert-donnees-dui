@@ -10,7 +10,7 @@
   <name value="TDDUI"/>
   <title value="Médicosocial - Transfert de données DUI"/>
   <status value="active"/>
-  <date value="2026-01-29T15:49:35+00:00"/>
+  <date value="2026-01-30T11:01:37+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -523,6 +523,17 @@
       </reference>
       <name value="Commentaire"/>
       <description value="&#xA;- **Séjour** : commentaire relatif au séjour.&#xA;- **Événement** : commentaires sur le déroulé de l’évènement.&#xA;- **Évaluation** : commentaire libre sur le contenu ou le résultat de l’évaluation.&#xA;- **Champ évalué** : commentaire spécifique à un item ou sous-item évalué."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-entry-date-origin"/>
+      </reference>
+      <name value="Date d'entrée dans l'ESSMS de provenance"/>
+      <description value="Extension permettant de véhiculer la date d'entrée dans l'ESSMS de provenance."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

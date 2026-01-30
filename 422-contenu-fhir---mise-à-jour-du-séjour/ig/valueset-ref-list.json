@@ -29,8 +29,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
-      "ValueSet-tddui-encounter-identifier-vs.html" : "TDDUI Encounter Identifier Type ValueSet",
-      "ValueSet-tddui-patient-identifier-vs.html" : "TDDUI Patient Identifier ValueSet"
+      "ValueSet-tddui-patient-identifier-vs.html" : "TDDUI Patient Identifier ValueSet",
+      "ValueSet-tddui-encounter-identifier-vs.html" : "TDDUI Encounter Identifier Type ValueSet"
     },
     {
       "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-discharge-disposition",
@@ -225,9 +225,9 @@
       "uses" : {
       },
       "ValueSet-tddui-goal-objectif-note-vs.html" : "TDDUI Goal Objectif Note ValueSet",
+      "ValueSet-tddui-care-plan-supportingInfo-vs.html" : "TDDUI CarePlan supportingInfo ValueSet",
       "StructureDefinition-tddui-discriminator.html" : "TDDUI Discriminator Extension",
-      "ValueSet-tddui-goal-attente-note-vs.html" : "TDDUI Goal Attente Note ValueSet",
-      "ValueSet-tddui-care-plan-supportingInfo-vs.html" : "TDDUI CarePlan supportingInfo ValueSet"
+      "ValueSet-tddui-goal-attente-note-vs.html" : "TDDUI Goal Attente Note ValueSet"
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-identifier-vs",
@@ -320,8 +320,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-tddui-patient.html" : "TDDUI Patient",
-      "StructureDefinition-tddui-patient-ins.html" : "TDDUI Patient INS"
+      "StructureDefinition-tddui-patient-ins.html" : "TDDUI Patient INS",
+      "StructureDefinition-tddui-patient.html" : "TDDUI Patient"
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-serafin-valueset",
@@ -333,9 +333,9 @@
       "systems" : ["https://smt.esante.gouv.fr/terminologie-SERAFINPH"],
       "uses" : {
       },
-      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement",
       "StructureDefinition-tddui-task-prestation.html" : "TDDUI Task Prestation",
-      "ValueSet-tddui-encounter-type-vs.html" : "TDDUI Encounter Type ValueSet"
+      "ValueSet-tddui-encounter-type-vs.html" : "TDDUI Encounter Type ValueSet",
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/JDV_J01-XdsAuthorSpecialty-CISIS/FHIR/JDV-J01-XdsAuthorSpecialty-CISIS",
@@ -460,6 +460,22 @@
       "uses" : {
       },
       "StructureDefinition-tddui-exercise-mode.html" : "Mode d'exercice"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J226-ModaliteAccueil-ROR/FHIR/JDV-J226-ModaliteAccueil-ROR",
+      "version" : "20250828120000",
+      "status" : "active",
+      "name" : "JDV_J226_ModaliteAccueil_ROR",
+      "title" : null,
+      "description" : "Modalité d'accueil",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R338-ModaliteAccueil/FHIR/TRE-R338-ModaliteAccueil"
+      ],
+      "oids" : ["1.2.250.1.213.3.4.58"],
+      "sources" : ["1.2.250.1.213.3.4.58"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/JDV_J245-Civilite-CISIS/FHIR/JDV-J245-Civilite-CISIS",
@@ -616,6 +632,41 @@
       "StructureDefinition-tddui-careplan-projet-personnalise.html" : "TDDUI CarePlan Projet Personalise"
     },
     {
+      "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-entree-cisis",
+      "version" : "20250624152100",
+      "status" : "active",
+      "name" : "JdvModaliteEntreeCisis",
+      "title" : "JDV Modalite Entree CISIS",
+      "description" : "JDV Modalite Entree CISIS",
+      "systems" : [
+        "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["1.2.250.1.213.1.1.5.73"],
+      "sources" : ["1.2.250.1.213.1.1.5.73"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour"
+    },
+    {
+      "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-sortie-cisis",
+      "version" : "20250624152100",
+      "status" : "active",
+      "name" : "JdvModaliteSortieCisis",
+      "title" : "JDV Modalite Sortie CISIS",
+      "description" : "JDV Modalite Sortie CISIS",
+      "systems" : [
+        "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+        "https://mos.esante.gouv.fr/NOS/TRE_R66-CategorieEtablissement/FHIR/TRE-R66-CategorieEtablissement",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["1.2.250.1.213.1.1.5.74"],
+      "sources" : ["1.2.250.1.213.1.1.5.74"],
+      "uses" : {
+      },
+      "StructureDefinition-tddui-encounter-sejour.html" : "TDDUI Encounter Sejour"
+    },
+    {
       "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis",
       "version" : "20250624152101",
       "status" : "active",
@@ -678,8 +729,8 @@
       "sources" : ["1.2.250.1.213.1.1.5.811"],
       "uses" : {
       },
-      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement",
-      "ValueSet-tddui-encounter-type-vs.html" : "TDDUI Encounter Type ValueSet"
+      "ValueSet-tddui-encounter-type-vs.html" : "TDDUI Encounter Type ValueSet",
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
     },
     {
       "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-motorisation-cisis",
