@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-birth-order.cs
   "name" : "TDDUIBirthOrder",
   "title" : "Ordre de naissance dans le registre d'état civil",
   "status" : "active",
-  "date" : "2026-01-30T07:44:02+00:00",
+  "date" : "2026-01-30T08:34:52+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

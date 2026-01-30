@@ -907,8 +907,6 @@ Le Participant est une personne morale ou physique prenant part à l'événement
   * Description: Indique la présence du participant à l'événement.1= participant présent0= participant absent
 * Nom: roleParticipantEJ : [0..1] Code
   * Description: Role du participant vis à vis de l'événement (mandataire judiciaire, structure en charge de l'événement).Jeu(x) de valeur(s) associé(s) :[JDV-J387-ROLE-PARTICIPANT-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j387-role-participant-ms/$expand)
-* Nom: participantInterne : [0..1] Indicateur
-  * Description: Indique si le participant (personne Physique) est interne ou externe à la structure1 = interne0 = externe
 
 ##### Classe StructureEnCharge
 
