@@ -1,5 +1,5 @@
-ValueSet: TDDUIProtectionJuridique
-Id: tddui-protection-juridique
+ValueSet: TDDUIContactProtectionJuridique
+Id: tddui-contact-protection-juridique
 Title: "TDDUI Protection Juridique"
 Description: "ValueSet définissant la protection juridique."
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
