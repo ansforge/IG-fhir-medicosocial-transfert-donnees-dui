@@ -1,0 +1,43 @@
+{
+  "resourceType" : "Goal",
+  "id" : "tddui-pp-pa-goal-objectif-3-example",
+  "meta" : {
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : But tddui-pp-pa-goal-objectif-3-example</b></p><a name=\"tddui-pp-pa-goal-objectif-3-example\"> </a><a name=\"hctddui-pp-pa-goal-objectif-3-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-goal-objectif.html\">TDDUI Goal Objectif</a></p></div><p><b>Lien vers le projet personnalisé</b>: <a href=\"CarePlan-tddui-pp-pa-careplan-example.html\">CarePlan Projet personnalisé de Mme Jeanne L.</a></p><p><b>identifier</b>: <code>https://identifiant-medicosocial-objectif.esante.gouv.fr</code>/3480787529/123456789-OBJE-1236</p><p><b>lifecycleStatus</b>: Active</p><p><b>description</b>: <span title=\"Codes :\">Maintenir le lien social.</span></p><p><b>subject</b>: <a href=\"Patient-tddui-pp-pa-patient-example-pp.html\">Jeanne L. (official) Female, Date de Naissance inconnue ( Patient internal identifier: 3480787529/123456789)</a></p><p><b>addresses</b>: <a href=\"ServiceRequest-tddui-pp-pa-servicerequest-besoin-3-example.html\">ServiceRequest </a></p><p><b>note</b>: </p><blockquote><div><p>Objectif 3</p>\n</div></blockquote></div>"
+  },
+  "extension" : [{
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference",
+    "valueReference" : {
+      "reference" : "CarePlan/tddui-pp-pa-careplan-example"
+    }
+  }],
+  "identifier" : [{
+    "system" : "https://identifiant-medicosocial-objectif.esante.gouv.fr",
+    "value" : "3480787529/123456789-OBJE-1236"
+  }],
+  "lifecycleStatus" : "active",
+  "description" : {
+    "text" : "Maintenir le lien social."
+  },
+  "subject" : {
+    "reference" : "Patient/tddui-pp-pa-patient-example-pp"
+  },
+  "addresses" : [{
+    "reference" : "ServiceRequest/tddui-pp-pa-servicerequest-besoin-3-example"
+  }],
+  "note" : [{
+    "extension" : [{
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs",
+          "code" : "titreObjectif"
+        }]
+      }
+    }],
+    "text" : "Objectif 3"
+  }]
+}
