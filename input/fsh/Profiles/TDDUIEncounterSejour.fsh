@@ -10,7 +10,8 @@ Description: "Profil de la ressource Encounter permettant de regrouper les infor
 * identifier ^slicing.rules = #open
 
 * identifier contains
-    idStay 1..1
+    idStay 1..1 and
+    idDossierAdministratif 0..1
 * identifier[idStay].type from TDDUIEncounterIdentifierVs (required)
 * identifier[idStay] ^short = "Identifiant métier unique du séjour"
 * identifier[idStay].type = TDDUIEncounterIdentifierCs#SEJ "Identifiant du séjour"
@@ -19,6 +20,15 @@ Description: "Profil de la ressource Encounter permettant de regrouper les infor
 * identifier[idStay].value ^example[0].valueString = "3480787529/147720425367411-SEJOUR-21564655"
 * identifier[idStay].system 1..1
 * identifier[idStay].system = "https://identifiant-medicosocial-sejour.esante.gouv.fr"
+
+* identifier[idDossierAdministratif].type from TDDUIEncounterIdentifierVs (required)
+* identifier[idDossierAdministratif] ^short = "Numéro de dossier administratif du séjour"
+* identifier[idDossierAdministratif].type = TDDUIEncounterIdentifierCs#NUMDOSS "Numéro de dossier administratif du séjour"
+* identifier[idDossierAdministratif].value 1..1
+// * identifier[idDossierAdministratif].value ^example[0].label = "Numéro de dossier administratif du séjour"
+// * identifier[idDossierAdministratif].value ^example[0].valueString = "DA-21564655"
+* identifier[idDossierAdministratif].system 1..1
+* identifier[idDossierAdministratif].system = "https://identifiant-medicosocial-sejour.esante.gouv.fr"
 
 // Usager
 * subject 1..1
@@ -49,12 +59,15 @@ Description: "Profil de la ressource Encounter permettant de regrouper les infor
 * extension[TDDUIExitModeLabel] ^short = "Libellé du mode de sortie du séjour"
 * extension[TDDUIComment] ^short = "Commentaire relatif au séjour"
 
+* serviceType from JDV-J226-ModaliteAccueil-ROR (required)
+
+* hospitalization.extension contains
+    TDDUIEntryDateOrigin named TDDUIEntryDateOrigin 0..1
+    
 * hospitalization.origin 1..1
 * hospitalization.origin only Reference(TDDUIOrganization)
-
-* serviceType from JDV-J226-ModaliteAccueil-ROR (required)
-* admitSource from jdv-modalite-entree-cisis (required)
-* dischargeDisposition from jdv-modalite-sortie-cisis (required)
+* hospitalization.admitSource from jdv-modalite-entree-cisis (required)
+* hospitalization.dischargeDisposition from jdv-modalite-sortie-cisis (required)
 
 Mapping:  ConceptMetier_TDDUIEncounterSejour
 Source:   TDDUIEncounterSejour
@@ -64,6 +77,7 @@ Title:    "Modèle de contenu DUI"
 * -> "Sejour"
  
 * identifier[idStay] -> "idSejour"
+* identifier[idDossierAdministratif] -> "numeroDossierAdministratifSejour"
 * subject -> "Usager"
 * serviceProvider -> "EntiteJuridique"
 * extension[TDDUI-plannedStartDate-r5] -> "dateEntreePrevisionnelle"
@@ -74,7 +88,10 @@ Title:    "Modèle de contenu DUI"
 * extension[TDDUIComment] -> "commentaire"
 * period.start -> "dateEntree"
 * period.end -> "dateSortie"
+* hospitalization.extension[TDDUIEntryDateOrigin] -> "dateEntreeESSMSProvenance"
 * hospitalization.origin -> "ESSMSProvenance"
+* hospitalization.preAdmissionIdentifier -> "numeroDossierESSMSProvenance"
 * serviceType -> "modaliteAccueil"
-* admitSource -> "provenance"
-* dischargeDisposition -> "motifSortie"
+* hospitalization.admitSource -> "provenance"
+* hospitalization.dischargeDisposition -> "motifSortie"
+* participant.individual.display -> "origineDemande"

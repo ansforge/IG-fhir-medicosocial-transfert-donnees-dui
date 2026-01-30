@@ -7,5 +7,6 @@ Description: "TDDUI Encounter's identifier"
 * ^caseSensitive = true
 * ^content = #complete
 * #SEJ "Identifiant du séjour"
+* #NUMDOSS "Numéro de dossier administratif du séjour"
 // SCS profile
 * ^experimental = false
