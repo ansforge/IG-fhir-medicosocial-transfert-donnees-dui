@@ -1,5 +1,5 @@
 ValueSet: TDDUICarePlanSupportingInfo
-Id: tddui-care-plan-supportingInfo
+Id: tddui-care-plan-supporting-info
 Title: "TDDUI CarePlan supportingInfo"
 Description: "ValueSet définissant les types de notes pour l'élément CarePlan.supportingInfo."
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
