@@ -1,6 +1,6 @@
 ValueSet: TDDUIContactRelation
 Id: tddui-contact-relation
-Title: "TDDUI Relation"
+Title: "TDDUI Contact Relation"
 Description: "ValueSet définissant les relations."
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^experimental = false
