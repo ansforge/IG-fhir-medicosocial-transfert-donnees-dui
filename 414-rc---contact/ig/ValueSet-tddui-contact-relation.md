@@ -1,15 +1,15 @@
-# TDDUI Relation - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Contact Relation - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **TDDUI Relation**
+* **TDDUI Contact Relation**
 
-## ValueSet: TDDUI Relation 
+## ValueSet: TDDUI Contact Relation 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-contact-relation | *Version*:2.2.0-ballot |
-| Active as of 2026-01-30 | *Computable Name*:TDDUIContactRelation |
+| Active as of 2026-02-02 | *Computable Name*:TDDUIContactRelation |
 
  
 ValueSet définissant les relations. 
@@ -53,10 +53,10 @@ ValueSet définissant les relations.
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-contact-relation",
   "version" : "2.2.0-ballot",
   "name" : "TDDUIContactRelation",
-  "title" : "TDDUI Relation",
+  "title" : "TDDUI Contact Relation",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-30T16:24:47+00:00",
+  "date" : "2026-02-02T09:56:46+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

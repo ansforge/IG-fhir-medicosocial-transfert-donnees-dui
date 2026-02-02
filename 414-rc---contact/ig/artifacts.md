@@ -116,6 +116,7 @@ These define sets of codes used by systems conforming to this implementation gui
 | [InputTaskTransportValueSet](ValueSet-input-tddui-task-transport-valueset.md) | ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les transports dans le cadre du DUI. |
 | [OutputTDDUITaskBilanValueSet](ValueSet-output-tddui-task-bilan-valueset.md) | ValueSet pour la définition des éléments spécifiques des output dans la ressource Task utilisée pour le bilan du projet personnalisé. |
 | [TDDUI CarePlan supportingInfo ValueSet](ValueSet-tddui-care-plan-supportingInfo-vs.md) | ValueSet définissant les types de notes pour l'élément CarePlan.supportingInfo. |
+| [TDDUI Contact Relation](ValueSet-tddui-contact-relation.md) | ValueSet définissant les relations. |
 | [TDDUI Discriminator ValueSet](ValueSet-tddui-discriminator-vs.md) | ValueSet définissant les codes discriminants. |
 | [TDDUI Encounter Identifier Type ValueSet](ValueSet-tddui-encounter-identifier-vs.md) | ValueSet for TDDUI Encounter's identifier types |
 | [TDDUI Encounter Participant ValueSet](ValueSet-tddui-encounter-participant-vs.md) | ValueSet for TDDUI Encounter's participants |
@@ -124,7 +125,6 @@ These define sets of codes used by systems conforming to this implementation gui
 | [TDDUI Goal Objectif Note ValueSet](ValueSet-tddui-goal-objectif-note-vs.md) | ValueSet définissant les types de notes pour l'élément Goal.note. |
 | [TDDUI Patient Identifier ValueSet](ValueSet-tddui-patient-identifier-vs.md) | ValueSet for TDDUI Patient's identifier types |
 | [TDDUI Protection Juridique](ValueSet-tddui-contact-protection-juridique.md) | ValueSet définissant la protection juridique. |
-| [TDDUI Relation](ValueSet-tddui-contact-relation.md) | ValueSet définissant les relations. |
 | [TDDUI SERAFIN ValueSet](ValueSet-tddui-serafin-valueset.md) | ValueSet contenant les codes SERAFIN (prestations directes et indirectes) pour le profil TDDUI Encounter Evenement. |
 
 ### Terminology: Code Systems 

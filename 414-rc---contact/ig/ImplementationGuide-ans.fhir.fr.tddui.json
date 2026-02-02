@@ -10,7 +10,7 @@
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2026-01-30T16:24:47+00:00",
+  "date" : "2026-02-02T09:56:46+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -1101,6 +1101,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/tddui-contact-relation"
+      },
+      "name" : "TDDUI Contact Relation",
+      "description" : "ValueSet définissant les relations.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
       "reference" : {
@@ -1432,18 +1444,6 @@
       },
       "name" : "TDDUI RelatedPerson Contact",
       "description" : "Profil de la ressource FRCoreRelatedPersonProfile permettant de représenter un contact de l'usager.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/tddui-contact-relation"
-      },
-      "name" : "TDDUI Relation",
-      "description" : "ValueSet définissant les relations.",
       "exampleBoolean" : false
     },
     {

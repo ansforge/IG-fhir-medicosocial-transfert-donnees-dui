@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-type-vs | *Version*:2.2.0-ballot |
-| Active as of 2026-01-30 | *Computable Name*:TDDUIEncounterTypeVs |
+| Active as of 2026-02-02 | *Computable Name*:TDDUIEncounterTypeVs |
 
  
 ValueSet for TDDUI Encounter's types 
@@ -56,7 +56,7 @@ ValueSet for TDDUI Encounter's types
   "title" : "TDDUI Encounter Type ValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-30T16:24:47+00:00",
+  "date" : "2026-02-02T09:56:46+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
