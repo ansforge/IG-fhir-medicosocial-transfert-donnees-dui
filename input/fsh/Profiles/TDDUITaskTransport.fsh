@@ -28,7 +28,7 @@ Description: "Profil de la ressource Task permettant de représenter le transpor
 * encounter 1..1
 * encounter only Reference(TDDUIEncounterEvenement)
 
-* input.type from InputTDDUITaskTransport (required)
+* input.type from TDDUITaskInputTransport (required)
 
 * input ^slicing.discriminator.type = #pattern
 * input ^slicing.discriminator.path = "type"
@@ -45,37 +45,37 @@ Description: "Profil de la ressource Task permettant de représenter le transpor
 // Type de motorisation
 * input[typeMotorisation].value[x] only CodeableConcept
 * input[typeMotorisation].valueCodeableConcept from $JDV-TypeMotorisation-CISIS
-* input[typeMotorisation].type = InputTDDUITaskTransport#typeMotorisation
+* input[typeMotorisation].type = TDDUITaskInputTransport#typeMotorisation
 * input[typeMotorisation] ^short = "Type de motorisation"
 
 // Adresse de départ
 * input[adresseDepart].value[x] only Address
-* input[adresseDepart].type = InputTDDUITaskTransport#adresseDepart
+* input[adresseDepart].type = TDDUITaskInputTransport#adresseDepart
 * input[adresseDepart] ^short = "Adresse de départ"
 
 // Adresse de destination
 * input[adresseDestination].value[x] only Address
-* input[adresseDestination].type = InputTDDUITaskTransport#adresseDestination
+* input[adresseDestination].type = TDDUITaskInputTransport#adresseDestination
 * input[adresseDestination] ^short = "Adresse de destination"
 
 // Budget prévisionnel
 * input[budgetPrevisionnel].value[x] only Money
-* input[budgetPrevisionnel].type = InputTDDUITaskTransport#budgetPrevisionnel
+* input[budgetPrevisionnel].type = TDDUITaskInputTransport#budgetPrevisionnel
 * input[budgetPrevisionnel] ^short = "Budget prévisionnel"
 
 // Budget réel
 * input[budgetReel].value[x] only Money
-* input[budgetReel].type = InputTDDUITaskTransport#budgetReel
+* input[budgetReel].type = TDDUITaskInputTransport#budgetReel
 * input[budgetReel] ^short = "Budget réel"
 
 // Distance
 * input[distance].value[x] only Distance
-* input[distance].type = InputTDDUITaskTransport#distance
+* input[distance].type = TDDUITaskInputTransport#distance
 * input[distance] ^short = "Distance du trajet"
 
 // Durée théorique
 * input[dureeTheorique].value[x] only Duration
-* input[dureeTheorique].type = InputTDDUITaskTransport#dureeTheorique
+* input[dureeTheorique].type = TDDUITaskInputTransport#dureeTheorique
 * input[dureeTheorique] ^short = "Durée théorique du trajet"
 
 Mapping:  ConceptMetier_TDDUITaskTransport

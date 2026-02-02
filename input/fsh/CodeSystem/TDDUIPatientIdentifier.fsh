@@ -1,7 +1,7 @@
 CodeSystem: TDDUIIdentifier
 Id: tddui-identifier
-Title: "TDDUI Patient's Identifier"
-Description: "TDDUI Patient's identifier"
+Title: "TDDUI Patient Identifier"
+Description: "TDDUI Patient identifier"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
 
 * ^caseSensitive = true

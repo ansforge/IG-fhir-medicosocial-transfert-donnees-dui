@@ -1,7 +1,7 @@
 CodeSystem: TDDUIEncounterIdentifier
 Id: tddui-encounter-identifier
-Title: "TDDUI Encounter's Identifier"
-Description: "TDDUI Encounter's identifier"
+Title: "TDDUI Encounter Identifier"
+Description: "TDDUI Encounter identifier"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
 
 * ^caseSensitive = true

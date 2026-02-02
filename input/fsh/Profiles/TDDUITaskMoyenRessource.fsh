@@ -12,7 +12,7 @@ Description: "Profil de la ressource Task permettant de représenter les moyens 
 * identifier.system 1..1
 * identifier.system = "https://identifiant-medicosocial-moyenressource.esante.gouv.fr"
 
-* input.type from InputTDDUITaskMoyenRessource (required)
+* input.type from TDDUITaskInputMoyenRessource (required)
 
 * input ^slicing.discriminator.type = #pattern
 * input ^slicing.discriminator.path = "type"
@@ -22,15 +22,15 @@ Description: "Profil de la ressource Task permettant de représenter les moyens 
     titre 1..1 and
     evaluation 0..1 and
     pieceJointe 0..*
-* input[titre].type = InputTDDUITaskMoyenRessource#titre
+* input[titre].type = TDDUITaskInputMoyenRessource#titre
 * input[titre].value[x] only string
 * input[titre] ^short = "Titre du moyen ou de la ressource"
 
-* input[evaluation].type = InputTDDUITaskMoyenRessource#evaluation
+* input[evaluation].type = TDDUITaskInputMoyenRessource#evaluation
 * input[evaluation].value[x] only Reference(TDDUIQuestionnaireResponse)
 * input[evaluation] ^short = "Evaluation"
 
-* input[pieceJointe].type = InputTDDUITaskMoyenRessource#pieceJointe
+* input[pieceJointe].type = TDDUITaskInputMoyenRessource#pieceJointe
 * input[pieceJointe].value[x] only Reference(TDDUIDocumentReference)
 * input[pieceJointe] ^short = "Pièce jointe associée"
 

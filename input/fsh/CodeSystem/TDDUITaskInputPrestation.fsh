@@ -1,6 +1,6 @@
-CodeSystem: InputTDDUITaskPrestation
-Id: input-tddui-task-prestation
-Title: "InputTDDUITaskPrestation"
+CodeSystem: TDDUITaskInputPrestation
+Id: tddui-task-input-prestation
+Title: "TDDUI Task Input Prestation"
 Description: "CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les prestations du projet personnalisé."
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
 * ^caseSensitive = true
