@@ -16,7 +16,7 @@ CodeSystem définissant les codes discriminants.
 
  Cette terminologie de référence (CodeSystem) est référencé dans la définition de contenu des jeux de valeurs (ValueSet) suivants : 
 
-* [TDDUICarePlanSupportingInfo](ValueSet-tddui-care-plan-supportingInfo.md)
+* [TDDUICarePlanSupportingInfo](ValueSet-tddui-care-plan-supporting-info.md)
 * [TDDUIDiscriminator](ValueSet-tddui-discriminator.md)
 * [TDDUIGoalAttenteNote](ValueSet-tddui-goal-attente-note.md)
 * [TDDUIGoalObjectifNote](ValueSet-tddui-goal-objectif-note.md)
@@ -40,7 +40,7 @@ CodeSystem définissant les codes discriminants.
   "title" : "TDDUI Discriminator",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-02T09:49:54+00:00",
+  "date" : "2026-02-02T14:44:55+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

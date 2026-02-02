@@ -1,5 +1,3 @@
-<!-- layouts\layout-changehistory.html -->
-<!-- get modelType -->
 
 
 <?xml version="1.0" encoding="UTF-8"?>
@@ -7,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title> - Médicosocial - Transfert de données DUI v2.2.0-ballot</title>
+    <title>TDDUI CarePlan supportingInfo - XML Representation - Médicosocial - Transfert de données DUI v2.2.0-ballot</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -47,8 +45,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:""}
-    h3,h4,h5,h6{--heading-prefix:""}</style>
+    <style type="text/css">h2{--heading-prefix:"7.51"}
+    h3,h4,h5,h6{--heading-prefix:"7.51"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -180,11 +178,15 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>TDDUI CarePlan supportingInfo</b></li>
 
           <span style="float:right;">
 
+            <a href="ValueSet-tddui-care-plan-supporting-info-testing.html">&lt;prev</a> | 
+
             <a href="#bottom">bottom</a>
+
+          | <a href="ValueSet-tddui-care-plan-supporting-info.json.html">next&gt;</a>
 
           </span>
 
@@ -197,10 +199,9 @@
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
+<div style="counter-reset: section 7" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">Médicosocial - Transfert de données DUI - version de développement local (v2.2.0-ballot) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/fhir/tddui/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
 
-<div style="counter-reset: section 10" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Médicosocial - Transfert de données DUI - version de développement local (v2.2.0-ballot) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/fhir/tddui/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
-  
 
 
 
@@ -212,28 +213,28 @@
 <ul class="nav nav-tabs">
 
   <li>
-    <a href="ValueSet-tddui-care-plan-supportingInfo.html">Narrative Content</a>
+    <a href="ValueSet-tddui-care-plan-supporting-info.html">Narrative Content</a>
   </li>
 
 
 
   
-    <li>
-      <a href="ValueSet-tddui-care-plan-supportingInfo.xml.html">XML</a>
+    <li class="active">
+      <a href="#">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="ValueSet-tddui-care-plan-supportingInfo.json.html">JSON</a>
+      <a href="ValueSet-tddui-care-plan-supporting-info.json.html">JSON</a>
     </li>
   
 
 
   
     <li>
-      <a href="ValueSet-tddui-care-plan-supportingInfo.ttl.html">TTL</a>
+      <a href="ValueSet-tddui-care-plan-supporting-info.ttl.html">TTL</a>
     </li>
   
 
@@ -242,14 +243,104 @@
 </ul>
 
 
-  <a name="root"> </a>
-  <h2 id="root">: TDDUICarePlanSupportingInfo - Change History</h2>
-  <p>History of changes for tddui-care-plan-supportingInfo .</p>
+<a name="root"> </a>
 
+
+<h2 id="root">: TDDUI CarePlan supportingInfo - XML Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2026-02-02
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="ValueSet-tddui-care-plan-supporting-info.xml" no-download="true">Raw xml</a> | <a href="ValueSet-tddui-care-plan-supporting-info.xml" download>Download</a></p>
+
+  <!-- insert intro if present -->
   
 
-</div>
 
+
+  <pre class="xml" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-xml" style="white-space: pre; text-wrap: nowrap;">
+&lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet">ValueSet</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/resource.html#ValueSet.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;tddui-care-plan-supporting-info&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/resource.html#ValueSet.meta">meta</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/resource.html#ValueSet.meta">meta</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/domainresource.html#ValueSet.text">text</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Narratif généré : EnsembleValeurs tddui-care-plan-supporting-info&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;tddui-care-plan-supporting-info&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hctddui-care-plan-supporting-info&quot;&gt; &lt;/a&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;/&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Profil: &lt;a href=&quot;http://hl7.org/fhir/R4/shareablevalueset.html&quot;&gt;Shareable ValueSetversion : null4.0.1)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Importe tous les codes contenu dans &lt;a href=&quot;ValueSet-tddui-discriminator.html&quot;&gt;TDDUI Discriminator&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Ce jeu de valeur (ValueSet) exclut les codes selon les règles suivantes :&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Exclut ce(s) code(s) tel quil(s) est (sont) défini(s) dans &lt;a href=&quot;CodeSystem-tddui-discriminator.html&quot;&gt;&lt;code&gt;https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator&lt;/code&gt;&lt;/a&gt;&lt;span title=&quot;La version nest pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification&quot;&gt; version &amp;#x1F4E6;2.2.0-ballot&lt;/span&gt;&lt;table class=&quot;none&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Affichage&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-tddui-discriminator.html#tddui-discriminator-titreObjectif&quot;&gt;titreObjectif&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;color: #cccccc&quot;&gt;Titre de l'objectif&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-tddui-discriminator.html#tddui-discriminator-avisUsagerObjectif&quot;&gt;avisUsagerObjectif&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;color: #cccccc&quot;&gt;Avis de l'usager sur l'objectif&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-tddui-discriminator.html#tddui-discriminator-strategieMiseEnOeuvreObjectif&quot;&gt;strategieMiseEnOeuvreObjectif&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;color: #cccccc&quot;&gt;Stratégie de mise en œuvre de l'objectif&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-tddui-discriminator.html#tddui-discriminator-origineAttente&quot;&gt;origineAttente&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;color: #cccccc&quot;&gt;Acteur (personne physique ou personne morale) qui a un lien avec l'usager ou l'usager elle-même qui définit son attente.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-tddui-discriminator.html#tddui-discriminator-commentaireAttente&quot;&gt;commentaireAttente&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;color: #cccccc&quot;&gt;Permet de compléter ou éclairer la description de l'attente.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+  &lt;/<a href="http://hl7.org/fhir/R4/domainresource.html#ValueSet.text">text</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>
+       <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-care-plan-supporting-info&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;2.2.0-ballot&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;TDDUICarePlanSupportingInfo&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;TDDUI CarePlan supportingInfo&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">experimental</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2026-02-02T14:44:55+00:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ANS&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ANS&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;url&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;https://esante.gouv.fr&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">description</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;ValueSet définissant les types de notes pour l'élément CarePlan.supportingInfo.&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.jurisdiction">jurisdiction</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;urn:iso:std:iso:3166&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;FR&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;FRANCE&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.jurisdiction">jurisdiction</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.valueSet">valueSet</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-discriminator&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.exclude">exclude</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>
+              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;titreObjectif&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;avisUsagerObjectif&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;strategieMiseEnOeuvreObjectif&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;origineAttente&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;commentaireAttente&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.exclude">exclude</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>&gt;
+&lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet">ValueSet</a>&gt;</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
@@ -257,8 +348,6 @@
 
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
-
-  <script type="text/javascript" src="assets/js/tabs.js"> </script>
 
 <script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
@@ -271,7 +360,7 @@
             <tr>
               <td style="text-align:left">&#xA0;
 
-                <span style="visibility:hidden">&lt;prev</span>
+                <a href="ValueSet-tddui-care-plan-supporting-info-testing.html">&lt;prev</a>
 
               </td>
               <td style="text-align:center">
@@ -279,7 +368,7 @@
               </td>
               <td style="text-align:right">&#xA0;
 
-                <span style="visibility:hidden">next&gt;</span>
+                <a href="ValueSet-tddui-care-plan-supporting-info.json.html">next&gt;</a>
 
               </td>
             </tr>
@@ -289,7 +378,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.2.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Feb 2, 2026 09:49+0000">2026-02-02</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.2.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Feb 2, 2026 14:44+0000">2026-02-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |

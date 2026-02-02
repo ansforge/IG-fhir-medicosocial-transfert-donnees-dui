@@ -106,7 +106,7 @@ These define sets of codes used by systems conforming to this implementation gui
 
 | | |
 | :--- | :--- |
-| [TDDUI CarePlan supportingInfo](ValueSet-tddui-care-plan-supportingInfo.md) | ValueSet définissant les types de notes pour l'élément CarePlan.supportingInfo. |
+| [TDDUI CarePlan supportingInfo](ValueSet-tddui-care-plan-supporting-info.md) | ValueSet définissant les types de notes pour l'élément CarePlan.supportingInfo. |
 | [TDDUI Discriminator](ValueSet-tddui-discriminator.md) | ValueSet définissant les codes discriminants. |
 | [TDDUI Encounter Identifier](ValueSet-tddui-encounter-identifier.md) | ValueSet for TDDUI Encounter's identifier types |
 | [TDDUI Encounter Participant](ValueSet-tddui-encounter-participant.md) | ValueSet for TDDUI Encounter's participants |

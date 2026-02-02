@@ -16,7 +16,7 @@ ValueSet définissant les codes discriminants.
 
  **References** 
 
-* Inclus dans [TDDUICarePlanSupportingInfo](ValueSet-tddui-care-plan-supportingInfo.md)
+* Inclus dans [TDDUICarePlanSupportingInfo](ValueSet-tddui-care-plan-supporting-info.md)
 * Inclus dans [TDDUIGoalAttenteNote](ValueSet-tddui-goal-attente-note.md)
 * Inclus dans [TDDUIGoalObjectifNote](ValueSet-tddui-goal-objectif-note.md)
 * [TDDUI Discriminator Extension](StructureDefinition-tddui-discriminator.md)
@@ -59,7 +59,7 @@ ValueSet définissant les codes discriminants.
   "title" : "TDDUI Discriminator",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-02T09:49:54+00:00",
+  "date" : "2026-02-02T14:44:55+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
