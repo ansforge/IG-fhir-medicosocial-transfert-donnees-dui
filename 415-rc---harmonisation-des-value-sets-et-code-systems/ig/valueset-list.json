@@ -1,72 +1,6 @@
 {
   "codeSystems" : [
     {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-action",
-      "version" : "2.2.0-ballot",
-      "status" : "active",
-      "name" : "InputTDDUITaskAction",
-      "title" : "InputTDDUITaskAction",
-      "description" : "ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les actions du projet personnalisé.",
-      "systems" : [
-        "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action"
-      ]
-    },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-bilan",
-      "version" : "2.2.0-ballot",
-      "status" : "active",
-      "name" : "InputTDDUITaskBilan",
-      "title" : "InputTDDUITaskBilan",
-      "description" : "ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour le bilan du projet personnalisé.",
-      "systems" : [
-        "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-bilan"
-      ]
-    },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-moyen-ressource",
-      "version" : "2.2.0-ballot",
-      "status" : "active",
-      "name" : "InputTDDUITaskMoyenRessource",
-      "title" : "InputTDDUITaskMoyenRessource",
-      "description" : "ValueSet  pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les moyens et ressources du projet personnalisé.",
-      "systems" : [
-        "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-moyen-ressource"
-      ]
-    },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-prestation",
-      "version" : "2.2.0-ballot",
-      "status" : "active",
-      "name" : "InputTDDUITaskPrestation",
-      "title" : "InputTDDUITaskPrestation",
-      "description" : "ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les prestations du projet personnalisé.",
-      "systems" : [
-        "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-prestation"
-      ]
-    },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport",
-      "version" : "2.2.0-ballot",
-      "status" : "active",
-      "name" : "InputTDDUITaskTransport",
-      "title" : "InputTaskTransport",
-      "description" : "ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les transports dans le cadre du DUI.",
-      "systems" : [
-        "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport"
-      ]
-    },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/output-tddui-task-bilan",
-      "version" : "2.2.0-ballot",
-      "status" : "active",
-      "name" : "OutputTDDUITaskBilan",
-      "title" : "OutputTDDUITaskBilan",
-      "description" : "ValueSet pour la définition des éléments spécifiques des output dans la ressource Task utilisée pour le bilan du projet personnalisé.",
-      "systems" : [
-        "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/output-tddui-task-bilan"
-      ]
-    },
-    {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-care-plan-supportingInfo",
       "version" : "2.2.0-ballot",
       "status" : "active",
@@ -93,7 +27,7 @@
       "version" : "2.2.0-ballot",
       "status" : "active",
       "name" : "TDDUIEncounterIdentifier",
-      "title" : "TDDUI Encounter Identifier Type",
+      "title" : "TDDUI Encounter Identifier",
       "description" : "ValueSet for TDDUI Encounter's identifier types",
       "systems" : [
         "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier",
@@ -171,6 +105,72 @@
       "title" : "TDDUI SERAFIN",
       "description" : "ValueSet contenant les codes SERAFIN (prestations directes et indirectes) pour le profil TDDUI Encounter Evenement.",
       "systems" : ["https://smt.esante.gouv.fr/terminologie-SERAFINPH"]
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-task-input-action",
+      "version" : "2.2.0-ballot",
+      "status" : "active",
+      "name" : "TDDUITaskInputAction",
+      "title" : "TDDUI Task Input Action",
+      "description" : "ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les actions du projet personnalisé.",
+      "systems" : [
+        "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action"
+      ]
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-task-input-bilan",
+      "version" : "2.2.0-ballot",
+      "status" : "active",
+      "name" : "TDDUITaskInputBilan",
+      "title" : "TDDUI Task Input Bilan",
+      "description" : "ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour le bilan du projet personnalisé.",
+      "systems" : [
+        "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-bilan"
+      ]
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-task-input-moyen-ressource",
+      "version" : "2.2.0-ballot",
+      "status" : "active",
+      "name" : "TDDUITaskInputMoyenRessource",
+      "title" : "TDDUI Task Input Moyen Ressource",
+      "description" : "ValueSet  pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les moyens et ressources du projet personnalisé.",
+      "systems" : [
+        "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-moyen-ressource"
+      ]
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-task-input-prestation",
+      "version" : "2.2.0-ballot",
+      "status" : "active",
+      "name" : "TDDUITaskInputPrestation",
+      "title" : "TDDUI Task Input Prestation",
+      "description" : "ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les prestations du projet personnalisé.",
+      "systems" : [
+        "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-prestation"
+      ]
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-task-input-transport",
+      "version" : "2.2.0-ballot",
+      "status" : "active",
+      "name" : "TDDUITaskInputTransport",
+      "title" : "TDDUI Task Input Transport",
+      "description" : "ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les transports dans le cadre du DUI.",
+      "systems" : [
+        "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport"
+      ]
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-task-output-bilan",
+      "version" : "2.2.0-ballot",
+      "status" : "active",
+      "name" : "TDDUITaskOutputBilan",
+      "title" : "TDDUI Task Output Bilan",
+      "description" : "ValueSet pour la définition des éléments spécifiques des output dans la ressource Task utilisée pour le bilan du projet personnalisé.",
+      "systems" : [
+        "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-output-bilan"
+      ]
     }
   ]
 }

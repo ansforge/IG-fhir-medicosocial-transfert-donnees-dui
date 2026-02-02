@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action | *Version*:2.2.0-ballot |
-| Active as of 2026-01-28 | *Computable Name*:TDDUITaskAction |
+| Active as of 2026-02-02 | *Computable Name*:TDDUITaskAction |
 
  
 Profil de la ressource Task permettant de représenter les actions réalisées dans le cadre du projet personnalisé. 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-action.cs
   "name" : "TDDUITaskAction",
   "title" : "TDDUI Task Action",
   "status" : "active",
-  "date" : "2026-01-28T15:51:30+00:00",
+  "date" : "2026-02-02T09:49:54+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -288,7 +288,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-action.cs
         "path" : "Task.input.type",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-action|2.2.0-ballot"
+          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-task-input-action|2.2.0-ballot"
         }
       },
       {
@@ -311,7 +311,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-action.cs
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action",
+              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action",
               "code" : "titre"
             }
           ]
@@ -346,7 +346,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-action.cs
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action",
+              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action",
               "code" : "evaluation"
             }
           ]
@@ -384,7 +384,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-action.cs
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action",
+              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action",
               "code" : "avisUsager"
             }
           ]
@@ -419,7 +419,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-action.cs
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action",
+              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action",
               "code" : "resultatAttendu"
             }
           ]
@@ -454,7 +454,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-action.cs
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action",
+              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action",
               "code" : "pieceJointe"
             }
           ]
@@ -492,7 +492,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-action.cs
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action",
+              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action",
               "code" : "objectif"
             }
           ]

@@ -62,7 +62,7 @@ Profil: [TDDUI Task Action](StructureDefinition-tddui-task-action.md)
       "type" : {
         "coding" : [
           {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action",
+            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action",
             "code" : "titre"
           }
         ]

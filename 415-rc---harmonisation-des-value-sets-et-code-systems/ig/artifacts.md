@@ -106,21 +106,21 @@ These define sets of codes used by systems conforming to this implementation gui
 
 | | |
 | :--- | :--- |
-| [InputTDDUITaskAction](ValueSet-input-tddui-task-action.md) | ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les actions du projet personnalisé. |
-| [InputTDDUITaskBilan](ValueSet-input-tddui-task-bilan.md) | ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour le bilan du projet personnalisé. |
-| [InputTDDUITaskMoyenRessource](ValueSet-input-tddui-task-moyen-ressource.md) | ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les moyens et ressources du projet personnalisé. |
-| [InputTDDUITaskPrestation](ValueSet-input-tddui-task-prestation.md) | ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les prestations du projet personnalisé. |
-| [InputTaskTransport](ValueSet-input-tddui-task-transport.md) | ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les transports dans le cadre du DUI. |
-| [OutputTDDUITaskBilan](ValueSet-output-tddui-task-bilan.md) | ValueSet pour la définition des éléments spécifiques des output dans la ressource Task utilisée pour le bilan du projet personnalisé. |
 | [TDDUI CarePlan supportingInfo](ValueSet-tddui-care-plan-supportingInfo.md) | ValueSet définissant les types de notes pour l'élément CarePlan.supportingInfo. |
 | [TDDUI Discriminator](ValueSet-tddui-discriminator.md) | ValueSet définissant les codes discriminants. |
-| [TDDUI Encounter Identifier Type](ValueSet-tddui-encounter-identifier.md) | ValueSet for TDDUI Encounter's identifier types |
+| [TDDUI Encounter Identifier](ValueSet-tddui-encounter-identifier.md) | ValueSet for TDDUI Encounter's identifier types |
 | [TDDUI Encounter Participant](ValueSet-tddui-encounter-participant.md) | ValueSet for TDDUI Encounter's participants |
 | [TDDUI Encounter Type](ValueSet-tddui-encounter-type.md) | ValueSet for TDDUI Encounter's types |
 | [TDDUI Goal Attente Note](ValueSet-tddui-goal-attente-note.md) | ValueSet définissant les types de notes pour l'élément Goal.note. |
 | [TDDUI Goal Objectif Note](ValueSet-tddui-goal-objectif-note.md) | ValueSet définissant les types de notes pour l'élément Goal.note. |
 | [TDDUI Patient Identifier](ValueSet-tddui-patient-identifier.md) | ValueSet for TDDUI Patient's identifier types |
 | [TDDUI SERAFIN](ValueSet-tddui-serafin.md) | ValueSet contenant les codes SERAFIN (prestations directes et indirectes) pour le profil TDDUI Encounter Evenement. |
+| [TDDUI Task Input Action](ValueSet-tddui-task-input-action.md) | ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les actions du projet personnalisé. |
+| [TDDUI Task Input Bilan](ValueSet-tddui-task-input-bilan.md) | ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour le bilan du projet personnalisé. |
+| [TDDUI Task Input Moyen Ressource](ValueSet-tddui-task-input-moyen-ressource.md) | ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les moyens et ressources du projet personnalisé. |
+| [TDDUI Task Input Prestation](ValueSet-tddui-task-input-prestation.md) | ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les prestations du projet personnalisé. |
+| [TDDUI Task Input Transport](ValueSet-tddui-task-input-transport.md) | ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les transports dans le cadre du DUI. |
+| [TDDUI Task Output Bilan](ValueSet-tddui-task-output-bilan.md) | ValueSet pour la définition des éléments spécifiques des output dans la ressource Task utilisée pour le bilan du projet personnalisé. |
 
 ### Terminology: Code Systems 
 
@@ -128,16 +128,16 @@ These define new code systems used by systems conforming to this implementation 
 
 | | |
 | :--- | :--- |
-| [InputTDDUITaskAction](CodeSystem-input-tddui-task-action.md) | CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les actions du projet personnalisé. |
-| [InputTDDUITaskBilan](CodeSystem-input-tddui-task-bilan.md) | CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour le bilan du projet personnalisé. |
-| [InputTDDUITaskMoyenRessource](CodeSystem-input-tddui-task-moyen-ressource.md) | CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les moyens et ressources du projet personnalisé. |
-| [InputTDDUITaskPrestation](CodeSystem-input-tddui-task-prestation.md) | CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les prestations du projet personnalisé. |
-| [InputTaskTransport](CodeSystem-input-tddui-task-transport.md) | CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les transports dans le cadre du DUI. |
-| [OutputTDDUITaskBilan](CodeSystem-output-tddui-task-bilan.md) | CodeSystem pour la définition des éléments spécifiques des output dans la ressource Task utilisée pour le bilan du projet personnalisé. |
 | [TDDUI Discriminator](CodeSystem-tddui-discriminator.md) | CodeSystem définissant les codes discriminants. |
-| [TDDUI Encounter Participant Type](CodeSystem-tddui-encounter-participant.md) | CodeSystem définissant les types de participants dans le profil TDDUIEncounterEvenement. |
-| [TDDUI Encounter's Identifier](CodeSystem-tddui-encounter-identifier.md) | TDDUI Encounter's identifier |
-| [TDDUI Patient's Identifier](CodeSystem-tddui-identifier.md) | TDDUI Patient's identifier |
+| [TDDUI Encounter Identifier](CodeSystem-tddui-encounter-identifier.md) | TDDUI Encounter identifier |
+| [TDDUI Encounter Participant](CodeSystem-tddui-encounter-participant.md) | CodeSystem définissant les types de participants dans le profil TDDUIEncounterEvenement. |
+| [TDDUI Patient Identifier](CodeSystem-tddui-identifier.md) | TDDUI Patient identifier |
+| [TDDUI Task Input Action](CodeSystem-tddui-task-input-action.md) | CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les actions du projet personnalisé. |
+| [TDDUI Task Input Bilan](CodeSystem-tddui-task-input-bilan.md) | CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour le bilan du projet personnalisé. |
+| [TDDUI Task Input Moyen Ressource](CodeSystem-tddui-task-input-moyen-ressource.md) | CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les moyens et ressources du projet personnalisé. |
+| [TDDUI Task Input Prestation](CodeSystem-tddui-task-input-prestation.md) | CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les prestations du projet personnalisé. |
+| [TDDUI Task Input Transport](CodeSystem-tddui-task-input-transport.md) | CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les transports dans le cadre du DUI. |
+| [TDDUI Task Output Bilan](CodeSystem-tddui-task-output-bilan.md) | CodeSystem pour la définition des éléments spécifiques des output dans la ressource Task utilisée pour le bilan du projet personnalisé. |
 
 ### Example: Example Instances 
 

@@ -82,7 +82,7 @@ Profil: [TDDUI Task Transport Professionnel](StructureDefinition-tddui-task-tran
       "type" : {
         "coding" : [
           {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport",
+            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
             "code" : "typeMotorisation"
           }
         ]
@@ -101,7 +101,7 @@ Profil: [TDDUI Task Transport Professionnel](StructureDefinition-tddui-task-tran
       "type" : {
         "coding" : [
           {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport",
+            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
             "code" : "budgetPrevisionnel"
           }
         ]
@@ -115,7 +115,7 @@ Profil: [TDDUI Task Transport Professionnel](StructureDefinition-tddui-task-tran
       "type" : {
         "coding" : [
           {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport",
+            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
             "code" : "budgetReel"
           }
         ]
@@ -129,7 +129,7 @@ Profil: [TDDUI Task Transport Professionnel](StructureDefinition-tddui-task-tran
       "type" : {
         "coding" : [
           {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport",
+            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
             "code" : "distance"
           }
         ]
@@ -145,7 +145,7 @@ Profil: [TDDUI Task Transport Professionnel](StructureDefinition-tddui-task-tran
       "type" : {
         "coding" : [
           {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport",
+            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
             "code" : "dureeTheorique"
           }
         ]

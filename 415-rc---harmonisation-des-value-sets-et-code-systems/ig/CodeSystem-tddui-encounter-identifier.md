@@ -1,18 +1,18 @@
-# TDDUI Encounter's Identifier - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Encounter Identifier - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **TDDUI Encounter's Identifier**
+* **TDDUI Encounter Identifier**
 
-## CodeSystem: TDDUI Encounter's Identifier 
+## CodeSystem: TDDUI Encounter Identifier 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier | *Version*:2.2.0-ballot |
-| Active as of 2026-01-28 | *Computable Name*:TDDUIEncounterIdentifier |
+| Active as of 2026-02-02 | *Computable Name*:TDDUIEncounterIdentifier |
 
  
-TDDUI Encounter's identifier 
+TDDUI Encounter identifier 
 
  Cette terminologie de référence (CodeSystem) est référencé dans la définition de contenu des jeux de valeurs (ValueSet) suivants : 
 
@@ -34,10 +34,10 @@ TDDUI Encounter's identifier
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier",
   "version" : "2.2.0-ballot",
   "name" : "TDDUIEncounterIdentifier",
-  "title" : "TDDUI Encounter's Identifier",
+  "title" : "TDDUI Encounter Identifier",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-28T15:51:30+00:00",
+  "date" : "2026-02-02T09:49:54+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -50,7 +50,7 @@ TDDUI Encounter's identifier
       ]
     }
   ],
-  "description" : "TDDUI Encounter's identifier",
+  "description" : "TDDUI Encounter identifier",
   "jurisdiction" : [
     {
       "coding" : [

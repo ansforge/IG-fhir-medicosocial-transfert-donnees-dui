@@ -1,15 +1,15 @@
-# TDDUI Encounter Participant Type - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Encounter Participant - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **TDDUI Encounter Participant Type**
+* **TDDUI Encounter Participant**
 
-## CodeSystem: TDDUI Encounter Participant Type 
+## CodeSystem: TDDUI Encounter Participant 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-participant | *Version*:2.2.0-ballot |
-| Active as of 2026-01-28 | *Computable Name*:TDDUIEncounterParticipant |
+| Active as of 2026-02-02 | *Computable Name*:TDDUIEncounterParticipant |
 
  
 CodeSystem définissant les types de participants dans le profil TDDUIEncounterEvenement. 
@@ -34,10 +34,10 @@ CodeSystem définissant les types de participants dans le profil TDDUIEncounterE
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-participant",
   "version" : "2.2.0-ballot",
   "name" : "TDDUIEncounterParticipant",
-  "title" : "TDDUI Encounter Participant Type",
+  "title" : "TDDUI Encounter Participant",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-28T15:51:30+00:00",
+  "date" : "2026-02-02T09:49:54+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

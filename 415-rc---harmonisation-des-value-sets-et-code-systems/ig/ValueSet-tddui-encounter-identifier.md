@@ -1,15 +1,15 @@
-# TDDUI Encounter Identifier Type - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Encounter Identifier - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **TDDUI Encounter Identifier Type**
+* **TDDUI Encounter Identifier**
 
-## ValueSet: TDDUI Encounter Identifier Type 
+## ValueSet: TDDUI Encounter Identifier 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-identifier | *Version*:2.2.0-ballot |
-| Active as of 2026-01-28 | *Computable Name*:TDDUIEncounterIdentifier |
+| Active as of 2026-02-02 | *Computable Name*:TDDUIEncounterIdentifier |
 
  
 ValueSet for TDDUI Encounter's identifier types 
@@ -53,10 +53,10 @@ ValueSet for TDDUI Encounter's identifier types
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-identifier",
   "version" : "2.2.0-ballot",
   "name" : "TDDUIEncounterIdentifier",
-  "title" : "TDDUI Encounter Identifier Type",
+  "title" : "TDDUI Encounter Identifier",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-28T15:51:30+00:00",
+  "date" : "2026-02-02T09:49:54+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

@@ -64,7 +64,7 @@ Profil: [TDDUI Task MoyenRessource](StructureDefinition-tddui-task-moyen-ressour
       "type" : {
         "coding" : [
           {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-moyen-ressource",
+            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-moyen-ressource",
             "code" : "titre"
           }
         ]
