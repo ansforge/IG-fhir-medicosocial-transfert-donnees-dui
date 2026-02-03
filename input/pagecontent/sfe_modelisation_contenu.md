@@ -484,14 +484,43 @@ Assurance maladie complémentaire de l’usager.
 
 ##### Classe DemandeOrientation
 
+La demande de compensation est adressée à la CDAPH. Elle contient l'ensemble des prestations demandées par l'usager. Dans le cadre du volet TDDUI cette demande de compensation correspond plus spécifiquement à une demande d'orientation soit vers un ESSMS ou un maintien en ESSMS au titre de l'amendement Creton.
 
 
 
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>idDemandeOrientation : [1..1] Identifiant </td>
+    <td>identifiant de la demande de compensation de l'usager créé par la MDPH à l'origine de la création du dossier de demande. Cet identifiant est obtenu par la concaténation de l'identifiant local attribué par la MDPH ayant créé le dossier de demande (idDemandeOrientationMDPHInitial) et du numéro cette MDPH (idMDPHInitial) : idDemandeOrientationMDPHInitial/idMDPHInitial<br></td>
+  </tr>
+  <tr>
+    <td>typeDemande : [0..1] Code </td>
+    <td>Type de la demande d'orientation.<br>
+    Jeu(x) de valeur(s) associé(s) : encours analyse NOS</td>
+  </tr>
+  <tr>
+    <td>natureDemande : [0..1] Code </td>
+    <td>Nature de la demande d'orientation. A renseigner si le type est valorisé.<br>
+    Jeu(x) de valeur(s) associé(s) : encours analyse NOS</td>
+  </tr>
+  <tr>
+    <td>demandeOrientation : [0..*] ObjetBinaire </td>
+    <td>Pièce jointe composant la demande d'orientation.</td>
+  </tr>
+  <tr>
+    <td>depotPoste : [0..1] ObjetBinaire </td>
+    <td>Preuve du dépôt de la poste.</td>
+  </tr>
+  </table>
 
 
 ##### Classe Decision
 
-La décision est une réponse à une demande de l'individu ou de son représentant légal. Elle est prise par la CDAPH.
+La décision est une réponse à une demande de compensation l'usager ou de son représentant légal. Elle est prise par la CDAPH.
 
 <table style="width:100%">
   <tr>

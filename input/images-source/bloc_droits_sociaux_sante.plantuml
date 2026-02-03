@@ -33,7 +33,11 @@ class AssuranceMaladieObligatoire #LightYellow {
 }
 
 class DemandeOrientation #LightYellow {
-
+    idDemandeOrientation : Identifiant [1..1]
+    typeDemande : Code [0..1] 
+    natureDemande : Code [0..1] 
+    demandeOrientation : ObjetBinaire [0..*]
+    
 }
 
 class Decision #LightYellow {
