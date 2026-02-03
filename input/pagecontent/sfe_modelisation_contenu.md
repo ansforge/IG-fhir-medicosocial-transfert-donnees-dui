@@ -1780,14 +1780,6 @@ La classe EntiteGeographique est issue du MOS et est profilée pour ce volet.
     Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j386-type-enseignement-specialise-ms/$expand">JDV-J386-TYPE-ENSEIGNEMENT-SPECIALISE-MS</a></td>
  </tr>
  <tr>
-    <td>contactReferentScolaire : [0..*] <a href="#classe-telecommunication">Telecommunication</a></td>
-    <td>Télécommunication du référent scolaire.</td>
- </tr>
- <tr>
-    <td>ecole : [0..1] <a href="#classe-entité-géographique">EntiteGeographique</a></td>
-    <td>Structure dans laquelle la période scolaire se déroule.</td>
- </tr>
- <tr>
     <td>diplome : [0..*] ConceptCode</td>
     <td>Diplôme obtenu au cours de la période scolaire.<br>
     Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J81-TypeDiplome-RASS/FHIR/JDV-J81-TypeDiplome-RASS">JDV-J81-TypeDiplome-RASS</a></td>
@@ -2145,10 +2137,6 @@ Pour ce volet l'Entité Géographique est une personne morale.
   <tr>
     <td>idNat_Struct : [1..1] Identifiant</td>
     <td>Identification nationale de l'Entité géographique. Cette identification est obtenue par la concaténation du type d'identifiant national de structure (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G07-TypeIdentifiantStructure/FHIR/TRE-G07-TypeIdentifiantStructure">TRE_G07-TypeIdentifiantStructure</a>) et de l'identifiant de la structure: ** 3 + N° SIRET (pour les établissements qui ne sont pas de santé).</td>
-  </tr>
-   <tr>
-    <td>numeroEducationNationale : [0..1] Texte</td>
-    <td>Le "numéro éducation nationale de l'établissement" est un numéro associé délivré par l’Éducation nationale, pour tous les établissements et services pour enfants et adolescents handicapés qui emploient du personnel de l’Education nationale.</td>
   </tr>
  <tr>
     <td>denominationEG : [0..1] Texte</td>
