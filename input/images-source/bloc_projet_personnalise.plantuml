@@ -31,16 +31,16 @@ class ProjetPersonnalise #LightGray {
     entrantProjetPersonnalise : ObjetBinaire [0..*]
     }
 
-Usager "1" -- "0..*" ProjetPersonnalise
-ProjetPersonnalise "1" - "0..*" Bilan
-Bilan "1" - "0..*" SynthesePreparationBilan
+Usager "1" -- "*" ProjetPersonnalise
+ProjetPersonnalise "1" - "*" Bilan
+Bilan "1" - "*" SynthesePreparationBilan
 
-Attente "0..*" - "1" ProjetPersonnalise
-ProjetPersonnalise "1" - "0..*" Besoin
-ProjetPersonnalise "1" -- "0..*" Objectif
-ProjetPersonnalise "1" - "0..*" Action
-ProjetPersonnalise "1" -- "0..*" MoyenRessource
-ProjetPersonnalise "1" - "0..*" PrestationProjetPersonnalise
+Attente "*" - "1" ProjetPersonnalise
+ProjetPersonnalise "1" - "*" Besoin
+ProjetPersonnalise "1" -- "*" Objectif
+ProjetPersonnalise "1" - "*" Action
+ProjetPersonnalise "1" -- "*" MoyenRessource
+ProjetPersonnalise "1" - "*" PrestationProjetPersonnalise
 
 
 Statut "1" -- "1" ProjetPersonnalise
@@ -49,16 +49,16 @@ Action "1" -- "1" Statut
 PrestationProjetPersonnalise "1" -- "1" Statut
 
 
-Objectif "0..*" - "0..*" Besoin
-Objectif "0..*" -- "0..*" Action
-Action "0..1" - "0..*" MoyenRessource
-Action "0..1" -- "0..*" PrestationProjetPersonnalise
+Objectif "*" - "*" Besoin
+Objectif "*" -- "*" Action
+Action "0..1" - "*" MoyenRessource
+Action "0..1" -- "*" PrestationProjetPersonnalise
 
-Objectif "1" - "0..*" Evaluation
-Action "1" - "0..*" Evaluation
+Objectif "1" - "*" Evaluation
+Action "1" - "*" Evaluation
 MoyenRessource "1" - "0..1" Evaluation
 PrestationProjetPersonnalise "1" - "0..1" Evaluation
-Evaluation "1" - "0..*" DetailEvaluationN1
-DetailEvaluationN1 "1" - "0..*" DetailEvaluationN2
+Evaluation "1" - "*" DetailEvaluationN1
+DetailEvaluationN1 "1" - "*" DetailEvaluationN2
 
 @enduml

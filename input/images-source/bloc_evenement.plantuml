@@ -70,19 +70,19 @@ Transport <|-- TransportProfessionnel
 EntiteJuridique <|-- StructureEnCharge
 EntiteJuridique <|- StructureRattachement
 
-Evenement "0..*" -- "1" Usager
-Participant "0..*" -- "1..*" Evenement
-Professionnel "0..1" -- "0..*" Participant
+Evenement "*" -- "1" Usager
+Participant "*" -- "1..*" Evenement
+Professionnel "0..1" -- "*" Participant
 
 
-TransportUsager "0..*" -- "1" Evenement
+TransportUsager "*" -- "1" Evenement
 
 TransportProfessionnel "0..1" -- "1" Professionnel
 
 Evenement "0..1" -- "0..1" Evaluation
-Evenement "1" -- "0..*" Statut
+Evenement "1" -- "*" Statut
 
-StructureEnCharge "0..1" -- "0..*" Participant
+StructureEnCharge "0..1" -- "*" Participant
 StructureRattachement "0..1" -- "0..1" Participant
 
 @enduml
