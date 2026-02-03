@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient-ins.cs
   "name" : "TDDUIPatientINS",
   "title" : "TDDUI Patient INS",
   "status" : "active",
-  "date" : "2026-02-03T08:21:15+00:00",
+  "date" : "2026-02-03T10:50:43+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

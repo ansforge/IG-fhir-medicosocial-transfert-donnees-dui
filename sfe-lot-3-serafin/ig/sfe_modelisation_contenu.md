@@ -352,9 +352,22 @@ Assurance maladie complémentaire de l’usager.
 
 ##### Classe DemandeOrientation
 
+La demande de compensation est adressée à la CDAPH. Elle contient l'ensemble des prestations demandées par l'usager. Dans le cadre du volet TDDUI cette demande de compensation correspond plus spécifiquement à une demande d'orientation soit vers un ESSMS ou un maintien en ESSMS au titre de l'amendement Creton.
+
+* Nom: idDemandeOrientation : [1..1] Identifiant
+  * Description: identifiant de la demande de compensation de l'usager créé par la MDPH à l'origine de la création du dossier de demande. Cet identifiant est obtenu par la concaténation de l'identifiant local attribué par la MDPH ayant créé le dossier de demande (idDemandeOrientationMDPHInitial) et du numéro cette MDPH (idMDPHInitial) : idDemandeOrientationMDPHInitial/idMDPHInitial
+* Nom: typeDemande : [0..1] Code
+  * Description: Type de la demande d'orientation.Jeu(x) de valeur(s) associé(s) : encours analyse NOS
+* Nom: natureDemande : [0..1] Code
+  * Description: Nature de la demande d'orientation. A renseigner si le type est valorisé.Jeu(x) de valeur(s) associé(s) : encours analyse NOS
+* Nom: demandeOrientation : [0..*] ObjetBinaire
+  * Description: Pièce jointe composant la demande d'orientation.
+* Nom: depotPoste : [0..1] ObjetBinaire
+  * Description: Preuve du dépôt de la poste.
+
 ##### Classe Decision
 
-La décision est une réponse à une demande de l'individu ou de son représentant légal. Elle est prise par la CDAPH.
+La décision est une réponse à une demande de compensation l'usager ou de son représentant légal. Elle est prise par la CDAPH.
 
 * Nom: idDecision : [1..1] Identifiant
   * Description: Numéro de la décision prise par la MDPH.
