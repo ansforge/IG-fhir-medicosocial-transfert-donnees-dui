@@ -10,6 +10,142 @@
 
 ### Données administratives
 
+Identification et coordonnées
+
+Autorisations
+administratives
+
+Droits sociaux et de santé
+
+Séjours
+
+Environnement
+et ressources
+
+Courrier
+
+Adresse
+
+Télécommunication
+
+Autorisation
+administrative
+
+Assurance maladie
+complémentaire
+
+Assurance maladie obligatoire
+
+Décision
+
+Droit
+prestation
+
+Détail
+prestation
+
+Prise charge
+
+Quantification
+
+Séjour
+
+Solde
+
+Réservation
+
+Inventaire
+
+Contrat
+
+Contact personne
+morale
+
+Contact personne
+physique
+
+Permis conduire
+
+Transport
+
+Compte bancaire
+
+Ressource
+
+Mesure protection
+
+Usager
+
+*
+1
+
+*
+
+*
+
+*
+1
+
+1
+*
+
+1
+0..1
+
+1
+*
+
+1
+0..1
+
+1
+0..1
+
+*
+1
+
+0..1
+1
+
+1
+*
+
+*
+1
+
+0..1
+1
+
+*
+1
+
+*
+1
+
+*
+1
+
+*
+1
+
+1
+*
+
+*
+ 
+
+*
+
+*
+
+1
+*
+
+*
+
+*
+</g></svg> </div –>
+
 #### Identification et coordonnées
 
 ##### Classe Usager
@@ -213,6 +349,8 @@ Assurance maladie complémentaire de l’usager.
   * Description: Alerte « aide à la complémentaire santé ».0 = non ; 1 = oui.
 * Nom: typeFinDroit : [0..1] Code
   * Description: Raison de la fin des droits à l’assurance maladie complémentaire.Nomenclature(s) associée(s) : à définir
+
+##### Classe DemandeOrientation
 
 ##### Classe Decision
 
