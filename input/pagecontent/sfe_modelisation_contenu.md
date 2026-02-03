@@ -9,9 +9,9 @@
 ### Données administratives
 
 <!-- object data="donnees_admin.svg" style="width:100%" type="image/svg+xml"></object -->
-<div class="figure" style="width:100%; display: flex; align-items: center; justify-content: center;">
+<!-- div class="figure" style="width:100%; display: flex; align-items: center; justify-content: center;">
   {%include donnees_admin.svg%}
-</div>
+</div -->
 
 #### Identification et coordonnées
 
@@ -481,6 +481,13 @@ Assurance maladie complémentaire de l’usager.
     </td>
   </tr>
 </table>
+
+##### Classe DemandeOrientation
+
+
+
+
+
 
 ##### Classe Decision
 

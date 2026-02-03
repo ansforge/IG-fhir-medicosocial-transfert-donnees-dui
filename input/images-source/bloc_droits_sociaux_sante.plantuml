@@ -32,6 +32,10 @@ class AssuranceMaladieObligatoire #LightYellow {
     droitPUMa : Indicateur [0..1]
 }
 
+class DemandeOrientation #LightYellow {
+
+}
+
 class Decision #LightYellow {
     idDecision : Identifiant [1..1]
     numeroEnregistrement : Identifiant [0..1]
@@ -79,6 +83,8 @@ class Quantification #LightYellow {
 Usager "1" -- "*"  AssuranceMaladieComplementaire
 Usager "1" - "1" AssuranceMaladieObligatoire
 Decision "*" -- "1" Usager
+DemandeOrientation "*" - "1" Usager
+Decision "*" -- "0..1" DemandeOrientation
 DroitPrestation  "0..1" - "1" Decision
 DroitPrestation "1" -- "0..1" DetailPrestation
 DetailPrestation "1" -- "*" PriseCharge
