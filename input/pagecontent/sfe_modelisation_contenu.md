@@ -46,8 +46,8 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
   </tr>
    <tr>
     <td>numeroIndividuInitial : [0..1] Identifiant</td>
-    <td>Numéro de l’individu attribué par la MDPH ayant créé le dossier Individu (= MDPH initiale).<br>
-    Cet identifiant est obtenu par la concaténation du numéro de l'individu local attribué par la MDPH ayant créé le dossier Individu (identifiantIndividuMDPHInitial) et du numéro de la MDPH (identifiantMDPH) : identifiantIndividuMDPHInitial/identifiantMDPH<br>
+    <td>Numéro de l’individu attribué par la MDPH (= MDPH initiale) ayant créé le dossier Individu.<br>
+    Cet identifiant est obtenu par la concaténation du numéro de l'individu local attribué par la MDPH ayant créé le dossier Individu (idIndividuMDPHInitial) et du numéro de cette MDPH (idMDPH) : idIndividuMDPHInitial/idMDPH<br>
     Synonyme = identifiantMDPH</td>
   </tr>
   <tr>
