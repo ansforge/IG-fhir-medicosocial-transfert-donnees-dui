@@ -37,7 +37,11 @@ class DemandeOrientation #LightYellow {
     typeDemande : Code [0..1] 
     natureDemande : Code [0..1] 
     demandeOrientation : ObjetBinaire [0..*]
-    
+    depotPoste : ObjetBinaire [0..1]
+    dateEnvoiDemande : Date [0..1]
+    reponseOrientation : ObjetBinaire [0..1]
+    dateReponseOrientation : Date [0..1]
+    pieceComplementaire : ObjetBinaire [0..*]
 }
 
 class Decision #LightYellow {
@@ -86,10 +90,11 @@ class Quantification #LightYellow {
 
 Usager "1" -- "*"  AssuranceMaladieComplementaire
 Usager "1" - "1" AssuranceMaladieObligatoire
-Decision "*" -- "1" Usager
+Decision "*" - "1" Usager
 DemandeOrientation "*" - "1" Usager
 Decision "*" -- "0..1" DemandeOrientation
-DroitPrestation  "0..1" - "1" Decision
+
+Decision "1" - "0..1" DroitPrestation
 DroitPrestation "1" -- "0..1" DetailPrestation
 DetailPrestation "1" -- "*" PriseCharge
 PriseCharge "1" -- "0..1" Quantification

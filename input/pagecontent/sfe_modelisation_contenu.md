@@ -515,6 +515,22 @@ La demande de compensation est adressée à la CDAPH. Elle contient l'ensemble d
     <td>depotPoste : [0..1] ObjetBinaire </td>
     <td>Preuve du dépôt de la poste.</td>
   </tr>
+  <tr>
+    <td>dateEnvoiDemande : [0..1] Date </td>
+    <td>Date d'envoi de la demande d'orientation.</td>
+  </tr>
+  <tr>
+    <td>reponseOrientation : [0..1] ObjetBinaire </td>
+    <td>Réponse de la CDAPH à la demande d'orientation.</td>
+  </tr>
+  <tr>
+    <td>dateReponseOrientation : [0..1] Date </td>
+    <td>Date de réception de la réponse d'orientation.</td>
+  </tr>
+   <tr>
+    <td>pieceComplementaire : [0..*] ObjetBinaire </td>
+    <td>Pièce(s) complémentaire(s) à la demande d'orientation.</td>
+  </tr>
   </table>
 
 
