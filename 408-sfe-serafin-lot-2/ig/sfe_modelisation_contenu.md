@@ -831,10 +831,6 @@ La classe EntiteGeographique est issue du MOS et est profilée pour ce volet.
   * Description: Situation scolaire suivie de l'usager.Jeu(x) de valeur(s) associé(s) : en cours de création NOS
 * Nom: typeEnseignementSpecialise : [0..*] ConceptCode
   * Description: Type enseignement spécialisé.Jeu(x) de valeur(s) associé(s) :[JDV-J386-TYPE-ENSEIGNEMENT-SPECIALISE-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j386-type-enseignement-specialise-ms/$expand)
-* Nom: contactReferentScolaire : [0..*][Telecommunication](#classe-telecommunication)
-  * Description: Télécommunication du référent scolaire.
-* Nom: ecole : [0..1][EntiteGeographique](#classe-entité-géographique)
-  * Description: Structure dans laquelle la période scolaire se déroule.
 * Nom: diplome : [0..*] ConceptCode
   * Description: Diplôme obtenu au cours de la période scolaire.Jeu(x) de valeur(s) associé(s) :[JDV-J81-TypeDiplome-RASS](https://mos.esante.gouv.fr/NOS/JDV_J81-TypeDiplome-RASS/FHIR/JDV-J81-TypeDiplome-RASS)
 * Nom: volumeScolarisation : [0..1] Numerique
@@ -1016,8 +1012,6 @@ Pour ce volet l'Entité Géographique est une personne morale.
 
 * Nom: idNat_Struct : [1..1] Identifiant
   * Description: Identification nationale de l'Entité géographique. Cette identification est obtenue par la concaténation du type d'identifiant national de structure (provenant de la nomenclature[TRE_G07-TypeIdentifiantStructure](https://mos.esante.gouv.fr/NOS/TRE_G07-TypeIdentifiantStructure/FHIR/TRE-G07-TypeIdentifiantStructure)) et de l'identifiant de la structure: ** 3 + N° SIRET (pour les établissements qui ne sont pas de santé).
-* Nom: numeroEducationNationale : [0..1] Texte
-  * Description: Le "numéro éducation nationale de l'établissement" est un numéro associé délivré par l’Éducation nationale, pour tous les établissements et services pour enfants et adolescents handicapés qui emploient du personnel de l’Education nationale.
 * Nom: denominationEG : [0..1] Texte
   * Description: Nom sous lequel l'entité géographique exerce son activité.
 * Nom: adresseEG : [0..1][Adresse](#classe-adresse)
