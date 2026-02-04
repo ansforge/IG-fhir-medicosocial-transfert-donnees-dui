@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-outside-service | *Version*:2.2.0-ballot |
-| Active as of 2026-02-02 | *Computable Name*:TDDUIEventOutsideService |
+| Active as of 2026-02-04 | *Computable Name*:TDDUIEventOutsideService |
 
 Evénement hors prestation prévue dans le projet personnalisé de l’usager.
 
@@ -19,9 +19,9 @@ Evénement hors prestation prévue dans le projet personnalisé de l’usager.
 
 **Utilisations:**
 
-* Utiliser ce Extension: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)
+* Utilise ce/t/te Extension: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-outside-service)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-outside-service)
 
 ### Formal Views of Extension Content
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-outside-servic
   "name" : "TDDUIEventOutsideService",
   "title" : "Evénement hors prestation",
   "status" : "active",
-  "date" : "2026-02-02T09:56:46+00:00",
+  "date" : "2026-02-04T09:47:16+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

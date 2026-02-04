@@ -9,19 +9,19 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact | *Version*:2.2.0-ballot |
-| Active as of 2026-02-02 | *Computable Name*:TDDUIRelatedPersonContact |
+| Active as of 2026-02-04 | *Computable Name*:TDDUIRelatedPersonContact |
 
  
 Profil de la ressource FRCoreRelatedPersonProfile permettant de représenter un contact de l'usager. 
 
 **Utilisations:**
 
-* Utiliser ce Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
-* Référer à ce Profil: [TDDUI Consent Accord](StructureDefinition-tddui-consent-accord.md) and [TDDUI Task Bilan](StructureDefinition-tddui-task-bilan.md)
-* Exemples pour ce Profil: [RelatedPerson/tddui-related-person-contact-example](RelatedPerson-tddui-related-person-contact-example.md)
+* Utilise ce/t/te Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
+* Référence ce Profil: [TDDUI Consent Accord](StructureDefinition-tddui-consent-accord.md) and [TDDUI Task Bilan](StructureDefinition-tddui-task-bilan.md)
+* Exemples pour ce/t/te Profil: [RelatedPerson/tddui-related-person-contact-example](RelatedPerson-tddui-related-person-contact-example.md)
 * CapabilityStatements utilisant ce Profil: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-related-person-contact)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-related-person-contact)
 
 ### Formal Views of Profile Content
 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-related-person
   "name" : "TDDUIRelatedPersonContact",
   "title" : "TDDUI RelatedPerson Contact",
   "status" : "active",
-  "date" : "2026-02-02T09:56:46+00:00",
+  "date" : "2026-02-04T09:47:16+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -213,6 +213,10 @@ Other representations of profile: [CSV](StructureDefinition-tddui-related-person
         "id" : "RelatedPerson.relationship:Role",
         "path" : "RelatedPerson.relationship",
         "sliceName" : "Role",
+        "binding" : {
+          "strength" : "required",
+          "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j384-role-membre-famille-ms"
+        },
         "mapping" : [
           {
             "identity" : "specmetier-to-TDDUIRelatedPersonContact",

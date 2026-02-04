@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact-description | *Version*:2.2.0-ballot |
-| Active as of 2026-02-02 | *Computable Name*:TDDUIRelatedPersonContactDescription |
+| Active as of 2026-02-04 | *Computable Name*:TDDUIRelatedPersonContactDescription |
 
 Description du contact PersonnePhysique.
 
@@ -19,9 +19,9 @@ Description du contact PersonnePhysique.
 
 **Utilisations:**
 
-* Utiliser ce Extension: [TDDUI RelatedPerson Contact](StructureDefinition-tddui-related-person-contact.md)
+* Utilise ce/t/te Extension: [TDDUI RelatedPerson Contact](StructureDefinition-tddui-related-person-contact.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-related-person-contact-description)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-related-person-contact-description)
 
 ### Formal Views of Extension Content
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-related-person
   "name" : "TDDUIRelatedPersonContactDescription",
   "title" : "Description",
   "status" : "active",
-  "date" : "2026-02-02T09:56:46+00:00",
+  "date" : "2026-02-04T09:47:16+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

@@ -9,17 +9,17 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-prestation | *Version*:2.2.0-ballot |
-| Active as of 2026-02-02 | *Computable Name*:TDDUITaskPrestation |
+| Active as of 2026-02-04 | *Computable Name*:TDDUITaskPrestation |
 
  
 Profil de la ressource Task permettant de représenter les prestations du projet personnalisé. 
 
 **Utilisations:**
 
-* Utiliser ce Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
+* Utilise ce/t/te Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
 * CapabilityStatements utilisant ce Profil: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-task-prestation)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-task-prestation)
 
 ### Formal Views of Profile Content
 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-prestatio
   "name" : "TDDUITaskPrestation",
   "title" : "TDDUI Task Prestation",
   "status" : "active",
-  "date" : "2026-02-02T09:56:46+00:00",
+  "date" : "2026-02-04T09:47:16+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

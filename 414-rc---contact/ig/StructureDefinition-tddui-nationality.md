@@ -9,7 +9,7 @@
 | | | |
 | :--- | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-nationality | *Version*:2.2.0-ballot | |
-| Active as of 2026-02-02 | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:TDDUINationalityExtension |
+| Active as of 2026-02-04 | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:TDDUINationalityExtension |
 
 The nationality of the patient or a related person.
 
@@ -19,9 +19,9 @@ The nationality of the patient or a related person.
 
 **Utilisations:**
 
-* Utiliser ce Extension: [TDDUI RelatedPerson Contact](StructureDefinition-tddui-related-person-contact.md)
+* Utilise ce/t/te Extension: [TDDUI RelatedPerson Contact](StructureDefinition-tddui-related-person-contact.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-nationality)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-nationality)
 
 ### Formal Views of Extension Content
 
@@ -58,7 +58,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-nationality.cs
   "name" : "TDDUINationalityExtension",
   "title" : "TDDUI Nationality Extension",
   "status" : "active",
-  "date" : "2026-02-02T09:56:46+00:00",
+  "date" : "2026-02-04T09:47:16+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

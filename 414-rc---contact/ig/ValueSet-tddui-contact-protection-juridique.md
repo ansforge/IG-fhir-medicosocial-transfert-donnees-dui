@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-contact-protection-juridique | *Version*:2.2.0-ballot |
-| Active as of 2026-02-02 | *Computable Name*:TDDUIContactProtectionJuridique |
+| Active as of 2026-02-04 | *Computable Name*:TDDUIContactProtectionJuridique |
 
  
 ValueSet définissant la protection juridique. 
@@ -56,7 +56,7 @@ ValueSet définissant la protection juridique.
   "title" : "TDDUI Protection Juridique",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-02T09:56:46+00:00",
+  "date" : "2026-02-04T09:47:16+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

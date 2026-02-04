@@ -1,7 +1,7 @@
 TDDUI : Validation Results
 =========================================
 
-err = 109, warn = 124, info = 4694
+err = 110, warn = 125, info = 4693
 $--
 Generated $--. FHIR version $-- for ans.fhir.fr.tddui#$-- (canonical = https://interop.esante.gouv.fr/ig/fhir/tddui)
  Build Errors : 3 / 4 / 0
@@ -55,7 +55,7 @@ Generated $--. FHIR version $-- for ans.fhir.fr.tddui#$-- (canonical = https://i
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/QuestionnaireResponse-tddui-questionnaire-response-serafin-precision-example : 0 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/QuestionnaireResponse-tddui-questionnaire-response-serafin-sans-precision-example : 0 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/QuestionnaireResponse-tddui-questionnaire-response-situation-ssiad-example : 0 / 1 / 1
- /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/RelatedPerson-tddui-related-person-contact-example : 0 / 0 / 2
+ /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/RelatedPerson-tddui-related-person-contact-example : 1 / 1 / 2
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/ServiceRequest-tddui-pp-pa-servicerequest-besoin-1-example : 0 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/ServiceRequest-tddui-pp-pa-servicerequest-besoin-2-example : 0 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/ServiceRequest-tddui-pp-pa-servicerequest-besoin-3-example : 0 / 1 / 1
@@ -94,7 +94,7 @@ Generated $--. FHIR version $-- for ans.fhir.fr.tddui#$-- (canonical = https://i
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-profession : 0 / 0 / 13
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-qr-participant : 0 / 1 / 21
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-questionnaire-response : 0 / 0 / 136
- /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-related-person-contact : 0 / 0 / 131
+ /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-related-person-contact : 0 / 0 / 130
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-related-person-contact-description : 0 / 1 / 7
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-ressources-used : 0 / 0 / 28
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-service-request-besoin : 0 / 0 / 82
@@ -527,6 +527,8 @@ WARNING: QuestionnaireResponse/tddui-questionnaire-response-serafin-sans-precisi
 WARNING: QuestionnaireResponse/tddui-questionnaire-response-situation-ssiad-example: QuestionnaireResponse.identifier.system: No definition could be found for URL value 'https://identifiant-medicosocial-evaluation.esante.gouv.fr'
 == fsh-generated/resources/RelatedPerson-tddui-related-person-contact-example.json ==
 INFORMATION: RelatedPerson/tddui-related-person-contact-example: RelatedPerson.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact|2.2.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
+ERROR: RelatedPerson/tddui-related-person-contact-example: RelatedPerson.relationship[0]: Error from https://smt.esante.gouv.fr/fhir: Error: There is no declared filter called ms on code system https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass
+WARNING: RelatedPerson/tddui-related-person-contact-example: RelatedPerson.relationship[0]: Could not confirm that the codings provided are in the value set https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j384-role-membre-famille-ms and a coding from this value set is required (class = SERVER_ERROR)
 == fsh-generated/resources/ServiceRequest-tddui-pp-pa-servicerequest-besoin-1-example.json ==
 WARNING: ServiceRequest/tddui-pp-pa-servicerequest-besoin-1-example: ServiceRequest.identifier[0].system: No definition could be found for URL value 'https://identifiant-medicosocial-besoin.esante.gouv.fr'
 == fsh-generated/resources/ServiceRequest-tddui-pp-pa-servicerequest-besoin-2-example.json ==
@@ -3881,7 +3883,6 @@ INFORMATION: StructureDefinition.snapshot.element[23].constraint[0].source: Pinn
 INFORMATION: StructureDefinition.snapshot.element[24].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[24].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[25].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[25].binding.valueSet: Pinned the version of https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-contact-role to 2.1.0
 INFORMATION: StructureDefinition.snapshot.element[27].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[27].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[28].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1

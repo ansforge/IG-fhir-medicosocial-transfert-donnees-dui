@@ -325,7 +325,7 @@ This material derives from the HL7 Terminology (THO). THO is copyright &copy;198
     <ul>
       <li>
 
-          IG &copy; 2023+ ANS.  Package ans.fhir.fr.tddui#2.2.0-ballot based on FHIR 4.0.1. Generated 2026-02-02 
+          IG &copy; 2023+ ANS.  Package ans.fhir.fr.tddui#2.2.0-ballot based on FHIR 4.0.1. Generated 2026-02-04 
           
            
             Liens : Table des matières |
@@ -339,7 +339,7 @@ Documentation
 )
       </li>
       <li>
-Médicosocial - Transfert de données DUI - version de développement local (v2.2.0-ballot) construite par les outils de publication FHIR (HL7&reg; FHIR&reg; Standard). Voir le répertoire des versions publiées (        <a href="toc.html">src</a>
+Médicosocial - Transfert de données DUI - version de développement local (intégration continue v2.2.0-ballot) construite par les outils de publication FHIR (HL7&reg; FHIR&reg; Standard). Voir le répertoire des versions publiées (        <a href="toc.html">src</a>
 )
       </li>
     </ul>
@@ -365,6 +365,24 @@ Médicosocial - Transfert de données DUI - version de développement local (v2.
         </td>
         <td>
           <a href="https://www.cnsa.fr/">https://www.cnsa.fr/</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-tddui-related-person-contact.html">web</a>
+        </td>
+        <td>
+          <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j384-role-membre-famille-ms">smt.esante.gouv.fr</a>
+        </td>
+        <td>
+          <span style="opacity: 0.5">The nature of the relationship. Rôle de la personne. Ex : personne de confiance, aidant ...</span>
+          <br class="binding"/>
+          <span style="font-weight:bold" title="null" class="binding">Binding: </span>
+          <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j384-role-membre-famille-ms" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j384-role-membre-famille-ms" class="binding">
+Jdv J384 Role Membre Famille Ms <img src="external.png" alt="."/>          </a>
+          <span title="null" class="binding"> (</span>
+          <a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a>
+          <span title="null" class="binding">)</span>
         </td>
       </tr>
       <tr>
@@ -396,7 +414,7 @@ Médicosocial - Transfert de données DUI - version de développement local (v2.
 
           IG &copy; 2023+           <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>
 .  Package ans.fhir.fr.tddui#2.2.0-ballot based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
-. Generated           <span title="Mon, Feb 2, 2026 09:56+0000">2026-02-02</span>
+. Generated           <span title="Wed, Feb 4, 2026 09:47+0000">2026-02-04</span>
 
                     <br/>
 
@@ -428,7 +446,7 @@ Médicosocial - Transfert de données DUI - version de développement local (v2.
 
           IG &copy; 2023+           <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>
 .  Package ans.fhir.fr.tddui#2.2.0-ballot based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
-. Generated           <span title="Mon, Feb 2, 2026 09:56+0000">2026-02-02</span>
+. Generated           <span title="Wed, Feb 4, 2026 09:47+0000">2026-02-04</span>
 
                     <br/>
 
@@ -460,7 +478,7 @@ Médicosocial - Transfert de données DUI - version de développement local (v2.
 
           IG &copy; 2023+           <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>
 .  Package ans.fhir.fr.tddui#2.2.0-ballot based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
-. Generated           <span title="Mon, Feb 2, 2026 09:56+0000">2026-02-02</span>
+. Generated           <span title="Wed, Feb 4, 2026 09:47+0000">2026-02-04</span>
 
                     <br/>
 
@@ -530,6 +548,92 @@ Médicosocial - Transfert de données DUI - version de développement local (v2.
         <td>
 Both Bundle.link and Bundle.entry.link are defined to support providing additional context when Bundles are used (e.g.           <a href="http://en.wikipedia.org/wiki/HATEOAS">HATEOAS</a>
 ).
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-tddui-related-person-contact-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j384-role-membre-famille-ms">smt.esante.gouv.fr</a>
+        </td>
+        <td>
+Les codes DOIVENT (SHALL) être pris de           <span style="color:DarkGray;text-decoration:line-through">Les codes DEVRAIENT (SHOULD) être pris de </span>
+           <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j384-role-membre-famille-ms">
+Jdv J384 Role Membre Famille Ms <img src="external.png" alt="."/>          </a>
+          <span style="color:DarkGray;text-decoration:line-through">http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype|4.0.1</span>
+          <br/>
+(          <a href="http://hl7.org/fhir/R4/terminologies.html#required">required</a>
+ to           <span class="copy-text-inline">
+<code>https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j384-role-membre-famille-ms</code><button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j384-role-membre-famille-ms" title="Cliquer pour copier l'URL" class="btn-copy"></button>          </span>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-tddui-related-person-contact-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j384-role-membre-famille-ms">smt.esante.gouv.fr</a>
+        </td>
+        <td>
+Les codes DOIVENT (SHALL) être pris de            <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j384-role-membre-famille-ms">
+Jdv J384 Role Membre Famille Ms <img src="external.png" alt="."/>          </a>
+          <br/>
+(          <a href="http://hl7.org/fhir/R4/terminologies.html#required">required</a>
+ to           <span class="copy-text-inline">
+<code>https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j384-role-membre-famille-ms</code><button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j384-role-membre-famille-ms" title="Cliquer pour copier l'URL" class="btn-copy"></button>          </span>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-tddui-related-person-contact.html">web</a>
+        </td>
+        <td>
+          <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j384-role-membre-famille-ms">smt.esante.gouv.fr</a>
+        </td>
+        <td>
+The nature of the relationship. Rôle de la personne. Ex : personne de confiance, aidant ...          <br class="binding"/>
+          <span style="font-weight:bold" title="null" class="binding">Binding: </span>
+          <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j384-role-membre-famille-ms" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j384-role-membre-famille-ms" class="binding">
+Jdv J384 Role Membre Famille Ms <img src="external.png" alt="."/>          </a>
+          <span title="null" class="binding"> (</span>
+          <a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a>
+          <span title="null" class="binding">)</span>
+          <br/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-tddui-related-person-contact.html">web</a>
+        </td>
+        <td>
+          <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j384-role-membre-famille-ms">smt.esante.gouv.fr</a>
+        </td>
+        <td>
+
+                <a style="opacity: 1.0" href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j384-role-membre-famille-ms">Jdv J384 Role Membre Famille Ms</a>
+
+                <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j384-role-membre-famille-ms" title="Cliquer pour copier l'URL" class="btn-copy"></button>
+
+                <img src="external.png" alt="."/>
+
+    
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-tddui-related-person-contact.html">web</a>
+        </td>
+        <td>
+          <a href="https://smt.esante.gouv.fr/fhir">smt.esante.gouv.fr</a>
+        </td>
+        <td>
+
+                <a href="https://smt.esante.gouv.fr/fhir">smt.esante.gouv.fr</a>
+
+    
         </td>
       </tr>
       <tr>
