@@ -1,8 +1,9 @@
-Instance: ExampleTDDUIBundle
+Instance: tddui-bundle-example
 InstanceOf: TDDUIBundle
-Title: "TDDUIBundleExample"
+Title: "TDDUI Bundle Example"
 Description: "Exemple de bundle conforme au profil TDDUIBundle"
 Usage: #example
+
 * type = #transaction
 
 * entry[DUIPatientINS].fullUrl = "https://test-server.fr/Patient/tddui-patient-ins-example"

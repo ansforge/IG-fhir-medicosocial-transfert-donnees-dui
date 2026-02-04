@@ -1,7 +1,8 @@
 Instance: tddui-pp-pa-goal-attente-famille-example
 InstanceOf: TDDUIGoalAttente
-Usage: #example
+Title: "TDDUI PP PA Goal Attente Famille Example"
 Description: "Exemple des attentes de la famille dans le cadre du projet personnalisé PA."
+Usage: #example
 
 * identifier.value = "3480787529/123456789-ATTE-1234"
 * identifier.system = "https://identifiant-medicosocial-attente.esante.gouv.fr"

@@ -1,7 +1,8 @@
 Instance: tddui-pp-ime-task-action-1-educ-example
 InstanceOf: TDDUITaskAction
-Usage: #example
+Title: "TDDUI PP IME Task Action 1 Educ Example"
 Description: "Exemple d'une action de l'objectif 1 réalisée par l'éducateur spécialisé dans le cadre du projet personnalisé en IME." 
+Usage: #example
 
 * identifier.value = "3480787529/123456-ACTI-1235"
 * identifier.system = "https://identifiant-medicosocial-action.esante.gouv.fr"

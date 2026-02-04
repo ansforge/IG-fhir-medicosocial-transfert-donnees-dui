@@ -1,7 +1,8 @@
 Instance: tddui-pp-pa-task-moyen-ressource-ide-2-example
 InstanceOf: TDDUITaskMoyenRessource
-Usage: #example
+Title: "TDDUI PP PA Task Moyen Ressource IDE 2 Example"
 Description: "Exemple des moyens et ressources de l'objectif 2 dans le cadre du projet personnalisé PA." 
+Usage: #example
 
 * identifier.value = "3480787529/123456789-MORE-123615"
 * identifier.system = "https://identifiant-medicosocial-moyenressource.esante.gouv.fr"

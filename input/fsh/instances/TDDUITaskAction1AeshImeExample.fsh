@@ -1,7 +1,8 @@
 Instance: tddui-pp-ime-task-action-1-aesh-example
 InstanceOf: TDDUITaskAction
-Usage: #example
+Title: "TDDUI PP IME Task Action 1 AESH Example"
 Description: "Exemple d'une action de l'objectif 1 réalisée par l'AESH dans le cadre du projet personnalisé en IME." 
+Usage: #example
 
 * identifier.value = "3480787529/123456-ACTI-1234"
 * identifier.system = "https://identifiant-medicosocial-action.esante.gouv.fr"

@@ -1,7 +1,8 @@
 Instance: tddui-practitioner-role-example
 InstanceOf: TDDUIPractitionerRole
-Usage: #example
+Title: "TDDUI Practitioner Role Example"
 Description: "Exemple d'un professionnel de santé"
+Usage: #example
 
 * code.coding.code = #330
 * code.coding.system = "https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge"

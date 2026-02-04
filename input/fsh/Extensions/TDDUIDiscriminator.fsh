@@ -1,6 +1,6 @@
 Extension: 		TDDUIDiscriminator
 Id: 			tddui-discriminator
-Title:			"TDDUI Discriminator Extension"
+Title:			"TDDUI Discriminator"
 Description: 	"Extension pour discriminer les éléments CarePlan.supportingInfo et Goal.note."
 Context: CarePlan.supportingInfo, Goal.note
 

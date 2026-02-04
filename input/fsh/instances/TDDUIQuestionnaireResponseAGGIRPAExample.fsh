@@ -1,5 +1,6 @@
 Instance: tddui-questionnaire-response-aggir-pa-example
 InstanceOf: TDDUIQuestionnaireResponse
+Title: "TDDUI Questionnaire Response AGGIR PA Example"
 Description: "Grille de réponse AGGIR PA"
 Usage: #example
 

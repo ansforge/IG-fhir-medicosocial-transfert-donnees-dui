@@ -1,7 +1,8 @@
 Instance: tddui-pp-pa-goal-attente-usager-example
 InstanceOf: TDDUIGoalAttente
-Usage: #example
+Title: "TDDUI PP PA Goal Attente Usager Example"
 Description: "Exemple des attentes de l'usager dans le cadre du projet personnalisé PA."
+Usage: #example
 
 * identifier.value = "3480787529/123456789-ATTE-1235"
 * identifier.system = "https://identifiant-medicosocial-attente.esante.gouv.fr"
