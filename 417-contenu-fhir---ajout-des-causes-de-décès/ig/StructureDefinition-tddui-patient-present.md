@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-present | *Version*:2.2.0-ballot |
-| Active as of 2026-02-02 | *Computable Name*:TDDUIPatientPresent |
+| Active as of 2026-02-04 | *Computable Name*:TDDUIPatientPresent |
 
 Evènement nécessitant ou non la présence physique de l’usager.
 
@@ -19,9 +19,9 @@ Evènement nécessitant ou non la présence physique de l’usager.
 
 **Utilisations:**
 
-* Utiliser ce Extension: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)
+* Utilise ce/t/te Extension: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-patient-present)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-patient-present)
 
 ### Formal Views of Extension Content
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient-presen
   "name" : "TDDUIPatientPresent",
   "title" : "Usager présent",
   "status" : "active",
-  "date" : "2026-02-02T10:31:14+00:00",
+  "date" : "2026-02-04T11:03:32+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui | *Version*:2.2.0-ballot |
-| Active as of 2026-02-02 | *Computable Name*:TDDUI |
+| Active as of 2026-02-04 | *Computable Name*:TDDUI |
 
  **Brief description of this Implementation Guide**
  The Digital User File (DUI) centralizes all information concerning the person being cared for in social and medico-social facilities and services. The aim of this implementation guide is to define the specifications for DUI data transfer. 
@@ -80,6 +80,8 @@ Les ressources profilées dans le cadre de ce guide d'implémentation sont les s
 | [Encounter](http://hl7.org/fhir/StructureDefinition/Encounter|4.0.1) | [TDDUIEncounterSejour](StructureDefinition-tddui-encounter-sejour.md) | Profil de la ressource Encounter permettant de regrouper les informations relatives au séjour d'un usager dans une structure ESSMS |
 | [Goal](http://hl7.org/fhir/StructureDefinition/Goal|4.0.1) | [TDDUIGoalAttente](StructureDefinition-tddui-goal-attente.md) | Profil de la ressource Goal permettant de représenter les attentes pour un usager. |
 | [Goal](http://hl7.org/fhir/StructureDefinition/Goal|4.0.1) | [TDDUIGoalObjectif](StructureDefinition-tddui-goal-objectif.md) | Profil de la ressource Goal permettant de représenter les résultats à atteindre dans le cadre du projet personnalisé. |
+| [Observation](http://hl7.org/fhir/StructureDefinition/Observation|4.0.1) | [TDDUIObservationCauseDeces](StructureDefinition-tddui-observation-cause-deces.md) | Profil de la ressource Observation permettant de représenter les causes de décès d'un usager. |
+| [Observation](http://hl7.org/fhir/StructureDefinition/Observation|4.0.1) | [TDDUIObservationPeriodeScolaire](StructureDefinition-tddui-observation-periode-scolaire.md) | Profil de la ressource Organization permettant de représenter la période scolaire de l'usager. |
 | [FR Core Organization Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.1.0) | [TDDUIOrganization](StructureDefinition-tddui-organization.md) | Profil de la ressource FRCoreOrganizationProfile permettant de représenter les entités juridiques. |
 | [FR Core Patient Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.1.0) | [TDDUIPatient](StructureDefinition-tddui-patient.md) | Profil de la ressource FrCorePatientProfile permettant de représenter un usager lorsque l'INS n'est pas transmis. |
 | [FR Core Patient INS Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.1.0) | [TDDUIPatientINS](StructureDefinition-tddui-patient-ins.md) | Profil de la ressource FRCorePatientINSProfile permettant de représenter un usager lorsque l'INS est transmis. |
@@ -140,7 +142,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2026-02-02T10:31:14+00:00",
+  "date" : "2026-02-04T11:03:32+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -1413,6 +1415,20 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/tddui-causes-deces"
+        },
+        "name" : "TDDUI Causes Deces",
+        "description" : "ValueSet incluant les codes de la terminologie CIM-1O.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:resource"
           }
         ],
@@ -1659,6 +1675,90 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "TDDUI Human Name DataType",
         "description" : "French profile of datatype HumanName with constraints on prefix and suffix | Profilage du type de données HumanName pour prise en compte de la civilté au niveau de l'élément prefix et du titre au niveau de l'élément suffix",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/tddui-observation-periode-scolaire"
+        },
+        "name" : "TDDUI Obervation Periode Scolaire",
+        "description" : "Profil de la ressource Organization permettant de représenter la période scolaire de l'usager.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/tddui-observation-cause-deces"
+        },
+        "name" : "TDDUI Observation Cause Deces",
+        "description" : "Profil de la ressource Observation permettant de représenter les causes de décès d'un usager.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/tddui-observation-periode-scolaire"
+        },
+        "name" : "TDDUI Observation Periode Scolaire",
+        "description" : "ValueSet for the Observation school period.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/tddui-observation-periode-scolaire"
+        },
+        "name" : "TDDUI Observation Periode Scolaire",
+        "description" : "CodeSystem for the Observation school period",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/tddui-observation-type"
+        },
+        "name" : "TDDUI Observation Type",
+        "description" : "ValueSet for the Observation types.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/tddui-observation-type"
+        },
+        "name" : "TDDUI Observation Type",
+        "description" : "CodeSystem for the Observation types",
         "exampleBoolean" : false
       },
       {

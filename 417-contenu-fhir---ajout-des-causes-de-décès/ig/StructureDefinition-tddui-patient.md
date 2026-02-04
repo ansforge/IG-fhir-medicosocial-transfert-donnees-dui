@@ -9,19 +9,19 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient | *Version*:2.2.0-ballot |
-| Active as of 2026-02-02 | *Computable Name*:TDDUIPatient |
+| Active as of 2026-02-04 | *Computable Name*:TDDUIPatient |
 
  
 Profil de la ressource FrCorePatientProfile permettant de représenter un usager lorsque l'INS n'est pas transmis. 
 
 **Utilisations:**
 
-* Utiliser ce Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
-* Référer à ce Profil: [TDDUI CarePlan Projet Personalise](StructureDefinition-tddui-careplan-projet-personnalise.md), [TDDUI Consent Accord](StructureDefinition-tddui-consent-accord.md), [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md), [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)... Show 6 more, [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md), [TDDUI Goal Attente](StructureDefinition-tddui-goal-attente.md), [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md), [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md), [TDDUI ServiceRequest Besoin](StructureDefinition-tddui-service-request-besoin.md) and [TDDUI Task Bilan](StructureDefinition-tddui-task-bilan.md)
-* Exemples pour ce Profil: [Patient/tddui-patient-example](Patient-tddui-patient-example.md), [Patient/tddui-pp-ime-patient-example](Patient-tddui-pp-ime-patient-example.md) and [Patient/tddui-pp-pa-patient-example-pp](Patient-tddui-pp-pa-patient-example-pp.md)
+* Utilise ce/t/te Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
+* Référence ce Profil: [TDDUI CarePlan Projet Personalise](StructureDefinition-tddui-careplan-projet-personnalise.md), [TDDUI Consent Accord](StructureDefinition-tddui-consent-accord.md), [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md), [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)... Show 8 more, [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md), [TDDUI Goal Attente](StructureDefinition-tddui-goal-attente.md), [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md), [TDDUI Observation Cause Deces](StructureDefinition-tddui-observation-cause-deces.md), [TDDUI Obervation Periode Scolaire](StructureDefinition-tddui-observation-periode-scolaire.md), [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md), [TDDUI ServiceRequest Besoin](StructureDefinition-tddui-service-request-besoin.md) and [TDDUI Task Bilan](StructureDefinition-tddui-task-bilan.md)
+* Exemples pour ce/t/te Profil: [Patient/tddui-patient-example](Patient-tddui-patient-example.md), [Patient/tddui-pp-ime-patient-example](Patient-tddui-pp-ime-patient-example.md) and [Patient/tddui-pp-pa-patient-example-pp](Patient-tddui-pp-pa-patient-example-pp.md)
 * CapabilityStatements utilisant ce Profil: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-patient)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-patient)
 
 ### Formal Views of Profile Content
 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient.csv), 
   "name" : "TDDUIPatient",
   "title" : "TDDUI Patient",
   "status" : "active",
-  "date" : "2026-02-02T10:31:14+00:00",
+  "date" : "2026-02-04T11:03:32+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

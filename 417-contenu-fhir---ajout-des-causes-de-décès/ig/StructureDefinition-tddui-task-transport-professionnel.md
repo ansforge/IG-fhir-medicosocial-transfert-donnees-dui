@@ -9,18 +9,18 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel | *Version*:2.2.0-ballot |
-| Active as of 2026-02-02 | *Computable Name*:TDDUITaskTransportProfessionnel |
+| Active as of 2026-02-04 | *Computable Name*:TDDUITaskTransportProfessionnel |
 
  
 Profil de la ressource TDDUITaskTransport permettant de représenter le transport du professionnel. 
 
 **Utilisations:**
 
-* Utiliser ce Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
-* Exemples pour ce Profil: [Task/tddui-task-transport-professionel-example](Task-tddui-task-transport-professionel-example.md)
+* Utilise ce/t/te Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
+* Exemples pour ce/t/te Profil: [Task/tddui-task-transport-professionel-example](Task-tddui-task-transport-professionel-example.md)
 * CapabilityStatements utilisant ce Profil: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-task-transport-professionnel)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-task-transport-professionnel)
 
 ### Formal Views of Profile Content
 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
   "name" : "TDDUITaskTransportProfessionnel",
   "title" : "TDDUI Task Transport Professionnel",
   "status" : "active",
-  "date" : "2026-02-02T10:31:14+00:00",
+  "date" : "2026-02-04T11:03:32+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

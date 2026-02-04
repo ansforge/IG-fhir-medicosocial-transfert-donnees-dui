@@ -9,19 +9,19 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif | *Version*:2.2.0-ballot |
-| Active as of 2026-02-02 | *Computable Name*:TDDUIGoalObjectif |
+| Active as of 2026-02-04 | *Computable Name*:TDDUIGoalObjectif |
 
  
 Profil de la ressource Goal permettant de représenter les résultats à atteindre dans le cadre du projet personnalisé. 
 
 **Utilisations:**
 
-* Utiliser ce Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
-* Référer à ce Profil: [TDDUI Task Action](StructureDefinition-tddui-task-action.md)
-* Exemples pour ce Profil: [Goal/tddui-pp-ime-goal-objectif-1-example](Goal-tddui-pp-ime-goal-objectif-1-example.md), [Goal/tddui-pp-ime-goal-objectif-2-example](Goal-tddui-pp-ime-goal-objectif-2-example.md), [Goal/tddui-pp-pa-goal-objectif-1-example](Goal-tddui-pp-pa-goal-objectif-1-example.md), [Goal/tddui-pp-pa-goal-objectif-2-example](Goal-tddui-pp-pa-goal-objectif-2-example.md) and [Goal/tddui-pp-pa-goal-objectif-3-example](Goal-tddui-pp-pa-goal-objectif-3-example.md)
+* Utilise ce/t/te Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
+* Référence ce Profil: [TDDUI Task Action](StructureDefinition-tddui-task-action.md)
+* Exemples pour ce/t/te Profil: [Goal/tddui-pp-ime-goal-objectif-1-example](Goal-tddui-pp-ime-goal-objectif-1-example.md), [Goal/tddui-pp-ime-goal-objectif-2-example](Goal-tddui-pp-ime-goal-objectif-2-example.md), [Goal/tddui-pp-pa-goal-objectif-1-example](Goal-tddui-pp-pa-goal-objectif-1-example.md), [Goal/tddui-pp-pa-goal-objectif-2-example](Goal-tddui-pp-pa-goal-objectif-2-example.md) and [Goal/tddui-pp-pa-goal-objectif-3-example](Goal-tddui-pp-pa-goal-objectif-3-example.md)
 * CapabilityStatements utilisant ce Profil: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-goal-objectif)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-goal-objectif)
 
 ### Formal Views of Profile Content
 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-objectif.
   "name" : "TDDUIGoalObjectif",
   "title" : "TDDUI Goal Objectif",
   "status" : "active",
-  "date" : "2026-02-02T10:31:14+00:00",
+  "date" : "2026-02-04T11:03:32+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

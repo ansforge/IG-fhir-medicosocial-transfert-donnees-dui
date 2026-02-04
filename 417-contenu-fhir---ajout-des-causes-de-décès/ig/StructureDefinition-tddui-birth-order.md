@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order | *Version*:2.2.0-ballot |
-| Active as of 2026-02-02 | *Computable Name*:TDDUIBirthOrder |
+| Active as of 2026-02-04 | *Computable Name*:TDDUIBirthOrder |
 
 Ordre d’enregistrement de la naissance dans le registre d’état civil de la commune de naissance pour le mois de la naissance. Il compose les 3 derniers chiffres du NIR de l'usager avant la clé de sécurité et permet de distinguer les personnes nées au même lieu et à la même période. Il est obligatoire si le NIR n'est pas transmis.
 
@@ -19,10 +19,10 @@ Ordre d’enregistrement de la naissance dans le registre d’état civil de la 
 
 **Utilisations:**
 
-* Utiliser ce Extension: [TDDUI Patient](StructureDefinition-tddui-patient.md)
-* Exemples pour ce Extension: [Patient/tddui-patient-example](Patient-tddui-patient-example.md)
+* Utilise ce/t/te Extension: [TDDUI Patient](StructureDefinition-tddui-patient.md)
+* Exemples pour ce/t/te Extension: [Patient/tddui-patient-example](Patient-tddui-patient-example.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-birth-order)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-birth-order)
 
 ### Formal Views of Extension Content
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-birth-order.cs
   "name" : "TDDUIBirthOrder",
   "title" : "Ordre de naissance dans le registre d'état civil",
   "status" : "active",
-  "date" : "2026-02-02T10:31:14+00:00",
+  "date" : "2026-02-04T11:03:32+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

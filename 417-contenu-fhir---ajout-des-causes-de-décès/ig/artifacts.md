@@ -41,6 +41,8 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md) | Profil de la ressource Encounter permettant de regrouper les informations relatives au séjour d'un usager dans une structure ESSMS |
 | [TDDUI Goal Attente](StructureDefinition-tddui-goal-attente.md) | Profil de la ressource Goal permettant de représenter les attentes pour un usager. |
 | [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md) | Profil de la ressource Goal permettant de représenter les résultats à atteindre dans le cadre du projet personnalisé. |
+| [TDDUI Obervation Periode Scolaire](StructureDefinition-tddui-observation-periode-scolaire.md) | Profil de la ressource Organization permettant de représenter la période scolaire de l'usager. |
+| [TDDUI Observation Cause Deces](StructureDefinition-tddui-observation-cause-deces.md) | Profil de la ressource Observation permettant de représenter les causes de décès d'un usager. |
 | [TDDUI Organization](StructureDefinition-tddui-organization.md) | Profil de la ressource FRCoreOrganizationProfile permettant de représenter les entités juridiques. |
 | [TDDUI Patient](StructureDefinition-tddui-patient.md) | Profil de la ressource FrCorePatientProfile permettant de représenter un usager lorsque l'INS n'est pas transmis. |
 | [TDDUI Patient INS](StructureDefinition-tddui-patient-ins.md) | Profil de la ressource FRCorePatientINSProfile permettant de représenter un usager lorsque l'INS est transmis. |
@@ -113,12 +115,15 @@ These define sets of codes used by systems conforming to this implementation gui
 | [InputTaskTransportValueSet](ValueSet-input-tddui-task-transport-valueset.md) | ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les transports dans le cadre du DUI. |
 | [OutputTDDUITaskBilanValueSet](ValueSet-output-tddui-task-bilan-valueset.md) | ValueSet pour la définition des éléments spécifiques des output dans la ressource Task utilisée pour le bilan du projet personnalisé. |
 | [TDDUI CarePlan supportingInfo ValueSet](ValueSet-tddui-care-plan-supportingInfo-vs.md) | ValueSet définissant les types de notes pour l'élément CarePlan.supportingInfo. |
+| [TDDUI Causes Deces](ValueSet-tddui-causes-deces.md) | ValueSet incluant les codes de la terminologie CIM-1O. |
 | [TDDUI Discriminator ValueSet](ValueSet-tddui-discriminator-vs.md) | ValueSet définissant les codes discriminants. |
 | [TDDUI Encounter Identifier Type ValueSet](ValueSet-tddui-encounter-identifier-vs.md) | ValueSet for TDDUI Encounter's identifier types |
 | [TDDUI Encounter Participant ValueSet](ValueSet-tddui-encounter-participant-vs.md) | ValueSet for TDDUI Encounter's participants |
 | [TDDUI Encounter Type ValueSet](ValueSet-tddui-encounter-type-vs.md) | ValueSet for TDDUI Encounter's types |
 | [TDDUI Goal Attente Note ValueSet](ValueSet-tddui-goal-attente-note-vs.md) | ValueSet définissant les types de notes pour l'élément Goal.note. |
 | [TDDUI Goal Objectif Note ValueSet](ValueSet-tddui-goal-objectif-note-vs.md) | ValueSet définissant les types de notes pour l'élément Goal.note. |
+| [TDDUI Observation Periode Scolaire](ValueSet-tddui-observation-periode-scolaire.md) | ValueSet for the Observation school period. |
+| [TDDUI Observation Type](ValueSet-tddui-observation-type.md) | ValueSet for the Observation types. |
 | [TDDUI Patient Identifier ValueSet](ValueSet-tddui-patient-identifier-vs.md) | ValueSet for TDDUI Patient's identifier types |
 | [TDDUI SERAFIN ValueSet](ValueSet-tddui-serafin-valueset.md) | ValueSet contenant les codes SERAFIN (prestations directes et indirectes) pour le profil TDDUI Encounter Evenement. |
 
@@ -138,6 +143,8 @@ These define new code systems used by systems conforming to this implementation 
 | [TDDUI Encounter FR Core CodeSystem v2-0203](CodeSystem-tddui-encounter-identifier-cs.md) | TDDUI Encounter's identifier |
 | [TDDUI Encounter Participant Type](CodeSystem-TDDUIEncounterParticipant.md) | CodeSystem for the participant types in TDDUI Encounter |
 | [TDDUI FR Core CodeSystem v2-0203](CodeSystem-tddui-identifier.md) | TDDUI Patient's identifier |
+| [TDDUI Observation Periode Scolaire](CodeSystem-tddui-observation-periode-scolaire.md) | CodeSystem for the Observation school period |
+| [TDDUI Observation Type](CodeSystem-tddui-observation-type.md) | CodeSystem for the Observation types |
 
 ### Example: Example Instances 
 
