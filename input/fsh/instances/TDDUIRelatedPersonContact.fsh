@@ -1,7 +1,8 @@
 Instance: tddui-related-person-contact-example
 InstanceOf: TDDUIRelatedPersonContact
-Usage: #example
+Title: "TDDUI Related Person Contact Example"
 Description: "Exemple d'un contact."
+Usage: #example
 
 * identifier.value = "3480787529/123456789-PPAttente-1234-enfant"
 
