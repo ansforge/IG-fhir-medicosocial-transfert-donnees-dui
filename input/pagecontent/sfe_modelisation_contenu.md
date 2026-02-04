@@ -495,7 +495,7 @@ La demande de compensation est adressée à la CDAPH. Elle contient l'ensemble d
   </tr>
   <tr>
     <td>idDemandeOrientation : [1..1] Identifiant </td>
-    <td>identifiant de la demande de compensation de l'usager créé par la MDPH à l'origine de la création du dossier de demande. Cet identifiant est obtenu par la concaténation de l'identifiant local attribué par la MDPH ayant créé le dossier de demande (idDemandeOrientationMDPHInitial) et du numéro cette MDPH (idMDPHInitial) : idDemandeOrientationMDPHInitial/idMDPHInitial<br></td>
+    <td>identifiant de la demande de compensation de l'usager créé par la MDPH à l'origine de la création du dossier de demande. Cet identifiant est obtenu par la concaténation de l'identifiant local attribué par la MDPH ayant créé le dossier de demande (idDemandeOrientationMDPHInitial) et du numéro cette MDPH (idMDPHInitial) : idDemandeOrientationMDPHInitial/idMDPHInitial</td>
   </tr>
   <tr>
     <td>typeDemande : [0..1] Code </td>
@@ -536,7 +536,8 @@ La demande de compensation est adressée à la CDAPH. Elle contient l'ensemble d
 
 ##### Classe Decision
 
-La décision est une réponse à une demande de compensation l'usager ou de son représentant légal. Elle est prise par la CDAPH.
+La décision est une réponse à une demande de compensation l'usager ou de son représentant légal. C'est un acte par lequel la CDAPH prononce l’orientation de la personne en situation de handicap vers une catégorie ou un établissement ou un service nommément désigné. La décision d’orientation permet à la personne en situation de handicap de faire valoir ses droits auprès de l’établissement ou du service concerné
+
 
 <table style="width:100%">
   <tr>
@@ -545,7 +546,7 @@ La décision est une réponse à une demande de compensation l'usager ou de son 
   </tr>
   <tr>
     <td>idDecision : [1..1] Identifiant </td>
-    <td>Numéro de la décision prise par la MDPH.</td>
+    <td>Cet identifiant est obtenu par la concaténation de l'identifiant local attribué par la MDPH à l’origine de la création du suivi de la décision (idDecisionMDPHInitial) et du numéro cette MDPH (idMDPHInitial) : idDecisionMDPHInitial/idMDPHInitial</td>
   </tr>
   <tr>
     <td>numeroEnregistrement : [0..1] Identifiant</td>
