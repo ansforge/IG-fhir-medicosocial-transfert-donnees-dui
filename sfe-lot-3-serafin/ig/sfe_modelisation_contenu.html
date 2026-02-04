@@ -818,7 +818,7 @@ Droit temporel et exceptionnel conféré à une personne ou une organisation.</p
   </tr>
   <tr>
     <td>idDemandeOrientation : [1..1] Identifiant </td>
-    <td>identifiant de la demande de compensation de l'usager créé par la MDPH à l'origine de la création du dossier de demande. Cet identifiant est obtenu par la concaténation de l'identifiant local attribué par la MDPH ayant créé le dossier de demande (idDemandeOrientationMDPHInitial) et du numéro cette MDPH (idMDPHInitial) : idDemandeOrientationMDPHInitial/idMDPHInitial<br/></td>
+    <td>identifiant de la demande de compensation de l'usager créé par la MDPH à l'origine de la création du dossier de demande. Cet identifiant est obtenu par la concaténation de l'identifiant local attribué par la MDPH ayant créé le dossier de demande (idDemandeOrientationMDPHInitial) et du numéro cette MDPH (idMDPHInitial) : idDemandeOrientationMDPHInitial/idMDPHInitial</td>
   </tr>
   <tr>
     <td>typeDemande : [0..1] Code </td>
@@ -858,7 +858,7 @@ Droit temporel et exceptionnel conféré à une personne ou une organisation.</p
 
 <h5 id="classe-decision">Classe Decision</h5>
 
-<p>La décision est une réponse à une demande de compensation l'usager ou de son représentant légal. Elle est prise par la CDAPH.</p>
+<p>La décision est une réponse à une demande de compensation l'usager ou de son représentant légal. C'est un acte par lequel la CDAPH prononce l’orientation de la personne en situation de handicap vers une catégorie ou un établissement ou un service nommément désigné. La décision d’orientation permet à la personne en situation de handicap de faire valoir ses droits auprès de l’établissement ou du service concerné</p>
 
 <table style="width:100%">
   <tr>
@@ -867,7 +867,7 @@ Droit temporel et exceptionnel conféré à une personne ou une organisation.</p
   </tr>
   <tr>
     <td>idDecision : [1..1] Identifiant </td>
-    <td>Numéro de la décision prise par la MDPH.</td>
+    <td>Cet identifiant est obtenu par la concaténation de l'identifiant local attribué par la MDPH à l’origine de la création du suivi de la décision (idDecisionMDPHInitial) et du numéro cette MDPH (idMDPHInitial) : idDecisionMDPHInitial/idMDPHInitial</td>
   </tr>
   <tr>
     <td>numeroEnregistrement : [0..1] Identifiant</td>
@@ -2199,7 +2199,7 @@ Le détail de l’évaluation de ce champ peut être transmis à travers un deux
     Jeu(x) de valeur(s) associé(s) : en cours de création NOS</td>
  </tr>
  <tr>
-    <td><a name="l6541">​</a>referentScolaire : [0..*] <a href="#PersonnePhysique">PersonnePhysique</a></td>
+    <td><a name="l6540">​</a>referentScolaire : [0..*] <a href="#PersonnePhysique">PersonnePhysique</a></td>
     <td>Référent scolaire de l'usager pour cette année de scolarité.</td>
  </tr>
  <tr>
@@ -2702,7 +2702,7 @@ Le détail de l’évaluation de ce champ peut être transmis à travers un deux
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.2.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 4, 2026 07:54+0000">2026-02-04</span>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.2.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 4, 2026 09:29+0000">2026-02-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |

@@ -375,10 +375,10 @@ La demande de compensation est adressée à la CDAPH. Elle contient l'ensemble d
 
 ##### Classe Decision
 
-La décision est une réponse à une demande de compensation l'usager ou de son représentant légal. Elle est prise par la CDAPH.
+La décision est une réponse à une demande de compensation l'usager ou de son représentant légal. C'est un acte par lequel la CDAPH prononce l’orientation de la personne en situation de handicap vers une catégorie ou un établissement ou un service nommément désigné. La décision d’orientation permet à la personne en situation de handicap de faire valoir ses droits auprès de l’établissement ou du service concerné
 
 * Nom: idDecision : [1..1] Identifiant
-  * Description: Numéro de la décision prise par la MDPH.
+  * Description: Cet identifiant est obtenu par la concaténation de l'identifiant local attribué par la MDPH à l’origine de la création du suivi de la décision (idDecisionMDPHInitial) et du numéro cette MDPH (idMDPHInitial) : idDecisionMDPHInitial/idMDPHInitial
 * Nom: numeroEnregistrement : [0..1] Identifiant
   * Description: Numéro d’enregistrement au conseil général si différent du numéro d’identification MDPH.
 * Nom: idDecisionMAJ : [0..*] Identifiant
