@@ -28,11 +28,11 @@ Pour ce cas d'usage les modalités d’envoi des données usager au SI-tiers son
 * Le DUI envoie au minimum une semaine d'historique par usager
 * Le DUI envoie au maximum cinq semaines d'historique par usager
 
-##### Cas d'usage SERAFIN - Projet personnalisé
+##### Cas d'usage SERAFIN
 
+ Ce cas d'usage permet d'ajouter au flux d'extraction les données du Projet personnalisé.
+ 
  Le Projet personnalisé est un outil de coordination visant à répondre à long terme aux besoins et attentes de la personne accueillie. Il est conçu pour et, si possible, avec la personne prise en charge.
-
-  Dans ce cas d'usage, le Projet personnalisé de l'usager est envoyé par le logiciel DUI vers le système d’information de la CNSA (<a href="https://www.cnsa.fr/informations-thematiques/systeme-dinformation-et-numerique/sidoba">SIDOBA</a> = système d’information de l’offre de la branche autonomie).
 
   L'export du Projet personnalisé est composé des éléments métiers suivants :
   * le Projet Personnalisé de l'usager ;
@@ -44,10 +44,10 @@ Pour ce cas d'usage les modalités d’envoi des données usager au SI-tiers son
   * les Prestations mises en place dans le cadre du Projet personnalisé ;
   * les Bilans réalisés dans le cadre du Projet personnalisé.
  
- ##### Cas d'usage SERAFIN - Mise à jour des blocs Administratif, Coordination des acteurs et Accompagnement
+ Dans ce cas d'usage les blocs suivants sont enrichis : "Administratif, Coordination des acteurs et Accompagnement". Ils entrent dans la définition des moyens, ressources et de l'accompagnement mis en oeuvre pour l'usager en adéquation avec les besoins SERAFIN répertoriés en autre dans le Projet personnalisé.
 
-La mise à jour des blocs "Administratif, Coordination des acteurs et Accompagnement" entre dans la définition des moyens, ressources et de l'accompagnement mis en oeuvre pour l'usager en adéquation avec les besoins SERAFIN répertoriés en autre dans le Projet personnalisé.
-Dans ce cas d'usage, les objets métiers suivants sont enrichis ou créés :
+Les objets métiers suivants sont enrichis ou créés :
+  * la Mobilité de l'usager, son permis de conduire et son Séjour (bloc Administratif) 
   * la Mobilité de l'usager, son permis de conduire et son Séjour (bloc Administratif) ;
   * la Période scolaire de l'usager (bloc Accompagnement) ;
   * l'évènement de l'agenda usager (bloc Coordination des acteurs)
