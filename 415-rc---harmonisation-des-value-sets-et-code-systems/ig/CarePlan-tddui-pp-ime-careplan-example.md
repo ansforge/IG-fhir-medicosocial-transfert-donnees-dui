@@ -1,10 +1,10 @@
-# tddui-pp-ime-careplan-example - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI PP IME CarePlan Example - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **tddui-pp-ime-careplan-example**
+* **TDDUI PP IME CarePlan Example**
 
-## Example CarePlan: tddui-pp-ime-careplan-example
+## Example CarePlan: TDDUI PP IME CarePlan Example
 
 Profil: [TDDUI CarePlan Projet Personalise](StructureDefinition-tddui-careplan-projet-personnalise.md)
 

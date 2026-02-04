@@ -1,15 +1,15 @@
-# Responsable et auteur du statut de l'évaluation - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI QR Participant - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Responsable et auteur du statut de l'évaluation**
+* **TDDUI QR Participant**
 
-## Extension: Responsable et auteur du statut de l'évaluation 
+## Extension: TDDUI QR Participant 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant | *Version*:2.2.0-ballot |
-| Active as of 2026-02-02 | *Computable Name*:TDDUIQRParticipant |
+| Active as of 2026-02-04 | *Computable Name*:TDDUIQRParticipant |
 
 Extension permettant d'ajouter le responsable de l'évaluation et l'auteur du statut de l'évaluation dans un QuestionnaireResponse.
 
@@ -19,9 +19,9 @@ Extension permettant d'ajouter le responsable de l'évaluation et l'auteur du st
 
 **Utilisations:**
 
-* Utiliser ce Extension: [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md)
+* Utilise ce/t/te Extension: [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-qr-participant)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-qr-participant)
 
 ### Formal Views of Extension Content
 
@@ -44,9 +44,9 @@ Other representations of profile: [CSV](StructureDefinition-tddui-qr-participant
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant",
   "version" : "2.2.0-ballot",
   "name" : "TDDUIQRParticipant",
-  "title" : "Responsable et auteur du statut de l'évaluation",
+  "title" : "TDDUI QR Participant",
   "status" : "active",
-  "date" : "2026-02-02T14:44:55+00:00",
+  "date" : "2026-02-04T16:15:13+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -95,7 +95,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-qr-participant
       {
         "id" : "Extension",
         "path" : "Extension",
-        "short" : "Responsable et auteur du statut de l'évaluation",
+        "short" : "TDDUI QR Participant",
         "definition" : "Extension permettant d'ajouter le responsable de l'évaluation et l'auteur du statut de l'évaluation dans un QuestionnaireResponse."
       },
       {

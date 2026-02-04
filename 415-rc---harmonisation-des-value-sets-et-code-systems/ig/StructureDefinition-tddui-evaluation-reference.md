@@ -1,15 +1,15 @@
-# Lien vers l'évaluation - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Evaluation Ref - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Lien vers l'évaluation**
+* **TDDUI Evaluation Ref**
 
-## Extension: Lien vers l'évaluation 
+## Extension: TDDUI Evaluation Ref 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-evaluation-reference | *Version*:2.2.0-ballot |
-| Active as of 2026-02-02 | *Computable Name*:TDDUIEvaluationRef |
+| Active as of 2026-02-04 | *Computable Name*:TDDUIEvaluationRef |
 
 Liens vers l'évaluation, utilisables dans le profil TDDUIGoalObjectif.
 
@@ -19,9 +19,9 @@ Liens vers l'évaluation, utilisables dans le profil TDDUIGoalObjectif.
 
 **Utilisations:**
 
-* Utiliser ce Extension: [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md)
+* Utilise ce/t/te Extension: [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-evaluation-reference)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-evaluation-reference)
 
 ### Formal Views of Extension Content
 
@@ -44,9 +44,9 @@ Other representations of profile: [CSV](StructureDefinition-tddui-evaluation-ref
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-evaluation-reference",
   "version" : "2.2.0-ballot",
   "name" : "TDDUIEvaluationRef",
-  "title" : "Lien vers l'évaluation",
+  "title" : "TDDUI Evaluation Ref",
   "status" : "active",
-  "date" : "2026-02-02T14:44:55+00:00",
+  "date" : "2026-02-04T16:15:13+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -95,7 +95,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-evaluation-ref
       {
         "id" : "Extension",
         "path" : "Extension",
-        "short" : "Lien vers l'évaluation",
+        "short" : "TDDUI Evaluation Ref",
         "definition" : "Liens vers l'évaluation, utilisables dans le profil TDDUIGoalObjectif."
       },
       {

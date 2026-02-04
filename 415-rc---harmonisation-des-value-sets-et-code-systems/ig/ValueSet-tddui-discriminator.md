@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-discriminator | *Version*:2.2.0-ballot |
-| Active as of 2026-02-02 | *Computable Name*:TDDUIDiscriminator |
+| Active as of 2026-02-04 | *Computable Name*:TDDUIDiscriminator |
 
  
 ValueSet définissant les codes discriminants. 
@@ -19,7 +19,7 @@ ValueSet définissant les codes discriminants.
 * Inclus dans [TDDUICarePlanSupportingInfo](ValueSet-tddui-care-plan-supporting-info.md)
 * Inclus dans [TDDUIGoalAttenteNote](ValueSet-tddui-goal-attente-note.md)
 * Inclus dans [TDDUIGoalObjectifNote](ValueSet-tddui-goal-objectif-note.md)
-* [TDDUI Discriminator Extension](StructureDefinition-tddui-discriminator.md)
+* [TDDUI Discriminator](StructureDefinition-tddui-discriminator.md)
 
 ### Définition logique (CLD)
 
@@ -59,7 +59,7 @@ ValueSet définissant les codes discriminants.
   "title" : "TDDUI Discriminator",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-02T14:44:55+00:00",
+  "date" : "2026-02-04T16:15:13+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

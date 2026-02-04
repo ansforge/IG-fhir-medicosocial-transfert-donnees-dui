@@ -1,15 +1,15 @@
-# Évènement annulé - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Event Cancel Reason - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Évènement annulé**
+* **TDDUI Event Cancel Reason**
 
-## Extension: Évènement annulé 
+## Extension: TDDUI Event Cancel Reason 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-cancel-reason | *Version*:2.2.0-ballot |
-| Active as of 2026-02-02 | *Computable Name*:TDDUIEventCancelReason |
+| Active as of 2026-02-04 | *Computable Name*:TDDUIEventCancelReason |
 
 Motif associé au statut de non-réalisation de l’évènement.
 
@@ -19,9 +19,9 @@ Motif associé au statut de non-réalisation de l’évènement.
 
 **Utilisations:**
 
-* Utiliser ce Extension: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)
+* Utilise ce/t/te Extension: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-event-cancel-reason)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-event-cancel-reason)
 
 ### Formal Views of Extension Content
 
@@ -46,9 +46,9 @@ Other representations of profile: [CSV](StructureDefinition-tddui-event-cancel-r
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-cancel-reason",
   "version" : "2.2.0-ballot",
   "name" : "TDDUIEventCancelReason",
-  "title" : "Évènement annulé",
+  "title" : "TDDUI Event Cancel Reason",
   "status" : "active",
-  "date" : "2026-02-02T14:44:55+00:00",
+  "date" : "2026-02-04T16:15:13+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -97,7 +97,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-event-cancel-r
       {
         "id" : "Extension",
         "path" : "Extension",
-        "short" : "Évènement annulé",
+        "short" : "TDDUI Event Cancel Reason",
         "definition" : "Motif associé au statut de non-réalisation de l’évènement."
       },
       {

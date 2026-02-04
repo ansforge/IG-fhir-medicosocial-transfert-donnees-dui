@@ -1,10 +1,10 @@
-# tddui-pp-pa-task-action-1-ide-example - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI PP PA Task Action 1 IDE Example - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **tddui-pp-pa-task-action-1-ide-example**
+* **TDDUI PP PA Task Action 1 IDE Example**
 
-## Example Task: tddui-pp-pa-task-action-1-ide-example
+## Example Task: TDDUI PP PA Task Action 1 IDE Example
 
 Profil: [TDDUI Task Action](StructureDefinition-tddui-task-action.md)
 

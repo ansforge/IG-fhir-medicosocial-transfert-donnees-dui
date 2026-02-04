@@ -1,15 +1,15 @@
-# Lien vers le projet personnalisé - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI CarePlan Projet Perso Ref - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Lien vers le projet personnalisé**
+* **TDDUI CarePlan Projet Perso Ref**
 
-## Extension: Lien vers le projet personnalisé 
+## Extension: TDDUI CarePlan Projet Perso Ref 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference | *Version*:2.2.0-ballot |
-| Active as of 2026-02-02 | *Computable Name*:TDDUICarePlanProjetPersoRef |
+| Active as of 2026-02-04 | *Computable Name*:TDDUICarePlanProjetPersoRef |
 
 Liens vers le projet personnalisé, utilisables dans le profil TDDUIGoalObjectif.
 
@@ -19,10 +19,10 @@ Liens vers le projet personnalisé, utilisables dans le profil TDDUIGoalObjectif
 
 **Utilisations:**
 
-* Utiliser ce Extension: [TDDUI Goal Attente](StructureDefinition-tddui-goal-attente.md) and [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md)
-* Exemples pour ce Extension: [Bundle/tddui-pp-ime-bundle-example](Bundle-tddui-pp-ime-bundle-example.md), [Bundle/tddui-pp-pa-bundle-example](Bundle-tddui-pp-pa-bundle-example.md), [Goal/tddui-pp-ime-goal-objectif-1-example](Goal-tddui-pp-ime-goal-objectif-1-example.md), [Goal/tddui-pp-ime-goal-objectif-2-example](Goal-tddui-pp-ime-goal-objectif-2-example.md)... Show 5 more, [Goal/tddui-pp-pa-goal-attente-famille-example](Goal-tddui-pp-pa-goal-attente-famille-example.md), [Goal/tddui-pp-pa-goal-attente-usager-example](Goal-tddui-pp-pa-goal-attente-usager-example.md), [Goal/tddui-pp-pa-goal-objectif-1-example](Goal-tddui-pp-pa-goal-objectif-1-example.md), [Goal/tddui-pp-pa-goal-objectif-2-example](Goal-tddui-pp-pa-goal-objectif-2-example.md) and [Goal/tddui-pp-pa-goal-objectif-3-example](Goal-tddui-pp-pa-goal-objectif-3-example.md)
+* Utilise ce/t/te Extension: [TDDUI Goal Attente](StructureDefinition-tddui-goal-attente.md) and [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md)
+* Exemples pour ce/t/te Extension: [Bundle/tddui-pp-ime-bundle-example](Bundle-tddui-pp-ime-bundle-example.md), [Bundle/tddui-pp-pa-bundle-example](Bundle-tddui-pp-pa-bundle-example.md), [Goal/tddui-pp-ime-goal-objectif-1-example](Goal-tddui-pp-ime-goal-objectif-1-example.md), [Goal/tddui-pp-ime-goal-objectif-2-example](Goal-tddui-pp-ime-goal-objectif-2-example.md)... Show 5 more, [Goal/tddui-pp-pa-goal-attente-famille-example](Goal-tddui-pp-pa-goal-attente-famille-example.md), [Goal/tddui-pp-pa-goal-attente-usager-example](Goal-tddui-pp-pa-goal-attente-usager-example.md), [Goal/tddui-pp-pa-goal-objectif-1-example](Goal-tddui-pp-pa-goal-objectif-1-example.md), [Goal/tddui-pp-pa-goal-objectif-2-example](Goal-tddui-pp-pa-goal-objectif-2-example.md) and [Goal/tddui-pp-pa-goal-objectif-3-example](Goal-tddui-pp-pa-goal-objectif-3-example.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-careplan-reference)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-careplan-reference)
 
 ### Formal Views of Extension Content
 
@@ -45,9 +45,9 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-refer
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference",
   "version" : "2.2.0-ballot",
   "name" : "TDDUICarePlanProjetPersoRef",
-  "title" : "Lien vers le projet personnalisé",
+  "title" : "TDDUI CarePlan Projet Perso Ref",
   "status" : "active",
-  "date" : "2026-02-02T14:44:55+00:00",
+  "date" : "2026-02-04T16:15:13+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -96,7 +96,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-refer
       {
         "id" : "Extension",
         "path" : "Extension",
-        "short" : "Lien vers le projet personnalisé",
+        "short" : "TDDUI CarePlan Projet Perso Ref",
         "definition" : "Liens vers le projet personnalisé, utilisables dans le profil TDDUIGoalObjectif."
       },
       {

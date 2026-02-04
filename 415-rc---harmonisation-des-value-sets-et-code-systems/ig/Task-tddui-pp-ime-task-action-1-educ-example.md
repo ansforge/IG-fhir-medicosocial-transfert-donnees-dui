@@ -1,10 +1,10 @@
-# tddui-pp-ime-task-action-1-educ-example - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI PP IME Task Action 1 Educ Example - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **tddui-pp-ime-task-action-1-educ-example**
+* **TDDUI PP IME Task Action 1 Educ Example**
 
-## Example Task: tddui-pp-ime-task-action-1-educ-example
+## Example Task: TDDUI PP IME Task Action 1 Educ Example
 
 Profil: [TDDUI Task Action](StructureDefinition-tddui-task-action.md)
 

@@ -9,18 +9,18 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource | *Version*:2.2.0-ballot |
-| Active as of 2026-02-02 | *Computable Name*:TDDUITaskMoyenRessource |
+| Active as of 2026-02-04 | *Computable Name*:TDDUITaskMoyenRessource |
 
  
 Profil de la ressource Task permettant de représenter les moyens ou ressources utilisées dans le cadre du projet personnalisé. 
 
 **Utilisations:**
 
-* Utiliser ce Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
-* Exemples pour ce Profil: [Task/tddui-pp-pa-task-moyen-ressource-ergo-1-example](Task-tddui-pp-pa-task-moyen-ressource-ergo-1-example.md), [Task/tddui-pp-pa-task-moyen-ressource-ide-1-example](Task-tddui-pp-pa-task-moyen-ressource-ide-1-example.md), [Task/tddui-pp-pa-task-moyen-ressource-ide-2-example](Task-tddui-pp-pa-task-moyen-ressource-ide-2-example.md) and [Task/tddui-pp-pa-task-moyen-ressource-kine-1-example](Task-tddui-pp-pa-task-moyen-ressource-kine-1-example.md)
+* Utilise ce/t/te Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
+* Exemples pour ce/t/te Profil: [Task/tddui-pp-pa-task-moyen-ressource-ergo-1-example](Task-tddui-pp-pa-task-moyen-ressource-ergo-1-example.md), [Task/tddui-pp-pa-task-moyen-ressource-ide-1-example](Task-tddui-pp-pa-task-moyen-ressource-ide-1-example.md), [Task/tddui-pp-pa-task-moyen-ressource-ide-2-example](Task-tddui-pp-pa-task-moyen-ressource-ide-2-example.md) and [Task/tddui-pp-pa-task-moyen-ressource-kine-1-example](Task-tddui-pp-pa-task-moyen-ressource-kine-1-example.md)
 * CapabilityStatements utilisant ce Profil: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-task-moyen-ressource)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-task-moyen-ressource)
 
 ### Formal Views of Profile Content
 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-moyen-res
   "name" : "TDDUITaskMoyenRessource",
   "title" : "TDDUI Task MoyenRessource",
   "status" : "active",
-  "date" : "2026-02-02T14:44:55+00:00",
+  "date" : "2026-02-04T16:15:13+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

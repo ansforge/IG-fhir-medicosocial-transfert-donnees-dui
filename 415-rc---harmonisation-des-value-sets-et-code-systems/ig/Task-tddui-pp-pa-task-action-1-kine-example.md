@@ -1,10 +1,10 @@
-# tddui-pp-pa-task-action-1-kine-example - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI PP PA Task Action 1 Kine Example - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **tddui-pp-pa-task-action-1-kine-example**
+* **TDDUI PP PA Task Action 1 Kine Example**
 
-## Example Task: tddui-pp-pa-task-action-1-kine-example
+## Example Task: TDDUI PP PA Task Action 1 Kine Example
 
 Profil: [TDDUI Task Action](StructureDefinition-tddui-task-action.md)
 

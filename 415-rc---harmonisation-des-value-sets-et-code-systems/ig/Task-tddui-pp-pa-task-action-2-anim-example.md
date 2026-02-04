@@ -1,10 +1,10 @@
-# tddui-pp-pa-task-action-2-anim-example - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI PP PA Task Action 2 Anim Example - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **tddui-pp-pa-task-action-2-anim-example**
+* **TDDUI PP PA Task Action 2 Anim Example**
 
-## Example Task: tddui-pp-pa-task-action-2-anim-example
+## Example Task: TDDUI PP PA Task Action 2 Anim Example
 
 Profil: [TDDUI Task Action](StructureDefinition-tddui-task-action.md)
 

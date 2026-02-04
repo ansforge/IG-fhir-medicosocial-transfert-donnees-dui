@@ -2,10 +2,10 @@ TDDUI : Validation Results
 =========================================
 
 err = 109, warn = 120, info = 4534
-IG Publisher Version: 2.0.30
-Generated Mon Feb 02 14:49:52 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.tddui#2.2.0-ballot (canonical = https://interop.esante.gouv.fr/ig/fhir/tddui)
+IG Publisher Version: 2.1.0
+Generated Wed Feb 04 16:20:45 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.tddui#2.2.0-ballot (canonical = https://interop.esante.gouv.fr/ig/fhir/tddui)
  Build Errors : 3 / 4 / 0
- /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Bundle-ExampleTDDUIBundle : 0 / 8 / 34
+ /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Bundle-tddui-bundle-example : 0 / 8 / 34
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Bundle-tddui-pp-ime-bundle-example : 0 / 7 / 23
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Bundle-tddui-pp-pa-bundle-example : 0 / 23 / 79
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CapabilityStatement-TDDUIConsommateur : 0 / 1 / 22
@@ -142,24 +142,24 @@ WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in 
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 5: The HTML fragment 'expansion-params.xhtml' is not included anywhere in the produced implementation guide
-== fsh-generated/resources/Bundle-ExampleTDDUIBundle.json ==
-INFORMATION: Bundle/ExampleTDDUIBundle: Bundle.entry[0].resource.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins|2.2.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Bundle/ExampleTDDUIBundle: Bundle.entry[0].resource.extension[0].extension[0].value.ofType(Coding): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445|2.1.0
-WARNING: Bundle/ExampleTDDUIBundle: Bundle.entry[0].resource.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.250.1.213.1.4.8'
-WARNING: Bundle/ExampleTDDUIBundle: Bundle.entry[0].resource.identifier[1].system: No definition could be found for URL value 'https://identifiant-medicosocial-localusager.esante.gouv.fr'
-INFORMATION: Bundle/ExampleTDDUIBundle: Bundle.entry[0].resource.name[0].extension[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name|2.2.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Bundle/ExampleTDDUIBundle: Bundle.entry[1].resource.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization|2.2.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
-WARNING: Bundle/ExampleTDDUIBundle: Bundle.entry[1].resource.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.250.1.71.4.2.2'
-WARNING: Bundle/ExampleTDDUIBundle: Bundle.entry[2].resource.identifier[0].system: No definition could be found for URL value 'https://identifiant-medicosocial-sejour.esante.gouv.fr'
-INFORMATION: Bundle/ExampleTDDUIBundle: Bundle.entry[3].resource.identifier[0].type: Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identifier-type|2.1.0
-WARNING: Bundle/ExampleTDDUIBundle: Bundle.entry[3].resource.identifier[0].system: No definition could be found for URL value 'https://identifiant-medicosocial-evenement.esante.gouv.fr'
-INFORMATION: Bundle/ExampleTDDUIBundle: Bundle.entry[4].resource/*Practitioner/tddui-practitioner-example*/.qualification[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner|2.2.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Bundle/ExampleTDDUIBundle: Bundle.entry[4].resource/*Practitioner/tddui-practitioner-example*/.qualification[1]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner|2.2.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Bundle/ExampleTDDUIBundle: Bundle.entry[4].resource/*Practitioner/tddui-practitioner-example*/.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner|2.2.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
-WARNING: Bundle/ExampleTDDUIBundle: Bundle.entry[4].resource/*Practitioner/tddui-practitioner-example*/.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.250.1.71.4.2.1'
-INFORMATION: Bundle/ExampleTDDUIBundle: Bundle.entry[5].resource.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role|2.2.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
-WARNING: Bundle/ExampleTDDUIBundle: Bundle.entry[6].resource.identifier[0].system: No definition could be found for URL value 'https://identifiant-medicosocial-transportprofessionnel.esante.gouv.fr'
-WARNING: Bundle/ExampleTDDUIBundle: Bundle.entry[7].resource.identifier[0].system: No definition could be found for URL value 'https://identifiant-medicosocial-transportusager.esante.gouv.fr'
+== fsh-generated/resources/Bundle-tddui-bundle-example.json ==
+INFORMATION: Bundle/tddui-bundle-example: Bundle.entry[0].resource.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins|2.2.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/tddui-bundle-example: Bundle.entry[0].resource.extension[0].extension[0].value.ofType(Coding): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445|2.1.0
+WARNING: Bundle/tddui-bundle-example: Bundle.entry[0].resource.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.250.1.213.1.4.8'
+WARNING: Bundle/tddui-bundle-example: Bundle.entry[0].resource.identifier[1].system: No definition could be found for URL value 'https://identifiant-medicosocial-localusager.esante.gouv.fr'
+INFORMATION: Bundle/tddui-bundle-example: Bundle.entry[0].resource.name[0].extension[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name|2.2.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/tddui-bundle-example: Bundle.entry[1].resource.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization|2.2.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
+WARNING: Bundle/tddui-bundle-example: Bundle.entry[1].resource.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.250.1.71.4.2.2'
+WARNING: Bundle/tddui-bundle-example: Bundle.entry[2].resource.identifier[0].system: No definition could be found for URL value 'https://identifiant-medicosocial-sejour.esante.gouv.fr'
+INFORMATION: Bundle/tddui-bundle-example: Bundle.entry[3].resource.identifier[0].type: Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identifier-type|2.1.0
+WARNING: Bundle/tddui-bundle-example: Bundle.entry[3].resource.identifier[0].system: No definition could be found for URL value 'https://identifiant-medicosocial-evenement.esante.gouv.fr'
+INFORMATION: Bundle/tddui-bundle-example: Bundle.entry[4].resource/*Practitioner/tddui-practitioner-example*/.qualification[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner|2.2.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/tddui-bundle-example: Bundle.entry[4].resource/*Practitioner/tddui-practitioner-example*/.qualification[1]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner|2.2.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/tddui-bundle-example: Bundle.entry[4].resource/*Practitioner/tddui-practitioner-example*/.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner|2.2.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
+WARNING: Bundle/tddui-bundle-example: Bundle.entry[4].resource/*Practitioner/tddui-practitioner-example*/.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.250.1.71.4.2.1'
+INFORMATION: Bundle/tddui-bundle-example: Bundle.entry[5].resource.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role|2.2.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
+WARNING: Bundle/tddui-bundle-example: Bundle.entry[6].resource.identifier[0].system: No definition could be found for URL value 'https://identifiant-medicosocial-transportprofessionnel.esante.gouv.fr'
+WARNING: Bundle/tddui-bundle-example: Bundle.entry[7].resource.identifier[0].system: No definition could be found for URL value 'https://identifiant-medicosocial-transportusager.esante.gouv.fr'
 == fsh-generated/resources/Bundle-tddui-pp-ime-bundle-example.json ==
 INFORMATION: Bundle/tddui-pp-ime-bundle-example: Bundle.entry[0].resource.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient|2.2.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 WARNING: Bundle/tddui-pp-ime-bundle-example: Bundle.entry[0].resource.identifier[0].system: No definition could be found for URL value 'https://identifiant-medicosocial-localusager.esante.gouv.fr'
@@ -293,58 +293,58 @@ WARNING: Goal/tddui-pp-pa-goal-objectif-2-example: Goal.identifier[0].system: No
 == fsh-generated/resources/Goal-tddui-pp-pa-goal-objectif-3-example.json ==
 WARNING: Goal/tddui-pp-pa-goal-objectif-3-example: Goal.identifier[0].system: No definition could be found for URL value 'https://identifiant-medicosocial-objectif.esante.gouv.fr'
 == fsh-generated/resources/ImplementationGuide-ans.fhir.fr.tddui.json ==
-INFORMATION: ImplementationGuide.definition.resource[69].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[70].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[72].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[73].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[74].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[75].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[76].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[77].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[78].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[79].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[80].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[81].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[82].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[83].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[84].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[85].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[86].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[87].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[88].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[89].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[90].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[91].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[92].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[93].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[94].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[95].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[96].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[97].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[98].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[99].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[100].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[101].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[102].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[103].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[104].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[105].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[106].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[107].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[108].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[109].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[110].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[112].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[113].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[114].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[115].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[116].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[117].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[118].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[119].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager to 2.2.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[120].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[5].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[16].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[22].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[41].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[43].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[47].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[49].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[50].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[51].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[52].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[53].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[54].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[55].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[56].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[57].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[58].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[59].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[60].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[61].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[62].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[63].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[64].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[65].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[66].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[67].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[68].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[69].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[70].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[71].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[72].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[73].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[74].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[75].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[76].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[77].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[78].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[79].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[80].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[81].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[82].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[84].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[86].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[89].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[90].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[91].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[92].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[93].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[116].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[117].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel to 2.2.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[120].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager to 2.2.0-ballot
 ERROR: ImplementationGuide/ans.fhir.fr.tddui: ImplementationGuide.definition.extension[28].url: No definition could be found for URL value 'http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters'
-WARNING: ImplementationGuide/ans.fhir.fr.tddui: ImplementationGuide.definition.resource[0].description: value should not start or finish with whitespace '\n- **Séjour** : commentaire relatif au séjour.\n- **Événement** : commentaires sur le déroulé de l’évènement.\n- **Évaluation** : commentaire libre sur le contenu ou le résultat de l’évaluation.\n- **Champ évalué** : commentaire spécifique à un item ou sous-item évalué.'
+WARNING: ImplementationGuide/ans.fhir.fr.tddui: ImplementationGuide.definition.resource[9].description: value should not start or finish with whitespace '\n- **Séjour** : commentaire relatif au séjour.\n- **Événement** : commentaires sur le déroulé de l’évènement.\n- **Évaluation** : commentaire libre sur le contenu ou le résultat de l’évaluation.\n- **Champ évalué** : commentaire spécifique à un item ou sous-item évalué.'
 ERROR: ImplementationGuide/ans.fhir.fr.tddui: ImplementationGuide.dependsOn[3]: The ImplementationGuide is based on FHIR version 4.0.1 but package hl7.fhir.uv.extensions#5.2.0 is based on FHIR version 5.0.0. Use the package hl7.fhir.uv.extensions.r4 instead
 WARNING: ImplementationGuide/ans.fhir.fr.tddui: ImplementationGuide.dependsOn[4]: The ImplementationGuide uses package ihe.iti.mhd#4.2.0 released on 2022-12-07, but the most recent appropriate version is 5.0.0. This reference is getting old and the more recent version should be considered
 == fsh-generated/resources/Location-tddui-event-location-example.json ==
