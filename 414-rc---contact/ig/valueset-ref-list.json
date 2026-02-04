@@ -126,8 +126,8 @@
       "systems" : ["http://hl7.org/fhir/administrative-gender"],
       "uses" : {
       },
-      "StructureDefinition-tddui-related-person-contact.html" : "TDDUI RelatedPerson Contact",
-      "StructureDefinition-tddui-patient.html" : "TDDUI Patient"
+      "StructureDefinition-tddui-patient.html" : "TDDUI Patient",
+      "StructureDefinition-tddui-related-person-contact.html" : "TDDUI RelatedPerson Contact"
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-action-valueset",
@@ -239,6 +239,23 @@
       ],
       "uses" : {
       },
+      "StructureDefinition-tddui-related-person-contact.html" : "TDDUI RelatedPerson Contact",
+      "ValueSet-tddui-contact-related-person-relashionship.html" : "TDDUI Related Person Relashionship"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-contact-related-person-relashionship",
+      "version" : "2.2.0-ballot",
+      "status" : "active",
+      "name" : "TDDUIRelatedPersonRelashionship",
+      "title" : "TDDUI Related Person Relashionship",
+      "description" : "ValueSet définissant les slices de RelatedPerson.relationship.",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass",
+        "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode",
+        "https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique"
+      ],
+      "uses" : {
+      },
       "StructureDefinition-tddui-related-person-contact.html" : "TDDUI RelatedPerson Contact"
     },
     {
@@ -254,7 +271,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-tddui-related-person-contact.html" : "TDDUI RelatedPerson Contact"
+      "StructureDefinition-tddui-related-person-contact.html" : "TDDUI RelatedPerson Contact",
+      "ValueSet-tddui-contact-related-person-relashionship.html" : "TDDUI Related Person Relashionship"
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-discriminator-vs",
@@ -269,9 +287,9 @@
       "uses" : {
       },
       "ValueSet-tddui-goal-objectif-note-vs.html" : "TDDUI Goal Objectif Note ValueSet",
-      "ValueSet-tddui-goal-attente-note-vs.html" : "TDDUI Goal Attente Note ValueSet",
+      "ValueSet-tddui-care-plan-supportingInfo-vs.html" : "TDDUI CarePlan supportingInfo ValueSet",
       "StructureDefinition-tddui-discriminator.html" : "TDDUI Discriminator Extension",
-      "ValueSet-tddui-care-plan-supportingInfo-vs.html" : "TDDUI CarePlan supportingInfo ValueSet"
+      "ValueSet-tddui-goal-attente-note-vs.html" : "TDDUI Goal Attente Note ValueSet"
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-identifier-vs",
@@ -377,9 +395,9 @@
       "systems" : ["https://smt.esante.gouv.fr/terminologie-SERAFINPH"],
       "uses" : {
       },
-      "ValueSet-tddui-encounter-type-vs.html" : "TDDUI Encounter Type ValueSet",
       "StructureDefinition-tddui-task-prestation.html" : "TDDUI Task Prestation",
-      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement",
+      "ValueSet-tddui-encounter-type-vs.html" : "TDDUI Encounter Type ValueSet"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/JDV_J01-XdsAuthorSpecialty-CISIS/FHIR/JDV-J01-XdsAuthorSpecialty-CISIS",
@@ -706,7 +724,8 @@
       "sources" : ["1.2.250.1.213.3.4.227"],
       "uses" : {
       },
-      "StructureDefinition-tddui-related-person-contact.html" : "TDDUI RelatedPerson Contact"
+      "StructureDefinition-tddui-related-person-contact.html" : "TDDUI RelatedPerson Contact",
+      "ValueSet-tddui-contact-related-person-relashionship.html" : "TDDUI Related Person Relashionship"
     },
     {
       "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis",
@@ -771,8 +790,8 @@
       "sources" : ["1.2.250.1.213.1.1.5.811"],
       "uses" : {
       },
-      "ValueSet-tddui-encounter-type-vs.html" : "TDDUI Encounter Type ValueSet",
-      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
+      "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement",
+      "ValueSet-tddui-encounter-type-vs.html" : "TDDUI Encounter Type ValueSet"
     },
     {
       "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-motorisation-cisis",

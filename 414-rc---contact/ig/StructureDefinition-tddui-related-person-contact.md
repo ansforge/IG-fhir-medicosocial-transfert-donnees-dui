@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-related-person
   "name" : "TDDUIRelatedPersonContact",
   "title" : "TDDUI RelatedPerson Contact",
   "status" : "active",
-  "date" : "2026-02-04T09:47:16+00:00",
+  "date" : "2026-02-04T14:08:59+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -208,6 +208,14 @@ Other representations of profile: [CSV](StructureDefinition-tddui-related-person
             ]
           }
         ]
+      },
+      {
+        "id" : "RelatedPerson.relationship",
+        "path" : "RelatedPerson.relationship",
+        "binding" : {
+          "strength" : "required",
+          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-contact-related-person-relashionship|2.2.0-ballot"
+        }
       },
       {
         "id" : "RelatedPerson.relationship:Role",

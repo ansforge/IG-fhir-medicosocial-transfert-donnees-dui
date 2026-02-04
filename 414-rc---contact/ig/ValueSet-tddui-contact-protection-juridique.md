@@ -16,6 +16,7 @@ ValueSet définissant la protection juridique.
 
  **References** 
 
+* Inclus dans [TDDUIRelatedPersonRelashionship](ValueSet-tddui-contact-related-person-relashionship.md)
 * [TDDUI RelatedPerson Contact](StructureDefinition-tddui-related-person-contact.md)
 
 ### Définition logique (CLD)
@@ -56,7 +57,7 @@ ValueSet définissant la protection juridique.
   "title" : "TDDUI Protection Juridique",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-04T09:47:16+00:00",
+  "date" : "2026-02-04T14:08:59+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

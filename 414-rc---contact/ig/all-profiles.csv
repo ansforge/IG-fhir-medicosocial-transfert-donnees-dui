@@ -8387,7 +8387,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","The patient this person is related to","The patient this person is related to.","","We need to know which patient this RelatedPerson is related to.","","","","","","","",,,,,"",,,,"RelatedPerson.patient",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-related-person-contact","RelatedPerson.relationship","RelatedPerson.relationship","","","",0,*,"","","Y","CodeableConcept {[]} {[]}
-","The nature of the relationship","The nature of the relationship between a patient and the related person.","","We need to know the relationship with the patient since it influences the interpretation of the information attributed to this person.","","","","","","","",,"preferred","The nature of the relationship between a patient and the related person.","http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype|4.0.1","","value:coding.system}
+","The nature of the relationship","The nature of the relationship between a patient and the related person.","","We need to know the relationship with the patient since it influences the interpretation of the information attributed to this person.","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-contact-related-person-relashionship|2.2.0-ballot","","value:coding.system}
 ","",,"open","RelatedPerson.relationship",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-related-person-contact","RelatedPerson.relationship:Role","RelatedPerson.relationship","Role","","",0,1,"","","Y","CodeableConcept {[]} {[]}

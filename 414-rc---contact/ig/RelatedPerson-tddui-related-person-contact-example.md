@@ -12,7 +12,7 @@ Profil: [TDDUI RelatedPerson Contact](StructureDefinition-tddui-related-person-c
 
 **patient**: [DUPONT Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/194704032)](Patient-tddui-patient-ins-example.md)
 
-**relationship**: aidé, Enfant
+**relationship**: Responsable légal, Père
 
 
 
@@ -40,8 +40,8 @@ Profil: [TDDUI RelatedPerson Contact](StructureDefinition-tddui-related-person-c
       "coding" : [
         {
           "system" : "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass",
-          "code" : "PAT",
-          "display" : "aidé"
+          "code" : "GUARD",
+          "display" : "Responsable légal"
         }
       ]
     },
@@ -49,8 +49,8 @@ Profil: [TDDUI RelatedPerson Contact](StructureDefinition-tddui-related-person-c
       "coding" : [
         {
           "system" : "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode",
-          "code" : "CHILD",
-          "display" : "Enfant"
+          "code" : "FTH",
+          "display" : "Père"
         }
       ]
     }
