@@ -1,10 +1,10 @@
-# tddui-related-person-contact-example - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Related Person Contact Example - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **tddui-related-person-contact-example**
+* **TDDUI Related Person Contact Example**
 
-## Example RelatedPerson: tddui-related-person-contact-example
+## Example RelatedPerson: TDDUI Related Person Contact Example
 
 Profil: [TDDUI RelatedPerson Contact](StructureDefinition-tddui-related-person-contact.md)
 

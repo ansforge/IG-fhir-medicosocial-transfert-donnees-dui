@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "TDDUI"] ; # 
   fhir:title [ fhir:v "Médicosocial - Transfert de données DUI"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-02-04T14:08:59+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-02-04T16:27:48+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -2185,6 +2185,27 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-contact-protection-juridique> ;
+         fhir:reference [ fhir:v "ValueSet/tddui-contact-protection-juridique" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Contact Protection Juridique" ] ;
+       fhir:description [ fhir:v "ValueSet définissant la protection juridique." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-contact-relation> ;
          fhir:reference [ fhir:v "ValueSet/tddui-contact-relation" ]
        ] ;
@@ -2727,27 +2748,6 @@
          ] ;
          fhir:value [
            a fhir:String ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-contact-protection-juridique> ;
-         fhir:reference [ fhir:v "ValueSet/tddui-contact-protection-juridique" ]
-       ] ;
-       fhir:name [ fhir:v "TDDUI Protection Juridique" ] ;
-       fhir:description [ fhir:v "ValueSet définissant la protection juridique." ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
@@ -2760,6 +2760,28 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "RelatedPerson"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/RelatedPerson/tddui-related-person-contact-example> ;
+         fhir:reference [ fhir:v "RelatedPerson/tddui-related-person-contact-example" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Related Person Contact Example" ] ;
+       fhir:description [ fhir:v "Exemple d'un contact." ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact|2.2.0-ballot"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact?version=2.2.0-ballot>
        ]
      ] [
        fhir:extension ( [
@@ -4066,28 +4088,6 @@
          a fhir:Canonical ;
          fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response|2.2.0-ballot"^^xsd:anyURI ;
          fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response?version=2.2.0-ballot>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "RelatedPerson"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/RelatedPerson/tddui-related-person-contact-example> ;
-         fhir:reference [ fhir:v "RelatedPerson/tddui-related-person-contact-example" ]
-       ] ;
-       fhir:name [ fhir:v "tddui-related-person-contact-example" ] ;
-       fhir:description [ fhir:v "Exemple d'un contact." ] ;
-       fhir:example [
-         a fhir:Canonical ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact|2.2.0-ballot"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact?version=2.2.0-ballot>
        ]
      ] [
        fhir:extension ( [

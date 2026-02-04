@@ -141,7 +141,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2026-02-04T14:08:59+00:00",
+  "date" : "2026-02-04T16:27:48+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -1432,6 +1432,20 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           }
         ],
         "reference" : {
+          "reference" : "ValueSet/tddui-contact-protection-juridique"
+        },
+        "name" : "TDDUI Contact Protection Juridique",
+        "description" : "ValueSet définissant la protection juridique.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
           "reference" : "ValueSet/tddui-contact-relation"
         },
         "name" : "TDDUI Contact Relation",
@@ -1792,20 +1806,6 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/tddui-contact-protection-juridique"
-        },
-        "name" : "TDDUI Protection Juridique",
-        "description" : "ValueSet définissant la protection juridique.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:resource"
           }
         ],
@@ -1815,6 +1815,20 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "name" : "TDDUI QuestionnaireResponse",
         "description" : "Profil de la ressource QuestionnaireResponse utilisé pour transmettre les réponses aux questionnaires dans le cadre des évaluations.",
         "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "RelatedPerson"
+          }
+        ],
+        "reference" : {
+          "reference" : "RelatedPerson/tddui-related-person-contact-example"
+        },
+        "name" : "TDDUI Related Person Contact Example",
+        "description" : "Exemple d'un contact.",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact|2.2.0-ballot"
       },
       {
         "extension" : [
@@ -2655,20 +2669,6 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "name" : "tddui-questionnaire-response-situation-ssiad-example",
         "description" : "Grille de réponse de la situation SSIAD",
         "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response|2.2.0-ballot"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "RelatedPerson"
-          }
-        ],
-        "reference" : {
-          "reference" : "RelatedPerson/tddui-related-person-contact-example"
-        },
-        "name" : "tddui-related-person-contact-example",
-        "description" : "Exemple d'un contact.",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact|2.2.0-ballot"
       },
       {
         "extension" : [
