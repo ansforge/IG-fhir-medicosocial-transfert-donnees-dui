@@ -16,10 +16,12 @@ Description: "Profil de la ressource FRCoreRelatedPersonProfile permettant de re
 
 // Slice Role à ajouter lorsque les NOS du mois de janvier seront disponibles
 
+* relationship[Role] from $JDV-J384-Role-Membre-Famille-MS (required)
+
 * relationship[RelationType] from TDDUIContactRelation (required)
-* relationship[RelationType].coding.system = "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode"
 
 * relationship[LegalProtection] from TDDUIContactProtectionJuridique (required)
+* relationship[LegalProtection].coding.system 1..1
 * relationship[LegalProtection].coding.system = "https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique"
 
 * name only tddui-humanname
