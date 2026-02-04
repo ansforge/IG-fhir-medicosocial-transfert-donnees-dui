@@ -11,10 +11,10 @@ Description: "Profil de la ressource FRCoreRelatedPersonProfile permettant de re
 
 * patient only Reference(TDDUIPatient or TDDUIPatientINS)
 
+* relationship from TDDUIRelatedPersonRelashionship
+
 * relationship contains
     LegalProtection 0..1
-
-// Slice Role à ajouter lorsque les NOS du mois de janvier seront disponibles
 
 * relationship[Role] from $JDV-J384-Role-Membre-Famille-MS (required)
 
