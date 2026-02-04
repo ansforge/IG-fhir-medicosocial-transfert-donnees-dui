@@ -1941,6 +1941,8 @@ Le Participant est une personne morale ou physique prenant part à l'événement
 
 Cette classe correspond à la structure en charge de l'évènement. Cette structure peut être différente de la structure de rattachement de l'usager.
 
+Le lien est créé entre la classe Professionnel et la classe StructureEnCharge si le participant en tant que personne physique est interne à la structure en charge de l'évènement. Dans le cas contraire ce lien n'est pas créé.
+
 ##### Classe StructureRattachement
 
 ** Classe spécialisée, hérite de la classe EntiteJuridique qui est issue du MOS et qui est profilée pour ce volet.

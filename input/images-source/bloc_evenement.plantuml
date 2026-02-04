@@ -14,8 +14,6 @@ class EntiteJuridique #LightYellow
 
 class StructureEnCharge #LightGray
 
-class StructureRattachement #LightGray
-
 class Statut #LightYellow 
 
 class Transport #LightGray {
@@ -68,7 +66,6 @@ Transport <|- TransportUsager
 Transport <|-- TransportProfessionnel
 
 EntiteJuridique <|-- StructureEnCharge
-EntiteJuridique <|- StructureRattachement
 
 Evenement "*" -- "1" Usager
 Participant "*" -- "1..*" Evenement
@@ -83,6 +80,4 @@ Evenement "0..1" -- "0..1" Evaluation
 Evenement "1" -- "*" Statut
 
 StructureEnCharge "0..1" -- "*" Participant
-StructureRattachement "0..1" -- "0..1" Participant
-
-@enduml
+StructureEnCharge "0..1" -- "0..1" Professionnel
