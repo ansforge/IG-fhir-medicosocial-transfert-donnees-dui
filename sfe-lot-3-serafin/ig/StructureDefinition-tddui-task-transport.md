@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport | *Version*:2.2.0-ballot |
-| Active as of 2026-02-03 | *Computable Name*:TDDUITaskTransport |
+| Active as of 2026-02-04 | *Computable Name*:TDDUITaskTransport |
 
  
 Profil de la ressource Task permettant de représenter le transport. 
@@ -22,9 +22,9 @@ Profil de la ressource Task permettant de représenter le transport.
 **Utilisations:**
 
 * Dérivé de ce Profil: [TDDUI Task Transport Professionnel](StructureDefinition-tddui-task-transport-professionnel.md) and [TDDUI Task Transport Usager](StructureDefinition-tddui-task-transport-usager.md)
-* Exemples pour ce Profil: [Task/tddui-task-transport-example](Task-tddui-task-transport-example.md)
+* Exemples pour ce/t/te Profil: [Task/tddui-task-transport-example](Task-tddui-task-transport-example.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-task-transport)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-task-transport)
 
 ### Formal Views of Profile Content
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
   "name" : "TDDUITaskTransport",
   "title" : "TDDUI Task Transport",
   "status" : "active",
-  "date" : "2026-02-03T13:25:15+00:00",
+  "date" : "2026-02-04T07:54:35+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

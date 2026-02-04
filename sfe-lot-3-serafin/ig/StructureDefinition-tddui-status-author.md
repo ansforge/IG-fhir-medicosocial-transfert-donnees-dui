@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-status-author | *Version*:2.2.0-ballot |
-| Active as of 2026-02-03 | *Computable Name*:TDDUIStatusAuthor |
+| Active as of 2026-02-04 | *Computable Name*:TDDUIStatusAuthor |
 
 Extension permettant de représenter la profession du professionnel.
 
@@ -19,9 +19,9 @@ Extension permettant de représenter la profession du professionnel.
 
 **Utilisations:**
 
-* Utiliser ce Extension: [TDDUI CarePlan Projet Personalise](StructureDefinition-tddui-careplan-projet-personnalise.md), [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md), [TDDUI Task Action](StructureDefinition-tddui-task-action.md) and [TDDUI Task Prestation](StructureDefinition-tddui-task-prestation.md)
+* Utilise ce/t/te Extension: [TDDUI CarePlan Projet Personalise](StructureDefinition-tddui-careplan-projet-personnalise.md), [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md), [TDDUI Task Action](StructureDefinition-tddui-task-action.md) and [TDDUI Task Prestation](StructureDefinition-tddui-task-prestation.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-status-author)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-status-author)
 
 ### Formal Views of Extension Content
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-status-author.
   "name" : "TDDUIStatusAuthor",
   "title" : "TDDUI Auteur statut",
   "status" : "active",
-  "date" : "2026-02-03T13:25:15+00:00",
+  "date" : "2026-02-04T07:54:35+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

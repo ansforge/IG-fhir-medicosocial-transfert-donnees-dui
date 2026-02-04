@@ -161,7 +161,7 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
 * Nom: identifiantUsagerESSMS : [0..1] Identifiant
   * Description: Identifiant de l’usager au sein de la structure.Cet identifiant est obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature[TRE_G08-TypeIdentifiantPersonne](https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne)), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS) : 3+FINESS/identifiantLocalUsagerESSMS
 * Nom: numeroIndividuInitial : [0..1] Identifiant
-  * Description: Numéro de l’individu attribué par la MDPH ayant créé le dossier Individu (= MDPH initiale).Cet identifiant est obtenu par la concaténation du numéro de l'individu local attribué par la MDPH ayant créé le dossier Individu (identifiantIndividuMDPHInitial) et du numéro de la MDPH (identifiantMDPH) : identifiantIndividuMDPHInitial/identifiantMDPHSynonyme = identifiantMDPH
+  * Description: Numéro de l’individu attribué par la MDPH (= MDPH initiale) ayant créé le dossier Individu.Cet identifiant est obtenu par la concaténation du numéro de l'individu local attribué par la MDPH ayant créé le dossier Individu (idIndividuMDPHInitial) et du numéro de cette MDPH (idMDPH) : idIndividuMDPHInitial/idMDPHSynonyme = identifiantMDPH
 * Nom: nomNaissance : [1..1] Texte
   * Description: Toute personne possède un nom de famille (appelé auparavant nom patronymique). Ce nom figure sur l'acte de naissance. Il peut s'agir par exemple du nom du père.Cet attribut fait partie des traits INS. Il est obligatoire si l’identité INS est qualifiée.
 * Nom: nomUsage : [0..1] Texte
