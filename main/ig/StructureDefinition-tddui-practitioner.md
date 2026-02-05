@@ -17,7 +17,7 @@ Profil de la ressource FRCorePractitionerProfile permettant de représenter un p
 **Utilisations:**
 
 * Utilise ce/t/te Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
-* Référence ce Profil: [TDDUI Consent Accord](StructureDefinition-tddui-consent-accord.md), [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md), [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md), [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md)... Show 7 more, [TDDUI Practitioner Role](StructureDefinition-tddui-practitioner-role.md), [Responsable et auteur du statut de l'évaluation](StructureDefinition-tddui-qr-participant.md), [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md), [TDDUI Auteur statut](StructureDefinition-tddui-status-author.md), [TDDUI Task Action](StructureDefinition-tddui-task-action.md), [TDDUI Task Bilan](StructureDefinition-tddui-task-bilan.md) and [TDDUI Task Transport Professionnel](StructureDefinition-tddui-task-transport-professionnel.md)
+* Référence ce Profil: [TDDUI Consent Accord](StructureDefinition-tddui-consent-accord.md), [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md), [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md), [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md)... Show 7 more, [TDDUI Practitioner Role](StructureDefinition-tddui-practitioner-role.md), [TDDUI QR Participant](StructureDefinition-tddui-qr-participant.md), [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md), [TDDUI Status Author](StructureDefinition-tddui-status-author.md), [TDDUI Task Action](StructureDefinition-tddui-task-action.md), [TDDUI Task Bilan](StructureDefinition-tddui-task-bilan.md) and [TDDUI Task Transport Professionnel](StructureDefinition-tddui-task-transport-professionnel.md)
 * Exemples pour ce/t/te Profil: [Practitioner/tddui-pp-pa-practitioner-ide-example](Practitioner-tddui-pp-pa-practitioner-ide-example.md) and [Practitioner/tddui-practitioner-example](Practitioner-tddui-practitioner-example.md)
 * CapabilityStatements utilisant ce Profil: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-practitioner.c
   "name" : "TDDUIPractitioner",
   "title" : "TDDUI Practitioner",
   "status" : "active",
-  "date" : "2026-02-05T14:50:20+00:00",
+  "date" : "2026-02-05T15:15:02+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

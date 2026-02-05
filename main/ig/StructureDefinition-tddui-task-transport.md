@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
   "name" : "TDDUITaskTransport",
   "title" : "TDDUI Task Transport",
   "status" : "active",
-  "date" : "2026-02-05T14:50:20+00:00",
+  "date" : "2026-02-05T15:15:02+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -226,7 +226,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
         "path" : "Task.input.type",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset"
+          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-task-input-transport"
         }
       },
       {
@@ -249,7 +249,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
               "code" : "typeMotorisation"
             }
           ]
@@ -288,7 +288,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
               "code" : "adresseDepart"
             }
           ]
@@ -323,7 +323,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
               "code" : "adresseDestination"
             }
           ]
@@ -358,7 +358,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
               "code" : "budgetPrevisionnel"
             }
           ]
@@ -393,7 +393,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
               "code" : "budgetReel"
             }
           ]
@@ -428,7 +428,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
               "code" : "distance"
             }
           ]
@@ -463,7 +463,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
               "code" : "dureeTheorique"
             }
           ]

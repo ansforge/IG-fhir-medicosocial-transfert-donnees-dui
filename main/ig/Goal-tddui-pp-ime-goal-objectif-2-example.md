@@ -1,14 +1,14 @@
-# tddui-pp-ime-goal-objectif-2-example - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI PP IME Goal Objectif 2 Example - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **tddui-pp-ime-goal-objectif-2-example**
+* **TDDUI PP IME Goal Objectif 2 Example**
 
-## Example Goal: tddui-pp-ime-goal-objectif-2-example
+## Example Goal: TDDUI PP IME Goal Objectif 2 Example
 
 Profil: [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md)
 
-**Lien vers le projet personnalisé**: [CarePlan Projet personnalisé de Hugo en IME](CarePlan-tddui-pp-ime-careplan-example.md)
+**TDDUI CarePlan Projet Perso Ref**: [CarePlan Projet personnalisé de Hugo en IME](CarePlan-tddui-pp-ime-careplan-example.md)
 
 **identifier**: `https://identifiant-medicosocial-objectif.esante.gouv.fr`/3480787529/123456-OBJE-1235
 
@@ -67,7 +67,7 @@ Objectif 2
           "valueCodeableConcept" : {
             "coding" : [
               {
-                "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs",
+                "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator",
                 "code" : "titreObjectif"
               }
             ]

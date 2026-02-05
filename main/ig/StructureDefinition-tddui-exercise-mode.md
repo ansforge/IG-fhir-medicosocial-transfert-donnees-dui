@@ -1,10 +1,10 @@
-# Mode d'exercice - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Exercise Mode - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Mode d'exercice**
+* **TDDUI Exercise Mode**
 
-## Extension: Mode d'exercice 
+## Extension: TDDUI Exercise Mode 
 
 | | |
 | :--- | :--- |
@@ -20,7 +20,7 @@ Extension permettant de représenter le mode d'exercice du professionnel.
 **Utilisations:**
 
 * Utilise ce/t/te Extension: [TDDUI Practitioner Role](StructureDefinition-tddui-practitioner-role.md)
-* Exemples pour ce/t/te Extension: [Bundle/ExampleTDDUIBundle](Bundle-ExampleTDDUIBundle.md) and [PractitionerRole/tddui-practitioner-role-example](PractitionerRole-tddui-practitioner-role-example.md)
+* Exemples pour ce/t/te Extension: [Bundle/tddui-bundle-example](Bundle-tddui-bundle-example.md) and [PractitionerRole/tddui-practitioner-role-example](PractitionerRole-tddui-practitioner-role-example.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-exercise-mode)
 
@@ -47,9 +47,9 @@ Other representations of profile: [CSV](StructureDefinition-tddui-exercise-mode.
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exercise-mode",
   "version" : "2.2.0-ballot",
   "name" : "TDDUIExerciseMode",
-  "title" : "Mode d'exercice",
+  "title" : "TDDUI Exercise Mode",
   "status" : "active",
-  "date" : "2026-02-05T14:50:20+00:00",
+  "date" : "2026-02-05T15:15:02+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -98,7 +98,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-exercise-mode.
       {
         "id" : "Extension",
         "path" : "Extension",
-        "short" : "Mode d'exercice",
+        "short" : "TDDUI Exercise Mode",
         "definition" : "Extension permettant de représenter le mode d'exercice du professionnel."
       },
       {

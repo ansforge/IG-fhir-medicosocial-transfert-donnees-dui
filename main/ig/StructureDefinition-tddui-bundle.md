@@ -16,7 +16,7 @@ Profil générique créé pour transmettre des données d'un logiciel DUI.
 
 **Utilisations:**
 
-* Exemples pour ce/t/te Profil: [Bundle/ExampleTDDUIBundle](Bundle-ExampleTDDUIBundle.md), [Bundle/tddui-pp-ime-bundle-example](Bundle-tddui-pp-ime-bundle-example.md) and [Bundle/tddui-pp-pa-bundle-example](Bundle-tddui-pp-pa-bundle-example.md)
+* Exemples pour ce/t/te Profil: [Bundle/tddui-bundle-example](Bundle-tddui-bundle-example.md), [Bundle/tddui-pp-ime-bundle-example](Bundle-tddui-pp-ime-bundle-example.md) and [Bundle/tddui-pp-pa-bundle-example](Bundle-tddui-pp-pa-bundle-example.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-bundle)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
   "name" : "TDDUIBundle",
   "title" : "TDDUI Bundle",
   "status" : "active",
-  "date" : "2026-02-05T14:50:20+00:00",
+  "date" : "2026-02-05T15:15:02+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

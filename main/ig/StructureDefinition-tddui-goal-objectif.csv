@@ -52,15 +52,15 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Goal.extension:referenceEvaluation","Goal.extension","referenceEvaluation","","",0,*,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-evaluation-reference]]} {[]}
-","Lien vers l'évaluation","Liens vers l'évaluation, utilisables dans le profil TDDUIGoalObjectif.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","TDDUI Evaluation Ref","Liens vers l'évaluation, utilisables dans le profil TDDUIGoalObjectif.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","evaluationObjectif"
 "Goal.extension:referenceProjetPerso","Goal.extension","referenceProjetPerso","","",1,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference]]} {[]}
-","Lien vers le projet personnalisé","Liens vers le projet personnalisé, utilisables dans le profil TDDUIGoalObjectif.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","TDDUI CarePlan Projet Perso Ref","Liens vers le projet personnalisé, utilisables dans le profil TDDUIGoalObjectif.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","ProjetPersonnalise"
 "Goal.extension:pieceJointeObjectif","Goal.extension","pieceJointeObjectif","","",0,*,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment]]} {[]}
-","Pièce jointe","Extension permettant de véhiculer des pièces jointes que ce soit pour l'évaluation, l'évènement ou le projet personnalisé. L'extension référence le profil PDSm_SimplifiedPublish.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","TDDUI Attachment","Extension permettant de véhiculer des pièces jointes que ce soit pour l'évaluation, l'évènement ou le projet personnalisé. L'extension référence le profil PDSm_SimplifiedPublish.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Goal.modifierExtension","Goal.modifierExtension","","extensions
@@ -107,7 +107,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Goal.lifecycleStatus.extension:auteurStatut","Goal.lifecycleStatus.extension","auteurStatut","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-status-author]]} {[]}
-","TDDUI Auteur statut","Extension permettant de représenter la profession du professionnel.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","TDDUI Status Author","Extension permettant de représenter la profession du professionnel.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","statutObjectif.auteur"
 "Goal.lifecycleStatus.value","Goal.lifecycleStatus.value","","","",0,1,"","","","string {[]} {[]}
@@ -206,7 +206,7 @@ Duration {[]} {[]}","Reach goal on or before","Indicates either the date or the 
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Goal.note.extension:TDDUIDiscriminator","Goal.note.extension","TDDUIDiscriminator","","",1,3,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator]]} {[]}
-","TDDUI Discriminator Extension","Extension pour discriminer les éléments CarePlan.supportingInfo et Goal.note.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","TDDUI Discriminator","Extension pour discriminer les éléments CarePlan.supportingInfo et Goal.note.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Goal.note.author[x]","Goal.note.author[x]","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner|4.0.1], CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient|4.0.1], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson|4.0.1], CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization|4.0.1]]}
 string {[]} {[]}","Individual responsible for the annotation","The individual responsible for making the annotation.","Organization is used when there's no need for specific attribution as to who made the comment.","","","","","","","","",,,,,"",,,,"Annotation.author[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -227,7 +227,7 @@ string {[]} {[]}","Individual responsible for the annotation","The individual re
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Goal.note:titreObjectif.extension:TDDUIDiscriminator","Goal.note.extension","TDDUIDiscriminator","","",1,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator]]} {[]}
-","TDDUI Discriminator Extension","Extension pour discriminer les éléments CarePlan.supportingInfo et Goal.note.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","TDDUI Discriminator","Extension pour discriminer les éléments CarePlan.supportingInfo et Goal.note.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Goal.note:titreObjectif.extension:TDDUIDiscriminator.id","Goal.note.extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
@@ -240,10 +240,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Goal.note:titreObjectif.extension:TDDUIDiscriminator.value[x]","Goal.note.extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs""/>
+    <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator""/>
     <code value=""titreObjectif""/>
   </coding>
-</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-goal-objectif-note-vs","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-goal-objectif-note","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
 "Goal.note:titreObjectif.author[x]","Goal.note.author[x]","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner|4.0.1], CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient|4.0.1], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson|4.0.1], CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization|4.0.1]]}
 string {[]} {[]}","Individual responsible for the annotation","The individual responsible for making the annotation.","Organization is used when there's no need for specific attribution as to who made the comment.","","","","","","","","",,,,,"",,,,"Annotation.author[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -264,7 +264,7 @@ string {[]} {[]}","Individual responsible for the annotation","The individual re
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Goal.note:avisUsagerObjectif.extension:TDDUIDiscriminator","Goal.note.extension","TDDUIDiscriminator","","",1,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator]]} {[]}
-","TDDUI Discriminator Extension","Extension pour discriminer les éléments CarePlan.supportingInfo et Goal.note.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","TDDUI Discriminator","Extension pour discriminer les éléments CarePlan.supportingInfo et Goal.note.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Goal.note:avisUsagerObjectif.extension:TDDUIDiscriminator.id","Goal.note.extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
@@ -277,10 +277,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Goal.note:avisUsagerObjectif.extension:TDDUIDiscriminator.value[x]","Goal.note.extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs""/>
+    <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator""/>
     <code value=""avisUsagerObjectif""/>
   </coding>
-</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-goal-objectif-note-vs","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-goal-objectif-note","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
 "Goal.note:avisUsagerObjectif.author[x]","Goal.note.author[x]","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner|4.0.1], CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient|4.0.1], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson|4.0.1], CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization|4.0.1]]}
 string {[]} {[]}","Individual responsible for the annotation","The individual responsible for making the annotation.","Organization is used when there's no need for specific attribution as to who made the comment.","","","","","","","","",,,,,"",,,,"Annotation.author[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -301,7 +301,7 @@ string {[]} {[]}","Individual responsible for the annotation","The individual re
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Goal.note:strategieMiseEnOeuvreObjectif.extension:TDDUIDiscriminator","Goal.note.extension","TDDUIDiscriminator","","",1,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator]]} {[]}
-","TDDUI Discriminator Extension","Extension pour discriminer les éléments CarePlan.supportingInfo et Goal.note.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","TDDUI Discriminator","Extension pour discriminer les éléments CarePlan.supportingInfo et Goal.note.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Goal.note:strategieMiseEnOeuvreObjectif.extension:TDDUIDiscriminator.id","Goal.note.extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
@@ -314,10 +314,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Goal.note:strategieMiseEnOeuvreObjectif.extension:TDDUIDiscriminator.value[x]","Goal.note.extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs""/>
+    <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator""/>
     <code value=""strategieMiseEnOeuvreObjectif""/>
   </coding>
-</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-goal-objectif-note-vs","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-goal-objectif-note","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
 "Goal.note:strategieMiseEnOeuvreObjectif.author[x]","Goal.note.author[x]","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner|4.0.1], CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient|4.0.1], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson|4.0.1], CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization|4.0.1]]}
 string {[]} {[]}","Individual responsible for the annotation","The individual responsible for making the annotation.","Organization is used when there's no need for specific attribution as to who made the comment.","","","","","","","","",,,,,"",,,,"Annotation.author[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

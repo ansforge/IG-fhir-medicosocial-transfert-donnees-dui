@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-prestatio
   "name" : "TDDUITaskPrestation",
   "title" : "TDDUI Task Prestation",
   "status" : "active",
-  "date" : "2026-02-05T14:50:20+00:00",
+  "date" : "2026-02-05T15:15:02+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -286,7 +286,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-prestatio
         "path" : "Task.input.type",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-prestation-valueset"
+          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-task-input-prestation"
         }
       },
       {
@@ -309,7 +309,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-prestatio
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-prestation-codesystem",
+              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-prestation",
               "code" : "titre"
             }
           ]
@@ -344,7 +344,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-prestatio
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-prestation-codesystem",
+              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-prestation",
               "code" : "typePrestation"
             }
           ]
@@ -360,7 +360,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-prestatio
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-serafin-valueset"
+          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-serafin"
         }
       },
       {
@@ -383,7 +383,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-prestatio
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-prestation-codesystem",
+              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-prestation",
               "code" : "evaluation"
             }
           ]
@@ -421,7 +421,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-prestatio
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-prestation-codesystem",
+              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-prestation",
               "code" : "pieceJointe"
             }
           ]

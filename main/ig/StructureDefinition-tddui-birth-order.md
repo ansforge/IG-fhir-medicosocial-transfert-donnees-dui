@@ -1,10 +1,10 @@
-# Ordre de naissance dans le registre d'état civil - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Birth Order - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Ordre de naissance dans le registre d'état civil**
+* **TDDUI Birth Order**
 
-## Extension: Ordre de naissance dans le registre d'état civil 
+## Extension: TDDUI Birth Order 
 
 | | |
 | :--- | :--- |
@@ -45,9 +45,9 @@ Other representations of profile: [CSV](StructureDefinition-tddui-birth-order.cs
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order",
   "version" : "2.2.0-ballot",
   "name" : "TDDUIBirthOrder",
-  "title" : "Ordre de naissance dans le registre d'état civil",
+  "title" : "TDDUI Birth Order",
   "status" : "active",
-  "date" : "2026-02-05T14:50:20+00:00",
+  "date" : "2026-02-05T15:15:02+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -96,7 +96,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-birth-order.cs
       {
         "id" : "Extension",
         "path" : "Extension",
-        "short" : "Ordre de naissance dans le registre d'état civil",
+        "short" : "TDDUI Birth Order",
         "definition" : "Ordre d’enregistrement de la naissance dans le registre d’état civil de la commune de naissance pour le mois de la naissance. Il compose les 3 derniers chiffres du NIR de l'usager avant la clé de sécurité et permet de distinguer les personnes nées au même lieu et à la même période. Il est obligatoire si le NIR n'est pas transmis."
       },
       {

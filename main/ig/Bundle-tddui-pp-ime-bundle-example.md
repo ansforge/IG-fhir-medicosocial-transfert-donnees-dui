@@ -1,10 +1,10 @@
-# tddui-pp-ime-bundle-example - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI PP IME Bundle Example - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **tddui-pp-ime-bundle-example**
+* **TDDUI PP IME Bundle Example**
 
-## Example Bundle: tddui-pp-ime-bundle-example
+## Example Bundle: TDDUI PP IME Bundle Example
 
 
 
@@ -148,7 +148,7 @@
                 "valueCodeableConcept" : {
                   "coding" : [
                     {
-                      "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs",
+                      "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator",
                       "code" : "accordStructure"
                     }
                   ]
@@ -176,7 +176,7 @@
         },
         "text" : {
           "status" : "extensions",
-          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Goal_tddui-pp-ime-goal-objectif-1-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : But tddui-pp-ime-goal-objectif-1-example</b></p><a name=\"tddui-pp-ime-goal-objectif-1-example\"> </a><a name=\"hctddui-pp-ime-goal-objectif-1-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-goal-objectif.html\">TDDUI Goal Objectif</a></p></div><p><b>Lien vers le projet personnalisé</b>: <a href=\"CarePlan-tddui-pp-ime-careplan-example.html\">CarePlan Projet personnalisé de Hugo en IME</a></p><p><b>identifier</b>: <code>https://identifiant-medicosocial-objectif.esante.gouv.fr</code>/3480787529/123456-OBJE-1234</p><p><b>lifecycleStatus</b>: Active</p><p><b>description</b>: <span title=\"Codes :\">Tolérer 20 min de cour avec casque anti‑bruit en 4 mois.</span></p><p><b>subject</b>: <a href=\"Patient-tddui-pp-ime-patient-example.html\">Hugo D. (official) (sexe non précisé), Date de Naissance inconnue ( Patient internal identifier: 3480787529/123456)</a></p><p><b>note</b>: </p><blockquote><div><p>Objectif 1</p>\n</div></blockquote></div>"
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Goal_tddui-pp-ime-goal-objectif-1-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : But tddui-pp-ime-goal-objectif-1-example</b></p><a name=\"tddui-pp-ime-goal-objectif-1-example\"> </a><a name=\"hctddui-pp-ime-goal-objectif-1-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-goal-objectif.html\">TDDUI Goal Objectif</a></p></div><p><b>TDDUI CarePlan Projet Perso Ref</b>: <a href=\"CarePlan-tddui-pp-ime-careplan-example.html\">CarePlan Projet personnalisé de Hugo en IME</a></p><p><b>identifier</b>: <code>https://identifiant-medicosocial-objectif.esante.gouv.fr</code>/3480787529/123456-OBJE-1234</p><p><b>lifecycleStatus</b>: Active</p><p><b>description</b>: <span title=\"Codes :\">Tolérer 20 min de cour avec casque anti‑bruit en 4 mois.</span></p><p><b>subject</b>: <a href=\"Patient-tddui-pp-ime-patient-example.html\">Hugo D. (official) (sexe non précisé), Date de Naissance inconnue ( Patient internal identifier: 3480787529/123456)</a></p><p><b>note</b>: </p><blockquote><div><p>Objectif 1</p>\n</div></blockquote></div>"
         },
         "extension" : [
           {
@@ -207,7 +207,7 @@
                 "valueCodeableConcept" : {
                   "coding" : [
                     {
-                      "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs",
+                      "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator",
                       "code" : "titreObjectif"
                     }
                   ]
@@ -235,7 +235,7 @@
         },
         "text" : {
           "status" : "extensions",
-          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Goal_tddui-pp-ime-goal-objectif-2-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : But tddui-pp-ime-goal-objectif-2-example</b></p><a name=\"tddui-pp-ime-goal-objectif-2-example\"> </a><a name=\"hctddui-pp-ime-goal-objectif-2-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-goal-objectif.html\">TDDUI Goal Objectif</a></p></div><p><b>Lien vers le projet personnalisé</b>: <a href=\"CarePlan-tddui-pp-ime-careplan-example.html\">CarePlan Projet personnalisé de Hugo en IME</a></p><p><b>identifier</b>: <code>https://identifiant-medicosocial-objectif.esante.gouv.fr</code>/3480787529/123456-OBJE-1235</p><p><b>lifecycleStatus</b>: Active</p><p><b>description</b>: <span title=\"Codes :\">Atteindre le niveau lecteur débutant (décodage syllabique) en 9 mois.</span></p><p><b>subject</b>: <a href=\"Patient-tddui-pp-ime-patient-example.html\">Hugo D. (official) (sexe non précisé), Date de Naissance inconnue ( Patient internal identifier: 3480787529/123456)</a></p><p><b>note</b>: </p><blockquote><div><p>Objectif 2</p>\n</div></blockquote></div>"
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Goal_tddui-pp-ime-goal-objectif-2-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : But tddui-pp-ime-goal-objectif-2-example</b></p><a name=\"tddui-pp-ime-goal-objectif-2-example\"> </a><a name=\"hctddui-pp-ime-goal-objectif-2-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-goal-objectif.html\">TDDUI Goal Objectif</a></p></div><p><b>TDDUI CarePlan Projet Perso Ref</b>: <a href=\"CarePlan-tddui-pp-ime-careplan-example.html\">CarePlan Projet personnalisé de Hugo en IME</a></p><p><b>identifier</b>: <code>https://identifiant-medicosocial-objectif.esante.gouv.fr</code>/3480787529/123456-OBJE-1235</p><p><b>lifecycleStatus</b>: Active</p><p><b>description</b>: <span title=\"Codes :\">Atteindre le niveau lecteur débutant (décodage syllabique) en 9 mois.</span></p><p><b>subject</b>: <a href=\"Patient-tddui-pp-ime-patient-example.html\">Hugo D. (official) (sexe non précisé), Date de Naissance inconnue ( Patient internal identifier: 3480787529/123456)</a></p><p><b>note</b>: </p><blockquote><div><p>Objectif 2</p>\n</div></blockquote></div>"
         },
         "extension" : [
           {
@@ -266,7 +266,7 @@
                 "valueCodeableConcept" : {
                   "coding" : [
                     {
-                      "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs",
+                      "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator",
                       "code" : "titreObjectif"
                     }
                   ]
@@ -294,7 +294,7 @@
         },
         "text" : {
           "status" : "generated",
-          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_tddui-pp-ime-task-action-1-aesh-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Task tddui-pp-ime-task-action-1-aesh-example</b></p><a name=\"tddui-pp-ime-task-action-1-aesh-example\"> </a><a name=\"hctddui-pp-ime-task-action-1-aesh-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-task-action.html\">TDDUI Task Action</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-action.esante.gouv.fr</code>/3480787529/123456-ACTI-1234</p><p><b>basedOn</b>: <a href=\"CarePlan-tddui-pp-ime-careplan-example.html\">CarePlan Projet personnalisé de Hugo en IME</a></p><p><b>status</b>: In Progress</p><p><b>intent</b>: plan</p><p><b>description</b>: Vérification port du casque</p><p><b>owner</b>: AESH</p><h3>Inputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem titre}\">Titre de l'action à mener.</span></td><td>Action de l'AS pour atteindre l'objectif 1</td></tr></table></div>"
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_tddui-pp-ime-task-action-1-aesh-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Task tddui-pp-ime-task-action-1-aesh-example</b></p><a name=\"tddui-pp-ime-task-action-1-aesh-example\"> </a><a name=\"hctddui-pp-ime-task-action-1-aesh-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-task-action.html\">TDDUI Task Action</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-action.esante.gouv.fr</code>/3480787529/123456-ACTI-1234</p><p><b>basedOn</b>: <a href=\"CarePlan-tddui-pp-ime-careplan-example.html\">CarePlan Projet personnalisé de Hugo en IME</a></p><p><b>status</b>: In Progress</p><p><b>intent</b>: plan</p><p><b>description</b>: Vérification port du casque</p><p><b>owner</b>: AESH</p><h3>Inputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action titre}\">Titre de l'action à mener.</span></td><td>Action de l'AS pour atteindre l'objectif 1</td></tr></table></div>"
         },
         "identifier" : [
           {
@@ -318,7 +318,7 @@
             "type" : {
               "coding" : [
                 {
-                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem",
+                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action",
                   "code" : "titre"
                 }
               ]
@@ -344,7 +344,7 @@
         },
         "text" : {
           "status" : "generated",
-          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_tddui-pp-ime-task-action-1-educ-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Task tddui-pp-ime-task-action-1-educ-example</b></p><a name=\"tddui-pp-ime-task-action-1-educ-example\"> </a><a name=\"hctddui-pp-ime-task-action-1-educ-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-task-action.html\">TDDUI Task Action</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-action.esante.gouv.fr</code>/3480787529/123456-ACTI-1235</p><p><b>basedOn</b>: <a href=\"CarePlan-tddui-pp-ime-careplan-example.html\">CarePlan Projet personnalisé de Hugo en IME</a></p><p><b>status</b>: In Progress</p><p><b>intent</b>: plan</p><p><b>description</b>: Lecture guidée sur tablette 15 min/jour</p><p><b>owner</b>: AESH</p><h3>Inputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem titre}\">Titre de l'action à mener.</span></td><td>Action de l'éducateur spécialisé pour atteindre l'objectif 2</td></tr></table></div>"
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_tddui-pp-ime-task-action-1-educ-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Task tddui-pp-ime-task-action-1-educ-example</b></p><a name=\"tddui-pp-ime-task-action-1-educ-example\"> </a><a name=\"hctddui-pp-ime-task-action-1-educ-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-task-action.html\">TDDUI Task Action</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-action.esante.gouv.fr</code>/3480787529/123456-ACTI-1235</p><p><b>basedOn</b>: <a href=\"CarePlan-tddui-pp-ime-careplan-example.html\">CarePlan Projet personnalisé de Hugo en IME</a></p><p><b>status</b>: In Progress</p><p><b>intent</b>: plan</p><p><b>description</b>: Lecture guidée sur tablette 15 min/jour</p><p><b>owner</b>: AESH</p><h3>Inputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action titre}\">Titre de l'action à mener.</span></td><td>Action de l'éducateur spécialisé pour atteindre l'objectif 2</td></tr></table></div>"
         },
         "identifier" : [
           {
@@ -368,7 +368,7 @@
             "type" : {
               "coding" : [
                 {
-                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem",
+                  "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action",
                   "code" : "titre"
                 }
               ]

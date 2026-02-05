@@ -1,10 +1,10 @@
-# Lien vers l'évaluation - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Evaluation Ref - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Lien vers l'évaluation**
+* **TDDUI Evaluation Ref**
 
-## Extension: Lien vers l'évaluation 
+## Extension: TDDUI Evaluation Ref 
 
 | | |
 | :--- | :--- |
@@ -44,9 +44,9 @@ Other representations of profile: [CSV](StructureDefinition-tddui-evaluation-ref
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-evaluation-reference",
   "version" : "2.2.0-ballot",
   "name" : "TDDUIEvaluationRef",
-  "title" : "Lien vers l'évaluation",
+  "title" : "TDDUI Evaluation Ref",
   "status" : "active",
-  "date" : "2026-02-05T14:50:20+00:00",
+  "date" : "2026-02-05T15:15:02+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -95,7 +95,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-evaluation-ref
       {
         "id" : "Extension",
         "path" : "Extension",
-        "short" : "Lien vers l'évaluation",
+        "short" : "TDDUI Evaluation Ref",
         "definition" : "Liens vers l'évaluation, utilisables dans le profil TDDUIGoalObjectif."
       },
       {

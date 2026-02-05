@@ -1,10 +1,10 @@
-# TDDUI Discriminator Extension - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Discriminator - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **TDDUI Discriminator Extension**
+* **TDDUI Discriminator**
 
-## Extension: TDDUI Discriminator Extension 
+## Extension: TDDUI Discriminator 
 
 | | |
 | :--- | :--- |
@@ -47,9 +47,9 @@ Other representations of profile: [CSV](StructureDefinition-tddui-discriminator.
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator",
   "version" : "2.2.0-ballot",
   "name" : "TDDUIDiscriminator",
-  "title" : "TDDUI Discriminator Extension",
+  "title" : "TDDUI Discriminator",
   "status" : "active",
-  "date" : "2026-02-05T14:50:20+00:00",
+  "date" : "2026-02-05T15:15:02+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -102,7 +102,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-discriminator.
       {
         "id" : "Extension",
         "path" : "Extension",
-        "short" : "TDDUI Discriminator Extension",
+        "short" : "TDDUI Discriminator",
         "definition" : "Extension pour discriminer les éléments CarePlan.supportingInfo et Goal.note."
       },
       {
@@ -125,7 +125,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-discriminator.
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-discriminator-vs"
+          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-discriminator"
         }
       }
     ]

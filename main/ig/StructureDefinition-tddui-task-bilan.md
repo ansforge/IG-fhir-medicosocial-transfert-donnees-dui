@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-bilan.csv
   "name" : "TDDUITaskBilan",
   "title" : "TDDUI Task Bilan",
   "status" : "active",
-  "date" : "2026-02-05T14:50:20+00:00",
+  "date" : "2026-02-05T15:15:02+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -210,7 +210,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-bilan.csv
         "path" : "Task.input.type",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-bilan-valueset"
+          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-task-input-bilan"
         }
       },
       {
@@ -233,7 +233,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-bilan.csv
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-bilan-codesystem",
+              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-bilan",
               "code" : "perimetre"
             }
           ]
@@ -268,7 +268,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-bilan.csv
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-bilan-codesystem",
+              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-bilan",
               "code" : "problematique"
             }
           ]
@@ -303,7 +303,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-bilan.csv
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-bilan-codesystem",
+              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-bilan",
               "code" : "invite"
             }
           ]
@@ -338,7 +338,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-bilan.csv
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-bilan-codesystem",
+              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-bilan",
               "code" : "pieceJointe"
             }
           ]
@@ -376,7 +376,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-bilan.csv
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-bilan-codesystem",
+              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-bilan",
               "code" : "dateProchainBilan"
             }
           ]
@@ -411,7 +411,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-bilan.csv
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-bilan-codesystem",
+              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-bilan",
               "code" : "synthesePreparationBilan"
             }
           ]
@@ -493,7 +493,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-bilan.csv
         "path" : "Task.output.type",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/output-tddui-task-bilan-valueset"
+          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-task-output-bilan"
         }
       },
       {
@@ -516,7 +516,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-bilan.csv
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/output-tddui-task-bilan-codesystem",
+              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-output-bilan",
               "code" : "syntheseBilan"
             }
           ]

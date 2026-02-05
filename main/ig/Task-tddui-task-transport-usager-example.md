@@ -1,10 +1,10 @@
-# tddui-task-transport-usager-example - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Task Transport Usager Example - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **tddui-task-transport-usager-example**
+* **TDDUI Task Transport Usager Example**
 
-## Example Task: tddui-task-transport-usager-example
+## Example Task: TDDUI Task Transport Usager Example
 
 Profil: [TDDUI Task Transport Usager](StructureDefinition-tddui-task-transport-usager.md)
 
@@ -76,7 +76,7 @@ Profil: [TDDUI Task Transport Usager](StructureDefinition-tddui-task-transport-u
       "type" : {
         "coding" : [
           {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
             "code" : "budgetPrevisionnel"
           }
         ]
@@ -90,7 +90,7 @@ Profil: [TDDUI Task Transport Usager](StructureDefinition-tddui-task-transport-u
       "type" : {
         "coding" : [
           {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
             "code" : "budgetReel"
           }
         ]
@@ -104,7 +104,7 @@ Profil: [TDDUI Task Transport Usager](StructureDefinition-tddui-task-transport-u
       "type" : {
         "coding" : [
           {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
             "code" : "distance"
           }
         ]
@@ -120,7 +120,7 @@ Profil: [TDDUI Task Transport Usager](StructureDefinition-tddui-task-transport-u
       "type" : {
         "coding" : [
           {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
             "code" : "dureeTheorique"
           }
         ]
@@ -136,7 +136,7 @@ Profil: [TDDUI Task Transport Usager](StructureDefinition-tddui-task-transport-u
       "type" : {
         "coding" : [
           {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
             "code" : "accompagnement"
           }
         ]
@@ -147,7 +147,7 @@ Profil: [TDDUI Task Transport Usager](StructureDefinition-tddui-task-transport-u
       "type" : {
         "coding" : [
           {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
             "code" : "asepsie"
           }
         ]
@@ -158,7 +158,7 @@ Profil: [TDDUI Task Transport Usager](StructureDefinition-tddui-task-transport-u
       "type" : {
         "coding" : [
           {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
             "code" : "natureTransport"
           }
         ]

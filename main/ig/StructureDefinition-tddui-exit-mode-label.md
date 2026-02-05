@@ -1,10 +1,10 @@
-# Libellé mode de sortie - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Exit Mode Label - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Libellé mode de sortie**
+* **TDDUI Exit Mode Label**
 
-## Extension: Libellé mode de sortie 
+## Extension: TDDUI Exit Mode Label 
 
 | | |
 | :--- | :--- |
@@ -20,7 +20,7 @@ Libellé du mode de sortie du séjour.
 **Utilisations:**
 
 * Utilise ce/t/te Extension: [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md)
-* Exemples pour ce/t/te Extension: [Bundle/ExampleTDDUIBundle](Bundle-ExampleTDDUIBundle.md) and [Encounter/tddui-encounter-sejour-example](Encounter-tddui-encounter-sejour-example.md)
+* Exemples pour ce/t/te Extension: [Bundle/tddui-bundle-example](Bundle-tddui-bundle-example.md) and [Encounter/tddui-encounter-sejour-example](Encounter-tddui-encounter-sejour-example.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-exit-mode-label)
 
@@ -45,9 +45,9 @@ Other representations of profile: [CSV](StructureDefinition-tddui-exit-mode-labe
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exit-mode-label",
   "version" : "2.2.0-ballot",
   "name" : "TDDUIExitModeLabel",
-  "title" : "Libellé mode de sortie",
+  "title" : "TDDUI Exit Mode Label",
   "status" : "active",
-  "date" : "2026-02-05T14:50:20+00:00",
+  "date" : "2026-02-05T15:15:02+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -96,7 +96,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-exit-mode-labe
       {
         "id" : "Extension",
         "path" : "Extension",
-        "short" : "Libellé mode de sortie",
+        "short" : "TDDUI Exit Mode Label",
         "definition" : "Libellé du mode de sortie du séjour."
       },
       {

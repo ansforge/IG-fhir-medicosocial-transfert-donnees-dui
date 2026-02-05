@@ -1,14 +1,14 @@
-# tddui-pp-pa-careplan-example - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI PP PA CarePlan Example - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **tddui-pp-pa-careplan-example**
+* **TDDUI PP PA CarePlan Example**
 
-## Example CarePlan: tddui-pp-pa-careplan-example
+## Example CarePlan: TDDUI PP PA CarePlan Example
 
 Profil: [TDDUI CarePlan Projet Personalise](StructureDefinition-tddui-careplan-projet-personnalise.md)
 
-**Pièce jointe**: [DocumentReference : masterIdentifier = 3480787529/123456789-PPER-entrant-1234; status = current](DocumentReference-tddui-pp-pa-documentreference-entrant-example.md)
+**TDDUI Attachment**: [DocumentReference : masterIdentifier = 3480787529/123456789-PPER-entrant-1234; status = current](DocumentReference-tddui-pp-pa-documentreference-entrant-example.md)
 
 **identifier**: `https://identifiant-medicosocial-projetpersonnalise.esante.gouv.fr`/3480787529/123456789-PPER-1234
 
@@ -63,7 +63,7 @@ Profil: [TDDUI CarePlan Projet Personalise](StructureDefinition-tddui-careplan-p
           "valueCodeableConcept" : {
             "coding" : [
               {
-                "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs",
+                "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator",
                 "code" : "accordStructure"
               }
             ]

@@ -1,14 +1,14 @@
-# tddui-practitioner-role-example - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Practitioner Role Example - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **tddui-practitioner-role-example**
+* **TDDUI Practitioner Role Example**
 
-## Example PractitionerRole: tddui-practitioner-role-example
+## Example PractitionerRole: TDDUI Practitioner Role Example
 
 Profil: [TDDUI Practitioner Role](StructureDefinition-tddui-practitioner-role.md)
 
-**Mode d'exercice**: Salarié
+**TDDUI Exercise Mode**: Salarié
 
 **practitioner**: [Practitioner Claire Martin ](Practitioner-tddui-practitioner-example.md)
 

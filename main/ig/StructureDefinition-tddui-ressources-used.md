@@ -1,10 +1,10 @@
-# Ressources utilisées - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Ressources Used - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Ressources utilisées**
+* **TDDUI Ressources Used**
 
-## Extension: Ressources utilisées 
+## Extension: TDDUI Ressources Used 
 
 | | |
 | :--- | :--- |
@@ -20,7 +20,7 @@ Ressources utilisées lors de l’évènement (ex : chambre, matériel médical,
 **Utilisations:**
 
 * Utilise ce/t/te Extension: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)
-* Exemples pour ce/t/te Extension: [Bundle/ExampleTDDUIBundle](Bundle-ExampleTDDUIBundle.md) and [Encounter/tddui-encounter-evenement-example](Encounter-tddui-encounter-evenement-example.md)
+* Exemples pour ce/t/te Extension: [Bundle/tddui-bundle-example](Bundle-tddui-bundle-example.md) and [Encounter/tddui-encounter-evenement-example](Encounter-tddui-encounter-evenement-example.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-ressources-used)
 
@@ -47,9 +47,9 @@ Other representations of profile: [CSV](StructureDefinition-tddui-ressources-use
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used",
   "version" : "2.2.0-ballot",
   "name" : "TDDUIRessourcesUsed",
-  "title" : "Ressources utilisées",
+  "title" : "TDDUI Ressources Used",
   "status" : "active",
-  "date" : "2026-02-05T14:50:20+00:00",
+  "date" : "2026-02-05T15:15:02+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -98,7 +98,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-ressources-use
       {
         "id" : "Extension",
         "path" : "Extension",
-        "short" : "Ressources utilisées",
+        "short" : "TDDUI Ressources Used",
         "definition" : "Ressources utilisées lors de l’évènement (ex : chambre, matériel médical, véhicule)."
       },
       {

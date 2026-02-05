@@ -1,10 +1,10 @@
-# Date d’admission - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Admission Date - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Date d’admission**
+* **TDDUI Admission Date**
 
-## Extension: Date d’admission 
+## Extension: TDDUI Admission Date 
 
 | | |
 | :--- | :--- |
@@ -20,7 +20,7 @@ Date d’admission dans la structure ESSMS.
 **Utilisations:**
 
 * Utilise ce/t/te Extension: [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md)
-* Exemples pour ce/t/te Extension: [Bundle/ExampleTDDUIBundle](Bundle-ExampleTDDUIBundle.md) and [Encounter/tddui-encounter-sejour-example](Encounter-tddui-encounter-sejour-example.md)
+* Exemples pour ce/t/te Extension: [Bundle/tddui-bundle-example](Bundle-tddui-bundle-example.md) and [Encounter/tddui-encounter-sejour-example](Encounter-tddui-encounter-sejour-example.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-admission-date)
 
@@ -45,9 +45,9 @@ Other representations of profile: [CSV](StructureDefinition-tddui-admission-date
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-admission-date",
   "version" : "2.2.0-ballot",
   "name" : "TDDUIAdmissionDate",
-  "title" : "Date d’admission",
+  "title" : "TDDUI Admission Date",
   "status" : "active",
-  "date" : "2026-02-05T14:50:20+00:00",
+  "date" : "2026-02-05T15:15:02+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -96,7 +96,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-admission-date
       {
         "id" : "Extension",
         "path" : "Extension",
-        "short" : "Date d’admission",
+        "short" : "TDDUI Admission Date",
         "definition" : "Date d’admission dans la structure ESSMS."
       },
       {

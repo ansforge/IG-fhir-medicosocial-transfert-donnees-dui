@@ -1,10 +1,10 @@
-# TDDUI FR Core CodeSystem v2-0203 - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Patient Identifier - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **TDDUI FR Core CodeSystem v2-0203**
+* **TDDUI Patient Identifier**
 
-## CodeSystem: TDDUI FR Core CodeSystem v2-0203 
+## CodeSystem: TDDUI Patient Identifier 
 
 | | |
 | :--- | :--- |
@@ -12,11 +12,11 @@
 | Active as of 2026-02-05 | *Computable Name*:TDDUIIdentifier |
 
  
-TDDUI Patient's identifier 
+CodeSystem pour la définition des codes d'identifiant de l'usager 
 
  Cette terminologie de référence (CodeSystem) est référencé dans la définition de contenu des jeux de valeurs (ValueSet) suivants : 
 
-* [TDDUIPatientIdentifierVs](ValueSet-tddui-patient-identifier-vs.md)
+* [TDDUIPatientIdentifier](ValueSet-tddui-patient-identifier.md)
 
 
 
@@ -34,10 +34,10 @@ TDDUI Patient's identifier
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-identifier",
   "version" : "2.2.0-ballot",
   "name" : "TDDUIIdentifier",
-  "title" : "TDDUI FR Core CodeSystem v2-0203",
+  "title" : "TDDUI Patient Identifier",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-05T14:50:20+00:00",
+  "date" : "2026-02-05T15:15:02+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -50,7 +50,7 @@ TDDUI Patient's identifier
       ]
     }
   ],
-  "description" : "TDDUI Patient's identifier",
+  "description" : "CodeSystem pour la définition des codes d'identifiant de l'usager",
   "jurisdiction" : [
     {
       "coding" : [
