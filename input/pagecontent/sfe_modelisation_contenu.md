@@ -546,15 +546,29 @@ La décision est une réponse à une demande de compensation l'usager ou de son 
   </tr>
   <tr>
     <td>idDecision : [1..1] Identifiant </td>
-    <td>Cet identifiant est obtenu par la concaténation de l'identifiant local attribué par la MDPH à l’origine de la création du suivi de la décision (idDecisionMDPHInitial) et du numéro cette MDPH (idMDPHInitial) : idDecisionMDPHInitial/idMDPHInitial</td>
+    <td>Cet identifiant est obtenu par la concaténation de l'identifiant local de la décision attribué par la MDPH à l’origine de la création du suivi de la décision (idDecisionMDPHInitial) et du numéro cette MDPH (idMDPHInitial) : idDecisionMDPHInitial/idMDPHInitial</td>
   </tr>
   <tr>
     <td>numeroEnregistrement : [0..1] Identifiant</td>
     <td>Numéro d’enregistrement au conseil général si différent du numéro d’identification MDPH.</td>
   </tr>
+  tr>
+    <td>typeDecision : [1..1] Code</td>
+    <td>Type de décision.<br>
+    Nomenclature(s) associée(s) : en cours création NOS
+    </td>
+  </tr>
   <tr>
     <td>idDecisionMAJ : [0..*] Identifiant</td>
-    <td>Identifiants de la ou des décisions révisées ou renouvelées à l'origine du droit ou identifiant de la décision clôturée (concerne une seule décision) en cas de clôture de droit.</td>
+    <td>Identifiants de la ou des décisions révisées ou renouvelées à l'origine du droit ou identifiant de la décision clôturée (concerne une seule décision) en cas de clôture de droit.<br>
+    Ces identifiants sont obtenus par la concaténation des identifiants locaux de la ou des décisions révisées attribué par la MDPH à l’origine de la création du suivi de la décision (idDecisionMAJMDPHInitial) et du numéro cette MDPH (idMDPHInitial) : idDecisionMAJMDPHInitial/idMDPHInitial.<br>
+    Cet attribut est obligatoire si 
+    <ul>
+    <li>typeDecision = '5' (Clôture de droit) </li>
+    <li>typeDecision ='1' (Attribution) et DroitPrestation.natureDroit  = '2' (Renouvellement) ou '3' (Révision) </li>
+    </ul>
+    Ne pas transmettre si typeDecision = '1' (Attribution) et natureDroit = '1' (Nouveau droit)
+    </td>
   </tr>
   <tr>
     <td>idNat_Decision : [0..1] Identifiant</td>
@@ -563,12 +577,6 @@ La décision est une réponse à une demande de compensation l'usager ou de son 
   <tr>
     <td>dateDecision : [0..1] Date</td>
     <td>Date à laquelle se réunit la CDAPH pour prendre la décision.</td>
-  </tr>
-  <tr>
-    <td>typeDecision : [0..1] Code</td>
-    <td>Type de décision.<br>
-    Nomenclature(s) associée(s) : à définir
-    </td>
   </tr>
   <tr>
     <td>motivation : [0..*] Code</td>
