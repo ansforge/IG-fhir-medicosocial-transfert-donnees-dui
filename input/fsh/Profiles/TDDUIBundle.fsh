@@ -31,7 +31,7 @@ Description: "Profil générique créé pour transmettre des données d'un logic
     DUITaskBilan 0..* and 
     DUITaskMoyenRessource 0..* and
     DUITaskPrestation 0..* and
-    RelatedPerson 0..*
+    DUIRelatedPersonContact 0..*
 
 
 * entry[DUIPatient].resource only TDDUIPatient
@@ -154,8 +154,8 @@ Description: "Profil générique créé pour transmettre des données d'un logic
 * entry[DUITaskPrestation].request 1..1
 * entry[DUITaskPrestation].request.method = #POST
 
-* entry[RelatedPerson].resource only FRCoreRelatedPersonProfile
-* entry[RelatedPerson] ^short = "RelatedPerson conforming to the FrCoreRelatedPerson profile, used to convey information about the user's contacts."
-* entry[RelatedPerson].resource 1..1
-* entry[RelatedPerson].request 1..1
-* entry[RelatedPerson].request.method = #POST
+* entry[DUIRelatedPersonContact].resource only TDDUIRelatedPersonContact
+* entry[DUIRelatedPersonContact] ^short = "RelatedPerson conforming to the TDDUIRelatedPersonContact profile, used to convey information about the contact person."
+* entry[DUIRelatedPersonContact].resource 1..1
+* entry[DUIRelatedPersonContact].request 1..1
+* entry[DUIRelatedPersonContact].request.method = #POST
