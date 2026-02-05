@@ -248,13 +248,13 @@ La décision est une réponse à une demande de compensation l'usager ou de son 
 * Nom: idDecisionMAJ : [0..*] Identifiant
   * Description: Identifiants de la ou des décisions révisées ou renouvelées à l'origine du droit ou identifiant de la décision clôturée (concerne une seule décision) en cas de clôture de droit.Ces identifiants sont obtenus par la concaténation des identifiants locaux de la ou des décisions révisées attribué par la MDPH à l’origine de la création du suivi de la décision (idDecisionMAJMDPHInitial) et du numéro cette MDPH (idMDPHInitial) : idDecisionMAJMDPHInitial/idMDPHInitial.Cet attribut est obligatoire si* typeDecision = '5' (Clôture de droit) 
 * typeDecision ='1' (Attribution) et DroitPrestation.natureDroit = '2' (Renouvellement) ou '3' (Révision) 
-Ne pas transmettre si typeDecision = '1' (Attribution) et natureDroit = '1' (Nouveau droit)
+Ne pas transmettre si typeDecision = '1' (Attribution) et DroitPrestation.natureDroit = '1' (Nouveau droit)
 * Nom: idNat_Decision : [0..1] Identifiant
-  * Description: Identifiant unique de la décision généré par ViaTrajectoire. Cet identifiant unique est créé par ViaTrajectoire lorsque la décision est enregistrée dans le SI-SdO.
+  * Description: Identifiant technique unique de la décision attribué par ViaTrajectoire. Cet identifiant créé par ViaTrajectoire lorsque la décision est enregistrée dans le SI du Suivi des Orientations (SdO) correspondant à ViaTrajectoire.
 * Nom: dateDecision : [0..1] Date
   * Description: Date à laquelle se réunit la CDAPH pour prendre la décision.
 * Nom: motivation : [0..*] Code
-  * Description: Considération(s) de droit ou de fait qui constituent le fondement de la décision.Nomenclature(s) associée(s) : à définir
+  * Description: Considération(s) de droit ou de fait qui constituent le fondement de la décision.Jeu(x) de valeur(s) associé(s) : en cours création NOS
 * Nom: commentaire : [0..1] Texte
   * Description: Commentaire relatif à la décision.
 
