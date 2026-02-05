@@ -378,17 +378,17 @@ La demande de compensation est adressée à la CDAPH. Elle contient l'ensemble d
 La décision est une réponse à une demande de compensation l'usager ou de son représentant légal. C'est un acte par lequel la CDAPH prononce l’orientation de la personne en situation de handicap vers une catégorie ou un établissement ou un service nommément désigné. La décision d’orientation permet à la personne en situation de handicap de faire valoir ses droits auprès de l’établissement ou du service concerné
 
 * Nom: idDecision : [1..1] Identifiant
-  * Description: Cet identifiant est obtenu par la concaténation de l'identifiant local attribué par la MDPH à l’origine de la création du suivi de la décision (idDecisionMDPHInitial) et du numéro cette MDPH (idMDPHInitial) : idDecisionMDPHInitial/idMDPHInitial
+  * Description: Cet identifiant est obtenu par la concaténation de l'identifiant local de la décision attribué par la MDPH à l’origine de la création du suivi de la décision (idDecisionMDPHInitial) et du numéro cette MDPH (idMDPHInitial) : idDecisionMDPHInitial/idMDPHInitial
 * Nom: numeroEnregistrement : [0..1] Identifiant
   * Description: Numéro d’enregistrement au conseil général si différent du numéro d’identification MDPH.
 * Nom: idDecisionMAJ : [0..*] Identifiant
-  * Description: Identifiants de la ou des décisions révisées ou renouvelées à l'origine du droit ou identifiant de la décision clôturée (concerne une seule décision) en cas de clôture de droit.
+  * Description: Identifiants de la ou des décisions révisées ou renouvelées à l'origine du droit ou identifiant de la décision clôturée (concerne une seule décision) en cas de clôture de droit.Ces identifiants sont obtenus par la concaténation des identifiants locaux de la ou des décisions révisées attribué par la MDPH à l’origine de la création du suivi de la décision (idDecisionMAJMDPHInitial) et du numéro cette MDPH (idMDPHInitial) : idDecisionMAJMDPHInitial/idMDPHInitial.Cet attribut est obligatoire si* typeDecision = '5' (Clôture de droit) 
+* typeDecision ='1' (Attribution) et DroitPrestation.natureDroit = '2' (Renouvellement) ou '3' (Révision) 
+Ne pas transmettre si typeDecision = '1' (Attribution) et natureDroit = '1' (Nouveau droit)
 * Nom: idNat_Decision : [0..1] Identifiant
   * Description: Identifiant unique de la décision généré par ViaTrajectoire. Cet identifiant unique est créé par ViaTrajectoire lorsque la décision est enregistrée dans le SI-SdO.
 * Nom: dateDecision : [0..1] Date
   * Description: Date à laquelle se réunit la CDAPH pour prendre la décision.
-* Nom: typeDecision : [0..1] Code
-  * Description: Type de décision.Nomenclature(s) associée(s) : à définir
 * Nom: motivation : [0..*] Code
   * Description: Considération(s) de droit ou de fait qui constituent le fondement de la décision.Nomenclature(s) associée(s) : à définir
 * Nom: commentaire : [0..1] Texte

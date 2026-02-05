@@ -36,9 +36,9 @@ Pour ce cas d'usage les modalités d’envoi des données usager au SI-tiers son
 
 #### Cas d'usage SERAFIN
 
-Ce cas d'usage permet d'ajouter au flux d'extraction les données du Projet personnalisé. Le Projet personnalisé est un outil de coordination visant à répondre à long terme aux besoins et attentes de la personne accueillie. Il est conçu pour et, si possible, avec la personne prise en charge.
+Ce cas d'usage permet d'ajouter au flux d'extraction les données du Projet personnalisé.
 
-Dans ce cas d'usage, le Projet personnalisé de l'usager est envoyé par le logiciel DUI vers le système d’information de la CNSA ([SIDOBA](https://www.cnsa.fr/informations-thematiques/systeme-dinformation-et-numerique/sidoba) = système d’information de l’offre de la branche autonomie).
+Le Projet personnalisé est un outil de coordination visant à répondre à long terme aux besoins et attentes de la personne accueillie. Il est conçu pour et, si possible, avec la personne prise en charge.
 
 L'export du Projet personnalisé est composé des éléments métiers suivants :
 
