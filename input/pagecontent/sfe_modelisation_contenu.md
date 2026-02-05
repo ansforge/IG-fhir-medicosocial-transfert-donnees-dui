@@ -2,16 +2,10 @@
 
 <!-- object data="representation_globale.svg"  style="width:100%" type="image/svg+xml"></object -->
 <div class="figure" style="width:100%; display: flex; align-items: center; justify-content: center;">
-<!-- Note : le svg est déformé car impossible de modifier le style du svg -->
   {%include representation_globale.svg%}
 </div>
 
 ### Données administratives
-
-<!-- object data="donnees_admin.svg" style="width:100%" type="image/svg+xml"></object -->
-<!-- div class="figure" style="width:100%; display: flex; align-items: center; justify-content: center;">
-  {%include donnees_admin.svg%}
-</div -->
 
 #### Identification et coordonnées
 
