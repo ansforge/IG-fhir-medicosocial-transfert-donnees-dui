@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui | *Version*:2.2.0-ballot |
-| Active as of 2026-02-04 | *Computable Name*:TDDUI |
+| Active as of 2026-02-05 | *Computable Name*:TDDUI |
 
  **Brief description of this Implementation Guide**
  The Digital User File (DUI) centralizes all information concerning the person being cared for in social and medico-social facilities and services. The aim of this implementation guide is to define the specifications for DUI data transfer. 
@@ -140,7 +140,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2026-02-04T16:15:13+00:00",
+  "date" : "2026-02-05T08:25:04+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -1196,7 +1196,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           "reference" : "ValueSet/tddui-encounter-identifier"
         },
         "name" : "TDDUI Encounter Identifier",
-        "description" : "ValueSet for TDDUI Encounter's identifier types",
+        "description" : "ValueSet pour la définition des codes d'identifiant de séjour",
         "exampleBoolean" : false
       },
       {
@@ -1210,7 +1210,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           "reference" : "CodeSystem/tddui-encounter-identifier"
         },
         "name" : "TDDUI Encounter Identifier",
-        "description" : "TDDUI Encounter identifier",
+        "description" : "CodeSystem pour la définition des codes d'identifiant de séjour",
         "exampleBoolean" : false
       },
       {
@@ -1224,7 +1224,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           "reference" : "ValueSet/tddui-encounter-participant"
         },
         "name" : "TDDUI Encounter Participant",
-        "description" : "ValueSet for TDDUI Encounter's participants",
+        "description" : "ValueSet pour la définition des codes de participant d'un événement",
         "exampleBoolean" : false
       },
       {
@@ -1280,7 +1280,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           "reference" : "ValueSet/tddui-encounter-type"
         },
         "name" : "TDDUI Encounter Type",
-        "description" : "ValueSet for TDDUI Encounter's types",
+        "description" : "ValueSet pour la définition des codes de type de séjour",
         "exampleBoolean" : false
       },
       {
@@ -1574,7 +1574,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           "reference" : "ValueSet/tddui-patient-identifier"
         },
         "name" : "TDDUI Patient Identifier",
-        "description" : "ValueSet for TDDUI Patient's identifier types",
+        "description" : "ValueSet pour la définition des codes d'identifiant de l'usager",
         "exampleBoolean" : false
       },
       {
@@ -1588,7 +1588,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           "reference" : "CodeSystem/tddui-identifier"
         },
         "name" : "TDDUI Patient Identifier",
-        "description" : "TDDUI Patient identifier",
+        "description" : "CodeSystem pour la définition des codes d'identifiant de l'usager",
         "exampleBoolean" : false
       },
       {

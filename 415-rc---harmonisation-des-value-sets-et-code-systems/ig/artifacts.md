@@ -108,12 +108,12 @@ These define sets of codes used by systems conforming to this implementation gui
 | :--- | :--- |
 | [TDDUI CarePlan supportingInfo](ValueSet-tddui-care-plan-supporting-info.md) | ValueSet définissant les types de notes pour l'élément CarePlan.supportingInfo. |
 | [TDDUI Discriminator](ValueSet-tddui-discriminator.md) | ValueSet définissant les codes discriminants. |
-| [TDDUI Encounter Identifier](ValueSet-tddui-encounter-identifier.md) | ValueSet for TDDUI Encounter's identifier types |
-| [TDDUI Encounter Participant](ValueSet-tddui-encounter-participant.md) | ValueSet for TDDUI Encounter's participants |
-| [TDDUI Encounter Type](ValueSet-tddui-encounter-type.md) | ValueSet for TDDUI Encounter's types |
+| [TDDUI Encounter Identifier](ValueSet-tddui-encounter-identifier.md) | ValueSet pour la définition des codes d'identifiant de séjour |
+| [TDDUI Encounter Participant](ValueSet-tddui-encounter-participant.md) | ValueSet pour la définition des codes de participant d'un événement |
+| [TDDUI Encounter Type](ValueSet-tddui-encounter-type.md) | ValueSet pour la définition des codes de type de séjour |
 | [TDDUI Goal Attente Note](ValueSet-tddui-goal-attente-note.md) | ValueSet définissant les types de notes pour l'élément Goal.note. |
 | [TDDUI Goal Objectif Note](ValueSet-tddui-goal-objectif-note.md) | ValueSet définissant les types de notes pour l'élément Goal.note. |
-| [TDDUI Patient Identifier](ValueSet-tddui-patient-identifier.md) | ValueSet for TDDUI Patient's identifier types |
+| [TDDUI Patient Identifier](ValueSet-tddui-patient-identifier.md) | ValueSet pour la définition des codes d'identifiant de l'usager |
 | [TDDUI SERAFIN](ValueSet-tddui-serafin.md) | ValueSet contenant les codes SERAFIN (prestations directes et indirectes) pour le profil TDDUI Encounter Evenement. |
 | [TDDUI Task Input Action](ValueSet-tddui-task-input-action.md) | ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les actions du projet personnalisé. |
 | [TDDUI Task Input Bilan](ValueSet-tddui-task-input-bilan.md) | ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour le bilan du projet personnalisé. |
@@ -129,9 +129,9 @@ These define new code systems used by systems conforming to this implementation 
 | | |
 | :--- | :--- |
 | [TDDUI Discriminator](CodeSystem-tddui-discriminator.md) | CodeSystem définissant les codes discriminants. |
-| [TDDUI Encounter Identifier](CodeSystem-tddui-encounter-identifier.md) | TDDUI Encounter identifier |
+| [TDDUI Encounter Identifier](CodeSystem-tddui-encounter-identifier.md) | CodeSystem pour la définition des codes d'identifiant de séjour |
 | [TDDUI Encounter Participant](CodeSystem-tddui-encounter-participant.md) | CodeSystem définissant les types de participants dans le profil TDDUIEncounterEvenement. |
-| [TDDUI Patient Identifier](CodeSystem-tddui-identifier.md) | TDDUI Patient identifier |
+| [TDDUI Patient Identifier](CodeSystem-tddui-identifier.md) | CodeSystem pour la définition des codes d'identifiant de l'usager |
 | [TDDUI Task Input Action](CodeSystem-tddui-task-input-action.md) | CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les actions du projet personnalisé. |
 | [TDDUI Task Input Bilan](CodeSystem-tddui-task-input-bilan.md) | CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour le bilan du projet personnalisé. |
 | [TDDUI Task Input Moyen Ressource](CodeSystem-tddui-task-input-moyen-ressource.md) | CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les moyens et ressources du projet personnalisé. |

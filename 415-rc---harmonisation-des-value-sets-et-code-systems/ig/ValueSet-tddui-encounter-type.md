@@ -9,10 +9,10 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-type | *Version*:2.2.0-ballot |
-| Active as of 2026-02-04 | *Computable Name*:TDDUIEncounterType |
+| Active as of 2026-02-05 | *Computable Name*:TDDUIEncounterType |
 
  
-ValueSet for TDDUI Encounter's types 
+ValueSet pour la définition des codes de type de séjour 
 
  **References** 
 
@@ -56,7 +56,7 @@ ValueSet for TDDUI Encounter's types
   "title" : "TDDUI Encounter Type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-04T16:15:13+00:00",
+  "date" : "2026-02-05T08:25:04+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -69,7 +69,7 @@ ValueSet for TDDUI Encounter's types
       ]
     }
   ],
-  "description" : "ValueSet for TDDUI Encounter's types",
+  "description" : "ValueSet pour la définition des codes de type de séjour",
   "jurisdiction" : [
     {
       "coding" : [
