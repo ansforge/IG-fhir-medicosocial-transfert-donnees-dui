@@ -114,6 +114,64 @@
       ]
     },
     {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-nationality",
+      "title": "TDDUI Nationality Extension",
+      "types": [
+        "CodeableConcept",
+        "Period",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-outside-service",
       "title": "Evénement hors prestation",
       "types": [
@@ -194,6 +252,13 @@
         "UsageContext",
         "Dosage",
         "Meta"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact-description",
+      "title": "Description",
+      "types": [
+        "string"
       ]
     },
     {
@@ -342,6 +407,12 @@
         "title": "TDDUI QuestionnaireResponse"
       }
     ],
+    "RelatedPerson": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact",
+        "title": "TDDUI RelatedPerson Contact"
+      }
+    ],
     "ServiceRequest": [
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin",
@@ -412,7 +483,8 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order": [
       "HumanName",
-      "Practitioner.name"
+      "Practitioner.name",
+      "RelatedPerson.name"
     ],
     "http://hl7.org/fhir/StructureDefinition/organization-period": [
       "Organization"
@@ -427,9 +499,15 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
     ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm": [
+      "StructureDefinition"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
       "StructureDefinition.differential.element.type",
       "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg": [
+      "StructureDefinition"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters": [
       "ImplementationGuide.definition"
@@ -520,7 +598,8 @@
       "QuestionnaireResponse",
       "QuestionnaireResponse.item",
       "QuestionnaireResponse.item.item",
-      "QuestionnaireResponse.item.item.item"
+      "QuestionnaireResponse.item.item.item",
+      "RelatedPerson"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator": [
       "Bundle.entry.resource.note",
@@ -561,6 +640,9 @@
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-meal": [
       "Encounter"
     ],
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-nationality": [
+      "RelatedPerson"
+    ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-outside-service": [
       "Encounter"
     ],
@@ -573,6 +655,9 @@
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant": [
       "QuestionnaireResponse"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact-description": [
+      "RelatedPerson"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used": [
       "Bundle.entry.resource",

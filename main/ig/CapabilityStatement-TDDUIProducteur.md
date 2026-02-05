@@ -211,7 +211,7 @@ Le rôle de Producteur est de transmettre des données de son logiciel DUI. Il c
         {
           "type" : "RelatedPerson",
           "supportedProfile" : [
-            "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person"
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact"
           ],
           "interaction" : [
             {

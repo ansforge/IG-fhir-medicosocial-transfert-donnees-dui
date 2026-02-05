@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-consent-accord
   "name" : "TDDUIConsentAccord",
   "title" : "TDDUI Consent Accord",
   "status" : "active",
-  "date" : "2026-02-05T13:38:35+00:00",
+  "date" : "2026-02-05T14:50:20+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -171,7 +171,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-consent-accord
             "targetProfile" : [
               "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role",
               "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner",
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person",
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact",
               "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient",
               "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"
             ]

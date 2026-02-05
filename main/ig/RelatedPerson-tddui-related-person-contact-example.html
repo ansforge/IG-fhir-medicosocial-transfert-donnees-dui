@@ -1,13 +1,9 @@
-<!-- layouts\layout-changehistory.html -->
-<!-- get modelType -->
-
-
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title> - Médicosocial - Transfert de données DUI v2.2.0-ballot</title>
+    <title>TDDUI Related Person Contact Example - Médicosocial - Transfert de données DUI v2.2.0-ballot</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -47,8 +43,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:""}
-    h3,h4,h5,h6{--heading-prefix:""}</style>
+    <style type="text/css">h2{--heading-prefix:"7.82"}
+    h3,h4,h5,h6{--heading-prefix:"7.82"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -180,11 +176,15 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>TDDUI Related Person Contact Example</b></li>
 
           <span style="float:right;">
 
+            <a href="CodeSystem-tddui-identifier.ttl.html">&lt;prev</a> | 
+
             <a href="#bottom">bottom</a>
+
+          | <a href="RelatedPerson-tddui-related-person-contact-example.xml.html">next&gt;</a>
 
           </span>
 
@@ -197,9 +197,9 @@
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
-
-<div style="counter-reset: section 10" class="col-12">
+<div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Médicosocial - Transfert de données DUI - version de développement local (intégration continue v2.2.0-ballot) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/fhir/tddui/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
+
   
 
 
@@ -211,29 +211,29 @@
 
 <ul class="nav nav-tabs">
 
-  <li>
-    <a href="RelatedPerson-fr-core-related-person-example.html">Narrative Content</a>
+  <li class="active">
+    <a href="#">Narrative Content</a>
   </li>
 
 
 
   
     <li>
-      <a href="RelatedPerson-fr-core-related-person-example.xml.html">XML</a>
+      <a href="RelatedPerson-tddui-related-person-contact-example.xml.html">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="RelatedPerson-fr-core-related-person-example.json.html">JSON</a>
+      <a href="RelatedPerson-tddui-related-person-contact-example.json.html">JSON</a>
     </li>
   
 
 
   
     <li>
-      <a href="RelatedPerson-fr-core-related-person-example.ttl.html">TTL</a>
+      <a href="RelatedPerson-tddui-related-person-contact-example.ttl.html">TTL</a>
     </li>
   
 
@@ -243,13 +243,28 @@
 
 
   <a name="root"> </a>
-  <h2 id="root">: RelatedPerson/fr-core-related-person-example - Change History</h2>
-  <p>History of changes for fr-core-related-person-example .</p>
+
+
+  <h2 id="root">Example RelatedPerson: TDDUI Related Person Contact Example</h2>
+
+
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><a name="tddui-related-person-contact-example"> </a><a name="hctddui-related-person-contact-example"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="StructureDefinition-tddui-related-person-contact.html">TDDUI RelatedPerson Contact</a></p></div><p><b>identifier</b>: 3480787529/123456789-PPAttente-1234-enfant</p><p><b>patient</b>: <a href="Patient-tddui-patient-ins-example.html">DUPONT  Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/194704032)</a></p><p><b>relationship</b>: <span title="Codes :{https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass GUARD}">Responsable légal</span>, <span title="Codes :{https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode FTH}">Père</span></p></div>
 
   
 
-</div>
+  <!-- insert notes if present -->
+  
 
+
+
+</div>
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
@@ -257,8 +272,6 @@
 
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
-
-  <script type="text/javascript" src="assets/js/tabs.js"> </script>
 
 <script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
@@ -271,7 +284,7 @@
             <tr>
               <td style="text-align:left">&#xA0;
 
-                <span style="visibility:hidden">&lt;prev</span>
+                <a href="CodeSystem-tddui-identifier.ttl.html">&lt;prev</a>
 
               </td>
               <td style="text-align:center">
@@ -279,7 +292,7 @@
               </td>
               <td style="text-align:right">&#xA0;
 
-                <span style="visibility:hidden">next&gt;</span>
+                <a href="RelatedPerson-tddui-related-person-contact-example.xml.html">next&gt;</a>
 
               </td>
             </tr>
@@ -289,7 +302,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.2.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 5, 2026 13:38+0000">2026-02-05</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.2.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 5, 2026 14:50+0000">2026-02-05</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |

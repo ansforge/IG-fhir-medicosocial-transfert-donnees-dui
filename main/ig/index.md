@@ -86,6 +86,7 @@ Les ressources profilées dans le cadre de ce guide d'implémentation sont les s
 | [FR Core Practitioner Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner) | [TDDUIPractitioner](StructureDefinition-tddui-practitioner.md) | Profil de la ressource FRCorePractitionerProfile permettant de représenter un professionnel du médicosocial dans le cadre de TDDUI. Le profil AsPractitionerRoleProfile n'a pas été utilisé car il comportait trop de contraintes non présentes dans les DUI. |
 | [FR Core Practitioner Role](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role) | [TDDUIPractitionerRole](StructureDefinition-tddui-practitioner-role.md) | Profil de la ressource FRCorePractitionerRole permettant de représenter un Professionnel. |
 | [QuestionnaireResponse](http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse) | [TDDUIQuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md) | Profil de la ressource QuestionnaireResponse utilisé pour transmettre les réponses aux questionnaires dans le cadre des évaluations. |
+| [FR Core Related Person Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person) | [TDDUIRelatedPersonContact](StructureDefinition-tddui-related-person-contact.md) | Profil de la ressource FRCoreRelatedPersonProfile permettant de représenter un contact de l'usager. |
 | [ServiceRequest](http://hl7.org/fhir/StructureDefinition/ServiceRequest) | [TDDUIServiceRequestBesoin](StructureDefinition-tddui-service-request-besoin.md) | Profil de la ressource ServiceRequest permettant de représenter les besoins de l'usager. |
 | [Task](http://hl7.org/fhir/StructureDefinition/Task) | [TDDUITaskAction](StructureDefinition-tddui-task-action.md) | Profil de la ressource Task permettant de représenter les actions réalisées dans le cadre du projet personnalisé. |
 | [Task](http://hl7.org/fhir/StructureDefinition/Task) | [TDDUITaskBilan](StructureDefinition-tddui-task-bilan.md) | Profil de la ressource Task permettant de représenter le bilan du projet personnalisé. |
@@ -140,7 +141,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2026-02-05T13:38:35+00:00",
+  "date" : "2026-02-05T14:50:20+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -957,25 +958,25 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/tddui-outside-service"
+          "reference" : "StructureDefinition/tddui-related-person-contact-description"
         },
-        "name" : "Evénement hors prestation",
-        "description" : "Evénement hors prestation prévue dans le projet personnalisé de l’usager.",
+        "name" : "Description",
+        "description" : "Description du contact PersonnePhysique.",
         "exampleBoolean" : false
       },
       {
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "RelatedPerson"
+            "valueString" : "StructureDefinition:extension"
           }
         ],
         "reference" : {
-          "reference" : "RelatedPerson/fr-core-related-person-example"
+          "reference" : "StructureDefinition/tddui-outside-service"
         },
-        "name" : "fr-core-related-person-example",
-        "description" : "Exemple de la famille de l'usager.",
-        "exampleBoolean" : true
+        "name" : "Evénement hors prestation",
+        "description" : "Evénement hors prestation prévue dans le projet personnalisé de l’usager.",
+        "exampleBoolean" : false
       },
       {
         "extension" : [
@@ -1401,6 +1402,34 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/tddui-contact-protection-juridique"
+        },
+        "name" : "TDDUI Contact Protection Juridique",
+        "description" : "ValueSet définissant la protection juridique.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/tddui-contact-relation"
+        },
+        "name" : "TDDUI Contact Relation",
+        "description" : "ValueSet définissant les relations.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "CodeSystem"
           }
         ],
@@ -1639,6 +1668,20 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/tddui-nationality"
+        },
+        "name" : "TDDUI Nationality Extension",
+        "description" : "The nationality of the patient or a related person.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:resource"
           }
         ],
@@ -1745,6 +1788,48 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "TDDUI QuestionnaireResponse",
         "description" : "Profil de la ressource QuestionnaireResponse utilisé pour transmettre les réponses aux questionnaires dans le cadre des évaluations.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "RelatedPerson"
+          }
+        ],
+        "reference" : {
+          "reference" : "RelatedPerson/tddui-related-person-contact-example"
+        },
+        "name" : "TDDUI Related Person Contact Example",
+        "description" : "Exemple d'un contact.",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/tddui-contact-related-person-relashionship"
+        },
+        "name" : "TDDUI Related Person Relashionship",
+        "description" : "ValueSet définissant les slices de RelatedPerson.relationship.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/tddui-related-person-contact"
+        },
+        "name" : "TDDUI RelatedPerson Contact",
+        "description" : "Profil de la ressource FRCoreRelatedPersonProfile permettant de représenter un contact de l'usager.",
         "exampleBoolean" : false
       },
       {

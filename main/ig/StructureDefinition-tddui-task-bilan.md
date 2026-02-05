@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-bilan.csv
   "name" : "TDDUITaskBilan",
   "title" : "TDDUI Task Bilan",
   "status" : "active",
-  "date" : "2026-02-05T13:38:35+00:00",
+  "date" : "2026-02-05T14:50:20+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -454,7 +454,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-bilan.csv
               "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner",
               "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient",
               "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins",
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact"
             ]
           }
         ],

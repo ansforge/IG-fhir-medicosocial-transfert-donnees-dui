@@ -47,6 +47,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [TDDUI Practitioner](StructureDefinition-tddui-practitioner.md) | Profil de la ressource FRCorePractitionerProfile permettant de représenter un professionnel du médicosocial dans le cadre de TDDUI. Le profil AsPractitionerRoleProfile n'a pas été utilisé car il comportait trop de contraintes non présentes dans les DUI. |
 | [TDDUI Practitioner Role](StructureDefinition-tddui-practitioner-role.md) | Profil de la ressource FRCorePractitionerRole permettant de représenter un Professionnel. |
 | [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md) | Profil de la ressource QuestionnaireResponse utilisé pour transmettre les réponses aux questionnaires dans le cadre des évaluations. |
+| [TDDUI RelatedPerson Contact](StructureDefinition-tddui-related-person-contact.md) | Profil de la ressource FRCoreRelatedPersonProfile permettant de représenter un contact de l'usager. |
 | [TDDUI ServiceRequest Besoin](StructureDefinition-tddui-service-request-besoin.md) | Profil de la ressource ServiceRequest permettant de représenter les besoins de l'usager. |
 | [TDDUI Task Action](StructureDefinition-tddui-task-action.md) | Profil de la ressource Task permettant de représenter les actions réalisées dans le cadre du projet personnalisé. |
 | [TDDUI Task Bilan](StructureDefinition-tddui-task-bilan.md) | Profil de la ressource Task permettant de représenter le bilan du projet personnalisé. |
@@ -80,6 +81,7 @@ These define constraints on FHIR data types for systems conforming to this imple
 * **Champ évalué** : commentaire spécifique à un item ou sous-item évalué.
  |
 | [Date d’admission](StructureDefinition-tddui-admission-date.md) | Date d’admission dans la structure ESSMS. |
+| [Description](StructureDefinition-tddui-related-person-contact-description.md) | Description du contact PersonnePhysique. |
 | [Evénement hors prestation](StructureDefinition-tddui-outside-service.md) | Evénement hors prestation prévue dans le projet personnalisé de l’usager. |
 | [Libellé de l'évènement](StructureDefinition-tddui-event-label.md) | Titre donné à l’évènement par la structure. |
 | [Libellé mode d'entrée](StructureDefinition-tddui-entry-mode-label.md) | Libellé du mode d’entée du séjour. |
@@ -96,6 +98,7 @@ These define constraints on FHIR data types for systems conforming to this imple
 | [Ressources utilisées](StructureDefinition-tddui-ressources-used.md) | Ressources utilisées lors de l’évènement (ex : chambre, matériel médical, véhicule). |
 | [TDDUI Auteur statut](StructureDefinition-tddui-status-author.md) | Extension permettant de représenter la profession du professionnel. |
 | [TDDUI Discriminator Extension](StructureDefinition-tddui-discriminator.md) | Extension pour discriminer les éléments CarePlan.supportingInfo et Goal.note. |
+| [TDDUI Nationality Extension](StructureDefinition-tddui-nationality.md) | The nationality of the patient or a related person. |
 | [TDDUI Profession](StructureDefinition-tddui-profession.md) | Extension permettant de représenter la profession du professionnel. |
 | [Usager présent](StructureDefinition-tddui-patient-present.md) | Evènement nécessitant ou non la présence physique de l’usager. |
 | [Évènement annulé](StructureDefinition-tddui-event-cancel-reason.md) | Motif associé au statut de non-réalisation de l’évènement. |
@@ -113,6 +116,8 @@ These define sets of codes used by systems conforming to this implementation gui
 | [InputTaskTransportValueSet](ValueSet-input-tddui-task-transport-valueset.md) | ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les transports dans le cadre du DUI. |
 | [OutputTDDUITaskBilanValueSet](ValueSet-output-tddui-task-bilan-valueset.md) | ValueSet pour la définition des éléments spécifiques des output dans la ressource Task utilisée pour le bilan du projet personnalisé. |
 | [TDDUI CarePlan supportingInfo ValueSet](ValueSet-tddui-care-plan-supportingInfo-vs.md) | ValueSet définissant les types de notes pour l'élément CarePlan.supportingInfo. |
+| [TDDUI Contact Protection Juridique](ValueSet-tddui-contact-protection-juridique.md) | ValueSet définissant la protection juridique. |
+| [TDDUI Contact Relation](ValueSet-tddui-contact-relation.md) | ValueSet définissant les relations. |
 | [TDDUI Discriminator ValueSet](ValueSet-tddui-discriminator-vs.md) | ValueSet définissant les codes discriminants. |
 | [TDDUI Encounter Identifier Type ValueSet](ValueSet-tddui-encounter-identifier-vs.md) | ValueSet for TDDUI Encounter's identifier types |
 | [TDDUI Encounter Participant ValueSet](ValueSet-tddui-encounter-participant-vs.md) | ValueSet for TDDUI Encounter's participants |
@@ -120,6 +125,7 @@ These define sets of codes used by systems conforming to this implementation gui
 | [TDDUI Goal Attente Note ValueSet](ValueSet-tddui-goal-attente-note-vs.md) | ValueSet définissant les types de notes pour l'élément Goal.note. |
 | [TDDUI Goal Objectif Note ValueSet](ValueSet-tddui-goal-objectif-note-vs.md) | ValueSet définissant les types de notes pour l'élément Goal.note. |
 | [TDDUI Patient Identifier ValueSet](ValueSet-tddui-patient-identifier-vs.md) | ValueSet for TDDUI Patient's identifier types |
+| [TDDUI Related Person Relashionship](ValueSet-tddui-contact-related-person-relashionship.md) | ValueSet définissant les slices de RelatedPerson.relationship. |
 | [TDDUI SERAFIN ValueSet](ValueSet-tddui-serafin-valueset.md) | ValueSet contenant les codes SERAFIN (prestations directes et indirectes) pour le profil TDDUI Encounter Evenement. |
 
 ### Terminology: Code Systems 
@@ -145,8 +151,8 @@ These are example instances that show what data produced and consumed by systems
 
 | | |
 | :--- | :--- |
+| [TDDUI Related Person Contact Example](RelatedPerson-tddui-related-person-contact-example.md) | Exemple d'un contact. |
 | [TDDUIBundleExample](Bundle-ExampleTDDUIBundle.md) | Exemple de bundle conforme au profil TDDUIBundle |
-| [fr-core-related-person-example](RelatedPerson-fr-core-related-person-example.md) | Exemple de la famille de l'usager. |
 | [tddui-encounter-evenement-example](Encounter-tddui-encounter-evenement-example.md) | Exemple d'un évènement |
 | [tddui-encounter-sejour-example](Encounter-tddui-encounter-sejour-example.md) | Exemple d'un séjour en ESSMS |
 | [tddui-event-location-example](Location-tddui-event-location-example.md) | Lieu de l'évènement |

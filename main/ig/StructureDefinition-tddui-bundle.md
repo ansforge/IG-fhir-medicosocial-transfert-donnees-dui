@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
   "name" : "TDDUIBundle",
   "title" : "TDDUI Bundle",
   "status" : "active",
-  "date" : "2026-02-05T13:38:35+00:00",
+  "date" : "2026-02-05T14:50:20+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -740,33 +740,33 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
         "patternCode" : "POST"
       },
       {
-        "id" : "Bundle.entry:RelatedPerson",
+        "id" : "Bundle.entry:DUIRelatedPersonContact",
         "path" : "Bundle.entry",
-        "sliceName" : "RelatedPerson",
-        "short" : "RelatedPerson conforming to the FrCoreRelatedPerson profile, used to convey information about the user's contacts.",
+        "sliceName" : "DUIRelatedPersonContact",
+        "short" : "RelatedPerson conforming to the TDDUIRelatedPersonContact profile, used to convey information about the contact person.",
         "min" : 0,
         "max" : "*"
       },
       {
-        "id" : "Bundle.entry:RelatedPerson.resource",
+        "id" : "Bundle.entry:DUIRelatedPersonContact.resource",
         "path" : "Bundle.entry.resource",
         "min" : 1,
         "type" : [
           {
             "code" : "RelatedPerson",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact"
             ]
           }
         ]
       },
       {
-        "id" : "Bundle.entry:RelatedPerson.request",
+        "id" : "Bundle.entry:DUIRelatedPersonContact.request",
         "path" : "Bundle.entry.request",
         "min" : 1
       },
       {
-        "id" : "Bundle.entry:RelatedPerson.request.method",
+        "id" : "Bundle.entry:DUIRelatedPersonContact.request.method",
         "path" : "Bundle.entry.request.method",
         "patternCode" : "POST"
       }

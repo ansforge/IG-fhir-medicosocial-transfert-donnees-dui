@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "TDDUI"] ; # 
   fhir:title [ fhir:v "Médicosocial - Transfert de données DUI"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-02-05T13:38:35+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-02-05T14:50:20+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -1465,11 +1465,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-outside-service> ;
-         fhir:reference [ fhir:v "StructureDefinition/tddui-outside-service" ]
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact-description> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-related-person-contact-description" ]
        ] ;
-       fhir:name [ fhir:v "Evénement hors prestation" ] ;
-       fhir:description [ fhir:v "Evénement hors prestation prévue dans le projet personnalisé de l’usager." ] ;
+       fhir:name [ fhir:v "Description" ] ;
+       fhir:description [ fhir:v "Description du contact PersonnePhysique." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1482,18 +1482,18 @@
          ] ;
          fhir:value [
            a fhir:String ;
-           fhir:v "RelatedPerson"
+           fhir:v "StructureDefinition:extension"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/RelatedPerson/fr-core-related-person-example> ;
-         fhir:reference [ fhir:v "RelatedPerson/fr-core-related-person-example" ]
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-outside-service> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-outside-service" ]
        ] ;
-       fhir:name [ fhir:v "fr-core-related-person-example" ] ;
-       fhir:description [ fhir:v "Exemple de la famille de l'usager." ] ;
+       fhir:name [ fhir:v "Evénement hors prestation" ] ;
+       fhir:description [ fhir:v "Evénement hors prestation prévue dans le projet personnalisé de l’usager." ] ;
        fhir:example [
          a fhir:Boolean ;
-         fhir:v true
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -2133,6 +2133,48 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-contact-protection-juridique> ;
+         fhir:reference [ fhir:v "ValueSet/tddui-contact-protection-juridique" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Contact Protection Juridique" ] ;
+       fhir:description [ fhir:v "ValueSet définissant la protection juridique." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-contact-relation> ;
+         fhir:reference [ fhir:v "ValueSet/tddui-contact-relation" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Contact Relation" ] ;
+       fhir:description [ fhir:v "ValueSet définissant les relations." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "CodeSystem"
          ]
        ] ) ;
@@ -2490,6 +2532,27 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-nationality> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-nationality" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Nationality Extension" ] ;
+       fhir:description [ fhir:v "The nationality of the patient or a related person." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
@@ -2646,6 +2709,70 @@
        ] ;
        fhir:name [ fhir:v "TDDUI QuestionnaireResponse" ] ;
        fhir:description [ fhir:v "Profil de la ressource QuestionnaireResponse utilisé pour transmettre les réponses aux questionnaires dans le cadre des évaluations." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "RelatedPerson"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/RelatedPerson/tddui-related-person-contact-example> ;
+         fhir:reference [ fhir:v "RelatedPerson/tddui-related-person-contact-example" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Related Person Contact Example" ] ;
+       fhir:description [ fhir:v "Exemple d'un contact." ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-contact-related-person-relashionship> ;
+         fhir:reference [ fhir:v "ValueSet/tddui-contact-related-person-relashionship" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Related Person Relashionship" ] ;
+       fhir:description [ fhir:v "ValueSet définissant les slices de RelatedPerson.relationship." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-related-person-contact" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI RelatedPerson Contact" ] ;
+       fhir:description [ fhir:v "Profil de la ressource FRCoreRelatedPersonProfile permettant de représenter un contact de l'usager." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

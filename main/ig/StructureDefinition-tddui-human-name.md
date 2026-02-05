@@ -21,7 +21,7 @@
 
 **Utilisations:**
 
-* Utilise ce/t/te profil de type de données: [TDDUI Patient INS](StructureDefinition-tddui-patient-ins.md), [TDDUI Patient](StructureDefinition-tddui-patient.md) and [TDDUI Practitioner](StructureDefinition-tddui-practitioner.md)
+* Utilise ce/t/te profil de type de données: [TDDUI Patient INS](StructureDefinition-tddui-patient-ins.md), [TDDUI Patient](StructureDefinition-tddui-patient.md), [TDDUI Practitioner](StructureDefinition-tddui-practitioner.md) and [TDDUI RelatedPerson Contact](StructureDefinition-tddui-related-person-contact.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-human-name)
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-human-name.csv
   "name" : "tddui-humanname",
   "title" : "TDDUI Human Name DataType",
   "status" : "active",
-  "date" : "2026-02-05T13:38:35+00:00",
+  "date" : "2026-02-05T14:50:20+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
