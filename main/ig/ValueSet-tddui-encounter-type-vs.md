@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-type-vs | *Version*:2.2.0-ballot |
-| Active as of 2026-01-26 | *Computable Name*:TDDUIEncounterTypeVs |
+| Active as of 2026-02-05 | *Computable Name*:TDDUIEncounterTypeVs |
 
  
 ValueSet for TDDUI Encounter's types 
@@ -46,9 +46,7 @@ ValueSet for TDDUI Encounter's types
   "resourceType" : "ValueSet",
   "id" : "tddui-encounter-type-vs",
   "meta" : {
-    "profile" : [
-      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
-    ]
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-type-vs",
   "version" : "2.2.0-ballot",
@@ -56,7 +54,7 @@ ValueSet for TDDUI Encounter's types
   "title" : "TDDUI Encounter Type ValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-26T12:56:49+00:00",
+  "date" : "2026-02-05T13:38:35+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -85,7 +83,7 @@ ValueSet for TDDUI Encounter's types
     "include" : [
       {
         "valueSet" : [
-          "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-type|2.1.0"
+          "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-type"
         ]
       },
       {
@@ -95,7 +93,7 @@ ValueSet for TDDUI Encounter's types
       },
       {
         "valueSet" : [
-          "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-evenement-ssiad-cisis|20250624152100"
+          "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-evenement-ssiad-cisis"
         ]
       },
       {

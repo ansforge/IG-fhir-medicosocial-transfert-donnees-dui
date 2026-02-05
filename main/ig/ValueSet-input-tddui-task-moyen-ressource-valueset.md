@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-moyen-ressource-valueset | *Version*:2.2.0-ballot |
-| Active as of 2026-01-26 | *Computable Name*:InputTDDUITaskMoyenRessourceValueSet |
+| Active as of 2026-02-05 | *Computable Name*:InputTDDUITaskMoyenRessourceValueSet |
 
  
 ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les moyens et ressources du projet personnalisé. 
@@ -46,9 +46,7 @@ ValueSet pour la définition des éléments spécifiques des input dans la resso
   "resourceType" : "ValueSet",
   "id" : "input-tddui-task-moyen-ressource-valueset",
   "meta" : {
-    "profile" : [
-      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
-    ]
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-moyen-ressource-valueset",
   "version" : "2.2.0-ballot",
@@ -56,7 +54,7 @@ ValueSet pour la définition des éléments spécifiques des input dans la resso
   "title" : "InputTDDUITaskMoyenRessourceValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-26T12:56:49+00:00",
+  "date" : "2026-02-05T13:38:35+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

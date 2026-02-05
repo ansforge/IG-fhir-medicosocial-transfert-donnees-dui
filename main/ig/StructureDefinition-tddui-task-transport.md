@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport | *Version*:2.2.0-ballot |
-| Active as of 2026-01-26 | *Computable Name*:TDDUITaskTransport |
+| Active as of 2026-02-05 | *Computable Name*:TDDUITaskTransport |
 
  
 Profil de la ressource Task permettant de représenter le transport. 
@@ -22,9 +22,9 @@ Profil de la ressource Task permettant de représenter le transport.
 **Utilisations:**
 
 * Dérivé de ce Profil: [TDDUI Task Transport Professionnel](StructureDefinition-tddui-task-transport-professionnel.md) and [TDDUI Task Transport Usager](StructureDefinition-tddui-task-transport-usager.md)
-* Exemples pour ce Profil: [Task/tddui-task-transport-example](Task-tddui-task-transport-example.md)
+* Exemples pour ce/t/te Profil: [Task/tddui-task-transport-example](Task-tddui-task-transport-example.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-task-transport)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-task-transport)
 
 ### Formal Views of Profile Content
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
   "name" : "TDDUITaskTransport",
   "title" : "TDDUI Task Transport",
   "status" : "active",
-  "date" : "2026-01-26T12:56:49+00:00",
+  "date" : "2026-02-05T13:38:35+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -104,7 +104,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
   "kind" : "resource",
   "abstract" : false,
   "type" : "Task",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Task|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Task",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -135,7 +135,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
         "path" : "Task.code",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis|20250624152101"
+          "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis"
         },
         "mapping" : [
           {
@@ -152,7 +152,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement|2.2.0-ballot"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement"
             ]
           }
         ],
@@ -197,7 +197,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization|2.2.0-ballot"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization"
             ]
           }
         ],
@@ -226,7 +226,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
         "path" : "Task.input.type",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset|2.2.0-ballot"
+          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-transport-valueset"
         }
       },
       {
@@ -265,7 +265,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-motorisation-cisis|20250624152100"
+          "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-motorisation-cisis"
         }
       },
       {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exercise-mode | *Version*:2.2.0-ballot |
-| Active as of 2026-01-26 | *Computable Name*:TDDUIExerciseMode |
+| Active as of 2026-02-05 | *Computable Name*:TDDUIExerciseMode |
 
 Extension permettant de représenter le mode d'exercice du professionnel.
 
@@ -19,10 +19,10 @@ Extension permettant de représenter le mode d'exercice du professionnel.
 
 **Utilisations:**
 
-* Utiliser ce Extension: [TDDUI Practitioner Role](StructureDefinition-tddui-practitioner-role.md)
-* Exemples pour ce Extension: [Bundle/ExampleTDDUIBundle](Bundle-ExampleTDDUIBundle.md) and [PractitionerRole/tddui-practitioner-role-example](PractitionerRole-tddui-practitioner-role-example.md)
+* Utilise ce/t/te Extension: [TDDUI Practitioner Role](StructureDefinition-tddui-practitioner-role.md)
+* Exemples pour ce/t/te Extension: [Bundle/ExampleTDDUIBundle](Bundle-ExampleTDDUIBundle.md) and [PractitionerRole/tddui-practitioner-role-example](PractitionerRole-tddui-practitioner-role-example.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-exercise-mode)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-exercise-mode)
 
 ### Formal Views of Extension Content
 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-exercise-mode.
   "name" : "TDDUIExerciseMode",
   "title" : "Mode d'exercice",
   "status" : "active",
-  "date" : "2026-01-26T12:56:49+00:00",
+  "date" : "2026-02-05T13:38:35+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -91,7 +91,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-exercise-mode.
     }
   ],
   "type" : "Extension",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -126,7 +126,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-exercise-mode.
         "path" : "Extension.value[x].coding",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J117-ModeExercice-ENREG/FHIR/JDV-J117-ModeExercice-ENREG|20210827120000"
+          "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J117-ModeExercice-ENREG/FHIR/JDV-J117-ModeExercice-ENREG"
         }
       }
     ]

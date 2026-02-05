@@ -9,19 +9,19 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action | *Version*:2.2.0-ballot |
-| Active as of 2026-01-26 | *Computable Name*:TDDUITaskAction |
+| Active as of 2026-02-05 | *Computable Name*:TDDUITaskAction |
 
  
 Profil de la ressource Task permettant de représenter les actions réalisées dans le cadre du projet personnalisé. 
 
 **Utilisations:**
 
-* Utiliser ce Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
-* Référer à ce Profil: [TDDUI Task MoyenRessource](StructureDefinition-tddui-task-moyen-ressource.md) and [TDDUI Task Prestation](StructureDefinition-tddui-task-prestation.md)
-* Exemples pour ce Profil: [Task/tddui-pp-ime-task-action-1-aesh-example](Task-tddui-pp-ime-task-action-1-aesh-example.md), [Task/tddui-pp-ime-task-action-1-educ-example](Task-tddui-pp-ime-task-action-1-educ-example.md), [Task/tddui-pp-pa-task-action-1-ergo-example](Task-tddui-pp-pa-task-action-1-ergo-example.md), [Task/tddui-pp-pa-task-action-1-ide-example](Task-tddui-pp-pa-task-action-1-ide-example.md)... Show 4 more, [Task/tddui-pp-pa-task-action-1-kine-example](Task-tddui-pp-pa-task-action-1-kine-example.md), [Task/tddui-pp-pa-task-action-2-anim-example](Task-tddui-pp-pa-task-action-2-anim-example.md), [Task/tddui-pp-pa-task-action-2-ide-example](Task-tddui-pp-pa-task-action-2-ide-example.md) and [Task/tddui-pp-pa-task-action-3-psy-example](Task-tddui-pp-pa-task-action-3-psy-example.md)
+* Utilise ce/t/te Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
+* Référence ce Profil: [TDDUI Task MoyenRessource](StructureDefinition-tddui-task-moyen-ressource.md) and [TDDUI Task Prestation](StructureDefinition-tddui-task-prestation.md)
+* Exemples pour ce/t/te Profil: [Task/tddui-pp-ime-task-action-1-aesh-example](Task-tddui-pp-ime-task-action-1-aesh-example.md), [Task/tddui-pp-ime-task-action-1-educ-example](Task-tddui-pp-ime-task-action-1-educ-example.md), [Task/tddui-pp-pa-task-action-1-ergo-example](Task-tddui-pp-pa-task-action-1-ergo-example.md), [Task/tddui-pp-pa-task-action-1-ide-example](Task-tddui-pp-pa-task-action-1-ide-example.md)... Show 4 more, [Task/tddui-pp-pa-task-action-1-kine-example](Task-tddui-pp-pa-task-action-1-kine-example.md), [Task/tddui-pp-pa-task-action-2-anim-example](Task-tddui-pp-pa-task-action-2-anim-example.md), [Task/tddui-pp-pa-task-action-2-ide-example](Task-tddui-pp-pa-task-action-2-ide-example.md) and [Task/tddui-pp-pa-task-action-3-psy-example](Task-tddui-pp-pa-task-action-3-psy-example.md)
 * CapabilityStatements utilisant ce Profil: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-task-action)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-task-action)
 
 ### Formal Views of Profile Content
 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-action.cs
   "name" : "TDDUITaskAction",
   "title" : "TDDUI Task Action",
   "status" : "active",
-  "date" : "2026-01-26T12:56:49+00:00",
+  "date" : "2026-02-05T13:38:35+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -100,7 +100,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-action.cs
   "kind" : "resource",
   "abstract" : false,
   "type" : "Task",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Task|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Task",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -163,7 +163,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-action.cs
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise|2.2.0-ballot"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise"
             ]
           }
         ],
@@ -209,7 +209,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-action.cs
           {
             "code" : "Extension",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-status-author|2.2.0-ballot"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-status-author"
             ]
           }
         ],
@@ -257,8 +257,8 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-action.cs
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner|2.2.0-ballot",
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role|2.2.0-ballot"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner",
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role"
             ]
           }
         ],
@@ -288,7 +288,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-action.cs
         "path" : "Task.input.type",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-action-valueset|2.2.0-ballot"
+          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-action-valueset"
         }
       },
       {
@@ -359,7 +359,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-action.cs
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response|2.2.0-ballot"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
             ]
           }
         ]
@@ -467,7 +467,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-action.cs
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference|2.2.0-ballot"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"
             ]
           }
         ]
@@ -505,7 +505,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-action.cs
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif|2.2.0-ballot"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif"
             ]
           }
         ]

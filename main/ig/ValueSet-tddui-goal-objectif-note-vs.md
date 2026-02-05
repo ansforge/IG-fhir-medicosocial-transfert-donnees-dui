@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-goal-objectif-note-vs | *Version*:2.2.0-ballot |
-| Active as of 2026-01-26 | *Computable Name*:TDDUIGoalObjectifNoteVS |
+| Active as of 2026-02-05 | *Computable Name*:TDDUIGoalObjectifNoteVS |
 
  
 ValueSet définissant les types de notes pour l'élément Goal.note. 
@@ -46,9 +46,7 @@ ValueSet définissant les types de notes pour l'élément Goal.note.
   "resourceType" : "ValueSet",
   "id" : "tddui-goal-objectif-note-vs",
   "meta" : {
-    "profile" : [
-      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
-    ]
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-goal-objectif-note-vs",
   "version" : "2.2.0-ballot",
@@ -56,7 +54,7 @@ ValueSet définissant les types de notes pour l'élément Goal.note.
   "title" : "TDDUI Goal Objectif Note ValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-26T12:56:49+00:00",
+  "date" : "2026-02-05T13:38:35+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -85,7 +83,7 @@ ValueSet définissant les types de notes pour l'élément Goal.note.
     "include" : [
       {
         "valueSet" : [
-          "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-discriminator-vs|2.2.0-ballot"
+          "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-discriminator-vs"
         ]
       }
     ],

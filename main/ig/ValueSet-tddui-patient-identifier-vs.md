@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-patient-identifier-vs | *Version*:2.2.0-ballot |
-| Active as of 2026-01-26 | *Computable Name*:TDDUIPatientIdentifierVs |
+| Active as of 2026-02-05 | *Computable Name*:TDDUIPatientIdentifierVs |
 
  
 ValueSet for TDDUI Patient's identifier types 
@@ -47,9 +47,7 @@ ValueSet for TDDUI Patient's identifier types
   "resourceType" : "ValueSet",
   "id" : "tddui-patient-identifier-vs",
   "meta" : {
-    "profile" : [
-      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
-    ]
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-patient-identifier-vs",
   "version" : "2.2.0-ballot",
@@ -57,7 +55,7 @@ ValueSet for TDDUI Patient's identifier types
   "title" : "TDDUI Patient Identifier ValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-26T12:56:49+00:00",
+  "date" : "2026-02-05T13:38:35+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -88,7 +86,7 @@ ValueSet for TDDUI Patient's identifier types
         "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-identifier"
       },
       {
-        "valueSet" : ["http://hl7.org/fhir/ValueSet/identifier-type|4.0.1"]
+        "valueSet" : ["http://hl7.org/fhir/ValueSet/identifier-type"]
       },
       {
         "system" : "http://terminology.hl7.org/CodeSystem/v2-0203"
