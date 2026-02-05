@@ -1,7 +1,7 @@
 ValueSet: TDDUIEncounterIdentifier
 Id: tddui-encounter-identifier
 Title: "TDDUI Encounter Identifier"
-Description: "ValueSet for TDDUI Encounter's identifier types"
+Description: "ValueSet pour la définition des codes d'identifiant de séjour"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^experimental = false
 

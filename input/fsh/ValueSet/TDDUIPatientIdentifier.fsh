@@ -1,7 +1,7 @@
 ValueSet: TDDUIPatientIdentifier
 Id: tddui-patient-identifier
 Title: "TDDUI Patient Identifier"
-Description: "ValueSet for TDDUI Patient's identifier types"
+Description: "ValueSet pour la définition des codes d'identifiant de l'usager"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^experimental = false
 
