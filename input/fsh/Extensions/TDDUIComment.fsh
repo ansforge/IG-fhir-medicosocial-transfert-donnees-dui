@@ -1,6 +1,6 @@
 Extension: TDDUIComment
 Id: tddui-comment
-Title: "Commentaire"
+Title: "TDDUI Comment"
 Description: "
 - **Séjour** : commentaire relatif au séjour.
 - **Événement** : commentaires sur le déroulé de l’évènement.

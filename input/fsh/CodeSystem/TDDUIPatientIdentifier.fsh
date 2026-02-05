@@ -1,7 +1,7 @@
 CodeSystem: TDDUIIdentifier
 Id: tddui-identifier
-Title: "TDDUI FR Core CodeSystem v2-0203"
-Description: "TDDUI Patient's identifier"
+Title: "TDDUI Patient Identifier"
+Description: "CodeSystem pour la définition des codes d'identifiant de l'usager"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
 
 * ^caseSensitive = true

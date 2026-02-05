@@ -1,6 +1,6 @@
 Extension: TDDUICarePlanProjetPersoRef
 Id: tddui-careplan-reference
-Title: "Lien vers le projet personnalisé"
+Title: "TDDUI CarePlan Projet Perso Ref"
 Description: "Liens vers le projet personnalisé, utilisables dans le profil TDDUIGoalObjectif."
 Context: Goal
 

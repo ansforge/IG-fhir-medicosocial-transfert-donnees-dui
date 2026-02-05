@@ -1,6 +1,6 @@
 Extension: TDDUIEventCancelReason
 Id: tddui-event-cancel-reason
-Title: "Évènement annulé"
+Title: "TDDUI Event Cancel Reason"
 Description: "Motif associé au statut de non-réalisation de l’évènement."
 Context: Encounter.status
 

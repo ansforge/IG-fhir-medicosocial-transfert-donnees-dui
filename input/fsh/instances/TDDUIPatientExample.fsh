@@ -1,7 +1,8 @@
 Instance: tddui-patient-example
 InstanceOf: TDDUIPatient
-Usage: #example
+Title: "TDDUI Patient Example"
 Description: "Exemple de la ressource TDDUIPatient"
+Usage: #example
 
 * extension[birthPlace].url = "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"
 * extension[birthPlace].valueAddress.extension[inseeCode].valueCoding = https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM#63220

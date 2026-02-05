@@ -1,7 +1,8 @@
 Instance: tddui-pp-pa-task-action-2-anim-example
 InstanceOf: TDDUITaskAction
-Usage: #example
+Title: "TDDUI PP PA Task Action 2 Anim Example"
 Description: "Exemple d'une action de l'objectif 1 réalisée par l'animatrice dans le cadre du projet personnalisé PA." 
+Usage: #example
 
 * identifier.value = "3480787529/123456789-ACTI-12341"
 * identifier.system = "https://identifiant-medicosocial-action.esante.gouv.fr"

@@ -1,7 +1,8 @@
 Instance: tddui-task-transport-usager-example
 InstanceOf: TDDUITaskTransportUsager
-Usage: #example
+Title: "TDDUI Task Transport Usager Example"
 Description: "Exemple du transport de l'usager."
+Usage: #example
 
 * identifier.value = "3480787529/147720425367411-TPPat-154675"
 * identifier.system = "https://identifiant-medicosocial-transportusager.esante.gouv.fr"
