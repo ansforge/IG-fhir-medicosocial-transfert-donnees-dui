@@ -549,7 +549,7 @@ La décision est une réponse à une demande de compensation l'usager ou de son 
   tr>
     <td>typeDecision : [1..1] Code</td>
     <td>Type de décision.<br>
-    Nomenclature(s) associée(s) : en cours création NOS
+    Jeu(x) de valeur(s) associé(s) : en cours création NOS
     </td>
   </tr>
   <tr>
@@ -561,12 +561,12 @@ La décision est une réponse à une demande de compensation l'usager ou de son 
     <li>typeDecision = '5' (Clôture de droit) </li>
     <li>typeDecision ='1' (Attribution) et DroitPrestation.natureDroit  = '2' (Renouvellement) ou '3' (Révision) </li>
     </ul>
-    Ne pas transmettre si typeDecision = '1' (Attribution) et natureDroit = '1' (Nouveau droit)
+    Ne pas transmettre si typeDecision = '1' (Attribution) et DroitPrestation.natureDroit = '1' (Nouveau droit)
     </td>
   </tr>
   <tr>
     <td>idNat_Decision : [0..1] Identifiant</td>
-    <td>Identifiant unique de la décision généré par ViaTrajectoire. Cet identifiant unique est créé par ViaTrajectoire lorsque la décision est enregistrée dans le SI-SdO.</td>
+    <td>Identifiant technique unique de la décision attribué par ViaTrajectoire. Cet identifiant créé par ViaTrajectoire lorsque la décision est enregistrée dans le SI du Suivi des Orientations (SdO) correspondant à ViaTrajectoire.</td>
   </tr>
   <tr>
     <td>dateDecision : [0..1] Date</td>
@@ -575,7 +575,7 @@ La décision est une réponse à une demande de compensation l'usager ou de son 
   <tr>
     <td>motivation : [0..*] Code</td>
     <td>Considération(s) de droit ou de fait qui constituent le fondement de la décision.<br>
-    Nomenclature(s) associée(s) : à définir
+    Jeu(x) de valeur(s) associé(s) : en cours création NOS
     </td>
   </tr>
   <tr>
