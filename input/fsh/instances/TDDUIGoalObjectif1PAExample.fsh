@@ -1,7 +1,8 @@
 Instance: tddui-pp-pa-goal-objectif-1-example
 InstanceOf: TDDUIGoalObjectif
-Usage: #example
+Title: "TDDUI PP PA Goal Objectif 1 Example"
 Description: "Exemple d'un objectif dans le cadre du projet personnalisé PA."
+Usage: #example
 
 * identifier.value = "3480787529/123456789-OBJE-1234"
 * identifier.system = "https://identifiant-medicosocial-objectif.esante.gouv.fr"

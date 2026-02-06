@@ -1,7 +1,8 @@
 Instance: tddui-pp-pa-consent-accord-example
 InstanceOf: TDDUIConsentAccord
-Usage: #example
+Title: "TDDUI PP PA Consent Accord Example"
 Description: "Exemple d'un accord de la structure"
+Usage: #example
 
 * status = #active
 

@@ -1,7 +1,8 @@
 Instance: tddui-practitioner-example
 InstanceOf: TDDUIPractitioner
-Usage: #example
+Title: "TDDUI Practitioner Example"
 Description: "Exemple d'un professionnel de santé"
+Usage: #example
 
 * identifier[idNatPs].value = "10103441234"
 

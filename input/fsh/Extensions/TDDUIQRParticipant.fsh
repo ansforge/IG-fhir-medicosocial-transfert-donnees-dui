@@ -1,6 +1,6 @@
 Extension: TDDUIQRParticipant
 Id: tddui-qr-participant
-Title: "Responsable et auteur du statut de l'évaluation"
+Title: "TDDUI QR Participant"
 Description: "Extension permettant d'ajouter le responsable de l'évaluation et l'auteur du statut de l'évaluation dans un QuestionnaireResponse."
 Context: QuestionnaireResponse
 * extension ^slicing.discriminator.type = #value

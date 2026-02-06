@@ -1,7 +1,8 @@
 Instance: tddui-organization-example
 InstanceOf: TDDUIOrganization
-Usage: #example
+Title: "TDDUI Organization Example"
 Description: "ESSMS - Les Chênes Verts"
+Usage: #example
 
 // Raison sociale
 * name = "Les Chênes Verts"

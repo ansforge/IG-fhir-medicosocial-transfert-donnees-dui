@@ -28,13 +28,13 @@ Description: "Profil de la ressource Goal permettant de représenter les attente
     TDDUIDiscriminator named TDDUIDiscriminator 1..2
 * note[origineAttente] ^short = "Originie de l'attente"
 * note[origineAttente].extension[TDDUIDiscriminator] 1..1
-* note[origineAttente].extension[TDDUIDiscriminator].valueCodeableConcept from TDDUIGoalAttenteNoteVS (required)
-* note[origineAttente].extension[TDDUIDiscriminator].valueCodeableConcept = TDDUIDiscriminatorCS#origineAttente
+* note[origineAttente].extension[TDDUIDiscriminator].valueCodeableConcept from TDDUIGoalAttenteNote (required)
+* note[origineAttente].extension[TDDUIDiscriminator].valueCodeableConcept = TDDUIDiscriminator#origineAttente
 
 * note[commentaireAttente] ^short = "Commentaire de l'attente"
 * note[commentaireAttente].extension[TDDUIDiscriminator] 1..1
-* note[commentaireAttente].extension[TDDUIDiscriminator].valueCodeableConcept from TDDUIGoalAttenteNoteVS (required)
-* note[commentaireAttente].extension[TDDUIDiscriminator].valueCodeableConcept = TDDUIDiscriminatorCS#commentaireAttente
+* note[commentaireAttente].extension[TDDUIDiscriminator].valueCodeableConcept from TDDUIGoalAttenteNote (required)
+* note[commentaireAttente].extension[TDDUIDiscriminator].valueCodeableConcept = TDDUIDiscriminator#commentaireAttente
 
 Mapping:  ConceptMetier_TDDUIGoalAttente
 Source:   TDDUIGoalAttente

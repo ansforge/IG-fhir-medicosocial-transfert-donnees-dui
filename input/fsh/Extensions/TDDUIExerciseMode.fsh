@@ -1,6 +1,6 @@
 Extension: TDDUIExerciseMode
 Id: tddui-exercise-mode
-Title: "Mode d'exercice"
+Title: "TDDUI Exercise Mode"
 Description: "Extension permettant de représenter le mode d'exercice du professionnel."
 Context: PractitionerRole
 

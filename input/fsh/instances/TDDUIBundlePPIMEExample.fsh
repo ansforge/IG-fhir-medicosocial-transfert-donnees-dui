@@ -1,5 +1,6 @@
 Instance: tddui-pp-ime-bundle-example
 InstanceOf: TDDUIBundle
+Title: "TDDUI PP IME Bundle Example"
 Description: "Exemple de bundle conforme au profil TDDUIBundle contenant le projet personnalisé en IME"
 Usage: #example
 

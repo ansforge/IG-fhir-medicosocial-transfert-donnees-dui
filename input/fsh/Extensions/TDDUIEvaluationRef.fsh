@@ -1,6 +1,6 @@
 Extension: TDDUIEvaluationRef
 Id: tddui-evaluation-reference
-Title: "Lien vers l'évaluation"
+Title: "TDDUI Evaluation Ref"
 Description: "Liens vers l'évaluation, utilisables dans le profil TDDUIGoalObjectif."
 Context: Goal
 

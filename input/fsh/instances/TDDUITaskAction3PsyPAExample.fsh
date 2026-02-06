@@ -1,7 +1,8 @@
 Instance: tddui-pp-pa-task-action-3-psy-example
 InstanceOf: TDDUITaskAction
-Usage: #example
+Title: "TDDUI PP PA Task Action 3 Psy Example"
 Description: "Exemple d'une action de l'objectif 3 réalisée par le psychologue dans le cadre du projet personnalisé PA." 
+Usage: #example
 
 * identifier.value = "3480787529/123456789-ACTI-1238"
 * identifier.system = "https://identifiant-medicosocial-action.esante.gouv.fr"

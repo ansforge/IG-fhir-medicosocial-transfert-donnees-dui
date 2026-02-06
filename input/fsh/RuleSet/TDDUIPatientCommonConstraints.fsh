@@ -1,7 +1,7 @@
 
 RuleSet: TDDUIPatientCommonConstraints
 
-* identifier.type from TDDUIPatientIdentifierVs (required)
+* identifier.type from TDDUIPatientIdentifier (required)
 
 * identifier contains
     InitialNumberMDPH 0..1

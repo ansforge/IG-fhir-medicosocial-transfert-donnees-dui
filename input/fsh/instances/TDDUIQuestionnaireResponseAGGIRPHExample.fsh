@@ -1,5 +1,6 @@
 Instance: tddui-questionnaire-response-aggir-ph-example
 InstanceOf: TDDUIQuestionnaireResponse
+Title: "TDDUI Questionnaire Response AGGIR PH Example"
 Description: "Grille de réponse AGGIR PH"
 Usage: #example
 
