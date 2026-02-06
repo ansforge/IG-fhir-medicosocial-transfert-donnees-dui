@@ -2,7 +2,7 @@ Profile: TDDUIObservationPeriodeScolaire
 Parent: Observation
 Id: tddui-observation-periode-scolaire
 Title: "TDDUI Obervation Periode Scolaire"
-Description: "Profil de la ressource Organization permettant de représenter la période scolaire de l'usager."
+Description: "Profil de la ressource Observation permettant de représenter la période scolaire de l'usager."
 
 * identifier 1..1
 * identifier ^short = "Identifiant de la période scolaire"
@@ -10,6 +10,7 @@ Description: "Profil de la ressource Organization permettant de représenter la 
 * identifier.value ^example[0].valueString = "3480787529/147720425367411-PSCO-12548"
 * identifier.system = "https://identifiant-medicosocial-periodescolaire.esante.gouv.fr"
 
+* subject 1..1
 * subject only Reference(TDDUIPatient or TDDUIPatientINS)
 
 * code from TDDUIObservationType (required)
@@ -40,3 +41,11 @@ Description: "Profil de la ressource Organization permettant de représenter la 
 
 * component[volumeScolarisation].code = #volumeScolarisation "Volume de scolarisation"
 * component[volumeScolarisation].value[x] only Quantity
+
+Mapping:  ConceptMetier_TDDUIObservationPeriodeScolaire
+Source:   TDDUIObservationPeriodeScolaire
+Target: "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"
+Id:       specmetier-to-TDDUIObservationPeriodeScolaire
+Title:    "Modèle de contenu DUI"
+* -> "PeriodeScolaire"
+

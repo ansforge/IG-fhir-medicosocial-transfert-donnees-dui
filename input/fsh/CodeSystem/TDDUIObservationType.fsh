@@ -10,3 +10,4 @@ Description: "CodeSystem for the Observation types"
 
 * #CAUSEDECES "Cause de décès"
 * #PERIODESCOL "Période scolaire"
+* #MOBILITE "Mobilité"
