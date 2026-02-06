@@ -1,0 +1,39 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "88693953-ff32-4dea-b5a9-7a496ddedb4e-104",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/88693953-ff32-4dea-b5a9-7a496ddedb4e-104",
+  "name" : "UnionTDDUIEncounterTypeVsAndTDDUIEncounterType",
+  "title" : "Union of TDDUI Encounter Type ValueSet And TDDUI Encounter Type",
+  "status" : "active",
+  "date" : "2026-02-06T13:43:58+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-type|2.1.0"]
+    },
+    {
+      "valueSet" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-serafin-valueset"]
+    },
+    {
+      "valueSet" : ["https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-evenement-ssiad-cisis|20250624152100"]
+    },
+    {
+      
+    },
+    {
+      "valueSet" : ["https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-type"]
+    },
+    {
+      "valueSet" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-serafin"]
+    },
+    {
+      "valueSet" : ["https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-evenement-ssiad-cisis"]
+    }]
+  }
+}

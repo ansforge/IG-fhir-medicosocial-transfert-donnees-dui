@@ -1,4 +1,4 @@
-# TDDUI Comment - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Comment - Médicosocial - Transfert de données DUI v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment | *Version*:2.2.0-ballot |
-| Active as of 2026-02-05 | *Computable Name*:TDDUIComment |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment | *Version*:2.2.0 |
+| Active as of 2026-02-06 | *Computable Name*:TDDUIComment |
 
 * **Séjour** : commentaire relatif au séjour.
 * **Événement** : commentaires sur le déroulé de l’évènement.
@@ -46,11 +46,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-comment.csv), 
   "resourceType" : "StructureDefinition",
   "id" : "tddui-comment",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment",
-  "version" : "2.2.0-ballot",
+  "version" : "2.2.0",
   "name" : "TDDUIComment",
   "title" : "TDDUI Comment",
   "status" : "active",
-  "date" : "2026-02-05T15:15:02+00:00",
+  "date" : "2026-02-06T13:40:54+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
