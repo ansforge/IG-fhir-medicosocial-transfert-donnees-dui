@@ -81,7 +81,8 @@ Les ressources profilées dans le cadre de ce guide d'implémentation sont les s
 | [Goal](http://hl7.org/fhir/StructureDefinition/Goal|4.0.1) | [TDDUIGoalAttente](StructureDefinition-tddui-goal-attente.md) | Profil de la ressource Goal permettant de représenter les attentes pour un usager. |
 | [Goal](http://hl7.org/fhir/StructureDefinition/Goal|4.0.1) | [TDDUIGoalObjectif](StructureDefinition-tddui-goal-objectif.md) | Profil de la ressource Goal permettant de représenter les résultats à atteindre dans le cadre du projet personnalisé. |
 | [Observation](http://hl7.org/fhir/StructureDefinition/Observation|4.0.1) | [TDDUIObservationCauseDeces](StructureDefinition-tddui-observation-cause-deces.md) | Profil de la ressource Observation permettant de représenter les causes de décès d'un usager. |
-| [Observation](http://hl7.org/fhir/StructureDefinition/Observation|4.0.1) | [TDDUIObservationPeriodeScolaire](StructureDefinition-tddui-observation-periode-scolaire.md) | Profil de la ressource Organization permettant de représenter la période scolaire de l'usager. |
+| [Observation](http://hl7.org/fhir/StructureDefinition/Observation|4.0.1) | [TDDUIObservationMobilite](StructureDefinition-tddui-observation-mobilite.md) | Profil de la ressource Observation permettant de représenter la mobilité de l'usager. |
+| [Observation](http://hl7.org/fhir/StructureDefinition/Observation|4.0.1) | [TDDUIObservationPeriodeScolaire](StructureDefinition-tddui-observation-periode-scolaire.md) | Profil de la ressource Observation permettant de représenter la période scolaire de l'usager. |
 | [FR Core Organization Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.1.0) | [TDDUIOrganization](StructureDefinition-tddui-organization.md) | Profil de la ressource FRCoreOrganizationProfile permettant de représenter les entités juridiques. |
 | [FR Core Patient Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.1.0) | [TDDUIPatient](StructureDefinition-tddui-patient.md) | Profil de la ressource FrCorePatientProfile permettant de représenter un usager lorsque l'INS n'est pas transmis. |
 | [FR Core Patient INS Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.1.0) | [TDDUIPatientINS](StructureDefinition-tddui-patient-ins.md) | Profil de la ressource FRCorePatientINSProfile permettant de représenter un usager lorsque l'INS est transmis. |
@@ -142,7 +143,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2026-02-06T08:16:26+00:00",
+  "date" : "2026-02-06T09:56:58+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -1685,10 +1686,24 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           }
         ],
         "reference" : {
+          "reference" : "StructureDefinition/tddui-observation-mobilite"
+        },
+        "name" : "TDDUI Obervation Mobilite",
+        "description" : "Profil de la ressource Observation permettant de représenter la mobilité de l'usager.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
           "reference" : "StructureDefinition/tddui-observation-periode-scolaire"
         },
         "name" : "TDDUI Obervation Periode Scolaire",
-        "description" : "Profil de la ressource Organization permettant de représenter la période scolaire de l'usager.",
+        "description" : "Profil de la ressource Observation permettant de représenter la période scolaire de l'usager.",
         "exampleBoolean" : false
       },
       {

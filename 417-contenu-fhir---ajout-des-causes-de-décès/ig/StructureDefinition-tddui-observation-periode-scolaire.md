@@ -12,7 +12,7 @@
 | Active as of 2026-02-06 | *Computable Name*:TDDUIObservationPeriodeScolaire |
 
  
-Profil de la ressource Organization permettant de représenter la période scolaire de l'usager. 
+Profil de la ressource Observation permettant de représenter la période scolaire de l'usager. 
 
 **Utilisations:**
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-pe
   "name" : "TDDUIObservationPeriodeScolaire",
   "title" : "TDDUI Obervation Periode Scolaire",
   "status" : "active",
-  "date" : "2026-02-06T08:16:26+00:00",
+  "date" : "2026-02-06T09:56:58+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -54,7 +54,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-pe
       ]
     }
   ],
-  "description" : "Profil de la ressource Organization permettant de représenter la période scolaire de l'usager.",
+  "description" : "Profil de la ressource Observation permettant de représenter la période scolaire de l'usager.",
   "jurisdiction" : [
     {
       "coding" : [
@@ -68,6 +68,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-pe
   ],
   "fhirVersion" : "4.0.1",
   "mapping" : [
+    {
+      "identity" : "specmetier-to-TDDUIObservationPeriodeScolaire",
+      "uri" : "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html",
+      "name" : "Modèle de contenu DUI"
+    },
     {
       "identity" : "workflow",
       "uri" : "http://hl7.org/fhir/workflow",
@@ -108,7 +113,13 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-pe
     "element" : [
       {
         "id" : "Observation",
-        "path" : "Observation"
+        "path" : "Observation",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIObservationPeriodeScolaire",
+            "map" : "PeriodeScolaire"
+          }
+        ]
       },
       {
         "id" : "Observation.identifier",
@@ -151,6 +162,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-pe
       {
         "id" : "Observation.subject",
         "path" : "Observation.subject",
+        "min" : 1,
         "type" : [
           {
             "code" : "Reference",

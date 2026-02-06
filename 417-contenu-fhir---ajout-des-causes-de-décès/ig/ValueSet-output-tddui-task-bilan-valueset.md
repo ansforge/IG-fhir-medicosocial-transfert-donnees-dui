@@ -56,7 +56,7 @@ ValueSet pour la définition des éléments spécifiques des output dans la ress
   "title" : "OutputTDDUITaskBilanValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-06T08:16:26+00:00",
+  "date" : "2026-02-06T09:56:58+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

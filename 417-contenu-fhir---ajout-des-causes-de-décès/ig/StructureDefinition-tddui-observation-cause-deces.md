@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-ca
   "name" : "TDDUIObservationCauseDeces",
   "title" : "TDDUI Observation Cause Deces",
   "status" : "active",
-  "date" : "2026-02-06T08:16:26+00:00",
+  "date" : "2026-02-06T09:56:58+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -68,6 +68,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-ca
   ],
   "fhirVersion" : "4.0.1",
   "mapping" : [
+    {
+      "identity" : "specmetier-to-TDDUIObservationCauseDeces",
+      "uri" : "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html",
+      "name" : "Modèle de contenu DUI"
+    },
     {
       "identity" : "workflow",
       "uri" : "http://hl7.org/fhir/workflow",
@@ -108,7 +113,13 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-ca
     "element" : [
       {
         "id" : "Observation",
-        "path" : "Observation"
+        "path" : "Observation",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIObservationCauseDeces",
+            "map" : "CauseDeces"
+          }
+        ]
       },
       {
         "id" : "Observation.code",
@@ -184,7 +195,13 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-ca
         "binding" : {
           "strength" : "required",
           "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-causes-deces|2.2.0-ballot"
-        }
+        },
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIObservationCauseDeces",
+            "map" : "causeDeces"
+          }
+        ]
       }
     ]
   }

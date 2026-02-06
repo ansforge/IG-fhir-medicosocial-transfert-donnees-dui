@@ -23,7 +23,7 @@
   <name value="TDDUIObservationCauseDeces"/>
   <title value="TDDUI Observation Cause Deces"/>
   <status value="active"/>
-  <date value="2026-02-06T08:16:26+00:00"/>
+  <date value="2026-02-06T09:56:58+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -41,6 +41,11 @@
     </coding>
   </jurisdiction>
   <fhirVersion value="4.0.1"/>
+  <mapping>
+    <identity value="specmetier-to-TDDUIObservationCauseDeces"/>
+    <uri value="https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"/>
+    <name value="Modèle de contenu DUI"/>
+  </mapping>
   <mapping>
     <identity value="workflow"/>
     <uri value="http://hl7.org/fhir/workflow"/>
@@ -160,6 +165,10 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
+      <mapping>
+        <identity value="specmetier-to-TDDUIObservationCauseDeces"/>
+        <map value="CauseDeces"/>
+      </mapping>
       <mapping>
         <identity value="rim"/>
         <map value="Entity. Role, or Act"/>
@@ -2153,6 +2162,10 @@
         <valueSet value="https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-causes-deces|2.2.0-ballot"/>
       </binding>
       <mapping>
+        <identity value="specmetier-to-TDDUIObservationCauseDeces"/>
+        <map value="causeDeces"/>
+      </mapping>
+      <mapping>
         <identity value="sct-concept"/>
         <map value="363714003 |Interprets| &lt; 441742003 |Evaluation finding|"/>
       </mapping>
@@ -2302,6 +2315,10 @@
   <differential>
     <element id="Observation">
       <path value="Observation"/>
+      <mapping>
+        <identity value="specmetier-to-TDDUIObservationCauseDeces"/>
+        <map value="CauseDeces"/>
+      </mapping>
     </element>
     <element id="Observation.code">
       <path value="Observation.code"/>
@@ -2361,6 +2378,10 @@
         <strength value="required"/>
         <valueSet value="https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-causes-deces|2.2.0-ballot"/>
       </binding>
+      <mapping>
+        <identity value="specmetier-to-TDDUIObservationCauseDeces"/>
+        <map value="causeDeces"/>
+      </mapping>
     </element>
   </differential>
 </StructureDefinition>

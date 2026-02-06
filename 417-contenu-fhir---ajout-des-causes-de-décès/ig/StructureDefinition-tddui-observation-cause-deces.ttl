@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "TDDUIObservationCauseDeces"] ; # 
   fhir:title [ fhir:v "TDDUI Observation Cause Deces"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-02-06T08:16:26+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-02-06T09:56:58+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -43,6 +43,13 @@
   ] ) ; # 
   fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
   fhir:mapping ( [
+     fhir:identity [ fhir:v "specmetier-to-TDDUIObservationCauseDeces" ] ;
+     fhir:uri [
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"^^xsd:anyURI ;
+       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html>
+     ] ;
+     fhir:name [ fhir:v "Modèle de contenu DUI" ]
+  ] [
      fhir:identity [ fhir:v "workflow" ] ;
      fhir:uri [
        fhir:v "http://hl7.org/fhir/workflow"^^xsd:anyURI ;
@@ -214,6 +221,9 @@
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUIObservationCauseDeces" ] ;
+         fhir:map [ fhir:v "CauseDeces" ]
+       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "Entity. Role, or Act" ]
        ] [
@@ -2672,6 +2682,9 @@
          ]
        ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUIObservationCauseDeces" ] ;
+         fhir:map [ fhir:v "causeDeces" ]
+       ] [
          fhir:identity [ fhir:v "sct-concept" ] ;
          fhir:map [ fhir:v "363714003 |Interprets| < 441742003 |Evaluation finding|" ]
        ] [
@@ -2851,7 +2864,11 @@
   fhir:differential [
      fhir:element ( [
        fhir:id [ fhir:v "Observation" ] ;
-       fhir:path [ fhir:v "Observation" ]
+       fhir:path [ fhir:v "Observation" ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUIObservationCauseDeces" ] ;
+         fhir:map [ fhir:v "CauseDeces" ]
+       ] )
      ] [
        fhir:id [ fhir:v "Observation.code" ] ;
        fhir:path [ fhir:v "Observation.code" ] ;
@@ -2932,7 +2949,11 @@
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-causes-deces|2.2.0-ballot"^^xsd:anyURI ;
            fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-causes-deces?version=2.2.0-ballot>
          ]
-       ]
+       ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUIObservationCauseDeces" ] ;
+         fhir:map [ fhir:v "causeDeces" ]
+       ] )
      ] )
   ] . # 
 

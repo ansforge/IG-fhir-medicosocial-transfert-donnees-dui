@@ -37,7 +37,7 @@ CodeSystem for the Observation types
   "title" : "TDDUI Observation Type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-06T08:16:26+00:00",
+  "date" : "2026-02-06T09:56:58+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -64,7 +64,7 @@ CodeSystem for the Observation types
   ],
   "caseSensitive" : true,
   "content" : "complete",
-  "count" : 2,
+  "count" : 3,
   "concept" : [
     {
       "code" : "CAUSEDECES",
@@ -73,6 +73,10 @@ CodeSystem for the Observation types
     {
       "code" : "PERIODESCOL",
       "display" : "Période scolaire"
+    },
+    {
+      "code" : "MOBILITE",
+      "display" : "Mobilité"
     }
   ]
 }

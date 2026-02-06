@@ -41,7 +41,8 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md) | Profil de la ressource Encounter permettant de regrouper les informations relatives au séjour d'un usager dans une structure ESSMS |
 | [TDDUI Goal Attente](StructureDefinition-tddui-goal-attente.md) | Profil de la ressource Goal permettant de représenter les attentes pour un usager. |
 | [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md) | Profil de la ressource Goal permettant de représenter les résultats à atteindre dans le cadre du projet personnalisé. |
-| [TDDUI Obervation Periode Scolaire](StructureDefinition-tddui-observation-periode-scolaire.md) | Profil de la ressource Organization permettant de représenter la période scolaire de l'usager. |
+| [TDDUI Obervation Mobilite](StructureDefinition-tddui-observation-mobilite.md) | Profil de la ressource Observation permettant de représenter la mobilité de l'usager. |
+| [TDDUI Obervation Periode Scolaire](StructureDefinition-tddui-observation-periode-scolaire.md) | Profil de la ressource Observation permettant de représenter la période scolaire de l'usager. |
 | [TDDUI Observation Cause Deces](StructureDefinition-tddui-observation-cause-deces.md) | Profil de la ressource Observation permettant de représenter les causes de décès d'un usager. |
 | [TDDUI Organization](StructureDefinition-tddui-organization.md) | Profil de la ressource FRCoreOrganizationProfile permettant de représenter les entités juridiques. |
 | [TDDUI Patient](StructureDefinition-tddui-patient.md) | Profil de la ressource FrCorePatientProfile permettant de représenter un usager lorsque l'INS n'est pas transmis. |
