@@ -48,10 +48,12 @@ class Decision #LightYellow {
     idDecision : Identifiant [1..1]
     numeroEnregistrement : Identifiant [0..1]
     typeDecision : Code [1..1]
+    dateEffetCloture : Date [0..1]
     idDecisionMAJ : Identifiant [0..*]
     idNat_Decision : Identifiant [0..1]
     dateDecision : Date [0..1]
     motivation : Code [0..*]
+    motivationLocale : Texte [0..*]
     commentaire : Texte [0..1]
 }
 

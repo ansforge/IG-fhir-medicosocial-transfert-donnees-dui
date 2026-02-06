@@ -546,10 +546,16 @@ La décision est une réponse à une demande de compensation l'usager ou de son 
     <td>numeroEnregistrement : [0..1] Identifiant</td>
     <td>Numéro d’enregistrement au conseil général si différent du numéro d’identification MDPH.</td>
   </tr>
-  tr>
+  <tr>
     <td>typeDecision : [1..1] Code</td>
     <td>Caractérise le type de décision prise par la CDAPH en réponse à une demande de compensation d’un usager (individu ou représentant légal), à une demande de révision par un tiers ou à un recours administratif préalable obligatoire (RAPO) d’un usager.<br>
     Jeu(x) de valeur(s) associé(s) : en cours création NOS
+    </td>
+  </tr>
+  <tr>
+    <td>dateEffetCloture : [0..1] Date</td>
+    <td>Date d'effet de la décision de clôture est la date à laquelle un droit n'est plus valable consécutivement à une décision de la CDAPH de clôture de droit ou d'attribution d'un droit de nature révision. A ne pas confondre avec la date d'échéance du droit qui est fixée lors de la décision d'attribution et qui ne doit jamais être modifiée.<br>
+    Cet attribut est obligatoire pour les décisions de type "5" (Clôture de droit). 
     </td>
   </tr>
   <tr>
@@ -577,6 +583,11 @@ La décision est une réponse à une demande de compensation l'usager ou de son 
     <td>Considération(s) de droit ou de fait qui constituent le fondement de la décision.<br>
     Jeu(x) de valeur(s) associé(s) : en cours création NOS
     </td>
+  </tr>
+  <tr>
+    <td>motivationLocale : [0..*] Texte</td>
+    <td>Champ libre permettant de renseigner une motivation locale.
+Ce champ apparaît (et devient obligatoire) uniquement si le code "9999 - Autre" est renseigné pour l'élément "motivation".</td>
   </tr>
   <tr>
     <td>commentaire : [0..1] Texte</td>
