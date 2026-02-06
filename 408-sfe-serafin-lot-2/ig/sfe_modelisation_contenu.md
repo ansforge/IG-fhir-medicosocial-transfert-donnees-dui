@@ -474,7 +474,7 @@ La classe EntiteJuridique est définie dans le MOS et est profilée pour ce vole
   * Description: Établissement ou service social ou médico-social.
 * Nom: numeroDossierESSMSProvenance : [0..1] Identifiant
   * Description: Numéro de dossier administratif dans l'ESSMS de provenance.
-* Nom: ESSMSProvenance : [1..1] EntiteJuridique
+* Nom: ESSMSProvenance : [0..1] EntiteJuridique
   * Description: Établissement ou service social ou médico-social de provenance.
 * Nom: dateEntreeESSMSProvenance : [0..1] DateHeure
   * Description: Date d'entrée dans l'ESSMS de provenance.
