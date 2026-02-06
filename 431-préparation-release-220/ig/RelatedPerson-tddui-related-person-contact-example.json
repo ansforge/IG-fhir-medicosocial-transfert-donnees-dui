@@ -1,0 +1,31 @@
+{
+  "resourceType" : "RelatedPerson",
+  "id" : "tddui-related-person-contact-example",
+  "meta" : {
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : PersonneEnRelation tddui-related-person-contact-example</b></p><a name=\"tddui-related-person-contact-example\"> </a><a name=\"hctddui-related-person-contact-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-related-person-contact.html\">TDDUI RelatedPerson Contact</a></p></div><p><b>identifier</b>: 3480787529/123456789-PPAttente-1234-enfant</p><p><b>patient</b>: <a href=\"Patient-tddui-patient-ins-example.html\">DUPONT  Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/194704032)</a></p><p><b>relationship</b>: <span title=\"Codes :{https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass GUARD}\">Responsable légal</span>, <span title=\"Codes :{https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode FTH}\">Père</span></p></div>"
+  },
+  "identifier" : [{
+    "value" : "3480787529/123456789-PPAttente-1234-enfant"
+  }],
+  "patient" : {
+    "reference" : "Patient/tddui-patient-ins-example"
+  },
+  "relationship" : [{
+    "coding" : [{
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass",
+      "code" : "GUARD",
+      "display" : "Responsable légal"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode",
+      "code" : "FTH",
+      "display" : "Père"
+    }]
+  }]
+}
