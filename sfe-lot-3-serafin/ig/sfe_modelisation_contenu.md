@@ -245,6 +245,10 @@ La décision est une réponse à une demande de compensation l'usager ou de son 
   * Description: Cet identifiant est obtenu par la concaténation de l'identifiant local de la décision attribué par la MDPH à l’origine de la création du suivi de la décision (idDecisionMDPHInitial) et du numéro cette MDPH (idMDPHInitial) : idDecisionMDPHInitial/idMDPHInitial
 * Nom: numeroEnregistrement : [0..1] Identifiant
   * Description: Numéro d’enregistrement au conseil général si différent du numéro d’identification MDPH.
+* Nom: typeDecision : [1..1] Code
+  * Description: Caractérise le type de décision prise par la CDAPH en réponse à une demande de compensation d’un usager (individu ou représentant légal), à une demande de révision par un tiers ou à un recours administratif préalable obligatoire (RAPO) d’un usager.Jeu(x) de valeur(s) associé(s) : en cours création NOS
+* Nom: dateEffetCloture : [0..1] Date
+  * Description: Date d'effet de la décision de clôture est la date à laquelle un droit n'est plus valable consécutivement à une décision de la CDAPH de clôture de droit ou d'attribution d'un droit de nature révision. A ne pas confondre avec la date d'échéance du droit qui est fixée lors de la décision d'attribution et qui ne doit jamais être modifiée.Cet attribut est obligatoire pour les décisions de type "5" (Clôture de droit).
 * Nom: idDecisionMAJ : [0..*] Identifiant
   * Description: Identifiants de la ou des décisions révisées ou renouvelées à l'origine du droit ou identifiant de la décision clôturée (concerne une seule décision) en cas de clôture de droit.Ces identifiants sont obtenus par la concaténation des identifiants locaux de la ou des décisions révisées attribué par la MDPH à l’origine de la création du suivi de la décision (idDecisionMAJMDPHInitial) et du numéro cette MDPH (idMDPHInitial) : idDecisionMAJMDPHInitial/idMDPHInitial.Cet attribut est obligatoire si* typeDecision = '5' (Clôture de droit) 
 * typeDecision ='1' (Attribution) et DroitPrestation.natureDroit = '2' (Renouvellement) ou '3' (Révision) 
@@ -255,6 +259,8 @@ Ne pas transmettre si typeDecision = '1' (Attribution) et DroitPrestation.nature
   * Description: Date à laquelle se réunit la CDAPH pour prendre la décision.
 * Nom: motivation : [0..*] Code
   * Description: Considération(s) de droit ou de fait qui constituent le fondement de la décision.Jeu(x) de valeur(s) associé(s) : en cours création NOS
+* Nom: motivationLocale : [0..*] Texte
+  * Description: Champ libre permettant de renseigner une motivation locale. Ce champ apparaît (et devient obligatoire) uniquement si le code "9999 - Autre" est renseigné pour l'élément "motivation".
 * Nom: commentaire : [0..1] Texte
   * Description: Commentaire relatif à la décision.
 
