@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-deces | *Version*:2.2.0-ballot |
-| Active as of 2026-02-04 | *Computable Name*:TDDUIObservationCauseDeces |
+| Active as of 2026-02-06 | *Computable Name*:TDDUIObservationCauseDeces |
 
  
 Profil de la ressource Observation permettant de représenter les causes de décès d'un usager. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-ca
   "name" : "TDDUIObservationCauseDeces",
   "title" : "TDDUI Observation Cause Deces",
   "status" : "active",
-  "date" : "2026-02-04T11:03:32+00:00",
+  "date" : "2026-02-06T08:16:26+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

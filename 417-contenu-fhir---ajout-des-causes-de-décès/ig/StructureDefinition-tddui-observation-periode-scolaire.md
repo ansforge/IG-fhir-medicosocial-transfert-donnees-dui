@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-periode-scolaire | *Version*:2.2.0-ballot |
-| Active as of 2026-02-04 | *Computable Name*:TDDUIObservationPeriodeScolaire |
+| Active as of 2026-02-06 | *Computable Name*:TDDUIObservationPeriodeScolaire |
 
  
 Profil de la ressource Organization permettant de représenter la période scolaire de l'usager. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-pe
   "name" : "TDDUIObservationPeriodeScolaire",
   "title" : "TDDUI Obervation Periode Scolaire",
   "status" : "active",
-  "date" : "2026-02-04T11:03:32+00:00",
+  "date" : "2026-02-06T08:16:26+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -128,7 +128,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-pe
         "example" : [
           {
             "label" : "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-PSCO-numPeriodeScolaire",
-            "valueString" : "3480787529/147720425367411-SCOL-12548"
+            "valueString" : "3480787529/147720425367411-PSCO-12548"
           }
         ]
       },
@@ -172,6 +172,14 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-pe
             }
           ],
           "rules" : "open"
+        }
+      },
+      {
+        "id" : "Observation.component.code",
+        "path" : "Observation.component.code",
+        "binding" : {
+          "strength" : "required",
+          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-observation-periode-scolaire|2.2.0-ballot"
         }
       },
       {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-causes-deces | *Version*:2.2.0-ballot |
-| Active as of 2026-02-04 | *Computable Name*:TDDUICausesDeces |
+| Active as of 2026-02-06 | *Computable Name*:TDDUICausesDeces |
 
  
 ValueSet incluant les codes de la terminologie CIM-1O. 
@@ -56,7 +56,7 @@ ValueSet incluant les codes de la terminologie CIM-1O.
   "title" : "TDDUI Causes Deces",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-04T11:03:32+00:00",
+  "date" : "2026-02-06T08:16:26+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

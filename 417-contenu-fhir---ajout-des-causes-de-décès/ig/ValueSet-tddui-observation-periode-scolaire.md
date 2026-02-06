@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-observation-periode-scolaire | *Version*:2.2.0-ballot |
-| Active as of 2026-02-04 | *Computable Name*:TDDUIObservationPeriodeScolaire |
+| Active as of 2026-02-06 | *Computable Name*:TDDUIObservationPeriodeScolaire |
 
  
 ValueSet for the Observation school period. 
 
  **References** 
 
-Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (par exemple dans les spécifications et / ou implémentations qui utilisent ce contenu)
+* [TDDUI Obervation Periode Scolaire](StructureDefinition-tddui-observation-periode-scolaire.md)
 
 ### Définition logique (CLD)
 
@@ -56,7 +56,7 @@ Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (pa
   "title" : "TDDUI Observation Periode Scolaire",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-04T11:03:32+00:00",
+  "date" : "2026-02-06T08:16:26+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-periode-scolaire | *Version*:2.2.0-ballot |
-| Active as of 2026-02-04 | *Computable Name*:TDDUIObservationPeriodeScolaire |
+| Active as of 2026-02-06 | *Computable Name*:TDDUIObservationPeriodeScolaire |
 
  
 CodeSystem for the Observation school period 
@@ -37,7 +37,7 @@ CodeSystem for the Observation school period
   "title" : "TDDUI Observation Periode Scolaire",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-04T11:03:32+00:00",
+  "date" : "2026-02-06T08:16:26+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
