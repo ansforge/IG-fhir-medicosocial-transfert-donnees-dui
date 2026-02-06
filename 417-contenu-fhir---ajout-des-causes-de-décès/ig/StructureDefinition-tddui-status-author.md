@@ -1,10 +1,10 @@
-# TDDUI Auteur statut - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Status Author - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **TDDUI Auteur statut**
+* **TDDUI Status Author**
 
-## Extension: TDDUI Auteur statut 
+## Extension: TDDUI Status Author 
 
 | | |
 | :--- | :--- |
@@ -44,9 +44,9 @@ Other representations of profile: [CSV](StructureDefinition-tddui-status-author.
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-status-author",
   "version" : "2.2.0-ballot",
   "name" : "TDDUIStatusAuthor",
-  "title" : "TDDUI Auteur statut",
+  "title" : "TDDUI Status Author",
   "status" : "active",
-  "date" : "2026-02-06T09:56:58+00:00",
+  "date" : "2026-02-06T10:49:33+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -96,14 +96,14 @@ Other representations of profile: [CSV](StructureDefinition-tddui-status-author.
     }
   ],
   "type" : "Extension",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
       {
         "id" : "Extension",
         "path" : "Extension",
-        "short" : "TDDUI Auteur statut",
+        "short" : "TDDUI Status Author",
         "definition" : "Extension permettant de représenter la profession du professionnel."
       },
       {
@@ -124,8 +124,8 @@ Other representations of profile: [CSV](StructureDefinition-tddui-status-author.
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner|2.2.0-ballot",
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role|2.2.0-ballot"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner",
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role"
             ]
           }
         ]

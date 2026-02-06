@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-ca
   "name" : "TDDUIObservationCauseDeces",
   "title" : "TDDUI Observation Cause Deces",
   "status" : "active",
-  "date" : "2026-02-06T09:56:58+00:00",
+  "date" : "2026-02-06T10:49:33+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -107,7 +107,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-ca
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Observation|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Observation",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -134,7 +134,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-ca
         },
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-observation-type|2.2.0-ballot"
+          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-observation-type"
         }
       },
       {
@@ -145,8 +145,8 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-ca
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient|2.2.0-ballot",
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins|2.2.0-ballot"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient",
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"
             ]
           }
         ]
@@ -164,7 +164,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-ca
         },
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-observation-type|2.2.0-ballot"
+          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-observation-type"
         }
       },
       {
@@ -194,7 +194,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-ca
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-causes-deces|2.2.0-ballot"
+          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-causes-deces"
         },
         "mapping" : [
           {

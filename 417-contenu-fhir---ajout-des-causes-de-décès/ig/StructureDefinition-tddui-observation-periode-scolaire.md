@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-pe
   "name" : "TDDUIObservationPeriodeScolaire",
   "title" : "TDDUI Obervation Periode Scolaire",
   "status" : "active",
-  "date" : "2026-02-06T09:56:58+00:00",
+  "date" : "2026-02-06T10:49:33+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -107,7 +107,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-pe
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Observation|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Observation",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -156,7 +156,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-pe
         },
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-observation-type|2.2.0-ballot"
+          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-observation-type"
         }
       },
       {
@@ -167,8 +167,8 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-pe
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient|2.2.0-ballot",
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins|2.2.0-ballot"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient",
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"
             ]
           }
         ]
@@ -191,7 +191,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-pe
         "path" : "Observation.component.code",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-observation-periode-scolaire|2.2.0-ballot"
+          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-observation-periode-scolaire"
         }
       },
       {
@@ -327,7 +327,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-pe
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J81-TypeDiplome-RASS/FHIR/JDV-J81-TypeDiplome-RASS|20230526120000"
+          "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J81-TypeDiplome-RASS/FHIR/JDV-J81-TypeDiplome-RASS"
         }
       },
       {

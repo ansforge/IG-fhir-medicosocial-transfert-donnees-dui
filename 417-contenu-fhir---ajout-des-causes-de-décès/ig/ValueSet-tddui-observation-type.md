@@ -48,9 +48,7 @@ ValueSet for the Observation types.
   "resourceType" : "ValueSet",
   "id" : "tddui-observation-type",
   "meta" : {
-    "profile" : [
-      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
-    ]
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-observation-type",
   "version" : "2.2.0-ballot",
@@ -58,7 +56,7 @@ ValueSet for the Observation types.
   "title" : "TDDUI Observation Type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-06T09:56:58+00:00",
+  "date" : "2026-02-06T10:49:33+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

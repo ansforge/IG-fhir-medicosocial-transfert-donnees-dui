@@ -1,10 +1,10 @@
-# Pièce jointe - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Attachment - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Pièce jointe**
+* **TDDUI Attachment**
 
-## Extension: Pièce jointe 
+## Extension: TDDUI Attachment 
 
 | | |
 | :--- | :--- |
@@ -45,9 +45,9 @@ Other representations of profile: [CSV](StructureDefinition-tddui-attachment.csv
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment",
   "version" : "2.2.0-ballot",
   "name" : "TDDUIAttachment",
-  "title" : "Pièce jointe",
+  "title" : "TDDUI Attachment",
   "status" : "active",
-  "date" : "2026-02-06T09:56:58+00:00",
+  "date" : "2026-02-06T10:49:33+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -101,14 +101,14 @@ Other representations of profile: [CSV](StructureDefinition-tddui-attachment.csv
     }
   ],
   "type" : "Extension",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
       {
         "id" : "Extension",
         "path" : "Extension",
-        "short" : "Pièce jointe",
+        "short" : "TDDUI Attachment",
         "definition" : "Extension permettant de véhiculer des pièces jointes que ce soit pour l'évaluation, l'évènement ou le projet personnalisé. L'extension référence le profil PDSm_SimplifiedPublish."
       },
       {
@@ -128,7 +128,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-attachment.csv
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference|2.2.0-ballot"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"
             ]
           }
         ]

@@ -1,10 +1,10 @@
-# Motif de l’évènement - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Event Reason - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Motif de l’évènement**
+* **TDDUI Event Reason**
 
-## Extension: Motif de l’évènement 
+## Extension: TDDUI Event Reason 
 
 | | |
 | :--- | :--- |
@@ -20,7 +20,7 @@ Contexte justifiant la réalisation de l’évènement.
 **Utilisations:**
 
 * Utilise ce/t/te Extension: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)
-* Exemples pour ce/t/te Extension: [Bundle/ExampleTDDUIBundle](Bundle-ExampleTDDUIBundle.md) and [Encounter/tddui-encounter-evenement-example](Encounter-tddui-encounter-evenement-example.md)
+* Exemples pour ce/t/te Extension: [Bundle/tddui-bundle-example](Bundle-tddui-bundle-example.md) and [Encounter/tddui-encounter-evenement-example](Encounter-tddui-encounter-evenement-example.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-event-reason)
 
@@ -45,9 +45,9 @@ Other representations of profile: [CSV](StructureDefinition-tddui-event-reason.c
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-reason",
   "version" : "2.2.0-ballot",
   "name" : "TDDUIEventReason",
-  "title" : "Motif de l’évènement",
+  "title" : "TDDUI Event Reason",
   "status" : "active",
-  "date" : "2026-02-06T09:56:58+00:00",
+  "date" : "2026-02-06T10:49:33+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -89,14 +89,14 @@ Other representations of profile: [CSV](StructureDefinition-tddui-event-reason.c
     }
   ],
   "type" : "Extension",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
       {
         "id" : "Extension",
         "path" : "Extension",
-        "short" : "Motif de l’évènement",
+        "short" : "TDDUI Event Reason",
         "definition" : "Contexte justifiant la réalisation de l’évènement."
       },
       {

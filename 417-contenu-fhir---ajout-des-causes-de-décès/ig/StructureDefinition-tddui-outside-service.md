@@ -1,10 +1,10 @@
-# Evénement hors prestation - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Event Outside Service - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Evénement hors prestation**
+* **TDDUI Event Outside Service**
 
-## Extension: Evénement hors prestation 
+## Extension: TDDUI Event Outside Service 
 
 | | |
 | :--- | :--- |
@@ -44,9 +44,9 @@ Other representations of profile: [CSV](StructureDefinition-tddui-outside-servic
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-outside-service",
   "version" : "2.2.0-ballot",
   "name" : "TDDUIEventOutsideService",
-  "title" : "Evénement hors prestation",
+  "title" : "TDDUI Event Outside Service",
   "status" : "active",
-  "date" : "2026-02-06T09:56:58+00:00",
+  "date" : "2026-02-06T10:49:33+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -88,14 +88,14 @@ Other representations of profile: [CSV](StructureDefinition-tddui-outside-servic
     }
   ],
   "type" : "Extension",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
       {
         "id" : "Extension",
         "path" : "Extension",
-        "short" : "Evénement hors prestation",
+        "short" : "TDDUI Event Outside Service",
         "definition" : "Evénement hors prestation prévue dans le projet personnalisé de l’usager."
       },
       {

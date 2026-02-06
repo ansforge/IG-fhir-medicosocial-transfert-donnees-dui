@@ -28,7 +28,7 @@ CodeSystem for the Observation school period
   "id" : "tddui-observation-periode-scolaire",
   "meta" : {
     "profile" : [
-      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1"
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
     ]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-periode-scolaire",
@@ -37,7 +37,7 @@ CodeSystem for the Observation school period
   "title" : "TDDUI Observation Periode Scolaire",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-06T09:56:58+00:00",
+  "date" : "2026-02-06T10:49:33+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

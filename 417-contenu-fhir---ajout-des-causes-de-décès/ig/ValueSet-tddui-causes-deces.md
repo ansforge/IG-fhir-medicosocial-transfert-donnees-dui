@@ -46,9 +46,7 @@ ValueSet incluant les codes de la terminologie CIM-1O.
   "resourceType" : "ValueSet",
   "id" : "tddui-causes-deces",
   "meta" : {
-    "profile" : [
-      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
-    ]
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-causes-deces",
   "version" : "2.2.0-ballot",
@@ -56,7 +54,7 @@ ValueSet incluant les codes de la terminologie CIM-1O.
   "title" : "TDDUI Causes Deces",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-06T09:56:58+00:00",
+  "date" : "2026-02-06T10:49:33+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

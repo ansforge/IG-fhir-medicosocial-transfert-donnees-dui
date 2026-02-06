@@ -1,10 +1,10 @@
-# Repas - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Meal - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Repas**
+* **TDDUI Meal**
 
-## Extension: Repas 
+## Extension: TDDUI Meal 
 
 | | |
 | :--- | :--- |
@@ -44,9 +44,9 @@ Other representations of profile: [CSV](StructureDefinition-tddui-meal.csv), [Ex
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-meal",
   "version" : "2.2.0-ballot",
   "name" : "TDDUIMeal",
-  "title" : "Repas",
+  "title" : "TDDUI Meal",
   "status" : "active",
-  "date" : "2026-02-06T09:56:58+00:00",
+  "date" : "2026-02-06T10:49:33+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -88,14 +88,14 @@ Other representations of profile: [CSV](StructureDefinition-tddui-meal.csv), [Ex
     }
   ],
   "type" : "Extension",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
       {
         "id" : "Extension",
         "path" : "Extension",
-        "short" : "Repas",
+        "short" : "TDDUI Meal",
         "definition" : "Repas du professionnel prévu dans le cadre de l'événement."
       },
       {

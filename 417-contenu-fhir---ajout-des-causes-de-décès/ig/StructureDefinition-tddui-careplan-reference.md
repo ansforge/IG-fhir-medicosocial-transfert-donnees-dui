@@ -1,10 +1,10 @@
-# Lien vers le projet personnalisé - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI CarePlan Projet Perso Ref - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Lien vers le projet personnalisé**
+* **TDDUI CarePlan Projet Perso Ref**
 
-## Extension: Lien vers le projet personnalisé 
+## Extension: TDDUI CarePlan Projet Perso Ref 
 
 | | |
 | :--- | :--- |
@@ -45,9 +45,9 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-refer
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference",
   "version" : "2.2.0-ballot",
   "name" : "TDDUICarePlanProjetPersoRef",
-  "title" : "Lien vers le projet personnalisé",
+  "title" : "TDDUI CarePlan Projet Perso Ref",
   "status" : "active",
-  "date" : "2026-02-06T09:56:58+00:00",
+  "date" : "2026-02-06T10:49:33+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -89,14 +89,14 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-refer
     }
   ],
   "type" : "Extension",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
       {
         "id" : "Extension",
         "path" : "Extension",
-        "short" : "Lien vers le projet personnalisé",
+        "short" : "TDDUI CarePlan Projet Perso Ref",
         "definition" : "Liens vers le projet personnalisé, utilisables dans le profil TDDUIGoalObjectif."
       },
       {
@@ -116,7 +116,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-refer
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise|2.2.0-ballot"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise"
             ]
           }
         ]

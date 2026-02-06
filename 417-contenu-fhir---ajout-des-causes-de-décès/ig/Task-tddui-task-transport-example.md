@@ -1,10 +1,10 @@
-# tddui-task-transport-example - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Task Transport Example - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **tddui-task-transport-example**
+* **TDDUI Task Transport Example**
 
-## Example Task: tddui-task-transport-example
+## Example Task: TDDUI Task Transport Example
 
 Profil: [TDDUI Task Transport](StructureDefinition-tddui-task-transport.md)
 
@@ -69,7 +69,7 @@ Profil: [TDDUI Task Transport](StructureDefinition-tddui-task-transport.md)
       "type" : {
         "coding" : [
           {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
             "code" : "budgetPrevisionnel"
           }
         ]
@@ -83,7 +83,7 @@ Profil: [TDDUI Task Transport](StructureDefinition-tddui-task-transport.md)
       "type" : {
         "coding" : [
           {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
             "code" : "budgetReel"
           }
         ]
@@ -97,7 +97,7 @@ Profil: [TDDUI Task Transport](StructureDefinition-tddui-task-transport.md)
       "type" : {
         "coding" : [
           {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
             "code" : "distance"
           }
         ]
@@ -113,7 +113,7 @@ Profil: [TDDUI Task Transport](StructureDefinition-tddui-task-transport.md)
       "type" : {
         "coding" : [
           {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
             "code" : "dureeTheorique"
           }
         ]

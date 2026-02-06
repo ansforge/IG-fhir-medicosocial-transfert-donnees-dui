@@ -1,10 +1,10 @@
-# tddui-pp-ime-patient-example - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI PP IME Patient Example - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **tddui-pp-ime-patient-example**
+* **TDDUI PP IME Patient Example**
 
-## Example Patient: tddui-pp-ime-patient-example
+## Example Patient: TDDUI PP IME Patient Example
 
 Profil: [TDDUI Patient](StructureDefinition-tddui-patient.md)
 

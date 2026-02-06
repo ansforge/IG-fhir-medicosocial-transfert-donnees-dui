@@ -1,10 +1,10 @@
-# tddui-pp-pa-documentreference-bilan-objectif-1-example - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI PP PA DocumentReference Bilan Objectif 1 Example - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **tddui-pp-pa-documentreference-bilan-objectif-1-example**
+* **TDDUI PP PA DocumentReference Bilan Objectif 1 Example**
 
-## Example DocumentReference: tddui-pp-pa-documentreference-bilan-objectif-1-example
+## Example DocumentReference: TDDUI PP PA DocumentReference Bilan Objectif 1 Example
 
 Profil: [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md)
 

@@ -1,10 +1,10 @@
-# Libellé mode d'entrée - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Entry Mode label - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Libellé mode d'entrée**
+* **TDDUI Entry Mode label**
 
-## Extension: Libellé mode d'entrée 
+## Extension: TDDUI Entry Mode label 
 
 | | |
 | :--- | :--- |
@@ -20,7 +20,7 @@ Libellé du mode d’entée du séjour.
 **Utilisations:**
 
 * Utilise ce/t/te Extension: [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md)
-* Exemples pour ce/t/te Extension: [Bundle/ExampleTDDUIBundle](Bundle-ExampleTDDUIBundle.md) and [Encounter/tddui-encounter-sejour-example](Encounter-tddui-encounter-sejour-example.md)
+* Exemples pour ce/t/te Extension: [Bundle/tddui-bundle-example](Bundle-tddui-bundle-example.md) and [Encounter/tddui-encounter-sejour-example](Encounter-tddui-encounter-sejour-example.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-entry-mode-label)
 
@@ -45,9 +45,9 @@ Other representations of profile: [CSV](StructureDefinition-tddui-entry-mode-lab
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-mode-label",
   "version" : "2.2.0-ballot",
   "name" : "TDDUIEntryModelabel",
-  "title" : "Libellé mode d'entrée",
+  "title" : "TDDUI Entry Mode label",
   "status" : "active",
-  "date" : "2026-02-06T09:56:58+00:00",
+  "date" : "2026-02-06T10:49:33+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -89,14 +89,14 @@ Other representations of profile: [CSV](StructureDefinition-tddui-entry-mode-lab
     }
   ],
   "type" : "Extension",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
       {
         "id" : "Extension",
         "path" : "Extension",
-        "short" : "Libellé mode d'entrée",
+        "short" : "TDDUI Entry Mode label",
         "definition" : "Libellé du mode d’entée du séjour."
       },
       {

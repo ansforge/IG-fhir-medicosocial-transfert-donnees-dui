@@ -1,18 +1,18 @@
-# tddui-encounter-sejour-example - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Encounter Sejour Example - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **tddui-encounter-sejour-example**
+* **TDDUI Encounter Sejour Example**
 
-## Example Encounter: tddui-encounter-sejour-example
+## Example Encounter: TDDUI Encounter Sejour Example
 
 Profil: [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md)
 
-**Date d’admission**: 2023-04-11
+**TDDUI Admission Date**: 2023-04-11
 
-**Libellé mode d'entrée**: Date de début du suivi post-opératoire : 14/04/2023
+**TDDUI Entry Mode label**: Date de début du suivi post-opératoire : 14/04/2023
 
-**Libellé mode de sortie**: Sortie prévisionnelle prévue pour le 5 mai 2023
+**TDDUI Exit Mode Label**: Sortie prévisionnelle prévue pour le 5 mai 2023
 
 **Extension Definition for Encounter.plannedEndDate for Version 5.0**: 2023-05-05
 
@@ -64,7 +64,7 @@ Profil: [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md)
       "type" : {
         "coding" : [
           {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier-cs",
+            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier",
             "code" : "SEJ",
             "display" : "Identifiant du séjour"
           }

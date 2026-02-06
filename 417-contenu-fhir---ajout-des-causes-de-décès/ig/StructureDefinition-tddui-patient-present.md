@@ -1,10 +1,10 @@
-# Usager présent - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Patient Present - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Usager présent**
+* **TDDUI Patient Present**
 
-## Extension: Usager présent 
+## Extension: TDDUI Patient Present 
 
 | | |
 | :--- | :--- |
@@ -44,9 +44,9 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient-presen
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-present",
   "version" : "2.2.0-ballot",
   "name" : "TDDUIPatientPresent",
-  "title" : "Usager présent",
+  "title" : "TDDUI Patient Present",
   "status" : "active",
-  "date" : "2026-02-06T09:56:58+00:00",
+  "date" : "2026-02-06T10:49:33+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -88,14 +88,14 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient-presen
     }
   ],
   "type" : "Extension",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
       {
         "id" : "Extension",
         "path" : "Extension",
-        "short" : "Usager présent",
+        "short" : "TDDUI Patient Present",
         "definition" : "Evènement nécessitant ou non la présence physique de l’usager."
       },
       {

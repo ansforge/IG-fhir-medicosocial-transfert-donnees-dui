@@ -1,10 +1,10 @@
-# Rapport de l’évènement - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Event Report - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Rapport de l’évènement**
+* **TDDUI Event Report**
 
-## Extension: Rapport de l’évènement 
+## Extension: TDDUI Event Report 
 
 | | |
 | :--- | :--- |
@@ -20,7 +20,7 @@ Zone de texte liée à l’événement pour compte rendu des actions réalisées
 **Utilisations:**
 
 * Utilise ce/t/te Extension: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)
-* Exemples pour ce/t/te Extension: [Bundle/ExampleTDDUIBundle](Bundle-ExampleTDDUIBundle.md) and [Encounter/tddui-encounter-evenement-example](Encounter-tddui-encounter-evenement-example.md)
+* Exemples pour ce/t/te Extension: [Bundle/tddui-bundle-example](Bundle-tddui-bundle-example.md) and [Encounter/tddui-encounter-evenement-example](Encounter-tddui-encounter-evenement-example.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-event-report)
 
@@ -45,9 +45,9 @@ Other representations of profile: [CSV](StructureDefinition-tddui-event-report.c
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-report",
   "version" : "2.2.0-ballot",
   "name" : "TDDUIEventReport",
-  "title" : "Rapport de l’évènement",
+  "title" : "TDDUI Event Report",
   "status" : "active",
-  "date" : "2026-02-06T09:56:58+00:00",
+  "date" : "2026-02-06T10:49:33+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -89,14 +89,14 @@ Other representations of profile: [CSV](StructureDefinition-tddui-event-report.c
     }
   ],
   "type" : "Extension",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
       {
         "id" : "Extension",
         "path" : "Extension",
-        "short" : "Rapport de l’évènement",
+        "short" : "TDDUI Event Report",
         "definition" : "Zone de texte liée à l’événement pour compte rendu des actions réalisées."
       },
       {

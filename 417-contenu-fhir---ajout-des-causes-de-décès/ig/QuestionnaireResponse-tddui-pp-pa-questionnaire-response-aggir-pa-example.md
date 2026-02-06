@@ -1,10 +1,10 @@
-# tddui-pp-pa-questionnaire-response-aggir-pa-example - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI PP PA Questionnaire Response AGGIR PA Example - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **tddui-pp-pa-questionnaire-response-aggir-pa-example**
+* **TDDUI PP PA Questionnaire Response AGGIR PA Example**
 
-## Example QuestionnaireResponse: tddui-pp-pa-questionnaire-response-aggir-pa-example
+## Example QuestionnaireResponse: TDDUI PP PA Questionnaire Response AGGIR PA Example
 
 Profil: [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md)
 
