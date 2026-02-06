@@ -1054,7 +1054,7 @@ La classe EntiteJuridique est définie dans le MOS et est profilée pour ce vole
     <td>Numéro de dossier administratif dans l'ESSMS de provenance.</td>
   </tr>
    <tr>
-    <td>ESSMSProvenance : [1..1] EntiteJuridique</td>
+    <td>ESSMSProvenance : [0..1] EntiteJuridique</td>
     <td>Établissement ou service social ou médico-social de provenance.</td>
   </tr>
   <tr>
