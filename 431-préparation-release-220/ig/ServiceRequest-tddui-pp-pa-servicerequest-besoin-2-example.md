@@ -1,4 +1,4 @@
-# TDDUI PP PA ServiceRequest Besoin 2 Example - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI PP PA ServiceRequest Besoin 2 Example - Médicosocial - Transfert de données DUI v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
