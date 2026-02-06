@@ -7,13 +7,15 @@ Description: "Profil de la ressource Organization permettant de représenter la 
 * identifier 1..1
 * identifier ^short = "Identifiant de la période scolaire"
 * identifier.value ^example[0].label = "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-PSCO-numPeriodeScolaire"
-* identifier.value ^example[0].valueString = "3480787529/147720425367411-SCOL-12548"
+* identifier.value ^example[0].valueString = "3480787529/147720425367411-PSCO-12548"
 * identifier.system = "https://identifiant-medicosocial-periodescolaire.esante.gouv.fr"
 
 * subject only Reference(TDDUIPatient or TDDUIPatientINS)
 
 * code from TDDUIObservationType (required)
 * code = #PERIODESCOL "Période scolaire"
+
+* component.code from TDDUIObservationPeriodeScolaire (required)
 
 * component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"
@@ -26,9 +28,9 @@ Description: "Profil de la ressource Organization permettant de représenter la 
     diplome 0..* and
     volumeScolarisation 0..1
 
-* component[niveauScolaireReel].code = #niveauScolaireReel "Niveau scolaire réel"
+* component[niveauScolaireReel].code = #niveauScolaireReel "Niveau scolaire réel" // JDV en cours de création côté NOS
 
-* component[niveauScolaireSuivi].code = #niveauScolaireSuivi "Niveau scolaire suivi"
+* component[niveauScolaireSuivi].code = #niveauScolaireSuivi "Niveau scolaire suivi" // JDV en cours de création côté NOS
 
 * component[typeEnseignementSpecialise].code = #typeEnseignementSpecialise "Type d'enseignement spécialisé"
 * component[typeEnseignementSpecialise].valueCodeableConcept from $JDV-J386-Type-Enseignement-Specialise-MS (required)
