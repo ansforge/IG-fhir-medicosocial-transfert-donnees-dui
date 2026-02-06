@@ -548,7 +548,7 @@ La décision est une réponse à une demande de compensation l'usager ou de son 
   </tr>
   tr>
     <td>typeDecision : [1..1] Code</td>
-    <td>Type de décision.<br>
+    <td>Caractérise le type de décision prise par la CDAPH en réponse à une demande de compensation d’un usager (individu ou représentant légal), à une demande de révision par un tiers ou à un recours administratif préalable obligatoire (RAPO) d’un usager.<br>
     Jeu(x) de valeur(s) associé(s) : en cours création NOS
     </td>
   </tr>
