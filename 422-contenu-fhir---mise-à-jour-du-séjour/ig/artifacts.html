@@ -205,7 +205,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Médicosocial - Transfert de données DUI - version de développement local (v2.2.0-ballot) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/fhir/tddui/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Médicosocial - Transfert de données DUI - version de développement local (intégration continue v2.2.0-ballot) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/fhir/tddui/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -450,6 +450,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-related-person-contact.html"
+                  title="StructureDefinition/tddui-related-person-contact">TDDUI RelatedPerson Contact</a>
+            </td>
+            <td>
+<p>Profil de la ressource FRCoreRelatedPersonProfile permettant de représenter un contact de l'usager.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-tddui-service-request-besoin.html"
                   title="StructureDefinition/tddui-service-request-besoin">TDDUI ServiceRequest Besoin</a>
             </td>
@@ -554,8 +563,62 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-entry-date-origin.html"
+                  title="StructureDefinition/tddui-entry-date-origin">Date d'entrée dans l'ESSMS de provenance</a>
+            </td>
+            <td>
+<p>Extension permettant de véhiculer la date d'entrée dans l'ESSMS de provenance.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-related-person-contact-description.html"
+                  title="StructureDefinition/tddui-related-person-contact-description">Description</a>
+            </td>
+            <td>
+<p>Description du contact PersonnePhysique.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-admission-date.html"
+                  title="StructureDefinition/tddui-admission-date">TDDUI Admission Date</a>
+            </td>
+            <td>
+<p>Date d’admission dans la structure ESSMS.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-attachment.html"
+                  title="StructureDefinition/tddui-attachment">TDDUI Attachment</a>
+            </td>
+            <td>
+<p>Extension permettant de véhiculer des pièces jointes que ce soit pour l'évaluation, l'évènement ou le projet personnalisé. L'extension référence le profil PDSm_SimplifiedPublish.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-birth-order.html"
+                  title="StructureDefinition/tddui-birth-order">TDDUI Birth Order</a>
+            </td>
+            <td>
+<p>Ordre d’enregistrement de la naissance dans le registre d’état civil de la commune de naissance pour le mois de la naissance. Il compose les 3 derniers chiffres du NIR de l'usager avant la clé de sécurité et permet de distinguer les personnes nées au même lieu et à la même période. Il est obligatoire si le NIR n'est pas transmis.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-careplan-reference.html"
+                  title="StructureDefinition/tddui-careplan-reference">TDDUI CarePlan Projet Perso Ref</a>
+            </td>
+            <td>
+<p>Liens vers le projet personnalisé, utilisables dans le profil TDDUIGoalObjectif.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-tddui-comment.html"
-                  title="StructureDefinition/tddui-comment">Commentaire</a>
+                  title="StructureDefinition/tddui-comment">TDDUI Comment</a>
             </td>
             <td>
 
@@ -569,44 +632,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-tddui-entry-date-origin.html"
-                  title="StructureDefinition/tddui-entry-date-origin">Date d'entrée dans l'ESSMS de provenance</a>
+               <a href="StructureDefinition-tddui-discriminator.html"
+                  title="StructureDefinition/tddui-discriminator">TDDUI Discriminator</a>
             </td>
             <td>
-<p>Extension permettant de véhiculer la date d'entrée dans l'ESSMS de provenance.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-tddui-admission-date.html"
-                  title="StructureDefinition/tddui-admission-date">Date d’admission</a>
-            </td>
-            <td>
-<p>Date d’admission dans la structure ESSMS.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-tddui-outside-service.html"
-                  title="StructureDefinition/tddui-outside-service">Evénement hors prestation</a>
-            </td>
-            <td>
-<p>Evénement hors prestation prévue dans le projet personnalisé de l’usager.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-tddui-event-label.html"
-                  title="StructureDefinition/tddui-event-label">Libellé de l'évènement</a>
-            </td>
-            <td>
-<p>Titre donné à l’évènement par la structure.</p>
+<p>Extension pour discriminer les éléments CarePlan.supportingInfo et Goal.note.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-tddui-entry-mode-label.html"
-                  title="StructureDefinition/tddui-entry-mode-label">Libellé mode d'entrée</a>
+                  title="StructureDefinition/tddui-entry-mode-label">TDDUI Entry Mode label</a>
             </td>
             <td>
 <p>Libellé du mode d’entée du séjour.</p>
@@ -614,17 +650,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-tddui-exit-mode-label.html"
-                  title="StructureDefinition/tddui-exit-mode-label">Libellé mode de sortie</a>
-            </td>
-            <td>
-<p>Libellé du mode de sortie du séjour.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-tddui-evaluation-reference.html"
-                  title="StructureDefinition/tddui-evaluation-reference">Lien vers l'évaluation</a>
+                  title="StructureDefinition/tddui-evaluation-reference">TDDUI Evaluation Ref</a>
             </td>
             <td>
 <p>Liens vers l'évaluation, utilisables dans le profil TDDUIGoalObjectif.</p>
@@ -632,26 +659,35 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-tddui-careplan-reference.html"
-                  title="StructureDefinition/tddui-careplan-reference">Lien vers le projet personnalisé</a>
+               <a href="StructureDefinition-tddui-event-cancel-reason.html"
+                  title="StructureDefinition/tddui-event-cancel-reason">TDDUI Event Cancel Reason</a>
             </td>
             <td>
-<p>Liens vers le projet personnalisé, utilisables dans le profil TDDUIGoalObjectif.</p>
+<p>Motif associé au statut de non-réalisation de l’évènement.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-tddui-exercise-mode.html"
-                  title="StructureDefinition/tddui-exercise-mode">Mode d'exercice</a>
+               <a href="StructureDefinition-tddui-event-label.html"
+                  title="StructureDefinition/tddui-event-label">TDDUI Event Label</a>
             </td>
             <td>
-<p>Extension permettant de représenter le mode d'exercice du professionnel.</p>
+<p>Titre donné à l’évènement par la structure.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-outside-service.html"
+                  title="StructureDefinition/tddui-outside-service">TDDUI Event Outside Service</a>
+            </td>
+            <td>
+<p>Evénement hors prestation prévue dans le projet personnalisé de l’usager.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-tddui-event-reason.html"
-                  title="StructureDefinition/tddui-event-reason">Motif de l’évènement</a>
+                  title="StructureDefinition/tddui-event-reason">TDDUI Event Reason</a>
             </td>
             <td>
 <p>Contexte justifiant la réalisation de l’évènement.</p>
@@ -659,26 +695,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-tddui-birth-order.html"
-                  title="StructureDefinition/tddui-birth-order">Ordre de naissance dans le registre d'état civil</a>
-            </td>
-            <td>
-<p>Ordre d’enregistrement de la naissance dans le registre d’état civil de la commune de naissance pour le mois de la naissance. Il compose les 3 derniers chiffres du NIR de l'usager avant la clé de sécurité et permet de distinguer les personnes nées au même lieu et à la même période. Il est obligatoire si le NIR n'est pas transmis.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-tddui-attachment.html"
-                  title="StructureDefinition/tddui-attachment">Pièce jointe</a>
-            </td>
-            <td>
-<p>Extension permettant de véhiculer des pièces jointes que ce soit pour l'évaluation, l'évènement ou le projet personnalisé. L'extension référence le profil PDSm_SimplifiedPublish.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-tddui-event-report.html"
-                  title="StructureDefinition/tddui-event-report">Rapport de l’évènement</a>
+                  title="StructureDefinition/tddui-event-report">TDDUI Event Report</a>
             </td>
             <td>
 <p>Zone de texte liée à l’événement pour compte rendu des actions réalisées.</p>
@@ -686,8 +704,26 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-exercise-mode.html"
+                  title="StructureDefinition/tddui-exercise-mode">TDDUI Exercise Mode</a>
+            </td>
+            <td>
+<p>Extension permettant de représenter le mode d'exercice du professionnel.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-exit-mode-label.html"
+                  title="StructureDefinition/tddui-exit-mode-label">TDDUI Exit Mode Label</a>
+            </td>
+            <td>
+<p>Libellé du mode de sortie du séjour.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-tddui-meal.html"
-                  title="StructureDefinition/tddui-meal">Repas</a>
+                  title="StructureDefinition/tddui-meal">TDDUI Meal</a>
             </td>
             <td>
 <p>Repas du professionnel prévu dans le cadre de l'événement.</p>
@@ -695,38 +731,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-tddui-qr-participant.html"
-                  title="StructureDefinition/tddui-qr-participant">Responsable et auteur du statut de l'évaluation</a>
+               <a href="StructureDefinition-tddui-nationality.html"
+                  title="StructureDefinition/tddui-nationality">TDDUI Nationality Extension</a>
             </td>
             <td>
-<p>Extension permettant d'ajouter le responsable de l'évaluation et l'auteur du statut de l'évaluation dans un QuestionnaireResponse.</p>
+<p>The nationality of the patient or a related person.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-tddui-ressources-used.html"
-                  title="StructureDefinition/tddui-ressources-used">Ressources utilisées</a>
+               <a href="StructureDefinition-tddui-patient-present.html"
+                  title="StructureDefinition/tddui-patient-present">TDDUI Patient Present</a>
             </td>
             <td>
-<p>Ressources utilisées lors de l’évènement (ex : chambre, matériel médical, véhicule).</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-tddui-status-author.html"
-                  title="StructureDefinition/tddui-status-author">TDDUI Auteur statut</a>
-            </td>
-            <td>
-<p>Extension permettant de représenter la profession du professionnel.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-tddui-discriminator.html"
-                  title="StructureDefinition/tddui-discriminator">TDDUI Discriminator Extension</a>
-            </td>
-            <td>
-<p>Extension pour discriminer les éléments CarePlan.supportingInfo et Goal.note.</p>
+<p>Evènement nécessitant ou non la présence physique de l’usager.</p>
 </td>
          </tr>
          <tr>
@@ -740,20 +758,29 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-tddui-patient-present.html"
-                  title="StructureDefinition/tddui-patient-present">Usager présent</a>
+               <a href="StructureDefinition-tddui-qr-participant.html"
+                  title="StructureDefinition/tddui-qr-participant">TDDUI QR Participant</a>
             </td>
             <td>
-<p>Evènement nécessitant ou non la présence physique de l’usager.</p>
+<p>Extension permettant d'ajouter le responsable de l'évaluation et l'auteur du statut de l'évaluation dans un QuestionnaireResponse.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-tddui-event-cancel-reason.html"
-                  title="StructureDefinition/tddui-event-cancel-reason">Évènement annulé</a>
+               <a href="StructureDefinition-tddui-ressources-used.html"
+                  title="StructureDefinition/tddui-ressources-used">TDDUI Ressources Used</a>
             </td>
             <td>
-<p>Motif associé au statut de non-réalisation de l’évènement.</p>
+<p>Ressources utilisées lors de l’évènement (ex : chambre, matériel médical, véhicule).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-status-author.html"
+                  title="StructureDefinition/tddui-status-author">TDDUI Status Author</a>
+            </td>
+            <td>
+<p>Extension permettant de représenter la profession du professionnel.</p>
 </td>
          </tr>
       </tbody>
@@ -766,62 +793,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-input-tddui-task-action-valueset.html"
-                  title="ValueSet/input-tddui-task-action-valueset">InputTDDUITaskActionValueSet</a>
-            </td>
-            <td>
-<p>ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les actions du projet personnalisé.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-input-tddui-task-bilan-valueset.html"
-                  title="ValueSet/input-tddui-task-bilan-valueset">InputTDDUITaskBilanValueSet</a>
-            </td>
-            <td>
-<p>ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour le bilan du projet personnalisé.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-input-tddui-task-moyen-ressource-valueset.html"
-                  title="ValueSet/input-tddui-task-moyen-ressource-valueset">InputTDDUITaskMoyenRessourceValueSet</a>
-            </td>
-            <td>
-<p>ValueSet  pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les moyens et ressources du projet personnalisé.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-input-tddui-task-prestation-valueset.html"
-                  title="ValueSet/input-tddui-task-prestation-valueset">InputTDDUITaskPrestationValueSet</a>
-            </td>
-            <td>
-<p>ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les prestations du projet personnalisé.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-input-tddui-task-transport-valueset.html"
-                  title="ValueSet/input-tddui-task-transport-valueset">InputTaskTransportValueSet</a>
-            </td>
-            <td>
-<p>ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les transports dans le cadre du DUI.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-output-tddui-task-bilan-valueset.html"
-                  title="ValueSet/output-tddui-task-bilan-valueset">OutputTDDUITaskBilanValueSet</a>
-            </td>
-            <td>
-<p>ValueSet pour la définition des éléments spécifiques des output dans la ressource Task utilisée pour le bilan du projet personnalisé.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-tddui-care-plan-supportingInfo-vs.html"
-                  title="ValueSet/tddui-care-plan-supportingInfo-vs">TDDUI CarePlan supportingInfo ValueSet</a>
+               <a href="ValueSet-tddui-care-plan-supporting-info.html"
+                  title="ValueSet/tddui-care-plan-supporting-info">TDDUI CarePlan supportingInfo</a>
             </td>
             <td>
 <p>ValueSet définissant les types de notes pour l'élément CarePlan.supportingInfo.</p>
@@ -829,8 +802,26 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-tddui-discriminator-vs.html"
-                  title="ValueSet/tddui-discriminator-vs">TDDUI Discriminator ValueSet</a>
+               <a href="ValueSet-tddui-contact-protection-juridique.html"
+                  title="ValueSet/tddui-contact-protection-juridique">TDDUI Contact Protection Juridique</a>
+            </td>
+            <td>
+<p>ValueSet définissant la protection juridique.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-tddui-contact-relation.html"
+                  title="ValueSet/tddui-contact-relation">TDDUI Contact Relation</a>
+            </td>
+            <td>
+<p>ValueSet définissant les relations.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-tddui-discriminator.html"
+                  title="ValueSet/tddui-discriminator">TDDUI Discriminator</a>
             </td>
             <td>
 <p>ValueSet définissant les codes discriminants.</p>
@@ -838,44 +829,35 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-tddui-encounter-identifier-vs.html"
-                  title="ValueSet/tddui-encounter-identifier-vs">TDDUI Encounter Identifier Type ValueSet</a>
+               <a href="ValueSet-tddui-encounter-identifier.html"
+                  title="ValueSet/tddui-encounter-identifier">TDDUI Encounter Identifier</a>
             </td>
             <td>
-<p>ValueSet for TDDUI Encounter's identifier types</p>
+<p>ValueSet pour la définition des codes d'identifiant de séjour</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-tddui-encounter-participant-vs.html"
-                  title="ValueSet/tddui-encounter-participant-vs">TDDUI Encounter Participant ValueSet</a>
+               <a href="ValueSet-tddui-encounter-participant.html"
+                  title="ValueSet/tddui-encounter-participant">TDDUI Encounter Participant</a>
             </td>
             <td>
-<p>ValueSet for TDDUI Encounter's participants</p>
+<p>ValueSet pour la définition des codes de participant d'un événement</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-tddui-encounter-type-vs.html"
-                  title="ValueSet/tddui-encounter-type-vs">TDDUI Encounter Type ValueSet</a>
+               <a href="ValueSet-tddui-encounter-type.html"
+                  title="ValueSet/tddui-encounter-type">TDDUI Encounter Type</a>
             </td>
             <td>
-<p>ValueSet for TDDUI Encounter's types</p>
+<p>ValueSet pour la définition des codes de type de séjour</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-tddui-goal-attente-note-vs.html"
-                  title="ValueSet/tddui-goal-attente-note-vs">TDDUI Goal Attente Note ValueSet</a>
-            </td>
-            <td>
-<p>ValueSet définissant les types de notes pour l'élément Goal.note.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-tddui-goal-objectif-note-vs.html"
-                  title="ValueSet/tddui-goal-objectif-note-vs">TDDUI Goal Objectif Note ValueSet</a>
+               <a href="ValueSet-tddui-goal-attente-note.html"
+                  title="ValueSet/tddui-goal-attente-note">TDDUI Goal Attente Note</a>
             </td>
             <td>
 <p>ValueSet définissant les types de notes pour l'élément Goal.note.</p>
@@ -883,20 +865,91 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-tddui-patient-identifier-vs.html"
-                  title="ValueSet/tddui-patient-identifier-vs">TDDUI Patient Identifier ValueSet</a>
+               <a href="ValueSet-tddui-goal-objectif-note.html"
+                  title="ValueSet/tddui-goal-objectif-note">TDDUI Goal Objectif Note</a>
             </td>
             <td>
-<p>ValueSet for TDDUI Patient's identifier types</p>
+<p>ValueSet définissant les types de notes pour l'élément Goal.note.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-tddui-serafin-valueset.html"
-                  title="ValueSet/tddui-serafin-valueset">TDDUI SERAFIN ValueSet</a>
+               <a href="ValueSet-tddui-patient-identifier.html"
+                  title="ValueSet/tddui-patient-identifier">TDDUI Patient Identifier</a>
+            </td>
+            <td>
+<p>ValueSet pour la définition des codes d'identifiant de l'usager</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-tddui-contact-related-person-relashionship.html"
+                  title="ValueSet/tddui-contact-related-person-relashionship">TDDUI Related Person Relashionship</a>
+            </td>
+            <td>
+<p>ValueSet définissant les slices de RelatedPerson.relationship.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-tddui-serafin.html" title="ValueSet/tddui-serafin">TDDUI SERAFIN</a>
             </td>
             <td>
 <p>ValueSet contenant les codes SERAFIN (prestations directes et indirectes) pour le profil TDDUI Encounter Evenement.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-tddui-task-input-action.html"
+                  title="ValueSet/tddui-task-input-action">TDDUI Task Input Action</a>
+            </td>
+            <td>
+<p>ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les actions du projet personnalisé.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-tddui-task-input-bilan.html"
+                  title="ValueSet/tddui-task-input-bilan">TDDUI Task Input Bilan</a>
+            </td>
+            <td>
+<p>ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour le bilan du projet personnalisé.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-tddui-task-input-moyen-ressource.html"
+                  title="ValueSet/tddui-task-input-moyen-ressource">TDDUI Task Input Moyen Ressource</a>
+            </td>
+            <td>
+<p>ValueSet  pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les moyens et ressources du projet personnalisé.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-tddui-task-input-prestation.html"
+                  title="ValueSet/tddui-task-input-prestation">TDDUI Task Input Prestation</a>
+            </td>
+            <td>
+<p>ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les prestations du projet personnalisé.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-tddui-task-input-transport.html"
+                  title="ValueSet/tddui-task-input-transport">TDDUI Task Input Transport</a>
+            </td>
+            <td>
+<p>ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les transports dans le cadre du DUI.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-tddui-task-output-bilan.html"
+                  title="ValueSet/tddui-task-output-bilan">TDDUI Task Output Bilan</a>
+            </td>
+            <td>
+<p>ValueSet pour la définition des éléments spécifiques des output dans la ressource Task utilisée pour le bilan du projet personnalisé.</p>
 </td>
          </tr>
       </tbody>
@@ -909,62 +962,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="CodeSystem-input-tddui-task-action-codesystem.html"
-                  title="CodeSystem/input-tddui-task-action-codesystem">InputTDDUITaskActionCodeSystem</a>
-            </td>
-            <td>
-<p>CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les actions du projet personnalisé.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="CodeSystem-input-tddui-task-bilan-codesystem.html"
-                  title="CodeSystem/input-tddui-task-bilan-codesystem">InputTDDUITaskBilanCodeSystem</a>
-            </td>
-            <td>
-<p>CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour le bilan du projet personnalisé.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="CodeSystem-input-tddui-task-moyen-ressource-codesystem.html"
-                  title="CodeSystem/input-tddui-task-moyen-ressource-codesystem">InputTDDUITaskMoyenRessourceCodeSystem</a>
-            </td>
-            <td>
-<p>CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les moyens et ressources du projet personnalisé.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="CodeSystem-input-tddui-task-prestation-codesystem.html"
-                  title="CodeSystem/input-tddui-task-prestation-codesystem">InputTDDUITaskPrestationCodeSystem</a>
-            </td>
-            <td>
-<p>CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les prestations du projet personnalisé.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="CodeSystem-input-tddui-task-transport-codesystem.html"
-                  title="CodeSystem/input-tddui-task-transport-codesystem">InputTaskTransportCodeSystem</a>
-            </td>
-            <td>
-<p>CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les transports dans le cadre du DUI.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="CodeSystem-output-tddui-task-bilan-codesystem.html"
-                  title="CodeSystem/output-tddui-task-bilan-codesystem">OutputTDDUITaskBilanCodeSystem</a>
-            </td>
-            <td>
-<p>CodeSystem pour la définition des éléments spécifiques des output dans la ressource Task utilisée pour le bilan du projet personnalisé.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="CodeSystem-tddui-discriminator-cs.html"
-                  title="CodeSystem/tddui-discriminator-cs">TDDUI Discriminator CodeSystem</a>
+               <a href="CodeSystem-tddui-discriminator.html"
+                  title="CodeSystem/tddui-discriminator">TDDUI Discriminator</a>
             </td>
             <td>
 <p>CodeSystem définissant les codes discriminants.</p>
@@ -972,29 +971,83 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="CodeSystem-tddui-encounter-identifier-cs.html"
-                  title="CodeSystem/tddui-encounter-identifier-cs">TDDUI Encounter FR Core CodeSystem v2-0203</a>
+               <a href="CodeSystem-tddui-encounter-identifier.html"
+                  title="CodeSystem/tddui-encounter-identifier">TDDUI Encounter Identifier</a>
             </td>
             <td>
-<p>TDDUI Encounter's identifier</p>
+<p>CodeSystem pour la définition des codes d'identifiant de séjour</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="CodeSystem-TDDUIEncounterParticipant.html"
-                  title="CodeSystem/TDDUIEncounterParticipant">TDDUI Encounter Participant Type</a>
+               <a href="CodeSystem-tddui-encounter-participant.html"
+                  title="CodeSystem/tddui-encounter-participant">TDDUI Encounter Participant</a>
             </td>
             <td>
-<p>CodeSystem for the participant types in TDDUI Encounter</p>
+<p>CodeSystem définissant les types de participants dans le profil TDDUIEncounterEvenement.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="CodeSystem-tddui-identifier.html"
-                  title="CodeSystem/tddui-identifier">TDDUI FR Core CodeSystem v2-0203</a>
+                  title="CodeSystem/tddui-identifier">TDDUI Patient Identifier</a>
             </td>
             <td>
-<p>TDDUI Patient's identifier</p>
+<p>CodeSystem pour la définition des codes d'identifiant de l'usager</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-tddui-task-input-action.html"
+                  title="CodeSystem/tddui-task-input-action">TDDUI Task Input Action</a>
+            </td>
+            <td>
+<p>CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les actions du projet personnalisé.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-tddui-task-input-bilan.html"
+                  title="CodeSystem/tddui-task-input-bilan">TDDUI Task Input Bilan</a>
+            </td>
+            <td>
+<p>CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour le bilan du projet personnalisé.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-tddui-task-input-moyen-ressource.html"
+                  title="CodeSystem/tddui-task-input-moyen-ressource">TDDUI Task Input Moyen Ressource</a>
+            </td>
+            <td>
+<p>CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les moyens et ressources du projet personnalisé.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-tddui-task-input-prestation.html"
+                  title="CodeSystem/tddui-task-input-prestation">TDDUI Task Input Prestation</a>
+            </td>
+            <td>
+<p>CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les prestations du projet personnalisé.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-tddui-task-input-transport.html"
+                  title="CodeSystem/tddui-task-input-transport">TDDUI Task Input Transport</a>
+            </td>
+            <td>
+<p>CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les transports dans le cadre du DUI.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-tddui-task-output-bilan.html"
+                  title="CodeSystem/tddui-task-output-bilan">TDDUI Task Output Bilan</a>
+            </td>
+            <td>
+<p>CodeSystem pour la définition des éléments spécifiques des output dans la ressource Task utilisée pour le bilan du projet personnalisé.</p>
 </td>
          </tr>
       </tbody>
@@ -1007,7 +1060,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="Bundle-ExampleTDDUIBundle.html" title="Bundle/ExampleTDDUIBundle">TDDUIBundleExample</a>
+               <a href="Bundle-tddui-bundle-example.html"
+                  title="Bundle/tddui-bundle-example">TDDUI Bundle Example</a>
             </td>
             <td>
 <p>Exemple de bundle conforme au profil TDDUIBundle</p>
@@ -1015,17 +1069,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="RelatedPerson-fr-core-related-person-example.html"
-                  title="RelatedPerson/fr-core-related-person-example">fr-core-related-person-example</a>
-            </td>
-            <td>
-<p>Exemple de la famille de l'usager.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="Encounter-tddui-encounter-evenement-example.html"
-                  title="Encounter/tddui-encounter-evenement-example">tddui-encounter-evenement-example</a>
+                  title="Encounter/tddui-encounter-evenement-example">TDDUI Encounter Evenement Example</a>
             </td>
             <td>
 <p>Exemple d'un évènement</p>
@@ -1034,7 +1079,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="Encounter-tddui-encounter-sejour-example.html"
-                  title="Encounter/tddui-encounter-sejour-example">tddui-encounter-sejour-example</a>
+                  title="Encounter/tddui-encounter-sejour-example">TDDUI Encounter Sejour Example</a>
             </td>
             <td>
 <p>Exemple d'un séjour en ESSMS</p>
@@ -1043,7 +1088,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="Location-tddui-event-location-example.html"
-                  title="Location/tddui-event-location-example">tddui-event-location-example</a>
+                  title="Location/tddui-event-location-example">TDDUI Event Location Example</a>
             </td>
             <td>
 <p>Lieu de l'évènement</p>
@@ -1052,10 +1097,433 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="Organization-tddui-organization-example.html"
-                  title="Organization/tddui-organization-example">tddui-organization-example</a>
+                  title="Organization/tddui-organization-example">TDDUI Organization Example</a>
             </td>
             <td>
 <p>ESSMS - Les Chênes Verts</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-tddui-pp-ime-bundle-example.html"
+                  title="Bundle/tddui-pp-ime-bundle-example">TDDUI PP IME Bundle Example</a>
+            </td>
+            <td>
+<p>Exemple de bundle conforme au profil TDDUIBundle contenant le projet personnalisé en IME</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CarePlan-tddui-pp-ime-careplan-example.html"
+                  title="CarePlan/tddui-pp-ime-careplan-example">TDDUI PP IME CarePlan Example</a>
+            </td>
+            <td>
+<p>Exemple du projet personnalisé d'un enfant en IME</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Consent-tddui-pp-ime-consent-accord-example.html"
+                  title="Consent/tddui-pp-ime-consent-accord-example">TDDUI PP IME Consent Accord Example</a>
+            </td>
+            <td>
+<p>Exemple d'un accord de la structure</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Goal-tddui-pp-ime-goal-objectif-1-example.html"
+                  title="Goal/tddui-pp-ime-goal-objectif-1-example">TDDUI PP IME Goal Objectif 1 Example</a>
+            </td>
+            <td>
+<p>Exemple d'un objectif dans le cadre du projet personnalisé en IME.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Goal-tddui-pp-ime-goal-objectif-2-example.html"
+                  title="Goal/tddui-pp-ime-goal-objectif-2-example">TDDUI PP IME Goal Objectif 2 Example</a>
+            </td>
+            <td>
+<p>Exemple d'un objectif dans le cadre du projet personnalisé en IME.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-tddui-pp-ime-patient-example.html"
+                  title="Patient/tddui-pp-ime-patient-example">TDDUI PP IME Patient Example</a>
+            </td>
+            <td>
+<p>Exemple de la ressource TDDUIPatient dans le cadre d'un projet personnalisé en IME</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Task-tddui-pp-ime-task-action-1-aesh-example.html"
+                  title="Task/tddui-pp-ime-task-action-1-aesh-example">TDDUI PP IME Task Action 1 AESH Example</a>
+            </td>
+            <td>
+<p>Exemple d'une action de l'objectif 1 réalisée par l'AESH dans le cadre du projet personnalisé en IME.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Task-tddui-pp-ime-task-action-1-educ-example.html"
+                  title="Task/tddui-pp-ime-task-action-1-educ-example">TDDUI PP IME Task Action 1 Educ Example</a>
+            </td>
+            <td>
+<p>Exemple d'une action de l'objectif 1 réalisée par l'éducateur spécialisé dans le cadre du projet personnalisé en IME.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-tddui-pp-pa-bundle-example.html"
+                  title="Bundle/tddui-pp-pa-bundle-example">TDDUI PP PA Bundle Example</a>
+            </td>
+            <td>
+<p>Exemple de bundle conforme au profil TDDUIBundle contenant le projet personnalisé PA.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CarePlan-tddui-pp-pa-careplan-example.html"
+                  title="CarePlan/tddui-pp-pa-careplan-example">TDDUI PP PA CarePlan Example</a>
+            </td>
+            <td>
+<p>Exemple d'un projet personnalisé PA</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Consent-tddui-pp-pa-consent-accord-example.html"
+                  title="Consent/tddui-pp-pa-consent-accord-example">TDDUI PP PA Consent Accord Example</a>
+            </td>
+            <td>
+<p>Exemple d'un accord de la structure</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DocumentReference-tddui-pp-pa-documentreference-bilan-objectif-1-example.html"
+                  title="DocumentReference/tddui-pp-pa-documentreference-bilan-objectif-1-example">TDDUI PP PA DocumentReference Bilan Objectif 1 Example</a>
+            </td>
+            <td>
+<p>Bilan de l'objectif 1 du projet personnalisé PA au format PDF</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DocumentReference-tddui-pp-pa-documentreference-entrant-example.html"
+                  title="DocumentReference/tddui-pp-pa-documentreference-entrant-example">TDDUI PP PA DocumentReference Entrant Example</a>
+            </td>
+            <td>
+<p>Entrant Projet Personnalisé PA au format PDF</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Goal-tddui-pp-pa-goal-attente-famille-example.html"
+                  title="Goal/tddui-pp-pa-goal-attente-famille-example">TDDUI PP PA Goal Attente Famille Example</a>
+            </td>
+            <td>
+<p>Exemple des attentes de la famille dans le cadre du projet personnalisé PA.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Goal-tddui-pp-pa-goal-attente-usager-example.html"
+                  title="Goal/tddui-pp-pa-goal-attente-usager-example">TDDUI PP PA Goal Attente Usager Example</a>
+            </td>
+            <td>
+<p>Exemple des attentes de l'usager dans le cadre du projet personnalisé PA.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Goal-tddui-pp-pa-goal-objectif-1-example.html"
+                  title="Goal/tddui-pp-pa-goal-objectif-1-example">TDDUI PP PA Goal Objectif 1 Example</a>
+            </td>
+            <td>
+<p>Exemple d'un objectif dans le cadre du projet personnalisé PA.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Goal-tddui-pp-pa-goal-objectif-2-example.html"
+                  title="Goal/tddui-pp-pa-goal-objectif-2-example">TDDUI PP PA Goal Objectif 2 Example</a>
+            </td>
+            <td>
+<p>Exemple d'un objectif dans le cadre du projet personnalisé PA.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Goal-tddui-pp-pa-goal-objectif-3-example.html"
+                  title="Goal/tddui-pp-pa-goal-objectif-3-example">TDDUI PP PA Goal Objectif 3 Example</a>
+            </td>
+            <td>
+<p>Exemple d'un objectif dans le cadre du projet personnalisé PA.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-tddui-pp-pa-patient-example-pp.html"
+                  title="Patient/tddui-pp-pa-patient-example-pp">TDDUI PP PA Patient Example</a>
+            </td>
+            <td>
+<p>Exemple de la ressource TDDUIPatient dans le cadre d'un projet personnalisé PA</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-tddui-pp-pa-practitioner-ide-example.html"
+                  title="Practitioner/tddui-pp-pa-practitioner-ide-example">TDDUI PP PA Practitioner IDE Example</a>
+            </td>
+            <td>
+<p>Exemple d'un IDE</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-tddui-pp-pa-questionnaire-response-aggir-pa-example.html"
+                  title="QuestionnaireResponse/tddui-pp-pa-questionnaire-response-aggir-pa-example">TDDUI PP PA Questionnaire Response AGGIR PA Example</a>
+            </td>
+            <td>
+<p>Grille de réponse AGGIR PA</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ServiceRequest-tddui-pp-pa-servicerequest-besoin-1-example.html"
+                  title="ServiceRequest/tddui-pp-pa-servicerequest-besoin-1-example">TDDUI PP PA ServiceRequest Besoin 1 Example</a>
+            </td>
+            <td>
+<p>Exemple d'un besoin de l'usager dans le cadre du projet personnalisé PA.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ServiceRequest-tddui-pp-pa-servicerequest-besoin-2-example.html"
+                  title="ServiceRequest/tddui-pp-pa-servicerequest-besoin-2-example">TDDUI PP PA ServiceRequest Besoin 2 Example</a>
+            </td>
+            <td>
+<p>Exemple d'un besoin de l'usager dans le cadre du projet personnalisé PA.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ServiceRequest-tddui-pp-pa-servicerequest-besoin-3-example.html"
+                  title="ServiceRequest/tddui-pp-pa-servicerequest-besoin-3-example">TDDUI PP PA ServiceRequest Besoin 3 Example</a>
+            </td>
+            <td>
+<p>Exemple d'un besoin de l'usager dans le cadre du projet personnalisé PA.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Task-tddui-pp-pa-task-action-1-ergo-example.html"
+                  title="Task/tddui-pp-pa-task-action-1-ergo-example">TDDUI PP PA Task Action 1 Ergo Example</a>
+            </td>
+            <td>
+<p>Exemple d'une action de l'objectif 1 réalisée par l'ergothérapeute dans le cadre du projet personnalisé PA.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Task-tddui-pp-pa-task-action-1-ide-example.html"
+                  title="Task/tddui-pp-pa-task-action-1-ide-example">TDDUI PP PA Task Action 1 IDE Example</a>
+            </td>
+            <td>
+<p>Exemple d'une action de l'objectif 1 réalisée par l'IDE dans le cadre du projet personnalisé PA.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Task-tddui-pp-pa-task-action-1-kine-example.html"
+                  title="Task/tddui-pp-pa-task-action-1-kine-example">TDDUI PP PA Task Action 1 Kine Example</a>
+            </td>
+            <td>
+<p>Exemple d'une action de l'objectif 1 réalisée par le kinésithérapeute dans le cadre du projet personnalisé PA.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Task-tddui-pp-pa-task-action-2-anim-example.html"
+                  title="Task/tddui-pp-pa-task-action-2-anim-example">TDDUI PP PA Task Action 2 Anim Example</a>
+            </td>
+            <td>
+<p>Exemple d'une action de l'objectif 1 réalisée par l'animatrice dans le cadre du projet personnalisé PA.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Task-tddui-pp-pa-task-action-2-ide-example.html"
+                  title="Task/tddui-pp-pa-task-action-2-ide-example">TDDUI PP PA Task Action 2 IDE Example</a>
+            </td>
+            <td>
+<p>Exemple d'une action de l'objectif 2 réalisée par l'IDE dans le cadre du projet personnalisé PA.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Task-tddui-pp-pa-task-action-3-psy-example.html"
+                  title="Task/tddui-pp-pa-task-action-3-psy-example">TDDUI PP PA Task Action 3 Psy Example</a>
+            </td>
+            <td>
+<p>Exemple d'une action de l'objectif 3 réalisée par le psychologue dans le cadre du projet personnalisé PA.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Task-tddui-pp-pa-task-moyen-ressource-ergo-1-example.html"
+                  title="Task/tddui-pp-pa-task-moyen-ressource-ergo-1-example">TDDUI PP PA Task Moyen Ressource Ergo 1 Example</a>
+            </td>
+            <td>
+<p>Exemple des moyens et ressources de l'objectif 1 dans le cadre du projet personnalisé PA.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Task-tddui-pp-pa-task-moyen-ressource-ide-1-example.html"
+                  title="Task/tddui-pp-pa-task-moyen-ressource-ide-1-example">TDDUI PP PA Task Moyen Ressource IDE 1 Example</a>
+            </td>
+            <td>
+<p>Exemple des moyens et ressources de l'objectif 1 dans le cadre du projet personnalisé PA.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Task-tddui-pp-pa-task-moyen-ressource-ide-2-example.html"
+                  title="Task/tddui-pp-pa-task-moyen-ressource-ide-2-example">TDDUI PP PA Task Moyen Ressource IDE 2 Example</a>
+            </td>
+            <td>
+<p>Exemple des moyens et ressources de l'objectif 2 dans le cadre du projet personnalisé PA.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Task-tddui-pp-pa-task-moyen-ressource-kine-1-example.html"
+                  title="Task/tddui-pp-pa-task-moyen-ressource-kine-1-example">TDDUI PP PA Task Moyen Ressource Kine 1 Example</a>
+            </td>
+            <td>
+<p>Exemple des moyens et ressources de l'objectif 1 dans le cadre du projet personnalisé PA.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-tddui-patient-example.html"
+                  title="Patient/tddui-patient-example">TDDUI Patient Example</a>
+            </td>
+            <td>
+<p>Exemple de la ressource TDDUIPatient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-tddui-patient-ins-example.html"
+                  title="Patient/tddui-patient-ins-example">TDDUI Patient INS Example</a>
+            </td>
+            <td>
+<p>Exemple de la ressource TDDUIPatientINS</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-tddui-practitioner-example.html"
+                  title="Practitioner/tddui-practitioner-example">TDDUI Practitioner Example</a>
+            </td>
+            <td>
+<p>Exemple d'un professionnel de santé</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-tddui-practitioner-role-example.html"
+                  title="PractitionerRole/tddui-practitioner-role-example">TDDUI Practitioner Role Example</a>
+            </td>
+            <td>
+<p>Exemple d'un professionnel de santé</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-tddui-questionnaire-response-aggir-pa-example.html"
+                  title="QuestionnaireResponse/tddui-questionnaire-response-aggir-pa-example">TDDUI Questionnaire Response AGGIR PA Example</a>
+            </td>
+            <td>
+<p>Grille de réponse AGGIR PA</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-tddui-questionnaire-response-aggir-ph-example.html"
+                  title="QuestionnaireResponse/tddui-questionnaire-response-aggir-ph-example">TDDUI Questionnaire Response AGGIR PH Example</a>
+            </td>
+            <td>
+<p>Grille de réponse AGGIR PH</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-tddui-questionnaire-response-serafin-precision-example.html"
+                  title="QuestionnaireResponse/tddui-questionnaire-response-serafin-precision-example">TDDUI Questionnaire Response SERAFIN Precision Example</a>
+            </td>
+            <td>
+<p>Evaluation SERAFIN pour un besoin d'hébergement adapté avec précision</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-tddui-questionnaire-response-serafin-sans-precision-example.html"
+                  title="QuestionnaireResponse/tddui-questionnaire-response-serafin-sans-precision-example">TDDUI Questionnaire Response SERAFIN Sans Precision Example</a>
+            </td>
+            <td>
+<p>Evaluation SERAFIN pour un besoin d'hébergement adapté sans précision</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-tddui-questionnaire-response-situation-ssiad-example.html"
+                  title="QuestionnaireResponse/tddui-questionnaire-response-situation-ssiad-example">TDDUI Questionnaire Response Situation SSIAD Example</a>
+            </td>
+            <td>
+<p>Grille de réponse de la situation SSIAD</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="RelatedPerson-tddui-related-person-contact-example.html"
+                  title="RelatedPerson/tddui-related-person-contact-example">TDDUI Related Person Contact Example</a>
+            </td>
+            <td>
+<p>Exemple d'un contact.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Task-tddui-task-transport-example.html"
+                  title="Task/tddui-task-transport-example">TDDUI Task Transport Example</a>
+            </td>
+            <td>
+<p>Exemple du transport.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Task-tddui-task-transport-professionel-example.html"
+                  title="Task/tddui-task-transport-professionel-example">TDDUI Task Transport Professionel Example</a>
+            </td>
+            <td>
+<p>Exemple du transport du professionnel.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Task-tddui-task-transport-usager-example.html"
+                  title="Task/tddui-task-transport-usager-example">TDDUI Task Transport Usager Example</a>
+            </td>
+            <td>
+<p>Exemple du transport de l'usager.</p>
 </td>
          </tr>
          <tr>
@@ -1065,420 +1533,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>ESSMS - Les Résidences du Lac</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Patient-tddui-patient-example.html"
-                  title="Patient/tddui-patient-example">tddui-patient-example</a>
-            </td>
-            <td>
-<p>Exemple de la ressource TDDUIPatient</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Patient-tddui-patient-ins-example.html"
-                  title="Patient/tddui-patient-ins-example">tddui-patient-ins-example</a>
-            </td>
-            <td>
-<p>Exemple de la ressource TDDUIPatientINS</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Bundle-tddui-pp-ime-bundle-example.html"
-                  title="Bundle/tddui-pp-ime-bundle-example">tddui-pp-ime-bundle-example</a>
-            </td>
-            <td>
-<p>Exemple de bundle conforme au profil TDDUIBundle contenant le projet personnalisé en IME</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="CarePlan-tddui-pp-ime-careplan-example.html"
-                  title="CarePlan/tddui-pp-ime-careplan-example">tddui-pp-ime-careplan-example</a>
-            </td>
-            <td>
-<p>Exemple du projet personnalisé d'un enfant en IME</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Consent-tddui-pp-ime-consent-accord-example.html"
-                  title="Consent/tddui-pp-ime-consent-accord-example">tddui-pp-ime-consent-accord-example</a>
-            </td>
-            <td>
-<p>Exemple d'un accord de la structure</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Goal-tddui-pp-ime-goal-objectif-1-example.html"
-                  title="Goal/tddui-pp-ime-goal-objectif-1-example">tddui-pp-ime-goal-objectif-1-example</a>
-            </td>
-            <td>
-<p>Exemple d'un objectif dans le cadre du projet personnalisé en IME.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Goal-tddui-pp-ime-goal-objectif-2-example.html"
-                  title="Goal/tddui-pp-ime-goal-objectif-2-example">tddui-pp-ime-goal-objectif-2-example</a>
-            </td>
-            <td>
-<p>Exemple d'un objectif dans le cadre du projet personnalisé en IME.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Patient-tddui-pp-ime-patient-example.html"
-                  title="Patient/tddui-pp-ime-patient-example">tddui-pp-ime-patient-example</a>
-            </td>
-            <td>
-<p>Exemple de la ressource TDDUIPatient dans le cadre d'un projet personnalisé en IME</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Task-tddui-pp-ime-task-action-1-aesh-example.html"
-                  title="Task/tddui-pp-ime-task-action-1-aesh-example">tddui-pp-ime-task-action-1-aesh-example</a>
-            </td>
-            <td>
-<p>Exemple d'une action de l'objectif 1 réalisée par l'AESH dans le cadre du projet personnalisé en IME.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Task-tddui-pp-ime-task-action-1-educ-example.html"
-                  title="Task/tddui-pp-ime-task-action-1-educ-example">tddui-pp-ime-task-action-1-educ-example</a>
-            </td>
-            <td>
-<p>Exemple d'une action de l'objectif 1 réalisée par l'éducateur spécialisé dans le cadre du projet personnalisé en IME.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Bundle-tddui-pp-pa-bundle-example.html"
-                  title="Bundle/tddui-pp-pa-bundle-example">tddui-pp-pa-bundle-example</a>
-            </td>
-            <td>
-<p>Exemple de bundle conforme au profil TDDUIBundle contenant le projet personnalisé PA.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="CarePlan-tddui-pp-pa-careplan-example.html"
-                  title="CarePlan/tddui-pp-pa-careplan-example">tddui-pp-pa-careplan-example</a>
-            </td>
-            <td>
-<p>Exemple d'un projet personnalisé PA</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Consent-tddui-pp-pa-consent-accord-example.html"
-                  title="Consent/tddui-pp-pa-consent-accord-example">tddui-pp-pa-consent-accord-example</a>
-            </td>
-            <td>
-<p>Exemple d'un accord de la structure</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="DocumentReference-tddui-pp-pa-documentreference-bilan-objectif-1-example.html"
-                  title="DocumentReference/tddui-pp-pa-documentreference-bilan-objectif-1-example">tddui-pp-pa-documentreference-bilan-objectif-1-example</a>
-            </td>
-            <td>
-<p>Bilan de l'objectif 1 du projet personnalisé PA au format PDF</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="DocumentReference-tddui-pp-pa-documentreference-entrant-example.html"
-                  title="DocumentReference/tddui-pp-pa-documentreference-entrant-example">tddui-pp-pa-documentreference-entrant-example</a>
-            </td>
-            <td>
-<p>Entrant Projet Personnalisé PA au format PDF</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Goal-tddui-pp-pa-goal-attente-famille-example.html"
-                  title="Goal/tddui-pp-pa-goal-attente-famille-example">tddui-pp-pa-goal-attente-famille-example</a>
-            </td>
-            <td>
-<p>Exemple des attentes de la famille dans le cadre du projet personnalisé PA.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Goal-tddui-pp-pa-goal-attente-usager-example.html"
-                  title="Goal/tddui-pp-pa-goal-attente-usager-example">tddui-pp-pa-goal-attente-usager-example</a>
-            </td>
-            <td>
-<p>Exemple des attentes de l'usager dans le cadre du projet personnalisé PA.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Goal-tddui-pp-pa-goal-objectif-1-example.html"
-                  title="Goal/tddui-pp-pa-goal-objectif-1-example">tddui-pp-pa-goal-objectif-1-example</a>
-            </td>
-            <td>
-<p>Exemple d'un objectif dans le cadre du projet personnalisé PA.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Goal-tddui-pp-pa-goal-objectif-2-example.html"
-                  title="Goal/tddui-pp-pa-goal-objectif-2-example">tddui-pp-pa-goal-objectif-2-example</a>
-            </td>
-            <td>
-<p>Exemple d'un objectif dans le cadre du projet personnalisé PA.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Goal-tddui-pp-pa-goal-objectif-3-example.html"
-                  title="Goal/tddui-pp-pa-goal-objectif-3-example">tddui-pp-pa-goal-objectif-3-example</a>
-            </td>
-            <td>
-<p>Exemple d'un objectif dans le cadre du projet personnalisé PA.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Patient-tddui-pp-pa-patient-example-pp.html"
-                  title="Patient/tddui-pp-pa-patient-example-pp">tddui-pp-pa-patient-example-pp</a>
-            </td>
-            <td>
-<p>Exemple de la ressource TDDUIPatient dans le cadre d'un projet personnalisé PA</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Practitioner-tddui-pp-pa-practitioner-ide-example.html"
-                  title="Practitioner/tddui-pp-pa-practitioner-ide-example">tddui-pp-pa-practitioner-ide-example</a>
-            </td>
-            <td>
-<p>Exemple d'un IDE</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="QuestionnaireResponse-tddui-pp-pa-questionnaire-response-aggir-pa-example.html"
-                  title="QuestionnaireResponse/tddui-pp-pa-questionnaire-response-aggir-pa-example">tddui-pp-pa-questionnaire-response-aggir-pa-example</a>
-            </td>
-            <td>
-<p>Grille de réponse AGGIR PA</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ServiceRequest-tddui-pp-pa-servicerequest-besoin-1-example.html"
-                  title="ServiceRequest/tddui-pp-pa-servicerequest-besoin-1-example">tddui-pp-pa-servicerequest-besoin-1-example</a>
-            </td>
-            <td>
-<p>Exemple d'un besoin de l'usager dans le cadre du projet personnalisé PA.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ServiceRequest-tddui-pp-pa-servicerequest-besoin-2-example.html"
-                  title="ServiceRequest/tddui-pp-pa-servicerequest-besoin-2-example">tddui-pp-pa-servicerequest-besoin-2-example</a>
-            </td>
-            <td>
-<p>Exemple d'un besoin de l'usager dans le cadre du projet personnalisé PA.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ServiceRequest-tddui-pp-pa-servicerequest-besoin-3-example.html"
-                  title="ServiceRequest/tddui-pp-pa-servicerequest-besoin-3-example">tddui-pp-pa-servicerequest-besoin-3-example</a>
-            </td>
-            <td>
-<p>Exemple d'un besoin de l'usager dans le cadre du projet personnalisé PA.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Task-tddui-pp-pa-task-action-1-ergo-example.html"
-                  title="Task/tddui-pp-pa-task-action-1-ergo-example">tddui-pp-pa-task-action-1-ergo-example</a>
-            </td>
-            <td>
-<p>Exemple d'une action de l'objectif 1 réalisée par l'ergothérapeute dans le cadre du projet personnalisé PA.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Task-tddui-pp-pa-task-action-1-ide-example.html"
-                  title="Task/tddui-pp-pa-task-action-1-ide-example">tddui-pp-pa-task-action-1-ide-example</a>
-            </td>
-            <td>
-<p>Exemple d'une action de l'objectif 1 réalisée par l'IDE dans le cadre du projet personnalisé PA.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Task-tddui-pp-pa-task-action-1-kine-example.html"
-                  title="Task/tddui-pp-pa-task-action-1-kine-example">tddui-pp-pa-task-action-1-kine-example</a>
-            </td>
-            <td>
-<p>Exemple d'une action de l'objectif 1 réalisée par le kinésithérapeute dans le cadre du projet personnalisé PA.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Task-tddui-pp-pa-task-action-2-anim-example.html"
-                  title="Task/tddui-pp-pa-task-action-2-anim-example">tddui-pp-pa-task-action-2-anim-example</a>
-            </td>
-            <td>
-<p>Exemple d'une action de l'objectif 1 réalisée par l'animatrice dans le cadre du projet personnalisé PA.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Task-tddui-pp-pa-task-action-2-ide-example.html"
-                  title="Task/tddui-pp-pa-task-action-2-ide-example">tddui-pp-pa-task-action-2-ide-example</a>
-            </td>
-            <td>
-<p>Exemple d'une action de l'objectif 2 réalisée par l'IDE dans le cadre du projet personnalisé PA.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Task-tddui-pp-pa-task-action-3-psy-example.html"
-                  title="Task/tddui-pp-pa-task-action-3-psy-example">tddui-pp-pa-task-action-3-psy-example</a>
-            </td>
-            <td>
-<p>Exemple d'une action de l'objectif 3 réalisée par le psychologue dans le cadre du projet personnalisé PA.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Task-tddui-pp-pa-task-moyen-ressource-ergo-1-example.html"
-                  title="Task/tddui-pp-pa-task-moyen-ressource-ergo-1-example">tddui-pp-pa-task-moyen-ressource-ergo-1-example</a>
-            </td>
-            <td>
-<p>Exemple des moyens et ressources de l'objectif 1 dans le cadre du projet personnalisé PA.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Task-tddui-pp-pa-task-moyen-ressource-ide-1-example.html"
-                  title="Task/tddui-pp-pa-task-moyen-ressource-ide-1-example">tddui-pp-pa-task-moyen-ressource-ide-1-example</a>
-            </td>
-            <td>
-<p>Exemple des moyens et ressources de l'objectif 1 dans le cadre du projet personnalisé PA.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Task-tddui-pp-pa-task-moyen-ressource-ide-2-example.html"
-                  title="Task/tddui-pp-pa-task-moyen-ressource-ide-2-example">tddui-pp-pa-task-moyen-ressource-ide-2-example</a>
-            </td>
-            <td>
-<p>Exemple des moyens et ressources de l'objectif 2 dans le cadre du projet personnalisé PA.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Task-tddui-pp-pa-task-moyen-ressource-kine-1-example.html"
-                  title="Task/tddui-pp-pa-task-moyen-ressource-kine-1-example">tddui-pp-pa-task-moyen-ressource-kine-1-example</a>
-            </td>
-            <td>
-<p>Exemple des moyens et ressources de l'objectif 1 dans le cadre du projet personnalisé PA.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Practitioner-tddui-practitioner-example.html"
-                  title="Practitioner/tddui-practitioner-example">tddui-practitioner-example</a>
-            </td>
-            <td>
-<p>Exemple d'un professionnel de santé</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="PractitionerRole-tddui-practitioner-role-example.html"
-                  title="PractitionerRole/tddui-practitioner-role-example">tddui-practitioner-role-example</a>
-            </td>
-            <td>
-<p>Exemple d'un professionnel de santé</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="QuestionnaireResponse-tddui-questionnaire-response-aggir-pa-example.html"
-                  title="QuestionnaireResponse/tddui-questionnaire-response-aggir-pa-example">tddui-questionnaire-response-aggir-pa-example</a>
-            </td>
-            <td>
-<p>Grille de réponse AGGIR PA</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="QuestionnaireResponse-tddui-questionnaire-response-aggir-ph-example.html"
-                  title="QuestionnaireResponse/tddui-questionnaire-response-aggir-ph-example">tddui-questionnaire-response-aggir-ph-example</a>
-            </td>
-            <td>
-<p>Grille de réponse AGGIR PH</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="QuestionnaireResponse-tddui-questionnaire-response-serafin-precision-example.html"
-                  title="QuestionnaireResponse/tddui-questionnaire-response-serafin-precision-example">tddui-questionnaire-response-serafin-precision-example</a>
-            </td>
-            <td>
-<p>Evaluation SERAFIN pour un besoin d'hébergement adapté avec précision</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="QuestionnaireResponse-tddui-questionnaire-response-serafin-sans-precision-example.html"
-                  title="QuestionnaireResponse/tddui-questionnaire-response-serafin-sans-precision-example">tddui-questionnaire-response-serafin-sans-precision-example</a>
-            </td>
-            <td>
-<p>Evaluation SERAFIN pour un besoin d'hébergement adapté sans précision</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="QuestionnaireResponse-tddui-questionnaire-response-situation-ssiad-example.html"
-                  title="QuestionnaireResponse/tddui-questionnaire-response-situation-ssiad-example">tddui-questionnaire-response-situation-ssiad-example</a>
-            </td>
-            <td>
-<p>Grille de réponse de la situation SSIAD</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Task-tddui-task-transport-example.html"
-                  title="Task/tddui-task-transport-example">tddui-task-transport-example</a>
-            </td>
-            <td>
-<p>Exemple du transport.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Task-tddui-task-transport-professionel-example.html"
-                  title="Task/tddui-task-transport-professionel-example">tddui-task-transport-professionel-example</a>
-            </td>
-            <td>
-<p>Exemple du transport du professionnel.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Task-tddui-task-transport-usager-example.html"
-                  title="Task/tddui-task-transport-usager-example">tddui-task-transport-usager-example</a>
-            </td>
-            <td>
-<p>Exemple du transport de l'usager.</p>
 </td>
          </tr>
       </tbody>
@@ -1523,7 +1577,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.2.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jan 30, 2026 14:32+0000">2026-01-30</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.2.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Feb 9, 2026 09:12+0000">2026-02-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |

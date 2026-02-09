@@ -1,0 +1,35 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "384fc759-5200-4240-a376-17af182e891c-222",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/384fc759-5200-4240-a376-17af182e891c-222",
+  "name" : "IntersectionTDDUIGoalObjectifNoteAndTDDUIGoalObjectifNote",
+  "title" : "Intersection of TDDUI Goal Objectif Note And TDDUI Goal Objectif Note",
+  "status" : "active",
+  "date" : "2026-02-09T09:15:49+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-discriminator"]
+    }],
+    "exclude" : [{
+      "concept" : [{
+        "code" : "accordUsager"
+      },
+      {
+        "code" : "accordStructure"
+      },
+      {
+        "code" : "origineAttente"
+      },
+      {
+        "code" : "commentaireAttente"
+      }]
+    }]
+  }
+}

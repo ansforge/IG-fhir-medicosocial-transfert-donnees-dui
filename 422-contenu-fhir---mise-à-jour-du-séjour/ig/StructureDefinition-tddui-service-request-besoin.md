@@ -9,19 +9,19 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin | *Version*:2.2.0-ballot |
-| Active as of 2026-01-30 | *Computable Name*:TDDUIServiceRequestBesoin |
+| Active as of 2026-02-09 | *Computable Name*:TDDUIServiceRequestBesoin |
 
  
 Profil de la ressource ServiceRequest permettant de représenter les besoins de l'usager. 
 
 **Utilisations:**
 
-* Utiliser ce Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
-* Référer à ce Profil: [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md)
-* Exemples pour ce Profil: [ServiceRequest/tddui-pp-pa-servicerequest-besoin-1-example](ServiceRequest-tddui-pp-pa-servicerequest-besoin-1-example.md), [ServiceRequest/tddui-pp-pa-servicerequest-besoin-2-example](ServiceRequest-tddui-pp-pa-servicerequest-besoin-2-example.md) and [ServiceRequest/tddui-pp-pa-servicerequest-besoin-3-example](ServiceRequest-tddui-pp-pa-servicerequest-besoin-3-example.md)
+* Utilise ce/t/te Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
+* Référence ce Profil: [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md)
+* Exemples pour ce/t/te Profil: [ServiceRequest/tddui-pp-pa-servicerequest-besoin-1-example](ServiceRequest-tddui-pp-pa-servicerequest-besoin-1-example.md), [ServiceRequest/tddui-pp-pa-servicerequest-besoin-2-example](ServiceRequest-tddui-pp-pa-servicerequest-besoin-2-example.md) and [ServiceRequest/tddui-pp-pa-servicerequest-besoin-3-example](ServiceRequest-tddui-pp-pa-servicerequest-besoin-3-example.md)
 * CapabilityStatements utilisant ce Profil: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-service-request-besoin)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-service-request-besoin)
 
 ### Formal Views of Profile Content
 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-service-reques
   "name" : "TDDUIServiceRequestBesoin",
   "title" : "TDDUI ServiceRequest Besoin",
   "status" : "active",
-  "date" : "2026-01-30T14:32:15+00:00",
+  "date" : "2026-02-09T09:12:46+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -105,7 +105,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-service-reques
   "kind" : "resource",
   "abstract" : false,
   "type" : "ServiceRequest",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/ServiceRequest|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/ServiceRequest",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -143,7 +143,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-service-reques
           {
             "code" : "Extension",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment|2.2.0-ballot"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment"
             ]
           }
         ],
@@ -193,7 +193,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-service-reques
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise|2.2.0-ballot"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise"
             ]
           }
         ],
@@ -210,7 +210,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-service-reques
         "max" : "1",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J285-Besoins_SERAFIN/FHIR/JDV-J285-Besoins-SERAFIN|20241025120000"
+          "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J285-Besoins_SERAFIN/FHIR/JDV-J285-Besoins-SERAFIN"
         },
         "mapping" : [
           {
@@ -252,8 +252,8 @@ Other representations of profile: [CSV](StructureDefinition-tddui-service-reques
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient|2.2.0-ballot",
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins|2.2.0-ballot"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient",
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"
             ]
           }
         ]

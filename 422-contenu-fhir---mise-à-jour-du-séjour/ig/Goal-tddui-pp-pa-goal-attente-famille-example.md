@@ -1,14 +1,14 @@
-# tddui-pp-pa-goal-attente-famille-example - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI PP PA Goal Attente Famille Example - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **tddui-pp-pa-goal-attente-famille-example**
+* **TDDUI PP PA Goal Attente Famille Example**
 
-## Example Goal: tddui-pp-pa-goal-attente-famille-example
+## Example Goal: TDDUI PP PA Goal Attente Famille Example
 
 Profil: [TDDUI Goal Attente](StructureDefinition-tddui-goal-attente.md)
 
-**Lien vers le projet personnalisé**: [CarePlan Projet personnalisé de Mme Jeanne L.](CarePlan-tddui-pp-pa-careplan-example.md)
+**TDDUI CarePlan Projet Perso Ref**: [CarePlan Projet personnalisé de Mme Jeanne L.](CarePlan-tddui-pp-pa-careplan-example.md)
 
 **identifier**: `https://identifiant-medicosocial-attente.esante.gouv.fr`/3480787529/123456789-ATTE-1234
 
@@ -69,7 +69,7 @@ Famille
           "valueCodeableConcept" : {
             "coding" : [
               {
-                "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs",
+                "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator",
                 "code" : "origineAttente"
               }
             ]

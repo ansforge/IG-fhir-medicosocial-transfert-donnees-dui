@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-date-origin | *Version*:2.2.0-ballot |
-| Active as of 2026-01-30 | *Computable Name*:TDDUIEntryDateOrigin |
+| Active as of 2026-02-09 | *Computable Name*:TDDUIEntryDateOrigin |
 
 Extension permettant de véhiculer la date d'entrée dans l'ESSMS de provenance.
 
@@ -19,9 +19,9 @@ Extension permettant de véhiculer la date d'entrée dans l'ESSMS de provenance.
 
 **Utilisations:**
 
-* Utiliser ce Extension: [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md)
+* Utilise ce/t/te Extension: [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-entry-date-origin)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-entry-date-origin)
 
 ### Formal Views of Extension Content
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-entry-date-ori
   "name" : "TDDUIEntryDateOrigin",
   "title" : "Date d'entrée dans l'ESSMS de provenance",
   "status" : "active",
-  "date" : "2026-01-30T14:32:15+00:00",
+  "date" : "2026-02-09T09:12:46+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -88,7 +88,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-entry-date-ori
     }
   ],
   "type" : "Extension",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
     "element" : [

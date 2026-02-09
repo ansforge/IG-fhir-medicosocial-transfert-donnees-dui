@@ -9,18 +9,18 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager | *Version*:2.2.0-ballot |
-| Active as of 2026-01-30 | *Computable Name*:TDDUITaskTransportUsager |
+| Active as of 2026-02-09 | *Computable Name*:TDDUITaskTransportUsager |
 
  
 Profil de la ressource TDDUITaskTransport permettant de représenter le transport de l'usager. 
 
 **Utilisations:**
 
-* Utiliser ce Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
-* Exemples pour ce Profil: [Task/tddui-task-transport-usager-example](Task-tddui-task-transport-usager-example.md)
+* Utilise ce/t/te Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
+* Exemples pour ce/t/te Profil: [Task/tddui-task-transport-usager-example](Task-tddui-task-transport-usager-example.md)
 * CapabilityStatements utilisant ce Profil: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-task-transport-usager)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-task-transport-usager)
 
 ### Formal Views of Profile Content
 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
   "name" : "TDDUITaskTransportUsager",
   "title" : "TDDUI Task Transport Usager",
   "status" : "active",
-  "date" : "2026-01-30T14:32:15+00:00",
+  "date" : "2026-02-09T09:12:46+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -99,7 +99,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
   "kind" : "resource",
   "abstract" : false,
   "type" : "Task",
-  "baseDefinition" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport|2.2.0-ballot",
+  "baseDefinition" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -288,7 +288,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
               "code" : "accompagnement"
             }
           ]
@@ -323,7 +323,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
               "code" : "asepsie"
             }
           ]
@@ -358,7 +358,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
               "code" : "natureTransport"
             }
           ]
@@ -374,7 +374,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J282-TransportsLiesAuProjetIndividuel_SERAFIN/FHIR/JDV-J282-TransportsLiesAuProjetIndividuel-SERAFIN|20241025120000"
+          "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J282-TransportsLiesAuProjetIndividuel_SERAFIN/FHIR/JDV-J282-TransportsLiesAuProjetIndividuel-SERAFIN"
         }
       }
     ]

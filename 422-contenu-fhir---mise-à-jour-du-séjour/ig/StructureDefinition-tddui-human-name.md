@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name | *Version*:2.2.0-ballot |
-| Active as of 2026-01-30 | *Computable Name*:tddui-humanname |
+| Active as of 2026-02-09 | *Computable Name*:tddui-humanname |
 
  
 
@@ -21,9 +21,9 @@
 
 **Utilisations:**
 
-* Utiliser ce Profil de type de données: [TDDUI Patient INS](StructureDefinition-tddui-patient-ins.md), [TDDUI Patient](StructureDefinition-tddui-patient.md) and [TDDUI Practitioner](StructureDefinition-tddui-practitioner.md)
+* Utilise ce/t/te profil de type de données: [TDDUI Patient INS](StructureDefinition-tddui-patient-ins.md), [TDDUI Patient](StructureDefinition-tddui-patient.md), [TDDUI Practitioner](StructureDefinition-tddui-practitioner.md) and [TDDUI RelatedPerson Contact](StructureDefinition-tddui-related-person-contact.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-human-name)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-human-name)
 
 ### Formal Views of Profile Content
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-human-name.csv
   "name" : "tddui-humanname",
   "title" : "TDDUI Human Name DataType",
   "status" : "active",
-  "date" : "2026-01-30T14:32:15+00:00",
+  "date" : "2026-02-09T09:12:46+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -92,7 +92,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-human-name.csv
   "kind" : "complex-type",
   "abstract" : false,
   "type" : "HumanName",
-  "baseDefinition" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-human-name|2.1.0",
+  "baseDefinition" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-human-name",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -101,7 +101,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-human-name.csv
         "path" : "HumanName.prefix",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J245-Civilite-CISIS/FHIR/JDV-J245-Civilite-CISIS|20230331120000"
+          "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J245-Civilite-CISIS/FHIR/JDV-J245-Civilite-CISIS"
         }
       }
     ]

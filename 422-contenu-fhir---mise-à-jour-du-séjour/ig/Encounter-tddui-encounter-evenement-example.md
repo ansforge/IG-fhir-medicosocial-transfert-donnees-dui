@@ -1,24 +1,24 @@
-# tddui-encounter-evenement-example - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Encounter Evenement Example - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **tddui-encounter-evenement-example**
+* **TDDUI Encounter Evenement Example**
 
-## Example Encounter: tddui-encounter-evenement-example
+## Example Encounter: TDDUI Encounter Evenement Example
 
 Profil: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)
 
-> **Ressources utilisées**
+> **TDDUI Ressources Used**
 * TDDUIRessourceType: Matériel spécialisé
 * TDDUIMaterialDetail: Materiel médical
 
-**Rapport de l’évènement**: Observations cliniques : ; Recommandations pour les jours à venir : ; Prochaine visite : 15 avril 2023, 10h30 ; Remarque : Monsieur Dupont a compris les consignes pour la gestion de sa douleur et la mobilisation de sa hanche opérée.
+**TDDUI Event Report**: Observations cliniques : ; Recommandations pour les jours à venir : ; Prochaine visite : 15 avril 2023, 10h30 ; Remarque : Monsieur Dupont a compris les consignes pour la gestion de sa douleur et la mobilisation de sa hanche opérée.
 
-**Commentaire**: Cet évènement a débuté plus tard l’usager était sous la douche à l’heure du début du rendez-vous.
+**TDDUI Comment**: Cet évènement a débuté plus tard l’usager était sous la douche à l’heure du début du rendez-vous.
 
-**Libellé de l'évènement**: Visite à domicile pour soins infirmier.
+**TDDUI Event Label**: Visite à domicile pour soins infirmier.
 
-**Motif de l’évènement**: Suivi post-opératoire suite à intervention chirurgicale de la hanche.
+**TDDUI Event Reason**: Suivi post-opératoire suite à intervention chirurgicale de la hanche.
 
 **identifier**: Visit Number/3480787529/147720425367411-EVN-12548
 

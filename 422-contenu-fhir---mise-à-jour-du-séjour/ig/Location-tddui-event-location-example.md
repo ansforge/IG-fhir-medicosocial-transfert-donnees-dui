@@ -1,10 +1,10 @@
-# tddui-event-location-example - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Event Location Example - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **tddui-event-location-example**
+* **TDDUI Event Location Example**
 
-## Example Location: tddui-event-location-example
+## Example Location: TDDUI Event Location Example
 
 Profil: [FR Core Location Profile](https://hl7.fr/ig/fhir/core/2.1.0/StructureDefinition-fr-core-location.html)
 

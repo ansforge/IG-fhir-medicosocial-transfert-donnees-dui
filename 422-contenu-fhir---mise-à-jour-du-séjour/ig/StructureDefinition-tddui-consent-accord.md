@@ -9,19 +9,19 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord | *Version*:2.2.0-ballot |
-| Active as of 2026-01-30 | *Computable Name*:TDDUIConsentAccord |
+| Active as of 2026-02-09 | *Computable Name*:TDDUIConsentAccord |
 
  
 Profil de la ressource Consent permettant de représenter l'accord de l'usager, de son entourage ou de la structure. 
 
 **Utilisations:**
 
-* Utiliser ce Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
-* Référer à ce Profil: [TDDUI CarePlan Projet Personalise](StructureDefinition-tddui-careplan-projet-personnalise.md)
-* Exemples pour ce Profil: [Consent/tddui-pp-ime-consent-accord-example](Consent-tddui-pp-ime-consent-accord-example.md) and [Consent/tddui-pp-pa-consent-accord-example](Consent-tddui-pp-pa-consent-accord-example.md)
+* Utilise ce/t/te Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
+* Référence ce Profil: [TDDUI CarePlan Projet Personalise](StructureDefinition-tddui-careplan-projet-personnalise.md)
+* Exemples pour ce/t/te Profil: [Consent/tddui-pp-ime-consent-accord-example](Consent-tddui-pp-ime-consent-accord-example.md) and [Consent/tddui-pp-pa-consent-accord-example](Consent-tddui-pp-pa-consent-accord-example.md)
 * CapabilityStatements utilisant ce Profil: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-consent-accord)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-consent-accord)
 
 ### Formal Views of Profile Content
 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-consent-accord
   "name" : "TDDUIConsentAccord",
   "title" : "TDDUI Consent Accord",
   "status" : "active",
-  "date" : "2026-01-30T14:32:15+00:00",
+  "date" : "2026-02-09T09:12:46+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -100,7 +100,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-consent-accord
   "kind" : "resource",
   "abstract" : false,
   "type" : "Consent",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Consent|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Consent",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -169,11 +169,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-consent-accord
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role|2.2.0-ballot",
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner|2.2.0-ballot",
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person|2.1.0",
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient|2.2.0-ballot",
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins|2.2.0-ballot"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role",
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner",
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact",
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient",
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"
             ]
           }
         ],

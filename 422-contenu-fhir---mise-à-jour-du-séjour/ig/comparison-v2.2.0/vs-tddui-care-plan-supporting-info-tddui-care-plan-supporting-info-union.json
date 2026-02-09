@@ -1,0 +1,38 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "384fc759-5200-4240-a376-17af182e891c-194",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/384fc759-5200-4240-a376-17af182e891c-194",
+  "name" : "UnionTDDUICarePlanSupportingInfoAndTDDUICarePlanSupportingInfo",
+  "title" : "Union of TDDUI CarePlan supportingInfo And TDDUI CarePlan supportingInfo",
+  "status" : "active",
+  "date" : "2026-02-09T09:15:49+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-discriminator"]
+    }],
+    "exclude" : [{
+      "concept" : [{
+        "code" : "titreObjectif"
+      },
+      {
+        "code" : "avisUsagerObjectif"
+      },
+      {
+        "code" : "strategieMiseEnOeuvreObjectif"
+      },
+      {
+        "code" : "origineAttente"
+      },
+      {
+        "code" : "commentaireAttente"
+      }]
+    }]
+  }
+}

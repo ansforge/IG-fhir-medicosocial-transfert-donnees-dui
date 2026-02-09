@@ -1,16 +1,16 @@
-# tddui-pp-pa-goal-objectif-1-example - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI PP PA Goal Objectif 1 Example - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **tddui-pp-pa-goal-objectif-1-example**
+* **TDDUI PP PA Goal Objectif 1 Example**
 
-## Example Goal: tddui-pp-pa-goal-objectif-1-example
+## Example Goal: TDDUI PP PA Goal Objectif 1 Example
 
 Profil: [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md)
 
-**Lien vers le projet personnalisé**: [CarePlan Projet personnalisé de Mme Jeanne L.](CarePlan-tddui-pp-pa-careplan-example.md)
+**TDDUI CarePlan Projet Perso Ref**: [CarePlan Projet personnalisé de Mme Jeanne L.](CarePlan-tddui-pp-pa-careplan-example.md)
 
-**Pièce jointe**: [DocumentReference : masterIdentifier = 3480787529/123456789-PPER-bilanObj-1234; status = current](DocumentReference-tddui-pp-pa-documentreference-bilan-objectif-1-example.md)
+**TDDUI Attachment**: [DocumentReference : masterIdentifier = 3480787529/123456789-PPER-bilanObj-1234; status = current](DocumentReference-tddui-pp-pa-documentreference-bilan-objectif-1-example.md)
 
 **identifier**: `https://identifiant-medicosocial-objectif.esante.gouv.fr`/3480787529/123456789-OBJE-1234
 
@@ -82,7 +82,7 @@ Objectif 1
           "valueCodeableConcept" : {
             "coding" : [
               {
-                "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs",
+                "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator",
                 "code" : "titreObjectif"
               }
             ]

@@ -1,15 +1,15 @@
-# Repas - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Meal - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Repas**
+* **TDDUI Meal**
 
-## Extension: Repas 
+## Extension: TDDUI Meal 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-meal | *Version*:2.2.0-ballot |
-| Active as of 2026-01-30 | *Computable Name*:TDDUIMeal |
+| Active as of 2026-02-09 | *Computable Name*:TDDUIMeal |
 
 Repas du professionnel prévu dans le cadre de l'événement.
 
@@ -19,9 +19,9 @@ Repas du professionnel prévu dans le cadre de l'événement.
 
 **Utilisations:**
 
-* Utiliser ce Extension: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)
+* Utilise ce/t/te Extension: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-meal)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-meal)
 
 ### Formal Views of Extension Content
 
@@ -44,9 +44,9 @@ Other representations of profile: [CSV](StructureDefinition-tddui-meal.csv), [Ex
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-meal",
   "version" : "2.2.0-ballot",
   "name" : "TDDUIMeal",
-  "title" : "Repas",
+  "title" : "TDDUI Meal",
   "status" : "active",
-  "date" : "2026-01-30T14:32:15+00:00",
+  "date" : "2026-02-09T09:12:46+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -88,14 +88,14 @@ Other representations of profile: [CSV](StructureDefinition-tddui-meal.csv), [Ex
     }
   ],
   "type" : "Extension",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
       {
         "id" : "Extension",
         "path" : "Extension",
-        "short" : "Repas",
+        "short" : "TDDUI Meal",
         "definition" : "Repas du professionnel prévu dans le cadre de l'événement."
       },
       {

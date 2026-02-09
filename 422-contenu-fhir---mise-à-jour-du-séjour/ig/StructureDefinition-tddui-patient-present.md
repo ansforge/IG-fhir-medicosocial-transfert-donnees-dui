@@ -1,15 +1,15 @@
-# Usager présent - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Patient Present - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Usager présent**
+* **TDDUI Patient Present**
 
-## Extension: Usager présent 
+## Extension: TDDUI Patient Present 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-present | *Version*:2.2.0-ballot |
-| Active as of 2026-01-30 | *Computable Name*:TDDUIPatientPresent |
+| Active as of 2026-02-09 | *Computable Name*:TDDUIPatientPresent |
 
 Evènement nécessitant ou non la présence physique de l’usager.
 
@@ -19,9 +19,9 @@ Evènement nécessitant ou non la présence physique de l’usager.
 
 **Utilisations:**
 
-* Utiliser ce Extension: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)
+* Utilise ce/t/te Extension: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-patient-present)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-patient-present)
 
 ### Formal Views of Extension Content
 
@@ -44,9 +44,9 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient-presen
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-present",
   "version" : "2.2.0-ballot",
   "name" : "TDDUIPatientPresent",
-  "title" : "Usager présent",
+  "title" : "TDDUI Patient Present",
   "status" : "active",
-  "date" : "2026-01-30T14:32:15+00:00",
+  "date" : "2026-02-09T09:12:46+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -88,14 +88,14 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient-presen
     }
   ],
   "type" : "Extension",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
       {
         "id" : "Extension",
         "path" : "Extension",
-        "short" : "Usager présent",
+        "short" : "TDDUI Patient Present",
         "definition" : "Evènement nécessitant ou non la présence physique de l’usager."
       },
       {

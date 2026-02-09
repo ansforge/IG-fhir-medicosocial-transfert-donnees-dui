@@ -1,10 +1,10 @@
-# tddui-task-transport-professionel-example - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Task Transport Professionel Example - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **tddui-task-transport-professionel-example**
+* **TDDUI Task Transport Professionel Example**
 
-## Example Task: tddui-task-transport-professionel-example
+## Example Task: TDDUI Task Transport Professionel Example
 
 Profil: [TDDUI Task Transport Professionnel](StructureDefinition-tddui-task-transport-professionnel.md)
 
@@ -30,9 +30,9 @@ Profil: [TDDUI Task Transport Professionnel](StructureDefinition-tddui-task-tran
 
 > **input****type**: Budget réel pour assurer le transport de la personne physique.**value**: €2,00 (EUR)
 
-> **input****type**: Distance du transport de la personne physique.**value**: Pas daffichage pour {0} (value : 4; unit : kilometers; system : http://unitsofmeasure.org; code : km)
+> **input****type**: Distance du transport de la personne physique.**value**: Pas d'affichage pour Distance (value : 4; unit : kilometers; system : http://unitsofmeasure.org; code : km)
 
-> **input****type**: Durée théorique du transport de la personne physique.**value**: Pas daffichage pour {0} (value : 10; unit : minutes; system : http://unitsofmeasure.org; code : min)
+> **input****type**: Durée théorique du transport de la personne physique.**value**: Pas d'affichage pour Duration (value : 10; unit : minutes; system : http://unitsofmeasure.org; code : min)
 
 
 
@@ -82,7 +82,7 @@ Profil: [TDDUI Task Transport Professionnel](StructureDefinition-tddui-task-tran
       "type" : {
         "coding" : [
           {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
             "code" : "typeMotorisation"
           }
         ]
@@ -101,7 +101,7 @@ Profil: [TDDUI Task Transport Professionnel](StructureDefinition-tddui-task-tran
       "type" : {
         "coding" : [
           {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
             "code" : "budgetPrevisionnel"
           }
         ]
@@ -115,7 +115,7 @@ Profil: [TDDUI Task Transport Professionnel](StructureDefinition-tddui-task-tran
       "type" : {
         "coding" : [
           {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
             "code" : "budgetReel"
           }
         ]
@@ -129,7 +129,7 @@ Profil: [TDDUI Task Transport Professionnel](StructureDefinition-tddui-task-tran
       "type" : {
         "coding" : [
           {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
             "code" : "distance"
           }
         ]
@@ -145,7 +145,7 @@ Profil: [TDDUI Task Transport Professionnel](StructureDefinition-tddui-task-tran
       "type" : {
         "coding" : [
           {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-transport-codesystem",
+            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
             "code" : "dureeTheorique"
           }
         ]

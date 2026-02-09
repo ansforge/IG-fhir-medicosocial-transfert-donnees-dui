@@ -1,10 +1,10 @@
-# tddui-patient-example - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Patient Example - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **tddui-patient-example**
+* **TDDUI Patient Example**
 
-## Example Patient: tddui-patient-example
+## Example Patient: TDDUI Patient Example
 
 Profil: [TDDUI Patient](StructureDefinition-tddui-patient.md)
 

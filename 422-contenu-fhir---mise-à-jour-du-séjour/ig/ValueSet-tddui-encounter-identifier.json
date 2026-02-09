@@ -1,0 +1,42 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "tddui-encounter-identifier",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs tddui-encounter-identifier</b></p><a name=\"tddui-encounter-identifier\"> </a><a name=\"hctddui-encounter-identifier\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"http://hl7.org/fhir/R4/shareablevalueset.html\">Shareable ValueSet</a></p></div><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Inclut tous les codes définis dans <a href=\"CodeSystem-tddui-encounter-identifier.html\"><code>https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier</code></a><span title=\"La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification\"> version &#x1F4E6;2.2.0-ballot</span></li><li>Importe tous les codes contenu dans <a href=\"http://hl7.org/fhir/R4/valueset-identifier-type.html\">IdentifierType</a></li></ul></div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-identifier",
+  "version" : "2.2.0-ballot",
+  "name" : "TDDUIEncounterIdentifier",
+  "title" : "TDDUI Encounter Identifier",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-02-09T09:12:46+00:00",
+  "publisher" : "ANS",
+  "contact" : [{
+    "name" : "ANS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "ValueSet pour la définition des codes d'identifiant de séjour",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier"
+    },
+    {
+      "valueSet" : ["http://hl7.org/fhir/ValueSet/identifier-type"]
+    }]
+  }
+}
