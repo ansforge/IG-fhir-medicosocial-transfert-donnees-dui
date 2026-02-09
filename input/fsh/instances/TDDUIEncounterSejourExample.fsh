@@ -1,7 +1,8 @@
 Instance: tddui-encounter-sejour-example
 InstanceOf: TDDUIEncounterSejour
-Usage: #example
+Title: "TDDUI Encounter Sejour Example"
 Description: "Exemple d'un séjour en ESSMS"
+Usage: #example
 
 // Date d’admission
 * extension[tddui-admission-date].valueDateTime = "2023-04-11"

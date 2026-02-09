@@ -1,7 +1,8 @@
 Instance: tddui-task-transport-professionel-example
 InstanceOf: TDDUITaskTransportProfessionnel
-Usage: #example
+Title: "TDDUI Task Transport Professionel Example"
 Description: "Exemple du transport du professionnel."
+Usage: #example
 
 * identifier.value = "3480787529/147720425367411-TPPro-154674"
 * identifier.system = "https://identifiant-medicosocial-transportprofessionnel.esante.gouv.fr"

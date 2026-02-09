@@ -1,7 +1,8 @@
 Instance: tddui-pp-ime-goal-objectif-1-example
 InstanceOf: TDDUIGoalObjectif
-Usage: #example
+Title: "TDDUI PP IME Goal Objectif 1 Example"
 Description: "Exemple d'un objectif dans le cadre du projet personnalisé en IME."
+Usage: #example
 
 * identifier.value = "3480787529/123456-OBJE-1234"
 * identifier.system = "https://identifiant-medicosocial-objectif.esante.gouv.fr"
@@ -15,4 +16,4 @@ Description: "Exemple d'un objectif dans le cadre du projet personnalisé en IME
 * extension[referenceProjetPerso].valueReference = Reference(tddui-pp-ime-careplan-example)
 
 * note[titreObjectif].text = "Objectif 1"
-* note[titreObjectif].extension[TDDUIDiscriminator].valueCodeableConcept = TDDUIDiscriminatorCS#titreObjectif
+* note[titreObjectif].extension[TDDUIDiscriminator].valueCodeableConcept = TDDUIDiscriminator#titreObjectif

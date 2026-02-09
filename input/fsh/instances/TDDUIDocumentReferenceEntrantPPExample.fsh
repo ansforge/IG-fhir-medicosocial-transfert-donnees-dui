@@ -1,6 +1,8 @@
 Instance: tddui-pp-pa-documentreference-entrant-example
 InstanceOf: TDDUIDocumentReference
+Title: "TDDUI PP PA DocumentReference Entrant Example"
 Description: "Entrant Projet Personnalisé PA au format PDF"
+Usage: #example
 
 * masterIdentifier.value = "3480787529/123456789-PPER-entrant-1234"
 

@@ -1,7 +1,8 @@
 Instance: tddui-task-transport-example
 InstanceOf: TDDUITaskTransport
-Usage: #example
+Title: "TDDUI Task Transport Example"
 Description: "Exemple du transport."
+Usage: #example
 
 * identifier.value = "3480787529/147720425367411-TP-154675"
 

@@ -1,7 +1,8 @@
 Instance: tddui-pp-ime-goal-objectif-2-example
 InstanceOf: TDDUIGoalObjectif
-Usage: #example
+Title: "TDDUI PP IME Goal Objectif 2 Example"
 Description: "Exemple d'un objectif dans le cadre du projet personnalisé en IME."
+Usage: #example
 
 * identifier.value = "3480787529/123456-OBJE-1235"
 * identifier.system = "https://identifiant-medicosocial-objectif.esante.gouv.fr"

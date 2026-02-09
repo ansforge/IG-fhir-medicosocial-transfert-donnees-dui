@@ -1,7 +1,8 @@
 Instance: tddui-encounter-evenement-example
 InstanceOf: TDDUIEncounterEvenement
-Usage: #example
+Title: "TDDUI Encounter Evenement Example"
 Description: "Exemple d'un évènement"
+Usage: #example
 
 * identifier.system = "https://identifiant-medicosocial-evenement.esante.gouv.fr"
 * identifier.value = "3480787529/147720425367411-EVN-12548"

@@ -1,7 +1,7 @@
-CodeSystem: TDDUIEncounterIdentifierCs
-Id: tddui-encounter-identifier-cs
-Title: "TDDUI Encounter FR Core CodeSystem v2-0203"
-Description: "TDDUI Encounter's identifier"
+CodeSystem: TDDUIEncounterIdentifier
+Id: tddui-encounter-identifier
+Title: "TDDUI Encounter Identifier"
+Description: "CodeSystem pour la définition des codes d'identifiant de séjour"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
 
 * ^caseSensitive = true

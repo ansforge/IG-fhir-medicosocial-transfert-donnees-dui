@@ -1,8 +1,8 @@
 Instance: tddui-pp-pa-careplan-example
 InstanceOf: TDDUICarePlanProjetPersonnalise
-Usage: #example
-Title: "tddui-pp-pa-careplan-example"
+Title: "TDDUI PP PA CarePlan Example"
 Description: "Exemple d'un projet personnalisé PA"
+Usage: #example
 
 * identifier.value = "3480787529/123456789-PPER-1234"
 * identifier.system = "https://identifiant-medicosocial-projetpersonnalise.esante.gouv.fr"
@@ -18,4 +18,4 @@ Description: "Exemple d'un projet personnalisé PA"
 * subject = Reference(tddui-pp-pa-patient-example-pp)
 
 * supportingInfo[accordStructure] = Reference(tddui-pp-pa-consent-accord-example)
-* supportingInfo[accordStructure].extension[TDDUIDiscriminator].valueCodeableConcept = TDDUIDiscriminatorCS#accordStructure
+* supportingInfo[accordStructure].extension[TDDUIDiscriminator].valueCodeableConcept = TDDUIDiscriminator#accordStructure

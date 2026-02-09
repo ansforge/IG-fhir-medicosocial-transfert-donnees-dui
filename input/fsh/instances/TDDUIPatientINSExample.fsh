@@ -1,7 +1,8 @@
 Instance: tddui-patient-ins-example
 InstanceOf: TDDUIPatientINS
-Usage: #example
+Title: "TDDUI Patient INS Example"
 Description: "Exemple de la ressource TDDUIPatientINS"
+Usage: #example
 
 * extension[identityReliability].extension[identityStatus].valueCoding = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445#VALI
 

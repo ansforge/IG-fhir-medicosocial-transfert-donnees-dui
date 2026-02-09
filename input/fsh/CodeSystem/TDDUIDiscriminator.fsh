@@ -1,6 +1,6 @@
-CodeSystem: TDDUIDiscriminatorCS
-Id: tddui-discriminator-cs
-Title: "TDDUI Discriminator CodeSystem"
+CodeSystem: TDDUIDiscriminator
+Id: tddui-discriminator
+Title: "TDDUI Discriminator"
 Description: "CodeSystem définissant les codes discriminants."
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
 * ^caseSensitive = true

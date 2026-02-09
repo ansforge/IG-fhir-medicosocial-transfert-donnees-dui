@@ -1,6 +1,6 @@
-CodeSystem: InputTDDUITaskMoyenRessourceCodeSystem
-Id: input-tddui-task-moyen-ressource-codesystem
-Title: "InputTDDUITaskMoyenRessourceCodeSystem"
+CodeSystem: TDDUITaskInputMoyenRessource
+Id: tddui-task-input-moyen-ressource
+Title: "TDDUI Task Input Moyen Ressource"
 Description: "CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les moyens et ressources du projet personnalisé."
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
 * ^caseSensitive = true

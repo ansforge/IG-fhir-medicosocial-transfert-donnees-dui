@@ -37,14 +37,14 @@ Description: "Profil de la ressource CarePlan représentant le projet personnali
     
 * supportingInfo[accordUsager] only Reference(TDDUIConsentAccord)
 * supportingInfo[accordUsager].extension[TDDUIDiscriminator] 1..1
-* supportingInfo[accordUsager].extension[TDDUIDiscriminator].valueCodeableConcept from TDDUICarePlanSupportingInfoVS (required)
-* supportingInfo[accordUsager].extension[TDDUIDiscriminator].valueCodeableConcept = TDDUIDiscriminatorCS#accordUsager
+* supportingInfo[accordUsager].extension[TDDUIDiscriminator].valueCodeableConcept from TDDUICarePlanSupportingInfo (required)
+* supportingInfo[accordUsager].extension[TDDUIDiscriminator].valueCodeableConcept = TDDUIDiscriminator#accordUsager
 * supportingInfo[accordUsager] ^short = "Référence à l'accord de l'usager et/ou de son entourage."
 
 * supportingInfo[accordStructure] only Reference(TDDUIConsentAccord)
 * supportingInfo[accordStructure].extension[TDDUIDiscriminator] 1..1
-* supportingInfo[accordStructure].extension[TDDUIDiscriminator].valueCodeableConcept from TDDUICarePlanSupportingInfoVS (required)
-* supportingInfo[accordStructure].extension[TDDUIDiscriminator].valueCodeableConcept = TDDUIDiscriminatorCS#accordStructure
+* supportingInfo[accordStructure].extension[TDDUIDiscriminator].valueCodeableConcept from TDDUICarePlanSupportingInfo (required)
+* supportingInfo[accordStructure].extension[TDDUIDiscriminator].valueCodeableConcept = TDDUIDiscriminator#accordStructure
 * supportingInfo[accordStructure] ^short = "Référence à l'accord de la structure."
 
 * subject only Reference(TDDUIPatient or TDDUIPatientINS)

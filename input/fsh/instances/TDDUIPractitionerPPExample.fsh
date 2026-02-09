@@ -1,7 +1,8 @@
 Instance: tddui-pp-pa-practitioner-ide-example
 InstanceOf: TDDUIPractitioner
-Usage: #example
+Title: "TDDUI PP PA Practitioner IDE Example"
 Description: "Exemple d'un IDE"
+Usage: #example
 
 * identifier[idNatPs].value = "10101234567"
 
