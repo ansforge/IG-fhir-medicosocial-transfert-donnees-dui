@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-bilan | *Version*:2.2.0-ballot |
-| Active as of 2026-02-06 | *Computable Name*:TDDUITaskBilan |
+| Active as of 2026-02-09 | *Computable Name*:TDDUITaskBilan |
 
  
 Profil de la ressource Task permettant de représenter le bilan du projet personnalisé. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-bilan.csv
   "name" : "TDDUITaskBilan",
   "title" : "TDDUI Task Bilan",
   "status" : "active",
-  "date" : "2026-02-06T15:48:36+00:00",
+  "date" : "2026-02-09T09:51:45+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
