@@ -4,6 +4,9 @@ hide empty methods
 
 class Usager #LightPink
 
+class EntiteJuridique #LightGray
+class OrganismeResponsable #LightYellow
+
 class AssuranceMaladieComplementaire #LightYellow {
     numeroContrat : Identifiant [0..1]
     ouvrantDroit : Identifiant [0..1]
@@ -58,14 +61,13 @@ class Decision #LightYellow {
 }
 
 class DroitPrestation #LightYellow {
-    idDroitPrestation : Identifiant [1..1]
-    contactOrganisme : Contact [0..*]
     numeroAllocataire : Identifiant [0..1]
     typeDroitPrestation : Code [1..1]
     natureDroit : Code [1..1]
     dateOuverture : Date [1..1]
     dateEcheance : Date [1..1]
     existencePAG : Indicateur [1..1]
+    motifFinPAG : Code [0..1]
     creton : Indicateur [0..1]
     taux : Mesure [0..1] 
     typeCompensation : Code [0..1]
@@ -90,15 +92,19 @@ class Quantification #LightYellow {
     quantificationPeriodicite : Code [0..1]
 }
 
-Usager "1" -- "*"  AssuranceMaladieComplementaire
-Usager "1" - "1" AssuranceMaladieObligatoire
-Decision "*" - "1" Usager
+Decision "*" -- "1" Usager
 DemandeOrientation "*" - "1" Usager
-Decision "*" -- "0..1" DemandeOrientation
 
-Decision "1" - "0..1" DroitPrestation
+DemandeOrientation "0..1" -- "*" Decision
+
+Decision "1" -- "0..1" DroitPrestation
+EntiteJuridique <|-- OrganismeResponsable
+DroitPrestation "1" - "*" OrganismeResponsable
+
 DroitPrestation "1" -- "0..1" DetailPrestation
 DetailPrestation "1" -- "*" PriseCharge
 PriseCharge "1" -- "0..1" Quantification
 
+Usager "1" -- "0..1"  AssuranceMaladieComplementaire
+Usager "1" - "1" AssuranceMaladieObligatoire
 @enduml

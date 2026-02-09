@@ -597,20 +597,12 @@ Ce champ apparaît (et devient obligatoire) uniquement si le code "9999 - Autre"
 
 ##### Classe DroitPrestation
 
-Ensemble des droits et prestations prévus par le Code de l'Action Sociale et des Familles, le Code de l'Education, le Code de la Sécurité Sociale et le Code de la Route auxquels la décision de la CDAPH donne accès.
+Ensemble des dispositifs prévus par le Code de l'Action Sociale et des Familles, le Code de l'Education, le Code de la Sécurité Sociale et le Code de la Route auxquels la décision de la CDAPH peut donner accès. 
 
 <table style="width:100%">
   <tr>
     <th>Nom</th>
     <th>Description</th>
-  </tr>
-  <tr>
-    <td>idDroitPrestation : [1..1] Identifiant</td>
-    <td>Identifiant du droit ou de la prestation.</td>
-  </tr>
-  <tr>
-    <td>contactOrganisme : [0..1] ContactPersonneMorale</td>
-    <td>Contact de l’organisme responsable du droit ou de la prestation.</td>
   </tr>
   <tr>
     <td>numeroAllocataire : [0..1] Identifiant</td>
@@ -619,12 +611,12 @@ Ensemble des droits et prestations prévus par le Code de l'Action Sociale et de
   <tr>
     <td>typeDroitPrestation : [0..1] Code</td>
     <td>Type de droit et prestation caractérisant la décision d'orientation.<br>
-    Nomenclature(s) associée(s) : à définir</td>
+    Nomenclature(s) associée(s) : en cours d'analyse NOS</td>
   </tr>
   <tr>
     <td>natureDroit : [0..1] Code</td>
     <td>Nature du droit s’appliquant à tous les droits ou prestations ouverts par la CDAPH. Elle permet de gérer, le cas échéant, le lien entre la date d’ouverture du droit et la date de fin d’un droit précédent. Elle est déterminée par l’équipe pluridisciplinaire ou par la CDAPH.<br>
-    Nomenclature(s) associée(s) : à définir</td>
+    Nomenclature(s) associée(s) : en cours d'analyse NOS</td>
   </tr>
   <tr>
     <td>dateOuverture : [0..1] Date</td>
@@ -644,6 +636,11 @@ Ensemble des droits et prestations prévus par le Code de l'Action Sociale et de
     </td>
   </tr>
   <tr>
+    <td>motifFinPAG : [0..1] Code</td>
+    <td>Le motif est obligatoire si existencePAG passe de "1" à "0". Le motif n'est transmis que lorsque le statut du PAG passe à "Terminé".
+    </td>
+  </tr>
+  <tr>
     <td>creton : [0..1] Indicateur</td>
     <td>Amendement Creton. Il s’agit d’un dispositif législatif permettant le maintien temporaire de jeunes adultes de plus de 20 ans en établissement pour enfants dans l’attente d’une place dans un établissement pour adultes.<br>
     Obligatoire pour les décisions orientations ESSMS enfant, non prévu pour les autres orientations.<br>
@@ -658,7 +655,7 @@ Ensemble des droits et prestations prévus par le Code de l'Action Sociale et de
   <tr>
     <td>typeCompensation : [0..1] Code</td>
     <td>Type de compensation dans le cas d’une aide sociale.<br>
-    Nomenclature(s) associée(s) : à définir
+    Nomenclature(s) associée(s) : en cours d'analyse NOS
     </td>
   </tr>
   <tr>
@@ -666,6 +663,12 @@ Ensemble des droits et prestations prévus par le Code de l'Action Sociale et de
     <td>Commentaire relatif au droit ou à la prestation.</td>
   </tr>
 </table>
+
+##### Classe OrganismeResponsable
+
+** Classe spécialisée, hérite de la classe EntiteJuridique définie dans le MOS et profilée pour ce volet.
+
+Cette classe représente l'organisme responsable du droit ou de la prestation.
 
 ##### Classe DetailPrestation
 
