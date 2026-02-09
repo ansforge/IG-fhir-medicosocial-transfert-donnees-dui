@@ -266,6 +266,11 @@ Adresse de télécommunication à laquelle l’usager peut être contactée (té
     <td>Code spécifiant le canal ou la manière dont s'établit la communication (téléphone, e-mail, URL, etc.).<br>
     Jeu(x) de valeur associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J225-CanalCommunication-ROR/FHIR/JDV-J225-CanalCommunication-ROR">JDV-J225-CanalCommunication-ROR</a></td>
   </tr>
+   <tr>
+    <td>typeMessagerie : [0..1] Code</td>
+    <td>Type de messagerie électronique rassemblant des acteurs (personne physique, personne morale ou système) identifiés et enregistrés selon des règles qui garantissent leur légitimité à l'utiliser.<br>
+    Jeu(x) de valeur associé(s) : JDV en cours de d'analyse NOS</td>
+  </tr>
   <tr>
     <td>adresseTelecom : [1..1] Texte</td>
     <td>Valeur de l'adresse de télécommunication dans le format induit par le canal de communication, par exemple un numéro de téléphone, une adresse de courrier électronique, une adresse URL, etc.</td>
