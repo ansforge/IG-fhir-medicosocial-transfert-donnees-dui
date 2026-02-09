@@ -266,32 +266,36 @@ Ne pas transmettre si typeDecision = '1' (Attribution) et DroitPrestation.nature
 
 ##### Classe DroitPrestation
 
-Ensemble des droits et prestations prévus par le Code de l'Action Sociale et des Familles, le Code de l'Education, le Code de la Sécurité Sociale et le Code de la Route auxquels la décision de la CDAPH donne accès.
+Ensemble des dispositifs prévus par le Code de l'Action Sociale et des Familles, le Code de l'Education, le Code de la Sécurité Sociale et le Code de la Route auxquels la décision de la CDAPH peut donner accès.
 
-* Nom: idDroitPrestation : [1..1] Identifiant
-  * Description: Identifiant du droit ou de la prestation.
-* Nom: contactOrganisme : [0..1] ContactPersonneMorale
-  * Description: Contact de l’organisme responsable du droit ou de la prestation.
 * Nom: numeroAllocataire : [0..1] Identifiant
   * Description: Numéro d’allocataire pour le droit ou la prestation.
 * Nom: typeDroitPrestation : [0..1] Code
-  * Description: Type de droit et prestation caractérisant la décision d'orientation.Nomenclature(s) associée(s) : à définir
+  * Description: Type de droit et prestation caractérisant la décision d'orientation.Nomenclature(s) associée(s) : en cours d'analyse NOS
 * Nom: natureDroit : [0..1] Code
-  * Description: Nature du droit s’appliquant à tous les droits ou prestations ouverts par la CDAPH. Elle permet de gérer, le cas échéant, le lien entre la date d’ouverture du droit et la date de fin d’un droit précédent. Elle est déterminée par l’équipe pluridisciplinaire ou par la CDAPH.Nomenclature(s) associée(s) : à définir
+  * Description: Nature du droit s’appliquant à tous les droits ou prestations ouverts par la CDAPH. Elle permet de gérer, le cas échéant, le lien entre la date d’ouverture du droit et la date de fin d’un droit précédent. Elle est déterminée par l’équipe pluridisciplinaire ou par la CDAPH.Nomenclature(s) associée(s) : en cours d'analyse NOS
 * Nom: dateOuverture : [0..1] Date
   * Description: La date d'ouverture de droit est la date à laquelle le droit devient effectif.Sauf disposition spécifique, la date d’ouverture des droits est la date de la décision de la CDAPH sur le fondement du principe de non-rétroactivité des décisions.
 * Nom: dateEcheance : [0..1] Date
   * Description: La date d'échéance de droit est la date à laquelle le droit ou la prestation ouvert prend fin. L'équipe pluridisciplinaire peut moduler les dates selon les besoins de la personne, tout en restant dans le minimum et dans le maximum prévu par la loi pour chacune des prestations.
 * Nom: existencePAG : [0..1] Indicateur
   * Description: Indicateur de l'existence d'un Plan d’Accompagnement Global (PAG).1 = si la décision est associée à un PAG au statut "élaboré" ou "validé" ;0 = pour tous les autres cas (la décision n'est pas associée à un PAG ou est associée à un PAG ayant un statut différent de "élaboré" ou "validé").
+* Nom: motifFinPAG : [0..1] Code
+  * Description: Le motif est obligatoire si existencePAG passe de "1" à "0". Le motif n'est transmis que lorsque le statut du PAG passe à "Terminé".
 * Nom: creton : [0..1] Indicateur
   * Description: Amendement Creton. Il s’agit d’un dispositif législatif permettant le maintien temporaire de jeunes adultes de plus de 20 ans en établissement pour enfants dans l’attente d’une place dans un établissement pour adultes.Obligatoire pour les décisions orientations ESSMS enfant, non prévu pour les autres orientations.0 = l'usager ne bénéficie pas de l'amendement Creton ;1 = l'usager bénéficie de l'amendement Creton.
 * Nom: taux : [0..1] Mesure
   * Description: Taux dans le cas d’une aide sociale.
 * Nom: typeCompensation : [0..1] Code
-  * Description: Type de compensation dans le cas d’une aide sociale.Nomenclature(s) associée(s) : à définir
+  * Description: Type de compensation dans le cas d’une aide sociale.Nomenclature(s) associée(s) : en cours d'analyse NOS
 * Nom: commentaire : [0..1] Texte
   * Description: Commentaire relatif au droit ou à la prestation.
+
+##### Classe OrganismeResponsable
+
+** Classe spécialisée, hérite de la classe EntiteJuridique définie dans le MOS et profilée pour ce volet.
+
+Cette classe représente l'organisme responsable du droit ou de la prestation.
 
 ##### Classe DetailPrestation
 

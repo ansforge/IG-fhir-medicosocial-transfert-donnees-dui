@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/Questionnaire/tddui-questionnaire-serafin | *Version*:2.2.0-ballot |
-| Active as of 2026-02-06 | *Computable Name*: |
+| Active as of 2026-02-09 | *Computable Name*: |
 
  
 Grille d'évaluation SERAFIN 
@@ -26,7 +26,7 @@ Grille d'évaluation SERAFIN
   "version" : "2.2.0-ballot",
   "title" : "Évaluation SERAFIN",
   "status" : "active",
-  "date" : "2026-02-06T15:11:45+00:00",
+  "date" : "2026-02-09T15:38:00+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
