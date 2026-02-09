@@ -23,7 +23,7 @@ Description: "Profil de la ressource Encounter permettant de regrouper les infor
 
 * identifier[AdministrativeFileNumber].type from TDDUIEncounterIdentifier (required)
 * identifier[AdministrativeFileNumber] ^short = "Numéro de dossier administratif du séjour"
-* identifier[AdministrativeFileNumber].type = TDDUIEncounterIdentifierCs#NUMDOSS "Numéro de dossier administratif du séjour"
+* identifier[AdministrativeFileNumber].type = TDDUIEncounterIdentifier#NUMDOSS "Numéro de dossier administratif du séjour"
 * identifier[AdministrativeFileNumber].value 1..1
 * identifier[AdministrativeFileNumber].value ^example[0].label = "Numéro de dossier administratif du séjour"
 * identifier[AdministrativeFileNumber].value ^example[0].valueString = "21564655"
