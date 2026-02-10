@@ -9,12 +9,12 @@ Context: QuestionnaireResponse
 
 * extension contains
     TDDUIResponsible 0..1 and
-    TDDUIStatusAuthor 0..1
+    TDDUIPorteur 0..1
 
 * extension[TDDUIResponsible].value[x] only Reference
 * extension[TDDUIResponsible].valueReference only Reference(TDDUIPractitioner)
 * extension[TDDUIResponsible] ^short = "Responsable de l'évaluation."
 
-* extension[TDDUIStatusAuthor].value[x] only Reference
-* extension[TDDUIStatusAuthor].valueReference only Reference(TDDUIPractitioner)
-* extension[TDDUIStatusAuthor] ^short = "Auteur du statut de l'évaluation."
+* extension[TDDUIPorteur].value[x] only Reference
+* extension[TDDUIPorteur].valueReference only Reference(TDDUIOrganization)
+* extension[TDDUIPorteur] ^short = "Personne morale porteuse de l'évaluation de l'usager."

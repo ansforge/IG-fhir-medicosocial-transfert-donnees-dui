@@ -2,7 +2,7 @@ Extension: TDDUIStatusAuthor
 Id: tddui-status-author
 Title: "TDDUI Status Author"
 Description: "Extension permettant de représenter la profession du professionnel."
-Context: Goal.lifecycleStatus, CarePlan.status, Task.status
+Context: Goal.lifecycleStatus, CarePlan.status, Task.status, QuestionnaireResponse.status
 
 * value[x] only Reference
 * valueReference ^short = "Auteur du statut."

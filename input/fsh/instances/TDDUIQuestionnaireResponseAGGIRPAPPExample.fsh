@@ -12,6 +12,8 @@ Usage: #example
 * status = #completed
 * subject = Reference(tddui-pp-pa-patient-example-pp)
 
+* extension[TDDUIQRParticipant].extension[TDDUIResponsible].valueReference = Reference(tddui-pp-pa-practitioner-ide-example)
+
 * item.linkId = "resultat-eval"
 * item.text = "Résultat évaluation"
 * item.answer.valueCoding = $terminologie-cisis#MED-341 "GIR-3"
