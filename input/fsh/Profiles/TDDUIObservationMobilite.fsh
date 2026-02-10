@@ -8,13 +8,13 @@ Description: "Profil de la ressource Observation permettant de représenter la m
 * subject only Reference(TDDUIPatient or TDDUIPatientINS)
 
 * code from TDDUIObservationType (required)
-* code = #MOBILITE "Mobilité"
+* code = TDDUIObservationType#MOBILITE "Mobilité"
 
 * value[x] only CodeableConcept
-* valueCodeableConcept from $JDV-TypeMotorisation-CISIS (required)
+* valueCodeableConcept from $JDV-ModeDeTransport-CISIS (required)
 
 * component.code from TDDUIObservationType (required)
-* component.code = #MOBILITE "Mobilité"
+* component.code = TDDUIObservationType#MOBILITE "Mobilité"
 
 * component.value[x] only string
 

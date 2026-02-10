@@ -7,6 +7,18 @@ Ce mapping représente les données fonctionnelles trouvant leur équivalence da
 <div>{%include mapping_TDDUIPatient.svg%}</div>
 <div>{%include mapping_TDDUIPatientINS.svg%}</div>
 
+#### Mapping mobilité
+
+<div>{%include mapping_TDDUIObservationMobilite.svg%}</div>
+
+#### Mapping CauseDeces
+
+<div>{%include mapping_TDDUIObservationCauseDeces.svg%}</div>
+
+#### Mapping PeriodeScolaire
+
+<div>{%include mapping_TDDUIObservationPeriodeScolaire.svg%}</div>
+
 ### Mapping Contact
 <div>{%include mapping_TDDUIRelatedPersonContact.svg%}</div>
 

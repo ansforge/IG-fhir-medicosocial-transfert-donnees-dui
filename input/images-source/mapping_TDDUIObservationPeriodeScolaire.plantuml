@@ -1,0 +1,20 @@
+@startuml
+
+map "<&layers> effective[x]:effectivePeriod" as effectivexeffectivePeriod #DarkGray {
+    dateDebutPeriodeScolaire => start
+    dateFinPeriodeScolaire => end
+}
+
+map "**PeriodeScolaire : TDDUIObservationPeriodeScolaire**" as PeriodeScolaire #80b1d3 {
+    idPeriodeScolaire => identifier
+    commentaireAnneeScolaire => note
+    niveauScolaireReel => <&layers> component:niveauScolaireReel
+    niveauScolaireSuivi => <&layers> component:niveauScolaireSuivi
+    typeEnseignementSpecialise => <&layers> component:typeEnseignementSpecialise
+    diplome => <&layers> component:diplome
+    volumeScolarisation => <&layers> component:volumeScolarisation
+    <&layers> effective[x]:effectivePeriod *-> effectivexeffectivePeriod
+}
+
+
+@enduml

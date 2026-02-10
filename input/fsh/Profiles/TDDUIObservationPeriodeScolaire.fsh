@@ -13,8 +13,19 @@ Description: "Profil de la ressource Observation permettant de représenter la p
 * subject 1..1
 * subject only Reference(TDDUIPatient or TDDUIPatientINS)
 
+* performer ^slicing.discriminator.type = #type
+* performer ^slicing.discriminator.path = "resolve()"
+* performer ^slicing.rules = #open
+
+* performer contains 
+    referentScolaire 1..1 and
+    ecole 0..1
+
+* performer[referentScolaire] only Reference(TDDUIRelatedPersonContact)
+* performer[ecole] only Reference(TDDUIOrganization)
+
 * code from TDDUIObservationType (required)
-* code = #PERIODESCOL "Période scolaire"
+* code = TDDUIObservationType#PERIODESCOL "Période scolaire"
 
 * component.code from TDDUIObservationPeriodeScolaire (required)
 
@@ -29,17 +40,17 @@ Description: "Profil de la ressource Observation permettant de représenter la p
     diplome 0..* and
     volumeScolarisation 0..1
 
-* component[niveauScolaireReel].code = #niveauScolaireReel "Niveau scolaire réel" // JDV en cours de création côté NOS
+* component[niveauScolaireReel].code = TDDUIObservationPeriodeScolaire#niveauScolaireReel "Niveau scolaire réel" // JDV en cours de création côté NOS
 
-* component[niveauScolaireSuivi].code = #niveauScolaireSuivi "Niveau scolaire suivi" // JDV en cours de création côté NOS
+* component[niveauScolaireSuivi].code = TDDUIObservationPeriodeScolaire#niveauScolaireSuivi "Niveau scolaire suivi" // JDV en cours de création côté NOS
 
-* component[typeEnseignementSpecialise].code = #typeEnseignementSpecialise "Type d'enseignement spécialisé"
+* component[typeEnseignementSpecialise].code = TDDUIObservationPeriodeScolaire#typeEnseignementSpecialise "Type enseignement spécialisé"
 * component[typeEnseignementSpecialise].valueCodeableConcept from $JDV-J386-Type-Enseignement-Specialise-MS (required)
 
-* component[diplome].code = #diplome "Diplôme"
+* component[diplome].code = TDDUIObservationPeriodeScolaire#diplome "Diplôme"
 * component[diplome].valueCodeableConcept from $JDV-J81-TypeDiplome-RASS (required)
 
-* component[volumeScolarisation].code = #volumeScolarisation "Volume de scolarisation"
+* component[volumeScolarisation].code = TDDUIObservationPeriodeScolaire#volumeScolarisation "Volume de scolarisation"
 * component[volumeScolarisation].value[x] only Quantity
 
 Mapping:  ConceptMetier_TDDUIObservationPeriodeScolaire
@@ -49,3 +60,12 @@ Id:       specmetier-to-TDDUIObservationPeriodeScolaire
 Title:    "Modèle de contenu DUI"
 * -> "PeriodeScolaire"
 
+* identifier -> "idPeriodeScolaire"
+* effectivePeriod.start -> "dateDebutPeriodeScolaire"
+* effectivePeriod.end -> "dateFinPeriodeScolaire"
+* component[niveauScolaireReel] -> "niveauScolaireReel"
+* component[niveauScolaireSuivi] -> "niveauScolaireSuivi"
+* component[typeEnseignementSpecialise] -> "typeEnseignementSpecialise"
+* component[diplome] -> "diplome"
+* component[volumeScolarisation] -> "volumeScolarisation"
+* note -> "commentaireAnneeScolaire"

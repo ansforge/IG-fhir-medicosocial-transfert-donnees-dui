@@ -1,0 +1,12 @@
+@startuml
+
+map "component" as component #DarkGray {
+    causeDeces => <&layers> value[x]:valueCodeableConcept
+}
+
+map "**CauseDeces : TDDUIObservationCauseDeces**" as CauseDeces #fb8072 {
+    component *-> component
+}
+
+
+@enduml

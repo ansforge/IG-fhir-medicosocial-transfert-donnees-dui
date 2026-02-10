@@ -8,10 +8,10 @@ Description: "Profil de la ressource Observation permettant de représenter les 
 * subject only Reference(TDDUIPatient or TDDUIPatientINS)
 
 * code from TDDUIObservationType (required)
-* code = #CAUSEDECES "Cause de décès"
+* code = TDDUIObservationType#CAUSEDECES "Cause de décès"
 
 * component.code from TDDUIObservationType (required)
-* component.code = #CAUSEDECES "Cause de décès"
+* component.code = TDDUIObservationType#CAUSEDECES "Cause de décès"
 
 * component.valueCodeableConcept from TDDUICausesDeces (required)
 
@@ -21,4 +21,4 @@ Target: "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.h
 Id:       specmetier-to-TDDUIObservationCauseDeces
 Title:    "Modèle de contenu DUI"
 * -> "CauseDeces"
-* component.valueCodeableConcept -> "causeDeces"
+* component.valueCodeableConcept -> "causeMortalite"
