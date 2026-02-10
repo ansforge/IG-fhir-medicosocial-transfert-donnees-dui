@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-task-input-prestation | *Version*:2.2.0-ballot |
-| Active as of 2026-02-06 | *Computable Name*:TDDUITaskInputPrestation |
+| Active as of 2026-02-10 | *Computable Name*:TDDUITaskInputPrestation |
 
  
 ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les prestations du projet personnalisé. 
@@ -54,7 +54,7 @@ ValueSet pour la définition des éléments spécifiques des input dans la resso
   "title" : "TDDUI Task Input Prestation",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-06T10:49:33+00:00",
+  "date" : "2026-02-10T10:00:25+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

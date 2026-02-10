@@ -10,7 +10,7 @@
   <name value="TDDUI"/>
   <title value="Médicosocial - Transfert de données DUI"/>
   <status value="active"/>
-  <date value="2026-02-06T10:49:33+00:00"/>
+  <date value="2026-02-10T10:00:25+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -1017,6 +1017,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/tddui-observation-cause-deces-example"/>
+      </reference>
+      <name value="TDDUI Observation CauseDeces Example"/>
+      <description value="Exemple de la ressource TDDUIObservationCauseDeces"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-deces"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -1058,6 +1069,28 @@
       <name value="TDDUI Observation Type"/>
       <description value="CodeSystem for the Observation types"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/tddui-observation-mobilite-example"/>
+      </reference>
+      <name value="TDDUI Obsrvation Mobilite Example"/>
+      <description value="Exemple de la ressource TDDUIObservationMobilite"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/tddui-observation-periodescolaire-example"/>
+      </reference>
+      <name value="TDDUI Obsrvation PeriodeScolaire Example"/>
+      <description value="Exemple de la ressource TDDUIObservationPeriodeScolaire"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-periode-scolaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

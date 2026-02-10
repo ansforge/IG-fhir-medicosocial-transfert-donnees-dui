@@ -36,6 +36,14 @@
 <code>https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-identifier</code>        </a>
       </li>
       <li>
+        <a href="StructureDefinition-tddui-observation-periode-scolaire.html">
+<code>https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-periode-scolaire</code>        </a>
+      </li>
+      <li>
+        <a href="StructureDefinition-tddui-observation-periode-scolaire.html">
+<code>https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-type</code>        </a>
+      </li>
+      <li>
         <a href="Task-tddui-pp-pa-task-action-3-psy-example.html">
 <code>https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action</code>        </a>
       </li>
@@ -72,6 +80,10 @@
 <code>https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM</code>        </a>
       </li>
       <li>
+        <a href="Observation-tddui-observation-periodescolaire-example.html">
+<code>https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome</code>        </a>
+      </li>
+      <li>
         <a href="RelatedPerson-tddui-related-person-contact-example.html">
 <code>https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode</code>        </a>
       </li>
@@ -95,6 +107,10 @@
         <a href="Task-tddui-task-transport-usager-example.html">
 <code>https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis</code>        </a>
       </li>
+      <li>
+        <a href="Observation-tddui-observation-periodescolaire-example.html">
+<code>https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r408-type-enseignement-specialise</code>        </a>
+      </li>
     </ul>
     <h2>Copyright Fragment</h2>
     <p style="color: maroon">
@@ -117,7 +133,8 @@
 
               <li>
                 <a href="https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-terminologie-cim-10.html">Classification internationale des maladies et des problèmes de santé connexes - 10ème révision - Version française à usage PMSI (Programme Médicalisé des Systèmes d'Information)</a>
-:                 <a href="Questionnaire-tddui-questionnaire-situation-ssiad.html">Questionnaire/tddui-questionnaire-situation-ssiad</a>
+:                 <a href="Observation-tddui-observation-cause-deces-example.html">Observation/tddui-observation-cause-deces-example</a>
+,                 <a href="Questionnaire-tddui-questionnaire-situation-ssiad.html">Questionnaire/tddui-questionnaire-situation-ssiad</a>
 ,                 <a href="ValueSet-tddui-causes-deces.html">TDDUICausesDeces</a>
  and                 <a href="StructureDefinition-tddui-observation-cause-deces.html">TDDUIObservationCauseDeces</a>
               </li>
@@ -327,7 +344,7 @@ This material derives from the HL7 Terminology (THO). THO is copyright &copy;198
     <ul>
       <li>
 
-          IG &copy; 2023+ ANS.  Package ans.fhir.fr.tddui#2.2.0-ballot based on FHIR 4.0.1. Generated 2026-02-06 
+          IG &copy; 2023+ ANS.  Package ans.fhir.fr.tddui#2.2.0-ballot based on FHIR 4.0.1. Generated 2026-02-10 
           
            
             Liens : Table des matières |
@@ -445,7 +462,7 @@ Importe tous les codes contenu dans           <a href="https://smt.esante.gouv.f
 
           IG &copy; 2023+           <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>
 .  Package ans.fhir.fr.tddui#2.2.0-ballot based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
-. Generated           <span title="Fri, Feb 6, 2026 10:49+0000">2026-02-06</span>
+. Generated           <span title="Tue, Feb 10, 2026 10:00+0000">2026-02-10</span>
 
                     <br/>
 
@@ -477,7 +494,7 @@ Importe tous les codes contenu dans           <a href="https://smt.esante.gouv.f
 
           IG &copy; 2023+           <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>
 .  Package ans.fhir.fr.tddui#2.2.0-ballot based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
-. Generated           <span title="Fri, Feb 6, 2026 10:49+0000">2026-02-06</span>
+. Generated           <span title="Tue, Feb 10, 2026 10:00+0000">2026-02-10</span>
 
                     <br/>
 
@@ -509,7 +526,7 @@ Importe tous les codes contenu dans           <a href="https://smt.esante.gouv.f
 
           IG &copy; 2023+           <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>
 .  Package ans.fhir.fr.tddui#2.2.0-ballot based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
-. Generated           <span title="Fri, Feb 6, 2026 10:49+0000">2026-02-06</span>
+. Generated           <span title="Tue, Feb 10, 2026 10:00+0000">2026-02-10</span>
 
                     <br/>
 
@@ -778,7 +795,7 @@ Jdv J384 Role Membre Famille Ms <img src="external.png" alt="."/>          </a>
   "          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">experimental</a>
 " : false,
   "          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>
-" : "2026-02-06T10:49:33+00:00",
+" : "2026-02-10T10:00:25+00:00",
   "          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a>
 " : "ANS",
   "          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>

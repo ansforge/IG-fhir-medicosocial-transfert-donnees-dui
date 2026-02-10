@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-periode-scolaire | *Version*:2.2.0-ballot |
-| Active as of 2026-02-06 | *Computable Name*:TDDUIObservationPeriodeScolaire |
+| Active as of 2026-02-10 | *Computable Name*:TDDUIObservationPeriodeScolaire |
 
  
 Profil de la ressource Observation permettant de représenter la période scolaire de l'usager. 
 
 **Utilisations:**
 
-* Ce Profil n'est utilisé par aucun autre profil dans ce guide d'implémentation
+* Exemples pour ce/t/te Profil: [Observation/tddui-observation-periodescolaire-example](Observation-tddui-observation-periodescolaire-example.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-observation-periode-scolaire)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-pe
   "name" : "TDDUIObservationPeriodeScolaire",
   "title" : "TDDUI Obervation Periode Scolaire",
   "status" : "active",
-  "date" : "2026-02-06T10:49:33+00:00",
+  "date" : "2026-02-10T10:00:25+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -126,7 +126,13 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-pe
         "path" : "Observation.identifier",
         "short" : "Identifiant de la période scolaire",
         "min" : 1,
-        "max" : "1"
+        "max" : "1",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIObservationPeriodeScolaire",
+            "map" : "idPeriodeScolaire"
+          }
+        ]
       },
       {
         "id" : "Observation.identifier.system",
@@ -149,6 +155,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-pe
         "patternCodeableConcept" : {
           "coding" : [
             {
+              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-type",
               "code" : "PERIODESCOL",
               "display" : "Période scolaire"
             }
@@ -170,6 +177,106 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-pe
               "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient",
               "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"
             ]
+          }
+        ]
+      },
+      {
+        "id" : "Observation.effective[x]",
+        "path" : "Observation.effective[x]",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "type",
+              "path" : "$this"
+            }
+          ],
+          "ordered" : false,
+          "rules" : "open"
+        }
+      },
+      {
+        "id" : "Observation.effective[x]:effectivePeriod",
+        "path" : "Observation.effective[x]",
+        "sliceName" : "effectivePeriod",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Period"
+          }
+        ]
+      },
+      {
+        "id" : "Observation.effective[x]:effectivePeriod.start",
+        "path" : "Observation.effective[x].start",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIObservationPeriodeScolaire",
+            "map" : "dateDebutPeriodeScolaire"
+          }
+        ]
+      },
+      {
+        "id" : "Observation.effective[x]:effectivePeriod.end",
+        "path" : "Observation.effective[x].end",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIObservationPeriodeScolaire",
+            "map" : "dateFinPeriodeScolaire"
+          }
+        ]
+      },
+      {
+        "id" : "Observation.performer",
+        "path" : "Observation.performer",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "type",
+              "path" : "resolve()"
+            }
+          ],
+          "rules" : "open"
+        },
+        "min" : 1
+      },
+      {
+        "id" : "Observation.performer:referentScolaire",
+        "path" : "Observation.performer",
+        "sliceName" : "referentScolaire",
+        "min" : 1,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "Observation.performer:ecole",
+        "path" : "Observation.performer",
+        "sliceName" : "ecole",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "Observation.note",
+        "path" : "Observation.note",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIObservationPeriodeScolaire",
+            "map" : "commentaireAnneeScolaire"
           }
         ]
       },
@@ -199,7 +306,13 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-pe
         "path" : "Observation.component",
         "sliceName" : "niveauScolaireReel",
         "min" : 0,
-        "max" : "1"
+        "max" : "1",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIObservationPeriodeScolaire",
+            "map" : "niveauScolaireReel"
+          }
+        ]
       },
       {
         "id" : "Observation.component:niveauScolaireReel.code",
@@ -207,6 +320,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-pe
         "patternCodeableConcept" : {
           "coding" : [
             {
+              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-periode-scolaire",
               "code" : "niveauScolaireReel",
               "display" : "Niveau scolaire réel"
             }
@@ -218,7 +332,13 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-pe
         "path" : "Observation.component",
         "sliceName" : "niveauScolaireSuivi",
         "min" : 0,
-        "max" : "1"
+        "max" : "1",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIObservationPeriodeScolaire",
+            "map" : "niveauScolaireSuivi"
+          }
+        ]
       },
       {
         "id" : "Observation.component:niveauScolaireSuivi.code",
@@ -226,6 +346,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-pe
         "patternCodeableConcept" : {
           "coding" : [
             {
+              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-periode-scolaire",
               "code" : "niveauScolaireSuivi",
               "display" : "Niveau scolaire suivi"
             }
@@ -237,7 +358,13 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-pe
         "path" : "Observation.component",
         "sliceName" : "typeEnseignementSpecialise",
         "min" : 0,
-        "max" : "*"
+        "max" : "*",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIObservationPeriodeScolaire",
+            "map" : "typeEnseignementSpecialise"
+          }
+        ]
       },
       {
         "id" : "Observation.component:typeEnseignementSpecialise.code",
@@ -245,8 +372,9 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-pe
         "patternCodeableConcept" : {
           "coding" : [
             {
+              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-periode-scolaire",
               "code" : "typeEnseignementSpecialise",
-              "display" : "Type d'enseignement spécialisé"
+              "display" : "Type enseignement spécialisé"
             }
           ]
         }
@@ -286,7 +414,13 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-pe
         "path" : "Observation.component",
         "sliceName" : "diplome",
         "min" : 0,
-        "max" : "*"
+        "max" : "*",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIObservationPeriodeScolaire",
+            "map" : "diplome"
+          }
+        ]
       },
       {
         "id" : "Observation.component:diplome.code",
@@ -294,6 +428,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-pe
         "patternCodeableConcept" : {
           "coding" : [
             {
+              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-periode-scolaire",
               "code" : "diplome",
               "display" : "Diplôme"
             }
@@ -335,7 +470,13 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-pe
         "path" : "Observation.component",
         "sliceName" : "volumeScolarisation",
         "min" : 0,
-        "max" : "1"
+        "max" : "1",
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIObservationPeriodeScolaire",
+            "map" : "volumeScolarisation"
+          }
+        ]
       },
       {
         "id" : "Observation.component:volumeScolarisation.code",
@@ -343,6 +484,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-pe
         "patternCodeableConcept" : {
           "coding" : [
             {
+              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-periode-scolaire",
               "code" : "volumeScolarisation",
               "display" : "Volume de scolarisation"
             }

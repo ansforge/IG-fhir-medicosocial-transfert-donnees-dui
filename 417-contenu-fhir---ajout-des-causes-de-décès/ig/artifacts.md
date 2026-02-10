@@ -163,6 +163,9 @@ These are example instances that show what data produced and consumed by systems
 | [TDDUI Encounter Evenement Example](Encounter-tddui-encounter-evenement-example.md) | Exemple d'un évènement |
 | [TDDUI Encounter Sejour Example](Encounter-tddui-encounter-sejour-example.md) | Exemple d'un séjour en ESSMS |
 | [TDDUI Event Location Example](Location-tddui-event-location-example.md) | Lieu de l'évènement |
+| [TDDUI Observation CauseDeces Example](Observation-tddui-observation-cause-deces-example.md) | Exemple de la ressource TDDUIObservationCauseDeces |
+| [TDDUI Obsrvation Mobilite Example](Observation-tddui-observation-mobilite-example.md) | Exemple de la ressource TDDUIObservationMobilite |
+| [TDDUI Obsrvation PeriodeScolaire Example](Observation-tddui-observation-periodescolaire-example.md) | Exemple de la ressource TDDUIObservationPeriodeScolaire |
 | [TDDUI Organization Example](Organization-tddui-organization-example.md) | ESSMS - Les Chênes Verts |
 | [TDDUI PP IME Bundle Example](Bundle-tddui-pp-ime-bundle-example.md) | Exemple de bundle conforme au profil TDDUIBundle contenant le projet personnalisé en IME |
 | [TDDUI PP IME CarePlan Example](CarePlan-tddui-pp-ime-careplan-example.md) | Exemple du projet personnalisé d'un enfant en IME |

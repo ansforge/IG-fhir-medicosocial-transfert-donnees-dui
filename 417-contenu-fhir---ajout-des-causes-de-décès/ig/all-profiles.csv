@@ -5430,6 +5430,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Type of observation (code / type)","Describes what was observed. Sometimes this is called the observation ""name"".","*All* code-value and, if present, component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
+    <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-type""/>
     <code value=""CAUSEDECES""/>
     <display value=""Cause de décès""/>
   </coding>
@@ -5545,6 +5546,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "tddui-observation-cause-deces","Observation.component.code","Observation.component.code","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Type of component observation (code / type)","Describes what was observed. Sometimes this is called the observation ""code"".","*All* code-value and  component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
+    <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-type""/>
     <code value=""CAUSEDECES""/>
     <display value=""Cause de décès""/>
   </coding>
@@ -5623,6 +5625,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Type of observation (code / type)","Describes what was observed. Sometimes this is called the observation ""name"".","*All* code-value and, if present, component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
+    <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-type""/>
     <code value=""MOBILITE""/>
     <display value=""Mobilité""/>
   </coding>
@@ -5649,7 +5652,7 @@ Period {[]} {[]}Timing {[]} {[]}instant {[]} {[]}","Clinically relevant time/tim
 ","Who is responsible for the observation","Who was responsible for asserting the observed value as ""true"".","","May give a degree of confidence in the observation and also indicates where follow-up questions should be directed.","","","","","","","",,,,,"",,,,"Observation.performer",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-observation-mobilite","Observation.value[x]","Observation.value[x]","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
-","Actual result","The information determined as a result of making the observation, if the information has a simple value.","An observation may have; 1)  a single value here, 2)  both a value and a set of related or component values,  or 3)  only a set of related or component values. If a value is present, the datatype for this element should be determined by Observation.code.  A CodeableConcept with just a text would be used instead of a string if the field was usually coded, or if the type associated with the Observation.code defines a coded value.  For additional guidance, see the [Notes section](http://hl7.org/fhir/R4/observation.html#notes) below.","An observation exists to have a value, though it might not if it is in error, or if it represents a group of observations.","","","","","","","",,"required","","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-motorisation-cisis","",,,,"Observation.value[x]",0,1,"obs-7
+","Actual result","The information determined as a result of making the observation, if the information has a simple value.","An observation may have; 1)  a single value here, 2)  both a value and a set of related or component values,  or 3)  only a set of related or component values. If a value is present, the datatype for this element should be determined by Observation.code.  A CodeableConcept with just a text would be used instead of a string if the field was usually coded, or if the type associated with the Observation.code defines a coded value.  For additional guidance, see the [Notes section](http://hl7.org/fhir/R4/observation.html#notes) below.","An observation exists to have a value, though it might not if it is in error, or if it represents a group of observations.","","","","","","","",,"required","","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis","",,,,"Observation.value[x]",0,1,"obs-7
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-observation-mobilite","Observation.dataAbsentReason","Observation.dataAbsentReason","","","",0,1,"","","","CodeableConcept {[]} {[]}
@@ -5738,6 +5741,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "tddui-observation-mobilite","Observation.component.code","Observation.component.code","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Type of component observation (code / type)","Describes what was observed. Sometimes this is called the observation ""code"".","*All* code-value and  component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
+    <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-type""/>
     <code value=""MOBILITE""/>
     <display value=""Mobilité""/>
   </coding>
@@ -5837,6 +5841,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Type of observation (code / type)","Describes what was observed. Sometimes this is called the observation ""name"".","*All* code-value and, if present, component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
+    <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-type""/>
     <code value=""PERIODESCOL""/>
     <display value=""Période scolaire""/>
   </coding>
@@ -5854,12 +5859,39 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "tddui-observation-periode-scolaire","Observation.effective[x]","Observation.effective[x]","","Occurrence
 ","",0,1,"","","Y","dateTime {[]} {[]}
-Period {[]} {[]}Timing {[]} {[]}instant {[]} {[]}","Clinically relevant time/time-period for observation","The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the ""physiologically relevant time"". This is usually either the time of the procedure or of specimen collection, but very often the source of the date/time is not known, only the date/time itself.","At least a date should be present unless this observation is a historical report.  For recording imprecise or ""fuzzy"" times (For example, a blood glucose measurement taken ""after breakfast"") use the [Timing](http://hl7.org/fhir/R4/datatypes.html#timing) datatype which allow the measurement to be tied to regular life events.","Knowing when an observation was deemed true is important to its relevance as well as determining trends.","","","","","","","",,,,,"",,,,"Observation.effective[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+Period {[]} {[]}Timing {[]} {[]}instant {[]} {[]}","Clinically relevant time/time-period for observation","The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the ""physiologically relevant time"". This is usually either the time of the procedure or of specimen collection, but very often the source of the date/time is not known, only the date/time itself.","At least a date should be present unless this observation is a historical report.  For recording imprecise or ""fuzzy"" times (For example, a blood glucose measurement taken ""after breakfast"") use the [Timing](http://hl7.org/fhir/R4/datatypes.html#timing) datatype which allow the measurement to be tied to regular life events.","Knowing when an observation was deemed true is important to its relevance as well as determining trends.","","","","","","","",,,,,"","type:$this}
+","",,"open","Observation.effective[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"tddui-observation-periode-scolaire","Observation.effective[x]:effectivePeriod","Observation.effective[x]","effectivePeriod","Occurrence
+","",0,1,"","","Y","Period {[]} {[]}
+","Clinically relevant time/time-period for observation","The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the ""physiologically relevant time"". This is usually either the time of the procedure or of specimen collection, but very often the source of the date/time is not known, only the date/time itself.","At least a date should be present unless this observation is a historical report.  For recording imprecise or ""fuzzy"" times (For example, a blood glucose measurement taken ""after breakfast"") use the [Timing](http://hl7.org/fhir/R4/datatypes.html#timing) datatype which allow the measurement to be tied to regular life events.","Knowing when an observation was deemed true is important to its relevance as well as determining trends.","","","","","","","",,,,,"",,,,"Observation.effective[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"tddui-observation-periode-scolaire","Observation.effective[x]:effectivePeriod.id","Observation.effective[x].id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"tddui-observation-periode-scolaire","Observation.effective[x]:effectivePeriod.extension","Observation.effective[x].extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"tddui-observation-periode-scolaire","Observation.effective[x]:effectivePeriod.start","Observation.effective[x].start","","","",0,1,"","","Y","dateTime {[]} {[]}
+","Starting time with inclusive boundary","The start of the period. The boundary is inclusive.","If the low element is missing, the meaning is that the low boundary is not known.","","","","","","","","",,,,,"",,,,"Period.start",0,1,"per-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"tddui-observation-periode-scolaire","Observation.effective[x]:effectivePeriod.end","Observation.effective[x].end","","","",0,1,"","","Y","dateTime {[]} {[]}
+","End time with inclusive boundary, if not ongoing","The end of the period. If the end of the period is missing, it means no end was known or planned at the time the instance was created. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time.","The high value includes any matching date/time. i.e. 2012-02-03T10:00:00 is in a period that has an end value of 2012-02-03.","","","If the end of the period is missing, it means that the period is ongoing","","","","","",,,,,"",,,,"Period.end",0,1,"per-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-observation-periode-scolaire","Observation.issued","Observation.issued","","","",0,1,"","","Y","instant {[]} {[]}
 ","Date/Time this version was made available","The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified.","For Observations that don’t require review and verification, it may be the same as the [`lastUpdated` ](http://hl7.org/fhir/R4/resource-definitions.html#Meta.lastUpdated) time of the resource itself.  For Observations that do require review and verification for certain updates, it might not be the same as the `lastUpdated` time of the resource itself due to a non-clinically significant update that doesn’t require the new version to be reviewed and verified again.","","","","","","","","",,,,,"",,,,"Observation.issued",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"tddui-observation-periode-scolaire","Observation.performer","Observation.performer","","","",0,*,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner|4.0.1], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1], CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization|4.0.1], CanonicalType[http://hl7.org/fhir/StructureDefinition/CareTeam|4.0.1], CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient|4.0.1], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson|4.0.1]]}
+"tddui-observation-periode-scolaire","Observation.performer","Observation.performer","","","",1,*,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner|4.0.1], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1], CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization|4.0.1], CanonicalType[http://hl7.org/fhir/StructureDefinition/CareTeam|4.0.1], CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient|4.0.1], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson|4.0.1]]}
+","Who is responsible for the observation","Who was responsible for asserting the observed value as ""true"".","","May give a degree of confidence in the observation and also indicates where follow-up questions should be directed.","","","","","","","",,,,,"","type:resolve()}
+","",,"open","Observation.performer",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"tddui-observation-periode-scolaire","Observation.performer:referentScolaire","Observation.performer","referentScolaire","","",1,1,"","","Y","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact]]}
+","Who is responsible for the observation","Who was responsible for asserting the observed value as ""true"".","","May give a degree of confidence in the observation and also indicates where follow-up questions should be directed.","","","","","","","",,,,,"",,,,"Observation.performer",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"tddui-observation-periode-scolaire","Observation.performer:ecole","Observation.performer","ecole","","",0,1,"","","Y","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization]]}
 ","Who is responsible for the observation","Who was responsible for asserting the observed value as ""true"".","","May give a degree of confidence in the observation and also indicates where follow-up questions should be directed.","","","","","","","",,,,,"",,,,"Observation.performer",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-observation-periode-scolaire","Observation.value[x]","Observation.value[x]","","","",0,1,"","","Y","Quantity {[]} {[]}
@@ -5987,6 +6019,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "tddui-observation-periode-scolaire","Observation.component:niveauScolaireReel.code","Observation.component.code","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Type of component observation (code / type)","Describes what was observed. Sometimes this is called the observation ""code"".","*All* code-value and  component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
+    <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-periode-scolaire""/>
     <code value=""niveauScolaireReel""/>
     <display value=""Niveau scolaire réel""/>
   </coding>
@@ -6026,6 +6059,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "tddui-observation-periode-scolaire","Observation.component:niveauScolaireSuivi.code","Observation.component.code","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Type of component observation (code / type)","Describes what was observed. Sometimes this is called the observation ""code"".","*All* code-value and  component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
+    <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-periode-scolaire""/>
     <code value=""niveauScolaireSuivi""/>
     <display value=""Niveau scolaire suivi""/>
   </coding>
@@ -6065,8 +6099,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "tddui-observation-periode-scolaire","Observation.component:typeEnseignementSpecialise.code","Observation.component.code","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Type of component observation (code / type)","Describes what was observed. Sometimes this is called the observation ""code"".","*All* code-value and  component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
+    <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-periode-scolaire""/>
     <code value=""typeEnseignementSpecialise""/>
-    <display value=""Type d'enseignement spécialisé""/>
+    <display value=""Type enseignement spécialisé""/>
   </coding>
 </valueCodeableConcept>","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-observation-periode-scolaire","",,,,"Observation.component.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -6108,6 +6143,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "tddui-observation-periode-scolaire","Observation.component:diplome.code","Observation.component.code","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Type of component observation (code / type)","Describes what was observed. Sometimes this is called the observation ""code"".","*All* code-value and  component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
+    <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-periode-scolaire""/>
     <code value=""diplome""/>
     <display value=""Diplôme""/>
   </coding>
@@ -6151,6 +6187,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "tddui-observation-periode-scolaire","Observation.component:volumeScolarisation.code","Observation.component.code","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Type of component observation (code / type)","Describes what was observed. Sometimes this is called the observation ""code"".","*All* code-value and  component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
+    <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-periode-scolaire""/>
     <code value=""volumeScolarisation""/>
     <display value=""Volume de scolarisation""/>
   </coding>

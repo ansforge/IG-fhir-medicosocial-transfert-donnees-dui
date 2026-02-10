@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui | *Version*:2.2.0-ballot |
-| Active as of 2026-02-06 | *Computable Name*:TDDUI |
+| Active as of 2026-02-10 | *Computable Name*:TDDUI |
 
  **Brief description of this Implementation Guide**
  The Digital User File (DUI) centralizes all information concerning the person being cared for in social and medico-social facilities and services. The aim of this implementation guide is to define the specifications for DUI data transfer. 
@@ -144,7 +144,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2026-02-06T10:49:33+00:00",
+  "date" : "2026-02-10T10:00:25+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -1587,6 +1587,20 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/tddui-observation-cause-deces-example"
+        },
+        "name" : "TDDUI Observation CauseDeces Example",
+        "description" : "Exemple de la ressource TDDUIObservationCauseDeces",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-deces"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "ValueSet"
           }
         ],
@@ -1638,6 +1652,34 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "name" : "TDDUI Observation Type",
         "description" : "CodeSystem for the Observation types",
         "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/tddui-observation-mobilite-example"
+        },
+        "name" : "TDDUI Obsrvation Mobilite Example",
+        "description" : "Exemple de la ressource TDDUIObservationMobilite",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/tddui-observation-periodescolaire-example"
+        },
+        "name" : "TDDUI Obsrvation PeriodeScolaire Example",
+        "description" : "Exemple de la ressource TDDUIObservationPeriodeScolaire",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-periode-scolaire"
       },
       {
         "extension" : [

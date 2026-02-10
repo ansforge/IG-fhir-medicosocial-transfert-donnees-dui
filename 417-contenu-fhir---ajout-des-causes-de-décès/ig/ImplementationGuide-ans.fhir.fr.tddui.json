@@ -10,7 +10,7 @@
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2026-02-06T10:49:33+00:00",
+  "date" : "2026-02-10T10:00:25+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -1235,6 +1235,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/tddui-observation-cause-deces-example"
+      },
+      "name" : "TDDUI Observation CauseDeces Example",
+      "description" : "Exemple de la ressource TDDUIObservationCauseDeces",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-deces"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -1279,6 +1291,30 @@
       "name" : "TDDUI Observation Type",
       "description" : "CodeSystem for the Observation types",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/tddui-observation-mobilite-example"
+      },
+      "name" : "TDDUI Obsrvation Mobilite Example",
+      "description" : "Exemple de la ressource TDDUIObservationMobilite",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/tddui-observation-periodescolaire-example"
+      },
+      "name" : "TDDUI Obsrvation PeriodeScolaire Example",
+      "description" : "Exemple de la ressource TDDUIObservationPeriodeScolaire",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-periode-scolaire"
     },
     {
       "extension" : [{

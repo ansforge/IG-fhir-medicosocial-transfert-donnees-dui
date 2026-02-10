@@ -52,6 +52,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Type of observation (code / type)","Describes what was observed. Sometimes this is called the observation ""name"".","*All* code-value and, if present, component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
+    <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-type""/>
     <code value=""CAUSEDECES""/>
     <display value=""Cause de décès""/>
   </coding>
@@ -167,6 +168,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Observation.component.code","Observation.component.code","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Type of component observation (code / type)","Describes what was observed. Sometimes this is called the observation ""code"".","*All* code-value and  component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
+    <system value=""https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-type""/>
     <code value=""CAUSEDECES""/>
     <display value=""Cause de décès""/>
   </coding>
@@ -178,7 +180,7 @@ CodeableConcept {[]} {[]}string {[]} {[]}boolean {[]} {[]}integer {[]} {[]}Range
 ","363714003 |Interprets| < 441742003 |Evaluation finding|","OBX.2, OBX.5, OBX.6","value","363714003 |Interprets|"
 "Observation.component.value[x]:valueCodeableConcept","Observation.component.value[x]","valueCodeableConcept","","",0,1,"","","Y","CodeableConcept {[]} {[]}
 ","Actual component result","The information determined as a result of making the observation, if the information has a simple value.","Used when observation has a set of component observations. An observation may have both a value (e.g. an  Apgar score)  and component observations (the observations from which the Apgar score was derived). If a value is present, the datatype for this element should be determined by Observation.code. A CodeableConcept with just a text would be used instead of a string if the field was usually coded, or if the type associated with the Observation.code defines a coded value.  For additional guidance, see the [Notes section](http://hl7.org/fhir/R4/observation.html#notes) below.","An observation exists to have a value, though it might not if it is in error, or if it represents a group of observations.","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-causes-deces","",,,,"Observation.component.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","causeDeces","363714003 |Interprets| < 441742003 |Evaluation finding|","OBX.2, OBX.5, OBX.6","value","363714003 |Interprets|"
+","causeMortalite","363714003 |Interprets| < 441742003 |Evaluation finding|","OBX.2, OBX.5, OBX.6","value","363714003 |Interprets|"
 "Observation.component.dataAbsentReason","Observation.component.dataAbsentReason","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Why the component result is missing","Provides a reason why the expected value in the element Observation.component.value[x] is missing.","""Null"" or exceptional values can be represented two ways in FHIR Observations.  One way is to simply include them in the value set and represent the exceptions in the value.  For example, measurement values for a serology test could be  ""detected"", ""not detected"", ""inconclusive"", or  ""test not done"". 
 

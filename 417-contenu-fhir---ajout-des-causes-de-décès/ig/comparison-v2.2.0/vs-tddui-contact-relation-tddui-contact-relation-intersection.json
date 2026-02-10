@@ -1,0 +1,38 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "b3e4a511-fd49-4a2a-ae90-110c14f94865-195",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/b3e4a511-fd49-4a2a-ae90-110c14f94865-195",
+  "name" : "IntersectionTDDUIContactRelationAndTDDUIContactRelation",
+  "title" : "Intersection of TDDUI Contact Relation And TDDUI Contact Relation",
+  "status" : "active",
+  "date" : "2026-02-10T10:05:14+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["https://mos.esante.gouv.fr/NOS/JDV_J11-RelationPatient-CISIS/FHIR/JDV-J11-RelationPatient-CISIS"]
+    },
+    {
+      "valueSet" : ["https://mos.esante.gouv.fr/NOS/JDV_J14-QualiteRepresentantLegal-CISIS/FHIR/JDV-J14-QualiteRepresentantLegal-CISIS"]
+    }],
+    "exclude" : [{
+      "concept" : [{
+        "code" : "TUTEUR",
+        "display" : "Tuteur"
+      },
+      {
+        "code" : "CURATEUR",
+        "display" : "Curateur"
+      },
+      {
+        "code" : "MSVG",
+        "display" : "Mandataire de sauvegarde"
+      }]
+    }]
+  }
+}
