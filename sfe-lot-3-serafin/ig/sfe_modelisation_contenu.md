@@ -291,20 +291,22 @@ Ensemble des dispositifs prévus par le Code de l'Action Sociale et des Familles
 * Nom: commentaire : [0..1] Texte
   * Description: Commentaire relatif au droit ou à la prestation.
 
-##### Classe OrganismeResponsable
-
-** Classe spécialisée, hérite de la classe EntiteJuridique définie dans le MOS et profilée pour ce volet.
-
-Cette classe représente l'organisme responsable du droit ou de la prestation.
-
 ##### Classe DetailPrestation
 
-Détails de la prestation.
+Détails de la prestation pour préciser l'orientation.
 
 * Nom: temporaliteAccueil : [0..1] Code
-  * Description: Fréquence d'accueil lors d'une prise en charge en ESSMS.Nomenclature(s) associée(s) :[JDV_J30-TemporaliteAccueil-ROR](https://mos.esante.gouv.fr/NOS/JDV_J30-TemporaliteAccueil-ROR/FHIR/JDV-J30-TemporaliteAccueil-ROR)
+  * Description: Fréquence d'accueil lors d'une prise en charge en ESSMS.La temporalité d’accueil est transmise pour tous les droits pour lesquels elle est obligatoire (pour les types de droit et prestation suivants):* Orientation ESMS Enfants
+* Orientation ESMS Adultes
+* Orientation en Unité d'enseignement
+* Orientation vers une Scolarisation en milieu ordinaire à temps partagé (UE et établissement scolaire)
+* Orientation vers une Unité d'enseignement et une scolarisation en ULIS à temps partagé
+* Orientation vers une unité d’enseignement et une scolarisation en enseignement adapté à temps partagé
+Jeu(x) de valeur(s) associé(s) :[JDV_J30-TemporaliteAccueil-ROR](https://mos.esante.gouv.fr/NOS/JDV_J30-TemporaliteAccueil-ROR/FHIR/JDV-J30-TemporaliteAccueil-ROR)
 * Nom: precisionOrientation : [0..1] Code
-  * Description: Précision de l'orientation à renseigner en fonction du type de droit.Nomenclature(s) associée(s) : à définir
+  * Description: Précision de l'orientation à renseigner en fonction du type de droit.Jeu(x) de valeur(s) associé(s) : en cours analyse NOS
+* Nom: precisionOrientationLocale : [0..1] Texte
+  * Description: Précision de l'orientation. Texte libre lorsqu'il n'existe pas de nomenclature harmonisée.
 * Nom: frequence : [0..1] Mesure
   * Description: Fréquence de versement dans le cas d’une aide sociale.
 * Nom: qualification : [0..1] Code
@@ -314,6 +316,12 @@ Détails de la prestation.
 
 * Nom: montantAttribue : [0..1] Montant
   * Description: Montant attribué dans le cas d’une aide sociale.
+
+##### Classe StructureAccueil
+
+** Classe spécialisée, hérite de la classe EntiteJuridique définie dans le MOS et profilée pour ce volet.
+
+Cette classe représente le ou les ESSMS désigné(s) par la CDAPH comme étant susceptible d'accueillir l'individu en situation de handicap.
 
 ##### Classe PriseCharge
 
