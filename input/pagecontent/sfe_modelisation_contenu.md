@@ -1079,7 +1079,7 @@ La classe EntiteJuridique est définie dans le MOS et est profilée pour ce vole
     <td>Date d’entrée dans le séjour.</td>
   </tr>
   <tr>
-    <td>provenance : [0..1] Code</td>
+    <td>modaliteEntree : [0..1] Code</td>
     <td>Mode d'entrée du séjour.<br>
     Jeu(x) de valeur(s) associé(s) : jdv-modalite-entree-cisis avec l'OID 1.2.250.1.213.1.1.5.73 publié sur <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a></td>
   </tr>
@@ -1096,7 +1096,7 @@ La classe EntiteJuridique est définie dans le MOS et est profilée pour ce vole
     <td>Date de sortie du séjour.</td>
   </tr>
    <tr>
-    <td>motifSortie : [0..1] Code</td>
+    <td>modaliteSortie : [0..1] Code</td>
     <td>Mode de sortie/destination du séjour.<br>
     Jeu(x) de valeur(s) associé(s) : jdv-modalite-sortie-cisis avec l'OID 1.2.250.1.213.1.1.5.74 publié sur <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a></td>
   </tr>
