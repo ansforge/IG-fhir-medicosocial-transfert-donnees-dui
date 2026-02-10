@@ -64,7 +64,6 @@ Description: "Profil de la ressource Encounter permettant de regrouper les infor
 * hospitalization.extension contains
     TDDUIEntryDateOrigin named TDDUIEntryDateOrigin 0..1
     
-* hospitalization.origin 1..1
 * hospitalization.origin only Reference(TDDUIOrganization)
 * hospitalization.admitSource from jdv-modalite-entree-cisis (required)
 * hospitalization.dischargeDisposition from jdv-modalite-sortie-cisis (required)
@@ -79,7 +78,7 @@ Title:    "Modèle de contenu DUI"
 * identifier[idStay] -> "idSejour"
 * identifier[AdministrativeFileNumber] -> "numeroDossierAdministratifSejour"
 * subject -> "Usager"
-* serviceProvider -> "EntiteJuridique"
+* serviceProvider -> "ESSMSAccueil"
 * extension[TDDUI-plannedStartDate-r5] -> "dateEntreePrevisionnelle"
 * extension[TDDUI-plannedEndDate-r5] -> "dateSortiePrevisionnelle"
 * extension[TDDUIAdmissionDate] -> "dateAdmission"

@@ -10,7 +10,8 @@ object "**TDDUIPatient/TDDUIPatientINS**" as TDDUIPatient #fdb462 {
 }
 
 object "**TDDUIOrganization**" as TDDUIOrganization #bebada {
-    ESSMS
+    ESSMSAccueil
+    ESSMSProvenance
 }
 
 map "**Sejour : TDDUIEncounterSejour**" as Sejour #back:AliceBlue;header:LightSkyBlue {
@@ -23,7 +24,6 @@ map "**Sejour : TDDUIEncounterSejour**" as Sejour #back:AliceBlue;header:LightSk
     commentaire => <&plus> TDDUIComment
     idSejour => <&layers> identifier:idStay
     numeroDossierAdministratifSejour => <&layers> identifier:AdministrativeFileNumber
-    ESSMSProvenance => hospitalization.origin
     numeroDossierESSMSProvenance => hospitalization.preAdmissionIdentifier
     modaliteAccueil => serviceType
     provenance => hospitalization.admitSource
@@ -33,6 +33,6 @@ map "**Sejour : TDDUIEncounterSejour**" as Sejour #back:AliceBlue;header:LightSk
 }
 
 Sejour -u-> TDDUIPatient : subject
-Sejour -d-> TDDUIOrganization : serviceProvider
+Sejour -d-> TDDUIOrganization : serviceProvider\n hospitalization.origin
 
 @enduml
