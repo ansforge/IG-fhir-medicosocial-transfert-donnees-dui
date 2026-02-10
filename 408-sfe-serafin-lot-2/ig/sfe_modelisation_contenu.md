@@ -486,7 +486,7 @@ La classe EntiteJuridique est définie dans le MOS et est profilée pour ce vole
   * Description: Date d’entrée prévisionnelle dans le séjour.
 * Nom: dateEntree : [0..1] DateHeure
   * Description: Date d’entrée dans le séjour.
-* Nom: provenance : [0..1] Code
+* Nom: modaliteEntree : [0..1] Code
   * Description: Mode d'entrée du séjour.Jeu(x) de valeur(s) associé(s) : jdv-modalite-entree-cisis avec l'OID 1.2.250.1.213.1.1.5.73 publié sur[annexe-vocabulaire-et-jeux-de-valeurs](https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs)
 * Nom: libelleModeEntree : [0..1] Texte
   * Description: Libellé du mode d’entée du séjour.
@@ -494,7 +494,7 @@ La classe EntiteJuridique est définie dans le MOS et est profilée pour ce vole
   * Description: Date de sortie prévisionnelle du séjour.
 * Nom: dateSortie : [0..1] DateHeure
   * Description: Date de sortie du séjour.
-* Nom: motifSortie : [0..1] Code
+* Nom: modaliteSortie : [0..1] Code
   * Description: Mode de sortie/destination du séjour.Jeu(x) de valeur(s) associé(s) : jdv-modalite-sortie-cisis avec l'OID 1.2.250.1.213.1.1.5.74 publié sur[annexe-vocabulaire-et-jeux-de-valeurs](https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs)
 * Nom: libelleModeSortie : [0..1] Texte
   * Description: Libellé du mode de sortie du séjour.
