@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "384fc759-5200-4240-a376-17af182e891c-92",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/384fc759-5200-4240-a376-17af182e891c-92",
+  "id" : "d55a3a53-c2d6-4471-a929-f22a6a751a92-92",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/d55a3a53-c2d6-4471-a929-f22a6a751a92-92",
   "name" : "UnionTDDUIEncounterSejourAndTDDUIEncounterSejour",
   "title" : "Union of TDDUI Encounter Sejour And TDDUI Encounter Sejour",
   "status" : "active",
-  "date" : "2026-02-09T09:15:49+00:00",
+  "date" : "2026-02-10T10:29:06+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -927,7 +927,7 @@
       "binding" : {
         "strength" : "required",
         "description" : "Broad categorization of the service that is to be provided.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/384fc759-5200-4240-a376-17af182e891c-95"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/d55a3a53-c2d6-4471-a929-f22a6a751a92-95"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -2471,7 +2471,7 @@
       "binding" : {
         "strength" : "required",
         "description" : "From where the patient was admitted.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/384fc759-5200-4240-a376-17af182e891c-98"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/d55a3a53-c2d6-4471-a929-f22a6a751a92-98"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -2696,7 +2696,7 @@
       "binding" : {
         "strength" : "required",
         "description" : "Discharge Disposition.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/384fc759-5200-4240-a376-17af182e891c-101"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/d55a3a53-c2d6-4471-a929-f22a6a751a92-101"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -3021,6 +3021,10 @@
       {
         "identity" : "rim",
         "map" : ".particiaption[typeCode=PFM].role"
+      },
+      {
+        "identity" : "specmetier-to-TDDUIEncounterSejour",
+        "map" : "ESSMSAccueil"
       }]
     },
     {

@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "384fc759-5200-4240-a376-17af182e891c-93",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/384fc759-5200-4240-a376-17af182e891c-93",
+  "id" : "d55a3a53-c2d6-4471-a929-f22a6a751a92-93",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/d55a3a53-c2d6-4471-a929-f22a6a751a92-93",
   "name" : "IntersectionTDDUIEncounterSejourAndTDDUIEncounterSejour",
   "title" : "Intersection of TDDUI Encounter Sejour And TDDUI Encounter Sejour",
   "status" : "active",
-  "date" : "2026-02-09T09:15:49+00:00",
+  "date" : "2026-02-10T10:29:06+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -2198,7 +2198,7 @@
       "path" : "Encounter.hospitalization.origin",
       "short" : "The location/organization from which the patient came before admission",
       "definition" : "The location/organization from which the patient came before admission.",
-      "min" : 1,
+      "min" : 0,
       "max" : "1",
       "constraint" : [{
         "extension" : [{
@@ -2817,6 +2817,10 @@
       {
         "identity" : "rim",
         "map" : ".particiaption[typeCode=PFM].role"
+      },
+      {
+        "identity" : "specmetier-to-TDDUIEncounterSejour",
+        "map" : "ESSMSAccueil"
       }]
     },
     {

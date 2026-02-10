@@ -69,7 +69,6 @@
     <sch:title>f:Encounter/f:hospitalization</sch:title>
     <sch:rule context="f:Encounter/f:hospitalization">
       <sch:assert test="count(f:extension[@url = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-date-origin']) &lt;= 1">extension with URL = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-date-origin': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:origin) &gt;= 1">origin: minimum cardinality of 'origin' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
 </sch:schema>

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact-description | *Version*:2.2.0-ballot |
-| Active as of 2026-02-09 | *Computable Name*:TDDUIRelatedPersonContactDescription |
+| Active as of 2026-02-10 | *Computable Name*:TDDUIRelatedPersonContactDescription |
 
 Description du contact PersonnePhysique.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-related-person
   "name" : "TDDUIRelatedPersonContactDescription",
   "title" : "Description",
   "status" : "active",
-  "date" : "2026-02-09T09:12:46+00:00",
+  "date" : "2026-02-10T10:23:53+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
