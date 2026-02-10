@@ -77,6 +77,7 @@ These define constraints on FHIR data types for systems conforming to this imple
 | :--- | :--- |
 | [Description](StructureDefinition-tddui-related-person-contact-description.md) | Description du contact PersonnePhysique. |
 | [TDDUI Admission Date](StructureDefinition-tddui-admission-date.md) | Date d’admission dans la structure ESSMS. |
+| [TDDUI Assessment Method](StructureDefinition-tddui-assessment-method.md) | Mode d'évaluation. |
 | [TDDUI Attachment](StructureDefinition-tddui-attachment.md) | Extension permettant de véhiculer des pièces jointes que ce soit pour l'évaluation, l'évènement ou le projet personnalisé. L'extension référence le profil PDSm_SimplifiedPublish. |
 | [TDDUI Birth Order](StructureDefinition-tddui-birth-order.md) | Ordre d’enregistrement de la naissance dans le registre d’état civil de la commune de naissance pour le mois de la naissance. Il compose les 3 derniers chiffres du NIR de l'usager avant la clé de sécurité et permet de distinguer les personnes nées au même lieu et à la même période. Il est obligatoire si le NIR n'est pas transmis. |
 | [TDDUI CarePlan Projet Perso Ref](StructureDefinition-tddui-careplan-reference.md) | Liens vers le projet personnalisé, utilisables dans le profil TDDUIGoalObjectif. |

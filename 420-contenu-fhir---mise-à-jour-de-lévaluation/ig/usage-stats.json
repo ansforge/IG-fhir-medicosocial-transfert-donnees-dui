@@ -12,6 +12,13 @@
       ]
     },
     {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-assessment-method",
+      "title": "TDDUI Assessment Method",
+      "types": [
+        "string"
+      ]
+    },
+    {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment",
       "title": "TDDUI Attachment",
       "types": [
@@ -577,6 +584,9 @@
       "Bundle.entry.resource",
       "Encounter"
     ],
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-assessment-method": [
+      "QuestionnaireResponse"
+    ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment": [
       "Bundle.entry.resource",
       "CarePlan",
@@ -654,6 +664,7 @@
       "PractitionerRole.code"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant": [
+      "Bundle.entry.resource",
       "QuestionnaireResponse"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact-description": [
@@ -666,6 +677,7 @@
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-status-author": [
       "CarePlan.status",
       "Goal.lifecycleStatus",
+      "QuestionnaireResponse.status",
       "Task.status"
     ]
   }

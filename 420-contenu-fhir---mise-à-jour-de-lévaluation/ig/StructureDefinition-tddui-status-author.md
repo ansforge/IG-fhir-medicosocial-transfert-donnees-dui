@@ -19,7 +19,7 @@ Extension permettant de représenter la profession du professionnel.
 
 **Utilisations:**
 
-* Utilise ce/t/te Extension: [TDDUI CarePlan Projet Personalise](StructureDefinition-tddui-careplan-projet-personnalise.md), [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md), [TDDUI Task Action](StructureDefinition-tddui-task-action.md) and [TDDUI Task Prestation](StructureDefinition-tddui-task-prestation.md)
+* Utilise ce/t/te Extension: [TDDUI CarePlan Projet Personalise](StructureDefinition-tddui-careplan-projet-personnalise.md), [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md), [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md), [TDDUI Task Action](StructureDefinition-tddui-task-action.md) and [TDDUI Task Prestation](StructureDefinition-tddui-task-prestation.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-status-author)
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-status-author.
   "name" : "TDDUIStatusAuthor",
   "title" : "TDDUI Status Author",
   "status" : "active",
-  "date" : "2026-02-10T10:32:36+00:00",
+  "date" : "2026-02-10T16:08:04+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -93,6 +93,10 @@ Other representations of profile: [CSV](StructureDefinition-tddui-status-author.
     {
       "type" : "element",
       "expression" : "Task.status"
+    },
+    {
+      "type" : "element",
+      "expression" : "QuestionnaireResponse.status"
     }
   ],
   "type" : "Extension",

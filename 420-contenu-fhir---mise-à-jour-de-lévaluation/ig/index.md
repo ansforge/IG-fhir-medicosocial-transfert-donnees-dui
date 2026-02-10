@@ -138,7 +138,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2026-02-10T10:32:36+00:00",
+  "date" : "2026-02-10T16:08:04+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -945,6 +945,20 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "TDDUI Admission Date",
         "description" : "Date d’admission dans la structure ESSMS.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/tddui-assessment-method"
+        },
+        "name" : "TDDUI Assessment Method",
+        "description" : "Mode d'évaluation.",
         "exampleBoolean" : false
       },
       {

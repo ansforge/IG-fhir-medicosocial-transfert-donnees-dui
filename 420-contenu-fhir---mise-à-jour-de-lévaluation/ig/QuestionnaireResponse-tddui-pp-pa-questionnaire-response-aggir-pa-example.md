@@ -31,6 +31,19 @@ Profil: [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-re
       "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
     ]
   },
+  "extension" : [
+    {
+      "extension" : [
+        {
+          "url" : "TDDUIResponsible",
+          "valueReference" : {
+            "reference" : "Practitioner/tddui-pp-pa-practitioner-ide-example"
+          }
+        }
+      ],
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant"
+    }
+  ],
   "identifier" : {
     "system" : "https://identifiant-medicosocial-evaluation.esante.gouv.fr",
     "value" : "3480787529/123456789-EVAL-1234"
