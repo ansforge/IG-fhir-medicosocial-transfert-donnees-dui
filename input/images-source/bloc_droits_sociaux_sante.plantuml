@@ -5,7 +5,7 @@ hide empty methods
 class Usager #LightPink
 
 class EntiteJuridique #LightGray
-class OrganismeResponsable #LightYellow
+class StructureAccueil #LightYellow
 
 class AssuranceMaladieComplementaire #LightYellow {
     numeroContrat : Identifiant [0..1]
@@ -75,11 +75,11 @@ class DroitPrestation #LightYellow {
 }
 
 class DetailPrestation #LightYellow {
+    temporaliteAccueil : Code [0..1]
+    precisionOrientation : Code [0..1]
+    precisionOrientationLocale : Texte [0..1]
     montantAttribue : Montant [0..1]
     frequence : Mesure [0..1]
-    temporaliteAccueil : Code [0..1]
-    qualification : Code [1..1]
-    precisionOrientation : Code [0..1]
 }
 
 class PriseCharge #LightYellow {
@@ -98,10 +98,10 @@ DemandeOrientation "*" - "1" Usager
 DemandeOrientation "0..1" -- "*" Decision
 
 Decision "1" -- "0..1" DroitPrestation
-EntiteJuridique <|-- OrganismeResponsable
-DroitPrestation "1" - "*" OrganismeResponsable
 
 DroitPrestation "1" -- "0..1" DetailPrestation
+EntiteJuridique <|-- StructureAccueil
+DetailPrestation "1" - "*" StructureAccueil
 DetailPrestation "1" -- "*" PriseCharge
 PriseCharge "1" -- "0..1" Quantification
 

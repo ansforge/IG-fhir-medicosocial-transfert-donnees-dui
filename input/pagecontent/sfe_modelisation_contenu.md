@@ -664,15 +664,9 @@ Ensemble des dispositifs prévus par le Code de l'Action Sociale et des Familles
   </tr>
 </table>
 
-##### Classe OrganismeResponsable
-
-** Classe spécialisée, hérite de la classe EntiteJuridique définie dans le MOS et profilée pour ce volet.
-
-Cette classe représente l'organisme responsable du droit ou de la prestation.
-
 ##### Classe DetailPrestation
 
-Détails de la prestation.
+Détails de la prestation pour préciser l'orientation.
 
 <table style="width:100%">
   <tr>
@@ -682,12 +676,25 @@ Détails de la prestation.
   <tr>
     <td>temporaliteAccueil : [0..1] Code</td>
     <td>Fréquence d'accueil lors d'une prise en charge en ESSMS.<br>
-    Nomenclature(s) associée(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J30-TemporaliteAccueil-ROR/FHIR/JDV-J30-TemporaliteAccueil-ROR">JDV_J30-TemporaliteAccueil-ROR</a></td>
+  La temporalité d’accueil est transmise pour tous les droits pour lesquels elle est obligatoire (pour les types de droit et prestation suivants):
+  <ul>
+    <li>Orientation ESMS Enfants</li>
+    <li>Orientation ESMS Adultes</li>
+    <li>Orientation en Unité d'enseignement</li>
+    <li>Orientation vers une Scolarisation en milieu ordinaire à temps partagé (UE et établissement scolaire)</li>
+    <li>Orientation vers une Unité d'enseignement et une scolarisation en ULIS à temps partagé</li>
+    <li>Orientation vers une unité d’enseignement et une scolarisation en enseignement adapté à temps partagé</li>
+    </ul><br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J30-TemporaliteAccueil-ROR/FHIR/JDV-J30-TemporaliteAccueil-ROR">JDV_J30-TemporaliteAccueil-ROR</a></td>
   </tr>
   <tr>
     <td>precisionOrientation : [0..1] Code</td>
     <td>Précision de l'orientation à renseigner en fonction du type de droit.<br>
-    Nomenclature(s) associée(s) : à définir</td>
+    Jeu(x) de valeur(s) associé(s) : en cours analyse NOS</td>
+  </tr>
+  <tr>
+    <td>precisionOrientationLocale : [0..1] Texte</td>
+    <td>Précision de l'orientation. Texte libre lorsqu'il n'existe pas de nomenclature harmonisée.</td>
   </tr>
   <tr>
     <td>frequence : [0..1] Mesure</td>
@@ -708,6 +715,12 @@ Détails de la prestation.
     <td>Montant attribué dans le cas d’une aide sociale.</td>
   </tr>
 </table>
+
+##### Classe StructureAccueil
+
+** Classe spécialisée, hérite de la classe EntiteJuridique définie dans le MOS et profilée pour ce volet.
+
+Cette classe représente le ou les ESSMS désigné(s) par la CDAPH comme étant susceptible d'accueillir l'individu en situation de handicap.
 
 ##### Classe PriseCharge
 
