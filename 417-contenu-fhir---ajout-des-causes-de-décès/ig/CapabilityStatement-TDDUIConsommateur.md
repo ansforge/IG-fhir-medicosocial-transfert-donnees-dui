@@ -218,6 +218,19 @@ Le rôle du Consommateur est de recueillir les données d'un logiciel DUI. Il co
               "code" : "read"
             }
           ]
+        },
+        {
+          "type" : "Observation",
+          "supportedProfile" : [
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-deces",
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-periode-scolaire",
+            "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite"
+          ],
+          "interaction" : [
+            {
+              "code" : "read"
+            }
+          ]
         }
       ],
       "interaction" : [
