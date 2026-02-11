@@ -41,7 +41,7 @@ object "**TDDUIPractitioner**" as TDDUIPractitioner_source #fccde5 {
 
 map "**Evaluation : TDDUIQuestionnaireResponse**" as Evaluation #d9d9d9 {
     Responsable => <&plus> TDDUIQRParticipant.extension:TDDUIResponsible
-    Porteur => <&plus> TDDUIQRParticipant.extension:TDDUIPorteur
+    Porteur => <&plus> TDDUIQRParticipant.extension:TDDUIHolder
     pieceJointeEvaluation => <&plus> TDDUIAttachment
     commentaireEvaluation => <&plus> TDDUIComment
     modaliteEvaluation  => <&plus> TDDUIAssessmentMethod 

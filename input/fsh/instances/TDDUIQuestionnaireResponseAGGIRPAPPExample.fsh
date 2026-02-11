@@ -12,7 +12,7 @@ Usage: #example
 * status = #completed
 * subject = Reference(tddui-pp-pa-patient-example-pp)
 
-* extension[TDDUIQRParticipant].extension[TDDUIResponsible].valueReference = Reference(tddui-pp-pa-practitioner-ide-example)
+* extension[TDDUIQRParticipant].extension[TDDUIHolder].valueReference = Reference(tddui-organization-example)
 
 * item.linkId = "resultat-eval"
 * item.text = "Résultat évaluation"
