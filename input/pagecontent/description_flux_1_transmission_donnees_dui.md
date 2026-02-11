@@ -39,6 +39,9 @@ Les différentes ressources sont véhiculées via l'élément : Bundle.entry. Le
 * [TDDUITaskMoyenRessource](StructureDefinition-tddui-task-moyen-ressource.html) représentant les moyens ou ressources utilisées.
 * [TDDUITaskPrestation](StructureDefinition-tddui-task-prestation.html) représentant les prestations.
 * [TDDUIRelatedPersonContact](StructureDefinition-tddui-related-person-contact.html) représentant un contact de l'usager.
+* [TDDUIObservationCauseDeces](StructureDefinition-tddui-observation-cause-deces.html) représentant les causes de décès.
+* [TDDUIObservationMobilite](StructureDefinition-tddui-observation-mobilite.html) représentant la mobilité de l'usager.
+* [TDDUIObservationPeriodeScolaire](StructureDefinition-tddui-observation-periode-scolaire.html) représentant la période scolaire de l'usager.
 
 Pour toutes ces ressources, seule la création est possible via l'intéraction FHIR <a href="https://hl7.org/fhir/R4/http.html#create">Create</a>.
 

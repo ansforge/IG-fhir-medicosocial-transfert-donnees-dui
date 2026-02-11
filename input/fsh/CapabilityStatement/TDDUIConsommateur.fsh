@@ -79,5 +79,11 @@ Usage: #definition
 * rest.resource[=].supportedProfile = Canonical(tddui-related-person-contact)
 * rest.resource[=].interaction[0].code = #read
 
+* rest.resource[13].type = #Observation
+* rest.resource[=].supportedProfile[0] = Canonical(tddui-observation-cause-deces)
+* rest.resource[=].supportedProfile[+] = Canonical(tddui-observation-periode-scolaire)
+* rest.resource[=].supportedProfile[+] = Canonical(tddui-observation-mobilite)
+* rest.resource[=].interaction[0].code = #read
+
 * rest.interaction[0].code = #transaction
 * rest.interaction[=].documentation = "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle"

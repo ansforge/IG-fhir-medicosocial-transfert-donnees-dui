@@ -31,7 +31,11 @@ Description: "Profil générique créé pour transmettre des données d'un logic
     DUITaskBilan 0..* and 
     DUITaskMoyenRessource 0..* and
     DUITaskPrestation 0..* and
-    DUIRelatedPersonContact 0..*
+    DUIRelatedPersonContact 0..* and 
+    DUIObservationCauseDeces 0..* and
+    DUIObservationPeriodeScolaire 0..* and
+    DUIObservationMobilite 0..*
+
 
 
 * entry[DUIPatient].resource only TDDUIPatient
@@ -159,3 +163,21 @@ Description: "Profil générique créé pour transmettre des données d'un logic
 * entry[DUIRelatedPersonContact].resource 1..1
 * entry[DUIRelatedPersonContact].request 1..1
 * entry[DUIRelatedPersonContact].request.method = #POST
+
+* entry[DUIObservationCauseDeces].resource only TDDUIObservationCauseDeces
+* entry[DUIObservationCauseDeces] ^short = "Observation conforming to the DUIObservationCauseDeces profile, used to convey the cause of death."
+* entry[DUIObservationCauseDeces].resource 1..1
+* entry[DUIObservationCauseDeces].request 1..1
+* entry[DUIObservationCauseDeces].request.method = #POST
+
+* entry[DUIObservationPeriodeScolaire].resource only TDDUIObservationPeriodeScolaire
+* entry[DUIObservationPeriodeScolaire] ^short = "Observation conforming to the DUIObservationPeriodeScolaire profile, used to convey the school period."
+* entry[DUIObservationPeriodeScolaire].resource 1..1
+* entry[DUIObservationPeriodeScolaire].request 1..1
+* entry[DUIObservationPeriodeScolaire].request.method = #POST
+
+* entry[DUIObservationMobilite].resource only TDDUIObservationMobilite
+* entry[DUIObservationMobilite] ^short = "Observation conforming to the DUIObservationMobilite profile, used to convey the mobility."
+* entry[DUIObservationMobilite].resource 1..1
+* entry[DUIObservationMobilite].request 1..1
+* entry[DUIObservationMobilite].request.method = #POST
