@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier | *Version*:2.2.0 |
-| Active as of 2026-02-10 | *Computable Name*:TDDUIEncounterIdentifier |
+| Active as of 2026-02-11 | *Computable Name*:TDDUIEncounterIdentifier |
 
  
 CodeSystem pour la définition des codes d'identifiant de séjour 
@@ -37,7 +37,7 @@ CodeSystem pour la définition des codes d'identifiant de séjour
   "title" : "TDDUI Encounter Identifier",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-10T16:08:04+00:00",
+  "date" : "2026-02-11T10:01:23+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

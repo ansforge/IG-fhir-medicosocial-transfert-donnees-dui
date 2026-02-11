@@ -10,7 +10,7 @@
   <name value="TDDUI"/>
   <title value="Médicosocial - Transfert de données DUI"/>
   <status value="active"/>
-  <date value="2026-02-10T16:08:04+00:00"/>
+  <date value="2026-02-11T10:01:23+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -1927,6 +1927,72 @@
       <name value="TDDUI-Producteur"/>
       <description value="Le rôle de Producteur est de transmettre des données de son logiciel DUI. Il correspond à un logiciel DUI."/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/test-invariant-3-pro-eval-valid"/>
+      </reference>
+      <name value="Test invariant 3 professionnels - OK"/>
+      <description value="Exemple d'évaluation avec les trois rôles professionnels renseignés"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/test-invariant-auteur-ok"/>
+      </reference>
+      <name value="Test invariant auteur - OK"/>
+      <description value="Exemple d'évaluation avec auteur renseigné"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/test-invariant-porteur-non"/>
+      </reference>
+      <name value="Test invariant porteur - KO"/>
+      <description value="Exemple INVALIDE : auto-évaluation sans porteur"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/test-invariant-professionnel-non"/>
+      </reference>
+      <name value="Test invariant Professionnel Non - KO"/>
+      <description value="Exemple INVALIDE : ni source Practitioner, ni author, ni participant"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/test-invariant-responsable-ok"/>
+      </reference>
+      <name value="Test invariant responsable - OK"/>
+      <description value="Exemple d'évaluation avec responsable dans les participants"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/test-invariant-evaluateur-ok"/>
+      </reference>
+      <name value="Test invariant évaluateur - OK"/>
+      <description value="Exemple d'évaluation par un professionnel (source = Practitioner)"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

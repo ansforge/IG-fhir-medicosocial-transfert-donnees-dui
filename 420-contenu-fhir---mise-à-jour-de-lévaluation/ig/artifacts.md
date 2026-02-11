@@ -204,4 +204,10 @@ These are example instances that show what data produced and consumed by systems
 | [TDDUI Task Transport Example](Task-tddui-task-transport-example.md) | Exemple du transport. |
 | [TDDUI Task Transport Professionel Example](Task-tddui-task-transport-professionel-example.md) | Exemple du transport du professionnel. |
 | [TDDUI Task Transport Usager Example](Task-tddui-task-transport-usager-example.md) | Exemple du transport de l'usager. |
+| [Test invariant 3 professionnels - OK](QuestionnaireResponse-test-invariant-3-pro-eval-valid.md) | Exemple d'évaluation avec les trois rôles professionnels renseignés |
+| [Test invariant Professionnel Non - KO](QuestionnaireResponse-test-invariant-professionnel-non.md) | Exemple INVALIDE : ni source Practitioner, ni author, ni participant |
+| [Test invariant auteur - OK](QuestionnaireResponse-test-invariant-auteur-ok.md) | Exemple d'évaluation avec auteur renseigné |
+| [Test invariant porteur - KO](QuestionnaireResponse-test-invariant-porteur-non.md) | Exemple INVALIDE : auto-évaluation sans porteur |
+| [Test invariant responsable - OK](QuestionnaireResponse-test-invariant-responsable-ok.md) | Exemple d'évaluation avec responsable dans les participants |
+| [Test invariant évaluateur - OK](QuestionnaireResponse-test-invariant-evaluateur-ok.md) | Exemple d'évaluation par un professionnel (source = Practitioner) |
 
