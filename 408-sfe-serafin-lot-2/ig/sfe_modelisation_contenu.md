@@ -415,9 +415,9 @@ Relevé d'Identité Bancaire.
 * Nom: BIC : [0..1] Identifiant
   * Description: Bank Identifer Code.
 
-##### Classe TransportUsager
+##### Classe MobilitetUsager
 
-Moyen de transport utilisé par l’usager.
+Dispositif de transport utilisé par l’usager.
 
 * Nom: type : [0..1] Code
   * Description: Type de moyen de transport.Jeu(x) de valeur(s) associé(s) : JDV Mode De Transport CISIS avec l'OID 1.2.250.1.213.1.1.5.140 publié sur[annexe-vocabulaire-et-jeux-de-valeurs](https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs)

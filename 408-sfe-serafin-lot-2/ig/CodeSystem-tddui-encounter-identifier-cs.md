@@ -37,7 +37,7 @@ TDDUI Encounter's identifier
   "title" : "TDDUI Encounter FR Core CodeSystem v2-0203",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-11T12:59:12+00:00",
+  "date" : "2026-02-11T14:29:56+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
