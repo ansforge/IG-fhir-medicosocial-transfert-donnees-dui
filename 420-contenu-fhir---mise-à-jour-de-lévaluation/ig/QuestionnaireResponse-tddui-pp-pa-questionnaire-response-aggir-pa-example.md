@@ -35,9 +35,9 @@ Profil: [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-re
     {
       "extension" : [
         {
-          "url" : "TDDUIResponsible",
+          "url" : "TDDUIHolder",
           "valueReference" : {
-            "reference" : "Practitioner/tddui-pp-pa-practitioner-ide-example"
+            "reference" : "Organization/tddui-organization-example"
           }
         }
       ],

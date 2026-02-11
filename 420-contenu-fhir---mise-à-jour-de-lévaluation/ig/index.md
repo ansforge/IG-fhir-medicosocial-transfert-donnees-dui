@@ -138,7 +138,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2026-02-11T10:01:23+00:00",
+  "date" : "2026-02-11T13:27:23+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -2218,7 +2218,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           "reference" : "StructureDefinition/tddui-qr-participant"
         },
         "name" : "TDDUI QR Participant",
-        "description" : "Extension permettant d'ajouter le responsable de l'évaluation et l'auteur du statut de l'évaluation dans un QuestionnaireResponse.",
+        "description" : "Extension permettant d'ajouter le responsable et le porteur de l'évaluation dans un QuestionnaireResponse.",
         "exampleBoolean" : false
       },
       {

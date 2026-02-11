@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-questionnaire-
   "name" : "TDDUIQuestionnaireResponse",
   "title" : "TDDUI QuestionnaireResponse",
   "status" : "active",
-  "date" : "2026-02-11T10:01:23+00:00",
+  "date" : "2026-02-11T13:27:23+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -112,7 +112,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-questionnaire-
             "key" : "auto-eval-porteur",
             "severity" : "error",
             "human" : "Dans le cas d'une auto évaluation, le porteur doit être renseigné.",
-            "expression" : "(source.exists() and source.reference.contains('Patient/')) implies extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant').extension.where(url='TDDUIPorteur').exists()",
+            "expression" : "(source.exists() and source.reference.contains('Patient/')) implies extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant').extension.where(url='TDDUIHolder').exists()",
             "source" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
           },
           {
@@ -193,9 +193,9 @@ Other representations of profile: [CSV](StructureDefinition-tddui-questionnaire-
         ]
       },
       {
-        "id" : "QuestionnaireResponse.extension:TDDUIQRParticipant.extension:TDDUIPorteur",
+        "id" : "QuestionnaireResponse.extension:TDDUIQRParticipant.extension:TDDUIHolder",
         "path" : "QuestionnaireResponse.extension.extension",
-        "sliceName" : "TDDUIPorteur",
+        "sliceName" : "TDDUIHolder",
         "mapping" : [
           {
             "identity" : "specmetier-to-TDDUIQuestionnaireResponseAGGIR",
