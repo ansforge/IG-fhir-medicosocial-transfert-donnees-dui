@@ -313,12 +313,12 @@ Jeu(x) de valeur(s) associé(s) :[JDV_J30-TemporaliteAccueil-ROR](https://mos.es
   * Description: Formation proposéecet élément est obligatoire si le type de droit et prestation est "11.1" (Orientation en Centre de rééducation professionnelle (CRP)).
 * Nom: frequence : [0..1] Mesure
   * Description: Fréquence de versement dans le cas d’une aide sociale.
+* Nom: montantAttribue : [0..1] Montant
+  * Description: Montant attribué dans le cas d’une aide sociale.
 * Nom: qualification : [0..1] Code
   * Description: Il existe deux types d’orientation :* Orientation cible (appelée aussi orientation hors contrainte de l’offre, théorique ou idéale) : qualification d'une décision basée uniquement sur les attentes et les besoins évalués de la personne et considérée par l'équipe pluridisciplinaire ou la CDAPH comme la réponse la plus adaptée à ces attentes et besoins sans prendre en compte la réalité de l'offre disponible.
 *  Orientation alternative lorsqu'elle est partiellement adaptée au regard des attentes et des besoins évalués de la personne, mais qu'elle prend bien en compte la réalité de l'offre disponible et qu'elle a ainsi plus de chance d'être mise en oeuvre (appelée aussi "orientation par défaut").
 Jeu(x) de valeur(s) associé(s) : en cours analyse NOS
-* Nom: montantAttribue : [0..1] Montant
-  * Description: Montant attribué dans le cas d’une aide sociale.
 
 ##### Classe StructureAccueil
 
