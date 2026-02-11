@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "d55a3a53-c2d6-4471-a929-f22a6a751a92-93",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/d55a3a53-c2d6-4471-a929-f22a6a751a92-93",
+  "id" : "74b52960-c1eb-4ca1-a9b2-9bf85e4bb839-93",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/74b52960-c1eb-4ca1-a9b2-9bf85e4bb839-93",
   "name" : "IntersectionTDDUIEncounterSejourAndTDDUIEncounterSejour",
   "title" : "Intersection of TDDUI Encounter Sejour And TDDUI Encounter Sejour",
   "status" : "active",
-  "date" : "2026-02-10T10:29:06+00:00",
+  "date" : "2026-02-11T15:28:52+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -2247,8 +2247,13 @@
       "isModifier" : false,
       "isSummary" : false,
       "binding" : {
-        "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-entree-cisis"
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "AdmitSource"
+        }],
+        "strength" : "preferred",
+        "description" : "From where the patient was admitted.",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/encounter-admit-source|4.0.1"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -2487,8 +2492,13 @@
       "isModifier" : false,
       "isSummary" : false,
       "binding" : {
-        "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-sortie-cisis"
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "DischargeDisp"
+        }],
+        "strength" : "example",
+        "description" : "Discharge Disposition.",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/encounter-discharge-disposition|4.0.1"
       },
       "mapping" : [{
         "identity" : "v2",
