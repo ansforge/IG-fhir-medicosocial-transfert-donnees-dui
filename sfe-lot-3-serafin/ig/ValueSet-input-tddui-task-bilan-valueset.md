@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-bilan-valueset | *Version*:2.2.0-ballot |
-| Active as of 2026-02-10 | *Computable Name*:InputTDDUITaskBilanValueSet |
+| Active as of 2026-02-11 | *Computable Name*:InputTDDUITaskBilanValueSet |
 
  
 ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour le bilan du projet personnalisé. 
@@ -56,7 +56,7 @@ ValueSet pour la définition des éléments spécifiques des input dans la resso
   "title" : "InputTDDUITaskBilanValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-10T14:06:03+00:00",
+  "date" : "2026-02-11T08:41:28+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
