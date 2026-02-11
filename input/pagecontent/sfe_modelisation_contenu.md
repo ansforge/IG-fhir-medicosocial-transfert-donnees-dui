@@ -697,6 +697,17 @@ Détails de la prestation pour préciser l'orientation.
     <td>Précision de l'orientation. Texte libre lorsqu'il n'existe pas de nomenclature harmonisée.</td>
   </tr>
   <tr>
+    <td>accueilSequentiel : [0..1] Indicateur</td>
+    <td>Indique si l’unité accepte d’accueillir des personnes en situation de handicap de façon séquentielle, c'est à dire sur une partie de la semaine.<br>
+    0 = L'unité n'accepte pas l'accueil séquentiel<br>
+    1 = L'unité accepte l'accueil séquentiel</td>
+  </tr>
+   <tr>
+    <td>formation : [0..1] Texte</td>
+    <td>Formation proposée<br>
+    cet élément est obligatoire si le type de droit et prestation est "11.1" (Orientation en Centre de rééducation professionnelle (CRP)).</td>
+  </tr>
+  <tr>
     <td>frequence : [0..1] Mesure</td>
     <td>Fréquence de versement dans le cas d’une aide sociale.</td>
   </tr>
@@ -705,9 +716,9 @@ Détails de la prestation pour préciser l'orientation.
     <td>Il existe deux types d’orientation :
     <ul>
     <li>Orientation cible (appelée aussi orientation hors contrainte de l’offre, théorique ou idéale) : qualification d'une décision basée uniquement sur les attentes et les besoins évalués de la personne et considérée par l'équipe pluridisciplinaire ou la CDAPH comme la réponse la plus adaptée à ces attentes et besoins sans prendre en compte la réalité de l'offre disponible.</li>
-    <li> Orientation alternative (appelée aussi orientation par défaut) : qualification d'une décision, partiellement adaptée au regard des attentes et des besoins évalués de la personne pour prendre en compte la réalité de l'offre disponible, afin d'augmenter la possibilité de réalisation effective de cette orientation.<br>
-    Nomenclature(s) associée(s) : à définir</li>
+    <li> Orientation alternative lorsqu'elle est partiellement adaptée au regard des attentes et des besoins évalués de la personne, mais qu'elle prend bien en compte la réalité de l'offre disponible et qu'elle a ainsi plus de chance d'être mise en oeuvre (appelée aussi "orientation par défaut").</li>
     </ul>
+    Jeu(x) de valeur(s) associé(s) : en cours analyse NOS
     </td>
   </tr>
   <tr>
