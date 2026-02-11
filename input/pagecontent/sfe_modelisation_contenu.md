@@ -712,6 +712,10 @@ Détails de la prestation pour préciser l'orientation.
     <td>Fréquence de versement dans le cas d’une aide sociale.</td>
   </tr>
   <tr>
+    <td>montantAttribue : [0..1] Montant</td>
+    <td>Montant attribué dans le cas d’une aide sociale.</td>
+  </tr>
+  <tr>
     <td>qualification : [0..1] Code</td>
     <td>Il existe deux types d’orientation :
     <ul>
@@ -720,10 +724,6 @@ Détails de la prestation pour préciser l'orientation.
     </ul>
     Jeu(x) de valeur(s) associé(s) : en cours analyse NOS
     </td>
-  </tr>
-  <tr>
-    <td>montantAttribue : [0..1] Montant</td>
-    <td>Montant attribué dans le cas d’une aide sociale.</td>
   </tr>
 </table>
 
