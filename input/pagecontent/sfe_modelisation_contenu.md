@@ -929,9 +929,9 @@ Relevé d'Identité Bancaire.
   </tr>
 </table>
 
-##### Classe TransportUsager
+##### Classe MobilitetUsager
 
-Moyen de transport utilisé par l’usager.
+Dispositif de transport utilisé par l’usager.
 
 <table style="width:100%">
   <tr>
