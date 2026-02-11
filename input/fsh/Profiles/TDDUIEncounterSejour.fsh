@@ -65,8 +65,6 @@ Description: "Profil de la ressource Encounter permettant de regrouper les infor
     TDDUIEntryDateOrigin named TDDUIEntryDateOrigin 0..1
     
 * hospitalization.origin only Reference(TDDUIOrganization)
-* hospitalization.admitSource from jdv-modalite-entree-cisis (required)
-* hospitalization.dischargeDisposition from jdv-modalite-sortie-cisis (required)
 
 Mapping:  ConceptMetier_TDDUIEncounterSejour
 Source:   TDDUIEncounterSejour
