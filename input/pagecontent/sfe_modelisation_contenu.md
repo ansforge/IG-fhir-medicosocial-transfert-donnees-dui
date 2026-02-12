@@ -609,27 +609,32 @@ Ensemble des dispositifs prévus par le Code de l'Action Sociale et des Familles
     <td>Numéro d’allocataire pour le droit ou la prestation.</td>
   </tr>
   <tr>
-    <td>typeDroitPrestation : [0..1] Code</td>
+    <td>categorieDroitPrestation : [1..1] Code</td>
+    <td>Catégorie de droit et prestation caractérisant la décision d'orientation.<br>
+    Nomenclature(s) associée(s) : en cours d'analyse NOS</td>
+  </tr>
+  <tr>
+    <td>typeDroitPrestation : [1..1] Code</td>
     <td>Type de droit et prestation caractérisant la décision d'orientation.<br>
     Nomenclature(s) associée(s) : en cours d'analyse NOS</td>
   </tr>
   <tr>
-    <td>natureDroit : [0..1] Code</td>
+    <td>natureDroitPrestation : [1..1] Code</td>
     <td>Nature du droit s’appliquant à tous les droits ou prestations ouverts par la CDAPH. Elle permet de gérer, le cas échéant, le lien entre la date d’ouverture du droit et la date de fin d’un droit précédent. Elle est déterminée par l’équipe pluridisciplinaire ou par la CDAPH.<br>
     Nomenclature(s) associée(s) : en cours d'analyse NOS</td>
   </tr>
   <tr>
-    <td>dateOuverture : [0..1] Date</td>
+    <td>dateOuverture : [1..1] Date</td>
     <td>La date d'ouverture de droit est la date à laquelle le droit devient effectif.<br>
     Sauf disposition spécifique, la date d’ouverture des droits est la date de la décision de la CDAPH sur le fondement du principe de non-rétroactivité des décisions.
     </td>
   </tr>
   <tr>
-    <td>dateEcheance : [0..1] Date</td>
+    <td>dateEcheance : [1..1] Date</td>
     <td>La date d'échéance de droit est la date à laquelle le droit ou la prestation ouvert prend fin. L'équipe pluridisciplinaire peut moduler les dates selon les besoins de la personne, tout en restant dans le minimum et dans le maximum prévu par la loi pour chacune des prestations.</td>
   </tr>
   <tr>
-    <td>existencePAG : [0..1] Indicateur</td>
+    <td>existencePAG : [1..1] Indicateur</td>
     <td>Indicateur de l'existence d'un Plan d’Accompagnement Global (PAG).<br>
     1 = si la décision est associée à un PAG au statut "élaboré" ou "validé" ;<br>
     0 = pour tous les autres cas (la décision n'est pas associée à un PAG ou est associée à un PAG ayant un statut différent de "élaboré" ou "validé").
@@ -716,7 +721,7 @@ Détails de la prestation pour préciser l'orientation.
     <td>Montant attribué dans le cas d’une aide sociale.</td>
   </tr>
   <tr>
-    <td>qualification : [0..1] Code</td>
+    <td>qualificationOrientation : [1..1] Code</td>
     <td>Il existe deux types d’orientation :
     <ul>
     <li>Orientation cible (appelée aussi orientation hors contrainte de l’offre, théorique ou idéale) : qualification d'une décision basée uniquement sur les attentes et les besoins évalués de la personne et considérée par l'équipe pluridisciplinaire ou la CDAPH comme la réponse la plus adaptée à ces attentes et besoins sans prendre en compte la réalité de l'offre disponible.</li>
@@ -744,8 +749,9 @@ Description des modalités d'accueil.
   </tr>
   <tr>
     <td>modePriseCharge : [0..1] Code</td>
-    <td>Mode de prise en charge.<br>
-    Nomenclature(s) associée(s) : à définir</td>
+    <td>Le mode de prise en charge est renseigné pour certaines orientations en ESSMS. Il permet d'indiquer comment le bénéficiaire est pris en charge (internat, accueil de jour, accueil de nuit)<br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J264-ModeEtCentreDePriseEnCharge-MDPH/FHIR/JDV-J264-ModeEtCentreDePriseEnCharge-MDPH">JDV-J264-ModeEtCentreDePriseEnCharge-MDPH</a>
+    </td>
   </tr>
 </table>
 
@@ -759,19 +765,20 @@ Quantification de la prise en charge.
     <th>Description</th>
   </tr>
   <tr>
-    <td>quantificationNombre : [0..1] Numerique</td>
-    <td>Valeur de la quantification.</td>
+    <td>valeurPriseCharge : [0..1] Numerique</td>
+    <td>Valeur de la prise en charge.</td>
   </tr>
   <tr>
-    <td>quantificationUnite : [0..1] Code</td>
-    <td>Unité de la quantification (journée ou demi-journée).<br>
-    Nomenclature(s) associée(s) : à définir
+    <td>UnitePriseCharge : [0..1] Mesure</td>
+    <td>Unité de la durée de la prise en charge (journée ou demi-journée).
     </td>
   </tr>
   <tr>
-    <td>quantificationPeriodicite : [0..1] Code</td>
-    <td>Périodicité de la quantification (quotidienne, hebdomadaire, mensuelle, annuelle).<br>
-    Nomenclature(s) associée(s) : à définir</td>
+    <td>frequencePriseCharge : [0..1] Code</td>
+    <td>Périodicité de la prise en charge (quotidienne, hebdomadaire, mensuelle, annuelle).<br>
+    Jeu(x) valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J37-UcumUniteTemps/FHIR/JDV-J37-UcumUniteTemps">JDV-J37-UcumUniteTemps</a><br>
+    Seuls les codes suivants sont à utiliser : a (année), mo (mois), wk (semaine), d (jour)
+    </td>
   </tr>
 </table>
 

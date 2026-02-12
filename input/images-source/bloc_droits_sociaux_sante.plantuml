@@ -62,8 +62,9 @@ class Decision #LightYellow {
 
 class DroitPrestation #LightYellow {
     numeroAllocataire : Identifiant [0..1]
+    categorieDroitPrestation : Code [1..1]
     typeDroitPrestation : Code [1..1]
-    natureDroit : Code [1..1]
+    natureDroitPrestation : Code [1..1]
     dateOuverture : Date [1..1]
     dateEcheance : Date [1..1]
     existencePAG : Indicateur [1..1]
@@ -83,7 +84,7 @@ class DetailPrestation #LightYellow {
     formation : Texte [0..1]
     montantAttribue : Montant [0..1]
     frequence : Mesure [0..1]
-    qualification : Code [0..1]
+    qualificationOrientation : Code [1..1]
 }
 
 class PriseCharge #LightYellow {
@@ -91,9 +92,9 @@ class PriseCharge #LightYellow {
 }
 
 class Quantification #LightYellow {
-    quantificationNombre : Texte [0..1]
-    quantificationUnite : Texte [0..1]
-    quantificationPeriodicite : Code [0..1]
+    valeurPriseCharge : Numerique [0..1]
+    UnitePriseCharge : Mesure [0..1]
+    frequencePriseCharge : Code [0..1]
 }
 
 Decision "*" -- "1" Usager
