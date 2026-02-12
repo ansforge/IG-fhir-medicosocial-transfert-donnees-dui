@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-type | *Version*:2.2.0-ballot |
-| Active as of 2026-02-11 | *Computable Name*:TDDUIObservationType |
+| Active as of 2026-02-12 | *Computable Name*:TDDUIObservationType |
 
  
 CodeSystem for the Observation types 
@@ -37,7 +37,7 @@ CodeSystem for the Observation types
   "title" : "TDDUI Observation Type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-11T15:08:15+00:00",
+  "date" : "2026-02-12T14:50:08+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -64,19 +64,11 @@ CodeSystem for the Observation types
   ],
   "caseSensitive" : true,
   "content" : "complete",
-  "count" : 3,
+  "count" : 1,
   "concept" : [
-    {
-      "code" : "CAUSEDECES",
-      "display" : "Cause de décès"
-    },
     {
       "code" : "PERIODESCOL",
       "display" : "Période scolaire"
-    },
-    {
-      "code" : "MOBILITE",
-      "display" : "Mobilité"
     }
   ]
 }

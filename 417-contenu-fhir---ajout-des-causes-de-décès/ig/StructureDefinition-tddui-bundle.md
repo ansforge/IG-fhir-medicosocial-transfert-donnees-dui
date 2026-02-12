@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle | *Version*:2.2.0-ballot |
-| Active as of 2026-02-11 | *Computable Name*:TDDUIBundle |
+| Active as of 2026-02-12 | *Computable Name*:TDDUIBundle |
 
  
 Profil générique créé pour transmettre des données d'un logiciel DUI. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
   "name" : "TDDUIBundle",
   "title" : "TDDUI Bundle",
   "status" : "active",
-  "date" : "2026-02-11T15:08:15+00:00",
+  "date" : "2026-02-12T14:50:08+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -771,33 +771,33 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
         "patternCode" : "POST"
       },
       {
-        "id" : "Bundle.entry:DUIObservationCauseDeces",
+        "id" : "Bundle.entry:DUIObservationCauseMortalite",
         "path" : "Bundle.entry",
-        "sliceName" : "DUIObservationCauseDeces",
-        "short" : "Observation conforming to the DUIObservationCauseDeces profile, used to convey the cause of death.",
+        "sliceName" : "DUIObservationCauseMortalite",
+        "short" : "Observation conforming to the DUIObservationCauseMortalite profile, used to convey the cause of death.",
         "min" : 0,
         "max" : "*"
       },
       {
-        "id" : "Bundle.entry:DUIObservationCauseDeces.resource",
+        "id" : "Bundle.entry:DUIObservationCauseMortalite.resource",
         "path" : "Bundle.entry.resource",
         "min" : 1,
         "type" : [
           {
             "code" : "Observation",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-deces"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-mortalite"
             ]
           }
         ]
       },
       {
-        "id" : "Bundle.entry:DUIObservationCauseDeces.request",
+        "id" : "Bundle.entry:DUIObservationCauseMortalite.request",
         "path" : "Bundle.entry.request",
         "min" : 1
       },
       {
-        "id" : "Bundle.entry:DUIObservationCauseDeces.request.method",
+        "id" : "Bundle.entry:DUIObservationCauseMortalite.request.method",
         "path" : "Bundle.entry.request.method",
         "patternCode" : "POST"
       },
@@ -833,33 +833,33 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
         "patternCode" : "POST"
       },
       {
-        "id" : "Bundle.entry:DUIObservationMobilite",
+        "id" : "Bundle.entry:DUIObservationMobiliteUsager",
         "path" : "Bundle.entry",
-        "sliceName" : "DUIObservationMobilite",
-        "short" : "Observation conforming to the DUIObservationMobilite profile, used to convey the mobility.",
+        "sliceName" : "DUIObservationMobiliteUsager",
+        "short" : "Observation conforming to the DUIObservationMobiliteUsager profile, used to convey the mobility.",
         "min" : 0,
         "max" : "*"
       },
       {
-        "id" : "Bundle.entry:DUIObservationMobilite.resource",
+        "id" : "Bundle.entry:DUIObservationMobiliteUsager.resource",
         "path" : "Bundle.entry.resource",
         "min" : 1,
         "type" : [
           {
             "code" : "Observation",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite"
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite-usager"
             ]
           }
         ]
       },
       {
-        "id" : "Bundle.entry:DUIObservationMobilite.request",
+        "id" : "Bundle.entry:DUIObservationMobiliteUsager.request",
         "path" : "Bundle.entry.request",
         "min" : 1
       },
       {
-        "id" : "Bundle.entry:DUIObservationMobilite.request.method",
+        "id" : "Bundle.entry:DUIObservationMobiliteUsager.request.method",
         "path" : "Bundle.entry.request.method",
         "patternCode" : "POST"
       }

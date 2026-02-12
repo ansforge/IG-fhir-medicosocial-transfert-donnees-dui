@@ -10,11 +10,7 @@
 
 ### Mapping Usager
 
-#### Mapping mobilité
-
-#### Mapping CauseDeces
-
-#### Mapping PeriodeScolaire
+### Mapping PeriodeScolaire
 
 ### Mapping Contact
 

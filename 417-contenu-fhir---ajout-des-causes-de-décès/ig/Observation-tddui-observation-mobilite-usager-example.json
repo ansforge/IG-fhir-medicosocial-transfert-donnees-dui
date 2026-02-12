@@ -1,0 +1,29 @@
+{
+  "resourceType" : "Observation",
+  "id" : "tddui-observation-mobilite-usager-example",
+  "meta" : {
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite-usager"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Observation tddui-observation-mobilite-usager-example</b></p><a name=\"tddui-observation-mobilite-usager-example\"> </a><a name=\"hctddui-observation-mobilite-usager-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-observation-mobilite-usager.html\">TDDUI Obervation Mobilite Usager</a></p></div><p><b>status</b>: Registered</p><p><b>code</b>: <span title=\"Codes :{http://loinc.org LP73551-1}\">Transport mode</span></p><p><b>subject</b>: <a href=\"Patient-tddui-patient-ins-example.html\">DUPONT  Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/194704032)</a></p><p><b>value</b>: <span title=\"Codes :{https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis ORG-160}\">VSL</span></p></div>"
+  },
+  "status" : "registered",
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "LP73551-1",
+      "display" : "Transport mode"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/tddui-patient-ins-example"
+  },
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+      "code" : "ORG-160",
+      "display" : "VSL"
+    }]
+  }
+}

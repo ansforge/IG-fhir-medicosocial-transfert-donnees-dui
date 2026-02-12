@@ -66,7 +66,7 @@
   <name value="TDDUIObservationPeriodeScolaire"/>
   <title value="TDDUI Obervation Periode Scolaire"/>
   <status value="active"/>
-  <date value="2026-02-11T15:08:15+00:00"/>
+  <date value="2026-02-12T14:50:08+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -1627,6 +1627,10 @@
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
+        <identity value="specmetier-to-TDDUIObservationPeriodeScolaire"/>
+        <map value="ReferentScolaire"/>
+      </mapping>
+      <mapping>
         <identity value="workflow"/>
         <map value="Event.performer.actor"/>
       </mapping>
@@ -1670,6 +1674,10 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="true"/>
+      <mapping>
+        <identity value="specmetier-to-TDDUIObservationPeriodeScolaire"/>
+        <map value="Ecole"/>
+      </mapping>
       <mapping>
         <identity value="workflow"/>
         <map value="Event.performer.actor"/>
@@ -5139,6 +5147,10 @@
         <code value="Reference"/>
         <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact"/>
       </type>
+      <mapping>
+        <identity value="specmetier-to-TDDUIObservationPeriodeScolaire"/>
+        <map value="ReferentScolaire"/>
+      </mapping>
     </element>
     <element id="Observation.performer:ecole">
       <path value="Observation.performer"/>
@@ -5149,6 +5161,10 @@
         <code value="Reference"/>
         <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization"/>
       </type>
+      <mapping>
+        <identity value="specmetier-to-TDDUIObservationPeriodeScolaire"/>
+        <map value="Ecole"/>
+      </mapping>
     </element>
     <element id="Observation.note">
       <path value="Observation.note"/>

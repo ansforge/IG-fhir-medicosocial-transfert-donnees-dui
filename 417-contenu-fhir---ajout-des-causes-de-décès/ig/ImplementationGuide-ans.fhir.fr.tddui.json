@@ -10,7 +10,7 @@
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2026-02-11T15:08:15+00:00",
+  "date" : "2026-02-12T14:50:08+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -782,9 +782,9 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/tddui-causes-deces"
+        "reference" : "ValueSet/tddui-cim-10"
       },
-      "name" : "TDDUI Causes Deces",
+      "name" : "TDDUI CIM10",
       "description" : "ValueSet incluant les codes de la terminologie CIM-1O.",
       "exampleBoolean" : false
     },
@@ -1202,9 +1202,9 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/tddui-observation-mobilite"
+        "reference" : "StructureDefinition/tddui-observation-mobilite-usager"
       },
-      "name" : "TDDUI Obervation Mobilite",
+      "name" : "TDDUI Obervation Mobilite Usager",
       "description" : "Profil de la ressource Observation permettant de représenter la mobilité de l'usager.",
       "exampleBoolean" : false
     },
@@ -1226,10 +1226,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/tddui-observation-cause-deces"
+        "reference" : "StructureDefinition/tddui-observation-cause-mortalite"
       },
-      "name" : "TDDUI Observation Cause Deces",
-      "description" : "Profil de la ressource Observation permettant de représenter les causes de décès d'un usager.",
+      "name" : "TDDUI Observation Cause Mortalite",
+      "description" : "Profil de la ressource Observation permettant de représenter les causes de mortalité d'un usager.",
       "exampleBoolean" : false
     },
     {
@@ -1238,11 +1238,11 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/tddui-observation-cause-deces-example"
+        "reference" : "Observation/tddui-observation-cause-mortalite-example"
       },
-      "name" : "TDDUI Observation CauseDeces Example",
-      "description" : "Exemple de la ressource TDDUIObservationCauseDeces",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-deces"
+      "name" : "TDDUI Observation Cause Mortalite Example",
+      "description" : "Exemple de la ressource TDDUIObservationMortalite",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-mortalite"
     },
     {
       "extension" : [{
@@ -1298,11 +1298,11 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/tddui-observation-mobilite-example"
+        "reference" : "Observation/tddui-observation-mobilite-usager-example"
       },
-      "name" : "TDDUI Obsrvation Mobilite Example",
-      "description" : "Exemple de la ressource TDDUIObservationMobilite",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite"
+      "name" : "TDDUI Obsrvation Mobilite Usager Example",
+      "description" : "Exemple de la ressource TDDUIObservationMobiliteUsager",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite-usager"
     },
     {
       "extension" : [{

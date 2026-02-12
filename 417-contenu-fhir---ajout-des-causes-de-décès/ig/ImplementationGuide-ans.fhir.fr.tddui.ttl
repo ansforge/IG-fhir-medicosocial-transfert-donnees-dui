@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "TDDUI"] ; # 
   fhir:title [ fhir:v "Médicosocial - Transfert de données DUI"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-02-11T15:08:15+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-02-12T14:50:08+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -1613,10 +1613,10 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-causes-deces> ;
-         fhir:reference [ fhir:v "ValueSet/tddui-causes-deces" ]
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-cim-10> ;
+         fhir:reference [ fhir:v "ValueSet/tddui-cim-10" ]
        ] ;
-       fhir:name [ fhir:v "TDDUI Causes Deces" ] ;
+       fhir:name [ fhir:v "TDDUI CIM10" ] ;
        fhir:description [ fhir:v "ValueSet incluant les codes de la terminologie CIM-1O." ] ;
        fhir:example [
          a fhir:Boolean ;
@@ -2350,10 +2350,10 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite> ;
-         fhir:reference [ fhir:v "StructureDefinition/tddui-observation-mobilite" ]
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite-usager> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-observation-mobilite-usager" ]
        ] ;
-       fhir:name [ fhir:v "TDDUI Obervation Mobilite" ] ;
+       fhir:name [ fhir:v "TDDUI Obervation Mobilite Usager" ] ;
        fhir:description [ fhir:v "Profil de la ressource Observation permettant de représenter la mobilité de l'usager." ] ;
        fhir:example [
          a fhir:Boolean ;
@@ -2392,11 +2392,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-deces> ;
-         fhir:reference [ fhir:v "StructureDefinition/tddui-observation-cause-deces" ]
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-mortalite> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-observation-cause-mortalite" ]
        ] ;
-       fhir:name [ fhir:v "TDDUI Observation Cause Deces" ] ;
-       fhir:description [ fhir:v "Profil de la ressource Observation permettant de représenter les causes de décès d'un usager." ] ;
+       fhir:name [ fhir:v "TDDUI Observation Cause Mortalite" ] ;
+       fhir:description [ fhir:v "Profil de la ressource Observation permettant de représenter les causes de mortalité d'un usager." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -2413,15 +2413,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Observation/tddui-observation-cause-deces-example> ;
-         fhir:reference [ fhir:v "Observation/tddui-observation-cause-deces-example" ]
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Observation/tddui-observation-cause-mortalite-example> ;
+         fhir:reference [ fhir:v "Observation/tddui-observation-cause-mortalite-example" ]
        ] ;
-       fhir:name [ fhir:v "TDDUI Observation CauseDeces Example" ] ;
-       fhir:description [ fhir:v "Exemple de la ressource TDDUIObservationCauseDeces" ] ;
+       fhir:name [ fhir:v "TDDUI Observation Cause Mortalite Example" ] ;
+       fhir:description [ fhir:v "Exemple de la ressource TDDUIObservationMortalite" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-deces"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-deces>
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-mortalite"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-mortalite>
        ]
      ] [
        fhir:extension ( [
@@ -2519,15 +2519,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Observation/tddui-observation-mobilite-example> ;
-         fhir:reference [ fhir:v "Observation/tddui-observation-mobilite-example" ]
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Observation/tddui-observation-mobilite-usager-example> ;
+         fhir:reference [ fhir:v "Observation/tddui-observation-mobilite-usager-example" ]
        ] ;
-       fhir:name [ fhir:v "TDDUI Obsrvation Mobilite Example" ] ;
-       fhir:description [ fhir:v "Exemple de la ressource TDDUIObservationMobilite" ] ;
+       fhir:name [ fhir:v "TDDUI Obsrvation Mobilite Usager Example" ] ;
+       fhir:description [ fhir:v "Exemple de la ressource TDDUIObservationMobiliteUsager" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite>
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite-usager"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite-usager>
        ]
      ] [
        fhir:extension ( [

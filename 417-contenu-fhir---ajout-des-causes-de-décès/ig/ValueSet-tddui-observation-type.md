@@ -9,15 +9,15 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-observation-type | *Version*:2.2.0-ballot |
-| Active as of 2026-02-11 | *Computable Name*:TDDUIObservationType |
+| Active as of 2026-02-12 | *Computable Name*:TDDUIObservationType |
 
  
 ValueSet for the Observation types. 
 
  **References** 
 
-* [TDDUI Observation Cause Deces](StructureDefinition-tddui-observation-cause-deces.md)
-* [TDDUI Obervation Mobilite](StructureDefinition-tddui-observation-mobilite.md)
+* [TDDUI Observation Cause Mortalite](StructureDefinition-tddui-observation-cause-mortalite.md)
+* [TDDUI Obervation Mobilite Usager](StructureDefinition-tddui-observation-mobilite-usager.md)
 * [TDDUI Obervation Periode Scolaire](StructureDefinition-tddui-observation-periode-scolaire.md)
 
 ### Définition logique (CLD)
@@ -56,7 +56,7 @@ ValueSet for the Observation types.
   "title" : "TDDUI Observation Type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-11T15:08:15+00:00",
+  "date" : "2026-02-12T14:50:08+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -85,6 +85,19 @@ ValueSet for the Observation types.
     "include" : [
       {
         "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-type"
+      },
+      {
+        "system" : "http://loinc.org",
+        "concept" : [
+          {
+            "code" : "79378-6",
+            "display" : "Cause of death"
+          },
+          {
+            "code" : "LP73551-1",
+            "display" : "Transport mode"
+          }
+        ]
       }
     ]
   }

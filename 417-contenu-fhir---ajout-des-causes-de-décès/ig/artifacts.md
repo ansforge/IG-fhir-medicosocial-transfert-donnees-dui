@@ -41,9 +41,9 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md) | Profil de la ressource Encounter permettant de regrouper les informations relatives au séjour d'un usager dans une structure ESSMS |
 | [TDDUI Goal Attente](StructureDefinition-tddui-goal-attente.md) | Profil de la ressource Goal permettant de représenter les attentes pour un usager. |
 | [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md) | Profil de la ressource Goal permettant de représenter les résultats à atteindre dans le cadre du projet personnalisé. |
-| [TDDUI Obervation Mobilite](StructureDefinition-tddui-observation-mobilite.md) | Profil de la ressource Observation permettant de représenter la mobilité de l'usager. |
+| [TDDUI Obervation Mobilite Usager](StructureDefinition-tddui-observation-mobilite-usager.md) | Profil de la ressource Observation permettant de représenter la mobilité de l'usager. |
 | [TDDUI Obervation Periode Scolaire](StructureDefinition-tddui-observation-periode-scolaire.md) | Profil de la ressource Observation permettant de représenter la période scolaire de l'usager. |
-| [TDDUI Observation Cause Deces](StructureDefinition-tddui-observation-cause-deces.md) | Profil de la ressource Observation permettant de représenter les causes de décès d'un usager. |
+| [TDDUI Observation Cause Mortalite](StructureDefinition-tddui-observation-cause-mortalite.md) | Profil de la ressource Observation permettant de représenter les causes de mortalité d'un usager. |
 | [TDDUI Organization](StructureDefinition-tddui-organization.md) | Profil de la ressource FRCoreOrganizationProfile permettant de représenter les entités juridiques. |
 | [TDDUI Patient](StructureDefinition-tddui-patient.md) | Profil de la ressource FrCorePatientProfile permettant de représenter un usager lorsque l'INS n'est pas transmis. |
 | [TDDUI Patient INS](StructureDefinition-tddui-patient-ins.md) | Profil de la ressource FRCorePatientINSProfile permettant de représenter un usager lorsque l'INS est transmis. |
@@ -112,8 +112,8 @@ These define sets of codes used by systems conforming to this implementation gui
 
 | | |
 | :--- | :--- |
+| [TDDUI CIM10](ValueSet-tddui-cim-10.md) | ValueSet incluant les codes de la terminologie CIM-1O. |
 | [TDDUI CarePlan supportingInfo](ValueSet-tddui-care-plan-supporting-info.md) | ValueSet définissant les types de notes pour l'élément CarePlan.supportingInfo. |
-| [TDDUI Causes Deces](ValueSet-tddui-causes-deces.md) | ValueSet incluant les codes de la terminologie CIM-1O. |
 | [TDDUI Contact Protection Juridique](ValueSet-tddui-contact-protection-juridique.md) | ValueSet définissant la protection juridique. |
 | [TDDUI Contact Relation](ValueSet-tddui-contact-relation.md) | ValueSet définissant les relations. |
 | [TDDUI Discriminator](ValueSet-tddui-discriminator.md) | ValueSet définissant les codes discriminants. |
@@ -163,8 +163,8 @@ These are example instances that show what data produced and consumed by systems
 | [TDDUI Encounter Evenement Example](Encounter-tddui-encounter-evenement-example.md) | Exemple d'un évènement |
 | [TDDUI Encounter Sejour Example](Encounter-tddui-encounter-sejour-example.md) | Exemple d'un séjour en ESSMS |
 | [TDDUI Event Location Example](Location-tddui-event-location-example.md) | Lieu de l'évènement |
-| [TDDUI Observation CauseDeces Example](Observation-tddui-observation-cause-deces-example.md) | Exemple de la ressource TDDUIObservationCauseDeces |
-| [TDDUI Obsrvation Mobilite Example](Observation-tddui-observation-mobilite-example.md) | Exemple de la ressource TDDUIObservationMobilite |
+| [TDDUI Observation Cause Mortalite Example](Observation-tddui-observation-cause-mortalite-example.md) | Exemple de la ressource TDDUIObservationMortalite |
+| [TDDUI Obsrvation Mobilite Usager Example](Observation-tddui-observation-mobilite-usager-example.md) | Exemple de la ressource TDDUIObservationMobiliteUsager |
 | [TDDUI Obsrvation PeriodeScolaire Example](Observation-tddui-observation-periodescolaire-example.md) | Exemple de la ressource TDDUIObservationPeriodeScolaire |
 | [TDDUI Organization Example](Organization-tddui-organization-example.md) | ESSMS - Les Chênes Verts |
 | [TDDUI PP IME Bundle Example](Bundle-tddui-pp-ime-bundle-example.md) | Exemple de bundle conforme au profil TDDUIBundle contenant le projet personnalisé en IME |

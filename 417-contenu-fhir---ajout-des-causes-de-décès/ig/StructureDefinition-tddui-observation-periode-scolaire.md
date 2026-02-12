@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-periode-scolaire | *Version*:2.2.0-ballot |
-| Active as of 2026-02-11 | *Computable Name*:TDDUIObservationPeriodeScolaire |
+| Active as of 2026-02-12 | *Computable Name*:TDDUIObservationPeriodeScolaire |
 
  
 Profil de la ressource Observation permettant de représenter la période scolaire de l'usager. 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-pe
   "name" : "TDDUIObservationPeriodeScolaire",
   "title" : "TDDUI Obervation Periode Scolaire",
   "status" : "active",
-  "date" : "2026-02-11T15:08:15+00:00",
+  "date" : "2026-02-12T14:50:08+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -255,6 +255,12 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-pe
               "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact"
             ]
           }
+        ],
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIObservationPeriodeScolaire",
+            "map" : "ReferentScolaire"
+          }
         ]
       },
       {
@@ -269,6 +275,12 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-pe
             "targetProfile" : [
               "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization"
             ]
+          }
+        ],
+        "mapping" : [
+          {
+            "identity" : "specmetier-to-TDDUIObservationPeriodeScolaire",
+            "map" : "Ecole"
           }
         ]
       },

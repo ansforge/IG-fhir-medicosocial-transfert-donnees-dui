@@ -10,7 +10,7 @@
   <name value="TDDUI"/>
   <title value="Médicosocial - Transfert de données DUI"/>
   <status value="active"/>
-  <date value="2026-02-11T15:08:15+00:00"/>
+  <date value="2026-02-12T14:50:08+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -602,9 +602,9 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/tddui-causes-deces"/>
+        <reference value="ValueSet/tddui-cim-10"/>
       </reference>
-      <name value="TDDUI Causes Deces"/>
+      <name value="TDDUI CIM10"/>
       <description value="ValueSet incluant les codes de la terminologie CIM-1O."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -987,9 +987,9 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/tddui-observation-mobilite"/>
+        <reference value="StructureDefinition/tddui-observation-mobilite-usager"/>
       </reference>
-      <name value="TDDUI Obervation Mobilite"/>
+      <name value="TDDUI Obervation Mobilite Usager"/>
       <description value="Profil de la ressource Observation permettant de représenter la mobilité de l'usager."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1009,10 +1009,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/tddui-observation-cause-deces"/>
+        <reference value="StructureDefinition/tddui-observation-cause-mortalite"/>
       </reference>
-      <name value="TDDUI Observation Cause Deces"/>
-      <description value="Profil de la ressource Observation permettant de représenter les causes de décès d'un usager."/>
+      <name value="TDDUI Observation Cause Mortalite"/>
+      <description value="Profil de la ressource Observation permettant de représenter les causes de mortalité d'un usager."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1020,11 +1020,11 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/tddui-observation-cause-deces-example"/>
+        <reference value="Observation/tddui-observation-cause-mortalite-example"/>
       </reference>
-      <name value="TDDUI Observation CauseDeces Example"/>
-      <description value="Exemple de la ressource TDDUIObservationCauseDeces"/>
-      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-deces"/>
+      <name value="TDDUI Observation Cause Mortalite Example"/>
+      <description value="Exemple de la ressource TDDUIObservationMortalite"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-mortalite"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1075,11 +1075,11 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/tddui-observation-mobilite-example"/>
+        <reference value="Observation/tddui-observation-mobilite-usager-example"/>
       </reference>
-      <name value="TDDUI Obsrvation Mobilite Example"/>
-      <description value="Exemple de la ressource TDDUIObservationMobilite"/>
-      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite"/>
+      <name value="TDDUI Obsrvation Mobilite Usager Example"/>
+      <description value="Exemple de la ressource TDDUIObservationMobiliteUsager"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite-usager"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

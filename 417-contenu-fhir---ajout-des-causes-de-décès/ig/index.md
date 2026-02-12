@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui | *Version*:2.2.0-ballot |
-| Active as of 2026-02-11 | *Computable Name*:TDDUI |
+| Active as of 2026-02-12 | *Computable Name*:TDDUI |
 
  **Brief description of this Implementation Guide**
  The Digital User File (DUI) centralizes all information concerning the person being cared for in social and medico-social facilities and services. The aim of this implementation guide is to define the specifications for DUI data transfer. 
@@ -80,8 +80,8 @@ Les ressources profilées dans le cadre de ce guide d'implémentation sont les s
 | [Encounter](http://hl7.org/fhir/StructureDefinition/Encounter) | [TDDUIEncounterSejour](StructureDefinition-tddui-encounter-sejour.md) | Profil de la ressource Encounter permettant de regrouper les informations relatives au séjour d'un usager dans une structure ESSMS |
 | [Goal](http://hl7.org/fhir/StructureDefinition/Goal) | [TDDUIGoalAttente](StructureDefinition-tddui-goal-attente.md) | Profil de la ressource Goal permettant de représenter les attentes pour un usager. |
 | [Goal](http://hl7.org/fhir/StructureDefinition/Goal) | [TDDUIGoalObjectif](StructureDefinition-tddui-goal-objectif.md) | Profil de la ressource Goal permettant de représenter les résultats à atteindre dans le cadre du projet personnalisé. |
-| [Observation](http://hl7.org/fhir/StructureDefinition/Observation) | [TDDUIObservationCauseDeces](StructureDefinition-tddui-observation-cause-deces.md) | Profil de la ressource Observation permettant de représenter les causes de décès d'un usager. |
-| [Observation](http://hl7.org/fhir/StructureDefinition/Observation) | [TDDUIObservationMobilite](StructureDefinition-tddui-observation-mobilite.md) | Profil de la ressource Observation permettant de représenter la mobilité de l'usager. |
+| [Observation](http://hl7.org/fhir/StructureDefinition/Observation) | [TDDUIObservationCauseMortalite](StructureDefinition-tddui-observation-cause-mortalite.md) | Profil de la ressource Observation permettant de représenter les causes de mortalité d'un usager. |
+| [Observation](http://hl7.org/fhir/StructureDefinition/Observation) | [TDDUIObservationMobiliteUsager](StructureDefinition-tddui-observation-mobilite-usager.md) | Profil de la ressource Observation permettant de représenter la mobilité de l'usager. |
 | [Observation](http://hl7.org/fhir/StructureDefinition/Observation) | [TDDUIObservationPeriodeScolaire](StructureDefinition-tddui-observation-periode-scolaire.md) | Profil de la ressource Observation permettant de représenter la période scolaire de l'usager. |
 | [FR Core Organization Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization) | [TDDUIOrganization](StructureDefinition-tddui-organization.md) | Profil de la ressource FRCoreOrganizationProfile permettant de représenter les entités juridiques. |
 | [FR Core Patient Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient) | [TDDUIPatient](StructureDefinition-tddui-patient.md) | Profil de la ressource FrCorePatientProfile permettant de représenter un usager lorsque l'INS n'est pas transmis. |
@@ -144,7 +144,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2026-02-11T15:08:15+00:00",
+  "date" : "2026-02-12T14:50:08+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -1059,9 +1059,9 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           }
         ],
         "reference" : {
-          "reference" : "ValueSet/tddui-causes-deces"
+          "reference" : "ValueSet/tddui-cim-10"
         },
-        "name" : "TDDUI Causes Deces",
+        "name" : "TDDUI CIM10",
         "description" : "ValueSet incluant les codes de la terminologie CIM-1O.",
         "exampleBoolean" : false
       },
@@ -1549,9 +1549,9 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/tddui-observation-mobilite"
+          "reference" : "StructureDefinition/tddui-observation-mobilite-usager"
         },
-        "name" : "TDDUI Obervation Mobilite",
+        "name" : "TDDUI Obervation Mobilite Usager",
         "description" : "Profil de la ressource Observation permettant de représenter la mobilité de l'usager.",
         "exampleBoolean" : false
       },
@@ -1577,10 +1577,10 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/tddui-observation-cause-deces"
+          "reference" : "StructureDefinition/tddui-observation-cause-mortalite"
         },
-        "name" : "TDDUI Observation Cause Deces",
-        "description" : "Profil de la ressource Observation permettant de représenter les causes de décès d'un usager.",
+        "name" : "TDDUI Observation Cause Mortalite",
+        "description" : "Profil de la ressource Observation permettant de représenter les causes de mortalité d'un usager.",
         "exampleBoolean" : false
       },
       {
@@ -1591,11 +1591,11 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           }
         ],
         "reference" : {
-          "reference" : "Observation/tddui-observation-cause-deces-example"
+          "reference" : "Observation/tddui-observation-cause-mortalite-example"
         },
-        "name" : "TDDUI Observation CauseDeces Example",
-        "description" : "Exemple de la ressource TDDUIObservationCauseDeces",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-deces"
+        "name" : "TDDUI Observation Cause Mortalite Example",
+        "description" : "Exemple de la ressource TDDUIObservationMortalite",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-mortalite"
       },
       {
         "extension" : [
@@ -1661,11 +1661,11 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
           }
         ],
         "reference" : {
-          "reference" : "Observation/tddui-observation-mobilite-example"
+          "reference" : "Observation/tddui-observation-mobilite-usager-example"
         },
-        "name" : "TDDUI Obsrvation Mobilite Example",
-        "description" : "Exemple de la ressource TDDUIObservationMobilite",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite"
+        "name" : "TDDUI Obsrvation Mobilite Usager Example",
+        "description" : "Exemple de la ressource TDDUIObservationMobiliteUsager",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite-usager"
       },
       {
         "extension" : [
