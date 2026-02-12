@@ -22,9 +22,30 @@ map "**UsagerINS : TDDUIPatientINS**" as UsagerINS #back:MintCream;header:LightS
     numeroIndividuInitial => <&layers> identifier:InitialNumberMDPH
     sexe => gender
     dateNaissance => birthDate
-    <&layers> name:usualName *-> nameusualName
-    <&layers> name:officialName *--> nameofficialName
+    <&layers> name:usualName *--> nameusualName
+    <&layers> name:officialName *-> nameofficialName
 }
+
+map "component" as component #DarkGray {
+    causeMortalite => <&layers> value[x]:valueCodeableConcept
+}
+
+map "**CauseMortalite : TDDUIObservationCauseMortalite**" as CauseMortalite #fb8072 {
+    component *-> component
+}
+
+map "component" as componentMobilite #DarkGray {
+    observationAmenagement => value[x]
+}
+
+map "**MobiliteUsager : TDDUIObservationMobiliteUsager**" as MobiliteUsager #fb8072 {
+    type => value[x]
+    component *-> componentMobilite
+}
+
+UsagerINS -u-> CauseMortalite
+UsagerINS --> MobiliteUsager
+
 
 
 @enduml

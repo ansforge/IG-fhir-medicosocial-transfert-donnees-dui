@@ -1,6 +1,6 @@
-ValueSet: TDDUICausesDeces
-Id: tddui-causes-deces
-Title: "TDDUI Causes Deces"
+ValueSet: TDDUICIM10
+Id: tddui-cim-10
+Title: "TDDUI CIM10"
 Description: "ValueSet incluant les codes de la terminologie CIM-1O."
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^experimental = false

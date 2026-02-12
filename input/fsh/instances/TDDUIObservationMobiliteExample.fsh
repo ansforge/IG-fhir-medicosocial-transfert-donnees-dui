@@ -1,7 +1,7 @@
-Instance: tddui-observation-mobilite-example
-InstanceOf: TDDUIObservationMobilite
-Title: "TDDUI Obsrvation Mobilite Example"
-Description: "Exemple de la ressource TDDUIObservationMobilite"
+Instance: tddui-observation-mobilite-usager-example
+InstanceOf: TDDUIObservationMobiliteUsager
+Title: "TDDUI Obsrvation Mobilite Usager Example"
+Description: "Exemple de la ressource TDDUIObservationMobiliteUsager"
 Usage: #example
 
 * status = #registered

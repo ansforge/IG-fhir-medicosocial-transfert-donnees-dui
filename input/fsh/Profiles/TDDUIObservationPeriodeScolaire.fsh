@@ -61,6 +61,8 @@ Title:    "Modèle de contenu DUI"
 * -> "PeriodeScolaire"
 
 * identifier -> "idPeriodeScolaire"
+* performer[referentScolaire] -> "ReferentScolaire"
+* performer[ecole] -> "Ecole"
 * effectivePeriod.start -> "dateDebutPeriodeScolaire"
 * effectivePeriod.end -> "dateFinPeriodeScolaire"
 * component[niveauScolaireReel] -> "niveauScolaireReel"

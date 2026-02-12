@@ -1,7 +1,7 @@
-Instance: tddui-observation-cause-deces-example
-InstanceOf: TDDUIObservationCauseDeces
-Title: "TDDUI Observation CauseDeces Example"
-Description: "Exemple de la ressource TDDUIObservationCauseDeces"
+Instance: tddui-observation-cause-mortalite-example
+InstanceOf: TDDUIObservationCauseMortalite
+Title: "TDDUI Observation Cause Mortalite Example"
+Description: "Exemple de la ressource TDDUIObservationMortalite"
 Usage: #example
 
 * status = #registered

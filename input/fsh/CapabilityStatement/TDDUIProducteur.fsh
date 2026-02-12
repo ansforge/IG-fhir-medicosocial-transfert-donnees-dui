@@ -79,9 +79,9 @@ Usage: #definition
 * rest.resource[=].interaction[0].code = #create
 
 * rest.resource[13].type = #Observation
-* rest.resource[=].supportedProfile[0] = Canonical(tddui-observation-cause-deces)
+* rest.resource[=].supportedProfile[0] = Canonical(tddui-observation-cause-mortalite)
 * rest.resource[=].supportedProfile[+] = Canonical(tddui-observation-periode-scolaire)
-* rest.resource[=].supportedProfile[+] = Canonical(tddui-observation-mobilite)
+* rest.resource[=].supportedProfile[+] = Canonical(tddui-observation-mobilite-usager)
 * rest.resource[=].interaction[0].code = #create
 
 * rest.interaction[0].code = #transaction

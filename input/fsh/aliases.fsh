@@ -12,6 +12,7 @@ Alias: $terminologie-cisis = https://smt.esante.gouv.fr/fhir/CodeSystem/terminol
 Alias: $icf = http://hl7.org/fhir/sid/icf
 Alias: $terminologie-SERAFINPH = https://smt.esante.gouv.fr/terminologie-SERAFINPH
 Alias: $terminologie-cim-10 = https://smt.esante.gouv.fr/terminologie-cim-10
+Alias: $loinc = http://loinc.org
 
 // ANS
 Alias: $TRE-R81-Civilite = https://mos.esante.gouv.fr/NOS/TRE_R81-Civilite/FHIR/TRE-R81-Civilite

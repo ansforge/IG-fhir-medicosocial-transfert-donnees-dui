@@ -1,5 +1,13 @@
 @startuml
 
+object "**TDDUIOrganization**" as TDDUIOrganization #d9d9d9 {
+    Ecole
+}
+
+object "**TDDUIRelatedPersonContact**" as TDDUIRelatedPersonContact #bebada {
+    ReferentScolaire
+}
+
 map "<&layers> effective[x]:effectivePeriod" as effectivexeffectivePeriod #DarkGray {
     dateDebutPeriodeScolaire => start
     dateFinPeriodeScolaire => end
@@ -15,6 +23,9 @@ map "**PeriodeScolaire : TDDUIObservationPeriodeScolaire**" as PeriodeScolaire #
     volumeScolarisation => <&layers> component:volumeScolarisation
     <&layers> effective[x]:effectivePeriod *-> effectivexeffectivePeriod
 }
+
+PeriodeScolaire -u-> TDDUIOrganization : performer
+PeriodeScolaire -u-> TDDUIRelatedPersonContact : performer
 
 
 @enduml

@@ -8,6 +8,4 @@ Description: "CodeSystem for the Observation types"
 * ^content = #complete
 * ^experimental = false
 
-* #CAUSEDECES "Cause de décès"
 * #PERIODESCOL "Période scolaire"
-* #MOBILITE "Mobilité"

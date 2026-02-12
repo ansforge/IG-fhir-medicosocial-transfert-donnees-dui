@@ -6,3 +6,5 @@ Description: "ValueSet for the Observation types."
 * ^experimental = false
 
 * include codes from system TDDUIObservationType
+* include $loinc#79378-6 "Cause of death"
+* include $loinc#LP73551-1  "Transport mode"
