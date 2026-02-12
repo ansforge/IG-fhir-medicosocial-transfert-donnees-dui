@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order | *Version*:2.2.0-ballot |
-| Active as of 2026-02-11 | *Computable Name*:TDDUIBirthOrder |
+| Active as of 2026-02-12 | *Computable Name*:TDDUIBirthOrder |
 
 Ordre d’enregistrement de la naissance dans le registre d’état civil de la commune de naissance pour le mois de la naissance. Il compose les 3 derniers chiffres du NIR de l'usager avant la clé de sécurité et permet de distinguer les personnes nées au même lieu et à la même période. Il est obligatoire si le NIR n'est pas transmis.
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-birth-order.cs
   "name" : "TDDUIBirthOrder",
   "title" : "Ordre de naissance dans le registre d'état civil",
   "status" : "active",
-  "date" : "2026-02-11T14:29:56+00:00",
+  "date" : "2026-02-12T14:43:45+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

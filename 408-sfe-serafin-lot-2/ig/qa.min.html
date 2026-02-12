@@ -47,7 +47,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for TDDUI</h1>
- <p>Generated Wed Feb 11 14:35:23 UTC 2026, FHIR version 4.0.1 for ans.fhir.fr.tddui#2.2.0-ballot (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/tddui">https://interop.esante.gouv.fr/ig/fhir/tddui</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/tddui/history.html">history</a>)). See <a href="qa.html">Full QA Report</a> &amp; <a href="qa-ipreview.html">IP</a></p>
+ <p>Generated Thu Feb 12 14:49:37 UTC 2026, FHIR version 4.0.1 for ans.fhir.fr.tddui#2.2.0-ballot (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/tddui">https://interop.esante.gouv.fr/ig/fhir/tddui</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/tddui/history.html">history</a>)). See <a href="qa.html">Full QA Report</a> &amp; <a href="qa-ipreview.html">IP</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v2.1.0</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ans.fhir.fr.tddui, Canonical = https://interop.esante.gouv.fr/ig/fhir/tddui</td></tr>
@@ -1328,35 +1328,35 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[0]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c143941)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l18">log</a>, or see <a href="#vmi4961" onClick="document.getElementById('vmi4961').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi4961" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[0]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c144043)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l19">log</a>, or see <a href="#vmi4962" onClick="document.getElementById('vmi4962').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi4962" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[1]&#8203;.code[0]&#8203;.display (l1&#8203;/c145009)</b></td><td><b>information</b></td><td><b>'Orientation functions' is the default display; the code system http://hl7.org/fhir/sid/icf has no Display Names for the language fr</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l20">log</a>, or see <a href="#vmi4963" onClick="document.getElementById('vmi4963').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_LANG_NONE</span><div id="vmi4963" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#b114 ("Orientation functions")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#b114"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#b114 ("Orientation functions")]"
+15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#b114"
+15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1372,24 +1372,24 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[1]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c145310)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l18">log</a>, or see <a href="#vmi4965" onClick="document.getElementById('vmi4965').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi4965" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[1]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c145412)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l19">log</a>, or see <a href="#vmi4966" onClick="document.getElementById('vmi4966').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi4966" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -1416,35 +1416,35 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[2]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c146691)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l18">log</a>, or see <a href="#vmi4969" onClick="document.getElementById('vmi4969').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi4969" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[2]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c146793)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l19">log</a>, or see <a href="#vmi4970" onClick="document.getElementById('vmi4970').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi4970" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[3]&#8203;.code[0]&#8203;.display (l1&#8203;/c147747)</b></td><td><b>information</b></td><td><b>'Caring for body parts' is the default display; the code system http://hl7.org/fhir/sid/icf has no Display Names for the language fr</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l22">log</a>, or see <a href="#vmi4971" onClick="document.getElementById('vmi4971').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_LANG_NONE</span><div id="vmi4971" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d520 ("Caring for body parts")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#d520"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d520 ("Caring for body parts")]"
+15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#d520"
+15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1460,35 +1460,35 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[3]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c148062)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l18">log</a>, or see <a href="#vmi4973" onClick="document.getElementById('vmi4973').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi4973" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[3]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c148164)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l19">log</a>, or see <a href="#vmi4974" onClick="document.getElementById('vmi4974').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi4974" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[4]&#8203;.code[0]&#8203;.display (l1&#8203;/c149147)</b></td><td><b>information</b></td><td><b>'Putting on clothes' is the default display; the code system http://hl7.org/fhir/sid/icf has no Display Names for the language fr</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l23">log</a>, or see <a href="#vmi4975" onClick="document.getElementById('vmi4975').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_LANG_NONE</span><div id="vmi4975" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d5400 ("Putting on clothes")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#d5400"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d5400 ("Putting on clothes")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#d5400"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1504,24 +1504,24 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[4]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c149445)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l18">log</a>, or see <a href="#vmi4977" onClick="document.getElementById('vmi4977').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi4977" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[4]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c149547)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l19">log</a>, or see <a href="#vmi4978" onClick="document.getElementById('vmi4978').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi4978" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -1532,7 +1532,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
 0 0     : 0ms  : Prepare include: "()"
 0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d440 ("Fine hand use")]"
 0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#d440"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 15ms : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1548,24 +1548,24 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[5]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c150840)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l18">log</a>, or see <a href="#vmi4981" onClick="document.getElementById('vmi4981').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi4981" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[5]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c150942)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l19">log</a>, or see <a href="#vmi4982" onClick="document.getElementById('vmi4982').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi4982" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -1592,24 +1592,24 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[6]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c152234)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l18">log</a>, or see <a href="#vmi4985" onClick="document.getElementById('vmi4985').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi4985" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[6]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c152336)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l19">log</a>, or see <a href="#vmi4986" onClick="document.getElementById('vmi4986').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi4986" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -1636,24 +1636,24 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[7]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c153597)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l18">log</a>, or see <a href="#vmi4989" onClick="document.getElementById('vmi4989').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi4989" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[7]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c153699)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l19">log</a>, or see <a href="#vmi4990" onClick="document.getElementById('vmi4990').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi4990" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -1664,7 +1664,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
 0 0     : 0ms  : Prepare include: "()"
 0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#b5105 ("Swallowing")]"
 0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#b5105"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 16ms : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1680,35 +1680,35 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[8]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c154979)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l18">log</a>, or see <a href="#vmi4993" onClick="document.getElementById('vmi4993').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi4993" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[8]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c155081)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l19">log</a>, or see <a href="#vmi4994" onClick="document.getElementById('vmi4994').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi4994" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
-</pre></div></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Questionnaire&#8203;.item[0]&#8203;.item[9]&#8203;.code[0]&#8203;.display (l1&#8203;/c156089)</b></td><td><b>information</b></td><td><b>'Regulating urination' is the default display; the code system http://hl7.org/fhir/sid/icf has no Display Names for the language fr</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l28">log</a>, or see <a href="#vmi4995" onClick="document.getElementById('vmi4995').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_LANG_NONE</span><div id="vmi4995" style="display:none"><br/><pre>0 0 : start
 16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
 16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
 16 0    : 0ms  : Prepare include: "()"
-16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d5300 ("Regulating urination")]"
-16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#d5300"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
 16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+</pre></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Questionnaire&#8203;.item[0]&#8203;.item[9]&#8203;.code[0]&#8203;.display (l1&#8203;/c156089)</b></td><td><b>information</b></td><td><b>'Regulating urination' is the default display; the code system http://hl7.org/fhir/sid/icf has no Display Names for the language fr</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l28">log</a>, or see <a href="#vmi4995" onClick="document.getElementById('vmi4995').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_LANG_NONE</span><div id="vmi4995" style="display:none"><br/><pre>0 0 : start
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
+0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+0 0     : 0ms  : Prepare include: "()"
+0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d5300 ("Regulating urination")]"
+0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#d5300"
+0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1724,35 +1724,35 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[9]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c156402)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l18">log</a>, or see <a href="#vmi4997" onClick="document.getElementById('vmi4997').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi4997" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[9]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c156504)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l19">log</a>, or see <a href="#vmi4998" onClick="document.getElementById('vmi4998').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi4998" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
-</pre></div></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Questionnaire&#8203;.item[0]&#8203;.item[10]&#8203;.code[0]&#8203;.display (l1&#8203;/c157484)</b></td><td><b>information</b></td><td><b>'Regulating defecation' is the default display; the code system http://hl7.org/fhir/sid/icf has no Display Names for the language fr</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l29">log</a>, or see <a href="#vmi4999" onClick="document.getElementById('vmi4999').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_LANG_NONE</span><div id="vmi4999" style="display:none"><br/><pre>0 0 : start
 16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
 16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
 16 0    : 0ms  : Prepare include: "()"
-16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d5301 ("Regulating defecation")]"
-16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#d5301"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
 16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+</pre></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Questionnaire&#8203;.item[0]&#8203;.item[10]&#8203;.code[0]&#8203;.display (l1&#8203;/c157484)</b></td><td><b>information</b></td><td><b>'Regulating defecation' is the default display; the code system http://hl7.org/fhir/sid/icf has no Display Names for the language fr</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l29">log</a>, or see <a href="#vmi4999" onClick="document.getElementById('vmi4999').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_LANG_NONE</span><div id="vmi4999" style="display:none"><br/><pre>0 0 : start
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
+0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+0 0     : 0ms  : Prepare include: "()"
+0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d5301 ("Regulating defecation")]"
+0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#d5301"
+16 16   : 16ms : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1768,24 +1768,24 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[10]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c157800)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l18">log</a>, or see <a href="#vmi5001" onClick="document.getElementById('vmi5001').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi5001" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[10]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c157902)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l19">log</a>, or see <a href="#vmi5002" onClick="document.getElementById('vmi5002').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi5002" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -1812,24 +1812,24 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[11]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c159201)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l18">log</a>, or see <a href="#vmi5005" onClick="document.getElementById('vmi5005').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi5005" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[11]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c159303)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l19">log</a>, or see <a href="#vmi5006" onClick="document.getElementById('vmi5006').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi5006" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -1856,35 +1856,35 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[12]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c160609)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l18">log</a>, or see <a href="#vmi5009" onClick="document.getElementById('vmi5009').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi5009" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[12]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c160711)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l19">log</a>, or see <a href="#vmi5010" onClick="document.getElementById('vmi5010').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi5010" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
-</pre></div></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Questionnaire&#8203;.item[0]&#8203;.item[13]&#8203;.code[0]&#8203;.display (l1&#8203;/c161738)</b></td><td><b>information</b></td><td><b>'Moving around outside the home and other buildings' is the default display; the code system http://hl7.org/fhir/sid/icf has no Display Names for the language fr</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l32">log</a>, or see <a href="#vmi5011" onClick="document.getElementById('vmi5011').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_LANG_NONE</span><div id="vmi5011" style="display:none"><br/><pre>0 0 : start
 16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
 16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
 16 0    : 0ms  : Prepare include: "()"
-16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d4602 ("Moving around outside the home and other buildings")]"
-16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#d4602"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
 16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+</pre></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Questionnaire&#8203;.item[0]&#8203;.item[13]&#8203;.code[0]&#8203;.display (l1&#8203;/c161738)</b></td><td><b>information</b></td><td><b>'Moving around outside the home and other buildings' is the default display; the code system http://hl7.org/fhir/sid/icf has no Display Names for the language fr</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l32">log</a>, or see <a href="#vmi5011" onClick="document.getElementById('vmi5011').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_LANG_NONE</span><div id="vmi5011" style="display:none"><br/><pre>0 0 : start
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d4602 ("Moving around outside the home and other buildings")]"
+15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#d4602"
+15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1900,24 +1900,24 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[13]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c162072)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l18">log</a>, or see <a href="#vmi5013" onClick="document.getElementById('vmi5013').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi5013" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[13]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c162174)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l19">log</a>, or see <a href="#vmi5014" onClick="document.getElementById('vmi5014').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi5014" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -1944,24 +1944,24 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[14]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c163562)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l18">log</a>, or see <a href="#vmi5017" onClick="document.getElementById('vmi5017').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi5017" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[14]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c163664)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l19">log</a>, or see <a href="#vmi5018" onClick="document.getElementById('vmi5018').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi5018" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
 </table>
@@ -1998,35 +1998,35 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[0]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c99243)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l18">log</a>, or see <a href="#vmi5021" onClick="document.getElementById('vmi5021').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi5021" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[0]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c99345)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l19">log</a>, or see <a href="#vmi5022" onClick="document.getElementById('vmi5022').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi5022" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[1]&#8203;.code[0]&#8203;.display (l1&#8203;/c100311)</b></td><td><b>information</b></td><td><b>'Orientation functions' is the default display; the code system http://hl7.org/fhir/sid/icf has no Display Names for the language fr</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l20">log</a>, or see <a href="#vmi5023" onClick="document.getElementById('vmi5023').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_LANG_NONE</span><div id="vmi5023" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#b114 ("Orientation functions")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#b114"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#b114 ("Orientation functions")]"
+15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#b114"
+15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -2042,35 +2042,35 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[1]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c100612)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l18">log</a>, or see <a href="#vmi5025" onClick="document.getElementById('vmi5025').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi5025" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[1]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c100714)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l19">log</a>, or see <a href="#vmi5026" onClick="document.getElementById('vmi5026').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi5026" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[2]&#8203;.code[0]&#8203;.display (l1&#8203;/c101682)</b></td><td><b>information</b></td><td><b>'Washing oneself' is the default display; the code system http://hl7.org/fhir/sid/icf has no Display Names for the language fr</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l34">log</a>, or see <a href="#vmi5027" onClick="document.getElementById('vmi5027').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_LANG_NONE</span><div id="vmi5027" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d510 ("Washing oneself")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#d510"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d510 ("Washing oneself")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#d510"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -2086,24 +2086,24 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[2]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c101968)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l18">log</a>, or see <a href="#vmi5029" onClick="document.getElementById('vmi5029').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi5029" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[2]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c102070)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l19">log</a>, or see <a href="#vmi5030" onClick="document.getElementById('vmi5030').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi5030" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -2130,24 +2130,24 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[3]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c103297)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l18">log</a>, or see <a href="#vmi5033" onClick="document.getElementById('vmi5033').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi5033" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[3]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c103399)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l19">log</a>, or see <a href="#vmi5034" onClick="document.getElementById('vmi5034').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi5034" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -2174,24 +2174,24 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[4]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c104628)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l18">log</a>, or see <a href="#vmi5037" onClick="document.getElementById('vmi5037').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi5037" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[4]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c104730)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l19">log</a>, or see <a href="#vmi5038" onClick="document.getElementById('vmi5038').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi5038" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -2218,24 +2218,24 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[5]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c105980)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l18">log</a>, or see <a href="#vmi5041" onClick="document.getElementById('vmi5041').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi5041" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[5]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c106082)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l19">log</a>, or see <a href="#vmi5042" onClick="document.getElementById('vmi5042').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi5042" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -2262,24 +2262,24 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[6]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c107373)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l18">log</a>, or see <a href="#vmi5045" onClick="document.getElementById('vmi5045').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi5045" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[6]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c107475)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l19">log</a>, or see <a href="#vmi5046" onClick="document.getElementById('vmi5046').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi5046" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -2306,35 +2306,35 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[7]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c108781)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l18">log</a>, or see <a href="#vmi5049" onClick="document.getElementById('vmi5049').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi5049" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[7]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c108883)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l19">log</a>, or see <a href="#vmi5050" onClick="document.getElementById('vmi5050').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi5050" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
-</pre></div></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Questionnaire&#8203;.item[0]&#8203;.item[8]&#8203;.code[0]&#8203;.display (l1&#8203;/c109915)</b></td><td><b>information</b></td><td><b>'Moving around outside the home and other buildings' is the default display; the code system http://hl7.org/fhir/sid/icf has no Display Names for the language fr</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l32">log</a>, or see <a href="#vmi5051" onClick="document.getElementById('vmi5051').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_LANG_NONE</span><div id="vmi5051" style="display:none"><br/><pre>0 0 : start
 16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
 16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
 16 0    : 0ms  : Prepare include: "()"
-16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d4602 ("Moving around outside the home and other buildings")]"
-16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#d4602"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
 16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+</pre></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Questionnaire&#8203;.item[0]&#8203;.item[8]&#8203;.code[0]&#8203;.display (l1&#8203;/c109915)</b></td><td><b>information</b></td><td><b>'Moving around outside the home and other buildings' is the default display; the code system http://hl7.org/fhir/sid/icf has no Display Names for the language fr</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l32">log</a>, or see <a href="#vmi5051" onClick="document.getElementById('vmi5051').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_LANG_NONE</span><div id="vmi5051" style="display:none"><br/><pre>0 0 : start
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#d4602 ("Moving around outside the home and other buildings")]"
+15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#d4602"
+15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -2350,24 +2350,24 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[8]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c110249)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l18">log</a>, or see <a href="#vmi5053" onClick="document.getElementById('vmi5053').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi5053" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[8]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c110351)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l19">log</a>, or see <a href="#vmi5054" onClick="document.getElementById('vmi5054').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi5054" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -2394,24 +2394,24 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[9]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c111759)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l18">log</a>, or see <a href="#vmi5057" onClick="document.getElementById('vmi5057').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi5057" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[9]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c111861)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l19">log</a>, or see <a href="#vmi5058" onClick="document.getElementById('vmi5058').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi5058" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
 </table>
@@ -2464,68 +2464,68 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>QuestionnaireResponse&#8203;.item[0]&#8203;.answer[0]&#8203;.item[2]&#8203;.answer[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l144&#8203;/c20)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l19">log</a>, or see <a href="#vmi5063" onClick="document.getElementById('vmi5063').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi5063" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>QuestionnaireResponse&#8203;.item[0]&#8203;.answer[0]&#8203;.item[3]&#8203;.answer[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l195&#8203;/c20)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l19">log</a>, or see <a href="#vmi5064" onClick="document.getElementById('vmi5064').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi5064" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>QuestionnaireResponse&#8203;.item[0]&#8203;.answer[0]&#8203;.item[4]&#8203;.answer[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l246&#8203;/c20)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l19">log</a>, or see <a href="#vmi5065" onClick="document.getElementById('vmi5065').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi5065" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>QuestionnaireResponse&#8203;.item[0]&#8203;.answer[0]&#8203;.item[5]&#8203;.answer[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l297&#8203;/c20)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l18">log</a>, or see <a href="#vmi5066" onClick="document.getElementById('vmi5066').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi5066" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>QuestionnaireResponse&#8203;.item[0]&#8203;.answer[0]&#8203;.item[6]&#8203;.answer[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l348&#8203;/c20)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l19">log</a>, or see <a href="#vmi5067" onClick="document.getElementById('vmi5067').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi5067" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>QuestionnaireResponse&#8203;.item[0]&#8203;.answer[0]&#8203;.item[7]&#8203;.answer[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l399&#8203;/c20)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l18">log</a>, or see <a href="#vmi5068" onClick="document.getElementById('vmi5068').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi5068" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -2541,57 +2541,57 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>QuestionnaireResponse&#8203;.item[0]&#8203;.answer[0]&#8203;.item[9]&#8203;.answer[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l501&#8203;/c20)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l18">log</a>, or see <a href="#vmi5070" onClick="document.getElementById('vmi5070').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi5070" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>QuestionnaireResponse&#8203;.item[0]&#8203;.answer[0]&#8203;.item[10]&#8203;.answer[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l552&#8203;/c20)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l18">log</a>, or see <a href="#vmi5071" onClick="document.getElementById('vmi5071').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi5071" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>QuestionnaireResponse&#8203;.item[0]&#8203;.answer[0]&#8203;.item[11]&#8203;.answer[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l603&#8203;/c20)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l19">log</a>, or see <a href="#vmi5072" onClick="document.getElementById('vmi5072').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi5072" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>QuestionnaireResponse&#8203;.item[0]&#8203;.answer[0]&#8203;.item[12]&#8203;.answer[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l654&#8203;/c20)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l19">log</a>, or see <a href="#vmi5073" onClick="document.getElementById('vmi5073').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi5073" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>QuestionnaireResponse&#8203;.item[0]&#8203;.answer[0]&#8203;.item[13]&#8203;.answer[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l705&#8203;/c20)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l19">log</a>, or see <a href="#vmi5074" onClick="document.getElementById('vmi5074').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi5074" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -2642,79 +2642,79 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>QuestionnaireResponse&#8203;.item[0]&#8203;.answer[0]&#8203;.item[2]&#8203;.answer[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l144&#8203;/c20)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l19">log</a>, or see <a href="#vmi5079" onClick="document.getElementById('vmi5079').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi5079" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>QuestionnaireResponse&#8203;.item[0]&#8203;.answer[0]&#8203;.item[3]&#8203;.answer[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l195&#8203;/c20)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l19">log</a>, or see <a href="#vmi5080" onClick="document.getElementById('vmi5080').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi5080" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>QuestionnaireResponse&#8203;.item[0]&#8203;.answer[0]&#8203;.item[4]&#8203;.answer[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l246&#8203;/c20)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l18">log</a>, or see <a href="#vmi5081" onClick="document.getElementById('vmi5081').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi5081" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>QuestionnaireResponse&#8203;.item[0]&#8203;.answer[0]&#8203;.item[5]&#8203;.answer[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l297&#8203;/c20)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l18">log</a>, or see <a href="#vmi5082" onClick="document.getElementById('vmi5082').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi5082" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+15 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
+15 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf2"
+15 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>QuestionnaireResponse&#8203;.item[0]&#8203;.answer[0]&#8203;.item[6]&#8203;.answer[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l348&#8203;/c20)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l19">log</a>, or see <a href="#vmi5083" onClick="document.getElementById('vmi5083').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi5083" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>QuestionnaireResponse&#8203;.item[0]&#8203;.answer[0]&#8203;.item[7]&#8203;.answer[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l399&#8203;/c20)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l19">log</a>, or see <a href="#vmi5084" onClick="document.getElementById('vmi5084').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi5084" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>QuestionnaireResponse&#8203;.item[0]&#8203;.answer[0]&#8203;.item[8]&#8203;.answer[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l450&#8203;/c20)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l19">log</a>, or see <a href="#vmi5085" onClick="document.getElementById('vmi5085').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi5085" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr, default-to-latest
-0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
-0 0     : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
-0 0     : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr, default-to-latest
+16 0    : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/11000315107
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://hl7.org/fhir/sid/icf#qf4 ("facilitateur absolu")]"
+16 0    : 0ms  : Check "http://hl7.org/fhir/sid/icf#qf4"
+16 0    : 0ms  : Using CodeSystem "http://hl7.org/fhir/sid/icf|2017a (from fhir.tx.support.r4#0.32.0)" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
