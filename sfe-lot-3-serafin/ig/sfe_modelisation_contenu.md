@@ -270,15 +270,17 @@ Ensemble des dispositifs prévus par le Code de l'Action Sociale et des Familles
 
 * Nom: numeroAllocataire : [0..1] Identifiant
   * Description: Numéro d’allocataire pour le droit ou la prestation.
-* Nom: typeDroitPrestation : [0..1] Code
+* Nom: categorieDroitPrestation : [1..1] Code
+  * Description: Catégorie de droit et prestation caractérisant la décision d'orientation.Nomenclature(s) associée(s) : en cours d'analyse NOS
+* Nom: typeDroitPrestation : [1..1] Code
   * Description: Type de droit et prestation caractérisant la décision d'orientation.Nomenclature(s) associée(s) : en cours d'analyse NOS
-* Nom: natureDroit : [0..1] Code
+* Nom: natureDroitPrestation : [1..1] Code
   * Description: Nature du droit s’appliquant à tous les droits ou prestations ouverts par la CDAPH. Elle permet de gérer, le cas échéant, le lien entre la date d’ouverture du droit et la date de fin d’un droit précédent. Elle est déterminée par l’équipe pluridisciplinaire ou par la CDAPH.Nomenclature(s) associée(s) : en cours d'analyse NOS
-* Nom: dateOuverture : [0..1] Date
+* Nom: dateOuverture : [1..1] Date
   * Description: La date d'ouverture de droit est la date à laquelle le droit devient effectif.Sauf disposition spécifique, la date d’ouverture des droits est la date de la décision de la CDAPH sur le fondement du principe de non-rétroactivité des décisions.
-* Nom: dateEcheance : [0..1] Date
+* Nom: dateEcheance : [1..1] Date
   * Description: La date d'échéance de droit est la date à laquelle le droit ou la prestation ouvert prend fin. L'équipe pluridisciplinaire peut moduler les dates selon les besoins de la personne, tout en restant dans le minimum et dans le maximum prévu par la loi pour chacune des prestations.
-* Nom: existencePAG : [0..1] Indicateur
+* Nom: existencePAG : [1..1] Indicateur
   * Description: Indicateur de l'existence d'un Plan d’Accompagnement Global (PAG).1 = si la décision est associée à un PAG au statut "élaboré" ou "validé" ;0 = pour tous les autres cas (la décision n'est pas associée à un PAG ou est associée à un PAG ayant un statut différent de "élaboré" ou "validé").
 * Nom: motifFinPAG : [0..1] Code
   * Description: Le motif est obligatoire si existencePAG passe de "1" à "0". Le motif n'est transmis que lorsque le statut du PAG passe à "Terminé".
@@ -315,7 +317,7 @@ Jeu(x) de valeur(s) associé(s) :[JDV_J30-TemporaliteAccueil-ROR](https://mos.es
   * Description: Fréquence de versement dans le cas d’une aide sociale.
 * Nom: montantAttribue : [0..1] Montant
   * Description: Montant attribué dans le cas d’une aide sociale.
-* Nom: qualification : [0..1] Code
+* Nom: qualificationOrientation : [1..1] Code
   * Description: Il existe deux types d’orientation :* Orientation cible (appelée aussi orientation hors contrainte de l’offre, théorique ou idéale) : qualification d'une décision basée uniquement sur les attentes et les besoins évalués de la personne et considérée par l'équipe pluridisciplinaire ou la CDAPH comme la réponse la plus adaptée à ces attentes et besoins sans prendre en compte la réalité de l'offre disponible.
 *  Orientation alternative lorsqu'elle est partiellement adaptée au regard des attentes et des besoins évalués de la personne, mais qu'elle prend bien en compte la réalité de l'offre disponible et qu'elle a ainsi plus de chance d'être mise en oeuvre (appelée aussi "orientation par défaut").
 Jeu(x) de valeur(s) associé(s) : en cours analyse NOS
@@ -331,18 +333,18 @@ Cette classe représente le ou les ESSMS désigné(s) par la CDAPH comme étant 
 Description des modalités d'accueil.
 
 * Nom: modePriseCharge : [0..1] Code
-  * Description: Mode de prise en charge.Nomenclature(s) associée(s) : à définir
+  * Description: Le mode de prise en charge est renseigné pour certaines orientations en ESSMS. Il permet d'indiquer comment le bénéficiaire est pris en charge (internat, accueil de jour, accueil de nuit)Jeu(x) de valeur(s) associé(s) :[JDV-J264-ModeEtCentreDePriseEnCharge-MDPH](https://mos.esante.gouv.fr/NOS/JDV_J264-ModeEtCentreDePriseEnCharge-MDPH/FHIR/JDV-J264-ModeEtCentreDePriseEnCharge-MDPH)
 
 ##### Classe Quantification
 
 Quantification de la prise en charge.
 
-* Nom: quantificationNombre : [0..1] Numerique
-  * Description: Valeur de la quantification.
-* Nom: quantificationUnite : [0..1] Code
-  * Description: Unité de la quantification (journée ou demi-journée).Nomenclature(s) associée(s) : à définir
-* Nom: quantificationPeriodicite : [0..1] Code
-  * Description: Périodicité de la quantification (quotidienne, hebdomadaire, mensuelle, annuelle).Nomenclature(s) associée(s) : à définir
+* Nom: valeurPriseCharge : [0..1] Numerique
+  * Description: Valeur de la prise en charge.
+* Nom: UnitePriseCharge : [0..1] Mesure
+  * Description: Unité de la durée de la prise en charge (journée ou demi-journée).
+* Nom: frequencePriseCharge : [0..1] Code
+  * Description: Périodicité de la prise en charge (quotidienne, hebdomadaire, mensuelle, annuelle).Jeu(x) valeur(s) associé(s) :[JDV-J37-UcumUniteTemps](https://mos.esante.gouv.fr/NOS/JDV_J37-UcumUniteTemps/FHIR/JDV-J37-UcumUniteTemps)Seuls les codes suivants sont à utiliser : a (année), mo (mois), wk (semaine), d (jour)
 
 #### Environnement et ressources
 

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-moyen-ressource-codesystem | *Version*:2.2.0-ballot |
-| Active as of 2026-02-11 | *Computable Name*:InputTDDUITaskMoyenRessourceCodeSystem |
+| Active as of 2026-02-12 | *Computable Name*:InputTDDUITaskMoyenRessourceCodeSystem |
 
  
 CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les moyens et ressources du projet personnalisé. 
@@ -37,7 +37,7 @@ CodeSystem pour la définition des éléments spécifiques des input dans la res
   "title" : "InputTDDUITaskMoyenRessourceCodeSystem",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-11T08:47:58+00:00",
+  "date" : "2026-02-12T14:05:06+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
