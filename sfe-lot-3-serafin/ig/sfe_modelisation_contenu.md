@@ -1033,6 +1033,15 @@ L'identifiant technique du transport est obtenu dans ce contexte par par la conc
 
 ##### Classe Repas
 
+La classe repas indique si l'usager bénéficie ou non des repas.
+
+* Nom: dateRepas : [1..1] DateHeure
+  * Description: Date et heure du repas.
+* Nom: typeRepas : [1..1] Code
+  * Description: Type de repas.Jeu(x) de valeur(s) associé(s) : Analyse en cours NOS
+* Nom: usagerPresent : [1..1] Indicateur
+  * Description: Présence de l'usager au repas.1 = l'usager a pris son repas0 = l'usager n'a pas pris son repas
+
 ### Classes du MOS profilées pour ce volet
 
 ##### Classe Professionnel

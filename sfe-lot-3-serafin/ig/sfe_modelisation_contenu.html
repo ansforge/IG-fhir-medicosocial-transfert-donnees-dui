@@ -2436,6 +2436,30 @@ Le détail de l’évaluation de ce champ peut être transmis à travers un deux
 
 <h5 id="classe-repas">Classe Repas</h5>
 
+<p>La classe repas indique si l'usager bénéficie ou non des repas.</p>
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>dateRepas : [1..1] DateHeure</td>
+    <td>Date et heure du repas.</td>
+  </tr>
+  <tr>
+    <td>typeRepas : [1..1] Code</td>
+    <td>Type de repas.<br/>
+    Jeu(x) de valeur(s) associé(s) : Analyse en cours NOS</td>
+  </tr>
+  <tr>
+    <td>usagerPresent : [1..1] Indicateur</td>
+    <td>Présence de l'usager au repas.<br/>
+1 = l'usager a pris son repas<br/>
+0 = l'usager n'a pas pris son repas </td>
+  </tr>
+</table>
+
 <h3 id="classes-du-mos-profilées-pour-ce-volet">Classes du MOS profilées pour ce volet</h3>
 
 <h5 id="classe-professionnel">Classe Professionnel</h5>
@@ -2666,7 +2690,7 @@ Le détail de l’évaluation de ce champ peut être transmis à travers un deux
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.2.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Feb 13, 2026 15:05+0000">2026-02-13</span>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.2.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Feb 13, 2026 16:24+0000">2026-02-13</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
