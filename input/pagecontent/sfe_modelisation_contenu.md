@@ -2206,10 +2206,42 @@ L'identifiant technique du transport est obtenu dans ce contexte par par la conc
 
 ##### Classe PresenceAbsence
 
+La classe PresenceAbsence indique si l'usager est présent ou absent.
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>typePresenceAbsence : [1..1] Code</td>
+    <td>Type de déclaration : Présence ou Absence.<br>
+    Jeu(x) de valeur(s) associé(s) : Analyse en cours NOS</td>
+  </tr>
+  <tr>
+    <td>dateDebutPresenceAbsence : [1..1] DateHeure</td>
+    <td>Date et heure de début de la présence/absence de l'usager.</td>
+  </tr>
+  <tr>
+    <td>dateFinPresenceAbsence : [1..1] DateHeure</td>
+    <td>Date et heure de fin de la présence/absence de l'usager.</td>
+  </tr>
+  <tr>
+    <td>motifAbsence : [0..1] Code</td>
+    <td>Motif pour lequel l'usager n'est pas présent.<br>
+    Jeu(x) de valeur(s) associé(s) : Analyse en cours NOS</td>
+  </tr>
+  <tr>
+    <td>absencePrevue : [0..1] Indicateur</td>
+    <td>Absence prévue.<br>
+1 = L'absence de l'usager est prévue<br>
+0 = L'absence de l'usager n'était pas prévue</td>
+  </tr>
+</table>
 
 ##### Classe Repas
 
-La classe repas indique si l'usager bénéficie ou non des repas.
+La classe Repas indique si l'usager bénéficie ou non des repas.
 
 <table style="width:100%">
   <tr>
