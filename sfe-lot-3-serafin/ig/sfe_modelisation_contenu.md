@@ -1027,6 +1027,12 @@ L'identifiant technique du transport est obtenu dans ce contexte par par la conc
 * Nom: natureTransport : [0..1] Code
   * Description: Nature du transport de l'usager.Jeu de valeur issue de la terminologie Serafin correspondant aux familles (3.2.4.1, 3.2.4.2, 3.2.4.3).Jeu(x) de valeur(s) associé(s) :[JDV_J282-TransportsLiesAuProjetIndividuel_SERAFIN](https://mos.esante.gouv.fr/NOS/JDV_J282-TransportsLiesAuProjetIndividuel_SERAFIN/FHIR/JDV-J282-TransportsLiesAuProjetIndividuel-SERAFIN)
 
+#### Présence Absence et Repas
+
+##### Classe PresenceAbsence
+
+##### Classe Repas
+
 ### Classes du MOS profilées pour ce volet
 
 ##### Classe Professionnel
