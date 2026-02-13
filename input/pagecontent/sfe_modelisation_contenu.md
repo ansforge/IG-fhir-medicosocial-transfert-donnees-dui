@@ -2200,6 +2200,15 @@ L'identifiant technique du transport est obtenu dans ce contexte par par la conc
   </tr>
 </table>
 
+#### Présence Absence et Repas
+
+<div style="text-align:center;">{%include bloc_PresenceAbsence_repas.svg%}</div>
+
+##### Classe PresenceAbsence
+
+
+##### Classe Repas
+
 ### Classes du MOS profilées pour ce volet
 
 ##### Classe Professionnel
