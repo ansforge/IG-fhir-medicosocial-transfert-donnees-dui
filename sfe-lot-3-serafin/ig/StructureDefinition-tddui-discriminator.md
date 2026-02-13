@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-discriminator.
   "name" : "TDDUIDiscriminator",
   "title" : "TDDUI Discriminator Extension",
   "status" : "active",
-  "date" : "2026-02-13T16:24:26+00:00",
+  "date" : "2026-02-13T16:45:56+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
