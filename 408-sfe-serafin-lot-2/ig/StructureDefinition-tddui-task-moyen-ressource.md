@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource | *Version*:2.2.0-ballot |
-| Active as of 2026-02-12 | *Computable Name*:TDDUITaskMoyenRessource |
+| Active as of 2026-02-13 | *Computable Name*:TDDUITaskMoyenRessource |
 
  
 Profil de la ressource Task permettant de représenter les moyens ou ressources utilisées dans le cadre du projet personnalisé. 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-moyen-res
   "name" : "TDDUITaskMoyenRessource",
   "title" : "TDDUI Task MoyenRessource",
   "status" : "active",
-  "date" : "2026-02-12T14:43:45+00:00",
+  "date" : "2026-02-13T10:11:04+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

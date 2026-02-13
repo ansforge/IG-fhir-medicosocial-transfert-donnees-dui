@@ -636,7 +636,7 @@ Dans le cas d'une auto évaluation, l'auteur étant l'usager cet élément n'est
 
 ** Classe spécialisée, hérite de la classe EntiteJuridique du MOS profilée pour ce volet.
 
-Cette classe correspond à la personne morale porteuse de l'évaluation de l'usager.
+Cette classe correspond à la personne morale porteuse de l'évaluation de l'usager. Dans le cas d'une auto-évaluation, cet élément est obligatoire.
 
 #### Projet personnalisé
 

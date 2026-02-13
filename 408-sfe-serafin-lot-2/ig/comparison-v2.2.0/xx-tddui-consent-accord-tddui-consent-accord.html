@@ -1,8 +1,11 @@
 <html><body><pre>java.lang.StackOverflowError
-	at org.hl7.fhir.r5.model.ElementDefinition$ElementDefinitionMappingComponent.copy(ElementDefinition.java:6021)
-	at org.hl7.fhir.r5.model.ElementDefinition.copyValues(ElementDefinition.java:12935)
-	at org.hl7.fhir.r5.model.ElementDefinition.copy(ElementDefinition.java:12859)
-	at org.hl7.fhir.r5.comparison.StructureDefinitionComparer.compareElements(StructureDefinitionComparer.java:261)
+	at org.hl7.fhir.r5.model.Extension.copy(Extension.java:1347)
+	at org.hl7.fhir.r5.model.Element.copyValues(Element.java:287)
+	at org.hl7.fhir.r5.model.ElementDefinition$TypeRefComponent.copyValues(ElementDefinition.java:2573)
+	at org.hl7.fhir.r5.model.ElementDefinition$TypeRefComponent.copy(ElementDefinition.java:2568)
+	at org.hl7.fhir.r5.comparison.StructureDefinitionComparer.checkAddTypeUnion(StructureDefinitionComparer.java:910)
+	at org.hl7.fhir.r5.comparison.StructureDefinitionComparer.unionTypes(StructureDefinitionComparer.java:901)
+	at org.hl7.fhir.r5.comparison.StructureDefinitionComparer.compareElements(StructureDefinitionComparer.java:278)
 	at org.hl7.fhir.r5.comparison.StructureDefinitionComparer.compareChildren(StructureDefinitionComparer.java:382)
 	at org.hl7.fhir.r5.comparison.StructureDefinitionComparer.compareElements(StructureDefinitionComparer.java:295)
 	at org.hl7.fhir.r5.comparison.StructureDefinitionComparer.compareChildren(StructureDefinitionComparer.java:382)
@@ -1020,7 +1023,4 @@
 	at org.hl7.fhir.r5.comparison.StructureDefinitionComparer.compareChildren(StructureDefinitionComparer.java:382)
 	at org.hl7.fhir.r5.comparison.StructureDefinitionComparer.compareElements(StructureDefinitionComparer.java:295)
 	at org.hl7.fhir.r5.comparison.StructureDefinitionComparer.compareChildren(StructureDefinitionComparer.java:382)
-	at org.hl7.fhir.r5.comparison.StructureDefinitionComparer.compareElements(StructureDefinitionComparer.java:295)
-	at org.hl7.fhir.r5.comparison.StructureDefinitionComparer.compareChildren(StructureDefinitionComparer.java:382)
-	at org.hl7.fhir.r5.comparison.StructureDefinitionComparer.compareElements(StructureDefinitionComparer.java:295)
 </pre></body></html>
