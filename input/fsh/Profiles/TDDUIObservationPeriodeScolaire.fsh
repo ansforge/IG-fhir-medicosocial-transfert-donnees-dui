@@ -6,8 +6,10 @@ Description: "Profil de la ressource Observation permettant de représenter la p
 
 * identifier 1..1
 * identifier ^short = "Identifiant de la période scolaire"
+* identifier.value 1..1
 * identifier.value ^example[0].label = "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-PSCO-numPeriodeScolaire"
 * identifier.value ^example[0].valueString = "3480787529/147720425367411-PSCO-12548"
+* identifier.system 1..1
 * identifier.system = "https://identifiant-medicosocial-periodescolaire.esante.gouv.fr"
 
 * subject 1..1
@@ -34,15 +36,9 @@ Description: "Profil de la ressource Observation permettant de représenter la p
 * component ^slicing.rules = #open
 
 * component contains 
-    niveauScolaireReel 0..1 and
-    niveauScolaireSuivi 0..1 and
     typeEnseignementSpecialise 0..* and
     diplome 0..* and
     volumeScolarisation 0..1
-
-* component[niveauScolaireReel].code = TDDUIObservationPeriodeScolaire#niveauScolaireReel "Niveau scolaire réel" // JDV en cours de création côté NOS
-
-* component[niveauScolaireSuivi].code = TDDUIObservationPeriodeScolaire#niveauScolaireSuivi "Niveau scolaire suivi" // JDV en cours de création côté NOS
 
 * component[typeEnseignementSpecialise].code = TDDUIObservationPeriodeScolaire#typeEnseignementSpecialise "Type enseignement spécialisé"
 * component[typeEnseignementSpecialise].valueCodeableConcept from $JDV-J386-Type-Enseignement-Specialise-MS (required)
@@ -65,8 +61,6 @@ Title:    "Modèle de contenu DUI"
 * performer[ecole] -> "Ecole"
 * effectivePeriod.start -> "dateDebutPeriodeScolaire"
 * effectivePeriod.end -> "dateFinPeriodeScolaire"
-* component[niveauScolaireReel] -> "niveauScolaireReel"
-* component[niveauScolaireSuivi] -> "niveauScolaireSuivi"
 * component[typeEnseignementSpecialise] -> "typeEnseignementSpecialise"
 * component[diplome] -> "diplome"
 * component[volumeScolarisation] -> "volumeScolarisation"
