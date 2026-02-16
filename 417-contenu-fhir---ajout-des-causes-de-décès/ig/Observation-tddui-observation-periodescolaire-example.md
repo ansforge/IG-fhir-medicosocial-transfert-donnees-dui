@@ -8,7 +8,7 @@
 
 Profil: [TDDUI Obervation Periode Scolaire](StructureDefinition-tddui-observation-periode-scolaire.md)
 
-**identifier**: 3480787529/147720425367411-PSCO-12548
+**identifier**: `https://identifiant-medicosocial-periodescolaire.esante.gouv.fr`/3480787529/147720425367411-PSCO-12548
 
 **status**: Registered
 
@@ -37,6 +37,7 @@ Profil: [TDDUI Obervation Periode Scolaire](StructureDefinition-tddui-observatio
   },
   "identifier" : [
     {
+      "system" : "https://identifiant-medicosocial-periodescolaire.esante.gouv.fr",
       "value" : "3480787529/147720425367411-PSCO-12548"
     }
   ],

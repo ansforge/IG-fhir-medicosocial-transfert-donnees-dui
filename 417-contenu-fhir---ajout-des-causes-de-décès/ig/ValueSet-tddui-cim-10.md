@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-cim-10 | *Version*:2.2.0-ballot |
-| Active as of 2026-02-12 | *Computable Name*:TDDUICIM10 |
+| Active as of 2026-02-16 | *Computable Name*:TDDUICIM10 |
 
  
 ValueSet incluant les codes de la terminologie CIM-1O. 
@@ -54,7 +54,7 @@ ValueSet incluant les codes de la terminologie CIM-1O.
   "title" : "TDDUI CIM10",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-12T14:50:08+00:00",
+  "date" : "2026-02-16T09:17:35+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

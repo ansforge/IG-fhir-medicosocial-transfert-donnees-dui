@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-periode-scolaire | *Version*:2.2.0-ballot |
-| Active as of 2026-02-12 | *Computable Name*:TDDUIObservationPeriodeScolaire |
+| Active as of 2026-02-16 | *Computable Name*:TDDUIObservationPeriodeScolaire |
 
  
 Profil de la ressource Observation permettant de représenter la période scolaire de l'usager. 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-pe
   "name" : "TDDUIObservationPeriodeScolaire",
   "title" : "TDDUI Obervation Periode Scolaire",
   "status" : "active",
-  "date" : "2026-02-12T14:50:08+00:00",
+  "date" : "2026-02-16T09:17:35+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -139,11 +139,13 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-pe
       {
         "id" : "Observation.identifier.system",
         "path" : "Observation.identifier.system",
+        "min" : 1,
         "patternUri" : "https://identifiant-medicosocial-periodescolaire.esante.gouv.fr"
       },
       {
         "id" : "Observation.identifier.value",
         "path" : "Observation.identifier.value",
+        "min" : 1,
         "example" : [
           {
             "label" : "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-PSCO-numPeriodeScolaire",
@@ -313,58 +315,6 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-pe
         "binding" : {
           "strength" : "required",
           "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-observation-periode-scolaire"
-        }
-      },
-      {
-        "id" : "Observation.component:niveauScolaireReel",
-        "path" : "Observation.component",
-        "sliceName" : "niveauScolaireReel",
-        "min" : 0,
-        "max" : "1",
-        "mapping" : [
-          {
-            "identity" : "specmetier-to-TDDUIObservationPeriodeScolaire",
-            "map" : "niveauScolaireReel"
-          }
-        ]
-      },
-      {
-        "id" : "Observation.component:niveauScolaireReel.code",
-        "path" : "Observation.component.code",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-periode-scolaire",
-              "code" : "niveauScolaireReel",
-              "display" : "Niveau scolaire réel"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "Observation.component:niveauScolaireSuivi",
-        "path" : "Observation.component",
-        "sliceName" : "niveauScolaireSuivi",
-        "min" : 0,
-        "max" : "1",
-        "mapping" : [
-          {
-            "identity" : "specmetier-to-TDDUIObservationPeriodeScolaire",
-            "map" : "niveauScolaireSuivi"
-          }
-        ]
-      },
-      {
-        "id" : "Observation.component:niveauScolaireSuivi.code",
-        "path" : "Observation.component.code",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-periode-scolaire",
-              "code" : "niveauScolaireSuivi",
-              "display" : "Niveau scolaire suivi"
-            }
-          ]
         }
       },
       {
