@@ -433,7 +433,7 @@ Permis de conduire de l’usager.
 * Nom: categorie : [0..1] Code
   * Description: Catégorie du permis de conduire.Jeu(x) de valeur(s) associé(s) : en cours de création NOS
 * Nom: type : [0..1] Code
-  * Description: Type du permis de conduire.Jeu(x) de valeur(s) associé(s) : en cours de création NOS
+  * Description: Type du permis de conduire.Jeu(x) de valeur(s) associé(s) : en cours de création NOSLa règle métier entre les catégories et les types est spécifiée dans la table d'association ASS en cours de création NOS
 * Nom: dateObtention : [0..1] Date
   * Description: Date d’obtention du permis de conduire.
 * Nom: dateValidite : [0..1] Date
