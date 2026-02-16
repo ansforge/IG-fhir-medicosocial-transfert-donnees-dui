@@ -970,7 +970,8 @@ Permis de conduire de l’usager.
   <tr>
     <td>type : [0..1] Code</td>
     <td>Type du permis de conduire.<br>
-    Jeu(x) de valeur(s) associé(s) : en cours de création NOS</td>
+    Jeu(x) de valeur(s) associé(s) : en cours de création NOS <br>
+    La règle métier entre les catégories et les types est spécifiée dans la table d'association ASS en cours de création NOS</td>
   </tr>
   <tr>
     <td>dateObtention : [0..1] Date</td>
