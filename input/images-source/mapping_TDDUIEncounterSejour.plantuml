@@ -26,8 +26,6 @@ map "**Sejour : TDDUIEncounterSejour**" as Sejour #back:AliceBlue;header:LightSk
     numeroDossierAdministratifSejour => <&layers> identifier:AdministrativeFileNumber
     numeroDossierESSMSProvenance => hospitalization.preAdmissionIdentifier
     modaliteAccueil => serviceType
-    provenance => hospitalization.admitSource
-    motifSortie => hospitalization.dischargeDisposition
     origineDemande => participant.individual.display
     period *-> period
 }
