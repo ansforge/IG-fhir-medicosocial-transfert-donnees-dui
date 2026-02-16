@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-pe
   "name" : "TDDUIObservationPeriodeScolaire",
   "title" : "TDDUI Obervation Periode Scolaire",
   "status" : "active",
-  "date" : "2026-02-16T09:17:35+00:00",
+  "date" : "2026-02-16T09:32:48+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -316,6 +316,17 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-pe
           "strength" : "required",
           "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-observation-periode-scolaire"
         }
+      },
+      {
+        "id" : "Observation.component.code.coding",
+        "path" : "Observation.component.code.coding",
+        "min" : 1,
+        "max" : "1"
+      },
+      {
+        "id" : "Observation.component.value[x]",
+        "path" : "Observation.component.value[x]",
+        "min" : 1
       },
       {
         "id" : "Observation.component:typeEnseignementSpecialise",
