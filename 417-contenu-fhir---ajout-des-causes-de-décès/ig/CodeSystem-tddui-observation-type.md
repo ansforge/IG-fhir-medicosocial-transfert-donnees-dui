@@ -37,7 +37,7 @@ CodeSystem for the Observation types
   "title" : "TDDUI Observation Type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-16T09:32:48+00:00",
+  "date" : "2026-02-16T14:58:48+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -64,11 +64,15 @@ CodeSystem for the Observation types
   ],
   "caseSensitive" : true,
   "content" : "complete",
-  "count" : 1,
+  "count" : 2,
   "concept" : [
     {
       "code" : "PERIODESCOL",
       "display" : "Période scolaire"
+    },
+    {
+      "code" : "OBSAMENAGEMENT",
+      "display" : "Observation sur l’aménagement du moyen de transport"
     }
   ]
 }

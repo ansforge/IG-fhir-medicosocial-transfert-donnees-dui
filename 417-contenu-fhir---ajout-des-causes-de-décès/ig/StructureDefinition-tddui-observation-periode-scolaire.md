@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-pe
   "name" : "TDDUIObservationPeriodeScolaire",
   "title" : "TDDUI Obervation Periode Scolaire",
   "status" : "active",
-  "date" : "2026-02-16T09:32:48+00:00",
+  "date" : "2026-02-16T14:58:48+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -428,7 +428,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-pe
         "id" : "Observation.component:diplome.value[x]:valueCodeableConcept",
         "path" : "Observation.component.value[x]",
         "sliceName" : "valueCodeableConcept",
-        "min" : 0,
+        "min" : 1,
         "max" : "1",
         "type" : [
           {
@@ -469,6 +469,28 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-pe
       {
         "id" : "Observation.component:volumeScolarisation.value[x]",
         "path" : "Observation.component.value[x]",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "type",
+              "path" : "$this"
+            }
+          ],
+          "ordered" : false,
+          "rules" : "open"
+        },
+        "type" : [
+          {
+            "code" : "Quantity"
+          }
+        ]
+      },
+      {
+        "id" : "Observation.component:volumeScolarisation.value[x]:valueQuantity",
+        "path" : "Observation.component.value[x]",
+        "sliceName" : "valueQuantity",
+        "min" : 1,
+        "max" : "1",
         "type" : [
           {
             "code" : "Quantity"

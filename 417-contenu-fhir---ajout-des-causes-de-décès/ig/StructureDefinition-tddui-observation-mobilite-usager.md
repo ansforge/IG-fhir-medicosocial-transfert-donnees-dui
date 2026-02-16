@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-mo
   "name" : "TDDUIObservationMobiliteUsager",
   "title" : "TDDUI Obervation Mobilite Usager",
   "status" : "active",
-  "date" : "2026-02-16T09:32:48+00:00",
+  "date" : "2026-02-16T14:58:48+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -176,6 +176,15 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-mo
       {
         "id" : "Observation.component.code",
         "path" : "Observation.component.code",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-type",
+              "code" : "OBSAMENAGEMENT",
+              "display" : "Observation sur l’aménagement du moyen de transport"
+            }
+          ]
+        },
         "binding" : {
           "strength" : "required",
           "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-observation-type"

@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-moyen-res
   "name" : "TDDUITaskMoyenRessource",
   "title" : "TDDUI Task MoyenRessource",
   "status" : "active",
-  "date" : "2026-02-16T09:32:48+00:00",
+  "date" : "2026-02-16T14:58:48+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
