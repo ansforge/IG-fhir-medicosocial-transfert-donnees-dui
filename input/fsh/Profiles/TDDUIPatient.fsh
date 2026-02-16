@@ -36,4 +36,3 @@ Title:    "Modèle de contenu DUI"
 * birthDate.extension[tddui-birth-order] -> "ordreNaissanceEtatCivil"
 * extension[birthPlace].valueAddress.extension[inseeCode] -> "communeNaissance"
 * extension[birthPlace].valueAddress.country -> "paysNaissance"
-
