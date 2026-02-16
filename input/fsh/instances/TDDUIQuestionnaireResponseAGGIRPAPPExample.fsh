@@ -11,6 +11,7 @@ Usage: #example
 
 * status = #completed
 * subject = Reference(tddui-pp-pa-patient-example-pp)
+* source = Reference(tddui-pp-pa-patient-example-pp)
 
 * extension[TDDUIQRParticipant].extension[TDDUIHolder].valueReference = Reference(tddui-organization-example)
 

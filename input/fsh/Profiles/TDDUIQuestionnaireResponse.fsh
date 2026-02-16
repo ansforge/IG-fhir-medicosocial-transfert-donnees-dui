@@ -93,6 +93,7 @@ Title:    "Modèle de contenu DUI"
 * status -> "Statut.statut"
 * status.extension[TDDUIStatusAuthor] -> "Statut.auteur"
 * extension[TDDUIComment] -> "commentaireEvaluation"
+* extension[TDDUIAssessmentMethod] -> "modaliteEvaluation"
 * questionnaire -> "typeEvaluation"
 * subject -> "Usager"
 * encounter -> "Evenement"
@@ -114,4 +115,4 @@ Expression: "(source.exists() and source.reference.contains('Patient/')) implies
 Invariant: professionnel-requis
 Description: "Hormis le cas de l'auto évaluation, au moins un des 3 éléments (Evaluateur, Responsable, Auteur) doit être renseigné"
 Severity: #error
-Expression: "source.reference.contains('Patient/').not() implies (source.reference.contains('Practitioner/') or author.exists() or extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant').exists())"
+Expression: "source.reference.contains('Patient/').not() implies (source.reference.contains('Practitioner/') or author.exists() or extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant').extension.where(url='TDDUIResponsible').exists())"
