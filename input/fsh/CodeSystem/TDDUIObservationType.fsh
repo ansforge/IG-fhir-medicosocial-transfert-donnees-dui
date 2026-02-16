@@ -9,3 +9,4 @@ Description: "CodeSystem for the Observation types"
 * ^experimental = false
 
 * #PERIODESCOL "Période scolaire"
+* #OBSAMENAGEMENT "Observation sur l’aménagement du moyen de transport"

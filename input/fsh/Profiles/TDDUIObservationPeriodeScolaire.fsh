@@ -47,9 +47,11 @@ Description: "Profil de la ressource Observation permettant de représenter la p
 * component[typeEnseignementSpecialise].valueCodeableConcept from $JDV-J386-Type-Enseignement-Specialise-MS (required)
 
 * component[diplome].code = TDDUIObservationPeriodeScolaire#diplome "Diplôme"
+* component[diplome].valueCodeableConcept 1..1
 * component[diplome].valueCodeableConcept from $JDV-J81-TypeDiplome-RASS (required)
 
 * component[volumeScolarisation].code = TDDUIObservationPeriodeScolaire#volumeScolarisation "Volume de scolarisation"
+* component[volumeScolarisation].valueQuantity 1..1
 * component[volumeScolarisation].value[x] only Quantity
 
 Mapping:  ConceptMetier_TDDUIObservationPeriodeScolaire

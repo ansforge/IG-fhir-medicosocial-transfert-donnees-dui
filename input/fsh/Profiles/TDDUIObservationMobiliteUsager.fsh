@@ -15,7 +15,7 @@ Description: "Profil de la ressource Observation permettant de représenter la m
 
 * component.code from TDDUIObservationType (required)
 * component.code.coding 1..1
-* code = $loinc#LP73551-1  "Transport mode"
+* component.code = TDDUIObservationType#OBSAMENAGEMENT "Observation sur l’aménagement du moyen de transport"
 
 * component.value[x] only string
 * component.valueString 1..1

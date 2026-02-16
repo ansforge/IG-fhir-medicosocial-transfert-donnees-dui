@@ -8,8 +8,6 @@ Description: "CodeSystem for the Observation school period"
 * ^content = #complete
 * ^experimental = false
 
-* #niveauScolaireReel "Niveau scolaire réel"
-* #niveauScolaireSuivi "Niveau scolaire suivi"
 * #typeEnseignementSpecialise "Type enseignement spécialisé"
 * #diplome "Diplôme"
 * #volumeScolarisation "Volume de scolarisation"
