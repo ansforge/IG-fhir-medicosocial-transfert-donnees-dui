@@ -52,7 +52,7 @@
   <name value="TDDUIQuestionnaireResponse"/>
   <title value="TDDUI QuestionnaireResponse"/>
   <status value="active"/>
-  <date value="2026-02-11T13:27:23+00:00"/>
+  <date value="2026-02-16T09:05:27+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -175,7 +175,7 @@
         <key value="professionnel-requis"/>
         <severity value="error"/>
         <human value="Hormis le cas de l'auto évaluation, au moins un des 3 éléments (Evaluateur, Responsable, Auteur) doit être renseigné"/>
-        <expression value="source.reference.contains('Patient/').not() implies (source.reference.contains('Practitioner/') or author.exists() or extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant').exists())"/>
+        <expression value="source.reference.contains('Patient/').not() implies (source.reference.contains('Practitioner/') or author.exists() or extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant').extension.where(url='TDDUIResponsible').exists())"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"/>
       </constraint>
       <isModifier value="false"/>
@@ -1432,6 +1432,10 @@
       <isSummary value="false"/>
       <mapping>
         <identity value="specmetier-to-TDDUIQuestionnaireResponseAGGIR"/>
+        <map value="modaliteEvaluation"/>
+      </mapping>
+      <mapping>
+        <identity value="specmetier-to-TDDUIQuestionnaireResponseSerafinSSIAD"/>
         <map value="modaliteEvaluation"/>
       </mapping>
     </element>
@@ -4025,7 +4029,7 @@
         <key value="professionnel-requis"/>
         <severity value="error"/>
         <human value="Hormis le cas de l'auto évaluation, au moins un des 3 éléments (Evaluateur, Responsable, Auteur) doit être renseigné"/>
-        <expression value="source.reference.contains('Patient/').not() implies (source.reference.contains('Practitioner/') or author.exists() or extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant').exists())"/>
+        <expression value="source.reference.contains('Patient/').not() implies (source.reference.contains('Practitioner/') or author.exists() or extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant').extension.where(url='TDDUIResponsible').exists())"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"/>
       </constraint>
       <mapping>
@@ -4140,6 +4144,10 @@
       </type>
       <mapping>
         <identity value="specmetier-to-TDDUIQuestionnaireResponseAGGIR"/>
+        <map value="modaliteEvaluation"/>
+      </mapping>
+      <mapping>
+        <identity value="specmetier-to-TDDUIQuestionnaireResponseSerafinSSIAD"/>
         <map value="modaliteEvaluation"/>
       </mapping>
     </element>

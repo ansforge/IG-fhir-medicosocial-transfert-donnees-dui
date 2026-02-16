@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-participant | *Version*:2.2.0 |
-| Active as of 2026-02-11 | *Computable Name*:TDDUIEncounterParticipant |
+| Active as of 2026-02-16 | *Computable Name*:TDDUIEncounterParticipant |
 
  
 CodeSystem définissant les types de participants dans le profil TDDUIEncounterEvenement. 
@@ -37,7 +37,7 @@ CodeSystem définissant les types de participants dans le profil TDDUIEncounterE
   "title" : "TDDUI Encounter Participant",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-11T13:27:23+00:00",
+  "date" : "2026-02-16T09:05:27+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

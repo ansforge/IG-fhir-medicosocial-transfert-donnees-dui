@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response | *Version*:2.2.0 |
-| Active as of 2026-02-11 | *Computable Name*:TDDUIQuestionnaireResponse |
+| Active as of 2026-02-16 | *Computable Name*:TDDUIQuestionnaireResponse |
 
  
 Profil de la ressource QuestionnaireResponse utilisé pour transmettre les réponses aux questionnaires dans le cadre des évaluations. 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-questionnaire-
   "name" : "TDDUIQuestionnaireResponse",
   "title" : "TDDUI QuestionnaireResponse",
   "status" : "active",
-  "date" : "2026-02-11T13:27:23+00:00",
+  "date" : "2026-02-16T09:05:27+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -119,7 +119,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-questionnaire-
             "key" : "professionnel-requis",
             "severity" : "error",
             "human" : "Hormis le cas de l'auto évaluation, au moins un des 3 éléments (Evaluateur, Responsable, Auteur) doit être renseigné",
-            "expression" : "source.reference.contains('Patient/').not() implies (source.reference.contains('Practitioner/') or author.exists() or extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant').exists())",
+            "expression" : "source.reference.contains('Patient/').not() implies (source.reference.contains('Practitioner/') or author.exists() or extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant').extension.where(url='TDDUIResponsible').exists())",
             "source" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
           }
         ],
@@ -274,6 +274,10 @@ Other representations of profile: [CSV](StructureDefinition-tddui-questionnaire-
         "mapping" : [
           {
             "identity" : "specmetier-to-TDDUIQuestionnaireResponseAGGIR",
+            "map" : "modaliteEvaluation"
+          },
+          {
+            "identity" : "specmetier-to-TDDUIQuestionnaireResponseSerafinSSIAD",
             "map" : "modaliteEvaluation"
           }
         ]

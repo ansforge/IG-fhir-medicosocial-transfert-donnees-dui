@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "TDDUIQuestionnaireResponse"] ; # 
   fhir:title [ fhir:v "TDDUI QuestionnaireResponse"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-02-11T13:27:23+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-02-16T09:05:27+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -196,7 +196,7 @@
          fhir:key [ fhir:v "professionnel-requis" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Hormis le cas de l'auto évaluation, au moins un des 3 éléments (Evaluateur, Responsable, Auteur) doit être renseigné" ] ;
-         fhir:expression [ fhir:v "source.reference.contains('Patient/').not() implies (source.reference.contains('Practitioner/') or author.exists() or extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant').exists())" ] ;
+         fhir:expression [ fhir:v "source.reference.contains('Patient/').not() implies (source.reference.contains('Practitioner/') or author.exists() or extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant').extension.where(url='TDDUIResponsible').exists())" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"^^xsd:anyURI ;
            fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response>
@@ -1865,6 +1865,9 @@
        fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "specmetier-to-TDDUIQuestionnaireResponseAGGIR" ] ;
+         fhir:map [ fhir:v "modaliteEvaluation" ]
+       ] [
+         fhir:identity [ fhir:v "specmetier-to-TDDUIQuestionnaireResponseSerafinSSIAD" ] ;
          fhir:map [ fhir:v "modaliteEvaluation" ]
        ] )
      ] [
@@ -5062,7 +5065,7 @@
          fhir:key [ fhir:v "professionnel-requis" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Hormis le cas de l'auto évaluation, au moins un des 3 éléments (Evaluateur, Responsable, Auteur) doit être renseigné" ] ;
-         fhir:expression [ fhir:v "source.reference.contains('Patient/').not() implies (source.reference.contains('Practitioner/') or author.exists() or extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant').exists())" ] ;
+         fhir:expression [ fhir:v "source.reference.contains('Patient/').not() implies (source.reference.contains('Practitioner/') or author.exists() or extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant').extension.where(url='TDDUIResponsible').exists())" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"^^xsd:anyURI ;
            fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response>
@@ -5198,6 +5201,9 @@
        ] ) ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "specmetier-to-TDDUIQuestionnaireResponseAGGIR" ] ;
+         fhir:map [ fhir:v "modaliteEvaluation" ]
+       ] [
+         fhir:identity [ fhir:v "specmetier-to-TDDUIQuestionnaireResponseSerafinSSIAD" ] ;
          fhir:map [ fhir:v "modaliteEvaluation" ]
        ] )
      ] [

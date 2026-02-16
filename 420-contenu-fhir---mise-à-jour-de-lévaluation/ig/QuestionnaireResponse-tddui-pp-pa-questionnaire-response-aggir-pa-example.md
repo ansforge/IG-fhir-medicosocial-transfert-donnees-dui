@@ -53,6 +53,9 @@ Profil: [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-re
   "subject" : {
     "reference" : "Patient/tddui-pp-pa-patient-example-pp"
   },
+  "source" : {
+    "reference" : "Patient/tddui-pp-pa-patient-example-pp"
+  },
   "item" : [
     {
       "linkId" : "resultat-eval",

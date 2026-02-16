@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente | *Version*:2.2.0 |
-| Active as of 2026-02-11 | *Computable Name*:TDDUIGoalAttente |
+| Active as of 2026-02-16 | *Computable Name*:TDDUIGoalAttente |
 
  
 Profil de la ressource Goal permettant de représenter les attentes pour un usager. 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-attente.c
   "name" : "TDDUIGoalAttente",
   "title" : "TDDUI Goal Attente",
   "status" : "active",
-  "date" : "2026-02-11T13:27:23+00:00",
+  "date" : "2026-02-16T09:05:27+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

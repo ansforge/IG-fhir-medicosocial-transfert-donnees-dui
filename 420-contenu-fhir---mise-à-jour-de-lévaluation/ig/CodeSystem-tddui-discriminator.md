@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator | *Version*:2.2.0 |
-| Active as of 2026-02-11 | *Computable Name*:TDDUIDiscriminator |
+| Active as of 2026-02-16 | *Computable Name*:TDDUIDiscriminator |
 
  
 CodeSystem définissant les codes discriminants. 
@@ -40,7 +40,7 @@ CodeSystem définissant les codes discriminants.
   "title" : "TDDUI Discriminator",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-11T13:27:23+00:00",
+  "date" : "2026-02-16T09:05:27+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
