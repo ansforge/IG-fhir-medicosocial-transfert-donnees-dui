@@ -138,7 +138,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2026-02-16T10:17:49+00:00",
+  "date" : "2026-02-16T12:54:10+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -1477,6 +1477,20 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         },
         "name" : "TDDUI Goal Objectif Note",
         "description" : "ValueSet définissant les types de notes pour l'élément Goal.note.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/tddui-household-situation"
+        },
+        "name" : "TDDUI Household Situation",
+        "description" : "Extension complexe regroupant la situation familiale, la composition du foyer et sa description textuelle de l'usager.",
         "exampleBoolean" : false
       },
       {

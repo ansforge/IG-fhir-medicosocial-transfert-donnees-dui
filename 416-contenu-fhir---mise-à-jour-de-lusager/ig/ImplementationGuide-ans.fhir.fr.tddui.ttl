@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "TDDUI"] ; # 
   fhir:title [ fhir:v "Médicosocial - Transfert de données DUI"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-02-16T10:17:49+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-02-16T12:54:10+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -2250,6 +2250,27 @@
        ] ;
        fhir:name [ fhir:v "TDDUI Goal Objectif Note" ] ;
        fhir:description [ fhir:v "ValueSet définissant les types de notes pour l'élément Goal.note." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-household-situation> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-household-situation" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Household Situation" ] ;
+       fhir:description [ fhir:v "Extension complexe regroupant la situation familiale, la composition du foyer et sa description textuelle de l'usager." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

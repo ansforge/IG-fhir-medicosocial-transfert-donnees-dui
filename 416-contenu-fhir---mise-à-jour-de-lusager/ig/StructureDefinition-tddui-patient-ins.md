@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient-ins.cs
   "name" : "TDDUIPatientINS",
   "title" : "TDDUI Patient INS",
   "status" : "active",
-  "date" : "2026-02-16T10:17:49+00:00",
+  "date" : "2026-02-16T12:54:10+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -125,6 +125,14 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient-ins.cs
         "sliceName" : "birthPlace"
       },
       {
+        "id" : "Patient.extension:birthPlace.value[x].district",
+        "path" : "Patient.extension.value[x].district",
+        "binding" : {
+          "strength" : "required",
+          "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J258-Departement/FHIR/JDV-J258-Departement"
+        }
+      },
+      {
         "id" : "Patient.extension:birthPlace.value[x].country",
         "path" : "Patient.extension.value[x].country",
         "mapping" : [
@@ -142,6 +150,21 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient-ins.cs
           {
             "identity" : "specmetier-to-TDDUIPatientINS",
             "map" : "communeNaissance"
+          }
+        ]
+      },
+      {
+        "id" : "Patient.extension:TDDUIHouseholdSituation",
+        "path" : "Patient.extension",
+        "sliceName" : "TDDUIHouseholdSituation",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Extension",
+            "profile" : [
+              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-household-situation"
+            ]
           }
         ]
       },
@@ -276,6 +299,38 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient-ins.cs
         "min" : 1
       },
       {
+        "id" : "Patient.identifier:driverLicense",
+        "path" : "Patient.identifier",
+        "sliceName" : "driverLicense",
+        "short" : "Permis de conduire",
+        "min" : 0,
+        "max" : "*"
+      },
+      {
+        "id" : "Patient.identifier:driverLicense.type",
+        "path" : "Patient.identifier.type",
+        "min" : 1,
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+              "code" : "DL",
+              "display" : "Driver's license number"
+            }
+          ]
+        }
+      },
+      {
+        "id" : "Patient.identifier:driverLicense.system",
+        "path" : "Patient.identifier.system",
+        "min" : 1
+      },
+      {
+        "id" : "Patient.identifier:driverLicense.value",
+        "path" : "Patient.identifier.value",
+        "min" : 1
+      },
+      {
         "id" : "Patient.name",
         "path" : "Patient.name",
         "type" : [
@@ -394,6 +449,14 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient-ins.cs
             "map" : "dateNaissance"
           }
         ]
+      },
+      {
+        "id" : "Patient.communication.language",
+        "path" : "Patient.communication.language",
+        "binding" : {
+          "strength" : "required",
+          "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J115-Langue-ENREG/FHIR/JDV-J115-Langue-ENREG"
+        }
       }
     ]
   }

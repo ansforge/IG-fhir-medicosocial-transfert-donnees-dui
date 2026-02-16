@@ -95,6 +95,7 @@ These define constraints on FHIR data types for systems conforming to this imple
 | [TDDUI Event Report](StructureDefinition-tddui-event-report.md) | Zone de texte liée à l’événement pour compte rendu des actions réalisées. |
 | [TDDUI Exercise Mode](StructureDefinition-tddui-exercise-mode.md) | Extension permettant de représenter le mode d'exercice du professionnel. |
 | [TDDUI Exit Mode Label](StructureDefinition-tddui-exit-mode-label.md) | Libellé du mode de sortie du séjour. |
+| [TDDUI Household Situation](StructureDefinition-tddui-household-situation.md) | Extension complexe regroupant la situation familiale, la composition du foyer et sa description textuelle de l'usager. |
 | [TDDUI Meal](StructureDefinition-tddui-meal.md) | Repas du professionnel prévu dans le cadre de l'événement. |
 | [TDDUI Nationality Extension](StructureDefinition-tddui-nationality.md) | The nationality of the patient or a related person. |
 | [TDDUI Patient Present](StructureDefinition-tddui-patient-present.md) | Evènement nécessitant ou non la présence physique de l’usager. |

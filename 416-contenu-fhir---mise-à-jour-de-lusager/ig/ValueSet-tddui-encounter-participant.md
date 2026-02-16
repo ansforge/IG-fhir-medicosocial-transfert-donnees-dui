@@ -54,7 +54,7 @@ ValueSet pour la définition des codes de participant d'un événement
   "title" : "TDDUI Encounter Participant",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-16T10:17:49+00:00",
+  "date" : "2026-02-16T12:54:10+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
