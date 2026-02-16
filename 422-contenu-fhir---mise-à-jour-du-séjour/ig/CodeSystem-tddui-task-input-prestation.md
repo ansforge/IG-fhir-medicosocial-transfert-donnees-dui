@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-prestation | *Version*:2.2.0-ballot |
-| Active as of 2026-02-11 | *Computable Name*:TDDUITaskInputPrestation |
+| Active as of 2026-02-16 | *Computable Name*:TDDUITaskInputPrestation |
 
  
 CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les prestations du projet personnalisé. 
@@ -37,7 +37,7 @@ CodeSystem pour la définition des éléments spécifiques des input dans la res
   "title" : "TDDUI Task Input Prestation",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-11T15:25:25+00:00",
+  "date" : "2026-02-16T10:05:38+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

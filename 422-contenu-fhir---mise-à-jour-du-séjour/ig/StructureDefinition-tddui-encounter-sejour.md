@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour | *Version*:2.2.0-ballot |
-| Active as of 2026-02-11 | *Computable Name*:TDDUIEncounterSejour |
+| Active as of 2026-02-16 | *Computable Name*:TDDUIEncounterSejour |
 
  
 Profil de la ressource Encounter permettant de regrouper les informations relatives au séjour d'un usager dans une structure ESSMS 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-sejo
   "name" : "TDDUIEncounterSejour",
   "title" : "TDDUI Encounter Sejour",
   "status" : "active",
-  "date" : "2026-02-11T15:25:25+00:00",
+  "date" : "2026-02-16T10:05:38+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -498,26 +498,6 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-sejo
           {
             "identity" : "specmetier-to-TDDUIEncounterSejour",
             "map" : "ESSMSProvenance"
-          }
-        ]
-      },
-      {
-        "id" : "Encounter.hospitalization.admitSource",
-        "path" : "Encounter.hospitalization.admitSource",
-        "mapping" : [
-          {
-            "identity" : "specmetier-to-TDDUIEncounterSejour",
-            "map" : "provenance"
-          }
-        ]
-      },
-      {
-        "id" : "Encounter.hospitalization.dischargeDisposition",
-        "path" : "Encounter.hospitalization.dischargeDisposition",
-        "mapping" : [
-          {
-            "identity" : "specmetier-to-TDDUIEncounterSejour",
-            "map" : "motifSortie"
           }
         ]
       },
