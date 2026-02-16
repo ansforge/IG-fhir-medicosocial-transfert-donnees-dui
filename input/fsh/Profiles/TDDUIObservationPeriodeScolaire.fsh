@@ -35,6 +35,9 @@ Description: "Profil de la ressource Observation permettant de représenter la p
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
 
+* component.code.coding 1..1
+* component.value[x] 1..1
+
 * component contains 
     typeEnseignementSpecialise 0..* and
     diplome 0..* and
