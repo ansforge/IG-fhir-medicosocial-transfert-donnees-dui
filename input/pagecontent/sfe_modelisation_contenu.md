@@ -611,17 +611,18 @@ Ensemble des dispositifs prévus par le Code de l'Action Sociale et des Familles
   <tr>
     <td>categorieDroitPrestation : [1..1] Code</td>
     <td>Catégorie de droit et prestation caractérisant la décision d'orientation.<br>
-    Nomenclature(s) associée(s) : en cours d'analyse NOS</td>
+    Jeu(x) de valeur(s) associé(s) : en cours d'analyse NOS</td>
   </tr>
   <tr>
     <td>typeDroitPrestation : [1..1] Code</td>
     <td>Type de droit et prestation caractérisant la décision d'orientation.<br>
-    Nomenclature(s) associée(s) : en cours d'analyse NOS</td>
+    Jeu(x) de valeur(s) associé(s) : en cours d'analyse NOS<br>
+    La règle métier entre les catégories et les types de droit et prestation est spécifiée dans la table d'association ASS en cours de création NOS</td>
   </tr>
   <tr>
     <td>natureDroitPrestation : [1..1] Code</td>
     <td>Nature du droit s’appliquant à tous les droits ou prestations ouverts par la CDAPH. Elle permet de gérer, le cas échéant, le lien entre la date d’ouverture du droit et la date de fin d’un droit précédent. Elle est déterminée par l’équipe pluridisciplinaire ou par la CDAPH.<br>
-    Nomenclature(s) associée(s) : en cours d'analyse NOS</td>
+    Jeu(x) de valeur(s) associé(s) : en cours d'analyse NOS</td>
   </tr>
   <tr>
     <td>dateOuverture : [1..1] Date</td>
@@ -660,7 +661,7 @@ Ensemble des dispositifs prévus par le Code de l'Action Sociale et des Familles
   <tr>
     <td>typeCompensation : [0..1] Code</td>
     <td>Type de compensation dans le cas d’une aide sociale.<br>
-    Nomenclature(s) associée(s) : en cours d'analyse NOS
+    Jeu(x) de valeur(s) associé(s) : en cours d'analyse NOS
     </td>
   </tr>
   <tr>
