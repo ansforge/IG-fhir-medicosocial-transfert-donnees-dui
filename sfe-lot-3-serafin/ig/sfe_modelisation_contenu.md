@@ -271,11 +271,11 @@ Ensemble des dispositifs prévus par le Code de l'Action Sociale et des Familles
 * Nom: numeroAllocataire : [0..1] Identifiant
   * Description: Numéro d’allocataire pour le droit ou la prestation.
 * Nom: categorieDroitPrestation : [1..1] Code
-  * Description: Catégorie de droit et prestation caractérisant la décision d'orientation.Nomenclature(s) associée(s) : en cours d'analyse NOS
+  * Description: Catégorie de droit et prestation caractérisant la décision d'orientation.Jeu(x) de valeur(s) associé(s) : en cours d'analyse NOS
 * Nom: typeDroitPrestation : [1..1] Code
-  * Description: Type de droit et prestation caractérisant la décision d'orientation.Nomenclature(s) associée(s) : en cours d'analyse NOS
+  * Description: Type de droit et prestation caractérisant la décision d'orientation.Jeu(x) de valeur(s) associé(s) : en cours d'analyse NOSLa règle métier entre les catégories et les types de droit et prestation est spécifiée dans la table d'association ASS en cours de création NOS
 * Nom: natureDroitPrestation : [1..1] Code
-  * Description: Nature du droit s’appliquant à tous les droits ou prestations ouverts par la CDAPH. Elle permet de gérer, le cas échéant, le lien entre la date d’ouverture du droit et la date de fin d’un droit précédent. Elle est déterminée par l’équipe pluridisciplinaire ou par la CDAPH.Nomenclature(s) associée(s) : en cours d'analyse NOS
+  * Description: Nature du droit s’appliquant à tous les droits ou prestations ouverts par la CDAPH. Elle permet de gérer, le cas échéant, le lien entre la date d’ouverture du droit et la date de fin d’un droit précédent. Elle est déterminée par l’équipe pluridisciplinaire ou par la CDAPH.Jeu(x) de valeur(s) associé(s) : en cours d'analyse NOS
 * Nom: dateOuverture : [1..1] Date
   * Description: La date d'ouverture de droit est la date à laquelle le droit devient effectif.Sauf disposition spécifique, la date d’ouverture des droits est la date de la décision de la CDAPH sur le fondement du principe de non-rétroactivité des décisions.
 * Nom: dateEcheance : [1..1] Date
@@ -289,7 +289,7 @@ Ensemble des dispositifs prévus par le Code de l'Action Sociale et des Familles
 * Nom: taux : [0..1] Mesure
   * Description: Taux dans le cas d’une aide sociale.
 * Nom: typeCompensation : [0..1] Code
-  * Description: Type de compensation dans le cas d’une aide sociale.Nomenclature(s) associée(s) : en cours d'analyse NOS
+  * Description: Type de compensation dans le cas d’une aide sociale.Jeu(x) de valeur(s) associé(s) : en cours d'analyse NOS
 * Nom: commentaire : [0..1] Texte
   * Description: Commentaire relatif au droit ou à la prestation.
 

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/Questionnaire/tddui-questionnaire-aggir-pa-ssiad | *Version*:2.2.0-ballot |
-| Active as of 2026-02-13 | *Computable Name*: |
+| Active as of 2026-02-17 | *Computable Name*: |
 
  
 Grille d'évaluation AGGIR PA SSIAD 
@@ -26,7 +26,7 @@ Grille d'évaluation AGGIR PA SSIAD
   "version" : "2.2.0-ballot",
   "title" : "Évaluation AGGIR PA SSIAD",
   "status" : "active",
-  "date" : "2026-02-13T16:45:56+00:00",
+  "date" : "2026-02-17T08:37:00+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
