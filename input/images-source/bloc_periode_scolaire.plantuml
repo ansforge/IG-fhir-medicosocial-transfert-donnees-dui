@@ -23,10 +23,10 @@ class PeriodeScolaire #PeachPuff {
 class ReferentScolaire #PeachPuff
 class Ecole #PeachPuff
 
-Usager "1" -- "*" PeriodeScolaire
 PersonnePhysique <|-- ReferentScolaire
-EntiteGeographique <|- Ecole
-PeriodeScolaire "1..*" -- "0..1" Ecole
-PeriodeScolaire "1..*" - "1" ReferentScolaire
+EntiteGeographique <|-- Ecole
+Usager "1" -- "*" PeriodeScolaire
+Ecole "0..1" -- "1..*" PeriodeScolaire
+PeriodeScolaire "1..*" -- "1" ReferentScolaire
 
 @enduml
