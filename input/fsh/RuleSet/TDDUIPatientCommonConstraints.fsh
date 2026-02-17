@@ -2,7 +2,8 @@
 RuleSet: TDDUIPatientCommonConstraints
 
 * extension contains
-    TDDUIHouseholdSituation named TDDUIHouseholdSituation 0..1
+    TDDUIHouseholdSituation named TDDUIHouseholdSituation 0..1 and
+    TDDUIComment named TDDUIComment 0..1
 
 * identifier.type from TDDUIPatientIdentifier (required)
 
@@ -23,13 +24,15 @@ RuleSet: TDDUIPatientCommonConstraints
 * identifier[InitialNumberMDPH].value 1..
 
 * identifier[driverLicense] ^short = "Permis de conduire"
-* identifier[driverLicense].type = http://terminology.hl7.org/CodeSystem/v2-0203#DL "Driver's license number"
+* identifier[driverLicense].type = http://terminology.hl7.org/CodeSystem/v2-0203#DL
 * identifier[driverLicense].system 1..
 * identifier[driverLicense].value 1..
-
 
 * name[usualName] 0..1
 * name only tddui-humanname
 
 * extension[birthPlace].valueAddress.district from $JDV-J258-Departement
 * communication.language from $JDV-J115-Langue-ENREG
+
+* address only AsAddressExtendedProfile
+* address.extension contains TDDUIComment named TDDUIComment 0..1

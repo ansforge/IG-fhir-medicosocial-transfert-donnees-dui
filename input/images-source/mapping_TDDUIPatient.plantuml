@@ -1,33 +1,78 @@
 @startuml
 
-map "<&layers> name:usualName" as nameusualName #back:WhiteSmoke;header:LightGray {
+map "period" as period #DarkGray {
+    dateObtention => start
+    dateValidite => end
+}
+
+map "line" as line #DarkGray {
+    libelleVoie => <&plus> additionalLocator
+    numeroVoie => <&plus> houseNumber
+    mentionDistribution => <&plus> postBox
+    complementPointGeographique => <&plus> streetNameBase
+}
+
+map "PermisConduire : <&layers> identifier:driverLicense" as PermisConduire #DarkGray {
+    numPermisConduire => value
+    period *--> period
+}
+
+map "<&layers> name:usualName" as nameusualName #DarkGray {
     nomUsage => family
     prenomUtilise => given
 }
 
-map "<&layers> name:officialName" as nameofficialName #back:WhiteSmoke;header:LightGray {
+map "<&layers> name:officialName" as nameofficialName #DarkGray {
     prenom => <&plus> birth-list-given-name
     nomNaissance => family
     premierPrenomActeNaissance => given
     civilite => prefix
 }
 
-map "dateNaissance : birthDate" as dateNaissance #back:WhiteSmoke;header:LightGray {
-    ordreNaissanceEtatCivil => <&plus> tddui-birth-order
+map "Telecommunication : telecom" as Telecommunication #DarkGray {
+    canal => system
+    adressTelecom => value
 }
 
-map "**Usager : TDDUIPatient**" as Usager #back:TECHNOLOGY;header:LimeGreen {
-    paysNaissance => <&plus> birthPlace.value[x].country
-    communeNaissance => <&plus> birthPlace.value[x].extension:inseeCode
+map "Adresse : address" as Adresse #DarkGray {
+    idAdresse => id
+    commentaire => <&plus> TDDUIComment
+    type => type
+    line *--> line
+    localite => state
+    codePostal => postalCode
+    pays => country
+}
+
+map "communication" as communication #DarkGray {
+    langueParlee => language
+}
+
+map "**Usager : TDDUIPatient**" as Usager #80b1d3 {
+    paysNationalite => <&plus> nationality
+    paysDeces => <&plus> deathPlace
+    departementNaissance => <&plus> birthPlace
+    situationFamiliale => <&plus> TDDUIHouseholdSituation.extension:familySituation
+    compositionFoyer => <&plus> TDDUIHouseholdSituation.extension:householdComposition
+    descriptionCompositionFoyer => <&plus> TDDUIHouseholdSituation.extension:householdCompositionDescription
+    commentaire => <&plus> TDDUIComment
     numSecuriteSociale => <&layers> identifier:NSS
     identifiantLocalUsagerESSMS => <&layers> identifier:PI
     numeroIndividuInitial => <&layers> identifier:InitialNumberMDPH
     sexe => gender
-    <&layers> name:usualName *--> nameusualName
-    <&layers> name:officialName *-> nameofficialName
     dateNaissance => birthDate
+    dateDeces => <&layers> deceased[x]:deceasedDateTime
+    photo => photo
+    PermisConduire => <&layers> identifier:driverLicense
+    <&layers> name:usualName *--> nameusualName
+    <&layers> name:officialName *--> nameofficialName
+    Telecommunication => telecom
+    Adresse => address
+    communication *-> communication
 }
 
-Usager::dateNaissance --> dateNaissance
+Usager::PermisConduire -u-> PermisConduire
+Usager::Telecommunication -d-> Telecommunication
+Usager::Adresse -u-> Adresse
 
 @enduml
