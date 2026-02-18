@@ -14,9 +14,12 @@ DUPONT Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 348078
 
 | | |
 | :--- | :--- |
+| Autre identifiant : | Driver's license number/822146819 (, période : 1980-01-01 --> (en cours)) |
 | Nom alternatif : | Jean DUPONT (Official) |
-| Coordonnées | 12 rue des Lilas, 76748 Vittefleur, France(home) |
+| Coordonnées | 12 rue des Lilas 76748 99100 (home) |
 | [Patient Birth Place](http://hl7.org/fhir/extensions/5.2.0/StructureDefinition-patient-birthPlace.html) | Mazoires FRA |
+| TDDUI Household Situation: | * familySituation: Seul
+ |
 
 
 
@@ -47,6 +50,23 @@ DUPONT Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 348078
         "city" : "Mazoires",
         "country" : "FRA"
       }
+    },
+    {
+      "extension" : [
+        {
+          "url" : "familySituation",
+          "valueCodeableConcept" : {
+            "coding" : [
+              {
+                "system" : "https://mos.esante.gouv.fr/NOS/TRE_R317-SituationVieQuotidienne/FHIR/TRE-R317-SituationVieQuotidienne",
+                "code" : "01",
+                "display" : "Seul"
+              }
+            ]
+          }
+        }
+      ],
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-household-situation"
     }
   ],
   "identifier" : [
@@ -62,6 +82,21 @@ DUPONT Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 348078
       },
       "system" : "https://identifiant-medicosocial-localusager.esante.gouv.fr",
       "value" : "3480787529/194704032"
+    },
+    {
+      "type" : {
+        "coding" : [
+          {
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "DL"
+          }
+        ]
+      },
+      "system" : "https://ants.gouv.fr/",
+      "value" : "822146819",
+      "period" : {
+        "start" : "1980-01-01"
+      }
     }
   ],
   "name" : [
@@ -94,10 +129,23 @@ DUPONT Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 348078
   "address" : [
     {
       "use" : "home",
-      "text" : "12 rue des Lilas, 76748 Vittefleur, France",
       "line" : ["12 rue des Lilas"],
-      "city" : "Vittefleur",
-      "postalCode" : "76748"
+      "_line" : [
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+              "valueString" : "12"
+            },
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameBase",
+              "valueString" : "rue des Lilas"
+            }
+          ]
+        }
+      ],
+      "postalCode" : "76748",
+      "country" : "99100"
     }
   ]
 }

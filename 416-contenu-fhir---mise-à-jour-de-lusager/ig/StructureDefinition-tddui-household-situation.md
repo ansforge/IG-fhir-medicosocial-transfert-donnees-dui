@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-household-situation | *Version*:2.2.0 |
-| Active as of 2026-02-17 | *Computable Name*:TDDUIHouseholdSituation |
+| Active as of 2026-02-18 | *Computable Name*:TDDUIHouseholdSituation |
 
 Extension complexe regroupant la situation familiale, la composition du foyer et sa description textuelle de l'usager.
 
@@ -20,6 +20,7 @@ Extension complexe regroupant la situation familiale, la composition du foyer et
 **Utilisations:**
 
 * Utilise ce/t/te Extension: [TDDUI Patient INS](StructureDefinition-tddui-patient-ins.md) and [TDDUI Patient](StructureDefinition-tddui-patient.md)
+* Exemples pour ce/t/te Extension: [Bundle/tddui-bundle-example](Bundle-tddui-bundle-example.md), [Patient/tddui-patient-example](Patient-tddui-patient-example.md) and [Patient/tddui-patient-ins-example](Patient-tddui-patient-ins-example.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-household-situation)
 
@@ -48,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-household-situ
   "name" : "TDDUIHouseholdSituation",
   "title" : "TDDUI Household Situation",
   "status" : "active",
-  "date" : "2026-02-17T15:13:06+00:00",
+  "date" : "2026-02-18T10:14:45+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -193,7 +194,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-household-situ
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J385-composition-foyer-ms/FHIR/JDV-J385-composition-foyer-ms"
+          "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j385-composition-foyer-ms"
         }
       },
       {
