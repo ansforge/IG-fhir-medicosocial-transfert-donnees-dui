@@ -78,7 +78,7 @@ Alias: $JDV-J384-Role-Membre-Famille-MS = https://smt.esante.gouv.fr/fhir/ValueS
 Alias: $JDV-J258-Departement = https://mos.esante.gouv.fr/NOS/JDV_J258-Departement/FHIR/JDV-J258-Departement
 Alias: $JDV-J115-Langue-ENREG = https://mos.esante.gouv.fr/NOS/JDV_J115-Langue-ENREG/FHIR/JDV-J115-Langue-ENREG
 Alias: $JDV-J176-SituationVieQuotidienne-MDPH = https://mos.esante.gouv.fr/NOS/JDV_J176-SituationVieQuotidienne-MDPH/FHIR/JDV-J176-SituationVieQuotidienne-MDPH
-Alias: $JDV-J385-composition-foyer-ms = https://mos.esante.gouv.fr/NOS/JDV_J385-composition-foyer-ms/FHIR/JDV-J385-composition-foyer-ms
+Alias: $JDV-J385-composition-foyer-ms = https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j385-composition-foyer-ms
 
 // HL7
 Alias: $v2-0131 = http://terminology.hl7.org/CodeSystem/v2-0131
