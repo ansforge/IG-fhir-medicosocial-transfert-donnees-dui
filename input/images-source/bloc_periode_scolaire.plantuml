@@ -1,0 +1,32 @@
+@startuml
+
+hide empty methods
+
+class Usager #LightPink
+
+class PersonnePhysique #LightYellow
+
+class EntiteGeographique #LightYellow
+
+class PeriodeScolaire #PeachPuff {
+    idPeriodeScolaire : Identifiant [1..1]
+    dateDebutPeriodeScolaire : Date [0..1]
+    dateFinPeriodeScolaire : Date [0..1]
+    niveauScolaireReel : ConceptCode [0..1]
+    niveauScolaireSuivi : ConceptCode [0..1]
+    typeEnseignementSpecialise : ConceptCode [0..*]
+    diplome : ConceptCode [0..*]
+    volumeScolarisation : Numerique [0..1]
+    commentaireAnneeScolaire : Texte [0..1]
+}
+
+class ReferentScolaire #PeachPuff
+class Ecole #PeachPuff
+
+PersonnePhysique <|-- ReferentScolaire
+EntiteGeographique <|-- Ecole
+Usager "1" -- "*" PeriodeScolaire
+Ecole "0..1" -- "1..*" PeriodeScolaire
+PeriodeScolaire "1..*" -- "1" ReferentScolaire
+
+@enduml

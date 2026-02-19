@@ -8,11 +8,6 @@
 
 ### Données administratives
 
-<!-- object data="donnees_admin.svg" style="width:100%" type="image/svg+xml"></object -->
-<div class="figure" style="width:100%; display: flex; align-items: center; justify-content: center;">
-  {%include donnees_admin.svg%}
-</div>
-
 #### Identification et coordonnées
 
 <!-- object data="bloc_identification_coordonnees.svg" type="image/svg+xml"></object -->
@@ -40,13 +35,14 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
      Le numéro de sécurité sociale est utilisé pour la facturation et le remboursement des prestations de santé de la personne prise en charge.</td>
   </tr>
   <tr>
-    <td>identifiantLocalUsagerESSMS : [0..1] Identifiant</td>
-    <td>Identifiant local de l’usager au sein de la structure.<br>
+    <td>identifiantUsagerESSMS : [0..1] Identifiant</td>
+    <td>Identifiant de l’usager au sein de la structure.<br>
     Cet identifiant est obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS) : 3+FINESS/identifiantLocalUsagerESSMS</td>
   </tr>
    <tr>
     <td>numeroIndividuInitial : [0..1] Identifiant</td>
-    <td>Numéro de l’individu attribué par la MDPH ayant créé le dossier Individu (= MDPH initiale).<br>
+    <td>Numéro de l’individu attribué par la MDPH (= MDPH initiale) ayant créé le dossier Individu.<br>
+    Cet identifiant est obtenu par la concaténation du numéro de l'individu local attribué par la MDPH ayant créé le dossier Individu (idIndividuMDPHInitial) et du numéro de cette MDPH (idMDPH) : idIndividuMDPHInitial/idMDPH<br>
     Synonyme = identifiantMDPH</td>
   </tr>
   <tr>
@@ -107,7 +103,7 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
     Il est obligatoire si le NIR n'est pas transmis.</td>
   </tr>
   <tr>
-    <td>CommuneNaissance : [0..1] Code</td>
+    <td>communeNaissance : [0..1] Code</td>
     <td>Commune de naissance de l’usager. Code officiel géographique (COG) de la commune.<br>
     Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J120-CommuneHistorisee/FHIR/JDV-J120-CommuneHistorisee">JDV_J120-CommuneHistorisee</a><br>
     Cet attribut fait partie des traits INS. Il est obligatoire si l’identité INS est qualifiée.<br>
@@ -128,17 +124,22 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
   <tr>
     <td>situationFamiliale : [0..1] Code</td>
     <td>Situation familiale de l’usager.<br>
-    Nomenclature(s) associée(s) : à définir</td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J176-SituationVieQuotidienne-MDPH/FHIR/JDV-J176-SituationVieQuotidienne-MDPH">JDV-J176-SituationVieQuotidienne-MDPH</a></td>
   </tr>
   <tr>
-    <td>compositionFoyer : [0..1] Code</td>
+    <td>compositionFoyer : [0..*] Code</td>
     <td>Désigne avec qui vit l’usager dans son logement.<br>
-    Nomenclature(s) associée(s) : à définir</td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j385-composition-foyer-ms/$expand">JDV-J385-composition-foyer-ms</a></td>
+  </tr>
+  <tr>
+    <td>descriptionCompositionFoyer : [0..1] Texte</td>
+    <td>Description de la composition du foyer, c’est-à-dire des personnes qui vivent dans le logement avec l'usager.
+    </td>
   </tr>
   <tr>
     <td>paysNationalite : [0..*] Code</td>
-    <td>Pays de nationalité actuelle ou rattachement de la nationalité à un espace de pays conventionné.<br>
-    Nomenclature(s) associée(s) : <a href="https://mos.esante.gouv.fr/NOS/TRE_R89-RegroupementPays/FHIR/TRE-R89-RegroupementPays">TRE_R89-RegroupementPays</a></td>
+    <td>Pays de nationalité de l'usager.<br>
+    Nomenclature(s) associée(s) : ISO 3166</td>
   </tr>
   <tr>
     <td>langueParlee : [0..*] Code</td>
@@ -170,6 +171,14 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
     Nomenclature(s) associée(s) : Norme ISO 3166</td>
   </tr>
   <tr>
+    <td>adresseCourrier : [0..*] <a href="#classe-courrier">Courrier</a></td>
+    <td>Adresse de courrier de l’usager.</td>
+  </tr>
+  <tr>
+    <td>telecommunication : [0..*] <a href="#classe-telecommunication">Telecommunication</a></td>
+    <td>Telecommunication de l'usager.</td>
+  </tr>
+  <tr>
     <td>photo : [0..*] ObjetBinaire </td>
     <td>Photo de l’usager.</td>
   </tr>
@@ -181,16 +190,12 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
 
 ##### Classe Adresse
 
-Adresse géopostale. Un emplacement auquel l’usager peut être trouvée, d'après la norme AFNOR NF Z10-011.
+Adresse géopostale. Un emplacement auquel l’usager peut être trouvé, d'après la norme AFNOR NF Z10-011.
 
 <table style="width:100%">
   <tr>
     <th>Nom</th>
     <th>Description</th>
-  </tr>
-  <tr>
-    <td>idAdresse : [0..1] Identifiant </td>
-    <td>Identifiant fonctionnel de l’adresse.</td>
   </tr>
   <tr>
     <td>type : [0..1] Code</td>
@@ -249,7 +254,7 @@ Adresse géopostale. Un emplacement auquel l’usager peut être trouvée, d'apr
 
 ##### Classe Telecommunication
 
-Adresse de télécommunication à laquelle l’usager peut être contactée (téléphone, fax, e-mail, URL, etc.).
+Adresse de télécommunication à laquelle l’usager peut être contactée (téléphone, fax, e-mail, URL, etc.). Cet objet provient du MOS, il a été profilé pour ce volet.
 
 <table style="width:100%">
   <tr>
@@ -257,17 +262,23 @@ Adresse de télécommunication à laquelle l’usager peut être contactée (té
     <th>Description</th>
   </tr>
   <tr>
-    <td>canal : [0..1] Code</td>
+    <td>canal : [1..1] Code</td>
     <td>Code spécifiant le canal ou la manière dont s'établit la communication (téléphone, e-mail, URL, etc.).<br>
-    Nomenclature(s) associée(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J225-CanalCommunication-ROR/FHIR/JDV-J225-CanalCommunication-ROR">JDV-J225-CanalCommunication-ROR</a></td>
+    Jeu(x) de valeur associé(s) : JDV en cours de d'analyse NOS</td>
+  </tr>
+   <tr>
+    <td>typeMessagerie : [0..1] Code</td>
+    <td>Type de messagerie électronique rassemblant des acteurs (personne physique, personne morale ou système) identifiés et enregistrés selon des règles qui garantissent leur légitimité à l'utiliser.<br>
+    Jeu(x) de valeur associé(s) : JDV en cours de d'analyse NOS</td>
   </tr>
   <tr>
-    <td>adresseTelecom : [0..1] Texte</td>
+    <td>adresseTelecom : [1..1] Texte</td>
     <td>Valeur de l'adresse de télécommunication dans le format induit par le canal de communication, par exemple un numéro de téléphone, une adresse de courrier électronique, une adresse URL, etc.</td>
   </tr>
     <tr>
-    <td>utilisation : [0..1] Texte</td>
-    <td>Précise l'utilisation du canal de communication (par exemple à des fins professionnelles, privées, etc.).</td>
+    <td>utilisation : [0..1] Code</td>
+    <td>Précise l'utilisation du canal de communication (par exemple à des fins professionnelles, privées, etc.).<br>
+    Jeu(x) de valeur associé(s) : JDV en cours de d'analyse NOS</td>
   </tr>
 </table>
 
@@ -282,12 +293,8 @@ Adresse de courrier de l’usager.
   </tr>
   <tr>
     <td>typeCourrier : [0..1] Code</td>
-    <td>Type de courrier.<br>
-    Nomenclature(s) associée(s) : à définir</td>
-  </tr>
-  <tr>
-    <td>idAdresse : [0..1] Identifiant</td>
-    <td>Adresse à utiliser pour l’envoi du type de courrier.</td>
+    <td>Type de courrier qui peut être adressé à l'usager.<br>
+    Jeu(x) associé(s) : en cours de création NOS</td>
   </tr>
   <tr>
     <td>libelleDestinataire : [0..1] Texte</td>
@@ -878,9 +885,9 @@ Relevé d'Identité Bancaire.
   </tr>
 </table>
 
-##### Classe Transport
+##### Classe MobiliteUsager
 
-Moyen de transport utilisé par l’usager.
+Dispositif de transport utilisé par l’usager.
 
 <table style="width:100%">
   <tr>
@@ -889,7 +896,8 @@ Moyen de transport utilisé par l’usager.
   </tr>
   <tr>
     <td>type : [0..1] Code</td>
-    <td>Type de moyen de transport.</td>
+    <td>Type de moyen de transport.<br>
+    Jeu(x) de valeur(s) associé(s) : JDV Mode De Transport CISIS avec l'OID 1.2.250.1.213.1.1.5.140 publié sur <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a></td>
   </tr>
   <tr>
     <td>observationAmenagement : [0..1] Texte</td>
@@ -907,12 +915,19 @@ Permis de conduire de l’usager.
     <th>Description</th>
   </tr>
   <tr>
+    <td>numPermisConduire : [0..1] Identifiant</td>
+    <td>Numéro du permis de conduire de l'usager.</td>
+  </tr>
+  <tr>
     <td>categorie : [0..1] Code</td>
-    <td>Catégorie du permis de conduire.</td>
+    <td>Catégorie du permis de conduire.<br>
+    Jeu(x) de valeur(s) associé(s) : en cours de création NOS</td>
   </tr>
   <tr>
     <td>type : [0..1] Code</td>
-    <td>Type du permis de conduire.</td>
+    <td>Type du permis de conduire.<br>
+    Jeu(x) de valeur(s) associé(s) : en cours de création NOS <br>
+    La règle métier entre les catégories et les types est spécifiée dans la table d'association ASS en cours de création NOS</td>
   </tr>
   <tr>
     <td>dateObtention : [0..1] Date</td>
@@ -989,8 +1004,24 @@ La classe EntiteJuridique est définie dans le MOS et est profilée pour ce vole
     <td>Cet identifiant est obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de six caractères "SEJOUR" et numéro de dossier administratif du séjour dans le DUI (numeroDossier) : <br>idSejour = 3+FINESS/identifiantLocalUsagerESSMS-SEJOUR-numeroDossier</td>
   </tr>
    <tr>
-    <td>ESSMS : [1..1] EntiteJuridique</td>
+    <td>numeroDossierAdministratifSejour : [0..1] Identifiant</td>
+    <td>Numéro de dossier administratif du séjour.</td>
+  </tr>
+   <tr>
+    <td>ESSMSAccueil : [1..1] EntiteJuridique</td>
     <td>Établissement ou service social ou médico-social.</td>
+  </tr>
+  <tr>
+    <td>numeroDossierESSMSProvenance : [0..1] Identifiant</td>
+    <td>Numéro de dossier administratif dans l'ESSMS de provenance.</td>
+  </tr>
+   <tr>
+    <td>ESSMSProvenance : [0..1] EntiteJuridique</td>
+    <td>Établissement ou service social ou médico-social de provenance.</td>
+  </tr>
+  <tr>
+    <td>dateEntreeESSMSProvenance : [0..1] DateHeure</td>
+    <td>Date d'entrée dans l'ESSMS de provenance.</td>
   </tr>
   <tr>
     <td>dateAdmission : [0..1] DateHeure</td>
@@ -1005,6 +1036,11 @@ La classe EntiteJuridique est définie dans le MOS et est profilée pour ce vole
     <td>Date d’entrée dans le séjour.</td>
   </tr>
   <tr>
+    <td>modaliteEntree : [0..1] Code</td>
+    <td>Mode d'entrée du séjour.<br>
+    Jeu(x) de valeur(s) associé(s) : en cours de construction</td>
+  </tr>
+  <tr>
     <td>libelleModeEntree : [0..1] Texte</td>
     <td>Libellé du mode d’entée du séjour.</td>
   </tr>
@@ -1016,9 +1052,23 @@ La classe EntiteJuridique est définie dans le MOS et est profilée pour ce vole
     <td>dateSortie : [0..1] DateHeure</td>
     <td>Date de sortie du séjour.</td>
   </tr>
+   <tr>
+    <td>modaliteSortie : [0..1] Code</td>
+    <td>Mode de sortie/destination du séjour.<br>
+    Jeu(x) de valeur(s) associé(s) : en cours de construction</td>
+  </tr>
   <tr>
     <td>libelleModeSortie : [0..1] Texte</td>
     <td>Libellé du mode de sortie du séjour.</td>
+  </tr>
+  <tr>
+    <td>origineDemande : [0..1] Texte</td>
+    <td>Désignation de la personne ou de la structure qui est à l'origine du séjour.</td>
+  </tr>
+   <tr>
+    <td>modaliteAccueil : [0..1] Code</td>
+    <td>Mode de fonctionnement FINESS utilisé pour l'usager.<br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J226-ModaliteAccueil-ROR/FHIR/JDV-J226-ModaliteAccueil-ROR">JDV-J226-ModaliteAccueil-ROR</a></td>
   </tr>
   <tr>
     <td>commentaire : [0..1] Texte</td>
@@ -1173,6 +1223,10 @@ Résultat de l'évaluation globale d'un usager.
     - Evaluation AGGIR PA SSIAD : JDV_GIR_CISIS avec l'OID 1.2.250.1.213.1.1.5.53 publié sur <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a>
     </td>
   </tr>
+  <tr>
+    <td>modaliteEvaluation : [0..1] Texte</td>
+    <td>Mode d'évaluation.</td>
+  </tr>
    <tr>
     <td>commentaireEvaluation : [0..1] Texte</td>
     <td>Commentaire libre sur l’évaluation.</td>
@@ -1256,11 +1310,9 @@ Ce niveau permet d'associer à un champ évalué de la classe "DetailEvaluation"
 
 ##### Classe Evaluateur
 
-** Classe spécialisée, hérite de la classe Professionnel du MOS profilée pour ce volet.
+** Classe spécialisée, hérite soit de la classe Professionnel du MOS profilée pour ce volet soit de la classe Usager dans le cas d'une auto évaluation, où l'évaluateur correspond à l'usager.
 
 Cette classe regroupe les items pouvant caractériser la personne ayant réalisé l'évaluation.<br>
-
-Dans le cas d'une auto évaluation, l'évaluateur étant l'usager cet élément n'est pas requis.
 
 ##### Classe Responsable
 
@@ -1279,6 +1331,12 @@ Cette classe regroupe les items pouvant caractériser la personne ayant rédigé
 Dans le cas d'une auto évaluation, l'auteur étant l'usager cet élément n'est pas requis.<br>
 <br>
 <u>Remarque</u> : Hormis le cas de l'auto évaluation, au moins un des 3 éléments (Evaluateur, Responsable, Auteur) doit être renseigné.
+
+##### Classe Porteur
+
+** Classe spécialisée, hérite de la classe EntiteJuridique du MOS profilée pour ce volet.
+
+Cette classe correspond à la personne morale porteuse de l'évaluation de l'usager. Dans le cas d'une auto-évaluation, cet élément est obligatoire.
 
 #### Projet personnalisé
 
@@ -1635,6 +1693,76 @@ Préparation du bilan du projet personnalisé.
  </tr>
 </table>   
 
+#### Parcours
+
+<div style="text-align:center;">{%include bloc_periode_scolaire.svg%}</div>
+
+##### Classe PeriodeScolaire
+
+La période scolaire représente un temps de scolarisation pour l'usager ainsi que les caractéristiques de cette période. L'ensemble des périodes scolaires constitue le parcours scolaire de la personne.
+
+La classe EntiteGeographique est issue du MOS et est profilée pour ce volet.
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>idPeriodeScolaire : [1..1] Identifiant</td>
+    <td>Identifiant technique unique de la période scolaire obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "PSCO" et du numéro de la période scolaire dans le DUI (numPeriodeScolaire) :<br> idPeriodeScolaire = 3+FINESS/identifiantLocalUsagerESSMS-PSCO-numPeriodeScolaire
+    </td>
+ </tr>
+  <tr>
+    <td>dateDebutPeriodeScolaire : [0..1] Date</td>
+    <td>Date de début de la période de scolaire. La date de début peut être différente d'une année scolaire civile habituelle.</td>
+ </tr>
+ <tr>
+    <td>dateFinPeriodeScolaire : [0..1] Date</td>
+    <td>Date de fin de la période scolaire. La date de fin peut être différente d'une année scolaire civile habituelle.</td>
+ </tr>
+ <tr>
+    <td>niveauScolaireReel : [0..1] ConceptCode</td>
+    <td>Situation scolaire réelle de l'usager.<br>
+    Jeu(x) de valeur(s) associé(s) : en cours de création NOS</td>
+ </tr>
+ <tr>
+    <td>niveauScolaireSuivi : [0..1] ConceptCode</td>
+    <td>Situation scolaire suivie de l'usager.<br>
+    Jeu(x) de valeur(s) associé(s) : en cours de création NOS</td>
+ </tr>
+  <tr>
+    <td>typeEnseignementSpecialise : [0..*] ConceptCode</td>
+    <td>Type enseignement spécialisé.<br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j386-type-enseignement-specialise-ms/$expand">JDV-J386-TYPE-ENSEIGNEMENT-SPECIALISE-MS</a></td>
+ </tr>
+ <tr>
+    <td>diplome : [0..*] ConceptCode</td>
+    <td>Diplôme obtenu au cours de la période scolaire.<br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J81-TypeDiplome-RASS/FHIR/JDV-J81-TypeDiplome-RASS">JDV-J81-TypeDiplome-RASS</a></td>
+ </tr>
+ <tr>
+    <td>volumeScolarisation : [0..1] Numerique</td>
+    <td>Volume horaire de scolarisation de l'usager sur la période de scolarité. L'unité correspond ici à la demi-journée.</td>
+ </tr>
+  <tr>
+    <td>commentaireAnneeScolaire : [0..1] Texte</td>
+    <td>Commentaire sur l'année scolaire.</td>
+ </tr>
+  </table>
+
+##### Classe ReferentScolaire
+
+** Classe spécialisée, hérite de la classe PersonnePhysique
+
+La loi place l’enseignant référent comme l’acteur central des actions conduites en direction des élèves handicapés. Il est l’interlocuteur privilégié des parents et des différents acteurs autour de la scolarisation d’un enfant, qu’il soit scolarisé en école ordinaire ou bien dans le milieu spécialisé.
+
+##### Classe Ecole
+
+** Classe spécialisée, hérite de la classe EntiteGeographique qui est issue du MOS et qui est profilée pour ce volet.
+
+Cette classe correspond à la structure dans laquelle la période scolaire de l'usager se déroule.
+
 ### Partie Coordination des acteurs
 
 #### Evènement de l'agenda
@@ -1692,11 +1820,7 @@ Les classes EntiteJuridique, Lieu et Professionnel sont issues du MOS et sont pr
     <td>lieuEvenement : [0..1] Lieu</td>
     <td>Localisation d’exécution de l’évènement.</td>
   </tr>
-<tr>
-    <td>structureEnCharge : [0..1] EntiteJuridique</td>
-    <td>Structure de rattachement de l'usager en charge de l'évènement.</td>
-  </tr>
-<tr>
+  <tr>
     <td>dateDebutEvenement : [1..1] DateHeure</td>
     <td>Date et heure de début de l'évènement.</td>
   </tr>
@@ -1718,7 +1842,7 @@ Les classes EntiteJuridique, Lieu et Professionnel sont issues du MOS et sont pr
   </tr>
   <tr>
    <td>repas : [0..1] Indicateur</td>
-    <td>Repas du professionnel prévu dans le cadre de l'événement.</td>
+    <td>Repas du professionnel prévu dans le cadre de l'évènement.</td>
   </tr>
  <tr>
    <td>typeRessourceUtilisee: [0..*] Code</td>
@@ -1738,7 +1862,43 @@ Les classes EntiteJuridique, Lieu et Professionnel sont issues du MOS et sont pr
     <td>dateModificationEvenement : [0..1] DateHeure</td>
     <td>Date de la dernière modification de l'événement.</td>
   </tr>
+   <tr>
+    <td>validationUsager : [0..1] Indicateur</td>
+    <td>Validation par l'usager que l'événement a eu lieu.<br>
+1 =  validation de l'usager<br>
+0 =  refus de l'usager</td>
+  </tr>
 </table>
+
+##### Classe Participant
+
+Le Participant est une personne morale ou physique prenant part à l'événement.
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>presenceParticipant : [0..1] Indicateur</td>
+    <td>Indique la présence du participant à l'événement.<br>
+1= participant présent<br>
+0= participant absent </td>
+  </tr>
+  <tr>
+    <td>roleParticipantEJ : [0..1] Code</td>
+    <td>Role du participant vis à vis de l'événement (mandataire judiciaire, structure en charge de l'événement).<br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j387-role-participant-ms/$expand">JDV-J387-ROLE-PARTICIPANT-MS</a></td>
+  </tr>
+  </table>
+
+##### Classe StructureEnCharge
+
+** Classe spécialisée, hérite de la classe EntiteJuridique qui est issue du MOS et qui est profilée pour ce volet.
+
+Cette classe correspond à la structure en charge de l'évènement. Cette structure peut être différente de la structure de rattachement de l'usager.
+
+Le lien est créé entre la classe Professionnel et la classe StructureEnCharge si le participant en tant que personne physique est interne à la structure en charge de l'évènement. Dans le cas contraire ce lien n'est pas créé.
 
 ##### Classe Transport
 
@@ -1916,6 +2076,29 @@ Pour ce volet l'Entité Juridique est une personne morale inscrite dans le FINES
   </tr>
 </table>
 
+##### Classe Entité Géographique
+
+Pour ce volet l'Entité Géographique est une personne morale.
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>idNat_Struct : [1..1] Identifiant</td>
+    <td>Identification nationale de l'Entité géographique. Cette identification est obtenue par la concaténation du type d'identifiant national de structure (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G07-TypeIdentifiantStructure/FHIR/TRE-G07-TypeIdentifiantStructure">TRE_G07-TypeIdentifiantStructure</a>) et de l'identifiant de la structure: ** 3 + N° SIRET (pour les établissements qui ne sont pas de santé).</td>
+  </tr>
+ <tr>
+    <td>denominationEG : [0..1] Texte</td>
+    <td>Nom sous lequel l'entité géographique exerce son activité.</td>
+  </tr>
+  <tr>
+    <td>adresseEG : [0..1] <a href="#classe-adresse">Adresse</a></td>
+    <td>Adresse(s) géopostale(s) de l'entité géographique.</td>
+  </tr>
+
+</table>
 
 ##### Classe Lieu
 
