@@ -264,7 +264,7 @@ Adresse de télécommunication à laquelle l’usager peut être contactée (té
   <tr>
     <td>canal : [1..1] Code</td>
     <td>Code spécifiant le canal ou la manière dont s'établit la communication (téléphone, e-mail, URL, etc.).<br>
-    Jeu(x) de valeur associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J225-CanalCommunication-ROR/FHIR/JDV-J225-CanalCommunication-ROR">JDV-J225-CanalCommunication-ROR</a></td>
+    Jeu(x) de valeur associé(s) : JDV en cours de d'analyse NOS</td>
   </tr>
    <tr>
     <td>typeMessagerie : [0..1] Code</td>
@@ -929,7 +929,7 @@ Relevé d'Identité Bancaire.
   </tr>
 </table>
 
-##### Classe MobilitetUsager
+##### Classe MobiliteUsager
 
 Dispositif de transport utilisé par l’usager.
 
@@ -1082,7 +1082,7 @@ La classe EntiteJuridique est définie dans le MOS et est profilée pour ce vole
   <tr>
     <td>modaliteEntree : [0..1] Code</td>
     <td>Mode d'entrée du séjour.<br>
-    Jeu(x) de valeur(s) associé(s) : jdv-modalite-entree-cisis avec l'OID 1.2.250.1.213.1.1.5.73 publié sur <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a></td>
+    Jeu(x) de valeur(s) associé(s) : en cours de construction</td>
   </tr>
   <tr>
     <td>libelleModeEntree : [0..1] Texte</td>
@@ -1099,7 +1099,7 @@ La classe EntiteJuridique est définie dans le MOS et est profilée pour ce vole
    <tr>
     <td>modaliteSortie : [0..1] Code</td>
     <td>Mode de sortie/destination du séjour.<br>
-    Jeu(x) de valeur(s) associé(s) : jdv-modalite-sortie-cisis avec l'OID 1.2.250.1.213.1.1.5.74 publié sur <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a></td>
+    Jeu(x) de valeur(s) associé(s) : en cours de construction</td>
   </tr>
   <tr>
     <td>libelleModeSortie : [0..1] Texte</td>
@@ -1943,14 +1943,6 @@ Le Participant est une personne morale ou physique prenant part à l'événement
 Cette classe correspond à la structure en charge de l'évènement. Cette structure peut être différente de la structure de rattachement de l'usager.
 
 Le lien est créé entre la classe Professionnel et la classe StructureEnCharge si le participant en tant que personne physique est interne à la structure en charge de l'évènement. Dans le cas contraire ce lien n'est pas créé.
-
-##### Classe StructureRattachement
-
-** Classe spécialisée, hérite de la classe EntiteJuridique qui est issue du MOS et qui est profilée pour ce volet.
-
-Cette classe correspond à la structure dans laquelle l'usager est rattaché.
-
-Le lien est créé entre la classe Participant et la classe StructureRattachement si le participant en tant que personne physique est interne à la structure de rattachement de l'usager. Dans le cas contraire ce lien n'est pas créé.
 
 ##### Classe Transport
 
