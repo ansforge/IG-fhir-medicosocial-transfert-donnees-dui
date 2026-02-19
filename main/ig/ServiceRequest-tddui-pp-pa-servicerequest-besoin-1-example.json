@@ -1,0 +1,26 @@
+{
+  "resourceType" : "ServiceRequest",
+  "id" : "tddui-pp-pa-servicerequest-besoin-1-example",
+  "meta" : {
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : DemandeService tddui-pp-pa-servicerequest-besoin-1-example</b></p><a name=\"tddui-pp-pa-servicerequest-besoin-1-example\"> </a><a name=\"hctddui-pp-pa-servicerequest-besoin-1-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-service-request-besoin.html\">TDDUI ServiceRequest Besoin</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-besoin.esante.gouv.fr</code>/3480787529/123456789-BESO-1234</p><p><b>basedOn</b>: <a href=\"CarePlan-tddui-pp-pa-careplan-example.html\">CarePlan Projet personnalisé de Mme Jeanne L.</a></p><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>code</b>: <span title=\"Codes :\">Besoin d'aide pour la mobilité et les déplacements.</span></p><p><b>subject</b>: <a href=\"Patient-tddui-pp-pa-patient-example-pp.html\">Jeanne L. (official) Female, Date de Naissance inconnue ( Patient internal identifier: 3480787529/123456789)</a></p></div>"
+  },
+  "identifier" : [{
+    "system" : "https://identifiant-medicosocial-besoin.esante.gouv.fr",
+    "value" : "3480787529/123456789-BESO-1234"
+  }],
+  "basedOn" : [{
+    "reference" : "CarePlan/tddui-pp-pa-careplan-example"
+  }],
+  "status" : "active",
+  "intent" : "plan",
+  "code" : {
+    "text" : "Besoin d'aide pour la mobilité et les déplacements."
+  },
+  "subject" : {
+    "reference" : "Patient/tddui-pp-pa-patient-example-pp"
+  }
+}
