@@ -498,7 +498,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <tr>
     <td>canal : [1..1] Code</td>
     <td>Code spécifiant le canal ou la manière dont s'établit la communication (téléphone, e-mail, URL, etc.).<br />
-    Jeu(x) de valeur associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J225-CanalCommunication-ROR/FHIR/JDV-J225-CanalCommunication-ROR">JDV-J225-CanalCommunication-ROR</a></td>
+    Jeu(x) de valeur associé(s) : JDV en cours de d'analyse NOS</td>
   </tr>
    <tr>
     <td>typeMessagerie : [0..1] Code</td>
@@ -1162,7 +1162,7 @@ Droit temporel et exceptionnel conféré à une personne ou une organisation.</p
   </tr>
 </table>
 
-<h5 id="classe-mobilitetusager">Classe MobilitetUsager</h5>
+<h5 id="classe-mobiliteusager">Classe MobiliteUsager</h5>
 
 <p>Dispositif de transport utilisé par l’usager.</p>
 
@@ -1315,7 +1315,7 @@ Droit temporel et exceptionnel conféré à une personne ou une organisation.</p
   <tr>
     <td>modaliteEntree : [0..1] Code</td>
     <td>Mode d'entrée du séjour.<br />
-    Jeu(x) de valeur(s) associé(s) : jdv-modalite-entree-cisis avec l'OID 1.2.250.1.213.1.1.5.73 publié sur <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a></td>
+    Jeu(x) de valeur(s) associé(s) : en cours de construction</td>
   </tr>
   <tr>
     <td>libelleModeEntree : [0..1] Texte</td>
@@ -1332,7 +1332,7 @@ Droit temporel et exceptionnel conféré à une personne ou une organisation.</p
    <tr>
     <td>modaliteSortie : [0..1] Code</td>
     <td>Mode de sortie/destination du séjour.<br />
-    Jeu(x) de valeur(s) associé(s) : jdv-modalite-sortie-cisis avec l'OID 1.2.250.1.213.1.1.5.74 publié sur <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a></td>
+    Jeu(x) de valeur(s) associé(s) : en cours de construction</td>
   </tr>
   <tr>
     <td>libelleModeSortie : [0..1] Texte</td>
@@ -2176,14 +2176,6 @@ Le détail de l’évaluation de ce champ peut être transmis à travers un deux
 
 <p>Le lien est créé entre la classe Professionnel et la classe StructureEnCharge si le participant en tant que personne physique est interne à la structure en charge de l'évènement. Dans le cas contraire ce lien n'est pas créé.</p>
 
-<h5 id="classe-structurerattachement">Classe StructureRattachement</h5>
-
-<p>** Classe spécialisée, hérite de la classe EntiteJuridique qui est issue du MOS et qui est profilée pour ce volet.</p>
-
-<p>Cette classe correspond à la structure dans laquelle l'usager est rattaché.</p>
-
-<p>Le lien est créé entre la classe Participant et la classe StructureRattachement si le participant en tant que personne physique est interne à la structure de rattachement de l'usager. Dans le cas contraire ce lien n'est pas créé.</p>
-
 <h5 id="classe-transport">Classe Transport</h5>
 
 <p>Classe générique socle décrivant le transport d’une personne physique (professionnel, usger) lors d’un évènement.</p>
@@ -2512,7 +2504,7 @@ Le détail de l’évaluation de ce champ peut être transmis à travers un deux
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.2.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 17, 2026 14:40+0000">2026-02-17</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.2.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 19, 2026 13:12+0000">2026-02-19</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
