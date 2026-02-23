@@ -4566,7 +4566,7 @@ discharge diagnosisindication","",1,1,"","","Y","Reference {[]} {[CanonicalType[
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "tddui-encounter-sejour","Encounter.hospitalization.extension:TDDUIEntryDateOrigin","Encounter.hospitalization.extension","TDDUIEntryDateOrigin","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-date-origin]]} {[]}
-","Date d'entrée dans l'ESSMS de provenance","Extension permettant de véhiculer la date d'entrée dans l'ESSMS de provenance.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","TDDUI Entry Date Origin","Extension permettant de véhiculer la date d'entrée dans l'ESSMS de provenance.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "tddui-encounter-sejour","Encounter.hospitalization.modifierExtension","Encounter.hospitalization.modifierExtension","","extensions
@@ -4638,7 +4638,7 @@ There may be many levels in the hierachy, and this may only pic specific levels 
 ","Another Encounter this encounter is part of","Another Encounter of which this encounter is a part of (administratively or in time).","This is also used for associating a child's encounter back to the mother's encounter.Refer to the Notes section in the Patient resource for further details.","","","","","","","","",,,,,"",,,,"Encounter.partOf",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-entry-date-origin","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Date d'entrée dans l'ESSMS de provenance","Extension permettant de véhiculer la date d'entrée dans l'ESSMS de provenance.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","TDDUI Entry Date Origin","Extension permettant de véhiculer la date d'entrée dans l'ESSMS de provenance.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "tddui-entry-date-origin","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}

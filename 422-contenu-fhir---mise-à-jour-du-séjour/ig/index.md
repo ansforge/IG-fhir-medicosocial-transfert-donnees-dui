@@ -141,7 +141,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2026-02-23T10:19:26+00:00",
+  "date" : "2026-02-23T14:19:51+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -805,18 +805,6 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/tddui-entry-date-origin"
-      },
-      "name" : "Date d'entrée dans l'ESSMS de provenance",
-      "description" : "Extension permettant de véhiculer la date d'entrée dans l'ESSMS de provenance.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/tddui-related-person-contact-description"
       },
       "name" : "Description",
@@ -1129,6 +1117,18 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/tddui-entry-date-origin"
+      },
+      "name" : "TDDUI Entry Date Origin",
+      "description" : "Extension permettant de véhiculer la date d'entrée dans l'ESSMS de provenance.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/tddui-entry-mode-label"
       },
       "name" : "TDDUI Entry Mode label",
@@ -1349,6 +1349,18 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
       },
       "name" : "TDDUI Organization Example",
       "description" : "ESSMS - Les Chênes Verts",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/tddui-organization-origine-example"
+      },
+      "name" : "TDDUI Organization Origine Example",
+      "description" : "ESSMS - Les Résidences du Lac",
       "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization"
     },
     {
@@ -2346,18 +2358,6 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
       "name" : "TDDUI-Consommateur",
       "description" : "Le rôle du Consommateur est de recueillir les données d'un logiciel DUI. Il correspond à un SI tiers.",
       "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Organization"
-      }],
-      "reference" : {
-        "reference" : "Organization/tddui-organization-origine-example"
-      },
-      "name" : "tddui-organization-origine-example",
-      "description" : "ESSMS - Les Résidences du Lac",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization"
     },
     {
       "extension" : [{

@@ -10,7 +10,7 @@
   <name value="TDDUI"/>
   <title value="Médicosocial - Transfert de données DUI"/>
   <status value="active"/>
-  <date value="2026-02-23T10:19:26+00:00"/>
+  <date value="2026-02-23T14:19:51+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -503,17 +503,6 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/tddui-entry-date-origin"/>
-      </reference>
-      <name value="Date d'entrée dans l'ESSMS de provenance"/>
-      <description value="Extension permettant de véhiculer la date d'entrée dans l'ESSMS de provenance."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/tddui-related-person-contact-description"/>
       </reference>
       <name value="Description"/>
@@ -800,6 +789,17 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/tddui-entry-date-origin"/>
+      </reference>
+      <name value="TDDUI Entry Date Origin"/>
+      <description value="Extension permettant de véhiculer la date d'entrée dans l'ESSMS de provenance."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/tddui-entry-mode-label"/>
       </reference>
       <name value="TDDUI Entry Mode label"/>
@@ -1002,6 +1002,17 @@
       </reference>
       <name value="TDDUI Organization Example"/>
       <description value="ESSMS - Les Chênes Verts"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/tddui-organization-origine-example"/>
+      </reference>
+      <name value="TDDUI Organization Origine Example"/>
+      <description value="ESSMS - Les Résidences du Lac"/>
       <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization"/>
     </resource>
     <resource>
@@ -1916,17 +1927,6 @@
       <name value="TDDUI-Consommateur"/>
       <description value="Le rôle du Consommateur est de recueillir les données d'un logiciel DUI. Il correspond à un SI tiers."/>
       <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Organization"/>
-      </extension>
-      <reference>
-        <reference value="Organization/tddui-organization-origine-example"/>
-      </reference>
-      <name value="tddui-organization-origine-example"/>
-      <description value="ESSMS - Les Résidences du Lac"/>
-      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
