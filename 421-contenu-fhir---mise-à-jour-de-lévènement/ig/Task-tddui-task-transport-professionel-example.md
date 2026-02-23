@@ -43,26 +43,20 @@ Profil: [TDDUI Task Transport Professionnel](StructureDefinition-tddui-task-tran
   "resourceType" : "Task",
   "id" : "tddui-task-transport-professionel-example",
   "meta" : {
-    "profile" : [
-      "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel"
-    ]
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel"]
   },
-  "identifier" : [
-    {
-      "system" : "https://identifiant-medicosocial-transportprofessionnel.esante.gouv.fr",
-      "value" : "3480787529/147720425367411-TPPro-154674"
-    }
-  ],
+  "identifier" : [{
+    "system" : "https://identifiant-medicosocial-transportprofessionnel.esante.gouv.fr",
+    "value" : "3480787529/147720425367411-TPPro-154674"
+  }],
   "status" : "completed",
   "intent" : "plan",
   "code" : {
-    "coding" : [
-      {
-        "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
-        "code" : "ORG-202",
-        "display" : "Véhicule individuel"
-      }
-    ]
+    "coding" : [{
+      "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+      "code" : "ORG-202",
+      "display" : "Véhicule individuel"
+    }]
   },
   "for" : {
     "reference" : "Practitioner/tddui-practitioner-example"
@@ -77,87 +71,73 @@ Profil: [TDDUI Task Transport Professionnel](StructureDefinition-tddui-task-tran
   "owner" : {
     "reference" : "Organization/tddui-organization-example"
   },
-  "input" : [
-    {
-      "type" : {
-        "coding" : [
-          {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
-            "code" : "typeMotorisation"
-          }
-        ]
-      },
-      "valueCodeableConcept" : {
-        "coding" : [
-          {
-            "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
-            "code" : "GEN-355",
-            "display" : "Véhicule électrique"
-          }
-        ]
-      }
+  "input" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
+        "code" : "typeMotorisation"
+      }]
     },
-    {
-      "type" : {
-        "coding" : [
-          {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
-            "code" : "budgetPrevisionnel"
-          }
-        ]
-      },
-      "valueMoney" : {
-        "value" : 2,
-        "currency" : "EUR"
-      }
-    },
-    {
-      "type" : {
-        "coding" : [
-          {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
-            "code" : "budgetReel"
-          }
-        ]
-      },
-      "valueMoney" : {
-        "value" : 2,
-        "currency" : "EUR"
-      }
-    },
-    {
-      "type" : {
-        "coding" : [
-          {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
-            "code" : "distance"
-          }
-        ]
-      },
-      "valueDistance" : {
-        "value" : 4,
-        "unit" : "kilometers",
-        "system" : "http://unitsofmeasure.org",
-        "code" : "km"
-      }
-    },
-    {
-      "type" : {
-        "coding" : [
-          {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
-            "code" : "dureeTheorique"
-          }
-        ]
-      },
-      "valueDuration" : {
-        "value" : 10,
-        "unit" : "minutes",
-        "system" : "http://unitsofmeasure.org",
-        "code" : "min"
-      }
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+        "code" : "GEN-355",
+        "display" : "Véhicule électrique"
+      }]
     }
-  ]
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
+        "code" : "budgetPrevisionnel"
+      }]
+    },
+    "valueMoney" : {
+      "value" : 2,
+      "currency" : "EUR"
+    }
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
+        "code" : "budgetReel"
+      }]
+    },
+    "valueMoney" : {
+      "value" : 2,
+      "currency" : "EUR"
+    }
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
+        "code" : "distance"
+      }]
+    },
+    "valueDistance" : {
+      "value" : 4,
+      "unit" : "kilometers",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "km"
+    }
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
+        "code" : "dureeTheorique"
+      }]
+    },
+    "valueDuration" : {
+      "value" : 10,
+      "unit" : "minutes",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "min"
+    }
+  }]
 }
 
 ```

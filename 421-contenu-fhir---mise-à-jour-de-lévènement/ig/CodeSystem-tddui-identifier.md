@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-identifier | *Version*:2.2.0 |
-| Active as of 2026-02-11 | *Computable Name*:TDDUIIdentifier |
+| Active as of 2026-02-23 | *Computable Name*:TDDUIIdentifier |
 
  
 CodeSystem pour la définition des codes d'identifiant de l'usager 
@@ -27,9 +27,7 @@ CodeSystem pour la définition des codes d'identifiant de l'usager
   "resourceType" : "CodeSystem",
   "id" : "tddui-identifier",
   "meta" : {
-    "profile" : [
-      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
-    ]
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem"]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-identifier",
   "version" : "2.2.0",
@@ -37,40 +35,30 @@ CodeSystem pour la définition des codes d'identifiant de l'usager
   "title" : "TDDUI Patient Identifier",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-11T15:48:16+00:00",
+  "date" : "2026-02-23T18:02:53+00:00",
   "publisher" : "ANS",
-  "contact" : [
-    {
-      "name" : "ANS",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://esante.gouv.fr"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "ANS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
   "description" : "CodeSystem pour la définition des codes d'identifiant de l'usager",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
-          "display" : "FRANCE"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
   "caseSensitive" : true,
   "content" : "complete",
   "count" : 1,
-  "concept" : [
-    {
-      "code" : "PIN",
-      "display" : "Patient initial number"
-    }
-  ]
+  "concept" : [{
+    "code" : "PIN",
+    "display" : "Patient initial number"
+  }]
 }
 
 ```

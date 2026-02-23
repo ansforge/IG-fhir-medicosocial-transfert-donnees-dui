@@ -97,11 +97,13 @@ These define constraints on FHIR data types for systems conforming to this imple
 | [TDDUI Exit Mode Label](StructureDefinition-tddui-exit-mode-label.md) | Libellé du mode de sortie du séjour. |
 | [TDDUI Meal](StructureDefinition-tddui-meal.md) | Repas du professionnel prévu dans le cadre de l'événement. |
 | [TDDUI Nationality Extension](StructureDefinition-tddui-nationality.md) | The nationality of the patient or a related person. |
+| [TDDUI Participant Present](StructureDefinition-tddui-participant-present.md) | Indique la présence du participant à l'événement. |
 | [TDDUI Patient Present](StructureDefinition-tddui-patient-present.md) | Evènement nécessitant ou non la présence physique de l’usager. |
+| [TDDUI Patient Validation](StructureDefinition-tddui-patient-validation.md) | Validation par l'usager que l'événement a eu lieu. |
 | [TDDUI Profession](StructureDefinition-tddui-profession.md) | Extension permettant de représenter la profession du professionnel. |
 | [TDDUI QR Participant](StructureDefinition-tddui-qr-participant.md) | Extension permettant d'ajouter le responsable de l'évaluation et l'auteur du statut de l'évaluation dans un QuestionnaireResponse. |
 | [TDDUI Ressources Used](StructureDefinition-tddui-ressources-used.md) | Ressources utilisées lors de l’évènement (ex : chambre, matériel médical, véhicule). |
-| [TDDUI Status Author](StructureDefinition-tddui-status-author.md) | Extension permettant de représenter la profession du professionnel. |
+| [TDDUI Status Author](StructureDefinition-tddui-status-author.md) | Extension permettant de représenter l'auteur du statut. |
 
 ### Terminology: Value Sets 
 
@@ -136,7 +138,6 @@ These define new code systems used by systems conforming to this implementation 
 | :--- | :--- |
 | [TDDUI Discriminator](CodeSystem-tddui-discriminator.md) | CodeSystem définissant les codes discriminants. |
 | [TDDUI Encounter Identifier](CodeSystem-tddui-encounter-identifier.md) | CodeSystem pour la définition des codes d'identifiant de séjour |
-| [TDDUI Encounter Participant](CodeSystem-tddui-encounter-participant.md) | CodeSystem définissant les types de participants dans le profil TDDUIEncounterEvenement. |
 | [TDDUI Patient Identifier](CodeSystem-tddui-identifier.md) | CodeSystem pour la définition des codes d'identifiant de l'usager |
 | [TDDUI Task Input Action](CodeSystem-tddui-task-input-action.md) | CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les actions du projet personnalisé. |
 | [TDDUI Task Input Bilan](CodeSystem-tddui-task-input-bilan.md) | CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour le bilan du projet personnalisé. |

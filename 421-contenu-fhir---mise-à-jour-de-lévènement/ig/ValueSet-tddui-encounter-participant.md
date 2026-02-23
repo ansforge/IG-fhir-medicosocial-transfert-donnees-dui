@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-participant | *Version*:2.2.0 |
-| Active as of 2026-02-11 | *Computable Name*:TDDUIEncounterParticipant |
+| Active as of 2026-02-23 | *Computable Name*:TDDUIEncounterParticipant |
 
  
 ValueSet pour la définition des codes de participant d'un événement 
 
  **References** 
 
-* [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)
+Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (par exemple dans les spécifications et / ou implémentations qui utilisent ce contenu)
 
 ### Définition logique (CLD)
 
@@ -54,40 +54,30 @@ ValueSet pour la définition des codes de participant d'un événement
   "title" : "TDDUI Encounter Participant",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-11T15:48:16+00:00",
+  "date" : "2026-02-23T18:02:53+00:00",
   "publisher" : "ANS",
-  "contact" : [
-    {
-      "name" : "ANS",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://esante.gouv.fr"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "ANS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
   "description" : "ValueSet pour la définition des codes de participant d'un événement",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
-          "display" : "FRANCE"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
   "compose" : {
-    "include" : [
-      {
-        "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-participant"
-      },
-      {
-        "valueSet" : ["http://hl7.org/fhir/ValueSet/encounter-participant-type"]
-      }
-    ]
+    "include" : [{
+      "valueSet" : ["http://hl7.org/fhir/ValueSet/encounter-participant-type"]
+    },
+    {
+      "valueSet" : ["https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j387-role-participant-ms"]
+    }]
   }
 }
 

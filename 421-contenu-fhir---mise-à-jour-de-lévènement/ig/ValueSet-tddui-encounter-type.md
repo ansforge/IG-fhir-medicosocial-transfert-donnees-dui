@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-type | *Version*:2.2.0 |
-| Active as of 2026-02-11 | *Computable Name*:TDDUIEncounterType |
+| Active as of 2026-02-23 | *Computable Name*:TDDUIEncounterType |
 
  
 ValueSet pour la définition des codes de type de séjour 
@@ -54,52 +54,36 @@ ValueSet pour la définition des codes de type de séjour
   "title" : "TDDUI Encounter Type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-11T15:48:16+00:00",
+  "date" : "2026-02-23T18:02:53+00:00",
   "publisher" : "ANS",
-  "contact" : [
-    {
-      "name" : "ANS",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://esante.gouv.fr"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "ANS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
   "description" : "ValueSet pour la définition des codes de type de séjour",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
-          "display" : "FRANCE"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
   "compose" : {
-    "include" : [
-      {
-        "valueSet" : [
-          "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-type"
-        ]
-      },
-      {
-        "valueSet" : [
-          "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-serafin"
-        ]
-      },
-      {
-        "valueSet" : [
-          "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-evenement-ssiad-cisis"
-        ]
-      },
-      {
-        "system" : "http://terminology.hl7.org/CodeSystem/data-absent-reason"
-      }
-    ]
+    "include" : [{
+      "valueSet" : ["https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-type"]
+    },
+    {
+      "valueSet" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-serafin"]
+    },
+    {
+      "valueSet" : ["https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-evenement-ssiad-cisis"]
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/data-absent-reason"
+    }]
   }
 }
 

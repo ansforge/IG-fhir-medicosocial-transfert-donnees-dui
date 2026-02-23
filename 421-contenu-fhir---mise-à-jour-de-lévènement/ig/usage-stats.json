@@ -179,8 +179,22 @@
       ]
     },
     {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-participant-present",
+      "title": "TDDUI Participant Present",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-present",
       "title": "TDDUI Patient Present",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-validation",
+      "title": "TDDUI Patient Validation",
       "types": [
         "boolean"
       ]
@@ -646,7 +660,14 @@
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-outside-service": [
       "Encounter"
     ],
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-participant-present": [
+      "Encounter.participant",
+      "Encounter.serviceProvider"
+    ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-present": [
+      "Encounter"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-validation": [
       "Encounter"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-profession": [
@@ -665,6 +686,7 @@
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-status-author": [
       "CarePlan.status",
+      "Encounter.status",
       "Goal.lifecycleStatus",
       "Task.status"
     ]

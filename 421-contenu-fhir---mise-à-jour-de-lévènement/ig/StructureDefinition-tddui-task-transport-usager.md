@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager | *Version*:2.2.0 |
-| Active as of 2026-02-11 | *Computable Name*:TDDUITaskTransportUsager |
+| Active as of 2026-02-23 | *Computable Name*:TDDUITaskTransportUsager |
 
  
 Profil de la ressource TDDUITaskTransport permettant de représenter le transport de l'usager. 
@@ -43,341 +43,281 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
   "name" : "TDDUITaskTransportUsager",
   "title" : "TDDUI Task Transport Usager",
   "status" : "active",
-  "date" : "2026-02-11T15:48:16+00:00",
+  "date" : "2026-02-23T18:02:53+00:00",
   "publisher" : "ANS",
-  "contact" : [
-    {
-      "name" : "ANS",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://esante.gouv.fr"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "ANS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
   "description" : "Profil de la ressource TDDUITaskTransport permettant de représenter le transport de l'usager.",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
-          "display" : "FRANCE"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "specmetier-to-TDDUITaskTransportUsager",
-      "uri" : "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html",
-      "name" : "Modèle de contenu DUI"
-    },
-    {
-      "identity" : "workflow",
-      "uri" : "http://hl7.org/fhir/workflow",
-      "name" : "Workflow Pattern"
-    },
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    },
-    {
-      "identity" : "w5",
-      "uri" : "http://hl7.org/fhir/fivews",
-      "name" : "FiveWs Pattern Mapping"
-    },
-    {
-      "identity" : "v2",
-      "uri" : "http://hl7.org/v2",
-      "name" : "HL7 v2 Mapping"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "specmetier-to-TDDUITaskTransportUsager",
+    "uri" : "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html",
+    "name" : "Modèle de contenu DUI"
+  },
+  {
+    "identity" : "workflow",
+    "uri" : "http://hl7.org/fhir/workflow",
+    "name" : "Workflow Pattern"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "Task",
   "baseDefinition" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Task",
-        "path" : "Task",
-        "mapping" : [
-          {
-            "identity" : "specmetier-to-TDDUITaskTransportUsager",
-            "map" : "TransportUsager"
-          }
-        ]
-      },
-      {
-        "id" : "Task.identifier",
-        "path" : "Task.identifier",
-        "short" : "Identifiant du transport de l'usager",
-        "mapping" : [
-          {
-            "identity" : "specmetier-to-TDDUITaskTransportUsager",
-            "map" : "idTrajet"
-          }
-        ]
-      },
-      {
-        "id" : "Task.identifier.system",
-        "path" : "Task.identifier.system",
-        "min" : 1,
-        "patternUri" : "https://identifiant-medicosocial-transportusager.esante.gouv.fr"
-      },
-      {
-        "id" : "Task.identifier.value",
-        "path" : "Task.identifier.value",
-        "min" : 1,
-        "example" : [
-          {
-            "label" : "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-TPPat-idTransport",
-            "valueString" : "3480787529/147720425367411-TPPat-21564655"
-          }
-        ]
-      },
-      {
-        "id" : "Task.code",
-        "path" : "Task.code",
-        "mapping" : [
-          {
-            "identity" : "specmetier-to-TDDUITaskTransportUsager",
-            "map" : "typeTransport"
-          }
-        ]
-      },
-      {
-        "id" : "Task.encounter",
-        "path" : "Task.encounter",
-        "mapping" : [
-          {
-            "identity" : "specmetier-to-TDDUITaskTransportUsager",
-            "map" : "Evenement"
-          }
-        ]
-      },
-      {
-        "id" : "Task.executionPeriod.start",
-        "path" : "Task.executionPeriod.start",
-        "mapping" : [
-          {
-            "identity" : "specmetier-to-TDDUITaskTransportUsager",
-            "map" : "dateDebutTransport"
-          }
-        ]
-      },
-      {
-        "id" : "Task.executionPeriod.end",
-        "path" : "Task.executionPeriod.end",
-        "mapping" : [
-          {
-            "identity" : "specmetier-to-TDDUITaskTransportUsager",
-            "map" : "dateFinTransport"
-          }
-        ]
-      },
-      {
-        "id" : "Task.owner",
-        "path" : "Task.owner",
-        "mapping" : [
-          {
-            "identity" : "specmetier-to-TDDUITaskTransportUsager",
-            "map" : "transporteur"
-          }
-        ]
-      },
-      {
-        "id" : "Task.input:typeMotorisation",
-        "path" : "Task.input",
-        "sliceName" : "typeMotorisation",
-        "mapping" : [
-          {
-            "identity" : "specmetier-to-TDDUITaskTransportUsager",
-            "map" : "typeMotorisation"
-          }
-        ]
-      },
-      {
-        "id" : "Task.input:adresseDepart",
-        "path" : "Task.input",
-        "sliceName" : "adresseDepart",
-        "mapping" : [
-          {
-            "identity" : "specmetier-to-TDDUITaskTransportUsager",
-            "map" : "adresseDepart"
-          }
-        ]
-      },
-      {
-        "id" : "Task.input:adresseDestination",
-        "path" : "Task.input",
-        "sliceName" : "adresseDestination",
-        "mapping" : [
-          {
-            "identity" : "specmetier-to-TDDUITaskTransportUsager",
-            "map" : "adresseDestination"
-          }
-        ]
-      },
-      {
-        "id" : "Task.input:budgetPrevisionnel",
-        "path" : "Task.input",
-        "sliceName" : "budgetPrevisionnel",
-        "mapping" : [
-          {
-            "identity" : "specmetier-to-TDDUITaskTransportUsager",
-            "map" : "budgetPrevisionnel"
-          }
-        ]
-      },
-      {
-        "id" : "Task.input:budgetReel",
-        "path" : "Task.input",
-        "sliceName" : "budgetReel",
-        "mapping" : [
-          {
-            "identity" : "specmetier-to-TDDUITaskTransportUsager",
-            "map" : "budgetReel"
-          }
-        ]
-      },
-      {
-        "id" : "Task.input:distance",
-        "path" : "Task.input",
-        "sliceName" : "distance",
-        "mapping" : [
-          {
-            "identity" : "specmetier-to-TDDUITaskTransportUsager",
-            "map" : "distance"
-          }
-        ]
-      },
-      {
-        "id" : "Task.input:dureeTheorique",
-        "path" : "Task.input",
-        "sliceName" : "dureeTheorique",
-        "mapping" : [
-          {
-            "identity" : "specmetier-to-TDDUITaskTransportUsager",
-            "map" : "dureeTheorique"
-          }
-        ]
-      },
-      {
-        "id" : "Task.input:accompagnement",
-        "path" : "Task.input",
-        "sliceName" : "accompagnement",
-        "short" : "Accompagnement nécessaire ou non de l'usager",
-        "min" : 0,
-        "max" : "1",
-        "mapping" : [
-          {
-            "identity" : "specmetier-to-TDDUITaskTransportUsager",
-            "map" : "accompagnement"
-          }
-        ]
-      },
-      {
-        "id" : "Task.input:accompagnement.type",
-        "path" : "Task.input.type",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
-              "code" : "accompagnement"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "Task.input:accompagnement.value[x]",
-        "path" : "Task.input.value[x]",
-        "type" : [
-          {
-            "code" : "boolean"
-          }
-        ]
-      },
-      {
-        "id" : "Task.input:asepsieRigoureuse",
-        "path" : "Task.input",
-        "sliceName" : "asepsieRigoureuse",
-        "short" : "Asepsie nécessaire ou non nécessaire",
-        "min" : 0,
-        "max" : "1",
-        "mapping" : [
-          {
-            "identity" : "specmetier-to-TDDUITaskTransportUsager",
-            "map" : "asepsieRigoureuse"
-          }
-        ]
-      },
-      {
-        "id" : "Task.input:asepsieRigoureuse.type",
-        "path" : "Task.input.type",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
-              "code" : "asepsie"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "Task.input:asepsieRigoureuse.value[x]",
-        "path" : "Task.input.value[x]",
-        "type" : [
-          {
-            "code" : "boolean"
-          }
-        ]
-      },
-      {
-        "id" : "Task.input:natureTransport",
-        "path" : "Task.input",
-        "sliceName" : "natureTransport",
-        "short" : "Nature du transport de l'usager",
-        "min" : 0,
-        "max" : "1",
-        "mapping" : [
-          {
-            "identity" : "specmetier-to-TDDUITaskTransportUsager",
-            "map" : "natureTransport"
-          }
-        ]
-      },
-      {
-        "id" : "Task.input:natureTransport.type",
-        "path" : "Task.input.type",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
-              "code" : "natureTransport"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "Task.input:natureTransport.value[x]",
-        "path" : "Task.input.value[x]",
-        "type" : [
-          {
-            "code" : "CodeableConcept"
-          }
-        ],
-        "binding" : {
-          "strength" : "required",
-          "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J282-TransportsLiesAuProjetIndividuel_SERAFIN/FHIR/JDV-J282-TransportsLiesAuProjetIndividuel-SERAFIN"
-        }
+    "element" : [{
+      "id" : "Task",
+      "path" : "Task",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskTransportUsager",
+        "map" : "TransportUsager"
+      }]
+    },
+    {
+      "id" : "Task.identifier",
+      "path" : "Task.identifier",
+      "short" : "Identifiant du transport de l'usager",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskTransportUsager",
+        "map" : "idTrajet"
+      }]
+    },
+    {
+      "id" : "Task.identifier.system",
+      "path" : "Task.identifier.system",
+      "min" : 1,
+      "patternUri" : "https://identifiant-medicosocial-transportusager.esante.gouv.fr"
+    },
+    {
+      "id" : "Task.identifier.value",
+      "path" : "Task.identifier.value",
+      "min" : 1,
+      "example" : [{
+        "label" : "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-TPPat-idTransport",
+        "valueString" : "3480787529/147720425367411-TPPat-21564655"
+      }]
+    },
+    {
+      "id" : "Task.code",
+      "path" : "Task.code",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskTransportUsager",
+        "map" : "typeTransport"
+      }]
+    },
+    {
+      "id" : "Task.encounter",
+      "path" : "Task.encounter",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskTransportUsager",
+        "map" : "Evenement"
+      }]
+    },
+    {
+      "id" : "Task.executionPeriod.start",
+      "path" : "Task.executionPeriod.start",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskTransportUsager",
+        "map" : "dateDebutTransport"
+      }]
+    },
+    {
+      "id" : "Task.executionPeriod.end",
+      "path" : "Task.executionPeriod.end",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskTransportUsager",
+        "map" : "dateFinTransport"
+      }]
+    },
+    {
+      "id" : "Task.owner",
+      "path" : "Task.owner",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskTransportUsager",
+        "map" : "transporteur"
+      }]
+    },
+    {
+      "id" : "Task.input:typeMotorisation",
+      "path" : "Task.input",
+      "sliceName" : "typeMotorisation",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskTransportUsager",
+        "map" : "typeMotorisation"
+      }]
+    },
+    {
+      "id" : "Task.input:adresseDepart",
+      "path" : "Task.input",
+      "sliceName" : "adresseDepart",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskTransportUsager",
+        "map" : "adresseDepart"
+      }]
+    },
+    {
+      "id" : "Task.input:adresseDestination",
+      "path" : "Task.input",
+      "sliceName" : "adresseDestination",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskTransportUsager",
+        "map" : "adresseDestination"
+      }]
+    },
+    {
+      "id" : "Task.input:budgetPrevisionnel",
+      "path" : "Task.input",
+      "sliceName" : "budgetPrevisionnel",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskTransportUsager",
+        "map" : "budgetPrevisionnel"
+      }]
+    },
+    {
+      "id" : "Task.input:budgetReel",
+      "path" : "Task.input",
+      "sliceName" : "budgetReel",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskTransportUsager",
+        "map" : "budgetReel"
+      }]
+    },
+    {
+      "id" : "Task.input:distance",
+      "path" : "Task.input",
+      "sliceName" : "distance",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskTransportUsager",
+        "map" : "distance"
+      }]
+    },
+    {
+      "id" : "Task.input:dureeTheorique",
+      "path" : "Task.input",
+      "sliceName" : "dureeTheorique",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskTransportUsager",
+        "map" : "dureeTheorique"
+      }]
+    },
+    {
+      "id" : "Task.input:accompagnement",
+      "path" : "Task.input",
+      "sliceName" : "accompagnement",
+      "short" : "Accompagnement nécessaire ou non de l'usager",
+      "min" : 0,
+      "max" : "1",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskTransportUsager",
+        "map" : "accompagnement"
+      }]
+    },
+    {
+      "id" : "Task.input:accompagnement.type",
+      "path" : "Task.input.type",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
+          "code" : "accompagnement"
+        }]
       }
-    ]
+    },
+    {
+      "id" : "Task.input:accompagnement.value[x]",
+      "path" : "Task.input.value[x]",
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "Task.input:asepsieRigoureuse",
+      "path" : "Task.input",
+      "sliceName" : "asepsieRigoureuse",
+      "short" : "Asepsie nécessaire ou non nécessaire",
+      "min" : 0,
+      "max" : "1",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskTransportUsager",
+        "map" : "asepsieRigoureuse"
+      }]
+    },
+    {
+      "id" : "Task.input:asepsieRigoureuse.type",
+      "path" : "Task.input.type",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
+          "code" : "asepsie"
+        }]
+      }
+    },
+    {
+      "id" : "Task.input:asepsieRigoureuse.value[x]",
+      "path" : "Task.input.value[x]",
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "Task.input:natureTransport",
+      "path" : "Task.input",
+      "sliceName" : "natureTransport",
+      "short" : "Nature du transport de l'usager",
+      "min" : 0,
+      "max" : "1",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskTransportUsager",
+        "map" : "natureTransport"
+      }]
+    },
+    {
+      "id" : "Task.input:natureTransport.type",
+      "path" : "Task.input.type",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
+          "code" : "natureTransport"
+        }]
+      }
+    },
+    {
+      "id" : "Task.input:natureTransport.value[x]",
+      "path" : "Task.input.value[x]",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J282-TransportsLiesAuProjetIndividuel_SERAFIN/FHIR/JDV-J282-TransportsLiesAuProjetIndividuel-SERAFIN"
+      }
+    }]
   }
 }
 

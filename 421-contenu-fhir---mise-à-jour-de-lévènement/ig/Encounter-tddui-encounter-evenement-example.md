@@ -35,7 +35,7 @@ Profil: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenemen
 | | | |
 | :--- | :--- | :--- |
 | - | **Type** | **Individual** |
-| * | Participation | [Practitioner Claire Martin ](Practitioner-tddui-practitioner-example.md) |
+| * | MJPM | [Practitioner Claire Martin ](Practitioner-tddui-practitioner-example.md) |
 
 **period**: 2023-04-14 10:30:00+0200 --> 2023-04-14 11:15:00+0200
 
@@ -59,128 +59,101 @@ Profil: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenemen
   "resourceType" : "Encounter",
   "id" : "tddui-encounter-evenement-example",
   "meta" : {
-    "profile" : [
-      "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement"
-    ]
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement"]
   },
-  "extension" : [
-    {
-      "extension" : [
-        {
-          "url" : "TDDUIRessourceType",
-          "valueCodeableConcept" : {
-            "coding" : [
-              {
-                "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
-                "code" : "ORG-206",
-                "display" : "Matériel spécialisé"
-              }
-            ]
-          }
-        },
-        {
-          "url" : "TDDUIMaterialDetail",
-          "valueCodeableConcept" : {
-            "coding" : [
-              {
-                "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
-                "code" : "ORG-208",
-                "display" : "Materiel médical"
-              }
-            ]
-          }
-        }
-      ],
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used"
+  "extension" : [{
+    "extension" : [{
+      "url" : "TDDUIRessourceType",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+          "code" : "ORG-206",
+          "display" : "Matériel spécialisé"
+        }]
+      }
     },
     {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-report",
-      "valueString" : "Observations cliniques : ; Recommandations pour les jours à venir : ; Prochaine visite : 15 avril 2023, 10h30 ; Remarque : Monsieur Dupont a compris les consignes pour la gestion de sa douleur et la mobilisation de sa hanche opérée."
+      "url" : "TDDUIMaterialDetail",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+          "code" : "ORG-208",
+          "display" : "Materiel médical"
+        }]
+      }
+    }],
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-report",
+    "valueString" : "Observations cliniques : ; Recommandations pour les jours à venir : ; Prochaine visite : 15 avril 2023, 10h30 ; Remarque : Monsieur Dupont a compris les consignes pour la gestion de sa douleur et la mobilisation de sa hanche opérée."
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment",
+    "valueString" : "Cet évènement a débuté plus tard l’usager était sous la douche à l’heure du début du rendez-vous."
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-label",
+    "valueString" : "Visite à domicile pour soins infirmier."
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-reason",
+    "valueString" : "Suivi post-opératoire suite à intervention chirurgicale de la hanche."
+  }],
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identifier-type",
+        "code" : "VN"
+      }]
     },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment",
-      "valueString" : "Cet évènement a débuté plus tard l’usager était sous la douche à l’heure du début du rendez-vous."
-    },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-label",
-      "valueString" : "Visite à domicile pour soins infirmier."
-    },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-reason",
-      "valueString" : "Suivi post-opératoire suite à intervention chirurgicale de la hanche."
-    }
-  ],
-  "identifier" : [
-    {
-      "type" : {
-        "coding" : [
-          {
-            "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identifier-type",
-            "code" : "VN"
-          }
-        ]
-      },
-      "system" : "https://identifiant-medicosocial-evenement.esante.gouv.fr",
-      "value" : "3480787529/147720425367411-EVN-12548"
-    }
-  ],
+    "system" : "https://identifiant-medicosocial-evenement.esante.gouv.fr",
+    "value" : "3480787529/147720425367411-EVN-12548"
+  }],
   "status" : "finished",
   "class" : {
     "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
     "code" : "HH"
   },
-  "type" : [
-    {
-      "coding" : [
-        {
-          "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
-          "code" : "MED-1298",
-          "display" : "Intervention d'un infirmer salarié"
-        }
-      ]
-    },
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
-          "code" : "not-permitted",
-          "display" : "Not Permitted"
-        }
-      ],
-      "text" : "Intervention"
-    }
-  ],
+  "type" : [{
+    "coding" : [{
+      "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+      "code" : "MED-1298",
+      "display" : "Intervention d'un infirmer salarié"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+      "code" : "not-permitted",
+      "display" : "Not Permitted"
+    }],
+    "text" : "Intervention"
+  }],
   "subject" : {
     "reference" : "Patient/tddui-patient-ins-example"
   },
-  "participant" : [
-    {
-      "type" : [
-        {
-          "coding" : [
-            {
-              "system" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
-              "code" : "PART"
-            }
-          ]
-        }
-      ],
-      "individual" : {
-        "reference" : "Practitioner/tddui-practitioner-example"
-      }
+  "participant" : [{
+    "type" : [{
+      "coding" : [{
+        "system" : "https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge",
+        "code" : "307",
+        "display" : "MJPM"
+      }]
+    }],
+    "individual" : {
+      "reference" : "Practitioner/tddui-practitioner-example"
     }
-  ],
+  }],
   "period" : {
     "start" : "2023-04-14T10:30:00+02:00",
     "end" : "2023-04-14T11:15:00+02:00"
   },
-  "location" : [
-    {
-      "location" : {
-        "reference" : "Location/tddui-event-location-example"
-      }
+  "location" : [{
+    "location" : {
+      "reference" : "Location/tddui-event-location-example"
     }
-  ],
+  }],
   "serviceProvider" : {
     "reference" : "Organization/tddui-organization-example"
   },

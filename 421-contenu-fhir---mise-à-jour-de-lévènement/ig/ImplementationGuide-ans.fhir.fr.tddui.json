@@ -10,7 +10,7 @@
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2026-02-11T15:48:16+00:00",
+  "date" : "2026-02-23T18:02:53+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -935,18 +935,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/tddui-encounter-participant"
-      },
-      "name" : "TDDUI Encounter Participant",
-      "description" : "CodeSystem définissant les types de participants dans le profil TDDUIEncounterEvenement.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -1211,6 +1199,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-participant-present"
+      },
+      "name" : "TDDUI Participant Present",
+      "description" : "Indique la présence du participant à l'événement.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -1290,6 +1290,18 @@
       },
       "name" : "TDDUI Patient Present",
       "description" : "Evènement nécessitant ou non la présence physique de l’usager.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-patient-validation"
+      },
+      "name" : "TDDUI Patient Validation",
+      "description" : "Validation par l'usager que l'événement a eu lieu.",
       "exampleBoolean" : false
     },
     {
@@ -1925,7 +1937,7 @@
         "reference" : "StructureDefinition/tddui-status-author"
       },
       "name" : "TDDUI Status Author",
-      "description" : "Extension permettant de représenter la profession du professionnel.",
+      "description" : "Extension permettant de représenter l'auteur du statut.",
       "exampleBoolean" : false
     },
     {
