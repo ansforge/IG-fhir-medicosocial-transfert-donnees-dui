@@ -27,9 +27,7 @@ Profil: [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-re
   "resourceType" : "QuestionnaireResponse",
   "id" : "test-invariant-professionnel-non",
   "meta" : {
-    "profile" : [
-      "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
-    ]
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"]
   },
   "identifier" : {
     "system" : "https://identifiant-medicosocial-evaluation.esante.gouv.fr",
@@ -40,21 +38,17 @@ Profil: [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-re
   "subject" : {
     "reference" : "Patient/tddui-pp-pa-patient-example-pp"
   },
-  "item" : [
-    {
-      "linkId" : "resultat-eval",
-      "text" : "Résultat évaluation",
-      "answer" : [
-        {
-          "valueCoding" : {
-            "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
-            "code" : "MED-341",
-            "display" : "GIR-3"
-          }
-        }
-      ]
-    }
-  ]
+  "item" : [{
+    "linkId" : "resultat-eval",
+    "text" : "Résultat évaluation",
+    "answer" : [{
+      "valueCoding" : {
+        "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+        "code" : "MED-341",
+        "display" : "GIR-3"
+      }
+    }]
+  }]
 }
 
 ```

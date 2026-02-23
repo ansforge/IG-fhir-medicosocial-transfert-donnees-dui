@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner | *Version*:2.2.0 |
-| Active as of 2026-02-16 | *Computable Name*:TDDUIPractitioner |
+| Active as of 2026-02-23 | *Computable Name*:TDDUIPractitioner |
 
  
 Profil de la ressource FRCorePractitionerProfile permettant de représenter un professionnel du médicosocial dans le cadre de TDDUI. Le profil AsPractitionerRoleProfile n'a pas été utilisé car il comportait trop de contraintes non présentes dans les DUI. 
@@ -44,137 +44,111 @@ Other representations of profile: [CSV](StructureDefinition-tddui-practitioner.c
   "name" : "TDDUIPractitioner",
   "title" : "TDDUI Practitioner",
   "status" : "active",
-  "date" : "2026-02-16T09:05:27+00:00",
+  "date" : "2026-02-23T08:45:40+00:00",
   "publisher" : "ANS",
-  "contact" : [
-    {
-      "name" : "ANS",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://esante.gouv.fr"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "ANS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
   "description" : "Profil de la ressource FRCorePractitionerProfile permettant de représenter un professionnel du médicosocial dans le cadre de TDDUI. Le profil AsPractitionerRoleProfile n'a pas été utilisé car il comportait trop de contraintes non présentes dans les DUI.",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
-          "display" : "FRANCE"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "specmetier-to-TDDUIPractitioner",
-      "uri" : "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html",
-      "name" : "Modèle de contenu DUI"
-    },
-    {
-      "identity" : "v2",
-      "uri" : "http://hl7.org/v2",
-      "name" : "HL7 v2 Mapping"
-    },
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    },
-    {
-      "identity" : "servd",
-      "uri" : "http://www.omg.org/spec/ServD/1.0/",
-      "name" : "ServD"
-    },
-    {
-      "identity" : "w5",
-      "uri" : "http://hl7.org/fhir/fivews",
-      "name" : "FiveWs Pattern Mapping"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "specmetier-to-TDDUIPractitioner",
+    "uri" : "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html",
+    "name" : "Modèle de contenu DUI"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "servd",
+    "uri" : "http://www.omg.org/spec/ServD/1.0/",
+    "name" : "ServD"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "Practitioner",
   "baseDefinition" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Practitioner",
-        "path" : "Practitioner",
-        "mapping" : [
-          {
-            "identity" : "specmetier-to-TDDUIPractitioner",
-            "map" : "Professionnel"
-          }
-        ]
-      },
-      {
-        "id" : "Practitioner.identifier",
-        "path" : "Practitioner.identifier",
-        "min" : 1
-      },
-      {
-        "id" : "Practitioner.identifier:idNatPs",
-        "path" : "Practitioner.identifier",
-        "sliceName" : "idNatPs",
-        "min" : 1,
-        "mapping" : [
-          {
-            "identity" : "specmetier-to-TDDUIPractitioner",
-            "map" : "idNat_PS"
-          }
-        ]
-      },
-      {
-        "id" : "Practitioner.name",
-        "path" : "Practitioner.name",
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "HumanName",
-            "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Practitioner.name.family",
-        "path" : "Practitioner.name.family",
-        "mapping" : [
-          {
-            "identity" : "specmetier-to-TDDUIPractitioner",
-            "map" : "nom"
-          }
-        ]
-      },
-      {
-        "id" : "Practitioner.name.given",
-        "path" : "Practitioner.name.given",
-        "mapping" : [
-          {
-            "identity" : "specmetier-to-TDDUIPractitioner",
-            "map" : "prenom"
-          }
-        ]
-      },
-      {
-        "id" : "Practitioner.name.prefix",
-        "path" : "Practitioner.name.prefix",
-        "mapping" : [
-          {
-            "identity" : "specmetier-to-TDDUIPractitioner",
-            "map" : "civilite"
-          }
-        ]
-      }
-    ]
+    "element" : [{
+      "id" : "Practitioner",
+      "path" : "Practitioner",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIPractitioner",
+        "map" : "Professionnel"
+      }]
+    },
+    {
+      "id" : "Practitioner.identifier",
+      "path" : "Practitioner.identifier",
+      "min" : 1
+    },
+    {
+      "id" : "Practitioner.identifier:idNatPs",
+      "path" : "Practitioner.identifier",
+      "sliceName" : "idNatPs",
+      "min" : 1,
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIPractitioner",
+        "map" : "idNat_PS"
+      }]
+    },
+    {
+      "id" : "Practitioner.name",
+      "path" : "Practitioner.name",
+      "max" : "1",
+      "type" : [{
+        "code" : "HumanName",
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name"]
+      }]
+    },
+    {
+      "id" : "Practitioner.name.family",
+      "path" : "Practitioner.name.family",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIPractitioner",
+        "map" : "nom"
+      }]
+    },
+    {
+      "id" : "Practitioner.name.given",
+      "path" : "Practitioner.name.given",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIPractitioner",
+        "map" : "prenom"
+      }]
+    },
+    {
+      "id" : "Practitioner.name.prefix",
+      "path" : "Practitioner.name.prefix",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIPractitioner",
+        "map" : "civilite"
+      }]
+    }]
   }
 }
 

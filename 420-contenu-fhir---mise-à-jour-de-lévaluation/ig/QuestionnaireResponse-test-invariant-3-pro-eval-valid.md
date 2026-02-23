@@ -27,23 +27,17 @@ Profil: [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-re
   "resourceType" : "QuestionnaireResponse",
   "id" : "test-invariant-3-pro-eval-valid",
   "meta" : {
-    "profile" : [
-      "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
-    ]
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"]
   },
-  "extension" : [
-    {
-      "extension" : [
-        {
-          "url" : "TDDUIResponsible",
-          "valueReference" : {
-            "reference" : "Practitioner/tddui-pp-pa-practitioner-ide-example"
-          }
-        }
-      ],
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant"
-    }
-  ],
+  "extension" : [{
+    "extension" : [{
+      "url" : "TDDUIResponsible",
+      "valueReference" : {
+        "reference" : "Practitioner/tddui-pp-pa-practitioner-ide-example"
+      }
+    }],
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant"
+  }],
   "identifier" : {
     "system" : "https://identifiant-medicosocial-evaluation.esante.gouv.fr",
     "value" : "3480787529/999000111-EVAL-2027"
@@ -59,21 +53,17 @@ Profil: [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-re
   "source" : {
     "reference" : "Practitioner/tddui-pp-pa-practitioner-ide-example"
   },
-  "item" : [
-    {
-      "linkId" : "resultat-eval",
-      "text" : "Résultat évaluation",
-      "answer" : [
-        {
-          "valueCoding" : {
-            "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
-            "code" : "MED-341",
-            "display" : "GIR-3"
-          }
-        }
-      ]
-    }
-  ]
+  "item" : [{
+    "linkId" : "resultat-eval",
+    "text" : "Résultat évaluation",
+    "answer" : [{
+      "valueCoding" : {
+        "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+        "code" : "MED-341",
+        "display" : "GIR-3"
+      }
+    }]
+  }]
 }
 
 ```

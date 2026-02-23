@@ -102,7 +102,7 @@ These define constraints on FHIR data types for systems conforming to this imple
 | [TDDUI Profession](StructureDefinition-tddui-profession.md) | Extension permettant de représenter la profession du professionnel. |
 | [TDDUI QR Participant](StructureDefinition-tddui-qr-participant.md) | Extension permettant d'ajouter le responsable et le porteur de l'évaluation dans un QuestionnaireResponse. |
 | [TDDUI Ressources Used](StructureDefinition-tddui-ressources-used.md) | Ressources utilisées lors de l’évènement (ex : chambre, matériel médical, véhicule). |
-| [TDDUI Status Author](StructureDefinition-tddui-status-author.md) | Extension permettant de représenter la profession du professionnel. |
+| [TDDUI Status Author](StructureDefinition-tddui-status-author.md) | Extension permettant de représenter l'auteur du statut. |
 
 ### Terminology: Value Sets 
 

@@ -27,23 +27,17 @@ Profil: [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-re
   "resourceType" : "QuestionnaireResponse",
   "id" : "tddui-pp-pa-questionnaire-response-aggir-pa-example",
   "meta" : {
-    "profile" : [
-      "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
-    ]
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"]
   },
-  "extension" : [
-    {
-      "extension" : [
-        {
-          "url" : "TDDUIHolder",
-          "valueReference" : {
-            "reference" : "Organization/tddui-organization-example"
-          }
-        }
-      ],
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant"
-    }
-  ],
+  "extension" : [{
+    "extension" : [{
+      "url" : "TDDUIHolder",
+      "valueReference" : {
+        "reference" : "Organization/tddui-organization-example"
+      }
+    }],
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant"
+  }],
   "identifier" : {
     "system" : "https://identifiant-medicosocial-evaluation.esante.gouv.fr",
     "value" : "3480787529/123456789-EVAL-1234"
@@ -56,21 +50,17 @@ Profil: [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-re
   "source" : {
     "reference" : "Patient/tddui-pp-pa-patient-example-pp"
   },
-  "item" : [
-    {
-      "linkId" : "resultat-eval",
-      "text" : "Résultat évaluation",
-      "answer" : [
-        {
-          "valueCoding" : {
-            "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
-            "code" : "MED-341",
-            "display" : "GIR-3"
-          }
-        }
-      ]
-    }
-  ]
+  "item" : [{
+    "linkId" : "resultat-eval",
+    "text" : "Résultat évaluation",
+    "answer" : [{
+      "valueCoding" : {
+        "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+        "code" : "MED-341",
+        "display" : "GIR-3"
+      }
+    }]
+  }]
 }
 
 ```
