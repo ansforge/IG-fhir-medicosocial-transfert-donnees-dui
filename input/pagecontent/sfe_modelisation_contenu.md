@@ -682,10 +682,14 @@ Détails de la prestation pour préciser l'orientation.
   <tr>
     <td>temporaliteAccueil : [0..1] Code</td>
     <td>Fréquence d'accueil lors d'une prise en charge en ESSMS.<br>
-  La temporalité d’accueil est transmise pour tous les droits pour lesquels elle est obligatoire (pour les catégories de droit et prestation suivantes):
+  La temporalité d’accueil est transmise pour tous les droits pour lesquels elle est obligatoire.<br>
+  Pour les catégories de droit et prestation suivantes :
   <ul>
     <li>Orientation ESMS Enfants</li>
     <li>Orientation ESMS Adultes</li>
+    </ul><br>
+Pour les types de droit et prestation suivants :
+<ul>
     <li>Orientation en Unité d'enseignement</li>
     <li>Orientation vers une Scolarisation en milieu ordinaire à temps partagé (UE et établissement scolaire)</li>
     <li>Orientation vers une Unité d'enseignement et une scolarisation en ULIS à temps partagé</li>
