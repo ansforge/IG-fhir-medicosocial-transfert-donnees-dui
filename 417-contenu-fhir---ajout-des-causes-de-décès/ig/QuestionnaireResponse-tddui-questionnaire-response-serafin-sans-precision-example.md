@@ -27,16 +27,12 @@ Profil: [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-re
   "resourceType" : "QuestionnaireResponse",
   "id" : "tddui-questionnaire-response-serafin-sans-precision-example",
   "meta" : {
-    "profile" : [
-      "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
-    ]
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"]
   },
-  "extension" : [
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment",
-      "valueString" : "Cette évaluation fait suite à la demande de Madame Dupont pour organiser le suivi post-opératoire de son fils qu’elle ne peut pas gérer. L'objectif est de décrire le besoin de Monsieur Dupont de disposer d’une prestation d’hébergement pour une durée de 1 mois."
-    }
-  ],
+  "extension" : [{
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment",
+    "valueString" : "Cette évaluation fait suite à la demande de Madame Dupont pour organiser le suivi post-opératoire de son fils qu’elle ne peut pas gérer. L'objectif est de décrire le besoin de Monsieur Dupont de disposer d’une prestation d’hébergement pour une durée de 1 mois."
+  }],
   "identifier" : {
     "system" : "https://identifiant-medicosocial-evaluation.esante.gouv.fr",
     "value" : "3480787529/147720425367411-EVAL-21564658"
@@ -53,17 +49,13 @@ Profil: [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-re
   "source" : {
     "reference" : "Practitioner/tddui-practitioner-example"
   },
-  "item" : [
-    {
-      "linkId" : "besoin-vivre-logement",
-      "text" : "Besoins pour vivre dans un logement",
-      "answer" : [
-        {
-          "valueInteger" : 30
-        }
-      ]
-    }
-  ]
+  "item" : [{
+    "linkId" : "besoin-vivre-logement",
+    "text" : "Besoins pour vivre dans un logement",
+    "answer" : [{
+      "valueInteger" : 30
+    }]
+  }]
 }
 
 ```

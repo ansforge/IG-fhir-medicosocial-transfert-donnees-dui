@@ -36,40 +36,30 @@ Profil: [TDDUI Task Action](StructureDefinition-tddui-task-action.md)
   "resourceType" : "Task",
   "id" : "tddui-pp-ime-task-action-1-aesh-example",
   "meta" : {
-    "profile" : [
-      "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"
-    ]
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"]
   },
-  "identifier" : [
-    {
-      "system" : "https://identifiant-medicosocial-action.esante.gouv.fr",
-      "value" : "3480787529/123456-ACTI-1234"
-    }
-  ],
-  "basedOn" : [
-    {
-      "reference" : "CarePlan/tddui-pp-ime-careplan-example"
-    }
-  ],
+  "identifier" : [{
+    "system" : "https://identifiant-medicosocial-action.esante.gouv.fr",
+    "value" : "3480787529/123456-ACTI-1234"
+  }],
+  "basedOn" : [{
+    "reference" : "CarePlan/tddui-pp-ime-careplan-example"
+  }],
   "status" : "in-progress",
   "intent" : "plan",
   "description" : "Vérification port du casque",
   "owner" : {
     "display" : "AESH"
   },
-  "input" : [
-    {
-      "type" : {
-        "coding" : [
-          {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action",
-            "code" : "titre"
-          }
-        ]
-      },
-      "valueString" : "Action de l'AS pour atteindre l'objectif 1"
-    }
-  ]
+  "input" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action",
+        "code" : "titre"
+      }]
+    },
+    "valueString" : "Action de l'AS pour atteindre l'objectif 1"
+  }]
 }
 
 ```

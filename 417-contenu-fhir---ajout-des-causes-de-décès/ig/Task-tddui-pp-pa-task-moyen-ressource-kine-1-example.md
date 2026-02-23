@@ -36,42 +36,30 @@ Profil: [TDDUI Task MoyenRessource](StructureDefinition-tddui-task-moyen-ressour
   "resourceType" : "Task",
   "id" : "tddui-pp-pa-task-moyen-ressource-kine-1-example",
   "meta" : {
-    "profile" : [
-      "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource"
-    ]
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource"]
   },
-  "identifier" : [
-    {
-      "system" : "https://identifiant-medicosocial-moyenressource.esante.gouv.fr",
-      "value" : "3480787529/123456789-MORE-1235"
-    }
-  ],
-  "basedOn" : [
-    {
-      "reference" : "CarePlan/tddui-pp-pa-careplan-example"
-    }
-  ],
-  "partOf" : [
-    {
-      "reference" : "Task/tddui-pp-pa-task-action-1-kine-example"
-    }
-  ],
+  "identifier" : [{
+    "system" : "https://identifiant-medicosocial-moyenressource.esante.gouv.fr",
+    "value" : "3480787529/123456789-MORE-1235"
+  }],
+  "basedOn" : [{
+    "reference" : "CarePlan/tddui-pp-pa-careplan-example"
+  }],
+  "partOf" : [{
+    "reference" : "Task/tddui-pp-pa-task-action-1-kine-example"
+  }],
   "status" : "in-progress",
   "intent" : "plan",
   "description" : "30 h de kinésithérapie/6 mois",
-  "input" : [
-    {
-      "type" : {
-        "coding" : [
-          {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-moyen-ressource",
-            "code" : "titre"
-          }
-        ]
-      },
-      "valueString" : "Moyens mis en œuvre pour l'objectif 1 (avec rattachement SERAFIN‑PH)"
-    }
-  ]
+  "input" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-moyen-ressource",
+        "code" : "titre"
+      }]
+    },
+    "valueString" : "Moyens mis en œuvre pour l'objectif 1 (avec rattachement SERAFIN‑PH)"
+  }]
 }
 
 ```

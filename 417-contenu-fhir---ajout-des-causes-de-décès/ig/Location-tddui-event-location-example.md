@@ -19,9 +19,7 @@ Profil: [FR Core Location Profile](https://hl7.fr/ig/fhir/core/2.1.0/StructureDe
   "resourceType" : "Location",
   "id" : "tddui-event-location-example",
   "meta" : {
-    "profile" : [
-      "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location"
-    ]
+    "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location"]
   },
   "address" : {
     "line" : ["12 rue des Lilas"],

@@ -327,9 +327,7 @@ Profil: [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-re
   "resourceType" : "QuestionnaireResponse",
   "id" : "tddui-questionnaire-response-aggir-pa-example",
   "meta" : {
-    "profile" : [
-      "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
-    ]
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"]
   },
   "identifier" : {
     "system" : "https://identifiant-medicosocial-evaluation.esante.gouv.fr",
@@ -347,788 +345,602 @@ Profil: [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-re
   "source" : {
     "reference" : "Practitioner/tddui-practitioner-example"
   },
-  "item" : [
-    {
-      "linkId" : "resultat-eval",
-      "text" : "Résultat évaluation",
-      "answer" : [
-        {
+  "item" : [{
+    "linkId" : "resultat-eval",
+    "text" : "Résultat évaluation",
+    "answer" : [{
+      "valueCoding" : {
+        "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+        "code" : "MED-340",
+        "display" : "GIR-2"
+      },
+      "item" : [{
+        "linkId" : "fonction-pensee",
+        "text" : "Fonctions de la pensée",
+        "answer" : [{
           "valueCoding" : {
-            "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
-            "code" : "MED-340",
-            "display" : "GIR-2"
+            "system" : "http://hl7.org/fhir/sid/icf",
+            "code" : "qf0",
+            "display" : "aucun facilitateur"
           },
-          "item" : [
-            {
-              "linkId" : "fonction-pensee",
-              "text" : "Fonctions de la pensée",
-              "answer" : [
-                {
-                  "valueCoding" : {
-                    "system" : "http://hl7.org/fhir/sid/icf",
-                    "code" : "qf0",
-                    "display" : "aucun facilitateur"
-                  },
-                  "item" : [
-                    {
-                      "linkId" : "pensee-spont",
-                      "text" : "fait spontanément",
-                      "answer" : [
-                        {
-                          "valueBoolean" : true
-                        }
-                      ]
-                    },
-                    {
-                      "linkId" : "pensee-tot",
-                      "text" : "fait totalement",
-                      "answer" : [
-                        {
-                          "valueBoolean" : true
-                        }
-                      ]
-                    },
-                    {
-                      "linkId" : "pensee-correct",
-                      "text" : "fait correctement",
-                      "answer" : [
-                        {
-                          "valueBoolean" : true
-                        }
-                      ]
-                    },
-                    {
-                      "linkId" : "pensee-habit",
-                      "text" : "fait habituellement",
-                      "answer" : [
-                        {
-                          "valueBoolean" : true
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "linkId" : "fonction-orientation",
-              "text" : "Fonctions d'orientation",
-              "answer" : [
-                {
-                  "valueCoding" : {
-                    "system" : "http://hl7.org/fhir/sid/icf",
-                    "code" : "qf0",
-                    "display" : "aucun facilitateur"
-                  },
-                  "item" : [
-                    {
-                      "linkId" : "orientation-spont",
-                      "text" : "fait spontanément",
-                      "answer" : [
-                        {
-                          "valueBoolean" : true
-                        }
-                      ]
-                    },
-                    {
-                      "linkId" : "orientation-tot",
-                      "text" : "fait totalement",
-                      "answer" : [
-                        {
-                          "valueBoolean" : true
-                        }
-                      ]
-                    },
-                    {
-                      "linkId" : "orientation-correct",
-                      "text" : "fait correctement",
-                      "answer" : [
-                        {
-                          "valueBoolean" : true
-                        }
-                      ]
-                    },
-                    {
-                      "linkId" : "orientation-habit",
-                      "text" : "fait habituellement",
-                      "answer" : [
-                        {
-                          "valueBoolean" : true
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "linkId" : "se-laver",
-              "text" : "Se laver des parties du corps",
-              "answer" : [
-                {
-                  "valueCoding" : {
-                    "system" : "http://hl7.org/fhir/sid/icf",
-                    "code" : "qf4",
-                    "display" : "facilitateur absolu"
-                  },
-                  "item" : [
-                    {
-                      "linkId" : "laver-spont",
-                      "text" : "fait spontanément",
-                      "answer" : [
-                        {
-                          "valueBoolean" : false
-                        }
-                      ]
-                    },
-                    {
-                      "linkId" : "laver-tot",
-                      "text" : "fait totalement",
-                      "answer" : [
-                        {
-                          "valueBoolean" : false
-                        }
-                      ]
-                    },
-                    {
-                      "linkId" : "laver-correct",
-                      "text" : "fait correctement",
-                      "answer" : [
-                        {
-                          "valueBoolean" : false
-                        }
-                      ]
-                    },
-                    {
-                      "linkId" : "laver-habit",
-                      "text" : "fait habituellement",
-                      "answer" : [
-                        {
-                          "valueBoolean" : false
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "linkId" : "prendre-soin",
-              "text" : "Prendre soin des parties de son corps",
-              "answer" : [
-                {
-                  "valueCoding" : {
-                    "system" : "http://hl7.org/fhir/sid/icf",
-                    "code" : "qf4",
-                    "display" : "facilitateur absolu"
-                  },
-                  "item" : [
-                    {
-                      "linkId" : "prendre-soin-spont",
-                      "text" : "fait spontanément",
-                      "answer" : [
-                        {
-                          "valueBoolean" : false
-                        }
-                      ]
-                    },
-                    {
-                      "linkId" : "prendre-soin-tot",
-                      "text" : "fait totalement",
-                      "answer" : [
-                        {
-                          "valueBoolean" : false
-                        }
-                      ]
-                    },
-                    {
-                      "linkId" : "prendre-soin-correct",
-                      "text" : "fait correctement",
-                      "answer" : [
-                        {
-                          "valueBoolean" : false
-                        }
-                      ]
-                    },
-                    {
-                      "linkId" : "prendre-soin-habit",
-                      "text" : "fait habituellement",
-                      "answer" : [
-                        {
-                          "valueBoolean" : false
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "linkId" : "mettre-vetement",
-              "text" : "Mettre des vêtements",
-              "answer" : [
-                {
-                  "valueCoding" : {
-                    "system" : "http://hl7.org/fhir/sid/icf",
-                    "code" : "qf4",
-                    "display" : "facilitateur absolu"
-                  },
-                  "item" : [
-                    {
-                      "linkId" : "mettre-vetement-spont",
-                      "text" : "fait spontanément",
-                      "answer" : [
-                        {
-                          "valueBoolean" : false
-                        }
-                      ]
-                    },
-                    {
-                      "linkId" : "mettre-vetement-tot",
-                      "text" : "fait totalement",
-                      "answer" : [
-                        {
-                          "valueBoolean" : false
-                        }
-                      ]
-                    },
-                    {
-                      "linkId" : "mettre-vetement-correct",
-                      "text" : "fait correctement",
-                      "answer" : [
-                        {
-                          "valueBoolean" : false
-                        }
-                      ]
-                    },
-                    {
-                      "linkId" : "mettre-vetement-habit",
-                      "text" : "fait habituellement",
-                      "answer" : [
-                        {
-                          "valueBoolean" : false
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "linkId" : "motricite-fine",
-              "text" : "Activités de motricité fine",
-              "answer" : [
-                {
-                  "valueCoding" : {
-                    "system" : "http://hl7.org/fhir/sid/icf",
-                    "code" : "qf2",
-                    "display" : "facilitateur modéré"
-                  },
-                  "item" : [
-                    {
-                      "linkId" : "motricite-fine-spont",
-                      "text" : "fait spontanément",
-                      "answer" : [
-                        {
-                          "valueBoolean" : true
-                        }
-                      ]
-                    },
-                    {
-                      "linkId" : "motricite-fine-tot",
-                      "text" : "fait totalement",
-                      "answer" : [
-                        {
-                          "valueBoolean" : false
-                        }
-                      ]
-                    },
-                    {
-                      "linkId" : "motricite-fine-correct",
-                      "text" : "fait correctement",
-                      "answer" : [
-                        {
-                          "valueBoolean" : true
-                        }
-                      ]
-                    },
-                    {
-                      "linkId" : "motricite-fine-habit",
-                      "text" : "fait habituellement",
-                      "answer" : [
-                        {
-                          "valueBoolean" : true
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "linkId" : "mettre-chaussure",
-              "text" : "Mettre des chaussures",
-              "answer" : [
-                {
-                  "valueCoding" : {
-                    "system" : "http://hl7.org/fhir/sid/icf",
-                    "code" : "qf4",
-                    "display" : "facilitateur absolu"
-                  },
-                  "item" : [
-                    {
-                      "linkId" : "mettre-chaussure-spont",
-                      "text" : "fait spontanément",
-                      "answer" : [
-                        {
-                          "valueBoolean" : false
-                        }
-                      ]
-                    },
-                    {
-                      "linkId" : "mettre-chaussure-tot",
-                      "text" : "fait totalement",
-                      "answer" : [
-                        {
-                          "valueBoolean" : false
-                        }
-                      ]
-                    },
-                    {
-                      "linkId" : "mettre-chaussure-correct",
-                      "text" : "fait correctement",
-                      "answer" : [
-                        {
-                          "valueBoolean" : false
-                        }
-                      ]
-                    },
-                    {
-                      "linkId" : "mettre-chaussure-habit",
-                      "text" : "fait habituellement",
-                      "answer" : [
-                        {
-                          "valueBoolean" : false
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "linkId" : "manger",
-              "text" : "Manger",
-              "answer" : [
-                {
-                  "valueCoding" : {
-                    "system" : "http://hl7.org/fhir/sid/icf",
-                    "code" : "qf2",
-                    "display" : "facilitateur modéré"
-                  },
-                  "item" : [
-                    {
-                      "linkId" : "manger-spont",
-                      "text" : "fait spontanément",
-                      "answer" : [
-                        {
-                          "valueBoolean" : true
-                        }
-                      ]
-                    },
-                    {
-                      "linkId" : "manger-tot",
-                      "text" : "fait totalement",
-                      "answer" : [
-                        {
-                          "valueBoolean" : false
-                        }
-                      ]
-                    },
-                    {
-                      "linkId" : "manger-correct",
-                      "text" : "fait correctement",
-                      "answer" : [
-                        {
-                          "valueBoolean" : true
-                        }
-                      ]
-                    },
-                    {
-                      "linkId" : "manger-habit",
-                      "text" : "fait habituellement",
-                      "answer" : [
-                        {
-                          "valueBoolean" : true
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "linkId" : "passage-aliment",
-              "text" : "Passage des aliments par l'estomac et les intestins",
-              "answer" : [
-                {
-                  "valueCoding" : {
-                    "system" : "http://hl7.org/fhir/sid/icf",
-                    "code" : "qf0",
-                    "display" : "aucun facilitateur"
-                  },
-                  "item" : [
-                    {
-                      "linkId" : "passage-aliment-spont",
-                      "text" : "fait spontanément",
-                      "answer" : [
-                        {
-                          "valueBoolean" : true
-                        }
-                      ]
-                    },
-                    {
-                      "linkId" : "passage-aliment-tot",
-                      "text" : "fait totalement",
-                      "answer" : [
-                        {
-                          "valueBoolean" : true
-                        }
-                      ]
-                    },
-                    {
-                      "linkId" : "passage-aliment-correct",
-                      "text" : "fait correctement",
-                      "answer" : [
-                        {
-                          "valueBoolean" : true
-                        }
-                      ]
-                    },
-                    {
-                      "linkId" : "passage-aliment-habit",
-                      "text" : "fait habituellement",
-                      "answer" : [
-                        {
-                          "valueBoolean" : true
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "linkId" : "assurer-regulation-miction",
-              "text" : "Assurer la régulation de la miction",
-              "answer" : [
-                {
-                  "valueCoding" : {
-                    "system" : "http://hl7.org/fhir/sid/icf",
-                    "code" : "qf2",
-                    "display" : "facilitateur modéré"
-                  },
-                  "item" : [
-                    {
-                      "linkId" : "miction-spont",
-                      "text" : "fait spontanément",
-                      "answer" : [
-                        {
-                          "valueBoolean" : true
-                        }
-                      ]
-                    },
-                    {
-                      "linkId" : "miction-tot",
-                      "text" : "fait totalement",
-                      "answer" : [
-                        {
-                          "valueBoolean" : false
-                        }
-                      ]
-                    },
-                    {
-                      "linkId" : "miction-correct",
-                      "text" : "fait correctement",
-                      "answer" : [
-                        {
-                          "valueBoolean" : true
-                        }
-                      ]
-                    },
-                    {
-                      "linkId" : "miction-habit",
-                      "text" : "fait habituellement",
-                      "answer" : [
-                        {
-                          "valueBoolean" : true
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "linkId" : "assurer-regulation-defecation",
-              "text" : "Assurer la régulation de la défécation",
-              "answer" : [
-                {
-                  "valueCoding" : {
-                    "system" : "http://hl7.org/fhir/sid/icf",
-                    "code" : "qf2",
-                    "display" : "facilitateur modéré"
-                  },
-                  "item" : [
-                    {
-                      "linkId" : "defecation-spont",
-                      "text" : "fait spontanément",
-                      "answer" : [
-                        {
-                          "valueBoolean" : true
-                        }
-                      ]
-                    },
-                    {
-                      "linkId" : "defecation-tot",
-                      "text" : "fait totalement",
-                      "answer" : [
-                        {
-                          "valueBoolean" : false
-                        }
-                      ]
-                    },
-                    {
-                      "linkId" : "defecation-correct",
-                      "text" : "fait correctement",
-                      "answer" : [
-                        {
-                          "valueBoolean" : true
-                        }
-                      ]
-                    },
-                    {
-                      "linkId" : "defecation-habit",
-                      "text" : "fait habituellement",
-                      "answer" : [
-                        {
-                          "valueBoolean" : true
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "linkId" : "position-corps",
-              "text" : "Changer la position corporelle de base",
-              "answer" : [
-                {
-                  "valueCoding" : {
-                    "system" : "http://hl7.org/fhir/sid/icf",
-                    "code" : "qf4",
-                    "display" : "facilitateur absolu"
-                  },
-                  "item" : [
-                    {
-                      "linkId" : "position-corps-spont",
-                      "text" : "fait spontanément",
-                      "answer" : [
-                        {
-                          "valueBoolean" : false
-                        }
-                      ]
-                    },
-                    {
-                      "linkId" : "position-corps-tot",
-                      "text" : "fait totalement",
-                      "answer" : [
-                        {
-                          "valueBoolean" : false
-                        }
-                      ]
-                    },
-                    {
-                      "linkId" : "position-corps-correct",
-                      "text" : "fait correctement",
-                      "answer" : [
-                        {
-                          "valueBoolean" : false
-                        }
-                      ]
-                    },
-                    {
-                      "linkId" : "position-corps-habit",
-                      "text" : "fait habituellement",
-                      "answer" : [
-                        {
-                          "valueBoolean" : false
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "linkId" : "deplacer-maison",
-              "text" : "Se déplacer dans la maison",
-              "answer" : [
-                {
-                  "valueCoding" : {
-                    "system" : "http://hl7.org/fhir/sid/icf",
-                    "code" : "qf4",
-                    "display" : "facilitateur absolu"
-                  },
-                  "item" : [
-                    {
-                      "linkId" : "deplacer-maison-spont",
-                      "text" : "fait spontanément",
-                      "answer" : [
-                        {
-                          "valueBoolean" : false
-                        }
-                      ]
-                    },
-                    {
-                      "linkId" : "deplacer-maison-tot",
-                      "text" : "fait totalement",
-                      "answer" : [
-                        {
-                          "valueBoolean" : false
-                        }
-                      ]
-                    },
-                    {
-                      "linkId" : "deplacer-maison-correct",
-                      "text" : "fait correctement",
-                      "answer" : [
-                        {
-                          "valueBoolean" : false
-                        }
-                      ]
-                    },
-                    {
-                      "linkId" : "deplacer-maison-habit",
-                      "text" : "fait habituellement",
-                      "answer" : [
-                        {
-                          "valueBoolean" : false
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "linkId" : "deplacer-dehors",
-              "text" : "Se déplacer en dehors de la maison et d'autres bâtiments",
-              "answer" : [
-                {
-                  "valueCoding" : {
-                    "system" : "http://hl7.org/fhir/sid/icf",
-                    "code" : "qf4",
-                    "display" : "facilitateur absolu"
-                  },
-                  "item" : [
-                    {
-                      "linkId" : "deplacer-dehors-spont",
-                      "text" : "fait spontanément",
-                      "answer" : [
-                        {
-                          "valueBoolean" : false
-                        }
-                      ]
-                    },
-                    {
-                      "linkId" : "deplacer-dehors-tot",
-                      "text" : "fait totalement",
-                      "answer" : [
-                        {
-                          "valueBoolean" : false
-                        }
-                      ]
-                    },
-                    {
-                      "linkId" : "deplacer-dehors-correct",
-                      "text" : "fait correctement",
-                      "answer" : [
-                        {
-                          "valueBoolean" : false
-                        }
-                      ]
-                    },
-                    {
-                      "linkId" : "deplacer-dehors-habit",
-                      "text" : "fait habituellement",
-                      "answer" : [
-                        {
-                          "valueBoolean" : false
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "linkId" : "appareil-communication",
-              "text" : "Utiliser d'autres appareils et techniques de communication précisés",
-              "answer" : [
-                {
-                  "valueCoding" : {
-                    "system" : "http://hl7.org/fhir/sid/icf",
-                    "code" : "qf0",
-                    "display" : "aucun facilitateur"
-                  },
-                  "item" : [
-                    {
-                      "linkId" : "appareil-spont",
-                      "text" : "fait spontanément",
-                      "answer" : [
-                        {
-                          "valueBoolean" : true
-                        }
-                      ]
-                    },
-                    {
-                      "linkId" : "appareil-tot",
-                      "text" : "fait totalement",
-                      "answer" : [
-                        {
-                          "valueBoolean" : true
-                        }
-                      ]
-                    },
-                    {
-                      "linkId" : "appareil-correct",
-                      "text" : "fait correctement",
-                      "answer" : [
-                        {
-                          "valueBoolean" : true
-                        }
-                      ]
-                    },
-                    {
-                      "linkId" : "appareil-habit",
-                      "text" : "fait habituellement",
-                      "answer" : [
-                        {
-                          "valueBoolean" : true
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  ]
+          "item" : [{
+            "linkId" : "pensee-spont",
+            "text" : "fait spontanément",
+            "answer" : [{
+              "valueBoolean" : true
+            }]
+          },
+          {
+            "linkId" : "pensee-tot",
+            "text" : "fait totalement",
+            "answer" : [{
+              "valueBoolean" : true
+            }]
+          },
+          {
+            "linkId" : "pensee-correct",
+            "text" : "fait correctement",
+            "answer" : [{
+              "valueBoolean" : true
+            }]
+          },
+          {
+            "linkId" : "pensee-habit",
+            "text" : "fait habituellement",
+            "answer" : [{
+              "valueBoolean" : true
+            }]
+          }]
+        }]
+      },
+      {
+        "linkId" : "fonction-orientation",
+        "text" : "Fonctions d'orientation",
+        "answer" : [{
+          "valueCoding" : {
+            "system" : "http://hl7.org/fhir/sid/icf",
+            "code" : "qf0",
+            "display" : "aucun facilitateur"
+          },
+          "item" : [{
+            "linkId" : "orientation-spont",
+            "text" : "fait spontanément",
+            "answer" : [{
+              "valueBoolean" : true
+            }]
+          },
+          {
+            "linkId" : "orientation-tot",
+            "text" : "fait totalement",
+            "answer" : [{
+              "valueBoolean" : true
+            }]
+          },
+          {
+            "linkId" : "orientation-correct",
+            "text" : "fait correctement",
+            "answer" : [{
+              "valueBoolean" : true
+            }]
+          },
+          {
+            "linkId" : "orientation-habit",
+            "text" : "fait habituellement",
+            "answer" : [{
+              "valueBoolean" : true
+            }]
+          }]
+        }]
+      },
+      {
+        "linkId" : "se-laver",
+        "text" : "Se laver des parties du corps",
+        "answer" : [{
+          "valueCoding" : {
+            "system" : "http://hl7.org/fhir/sid/icf",
+            "code" : "qf4",
+            "display" : "facilitateur absolu"
+          },
+          "item" : [{
+            "linkId" : "laver-spont",
+            "text" : "fait spontanément",
+            "answer" : [{
+              "valueBoolean" : false
+            }]
+          },
+          {
+            "linkId" : "laver-tot",
+            "text" : "fait totalement",
+            "answer" : [{
+              "valueBoolean" : false
+            }]
+          },
+          {
+            "linkId" : "laver-correct",
+            "text" : "fait correctement",
+            "answer" : [{
+              "valueBoolean" : false
+            }]
+          },
+          {
+            "linkId" : "laver-habit",
+            "text" : "fait habituellement",
+            "answer" : [{
+              "valueBoolean" : false
+            }]
+          }]
+        }]
+      },
+      {
+        "linkId" : "prendre-soin",
+        "text" : "Prendre soin des parties de son corps",
+        "answer" : [{
+          "valueCoding" : {
+            "system" : "http://hl7.org/fhir/sid/icf",
+            "code" : "qf4",
+            "display" : "facilitateur absolu"
+          },
+          "item" : [{
+            "linkId" : "prendre-soin-spont",
+            "text" : "fait spontanément",
+            "answer" : [{
+              "valueBoolean" : false
+            }]
+          },
+          {
+            "linkId" : "prendre-soin-tot",
+            "text" : "fait totalement",
+            "answer" : [{
+              "valueBoolean" : false
+            }]
+          },
+          {
+            "linkId" : "prendre-soin-correct",
+            "text" : "fait correctement",
+            "answer" : [{
+              "valueBoolean" : false
+            }]
+          },
+          {
+            "linkId" : "prendre-soin-habit",
+            "text" : "fait habituellement",
+            "answer" : [{
+              "valueBoolean" : false
+            }]
+          }]
+        }]
+      },
+      {
+        "linkId" : "mettre-vetement",
+        "text" : "Mettre des vêtements",
+        "answer" : [{
+          "valueCoding" : {
+            "system" : "http://hl7.org/fhir/sid/icf",
+            "code" : "qf4",
+            "display" : "facilitateur absolu"
+          },
+          "item" : [{
+            "linkId" : "mettre-vetement-spont",
+            "text" : "fait spontanément",
+            "answer" : [{
+              "valueBoolean" : false
+            }]
+          },
+          {
+            "linkId" : "mettre-vetement-tot",
+            "text" : "fait totalement",
+            "answer" : [{
+              "valueBoolean" : false
+            }]
+          },
+          {
+            "linkId" : "mettre-vetement-correct",
+            "text" : "fait correctement",
+            "answer" : [{
+              "valueBoolean" : false
+            }]
+          },
+          {
+            "linkId" : "mettre-vetement-habit",
+            "text" : "fait habituellement",
+            "answer" : [{
+              "valueBoolean" : false
+            }]
+          }]
+        }]
+      },
+      {
+        "linkId" : "motricite-fine",
+        "text" : "Activités de motricité fine",
+        "answer" : [{
+          "valueCoding" : {
+            "system" : "http://hl7.org/fhir/sid/icf",
+            "code" : "qf2",
+            "display" : "facilitateur modéré"
+          },
+          "item" : [{
+            "linkId" : "motricite-fine-spont",
+            "text" : "fait spontanément",
+            "answer" : [{
+              "valueBoolean" : true
+            }]
+          },
+          {
+            "linkId" : "motricite-fine-tot",
+            "text" : "fait totalement",
+            "answer" : [{
+              "valueBoolean" : false
+            }]
+          },
+          {
+            "linkId" : "motricite-fine-correct",
+            "text" : "fait correctement",
+            "answer" : [{
+              "valueBoolean" : true
+            }]
+          },
+          {
+            "linkId" : "motricite-fine-habit",
+            "text" : "fait habituellement",
+            "answer" : [{
+              "valueBoolean" : true
+            }]
+          }]
+        }]
+      },
+      {
+        "linkId" : "mettre-chaussure",
+        "text" : "Mettre des chaussures",
+        "answer" : [{
+          "valueCoding" : {
+            "system" : "http://hl7.org/fhir/sid/icf",
+            "code" : "qf4",
+            "display" : "facilitateur absolu"
+          },
+          "item" : [{
+            "linkId" : "mettre-chaussure-spont",
+            "text" : "fait spontanément",
+            "answer" : [{
+              "valueBoolean" : false
+            }]
+          },
+          {
+            "linkId" : "mettre-chaussure-tot",
+            "text" : "fait totalement",
+            "answer" : [{
+              "valueBoolean" : false
+            }]
+          },
+          {
+            "linkId" : "mettre-chaussure-correct",
+            "text" : "fait correctement",
+            "answer" : [{
+              "valueBoolean" : false
+            }]
+          },
+          {
+            "linkId" : "mettre-chaussure-habit",
+            "text" : "fait habituellement",
+            "answer" : [{
+              "valueBoolean" : false
+            }]
+          }]
+        }]
+      },
+      {
+        "linkId" : "manger",
+        "text" : "Manger",
+        "answer" : [{
+          "valueCoding" : {
+            "system" : "http://hl7.org/fhir/sid/icf",
+            "code" : "qf2",
+            "display" : "facilitateur modéré"
+          },
+          "item" : [{
+            "linkId" : "manger-spont",
+            "text" : "fait spontanément",
+            "answer" : [{
+              "valueBoolean" : true
+            }]
+          },
+          {
+            "linkId" : "manger-tot",
+            "text" : "fait totalement",
+            "answer" : [{
+              "valueBoolean" : false
+            }]
+          },
+          {
+            "linkId" : "manger-correct",
+            "text" : "fait correctement",
+            "answer" : [{
+              "valueBoolean" : true
+            }]
+          },
+          {
+            "linkId" : "manger-habit",
+            "text" : "fait habituellement",
+            "answer" : [{
+              "valueBoolean" : true
+            }]
+          }]
+        }]
+      },
+      {
+        "linkId" : "passage-aliment",
+        "text" : "Passage des aliments par l'estomac et les intestins",
+        "answer" : [{
+          "valueCoding" : {
+            "system" : "http://hl7.org/fhir/sid/icf",
+            "code" : "qf0",
+            "display" : "aucun facilitateur"
+          },
+          "item" : [{
+            "linkId" : "passage-aliment-spont",
+            "text" : "fait spontanément",
+            "answer" : [{
+              "valueBoolean" : true
+            }]
+          },
+          {
+            "linkId" : "passage-aliment-tot",
+            "text" : "fait totalement",
+            "answer" : [{
+              "valueBoolean" : true
+            }]
+          },
+          {
+            "linkId" : "passage-aliment-correct",
+            "text" : "fait correctement",
+            "answer" : [{
+              "valueBoolean" : true
+            }]
+          },
+          {
+            "linkId" : "passage-aliment-habit",
+            "text" : "fait habituellement",
+            "answer" : [{
+              "valueBoolean" : true
+            }]
+          }]
+        }]
+      },
+      {
+        "linkId" : "assurer-regulation-miction",
+        "text" : "Assurer la régulation de la miction",
+        "answer" : [{
+          "valueCoding" : {
+            "system" : "http://hl7.org/fhir/sid/icf",
+            "code" : "qf2",
+            "display" : "facilitateur modéré"
+          },
+          "item" : [{
+            "linkId" : "miction-spont",
+            "text" : "fait spontanément",
+            "answer" : [{
+              "valueBoolean" : true
+            }]
+          },
+          {
+            "linkId" : "miction-tot",
+            "text" : "fait totalement",
+            "answer" : [{
+              "valueBoolean" : false
+            }]
+          },
+          {
+            "linkId" : "miction-correct",
+            "text" : "fait correctement",
+            "answer" : [{
+              "valueBoolean" : true
+            }]
+          },
+          {
+            "linkId" : "miction-habit",
+            "text" : "fait habituellement",
+            "answer" : [{
+              "valueBoolean" : true
+            }]
+          }]
+        }]
+      },
+      {
+        "linkId" : "assurer-regulation-defecation",
+        "text" : "Assurer la régulation de la défécation",
+        "answer" : [{
+          "valueCoding" : {
+            "system" : "http://hl7.org/fhir/sid/icf",
+            "code" : "qf2",
+            "display" : "facilitateur modéré"
+          },
+          "item" : [{
+            "linkId" : "defecation-spont",
+            "text" : "fait spontanément",
+            "answer" : [{
+              "valueBoolean" : true
+            }]
+          },
+          {
+            "linkId" : "defecation-tot",
+            "text" : "fait totalement",
+            "answer" : [{
+              "valueBoolean" : false
+            }]
+          },
+          {
+            "linkId" : "defecation-correct",
+            "text" : "fait correctement",
+            "answer" : [{
+              "valueBoolean" : true
+            }]
+          },
+          {
+            "linkId" : "defecation-habit",
+            "text" : "fait habituellement",
+            "answer" : [{
+              "valueBoolean" : true
+            }]
+          }]
+        }]
+      },
+      {
+        "linkId" : "position-corps",
+        "text" : "Changer la position corporelle de base",
+        "answer" : [{
+          "valueCoding" : {
+            "system" : "http://hl7.org/fhir/sid/icf",
+            "code" : "qf4",
+            "display" : "facilitateur absolu"
+          },
+          "item" : [{
+            "linkId" : "position-corps-spont",
+            "text" : "fait spontanément",
+            "answer" : [{
+              "valueBoolean" : false
+            }]
+          },
+          {
+            "linkId" : "position-corps-tot",
+            "text" : "fait totalement",
+            "answer" : [{
+              "valueBoolean" : false
+            }]
+          },
+          {
+            "linkId" : "position-corps-correct",
+            "text" : "fait correctement",
+            "answer" : [{
+              "valueBoolean" : false
+            }]
+          },
+          {
+            "linkId" : "position-corps-habit",
+            "text" : "fait habituellement",
+            "answer" : [{
+              "valueBoolean" : false
+            }]
+          }]
+        }]
+      },
+      {
+        "linkId" : "deplacer-maison",
+        "text" : "Se déplacer dans la maison",
+        "answer" : [{
+          "valueCoding" : {
+            "system" : "http://hl7.org/fhir/sid/icf",
+            "code" : "qf4",
+            "display" : "facilitateur absolu"
+          },
+          "item" : [{
+            "linkId" : "deplacer-maison-spont",
+            "text" : "fait spontanément",
+            "answer" : [{
+              "valueBoolean" : false
+            }]
+          },
+          {
+            "linkId" : "deplacer-maison-tot",
+            "text" : "fait totalement",
+            "answer" : [{
+              "valueBoolean" : false
+            }]
+          },
+          {
+            "linkId" : "deplacer-maison-correct",
+            "text" : "fait correctement",
+            "answer" : [{
+              "valueBoolean" : false
+            }]
+          },
+          {
+            "linkId" : "deplacer-maison-habit",
+            "text" : "fait habituellement",
+            "answer" : [{
+              "valueBoolean" : false
+            }]
+          }]
+        }]
+      },
+      {
+        "linkId" : "deplacer-dehors",
+        "text" : "Se déplacer en dehors de la maison et d'autres bâtiments",
+        "answer" : [{
+          "valueCoding" : {
+            "system" : "http://hl7.org/fhir/sid/icf",
+            "code" : "qf4",
+            "display" : "facilitateur absolu"
+          },
+          "item" : [{
+            "linkId" : "deplacer-dehors-spont",
+            "text" : "fait spontanément",
+            "answer" : [{
+              "valueBoolean" : false
+            }]
+          },
+          {
+            "linkId" : "deplacer-dehors-tot",
+            "text" : "fait totalement",
+            "answer" : [{
+              "valueBoolean" : false
+            }]
+          },
+          {
+            "linkId" : "deplacer-dehors-correct",
+            "text" : "fait correctement",
+            "answer" : [{
+              "valueBoolean" : false
+            }]
+          },
+          {
+            "linkId" : "deplacer-dehors-habit",
+            "text" : "fait habituellement",
+            "answer" : [{
+              "valueBoolean" : false
+            }]
+          }]
+        }]
+      },
+      {
+        "linkId" : "appareil-communication",
+        "text" : "Utiliser d'autres appareils et techniques de communication précisés",
+        "answer" : [{
+          "valueCoding" : {
+            "system" : "http://hl7.org/fhir/sid/icf",
+            "code" : "qf0",
+            "display" : "aucun facilitateur"
+          },
+          "item" : [{
+            "linkId" : "appareil-spont",
+            "text" : "fait spontanément",
+            "answer" : [{
+              "valueBoolean" : true
+            }]
+          },
+          {
+            "linkId" : "appareil-tot",
+            "text" : "fait totalement",
+            "answer" : [{
+              "valueBoolean" : true
+            }]
+          },
+          {
+            "linkId" : "appareil-correct",
+            "text" : "fait correctement",
+            "answer" : [{
+              "valueBoolean" : true
+            }]
+          },
+          {
+            "linkId" : "appareil-habit",
+            "text" : "fait habituellement",
+            "answer" : [{
+              "valueBoolean" : true
+            }]
+          }]
+        }]
+      }]
+    }]
+  }]
 }
 
 ```

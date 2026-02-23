@@ -25,47 +25,35 @@ Profil: [TDDUI Practitioner](StructureDefinition-tddui-practitioner.md)
   "resourceType" : "Practitioner",
   "id" : "tddui-practitioner-example",
   "meta" : {
-    "profile" : [
-      "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner"
-    ]
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner"]
   },
-  "identifier" : [
-    {
-      "system" : "urn:oid:1.2.250.1.71.4.2.1",
-      "value" : "10103441234"
+  "identifier" : [{
+    "system" : "urn:oid:1.2.250.1.71.4.2.1",
+    "value" : "10103441234"
+  }],
+  "name" : [{
+    "family" : "Martin",
+    "given" : ["Claire"],
+    "prefix" : ["MME"]
+  }],
+  "qualification" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "https://mos.esante.gouv.fr/NOS/TRE_R48-DiplomeEtatFrancais/FHIR/TRE-R48-DiplomeEtatFrancais",
+        "code" : "DE09",
+        "display" : "DE Infirmier"
+      }]
     }
-  ],
-  "name" : [
-    {
-      "family" : "Martin",
-      "given" : ["Claire"],
-      "prefix" : ["MME"]
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "https://mos.esante.gouv.fr/NOS/TRE_G15-ProfessionSante/FHIR/TRE-G15-ProfessionSante",
+        "code" : "60",
+        "display" : "Infirmier"
+      }]
     }
-  ],
-  "qualification" : [
-    {
-      "code" : {
-        "coding" : [
-          {
-            "system" : "https://mos.esante.gouv.fr/NOS/TRE_R48-DiplomeEtatFrancais/FHIR/TRE-R48-DiplomeEtatFrancais",
-            "code" : "DE09",
-            "display" : "DE Infirmier"
-          }
-        ]
-      }
-    },
-    {
-      "code" : {
-        "coding" : [
-          {
-            "system" : "https://mos.esante.gouv.fr/NOS/TRE_G15-ProfessionSante/FHIR/TRE-G15-ProfessionSante",
-            "code" : "60",
-            "display" : "Infirmier"
-          }
-        ]
-      }
-    }
-  ]
+  }]
 }
 
 ```

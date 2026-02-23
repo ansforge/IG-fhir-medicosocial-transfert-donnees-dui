@@ -10,7 +10,7 @@ Profil: [TDDUI Observation Cause Mortalite](StructureDefinition-tddui-observatio
 
 **status**: Registered
 
-**code**: Cause of death
+**code**: Causes du décès
 
 **subject**: [DUPONT Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/194704032)](Patient-tddui-patient-ins-example.md)
 
@@ -19,7 +19,7 @@ Profil: [TDDUI Observation Cause Mortalite](StructureDefinition-tddui-observatio
 | | | |
 | :--- | :--- | :--- |
 | - | **Code** | **Value[x]** |
-| * | Cause of death | Œdème pulmonaire |
+| * | Causes du décès | Œdème pulmonaire |
 
 
 
@@ -30,45 +30,35 @@ Profil: [TDDUI Observation Cause Mortalite](StructureDefinition-tddui-observatio
   "resourceType" : "Observation",
   "id" : "tddui-observation-cause-mortalite-example",
   "meta" : {
-    "profile" : [
-      "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-mortalite"
-    ]
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-mortalite"]
   },
   "status" : "registered",
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "79378-6",
-        "display" : "Cause of death"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "79378-6",
+      "display" : "Causes du décès"
+    }]
   },
   "subject" : {
     "reference" : "Patient/tddui-patient-ins-example"
   },
-  "component" : [
-    {
-      "code" : {
-        "coding" : [
-          {
-            "system" : "http://loinc.org",
-            "code" : "79378-6",
-            "display" : "Cause of death"
-          }
-        ]
-      },
-      "valueCodeableConcept" : {
-        "coding" : [
-          {
-            "system" : "https://smt.esante.gouv.fr/terminologie-cim-10",
-            "code" : "J81",
-            "display" : "Œdème pulmonaire"
-          }
-        ]
-      }
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "79378-6",
+        "display" : "Causes du décès"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://smt.esante.gouv.fr/terminologie-cim-10",
+        "code" : "J81",
+        "display" : "Œdème pulmonaire"
+      }]
     }
-  ]
+  }]
 }
 
 ```

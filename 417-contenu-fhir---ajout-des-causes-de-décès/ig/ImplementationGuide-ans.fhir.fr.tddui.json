@@ -10,7 +10,7 @@
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2026-02-16T14:58:48+00:00",
+  "date" : "2026-02-23T15:44:46+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -1202,30 +1202,6 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/tddui-observation-mobilite-usager"
-      },
-      "name" : "TDDUI Obervation Mobilite Usager",
-      "description" : "Profil de la ressource Observation permettant de représenter la mobilité de l'usager.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/tddui-observation-periode-scolaire"
-      },
-      "name" : "TDDUI Obervation Periode Scolaire",
-      "description" : "Profil de la ressource Observation permettant de représenter la période scolaire de l'usager.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/tddui-observation-cause-mortalite"
       },
       "name" : "TDDUI Observation Cause Mortalite",
@@ -1247,13 +1223,49 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-observation-mobilite-usager"
+      },
+      "name" : "TDDUI Observation Mobilite Usager",
+      "description" : "Profil de la ressource Observation permettant de représenter la mobilité de l'usager.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/tddui-observation-mobilite-usager-example"
+      },
+      "name" : "TDDUI Observation Mobilite Usager Example",
+      "description" : "Exemple de la ressource TDDUIObservationMobiliteUsager",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite-usager"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-observation-periode-scolaire"
+      },
+      "name" : "TDDUI Observation Periode Scolaire",
+      "description" : "Profil de la ressource Observation permettant de représenter la période scolaire de l'usager.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
         "reference" : "ValueSet/tddui-observation-periode-scolaire"
       },
       "name" : "TDDUI Observation Periode Scolaire",
-      "description" : "ValueSet for the Observation school period.",
+      "description" : "ValueSet pour l'Observation de la Période Scolaire.",
       "exampleBoolean" : false
     },
     {
@@ -1265,8 +1277,20 @@
         "reference" : "CodeSystem/tddui-observation-periode-scolaire"
       },
       "name" : "TDDUI Observation Periode Scolaire",
-      "description" : "CodeSystem for the Observation school period",
+      "description" : "CodeSystem pour l'Observation de la Période Scolaire.",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/tddui-observation-periodescolaire-example"
+      },
+      "name" : "TDDUI Observation PeriodeScolaire Example",
+      "description" : "Exemple de la ressource TDDUIObservationPeriodeScolaire",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-periode-scolaire"
     },
     {
       "extension" : [{
@@ -1277,7 +1301,7 @@
         "reference" : "ValueSet/tddui-observation-type"
       },
       "name" : "TDDUI Observation Type",
-      "description" : "ValueSet for the Observation types.",
+      "description" : "ValueSet pour les types d'Observation.",
       "exampleBoolean" : false
     },
     {
@@ -1289,32 +1313,8 @@
         "reference" : "CodeSystem/tddui-observation-type"
       },
       "name" : "TDDUI Observation Type",
-      "description" : "CodeSystem for the Observation types",
+      "description" : "CodeSystem pour la défintion des types d'Observation",
       "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/tddui-observation-mobilite-usager-example"
-      },
-      "name" : "TDDUI Obsrvation Mobilite Usager Example",
-      "description" : "Exemple de la ressource TDDUIObservationMobiliteUsager",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite-usager"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/tddui-observation-periodescolaire-example"
-      },
-      "name" : "TDDUI Obsrvation PeriodeScolaire Example",
-      "description" : "Exemple de la ressource TDDUIObservationPeriodeScolaire",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-periode-scolaire"
     },
     {
       "extension" : [{

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used | *Version*:2.2.0-ballot |
-| Active as of 2026-02-16 | *Computable Name*:TDDUIRessourcesUsed |
+| Active as of 2026-02-23 | *Computable Name*:TDDUIRessourcesUsed |
 
 Ressources utilisées lors de l’évènement (ex : chambre, matériel médical, véhicule).
 
@@ -49,162 +49,142 @@ Other representations of profile: [CSV](StructureDefinition-tddui-ressources-use
   "name" : "TDDUIRessourcesUsed",
   "title" : "TDDUI Ressources Used",
   "status" : "active",
-  "date" : "2026-02-16T14:58:48+00:00",
+  "date" : "2026-02-23T15:44:46+00:00",
   "publisher" : "ANS",
-  "contact" : [
-    {
-      "name" : "ANS",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://esante.gouv.fr"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "ANS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
   "description" : "Ressources utilisées lors de l’évènement (ex : chambre, matériel médical, véhicule).",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
-          "display" : "FRANCE"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
   "kind" : "complex-type",
   "abstract" : false,
-  "context" : [
-    {
-      "type" : "element",
-      "expression" : "Encounter"
-    }
-  ],
+  "context" : [{
+    "type" : "element",
+    "expression" : "Encounter"
+  }],
   "type" : "Extension",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Extension",
-        "path" : "Extension",
-        "short" : "TDDUI Ressources Used",
-        "definition" : "Ressources utilisées lors de l’évènement (ex : chambre, matériel médical, véhicule)."
-      },
-      {
-        "id" : "Extension.extension:TDDUIRessourceType",
-        "path" : "Extension.extension",
-        "sliceName" : "TDDUIRessourceType",
-        "short" : "Type de ressources utilisées dans le cadre de l’évènement.",
-        "min" : 0,
-        "max" : "1"
-      },
-      {
-        "id" : "Extension.extension:TDDUIRessourceType.extension",
-        "path" : "Extension.extension.extension",
-        "max" : "0"
-      },
-      {
-        "id" : "Extension.extension:TDDUIRessourceType.url",
-        "path" : "Extension.extension.url",
-        "fixedUri" : "TDDUIRessourceType"
-      },
-      {
-        "id" : "Extension.extension:TDDUIRessourceType.value[x]",
-        "path" : "Extension.extension.value[x]",
-        "type" : [
-          {
-            "code" : "CodeableConcept"
-          }
-        ],
-        "binding" : {
-          "strength" : "required",
-          "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-ressource-utilisee-cisis"
-        }
-      },
-      {
-        "id" : "Extension.extension:TDDUIMaterialDetail",
-        "path" : "Extension.extension",
-        "sliceName" : "TDDUIMaterialDetail",
-        "short" : "Détail des ressources matérielles.",
-        "min" : 0,
-        "max" : "*"
-      },
-      {
-        "id" : "Extension.extension:TDDUIMaterialDetail.extension",
-        "path" : "Extension.extension.extension",
-        "max" : "0"
-      },
-      {
-        "id" : "Extension.extension:TDDUIMaterialDetail.url",
-        "path" : "Extension.extension.url",
-        "fixedUri" : "TDDUIMaterialDetail"
-      },
-      {
-        "id" : "Extension.extension:TDDUIMaterialDetail.value[x]",
-        "path" : "Extension.extension.value[x]",
-        "type" : [
-          {
-            "code" : "CodeableConcept"
-          }
-        ],
-        "binding" : {
-          "strength" : "required",
-          "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-detail-materiel-specialise-cisis"
-        }
-      },
-      {
-        "id" : "Extension.extension:TDDUIFacilityResource",
-        "path" : "Extension.extension",
-        "sliceName" : "TDDUIFacilityResource",
-        "short" : "Détail des ressources immobilières.",
-        "min" : 0,
-        "max" : "*"
-      },
-      {
-        "id" : "Extension.extension:TDDUIFacilityResource.extension",
-        "path" : "Extension.extension.extension",
-        "max" : "0"
-      },
-      {
-        "id" : "Extension.extension:TDDUIFacilityResource.url",
-        "path" : "Extension.extension.url",
-        "fixedUri" : "TDDUIFacilityResource"
-      },
-      {
-        "id" : "Extension.extension:TDDUIFacilityResource.value[x]",
-        "path" : "Extension.extension.value[x]",
-        "type" : [
-          {
-            "code" : "CodeableConcept"
-          }
-        ],
-        "binding" : {
-          "strength" : "required",
-          "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-detail-ressource-immobiliere-utilisee-cisis"
-        }
-      },
-      {
-        "id" : "Extension.url",
-        "path" : "Extension.url",
-        "fixedUri" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used"
-      },
-      {
-        "id" : "Extension.value[x]",
-        "path" : "Extension.value[x]",
-        "max" : "0"
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "TDDUI Ressources Used",
+      "definition" : "Ressources utilisées lors de l’évènement (ex : chambre, matériel médical, véhicule)."
+    },
+    {
+      "id" : "Extension.extension:TDDUIRessourceType",
+      "path" : "Extension.extension",
+      "sliceName" : "TDDUIRessourceType",
+      "short" : "Type de ressources utilisées dans le cadre de l’évènement.",
+      "min" : 0,
+      "max" : "1"
+    },
+    {
+      "id" : "Extension.extension:TDDUIRessourceType.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.extension:TDDUIRessourceType.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "TDDUIRessourceType"
+    },
+    {
+      "id" : "Extension.extension:TDDUIRessourceType.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-ressource-utilisee-cisis"
       }
-    ]
+    },
+    {
+      "id" : "Extension.extension:TDDUIMaterialDetail",
+      "path" : "Extension.extension",
+      "sliceName" : "TDDUIMaterialDetail",
+      "short" : "Détail des ressources matérielles.",
+      "min" : 0,
+      "max" : "*"
+    },
+    {
+      "id" : "Extension.extension:TDDUIMaterialDetail.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.extension:TDDUIMaterialDetail.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "TDDUIMaterialDetail"
+    },
+    {
+      "id" : "Extension.extension:TDDUIMaterialDetail.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-detail-materiel-specialise-cisis"
+      }
+    },
+    {
+      "id" : "Extension.extension:TDDUIFacilityResource",
+      "path" : "Extension.extension",
+      "sliceName" : "TDDUIFacilityResource",
+      "short" : "Détail des ressources immobilières.",
+      "min" : 0,
+      "max" : "*"
+    },
+    {
+      "id" : "Extension.extension:TDDUIFacilityResource.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.extension:TDDUIFacilityResource.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "TDDUIFacilityResource"
+    },
+    {
+      "id" : "Extension.extension:TDDUIFacilityResource.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-detail-ressource-immobiliere-utilisee-cisis"
+      }
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "fixedUri" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used"
+    },
+    {
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "max" : "0"
+    }]
   }
 }
 

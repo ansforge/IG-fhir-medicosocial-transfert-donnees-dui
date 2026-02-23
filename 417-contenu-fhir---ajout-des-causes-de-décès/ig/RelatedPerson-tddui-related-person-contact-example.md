@@ -23,38 +23,28 @@ Profil: [TDDUI RelatedPerson Contact](StructureDefinition-tddui-related-person-c
   "resourceType" : "RelatedPerson",
   "id" : "tddui-related-person-contact-example",
   "meta" : {
-    "profile" : [
-      "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact"
-    ]
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact"]
   },
-  "identifier" : [
-    {
-      "value" : "3480787529/123456789-PPAttente-1234-enfant"
-    }
-  ],
+  "identifier" : [{
+    "value" : "3480787529/123456789-PPAttente-1234-enfant"
+  }],
   "patient" : {
     "reference" : "Patient/tddui-patient-ins-example"
   },
-  "relationship" : [
-    {
-      "coding" : [
-        {
-          "system" : "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass",
-          "code" : "GUARD",
-          "display" : "Responsable légal"
-        }
-      ]
-    },
-    {
-      "coding" : [
-        {
-          "system" : "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode",
-          "code" : "FTH",
-          "display" : "Père"
-        }
-      ]
-    }
-  ]
+  "relationship" : [{
+    "coding" : [{
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass",
+      "code" : "GUARD",
+      "display" : "Responsable légal"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode",
+      "code" : "FTH",
+      "display" : "Père"
+    }]
+  }]
 }
 
 ```

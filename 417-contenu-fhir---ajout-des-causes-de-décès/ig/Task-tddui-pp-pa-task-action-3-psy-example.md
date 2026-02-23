@@ -33,53 +33,41 @@ Profil: [TDDUI Task Action](StructureDefinition-tddui-task-action.md)
   "resourceType" : "Task",
   "id" : "tddui-pp-pa-task-action-3-psy-example",
   "meta" : {
-    "profile" : [
-      "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"
-    ]
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"]
   },
-  "identifier" : [
-    {
-      "system" : "https://identifiant-medicosocial-action.esante.gouv.fr",
-      "value" : "3480787529/123456789-ACTI-1238"
-    }
-  ],
-  "basedOn" : [
-    {
-      "reference" : "CarePlan/tddui-pp-ime-careplan-example"
-    }
-  ],
+  "identifier" : [{
+    "system" : "https://identifiant-medicosocial-action.esante.gouv.fr",
+    "value" : "3480787529/123456789-ACTI-1238"
+  }],
+  "basedOn" : [{
+    "reference" : "CarePlan/tddui-pp-ime-careplan-example"
+  }],
   "status" : "in-progress",
   "intent" : "plan",
   "description" : "Entretien de satisfaction semestriel",
   "owner" : {
     "display" : "Psychologue"
   },
-  "input" : [
-    {
-      "type" : {
-        "coding" : [
-          {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action",
-            "code" : "titre"
-          }
-        ]
-      },
-      "valueString" : "Action du psychologue pour atteindre l'objectif 3"
+  "input" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action",
+        "code" : "titre"
+      }]
     },
-    {
-      "type" : {
-        "coding" : [
-          {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action",
-            "code" : "objectif"
-          }
-        ]
-      },
-      "valueReference" : {
-        "reference" : "Goal/tddui-pp-pa-goal-objectif-3-example"
-      }
+    "valueString" : "Action du psychologue pour atteindre l'objectif 3"
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action",
+        "code" : "objectif"
+      }]
+    },
+    "valueReference" : {
+      "reference" : "Goal/tddui-pp-pa-goal-objectif-3-example"
     }
-  ]
+  }]
 }
 
 ```

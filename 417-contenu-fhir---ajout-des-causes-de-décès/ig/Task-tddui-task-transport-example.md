@@ -37,25 +37,19 @@ Profil: [TDDUI Task Transport](StructureDefinition-tddui-task-transport.md)
   "resourceType" : "Task",
   "id" : "tddui-task-transport-example",
   "meta" : {
-    "profile" : [
-      "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport"
-    ]
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport"]
   },
-  "identifier" : [
-    {
-      "value" : "3480787529/147720425367411-TP-154675"
-    }
-  ],
+  "identifier" : [{
+    "value" : "3480787529/147720425367411-TP-154675"
+  }],
   "status" : "completed",
   "intent" : "plan",
   "code" : {
-    "coding" : [
-      {
-        "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
-        "code" : "ORG-204",
-        "display" : "Transport en commun"
-      }
-    ]
+    "coding" : [{
+      "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+      "code" : "ORG-204",
+      "display" : "Transport en commun"
+    }]
   },
   "encounter" : {
     "reference" : "Encounter/tddui-encounter-evenement-example"
@@ -64,68 +58,58 @@ Profil: [TDDUI Task Transport](StructureDefinition-tddui-task-transport.md)
     "start" : "2023-04-14T10:30:00+02:00",
     "end" : "2023-04-14T11:15:00+02:00"
   },
-  "input" : [
-    {
-      "type" : {
-        "coding" : [
-          {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
-            "code" : "budgetPrevisionnel"
-          }
-        ]
-      },
-      "valueMoney" : {
-        "value" : 2,
-        "currency" : "EUR"
-      }
+  "input" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
+        "code" : "budgetPrevisionnel"
+      }]
     },
-    {
-      "type" : {
-        "coding" : [
-          {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
-            "code" : "budgetReel"
-          }
-        ]
-      },
-      "valueMoney" : {
-        "value" : 2,
-        "currency" : "EUR"
-      }
-    },
-    {
-      "type" : {
-        "coding" : [
-          {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
-            "code" : "distance"
-          }
-        ]
-      },
-      "valueDistance" : {
-        "value" : 4,
-        "unit" : "kilometers",
-        "system" : "http://unitsofmeasure.org",
-        "code" : "km"
-      }
-    },
-    {
-      "type" : {
-        "coding" : [
-          {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
-            "code" : "dureeTheorique"
-          }
-        ]
-      },
-      "valueDuration" : {
-        "value" : 10,
-        "unit" : "minutes",
-        "system" : "http://unitsofmeasure.org",
-        "code" : "min"
-      }
+    "valueMoney" : {
+      "value" : 2,
+      "currency" : "EUR"
     }
-  ]
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
+        "code" : "budgetReel"
+      }]
+    },
+    "valueMoney" : {
+      "value" : 2,
+      "currency" : "EUR"
+    }
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
+        "code" : "distance"
+      }]
+    },
+    "valueDistance" : {
+      "value" : 4,
+      "unit" : "kilometers",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "km"
+    }
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
+        "code" : "dureeTheorique"
+      }]
+    },
+    "valueDuration" : {
+      "value" : 10,
+      "unit" : "minutes",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "min"
+    }
+  }]
 }
 
 ```

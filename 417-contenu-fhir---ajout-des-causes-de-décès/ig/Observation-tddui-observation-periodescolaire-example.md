@@ -1,12 +1,12 @@
-# TDDUI Obsrvation PeriodeScolaire Example - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Observation PeriodeScolaire Example - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **TDDUI Obsrvation PeriodeScolaire Example**
+* **TDDUI Observation PeriodeScolaire Example**
 
-## Example Observation: TDDUI Obsrvation PeriodeScolaire Example
+## Example Observation: TDDUI Observation PeriodeScolaire Example
 
-Profil: [TDDUI Obervation Periode Scolaire](StructureDefinition-tddui-observation-periode-scolaire.md)
+Profil: [TDDUI Observation Periode Scolaire](StructureDefinition-tddui-observation-periode-scolaire.md)
 
 **identifier**: `https://identifiant-medicosocial-periodescolaire.esante.gouv.fr`/3480787529/147720425367411-PSCO-12548
 
@@ -31,76 +31,58 @@ Profil: [TDDUI Obervation Periode Scolaire](StructureDefinition-tddui-observatio
   "resourceType" : "Observation",
   "id" : "tddui-observation-periodescolaire-example",
   "meta" : {
-    "profile" : [
-      "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-periode-scolaire"
-    ]
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-periode-scolaire"]
   },
-  "identifier" : [
-    {
-      "system" : "https://identifiant-medicosocial-periodescolaire.esante.gouv.fr",
-      "value" : "3480787529/147720425367411-PSCO-12548"
-    }
-  ],
+  "identifier" : [{
+    "system" : "https://identifiant-medicosocial-periodescolaire.esante.gouv.fr",
+    "value" : "3480787529/147720425367411-PSCO-12548"
+  }],
   "status" : "registered",
   "code" : {
-    "coding" : [
-      {
-        "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-type",
-        "code" : "PERIODESCOL",
-        "display" : "Période scolaire"
-      }
-    ]
+    "coding" : [{
+      "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-type",
+      "code" : "PERIODESCOL",
+      "display" : "Période scolaire"
+    }]
   },
   "subject" : {
     "reference" : "Patient/tddui-patient-ins-example"
   },
-  "performer" : [
-    {
-      "reference" : "RelatedPerson/tddui-related-person-contact-example"
-    }
-  ],
-  "component" : [
-    {
-      "code" : {
-        "coding" : [
-          {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-periode-scolaire",
-            "code" : "typeEnseignementSpecialise",
-            "display" : "Type enseignement spécialisé"
-          }
-        ]
-      },
-      "valueCodeableConcept" : {
-        "coding" : [
-          {
-            "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r408-type-enseignement-specialise",
-            "code" : "3",
-            "display" : "Scolarisation en ULIS collège"
-          }
-        ]
-      }
+  "performer" : [{
+    "reference" : "RelatedPerson/tddui-related-person-contact-example"
+  }],
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-periode-scolaire",
+        "code" : "typeEnseignementSpecialise",
+        "display" : "Type enseignement spécialisé"
+      }]
     },
-    {
-      "code" : {
-        "coding" : [
-          {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-periode-scolaire",
-            "code" : "diplome",
-            "display" : "Diplôme"
-          }
-        ]
-      },
-      "valueCodeableConcept" : {
-        "coding" : [
-          {
-            "system" : "https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome",
-            "code" : "DES",
-            "display" : "Diplôme d'études spécialisées"
-          }
-        ]
-      }
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r408-type-enseignement-specialise",
+        "code" : "3",
+        "display" : "Scolarisation en ULIS collège"
+      }]
     }
-  ]
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-periode-scolaire",
+        "code" : "diplome",
+        "display" : "Diplôme"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome",
+        "code" : "DES",
+        "display" : "Diplôme d'études spécialisées"
+      }]
+    }
+  }]
 }
 
 ```

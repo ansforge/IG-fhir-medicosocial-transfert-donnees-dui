@@ -33,53 +33,41 @@ Profil: [TDDUI Task Action](StructureDefinition-tddui-task-action.md)
   "resourceType" : "Task",
   "id" : "tddui-pp-pa-task-action-2-ide-example",
   "meta" : {
-    "profile" : [
-      "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"
-    ]
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"]
   },
-  "identifier" : [
-    {
-      "system" : "https://identifiant-medicosocial-action.esante.gouv.fr",
-      "value" : "3480787529/123456789-ACTI-12342"
-    }
-  ],
-  "basedOn" : [
-    {
-      "reference" : "CarePlan/tddui-pp-ime-careplan-example"
-    }
-  ],
+  "identifier" : [{
+    "system" : "https://identifiant-medicosocial-action.esante.gouv.fr",
+    "value" : "3480787529/123456789-ACTI-12342"
+  }],
+  "basedOn" : [{
+    "reference" : "CarePlan/tddui-pp-ime-careplan-example"
+  }],
   "status" : "in-progress",
   "intent" : "plan",
   "description" : "Pesée mensuelle et dépistage dénutrition",
   "owner" : {
     "reference" : "Practitioner/tddui-pp-pa-practitioner-ide-example"
   },
-  "input" : [
-    {
-      "type" : {
-        "coding" : [
-          {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action",
-            "code" : "titre"
-          }
-        ]
-      },
-      "valueString" : "Action de l'IDE pour atteindre l'objectif 2"
+  "input" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action",
+        "code" : "titre"
+      }]
     },
-    {
-      "type" : {
-        "coding" : [
-          {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action",
-            "code" : "objectif"
-          }
-        ]
-      },
-      "valueReference" : {
-        "reference" : "Goal/tddui-pp-pa-goal-objectif-2-example"
-      }
+    "valueString" : "Action de l'IDE pour atteindre l'objectif 2"
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action",
+        "code" : "objectif"
+      }]
+    },
+    "valueReference" : {
+      "reference" : "Goal/tddui-pp-pa-goal-objectif-2-example"
     }
-  ]
+  }]
 }
 
 ```

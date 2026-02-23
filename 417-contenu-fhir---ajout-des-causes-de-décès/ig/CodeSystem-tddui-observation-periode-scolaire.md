@@ -9,10 +9,10 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-periode-scolaire | *Version*:2.2.0-ballot |
-| Active as of 2026-02-16 | *Computable Name*:TDDUIObservationPeriodeScolaire |
+| Active as of 2026-02-23 | *Computable Name*:TDDUIObservationPeriodeScolaire |
 
  
-CodeSystem for the Observation school period 
+CodeSystem pour l'Observation de la Période Scolaire. 
 
  Cette terminologie de référence (CodeSystem) est référencé dans la définition de contenu des jeux de valeurs (ValueSet) suivants : 
 
@@ -27,9 +27,7 @@ CodeSystem for the Observation school period
   "resourceType" : "CodeSystem",
   "id" : "tddui-observation-periode-scolaire",
   "meta" : {
-    "profile" : [
-      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
-    ]
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem"]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-periode-scolaire",
   "version" : "2.2.0-ballot",
@@ -37,48 +35,38 @@ CodeSystem for the Observation school period
   "title" : "TDDUI Observation Periode Scolaire",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-16T14:58:48+00:00",
+  "date" : "2026-02-23T15:44:46+00:00",
   "publisher" : "ANS",
-  "contact" : [
-    {
-      "name" : "ANS",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://esante.gouv.fr"
-        }
-      ]
-    }
-  ],
-  "description" : "CodeSystem for the Observation school period",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
-          "display" : "FRANCE"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "ANS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "CodeSystem pour l'Observation de la Période Scolaire.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
   "caseSensitive" : true,
   "content" : "complete",
   "count" : 3,
-  "concept" : [
-    {
-      "code" : "typeEnseignementSpecialise",
-      "display" : "Type enseignement spécialisé"
-    },
-    {
-      "code" : "diplome",
-      "display" : "Diplôme"
-    },
-    {
-      "code" : "volumeScolarisation",
-      "display" : "Volume de scolarisation"
-    }
-  ]
+  "concept" : [{
+    "code" : "typeEnseignementSpecialise",
+    "display" : "Type enseignement spécialisé"
+  },
+  {
+    "code" : "diplome",
+    "display" : "Diplôme"
+  },
+  {
+    "code" : "volumeScolarisation",
+    "display" : "Volume de scolarisation"
+  }]
 }
 
 ```

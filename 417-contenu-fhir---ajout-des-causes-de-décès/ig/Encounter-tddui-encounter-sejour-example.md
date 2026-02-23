@@ -37,43 +37,35 @@ Profil: [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md)
   "resourceType" : "Encounter",
   "id" : "tddui-encounter-sejour-example",
   "meta" : {
-    "profile" : [
-      "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour"
-    ]
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour"]
   },
-  "extension" : [
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-admission-date",
-      "valueDateTime" : "2023-04-11"
+  "extension" : [{
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-admission-date",
+    "valueDateTime" : "2023-04-11"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-mode-label",
+    "valueString" : "Date de début du suivi post-opératoire : 14/04/2023"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exit-mode-label",
+    "valueString" : "Sortie prévisionnelle prévue pour le 5 mai 2023"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedEndDate",
+    "valueDateTime" : "2023-05-05"
+  }],
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier",
+        "code" : "SEJ",
+        "display" : "Identifiant du séjour"
+      }]
     },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-mode-label",
-      "valueString" : "Date de début du suivi post-opératoire : 14/04/2023"
-    },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exit-mode-label",
-      "valueString" : "Sortie prévisionnelle prévue pour le 5 mai 2023"
-    },
-    {
-      "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedEndDate",
-      "valueDateTime" : "2023-05-05"
-    }
-  ],
-  "identifier" : [
-    {
-      "type" : {
-        "coding" : [
-          {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier",
-            "code" : "SEJ",
-            "display" : "Identifiant du séjour"
-          }
-        ]
-      },
-      "system" : "https://identifiant-medicosocial-sejour.esante.gouv.fr",
-      "value" : "3480787529/147720425367411-SEJOUR-1012"
-    }
-  ],
+    "system" : "https://identifiant-medicosocial-sejour.esante.gouv.fr",
+    "value" : "3480787529/147720425367411-SEJOUR-1012"
+  }],
   "status" : "in-progress",
   "class" : {
     "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",

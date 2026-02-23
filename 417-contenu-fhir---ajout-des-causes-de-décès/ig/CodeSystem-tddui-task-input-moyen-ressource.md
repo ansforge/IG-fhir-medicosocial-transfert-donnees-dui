@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-moyen-ressource | *Version*:2.2.0-ballot |
-| Active as of 2026-02-16 | *Computable Name*:TDDUITaskInputMoyenRessource |
+| Active as of 2026-02-23 | *Computable Name*:TDDUITaskInputMoyenRessource |
 
  
 CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les moyens et ressources du projet personnalisé. 
@@ -27,9 +27,7 @@ CodeSystem pour la définition des éléments spécifiques des input dans la res
   "resourceType" : "CodeSystem",
   "id" : "tddui-task-input-moyen-ressource",
   "meta" : {
-    "profile" : [
-      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
-    ]
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem"]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-moyen-ressource",
   "version" : "2.2.0-ballot",
@@ -37,49 +35,39 @@ CodeSystem pour la définition des éléments spécifiques des input dans la res
   "title" : "TDDUI Task Input Moyen Ressource",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-16T14:58:48+00:00",
+  "date" : "2026-02-23T15:44:46+00:00",
   "publisher" : "ANS",
-  "contact" : [
-    {
-      "name" : "ANS",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://esante.gouv.fr"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "ANS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
   "description" : "CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les moyens et ressources du projet personnalisé.",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
-          "display" : "FRANCE"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
   "caseSensitive" : true,
   "compositional" : false,
   "content" : "complete",
   "count" : 3,
-  "concept" : [
-    {
-      "code" : "titre",
-      "display" : "Titre du moyen ou de la ressource à utiliser."
-    },
-    {
-      "code" : "evaluation",
-      "display" : "Evaluation du moyen ou de la ressource."
-    },
-    {
-      "code" : "pieceJointe",
-      "display" : "Pièce jointe du moyen/ressource."
-    }
-  ]
+  "concept" : [{
+    "code" : "titre",
+    "display" : "Titre du moyen ou de la ressource à utiliser."
+  },
+  {
+    "code" : "evaluation",
+    "display" : "Evaluation du moyen ou de la ressource."
+  },
+  {
+    "code" : "pieceJointe",
+    "display" : "Pièce jointe du moyen/ressource."
+  }]
 }
 
 ```
