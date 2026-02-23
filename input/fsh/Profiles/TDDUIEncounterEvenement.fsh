@@ -19,7 +19,8 @@ Description: "Profil de la ressource Encounter permettant de regrouper les évè
 * status ^short = "Correspondance des statuts métier avec les codes FHIR : Planifié → planned, Validé → triaged, Réalisé → finished, Annulé → cancelled."
 
 * status.extension contains 
-    TDDUIEventCancelReason named TDDUIEventCancelReason 0..1
+    TDDUIEventCancelReason named TDDUIEventCancelReason 0..1 and 
+    TDDUIStatusAuthor named TDDUIStatusAuthor 0..1
 
 * type from TDDUIEncounterType (required)
 
@@ -60,24 +61,22 @@ Description: "Profil de la ressource Encounter permettant de regrouper les évè
 * subject only Reference(TDDUIPatient or TDDUIPatientINS or Group)
 
 // ESSMS
+* serviceProvider.extension contains TDDUIParticipantPresent named TDDUIStructurePresent 0..1
 * serviceProvider only Reference(TDDUIOrganization)
 
-* participant.type from TDDUIEncounterParticipant (required)
+* participant.type from $jdv-j387-role-participant-ms (required)
+
+* participant.extension contains TDDUIParticipantPresent named TDDUIParticipantPresent 0..1
 
 * participant ^slicing.discriminator.type = #pattern
 * participant ^slicing.discriminator.path = "type"
 * participant ^slicing.rules = #open
 
 * participant contains
-    auteurStatut 0..1 and
-    professionnel 0..*
+    mandataire 0..*
 
-* participant[auteurStatut].type 1..1
-* participant[auteurStatut].type = TDDUIEncounterParticipant#AUT "Auteur du statut de la ressource"
-* participant[auteurStatut] ^short = "Professionnel ayant effectué la dernière modification du statut associé à la ressource."
-
-* participant[professionnel].type 1..1
-* participant[professionnel].type = $ParticipationType#PART
+* participant[mandataire].type 1..1
+* participant[mandataire].type =  https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge#307 "MJPM"
 
 * participant.individual only Reference(TDDUIPractitioner or TDDUIPractitionerRole or RelatedPerson)
 
@@ -92,7 +91,8 @@ Description: "Profil de la ressource Encounter permettant de regrouper les évè
     TDDUIEventOutsideService named TDDUIEventOutsideService 0..1  and
     TDDUIEventReason named TDDUIEventReason 0..1  and
     TDDUIPatientPresent named TDDUIPatientPresent 0..1  and
-    TDDUIMeal named TDDUIMeal 0..1
+    TDDUIMeal named TDDUIMeal 0..1 and
+    TDDUIPatientValidation named TDDUIPatientValidation 0..1
 
 * extension[TDDUIRessourcesUsed] ^short = "Ressources utilisées lors de l’évènement."
 * obeys MatDetailOnlyIfTypeOrg206
@@ -120,8 +120,11 @@ Title:    "Modèle de contenu DUI"
 * identifier -> "idEvenement"
 * type -> "typeEvenement"
 * subject -> "Usager"
-* serviceProvider -> "structureEnCharge"
-* participant[professionnel] -> "Professionnel"
+* serviceProvider -> "Participant.structureEnCharge"
+* serviceProvider.extension[TDDUIStructurePresent] -> "Participant.presenceParticipant"
+* participant.type -> "Participant.roleParticipantEJ"
+* participant.extension[TDDUIParticipantPresent] -> "Participant.presenceParticipant"
+* participant[mandataire] -> "Participant.Professionnel"
 * location -> "lieuEvenement"
 * extension[TDDUIRessourcesUsed] -> "RessourceUtilisee"
 * extension[TDDUIRessourcesUsed].extension[TDDUIRessourceType] -> "typeRessourceUtilisee"
@@ -134,13 +137,14 @@ Title:    "Modèle de contenu DUI"
 * extension[TDDUIEventOutsideService] -> "evenementHorsPrestation"
 * extension[TDDUIEventReason] -> "motifEvenement"
 * extension[TDDUIPatientPresent] -> "usagerPresent"
+* extension[TDDUIPatientValidation] -> "validationUsager"
 * extension[TDDUIMeal] -> "repas"
 * partOf -> "sejour"
 * period.start -> "dateDebutEvenement"
 * period.end -> "dateFinEvenement"
 * meta.lastUpdated -> "dateModificationEvenement, Statut.dateStatut"
 * status -> "Statut.statut"
-* participant[auteurStatut] -> "Statut.auteur"
+* status.extension[TDDUIStatusAuthor] -> "Statut.auteur"
 * status.extension[tddui-event-cancel-reason] -> "Statut.motifNonRealisation"
 
 Invariant: MatDetailOnlyIfTypeOrg206
