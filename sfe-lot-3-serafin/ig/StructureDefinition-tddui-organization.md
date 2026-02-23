@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-organization.c
   "name" : "TDDUIOrganization",
   "title" : "TDDUI Organization",
   "status" : "active",
-  "date" : "2026-02-23T09:34:27+00:00",
+  "date" : "2026-02-23T15:50:03+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

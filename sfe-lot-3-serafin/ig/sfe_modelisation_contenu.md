@@ -283,7 +283,7 @@ Ensemble des dispositifs prévus par le Code de l'Action Sociale et des Familles
 * Nom: existencePAG : [1..1] Indicateur
   * Description: Indicateur de l'existence d'un Plan d’Accompagnement Global (PAG).1 = si la décision est associée à un PAG au statut "élaboré" ou "validé" ;0 = pour tous les autres cas (la décision n'est pas associée à un PAG ou est associée à un PAG ayant un statut différent de "élaboré" ou "validé").
 * Nom: motifFinPAG : [0..1] Code
-  * Description: Le motif est obligatoire si existencePAG passe de "1" à "0". Le motif n'est transmis que lorsque le statut du PAG passe à "Terminé".
+  * Description: Lorsque le plan d'accompagnement global (PAG) arrive à échéance ou si le coordonnateur de parcours l'estime nécessaire, un bilan est élaboré et la phase d'actualisation est lancée afin de déterminer s'il faut prolonger ce PAG, le modifier ou y mettre fin. La MDPH, les partenaires et l'usager peuvent définir ensemble que le PAG n'est plus nécessaire et donc y mettre fin. Le consentement de la personne ou de son représentant légal est recueilli et l'information sur la fin du PAG transmise à l'ensemble des parties-prenantes.Le motif est obligatoire si existencePAG passe de "1" à "0". Le fait de mettre fin au PAG n'a pas d'impact sur les droits en cours (même ceux ouverts dans le cadre du PAG). Ces droits demeurent valables jusqu'à leur date d'échéance.Jeu(x) de valeur(s) associé(s) : en cours d'analyse NOS
 * Nom: creton : [0..1] Indicateur
   * Description: Amendement Creton. Il s’agit d’un dispositif législatif permettant le maintien temporaire de jeunes adultes de plus de 20 ans en établissement pour enfants dans l’attente d’une place dans un établissement pour adultes.Obligatoire pour les décisions orientations ESSMS enfant, non prévu pour les autres orientations.0 = l'usager ne bénéficie pas de l'amendement Creton ;1 = l'usager bénéficie de l'amendement Creton.
 * Nom: taux : [0..1] Mesure
@@ -298,17 +298,29 @@ Ensemble des dispositifs prévus par le Code de l'Action Sociale et des Familles
 Détails de la prestation pour préciser l'orientation.
 
 * Nom: temporaliteAccueil : [0..1] Code
-  * Description: Fréquence d'accueil lors d'une prise en charge en ESSMS.La temporalité d’accueil est transmise pour tous les droits pour lesquels elle est obligatoire (pour les types de droit et prestation suivants):* Orientation ESMS Enfants
+  * Description: Fréquence d'accueil lors d'une prise en charge en ESSMS.La temporalité d’accueil est transmise pour tous les droits pour lesquels elle est obligatoire.Pour les catégories de droit et prestation suivantes :* Orientation ESMS Enfants
 * Orientation ESMS Adultes
-* Orientation en Unité d'enseignement
+Pour les types de droit et prestation suivants :* Orientation en Unité d'enseignement
 * Orientation vers une Scolarisation en milieu ordinaire à temps partagé (UE et établissement scolaire)
 * Orientation vers une Unité d'enseignement et une scolarisation en ULIS à temps partagé
 * Orientation vers une unité d’enseignement et une scolarisation en enseignement adapté à temps partagé
 Jeu(x) de valeur(s) associé(s) :[JDV_J30-TemporaliteAccueil-ROR](https://mos.esante.gouv.fr/NOS/JDV_J30-TemporaliteAccueil-ROR/FHIR/JDV-J30-TemporaliteAccueil-ROR)
 * Nom: precisionOrientation : [0..1] Code
-  * Description: Précision de l'orientation à renseigner en fonction du type de droit.Jeu(x) de valeur(s) associé(s) : en cours analyse NOS
+  * Description: Précision de l'orientation associée à un jeu de valeurs en fonction du type de droit.
+* Type droit prestation: 7.8 Orientation vers un Service d'éducation spéciale et de soins à domicile (SESSAD)
+  * Jeu de valeurs associé: en cours analyse NOS
+* Type droit prestation: 7.9 Orientation vers un Service d'accompagnement familial et d'éducation précoce (SAFEP)
+  * Jeu de valeurs associé: en cours analyse NOS
+* Type droit prestation: 13.1 Orientation vers un établissement d'accueil non médicalisé
+  * Jeu de valeurs associé: en cours analyse NOS
+* Type droit prestation: 13.2 Orientation vers un établissement d'accueil médicalisé en tout ou partie
+  * Jeu de valeurs associé: en cours analyse NOS
+* Type droit prestation: 8.6 Orientation en Unité d'enseignement
+  * Jeu de valeurs associé: en cours analyse NOS
+
+
 * Nom: precisionOrientationLocale : [0..1] Texte
-  * Description: Précision de l'orientation. Texte libre lorsqu'il n'existe pas de nomenclature harmonisée.
+  * Description: Précision de l'orientation. Texte libre lorsqu'il n'existe pas de nomenclature nationale pour le type de droit.
 * Nom: accueilSequentiel : [0..1] Indicateur
   * Description: Indique si l’unité accepte d’accueillir des personnes en situation de handicap de façon séquentielle, c'est à dire sur une partie de la semaine.0 = L'unité n'accepte pas l'accueil séquentiel1 = L'unité accepte l'accueil séquentiel
 * Nom: formation : [0..1] Texte

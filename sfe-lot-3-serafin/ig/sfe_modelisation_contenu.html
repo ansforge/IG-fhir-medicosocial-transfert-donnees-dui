@@ -873,7 +873,10 @@ Ce champ apparaît (et devient obligatoire) uniquement si le code "9999 - Autre"
   </tr>
   <tr>
     <td>motifFinPAG : [0..1] Code</td>
-    <td>Le motif est obligatoire si existencePAG passe de "1" à "0". Le motif n'est transmis que lorsque le statut du PAG passe à "Terminé".
+    <td>Lorsque le plan d'accompagnement global (PAG) arrive à échéance ou si le coordonnateur de parcours l'estime nécessaire, un bilan est élaboré et la phase d'actualisation est lancée afin de déterminer s'il faut prolonger ce PAG, le modifier ou y mettre fin. 
+La MDPH, les partenaires et l'usager peuvent définir ensemble que le PAG n'est plus nécessaire et donc y mettre  fin. Le consentement de la personne ou de son représentant légal est recueilli et l'information sur la fin du PAG transmise à l'ensemble des parties-prenantes.<br/>
+    Le motif est obligatoire si existencePAG passe de "1" à "0". Le fait de mettre fin au PAG n'a pas d'impact sur les droits en cours (même ceux ouverts dans le cadre du PAG). Ces droits demeurent valables jusqu'à leur date d'échéance. <br/>
+    Jeu(x) de valeur(s) associé(s) : en cours d'analyse NOS
     </td>
   </tr>
   <tr>
@@ -912,10 +915,14 @@ Ce champ apparaît (et devient obligatoire) uniquement si le code "9999 - Autre"
   <tr>
     <td>temporaliteAccueil : [0..1] Code</td>
     <td>Fréquence d'accueil lors d'une prise en charge en ESSMS.<br/>
-  La temporalité d’accueil est transmise pour tous les droits pour lesquels elle est obligatoire (pour les types de droit et prestation suivants):
+  La temporalité d’accueil est transmise pour tous les droits pour lesquels elle est obligatoire.<br/>
+  Pour les catégories de droit et prestation suivantes :
   <ul>
     <li>Orientation ESMS Enfants</li>
     <li>Orientation ESMS Adultes</li>
+    </ul><br/>
+Pour les types de droit et prestation suivants :
+<ul>
     <li>Orientation en Unité d'enseignement</li>
     <li>Orientation vers une Scolarisation en milieu ordinaire à temps partagé (UE et établissement scolaire)</li>
     <li>Orientation vers une Unité d'enseignement et une scolarisation en ULIS à temps partagé</li>
@@ -925,12 +932,39 @@ Ce champ apparaît (et devient obligatoire) uniquement si le code "9999 - Autre"
   </tr>
   <tr>
     <td>precisionOrientation : [0..1] Code</td>
-    <td>Précision de l'orientation à renseigner en fonction du type de droit.<br/>
-    Jeu(x) de valeur(s) associé(s) : en cours analyse NOS</td>
+    <td>Précision de l'orientation associée à un jeu de valeurs en fonction du type de droit.<br/>
+<table style="width:100%">
+  <tr>
+    <th>Type droit prestation</th>
+    <th>Jeu de valeurs associé</th>
+  </tr>
+  <tr>
+    <td>7.8 Orientation vers un Service d'éducation spéciale et de soins à domicile (SESSAD)</td>
+    <td>en cours analyse NOS</td>
+  </tr>
+  <tr>
+    <td>7.9 Orientation vers un Service d'accompagnement familial et d'éducation précoce (SAFEP)</td>
+    <td>en cours analyse NOS</td>
+  </tr>
+  <tr>
+    <td>13.1 Orientation vers un établissement d'accueil non médicalisé</td>
+    <td>en cours analyse NOS</td>
+  </tr>
+   <tr>
+    <td>13.2 Orientation vers un établissement d'accueil médicalisé en tout ou partie</td>
+    <td>en cours analyse NOS</td>
+  </tr>
+  <tr>
+    <td>8.6 Orientation en Unité d'enseignement</td>
+    <td>en cours analyse NOS</td>
+  </tr>
+  </table>
+
+   </td>
   </tr>
   <tr>
     <td>precisionOrientationLocale : [0..1] Texte</td>
-    <td>Précision de l'orientation. Texte libre lorsqu'il n'existe pas de nomenclature harmonisée.</td>
+    <td>Précision de l'orientation. Texte libre lorsqu'il n'existe pas de nomenclature nationale pour le type de droit.</td>
   </tr>
   <tr>
     <td>accueilSequentiel : [0..1] Indicateur</td>
@@ -2156,7 +2190,7 @@ Le détail de l’évaluation de ce champ peut être transmis à travers un deux
     Jeu(x) de valeur(s) associé(s) : en cours de création NOS</td>
  </tr>
  <tr>
-    <td><a name="l6247">​</a>referentScolaire : [0..*] <a href="#PersonnePhysique">PersonnePhysique</a></td>
+    <td><a name="l6314">​</a>referentScolaire : [0..*] <a href="#PersonnePhysique">PersonnePhysique</a></td>
     <td>Référent scolaire de l'usager pour cette année de scolarité.</td>
  </tr>
  <tr>
@@ -2724,7 +2758,7 @@ Le détail de l’évaluation de ce champ peut être transmis à travers un deux
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.2.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Feb 23, 2026 09:34+0000">2026-02-23</span>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.2.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Feb 23, 2026 15:50+0000">2026-02-23</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
