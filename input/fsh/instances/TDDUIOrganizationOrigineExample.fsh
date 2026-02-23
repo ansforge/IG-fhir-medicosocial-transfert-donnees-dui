@@ -1,5 +1,6 @@
 Instance: tddui-organization-origine-example
 InstanceOf: TDDUIOrganization
+Title: "TDDUI Organization Origine Example"
 Usage: #example
 Description: "ESSMS - Les Résidences du Lac"
 
