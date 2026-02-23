@@ -1,0 +1,32 @@
+{
+  "resourceType" : "Consent",
+  "id" : "tddui-pp-pa-consent-accord-example",
+  "meta" : {
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Consent tddui-pp-pa-consent-accord-example</b></p><a name=\"tddui-pp-pa-consent-accord-example\"> </a><a name=\"hctddui-pp-pa-consent-accord-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-consent-accord.html\">TDDUI Consent Accord</a></p></div><h2>Participants</h2><table class=\"grid\"><tr><td><b>Role</b></td><td><b>Details</b></td></tr><tr><td><title>Who is agreeing to the policy and rules</title>Party</td><td><a href=\"Practitioner-tddui-pp-pa-practitioner-ide-example.html\">Practitioner Élodie Bernard </a></td></tr></table><p>This consent is made under the policy .</p><p>The subject has given their consent.</p></div>"
+  },
+  "status" : "active",
+  "scope" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/consentscope",
+      "code" : "patient-privacy",
+      "display" : "Privacy Consent"
+    }]
+  },
+  "category" : [{
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "59284-0"
+    }]
+  }],
+  "dateTime" : "2024-01-15T09:00:00+01:00",
+  "performer" : [{
+    "reference" : "Practitioner/tddui-pp-pa-practitioner-ide-example"
+  }],
+  "policy" : [{
+    "authority" : "https://www.cnsa.fr/"
+  }]
+}
