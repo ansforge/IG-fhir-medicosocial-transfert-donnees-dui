@@ -138,7 +138,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2026-02-23T08:45:40+00:00",
+  "date" : "2026-02-23T08:50:29+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -829,7 +829,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "reference" : "StructureDefinition/tddui-assessment-method"
       },
       "name" : "TDDUI Assessment Method",
-      "description" : "Mode d'évaluation.",
+      "description" : "Mode d'évaluation, texte libre permettant de mettre le contexte de l'évaluation.",
       "exampleBoolean" : false
     },
     {

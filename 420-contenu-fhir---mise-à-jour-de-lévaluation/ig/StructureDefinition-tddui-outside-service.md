@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-outside-servic
   "name" : "TDDUIEventOutsideService",
   "title" : "TDDUI Event Outside Service",
   "status" : "active",
-  "date" : "2026-02-23T08:45:40+00:00",
+  "date" : "2026-02-23T08:50:29+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

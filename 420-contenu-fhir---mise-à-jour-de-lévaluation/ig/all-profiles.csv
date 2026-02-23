@@ -15,7 +15,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-assessment-method","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","TDDUI Assessment Method","Mode d'évaluation.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","TDDUI Assessment Method","Mode d'évaluation, texte libre permettant de mettre le contexte de l'évaluation.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "tddui-assessment-method","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -8060,7 +8060,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "tddui-questionnaire-response","QuestionnaireResponse.extension:TDDUIAssessmentMethod","QuestionnaireResponse.extension","TDDUIAssessmentMethod","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-assessment-method]]} {[]}
-","TDDUI Assessment Method","Mode d'évaluation.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","TDDUI Assessment Method","Mode d'évaluation, texte libre permettant de mettre le contexte de l'évaluation.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "tddui-questionnaire-response","QuestionnaireResponse.modifierExtension","QuestionnaireResponse.modifierExtension","","extensions
