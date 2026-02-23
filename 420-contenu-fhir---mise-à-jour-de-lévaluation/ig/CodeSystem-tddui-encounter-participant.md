@@ -35,7 +35,7 @@ CodeSystem définissant les types de participants dans le profil TDDUIEncounterE
   "title" : "TDDUI Encounter Participant",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-23T08:50:29+00:00",
+  "date" : "2026-02-23T15:48:00+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

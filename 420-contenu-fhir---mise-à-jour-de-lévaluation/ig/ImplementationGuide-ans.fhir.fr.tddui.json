@@ -10,7 +10,7 @@
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2026-02-23T08:50:29+00:00",
+  "date" : "2026-02-23T15:48:00+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -2227,78 +2227,6 @@
       "name" : "TDDUI-Producteur",
       "description" : "Le rôle de Producteur est de transmettre des données de son logiciel DUI. Il correspond à un logiciel DUI.",
       "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "QuestionnaireResponse"
-      }],
-      "reference" : {
-        "reference" : "QuestionnaireResponse/test-invariant-3-pro-eval-valid"
-      },
-      "name" : "Test invariant 3 professionnels - OK",
-      "description" : "Exemple d'évaluation avec les trois rôles professionnels renseignés",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "QuestionnaireResponse"
-      }],
-      "reference" : {
-        "reference" : "QuestionnaireResponse/test-invariant-auteur-ok"
-      },
-      "name" : "Test invariant auteur - OK",
-      "description" : "Exemple d'évaluation avec auteur renseigné",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "QuestionnaireResponse"
-      }],
-      "reference" : {
-        "reference" : "QuestionnaireResponse/test-invariant-porteur-non"
-      },
-      "name" : "Test invariant porteur - KO",
-      "description" : "Exemple INVALIDE : auto-évaluation sans porteur",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "QuestionnaireResponse"
-      }],
-      "reference" : {
-        "reference" : "QuestionnaireResponse/test-invariant-professionnel-non"
-      },
-      "name" : "Test invariant Professionnel Non - KO",
-      "description" : "Exemple INVALIDE : ni source Practitioner, ni author, ni participant",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "QuestionnaireResponse"
-      }],
-      "reference" : {
-        "reference" : "QuestionnaireResponse/test-invariant-responsable-ok"
-      },
-      "name" : "Test invariant responsable - OK",
-      "description" : "Exemple d'évaluation avec responsable dans les participants",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "QuestionnaireResponse"
-      }],
-      "reference" : {
-        "reference" : "QuestionnaireResponse/test-invariant-evaluateur-ok"
-      },
-      "name" : "Test invariant évaluateur - OK",
-      "description" : "Exemple d'évaluation par un professionnel (source = Practitioner)",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
     },
     {
       "extension" : [{
