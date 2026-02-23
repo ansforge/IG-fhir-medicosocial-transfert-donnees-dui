@@ -643,7 +643,10 @@ Ensemble des dispositifs prévus par le Code de l'Action Sociale et des Familles
   </tr>
   <tr>
     <td>motifFinPAG : [0..1] Code</td>
-    <td>Le motif est obligatoire si existencePAG passe de "1" à "0". Le motif n'est transmis que lorsque le statut du PAG passe à "Terminé".
+    <td>Lorsque le plan d'accompagnement global (PAG) arrive à échéance ou si le coordonnateur de parcours l'estime nécessaire, un bilan est élaboré et la phase d'actualisation est lancée afin de déterminer s'il faut prolonger ce PAG, le modifier ou y mettre fin. 
+La MDPH, les partenaires et l'usager peuvent définir ensemble que le PAG n'est plus nécessaire et donc y mettre  fin. Le consentement de la personne ou de son représentant légal est recueilli et l'information sur la fin du PAG transmise à l'ensemble des parties-prenantes.<br>
+    Le motif est obligatoire si existencePAG passe de "1" à "0". Le fait de mettre fin au PAG n'a pas d'impact sur les droits en cours (même ceux ouverts dans le cadre du PAG). Ces droits demeurent valables jusqu'à leur date d'échéance. <br>
+    Jeu(x) de valeur(s) associé(s) : en cours d'analyse NOS
     </td>
   </tr>
   <tr>
@@ -699,12 +702,39 @@ Pour les types de droit et prestation suivants :
   </tr>
   <tr>
     <td>precisionOrientation : [0..1] Code</td>
-    <td>Précision de l'orientation à renseigner en fonction du type de droit.<br>
-    Jeu(x) de valeur(s) associé(s) : en cours analyse NOS</td>
+    <td>Précision de l'orientation associée à un jeu de valeurs en fonction du type de droit.<br>
+<table style="width:100%">
+  <tr>
+    <th>Type droit prestation</th>
+    <th>Jeu de valeurs associé</th>
+  </tr>
+  <tr>
+    <td>7.8 Orientation vers un Service d'éducation spéciale et de soins à domicile (SESSAD)</td>
+    <td>en cours analyse NOS</td>
+  </tr>
+  <tr>
+    <td>7.9 Orientation vers un Service d'accompagnement familial et d'éducation précoce (SAFEP)</td>
+    <td>en cours analyse NOS</td>
+  </tr>
+  <tr>
+    <td>13.1 Orientation vers un établissement d'accueil non médicalisé</td>
+    <td>en cours analyse NOS</td>
+  </tr>
+   <tr>
+    <td>13.2 Orientation vers un établissement d'accueil médicalisé en tout ou partie</td>
+    <td>en cours analyse NOS</td>
+  </tr>
+  <tr>
+    <td>8.6 Orientation en Unité d'enseignement</td>
+    <td>en cours analyse NOS</td>
+  </tr>
+  </table>
+
+   </td>
   </tr>
   <tr>
     <td>precisionOrientationLocale : [0..1] Texte</td>
-    <td>Précision de l'orientation. Texte libre lorsqu'il n'existe pas de nomenclature harmonisée.</td>
+    <td>Précision de l'orientation. Texte libre lorsqu'il n'existe pas de nomenclature nationale pour le type de droit.</td>
   </tr>
   <tr>
     <td>accueilSequentiel : [0..1] Indicateur</td>
