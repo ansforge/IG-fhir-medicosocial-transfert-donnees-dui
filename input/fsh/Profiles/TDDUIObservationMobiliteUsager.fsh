@@ -1,7 +1,7 @@
 Profile: TDDUIObservationMobiliteUsager
 Parent: Observation
 Id: tddui-observation-mobilite-usager
-Title: "TDDUI Obervation Mobilite Usager"
+Title: "TDDUI Observation Mobilite Usager"
 Description: "Profil de la ressource Observation permettant de représenter la mobilité de l'usager."
 
 * subject 1..1
@@ -28,3 +28,4 @@ Title:    "Modèle de contenu DUI"
 * -> "MobiliteUsager"
 * valueCodeableConcept -> "type"
 * component.valueString -> "observationAmenagement"
+* subject.reference -> "Usager"

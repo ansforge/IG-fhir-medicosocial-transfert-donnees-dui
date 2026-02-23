@@ -1,7 +1,7 @@
 CodeSystem: TDDUIObservationType
 Id: tddui-observation-type
 Title: "TDDUI Observation Type"
-Description: "CodeSystem for the Observation types"
+Description: "CodeSystem pour la défintion des types d'Observation"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
 
 * ^caseSensitive = true

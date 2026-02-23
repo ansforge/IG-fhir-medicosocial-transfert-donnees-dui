@@ -1,7 +1,7 @@
 Profile: TDDUIObservationPeriodeScolaire
 Parent: Observation
 Id: tddui-observation-periode-scolaire
-Title: "TDDUI Obervation Periode Scolaire"
+Title: "TDDUI Observation Periode Scolaire"
 Description: "Profil de la ressource Observation permettant de représenter la période scolaire de l'usager."
 
 * identifier 1..1
@@ -44,6 +44,7 @@ Description: "Profil de la ressource Observation permettant de représenter la p
     volumeScolarisation 0..1
 
 * component[typeEnseignementSpecialise].code = TDDUIObservationPeriodeScolaire#typeEnseignementSpecialise "Type enseignement spécialisé"
+* component[typeEnseignementSpecialise].valueCodeableConcept 1..1
 * component[typeEnseignementSpecialise].valueCodeableConcept from $JDV-J386-Type-Enseignement-Specialise-MS (required)
 
 * component[diplome].code = TDDUIObservationPeriodeScolaire#diplome "Diplôme"
@@ -70,3 +71,4 @@ Title:    "Modèle de contenu DUI"
 * component[diplome] -> "diplome"
 * component[volumeScolarisation] -> "volumeScolarisation"
 * note -> "commentaireAnneeScolaire"
+* subject -> "Usager"

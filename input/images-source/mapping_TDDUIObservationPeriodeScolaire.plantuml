@@ -4,6 +4,10 @@ object "**TDDUIOrganization**" as TDDUIOrganization #d9d9d9 {
     Ecole
 }
 
+object "**TDDUIPatient/TDDUIPatientINS**" as TDDUIPatient #fdb462 {
+    Usager
+}
+
 object "**TDDUIRelatedPersonContact**" as TDDUIRelatedPersonContact #bebada {
     ReferentScolaire
 }
@@ -24,6 +28,7 @@ map "**PeriodeScolaire : TDDUIObservationPeriodeScolaire**" as PeriodeScolaire #
 
 PeriodeScolaire -u-> TDDUIOrganization : performer
 PeriodeScolaire -u-> TDDUIRelatedPersonContact : performer
+PeriodeScolaire --> TDDUIPatient : subject
 
 
 @enduml

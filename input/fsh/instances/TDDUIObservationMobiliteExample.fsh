@@ -1,6 +1,6 @@
 Instance: tddui-observation-mobilite-usager-example
 InstanceOf: TDDUIObservationMobiliteUsager
-Title: "TDDUI Obsrvation Mobilite Usager Example"
+Title: "TDDUI Observation Mobilite Usager Example"
 Description: "Exemple de la ressource TDDUIObservationMobiliteUsager"
 Usage: #example
 

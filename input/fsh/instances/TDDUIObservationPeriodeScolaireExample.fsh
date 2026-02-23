@@ -1,6 +1,6 @@
 Instance: tddui-observation-periodescolaire-example
 InstanceOf: TDDUIObservationPeriodeScolaire
-Title: "TDDUI Obsrvation PeriodeScolaire Example"
+Title: "TDDUI Observation PeriodeScolaire Example"
 Description: "Exemple de la ressource TDDUIObservationPeriodeScolaire"
 Usage: #example
 
