@@ -26,21 +26,13 @@ map "**UsagerINS : TDDUIPatientINS**" as UsagerINS #back:MintCream;header:LightS
     <&layers> name:officialName *-> nameofficialName
 }
 
-map "component" as component #DarkGray {
-    causeMortalite => <&layers> value[x]:valueCodeableConcept
-}
-
 map "**CauseMortalite : TDDUIObservationCauseMortalite**" as CauseMortalite #fb8072 {
-    component *-> component
-}
-
-map "component" as componentMobilite #DarkGray {
-    observationAmenagement => value[x]
+    causeMortalite => <&layers> value[x]:valueCodeableConcept
 }
 
 map "**MobiliteUsager : TDDUIObservationMobiliteUsager**" as MobiliteUsager #fb8072 {
     type => value[x]
-    component *-> componentMobilite
+    observationAmenagement => value[x]
 }
 
 UsagerINS -u-> CauseMortalite
