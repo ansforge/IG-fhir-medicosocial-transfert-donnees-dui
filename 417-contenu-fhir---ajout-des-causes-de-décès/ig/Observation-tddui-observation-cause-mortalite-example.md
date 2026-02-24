@@ -10,7 +10,7 @@ Profil: [TDDUI Observation Cause Mortalite](StructureDefinition-tddui-observatio
 
 **status**: Registered
 
-**code**: Causes du décès
+**code**: Cause of death
 
 **subject**: [DUPONT Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/194704032)](Patient-tddui-patient-ins-example.md)
 
@@ -19,7 +19,7 @@ Profil: [TDDUI Observation Cause Mortalite](StructureDefinition-tddui-observatio
 | | | |
 | :--- | :--- | :--- |
 | - | **Code** | **Value[x]** |
-| * | Causes du décès | Œdème pulmonaire |
+| * | Cause of death | Œdème pulmonaire |
 
 
 
@@ -37,7 +37,7 @@ Profil: [TDDUI Observation Cause Mortalite](StructureDefinition-tddui-observatio
     "coding" : [{
       "system" : "http://loinc.org",
       "code" : "79378-6",
-      "display" : "Causes du décès"
+      "display" : "Cause of death"
     }]
   },
   "subject" : {
@@ -48,7 +48,7 @@ Profil: [TDDUI Observation Cause Mortalite](StructureDefinition-tddui-observatio
       "coding" : [{
         "system" : "http://loinc.org",
         "code" : "79378-6",
-        "display" : "Causes du décès"
+        "display" : "Cause of death"
       }]
     },
     "valueCodeableConcept" : {
