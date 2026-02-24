@@ -1,4 +1,4 @@
-# TDDUI Patient Present - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Patient Present - Médicosocial - Transfert de données DUI v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-present | *Version*:2.2.0-ballot |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-present | *Version*:2.2.0 |
 | Active as of 2026-02-24 | *Computable Name*:TDDUIPatientPresent |
 
 Evènement nécessitant ou non la présence physique de l’usager.
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient-presen
   "resourceType" : "StructureDefinition",
   "id" : "tddui-patient-present",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-present",
-  "version" : "2.2.0-ballot",
+  "version" : "2.2.0",
   "name" : "TDDUIPatientPresent",
   "title" : "TDDUI Patient Present",
   "status" : "active",
-  "date" : "2026-02-24T10:21:42+00:00",
+  "date" : "2026-02-24T16:53:25+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

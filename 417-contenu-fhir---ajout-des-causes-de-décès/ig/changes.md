@@ -1,9 +1,18 @@
-# Historique des changements - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# Historique des changements - Médicosocial - Transfert de données DUI v2.2.0
 
 * [**Table of Contents**](toc.md)
 * **Historique des changements**
 
 ## Historique des changements
+
+### Release 2.2.0 de l'Implementation Guide du volet "Transfert de dossier DUI"
+
+Modifications apportées dans cette release [2.2.0](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pulls?q=is%3Apr+is%3Aclosed+milestone%3A2.2.0) :
+
+* [ANS-006-168 - Paramètre pin-all](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/427)
+* [ANS-006-168 - Mise en place des bonnes pratiques (SD, CS, VS)](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/425)
+* [ANS-006-168 - Contact](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/424)
+* [SFE Modelisation Contact Personne Physique Morale](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/410)
 
 ### Release 2.2.0-ballot de l'Implementation Guide du volet "Transfert de dossier DUI"
 

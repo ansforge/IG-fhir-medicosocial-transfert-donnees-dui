@@ -1,4 +1,4 @@
-# TDDUI Observation Periode Scolaire - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Observation Periode Scolaire - Médicosocial - Transfert de données DUI v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-observation-periode-scolaire | *Version*:2.2.0-ballot |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-observation-periode-scolaire | *Version*:2.2.0 |
 | Active as of 2026-02-24 | *Computable Name*:TDDUIObservationPeriodeScolaire |
 
  
@@ -49,12 +49,12 @@ ValueSet pour l'Observation de la Période Scolaire.
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-observation-periode-scolaire",
-  "version" : "2.2.0-ballot",
+  "version" : "2.2.0",
   "name" : "TDDUIObservationPeriodeScolaire",
   "title" : "TDDUI Observation Periode Scolaire",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-24T10:21:42+00:00",
+  "date" : "2026-02-24T16:53:25+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

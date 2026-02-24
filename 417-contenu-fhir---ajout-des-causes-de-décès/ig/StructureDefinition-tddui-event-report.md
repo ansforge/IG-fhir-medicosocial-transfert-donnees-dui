@@ -1,4 +1,4 @@
-# TDDUI Event Report - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Event Report - Médicosocial - Transfert de données DUI v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-report | *Version*:2.2.0-ballot |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-report | *Version*:2.2.0 |
 | Active as of 2026-02-24 | *Computable Name*:TDDUIEventReport |
 
 Zone de texte liée à l’événement pour compte rendu des actions réalisées.
@@ -43,11 +43,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-event-report.c
   "resourceType" : "StructureDefinition",
   "id" : "tddui-event-report",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-report",
-  "version" : "2.2.0-ballot",
+  "version" : "2.2.0",
   "name" : "TDDUIEventReport",
   "title" : "TDDUI Event Report",
   "status" : "active",
-  "date" : "2026-02-24T10:21:42+00:00",
+  "date" : "2026-02-24T16:53:25+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

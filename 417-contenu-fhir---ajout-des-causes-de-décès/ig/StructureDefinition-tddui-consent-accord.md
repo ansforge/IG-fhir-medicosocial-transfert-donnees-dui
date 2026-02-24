@@ -1,4 +1,4 @@
-# TDDUI Consent Accord - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Consent Accord - Médicosocial - Transfert de données DUI v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord | *Version*:2.2.0-ballot |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord | *Version*:2.2.0 |
 | Active as of 2026-02-24 | *Computable Name*:TDDUIConsentAccord |
 
  
@@ -40,11 +40,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-consent-accord
   "resourceType" : "StructureDefinition",
   "id" : "tddui-consent-accord",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord",
-  "version" : "2.2.0-ballot",
+  "version" : "2.2.0",
   "name" : "TDDUIConsentAccord",
   "title" : "TDDUI Consent Accord",
   "status" : "active",
-  "date" : "2026-02-24T10:21:42+00:00",
+  "date" : "2026-02-24T16:53:25+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
