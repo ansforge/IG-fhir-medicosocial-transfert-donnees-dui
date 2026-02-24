@@ -8,12 +8,12 @@ Description: "Profil de la ressource Observation permettant de représenter les 
 * subject only Reference(TDDUIPatient or TDDUIPatientINS)
 
 * code from TDDUIObservationType (required)
-* code = $loinc#79378-6 "Causes du décès"
+* code = $loinc#79378-6 "Cause of death"
 
 * component 1..*
 
 * component.code from TDDUIObservationType (required)
-* component.code = $loinc#79378-6 "Causes du décès"
+* component.code = $loinc#79378-6 "Cause of death"
 * component.code.coding 1..1
 
 * component.valueCodeableConcept 1..1
