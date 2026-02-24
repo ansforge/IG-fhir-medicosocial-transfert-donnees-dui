@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-date-origin | *Version*:2.2.0-ballot |
-| Active as of 2026-02-23 | *Computable Name*:TDDUIEntryDateOrigin |
+| Active as of 2026-02-24 | *Computable Name*:TDDUIEntryDateOrigin |
 
 Extension permettant de véhiculer la date d'entrée dans l'ESSMS de provenance.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-entry-date-ori
   "name" : "TDDUIEntryDateOrigin",
   "title" : "TDDUI Entry Date Origin",
   "status" : "active",
-  "date" : "2026-02-23T14:19:51+00:00",
+  "date" : "2026-02-24T10:04:30+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -60,7 +60,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-entry-date-ori
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France"
     }]
   }],
   "fhirVersion" : "4.0.1",

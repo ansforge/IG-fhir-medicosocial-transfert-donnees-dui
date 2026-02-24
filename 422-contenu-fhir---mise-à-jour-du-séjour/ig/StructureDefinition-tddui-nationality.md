@@ -9,7 +9,7 @@
 | | | |
 | :--- | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-nationality | *Version*:2.2.0-ballot | |
-| Active as of 2026-02-23 | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:TDDUINationalityExtension |
+| Active as of 2026-02-24 | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:TDDUINationalityExtension |
 
 The nationality of the patient or a related person.
 
@@ -56,7 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-nationality.cs
   "name" : "TDDUINationalityExtension",
   "title" : "TDDUI Nationality Extension",
   "status" : "active",
-  "date" : "2026-02-23T14:19:51+00:00",
+  "date" : "2026-02-24T10:04:30+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -70,7 +70,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-nationality.cs
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France"
     }]
   }],
   "fhirVersion" : "4.0.1",
