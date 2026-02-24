@@ -1,8 +1,11 @@
 @startuml
 
-map "period" as period #DarkGray {
-    dateObtention => start
-    dateValidite => end
+
+
+map "PermisConduire : <&layers> identifier:driverLicense" as PermisConduire #DarkGray {
+    numPermisConduire => value
+    dateObtention => period.start
+    dateValidite => period.end
 }
 
 map "line" as line #DarkGray {
@@ -10,11 +13,6 @@ map "line" as line #DarkGray {
     numeroVoie => <&plus> houseNumber
     mentionDistribution => <&plus> postBox
     complementPointGeographique => <&plus> streetNameBase
-}
-
-map "PermisConduire : <&layers> identifier:driverLicense" as PermisConduire #DarkGray {
-    numPermisConduire => value
-    period *--> period
 }
 
 map "<&layers> name:usualName" as nameusualName #DarkGray {
@@ -35,45 +33,40 @@ map "Telecommunication : telecom" as Telecommunication #DarkGray {
 }
 
 map "Adresse : address" as Adresse #DarkGray {
-    idAdresse => id
     commentaire => <&plus> TDDUIComment
     type => type
-    line *--> line
+    line *-> line
     localite => state
     codePostal => postalCode
     pays => country
 }
 
-map "communication" as communication #DarkGray {
-    langueParlee => language
-}
-
-map "**UsagerINS : TDDUIPatientINS**" as UsagerINS #80b1d3 {
+map "**UsagerINS : TDDUIPatientINS**" as Usager #80b1d3 {
     paysNationalite => <&plus> nationality
-    paysDeces => <&plus> deathPlace
-    departementNaissance => <&plus> birthPlace
+    communeDeces/departementDeces/paysDeces => <&plus> deathPlace
+    communeNaissance/departementNaissance/paysNaissance => <&plus> birthPlace
     situationFamiliale => <&plus> TDDUIHouseholdSituation.extension:familySituation
     compositionFoyer => <&plus> TDDUIHouseholdSituation.extension:householdComposition
     descriptionCompositionFoyer => <&plus> TDDUIHouseholdSituation.extension:householdCompositionDescription
     commentaire => <&plus> TDDUIComment
+    matriculeINS => <&plus> identifier:INS-NIA/INS-NIR
     numSecuriteSociale => <&layers> identifier:NSS
-    identifiantLocalUsagerESSMS => <&layers> identifier:PI
-    matriculeINS => <&layers> identifier:INS-NIA/INS-NIR
+    identifiantUsagerESSMS => <&layers> identifier:PI
     numeroIndividuInitial => <&layers> identifier:InitialNumberMDPH
     sexe => gender
     dateNaissance => birthDate
     dateDeces => <&layers> deceased[x]:deceasedDateTime
     photo => photo
     PermisConduire => <&layers> identifier:driverLicense
-    <&layers> name:usualName *--> nameusualName
-    <&layers> name:officialName *--> nameofficialName
+    <&layers> name:usualName *-> nameusualName
+    <&layers> name:officialName *-> nameofficialName
     Telecommunication => telecom
     Adresse => address
-    communication *-> communication
+    langueParlee => communication.language
 }
 
-UsagerINS::PermisConduire -u-> PermisConduire
-UsagerINS::Telecommunication -d-> Telecommunication
-UsagerINS::Adresse -u-> Adresse
+Usager::PermisConduire -l-> PermisConduire
+Usager::Telecommunication -d-> Telecommunication
+Usager::Adresse -d-> Adresse
 
 @enduml

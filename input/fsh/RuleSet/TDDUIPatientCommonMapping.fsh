@@ -1,7 +1,7 @@
 RuleSet: TDDUIPatientCommonMapping
 
 * identifier[NSS] -> "numSecuriteSociale"
-* identifier[PI] -> "identifiantLocalUsagerESSMS"
+* identifier[PI] -> "identifiantUsagerESSMS"
 * identifier[InitialNumberMDPH] -> "numeroIndividuInitial"
 * identifier[driverLicense] -> "PermisConduire"
 * identifier[driverLicense].value -> "numPermisConduire"
@@ -21,7 +21,6 @@ RuleSet: TDDUIPatientCommonMapping
 * telecom.system -> "canal"
 * telecom.value -> "adressTelecom"
 * address -> "Adresse"
-* address.id -> "idAdresse"
 * address.type -> "type"
 * address.line.extension[houseNumber] -> "numeroVoie"
 * address.line.extension[streetNameBase] -> "complementPointGeographique"
@@ -32,9 +31,7 @@ RuleSet: TDDUIPatientCommonMapping
 * address.country -> "pays"
 * address.extension[TDDUIComment] -> "commentaire"
 * deceasedDateTime -> "dateDeces"
-* extension[deathPlace] -> "communeDeces"
-* extension[deathPlace] -> "departementDeces" 
-* extension[deathPlace] -> "paysDeces"
+* extension[deathPlace] -> "communeDeces/departementDeces/paysDeces"
 * extension[birthPlace] -> "communeNaissance"
 * extension[birthPlace] -> "paysNaissance"
 * extension[birthPlace] -> "departementNaissance"
