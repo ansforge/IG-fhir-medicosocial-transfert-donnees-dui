@@ -44,3 +44,4 @@ Usage: #example
 * extension[TDDUIComment].valueString = "Cet évènement a débuté plus tard l’usager était sous la douche à l’heure du début du rendez-vous."
 * extension[TDDUIEventLabel].valueString = "Visite à domicile pour soins infirmier."
 * extension[TDDUIEventReason].valueString = "Suivi post-opératoire suite à intervention chirurgicale de la hanche."
+* extension[TDDUIPatientValidation].valueBoolean = true
