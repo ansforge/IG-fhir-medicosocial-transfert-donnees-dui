@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-bilan | *Version*:2.2.0 |
-| Active as of 2026-02-18 | *Computable Name*:TDDUITaskInputBilan |
+| Active as of 2026-02-24 | *Computable Name*:TDDUITaskInputBilan |
 
  
 CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour le bilan du projet personnalisé. 
@@ -27,9 +27,7 @@ CodeSystem pour la définition des éléments spécifiques des input dans la res
   "resourceType" : "CodeSystem",
   "id" : "tddui-task-input-bilan",
   "meta" : {
-    "profile" : [
-      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
-    ]
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem"]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-bilan",
   "version" : "2.2.0",
@@ -37,61 +35,51 @@ CodeSystem pour la définition des éléments spécifiques des input dans la res
   "title" : "TDDUI Task Input Bilan",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-18T10:14:45+00:00",
+  "date" : "2026-02-24T10:54:30+00:00",
   "publisher" : "ANS",
-  "contact" : [
-    {
-      "name" : "ANS",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://esante.gouv.fr"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "ANS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
   "description" : "CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour le bilan du projet personnalisé.",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
-          "display" : "FRANCE"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
   "caseSensitive" : true,
   "compositional" : false,
   "content" : "complete",
   "count" : 6,
-  "concept" : [
-    {
-      "code" : "perimetre",
-      "display" : "Périmètre du bilan."
-    },
-    {
-      "code" : "problematique",
-      "display" : "Problématique liée à l'usager."
-    },
-    {
-      "code" : "invite",
-      "display" : "Liste des personnes invitées à participer au bilan."
-    },
-    {
-      "code" : "dateProchainBilan",
-      "display" : "Date du prochain bilan."
-    },
-    {
-      "code" : "pieceJointe",
-      "display" : "Pièce jointe du moyen/ressource."
-    },
-    {
-      "code" : "synthesePreparationBilan",
-      "display" : "Préparation du bilan."
-    }
-  ]
+  "concept" : [{
+    "code" : "perimetre",
+    "display" : "Périmètre du bilan."
+  },
+  {
+    "code" : "problematique",
+    "display" : "Problématique liée à l'usager."
+  },
+  {
+    "code" : "invite",
+    "display" : "Liste des personnes invitées à participer au bilan."
+  },
+  {
+    "code" : "dateProchainBilan",
+    "display" : "Date du prochain bilan."
+  },
+  {
+    "code" : "pieceJointe",
+    "display" : "Pièce jointe du moyen/ressource."
+  },
+  {
+    "code" : "synthesePreparationBilan",
+    "display" : "Préparation du bilan."
+  }]
 }
 
 ```

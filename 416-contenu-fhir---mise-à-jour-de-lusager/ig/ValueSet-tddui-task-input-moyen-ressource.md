@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-task-input-moyen-ressource | *Version*:2.2.0 |
-| Active as of 2026-02-18 | *Computable Name*:TDDUITaskInputMoyenRessource |
+| Active as of 2026-02-24 | *Computable Name*:TDDUITaskInputMoyenRessource |
 
  
 ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les moyens et ressources du projet personnalisé. 
@@ -54,37 +54,27 @@ ValueSet pour la définition des éléments spécifiques des input dans la resso
   "title" : "TDDUI Task Input Moyen Ressource",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-18T10:14:45+00:00",
+  "date" : "2026-02-24T10:54:30+00:00",
   "publisher" : "ANS",
-  "contact" : [
-    {
-      "name" : "ANS",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://esante.gouv.fr"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "ANS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
   "description" : "ValueSet  pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les moyens et ressources du projet personnalisé.",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
-          "display" : "FRANCE"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
   "compose" : {
-    "include" : [
-      {
-        "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-moyen-ressource"
-      }
-    ]
+    "include" : [{
+      "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-moyen-ressource"
+    }]
   }
 }
 

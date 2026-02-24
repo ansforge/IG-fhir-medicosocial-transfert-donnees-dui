@@ -38,30 +38,24 @@ Objectif 1
   "resourceType" : "Goal",
   "id" : "tddui-pp-pa-goal-objectif-1-example",
   "meta" : {
-    "profile" : [
-      "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif"
-    ]
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif"]
   },
-  "extension" : [
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference",
-      "valueReference" : {
-        "reference" : "CarePlan/tddui-pp-pa-careplan-example"
-      }
-    },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment",
-      "valueReference" : {
-        "reference" : "DocumentReference/tddui-pp-pa-documentreference-bilan-objectif-1-example"
-      }
+  "extension" : [{
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference",
+    "valueReference" : {
+      "reference" : "CarePlan/tddui-pp-pa-careplan-example"
     }
-  ],
-  "identifier" : [
-    {
-      "system" : "https://identifiant-medicosocial-objectif.esante.gouv.fr",
-      "value" : "3480787529/123456789-OBJE-1234"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment",
+    "valueReference" : {
+      "reference" : "DocumentReference/tddui-pp-pa-documentreference-bilan-objectif-1-example"
     }
-  ],
+  }],
+  "identifier" : [{
+    "system" : "https://identifiant-medicosocial-objectif.esante.gouv.fr",
+    "value" : "3480787529/123456789-OBJE-1234"
+  }],
   "lifecycleStatus" : "active",
   "description" : {
     "text" : "Réduire le risque de chute et la peur associée en 6 mois."
@@ -69,29 +63,21 @@ Objectif 1
   "subject" : {
     "reference" : "Patient/tddui-pp-pa-patient-example-pp"
   },
-  "addresses" : [
-    {
-      "reference" : "ServiceRequest/tddui-pp-pa-servicerequest-besoin-1-example"
-    }
-  ],
-  "note" : [
-    {
-      "extension" : [
-        {
-          "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator",
-          "valueCodeableConcept" : {
-            "coding" : [
-              {
-                "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator",
-                "code" : "titreObjectif"
-              }
-            ]
-          }
-        }
-      ],
-      "text" : "Objectif 1"
-    }
-  ]
+  "addresses" : [{
+    "reference" : "ServiceRequest/tddui-pp-pa-servicerequest-besoin-1-example"
+  }],
+  "note" : [{
+    "extension" : [{
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator",
+          "code" : "titreObjectif"
+        }]
+      }
+    }],
+    "text" : "Objectif 1"
+  }]
 }
 
 ```

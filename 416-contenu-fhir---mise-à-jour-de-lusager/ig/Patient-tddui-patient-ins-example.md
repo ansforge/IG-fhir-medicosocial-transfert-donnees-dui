@@ -34,141 +34,111 @@ DUPONT Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 348078
   "resourceType" : "Patient",
   "id" : "tddui-patient-ins-example",
   "meta" : {
-    "profile" : [
-      "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"
-    ]
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"]
   },
-  "extension" : [
-    {
-      "extension" : [
-        {
-          "url" : "identityStatus",
-          "valueCoding" : {
-            "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445",
-            "code" : "VALI"
-          }
-        }
-      ],
-      "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability"
-    },
-    {
-      "url" : "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
-      "valueAddress" : {
-        "extension" : [
-          {
-            "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code",
-            "valueCoding" : {
-              "system" : "https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM",
-              "code" : "63220"
-            }
-          }
-        ],
-        "city" : "Mazoires",
-        "country" : "FRA"
+  "extension" : [{
+    "extension" : [{
+      "url" : "identityStatus",
+      "valueCoding" : {
+        "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445",
+        "code" : "VALI"
       }
-    },
-    {
-      "extension" : [
-        {
-          "url" : "familySituation",
-          "valueCodeableConcept" : {
-            "coding" : [
-              {
-                "system" : "https://mos.esante.gouv.fr/NOS/TRE_R317-SituationVieQuotidienne/FHIR/TRE-R317-SituationVieQuotidienne",
-                "code" : "01",
-                "display" : "Seul"
-              }
-            ]
-          }
+    }],
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+    "valueAddress" : {
+      "extension" : [{
+        "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code",
+        "valueCoding" : {
+          "system" : "https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM",
+          "code" : "63220"
         }
-      ],
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-household-situation"
+      }],
+      "city" : "Mazoires",
+      "country" : "FRA"
     }
-  ],
-  "identifier" : [
-    {
-      "use" : "official",
-      "type" : {
-        "coding" : [
-          {
-            "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203",
-            "code" : "INS-NIR"
-          }
-        ]
-      },
-      "system" : "urn:oid:1.2.250.1.213.1.4.8",
-      "value" : "147720425367411"
-    },
-    {
-      "type" : {
-        "coding" : [
-          {
-            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code" : "PI",
-            "display" : "Patient internal identifier"
-          }
-        ]
-      },
-      "system" : "https://identifiant-medicosocial-localusager.esante.gouv.fr",
-      "value" : "3480787529/194704032"
-    },
-    {
-      "type" : {
-        "coding" : [
-          {
-            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code" : "DL"
-          }
-        ]
-      },
-      "system" : "https://ants.gouv.fr/",
-      "value" : "822146819",
-      "period" : {
-        "start" : "1980-01-01"
+  },
+  {
+    "extension" : [{
+      "url" : "familySituation",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://mos.esante.gouv.fr/NOS/TRE_R317-SituationVieQuotidienne/FHIR/TRE-R317-SituationVieQuotidienne",
+          "code" : "01",
+          "display" : "Seul"
+        }]
       }
-    }
-  ],
-  "name" : [
-    {
-      "extension" : [
-        {
-          "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name",
-          "valueString" : "Jean Stéphane Patrick"
-        }
-      ],
-      "use" : "official",
-      "family" : "DUPONT",
-      "given" : ["Jean"]
+    }],
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-household-situation"
+  }],
+  "identifier" : [{
+    "use" : "official",
+    "type" : {
+      "coding" : [{
+        "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203",
+        "code" : "INS-NIR"
+      }]
     },
-    {
-      "use" : "usual",
-      "family" : "DUPONT"
+    "system" : "urn:oid:1.2.250.1.213.1.4.8",
+    "value" : "147720425367411"
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "PI",
+        "display" : "Patient internal identifier"
+      }]
+    },
+    "system" : "https://identifiant-medicosocial-localusager.esante.gouv.fr",
+    "value" : "3480787529/194704032"
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "DL"
+      }]
+    },
+    "system" : "https://ants.gouv.fr/",
+    "value" : "822146819",
+    "period" : {
+      "start" : "1980-01-01"
     }
-  ],
+  }],
+  "name" : [{
+    "extension" : [{
+      "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name",
+      "valueString" : "Jean Stéphane Patrick"
+    }],
+    "use" : "official",
+    "family" : "DUPONT",
+    "given" : ["Jean"]
+  },
+  {
+    "use" : "usual",
+    "family" : "DUPONT"
+  }],
   "gender" : "male",
   "birthDate" : "1947-04-03",
-  "address" : [
-    {
-      "use" : "home",
-      "line" : ["12 rue des Lilas"],
-      "_line" : [
-        {
-          "extension" : [
-            {
-              "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
-              "valueString" : "12"
-            },
-            {
-              "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameBase",
-              "valueString" : "rue des Lilas"
-            }
-          ]
-        }
-      ],
-      "postalCode" : "76748",
-      "country" : "99100"
-    }
-  ]
+  "address" : [{
+    "use" : "home",
+    "line" : ["12 rue des Lilas"],
+    "_line" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+        "valueString" : "12"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameBase",
+        "valueString" : "rue des Lilas"
+      }]
+    }],
+    "postalCode" : "76748",
+    "country" : "99100"
+  }]
 }
 
 ```

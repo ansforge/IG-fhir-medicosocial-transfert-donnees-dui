@@ -67,7 +67,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Patient.extension:deathPlace","Patient.extension","deathPlace","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-death-place]]} {[]}
 ","FR Core Patient Death Place Extension","Carries the death place of the patient |Précise le lieu de décès du patient (hôpital, sur la voie publique, au domicile, etc.).","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","communeDeces","departementDeces","paysDeces"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","communeDeces/departementDeces/paysDeces"
 "Patient.extension:birthdateUpdateIndicator","Patient.extension","birthdateUpdateIndicator","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birthdate-update-indicator]]} {[]}
 ","FR Core Patient Birthdate Update Indicator Extension","An Extension","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -345,7 +345,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","II.assigningAuthorityName but note that this is an improper use by the definition of the field.  Also Role.scoper","CX.4 / (CX.4,CX.9,CX.10)"
 "Patient.identifier:PI","Patient.identifier","PI","","",0,1,"","","Y","Identifier {[]} {[]}
 ","Hospital assigned patient identifier | IPP; Dans le cadre de ce volet, représente l'Identifiant local de l’usager au sein de la structure.","An identifier for this patient.","","Patients are almost always assigned specific numerical identifiers.","","","","","","","",,,,,"",,,,"Patient.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","identifiantLocalUsagerESSMS","id",".id","FiveWs.identifier","PID-3"
+","identifiantUsagerESSMS","id",".id","FiveWs.identifier","PID-3"
 "Patient.identifier:PI.id","Patient.identifier.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Patient.identifier:PI.extension","Patient.identifier.extension","","extensions
@@ -634,7 +634,7 @@ dateTime {[]} {[]}","Indicates if the individual is deceased or not","Indicates 
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Adresse","n/a","AD","XAD"
 "Patient.address.id","Patient.address.id","","","",0,1,"","","","string {[]} {[]}
-","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","idAdresse","n/a"
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Patient.address.extension","Patient.address.extension","","extensions
 user content","",0,*,"","","","Extension {[]} {[]}
 ","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}

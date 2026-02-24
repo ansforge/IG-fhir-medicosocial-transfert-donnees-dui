@@ -34,24 +34,18 @@ Objectif 1
   "resourceType" : "Goal",
   "id" : "tddui-pp-ime-goal-objectif-1-example",
   "meta" : {
-    "profile" : [
-      "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif"
-    ]
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif"]
   },
-  "extension" : [
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference",
-      "valueReference" : {
-        "reference" : "CarePlan/tddui-pp-ime-careplan-example"
-      }
+  "extension" : [{
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference",
+    "valueReference" : {
+      "reference" : "CarePlan/tddui-pp-ime-careplan-example"
     }
-  ],
-  "identifier" : [
-    {
-      "system" : "https://identifiant-medicosocial-objectif.esante.gouv.fr",
-      "value" : "3480787529/123456-OBJE-1234"
-    }
-  ],
+  }],
+  "identifier" : [{
+    "system" : "https://identifiant-medicosocial-objectif.esante.gouv.fr",
+    "value" : "3480787529/123456-OBJE-1234"
+  }],
   "lifecycleStatus" : "active",
   "description" : {
     "text" : "Tolérer 20 min de cour avec casque anti‑bruit en 4 mois."
@@ -59,24 +53,18 @@ Objectif 1
   "subject" : {
     "reference" : "Patient/tddui-pp-ime-patient-example"
   },
-  "note" : [
-    {
-      "extension" : [
-        {
-          "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator",
-          "valueCodeableConcept" : {
-            "coding" : [
-              {
-                "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator",
-                "code" : "titreObjectif"
-              }
-            ]
-          }
-        }
-      ],
-      "text" : "Objectif 1"
-    }
-  ]
+  "note" : [{
+    "extension" : [{
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator",
+          "code" : "titreObjectif"
+        }]
+      }
+    }],
+    "text" : "Objectif 1"
+  }]
 }
 
 ```

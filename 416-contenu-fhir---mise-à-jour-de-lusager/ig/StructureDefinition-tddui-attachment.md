@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment | *Version*:2.2.0 |
-| Active as of 2026-02-18 | *Computable Name*:TDDUIAttachment |
+| Active as of 2026-02-24 | *Computable Name*:TDDUIAttachment |
 
 Extension permettant de véhiculer des pièces jointes que ce soit pour l'évaluation, l'évènement ou le projet personnalisé. L'extension référence le profil PDSm_SimplifiedPublish.
 
@@ -47,93 +47,75 @@ Other representations of profile: [CSV](StructureDefinition-tddui-attachment.csv
   "name" : "TDDUIAttachment",
   "title" : "TDDUI Attachment",
   "status" : "active",
-  "date" : "2026-02-18T10:14:45+00:00",
+  "date" : "2026-02-24T10:54:30+00:00",
   "publisher" : "ANS",
-  "contact" : [
-    {
-      "name" : "ANS",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://esante.gouv.fr"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "ANS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
   "description" : "Extension permettant de véhiculer des pièces jointes que ce soit pour l'évaluation, l'évènement ou le projet personnalisé. L'extension référence le profil PDSm_SimplifiedPublish.",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
-          "display" : "FRANCE"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
   "kind" : "complex-type",
   "abstract" : false,
-  "context" : [
-    {
-      "type" : "element",
-      "expression" : "Encounter"
-    },
-    {
-      "type" : "element",
-      "expression" : "CarePlan"
-    },
-    {
-      "type" : "element",
-      "expression" : "Goal"
-    },
-    {
-      "type" : "element",
-      "expression" : "ServiceRequest"
-    }
-  ],
+  "context" : [{
+    "type" : "element",
+    "expression" : "Encounter"
+  },
+  {
+    "type" : "element",
+    "expression" : "CarePlan"
+  },
+  {
+    "type" : "element",
+    "expression" : "Goal"
+  },
+  {
+    "type" : "element",
+    "expression" : "ServiceRequest"
+  }],
   "type" : "Extension",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Extension",
-        "path" : "Extension",
-        "short" : "TDDUI Attachment",
-        "definition" : "Extension permettant de véhiculer des pièces jointes que ce soit pour l'évaluation, l'évènement ou le projet personnalisé. L'extension référence le profil PDSm_SimplifiedPublish."
-      },
-      {
-        "id" : "Extension.extension",
-        "path" : "Extension.extension",
-        "max" : "0"
-      },
-      {
-        "id" : "Extension.url",
-        "path" : "Extension.url",
-        "fixedUri" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment"
-      },
-      {
-        "id" : "Extension.value[x]",
-        "path" : "Extension.value[x]",
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"
-            ]
-          }
-        ]
-      }
-    ]
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "TDDUI Attachment",
+      "definition" : "Extension permettant de véhiculer des pièces jointes que ce soit pour l'évaluation, l'évènement ou le projet personnalisé. L'extension référence le profil PDSm_SimplifiedPublish."
+    },
+    {
+      "id" : "Extension.extension",
+      "path" : "Extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "fixedUri" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment"
+    },
+    {
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"]
+      }]
+    }]
   }
 }
 

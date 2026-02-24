@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-contact-related-person-relashionship | *Version*:2.2.0 |
-| Active as of 2026-02-18 | *Computable Name*:TDDUIRelatedPersonRelashionship |
+| Active as of 2026-02-24 | *Computable Name*:TDDUIRelatedPersonRelashionship |
 
  
 ValueSet définissant les slices de RelatedPerson.relationship. 
@@ -56,49 +56,33 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "title" : "TDDUI Related Person Relashionship",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-18T10:14:45+00:00",
+  "date" : "2026-02-24T10:54:30+00:00",
   "publisher" : "ANS",
-  "contact" : [
-    {
-      "name" : "ANS",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://esante.gouv.fr"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "ANS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
   "description" : "ValueSet définissant les slices de RelatedPerson.relationship.",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
-          "display" : "FRANCE"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
   "compose" : {
-    "include" : [
-      {
-        "valueSet" : [
-          "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j384-role-membre-famille-ms"
-        ]
-      },
-      {
-        "valueSet" : [
-          "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-contact-relation"
-        ]
-      },
-      {
-        "valueSet" : [
-          "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-contact-protection-juridique"
-        ]
-      }
-    ]
+    "include" : [{
+      "valueSet" : ["https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j384-role-membre-famille-ms"]
+    },
+    {
+      "valueSet" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-contact-relation"]
+    },
+    {
+      "valueSet" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-contact-protection-juridique"]
+    }]
   }
 }
 

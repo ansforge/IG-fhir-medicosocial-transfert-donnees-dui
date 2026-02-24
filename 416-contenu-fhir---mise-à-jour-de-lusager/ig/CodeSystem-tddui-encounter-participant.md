@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-participant | *Version*:2.2.0 |
-| Active as of 2026-02-18 | *Computable Name*:TDDUIEncounterParticipant |
+| Active as of 2026-02-24 | *Computable Name*:TDDUIEncounterParticipant |
 
  
 CodeSystem définissant les types de participants dans le profil TDDUIEncounterEvenement. 
@@ -27,9 +27,7 @@ CodeSystem définissant les types de participants dans le profil TDDUIEncounterE
   "resourceType" : "CodeSystem",
   "id" : "tddui-encounter-participant",
   "meta" : {
-    "profile" : [
-      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
-    ]
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem"]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-participant",
   "version" : "2.2.0",
@@ -37,40 +35,30 @@ CodeSystem définissant les types de participants dans le profil TDDUIEncounterE
   "title" : "TDDUI Encounter Participant",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-18T10:14:45+00:00",
+  "date" : "2026-02-24T10:54:30+00:00",
   "publisher" : "ANS",
-  "contact" : [
-    {
-      "name" : "ANS",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://esante.gouv.fr"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "ANS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
   "description" : "CodeSystem définissant les types de participants dans le profil TDDUIEncounterEvenement.",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
-          "display" : "FRANCE"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
   "caseSensitive" : true,
   "content" : "complete",
   "count" : 1,
-  "concept" : [
-    {
-      "code" : "AUT",
-      "display" : "Auteur du statut de la ressource"
-    }
-  ]
+  "concept" : [{
+    "code" : "AUT",
+    "display" : "Auteur du statut de la ressource"
+  }]
 }
 
 ```

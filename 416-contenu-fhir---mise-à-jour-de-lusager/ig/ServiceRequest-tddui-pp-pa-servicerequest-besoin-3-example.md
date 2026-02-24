@@ -29,21 +29,15 @@ Profil: [TDDUI ServiceRequest Besoin](StructureDefinition-tddui-service-request-
   "resourceType" : "ServiceRequest",
   "id" : "tddui-pp-pa-servicerequest-besoin-3-example",
   "meta" : {
-    "profile" : [
-      "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin"
-    ]
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin"]
   },
-  "identifier" : [
-    {
-      "system" : "https://identifiant-medicosocial-besoin.esante.gouv.fr",
-      "value" : "3480787529/123456789-BESO-1236"
-    }
-  ],
-  "basedOn" : [
-    {
-      "reference" : "CarePlan/tddui-pp-pa-careplan-example"
-    }
-  ],
+  "identifier" : [{
+    "system" : "https://identifiant-medicosocial-besoin.esante.gouv.fr",
+    "value" : "3480787529/123456789-BESO-1236"
+  }],
+  "basedOn" : [{
+    "reference" : "CarePlan/tddui-pp-pa-careplan-example"
+  }],
   "status" : "active",
   "intent" : "plan",
   "code" : {

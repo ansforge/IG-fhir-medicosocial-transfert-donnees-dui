@@ -8,22 +8,14 @@
 
 Profil: [TDDUI Consent Accord](StructureDefinition-tddui-consent-accord.md)
 
-**status**: Active
+## Participants
 
-**scope**: Privacy Consent
+* **Role**: # Who is agreeing to the policy and rulesParty
+  * **Details**: [Practitioner Claire Martin ](Practitioner-tddui-practitioner-example.md)
 
-**category**: Consent Document
+This consent is made under the policy .
 
-**dateTime**: 2024-01-15 09:00:00+0100
-
-**performer**: [Practitioner Claire Martin ](Practitioner-tddui-practitioner-example.md)
-
-### Policies
-
-| | |
-| :--- | :--- |
-| - | **Authority** |
-| * | [https://www.cnsa.fr/](https://www.cnsa.fr/) |
+The subject has given their consent.
 
 
 
@@ -34,41 +26,29 @@ Profil: [TDDUI Consent Accord](StructureDefinition-tddui-consent-accord.md)
   "resourceType" : "Consent",
   "id" : "tddui-pp-ime-consent-accord-example",
   "meta" : {
-    "profile" : [
-      "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord"
-    ]
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord"]
   },
   "status" : "active",
   "scope" : {
-    "coding" : [
-      {
-        "system" : "http://terminology.hl7.org/CodeSystem/consentscope",
-        "code" : "patient-privacy",
-        "display" : "Privacy Consent"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/consentscope",
+      "code" : "patient-privacy",
+      "display" : "Privacy Consent"
+    }]
   },
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://loinc.org",
-          "code" : "59284-0"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "59284-0"
+    }]
+  }],
   "dateTime" : "2024-01-15T09:00:00+01:00",
-  "performer" : [
-    {
-      "reference" : "Practitioner/tddui-practitioner-example"
-    }
-  ],
-  "policy" : [
-    {
-      "authority" : "https://www.cnsa.fr/"
-    }
-  ]
+  "performer" : [{
+    "reference" : "Practitioner/tddui-practitioner-example"
+  }],
+  "policy" : [{
+    "authority" : "https://www.cnsa.fr/"
+  }]
 }
 
 ```

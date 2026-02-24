@@ -51,9 +51,7 @@ Profil: [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-re
   "resourceType" : "QuestionnaireResponse",
   "id" : "tddui-questionnaire-response-situation-ssiad-example",
   "meta" : {
-    "profile" : [
-      "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
-    ]
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"]
   },
   "identifier" : {
     "system" : "https://identifiant-medicosocial-evaluation.esante.gouv.fr",
@@ -71,71 +69,55 @@ Profil: [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-re
   "source" : {
     "reference" : "Practitioner/tddui-practitioner-example"
   },
-  "item" : [
-    {
-      "linkId" : "incontinence",
-      "text" : "Incontinence urinaire, sans précision",
-      "answer" : [
-        {
-          "valueBoolean" : false
-        }
-      ]
-    },
-    {
-      "linkId" : "incontinence-fec",
-      "text" : "Incontinence des matières fécales",
-      "answer" : [
-        {
-          "valueBoolean" : false
-        }
-      ]
-    },
-    {
-      "linkId" : "obesite",
-      "text" : "Obésité, sans précision",
-      "answer" : [
-        {
-          "valueBoolean" : false
-        }
-      ]
-    },
-    {
-      "linkId" : "trouble-cognitif",
-      "text" : "Trouble cognitif léger",
-      "answer" : [
-        {
-          "valueBoolean" : true
-        }
-      ]
-    },
-    {
-      "linkId" : "trouble-personnalite",
-      "text" : "Trouble de la personnalité et du comportement chez l'adulte, sans précision",
-      "answer" : [
-        {
-          "valueBoolean" : false
-        }
-      ]
-    },
-    {
-      "linkId" : "soins-ide",
-      "text" : "Soins IDE pour escarres et autres plaies chroniques",
-      "answer" : [
-        {
-          "valueBoolean" : false
-        }
-      ]
-    },
-    {
-      "linkId" : "prise-charge-ide",
-      "text" : "Prise en charge IDE du diabète insulinotraité",
-      "answer" : [
-        {
-          "valueBoolean" : false
-        }
-      ]
-    }
-  ]
+  "item" : [{
+    "linkId" : "incontinence",
+    "text" : "Incontinence urinaire, sans précision",
+    "answer" : [{
+      "valueBoolean" : false
+    }]
+  },
+  {
+    "linkId" : "incontinence-fec",
+    "text" : "Incontinence des matières fécales",
+    "answer" : [{
+      "valueBoolean" : false
+    }]
+  },
+  {
+    "linkId" : "obesite",
+    "text" : "Obésité, sans précision",
+    "answer" : [{
+      "valueBoolean" : false
+    }]
+  },
+  {
+    "linkId" : "trouble-cognitif",
+    "text" : "Trouble cognitif léger",
+    "answer" : [{
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "linkId" : "trouble-personnalite",
+    "text" : "Trouble de la personnalité et du comportement chez l'adulte, sans précision",
+    "answer" : [{
+      "valueBoolean" : false
+    }]
+  },
+  {
+    "linkId" : "soins-ide",
+    "text" : "Soins IDE pour escarres et autres plaies chroniques",
+    "answer" : [{
+      "valueBoolean" : false
+    }]
+  },
+  {
+    "linkId" : "prise-charge-ide",
+    "text" : "Prise en charge IDE du diabète insulinotraité",
+    "answer" : [{
+      "valueBoolean" : false
+    }]
+  }]
 }
 
 ```
