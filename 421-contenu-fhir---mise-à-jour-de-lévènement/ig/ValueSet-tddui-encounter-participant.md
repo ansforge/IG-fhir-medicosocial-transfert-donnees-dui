@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-participant | *Version*:2.2.0 |
-| Active as of 2026-02-23 | *Computable Name*:TDDUIEncounterParticipant |
+| Active as of 2026-02-24 | *Computable Name*:TDDUIEncounterParticipant |
 
  
 ValueSet pour la définition des codes de participant d'un événement 
@@ -54,7 +54,7 @@ Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (pa
   "title" : "TDDUI Encounter Participant",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-23T18:02:53+00:00",
+  "date" : "2026-02-24T08:32:52+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

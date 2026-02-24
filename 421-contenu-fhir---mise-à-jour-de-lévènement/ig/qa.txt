@@ -1,9 +1,9 @@
 TDDUI : Validation Results
 =========================================
 
-err = 233, warn = 205, info = 143
+err = 233, warn = 204, info = 143
 IG Publisher Version: 2.1.1
-Generated Mon Feb 23 18:08:23 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.tddui#2.2.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/tddui)
+Generated Tue Feb 24 08:38:37 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.tddui#2.2.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/tddui)
  Build Errors : 2 / 6 / 0
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Bundle-tddui-bundle-example : 0 / 8 / 34
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Bundle-tddui-pp-ime-bundle-example : 7 / 7 / 28
@@ -89,7 +89,7 @@ Generated Mon Feb 23 18:08:23 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.tddui
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-patient : 4 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-patient-ins : 4 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-patient-present : 1 / 1 / 1
- /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-patient-validation : 1 / 1 / 1
+ /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-patient-validation : 1 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-practitioner : 1 / 9 / 2
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-practitioner-role : 1 / 2 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-profession : 1 / 2 / 1
@@ -716,7 +716,6 @@ ERROR: StructureDefinition/tddui-patient-present: StructureDefinition.jurisdicti
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-present'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-tddui-patient-validation.json ==
 ERROR: StructureDefinition/tddui-patient-validation: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr'. Default display is 'France'
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-validation'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-tddui-practitioner.json ==
 ERROR: StructureDefinition/tddui-practitioner: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr'. Default display is 'France'
 WARNING: StructureDefinition/tddui-practitioner: StructureDefinition.snapshot.element[51].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/humanname-assembly-order'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.1.0 (from hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (from hl7.fhir.uv.extensions.r4#5.2.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/humanname-assembly-order' to 'http://hl7.org/fhir/StructureDefinition/humanname-assembly-order|5.2.0'

@@ -20,6 +20,8 @@ Profil: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenemen
 
 **TDDUI Event Reason**: Suivi post-opératoire suite à intervention chirurgicale de la hanche.
 
+**TDDUI Patient Validation**: true
+
 **identifier**: Visit Number/3480787529/147720425367411-EVN-12548
 
 **status**: Finished
@@ -99,6 +101,10 @@ Profil: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenemen
   {
     "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-reason",
     "valueString" : "Suivi post-opératoire suite à intervention chirurgicale de la hanche."
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-validation",
+    "valueBoolean" : true
   }],
   "identifier" : [{
     "type" : {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-validation | *Version*:2.2.0 |
-| Active as of 2026-02-23 | *Computable Name*:TDDUIPatientValidation |
+| Active as of 2026-02-24 | *Computable Name*:TDDUIPatientValidation |
 
 Validation par l'usager que l'événement a eu lieu.
 
@@ -20,6 +20,7 @@ Validation par l'usager que l'événement a eu lieu.
 **Utilisations:**
 
 * Utilise ce/t/te Extension: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)
+* Exemples pour ce/t/te Extension: [Bundle/tddui-bundle-example](Bundle-tddui-bundle-example.md) and [Encounter/tddui-encounter-evenement-example](Encounter-tddui-encounter-evenement-example.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-patient-validation)
 
@@ -46,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient-valida
   "name" : "TDDUIPatientValidation",
   "title" : "TDDUI Patient Validation",
   "status" : "active",
-  "date" : "2026-02-23T18:02:53+00:00",
+  "date" : "2026-02-24T08:32:52+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
