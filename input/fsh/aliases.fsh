@@ -75,6 +75,10 @@ Alias: $JDV-J11-RelationPatient-CISIS = https://mos.esante.gouv.fr/NOS/JDV_J11-R
 Alias: $JDV-J14-QualiteRepresentantLegal-CISIS = https://mos.esante.gouv.fr/NOS/JDV_J14-QualiteRepresentantLegal-CISIS/FHIR/JDV-J14-QualiteRepresentantLegal-CISIS
 Alias: $TRE-R217-ProtectionJuridique = https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique
 Alias: $JDV-J384-Role-Membre-Famille-MS = https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j384-role-membre-famille-ms
+Alias: $JDV-J258-Departement = https://mos.esante.gouv.fr/NOS/JDV_J258-Departement/FHIR/JDV-J258-Departement
+Alias: $JDV-J115-Langue-ENREG = https://mos.esante.gouv.fr/NOS/JDV_J115-Langue-ENREG/FHIR/JDV-J115-Langue-ENREG
+Alias: $JDV-J176-SituationVieQuotidienne-MDPH = https://mos.esante.gouv.fr/NOS/JDV_J176-SituationVieQuotidienne-MDPH/FHIR/JDV-J176-SituationVieQuotidienne-MDPH
+Alias: $JDV-J385-composition-foyer-ms = https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j385-composition-foyer-ms
 
 // HL7
 Alias: $v2-0131 = http://terminology.hl7.org/CodeSystem/v2-0131

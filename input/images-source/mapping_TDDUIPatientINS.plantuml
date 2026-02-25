@@ -1,30 +1,72 @@
 @startuml
 
-map "<&layers> name:usualName" as nameusualName #back:WhiteSmoke;header:LightGray {
+
+
+map "PermisConduire : <&layers> identifier:driverLicense" as PermisConduire #DarkGray {
+    numPermisConduire => value
+    dateObtention => period.start
+    dateValidite => period.end
+}
+
+map "line" as line #DarkGray {
+    libelleVoie => <&plus> additionalLocator
+    numeroVoie => <&plus> houseNumber
+    mentionDistribution => <&plus> postBox
+    complementPointGeographique => <&plus> streetNameBase
+}
+
+map "<&layers> name:usualName" as nameusualName #DarkGray {
     nomUsage => family
     prenomUtilise => given
 }
 
-map "<&layers> name:officialName" as nameofficialName #back:WhiteSmoke;header:LightGray {
+map "<&layers> name:officialName" as nameofficialName #DarkGray {
     prenom => <&plus> birth-list-given-name
     nomNaissance => family
     premierPrenomActeNaissance => given
     civilite => prefix
 }
 
-map "**UsagerINS : TDDUIPatientINS**" as UsagerINS #back:MintCream;header:LightSeaGreen {
-    paysNaissance => <&plus> birthPlace.value[x].country
-    communeNaissance => <&plus> birthPlace.value[x].extension:inseeCode
+map "Telecommunication : telecom" as Telecommunication #DarkGray {
+    canal => system
+    adressTelecom => value
+}
+
+map "Adresse : address" as Adresse #DarkGray {
+    commentaire => <&plus> TDDUIComment
+    type => type
+    line *-> line
+    localite => state
+    codePostal => postalCode
+    pays => country
+}
+
+map "**UsagerINS : TDDUIPatientINS**" as Usager #80b1d3 {
+    paysNationalite => <&plus> nationality
+    communeDeces/departementDeces/paysDeces => <&plus> deathPlace
+    communeNaissance/departementNaissance/paysNaissance => <&plus> birthPlace
+    situationFamiliale => <&plus> TDDUIHouseholdSituation.extension:familySituation
+    compositionFoyer => <&plus> TDDUIHouseholdSituation.extension:householdComposition
+    descriptionCompositionFoyer => <&plus> TDDUIHouseholdSituation.extension:householdCompositionDescription
+    commentaire => <&plus> TDDUIComment
+    matriculeINS => <&plus> identifier:INS-NIA/INS-NIR
     numSecuriteSociale => <&layers> identifier:NSS
-    identifiantLocalUsagerESSMS => <&layers> identifier:PI
-    matriculeINS => <&layers> identifier:INS-NIR
-    matriculeINS => <&layers> identifier:INS-NIA
+    identifiantUsagerESSMS => <&layers> identifier:PI
     numeroIndividuInitial => <&layers> identifier:InitialNumberMDPH
     sexe => gender
     dateNaissance => birthDate
+    dateDeces => <&layers> deceased[x]:deceasedDateTime
+    photo => photo
+    PermisConduire => <&layers> identifier:driverLicense
     <&layers> name:usualName *-> nameusualName
-    <&layers> name:officialName *--> nameofficialName
+    <&layers> name:officialName *-> nameofficialName
+    Telecommunication => telecom
+    Adresse => address
+    langueParlee => communication.language
 }
 
+Usager::PermisConduire -l-> PermisConduire
+Usager::Telecommunication -d-> Telecommunication
+Usager::Adresse -d-> Adresse
 
 @enduml
