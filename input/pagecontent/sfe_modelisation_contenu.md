@@ -725,6 +725,10 @@ Pour les types de droit et prestation suivants :
     <td>en cours analyse NOS</td>
   </tr>
   <tr>
+    <td>8.3 Orientation en Enseignement adapté (SEGPA/EREA)</td>
+    <td>en cours analyse NOS</td>
+  </tr>
+  <tr>
     <td>8.6 Orientation en Unité d'enseignement</td>
     <td>en cours analyse NOS</td>
   </tr>
