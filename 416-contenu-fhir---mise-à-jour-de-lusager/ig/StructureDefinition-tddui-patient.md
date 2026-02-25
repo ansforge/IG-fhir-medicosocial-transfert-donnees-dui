@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient | *Version*:2.2.0 |
-| Active as of 2026-02-24 | *Computable Name*:TDDUIPatient |
+| Active as of 2026-02-25 | *Computable Name*:TDDUIPatient |
 
  
 Profil de la ressource FrCorePatientProfile permettant de représenter un usager lorsque l'INS n'est pas transmis. 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient.csv), 
   "name" : "TDDUIPatient",
   "title" : "TDDUI Patient",
   "status" : "active",
-  "date" : "2026-02-24T10:54:30+00:00",
+  "date" : "2026-02-25T08:08:12+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -127,18 +127,14 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient.csv), 
     {
       "id" : "Patient.extension:birthPlace",
       "path" : "Patient.extension",
-      "sliceName" : "birthPlace",
+      "sliceName" : "birthPlace"
+    },
+    {
+      "id" : "Patient.extension:birthPlace.value[x].city",
+      "path" : "Patient.extension.value[x].city",
       "mapping" : [{
         "identity" : "specmetier-to-TDDUIPatient",
         "map" : "communeNaissance"
-      },
-      {
-        "identity" : "specmetier-to-TDDUIPatient",
-        "map" : "paysNaissance"
-      },
-      {
-        "identity" : "specmetier-to-TDDUIPatient",
-        "map" : "departementNaissance"
       }]
     },
     {
@@ -148,6 +144,22 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient.csv), 
         "strength" : "required",
         "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J258-Departement/FHIR/JDV-J258-Departement"
       }
+    },
+    {
+      "id" : "Patient.extension:birthPlace.value[x].postalCode",
+      "path" : "Patient.extension.value[x].postalCode",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIPatient",
+        "map" : "departementNaissance"
+      }]
+    },
+    {
+      "id" : "Patient.extension:birthPlace.value[x].country",
+      "path" : "Patient.extension.value[x].country",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIPatient",
+        "map" : "paysNaissance"
+      }]
     },
     {
       "id" : "Patient.extension:TDDUIHouseholdSituation",
