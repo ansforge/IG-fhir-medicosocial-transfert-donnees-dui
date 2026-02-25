@@ -315,6 +315,8 @@ Jeu(x) de valeur(s) associé(s) :[JDV_J30-TemporaliteAccueil-ROR](https://mos.es
   * Jeu de valeurs associé: en cours analyse NOS
 * Type droit prestation: 13.2 Orientation vers un établissement d'accueil médicalisé en tout ou partie
   * Jeu de valeurs associé: en cours analyse NOS
+* Type droit prestation: 8.3 Orientation en Enseignement adapté (SEGPA/EREA)
+  * Jeu de valeurs associé: en cours analyse NOS
 * Type droit prestation: 8.6 Orientation en Unité d'enseignement
   * Jeu de valeurs associé: en cours analyse NOS
 
