@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient.csv), 
   "name" : "TDDUIPatient",
   "title" : "TDDUI Patient",
   "status" : "active",
-  "date" : "2026-02-25T08:08:12+00:00",
+  "date" : "2026-02-25T13:31:02+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -130,24 +130,12 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient.csv), 
       "sliceName" : "birthPlace"
     },
     {
-      "id" : "Patient.extension:birthPlace.value[x].city",
-      "path" : "Patient.extension.value[x].city",
-      "mapping" : [{
-        "identity" : "specmetier-to-TDDUIPatient",
-        "map" : "communeNaissance"
-      }]
-    },
-    {
       "id" : "Patient.extension:birthPlace.value[x].district",
       "path" : "Patient.extension.value[x].district",
       "binding" : {
         "strength" : "required",
         "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J258-Departement/FHIR/JDV-J258-Departement"
-      }
-    },
-    {
-      "id" : "Patient.extension:birthPlace.value[x].postalCode",
-      "path" : "Patient.extension.value[x].postalCode",
+      },
       "mapping" : [{
         "identity" : "specmetier-to-TDDUIPatient",
         "map" : "departementNaissance"
@@ -159,6 +147,15 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient.csv), 
       "mapping" : [{
         "identity" : "specmetier-to-TDDUIPatient",
         "map" : "paysNaissance"
+      }]
+    },
+    {
+      "id" : "Patient.extension:birthPlace.value[x].extension:inseeCode",
+      "path" : "Patient.extension.value[x].extension",
+      "sliceName" : "inseeCode",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIPatient",
+        "map" : "communeNaissance"
       }]
     },
     {

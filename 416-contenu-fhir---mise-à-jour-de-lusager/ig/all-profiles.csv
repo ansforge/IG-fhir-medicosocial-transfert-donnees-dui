@@ -6130,7 +6130,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "tddui-patient-ins","Patient.extension:birthPlace.value[x].district","Patient.extension.value[x].district","","County
 ","",0,1,"","","Y","string {[]} {[]}
-","District name (aka county)","The name of the administrative area (county).","District is sometimes known as county, but in some regions 'county' is used in place of city (municipality), so county name should be conveyed in city instead.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Madison""/>","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J258-Departement/FHIR/JDV-J258-Departement","",,,,"Address.district",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","District name (aka county)","The name of the administrative area (county).","District is sometimes known as county, but in some regions 'county' is used in place of city (municipality), so county name should be conveyed in city instead.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Madison""/>","","",,,,,"",,,,"Address.district",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-patient-ins","Patient.extension:birthPlace.value[x].state","Patient.extension.value[x].state","","Province
 Territory","",0,1,"","","Y","string {[]} {[]}
@@ -7099,7 +7099,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "tddui-patient","Patient.extension:birthPlace.value[x].extension:inseeCode","Patient.extension.value[x].extension","inseeCode","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code]]} {[]}
-","Code COG de la ville","This extension adds the insee code (5 digits) to the address | Ajout du code insee (5 chiffres) à l'adresse postale","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","FR Core Address Insee Code Extension","This extension adds the insee code (5 digits) to the address | Ajout du code insee (5 chiffres) à l'adresse postale","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "tddui-patient","Patient.extension:birthPlace.value[x].use","Patient.extension.value[x].use","","","",0,1,"","Y","Y","code {[]} {[]}
 ","home | work | temp | old | billing - purpose of this address","The purpose of this address.","Applications can assume that an address is current unless it explicitly says that it is temporary or old.","Allows an appropriate address to be chosen from a list of many.","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""home""/>","","",,"required","The use of an address.","http://hl7.org/fhir/ValueSet/address-use|4.0.1","",,,,"Address.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -7119,7 +7119,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "tddui-patient","Patient.extension:birthPlace.value[x].district","Patient.extension.value[x].district","","County
 ","",0,1,"","","Y","string {[]} {[]}
-","District name (aka county)","The name of the administrative area (county).","District is sometimes known as county, but in some regions 'county' is used in place of city (municipality), so county name should be conveyed in city instead.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Madison""/>","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J258-Departement/FHIR/JDV-J258-Departement","",,,,"Address.district",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","District name (aka county)","The name of the administrative area (county).","District is sometimes known as county, but in some regions 'county' is used in place of city (municipality), so county name should be conveyed in city instead.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Madison""/>","","",,,,,"",,,,"Address.district",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-patient","Patient.extension:birthPlace.value[x].state","Patient.extension.value[x].state","","Province
 Territory","",0,1,"","","Y","string {[]} {[]}

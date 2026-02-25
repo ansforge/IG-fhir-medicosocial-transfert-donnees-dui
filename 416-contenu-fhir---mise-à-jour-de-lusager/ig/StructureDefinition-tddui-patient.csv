@@ -96,8 +96,8 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
 "Patient.extension:birthPlace.value[x].extension:inseeCode","Patient.extension.value[x].extension","inseeCode","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code]]} {[]}
-","Code COG de la ville","This extension adds the insee code (5 digits) to the address | Ajout du code insee (5 chiffres) à l'adresse postale","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+","FR Core Address Insee Code Extension","This extension adds the insee code (5 digits) to the address | Ajout du code insee (5 chiffres) à l'adresse postale","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","communeNaissance"
 "Patient.extension:birthPlace.value[x].use","Patient.extension.value[x].use","","","",0,1,"","Y","Y","code {[]} {[]}
 ","home | work | temp | old | billing - purpose of this address","The purpose of this address.","Applications can assume that an address is current unless it explicitly says that it is temporary or old.","Allows an appropriate address to be chosen from a list of many.","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""home""/>","","",,"required","The use of an address.","http://hl7.org/fhir/ValueSet/address-use|4.0.1","",,,,"Address.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","unique(./use)","XAD.7"
@@ -113,10 +113,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Patient.extension:birthPlace.value[x].city","Patient.extension.value[x].city","","Municpality
 ","",0,1,"","","Y","string {[]} {[]}
 ","Les communes existantes sont définies ici : https://public.opendatasoft.com/explore/dataset/correspondance-code-insee-code-postal/table.","The name of the city, town, suburb, village or other community or delivery center.","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Erewhon""/>","","",,,,,"",,,,"Address.city",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","communeNaissance","AD.part[parttype = CTY]","XAD.3"
+","AD.part[parttype = CTY]","XAD.3"
 "Patient.extension:birthPlace.value[x].district","Patient.extension.value[x].district","","County
 ","",0,1,"","","Y","string {[]} {[]}
-","District name (aka county)","The name of the administrative area (county).","District is sometimes known as county, but in some regions 'county' is used in place of city (municipality), so county name should be conveyed in city instead.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Madison""/>","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J258-Departement/FHIR/JDV-J258-Departement","",,,,"Address.district",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","District name (aka county)","The name of the administrative area (county).","District is sometimes known as county, but in some regions 'county' is used in place of city (municipality), so county name should be conveyed in city instead.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Madison""/>","","",,,,,"",,,,"Address.district",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","AD.part[parttype = CNT | CPA]","XAD.9"
 "Patient.extension:birthPlace.value[x].state","Patient.extension.value[x].state","","Province
 Territory","",0,1,"","","Y","string {[]} {[]}
@@ -125,10 +125,10 @@ Territory","",0,1,"","","Y","string {[]} {[]}
 "Patient.extension:birthPlace.value[x].postalCode","Patient.extension.value[x].postalCode","","Zip
 ","",0,1,"","","Y","string {[]} {[]}
 ","Postal code for area","A postal code designating a region defined by the postal service.","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""9132""/>","","",,,,,"",,,,"Address.postalCode",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","departementNaissance","AD.part[parttype = ZIP]","XAD.5"
+","AD.part[parttype = ZIP]","XAD.5"
 "Patient.extension:birthPlace.value[x].country","Patient.extension.value[x].country","","","",0,1,"","","Y","string {[]} {[]}
 ","Country (will be ISO 3166 3 letter code; code=FRA for France)","Country - a nation as commonly understood or generally accepted.","ISO 3166 3 letter codes can be used in place of a human readable country name.","","","","","","","","",,,,,"",,,,"Address.country",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","paysNaissance","AD.part[parttype = CNT]","XAD.6"
+","AD.part[parttype = CNT]","XAD.6"
 "Patient.extension:birthPlace.value[x].period","Patient.extension.value[x].period","","","",0,1,"","","Y","Period {[]} {[]}
 ","Time period when address was/is in use","Time period when address was/is in use.","","Allows addresses to be placed in historical context.","","","","","<valuePeriod xmlns=""http://hl7.org/fhir"">
   <start value=""2010-03-23""/>
