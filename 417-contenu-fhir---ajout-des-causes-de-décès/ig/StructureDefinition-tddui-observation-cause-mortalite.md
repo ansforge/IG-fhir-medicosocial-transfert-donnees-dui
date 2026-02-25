@@ -1,4 +1,4 @@
-# TDDUI Observation Cause Mortalite - Médicosocial - Transfert de données DUI v2.2.0
+# TDDUI Observation Cause Mortalite - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-mortalite | *Version*:2.2.0 |
-| Active as of 2026-02-24 | *Computable Name*:TDDUIObservationCauseMortalite |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-mortalite | *Version*:2.2.0-ballot |
+| Active as of 2026-02-25 | *Computable Name*:TDDUIObservationCauseMortalite |
 
  
 Profil de la ressource Observation permettant de représenter les causes de mortalité d'un usager. 
@@ -39,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-ca
   "resourceType" : "StructureDefinition",
   "id" : "tddui-observation-cause-mortalite",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-mortalite",
-  "version" : "2.2.0",
+  "version" : "2.2.0-ballot",
   "name" : "TDDUIObservationCauseMortalite",
   "title" : "TDDUI Observation Cause Mortalite",
   "status" : "active",
-  "date" : "2026-02-24T16:53:25+00:00",
+  "date" : "2026-02-25T09:45:56+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

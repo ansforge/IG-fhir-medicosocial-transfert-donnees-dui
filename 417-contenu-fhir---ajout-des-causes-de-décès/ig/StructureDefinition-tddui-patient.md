@@ -1,4 +1,4 @@
-# TDDUI Patient - Médicosocial - Transfert de données DUI v2.2.0
+# TDDUI Patient - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient | *Version*:2.2.0 |
-| Active as of 2026-02-24 | *Computable Name*:TDDUIPatient |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient | *Version*:2.2.0-ballot |
+| Active as of 2026-02-25 | *Computable Name*:TDDUIPatient |
 
  
 Profil de la ressource FrCorePatientProfile permettant de représenter un usager lorsque l'INS n'est pas transmis. 
@@ -40,11 +40,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient.csv), 
   "resourceType" : "StructureDefinition",
   "id" : "tddui-patient",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient",
-  "version" : "2.2.0",
+  "version" : "2.2.0-ballot",
   "name" : "TDDUIPatient",
   "title" : "TDDUI Patient",
   "status" : "active",
-  "date" : "2026-02-24T16:53:25+00:00",
+  "date" : "2026-02-25T09:45:56+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

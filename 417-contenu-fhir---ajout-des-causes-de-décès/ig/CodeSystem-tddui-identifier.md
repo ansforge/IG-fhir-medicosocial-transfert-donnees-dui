@@ -1,4 +1,4 @@
-# TDDUI Patient Identifier - Médicosocial - Transfert de données DUI v2.2.0
+# TDDUI Patient Identifier - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-identifier | *Version*:2.2.0 |
-| Active as of 2026-02-24 | *Computable Name*:TDDUIIdentifier |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-identifier | *Version*:2.2.0-ballot |
+| Active as of 2026-02-25 | *Computable Name*:TDDUIIdentifier |
 
  
 CodeSystem pour la définition des codes d'identifiant de l'usager 
@@ -30,12 +30,12 @@ CodeSystem pour la définition des codes d'identifiant de l'usager
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem"]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-identifier",
-  "version" : "2.2.0",
+  "version" : "2.2.0-ballot",
   "name" : "TDDUIIdentifier",
   "title" : "TDDUI Patient Identifier",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-24T16:53:25+00:00",
+  "date" : "2026-02-25T09:45:56+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

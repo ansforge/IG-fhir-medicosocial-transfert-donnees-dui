@@ -1,4 +1,4 @@
-# TDDUI Contact Protection Juridique - Médicosocial - Transfert de données DUI v2.2.0
+# TDDUI Contact Protection Juridique - Médicosocial - Transfert de données DUI v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-contact-protection-juridique | *Version*:2.2.0 |
-| Active as of 2026-02-24 | *Computable Name*:TDDUIContactProtectionJuridique |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-contact-protection-juridique | *Version*:2.2.0-ballot |
+| Active as of 2026-02-25 | *Computable Name*:TDDUIContactProtectionJuridique |
 
  
 ValueSet définissant la protection juridique. 
@@ -50,12 +50,12 @@ ValueSet définissant la protection juridique.
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-contact-protection-juridique",
-  "version" : "2.2.0",
+  "version" : "2.2.0-ballot",
   "name" : "TDDUIContactProtectionJuridique",
   "title" : "TDDUI Contact Protection Juridique",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-24T16:53:25+00:00",
+  "date" : "2026-02-25T09:45:56+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
