@@ -10,7 +10,7 @@
   <name value="TDDUI"/>
   <title value="Médicosocial - Transfert de données DUI"/>
   <status value="active"/>
-  <date value="2026-02-19T15:19:47+00:00"/>
+  <date value="2026-02-25T14:12:38+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -56,6 +56,11 @@
     <uri value="https://profiles.ihe.net/ITI/MHD/ImplementationGuide/ihe.iti.mhd"/>
     <packageId value="ihe.iti.mhd"/>
     <version value="4.2.0"/>
+  </dependsOn>
+  <dependsOn id="ans_fhir_fr_annuaire">
+    <uri value="https://interop.esante.gouv.fr/ig/fhir/annuaire/ImplementationGuide/ans.fhir.fr.annuaire"/>
+    <packageId value="ans.fhir.fr.annuaire"/>
+    <version value="1.1.0"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -936,6 +941,17 @@
       </reference>
       <name value="TDDUI Goal Objectif Note"/>
       <description value="ValueSet définissant les types de notes pour l'élément Goal.note."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-household-situation"/>
+      </reference>
+      <name value="TDDUI Household Situation"/>
+      <description value="Extension complexe regroupant la situation familiale, la composition du foyer et sa description textuelle de l'usager."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-identifier | *Version*:2.2.0 |
-| Active as of 2026-02-19 | *Computable Name*:TDDUIEncounterIdentifier |
+| Active as of 2026-02-25 | *Computable Name*:TDDUIEncounterIdentifier |
 
  
 ValueSet pour la définition des codes d'identifiant de séjour 
@@ -54,40 +54,30 @@ ValueSet pour la définition des codes d'identifiant de séjour
   "title" : "TDDUI Encounter Identifier",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-19T15:19:47+00:00",
+  "date" : "2026-02-25T14:12:38+00:00",
   "publisher" : "ANS",
-  "contact" : [
-    {
-      "name" : "ANS",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://esante.gouv.fr"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "ANS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
   "description" : "ValueSet pour la définition des codes d'identifiant de séjour",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
-          "display" : "FRANCE"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
   "compose" : {
-    "include" : [
-      {
-        "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier"
-      },
-      {
-        "valueSet" : ["http://hl7.org/fhir/ValueSet/identifier-type"]
-      }
-    ]
+    "include" : [{
+      "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier"
+    },
+    {
+      "valueSet" : ["http://hl7.org/fhir/ValueSet/identifier-type"]
+    }]
   }
 }
 

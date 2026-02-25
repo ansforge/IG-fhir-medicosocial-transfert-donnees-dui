@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-bilan | *Version*:2.2.0 |
-| Active as of 2026-02-19 | *Computable Name*:TDDUITaskBilan |
+| Active as of 2026-02-25 | *Computable Name*:TDDUITaskBilan |
 
  
 Profil de la ressource Task permettant de représenter le bilan du projet personnalisé. 
@@ -42,496 +42,410 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-bilan.csv
   "name" : "TDDUITaskBilan",
   "title" : "TDDUI Task Bilan",
   "status" : "active",
-  "date" : "2026-02-19T15:19:47+00:00",
+  "date" : "2026-02-25T14:12:38+00:00",
   "publisher" : "ANS",
-  "contact" : [
-    {
-      "name" : "ANS",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://esante.gouv.fr"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "ANS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
   "description" : "Profil de la ressource Task permettant de représenter le bilan du projet personnalisé.",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
-          "display" : "FRANCE"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "specmetier-to-TDDUITaskBilan",
-      "uri" : "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html",
-      "name" : "Modèle de contenu DUI"
-    },
-    {
-      "identity" : "workflow",
-      "uri" : "http://hl7.org/fhir/workflow",
-      "name" : "Workflow Pattern"
-    },
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    },
-    {
-      "identity" : "w5",
-      "uri" : "http://hl7.org/fhir/fivews",
-      "name" : "FiveWs Pattern Mapping"
-    },
-    {
-      "identity" : "v2",
-      "uri" : "http://hl7.org/v2",
-      "name" : "HL7 v2 Mapping"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "specmetier-to-TDDUITaskBilan",
+    "uri" : "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html",
+    "name" : "Modèle de contenu DUI"
+  },
+  {
+    "identity" : "workflow",
+    "uri" : "http://hl7.org/fhir/workflow",
+    "name" : "Workflow Pattern"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "Task",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Task",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Task",
-        "path" : "Task",
-        "mapping" : [
-          {
-            "identity" : "specmetier-to-TDDUITaskBilan",
-            "map" : "Bilan"
-          }
-        ]
+    "element" : [{
+      "id" : "Task",
+      "path" : "Task",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskBilan",
+        "map" : "Bilan"
+      }]
+    },
+    {
+      "id" : "Task.identifier",
+      "path" : "Task.identifier",
+      "short" : "Identifiant du bilan",
+      "min" : 1,
+      "max" : "1",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskBilan",
+        "map" : "idBilan"
+      }]
+    },
+    {
+      "id" : "Task.identifier.system",
+      "path" : "Task.identifier.system",
+      "min" : 1,
+      "patternUri" : "https://identifiant-medicosocial-bilan.esante.gouv.fr"
+    },
+    {
+      "id" : "Task.identifier.value",
+      "path" : "Task.identifier.value",
+      "min" : 1,
+      "example" : [{
+        "label" : "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-BILA-numBilan",
+        "valueString" : "3480787529/123456789-BILA-1234"
+      }]
+    },
+    {
+      "id" : "Task.basedOn",
+      "path" : "Task.basedOn",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise"]
+      }],
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskBilan",
+        "map" : "ProjetPersonnalise"
+      }]
+    },
+    {
+      "id" : "Task.code",
+      "path" : "Task.code",
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j366-statut-bilan-projet-personnalise-ms"
       },
-      {
-        "id" : "Task.identifier",
-        "path" : "Task.identifier",
-        "short" : "Identifiant du bilan",
-        "min" : 1,
-        "max" : "1",
-        "mapping" : [
-          {
-            "identity" : "specmetier-to-TDDUITaskBilan",
-            "map" : "idBilan"
-          }
-        ]
-      },
-      {
-        "id" : "Task.identifier.system",
-        "path" : "Task.identifier.system",
-        "min" : 1,
-        "patternUri" : "https://identifiant-medicosocial-bilan.esante.gouv.fr"
-      },
-      {
-        "id" : "Task.identifier.value",
-        "path" : "Task.identifier.value",
-        "min" : 1,
-        "example" : [
-          {
-            "label" : "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-BILA-numBilan",
-            "valueString" : "3480787529/123456789-BILA-1234"
-          }
-        ]
-      },
-      {
-        "id" : "Task.basedOn",
-        "path" : "Task.basedOn",
-        "min" : 1,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise"
-            ]
-          }
-        ],
-        "mapping" : [
-          {
-            "identity" : "specmetier-to-TDDUITaskBilan",
-            "map" : "ProjetPersonnalise"
-          }
-        ]
-      },
-      {
-        "id" : "Task.code",
-        "path" : "Task.code",
-        "binding" : {
-          "strength" : "required",
-          "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j366-statut-bilan-projet-personnalise-ms"
-        },
-        "mapping" : [
-          {
-            "identity" : "specmetier-to-TDDUITaskBilan",
-            "map" : "categorieBilan"
-          }
-        ]
-      },
-      {
-        "id" : "Task.executionPeriod",
-        "path" : "Task.executionPeriod",
-        "min" : 1
-      },
-      {
-        "id" : "Task.executionPeriod.start",
-        "path" : "Task.executionPeriod.start",
-        "min" : 1,
-        "mapping" : [
-          {
-            "identity" : "specmetier-to-TDDUITaskBilan",
-            "map" : "dateBilan"
-          }
-        ]
-      },
-      {
-        "id" : "Task.input",
-        "path" : "Task.input",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "pattern",
-              "path" : "type"
-            }
-          ],
-          "rules" : "open"
-        }
-      },
-      {
-        "id" : "Task.input.type",
-        "path" : "Task.input.type",
-        "binding" : {
-          "strength" : "required",
-          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-task-input-bilan"
-        }
-      },
-      {
-        "id" : "Task.input:perimetre",
-        "path" : "Task.input",
-        "sliceName" : "perimetre",
-        "short" : "Périmètre du bilan",
-        "min" : 0,
-        "max" : "1",
-        "mapping" : [
-          {
-            "identity" : "specmetier-to-TDDUITaskBilan",
-            "map" : "perimetreBilan"
-          }
-        ]
-      },
-      {
-        "id" : "Task.input:perimetre.type",
-        "path" : "Task.input.type",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-bilan",
-              "code" : "perimetre"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "Task.input:perimetre.value[x]",
-        "path" : "Task.input.value[x]",
-        "type" : [
-          {
-            "code" : "string"
-          }
-        ]
-      },
-      {
-        "id" : "Task.input:problematique",
-        "path" : "Task.input",
-        "sliceName" : "problematique",
-        "short" : "Problématique liée à l'usager",
-        "min" : 0,
-        "max" : "1",
-        "mapping" : [
-          {
-            "identity" : "specmetier-to-TDDUITaskBilan",
-            "map" : "problematiqueGlobaleUsager"
-          }
-        ]
-      },
-      {
-        "id" : "Task.input:problematique.type",
-        "path" : "Task.input.type",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-bilan",
-              "code" : "problematique"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "Task.input:problematique.value[x]",
-        "path" : "Task.input.value[x]",
-        "type" : [
-          {
-            "code" : "string"
-          }
-        ]
-      },
-      {
-        "id" : "Task.input:invite",
-        "path" : "Task.input",
-        "sliceName" : "invite",
-        "short" : "Liste des personnes invitées à participer au bilan",
-        "min" : 0,
-        "max" : "1",
-        "mapping" : [
-          {
-            "identity" : "specmetier-to-TDDUITaskBilan",
-            "map" : "inviteBilan"
-          }
-        ]
-      },
-      {
-        "id" : "Task.input:invite.type",
-        "path" : "Task.input.type",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-bilan",
-              "code" : "invite"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "Task.input:invite.value[x]",
-        "path" : "Task.input.value[x]",
-        "type" : [
-          {
-            "code" : "string"
-          }
-        ]
-      },
-      {
-        "id" : "Task.input:pieceJointe",
-        "path" : "Task.input",
-        "sliceName" : "pieceJointe",
-        "short" : "Pièce jointe du bilan",
-        "min" : 0,
-        "max" : "*",
-        "mapping" : [
-          {
-            "identity" : "specmetier-to-TDDUITaskBilan",
-            "map" : "pieceJointeBilan"
-          }
-        ]
-      },
-      {
-        "id" : "Task.input:pieceJointe.type",
-        "path" : "Task.input.type",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-bilan",
-              "code" : "pieceJointe"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "Task.input:pieceJointe.value[x]",
-        "path" : "Task.input.value[x]",
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Task.input:dateProchainBilan",
-        "path" : "Task.input",
-        "sliceName" : "dateProchainBilan",
-        "short" : "Date du prochain bilan",
-        "min" : 0,
-        "max" : "1",
-        "mapping" : [
-          {
-            "identity" : "specmetier-to-TDDUITaskBilan",
-            "map" : "dateProchainBilan"
-          }
-        ]
-      },
-      {
-        "id" : "Task.input:dateProchainBilan.type",
-        "path" : "Task.input.type",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-bilan",
-              "code" : "dateProchainBilan"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "Task.input:dateProchainBilan.value[x]",
-        "path" : "Task.input.value[x]",
-        "type" : [
-          {
-            "code" : "dateTime"
-          }
-        ]
-      },
-      {
-        "id" : "Task.input:synthesePreparationBilan",
-        "path" : "Task.input",
-        "sliceName" : "synthesePreparationBilan",
-        "short" : "Préparation du bilan",
-        "min" : 0,
-        "max" : "*",
-        "mapping" : [
-          {
-            "identity" : "specmetier-to-TDDUITaskBilan",
-            "map" : "synthesePreparationBilan"
-          }
-        ]
-      },
-      {
-        "id" : "Task.input:synthesePreparationBilan.type",
-        "path" : "Task.input.type",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-bilan",
-              "code" : "synthesePreparationBilan"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "Task.input:synthesePreparationBilan.value[x]",
-        "path" : "Task.input.value[x]",
-        "type" : [
-          {
-            "code" : "Annotation"
-          }
-        ]
-      },
-      {
-        "id" : "Task.input:synthesePreparationBilan.value[x].author[x]",
-        "path" : "Task.input.value[x].author[x]",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "type",
-              "path" : "$this"
-            }
-          ],
-          "ordered" : false,
-          "rules" : "open"
-        },
-        "min" : 1
-      },
-      {
-        "id" : "Task.input:synthesePreparationBilan.value[x].author[x]:authorReference",
-        "path" : "Task.input.value[x].author[x]",
-        "sliceName" : "authorReference",
-        "min" : 1,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner",
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient",
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins",
-              "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact"
-            ]
-          }
-        ],
-        "mapping" : [
-          {
-            "identity" : "specmetier-to-TDDUITaskBilan",
-            "map" : "synthesePreparationBilan.auteur"
-          }
-        ]
-      },
-      {
-        "id" : "Task.input:synthesePreparationBilan.value[x].text",
-        "path" : "Task.input.value[x].text",
-        "mapping" : [
-          {
-            "identity" : "specmetier-to-TDDUITaskBilan",
-            "map" : "synthesePreparationBilan.corps"
-          }
-        ]
-      },
-      {
-        "id" : "Task.output",
-        "path" : "Task.output",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "pattern",
-              "path" : "type"
-            }
-          ],
-          "rules" : "open"
-        }
-      },
-      {
-        "id" : "Task.output.type",
-        "path" : "Task.output.type",
-        "binding" : {
-          "strength" : "required",
-          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-task-output-bilan"
-        }
-      },
-      {
-        "id" : "Task.output:syntheseBilan",
-        "path" : "Task.output",
-        "sliceName" : "syntheseBilan",
-        "short" : "Synthèse du bilan",
-        "min" : 0,
-        "max" : "1",
-        "mapping" : [
-          {
-            "identity" : "specmetier-to-TDDUITaskBilan",
-            "map" : "syntheseBilan"
-          }
-        ]
-      },
-      {
-        "id" : "Task.output:syntheseBilan.type",
-        "path" : "Task.output.type",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-output-bilan",
-              "code" : "syntheseBilan"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "Task.output:syntheseBilan.value[x]",
-        "path" : "Task.output.value[x]",
-        "type" : [
-          {
-            "code" : "string"
-          }
-        ]
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskBilan",
+        "map" : "categorieBilan"
+      }]
+    },
+    {
+      "id" : "Task.executionPeriod",
+      "path" : "Task.executionPeriod",
+      "min" : 1
+    },
+    {
+      "id" : "Task.executionPeriod.start",
+      "path" : "Task.executionPeriod.start",
+      "min" : 1,
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskBilan",
+        "map" : "dateBilan"
+      }]
+    },
+    {
+      "id" : "Task.input",
+      "path" : "Task.input",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "type"
+        }],
+        "rules" : "open"
       }
-    ]
+    },
+    {
+      "id" : "Task.input.type",
+      "path" : "Task.input.type",
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-task-input-bilan"
+      }
+    },
+    {
+      "id" : "Task.input:perimetre",
+      "path" : "Task.input",
+      "sliceName" : "perimetre",
+      "short" : "Périmètre du bilan",
+      "min" : 0,
+      "max" : "1",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskBilan",
+        "map" : "perimetreBilan"
+      }]
+    },
+    {
+      "id" : "Task.input:perimetre.type",
+      "path" : "Task.input.type",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-bilan",
+          "code" : "perimetre"
+        }]
+      }
+    },
+    {
+      "id" : "Task.input:perimetre.value[x]",
+      "path" : "Task.input.value[x]",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "Task.input:problematique",
+      "path" : "Task.input",
+      "sliceName" : "problematique",
+      "short" : "Problématique liée à l'usager",
+      "min" : 0,
+      "max" : "1",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskBilan",
+        "map" : "problematiqueGlobaleUsager"
+      }]
+    },
+    {
+      "id" : "Task.input:problematique.type",
+      "path" : "Task.input.type",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-bilan",
+          "code" : "problematique"
+        }]
+      }
+    },
+    {
+      "id" : "Task.input:problematique.value[x]",
+      "path" : "Task.input.value[x]",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "Task.input:invite",
+      "path" : "Task.input",
+      "sliceName" : "invite",
+      "short" : "Liste des personnes invitées à participer au bilan",
+      "min" : 0,
+      "max" : "1",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskBilan",
+        "map" : "inviteBilan"
+      }]
+    },
+    {
+      "id" : "Task.input:invite.type",
+      "path" : "Task.input.type",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-bilan",
+          "code" : "invite"
+        }]
+      }
+    },
+    {
+      "id" : "Task.input:invite.value[x]",
+      "path" : "Task.input.value[x]",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "Task.input:pieceJointe",
+      "path" : "Task.input",
+      "sliceName" : "pieceJointe",
+      "short" : "Pièce jointe du bilan",
+      "min" : 0,
+      "max" : "*",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskBilan",
+        "map" : "pieceJointeBilan"
+      }]
+    },
+    {
+      "id" : "Task.input:pieceJointe.type",
+      "path" : "Task.input.type",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-bilan",
+          "code" : "pieceJointe"
+        }]
+      }
+    },
+    {
+      "id" : "Task.input:pieceJointe.value[x]",
+      "path" : "Task.input.value[x]",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"]
+      }]
+    },
+    {
+      "id" : "Task.input:dateProchainBilan",
+      "path" : "Task.input",
+      "sliceName" : "dateProchainBilan",
+      "short" : "Date du prochain bilan",
+      "min" : 0,
+      "max" : "1",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskBilan",
+        "map" : "dateProchainBilan"
+      }]
+    },
+    {
+      "id" : "Task.input:dateProchainBilan.type",
+      "path" : "Task.input.type",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-bilan",
+          "code" : "dateProchainBilan"
+        }]
+      }
+    },
+    {
+      "id" : "Task.input:dateProchainBilan.value[x]",
+      "path" : "Task.input.value[x]",
+      "type" : [{
+        "code" : "dateTime"
+      }]
+    },
+    {
+      "id" : "Task.input:synthesePreparationBilan",
+      "path" : "Task.input",
+      "sliceName" : "synthesePreparationBilan",
+      "short" : "Préparation du bilan",
+      "min" : 0,
+      "max" : "*",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskBilan",
+        "map" : "synthesePreparationBilan"
+      }]
+    },
+    {
+      "id" : "Task.input:synthesePreparationBilan.type",
+      "path" : "Task.input.type",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-bilan",
+          "code" : "synthesePreparationBilan"
+        }]
+      }
+    },
+    {
+      "id" : "Task.input:synthesePreparationBilan.value[x]",
+      "path" : "Task.input.value[x]",
+      "type" : [{
+        "code" : "Annotation"
+      }]
+    },
+    {
+      "id" : "Task.input:synthesePreparationBilan.value[x].author[x]",
+      "path" : "Task.input.value[x].author[x]",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "type",
+          "path" : "$this"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      },
+      "min" : 1
+    },
+    {
+      "id" : "Task.input:synthesePreparationBilan.value[x].author[x]:authorReference",
+      "path" : "Task.input.value[x].author[x]",
+      "sliceName" : "authorReference",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner",
+        "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient",
+        "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins",
+        "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact"]
+      }],
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskBilan",
+        "map" : "synthesePreparationBilan.auteur"
+      }]
+    },
+    {
+      "id" : "Task.input:synthesePreparationBilan.value[x].text",
+      "path" : "Task.input.value[x].text",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskBilan",
+        "map" : "synthesePreparationBilan.corps"
+      }]
+    },
+    {
+      "id" : "Task.output",
+      "path" : "Task.output",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "type"
+        }],
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "Task.output.type",
+      "path" : "Task.output.type",
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-task-output-bilan"
+      }
+    },
+    {
+      "id" : "Task.output:syntheseBilan",
+      "path" : "Task.output",
+      "sliceName" : "syntheseBilan",
+      "short" : "Synthèse du bilan",
+      "min" : 0,
+      "max" : "1",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUITaskBilan",
+        "map" : "syntheseBilan"
+      }]
+    },
+    {
+      "id" : "Task.output:syntheseBilan.type",
+      "path" : "Task.output.type",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-output-bilan",
+          "code" : "syntheseBilan"
+        }]
+      }
+    },
+    {
+      "id" : "Task.output:syntheseBilan.value[x]",
+      "path" : "Task.output.value[x]",
+      "type" : [{
+        "code" : "string"
+      }]
+    }]
   }
 }
 

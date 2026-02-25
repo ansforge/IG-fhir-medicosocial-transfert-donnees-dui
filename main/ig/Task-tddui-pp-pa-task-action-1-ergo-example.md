@@ -33,53 +33,41 @@ Profil: [TDDUI Task Action](StructureDefinition-tddui-task-action.md)
   "resourceType" : "Task",
   "id" : "tddui-pp-pa-task-action-1-ergo-example",
   "meta" : {
-    "profile" : [
-      "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"
-    ]
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"]
   },
-  "identifier" : [
-    {
-      "system" : "https://identifiant-medicosocial-action.esante.gouv.fr",
-      "value" : "3480787529/123456789-ACTI-1235"
-    }
-  ],
-  "basedOn" : [
-    {
-      "reference" : "CarePlan/tddui-pp-ime-careplan-example"
-    }
-  ],
+  "identifier" : [{
+    "system" : "https://identifiant-medicosocial-action.esante.gouv.fr",
+    "value" : "3480787529/123456789-ACTI-1235"
+  }],
+  "basedOn" : [{
+    "reference" : "CarePlan/tddui-pp-ime-careplan-example"
+  }],
   "status" : "in-progress",
   "intent" : "plan",
   "description" : "Évaluer et aménagr la chambre (éclairage, barres, tapis)",
   "owner" : {
     "display" : "Ergothérapeute"
   },
-  "input" : [
-    {
-      "type" : {
-        "coding" : [
-          {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action",
-            "code" : "titre"
-          }
-        ]
-      },
-      "valueString" : "Action de l'ergothérapeute pour atteindre l'objectif 1"
+  "input" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action",
+        "code" : "titre"
+      }]
     },
-    {
-      "type" : {
-        "coding" : [
-          {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action",
-            "code" : "objectif"
-          }
-        ]
-      },
-      "valueReference" : {
-        "reference" : "Goal/tddui-pp-pa-goal-objectif-1-example"
-      }
+    "valueString" : "Action de l'ergothérapeute pour atteindre l'objectif 1"
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action",
+        "code" : "objectif"
+      }]
+    },
+    "valueReference" : {
+      "reference" : "Goal/tddui-pp-pa-goal-objectif-1-example"
     }
-  ]
+  }]
 }
 
 ```

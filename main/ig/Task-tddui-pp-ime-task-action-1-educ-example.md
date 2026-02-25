@@ -36,40 +36,30 @@ Profil: [TDDUI Task Action](StructureDefinition-tddui-task-action.md)
   "resourceType" : "Task",
   "id" : "tddui-pp-ime-task-action-1-educ-example",
   "meta" : {
-    "profile" : [
-      "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"
-    ]
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"]
   },
-  "identifier" : [
-    {
-      "system" : "https://identifiant-medicosocial-action.esante.gouv.fr",
-      "value" : "3480787529/123456-ACTI-1235"
-    }
-  ],
-  "basedOn" : [
-    {
-      "reference" : "CarePlan/tddui-pp-ime-careplan-example"
-    }
-  ],
+  "identifier" : [{
+    "system" : "https://identifiant-medicosocial-action.esante.gouv.fr",
+    "value" : "3480787529/123456-ACTI-1235"
+  }],
+  "basedOn" : [{
+    "reference" : "CarePlan/tddui-pp-ime-careplan-example"
+  }],
   "status" : "in-progress",
   "intent" : "plan",
   "description" : "Lecture guidée sur tablette 15 min/jour",
   "owner" : {
     "display" : "AESH"
   },
-  "input" : [
-    {
-      "type" : {
-        "coding" : [
-          {
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action",
-            "code" : "titre"
-          }
-        ]
-      },
-      "valueString" : "Action de l'éducateur spécialisé pour atteindre l'objectif 2"
-    }
-  ]
+  "input" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action",
+        "code" : "titre"
+      }]
+    },
+    "valueString" : "Action de l'éducateur spécialisé pour atteindre l'objectif 2"
+  }]
 }
 
 ```
