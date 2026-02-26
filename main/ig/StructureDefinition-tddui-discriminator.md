@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator | *Version*:2.2.0 |
-| Active as of 2026-02-25 | *Computable Name*:TDDUIDiscriminator |
+| Active as of 2026-02-26 | *Computable Name*:TDDUIDiscriminator |
 
 Extension pour discriminer les éléments CarePlan.supportingInfo et Goal.note.
 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-discriminator.
   "name" : "TDDUIDiscriminator",
   "title" : "TDDUI Discriminator",
   "status" : "active",
-  "date" : "2026-02-25T14:12:38+00:00",
+  "date" : "2026-02-26T10:50:19+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

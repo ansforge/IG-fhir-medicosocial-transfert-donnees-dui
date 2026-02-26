@@ -10,7 +10,7 @@
   <name value="TDDUI"/>
   <title value="Médicosocial - Transfert de données DUI"/>
   <status value="active"/>
-  <date value="2026-02-25T14:12:38+00:00"/>
+  <date value="2026-02-26T10:50:19+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -530,6 +530,17 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/tddui-assessment-method"/>
+      </reference>
+      <name value="TDDUI Assessment Method"/>
+      <description value="Mode d'évaluation, texte libre permettant de mettre le contexte de l'évaluation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/tddui-attachment"/>
       </reference>
       <name value="TDDUI Attachment"/>
@@ -600,6 +611,17 @@
       </reference>
       <name value="TDDUI CarePlan supportingInfo"/>
       <description value="ValueSet définissant les types de notes pour l'élément CarePlan.supportingInfo."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/tddui-cim-10"/>
+      </reference>
+      <name value="TDDUI CIM10"/>
+      <description value="ValueSet incluant les codes de la terminologie CIM-1O."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -985,6 +1007,116 @@
       </reference>
       <name value="TDDUI Nationality Extension"/>
       <description value="The nationality of the patient or a related person."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-observation-cause-mortalite"/>
+      </reference>
+      <name value="TDDUI Observation Cause Mortalite"/>
+      <description value="Profil de la ressource Observation permettant de représenter les causes de mortalité d'un usager."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/tddui-observation-cause-mortalite-example"/>
+      </reference>
+      <name value="TDDUI Observation Cause Mortalite Example"/>
+      <description value="Exemple de la ressource TDDUIObservationMortalite"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-mortalite"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-observation-mobilite-usager"/>
+      </reference>
+      <name value="TDDUI Observation Mobilite Usager"/>
+      <description value="Profil de la ressource Observation permettant de représenter la mobilité de l'usager."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/tddui-observation-mobilite-usager-example"/>
+      </reference>
+      <name value="TDDUI Observation Mobilite Usager Example"/>
+      <description value="Exemple de la ressource TDDUIObservationMobiliteUsager"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite-usager"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-observation-periode-scolaire"/>
+      </reference>
+      <name value="TDDUI Observation Periode Scolaire"/>
+      <description value="Profil de la ressource Observation permettant de représenter la période scolaire de l'usager."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/tddui-observation-periode-scolaire"/>
+      </reference>
+      <name value="TDDUI Observation Periode Scolaire"/>
+      <description value="ValueSet pour l'Observation de la Période Scolaire."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/tddui-observation-periode-scolaire"/>
+      </reference>
+      <name value="TDDUI Observation Periode Scolaire"/>
+      <description value="CodeSystem pour l'Observation de la Période Scolaire."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/tddui-observation-periodescolaire-example"/>
+      </reference>
+      <name value="TDDUI Observation PeriodeScolaire Example"/>
+      <description value="Exemple de la ressource TDDUIObservationPeriodeScolaire"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-periode-scolaire"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/tddui-observation-type"/>
+      </reference>
+      <name value="TDDUI Observation Type"/>
+      <description value="ValueSet pour les types d'Observation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/tddui-observation-type"/>
+      </reference>
+      <name value="TDDUI Observation Type"/>
+      <description value="CodeSystem pour la défintion des types d'Observation"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1523,7 +1655,7 @@
         <reference value="StructureDefinition/tddui-qr-participant"/>
       </reference>
       <name value="TDDUI QR Participant"/>
-      <description value="Extension permettant d'ajouter le responsable de l'évaluation et l'auteur du statut de l'évaluation dans un QuestionnaireResponse."/>
+      <description value="Extension permettant d'ajouter le responsable et le porteur de l'évaluation dans un QuestionnaireResponse."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1666,7 +1798,7 @@
         <reference value="StructureDefinition/tddui-status-author"/>
       </reference>
       <name value="TDDUI Status Author"/>
-      <description value="Extension permettant de représenter la profession du professionnel."/>
+      <description value="Extension permettant de représenter l'auteur du statut."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

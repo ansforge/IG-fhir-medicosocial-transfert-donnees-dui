@@ -9,9 +9,9 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant | *Version*:2.2.0 |
-| Active as of 2026-02-25 | *Computable Name*:TDDUIQRParticipant |
+| Active as of 2026-02-26 | *Computable Name*:TDDUIQRParticipant |
 
-Extension permettant d'ajouter le responsable de l'évaluation et l'auteur du statut de l'évaluation dans un QuestionnaireResponse.
+Extension permettant d'ajouter le responsable et le porteur de l'évaluation dans un QuestionnaireResponse.
 
 **Context of Use**
 
@@ -20,6 +20,7 @@ Extension permettant d'ajouter le responsable de l'évaluation et l'auteur du st
 **Utilisations:**
 
 * Utilise ce/t/te Extension: [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md)
+* Exemples pour ce/t/te Extension: [Bundle/tddui-pp-pa-bundle-example](Bundle-tddui-pp-pa-bundle-example.md) and [QuestionnaireResponse/tddui-pp-pa-questionnaire-response-aggir-pa-example](QuestionnaireResponse-tddui-pp-pa-questionnaire-response-aggir-pa-example.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-qr-participant)
 
@@ -46,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-qr-participant
   "name" : "TDDUIQRParticipant",
   "title" : "TDDUI QR Participant",
   "status" : "active",
-  "date" : "2026-02-25T14:12:38+00:00",
+  "date" : "2026-02-26T10:50:19+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -55,7 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-qr-participant
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Extension permettant d'ajouter le responsable de l'évaluation et l'auteur du statut de l'évaluation dans un QuestionnaireResponse.",
+  "description" : "Extension permettant d'ajouter le responsable et le porteur de l'évaluation dans un QuestionnaireResponse.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -83,7 +84,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-qr-participant
       "id" : "Extension",
       "path" : "Extension",
       "short" : "TDDUI QR Participant",
-      "definition" : "Extension permettant d'ajouter le responsable de l'évaluation et l'auteur du statut de l'évaluation dans un QuestionnaireResponse."
+      "definition" : "Extension permettant d'ajouter le responsable et le porteur de l'évaluation dans un QuestionnaireResponse."
     },
     {
       "id" : "Extension.extension:TDDUIResponsible",
@@ -112,29 +113,29 @@ Other representations of profile: [CSV](StructureDefinition-tddui-qr-participant
       }]
     },
     {
-      "id" : "Extension.extension:TDDUIStatusAuthor",
+      "id" : "Extension.extension:TDDUIHolder",
       "path" : "Extension.extension",
-      "sliceName" : "TDDUIStatusAuthor",
-      "short" : "Auteur du statut de l'évaluation.",
+      "sliceName" : "TDDUIHolder",
+      "short" : "Personne morale porteuse de l'évaluation de l'usager.",
       "min" : 0,
       "max" : "1"
     },
     {
-      "id" : "Extension.extension:TDDUIStatusAuthor.extension",
+      "id" : "Extension.extension:TDDUIHolder.extension",
       "path" : "Extension.extension.extension",
       "max" : "0"
     },
     {
-      "id" : "Extension.extension:TDDUIStatusAuthor.url",
+      "id" : "Extension.extension:TDDUIHolder.url",
       "path" : "Extension.extension.url",
-      "fixedUri" : "TDDUIStatusAuthor"
+      "fixedUri" : "TDDUIHolder"
     },
     {
-      "id" : "Extension.extension:TDDUIStatusAuthor.value[x]",
+      "id" : "Extension.extension:TDDUIHolder.value[x]",
       "path" : "Extension.extension.value[x]",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner"]
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization"]
       }]
     },
     {

@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "TDDUI"] ; # 
   fhir:title [ fhir:v "Médicosocial - Transfert de données DUI"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-02-25T14:12:38+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-02-26T10:50:19+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -1473,6 +1473,27 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-assessment-method> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-assessment-method" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Assessment Method" ] ;
+       fhir:description [ fhir:v "Mode d'évaluation, texte libre permettant de mettre le contexte de l'évaluation." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment> ;
          fhir:reference [ fhir:v "StructureDefinition/tddui-attachment" ]
        ] ;
@@ -1605,6 +1626,27 @@
        ] ;
        fhir:name [ fhir:v "TDDUI CarePlan supportingInfo" ] ;
        fhir:description [ fhir:v "ValueSet définissant les types de notes pour l'élément CarePlan.supportingInfo." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-cim-10> ;
+         fhir:reference [ fhir:v "ValueSet/tddui-cim-10" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI CIM10" ] ;
+       fhir:description [ fhir:v "ValueSet incluant les codes de la terminologie CIM-1O." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -2342,6 +2384,219 @@
        ] ;
        fhir:name [ fhir:v "TDDUI Nationality Extension" ] ;
        fhir:description [ fhir:v "The nationality of the patient or a related person." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-mortalite> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-observation-cause-mortalite" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Observation Cause Mortalite" ] ;
+       fhir:description [ fhir:v "Profil de la ressource Observation permettant de représenter les causes de mortalité d'un usager." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Observation/tddui-observation-cause-mortalite-example> ;
+         fhir:reference [ fhir:v "Observation/tddui-observation-cause-mortalite-example" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Observation Cause Mortalite Example" ] ;
+       fhir:description [ fhir:v "Exemple de la ressource TDDUIObservationMortalite" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-mortalite"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-mortalite>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite-usager> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-observation-mobilite-usager" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Observation Mobilite Usager" ] ;
+       fhir:description [ fhir:v "Profil de la ressource Observation permettant de représenter la mobilité de l'usager." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Observation/tddui-observation-mobilite-usager-example> ;
+         fhir:reference [ fhir:v "Observation/tddui-observation-mobilite-usager-example" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Observation Mobilite Usager Example" ] ;
+       fhir:description [ fhir:v "Exemple de la ressource TDDUIObservationMobiliteUsager" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite-usager"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite-usager>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-periode-scolaire> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-observation-periode-scolaire" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Observation Periode Scolaire" ] ;
+       fhir:description [ fhir:v "Profil de la ressource Observation permettant de représenter la période scolaire de l'usager." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-observation-periode-scolaire> ;
+         fhir:reference [ fhir:v "ValueSet/tddui-observation-periode-scolaire" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Observation Periode Scolaire" ] ;
+       fhir:description [ fhir:v "ValueSet pour l'Observation de la Période Scolaire." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-periode-scolaire> ;
+         fhir:reference [ fhir:v "CodeSystem/tddui-observation-periode-scolaire" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Observation Periode Scolaire" ] ;
+       fhir:description [ fhir:v "CodeSystem pour l'Observation de la Période Scolaire." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Observation/tddui-observation-periodescolaire-example> ;
+         fhir:reference [ fhir:v "Observation/tddui-observation-periodescolaire-example" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Observation PeriodeScolaire Example" ] ;
+       fhir:description [ fhir:v "Exemple de la ressource TDDUIObservationPeriodeScolaire" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-periode-scolaire"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-periode-scolaire>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-observation-type> ;
+         fhir:reference [ fhir:v "ValueSet/tddui-observation-type" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Observation Type" ] ;
+       fhir:description [ fhir:v "ValueSet pour les types d'Observation." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-type> ;
+         fhir:reference [ fhir:v "CodeSystem/tddui-observation-type" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Observation Type" ] ;
+       fhir:description [ fhir:v "CodeSystem pour la défintion des types d'Observation" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -3409,7 +3664,7 @@
          fhir:reference [ fhir:v "StructureDefinition/tddui-qr-participant" ]
        ] ;
        fhir:name [ fhir:v "TDDUI QR Participant" ] ;
-       fhir:description [ fhir:v "Extension permettant d'ajouter le responsable de l'évaluation et l'auteur du statut de l'évaluation dans un QuestionnaireResponse." ] ;
+       fhir:description [ fhir:v "Extension permettant d'ajouter le responsable et le porteur de l'évaluation dans un QuestionnaireResponse." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -3688,7 +3943,7 @@
          fhir:reference [ fhir:v "StructureDefinition/tddui-status-author" ]
        ] ;
        fhir:name [ fhir:v "TDDUI Status Author" ] ;
-       fhir:description [ fhir:v "Extension permettant de représenter la profession du professionnel." ] ;
+       fhir:description [ fhir:v "Extension permettant de représenter l'auteur du statut." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

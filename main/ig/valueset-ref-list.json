@@ -131,6 +131,18 @@
     "StructureDefinition-tddui-careplan-projet-personnalise.html" : "TDDUI CarePlan Projet Personalise"
   },
   {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-cim-10",
+    "version" : "2.2.0",
+    "status" : "active",
+    "name" : "TDDUICIM10",
+    "title" : "TDDUI CIM10",
+    "description" : "ValueSet incluant les codes de la terminologie CIM-1O.",
+    "systems" : ["https://smt.esante.gouv.fr/terminologie-cim-10"],
+    "uses" : {
+    },
+    "StructureDefinition-tddui-observation-cause-mortalite.html" : "TDDUI Observation Cause Mortalite"
+  },
+  {
     "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-contact-protection-juridique",
     "version" : "2.2.0",
     "status" : "active",
@@ -254,6 +266,33 @@
     "StructureDefinition-tddui-goal-objectif.html" : "TDDUI Goal Objectif"
   },
   {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-observation-periode-scolaire",
+    "version" : "2.2.0",
+    "status" : "active",
+    "name" : "TDDUIObservationPeriodeScolaire",
+    "title" : "TDDUI Observation Periode Scolaire",
+    "description" : "ValueSet pour l'Observation de la Période Scolaire.",
+    "systems" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-periode-scolaire"],
+    "uses" : {
+    },
+    "StructureDefinition-tddui-observation-periode-scolaire.html" : "TDDUI Observation Periode Scolaire"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-observation-type",
+    "version" : "2.2.0",
+    "status" : "active",
+    "name" : "TDDUIObservationType",
+    "title" : "TDDUI Observation Type",
+    "description" : "ValueSet pour les types d'Observation.",
+    "systems" : ["http://loinc.org",
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-type"],
+    "uses" : {
+    },
+    "StructureDefinition-tddui-observation-periode-scolaire.html" : "TDDUI Observation Periode Scolaire",
+    "StructureDefinition-tddui-observation-cause-mortalite.html" : "TDDUI Observation Cause Mortalite",
+    "StructureDefinition-tddui-observation-mobilite-usager.html" : "TDDUI Observation Mobilite Usager"
+  },
+  {
     "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-patient-identifier",
     "version" : "2.2.0",
     "status" : "active",
@@ -278,9 +317,9 @@
     "systems" : ["https://smt.esante.gouv.fr/terminologie-SERAFINPH"],
     "uses" : {
     },
-    "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement",
     "StructureDefinition-tddui-task-prestation.html" : "TDDUI Task Prestation",
-    "ValueSet-tddui-encounter-type.html" : "TDDUI Encounter Type"
+    "ValueSet-tddui-encounter-type.html" : "TDDUI Encounter Type",
+    "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
   },
   {
     "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-task-input-action",
@@ -625,6 +664,20 @@
     "StructureDefinition-tddui-practitioner-role.html" : "TDDUI Practitioner Role"
   },
   {
+    "url" : "https://mos.esante.gouv.fr/NOS/JDV_J81-TypeDiplome-RASS/FHIR/JDV-J81-TypeDiplome-RASS",
+    "version" : "20230526120000",
+    "status" : "active",
+    "name" : "JDV_J81_TypeDiplome_RASS",
+    "title" : null,
+    "description" : "Types de diplôme du RASS",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome"],
+    "oids" : ["1.2.250.1.213.1.6.1.149"],
+    "sources" : ["1.2.250.1.213.1.6.1.149"],
+    "uses" : {
+    },
+    "StructureDefinition-tddui-observation-periode-scolaire.html" : "TDDUI Observation Periode Scolaire"
+  },
+  {
     "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-detail-materiel-specialise-cisis",
     "version" : "20250624152100",
     "status" : "active",
@@ -710,6 +763,20 @@
     "StructureDefinition-tddui-household-situation.html" : "TDDUI Household Situation"
   },
   {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j386-type-enseignement-specialise-ms",
+    "version" : "20260202120000",
+    "status" : "active",
+    "name" : "JdvJ386TypeEnseignementSpecialiseMs",
+    "title" : "Jdv J386 Type Enseignement Specialise Ms",
+    "description" : "Type d'enseignement spécialisé.",
+    "systems" : ["https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r408-type-enseignement-specialise"],
+    "oids" : ["1.2.250.1.213.3.4.229"],
+    "sources" : ["1.2.250.1.213.3.4.229"],
+    "uses" : {
+    },
+    "StructureDefinition-tddui-observation-periode-scolaire.html" : "TDDUI Observation Periode Scolaire"
+  },
+  {
     "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis",
     "version" : "20250624152101",
     "status" : "active",
@@ -721,6 +788,7 @@
     "sources" : ["1.2.250.1.213.1.1.5.140"],
     "uses" : {
     },
+    "StructureDefinition-tddui-observation-mobilite-usager.html" : "TDDUI Observation Mobilite Usager",
     "StructureDefinition-tddui-task-transport.html" : "TDDUI Task Transport"
   },
   {
@@ -764,8 +832,8 @@
     "sources" : ["1.2.250.1.213.1.1.5.811"],
     "uses" : {
     },
-    "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement",
-    "ValueSet-tddui-encounter-type.html" : "TDDUI Encounter Type"
+    "ValueSet-tddui-encounter-type.html" : "TDDUI Encounter Type",
+    "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
   },
   {
     "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-motorisation-cisis",

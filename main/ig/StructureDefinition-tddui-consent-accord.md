@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord | *Version*:2.2.0 |
-| Active as of 2026-02-25 | *Computable Name*:TDDUIConsentAccord |
+| Active as of 2026-02-26 | *Computable Name*:TDDUIConsentAccord |
 
  
 Profil de la ressource Consent permettant de représenter l'accord de l'usager, de son entourage ou de la structure. 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-consent-accord
   "name" : "TDDUIConsentAccord",
   "title" : "TDDUI Consent Accord",
   "status" : "active",
-  "date" : "2026-02-25T14:12:38+00:00",
+  "date" : "2026-02-26T10:50:19+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

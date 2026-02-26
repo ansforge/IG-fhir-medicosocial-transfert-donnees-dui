@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-serafin | *Version*:2.2.0 |
-| Active as of 2026-02-25 | *Computable Name*:TDDUISerafin |
+| Active as of 2026-02-26 | *Computable Name*:TDDUISerafin |
 
  
 ValueSet contenant les codes SERAFIN (prestations directes et indirectes) pour le profil TDDUI Encounter Evenement. 
@@ -56,7 +56,7 @@ ValueSet contenant les codes SERAFIN (prestations directes et indirectes) pour l
   "title" : "TDDUI SERAFIN",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-25T14:12:38+00:00",
+  "date" : "2026-02-26T10:50:19+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

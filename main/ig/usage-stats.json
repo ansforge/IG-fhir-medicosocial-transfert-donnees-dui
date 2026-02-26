@@ -12,6 +12,13 @@
       ]
     },
     {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-assessment-method",
+      "title": "TDDUI Assessment Method",
+      "types": [
+        "string"
+      ]
+    },
+    {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment",
       "title": "TDDUI Attachment",
       "types": [
@@ -532,6 +539,20 @@
         "title": "TDDUI Goal Objectif"
       }
     ],
+    "Observation": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-mortalite",
+        "title": "TDDUI Observation Cause Mortalite"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite-usager",
+        "title": "TDDUI Observation Mobilite Usager"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-periode-scolaire",
+        "title": "TDDUI Observation Periode Scolaire"
+      }
+    ],
     "Organization": [
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization",
@@ -678,6 +699,9 @@
     "http://hl7.org/fhir/StructureDefinition/regex": [
       "StructureDefinition.snapshot.element.type"
     ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
     ],
@@ -766,6 +790,9 @@
       "Bundle.entry.resource",
       "Encounter"
     ],
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-assessment-method": [
+      "QuestionnaireResponse"
+    ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment": [
       "Bundle.entry.resource",
       "CarePlan",
@@ -849,6 +876,7 @@
       "PractitionerRole.code"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant": [
+      "Bundle.entry.resource",
       "QuestionnaireResponse"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact-description": [
@@ -861,6 +889,7 @@
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-status-author": [
       "CarePlan.status",
       "Goal.lifecycleStatus",
+      "QuestionnaireResponse.status",
       "Task.status"
     ]
   }

@@ -9,9 +9,9 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-status-author | *Version*:2.2.0 |
-| Active as of 2026-02-25 | *Computable Name*:TDDUIStatusAuthor |
+| Active as of 2026-02-26 | *Computable Name*:TDDUIStatusAuthor |
 
-Extension permettant de représenter la profession du professionnel.
+Extension permettant de représenter l'auteur du statut.
 
 **Context of Use**
 
@@ -19,7 +19,7 @@ Extension permettant de représenter la profession du professionnel.
 
 **Utilisations:**
 
-* Utilise ce/t/te Extension: [TDDUI CarePlan Projet Personalise](StructureDefinition-tddui-careplan-projet-personnalise.md), [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md), [TDDUI Task Action](StructureDefinition-tddui-task-action.md) and [TDDUI Task Prestation](StructureDefinition-tddui-task-prestation.md)
+* Utilise ce/t/te Extension: [TDDUI CarePlan Projet Personalise](StructureDefinition-tddui-careplan-projet-personnalise.md), [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md), [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md), [TDDUI Task Action](StructureDefinition-tddui-task-action.md) and [TDDUI Task Prestation](StructureDefinition-tddui-task-prestation.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-status-author)
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-status-author.
   "name" : "TDDUIStatusAuthor",
   "title" : "TDDUI Status Author",
   "status" : "active",
-  "date" : "2026-02-25T14:12:38+00:00",
+  "date" : "2026-02-26T10:50:19+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -55,7 +55,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-status-author.
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Extension permettant de représenter la profession du professionnel.",
+  "description" : "Extension permettant de représenter l'auteur du statut.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -82,6 +82,10 @@ Other representations of profile: [CSV](StructureDefinition-tddui-status-author.
   {
     "type" : "element",
     "expression" : "Task.status"
+  },
+  {
+    "type" : "element",
+    "expression" : "QuestionnaireResponse.status"
   }],
   "type" : "Extension",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
@@ -91,7 +95,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-status-author.
       "id" : "Extension",
       "path" : "Extension",
       "short" : "TDDUI Status Author",
-      "definition" : "Extension permettant de représenter la profession du professionnel."
+      "definition" : "Extension permettant de représenter l'auteur du statut."
     },
     {
       "id" : "Extension.extension",

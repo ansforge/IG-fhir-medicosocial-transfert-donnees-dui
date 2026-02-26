@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle | *Version*:2.2.0 |
-| Active as of 2026-02-25 | *Computable Name*:TDDUIBundle |
+| Active as of 2026-02-26 | *Computable Name*:TDDUIBundle |
 
  
 Profil générique créé pour transmettre des données d'un logiciel DUI. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
   "name" : "TDDUIBundle",
   "title" : "TDDUI Bundle",
   "status" : "active",
-  "date" : "2026-02-25T14:12:38+00:00",
+  "date" : "2026-02-26T10:50:19+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -670,6 +670,87 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
     },
     {
       "id" : "Bundle.entry:DUIRelatedPersonContact.request.method",
+      "path" : "Bundle.entry.request.method",
+      "patternCode" : "POST"
+    },
+    {
+      "id" : "Bundle.entry:DUIObservationCauseMortalite",
+      "path" : "Bundle.entry",
+      "sliceName" : "DUIObservationCauseMortalite",
+      "short" : "Observation conforming to the DUIObservationCauseMortalite profile, used to convey the cause of death.",
+      "min" : 0,
+      "max" : "*"
+    },
+    {
+      "id" : "Bundle.entry:DUIObservationCauseMortalite.resource",
+      "path" : "Bundle.entry.resource",
+      "min" : 1,
+      "type" : [{
+        "code" : "Observation",
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-mortalite"]
+      }]
+    },
+    {
+      "id" : "Bundle.entry:DUIObservationCauseMortalite.request",
+      "path" : "Bundle.entry.request",
+      "min" : 1
+    },
+    {
+      "id" : "Bundle.entry:DUIObservationCauseMortalite.request.method",
+      "path" : "Bundle.entry.request.method",
+      "patternCode" : "POST"
+    },
+    {
+      "id" : "Bundle.entry:DUIObservationPeriodeScolaire",
+      "path" : "Bundle.entry",
+      "sliceName" : "DUIObservationPeriodeScolaire",
+      "short" : "Observation conforming to the DUIObservationPeriodeScolaire profile, used to convey the school period.",
+      "min" : 0,
+      "max" : "*"
+    },
+    {
+      "id" : "Bundle.entry:DUIObservationPeriodeScolaire.resource",
+      "path" : "Bundle.entry.resource",
+      "min" : 1,
+      "type" : [{
+        "code" : "Observation",
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-periode-scolaire"]
+      }]
+    },
+    {
+      "id" : "Bundle.entry:DUIObservationPeriodeScolaire.request",
+      "path" : "Bundle.entry.request",
+      "min" : 1
+    },
+    {
+      "id" : "Bundle.entry:DUIObservationPeriodeScolaire.request.method",
+      "path" : "Bundle.entry.request.method",
+      "patternCode" : "POST"
+    },
+    {
+      "id" : "Bundle.entry:DUIObservationMobiliteUsager",
+      "path" : "Bundle.entry",
+      "sliceName" : "DUIObservationMobiliteUsager",
+      "short" : "Observation conforming to the DUIObservationMobiliteUsager profile, used to convey the mobility.",
+      "min" : 0,
+      "max" : "*"
+    },
+    {
+      "id" : "Bundle.entry:DUIObservationMobiliteUsager.resource",
+      "path" : "Bundle.entry.resource",
+      "min" : 1,
+      "type" : [{
+        "code" : "Observation",
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite-usager"]
+      }]
+    },
+    {
+      "id" : "Bundle.entry:DUIObservationMobiliteUsager.request",
+      "path" : "Bundle.entry.request",
+      "min" : 1
+    },
+    {
+      "id" : "Bundle.entry:DUIObservationMobiliteUsager.request.method",
       "path" : "Bundle.entry.request.method",
       "patternCode" : "POST"
     }]
