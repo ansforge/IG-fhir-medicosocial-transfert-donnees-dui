@@ -1,4 +1,4 @@
-# TDDUI RelatedPerson Contact - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI RelatedPerson Contact - Médicosocial - Transfert de données DUI v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact | *Version*:2.2.0-ballot |
-| Active as of 2026-02-25 | *Computable Name*:TDDUIRelatedPersonContact |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact | *Version*:2.2.0 |
+| Active as of 2026-02-26 | *Computable Name*:TDDUIRelatedPersonContact |
 
  
 Profil de la ressource FRCoreRelatedPersonProfile permettant de représenter un contact de l'usager. 
@@ -40,11 +40,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-related-person
   "resourceType" : "StructureDefinition",
   "id" : "tddui-related-person-contact",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact",
-  "version" : "2.2.0-ballot",
+  "version" : "2.2.0",
   "name" : "TDDUIRelatedPersonContact",
   "title" : "TDDUI RelatedPerson Contact",
   "status" : "active",
-  "date" : "2026-02-25T09:45:56+00:00",
+  "date" : "2026-02-26T08:21:36+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

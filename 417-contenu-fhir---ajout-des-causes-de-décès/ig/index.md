@@ -1,4 +1,4 @@
-# Accueil - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# Accueil - Médicosocial - Transfert de données DUI v2.2.0
 
 * [**Table of Contents**](toc.md)
 * **Accueil**
@@ -7,14 +7,11 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui | *Version*:2.2.0-ballot |
-| Active as of 2026-02-25 | *Computable Name*:TDDUI |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui | *Version*:2.2.0 |
+| Active as of 2026-02-26 | *Computable Name*:TDDUI |
 
  **Brief description of this Implementation Guide**
  The Digital User File (DUI) centralizes all information concerning the person being cared for in social and medico-social facilities and services. The aim of this implementation guide is to define the specifications for DUI data transfer. 
-
->  **Attention !** 
- Cet Implementation Guide est actuellement en concertation. La version courante est accessible à l'adresse : http://interop.esante.gouv.fr/ig/fhir/tddui 
 
 ### Introduction
 
@@ -140,11 +137,11 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
   "resourceType" : "ImplementationGuide",
   "id" : "ans.fhir.fr.tddui",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui",
-  "version" : "2.2.0-ballot",
+  "version" : "2.2.0",
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2026-02-25T09:45:56+00:00",
+  "date" : "2026-02-26T08:21:36+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -216,7 +213,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
       },
       {
         "url" : "value",
-        "valueString" : "public-comment"
+        "valueString" : "trial-implementation"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -523,7 +520,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
       },
       {
         "url" : "value",
-        "valueString" : "public-comment"
+        "valueString" : "trial-implementation"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },

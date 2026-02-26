@@ -1,4 +1,4 @@
-# TDDUI Observation Mobilite Usager - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Observation Mobilite Usager - Médicosocial - Transfert de données DUI v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite-usager | *Version*:2.2.0-ballot |
-| Active as of 2026-02-25 | *Computable Name*:TDDUIObservationMobiliteUsager |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite-usager | *Version*:2.2.0 |
+| Active as of 2026-02-26 | *Computable Name*:TDDUIObservationMobiliteUsager |
 
  
 Profil de la ressource Observation permettant de représenter la mobilité de l'usager. 
@@ -39,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-mo
   "resourceType" : "StructureDefinition",
   "id" : "tddui-observation-mobilite-usager",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite-usager",
-  "version" : "2.2.0-ballot",
+  "version" : "2.2.0",
   "name" : "TDDUIObservationMobiliteUsager",
   "title" : "TDDUI Observation Mobilite Usager",
   "status" : "active",
-  "date" : "2026-02-25T09:45:56+00:00",
+  "date" : "2026-02-26T08:21:36+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

@@ -1,4 +1,4 @@
-# TDDUI Discriminator - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Discriminator - Médicosocial - Transfert de données DUI v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-discriminator | *Version*:2.2.0-ballot |
-| Active as of 2026-02-25 | *Computable Name*:TDDUIDiscriminator |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-discriminator | *Version*:2.2.0 |
+| Active as of 2026-02-26 | *Computable Name*:TDDUIDiscriminator |
 
  
 ValueSet définissant les codes discriminants. 
@@ -52,12 +52,12 @@ ValueSet définissant les codes discriminants.
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-discriminator",
-  "version" : "2.2.0-ballot",
+  "version" : "2.2.0",
   "name" : "TDDUIDiscriminator",
   "title" : "TDDUI Discriminator",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-25T09:45:56+00:00",
+  "date" : "2026-02-26T08:21:36+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

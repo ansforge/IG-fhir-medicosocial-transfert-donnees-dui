@@ -1,4 +1,4 @@
-# TDDUI CarePlan Projet Personalise - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI CarePlan Projet Personalise - Médicosocial - Transfert de données DUI v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise | *Version*:2.2.0-ballot |
-| Active as of 2026-02-25 | *Computable Name*:TDDUICarePlanProjetPersonnalise |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise | *Version*:2.2.0 |
+| Active as of 2026-02-26 | *Computable Name*:TDDUICarePlanProjetPersonnalise |
 
  
 Profil de la ressource CarePlan représentant le projet personnalisé d'un usager. 
@@ -40,11 +40,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-proje
   "resourceType" : "StructureDefinition",
   "id" : "tddui-careplan-projet-personnalise",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise",
-  "version" : "2.2.0-ballot",
+  "version" : "2.2.0",
   "name" : "TDDUICarePlanProjetPersonnalise",
   "title" : "TDDUI CarePlan Projet Personalise",
   "status" : "active",
-  "date" : "2026-02-25T09:45:56+00:00",
+  "date" : "2026-02-26T08:21:36+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
