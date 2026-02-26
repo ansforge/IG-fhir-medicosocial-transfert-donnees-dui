@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Artifacts Summary - Médicosocial - Transfert de données DUI v2.2.0-ballot</title>
+    <title>Artifacts Summary - Médicosocial - Transfert de données DUI v2.2.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -64,7 +64,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Médicosocial - Transfert de données DUI</span>
             <br/>
-            <span style="display:inline-block;">2.2.0-ballot - public-comment
+            <span style="display:inline-block;">2.2.0 - public-comment
 
 
 
@@ -205,7 +205,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Médicosocial - Transfert de données DUI - version de développement local (intégration continue v2.2.0-ballot) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/fhir/tddui/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Médicosocial - Transfert de données DUI - version de développement local (intégration continue v2.2.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/fhir/tddui/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -396,6 +396,33 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-observation-cause-mortalite.html"
+                  title="StructureDefinition/tddui-observation-cause-mortalite">TDDUI Observation Cause Mortalite</a>
+            </td>
+            <td>
+<p>Profil de la ressource Observation permettant de représenter les causes de mortalité d'un usager.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-observation-mobilite-usager.html"
+                  title="StructureDefinition/tddui-observation-mobilite-usager">TDDUI Observation Mobilite Usager</a>
+            </td>
+            <td>
+<p>Profil de la ressource Observation permettant de représenter la mobilité de l'usager.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-observation-periode-scolaire.html"
+                  title="StructureDefinition/tddui-observation-periode-scolaire">TDDUI Observation Periode Scolaire</a>
+            </td>
+            <td>
+<p>Profil de la ressource Observation permettant de représenter la période scolaire de l'usager.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-tddui-organization.html"
                   title="StructureDefinition/tddui-organization">TDDUI Organization</a>
             </td>
@@ -581,6 +608,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-assessment-method.html"
+                  title="StructureDefinition/tddui-assessment-method">TDDUI Assessment Method</a>
+            </td>
+            <td>
+<p>Mode d'évaluation, texte libre permettant de mettre le contexte de l'évaluation.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-tddui-attachment.html"
                   title="StructureDefinition/tddui-attachment">TDDUI Attachment</a>
             </td>
@@ -722,6 +758,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-household-situation.html"
+                  title="StructureDefinition/tddui-household-situation">TDDUI Household Situation</a>
+            </td>
+            <td>
+<p>Extension complexe regroupant la situation familiale, la composition du foyer et sa description textuelle de l'usager.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-tddui-meal.html"
                   title="StructureDefinition/tddui-meal">TDDUI Meal</a>
             </td>
@@ -762,7 +807,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/tddui-qr-participant">TDDUI QR Participant</a>
             </td>
             <td>
-<p>Extension permettant d'ajouter le responsable de l'évaluation et l'auteur du statut de l'évaluation dans un QuestionnaireResponse.</p>
+<p>Extension permettant d'ajouter le responsable et le porteur de l'évaluation dans un QuestionnaireResponse.</p>
 </td>
          </tr>
          <tr>
@@ -780,7 +825,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/tddui-status-author">TDDUI Status Author</a>
             </td>
             <td>
-<p>Extension permettant de représenter la profession du professionnel.</p>
+<p>Extension permettant de représenter l'auteur du statut.</p>
 </td>
          </tr>
       </tbody>
@@ -791,6 +836,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-tddui-cim-10.html" title="ValueSet/tddui-cim-10">TDDUI CIM10</a>
+            </td>
+            <td>
+<p>ValueSet incluant les codes de la terminologie CIM-1O.</p>
+</td>
+         </tr>
          <tr>
             <td style="column-width:30%">
                <a href="ValueSet-tddui-care-plan-supporting-info.html"
@@ -870,6 +923,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>ValueSet définissant les types de notes pour l'élément Goal.note.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-tddui-observation-periode-scolaire.html"
+                  title="ValueSet/tddui-observation-periode-scolaire">TDDUI Observation Periode Scolaire</a>
+            </td>
+            <td>
+<p>ValueSet pour l'Observation de la Période Scolaire.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-tddui-observation-type.html"
+                  title="ValueSet/tddui-observation-type">TDDUI Observation Type</a>
+            </td>
+            <td>
+<p>ValueSet pour les types d'Observation.</p>
 </td>
          </tr>
          <tr>
@@ -989,6 +1060,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="CodeSystem-tddui-observation-periode-scolaire.html"
+                  title="CodeSystem/tddui-observation-periode-scolaire">TDDUI Observation Periode Scolaire</a>
+            </td>
+            <td>
+<p>CodeSystem pour l'Observation de la Période Scolaire.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-tddui-observation-type.html"
+                  title="CodeSystem/tddui-observation-type">TDDUI Observation Type</a>
+            </td>
+            <td>
+<p>CodeSystem pour la défintion des types d'Observation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="CodeSystem-tddui-identifier.html"
                   title="CodeSystem/tddui-identifier">TDDUI Patient Identifier</a>
             </td>
@@ -1092,6 +1181,33 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Lieu de l'évènement</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-tddui-observation-cause-mortalite-example.html"
+                  title="Observation/tddui-observation-cause-mortalite-example">TDDUI Observation Cause Mortalite Example</a>
+            </td>
+            <td>
+<p>Exemple de la ressource TDDUIObservationMortalite</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-tddui-observation-mobilite-usager-example.html"
+                  title="Observation/tddui-observation-mobilite-usager-example">TDDUI Observation Mobilite Usager Example</a>
+            </td>
+            <td>
+<p>Exemple de la ressource TDDUIObservationMobiliteUsager</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-tddui-observation-periodescolaire-example.html"
+                  title="Observation/tddui-observation-periodescolaire-example">TDDUI Observation PeriodeScolaire Example</a>
+            </td>
+            <td>
+<p>Exemple de la ressource TDDUIObservationPeriodeScolaire</p>
 </td>
          </tr>
          <tr>
@@ -1577,7 +1693,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.2.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 24, 2026 10:04+0000">2026-02-24</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 26, 2026 15:31+0000">2026-02-26</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |

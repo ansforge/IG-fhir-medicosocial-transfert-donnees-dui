@@ -1,4 +1,4 @@
-# Description - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# Description - Médicosocial - Transfert de données DUI v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact-description | *Version*:2.2.0-ballot |
-| Active as of 2026-02-24 | *Computable Name*:TDDUIRelatedPersonContactDescription |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact-description | *Version*:2.2.0 |
+| Active as of 2026-02-26 | *Computable Name*:TDDUIRelatedPersonContactDescription |
 
 Description du contact PersonnePhysique.
 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-related-person
   "resourceType" : "StructureDefinition",
   "id" : "tddui-related-person-contact-description",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact-description",
-  "version" : "2.2.0-ballot",
+  "version" : "2.2.0",
   "name" : "TDDUIRelatedPersonContactDescription",
   "title" : "Description",
   "status" : "active",
-  "date" : "2026-02-24T10:04:30+00:00",
+  "date" : "2026-02-26T15:31:27+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

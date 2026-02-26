@@ -1,4 +1,4 @@
-# TDDUI-Producteur - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI-Producteur - Médicosocial - Transfert de données DUI v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/CapabilityStatement/TDDUIProducteur | *Version*:2.2.0-ballot |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/CapabilityStatement/TDDUIProducteur | *Version*:2.2.0 |
 | Active as of 2024-06-20 | *Computable Name*:TDDUIProducteur |
 
  
@@ -25,7 +25,7 @@ Le rôle de Producteur est de transmettre des données de son logiciel DUI. Il c
   "resourceType" : "CapabilityStatement",
   "id" : "TDDUIProducteur",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CapabilityStatement/TDDUIProducteur",
-  "version" : "2.2.0-ballot",
+  "version" : "2.2.0",
   "name" : "TDDUIProducteur",
   "title" : "TDDUI-Producteur",
   "status" : "active",
@@ -153,6 +153,15 @@ Le rôle de Producteur est de transmettre des données de son logiciel DUI. Il c
     {
       "type" : "RelatedPerson",
       "supportedProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact"],
+      "interaction" : [{
+        "code" : "create"
+      }]
+    },
+    {
+      "type" : "Observation",
+      "supportedProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-mortalite",
+      "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-periode-scolaire",
+      "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite-usager"],
       "interaction" : [{
         "code" : "create"
       }]

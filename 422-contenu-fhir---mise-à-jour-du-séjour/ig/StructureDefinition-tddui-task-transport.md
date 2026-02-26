@@ -1,4 +1,4 @@
-# TDDUI Task Transport - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Task Transport - Médicosocial - Transfert de données DUI v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport | *Version*:2.2.0-ballot |
-| Active as of 2026-02-24 | *Computable Name*:TDDUITaskTransport |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport | *Version*:2.2.0 |
+| Active as of 2026-02-26 | *Computable Name*:TDDUITaskTransport |
 
  
 Profil de la ressource Task permettant de représenter le transport. 
@@ -43,11 +43,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
   "resourceType" : "StructureDefinition",
   "id" : "tddui-task-transport",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport",
-  "version" : "2.2.0-ballot",
+  "version" : "2.2.0",
   "name" : "TDDUITaskTransport",
   "title" : "TDDUI Task Transport",
   "status" : "active",
-  "date" : "2026-02-24T10:04:30+00:00",
+  "date" : "2026-02-26T15:31:27+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

@@ -1,4 +1,4 @@
-# TDDUI Task MoyenRessource - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Task MoyenRessource - Médicosocial - Transfert de données DUI v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource | *Version*:2.2.0-ballot |
-| Active as of 2026-02-24 | *Computable Name*:TDDUITaskMoyenRessource |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource | *Version*:2.2.0 |
+| Active as of 2026-02-26 | *Computable Name*:TDDUITaskMoyenRessource |
 
  
 Profil de la ressource Task permettant de représenter les moyens ou ressources utilisées dans le cadre du projet personnalisé. 
@@ -39,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-moyen-res
   "resourceType" : "StructureDefinition",
   "id" : "tddui-task-moyen-ressource",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource",
-  "version" : "2.2.0-ballot",
+  "version" : "2.2.0",
   "name" : "TDDUITaskMoyenRessource",
   "title" : "TDDUI Task MoyenRessource",
   "status" : "active",
-  "date" : "2026-02-24T10:04:30+00:00",
+  "date" : "2026-02-26T15:31:27+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

@@ -1,4 +1,4 @@
-# TDDUI Exit Mode Label - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Exit Mode Label - Médicosocial - Transfert de données DUI v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exit-mode-label | *Version*:2.2.0-ballot |
-| Active as of 2026-02-24 | *Computable Name*:TDDUIExitModeLabel |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exit-mode-label | *Version*:2.2.0 |
+| Active as of 2026-02-26 | *Computable Name*:TDDUIExitModeLabel |
 
 Libellé du mode de sortie du séjour.
 
@@ -43,11 +43,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-exit-mode-labe
   "resourceType" : "StructureDefinition",
   "id" : "tddui-exit-mode-label",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exit-mode-label",
-  "version" : "2.2.0-ballot",
+  "version" : "2.2.0",
   "name" : "TDDUIExitModeLabel",
   "title" : "TDDUI Exit Mode Label",
   "status" : "active",
-  "date" : "2026-02-24T10:04:30+00:00",
+  "date" : "2026-02-26T15:31:27+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

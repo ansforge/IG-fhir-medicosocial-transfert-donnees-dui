@@ -13,7 +13,7 @@
     <sch:title>f:Extension</sch:title>
     <sch:rule context="f:Extension">
       <sch:assert test="count(f:extension[@url = 'TDDUIResponsible']) &lt;= 1">extension with URL = 'TDDUIResponsible': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'TDDUIStatusAuthor']) &lt;= 1">extension with URL = 'TDDUIStatusAuthor': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'TDDUIHolder']) &lt;= 1">extension with URL = 'TDDUIHolder': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:value[x]) &lt;= 0">value[x]: maximum cardinality of 'value[x]' is 0</sch:assert>
     </sch:rule>
   </sch:pattern>

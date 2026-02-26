@@ -1,4 +1,4 @@
-# TDDUI SERAFIN - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI SERAFIN - Médicosocial - Transfert de données DUI v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-serafin | *Version*:2.2.0-ballot |
-| Active as of 2026-02-24 | *Computable Name*:TDDUISerafin |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-serafin | *Version*:2.2.0 |
+| Active as of 2026-02-26 | *Computable Name*:TDDUISerafin |
 
  
 ValueSet contenant les codes SERAFIN (prestations directes et indirectes) pour le profil TDDUI Encounter Evenement. 
@@ -51,12 +51,12 @@ ValueSet contenant les codes SERAFIN (prestations directes et indirectes) pour l
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-serafin",
-  "version" : "2.2.0-ballot",
+  "version" : "2.2.0",
   "name" : "TDDUISerafin",
   "title" : "TDDUI SERAFIN",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-24T10:04:30+00:00",
+  "date" : "2026-02-26T15:31:27+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

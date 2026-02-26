@@ -1,4 +1,4 @@
-# TDDUI-Consommateur - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI-Consommateur - Médicosocial - Transfert de données DUI v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/CapabilityStatement/TDDUIConsommateur | *Version*:2.2.0-ballot |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/CapabilityStatement/TDDUIConsommateur | *Version*:2.2.0 |
 | Active as of 2024-06-20 | *Computable Name*:TDDUIConsommateur |
 
  
@@ -25,7 +25,7 @@ Le rôle du Consommateur est de recueillir les données d'un logiciel DUI. Il co
   "resourceType" : "CapabilityStatement",
   "id" : "TDDUIConsommateur",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CapabilityStatement/TDDUIConsommateur",
-  "version" : "2.2.0-ballot",
+  "version" : "2.2.0",
   "name" : "TDDUIConsommateur",
   "title" : "TDDUI-Consommateur",
   "status" : "active",
@@ -153,6 +153,15 @@ Le rôle du Consommateur est de recueillir les données d'un logiciel DUI. Il co
     {
       "type" : "RelatedPerson",
       "supportedProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact"],
+      "interaction" : [{
+        "code" : "read"
+      }]
+    },
+    {
+      "type" : "Observation",
+      "supportedProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-mortalite",
+      "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-periode-scolaire",
+      "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite-usager"],
       "interaction" : [{
         "code" : "read"
       }]

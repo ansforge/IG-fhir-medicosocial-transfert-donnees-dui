@@ -1,6 +1,6 @@
 {
   "package": "ans.fhir.fr.tddui",
-  "version": "2.2.0-ballot",
+  "version": "2.2.0",
   "fhirVersion": "4.0.1",
   "jurisdiction": "FR",
   "extensions": [
@@ -9,6 +9,13 @@
       "title": "TDDUI Admission Date",
       "types": [
         "dateTime"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-assessment-method",
+      "title": "TDDUI Assessment Method",
+      "types": [
+        "string"
       ]
     },
     {
@@ -111,6 +118,165 @@
       "title": "TDDUI Exit Mode Label",
       "types": [
         "string"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-household-situation",
+      "title": "TDDUI Household Situation",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "CodeableConcept",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "CodeableConcept",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
       ]
     },
     {
@@ -380,6 +546,20 @@
         "title": "TDDUI Goal Objectif"
       }
     ],
+    "Observation": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-mortalite",
+        "title": "TDDUI Observation Cause Mortalite"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite-usager",
+        "title": "TDDUI Observation Mobilite Usager"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-periode-scolaire",
+        "title": "TDDUI Observation Periode Scolaire"
+      }
+    ],
     "Organization": [
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization",
@@ -493,6 +673,29 @@
       "Practitioner.name",
       "RelatedPerson.name"
     ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator": [
+      "Patient.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix": [
+      "Patient.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-careOf": [
+      "Patient.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber": [
+      "Bundle.entry.resource.address.line",
+      "Patient.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox": [
+      "Patient.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameBase": [
+      "Bundle.entry.resource.address.line",
+      "Patient.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameType": [
+      "Patient.address.line"
+    ],
     "http://hl7.org/fhir/StructureDefinition/organization-period": [
       "Organization"
     ],
@@ -502,6 +705,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/regex": [
       "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
@@ -540,10 +746,14 @@
       "StructureDefinition.snapshot"
     ],
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code": [
+      "Patient.address",
       "Patient.extension.value[x]"
     ],
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-comment": [
       "Patient.contact"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point-email-type": [
+      "Patient.telecom"
     ],
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-estimated-discharge-date": [
       "Encounter"
@@ -580,9 +790,15 @@
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-service-type-duration": [
       "PractitionerRole"
     ],
+    "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-lieu-dit": [
+      "Patient.address.line"
+    ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-admission-date": [
       "Bundle.entry.resource",
       "Encounter"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-assessment-method": [
+      "QuestionnaireResponse"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment": [
       "Bundle.entry.resource",
@@ -602,6 +818,8 @@
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment": [
       "Bundle.entry.resource",
       "Encounter",
+      "Patient",
+      "Patient.address",
       "QuestionnaireResponse",
       "QuestionnaireResponse.item",
       "QuestionnaireResponse.item.item",
@@ -647,6 +865,10 @@
       "Bundle.entry.resource",
       "Encounter"
     ],
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-household-situation": [
+      "Bundle.entry.resource",
+      "Patient"
+    ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-meal": [
       "Encounter"
     ],
@@ -664,6 +886,7 @@
       "PractitionerRole.code"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant": [
+      "Bundle.entry.resource",
       "QuestionnaireResponse"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact-description": [
@@ -676,6 +899,7 @@
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-status-author": [
       "CarePlan.status",
       "Goal.lifecycleStatus",
+      "QuestionnaireResponse.status",
       "Task.status"
     ]
   }
