@@ -701,8 +701,8 @@ Pour les types de droit et prestation suivants :
     Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J30-TemporaliteAccueil-ROR/FHIR/JDV-J30-TemporaliteAccueil-ROR">JDV_J30-TemporaliteAccueil-ROR</a></td>
   </tr>
   <tr>
-    <td>precisionOrientation : [0..1] Code</td>
-    <td>Précision de l'orientation associée à un jeu de valeurs en fonction du type de droit.<br>
+    <td>precisionOrientation : [0..1] ConceptCode</td>
+    <td>La précision de l'orientation est codée à un jeu de valeurs pour les types de droit suivants :<br>
 <table style="width:100%">
   <tr>
     <th>Type droit prestation</th>
@@ -733,12 +733,8 @@ Pour les types de droit et prestation suivants :
     <td>en cours analyse NOS</td>
   </tr>
   </table>
-
+Pour les autres types de droits la valeur de cet attribut est un texte libre.
    </td>
-  </tr>
-  <tr>
-    <td>precisionOrientationLocale : [0..1] Texte</td>
-    <td>Précision de l'orientation. Texte libre lorsqu'il n'existe pas de nomenclature nationale pour le type de droit.</td>
   </tr>
   <tr>
     <td>accueilSequentiel : [0..1] Indicateur</td>
