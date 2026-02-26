@@ -2,7 +2,10 @@ Profile: TDDUIQuestionnaireResponse
 Parent: QuestionnaireResponse
 Id: tddui-questionnaire-response
 Title: "TDDUI QuestionnaireResponse"
-Description: "Profil de la ressource QuestionnaireResponse utilisé pour transmettre les réponses aux questionnaires dans le cadre des évaluations." 
+Description: "Profil de la ressource QuestionnaireResponse utilisé pour transmettre les réponses aux questionnaires dans le cadre des évaluations."
+
+* obeys auto-eval-porteur
+* obeys professionnel-requis
 
 * identifier 1..1
 * identifier ^short = "Identifiant de l'évaluation"
@@ -21,6 +24,7 @@ Le profil permet de communiquer les grilles définies suivantes :
 """
 
 * status ^short = "Correspondance des statuts métier avec les codes FHIR : TERMINE -> in-progress, APPROUVE -> completed, VALIDE -> amended."
+* status.extension contains TDDUIStatusAuthor named TDDUIStatusAuthor 0..1
 
 * questionnaire 1..1
 
@@ -29,12 +33,13 @@ Le profil permet de communiquer les grilles définies suivantes :
 
 * author only Reference(TDDUIPractitioner)
 
-* source only Reference(TDDUIPractitioner)
+* source only Reference(TDDUIPractitioner or TDDUIPatient or TDDUIPatientINS)
 
 * extension contains
     TDDUIQRParticipant named TDDUIQRParticipant 0..1 and 
     TDDUIAttachment named TDDUIAttachment 0..* and
-    TDDUIComment named TDDUIComment 0..1
+    TDDUIComment named TDDUIComment 0..1 and
+    TDDUIAssessmentMethod named TDDUIAssessmentMethod 0..1
 
 * encounter 0..1
 * encounter only Reference(TDDUIEncounterEvenement)
@@ -54,13 +59,15 @@ Title:    "Modèle de contenu DUI"
 * identifier -> "idEvaluation"
 * authored -> "dateEvaluation"
 * status -> "Statut.statut"
-* extension[TDDUIQRParticipant].extension[TDDUIStatusAuthor] -> "Statut.auteur"
+* status.extension[TDDUIStatusAuthor] -> "Statut.auteur"
 * extension[TDDUIComment] -> "commentaireEvaluation"
+* extension[TDDUIAssessmentMethod] -> "modaliteEvaluation"
 * questionnaire -> "typeEvaluation"
 * subject -> "Usager"
 * encounter -> "Evenement"
 * extension[TDDUIAttachment] -> "pieceJointeEvaluation"
 * extension[TDDUIQRParticipant].extension[TDDUIResponsible] -> "Responsable"
+* extension[TDDUIQRParticipant].extension[TDDUIHolder] -> "Porteur"
 * author -> "Auteur"
 * source -> "Evaluateur"
 * meta.lastUpdated -> "Statut.dateStatut"
@@ -84,13 +91,15 @@ Title:    "Modèle de contenu DUI"
 * identifier -> "idEvaluation"
 * authored -> "dateEvaluation"
 * status -> "Statut.statut"
-* extension[TDDUIQRParticipant].extension[TDDUIStatusAuthor] -> "Statut.auteur"
+* status.extension[TDDUIStatusAuthor] -> "Statut.auteur"
 * extension[TDDUIComment] -> "commentaireEvaluation"
+* extension[TDDUIAssessmentMethod] -> "modaliteEvaluation"
 * questionnaire -> "typeEvaluation"
 * subject -> "Usager"
 * encounter -> "Evenement"
 * extension[TDDUIAttachment] -> "pieceJointeEvaluation"
 * extension[TDDUIQRParticipant].extension[TDDUIResponsible] -> "Responsable"
+* extension[TDDUIQRParticipant].extension[TDDUIHolder] -> "Porteur"
 * author -> "Auteur"
 * source -> "Evaluateur"
 * meta.lastUpdated -> "Statut.dateStatut"
@@ -98,3 +107,12 @@ Title:    "Modèle de contenu DUI"
 * item -> "«premier niveau»DetailEvaluation"
 * item.linkId -> "champsEvalue"
 * item.answer -> "resultatChampsEvalue"
+
+Invariant: auto-eval-porteur
+Description: "Dans le cas d'une auto évaluation, le porteur doit être renseigné."
+Severity: #error
+Expression: "(source.exists() and source.reference.contains('Patient/')) implies extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant').extension.where(url='TDDUIHolder').exists()"
+Invariant: professionnel-requis
+Description: "Hormis le cas de l'auto évaluation, au moins un des 3 éléments (Evaluateur, Responsable, Auteur) doit être renseigné"
+Severity: #error
+Expression: "source.reference.contains('Patient/').not() implies (source.reference.contains('Practitioner/') or author.exists() or extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant').extension.where(url='TDDUIResponsible').exists())"

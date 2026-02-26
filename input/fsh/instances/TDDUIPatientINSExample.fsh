@@ -11,12 +11,18 @@ Usage: #example
 * extension[birthPlace].valueAddress.city = "Mazoires"
 * extension[birthPlace].valueAddress.country = "FRA"
 
+* extension[TDDUIHouseholdSituation].extension[familySituation].valueCodeableConcept = https://mos.esante.gouv.fr/NOS/TRE_R317-SituationVieQuotidienne/FHIR/TRE-R317-SituationVieQuotidienne#01 "Seul"
+
 * identifier[INS-NIR].use = #official
 * identifier[INS-NIR].system = "urn:oid:1.2.250.1.213.1.4.8"
 * identifier[INS-NIR].value = "147720425367411"
 
 * identifier[PI].system = "https://identifiant-medicosocial-localusager.esante.gouv.fr"
 * identifier[PI].value = "3480787529/194704032"
+
+* identifier[driverLicense].value = "822146819"
+* identifier[driverLicense].system = "https://ants.gouv.fr/"
+* identifier[driverLicense].period.start = "1980-01-01"
 
 * name[usualName].use = #usual
 * name[usualName].family = "DUPONT"
@@ -28,8 +34,10 @@ Usage: #example
 
 * gender = #male
 * birthDate = "1947-04-03"
+
 * address.use = #home
-* address.text = "12 rue des Lilas, 76748 Vittefleur, France"
-* address.line = "12 rue des Lilas"
-* address.city = "Vittefleur"
+* address.line[0] = "12 rue des Lilas"
+* address.line[0].extension[houseNumber].valueString = "12"
+* address.line[0].extension[streetNameBase].valueString = "rue des Lilas"
 * address.postalCode = "76748"
+* address.country = "99100"
