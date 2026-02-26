@@ -50,7 +50,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-comment.csv), 
   "name" : "TDDUIComment",
   "title" : "TDDUI Comment",
   "status" : "active",
-  "date" : "2026-02-26T10:50:19+00:00",
+  "date" : "2026-02-26T16:06:51+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -64,7 +64,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-comment.csv), 
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France"
     }]
   }],
   "fhirVersion" : "4.0.1",

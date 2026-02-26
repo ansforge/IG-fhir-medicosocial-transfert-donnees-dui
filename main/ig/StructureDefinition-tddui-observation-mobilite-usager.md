@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-mo
   "name" : "TDDUIObservationMobiliteUsager",
   "title" : "TDDUI Observation Mobilite Usager",
   "status" : "active",
-  "date" : "2026-02-26T10:50:19+00:00",
+  "date" : "2026-02-26T16:06:51+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -57,7 +57,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-mo
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France"
     }]
   }],
   "fhirVersion" : "4.0.1",

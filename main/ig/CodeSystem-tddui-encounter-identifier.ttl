@@ -17,7 +17,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem tddui-encounter-identifier</b></p><a name=\"tddui-encounter-identifier\"> </a><a name=\"hctddui-encounter-identifier\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"http://hl7.org/fhir/R4/shareablecodesystem.html\">Shareable CodeSystem</a></p></div><p>This case-sensitive code system <code>https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">SEJ<a name=\"tddui-encounter-identifier-SEJ\"> </a></td><td>Identifiant du séjour</td></tr></table></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem tddui-encounter-identifier</b></p><a name=\"tddui-encounter-identifier\"> </a><a name=\"hctddui-encounter-identifier\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"http://hl7.org/fhir/R4/shareablecodesystem.html\">Shareable CodeSystem</a></p></div><p>This case-sensitive code system <code>https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">SEJ<a name=\"tddui-encounter-identifier-SEJ\"> </a></td><td>Identifiant du séjour</td></tr><tr><td style=\"white-space:nowrap\">NUMDOSS<a name=\"tddui-encounter-identifier-NUMDOSS\"> </a></td><td>Numéro de dossier administratif du séjour</td></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:url [
      fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier"^^xsd:anyURI ;
@@ -28,7 +28,7 @@
   fhir:title [ fhir:v "TDDUI Encounter Identifier"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2026-02-26T10:50:19+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-02-26T16:06:51+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -45,15 +45,18 @@
          fhir:l <urn:iso:std:iso:3166>
        ] ;
        fhir:code [ fhir:v "FR" ] ;
-       fhir:display [ fhir:v "FRANCE" ]
+       fhir:display [ fhir:v "France" ]
      ] )
   ] ) ; # 
   fhir:caseSensitive [ fhir:v true] ; # 
   fhir:content [ fhir:v "complete"] ; # 
-  fhir:count [ fhir:v "1"^^xsd:nonNegativeInteger] ; # 
+  fhir:count [ fhir:v "2"^^xsd:nonNegativeInteger] ; # 
   fhir:concept ( [
      fhir:code [ fhir:v "SEJ" ] ;
      fhir:display [ fhir:v "Identifiant du séjour" ]
+  ] [
+     fhir:code [ fhir:v "NUMDOSS" ] ;
+     fhir:display [ fhir:v "Numéro de dossier administratif du séjour" ]
   ] ) . # 
 
 # -------------------------------------------------------------------------------------

@@ -13,6 +13,9 @@
  **Brief description of this Implementation Guide**
  The Digital User File (DUI) centralizes all information concerning the person being cared for in social and medico-social facilities and services. The aim of this implementation guide is to define the specifications for DUI data transfer. 
 
+>  **Attention !** 
+ Cet Implementation Guide est actuellement en concertation. La version courante est accessible à l'adresse : http://interop.esante.gouv.fr/ig/fhir/tddui 
+
 ### Introduction
 
 Le Programme ESMS numérique, porté par la Caisse Nationale de Solidarité pour l'Autonomie (CNSA), vise à généraliser l’utilisation du numérique dans les établissements et services sociaux et médico-sociaux (ESSMS). Il repose principalement sur le déploiement d’un Dossier Usager Informatisé (DUI) pour chaque personne accompagnée. Ce DUI centralise l’ensemble des informations qui concerne la personne accompagnée en structure et service sociale et médico-sociale, et son parcours de santé et de vie. Ce dossier unique comprend :
@@ -143,7 +146,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2026-02-26T10:50:19+00:00",
+  "date" : "2026-02-26T16:06:51+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -156,7 +159,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France"
     }]
   }],
   "packageId" : "ans.fhir.fr.tddui",
@@ -221,7 +224,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
       },
       {
         "url" : "value",
-        "valueString" : "trial-implementation"
+        "valueString" : "public-comment"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -528,7 +531,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
       },
       {
         "url" : "value",
-        "valueString" : "trial-implementation"
+        "valueString" : "public-comment"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -1149,6 +1152,18 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/tddui-entry-date-origin"
+      },
+      "name" : "TDDUI Entry Date Origin",
+      "description" : "Extension permettant de véhiculer la date d'entrée dans l'ESSMS de provenance.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/tddui-entry-mode-label"
       },
       "name" : "TDDUI Entry Mode label",
@@ -1501,6 +1516,18 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
       },
       "name" : "TDDUI Organization Example",
       "description" : "ESSMS - Les Chênes Verts",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/tddui-organization-origine-example"
+      },
+      "name" : "TDDUI Organization Origine Example",
+      "description" : "ESSMS - Les Résidences du Lac",
       "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization"
     },
     {
