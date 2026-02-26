@@ -105,6 +105,7 @@ Description: "Profil de la ressource Encounter permettant de regrouper les évè
 * extension[TDDUIEventReason] ^short = "Contexte justifiant la réalisation de l’évènement."
 * extension[TDDUIPatientPresent] ^short = "Evènement nécessitant ou non la présence physique de l’usager."
 * extension[TDDUIMeal] ^short = "Repas du professionnel prévu dans le cadre de l'événement."
+* extension[TDDUIPatientValidation] ^short = "Validation par l'usager que l'événement a eu lieu."
 
 * partOf only Reference(TDDUIEncounterSejour)
 * period.start 1..1
