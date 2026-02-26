@@ -58,12 +58,25 @@ map "**UsagerINS : TDDUIPatientINS**" as Usager #80b1d3 {
     dateDeces => <&layers> deceased[x]:deceasedDateTime
     photo => photo
     PermisConduire => <&layers> identifier:driverLicense
-    <&layers> name:usualName *-> nameusualName
-    <&layers> name:officialName *-> nameofficialName
+    <&layers> name:usualName *--> nameusualName
+    <&layers> name:officialName *--> nameofficialName
     Telecommunication => telecom
     Adresse => address
     langueParlee => communication.language
 }
+
+map "**CauseMortalite : TDDUIObservationCauseMortalite**" as CauseMortalite #fb8072 {
+    causeMortalite => <&layers> value[x]:valueCodeableConcept
+}
+
+map "**MobiliteUsager : TDDUIObservationMobiliteUsager**" as MobiliteUsager #fb8072 {
+    type => value[x]
+    observationAmenagement => value[x]
+}
+
+Usager -u-> CauseMortalite
+Usager -u-> MobiliteUsager
+
 
 Usager::PermisConduire -l-> PermisConduire
 Usager::Telecommunication -d-> Telecommunication

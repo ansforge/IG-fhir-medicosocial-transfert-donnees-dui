@@ -12,6 +12,7 @@ Alias: $terminologie-cisis = https://smt.esante.gouv.fr/fhir/CodeSystem/terminol
 Alias: $icf = http://hl7.org/fhir/sid/icf
 Alias: $terminologie-SERAFINPH = https://smt.esante.gouv.fr/terminologie-SERAFINPH
 Alias: $terminologie-cim-10 = https://smt.esante.gouv.fr/terminologie-cim-10
+Alias: $loinc = http://loinc.org
 
 // ANS
 Alias: $TRE-R81-Civilite = https://mos.esante.gouv.fr/NOS/TRE_R81-Civilite/FHIR/TRE-R81-Civilite
@@ -71,6 +72,7 @@ Alias: $JDV-J117-ModeExercice-ENREG = https://mos.esante.gouv.fr/NOS/JDV_J117-Mo
 Alias: $JDV-J285-Besoins-Serafin = https://mos.esante.gouv.fr/NOS/JDV_J285-Besoins_SERAFIN/FHIR/JDV-J285-Besoins-SERAFIN
 Alias: $JDV-J367-TypeProjetPersonnaliseMs = https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j367-type-projet-personnalise-ms
 Alias: $JDV-J366-StatutBilanProjetPersonnaliseMs = https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j366-statut-bilan-projet-personnalise-ms
+Alias: $JDV-J386-Type-Enseignement-Specialise-MS = https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j386-type-enseignement-specialise-ms
 Alias: $JDV-J11-RelationPatient-CISIS = https://mos.esante.gouv.fr/NOS/JDV_J11-RelationPatient-CISIS/FHIR/JDV-J11-RelationPatient-CISIS
 Alias: $JDV-J14-QualiteRepresentantLegal-CISIS = https://mos.esante.gouv.fr/NOS/JDV_J14-QualiteRepresentantLegal-CISIS/FHIR/JDV-J14-QualiteRepresentantLegal-CISIS
 Alias: $TRE-R217-ProtectionJuridique = https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique
