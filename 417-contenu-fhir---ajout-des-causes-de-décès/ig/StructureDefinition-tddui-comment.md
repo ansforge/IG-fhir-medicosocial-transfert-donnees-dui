@@ -22,7 +22,7 @@
 
 **Utilisations:**
 
-* Utilise ce/t/te Extension: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md), [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md), [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md) and [TDDUI RelatedPerson Contact](StructureDefinition-tddui-related-person-contact.md)
+* Utilise ce/t/te Extension: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md), [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md), [TDDUI Patient INS](StructureDefinition-tddui-patient-ins.md), [TDDUI Patient](StructureDefinition-tddui-patient.md)... Show 2 more, [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md) and [TDDUI RelatedPerson Contact](StructureDefinition-tddui-related-person-contact.md)
 * Exemples pour ce/t/te Extension: [Bundle/tddui-bundle-example](Bundle-tddui-bundle-example.md), [Encounter/tddui-encounter-evenement-example](Encounter-tddui-encounter-evenement-example.md), [QuestionnaireResponse/tddui-questionnaire-response-serafin-precision-example](QuestionnaireResponse-tddui-questionnaire-response-serafin-precision-example.md) and [QuestionnaireResponse/tddui-questionnaire-response-serafin-sans-precision-example](QuestionnaireResponse-tddui-questionnaire-response-serafin-sans-precision-example.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-comment)
@@ -50,7 +50,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-comment.csv), 
   "name" : "TDDUIComment",
   "title" : "TDDUI Comment",
   "status" : "active",
-  "date" : "2026-02-26T08:21:36+00:00",
+  "date" : "2026-02-26T10:20:29+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -82,6 +82,14 @@ Other representations of profile: [CSV](StructureDefinition-tddui-comment.csv), 
   {
     "type" : "element",
     "expression" : "QuestionnaireResponse"
+  },
+  {
+    "type" : "element",
+    "expression" : "Patient"
+  },
+  {
+    "type" : "element",
+    "expression" : "Patient.address"
   }],
   "type" : "Extension",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",

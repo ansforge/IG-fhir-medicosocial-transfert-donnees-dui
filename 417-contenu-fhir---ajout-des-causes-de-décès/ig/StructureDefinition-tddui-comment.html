@@ -43,8 +43,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"7.39"}
-    h3,h4,h5,h6{--heading-prefix:"7.39"}</style>
+    <style type="text/css">h2{--heading-prefix:"7.40"}
+    h3,h4,h5,h6{--heading-prefix:"7.40"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -324,6 +324,14 @@ ID d'élément:     <code>
 ID d'élément:     <code>
 <a href="http://hl7.org/fhir/R4/questionnaireresponse.html">QuestionnaireResponse</a>    </code>
   </li>
+  <li>
+ID d'élément:     <code>
+<a href="http://hl7.org/fhir/R4/patient.html">Patient</a>    </code>
+  </li>
+  <li>
+ID d'élément:     <code>
+<a href="http://hl7.org/fhir/R4/patient.html">Patient.address</a>    </code>
+  </li>
 </ul>
 
   </ul>
@@ -336,7 +344,7 @@ ID d'élément:     <code>
   <p><b>Usage info</b></p>
   <p><b>Utilisations:</b></p>
 <ul>
- <li>Utilise ce/t/te Extension: <a href="StructureDefinition-tddui-encounter-evenement.html">TDDUI Encounter Evenement</a>, <a href="StructureDefinition-tddui-encounter-sejour.html">TDDUI Encounter Sejour</a>, <a href="StructureDefinition-tddui-questionnaire-response.html">TDDUI QuestionnaireResponse</a> and <a href="StructureDefinition-tddui-related-person-contact.html">TDDUI RelatedPerson Contact</a></li>
+ <li>Utilise ce/t/te Extension: <a href="StructureDefinition-tddui-encounter-evenement.html">TDDUI Encounter Evenement</a>, <a href="StructureDefinition-tddui-encounter-sejour.html">TDDUI Encounter Sejour</a>, <a href="StructureDefinition-tddui-patient-ins.html">TDDUI Patient INS</a>, <a href="StructureDefinition-tddui-patient.html">TDDUI Patient</a><span id="rr_ref" onClick="document.getElementById('rr_ref').innerHTML = document.getElementById('rr2_ref').innerHTML">... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 2 more</span></span><span id="rr2_ref" style="display: none">, <a href="StructureDefinition-tddui-questionnaire-response.html">TDDUI QuestionnaireResponse</a> and <a href="StructureDefinition-tddui-related-person-contact.html">TDDUI RelatedPerson Contact</a></span></li>
  <li>Exemples pour ce/t/te Extension: <a href="Bundle-tddui-bundle-example.html">Bundle/tddui-bundle-example</a>, <a href="Encounter-tddui-encounter-evenement-example.html">Encounter/tddui-encounter-evenement-example</a>, <a href="QuestionnaireResponse-tddui-questionnaire-response-serafin-precision-example.html">QuestionnaireResponse/tddui-questionnaire-response-serafin-precision-example</a> and <a href="QuestionnaireResponse-tddui-questionnaire-response-serafin-sans-precision-example.html">QuestionnaireResponse/tddui-questionnaire-response-serafin-sans-precision-example</a></li>
 </ul>
 <p>Vous pouvez également vérifier <a href="https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-comment">les usages dans le FHIR IG Statistics</a></p>
@@ -408,7 +416,7 @@ ID d'élément:     <code>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Exemple de commentaire : Cet évènement a débuté plus tard l’usager était sous la douche à l’heure du début du rendez-vous.</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // ead1f46a-4bbe-4c76-b558-226758fd6f3e
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // ac93a1e8-d737-4605-be4d-087455638cda
 document.getElementById('cbtddui-commentD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('tddui-commentD'), 'binding', document.getElementById('cbtddui-commentD-binding').checked, document.getElementById('pptddui-commentD'));
 document.getElementById('cbtddui-commentD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -453,7 +461,7 @@ filterDesc(document.getElementById('tddui-commentD'), 'obligation', document.get
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Exemple de commentaire : Cet évènement a débuté plus tard l’usager était sous la douche à l’heure du début du rendez-vous.</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // ead1f46a-4bbe-4c76-b558-226758fd6f3e
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // ac93a1e8-d737-4605-be4d-087455638cda
 document.getElementById('cbtddui-commentS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('tddui-commentS'), 'binding', document.getElementById('cbtddui-commentS-binding').checked, document.getElementById('pptddui-commentS'));
 document.getElementById('cbtddui-commentS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -556,7 +564,7 @@ Résumé
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Exemple de commentaire : Cet évènement a débuté plus tard l’usager était sous la douche à l’heure du début du rendez-vous.</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // ead1f46a-4bbe-4c76-b558-226758fd6f3e
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // ac93a1e8-d737-4605-be4d-087455638cda
 document.getElementById('cbtddui-commentDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('tddui-commentDA'), 'binding', document.getElementById('cbtddui-commentDA-binding').checked, document.getElementById('pptddui-commentDA'));
 document.getElementById('cbtddui-commentDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -601,7 +609,7 @@ filterDesc(document.getElementById('tddui-commentDA'), 'obligation', document.ge
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Exemple de commentaire : Cet évènement a débuté plus tard l’usager était sous la douche à l’heure du début du rendez-vous.</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // ead1f46a-4bbe-4c76-b558-226758fd6f3e
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // ac93a1e8-d737-4605-be4d-087455638cda
 document.getElementById('cbtddui-commentSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('tddui-commentSA'), 'binding', document.getElementById('cbtddui-commentSA-binding').checked, document.getElementById('pptddui-commentSA'));
 document.getElementById('cbtddui-commentSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -770,7 +778,7 @@ Résumé
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 26, 2026 08:21+0000">2026-02-26</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 26, 2026 10:20+0000">2026-02-26</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |

@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "TDDUI"] ; # 
   fhir:title [ fhir:v "Médicosocial - Transfert de données DUI"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-02-26T08:21:36+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-02-26T10:20:29+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -93,6 +93,14 @@
      ] ;
      fhir:packageId [ fhir:v "ihe.iti.mhd" ] ;
      fhir:version [ fhir:v "4.2.0" ]
+  ] [
+     fhir:id [ fhir:v "ans_fhir_fr_annuaire" ] ;
+     fhir:uri [
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/annuaire/ImplementationGuide/ans.fhir.fr.annuaire"^^xsd:anyURI ;
+       fhir:l <https://interop.esante.gouv.fr/ig/fhir/annuaire/ImplementationGuide/ans.fhir.fr.annuaire>
+     ] ;
+     fhir:packageId [ fhir:v "ans.fhir.fr.annuaire" ] ;
+     fhir:version [ fhir:v "1.1.0" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
@@ -1465,6 +1473,27 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-assessment-method> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-assessment-method" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Assessment Method" ] ;
+       fhir:description [ fhir:v "Mode d'évaluation, texte libre permettant de mettre le contexte de l'évaluation." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment> ;
          fhir:reference [ fhir:v "StructureDefinition/tddui-attachment" ]
        ] ;
@@ -2271,6 +2300,27 @@
        ] ;
        fhir:name [ fhir:v "TDDUI Goal Objectif Note" ] ;
        fhir:description [ fhir:v "ValueSet définissant les types de notes pour l'élément Goal.note." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-household-situation> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-household-situation" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Household Situation" ] ;
+       fhir:description [ fhir:v "Extension complexe regroupant la situation familiale, la composition du foyer et sa description textuelle de l'usager." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -3614,7 +3664,7 @@
          fhir:reference [ fhir:v "StructureDefinition/tddui-qr-participant" ]
        ] ;
        fhir:name [ fhir:v "TDDUI QR Participant" ] ;
-       fhir:description [ fhir:v "Extension permettant d'ajouter le responsable de l'évaluation et l'auteur du statut de l'évaluation dans un QuestionnaireResponse." ] ;
+       fhir:description [ fhir:v "Extension permettant d'ajouter le responsable et le porteur de l'évaluation dans un QuestionnaireResponse." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -3893,7 +3943,7 @@
          fhir:reference [ fhir:v "StructureDefinition/tddui-status-author" ]
        ] ;
        fhir:name [ fhir:v "TDDUI Status Author" ] ;
-       fhir:description [ fhir:v "Extension permettant de représenter la profession du professionnel." ] ;
+       fhir:description [ fhir:v "Extension permettant de représenter l'auteur du statut." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

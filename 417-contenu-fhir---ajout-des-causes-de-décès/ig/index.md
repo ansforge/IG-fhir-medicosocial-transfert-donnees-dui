@@ -130,6 +130,8 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
 
 
 
+
+
 ## Resource Content
 
 ```json
@@ -141,7 +143,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2026-02-26T08:21:36+00:00",
+  "date" : "2026-02-26T10:20:29+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -193,6 +195,12 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
     "uri" : "https://profiles.ihe.net/ITI/MHD/ImplementationGuide/ihe.iti.mhd",
     "packageId" : "ihe.iti.mhd",
     "version" : "4.2.0"
+  },
+  {
+    "id" : "ans_fhir_fr_annuaire",
+    "uri" : "https://interop.esante.gouv.fr/ig/fhir/annuaire/ImplementationGuide/ans.fhir.fr.annuaire",
+    "packageId" : "ans.fhir.fr.annuaire",
+    "version" : "1.1.0"
   }],
   "definition" : {
     "extension" : [{
@@ -829,6 +837,18 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/tddui-assessment-method"
+      },
+      "name" : "TDDUI Assessment Method",
+      "description" : "Mode d'évaluation, texte libre permettant de mettre le contexte de l'évaluation.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/tddui-attachment"
       },
       "name" : "TDDUI Attachment",
@@ -1289,6 +1309,18 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
       },
       "name" : "TDDUI Goal Objectif Note",
       "description" : "ValueSet définissant les types de notes pour l'élément Goal.note.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-household-situation"
+      },
+      "name" : "TDDUI Household Situation",
+      "description" : "Extension complexe regroupant la situation familiale, la composition du foyer et sa description textuelle de l'usager.",
       "exampleBoolean" : false
     },
     {
@@ -2032,7 +2064,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "reference" : "StructureDefinition/tddui-qr-participant"
       },
       "name" : "TDDUI QR Participant",
-      "description" : "Extension permettant d'ajouter le responsable de l'évaluation et l'auteur du statut de l'évaluation dans un QuestionnaireResponse.",
+      "description" : "Extension permettant d'ajouter le responsable et le porteur de l'évaluation dans un QuestionnaireResponse.",
       "exampleBoolean" : false
     },
     {
@@ -2188,7 +2220,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "reference" : "StructureDefinition/tddui-status-author"
       },
       "name" : "TDDUI Status Author",
-      "description" : "Extension permettant de représenter la profession du professionnel.",
+      "description" : "Extension permettant de représenter l'auteur du statut.",
       "exampleBoolean" : false
     },
     {

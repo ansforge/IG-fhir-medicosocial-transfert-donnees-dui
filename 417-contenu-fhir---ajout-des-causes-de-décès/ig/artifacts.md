@@ -80,6 +80,7 @@ These define constraints on FHIR data types for systems conforming to this imple
 | :--- | :--- |
 | [Description](StructureDefinition-tddui-related-person-contact-description.md) | Description du contact PersonnePhysique. |
 | [TDDUI Admission Date](StructureDefinition-tddui-admission-date.md) | Date d’admission dans la structure ESSMS. |
+| [TDDUI Assessment Method](StructureDefinition-tddui-assessment-method.md) | Mode d'évaluation, texte libre permettant de mettre le contexte de l'évaluation. |
 | [TDDUI Attachment](StructureDefinition-tddui-attachment.md) | Extension permettant de véhiculer des pièces jointes que ce soit pour l'évaluation, l'évènement ou le projet personnalisé. L'extension référence le profil PDSm_SimplifiedPublish. |
 | [TDDUI Birth Order](StructureDefinition-tddui-birth-order.md) | Ordre d’enregistrement de la naissance dans le registre d’état civil de la commune de naissance pour le mois de la naissance. Il compose les 3 derniers chiffres du NIR de l'usager avant la clé de sécurité et permet de distinguer les personnes nées au même lieu et à la même période. Il est obligatoire si le NIR n'est pas transmis. |
 | [TDDUI CarePlan Projet Perso Ref](StructureDefinition-tddui-careplan-reference.md) | Liens vers le projet personnalisé, utilisables dans le profil TDDUIGoalObjectif. |
@@ -98,13 +99,14 @@ These define constraints on FHIR data types for systems conforming to this imple
 | [TDDUI Event Report](StructureDefinition-tddui-event-report.md) | Zone de texte liée à l’événement pour compte rendu des actions réalisées. |
 | [TDDUI Exercise Mode](StructureDefinition-tddui-exercise-mode.md) | Extension permettant de représenter le mode d'exercice du professionnel. |
 | [TDDUI Exit Mode Label](StructureDefinition-tddui-exit-mode-label.md) | Libellé du mode de sortie du séjour. |
+| [TDDUI Household Situation](StructureDefinition-tddui-household-situation.md) | Extension complexe regroupant la situation familiale, la composition du foyer et sa description textuelle de l'usager. |
 | [TDDUI Meal](StructureDefinition-tddui-meal.md) | Repas du professionnel prévu dans le cadre de l'événement. |
 | [TDDUI Nationality Extension](StructureDefinition-tddui-nationality.md) | The nationality of the patient or a related person. |
 | [TDDUI Patient Present](StructureDefinition-tddui-patient-present.md) | Evènement nécessitant ou non la présence physique de l’usager. |
 | [TDDUI Profession](StructureDefinition-tddui-profession.md) | Extension permettant de représenter la profession du professionnel. |
-| [TDDUI QR Participant](StructureDefinition-tddui-qr-participant.md) | Extension permettant d'ajouter le responsable de l'évaluation et l'auteur du statut de l'évaluation dans un QuestionnaireResponse. |
+| [TDDUI QR Participant](StructureDefinition-tddui-qr-participant.md) | Extension permettant d'ajouter le responsable et le porteur de l'évaluation dans un QuestionnaireResponse. |
 | [TDDUI Ressources Used](StructureDefinition-tddui-ressources-used.md) | Ressources utilisées lors de l’évènement (ex : chambre, matériel médical, véhicule). |
-| [TDDUI Status Author](StructureDefinition-tddui-status-author.md) | Extension permettant de représenter la profession du professionnel. |
+| [TDDUI Status Author](StructureDefinition-tddui-status-author.md) | Extension permettant de représenter l'auteur du statut. |
 
 ### Terminology: Value Sets 
 
