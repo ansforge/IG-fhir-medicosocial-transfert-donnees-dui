@@ -8,7 +8,7 @@
 
 Profil: [TDDUI Patient](StructureDefinition-tddui-patient.md)
 
-DUPONT Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/194704032)
+DUPONT Male, Date de Naissance : ( Patient internal identifier: 3480787529/194704032)
 
 -------
 
@@ -97,7 +97,6 @@ DUPONT Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 348078
     "family" : "DUPONT"
   }],
   "gender" : "male",
-  "birthDate" : "1947-04-03",
   "_birthDate" : {
     "extension" : [{
       "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order",

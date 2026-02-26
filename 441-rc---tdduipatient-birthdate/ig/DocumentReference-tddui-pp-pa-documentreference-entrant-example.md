@@ -12,7 +12,7 @@ Profil: [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.m
 
 **status**: Current
 
-**subject**: [Jeanne L. (official) Female, Date de Naissance inconnue ( Patient internal identifier: 3480787529/123456789)](Patient-tddui-pp-pa-patient-example-pp.md)
+**subject**: [Jeanne L. (official) Female, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/123456789)](Patient-tddui-pp-pa-patient-example-pp.md)
 
 **author**: [Organization Les Chênes Verts](Organization-tddui-organization-example.md)
 

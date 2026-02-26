@@ -18,7 +18,7 @@ Profil: [TDDUI ServiceRequest Besoin](StructureDefinition-tddui-service-request-
 
 **code**: Besoin d'aide pour la mobilité et les déplacements.
 
-**subject**: [Jeanne L. (official) Female, Date de Naissance inconnue ( Patient internal identifier: 3480787529/123456789)](Patient-tddui-pp-pa-patient-example-pp.md)
+**subject**: [Jeanne L. (official) Female, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/123456789)](Patient-tddui-pp-pa-patient-example-pp.md)
 
 
 

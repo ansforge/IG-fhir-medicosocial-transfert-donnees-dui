@@ -16,7 +16,7 @@ Profil: [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md)
 
 **description**: Stabiliser l'état nutritionnel et restaurer le plaisir alimentaire sur 12 mois.
 
-**subject**: [Jeanne L. (official) Female, Date de Naissance inconnue ( Patient internal identifier: 3480787529/123456789)](Patient-tddui-pp-pa-patient-example-pp.md)
+**subject**: [Jeanne L. (official) Female, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/123456789)](Patient-tddui-pp-pa-patient-example-pp.md)
 
 **addresses**: [ServiceRequest ](ServiceRequest-tddui-pp-pa-servicerequest-besoin-2-example.md)
 

@@ -16,7 +16,7 @@ Profil: [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md)
 
 **description**: Atteindre le niveau lecteur débutant (décodage syllabique) en 9 mois.
 
-**subject**: [Hugo D. (official) (sexe non précisé), Date de Naissance inconnue ( Patient internal identifier: 3480787529/123456)](Patient-tddui-pp-ime-patient-example.md)
+**subject**: [Hugo D. (official) (sexe non précisé), Date de Naissance :2005-09-15 ( Patient internal identifier: 3480787529/123456)](Patient-tddui-pp-ime-patient-example.md)
 
 **note**: 
 

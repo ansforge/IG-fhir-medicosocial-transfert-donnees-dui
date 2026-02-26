@@ -20,7 +20,7 @@ Ordre d’enregistrement de la naissance dans le registre d’état civil de la 
 **Utilisations:**
 
 * Utilise ce/t/te Extension: [TDDUI Patient](StructureDefinition-tddui-patient.md)
-* Exemples pour ce/t/te Extension: [Patient/tddui-patient-example](Patient-tddui-patient-example.md)
+* Exemples pour ce/t/te Extension: [Bundle/tddui-pp-ime-bundle-example](Bundle-tddui-pp-ime-bundle-example.md), [Bundle/tddui-pp-pa-bundle-example](Bundle-tddui-pp-pa-bundle-example.md), [Patient/tddui-patient-example](Patient-tddui-patient-example.md), [Patient/tddui-pp-ime-patient-example](Patient-tddui-pp-ime-patient-example.md) and [Patient/tddui-pp-pa-patient-example-pp](Patient-tddui-pp-pa-patient-example-pp.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-birth-order)
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-birth-order.cs
   "name" : "TDDUIBirthOrder",
   "title" : "TDDUI Birth Order",
   "status" : "active",
-  "date" : "2026-02-26T16:28:52+00:00",
+  "date" : "2026-02-26T17:10:13+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

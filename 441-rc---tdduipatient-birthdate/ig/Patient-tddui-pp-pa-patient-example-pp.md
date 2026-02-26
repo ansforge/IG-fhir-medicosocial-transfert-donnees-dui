@@ -8,7 +8,7 @@
 
 Profil: [TDDUI Patient](StructureDefinition-tddui-patient.md)
 
-Jeanne L. (official) Female, Date de Naissance inconnue ( Patient internal identifier: 3480787529/123456789)
+Jeanne L. (official) Female, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/123456789)
 
 -------
 
@@ -39,7 +39,14 @@ Jeanne L. (official) Female, Date de Naissance inconnue ( Patient internal ident
     "family" : "L.",
     "given" : ["Jeanne"]
   }],
-  "gender" : "female"
+  "gender" : "female",
+  "birthDate" : "1947-04-03",
+  "_birthDate" : {
+    "extension" : [{
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order",
+      "valuePositiveInt" : 1
+    }]
+  }
 }
 
 ```
