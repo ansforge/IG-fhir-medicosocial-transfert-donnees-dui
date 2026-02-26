@@ -12,3 +12,6 @@ Usage: #example
 * name[officialName].given = "Jeanne"
 
 * gender = #female
+
+* birthDate = "1947-04-03"
+* birthDate.extension[tddui-birth-order].valuePositiveInt = 1
