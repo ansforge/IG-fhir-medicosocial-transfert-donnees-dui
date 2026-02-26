@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement | *Version*:2.2.0 |
-| Active as of 2026-02-24 | *Computable Name*:TDDUIEncounterEvenement |
+| Active as of 2026-02-26 | *Computable Name*:TDDUIEncounterEvenement |
 
  
 Profil de la ressource Encounter permettant de regrouper les évènements liés à la prise en charge de l’usager dans une structure ESSMS. 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-even
   "name" : "TDDUIEncounterEvenement",
   "title" : "TDDUI Encounter Evenement",
   "status" : "active",
-  "date" : "2026-02-24T08:32:52+00:00",
+  "date" : "2026-02-26T16:12:14+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -326,6 +326,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-even
       "id" : "Encounter.extension:TDDUIPatientValidation",
       "path" : "Encounter.extension",
       "sliceName" : "TDDUIPatientValidation",
+      "short" : "Validation par l'usager que l'événement a eu lieu.",
       "min" : 0,
       "max" : "1",
       "type" : [{
