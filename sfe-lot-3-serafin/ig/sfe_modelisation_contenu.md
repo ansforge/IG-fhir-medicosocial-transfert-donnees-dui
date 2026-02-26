@@ -305,8 +305,8 @@ Pour les types de droit et prestation suivants :* Orientation en Unité d'enseig
 * Orientation vers une Unité d'enseignement et une scolarisation en ULIS à temps partagé
 * Orientation vers une unité d’enseignement et une scolarisation en enseignement adapté à temps partagé
 Jeu(x) de valeur(s) associé(s) :[JDV_J30-TemporaliteAccueil-ROR](https://mos.esante.gouv.fr/NOS/JDV_J30-TemporaliteAccueil-ROR/FHIR/JDV-J30-TemporaliteAccueil-ROR)
-* Nom: precisionOrientation : [0..1] Code
-  * Description: Précision de l'orientation associée à un jeu de valeurs en fonction du type de droit.
+* Nom: precisionOrientation : [0..1] ConceptCode
+  * Description: La précision de l'orientation est codée à un jeu de valeurs pour les types de droit suivants :
 * Type droit prestation: 7.8 Orientation vers un Service d'éducation spéciale et de soins à domicile (SESSAD)
   * Jeu de valeurs associé: en cours analyse NOS
 * Type droit prestation: 7.9 Orientation vers un Service d'accompagnement familial et d'éducation précoce (SAFEP)
@@ -320,9 +320,7 @@ Jeu(x) de valeur(s) associé(s) :[JDV_J30-TemporaliteAccueil-ROR](https://mos.es
 * Type droit prestation: 8.6 Orientation en Unité d'enseignement
   * Jeu de valeurs associé: en cours analyse NOS
 
-
-* Nom: precisionOrientationLocale : [0..1] Texte
-  * Description: Précision de l'orientation. Texte libre lorsqu'il n'existe pas de nomenclature nationale pour le type de droit.
+Pour les autres types de droits la valeur de cet attribut est un texte libre.
 * Nom: accueilSequentiel : [0..1] Indicateur
   * Description: Indique si l’unité accepte d’accueillir des personnes en situation de handicap de façon séquentielle, c'est à dire sur une partie de la semaine.0 = L'unité n'accepte pas l'accueil séquentiel1 = L'unité accepte l'accueil séquentiel
 * Nom: formation : [0..1] Texte
