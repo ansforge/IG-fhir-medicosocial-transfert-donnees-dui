@@ -1,4 +1,4 @@
-# TDDUI Nationality Extension - Médicosocial - Transfert de données DUI v2.2.0
+# TDDUI Nationality Extension - Médicosocial - Transfert de données DUI v2.3.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | | |
 | :--- | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-nationality | *Version*:2.2.0 | |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-nationality | *Version*:2.3.0-ballot | |
 | Active as of 2026-02-26 | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:TDDUINationalityExtension |
 
 The nationality of the patient or a related person.
@@ -52,11 +52,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-nationality.cs
     "valueInteger" : 1
   }],
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-nationality",
-  "version" : "2.2.0",
+  "version" : "2.3.0-ballot",
   "name" : "TDDUINationalityExtension",
   "title" : "TDDUI Nationality Extension",
   "status" : "active",
-  "date" : "2026-02-26T10:56:48+00:00",
+  "date" : "2026-02-26T11:09:50+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

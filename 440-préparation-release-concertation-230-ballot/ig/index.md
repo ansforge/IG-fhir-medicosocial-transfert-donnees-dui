@@ -1,4 +1,4 @@
-# Accueil - Médicosocial - Transfert de données DUI v2.2.0
+# Accueil - Médicosocial - Transfert de données DUI v2.3.0-ballot
 
 * [**Table of Contents**](toc.md)
 * **Accueil**
@@ -7,11 +7,14 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui | *Version*:2.2.0 |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui | *Version*:2.3.0-ballot |
 | Active as of 2026-02-26 | *Computable Name*:TDDUI |
 
  **Brief description of this Implementation Guide**
  The Digital User File (DUI) centralizes all information concerning the person being cared for in social and medico-social facilities and services. The aim of this implementation guide is to define the specifications for DUI data transfer. 
+
+>  **Attention !** 
+ Cet Implementation Guide est actuellement en concertation. La version courante est accessible à l'adresse : http://interop.esante.gouv.fr/ig/fhir/tddui 
 
 ### Introduction
 
@@ -139,11 +142,11 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
   "resourceType" : "ImplementationGuide",
   "id" : "ans.fhir.fr.tddui",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui",
-  "version" : "2.2.0",
+  "version" : "2.3.0-ballot",
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2026-02-26T10:56:48+00:00",
+  "date" : "2026-02-26T11:09:50+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -221,7 +224,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
       },
       {
         "url" : "value",
-        "valueString" : "trial-implementation"
+        "valueString" : "public-comment"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -528,7 +531,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
       },
       {
         "url" : "value",
-        "valueString" : "trial-implementation"
+        "valueString" : "public-comment"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },

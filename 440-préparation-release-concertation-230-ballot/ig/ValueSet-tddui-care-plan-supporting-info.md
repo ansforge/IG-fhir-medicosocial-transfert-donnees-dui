@@ -1,4 +1,4 @@
-# TDDUI CarePlan supportingInfo - Médicosocial - Transfert de données DUI v2.2.0
+# TDDUI CarePlan supportingInfo - Médicosocial - Transfert de données DUI v2.3.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-care-plan-supporting-info | *Version*:2.2.0 |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-care-plan-supporting-info | *Version*:2.3.0-ballot |
 | Active as of 2026-02-26 | *Computable Name*:TDDUICarePlanSupportingInfo |
 
  
@@ -49,12 +49,12 @@ ValueSet définissant les types de notes pour l'élément CarePlan.supportingInf
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-care-plan-supporting-info",
-  "version" : "2.2.0",
+  "version" : "2.3.0-ballot",
   "name" : "TDDUICarePlanSupportingInfo",
   "title" : "TDDUI CarePlan supportingInfo",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-26T10:56:48+00:00",
+  "date" : "2026-02-26T11:09:50+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

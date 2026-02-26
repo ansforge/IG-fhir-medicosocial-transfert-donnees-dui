@@ -1,4 +1,4 @@
-# TDDUI PP PA Task Moyen Ressource Ergo 1 Example - Médicosocial - Transfert de données DUI v2.2.0
+# TDDUI PP PA Task Moyen Ressource Ergo 1 Example - Médicosocial - Transfert de données DUI v2.3.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
