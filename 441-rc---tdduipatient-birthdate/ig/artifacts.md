@@ -90,6 +90,7 @@ These define constraints on FHIR data types for systems conforming to this imple
 * **Champ évalué** : commentaire spécifique à un item ou sous-item évalué.
  |
 | [TDDUI Discriminator](StructureDefinition-tddui-discriminator.md) | Extension pour discriminer les éléments CarePlan.supportingInfo et Goal.note. |
+| [TDDUI Entry Date Origin](StructureDefinition-tddui-entry-date-origin.md) | Extension permettant de véhiculer la date d'entrée dans l'ESSMS de provenance. |
 | [TDDUI Entry Mode label](StructureDefinition-tddui-entry-mode-label.md) | Libellé du mode d’entée du séjour. |
 | [TDDUI Evaluation Ref](StructureDefinition-tddui-evaluation-reference.md) | Liens vers l'évaluation, utilisables dans le profil TDDUIGoalObjectif. |
 | [TDDUI Event Cancel Reason](StructureDefinition-tddui-event-cancel-reason.md) | Motif associé au statut de non-réalisation de l’évènement. |
@@ -169,6 +170,7 @@ These are example instances that show what data produced and consumed by systems
 | [TDDUI Observation Mobilite Usager Example](Observation-tddui-observation-mobilite-usager-example.md) | Exemple de la ressource TDDUIObservationMobiliteUsager |
 | [TDDUI Observation PeriodeScolaire Example](Observation-tddui-observation-periodescolaire-example.md) | Exemple de la ressource TDDUIObservationPeriodeScolaire |
 | [TDDUI Organization Example](Organization-tddui-organization-example.md) | ESSMS - Les Chênes Verts |
+| [TDDUI Organization Origine Example](Organization-tddui-organization-origine-example.md) | ESSMS - Les Résidences du Lac |
 | [TDDUI PP IME Bundle Example](Bundle-tddui-pp-ime-bundle-example.md) | Exemple de bundle conforme au profil TDDUIBundle contenant le projet personnalisé en IME |
 | [TDDUI PP IME CarePlan Example](CarePlan-tddui-pp-ime-careplan-example.md) | Exemple du projet personnalisé d'un enfant en IME |
 | [TDDUI PP IME Consent Accord Example](Consent-tddui-pp-ime-consent-accord-example.md) | Exemple d'un accord de la structure |

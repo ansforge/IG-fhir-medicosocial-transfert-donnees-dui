@@ -18,7 +18,7 @@ Profil de la ressource FRCoreOrganizationProfile permettant de représenter les 
 
 * Utilise ce/t/te Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
 * Référence ce Profil: [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md), [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md), [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md), [TDDUI Observation Periode Scolaire](StructureDefinition-tddui-observation-periode-scolaire.md)... Show 3 more, [TDDUI Practitioner Role](StructureDefinition-tddui-practitioner-role.md), [TDDUI QR Participant](StructureDefinition-tddui-qr-participant.md) and [TDDUI Task Transport](StructureDefinition-tddui-task-transport.md)
-* Exemples pour ce/t/te Profil: [Les Chênes Verts](Organization-tddui-organization-example.md)
+* Exemples pour ce/t/te Profil: [Les Chênes Verts](Organization-tddui-organization-example.md) and [Les Résidences du Lac](Organization-tddui-organization-origine-example.md)
 * CapabilityStatements utilisant ce Profil: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-organization)
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-organization.c
   "name" : "TDDUIOrganization",
   "title" : "TDDUI Organization",
   "status" : "active",
-  "date" : "2026-02-26T15:34:05+00:00",
+  "date" : "2026-02-26T16:28:52+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -58,7 +58,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-organization.c
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France"
     }]
   }],
   "fhirVersion" : "4.0.1",

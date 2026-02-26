@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-document-refer
   "name" : "TDDUIDocumentReference",
   "title" : "TDDUI DocumentReference",
   "status" : "active",
-  "date" : "2026-02-26T15:34:05+00:00",
+  "date" : "2026-02-26T16:28:52+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -63,7 +63,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-document-refer
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France"
     }]
   }],
   "purpose" : "> **Note** : Le profil TDDUIDocumentReference n'hérite pas du profil PDSm_SimplifiedPublish à cause de la référence vers les profils ASPractitioner et ASPractitionerRole",

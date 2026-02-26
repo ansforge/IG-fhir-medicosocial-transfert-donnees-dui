@@ -44,7 +44,7 @@ Le rôle de Producteur est de transmettre des données de son logiciel DUI. Il c
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France"
     }]
   }],
   "kind" : "requirements",

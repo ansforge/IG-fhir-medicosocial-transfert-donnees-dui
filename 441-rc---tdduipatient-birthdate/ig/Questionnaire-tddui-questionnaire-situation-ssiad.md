@@ -26,7 +26,7 @@ Grille d'évaluation de la situation SSIAD
   "version" : "2.2.0",
   "title" : "Évaluation de la situation SSIAD",
   "status" : "active",
-  "date" : "2026-02-26T15:34:05+00:00",
+  "date" : "2026-02-26T16:28:52+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -40,7 +40,7 @@ Grille d'évaluation de la situation SSIAD
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France"
     }]
   }],
   "code" : [{

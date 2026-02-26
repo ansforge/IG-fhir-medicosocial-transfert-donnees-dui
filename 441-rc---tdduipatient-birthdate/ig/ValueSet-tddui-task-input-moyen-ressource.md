@@ -54,7 +54,7 @@ ValueSet pour la définition des éléments spécifiques des input dans la resso
   "title" : "TDDUI Task Input Moyen Ressource",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-26T15:34:05+00:00",
+  "date" : "2026-02-26T16:28:52+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -68,7 +68,7 @@ ValueSet pour la définition des éléments spécifiques des input dans la resso
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France"
     }]
   }],
   "compose" : {
