@@ -1916,12 +1916,6 @@ Le projet de vie est l’expression de la projection dans l’avenir de l'usager
  </tr>
 </table>
 
-##### Classe StatutProjetVie
-
-** Classe spécialisée, hérite de la classe Statut
-
-Cette classe regroupe les items pouvant caractériser le Statut du projet de vie.
-
 ##### Classe PeriodeScolaire
 
 La période scolaire représente un temps de scolarisation pour l'usager ainsi que les caractéristiques de cette période. L'ensemble des périodes scolaires constitue le parcours scolaire de la personne.
