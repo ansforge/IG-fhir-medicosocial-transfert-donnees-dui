@@ -2262,7 +2262,7 @@ La classe PresenceAbsence indique si l'usager est présent ou absent.
   </tr>
   <tr>
     <td>absencePrevue : [0..1] Indicateur</td>
-    <td>Absence prévue.<br>
+    <td>Absence prévue. Cet indicateur est requis si le typePresenceAbsence=Absence.<br>
 1 = L'absence de l'usager est prévue<br>
 0 = L'absence de l'usager n'était pas prévue</td>
   </tr>
