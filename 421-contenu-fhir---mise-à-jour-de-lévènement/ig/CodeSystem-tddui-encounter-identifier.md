@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier | *Version*:2.2.0 |
-| Active as of 2026-02-26 | *Computable Name*:TDDUIEncounterIdentifier |
+| Active as of 2026-02-27 | *Computable Name*:TDDUIEncounterIdentifier |
 
  
 CodeSystem pour la définition des codes d'identifiant de séjour 
@@ -35,7 +35,7 @@ CodeSystem pour la définition des codes d'identifiant de séjour
   "title" : "TDDUI Encounter Identifier",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-26T16:12:14+00:00",
+  "date" : "2026-02-27T13:39:19+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -49,15 +49,19 @@ CodeSystem pour la définition des codes d'identifiant de séjour
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France"
     }]
   }],
   "caseSensitive" : true,
   "content" : "complete",
-  "count" : 1,
+  "count" : 2,
   "concept" : [{
     "code" : "SEJ",
     "display" : "Identifiant du séjour"
+  },
+  {
+    "code" : "NUMDOSS",
+    "display" : "Numéro de dossier administratif du séjour"
   }]
 }
 

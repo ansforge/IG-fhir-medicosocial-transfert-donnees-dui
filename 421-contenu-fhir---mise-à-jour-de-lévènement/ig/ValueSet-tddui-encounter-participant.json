@@ -6,7 +6,7 @@
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs tddui-encounter-participant</b></p><a name=\"tddui-encounter-participant\"> </a><a name=\"hctddui-encounter-participant\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"http://hl7.org/fhir/R4/shareablevalueset.html\">Shareable ValueSet</a></p></div><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Importe tous les codes contenu dans <a href=\"http://hl7.org/fhir/R4/valueset-encounter-participant-type.html\">Participant type</a></li><li>Importe tous les codes contenu dans <a href=\"https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j387-role-participant-ms\">Jdv J387 Role Participant Ms</a></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs tddui-encounter-participant</b></p><a name=\"tddui-encounter-participant\"> </a><a name=\"hctddui-encounter-participant\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"http://hl7.org/fhir/R4/shareablevalueset.html\">Shareable ValueSet</a></p></div><ul><li>Importe tous les codes contenu dans <a href=\"http://hl7.org/fhir/R4/valueset-encounter-participant-type.html\">Participant type</a></li></ul></div>"
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-participant",
   "version" : "2.2.0",
@@ -14,7 +14,7 @@
   "title" : "TDDUI Encounter Participant",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-26T16:12:14+00:00",
+  "date" : "2026-02-27T13:39:19+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -28,15 +28,12 @@
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France"
     }]
   }],
   "compose" : {
     "include" : [{
       "valueSet" : ["http://hl7.org/fhir/ValueSet/encounter-participant-type"]
-    },
-    {
-      "valueSet" : ["https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j387-role-participant-ms"]
     }]
   }
 }

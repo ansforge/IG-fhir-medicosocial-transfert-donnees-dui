@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement | *Version*:2.2.0 |
-| Active as of 2026-02-26 | *Computable Name*:TDDUIEncounterEvenement |
+| Active as of 2026-02-27 | *Computable Name*:TDDUIEncounterEvenement |
 
  
 Profil de la ressource Encounter permettant de regrouper les évènements liés à la prise en charge de l’usager dans une structure ESSMS. 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-even
   "name" : "TDDUIEncounterEvenement",
   "title" : "TDDUI Encounter Evenement",
   "status" : "active",
-  "date" : "2026-02-26T16:12:14+00:00",
+  "date" : "2026-02-27T13:39:19+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -63,7 +63,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-even
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France"
     }]
   }],
   "purpose" : "> **Note** : Le profil TDDUIEncounterEvenement n'hérite pas du profil FRCoreEncounterProfile à cause de l'interdiction de véhiculer plusieurs types d'évènements. Cependant, le profil TDDUIEncounterEvenement suit les contraintes du profil FRCoreEncounterProfile excepté la contrainte sur la cardinalité de l'élément type (0..1).",
@@ -425,6 +425,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-even
       "id" : "Encounter.status.extension:TDDUIEventCancelReason",
       "path" : "Encounter.status.extension",
       "sliceName" : "TDDUIEventCancelReason",
+      "short" : "Motif associé au statut de non-réalisation de l’évènement.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -440,6 +441,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-even
       "id" : "Encounter.status.extension:TDDUIStatusAuthor",
       "path" : "Encounter.status.extension",
       "sliceName" : "TDDUIStatusAuthor",
+      "short" : "Le professionnel ayant effectué la dernière modification du statut associé à la ressource.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -626,7 +628,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-even
       "path" : "Encounter.participant.type",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j387-role-participant-ms"
+        "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-participant"
       },
       "mapping" : [{
         "identity" : "specmetier-to-TDDUIEncounterEvenement",
@@ -639,14 +641,13 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-even
       "type" : [{
         "code" : "Reference",
         "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner",
-        "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role",
-        "http://hl7.org/fhir/StructureDefinition/RelatedPerson"]
+        "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role"]
       }]
     },
     {
-      "id" : "Encounter.participant:mandataire",
+      "id" : "Encounter.participant:professionnel",
       "path" : "Encounter.participant",
-      "sliceName" : "mandataire",
+      "sliceName" : "professionnel",
       "min" : 0,
       "max" : "*",
       "mapping" : [{
@@ -655,7 +656,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-even
       }]
     },
     {
-      "id" : "Encounter.participant:mandataire.extension:TDDUIParticipantPresent",
+      "id" : "Encounter.participant:professionnel.extension:TDDUIParticipantPresent",
       "path" : "Encounter.participant.extension",
       "sliceName" : "TDDUIParticipantPresent",
       "min" : 0,
@@ -666,26 +667,24 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-even
       }]
     },
     {
-      "id" : "Encounter.participant:mandataire.type",
+      "id" : "Encounter.participant:professionnel.type",
       "path" : "Encounter.participant.type",
       "min" : 1,
       "max" : "1",
       "patternCodeableConcept" : {
         "coding" : [{
-          "system" : "https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge",
-          "code" : "307",
-          "display" : "MJPM"
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+          "code" : "PART"
         }]
       }
     },
     {
-      "id" : "Encounter.participant:mandataire.individual",
+      "id" : "Encounter.participant:professionnel.individual",
       "path" : "Encounter.participant.individual",
       "type" : [{
         "code" : "Reference",
         "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner",
-        "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role",
-        "http://hl7.org/fhir/StructureDefinition/RelatedPerson"]
+        "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role"]
       }]
     },
     {
@@ -835,9 +834,10 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-even
       }]
     },
     {
-      "id" : "Encounter.serviceProvider.extension:TDDUIStructurePresent",
+      "id" : "Encounter.serviceProvider.extension:TDDUIParticipantPresent",
       "path" : "Encounter.serviceProvider.extension",
-      "sliceName" : "TDDUIStructurePresent",
+      "sliceName" : "TDDUIParticipantPresent",
+      "short" : "Indique la présence de la structure lors de l'événement.",
       "min" : 0,
       "max" : "1",
       "type" : [{

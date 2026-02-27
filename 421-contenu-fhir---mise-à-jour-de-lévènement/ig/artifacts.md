@@ -41,6 +41,9 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md) | Profil de la ressource Encounter permettant de regrouper les informations relatives au séjour d'un usager dans une structure ESSMS |
 | [TDDUI Goal Attente](StructureDefinition-tddui-goal-attente.md) | Profil de la ressource Goal permettant de représenter les attentes pour un usager. |
 | [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md) | Profil de la ressource Goal permettant de représenter les résultats à atteindre dans le cadre du projet personnalisé. |
+| [TDDUI Observation Cause Mortalite](StructureDefinition-tddui-observation-cause-mortalite.md) | Profil de la ressource Observation permettant de représenter les causes de mortalité d'un usager. |
+| [TDDUI Observation Mobilite Usager](StructureDefinition-tddui-observation-mobilite-usager.md) | Profil de la ressource Observation permettant de représenter la mobilité de l'usager. |
+| [TDDUI Observation Periode Scolaire](StructureDefinition-tddui-observation-periode-scolaire.md) | Profil de la ressource Observation permettant de représenter la période scolaire de l'usager. |
 | [TDDUI Organization](StructureDefinition-tddui-organization.md) | Profil de la ressource FRCoreOrganizationProfile permettant de représenter les entités juridiques. |
 | [TDDUI Patient](StructureDefinition-tddui-patient.md) | Profil de la ressource FrCorePatientProfile permettant de représenter un usager lorsque l'INS n'est pas transmis. |
 | [TDDUI Patient INS](StructureDefinition-tddui-patient-ins.md) | Profil de la ressource FRCorePatientINSProfile permettant de représenter un usager lorsque l'INS est transmis. |
@@ -77,6 +80,7 @@ These define constraints on FHIR data types for systems conforming to this imple
 | :--- | :--- |
 | [Description](StructureDefinition-tddui-related-person-contact-description.md) | Description du contact PersonnePhysique. |
 | [TDDUI Admission Date](StructureDefinition-tddui-admission-date.md) | Date d’admission dans la structure ESSMS. |
+| [TDDUI Assessment Method](StructureDefinition-tddui-assessment-method.md) | Mode d'évaluation, texte libre permettant de mettre le contexte de l'évaluation. |
 | [TDDUI Attachment](StructureDefinition-tddui-attachment.md) | Extension permettant de véhiculer des pièces jointes que ce soit pour l'évaluation, l'évènement ou le projet personnalisé. L'extension référence le profil PDSm_SimplifiedPublish. |
 | [TDDUI Birth Order](StructureDefinition-tddui-birth-order.md) | Ordre d’enregistrement de la naissance dans le registre d’état civil de la commune de naissance pour le mois de la naissance. Il compose les 3 derniers chiffres du NIR de l'usager avant la clé de sécurité et permet de distinguer les personnes nées au même lieu et à la même période. Il est obligatoire si le NIR n'est pas transmis. |
 | [TDDUI CarePlan Projet Perso Ref](StructureDefinition-tddui-careplan-reference.md) | Liens vers le projet personnalisé, utilisables dans le profil TDDUIGoalObjectif. |
@@ -86,6 +90,7 @@ These define constraints on FHIR data types for systems conforming to this imple
 * **Champ évalué** : commentaire spécifique à un item ou sous-item évalué.
  |
 | [TDDUI Discriminator](StructureDefinition-tddui-discriminator.md) | Extension pour discriminer les éléments CarePlan.supportingInfo et Goal.note. |
+| [TDDUI Entry Date Origin](StructureDefinition-tddui-entry-date-origin.md) | Extension permettant de véhiculer la date d'entrée dans l'ESSMS de provenance. |
 | [TDDUI Entry Mode label](StructureDefinition-tddui-entry-mode-label.md) | Libellé du mode d’entée du séjour. |
 | [TDDUI Evaluation Ref](StructureDefinition-tddui-evaluation-reference.md) | Liens vers l'évaluation, utilisables dans le profil TDDUIGoalObjectif. |
 | [TDDUI Event Cancel Reason](StructureDefinition-tddui-event-cancel-reason.md) | Motif associé au statut de non-réalisation de l’évènement. |
@@ -95,13 +100,14 @@ These define constraints on FHIR data types for systems conforming to this imple
 | [TDDUI Event Report](StructureDefinition-tddui-event-report.md) | Zone de texte liée à l’événement pour compte rendu des actions réalisées. |
 | [TDDUI Exercise Mode](StructureDefinition-tddui-exercise-mode.md) | Extension permettant de représenter le mode d'exercice du professionnel. |
 | [TDDUI Exit Mode Label](StructureDefinition-tddui-exit-mode-label.md) | Libellé du mode de sortie du séjour. |
+| [TDDUI Household Situation](StructureDefinition-tddui-household-situation.md) | Extension complexe regroupant la situation familiale, la composition du foyer et sa description textuelle de l'usager. |
 | [TDDUI Meal](StructureDefinition-tddui-meal.md) | Repas du professionnel prévu dans le cadre de l'événement. |
 | [TDDUI Nationality Extension](StructureDefinition-tddui-nationality.md) | The nationality of the patient or a related person. |
 | [TDDUI Participant Present](StructureDefinition-tddui-participant-present.md) | Indique la présence du participant à l'événement. |
 | [TDDUI Patient Present](StructureDefinition-tddui-patient-present.md) | Evènement nécessitant ou non la présence physique de l’usager. |
 | [TDDUI Patient Validation](StructureDefinition-tddui-patient-validation.md) | Validation par l'usager que l'événement a eu lieu. |
 | [TDDUI Profession](StructureDefinition-tddui-profession.md) | Extension permettant de représenter la profession du professionnel. |
-| [TDDUI QR Participant](StructureDefinition-tddui-qr-participant.md) | Extension permettant d'ajouter le responsable de l'évaluation et l'auteur du statut de l'évaluation dans un QuestionnaireResponse. |
+| [TDDUI QR Participant](StructureDefinition-tddui-qr-participant.md) | Extension permettant d'ajouter le responsable et le porteur de l'évaluation dans un QuestionnaireResponse. |
 | [TDDUI Ressources Used](StructureDefinition-tddui-ressources-used.md) | Ressources utilisées lors de l’évènement (ex : chambre, matériel médical, véhicule). |
 | [TDDUI Status Author](StructureDefinition-tddui-status-author.md) | Extension permettant de représenter l'auteur du statut. |
 
@@ -111,6 +117,7 @@ These define sets of codes used by systems conforming to this implementation gui
 
 | | |
 | :--- | :--- |
+| [TDDUI CIM10](ValueSet-tddui-cim-10.md) | ValueSet incluant les codes de la terminologie CIM-1O. |
 | [TDDUI CarePlan supportingInfo](ValueSet-tddui-care-plan-supporting-info.md) | ValueSet définissant les types de notes pour l'élément CarePlan.supportingInfo. |
 | [TDDUI Contact Protection Juridique](ValueSet-tddui-contact-protection-juridique.md) | ValueSet définissant la protection juridique. |
 | [TDDUI Contact Relation](ValueSet-tddui-contact-relation.md) | ValueSet définissant les relations. |
@@ -120,6 +127,8 @@ These define sets of codes used by systems conforming to this implementation gui
 | [TDDUI Encounter Type](ValueSet-tddui-encounter-type.md) | ValueSet pour la définition des codes de type de séjour |
 | [TDDUI Goal Attente Note](ValueSet-tddui-goal-attente-note.md) | ValueSet définissant les types de notes pour l'élément Goal.note. |
 | [TDDUI Goal Objectif Note](ValueSet-tddui-goal-objectif-note.md) | ValueSet définissant les types de notes pour l'élément Goal.note. |
+| [TDDUI Observation Periode Scolaire](ValueSet-tddui-observation-periode-scolaire.md) | ValueSet pour l'Observation de la Période Scolaire. |
+| [TDDUI Observation Type](ValueSet-tddui-observation-type.md) | ValueSet pour les types d'Observation. |
 | [TDDUI Patient Identifier](ValueSet-tddui-patient-identifier.md) | ValueSet pour la définition des codes d'identifiant de l'usager |
 | [TDDUI Related Person Relashionship](ValueSet-tddui-contact-related-person-relashionship.md) | ValueSet définissant les slices de RelatedPerson.relationship. |
 | [TDDUI SERAFIN](ValueSet-tddui-serafin.md) | ValueSet contenant les codes SERAFIN (prestations directes et indirectes) pour le profil TDDUI Encounter Evenement. |
@@ -138,6 +147,8 @@ These define new code systems used by systems conforming to this implementation 
 | :--- | :--- |
 | [TDDUI Discriminator](CodeSystem-tddui-discriminator.md) | CodeSystem définissant les codes discriminants. |
 | [TDDUI Encounter Identifier](CodeSystem-tddui-encounter-identifier.md) | CodeSystem pour la définition des codes d'identifiant de séjour |
+| [TDDUI Observation Periode Scolaire](CodeSystem-tddui-observation-periode-scolaire.md) | CodeSystem pour l'Observation de la Période Scolaire. |
+| [TDDUI Observation Type](CodeSystem-tddui-observation-type.md) | CodeSystem pour la défintion des types d'Observation |
 | [TDDUI Patient Identifier](CodeSystem-tddui-identifier.md) | CodeSystem pour la définition des codes d'identifiant de l'usager |
 | [TDDUI Task Input Action](CodeSystem-tddui-task-input-action.md) | CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les actions du projet personnalisé. |
 | [TDDUI Task Input Bilan](CodeSystem-tddui-task-input-bilan.md) | CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour le bilan du projet personnalisé. |
@@ -156,7 +167,11 @@ These are example instances that show what data produced and consumed by systems
 | [TDDUI Encounter Evenement Example](Encounter-tddui-encounter-evenement-example.md) | Exemple d'un évènement |
 | [TDDUI Encounter Sejour Example](Encounter-tddui-encounter-sejour-example.md) | Exemple d'un séjour en ESSMS |
 | [TDDUI Event Location Example](Location-tddui-event-location-example.md) | Lieu de l'évènement |
+| [TDDUI Observation Cause Mortalite Example](Observation-tddui-observation-cause-mortalite-example.md) | Exemple de la ressource TDDUIObservationMortalite |
+| [TDDUI Observation Mobilite Usager Example](Observation-tddui-observation-mobilite-usager-example.md) | Exemple de la ressource TDDUIObservationMobiliteUsager |
+| [TDDUI Observation PeriodeScolaire Example](Observation-tddui-observation-periodescolaire-example.md) | Exemple de la ressource TDDUIObservationPeriodeScolaire |
 | [TDDUI Organization Example](Organization-tddui-organization-example.md) | ESSMS - Les Chênes Verts |
+| [TDDUI Organization Origine Example](Organization-tddui-organization-origine-example.md) | ESSMS - Les Résidences du Lac |
 | [TDDUI PP IME Bundle Example](Bundle-tddui-pp-ime-bundle-example.md) | Exemple de bundle conforme au profil TDDUIBundle contenant le projet personnalisé en IME |
 | [TDDUI PP IME CarePlan Example](CarePlan-tddui-pp-ime-careplan-example.md) | Exemple du projet personnalisé d'un enfant en IME |
 | [TDDUI PP IME Consent Accord Example](Consent-tddui-pp-ime-consent-accord-example.md) | Exemple d'un accord de la structure |

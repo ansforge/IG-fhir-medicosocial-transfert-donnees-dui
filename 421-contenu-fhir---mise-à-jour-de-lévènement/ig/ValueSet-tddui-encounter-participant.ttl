@@ -17,7 +17,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs tddui-encounter-participant</b></p><a name=\"tddui-encounter-participant\"> </a><a name=\"hctddui-encounter-participant\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"http://hl7.org/fhir/R4/shareablevalueset.html\">Shareable ValueSet</a></p></div><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Importe tous les codes contenu dans <a href=\"http://hl7.org/fhir/R4/valueset-encounter-participant-type.html\">Participant type</a></li><li>Importe tous les codes contenu dans <a href=\"https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j387-role-participant-ms\">Jdv J387 Role Participant Ms</a></li></ul></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs tddui-encounter-participant</b></p><a name=\"tddui-encounter-participant\"> </a><a name=\"hctddui-encounter-participant\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"http://hl7.org/fhir/R4/shareablevalueset.html\">Shareable ValueSet</a></p></div><ul><li>Importe tous les codes contenu dans <a href=\"http://hl7.org/fhir/R4/valueset-encounter-participant-type.html\">Participant type</a></li></ul></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:url [
      fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-participant"^^xsd:anyURI ;
@@ -28,7 +28,7 @@
   fhir:title [ fhir:v "TDDUI Encounter Participant"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2026-02-26T16:12:14+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-02-27T13:39:19+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -45,7 +45,7 @@
          fhir:l <urn:iso:std:iso:3166>
        ] ;
        fhir:code [ fhir:v "FR" ] ;
-       fhir:display [ fhir:v "FRANCE" ]
+       fhir:display [ fhir:v "France" ]
      ] )
   ] ) ; # 
   fhir:compose [
@@ -53,11 +53,6 @@
        fhir:valueSet ( [
          fhir:v "http://hl7.org/fhir/ValueSet/encounter-participant-type"^^xsd:anyURI ;
          fhir:l <http://hl7.org/fhir/ValueSet/encounter-participant-type>
-       ] )
-     ] [
-       fhir:valueSet ( [
-         fhir:v "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j387-role-participant-ms"^^xsd:anyURI ;
-         fhir:l <https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j387-role-participant-ms>
        ] )
      ] )
   ] . # 

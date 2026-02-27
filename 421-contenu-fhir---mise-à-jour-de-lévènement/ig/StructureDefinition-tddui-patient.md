@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient | *Version*:2.2.0 |
-| Active as of 2026-02-26 | *Computable Name*:TDDUIPatient |
+| Active as of 2026-02-27 | *Computable Name*:TDDUIPatient |
 
  
 Profil de la ressource FrCorePatientProfile permettant de représenter un usager lorsque l'INS n'est pas transmis. 
@@ -17,7 +17,7 @@ Profil de la ressource FrCorePatientProfile permettant de représenter un usager
 **Utilisations:**
 
 * Utilise ce/t/te Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
-* Référence ce Profil: [TDDUI CarePlan Projet Personalise](StructureDefinition-tddui-careplan-projet-personnalise.md), [TDDUI Consent Accord](StructureDefinition-tddui-consent-accord.md), [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md), [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)... Show 7 more, [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md), [TDDUI Goal Attente](StructureDefinition-tddui-goal-attente.md), [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md), [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md), [TDDUI RelatedPerson Contact](StructureDefinition-tddui-related-person-contact.md), [TDDUI ServiceRequest Besoin](StructureDefinition-tddui-service-request-besoin.md) and [TDDUI Task Bilan](StructureDefinition-tddui-task-bilan.md)
+* Référence ce Profil: [TDDUI CarePlan Projet Personalise](StructureDefinition-tddui-careplan-projet-personnalise.md), [TDDUI Consent Accord](StructureDefinition-tddui-consent-accord.md), [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md), [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)... Show 10 more, [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md), [TDDUI Goal Attente](StructureDefinition-tddui-goal-attente.md), [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md), [TDDUI Observation Cause Mortalite](StructureDefinition-tddui-observation-cause-mortalite.md), [TDDUI Observation Mobilite Usager](StructureDefinition-tddui-observation-mobilite-usager.md), [TDDUI Observation Periode Scolaire](StructureDefinition-tddui-observation-periode-scolaire.md), [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md), [TDDUI RelatedPerson Contact](StructureDefinition-tddui-related-person-contact.md), [TDDUI ServiceRequest Besoin](StructureDefinition-tddui-service-request-besoin.md) and [TDDUI Task Bilan](StructureDefinition-tddui-task-bilan.md)
 * Exemples pour ce/t/te Profil: [Patient/tddui-patient-example](Patient-tddui-patient-example.md), [Patient/tddui-pp-ime-patient-example](Patient-tddui-pp-ime-patient-example.md) and [Patient/tddui-pp-pa-patient-example-pp](Patient-tddui-pp-pa-patient-example-pp.md)
 * CapabilityStatements utilisant ce Profil: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient.csv), 
   "name" : "TDDUIPatient",
   "title" : "TDDUI Patient",
   "status" : "active",
-  "date" : "2026-02-26T16:12:14+00:00",
+  "date" : "2026-02-27T13:39:19+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -58,7 +58,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient.csv), 
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France"
     }]
   }],
   "fhirVersion" : "4.0.1",
@@ -107,9 +107,39 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient.csv), 
       }]
     },
     {
+      "id" : "Patient.extension:nationality",
+      "path" : "Patient.extension",
+      "sliceName" : "nationality",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIPatient",
+        "map" : "paysNationalite"
+      }]
+    },
+    {
+      "id" : "Patient.extension:deathPlace",
+      "path" : "Patient.extension",
+      "sliceName" : "deathPlace",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIPatient",
+        "map" : "communeDeces/departementDeces/paysDeces"
+      }]
+    },
+    {
       "id" : "Patient.extension:birthPlace",
       "path" : "Patient.extension",
       "sliceName" : "birthPlace"
+    },
+    {
+      "id" : "Patient.extension:birthPlace.value[x].district",
+      "path" : "Patient.extension.value[x].district",
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J258-Departement/FHIR/JDV-J258-Departement"
+      },
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIPatient",
+        "map" : "departementNaissance"
+      }]
     },
     {
       "id" : "Patient.extension:birthPlace.value[x].country",
@@ -126,6 +156,59 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient.csv), 
       "mapping" : [{
         "identity" : "specmetier-to-TDDUIPatient",
         "map" : "communeNaissance"
+      }]
+    },
+    {
+      "id" : "Patient.extension:TDDUIHouseholdSituation",
+      "path" : "Patient.extension",
+      "sliceName" : "TDDUIHouseholdSituation",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-household-situation"]
+      }]
+    },
+    {
+      "id" : "Patient.extension:TDDUIHouseholdSituation.extension:familySituation",
+      "path" : "Patient.extension.extension",
+      "sliceName" : "familySituation",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIPatient",
+        "map" : "situationFamiliale"
+      }]
+    },
+    {
+      "id" : "Patient.extension:TDDUIHouseholdSituation.extension:householdComposition",
+      "path" : "Patient.extension.extension",
+      "sliceName" : "householdComposition",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIPatient",
+        "map" : "compositionFoyer"
+      }]
+    },
+    {
+      "id" : "Patient.extension:TDDUIHouseholdSituation.extension:householdCompositionDescription",
+      "path" : "Patient.extension.extension",
+      "sliceName" : "householdCompositionDescription",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIPatient",
+        "map" : "descriptionCompositionFoyer"
+      }]
+    },
+    {
+      "id" : "Patient.extension:TDDUIComment",
+      "path" : "Patient.extension",
+      "sliceName" : "TDDUIComment",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment"]
+      }],
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIPatient",
+        "map" : "commentaire"
       }]
     },
     {
@@ -157,7 +240,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient.csv), 
       "max" : "1",
       "mapping" : [{
         "identity" : "specmetier-to-TDDUIPatient",
-        "map" : "identifiantLocalUsagerESSMS"
+        "map" : "identifiantUsagerESSMS"
       }]
     },
     {
@@ -211,6 +294,59 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient.csv), 
       "id" : "Patient.identifier:InitialNumberMDPH.value",
       "path" : "Patient.identifier.value",
       "min" : 1
+    },
+    {
+      "id" : "Patient.identifier:driverLicense",
+      "path" : "Patient.identifier",
+      "sliceName" : "driverLicense",
+      "short" : "Permis de conduire",
+      "min" : 0,
+      "max" : "*",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIPatient",
+        "map" : "PermisConduire"
+      }]
+    },
+    {
+      "id" : "Patient.identifier:driverLicense.type",
+      "path" : "Patient.identifier.type",
+      "min" : 1,
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+          "code" : "DL"
+        }]
+      }
+    },
+    {
+      "id" : "Patient.identifier:driverLicense.system",
+      "path" : "Patient.identifier.system",
+      "min" : 1
+    },
+    {
+      "id" : "Patient.identifier:driverLicense.value",
+      "path" : "Patient.identifier.value",
+      "min" : 1,
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIPatient",
+        "map" : "numPermisConduire"
+      }]
+    },
+    {
+      "id" : "Patient.identifier:driverLicense.period.start",
+      "path" : "Patient.identifier.period.start",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIPatient",
+        "map" : "dateObtention"
+      }]
+    },
+    {
+      "id" : "Patient.identifier:driverLicense.period.end",
+      "path" : "Patient.identifier.period.end",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIPatient",
+        "map" : "dateValidite"
+      }]
     },
     {
       "id" : "Patient.name",
@@ -292,6 +428,30 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient.csv), 
       }]
     },
     {
+      "id" : "Patient.telecom",
+      "path" : "Patient.telecom",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIPatient",
+        "map" : "Telecommunication"
+      }]
+    },
+    {
+      "id" : "Patient.telecom.system",
+      "path" : "Patient.telecom.system",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIPatient",
+        "map" : "canal"
+      }]
+    },
+    {
+      "id" : "Patient.telecom.value",
+      "path" : "Patient.telecom.value",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIPatient",
+        "map" : "adressTelecom"
+      }]
+    },
+    {
       "id" : "Patient.gender",
       "path" : "Patient.gender",
       "short" : "male | female | unknown",
@@ -339,6 +499,147 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient.csv), 
       "mapping" : [{
         "identity" : "specmetier-to-TDDUIPatient",
         "map" : "ordreNaissanceEtatCivil"
+      }]
+    },
+    {
+      "id" : "Patient.deceased[x]",
+      "path" : "Patient.deceased[x]",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "type",
+          "path" : "$this"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "Patient.deceased[x]:deceasedDateTime",
+      "path" : "Patient.deceased[x]",
+      "sliceName" : "deceasedDateTime",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "dateTime"
+      }],
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIPatient",
+        "map" : "dateDeces"
+      }]
+    },
+    {
+      "id" : "Patient.address",
+      "path" : "Patient.address",
+      "type" : [{
+        "code" : "Address",
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-address-extended"]
+      }],
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIPatient",
+        "map" : "Adresse"
+      }]
+    },
+    {
+      "id" : "Patient.address.extension:TDDUIComment",
+      "path" : "Patient.address.extension",
+      "sliceName" : "TDDUIComment",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment"]
+      }],
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIPatient",
+        "map" : "commentaire"
+      }]
+    },
+    {
+      "id" : "Patient.address.type",
+      "path" : "Patient.address.type",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIPatient",
+        "map" : "type"
+      }]
+    },
+    {
+      "id" : "Patient.address.line.extension:additionalLocator",
+      "path" : "Patient.address.line.extension",
+      "sliceName" : "additionalLocator",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIPatient",
+        "map" : "libelleVoie"
+      }]
+    },
+    {
+      "id" : "Patient.address.line.extension:houseNumber",
+      "path" : "Patient.address.line.extension",
+      "sliceName" : "houseNumber",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIPatient",
+        "map" : "numeroVoie"
+      }]
+    },
+    {
+      "id" : "Patient.address.line.extension:postBox",
+      "path" : "Patient.address.line.extension",
+      "sliceName" : "postBox",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIPatient",
+        "map" : "mentionDistribution"
+      }]
+    },
+    {
+      "id" : "Patient.address.line.extension:streetNameBase",
+      "path" : "Patient.address.line.extension",
+      "sliceName" : "streetNameBase",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIPatient",
+        "map" : "complementPointGeographique"
+      }]
+    },
+    {
+      "id" : "Patient.address.state",
+      "path" : "Patient.address.state",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIPatient",
+        "map" : "localite"
+      }]
+    },
+    {
+      "id" : "Patient.address.postalCode",
+      "path" : "Patient.address.postalCode",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIPatient",
+        "map" : "codePostal"
+      }]
+    },
+    {
+      "id" : "Patient.address.country",
+      "path" : "Patient.address.country",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIPatient",
+        "map" : "pays"
+      }]
+    },
+    {
+      "id" : "Patient.photo",
+      "path" : "Patient.photo",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIPatient",
+        "map" : "photo"
+      }]
+    },
+    {
+      "id" : "Patient.communication.language",
+      "path" : "Patient.communication.language",
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J115-Langue-ENREG/FHIR/JDV-J115-Langue-ENREG"
+      },
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIPatient",
+        "map" : "langueParlee"
       }]
     }]
   }

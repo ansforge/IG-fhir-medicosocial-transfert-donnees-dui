@@ -37,7 +37,7 @@ Profil: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenemen
 | | | |
 | :--- | :--- | :--- |
 | - | **Type** | **Individual** |
-| * | MJPM | [Practitioner Claire Martin ](Practitioner-tddui-practitioner-example.md) |
+| * | Participation | [Practitioner Claire Martin ](Practitioner-tddui-practitioner-example.md) |
 
 **period**: 2023-04-14 10:30:00+0200 --> 2023-04-14 11:15:00+0200
 
@@ -50,7 +50,7 @@ Profil: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenemen
 
 **serviceProvider**: [Organization Les Chênes Verts](Organization-tddui-organization-example.md)
 
-**partOf**: [Encounter : extension = 2023-04-11,Date de début du suivi post-opératoire : 14/04/2023,Sortie prévisionnelle prévue pour le 5 mai 2023,2023-05-05; identifier = Identifiant du séjour: 3480787529/147720425367411-SEJOUR-1012; status = in-progress; class = home health (ActCode#HH); period = 2023-04-14 --> (en cours)](Encounter-tddui-encounter-sejour-example.md)
+**partOf**: [Encounter : extension = 2023-04-11,Date de début du suivi post-opératoire : 14/04/2023,Sortie prévisionnelle prévue pour le 5 mai 2023,2023-05-05; identifier = Identifiant du séjour: 3480787529/147720425367411-SEJOUR-1012,Numéro de dossier administratif du séjour: 1012; status = in-progress; class = home health (ActCode#HH); period = 2023-04-14 --> (en cours)](Encounter-tddui-encounter-sejour-example.md)
 
 
 
@@ -142,9 +142,8 @@ Profil: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenemen
   "participant" : [{
     "type" : [{
       "coding" : [{
-        "system" : "https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge",
-        "code" : "307",
-        "display" : "MJPM"
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+        "code" : "PART"
       }]
     }],
     "individual" : {

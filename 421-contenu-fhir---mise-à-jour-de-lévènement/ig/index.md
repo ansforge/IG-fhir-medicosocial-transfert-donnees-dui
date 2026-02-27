@@ -8,10 +8,13 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui | *Version*:2.2.0 |
-| Active as of 2026-02-26 | *Computable Name*:TDDUI |
+| Active as of 2026-02-27 | *Computable Name*:TDDUI |
 
  **Brief description of this Implementation Guide**
  The Digital User File (DUI) centralizes all information concerning the person being cared for in social and medico-social facilities and services. The aim of this implementation guide is to define the specifications for DUI data transfer. 
+
+>  **Attention !** 
+ Cet Implementation Guide est actuellement en concertation. La version courante est accessible à l'adresse : http://interop.esante.gouv.fr/ig/fhir/tddui 
 
 ### Introduction
 
@@ -77,6 +80,9 @@ Les ressources profilées dans le cadre de ce guide d'implémentation sont les s
 | [Encounter](http://hl7.org/fhir/StructureDefinition/Encounter) | [TDDUIEncounterSejour](StructureDefinition-tddui-encounter-sejour.md) | Profil de la ressource Encounter permettant de regrouper les informations relatives au séjour d'un usager dans une structure ESSMS |
 | [Goal](http://hl7.org/fhir/StructureDefinition/Goal) | [TDDUIGoalAttente](StructureDefinition-tddui-goal-attente.md) | Profil de la ressource Goal permettant de représenter les attentes pour un usager. |
 | [Goal](http://hl7.org/fhir/StructureDefinition/Goal) | [TDDUIGoalObjectif](StructureDefinition-tddui-goal-objectif.md) | Profil de la ressource Goal permettant de représenter les résultats à atteindre dans le cadre du projet personnalisé. |
+| [Observation](http://hl7.org/fhir/StructureDefinition/Observation) | [TDDUIObservationCauseMortalite](StructureDefinition-tddui-observation-cause-mortalite.md) | Profil de la ressource Observation permettant de représenter les causes de mortalité d'un usager. |
+| [Observation](http://hl7.org/fhir/StructureDefinition/Observation) | [TDDUIObservationMobiliteUsager](StructureDefinition-tddui-observation-mobilite-usager.md) | Profil de la ressource Observation permettant de représenter la mobilité de l'usager. |
+| [Observation](http://hl7.org/fhir/StructureDefinition/Observation) | [TDDUIObservationPeriodeScolaire](StructureDefinition-tddui-observation-periode-scolaire.md) | Profil de la ressource Observation permettant de représenter la période scolaire de l'usager. |
 | [FR Core Organization Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization) | [TDDUIOrganization](StructureDefinition-tddui-organization.md) | Profil de la ressource FRCoreOrganizationProfile permettant de représenter les entités juridiques. |
 | [FR Core Patient Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient) | [TDDUIPatient](StructureDefinition-tddui-patient.md) | Profil de la ressource FrCorePatientProfile permettant de représenter un usager lorsque l'INS n'est pas transmis. |
 | [FR Core Patient INS Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins) | [TDDUIPatientINS](StructureDefinition-tddui-patient-ins.md) | Profil de la ressource FRCorePatientINSProfile permettant de représenter un usager lorsque l'INS est transmis. |
@@ -127,6 +133,8 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
 
 
 
+
+
 ## Resource Content
 
 ```json
@@ -138,7 +146,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2026-02-26T16:12:14+00:00",
+  "date" : "2026-02-27T13:39:19+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -151,7 +159,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France"
     }]
   }],
   "packageId" : "ans.fhir.fr.tddui",
@@ -190,6 +198,12 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
     "uri" : "https://profiles.ihe.net/ITI/MHD/ImplementationGuide/ihe.iti.mhd",
     "packageId" : "ihe.iti.mhd",
     "version" : "4.2.0"
+  },
+  {
+    "id" : "ans_fhir_fr_annuaire",
+    "uri" : "https://interop.esante.gouv.fr/ig/fhir/annuaire/ImplementationGuide/ans.fhir.fr.annuaire",
+    "packageId" : "ans.fhir.fr.annuaire",
+    "version" : "1.1.0"
   }],
   "definition" : {
     "extension" : [{
@@ -210,7 +224,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
       },
       {
         "url" : "value",
-        "valueString" : "trial-implementation"
+        "valueString" : "public-comment"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -517,7 +531,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
       },
       {
         "url" : "value",
-        "valueString" : "trial-implementation"
+        "valueString" : "public-comment"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -826,6 +840,18 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/tddui-assessment-method"
+      },
+      "name" : "TDDUI Assessment Method",
+      "description" : "Mode d'évaluation, texte libre permettant de mettre le contexte de l'évaluation.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/tddui-attachment"
       },
       "name" : "TDDUI Attachment",
@@ -902,6 +928,18 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
       },
       "name" : "TDDUI CarePlan supportingInfo",
       "description" : "ValueSet définissant les types de notes pour l'élément CarePlan.supportingInfo.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/tddui-cim-10"
+      },
+      "name" : "TDDUI CIM10",
+      "description" : "ValueSet incluant les codes de la terminologie CIM-1O.",
       "exampleBoolean" : false
     },
     {
@@ -1102,6 +1140,18 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/tddui-entry-date-origin"
+      },
+      "name" : "TDDUI Entry Date Origin",
+      "description" : "Extension permettant de véhiculer la date d'entrée dans l'ESSMS de provenance.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/tddui-entry-mode-label"
       },
       "name" : "TDDUI Entry Mode label",
@@ -1267,6 +1317,18 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-household-situation"
+      },
+      "name" : "TDDUI Household Situation",
+      "description" : "Extension complexe regroupant la situation familiale, la composition du foyer et sa description textuelle de l'usager.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:complex-type"
       }],
       "reference" : {
@@ -1306,6 +1368,126 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/tddui-observation-cause-mortalite"
+      },
+      "name" : "TDDUI Observation Cause Mortalite",
+      "description" : "Profil de la ressource Observation permettant de représenter les causes de mortalité d'un usager.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/tddui-observation-cause-mortalite-example"
+      },
+      "name" : "TDDUI Observation Cause Mortalite Example",
+      "description" : "Exemple de la ressource TDDUIObservationMortalite",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-mortalite"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-observation-mobilite-usager"
+      },
+      "name" : "TDDUI Observation Mobilite Usager",
+      "description" : "Profil de la ressource Observation permettant de représenter la mobilité de l'usager.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/tddui-observation-mobilite-usager-example"
+      },
+      "name" : "TDDUI Observation Mobilite Usager Example",
+      "description" : "Exemple de la ressource TDDUIObservationMobiliteUsager",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite-usager"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-observation-periode-scolaire"
+      },
+      "name" : "TDDUI Observation Periode Scolaire",
+      "description" : "Profil de la ressource Observation permettant de représenter la période scolaire de l'usager.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/tddui-observation-periode-scolaire"
+      },
+      "name" : "TDDUI Observation Periode Scolaire",
+      "description" : "ValueSet pour l'Observation de la Période Scolaire.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/tddui-observation-periode-scolaire"
+      },
+      "name" : "TDDUI Observation Periode Scolaire",
+      "description" : "CodeSystem pour l'Observation de la Période Scolaire.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/tddui-observation-periodescolaire-example"
+      },
+      "name" : "TDDUI Observation PeriodeScolaire Example",
+      "description" : "Exemple de la ressource TDDUIObservationPeriodeScolaire",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-periode-scolaire"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/tddui-observation-type"
+      },
+      "name" : "TDDUI Observation Type",
+      "description" : "ValueSet pour les types d'Observation.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/tddui-observation-type"
+      },
+      "name" : "TDDUI Observation Type",
+      "description" : "CodeSystem pour la défintion des types d'Observation",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/tddui-organization"
       },
       "name" : "TDDUI Organization",
@@ -1322,6 +1504,18 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
       },
       "name" : "TDDUI Organization Example",
       "description" : "ESSMS - Les Chênes Verts",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/tddui-organization-origine-example"
+      },
+      "name" : "TDDUI Organization Origine Example",
+      "description" : "ESSMS - Les Résidences du Lac",
       "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization"
     },
     {
@@ -1909,7 +2103,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "reference" : "StructureDefinition/tddui-qr-participant"
       },
       "name" : "TDDUI QR Participant",
-      "description" : "Extension permettant d'ajouter le responsable de l'évaluation et l'auteur du statut de l'évaluation dans un QuestionnaireResponse.",
+      "description" : "Extension permettant d'ajouter le responsable et le porteur de l'évaluation dans un QuestionnaireResponse.",
       "exampleBoolean" : false
     },
     {

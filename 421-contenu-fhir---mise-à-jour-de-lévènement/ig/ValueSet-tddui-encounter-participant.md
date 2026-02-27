@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-participant | *Version*:2.2.0 |
-| Active as of 2026-02-26 | *Computable Name*:TDDUIEncounterParticipant |
+| Active as of 2026-02-27 | *Computable Name*:TDDUIEncounterParticipant |
 
  
 ValueSet pour la définition des codes de participant d'un événement 
 
  **References** 
 
-Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (par exemple dans les spécifications et / ou implémentations qui utilisent ce contenu)
+* [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)
 
 ### Définition logique (CLD)
 
@@ -54,7 +54,7 @@ Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (pa
   "title" : "TDDUI Encounter Participant",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-26T16:12:14+00:00",
+  "date" : "2026-02-27T13:39:19+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -68,15 +68,12 @@ Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (pa
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France"
     }]
   }],
   "compose" : {
     "include" : [{
       "valueSet" : ["http://hl7.org/fhir/ValueSet/encounter-participant-type"]
-    },
-    {
-      "valueSet" : ["https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j387-role-participant-ms"]
     }]
   }
 }
