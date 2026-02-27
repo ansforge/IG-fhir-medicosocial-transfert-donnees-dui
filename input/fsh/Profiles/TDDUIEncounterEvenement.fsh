@@ -68,21 +68,9 @@ Description: "Profil de la ressource Encounter permettant de regrouper les évè
 * serviceProvider.extension[TDDUIParticipantPresent] ^short = "Indique la présence de la structure lors de l'événement."
 * serviceProvider only Reference(TDDUIOrganization)
 
-* participant.type from TDDUIEncounterParticipant (required)
-
 * participant.extension contains TDDUIParticipantPresent named TDDUIParticipantPresent 0..1
 
-* participant ^slicing.discriminator.type = #pattern
-* participant ^slicing.discriminator.path = "type"
-* participant ^slicing.rules = #open
-
-* participant contains
-    professionnel 0..*
-
-* participant[professionnel].type 1..1
-* participant[professionnel].type = $ParticipationType#PART
-
-* participant.individual only Reference(TDDUIPractitioner or TDDUIPractitionerRole)
+* participant.individual only Reference(TDDUIPractitioner or TDDUIPractitionerRole or TDDUIRelatedPersonContact)
 
 * location 0..1
 
@@ -129,7 +117,7 @@ Title:    "Modèle de contenu DUI"
 * serviceProvider.extension[TDDUIParticipantPresent] -> "Participant.presenceParticipant"
 * participant.type -> "Participant.roleParticipantEJ"
 * participant.extension[TDDUIParticipantPresent] -> "Participant.presenceParticipant"
-* participant[professionnel] -> "Participant.Professionnel"
+* participant.individual -> "Participant.Professionnel/Contact"
 * location -> "lieuEvenement"
 * extension[TDDUIRessourcesUsed] -> "RessourceUtilisee"
 * extension[TDDUIRessourcesUsed].extension[TDDUIRessourceType] -> "typeRessourceUtilisee"

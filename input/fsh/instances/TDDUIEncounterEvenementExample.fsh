@@ -25,7 +25,7 @@ Usage: #example
 
 * serviceProvider = Reference(tddui-organization-example)
 
-* participant[professionnel].individual = Reference(tddui-practitioner-example)
+* participant.individual = Reference(tddui-practitioner-example)
 
 * partOf = Reference(tddui-encounter-sejour-example)
 
