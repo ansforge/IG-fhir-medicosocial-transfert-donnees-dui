@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-even
   "name" : "TDDUIEncounterEvenement",
   "title" : "TDDUI Encounter Evenement",
   "status" : "active",
-  "date" : "2026-02-27T13:39:19+00:00",
+  "date" : "2026-02-27T14:39:40+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -587,13 +587,6 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-even
     {
       "id" : "Encounter.participant",
       "path" : "Encounter.participant",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "pattern",
-          "path" : "type"
-        }],
-        "rules" : "open"
-      },
       "short" : "List of participants involved in the encounter | Liste des personnes impliquées dans la rencontre"
     },
     {
@@ -626,10 +619,6 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-even
     {
       "id" : "Encounter.participant.type",
       "path" : "Encounter.participant.type",
-      "binding" : {
-        "strength" : "required",
-        "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-participant"
-      },
       "mapping" : [{
         "identity" : "specmetier-to-TDDUIEncounterEvenement",
         "map" : "Participant.roleParticipantEJ"
@@ -641,50 +630,12 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-even
       "type" : [{
         "code" : "Reference",
         "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner",
-        "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role"]
-      }]
-    },
-    {
-      "id" : "Encounter.participant:professionnel",
-      "path" : "Encounter.participant",
-      "sliceName" : "professionnel",
-      "min" : 0,
-      "max" : "*",
+        "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role",
+        "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact"]
+      }],
       "mapping" : [{
         "identity" : "specmetier-to-TDDUIEncounterEvenement",
-        "map" : "Participant.Professionnel"
-      }]
-    },
-    {
-      "id" : "Encounter.participant:professionnel.extension:TDDUIParticipantPresent",
-      "path" : "Encounter.participant.extension",
-      "sliceName" : "TDDUIParticipantPresent",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-participant-present"]
-      }]
-    },
-    {
-      "id" : "Encounter.participant:professionnel.type",
-      "path" : "Encounter.participant.type",
-      "min" : 1,
-      "max" : "1",
-      "patternCodeableConcept" : {
-        "coding" : [{
-          "system" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
-          "code" : "PART"
-        }]
-      }
-    },
-    {
-      "id" : "Encounter.participant:professionnel.individual",
-      "path" : "Encounter.participant.individual",
-      "type" : [{
-        "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner",
-        "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role"]
+        "map" : "Participant.Professionnel/Contact"
       }]
     },
     {

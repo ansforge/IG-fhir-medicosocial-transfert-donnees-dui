@@ -16,7 +16,7 @@ ValueSet pour la définition des codes de participant d'un événement
 
  **References** 
 
-* [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)
+Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (par exemple dans les spécifications et / ou implémentations qui utilisent ce contenu)
 
 ### Définition logique (CLD)
 
@@ -54,7 +54,7 @@ ValueSet pour la définition des codes de participant d'un événement
   "title" : "TDDUI Encounter Participant",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-27T13:39:19+00:00",
+  "date" : "2026-02-27T14:39:40+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

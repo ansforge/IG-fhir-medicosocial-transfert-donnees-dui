@@ -34,10 +34,10 @@ Profil: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenemen
 
 ### Participants
 
-| | | |
-| :--- | :--- | :--- |
-| - | **Type** | **Individual** |
-| * | Participation | [Practitioner Claire Martin ](Practitioner-tddui-practitioner-example.md) |
+| | |
+| :--- | :--- |
+| - | **Individual** |
+| * | [Practitioner Claire Martin ](Practitioner-tddui-practitioner-example.md) |
 
 **period**: 2023-04-14 10:30:00+0200 --> 2023-04-14 11:15:00+0200
 
@@ -140,12 +140,6 @@ Profil: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenemen
     "reference" : "Patient/tddui-patient-ins-example"
   },
   "participant" : [{
-    "type" : [{
-      "coding" : [{
-        "system" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
-        "code" : "PART"
-      }]
-    }],
     "individual" : {
       "reference" : "Practitioner/tddui-practitioner-example"
     }
