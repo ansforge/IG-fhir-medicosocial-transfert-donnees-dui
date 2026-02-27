@@ -54,7 +54,7 @@ ValueSet pour la définition des éléments spécifiques des input dans la resso
   "title" : "InputTDDUITaskMoyenRessourceValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-27T09:26:51+00:00",
+  "date" : "2026-02-27T09:31:51+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
