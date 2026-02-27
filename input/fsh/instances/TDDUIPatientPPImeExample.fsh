@@ -10,3 +10,6 @@ Usage: #example
 * name[officialName].use = #official
 * name[officialName].given = "Hugo"
 * name[officialName].family = "D."
+
+* birthDate = "2005-09-15"
+* birthDate.extension[tddui-birth-order].valuePositiveInt = 1

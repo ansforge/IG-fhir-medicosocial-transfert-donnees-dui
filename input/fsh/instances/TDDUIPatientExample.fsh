@@ -27,7 +27,6 @@ Usage: #example
 * name[officialName].extension[birth-list-given-name].valueString = "Jean Stéphane Patrick"
 
 * gender = #male
-* birthDate = "1947-04-03"
 * birthDate.extension[tddui-birth-order].valuePositiveInt = 2
 
 * address.use = #home
