@@ -69,6 +69,7 @@ Description: "Profil de la ressource Encounter permettant de regrouper les évè
 * serviceProvider only Reference(TDDUIOrganization)
 
 * participant.extension contains TDDUIParticipantPresent named TDDUIParticipantPresent 0..1
+* participant.extension[TDDUIParticipantPresent] ^short = "Indique la présence du participant lors de l'événement."
 
 * participant.individual only Reference(TDDUIPractitioner or TDDUIPractitionerRole)
 
@@ -115,7 +116,6 @@ Title:    "Modèle de contenu DUI"
 * subject -> "Usager"
 * serviceProvider -> "Participant.structureEnCharge"
 * serviceProvider.extension[TDDUIParticipantPresent] -> "Participant.presenceParticipant"
-* participant.type -> "Participant.roleParticipantEJ"
 * participant.extension[TDDUIParticipantPresent] -> "Participant.presenceParticipant"
 * participant.individual -> "Participant.Professionnel"
 * location -> "lieuEvenement"
