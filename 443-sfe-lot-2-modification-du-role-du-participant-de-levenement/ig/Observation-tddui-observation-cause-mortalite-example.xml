@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="tddui-observation-cause-mortalite-example"/>
+  <meta>
+    <profile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-mortalite"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : Observation tddui-observation-cause-mortalite-example</b></p><a name="tddui-observation-cause-mortalite-example"> </a><a name="hctddui-observation-cause-mortalite-example"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="StructureDefinition-tddui-observation-cause-mortalite.html">TDDUI Observation Cause Mortalite</a></p></div><p><b>status</b>: Registered</p><p><b>code</b>: <span title="Codes :{http://loinc.org 79378-6}">Cause of death</span></p><p><b>subject</b>: <a href="Patient-tddui-patient-ins-example.html">DUPONT  Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/194704032)</a></p><h3>Components</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes :{http://loinc.org 79378-6}">Cause of death</span></td><td><span title="Codes :{https://smt.esante.gouv.fr/terminologie-cim-10 J81}">Œdème pulmonaire</span></td></tr></table></div>
+  </text>
+  <status value="registered"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="79378-6"/>
+      <display value="Cause of death"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/tddui-patient-ins-example"/>
+  </subject>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="79378-6"/>
+        <display value="Cause of death"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://smt.esante.gouv.fr/terminologie-cim-10"/>
+        <code value="J81"/>
+        <display value="Œdème pulmonaire"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+</Observation>
