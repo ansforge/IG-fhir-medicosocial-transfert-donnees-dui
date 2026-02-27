@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-even
   "name" : "TDDUIEncounterEvenement",
   "title" : "TDDUI Encounter Evenement",
   "status" : "active",
-  "date" : "2026-02-27T15:25:53+00:00",
+  "date" : "2026-02-27T15:59:30+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -605,6 +605,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-even
       "id" : "Encounter.participant.extension:TDDUIParticipantPresent",
       "path" : "Encounter.participant.extension",
       "sliceName" : "TDDUIParticipantPresent",
+      "short" : "Indique la présence du participant lors de l'événement.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -614,14 +615,6 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-even
       "mapping" : [{
         "identity" : "specmetier-to-TDDUIEncounterEvenement",
         "map" : "Participant.presenceParticipant"
-      }]
-    },
-    {
-      "id" : "Encounter.participant.type",
-      "path" : "Encounter.participant.type",
-      "mapping" : [{
-        "identity" : "specmetier-to-TDDUIEncounterEvenement",
-        "map" : "Participant.roleParticipantEJ"
       }]
     },
     {

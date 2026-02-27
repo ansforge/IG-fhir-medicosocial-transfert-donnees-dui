@@ -424,7 +424,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Encounter.participant.extension:TDDUIParticipantPresent","Encounter.participant.extension","TDDUIParticipantPresent","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-participant-present]]} {[]}
-","TDDUI Participant Present","Indique la présence du participant à l'événement.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","Indique la présence du participant lors de l'événement.","Indique la présence du participant à l'événement.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","Participant.presenceParticipant"
 "Encounter.participant.modifierExtension","Encounter.participant.modifierExtension","","extensions
@@ -435,7 +435,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
 "Encounter.participant.type","Encounter.participant.type","","","",0,*,"","","Y","CodeableConcept {[]} {[]}
 ","Role of participant in encounter","Role of participant in encounter.","The participant type indicates how an individual participates in an encounter. It includes non-practitioner participants, and for practitioners this is to describe the action type in the context of this encounter (e.g. Admitting Dr, Attending Dr, Translator, Consulting Dr). This is different to the practitioner roles which are functional roles, derived from terms of employment, education, licensing, etc.","","","","","","","","",,"extensible","Role of participant in encounter.","http://hl7.org/fhir/ValueSet/encounter-participant-type|4.0.1","",,,,"Encounter.participant.type",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","Participant.roleParticipantEJ","Event.performer.function",".functionCode","ROL-3 (or maybe PRT-4)"
+","Event.performer.function",".functionCode","ROL-3 (or maybe PRT-4)"
 "Encounter.participant.period","Encounter.participant.period","","","",0,1,"","","","Period {[]} {[]}
 ","Period of time during the encounter that the participant participated","The period of time that the specified participant participated in the encounter. These can overlap or be sub-sets of the overall encounter's period.","","","","","","","","","",,,,,"",,,,"Encounter.participant.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".time","ROL-5, ROL-6 (or maybe PRT-5)"
