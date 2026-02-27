@@ -2278,6 +2278,10 @@ La classe Repas indique si l'usager bénéficie ou non des repas.
     <th>Description</th>
   </tr>
   <tr>
+    <td>idRepas : [1..1] Identifiant</td>
+    <td>Identifiant technique du repas obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de cinq caractères "REPAS" et du numéro du repas dans le DUI (numRepas) :<br> idrepas = 3+FINESS/identifiantLocalUsagerESSMS-REPAS-numRepas</td>
+  </tr>
+  <tr>
     <td>dateRepas : [1..1] DateHeure</td>
     <td>Date et heure du repas.</td>
   </tr>
