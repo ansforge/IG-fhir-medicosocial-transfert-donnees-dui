@@ -17,7 +17,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Patient tddui-pp-ime-patient-example</b></p><a name=\"tddui-pp-ime-patient-example\"> </a><a name=\"hctddui-pp-ime-patient-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-patient.html\">TDDUI Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Hugo D. (official) (sexe non précisé), Date de Naissance inconnue ( Patient internal identifier: 3480787529/123456)</p><hr/></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Patient tddui-pp-ime-patient-example</b></p><a name=\"tddui-pp-ime-patient-example\"> </a><a name=\"hctddui-pp-ime-patient-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-patient.html\">TDDUI Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Hugo D. (official) (sexe non précisé), Date de Naissance :2005-09-15 ( Patient internal identifier: 3480787529/123456)</p><hr/></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:identifier ( [
      fhir:type [
@@ -40,7 +40,20 @@
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "D." ] ;
      fhir:given ( [ fhir:v "Hugo" ] )
-  ] ) . # 
+  ] ) ; # 
+  fhir:birthDate [
+     fhir:v "2005-09-15"^^xsd:date ;
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order>
+       ] ;
+       fhir:value [
+         a fhir:PositiveInt ;
+         fhir:v "1"^^xsd:positiveInteger
+       ]
+     ] )
+  ] . # 
 
 # -------------------------------------------------------------------------------------
 

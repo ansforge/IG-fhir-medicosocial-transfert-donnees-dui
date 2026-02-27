@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-contact-relation | *Version*:2.2.0 |
-| Active as of 2026-02-26 | *Computable Name*:TDDUIContactRelation |
+| Active as of 2026-02-27 | *Computable Name*:TDDUIContactRelation |
 
  
 ValueSet définissant les relations. 
@@ -55,7 +55,7 @@ ValueSet définissant les relations.
   "title" : "TDDUI Contact Relation",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-26T16:06:51+00:00",
+  "date" : "2026-02-27T10:48:32+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

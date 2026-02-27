@@ -18,7 +18,7 @@ Profil: [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md)
 
 **description**: Réduire le risque de chute et la peur associée en 6 mois.
 
-**subject**: [Jeanne L. (official) Female, Date de Naissance inconnue ( Patient internal identifier: 3480787529/123456789)](Patient-tddui-pp-pa-patient-example-pp.md)
+**subject**: [Jeanne L. (official) Female, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/123456789)](Patient-tddui-pp-pa-patient-example-pp.md)
 
 **addresses**: [ServiceRequest ](ServiceRequest-tddui-pp-pa-servicerequest-besoin-1-example.md)
 

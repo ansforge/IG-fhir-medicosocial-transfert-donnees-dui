@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order | *Version*:2.2.0 |
-| Active as of 2026-02-26 | *Computable Name*:TDDUIBirthOrder |
+| Active as of 2026-02-27 | *Computable Name*:TDDUIBirthOrder |
 
 Ordre d’enregistrement de la naissance dans le registre d’état civil de la commune de naissance pour le mois de la naissance. Il compose les 3 derniers chiffres du NIR de l'usager avant la clé de sécurité et permet de distinguer les personnes nées au même lieu et à la même période. Il est obligatoire si le NIR n'est pas transmis.
 
@@ -20,7 +20,7 @@ Ordre d’enregistrement de la naissance dans le registre d’état civil de la 
 **Utilisations:**
 
 * Utilise ce/t/te Extension: [TDDUI Patient](StructureDefinition-tddui-patient.md)
-* Exemples pour ce/t/te Extension: [Patient/tddui-patient-example](Patient-tddui-patient-example.md)
+* Exemples pour ce/t/te Extension: [Bundle/tddui-pp-ime-bundle-example](Bundle-tddui-pp-ime-bundle-example.md), [Bundle/tddui-pp-pa-bundle-example](Bundle-tddui-pp-pa-bundle-example.md), [Patient/tddui-patient-example](Patient-tddui-patient-example.md), [Patient/tddui-pp-ime-patient-example](Patient-tddui-pp-ime-patient-example.md) and [Patient/tddui-pp-pa-patient-example-pp](Patient-tddui-pp-pa-patient-example-pp.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-birth-order)
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-birth-order.cs
   "name" : "TDDUIBirthOrder",
   "title" : "TDDUI Birth Order",
   "status" : "active",
-  "date" : "2026-02-26T16:06:51+00:00",
+  "date" : "2026-02-27T10:48:32+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

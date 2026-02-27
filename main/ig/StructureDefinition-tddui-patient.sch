@@ -18,6 +18,7 @@
       <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/patient-birthPlace']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/StructureDefinition/patient-birthPlace': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-household-situation']) &lt;= 1">extension with URL = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-household-situation': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment']) &lt;= 1">extension with URL = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:birthDate) &gt;= 1">birthDate: minimum cardinality of 'birthDate' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

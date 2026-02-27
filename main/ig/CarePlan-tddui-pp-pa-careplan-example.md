@@ -18,7 +18,7 @@ Profil: [TDDUI CarePlan Projet Personalise](StructureDefinition-tddui-careplan-p
 
 **title**: Projet personnalisé de Mme Jeanne L.
 
-**subject**: [Jeanne L. (official) Female, Date de Naissance inconnue ( Patient internal identifier: 3480787529/123456789)](Patient-tddui-pp-pa-patient-example-pp.md)
+**subject**: [Jeanne L. (official) Female, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/123456789)](Patient-tddui-pp-pa-patient-example-pp.md)
 
 **supportingInfo**: [tddui-pp-pa-consent-accord-example](Consent-tddui-pp-pa-consent-accord-example.md)
 
