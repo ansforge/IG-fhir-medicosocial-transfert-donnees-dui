@@ -70,7 +70,7 @@ Description: "Profil de la ressource Encounter permettant de regrouper les évè
 
 * participant.extension contains TDDUIParticipantPresent named TDDUIParticipantPresent 0..1
 
-* participant.individual only Reference(TDDUIPractitioner or TDDUIPractitionerRole or TDDUIRelatedPersonContact)
+* participant.individual only Reference(TDDUIPractitioner or TDDUIPractitionerRole)
 
 * location 0..1
 
@@ -117,7 +117,7 @@ Title:    "Modèle de contenu DUI"
 * serviceProvider.extension[TDDUIParticipantPresent] -> "Participant.presenceParticipant"
 * participant.type -> "Participant.roleParticipantEJ"
 * participant.extension[TDDUIParticipantPresent] -> "Participant.presenceParticipant"
-* participant.individual -> "Participant.Professionnel/Contact"
+* participant.individual -> "Participant.Professionnel"
 * location -> "lieuEvenement"
 * extension[TDDUIRessourcesUsed] -> "RessourceUtilisee"
 * extension[TDDUIRessourcesUsed].extension[TDDUIRessourceType] -> "typeRessourceUtilisee"
