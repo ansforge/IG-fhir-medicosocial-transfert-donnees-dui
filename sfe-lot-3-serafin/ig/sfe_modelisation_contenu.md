@@ -1054,6 +1054,8 @@ La classe PresenceAbsence indique si l'usager est présent ou absent.
 
 La classe Repas indique si l'usager bénéficie ou non des repas.
 
+* Nom: idRepas : [1..1] Identifiant
+  * Description: Identifiant technique du repas obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature[TRE_G08-TypeIdentifiantPersonne](https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne)), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de cinq caractères "REPAS" et du numéro du repas dans le DUI (numRepas) :idrepas = 3+FINESS/identifiantLocalUsagerESSMS-REPAS-numRepas
 * Nom: dateRepas : [1..1] DateHeure
   * Description: Date et heure du repas.
 * Nom: typeRepas : [1..1] Code
