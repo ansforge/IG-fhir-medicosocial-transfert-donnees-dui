@@ -2257,7 +2257,7 @@ La classe PresenceAbsence indique si l'usager est présent ou absent.
   </tr>
   <tr>
     <td>motifAbsence : [0..1] Code</td>
-    <td>Motif pour lequel l'usager n'est pas présent.<br>
+    <td>Motif pour lequel l'usager n'est pas présent. Le motif est requis si le typePresenceAbsence=Absence.<br>
     Jeu(x) de valeur(s) associé(s) : Analyse en cours NOS</td>
   </tr>
   <tr>
