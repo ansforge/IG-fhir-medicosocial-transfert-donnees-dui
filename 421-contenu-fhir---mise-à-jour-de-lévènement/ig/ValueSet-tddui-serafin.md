@@ -56,7 +56,7 @@ ValueSet contenant les codes SERAFIN (prestations directes et indirectes) pour l
   "title" : "TDDUI SERAFIN",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-27T14:39:40+00:00",
+  "date" : "2026-02-27T15:25:53+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

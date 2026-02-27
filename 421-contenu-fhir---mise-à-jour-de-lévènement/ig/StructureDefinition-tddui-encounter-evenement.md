@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-even
   "name" : "TDDUIEncounterEvenement",
   "title" : "TDDUI Encounter Evenement",
   "status" : "active",
-  "date" : "2026-02-27T14:39:40+00:00",
+  "date" : "2026-02-27T15:25:53+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -630,12 +630,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-even
       "type" : [{
         "code" : "Reference",
         "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner",
-        "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role",
-        "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact"]
+        "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role"]
       }],
       "mapping" : [{
         "identity" : "specmetier-to-TDDUIEncounterEvenement",
-        "map" : "Participant.Professionnel/Contact"
+        "map" : "Participant.Professionnel"
       }]
     },
     {
