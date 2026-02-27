@@ -12,6 +12,7 @@ Modifications apportées dans cette release [2.3.0-ballot](https://github.com/an
 * [ANS-006-168 - Mise à jour de l'usager](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/437)
 * [ANS-006-168 - Mise à jour de l'évaluation](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/434)
 * [ANS-006-168 - Ajout causes de décès, mobilité et période scolaire](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/433)
+* [ANS-006-168 - Mise à jour du séjour](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/428)
 * [SFE SERAFIN lot 2](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/411)
 
 ### Release 2.2.0 de l'Implementation Guide du volet "Transfert de dossier DUI"
