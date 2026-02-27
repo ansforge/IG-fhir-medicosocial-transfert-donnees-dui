@@ -6,4 +6,3 @@ Description: "ValueSet pour la définition des codes de participant d'un événe
 * ^experimental = false
 
 * include codes from valueset http://hl7.org/fhir/ValueSet/encounter-participant-type
-* include codes from valueset $jdv-j387-role-participant-ms

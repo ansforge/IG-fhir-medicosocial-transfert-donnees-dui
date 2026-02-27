@@ -22,6 +22,9 @@ Description: "Profil de la ressource Encounter permettant de regrouper les évè
     TDDUIEventCancelReason named TDDUIEventCancelReason 0..1 and 
     TDDUIStatusAuthor named TDDUIStatusAuthor 0..1
 
+* status.extension[TDDUIEventCancelReason] ^short = "Motif associé au statut de non-réalisation de l’évènement."
+* status.extension[TDDUIStatusAuthor] ^short = "Le professionnel ayant effectué la dernière modification du statut associé à la ressource."
+
 * type from TDDUIEncounterType (required)
 
 // Types d'évènement
@@ -61,10 +64,11 @@ Description: "Profil de la ressource Encounter permettant de regrouper les évè
 * subject only Reference(TDDUIPatient or TDDUIPatientINS or Group)
 
 // ESSMS
-* serviceProvider.extension contains TDDUIParticipantPresent named TDDUIStructurePresent 0..1
+* serviceProvider.extension contains TDDUIParticipantPresent named TDDUIParticipantPresent 0..1
+* serviceProvider.extension[TDDUIParticipantPresent] ^short = "Indique la présence de la structure lors de l'événement."
 * serviceProvider only Reference(TDDUIOrganization)
 
-* participant.type from $jdv-j387-role-participant-ms (required)
+* participant.type from TDDUIEncounterParticipant (required)
 
 * participant.extension contains TDDUIParticipantPresent named TDDUIParticipantPresent 0..1
 
@@ -73,12 +77,12 @@ Description: "Profil de la ressource Encounter permettant de regrouper les évè
 * participant ^slicing.rules = #open
 
 * participant contains
-    mandataire 0..*
+    professionnel 0..*
 
-* participant[mandataire].type 1..1
-* participant[mandataire].type =  https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge#307 "MJPM"
+* participant[professionnel].type 1..1
+* participant[professionnel].type = $ParticipationType#PART
 
-* participant.individual only Reference(TDDUIPractitioner or TDDUIPractitionerRole or RelatedPerson)
+* participant.individual only Reference(TDDUIPractitioner or TDDUIPractitionerRole)
 
 * location 0..1
 
@@ -122,10 +126,10 @@ Title:    "Modèle de contenu DUI"
 * type -> "typeEvenement"
 * subject -> "Usager"
 * serviceProvider -> "Participant.structureEnCharge"
-* serviceProvider.extension[TDDUIStructurePresent] -> "Participant.presenceParticipant"
+* serviceProvider.extension[TDDUIParticipantPresent] -> "Participant.presenceParticipant"
 * participant.type -> "Participant.roleParticipantEJ"
 * participant.extension[TDDUIParticipantPresent] -> "Participant.presenceParticipant"
-* participant[mandataire] -> "Participant.Professionnel"
+* participant[professionnel] -> "Participant.Professionnel"
 * location -> "lieuEvenement"
 * extension[TDDUIRessourcesUsed] -> "RessourceUtilisee"
 * extension[TDDUIRessourcesUsed].extension[TDDUIRessourceType] -> "typeRessourceUtilisee"

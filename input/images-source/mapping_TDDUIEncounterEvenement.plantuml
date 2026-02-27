@@ -9,9 +9,9 @@ map "Statut.statut : status" as Statutstatut #DarkGray {
     Statut.auteur => <&plus> TDDUIStatusAuthor
 }
 
-map "participant" as participant #DarkGray {
+map "TDDUIPractitioner/TDDUIPractitionerRole" as participant #DarkGray {
+    Participant.professionnel
     Participant.presenceParticipant => <&plus> TDDUIParticipantPresent
-    Participant.roleParticipantEJ => type
 }
 
 map "period" as period #DarkGray {
@@ -48,7 +48,7 @@ map "**Événement : TDDUIEncounterEvenement**" as Événement #ffffb3 {
     validationUsager => <&plus> TDDUIPatientValidation
     idEvenement => identifier
     typeEvenement => type
-    Participant.Professionnel => <&layers> participant:mandataire
+    Participant.Professionnel => <&layers> participant:professionnel
     lieuEvenement => location
     meta *--> meta
     Statut.statut => status
