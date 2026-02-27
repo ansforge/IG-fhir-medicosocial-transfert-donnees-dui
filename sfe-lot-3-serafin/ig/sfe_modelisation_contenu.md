@@ -1046,7 +1046,7 @@ La classe PresenceAbsence indique si l'usager est présent ou absent.
 * Nom: dateFinPresenceAbsence : [1..1] DateHeure
   * Description: Date et heure de fin de la présence/absence de l'usager.
 * Nom: motifAbsence : [0..1] Code
-  * Description: Motif pour lequel l'usager n'est pas présent.Jeu(x) de valeur(s) associé(s) : Analyse en cours NOS
+  * Description: Motif pour lequel l'usager n'est pas présent. Le motif est requis si le typePresenceAbsence=Absence.Jeu(x) de valeur(s) associé(s) : Analyse en cours NOS
 * Nom: absencePrevue : [0..1] Indicateur
   * Description: Absence prévue.1 = L'absence de l'usager est prévue0 = L'absence de l'usager n'était pas prévue
 
