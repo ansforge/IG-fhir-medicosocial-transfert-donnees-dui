@@ -20,6 +20,8 @@ Profil: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenemen
 
 **TDDUI Event Reason**: Suivi post-opératoire suite à intervention chirurgicale de la hanche.
 
+**TDDUI Patient Validation**: true
+
 **identifier**: Visit Number/3480787529/147720425367411-EVN-12548
 
 **status**: Finished
@@ -32,10 +34,10 @@ Profil: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenemen
 
 ### Participants
 
-| | | |
-| :--- | :--- | :--- |
-| - | **Type** | **Individual** |
-| * | Participation | [Practitioner Claire Martin ](Practitioner-tddui-practitioner-example.md) |
+| | |
+| :--- | :--- |
+| - | **Individual** |
+| * | [Practitioner Claire Martin ](Practitioner-tddui-practitioner-example.md) |
 
 **period**: 2023-04-14 10:30:00+0200 --> 2023-04-14 11:15:00+0200
 
@@ -99,6 +101,10 @@ Profil: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenemen
   {
     "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-reason",
     "valueString" : "Suivi post-opératoire suite à intervention chirurgicale de la hanche."
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-validation",
+    "valueBoolean" : true
   }],
   "identifier" : [{
     "type" : {
@@ -134,12 +140,6 @@ Profil: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenemen
     "reference" : "Patient/tddui-patient-ins-example"
   },
   "participant" : [{
-    "type" : [{
-      "coding" : [{
-        "system" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
-        "code" : "PART"
-      }]
-    }],
     "individual" : {
       "reference" : "Practitioner/tddui-practitioner-example"
     }

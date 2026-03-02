@@ -10,7 +10,7 @@
   <name value="TDDUI"/>
   <title value="Médicosocial - Transfert de données DUI"/>
   <status value="active"/>
-  <date value="2026-02-27T17:34:14+00:00"/>
+  <date value="2026-03-02T09:04:22+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -769,17 +769,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/tddui-encounter-participant"/>
-      </reference>
-      <name value="TDDUI Encounter Participant"/>
-      <description value="CodeSystem définissant les types de participants dans le profil TDDUIEncounterEvenement."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -1165,6 +1154,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-participant-present"/>
+      </reference>
+      <name value="TDDUI Participant Present"/>
+      <description value="Indique la présence du participant à l'événement."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -1238,6 +1238,17 @@
       </reference>
       <name value="TDDUI Patient Present"/>
       <description value="Evènement nécessitant ou non la présence physique de l’usager."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-patient-validation"/>
+      </reference>
+      <name value="TDDUI Patient Validation"/>
+      <description value="Validation par l'usager que l'événement a eu lieu."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

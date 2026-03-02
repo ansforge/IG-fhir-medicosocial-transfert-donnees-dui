@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-participant | *Version*:2.2.0 |
-| Active as of 2026-02-27 | *Computable Name*:TDDUIEncounterParticipant |
+| Active as of 2026-03-02 | *Computable Name*:TDDUIEncounterParticipant |
 
  
 ValueSet pour la définition des codes de participant d'un événement 
 
  **References** 
 
-* [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)
+Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (par exemple dans les spécifications et / ou implémentations qui utilisent ce contenu)
 
 ### Définition logique (CLD)
 
@@ -54,7 +54,7 @@ ValueSet pour la définition des codes de participant d'un événement
   "title" : "TDDUI Encounter Participant",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-27T17:34:14+00:00",
+  "date" : "2026-03-02T09:04:22+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -73,9 +73,6 @@ ValueSet pour la définition des codes de participant d'un événement
   }],
   "compose" : {
     "include" : [{
-      "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-participant"
-    },
-    {
       "valueSet" : ["http://hl7.org/fhir/ValueSet/encounter-participant-type"]
     }]
   }

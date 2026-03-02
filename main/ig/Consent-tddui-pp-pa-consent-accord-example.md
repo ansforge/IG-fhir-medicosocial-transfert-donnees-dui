@@ -10,7 +10,7 @@ Profil: [TDDUI Consent Accord](StructureDefinition-tddui-consent-accord.md)
 
 ## Participants
 
-* **Role**: # Who is agreeing to the policy and rulesParty
+* **Role**: Party
   * **Details**: [Practitioner Élodie Bernard ](Practitioner-tddui-pp-pa-practitioner-ide-example.md)
 
 This consent is made under the policy .

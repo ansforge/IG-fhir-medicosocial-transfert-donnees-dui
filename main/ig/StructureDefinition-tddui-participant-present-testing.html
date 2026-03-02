@@ -1,9 +1,13 @@
+<!-- get modelType -->
+
+
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>TDDUI Encounter Participant - Testing - Médicosocial - Transfert de données DUI v2.2.0</title>
+    <title>TDDUI Participant Present - Testing - Médicosocial - Transfert de données DUI v2.2.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -43,8 +47,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"7.83"}
-    h3,h4,h5,h6{--heading-prefix:"7.83"}</style>
+    <style type="text/css">h2{--heading-prefix:"7.55"}
+    h3,h4,h5,h6{--heading-prefix:"7.55"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -176,15 +180,15 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>TDDUI Encounter Participant</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>TDDUI Participant Present</b></li>
 
           <span style="float:right;">
 
-            <a href="CodeSystem-tddui-encounter-participant.html">&lt;prev</a> | 
+            <a href="StructureDefinition-tddui-participant-present-mappings.html">&lt;prev</a> | 
 
             <a href="#bottom">bottom</a>
 
-          | <a href="CodeSystem-tddui-encounter-participant.xml.html">next&gt;</a>
+          | <a href="StructureDefinition-tddui-participant-present.profile.xml.html">next&gt;</a>
 
           </span>
 
@@ -197,9 +201,12 @@
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
-<div class="col-12">
+<div style="counter-reset: section 6" class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Médicosocial - Transfert de données DUI - version de développement local (intégration continue v2.2.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/fhir/tddui/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
   
+
+
+
 
 
 
@@ -211,40 +218,55 @@
 <ul class="nav nav-tabs">
 
   <li>
-    <a href="CodeSystem-tddui-encounter-participant.html">Narrative Content</a>
+    <a href="StructureDefinition-tddui-participant-present.html">Content</a>
+  </li>
+
+
+
+  <li>
+    <a href="StructureDefinition-tddui-participant-present-definitions.html">Detailed Descriptions</a>
   </li>
 
 
 
   
     <li>
-      <a href="CodeSystem-tddui-encounter-participant.xml.html">XML</a>
+      <a href="StructureDefinition-tddui-participant-present-mappings.html">Mappings</a>
+    </li>
+  
+
+
+
+
+
+
+
+  
+    <li>
+      <a href="StructureDefinition-tddui-participant-present.profile.xml.html">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="CodeSystem-tddui-encounter-participant.json.html">JSON</a>
+      <a href="StructureDefinition-tddui-participant-present.profile.json.html">JSON</a>
     </li>
   
 
 
   
     <li>
-      <a href="CodeSystem-tddui-encounter-participant.ttl.html">TTL</a>
+      <a href="StructureDefinition-tddui-participant-present.profile.ttl.html">TTL</a>
     </li>
   
-
 
 
 </ul>
 
+
   <a name="root"> </a>
-  <h2 id="root">CodeSystem: TDDUI Encounter Participant - Testing
-
-  </h2>
-
+  <h2 id="root">Extension: TDDUIParticipantPresent - Testing</h2>
 
   <table class="colsi">
     <tr>
@@ -253,7 +275,7 @@
         
           Active
           
-            as of 2026-02-27
+            as of 2026-03-02
           
         
       </td>
@@ -271,12 +293,12 @@
 
 <h3>Test Plans</h3>
 
-  <p><b>No test plans are currently available for the  CodeSystem.</b></p>
+  <p><b>No test plans are currently available for the  Profile.</b></p>
 
 
 <h3>Test Scripts</h3>
 
-  <p><b>No test scripts are currently available for the  CodeSystem.</b></p>
+  <p><b>No test scripts are currently available for the  Profile.</b></p>
 
 
 <!-- insert notes if present -->
@@ -284,9 +306,8 @@
 
 
 
-
-
 </div>
+
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
@@ -294,6 +315,8 @@
 
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/tabs.js"> </script>
 
 <script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
@@ -306,7 +329,7 @@
             <tr>
               <td style="text-align:left">&#xA0;
 
-                <a href="CodeSystem-tddui-encounter-participant.html">&lt;prev</a>
+                <a href="StructureDefinition-tddui-participant-present-mappings.html">&lt;prev</a>
 
               </td>
               <td style="text-align:center">
@@ -314,7 +337,7 @@
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="CodeSystem-tddui-encounter-participant.xml.html">next&gt;</a>
+                <a href="StructureDefinition-tddui-participant-present.profile.xml.html">next&gt;</a>
 
               </td>
             </tr>
@@ -324,7 +347,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Feb 27, 2026 17:34+0000">2026-02-27</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 2, 2026 09:04+0000">2026-03-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |

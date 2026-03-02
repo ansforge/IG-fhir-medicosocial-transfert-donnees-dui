@@ -103,7 +103,9 @@ These define constraints on FHIR data types for systems conforming to this imple
 | [TDDUI Household Situation](StructureDefinition-tddui-household-situation.md) | Extension complexe regroupant la situation familiale, la composition du foyer et sa description textuelle de l'usager. |
 | [TDDUI Meal](StructureDefinition-tddui-meal.md) | Repas du professionnel prévu dans le cadre de l'événement. |
 | [TDDUI Nationality Extension](StructureDefinition-tddui-nationality.md) | The nationality of the patient or a related person. |
+| [TDDUI Participant Present](StructureDefinition-tddui-participant-present.md) | Indique la présence du participant à l'événement. |
 | [TDDUI Patient Present](StructureDefinition-tddui-patient-present.md) | Evènement nécessitant ou non la présence physique de l’usager. |
+| [TDDUI Patient Validation](StructureDefinition-tddui-patient-validation.md) | Validation par l'usager que l'événement a eu lieu. |
 | [TDDUI Profession](StructureDefinition-tddui-profession.md) | Extension permettant de représenter la profession du professionnel. |
 | [TDDUI QR Participant](StructureDefinition-tddui-qr-participant.md) | Extension permettant d'ajouter le responsable et le porteur de l'évaluation dans un QuestionnaireResponse. |
 | [TDDUI Ressources Used](StructureDefinition-tddui-ressources-used.md) | Ressources utilisées lors de l’évènement (ex : chambre, matériel médical, véhicule). |
@@ -145,7 +147,6 @@ These define new code systems used by systems conforming to this implementation 
 | :--- | :--- |
 | [TDDUI Discriminator](CodeSystem-tddui-discriminator.md) | CodeSystem définissant les codes discriminants. |
 | [TDDUI Encounter Identifier](CodeSystem-tddui-encounter-identifier.md) | CodeSystem pour la définition des codes d'identifiant de séjour |
-| [TDDUI Encounter Participant](CodeSystem-tddui-encounter-participant.md) | CodeSystem définissant les types de participants dans le profil TDDUIEncounterEvenement. |
 | [TDDUI Observation Periode Scolaire](CodeSystem-tddui-observation-periode-scolaire.md) | CodeSystem pour l'Observation de la Période Scolaire. |
 | [TDDUI Observation Type](CodeSystem-tddui-observation-type.md) | CodeSystem pour la défintion des types d'Observation |
 | [TDDUI Patient Identifier](CodeSystem-tddui-identifier.md) | CodeSystem pour la définition des codes d'identifiant de l'usager |
