@@ -33,7 +33,6 @@ Ce mapping représente les données fonctionnelles trouvant leur équivalence da
 
 ### Mapping Transport
 
-<div>{%include mapping_TDDUITaskTransport.svg%}</div>
 <div>{%include mapping_TDDUITaskTransportProfessionnel.svg%}</div>
 <div>{%include mapping_TDDUITaskTransportUsager.svg%}</div>
 

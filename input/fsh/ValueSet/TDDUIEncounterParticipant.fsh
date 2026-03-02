@@ -5,5 +5,4 @@ Description: "ValueSet pour la définition des codes de participant d'un événe
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^experimental = false
 
-* include codes from system TDDUIEncounterParticipant
 * include codes from valueset http://hl7.org/fhir/ValueSet/encounter-participant-type
