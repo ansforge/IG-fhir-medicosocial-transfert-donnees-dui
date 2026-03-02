@@ -98,11 +98,11 @@ class Quantification #LightYellow {
 Decision "*" -- "1" Usager
 DemandeOrientation "*" - "1" Usager
 
-DemandeOrientation "0..1" -- "*" Decision
+DemandeOrientation "1" -- "*" Decision
 
 Decision "1" -- "0..1" DroitPrestation
 
-DroitPrestation "1" -- "0..1" DetailPrestation
+DroitPrestation "1" -- "1" DetailPrestation
 EntiteJuridique <|-- StructureAccueil
 DetailPrestation "1" - "*" StructureAccueil
 DetailPrestation "1" -- "*" PriseCharge
