@@ -1,4 +1,4 @@
-# TDDUI Observation Type - Médicosocial - Transfert de données DUI v2.2.0
+# TDDUI Observation Type - Médicosocial - Transfert de données DUI v2.3.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-observation-type | *Version*:2.2.0 |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-observation-type | *Version*:2.3.0-ballot |
 | Active as of 2026-03-02 | *Computable Name*:TDDUIObservationType |
 
  
@@ -51,12 +51,12 @@ ValueSet pour les types d'Observation.
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-observation-type",
-  "version" : "2.2.0",
+  "version" : "2.3.0-ballot",
   "name" : "TDDUIObservationType",
   "title" : "TDDUI Observation Type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-02T09:04:22+00:00",
+  "date" : "2026-03-02T10:45:03+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

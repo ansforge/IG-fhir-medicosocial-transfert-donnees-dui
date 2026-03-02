@@ -1,4 +1,4 @@
-# TDDUI Entry Date Origin - Médicosocial - Transfert de données DUI v2.2.0
+# TDDUI Entry Date Origin - Médicosocial - Transfert de données DUI v2.3.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-date-origin | *Version*:2.2.0 |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-date-origin | *Version*:2.3.0-ballot |
 | Active as of 2026-03-02 | *Computable Name*:TDDUIEntryDateOrigin |
 
 Extension permettant de véhiculer la date d'entrée dans l'ESSMS de provenance.
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-entry-date-ori
   "resourceType" : "StructureDefinition",
   "id" : "tddui-entry-date-origin",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-date-origin",
-  "version" : "2.2.0",
+  "version" : "2.3.0-ballot",
   "name" : "TDDUIEntryDateOrigin",
   "title" : "TDDUI Entry Date Origin",
   "status" : "active",
-  "date" : "2026-03-02T09:04:22+00:00",
+  "date" : "2026-03-02T10:45:03+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

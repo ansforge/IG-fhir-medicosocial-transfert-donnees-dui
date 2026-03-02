@@ -1,4 +1,4 @@
-# TDDUI Event Outside Service - Médicosocial - Transfert de données DUI v2.2.0
+# TDDUI Event Outside Service - Médicosocial - Transfert de données DUI v2.3.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-outside-service | *Version*:2.2.0 |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-outside-service | *Version*:2.3.0-ballot |
 | Active as of 2026-03-02 | *Computable Name*:TDDUIEventOutsideService |
 
 Evénement hors prestation prévue dans le projet personnalisé de l’usager.
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-outside-servic
   "resourceType" : "StructureDefinition",
   "id" : "tddui-outside-service",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-outside-service",
-  "version" : "2.2.0",
+  "version" : "2.3.0-ballot",
   "name" : "TDDUIEventOutsideService",
   "title" : "TDDUI Event Outside Service",
   "status" : "active",
-  "date" : "2026-03-02T09:04:22+00:00",
+  "date" : "2026-03-02T10:45:03+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

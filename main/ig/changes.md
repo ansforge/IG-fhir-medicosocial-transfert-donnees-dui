@@ -1,9 +1,21 @@
-# Historique des changements - Médicosocial - Transfert de données DUI v2.2.0
+# Historique des changements - Médicosocial - Transfert de données DUI v2.3.0-ballot
 
 * [**Table of Contents**](toc.md)
 * **Historique des changements**
 
 ## Historique des changements
+
+### Release 2.3.0-ballot de l'Implementation Guide du volet "Transfert de dossier DUI"
+
+Modifications apportées dans cette release [2.3.0-ballot](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pulls?q=is%3Apr+is%3Aclosed+milestone%3A2.3.0-ballot) :
+
+* [lot2 SFE modification role participant](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/444)
+* [ANS-006-168 - Mise à jour de l'évènement](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/439)
+* [ANS-006-168 - Mise à jour de l'usager](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/437)
+* [ANS-006-168 - Mise à jour de l'évaluation](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/434)
+* [ANS-006-168 - Ajout causes de décès, mobilité et période scolaire](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/433)
+* [ANS-006-168 - Mise à jour du séjour](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/428)
+* [SFE SERAFIN lot 2](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/411)
 
 ### Release 2.2.0 de l'Implementation Guide du volet "Transfert de dossier DUI"
 
