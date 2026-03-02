@@ -9,6 +9,8 @@
 
 Modifications apportées dans cette release [2.3.0-ballot](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pulls?q=is%3Apr+is%3Aclosed+milestone%3A2.3.0-ballot) :
 
+* [lot2 SFE modification role participant](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/444)
+* [ANS-006-168 - Mise à jour de l'évènement](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/439)
 * [ANS-006-168 - Mise à jour de l'usager](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/437)
 * [ANS-006-168 - Mise à jour de l'évaluation](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/434)
 * [ANS-006-168 - Ajout causes de décès, mobilité et période scolaire](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/433)
