@@ -10,7 +10,7 @@ Profil: [TDDUI Consent Accord](StructureDefinition-tddui-consent-accord.md)
 
 ## Participants
 
-* **Role**: # Who is agreeing to the policy and rulesParty
+* **Role**: Party
   * **Details**: [Practitioner Claire Martin ](Practitioner-tddui-practitioner-example.md)
 
 This consent is made under the policy .
