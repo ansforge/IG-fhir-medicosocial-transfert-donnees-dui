@@ -5,6 +5,9 @@ Title: "TDDUI Patient"
 Description: "Profil de la ressource FrCorePatientProfile permettant de représenter un usager lorsque l'INS n'est pas transmis."
 
 * insert TDDUIPatientCommonConstraints
+
+* birthDate 1..1
+
 * birthDate.extension contains
     TDDUIBirthOrder named tddui-birth-order 1..1
 

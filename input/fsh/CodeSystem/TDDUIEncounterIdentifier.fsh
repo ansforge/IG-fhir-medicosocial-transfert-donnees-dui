@@ -7,5 +7,6 @@ Description: "CodeSystem pour la définition des codes d'identifiant de séjour"
 * ^caseSensitive = true
 * ^content = #complete
 * #SEJ "Identifiant du séjour"
+* #NUMDOSS "Numéro de dossier administratif du séjour"
 // SCS profile
 * ^experimental = false

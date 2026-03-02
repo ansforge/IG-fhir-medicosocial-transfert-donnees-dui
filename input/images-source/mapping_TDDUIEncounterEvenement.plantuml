@@ -1,11 +1,16 @@
 @startuml
 
 map "meta" as meta #DarkGray {
-    dateModificationEvenement\nStatut.dateStatut => lastUpdated
+    dateModificationEvenement_Statut.dateStatut => lastUpdated
 }
 
 map "Statut.statut : status" as Statutstatut #DarkGray {
-    Statut.motifNonRealisation => <&plus> tddui-event-cancel-reason
+    Statut.motifNonRealisation => <&plus> TDDUIEventCancelReason
+    Statut.auteur => <&plus> TDDUIStatusAuthor
+}
+
+map "TDDUIPractitioner/TDDUIPractitionerRole" as participant #DarkGray {
+    Participant.presenceParticipant => <&plus> TDDUIParticipantPresent
 }
 
 map "period" as period #DarkGray {
@@ -13,24 +18,20 @@ map "period" as period #DarkGray {
     dateFinEvenement => end
 }
 
-object "**TDDUIPatient/TDDUIPatientINS**" as TDDUIPatient #fdb462 {
+object "**TDDUIPatient**" as TDDUIPatient_subject #80b1d3 {
     Usager
 }
 
-object "**TDDUIPractitioner**" as TDDUIPractitioner #d9d9d9 {
-    Professionnel
-    Statut.auteur
+object "**TDDUIOrganization**" as TDDUIOrganization_serviceProvider #fb8072 {
+    Participant.structureEnCharge
+    Participant.presenceParticipant => <&plus> TDDUIStructurePresent
 }
 
-object "**TDDUIOrganization**" as TDDUIOrganization #bebada {
-    structureEnCharge
-}
-
-object "**TDDUIEncounterSejour**" as TDDUIEncounterSejour #ffffb3 {
+object "**TDDUIEncounterSejour**" as TDDUIEncounterSejour_partOf #ffffb3 {
     sejour
 }
 
-map "**Événement : TDDUIEncounterEvenement**" as Événement #8dd3c7 {
+map "**Événement : TDDUIEncounterEvenement**" as Événement #ffffb3 {
     RessourceUtilisee => <&plus> TDDUIRessourcesUsed
     typeRessourceUtilisee => <&plus> TDDUIRessourcesUsed.extension:TDDUIRessourceType
     detailTypeRessourceUtilisee => <&plus> TDDUIRessourcesUsed.extension:TDDUIMaterialDetail
@@ -43,18 +44,19 @@ map "**Événement : TDDUIEncounterEvenement**" as Événement #8dd3c7 {
     motifEvenement => <&plus> TDDUIEventReason
     usagerPresent => <&plus> TDDUIPatientPresent
     repas => <&plus> TDDUIMeal
+    validationUsager => <&plus> TDDUIPatientValidation
     idEvenement => identifier
     typeEvenement => type
     lieuEvenement => location
-    Statut.statut => status    
-    period *-> period
     meta *--> meta
+    Statut.statut => status
+    participant.individual *-> participant
+    period *--> period
 }
 
-Événement::Statut.statut -l-> Statutstatut
-Événement --> TDDUIPatient : subject
-Événement --> TDDUIPractitioner : participant.individual\n<&layers> participant:auteurStatut\n<&layers> participant:professionnel
-Événement --> TDDUIOrganization : serviceProvider
-Événement -u-> TDDUIEncounterSejour : partOf
+Événement::Statut.statut -u-> Statutstatut
+Événement -d-> TDDUIPatient_subject : subject
+Événement -d-> TDDUIOrganization_serviceProvider : serviceProvider
+Événement -d-> TDDUIEncounterSejour_partOf : partOf
 
 @enduml

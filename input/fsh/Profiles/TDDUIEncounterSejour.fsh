@@ -2,7 +2,8 @@ Profile: TDDUIEncounterSejour
 Parent: Encounter
 Id: tddui-encounter-sejour
 Title: "TDDUI Encounter Sejour"
-Description: "Profil de la ressource Encounter permettant de regrouper les informations relatives au séjour d'un usager dans une structure ESSMS" 
+Description: "Profil de la ressource Encounter permettant de regrouper les informations relatives au séjour d'un usager dans une structure ESSMS"
+
 // Identifiant
 * identifier 1..*
 * identifier ^slicing.discriminator.type = #pattern
@@ -10,7 +11,8 @@ Description: "Profil de la ressource Encounter permettant de regrouper les infor
 * identifier ^slicing.rules = #open
 
 * identifier contains
-    idStay 1..1
+    idStay 1..1 and 
+    AdministrativeFileNumber 0..1
 * identifier[idStay].type from TDDUIEncounterIdentifier (required)
 * identifier[idStay] ^short = "Identifiant métier unique du séjour"
 * identifier[idStay].type = TDDUIEncounterIdentifier#SEJ "Identifiant du séjour"
@@ -19,6 +21,15 @@ Description: "Profil de la ressource Encounter permettant de regrouper les infor
 * identifier[idStay].value ^example[0].valueString = "3480787529/147720425367411-SEJOUR-21564655"
 * identifier[idStay].system 1..1
 * identifier[idStay].system = "https://identifiant-medicosocial-sejour.esante.gouv.fr"
+
+* identifier[AdministrativeFileNumber].type from TDDUIEncounterIdentifier (required)
+* identifier[AdministrativeFileNumber] ^short = "Numéro de dossier administratif du séjour"
+* identifier[AdministrativeFileNumber].type = TDDUIEncounterIdentifier#NUMDOSS "Numéro de dossier administratif du séjour"
+* identifier[AdministrativeFileNumber].value 1..1
+* identifier[AdministrativeFileNumber].value ^example[0].label = "Numéro de dossier administratif du séjour"
+* identifier[AdministrativeFileNumber].value ^example[0].valueString = "21564655"
+* identifier[AdministrativeFileNumber].system 1..1
+* identifier[AdministrativeFileNumber].system = "https://identifiant-medicosocial-sejour.esante.gouv.fr" // System ?
 
 // Usager
 * subject 1..1
@@ -49,6 +60,13 @@ Description: "Profil de la ressource Encounter permettant de regrouper les infor
 * extension[TDDUIExitModeLabel] ^short = "Libellé du mode de sortie du séjour"
 * extension[TDDUIComment] ^short = "Commentaire relatif au séjour"
 
+* serviceType from JDV-J226-ModaliteAccueil-ROR (required)
+
+* hospitalization.extension contains
+    TDDUIEntryDateOrigin named TDDUIEntryDateOrigin 0..1
+    
+* hospitalization.origin only Reference(TDDUIOrganization)
+
 Mapping:  ConceptMetier_TDDUIEncounterSejour
 Source:   TDDUIEncounterSejour
 Target: "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"
@@ -57,8 +75,9 @@ Title:    "Modèle de contenu DUI"
 * -> "Sejour"
  
 * identifier[idStay] -> "idSejour"
+* identifier[AdministrativeFileNumber] -> "numeroDossierAdministratifSejour"
 * subject -> "Usager"
-* serviceProvider -> "EntiteJuridique"
+* serviceProvider -> "ESSMSAccueil"
 * extension[TDDUI-plannedStartDate-r5] -> "dateEntreePrevisionnelle"
 * extension[TDDUI-plannedEndDate-r5] -> "dateSortiePrevisionnelle"
 * extension[TDDUIAdmissionDate] -> "dateAdmission"
@@ -67,3 +86,8 @@ Title:    "Modèle de contenu DUI"
 * extension[TDDUIComment] -> "commentaire"
 * period.start -> "dateEntree"
 * period.end -> "dateSortie"
+* hospitalization.extension[TDDUIEntryDateOrigin] -> "dateEntreeESSMSProvenance"
+* hospitalization.origin -> "ESSMSProvenance"
+* hospitalization.preAdmissionIdentifier -> "numeroDossierESSMSProvenance"
+* serviceType -> "modaliteAccueil"
+* participant.individual.display -> "origineDemande"

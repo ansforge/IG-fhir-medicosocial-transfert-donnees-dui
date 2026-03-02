@@ -1874,6 +1874,8 @@ Les classes EntiteJuridique, Lieu et Professionnel sont issues du MOS et sont pr
 
 Le Participant est une personne morale ou physique prenant part à l'événement.
 
+Si le participant est mandaté par une personne morale, la notion de Mandataire est indiquée par le lien vers le Professionnel -> profession (code 307 - Mandataire judiciaire à la protection des majeurs (MJPM) : JDV_J01-XdsAuthorSpecialty-CISIS).
+
 <table style="width:100%">
   <tr>
     <th>Nom</th>
@@ -1885,18 +1887,13 @@ Le Participant est une personne morale ou physique prenant part à l'événement
 1= participant présent<br>
 0= participant absent </td>
   </tr>
-  <tr>
-    <td>roleParticipantEJ : [0..1] Code</td>
-    <td>Role du participant vis à vis de l'événement (mandataire judiciaire, structure en charge de l'événement).<br>
-    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j387-role-participant-ms/$expand">JDV-J387-ROLE-PARTICIPANT-MS</a></td>
-  </tr>
   </table>
 
 ##### Classe StructureEnCharge
 
 ** Classe spécialisée, hérite de la classe EntiteJuridique qui est issue du MOS et qui est profilée pour ce volet.
 
-Cette classe correspond à la structure en charge de l'évènement. Cette structure peut être différente de la structure de rattachement de l'usager.
+Cette classe correspond à la structure en charge de l'évènement. Cette structure peut être différente de la structure de rattachement de l'usager. Une seule structure en charge est renseignée par événement.
 
 Le lien est créé entre la classe Professionnel et la classe StructureEnCharge si le participant en tant que personne physique est interne à la structure en charge de l'évènement. Dans le cas contraire ce lien n'est pas créé.
 
