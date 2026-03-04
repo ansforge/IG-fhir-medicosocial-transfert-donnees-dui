@@ -44,6 +44,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [TDDUI Observation Cause Mortalite](StructureDefinition-tddui-observation-cause-mortalite.md) | Profil de la ressource Observation permettant de représenter les causes de mortalité d'un usager. |
 | [TDDUI Observation Mobilite Usager](StructureDefinition-tddui-observation-mobilite-usager.md) | Profil de la ressource Observation permettant de représenter la mobilité de l'usager. |
 | [TDDUI Observation Periode Scolaire](StructureDefinition-tddui-observation-periode-scolaire.md) | Profil de la ressource Observation permettant de représenter la période scolaire de l'usager. |
+| [TDDUI Observation Repas](StructureDefinition-tddui-observation-repas.md) | Profil de la ressource Observation permettant de représenter le repas de l'usager. |
 | [TDDUI Organization](StructureDefinition-tddui-organization.md) | Profil de la ressource FRCoreOrganizationProfile permettant de représenter les entités juridiques. |
 | [TDDUI Patient](StructureDefinition-tddui-patient.md) | Profil de la ressource FrCorePatientProfile permettant de représenter un usager lorsque l'INS n'est pas transmis. |
 | [TDDUI Patient INS](StructureDefinition-tddui-patient-ins.md) | Profil de la ressource FRCorePatientINSProfile permettant de représenter un usager lorsque l'INS est transmis. |
@@ -106,7 +107,9 @@ These define constraints on FHIR data types for systems conforming to this imple
 | [TDDUI Meal](StructureDefinition-tddui-meal.md) | Repas du professionnel prévu dans le cadre de l'événement. |
 | [TDDUI Nationality Extension](StructureDefinition-tddui-nationality.md) | The nationality of the patient or a related person. |
 | [TDDUI Participant Present](StructureDefinition-tddui-participant-present.md) | Indique la présence du participant à l'événement. |
-| [TDDUI Patient Present](StructureDefinition-tddui-patient-present.md) | Evènement nécessitant ou non la présence physique de l’usager. |
+| [TDDUI Patient Present](StructureDefinition-tddui-patient-present.md) | * **Événement** : évènement nécessitant ou non la présence physique de l’usager.
+* **Repas** : Présence de l'usager au repas.
+ |
 | [TDDUI Patient Validation](StructureDefinition-tddui-patient-validation.md) | Validation par l'usager que l'événement a eu lieu. |
 | [TDDUI Profession](StructureDefinition-tddui-profession.md) | Extension permettant de représenter la profession du professionnel. |
 | [TDDUI QR Participant](StructureDefinition-tddui-qr-participant.md) | Extension permettant d'ajouter le responsable et le porteur de l'évaluation dans un QuestionnaireResponse. |

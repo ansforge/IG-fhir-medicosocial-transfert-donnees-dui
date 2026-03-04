@@ -83,6 +83,7 @@ Les ressources profilées dans le cadre de ce guide d'implémentation sont les s
 | [Observation](http://hl7.org/fhir/StructureDefinition/Observation) | [TDDUIObservationCauseMortalite](StructureDefinition-tddui-observation-cause-mortalite.md) | Profil de la ressource Observation permettant de représenter les causes de mortalité d'un usager. |
 | [Observation](http://hl7.org/fhir/StructureDefinition/Observation) | [TDDUIObservationMobiliteUsager](StructureDefinition-tddui-observation-mobilite-usager.md) | Profil de la ressource Observation permettant de représenter la mobilité de l'usager. |
 | [Observation](http://hl7.org/fhir/StructureDefinition/Observation) | [TDDUIObservationPeriodeScolaire](StructureDefinition-tddui-observation-periode-scolaire.md) | Profil de la ressource Observation permettant de représenter la période scolaire de l'usager. |
+| [Observation](http://hl7.org/fhir/StructureDefinition/Observation) | [TDDUIObservationRepas](StructureDefinition-tddui-observation-repas.md) | Profil de la ressource Observation permettant de représenter le repas de l'usager. |
 | [FR Core Organization Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization) | [TDDUIOrganization](StructureDefinition-tddui-organization.md) | Profil de la ressource FRCoreOrganizationProfile permettant de représenter les entités juridiques. |
 | [FR Core Patient Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient) | [TDDUIPatient](StructureDefinition-tddui-patient.md) | Profil de la ressource FrCorePatientProfile permettant de représenter un usager lorsque l'INS n'est pas transmis. |
 | [FR Core Patient INS Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins) | [TDDUIPatientINS](StructureDefinition-tddui-patient-ins.md) | Profil de la ressource FRCorePatientINSProfile permettant de représenter un usager lorsque l'INS est transmis. |
@@ -148,7 +149,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2026-03-04T09:38:55+00:00",
+  "date" : "2026-03-04T10:43:17+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -1463,6 +1464,18 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-observation-repas"
+      },
+      "name" : "TDDUI Observation Repas",
+      "description" : "Profil de la ressource Observation permettant de représenter le repas de l'usager.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -1613,7 +1626,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "reference" : "StructureDefinition/tddui-patient-present"
       },
       "name" : "TDDUI Patient Present",
-      "description" : "Evènement nécessitant ou non la présence physique de l’usager.",
+      "description" : "\n- **Événement** : évènement nécessitant ou non la présence physique de l’usager.\n- **Repas** : Présence de l'usager au repas.",
       "exampleBoolean" : false
     },
     {

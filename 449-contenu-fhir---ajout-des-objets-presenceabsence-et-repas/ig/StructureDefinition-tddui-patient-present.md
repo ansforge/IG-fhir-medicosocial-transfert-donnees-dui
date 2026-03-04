@@ -11,7 +11,8 @@
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-present | *Version*:2.3.0-ballot |
 | Active as of 2026-03-04 | *Computable Name*:TDDUIPatientPresent |
 
-Evènement nécessitant ou non la présence physique de l’usager.
+* **Événement** : évènement nécessitant ou non la présence physique de l’usager.
+* **Repas** : Présence de l'usager au repas.
 
 **Context of Use**
 
@@ -19,7 +20,7 @@ Evènement nécessitant ou non la présence physique de l’usager.
 
 **Utilisations:**
 
-* Utilise ce/t/te Extension: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)
+* Utilise ce/t/te Extension: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md) and [TDDUI Observation Repas](StructureDefinition-tddui-observation-repas.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-patient-present)
 
@@ -46,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient-presen
   "name" : "TDDUIPatientPresent",
   "title" : "TDDUI Patient Present",
   "status" : "active",
-  "date" : "2026-03-04T09:38:55+00:00",
+  "date" : "2026-03-04T10:43:17+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -55,7 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient-presen
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Evènement nécessitant ou non la présence physique de l’usager.",
+  "description" : "\n- **Événement** : évènement nécessitant ou non la présence physique de l’usager.\n- **Repas** : Présence de l'usager au repas.\n",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -74,6 +75,10 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient-presen
   "context" : [{
     "type" : "element",
     "expression" : "Encounter"
+  },
+  {
+    "type" : "element",
+    "expression" : "Observation"
   }],
   "type" : "Extension",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
@@ -83,7 +88,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient-presen
       "id" : "Extension",
       "path" : "Extension",
       "short" : "TDDUI Patient Present",
-      "definition" : "Evènement nécessitant ou non la présence physique de l’usager."
+      "definition" : "\n- **Événement** : évènement nécessitant ou non la présence physique de l’usager.\n- **Repas** : Présence de l'usager au repas.\n"
     },
     {
       "id" : "Extension.extension",
