@@ -2,7 +2,7 @@ Profile: TDDUIObservationRepas
 Parent: Observation
 Id: tddui-observation-repas
 Title: "TDDUI Observation Repas"
-Description: "Profil de la ressource Observation permettant de représenter le repas de l'usager."
+Description: "Profil de la ressource Observation permettant de représenter si l'usager bénéficie ou non des repas."
 
 * identifier 1..1
 * identifier.value 1..1
