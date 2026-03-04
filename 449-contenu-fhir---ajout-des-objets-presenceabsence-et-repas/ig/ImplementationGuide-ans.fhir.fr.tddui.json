@@ -10,7 +10,7 @@
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2026-03-04T08:49:22+00:00",
+  "date" : "2026-03-04T09:38:55+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -2093,6 +2093,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-schedule"
+      },
+      "name" : "TDDUI Schedule",
+      "description" : "Profil de la ressource FRCoreScheduleProfile permettant de contenir l'ensemble des présences et absences de l'usager.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -2112,6 +2124,18 @@
       },
       "name" : "TDDUI ServiceRequest Besoin",
       "description" : "Profil de la ressource ServiceRequest permettant de représenter les besoins de l'usager.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-slot-presence-absence"
+      },
+      "name" : "TDDUI Slot Presence Absence",
+      "description" : "Profil de la ressource FRCoreSlotProfile permettant de représenter les présences et absences de l'usager.",
       "exampleBoolean" : false
     },
     {

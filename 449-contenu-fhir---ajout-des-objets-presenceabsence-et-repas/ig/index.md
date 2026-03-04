@@ -90,7 +90,9 @@ Les ressources profilées dans le cadre de ce guide d'implémentation sont les s
 | [FR Core Practitioner Role](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role) | [TDDUIPractitionerRole](StructureDefinition-tddui-practitioner-role.md) | Profil de la ressource FRCorePractitionerRole permettant de représenter un Professionnel. |
 | [QuestionnaireResponse](http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse) | [TDDUIQuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md) | Profil de la ressource QuestionnaireResponse utilisé pour transmettre les réponses aux questionnaires dans le cadre des évaluations. |
 | [FR Core Related Person Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person) | [TDDUIRelatedPersonContact](StructureDefinition-tddui-related-person-contact.md) | Profil de la ressource FRCoreRelatedPersonProfile permettant de représenter un contact de l'usager. |
+| [FR Core Schedule Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule) | [TDDUISchedule](StructureDefinition-tddui-schedule.md) | Profil de la ressource FRCoreScheduleProfile permettant de contenir l'ensemble des présences et absences de l'usager. |
 | [ServiceRequest](http://hl7.org/fhir/StructureDefinition/ServiceRequest) | [TDDUIServiceRequestBesoin](StructureDefinition-tddui-service-request-besoin.md) | Profil de la ressource ServiceRequest permettant de représenter les besoins de l'usager. |
+| [FR Core Slot Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-slot) | [TDDUISlotPresenceAbsence](StructureDefinition-tddui-slot-presence-absence.md) | Profil de la ressource FRCoreSlotProfile permettant de représenter les présences et absences de l'usager. |
 | [Task](http://hl7.org/fhir/StructureDefinition/Task) | [TDDUITaskAction](StructureDefinition-tddui-task-action.md) | Profil de la ressource Task permettant de représenter les actions réalisées dans le cadre du projet personnalisé. |
 | [Task](http://hl7.org/fhir/StructureDefinition/Task) | [TDDUITaskBilan](StructureDefinition-tddui-task-bilan.md) | Profil de la ressource Task permettant de représenter le bilan du projet personnalisé. |
 | [Task](http://hl7.org/fhir/StructureDefinition/Task) | [TDDUITaskMoyenRessource](StructureDefinition-tddui-task-moyen-ressource.md) | Profil de la ressource Task permettant de représenter les moyens ou ressources utilisées dans le cadre du projet personnalisé. |
@@ -146,7 +148,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2026-03-04T08:49:22+00:00",
+  "date" : "2026-03-04T09:38:55+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -2229,6 +2231,18 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-schedule"
+      },
+      "name" : "TDDUI Schedule",
+      "description" : "Profil de la ressource FRCoreScheduleProfile permettant de contenir l'ensemble des présences et absences de l'usager.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -2248,6 +2262,18 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
       },
       "name" : "TDDUI ServiceRequest Besoin",
       "description" : "Profil de la ressource ServiceRequest permettant de représenter les besoins de l'usager.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-slot-presence-absence"
+      },
+      "name" : "TDDUI Slot Presence Absence",
+      "description" : "Profil de la ressource FRCoreSlotProfile permettant de représenter les présences et absences de l'usager.",
       "exampleBoolean" : false
     },
     {

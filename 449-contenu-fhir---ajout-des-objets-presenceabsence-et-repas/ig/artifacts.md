@@ -51,7 +51,9 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [TDDUI Practitioner Role](StructureDefinition-tddui-practitioner-role.md) | Profil de la ressource FRCorePractitionerRole permettant de représenter un Professionnel. |
 | [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md) | Profil de la ressource QuestionnaireResponse utilisé pour transmettre les réponses aux questionnaires dans le cadre des évaluations. |
 | [TDDUI RelatedPerson Contact](StructureDefinition-tddui-related-person-contact.md) | Profil de la ressource FRCoreRelatedPersonProfile permettant de représenter un contact de l'usager. |
+| [TDDUI Schedule](StructureDefinition-tddui-schedule.md) | Profil de la ressource FRCoreScheduleProfile permettant de contenir l'ensemble des présences et absences de l'usager. |
 | [TDDUI ServiceRequest Besoin](StructureDefinition-tddui-service-request-besoin.md) | Profil de la ressource ServiceRequest permettant de représenter les besoins de l'usager. |
+| [TDDUI Slot Presence Absence](StructureDefinition-tddui-slot-presence-absence.md) | Profil de la ressource FRCoreSlotProfile permettant de représenter les présences et absences de l'usager. |
 | [TDDUI Task Action](StructureDefinition-tddui-task-action.md) | Profil de la ressource Task permettant de représenter les actions réalisées dans le cadre du projet personnalisé. |
 | [TDDUI Task Bilan](StructureDefinition-tddui-task-bilan.md) | Profil de la ressource Task permettant de représenter le bilan du projet personnalisé. |
 | [TDDUI Task MoyenRessource](StructureDefinition-tddui-task-moyen-ressource.md) | Profil de la ressource Task permettant de représenter les moyens ou ressources utilisées dans le cadre du projet personnalisé. |

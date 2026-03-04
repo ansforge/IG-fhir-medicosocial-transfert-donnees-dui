@@ -1,9 +1,9 @@
 TDDUI : Validation Results
 =========================================
 
-err = 112, warn = 258, info = 204
+err = 112, warn = 260, info = 206
 IG Publisher Version: 2.1.2
-Generated Wed Mar 04 08:54:32 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.tddui#2.3.0-ballot (canonical = https://interop.esante.gouv.fr/ig/fhir/tddui)
+Generated Wed Mar 04 09:43:55 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.tddui#2.3.0-ballot (canonical = https://interop.esante.gouv.fr/ig/fhir/tddui)
  Build Errors : 1 / 6 / 0
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Bundle-tddui-bundle-example : 0 / 10 / 34
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Bundle-tddui-pp-ime-bundle-example : 0 / 7 / 23
@@ -110,7 +110,9 @@ Generated Wed Mar 04 08:54:32 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.tddui
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-related-person-contact : 0 / 3 / 2
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-related-person-contact-description : 0 / 1 / 2
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-ressources-used : 0 / 0 / 2
+ /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-schedule : 0 / 1 / 2
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-service-request-besoin : 0 / 3 / 2
+ /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-slot-presence-absence : 0 / 1 / 2
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-status-author : 0 / 1 / 2
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-task-action : 0 / 0 / 4
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-task-bilan : 0 / 0 / 7
@@ -158,8 +160,8 @@ Generated Wed Mar 04 08:54:32 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.tddui
 </table>
 == n/a ==
 ERROR: ImplementationGuide/ans.fhir.fr.tddui: This IG is version 4.0.1, while the IG 'hl7.fhir.uv.extensions' is from version 5.0.0
-WARNING: index.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 377, column 26: The link 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport' for "TDDUI Task Transport" is a canonical link and is therefore unsafe with regard to versions
-WARNING: index.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 378, column 26: The link 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport' for "TDDUI Task Transport" is a canonical link and is therefore unsafe with regard to versions
+WARNING: index.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 379, column 26: The link 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport' for "TDDUI Task Transport" is a canonical link and is therefore unsafe with regard to versions
+WARNING: index.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 380, column 26: The link 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport' for "TDDUI Task Transport" is a canonical link and is therefore unsafe with regard to versions
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
@@ -760,11 +762,17 @@ INFORMATION: StructureDefinition/tddui-related-person-contact-description: Struc
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact-description'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-tddui-ressources-used.json ==
 INFORMATION: StructureDefinition/tddui-ressources-used: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display
+== fsh-generated/resources/StructureDefinition-tddui-schedule.json ==
+INFORMATION: StructureDefinition/tddui-schedule: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-schedule'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-tddui-service-request-besoin.json ==
 INFORMATION: StructureDefinition/tddui-service-request-besoin: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display
 WARNING: StructureDefinition/tddui-service-request-besoin: StructureDefinition.snapshot.element[26].binding.valueSet: There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J285-Besoins_SERAFIN/FHIR/JDV-J285-Besoins-SERAFIN'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20241025120000', found versions: 1.5.0 (from ans.fr.nos#1.5.0), 20241025120000 (from ans.fr.terminologies#1.4.0). Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J285-Besoins_SERAFIN/FHIR/JDV-J285-Besoins-SERAFIN' to 'https://mos.esante.gouv.fr/NOS/JDV_J285-Besoins_SERAFIN/FHIR/JDV-J285-Besoins-SERAFIN|20241025120000'
 WARNING: StructureDefinition/tddui-service-request-besoin: StructureDefinition.snapshot.element[48].binding.valueSet: There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '3.0.0', found versions: 2.0.0 (from hl7.terminology.r4#5.0.0), 3.0.0 (from hl7.terminology.r4#7.0.1). Suggested fix: change the canonical reference from 'http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType' to 'http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType|3.0.0'
 WARNING: StructureDefinition/tddui-service-request-besoin: StructureDefinition.differential.element[7].binding.valueSet: There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J285-Besoins_SERAFIN/FHIR/JDV-J285-Besoins-SERAFIN'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20241025120000', found versions: 1.5.0 (from ans.fr.nos#1.5.0), 20241025120000 (from ans.fr.terminologies#1.4.0). Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J285-Besoins_SERAFIN/FHIR/JDV-J285-Besoins-SERAFIN' to 'https://mos.esante.gouv.fr/NOS/JDV_J285-Besoins_SERAFIN/FHIR/JDV-J285-Besoins-SERAFIN|20241025120000'
+== fsh-generated/resources/StructureDefinition-tddui-slot-presence-absence.json ==
+INFORMATION: StructureDefinition/tddui-slot-presence-absence: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-slot-presence-absence'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-tddui-status-author.json ==
 INFORMATION: StructureDefinition/tddui-status-author: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-status-author'): The Implementation Guide contains no examples for this extension

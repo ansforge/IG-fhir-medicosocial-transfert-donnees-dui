@@ -614,10 +614,22 @@
         "title": "TDDUI RelatedPerson Contact"
       }
     ],
+    "Schedule": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-schedule",
+        "title": "TDDUI Schedule"
+      }
+    ],
     "ServiceRequest": [
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin",
         "title": "TDDUI ServiceRequest Besoin"
+      }
+    ],
+    "Slot": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-slot-presence-absence",
+        "title": "TDDUI Slot Presence Absence"
       }
     ],
     "Task": [
@@ -801,8 +813,12 @@
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-specialty": [
       "Practitioner"
     ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule-availability-time": [
+      "Schedule"
+    ],
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-service-type-duration": [
-      "PractitionerRole"
+      "PractitionerRole",
+      "Schedule"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-lieu-dit": [
       "Patient.address.line"
