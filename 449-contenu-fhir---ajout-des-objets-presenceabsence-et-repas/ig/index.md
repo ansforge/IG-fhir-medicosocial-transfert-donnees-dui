@@ -83,7 +83,7 @@ Les ressources profilées dans le cadre de ce guide d'implémentation sont les s
 | [Observation](http://hl7.org/fhir/StructureDefinition/Observation) | [TDDUIObservationCauseMortalite](StructureDefinition-tddui-observation-cause-mortalite.md) | Profil de la ressource Observation permettant de représenter les causes de mortalité d'un usager. |
 | [Observation](http://hl7.org/fhir/StructureDefinition/Observation) | [TDDUIObservationMobiliteUsager](StructureDefinition-tddui-observation-mobilite-usager.md) | Profil de la ressource Observation permettant de représenter la mobilité de l'usager. |
 | [Observation](http://hl7.org/fhir/StructureDefinition/Observation) | [TDDUIObservationPeriodeScolaire](StructureDefinition-tddui-observation-periode-scolaire.md) | Profil de la ressource Observation permettant de représenter la période scolaire de l'usager. |
-| [Observation](http://hl7.org/fhir/StructureDefinition/Observation) | [TDDUIObservationRepas](StructureDefinition-tddui-observation-repas.md) | Profil de la ressource Observation permettant de représenter le repas de l'usager. |
+| [Observation](http://hl7.org/fhir/StructureDefinition/Observation) | [TDDUIObservationRepas](StructureDefinition-tddui-observation-repas.md) | Profil de la ressource Observation permettant de représenter si l'usager bénéficie ou non des repas. |
 | [FR Core Organization Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization) | [TDDUIOrganization](StructureDefinition-tddui-organization.md) | Profil de la ressource FRCoreOrganizationProfile permettant de représenter les entités juridiques. |
 | [FR Core Patient Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient) | [TDDUIPatient](StructureDefinition-tddui-patient.md) | Profil de la ressource FrCorePatientProfile permettant de représenter un usager lorsque l'INS n'est pas transmis. |
 | [FR Core Patient INS Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins) | [TDDUIPatientINS](StructureDefinition-tddui-patient-ins.md) | Profil de la ressource FRCorePatientINSProfile permettant de représenter un usager lorsque l'INS est transmis. |
@@ -149,7 +149,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2026-03-04T10:43:17+00:00",
+  "date" : "2026-03-04T13:55:47+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -188,7 +188,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
     "id" : "ans_fr_terminologies",
     "uri" : "https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies",
     "packageId" : "ans.fr.terminologies",
-    "version" : "1.4.0"
+    "version" : "1.7.0"
   },
   {
     "id" : "hl7_fhir_uv_extensions",
@@ -1470,7 +1470,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "reference" : "StructureDefinition/tddui-observation-repas"
       },
       "name" : "TDDUI Observation Repas",
-      "description" : "Profil de la ressource Observation permettant de représenter le repas de l'usager.",
+      "description" : "Profil de la ressource Observation permettant de représenter si l'usager bénéficie ou non des repas.",
       "exampleBoolean" : false
     },
     {

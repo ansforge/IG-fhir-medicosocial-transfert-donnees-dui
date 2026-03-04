@@ -54,7 +54,7 @@ ValueSet pour la définition des codes d'identifiant de séjour
   "title" : "TDDUI Encounter Identifier",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-04T10:43:17+00:00",
+  "date" : "2026-03-04T13:55:47+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "TDDUI"] ; # 
   fhir:title [ fhir:v "Médicosocial - Transfert de données DUI"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-03-04T10:43:17+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-03-04T13:55:47+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -76,7 +76,7 @@
        fhir:l <https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies>
      ] ;
      fhir:packageId [ fhir:v "ans.fr.terminologies" ] ;
-     fhir:version [ fhir:v "1.4.0" ]
+     fhir:version [ fhir:v "1.7.0" ]
   ] [
      fhir:id [ fhir:v "hl7_fhir_uv_extensions" ] ;
      fhir:uri [
@@ -2575,7 +2575,7 @@
          fhir:reference [ fhir:v "StructureDefinition/tddui-observation-repas" ]
        ] ;
        fhir:name [ fhir:v "TDDUI Observation Repas" ] ;
-       fhir:description [ fhir:v "Profil de la ressource Observation permettant de représenter le repas de l'usager." ] ;
+       fhir:description [ fhir:v "Profil de la ressource Observation permettant de représenter si l'usager bénéficie ou non des repas." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

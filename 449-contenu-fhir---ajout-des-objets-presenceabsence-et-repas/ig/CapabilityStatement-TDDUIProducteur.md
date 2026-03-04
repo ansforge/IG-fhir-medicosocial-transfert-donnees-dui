@@ -161,7 +161,22 @@ Le rôle de Producteur est de transmettre des données de son logiciel DUI. Il c
       "type" : "Observation",
       "supportedProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-mortalite",
       "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-periode-scolaire",
-      "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite-usager"],
+      "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite-usager",
+      "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-repas"],
+      "interaction" : [{
+        "code" : "create"
+      }]
+    },
+    {
+      "type" : "Schedule",
+      "supportedProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-schedule"],
+      "interaction" : [{
+        "code" : "create"
+      }]
+    },
+    {
+      "type" : "Slot",
+      "supportedProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-slot-presence-absence"],
       "interaction" : [{
         "code" : "create"
       }]

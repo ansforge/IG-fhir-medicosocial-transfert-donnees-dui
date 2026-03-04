@@ -44,7 +44,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [TDDUI Observation Cause Mortalite](StructureDefinition-tddui-observation-cause-mortalite.md) | Profil de la ressource Observation permettant de représenter les causes de mortalité d'un usager. |
 | [TDDUI Observation Mobilite Usager](StructureDefinition-tddui-observation-mobilite-usager.md) | Profil de la ressource Observation permettant de représenter la mobilité de l'usager. |
 | [TDDUI Observation Periode Scolaire](StructureDefinition-tddui-observation-periode-scolaire.md) | Profil de la ressource Observation permettant de représenter la période scolaire de l'usager. |
-| [TDDUI Observation Repas](StructureDefinition-tddui-observation-repas.md) | Profil de la ressource Observation permettant de représenter le repas de l'usager. |
+| [TDDUI Observation Repas](StructureDefinition-tddui-observation-repas.md) | Profil de la ressource Observation permettant de représenter si l'usager bénéficie ou non des repas. |
 | [TDDUI Organization](StructureDefinition-tddui-organization.md) | Profil de la ressource FRCoreOrganizationProfile permettant de représenter les entités juridiques. |
 | [TDDUI Patient](StructureDefinition-tddui-patient.md) | Profil de la ressource FrCorePatientProfile permettant de représenter un usager lorsque l'INS n'est pas transmis. |
 | [TDDUI Patient INS](StructureDefinition-tddui-patient-ins.md) | Profil de la ressource FRCorePatientINSProfile permettant de représenter un usager lorsque l'INS est transmis. |

@@ -12,11 +12,12 @@
 | Active as of 2026-03-04 | *Computable Name*:TDDUIObservationRepas |
 
  
-Profil de la ressource Observation permettant de représenter le repas de l'usager. 
+Profil de la ressource Observation permettant de représenter si l'usager bénéficie ou non des repas. 
 
 **Utilisations:**
 
-* Ce Profil n'est utilisé par aucun autre profil dans ce guide d'implémentation
+* Utilise ce/t/te Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
+* CapabilityStatements utilisant ce Profil: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-observation-repas)
 
@@ -41,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-re
   "name" : "TDDUIObservationRepas",
   "title" : "TDDUI Observation Repas",
   "status" : "active",
-  "date" : "2026-03-04T10:43:17+00:00",
+  "date" : "2026-03-04T13:55:47+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -50,7 +51,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-re
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Profil de la ressource Observation permettant de représenter le repas de l'usager.",
+  "description" : "Profil de la ressource Observation permettant de représenter si l'usager bénéficie ou non des repas.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -96,10 +97,6 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-re
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
-      "id" : "Observation",
-      "path" : "Observation"
-    },
-    {
       "id" : "Observation.extension",
       "path" : "Observation.extension",
       "slicing" : {

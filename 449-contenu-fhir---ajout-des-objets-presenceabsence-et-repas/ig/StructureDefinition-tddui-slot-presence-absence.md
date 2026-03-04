@@ -16,7 +16,8 @@ Profil de la ressource FRCoreSlotProfile permettant de représenter les présenc
 
 **Utilisations:**
 
-* Ce Profil n'est utilisé par aucun autre profil dans ce guide d'implémentation
+* Utilise ce/t/te Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
+* CapabilityStatements utilisant ce Profil: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-slot-presence-absence)
 
@@ -41,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-slot-presence-
   "name" : "TDDUISlotPresenceAbsence",
   "title" : "TDDUI Slot Presence Absence",
   "status" : "active",
-  "date" : "2026-03-04T10:43:17+00:00",
+  "date" : "2026-03-04T13:55:47+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
