@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-slot-presence-
   "name" : "TDDUISlotPresenceAbsence",
   "title" : "TDDUI Slot Presence Absence",
   "status" : "active",
-  "date" : "2026-03-05T15:27:35+00:00",
+  "date" : "2026-03-05T16:09:12+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -145,6 +145,22 @@ Other representations of profile: [CSV](StructureDefinition-tddui-slot-presence-
       "example" : [{
         "label" : "du format d'identifiant à respecter : 'Format : 3+FINESS/identifiantLocalUsagerESSMS-PA-identifiantPresenceAbsence",
         "valueString" : "3480787529/147720425367411-PA-21564655"
+      }]
+    },
+    {
+      "id" : "Slot.serviceType",
+      "path" : "Slot.serviceType",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUISlotPresenceAbsence",
+        "map" : "typePresenceAbsence"
+      }]
+    },
+    {
+      "id" : "Slot.appointmentType",
+      "path" : "Slot.appointmentType",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUISlotPresenceAbsence",
+        "map" : "motifAbsence"
       }]
     },
     {

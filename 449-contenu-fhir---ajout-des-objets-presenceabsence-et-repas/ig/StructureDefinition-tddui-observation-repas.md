@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-re
   "name" : "TDDUIObservationRepas",
   "title" : "TDDUI Observation Repas",
   "status" : "active",
-  "date" : "2026-03-05T15:27:35+00:00",
+  "date" : "2026-03-05T16:09:12+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -161,6 +161,14 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-re
       "example" : [{
         "label" : "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-REPAS-numRepas",
         "valueString" : "3480787529/147720425367411-REPAS-12548"
+      }]
+    },
+    {
+      "id" : "Observation.category",
+      "path" : "Observation.category",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIObservationRepas",
+        "map" : "typeRepas"
       }]
     },
     {

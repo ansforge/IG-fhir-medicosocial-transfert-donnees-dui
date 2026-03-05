@@ -98,13 +98,13 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","FiveWs.class"
 "Slot.serviceType","Slot.serviceType","","","",0,*,"","","Y","CodeableConcept {[]} {[]}
 ","The type of appointments that can be booked into this slot (ideally this would be an identifiable service - which is at a location, rather than the location itself). If provided then this overrides the value provided on the availability resource","The type of appointments that can be booked into this slot (ideally this would be an identifiable service - which is at a location, rather than the location itself). If provided then this overrides the value provided on the availability resource.","","","","","","","","","",,"example","","http://hl7.org/fhir/ValueSet/service-type","",,,,"Slot.serviceType",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","FiveWs.class"
+","typePresenceAbsence","FiveWs.class"
 "Slot.specialty","Slot.specialty","","","",0,*,"","","Y","CodeableConcept {[]} {[]}
 ","The specialty of a practitioner that would be required to perform the service requested in this appointment","The specialty of a practitioner that would be required to perform the service requested in this appointment.","","","","","","","","","",,"required","","https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-specialty","",,,,"Slot.specialty",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","FiveWs.class"
 "Slot.appointmentType","Slot.appointmentType","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
 ","The style of appointment or patient that may be booked in the slot (not service type)","The style of appointment or patient that may be booked in the slot (not service type).","","","","","","","","","",,"preferred","","http://terminology.hl7.org/ValueSet/v2-0276","",,,,"Slot.appointmentType",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","FiveWs.class"
+","motifAbsence","FiveWs.class"
 "Slot.schedule","Slot.schedule","","","",1,1,"","","Y","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-schedule]]}
 ","The schedule resource that this slot defines an interval of status information","The schedule resource that this slot defines an interval of status information.","","","","","","","","","",,,,,"",,,,"Slot.schedule",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
