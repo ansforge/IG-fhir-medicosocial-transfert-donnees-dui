@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-qr-participant
   "name" : "TDDUIQRParticipant",
   "title" : "TDDUI QR Participant",
   "status" : "active",
-  "date" : "2026-03-05T13:54:22+00:00",
+  "date" : "2026-03-05T14:12:55+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
