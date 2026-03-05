@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "TDDUI"] ; # 
   fhir:title [ fhir:v "Médicosocial - Transfert de données DUI"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-03-04T13:55:47+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-03-05T13:54:22+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -2874,6 +2874,27 @@
        ] ;
        fhir:name [ fhir:v "TDDUI Patient Validation" ] ;
        fhir:description [ fhir:v "Validation par l'usager que l'événement a eu lieu." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-planned-absence> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-planned-absence" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Planned Absence" ] ;
+       fhir:description [ fhir:v "Absence prévue" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

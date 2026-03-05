@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-schedule | *Version*:2.3.0-ballot |
-| Active as of 2026-03-04 | *Computable Name*:TDDUISchedule |
+| Active as of 2026-03-05 | *Computable Name*:TDDUISchedule |
 
  
 Profil de la ressource FRCoreScheduleProfile permettant de contenir l'ensemble des présences et absences de l'usager. 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-schedule.csv),
   "name" : "TDDUISchedule",
   "title" : "TDDUI Schedule",
   "status" : "active",
-  "date" : "2026-03-04T13:55:47+00:00",
+  "date" : "2026-03-05T13:54:22+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

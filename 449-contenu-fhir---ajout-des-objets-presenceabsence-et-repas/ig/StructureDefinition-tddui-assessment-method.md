@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-assessment-method | *Version*:2.3.0-ballot |
-| Active as of 2026-03-04 | *Computable Name*:TDDUIAssessmentMethod |
+| Active as of 2026-03-05 | *Computable Name*:TDDUIAssessmentMethod |
 
 Mode d'évaluation, texte libre permettant de mettre le contexte de l'évaluation.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-assessment-met
   "name" : "TDDUIAssessmentMethod",
   "title" : "TDDUI Assessment Method",
   "status" : "active",
-  "date" : "2026-03-04T13:55:47+00:00",
+  "date" : "2026-03-05T13:54:22+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

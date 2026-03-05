@@ -10,7 +10,7 @@
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2026-03-04T13:55:47+00:00",
+  "date" : "2026-03-05T13:54:22+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -1500,6 +1500,18 @@
       },
       "name" : "TDDUI Patient Validation",
       "description" : "Validation par l'usager que l'événement a eu lieu.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-planned-absence"
+      },
+      "name" : "TDDUI Planned Absence",
+      "description" : "Absence prévue",
       "exampleBoolean" : false
     },
     {

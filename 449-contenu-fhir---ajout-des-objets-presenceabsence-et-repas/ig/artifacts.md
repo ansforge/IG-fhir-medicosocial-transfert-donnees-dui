@@ -111,6 +111,7 @@ These define constraints on FHIR data types for systems conforming to this imple
 * **Repas** : Présence de l'usager au repas.
  |
 | [TDDUI Patient Validation](StructureDefinition-tddui-patient-validation.md) | Validation par l'usager que l'événement a eu lieu. |
+| [TDDUI Planned Absence](StructureDefinition-tddui-planned-absence.md) | Absence prévue |
 | [TDDUI Profession](StructureDefinition-tddui-profession.md) | Extension permettant de représenter la profession du professionnel. |
 | [TDDUI QR Participant](StructureDefinition-tddui-qr-participant.md) | Extension permettant d'ajouter le responsable et le porteur de l'évaluation dans un QuestionnaireResponse. |
 | [TDDUI Ressources Used](StructureDefinition-tddui-ressources-used.md) | Ressources utilisées lors de l’évènement (ex : chambre, matériel médical, véhicule). |

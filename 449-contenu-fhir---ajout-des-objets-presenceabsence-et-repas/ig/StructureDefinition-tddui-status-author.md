@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-status-author | *Version*:2.3.0-ballot |
-| Active as of 2026-03-04 | *Computable Name*:TDDUIStatusAuthor |
+| Active as of 2026-03-05 | *Computable Name*:TDDUIStatusAuthor |
 
 Extension permettant de représenter l'auteur du statut.
 
@@ -19,7 +19,7 @@ Extension permettant de représenter l'auteur du statut.
 
 **Utilisations:**
 
-* Utilise ce/t/te Extension: [TDDUI CarePlan Projet Personalise](StructureDefinition-tddui-careplan-projet-personnalise.md), [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md), [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md), [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md)... Show 2 more, [TDDUI Task Action](StructureDefinition-tddui-task-action.md) and [TDDUI Task Prestation](StructureDefinition-tddui-task-prestation.md)
+* Utilise ce/t/te Extension: [TDDUI CarePlan Projet Personalise](StructureDefinition-tddui-careplan-projet-personnalise.md), [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md), [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md), [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md)... Show 3 more, [TDDUI Slot Presence Absence](StructureDefinition-tddui-slot-presence-absence.md), [TDDUI Task Action](StructureDefinition-tddui-task-action.md) and [TDDUI Task Prestation](StructureDefinition-tddui-task-prestation.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-status-author)
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-status-author.
   "name" : "TDDUIStatusAuthor",
   "title" : "TDDUI Status Author",
   "status" : "active",
-  "date" : "2026-03-04T13:55:47+00:00",
+  "date" : "2026-03-05T13:54:22+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

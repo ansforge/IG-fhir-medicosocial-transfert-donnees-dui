@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-periode-scolaire | *Version*:2.3.0-ballot |
-| Active as of 2026-03-04 | *Computable Name*:TDDUIObservationPeriodeScolaire |
+| Active as of 2026-03-05 | *Computable Name*:TDDUIObservationPeriodeScolaire |
 
  
 Profil de la ressource Observation permettant de représenter la période scolaire de l'usager. 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-pe
   "name" : "TDDUIObservationPeriodeScolaire",
   "title" : "TDDUI Observation Periode Scolaire",
   "status" : "active",
-  "date" : "2026-03-04T13:55:47+00:00",
+  "date" : "2026-03-05T13:54:22+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

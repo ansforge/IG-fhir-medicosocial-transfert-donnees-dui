@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-identifier | *Version*:2.3.0-ballot |
-| Active as of 2026-03-04 | *Computable Name*:TDDUIIdentifier |
+| Active as of 2026-03-05 | *Computable Name*:TDDUIIdentifier |
 
  
 CodeSystem pour la définition des codes d'identifiant de l'usager 
@@ -35,7 +35,7 @@ CodeSystem pour la définition des codes d'identifiant de l'usager
   "title" : "TDDUI Patient Identifier",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-04T13:55:47+00:00",
+  "date" : "2026-03-05T13:54:22+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

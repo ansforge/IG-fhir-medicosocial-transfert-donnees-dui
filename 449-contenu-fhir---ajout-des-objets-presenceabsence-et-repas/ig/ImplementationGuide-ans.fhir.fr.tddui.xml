@@ -10,7 +10,7 @@
   <name value="TDDUI"/>
   <title value="Médicosocial - Transfert de données DUI"/>
   <status value="active"/>
-  <date value="2026-03-04T13:55:47+00:00"/>
+  <date value="2026-03-05T13:54:22+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -1260,6 +1260,17 @@
       </reference>
       <name value="TDDUI Patient Validation"/>
       <description value="Validation par l'usager que l'événement a eu lieu."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-planned-absence"/>
+      </reference>
+      <name value="TDDUI Planned Absence"/>
+      <description value="Absence prévue"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

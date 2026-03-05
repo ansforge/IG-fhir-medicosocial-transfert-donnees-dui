@@ -373,6 +373,13 @@
       ]
     },
     {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-planned-absence",
+      "title": "TDDUI Planned Absence",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-profession",
       "title": "TDDUI Profession",
       "types": [
@@ -925,6 +932,9 @@
       "Bundle.entry.resource",
       "Encounter"
     ],
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-planned-absence": [
+      "Slot"
+    ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-profession": [
       "Bundle.entry.resource.code",
       "PractitionerRole.code"
@@ -945,6 +955,7 @@
       "Encounter.status",
       "Goal.lifecycleStatus",
       "QuestionnaireResponse.status",
+      "Slot.status",
       "Task.status"
     ]
   }

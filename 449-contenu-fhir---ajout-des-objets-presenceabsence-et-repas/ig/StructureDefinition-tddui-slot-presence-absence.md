@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-slot-presence-absence | *Version*:2.3.0-ballot |
-| Active as of 2026-03-04 | *Computable Name*:TDDUISlotPresenceAbsence |
+| Active as of 2026-03-05 | *Computable Name*:TDDUISlotPresenceAbsence |
 
  
 Profil de la ressource FRCoreSlotProfile permettant de représenter les présences et absences de l'usager. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-slot-presence-
   "name" : "TDDUISlotPresenceAbsence",
   "title" : "TDDUI Slot Presence Absence",
   "status" : "active",
-  "date" : "2026-03-04T13:55:47+00:00",
+  "date" : "2026-03-05T13:54:22+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -95,6 +95,33 @@ Other representations of profile: [CSV](StructureDefinition-tddui-slot-presence-
       }]
     },
     {
+      "id" : "Slot.extension",
+      "path" : "Slot.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "Slot.extension:TDDUIPlannedAbsence",
+      "path" : "Slot.extension",
+      "sliceName" : "TDDUIPlannedAbsence",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-planned-absence"]
+      }],
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUISlotPresenceAbsence",
+        "map" : "absencePrevue"
+      }]
+    },
+    {
       "id" : "Slot.identifier",
       "path" : "Slot.identifier",
       "min" : 1,
@@ -125,6 +152,42 @@ Other representations of profile: [CSV](StructureDefinition-tddui-slot-presence-
       "type" : [{
         "code" : "Reference",
         "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-schedule"]
+      }]
+    },
+    {
+      "id" : "Slot.status",
+      "path" : "Slot.status",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUISlotPresenceAbsence",
+        "map" : "Statut.statut"
+      }]
+    },
+    {
+      "id" : "Slot.status.extension",
+      "path" : "Slot.status.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      },
+      "min" : 1
+    },
+    {
+      "id" : "Slot.status.extension:TDDUIStatusAuthor",
+      "path" : "Slot.status.extension",
+      "sliceName" : "TDDUIStatusAuthor",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-status-author"]
+      }],
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUISlotPresenceAbsence",
+        "map" : "Statut.auteur"
       }]
     },
     {

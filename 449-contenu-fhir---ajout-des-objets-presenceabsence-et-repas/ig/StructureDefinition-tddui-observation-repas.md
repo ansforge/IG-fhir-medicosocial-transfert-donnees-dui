@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-repas | *Version*:2.3.0-ballot |
-| Active as of 2026-03-04 | *Computable Name*:TDDUIObservationRepas |
+| Active as of 2026-03-05 | *Computable Name*:TDDUIObservationRepas |
 
  
 Profil de la ressource Observation permettant de représenter si l'usager bénéficie ou non des repas. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-re
   "name" : "TDDUIObservationRepas",
   "title" : "TDDUI Observation Repas",
   "status" : "active",
-  "date" : "2026-03-04T13:55:47+00:00",
+  "date" : "2026-03-05T13:54:22+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -61,6 +61,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-re
   }],
   "fhirVersion" : "4.0.1",
   "mapping" : [{
+    "identity" : "specmetier-to-TDDUIObservationRepas",
+    "uri" : "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html",
+    "name" : "Modèle de contenu DUI"
+  },
+  {
     "identity" : "workflow",
     "uri" : "http://hl7.org/fhir/workflow",
     "name" : "Workflow Pattern"
@@ -97,6 +102,14 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-re
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
+      "id" : "Observation",
+      "path" : "Observation",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIObservationRepas",
+        "map" : "Repas"
+      }]
+    },
+    {
       "id" : "Observation.extension",
       "path" : "Observation.extension",
       "slicing" : {
@@ -118,13 +131,21 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-re
       "type" : [{
         "code" : "Extension",
         "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-present"]
+      }],
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIObservationRepas",
+        "map" : "usagerPresent"
       }]
     },
     {
       "id" : "Observation.identifier",
       "path" : "Observation.identifier",
       "min" : 1,
-      "max" : "1"
+      "max" : "1",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIObservationRepas",
+        "map" : "idRepas"
+      }]
     },
     {
       "id" : "Observation.identifier.system",
@@ -160,6 +181,10 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-re
         "code" : "Reference",
         "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient",
         "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"]
+      }],
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIObservationRepas",
+        "map" : "Usager"
       }]
     },
     {
@@ -183,6 +208,10 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-re
       "max" : "1",
       "type" : [{
         "code" : "dateTime"
+      }],
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIObservationRepas",
+        "map" : "dateRepas"
       }]
     }]
   }
