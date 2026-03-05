@@ -13,7 +13,7 @@ Description: "Profil de la ressource Observation permettant de représenter si l
 
 * code = TDDUIObservationType#REPAS "Repas"
 
-* category 1..1
+// * category 1..1
 
 * effectiveDateTime 1..1
 
