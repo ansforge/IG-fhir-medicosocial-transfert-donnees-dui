@@ -31,6 +31,11 @@ Ce mapping représente les données fonctionnelles trouvant leur équivalence da
 
 <div>{%include mapping_TDDUIEncounterEvenement.svg%}</div>
 
+### Mapping Présence Absence et Repas
+
+<div>{%include mapping_TDDUISlotPresenceAbsence.svg%}</div>
+<div>{%include mapping_TDDUIObservationRepas.svg%}</div>
+
 ### Mapping Transport
 
 <div>{%include mapping_TDDUITaskTransportProfessionnel.svg%}</div>
