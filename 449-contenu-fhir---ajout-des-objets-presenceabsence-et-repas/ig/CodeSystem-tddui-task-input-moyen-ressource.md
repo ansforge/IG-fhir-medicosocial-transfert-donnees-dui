@@ -35,7 +35,7 @@ CodeSystem pour la définition des éléments spécifiques des input dans la res
   "title" : "TDDUI Task Input Moyen Ressource",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-05T14:12:55+00:00",
+  "date" : "2026-03-05T15:01:37+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

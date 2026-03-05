@@ -176,6 +176,7 @@ These are example instances that show what data produced and consumed by systems
 | [TDDUI Observation Cause Mortalite Example](Observation-tddui-observation-cause-mortalite-example.md) | Exemple de la ressource TDDUIObservationMortalite |
 | [TDDUI Observation Mobilite Usager Example](Observation-tddui-observation-mobilite-usager-example.md) | Exemple de la ressource TDDUIObservationMobiliteUsager |
 | [TDDUI Observation PeriodeScolaire Example](Observation-tddui-observation-periodescolaire-example.md) | Exemple de la ressource TDDUIObservationPeriodeScolaire |
+| [TDDUI Observation Repas Example](Observation-tddui-observation-repas-example.md) | Exemple de la ressource TDDUIObservationRepas |
 | [TDDUI Organization Example](Organization-tddui-organization-example.md) | ESSMS - Les Chênes Verts |
 | [TDDUI Organization Origine Example](Organization-tddui-organization-origine-example.md) | ESSMS - Les Résidences du Lac |
 | [TDDUI PP IME Bundle Example](Bundle-tddui-pp-ime-bundle-example.md) | Exemple de bundle conforme au profil TDDUIBundle contenant le projet personnalisé en IME |
@@ -222,6 +223,8 @@ These are example instances that show what data produced and consumed by systems
 | [TDDUI Questionnaire Response SERAFIN Sans Precision Example](QuestionnaireResponse-tddui-questionnaire-response-serafin-sans-precision-example.md) | Evaluation SERAFIN pour un besoin d'hébergement adapté sans précision |
 | [TDDUI Questionnaire Response Situation SSIAD Example](QuestionnaireResponse-tddui-questionnaire-response-situation-ssiad-example.md) | Grille de réponse de la situation SSIAD |
 | [TDDUI Related Person Contact Example](RelatedPerson-tddui-related-person-contact-example.md) | Exemple d'un contact. |
+| [TDDUI Schedule Example](Schedule-tddui-schedule-example.md) | Exemple de la ressource TDDUISchedule. |
+| [TDDUI Slot PresenceAbsence Example](Slot-tddui-slot-presence-absences-example.md) | Exemple de la ressource TDDUISlotPresenceAbsence. |
 | [TDDUI Task Transport Example](Task-tddui-task-transport-example.md) | Exemple du transport. |
 | [TDDUI Task Transport Professionel Example](Task-tddui-task-transport-professionel-example.md) | Exemple du transport du professionnel. |
 | [TDDUI Task Transport Usager Example](Task-tddui-task-transport-usager-example.md) | Exemple du transport de l'usager. |

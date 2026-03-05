@@ -17,6 +17,7 @@ Profil de la ressource FRCoreSlotProfile permettant de représenter les présenc
 **Utilisations:**
 
 * Utilise ce/t/te Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
+* Exemples pour ce/t/te Profil: [Slot/tddui-slot-presence-absences-example](Slot-tddui-slot-presence-absences-example.md)
 * CapabilityStatements utilisant ce Profil: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-slot-presence-absence)
@@ -42,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-slot-presence-
   "name" : "TDDUISlotPresenceAbsence",
   "title" : "TDDUI Slot Presence Absence",
   "status" : "active",
-  "date" : "2026-03-05T14:12:55+00:00",
+  "date" : "2026-03-05T15:01:37+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -135,7 +136,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-slot-presence-
       "id" : "Slot.identifier.system",
       "path" : "Slot.identifier.system",
       "min" : 1,
-      "patternUri" : "https://identifiant-medicosocial-presence-absence.esante.gouv.fr"
+      "patternUri" : "https://identifiant-medicosocial-presenceabsence.esante.gouv.fr"
     },
     {
       "id" : "Slot.identifier.value",
@@ -172,14 +173,13 @@ Other representations of profile: [CSV](StructureDefinition-tddui-slot-presence-
         }],
         "ordered" : false,
         "rules" : "open"
-      },
-      "min" : 1
+      }
     },
     {
       "id" : "Slot.status.extension:TDDUIStatusAuthor",
       "path" : "Slot.status.extension",
       "sliceName" : "TDDUIStatusAuthor",
-      "min" : 1,
+      "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "Extension",

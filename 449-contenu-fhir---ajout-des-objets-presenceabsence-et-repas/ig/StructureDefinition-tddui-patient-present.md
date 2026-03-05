@@ -21,6 +21,7 @@
 **Utilisations:**
 
 * Utilise ce/t/te Extension: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md) and [TDDUI Observation Repas](StructureDefinition-tddui-observation-repas.md)
+* Exemples pour ce/t/te Extension: [Observation/tddui-observation-repas-example](Observation-tddui-observation-repas-example.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-patient-present)
 
@@ -47,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient-presen
   "name" : "TDDUIPatientPresent",
   "title" : "TDDUI Patient Present",
   "status" : "active",
-  "date" : "2026-03-05T14:12:55+00:00",
+  "date" : "2026-03-05T15:01:37+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

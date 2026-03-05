@@ -17,6 +17,7 @@ Profil de la ressource Observation permettant de représenter si l'usager béné
 **Utilisations:**
 
 * Utilise ce/t/te Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
+* Exemples pour ce/t/te Profil: [Observation/tddui-observation-repas-example](Observation-tddui-observation-repas-example.md)
 * CapabilityStatements utilisant ce Profil: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-observation-repas)
@@ -42,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-re
   "name" : "TDDUIObservationRepas",
   "title" : "TDDUI Observation Repas",
   "status" : "active",
-  "date" : "2026-03-05T14:12:55+00:00",
+  "date" : "2026-03-05T15:01:37+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
