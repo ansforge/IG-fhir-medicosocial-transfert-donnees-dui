@@ -54,7 +54,7 @@ ValueSet définissant les slices de RelatedPerson.relationship.
   "title" : "TDDUI Related Person Relashionship",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-05T15:01:37+00:00",
+  "date" : "2026-03-05T15:27:35+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
