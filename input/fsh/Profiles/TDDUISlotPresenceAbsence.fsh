@@ -13,6 +13,10 @@ Description: "Profil de la ressource FRCoreSlotProfile permettant de représente
 
 * schedule only Reference(TDDUISchedule)
 
+* status.extension contains TDDUIStatusAuthor named TDDUIStatusAuthor 1..1
+
+* extension contains TDDUIPlannedAbsence named TDDUIPlannedAbsence 0..1
+
 Mapping:  ConceptMetier_TDDUISlotPresenceAbsence
 Source:   TDDUISlotPresenceAbsence
 Target: "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"
@@ -23,3 +27,6 @@ Title:    "Modèle de contenu DUI"
 * identifier -> "idPresenceAbsenceUsager"
 * start -> "dateDebutPresenceAbsence"
 * end -> "dateFinPresenceAbsence"
+* status -> "Statut.statut"
+* status.extension[TDDUIStatusAuthor] -> "Statut.auteur"
+* extension[TDDUIPlannedAbsence] -> "absencePrevue"

@@ -19,3 +19,15 @@ Description: "Profil de la ressource Observation permettant de représenter si l
 * subject only Reference(TDDUIPatient or TDDUIPatientINS)
 
 * extension contains TDDUIPatientPresent named TDDUIPatientPresent 1..1
+
+Mapping:  ConceptMetier_TDDUIObservationRepas
+Source:   TDDUIObservationRepas
+Target: "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"
+Id:       specmetier-to-TDDUIObservationRepas
+Title:    "Modèle de contenu DUI"
+* -> "Repas"
+
+* identifier -> "idRepas"
+* effectiveDateTime -> "dateRepas"
+* extension[TDDUIPatientPresent] -> "usagerPresent"
+* subject -> "Usager"
