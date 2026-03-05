@@ -17,6 +17,10 @@ Description: "Profil de la ressource FRCoreSlotProfile permettant de représente
 
 * extension contains TDDUIPlannedAbsence named TDDUIPlannedAbsence 0..1
 
+* serviceType 1..1
+
+* appointmentType 0..1
+
 Mapping:  ConceptMetier_TDDUISlotPresenceAbsence
 Source:   TDDUISlotPresenceAbsence
 Target: "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"
@@ -30,3 +34,5 @@ Title:    "Modèle de contenu DUI"
 * status -> "Statut.statut"
 * status.extension[TDDUIStatusAuthor] -> "Statut.auteur"
 * extension[TDDUIPlannedAbsence] -> "absencePrevue"
+* serviceType -> "typePresenceAbsence"
+* appointmentType -> "motifAbsence"

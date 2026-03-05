@@ -13,6 +13,8 @@ Description: "Profil de la ressource Observation permettant de représenter si l
 
 * code = TDDUIObservationType#REPAS "Repas"
 
+* category 1..1
+
 * effectiveDateTime 1..1
 
 * subject 1..1
@@ -28,6 +30,7 @@ Title:    "Modèle de contenu DUI"
 * -> "Repas"
 
 * identifier -> "idRepas"
+* category -> "typeRepas"
 * effectiveDateTime -> "dateRepas"
 * extension[TDDUIPatientPresent] -> "usagerPresent"
 * subject -> "Usager"
