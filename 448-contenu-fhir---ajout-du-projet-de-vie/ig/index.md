@@ -80,6 +80,7 @@ Les ressources profilées dans le cadre de ce guide d'implémentation sont les s
 | [Encounter](http://hl7.org/fhir/StructureDefinition/Encounter) | [TDDUIEncounterSejour](StructureDefinition-tddui-encounter-sejour.md) | Profil de la ressource Encounter permettant de regrouper les informations relatives au séjour d'un usager dans une structure ESSMS |
 | [Goal](http://hl7.org/fhir/StructureDefinition/Goal) | [TDDUIGoalAttente](StructureDefinition-tddui-goal-attente.md) | Profil de la ressource Goal permettant de représenter les attentes pour un usager. |
 | [Goal](http://hl7.org/fhir/StructureDefinition/Goal) | [TDDUIGoalObjectif](StructureDefinition-tddui-goal-objectif.md) | Profil de la ressource Goal permettant de représenter les résultats à atteindre dans le cadre du projet personnalisé. |
+| [Goal](http://hl7.org/fhir/StructureDefinition/Goal) | [TDDUIGoalProjetVie](StructureDefinition-tddui-goal-projet-vie.md) | Profil de la ressource Goal permettant de représenter le projet de vie de l'usager. |
 | [Observation](http://hl7.org/fhir/StructureDefinition/Observation) | [TDDUIObservationCauseMortalite](StructureDefinition-tddui-observation-cause-mortalite.md) | Profil de la ressource Observation permettant de représenter les causes de mortalité d'un usager. |
 | [Observation](http://hl7.org/fhir/StructureDefinition/Observation) | [TDDUIObservationMobiliteUsager](StructureDefinition-tddui-observation-mobilite-usager.md) | Profil de la ressource Observation permettant de représenter la mobilité de l'usager. |
 | [Observation](http://hl7.org/fhir/StructureDefinition/Observation) | [TDDUIObservationPeriodeScolaire](StructureDefinition-tddui-observation-periode-scolaire.md) | Profil de la ressource Observation permettant de représenter la période scolaire de l'usager. |
@@ -146,7 +147,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2026-03-06T10:34:48+00:00",
+  "date" : "2026-03-06T12:21:15+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -1312,6 +1313,18 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
       },
       "name" : "TDDUI Goal Objectif Note",
       "description" : "ValueSet définissant les types de notes pour l'élément Goal.note.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-goal-projet-vie"
+      },
+      "name" : "TDDUI Goal Projet Vie",
+      "description" : "Profil de la ressource Goal permettant de représenter le projet de vie de l'usager.",
       "exampleBoolean" : false
     },
     {

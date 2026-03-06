@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "TDDUI"] ; # 
   fhir:title [ fhir:v "Médicosocial - Transfert de données DUI"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-03-06T10:34:48+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-03-06T12:21:15+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -2300,6 +2300,27 @@
        ] ;
        fhir:name [ fhir:v "TDDUI Goal Objectif Note" ] ;
        fhir:description [ fhir:v "ValueSet définissant les types de notes pour l'élément Goal.note." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-projet-vie> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-goal-projet-vie" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Goal Projet Vie" ] ;
+       fhir:description [ fhir:v "Profil de la ressource Goal permettant de représenter le projet de vie de l'usager." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
