@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-bilan | *Version*:2.3.0-ballot |
-| Active as of 2026-03-05 | *Computable Name*:TDDUITaskInputBilan |
+| Active as of 2026-03-06 | *Computable Name*:TDDUITaskInputBilan |
 
  
 CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour le bilan du projet personnalisé. 
@@ -35,7 +35,7 @@ CodeSystem pour la définition des éléments spécifiques des input dans la res
   "title" : "TDDUI Task Input Bilan",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-05T16:09:12+00:00",
+  "date" : "2026-03-06T08:12:50+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

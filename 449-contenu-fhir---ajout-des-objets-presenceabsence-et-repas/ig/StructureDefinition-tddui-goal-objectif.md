@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif | *Version*:2.3.0-ballot |
-| Active as of 2026-03-05 | *Computable Name*:TDDUIGoalObjectif |
+| Active as of 2026-03-06 | *Computable Name*:TDDUIGoalObjectif |
 
  
 Profil de la ressource Goal permettant de représenter les résultats à atteindre dans le cadre du projet personnalisé. 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-objectif.
   "name" : "TDDUIGoalObjectif",
   "title" : "TDDUI Goal Objectif",
   "status" : "active",
-  "date" : "2026-03-05T16:09:12+00:00",
+  "date" : "2026-03-06T08:12:50+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
