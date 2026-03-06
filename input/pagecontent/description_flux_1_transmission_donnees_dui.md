@@ -42,7 +42,7 @@ Les différentes ressources sont véhiculées via l'élément : Bundle.entry. Le
 * [TDDUIObservationCauseMortalite](StructureDefinition-tddui-observation-cause-mortalite.html) représentant les causes de mortalité.
 * [TDDUIObservationMobiliteUsager](StructureDefinition-tddui-observation-mobilite-usager.html) représentant la mobilité de l'usager.
 * [TDDUIObservationPeriodeScolaire](StructureDefinition-tddui-observation-periode-scolaire.html) représentant la période scolaire de l'usager.
-* [TDDUIObservationRepas](StructureDefinition-tddui-observation-repas.html) représentant si l'usager bénéficie ou non des repas.
+* [TDDUIObservationRepas](StructureDefinition-tddui-observation-repas.html) représentant le fait que l’usager bénéficie ou non des repas.
 * [TDDUISchedule](StructureDefinition-tddui-schedule.html) représentant l'ensemble des présences et absences de l'usager.
 * [TDDUISlotPresenceAbsence](StructureDefinition-tddui-slot-presence-absence.html) représentant les présences et absences de l'usager.
 
