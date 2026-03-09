@@ -1,4 +1,4 @@
-Instance: tddui-slot-presence-absences-example
+Instance: tddui-slot-presence-absence-example
 InstanceOf: TDDUISlotPresenceAbsence
 Title: "TDDUI Slot PresenceAbsence Example"
 Description: "Exemple de la ressource TDDUISlotPresenceAbsence." 
