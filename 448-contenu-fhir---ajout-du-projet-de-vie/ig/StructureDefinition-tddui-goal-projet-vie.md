@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-projet-vi
   "name" : "TDDUIGoalProjetVie",
   "title" : "TDDUI Goal Projet Vie",
   "status" : "active",
-  "date" : "2026-03-09T10:54:50+00:00",
+  "date" : "2026-03-09T16:16:18+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -202,6 +202,22 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-projet-vi
       "mapping" : [{
         "identity" : "specmetier-to-TDDUIGoalProjetVie",
         "map" : "dateDebutProjetVie"
+      }]
+    },
+    {
+      "id" : "Goal.target.measure.extension",
+      "path" : "Goal.target.measure.extension",
+      "min" : 1
+    },
+    {
+      "id" : "Goal.target.measure.extension:DataAbsentReason",
+      "path" : "Goal.target.measure.extension",
+      "sliceName" : "DataAbsentReason",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/data-absent-reason"]
       }]
     },
     {

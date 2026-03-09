@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-entry-date-ori
   "name" : "TDDUIEntryDateOrigin",
   "title" : "TDDUI Entry Date Origin",
   "status" : "active",
-  "date" : "2026-03-09T10:54:50+00:00",
+  "date" : "2026-03-09T16:16:18+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
