@@ -1,0 +1,31 @@
+@startuml
+
+map "Statut.statut : lifecycleStatus" as Statutstatut #DarkGray {
+    Statut.auteur => <&plus> TDDUIStatusAuthor
+}
+
+map "description" as description #DarkGray {
+    titreProjetVie => text
+}
+
+map "target" as target #DarkGray {
+    aspirationProjetVie => detailString
+    dateFinProjetVie => dueDate
+}
+
+object "**TDDUIPatient/TDDUIPatientINS**" as TDDUIPatient_subject #b3de69 {
+    Usager
+}
+
+map "**ProjetVie : TDDUIGoalProjetVie**" as ProjetVie #fb8072 {
+    idProjetVie => identifier
+    dateDebutProjetVie => startDate
+    Statut.statut => lifecycleStatus
+    description *-> description
+    target *--> target
+}
+
+ProjetVie::Statut.statut -u-> Statutstatut
+ProjetVie -d-> TDDUIPatient_subject : subject
+
+@enduml
