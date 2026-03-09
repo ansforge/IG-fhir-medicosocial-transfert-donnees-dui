@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-slot-presence-absence | *Version*:2.3.0-ballot |
-| Active as of 2026-03-06 | *Computable Name*:TDDUISlotPresenceAbsence |
+| Active as of 2026-03-09 | *Computable Name*:TDDUISlotPresenceAbsence |
 
  
 Profil de la ressource FRCoreSlotProfile permettant de représenter les présences et absences de l'usager. 
@@ -17,7 +17,7 @@ Profil de la ressource FRCoreSlotProfile permettant de représenter les présenc
 **Utilisations:**
 
 * Utilise ce/t/te Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
-* Exemples pour ce/t/te Profil: [Slot/tddui-slot-presence-absences-example](Slot-tddui-slot-presence-absences-example.md)
+* Exemples pour ce/t/te Profil: [Slot/tddui-slot-presence-absence-example](Slot-tddui-slot-presence-absence-example.md)
 * CapabilityStatements utilisant ce Profil: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-slot-presence-absence)
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-slot-presence-
   "name" : "TDDUISlotPresenceAbsence",
   "title" : "TDDUI Slot Presence Absence",
   "status" : "active",
-  "date" : "2026-03-06T08:12:50+00:00",
+  "date" : "2026-03-09T13:07:52+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

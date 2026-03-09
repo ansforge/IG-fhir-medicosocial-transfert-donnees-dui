@@ -25,7 +25,7 @@ Profil: [TDDUI Slot Presence Absence](StructureDefinition-tddui-slot-presence-ab
 ```json
 {
   "resourceType" : "Slot",
-  "id" : "tddui-slot-presence-absences-example",
+  "id" : "tddui-slot-presence-absence-example",
   "meta" : {
     "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-slot-presence-absence"]
   },

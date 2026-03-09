@@ -1,11 +1,11 @@
 TDDUI : Validation Results
 =========================================
 
-err = 111, warn = 259, info = 210
+err = 115, warn = 262, info = 213
 $--
 Generated $--. FHIR version $-- for ans.fhir.fr.tddui#$-- (canonical = https://interop.esante.gouv.fr/ig/fhir/tddui)
  Build Errors : 1 / 6 / 0
- /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Bundle-tddui-bundle-example : 0 / 10 / 34
+ /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Bundle-tddui-bundle-example : 4 / 13 / 45
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Bundle-tddui-pp-ime-bundle-example : 0 / 7 / 23
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Bundle-tddui-pp-pa-bundle-example : 0 / 23 / 79
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CapabilityStatement-TDDUIConsommateur : 0 / 1 / 2
@@ -66,7 +66,7 @@ Generated $--. FHIR version $-- for ans.fhir.fr.tddui#$-- (canonical = https://i
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/ServiceRequest-tddui-pp-pa-servicerequest-besoin-1-example : 0 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/ServiceRequest-tddui-pp-pa-servicerequest-besoin-2-example : 0 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/ServiceRequest-tddui-pp-pa-servicerequest-besoin-3-example : 0 / 1 / 1
- /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Slot-tddui-slot-presence-absences-example : 0 / 1 / 2
+ /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Slot-tddui-slot-presence-absence-example : 0 / 1 / 2
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-admission-date : 0 / 0 / 2
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-assessment-method : 0 / 1 / 2
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-attachment : 0 / 0 / 2
@@ -172,6 +172,7 @@ WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-v
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 5: The HTML fragment 'expansion-params.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/Bundle-tddui-bundle-example.json ==
+INFORMATION: Bundle/tddui-bundle-example: Bundle.entry[10]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle|2.3.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Bundle/tddui-bundle-example: Bundle.entry[0].resource.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins|2.3.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Bundle/tddui-bundle-example: Bundle.entry[0].resource.extension[0].extension[0].value.ofType(Coding): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445|2.1.0
 WARNING: Bundle/tddui-bundle-example: Bundle.entry[0].resource.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.250.1.213.1.4.8'
@@ -191,6 +192,15 @@ WARNING: Bundle/tddui-bundle-example: Bundle.entry[4].resource/*Practitioner/tdd
 INFORMATION: Bundle/tddui-bundle-example: Bundle.entry[5].resource.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role|2.3.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 WARNING: Bundle/tddui-bundle-example: Bundle.entry[6].resource.identifier[0].system: No definition could be found for URL value 'https://identifiant-medicosocial-transportprofessionnel.esante.gouv.fr'
 WARNING: Bundle/tddui-bundle-example: Bundle.entry[7].resource.identifier[0].system: No definition could be found for URL value 'https://identifiant-medicosocial-transportusager.esante.gouv.fr'
+WARNING: Bundle/tddui-bundle-example: Bundle.entry[8].resource/*Observation/tddui-observation-repas-example*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/tddui-bundle-example: Bundle.entry[8].resource.identifier[0].system: No definition could be found for URL value 'https://identifiant-medicosocial-repas.esante.gouv.fr'
+INFORMATION: Bundle/tddui-bundle-example: Bundle.entry[9].resource.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-schedule|2.3.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
+WARNING: Bundle/tddui-bundle-example: Bundle.entry[10].resource/*Slot/tddui-slot-presence-absence-example*/.identifier[0].system: No definition could be found for URL value 'https://identifiant-medicosocial-presenceabsence.esante.gouv.fr'
+ERROR: Bundle/tddui-bundle-example: Bundle.entry[10].resource/*Slot/tddui-slot-presence-absence-example*/.schedule: Multiple matches in bundle for reference Schedule/tddui-schedule-example
+ERROR: Bundle/tddui-bundle-example: Bundle.entry[10].resource/*Slot/tddui-slot-presence-absence-example*/.schedule: Invalid Resource target type. Found Slot, but expected one of ([Schedule])
+INFORMATION: Bundle/tddui-bundle-example: Bundle.entry[10].resource.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-slot-presence-absence|2.3.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
+ERROR: Bundle/tddui-bundle-example: Bundle: Constraint failed: bdl-7: 'FullUrl must be unique in a bundle, or else entries with the same fullUrl must have different meta.versionId (except in history bundles) ((type = 'history') or entry.where(fullUrl.exists()).select(fullUrl&resource.meta.versionId).isDistinct())' (defined in http://hl7.org/fhir/StructureDefinition/Bundle)
+ERROR: Bundle/tddui-bundle-example: Bundle.entry[0]: The fullUrl 'https://test-server.fr/Schedule/tddui-schedule-example' looks like a RESTful server URL, so it must end with the correct type and id (/Slot/tddui-slot-presence-absence-example)
 == fsh-generated/resources/Bundle-tddui-pp-ime-bundle-example.json ==
 INFORMATION: Bundle/tddui-pp-ime-bundle-example: Bundle.entry[0].resource.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient|2.3.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 WARNING: Bundle/tddui-pp-ime-bundle-example: Bundle.entry[0].resource.identifier[0].system: No definition could be found for URL value 'https://identifiant-medicosocial-localusager.esante.gouv.fr'
@@ -521,9 +531,9 @@ WARNING: ServiceRequest/tddui-pp-pa-servicerequest-besoin-1-example: ServiceRequ
 WARNING: ServiceRequest/tddui-pp-pa-servicerequest-besoin-2-example: ServiceRequest.identifier[0].system: No definition could be found for URL value 'https://identifiant-medicosocial-besoin.esante.gouv.fr'
 == fsh-generated/resources/ServiceRequest-tddui-pp-pa-servicerequest-besoin-3-example.json ==
 WARNING: ServiceRequest/tddui-pp-pa-servicerequest-besoin-3-example: ServiceRequest.identifier[0].system: No definition could be found for URL value 'https://identifiant-medicosocial-besoin.esante.gouv.fr'
-== fsh-generated/resources/Slot-tddui-slot-presence-absences-example.json ==
-INFORMATION: Slot/tddui-slot-presence-absences-example: Slot.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-slot-presence-absence|2.3.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
-WARNING: Slot/tddui-slot-presence-absences-example: Slot.identifier[0].system: No definition could be found for URL value 'https://identifiant-medicosocial-presenceabsence.esante.gouv.fr'
+== fsh-generated/resources/Slot-tddui-slot-presence-absence-example.json ==
+INFORMATION: Slot/tddui-slot-presence-absence-example: Slot.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-slot-presence-absence|2.3.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
+WARNING: Slot/tddui-slot-presence-absence-example: Slot.identifier[0].system: No definition could be found for URL value 'https://identifiant-medicosocial-presenceabsence.esante.gouv.fr'
 == fsh-generated/resources/StructureDefinition-tddui-admission-date.json ==
 INFORMATION: StructureDefinition/tddui-admission-date: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display
 == fsh-generated/resources/StructureDefinition-tddui-assessment-method.json ==

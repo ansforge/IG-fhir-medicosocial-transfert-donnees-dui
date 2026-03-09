@@ -224,7 +224,7 @@ These are example instances that show what data produced and consumed by systems
 | [TDDUI Questionnaire Response Situation SSIAD Example](QuestionnaireResponse-tddui-questionnaire-response-situation-ssiad-example.md) | Grille de réponse de la situation SSIAD |
 | [TDDUI Related Person Contact Example](RelatedPerson-tddui-related-person-contact-example.md) | Exemple d'un contact. |
 | [TDDUI Schedule Example](Schedule-tddui-schedule-example.md) | Exemple de la ressource TDDUISchedule. |
-| [TDDUI Slot PresenceAbsence Example](Slot-tddui-slot-presence-absences-example.md) | Exemple de la ressource TDDUISlotPresenceAbsence. |
+| [TDDUI Slot PresenceAbsence Example](Slot-tddui-slot-presence-absence-example.md) | Exemple de la ressource TDDUISlotPresenceAbsence. |
 | [TDDUI Task Transport Example](Task-tddui-task-transport-example.md) | Exemple du transport. |
 | [TDDUI Task Transport Professionel Example](Task-tddui-task-transport-professionel-example.md) | Exemple du transport du professionnel. |
 | [TDDUI Task Transport Usager Example](Task-tddui-task-transport-usager-example.md) | Exemple du transport de l'usager. |

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-present | *Version*:2.3.0-ballot |
-| Active as of 2026-03-06 | *Computable Name*:TDDUIPatientPresent |
+| Active as of 2026-03-09 | *Computable Name*:TDDUIPatientPresent |
 
 * **Événement** : évènement nécessitant ou non la présence physique de l’usager.
 * **Repas** : Présence de l'usager au repas.
@@ -21,7 +21,7 @@
 **Utilisations:**
 
 * Utilise ce/t/te Extension: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md) and [TDDUI Observation Repas](StructureDefinition-tddui-observation-repas.md)
-* Exemples pour ce/t/te Extension: [Observation/tddui-observation-repas-example](Observation-tddui-observation-repas-example.md)
+* Exemples pour ce/t/te Extension: [Bundle/tddui-bundle-example](Bundle-tddui-bundle-example.md) and [Observation/tddui-observation-repas-example](Observation-tddui-observation-repas-example.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-patient-present)
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient-presen
   "name" : "TDDUIPatientPresent",
   "title" : "TDDUI Patient Present",
   "status" : "active",
-  "date" : "2026-03-06T08:12:50+00:00",
+  "date" : "2026-03-09T13:07:52+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
