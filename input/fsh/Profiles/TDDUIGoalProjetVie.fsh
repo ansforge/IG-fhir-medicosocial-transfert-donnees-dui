@@ -18,6 +18,8 @@ Description: "Profil de la ressource Goal permettant de représenter le projet d
 
 * subject only Reference(TDDUIPatient or TDDUIPatientINS)
 
+* target.measure.extension contains DataAbsentReason named DataAbsentReason 1..1
+
 Mapping:  ConceptMetier_TDDUIGoalProjetVie
 Source:   TDDUIGoalProjetVie
 Target: "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html"
