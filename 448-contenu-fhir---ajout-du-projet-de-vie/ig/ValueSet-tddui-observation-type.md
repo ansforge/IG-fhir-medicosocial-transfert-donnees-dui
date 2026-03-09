@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-observation-type | *Version*:2.3.0-ballot |
-| Active as of 2026-03-06 | *Computable Name*:TDDUIObservationType |
+| Active as of 2026-03-09 | *Computable Name*:TDDUIObservationType |
 
  
 ValueSet pour les types d'Observation. 
@@ -56,7 +56,7 @@ ValueSet pour les types d'Observation.
   "title" : "TDDUI Observation Type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-06T12:21:15+00:00",
+  "date" : "2026-03-09T10:11:56+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

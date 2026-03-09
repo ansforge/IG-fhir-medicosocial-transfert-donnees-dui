@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-report | *Version*:2.3.0-ballot |
-| Active as of 2026-03-06 | *Computable Name*:TDDUIEventReport |
+| Active as of 2026-03-09 | *Computable Name*:TDDUIEventReport |
 
 Zone de texte liée à l’événement pour compte rendu des actions réalisées.
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-event-report.c
   "name" : "TDDUIEventReport",
   "title" : "TDDUI Event Report",
   "status" : "active",
-  "date" : "2026-03-06T12:21:15+00:00",
+  "date" : "2026-03-09T10:11:56+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

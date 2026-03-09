@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui | *Version*:2.3.0-ballot |
-| Active as of 2026-03-06 | *Computable Name*:TDDUI |
+| Active as of 2026-03-09 | *Computable Name*:TDDUI |
 
  **Brief description of this Implementation Guide**
  The Digital User File (DUI) centralizes all information concerning the person being cared for in social and medico-social facilities and services. The aim of this implementation guide is to define the specifications for DUI data transfer. 
@@ -147,7 +147,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2026-03-06T12:21:15+00:00",
+  "date" : "2026-03-09T10:11:56+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -1326,6 +1326,18 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
       "name" : "TDDUI Goal Projet Vie",
       "description" : "Profil de la ressource Goal permettant de représenter le projet de vie de l'usager.",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Goal"
+      }],
+      "reference" : {
+        "reference" : "Goal/tddui-goal-projet-vie-example"
+      },
+      "name" : "TDDUI Goal ProjetVie Example",
+      "description" : "Exemple du projet de vie d'un usager.",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-projet-vie"
     },
     {
       "extension" : [{

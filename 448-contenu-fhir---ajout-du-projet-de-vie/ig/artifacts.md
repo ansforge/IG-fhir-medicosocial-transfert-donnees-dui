@@ -168,6 +168,7 @@ These are example instances that show what data produced and consumed by systems
 | [TDDUI Encounter Evenement Example](Encounter-tddui-encounter-evenement-example.md) | Exemple d'un évènement |
 | [TDDUI Encounter Sejour Example](Encounter-tddui-encounter-sejour-example.md) | Exemple d'un séjour en ESSMS |
 | [TDDUI Event Location Example](Location-tddui-event-location-example.md) | Lieu de l'évènement |
+| [TDDUI Goal ProjetVie Example](Goal-tddui-goal-projet-vie-example.md) | Exemple du projet de vie d'un usager. |
 | [TDDUI Observation Cause Mortalite Example](Observation-tddui-observation-cause-mortalite-example.md) | Exemple de la ressource TDDUIObservationMortalite |
 | [TDDUI Observation Mobilite Usager Example](Observation-tddui-observation-mobilite-usager-example.md) | Exemple de la ressource TDDUIObservationMobiliteUsager |
 | [TDDUI Observation PeriodeScolaire Example](Observation-tddui-observation-periodescolaire-example.md) | Exemple de la ressource TDDUIObservationPeriodeScolaire |

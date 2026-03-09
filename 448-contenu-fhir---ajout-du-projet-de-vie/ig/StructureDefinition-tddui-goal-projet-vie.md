@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-projet-vie | *Version*:2.3.0-ballot |
-| Active as of 2026-03-06 | *Computable Name*:TDDUIGoalProjetVie |
+| Active as of 2026-03-09 | *Computable Name*:TDDUIGoalProjetVie |
 
  
 Profil de la ressource Goal permettant de représenter le projet de vie de l'usager. 
 
 **Utilisations:**
 
-* Ce Profil n'est utilisé par aucun autre profil dans ce guide d'implémentation
+* Exemples pour ce/t/te Profil: [Goal/tddui-goal-projet-vie-example](Goal-tddui-goal-projet-vie-example.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-goal-projet-vie)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-projet-vi
   "name" : "TDDUIGoalProjetVie",
   "title" : "TDDUI Goal Projet Vie",
   "status" : "active",
-  "date" : "2026-03-06T12:21:15+00:00",
+  "date" : "2026-03-09T10:11:56+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
