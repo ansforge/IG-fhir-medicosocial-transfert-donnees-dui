@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
   "name" : "TDDUIBundle",
   "title" : "TDDUI Bundle",
   "status" : "active",
-  "date" : "2026-03-09T10:11:56+00:00",
+  "date" : "2026-03-09T10:54:50+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -751,6 +751,33 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
     },
     {
       "id" : "Bundle.entry:DUIObservationMobiliteUsager.request.method",
+      "path" : "Bundle.entry.request.method",
+      "patternCode" : "POST"
+    },
+    {
+      "id" : "Bundle.entry:DUIGoalProjetVie",
+      "path" : "Bundle.entry",
+      "sliceName" : "DUIGoalProjetVie",
+      "short" : "Goal conforming to the TDDUIGoalProjetVie profile, used to convey the life project.",
+      "min" : 0,
+      "max" : "*"
+    },
+    {
+      "id" : "Bundle.entry:DUIGoalProjetVie.resource",
+      "path" : "Bundle.entry.resource",
+      "min" : 1,
+      "type" : [{
+        "code" : "Goal",
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-projet-vie"]
+      }]
+    },
+    {
+      "id" : "Bundle.entry:DUIGoalProjetVie.request",
+      "path" : "Bundle.entry.request",
+      "min" : 1
+    },
+    {
+      "id" : "Bundle.entry:DUIGoalProjetVie.request.method",
       "path" : "Bundle.entry.request.method",
       "patternCode" : "POST"
     }]

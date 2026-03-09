@@ -120,6 +120,19 @@
          fhir:l fhir:TDDUITaskTransportUsager
        ]
      ]
+  ] [
+     fhir:fullUrl [
+       fhir:v "https://test-server.fr/Goal/tddui-goal-projet-vie-example"^^xsd:anyURI ;
+       fhir:l <https://test-server.fr/Goal/tddui-goal-projet-vie-example>
+     ] ;
+     fhir:resource ( <https://test-server.fr/Goal/tddui-goal-projet-vie-example> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "POST" ] ;
+       fhir:url [
+         fhir:v "TDDUIGoalProjetVie"^^xsd:anyURI ;
+         fhir:l fhir:TDDUIGoalProjetVie
+       ]
+     ]
   ] ) . # 
 
 <https://test-server.fr/Patient/tddui-patient-ins-example> a fhir:Patient ;
@@ -1026,6 +1039,60 @@
          fhir:code [ fhir:v "3.2.4" ] ;
          fhir:display [ fhir:v "Transports liés au projet individuel" ]
        ] )
+     ]
+  ] ) . # 
+
+<https://test-server.fr/Goal/tddui-goal-projet-vie-example> a fhir:Goal ;
+  fhir:id [ fhir:v "tddui-goal-projet-vie-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-projet-vie"^^xsd:anyURI ;
+       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-projet-vie>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Goal_tddui-goal-projet-vie-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : But tddui-goal-projet-vie-example</b></p><a name=\"tddui-goal-projet-vie-example\"> </a><a name=\"hctddui-goal-projet-vie-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-goal-projet-vie.html\">TDDUI Goal Projet Vie</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-projetvie.esante.gouv.fr</code>/3480787529/123456789-PDV-1234</p><p><b>lifecycleStatus</b>: Active</p><p><b>description</b>: <span title=\"Codes :\">Projet de vie de Mr. Dupont</span></p><p><b>subject</b>: <a href=\"Patient-tddui-patient-ins-example.html\">DUPONT  Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/194704032)</a></p><p><b>start</b>: 2024-01-01</p><h3>Targets</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Measure</b></td><td><b>Detail[x]</b></td><td><b>Due[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes :\"></span></td><td>Permettre à Monsieur Dupont de maintenir sa vie à domicile le plus longtemps possible.</td><td>2025-01-01</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "https://identifiant-medicosocial-projetvie.esante.gouv.fr"^^xsd:anyURI ;
+       fhir:l <https://identifiant-medicosocial-projetvie.esante.gouv.fr>
+     ] ;
+     fhir:value [ fhir:v "3480787529/123456789-PDV-1234" ]
+  ] ) ; # 
+  fhir:lifecycleStatus [ fhir:v "active"] ; # 
+  fhir:description [
+     fhir:text [ fhir:v "Projet de vie de Mr. Dupont" ]
+  ] ; # 
+  fhir:subject [
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-patient-ins-example> ;
+     fhir:reference [ fhir:v "Patient/tddui-patient-ins-example" ]
+  ] ; # 
+  fhir:start [
+     a fhir:Date ;
+     fhir:v "2024-01-01"^^xsd:date
+  ] ; # 
+  fhir:target ( [
+     fhir:measure [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/data-absent-reason"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/data-absent-reason>
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "not-permitted"
+         ]
+       ] )
+     ] ;
+     fhir:detail [
+       a fhir:String ;
+       fhir:v "Permettre à Monsieur Dupont de maintenir sa vie à domicile le plus longtemps possible."
+     ] ;
+     fhir:due [
+       a fhir:Date ;
+       fhir:v "2025-01-01"^^xsd:date
      ]
   ] ) . # 
 

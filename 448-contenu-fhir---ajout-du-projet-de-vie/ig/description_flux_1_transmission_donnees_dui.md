@@ -49,6 +49,7 @@ Les différentes ressources sont véhiculées via l'élément : Bundle.entry. Le
 * [TDDUIObservationCauseMortalite](StructureDefinition-tddui-observation-cause-mortalite.md) représentant les causes de mortalité.
 * [TDDUIObservationMobiliteUsager](StructureDefinition-tddui-observation-mobilite-usager.md) représentant la mobilité de l'usager.
 * [TDDUIObservationPeriodeScolaire](StructureDefinition-tddui-observation-periode-scolaire.md) représentant la période scolaire de l'usager.
+* [TDDUIGoalProjetVie](StructureDefinition-tddui-goal-projet-vie.md) représentant le projet de vie de l'usager.
 
 Pour toutes ces ressources, seule la création est possible via l'intéraction FHIR [Create](https://hl7.org/fhir/R4/http.html#create).
 

@@ -1091,6 +1091,54 @@
         "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.method">method</a>" : "POST",
         "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.url">url</a>" : "TDDUITaskTransportUsager"
       }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "https://test-server.fr/Goal/tddui-goal-projet-vie-example",
+      "<a href="http://hl7.org/fhir/R4/goal.html#Goal">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/goal.html">resourceType</a>" : "Goal",
+        "<a href="http://hl7.org/fhir/R4/resource.html#Goal.id">id</a>" : "tddui-goal-projet-vie-example",
+        "<a href="http://hl7.org/fhir/R4/resource.html#Goal.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-tddui-goal-projet-vie.html" style="color: Maroon">&#x1F517;</a> "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-projet-vie"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/domainresource.html#Goal.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Goal_tddui-goal-projet-vie-example\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : But tddui-goal-projet-vie-example&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;tddui-goal-projet-vie-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hctddui-goal-projet-vie-example\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profil: &lt;a href=\&quot;StructureDefinition-tddui-goal-projet-vie.html\&quot;&gt;TDDUI Goal Projet Vie&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;https://identifiant-medicosocial-projetvie.esante.gouv.fr&lt;/code&gt;/3480787529/123456789-PDV-1234&lt;/p&gt;&lt;p&gt;&lt;b&gt;lifecycleStatus&lt;/b&gt;: Active&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: &lt;span title=\&quot;Codes :\&quot;&gt;Projet de vie de Mr. Dupont&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-tddui-patient-ins-example.html\&quot;&gt;DUPONT  Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/194704032)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;start&lt;/b&gt;: 2024-01-01&lt;/p&gt;&lt;h3&gt;Targets&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Measure&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Detail[x]&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Due[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes :\&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Permettre à Monsieur Dupont de maintenir sa vie à domicile le plus longtemps possible.&lt;/td&gt;&lt;td&gt;2025-01-01&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/goal.html#Goal.identifier">identifier</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "https://identifiant-medicosocial-projetvie.esante.gouv.fr",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "3480787529/123456789-PDV-1234"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/goal.html#Goal.lifecycleStatus">lifecycleStatus</a>" : "active",
+        "<a href="http://hl7.org/fhir/R4/goal.html#Goal.description">description</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Projet de vie de Mr. Dupont"
+        },
+        "<a href="http://hl7.org/fhir/R4/goal.html#Goal.subject">subject</a>" : {
+          <a href="Patient-tddui-patient-ins-example.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/tddui-patient-ins-example"
+        },
+        "<a href="http://hl7.org/fhir/R4/goal.html#Goal.start_x_">startDate</a>" : "2024-01-01",
+        "<a href="http://hl7.org/fhir/R4/goal.html#Goal.target">target</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/goal.html#Goal.target.measure">measure</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#CodeableConcept.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCode</a>" : "not-permitted"
+                }
+              ]
+            },
+            "<a href="http://hl7.org/fhir/R4/goal.html#Goal.target.detail_x_">detailString</a>" : "Permettre à Monsieur Dupont de maintenir sa vie à domicile le plus longtemps possible.",
+            "<a href="http://hl7.org/fhir/R4/goal.html#Goal.target.due_x_">dueDate</a>" : "2025-01-01"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request">request</a>" : {
+        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.method">method</a>" : "POST",
+        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.url">url</a>" : "TDDUIGoalProjetVie"
+      }
     }
   ]
 }</code></pre>
@@ -1139,7 +1187,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.3.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 9, 2026 10:11+0000">2026-03-09</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.3.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 9, 2026 10:54+0000">2026-03-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
