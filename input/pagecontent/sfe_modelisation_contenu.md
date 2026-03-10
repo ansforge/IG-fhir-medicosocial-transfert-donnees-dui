@@ -2243,6 +2243,10 @@ La classe PresenceAbsence indique si l'usager est présent ou absent.
     <th>Description</th>
   </tr>
   <tr>
+    <td>idPresenceAbsenceUsager : [1..1] Identifiant</td>
+    <td>Identifiant technique de présence/absence obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de deux caractères "PA" et du numéro de présence/absence dans le DUI (numPresenceAbsenceUsager) :<br> idPresenceAbsenceUsager = 3+FINESS/identifiantLocalUsagerESSMS-PA-numPresenceAbsenceUsager</td>
+  </tr>
+  <tr>
     <td>typePresenceAbsence : [1..1] Code</td>
     <td>Type de déclaration : Présence ou Absence.<br>
     Jeu(x) de valeur(s) associé(s) : Analyse en cours NOS</td>
