@@ -51,7 +51,7 @@ L'export du Projet personnalisé est composé des éléments métiers suivants :
 * les Prestations mises en place dans le cadre du Projet personnalisé
 * les Bilans réalisés dans le cadre du Projet personnalisé
 
-Dans ce cas d'usage les blocs suivants sont enrichis : "Administratif, Coordination des acteurs et Accompagnement". Ils entrent dans la définition des moyens, ressources et de l'accompagnement mis en oeuvre pour l'usager en adéquation avec les besoins SERAFIN répertoriés en autre dans le Projet personnalisé.
+Dans ce cas d'usage les blocs suivants évolus : "Administratif, Coordination des acteurs et Accompagnement". Ils entrent dans la définition des moyens, ressources et de l'accompagnement mis en oeuvre pour l'usager en adéquation avec les besoins SERAFIN répertoriés en autre dans le Projet personnalisé.
  Les objets métiers suivants sont enrichis ou créés :
 
 * la Mobilité de l'usager, son permis de conduire et son Séjour (bloc Administratif)
@@ -60,7 +60,7 @@ Dans ce cas d'usage les blocs suivants sont enrichis : "Administratif, Coordinat
 
 >  Les types d'évaluations de la déficience selon la classification CIM11, FINESS et de la déficience selon le tableau de la performance ANAP font partie d'un travail d'alignement avec la CIM11. Ces travaux sont menés par le CGTS à l'ANS. En fonction de l'avancé de ces travaux ces nouveaux types d'évaluations feront partie de futurs lots. 
 
-Dans ce cas d'usage, les objets métiers suivants sont enrichis ou créés :
+Dans ce cas d'usage, les objets métiers suivants sont aussi enrichis ou créés :
 
 * La demande d'orientation adressée par la CDAPH
 * La Décision d'orientation prise par la CDAPH
@@ -70,4 +70,34 @@ Dans ce cas d'usage, les objets métiers suivants sont enrichis ou créés :
 * La quantification de la prise en charge
 * Le projet de vie
 * Présence, absence de l'usager
+
+Une illustration par des cas nominaux est donnée ci-dessous pour les droits sociaux de santé ainsi que pour les présences/absences.
+
+_Droits sociaux et de santé d’un usager_
+
+Monsieur Jean Dupont, né le 03 avril 1987, âgé de 38 ans, de rang de naissance 2, est accompagné au sein de la Maison d’Accueil Spécialisée (MAS) Les Chênes Verts, établissement identifié par le FINESS juridique 480787529. Il est identifié dans les systèmes nationaux par son Numéro d’Inscription au Répertoire (NIR) « 1477204253674A » et dispose, au sein de l’établissement, d’un dossier usager informatisé sous le numéro 1012.
+
+Après l’évaluation de la situation de Monsieur Dupont, la CDPAH décide d’ouvrir les droits sociaux et de santé. Cette décision est enregistrée dans le Dossier Usager Informatisé avec l’identifiant DP-1012-0001 (idDroitPrestation). Le suivi administratif est assuré par la MDPH du département : contact@mdph-departement.fr (contactOrganisme) et le droit est rattaché au numéro de l’allocataire 784512973 (numeroAllocataire). Le droit correspond à des droits liés à un accompagnement en MAS (typeDroitPrestation). Il s’agit d’un droit ouvrant l’accès à une prestation médico-sociale avec accompagnement global et compensation (natureDroit).
+
+Le droit débute le 1er mars 2026 (dateOuverture), date de la décision de la CDAPH et prend fin le 28 février 2028. La décision est associée à un Plan d’Accompagnement Global validé (existencePAG=1), permettant une coordination entre les professionnels.
+
+Le droit ne relève pas du dispositif Creton (creton=0) l’orientation vers un établissement pour adultes étant effective. Monsieur Dupont bénéficie d’une compensation fixée à 100% (taux) celle-ci correspondant à une prise en charge médico-sociale complète incluant hébergement, soins et accompagnement au quotidien (typeCompensation).
+
+Un commentaire précise que l’orientation en MAS est adaptée aux besoins de soins constants de Monsieur Dupont faisant suite aux conclusions de l’évaluations (commentaire).
+
+_Présence et absence d’un usager_
+
+Monsieur Dupont, identifié par son Numéro d’Inscription au Répertoire (NIR) « 1477204253674A », et demeurant au 12 rue des Lilas à Vittefleur, code postal 76748, fait l’objet d’un suivi de présence et d’absence dans le cadre de son accueil au sein de la maison accueil spécialisée (MAS) Les Chênes Verts, dont le numéro FINESS juridique est « 480787529 ». Ce suivi est réalisé par les professionnels de l’établissement et est intégré au logiciel de Dossier Usager Informatisé (DUI), sous le numéro de dossier 1012.
+
+* Scénario 1 - Présence complète sur la journée
+
+Le 17 avril 2025, Monsieur Dupont est présent au sein de l’établissement sur l’ensemble de la journée, de 8h00 à 17h30 (dateDebutPresenceAbsence / dateFinPresenceAbsence). Cette situation correspond à une présence (typePresenceAbsence), enregistrée sous l’identifiant 3480787529/1012-PA-0001(idPresenceAbsenceUsager). Au cours de cette journée, Monsieur Dupont prend son petit-déjeuner (typeRepas) à 8h30 (dateRepas). Sa présence au repas est confirmée (usagerPresent = 1) et l’enregistrement est identifié par 3480787529/1012-Repas-0001 (idRepas). Il prend ensuite son déjeuner (typeRepas) à 12h00 (dateRepas), avec une présence confirmée (usagerPresent = 1), il est enregistré sous l’identifiant 3480787529/1012-Repas-0002 (idRepas). Monsieur Dupont est donc présent sur la journée entière (P/P) ; la journée est facturée (statut) et comptabilisée pour les repas et la sécurité.
+
+* Scénario 2 - Hospitalisation partielle
+
+Le 20 avril 2025, Monsieur Dupont est présent au sein de la MAS durant la matinée, de 8h00 à 12h00 (dateDebutPresenceAbsence / dateFinPresenceAbsence). Cette période est enregistrée comme une présence (typePresenceAbsence), sous l’identifiant 3480787529/1012-PA-0002 (idPresenceAbsenceUsager). À partir de 13h30 et jusqu’à 17h30 (dateDebutPresenceAbsence / dateFinPresenceAbsence), Monsieur Dupont est hospitalisé. Cette période est enregistrée comme une absence (typePresenceAbsence), sous l’identifiant 3480787529/1012-PA-0003 (idPresenceAbsenceUsager), avec pour motif une hospitalisation (motifAbsence). L’absence n’ayant pas été anticipée, elle est indiquée comme non prévue (absencePrevue = 0). Concernant les repas, Monsieur Dupont prend son déjeuner (typeRepas) à 12h00 (dateRepas). Sa présence est confirmée (usagerPresent = 1) et il est enregistré sous l’identifiant 3480787529/1012-Repas-0003 (idRepas). En revanche, le goûter (typeRepas) prévu à 16h00 (dateRepas), n’est pas pris en raison de l’hospitalisation. L’usager est donc indiqué comme absent au repas (usagerPresent = 0), et cet enregistrement est identifié par 3480787529/1012-Repas-0004 (idRepas). Monsieur Dupont est présent le matin (P) puis hospitalisé l’après-midi (H) ; la demi-journée d’hospitalisation n’est pas facturée (statut) et n’est pas prise en compte pour les repas.
+
+* Scénario 3 - Absence autorisée sur la journée
+
+Le 25 avril 2025, Monsieur Dupont est absent de l’établissement sur l’ensemble de la journée, de 8h00 à 17h30 (dateDebutPresenceAbsence/dateFinPresenceAbsence). Cette situation correspond à une absence (typePresenceAbsence) pour sortie autorisée (motifAbsence). L’absence ayant été planifiée à l’avance, elle est déclarée comme prévue (absencePrevue = 1). La déclaration est enregistrée et validée dans le DUI sous l’identifiant 3480787529/1012-PA-0004 (idPresenceAbsenceUsager). Les repas prévus sur la journée sont néanmoins tracés. Le déjeuner (typeRepas) prévu à 12h00 (dateRepas), n’est pas pris ; l’usager est donc indiqué comme absent au repas (usagerPresent = 0). Ce repas est enregistré sous l’identifiant 3480787529/1012-Repas-0005 (idRepas). Le goûter (typeRepas) prévu à 16h00 (dateRepas), n’est pas pris non plus (usagerPresent = 0). Cet enregistrement est identifié par 3480787529/1012-Repas-0006 (idRepas). Monsieur Dupont est absent sur la journée pour sortie autorisée (A/A) ; la journée reste facturée (statut) mais l’usager n’est pas comptabilisé pour les repas ni présent dans les relevés de sécurité.
 

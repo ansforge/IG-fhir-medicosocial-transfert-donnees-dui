@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport | *Version*:2.2.0-ballot |
-| Active as of 2026-03-02 | *Computable Name*:TDDUITaskTransport |
+| Active as of 2026-03-10 | *Computable Name*:TDDUITaskTransport |
 
  
 Profil de la ressource Task permettant de représenter le transport. 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
   "name" : "TDDUITaskTransport",
   "title" : "TDDUI Task Transport",
   "status" : "active",
-  "date" : "2026-03-02T14:14:24+00:00",
+  "date" : "2026-03-10T12:57:18+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -120,7 +120,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
       "path" : "Task.code",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis|20250624152101"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis|20260220142105"
       },
       "mapping" : [{
         "identity" : "specmetier-to-TDDUITaskTransport",
@@ -224,7 +224,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
       }],
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-motorisation-cisis|20250624152100"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-motorisation-cisis|20260220142104"
       }
     },
     {

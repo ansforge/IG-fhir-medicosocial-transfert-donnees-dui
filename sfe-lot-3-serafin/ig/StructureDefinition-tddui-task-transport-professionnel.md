@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel | *Version*:2.2.0-ballot |
-| Active as of 2026-03-02 | *Computable Name*:TDDUITaskTransportProfessionnel |
+| Active as of 2026-03-10 | *Computable Name*:TDDUITaskTransportProfessionnel |
 
  
 Profil de la ressource TDDUITaskTransport permettant de représenter le transport du professionnel. 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-transport
   "name" : "TDDUITaskTransportProfessionnel",
   "title" : "TDDUI Task Transport Professionnel",
   "status" : "active",
-  "date" : "2026-03-02T14:14:24+00:00",
+  "date" : "2026-03-10T12:57:18+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

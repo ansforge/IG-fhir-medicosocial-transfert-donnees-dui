@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used | *Version*:2.2.0-ballot |
-| Active as of 2026-03-02 | *Computable Name*:TDDUIRessourcesUsed |
+| Active as of 2026-03-10 | *Computable Name*:TDDUIRessourcesUsed |
 
 Ressources utilisées lors de l’évènement (ex : chambre, matériel médical, véhicule).
 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-ressources-use
   "name" : "TDDUIRessourcesUsed",
   "title" : "Ressources utilisées",
   "status" : "active",
-  "date" : "2026-03-02T14:14:24+00:00",
+  "date" : "2026-03-10T12:57:18+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -114,7 +114,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-ressources-use
       }],
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-ressource-utilisee-cisis|20250624152100"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-ressource-utilisee-cisis|20260220142104"
       }
     },
     {
@@ -143,7 +143,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-ressources-use
       }],
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-detail-materiel-specialise-cisis|20250624152100"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-detail-materiel-specialise-cisis|20260220142104"
       }
     },
     {
@@ -172,7 +172,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-ressources-use
       }],
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-detail-ressource-immobiliere-utilisee-cisis|20250624152100"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-detail-ressource-immobiliere-utilisee-cisis|20260220142104"
       }
     },
     {

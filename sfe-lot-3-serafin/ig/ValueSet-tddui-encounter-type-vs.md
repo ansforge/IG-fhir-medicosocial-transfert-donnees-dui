@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-type-vs | *Version*:2.2.0-ballot |
-| Active as of 2026-03-02 | *Computable Name*:TDDUIEncounterTypeVs |
+| Active as of 2026-03-10 | *Computable Name*:TDDUIEncounterTypeVs |
 
  
 ValueSet for TDDUI Encounter's types 
@@ -54,7 +54,7 @@ ValueSet for TDDUI Encounter's types
   "title" : "TDDUI Encounter Type ValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-02T14:14:24+00:00",
+  "date" : "2026-03-10T12:57:18+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -79,7 +79,7 @@ ValueSet for TDDUI Encounter's types
       "valueSet" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-serafin-valueset"]
     },
     {
-      "valueSet" : ["https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-evenement-ssiad-cisis|20250624152100"]
+      "valueSet" : ["https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-evenement-ssiad-cisis|20260220142104"]
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
