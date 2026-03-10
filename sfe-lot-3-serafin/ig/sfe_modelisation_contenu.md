@@ -1039,6 +1039,8 @@ L'identifiant technique du transport est obtenu dans ce contexte par par la conc
 
 La classe PresenceAbsence indique si l'usager est présent ou absent.
 
+* Nom: idPresenceAbsenceUsager : [1..1] Identifiant
+  * Description: Identifiant technique de présence/absence obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature[TRE_G08-TypeIdentifiantPersonne](https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne)), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de deux caractères "PA" et du numéro de présence/absence dans le DUI (numPresenceAbsenceUsager) :idPresenceAbsenceUsager = 3+FINESS/identifiantLocalUsagerESSMS-PA-numPresenceAbsenceUsager
 * Nom: typePresenceAbsence : [1..1] Code
   * Description: Type de déclaration : Présence ou Absence.Jeu(x) de valeur(s) associé(s) : Analyse en cours NOS
 * Nom: dateDebutPresenceAbsence : [1..1] DateHeure
