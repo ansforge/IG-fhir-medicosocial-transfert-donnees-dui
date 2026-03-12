@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-exercise-mode.
   "name" : "TDDUIExerciseMode",
   "title" : "TDDUI Exercise Mode",
   "status" : "active",
-  "date" : "2026-03-12T10:41:45+00:00",
+  "date" : "2026-03-12T13:09:15+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
