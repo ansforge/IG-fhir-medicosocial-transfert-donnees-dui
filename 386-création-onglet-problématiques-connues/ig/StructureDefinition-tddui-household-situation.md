@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-household-situ
   "name" : "TDDUIHouseholdSituation",
   "title" : "TDDUI Household Situation",
   "status" : "active",
-  "date" : "2026-03-12T08:40:42+00:00",
+  "date" : "2026-03-12T10:41:45+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
