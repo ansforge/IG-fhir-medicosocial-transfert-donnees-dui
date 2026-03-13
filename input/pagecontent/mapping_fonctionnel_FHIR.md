@@ -11,6 +11,10 @@ Ce mapping représente les données fonctionnelles trouvant leur équivalence da
 
 <div>{%include mapping_TDDUIServiceRequestDemandeOrientation.svg%}</div>
 
+### Mapping DroitPrestation
+
+<div>{%include mapping_TDDUIBasicDroitDecision.svg%}</div>
+
 ### Mapping PeriodeScolaire
 
 <div>{%include mapping_TDDUIObservationPeriodeScolaire.svg%}</div>

@@ -1,6 +1,6 @@
 Profile: TDDUIServiceRequestDemandeOrientation
 Parent: ServiceRequest
-Id: tddui-service-demande-orientation
+Id: tddui-service-request-demande-orientation
 Title: "TDDUI ServiceRequest DemandeOrientation"
 Description: "Profil de la ressource ServiceRequest permettant de représenter la demande d'orientation adressée à la CDAPH." 
 

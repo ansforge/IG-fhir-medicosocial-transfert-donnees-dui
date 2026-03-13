@@ -1,0 +1,39 @@
+@startuml
+
+object "**TDDUIPatient/TDDUIPatient**" as TDDUIPatient_subject #fdb462 {
+    Usager
+}
+
+map "**DroitDecision : TDDUIBasicDroitDecision**" as DroitDecision #8dd3c7 {
+    Decision => <&plus> TDDUIDroitDecision.extension:decision
+    Decision.dateEffetCloture => <&plus> TDDUIDroitDecision.extension:decision.extension:dateEffetCloture
+    Decision.dateDecision => <&plus> TDDUIDroitDecision.extension:decision.extension:dateDecision
+    Decision.motivationLocale => <&plus> TDDUIDroitDecision.extension:decision.extension:motivationLocale
+    Decision.commentaire => <&plus> TDDUIDroitDecision.extension:decision.extension:commentaire
+    DroitPrestation => <&plus> TDDUIDroitDecision.extension:decision.extension:droitPrestation
+    DroitPrestation.dateOuverture => <&plus> TDDUIDroitDecision.extension:decision.extension:droitPrestation.extension:dateOuverture
+    DroitPrestation.dateEcheance => <&plus> TDDUIDroitDecision.extension:decision.extension:droitPrestation.extension:dateEcheance
+    DroitPrestation.existencePAG => <&plus> TDDUIDroitDecision.extension:decision.extension:droitPrestation.extension:existencePAG
+    DroitPrestation.creton => <&plus> TDDUIDroitDecision.extension:decision.extension:droitPrestation.extension:creton
+    DroitPrestation.taux => <&plus> TDDUIDroitDecision.extension:decision.extension:droitPrestation.extension:taux
+    DroitPrestation.commentaire => <&plus> TDDUIDroitDecision.extension:decision.extension:droitPrestation.extension:commentaire
+    DetailPrestation => <&plus> TDDUIDroitDecision.extension:decision.extension:droitPrestation.extension:detailPrestation
+    DetailPrestation.accueilSequentiel => <&plus> TDDUIDroitDecision.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:accueilSequentiel
+    DetailPrestation.formation => <&plus> TDDUIDroitDecision.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:formation
+    DetailPrestation.montantAttribue => <&plus> TDDUIDroitDecision.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:montantAttribue
+    DetailPrestation.frequence => <&plus> TDDUIDroitDecision.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:frequence
+    DetailPrestation.StructureAccueil => <&plus> TDDUIDroitDecision.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:structureAccueil
+    PriseCharge => <&plus> TDDUIDroitDecision.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:priseCharge
+    Quantification => <&plus> TDDUIDroitDecision.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:priseCharge.extension:quantification
+    Quantification.valeurPriseCharge => <&plus> TDDUIDroitDecision.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:priseCharge.extension:quantification.extension:valeurPriseCharge
+    Quantification.UnitePriseCharge => <&plus> TDDUIDroitDecision.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:priseCharge.extension:quantification.extension:unitePriseCharge
+    Decision.idDecision => <&layers> identifier:idDecision
+    Decision.numeroEnregistrement => <&layers> identifier:numeroEnregistrement
+    Decision.idDecisionMAJ => <&layers> identifier:idDecisionMAJ
+    Decision.idNat_Decision => <&layers> identifier:idNat_Decision
+    DroitPrestation.numeroAllocataire => <&layers> identifier:numeroAllocataire
+}
+
+DroitDecision -u-> TDDUIPatient_subject : subject
+
+@enduml

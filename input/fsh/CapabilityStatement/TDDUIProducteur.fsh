@@ -85,5 +85,9 @@ Usage: #definition
 * rest.resource[=].supportedProfile[+] = Canonical(tddui-observation-mobilite-usager)
 * rest.resource[=].interaction[0].code = #create
 
+* rest.resource[14].type = #Basic
+* rest.resource[=].supportedProfile = Canonical(tddui-basic-droit-decision)
+* rest.resource[=].interaction[0].code = #create
+
 * rest.interaction[0].code = #transaction
 * rest.interaction[=].documentation = "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle"
