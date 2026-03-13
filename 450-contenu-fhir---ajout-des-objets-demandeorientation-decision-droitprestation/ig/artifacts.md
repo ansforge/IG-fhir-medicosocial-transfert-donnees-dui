@@ -33,6 +33,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 
 | | |
 | :--- | :--- |
+| [TDDUI Basic Droit Decision](StructureDefinition-tddui-basic-droit-decision.md) | Profil de la ressource Basic permettant de représenter la décision de la CDAPH ainsi que les droits associés. |
 | [TDDUI Bundle](StructureDefinition-tddui-bundle.md) | Profil générique créé pour transmettre des données d'un logiciel DUI. |
 | [TDDUI CarePlan Projet Personalise](StructureDefinition-tddui-careplan-projet-personnalise.md) | Profil de la ressource CarePlan représentant le projet personnalisé d'un usager. |
 | [TDDUI Consent Accord](StructureDefinition-tddui-consent-accord.md) | Profil de la ressource Consent permettant de représenter l'accord de l'usager, de son entourage ou de la structure. |
@@ -52,7 +53,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md) | Profil de la ressource QuestionnaireResponse utilisé pour transmettre les réponses aux questionnaires dans le cadre des évaluations. |
 | [TDDUI RelatedPerson Contact](StructureDefinition-tddui-related-person-contact.md) | Profil de la ressource FRCoreRelatedPersonProfile permettant de représenter un contact de l'usager. |
 | [TDDUI ServiceRequest Besoin](StructureDefinition-tddui-service-request-besoin.md) | Profil de la ressource ServiceRequest permettant de représenter les besoins de l'usager. |
-| [TDDUI ServiceRequest DemandeOrientation](StructureDefinition-tddui-service-demande-orientation.md) | Profil de la ressource ServiceRequest permettant de représenter la demande d'orientation adressée à la CDAPH. |
+| [TDDUI ServiceRequest DemandeOrientation](StructureDefinition-tddui-service-request-demande-orientation.md) | Profil de la ressource ServiceRequest permettant de représenter la demande d'orientation adressée à la CDAPH. |
 | [TDDUI Task Action](StructureDefinition-tddui-task-action.md) | Profil de la ressource Task permettant de représenter les actions réalisées dans le cadre du projet personnalisé. |
 | [TDDUI Task Bilan](StructureDefinition-tddui-task-bilan.md) | Profil de la ressource Task permettant de représenter le bilan du projet personnalisé. |
 | [TDDUI Task MoyenRessource](StructureDefinition-tddui-task-moyen-ressource.md) | Profil de la ressource Task permettant de représenter les moyens ou ressources utilisées dans le cadre du projet personnalisé. |
@@ -91,6 +92,7 @@ These define constraints on FHIR data types for systems conforming to this imple
 * **Champ évalué** : commentaire spécifique à un item ou sous-item évalué.
  |
 | [TDDUI Discriminator](StructureDefinition-tddui-discriminator.md) | Extension pour discriminer les éléments CarePlan.supportingInfo et Goal.note. |
+| [TDDUI Droit Decision](StructureDefinition-tddui-droit-decision.md) | Extension complexe représentant la décision et les droits associés |
 | [TDDUI Entry Date Origin](StructureDefinition-tddui-entry-date-origin.md) | Extension permettant de véhiculer la date d'entrée dans l'ESSMS de provenance. |
 | [TDDUI Entry Mode label](StructureDefinition-tddui-entry-mode-label.md) | Libellé du mode d’entée du séjour. |
 | [TDDUI Evaluation Ref](StructureDefinition-tddui-evaluation-reference.md) | Liens vers l'évaluation, utilisables dans le profil TDDUIGoalObjectif. |
@@ -118,6 +120,7 @@ These define sets of codes used by systems conforming to this implementation gui
 
 | | |
 | :--- | :--- |
+| [TDDUI Basic Type](ValueSet-tddui-basic-type.md) | ValueSet pour le code de la ressource Basic. |
 | [TDDUI CIM10](ValueSet-tddui-cim-10.md) | ValueSet incluant les codes de la terminologie CIM-1O. |
 | [TDDUI CarePlan supportingInfo](ValueSet-tddui-care-plan-supporting-info.md) | ValueSet définissant les types de notes pour l'élément CarePlan.supportingInfo. |
 | [TDDUI Contact Protection Juridique](ValueSet-tddui-contact-protection-juridique.md) | ValueSet définissant la protection juridique. |
@@ -147,6 +150,7 @@ These define new code systems used by systems conforming to this implementation 
 
 | | |
 | :--- | :--- |
+| [TDDUI Basic Type](CodeSystem-tddui-basic-type.md) | CodeSystem pour la définition de la ressource Basic |
 | [TDDUI Discriminator](CodeSystem-tddui-discriminator.md) | CodeSystem définissant les codes discriminants. |
 | [TDDUI Encounter Identifier](CodeSystem-tddui-encounter-identifier.md) | CodeSystem pour la définition des codes d'identifiant de séjour |
 | [TDDUI Observation Periode Scolaire](CodeSystem-tddui-observation-periode-scolaire.md) | CodeSystem pour l'Observation de la Période Scolaire. |

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator | *Version*:2.3.0-ballot |
-| Active as of 2026-03-11 | *Computable Name*:TDDUIDiscriminator |
+| Active as of 2026-03-13 | *Computable Name*:TDDUIDiscriminator |
 
 Extension pour discriminer les éléments CarePlan.supportingInfo et Goal.note.
 
@@ -19,7 +19,7 @@ Extension pour discriminer les éléments CarePlan.supportingInfo et Goal.note.
 
 **Utilisations:**
 
-* Utilise ce/t/te Extension: [TDDUI CarePlan Projet Personalise](StructureDefinition-tddui-careplan-projet-personnalise.md), [TDDUI Goal Attente](StructureDefinition-tddui-goal-attente.md), [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md) and [TDDUI ServiceRequest DemandeOrientation](StructureDefinition-tddui-service-demande-orientation.md)
+* Utilise ce/t/te Extension: [TDDUI CarePlan Projet Personalise](StructureDefinition-tddui-careplan-projet-personnalise.md), [TDDUI Goal Attente](StructureDefinition-tddui-goal-attente.md), [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md) and [TDDUI ServiceRequest DemandeOrientation](StructureDefinition-tddui-service-request-demande-orientation.md)
 * Exemples pour ce/t/te Extension: [Bundle/tddui-pp-ime-bundle-example](Bundle-tddui-pp-ime-bundle-example.md), [Bundle/tddui-pp-pa-bundle-example](Bundle-tddui-pp-pa-bundle-example.md), [CarePlan/tddui-pp-ime-careplan-example](CarePlan-tddui-pp-ime-careplan-example.md), [CarePlan/tddui-pp-pa-careplan-example](CarePlan-tddui-pp-pa-careplan-example.md)... Show 7 more, [Goal/tddui-pp-ime-goal-objectif-1-example](Goal-tddui-pp-ime-goal-objectif-1-example.md), [Goal/tddui-pp-ime-goal-objectif-2-example](Goal-tddui-pp-ime-goal-objectif-2-example.md), [Goal/tddui-pp-pa-goal-attente-famille-example](Goal-tddui-pp-pa-goal-attente-famille-example.md), [Goal/tddui-pp-pa-goal-attente-usager-example](Goal-tddui-pp-pa-goal-attente-usager-example.md), [Goal/tddui-pp-pa-goal-objectif-1-example](Goal-tddui-pp-pa-goal-objectif-1-example.md), [Goal/tddui-pp-pa-goal-objectif-2-example](Goal-tddui-pp-pa-goal-objectif-2-example.md) and [Goal/tddui-pp-pa-goal-objectif-3-example](Goal-tddui-pp-pa-goal-objectif-3-example.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-discriminator)
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-discriminator.
   "name" : "TDDUIDiscriminator",
   "title" : "TDDUI Discriminator",
   "status" : "active",
-  "date" : "2026-03-11T16:07:52+00:00",
+  "date" : "2026-03-13T19:21:03+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization | *Version*:2.3.0-ballot |
-| Active as of 2026-03-11 | *Computable Name*:TDDUIOrganization |
+| Active as of 2026-03-13 | *Computable Name*:TDDUIOrganization |
 
  
 Profil de la ressource FRCoreOrganizationProfile permettant de représenter les entités juridiques. 
@@ -17,7 +17,7 @@ Profil de la ressource FRCoreOrganizationProfile permettant de représenter les 
 **Utilisations:**
 
 * Utilise ce/t/te Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
-* Référence ce Profil: [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md), [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md), [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md), [TDDUI Observation Periode Scolaire](StructureDefinition-tddui-observation-periode-scolaire.md)... Show 3 more, [TDDUI Practitioner Role](StructureDefinition-tddui-practitioner-role.md), [TDDUI QR Participant](StructureDefinition-tddui-qr-participant.md) and [TDDUI Task Transport](StructureDefinition-tddui-task-transport.md)
+* Référence ce Profil: [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md), [TDDUI Droit Decision](StructureDefinition-tddui-droit-decision.md), [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md), [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md)... Show 4 more, [TDDUI Observation Periode Scolaire](StructureDefinition-tddui-observation-periode-scolaire.md), [TDDUI Practitioner Role](StructureDefinition-tddui-practitioner-role.md), [TDDUI QR Participant](StructureDefinition-tddui-qr-participant.md) and [TDDUI Task Transport](StructureDefinition-tddui-task-transport.md)
 * Exemples pour ce/t/te Profil: [Les Chênes Verts](Organization-tddui-organization-example.md) and [Les Résidences du Lac](Organization-tddui-organization-origine-example.md)
 * CapabilityStatements utilisant ce Profil: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-organization.c
   "name" : "TDDUIOrganization",
   "title" : "TDDUI Organization",
   "status" : "active",
-  "date" : "2026-03-11T16:07:52+00:00",
+  "date" : "2026-03-13T19:21:03+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

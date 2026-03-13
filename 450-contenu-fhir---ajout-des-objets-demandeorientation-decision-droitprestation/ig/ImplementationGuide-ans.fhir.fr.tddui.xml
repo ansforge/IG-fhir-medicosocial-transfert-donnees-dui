@@ -10,7 +10,7 @@
   <name value="TDDUI"/>
   <title value="Médicosocial - Transfert de données DUI"/>
   <status value="active"/>
-  <date value="2026-03-11T16:07:52+00:00"/>
+  <date value="2026-03-13T19:21:03+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -549,6 +549,39 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-basic-droit-decision"/>
+      </reference>
+      <name value="TDDUI Basic Droit Decision"/>
+      <description value="Profil de la ressource Basic permettant de représenter la décision de la CDAPH ainsi que les droits associés."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/tddui-basic-type"/>
+      </reference>
+      <name value="TDDUI Basic Type"/>
+      <description value="ValueSet pour le code de la ressource Basic."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/tddui-basic-type"/>
+      </reference>
+      <name value="TDDUI Basic Type"/>
+      <description value="CodeSystem pour la définition de la ressource Basic"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -710,6 +743,17 @@
       </reference>
       <name value="TDDUI DocumentReference"/>
       <description value="Profil de la ressource SimplifiedPublishDocumentReference permettant de véhiculer des pièces jointes que ce soit pour l'évaluation, l'évènement ou le projet personnalisé."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tddui-droit-decision"/>
+      </reference>
+      <name value="TDDUI Droit Decision"/>
+      <description value="Extension complexe représentant la décision et les droits associés"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1828,7 +1872,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/tddui-service-demande-orientation"/>
+        <reference value="StructureDefinition/tddui-service-request-demande-orientation"/>
       </reference>
       <name value="TDDUI ServiceRequest DemandeOrientation"/>
       <description value="Profil de la ressource ServiceRequest permettant de représenter la demande d'orientation adressée à la CDAPH."/>

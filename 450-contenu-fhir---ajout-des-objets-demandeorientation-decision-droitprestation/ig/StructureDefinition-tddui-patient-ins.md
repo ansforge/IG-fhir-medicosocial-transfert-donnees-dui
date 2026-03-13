@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins | *Version*:2.3.0-ballot |
-| Active as of 2026-03-11 | *Computable Name*:TDDUIPatientINS |
+| Active as of 2026-03-13 | *Computable Name*:TDDUIPatientINS |
 
  
 Profil de la ressource FRCorePatientINSProfile permettant de représenter un usager lorsque l'INS est transmis. 
@@ -17,7 +17,7 @@ Profil de la ressource FRCorePatientINSProfile permettant de représenter un usa
 **Utilisations:**
 
 * Utilise ce/t/te Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
-* Référence ce Profil: [TDDUI CarePlan Projet Personalise](StructureDefinition-tddui-careplan-projet-personnalise.md), [TDDUI Consent Accord](StructureDefinition-tddui-consent-accord.md), [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md), [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)... Show 11 more, [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md), [TDDUI Goal Attente](StructureDefinition-tddui-goal-attente.md), [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md), [TDDUI Observation Cause Mortalite](StructureDefinition-tddui-observation-cause-mortalite.md), [TDDUI Observation Mobilite Usager](StructureDefinition-tddui-observation-mobilite-usager.md), [TDDUI Observation Periode Scolaire](StructureDefinition-tddui-observation-periode-scolaire.md), [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md), [TDDUI RelatedPerson Contact](StructureDefinition-tddui-related-person-contact.md), [TDDUI ServiceRequest DemandeOrientation](StructureDefinition-tddui-service-demande-orientation.md), [TDDUI ServiceRequest Besoin](StructureDefinition-tddui-service-request-besoin.md) and [TDDUI Task Bilan](StructureDefinition-tddui-task-bilan.md)
+* Référence ce Profil: [TDDUI Basic Droit Decision](StructureDefinition-tddui-basic-droit-decision.md), [TDDUI CarePlan Projet Personalise](StructureDefinition-tddui-careplan-projet-personnalise.md), [TDDUI Consent Accord](StructureDefinition-tddui-consent-accord.md), [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md)... Show 12 more, [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md), [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md), [TDDUI Goal Attente](StructureDefinition-tddui-goal-attente.md), [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md), [TDDUI Observation Cause Mortalite](StructureDefinition-tddui-observation-cause-mortalite.md), [TDDUI Observation Mobilite Usager](StructureDefinition-tddui-observation-mobilite-usager.md), [TDDUI Observation Periode Scolaire](StructureDefinition-tddui-observation-periode-scolaire.md), [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md), [TDDUI RelatedPerson Contact](StructureDefinition-tddui-related-person-contact.md), [TDDUI ServiceRequest Besoin](StructureDefinition-tddui-service-request-besoin.md), [TDDUI ServiceRequest DemandeOrientation](StructureDefinition-tddui-service-request-demande-orientation.md) and [TDDUI Task Bilan](StructureDefinition-tddui-task-bilan.md)
 * Exemples pour ce/t/te Profil: [Patient/tddui-patient-ins-example](Patient-tddui-patient-ins-example.md)
 * CapabilityStatements utilisant ce Profil: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient-ins.cs
   "name" : "TDDUIPatientINS",
   "title" : "TDDUI Patient INS",
   "status" : "active",
-  "date" : "2026-03-11T16:07:52+00:00",
+  "date" : "2026-03-13T19:21:03+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

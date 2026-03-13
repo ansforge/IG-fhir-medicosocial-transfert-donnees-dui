@@ -1,11 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="9fa6cffa-d048-48d0-92fa-5a6a5d5f4884"/>
+  <id value="b50b1087-9e80-4345-b1b0-cdc46d06c373"/>
   <meta>
-    <lastUpdated value="2026-03-11T16:07:52.755+00:00"/>
+    <lastUpdated value="2026-03-13T19:21:03.056+00:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-basic-type"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion effectuée en interne basée sur 
+              <a href="CodeSystem-tddui-basic-type.html">codesystem TDDUI Basic Type v2.3.0-ballot (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-basic-type|2.3.0-ballot" title="Cliquer pour copier l'URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>Ce jeu de valeur (ValueSet) contient 1 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>Système</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Affichage (fr)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-basic-type-DROITDECISION"> </a>
+                  <code>https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-basic-type</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-tddui-basic-type.html#tddui-basic-type-DROITDECISION">DROITDECISION</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-basic-type&quot;, &quot;version&quot;: &quot;2.3.0-ballot&quot;, &quot;code&quot;: &quot;DROITDECISION&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-basic-type&quot;&gt;&lt;version value=&quot;2.3.0-ballot&quot;&gt;&lt;code value=&quot;DROITDECISION&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-basic-type"/>
+        <version value="2.3.0-ballot"/>
+        <name value="TDDUIBasicType"/>
+        <title value="TDDUI Basic Type"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2026-03-13T19:21:03+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="FR"/>
+            <display value="France"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:7904a697-636f-405e-86ad-50a4e9243615"/>
+          <timestamp value="2026-03-13T19:24:33+00:00"/>
+          <total value="1"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="fr"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-basic-type|2.3.0-ballot"/>
+          </parameter>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-basic-type"/>
+            <code value="DROITDECISION"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
   <entry>
     <fullUrl value="https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-care-plan-supporting-info"/>
     <resource>
@@ -182,7 +288,7 @@
         <title value="TDDUI CarePlan supportingInfo"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-03-11T16:07:52+00:00"/>
+        <date value="2026-03-13T19:21:03+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -191,8 +297,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b4b9fbda-40c3-4a75-ba88-9ec467f2b5f3"/>
-          <timestamp value="2026-03-11T16:11:11+00:00"/>
+          <identifier value="urn:uuid:59f43df5-54c2-4de0-8a27-ce7fe28c1a3e"/>
+          <timestamp value="2026-03-13T19:24:33+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -18292,7 +18398,7 @@
         <title value="TDDUI CIM10"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-03-11T16:07:52+00:00"/>
+        <date value="2026-03-13T19:21:03+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -18301,8 +18407,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d34e8f2c-647b-45cb-aba4-847abbebf3ff"/>
-          <timestamp value="2026-03-11T16:11:03+00:00"/>
+          <identifier value="urn:uuid:6e6285d9-a4c8-4844-be85-8af1f33379ce"/>
+          <timestamp value="2026-03-13T19:24:25+00:00"/>
           <total value="19161"/>
           <offset value="0"/>
           <parameter>
@@ -23442,7 +23548,7 @@
         <title value="TDDUI Contact Protection Juridique"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-03-11T16:07:52+00:00"/>
+        <date value="2026-03-13T19:21:03+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -23451,8 +23557,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:5085157a-0e78-4235-b14c-ecdc422c497e"/>
-          <timestamp value="2026-03-11T16:11:11+00:00"/>
+          <identifier value="urn:uuid:98de5bdf-070e-4d22-ada4-0b6d810c8eaf"/>
+          <timestamp value="2026-03-13T19:24:33+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -24723,7 +24829,7 @@
         <title value="TDDUI Related Person Relashionship"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-03-11T16:07:52+00:00"/>
+        <date value="2026-03-13T19:21:03+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -24732,8 +24838,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e21c0147-6fc8-4f7c-90ea-c28f4c9cd50a"/>
-          <timestamp value="2026-03-11T16:11:11+00:00"/>
+          <identifier value="urn:uuid:ed61db8a-b85b-439b-bbdb-1ce2e0c460d9"/>
+          <timestamp value="2026-03-13T19:24:33+00:00"/>
           <total value="57"/>
           <offset value="0"/>
           <parameter>
@@ -26118,7 +26224,7 @@
         <title value="TDDUI Contact Relation"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-03-11T16:07:52+00:00"/>
+        <date value="2026-03-13T19:21:03+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -26127,8 +26233,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3926f2b0-34ff-4d1e-ab94-63cebac1b56f"/>
-          <timestamp value="2026-03-11T16:11:11+00:00"/>
+          <identifier value="urn:uuid:0cd47910-3910-4414-afc8-f8eb9323a5b5"/>
+          <timestamp value="2026-03-13T19:24:33+00:00"/>
           <total value="49"/>
           <offset value="0"/>
           <parameter>
@@ -26677,7 +26783,7 @@
         <title value="TDDUI Discriminator"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-03-11T16:07:52+00:00"/>
+        <date value="2026-03-13T19:21:03+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -26686,8 +26792,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ceac20d8-8f9f-4871-8c23-b9ead3cad08a"/>
-          <timestamp value="2026-03-11T16:11:11+00:00"/>
+          <identifier value="urn:uuid:a5bb7281-64be-4dda-8b79-4d56d8b95b10"/>
+          <timestamp value="2026-03-13T19:24:33+00:00"/>
           <total value="11"/>
           <offset value="0"/>
           <parameter>
@@ -27243,7 +27349,7 @@
         <title value="TDDUI Encounter Identifier"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-03-11T16:07:52+00:00"/>
+        <date value="2026-03-13T19:21:03+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -27252,8 +27358,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:dca73146-ccde-4805-8d99-f9eff4e74f0f"/>
-          <timestamp value="2026-03-11T16:11:11+00:00"/>
+          <identifier value="urn:uuid:3ec63f8e-4a40-476d-b490-7f6bc0d11794"/>
+          <timestamp value="2026-03-13T19:24:33+00:00"/>
           <total value="20"/>
           <offset value="0"/>
           <parameter>
@@ -27753,7 +27859,7 @@
         <title value="TDDUI Encounter Participant"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-03-11T16:07:52+00:00"/>
+        <date value="2026-03-13T19:21:03+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -27762,8 +27868,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d7fc28ed-ddc4-4181-a3dc-5fb1ad8e35f6"/>
-          <timestamp value="2026-03-11T16:11:11+00:00"/>
+          <identifier value="urn:uuid:7a576195-cd3f-4066-9716-ec9af444cd10"/>
+          <timestamp value="2026-03-13T19:24:33+00:00"/>
           <total value="12"/>
           <offset value="0"/>
           <parameter>
@@ -28599,7 +28705,7 @@
         <title value="TDDUI Encounter Type"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-03-11T16:07:52+00:00"/>
+        <date value="2026-03-13T19:21:03+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -28608,8 +28714,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:71e1904c-6655-493c-9219-12b8b3950f2d"/>
-          <timestamp value="2026-03-11T16:11:12+00:00"/>
+          <identifier value="urn:uuid:b5702516-682f-4267-80a5-4df89a839c26"/>
+          <timestamp value="2026-03-13T19:24:33+00:00"/>
           <total value="30"/>
           <offset value="0"/>
           <parameter>
@@ -29000,7 +29106,7 @@
         <title value="TDDUI Goal Attente Note"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-03-11T16:07:52+00:00"/>
+        <date value="2026-03-13T19:21:03+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -29009,8 +29115,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:5eabd46d-0512-4d8e-8015-477d1a973bb5"/>
-          <timestamp value="2026-03-11T16:11:12+00:00"/>
+          <identifier value="urn:uuid:ef4252e2-9efa-424f-87d1-6926d7670b01"/>
+          <timestamp value="2026-03-13T19:24:33+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -29261,7 +29367,7 @@
         <title value="TDDUI Goal Objectif Note"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-03-11T16:07:52+00:00"/>
+        <date value="2026-03-13T19:21:03+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -29270,8 +29376,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:6aaf4b8d-f794-40b0-a9f6-b51ec03bea81"/>
-          <timestamp value="2026-03-11T16:11:12+00:00"/>
+          <identifier value="urn:uuid:43f69534-312e-4722-8e13-0836c481318e"/>
+          <timestamp value="2026-03-13T19:24:33+00:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -29435,7 +29541,7 @@
         <title value="TDDUI Observation Periode Scolaire"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-03-11T16:07:52+00:00"/>
+        <date value="2026-03-13T19:21:03+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -29444,8 +29550,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:386682b4-2c4e-456d-9211-e3c4d624a910"/>
-          <timestamp value="2026-03-11T16:11:04+00:00"/>
+          <identifier value="urn:uuid:2993ceb1-84cb-43c3-9900-a71a257b6559"/>
+          <timestamp value="2026-03-13T19:24:26+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -29619,7 +29725,7 @@
         <title value="TDDUI Observation Type"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-03-11T16:07:52+00:00"/>
+        <date value="2026-03-13T19:21:03+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -29628,8 +29734,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:fa2991f5-f846-4ade-ae55-c4819603212c"/>
-          <timestamp value="2026-03-11T16:11:03+00:00"/>
+          <identifier value="urn:uuid:11ae0bc4-65b8-41a3-a40a-2f6a6463ffb6"/>
+          <timestamp value="2026-03-13T19:24:25+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -33396,7 +33502,7 @@
         <title value="TDDUI Patient Identifier"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-03-11T16:07:52+00:00"/>
+        <date value="2026-03-13T19:21:03+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -33405,8 +33511,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3e60bc54-659a-4fe6-ab0b-73edc993d230"/>
-          <timestamp value="2026-03-11T16:11:12+00:00"/>
+          <identifier value="urn:uuid:3a50cb7d-b98e-4adb-8d6c-b46c5b53a7bf"/>
+          <timestamp value="2026-03-13T19:24:33+00:00"/>
           <total value="165"/>
           <offset value="0"/>
           <parameter>
@@ -34422,7 +34528,7 @@
         <title value="TDDUI SERAFIN"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-03-11T16:07:52+00:00"/>
+        <date value="2026-03-13T19:21:03+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -34431,8 +34537,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ec1d4bf6-8850-4179-987e-9c3cc05fb560"/>
-          <timestamp value="2026-03-11T16:11:12+00:00"/>
+          <identifier value="urn:uuid:3c505832-5fe3-4e2d-b754-970f582f76e4"/>
+          <timestamp value="2026-03-13T19:24:33+00:00"/>
           <total value="0"/>
           <offset value="0"/>
           <parameter>
@@ -34603,7 +34709,7 @@
         <title value="TDDUI ServiceRequest SupportingInfo"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-03-11T16:07:52+00:00"/>
+        <date value="2026-03-13T19:21:03+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -34612,8 +34718,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2441470b-d8cd-4b3f-96ae-87f1bd881195"/>
-          <timestamp value="2026-03-11T16:11:12+00:00"/>
+          <identifier value="urn:uuid:706328ed-b276-49f6-8bb2-e5acddc05875"/>
+          <timestamp value="2026-03-13T19:24:33+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -34825,7 +34931,7 @@
         <title value="TDDUI Task Input Action"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-03-11T16:07:52+00:00"/>
+        <date value="2026-03-13T19:21:03+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -34834,8 +34940,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:0d675cff-4614-415e-8066-08c18eb2ee07"/>
-          <timestamp value="2026-03-11T16:11:12+00:00"/>
+          <identifier value="urn:uuid:f571837c-319c-4def-853c-cd9ff40144af"/>
+          <timestamp value="2026-03-13T19:24:33+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -35051,7 +35157,7 @@
         <title value="TDDUI Task Input Bilan"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-03-11T16:07:52+00:00"/>
+        <date value="2026-03-13T19:21:03+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -35060,8 +35166,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:58abcbb8-f3d6-4d02-8276-c3bbc01b0790"/>
-          <timestamp value="2026-03-11T16:11:12+00:00"/>
+          <identifier value="urn:uuid:00df1dfc-2703-4dd7-886a-47d839a2b89e"/>
+          <timestamp value="2026-03-13T19:24:33+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -35217,7 +35323,7 @@
         <title value="TDDUI Task Input Moyen Ressource"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-03-11T16:07:52+00:00"/>
+        <date value="2026-03-13T19:21:03+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -35226,8 +35332,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:41291270-51a1-4e67-92ae-1227721dc283"/>
-          <timestamp value="2026-03-11T16:11:12+00:00"/>
+          <identifier value="urn:uuid:f18160c3-ca19-4ab0-8c79-28570e3fea5b"/>
+          <timestamp value="2026-03-13T19:24:33+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -35391,7 +35497,7 @@
         <title value="TDDUI Task Input Prestation"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-03-11T16:07:52+00:00"/>
+        <date value="2026-03-13T19:21:03+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -35400,8 +35506,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:cc91f028-89f8-4b7f-8a21-d5bde45d6f29"/>
-          <timestamp value="2026-03-11T16:11:12+00:00"/>
+          <identifier value="urn:uuid:d95afdbe-1e9d-4d1d-b8b1-dc64fb2859d4"/>
+          <timestamp value="2026-03-13T19:24:33+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -35689,7 +35795,7 @@
         <title value="TDDUI Task Input Transport"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-03-11T16:07:52+00:00"/>
+        <date value="2026-03-13T19:21:03+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -35698,8 +35804,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2789b4a5-e509-405c-8667-2bcd6843b3ee"/>
-          <timestamp value="2026-03-11T16:11:12+00:00"/>
+          <identifier value="urn:uuid:4d39f7cc-b0e8-4e96-83db-a3c7b5cea924"/>
+          <timestamp value="2026-03-13T19:24:33+00:00"/>
           <total value="10"/>
           <offset value="0"/>
           <parameter>
@@ -35831,7 +35937,7 @@
         <title value="TDDUI Task Output Bilan"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-03-11T16:07:52+00:00"/>
+        <date value="2026-03-13T19:21:03+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -35840,8 +35946,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:5f6a12cf-1e3a-4007-af74-f8370c679f02"/>
-          <timestamp value="2026-03-11T16:11:12+00:00"/>
+          <identifier value="urn:uuid:65d46c16-bf00-4135-8026-a810cae356dd"/>
+          <timestamp value="2026-03-13T19:24:33+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>

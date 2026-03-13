@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui | *Version*:2.3.0-ballot |
-| Active as of 2026-03-11 | *Computable Name*:TDDUI |
+| Active as of 2026-03-13 | *Computable Name*:TDDUI |
 
  **Brief description of this Implementation Guide**
  The Digital User File (DUI) centralizes all information concerning the person being cared for in social and medico-social facilities and services. The aim of this implementation guide is to define the specifications for DUI data transfer. 
@@ -72,6 +72,7 @@ Les ressources profilées dans le cadre de ce guide d'implémentation sont les s
 | | | |
 | :--- | :--- | :--- |
 | Profil parent | Profil | Description |
+| [Basic](http://hl7.org/fhir/StructureDefinition/Basic) | [TDDUIBasicDroitDecision](StructureDefinition-tddui-basic-droit-decision.md) | Profil de la ressource Basic permettant de représenter la décision de la CDAPH ainsi que les droits associés. |
 | [Bundle](http://hl7.org/fhir/StructureDefinition/Bundle) | [TDDUIBundle](StructureDefinition-tddui-bundle.md) | Profil générique créé pour transmettre des données d'un logiciel DUI. |
 | [CarePlan](http://hl7.org/fhir/StructureDefinition/CarePlan) | [TDDUICarePlanProjetPersonnalise](StructureDefinition-tddui-careplan-projet-personnalise.md) | Profil de la ressource CarePlan représentant le projet personnalisé d'un usager. |
 | [Consent](http://hl7.org/fhir/StructureDefinition/Consent) | [TDDUIConsentAccord](StructureDefinition-tddui-consent-accord.md) | Profil de la ressource Consent permettant de représenter l'accord de l'usager, de son entourage ou de la structure. |
@@ -91,7 +92,7 @@ Les ressources profilées dans le cadre de ce guide d'implémentation sont les s
 | [QuestionnaireResponse](http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse) | [TDDUIQuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md) | Profil de la ressource QuestionnaireResponse utilisé pour transmettre les réponses aux questionnaires dans le cadre des évaluations. |
 | [FR Core Related Person Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person) | [TDDUIRelatedPersonContact](StructureDefinition-tddui-related-person-contact.md) | Profil de la ressource FRCoreRelatedPersonProfile permettant de représenter un contact de l'usager. |
 | [ServiceRequest](http://hl7.org/fhir/StructureDefinition/ServiceRequest) | [TDDUIServiceRequestBesoin](StructureDefinition-tddui-service-request-besoin.md) | Profil de la ressource ServiceRequest permettant de représenter les besoins de l'usager. |
-| [ServiceRequest](http://hl7.org/fhir/StructureDefinition/ServiceRequest) | [TDDUIServiceRequestDemandeOrientation](StructureDefinition-tddui-service-demande-orientation.md) | Profil de la ressource ServiceRequest permettant de représenter la demande d'orientation adressée à la CDAPH. |
+| [ServiceRequest](http://hl7.org/fhir/StructureDefinition/ServiceRequest) | [TDDUIServiceRequestDemandeOrientation](StructureDefinition-tddui-service-request-demande-orientation.md) | Profil de la ressource ServiceRequest permettant de représenter la demande d'orientation adressée à la CDAPH. |
 | [Task](http://hl7.org/fhir/StructureDefinition/Task) | [TDDUITaskAction](StructureDefinition-tddui-task-action.md) | Profil de la ressource Task permettant de représenter les actions réalisées dans le cadre du projet personnalisé. |
 | [Task](http://hl7.org/fhir/StructureDefinition/Task) | [TDDUITaskBilan](StructureDefinition-tddui-task-bilan.md) | Profil de la ressource Task permettant de représenter le bilan du projet personnalisé. |
 | [Task](http://hl7.org/fhir/StructureDefinition/Task) | [TDDUITaskMoyenRessource](StructureDefinition-tddui-task-moyen-ressource.md) | Profil de la ressource Task permettant de représenter les moyens ou ressources utilisées dans le cadre du projet personnalisé. |
@@ -147,7 +148,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2026-03-11T16:07:52+00:00",
+  "date" : "2026-03-13T19:21:03+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -862,6 +863,42 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-basic-droit-decision"
+      },
+      "name" : "TDDUI Basic Droit Decision",
+      "description" : "Profil de la ressource Basic permettant de représenter la décision de la CDAPH ainsi que les droits associés.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/tddui-basic-type"
+      },
+      "name" : "TDDUI Basic Type",
+      "description" : "ValueSet pour le code de la ressource Basic.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/tddui-basic-type"
+      },
+      "name" : "TDDUI Basic Type",
+      "description" : "CodeSystem pour la définition de la ressource Basic",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -1037,6 +1074,18 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
       },
       "name" : "TDDUI DocumentReference",
       "description" : "Profil de la ressource SimplifiedPublishDocumentReference permettant de véhiculer des pièces jointes que ce soit pour l'évaluation, l'évènement ou le projet personnalisé.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-droit-decision"
+      },
+      "name" : "TDDUI Droit Decision",
+      "description" : "Extension complexe représentant la décision et les droits associés",
       "exampleBoolean" : false
     },
     {
@@ -2257,7 +2306,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/tddui-service-demande-orientation"
+        "reference" : "StructureDefinition/tddui-service-request-demande-orientation"
       },
       "name" : "TDDUI ServiceRequest DemandeOrientation",
       "description" : "Profil de la ressource ServiceRequest permettant de représenter la demande d'orientation adressée à la CDAPH.",

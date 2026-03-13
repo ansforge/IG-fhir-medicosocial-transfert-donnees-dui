@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "TDDUI"] ; # 
   fhir:title [ fhir:v "Médicosocial - Transfert de données DUI"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-03-11T16:07:52+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-03-13T19:21:03+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -1511,6 +1511,69 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-basic-droit-decision> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-basic-droit-decision" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Basic Droit Decision" ] ;
+       fhir:description [ fhir:v "Profil de la ressource Basic permettant de représenter la décision de la CDAPH ainsi que les droits associés." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-basic-type> ;
+         fhir:reference [ fhir:v "ValueSet/tddui-basic-type" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Basic Type" ] ;
+       fhir:description [ fhir:v "ValueSet pour le code de la ressource Basic." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-basic-type> ;
+         fhir:reference [ fhir:v "CodeSystem/tddui-basic-type" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Basic Type" ] ;
+       fhir:description [ fhir:v "CodeSystem pour la définition de la ressource Basic" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "StructureDefinition:extension"
          ]
        ] ) ;
@@ -1815,6 +1878,27 @@
        ] ;
        fhir:name [ fhir:v "TDDUI DocumentReference" ] ;
        fhir:description [ fhir:v "Profil de la ressource SimplifiedPublishDocumentReference permettant de véhiculer des pièces jointes que ce soit pour l'évaluation, l'évènement ou le projet personnalisé." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-droit-decision> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-droit-decision" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Droit Decision" ] ;
+       fhir:description [ fhir:v "Extension complexe représentant la décision et les droits associés" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -4003,8 +4087,8 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-demande-orientation> ;
-         fhir:reference [ fhir:v "StructureDefinition/tddui-service-demande-orientation" ]
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-demande-orientation> ;
+         fhir:reference [ fhir:v "StructureDefinition/tddui-service-request-demande-orientation" ]
        ] ;
        fhir:name [ fhir:v "TDDUI ServiceRequest DemandeOrientation" ] ;
        fhir:description [ fhir:v "Profil de la ressource ServiceRequest permettant de représenter la demande d'orientation adressée à la CDAPH." ] ;
