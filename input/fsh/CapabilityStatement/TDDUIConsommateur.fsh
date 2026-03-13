@@ -72,7 +72,8 @@ Usage: #definition
 * rest.resource[=].interaction[0].code = #read
 
 * rest.resource[11].type = #ServiceRequest
-* rest.resource[=].supportedProfile = Canonical(tddui-service-request-besoin)
+* rest.resource[=].supportedProfile[0] = Canonical(tddui-service-request-besoin)
+* rest.resource[=].supportedProfile[+] = Canonical(tddui-service-request-demande-orientation)
 * rest.resource[=].interaction[0].code = #read
 
 * rest.resource[12].type = #RelatedPerson
