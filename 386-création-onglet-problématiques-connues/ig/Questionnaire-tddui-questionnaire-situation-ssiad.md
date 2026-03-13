@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/Questionnaire/tddui-questionnaire-situation-ssiad | *Version*:2.3.0-ballot |
-| Active as of 2026-03-12 | *Computable Name*: |
+| Active as of 2026-03-13 | *Computable Name*: |
 
  
 Grille d'évaluation de la situation SSIAD 
@@ -26,7 +26,7 @@ Grille d'évaluation de la situation SSIAD
   "version" : "2.3.0-ballot",
   "title" : "Évaluation de la situation SSIAD",
   "status" : "active",
-  "date" : "2026-03-12T16:28:34+00:00",
+  "date" : "2026-03-13T13:28:40+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
