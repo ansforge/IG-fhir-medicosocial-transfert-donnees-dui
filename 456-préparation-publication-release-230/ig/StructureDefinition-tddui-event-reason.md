@@ -1,4 +1,4 @@
-# TDDUI Event Reason - Médicosocial - Transfert de données DUI v2.3.0-ballot
+# TDDUI Event Reason - Médicosocial - Transfert de données DUI v2.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-reason | *Version*:2.3.0-ballot |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-reason | *Version*:2.3.0 |
 | Active as of 2026-03-16 | *Computable Name*:TDDUIEventReason |
 
 Contexte justifiant la réalisation de l’évènement.
@@ -43,11 +43,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-event-reason.c
   "resourceType" : "StructureDefinition",
   "id" : "tddui-event-reason",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-reason",
-  "version" : "2.3.0-ballot",
+  "version" : "2.3.0",
   "name" : "TDDUIEventReason",
   "title" : "TDDUI Event Reason",
   "status" : "active",
-  "date" : "2026-03-16T09:30:03+00:00",
+  "date" : "2026-03-16T09:41:13+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

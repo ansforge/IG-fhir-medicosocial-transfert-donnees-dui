@@ -1,4 +1,4 @@
-# TDDUI Ressources Used - Médicosocial - Transfert de données DUI v2.3.0-ballot
+# TDDUI Ressources Used - Médicosocial - Transfert de données DUI v2.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used | *Version*:2.3.0-ballot |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used | *Version*:2.3.0 |
 | Active as of 2026-03-16 | *Computable Name*:TDDUIRessourcesUsed |
 
 Ressources utilisées lors de l’évènement (ex : chambre, matériel médical, véhicule).
@@ -45,11 +45,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-ressources-use
   "resourceType" : "StructureDefinition",
   "id" : "tddui-ressources-used",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used",
-  "version" : "2.3.0-ballot",
+  "version" : "2.3.0",
   "name" : "TDDUIRessourcesUsed",
   "title" : "TDDUI Ressources Used",
   "status" : "active",
-  "date" : "2026-03-16T09:30:03+00:00",
+  "date" : "2026-03-16T09:41:13+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

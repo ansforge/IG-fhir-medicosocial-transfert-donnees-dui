@@ -1,4 +1,4 @@
-# Évaluation de la situation SSIAD - Médicosocial - Transfert de données DUI v2.3.0-ballot
+# Évaluation de la situation SSIAD - Médicosocial - Transfert de données DUI v2.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/Questionnaire/tddui-questionnaire-situation-ssiad | *Version*:2.3.0-ballot |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/Questionnaire/tddui-questionnaire-situation-ssiad | *Version*:2.3.0 |
 | Active as of 2026-03-16 | *Computable Name*: |
 
  
@@ -23,10 +23,10 @@ Grille d'évaluation de la situation SSIAD
   "resourceType" : "Questionnaire",
   "id" : "tddui-questionnaire-situation-ssiad",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/Questionnaire/tddui-questionnaire-situation-ssiad",
-  "version" : "2.3.0-ballot",
+  "version" : "2.3.0",
   "title" : "Évaluation de la situation SSIAD",
   "status" : "active",
-  "date" : "2026-03-16T09:30:03+00:00",
+  "date" : "2026-03-16T09:41:13+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
