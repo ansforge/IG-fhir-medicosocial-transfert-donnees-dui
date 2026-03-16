@@ -1,4 +1,4 @@
-# TDDUI Encounter Evenement - Médicosocial - Transfert de données DUI v2.3.0-ballot
+# TDDUI Encounter Evenement - Médicosocial - Transfert de données DUI v2.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement | *Version*:2.3.0-ballot |
-| Active as of 2026-03-02 | *Computable Name*:TDDUIEncounterEvenement |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement | *Version*:2.3.0 |
+| Active as of 2026-03-16 | *Computable Name*:TDDUIEncounterEvenement |
 
  
 Profil de la ressource Encounter permettant de regrouper les évènements liés à la prise en charge de l’usager dans une structure ESSMS. 
@@ -45,11 +45,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-even
   "resourceType" : "StructureDefinition",
   "id" : "tddui-encounter-evenement",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement",
-  "version" : "2.3.0-ballot",
+  "version" : "2.3.0",
   "name" : "TDDUIEncounterEvenement",
   "title" : "TDDUI Encounter Evenement",
   "status" : "active",
-  "date" : "2026-03-02T11:00:56+00:00",
+  "date" : "2026-03-16T15:16:38+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

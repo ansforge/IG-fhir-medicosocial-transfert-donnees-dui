@@ -1,4 +1,4 @@
-# TDDUI Encounter Evenement Example - Médicosocial - Transfert de données DUI v2.3.0-ballot
+# TDDUI Encounter Evenement Example - Médicosocial - Transfert de données DUI v2.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -26,7 +26,7 @@ Profil: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenemen
 
 **status**: Finished
 
-**class**: [ActCode: HH](http://terminology.hl7.org/7.0.1/CodeSystem-v3-ActCode.html#v3-ActCode-HH) (home health)
+**class**: [ActCode: HH](http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActCode.html#v3-ActCode-HH) (home health)
 
 **type**: Intervention d'un infirmer salarié, Intervention
 

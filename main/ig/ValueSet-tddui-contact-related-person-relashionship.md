@@ -1,4 +1,4 @@
-# TDDUI Related Person Relashionship - Médicosocial - Transfert de données DUI v2.3.0-ballot
+# TDDUI Related Person Relashionship - Médicosocial - Transfert de données DUI v2.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-contact-related-person-relashionship | *Version*:2.3.0-ballot |
-| Active as of 2026-03-02 | *Computable Name*:TDDUIRelatedPersonRelashionship |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-contact-related-person-relashionship | *Version*:2.3.0 |
+| Active as of 2026-03-16 | *Computable Name*:TDDUIRelatedPersonRelashionship |
 
  
 ValueSet définissant les slices de RelatedPerson.relationship. 
@@ -23,8 +23,6 @@ ValueSet définissant les slices de RelatedPerson.relationship.
  
 
 ### Expansion
-
-No Expansion for this valueset (Unknown Code System)
 
 -------
 
@@ -51,12 +49,12 @@ No Expansion for this valueset (Unknown Code System)
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-contact-related-person-relashionship",
-  "version" : "2.3.0-ballot",
+  "version" : "2.3.0",
   "name" : "TDDUIRelatedPersonRelashionship",
   "title" : "TDDUI Related Person Relashionship",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-02T11:00:56+00:00",
+  "date" : "2026-03-16T15:16:38+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

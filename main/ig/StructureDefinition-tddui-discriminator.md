@@ -1,4 +1,4 @@
-# TDDUI Discriminator - Médicosocial - Transfert de données DUI v2.3.0-ballot
+# TDDUI Discriminator - Médicosocial - Transfert de données DUI v2.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator | *Version*:2.3.0-ballot |
-| Active as of 2026-03-02 | *Computable Name*:TDDUIDiscriminator |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator | *Version*:2.3.0 |
+| Active as of 2026-03-16 | *Computable Name*:TDDUIDiscriminator |
 
 Extension pour discriminer les éléments CarePlan.supportingInfo et Goal.note.
 
@@ -45,11 +45,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-discriminator.
   "resourceType" : "StructureDefinition",
   "id" : "tddui-discriminator",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator",
-  "version" : "2.3.0-ballot",
+  "version" : "2.3.0",
   "name" : "TDDUIDiscriminator",
   "title" : "TDDUI Discriminator",
   "status" : "active",
-  "date" : "2026-03-02T11:00:56+00:00",
+  "date" : "2026-03-16T15:16:38+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

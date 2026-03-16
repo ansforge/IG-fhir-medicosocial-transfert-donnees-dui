@@ -1,4 +1,4 @@
-# TDDUI Task Bilan - Médicosocial - Transfert de données DUI v2.3.0-ballot
+# TDDUI Task Bilan - Médicosocial - Transfert de données DUI v2.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-bilan | *Version*:2.3.0-ballot |
-| Active as of 2026-03-02 | *Computable Name*:TDDUITaskBilan |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-bilan | *Version*:2.3.0 |
+| Active as of 2026-03-16 | *Computable Name*:TDDUITaskBilan |
 
  
 Profil de la ressource Task permettant de représenter le bilan du projet personnalisé. 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-bilan.csv
   "resourceType" : "StructureDefinition",
   "id" : "tddui-task-bilan",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-bilan",
-  "version" : "2.3.0-ballot",
+  "version" : "2.3.0",
   "name" : "TDDUITaskBilan",
   "title" : "TDDUI Task Bilan",
   "status" : "active",
-  "date" : "2026-03-02T11:00:56+00:00",
+  "date" : "2026-03-16T15:16:38+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

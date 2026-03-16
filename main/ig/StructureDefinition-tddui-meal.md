@@ -1,4 +1,4 @@
-# TDDUI Meal - Médicosocial - Transfert de données DUI v2.3.0-ballot
+# TDDUI Meal - Médicosocial - Transfert de données DUI v2.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-meal | *Version*:2.3.0-ballot |
-| Active as of 2026-03-02 | *Computable Name*:TDDUIMeal |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-meal | *Version*:2.3.0 |
+| Active as of 2026-03-16 | *Computable Name*:TDDUIMeal |
 
 Repas du professionnel prévu dans le cadre de l'événement.
 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-meal.csv), [Ex
   "resourceType" : "StructureDefinition",
   "id" : "tddui-meal",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-meal",
-  "version" : "2.3.0-ballot",
+  "version" : "2.3.0",
   "name" : "TDDUIMeal",
   "title" : "TDDUI Meal",
   "status" : "active",
-  "date" : "2026-03-02T11:00:56+00:00",
+  "date" : "2026-03-16T15:16:38+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

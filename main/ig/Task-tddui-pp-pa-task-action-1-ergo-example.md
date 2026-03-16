@@ -1,4 +1,4 @@
-# TDDUI PP PA Task Action 1 Ergo Example - Médicosocial - Transfert de données DUI v2.3.0-ballot
+# TDDUI PP PA Task Action 1 Ergo Example - Médicosocial - Transfert de données DUI v2.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

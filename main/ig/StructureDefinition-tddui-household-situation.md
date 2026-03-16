@@ -1,4 +1,4 @@
-# TDDUI Household Situation - Médicosocial - Transfert de données DUI v2.3.0-ballot
+# TDDUI Household Situation - Médicosocial - Transfert de données DUI v2.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-household-situation | *Version*:2.3.0-ballot |
-| Active as of 2026-03-02 | *Computable Name*:TDDUIHouseholdSituation |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-household-situation | *Version*:2.3.0 |
+| Active as of 2026-03-16 | *Computable Name*:TDDUIHouseholdSituation |
 
 Extension complexe regroupant la situation familiale, la composition du foyer et sa description textuelle de l'usager.
 
@@ -45,11 +45,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-household-situ
   "resourceType" : "StructureDefinition",
   "id" : "tddui-household-situation",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-household-situation",
-  "version" : "2.3.0-ballot",
+  "version" : "2.3.0",
   "name" : "TDDUIHouseholdSituation",
   "title" : "TDDUI Household Situation",
   "status" : "active",
-  "date" : "2026-03-02T11:00:56+00:00",
+  "date" : "2026-03-16T15:16:38+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
