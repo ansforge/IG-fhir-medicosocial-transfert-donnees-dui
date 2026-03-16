@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-contact-related-person-relashionship | *Version*:2.3.0-ballot |
-| Active as of 2026-03-09 | *Computable Name*:TDDUIRelatedPersonRelashionship |
+| Active as of 2026-03-16 | *Computable Name*:TDDUIRelatedPersonRelashionship |
 
  
 ValueSet définissant les slices de RelatedPerson.relationship. 
@@ -54,7 +54,7 @@ ValueSet définissant les slices de RelatedPerson.relationship.
   "title" : "TDDUI Related Person Relashionship",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-09T16:16:18+00:00",
+  "date" : "2026-03-16T17:28:45+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

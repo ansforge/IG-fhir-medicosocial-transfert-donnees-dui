@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-projet-vie | *Version*:2.3.0-ballot |
-| Active as of 2026-03-09 | *Computable Name*:TDDUIGoalProjetVie |
+| Active as of 2026-03-16 | *Computable Name*:TDDUIGoalProjetVie |
 
  
 Profil de la ressource Goal permettant de représenter le projet de vie de l'usager. 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-projet-vi
   "name" : "TDDUIGoalProjetVie",
   "title" : "TDDUI Goal Projet Vie",
   "status" : "active",
-  "date" : "2026-03-09T16:16:18+00:00",
+  "date" : "2026-03-16T17:28:45+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -96,9 +96,17 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-projet-vi
       }]
     },
     {
+      "id" : "Goal.meta.lastUpdated",
+      "path" : "Goal.meta.lastUpdated",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIGoalProjetVie",
+        "map" : "Statut.dateStatut"
+      }]
+    },
+    {
       "id" : "Goal.identifier",
       "path" : "Goal.identifier",
-      "short" : "Identifiant de l'attente",
+      "short" : "Identifiant du projet de vie",
       "min" : 1,
       "max" : "1",
       "mapping" : [{
@@ -124,6 +132,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-projet-vi
     {
       "id" : "Goal.lifecycleStatus",
       "path" : "Goal.lifecycleStatus",
+      "short" : "Correspondance des statuts métier avec les codes FHIR : ENPREPARATION → planned, ENCOURS → active, TERMINE → completed.",
       "mapping" : [{
         "identity" : "specmetier-to-TDDUIGoalProjetVie",
         "map" : "Statut.statut"
@@ -243,7 +252,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-goal-projet-vi
       }],
       "mapping" : [{
         "identity" : "specmetier-to-TDDUIGoalProjetVie",
-        "map" : "aspirationProjetVie"
+        "map" : "aspirationSouhait"
       }]
     },
     {
