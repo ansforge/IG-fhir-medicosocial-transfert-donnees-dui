@@ -12,7 +12,7 @@ Description: "Profil de la ressource Goal permettant de représenter le projet d
 * identifier.system 1..1
 * identifier.system = "https://identifiant-medicosocial-projetvie.esante.gouv.fr"
 
-* status ^short = "Correspondance des statuts métier avec les codes FHIR : ENPREPARATION → planned, ENCOURS → active, TERMINE → completed."
+* lifecycleStatus ^short = "Correspondance des statuts métier avec les codes FHIR : ENPREPARATION → planned, ENCOURS → active, TERMINE → completed."
 
 * lifecycleStatus.extension contains TDDUIStatusAuthor named TDDUIStatusAuthor 0..1
 
