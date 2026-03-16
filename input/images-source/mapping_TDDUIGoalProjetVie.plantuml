@@ -9,7 +9,7 @@ map "description" as description #DarkGray {
 }
 
 map "target" as target #DarkGray {
-    aspirationProjetVie => detailString
+    aspirationSouhait => detailString
     dateFinProjetVie => dueDate
 }
 
@@ -21,6 +21,7 @@ map "**ProjetVie : TDDUIGoalProjetVie**" as ProjetVie #fb8072 {
     idProjetVie => identifier
     dateDebutProjetVie => startDate
     Statut.statut => lifecycleStatus
+    Statut.dateStatut => meta.lastUpdated
     description *-> description
     target *--> target
 }
