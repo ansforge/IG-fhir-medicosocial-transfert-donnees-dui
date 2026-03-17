@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Basic xmlns="http://hl7.org/fhir">
+  <id value="tddui-basic-droit-decision-example"/>
+  <meta>
+    <profile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-basic-droit-decision"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : Basique tddui-basic-droit-decision-example</b></p><a name="tddui-basic-droit-decision-example"> </a><a name="hctddui-basic-droit-decision-example"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="StructureDefinition-tddui-basic-droit-decision.html">TDDUI Basic Droit Decision</a></p></div><blockquote><p><b>TDDUI Droit Decision</b></p><blockquote><p><b>droitPrestation</b></p><ul><li>dateOuverture: 2020-01-01</li><li>dateEcheance: 2020-12-31</li><li>existencePAG: false</li></ul></blockquote><blockquote><p><b>url</b></p>decision</blockquote></blockquote><p><b>identifier</b>: <code>https://identifiant-medicosocial-decision.esante.gouv.fr</code>/1254/194704032</p><p><b>code</b>: <span title="Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-basic-type DROITDECISION}">Droits et Décision</span></p></div>
+  </text>
+  <extension url="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-droit-decision">
+    <extension url="decision">
+      <extension url="droitPrestation">
+        <extension url="dateOuverture">
+          <valueDate value="2020-01-01"/>
+        </extension>
+        <extension url="dateEcheance">
+          <valueDate value="2020-12-31"/>
+        </extension>
+        <extension url="existencePAG">
+          <valueBoolean value="false"/>
+        </extension>
+      </extension>
+    </extension>
+  </extension>
+  <identifier>
+    <system value="https://identifiant-medicosocial-decision.esante.gouv.fr"/>
+    <value value="1254/194704032"/>
+  </identifier>
+  <code>
+    <coding>
+      <system value="https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-basic-type"/>
+      <code value="DROITDECISION"/>
+      <display value="Droits et Décision"/>
+    </coding>
+  </code>
+</Basic>

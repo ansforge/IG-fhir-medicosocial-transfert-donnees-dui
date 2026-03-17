@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-droit-decision | *Version*:2.3.0-ballot |
-| Active as of 2026-03-13 | *Computable Name*:TDDUIDroitDecision |
+| Active as of 2026-03-17 | *Computable Name*:TDDUIDroitDecision |
 
 Extension complexe représentant la décision et les droits associés
 
@@ -20,6 +20,7 @@ Extension complexe représentant la décision et les droits associés
 **Utilisations:**
 
 * Utilise ce/t/te Extension: [TDDUI Basic Droit Decision](StructureDefinition-tddui-basic-droit-decision.md)
+* Exemples pour ce/t/te Extension: [Basic/tddui-basic-droit-decision-example](Basic-tddui-basic-droit-decision-example.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-droit-decision)
 
@@ -46,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-droit-decision
   "name" : "TDDUIDroitDecision",
   "title" : "TDDUI Droit Decision",
   "status" : "active",
-  "date" : "2026-03-13T19:21:03+00:00",
+  "date" : "2026-03-17T13:04:13+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

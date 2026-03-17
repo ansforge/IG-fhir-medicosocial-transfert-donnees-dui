@@ -169,6 +169,7 @@ These are example instances that show what data produced and consumed by systems
 
 | | |
 | :--- | :--- |
+| [TDDUI Basic Droit Decision Example](Basic-tddui-basic-droit-decision-example.md) | Exemple de la ressource TDDUIBasicDroitDecision |
 | [TDDUI Bundle Example](Bundle-tddui-bundle-example.md) | Exemple de bundle conforme au profil TDDUIBundle |
 | [TDDUI Encounter Evenement Example](Encounter-tddui-encounter-evenement-example.md) | Exemple d'un évènement |
 | [TDDUI Encounter Sejour Example](Encounter-tddui-encounter-sejour-example.md) | Exemple d'un séjour en ESSMS |

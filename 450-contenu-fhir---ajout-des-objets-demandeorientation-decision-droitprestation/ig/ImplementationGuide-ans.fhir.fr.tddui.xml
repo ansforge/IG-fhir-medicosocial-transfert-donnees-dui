@@ -10,7 +10,7 @@
   <name value="TDDUI"/>
   <title value="Médicosocial - Transfert de données DUI"/>
   <status value="active"/>
-  <date value="2026-03-13T19:21:03+00:00"/>
+  <date value="2026-03-17T13:04:13+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -557,6 +557,17 @@
       <name value="TDDUI Basic Droit Decision"/>
       <description value="Profil de la ressource Basic permettant de représenter la décision de la CDAPH ainsi que les droits associés."/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Basic"/>
+      </extension>
+      <reference>
+        <reference value="Basic/tddui-basic-droit-decision-example"/>
+      </reference>
+      <name value="TDDUI Basic Droit Decision Example"/>
+      <description value="Exemple de la ressource TDDUIBasicDroitDecision"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-basic-droit-decision"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-basic-droit-decision | *Version*:2.3.0-ballot |
-| Active as of 2026-03-13 | *Computable Name*:TDDUIBasicDroitDecision |
+| Active as of 2026-03-17 | *Computable Name*:TDDUIBasicDroitDecision |
 
  
 Profil de la ressource Basic permettant de représenter la décision de la CDAPH ainsi que les droits associés. 
@@ -17,6 +17,7 @@ Profil de la ressource Basic permettant de représenter la décision de la CDAPH
 **Utilisations:**
 
 * Utilise ce/t/te Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
+* Exemples pour ce/t/te Profil: [Basic/tddui-basic-droit-decision-example](Basic-tddui-basic-droit-decision-example.md)
 * CapabilityStatements utilisant ce Profil: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-basic-droit-decision)
@@ -42,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-basic-droit-de
   "name" : "TDDUIBasicDroitDecision",
   "title" : "TDDUI Basic Droit Decision",
   "status" : "active",
-  "date" : "2026-03-13T19:21:03+00:00",
+  "date" : "2026-03-17T13:04:13+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
