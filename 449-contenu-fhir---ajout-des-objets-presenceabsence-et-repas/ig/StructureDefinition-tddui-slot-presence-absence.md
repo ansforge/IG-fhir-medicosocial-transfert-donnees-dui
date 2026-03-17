@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-slot-presence-absence | *Version*:2.3.0-ballot |
-| Active as of 2026-03-09 | *Computable Name*:TDDUISlotPresenceAbsence |
+| Active as of 2026-03-17 | *Computable Name*:TDDUISlotPresenceAbsence |
 
  
 Profil de la ressource FRCoreSlotProfile permettant de représenter les présences et absences de l'usager. 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-slot-presence-
   "name" : "TDDUISlotPresenceAbsence",
   "title" : "TDDUI Slot Presence Absence",
   "status" : "active",
-  "date" : "2026-03-09T13:07:52+00:00",
+  "date" : "2026-03-17T10:53:05+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -96,6 +96,14 @@ Other representations of profile: [CSV](StructureDefinition-tddui-slot-presence-
       }]
     },
     {
+      "id" : "Slot.meta.lastUpdated",
+      "path" : "Slot.meta.lastUpdated",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUISlotPresenceAbsence",
+        "map" : "Statut.dateStatut"
+      }]
+    },
+    {
       "id" : "Slot.extension",
       "path" : "Slot.extension",
       "slicing" : {
@@ -111,6 +119,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-slot-presence-
       "id" : "Slot.extension:TDDUIPlannedAbsence",
       "path" : "Slot.extension",
       "sliceName" : "TDDUIPlannedAbsence",
+      "short" : "Indique si l'absence est prévue ou non.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -143,7 +152,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-slot-presence-
       "path" : "Slot.identifier.value",
       "min" : 1,
       "example" : [{
-        "label" : "du format d'identifiant à respecter : 'Format : 3+FINESS/identifiantLocalUsagerESSMS-PA-identifiantPresenceAbsence",
+        "label" : "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-PA-numPresenceAbsenceUsager",
         "valueString" : "3480787529/147720425367411-PA-21564655"
       }]
     },
@@ -195,6 +204,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-slot-presence-
       "id" : "Slot.status.extension:TDDUIStatusAuthor",
       "path" : "Slot.status.extension",
       "sliceName" : "TDDUIStatusAuthor",
+      "short" : "Auteur du statut.",
       "min" : 0,
       "max" : "1",
       "type" : [{

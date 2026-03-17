@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-repas | *Version*:2.3.0-ballot |
-| Active as of 2026-03-09 | *Computable Name*:TDDUIObservationRepas |
+| Active as of 2026-03-17 | *Computable Name*:TDDUIObservationRepas |
 
  
 Profil de la ressource Observation permettant de représenter si l'usager bénéficie ou non des repas. 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-re
   "name" : "TDDUIObservationRepas",
   "title" : "TDDUI Observation Repas",
   "status" : "active",
-  "date" : "2026-03-09T13:07:52+00:00",
+  "date" : "2026-03-17T10:53:05+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -127,6 +127,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-re
       "id" : "Observation.extension:TDDUIPatientPresent",
       "path" : "Observation.extension",
       "sliceName" : "TDDUIPatientPresent",
+      "short" : "Présence de l'usager au repas.",
       "min" : 1,
       "max" : "1",
       "type" : [{

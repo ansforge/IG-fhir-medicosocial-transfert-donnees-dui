@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-planned-absence | *Version*:2.3.0-ballot |
-| Active as of 2026-03-09 | *Computable Name*:TDDUIPlannedAbsence |
+| Active as of 2026-03-17 | *Computable Name*:TDDUIPlannedAbsence |
 
 Absence prévue
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-planned-absenc
   "name" : "TDDUIPlannedAbsence",
   "title" : "TDDUI Planned Absence",
   "status" : "active",
-  "date" : "2026-03-09T13:07:52+00:00",
+  "date" : "2026-03-17T10:53:05+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
