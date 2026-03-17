@@ -21,6 +21,7 @@ Description: "Profil de la ressource Observation permettant de représenter si l
 * subject only Reference(TDDUIPatient or TDDUIPatientINS)
 
 * extension contains TDDUIPatientPresent named TDDUIPatientPresent 1..1
+* extension[TDDUIPatientPresent] ^short = "Présence de l'usager au repas."
 
 Mapping:  ConceptMetier_TDDUIObservationRepas
 Source:   TDDUIObservationRepas

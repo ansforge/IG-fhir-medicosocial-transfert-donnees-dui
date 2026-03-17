@@ -56,7 +56,7 @@ Usage: #example
 * entry[DUISchedule].request.method = #POST
 * entry[DUISchedule].request.url = "TDDUISchedule"
 
-* entry[DUISlotPresenceAbsence].fullUrl = "https://test-server.fr/Schedule/tddui-schedule-example"
+* entry[DUISlotPresenceAbsence].fullUrl = "https://test-server.fr/Slot/tddui-slot-presence-absence-example"
 * entry[DUISlotPresenceAbsence].resource = tddui-slot-presence-absence-example
 * entry[DUISlotPresenceAbsence].request.method = #POST
 * entry[DUISlotPresenceAbsence].request.url = "TDDUISlotPresenceAbsence"
