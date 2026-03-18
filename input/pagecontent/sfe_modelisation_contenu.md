@@ -2453,6 +2453,8 @@ Cette classe décrit le statut des ressources (Evenement, Evaluation, Projet per
     <li>Pour le projet personnalisé seuls les codes suivants sont à utiliser : ENPREPARATION, ENCOURS, ENPAUSE, TERMINE </li>
     <li>Pour l'Objectif, l'Action et la Prestation du Projet personnalisé seuls les codes suivants sont à utiliser : ENPREPARATION, ACTIF, TERMINE, ANNULE</li>
     <li>Pour le Projet de vie seuls les codes suivants sont à utiliser : ENPREPARATION, ENCOURS, TERMINE</li>
+    <li>Les statuts de la Présence/Absence correspondent uniquement aux codes suivants : programmé, réalisé, validé, facturé
+    </li>
     </ul>
     </td>
   </tr>
