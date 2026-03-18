@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-patient-identifier-vs | *Version*:2.2.0-ballot |
-| Active as of 2026-03-10 | *Computable Name*:TDDUIPatientIdentifierVs |
+| Active as of 2026-03-18 | *Computable Name*:TDDUIPatientIdentifierVs |
 
  
 ValueSet for TDDUI Patient's identifier types 
@@ -17,6 +17,8 @@ ValueSet for TDDUI Patient's identifier types
  **References** 
 
 * [TDDUI Patient](StructureDefinition-tddui-patient.md)
+* [TDDUI Patient](StructureDefinition-tddui-patient.md)
+* [TDDUI Patient INS](StructureDefinition-tddui-patient-ins.md)
 * [TDDUI Patient INS](StructureDefinition-tddui-patient-ins.md)
 
 ### Définition logique (CLD)
@@ -55,7 +57,7 @@ ValueSet for TDDUI Patient's identifier types
   "title" : "TDDUI Patient Identifier ValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-10T13:12:33+00:00",
+  "date" : "2026-03-18T14:29:18+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

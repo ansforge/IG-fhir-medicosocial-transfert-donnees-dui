@@ -9,13 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-type-vs | *Version*:2.2.0-ballot |
-| Active as of 2026-03-10 | *Computable Name*:TDDUIEncounterTypeVs |
+| Active as of 2026-03-18 | *Computable Name*:TDDUIEncounterTypeVs |
 
  
 ValueSet for TDDUI Encounter's types 
 
  **References** 
 
+* [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)
 * [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)
 
 ### Définition logique (CLD)
@@ -54,7 +55,7 @@ ValueSet for TDDUI Encounter's types
   "title" : "TDDUI Encounter Type ValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-10T13:12:33+00:00",
+  "date" : "2026-03-18T14:29:18+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

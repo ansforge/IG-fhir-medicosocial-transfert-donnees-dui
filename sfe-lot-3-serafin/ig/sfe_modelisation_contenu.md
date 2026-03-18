@@ -1137,6 +1137,7 @@ Cette classe décrit le statut des ressources (Evenement, Evaluation, Projet per
 * Pour le projet personnalisé seuls les codes suivants sont à utiliser : ENPREPARATION, ENCOURS, ENPAUSE, TERMINE 
 * Pour l'Objectif, l'Action et la Prestation du Projet personnalisé seuls les codes suivants sont à utiliser : ENPREPARATION, ACTIF, TERMINE, ANNULE
 * Pour le Projet de vie seuls les codes suivants sont à utiliser : ENPREPARATION, ENCOURS, TERMINE
+* Les statuts de la Présence/Absence correspondent uniquement aux codes suivants : programmé, réalisé, validé, facturé 
 
 * Nom: motifNonRealisation : [0..1] Code
   * Description: Motif associé au statut de non-réalisation de l’évènement.Jeu(x) de valeur(s) associé(s) : JDV_MotifNonRealisationEvenement_CISIS avec l'OID 1.2.250.1.213.1.1.5.803 publié sur[annexe-vocabulaire-et-jeux-de-valeurs](https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs)
