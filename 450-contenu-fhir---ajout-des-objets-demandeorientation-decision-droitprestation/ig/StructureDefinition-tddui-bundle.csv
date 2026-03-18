@@ -3116,7 +3116,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 This outcome is not used for error responses in batch/transaction, only for hints and warnings. In a batch operation, the error will be in Bundle.entry.response, and for transaction, there will be a single OperationOutcome instead of a bundle in the case of an error.","","","","","","","","",,,,,"",,,,"Bundle.entry.response.outcome",0,1,"",""
 "Bundle.entry:DUIBasicDroitDecision","Bundle.entry","DUIBasicDroitDecision","","",0,*,"","","Y","BackboneElement {[]} {[]}
-","Basic conforming to the TDDUIBasicDroitDecision profile, used to convey the decision of the CDAPH.","An entry in a bundle resource - will either contain a resource or information about a resource (transactions and history only).","","","","","","","","","",,,,,"",,,,"Bundle.entry",0,*,"","bdl-5:must be a resource unless there's a request or response {resource.exists() or request.exists() or response.exists()}
+","Basic conforming to the TDDUIBasicDecision profile, used to convey the decision of the CDAPH.","An entry in a bundle resource - will either contain a resource or information about a resource (transactions and history only).","","","","","","","","","",,,,,"",,,,"Bundle.entry",0,*,"","bdl-5:must be a resource unless there's a request or response {resource.exists() or request.exists() or response.exists()}
 bdl-8:fullUrl cannot be a version specific reference {fullUrl.contains('/_history/').not()}ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}"
 "Bundle.entry:DUIBasicDroitDecision.id","Bundle.entry.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
@@ -3141,7 +3141,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Bundle.entry:DUIBasicDroitDecision.resource","Bundle.entry.resource","","Z-resource
-Extension-resourceCustom-resource","",1,1,"","","","Basic {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-basic-droit-decision]]} {[]}
+Extension-resourceCustom-resource","",1,1,"","","","Basic {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-basic-decision]]} {[]}
 ","Resource for non-supported content","Basic is used for handling concepts not yet defined in FHIR, narrative-only resources that don't map to an existing resource, and custom resources not appropriate for inclusion in the FHIR specification.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"","","Entity. Role, or Act","Act, Entity or Role"
 "Bundle.entry:DUIBasicDroitDecision.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2

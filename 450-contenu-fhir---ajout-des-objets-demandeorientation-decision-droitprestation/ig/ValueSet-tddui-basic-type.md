@@ -9,14 +9,15 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-basic-type | *Version*:2.3.0-ballot |
-| Active as of 2026-03-17 | *Computable Name*:TDDUIBasicType |
+| Active as of 2026-03-18 | *Computable Name*:TDDUIBasicType |
 
  
 ValueSet pour le code de la ressource Basic. 
 
  **References** 
 
-* [TDDUI Basic Droit Decision](StructureDefinition-tddui-basic-droit-decision.md)
+* [TDDUI Basic Decision](StructureDefinition-tddui-basic-decision.md)
+* [TDDUI Basic Decision](StructureDefinition-tddui-basic-decision.md)
 
 ### Définition logique (CLD)
 
@@ -54,7 +55,7 @@ ValueSet pour le code de la ressource Basic.
   "title" : "TDDUI Basic Type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-17T13:04:13+00:00",
+  "date" : "2026-03-18T17:17:44+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

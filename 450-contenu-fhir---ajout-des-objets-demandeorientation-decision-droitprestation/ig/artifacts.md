@@ -33,7 +33,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 
 | | |
 | :--- | :--- |
-| [TDDUI Basic Droit Decision](StructureDefinition-tddui-basic-droit-decision.md) | Profil de la ressource Basic permettant de représenter la décision de la CDAPH ainsi que les droits associés. |
+| [TDDUI Basic Decision](StructureDefinition-tddui-basic-decision.md) | Profil de la ressource Basic permettant de représenter la décision de la CDAPH ainsi que les droits associés. |
 | [TDDUI Bundle](StructureDefinition-tddui-bundle.md) | Profil générique créé pour transmettre des données d'un logiciel DUI. |
 | [TDDUI CarePlan Projet Personalise](StructureDefinition-tddui-careplan-projet-personnalise.md) | Profil de la ressource CarePlan représentant le projet personnalisé d'un usager. |
 | [TDDUI Consent Accord](StructureDefinition-tddui-consent-accord.md) | Profil de la ressource Consent permettant de représenter l'accord de l'usager, de son entourage ou de la structure. |
@@ -91,8 +91,8 @@ These define constraints on FHIR data types for systems conforming to this imple
 * **Évaluation** : commentaire libre sur le contenu ou le résultat de l’évaluation.
 * **Champ évalué** : commentaire spécifique à un item ou sous-item évalué.
  |
+| [TDDUI Decision](StructureDefinition-tddui-decision.md) | Extension complexe représentant la décision et les droits associés |
 | [TDDUI Discriminator](StructureDefinition-tddui-discriminator.md) | Extension pour discriminer les éléments CarePlan.supportingInfo et Goal.note. |
-| [TDDUI Droit Decision](StructureDefinition-tddui-droit-decision.md) | Extension complexe représentant la décision et les droits associés |
 | [TDDUI Entry Date Origin](StructureDefinition-tddui-entry-date-origin.md) | Extension permettant de véhiculer la date d'entrée dans l'ESSMS de provenance. |
 | [TDDUI Entry Mode label](StructureDefinition-tddui-entry-mode-label.md) | Libellé du mode d’entée du séjour. |
 | [TDDUI Evaluation Ref](StructureDefinition-tddui-evaluation-reference.md) | Liens vers l'évaluation, utilisables dans le profil TDDUIGoalObjectif. |
@@ -120,6 +120,7 @@ These define sets of codes used by systems conforming to this implementation gui
 
 | | |
 | :--- | :--- |
+| [TDDUI Basic Decision Identifier](ValueSet-tddui-basic-decision-identifier.md) | ValueSet pour la définition des codes d'identifiant de la décision de la CDAPH. |
 | [TDDUI Basic Type](ValueSet-tddui-basic-type.md) | ValueSet pour le code de la ressource Basic. |
 | [TDDUI CIM10](ValueSet-tddui-cim-10.md) | ValueSet incluant les codes de la terminologie CIM-1O. |
 | [TDDUI CarePlan supportingInfo](ValueSet-tddui-care-plan-supporting-info.md) | ValueSet définissant les types de notes pour l'élément CarePlan.supportingInfo. |
@@ -136,7 +137,7 @@ These define sets of codes used by systems conforming to this implementation gui
 | [TDDUI Patient Identifier](ValueSet-tddui-patient-identifier.md) | ValueSet pour la définition des codes d'identifiant de l'usager |
 | [TDDUI Related Person Relashionship](ValueSet-tddui-contact-related-person-relashionship.md) | ValueSet définissant les slices de RelatedPerson.relationship. |
 | [TDDUI SERAFIN](ValueSet-tddui-serafin.md) | ValueSet contenant les codes SERAFIN (prestations directes et indirectes) pour le profil TDDUI Encounter Evenement. |
-| [TDDUI ServiceRequest SupportingInfo](ValueSet-tddui-servicerequest-supportinginfo.md) | ValueSet définissant les types de notes pour l'élément Goal.note. |
+| [TDDUI ServiceRequest SupportingInfo](ValueSet-tddui-servicerequest-supportinginfo.md) | ValueSet définissant les types d'objet binaire de la demande d'orientation. |
 | [TDDUI Task Input Action](ValueSet-tddui-task-input-action.md) | ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les actions du projet personnalisé. |
 | [TDDUI Task Input Bilan](ValueSet-tddui-task-input-bilan.md) | ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour le bilan du projet personnalisé. |
 | [TDDUI Task Input Moyen Ressource](ValueSet-tddui-task-input-moyen-ressource.md) | ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les moyens et ressources du projet personnalisé. |
@@ -150,6 +151,7 @@ These define new code systems used by systems conforming to this implementation 
 
 | | |
 | :--- | :--- |
+| [TDDUI Basic Decision Identifier](CodeSystem-tddui-basic-decision-identifier.md) | CodeSystem pour la définition des codes d'identifiant de la décision de la CDAPH |
 | [TDDUI Basic Type](CodeSystem-tddui-basic-type.md) | CodeSystem pour la définition de la ressource Basic |
 | [TDDUI Discriminator](CodeSystem-tddui-discriminator.md) | CodeSystem définissant les codes discriminants. |
 | [TDDUI Encounter Identifier](CodeSystem-tddui-encounter-identifier.md) | CodeSystem pour la définition des codes d'identifiant de séjour |
@@ -169,7 +171,7 @@ These are example instances that show what data produced and consumed by systems
 
 | | |
 | :--- | :--- |
-| [TDDUI Basic Droit Decision Example](Basic-tddui-basic-droit-decision-example.md) | Exemple de la ressource TDDUIBasicDroitDecision |
+| [TDDUI Basic Decision Example](Basic-tddui-basic-decision-example.md) | Exemple de la ressource TDDUIBasicDroitDecision |
 | [TDDUI Bundle Example](Bundle-tddui-bundle-example.md) | Exemple de bundle conforme au profil TDDUIBundle |
 | [TDDUI Encounter Evenement Example](Encounter-tddui-encounter-evenement-example.md) | Exemple d'un évènement |
 | [TDDUI Encounter Sejour Example](Encounter-tddui-encounter-sejour-example.md) | Exemple d'un séjour en ESSMS |
@@ -223,6 +225,7 @@ These are example instances that show what data produced and consumed by systems
 | [TDDUI Questionnaire Response SERAFIN Sans Precision Example](QuestionnaireResponse-tddui-questionnaire-response-serafin-sans-precision-example.md) | Evaluation SERAFIN pour un besoin d'hébergement adapté sans précision |
 | [TDDUI Questionnaire Response Situation SSIAD Example](QuestionnaireResponse-tddui-questionnaire-response-situation-ssiad-example.md) | Grille de réponse de la situation SSIAD |
 | [TDDUI Related Person Contact Example](RelatedPerson-tddui-related-person-contact-example.md) | Exemple d'un contact. |
+| [TDDUI ServiceRequest DemandeOrientation Example](ServiceRequest-tddui-service-request-demande-orientation-example.md) | Exemple d'une demande d'orientation. |
 | [TDDUI Task Transport Example](Task-tddui-task-transport-example.md) | Exemple du transport. |
 | [TDDUI Task Transport Professionel Example](Task-tddui-task-transport-professionel-example.md) | Exemple du transport du professionnel. |
 | [TDDUI Task Transport Usager Example](Task-tddui-task-transport-usager-example.md) | Exemple du transport de l'usager. |

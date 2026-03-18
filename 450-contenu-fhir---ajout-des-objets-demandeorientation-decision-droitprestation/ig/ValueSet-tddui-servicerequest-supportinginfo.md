@@ -9,13 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-servicerequest-supportinginfo | *Version*:2.3.0-ballot |
-| Active as of 2026-03-17 | *Computable Name*:TDDUIServiceRequestSupportingInfo |
+| Active as of 2026-03-18 | *Computable Name*:TDDUIServiceRequestSupportingInfo |
 
  
-ValueSet définissant les types de notes pour l'élément Goal.note. 
+ValueSet définissant les types d'objet binaire de la demande d'orientation. 
 
  **References** 
 
+* [TDDUI ServiceRequest DemandeOrientation](StructureDefinition-tddui-service-request-demande-orientation.md)
 * [TDDUI ServiceRequest DemandeOrientation](StructureDefinition-tddui-service-request-demande-orientation.md)
 
 ### Définition logique (CLD)
@@ -54,7 +55,7 @@ ValueSet définissant les types de notes pour l'élément Goal.note.
   "title" : "TDDUI ServiceRequest SupportingInfo",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-17T13:04:13+00:00",
+  "date" : "2026-03-18T17:17:44+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -63,7 +64,7 @@ ValueSet définissant les types de notes pour l'élément Goal.note.
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "ValueSet définissant les types de notes pour l'élément Goal.note.",
+  "description" : "ValueSet définissant les types d'objet binaire de la demande d'orientation.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

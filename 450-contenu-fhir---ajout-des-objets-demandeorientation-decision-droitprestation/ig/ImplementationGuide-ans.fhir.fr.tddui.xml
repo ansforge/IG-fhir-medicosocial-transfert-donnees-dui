@@ -10,7 +10,7 @@
   <name value="TDDUI"/>
   <title value="Médicosocial - Transfert de données DUI"/>
   <status value="active"/>
-  <date value="2026-03-17T13:04:13+00:00"/>
+  <date value="2026-03-18T17:17:44+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -285,7 +285,7 @@
       </valueReference>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools.r4#0.9.0"/>
+      <valueCode value="hl7.fhir.uv.tools.r4#1.1.0"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -552,9 +552,9 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/tddui-basic-droit-decision"/>
+        <reference value="StructureDefinition/tddui-basic-decision"/>
       </reference>
-      <name value="TDDUI Basic Droit Decision"/>
+      <name value="TDDUI Basic Decision"/>
       <description value="Profil de la ressource Basic permettant de représenter la décision de la CDAPH ainsi que les droits associés."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -563,11 +563,33 @@
         <valueString value="Basic"/>
       </extension>
       <reference>
-        <reference value="Basic/tddui-basic-droit-decision-example"/>
+        <reference value="Basic/tddui-basic-decision-example"/>
       </reference>
-      <name value="TDDUI Basic Droit Decision Example"/>
+      <name value="TDDUI Basic Decision Example"/>
       <description value="Exemple de la ressource TDDUIBasicDroitDecision"/>
-      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-basic-droit-decision"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-basic-decision"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/tddui-basic-decision-identifier"/>
+      </reference>
+      <name value="TDDUI Basic Decision Identifier"/>
+      <description value="ValueSet pour la définition des codes d'identifiant de la décision de la CDAPH."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/tddui-basic-decision-identifier"/>
+      </reference>
+      <name value="TDDUI Basic Decision Identifier"/>
+      <description value="CodeSystem pour la définition des codes d'identifiant de la décision de la CDAPH"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -717,6 +739,17 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/tddui-decision"/>
+      </reference>
+      <name value="TDDUI Decision"/>
+      <description value="Extension complexe représentant la décision et les droits associés"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/tddui-discriminator"/>
       </reference>
       <name value="TDDUI Discriminator"/>
@@ -754,17 +787,6 @@
       </reference>
       <name value="TDDUI DocumentReference"/>
       <description value="Profil de la ressource SimplifiedPublishDocumentReference permettant de véhiculer des pièces jointes que ce soit pour l'évaluation, l'évènement ou le projet personnalisé."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/tddui-droit-decision"/>
-      </reference>
-      <name value="TDDUI Droit Decision"/>
-      <description value="Extension complexe représentant la décision et les droits associés"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1891,13 +1913,24 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/tddui-service-request-demande-orientation-example"/>
+      </reference>
+      <name value="TDDUI ServiceRequest DemandeOrientation Example"/>
+      <description value="Exemple d'une demande d'orientation."/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-demande-orientation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
         <reference value="ValueSet/tddui-servicerequest-supportinginfo"/>
       </reference>
       <name value="TDDUI ServiceRequest SupportingInfo"/>
-      <description value="ValueSet définissant les types de notes pour l'élément Goal.note."/>
+      <description value="ValueSet définissant les types d'objet binaire de la demande d'orientation."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

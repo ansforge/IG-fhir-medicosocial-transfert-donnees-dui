@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference | *Version*:2.3.0-ballot |
-| Active as of 2026-03-17 | *Computable Name*:TDDUIDocumentReference |
+| Active as of 2026-03-18 | *Computable Name*:TDDUIDocumentReference |
 
  
 Profil de la ressource SimplifiedPublishDocumentReference permettant de véhiculer des pièces jointes que ce soit pour l'évaluation, l'évènement ou le projet personnalisé. 
@@ -22,7 +22,7 @@ Profil de la ressource SimplifiedPublishDocumentReference permettant de véhicul
 **Utilisations:**
 
 * Utilise ce/t/te Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
-* Référence ce Profil: [TDDUI Attachment](StructureDefinition-tddui-attachment.md), [TDDUI Task Action](StructureDefinition-tddui-task-action.md), [TDDUI Task Bilan](StructureDefinition-tddui-task-bilan.md), [TDDUI Task MoyenRessource](StructureDefinition-tddui-task-moyen-ressource.md) and [TDDUI Task Prestation](StructureDefinition-tddui-task-prestation.md)
+* Référence ce Profil: [TDDUI Attachment](StructureDefinition-tddui-attachment.md), [TDDUI ServiceRequest DemandeOrientation](StructureDefinition-tddui-service-request-demande-orientation.md), [TDDUI Task Action](StructureDefinition-tddui-task-action.md), [TDDUI Task Bilan](StructureDefinition-tddui-task-bilan.md)... Show 2 more, [TDDUI Task MoyenRessource](StructureDefinition-tddui-task-moyen-ressource.md) and [TDDUI Task Prestation](StructureDefinition-tddui-task-prestation.md)
 * Exemples pour ce/t/te Profil: [DocumentReference/tddui-pp-pa-documentreference-bilan-objectif-1-example](DocumentReference-tddui-pp-pa-documentreference-bilan-objectif-1-example.md) and [DocumentReference/tddui-pp-pa-documentreference-entrant-example](DocumentReference-tddui-pp-pa-documentreference-entrant-example.md)
 * CapabilityStatements utilisant ce Profil: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-document-refer
   "name" : "TDDUIDocumentReference",
   "title" : "TDDUI DocumentReference",
   "status" : "active",
-  "date" : "2026-03-17T13:04:13+00:00",
+  "date" : "2026-03-18T17:17:44+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

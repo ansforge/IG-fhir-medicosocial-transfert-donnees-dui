@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui | *Version*:2.3.0-ballot |
-| Active as of 2026-03-17 | *Computable Name*:TDDUI |
+| Active as of 2026-03-18 | *Computable Name*:TDDUI |
 
  **Brief description of this Implementation Guide**
  The Digital User File (DUI) centralizes all information concerning the person being cared for in social and medico-social facilities and services. The aim of this implementation guide is to define the specifications for DUI data transfer. 
@@ -72,7 +72,7 @@ Les ressources profilées dans le cadre de ce guide d'implémentation sont les s
 | | | |
 | :--- | :--- | :--- |
 | Profil parent | Profil | Description |
-| [Basic](http://hl7.org/fhir/StructureDefinition/Basic) | [TDDUIBasicDroitDecision](StructureDefinition-tddui-basic-droit-decision.md) | Profil de la ressource Basic permettant de représenter la décision de la CDAPH ainsi que les droits associés. |
+| [Basic](http://hl7.org/fhir/StructureDefinition/Basic) | [TDDUIBasicDecision](StructureDefinition-tddui-basic-decision.md) | Profil de la ressource Basic permettant de représenter la décision de la CDAPH ainsi que les droits associés. |
 | [Bundle](http://hl7.org/fhir/StructureDefinition/Bundle) | [TDDUIBundle](StructureDefinition-tddui-bundle.md) | Profil générique créé pour transmettre des données d'un logiciel DUI. |
 | [CarePlan](http://hl7.org/fhir/StructureDefinition/CarePlan) | [TDDUICarePlanProjetPersonnalise](StructureDefinition-tddui-careplan-projet-personnalise.md) | Profil de la ressource CarePlan représentant le projet personnalisé d'un usager. |
 | [Consent](http://hl7.org/fhir/StructureDefinition/Consent) | [TDDUIConsentAccord](StructureDefinition-tddui-consent-accord.md) | Profil de la ressource Consent permettant de représenter l'accord de l'usager, de son entourage ou de la structure. |
@@ -148,7 +148,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2026-03-17T13:04:13+00:00",
+  "date" : "2026-03-18T17:17:44+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -513,7 +513,7 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools.r4#0.9.0"
+      "valueCode" : "hl7.fhir.uv.tools.r4#1.1.0"
     },
     {
       "extension" : [{
@@ -866,9 +866,9 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/tddui-basic-droit-decision"
+        "reference" : "StructureDefinition/tddui-basic-decision"
       },
-      "name" : "TDDUI Basic Droit Decision",
+      "name" : "TDDUI Basic Decision",
       "description" : "Profil de la ressource Basic permettant de représenter la décision de la CDAPH ainsi que les droits associés.",
       "exampleBoolean" : false
     },
@@ -878,11 +878,35 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "valueString" : "Basic"
       }],
       "reference" : {
-        "reference" : "Basic/tddui-basic-droit-decision-example"
+        "reference" : "Basic/tddui-basic-decision-example"
       },
-      "name" : "TDDUI Basic Droit Decision Example",
+      "name" : "TDDUI Basic Decision Example",
       "description" : "Exemple de la ressource TDDUIBasicDroitDecision",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-basic-droit-decision"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-basic-decision"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/tddui-basic-decision-identifier"
+      },
+      "name" : "TDDUI Basic Decision Identifier",
+      "description" : "ValueSet pour la définition des codes d'identifiant de la décision de la CDAPH.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/tddui-basic-decision-identifier"
+      },
+      "name" : "TDDUI Basic Decision Identifier",
+      "description" : "CodeSystem pour la définition des codes d'identifiant de la décision de la CDAPH",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -1046,6 +1070,18 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/tddui-decision"
+      },
+      "name" : "TDDUI Decision",
+      "description" : "Extension complexe représentant la décision et les droits associés",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/tddui-discriminator"
       },
       "name" : "TDDUI Discriminator",
@@ -1086,18 +1122,6 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
       },
       "name" : "TDDUI DocumentReference",
       "description" : "Profil de la ressource SimplifiedPublishDocumentReference permettant de véhiculer des pièces jointes que ce soit pour l'évaluation, l'évènement ou le projet personnalisé.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/tddui-droit-decision"
-      },
-      "name" : "TDDUI Droit Decision",
-      "description" : "Extension complexe représentant la décision et les droits associés",
       "exampleBoolean" : false
     },
     {
@@ -2327,13 +2351,25 @@ Les flux présentés dans cette spécification doivent utiliser HTTPS. Pour en s
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/tddui-service-request-demande-orientation-example"
+      },
+      "name" : "TDDUI ServiceRequest DemandeOrientation Example",
+      "description" : "Exemple d'une demande d'orientation.",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-demande-orientation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
         "reference" : "ValueSet/tddui-servicerequest-supportinginfo"
       },
       "name" : "TDDUI ServiceRequest SupportingInfo",
-      "description" : "ValueSet définissant les types de notes pour l'élément Goal.note.",
+      "description" : "ValueSet définissant les types d'objet binaire de la demande d'orientation.",
       "exampleBoolean" : false
     },
     {

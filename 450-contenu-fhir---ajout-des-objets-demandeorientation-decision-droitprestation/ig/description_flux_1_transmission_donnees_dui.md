@@ -50,7 +50,7 @@ Les différentes ressources sont véhiculées via l'élément : Bundle.entry. Le
 * [TDDUIObservationMobiliteUsager](StructureDefinition-tddui-observation-mobilite-usager.md) représentant la mobilité de l'usager.
 * [TDDUIObservationPeriodeScolaire](StructureDefinition-tddui-observation-periode-scolaire.md) représentant la période scolaire de l'usager.
 * [TDDUIServiceRequestDemandeOrientation](StructureDefinition-tddui-service-request-demande-orientation.md) représentant la demande d'orientation adressée à la CDAPH.
-* [TDDUIBasicDroitDecision](StructureDefinition-tddui-basic-droit-decision.md) représentant la décision de la CDAPH ainsi que les droits associés.
+* [TDDUIBasicDecision](StructureDefinition-tddui-basic-decision.md) représentant la décision de la CDAPH ainsi que les droits associés.
 
 Pour toutes ces ressources, seule la création est possible via l'intéraction FHIR [Create](https://hl7.org/fhir/R4/http.html#create).
 

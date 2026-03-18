@@ -47,19 +47,61 @@
       ]
     },
     {
-      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator",
-      "title": "TDDUI Discriminator",
-      "types": [
-        "CodeableConcept"
-      ]
-    },
-    {
-      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-droit-decision",
-      "title": "TDDUI Droit Decision",
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision",
+      "title": "TDDUI Decision",
       "types": [
         "date",
         "date",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
         "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
         "string",
         "date",
         "date",
@@ -67,13 +109,16 @@
         "boolean",
         "Quantity",
         "string",
+        "CodeableConcept",
         "boolean",
         "string",
         "Money",
         "Quantity",
         "Reference",
+        "CodeableConcept",
         "integer",
         "Quantity",
+        "CodeableConcept",
         "base64Binary",
         "boolean",
         "canonical",
@@ -374,6 +419,13 @@
         "UsageContext",
         "Dosage",
         "Meta"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator",
+      "title": "TDDUI Discriminator",
+      "types": [
+        "CodeableConcept"
       ]
     },
     {
@@ -841,8 +893,8 @@
   "profiles": {
     "Basic": [
       {
-        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-basic-droit-decision",
-        "title": "TDDUI Basic Droit Decision"
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-basic-decision",
+        "title": "TDDUI Basic Decision"
       }
     ],
     "Bundle": [
@@ -1174,15 +1226,15 @@
       "QuestionnaireResponse.item.item.item",
       "RelatedPerson"
     ],
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision": [
+      "Basic"
+    ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator": [
       "Bundle.entry.resource.note",
       "Bundle.entry.resource.supportingInfo",
       "CarePlan.supportingInfo",
       "Goal.note",
       "ServiceRequest.supportingInfo"
-    ],
-    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-droit-decision": [
-      "Basic"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-date-origin": [
       "Encounter.hospitalization"

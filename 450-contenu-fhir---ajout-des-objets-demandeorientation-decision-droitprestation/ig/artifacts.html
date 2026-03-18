@@ -324,8 +324,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-tddui-basic-droit-decision.html"
-                  title="StructureDefinition/tddui-basic-droit-decision">TDDUI Basic Droit Decision</a>
+               <a href="StructureDefinition-tddui-basic-decision.html"
+                  title="StructureDefinition/tddui-basic-decision">TDDUI Basic Decision</a>
             </td>
             <td>
 <p>Profil de la ressource Basic permettant de représenter la décision de la CDAPH ainsi que les droits associés.</p>
@@ -677,20 +677,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-decision.html"
+                  title="StructureDefinition/tddui-decision">TDDUI Decision</a>
+            </td>
+            <td>
+<p>Extension complexe représentant la décision et les droits associés</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-tddui-discriminator.html"
                   title="StructureDefinition/tddui-discriminator">TDDUI Discriminator</a>
             </td>
             <td>
 <p>Extension pour discriminer les éléments CarePlan.supportingInfo et Goal.note.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-tddui-droit-decision.html"
-                  title="StructureDefinition/tddui-droit-decision">TDDUI Droit Decision</a>
-            </td>
-            <td>
-<p>Extension complexe représentant la décision et les droits associés</p>
 </td>
          </tr>
          <tr>
@@ -883,6 +883,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
+               <a href="ValueSet-tddui-basic-decision-identifier.html"
+                  title="ValueSet/tddui-basic-decision-identifier">TDDUI Basic Decision Identifier</a>
+            </td>
+            <td>
+<p>ValueSet pour la définition des codes d'identifiant de la décision de la CDAPH.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="ValueSet-tddui-basic-type.html" title="ValueSet/tddui-basic-type">TDDUI Basic Type</a>
             </td>
             <td>
@@ -1028,7 +1037,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="ValueSet/tddui-servicerequest-supportinginfo">TDDUI ServiceRequest SupportingInfo</a>
             </td>
             <td>
-<p>ValueSet définissant les types de notes pour l'élément Goal.note.</p>
+<p>ValueSet définissant les types d'objet binaire de la demande d'orientation.</p>
 </td>
          </tr>
          <tr>
@@ -1093,6 +1102,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-tddui-basic-decision-identifier.html"
+                  title="CodeSystem/tddui-basic-decision-identifier">TDDUI Basic Decision Identifier</a>
+            </td>
+            <td>
+<p>CodeSystem pour la définition des codes d'identifiant de la décision de la CDAPH</p>
+</td>
+         </tr>
          <tr>
             <td style="column-width:30%">
                <a href="CodeSystem-tddui-basic-type.html"
@@ -1211,8 +1229,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="Basic-tddui-basic-droit-decision-example.html"
-                  title="Basic/tddui-basic-droit-decision-example">TDDUI Basic Droit Decision Example</a>
+               <a href="Basic-tddui-basic-decision-example.html"
+                  title="Basic/tddui-basic-decision-example">TDDUI Basic Decision Example</a>
             </td>
             <td>
 <p>Exemple de la ressource TDDUIBasicDroitDecision</p>
@@ -1697,6 +1715,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="ServiceRequest-tddui-service-request-demande-orientation-example.html"
+                  title="ServiceRequest/tddui-service-request-demande-orientation-example">TDDUI ServiceRequest DemandeOrientation Example</a>
+            </td>
+            <td>
+<p>Exemple d'une demande d'orientation.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="Task-tddui-task-transport-example.html"
                   title="Task/tddui-task-transport-example">TDDUI Task Transport Example</a>
             </td>
@@ -1764,7 +1791,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.3.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 17, 2026 13:04+0000">2026-03-17</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.3.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 18, 2026 17:17+0000">2026-03-18</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |

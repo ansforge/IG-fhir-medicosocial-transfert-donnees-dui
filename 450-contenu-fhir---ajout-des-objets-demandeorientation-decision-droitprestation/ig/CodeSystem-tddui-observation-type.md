@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-type | *Version*:2.3.0-ballot |
-| Active as of 2026-03-17 | *Computable Name*:TDDUIObservationType |
+| Active as of 2026-03-18 | *Computable Name*:TDDUIObservationType |
 
  
 CodeSystem pour la défintion des types d'Observation 
@@ -35,7 +35,7 @@ CodeSystem pour la défintion des types d'Observation
   "title" : "TDDUI Observation Type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-17T13:04:13+00:00",
+  "date" : "2026-03-18T17:17:44+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

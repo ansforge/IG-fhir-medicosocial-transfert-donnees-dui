@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-demande-orientation | *Version*:2.3.0-ballot |
-| Active as of 2026-03-17 | *Computable Name*:TDDUIServiceRequestDemandeOrientation |
+| Active as of 2026-03-18 | *Computable Name*:TDDUIServiceRequestDemandeOrientation |
 
  
 Profil de la ressource ServiceRequest permettant de représenter la demande d'orientation adressée à la CDAPH. 
@@ -17,6 +17,8 @@ Profil de la ressource ServiceRequest permettant de représenter la demande d'or
 **Utilisations:**
 
 * Utilise ce/t/te Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
+* Référence ce Profil: [TDDUI Basic Decision](StructureDefinition-tddui-basic-decision.md)
+* Exemples pour ce/t/te Profil: [ServiceRequest/tddui-service-request-demande-orientation-example](ServiceRequest-tddui-service-request-demande-orientation-example.md)
 * CapabilityStatements utilisant ce Profil: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-service-request-demande-orientation)
@@ -42,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-service-reques
   "name" : "TDDUIServiceRequestDemandeOrientation",
   "title" : "TDDUI ServiceRequest DemandeOrientation",
   "status" : "active",
-  "date" : "2026-03-17T13:04:13+00:00",
+  "date" : "2026-03-18T17:17:44+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -117,15 +119,13 @@ Other representations of profile: [CSV](StructureDefinition-tddui-service-reques
     {
       "id" : "ServiceRequest.identifier.system",
       "path" : "ServiceRequest.identifier.system",
-      "patternUri" : "https://identifiant-medicosocial-demandeorientation.esante.gouv.fr"
+      "short" : "oid de la MPDH",
+      "min" : 1
     },
     {
       "id" : "ServiceRequest.identifier.value",
       "path" : "ServiceRequest.identifier.value",
-      "example" : [{
-        "label" : "du format d'identifiant à respecter : idDemandeOrientationMDPHInitial/idMDPHInitial",
-        "valueString" : "12345/67890"
-      }]
+      "min" : 1
     },
     {
       "id" : "ServiceRequest.category",
@@ -229,6 +229,10 @@ Other representations of profile: [CSV](StructureDefinition-tddui-service-reques
       "short" : "Demande d'orientation",
       "min" : 0,
       "max" : "*",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"]
+      }],
       "mapping" : [{
         "identity" : "specmetier-to-TDDUIServiceRequestDemandeOrientation",
         "map" : "demandeOrientation"
@@ -266,6 +270,10 @@ Other representations of profile: [CSV](StructureDefinition-tddui-service-reques
       "short" : "Dépôt de la poste",
       "min" : 0,
       "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"]
+      }],
       "mapping" : [{
         "identity" : "specmetier-to-TDDUIServiceRequestDemandeOrientation",
         "map" : "depotPoste"
@@ -303,6 +311,10 @@ Other representations of profile: [CSV](StructureDefinition-tddui-service-reques
       "short" : "Réponse de la CDAPH à la demande d'orientation",
       "min" : 0,
       "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"]
+      }],
       "mapping" : [{
         "identity" : "specmetier-to-TDDUIServiceRequestDemandeOrientation",
         "map" : "reponseOrientation"
@@ -340,6 +352,10 @@ Other representations of profile: [CSV](StructureDefinition-tddui-service-reques
       "short" : "Pièce(s) complémentaire(s) à la demande d'orientation.",
       "min" : 0,
       "max" : "*",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"]
+      }],
       "mapping" : [{
         "identity" : "specmetier-to-TDDUIServiceRequestDemandeOrientation",
         "map" : "pieceComplementaire"

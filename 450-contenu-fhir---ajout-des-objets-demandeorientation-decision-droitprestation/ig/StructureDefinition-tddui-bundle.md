@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle | *Version*:2.3.0-ballot |
-| Active as of 2026-03-17 | *Computable Name*:TDDUIBundle |
+| Active as of 2026-03-18 | *Computable Name*:TDDUIBundle |
 
  
 Profil générique créé pour transmettre des données d'un logiciel DUI. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
   "name" : "TDDUIBundle",
   "title" : "TDDUI Bundle",
   "status" : "active",
-  "date" : "2026-03-17T13:04:13+00:00",
+  "date" : "2026-03-18T17:17:44+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -785,7 +785,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
       "id" : "Bundle.entry:DUIBasicDroitDecision",
       "path" : "Bundle.entry",
       "sliceName" : "DUIBasicDroitDecision",
-      "short" : "Basic conforming to the TDDUIBasicDroitDecision profile, used to convey the decision of the CDAPH.",
+      "short" : "Basic conforming to the TDDUIBasicDecision profile, used to convey the decision of the CDAPH.",
       "min" : 0,
       "max" : "*"
     },
@@ -795,7 +795,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
       "min" : 1,
       "type" : [{
         "code" : "Basic",
-        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-basic-droit-decision"]
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-basic-decision"]
       }]
     },
     {

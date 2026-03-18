@@ -9,13 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-type | *Version*:2.3.0-ballot |
-| Active as of 2026-03-17 | *Computable Name*:TDDUIEncounterType |
+| Active as of 2026-03-18 | *Computable Name*:TDDUIEncounterType |
 
  
 ValueSet pour la définition des codes de type de séjour 
 
  **References** 
 
+* [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)
 * [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)
 
 ### Définition logique (CLD)
@@ -54,7 +55,7 @@ ValueSet pour la définition des codes de type de séjour
   "title" : "TDDUI Encounter Type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-17T13:04:13+00:00",
+  "date" : "2026-03-18T17:17:44+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -82,7 +83,8 @@ ValueSet pour la définition des codes de type de séjour
       "valueSet" : ["https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-evenement-ssiad-cisis"]
     },
     {
-      "system" : "http://terminology.hl7.org/CodeSystem/data-absent-reason"
+      "system" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+      "version" : "1.0.0"
     }]
   }
 }

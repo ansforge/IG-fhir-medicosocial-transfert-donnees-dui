@@ -1,0 +1,60 @@
+{
+  "resourceType" : "Basic",
+  "id" : "tddui-basic-decision-example",
+  "meta" : {
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-basic-decision"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Basique tddui-basic-decision-example</b></p><a name=\"tddui-basic-decision-example\"> </a><a name=\"hctddui-basic-decision-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-basic-decision.html\">TDDUI Basic Decision</a></p></div><blockquote><p><b>TDDUI Decision</b></p><blockquote><p><b>droitPrestation</b></p><blockquote><p><b>url</b></p>dateOuverture</blockquote><p><b>value</b>: 2020-01-01</p><blockquote><p><b>url</b></p>dateEcheance</blockquote><p><b>value</b>: 2020-12-31</p><blockquote><p><b>url</b></p>existencePAG</blockquote><p><b>value</b>: false</p><blockquote><p><b>url</b></p>detailPrestation</blockquote></blockquote><blockquote><p><b>url</b></p>decision</blockquote></blockquote><p><b>identifier</b>: Identifiant principal de la décision/1254\u00a0(utilisation :\u00a0official,\u00a0)</p><p><b>code</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-basic-type DECISION}\">Décision</span></p><p><b>subject</b>: <a href=\"ServiceRequest-tddui-service-request-demande-orientation-example.html\">ServiceRequest : identifier = 2.16.840.1.113883.2.8.3.75.1#1234; status = active; intent = plan; occurrence[x] = 2020-01-01 --&gt; 2020-01-31</a></p></div>"
+  },
+  "extension" : [{
+    "extension" : [{
+      "extension" : [{
+        "extension" : [{
+          "url" : "dateOuverture",
+          "valueDate" : "2020-01-01"
+        },
+        {
+          "url" : "dateEcheance",
+          "valueDate" : "2020-12-31"
+        },
+        {
+          "url" : "existencePAG",
+          "valueBoolean" : false
+        },
+        {
+          "extension" : [{
+            "url" : "structureAccueil"
+          }],
+          "url" : "detailPrestation"
+        }],
+        "url" : "droitPrestation"
+      }],
+      "url" : "decision"
+    }],
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision"
+  }],
+  "identifier" : [{
+    "use" : "official",
+    "type" : {
+      "coding" : [{
+        "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-basic-decision-identifier",
+        "code" : "IDDECISION",
+        "display" : "Identifiant principal de la décision"
+      }]
+    },
+    "system" : "2.16.840.1.113883.2.8.3.75.1",
+    "value" : "1254"
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-basic-type",
+      "code" : "DECISION",
+      "display" : "Décision"
+    }]
+  },
+  "subject" : {
+    "reference" : "ServiceRequest/tddui-service-request-demande-orientation-example"
+  }
+}

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-patient-identifier | *Version*:2.3.0-ballot |
-| Active as of 2026-03-17 | *Computable Name*:TDDUIPatientIdentifier |
+| Active as of 2026-03-18 | *Computable Name*:TDDUIPatientIdentifier |
 
  
 ValueSet pour la définition des codes d'identifiant de l'usager 
@@ -17,6 +17,8 @@ ValueSet pour la définition des codes d'identifiant de l'usager
  **References** 
 
 * [TDDUI Patient](StructureDefinition-tddui-patient.md)
+* [TDDUI Patient](StructureDefinition-tddui-patient.md)
+* [TDDUI Patient INS](StructureDefinition-tddui-patient-ins.md)
 * [TDDUI Patient INS](StructureDefinition-tddui-patient-ins.md)
 
 ### Définition logique (CLD)
@@ -55,7 +57,7 @@ ValueSet pour la définition des codes d'identifiant de l'usager
   "title" : "TDDUI Patient Identifier",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-17T13:04:13+00:00",
+  "date" : "2026-03-18T17:17:44+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -80,7 +82,8 @@ ValueSet pour la définition des codes d'identifiant de l'usager
       "valueSet" : ["http://hl7.org/fhir/ValueSet/identifier-type"]
     },
     {
-      "system" : "http://terminology.hl7.org/CodeSystem/v2-0203"
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+      "version" : "5.0.0"
     },
     {
       "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203"
