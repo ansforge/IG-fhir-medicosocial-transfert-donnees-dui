@@ -34,9 +34,10 @@ Description: "Profil générique créé pour transmettre des données d'un logic
     DUIRelatedPersonContact 0..* and 
     DUIObservationCauseMortalite 0..* and
     DUIObservationPeriodeScolaire 0..* and
-    DUIObservationMobiliteUsager 0..*
-
-
+    DUIObservationMobiliteUsager 0..* and
+    DUIObservationRepas 0..* and
+    DUISchedule 0..* and
+    DUISlotPresenceAbsence 0..*
 
 * entry[DUIPatient].resource only TDDUIPatient
 * entry[DUIPatient] ^short = "Patient conforming to the TDDUIPatient profile, used to convey patients without an INS identity."
@@ -181,3 +182,21 @@ Description: "Profil générique créé pour transmettre des données d'un logic
 * entry[DUIObservationMobiliteUsager].resource 1..1
 * entry[DUIObservationMobiliteUsager].request 1..1
 * entry[DUIObservationMobiliteUsager].request.method = #POST
+
+* entry[DUIObservationRepas].resource only TDDUIObservationRepas
+* entry[DUIObservationRepas] ^short = "Observation conforming to the DUIObservationRepas profile, used to convey the meals."
+* entry[DUIObservationRepas].resource 1..1
+* entry[DUIObservationRepas].request 1..1
+* entry[DUIObservationRepas].request.method = #POST
+
+* entry[DUISchedule].resource only TDDUISchedule
+* entry[DUISchedule] ^short = "Schedule conforming to the TDDUISchedule profile, used to convey the schedule."
+* entry[DUISchedule].resource 1..1
+* entry[DUISchedule].request 1..1
+* entry[DUISchedule].request.method = #POST
+
+* entry[DUISlotPresenceAbsence].resource only TDDUISlotPresenceAbsence
+* entry[DUISlotPresenceAbsence] ^short = "Slot conforming to the TDDUISlotPresenceAbsence profile, used to convey the presence or absence."
+* entry[DUISlotPresenceAbsence].resource 1..1
+* entry[DUISlotPresenceAbsence].request 1..1
+* entry[DUISlotPresenceAbsence].request.method = #POST

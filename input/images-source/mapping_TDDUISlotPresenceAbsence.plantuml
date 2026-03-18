@@ -1,0 +1,30 @@
+@startuml
+
+map "Statut.statut : status" as Statut #DarkGray {
+    Statut.auteur => <&plus> TDDUIStatusAuthor
+}
+
+map "TDDUISchedule" as Schedule #DarkGray {
+    actor => Usager
+}
+
+object "**TDDUIPatient/TDDUIPatientINS**" as TDDUIPatient_subject #80b1d3 {
+    Usager
+}
+
+map "**PresenceAbsence : TDDUISlotPresenceAbsence**" as PresenceAbsence #d9d9d9 {
+    absencePrevue => <&plus> TDDUIPlannedAbsence
+    idPresenceAbsenceUsager => identifier
+    dateDebutPresenceAbsence => start
+    dateFinPresenceAbsence => end
+    typePresenceAbsence => serviceType
+    motifAbsence => appointmentType
+    Statut.statut => status
+    Statut.dateStatut => meta.lastUpdated
+    schedule *-> Schedule
+}
+
+PresenceAbsence::Statut.statut -u-> Statut
+Schedule::actor -> TDDUIPatient_subject
+
+@enduml

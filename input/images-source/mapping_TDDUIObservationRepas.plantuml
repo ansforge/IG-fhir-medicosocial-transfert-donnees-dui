@@ -1,0 +1,16 @@
+@startuml
+
+object "**TDDUIPatient/TDDUIPatientINS**" as TDDUIPatient_subject #fdb462 {
+    Usager
+}
+
+map "**Repas : TDDUIObservationRepas**" as Repas #80b1d3 {
+    usagerPresent => <&plus> TDDUIPatientPresent
+    idRepas => identifier
+    dateRepas => effectiveDateTime
+    typeRepas => category
+}
+
+Repas -u-> TDDUIPatient_subject : subject
+
+@enduml
