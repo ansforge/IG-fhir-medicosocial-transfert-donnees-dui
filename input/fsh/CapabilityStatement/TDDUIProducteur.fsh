@@ -86,7 +86,7 @@ Usage: #definition
 * rest.resource[=].interaction[0].code = #create
 
 * rest.resource[14].type = #Basic
-* rest.resource[=].supportedProfile = Canonical(tddui-basic-droit-decision)
+* rest.resource[=].supportedProfile = Canonical(tddui-basic-decision)
 * rest.resource[=].interaction[0].code = #create
 
 * rest.interaction[0].code = #transaction

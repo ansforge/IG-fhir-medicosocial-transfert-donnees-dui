@@ -87,8 +87,8 @@ Usage: #definition
 * rest.resource[=].interaction[0].code = #read
 
 * rest.resource[14].type = #Basic
-* rest.resource[=].supportedProfile = Canonical(tddui-basic-droit-decision)
-* rest.resource[=].interaction[0].code = #create
+* rest.resource[=].supportedProfile = Canonical(tddui-basic-decision)
+* rest.resource[=].interaction[0].code = #read
 
 * rest.interaction[0].code = #transaction
 * rest.interaction[=].documentation = "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle"

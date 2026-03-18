@@ -5,9 +5,9 @@ Title: "TDDUI ServiceRequest DemandeOrientation"
 Description: "Profil de la ressource ServiceRequest permettant de représenter la demande d'orientation adressée à la CDAPH." 
 
 * identifier 1..1
-* identifier.value ^example[0].label = "du format d'identifiant à respecter : idDemandeOrientationMDPHInitial/idMDPHInitial"
-* identifier.value ^example[0].valueString = "12345/67890"
-* identifier.system = "https://identifiant-medicosocial-demandeorientation.esante.gouv.fr"
+* identifier.value 1..1
+* identifier.system 1..1
+* identifier.system ^short = "oid de la MPDH"
 
 * category 0..1
 
@@ -27,21 +27,25 @@ Description: "Profil de la ressource ServiceRequest permettant de représenter l
 * supportingInfo[demandeOrientation].extension[TDDUIDiscriminator] 1..1
 * supportingInfo[demandeOrientation].extension[TDDUIDiscriminator].valueCodeableConcept from TDDUIServiceRequestSupportingInfo (required)
 * supportingInfo[demandeOrientation].extension[TDDUIDiscriminator].valueCodeableConcept = TDDUIDiscriminator#demandeOrientation
+* supportingInfo[demandeOrientation] only Reference(TDDUIDocumentReference)
 
 * supportingInfo[depotPoste] ^short = "Dépôt de la poste"
 * supportingInfo[depotPoste].extension[TDDUIDiscriminator] 1..1
 * supportingInfo[depotPoste].extension[TDDUIDiscriminator].valueCodeableConcept from TDDUIServiceRequestSupportingInfo (required)
 * supportingInfo[depotPoste].extension[TDDUIDiscriminator].valueCodeableConcept = TDDUIDiscriminator#depotPoste
+* supportingInfo[depotPoste] only Reference(TDDUIDocumentReference)
 
 * supportingInfo[reponseOrientation] ^short = "Réponse de la CDAPH à la demande d'orientation"
 * supportingInfo[reponseOrientation].extension[TDDUIDiscriminator] 1..1
 * supportingInfo[reponseOrientation].extension[TDDUIDiscriminator].valueCodeableConcept from TDDUIServiceRequestSupportingInfo (required)
 * supportingInfo[reponseOrientation].extension[TDDUIDiscriminator].valueCodeableConcept = TDDUIDiscriminator#reponseOrientation
+* supportingInfo[reponseOrientation] only Reference(TDDUIDocumentReference)
 
 * supportingInfo[pieceComplementaire] ^short = "Pièce(s) complémentaire(s) à la demande d'orientation."
 * supportingInfo[pieceComplementaire].extension[TDDUIDiscriminator] 1..1
 * supportingInfo[pieceComplementaire].extension[TDDUIDiscriminator].valueCodeableConcept from TDDUIServiceRequestSupportingInfo (required)
 * supportingInfo[pieceComplementaire].extension[TDDUIDiscriminator].valueCodeableConcept = TDDUIDiscriminator#pieceComplementaire
+* supportingInfo[pieceComplementaire] only Reference(TDDUIDocumentReference)
 
 * subject only Reference(TDDUIPatient or TDDUIPatientINS)
 

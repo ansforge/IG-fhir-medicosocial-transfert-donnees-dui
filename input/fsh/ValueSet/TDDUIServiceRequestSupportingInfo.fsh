@@ -1,7 +1,7 @@
 ValueSet: TDDUIServiceRequestSupportingInfo
 Id: tddui-servicerequest-supportinginfo
 Title: "TDDUI ServiceRequest SupportingInfo"
-Description: "ValueSet définissant les types de notes pour l'élément Goal.note."
+Description: "ValueSet définissant les types d'objet binaire de la demande d'orientation."
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^experimental = false
 

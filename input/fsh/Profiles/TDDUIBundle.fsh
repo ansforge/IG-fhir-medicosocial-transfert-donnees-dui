@@ -190,8 +190,8 @@ Description: "Profil générique créé pour transmettre des données d'un logic
 * entry[DUIServiceRequestDemandeOrientation].request 1..1
 * entry[DUIServiceRequestDemandeOrientation].request.method = #POST
 
-* entry[DUIBasicDroitDecision].resource only TDDUIBasicDroitDecision
-* entry[DUIBasicDroitDecision] ^short = "Basic conforming to the TDDUIBasicDroitDecision profile, used to convey the decision of the CDAPH."
+* entry[DUIBasicDroitDecision].resource only TDDUIBasicDecision
+* entry[DUIBasicDroitDecision] ^short = "Basic conforming to the TDDUIBasicDecision profile, used to convey the decision of the CDAPH."
 * entry[DUIBasicDroitDecision].resource 1..1
 * entry[DUIBasicDroitDecision].request 1..1
 * entry[DUIBasicDroitDecision].request.method = #POST

@@ -8,4 +8,4 @@ Description: "CodeSystem pour la définition de la ressource Basic"
 * ^content = #complete
 * ^experimental = false
 
-* #DROITDECISION "Droits et Décision" 
+* #DECISION "Décision" 
