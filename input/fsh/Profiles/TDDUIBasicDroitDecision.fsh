@@ -28,8 +28,8 @@ Description: "Profil de la ressource Basic permettant de représenter la décisi
 * identifier[idDecision].value 1..1
 
 * identifier[numeroEnregistrement].type from TDDUIBasicDecisionIdentifier (required)
-* identifier[numeroEnregistrement].type = TDDUIBasicDecisionIdentifier#NUMENREG "Numéro d'enregistrement de la décision"
-* identifier[numeroEnregistrement] ^short = "Numéro d'enregistrement de la décision"
+* identifier[numeroEnregistrement].type = TDDUIBasicDecisionIdentifier#NUMENREG "Numéro enregistrement de la décision"
+* identifier[numeroEnregistrement] ^short = "Numéro enregistrement de la décision"
 * identifier[numeroEnregistrement].system 1..1
 * identifier[numeroEnregistrement].system = "https://identifiant-medicosocial-numenregistrement.esante.gouv.fr/"
 * identifier[numeroEnregistrement].value 1..1
@@ -38,12 +38,12 @@ Description: "Profil de la ressource Basic permettant de représenter la décisi
 * identifier[idNat_Decision].type = TDDUIBasicDecisionIdentifier#IDNATDECISION "Identifiant national de la décision"
 * identifier[idNat_Decision] ^short = "Identifiant national de la décision"
 * identifier[idNat_Decision].system 1..1
-* identifier[idNat_Decision].system = "1.2.250.1.213.8.1"
+* identifier[idNat_Decision].system = "urn:oid:1.2.250.1.213.8.1"
 * identifier[idNat_Decision].value 1..1
 
 * identifier[numeroAllocataire].type from TDDUIBasicDecisionIdentifier (required)
-* identifier[numeroAllocataire].type = TDDUIBasicDecisionIdentifier#NUMALLOC "Numéro d'allocataire"
-* identifier[numeroAllocataire] ^short = "Numéro d'allocataire"
+* identifier[numeroAllocataire].type = TDDUIBasicDecisionIdentifier#NUMALLOC "Numéro allocataire"
+* identifier[numeroAllocataire] ^short = "Numéro allocataire"
 * identifier[numeroAllocataire].system 1..1
 * identifier[numeroAllocataire].system = "https://identifiant-medicosocial-numallocataire.esante.gouv.fr/"
 * identifier[numeroAllocataire].value 1..1

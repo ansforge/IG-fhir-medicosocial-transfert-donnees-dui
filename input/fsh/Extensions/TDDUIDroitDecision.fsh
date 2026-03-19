@@ -32,9 +32,12 @@ Context: Basic
 * extension[decision].extension[dateDecision] ^short = "Date de la décision"
 
 /*
+* extension[decision].extension[motivation].value[x] only CodeableConcept
+* extension[decision].extension[motivation] ^short = "Considération(s) de droit ou de fait qui constituent le fondement de la décision."
+*/
+
 * extension[decision].extension[motivationLocale].value[x] only string
 * extension[decision].extension[motivationLocale] ^short = "Champ libre permettant de renseigner une motivation locale"
-*/
 
 * extension[decision].extension[commentaire].value[x] only string
 * extension[decision].extension[commentaire] ^short = "Commentaire de la décision"

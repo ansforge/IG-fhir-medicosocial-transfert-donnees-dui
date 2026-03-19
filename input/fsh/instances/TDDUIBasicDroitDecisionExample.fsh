@@ -6,7 +6,7 @@ Usage: #example
 
 * identifier[idDecision].use = #official
 * identifier[idDecision].value = "1254"
-* identifier[idDecision].system = "2.16.840.1.113883.2.8.3.75.1"
+* identifier[idDecision].system = "urn:oid:1.2.250.1.213.7.1" // OID MDPH de l'AIN
 
 * subject = Reference(tddui-service-request-demande-orientation-example)
 
@@ -15,3 +15,5 @@ Usage: #example
 * extension[TDDUIDecision].extension[decision].extension[droitPrestation].extension[dateEcheance].valueDate = "2020-12-31"
 
 * extension[TDDUIDecision].extension[decision].extension[droitPrestation].extension[existencePAG].valueBoolean = false
+
+* extension[TDDUIDecision].extension[decision].extension[droitPrestation].extension[detailPrestation].extension[structureAccueil].valueReference = Reference(tddui-organization-example)
