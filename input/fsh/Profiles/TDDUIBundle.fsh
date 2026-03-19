@@ -34,8 +34,8 @@ Description: "Profil générique créé pour transmettre des données d'un logic
     DUIRelatedPersonContact 0..* and 
     DUIObservationCauseMortalite 0..* and
     DUIObservationPeriodeScolaire 0..* and
-    DUIObservationMobiliteUsager 0..*
-
+    DUIObservationMobiliteUsager 0..* and 
+    DUIGoalProjetVie 0..*
 
 
 * entry[DUIPatient].resource only TDDUIPatient
@@ -181,3 +181,9 @@ Description: "Profil générique créé pour transmettre des données d'un logic
 * entry[DUIObservationMobiliteUsager].resource 1..1
 * entry[DUIObservationMobiliteUsager].request 1..1
 * entry[DUIObservationMobiliteUsager].request.method = #POST
+
+* entry[DUIGoalProjetVie].resource only TDDUIGoalProjetVie
+* entry[DUIGoalProjetVie] ^short = "Goal conforming to the TDDUIGoalProjetVie profile, used to convey the life project."
+* entry[DUIGoalProjetVie].resource 1..1
+* entry[DUIGoalProjetVie].request 1..1
+* entry[DUIGoalProjetVie].request.method = #POST
