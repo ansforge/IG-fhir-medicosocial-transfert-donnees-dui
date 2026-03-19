@@ -972,8 +972,6 @@ Le Participant est une personne morale ou physique prenant part à l'événement
 
 * Nom: presenceParticipant : [0..1] Indicateur
   * Description: Indique la présence du participant à l'événement.1= participant présent0= participant absent
-* Nom: roleParticipantEJ : [0..1] Code
-  * Description: Role du participant vis à vis de l'événement (mandataire judiciaire, structure en charge).Jeu(x) de valeur(s) associé(s) : en construction NOS
 * Nom: modeExerciceParticipantPP : [0..1] Code
   * Description: Mode d'exercice de la personne physique. Le mode d'exercice décrit selon quelle modalité une activité est exercée au regard de l'évènement.Jeu(x) de valeur(s) associé(s) :[JDV-J117-ModeExercice-ENREG](https://mos.esante.gouv.fr/NOS/JDV_J117-ModeExercice-ENREG/FHIR/JDV-J117-ModeExercice-ENREG)
 * Nom: participantInterne : [0..1] Indicateur

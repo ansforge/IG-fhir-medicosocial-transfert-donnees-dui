@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-action-valueset | *Version*:2.2.0-ballot |
-| Active as of 2026-03-18 | *Computable Name*:InputTDDUITaskActionValueSet |
+| Active as of 2026-03-19 | *Computable Name*:InputTDDUITaskActionValueSet |
 
  
 ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les actions du projet personnalisé. 
@@ -55,7 +55,7 @@ ValueSet pour la définition des éléments spécifiques des input dans la resso
   "title" : "InputTDDUITaskActionValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-18T14:29:18+00:00",
+  "date" : "2026-03-19T08:56:44+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
