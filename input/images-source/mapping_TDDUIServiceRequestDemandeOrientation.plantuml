@@ -1,0 +1,25 @@
+@startuml
+
+map "<&layers> occurrence[x]:occurrencePeriod" as occurrencexoccurrencePeriod #DarkGray {
+    dateEnvoiDemande => start
+    dateReponseOrientation => end
+}
+
+object "**TDDUIPatient/TDDUIPatientINS**" as TDDUIPatient_subject #fdb462 {
+    Usager
+}
+
+map "**DemandeOrientation : TDDUIServiceRequestDemandeOrientation**" as DemandeOrientation #d9d9d9 {
+    idDemandeOrientation => identifier
+    typeDemande => category
+    natureDemande => code
+    demandeOrientation => <&layers> supportingInfo:demandeOrientation
+    depotPoste => <&layers> supportingInfo:depotPoste
+    reponseOrientation => <&layers> supportingInfo:reponseOrientation
+    pieceComplementaire => <&layers> supportingInfo:pieceComplementaire
+    <&layers> occurrence[x]:occurrencePeriod *-> occurrencexoccurrencePeriod
+}
+
+DemandeOrientation -u-> TDDUIPatient_subject : subject
+
+@enduml
