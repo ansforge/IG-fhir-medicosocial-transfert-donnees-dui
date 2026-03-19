@@ -15,7 +15,7 @@ Profil: [TDDUI Basic Decision](StructureDefinition-tddui-basic-decision.md)
 > **url**dateEcheance
 **value**: 2020-12-31
 > **url**existencePAG
-**value**: false
+**value**: false**structureAccueil**: [Organization Les Chênes Verts](Organization-tddui-organization-example.md)
 > **url**detailPrestation
 
 > **url**decision
@@ -54,7 +54,10 @@ Profil: [TDDUI Basic Decision](StructureDefinition-tddui-basic-decision.md)
         },
         {
           "extension" : [{
-            "url" : "structureAccueil"
+            "url" : "structureAccueil",
+            "valueReference" : {
+              "reference" : "Organization/tddui-organization-example"
+            }
           }],
           "url" : "detailPrestation"
         }],
@@ -73,7 +76,7 @@ Profil: [TDDUI Basic Decision](StructureDefinition-tddui-basic-decision.md)
         "display" : "Identifiant principal de la décision"
       }]
     },
-    "system" : "2.16.840.1.113883.2.8.3.75.1",
+    "system" : "urn:oid:1.2.250.1.213.7.1",
     "value" : "1254"
   }],
   "code" : {

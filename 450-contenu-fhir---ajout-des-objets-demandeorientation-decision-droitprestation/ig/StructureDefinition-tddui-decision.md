@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision | *Version*:2.3.0-ballot |
-| Active as of 2026-03-18 | *Computable Name*:TDDUIDecision |
+| Active as of 2026-03-19 | *Computable Name*:TDDUIDecision |
 
 Extension complexe représentant la décision et les droits associés
 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-decision.csv),
   "name" : "TDDUIDecision",
   "title" : "TDDUI Decision",
   "status" : "active",
-  "date" : "2026-03-18T17:17:44+00:00",
+  "date" : "2026-03-19T09:35:09+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -154,13 +154,26 @@ Other representations of profile: [CSV](StructureDefinition-tddui-decision.csv),
       "id" : "Extension.extension:decision.extension:motivationLocale",
       "path" : "Extension.extension.extension",
       "sliceName" : "motivationLocale",
+      "short" : "Champ libre permettant de renseigner une motivation locale",
       "min" : 0,
       "max" : "*"
+    },
+    {
+      "id" : "Extension.extension:decision.extension:motivationLocale.extension",
+      "path" : "Extension.extension.extension.extension",
+      "max" : "0"
     },
     {
       "id" : "Extension.extension:decision.extension:motivationLocale.url",
       "path" : "Extension.extension.extension.url",
       "fixedUri" : "motivationLocale"
+    },
+    {
+      "id" : "Extension.extension:decision.extension:motivationLocale.value[x]",
+      "path" : "Extension.extension.extension.value[x]",
+      "type" : [{
+        "code" : "string"
+      }]
     },
     {
       "id" : "Extension.extension:decision.extension:commentaire",

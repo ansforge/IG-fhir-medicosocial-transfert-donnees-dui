@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-validation | *Version*:2.3.0-ballot |
-| Active as of 2026-03-18 | *Computable Name*:TDDUIPatientValidation |
+| Active as of 2026-03-19 | *Computable Name*:TDDUIPatientValidation |
 
 Validation par l'usager que l'événement a eu lieu.
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient-valida
   "name" : "TDDUIPatientValidation",
   "title" : "TDDUI Patient Validation",
   "status" : "active",
-  "date" : "2026-03-18T17:17:44+00:00",
+  "date" : "2026-03-19T09:35:09+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

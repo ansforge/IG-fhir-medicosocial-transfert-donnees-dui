@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-basic-decision | *Version*:2.3.0-ballot |
-| Active as of 2026-03-18 | *Computable Name*:TDDUIBasicDecision |
+| Active as of 2026-03-19 | *Computable Name*:TDDUIBasicDecision |
 
  
 Profil de la ressource Basic permettant de représenter la décision de la CDAPH ainsi que les droits associés. 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-basic-decision
   "name" : "TDDUIBasicDecision",
   "title" : "TDDUI Basic Decision",
   "status" : "active",
-  "date" : "2026-03-18T17:17:44+00:00",
+  "date" : "2026-03-19T09:35:09+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -399,7 +399,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-basic-decision
       "id" : "Basic.identifier:numeroEnregistrement",
       "path" : "Basic.identifier",
       "sliceName" : "numeroEnregistrement",
-      "short" : "Numéro d'enregistrement de la décision",
+      "short" : "Numéro enregistrement de la décision",
       "min" : 0,
       "max" : "1",
       "mapping" : [{
@@ -415,7 +415,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-basic-decision
         "coding" : [{
           "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-basic-decision-identifier",
           "code" : "NUMENREG",
-          "display" : "Numéro d'enregistrement de la décision"
+          "display" : "Numéro enregistrement de la décision"
         }]
       },
       "binding" : {
@@ -466,7 +466,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-basic-decision
       "id" : "Basic.identifier:idNat_Decision.system",
       "path" : "Basic.identifier.system",
       "min" : 1,
-      "patternUri" : "1.2.250.1.213.8.1"
+      "patternUri" : "urn:oid:1.2.250.1.213.8.1"
     },
     {
       "id" : "Basic.identifier:idNat_Decision.value",
@@ -477,7 +477,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-basic-decision
       "id" : "Basic.identifier:numeroAllocataire",
       "path" : "Basic.identifier",
       "sliceName" : "numeroAllocataire",
-      "short" : "Numéro d'allocataire",
+      "short" : "Numéro allocataire",
       "min" : 0,
       "max" : "1",
       "mapping" : [{
@@ -493,7 +493,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-basic-decision
         "coding" : [{
           "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-basic-decision-identifier",
           "code" : "NUMALLOC",
-          "display" : "Numéro d'allocataire"
+          "display" : "Numéro allocataire"
         }]
       },
       "binding" : {

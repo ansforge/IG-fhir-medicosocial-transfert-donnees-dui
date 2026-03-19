@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-basic-decision-identifier | *Version*:2.3.0-ballot |
-| Active as of 2026-03-18 | *Computable Name*:TDDUIBasicDecisionIdentifier |
+| Active as of 2026-03-19 | *Computable Name*:TDDUIBasicDecisionIdentifier |
 
  
 CodeSystem pour la définition des codes d'identifiant de la décision de la CDAPH 
@@ -35,7 +35,7 @@ CodeSystem pour la définition des codes d'identifiant de la décision de la CDA
   "title" : "TDDUI Basic Decision Identifier",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-18T17:17:44+00:00",
+  "date" : "2026-03-19T09:35:09+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -61,7 +61,7 @@ CodeSystem pour la définition des codes d'identifiant de la décision de la CDA
   },
   {
     "code" : "NUMENREG",
-    "display" : "Numéro d'enregistrement de la décision"
+    "display" : "Numéro enregistrement de la décision"
   },
   {
     "code" : "IDNATDECISION",
@@ -69,7 +69,7 @@ CodeSystem pour la définition des codes d'identifiant de la décision de la CDA
   },
   {
     "code" : "NUMALLOC",
-    "display" : "Numéro d'allocataire"
+    "display" : "Numéro allocataire"
   }]
 }
 
