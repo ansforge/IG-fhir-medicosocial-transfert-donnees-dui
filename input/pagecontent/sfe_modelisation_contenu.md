@@ -2108,11 +2108,11 @@ Le Participant est une personne morale ou physique prenant part à l'événement
 1= participant présent<br>
 0= participant absent </td>
   </tr>
-  <tr>
+  <!-- tr>
     <td>roleParticipantEJ : [0..1] Code</td>
     <td>Role du participant vis à vis de l'événement (mandataire judiciaire, structure en charge).<br>
     Jeu(x) de valeur(s) associé(s) : en construction NOS</td>
-  </tr>
+  </tr -->
   <tr>
     <td>modeExerciceParticipantPP : [0..1] Code</td>
     <td>Mode d'exercice de la personne physique. Le mode d'exercice décrit selon quelle modalité une activité est exercée au regard de l'évènement.<br>
