@@ -1,10 +1,10 @@
-# tddui-organization-example - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Organization Example - Médicosocial - Transfert de données DUI v2.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **tddui-organization-example**
+* **TDDUI Organization Example**
 
-## Example Organization: tddui-organization-example
+## Example Organization: TDDUI Organization Example
 
 Profil: [TDDUI Organization](StructureDefinition-tddui-organization.md)
 

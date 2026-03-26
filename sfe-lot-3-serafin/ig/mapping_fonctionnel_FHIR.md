@@ -1,4 +1,4 @@
-# Mapping FHIR du modèle de contenu DUI - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# Mapping FHIR du modèle de contenu DUI - Médicosocial - Transfert de données DUI v2.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Annexes**](annexes.md)
@@ -9,6 +9,10 @@
  Ce mapping représente les données fonctionnelles trouvant leur équivalence dans l'actuelle version des spécifications techniques. 
 
 ### Mapping Usager
+
+### Mapping PeriodeScolaire
+
+### Mapping Contact
 
 ### Mapping Entité Juridique
 

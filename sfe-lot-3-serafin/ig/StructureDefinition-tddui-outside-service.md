@@ -1,15 +1,15 @@
-# Evénement hors prestation - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Event Outside Service - Médicosocial - Transfert de données DUI v2.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Evénement hors prestation**
+* **TDDUI Event Outside Service**
 
-## Extension: Evénement hors prestation 
+## Extension: TDDUI Event Outside Service 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-outside-service | *Version*:2.2.0-ballot |
-| Active as of 2026-03-24 | *Computable Name*:TDDUIEventOutsideService |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-outside-service | *Version*:2.3.0 |
+| Active as of 2026-03-26 | *Computable Name*:TDDUIEventOutsideService |
 
 Evénement hors prestation prévue dans le projet personnalisé de l’usager.
 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-outside-servic
   "resourceType" : "StructureDefinition",
   "id" : "tddui-outside-service",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-outside-service",
-  "version" : "2.2.0-ballot",
+  "version" : "2.3.0",
   "name" : "TDDUIEventOutsideService",
-  "title" : "Evénement hors prestation",
+  "title" : "TDDUI Event Outside Service",
   "status" : "active",
-  "date" : "2026-03-24T16:53:46+00:00",
+  "date" : "2026-03-26T15:00:26+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -60,7 +60,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-outside-servic
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France"
     }]
   }],
   "fhirVersion" : "4.0.1",
@@ -76,13 +76,13 @@ Other representations of profile: [CSV](StructureDefinition-tddui-outside-servic
     "expression" : "Encounter"
   }],
   "type" : "Extension",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
       "id" : "Extension",
       "path" : "Extension",
-      "short" : "Evénement hors prestation",
+      "short" : "TDDUI Event Outside Service",
       "definition" : "Evénement hors prestation prévue dans le projet personnalisé de l’usager."
     },
     {

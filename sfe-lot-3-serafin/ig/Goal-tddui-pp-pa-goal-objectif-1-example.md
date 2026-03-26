@@ -1,16 +1,16 @@
-# tddui-pp-pa-goal-objectif-1-example - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI PP PA Goal Objectif 1 Example - Médicosocial - Transfert de données DUI v2.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **tddui-pp-pa-goal-objectif-1-example**
+* **TDDUI PP PA Goal Objectif 1 Example**
 
-## Example Goal: tddui-pp-pa-goal-objectif-1-example
+## Example Goal: TDDUI PP PA Goal Objectif 1 Example
 
 Profil: [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md)
 
-**Lien vers le projet personnalisé**: [CarePlan Projet personnalisé de Mme Jeanne L.](CarePlan-tddui-pp-pa-careplan-example.md)
+**TDDUI CarePlan Projet Perso Ref**: [CarePlan Projet personnalisé de Mme Jeanne L.](CarePlan-tddui-pp-pa-careplan-example.md)
 
-**Pièce jointe**: [DocumentReference : masterIdentifier = 3480787529/123456789-PPER-bilanObj-1234; status = current](DocumentReference-tddui-pp-pa-documentreference-bilan-objectif-1-example.md)
+**TDDUI Attachment**: [DocumentReference : masterIdentifier = 3480787529/123456789-PPER-bilanObj-1234; status = current](DocumentReference-tddui-pp-pa-documentreference-bilan-objectif-1-example.md)
 
 **identifier**: `https://identifiant-medicosocial-objectif.esante.gouv.fr`/3480787529/123456789-OBJE-1234
 
@@ -18,7 +18,7 @@ Profil: [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md)
 
 **description**: Réduire le risque de chute et la peur associée en 6 mois.
 
-**subject**: [Jeanne L. (official) Female, Date de Naissance inconnue ( Patient internal identifier: 3480787529/123456789)](Patient-tddui-pp-pa-patient-example-pp.md)
+**subject**: [Jeanne L. (official) Female, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/123456789)](Patient-tddui-pp-pa-patient-example-pp.md)
 
 **addresses**: [ServiceRequest ](ServiceRequest-tddui-pp-pa-servicerequest-besoin-1-example.md)
 
@@ -71,7 +71,7 @@ Objectif 1
       "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator",
       "valueCodeableConcept" : {
         "coding" : [{
-          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs",
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator",
           "code" : "titreObjectif"
         }]
       }

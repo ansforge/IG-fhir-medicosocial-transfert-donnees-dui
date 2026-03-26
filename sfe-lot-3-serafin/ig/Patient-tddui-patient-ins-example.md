@@ -1,10 +1,10 @@
-# tddui-patient-ins-example - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Patient INS Example - Médicosocial - Transfert de données DUI v2.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **tddui-patient-ins-example**
+* **TDDUI Patient INS Example**
 
-## Example Patient: tddui-patient-ins-example
+## Example Patient: TDDUI Patient INS Example
 
 Profil: [TDDUI Patient INS](StructureDefinition-tddui-patient-ins.md)
 
@@ -14,10 +14,14 @@ DUPONT Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 348078
 
 | | |
 | :--- | :--- |
-| Autre identifiant : | NIR définitif/147720425367411 (utilisation : official, ) |
+| Autres identifiants : | * NIR définitif/147720425367411 (utilisation : official, )
+* Driver's license number/822146819 (, période : 1980-01-01 --> (en cours))
+ |
 | Nom alternatif : | Jean DUPONT (Official) |
-| Coordonnées | 12 rue des Lilas, 76748 Vittefleur, France(home) |
+| Coordonnées | 12 rue des Lilas 76748 99100 (home) |
 | [Patient Birth Place](http://hl7.org/fhir/extensions/5.2.0/StructureDefinition-patient-birthPlace.html) | Mazoires FRA |
+| TDDUI Household Situation: | * familySituation: Seul
+ |
 | FR Core Patient Ident Reliability Extension: | * identityStatus: [FR Core CodeSystem v2-0445: VALI](https://hl7.fr/ig/fhir/core/2.1.0/CodeSystem-fr-core-cs-v2-0445.html#fr-core-cs-v2-0445-VALI) (Identité validée)
  |
 
@@ -55,6 +59,19 @@ DUPONT Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 348078
       "city" : "Mazoires",
       "country" : "FRA"
     }
+  },
+  {
+    "extension" : [{
+      "url" : "familySituation",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://mos.esante.gouv.fr/NOS/TRE_R317-SituationVieQuotidienne/FHIR/TRE-R317-SituationVieQuotidienne",
+          "code" : "01",
+          "display" : "Seul"
+        }]
+      }
+    }],
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-household-situation"
   }],
   "identifier" : [{
     "use" : "official",
@@ -77,6 +94,19 @@ DUPONT Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 348078
     },
     "system" : "https://identifiant-medicosocial-localusager.esante.gouv.fr",
     "value" : "3480787529/194704032"
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "DL"
+      }]
+    },
+    "system" : "https://ants.gouv.fr/",
+    "value" : "822146819",
+    "period" : {
+      "start" : "1980-01-01"
+    }
   }],
   "name" : [{
     "extension" : [{
@@ -95,10 +125,19 @@ DUPONT Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 348078
   "birthDate" : "1947-04-03",
   "address" : [{
     "use" : "home",
-    "text" : "12 rue des Lilas, 76748 Vittefleur, France",
     "line" : ["12 rue des Lilas"],
-    "city" : "Vittefleur",
-    "postalCode" : "76748"
+    "_line" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+        "valueString" : "12"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameBase",
+        "valueString" : "rue des Lilas"
+      }]
+    }],
+    "postalCode" : "76748",
+    "country" : "99100"
   }]
 }
 

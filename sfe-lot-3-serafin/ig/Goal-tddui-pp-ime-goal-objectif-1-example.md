@@ -1,14 +1,14 @@
-# tddui-pp-ime-goal-objectif-1-example - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI PP IME Goal Objectif 1 Example - Médicosocial - Transfert de données DUI v2.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **tddui-pp-ime-goal-objectif-1-example**
+* **TDDUI PP IME Goal Objectif 1 Example**
 
-## Example Goal: tddui-pp-ime-goal-objectif-1-example
+## Example Goal: TDDUI PP IME Goal Objectif 1 Example
 
 Profil: [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md)
 
-**Lien vers le projet personnalisé**: [CarePlan Projet personnalisé de Hugo en IME](CarePlan-tddui-pp-ime-careplan-example.md)
+**TDDUI CarePlan Projet Perso Ref**: [CarePlan Projet personnalisé de Hugo en IME](CarePlan-tddui-pp-ime-careplan-example.md)
 
 **identifier**: `https://identifiant-medicosocial-objectif.esante.gouv.fr`/3480787529/123456-OBJE-1234
 
@@ -16,7 +16,7 @@ Profil: [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md)
 
 **description**: Tolérer 20 min de cour avec casque anti‑bruit en 4 mois.
 
-**subject**: [Hugo D. (official) (sexe non précisé), Date de Naissance inconnue ( Patient internal identifier: 3480787529/123456)](Patient-tddui-pp-ime-patient-example.md)
+**subject**: [Hugo D. (official) (sexe non précisé), Date de Naissance :2005-09-15 ( Patient internal identifier: 3480787529/123456)](Patient-tddui-pp-ime-patient-example.md)
 
 **note**: 
 
@@ -58,7 +58,7 @@ Objectif 1
       "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator",
       "valueCodeableConcept" : {
         "coding" : [{
-          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs",
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator",
           "code" : "titreObjectif"
         }]
       }

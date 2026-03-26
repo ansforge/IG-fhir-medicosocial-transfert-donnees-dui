@@ -1,24 +1,26 @@
-# tddui-encounter-evenement-example - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Encounter Evenement Example - Médicosocial - Transfert de données DUI v2.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **tddui-encounter-evenement-example**
+* **TDDUI Encounter Evenement Example**
 
-## Example Encounter: tddui-encounter-evenement-example
+## Example Encounter: TDDUI Encounter Evenement Example
 
 Profil: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)
 
-> **Ressources utilisées**
+> **TDDUI Ressources Used**
 * TDDUIRessourceType: Matériel spécialisé
 * TDDUIMaterialDetail: Materiel médical
 
-**Rapport de l’évènement**: Observations cliniques : ; Recommandations pour les jours à venir : ; Prochaine visite : 15 avril 2023, 10h30 ; Remarque : Monsieur Dupont a compris les consignes pour la gestion de sa douleur et la mobilisation de sa hanche opérée.
+**TDDUI Event Report**: Observations cliniques : ; Recommandations pour les jours à venir : ; Prochaine visite : 15 avril 2023, 10h30 ; Remarque : Monsieur Dupont a compris les consignes pour la gestion de sa douleur et la mobilisation de sa hanche opérée.
 
-**Commentaire**: Cet évènement a débuté plus tard l’usager était sous la douche à l’heure du début du rendez-vous.
+**TDDUI Comment**: Cet évènement a débuté plus tard l’usager était sous la douche à l’heure du début du rendez-vous.
 
-**Libellé de l'évènement**: Visite à domicile pour soins infirmier.
+**TDDUI Event Label**: Visite à domicile pour soins infirmier.
 
-**Motif de l’évènement**: Suivi post-opératoire suite à intervention chirurgicale de la hanche.
+**TDDUI Event Reason**: Suivi post-opératoire suite à intervention chirurgicale de la hanche.
+
+**TDDUI Patient Validation**: true
 
 **identifier**: Visit Number/3480787529/147720425367411-EVN-12548
 
@@ -32,10 +34,10 @@ Profil: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenemen
 
 ### Participants
 
-| | | |
-| :--- | :--- | :--- |
-| - | **Type** | **Individual** |
-| * | Participation | [Practitioner Claire Martin ](Practitioner-tddui-practitioner-example.md) |
+| | |
+| :--- | :--- |
+| - | **Individual** |
+| * | [Practitioner Claire Martin ](Practitioner-tddui-practitioner-example.md) |
 
 **period**: 2023-04-14 10:30:00+0200 --> 2023-04-14 11:15:00+0200
 
@@ -48,7 +50,7 @@ Profil: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenemen
 
 **serviceProvider**: [Organization Les Chênes Verts](Organization-tddui-organization-example.md)
 
-**partOf**: [Encounter : extension = 2023-04-11,Date de début du suivi post-opératoire : 14/04/2023,Sortie prévisionnelle prévue pour le 5 mai 2023,2023-05-05; identifier = Identifiant du séjour: 3480787529/147720425367411-SEJOUR-1012; status = in-progress; class = home health (ActCode#HH); period = 2023-04-14 --> (en cours)](Encounter-tddui-encounter-sejour-example.md)
+**partOf**: [Encounter : extension = 2023-04-11,Date de début du suivi post-opératoire : 14/04/2023,Sortie prévisionnelle prévue pour le 5 mai 2023,2023-05-05; identifier = Identifiant du séjour: 3480787529/147720425367411-SEJOUR-1012,Numéro de dossier administratif du séjour: 1012; status = in-progress; class = home health (ActCode#HH); period = 2023-04-14 --> (en cours)](Encounter-tddui-encounter-sejour-example.md)
 
 
 
@@ -99,6 +101,10 @@ Profil: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenemen
   {
     "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-reason",
     "valueString" : "Suivi post-opératoire suite à intervention chirurgicale de la hanche."
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-validation",
+    "valueBoolean" : true
   }],
   "identifier" : [{
     "type" : {
@@ -134,12 +140,6 @@ Profil: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenemen
     "reference" : "Patient/tddui-patient-ins-example"
   },
   "participant" : [{
-    "type" : [{
-      "coding" : [{
-        "system" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
-        "code" : "PART"
-      }]
-    }],
     "individual" : {
       "reference" : "Practitioner/tddui-practitioner-example"
     }

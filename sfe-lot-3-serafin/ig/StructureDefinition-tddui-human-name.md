@@ -1,4 +1,4 @@
-# TDDUI Human Name DataType - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Human Name DataType - Médicosocial - Transfert de données DUI v2.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name | *Version*:2.2.0-ballot |
-| Active as of 2026-03-24 | *Computable Name*:tddui-humanname |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name | *Version*:2.3.0 |
+| Active as of 2026-03-26 | *Computable Name*:tddui-humanname |
 
  
 
@@ -21,7 +21,7 @@
 
 **Utilisations:**
 
-* Utilise ce/t/te profil de type de données: [TDDUI Patient INS](StructureDefinition-tddui-patient-ins.md), [TDDUI Patient](StructureDefinition-tddui-patient.md) and [TDDUI Practitioner](StructureDefinition-tddui-practitioner.md)
+* Utilise ce/t/te profil de type de données: [TDDUI Patient INS](StructureDefinition-tddui-patient-ins.md), [TDDUI Patient](StructureDefinition-tddui-patient.md), [TDDUI Practitioner](StructureDefinition-tddui-practitioner.md) and [TDDUI RelatedPerson Contact](StructureDefinition-tddui-related-person-contact.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-human-name)
 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-human-name.csv
   "resourceType" : "StructureDefinition",
   "id" : "tddui-human-name",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name",
-  "version" : "2.2.0-ballot",
+  "version" : "2.3.0",
   "name" : "tddui-humanname",
   "title" : "TDDUI Human Name DataType",
   "status" : "active",
-  "date" : "2026-03-24T16:53:46+00:00",
+  "date" : "2026-03-26T15:00:26+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -60,7 +60,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-human-name.csv
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France"
     }]
   }],
   "fhirVersion" : "4.0.1",
@@ -82,7 +82,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-human-name.csv
   "kind" : "complex-type",
   "abstract" : false,
   "type" : "HumanName",
-  "baseDefinition" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-human-name|2.1.0",
+  "baseDefinition" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-human-name",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
@@ -90,7 +90,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-human-name.csv
       "path" : "HumanName.prefix",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J245-Civilite-CISIS/FHIR/JDV-J245-Civilite-CISIS|20230331120000"
+        "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J245-Civilite-CISIS/FHIR/JDV-J245-Civilite-CISIS"
       }
     }]
   }

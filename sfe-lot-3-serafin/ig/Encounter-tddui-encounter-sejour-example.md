@@ -1,22 +1,22 @@
-# tddui-encounter-sejour-example - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Encounter Sejour Example - Médicosocial - Transfert de données DUI v2.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **tddui-encounter-sejour-example**
+* **TDDUI Encounter Sejour Example**
 
-## Example Encounter: tddui-encounter-sejour-example
+## Example Encounter: TDDUI Encounter Sejour Example
 
 Profil: [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md)
 
-**Date d’admission**: 2023-04-11
+**TDDUI Admission Date**: 2023-04-11
 
-**Libellé mode d'entrée**: Date de début du suivi post-opératoire : 14/04/2023
+**TDDUI Entry Mode label**: Date de début du suivi post-opératoire : 14/04/2023
 
-**Libellé mode de sortie**: Sortie prévisionnelle prévue pour le 5 mai 2023
+**TDDUI Exit Mode Label**: Sortie prévisionnelle prévue pour le 5 mai 2023
 
 **Extension Definition for Encounter.plannedEndDate for Version 5.0**: 2023-05-05
 
-**identifier**: Identifiant du séjour/3480787529/147720425367411-SEJOUR-1012
+**identifier**: Identifiant du séjour/3480787529/147720425367411-SEJOUR-1012, Numéro de dossier administratif du séjour/1012
 
 **status**: In Progress
 
@@ -25,6 +25,13 @@ Profil: [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md)
 **subject**: [DUPONT Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/194704032)](Patient-tddui-patient-ins-example.md)
 
 **period**: 2023-04-14 --> (en cours)
+
+### Hospitalizations
+
+| | | |
+| :--- | :--- | :--- |
+| - | **Origin** | **AdmitSource** |
+| * | [Organization Les Résidences du Lac](Organization-tddui-organization-origine-example.md) | Autre modalité d'entrée |
 
 **serviceProvider**: [Organization Les Chênes Verts](Organization-tddui-organization-example.md)
 
@@ -58,13 +65,24 @@ Profil: [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md)
   "identifier" : [{
     "type" : {
       "coding" : [{
-        "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier-cs",
+        "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier",
         "code" : "SEJ",
         "display" : "Identifiant du séjour"
       }]
     },
     "system" : "https://identifiant-medicosocial-sejour.esante.gouv.fr",
     "value" : "3480787529/147720425367411-SEJOUR-1012"
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier",
+        "code" : "NUMDOSS",
+        "display" : "Numéro de dossier administratif du séjour"
+      }]
+    },
+    "system" : "https://identifiant-medicosocial-sejour.esante.gouv.fr",
+    "value" : "1012"
   }],
   "status" : "in-progress",
   "class" : {
@@ -76,6 +94,18 @@ Profil: [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md)
   },
   "period" : {
     "start" : "2023-04-14"
+  },
+  "hospitalization" : {
+    "origin" : {
+      "reference" : "Organization/tddui-organization-origine-example"
+    },
+    "admitSource" : {
+      "coding" : [{
+        "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+        "code" : "GEN-092.06.07",
+        "display" : "Autre modalité d'entrée"
+      }]
+    }
   },
   "serviceProvider" : {
     "reference" : "Organization/tddui-organization-example"

@@ -1,14 +1,14 @@
-# tddui-pp-pa-goal-objectif-2-example - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI PP PA Goal Objectif 2 Example - Médicosocial - Transfert de données DUI v2.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **tddui-pp-pa-goal-objectif-2-example**
+* **TDDUI PP PA Goal Objectif 2 Example**
 
-## Example Goal: tddui-pp-pa-goal-objectif-2-example
+## Example Goal: TDDUI PP PA Goal Objectif 2 Example
 
 Profil: [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md)
 
-**Lien vers le projet personnalisé**: [CarePlan Projet personnalisé de Mme Jeanne L.](CarePlan-tddui-pp-pa-careplan-example.md)
+**TDDUI CarePlan Projet Perso Ref**: [CarePlan Projet personnalisé de Mme Jeanne L.](CarePlan-tddui-pp-pa-careplan-example.md)
 
 **identifier**: `https://identifiant-medicosocial-objectif.esante.gouv.fr`/3480787529/123456789-OBJE-1235
 
@@ -16,7 +16,7 @@ Profil: [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md)
 
 **description**: Stabiliser l'état nutritionnel et restaurer le plaisir alimentaire sur 12 mois.
 
-**subject**: [Jeanne L. (official) Female, Date de Naissance inconnue ( Patient internal identifier: 3480787529/123456789)](Patient-tddui-pp-pa-patient-example-pp.md)
+**subject**: [Jeanne L. (official) Female, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/123456789)](Patient-tddui-pp-pa-patient-example-pp.md)
 
 **addresses**: [ServiceRequest ](ServiceRequest-tddui-pp-pa-servicerequest-besoin-2-example.md)
 
@@ -63,7 +63,7 @@ Objectif 2
       "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator",
       "valueCodeableConcept" : {
         "coding" : [{
-          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs",
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator",
           "code" : "titreObjectif"
         }]
       }

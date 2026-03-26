@@ -1,4 +1,4 @@
-# TDDUI Bundle - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Bundle - Médicosocial - Transfert de données DUI v2.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,15 +8,15 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle | *Version*:2.2.0-ballot |
-| Active as of 2026-03-24 | *Computable Name*:TDDUIBundle |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle | *Version*:2.3.0 |
+| Active as of 2026-03-26 | *Computable Name*:TDDUIBundle |
 
  
 Profil générique créé pour transmettre des données d'un logiciel DUI. 
 
 **Utilisations:**
 
-* Exemples pour ce/t/te Profil: [Bundle/ExampleTDDUIBundle](Bundle-ExampleTDDUIBundle.md), [Bundle/tddui-pp-ime-bundle-example](Bundle-tddui-pp-ime-bundle-example.md) and [Bundle/tddui-pp-pa-bundle-example](Bundle-tddui-pp-pa-bundle-example.md)
+* Exemples pour ce/t/te Profil: [Bundle/tddui-bundle-example](Bundle-tddui-bundle-example.md), [Bundle/tddui-pp-ime-bundle-example](Bundle-tddui-pp-ime-bundle-example.md) and [Bundle/tddui-pp-pa-bundle-example](Bundle-tddui-pp-pa-bundle-example.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-bundle)
 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
   "resourceType" : "StructureDefinition",
   "id" : "tddui-bundle",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle",
-  "version" : "2.2.0-ballot",
+  "version" : "2.3.0",
   "name" : "TDDUIBundle",
   "title" : "TDDUI Bundle",
   "status" : "active",
-  "date" : "2026-03-24T16:53:46+00:00",
+  "date" : "2026-03-26T15:00:26+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -55,7 +55,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France"
     }]
   }],
   "fhirVersion" : "4.0.1",
@@ -82,7 +82,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
   "kind" : "resource",
   "abstract" : false,
   "type" : "Bundle",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Bundle|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Bundle",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
@@ -120,7 +120,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
       "min" : 1,
       "type" : [{
         "code" : "Patient",
-        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient|2.2.0-ballot"]
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient"]
       }]
     },
     {
@@ -147,7 +147,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
       "min" : 1,
       "type" : [{
         "code" : "Patient",
-        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins|2.2.0-ballot"]
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"]
       }]
     },
     {
@@ -174,7 +174,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
       "min" : 1,
       "type" : [{
         "code" : "Organization",
-        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization|2.2.0-ballot"]
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization"]
       }]
     },
     {
@@ -201,7 +201,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
       "min" : 1,
       "type" : [{
         "code" : "Encounter",
-        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour|2.2.0-ballot"]
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour"]
       }]
     },
     {
@@ -228,7 +228,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
       "min" : 1,
       "type" : [{
         "code" : "Encounter",
-        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement|2.2.0-ballot"]
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement"]
       }]
     },
     {
@@ -255,7 +255,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
       "min" : 1,
       "type" : [{
         "code" : "Practitioner",
-        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner|2.2.0-ballot"]
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner"]
       }]
     },
     {
@@ -282,7 +282,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
       "min" : 1,
       "type" : [{
         "code" : "PractitionerRole",
-        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role|2.2.0-ballot"]
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role"]
       }]
     },
     {
@@ -309,7 +309,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
       "min" : 1,
       "type" : [{
         "code" : "Task",
-        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel|2.2.0-ballot"]
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel"]
       }]
     },
     {
@@ -336,7 +336,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
       "min" : 1,
       "type" : [{
         "code" : "Task",
-        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager|2.2.0-ballot"]
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager"]
       }]
     },
     {
@@ -363,7 +363,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
       "min" : 1,
       "type" : [{
         "code" : "DocumentReference",
-        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference|2.2.0-ballot"]
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"]
       }]
     },
     {
@@ -390,7 +390,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
       "min" : 1,
       "type" : [{
         "code" : "QuestionnaireResponse",
-        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response|2.2.0-ballot"]
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"]
       }]
     },
     {
@@ -417,7 +417,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
       "min" : 1,
       "type" : [{
         "code" : "CarePlan",
-        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise|2.2.0-ballot"]
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise"]
       }]
     },
     {
@@ -444,7 +444,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
       "min" : 1,
       "type" : [{
         "code" : "Consent",
-        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord|2.2.0-ballot"]
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord"]
       }]
     },
     {
@@ -471,7 +471,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
       "min" : 1,
       "type" : [{
         "code" : "Goal",
-        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente|2.2.0-ballot"]
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente"]
       }]
     },
     {
@@ -498,7 +498,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
       "min" : 1,
       "type" : [{
         "code" : "Goal",
-        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif|2.2.0-ballot"]
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif"]
       }]
     },
     {
@@ -525,7 +525,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
       "min" : 1,
       "type" : [{
         "code" : "ServiceRequest",
-        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin|2.2.0-ballot"]
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin"]
       }]
     },
     {
@@ -552,7 +552,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
       "min" : 1,
       "type" : [{
         "code" : "Task",
-        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action|2.2.0-ballot"]
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"]
       }]
     },
     {
@@ -579,7 +579,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
       "min" : 1,
       "type" : [{
         "code" : "Task",
-        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-bilan|2.2.0-ballot"]
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-bilan"]
       }]
     },
     {
@@ -606,7 +606,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
       "min" : 1,
       "type" : [{
         "code" : "Task",
-        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource|2.2.0-ballot"]
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource"]
       }]
     },
     {
@@ -633,7 +633,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
       "min" : 1,
       "type" : [{
         "code" : "Task",
-        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-prestation|2.2.0-ballot"]
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-prestation"]
       }]
     },
     {
@@ -647,29 +647,110 @@ Other representations of profile: [CSV](StructureDefinition-tddui-bundle.csv), [
       "patternCode" : "POST"
     },
     {
-      "id" : "Bundle.entry:RelatedPerson",
+      "id" : "Bundle.entry:DUIRelatedPersonContact",
       "path" : "Bundle.entry",
-      "sliceName" : "RelatedPerson",
-      "short" : "RelatedPerson conforming to the FrCoreRelatedPerson profile, used to convey information about the user's contacts.",
+      "sliceName" : "DUIRelatedPersonContact",
+      "short" : "RelatedPerson conforming to the TDDUIRelatedPersonContact profile, used to convey information about the contact person.",
       "min" : 0,
       "max" : "*"
     },
     {
-      "id" : "Bundle.entry:RelatedPerson.resource",
+      "id" : "Bundle.entry:DUIRelatedPersonContact.resource",
       "path" : "Bundle.entry.resource",
       "min" : 1,
       "type" : [{
         "code" : "RelatedPerson",
-        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person|2.1.0"]
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact"]
       }]
     },
     {
-      "id" : "Bundle.entry:RelatedPerson.request",
+      "id" : "Bundle.entry:DUIRelatedPersonContact.request",
       "path" : "Bundle.entry.request",
       "min" : 1
     },
     {
-      "id" : "Bundle.entry:RelatedPerson.request.method",
+      "id" : "Bundle.entry:DUIRelatedPersonContact.request.method",
+      "path" : "Bundle.entry.request.method",
+      "patternCode" : "POST"
+    },
+    {
+      "id" : "Bundle.entry:DUIObservationCauseMortalite",
+      "path" : "Bundle.entry",
+      "sliceName" : "DUIObservationCauseMortalite",
+      "short" : "Observation conforming to the DUIObservationCauseMortalite profile, used to convey the cause of death.",
+      "min" : 0,
+      "max" : "*"
+    },
+    {
+      "id" : "Bundle.entry:DUIObservationCauseMortalite.resource",
+      "path" : "Bundle.entry.resource",
+      "min" : 1,
+      "type" : [{
+        "code" : "Observation",
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-mortalite"]
+      }]
+    },
+    {
+      "id" : "Bundle.entry:DUIObservationCauseMortalite.request",
+      "path" : "Bundle.entry.request",
+      "min" : 1
+    },
+    {
+      "id" : "Bundle.entry:DUIObservationCauseMortalite.request.method",
+      "path" : "Bundle.entry.request.method",
+      "patternCode" : "POST"
+    },
+    {
+      "id" : "Bundle.entry:DUIObservationPeriodeScolaire",
+      "path" : "Bundle.entry",
+      "sliceName" : "DUIObservationPeriodeScolaire",
+      "short" : "Observation conforming to the DUIObservationPeriodeScolaire profile, used to convey the school period.",
+      "min" : 0,
+      "max" : "*"
+    },
+    {
+      "id" : "Bundle.entry:DUIObservationPeriodeScolaire.resource",
+      "path" : "Bundle.entry.resource",
+      "min" : 1,
+      "type" : [{
+        "code" : "Observation",
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-periode-scolaire"]
+      }]
+    },
+    {
+      "id" : "Bundle.entry:DUIObservationPeriodeScolaire.request",
+      "path" : "Bundle.entry.request",
+      "min" : 1
+    },
+    {
+      "id" : "Bundle.entry:DUIObservationPeriodeScolaire.request.method",
+      "path" : "Bundle.entry.request.method",
+      "patternCode" : "POST"
+    },
+    {
+      "id" : "Bundle.entry:DUIObservationMobiliteUsager",
+      "path" : "Bundle.entry",
+      "sliceName" : "DUIObservationMobiliteUsager",
+      "short" : "Observation conforming to the DUIObservationMobiliteUsager profile, used to convey the mobility.",
+      "min" : 0,
+      "max" : "*"
+    },
+    {
+      "id" : "Bundle.entry:DUIObservationMobiliteUsager.resource",
+      "path" : "Bundle.entry.resource",
+      "min" : 1,
+      "type" : [{
+        "code" : "Observation",
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite-usager"]
+      }]
+    },
+    {
+      "id" : "Bundle.entry:DUIObservationMobiliteUsager.request",
+      "path" : "Bundle.entry.request",
+      "min" : 1
+    },
+    {
+      "id" : "Bundle.entry:DUIObservationMobiliteUsager.request.method",
       "path" : "Bundle.entry.request.method",
       "patternCode" : "POST"
     }]

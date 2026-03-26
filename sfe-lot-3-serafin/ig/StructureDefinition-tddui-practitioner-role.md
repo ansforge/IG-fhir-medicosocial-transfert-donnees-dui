@@ -1,4 +1,4 @@
-# TDDUI Practitioner Role - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Practitioner Role - Médicosocial - Transfert de données DUI v2.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role | *Version*:2.2.0-ballot |
-| Active as of 2026-03-24 | *Computable Name*:TDDUIPractitionerRole |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role | *Version*:2.3.0 |
+| Active as of 2026-03-26 | *Computable Name*:TDDUIPractitionerRole |
 
  
 Profil de la ressource FRCorePractitionerRole permettant de représenter un Professionnel. 
@@ -17,7 +17,7 @@ Profil de la ressource FRCorePractitionerRole permettant de représenter un Prof
 **Utilisations:**
 
 * Utilise ce/t/te Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
-* Référence ce Profil: [TDDUI Consent Accord](StructureDefinition-tddui-consent-accord.md), [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md), [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md), [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md)... Show 2 more, [TDDUI Auteur statut](StructureDefinition-tddui-status-author.md) and [TDDUI Task Action](StructureDefinition-tddui-task-action.md)
+* Référence ce Profil: [TDDUI Consent Accord](StructureDefinition-tddui-consent-accord.md), [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md), [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md), [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md)... Show 2 more, [TDDUI Status Author](StructureDefinition-tddui-status-author.md) and [TDDUI Task Action](StructureDefinition-tddui-task-action.md)
 * Exemples pour ce/t/te Profil: [PractitionerRole/tddui-practitioner-role-example](PractitionerRole-tddui-practitioner-role-example.md)
 * CapabilityStatements utilisant ce Profil: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
 
@@ -40,11 +40,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-practitioner-r
   "resourceType" : "StructureDefinition",
   "id" : "tddui-practitioner-role",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role",
-  "version" : "2.2.0-ballot",
+  "version" : "2.3.0",
   "name" : "TDDUIPractitionerRole",
   "title" : "TDDUI Practitioner Role",
   "status" : "active",
-  "date" : "2026-03-24T16:53:46+00:00",
+  "date" : "2026-03-26T15:00:26+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -58,7 +58,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-practitioner-r
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France"
     }]
   }],
   "fhirVersion" : "4.0.1",
@@ -90,7 +90,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-practitioner-r
   "kind" : "resource",
   "abstract" : false,
   "type" : "PractitionerRole",
-  "baseDefinition" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role|2.1.0",
+  "baseDefinition" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
@@ -109,7 +109,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-practitioner-r
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exercise-mode|2.2.0-ballot"]
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exercise-mode"]
       }],
       "mapping" : [{
         "identity" : "specmetier-to-TDDUIPractitionerRole",
@@ -121,7 +121,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-practitioner-r
       "path" : "PractitionerRole.practitioner",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner|2.2.0-ballot"]
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner"]
       }]
     },
     {
@@ -129,7 +129,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-practitioner-r
       "path" : "PractitionerRole.organization",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization|2.2.0-ballot"]
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization"]
       }],
       "mapping" : [{
         "identity" : "specmetier-to-TDDUIPractitionerRole",
@@ -154,7 +154,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-practitioner-r
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-profession|2.2.0-ballot"]
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-profession"]
       }],
       "mapping" : [{
         "identity" : "specmetier-to-TDDUIPractitionerRole",
@@ -166,7 +166,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-practitioner-r
       "path" : "PractitionerRole.code.coding",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J47-FunctionCode-CISIS/FHIR/JDV-J47-FunctionCode-CISIS|20250523120000"
+        "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J47-FunctionCode-CISIS/FHIR/JDV-J47-FunctionCode-CISIS"
       }
     }]
   }

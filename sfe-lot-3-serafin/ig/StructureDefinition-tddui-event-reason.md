@@ -1,15 +1,15 @@
-# Motif de l’évènement - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Event Reason - Médicosocial - Transfert de données DUI v2.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Motif de l’évènement**
+* **TDDUI Event Reason**
 
-## Extension: Motif de l’évènement 
+## Extension: TDDUI Event Reason 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-reason | *Version*:2.2.0-ballot |
-| Active as of 2026-03-24 | *Computable Name*:TDDUIEventReason |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-reason | *Version*:2.3.0 |
+| Active as of 2026-03-26 | *Computable Name*:TDDUIEventReason |
 
 Contexte justifiant la réalisation de l’évènement.
 
@@ -20,7 +20,7 @@ Contexte justifiant la réalisation de l’évènement.
 **Utilisations:**
 
 * Utilise ce/t/te Extension: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)
-* Exemples pour ce/t/te Extension: [Bundle/ExampleTDDUIBundle](Bundle-ExampleTDDUIBundle.md) and [Encounter/tddui-encounter-evenement-example](Encounter-tddui-encounter-evenement-example.md)
+* Exemples pour ce/t/te Extension: [Bundle/tddui-bundle-example](Bundle-tddui-bundle-example.md) and [Encounter/tddui-encounter-evenement-example](Encounter-tddui-encounter-evenement-example.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-event-reason)
 
@@ -43,11 +43,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-event-reason.c
   "resourceType" : "StructureDefinition",
   "id" : "tddui-event-reason",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-reason",
-  "version" : "2.2.0-ballot",
+  "version" : "2.3.0",
   "name" : "TDDUIEventReason",
-  "title" : "Motif de l’évènement",
+  "title" : "TDDUI Event Reason",
   "status" : "active",
-  "date" : "2026-03-24T16:53:46+00:00",
+  "date" : "2026-03-26T15:00:26+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -61,7 +61,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-event-reason.c
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France"
     }]
   }],
   "fhirVersion" : "4.0.1",
@@ -77,13 +77,13 @@ Other representations of profile: [CSV](StructureDefinition-tddui-event-reason.c
     "expression" : "Encounter"
   }],
   "type" : "Extension",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
       "id" : "Extension",
       "path" : "Extension",
-      "short" : "Motif de l’évènement",
+      "short" : "TDDUI Event Reason",
       "definition" : "Contexte justifiant la réalisation de l’évènement."
     },
     {

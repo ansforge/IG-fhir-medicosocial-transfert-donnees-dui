@@ -1,22 +1,22 @@
-# TDDUI FR Core CodeSystem v2-0203 - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Patient Identifier - Médicosocial - Transfert de données DUI v2.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **TDDUI FR Core CodeSystem v2-0203**
+* **TDDUI Patient Identifier**
 
-## CodeSystem: TDDUI FR Core CodeSystem v2-0203 
+## CodeSystem: TDDUI Patient Identifier 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-identifier | *Version*:2.2.0-ballot |
-| Active as of 2026-03-24 | *Computable Name*:TDDUIIdentifier |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-identifier | *Version*:2.3.0 |
+| Active as of 2026-03-26 | *Computable Name*:TDDUIIdentifier |
 
  
-TDDUI Patient's identifier 
+CodeSystem pour la définition des codes d'identifiant de l'usager 
 
  Cette terminologie de référence (CodeSystem) est référencé dans la définition de contenu des jeux de valeurs (ValueSet) suivants : 
 
-* [TDDUIPatientIdentifierVs](ValueSet-tddui-patient-identifier-vs.md)
+* [TDDUIPatientIdentifier](ValueSet-tddui-patient-identifier.md)
 
 
 
@@ -27,15 +27,15 @@ TDDUI Patient's identifier
   "resourceType" : "CodeSystem",
   "id" : "tddui-identifier",
   "meta" : {
-    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1"]
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem"]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-identifier",
-  "version" : "2.2.0-ballot",
+  "version" : "2.3.0",
   "name" : "TDDUIIdentifier",
-  "title" : "TDDUI FR Core CodeSystem v2-0203",
+  "title" : "TDDUI Patient Identifier",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-24T16:53:46+00:00",
+  "date" : "2026-03-26T15:00:26+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -44,12 +44,12 @@ TDDUI Patient's identifier
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "TDDUI Patient's identifier",
+  "description" : "CodeSystem pour la définition des codes d'identifiant de l'usager",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France"
     }]
   }],
   "caseSensitive" : true,

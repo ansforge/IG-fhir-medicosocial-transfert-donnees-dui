@@ -1,96 +1,110 @@
 {
   "package": "ans.fhir.fr.tddui",
-  "version": "2.2.0-ballot",
+  "version": "2.3.0",
   "fhirVersion": "4.0.1",
   "jurisdiction": "FR",
   "extensions": [
     {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-admission-date",
-      "title": "Date d’admission",
+      "title": "TDDUI Admission Date",
       "types": [
         "dateTime"
       ]
     },
     {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-assessment-method",
+      "title": "TDDUI Assessment Method",
+      "types": [
+        "string"
+      ]
+    },
+    {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment",
-      "title": "Pièce jointe",
+      "title": "TDDUI Attachment",
       "types": [
         "Reference"
       ]
     },
     {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order",
-      "title": "Ordre de naissance dans le registre d\u0027état civil",
+      "title": "TDDUI Birth Order",
       "types": [
         "positiveInt"
       ]
     },
     {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference",
-      "title": "Lien vers le projet personnalisé",
+      "title": "TDDUI CarePlan Projet Perso Ref",
       "types": [
         "Reference"
       ]
     },
     {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment",
-      "title": "Commentaire",
+      "title": "TDDUI Comment",
       "types": [
         "string"
       ]
     },
     {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator",
-      "title": "TDDUI Discriminator Extension",
+      "title": "TDDUI Discriminator",
       "types": [
         "CodeableConcept"
       ]
     },
     {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-date-origin",
+      "title": "TDDUI Entry Date Origin",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-mode-label",
-      "title": "Libellé mode d\u0027entrée",
+      "title": "TDDUI Entry Mode label",
       "types": [
         "string"
       ]
     },
     {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-evaluation-reference",
-      "title": "Lien vers l\u0027évaluation",
+      "title": "TDDUI Evaluation Ref",
       "types": [
         "Reference"
       ]
     },
     {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-cancel-reason",
-      "title": "Évènement annulé",
+      "title": "TDDUI Event Cancel Reason",
       "types": [
         "CodeableConcept"
       ]
     },
     {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-label",
-      "title": "Libellé de l\u0027évènement",
+      "title": "TDDUI Event Label",
       "types": [
         "string"
       ]
     },
     {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-reason",
-      "title": "Motif de l’évènement",
+      "title": "TDDUI Event Reason",
       "types": [
         "string"
       ]
     },
     {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-report",
-      "title": "Rapport de l’évènement",
+      "title": "TDDUI Event Report",
       "types": [
         "string"
       ]
     },
     {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exercise-mode",
-      "title": "Mode d\u0027exercice",
+      "title": "TDDUI Exercise Mode",
       "types": [
         "CodeableConcept",
         "string",
@@ -101,28 +115,259 @@
     },
     {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exit-mode-label",
-      "title": "Libellé mode de sortie",
+      "title": "TDDUI Exit Mode Label",
       "types": [
         "string"
       ]
     },
     {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-household-situation",
+      "title": "TDDUI Household Situation",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "CodeableConcept",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "CodeableConcept",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-meal",
-      "title": "Repas",
+      "title": "TDDUI Meal",
       "types": [
         "boolean"
       ]
     },
     {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-nationality",
+      "title": "TDDUI Nationality Extension",
+      "types": [
+        "CodeableConcept",
+        "Period",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-outside-service",
-      "title": "Evénement hors prestation",
+      "title": "TDDUI Event Outside Service",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-participant-present",
+      "title": "TDDUI Participant Present",
       "types": [
         "boolean"
       ]
     },
     {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-present",
-      "title": "Usager présent",
+      "title": "TDDUI Patient Present",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-validation",
+      "title": "TDDUI Patient Validation",
       "types": [
         "boolean"
       ]
@@ -140,7 +385,7 @@
     },
     {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant",
-      "title": "Responsable et auteur du statut de l\u0027évaluation",
+      "title": "TDDUI QR Participant",
       "types": [
         "Reference",
         "Reference",
@@ -197,8 +442,15 @@
       ]
     },
     {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact-description",
+      "title": "Description",
+      "types": [
+        "string"
+      ]
+    },
+    {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used",
-      "title": "Ressources utilisées",
+      "title": "TDDUI Ressources Used",
       "types": [
         "CodeableConcept",
         "CodeableConcept",
@@ -257,7 +509,7 @@
     },
     {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-status-author",
-      "title": "TDDUI Auteur statut",
+      "title": "TDDUI Status Author",
       "types": [
         "Reference"
       ]
@@ -308,6 +560,20 @@
         "title": "TDDUI Goal Objectif"
       }
     ],
+    "Observation": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-mortalite",
+        "title": "TDDUI Observation Cause Mortalite"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite-usager",
+        "title": "TDDUI Observation Mobilite Usager"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-periode-scolaire",
+        "title": "TDDUI Observation Periode Scolaire"
+      }
+    ],
     "Organization": [
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization",
@@ -340,6 +606,12 @@
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response",
         "title": "TDDUI QuestionnaireResponse"
+      }
+    ],
+    "RelatedPerson": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact",
+        "title": "TDDUI RelatedPerson Contact"
       }
     ],
     "ServiceRequest": [
@@ -410,29 +682,59 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
       "StructureDefinition.snapshot.element"
     ],
-    "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order|5.2.0": [
+    "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order": [
       "HumanName",
-      "Practitioner.name"
+      "Practitioner.name",
+      "RelatedPerson.name"
     ],
-    "http://hl7.org/fhir/StructureDefinition/organization-period|5.2.0": [
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator": [
+      "Patient.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix": [
+      "Patient.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-careOf": [
+      "Patient.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber": [
+      "Bundle.entry.resource.address.line",
+      "Patient.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox": [
+      "Patient.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameBase": [
+      "Bundle.entry.resource.address.line",
+      "Patient.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameType": [
+      "Patient.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/organization-period": [
       "Organization"
     ],
     "http://hl7.org/fhir/StructureDefinition/patient-birthPlace": [
       "Bundle.entry.resource",
       "Patient"
     ],
-    "http://hl7.org/fhir/StructureDefinition/patient-birthPlace|5.2.0": [
-      "Patient"
-    ],
     "http://hl7.org/fhir/StructureDefinition/regex": [
       "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
     ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm": [
+      "StructureDefinition"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
       "StructureDefinition.differential.element.type",
       "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg": [
+      "StructureDefinition"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters": [
       "ImplementationGuide.definition"
@@ -457,66 +759,63 @@
     "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
       "StructureDefinition.snapshot"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code|2.1.0": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code": [
+      "Patient.address",
       "Patient.extension.value[x]"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-comment|2.1.0": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-comment": [
       "Patient.contact"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-estimated-discharge-date|2.1.0": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point-email-type": [
+      "Patient.telecom"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-estimated-discharge-date": [
       "Encounter"
     ],
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability": [
       "Bundle.entry.resource",
       "Patient"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability|2.1.0": [
-      "Patient"
-    ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-description|2.1.0": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-description": [
       "Organization"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name|2.1.0": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name": [
       "Organization"
     ],
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name": [
       "Bundle.entry.resource.name",
       "Patient.name"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name|2.1.0": [
-      "Patient.name"
-    ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birthdate-update-indicator|2.1.0": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birthdate-update-indicator": [
       "Patient"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-identifier|2.1.0": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-identifier": [
       "Patient.contact"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-death-place|2.1.0": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-death-place": [
       "Patient"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-nationality|2.1.0": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-nationality": [
       "Patient"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-specialty|2.1.0": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-specialty": [
       "Practitioner"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-service-type-duration|2.1.0": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-service-type-duration": [
       "PractitionerRole"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-lieu-dit": [
+      "Patient.address.line"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-admission-date": [
       "Bundle.entry.resource",
       "Encounter"
     ],
-    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-admission-date|2.2.0-ballot": [
-      "Encounter"
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-assessment-method": [
+      "QuestionnaireResponse"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment": [
       "Bundle.entry.resource",
-      "CarePlan",
-      "Goal"
-    ],
-    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment|2.2.0-ballot": [
       "CarePlan",
       "Encounter",
       "Goal",
@@ -524,29 +823,23 @@
       "ServiceRequest"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order": [
-      "Patient.birthDate"
-    ],
-    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order|2.2.0-ballot": [
+      "Bundle.entry.resource.birthDate",
       "Patient.birthDate"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference": [
       "Bundle.entry.resource",
       "Goal"
     ],
-    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference|2.2.0-ballot": [
-      "Goal"
-    ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment": [
       "Bundle.entry.resource",
       "Encounter",
-      "QuestionnaireResponse"
-    ],
-    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment|2.2.0-ballot": [
-      "Encounter",
+      "Patient",
+      "Patient.address",
       "QuestionnaireResponse",
       "QuestionnaireResponse.item",
       "QuestionnaireResponse.item.item",
-      "QuestionnaireResponse.item.item.item"
+      "QuestionnaireResponse.item.item.item",
+      "RelatedPerson"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator": [
       "Bundle.entry.resource.note",
@@ -554,87 +847,83 @@
       "CarePlan.supportingInfo",
       "Goal.note"
     ],
-    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator|2.2.0-ballot": [
-      "CarePlan.supportingInfo",
-      "Goal.note"
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-date-origin": [
+      "Encounter.hospitalization"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-mode-label": [
       "Bundle.entry.resource",
       "Encounter"
     ],
-    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-mode-label|2.2.0-ballot": [
-      "Encounter"
-    ],
-    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-evaluation-reference|2.2.0-ballot": [
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-evaluation-reference": [
       "Goal"
     ],
-    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-cancel-reason|2.2.0-ballot": [
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-cancel-reason": [
       "Encounter.status"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-label": [
       "Bundle.entry.resource",
       "Encounter"
     ],
-    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-label|2.2.0-ballot": [
-      "Encounter"
-    ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-reason": [
       "Bundle.entry.resource",
-      "Encounter"
-    ],
-    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-reason|2.2.0-ballot": [
       "Encounter"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-report": [
       "Bundle.entry.resource",
       "Encounter"
     ],
-    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-report|2.2.0-ballot": [
-      "Encounter"
-    ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exercise-mode": [
       "Bundle.entry.resource",
-      "PractitionerRole"
-    ],
-    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exercise-mode|2.2.0-ballot": [
       "PractitionerRole"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exit-mode-label": [
       "Bundle.entry.resource",
       "Encounter"
     ],
-    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exit-mode-label|2.2.0-ballot": [
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-household-situation": [
+      "Bundle.entry.resource",
+      "Patient"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-meal": [
       "Encounter"
     ],
-    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-meal|2.2.0-ballot": [
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-nationality": [
+      "RelatedPerson"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-outside-service": [
       "Encounter"
     ],
-    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-outside-service|2.2.0-ballot": [
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-participant-present": [
+      "Encounter.participant",
+      "Encounter.serviceProvider"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-present": [
       "Encounter"
     ],
-    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-present|2.2.0-ballot": [
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-validation": [
+      "Bundle.entry.resource",
       "Encounter"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-profession": [
       "Bundle.entry.resource.code",
       "PractitionerRole.code"
     ],
-    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-profession|2.2.0-ballot": [
-      "PractitionerRole.code"
-    ],
-    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant|2.2.0-ballot": [
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant": [
+      "Bundle.entry.resource",
       "QuestionnaireResponse"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact-description": [
+      "RelatedPerson"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used": [
       "Bundle.entry.resource",
       "Encounter"
     ],
-    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used|2.2.0-ballot": [
-      "Encounter"
-    ],
-    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-status-author|2.2.0-ballot": [
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-status-author": [
       "CarePlan.status",
+      "Encounter.status",
       "Goal.lifecycleStatus",
+      "QuestionnaireResponse.status",
       "Task.status"
     ]
   }

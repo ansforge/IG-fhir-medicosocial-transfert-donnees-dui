@@ -1,4 +1,4 @@
-# TDDUI Encounter Sejour - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Encounter Sejour - Médicosocial - Transfert de données DUI v2.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour | *Version*:2.2.0-ballot |
-| Active as of 2026-03-24 | *Computable Name*:TDDUIEncounterSejour |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour | *Version*:2.3.0 |
+| Active as of 2026-03-26 | *Computable Name*:TDDUIEncounterSejour |
 
  
 Profil de la ressource Encounter permettant de regrouper les informations relatives au séjour d'un usager dans une structure ESSMS 
@@ -40,11 +40,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-sejo
   "resourceType" : "StructureDefinition",
   "id" : "tddui-encounter-sejour",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour",
-  "version" : "2.2.0-ballot",
+  "version" : "2.3.0",
   "name" : "TDDUIEncounterSejour",
   "title" : "TDDUI Encounter Sejour",
   "status" : "active",
-  "date" : "2026-03-24T16:53:46+00:00",
+  "date" : "2026-03-26T15:00:26+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -58,7 +58,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-sejo
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France"
     }]
   }],
   "fhirVersion" : "4.0.1",
@@ -90,7 +90,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-sejo
   "kind" : "resource",
   "abstract" : false,
   "type" : "Encounter",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Encounter|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Encounter",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
@@ -156,7 +156,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-sejo
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-admission-date|2.2.0-ballot"]
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-admission-date"]
       }],
       "mapping" : [{
         "identity" : "specmetier-to-TDDUIEncounterSejour",
@@ -172,7 +172,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-sejo
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-mode-label|2.2.0-ballot"]
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-mode-label"]
       }],
       "mapping" : [{
         "identity" : "specmetier-to-TDDUIEncounterSejour",
@@ -188,7 +188,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-sejo
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exit-mode-label|2.2.0-ballot"]
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exit-mode-label"]
       }],
       "mapping" : [{
         "identity" : "specmetier-to-TDDUIEncounterSejour",
@@ -204,7 +204,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-sejo
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment|2.2.0-ballot"]
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment"]
       }],
       "mapping" : [{
         "identity" : "specmetier-to-TDDUIEncounterSejour",
@@ -241,14 +241,14 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-sejo
       "min" : 1,
       "patternCodeableConcept" : {
         "coding" : [{
-          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier-cs",
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier",
           "code" : "SEJ",
           "display" : "Identifiant du séjour"
         }]
       },
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-identifier-vs|2.2.0-ballot"
+        "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-identifier"
       }
     },
     {
@@ -267,17 +267,80 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-sejo
       }]
     },
     {
+      "id" : "Encounter.identifier:AdministrativeFileNumber",
+      "path" : "Encounter.identifier",
+      "sliceName" : "AdministrativeFileNumber",
+      "short" : "Numéro de dossier administratif du séjour",
+      "min" : 0,
+      "max" : "1",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIEncounterSejour",
+        "map" : "numeroDossierAdministratifSejour"
+      }]
+    },
+    {
+      "id" : "Encounter.identifier:AdministrativeFileNumber.type",
+      "path" : "Encounter.identifier.type",
+      "min" : 1,
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier",
+          "code" : "NUMDOSS",
+          "display" : "Numéro de dossier administratif du séjour"
+        }]
+      },
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-identifier"
+      }
+    },
+    {
+      "id" : "Encounter.identifier:AdministrativeFileNumber.system",
+      "path" : "Encounter.identifier.system",
+      "min" : 1,
+      "patternUri" : "https://identifiant-medicosocial-sejour.esante.gouv.fr"
+    },
+    {
+      "id" : "Encounter.identifier:AdministrativeFileNumber.value",
+      "path" : "Encounter.identifier.value",
+      "min" : 1,
+      "example" : [{
+        "label" : "Numéro de dossier administratif du séjour",
+        "valueString" : "21564655"
+      }]
+    },
+    {
+      "id" : "Encounter.serviceType",
+      "path" : "Encounter.serviceType",
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J226-ModaliteAccueil-ROR/FHIR/JDV-J226-ModaliteAccueil-ROR"
+      },
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIEncounterSejour",
+        "map" : "modaliteAccueil"
+      }]
+    },
+    {
       "id" : "Encounter.subject",
       "path" : "Encounter.subject",
       "min" : 1,
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient|2.2.0-ballot",
-        "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins|2.2.0-ballot"]
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient",
+        "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"]
       }],
       "mapping" : [{
         "identity" : "specmetier-to-TDDUIEncounterSejour",
         "map" : "Usager"
+      }]
+    },
+    {
+      "id" : "Encounter.participant.individual.display",
+      "path" : "Encounter.participant.individual.display",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIEncounterSejour",
+        "map" : "origineDemande"
       }]
     },
     {
@@ -297,16 +360,63 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-sejo
       }]
     },
     {
+      "id" : "Encounter.hospitalization.extension",
+      "path" : "Encounter.hospitalization.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "Encounter.hospitalization.extension:TDDUIEntryDateOrigin",
+      "path" : "Encounter.hospitalization.extension",
+      "sliceName" : "TDDUIEntryDateOrigin",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-date-origin"]
+      }],
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIEncounterSejour",
+        "map" : "dateEntreeESSMSProvenance"
+      }]
+    },
+    {
+      "id" : "Encounter.hospitalization.preAdmissionIdentifier",
+      "path" : "Encounter.hospitalization.preAdmissionIdentifier",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIEncounterSejour",
+        "map" : "numeroDossierESSMSProvenance"
+      }]
+    },
+    {
+      "id" : "Encounter.hospitalization.origin",
+      "path" : "Encounter.hospitalization.origin",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization"]
+      }],
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIEncounterSejour",
+        "map" : "ESSMSProvenance"
+      }]
+    },
+    {
       "id" : "Encounter.serviceProvider",
       "path" : "Encounter.serviceProvider",
       "min" : 1,
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization|2.2.0-ballot"]
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization"]
       }],
       "mapping" : [{
         "identity" : "specmetier-to-TDDUIEncounterSejour",
-        "map" : "EntiteJuridique"
+        "map" : "ESSMSAccueil"
       }]
     }]
   }

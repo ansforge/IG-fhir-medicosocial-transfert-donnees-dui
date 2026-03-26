@@ -1,15 +1,15 @@
-# Libellé mode de sortie - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Exit Mode Label - Médicosocial - Transfert de données DUI v2.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Libellé mode de sortie**
+* **TDDUI Exit Mode Label**
 
-## Extension: Libellé mode de sortie 
+## Extension: TDDUI Exit Mode Label 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exit-mode-label | *Version*:2.2.0-ballot |
-| Active as of 2026-03-24 | *Computable Name*:TDDUIExitModeLabel |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exit-mode-label | *Version*:2.3.0 |
+| Active as of 2026-03-26 | *Computable Name*:TDDUIExitModeLabel |
 
 Libellé du mode de sortie du séjour.
 
@@ -20,7 +20,7 @@ Libellé du mode de sortie du séjour.
 **Utilisations:**
 
 * Utilise ce/t/te Extension: [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md)
-* Exemples pour ce/t/te Extension: [Bundle/ExampleTDDUIBundle](Bundle-ExampleTDDUIBundle.md) and [Encounter/tddui-encounter-sejour-example](Encounter-tddui-encounter-sejour-example.md)
+* Exemples pour ce/t/te Extension: [Bundle/tddui-bundle-example](Bundle-tddui-bundle-example.md) and [Encounter/tddui-encounter-sejour-example](Encounter-tddui-encounter-sejour-example.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-exit-mode-label)
 
@@ -43,11 +43,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-exit-mode-labe
   "resourceType" : "StructureDefinition",
   "id" : "tddui-exit-mode-label",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exit-mode-label",
-  "version" : "2.2.0-ballot",
+  "version" : "2.3.0",
   "name" : "TDDUIExitModeLabel",
-  "title" : "Libellé mode de sortie",
+  "title" : "TDDUI Exit Mode Label",
   "status" : "active",
-  "date" : "2026-03-24T16:53:46+00:00",
+  "date" : "2026-03-26T15:00:26+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -61,7 +61,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-exit-mode-labe
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France"
     }]
   }],
   "fhirVersion" : "4.0.1",
@@ -77,13 +77,13 @@ Other representations of profile: [CSV](StructureDefinition-tddui-exit-mode-labe
     "expression" : "Encounter"
   }],
   "type" : "Extension",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
       "id" : "Extension",
       "path" : "Extension",
-      "short" : "Libellé mode de sortie",
+      "short" : "TDDUI Exit Mode Label",
       "definition" : "Libellé du mode de sortie du séjour."
     },
     {

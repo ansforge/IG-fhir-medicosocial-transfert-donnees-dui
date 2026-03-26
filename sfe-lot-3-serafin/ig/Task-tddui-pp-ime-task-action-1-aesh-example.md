@@ -1,10 +1,10 @@
-# tddui-pp-ime-task-action-1-aesh-example - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI PP IME Task Action 1 AESH Example - Médicosocial - Transfert de données DUI v2.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **tddui-pp-ime-task-action-1-aesh-example**
+* **TDDUI PP IME Task Action 1 AESH Example**
 
-## Example Task: tddui-pp-ime-task-action-1-aesh-example
+## Example Task: TDDUI PP IME Task Action 1 AESH Example
 
 Profil: [TDDUI Task Action](StructureDefinition-tddui-task-action.md)
 
@@ -54,7 +54,7 @@ Profil: [TDDUI Task Action](StructureDefinition-tddui-task-action.md)
   "input" : [{
     "type" : {
       "coding" : [{
-        "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem",
+        "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action",
         "code" : "titre"
       }]
     },

@@ -1,14 +1,14 @@
-# tddui-pp-ime-patient-example - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI PP IME Patient Example - Médicosocial - Transfert de données DUI v2.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **tddui-pp-ime-patient-example**
+* **TDDUI PP IME Patient Example**
 
-## Example Patient: tddui-pp-ime-patient-example
+## Example Patient: TDDUI PP IME Patient Example
 
 Profil: [TDDUI Patient](StructureDefinition-tddui-patient.md)
 
-Hugo D. (official) (sexe non précisé), Date de Naissance inconnue ( Patient internal identifier: 3480787529/123456)
+Hugo D. (official) (sexe non précisé), Date de Naissance :2005-09-15 ( Patient internal identifier: 3480787529/123456)
 
 -------
 
@@ -38,7 +38,14 @@ Hugo D. (official) (sexe non précisé), Date de Naissance inconnue ( Patient in
     "use" : "official",
     "family" : "D.",
     "given" : ["Hugo"]
-  }]
+  }],
+  "birthDate" : "2005-09-15",
+  "_birthDate" : {
+    "extension" : [{
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order",
+      "valuePositiveInt" : 1
+    }]
+  }
 }
 
 ```

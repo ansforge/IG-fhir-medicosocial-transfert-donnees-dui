@@ -1,10 +1,10 @@
-# tddui-pp-ime-careplan-example - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI PP IME CarePlan Example - Médicosocial - Transfert de données DUI v2.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **tddui-pp-ime-careplan-example**
+* **TDDUI PP IME CarePlan Example**
 
-## Example CarePlan: tddui-pp-ime-careplan-example
+## Example CarePlan: TDDUI PP IME CarePlan Example
 
 Profil: [TDDUI CarePlan Projet Personalise](StructureDefinition-tddui-careplan-projet-personnalise.md)
 
@@ -16,7 +16,7 @@ Profil: [TDDUI CarePlan Projet Personalise](StructureDefinition-tddui-careplan-p
 
 **title**: Projet personnalisé de Hugo en IME
 
-**subject**: [Hugo D. (official) (sexe non précisé), Date de Naissance inconnue ( Patient internal identifier: 3480787529/123456)](Patient-tddui-pp-ime-patient-example.md)
+**subject**: [Hugo D. (official) (sexe non précisé), Date de Naissance :2005-09-15 ( Patient internal identifier: 3480787529/123456)](Patient-tddui-pp-ime-patient-example.md)
 
 **supportingInfo**: [tddui-pp-ime-consent-accord-example](Consent-tddui-pp-ime-consent-accord-example.md)
 
@@ -46,7 +46,7 @@ Profil: [TDDUI CarePlan Projet Personalise](StructureDefinition-tddui-careplan-p
       "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator",
       "valueCodeableConcept" : {
         "coding" : [{
-          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs",
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator",
           "code" : "accordStructure"
         }]
       }

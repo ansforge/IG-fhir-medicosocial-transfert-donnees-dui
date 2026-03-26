@@ -1,4 +1,4 @@
-# Évaluation SERAFIN - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# Évaluation SERAFIN - Médicosocial - Transfert de données DUI v2.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/Questionnaire/tddui-questionnaire-serafin | *Version*:2.2.0-ballot |
-| Active as of 2026-03-24 | *Computable Name*: |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/Questionnaire/tddui-questionnaire-serafin | *Version*:2.3.0 |
+| Active as of 2026-03-26 | *Computable Name*: |
 
  
 Grille d'évaluation SERAFIN 
@@ -23,10 +23,10 @@ Grille d'évaluation SERAFIN
   "resourceType" : "Questionnaire",
   "id" : "tddui-questionnaire-serafin",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/Questionnaire/tddui-questionnaire-serafin",
-  "version" : "2.2.0-ballot",
+  "version" : "2.3.0",
   "title" : "Évaluation SERAFIN",
   "status" : "active",
-  "date" : "2026-03-24T16:53:46+00:00",
+  "date" : "2026-03-26T15:00:26+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -40,7 +40,7 @@ Grille d'évaluation SERAFIN
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France"
     }]
   }],
   "code" : [{

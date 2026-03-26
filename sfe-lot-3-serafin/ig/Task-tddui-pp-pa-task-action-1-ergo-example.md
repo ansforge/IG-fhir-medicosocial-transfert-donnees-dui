@@ -1,10 +1,10 @@
-# tddui-pp-pa-task-action-1-ergo-example - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI PP PA Task Action 1 Ergo Example - Médicosocial - Transfert de données DUI v2.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **tddui-pp-pa-task-action-1-ergo-example**
+* **TDDUI PP PA Task Action 1 Ergo Example**
 
-## Example Task: tddui-pp-pa-task-action-1-ergo-example
+## Example Task: TDDUI PP PA Task Action 1 Ergo Example
 
 Profil: [TDDUI Task Action](StructureDefinition-tddui-task-action.md)
 
@@ -51,7 +51,7 @@ Profil: [TDDUI Task Action](StructureDefinition-tddui-task-action.md)
   "input" : [{
     "type" : {
       "coding" : [{
-        "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem",
+        "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action",
         "code" : "titre"
       }]
     },
@@ -60,7 +60,7 @@ Profil: [TDDUI Task Action](StructureDefinition-tddui-task-action.md)
   {
     "type" : {
       "coding" : [{
-        "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem",
+        "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action",
         "code" : "objectif"
       }]
     },

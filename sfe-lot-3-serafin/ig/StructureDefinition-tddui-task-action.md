@@ -1,4 +1,4 @@
-# TDDUI Task Action - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Task Action - Médicosocial - Transfert de données DUI v2.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action | *Version*:2.2.0-ballot |
-| Active as of 2026-03-24 | *Computable Name*:TDDUITaskAction |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action | *Version*:2.3.0 |
+| Active as of 2026-03-26 | *Computable Name*:TDDUITaskAction |
 
  
 Profil de la ressource Task permettant de représenter les actions réalisées dans le cadre du projet personnalisé. 
@@ -40,11 +40,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-action.cs
   "resourceType" : "StructureDefinition",
   "id" : "tddui-task-action",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action",
-  "version" : "2.2.0-ballot",
+  "version" : "2.3.0",
   "name" : "TDDUITaskAction",
   "title" : "TDDUI Task Action",
   "status" : "active",
-  "date" : "2026-03-24T16:53:46+00:00",
+  "date" : "2026-03-26T15:00:26+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -58,7 +58,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-action.cs
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France"
     }]
   }],
   "fhirVersion" : "4.0.1",
@@ -90,7 +90,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-action.cs
   "kind" : "resource",
   "abstract" : false,
   "type" : "Task",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Task|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Task",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
@@ -142,7 +142,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-action.cs
       "max" : "1",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise|2.2.0-ballot"]
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise"]
       }],
       "mapping" : [{
         "identity" : "specmetier-to-TDDUITaskAction",
@@ -178,7 +178,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-action.cs
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-status-author|2.2.0-ballot"]
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-status-author"]
       }],
       "mapping" : [{
         "identity" : "specmetier-to-TDDUITaskAction",
@@ -214,8 +214,8 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-action.cs
       "path" : "Task.owner",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner|2.2.0-ballot",
-        "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role|2.2.0-ballot"]
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner",
+        "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role"]
       }],
       "mapping" : [{
         "identity" : "specmetier-to-TDDUITaskAction",
@@ -239,7 +239,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-action.cs
       "path" : "Task.input.type",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-action-valueset|2.2.0-ballot"
+        "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-task-input-action"
       }
     },
     {
@@ -259,7 +259,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-action.cs
       "path" : "Task.input.type",
       "patternCodeableConcept" : {
         "coding" : [{
-          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem",
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action",
           "code" : "titre"
         }]
       }
@@ -288,7 +288,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-action.cs
       "path" : "Task.input.type",
       "patternCodeableConcept" : {
         "coding" : [{
-          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem",
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action",
           "code" : "evaluation"
         }]
       }
@@ -298,7 +298,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-action.cs
       "path" : "Task.input.value[x]",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response|2.2.0-ballot"]
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"]
       }]
     },
     {
@@ -318,7 +318,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-action.cs
       "path" : "Task.input.type",
       "patternCodeableConcept" : {
         "coding" : [{
-          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem",
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action",
           "code" : "avisUsager"
         }]
       }
@@ -347,7 +347,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-action.cs
       "path" : "Task.input.type",
       "patternCodeableConcept" : {
         "coding" : [{
-          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem",
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action",
           "code" : "resultatAttendu"
         }]
       }
@@ -376,7 +376,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-action.cs
       "path" : "Task.input.type",
       "patternCodeableConcept" : {
         "coding" : [{
-          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem",
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action",
           "code" : "pieceJointe"
         }]
       }
@@ -386,7 +386,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-action.cs
       "path" : "Task.input.value[x]",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference|2.2.0-ballot"]
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"]
       }]
     },
     {
@@ -406,7 +406,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-action.cs
       "path" : "Task.input.type",
       "patternCodeableConcept" : {
         "coding" : [{
-          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-action-codesystem",
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action",
           "code" : "objectif"
         }]
       }
@@ -416,7 +416,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-action.cs
       "path" : "Task.input.value[x]",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif|2.2.0-ballot"]
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif"]
       }]
     }]
   }

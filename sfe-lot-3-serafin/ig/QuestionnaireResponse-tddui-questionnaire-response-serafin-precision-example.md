@@ -1,10 +1,10 @@
-# tddui-questionnaire-response-serafin-precision-example - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Questionnaire Response SERAFIN Precision Example - Médicosocial - Transfert de données DUI v2.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **tddui-questionnaire-response-serafin-precision-example**
+* **TDDUI Questionnaire Response SERAFIN Precision Example**
 
-## Example QuestionnaireResponse: tddui-questionnaire-response-serafin-precision-example
+## Example QuestionnaireResponse: TDDUI Questionnaire Response SERAFIN Precision Example
 
 Profil: [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md)
 

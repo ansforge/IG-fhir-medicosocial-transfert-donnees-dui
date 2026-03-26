@@ -1,15 +1,15 @@
-# Libellé de l'évènement - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Event Label - Médicosocial - Transfert de données DUI v2.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Libellé de l'évènement**
+* **TDDUI Event Label**
 
-## Extension: Libellé de l'évènement 
+## Extension: TDDUI Event Label 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-label | *Version*:2.2.0-ballot |
-| Active as of 2026-03-24 | *Computable Name*:TDDUIEventLabel |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-label | *Version*:2.3.0 |
+| Active as of 2026-03-26 | *Computable Name*:TDDUIEventLabel |
 
 Titre donné à l’évènement par la structure.
 
@@ -20,7 +20,7 @@ Titre donné à l’évènement par la structure.
 **Utilisations:**
 
 * Utilise ce/t/te Extension: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)
-* Exemples pour ce/t/te Extension: [Bundle/ExampleTDDUIBundle](Bundle-ExampleTDDUIBundle.md) and [Encounter/tddui-encounter-evenement-example](Encounter-tddui-encounter-evenement-example.md)
+* Exemples pour ce/t/te Extension: [Bundle/tddui-bundle-example](Bundle-tddui-bundle-example.md) and [Encounter/tddui-encounter-evenement-example](Encounter-tddui-encounter-evenement-example.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-event-label)
 
@@ -43,11 +43,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-event-label.cs
   "resourceType" : "StructureDefinition",
   "id" : "tddui-event-label",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-label",
-  "version" : "2.2.0-ballot",
+  "version" : "2.3.0",
   "name" : "TDDUIEventLabel",
-  "title" : "Libellé de l'évènement",
+  "title" : "TDDUI Event Label",
   "status" : "active",
-  "date" : "2026-03-24T16:53:46+00:00",
+  "date" : "2026-03-26T15:00:26+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -61,7 +61,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-event-label.cs
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France"
     }]
   }],
   "fhirVersion" : "4.0.1",
@@ -77,13 +77,13 @@ Other representations of profile: [CSV](StructureDefinition-tddui-event-label.cs
     "expression" : "Encounter"
   }],
   "type" : "Extension",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
       "id" : "Extension",
       "path" : "Extension",
-      "short" : "Libellé de l'évènement",
+      "short" : "TDDUI Event Label",
       "definition" : "Titre donné à l’évènement par la structure."
     },
     {

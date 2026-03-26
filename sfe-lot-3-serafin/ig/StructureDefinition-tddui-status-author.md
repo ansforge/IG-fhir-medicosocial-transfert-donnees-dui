@@ -1,17 +1,17 @@
-# TDDUI Auteur statut - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Status Author - Médicosocial - Transfert de données DUI v2.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **TDDUI Auteur statut**
+* **TDDUI Status Author**
 
-## Extension: TDDUI Auteur statut 
+## Extension: TDDUI Status Author 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-status-author | *Version*:2.2.0-ballot |
-| Active as of 2026-03-24 | *Computable Name*:TDDUIStatusAuthor |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-status-author | *Version*:2.3.0 |
+| Active as of 2026-03-26 | *Computable Name*:TDDUIStatusAuthor |
 
-Extension permettant de représenter la profession du professionnel.
+Extension permettant de représenter l'auteur du statut.
 
 **Context of Use**
 
@@ -19,7 +19,7 @@ Extension permettant de représenter la profession du professionnel.
 
 **Utilisations:**
 
-* Utilise ce/t/te Extension: [TDDUI CarePlan Projet Personalise](StructureDefinition-tddui-careplan-projet-personnalise.md), [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md), [TDDUI Task Action](StructureDefinition-tddui-task-action.md) and [TDDUI Task Prestation](StructureDefinition-tddui-task-prestation.md)
+* Utilise ce/t/te Extension: [TDDUI CarePlan Projet Personalise](StructureDefinition-tddui-careplan-projet-personnalise.md), [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md), [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md), [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md)... Show 2 more, [TDDUI Task Action](StructureDefinition-tddui-task-action.md) and [TDDUI Task Prestation](StructureDefinition-tddui-task-prestation.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-status-author)
 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-status-author.
   "resourceType" : "StructureDefinition",
   "id" : "tddui-status-author",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-status-author",
-  "version" : "2.2.0-ballot",
+  "version" : "2.3.0",
   "name" : "TDDUIStatusAuthor",
-  "title" : "TDDUI Auteur statut",
+  "title" : "TDDUI Status Author",
   "status" : "active",
-  "date" : "2026-03-24T16:53:46+00:00",
+  "date" : "2026-03-26T15:00:26+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -55,12 +55,12 @@ Other representations of profile: [CSV](StructureDefinition-tddui-status-author.
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Extension permettant de représenter la profession du professionnel.",
+  "description" : "Extension permettant de représenter l'auteur du statut.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France"
     }]
   }],
   "fhirVersion" : "4.0.1",
@@ -82,16 +82,24 @@ Other representations of profile: [CSV](StructureDefinition-tddui-status-author.
   {
     "type" : "element",
     "expression" : "Task.status"
+  },
+  {
+    "type" : "element",
+    "expression" : "Encounter.status"
+  },
+  {
+    "type" : "element",
+    "expression" : "QuestionnaireResponse.status"
   }],
   "type" : "Extension",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
       "id" : "Extension",
       "path" : "Extension",
-      "short" : "TDDUI Auteur statut",
-      "definition" : "Extension permettant de représenter la profession du professionnel."
+      "short" : "TDDUI Status Author",
+      "definition" : "Extension permettant de représenter l'auteur du statut."
     },
     {
       "id" : "Extension.extension",
@@ -109,8 +117,8 @@ Other representations of profile: [CSV](StructureDefinition-tddui-status-author.
       "short" : "Auteur du statut.",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner|2.2.0-ballot",
-        "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role|2.2.0-ballot"]
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner",
+        "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role"]
       }]
     }]
   }

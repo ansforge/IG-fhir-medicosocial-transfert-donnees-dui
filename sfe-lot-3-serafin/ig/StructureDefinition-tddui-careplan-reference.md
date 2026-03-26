@@ -1,15 +1,15 @@
-# Lien vers le projet personnalisé - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI CarePlan Projet Perso Ref - Médicosocial - Transfert de données DUI v2.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Lien vers le projet personnalisé**
+* **TDDUI CarePlan Projet Perso Ref**
 
-## Extension: Lien vers le projet personnalisé 
+## Extension: TDDUI CarePlan Projet Perso Ref 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference | *Version*:2.2.0-ballot |
-| Active as of 2026-03-24 | *Computable Name*:TDDUICarePlanProjetPersoRef |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference | *Version*:2.3.0 |
+| Active as of 2026-03-26 | *Computable Name*:TDDUICarePlanProjetPersoRef |
 
 Liens vers le projet personnalisé, utilisables dans le profil TDDUIGoalObjectif.
 
@@ -43,11 +43,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-refer
   "resourceType" : "StructureDefinition",
   "id" : "tddui-careplan-reference",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference",
-  "version" : "2.2.0-ballot",
+  "version" : "2.3.0",
   "name" : "TDDUICarePlanProjetPersoRef",
-  "title" : "Lien vers le projet personnalisé",
+  "title" : "TDDUI CarePlan Projet Perso Ref",
   "status" : "active",
-  "date" : "2026-03-24T16:53:46+00:00",
+  "date" : "2026-03-26T15:00:26+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -61,7 +61,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-refer
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France"
     }]
   }],
   "fhirVersion" : "4.0.1",
@@ -77,13 +77,13 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-refer
     "expression" : "Goal"
   }],
   "type" : "Extension",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
       "id" : "Extension",
       "path" : "Extension",
-      "short" : "Lien vers le projet personnalisé",
+      "short" : "TDDUI CarePlan Projet Perso Ref",
       "definition" : "Liens vers le projet personnalisé, utilisables dans le profil TDDUIGoalObjectif."
     },
     {
@@ -101,7 +101,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-refer
       "path" : "Extension.value[x]",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise|2.2.0-ballot"]
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise"]
       }]
     }]
   }

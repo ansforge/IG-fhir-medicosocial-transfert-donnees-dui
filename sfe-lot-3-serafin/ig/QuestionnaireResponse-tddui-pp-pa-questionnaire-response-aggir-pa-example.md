@@ -1,10 +1,10 @@
-# tddui-pp-pa-questionnaire-response-aggir-pa-example - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI PP PA Questionnaire Response AGGIR PA Example - Médicosocial - Transfert de données DUI v2.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **tddui-pp-pa-questionnaire-response-aggir-pa-example**
+* **TDDUI PP PA Questionnaire Response AGGIR PA Example**
 
-## Example QuestionnaireResponse: tddui-pp-pa-questionnaire-response-aggir-pa-example
+## Example QuestionnaireResponse: TDDUI PP PA Questionnaire Response AGGIR PA Example
 
 Profil: [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md)
 
@@ -29,6 +29,15 @@ Profil: [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-re
   "meta" : {
     "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"]
   },
+  "extension" : [{
+    "extension" : [{
+      "url" : "TDDUIHolder",
+      "valueReference" : {
+        "reference" : "Organization/tddui-organization-example"
+      }
+    }],
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant"
+  }],
   "identifier" : {
     "system" : "https://identifiant-medicosocial-evaluation.esante.gouv.fr",
     "value" : "3480787529/123456789-EVAL-1234"
@@ -36,6 +45,9 @@ Profil: [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-re
   "questionnaire" : "https://interop.esante.gouv.fr/ig/fhir/tddui/Questionnaire/tddui-questionnaire-aggir-pa-ssiad",
   "status" : "completed",
   "subject" : {
+    "reference" : "Patient/tddui-pp-pa-patient-example-pp"
+  },
+  "source" : {
     "reference" : "Patient/tddui-pp-pa-patient-example-pp"
   },
   "item" : [{

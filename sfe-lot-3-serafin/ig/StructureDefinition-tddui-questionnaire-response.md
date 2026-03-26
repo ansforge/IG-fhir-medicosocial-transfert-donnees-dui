@@ -1,4 +1,4 @@
-# TDDUI QuestionnaireResponse - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI QuestionnaireResponse - Médicosocial - Transfert de données DUI v2.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response | *Version*:2.2.0-ballot |
-| Active as of 2026-03-24 | *Computable Name*:TDDUIQuestionnaireResponse |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response | *Version*:2.3.0 |
+| Active as of 2026-03-26 | *Computable Name*:TDDUIQuestionnaireResponse |
 
  
 Profil de la ressource QuestionnaireResponse utilisé pour transmettre les réponses aux questionnaires dans le cadre des évaluations. 
@@ -17,7 +17,7 @@ Profil de la ressource QuestionnaireResponse utilisé pour transmettre les répo
 **Utilisations:**
 
 * Utilise ce/t/te Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
-* Référence ce Profil: [Lien vers l'évaluation](StructureDefinition-tddui-evaluation-reference.md), [TDDUI Task Action](StructureDefinition-tddui-task-action.md), [TDDUI Task MoyenRessource](StructureDefinition-tddui-task-moyen-ressource.md) and [TDDUI Task Prestation](StructureDefinition-tddui-task-prestation.md)
+* Référence ce Profil: [TDDUI Evaluation Ref](StructureDefinition-tddui-evaluation-reference.md), [TDDUI Task Action](StructureDefinition-tddui-task-action.md), [TDDUI Task MoyenRessource](StructureDefinition-tddui-task-moyen-ressource.md) and [TDDUI Task Prestation](StructureDefinition-tddui-task-prestation.md)
 * Exemples pour ce/t/te Profil: [QuestionnaireResponse/tddui-pp-pa-questionnaire-response-aggir-pa-example](QuestionnaireResponse-tddui-pp-pa-questionnaire-response-aggir-pa-example.md), [QuestionnaireResponse/tddui-questionnaire-response-aggir-pa-example](QuestionnaireResponse-tddui-questionnaire-response-aggir-pa-example.md), [QuestionnaireResponse/tddui-questionnaire-response-aggir-ph-example](QuestionnaireResponse-tddui-questionnaire-response-aggir-ph-example.md), [QuestionnaireResponse/tddui-questionnaire-response-serafin-precision-example](QuestionnaireResponse-tddui-questionnaire-response-serafin-precision-example.md)... Show 2 more, [QuestionnaireResponse/tddui-questionnaire-response-serafin-sans-precision-example](QuestionnaireResponse-tddui-questionnaire-response-serafin-sans-precision-example.md) and [QuestionnaireResponse/tddui-questionnaire-response-situation-ssiad-example](QuestionnaireResponse-tddui-questionnaire-response-situation-ssiad-example.md)
 * CapabilityStatements utilisant ce Profil: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
 
@@ -40,11 +40,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-questionnaire-
   "resourceType" : "StructureDefinition",
   "id" : "tddui-questionnaire-response",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response",
-  "version" : "2.2.0-ballot",
+  "version" : "2.3.0",
   "name" : "TDDUIQuestionnaireResponse",
   "title" : "TDDUI QuestionnaireResponse",
   "status" : "active",
-  "date" : "2026-03-24T16:53:46+00:00",
+  "date" : "2026-03-26T15:00:26+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -58,7 +58,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-questionnaire-
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France"
     }]
   }],
   "fhirVersion" : "4.0.1",
@@ -90,12 +90,26 @@ Other representations of profile: [CSV](StructureDefinition-tddui-questionnaire-
   "kind" : "resource",
   "abstract" : false,
   "type" : "QuestionnaireResponse",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
       "id" : "QuestionnaireResponse",
       "path" : "QuestionnaireResponse",
+      "constraint" : [{
+        "key" : "auto-eval-porteur",
+        "severity" : "error",
+        "human" : "Dans le cas d'une auto évaluation, le porteur doit être renseigné.",
+        "expression" : "(source.exists() and source.reference.contains('Patient/')) implies extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant').extension.where(url='TDDUIHolder').exists()",
+        "source" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
+      },
+      {
+        "key" : "professionnel-requis",
+        "severity" : "error",
+        "human" : "Hormis le cas de l'auto évaluation, au moins un des 3 éléments (Evaluateur, Responsable, Auteur) doit être renseigné",
+        "expression" : "source.reference.contains('Patient/').not() implies (source.reference.contains('Practitioner/') or author.exists() or extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant').extension.where(url='TDDUIResponsible').exists())",
+        "source" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"
+      }],
       "mapping" : [{
         "identity" : "specmetier-to-TDDUIQuestionnaireResponseAGGIR",
         "map" : "Evaluation AGGIR PA SSIAD, Evaluation AGGIR PH SSIAD"
@@ -137,7 +151,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-questionnaire-
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant|2.2.0-ballot"]
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant"]
       }]
     },
     {
@@ -154,16 +168,16 @@ Other representations of profile: [CSV](StructureDefinition-tddui-questionnaire-
       }]
     },
     {
-      "id" : "QuestionnaireResponse.extension:TDDUIQRParticipant.extension:TDDUIStatusAuthor",
+      "id" : "QuestionnaireResponse.extension:TDDUIQRParticipant.extension:TDDUIHolder",
       "path" : "QuestionnaireResponse.extension.extension",
-      "sliceName" : "TDDUIStatusAuthor",
+      "sliceName" : "TDDUIHolder",
       "mapping" : [{
         "identity" : "specmetier-to-TDDUIQuestionnaireResponseAGGIR",
-        "map" : "Statut.auteur"
+        "map" : "Porteur"
       },
       {
         "identity" : "specmetier-to-TDDUIQuestionnaireResponseSerafinSSIAD",
-        "map" : "Statut.auteur"
+        "map" : "Porteur"
       }]
     },
     {
@@ -174,7 +188,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-questionnaire-
       "max" : "*",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment|2.2.0-ballot"]
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment"]
       }],
       "mapping" : [{
         "identity" : "specmetier-to-TDDUIQuestionnaireResponseAGGIR",
@@ -193,7 +207,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-questionnaire-
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment|2.2.0-ballot"]
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment"]
       }],
       "mapping" : [{
         "identity" : "specmetier-to-TDDUIQuestionnaireResponseAGGIR",
@@ -202,6 +216,25 @@ Other representations of profile: [CSV](StructureDefinition-tddui-questionnaire-
       {
         "identity" : "specmetier-to-TDDUIQuestionnaireResponseSerafinSSIAD",
         "map" : "commentaireEvaluation"
+      }]
+    },
+    {
+      "id" : "QuestionnaireResponse.extension:TDDUIAssessmentMethod",
+      "path" : "QuestionnaireResponse.extension",
+      "sliceName" : "TDDUIAssessmentMethod",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-assessment-method"]
+      }],
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIQuestionnaireResponseAGGIR",
+        "map" : "modaliteEvaluation"
+      },
+      {
+        "identity" : "specmetier-to-TDDUIQuestionnaireResponseSerafinSSIAD",
+        "map" : "modaliteEvaluation"
       }]
     },
     {
@@ -261,13 +294,44 @@ Other representations of profile: [CSV](StructureDefinition-tddui-questionnaire-
       }]
     },
     {
+      "id" : "QuestionnaireResponse.status.extension",
+      "path" : "QuestionnaireResponse.status.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "QuestionnaireResponse.status.extension:TDDUIStatusAuthor",
+      "path" : "QuestionnaireResponse.status.extension",
+      "sliceName" : "TDDUIStatusAuthor",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-status-author"]
+      }],
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIQuestionnaireResponseAGGIR",
+        "map" : "Statut.auteur"
+      },
+      {
+        "identity" : "specmetier-to-TDDUIQuestionnaireResponseSerafinSSIAD",
+        "map" : "Statut.auteur"
+      }]
+    },
+    {
       "id" : "QuestionnaireResponse.subject",
       "path" : "QuestionnaireResponse.subject",
       "min" : 1,
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient|2.2.0-ballot",
-        "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins|2.2.0-ballot"]
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient",
+        "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"]
       }],
       "mapping" : [{
         "identity" : "specmetier-to-TDDUIQuestionnaireResponseAGGIR",
@@ -283,7 +347,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-questionnaire-
       "path" : "QuestionnaireResponse.encounter",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement|2.2.0-ballot"]
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement"]
       }],
       "mapping" : [{
         "identity" : "specmetier-to-TDDUIQuestionnaireResponseAGGIR",
@@ -311,7 +375,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-questionnaire-
       "path" : "QuestionnaireResponse.author",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner|2.2.0-ballot"]
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner"]
       }],
       "mapping" : [{
         "identity" : "specmetier-to-TDDUIQuestionnaireResponseAGGIR",
@@ -327,7 +391,9 @@ Other representations of profile: [CSV](StructureDefinition-tddui-questionnaire-
       "path" : "QuestionnaireResponse.source",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner|2.2.0-ballot"]
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner",
+        "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient",
+        "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"]
       }],
       "mapping" : [{
         "identity" : "specmetier-to-TDDUIQuestionnaireResponseAGGIR",
@@ -367,7 +433,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-questionnaire-
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment|2.2.0-ballot"]
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment"]
       }],
       "mapping" : [{
         "identity" : "specmetier-to-TDDUIQuestionnaireResponseSerafinSSIAD",
@@ -425,7 +491,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-questionnaire-
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment|2.2.0-ballot"]
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment"]
       }],
       "mapping" : [{
         "identity" : "specmetier-to-TDDUIQuestionnaireResponseAGGIR",
@@ -479,7 +545,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-questionnaire-
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment|2.2.0-ballot"]
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment"]
       }],
       "mapping" : [{
         "identity" : "specmetier-to-TDDUIQuestionnaireResponseAGGIR",

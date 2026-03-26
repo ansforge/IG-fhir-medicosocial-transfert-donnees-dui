@@ -1,4 +1,4 @@
-# Modélisation du contenu du DUI - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# Modélisation du contenu du DUI - Médicosocial - Transfert de données DUI v2.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Volume 1 - Etude fonctionnelle**](sfe.md)
@@ -44,20 +44,20 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
   * Description: Date de naissance de l’usager. Cet attribut fait partie des traits INS. Il est obligatoire si l’identité INS est qualifiée.Il est préconisé si le NIR ou l'identifiant local est véhiculé et que l'identité n'est pas qualifiée.
 * Nom: ordreNaissanceEtatCivil : [0..1] Numerique
   * Description: Ordre d’enregistrement de la naissance dans le registre d’état civil de la commune de naissance pour le mois de la naissance. Il compose les[3 derniers chiffres du NIR de l'usager avant ](https://www.ameli.fr/llle-et-vilaine/assure/droits-demarches/principes/numero-securite-sociale)la clé de sécurité et permet de distinguer les personnes nées au même lieu et à la même période.Il est obligatoire si le NIR n'est pas transmis.
-* Nom: CommuneNaissance : [0..1] Code
+* Nom: communeNaissance : [0..1] Code
   * Description: Commune de naissance de l’usager. Code officiel géographique (COG) de la commune.Jeu(x) de valeur(s) associé(s) :[JDV_J120-CommuneHistorisee](https://mos.esante.gouv.fr/NOS/JDV_J120-CommuneHistorisee/FHIR/JDV-J120-CommuneHistorisee)Cet attribut fait partie des traits INS. Il est obligatoire si l’identité INS est qualifiée.Il est préconisé si le NIR ou l'identifiant local est véhiculé et que l'identité n'est pas qualifiée.
 * Nom: departementNaissance : [0..1] Code
   * Description: Département de naissance de la personne. Code officiel géographique (COG) du département.Jeu(x) de valeur(s) associé(s) :[JDV-J258-Departement](https://mos.esante.gouv.fr/NOS/JDV_J258-Departement/FHIR/JDV-J258-Departement)
 * Nom: paysNaissance : [0..1] Code
   * Description: Pays de naissance de la personne.Nomenclature(s) associée(s) : ISO 3166Cet attribut fait partie des traits INS. Il est obligatoire si l’identité INS est qualifiée.Il est préconisé si le NIR ou l'identifiant local est véhiculé et que l'identité n'est pas qualifiée.
 * Nom: situationFamiliale : [0..1] Code
-  * Description: Situation familiale de l’usager.Jeu(x) associé(s) :[JDV-J176-SituationVieQuotidienne-MDPH](https://mos.esante.gouv.fr/NOS/JDV_J176-SituationVieQuotidienne-MDPH/FHIR/JDV-J176-SituationVieQuotidienne-MDPH)
-* Nom: compositionFoyer : [0..1] Code
-  * Description: Désigne avec qui vit l’usager dans son logement.Jeu(x) associé(s) : Jeu(x) associé(s) :[JDV-J385-composition-foyer-ms](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j385-composition-foyer-ms)
+  * Description: Situation familiale de l’usager.Jeu(x) de valeur(s) associé(s) :[JDV-J176-SituationVieQuotidienne-MDPH](https://mos.esante.gouv.fr/NOS/JDV_J176-SituationVieQuotidienne-MDPH/FHIR/JDV-J176-SituationVieQuotidienne-MDPH)
+* Nom: compositionFoyer : [0..*] Code
+  * Description: Désigne avec qui vit l’usager dans son logement.Jeu(x) de valeur(s) associé(s) :[JDV-J385-composition-foyer-ms](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j385-composition-foyer-ms/$expand)
 * Nom: descriptionCompositionFoyer : [0..1] Texte
   * Description: Description de la composition du foyer, c’est-à-dire des personnes qui vivent dans le logement avec l'usager.
 * Nom: paysNationalite : [0..*] Code
-  * Description: Pays de nationalité actuelle ou rattachement de la nationalité à un espace de pays conventionné.Nomenclature(s) associée(s) :[TRE_R89-RegroupementPays](https://mos.esante.gouv.fr/NOS/TRE_R89-RegroupementPays/FHIR/TRE-R89-RegroupementPays)
+  * Description: Pays de nationalité de l'usager.Nomenclature(s) associée(s) : ISO 3166
 * Nom: langueParlee : [0..*] Code
   * Description: Langue parlée par l’usager.Jeu(x) de valeur(s) associé(s) :[JDV_J115-Langue-ENREG](https://mos.esante.gouv.fr/NOS/JDV_J115-Langue-ENREG/FHIR/JDV-J115-Langue-ENREG)
 * Nom: dateDeces : [0..1] DateHeure
@@ -83,8 +83,6 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
 
 Adresse géopostale. Un emplacement auquel l’usager peut être trouvé, d'après la norme AFNOR NF Z10-011.
 
-* Nom: idAdresse : [0..1] Identifiant
-  * Description: Identifiant fonctionnel de l’adresse.
 * Nom: type : [0..1] Code
   * Description: Indique le ou les types d'adresse tel que "Adresse du domicile", "Adresse du domicile de secours", etc.
 * Nom: numeroVoie : [0..1] Texte
@@ -114,23 +112,23 @@ Adresse géopostale. Un emplacement auquel l’usager peut être trouvé, d'apr�
 
 ##### Classe Telecommunication
 
-Adresse de télécommunication à laquelle l’usager peut être contactée (téléphone, fax, e-mail, URL, etc.).
+Adresse de télécommunication à laquelle l’usager peut être contactée (téléphone, fax, e-mail, URL, etc.). Cet objet provient du MOS, il a été profilé pour ce volet.
 
-* Nom: canal : [0..1] Code
-  * Description: Code spécifiant le canal ou la manière dont s'établit la communication (téléphone, e-mail, URL, etc.).Nomenclature(s) associée(s) :[JDV-J225-CanalCommunication-ROR](https://mos.esante.gouv.fr/NOS/JDV_J225-CanalCommunication-ROR/FHIR/JDV-J225-CanalCommunication-ROR)
-* Nom: adresseTelecom : [0..1] Texte
+* Nom: canal : [1..1] Code
+  * Description: Code spécifiant le canal ou la manière dont s'établit la communication (téléphone, e-mail, URL, etc.).Jeu(x) de valeur associé(s) : JDV en cours de d'analyse NOS
+* Nom: typeMessagerie : [0..1] Code
+  * Description: Type de messagerie électronique rassemblant des acteurs (personne physique, personne morale ou système) identifiés et enregistrés selon des règles qui garantissent leur légitimité à l'utiliser.Jeu(x) de valeur associé(s) : JDV en cours de d'analyse NOS
+* Nom: adresseTelecom : [1..1] Texte
   * Description: Valeur de l'adresse de télécommunication dans le format induit par le canal de communication, par exemple un numéro de téléphone, une adresse de courrier électronique, une adresse URL, etc.
-* Nom: utilisation : [0..1] Texte
-  * Description: Précise l'utilisation du canal de communication (par exemple à des fins professionnelles, privées, etc.).
+* Nom: utilisation : [0..1] Code
+  * Description: Précise l'utilisation du canal de communication (par exemple à des fins professionnelles, privées, etc.).Jeu(x) de valeur associé(s) : JDV en cours de d'analyse NOS
 
 ##### Classe Courrier
 
 Adresse de courrier de l’usager.
 
 * Nom: typeCourrier : [0..1] Code
-  * Description: Type de courrier.Jeu(x) associé(s) : en cours de création NOS
-* Nom: idAdresse : [0..1] Identifiant
-  * Description: Adresse à utiliser pour l’envoi du type de courrier.
+  * Description: Type de courrier qui peut être adressé à l'usager.Jeu(x) associé(s) : en cours de création NOS
 * Nom: libelleDestinataire : [0..1] Texte
   * Description: Libellé du destinataire du courrier.Par exemple nom et prénom dans le cas d’une personne physique.
 * Nom: organismeDomiciliation : [0..1] Texte
@@ -360,63 +358,41 @@ Quantification de la prise en charge.
 
 #### Environnement et ressources
 
-##### Classe ContactPersonnePhysique
+##### Classe Contact
 
-Personne physique qui agit comme point de contact auprès d'une autre personne ou d'un autre service.
+Un contact peut être un membre de la famille ou un proche de l’Usager. Il peut s’agir par exemple d’un aidant, de la personne de confiance de l’Usager…
 
-* Nom: identifiantContactPP : [0..1] Identifiant
-  * Description: Identifiant du contact
-* Nom: nom : [0..1] Texte
-  * Description: Nom de la personne contact.
-* Nom: prenom : [0..1] Texte
-  * Description: Prénom de la personne contact.
-* Nom: civilite : [0..1] Code
-  * Description: Civilité du contact.jeu(x) de valeur(s) associé(s) :[JDV_J245-Civilite-CISIS](https://mos.esante.gouv.fr/NOS/JDV_J245-Civilite-CISIS/FHIR/JDV-J245-Civilite-CISIS)
-* Nom: paysNationalite : [0..*] Code
-  * Description: Pays de nationalité de la personne contact, actuelle ou rattachement de la nationalité à un espace de pays conventionnéNomenclature(s) associée(s) : Norme ISO 3166
-* Nom: profession : [0..1] Texte
-  * Description: Profession de la personne contact.
-* Nom: situationFamiliale : [0..1] Code
-  * Description: Situation familiale de la personne contact (célibataire, divorcée, etc.).Nomenclature(s) associée(s) : à définir
-* Nom: dateNaissance : [0..1] Date
-  * Description: Date de naissance de la personne contact.
-* Nom: telecommunication : [0..*] Telecommunication
-  * Description: Adresse(s) de télécommunication du contact (numéro de téléphone, adresse email, URL, etc.).
-* Nom: adresse : [0..1] Adresse
-  * Description: Adresse géopostale du point de contact.
 * Nom: role : [0..1] Code
-  * Description: Rôle de la personne point de contact auprès d'une autre personne. Exemple dans le cas d'un patient, ce rôle indique si le point de contact est la personne à prévenir en cas d'urgence, la personne de confiance, etc.Nomenclature(s) associée(s) :[TRE_R260-HL7RoleClass](https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass)
+  * Description: Rôle de la personne point de contact auprès d'une autre personne. Exemple dans le cas d'un usager, ce rôle indique si le point de contact est la personne à prévenir en cas d'urgence, la personne de confiance, etc.Jeux de valeur(s) associé(s) :[JDV-J384-role-membre-famille-ms](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j384-role-membre-famille-ms/$expand)
+* Nom: description : [0..1] Texte
+  * Description: Une description du contact.
 * Nom: relation : [0..1] Code
-  * Description: Lien de la personne point de contact auprès d'une autre personne. Exemple dans le cas d'un patient, ce lien indique si le point de contact est son enfant, son frère, etc.Nomenclature(s) associée(s) :[TRE_R216-HL7RoleCode](https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode)[TRE_R217-ProtectionJuridique](https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique)
-* Nom: fonction : [0..1] Code
-  * Description: Un titre, une position ou une fonction de la personne assurant le contact au sein de son organisation (directeur, secrétaire, etc.).[TRE_R251-FonctionContact](https://mos.esante.gouv.fr/NOS/TRE_R251-FonctionContact/FHIR/TRE-R251-FonctionContact)
-* Nom: ordreAppel : [0..1] Numérique
-  * Description: Ordre de priorité d’appel du contact (1 = priorité maximale).
+  * Description: Lien de la personne point de contact auprès d'une autre personne. Exemple dans le cas d'un patient, ce lien indique si le point de contact est son enfant, son frère, etc.Jeux de valeur(s) associé(s) :[JDV-J14-QualiteRepresentantLegal-CISIS](https://mos.esante.gouv.fr/NOS/JDV_J14-QualiteRepresentantLegal-CISIS/FHIR/JDV-J14-QualiteRepresentantLegal-CISIS)[JDV-J11-RelationPatient-CISIS](https://mos.esante.gouv.fr/NOS/JDV_J11-RelationPatient-CISIS/FHIR/JDV-J11-RelationPatient-CISIS)
+
+##### Classe PersonnePhysique
+
+Une personne physique est un individu titulaire de droits et d'obligations caractérisé par une identité civile.
+
+* Nom: identifiantPP : [1..1] Identifiant
+  * Description: Identifiant de la personne physique.
+* Nom: nomNaissance : [0..1] Texte
+  * Description: Nom de naissance de la personne.Synonymes : nom patronymique, nom de famille.
+* Nom: prenom : [0..*] Texte
+  * Description: Prénom(s) de la personne déclarés à sa naissance.
+* Nom: civilite : [0..1] Code
+  * Description: Civilité de la personne physique.jeu(x) de valeur(s) associé(s) :[JDV_J245-Civilite-CISIS](https://mos.esante.gouv.fr/NOS/JDV_J245-Civilite-CISIS/FHIR/JDV-J245-Civilite-CISIS)
+* Nom: sexe : [0..1] Code
+  * Description: Sexe de la personne physique.Jeu(x) de valeur(s) associé(s) :[JDV-J143-AdministrativeGender-CISIS](https://mos.esante.gouv.fr/NOS/JDV_J143-AdministrativeGender-CISIS/FHIR/JDV-J143-AdministrativeGender-CISIS)
+* Nom: paysNationalite : [0..*] Code
+  * Description: Pays de nationalité de la personne physique.Nomenclature(s) associée(s) : Norme ISO 3166
+* Nom: dateNaissance : [0..1] Date
+  * Description: Date de naissance de la personne physique.
+* Nom: adresse : [0..1][Adresse](#classe-adresse)
+  * Description: Adresse géopostale du point de la personne physique.
+* Nom: telecommunication : [0..*][Telecommunication](#classe-telecommunication)
+  * Description: Adresse(s) de télécommunication de la personne physique (numéro de téléphone, adresse email, URL, etc.).
 * Nom: commentaire : [0..1] Texte
-  * Description: Commentaire relatif au contact.
-
-##### Classe ContactPersonneMorale
-
-Personne morale qui agit comme point de contact auprès d'une autre personne ou d'un autre service.
-
-* Nom: identifiantContactPP : [0..1] Identifiant
-  * Description: Identifiant du contact
-* Nom: libelle : [0..1] Texte
-  * Description: Libellé du contact.
-* Nom: raisonSociale : [0..1] Texte
-  * Description: Raison sociale du contact.
-* Nom: typeOrgansime : [0..1] Code
-  * Description: Type d’organisme du contact.
-* Nom: telecommunication : [0..*] Telecommunication
-  * Description: Adresse(s) de télécommunication du contact (numéro de téléphone, adresse email, URL, etc.).
-* Nom: adresse : [0..1] Adresse
-  * Description: Adresse géopostale du point de contact.
-* Nom: role : [0..1] Code
-  * Description: Rôle de la personne point de contact auprès d'une autre personne. Exemple dans le cas d'un patient, ce rôle indique si le point de contact est la personne à prévenir en cas d'urgence, la personne de confiance, etc.Nomenclature(s) associée(s) :[TRE_R260-HL7RoleClass](https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass)
-* Nom: ordreAppel : [0..1] Numérique
-  * Description: Ordre de priorité d’appel du contact (1 = priorité maximale).
-* Nom: commentaire : [0..1] Texte
-  * Description: Commentaire relatif au contact.
+  * Description: Commentaire relatif à la personne physique.
 
 ##### Classe Ressource
 
@@ -475,9 +451,9 @@ Relevé d'Identité Bancaire.
 * Nom: BIC : [0..1] Identifiant
   * Description: Bank Identifer Code.
 
-##### Classe Transport
+##### Classe MobiliteUsager
 
-Moyen de transport utilisé par l’usager.
+Dispositif de transport utilisé par l’usager.
 
 * Nom: type : [0..1] Code
   * Description: Type de moyen de transport.Jeu(x) de valeur(s) associé(s) : JDV Mode De Transport CISIS avec l'OID 1.2.250.1.213.1.1.5.140 publié sur[annexe-vocabulaire-et-jeux-de-valeurs](https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs)
@@ -493,7 +469,7 @@ Permis de conduire de l’usager.
 * Nom: categorie : [0..1] Code
   * Description: Catégorie du permis de conduire.Jeu(x) de valeur(s) associé(s) : en cours de création NOS
 * Nom: type : [0..1] Code
-  * Description: Type du permis de conduire.Jeu(x) de valeur(s) associé(s) : en cours de création NOS
+  * Description: Type du permis de conduire.Jeu(x) de valeur(s) associé(s) : en cours de création NOSLa règle métier entre les catégories et les types est spécifiée dans la table d'association ASS en cours de création NOS
 * Nom: dateObtention : [0..1] Date
   * Description: Date d’obtention du permis de conduire.
 * Nom: dateValidite : [0..1] Date
@@ -536,7 +512,7 @@ La classe EntiteJuridique est définie dans le MOS et est profilée pour ce vole
   * Description: Établissement ou service social ou médico-social.
 * Nom: numeroDossierESSMSProvenance : [0..1] Identifiant
   * Description: Numéro de dossier administratif dans l'ESSMS de provenance.
-* Nom: ESSMSProvenance : [1..1] EntiteJuridique
+* Nom: ESSMSProvenance : [0..1] EntiteJuridique
   * Description: Établissement ou service social ou médico-social de provenance.
 * Nom: dateEntreeESSMSProvenance : [0..1] DateHeure
   * Description: Date d'entrée dans l'ESSMS de provenance.
@@ -546,16 +522,16 @@ La classe EntiteJuridique est définie dans le MOS et est profilée pour ce vole
   * Description: Date d’entrée prévisionnelle dans le séjour.
 * Nom: dateEntree : [0..1] DateHeure
   * Description: Date d’entrée dans le séjour.
-* Nom: provenance : [0..1] Code
-  * Description: Mode d'entrée du séjour.Jeu(x) de valeur(s) associé(s) : jdv-modalite-entree-cisis avec l'OID 1.2.250.1.213.1.1.5.73 publié sur[annexe-vocabulaire-et-jeux-de-valeurs](https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs)
+* Nom: modaliteEntree : [0..1] Code
+  * Description: Mode d'entrée du séjour.Jeu(x) de valeur(s) associé(s) : en cours de construction
 * Nom: libelleModeEntree : [0..1] Texte
   * Description: Libellé du mode d’entée du séjour.
 * Nom: dateSortiePrevisionnelle : [0..1] DateHeure
   * Description: Date de sortie prévisionnelle du séjour.
 * Nom: dateSortie : [0..1] DateHeure
   * Description: Date de sortie du séjour.
-* Nom: motifSortie : [0..1] Code
-  * Description: Mode de sortie/destination du séjour.Jeu(x) de valeur(s) associé(s) : jdv-modalite-sortie-cisis avec l'OID 1.2.250.1.213.1.1.5.74 publié sur[annexe-vocabulaire-et-jeux-de-valeurs](https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs)
+* Nom: modaliteSortie : [0..1] Code
+  * Description: Mode de sortie/destination du séjour.Jeu(x) de valeur(s) associé(s) : en cours de construction
 * Nom: libelleModeSortie : [0..1] Texte
   * Description: Libellé du mode de sortie du séjour.
 * Nom: origineDemande : [0..1] Texte
@@ -635,8 +611,6 @@ Résultat de l'évaluation globale d'un usager.
   * Description: Résultat global de l’évaluation. Le resultat est à renseigner uniquement lorsqu'il s'agit d'une Evaluation AGGIR PH SSIAD ou Evaluation AGGIR PA SSIAD- Evaluation AGGIR PH SSIAD : JDV_GIR_CISIS avec l'OID 1.2.250.1.213.1.1.5.53 publié sur[annexe-vocabulaire-et-jeux-de-valeurs](https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs)- Evaluation AGGIR PA SSIAD : JDV_GIR_CISIS avec l'OID 1.2.250.1.213.1.1.5.53 publié sur[annexe-vocabulaire-et-jeux-de-valeurs](https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs)
 * Nom: modaliteEvaluation : [0..1] Texte
   * Description: Mode d'évaluation.
-* Nom: autoEvaluation : [0..1] Indicateur
-  * Description: Indique si l'évaluation est une auto-évaluation.1 = L'évaluation est une auto-évaluation0 = L'évaluation n'est pas une évaluation
 * Nom: commentaireEvaluation : [0..1] Texte
   * Description: Commentaire libre sur l’évaluation.
 * Nom: pieceJointeEvaluation : [0..*] ObjetBinaire
@@ -672,11 +646,9 @@ Ce niveau permet d'associer à un champ évalué de la classe "DetailEvaluation"
 
 ##### Classe Evaluateur
 
-** Classe spécialisée, hérite de la classe Professionnel du MOS profilée pour ce volet.
+** Classe spécialisée, hérite soit de la classe Professionnel du MOS profilée pour ce volet soit de la classe Usager dans le cas d'une auto évaluation, où l'évaluateur correspond à l'usager.
 
 Cette classe regroupe les items pouvant caractériser la personne ayant réalisé l'évaluation.
-
-Dans le cas d'une auto évaluation, l'évaluateur étant l'usager cet élément n'est pas requis.
 
 ##### Classe Responsable
 
@@ -696,6 +668,12 @@ Dans le cas d'une auto évaluation, l'auteur étant l'usager cet élément n'est
  
  _Remarque_ : Hormis le cas de l'auto évaluation, au moins un des 3 éléments (Evaluateur, Responsable, Auteur) doit être renseigné.
 
+##### Classe Porteur
+
+** Classe spécialisée, hérite de la classe EntiteJuridique du MOS profilée pour ce volet.
+
+Cette classe correspond à la personne morale porteuse de l'évaluation de l'usager. Dans le cas d'une auto-évaluation, cet élément est obligatoire.
+
 #### Projet personnalisé
 
 ##### Classe Projet personnalisé
@@ -709,7 +687,7 @@ Le projet personnalisé est un document co-construit par l'usager, son entourage
 * Nom: descriptionProjetPersonnalise : [0..1] Texte
   * Description: Description du projet personnalisé.
 * Nom: typeProjetPersonnalise : [0..1] Code
-  * Description: Type de projet personnalisé.Jeu(x) de valeur(s) associé(s) :[JDV-J367-type-projet-personnalise-ms](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j367-type-projet-personnalise-ms)
+  * Description: Type de projet personnalisé.Jeu(x) de valeur(s) associé(s) :[JDV-J367-type-projet-personnalise-ms](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j367-type-projet-personnalise-ms/$expand)
 * Nom: modaliteCommunicationProjetPersonnalise : [0..1] Texte
   * Description: Modalité de communication ou de transmission du projet personnalisé à l'usager et/ou à son entourage.
 * Nom: accordUsagerProjetPersonnalise : [0..*][Accord](#classe-accord)
@@ -848,7 +826,7 @@ Un bilan est une évaluation du projet personnalisé qui est réalisé à la con
 * Nom: dateBilan : [1..1] DateHeure
   * Description: Date et heure du bilan.
 * Nom: categorieBilan : [0..1] Code
-  * Description: Catégorie du bilan.Jeu(x) de valeur(s) associé(s) :[JdvJ366StatutBilanProjetPersonnaliseMs](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j366-statut-bilan-projet-personnalise-ms)
+  * Description: Catégorie du bilan.Jeu(x) de valeur(s) associé(s) :[JdvJ366StatutBilanProjetPersonnaliseMs](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j366-statut-bilan-projet-personnalise-ms/$expand)
 * Nom: perimetreBilan : [0..1] Texte
   * Description: Périmètre du bilan.
 * Nom: problematiqueGlobaleUsager : [0..1] Texte
@@ -868,7 +846,7 @@ Préparation du bilan du projet personnalisé.
 
 * Nom: corps : [1..1] Texte
   * Description: Corps de la préparation.
-* Nom: auteur : [1..1] ([Professionnel](#classe-professionnel),[Usager](#classe-usager),[Contact personne physique](#classe-contactpersonnephysique))
+* Nom: auteur : [1..1] ([Professionnel](#classe-professionnel),[Usager](#classe-usager),[Contact personne physique](#classe-contact))
   * Description: Auteur de la préparation de bilan. Cet auteur peut référencer un professionnel, l'usager ou une personne de son entourage.
 
 #### Parcours
@@ -905,19 +883,25 @@ La classe EntiteGeographique est issue du MOS et est profilée pour ce volet.
 * Nom: niveauScolaireSuivi : [0..1] ConceptCode
   * Description: Situation scolaire suivie de l'usager.Jeu(x) de valeur(s) associé(s) : en cours de création NOS
 * Nom: typeEnseignementSpecialise : [0..*] ConceptCode
-  * Description: Type enseignement spécialisé.Jeu(x) de valeur(s) associé(s) : en cours de création NOS
-* Nom: referentScolaire : [0..*][PersonnePhysique](#PersonnePhysique)
-  * Description: Référent scolaire de l'usager pour cette année de scolarité.
-* Nom: contactReferentScolaire : [0..*][Telecommunication](#classe-telecommunication)
-  * Description: Télécommunication du référent scolaire.
-* Nom: ecole : [0..1][EntiteGeographique](#classe-entité-géographique)
-  * Description: Structure dans laquelle la période scolaire se déroule.
+  * Description: Type enseignement spécialisé.Jeu(x) de valeur(s) associé(s) :[JDV-J386-TYPE-ENSEIGNEMENT-SPECIALISE-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j386-type-enseignement-specialise-ms/$expand)
 * Nom: diplome : [0..*] ConceptCode
   * Description: Diplôme obtenu au cours de la période scolaire.Jeu(x) de valeur(s) associé(s) :[JDV-J81-TypeDiplome-RASS](https://mos.esante.gouv.fr/NOS/JDV_J81-TypeDiplome-RASS/FHIR/JDV-J81-TypeDiplome-RASS)
 * Nom: volumeScolarisation : [0..1] Numerique
   * Description: Volume horaire de scolarisation de l'usager sur la période de scolarité. L'unité correspond ici à la demi-journée.
 * Nom: commentaireAnneeScolaire : [0..1] Texte
   * Description: Commentaire sur l'année scolaire.
+
+##### Classe ReferentScolaire
+
+** Classe spécialisée, hérite de la classe PersonnePhysique
+
+La loi place l’enseignant référent comme l’acteur central des actions conduites en direction des élèves handicapés. Il est l’interlocuteur privilégié des parents et des différents acteurs autour de la scolarisation d’un enfant, qu’il soit scolarisé en école ordinaire ou bien dans le milieu spécialisé.
+
+##### Classe Ecole
+
+** Classe spécialisée, hérite de la classe EntiteGeographique qui est issue du MOS et qui est profilée pour ce volet.
+
+Cette classe correspond à la structure dans laquelle la période scolaire de l'usager se déroule.
 
 ### Partie Coordination des acteurs
 
@@ -943,8 +927,6 @@ Les classes EntiteJuridique, Lieu et Professionnel sont issues du MOS et sont pr
   * Description: Pièces jointes liées à l’événement.
 * Nom: lieuEvenement : [0..1] Lieu
   * Description: Localisation d’exécution de l’évènement.
-* Nom: structureEnCharge : [0..1] EntiteJuridique
-  * Description: Structure de rattachement de l'usager en charge de l'évènement.
 * Nom: dateDebutEvenement : [1..1] DateHeure
   * Description: Date et heure de début de l'évènement.
 * Nom: dateFinEvenement : [1..1] DateHeure
@@ -956,7 +938,7 @@ Les classes EntiteJuridique, Lieu et Professionnel sont issues du MOS et sont pr
 * Nom: usagerPresent : [0..1] Indicateur
   * Description: Evènement nécessitant ou non la présence physique de l’usager.
 * Nom: repas : [0..1] Indicateur
-  * Description: Repas du professionnel prévu dans le cadre de l'événement.
+  * Description: Repas du professionnel prévu dans le cadre de l'évènement.
 * Nom: typeRessourceUtilisee: [0..*] Code
   * Description: Type de ressources utilisées dans le cadre de l’évènement (matériel, immobilier, véhicule).Jeu(x) de valeur(s) associé(s) : JDV_RessourceUtilisee_CISIS avec l'OID 1.2.250.1.213.1.1.5.807 publié sur[annexe-vocabulaire-et-jeux-de-valeurs](https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs)
 * Nom: detailTypeRessourceUtilisee: [0..*] Code
@@ -964,11 +946,13 @@ Les classes EntiteJuridique, Lieu et Professionnel sont issues du MOS et sont pr
 * Nom: dateModificationEvenement : [0..1] DateHeure
   * Description: Date de la dernière modification de l'événement.
 * Nom: validationUsager : [0..1] Indicateur
-  * Description: Accord de l'usager1 = validation de l'usager0 = refus de l'usager
+  * Description: Validation par l'usager que l'événement a eu lieu.1 = validation de l'usager0 = refus de l'usager
 
 ##### Classe Participant
 
 Le Participant est une personne morale ou physique prenant part à l'événement.
+
+Si le participant est mandaté par une personne morale, la notion de Mandataire est indiquée par le lien vers le Professionnel.profession (code 307 - Mandataire judiciaire à la protection des majeurs (MJPM) : JDV_J01-XdsAuthorSpecialty-CISIS).
 
 * Nom: presenceParticipant : [0..1] Indicateur
   * Description: Indique la présence du participant à l'événement.1= participant présent0= participant absent
@@ -976,6 +960,16 @@ Le Participant est une personne morale ou physique prenant part à l'événement
   * Description: Mode d'exercice de la personne physique. Le mode d'exercice décrit selon quelle modalité une activité est exercée au regard de l'évènement.Jeu(x) de valeur(s) associé(s) :[JDV-J117-ModeExercice-ENREG](https://mos.esante.gouv.fr/NOS/JDV_J117-ModeExercice-ENREG/FHIR/JDV-J117-ModeExercice-ENREG)
 * Nom: participantInterne : [0..1] Indicateur
   * Description: Indique si le participant (personne Physique) est interne ou externe à la structure1 = interne0 = externe
+
+</table>
+
+##### Classe StructureEnCharge
+
+** Classe spécialisée, hérite de la classe EntiteJuridique qui est issue du MOS et qui est profilée pour ce volet.
+
+Cette classe correspond à la structure en charge de l'évènement. Cette structure peut être différente de la structure de rattachement de l'usager. Une seule structure en charge est renseignée par événement.
+
+Le lien est créé entre la classe Professionnel et la classe StructureEnCharge si le participant en tant que personne physique est interne à la structure en charge de l'évènement. Dans le cas contraire ce lien n'est pas créé.
 
 ##### Classe Transport
 
@@ -1103,8 +1097,6 @@ Pour ce volet l'Entité Géographique est une personne morale.
 
 * Nom: idNat_Struct : [1..1] Identifiant
   * Description: Identification nationale de l'Entité géographique. Cette identification est obtenue par la concaténation du type d'identifiant national de structure (provenant de la nomenclature[TRE_G07-TypeIdentifiantStructure](https://mos.esante.gouv.fr/NOS/TRE_G07-TypeIdentifiantStructure/FHIR/TRE-G07-TypeIdentifiantStructure)) et de l'identifiant de la structure: ** 3 + N° SIRET (pour les établissements qui ne sont pas de santé).
-* Nom: numeroEducationNationale : [0..1] Texte
-  * Description: Le "numéro éducation nationale de l'établissement" est un numéro associé délivré par l’Éducation nationale, pour tous les établissements et services pour enfants et adolescents handicapés qui emploient du personnel de l’Education nationale.
 * Nom: denominationEG : [0..1] Texte
   * Description: Nom sous lequel l'entité géographique exerce son activité.
 * Nom: adresseEG : [0..1][Adresse](#classe-adresse)
@@ -1148,7 +1140,7 @@ Cette classe décrit le statut des ressources (Evenement, Evaluation, Projet per
 
 Cela correspond au consentement d'une personne physique ou morale.
 
-* Nom: auteur : [1..1] ([Professionnel](#classe-professionnel),[Usager](#classe-usager),[Contact personne physique](#classe-contactpersonnephysique))
+* Nom: auteur : [1..1] ([Professionnel](#classe-professionnel),[Usager](#classe-usager),[Contact personne physique](#classe-contact))
   * Description: Acteur (personne physique ou morale) qui donne son accord. L'auteur de l'accord peut référencer un professionnel, l'usager ou une personne de son entourage.
 * Nom: dateSignature : [1..1] DateHeure
   * Description: Date de délivrance de l'accord.

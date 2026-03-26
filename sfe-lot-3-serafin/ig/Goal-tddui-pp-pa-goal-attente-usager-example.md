@@ -1,14 +1,14 @@
-# tddui-pp-pa-goal-attente-usager-example - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI PP PA Goal Attente Usager Example - Médicosocial - Transfert de données DUI v2.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **tddui-pp-pa-goal-attente-usager-example**
+* **TDDUI PP PA Goal Attente Usager Example**
 
-## Example Goal: tddui-pp-pa-goal-attente-usager-example
+## Example Goal: TDDUI PP PA Goal Attente Usager Example
 
 Profil: [TDDUI Goal Attente](StructureDefinition-tddui-goal-attente.md)
 
-**Lien vers le projet personnalisé**: [CarePlan Projet personnalisé de Mme Jeanne L.](CarePlan-tddui-pp-pa-careplan-example.md)
+**TDDUI CarePlan Projet Perso Ref**: [CarePlan Projet personnalisé de Mme Jeanne L.](CarePlan-tddui-pp-pa-careplan-example.md)
 
 **identifier**: `https://identifiant-medicosocial-attente.esante.gouv.fr`/3480787529/123456789-ATTE-1235
 
@@ -18,7 +18,7 @@ Profil: [TDDUI Goal Attente](StructureDefinition-tddui-goal-attente.md)
 - Participer à une chorale et à un club lecture
 - Se sentir en sécurité lors des déplacements
 
-**subject**: [Jeanne L. (official) Female, Date de Naissance inconnue ( Patient internal identifier: 3480787529/123456789)](Patient-tddui-pp-pa-patient-example-pp.md)
+**subject**: [Jeanne L. (official) Female, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/123456789)](Patient-tddui-pp-pa-patient-example-pp.md)
 
 **note**: 
 
@@ -60,7 +60,7 @@ Usager
       "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator",
       "valueCodeableConcept" : {
         "coding" : [{
-          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator-cs",
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator",
           "code" : "origineAttente"
         }]
       }

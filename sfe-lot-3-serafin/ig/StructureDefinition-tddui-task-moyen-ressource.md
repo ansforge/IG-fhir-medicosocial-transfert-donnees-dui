@@ -1,4 +1,4 @@
-# TDDUI Task MoyenRessource - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Task MoyenRessource - Médicosocial - Transfert de données DUI v2.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource | *Version*:2.2.0-ballot |
-| Active as of 2026-03-24 | *Computable Name*:TDDUITaskMoyenRessource |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource | *Version*:2.3.0 |
+| Active as of 2026-03-26 | *Computable Name*:TDDUITaskMoyenRessource |
 
  
 Profil de la ressource Task permettant de représenter les moyens ou ressources utilisées dans le cadre du projet personnalisé. 
@@ -39,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-moyen-res
   "resourceType" : "StructureDefinition",
   "id" : "tddui-task-moyen-ressource",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource",
-  "version" : "2.2.0-ballot",
+  "version" : "2.3.0",
   "name" : "TDDUITaskMoyenRessource",
   "title" : "TDDUI Task MoyenRessource",
   "status" : "active",
-  "date" : "2026-03-24T16:53:46+00:00",
+  "date" : "2026-03-26T15:00:26+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -57,7 +57,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-moyen-res
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France"
     }]
   }],
   "fhirVersion" : "4.0.1",
@@ -89,7 +89,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-moyen-res
   "kind" : "resource",
   "abstract" : false,
   "type" : "Task",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Task|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Task",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
@@ -133,7 +133,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-moyen-res
       "max" : "1",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise|2.2.0-ballot"]
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise"]
       }],
       "mapping" : [{
         "identity" : "specmetier-to-TDDUITaskMoyenRessource",
@@ -146,7 +146,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-moyen-res
       "max" : "1",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action|2.2.0-ballot"]
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"]
       }],
       "mapping" : [{
         "identity" : "specmetier-to-TDDUITaskMoyenRessource",
@@ -202,7 +202,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-moyen-res
       "path" : "Task.input.type",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/input-tddui-task-moyen-ressource-valueset|2.2.0-ballot"
+        "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-task-input-moyen-ressource"
       }
     },
     {
@@ -222,7 +222,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-moyen-res
       "path" : "Task.input.type",
       "patternCodeableConcept" : {
         "coding" : [{
-          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-moyen-ressource-codesystem",
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-moyen-ressource",
           "code" : "titre"
         }]
       }
@@ -251,7 +251,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-moyen-res
       "path" : "Task.input.type",
       "patternCodeableConcept" : {
         "coding" : [{
-          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-moyen-ressource-codesystem",
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-moyen-ressource",
           "code" : "evaluation"
         }]
       }
@@ -261,7 +261,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-moyen-res
       "path" : "Task.input.value[x]",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response|2.2.0-ballot"]
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"]
       }]
     },
     {
@@ -281,7 +281,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-moyen-res
       "path" : "Task.input.type",
       "patternCodeableConcept" : {
         "coding" : [{
-          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/input-tddui-task-moyen-ressource-codesystem",
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-moyen-ressource",
           "code" : "pieceJointe"
         }]
       }
@@ -291,7 +291,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-task-moyen-res
       "path" : "Task.input.value[x]",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference|2.2.0-ballot"]
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"]
       }]
     }]
   }

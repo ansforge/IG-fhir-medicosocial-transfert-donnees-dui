@@ -1,10 +1,10 @@
-# tddui-pp-pa-documentreference-entrant-example - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI PP PA DocumentReference Entrant Example - Médicosocial - Transfert de données DUI v2.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **tddui-pp-pa-documentreference-entrant-example**
+* **TDDUI PP PA DocumentReference Entrant Example**
 
-## Example DocumentReference: tddui-pp-pa-documentreference-entrant-example
+## Example DocumentReference: TDDUI PP PA DocumentReference Entrant Example
 
 Profil: [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md)
 
@@ -12,7 +12,7 @@ Profil: [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.m
 
 **status**: Current
 
-**subject**: [Jeanne L. (official) Female, Date de Naissance inconnue ( Patient internal identifier: 3480787529/123456789)](Patient-tddui-pp-pa-patient-example-pp.md)
+**subject**: [Jeanne L. (official) Female, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/123456789)](Patient-tddui-pp-pa-patient-example-pp.md)
 
 **author**: [Organization Les Chênes Verts](Organization-tddui-organization-example.md)
 

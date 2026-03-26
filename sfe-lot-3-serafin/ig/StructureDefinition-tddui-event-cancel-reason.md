@@ -1,15 +1,15 @@
-# Évènement annulé - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Event Cancel Reason - Médicosocial - Transfert de données DUI v2.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Évènement annulé**
+* **TDDUI Event Cancel Reason**
 
-## Extension: Évènement annulé 
+## Extension: TDDUI Event Cancel Reason 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-cancel-reason | *Version*:2.2.0-ballot |
-| Active as of 2026-03-24 | *Computable Name*:TDDUIEventCancelReason |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-cancel-reason | *Version*:2.3.0 |
+| Active as of 2026-03-26 | *Computable Name*:TDDUIEventCancelReason |
 
 Motif associé au statut de non-réalisation de l’évènement.
 
@@ -44,11 +44,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-event-cancel-r
   "resourceType" : "StructureDefinition",
   "id" : "tddui-event-cancel-reason",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-cancel-reason",
-  "version" : "2.2.0-ballot",
+  "version" : "2.3.0",
   "name" : "TDDUIEventCancelReason",
-  "title" : "Évènement annulé",
+  "title" : "TDDUI Event Cancel Reason",
   "status" : "active",
-  "date" : "2026-03-24T16:53:46+00:00",
+  "date" : "2026-03-26T15:00:26+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -62,7 +62,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-event-cancel-r
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France"
     }]
   }],
   "fhirVersion" : "4.0.1",
@@ -78,13 +78,13 @@ Other representations of profile: [CSV](StructureDefinition-tddui-event-cancel-r
     "expression" : "Encounter.status"
   }],
   "type" : "Extension",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
       "id" : "Extension",
       "path" : "Extension",
-      "short" : "Évènement annulé",
+      "short" : "TDDUI Event Cancel Reason",
       "definition" : "Motif associé au statut de non-réalisation de l’évènement."
     },
     {
@@ -105,7 +105,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-event-cancel-r
       }],
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-motif-non-realisation-evenement-cisis|20260220142104"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-motif-non-realisation-evenement-cisis"
       }
     }]
   }

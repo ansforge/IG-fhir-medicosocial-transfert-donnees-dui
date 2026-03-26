@@ -1,15 +1,15 @@
-# Mode d'exercice - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Exercise Mode - Médicosocial - Transfert de données DUI v2.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Mode d'exercice**
+* **TDDUI Exercise Mode**
 
-## Extension: Mode d'exercice 
+## Extension: TDDUI Exercise Mode 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exercise-mode | *Version*:2.2.0-ballot |
-| Active as of 2026-03-24 | *Computable Name*:TDDUIExerciseMode |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exercise-mode | *Version*:2.3.0 |
+| Active as of 2026-03-26 | *Computable Name*:TDDUIExerciseMode |
 
 Extension permettant de représenter le mode d'exercice du professionnel.
 
@@ -20,7 +20,7 @@ Extension permettant de représenter le mode d'exercice du professionnel.
 **Utilisations:**
 
 * Utilise ce/t/te Extension: [TDDUI Practitioner Role](StructureDefinition-tddui-practitioner-role.md)
-* Exemples pour ce/t/te Extension: [Bundle/ExampleTDDUIBundle](Bundle-ExampleTDDUIBundle.md) and [PractitionerRole/tddui-practitioner-role-example](PractitionerRole-tddui-practitioner-role-example.md)
+* Exemples pour ce/t/te Extension: [Bundle/tddui-bundle-example](Bundle-tddui-bundle-example.md) and [PractitionerRole/tddui-practitioner-role-example](PractitionerRole-tddui-practitioner-role-example.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-exercise-mode)
 
@@ -45,11 +45,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-exercise-mode.
   "resourceType" : "StructureDefinition",
   "id" : "tddui-exercise-mode",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exercise-mode",
-  "version" : "2.2.0-ballot",
+  "version" : "2.3.0",
   "name" : "TDDUIExerciseMode",
-  "title" : "Mode d'exercice",
+  "title" : "TDDUI Exercise Mode",
   "status" : "active",
-  "date" : "2026-03-24T16:53:46+00:00",
+  "date" : "2026-03-26T15:00:26+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -63,7 +63,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-exercise-mode.
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France"
     }]
   }],
   "fhirVersion" : "4.0.1",
@@ -79,13 +79,13 @@ Other representations of profile: [CSV](StructureDefinition-tddui-exercise-mode.
     "expression" : "PractitionerRole"
   }],
   "type" : "Extension",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
       "id" : "Extension",
       "path" : "Extension",
-      "short" : "Mode d'exercice",
+      "short" : "TDDUI Exercise Mode",
       "definition" : "Extension permettant de représenter le mode d'exercice du professionnel."
     },
     {
@@ -111,7 +111,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-exercise-mode.
       "path" : "Extension.value[x].coding",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J117-ModeExercice-ENREG/FHIR/JDV-J117-ModeExercice-ENREG|20260202120000"
+        "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J117-ModeExercice-ENREG/FHIR/JDV-J117-ModeExercice-ENREG"
       }
     }]
   }

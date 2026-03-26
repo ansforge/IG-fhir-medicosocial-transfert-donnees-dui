@@ -6,7 +6,7 @@
     <profile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour"/>
   </meta>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : Venue tddui-encounter-sejour-example</b></p><a name="tddui-encounter-sejour-example"> </a><a name="hctddui-encounter-sejour-example"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="StructureDefinition-tddui-encounter-sejour.html">TDDUI Encounter Sejour</a></p></div><p><b>Date d’admission</b>: 2023-04-11</p><p><b>Libellé mode d'entrée</b>: Date de début du suivi post-opératoire : 14/04/2023</p><p><b>Libellé mode de sortie</b>: Sortie prévisionnelle prévue pour le 5 mai 2023</p><p><b>Extension Definition for Encounter.plannedEndDate for Version 5.0</b>: 2023-05-05</p><p><b>identifier</b>: Identifiant du séjour/3480787529/147720425367411-SEJOUR-1012</p><p><b>status</b>: In Progress</p><p><b>class</b>: <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActCode.html#v3-ActCode-HH">ActCode: HH</a> (home health)</p><p><b>subject</b>: <a href="Patient-tddui-patient-ins-example.html">DUPONT  Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/194704032)</a></p><p><b>period</b>: 2023-04-14 --&gt; (en cours)</p><p><b>serviceProvider</b>: <a href="Organization-tddui-organization-example.html">Organization Les Chênes Verts</a></p></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : Venue tddui-encounter-sejour-example</b></p><a name="tddui-encounter-sejour-example"> </a><a name="hctddui-encounter-sejour-example"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="StructureDefinition-tddui-encounter-sejour.html">TDDUI Encounter Sejour</a></p></div><p><b>TDDUI Admission Date</b>: 2023-04-11</p><p><b>TDDUI Entry Mode label</b>: Date de début du suivi post-opératoire : 14/04/2023</p><p><b>TDDUI Exit Mode Label</b>: Sortie prévisionnelle prévue pour le 5 mai 2023</p><p><b>Extension Definition for Encounter.plannedEndDate for Version 5.0</b>: 2023-05-05</p><p><b>identifier</b>: Identifiant du séjour/3480787529/147720425367411-SEJOUR-1012, Numéro de dossier administratif du séjour/1012</p><p><b>status</b>: In Progress</p><p><b>class</b>: <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActCode.html#v3-ActCode-HH">ActCode: HH</a> (home health)</p><p><b>subject</b>: <a href="Patient-tddui-patient-ins-example.html">DUPONT  Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/194704032)</a></p><p><b>period</b>: 2023-04-14 --&gt; (en cours)</p><h3>Hospitalizations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Origin</b></td><td><b>AdmitSource</b></td></tr><tr><td style="display: none">*</td><td><a href="Organization-tddui-organization-origine-example.html">Organization Les Résidences du Lac</a></td><td><span title="Codes :{https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis GEN-092.06.07}">Autre modalité d'entrée</span></td></tr></table><p><b>serviceProvider</b>: <a href="Organization-tddui-organization-example.html">Organization Les Chênes Verts</a></p></div>
   </text>
   <extension url="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-admission-date">
     <valueDateTime value="2023-04-11"/>
@@ -23,13 +23,24 @@
   <identifier>
     <type>
       <coding>
-        <system value="https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier-cs"/>
+        <system value="https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier"/>
         <code value="SEJ"/>
         <display value="Identifiant du séjour"/>
       </coding>
     </type>
     <system value="https://identifiant-medicosocial-sejour.esante.gouv.fr"/>
     <value value="3480787529/147720425367411-SEJOUR-1012"/>
+  </identifier>
+  <identifier>
+    <type>
+      <coding>
+        <system value="https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier"/>
+        <code value="NUMDOSS"/>
+        <display value="Numéro de dossier administratif du séjour"/>
+      </coding>
+    </type>
+    <system value="https://identifiant-medicosocial-sejour.esante.gouv.fr"/>
+    <value value="1012"/>
   </identifier>
   <status value="in-progress"/>
   <class>
@@ -42,6 +53,18 @@
   <period>
     <start value="2023-04-14"/>
   </period>
+  <hospitalization>
+    <origin>
+      <reference value="Organization/tddui-organization-origine-example"/>
+    </origin>
+    <admitSource>
+      <coding>
+        <system value="https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis"/>
+        <code value="GEN-092.06.07"/>
+        <display value="Autre modalité d'entrée"/>
+      </coding>
+    </admitSource>
+  </hospitalization>
   <serviceProvider>
     <reference value="Organization/tddui-organization-example"/>
   </serviceProvider>

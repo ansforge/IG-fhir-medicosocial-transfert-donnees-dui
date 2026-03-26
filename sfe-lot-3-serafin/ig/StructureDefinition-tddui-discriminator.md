@@ -1,15 +1,15 @@
-# TDDUI Discriminator Extension - Médicosocial - Transfert de données DUI v2.2.0-ballot
+# TDDUI Discriminator - Médicosocial - Transfert de données DUI v2.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **TDDUI Discriminator Extension**
+* **TDDUI Discriminator**
 
-## Extension: TDDUI Discriminator Extension 
+## Extension: TDDUI Discriminator 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator | *Version*:2.2.0-ballot |
-| Active as of 2026-03-24 | *Computable Name*:TDDUIDiscriminator |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator | *Version*:2.3.0 |
+| Active as of 2026-03-26 | *Computable Name*:TDDUIDiscriminator |
 
 Extension pour discriminer les éléments CarePlan.supportingInfo et Goal.note.
 
@@ -45,11 +45,11 @@ Other representations of profile: [CSV](StructureDefinition-tddui-discriminator.
   "resourceType" : "StructureDefinition",
   "id" : "tddui-discriminator",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator",
-  "version" : "2.2.0-ballot",
+  "version" : "2.3.0",
   "name" : "TDDUIDiscriminator",
-  "title" : "TDDUI Discriminator Extension",
+  "title" : "TDDUI Discriminator",
   "status" : "active",
-  "date" : "2026-03-24T16:53:46+00:00",
+  "date" : "2026-03-26T15:00:26+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -63,7 +63,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-discriminator.
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France"
     }]
   }],
   "fhirVersion" : "4.0.1",
@@ -83,13 +83,13 @@ Other representations of profile: [CSV](StructureDefinition-tddui-discriminator.
     "expression" : "Goal.note"
   }],
   "type" : "Extension",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
       "id" : "Extension",
       "path" : "Extension",
-      "short" : "TDDUI Discriminator Extension",
+      "short" : "TDDUI Discriminator",
       "definition" : "Extension pour discriminer les éléments CarePlan.supportingInfo et Goal.note."
     },
     {
@@ -110,7 +110,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-discriminator.
       }],
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-discriminator-vs|2.2.0-ballot"
+        "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-discriminator"
       }
     }]
   }
