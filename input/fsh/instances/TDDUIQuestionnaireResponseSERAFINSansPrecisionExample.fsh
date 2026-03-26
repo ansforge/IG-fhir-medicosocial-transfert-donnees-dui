@@ -1,5 +1,6 @@
 Instance: tddui-questionnaire-response-serafin-sans-precision-example
 InstanceOf: TDDUIQuestionnaireResponse
+Title: "TDDUI Questionnaire Response SERAFIN Sans Precision Example"
 Description: "Evaluation SERAFIN pour un besoin d'hébergement adapté sans précision"
 Usage: #example
 

@@ -1,3 +1,28 @@
+### Release 2.3.0 de l'Implementation Guide du volet "Transfert de dossier DUI"
+
+Aucune modification apportée dans la release 2.3.0 par rapport à la release de concertation 2.3.0-ballot.
+
+### Release 2.3.0-ballot de l'Implementation Guide du volet "Transfert de dossier DUI"
+
+Modifications apportées dans cette release [2.3.0-ballot](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pulls?q=is%3Apr+is%3Aclosed+milestone%3A2.3.0-ballot) :
+
+* [lot2 SFE modification role participant](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/444)
+* [ANS-006-168 - Mise à jour de l'évènement](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/439)
+* [ANS-006-168 - Mise à jour de l'usager](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/437)
+* [ANS-006-168 - Mise à jour de l'évaluation](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/434)
+* [ANS-006-168 - Ajout causes de décès, mobilité et période scolaire](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/433)
+* [ANS-006-168 - Mise à jour du séjour](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/428)
+* [SFE SERAFIN lot 2](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/411)
+
+### Release 2.2.0 de l'Implementation Guide du volet "Transfert de dossier DUI"
+
+Modifications apportées dans cette release [2.2.0](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pulls?q=is%3Apr+is%3Aclosed+milestone%3A2.2.0) :
+
+* [ANS-006-168 - Paramètre pin-all](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/427)
+* [ANS-006-168 - Mise en place des bonnes pratiques (SD, CS, VS)](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/425)
+* [ANS-006-168 - Contact](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/424)
+* [SFE Modelisation Contact Personne Physique Morale](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/410)
+
 ### Release 2.2.0-ballot de l'Implementation Guide du volet "Transfert de dossier DUI"
 
 Modifications apportées dans cette release [2.2.0-ballot](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pulls?q=is%3Apr+is%3Aclosed+milestone%3A2.2.0-ballot) :

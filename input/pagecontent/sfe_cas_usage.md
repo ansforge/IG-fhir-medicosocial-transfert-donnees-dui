@@ -28,26 +28,29 @@ Pour ce cas d'usage les modalités d’envoi des données usager au SI-tiers son
 * Le DUI envoie au minimum une semaine d'historique par usager
 * Le DUI envoie au maximum cinq semaines d'historique par usager
 
-#### Cas d'usage SERAFIN
 
-Ce cas d'usage permet d'ajouter au flux d'extraction les données du Projet personnalisé.
+##### Cas d'usage SERAFIN
 
+ Ce cas d'usage permet d'ajouter au flux d'extraction les données du Projet personnalisé.
+ 
  Le Projet personnalisé est un outil de coordination visant à répondre à long terme aux besoins et attentes de la personne accueillie. Il est conçu pour et, si possible, avec la personne prise en charge.
 
   L'export du Projet personnalisé est composé des éléments métiers suivants :
-  * le Projet Personnalisé de l'usager 
-  * les Attentes de l'usager que le professionnel a intégrées au Projet personnalisé
-  * les Besoins de l'usager que le professionnel a intégrés au Projet personnalisé  
-  * les Objectifs dans le cadre du Projet personnalisé
-  * les Actions menées dans le cadre du Projet personnalisé
-  * les Moyens et les Ressources à mettre en place pour réaliser le Projet personnalisé
-  * les Prestations mises en place dans le cadre du Projet personnalisé
-  * les Bilans réalisés dans le cadre du Projet personnalisé 
+  * le Projet Personnalisé de l'usager ;
+  * les Attentes de l'usager que le professionnel a intégrées au Projet personnalisé ; 
+  * les Besoins de l'usager que le professionnel a intégrés au Projet personnalisé ;  
+  * les Objectifs dans le cadre du Projet personnalisé ;
+  * les Actions menées dans le cadre du Projet personnalisé ;
+  * les Moyens et les Ressources à mettre en place pour réaliser le Projet personnalisé ;
+  * les Prestations mises en place dans le cadre du Projet personnalisé ;
+  * les Bilans réalisés dans le cadre du Projet personnalisé.
+ 
+ Dans ce cas d'usage les blocs suivants sont enrichis : "Administratif, Coordination des acteurs et Accompagnement". Ils entrent dans la définition des moyens, ressources et de l'accompagnement mis en oeuvre pour l'usager en adéquation avec les besoins SERAFIN répertoriés en autre dans le Projet personnalisé.
 
-Dans ce cas d'usage les blocs suivants évolus : "Administratif, Coordination des acteurs et Accompagnement". Ils entrent dans la définition des moyens, ressources et de l'accompagnement mis en oeuvre pour l'usager en adéquation avec les besoins SERAFIN répertoriés en autre dans le Projet personnalisé.<br>
 Les objets métiers suivants sont enrichis ou créés :
   * la Mobilité de l'usager, son permis de conduire et son Séjour (bloc Administratif) 
-  * la Période scolaire de l'usager (bloc Accompagnement) 
+  * la Mobilité de l'usager, son permis de conduire et son Séjour (bloc Administratif) ;
+  * la Période scolaire de l'usager (bloc Accompagnement) ;
   * l'évènement de l'agenda usager (bloc Coordination des acteurs)
 
 <blockquote class="stu-note">

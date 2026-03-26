@@ -1,7 +1,8 @@
 Instance: tddui-pp-ime-patient-example
 InstanceOf: TDDUIPatient
-Usage: #example
+Title: "TDDUI PP IME Patient Example"
 Description: "Exemple de la ressource TDDUIPatient dans le cadre d'un projet personnalisé en IME"
+Usage: #example
 
 * identifier[PI].system = "https://identifiant-medicosocial-localusager.esante.gouv.fr"
 * identifier[PI].value = "3480787529/123456"
@@ -9,3 +10,6 @@ Description: "Exemple de la ressource TDDUIPatient dans le cadre d'un projet per
 * name[officialName].use = #official
 * name[officialName].given = "Hugo"
 * name[officialName].family = "D."
+
+* birthDate = "2005-09-15"
+* birthDate.extension[tddui-birth-order].valuePositiveInt = 1

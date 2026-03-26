@@ -20,7 +20,7 @@ class Usager #LightPink {
     departementNaissance : Code [0..1]
     paysNaissance : Code [0..1]
     situationFamiliale : Code [0..1]
-    compositionFoyer : Code [0..1]
+    compositionFoyer : Code [0..*]
     descriptionCompositionFoyer : Texte [0..1]
     paysNationalite : Code [0..*]
     langueParlee : Code [0..*]
@@ -34,7 +34,6 @@ class Usager #LightPink {
 }
 
 class Adresse #PaleGreen {
-    idAdresse : Identifiant [1..1]
     type : Code [0..1]
     numeroVoie : Texte [0..1]
     libelleVoie : Texte [0..1]
@@ -47,20 +46,21 @@ class Adresse #PaleGreen {
 }
 
 class Telecommunication #PaleGreen {
-    canal : Code [0..1]
-    adresseTelecom : Texte [0..1]
-    utilisation : Texte [0..1]
+    canal : Code [1..1]
+    typeMessagerie : Code [0..1]
+    adresseTelecom : Texte [1..1]
+    utilisation : Code [0..1]
 }
 
 class Courrier #PaleGreen {
     typeCourrier : Code [0..1]
-    idAdresse : Identifiant [0..1]
     libelleDestinataire : Texte [0..1]
     organismeDomiciliation : Texte [0..1]
 }
 
-Adresse "*" - "1" Usager
-Usager "1" - "*" Telecommunication
-Usager "1" -- "*" Courrier
+Usager "1" -- "*" Adresse
+Usager "1" -- "*" Telecommunication
+Usager "1" - "*" Courrier
+Courrier "*" - "1..1" Adresse
 
 @enduml

@@ -1,7 +1,9 @@
 Instance: tddui-pp-pa-bundle-example
 InstanceOf: TDDUIBundle
+Title: "TDDUI PP PA Bundle Example"
 Description: "Exemple de bundle conforme au profil TDDUIBundle contenant le projet personnalisé PA."
 Usage: #example
+
 * type = #transaction
 
 * entry[DUIPatient].fullUrl = "https://test-server.fr/Patient/tddui-pp-pa-patient-example-pp"

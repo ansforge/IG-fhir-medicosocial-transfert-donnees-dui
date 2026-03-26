@@ -102,7 +102,7 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
     Il est obligatoire si le NIR n'est pas transmis.</td>
   </tr>
   <tr>
-    <td>CommuneNaissance : [0..1] Code</td>
+    <td>communeNaissance : [0..1] Code</td>
     <td>Commune de naissance de l’usager. Code officiel géographique (COG) de la commune.<br>
     Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J120-CommuneHistorisee/FHIR/JDV-J120-CommuneHistorisee">JDV_J120-CommuneHistorisee</a><br>
     Cet attribut fait partie des traits INS. Il est obligatoire si l’identité INS est qualifiée.<br>
@@ -123,12 +123,12 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
   <tr>
     <td>situationFamiliale : [0..1] Code</td>
     <td>Situation familiale de l’usager.<br>
-    Jeu(x) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J176-SituationVieQuotidienne-MDPH/FHIR/JDV-J176-SituationVieQuotidienne-MDPH">JDV-J176-SituationVieQuotidienne-MDPH</a></td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J176-SituationVieQuotidienne-MDPH/FHIR/JDV-J176-SituationVieQuotidienne-MDPH">JDV-J176-SituationVieQuotidienne-MDPH</a></td>
   </tr>
   <tr>
-    <td>compositionFoyer : [0..1] Code</td>
+    <td>compositionFoyer : [0..*] Code</td>
     <td>Désigne avec qui vit l’usager dans son logement.<br>
-    Jeu(x) associé(s) : Jeu(x) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j385-composition-foyer-ms">JDV-J385-composition-foyer-ms</a></td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j385-composition-foyer-ms/$expand">JDV-J385-composition-foyer-ms</a></td>
   </tr>
   <tr>
     <td>descriptionCompositionFoyer : [0..1] Texte</td>
@@ -137,8 +137,8 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
   </tr>
   <tr>
     <td>paysNationalite : [0..*] Code</td>
-    <td>Pays de nationalité actuelle ou rattachement de la nationalité à un espace de pays conventionné.<br>
-    Nomenclature(s) associée(s) : <a href="https://mos.esante.gouv.fr/NOS/TRE_R89-RegroupementPays/FHIR/TRE-R89-RegroupementPays">TRE_R89-RegroupementPays</a></td>
+    <td>Pays de nationalité de l'usager.<br>
+    Nomenclature(s) associée(s) : ISO 3166</td>
   </tr>
   <tr>
     <td>langueParlee : [0..*] Code</td>
@@ -197,10 +197,6 @@ Adresse géopostale. Un emplacement auquel l’usager peut être trouvé, d'apr�
     <th>Description</th>
   </tr>
   <tr>
-    <td>idAdresse : [0..1] Identifiant </td>
-    <td>Identifiant fonctionnel de l’adresse.</td>
-  </tr>
-  <tr>
     <td>type : [0..1] Code</td>
     <td>Indique le ou les types d'adresse tel que "Adresse du domicile", "Adresse du domicile de secours", etc. </td>
   </tr>
@@ -257,7 +253,7 @@ Adresse géopostale. Un emplacement auquel l’usager peut être trouvé, d'apr�
 
 ##### Classe Telecommunication
 
-Adresse de télécommunication à laquelle l’usager peut être contactée (téléphone, fax, e-mail, URL, etc.).
+Adresse de télécommunication à laquelle l’usager peut être contactée (téléphone, fax, e-mail, URL, etc.). Cet objet provient du MOS, il a été profilé pour ce volet.
 
 <table style="width:100%">
   <tr>
@@ -265,17 +261,23 @@ Adresse de télécommunication à laquelle l’usager peut être contactée (té
     <th>Description</th>
   </tr>
   <tr>
-    <td>canal : [0..1] Code</td>
+    <td>canal : [1..1] Code</td>
     <td>Code spécifiant le canal ou la manière dont s'établit la communication (téléphone, e-mail, URL, etc.).<br>
-    Nomenclature(s) associée(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J225-CanalCommunication-ROR/FHIR/JDV-J225-CanalCommunication-ROR">JDV-J225-CanalCommunication-ROR</a></td>
+    Jeu(x) de valeur associé(s) : JDV en cours de d'analyse NOS</td>
+  </tr>
+   <tr>
+    <td>typeMessagerie : [0..1] Code</td>
+    <td>Type de messagerie électronique rassemblant des acteurs (personne physique, personne morale ou système) identifiés et enregistrés selon des règles qui garantissent leur légitimité à l'utiliser.<br>
+    Jeu(x) de valeur associé(s) : JDV en cours de d'analyse NOS</td>
   </tr>
   <tr>
-    <td>adresseTelecom : [0..1] Texte</td>
+    <td>adresseTelecom : [1..1] Texte</td>
     <td>Valeur de l'adresse de télécommunication dans le format induit par le canal de communication, par exemple un numéro de téléphone, une adresse de courrier électronique, une adresse URL, etc.</td>
   </tr>
     <tr>
-    <td>utilisation : [0..1] Texte</td>
-    <td>Précise l'utilisation du canal de communication (par exemple à des fins professionnelles, privées, etc.).</td>
+    <td>utilisation : [0..1] Code</td>
+    <td>Précise l'utilisation du canal de communication (par exemple à des fins professionnelles, privées, etc.).<br>
+    Jeu(x) de valeur associé(s) : JDV en cours de d'analyse NOS</td>
   </tr>
 </table>
 
@@ -290,12 +292,8 @@ Adresse de courrier de l’usager.
   </tr>
   <tr>
     <td>typeCourrier : [0..1] Code</td>
-    <td>Type de courrier.<br>
+    <td>Type de courrier qui peut être adressé à l'usager.<br>
     Jeu(x) associé(s) : en cours de création NOS</td>
-  </tr>
-  <tr>
-    <td>idAdresse : [0..1] Identifiant</td>
-    <td>Adresse à utiliser pour l’envoi du type de courrier.</td>
   </tr>
   <tr>
     <td>libelleDestinataire : [0..1] Texte</td>
@@ -822,10 +820,9 @@ Quantification de la prise en charge.
 <!-- object data="bloc_environnement_ressources.svg" type="image/svg+xml"></object -->
 <div style="text-align:center;">{%include bloc_environnement_ressources.svg%}</div>
 
+##### Classe Contact
 
-##### Classe ContactPersonnePhysique
-
-Personne physique qui agit comme point de contact auprès d'une autre personne ou d'un autre service.
+Un contact peut être un membre de la famille ou un proche de l’Usager. Il peut s’agir par exemple d’un aidant, de la personne de confiance de l’Usager…
 
 <table style="width:100%">
   <tr>
@@ -833,78 +830,27 @@ Personne physique qui agit comme point de contact auprès d'une autre personne o
     <th>Description</th>
   </tr>
   <tr>
-    <td>identifiantContactPP : [0..1] Identifiant</td>
-    <td>Identifiant du contact</td>
-  </tr>
-  <tr>
-    <td>nom : [0..1] Texte</td>
-    <td>Nom de la personne contact.</td>
-  </tr>
-  <tr>
-    <td>prenom : [0..1] Texte</td>
-    <td>Prénom de la personne contact.</td>
-  </tr>
-  <tr>
-    <td>civilite : [0..1] Code</td>
-    <td>Civilité du contact.<br>
-    jeu(x) de valeur(s) associé(s) :  <a href="https://mos.esante.gouv.fr/NOS/JDV_J245-Civilite-CISIS/FHIR/JDV-J245-Civilite-CISIS">JDV_J245-Civilite-CISIS</a></td>
-  </tr>
-  <tr>
-    <td>paysNationalite : [0..*] Code</td>
-    <td>Pays de nationalité de la personne contact, actuelle ou rattachement de la nationalité à un espace de pays conventionné<br>
-    Nomenclature(s) associée(s) : Norme ISO 3166</td>
-  </tr>
-  <tr>
-    <td>profession : [0..1] Texte</td>
-    <td>Profession de la personne contact.</td>
-  </tr>
-  <tr>
-    <td>situationFamiliale : [0..1] Code</td>
-    <td>Situation familiale de la personne contact (célibataire, divorcée, etc.).<br>
-    Nomenclature(s) associée(s) : à définir</td>
-  </tr>
-  <tr>
-    <td>dateNaissance : [0..1] Date</td>
-    <td>Date de naissance de la personne contact.</td>
-  </tr>
-  <tr>
-    <td>telecommunication : [0..*] Telecommunication</td>
-    <td>Adresse(s) de télécommunication du contact (numéro de téléphone, adresse email, URL, etc.).</td>
-  </tr>
-  <tr>
-    <td>adresse : [0..1] Adresse</td>
-    <td>Adresse géopostale du point de contact.</td>
-  </tr>
-  <tr>
     <td>role : [0..1] Code</td>
-    <td>Rôle de la personne point de contact auprès d'une autre personne. Exemple dans le cas d'un patient, ce rôle indique si le point de contact est la personne à prévenir en cas d'urgence, la personne de confiance, etc.<br>
-    Nomenclature(s) associée(s) : <a href="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass">TRE_R260-HL7RoleClass</a></td>
+    <td>Rôle de la personne point de contact auprès d'une autre personne. Exemple dans le cas d'un usager, ce rôle indique si le point de contact est la personne à prévenir en cas d'urgence, la personne de confiance, etc.<br>
+    Jeux de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j384-role-membre-famille-ms/$expand">JDV-J384-role-membre-famille-ms</a></td>
+  </tr>
+  <tr>
+    <td>description : [0..1] Texte</td>
+    <td>Une description du contact.</td>
   </tr>
   <tr>
     <td>relation : [0..1] Code</td>
     <td>Lien de la personne point de contact auprès d'une autre personne. Exemple dans le cas d'un patient, ce lien indique si le point de contact est son enfant, son frère, etc.<br>
-    Nomenclature(s) associée(s) : <br>
-    <a href="https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode">TRE_R216-HL7RoleCode</a><br>
-    <a href="https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique">TRE_R217-ProtectionJuridique</a></td>
-  </tr>
-  <tr>
-    <td>fonction : [0..1] Code</td>
-    <td>Un titre, une position ou une fonction de la personne assurant le contact au sein de son organisation (directeur, secrétaire, etc.).
-    <a href="https://mos.esante.gouv.fr/NOS/TRE_R251-FonctionContact/FHIR/TRE-R251-FonctionContact">TRE_R251-FonctionContact</a></td>
-  </tr>
-  <tr>
-    <td>ordreAppel : [0..1] Numérique</td>
-    <td>Ordre de priorité d’appel du contact (1 = priorité maximale).</td>
-  </tr>
-  <tr>
-    <td>commentaire : [0..1] Texte</td>
-    <td>Commentaire relatif au contact.</td>
+    Jeux de valeur(s) associé(s) : <br>
+    <a href="https://mos.esante.gouv.fr/NOS/JDV_J14-QualiteRepresentantLegal-CISIS/FHIR/JDV-J14-QualiteRepresentantLegal-CISIS">JDV-J14-QualiteRepresentantLegal-CISIS</a><br>
+    <a href="https://mos.esante.gouv.fr/NOS/JDV_J11-RelationPatient-CISIS/FHIR/JDV-J11-RelationPatient-CISIS">JDV-J11-RelationPatient-CISIS</a>
+    </td>
   </tr>
 </table>
 
-##### Classe  ContactPersonneMorale
+##### Classe PersonnePhysique
 
-Personne morale qui agit comme point de contact auprès d'une autre personne ou d'un autre service.
+Une personne physique est un individu titulaire de droits et d'obligations caractérisé par une identité civile.
 
 <table style="width:100%">
   <tr>
@@ -912,42 +858,50 @@ Personne morale qui agit comme point de contact auprès d'une autre personne ou 
     <th>Description</th>
   </tr>
   <tr>
-    <td>identifiantContactPP : [0..1] Identifiant</td>
-    <td>Identifiant du contact</td>
+    <td>identifiantPP : [1..1] Identifiant</td>
+    <td>Identifiant de la personne physique.</td>
   </tr>
   <tr>
-    <td>libelle : [0..1] Texte</td>
-    <td>Libellé du contact.</td>
+    <td>nomNaissance : [0..1] Texte</td>
+    <td>Nom de naissance de la personne.<br>
+    Synonymes : nom patronymique, nom de famille.</td>
   </tr>
   <tr>
-    <td>raisonSociale : [0..1] Texte</td>
-    <td>Raison sociale du contact.</td>
+    <td>prenom : [0..*] Texte</td>
+    <td>Prénom(s) de la personne déclarés à sa naissance.</td>
   </tr>
   <tr>
-    <td>typeOrgansime : [0..1] Code</td>
-    <td>Type d’organisme du contact.</td>
+    <td>civilite : [0..1] Code</td>
+    <td>Civilité de la personne physique.<br>
+    jeu(x) de valeur(s) associé(s) :  <a href="https://mos.esante.gouv.fr/NOS/JDV_J245-Civilite-CISIS/FHIR/JDV-J245-Civilite-CISIS">JDV_J245-Civilite-CISIS</a></td>
   </tr>
   <tr>
-    <td>telecommunication : [0..*] Telecommunication</td>
-    <td>Adresse(s) de télécommunication du contact (numéro de téléphone, adresse email, URL, etc.).</td>
+    <td>sexe : [0..1] Code</td>
+    <td>Sexe de la personne physique.<br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J143-AdministrativeGender-CISIS/FHIR/JDV-J143-AdministrativeGender-CISIS">JDV-J143-AdministrativeGender-CISIS</a>
+    </td>
   </tr>
   <tr>
-    <td>adresse : [0..1] Adresse</td>
-    <td>Adresse géopostale du point de contact.</td>
+    <td>paysNationalite : [0..*] Code</td>
+    <td>Pays de nationalité de la personne physique.<br>
+    Nomenclature(s) associée(s) : Norme ISO 3166</td>
   </tr>
   <tr>
-    <td>role : [0..1] Code</td>
-    <td>Rôle de la personne point de contact auprès d'une autre personne. Exemple dans le cas d'un patient, ce rôle indique si le point de contact est la personne à prévenir en cas d'urgence, la personne de confiance, etc.<br>
-    Nomenclature(s) associée(s) : <a href="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass">TRE_R260-HL7RoleClass</a></td>
+    <td>dateNaissance : [0..1] Date</td>
+    <td>Date de naissance de la personne physique.</td>
+  </tr>
+   <tr>
+    <td>adresse : [0..1]  <a href="#classe-adresse">Adresse</a></td>
+    <td>Adresse géopostale du point de la personne physique.</td>
   </tr>
   <tr>
-    <td>ordreAppel : [0..1] Numérique</td>
-    <td>Ordre de priorité d’appel du contact (1 = priorité maximale).</td>
+    <td>telecommunication : [0..*] <a href="#classe-telecommunication">Telecommunication</a></td>
+    <td>Adresse(s) de télécommunication de la personne physique (numéro de téléphone, adresse email, URL, etc.).</td>
   </tr>
   <tr>
     <td>commentaire : [0..1] Texte</td>
-    <td>Commentaire relatif au contact.</td>
-  </tr>
+    <td>Commentaire relatif à la personne physique.</td>
+</tr>
 </table>
 
 ##### Classe Ressource
@@ -1071,9 +1025,9 @@ Relevé d'Identité Bancaire.
   </tr>
 </table>
 
-##### Classe Transport
+##### Classe MobiliteUsager
 
-Moyen de transport utilisé par l’usager.
+Dispositif de transport utilisé par l’usager.
 
 <table style="width:100%">
   <tr>
@@ -1112,7 +1066,8 @@ Permis de conduire de l’usager.
   <tr>
     <td>type : [0..1] Code</td>
     <td>Type du permis de conduire.<br>
-    Jeu(x) de valeur(s) associé(s) : en cours de création NOS</td>
+    Jeu(x) de valeur(s) associé(s) : en cours de création NOS <br>
+    La règle métier entre les catégories et les types est spécifiée dans la table d'association ASS en cours de création NOS</td>
   </tr>
   <tr>
     <td>dateObtention : [0..1] Date</td>
@@ -1201,7 +1156,7 @@ La classe EntiteJuridique est définie dans le MOS et est profilée pour ce vole
     <td>Numéro de dossier administratif dans l'ESSMS de provenance.</td>
   </tr>
    <tr>
-    <td>ESSMSProvenance : [1..1] EntiteJuridique</td>
+    <td>ESSMSProvenance : [0..1] EntiteJuridique</td>
     <td>Établissement ou service social ou médico-social de provenance.</td>
   </tr>
   <tr>
@@ -1221,9 +1176,9 @@ La classe EntiteJuridique est définie dans le MOS et est profilée pour ce vole
     <td>Date d’entrée dans le séjour.</td>
   </tr>
   <tr>
-    <td>provenance : [0..1] Code</td>
+    <td>modaliteEntree : [0..1] Code</td>
     <td>Mode d'entrée du séjour.<br>
-    Jeu(x) de valeur(s) associé(s) : jdv-modalite-entree-cisis avec l'OID 1.2.250.1.213.1.1.5.73 publié sur <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a></td>
+    Jeu(x) de valeur(s) associé(s) : en cours de construction</td>
   </tr>
   <tr>
     <td>libelleModeEntree : [0..1] Texte</td>
@@ -1238,9 +1193,9 @@ La classe EntiteJuridique est définie dans le MOS et est profilée pour ce vole
     <td>Date de sortie du séjour.</td>
   </tr>
    <tr>
-    <td>motifSortie : [0..1] Code</td>
+    <td>modaliteSortie : [0..1] Code</td>
     <td>Mode de sortie/destination du séjour.<br>
-    Jeu(x) de valeur(s) associé(s) : jdv-modalite-sortie-cisis avec l'OID 1.2.250.1.213.1.1.5.74 publié sur <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a></td>
+    Jeu(x) de valeur(s) associé(s) : en cours de construction</td>
   </tr>
   <tr>
     <td>libelleModeSortie : [0..1] Texte</td>
@@ -1413,7 +1368,6 @@ Résultat de l'évaluation globale d'un usager.
     <td>modaliteEvaluation : [0..1] Texte</td>
     <td>Mode d'évaluation.</td>
   </tr>
-  <tr>
     <td>autoEvaluation : [0..1] Indicateur</td>
     <td>Indique si l'évaluation est une auto-évaluation.<br>
 1 = L'évaluation est une auto-évaluation<br>
@@ -1502,11 +1456,9 @@ Ce niveau permet d'associer à un champ évalué de la classe "DetailEvaluation"
 
 ##### Classe Evaluateur
 
-** Classe spécialisée, hérite de la classe Professionnel du MOS profilée pour ce volet.
+** Classe spécialisée, hérite soit de la classe Professionnel du MOS profilée pour ce volet soit de la classe Usager dans le cas d'une auto évaluation, où l'évaluateur correspond à l'usager.
 
 Cette classe regroupe les items pouvant caractériser la personne ayant réalisé l'évaluation.<br>
-
-Dans le cas d'une auto évaluation, l'évaluateur étant l'usager cet élément n'est pas requis.
 
 ##### Classe Responsable
 
@@ -1525,6 +1477,12 @@ Cette classe regroupe les items pouvant caractériser la personne ayant rédigé
 Dans le cas d'une auto évaluation, l'auteur étant l'usager cet élément n'est pas requis.<br>
 <br>
 <u>Remarque</u> : Hormis le cas de l'auto évaluation, au moins un des 3 éléments (Evaluateur, Responsable, Auteur) doit être renseigné.
+
+##### Classe Porteur
+
+** Classe spécialisée, hérite de la classe EntiteJuridique du MOS profilée pour ce volet.
+
+Cette classe correspond à la personne morale porteuse de l'évaluation de l'usager. Dans le cas d'une auto-évaluation, cet élément est obligatoire.
 
 #### Projet personnalisé
 
@@ -1553,7 +1511,7 @@ Le projet personnalisé est un document co-construit par l'usager, son entourage
   <tr>
     <td>typeProjetPersonnalise : [0..1] Code</td>
     <td>Type de projet personnalisé.<br>
-    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j367-type-projet-personnalise-ms">JDV-J367-type-projet-personnalise-ms</a></td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j367-type-projet-personnalise-ms/$expand">JDV-J367-type-projet-personnalise-ms</a></td>
   </tr>
   <tr>
     <td>modaliteCommunicationProjetPersonnalise : [0..1] Texte</td>
@@ -1835,7 +1793,7 @@ Un bilan est une évaluation du projet personnalisé qui est réalisé à la con
  <tr>
     <td>categorieBilan : [0..1] Code</td>
     <td>Catégorie du bilan.<br>
-    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j366-statut-bilan-projet-personnalise-ms">JdvJ366StatutBilanProjetPersonnaliseMs</a></td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j366-statut-bilan-projet-personnalise-ms/$expand">JdvJ366StatutBilanProjetPersonnaliseMs</a></td>
  </tr>
   <tr>
     <td>perimetreBilan : [0..1] Texte</td>
@@ -1876,7 +1834,7 @@ Préparation du bilan du projet personnalisé.
     <td>Corps de la préparation.</td>
  </tr>
  <tr>
-    <td>auteur : [1..1] (<a href="#classe-professionnel">Professionnel</a>, <a href="#classe-usager">Usager</a>, <a href="#classe-contactpersonnephysique">Contact personne physique</a>)</td>
+    <td>auteur : [1..1] (<a href="#classe-professionnel">Professionnel</a>, <a href="#classe-usager">Usager</a>, <a href="#classe-contact">Contact personne physique</a>)</td>
     <td>Auteur de la préparation de bilan. Cet auteur peut référencer un professionnel, l'usager ou une personne de son entourage.</td>
  </tr>
 </table>   
@@ -1884,6 +1842,7 @@ Préparation du bilan du projet personnalisé.
 #### Parcours
 
 <div style="text-align:center;">{%include bloc_periode_scolaire.svg%}</div>
+
 
 ##### Classe ProjetVie
 
@@ -1953,19 +1912,7 @@ La classe EntiteGeographique est issue du MOS et est profilée pour ce volet.
   <tr>
     <td>typeEnseignementSpecialise : [0..*] ConceptCode</td>
     <td>Type enseignement spécialisé.<br>
-    Jeu(x) de valeur(s) associé(s) : en cours de création NOS</td>
- </tr>
- <tr>
-    <td>referentScolaire : [0..*] <a href="#PersonnePhysique">PersonnePhysique</a></td>
-    <td>Référent scolaire de l'usager pour cette année de scolarité.</td>
- </tr>
- <tr>
-    <td>contactReferentScolaire : [0..*] <a href="#classe-telecommunication">Telecommunication</a></td>
-    <td>Télécommunication du référent scolaire.</td>
- </tr>
- <tr>
-    <td>ecole : [0..1] <a href="#classe-entité-géographique">EntiteGeographique</a></td>
-    <td>Structure dans laquelle la période scolaire se déroule.</td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j386-type-enseignement-specialise-ms/$expand">JDV-J386-TYPE-ENSEIGNEMENT-SPECIALISE-MS</a></td>
  </tr>
  <tr>
     <td>diplome : [0..*] ConceptCode</td>
@@ -1980,7 +1927,19 @@ La classe EntiteGeographique est issue du MOS et est profilée pour ce volet.
     <td>commentaireAnneeScolaire : [0..1] Texte</td>
     <td>Commentaire sur l'année scolaire.</td>
  </tr>
-</table>
+  </table>
+
+##### Classe ReferentScolaire
+
+** Classe spécialisée, hérite de la classe PersonnePhysique
+
+La loi place l’enseignant référent comme l’acteur central des actions conduites en direction des élèves handicapés. Il est l’interlocuteur privilégié des parents et des différents acteurs autour de la scolarisation d’un enfant, qu’il soit scolarisé en école ordinaire ou bien dans le milieu spécialisé.
+
+##### Classe Ecole
+
+** Classe spécialisée, hérite de la classe EntiteGeographique qui est issue du MOS et qui est profilée pour ce volet.
+
+Cette classe correspond à la structure dans laquelle la période scolaire de l'usager se déroule.
 
 ### Partie Coordination des acteurs
 
@@ -2039,11 +1998,7 @@ Les classes EntiteJuridique, Lieu et Professionnel sont issues du MOS et sont pr
     <td>lieuEvenement : [0..1] Lieu</td>
     <td>Localisation d’exécution de l’évènement.</td>
   </tr>
-<tr>
-    <td>structureEnCharge : [0..1] EntiteJuridique</td>
-    <td>Structure de rattachement de l'usager en charge de l'évènement.</td>
-  </tr>
-<tr>
+  <tr>
     <td>dateDebutEvenement : [1..1] DateHeure</td>
     <td>Date et heure de début de l'évènement.</td>
   </tr>
@@ -2065,7 +2020,7 @@ Les classes EntiteJuridique, Lieu et Professionnel sont issues du MOS et sont pr
   </tr>
   <tr>
    <td>repas : [0..1] Indicateur</td>
-    <td>Repas du professionnel prévu dans le cadre de l'événement.</td>
+    <td>Repas du professionnel prévu dans le cadre de l'évènement.</td>
   </tr>
  <tr>
    <td>typeRessourceUtilisee: [0..*] Code</td>
@@ -2087,7 +2042,7 @@ Les classes EntiteJuridique, Lieu et Professionnel sont issues du MOS et sont pr
   </tr>
    <tr>
     <td>validationUsager : [0..1] Indicateur</td>
-    <td>Accord de l'usager<br>
+    <td>Validation par l'usager que l'événement a eu lieu.<br>
 1 =  validation de l'usager<br>
 0 =  refus de l'usager</td>
   </tr>
@@ -2096,6 +2051,8 @@ Les classes EntiteJuridique, Lieu et Professionnel sont issues du MOS et sont pr
 ##### Classe Participant
 
 Le Participant est une personne morale ou physique prenant part à l'événement.
+
+Si le participant est mandaté par une personne morale, la notion de Mandataire est indiquée par le lien vers le Professionnel.profession (code 307 - Mandataire judiciaire à la protection des majeurs (MJPM) : JDV_J01-XdsAuthorSpecialty-CISIS).
 
 <table style="width:100%">
   <tr>
@@ -2126,6 +2083,15 @@ Le Participant est une personne morale ou physique prenant part à l'événement
 0 = externe</td>
   </tr>
   </table>
+  </table>
+
+##### Classe StructureEnCharge
+
+** Classe spécialisée, hérite de la classe EntiteJuridique qui est issue du MOS et qui est profilée pour ce volet.
+
+Cette classe correspond à la structure en charge de l'évènement. Cette structure peut être différente de la structure de rattachement de l'usager. Une seule structure en charge est renseignée par événement.
+
+Le lien est créé entre la classe Professionnel et la classe StructureEnCharge si le participant en tant que personne physique est interne à la structure en charge de l'évènement. Dans le cas contraire ce lien n'est pas créé.
 
 ##### Classe Transport
 
@@ -2389,10 +2355,6 @@ Pour ce volet l'Entité Géographique est une personne morale.
     <td>idNat_Struct : [1..1] Identifiant</td>
     <td>Identification nationale de l'Entité géographique. Cette identification est obtenue par la concaténation du type d'identifiant national de structure (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G07-TypeIdentifiantStructure/FHIR/TRE-G07-TypeIdentifiantStructure">TRE_G07-TypeIdentifiantStructure</a>) et de l'identifiant de la structure: ** 3 + N° SIRET (pour les établissements qui ne sont pas de santé).</td>
   </tr>
-   <tr>
-    <td>numeroEducationNationale : [0..1] Texte</td>
-    <td>Le "numéro éducation nationale de l'établissement" est un numéro associé délivré par l’Éducation nationale, pour tous les établissements et services pour enfants et adolescents handicapés qui emploient du personnel de l’Education nationale.</td>
-  </tr>
  <tr>
     <td>denominationEG : [0..1] Texte</td>
     <td>Nom sous lequel l'entité géographique exerce son activité.</td>
@@ -2485,7 +2447,7 @@ Cela correspond au consentement d'une personne physique ou morale.
     <th>Description</th>
   </tr>
   <tr>
-    <td>auteur : [1..1] (<a href="#classe-professionnel">Professionnel</a>, <a href="#classe-usager">Usager</a>, <a href="#classe-contactpersonnephysique">Contact personne physique</a>)</td>
+    <td>auteur : [1..1] (<a href="#classe-professionnel">Professionnel</a>, <a href="#classe-usager">Usager</a>, <a href="#classe-contact">Contact personne physique</a>)</td>
     <td>Acteur (personne physique ou morale) qui donne son accord. L'auteur de l'accord peut référencer un professionnel, l'usager ou une personne de son entourage.</td>
   </tr>
   <tr>

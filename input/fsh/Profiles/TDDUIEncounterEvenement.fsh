@@ -19,9 +19,13 @@ Description: "Profil de la ressource Encounter permettant de regrouper les évè
 * status ^short = "Correspondance des statuts métier avec les codes FHIR : Planifié → planned, Validé → triaged, Réalisé → finished, Annulé → cancelled."
 
 * status.extension contains 
-    TDDUIEventCancelReason named TDDUIEventCancelReason 0..1
+    TDDUIEventCancelReason named TDDUIEventCancelReason 0..1 and 
+    TDDUIStatusAuthor named TDDUIStatusAuthor 0..1
 
-* type from TDDUIEncounterTypeVs (required)
+* status.extension[TDDUIEventCancelReason] ^short = "Motif associé au statut de non-réalisation de l’évènement."
+* status.extension[TDDUIStatusAuthor] ^short = "Le professionnel ayant effectué la dernière modification du statut associé à la ressource."
+
+* type from TDDUIEncounterType (required)
 
 // Types d'évènement
 * type ^slicing.discriminator.type = #pattern
@@ -42,7 +46,7 @@ Description: "Profil de la ressource Encounter permettant de regrouper les évè
 
 * type[serafin].coding 1..1
 * type[serafin].coding.code 1..1
-* type[serafin].coding.code from TDDUISerafinValueSet
+* type[serafin].coding.code from TDDUISerafin
 * type[serafin].coding.system 1..1
 * type[serafin].coding.system = "https://smt.esante.gouv.fr/terminologie-SERAFINPH"
 * type[serafin] ^short = "Type d'évènement Serafin correspondant aux familles 2-PrestationDirecte et 3-PrestationIndirecte."
@@ -60,26 +64,14 @@ Description: "Profil de la ressource Encounter permettant de regrouper les évè
 * subject only Reference(TDDUIPatient or TDDUIPatientINS or Group)
 
 // ESSMS
+* serviceProvider.extension contains TDDUIParticipantPresent named TDDUIParticipantPresent 0..1
+* serviceProvider.extension[TDDUIParticipantPresent] ^short = "Indique la présence de la structure lors de l'événement."
 * serviceProvider only Reference(TDDUIOrganization)
 
-* participant.type from TDDUIEncounterParticipantVs (required)
+* participant.extension contains TDDUIParticipantPresent named TDDUIParticipantPresent 0..1
+* participant.extension[TDDUIParticipantPresent] ^short = "Indique la présence du participant lors de l'événement."
 
-* participant ^slicing.discriminator.type = #pattern
-* participant ^slicing.discriminator.path = "type"
-* participant ^slicing.rules = #open
-
-* participant contains
-    auteurStatut 0..1 and
-    professionnel 0..*
-
-* participant[auteurStatut].type 1..1
-* participant[auteurStatut].type = TDDUIEncounterParticipant#AUT "Auteur du statut de la ressource"
-* participant[auteurStatut] ^short = "Professionnel ayant effectué la dernière modification du statut associé à la ressource."
-
-* participant[professionnel].type 1..1
-* participant[professionnel].type = $ParticipationType#PART
-
-* participant.individual only Reference(TDDUIPractitioner or TDDUIPractitionerRole or RelatedPerson)
+* participant.individual only Reference(TDDUIPractitioner or TDDUIPractitionerRole)
 
 * location 0..1
 
@@ -92,7 +84,8 @@ Description: "Profil de la ressource Encounter permettant de regrouper les évè
     TDDUIEventOutsideService named TDDUIEventOutsideService 0..1  and
     TDDUIEventReason named TDDUIEventReason 0..1  and
     TDDUIPatientPresent named TDDUIPatientPresent 0..1  and
-    TDDUIMeal named TDDUIMeal 0..1
+    TDDUIMeal named TDDUIMeal 0..1 and
+    TDDUIPatientValidation named TDDUIPatientValidation 0..1
 
 * extension[TDDUIRessourcesUsed] ^short = "Ressources utilisées lors de l’évènement."
 * obeys MatDetailOnlyIfTypeOrg206
@@ -105,6 +98,7 @@ Description: "Profil de la ressource Encounter permettant de regrouper les évè
 * extension[TDDUIEventReason] ^short = "Contexte justifiant la réalisation de l’évènement."
 * extension[TDDUIPatientPresent] ^short = "Evènement nécessitant ou non la présence physique de l’usager."
 * extension[TDDUIMeal] ^short = "Repas du professionnel prévu dans le cadre de l'événement."
+* extension[TDDUIPatientValidation] ^short = "Validation par l'usager que l'événement a eu lieu."
 
 * partOf only Reference(TDDUIEncounterSejour)
 * period.start 1..1
@@ -120,8 +114,10 @@ Title:    "Modèle de contenu DUI"
 * identifier -> "idEvenement"
 * type -> "typeEvenement"
 * subject -> "Usager"
-* serviceProvider -> "structureEnCharge"
-* participant[professionnel] -> "Professionnel"
+* serviceProvider -> "Participant.structureEnCharge"
+* serviceProvider.extension[TDDUIParticipantPresent] -> "Participant.presenceParticipant"
+* participant.extension[TDDUIParticipantPresent] -> "Participant.presenceParticipant"
+* participant.individual -> "Participant.Professionnel"
 * location -> "lieuEvenement"
 * extension[TDDUIRessourcesUsed] -> "RessourceUtilisee"
 * extension[TDDUIRessourcesUsed].extension[TDDUIRessourceType] -> "typeRessourceUtilisee"
@@ -134,13 +130,14 @@ Title:    "Modèle de contenu DUI"
 * extension[TDDUIEventOutsideService] -> "evenementHorsPrestation"
 * extension[TDDUIEventReason] -> "motifEvenement"
 * extension[TDDUIPatientPresent] -> "usagerPresent"
+* extension[TDDUIPatientValidation] -> "validationUsager"
 * extension[TDDUIMeal] -> "repas"
 * partOf -> "sejour"
 * period.start -> "dateDebutEvenement"
 * period.end -> "dateFinEvenement"
 * meta.lastUpdated -> "dateModificationEvenement, Statut.dateStatut"
 * status -> "Statut.statut"
-* participant[auteurStatut] -> "Statut.auteur"
+* status.extension[TDDUIStatusAuthor] -> "Statut.auteur"
 * status.extension[tddui-event-cancel-reason] -> "Statut.motifNonRealisation"
 
 Invariant: MatDetailOnlyIfTypeOrg206

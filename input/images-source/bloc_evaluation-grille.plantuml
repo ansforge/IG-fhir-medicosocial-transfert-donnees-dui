@@ -54,20 +54,21 @@ note right of DetailEvaluationN2::resultatChampsEvalue
 end note
 
 Professionnel <|-- Evaluateur
+Usager <|-- Evaluateur
 Professionnel <|-- Responsable
 Professionnel <|-- Auteur
 
 EntiteJuridique <|-- Porteur
 
-Evaluateur "0..1" -- "0..*" Evaluation
-Responsable "0..1" -- "0..*" Evaluation
-Auteur "0..1" -- "0..*" Evaluation
-Usager "1" -- "0..*" Evaluation
+Evaluateur "0..1" -- "*" Evaluation
+Responsable "0..1" -- "*" Evaluation
+Auteur "0..1" -- "*" Evaluation
+Usager "1" -- "*" Evaluation
 
-Porteur "0..1" -- "0..*" Evaluation
+Porteur "0..1" -- "*" Evaluation
 
-Evaluation "1" -- "0..*" DetailEvaluationN1
-DetailEvaluationN1 "1" -- "0..*" DetailEvaluationN2
-Evaluation "1" -- "0..*" Statut
+Evaluation "1" -- "*" DetailEvaluationN1
+DetailEvaluationN1 "1" -- "*" DetailEvaluationN2
+Evaluation "1" -- "*" Statut
 
 @enduml

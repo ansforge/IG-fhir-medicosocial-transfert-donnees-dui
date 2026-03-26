@@ -1,33 +1,85 @@
 @startuml
 
-map "<&layers> name:usualName" as nameusualName #back:WhiteSmoke;header:LightGray {
+
+
+map "PermisConduire : <&layers> identifier:driverLicense" as PermisConduire #DarkGray {
+    numPermisConduire => value
+    dateObtention => period.start
+    dateValidite => period.end
+}
+
+map "line" as line #DarkGray {
+    libelleVoie => <&plus> additionalLocator
+    numeroVoie => <&plus> houseNumber
+    mentionDistribution => <&plus> postBox
+    complementPointGeographique => <&plus> streetNameBase
+}
+
+map "<&layers> name:usualName" as nameusualName #DarkGray {
     nomUsage => family
     prenomUtilise => given
 }
 
-map "<&layers> name:officialName" as nameofficialName #back:WhiteSmoke;header:LightGray {
+map "<&layers> name:officialName" as nameofficialName #DarkGray {
     prenom => <&plus> birth-list-given-name
     nomNaissance => family
     premierPrenomActeNaissance => given
     civilite => prefix
 }
 
-map "dateNaissance : birthDate" as dateNaissance #back:WhiteSmoke;header:LightGray {
-    ordreNaissanceEtatCivil => <&plus> tddui-birth-order
+map "Telecommunication : telecom" as Telecommunication #DarkGray {
+    canal => system
+    adressTelecom => value
 }
 
-map "**Usager : TDDUIPatient**" as Usager #back:TECHNOLOGY;header:LimeGreen {
-    paysNaissance => <&plus> birthPlace.value[x].country
-    communeNaissance => <&plus> birthPlace.value[x].extension:inseeCode
+map "Adresse : address" as Adresse #DarkGray {
+    commentaire => <&plus> TDDUIComment
+    type => type
+    line *-> line
+    localite => state
+    codePostal => postalCode
+    pays => country
+}
+
+map "**Usager : TDDUIPatient**" as Usager #80b1d3 {
+    paysNationalite => <&plus> nationality
+    communeDeces/departementDeces/paysDeces => <&plus> deathPlace
+    communeNaissance/departementNaissance/paysNaissance => <&plus> birthPlace
+    situationFamiliale => <&plus> TDDUIHouseholdSituation.extension:familySituation
+    compositionFoyer => <&plus> TDDUIHouseholdSituation.extension:householdComposition
+    descriptionCompositionFoyer => <&plus> TDDUIHouseholdSituation.extension:householdCompositionDescription
+    ordreNaissanceEtatCivil => <&plus> TDDUIBirthOrder
+    commentaire => <&plus> TDDUIComment
     numSecuriteSociale => <&layers> identifier:NSS
-    identifiantLocalUsagerESSMS => <&layers> identifier:PI
+    identifiantUsagerESSMS => <&layers> identifier:PI
     numeroIndividuInitial => <&layers> identifier:InitialNumberMDPH
     sexe => gender
-    <&layers> name:usualName *--> nameusualName
-    <&layers> name:officialName *-> nameofficialName
     dateNaissance => birthDate
+    dateDeces => <&layers> deceased[x]:deceasedDateTime
+    photo => photo
+    PermisConduire => <&layers> identifier:driverLicense
+    <&layers> name:usualName *--> nameusualName
+    <&layers> name:officialName *--> nameofficialName
+    Telecommunication => telecom
+    Adresse => address
+    langueParlee => communication.language
 }
 
-Usager::dateNaissance --> dateNaissance
+map "**CauseMortalite : TDDUIObservationCauseMortalite**" as CauseMortalite #fb8072 {
+    causeMortalite => <&layers> value[x]:valueCodeableConcept
+}
+
+map "**MobiliteUsager : TDDUIObservationMobiliteUsager**" as MobiliteUsager #fb8072 {
+    type => value[x]
+    observationAmenagement => value[x]
+}
+
+Usager -u-> CauseMortalite
+Usager -u-> MobiliteUsager
+
+
+Usager::PermisConduire -l-> PermisConduire
+Usager::Telecommunication -d-> Telecommunication
+Usager::Adresse -d-> Adresse
 
 @enduml

@@ -1,7 +1,8 @@
 Instance: tddui-encounter-evenement-example
 InstanceOf: TDDUIEncounterEvenement
-Usage: #example
+Title: "TDDUI Encounter Evenement Example"
 Description: "Exemple d'un évènement"
+Usage: #example
 
 * identifier.system = "https://identifiant-medicosocial-evenement.esante.gouv.fr"
 * identifier.value = "3480787529/147720425367411-EVN-12548"
@@ -24,7 +25,7 @@ Description: "Exemple d'un évènement"
 
 * serviceProvider = Reference(tddui-organization-example)
 
-* participant[professionnel].individual = Reference(tddui-practitioner-example)
+* participant.individual = Reference(tddui-practitioner-example)
 
 * partOf = Reference(tddui-encounter-sejour-example)
 
@@ -43,3 +44,4 @@ Description: "Exemple d'un évènement"
 * extension[TDDUIComment].valueString = "Cet évènement a débuté plus tard l’usager était sous la douche à l’heure du début du rendez-vous."
 * extension[TDDUIEventLabel].valueString = "Visite à domicile pour soins infirmier."
 * extension[TDDUIEventReason].valueString = "Suivi post-opératoire suite à intervention chirurgicale de la hanche."
+* extension[TDDUIPatientValidation].valueBoolean = true

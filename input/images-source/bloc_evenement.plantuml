@@ -8,7 +8,11 @@ class TransportProfessionnel #LightGray
 
 class Evaluation #LightYellow
 
-class Professionnel #LightGray 
+class Professionnel #LightYellow
+
+class EntiteJuridique #LightYellow
+
+class StructureEnCharge #LightGray
 
 class EntiteJuridique #LightGray 
 
@@ -43,7 +47,6 @@ class Evenement #LightGray {
     compteRenduEvenement : Texte [0..1]
     pieceJointeEvenement : ObjetBinaire [0..*]
     lieuEvenement : Lieu [0..1]
-    structureEnCharge : EntiteJuridique [0..1]
     dateDebutEvenement : DateHeure [1..1]
     dateFinEvenement : DateHeure [1..1]
     evenementHorsPrestation : Indicateur [0..1]
@@ -53,6 +56,7 @@ class Evenement #LightGray {
     typeRessourceUtilisee : Code [0..*]
     detailTypeRessourceUtilisee : Code [0..*]
     dateModificationEvenement : DateHeure [0..1]
+    validationUsage : Indicateur [0..1]
 }
 
 class Participant #LightGray {
@@ -62,16 +66,26 @@ class Participant #LightGray {
     participantInterne : Indicateur [0..1]
 }
 
-Usager "1" -- "0..*" Evenement
-Participant "0..*" -- "0..*" Evenement
-Professionnel "0..1" -- "0..*" Participant
-EntiteJuridique "0..1" -- "0..*" Participant
-Transport <|-- TransportProfessionnel
-Transport <|-- TransportUsager
-TransportUsager "0..*" -- "1" Evenement
-TransportProfessionnel "0..*" -- "1" Professionnel
-Evenement "0..1" -- "0..1" Evaluation
-Evenement "1" -- "0..*" Statut
 
+Transport <|- TransportUsager
+
+Transport <|-- TransportProfessionnel
+
+EntiteJuridique <|-- StructureEnCharge
+
+Evenement "*" -- "1" Usager
+Participant "*" -- "1..*" Evenement
+Professionnel "0..1" -- "*" Participant
+
+
+TransportUsager "*" -- "1" Evenement
+
+TransportProfessionnel "0..1" -- "1" Professionnel
+
+Evenement "0..1" -- "0..1" Evaluation
+Evenement "1" -- "*" Statut
+
+StructureEnCharge "0..1" -- "*" Participant
+StructureEnCharge "0..1" -- "*" Professionnel
 
 @enduml

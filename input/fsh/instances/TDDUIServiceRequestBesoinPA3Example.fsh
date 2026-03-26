@@ -1,7 +1,8 @@
 Instance: tddui-pp-pa-servicerequest-besoin-3-example
 InstanceOf: TDDUIServiceRequestBesoin
-Usage: #example
+Title: "TDDUI PP PA ServiceRequest Besoin 3 Example"
 Description: "Exemple d'un besoin de l'usager dans le cadre du projet personnalisé PA." 
+Usage: #example
 
 * identifier.value = "3480787529/123456789-BESO-1236"
 * identifier.system = "https://identifiant-medicosocial-besoin.esante.gouv.fr"

@@ -22,16 +22,16 @@ class Sejour #Thistle {
     numeroDossierAdministratifSejour : Identifiant [0..1]
     ESSMSAccueil : EntiteJuridique [1..1]
     numeroDossierESSMSProvenance : Identifiant [0..1]
-    ESSMSProvenance : EntiteJuridique [1..1]
+    ESSMSProvenance : EntiteJuridique [0..1]
     dateEntreeESSMSProvenance : DateHeure [0..1]
     dateAdmission : DateHeure [0..1]
     dateEntreePrevisionnelle : DateHeure [0..1]
     dateEntree : DateHeure [0..1]
-    provenance : Code [0..1]
+    modaliteEntree : Code [0..1]
     libelleModeEntree : Texte [0..1]
     dateSortiePrevisionnelle : DateHeure [0..1]
     dateSortie : DateHeure [0..1]
-    motifSortie : Code [0..1]
+    modaliteSortie : Code [0..1]
     libelleModeSortie : Texte [0..1]
     origineDemande : Texte [0..1]
     modaliteAccueil : Code [0..1]
@@ -67,8 +67,8 @@ DroitPrestation "1" -- "*" Sejour
 Sejour "1" -- "0..1" Inventaire
 Sejour "1" - "*" Solde
 Sejour "*" -- "*" Contrat
-Usager "1" - "0..*" Sejour
-Evenement "0..*" -- "0..1" Sejour
-Usager "1" -- "0..*" Evenement
+Usager "1" - "*" Sejour
+Evenement "*" -- "0..1" Sejour
+Usager "1" -- "*" Evenement
 
 @enduml

@@ -8,11 +8,12 @@ publisher:
   name: ANS
   url: https://esante.gouv.fr
 status: active
-version: 2.2.0-ballot # shall conforms to Semantic Versioning https://fr.wiktionary.org/wiki/SemVer
+version: 2.3.0 # shall conforms to Semantic Versioning https://fr.wiktionary.org/wiki/SemVer
 fhirVersion: 4.0.1
 copyrightYear: 2023+
-releaseLabel: public-comment
-jurisdiction: urn:iso:std:iso:3166#FR "FRANCE"
+releaseLabel: trial-implementation
+
+jurisdiction: urn:iso:std:iso:3166#FR "France"
 
 dependencies:
     hl7.fhir.fr.core: 2.1.0
@@ -20,10 +21,10 @@ dependencies:
     hl7.fhir.extensions.r5: 4.0.1
     hl7.fhir.uv.extensions: 5.2.0	# NR - Ligne à supprimer lors de la prochaine release, rajoutée à cause d'un bug.
     ihe.iti.mhd: 4.2.0
+    ans.fhir.fr.annuaire: 1.1.0
 parameters:
     shownav: 'true'
     path-expansion-params: '../../expansion-params.json' # for using French SNOMED CT Extension
-    pin-canonicals: 'pin-all'
 
 pages:
     index.md:
@@ -60,6 +61,8 @@ pages:
             title: Sécurité
         downloads.md:
             title: Téléchargements et usages
+    problematiques_connues.md:
+        title: Problématiques connues
     changes.md:
         title: Historique des changements
 
@@ -82,4 +85,5 @@ menu:
         Professions du médico-social : annexes_codes_professions_roles_modes_exercices.html
         Sécurité: securite.html
         Téléchargements et usage: downloads.html
+    Problématiques connues: problematiques_connues.html
     Historique: changes.html

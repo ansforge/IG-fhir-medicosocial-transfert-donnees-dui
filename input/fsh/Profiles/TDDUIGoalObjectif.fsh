@@ -42,18 +42,18 @@ Description: "Profil de la ressource Goal permettant de représenter les résult
     TDDUIDiscriminator named TDDUIDiscriminator 1..3
 * note[titreObjectif] ^short = "Titre de l'objectif"
 * note[titreObjectif].extension[TDDUIDiscriminator] 1..1
-* note[titreObjectif].extension[TDDUIDiscriminator].valueCodeableConcept from TDDUIGoalObjectifNoteVS (required)
-* note[titreObjectif].extension[TDDUIDiscriminator].valueCodeableConcept = TDDUIDiscriminatorCS#titreObjectif
+* note[titreObjectif].extension[TDDUIDiscriminator].valueCodeableConcept from TDDUIGoalObjectifNote (required)
+* note[titreObjectif].extension[TDDUIDiscriminator].valueCodeableConcept = TDDUIDiscriminator#titreObjectif
 
 * note[avisUsagerObjectif] ^short = "Avis de l'usager sur l'objectif"
 * note[avisUsagerObjectif].extension[TDDUIDiscriminator] 1..1
-* note[avisUsagerObjectif].extension[TDDUIDiscriminator].valueCodeableConcept from TDDUIGoalObjectifNoteVS (required)
-* note[avisUsagerObjectif].extension[TDDUIDiscriminator].valueCodeableConcept = TDDUIDiscriminatorCS#avisUsagerObjectif
+* note[avisUsagerObjectif].extension[TDDUIDiscriminator].valueCodeableConcept from TDDUIGoalObjectifNote (required)
+* note[avisUsagerObjectif].extension[TDDUIDiscriminator].valueCodeableConcept = TDDUIDiscriminator#avisUsagerObjectif
 
 * note[strategieMiseEnOeuvreObjectif] ^short = "Stratégie de mise en œuvre de l'objectif"
 * note[strategieMiseEnOeuvreObjectif].extension[TDDUIDiscriminator] 1..1
-* note[strategieMiseEnOeuvreObjectif].extension[TDDUIDiscriminator].valueCodeableConcept from TDDUIGoalObjectifNoteVS (required)
-* note[strategieMiseEnOeuvreObjectif].extension[TDDUIDiscriminator].valueCodeableConcept = TDDUIDiscriminatorCS#strategieMiseEnOeuvreObjectif
+* note[strategieMiseEnOeuvreObjectif].extension[TDDUIDiscriminator].valueCodeableConcept from TDDUIGoalObjectifNote (required)
+* note[strategieMiseEnOeuvreObjectif].extension[TDDUIDiscriminator].valueCodeableConcept = TDDUIDiscriminator#strategieMiseEnOeuvreObjectif
 
 Mapping:  ConceptMetier_TDDUIGoalObjectif
 Source:   TDDUIGoalObjectif
