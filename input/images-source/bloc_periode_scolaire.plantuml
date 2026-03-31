@@ -4,6 +4,9 @@ hide empty methods
 
 class Usager #LightPink
 
+
+class Statut #LightYellow 
+
 class PersonnePhysique #LightYellow
 
 class EntiteGeographique #LightYellow
@@ -20,6 +23,20 @@ class PeriodeScolaire #PeachPuff {
     commentaireAnneeScolaire : Texte [0..1]
 }
 
+
+class ProjetVie #PeachPuff {
+    idProjetVie : Identifiant [1..1]
+    titreProjetVie : Texte [1..1]
+    dateDebutProjetVie : Date [0..1]
+    dateFinProjetVie : Date [0..1]
+    aspirationSouhait : Texte [0..*]
+    }
+
+Usager "1" -- "*" PeriodeScolaire
+Usager "1" - "*" ProjetVie
+
+ProjetVie "1" - "1" Statut
+
 class ReferentScolaire #PeachPuff
 class Ecole #PeachPuff
 
@@ -28,5 +45,6 @@ EntiteGeographique <|-- Ecole
 Usager "1" -- "*" PeriodeScolaire
 Ecole "0..1" -- "1..*" PeriodeScolaire
 PeriodeScolaire "1..*" -- "1" ReferentScolaire
+
 
 @enduml

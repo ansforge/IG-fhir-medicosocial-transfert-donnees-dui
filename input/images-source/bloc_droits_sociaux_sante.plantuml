@@ -4,6 +4,9 @@ hide empty methods
 
 class Usager #LightPink
 
+class EntiteJuridique #LightGray
+class StructureAccueil #LightYellow
+
 class AssuranceMaladieComplementaire #LightYellow {
     numeroContrat : Identifiant [0..1]
     ouvrantDroit : Identifiant [0..1]
@@ -32,14 +35,28 @@ class AssuranceMaladieObligatoire #LightYellow {
     droitPUMa : Indicateur [0..1]
 }
 
+class DemandeOrientation #LightYellow {
+    idDemandeOrientation : Identifiant [1..1]
+    typeDemande : Code [0..1] 
+    natureDemande : Code [0..1] 
+    demandeOrientation : ObjetBinaire [0..*]
+    depotPoste : ObjetBinaire [0..1]
+    dateEnvoiDemande : Date [0..1]
+    reponseOrientation : ObjetBinaire [0..1]
+    dateReponseOrientation : Date [0..1]
+    pieceComplementaire : ObjetBinaire [0..*]
+}
+
 class Decision #LightYellow {
     idDecision : Identifiant [1..1]
     numeroEnregistrement : Identifiant [0..1]
+    typeDecision : Code [1..1]
+    dateEffetCloture : Date [0..1]
     idDecisionMAJ : Identifiant [0..*]
-    idNat_Decision : Identifiant [0..*]
+    idNat_Decision : Identifiant [0..1]
     dateDecision : Date [0..1]
-    typeDecision : Code [0..1]
     motivation : Code [0..*]
+    motivationLocale : Texte [0..*]
     commentaire : Texte [0..1]
 }
 
@@ -47,11 +64,13 @@ class DroitPrestation #LightYellow {
     idDroitPrestation : Identifiant [1..1]
     contactOrganisme : ContactPersonneMorale [0..*]
     numeroAllocataire : Identifiant [0..1]
+    categorieDroitPrestation : Code [1..1]
     typeDroitPrestation : Code [1..1]
-    natureDroit : Code [1..1]
+    natureDroitPrestation : Code [1..1]
     dateOuverture : Date [1..1]
     dateEcheance : Date [1..1]
     existencePAG : Indicateur [1..1]
+    motifFinPAG : Code [0..1]
     creton : Indicateur [0..1]
     taux : Mesure [0..1] 
     typeCompensation : Code [0..1]
@@ -59,11 +78,13 @@ class DroitPrestation #LightYellow {
 }
 
 class DetailPrestation #LightYellow {
+    temporaliteAccueil : Code [0..1]
+    precisionOrientation : ConceptCode [0..1]
+    accueilSequentiel : Indicateur [0..1]
+    formation : Texte [0..1]
     montantAttribue : Montant [0..1]
     frequence : Mesure [0..1]
-    temporaliteAccueil : Code [0..1]
-    qualification : Code [1..1]
-    precisionOrientation : Code [0..1]
+    qualificationOrientation : Code [1..1]
 }
 
 class PriseCharge #LightYellow {
@@ -71,17 +92,24 @@ class PriseCharge #LightYellow {
 }
 
 class Quantification #LightYellow {
-    quantificationNombre : Texte [0..1]
-    quantificationUnite : Texte [0..1]
-    quantificationPeriodicite : Code [0..1]
+    valeurPriseCharge : Numerique [0..1]
+    UnitePriseCharge : Mesure [0..1]
+    frequencePriseCharge : Code [0..1]
 }
 
-Usager "1" -- "*"  AssuranceMaladieComplementaire
-Usager "1" - "1" AssuranceMaladieObligatoire
 Decision "*" -- "1" Usager
-DroitPrestation  "0..1" - "1" Decision
-DroitPrestation "1" -- "0..1" DetailPrestation
+DemandeOrientation "*" - "1" Usager
+
+DemandeOrientation "1" -- "*" Decision
+
+Decision "1" -- "0..1" DroitPrestation
+
+DroitPrestation "1" -- "1" DetailPrestation
+EntiteJuridique <|-- StructureAccueil
+DetailPrestation "1" - "*" StructureAccueil
 DetailPrestation "1" -- "*" PriseCharge
 PriseCharge "1" -- "0..1" Quantification
 
+Usager "1" -- "0..1"  AssuranceMaladieComplementaire
+Usager "1" - "1" AssuranceMaladieObligatoire
 @enduml
