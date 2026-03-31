@@ -1,7 +1,7 @@
 TDDUI : Validation Results
 =========================================
 
-err = 204, warn = 254, info = 130
+err = 204, warn = 255, info = 130
 $--
 Generated $--. FHIR version $-- for ans.fhir.fr.tddui#$-- (canonical = https://interop.esante.gouv.fr/ig/fhir/tddui)
  Build Errors : 2 / 6 / 0
@@ -36,7 +36,7 @@ Generated $--. FHIR version $-- for ans.fhir.fr.tddui#$-- (canonical = https://i
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Goal-tddui-pp-pa-goal-objectif-1-example : 0 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Goal-tddui-pp-pa-goal-objectif-2-example : 0 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Goal-tddui-pp-pa-goal-objectif-3-example : 0 / 1 / 1
- /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.tddui : 2 / 2 / 1
+ /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.tddui : 2 / 3 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Location-tddui-event-location-example : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Observation-tddui-observation-cause-mortalite-example : 0 / 2 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Observation-tddui-observation-mobilite-usager-example : 0 / 2 / 1
@@ -292,6 +292,7 @@ WARNING: Goal/tddui-pp-pa-goal-objectif-3-example: Goal.identifier[0].system: No
 == fsh-generated/resources/ImplementationGuide-ans.fhir.fr.tddui.json ==
 ERROR: ImplementationGuide/ans.fhir.fr.tddui: ImplementationGuide.jurisdiction[0].coding[0].display: Wrong Display Name 'France' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr')
 WARNING: ImplementationGuide/ans.fhir.fr.tddui: ImplementationGuide.definition.resource[11].description: value should not start or finish with whitespace '\n- **Séjour** : commentaire relatif au séjour.\n- **Événement** : commentaires sur le déroulé de l’évènement.\n- **Évaluation** : commentaire libre sur le contenu ou le résultat de l’évaluation.\n- **Champ évalué** : commentaire spécifique à un item ou sous-item évalué.'
+WARNING: ImplementationGuide/ans.fhir.fr.tddui: ImplementationGuide.dependsOn[1]: The ImplementationGuide uses package hl7.fhir.fr.core#2.1.0 released on 2024-09-04, but the most recent appropriate version is 2.2.0. This reference is getting old and the more recent version should be considered
 ERROR: ImplementationGuide/ans.fhir.fr.tddui: ImplementationGuide.dependsOn[3]: The ImplementationGuide is based on FHIR version 4.0.1 but package hl7.fhir.uv.extensions#5.2.0 is based on FHIR version 5.0.0. Use the package hl7.fhir.uv.extensions.r4 instead
 WARNING: ImplementationGuide/ans.fhir.fr.tddui: ImplementationGuide.dependsOn[4]: The ImplementationGuide uses package ihe.iti.mhd#4.2.0 released on 2022-12-07, but the most recent appropriate version is 5.0.0. This reference is getting old and the more recent version should be considered
 == fsh-generated/resources/Location-tddui-event-location-example.json ==

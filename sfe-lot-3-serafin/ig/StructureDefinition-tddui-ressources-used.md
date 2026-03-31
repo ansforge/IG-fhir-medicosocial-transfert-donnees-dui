@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used | *Version*:2.3.0 |
-| Active as of 2026-03-26 | *Computable Name*:TDDUIRessourcesUsed |
+| Active as of 2026-03-31 | *Computable Name*:TDDUIRessourcesUsed |
 
 Ressources utilisées lors de l’évènement (ex : chambre, matériel médical, véhicule).
 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-ressources-use
   "name" : "TDDUIRessourcesUsed",
   "title" : "TDDUI Ressources Used",
   "status" : "active",
-  "date" : "2026-03-26T15:00:26+00:00",
+  "date" : "2026-03-31T13:26:33+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-outside-service | *Version*:2.3.0 |
-| Active as of 2026-03-26 | *Computable Name*:TDDUIEventOutsideService |
+| Active as of 2026-03-31 | *Computable Name*:TDDUIEventOutsideService |
 
 Evénement hors prestation prévue dans le projet personnalisé de l’usager.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-outside-servic
   "name" : "TDDUIEventOutsideService",
   "title" : "TDDUI Event Outside Service",
   "status" : "active",
-  "date" : "2026-03-26T15:00:26+00:00",
+  "date" : "2026-03-31T13:26:33+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

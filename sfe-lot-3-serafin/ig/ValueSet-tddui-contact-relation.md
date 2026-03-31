@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-contact-relation | *Version*:2.3.0 |
-| Active as of 2026-03-26 | *Computable Name*:TDDUIContactRelation |
+| Active as of 2026-03-31 | *Computable Name*:TDDUIContactRelation |
 
  
 ValueSet définissant les relations. 
@@ -17,7 +17,6 @@ ValueSet définissant les relations.
  **References** 
 
 * Inclus dans [TDDUIRelatedPersonRelashionship](ValueSet-tddui-contact-related-person-relashionship.md)
-* [TDDUI RelatedPerson Contact](StructureDefinition-tddui-related-person-contact.md)
 * [TDDUI RelatedPerson Contact](StructureDefinition-tddui-related-person-contact.md)
 
 ### Définition logique (CLD)
@@ -56,7 +55,7 @@ ValueSet définissant les relations.
   "title" : "TDDUI Contact Relation",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-26T15:00:26+00:00",
+  "date" : "2026-03-31T13:26:33+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-contact-protection-juridique | *Version*:2.3.0 |
-| Active as of 2026-03-26 | *Computable Name*:TDDUIContactProtectionJuridique |
+| Active as of 2026-03-31 | *Computable Name*:TDDUIContactProtectionJuridique |
 
  
 ValueSet définissant la protection juridique. 
@@ -17,7 +17,6 @@ ValueSet définissant la protection juridique.
  **References** 
 
 * Inclus dans [TDDUIRelatedPersonRelashionship](ValueSet-tddui-contact-related-person-relashionship.md)
-* [TDDUI RelatedPerson Contact](StructureDefinition-tddui-related-person-contact.md)
 * [TDDUI RelatedPerson Contact](StructureDefinition-tddui-related-person-contact.md)
 
 ### Définition logique (CLD)
@@ -56,7 +55,7 @@ ValueSet définissant la protection juridique.
   "title" : "TDDUI Contact Protection Juridique",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-26T15:00:26+00:00",
+  "date" : "2026-03-31T13:26:33+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

@@ -9,14 +9,13 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-goal-attente-note | *Version*:2.3.0 |
-| Active as of 2026-03-26 | *Computable Name*:TDDUIGoalAttenteNote |
+| Active as of 2026-03-31 | *Computable Name*:TDDUIGoalAttenteNote |
 
  
 ValueSet définissant les types de notes pour l'élément Goal.note. 
 
  **References** 
 
-* [TDDUI Goal Attente](StructureDefinition-tddui-goal-attente.md)
 * [TDDUI Goal Attente](StructureDefinition-tddui-goal-attente.md)
 
 ### Définition logique (CLD)
@@ -55,7 +54,7 @@ ValueSet définissant les types de notes pour l'élément Goal.note.
   "title" : "TDDUI Goal Attente Note",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-26T15:00:26+00:00",
+  "date" : "2026-03-31T13:26:33+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

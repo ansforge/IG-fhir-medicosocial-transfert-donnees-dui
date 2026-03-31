@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-present | *Version*:2.3.0 |
-| Active as of 2026-03-26 | *Computable Name*:TDDUIPatientPresent |
+| Active as of 2026-03-31 | *Computable Name*:TDDUIPatientPresent |
 
 Evènement nécessitant ou non la présence physique de l’usager.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-patient-presen
   "name" : "TDDUIPatientPresent",
   "title" : "TDDUI Patient Present",
   "status" : "active",
-  "date" : "2026-03-26T15:00:26+00:00",
+  "date" : "2026-03-31T13:26:33+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

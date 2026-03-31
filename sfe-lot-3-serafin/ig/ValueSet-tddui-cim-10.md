@@ -9,14 +9,13 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-cim-10 | *Version*:2.3.0 |
-| Active as of 2026-03-26 | *Computable Name*:TDDUICIM10 |
+| Active as of 2026-03-31 | *Computable Name*:TDDUICIM10 |
 
  
 ValueSet incluant les codes de la terminologie CIM-1O. 
 
  **References** 
 
-* [TDDUI Observation Cause Mortalite](StructureDefinition-tddui-observation-cause-mortalite.md)
 * [TDDUI Observation Cause Mortalite](StructureDefinition-tddui-observation-cause-mortalite.md)
 
 ### Définition logique (CLD)
@@ -55,7 +54,7 @@ ValueSet incluant les codes de la terminologie CIM-1O.
   "title" : "TDDUI CIM10",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-26T15:00:26+00:00",
+  "date" : "2026-03-31T13:26:33+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

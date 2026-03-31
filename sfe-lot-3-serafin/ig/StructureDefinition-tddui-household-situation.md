@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-household-situation | *Version*:2.3.0 |
-| Active as of 2026-03-26 | *Computable Name*:TDDUIHouseholdSituation |
+| Active as of 2026-03-31 | *Computable Name*:TDDUIHouseholdSituation |
 
 Extension complexe regroupant la situation familiale, la composition du foyer et sa description textuelle de l'usager.
 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-household-situ
   "name" : "TDDUIHouseholdSituation",
   "title" : "TDDUI Household Situation",
   "status" : "active",
-  "date" : "2026-03-26T15:00:26+00:00",
+  "date" : "2026-03-31T13:26:33+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

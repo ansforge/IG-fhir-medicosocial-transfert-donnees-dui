@@ -34,7 +34,7 @@ Pour ce cas d'usage les modalités d’envoi des données usager au SI-tiers son
 * Le DUI envoie au minimum une semaine d'historique par usager
 * Le DUI envoie au maximum cinq semaines d'historique par usager
 
-##### Cas d'usage SERAFIN
+#### Cas d'usage SERAFIN
 
 Ce cas d'usage permet d'ajouter au flux d'extraction les données du Projet personnalisé.
 

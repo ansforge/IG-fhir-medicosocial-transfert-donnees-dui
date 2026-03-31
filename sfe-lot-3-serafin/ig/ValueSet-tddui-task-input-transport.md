@@ -9,14 +9,13 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-task-input-transport | *Version*:2.3.0 |
-| Active as of 2026-03-26 | *Computable Name*:TDDUITaskInputTransport |
+| Active as of 2026-03-31 | *Computable Name*:TDDUITaskInputTransport |
 
  
 ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les transports dans le cadre du DUI. 
 
  **References** 
 
-* [TDDUI Task Transport](StructureDefinition-tddui-task-transport.md)
 * [TDDUI Task Transport](StructureDefinition-tddui-task-transport.md)
 
 ### Définition logique (CLD)
@@ -55,7 +54,7 @@ ValueSet pour la définition des éléments spécifiques des input dans la resso
   "title" : "TDDUI Task Input Transport",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-26T15:00:26+00:00",
+  "date" : "2026-03-31T13:26:33+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

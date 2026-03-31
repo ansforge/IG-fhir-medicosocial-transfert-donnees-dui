@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-observation-type | *Version*:2.3.0 |
-| Active as of 2026-03-26 | *Computable Name*:TDDUIObservationType |
+| Active as of 2026-03-31 | *Computable Name*:TDDUIObservationType |
 
  
 ValueSet pour les types d'Observation. 
@@ -17,10 +17,7 @@ ValueSet pour les types d'Observation.
  **References** 
 
 * [TDDUI Observation Cause Mortalite](StructureDefinition-tddui-observation-cause-mortalite.md)
-* [TDDUI Observation Cause Mortalite](StructureDefinition-tddui-observation-cause-mortalite.md)
 * [TDDUI Observation Mobilite Usager](StructureDefinition-tddui-observation-mobilite-usager.md)
-* [TDDUI Observation Mobilite Usager](StructureDefinition-tddui-observation-mobilite-usager.md)
-* [TDDUI Observation Periode Scolaire](StructureDefinition-tddui-observation-periode-scolaire.md)
 * [TDDUI Observation Periode Scolaire](StructureDefinition-tddui-observation-periode-scolaire.md)
 
 ### Définition logique (CLD)
@@ -59,7 +56,7 @@ ValueSet pour les types d'Observation.
   "title" : "TDDUI Observation Type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-26T15:00:26+00:00",
+  "date" : "2026-03-31T13:26:33+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

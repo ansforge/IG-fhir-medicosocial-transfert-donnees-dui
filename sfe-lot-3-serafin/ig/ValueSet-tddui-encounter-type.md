@@ -9,14 +9,13 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-type | *Version*:2.3.0 |
-| Active as of 2026-03-26 | *Computable Name*:TDDUIEncounterType |
+| Active as of 2026-03-31 | *Computable Name*:TDDUIEncounterType |
 
  
 ValueSet pour la définition des codes de type de séjour 
 
  **References** 
 
-* [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)
 * [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)
 
 ### Définition logique (CLD)
@@ -55,7 +54,7 @@ ValueSet pour la définition des codes de type de séjour
   "title" : "TDDUI Encounter Type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-26T15:00:26+00:00",
+  "date" : "2026-03-31T13:26:33+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

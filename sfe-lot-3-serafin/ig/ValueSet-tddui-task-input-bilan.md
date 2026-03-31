@@ -9,14 +9,13 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-task-input-bilan | *Version*:2.3.0 |
-| Active as of 2026-03-26 | *Computable Name*:TDDUITaskInputBilan |
+| Active as of 2026-03-31 | *Computable Name*:TDDUITaskInputBilan |
 
  
 ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour le bilan du projet personnalisé. 
 
  **References** 
 
-* [TDDUI Task Bilan](StructureDefinition-tddui-task-bilan.md)
 * [TDDUI Task Bilan](StructureDefinition-tddui-task-bilan.md)
 
 ### Définition logique (CLD)
@@ -55,7 +54,7 @@ ValueSet pour la définition des éléments spécifiques des input dans la resso
   "title" : "TDDUI Task Input Bilan",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-26T15:00:26+00:00",
+  "date" : "2026-03-31T13:26:33+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
