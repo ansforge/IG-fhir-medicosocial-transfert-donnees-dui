@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-care-plan-supporting-info | *Version*:2.3.0 |
-| Active as of 2026-03-17 | *Computable Name*:TDDUICarePlanSupportingInfo |
+| Active as of 2026-04-09 | *Computable Name*:TDDUICarePlanSupportingInfo |
 
  
 ValueSet définissant les types de notes pour l'élément CarePlan.supportingInfo. 
@@ -54,7 +54,7 @@ ValueSet définissant les types de notes pour l'élément CarePlan.supportingInf
   "title" : "TDDUI CarePlan supportingInfo",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-17T17:41:27+00:00",
+  "date" : "2026-04-09T09:33:58+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

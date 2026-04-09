@@ -212,91 +212,149 @@ Assurance maladie complémentaire de l’usager.
 * Nom: typeFinDroit : [0..1] Code
   * Description: Raison de la fin des droits à l’assurance maladie complémentaire.Nomenclature(s) associée(s) : à définir
 
+##### Classe DemandeOrientation
+
+La demande de compensation est adressée à la CDAPH. Elle contient l'ensemble des prestations demandées par l'usager. Dans le cadre du volet TDDUI cette demande de compensation correspond plus spécifiquement à une demande d'orientation soit vers un ESSMS ou un maintien en ESSMS au titre de l'amendement Creton.
+
+* Nom: idDemandeOrientation : [1..1] Identifiant
+  * Description: identifiant de la demande de compensation de l'usager créé par la MDPH à l'origine de la création du dossier de demande. Cet identifiant est obtenu par la concaténation de l'identifiant local attribué par la MDPH ayant créé le dossier de demande (idDemandeOrientationMDPHInitial) et du numéro cette MDPH (idMDPHInitial) : idDemandeOrientationMDPHInitial/idMDPHInitial
+* Nom: typeDemande : [0..1] Code
+  * Description: Type de la demande d'orientation.Jeu(x) de valeur(s) associé(s) : encours analyse NOS
+* Nom: natureDemande : [0..1] Code
+  * Description: Nature de la demande d'orientation. A renseigner si le type est valorisé.Jeu(x) de valeur(s) associé(s) : encours analyse NOS
+* Nom: demandeOrientation : [0..*] ObjetBinaire
+  * Description: Pièce jointe composant la demande d'orientation.
+* Nom: depotPoste : [0..1] ObjetBinaire
+  * Description: Preuve du dépôt de la poste.
+* Nom: dateEnvoiDemande : [0..1] Date
+  * Description: Date d'envoi de la demande d'orientation.
+* Nom: reponseOrientation : [0..1] ObjetBinaire
+  * Description: Réponse de la CDAPH à la demande d'orientation.
+* Nom: dateReponseOrientation : [0..1] Date
+  * Description: Date de réception de la réponse d'orientation.
+* Nom: pieceComplementaire : [0..*] ObjetBinaire
+  * Description: Pièce(s) complémentaire(s) à la demande d'orientation.
+
 ##### Classe Decision
 
-La décision est une réponse à une demande de l'individu ou de son représentant légal. Elle est prise par la CDAPH.
+La décision est une réponse à une demande de compensation l'usager ou de son représentant légal. C'est un acte par lequel la CDAPH prononce l’orientation de la personne en situation de handicap vers une catégorie ou un établissement ou un service nommément désigné. La décision d’orientation permet à la personne en situation de handicap de faire valoir ses droits auprès de l’établissement ou du service concerné
 
 * Nom: idDecision : [1..1] Identifiant
-  * Description: Numéro de la décision prise par la MDPH.
+  * Description: Cet identifiant est obtenu par la concaténation de l'identifiant local de la décision attribué par la MDPH à l’origine de la création du suivi de la décision (idDecisionMDPHInitial) et du numéro cette MDPH (idMDPHInitial) : idDecisionMDPHInitial/idMDPHInitial
 * Nom: numeroEnregistrement : [0..1] Identifiant
   * Description: Numéro d’enregistrement au conseil général si différent du numéro d’identification MDPH.
+* Nom: typeDecision : [1..1] Code
+  * Description: Caractérise le type de décision prise par la CDAPH en réponse à une demande de compensation d’un usager (individu ou représentant légal), à une demande de révision par un tiers ou à un recours administratif préalable obligatoire (RAPO) d’un usager.Jeu(x) de valeur(s) associé(s) : en cours création NOS
+* Nom: dateEffetCloture : [0..1] Date
+  * Description: Date d'effet de la décision de clôture est la date à laquelle un droit n'est plus valable consécutivement à une décision de la CDAPH de clôture de droit ou d'attribution d'un droit de nature révision. A ne pas confondre avec la date d'échéance du droit qui est fixée lors de la décision d'attribution et qui ne doit jamais être modifiée.Cet attribut est obligatoire pour les décisions de type "5" (Clôture de droit).
 * Nom: idDecisionMAJ : [0..*] Identifiant
-  * Description: Identifiants de la ou des décisions révisées ou renouvelées à l'origine du droit ou identifiant de la décision clôturée (concerne une seule décision) en cas de clôture de droit.
+  * Description: Identifiants de la ou des décisions révisées ou renouvelées à l'origine du droit ou identifiant de la décision clôturée (concerne une seule décision) en cas de clôture de droit.Ces identifiants sont obtenus par la concaténation des identifiants locaux de la ou des décisions révisées attribué par la MDPH à l’origine de la création du suivi de la décision (idDecisionMAJMDPHInitial) et du numéro cette MDPH (idMDPHInitial) : idDecisionMAJMDPHInitial/idMDPHInitial.Cet attribut est obligatoire si* typeDecision = '5' (Clôture de droit) 
+* typeDecision ='1' (Attribution) et DroitPrestation.natureDroit = '2' (Renouvellement) ou '3' (Révision) 
+Ne pas transmettre si typeDecision = '1' (Attribution) et DroitPrestation.natureDroit = '1' (Nouveau droit)
 * Nom: idNat_Decision : [0..1] Identifiant
-  * Description: Identifiant unique de la décision généré par ViaTrajectoire. Cet identifiant unique est créé par ViaTrajectoire lorsque la décision est enregistrée dans le SI-SdO.
+  * Description: Identifiant technique unique de la décision attribué par ViaTrajectoire. Cet identifiant créé par ViaTrajectoire lorsque la décision est enregistrée dans le SI du Suivi des Orientations (SdO) correspondant à ViaTrajectoire.
 * Nom: dateDecision : [0..1] Date
   * Description: Date à laquelle se réunit la CDAPH pour prendre la décision.
-* Nom: typeDecision : [0..1] Code
-  * Description: Type de décision.Nomenclature(s) associée(s) : à définir
 * Nom: motivation : [0..*] Code
-  * Description: Considération(s) de droit ou de fait qui constituent le fondement de la décision.Nomenclature(s) associée(s) : à définir
+  * Description: Considération(s) de droit ou de fait qui constituent le fondement de la décision.Jeu(x) de valeur(s) associé(s) : en cours création NOS
+* Nom: motivationLocale : [0..*] Texte
+  * Description: Champ libre permettant de renseigner une motivation locale. Ce champ apparaît (et devient obligatoire) uniquement si le code "9999 - Autre" est renseigné pour l'élément "motivation".
 * Nom: commentaire : [0..1] Texte
   * Description: Commentaire relatif à la décision.
 
 ##### Classe DroitPrestation
 
-Ensemble des droits et prestations prévus par le Code de l'Action Sociale et des Familles, le Code de l'Education, le Code de la Sécurité Sociale et le Code de la Route auxquels la décision de la CDAPH donne accès.
+Ensemble des dispositifs prévus par le Code de l'Action Sociale et des Familles, le Code de l'Education, le Code de la Sécurité Sociale et le Code de la Route auxquels la décision de la CDAPH peut donner accès.
 
-* Nom: idDroitPrestation : [1..1] Identifiant
-  * Description: Identifiant du droit ou de la prestation.
-* Nom: contactOrganisme : [0..1] ContactPersonneMorale
-  * Description: Contact de l’organisme responsable du droit ou de la prestation.
 * Nom: numeroAllocataire : [0..1] Identifiant
   * Description: Numéro d’allocataire pour le droit ou la prestation.
-* Nom: typeDroitPrestation : [0..1] Code
-  * Description: Type de droit et prestation caractérisant la décision d'orientation.Nomenclature(s) associée(s) : à définir
-* Nom: natureDroit : [0..1] Code
-  * Description: Nature du droit s’appliquant à tous les droits ou prestations ouverts par la CDAPH. Elle permet de gérer, le cas échéant, le lien entre la date d’ouverture du droit et la date de fin d’un droit précédent. Elle est déterminée par l’équipe pluridisciplinaire ou par la CDAPH.Nomenclature(s) associée(s) : à définir
-* Nom: dateOuverture : [0..1] Date
+* Nom: categorieDroitPrestation : [1..1] Code
+  * Description: Catégorie de droit et prestation caractérisant la décision d'orientation.Jeu(x) de valeur(s) associé(s) : en cours d'analyse NOS
+* Nom: typeDroitPrestation : [1..1] Code
+  * Description: Type de droit et prestation caractérisant la décision d'orientation.Jeu(x) de valeur(s) associé(s) : en cours d'analyse NOSLa règle métier entre les catégories et les types de droit et prestation est spécifiée dans la table d'association ASS en cours de création NOS
+* Nom: natureDroitPrestation : [1..1] Code
+  * Description: Nature du droit s’appliquant à tous les droits ou prestations ouverts par la CDAPH. Elle permet de gérer, le cas échéant, le lien entre la date d’ouverture du droit et la date de fin d’un droit précédent. Elle est déterminée par l’équipe pluridisciplinaire ou par la CDAPH.Jeu(x) de valeur(s) associé(s) : en cours d'analyse NOS
+* Nom: dateOuverture : [1..1] Date
   * Description: La date d'ouverture de droit est la date à laquelle le droit devient effectif.Sauf disposition spécifique, la date d’ouverture des droits est la date de la décision de la CDAPH sur le fondement du principe de non-rétroactivité des décisions.
-* Nom: dateEcheance : [0..1] Date
+* Nom: dateEcheance : [1..1] Date
   * Description: La date d'échéance de droit est la date à laquelle le droit ou la prestation ouvert prend fin. L'équipe pluridisciplinaire peut moduler les dates selon les besoins de la personne, tout en restant dans le minimum et dans le maximum prévu par la loi pour chacune des prestations.
-* Nom: existencePAG : [0..1] Indicateur
+* Nom: existencePAG : [1..1] Indicateur
   * Description: Indicateur de l'existence d'un Plan d’Accompagnement Global (PAG).1 = si la décision est associée à un PAG au statut "élaboré" ou "validé" ;0 = pour tous les autres cas (la décision n'est pas associée à un PAG ou est associée à un PAG ayant un statut différent de "élaboré" ou "validé").
+* Nom: motifFinPAG : [0..1] Code
+  * Description: Lorsque le plan d'accompagnement global (PAG) arrive à échéance ou si le coordonnateur de parcours l'estime nécessaire, un bilan est élaboré et la phase d'actualisation est lancée afin de déterminer s'il faut prolonger ce PAG, le modifier ou y mettre fin. La MDPH, les partenaires et l'usager peuvent définir ensemble que le PAG n'est plus nécessaire et donc y mettre fin. Le consentement de la personne ou de son représentant légal est recueilli et l'information sur la fin du PAG transmise à l'ensemble des parties-prenantes.Le motif est obligatoire si existencePAG passe de "1" à "0". Le fait de mettre fin au PAG n'a pas d'impact sur les droits en cours (même ceux ouverts dans le cadre du PAG). Ces droits demeurent valables jusqu'à leur date d'échéance.Jeu(x) de valeur(s) associé(s) : en cours d'analyse NOS
 * Nom: creton : [0..1] Indicateur
   * Description: Amendement Creton. Il s’agit d’un dispositif législatif permettant le maintien temporaire de jeunes adultes de plus de 20 ans en établissement pour enfants dans l’attente d’une place dans un établissement pour adultes.Obligatoire pour les décisions orientations ESSMS enfant, non prévu pour les autres orientations.0 = l'usager ne bénéficie pas de l'amendement Creton ;1 = l'usager bénéficie de l'amendement Creton.
 * Nom: taux : [0..1] Mesure
   * Description: Taux dans le cas d’une aide sociale.
 * Nom: typeCompensation : [0..1] Code
-  * Description: Type de compensation dans le cas d’une aide sociale.Nomenclature(s) associée(s) : à définir
+  * Description: Type de compensation dans le cas d’une aide sociale.Jeu(x) de valeur(s) associé(s) : en cours d'analyse NOS
 * Nom: commentaire : [0..1] Texte
   * Description: Commentaire relatif au droit ou à la prestation.
 
 ##### Classe DetailPrestation
 
-Détails de la prestation.
+Détails de la prestation pour préciser l'orientation.
 
 * Nom: temporaliteAccueil : [0..1] Code
-  * Description: Fréquence d'accueil lors d'une prise en charge en ESSMS.Nomenclature(s) associée(s) :[JDV_J30-TemporaliteAccueil-ROR](https://mos.esante.gouv.fr/NOS/JDV_J30-TemporaliteAccueil-ROR/FHIR/JDV-J30-TemporaliteAccueil-ROR)
-* Nom: precisionOrientation : [0..1] Code
-  * Description: Précision de l'orientation à renseigner en fonction du type de droit.Nomenclature(s) associée(s) : à définir
+  * Description: Fréquence d'accueil lors d'une prise en charge en ESSMS.La temporalité d’accueil est transmise pour tous les droits pour lesquels elle est obligatoire.Pour les catégories de droit et prestation suivantes :* Orientation ESMS Enfants
+* Orientation ESMS Adultes
+Pour les types de droit et prestation suivants :* Orientation en Unité d'enseignement
+* Orientation vers une Scolarisation en milieu ordinaire à temps partagé (UE et établissement scolaire)
+* Orientation vers une Unité d'enseignement et une scolarisation en ULIS à temps partagé
+* Orientation vers une unité d’enseignement et une scolarisation en enseignement adapté à temps partagé
+Jeu(x) de valeur(s) associé(s) :[JDV_J30-TemporaliteAccueil-ROR](https://mos.esante.gouv.fr/NOS/JDV_J30-TemporaliteAccueil-ROR/FHIR/JDV-J30-TemporaliteAccueil-ROR)
+* Nom: precisionOrientation : [0..1] ConceptCode
+  * Description: La précision de l'orientation est codée à un jeu de valeurs pour les types de droit suivants :
+* Type droit prestation: 7.8 Orientation vers un Service d'éducation spéciale et de soins à domicile (SESSAD)
+  * Jeu de valeurs associé: en cours analyse NOS
+* Type droit prestation: 7.9 Orientation vers un Service d'accompagnement familial et d'éducation précoce (SAFEP)
+  * Jeu de valeurs associé: en cours analyse NOS
+* Type droit prestation: 13.1 Orientation vers un établissement d'accueil non médicalisé
+  * Jeu de valeurs associé: en cours analyse NOS
+* Type droit prestation: 13.2 Orientation vers un établissement d'accueil médicalisé en tout ou partie
+  * Jeu de valeurs associé: en cours analyse NOS
+* Type droit prestation: 8.3 Orientation en Enseignement adapté (SEGPA/EREA)
+  * Jeu de valeurs associé: en cours analyse NOS
+* Type droit prestation: 8.6 Orientation en Unité d'enseignement
+  * Jeu de valeurs associé: en cours analyse NOS
+
+Pour les autres types de droits la valeur de cet attribut est un texte libre.
+* Nom: accueilSequentiel : [0..1] Indicateur
+  * Description: Indique si l’unité accepte d’accueillir des personnes en situation de handicap de façon séquentielle, c'est à dire sur une partie de la semaine.0 = L'unité n'accepte pas l'accueil séquentiel1 = L'unité accepte l'accueil séquentiel
+* Nom: formation : [0..1] Texte
+  * Description: Formation proposéecet élément est obligatoire si le type de droit et prestation est "11.1" (Orientation en Centre de rééducation professionnelle (CRP)).
 * Nom: frequence : [0..1] Mesure
   * Description: Fréquence de versement dans le cas d’une aide sociale.
-* Nom: qualification : [0..1] Code
-  * Description: Il existe deux types d’orientation :* Orientation cible (appelée aussi orientation hors contrainte de l’offre, théorique ou idéale) : qualification d'une décision basée uniquement sur les attentes et les besoins évalués de la personne et considérée par l'équipe pluridisciplinaire ou la CDAPH comme la réponse la plus adaptée à ces attentes et besoins sans prendre en compte la réalité de l'offre disponible.
-*  Orientation alternative (appelée aussi orientation par défaut) : qualification d'une décision, partiellement adaptée au regard des attentes et des besoins évalués de la personne pour prendre en compte la réalité de l'offre disponible, afin d'augmenter la possibilité de réalisation effective de cette orientation.
- Nomenclature(s) associée(s) : à définir
-
 * Nom: montantAttribue : [0..1] Montant
   * Description: Montant attribué dans le cas d’une aide sociale.
+* Nom: qualificationOrientation : [1..1] Code
+  * Description: Il existe deux types d’orientation :* Orientation cible (appelée aussi orientation hors contrainte de l’offre, théorique ou idéale) : qualification d'une décision basée uniquement sur les attentes et les besoins évalués de la personne et considérée par l'équipe pluridisciplinaire ou la CDAPH comme la réponse la plus adaptée à ces attentes et besoins sans prendre en compte la réalité de l'offre disponible.
+*  Orientation alternative lorsqu'elle est partiellement adaptée au regard des attentes et des besoins évalués de la personne, mais qu'elle prend bien en compte la réalité de l'offre disponible et qu'elle a ainsi plus de chance d'être mise en oeuvre (appelée aussi "orientation par défaut").
+Jeu(x) de valeur(s) associé(s) : en cours analyse NOS
+
+##### Classe StructureAccueil
+
+** Classe spécialisée, hérite de la classe EntiteJuridique définie dans le MOS et profilée pour ce volet.
+
+Cette classe représente le ou les ESSMS désigné(s) par la CDAPH comme étant susceptible d'accueillir l'individu en situation de handicap.
 
 ##### Classe PriseCharge
 
 Description des modalités d'accueil.
 
 * Nom: modePriseCharge : [0..1] Code
-  * Description: Mode de prise en charge.Nomenclature(s) associée(s) : à définir
+  * Description: Le mode de prise en charge est renseigné pour certaines orientations en ESSMS. Il permet d'indiquer comment le bénéficiaire est pris en charge (internat, accueil de jour, accueil de nuit)Jeu(x) de valeur(s) associé(s) :[JDV-J264-ModeEtCentreDePriseEnCharge-MDPH](https://mos.esante.gouv.fr/NOS/JDV_J264-ModeEtCentreDePriseEnCharge-MDPH/FHIR/JDV-J264-ModeEtCentreDePriseEnCharge-MDPH)
 
 ##### Classe Quantification
 
 Quantification de la prise en charge.
 
-* Nom: quantificationNombre : [0..1] Numerique
-  * Description: Valeur de la quantification.
-* Nom: quantificationUnite : [0..1] Code
-  * Description: Unité de la quantification (journée ou demi-journée).Nomenclature(s) associée(s) : à définir
-* Nom: quantificationPeriodicite : [0..1] Code
-  * Description: Périodicité de la quantification (quotidienne, hebdomadaire, mensuelle, annuelle).Nomenclature(s) associée(s) : à définir
+* Nom: valeurPriseCharge : [0..1] Numerique
+  * Description: Valeur de la prise en charge.
+* Nom: UnitePriseCharge : [0..1] Mesure
+  * Description: Unité de la durée de la prise en charge (journée ou demi-journée).
+* Nom: frequencePriseCharge : [0..1] Code
+  * Description: Périodicité de la prise en charge (quotidienne, hebdomadaire, mensuelle, annuelle).Jeu(x) valeur(s) associé(s) :[JDV-J37-UcumUniteTemps](https://mos.esante.gouv.fr/NOS/JDV_J37-UcumUniteTemps/FHIR/JDV-J37-UcumUniteTemps)Seuls les codes suivants sont à utiliser : a (année), mo (mois), wk (semaine), d (jour)
 
 #### Environnement et ressources
 
@@ -546,7 +604,7 @@ Résultat de l'évaluation globale d'un usager.
 * Nom: idEvaluation : Identifiant [1..1]
   * Description: Identifiant technique de l’évaluation obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature[TRE_G08-TypeIdentifiantPersonne](https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne)), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "EVAL" et du numéro de l’évaluation dans le DUI (numEvaluation) :idEvaluation = 3+FINESS/identifiantLocalUsagerESSMS-EVAL-numEvaluation
 * Nom: typeEvaluation : [1..1] Code
-  * Description: Type de l’évaluation.Jeu(x) de valeur(s) associé(s) : JDV_TypeEvaluation_CISIS avec l'OID 1.2.250.1.213.1.1.5.802 publié sur[annexe-vocabulaire-et-jeux-de-valeurs](https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs)
+  * Description: Type de l’évaluation.Jeu(x) de valeur(s) associé(s) : JDV_TypeEvaluation_CISIS avec l'OID 1.2.250.1.213.1.1.5.802 publié sur[annexe-vocabulaire-et-jeux-de-valeurs](https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs)Lorsque le type d'évaluation est "Autre type d'évaluation" la grille d'évaluation est véhiculée en pièce jointe de l'évaluation, sous la forme d'une grille non structurée (en pdf) ne faisant pas partie des évaluations nationales ou internationales connues.
 * Nom: dateEvaluation : [0..1] DateHeure
   * Description: Date et heure de l’évaluation.
 * Nom: resultatEvaluation : [0..1] Le type du résultat est dépendant du type d'évaluation
@@ -793,6 +851,21 @@ Préparation du bilan du projet personnalisé.
 
 #### Parcours
 
+##### Classe ProjetVie
+
+Le projet de vie est l’expression de la projection dans l’avenir de l'usager. Le projet de vie peut concerner tous les domaines de la vie de la personne.
+
+* Nom: idProjetVie : [1..1] Identifiant
+  * Description: Identifiant technique unique du projet de vie obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature[TRE_G08-TypeIdentifiantPersonne](https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne)), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de trois caractères "PDV" et de l'identifiant local du projet de vie dans le DUI (idLocalProjetVie) :idProjetVie = 3+FINESS/identifiantLocalUsagerESSMS-PDV-idLocalProjetVie
+* Nom: titreProjetVie : [1..1] Texte
+  * Description: Titre du projet de vie.
+* Nom: dateDebutProjetVie : [0..1] Date
+  * Description: Date de début du projet de vie.
+* Nom: dateFinProjetVie : [0..1] Date
+  * Description: Date de fin du projet de vie.
+* Nom: aspirationSouhait : [0..*] Texte
+  * Description: Ambition, désir de l'usager pouvant porter sur tous les domaines de sa vie.
+
 ##### Classe PeriodeScolaire
 
 La période scolaire représente un temps de scolarisation pour l'usager ainsi que les caractéristiques de cette période. L'ensemble des périodes scolaires constitue le parcours scolaire de la personne.
@@ -879,10 +952,16 @@ Les classes EntiteJuridique, Lieu et Professionnel sont issues du MOS et sont pr
 
 Le Participant est une personne morale ou physique prenant part à l'événement.
 
-Si le participant est mandaté par une personne morale, la notion de Mandataire est indiquée par le lien vers le Professionnel -> profession (code 307 - Mandataire judiciaire à la protection des majeurs (MJPM) : JDV_J01-XdsAuthorSpecialty-CISIS).
+Si le participant est mandaté par une personne morale, la notion de Mandataire est indiquée par le lien vers le Professionnel.profession (code 307 - Mandataire judiciaire à la protection des majeurs (MJPM) : JDV_J01-XdsAuthorSpecialty-CISIS).
 
 * Nom: presenceParticipant : [0..1] Indicateur
   * Description: Indique la présence du participant à l'événement.1= participant présent0= participant absent
+* Nom: modeExerciceParticipantPP : [0..1] Code
+  * Description: Mode d'exercice de la personne physique. Le mode d'exercice décrit selon quelle modalité une activité est exercée au regard de l'évènement.Jeu(x) de valeur(s) associé(s) :[JDV-J117-ModeExercice-ENREG](https://mos.esante.gouv.fr/NOS/JDV_J117-ModeExercice-ENREG/FHIR/JDV-J117-ModeExercice-ENREG)
+* Nom: participantInterne : [0..1] Indicateur
+  * Description: Indique si le participant (personne Physique) est interne ou externe à la structure1 = interne0 = externe
+
+</table>
 
 ##### Classe StructureEnCharge
 
@@ -945,6 +1024,38 @@ L'identifiant technique du transport est obtenu dans ce contexte par par la conc
   * Description: Lors du transport de l'usager l'asepsie est rigoureusement respectée ou n'est pas nécessaire.
 * Nom: natureTransport : [0..1] Code
   * Description: Nature du transport de l'usager.Jeu de valeur issue de la terminologie Serafin correspondant aux familles (3.2.4.1, 3.2.4.2, 3.2.4.3).Jeu(x) de valeur(s) associé(s) :[JDV_J282-TransportsLiesAuProjetIndividuel_SERAFIN](https://mos.esante.gouv.fr/NOS/JDV_J282-TransportsLiesAuProjetIndividuel_SERAFIN/FHIR/JDV-J282-TransportsLiesAuProjetIndividuel-SERAFIN)
+
+#### Présence Absence et Repas
+
+##### Classe PresenceAbsence
+
+La classe PresenceAbsence indique si l'usager est présent ou absent.
+
+* Nom: idPresenceAbsenceUsager : [1..1] Identifiant
+  * Description: Identifiant technique de présence/absence obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature[TRE_G08-TypeIdentifiantPersonne](https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne)), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de deux caractères "PA" et du numéro de présence/absence dans le DUI (numPresenceAbsenceUsager) :idPresenceAbsenceUsager = 3+FINESS/identifiantLocalUsagerESSMS-PA-numPresenceAbsenceUsager
+* Nom: typePresenceAbsence : [1..1] Code
+  * Description: Type de déclaration : Présence ou Absence.Jeu(x) de valeur(s) associé(s) : Analyse en cours NOS
+* Nom: dateDebutPresenceAbsence : [1..1] DateHeure
+  * Description: Date et heure de début de la présence/absence de l'usager.
+* Nom: dateFinPresenceAbsence : [1..1] DateHeure
+  * Description: Date et heure de fin de la présence/absence de l'usager.
+* Nom: motifAbsence : [0..1] Code
+  * Description: Motif pour lequel l'usager n'est pas présent. Le motif est requis si le typePresenceAbsence=Absence.Jeu(x) de valeur(s) associé(s) : Analyse en cours NOS
+* Nom: absencePrevue : [0..1] Indicateur
+  * Description: Absence prévue. Cet indicateur est requis si le typePresenceAbsence=Absence.1 = L'absence de l'usager est prévue0 = L'absence de l'usager n'était pas prévue
+
+##### Classe Repas
+
+La classe Repas indique si l'usager bénéficie ou non des repas.
+
+* Nom: idRepas : [1..1] Identifiant
+  * Description: Identifiant technique du repas obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature[TRE_G08-TypeIdentifiantPersonne](https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne)), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de cinq caractères "REPAS" et du numéro du repas dans le DUI (numRepas) :idrepas = 3+FINESS/identifiantLocalUsagerESSMS-REPAS-numRepas
+* Nom: dateRepas : [1..1] DateHeure
+  * Description: Date et heure du repas.
+* Nom: typeRepas : [1..1] Code
+  * Description: Type de repas.Jeu(x) de valeur(s) associé(s) : Analyse en cours NOS
+* Nom: usagerPresent : [1..1] Indicateur
+  * Description: Présence de l'usager au repas.1 = l'usager a pris son repas0 = l'usager n'a pas pris son repas
 
 ### Classes du MOS profilées pour ce volet
 
@@ -1011,7 +1122,13 @@ Portion déterminée de l'espace où se sont déroulés des événements.
 Cette classe décrit le statut des ressources (Evenement, Evaluation, Projet personnalisé, …).
 
 * Nom: statut : [1..1] Code
-  * Description: Statut de la ressource impactée.Jeu(x) de valeur(s) associé(s) :[JDV_J281-StatutsRessourcesMS](https://mos.esante.gouv.fr/NOS/JDV_J281-StatutsRessourcesMS/FHIR/JDV-J281-StatutsRessourcesMS)- Pour l'Evaluation seuls les codes suivants sont à utiliser : ENPREPARATION, APPROUVE, VALIDE, TERMINE- Pour l'Evènement seuls les codes suivants sont à utiliser : PLANIFIE, VALIDE, ANNULE, TERMINE- Pour le projet personnalisé seuls les codes suivants sont à utiliser : ENPREPARATION, ENCOURS, ENPAUSE, TERMINE- Pour l'Objectif, l'Action et la Prestation du Projet personnalisé seuls les codes suivants sont à utiliser : ENPREPARATION, ACTIF, TERMINE, ANNULE
+  * Description: Statut de la ressource impactée.Jeu(x) de valeur(s) associé(s) :[JDV_J281-StatutsRessourcesMS](https://mos.esante.gouv.fr/NOS/JDV_J281-StatutsRessourcesMS/FHIR/JDV-J281-StatutsRessourcesMS)* Pour l'Evaluation seuls les codes suivants sont à utiliser : ENPREPARATION, APPROUVE, VALIDE, TERMINE 
+* Pour l'Evènement seuls les codes suivants sont à utiliser : PLANIFIE, VALIDE, ANNULE, TERMINE 
+* Pour le projet personnalisé seuls les codes suivants sont à utiliser : ENPREPARATION, ENCOURS, ENPAUSE, TERMINE 
+* Pour l'Objectif, l'Action et la Prestation du Projet personnalisé seuls les codes suivants sont à utiliser : ENPREPARATION, ACTIF, TERMINE, ANNULE
+* Pour le Projet de vie seuls les codes suivants sont à utiliser : ENPREPARATION, ENCOURS, TERMINE
+* Les statuts de la Présence/Absence correspondent uniquement aux codes suivants : PLANIFIE, VALIDE, FACTURE 
+
 * Nom: motifNonRealisation : [0..1] Code
   * Description: Motif associé au statut de non-réalisation de l’évènement.Jeu(x) de valeur(s) associé(s) : JDV_MotifNonRealisationEvenement_CISIS avec l'OID 1.2.250.1.213.1.1.5.803 publié sur[annexe-vocabulaire-et-jeux-de-valeurs](https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs)
 * Nom: dateStatut : [0..1] DateHeure
