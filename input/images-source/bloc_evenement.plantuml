@@ -14,6 +14,8 @@ class EntiteJuridique #LightYellow
 
 class StructureEnCharge #LightGray
 
+class EntiteJuridique #LightGray 
+
 class Statut #LightYellow 
 
 class Transport #LightGray {
@@ -59,9 +61,14 @@ class Evenement #LightGray {
 
 class Participant #LightGray {
     presenceParticipant : Indicateur [0..1]
+    'roleParticipantEJ : Code [0..1] 
+    modeExerciceParticipantPP : Code [0..1]
+    participantInterne : Indicateur [0..1]
 }
 
+
 Transport <|- TransportUsager
+
 Transport <|-- TransportProfessionnel
 
 EntiteJuridique <|-- StructureEnCharge
