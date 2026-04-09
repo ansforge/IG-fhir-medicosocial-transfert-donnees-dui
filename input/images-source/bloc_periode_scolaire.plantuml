@@ -42,7 +42,6 @@ class Ecole #PeachPuff
 
 PersonnePhysique <|-- ReferentScolaire
 EntiteGeographique <|-- Ecole
-Usager "1" -- "*" PeriodeScolaire
 Ecole "0..1" -- "1..*" PeriodeScolaire
 PeriodeScolaire "1..*" -- "1" ReferentScolaire
 
