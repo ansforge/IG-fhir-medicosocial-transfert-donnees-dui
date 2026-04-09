@@ -45,3 +45,18 @@ Usage: #example
 * entry[DUITransportUsager].resource = tddui-task-transport-usager-example
 * entry[DUITransportUsager].request.method = #POST
 * entry[DUITransportUsager].request.url = "TDDUITaskTransportUsager"
+
+* entry[DUIObservationRepas].fullUrl = "https://test-server.fr/Observation/tddui-observation-repas-example"
+* entry[DUIObservationRepas].resource = tddui-observation-repas-example
+* entry[DUIObservationRepas].request.method = #POST
+* entry[DUIObservationRepas].request.url = "TDDUIObservationRepas"
+
+* entry[DUISchedule].fullUrl = "https://test-server.fr/Schedule/tddui-schedule-example"
+* entry[DUISchedule].resource = tddui-schedule-example
+* entry[DUISchedule].request.method = #POST
+* entry[DUISchedule].request.url = "TDDUISchedule"
+
+* entry[DUISlotPresenceAbsence].fullUrl = "https://test-server.fr/Slot/tddui-slot-presence-absence-example"
+* entry[DUISlotPresenceAbsence].resource = tddui-slot-presence-absence-example
+* entry[DUISlotPresenceAbsence].request.method = #POST
+* entry[DUISlotPresenceAbsence].request.url = "TDDUISlotPresenceAbsence"
