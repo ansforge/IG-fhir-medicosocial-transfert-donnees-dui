@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite-usager | *Version*:2.3.0 |
-| Active as of 2026-03-31 | *Computable Name*:TDDUIObservationMobiliteUsager |
+| Active as of 2026-04-09 | *Computable Name*:TDDUIObservationMobiliteUsager |
 
  
 Profil de la ressource Observation permettant de représenter la mobilité de l'usager. 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-observation-mo
   "name" : "TDDUIObservationMobiliteUsager",
   "title" : "TDDUI Observation Mobilite Usager",
   "status" : "active",
-  "date" : "2026-03-31T13:26:33+00:00",
+  "date" : "2026-04-09T09:14:18+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

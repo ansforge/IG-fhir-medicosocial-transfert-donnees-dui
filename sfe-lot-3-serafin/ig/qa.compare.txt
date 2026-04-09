@@ -878,7 +878,7 @@ ERROR: ValueSet/tddui-goal-objectif-note: ValueSet.jurisdiction[0].coding[0].dis
 ERROR: ValueSet/tddui-observation-periode-scolaire: ValueSet.jurisdiction[0].coding[0].display: Wrong Display Name 'France' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr')
 == fsh-generated/resources/ValueSet-tddui-observation-type.json ==
 ERROR: ValueSet/tddui-observation-type: ValueSet.jurisdiction[0].coding[0].display: Wrong Display Name 'France' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr')
-INFORMATION: ValueSet/tddui-observation-type: ValueSet.compose.include[1].concept[0]: There are no valid display names found for the code http://loinc.org#79378-6 for language(s) 'fr'. The display is 'Cause of death' which is the default language display. Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/tddui-observation-type: ValueSet.compose.include[1]: The concepts in the value set include have not been validated because the terminology server https://tx.fhir.org/r4 does not support batch validation (tests version < 1.7.8)
 == fsh-generated/resources/ValueSet-tddui-patient-identifier.json ==
 INFORMATION: ValueSet.compose.include[2]: Pinned the version of http://terminology.hl7.org/CodeSystem/v2-0203 to 5.0.0 from choices of 2.9.0 (hl7.terminology.r4#4.0.0), 4.0.0 (hl7.terminology.r4#5.5.0), 5.0.0 (hl7.terminology.r4#7.0.1)
 ERROR: ValueSet/tddui-patient-identifier: ValueSet.jurisdiction[0].coding[0].display: Wrong Display Name 'France' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr')

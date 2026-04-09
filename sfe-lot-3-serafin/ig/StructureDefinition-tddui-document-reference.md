@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference | *Version*:2.3.0 |
-| Active as of 2026-03-31 | *Computable Name*:TDDUIDocumentReference |
+| Active as of 2026-04-09 | *Computable Name*:TDDUIDocumentReference |
 
  
 Profil de la ressource SimplifiedPublishDocumentReference permettant de véhiculer des pièces jointes que ce soit pour l'évaluation, l'évènement ou le projet personnalisé. 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-document-refer
   "name" : "TDDUIDocumentReference",
   "title" : "TDDUI DocumentReference",
   "status" : "active",
-  "date" : "2026-03-31T13:26:33+00:00",
+  "date" : "2026-04-09T09:14:18+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

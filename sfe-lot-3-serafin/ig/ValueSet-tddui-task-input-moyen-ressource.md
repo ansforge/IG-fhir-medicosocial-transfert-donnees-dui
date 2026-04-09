@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-task-input-moyen-ressource | *Version*:2.3.0 |
-| Active as of 2026-03-31 | *Computable Name*:TDDUITaskInputMoyenRessource |
+| Active as of 2026-04-09 | *Computable Name*:TDDUITaskInputMoyenRessource |
 
  
 ValueSet pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les moyens et ressources du projet personnalisé. 
@@ -54,7 +54,7 @@ ValueSet pour la définition des éléments spécifiques des input dans la resso
   "title" : "TDDUI Task Input Moyen Ressource",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-31T13:26:33+00:00",
+  "date" : "2026-04-09T09:14:18+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
