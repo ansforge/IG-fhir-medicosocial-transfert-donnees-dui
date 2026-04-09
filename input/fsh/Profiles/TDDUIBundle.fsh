@@ -34,7 +34,9 @@ Description: "Profil générique créé pour transmettre des données d'un logic
     DUIRelatedPersonContact 0..* and 
     DUIObservationCauseMortalite 0..* and
     DUIObservationPeriodeScolaire 0..* and
-    DUIObservationMobiliteUsager 0..*
+    DUIObservationMobiliteUsager 0..* and
+    DUIServiceRequestDemandeOrientation 0..* and
+    DUIBasicDroitDecision 0..*
 
 
 
@@ -181,3 +183,15 @@ Description: "Profil générique créé pour transmettre des données d'un logic
 * entry[DUIObservationMobiliteUsager].resource 1..1
 * entry[DUIObservationMobiliteUsager].request 1..1
 * entry[DUIObservationMobiliteUsager].request.method = #POST
+
+* entry[DUIServiceRequestDemandeOrientation].resource only TDDUIServiceRequestDemandeOrientation
+* entry[DUIServiceRequestDemandeOrientation] ^short = "ServiceRequest conforming to the TDDUIServiceRequestDemandeOrientation profile, used to convey the request for orientation."
+* entry[DUIServiceRequestDemandeOrientation].resource 1..1
+* entry[DUIServiceRequestDemandeOrientation].request 1..1
+* entry[DUIServiceRequestDemandeOrientation].request.method = #POST
+
+* entry[DUIBasicDroitDecision].resource only TDDUIBasicDecision
+* entry[DUIBasicDroitDecision] ^short = "Basic conforming to the TDDUIBasicDecision profile, used to convey the decision of the CDAPH."
+* entry[DUIBasicDroitDecision].resource 1..1
+* entry[DUIBasicDroitDecision].request 1..1
+* entry[DUIBasicDroitDecision].request.method = #POST

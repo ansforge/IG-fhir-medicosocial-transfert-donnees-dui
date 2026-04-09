@@ -71,7 +71,8 @@ Usage: #definition
 * rest.resource[=].interaction[0].code = #create
 
 * rest.resource[11].type = #ServiceRequest
-* rest.resource[=].supportedProfile = Canonical(tddui-service-request-besoin)
+* rest.resource[=].supportedProfile[0] = Canonical(tddui-service-request-besoin)
+* rest.resource[=].supportedProfile[+] = Canonical(tddui-service-request-demande-orientation)
 * rest.resource[=].interaction[0].code = #create
 
 * rest.resource[12].type = #RelatedPerson
@@ -82,6 +83,10 @@ Usage: #definition
 * rest.resource[=].supportedProfile[0] = Canonical(tddui-observation-cause-mortalite)
 * rest.resource[=].supportedProfile[+] = Canonical(tddui-observation-periode-scolaire)
 * rest.resource[=].supportedProfile[+] = Canonical(tddui-observation-mobilite-usager)
+* rest.resource[=].interaction[0].code = #create
+
+* rest.resource[14].type = #Basic
+* rest.resource[=].supportedProfile = Canonical(tddui-basic-decision)
 * rest.resource[=].interaction[0].code = #create
 
 * rest.interaction[0].code = #transaction
