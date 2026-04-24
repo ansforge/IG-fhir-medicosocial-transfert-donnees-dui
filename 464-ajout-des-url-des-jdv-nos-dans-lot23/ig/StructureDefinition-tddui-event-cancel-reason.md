@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-event-cancel-r
   "name" : "TDDUIEventCancelReason",
   "title" : "TDDUI Event Cancel Reason",
   "status" : "active",
-  "date" : "2026-04-24T08:33:47+00:00",
+  "date" : "2026-04-24T09:43:59+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

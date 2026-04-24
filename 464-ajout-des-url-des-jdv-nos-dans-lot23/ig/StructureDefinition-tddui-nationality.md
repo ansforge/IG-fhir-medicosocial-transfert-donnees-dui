@@ -56,7 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-nationality.cs
   "name" : "TDDUINationalityExtension",
   "title" : "TDDUI Nationality Extension",
   "status" : "active",
-  "date" : "2026-04-24T08:33:47+00:00",
+  "date" : "2026-04-24T09:43:59+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

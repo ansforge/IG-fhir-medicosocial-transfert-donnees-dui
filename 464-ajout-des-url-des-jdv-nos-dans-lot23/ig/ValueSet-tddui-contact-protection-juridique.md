@@ -55,7 +55,7 @@ ValueSet définissant la protection juridique.
   "title" : "TDDUI Contact Protection Juridique",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-04-24T08:33:47+00:00",
+  "date" : "2026-04-24T09:43:59+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
