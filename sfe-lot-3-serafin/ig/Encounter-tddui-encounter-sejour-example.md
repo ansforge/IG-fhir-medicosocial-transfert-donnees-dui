@@ -14,7 +14,7 @@ Profil: [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md)
 
 **TDDUI Exit Mode Label**: Sortie prévisionnelle prévue pour le 5 mai 2023
 
-**Extension Definition for Encounter.plannedEndDate for Version 5.0**: 2023-05-05
+**R5: The planned end date/time (or discharge date) of the encounter (new)**: 2023-05-05
 
 **identifier**: Identifiant du séjour/3480787529/147720425367411-SEJOUR-1012, Numéro de dossier administratif du séjour/1012
 

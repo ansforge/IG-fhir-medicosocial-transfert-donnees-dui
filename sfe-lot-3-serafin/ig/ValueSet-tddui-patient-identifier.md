@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-patient-identifier | *Version*:2.3.0 |
-| Active as of 2026-04-09 | *Computable Name*:TDDUIPatientIdentifier |
+| Active as of 2026-04-24 | *Computable Name*:TDDUIPatientIdentifier |
 
  
 ValueSet pour la définition des codes d'identifiant de l'usager 
@@ -55,7 +55,7 @@ ValueSet pour la définition des codes d'identifiant de l'usager
   "title" : "TDDUI Patient Identifier",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-04-09T09:18:02+00:00",
+  "date" : "2026-04-24T09:04:46+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

@@ -84,7 +84,7 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
 Adresse géopostale. Un emplacement auquel l’usager peut être trouvé, d'après la norme AFNOR NF Z10-011.
 
 * Nom: type : [0..1] Code
-  * Description: Indique le ou les types d'adresse tel que "Adresse du domicile", "Adresse du domicile de secours", etc.
+  * Description: Indique le ou les types d'adresse tel que "Adresse du domicile", "Adresse du domicile de secours", etc. Jeu(x) de valeur(s) associé(s) :[JDV-J415-TYPE-ADRESSE-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j415-type-adresse-ms/$expand)
 * Nom: numeroVoie : [0..1] Texte
   * Description: Un numéro dans la voie ; dans les cas de numérotation sans extension, il est composé de 0 à 4 caractères numériques au maximum.
 * Nom: libelleVoie : [0..1] Texte
@@ -121,14 +121,14 @@ Adresse de télécommunication à laquelle l’usager peut être contactée (té
 * Nom: adresseTelecom : [1..1] Texte
   * Description: Valeur de l'adresse de télécommunication dans le format induit par le canal de communication, par exemple un numéro de téléphone, une adresse de courrier électronique, une adresse URL, etc.
 * Nom: utilisation : [0..1] Code
-  * Description: Précise l'utilisation du canal de communication (par exemple à des fins professionnelles, privées, etc.).Jeu(x) de valeur associé(s) : JDV en cours de d'analyse NOS
+  * Description: Précise l'utilisation du canal de communication (par exemple à des fins professionnelles, privées, etc.).Jeu(x) de valeur associé(s) :[JDV-J393-UTILISATION-CANAL-COMMUNICATION-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j393-utilisation-canal-communication-ms/$expand)
 
 ##### Classe Courrier
 
 Adresse de courrier de l’usager.
 
 * Nom: typeCourrier : [0..1] Code
-  * Description: Type de courrier qui peut être adressé à l'usager.Jeu(x) associé(s) : en cours de création NOS
+  * Description: Type de courrier qui peut être adressé à l'usager.Jeu(x) associé(s) :[JDV-J392-TYPE-COURRIER-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j392-type-courrier-ms/$expand)
 * Nom: libelleDestinataire : [0..1] Texte
   * Description: Libellé du destinataire du courrier.Par exemple nom et prénom dans le cas d’une personne physique.
 * Nom: organismeDomiciliation : [0..1] Texte
@@ -221,7 +221,7 @@ La demande de compensation est adressée à la CDAPH. Elle contient l'ensemble d
 * Nom: typeDemande : [0..1] Code
   * Description: Type de la demande d'orientation.Jeu(x) de valeur(s) associé(s) : encours analyse NOS
 * Nom: natureDemande : [0..1] Code
-  * Description: Nature de la demande d'orientation. A renseigner si le type est valorisé.Jeu(x) de valeur(s) associé(s) : encours analyse NOS
+  * Description: Nature de la demande d'orientation. A renseigner si le type est valorisé.Jeu(x) de valeur(s) associé(s) :[JDV-J395-NATURE-DEMANDE-COMPENSATION-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j395-nature-demande-compensation-ms/$expand)
 * Nom: demandeOrientation : [0..*] ObjetBinaire
   * Description: Pièce jointe composant la demande d'orientation.
 * Nom: depotPoste : [0..1] ObjetBinaire
@@ -281,7 +281,7 @@ Ensemble des dispositifs prévus par le Code de l'Action Sociale et des Familles
 * Nom: existencePAG : [1..1] Indicateur
   * Description: Indicateur de l'existence d'un Plan d’Accompagnement Global (PAG).1 = si la décision est associée à un PAG au statut "élaboré" ou "validé" ;0 = pour tous les autres cas (la décision n'est pas associée à un PAG ou est associée à un PAG ayant un statut différent de "élaboré" ou "validé").
 * Nom: motifFinPAG : [0..1] Code
-  * Description: Lorsque le plan d'accompagnement global (PAG) arrive à échéance ou si le coordonnateur de parcours l'estime nécessaire, un bilan est élaboré et la phase d'actualisation est lancée afin de déterminer s'il faut prolonger ce PAG, le modifier ou y mettre fin. La MDPH, les partenaires et l'usager peuvent définir ensemble que le PAG n'est plus nécessaire et donc y mettre fin. Le consentement de la personne ou de son représentant légal est recueilli et l'information sur la fin du PAG transmise à l'ensemble des parties-prenantes.Le motif est obligatoire si existencePAG passe de "1" à "0". Le fait de mettre fin au PAG n'a pas d'impact sur les droits en cours (même ceux ouverts dans le cadre du PAG). Ces droits demeurent valables jusqu'à leur date d'échéance.Jeu(x) de valeur(s) associé(s) : en cours d'analyse NOS
+  * Description: Lorsque le plan d'accompagnement global (PAG) arrive à échéance ou si le coordonnateur de parcours l'estime nécessaire, un bilan est élaboré et la phase d'actualisation est lancée afin de déterminer s'il faut prolonger ce PAG, le modifier ou y mettre fin. La MDPH, les partenaires et l'usager peuvent définir ensemble que le PAG n'est plus nécessaire et donc y mettre fin. Le consentement de la personne ou de son représentant légal est recueilli et l'information sur la fin du PAG transmise à l'ensemble des parties-prenantes.Le motif est obligatoire si existencePAG passe de "1" à "0". Le fait de mettre fin au PAG n'a pas d'impact sur les droits en cours (même ceux ouverts dans le cadre du PAG). Ces droits demeurent valables jusqu'à leur date d'échéance.Jeu(x) de valeur(s) associé(s) :[JDV-J404-MOTIF-FIN-PAG-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j404-motif-fin-pag-ms/$expand)
 * Nom: creton : [0..1] Indicateur
   * Description: Amendement Creton. Il s’agit d’un dispositif législatif permettant le maintien temporaire de jeunes adultes de plus de 20 ans en établissement pour enfants dans l’attente d’une place dans un établissement pour adultes.Obligatoire pour les décisions orientations ESSMS enfant, non prévu pour les autres orientations.0 = l'usager ne bénéficie pas de l'amendement Creton ;1 = l'usager bénéficie de l'amendement Creton.
 * Nom: taux : [0..1] Mesure
@@ -1040,7 +1040,7 @@ La classe PresenceAbsence indique si l'usager est présent ou absent.
 * Nom: dateFinPresenceAbsence : [1..1] DateHeure
   * Description: Date et heure de fin de la présence/absence de l'usager.
 * Nom: motifAbsence : [0..1] Code
-  * Description: Motif pour lequel l'usager n'est pas présent. Le motif est requis si le typePresenceAbsence=Absence.Jeu(x) de valeur(s) associé(s) : Analyse en cours NOS
+  * Description: Motif pour lequel l'usager n'est pas présent. Le motif est requis si le typePresenceAbsence=Absence.Jeu(x) de valeur(s) associé(s) :[JDV-J407-MOTIF-ABSENCE-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j407-motif-absence-ms/$expand)
 * Nom: absencePrevue : [0..1] Indicateur
   * Description: Absence prévue. Cet indicateur est requis si le typePresenceAbsence=Absence.1 = L'absence de l'usager est prévue0 = L'absence de l'usager n'était pas prévue
 
