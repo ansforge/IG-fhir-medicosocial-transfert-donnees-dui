@@ -198,7 +198,8 @@ Adresse géopostale. Un emplacement auquel l’usager peut être trouvé, d'apr�
   </tr>
   <tr>
     <td>type : [0..1] Code</td>
-    <td>Indique le ou les types d'adresse tel que "Adresse du domicile", "Adresse du domicile de secours", etc. </td>
+    <td>Indique le ou les types d'adresse tel que "Adresse du domicile", "Adresse du domicile de secours", etc.<br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j415-type-adresse-ms/$expand">JDV-J415-TYPE-ADRESSE-MS</a></td>
   </tr>
   <tr>
     <td>numeroVoie : [0..1] Texte</td>
@@ -263,7 +264,7 @@ Adresse de télécommunication à laquelle l’usager peut être contactée (té
   <tr>
     <td>canal : [1..1] Code</td>
     <td>Code spécifiant le canal ou la manière dont s'établit la communication (téléphone, e-mail, URL, etc.).<br>
-    Jeu(x) de valeur associé(s) : JDV en cours de d'analyse NOS</td>
+    Jeu(x) de valeur associé(s) : </td>
   </tr>
    <tr>
     <td>typeMessagerie : [0..1] Code</td>
@@ -277,7 +278,7 @@ Adresse de télécommunication à laquelle l’usager peut être contactée (té
     <tr>
     <td>utilisation : [0..1] Code</td>
     <td>Précise l'utilisation du canal de communication (par exemple à des fins professionnelles, privées, etc.).<br>
-    Jeu(x) de valeur associé(s) : JDV en cours de d'analyse NOS</td>
+    Jeu(x) de valeur associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j393-utilisation-canal-communication-ms/$expand">JDV-J393-UTILISATION-CANAL-COMMUNICATION</a></td>
   </tr>
 </table>
 
@@ -293,7 +294,7 @@ Adresse de courrier de l’usager.
   <tr>
     <td>typeCourrier : [0..1] Code</td>
     <td>Type de courrier qui peut être adressé à l'usager.<br>
-    Jeu(x) associé(s) : en cours de création NOS</td>
+    Jeu(x) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j392-type-courrier-ms/$expand">JDV-J392-TYPE-COURRIER-MS</a></td>
   </tr>
   <tr>
     <td>libelleDestinataire : [0..1] Texte</td>
@@ -497,7 +498,7 @@ La demande de compensation est adressée à la CDAPH. Elle contient l'ensemble d
   <tr>
     <td>natureDemande : [0..1] Code </td>
     <td>Nature de la demande d'orientation. A renseigner si le type est valorisé.<br>
-    Jeu(x) de valeur(s) associé(s) : encours analyse NOS</td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j395-nature-demande-compensation-ms/$expand">JDV-J395-NATURE-DEMANDE-COMPENSATION</a></td>
   </tr>
   <tr>
     <td>demandeOrientation : [0..*] ObjetBinaire </td>
@@ -644,8 +645,7 @@ Ensemble des dispositifs prévus par le Code de l'Action Sociale et des Familles
     <td>Lorsque le plan d'accompagnement global (PAG) arrive à échéance ou si le coordonnateur de parcours l'estime nécessaire, un bilan est élaboré et la phase d'actualisation est lancée afin de déterminer s'il faut prolonger ce PAG, le modifier ou y mettre fin. 
 La MDPH, les partenaires et l'usager peuvent définir ensemble que le PAG n'est plus nécessaire et donc y mettre  fin. Le consentement de la personne ou de son représentant légal est recueilli et l'information sur la fin du PAG transmise à l'ensemble des parties-prenantes.<br>
     Le motif est obligatoire si existencePAG passe de "1" à "0". Le fait de mettre fin au PAG n'a pas d'impact sur les droits en cours (même ceux ouverts dans le cadre du PAG). Ces droits demeurent valables jusqu'à leur date d'échéance. <br>
-    Jeu(x) de valeur(s) associé(s) : en cours d'analyse NOS
-    </td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j404-motif-fin-pag-ms/$expand">JDV-J404-MOTIF-FIN-PAG-MS</a></td>
   </tr>
   <tr>
     <td>creton : [0..1] Indicateur</td>
@@ -2228,7 +2228,7 @@ La classe PresenceAbsence indique si l'usager est présent ou absent.
   <tr>
     <td>motifAbsence : [0..1] Code</td>
     <td>Motif pour lequel l'usager n'est pas présent. Le motif est requis si le typePresenceAbsence=Absence.<br>
-    Jeu(x) de valeur(s) associé(s) : Analyse en cours NOS</td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j407-motif-absence-ms/$expand">JDV-J407-MOTIF-ABSENCE-MS</a></td>
   </tr>
   <tr>
     <td>absencePrevue : [0..1] Indicateur</td>
@@ -2258,7 +2258,7 @@ La classe Repas indique si l'usager bénéficie ou non des repas.
   <tr>
     <td>typeRepas : [1..1] Code</td>
     <td>Type de repas.<br>
-    Jeu(x) de valeur(s) associé(s) : Analyse en cours NOS</td>
+    Jeu(x) de valeur(s) associé(s) : </td>
   </tr>
   <tr>
     <td>usagerPresent : [1..1] Indicateur</td>
