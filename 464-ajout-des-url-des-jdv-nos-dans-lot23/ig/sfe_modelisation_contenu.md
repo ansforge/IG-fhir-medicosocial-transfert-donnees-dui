@@ -115,9 +115,9 @@ Adresse géopostale. Un emplacement auquel l’usager peut être trouvé, d'apr�
 Adresse de télécommunication à laquelle l’usager peut être contactée (téléphone, fax, e-mail, URL, etc.). Cet objet provient du MOS, il a été profilé pour ce volet.
 
 * Nom: canal : [1..1] Code
-  * Description: Code spécifiant le canal ou la manière dont s'établit la communication (téléphone, e-mail, URL, etc.).Jeu(x) de valeur associé(s) :
+  * Description: Code spécifiant le canal ou la manière dont s'établit la communication (téléphone, e-mail, URL, etc.).Jeu(x) de valeur associé(s) :[JDV-J396-CANAL-COMMUNICATION-MS](https:https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j396-canal-communication-ms/$expand)
 * Nom: typeMessagerie : [0..1] Code
-  * Description: Type de messagerie électronique rassemblant des acteurs (personne physique, personne morale ou système) identifiés et enregistrés selon des règles qui garantissent leur légitimité à l'utiliser.Jeu(x) de valeur associé(s) : JDV en cours de d'analyse NOS
+  * Description: Type de messagerie électronique rassemblant des acteurs (personne physique, personne morale ou système) identifiés et enregistrés selon des règles qui garantissent leur légitimité à l'utiliser.Jeu(x) de valeur associé(s) :[JDV-J397-TYPE-MESSAGERIE-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j397-type-messagerie-ms/$expand)
 * Nom: adresseTelecom : [1..1] Texte
   * Description: Valeur de l'adresse de télécommunication dans le format induit par le canal de communication, par exemple un numéro de téléphone, une adresse de courrier électronique, une adresse URL, etc.
 * Nom: utilisation : [0..1] Code
@@ -330,7 +330,7 @@ Pour les autres types de droits la valeur de cet attribut est un texte libre.
 * Nom: qualificationOrientation : [1..1] Code
   * Description: Il existe deux types d’orientation :* Orientation cible (appelée aussi orientation hors contrainte de l’offre, théorique ou idéale) : qualification d'une décision basée uniquement sur les attentes et les besoins évalués de la personne et considérée par l'équipe pluridisciplinaire ou la CDAPH comme la réponse la plus adaptée à ces attentes et besoins sans prendre en compte la réalité de l'offre disponible.
 *  Orientation alternative lorsqu'elle est partiellement adaptée au regard des attentes et des besoins évalués de la personne, mais qu'elle prend bien en compte la réalité de l'offre disponible et qu'elle a ainsi plus de chance d'être mise en oeuvre (appelée aussi "orientation par défaut").
-Jeu(x) de valeur(s) associé(s) : en cours analyse NOS
+Jeu(x) de valeur(s) associé(s) :[JDV-J405-QUALIFICATION-ORIENTATION-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j405-qualification-orientation-ms/$expand)
 
 ##### Classe StructureAccueil
 
@@ -1053,7 +1053,7 @@ La classe Repas indique si l'usager bénéficie ou non des repas.
 * Nom: dateRepas : [1..1] DateHeure
   * Description: Date et heure du repas.
 * Nom: typeRepas : [1..1] Code
-  * Description: Type de repas.Jeu(x) de valeur(s) associé(s) :
+  * Description: Type de repas.Jeu(x) de valeur(s) associé(s) :[JDV-J408-TYPE-REPAS-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j408-type-repas-ms/$expand)
 * Nom: usagerPresent : [1..1] Indicateur
   * Description: Présence de l'usager au repas.1 = l'usager a pris son repas0 = l'usager n'a pas pris son repas
 

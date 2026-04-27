@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner | *Version*:2.3.0 |
-| Active as of 2026-04-24 | *Computable Name*:TDDUIPractitioner |
+| Active as of 2026-04-27 | *Computable Name*:TDDUIPractitioner |
 
  
 Profil de la ressource FRCorePractitionerProfile permettant de représenter un professionnel du médicosocial dans le cadre de TDDUI. Le profil AsPractitionerRoleProfile n'a pas été utilisé car il comportait trop de contraintes non présentes dans les DUI. 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-practitioner.c
   "name" : "TDDUIPractitioner",
   "title" : "TDDUI Practitioner",
   "status" : "active",
-  "date" : "2026-04-24T09:43:59+00:00",
+  "date" : "2026-04-27T07:59:40+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

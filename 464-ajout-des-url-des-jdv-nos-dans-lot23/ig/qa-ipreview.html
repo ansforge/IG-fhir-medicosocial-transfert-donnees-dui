@@ -338,7 +338,7 @@ This material derives from the HL7 Terminology (THO). THO is copyright &copy;198
     <ul>
       <li>
 
-          IG &copy; 2023+ ANS.  Package ans.fhir.fr.tddui#2.3.0 based on FHIR 4.0.1. Generated 2026-04-24
+          IG &copy; 2023+ ANS.  Package ans.fhir.fr.tddui#2.3.0 based on FHIR 4.0.1. Generated 2026-04-27
           
           
             Liens : Table des matières |
@@ -398,7 +398,7 @@ Médicosocial - Transfert de données DUI - version de développement local (int
 
           IG &copy; 2023+           <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>
 .  Package ans.fhir.fr.tddui#2.3.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
-. Generated           <span title="Fri, Apr 24, 2026 09:43+0000">2026-04-24</span>
+. Generated           <span title="Mon, Apr 27, 2026 07:59+0000">2026-04-27</span>
 
                     <br/>
 
@@ -430,7 +430,7 @@ Médicosocial - Transfert de données DUI - version de développement local (int
 
           IG &copy; 2023+           <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>
 .  Package ans.fhir.fr.tddui#2.3.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
-. Generated           <span title="Fri, Apr 24, 2026 09:43+0000">2026-04-24</span>
+. Generated           <span title="Mon, Apr 27, 2026 07:59+0000">2026-04-27</span>
 
                     <br/>
 
@@ -462,7 +462,7 @@ Médicosocial - Transfert de données DUI - version de développement local (int
 
           IG &copy; 2023+           <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>
 .  Package ans.fhir.fr.tddui#2.3.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
-. Generated           <span title="Fri, Apr 24, 2026 09:43+0000">2026-04-24</span>
+. Generated           <span title="Mon, Apr 27, 2026 07:59+0000">2026-04-27</span>
 
                     <br/>
 
@@ -2149,6 +2149,19 @@ Indique le ou les types d'adresse tel que "Adresse du domicile", "Adresse du dom
           <a href="sfe_modelisation_contenu.html">web</a>
         </td>
         <td>
+          <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j397-type-messagerie-ms/$expand">smt.esante.gouv.fr</a>
+        </td>
+        <td>
+Type de messagerie électronique rassemblant des acteurs (personne physique, personne morale ou système) identifiés et enregistrés selon des règles qui garantissent leur légitimité à l'utiliser.          <br/>
+
+    Jeu(x) de valeur associé(s) :           <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j397-type-messagerie-ms/$expand">JDV-J397-TYPE-MESSAGERIE-MS</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
           <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j393-utilisation-canal-communication-ms/$expand">smt.esante.gouv.fr</a>
         </td>
         <td>
@@ -2238,6 +2251,29 @@ Pour les types de droit et prestation suivants :
           <br/>
 
     Jeu(x) de valeur(s) associé(s) :           <a href="https://mos.esante.gouv.fr/NOS/JDV_J30-TemporaliteAccueil-ROR/FHIR/JDV-J30-TemporaliteAccueil-ROR">JDV_J30-TemporaliteAccueil-ROR</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j405-qualification-orientation-ms/$expand">smt.esante.gouv.fr</a>
+        </td>
+        <td>
+Il existe deux types d’orientation :
+              <ul>
+
+                <li>Orientation cible (appelée aussi orientation hors contrainte de l’offre, théorique ou idéale) : qualification d'une décision basée uniquement sur les attentes et les besoins évalués de la personne et considérée par l'équipe pluridisciplinaire ou la CDAPH comme la réponse la plus adaptée à ces attentes et besoins sans prendre en compte la réalité de l'offre disponible.</li>
+
+                <li> Orientation alternative lorsqu'elle est partiellement adaptée au regard des attentes et des besoins évalués de la personne, mais qu'elle prend bien en compte la réalité de l'offre disponible et qu'elle a ainsi plus de chance d'être mise en oeuvre (appelée aussi "orientation par défaut").</li>
+
+    
+          </ul>
+
+    Jeu(x) de valeur(s) associé(s) :           <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j405-qualification-orientation-ms/$expand">JDV-J405-QUALIFICATION-ORIENTATION-MS</a>
+
+    
         </td>
       </tr>
       <tr>
@@ -3032,6 +3068,19 @@ Motif pour lequel l'usager n'est pas présent. Le motif est requis si le typePre
 Identifiant technique du repas obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature           <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>
 ), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de cinq caractères "REPAS" et du numéro du repas dans le DUI (numRepas) :          <br/>
  idrepas = 3+FINESS/identifiantLocalUsagerESSMS-REPAS-numRepas
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="sfe_modelisation_contenu.html">web</a>
+        </td>
+        <td>
+          <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j408-type-repas-ms/$expand">smt.esante.gouv.fr</a>
+        </td>
+        <td>
+Type de repas.          <br/>
+
+    Jeu(x) de valeur(s) associé(s) :           <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j408-type-repas-ms/$expand">JDV-J408-TYPE-REPAS-MS</a>
         </td>
       </tr>
       <tr>
