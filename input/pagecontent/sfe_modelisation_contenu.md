@@ -264,12 +264,12 @@ Adresse de télécommunication à laquelle l’usager peut être contactée (té
   <tr>
     <td>canal : [1..1] Code</td>
     <td>Code spécifiant le canal ou la manière dont s'établit la communication (téléphone, e-mail, URL, etc.).<br>
-    Jeu(x) de valeur associé(s) : </td>
+    Jeu(x) de valeur associé(s) : <a href="https:https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j396-canal-communication-ms/$expand">JDV-J396-CANAL-COMMUNICATION-MS</a></td>
   </tr>
    <tr>
     <td>typeMessagerie : [0..1] Code</td>
     <td>Type de messagerie électronique rassemblant des acteurs (personne physique, personne morale ou système) identifiés et enregistrés selon des règles qui garantissent leur légitimité à l'utiliser.<br>
-    Jeu(x) de valeur associé(s) : JDV en cours de d'analyse NOS</td>
+    Jeu(x) de valeur associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j397-type-messagerie-ms/$expand">JDV-J397-TYPE-MESSAGERIE-MS</a></td>
   </tr>
   <tr>
     <td>adresseTelecom : [1..1] Texte</td>
@@ -760,7 +760,7 @@ Pour les autres types de droits la valeur de cet attribut est un texte libre.
     <li>Orientation cible (appelée aussi orientation hors contrainte de l’offre, théorique ou idéale) : qualification d'une décision basée uniquement sur les attentes et les besoins évalués de la personne et considérée par l'équipe pluridisciplinaire ou la CDAPH comme la réponse la plus adaptée à ces attentes et besoins sans prendre en compte la réalité de l'offre disponible.</li>
     <li> Orientation alternative lorsqu'elle est partiellement adaptée au regard des attentes et des besoins évalués de la personne, mais qu'elle prend bien en compte la réalité de l'offre disponible et qu'elle a ainsi plus de chance d'être mise en oeuvre (appelée aussi "orientation par défaut").</li>
     </ul>
-    Jeu(x) de valeur(s) associé(s) : en cours analyse NOS
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j405-qualification-orientation-ms/$expand">JDV-J405-QUALIFICATION-ORIENTATION-MS</a>
     </td>
   </tr>
 </table>
@@ -2258,7 +2258,7 @@ La classe Repas indique si l'usager bénéficie ou non des repas.
   <tr>
     <td>typeRepas : [1..1] Code</td>
     <td>Type de repas.<br>
-    Jeu(x) de valeur(s) associé(s) : </td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j408-type-repas-ms/$expand">JDV-J408-TYPE-REPAS-MS</a></td>
   </tr>
   <tr>
     <td>usagerPresent : [1..1] Indicateur</td>
