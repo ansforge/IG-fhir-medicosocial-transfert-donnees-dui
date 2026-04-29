@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment | *Version*:2.3.0 |
-| Active as of 2026-04-27 | *Computable Name*:TDDUIComment |
+| Active as of 2026-04-29 | *Computable Name*:TDDUIComment |
 
 * **Séjour** : commentaire relatif au séjour.
 * **Événement** : commentaires sur le déroulé de l’évènement.
@@ -50,7 +50,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-comment.csv), 
   "name" : "TDDUIComment",
   "title" : "TDDUI Comment",
   "status" : "active",
-  "date" : "2026-04-27T07:59:40+00:00",
+  "date" : "2026-04-29T12:03:21+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

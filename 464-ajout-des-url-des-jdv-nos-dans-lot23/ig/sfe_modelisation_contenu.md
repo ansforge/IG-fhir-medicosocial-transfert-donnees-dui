@@ -84,7 +84,7 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
 Adresse géopostale. Un emplacement auquel l’usager peut être trouvé, d'après la norme AFNOR NF Z10-011.
 
 * Nom: type : [0..1] Code
-  * Description: Indique le ou les types d'adresse tel que "Adresse du domicile", "Adresse du domicile de secours", etc.Jeu(x) de valeur(s) associé(s) :[JDV-J415-TYPE-ADRESSE-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j415-type-adresse-ms/$expand)
+  * Description: Indique le ou les types d'adresse tel que "Adresse du domicile", "Adresse du domicile de secours", etc.Jeu(x) de valeur(s) associé(s) :[JDV-J414-TYPE-ADRESSE-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j414-type-adresse-ms/$expand)
 * Nom: numeroVoie : [0..1] Texte
   * Description: Un numéro dans la voie ; dans les cas de numérotation sans extension, il est composé de 0 à 4 caractères numériques au maximum.
 * Nom: libelleVoie : [0..1] Texte
@@ -281,7 +281,7 @@ Ensemble des dispositifs prévus par le Code de l'Action Sociale et des Familles
 * Nom: existencePAG : [1..1] Indicateur
   * Description: Indicateur de l'existence d'un Plan d’Accompagnement Global (PAG).1 = si la décision est associée à un PAG au statut "élaboré" ou "validé" ;0 = pour tous les autres cas (la décision n'est pas associée à un PAG ou est associée à un PAG ayant un statut différent de "élaboré" ou "validé").
 * Nom: motifFinPAG : [0..1] Code
-  * Description: Lorsque le plan d'accompagnement global (PAG) arrive à échéance ou si le coordonnateur de parcours l'estime nécessaire, un bilan est élaboré et la phase d'actualisation est lancée afin de déterminer s'il faut prolonger ce PAG, le modifier ou y mettre fin. La MDPH, les partenaires et l'usager peuvent définir ensemble que le PAG n'est plus nécessaire et donc y mettre fin. Le consentement de la personne ou de son représentant légal est recueilli et l'information sur la fin du PAG transmise à l'ensemble des parties-prenantes.Le motif est obligatoire si existencePAG passe de "1" à "0". Le fait de mettre fin au PAG n'a pas d'impact sur les droits en cours (même ceux ouverts dans le cadre du PAG). Ces droits demeurent valables jusqu'à leur date d'échéance.Jeu(x) de valeur(s) associé(s) :[JDV-J404-MOTIF-FIN-PAG-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j404-motif-fin-pag-ms/$expand)
+  * Description: Lorsque le plan d'accompagnement global (PAG) arrive à échéance ou si le coordonnateur de parcours l'estime nécessaire, un bilan est élaboré et la phase d'actualisation est lancée afin de déterminer s'il faut prolonger ce PAG, le modifier ou y mettre fin. La MDPH, les partenaires et l'usager peuvent définir ensemble que le PAG n'est plus nécessaire et donc y mettre fin. Le consentement de la personne ou de son représentant légal est recueilli et l'information sur la fin du PAG transmise à l'ensemble des parties-prenantes.Le motif est obligatoire si existencePAG passe de "1" à "0". Le fait de mettre fin au PAG n'a pas d'impact sur les droits en cours (même ceux ouverts dans le cadre du PAG). Ces droits demeurent valables jusqu'à leur date d'échéance.Jeu(x) de valeur(s) associé(s) :[JDV-J403-MOTIF-FIN-PAG-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j403-motif-fin-pag-ms/$expand)
 * Nom: creton : [0..1] Indicateur
   * Description: Amendement Creton. Il s’agit d’un dispositif législatif permettant le maintien temporaire de jeunes adultes de plus de 20 ans en établissement pour enfants dans l’attente d’une place dans un établissement pour adultes.Obligatoire pour les décisions orientations ESSMS enfant, non prévu pour les autres orientations.0 = l'usager ne bénéficie pas de l'amendement Creton ;1 = l'usager bénéficie de l'amendement Creton.
 * Nom: taux : [0..1] Mesure
@@ -330,7 +330,7 @@ Pour les autres types de droits la valeur de cet attribut est un texte libre.
 * Nom: qualificationOrientation : [1..1] Code
   * Description: Il existe deux types d’orientation :* Orientation cible (appelée aussi orientation hors contrainte de l’offre, théorique ou idéale) : qualification d'une décision basée uniquement sur les attentes et les besoins évalués de la personne et considérée par l'équipe pluridisciplinaire ou la CDAPH comme la réponse la plus adaptée à ces attentes et besoins sans prendre en compte la réalité de l'offre disponible.
 *  Orientation alternative lorsqu'elle est partiellement adaptée au regard des attentes et des besoins évalués de la personne, mais qu'elle prend bien en compte la réalité de l'offre disponible et qu'elle a ainsi plus de chance d'être mise en oeuvre (appelée aussi "orientation par défaut").
-Jeu(x) de valeur(s) associé(s) :[JDV-J405-QUALIFICATION-ORIENTATION-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j405-qualification-orientation-ms/$expand)
+Jeu(x) de valeur(s) associé(s) :[JDV-J404-QUALIFICATION-ORIENTATION-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j404-qualification-orientation-ms/$expand)
 
 ##### Classe StructureAccueil
 
@@ -1040,7 +1040,7 @@ La classe PresenceAbsence indique si l'usager est présent ou absent.
 * Nom: dateFinPresenceAbsence : [1..1] DateHeure
   * Description: Date et heure de fin de la présence/absence de l'usager.
 * Nom: motifAbsence : [0..1] Code
-  * Description: Motif pour lequel l'usager n'est pas présent. Le motif est requis si le typePresenceAbsence=Absence.Jeu(x) de valeur(s) associé(s) :[JDV-J407-MOTIF-ABSENCE-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j407-motif-absence-ms/$expand)
+  * Description: Motif pour lequel l'usager n'est pas présent. Le motif est requis si le typePresenceAbsence=Absence.Jeu(x) de valeur(s) associé(s) :[JDV-J406-MOTIF-ABSENCE-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j406-motif-absence-ms/$expand)
 * Nom: absencePrevue : [0..1] Indicateur
   * Description: Absence prévue. Cet indicateur est requis si le typePresenceAbsence=Absence.1 = L'absence de l'usager est prévue0 = L'absence de l'usager n'était pas prévue
 
@@ -1053,7 +1053,7 @@ La classe Repas indique si l'usager bénéficie ou non des repas.
 * Nom: dateRepas : [1..1] DateHeure
   * Description: Date et heure du repas.
 * Nom: typeRepas : [1..1] Code
-  * Description: Type de repas.Jeu(x) de valeur(s) associé(s) :[JDV-J408-TYPE-REPAS-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j408-type-repas-ms/$expand)
+  * Description: Type de repas.Jeu(x) de valeur(s) associé(s) :[JDV-J407-TYPE-REPAS-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j407-type-repas-ms/$expand)
 * Nom: usagerPresent : [1..1] Indicateur
   * Description: Présence de l'usager au repas.1 = l'usager a pris son repas0 = l'usager n'a pas pris son repas
 
