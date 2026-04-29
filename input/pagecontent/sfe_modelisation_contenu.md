@@ -199,7 +199,7 @@ Adresse géopostale. Un emplacement auquel l’usager peut être trouvé, d'apr�
   <tr>
     <td>type : [0..1] Code</td>
     <td>Indique le ou les types d'adresse tel que "Adresse du domicile", "Adresse du domicile de secours", etc.<br>
-    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j415-type-adresse-ms/$expand">JDV-J415-TYPE-ADRESSE-MS</a></td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j414-type-adresse-ms/$expand">JDV-J414-TYPE-ADRESSE-MS</a></td>
   </tr>
   <tr>
     <td>numeroVoie : [0..1] Texte</td>
@@ -645,7 +645,7 @@ Ensemble des dispositifs prévus par le Code de l'Action Sociale et des Familles
     <td>Lorsque le plan d'accompagnement global (PAG) arrive à échéance ou si le coordonnateur de parcours l'estime nécessaire, un bilan est élaboré et la phase d'actualisation est lancée afin de déterminer s'il faut prolonger ce PAG, le modifier ou y mettre fin. 
 La MDPH, les partenaires et l'usager peuvent définir ensemble que le PAG n'est plus nécessaire et donc y mettre  fin. Le consentement de la personne ou de son représentant légal est recueilli et l'information sur la fin du PAG transmise à l'ensemble des parties-prenantes.<br>
     Le motif est obligatoire si existencePAG passe de "1" à "0". Le fait de mettre fin au PAG n'a pas d'impact sur les droits en cours (même ceux ouverts dans le cadre du PAG). Ces droits demeurent valables jusqu'à leur date d'échéance. <br>
-    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j404-motif-fin-pag-ms/$expand">JDV-J404-MOTIF-FIN-PAG-MS</a></td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j403-motif-fin-pag-ms/$expand">JDV-J403-MOTIF-FIN-PAG-MS</a></td>
   </tr>
   <tr>
     <td>creton : [0..1] Indicateur</td>
@@ -760,7 +760,7 @@ Pour les autres types de droits la valeur de cet attribut est un texte libre.
     <li>Orientation cible (appelée aussi orientation hors contrainte de l’offre, théorique ou idéale) : qualification d'une décision basée uniquement sur les attentes et les besoins évalués de la personne et considérée par l'équipe pluridisciplinaire ou la CDAPH comme la réponse la plus adaptée à ces attentes et besoins sans prendre en compte la réalité de l'offre disponible.</li>
     <li> Orientation alternative lorsqu'elle est partiellement adaptée au regard des attentes et des besoins évalués de la personne, mais qu'elle prend bien en compte la réalité de l'offre disponible et qu'elle a ainsi plus de chance d'être mise en oeuvre (appelée aussi "orientation par défaut").</li>
     </ul>
-    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j405-qualification-orientation-ms/$expand">JDV-J405-QUALIFICATION-ORIENTATION-MS</a>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j404-qualification-orientation-ms/$expand">JDV-J404-QUALIFICATION-ORIENTATION-MS</a>
     </td>
   </tr>
 </table>
@@ -2228,7 +2228,7 @@ La classe PresenceAbsence indique si l'usager est présent ou absent.
   <tr>
     <td>motifAbsence : [0..1] Code</td>
     <td>Motif pour lequel l'usager n'est pas présent. Le motif est requis si le typePresenceAbsence=Absence.<br>
-    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j407-motif-absence-ms/$expand">JDV-J407-MOTIF-ABSENCE-MS</a></td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j406-motif-absence-ms/$expand">JDV-J406-MOTIF-ABSENCE-MS</a></td>
   </tr>
   <tr>
     <td>absencePrevue : [0..1] Indicateur</td>
@@ -2258,7 +2258,7 @@ La classe Repas indique si l'usager bénéficie ou non des repas.
   <tr>
     <td>typeRepas : [1..1] Code</td>
     <td>Type de repas.<br>
-    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j408-type-repas-ms/$expand">JDV-J408-TYPE-REPAS-MS</a></td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j407-type-repas-ms/$expand">JDV-J407-TYPE-REPAS-MS</a></td>
   </tr>
   <tr>
     <td>usagerPresent : [1..1] Indicateur</td>
