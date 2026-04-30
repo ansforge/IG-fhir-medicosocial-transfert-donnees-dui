@@ -219,7 +219,7 @@ La demande de compensation est adressée à la CDAPH. Elle contient l'ensemble d
 * Nom: idDemandeOrientation : [1..1] Identifiant
   * Description: identifiant de la demande de compensation de l'usager créé par la MDPH à l'origine de la création du dossier de demande. Cet identifiant est obtenu par la concaténation de l'identifiant local attribué par la MDPH ayant créé le dossier de demande (idDemandeOrientationMDPHInitial) et du numéro cette MDPH (idMDPHInitial) : idDemandeOrientationMDPHInitial/idMDPHInitial
 * Nom: typeDemande : [0..1] Code
-  * Description: Type de la demande d'orientation.Jeu(x) de valeur(s) associé(s) : encours analyse NOS
+  * Description: Type de la demande d'orientation.Jeu(x) de valeur(s) associé(s) :[JDV-J394-TYPE-DEMANDE-COMPENSATION-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j394-type-demande-compensation-ms/$expand)
 * Nom: natureDemande : [0..1] Code
   * Description: Nature de la demande d'orientation. A renseigner si le type est valorisé.Jeu(x) de valeur(s) associé(s) :[JDV-J395-NATURE-DEMANDE-COMPENSATION](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j395-nature-demande-compensation-ms/$expand)
 * Nom: demandeOrientation : [0..*] ObjetBinaire
@@ -244,7 +244,7 @@ La décision est une réponse à une demande de compensation l'usager ou de son 
 * Nom: numeroEnregistrement : [0..1] Identifiant
   * Description: Numéro d’enregistrement au conseil général si différent du numéro d’identification MDPH.
 * Nom: typeDecision : [1..1] Code
-  * Description: Caractérise le type de décision prise par la CDAPH en réponse à une demande de compensation d’un usager (individu ou représentant légal), à une demande de révision par un tiers ou à un recours administratif préalable obligatoire (RAPO) d’un usager.Jeu(x) de valeur(s) associé(s) : en cours création NOS
+  * Description: Caractérise le type de décision prise par la CDAPH en réponse à une demande de compensation d’un usager (individu ou représentant légal), à une demande de révision par un tiers ou à un recours administratif préalable obligatoire (RAPO) d’un usager.Jeu(x) de valeur(s) associé(s) :[JDV-J398-TYPE-DECISION-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j398-type-decision-ms/$expand)
 * Nom: dateEffetCloture : [0..1] Date
   * Description: Date d'effet de la décision de clôture est la date à laquelle un droit n'est plus valable consécutivement à une décision de la CDAPH de clôture de droit ou d'attribution d'un droit de nature révision. A ne pas confondre avec la date d'échéance du droit qui est fixée lors de la décision d'attribution et qui ne doit jamais être modifiée.Cet attribut est obligatoire pour les décisions de type "5" (Clôture de droit).
 * Nom: idDecisionMAJ : [0..*] Identifiant
@@ -269,11 +269,11 @@ Ensemble des dispositifs prévus par le Code de l'Action Sociale et des Familles
 * Nom: numeroAllocataire : [0..1] Identifiant
   * Description: Numéro d’allocataire pour le droit ou la prestation.
 * Nom: categorieDroitPrestation : [1..1] Code
-  * Description: Catégorie de droit et prestation caractérisant la décision d'orientation.Jeu(x) de valeur(s) associé(s) : en cours d'analyse NOS
+  * Description: Catégorie de droit et prestation caractérisant la décision d'orientation.Jeu(x) de valeur(s) associé(s) :[JDV-J401-CATEGORIE-DROIT-PRESTATION-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j401-categorie-droit-prestation-ms/$expand)
 * Nom: typeDroitPrestation : [1..1] Code
-  * Description: Type de droit et prestation caractérisant la décision d'orientation.Jeu(x) de valeur(s) associé(s) : en cours d'analyse NOSLa règle métier entre les catégories et les types de droit et prestation est spécifiée dans la table d'association ASS en cours de création NOS
+  * Description: Type de droit et prestation caractérisant la décision d'orientation.Jeu(x) de valeur(s) associé(s) :[JDV-J402-TYPE-DROIT-PRESTATION-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j402-type-droit-prestation-ms/$expand)La règle métier entre les catégories et les types de droit et prestation est spécifiée dans la terminologie hierarchique[TRE-R420-DROIT-PRESTATION](https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r420-droit-prestation)
 * Nom: natureDroitPrestation : [1..1] Code
-  * Description: Nature du droit s’appliquant à tous les droits ou prestations ouverts par la CDAPH. Elle permet de gérer, le cas échéant, le lien entre la date d’ouverture du droit et la date de fin d’un droit précédent. Elle est déterminée par l’équipe pluridisciplinaire ou par la CDAPH.Jeu(x) de valeur(s) associé(s) : en cours d'analyse NOS
+  * Description: Nature du droit s’appliquant à tous les droits ou prestations ouverts par la CDAPH. Elle permet de gérer, le cas échéant, le lien entre la date d’ouverture du droit et la date de fin d’un droit précédent. Elle est déterminée par l’équipe pluridisciplinaire ou par la CDAPH.Jeu(x) de valeur(s) associé(s) :[JDV-J400-NATURE-DROIT-PRESTATION](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j400-nature-droit-prestation-ms/$expand)
 * Nom: dateOuverture : [1..1] Date
   * Description: La date d'ouverture de droit est la date à laquelle le droit devient effectif.Sauf disposition spécifique, la date d’ouverture des droits est la date de la décision de la CDAPH sur le fondement du principe de non-rétroactivité des décisions.
 * Nom: dateEcheance : [1..1] Date
@@ -1034,7 +1034,7 @@ La classe PresenceAbsence indique si l'usager est présent ou absent.
 * Nom: idPresenceAbsenceUsager : [1..1] Identifiant
   * Description: Identifiant technique de présence/absence obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature[TRE_G08-TypeIdentifiantPersonne](https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne)), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de deux caractères "PA" et du numéro de présence/absence dans le DUI (numPresenceAbsenceUsager) :idPresenceAbsenceUsager = 3+FINESS/identifiantLocalUsagerESSMS-PA-numPresenceAbsenceUsager
 * Nom: typePresenceAbsence : [1..1] Code
-  * Description: Type de déclaration : Présence ou Absence.Jeu(x) de valeur(s) associé(s) : Analyse en cours NOS
+  * Description: Type de déclaration : Présence ou Absence.Jeu(x) de valeur(s) associé(s) :[JDV-J405-TYPE-PRESENCE-ABSENCE-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j405-type-presence-absence-ms/$expand)
 * Nom: dateDebutPresenceAbsence : [1..1] DateHeure
   * Description: Date et heure de début de la présence/absence de l'usager.
 * Nom: dateFinPresenceAbsence : [1..1] DateHeure

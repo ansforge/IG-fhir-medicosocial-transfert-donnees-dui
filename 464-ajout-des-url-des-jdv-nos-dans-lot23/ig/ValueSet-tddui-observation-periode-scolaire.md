@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-observation-periode-scolaire | *Version*:2.3.0 |
-| Active as of 2026-04-29 | *Computable Name*:TDDUIObservationPeriodeScolaire |
+| Active as of 2026-04-30 | *Computable Name*:TDDUIObservationPeriodeScolaire |
 
  
 ValueSet pour l'Observation de la Période Scolaire. 
@@ -54,7 +54,7 @@ ValueSet pour l'Observation de la Période Scolaire.
   "title" : "TDDUI Observation Periode Scolaire",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-04-29T12:03:21+00:00",
+  "date" : "2026-04-30T08:28:21+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

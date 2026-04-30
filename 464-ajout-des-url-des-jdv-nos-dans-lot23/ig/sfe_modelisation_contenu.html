@@ -728,7 +728,7 @@ Droit temporel et exceptionnel conféré à une personne ou une organisation.</p
   <tr>
     <td>typeDemande : [0..1] Code </td>
     <td>Type de la demande d'orientation.<br/>
-    Jeu(x) de valeur(s) associé(s) : encours analyse NOS</td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j394-type-demande-compensation-ms/$expand">JDV-J394-TYPE-DEMANDE-COMPENSATION-MS</a></td>
   </tr>
   <tr>
     <td>natureDemande : [0..1] Code </td>
@@ -781,7 +781,7 @@ Droit temporel et exceptionnel conféré à une personne ou une organisation.</p
   <tr>
     <td>typeDecision : [1..1] Code</td>
     <td>Caractérise le type de décision prise par la CDAPH en réponse à une demande de compensation d’un usager (individu ou représentant légal), à une demande de révision par un tiers ou à un recours administratif préalable obligatoire (RAPO) d’un usager.<br/>
-    Jeu(x) de valeur(s) associé(s) : en cours création NOS
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j398-type-decision-ms/$expand">JDV-J398-TYPE-DECISION-MS</a>
     </td>
   </tr>
   <tr>
@@ -843,18 +843,18 @@ Ce champ apparaît (et devient obligatoire) uniquement si le code "9999 - Autre"
   <tr>
     <td>categorieDroitPrestation : [1..1] Code</td>
     <td>Catégorie de droit et prestation caractérisant la décision d'orientation.<br/>
-    Jeu(x) de valeur(s) associé(s) : en cours d'analyse NOS</td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j401-categorie-droit-prestation-ms/$expand">JDV-J401-CATEGORIE-DROIT-PRESTATION-MS</a></td>
   </tr>
   <tr>
     <td>typeDroitPrestation : [1..1] Code</td>
     <td>Type de droit et prestation caractérisant la décision d'orientation.<br/>
-    Jeu(x) de valeur(s) associé(s) : en cours d'analyse NOS<br/>
-    La règle métier entre les catégories et les types de droit et prestation est spécifiée dans la table d'association ASS en cours de création NOS</td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j402-type-droit-prestation-ms/$expand">JDV-J402-TYPE-DROIT-PRESTATION-MS</a><br/>
+    La règle métier entre les catégories et les types de droit et prestation est spécifiée dans la terminologie hierarchique <a href="https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r420-droit-prestation">TRE-R420-DROIT-PRESTATION</a></td>
   </tr>
   <tr>
     <td>natureDroitPrestation : [1..1] Code</td>
     <td>Nature du droit s’appliquant à tous les droits ou prestations ouverts par la CDAPH. Elle permet de gérer, le cas échéant, le lien entre la date d’ouverture du droit et la date de fin d’un droit précédent. Elle est déterminée par l’équipe pluridisciplinaire ou par la CDAPH.<br/>
-    Jeu(x) de valeur(s) associé(s) : en cours d'analyse NOS</td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j400-nature-droit-prestation-ms/$expand">JDV-J400-NATURE-DROIT-PRESTATION</a></td>
   </tr>
   <tr>
     <td>dateOuverture : [1..1] Date</td>
@@ -2446,7 +2446,7 @@ Le détail de l’évaluation de ce champ peut être transmis à travers un deux
   <tr>
     <td>typePresenceAbsence : [1..1] Code</td>
     <td>Type de déclaration : Présence ou Absence.<br/>
-    Jeu(x) de valeur(s) associé(s) : Analyse en cours NOS</td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j405-type-presence-absence-ms/$expand">JDV-J405-TYPE-PRESENCE-ABSENCE-MS</a></td>
   </tr>
   <tr>
     <td>dateDebutPresenceAbsence : [1..1] DateHeure</td>
@@ -2730,7 +2730,7 @@ Le détail de l’évaluation de ce champ peut être transmis à travers un deux
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Apr 29, 2026 12:03+0000">2026-04-29</span>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.tddui#2.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 30, 2026 08:28+0000">2026-04-30</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |

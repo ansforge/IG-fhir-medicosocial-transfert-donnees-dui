@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-participant-present | *Version*:2.3.0 |
-| Active as of 2026-04-29 | *Computable Name*:TDDUIParticipantPresent |
+| Active as of 2026-04-30 | *Computable Name*:TDDUIParticipantPresent |
 
 Indique la présence du participant à l'événement.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-participant-pr
   "name" : "TDDUIParticipantPresent",
   "title" : "TDDUI Participant Present",
   "status" : "active",
-  "date" : "2026-04-29T12:03:21+00:00",
+  "date" : "2026-04-30T08:28:21+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
