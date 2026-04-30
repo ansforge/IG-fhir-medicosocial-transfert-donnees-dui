@@ -198,7 +198,8 @@ Adresse géopostale. Un emplacement auquel l’usager peut être trouvé, d'apr�
   </tr>
   <tr>
     <td>type : [0..1] Code</td>
-    <td>Indique le ou les types d'adresse tel que "Adresse du domicile", "Adresse du domicile de secours", etc. </td>
+    <td>Indique le ou les types d'adresse tel que "Adresse du domicile", "Adresse du domicile de secours", etc.<br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j414-type-adresse-ms/$expand">JDV-J414-TYPE-ADRESSE-MS</a></td>
   </tr>
   <tr>
     <td>numeroVoie : [0..1] Texte</td>
@@ -263,12 +264,12 @@ Adresse de télécommunication à laquelle l’usager peut être contactée (té
   <tr>
     <td>canal : [1..1] Code</td>
     <td>Code spécifiant le canal ou la manière dont s'établit la communication (téléphone, e-mail, URL, etc.).<br>
-    Jeu(x) de valeur associé(s) : JDV en cours de d'analyse NOS</td>
+    Jeu(x) de valeur associé(s) : <a href="https:https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j396-canal-communication-ms/$expand">JDV-J396-CANAL-COMMUNICATION-MS</a></td>
   </tr>
    <tr>
     <td>typeMessagerie : [0..1] Code</td>
     <td>Type de messagerie électronique rassemblant des acteurs (personne physique, personne morale ou système) identifiés et enregistrés selon des règles qui garantissent leur légitimité à l'utiliser.<br>
-    Jeu(x) de valeur associé(s) : JDV en cours de d'analyse NOS</td>
+    Jeu(x) de valeur associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j397-type-messagerie-ms/$expand">JDV-J397-TYPE-MESSAGERIE-MS</a></td>
   </tr>
   <tr>
     <td>adresseTelecom : [1..1] Texte</td>
@@ -277,7 +278,7 @@ Adresse de télécommunication à laquelle l’usager peut être contactée (té
     <tr>
     <td>utilisation : [0..1] Code</td>
     <td>Précise l'utilisation du canal de communication (par exemple à des fins professionnelles, privées, etc.).<br>
-    Jeu(x) de valeur associé(s) : JDV en cours de d'analyse NOS</td>
+    Jeu(x) de valeur associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j393-utilisation-canal-communication-ms/$expand">JDV-J393-UTILISATION-CANAL-COMMUNICATION</a></td>
   </tr>
 </table>
 
@@ -293,7 +294,7 @@ Adresse de courrier de l’usager.
   <tr>
     <td>typeCourrier : [0..1] Code</td>
     <td>Type de courrier qui peut être adressé à l'usager.<br>
-    Jeu(x) associé(s) : en cours de création NOS</td>
+    Jeu(x) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j392-type-courrier-ms/$expand">JDV-J392-TYPE-COURRIER-MS</a></td>
   </tr>
   <tr>
     <td>libelleDestinataire : [0..1] Texte</td>
@@ -492,12 +493,12 @@ La demande de compensation est adressée à la CDAPH. Elle contient l'ensemble d
   <tr>
     <td>typeDemande : [0..1] Code </td>
     <td>Type de la demande d'orientation.<br>
-    Jeu(x) de valeur(s) associé(s) : encours analyse NOS</td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j394-type-demande-compensation-ms/$expand">JDV-J394-TYPE-DEMANDE-COMPENSATION-MS</a></td>
   </tr>
   <tr>
     <td>natureDemande : [0..1] Code </td>
     <td>Nature de la demande d'orientation. A renseigner si le type est valorisé.<br>
-    Jeu(x) de valeur(s) associé(s) : encours analyse NOS</td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j395-nature-demande-compensation-ms/$expand">JDV-J395-NATURE-DEMANDE-COMPENSATION</a></td>
   </tr>
   <tr>
     <td>demandeOrientation : [0..*] ObjetBinaire </td>
@@ -547,7 +548,7 @@ La décision est une réponse à une demande de compensation l'usager ou de son 
   <tr>
     <td>typeDecision : [1..1] Code</td>
     <td>Caractérise le type de décision prise par la CDAPH en réponse à une demande de compensation d’un usager (individu ou représentant légal), à une demande de révision par un tiers ou à un recours administratif préalable obligatoire (RAPO) d’un usager.<br>
-    Jeu(x) de valeur(s) associé(s) : en cours création NOS
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j398-type-decision-ms/$expand">JDV-J398-TYPE-DECISION-MS</a>
     </td>
   </tr>
   <tr>
@@ -609,18 +610,18 @@ Ensemble des dispositifs prévus par le Code de l'Action Sociale et des Familles
   <tr>
     <td>categorieDroitPrestation : [1..1] Code</td>
     <td>Catégorie de droit et prestation caractérisant la décision d'orientation.<br>
-    Jeu(x) de valeur(s) associé(s) : en cours d'analyse NOS</td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j401-categorie-droit-prestation-ms/$expand">JDV-J401-CATEGORIE-DROIT-PRESTATION-MS</a></td>
   </tr>
   <tr>
     <td>typeDroitPrestation : [1..1] Code</td>
     <td>Type de droit et prestation caractérisant la décision d'orientation.<br>
-    Jeu(x) de valeur(s) associé(s) : en cours d'analyse NOS<br>
-    La règle métier entre les catégories et les types de droit et prestation est spécifiée dans la table d'association ASS en cours de création NOS</td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j402-type-droit-prestation-ms/$expand">JDV-J402-TYPE-DROIT-PRESTATION-MS</a><br>
+    La règle métier entre les catégories et les types de droit et prestation est spécifiée dans la terminologie hierarchique <a href="https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r420-droit-prestation">TRE-R420-DROIT-PRESTATION</a></td>
   </tr>
   <tr>
     <td>natureDroitPrestation : [1..1] Code</td>
     <td>Nature du droit s’appliquant à tous les droits ou prestations ouverts par la CDAPH. Elle permet de gérer, le cas échéant, le lien entre la date d’ouverture du droit et la date de fin d’un droit précédent. Elle est déterminée par l’équipe pluridisciplinaire ou par la CDAPH.<br>
-    Jeu(x) de valeur(s) associé(s) : en cours d'analyse NOS</td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j400-nature-droit-prestation-ms/$expand">JDV-J400-NATURE-DROIT-PRESTATION</a></td>
   </tr>
   <tr>
     <td>dateOuverture : [1..1] Date</td>
@@ -644,8 +645,7 @@ Ensemble des dispositifs prévus par le Code de l'Action Sociale et des Familles
     <td>Lorsque le plan d'accompagnement global (PAG) arrive à échéance ou si le coordonnateur de parcours l'estime nécessaire, un bilan est élaboré et la phase d'actualisation est lancée afin de déterminer s'il faut prolonger ce PAG, le modifier ou y mettre fin. 
 La MDPH, les partenaires et l'usager peuvent définir ensemble que le PAG n'est plus nécessaire et donc y mettre  fin. Le consentement de la personne ou de son représentant légal est recueilli et l'information sur la fin du PAG transmise à l'ensemble des parties-prenantes.<br>
     Le motif est obligatoire si existencePAG passe de "1" à "0". Le fait de mettre fin au PAG n'a pas d'impact sur les droits en cours (même ceux ouverts dans le cadre du PAG). Ces droits demeurent valables jusqu'à leur date d'échéance. <br>
-    Jeu(x) de valeur(s) associé(s) : en cours d'analyse NOS
-    </td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j403-motif-fin-pag-ms/$expand">JDV-J403-MOTIF-FIN-PAG-MS</a></td>
   </tr>
   <tr>
     <td>creton : [0..1] Indicateur</td>
@@ -760,7 +760,7 @@ Pour les autres types de droits la valeur de cet attribut est un texte libre.
     <li>Orientation cible (appelée aussi orientation hors contrainte de l’offre, théorique ou idéale) : qualification d'une décision basée uniquement sur les attentes et les besoins évalués de la personne et considérée par l'équipe pluridisciplinaire ou la CDAPH comme la réponse la plus adaptée à ces attentes et besoins sans prendre en compte la réalité de l'offre disponible.</li>
     <li> Orientation alternative lorsqu'elle est partiellement adaptée au regard des attentes et des besoins évalués de la personne, mais qu'elle prend bien en compte la réalité de l'offre disponible et qu'elle a ainsi plus de chance d'être mise en oeuvre (appelée aussi "orientation par défaut").</li>
     </ul>
-    Jeu(x) de valeur(s) associé(s) : en cours analyse NOS
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j404-qualification-orientation-ms/$expand">JDV-J404-QUALIFICATION-ORIENTATION-MS</a>
     </td>
   </tr>
 </table>
@@ -2215,7 +2215,7 @@ La classe PresenceAbsence indique si l'usager est présent ou absent.
   <tr>
     <td>typePresenceAbsence : [1..1] Code</td>
     <td>Type de déclaration : Présence ou Absence.<br>
-    Jeu(x) de valeur(s) associé(s) : Analyse en cours NOS</td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j405-type-presence-absence-ms/$expand">JDV-J405-TYPE-PRESENCE-ABSENCE-MS</a></td>
   </tr>
   <tr>
     <td>dateDebutPresenceAbsence : [1..1] DateHeure</td>
@@ -2228,7 +2228,7 @@ La classe PresenceAbsence indique si l'usager est présent ou absent.
   <tr>
     <td>motifAbsence : [0..1] Code</td>
     <td>Motif pour lequel l'usager n'est pas présent. Le motif est requis si le typePresenceAbsence=Absence.<br>
-    Jeu(x) de valeur(s) associé(s) : Analyse en cours NOS</td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j406-motif-absence-ms/$expand">JDV-J406-MOTIF-ABSENCE-MS</a></td>
   </tr>
   <tr>
     <td>absencePrevue : [0..1] Indicateur</td>
@@ -2258,7 +2258,7 @@ La classe Repas indique si l'usager bénéficie ou non des repas.
   <tr>
     <td>typeRepas : [1..1] Code</td>
     <td>Type de repas.<br>
-    Jeu(x) de valeur(s) associé(s) : Analyse en cours NOS</td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j407-type-repas-ms/$expand">JDV-J407-TYPE-REPAS-MS</a></td>
   </tr>
   <tr>
     <td>usagerPresent : [1..1] Indicateur</td>
