@@ -24,7 +24,7 @@ Profil: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenemen
 
 **identifier**: Visit Number/3480787529/147720425367411-EVN-12548
 
-**status**: Finished
+**status**: finished
 
 **class**: [ActCode: HH](http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActCode.html#v3-ActCode-HH) (home health)
 
