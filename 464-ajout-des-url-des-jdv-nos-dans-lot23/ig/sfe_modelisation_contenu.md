@@ -256,7 +256,7 @@ Ne pas transmettre si typeDecision = '1' (Attribution) et DroitPrestation.nature
 * Nom: dateDecision : [0..1] Date
   * Description: Date à laquelle se réunit la CDAPH pour prendre la décision.
 * Nom: motivation : [0..*] Code
-  * Description: Considération(s) de droit ou de fait qui constituent le fondement de la décision.Jeu(x) de valeur(s) associé(s) : en cours création NOS
+  * Description: Considération(s) de droit ou de fait qui constituent le fondement de la décision.Jeu(x) de valeur(s) associé(s) :[JDV-J399-MOTIVATION-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j399-motivation-ms/$expand)
 * Nom: motivationLocale : [0..*] Texte
   * Description: Champ libre permettant de renseigner une motivation locale. Ce champ apparaît (et devient obligatoire) uniquement si le code "9999 - Autre" est renseigné pour l'élément "motivation".
 * Nom: commentaire : [0..1] Texte
