@@ -580,7 +580,7 @@ La décision est une réponse à une demande de compensation l'usager ou de son 
   <tr>
     <td>motivation : [0..*] Code</td>
     <td>Considération(s) de droit ou de fait qui constituent le fondement de la décision.<br>
-    Jeu(x) de valeur(s) associé(s) : en cours création NOS
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j399-motivation-ms/$expand">JDV-J399-MOTIVATION-MS</a>
     </td>
   </tr>
   <tr>
