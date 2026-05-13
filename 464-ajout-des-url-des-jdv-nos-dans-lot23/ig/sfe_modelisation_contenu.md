@@ -308,15 +308,15 @@ Jeu(x) de valeur(s) associé(s) :[JDV_J30-TemporaliteAccueil-ROR](https://mos.es
 * Type droit prestation: 7.8 Orientation vers un Service d'éducation spéciale et de soins à domicile (SESSAD)
   * Jeu de valeurs associé: Jeu(x) de valeur(s) associé(s) :[JDV-J408-ORIENTATION-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j408-orientation-ms/$expand)Seuls les codes de 1 à 6 sont autorisés.
 * Type droit prestation: 7.9 Orientation vers un Service d'accompagnement familial et d'éducation précoce (SAFEP)
-  * Jeu de valeurs associé: Jeu(x) de valeur(s) associé(s) :[JDV-J408-ORIENTATION-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j408-orientation-ms/$expand)
+  * Jeu de valeurs associé: Jeu(x) de valeur(s) associé(s) :[JDV-J408-ORIENTATION-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j408-orientation-ms/$expand)Seuls les codes 7 et 8 sont autorisés.
 * Type droit prestation: 13.1 Orientation vers un établissement d'accueil non médicalisé
   * Jeu de valeurs associé: Non renseigné
 * Type droit prestation: 13.2 Orientation vers un établissement d'accueil médicalisé en tout ou partie
   * Jeu de valeurs associé: Non renseigné
 * Type droit prestation: 8.3 Orientation en Enseignement adapté (SEGPA/EREA)
-  * Jeu de valeurs associé: Jeu(x) de valeur(s) associé(s) :[JDV-J408-ORIENTATION-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j408-orientation-ms/$expand)
+  * Jeu de valeurs associé: Jeu(x) de valeur(s) associé(s) :[JDV-J408-ORIENTATION-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j408-orientation-ms/$expand)Seuls les codes 9 et 10 sont autorisés.
 * Type droit prestation: 8.6 Orientation en Unité d'enseignement
-  * Jeu de valeurs associé: Jeu(x) de valeur(s) associé(s) :[JDV-J408-ORIENTATION-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j408-orientation-ms/$expand)
+  * Jeu de valeurs associé: Jeu(x) de valeur(s) associé(s) :[JDV-J408-ORIENTATION-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j408-orientation-ms/$expand)Seuls les codes UEA et UEM sont autorisés.
 
 Pour les autres types de droits la valeur de cet attribut est un texte libre.
 * Nom: accueilSequentiel : [0..1] Indicateur

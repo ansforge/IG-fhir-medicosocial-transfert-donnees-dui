@@ -54,7 +54,7 @@ ValueSet pour la définition des éléments spécifiques des output dans la ress
   "title" : "TDDUI Task Output Bilan",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-05-13T09:55:21+00:00",
+  "date" : "2026-05-13T11:02:09+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
