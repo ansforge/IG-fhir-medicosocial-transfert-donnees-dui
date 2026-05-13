@@ -662,7 +662,7 @@ La MDPH, les partenaires et l'usager peuvent définir ensemble que le PAG n'est 
   <tr>
     <td>typeCompensation : [0..1] Code</td>
     <td>Type de compensation dans le cas d’une aide sociale.<br>
-    Jeu(x) de valeur(s) associé(s) : en cours d'analyse NOS
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j394-type-demande-compensation-ms/$expand">JDV-J394-TYPE-DEMANDE-COMPENSATION-MS</a>
     </td>
   </tr>
   <tr>
