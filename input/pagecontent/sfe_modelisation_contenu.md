@@ -708,12 +708,13 @@ Pour les types de droit et prestation suivants :
   </tr>
   <tr>
     <td>7.8 Orientation vers un Service d'éducation spéciale et de soins à domicile (SESSAD)</td>
-    <td>Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j408-orientation-ms/$expand">JDV-J408-ORIENTATION-MS</a>
+    <td>Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j408-orientation-ms/$expand">JDV-J408-ORIENTATION-MS</a><br>
     Seuls les codes de 1 à 6 sont autorisés.</td>
   </tr>
   <tr>
     <td>7.9 Orientation vers un Service d'accompagnement familial et d'éducation précoce (SAFEP)</td>
-    <td>Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j408-orientation-ms/$expand">JDV-J408-ORIENTATION-MS</a></td>
+    <td>Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j408-orientation-ms/$expand">JDV-J408-ORIENTATION-MS</a><br>
+    Seuls les codes 7 et 8 sont autorisés.</td>
   </tr>
   <tr>
     <td>13.1 Orientation vers un établissement d'accueil non médicalisé</td>
@@ -725,11 +726,13 @@ Pour les types de droit et prestation suivants :
   </tr>
   <tr>
     <td>8.3 Orientation en Enseignement adapté (SEGPA/EREA)</td>
-    <td>Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j408-orientation-ms/$expand">JDV-J408-ORIENTATION-MS</a></td>
+    <td>Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j408-orientation-ms/$expand">JDV-J408-ORIENTATION-MS</a><br>
+    Seuls les codes 9 et 10 sont autorisés.</td>
   </tr>
   <tr>
     <td>8.6 Orientation en Unité d'enseignement</td>
-    <td>Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j408-orientation-ms/$expand">JDV-J408-ORIENTATION-MS</a></td>
+    <td>Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j408-orientation-ms/$expand">JDV-J408-ORIENTATION-MS</a><br>
+    Seuls les codes UEA et UEM sont autorisés.</td>
   </tr>
   </table>
 Pour les autres types de droits la valeur de cet attribut est un texte libre.
