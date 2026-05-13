@@ -708,27 +708,28 @@ Pour les types de droit et prestation suivants :
   </tr>
   <tr>
     <td>7.8 Orientation vers un Service d'éducation spéciale et de soins à domicile (SESSAD)</td>
-    <td>en cours analyse NOS</td>
+    <td>Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j408-orientation-ms/$expand">JDV-J408-ORIENTATION-MS</a>
+    Seuls les codes de 1 à 6 sont autorisés.</td>
   </tr>
   <tr>
     <td>7.9 Orientation vers un Service d'accompagnement familial et d'éducation précoce (SAFEP)</td>
-    <td>en cours analyse NOS</td>
+    <td>Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j408-orientation-ms/$expand">JDV-J408-ORIENTATION-MS</a></td>
   </tr>
   <tr>
     <td>13.1 Orientation vers un établissement d'accueil non médicalisé</td>
-    <td>en cours analyse NOS</td>
+    <td>Non renseigné</td>
   </tr>
    <tr>
     <td>13.2 Orientation vers un établissement d'accueil médicalisé en tout ou partie</td>
-    <td>en cours analyse NOS</td>
+    <td>Non renseigné</td>
   </tr>
   <tr>
     <td>8.3 Orientation en Enseignement adapté (SEGPA/EREA)</td>
-    <td>en cours analyse NOS</td>
+    <td>Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j408-orientation-ms/$expand">JDV-J408-ORIENTATION-MS</a></td>
   </tr>
   <tr>
     <td>8.6 Orientation en Unité d'enseignement</td>
-    <td>en cours analyse NOS</td>
+    <td>Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j408-orientation-ms/$expand">JDV-J408-ORIENTATION-MS</a></td>
   </tr>
   </table>
 Pour les autres types de droits la valeur de cet attribut est un texte libre.
