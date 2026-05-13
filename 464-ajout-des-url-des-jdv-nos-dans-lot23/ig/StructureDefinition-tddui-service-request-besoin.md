@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-service-reques
   "name" : "TDDUIServiceRequestBesoin",
   "title" : "TDDUI ServiceRequest Besoin",
   "status" : "active",
-  "date" : "2026-05-13T12:39:13+00:00",
+  "date" : "2026-05-13T13:10:24+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

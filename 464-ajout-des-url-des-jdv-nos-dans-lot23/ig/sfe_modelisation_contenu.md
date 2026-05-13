@@ -287,7 +287,7 @@ Ensemble des dispositifs prévus par le Code de l'Action Sociale et des Familles
 * Nom: taux : [0..1] Mesure
   * Description: Taux dans le cas d’une aide sociale.
 * Nom: typeCompensation : [0..1] Code
-  * Description: Type de compensation dans le cas d’une aide sociale.Jeu(x) de valeur(s) associé(s) : en cours d'analyse NOS
+  * Description: Type de compensation dans le cas d’une aide sociale.Jeu(x) de valeur(s) associé(s) :[JDV-J394-TYPE-DEMANDE-COMPENSATION-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j394-type-demande-compensation-ms/$expand)
 * Nom: commentaire : [0..1] Texte
   * Description: Commentaire relatif au droit ou à la prestation.
 
