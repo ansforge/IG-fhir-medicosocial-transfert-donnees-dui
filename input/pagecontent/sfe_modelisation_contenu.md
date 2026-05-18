@@ -244,7 +244,8 @@ Adresse géopostale. Un emplacement auquel l’usager peut être trouvé, d'apr�
   </tr>
   <tr>
     <td>pays : [0..1] Code</td>
-    <td>Nom du pays pour les adresses internationales.</td>
+    <td>Nom du pays pour les adresses internationales.<br>
+    Nomenclature(s) associée(s) : Norme ISO 3166</td>
   </tr>
   <tr>
     <td>commentaire : [0..1] Texte</td>
