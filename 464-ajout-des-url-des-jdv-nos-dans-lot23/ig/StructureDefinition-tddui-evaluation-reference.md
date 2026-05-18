@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-evaluation-ref
   "name" : "TDDUIEvaluationRef",
   "title" : "TDDUI Evaluation Ref",
   "status" : "active",
-  "date" : "2026-05-18T13:17:12+00:00",
+  "date" : "2026-05-18T14:00:34+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

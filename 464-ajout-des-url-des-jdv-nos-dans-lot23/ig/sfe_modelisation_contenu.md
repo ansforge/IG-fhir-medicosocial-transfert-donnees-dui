@@ -106,7 +106,7 @@ Adresse géopostale. Un emplacement auquel l’usager peut être trouvé, d'apr�
  Libellé du bureau distributeur c'est-à-dire (dans la très grande majorité des cas) le libellé de la commune siège du bureau CEDEX ; la mention CEDEX doit obligatoirement suivre le libellé du bureau CEDEX ; dans le cas où il existe plusieurs bureaux CEDEX pour une même entité ou commune, chaque bureau CEDEX sera identifié par un numéro (exemple : ROUBAIX CEDEX 2) ; ce numéro correspond au numéro d'arrondissement dans le cas des villes à arrondissements, à un numéro d'ordre dans les autres cas.
 
 * Nom: pays : [0..1] Code
-  * Description: Nom du pays pour les adresses internationales.
+  * Description: Nom du pays pour les adresses internationales.Nomenclature(s) associée(s) : Norme ISO 3166
 * Nom: commentaire : [0..1] Texte
   * Description: Commentaire relatif à l’adresse.
 
