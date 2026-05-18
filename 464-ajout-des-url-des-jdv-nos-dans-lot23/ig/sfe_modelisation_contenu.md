@@ -1077,7 +1077,7 @@ Données d'identification pérennes d’une personne physique, qui travaille en 
   * Description: Rôle fonctionnel du professionnel.Jeu(x) de valeur(s) associé(s) :[JDV-J47-FunctionCode-CISIS](https://mos.esante.gouv.fr/NOS/JDV_J47-FunctionCode-CISIS/FHIR/JDV-J47-FunctionCode-CISIS)
 * Nom: modeExercice : [0..1] Code
   * Description: Mode d'exercice du professionnel. Décrit selon quelle modalité est exercée l'activité du professionnel par rapport à son établissement de rattachement.Jeu(x) de valeur(s) associé(s) :[JDV-J117-ModeExercice-ENREG](https://mos.esante.gouv.fr/NOS/JDV_J117-ModeExercice-ENREG/FHIR/JDV-J117-ModeExercice-ENREG)
-* Nom: etablissementDeRattachement : [0..1] EntiteJuridique
+* Nom: etablissementDeRattachement : [0..1][Entité Juridique](#classe-entité-juridique)
   * Description: Structure juridique de rattachement du professionnel.
 
 _Remarque_: Certaines professions du médico-social n'ont pas de correspondance directe dans les référentiels du CI-SIS. L'annexe [Professions du médico-social](annexes_codes_professions_roles_modes_exercices.md) donne la correspondance entre la profession du médico-social et le triptyque "profession/rôle/mode d'exercice" référencé dans les jeux de valeurs du CI-SIS.
