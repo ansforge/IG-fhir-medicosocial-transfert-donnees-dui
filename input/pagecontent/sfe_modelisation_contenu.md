@@ -2321,7 +2321,7 @@ Données d'identification pérennes d’une personne physique, qui travaille en 
     </td>
   </tr>
   <tr>
-    <td>etablissementDeRattachement : [0..1] EntiteJuridique</td>
+    <td>etablissementDeRattachement : [0..1] <a href="#classe-entité-juridique">Entité Juridique</a></td>
     <td>Structure juridique de rattachement du professionnel.</td>
   </tr>
 </table>
