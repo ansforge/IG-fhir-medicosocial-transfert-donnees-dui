@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-encounter-even
   "name" : "TDDUIEncounterEvenement",
   "title" : "TDDUI Encounter Evenement",
   "status" : "active",
-  "date" : "2026-05-18T13:11:08+00:00",
+  "date" : "2026-05-18T13:17:12+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
