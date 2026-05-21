@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport | *Version*:2.3.0 |
-| Active as of 2026-05-18 | *Computable Name*:TDDUITaskInputTransport |
+| Active as of 2026-05-21 | *Computable Name*:TDDUITaskInputTransport |
 
  
 CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les transports dans le cadre du DUI. 
@@ -35,7 +35,7 @@ CodeSystem pour la définition des éléments spécifiques des input dans la res
   "title" : "TDDUI Task Input Transport",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-05-18T14:12:30+00:00",
+  "date" : "2026-05-21T09:30:02+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

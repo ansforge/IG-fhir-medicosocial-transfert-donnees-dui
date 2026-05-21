@@ -467,9 +467,7 @@ Permis de conduire de l’usager.
 * Nom: numPermisConduire : [0..1] Identifiant
   * Description: Numéro du permis de conduire de l'usager.
 * Nom: categorie : [0..1] Code
-  * Description: Catégorie du permis de conduire.Jeu(x) de valeur(s) associé(s) : en cours de création NOS
-* Nom: type : [0..1] Code
-  * Description: Type du permis de conduire.Jeu(x) de valeur(s) associé(s) : en cours de création NOSLa règle métier entre les catégories et les types est spécifiée dans la table d'association ASS en cours de création NOS
+  * Description: Catégorie du permis de conduire.Jeu(x) de valeur(s) associé(s) :[JDV-J410-CATEGORIE-PERMIS-CONDUIRE-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j410-categorie-permis-conduire-ms/$expand)
 * Nom: dateObtention : [0..1] Date
   * Description: Date d’obtention du permis de conduire.
 * Nom: dateValidite : [0..1] Date
@@ -881,11 +879,11 @@ La classe EntiteGeographique est issue du MOS et est profilée pour ce volet.
 * Nom: niveauScolaireReel : [0..1] ConceptCode
   * Description: Situation scolaire réelle de l'usager.Jeu(x) de valeur(s) associé(s) : en cours de création NOS
 * Nom: niveauScolaireSuivi : [0..1] ConceptCode
-  * Description: Situation scolaire suivie de l'usager.Jeu(x) de valeur(s) associé(s) : en cours de création NOS
+  * Description: Situation scolaire suivie de l'usager.Jeu(x) de valeur(s) associé(s) :[JDV-J411-NIVEAU-SCOLAIRE-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j411-niveau-scolaire-ms/$expand)
 * Nom: typeEnseignementSpecialise : [0..*] ConceptCode
   * Description: Type enseignement spécialisé.Jeu(x) de valeur(s) associé(s) :[JDV-J386-TYPE-ENSEIGNEMENT-SPECIALISE-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j386-type-enseignement-specialise-ms/$expand)
 * Nom: diplome : [0..*] ConceptCode
-  * Description: Diplôme obtenu au cours de la période scolaire.Jeu(x) de valeur(s) associé(s) :[JDV-J81-TypeDiplome-RASS](https://mos.esante.gouv.fr/NOS/JDV_J81-TypeDiplome-RASS/FHIR/JDV-J81-TypeDiplome-RASS)
+  * Description: Diplôme obtenu au cours de la période scolaire.Jeu(x) de valeur(s) associé(s) :[JDV-J391-NIVEAU-DIPLOME-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j391-niveau-diplome-ms/$expand)
 * Nom: volumeScolarisation : [0..1] Numerique
   * Description: Volume horaire de scolarisation de l'usager sur la période de scolarité. L'unité correspond ici à la demi-journée.
 * Nom: commentaireAnneeScolaire : [0..1] Texte

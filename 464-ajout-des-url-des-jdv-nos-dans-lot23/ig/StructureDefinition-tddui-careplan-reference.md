@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference | *Version*:2.3.0 |
-| Active as of 2026-05-18 | *Computable Name*:TDDUICarePlanProjetPersoRef |
+| Active as of 2026-05-21 | *Computable Name*:TDDUICarePlanProjetPersoRef |
 
 Liens vers le projet personnalisé, utilisables dans le profil TDDUIGoalObjectif.
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-careplan-refer
   "name" : "TDDUICarePlanProjetPersoRef",
   "title" : "TDDUI CarePlan Projet Perso Ref",
   "status" : "active",
-  "date" : "2026-05-18T14:12:30+00:00",
+  "date" : "2026-05-21T09:30:02+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
