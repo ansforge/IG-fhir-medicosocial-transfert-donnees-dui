@@ -1066,13 +1066,7 @@ Permis de conduire de l’usager.
   <tr>
     <td>categorie : [0..1] Code</td>
     <td>Catégorie du permis de conduire.<br>
-    Jeu(x) de valeur(s) associé(s) : en cours de création NOS</td>
-  </tr>
-  <tr>
-    <td>type : [0..1] Code</td>
-    <td>Type du permis de conduire.<br>
-    Jeu(x) de valeur(s) associé(s) : en cours de création NOS <br>
-    La règle métier entre les catégories et les types est spécifiée dans la table d'association ASS en cours de création NOS</td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j410-categorie-permis-conduire-ms/$expand">JDV-J410-CATEGORIE-PERMIS-CONDUIRE-MS</a></td>
   </tr>
   <tr>
     <td>dateObtention : [0..1] Date</td>
@@ -1912,7 +1906,7 @@ La classe EntiteGeographique est issue du MOS et est profilée pour ce volet.
  <tr>
     <td>niveauScolaireSuivi : [0..1] ConceptCode</td>
     <td>Situation scolaire suivie de l'usager.<br>
-    Jeu(x) de valeur(s) associé(s) : en cours de création NOS</td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j411-niveau-scolaire-ms/$expand">JDV-J411-NIVEAU-SCOLAIRE-MS</a></td>
  </tr>
   <tr>
     <td>typeEnseignementSpecialise : [0..*] ConceptCode</td>
@@ -1922,7 +1916,7 @@ La classe EntiteGeographique est issue du MOS et est profilée pour ce volet.
  <tr>
     <td>diplome : [0..*] ConceptCode</td>
     <td>Diplôme obtenu au cours de la période scolaire.<br>
-    Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J81-TypeDiplome-RASS/FHIR/JDV-J81-TypeDiplome-RASS">JDV-J81-TypeDiplome-RASS</a></td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j391-niveau-diplome-ms/$expand">JDV-J391-NIVEAU-DIPLOME-MS</a></td>
  </tr>
  <tr>
     <td>volumeScolarisation : [0..1] Numerique</td>
