@@ -199,7 +199,7 @@ Adresse géopostale. Un emplacement auquel l’usager peut être trouvé, d'apr�
   <tr>
     <td>type : [0..1] Code</td>
     <td>Indique le ou les types d'adresse tel que "Adresse du domicile", "Adresse du domicile de secours", etc.<br>
-    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j414-type-adresse-ms/$expand">JDV-J414-TYPE-ADRESSE-MS</a></td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j409-type-adresse-ms/$expand">JDV-J409-TYPE-ADRESSE-MS</a></td>
   </tr>
   <tr>
     <td>numeroVoie : [0..1] Texte</td>
