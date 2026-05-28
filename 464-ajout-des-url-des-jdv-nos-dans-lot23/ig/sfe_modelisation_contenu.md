@@ -84,7 +84,7 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
 Adresse géopostale. Un emplacement auquel l’usager peut être trouvé, d'après la norme AFNOR NF Z10-011.
 
 * Nom: type : [0..1] Code
-  * Description: Indique le ou les types d'adresse tel que "Adresse du domicile", "Adresse du domicile de secours", etc.Jeu(x) de valeur(s) associé(s) :[JDV-J414-TYPE-ADRESSE-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j414-type-adresse-ms/$expand)
+  * Description: Indique le ou les types d'adresse tel que "Adresse du domicile", "Adresse du domicile de secours", etc.Jeu(x) de valeur(s) associé(s) :[JDV-J409-TYPE-ADRESSE-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j409-type-adresse-ms/$expand)
 * Nom: numeroVoie : [0..1] Texte
   * Description: Un numéro dans la voie ; dans les cas de numérotation sans extension, il est composé de 0 à 4 caractères numériques au maximum.
 * Nom: libelleVoie : [0..1] Texte

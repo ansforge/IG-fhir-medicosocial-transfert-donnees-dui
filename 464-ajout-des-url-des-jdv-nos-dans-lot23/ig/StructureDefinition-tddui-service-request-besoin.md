@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin | *Version*:2.3.0 |
-| Active as of 2026-05-21 | *Computable Name*:TDDUIServiceRequestBesoin |
+| Active as of 2026-05-28 | *Computable Name*:TDDUIServiceRequestBesoin |
 
  
 Profil de la ressource ServiceRequest permettant de représenter les besoins de l'usager. 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-tddui-service-reques
   "name" : "TDDUIServiceRequestBesoin",
   "title" : "TDDUI ServiceRequest Besoin",
   "status" : "active",
-  "date" : "2026-05-21T09:30:02+00:00",
+  "date" : "2026-05-28T09:26:44+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

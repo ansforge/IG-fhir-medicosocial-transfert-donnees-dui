@@ -24,9 +24,9 @@ Profil: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenemen
 
 **identifier**: Visit Number/3480787529/147720425367411-EVN-12548
 
-**status**: finished
+**status**: Finished
 
-**class**: [ActCode: HH](http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActCode.html#v3-ActCode-HH) (home health)
+**class**: [v3 Code System ActCode: HH](http://hl7.org/fhir/R4/v3/ActCode/cs.html#v3-ActCode-HH) (home health)
 
 **type**: Intervention d'un infirmer salarié, Intervention
 
@@ -50,7 +50,7 @@ Profil: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenemen
 
 **serviceProvider**: [Organization Les Chênes Verts](Organization-tddui-organization-example.md)
 
-**partOf**: [Encounter : extension = 2023-04-11,Date de début du suivi post-opératoire : 14/04/2023,Sortie prévisionnelle prévue pour le 5 mai 2023,2023-05-05; identifier = Identifiant du séjour: 3480787529/147720425367411-SEJOUR-1012,Numéro de dossier administratif du séjour: 1012; status = in-progress; class = home health (ActCode#HH); period = 2023-04-14 --> (en cours)](Encounter-tddui-encounter-sejour-example.md)
+**partOf**: [Encounter : extension = 2023-04-11,Date de début du suivi post-opératoire : 14/04/2023,Sortie prévisionnelle prévue pour le 5 mai 2023,2023-05-05; identifier = Identifiant du séjour: 3480787529/147720425367411-SEJOUR-1012,Numéro de dossier administratif du séjour: 1012; status = in-progress; class = home health (v3 Code System ActCode#HH); period = 2023-04-14 --> (en cours)](Encounter-tddui-encounter-sejour-example.md)
 
 
 
