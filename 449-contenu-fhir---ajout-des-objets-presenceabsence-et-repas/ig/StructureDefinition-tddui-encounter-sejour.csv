@@ -26,13 +26,37 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Encounter.extension:TDDUI-plannedStartDate-r5","Encounter.extension","TDDUI-plannedStartDate-r5","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedStartDate]]} {[]}
-","La date/heure de début prévue (ou la date d'admission) de la rencontre | The planned start date/time (or admission date) of the encounter","Cette extension implemente l'élément plannedStartDate de R5. elle permet l'ajout de la date d'entrée prévisionnelle dans le séjour","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","La date/heure de début prévue (ou la date d'admission) de la rencontre | The planned start date/time (or admission date) of the encounter","Cette extension implemente l'élément plannedStartDate de R5. elle permet l'ajout de la date d'entrée prévisionnelle dans le séjour","Element `Encounter.plannedStartDate` has a context of Encounter based on following the parent source element upwards and mapping to `Encounter`.
+Element `Encounter.plannedStartDate` has no mapping targets in FHIR R4. Typically, this is because the element has been added (is a new element).","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","dateEntreePrevisionnelle","n/a","N/A"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","dateEntreePrevisionnelle"
+"Encounter.extension:TDDUI-plannedStartDate-r5.id","Encounter.extension.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Encounter.extension:TDDUI-plannedStartDate-r5.extension","Encounter.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Encounter.extension:TDDUI-plannedStartDate-r5.url","Encounter.extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedStartDate""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
+"Encounter.extension:TDDUI-plannedStartDate-r5.value[x]","Encounter.extension.value[x]","","","",0,1,"","","","dateTime {[]} {[]}
+","The planned start date/time (or admission date) of the encounter","The planned start date/time (or admission date) of the encounter.","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","N/A"
 "Encounter.extension:TDDUI-plannedEndDate-r5","Encounter.extension","TDDUI-plannedEndDate-r5","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedEndDate]]} {[]}
-","La date/heure de fin prévue (ou la date de sortie) de la rencontre | The planned end date/time (or discharge date) of the encounter","Cette extension implemente l'élément plannedEndDate de R5. elle permet l'ajout de la date de sortie prévisionnelle du séjour","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","La date/heure de fin prévue (ou la date de sortie) de la rencontre | The planned end date/time (or discharge date) of the encounter","Cette extension implemente l'élément plannedEndDate de R5. elle permet l'ajout de la date de sortie prévisionnelle du séjour","Element `Encounter.plannedEndDate` has a context of Encounter based on following the parent source element upwards and mapping to `Encounter`.
+Element `Encounter.plannedEndDate` has no mapping targets in FHIR R4. Typically, this is because the element has been added (is a new element).","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","dateSortiePrevisionnelle","n/a","N/A"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","dateSortiePrevisionnelle"
+"Encounter.extension:TDDUI-plannedEndDate-r5.id","Encounter.extension.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Encounter.extension:TDDUI-plannedEndDate-r5.extension","Encounter.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Encounter.extension:TDDUI-plannedEndDate-r5.url","Encounter.extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedEndDate""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
+"Encounter.extension:TDDUI-plannedEndDate-r5.value[x]","Encounter.extension.value[x]","","","",0,1,"","","","dateTime {[]} {[]}
+","The planned end date/time (or discharge date) of the encounter","The planned end date/time (or discharge date) of the encounter.","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","N/A"
 "Encounter.extension:TDDUIAdmissionDate","Encounter.extension","TDDUIAdmissionDate","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-admission-date]]} {[]}
 ","Date d’admission dans la structure ESSMS","Date d’admission dans la structure ESSMS.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

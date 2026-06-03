@@ -26,8 +26,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.45"],
     "uses" : {
     },
-    "ValueSet-tddui-encounter-identifier.html" : "TDDUI Encounter Identifier",
-    "ValueSet-tddui-patient-identifier.html" : "TDDUI Patient Identifier"
+    "ValueSet-tddui-patient-identifier.html" : "TDDUI Patient Identifier",
+    "ValueSet-tddui-encounter-identifier.html" : "TDDUI Encounter Identifier"
   },
   {
     "url" : "http://terminology.hl7.org/ValueSet/v3-Country",
@@ -115,8 +115,8 @@
     "systems" : ["http://hl7.org/fhir/administrative-gender"],
     "uses" : {
     },
-    "StructureDefinition-tddui-related-person-contact.html" : "TDDUI RelatedPerson Contact",
-    "StructureDefinition-tddui-patient.html" : "TDDUI Patient"
+    "StructureDefinition-tddui-patient.html" : "TDDUI Patient",
+    "StructureDefinition-tddui-related-person-contact.html" : "TDDUI RelatedPerson Contact"
   },
   {
     "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-care-plan-supporting-info",
@@ -193,10 +193,10 @@
     "systems" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator"],
     "uses" : {
     },
-    "ValueSet-tddui-goal-attente-note.html" : "TDDUI Goal Attente Note",
-    "StructureDefinition-tddui-discriminator.html" : "TDDUI Discriminator",
+    "ValueSet-tddui-care-plan-supporting-info.html" : "TDDUI CarePlan supportingInfo",
     "ValueSet-tddui-goal-objectif-note.html" : "TDDUI Goal Objectif Note",
-    "ValueSet-tddui-care-plan-supporting-info.html" : "TDDUI CarePlan supportingInfo"
+    "ValueSet-tddui-goal-attente-note.html" : "TDDUI Goal Attente Note",
+    "StructureDefinition-tddui-discriminator.html" : "TDDUI Discriminator"
   },
   {
     "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-identifier",
@@ -284,8 +284,8 @@
     "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-type"],
     "uses" : {
     },
-    "StructureDefinition-tddui-observation-periode-scolaire.html" : "TDDUI Observation Periode Scolaire",
     "StructureDefinition-tddui-observation-mobilite-usager.html" : "TDDUI Observation Mobilite Usager",
+    "StructureDefinition-tddui-observation-periode-scolaire.html" : "TDDUI Observation Periode Scolaire",
     "StructureDefinition-tddui-observation-cause-mortalite.html" : "TDDUI Observation Cause Mortalite"
   },
   {
@@ -313,9 +313,9 @@
     "systems" : ["https://smt.esante.gouv.fr/terminologie-SERAFINPH"],
     "uses" : {
     },
-    "StructureDefinition-tddui-task-prestation.html" : "TDDUI Task Prestation",
+    "ValueSet-tddui-encounter-type.html" : "TDDUI Encounter Type",
     "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement",
-    "ValueSet-tddui-encounter-type.html" : "TDDUI Encounter Type"
+    "StructureDefinition-tddui-task-prestation.html" : "TDDUI Task Prestation"
   },
   {
     "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-task-input-action",
@@ -391,7 +391,7 @@
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/JDV_J01-XdsAuthorSpecialty-CISIS/FHIR/JDV-J01-XdsAuthorSpecialty-CISIS",
-    "version" : "20260202120000",
+    "version" : "20260505120000",
     "status" : "active",
     "name" : "JDV_J01_XdsAuthorSpecialty_CISIS",
     "title" : null,
@@ -454,7 +454,7 @@
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS",
-    "version" : "20260202120000",
+    "version" : "20260601120000",
     "status" : "active",
     "name" : "JDV_J07_XdsTypeCode_CISIS",
     "title" : null,
@@ -560,7 +560,7 @@
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/JDV_J226-ModaliteAccueil-ROR/FHIR/JDV-J226-ModaliteAccueil-ROR",
-    "version" : "20251222120000",
+    "version" : "20260330120000",
     "status" : "active",
     "name" : "JDV_J226_ModaliteAccueil_ROR",
     "title" : null,
@@ -689,7 +689,7 @@
   },
   {
     "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-detail-materiel-specialise-cisis",
-    "version" : "20260220142104",
+    "version" : "20260420150250",
     "status" : "active",
     "name" : "JdvDetailMaterielSpecialiseCisis",
     "title" : "JDV Detail Materiel Specialise CISIS",
@@ -703,7 +703,7 @@
   },
   {
     "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-detail-ressource-immobiliere-utilisee-cisis",
-    "version" : "20260220142104",
+    "version" : "20260420150250",
     "status" : "active",
     "name" : "JdvDetailRessourceImmobiliereUtiliseeCisis",
     "title" : "JDV Detail Ressource Immobiliere Utilisee CISIS",
@@ -787,8 +787,36 @@
     "StructureDefinition-tddui-observation-periode-scolaire.html" : "TDDUI Observation Periode Scolaire"
   },
   {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j405-type-presence-absence-ms",
+    "version" : "20260505120000",
+    "status" : "draft",
+    "name" : "JdvJ405TypePresenceAbsenceMs",
+    "title" : "Jdv J405 Type Presence Absence Ms",
+    "description" : "Déclaration du type de présence absence de l'usager lors d'un événement organisé par sa structure de rattachement.",
+    "systems" : ["https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r423-type-presence-absence"],
+    "oids" : ["1.2.250.1.213.3.4.245"],
+    "sources" : ["1.2.250.1.213.3.4.245"],
+    "uses" : {
+    },
+    "StructureDefinition-tddui-slot-presence-absence.html" : "TDDUI Slot Presence Absence"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j407-type-repas-ms",
+    "version" : "20260505120000",
+    "status" : "draft",
+    "name" : "JdvJ407TypeRepasMs",
+    "title" : "Jdv J407 Type Repas Ms",
+    "description" : "Type de repas.",
+    "systems" : ["https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r425-type-repas"],
+    "oids" : ["1.2.250.1.213.3.4.247"],
+    "sources" : ["1.2.250.1.213.3.4.247"],
+    "uses" : {
+    },
+    "StructureDefinition-tddui-observation-repas.html" : "TDDUI Observation Repas"
+  },
+  {
     "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis",
-    "version" : "20260220142105",
+    "version" : "20260420150251",
     "status" : "active",
     "name" : "JdvModeDeTransportCisis",
     "title" : "JDV Mode De Transport CISIS",
@@ -798,12 +826,12 @@
     "sources" : ["1.2.250.1.213.1.1.5.140"],
     "uses" : {
     },
-    "StructureDefinition-tddui-task-transport.html" : "TDDUI Task Transport",
-    "StructureDefinition-tddui-observation-mobilite-usager.html" : "TDDUI Observation Mobilite Usager"
+    "StructureDefinition-tddui-observation-mobilite-usager.html" : "TDDUI Observation Mobilite Usager",
+    "StructureDefinition-tddui-task-transport.html" : "TDDUI Task Transport"
   },
   {
     "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-motif-non-realisation-evenement-cisis",
-    "version" : "20260220142104",
+    "version" : "20260420150250",
     "status" : "active",
     "name" : "JdvMotifNonRealisationEvenementCisis",
     "title" : "JDV Motif Non Realisation Evenement CISIS",
@@ -817,7 +845,7 @@
   },
   {
     "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-ressource-utilisee-cisis",
-    "version" : "20260220142104",
+    "version" : "20260420150250",
     "status" : "active",
     "name" : "JdvRessourceUtiliseeCisis",
     "title" : "JDV Ressource Utilisee CISIS",
@@ -832,7 +860,7 @@
   },
   {
     "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-evenement-ssiad-cisis",
-    "version" : "20260220142104",
+    "version" : "20260420150250",
     "status" : "active",
     "name" : "JdvTypeEvenementSsiadCisis",
     "title" : "JDV Type Evenement Ssiad CISIS",
@@ -842,12 +870,12 @@
     "sources" : ["1.2.250.1.213.1.1.5.811"],
     "uses" : {
     },
-    "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement",
-    "ValueSet-tddui-encounter-type.html" : "TDDUI Encounter Type"
+    "ValueSet-tddui-encounter-type.html" : "TDDUI Encounter Type",
+    "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement"
   },
   {
     "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-motorisation-cisis",
-    "version" : "20260220142104",
+    "version" : "20260420150250",
     "status" : "active",
     "name" : "JdvTypeMotorisationCisis",
     "title" : "JDV Type Motorisation CISIS",

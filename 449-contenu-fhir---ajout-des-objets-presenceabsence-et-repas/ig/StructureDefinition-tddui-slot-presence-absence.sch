@@ -15,6 +15,8 @@
       <sch:assert test="count(f:extension[@url = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-planned-absence']) &lt;= 1">extension with URL = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-planned-absence': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:identifier) &gt;= 1">identifier: minimum cardinality of 'identifier' is 1</sch:assert>
       <sch:assert test="count(f:identifier) &lt;= 1">identifier: maximum cardinality of 'identifier' is 1</sch:assert>
+      <sch:assert test="count(f:serviceType) &gt;= 1">serviceType: minimum cardinality of 'serviceType' is 1</sch:assert>
+      <sch:assert test="count(f:serviceType) &lt;= 1">serviceType: maximum cardinality of 'serviceType' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
