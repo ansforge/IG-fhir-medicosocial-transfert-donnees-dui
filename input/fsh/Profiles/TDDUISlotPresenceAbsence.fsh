@@ -19,7 +19,8 @@ Description: "Profil de la ressource FRCoreSlotProfile permettant de représente
 * extension contains TDDUIPlannedAbsence named TDDUIPlannedAbsence 0..1
 * extension[TDDUIPlannedAbsence] ^short = "Indique si l'absence est prévue ou non."
 
-// * serviceType 1..1
+* serviceType 1..1
+* serviceType from jdv-j405-type-presence-absence-ms
 
 Mapping:  ConceptMetier_TDDUISlotPresenceAbsence
 Source:   TDDUISlotPresenceAbsence

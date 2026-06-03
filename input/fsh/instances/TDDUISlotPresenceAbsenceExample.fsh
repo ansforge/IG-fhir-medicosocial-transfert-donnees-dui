@@ -13,3 +13,4 @@ Usage: #example
 * end = "2025-04-17T17:30:00+02:00"
 
 * schedule = Reference(tddui-schedule-example)
+* serviceType = https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r423-type-presence-absence#1
