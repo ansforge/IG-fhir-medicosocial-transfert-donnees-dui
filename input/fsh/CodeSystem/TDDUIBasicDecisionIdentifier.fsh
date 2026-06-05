@@ -9,6 +9,7 @@ Description: "CodeSystem pour la définition des codes d'identifiant de la déci
 * ^experimental = false
 
 * #IDDECISION "Identifiant principal de la décision"
+* #IDDECISIONMAJ "Identifiant révisé de la décision"
 * #NUMENREG "Numéro enregistrement de la décision"
 * #IDNATDECISION "Identifiant national de la décision"
 * #NUMALLOC "Numéro allocataire"

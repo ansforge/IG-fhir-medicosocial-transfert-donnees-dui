@@ -10,6 +10,10 @@ Description: "Profil de la ressource ServiceRequest permettant de représenter l
 * identifier.system ^short = "oid de la MPDH"
 
 * category 0..1
+* category from jdv-j394-type-demande-compensation-ms (required)
+
+* code 0..1
+* code from jdv-j395-nature-demande-compensation-ms (required)
 
 * supportingInfo ^slicing.discriminator.type = #pattern
 * supportingInfo ^slicing.discriminator.path = "extension('https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator').value"

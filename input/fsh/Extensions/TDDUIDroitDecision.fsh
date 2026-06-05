@@ -13,17 +13,18 @@ Context: Basic
 // BLOC DECISION
 
 * extension[decision].extension contains
-    // typeDecision 1..1 and
+    typeDecision 1..1 and
     dateEffetCloture 0..1 and
     dateDecision 0..1 and
-    // motivation 0..* and
+    motivation 0..* and
     motivationLocale 0..* and
     commentaire 0..1 and
     droitPrestation 0..1
-/*
+
 * extension[decision].extension[typeDecision].value[x] only CodeableConcept
+* extension[decision].extension[typeDecision].value[x] from jdv-j398-type-decision-ms (required)
 * extension[decision].extension[typeDecision] ^short = "Caractérise le type de décision prise par la CDAPH"
-*/
+
 
 * extension[decision].extension[dateEffetCloture].value[x] only date
 * extension[decision].extension[dateEffetCloture] ^short = "Date d'effet de clôture"
@@ -31,10 +32,11 @@ Context: Basic
 * extension[decision].extension[dateDecision].value[x] only date
 * extension[decision].extension[dateDecision] ^short = "Date de la décision"
 
-/*
-* extension[decision].extension[motivation].value[x] only CodeableConcept
+
+* extension[decision].extension[motivation].value[x] only CodeableConcept 
+* extension[decision].extension[motivation].value[x] from jdv-j399-motivation-ms (required)
 * extension[decision].extension[motivation] ^short = "Considération(s) de droit ou de fait qui constituent le fondement de la décision."
-*/
+
 
 * extension[decision].extension[motivationLocale].value[x] only string
 * extension[decision].extension[motivationLocale] ^short = "Champ libre permettant de renseigner une motivation locale"
@@ -46,11 +48,11 @@ Context: Basic
 
 * extension[decision].extension[droitPrestation].value[x] 0..0
 * extension[decision].extension[droitPrestation].extension contains
-    /*
+    
     categorieDroitPrestation 1..1 and
     typeDroitPrestation 1..1 and
     natureDroitPrestation 1..1 and
-    */
+    
     dateOuverture 1..1 and
     dateEcheance 1..1 and
     existencePAG 1..1 and
@@ -61,16 +63,19 @@ Context: Basic
     commentaire 0..1 and
     detailPrestation 1..1
 
-/*
+
 * extension[decision].extension[droitPrestation].extension[categorieDroitPrestation].value[x] only CodeableConcept
+* extension[decision].extension[droitPrestation].extension[categorieDroitPrestation].value[x] from jdv-j401-categorie-droit-prestation-ms (required)
 * extension[decision].extension[droitPrestation].extension[categorieDroitPrestation] ^short = "Catégorie du droit de prestation"
 
 * extension[decision].extension[droitPrestation].extension[typeDroitPrestation].value[x] only CodeableConcept
+* extension[decision].extension[droitPrestation].extension[typeDroitPrestation].value[x] from jdv-j402-type-droit-prestation-ms (required)
 * extension[decision].extension[droitPrestation].extension[typeDroitPrestation] ^short = "Type du droit de prestation"
 
 * extension[decision].extension[droitPrestation].extension[natureDroitPrestation].value[x] only CodeableConcept
+* extension[decision].extension[droitPrestation].extension[natureDroitPrestation].value[x] from jdv-j400-nature-droit-prestation-ms (required)
 * extension[decision].extension[droitPrestation].extension[natureDroitPrestation] ^short = "Nature du droit de prestation"
-*/
+
 
 * extension[decision].extension[droitPrestation].extension[dateOuverture].value[x] only date
 * extension[decision].extension[droitPrestation].extension[dateOuverture] ^short = "Date d'ouverture du droit"
@@ -105,12 +110,12 @@ Context: Basic
 * extension[decision].extension[droitPrestation].extension[detailPrestation].value[x] 0..0
 * extension[decision].extension[droitPrestation].extension[detailPrestation].extension contains
     temporaliteAccueil 0..1 and
-    // precisionOrientation 0..1 and
+    precisionOrientation 0..1 and
     accueilSequentiel 0..1 and
     formation 0..1 and
     montantAttribue 0..1 and
     frequence 0..1 and
-    // qualificationOrientation 1..1 and
+    qualificationOrientation 1..1 and
     structureAccueil 1..* and
     priseCharge 0..*
 
@@ -118,10 +123,11 @@ Context: Basic
 * extension[decision].extension[droitPrestation].extension[detailPrestation].extension[temporaliteAccueil].valueCodeableConcept from $JDV-J30-TemporaliteAccueil-ROR
 * extension[decision].extension[droitPrestation].extension[detailPrestation].extension[temporaliteAccueil] ^short = "Temporalité d'accueil"
 
-/*
+
 * extension[decision].extension[droitPrestation].extension[detailPrestation].extension[precisionOrientation].value[x] only CodeableConcept
+* extension[decision].extension[droitPrestation].extension[detailPrestation].extension[precisionOrientation].valueCodeableConcept from jdv-j408-orientation-ms
 * extension[decision].extension[droitPrestation].extension[detailPrestation].extension[precisionOrientation] ^short = "Précision de l'orientation"
-*/
+
 
 * extension[decision].extension[droitPrestation].extension[detailPrestation].extension[accueilSequentiel].value[x] only boolean
 * extension[decision].extension[droitPrestation].extension[detailPrestation].extension[accueilSequentiel] ^short = "Accueil séquentiel"
@@ -135,10 +141,11 @@ Context: Basic
 * extension[decision].extension[droitPrestation].extension[detailPrestation].extension[frequence].value[x] only Quantity
 * extension[decision].extension[droitPrestation].extension[detailPrestation].extension[frequence] ^short = "Fréquence"
 
-/*
+
 * extension[decision].extension[droitPrestation].extension[detailPrestation].extension[qualificationOrientation].value[x] only CodeableConcept
+* extension[decision].extension[droitPrestation].extension[detailPrestation].extension[qualificationOrientation].valueCodeableConcept from jdv-j404-qualification-orientation-ms
 * extension[decision].extension[droitPrestation].extension[detailPrestation].extension[qualificationOrientation] ^short = "Qualification de l'orientation"
-*/
+
 
 * extension[decision].extension[droitPrestation].extension[detailPrestation].extension[structureAccueil].value[x] only Reference(TDDUIOrganization)
 * extension[decision].extension[droitPrestation].extension[detailPrestation].extension[structureAccueil] ^short = "Structure d'accueil"
