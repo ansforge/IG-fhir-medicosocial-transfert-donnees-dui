@@ -1,0 +1,172 @@
+# TDDUI Basic Decision Example - Médicosocial - Transfert de données DUI v2.3.0-ballot
+
+## Example Basic: TDDUI Basic Decision Example
+
+Profile: [TDDUI Basic Decision](StructureDefinition-tddui-basic-decision.md)
+
+> **TDDUI Decision****typeDecision**: Attribution**motivation**: Attrib AAH L821-1**dateEffetCloture**: 2020-01-01
+> **droitPrestation**
+> **url**categorieDroitPrestation
+**value**: Orientation ESMS Enfants
+> **url**typeDroitPrestation
+**value**: Orientation vers un Service d'éducation spéciale et de soins à domicile (SESSAD)
+> **url**natureDroitPrestation
+**value**: Rejet
+> **url**dateOuverture
+**value**: 2020-01-01
+> **url**dateEcheance
+**value**: 2020-12-31
+> **url**existencePAG
+**value**: false**qualificationOrientation**: Cible**structureAccueil**: [Organization Les Chênes Verts](Organization-tddui-organization-example.md)**temporaliteAccueil**: Temporaire**precisionOrientation**: SESSAD polyvalent
+> **url**detailPrestation
+
+> **url**decision
+
+**identifier**: Identifiant principal de la décision/1254 (use: official, )
+
+**code**: Décision
+
+**subject**: [ServiceRequest: identifier = 2.16.840.1.113883.2.8.3.75.1#1234; status = active; intent = plan; occurrence[x] = 2020-01-01 --> 2020-01-31](ServiceRequest-tddui-service-request-demande-orientation-example.md)
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Basic",
+  "id" : "tddui-basic-decision-example",
+  "meta" : {
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-basic-decision"]
+  },
+  "extension" : [{
+    "extension" : [{
+      "extension" : [{
+        "url" : "typeDecision",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://mos.esante.gouv.fr/NOS/TRE_R327-TypeDecision/FHIR/TRE-R327-TypeDecision",
+            "code" : "1"
+          }]
+        }
+      },
+      {
+        "url" : "motivation",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r419-motivation",
+            "code" : "215"
+          }]
+        }
+      },
+      {
+        "url" : "dateEffetCloture",
+        "valueDate" : "2020-01-01"
+      },
+      {
+        "extension" : [{
+          "url" : "categorieDroitPrestation",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r420-droit-prestation",
+              "code" : "7"
+            }]
+          }
+        },
+        {
+          "url" : "typeDroitPrestation",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r420-droit-prestation",
+              "code" : "7.8"
+            }]
+          }
+        },
+        {
+          "url" : "natureDroitPrestation",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "https://mos.esante.gouv.fr/NOS/TRE_R327-TypeDecision/FHIR/TRE-R327-TypeDecision",
+              "code" : "2"
+            }]
+          }
+        },
+        {
+          "url" : "dateOuverture",
+          "valueDate" : "2020-01-01"
+        },
+        {
+          "url" : "dateEcheance",
+          "valueDate" : "2020-12-31"
+        },
+        {
+          "url" : "existencePAG",
+          "valueBoolean" : false
+        },
+        {
+          "extension" : [{
+            "url" : "qualificationOrientation",
+            "valueCodeableConcept" : {
+              "coding" : [{
+                "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r422-qualification-orientation",
+                "code" : "1"
+              }]
+            }
+          },
+          {
+            "url" : "structureAccueil",
+            "valueReference" : {
+              "reference" : "Organization/tddui-organization-example"
+            }
+          },
+          {
+            "url" : "temporaliteAccueil",
+            "valueCodeableConcept" : {
+              "coding" : [{
+                "system" : "https://mos.esante.gouv.fr/NOS/TRE_R240-TemporaliteAccueil/FHIR/TRE-R240-TemporaliteAccueil",
+                "code" : "01"
+              }]
+            }
+          },
+          {
+            "url" : "precisionOrientation",
+            "valueCodeableConcept" : {
+              "coding" : [{
+                "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r426-orientation",
+                "code" : "1"
+              }]
+            }
+          }],
+          "url" : "detailPrestation"
+        }],
+        "url" : "droitPrestation"
+      }],
+      "url" : "decision"
+    }],
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision"
+  }],
+  "identifier" : [{
+    "use" : "official",
+    "type" : {
+      "coding" : [{
+        "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-basic-decision-identifier",
+        "code" : "IDDECISION",
+        "display" : "Identifiant principal de la décision"
+      }]
+    },
+    "system" : "urn:oid:1.2.250.1.213.7.1",
+    "value" : "1254"
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-basic-type",
+      "code" : "DECISION",
+      "display" : "Décision"
+    }]
+  },
+  "subject" : {
+    "reference" : "ServiceRequest/tddui-service-request-demande-orientation-example"
+  }
+}
+
+```
