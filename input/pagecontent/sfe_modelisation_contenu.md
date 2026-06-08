@@ -265,7 +265,7 @@ Adresse de télécommunication à laquelle l’usager peut être contactée (té
   <tr>
     <td>canal : [1..1] Code</td>
     <td>Code spécifiant le canal ou la manière dont s'établit la communication (téléphone, e-mail, URL, etc.).<br>
-    Jeu(x) de valeur associé(s) : <a href="https:https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j396-canal-communication-ms/$expand">JDV-J396-CANAL-COMMUNICATION-MS</a></td>
+    Jeu(x) de valeur associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j396-canal-communication-ms/$expand">JDV-J396-CANAL-COMMUNICATION-MS</a></td>
   </tr>
    <tr>
     <td>typeMessagerie : [0..1] Code</td>
