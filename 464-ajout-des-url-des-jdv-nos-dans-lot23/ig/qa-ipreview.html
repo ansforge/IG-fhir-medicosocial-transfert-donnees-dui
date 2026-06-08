@@ -398,7 +398,7 @@ Médicosocial - Transfert de données DUI - Local Development build (v2.3.0) bui
           Package ans.fhir.fr.tddui#2.3.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
 .
           Generated 
-            <span title="2026-06-08 09:06:00 +0000">
+            <span title="2026-06-08 13:38:00 +0000">
     2026-06-08
   </span>
 
@@ -2305,7 +2305,7 @@ Type de droit et prestation caractérisant la décision d'orientation.          
     Jeu(x) de valeur(s) associé(s) :           <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j402-type-droit-prestation-ms/$expand">JDV-J402-TYPE-DROIT-PRESTATION-MS</a>
           <br/>
 
-    La règle métier entre les catégories et les types de droit et prestation est spécifiée dans la terminologie hierarchique           <a href="https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r420-droit-prestation">TRE-R420-DROIT-PRESTATION</a>
+     Contrainte(s) métier : La règle métier entre les catégories et les types de droit et prestation est spécifiée dans la terminologie hierarchique           <a href="https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r420-droit-prestation">TRE-R420-DROIT-PRESTATION</a>
         </td>
       </tr>
       <tr>
@@ -2321,7 +2321,7 @@ Type de droit et prestation caractérisant la décision d'orientation.          
     Jeu(x) de valeur(s) associé(s) :           <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j402-type-droit-prestation-ms/$expand">JDV-J402-TYPE-DROIT-PRESTATION-MS</a>
           <br/>
 
-    La règle métier entre les catégories et les types de droit et prestation est spécifiée dans la terminologie hierarchique           <a href="https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r420-droit-prestation">TRE-R420-DROIT-PRESTATION</a>
+     Contrainte(s) métier : La règle métier entre les catégories et les types de droit et prestation est spécifiée dans la terminologie hierarchique           <a href="https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r420-droit-prestation">TRE-R420-DROIT-PRESTATION</a>
         </td>
       </tr>
       <tr>
@@ -2348,7 +2348,7 @@ Nature du droit s’appliquant à tous les droits ou prestations ouverts par la 
 Lorsque le plan d'accompagnement global (PAG) arrive à échéance ou si le coordonnateur de parcours l'estime nécessaire, un bilan est élaboré et la phase d'actualisation est lancée afin de déterminer s'il faut prolonger ce PAG, le modifier ou y mettre fin. 
 La MDPH, les partenaires et l'usager peuvent définir ensemble que le PAG n'est plus nécessaire et donc y mettre  fin. Le consentement de la personne ou de son représentant légal est recueilli et l'information sur la fin du PAG transmise à l'ensemble des parties-prenantes.          <br/>
 
-    Le motif est obligatoire si existencePAG passe de "1" à "0". Le fait de mettre fin au PAG n'a pas d'impact sur les droits en cours (même ceux ouverts dans le cadre du PAG). Ces droits demeurent valables jusqu'à leur date d'échéance.           <br/>
+     Contrainte(s) métier : Le motif est obligatoire si existencePAG passe de "1" à "0". Le fait de mettre fin au PAG n'a pas d'impact sur les droits en cours (même ceux ouverts dans le cadre du PAG). Ces droits demeurent valables jusqu'à leur date d'échéance.           <br/>
 
     Jeu(x) de valeur(s) associé(s) :           <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j403-motif-fin-pag-ms/$expand">JDV-J403-MOTIF-FIN-PAG-MS</a>
         </td>
@@ -2378,9 +2378,9 @@ Type de compensation dans le cas d’une aide sociale.          <br/>
         <td>
 Fréquence d'accueil lors d'une prise en charge en ESSMS.          <br/>
 
-  La temporalité d’accueil est transmise pour tous les droits pour lesquels elle est obligatoire.          <br/>
+  Contrainte(s) métier : La temporalité d’accueil est transmise pour tous les droits pour lesquels elle est obligatoire.          <br/>
 
-  Pour les catégories de droit et prestation suivantes :
+  C'est à dire pour les catégories de droit et prestation suivantes :
             <ul>
 
                 <li>Orientation ESMS Enfants</li>
@@ -2420,7 +2420,7 @@ Pour les types de droit et prestation suivants :
 Jeu(x) de valeur(s) associé(s) :           <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j408-orientation-ms/$expand">JDV-J408-ORIENTATION-MS</a>
           <br/>
 
-    Seuls les codes de 1 à 6 sont autorisés.
+    Contrainte(s) métier : Seuls les codes de 1 à 6 sont autorisés.
         </td>
       </tr>
       <tr>
@@ -2434,7 +2434,7 @@ Jeu(x) de valeur(s) associé(s) :           <a href="https://smt.esante.gouv.fr/
 Jeu(x) de valeur(s) associé(s) :           <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j408-orientation-ms/$expand">JDV-J408-ORIENTATION-MS</a>
           <br/>
 
-    Seuls les codes 7 et 8 sont autorisés.
+    Contrainte(s) métier : Seuls les codes 7 et 8 sont autorisés.
         </td>
       </tr>
       <tr>
@@ -2462,7 +2462,7 @@ Jeu(x) de valeur(s) associé(s) :           <a href="https://smt.esante.gouv.fr/
 Jeu(x) de valeur(s) associé(s) :           <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j408-orientation-ms/$expand">JDV-J408-ORIENTATION-MS</a>
           <br/>
 
-    Seuls les codes UEA et UEM sont autorisés.
+    Contrainte(s) métier : Seuls les codes UEA et UEM sont autorisés.
         </td>
       </tr>
       <tr>
@@ -2516,7 +2516,7 @@ Périodicité de la prise en charge (quotidienne, hebdomadaire, mensuelle, annue
     Jeu(x) valeur(s) associé(s) :           <a href="https://mos.esante.gouv.fr/NOS/JDV_J37-UcumUniteTemps/FHIR/JDV-J37-UcumUniteTemps">JDV-J37-UcumUniteTemps</a>
           <br/>
 
-    Seuls les codes suivants sont à utiliser : a (année), mo (mois), wk (semaine), d (jour)
+    Contrainte(s) métier : Seuls les codes suivants sont à utiliser : a (année), mo (mois), wk (semaine), d (jour)
     
         </td>
       </tr>

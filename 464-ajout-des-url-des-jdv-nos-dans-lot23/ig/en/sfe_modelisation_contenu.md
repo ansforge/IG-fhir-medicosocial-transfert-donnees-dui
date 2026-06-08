@@ -242,11 +242,11 @@ La décision est une réponse à une demande de compensation l'usager ou de son 
 * Nom: typeDecision : [1..1] Code
   * Description: Caractérise le type de décision prise par la CDAPH en réponse à une demande de compensation d’un usager (individu ou représentant légal), à une demande de révision par un tiers ou à un recours administratif préalable obligatoire (RAPO) d’un usager.Jeu(x) de valeur(s) associé(s) :[JDV-J398-TYPE-DECISION-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j398-type-decision-ms/$expand)
 * Nom: dateEffetCloture : [0..1] Date
-  * Description: Date d'effet de la décision de clôture est la date à laquelle un droit n'est plus valable consécutivement à une décision de la CDAPH de clôture de droit ou d'attribution d'un droit de nature révision. A ne pas confondre avec la date d'échéance du droit qui est fixée lors de la décision d'attribution et qui ne doit jamais être modifiée.Cet attribut est obligatoire pour les décisions de type "5" (Clôture de droit).
+  * Description: Date d'effet de la décision de clôture est la date à laquelle un droit n'est plus valable consécutivement à une décision de la CDAPH de clôture de droit ou d'attribution d'un droit de nature révision. A ne pas confondre avec la date d'échéance du droit qui est fixée lors de la décision d'attribution et qui ne doit jamais être modifiée.Contrainte(s) métier : Cet attribut est obligatoire si typeDecision = '5' (Clôture de droit).
 * Nom: idDecisionMAJ : [0..*] Identifiant
-  * Description: Identifiants de la ou des décisions révisées ou renouvelées à l'origine du droit ou identifiant de la décision clôturée (concerne une seule décision) en cas de clôture de droit.Ces identifiants sont obtenus par la concaténation des identifiants locaux de la ou des décisions révisées attribué par la MDPH à l’origine de la création du suivi de la décision (idDecisionMAJMDPHInitial) et du numéro cette MDPH (idMDPHInitial) : idDecisionMAJMDPHInitial/idMDPHInitial.Cet attribut est obligatoire si* typeDecision = '5' (Clôture de droit) 
-* typeDecision ='1' (Attribution) et DroitPrestation.natureDroit = '2' (Renouvellement) ou '3' (Révision) 
-Ne pas transmettre si typeDecision = '1' (Attribution) et DroitPrestation.natureDroit = '1' (Nouveau droit)
+  * Description: Identifiants de la ou des décisions révisées ou renouvelées à l'origine du droit ou identifiant de la décision clôturée (concerne une seule décision) en cas de clôture de droit.Ces identifiants sont obtenus par la concaténation des identifiants locaux de la ou des décisions révisées attribué par la MDPH à l’origine de la création du suivi de la décision (idDecisionMAJMDPHInitial) et du numéro cette MDPH (idMDPHInitial) : idDecisionMAJMDPHInitial/idMDPHInitial.Contrainte(s) métier : Cet attribut est obligatoire si* typeDecision = '5' (Clôture de droit) 
+* typeDecision ='1' (Attribution) et DroitPrestation.natureDroit = '6' (Renouvellement) ou '7' (Révision) 
+Ne pas transmettre si typeDecision = '1' (Attribution) et DroitPrestation.natureDroit = '1' (Attribution)
 * Nom: idNat_Decision : [0..1] Identifiant
   * Description: Identifiant technique unique de la décision attribué par ViaTrajectoire. Cet identifiant créé par ViaTrajectoire lorsque la décision est enregistrée dans le SI du Suivi des Orientations (SdO) correspondant à ViaTrajectoire.
 * Nom: dateDecision : [0..1] Date
@@ -254,7 +254,7 @@ Ne pas transmettre si typeDecision = '1' (Attribution) et DroitPrestation.nature
 * Nom: motivation : [0..*] Code
   * Description: Considération(s) de droit ou de fait qui constituent le fondement de la décision.Jeu(x) de valeur(s) associé(s) :[JDV-J399-MOTIVATION-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j399-motivation-ms/$expand)
 * Nom: motivationLocale : [0..*] Texte
-  * Description: Champ libre permettant de renseigner une motivation locale. Ce champ apparaît (et devient obligatoire) uniquement si le code "9999 - Autre" est renseigné pour l'élément "motivation".
+  * Description: Champ libre permettant de renseigner une motivation locale.Contrainte(s) métier : Ce champ apparaît (et devient obligatoire) uniquement si le code "9999 - Autre" est renseigné pour l'élément "motivation".
 * Nom: commentaire : [0..1] Texte
   * Description: Commentaire relatif à la décision.
 
@@ -267,7 +267,7 @@ Ensemble des dispositifs prévus par le Code de l'Action Sociale et des Familles
 * Nom: categorieDroitPrestation : [1..1] Code
   * Description: Catégorie de droit et prestation caractérisant la décision d'orientation.Jeu(x) de valeur(s) associé(s) :[JDV-J401-CATEGORIE-DROIT-PRESTATION-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j401-categorie-droit-prestation-ms/$expand)
 * Nom: typeDroitPrestation : [1..1] Code
-  * Description: Type de droit et prestation caractérisant la décision d'orientation.Jeu(x) de valeur(s) associé(s) :[JDV-J402-TYPE-DROIT-PRESTATION-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j402-type-droit-prestation-ms/$expand)La règle métier entre les catégories et les types de droit et prestation est spécifiée dans la terminologie hierarchique[TRE-R420-DROIT-PRESTATION](https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r420-droit-prestation)
+  * Description: Type de droit et prestation caractérisant la décision d'orientation.Jeu(x) de valeur(s) associé(s) :[JDV-J402-TYPE-DROIT-PRESTATION-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j402-type-droit-prestation-ms/$expand)Contrainte(s) métier : La règle métier entre les catégories et les types de droit et prestation est spécifiée dans la terminologie hierarchique[TRE-R420-DROIT-PRESTATION](https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r420-droit-prestation)
 * Nom: natureDroitPrestation : [1..1] Code
   * Description: Nature du droit s’appliquant à tous les droits ou prestations ouverts par la CDAPH. Elle permet de gérer, le cas échéant, le lien entre la date d’ouverture du droit et la date de fin d’un droit précédent. Elle est déterminée par l’équipe pluridisciplinaire ou par la CDAPH.Jeu(x) de valeur(s) associé(s) :[JDV-J400-NATURE-DROIT-PRESTATION](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j400-nature-droit-prestation-ms/$expand)
 * Nom: dateOuverture : [1..1] Date
@@ -277,9 +277,9 @@ Ensemble des dispositifs prévus par le Code de l'Action Sociale et des Familles
 * Nom: existencePAG : [1..1] Indicateur
   * Description: Indicateur de l'existence d'un Plan d’Accompagnement Global (PAG).1 = si la décision est associée à un PAG au statut "élaboré" ou "validé" ;0 = pour tous les autres cas (la décision n'est pas associée à un PAG ou est associée à un PAG ayant un statut différent de "élaboré" ou "validé").
 * Nom: motifFinPAG : [0..1] Code
-  * Description: Lorsque le plan d'accompagnement global (PAG) arrive à échéance ou si le coordonnateur de parcours l'estime nécessaire, un bilan est élaboré et la phase d'actualisation est lancée afin de déterminer s'il faut prolonger ce PAG, le modifier ou y mettre fin. La MDPH, les partenaires et l'usager peuvent définir ensemble que le PAG n'est plus nécessaire et donc y mettre fin. Le consentement de la personne ou de son représentant légal est recueilli et l'information sur la fin du PAG transmise à l'ensemble des parties-prenantes.Le motif est obligatoire si existencePAG passe de "1" à "0". Le fait de mettre fin au PAG n'a pas d'impact sur les droits en cours (même ceux ouverts dans le cadre du PAG). Ces droits demeurent valables jusqu'à leur date d'échéance.Jeu(x) de valeur(s) associé(s) :[JDV-J403-MOTIF-FIN-PAG-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j403-motif-fin-pag-ms/$expand)
+  * Description: Lorsque le plan d'accompagnement global (PAG) arrive à échéance ou si le coordonnateur de parcours l'estime nécessaire, un bilan est élaboré et la phase d'actualisation est lancée afin de déterminer s'il faut prolonger ce PAG, le modifier ou y mettre fin. La MDPH, les partenaires et l'usager peuvent définir ensemble que le PAG n'est plus nécessaire et donc y mettre fin. Le consentement de la personne ou de son représentant légal est recueilli et l'information sur la fin du PAG transmise à l'ensemble des parties-prenantes.Contrainte(s) métier : Le motif est obligatoire si existencePAG passe de "1" à "0". Le fait de mettre fin au PAG n'a pas d'impact sur les droits en cours (même ceux ouverts dans le cadre du PAG). Ces droits demeurent valables jusqu'à leur date d'échéance.Jeu(x) de valeur(s) associé(s) :[JDV-J403-MOTIF-FIN-PAG-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j403-motif-fin-pag-ms/$expand)
 * Nom: creton : [0..1] Indicateur
-  * Description: Amendement Creton. Il s’agit d’un dispositif législatif permettant le maintien temporaire de jeunes adultes de plus de 20 ans en établissement pour enfants dans l’attente d’une place dans un établissement pour adultes.Obligatoire pour les décisions orientations ESSMS enfant, non prévu pour les autres orientations.0 = l'usager ne bénéficie pas de l'amendement Creton ;1 = l'usager bénéficie de l'amendement Creton.
+  * Description: Amendement Creton. Il s’agit d’un dispositif législatif permettant le maintien temporaire de jeunes adultes de plus de 20 ans en établissement pour enfants dans l’attente d’une place dans un établissement pour adultes.Contrainte(s) métier : Obligatoire pour categorieDroitPrestation = 7- Orientation ESMS Enfants (jdv-j401-categorie-droit-prestation-ms) et typeDroitPrestation = tous les codes 7.xx (jdv-j402-type-droit-prestation-ms). Optionnel pour les autres orientations.0 = l'usager ne bénéficie pas de l'amendement Creton ;1 = l'usager bénéficie de l'amendement Creton.
 * Nom: taux : [0..1] Mesure
   * Description: Taux dans le cas d’une aide sociale.
 * Nom: typeCompensation : [0..1] Code
@@ -292,7 +292,7 @@ Ensemble des dispositifs prévus par le Code de l'Action Sociale et des Familles
 Détails de la prestation pour préciser l'orientation.
 
 * Nom: temporaliteAccueil : [0..1] Code
-  * Description: Fréquence d'accueil lors d'une prise en charge en ESSMS.La temporalité d’accueil est transmise pour tous les droits pour lesquels elle est obligatoire.Pour les catégories de droit et prestation suivantes :* Orientation ESMS Enfants
+  * Description: Fréquence d'accueil lors d'une prise en charge en ESSMS.Contrainte(s) métier : La temporalité d’accueil est transmise pour tous les droits pour lesquels elle est obligatoire.C'est à dire pour les catégories de droit et prestation suivantes :* Orientation ESMS Enfants
 * Orientation ESMS Adultes
 Pour les types de droit et prestation suivants :* Orientation en Unité d'enseignement
 * Orientation vers une Scolarisation en milieu ordinaire à temps partagé (UE et établissement scolaire)
@@ -302,23 +302,23 @@ Jeu(x) de valeur(s) associé(s) :[JDV_J30-TemporaliteAccueil-ROR](https://mos.es
 * Nom: precisionOrientation : [0..1] ConceptCode
   * Description: La précision de l'orientation est codée à un jeu de valeurs pour les types de droit suivants :
 * Type droit prestation: 7.8 Orientation vers un Service d'éducation spéciale et de soins à domicile (SESSAD)
-  * Jeu de valeurs associé: Jeu(x) de valeur(s) associé(s) :[JDV-J408-ORIENTATION-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j408-orientation-ms/$expand)Seuls les codes de 1 à 6 sont autorisés.
+  * Jeu de valeurs associé: Jeu(x) de valeur(s) associé(s) :[JDV-J408-ORIENTATION-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j408-orientation-ms/$expand)Contrainte(s) métier : Seuls les codes de 1 à 6 sont autorisés.
 * Type droit prestation: 7.9 Orientation vers un Service d'accompagnement familial et d'éducation précoce (SAFEP)
-  * Jeu de valeurs associé: Jeu(x) de valeur(s) associé(s) :[JDV-J408-ORIENTATION-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j408-orientation-ms/$expand)Seuls les codes 7 et 8 sont autorisés.
+  * Jeu de valeurs associé: Jeu(x) de valeur(s) associé(s) :[JDV-J408-ORIENTATION-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j408-orientation-ms/$expand)Contrainte(s) métier : Seuls les codes 7 et 8 sont autorisés.
 * Type droit prestation: 13.1 Orientation vers un établissement d'accueil non médicalisé
-  * Jeu de valeurs associé: Non renseigné
+  * Jeu de valeurs associé: Contrainte(s) métier : precisionOrientation est interdit lorsque typeDroitPrestation = '13.1'
 * Type droit prestation: 13.2 Orientation vers un établissement d'accueil médicalisé en tout ou partie
-  * Jeu de valeurs associé: Non renseigné
+  * Jeu de valeurs associé: Contrainte(s) métier : precisionOrientation est interdit lorsque typeDroitPrestation = '13.2'
 * Type droit prestation: 8.3 Orientation en Enseignement adapté (SEGPA/EREA)
   * Jeu de valeurs associé: Jeu(x) de valeur(s) associé(s) :[JDV-J408-ORIENTATION-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j408-orientation-ms/$expand)Seuls les codes 9 et 10 sont autorisés.
 * Type droit prestation: 8.6 Orientation en Unité d'enseignement
-  * Jeu de valeurs associé: Jeu(x) de valeur(s) associé(s) :[JDV-J408-ORIENTATION-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j408-orientation-ms/$expand)Seuls les codes UEA et UEM sont autorisés.
+  * Jeu de valeurs associé: Jeu(x) de valeur(s) associé(s) :[JDV-J408-ORIENTATION-MS](https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j408-orientation-ms/$expand)Contrainte(s) métier : Seuls les codes UEA et UEM sont autorisés.
 
 Pour les autres types de droits la valeur de cet attribut est un texte libre.
 * Nom: accueilSequentiel : [0..1] Indicateur
   * Description: Indique si l’unité accepte d’accueillir des personnes en situation de handicap de façon séquentielle, c'est à dire sur une partie de la semaine.0 = L'unité n'accepte pas l'accueil séquentiel1 = L'unité accepte l'accueil séquentiel
 * Nom: formation : [0..1] Texte
-  * Description: Formation proposéecet élément est obligatoire si le type de droit et prestation est "11.1" (Orientation en Centre de rééducation professionnelle (CRP)).
+  * Description: Formation proposéeContrainte(s) métier : cet élément est obligatoire si le type de droit et prestation est "11.1" (Orientation en Centre de rééducation professionnelle (CRP)).
 * Nom: frequence : [0..1] Mesure
   * Description: Fréquence de versement dans le cas d’une aide sociale.
 * Nom: montantAttribue : [0..1] Montant
@@ -350,7 +350,7 @@ Quantification de la prise en charge.
 * Nom: UnitePriseCharge : [0..1] Mesure
   * Description: Unité de la durée de la prise en charge (journée ou demi-journée).
 * Nom: frequencePriseCharge : [0..1] Code
-  * Description: Périodicité de la prise en charge (quotidienne, hebdomadaire, mensuelle, annuelle).Jeu(x) valeur(s) associé(s) :[JDV-J37-UcumUniteTemps](https://mos.esante.gouv.fr/NOS/JDV_J37-UcumUniteTemps/FHIR/JDV-J37-UcumUniteTemps)Seuls les codes suivants sont à utiliser : a (année), mo (mois), wk (semaine), d (jour)
+  * Description: Périodicité de la prise en charge (quotidienne, hebdomadaire, mensuelle, annuelle).Jeu(x) valeur(s) associé(s) :[JDV-J37-UcumUniteTemps](https://mos.esante.gouv.fr/NOS/JDV_J37-UcumUniteTemps/FHIR/JDV-J37-UcumUniteTemps)Contrainte(s) métier : Seuls les codes suivants sont à utiliser : a (année), mo (mois), wk (semaine), d (jour)
 
 #### Environnement et ressources
 

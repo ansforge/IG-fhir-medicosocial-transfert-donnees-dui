@@ -39,7 +39,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-comment.csv
   "name" : "TDDUIComment",
   "title" : "TDDUI Comment",
   "status" : "active",
-  "date" : "2026-06-08T09:06:06+00:00",
+  "date" : "2026-06-08T13:38:02+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
