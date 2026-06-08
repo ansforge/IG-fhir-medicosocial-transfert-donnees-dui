@@ -555,19 +555,19 @@ La décision est une réponse à une demande de compensation l'usager ou de son 
   <tr>
     <td>dateEffetCloture : [0..1] Date</td>
     <td>Date d'effet de la décision de clôture est la date à laquelle un droit n'est plus valable consécutivement à une décision de la CDAPH de clôture de droit ou d'attribution d'un droit de nature révision. A ne pas confondre avec la date d'échéance du droit qui est fixée lors de la décision d'attribution et qui ne doit jamais être modifiée.<br>
-    Cet attribut est obligatoire pour les décisions de type "5" (Clôture de droit). 
+    Contrainte(s) métier : Cet attribut est obligatoire si typeDecision = '5' (Clôture de droit). 
     </td>
   </tr>
   <tr>
     <td>idDecisionMAJ : [0..*] Identifiant</td>
     <td>Identifiants de la ou des décisions révisées ou renouvelées à l'origine du droit ou identifiant de la décision clôturée (concerne une seule décision) en cas de clôture de droit.<br>
     Ces identifiants sont obtenus par la concaténation des identifiants locaux de la ou des décisions révisées attribué par la MDPH à l’origine de la création du suivi de la décision (idDecisionMAJMDPHInitial) et du numéro cette MDPH (idMDPHInitial) : idDecisionMAJMDPHInitial/idMDPHInitial.<br>
-    Cet attribut est obligatoire si 
+    Contrainte(s) métier : Cet attribut est obligatoire si 
     <ul>
     <li>typeDecision = '5' (Clôture de droit) </li>
-    <li>typeDecision ='1' (Attribution) et DroitPrestation.natureDroit  = '2' (Renouvellement) ou '3' (Révision) </li>
+    <li>typeDecision ='1' (Attribution) et DroitPrestation.natureDroit  = '6' (Renouvellement) ou '7' (Révision) </li>
     </ul>
-    Ne pas transmettre si typeDecision = '1' (Attribution) et DroitPrestation.natureDroit = '1' (Nouveau droit)
+    Ne pas transmettre si typeDecision = '1' (Attribution) et DroitPrestation.natureDroit = '1' (Attribution)
     </td>
   </tr>
   <tr>
@@ -586,8 +586,8 @@ La décision est une réponse à une demande de compensation l'usager ou de son 
   </tr>
   <tr>
     <td>motivationLocale : [0..*] Texte</td>
-    <td>Champ libre permettant de renseigner une motivation locale.
-Ce champ apparaît (et devient obligatoire) uniquement si le code "9999 - Autre" est renseigné pour l'élément "motivation".</td>
+    <td>Champ libre permettant de renseigner une motivation locale.<br>
+ Contrainte(s) métier : Ce champ apparaît (et devient obligatoire) uniquement si le code "9999 - Autre" est renseigné pour l'élément "motivation".</td>
   </tr>
   <tr>
     <td>commentaire : [0..1] Texte</td>
@@ -617,7 +617,7 @@ Ensemble des dispositifs prévus par le Code de l'Action Sociale et des Familles
     <td>typeDroitPrestation : [1..1] Code</td>
     <td>Type de droit et prestation caractérisant la décision d'orientation.<br>
     Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j402-type-droit-prestation-ms/$expand">JDV-J402-TYPE-DROIT-PRESTATION-MS</a><br>
-    La règle métier entre les catégories et les types de droit et prestation est spécifiée dans la terminologie hierarchique <a href="https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r420-droit-prestation">TRE-R420-DROIT-PRESTATION</a></td>
+     Contrainte(s) métier : La règle métier entre les catégories et les types de droit et prestation est spécifiée dans la terminologie hierarchique <a href="https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r420-droit-prestation">TRE-R420-DROIT-PRESTATION</a></td>
   </tr>
   <tr>
     <td>natureDroitPrestation : [1..1] Code</td>
@@ -645,13 +645,13 @@ Ensemble des dispositifs prévus par le Code de l'Action Sociale et des Familles
     <td>motifFinPAG : [0..1] Code</td>
     <td>Lorsque le plan d'accompagnement global (PAG) arrive à échéance ou si le coordonnateur de parcours l'estime nécessaire, un bilan est élaboré et la phase d'actualisation est lancée afin de déterminer s'il faut prolonger ce PAG, le modifier ou y mettre fin. 
 La MDPH, les partenaires et l'usager peuvent définir ensemble que le PAG n'est plus nécessaire et donc y mettre  fin. Le consentement de la personne ou de son représentant légal est recueilli et l'information sur la fin du PAG transmise à l'ensemble des parties-prenantes.<br>
-    Le motif est obligatoire si existencePAG passe de "1" à "0". Le fait de mettre fin au PAG n'a pas d'impact sur les droits en cours (même ceux ouverts dans le cadre du PAG). Ces droits demeurent valables jusqu'à leur date d'échéance. <br>
+     Contrainte(s) métier : Le motif est obligatoire si existencePAG passe de "1" à "0". Le fait de mettre fin au PAG n'a pas d'impact sur les droits en cours (même ceux ouverts dans le cadre du PAG). Ces droits demeurent valables jusqu'à leur date d'échéance. <br>
     Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j403-motif-fin-pag-ms/$expand">JDV-J403-MOTIF-FIN-PAG-MS</a></td>
   </tr>
   <tr>
     <td>creton : [0..1] Indicateur</td>
     <td>Amendement Creton. Il s’agit d’un dispositif législatif permettant le maintien temporaire de jeunes adultes de plus de 20 ans en établissement pour enfants dans l’attente d’une place dans un établissement pour adultes.<br>
-    Obligatoire pour les décisions orientations ESSMS enfant, non prévu pour les autres orientations.<br>
+    Contrainte(s) métier : Obligatoire pour categorieDroitPrestation = 7- Orientation ESMS Enfants (jdv-j401-categorie-droit-prestation-ms) et typeDroitPrestation = tous les codes 7.xx (jdv-j402-type-droit-prestation-ms). Optionnel pour les autres orientations.<br>
     0 = l'usager ne bénéficie pas de l'amendement Creton ;<br>
     1 = l'usager bénéficie de l'amendement Creton.
     </td>
@@ -684,8 +684,8 @@ Détails de la prestation pour préciser l'orientation.
   <tr>
     <td>temporaliteAccueil : [0..1] Code</td>
     <td>Fréquence d'accueil lors d'une prise en charge en ESSMS.<br>
-  La temporalité d’accueil est transmise pour tous les droits pour lesquels elle est obligatoire.<br>
-  Pour les catégories de droit et prestation suivantes :
+  Contrainte(s) métier : La temporalité d’accueil est transmise pour tous les droits pour lesquels elle est obligatoire.<br>
+  C'est à dire pour les catégories de droit et prestation suivantes :
   <ul>
     <li>Orientation ESMS Enfants</li>
     <li>Orientation ESMS Adultes</li>
@@ -710,20 +710,20 @@ Pour les types de droit et prestation suivants :
   <tr>
     <td>7.8 Orientation vers un Service d'éducation spéciale et de soins à domicile (SESSAD)</td>
     <td>Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j408-orientation-ms/$expand">JDV-J408-ORIENTATION-MS</a><br>
-    Seuls les codes de 1 à 6 sont autorisés.</td>
+    Contrainte(s) métier : Seuls les codes de 1 à 6 sont autorisés.</td>
   </tr>
   <tr>
     <td>7.9 Orientation vers un Service d'accompagnement familial et d'éducation précoce (SAFEP)</td>
     <td>Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j408-orientation-ms/$expand">JDV-J408-ORIENTATION-MS</a><br>
-    Seuls les codes 7 et 8 sont autorisés.</td>
+    Contrainte(s) métier : Seuls les codes 7 et 8 sont autorisés.</td>
   </tr>
   <tr>
     <td>13.1 Orientation vers un établissement d'accueil non médicalisé</td>
-    <td>Non renseigné</td>
+    <td>Contrainte(s) métier : precisionOrientation est interdit lorsque typeDroitPrestation = '13.1'</td>
   </tr>
    <tr>
     <td>13.2 Orientation vers un établissement d'accueil médicalisé en tout ou partie</td>
-    <td>Non renseigné</td>
+    <td>Contrainte(s) métier : precisionOrientation est interdit lorsque typeDroitPrestation = '13.2'</td>
   </tr>
   <tr>
     <td>8.3 Orientation en Enseignement adapté (SEGPA/EREA)</td>
@@ -733,7 +733,7 @@ Pour les types de droit et prestation suivants :
   <tr>
     <td>8.6 Orientation en Unité d'enseignement</td>
     <td>Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j408-orientation-ms/$expand">JDV-J408-ORIENTATION-MS</a><br>
-    Seuls les codes UEA et UEM sont autorisés.</td>
+    Contrainte(s) métier : Seuls les codes UEA et UEM sont autorisés.</td>
   </tr>
   </table>
 Pour les autres types de droits la valeur de cet attribut est un texte libre.
@@ -748,7 +748,7 @@ Pour les autres types de droits la valeur de cet attribut est un texte libre.
    <tr>
     <td>formation : [0..1] Texte</td>
     <td>Formation proposée<br>
-    cet élément est obligatoire si le type de droit et prestation est "11.1" (Orientation en Centre de rééducation professionnelle (CRP)).</td>
+    Contrainte(s) métier : cet élément est obligatoire si le type de droit et prestation est "11.1" (Orientation en Centre de rééducation professionnelle (CRP)).</td>
   </tr>
   <tr>
     <td>frequence : [0..1] Mesure</td>
@@ -815,7 +815,7 @@ Quantification de la prise en charge.
     <td>frequencePriseCharge : [0..1] Code</td>
     <td>Périodicité de la prise en charge (quotidienne, hebdomadaire, mensuelle, annuelle).<br>
     Jeu(x) valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J37-UcumUniteTemps/FHIR/JDV-J37-UcumUniteTemps">JDV-J37-UcumUniteTemps</a><br>
-    Seuls les codes suivants sont à utiliser : a (année), mo (mois), wk (semaine), d (jour)
+    Contrainte(s) métier : Seuls les codes suivants sont à utiliser : a (année), mo (mois), wk (semaine), d (jour)
     </td>
   </tr>
 </table>
