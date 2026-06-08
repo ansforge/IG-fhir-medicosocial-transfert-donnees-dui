@@ -7,6 +7,7 @@ Description: "Profil de la ressource ServiceRequest permettant de représenter l
 * identifier 1..1
 * identifier ^short = "Identifiant du besoin"
 * identifier.value 1..1
+* identifier.value obeys ServiceRequestBesoinIdentifierFormat
 * identifier.value ^example[0].label = "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-BESO-numBesoin"
 * identifier.value ^example[0].valueString = "3480787529/123456789-BESO-1234"
 * identifier.system 1..1
@@ -40,3 +41,8 @@ Title:    "Modèle de contenu DUI"
 * note.text -> "commentaireBesoin"
 * extension[pieceJointeBesoin] -> "pieceJointeBesoin"
 * basedOn -> "ProjetPersonnalise"
+
+Invariant: ServiceRequestBesoinIdentifierFormat
+Description: "l'identifiant du besoin doit respecter le format : 3+FINESS/identifiantLocalUsagerESSMS-BESO-numBesoin"
+Severity: #error
+Expression: "value.matches('^3[0-9]{9}/[A-Za-z0-9]+-BESO-[A-Za-z0-9]+$')"

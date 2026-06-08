@@ -81,6 +81,13 @@ Usage: #example
 * entry[DUIServiceRequestBesoin][2].request.method = #POST
 * entry[DUIServiceRequestBesoin][2].request.url = "TDDUIServiceRequestBesoin"
 
+* entry[DUIServiceRequestDemandeOrientation].fullUrl = "https://test-server.fr/ServiceRequest/tddui-service-request-demande-orientation-example"
+* entry[DUIServiceRequestDemandeOrientation].resource = tddui-service-request-demande-orientation-example
+* entry[DUIServiceRequestDemandeOrientation].request.method = #POST
+* entry[DUIServiceRequestDemandeOrientation].request.url = "TDDUIServiceRequestDemandeOrientation"
+
+
+
 * entry[DUITaskAction][0].fullUrl = "https://test-server.fr/Task/tddui-pp-pa-task-action-1-ergo-example"
 * entry[DUITaskAction][0].resource = tddui-pp-pa-task-action-1-ergo-example
 * entry[DUITaskAction][0].request.method = #POST

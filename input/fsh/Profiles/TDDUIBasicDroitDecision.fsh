@@ -4,6 +4,15 @@ Id: tddui-basic-decision
 Title: "TDDUI Basic Decision"
 Description: "Profil de la ressource Basic permettant de représenter la décision de la CDAPH ainsi que les droits associés." 
 
+* obeys motivationLocaleRequired
+* obeys idDecisionMAJCardinality
+* obeys idDecisionMAJInterdiction
+* obeys FormationCardinality
+* obeys PrecisionOrientationValues7.8
+* obeys PrecisionOrientationValues7.9
+* obeys PrecisionOrientationValues8.3
+* obeys Date
+
 * subject only Reference(TDDUIServiceRequestDemandeOrientation)
 
 * code from TDDUIBasicType (required)
