@@ -18,11 +18,11 @@ Usage: #example
 
 * extension[TDDUIDecision].extension[decision].extension[dateEffetCloture].valueDate = "2020-01-01"
 
-* extension[TDDUIDecision].extension[decision].extension[droitPrestation].extension[categorieDroitPrestation].valueCodeableConcept = tre-r420-droit-prestation#1
+* extension[TDDUIDecision].extension[decision].extension[droitPrestation].extension[categorieDroitPrestation].valueCodeableConcept = tre-r420-droit-prestation#7
 
 * extension[TDDUIDecision].extension[decision].extension[droitPrestation].extension[typeDroitPrestation].valueCodeableConcept = tre-r420-droit-prestation#7.8
 
-* extension[TDDUIDecision].extension[decision].extension[droitPrestation].extension[natureDroitPrestation].valueCodeableConcept = TRE-R327-TypeDecision#1
+* extension[TDDUIDecision].extension[decision].extension[droitPrestation].extension[natureDroitPrestation].valueCodeableConcept = TRE-R327-TypeDecision#2
 
 * extension[TDDUIDecision].extension[decision].extension[droitPrestation].extension[dateOuverture].valueDate = "2020-01-01"
 
@@ -40,9 +40,9 @@ Usage: #example
 
 * extension[TDDUIDecision].extension[decision].extension[droitPrestation].extension[detailPrestation].extension[qualificationOrientation].valueCodeableConcept = tre-r422-qualification-orientation#1
 
-* extension[TDDUIDecision].extension[decision].extension[droitPrestation].extension[creton].valueBoolean = true
+//* extension[TDDUIDecision].extension[decision].extension[droitPrestation].extension[creton].valueBoolean = true
 
-* extension[TDDUIDecision].extension[decision].extension[motivationLocale].valueString = "Motivation locale pour la décision"
+//* extension[TDDUIDecision].extension[decision].extension[motivationLocale].valueString = "Motivation locale pour la décision"
 
 
 
