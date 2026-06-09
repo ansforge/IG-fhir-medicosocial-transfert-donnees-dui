@@ -4,8 +4,8 @@ Title: "TDDUI Slot PresenceAbsence Example"
 Description: "Exemple de la ressource TDDUISlotPresenceAbsence." 
 Usage: #example
 
-* identifier.value = "3480787529/1012-PA-0001"
-* identifier.system = "https://identifiant-medicosocial-presenceabsence.esante.gouv.fr"
+* identifier[idPA].value = "3480787529/1012-PA-0001"
+* identifier[idPA].system = "https://identifiant-medicosocial-presenceabsence.esante.gouv.fr"
 
 * status = #busy
 

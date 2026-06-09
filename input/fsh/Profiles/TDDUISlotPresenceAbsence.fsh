@@ -4,12 +4,20 @@ Id: tddui-slot-presence-absence
 Title: "TDDUI Slot Presence Absence"
 Description: "Profil de la ressource FRCoreSlotProfile permettant de représenter les présences et absences de l'usager."
 
-* identifier 1..1
-* identifier.value 1..1
-* identifier.value ^example[0].label = "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-PA-numPresenceAbsenceUsager"
-* identifier.value ^example[0].valueString = "3480787529/147720425367411-PA-21564655"
-* identifier.system 1..1
-* identifier.system = "https://identifiant-medicosocial-presenceabsence.esante.gouv.fr"
+* identifier 1..*
+
+* identifier ^slicing.discriminator.type = #pattern
+* identifier ^slicing.discriminator.path = "type"
+* identifier ^slicing.rules = #open
+
+* identifier contains
+    idPA 1..1 
+* identifier[idPA].value 1..1
+* identifier[idPA].value ^example[0].label = "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-PA-numPresenceAbsenceUsager"
+* identifier[idPA].value ^example[0].valueString = "3480787529/147720425367411-PA-21564655"
+* identifier[idPA].system 1..1
+* identifier[idPA].system = "https://identifiant-medicosocial-presenceabsence.esante.gouv.fr"
+* identifier[idPA].type = TDDUISlotIdentifier#PA
 
 * schedule only Reference(TDDUISchedule)
 
