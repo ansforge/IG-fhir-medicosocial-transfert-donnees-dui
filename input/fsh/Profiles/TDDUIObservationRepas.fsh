@@ -4,12 +4,18 @@ Id: tddui-observation-repas
 Title: "TDDUI Observation Repas"
 Description: "Profil de la ressource Observation permettant de représenter si l'usager bénéficie ou non des repas."
 
-* identifier 1..1
-* identifier.value 1..1
-* identifier.value ^example[0].label = "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-REPAS-numRepas"
-* identifier.value ^example[0].valueString = "3480787529/147720425367411-REPAS-12548"
-* identifier.system 1..1
-* identifier.system = "https://identifiant-medicosocial-repas.esante.gouv.fr"
+* identifier 1..*
+* identifier ^slicing.discriminator.type = #pattern
+* identifier ^slicing.discriminator.path = "type"
+* identifier ^slicing.rules = #open 
+* identifier contains 
+    idRepas 1..1
+
+* identifier[idRepas].type = TDDUIObservationRepasIdentifier#REP
+* identifier[idRepas].value ^example[0].label = "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-REPAS-numRepas"
+* identifier[idRepas].value ^example[0].valueString = "3480787529/147720425367411-REPAS-12548"
+* identifier[idRepas].system 1..1
+* identifier[idRepas].system = "https://identifiant-medicosocial-repas.esante.gouv.fr"
 
 * code = TDDUIObservationType#REPAS "Repas"
 
