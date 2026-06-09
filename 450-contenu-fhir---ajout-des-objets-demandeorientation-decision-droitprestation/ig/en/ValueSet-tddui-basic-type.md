@@ -36,7 +36,7 @@ ValueSet pour le code de la ressource Basic.
   "title" : "TDDUI Basic Type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-08T15:24:46+00:00",
+  "date" : "2026-06-09T07:55:39+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

@@ -11,7 +11,7 @@
   <name value="TDDUI"/>
   <title value="Médicosocial - Transfert de données DUI"/>
   <status value="active"/>
-  <date value="2026-06-08T15:24:46+00:00"/>
+  <date value="2026-06-09T07:55:39+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -1920,6 +1920,28 @@
       </reference>
       <name value="TDDUI ServiceRequest Besoin"/>
       <description value="Profil de la ressource ServiceRequest permettant de représenter les besoins de l'usager."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/tddui-service-request-besoin-identifier"/>
+      </reference>
+      <name value="TDDUI ServiceRequest Besoin Identifier"/>
+      <description value="ValueSet pour la définition des codes d'identifiant de besoin"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/tddui-service-request-besoin-identifier"/>
+      </reference>
+      <name value="TDDUI ServiceRequest Besoin Identifier"/>
+      <description value="CodeSystem pour la définition des codes d'identifiant de besoin"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

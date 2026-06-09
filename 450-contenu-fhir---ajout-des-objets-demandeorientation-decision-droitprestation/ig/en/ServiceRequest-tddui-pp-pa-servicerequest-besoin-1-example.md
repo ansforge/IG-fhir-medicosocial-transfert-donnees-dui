@@ -4,7 +4,7 @@
 
 Profile: [TDDUI ServiceRequest Besoin](StructureDefinition-tddui-service-request-besoin.md)
 
-**identifier**: `https://identifiant-medicosocial-besoin.esante.gouv.fr`/3480787529/123456789-BESO-1234
+**identifier**: Identifiant du besoin/3480787529/123456789-BESO-1234
 
 **basedOn**: [CarePlan Projet personnalisé de Mme Jeanne L.](CarePlan-tddui-pp-pa-careplan-example.md)
 
@@ -28,6 +28,12 @@ Profile: [TDDUI ServiceRequest Besoin](StructureDefinition-tddui-service-request
     "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin"]
   },
   "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-service-request-besoin-identifier",
+        "code" : "BES"
+      }]
+    },
     "system" : "https://identifiant-medicosocial-besoin.esante.gouv.fr",
     "value" : "3480787529/123456789-BESO-1234"
   }],

@@ -18,9 +18,18 @@
   fhir:language [ fhir:v "en"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest tddui-pp-pa-servicerequest-besoin-3-example</b></p><a name=\"tddui-pp-pa-servicerequest-besoin-3-example\"> </a><a name=\"hctddui-pp-pa-servicerequest-besoin-3-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tddui-service-request-besoin.html\">TDDUI ServiceRequest Besoin</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-besoin.esante.gouv.fr</code>/3480787529/123456789-BESO-1236</p><p><b>basedOn</b>: <a href=\"CarePlan-tddui-pp-pa-careplan-example.html\">CarePlan Projet personnalisé de Mme Jeanne L.</a></p><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>code</b>: <span title=\"Codes:\">Besoin de maintien du lien social et d'activités récréatives.</span></p><p><b>subject</b>: <a href=\"Patient-tddui-pp-pa-patient-example-pp.html\">Jeanne L. (official) Female, DoB: 1947-04-03 ( Patient internal identifier: 3480787529/123456789)</a></p></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest tddui-pp-pa-servicerequest-besoin-3-example</b></p><a name=\"tddui-pp-pa-servicerequest-besoin-3-example\"> </a><a name=\"hctddui-pp-pa-servicerequest-besoin-3-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tddui-service-request-besoin.html\">TDDUI ServiceRequest Besoin</a></p></div><p><b>identifier</b>: Identifiant du besoin/3480787529/123456789-BESO-1236</p><p><b>basedOn</b>: <a href=\"CarePlan-tddui-pp-pa-careplan-example.html\">CarePlan Projet personnalisé de Mme Jeanne L.</a></p><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>code</b>: <span title=\"Codes:\">Besoin de maintien du lien social et d'activités récréatives.</span></p><p><b>subject</b>: <a href=\"Patient-tddui-pp-pa-patient-example-pp.html\">Jeanne L. (official) Female, DoB: 1947-04-03 ( Patient internal identifier: 3480787529/123456789)</a></p></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-service-request-besoin-identifier"^^xsd:anyURI ;
+           fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-service-request-besoin-identifier>
+         ] ;
+         fhir:code [ fhir:v "BES" ]
+       ] )
+     ] ;
      fhir:system [
        fhir:v "https://identifiant-medicosocial-besoin.esante.gouv.fr"^^xsd:anyURI ;
        fhir:l <https://identifiant-medicosocial-besoin.esante.gouv.fr>

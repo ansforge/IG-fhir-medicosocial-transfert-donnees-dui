@@ -14,7 +14,7 @@
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2026-06-08T15:24:46+00:00",
+  "date" : "2026-06-09T07:55:39+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -2228,6 +2228,30 @@
       },
       "name" : "TDDUI ServiceRequest Besoin",
       "description" : "Profil de la ressource ServiceRequest permettant de représenter les besoins de l'usager.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/tddui-service-request-besoin-identifier"
+      },
+      "name" : "TDDUI ServiceRequest Besoin Identifier",
+      "description" : "ValueSet pour la définition des codes d'identifiant de besoin",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/tddui-service-request-besoin-identifier"
+      },
+      "name" : "TDDUI ServiceRequest Besoin Identifier",
+      "description" : "CodeSystem pour la définition des codes d'identifiant de besoin",
       "exampleBoolean" : false
     },
     {

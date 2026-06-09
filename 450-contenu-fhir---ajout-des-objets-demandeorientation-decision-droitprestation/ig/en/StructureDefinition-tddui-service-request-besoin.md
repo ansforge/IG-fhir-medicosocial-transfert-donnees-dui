@@ -35,7 +35,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-service-req
   "name" : "TDDUIServiceRequestBesoin",
   "title" : "TDDUI ServiceRequest Besoin",
   "status" : "active",
-  "date" : "2026-06-08T15:24:46+00:00",
+  "date" : "2026-06-09T07:55:39+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -127,22 +127,46 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-service-req
     {
       "id" : "ServiceRequest.identifier",
       "path" : "ServiceRequest.identifier",
-      "short" : "Identifiant du besoin",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "type"
+        }],
+        "rules" : "open"
+      },
       "min" : 1,
-      "max" : "1",
       "mapping" : [{
         "identity" : "specmetier-to-TDDUIServiceRequestBesoin",
         "map" : "idBesoin"
       }]
     },
     {
-      "id" : "ServiceRequest.identifier.system",
+      "id" : "ServiceRequest.identifier:idBesoin",
+      "path" : "ServiceRequest.identifier",
+      "sliceName" : "idBesoin",
+      "short" : "Identifiant du besoin",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "ServiceRequest.identifier:idBesoin.type",
+      "path" : "ServiceRequest.identifier.type",
+      "min" : 1,
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-service-request-besoin-identifier",
+          "code" : "BES"
+        }]
+      }
+    },
+    {
+      "id" : "ServiceRequest.identifier:idBesoin.system",
       "path" : "ServiceRequest.identifier.system",
       "min" : 1,
       "patternUri" : "https://identifiant-medicosocial-besoin.esante.gouv.fr"
     },
     {
-      "id" : "ServiceRequest.identifier.value",
+      "id" : "ServiceRequest.identifier:idBesoin.value",
       "path" : "ServiceRequest.identifier.value",
       "min" : 1,
       "example" : [{
