@@ -4,7 +4,7 @@
 
 Profile: [TDDUI Slot Presence Absence](StructureDefinition-tddui-slot-presence-absence.md)
 
-**identifier**: `https://identifiant-medicosocial-presenceabsence.esante.gouv.fr`/3480787529/1012-PA-0001
+**identifier**: Patient identifier/3480787529/1012-PA-0001
 
 **serviceType**: Présent
 
@@ -28,6 +28,12 @@ Profile: [TDDUI Slot Presence Absence](StructureDefinition-tddui-slot-presence-a
     "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-slot-presence-absence"]
   },
   "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-slot-identifier",
+        "code" : "PA"
+      }]
+    },
     "system" : "https://identifiant-medicosocial-presenceabsence.esante.gouv.fr",
     "value" : "3480787529/1012-PA-0001"
   }],

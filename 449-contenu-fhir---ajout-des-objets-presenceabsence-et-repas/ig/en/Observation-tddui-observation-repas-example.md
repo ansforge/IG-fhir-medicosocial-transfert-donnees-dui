@@ -6,7 +6,7 @@ Profile: [TDDUI Observation Repas](StructureDefinition-tddui-observation-repas.m
 
 **TDDUI Patient Present**: true
 
-**identifier**: `https://identifiant-medicosocial-repas.esante.gouv.fr`/3480787529/1012-REPAS-0002
+**identifier**: Identifiant du repas/3480787529/1012-REPAS-0002
 
 **status**: Registered
 
@@ -34,6 +34,12 @@ Profile: [TDDUI Observation Repas](StructureDefinition-tddui-observation-repas.m
     "valueBoolean" : true
   }],
   "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-identifier",
+        "code" : "REP"
+      }]
+    },
     "system" : "https://identifiant-medicosocial-repas.esante.gouv.fr",
     "value" : "3480787529/1012-REPAS-0002"
   }],

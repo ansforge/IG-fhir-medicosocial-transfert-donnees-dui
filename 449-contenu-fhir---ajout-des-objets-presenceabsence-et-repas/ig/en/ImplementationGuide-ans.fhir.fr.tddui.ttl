@@ -22,7 +22,7 @@
   fhir:name [ fhir:v "TDDUI"] ; # 
   fhir:title [ fhir:v "Médicosocial - Transfert de données DUI"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-06-03T14:26:22+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-06-09T13:44:39+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -2496,6 +2496,27 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-identifier> ;
+         fhir:reference [ fhir:v "CodeSystem/tddui-observation-identifier" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Observation Identifier" ] ;
+       fhir:description [ fhir:v "CodeSystem pour la définition des codes d'identifiant d'observation" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
@@ -2658,6 +2679,27 @@
          a fhir:Canonical ;
          fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-repas"^^xsd:anyURI ;
          fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-repas>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-observation-identifier-repas> ;
+         fhir:reference [ fhir:v "ValueSet/tddui-observation-identifier-repas" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Observation Repas Identifier" ] ;
+       fhir:description [ fhir:v "ValueSet pour la définition des codes d'identifiant du repas" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -4151,6 +4193,48 @@
        ] ;
        fhir:name [ fhir:v "TDDUI ServiceRequest Besoin" ] ;
        fhir:description [ fhir:v "Profil de la ressource ServiceRequest permettant de représenter les besoins de l'usager." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-slot-identifier> ;
+         fhir:reference [ fhir:v "CodeSystem/tddui-slot-identifier" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Slot Identifier" ] ;
+       fhir:description [ fhir:v "CodeSystem pour la définition des codes d'identifiant de la ressource Slot" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-slot-identifier-presence-absence> ;
+         fhir:reference [ fhir:v "ValueSet/tddui-slot-identifier-presence-absence" ]
+       ] ;
+       fhir:name [ fhir:v "TDDUI Slot Identifier Presence Absence" ] ;
+       fhir:description [ fhir:v "ValueSet définissant les types d'identifiants pour la ressource SlotPresenceAbsence." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

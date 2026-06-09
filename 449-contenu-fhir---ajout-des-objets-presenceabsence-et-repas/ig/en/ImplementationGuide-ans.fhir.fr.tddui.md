@@ -14,7 +14,7 @@
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2026-06-03T14:26:22+00:00",
+  "date" : "2026-06-09T13:44:39+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -1285,6 +1285,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/tddui-observation-identifier"
+      },
+      "name" : "TDDUI Observation Identifier",
+      "description" : "CodeSystem pour la définition des codes d'identifiant d'observation",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -1377,6 +1389,18 @@
       "name" : "TDDUI Observation Repas Example",
       "description" : "Exemple de la ressource TDDUIObservationRepas",
       "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-repas"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/tddui-observation-identifier-repas"
+      },
+      "name" : "TDDUI Observation Repas Identifier",
+      "description" : "ValueSet pour la définition des codes d'identifiant du repas",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -2204,6 +2228,30 @@
       },
       "name" : "TDDUI ServiceRequest Besoin",
       "description" : "Profil de la ressource ServiceRequest permettant de représenter les besoins de l'usager.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/tddui-slot-identifier"
+      },
+      "name" : "TDDUI Slot Identifier",
+      "description" : "CodeSystem pour la définition des codes d'identifiant de la ressource Slot",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/tddui-slot-identifier-presence-absence"
+      },
+      "name" : "TDDUI Slot Identifier Presence Absence",
+      "description" : "ValueSet définissant les types d'identifiants pour la ressource SlotPresenceAbsence.",
       "exampleBoolean" : false
     },
     {

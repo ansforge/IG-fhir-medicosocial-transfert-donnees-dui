@@ -34,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-slot-presen
   "name" : "TDDUISlotPresenceAbsence",
   "title" : "TDDUI Slot Presence Absence",
   "status" : "active",
-  "date" : "2026-06-03T14:26:22+00:00",
+  "date" : "2026-06-09T13:44:39+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -125,21 +125,45 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-slot-presen
     {
       "id" : "Slot.identifier",
       "path" : "Slot.identifier",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "type"
+        }],
+        "rules" : "open"
+      },
       "min" : 1,
-      "max" : "1",
       "mapping" : [{
         "identity" : "specmetier-to-TDDUISlotPresenceAbsence",
         "map" : "idPresenceAbsenceUsager"
       }]
     },
     {
-      "id" : "Slot.identifier.system",
+      "id" : "Slot.identifier:idPA",
+      "path" : "Slot.identifier",
+      "sliceName" : "idPA",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "Slot.identifier:idPA.type",
+      "path" : "Slot.identifier.type",
+      "min" : 1,
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-slot-identifier",
+          "code" : "PA"
+        }]
+      }
+    },
+    {
+      "id" : "Slot.identifier:idPA.system",
       "path" : "Slot.identifier.system",
       "min" : 1,
       "patternUri" : "https://identifiant-medicosocial-presenceabsence.esante.gouv.fr"
     },
     {
-      "id" : "Slot.identifier.value",
+      "id" : "Slot.identifier:idPA.value",
       "path" : "Slot.identifier.value",
       "min" : 1,
       "example" : [{

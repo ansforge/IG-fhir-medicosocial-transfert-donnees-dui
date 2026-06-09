@@ -34,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-observation
   "name" : "TDDUIObservationRepas",
   "title" : "TDDUI Observation Repas",
   "status" : "active",
-  "date" : "2026-06-03T14:26:22+00:00",
+  "date" : "2026-06-09T13:44:39+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -133,23 +133,46 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-observation
     {
       "id" : "Observation.identifier",
       "path" : "Observation.identifier",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "type"
+        }],
+        "rules" : "open"
+      },
       "min" : 1,
-      "max" : "1",
       "mapping" : [{
         "identity" : "specmetier-to-TDDUIObservationRepas",
         "map" : "idRepas"
       }]
     },
     {
-      "id" : "Observation.identifier.system",
+      "id" : "Observation.identifier:idRepas",
+      "path" : "Observation.identifier",
+      "sliceName" : "idRepas",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "Observation.identifier:idRepas.type",
+      "path" : "Observation.identifier.type",
+      "min" : 1,
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-identifier",
+          "code" : "REP"
+        }]
+      }
+    },
+    {
+      "id" : "Observation.identifier:idRepas.system",
       "path" : "Observation.identifier.system",
       "min" : 1,
       "patternUri" : "https://identifiant-medicosocial-repas.esante.gouv.fr"
     },
     {
-      "id" : "Observation.identifier.value",
+      "id" : "Observation.identifier:idRepas.value",
       "path" : "Observation.identifier.value",
-      "min" : 1,
       "example" : [{
         "label" : "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-REPAS-numRepas",
         "valueString" : "3480787529/147720425367411-REPAS-12548"
