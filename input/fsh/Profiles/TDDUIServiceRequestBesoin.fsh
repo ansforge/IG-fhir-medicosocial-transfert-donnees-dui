@@ -13,7 +13,7 @@ Description: "Profil de la ressource ServiceRequest permettant de représenter l
 
 * identifier[idBesoin] ^short = "Identifiant du besoin"
 * identifier[idBesoin].value 1..1
-* identifier[idBesoin].type = TDDUIServiceRequestBesoinIdentifier#BES
+* identifier[idBesoin].type = TDDUIServiceRequestIdentifier#BES
 * identifier[idBesoin].value obeys ServiceRequestBesoinIdentifierFormat
 * identifier[idBesoin].value ^example[0].label = "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-BESO-numBesoin"
 * identifier[idBesoin].value ^example[0].valueString = "3480787529/123456789-BESO-1234"

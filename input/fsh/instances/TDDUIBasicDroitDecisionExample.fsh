@@ -7,8 +7,8 @@ Usage: #example
 * identifier[idDecision].use = #official
 * identifier[idDecision].value = "1254"
 * identifier[idDecision].system = "urn:oid:1.2.250.1.213.7.1" // OID MDPH de l'AIN
-//* identifier[idDecisionMAJ].value = "1255"
-//* identifier[idDecisionMAJ].system = "urn:oid:1.2.250.1.213.7.1" // OID MDPH de l'AIN
+* identifier[idDecisionMAJ].value = "1255"
+* identifier[idDecisionMAJ].system = "urn:oid:1.2.250.1.213.7.1" // OID MDPH de l'AIN
 
 * subject = Reference(tddui-service-request-demande-orientation-example)
 
@@ -34,7 +34,7 @@ Usage: #example
 
 * extension[TDDUIDecision].extension[decision].extension[droitPrestation].extension[detailPrestation].extension[temporaliteAccueil].valueCodeableConcept = TRE-R240-TemporaliteAccueil#01
 
-* extension[TDDUIDecision].extension[decision].extension[droitPrestation].extension[detailPrestation].extension[precisionOrientation].valueCodeableConcept = tre-r426-orientation#1
+* extension[TDDUIDecision].extension[decision].extension[droitPrestation].extension[detailPrestation].extension[precisionOrientation].valueCodeableConcept = tre-r426-orientation#1.6
 
 * extension[TDDUIDecision].extension[decision].extension[droitPrestation].extension[detailPrestation].extension[structureAccueil].valueReference = Reference(tddui-organization-example)
 

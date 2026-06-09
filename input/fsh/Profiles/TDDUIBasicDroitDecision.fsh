@@ -157,7 +157,7 @@ Severity: #error
 Expression: "((extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.6') or (extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.7') or (extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.8') or (extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.10')) implies (extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.where(url='droitPrestation').extension.where(url='detailPrestation').extension.where(url='temporaliteAccueil').exists())"
 
 Invariant: cretonCardinality
-Description: "Obligatoire pour les décisions orientations ESSMS enfant, non prévu pour les autres orientations."
+Description: "Obligatoire pour les décisions orientations ESSMS enfant"
 Severity: #error
 Expression: "(extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.extension.where(url='categorieDroitPrestation').valueCodeableConcept.coding.code='7') implies (extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.extension.where(url='creton').exists())"
 
