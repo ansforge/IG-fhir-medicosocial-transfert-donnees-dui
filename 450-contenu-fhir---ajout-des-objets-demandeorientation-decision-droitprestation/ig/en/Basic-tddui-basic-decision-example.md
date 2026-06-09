@@ -17,12 +17,12 @@ Profile: [TDDUI Basic Decision](StructureDefinition-tddui-basic-decision.md)
 > **url**dateEcheance
 **value**: 2020-12-31
 > **url**existencePAG
-**value**: false**qualificationOrientation**: Cible**structureAccueil**: [Organization Les Chênes Verts](Organization-tddui-organization-example.md)**temporaliteAccueil**: Temporaire**precisionOrientation**: SESSAD polyvalent
+**value**: false**qualificationOrientation**: Cible**structureAccueil**: [Organization Les Chênes Verts](Organization-tddui-organization-example.md)**temporaliteAccueil**: Temporaire**precisionOrientation**: 1.6
 > **url**detailPrestation
 
 > **url**decision
 
-**identifier**: Identifiant principal de la décision/1254 (use: official, )
+**identifier**: Identifiant principal de la décision/1254 (use: official, ), Identifiant révisé de la décision/1255
 
 **code**: Décision
 
@@ -133,7 +133,7 @@ Profile: [TDDUI Basic Decision](StructureDefinition-tddui-basic-decision.md)
             "valueCodeableConcept" : {
               "coding" : [{
                 "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r426-orientation",
-                "code" : "1"
+                "code" : "1.6"
               }]
             }
           }],
@@ -156,6 +156,17 @@ Profile: [TDDUI Basic Decision](StructureDefinition-tddui-basic-decision.md)
     },
     "system" : "urn:oid:1.2.250.1.213.7.1",
     "value" : "1254"
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-basic-decision-identifier",
+        "code" : "IDDECISIONMAJ",
+        "display" : "Identifiant révisé de la décision"
+      }]
+    },
+    "system" : "urn:oid:1.2.250.1.213.7.1",
+    "value" : "1255"
   }],
   "code" : {
     "coding" : [{

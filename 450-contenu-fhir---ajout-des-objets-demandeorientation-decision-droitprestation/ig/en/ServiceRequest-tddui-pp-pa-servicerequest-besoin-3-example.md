@@ -30,7 +30,7 @@ Profile: [TDDUI ServiceRequest Besoin](StructureDefinition-tddui-service-request
   "identifier" : [{
     "type" : {
       "coding" : [{
-        "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-service-request-besoin-identifier",
+        "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-service-request-identifier",
         "code" : "BES"
       }]
     },

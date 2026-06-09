@@ -34,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-basic-decis
   "name" : "TDDUIBasicDecision",
   "title" : "TDDUI Basic Decision",
   "status" : "active",
-  "date" : "2026-06-09T07:55:39+00:00",
+  "date" : "2026-06-09T09:58:53+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -128,7 +128,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-basic-decis
       {
         "key" : "cretonCardinality",
         "severity" : "error",
-        "human" : "Obligatoire pour les décisions orientations ESSMS enfant, non prévu pour les autres orientations.",
+        "human" : "Obligatoire pour les décisions orientations ESSMS enfant",
         "expression" : "(extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.extension.where(url='categorieDroitPrestation').valueCodeableConcept.coding.code='7') implies (extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.extension.where(url='creton').exists())",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-basic-decision"
       },

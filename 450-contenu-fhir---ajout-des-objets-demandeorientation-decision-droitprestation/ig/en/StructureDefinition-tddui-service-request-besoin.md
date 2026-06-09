@@ -35,7 +35,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-service-req
   "name" : "TDDUIServiceRequestBesoin",
   "title" : "TDDUI ServiceRequest Besoin",
   "status" : "active",
-  "date" : "2026-06-09T07:55:39+00:00",
+  "date" : "2026-06-09T09:58:53+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -154,7 +154,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-service-req
       "min" : 1,
       "patternCodeableConcept" : {
         "coding" : [{
-          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-service-request-besoin-identifier",
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-service-request-identifier",
           "code" : "BES"
         }]
       }

@@ -423,7 +423,7 @@ Seuls les codes de 1 à 6 sont autorisés." class="constraint">PrecisionOrientat
 7.9 Orientation vers un Service d'accompagnement familial et d'éducation précoce (SAFEP) 	Jeu(x) de valeur(s) associé(s) : JDV-J408-ORIENTATION-MS
 Seuls les codes 7 et 8 sont autorisés." class="constraint">PrecisionOrientationValues7.9</span><span title="null" class="constraint">, </span><span style="font-weight:bold" title="Les valeurs de précision de l'orientation varient en fonction du type droit d'orientation
 8.3 Orientation en Enseignement adapté (SEGPA/EREA) 	Jeu(x) de valeur(s) associé(s) : JDV-J408-ORIENTATION-MS
-Seuls les codes 9 et 10 sont autorisés." class="constraint">PrecisionOrientationValues8.3</span><span title="null" class="constraint">, </span><span style="font-weight:bold" title="Obligatoire pour les décisions orientations ESSMS enfant, non prévu pour les autres orientations." class="constraint">cretonCardinality</span><span title="null" class="constraint">, </span><span style="font-weight:bold" title="Cet attribut est obligatoire pour les décisions de type 5 (Clôture de droit). " class="constraint">DateEffetClotureCardinality</span><span title="null" class="constraint">, </span><span style="font-weight:bold" title="La temporalité d'accueil est transmise pour les types de droit et prestation suivants :
+Seuls les codes 9 et 10 sont autorisés." class="constraint">PrecisionOrientationValues8.3</span><span title="null" class="constraint">, </span><span style="font-weight:bold" title="Obligatoire pour les décisions orientations ESSMS enfant" class="constraint">cretonCardinality</span><span title="null" class="constraint">, </span><span style="font-weight:bold" title="Cet attribut est obligatoire pour les décisions de type 5 (Clôture de droit). " class="constraint">DateEffetClotureCardinality</span><span title="null" class="constraint">, </span><span style="font-weight:bold" title="La temporalité d'accueil est transmise pour les types de droit et prestation suivants :
 
     Orientation en Unité d'enseignement
     Orientation vers une Scolarisation en milieu ordinaire à temps partagé (UE et établissement scolaire)
@@ -1428,7 +1428,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-tddui-service-request-demande-orientation.html">TDDUI ServiceRequest DemandeOrientation</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Identifies the focus of this resource</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // a5a21944-5fed-4949-84b9-8478061b1368
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // aac36969-48b1-4be1-9d5d-f7af54cbec3f
 document.getElementById('cbtddui-basic-decisionK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('tddui-basic-decisionK'), 'binding', document.getElementById('cbtddui-basic-decisionK-binding').checked, document.getElementById('pptddui-basic-decisionK'));
 document.getElementById('cbtddui-basic-decisionK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1711,7 +1711,7 @@ Seuls les codes 9 et 10 sont autorisés.</td>
     <td>cretonCardinality</td>
     <td>error</td>
     <td>Basic</td>
-    <td>Obligatoire pour les décisions orientations ESSMS enfant, non prévu pour les autres orientations.</td>
+    <td>Obligatoire pour les décisions orientations ESSMS enfant</td>
     <td>
       <code>(extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.extension.where(url='categorieDroitPrestation').valueCodeableConcept.coding.code='7') implies (extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.extension.where(url='creton').exists())</code>
     </td>
@@ -1864,7 +1864,7 @@ Seuls les codes de 1 à 6 sont autorisés." class="constraint">PrecisionOrientat
 7.9 Orientation vers un Service d'accompagnement familial et d'éducation précoce (SAFEP) 	Jeu(x) de valeur(s) associé(s) : JDV-J408-ORIENTATION-MS
 Seuls les codes 7 et 8 sont autorisés." class="constraint">PrecisionOrientationValues7.9</span><span title="null" class="constraint">, </span><span style="font-weight:bold" title="Les valeurs de précision de l'orientation varient en fonction du type droit d'orientation
 8.3 Orientation en Enseignement adapté (SEGPA/EREA) 	Jeu(x) de valeur(s) associé(s) : JDV-J408-ORIENTATION-MS
-Seuls les codes 9 et 10 sont autorisés." class="constraint">PrecisionOrientationValues8.3</span><span title="null" class="constraint">, </span><span style="font-weight:bold" title="Obligatoire pour les décisions orientations ESSMS enfant, non prévu pour les autres orientations." class="constraint">cretonCardinality</span><span title="null" class="constraint">, </span><span style="font-weight:bold" title="Cet attribut est obligatoire pour les décisions de type 5 (Clôture de droit). " class="constraint">DateEffetClotureCardinality</span><span title="null" class="constraint">, </span><span style="font-weight:bold" title="La temporalité d'accueil est transmise pour les types de droit et prestation suivants :
+Seuls les codes 9 et 10 sont autorisés." class="constraint">PrecisionOrientationValues8.3</span><span title="null" class="constraint">, </span><span style="font-weight:bold" title="Obligatoire pour les décisions orientations ESSMS enfant" class="constraint">cretonCardinality</span><span title="null" class="constraint">, </span><span style="font-weight:bold" title="Cet attribut est obligatoire pour les décisions de type 5 (Clôture de droit). " class="constraint">DateEffetClotureCardinality</span><span title="null" class="constraint">, </span><span style="font-weight:bold" title="La temporalité d'accueil est transmise pour les types de droit et prestation suivants :
 
     Orientation en Unité d'enseignement
     Orientation vers une Scolarisation en milieu ordinaire à temps partagé (UE et établissement scolaire)
@@ -2297,7 +2297,7 @@ Pour les catégories de droit et prestation suivantes :
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-tddui-service-request-demande-orientation.html">TDDUI ServiceRequest DemandeOrientation</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Identifies the focus of this resource</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // a5a21944-5fed-4949-84b9-8478061b1368
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // aac36969-48b1-4be1-9d5d-f7af54cbec3f
 document.getElementById('cbtddui-basic-decisionD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('tddui-basic-decisionD'), 'binding', document.getElementById('cbtddui-basic-decisionD-binding').checked, document.getElementById('pptddui-basic-decisionD'));
 document.getElementById('cbtddui-basic-decisionD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2492,7 +2492,7 @@ Seuls les codes 9 et 10 sont autorisés.</td>
     <td>cretonCardinality</td>
     <td>error</td>
     <td>Basic</td>
-    <td>Obligatoire pour les décisions orientations ESSMS enfant, non prévu pour les autres orientations.</td>
+    <td>Obligatoire pour les décisions orientations ESSMS enfant</td>
     <td>
       <code>(extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.extension.where(url='categorieDroitPrestation').valueCodeableConcept.coding.code='7') implies (extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.extension.where(url='creton').exists())</code>
     </td>
@@ -2576,7 +2576,7 @@ Seuls les codes de 1 à 6 sont autorisés." class="constraint">PrecisionOrientat
 7.9 Orientation vers un Service d'accompagnement familial et d'éducation précoce (SAFEP) 	Jeu(x) de valeur(s) associé(s) : JDV-J408-ORIENTATION-MS
 Seuls les codes 7 et 8 sont autorisés." class="constraint">PrecisionOrientationValues7.9</span><span title="null" class="constraint">, </span><span style="font-weight:bold" title="Les valeurs de précision de l'orientation varient en fonction du type droit d'orientation
 8.3 Orientation en Enseignement adapté (SEGPA/EREA) 	Jeu(x) de valeur(s) associé(s) : JDV-J408-ORIENTATION-MS
-Seuls les codes 9 et 10 sont autorisés." class="constraint">PrecisionOrientationValues8.3</span><span title="null" class="constraint">, </span><span style="font-weight:bold" title="Obligatoire pour les décisions orientations ESSMS enfant, non prévu pour les autres orientations." class="constraint">cretonCardinality</span><span title="null" class="constraint">, </span><span style="font-weight:bold" title="Cet attribut est obligatoire pour les décisions de type 5 (Clôture de droit). " class="constraint">DateEffetClotureCardinality</span><span title="null" class="constraint">, </span><span style="font-weight:bold" title="La temporalité d'accueil est transmise pour les types de droit et prestation suivants :
+Seuls les codes 9 et 10 sont autorisés." class="constraint">PrecisionOrientationValues8.3</span><span title="null" class="constraint">, </span><span style="font-weight:bold" title="Obligatoire pour les décisions orientations ESSMS enfant" class="constraint">cretonCardinality</span><span title="null" class="constraint">, </span><span style="font-weight:bold" title="Cet attribut est obligatoire pour les décisions de type 5 (Clôture de droit). " class="constraint">DateEffetClotureCardinality</span><span title="null" class="constraint">, </span><span style="font-weight:bold" title="La temporalité d'accueil est transmise pour les types de droit et prestation suivants :
 
     Orientation en Unité d'enseignement
     Orientation vers une Scolarisation en milieu ordinaire à temps partagé (UE et établissement scolaire)
@@ -4054,7 +4054,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a> | <a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a> | <a href="http://hl7.org/fhir/R4/patient.html">Patient</a> | <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a> | <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Who created</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // a5a21944-5fed-4949-84b9-8478061b1368
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // aac36969-48b1-4be1-9d5d-f7af54cbec3f
 document.getElementById('cbtddui-basic-decisionS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('tddui-basic-decisionS'), 'binding', document.getElementById('cbtddui-basic-decisionS-binding').checked, document.getElementById('pptddui-basic-decisionS'));
 document.getElementById('cbtddui-basic-decisionS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -4518,7 +4518,7 @@ Seuls les codes 9 et 10 sont autorisés.</td>
     <td>cretonCardinality</td>
     <td>error</td>
     <td>Basic</td>
-    <td>Obligatoire pour les décisions orientations ESSMS enfant, non prévu pour les autres orientations.</td>
+    <td>Obligatoire pour les décisions orientations ESSMS enfant</td>
     <td>
       <code>(extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.extension.where(url='categorieDroitPrestation').valueCodeableConcept.coding.code='7') implies (extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.extension.where(url='creton').exists())</code>
     </td>
@@ -4815,7 +4815,7 @@ Seuls les codes de 1 à 6 sont autorisés." class="constraint">PrecisionOrientat
 7.9 Orientation vers un Service d'accompagnement familial et d'éducation précoce (SAFEP) 	Jeu(x) de valeur(s) associé(s) : JDV-J408-ORIENTATION-MS
 Seuls les codes 7 et 8 sont autorisés." class="constraint">PrecisionOrientationValues7.9</span><span title="null" class="constraint">, </span><span style="font-weight:bold" title="Les valeurs de précision de l'orientation varient en fonction du type droit d'orientation
 8.3 Orientation en Enseignement adapté (SEGPA/EREA) 	Jeu(x) de valeur(s) associé(s) : JDV-J408-ORIENTATION-MS
-Seuls les codes 9 et 10 sont autorisés." class="constraint">PrecisionOrientationValues8.3</span><span title="null" class="constraint">, </span><span style="font-weight:bold" title="Obligatoire pour les décisions orientations ESSMS enfant, non prévu pour les autres orientations." class="constraint">cretonCardinality</span><span title="null" class="constraint">, </span><span style="font-weight:bold" title="Cet attribut est obligatoire pour les décisions de type 5 (Clôture de droit). " class="constraint">DateEffetClotureCardinality</span><span title="null" class="constraint">, </span><span style="font-weight:bold" title="La temporalité d'accueil est transmise pour les types de droit et prestation suivants :
+Seuls les codes 9 et 10 sont autorisés." class="constraint">PrecisionOrientationValues8.3</span><span title="null" class="constraint">, </span><span style="font-weight:bold" title="Obligatoire pour les décisions orientations ESSMS enfant" class="constraint">cretonCardinality</span><span title="null" class="constraint">, </span><span style="font-weight:bold" title="Cet attribut est obligatoire pour les décisions de type 5 (Clôture de droit). " class="constraint">DateEffetClotureCardinality</span><span title="null" class="constraint">, </span><span style="font-weight:bold" title="La temporalité d'accueil est transmise pour les types de droit et prestation suivants :
 
     Orientation en Unité d'enseignement
     Orientation vers une Scolarisation en milieu ordinaire à temps partagé (UE et établissement scolaire)
@@ -5820,7 +5820,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-tddui-service-request-demande-orientation.html">TDDUI ServiceRequest DemandeOrientation</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Identifies the focus of this resource</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // a5a21944-5fed-4949-84b9-8478061b1368
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // aac36969-48b1-4be1-9d5d-f7af54cbec3f
 document.getElementById('cbtddui-basic-decisionKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('tddui-basic-decisionKA'), 'binding', document.getElementById('cbtddui-basic-decisionKA-binding').checked, document.getElementById('pptddui-basic-decisionKA'));
 document.getElementById('cbtddui-basic-decisionKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -6102,7 +6102,7 @@ Seuls les codes 9 et 10 sont autorisés.</td>
     <td>cretonCardinality</td>
     <td>error</td>
     <td>Basic</td>
-    <td>Obligatoire pour les décisions orientations ESSMS enfant, non prévu pour les autres orientations.</td>
+    <td>Obligatoire pour les décisions orientations ESSMS enfant</td>
     <td>
       <code>(extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.extension.where(url='categorieDroitPrestation').valueCodeableConcept.coding.code='7') implies (extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.extension.where(url='creton').exists())</code>
     </td>
@@ -6255,7 +6255,7 @@ Seuls les codes de 1 à 6 sont autorisés." class="constraint">PrecisionOrientat
 7.9 Orientation vers un Service d'accompagnement familial et d'éducation précoce (SAFEP) 	Jeu(x) de valeur(s) associé(s) : JDV-J408-ORIENTATION-MS
 Seuls les codes 7 et 8 sont autorisés." class="constraint">PrecisionOrientationValues7.9</span><span title="null" class="constraint">, </span><span style="font-weight:bold" title="Les valeurs de précision de l'orientation varient en fonction du type droit d'orientation
 8.3 Orientation en Enseignement adapté (SEGPA/EREA) 	Jeu(x) de valeur(s) associé(s) : JDV-J408-ORIENTATION-MS
-Seuls les codes 9 et 10 sont autorisés." class="constraint">PrecisionOrientationValues8.3</span><span title="null" class="constraint">, </span><span style="font-weight:bold" title="Obligatoire pour les décisions orientations ESSMS enfant, non prévu pour les autres orientations." class="constraint">cretonCardinality</span><span title="null" class="constraint">, </span><span style="font-weight:bold" title="Cet attribut est obligatoire pour les décisions de type 5 (Clôture de droit). " class="constraint">DateEffetClotureCardinality</span><span title="null" class="constraint">, </span><span style="font-weight:bold" title="La temporalité d'accueil est transmise pour les types de droit et prestation suivants :
+Seuls les codes 9 et 10 sont autorisés." class="constraint">PrecisionOrientationValues8.3</span><span title="null" class="constraint">, </span><span style="font-weight:bold" title="Obligatoire pour les décisions orientations ESSMS enfant" class="constraint">cretonCardinality</span><span title="null" class="constraint">, </span><span style="font-weight:bold" title="Cet attribut est obligatoire pour les décisions de type 5 (Clôture de droit). " class="constraint">DateEffetClotureCardinality</span><span title="null" class="constraint">, </span><span style="font-weight:bold" title="La temporalité d'accueil est transmise pour les types de droit et prestation suivants :
 
     Orientation en Unité d'enseignement
     Orientation vers une Scolarisation en milieu ordinaire à temps partagé (UE et établissement scolaire)
@@ -6688,7 +6688,7 @@ Pour les catégories de droit et prestation suivantes :
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-tddui-service-request-demande-orientation.html">TDDUI ServiceRequest DemandeOrientation</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Identifies the focus of this resource</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // a5a21944-5fed-4949-84b9-8478061b1368
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // aac36969-48b1-4be1-9d5d-f7af54cbec3f
 document.getElementById('cbtddui-basic-decisionDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('tddui-basic-decisionDA'), 'binding', document.getElementById('cbtddui-basic-decisionDA-binding').checked, document.getElementById('pptddui-basic-decisionDA'));
 document.getElementById('cbtddui-basic-decisionDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -6880,7 +6880,7 @@ Seuls les codes 9 et 10 sont autorisés.</td>
     <td>cretonCardinality</td>
     <td>error</td>
     <td>Basic</td>
-    <td>Obligatoire pour les décisions orientations ESSMS enfant, non prévu pour les autres orientations.</td>
+    <td>Obligatoire pour les décisions orientations ESSMS enfant</td>
     <td>
       <code>(extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.extension.where(url='categorieDroitPrestation').valueCodeableConcept.coding.code='7') implies (extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.extension.where(url='creton').exists())</code>
     </td>
@@ -6964,7 +6964,7 @@ Seuls les codes de 1 à 6 sont autorisés." class="constraint">PrecisionOrientat
 7.9 Orientation vers un Service d'accompagnement familial et d'éducation précoce (SAFEP) 	Jeu(x) de valeur(s) associé(s) : JDV-J408-ORIENTATION-MS
 Seuls les codes 7 et 8 sont autorisés." class="constraint">PrecisionOrientationValues7.9</span><span title="null" class="constraint">, </span><span style="font-weight:bold" title="Les valeurs de précision de l'orientation varient en fonction du type droit d'orientation
 8.3 Orientation en Enseignement adapté (SEGPA/EREA) 	Jeu(x) de valeur(s) associé(s) : JDV-J408-ORIENTATION-MS
-Seuls les codes 9 et 10 sont autorisés." class="constraint">PrecisionOrientationValues8.3</span><span title="null" class="constraint">, </span><span style="font-weight:bold" title="Obligatoire pour les décisions orientations ESSMS enfant, non prévu pour les autres orientations." class="constraint">cretonCardinality</span><span title="null" class="constraint">, </span><span style="font-weight:bold" title="Cet attribut est obligatoire pour les décisions de type 5 (Clôture de droit). " class="constraint">DateEffetClotureCardinality</span><span title="null" class="constraint">, </span><span style="font-weight:bold" title="La temporalité d'accueil est transmise pour les types de droit et prestation suivants :
+Seuls les codes 9 et 10 sont autorisés." class="constraint">PrecisionOrientationValues8.3</span><span title="null" class="constraint">, </span><span style="font-weight:bold" title="Obligatoire pour les décisions orientations ESSMS enfant" class="constraint">cretonCardinality</span><span title="null" class="constraint">, </span><span style="font-weight:bold" title="Cet attribut est obligatoire pour les décisions de type 5 (Clôture de droit). " class="constraint">DateEffetClotureCardinality</span><span title="null" class="constraint">, </span><span style="font-weight:bold" title="La temporalité d'accueil est transmise pour les types de droit et prestation suivants :
 
     Orientation en Unité d'enseignement
     Orientation vers une Scolarisation en milieu ordinaire à temps partagé (UE et établissement scolaire)
@@ -8442,7 +8442,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a> | <a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a> | <a href="http://hl7.org/fhir/R4/patient.html">Patient</a> | <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a> | <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Who created</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // a5a21944-5fed-4949-84b9-8478061b1368
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // aac36969-48b1-4be1-9d5d-f7af54cbec3f
 document.getElementById('cbtddui-basic-decisionSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('tddui-basic-decisionSA'), 'binding', document.getElementById('cbtddui-basic-decisionSA-binding').checked, document.getElementById('pptddui-basic-decisionSA'));
 document.getElementById('cbtddui-basic-decisionSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -8904,7 +8904,7 @@ Seuls les codes 9 et 10 sont autorisés.</td>
     <td>cretonCardinality</td>
     <td>error</td>
     <td>Basic</td>
-    <td>Obligatoire pour les décisions orientations ESSMS enfant, non prévu pour les autres orientations.</td>
+    <td>Obligatoire pour les décisions orientations ESSMS enfant</td>
     <td>
       <code>(extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.extension.where(url='categorieDroitPrestation').valueCodeableConcept.coding.code='7') implies (extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.extension.where(url='creton').exists())</code>
     </td>
@@ -9241,7 +9241,7 @@ Summary
           IG © 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  
           Package ans.fhir.fr.tddui#2.3.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-06-09 07:55:00 +0000">
+  <span title="2026-06-09 09:58:00 +0000">
     2026-06-09
   </span>
 

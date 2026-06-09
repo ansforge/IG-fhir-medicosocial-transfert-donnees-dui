@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-event-repor
   "name" : "TDDUIEventReport",
   "title" : "TDDUI Event Report",
   "status" : "active",
-  "date" : "2026-06-09T07:55:39+00:00",
+  "date" : "2026-06-09T09:58:53+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

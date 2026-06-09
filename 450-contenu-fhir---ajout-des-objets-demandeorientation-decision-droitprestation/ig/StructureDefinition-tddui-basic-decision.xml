@@ -9,7 +9,7 @@ Seuls les codes de 1 à 6 sont autorisés." class="constraint">PrecisionOrientat
 7.9 Orientation vers un Service d'accompagnement familial et d'éducation précoce (SAFEP) 	Jeu(x) de valeur(s) associé(s) : JDV-J408-ORIENTATION-MS
 Seuls les codes 7 et 8 sont autorisés." class="constraint">PrecisionOrientationValues7.9</span><span title="null" class="constraint">, </span><span style="font-weight:bold" title="Les valeurs de précision de l'orientation varient en fonction du type droit d'orientation
 8.3 Orientation en Enseignement adapté (SEGPA/EREA) 	Jeu(x) de valeur(s) associé(s) : JDV-J408-ORIENTATION-MS
-Seuls les codes 9 et 10 sont autorisés." class="constraint">PrecisionOrientationValues8.3</span><span title="null" class="constraint">, </span><span style="font-weight:bold" title="Obligatoire pour les décisions orientations ESSMS enfant, non prévu pour les autres orientations." class="constraint">cretonCardinality</span><span title="null" class="constraint">, </span><span style="font-weight:bold" title="Cet attribut est obligatoire pour les décisions de type 5 (Clôture de droit). " class="constraint">DateEffetClotureCardinality</span><span title="null" class="constraint">, </span><span style="font-weight:bold" title="La temporalité d'accueil est transmise pour les types de droit et prestation suivants :
+Seuls les codes 9 et 10 sont autorisés." class="constraint">PrecisionOrientationValues8.3</span><span title="null" class="constraint">, </span><span style="font-weight:bold" title="Obligatoire pour les décisions orientations ESSMS enfant" class="constraint">cretonCardinality</span><span title="null" class="constraint">, </span><span style="font-weight:bold" title="Cet attribut est obligatoire pour les décisions de type 5 (Clôture de droit). " class="constraint">DateEffetClotureCardinality</span><span title="null" class="constraint">, </span><span style="font-weight:bold" title="La temporalité d'accueil est transmise pour les types de droit et prestation suivants :
 
     Orientation en Unité d'enseignement
     Orientation vers une Scolarisation en milieu ordinaire à temps partagé (UE et établissement scolaire)
@@ -113,7 +113,7 @@ Pour les catégories de droit et prestation suivantes :
   <name value="TDDUIBasicDecision"/>
   <title value="TDDUI Basic Decision"/>
   <status value="active"/>
-  <date value="2026-06-09T07:55:39+00:00"/>
+  <date value="2026-06-09T09:58:53+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -267,7 +267,7 @@ Pour les catégories de droit et prestation suivantes :
       <constraint>
         <key value="cretonCardinality"/>
         <severity value="error"/>
-        <human value="Obligatoire pour les décisions orientations ESSMS enfant, non prévu pour les autres orientations."/>
+        <human value="Obligatoire pour les décisions orientations ESSMS enfant"/>
         <expression value="(extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.extension.where(url='categorieDroitPrestation').valueCodeableConcept.coding.code='7') implies (extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.extension.where(url='creton').exists())"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-basic-decision"/>
       </constraint>
@@ -9144,7 +9144,7 @@ Pour les catégories de droit et prestation suivantes :
       <constraint>
         <key value="cretonCardinality"/>
         <severity value="error"/>
-        <human value="Obligatoire pour les décisions orientations ESSMS enfant, non prévu pour les autres orientations."/>
+        <human value="Obligatoire pour les décisions orientations ESSMS enfant"/>
         <expression value="(extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.extension.where(url='categorieDroitPrestation').valueCodeableConcept.coding.code='7') implies (extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.extension.where(url='creton').exists())"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-basic-decision"/>
       </constraint>

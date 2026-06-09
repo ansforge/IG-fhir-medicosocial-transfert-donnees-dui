@@ -564,7 +564,7 @@
       "identifier" : [{
         "type" : {
           "coding" : [{
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-service-request-besoin-identifier",
+            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-service-request-identifier",
             "code" : "BES"
           }]
         },
@@ -603,7 +603,7 @@
       "identifier" : [{
         "type" : {
           "coding" : [{
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-service-request-besoin-identifier",
+            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-service-request-identifier",
             "code" : "BES"
           }]
         },
@@ -642,7 +642,7 @@
       "identifier" : [{
         "type" : {
           "coding" : [{
-            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-service-request-besoin-identifier",
+            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-service-request-identifier",
             "code" : "BES"
           }]
         },

@@ -11,7 +11,7 @@
   <name value="TDDUI"/>
   <title value="Médicosocial - Transfert de données DUI"/>
   <status value="active"/>
-  <date value="2026-06-09T07:55:39+00:00"/>
+  <date value="2026-06-09T09:58:53+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -1927,21 +1927,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/tddui-service-request-besoin-identifier"/>
+        <reference value="ValueSet/tddui-service-request-identifier-besoin"/>
       </reference>
       <name value="TDDUI ServiceRequest Besoin Identifier"/>
       <description value="ValueSet pour la définition des codes d'identifiant de besoin"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/tddui-service-request-besoin-identifier"/>
-      </reference>
-      <name value="TDDUI ServiceRequest Besoin Identifier"/>
-      <description value="CodeSystem pour la définition des codes d'identifiant de besoin"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1965,6 +1954,17 @@
       <name value="TDDUI ServiceRequest DemandeOrientation Example"/>
       <description value="Exemple d'une demande d'orientation."/>
       <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-demande-orientation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/tddui-service-request-identifier"/>
+      </reference>
+      <name value="TDDUI ServiceRequest Identifier"/>
+      <description value="CodeSystem pour la définition des codes d'identifiant des observations"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
