@@ -4,14 +4,21 @@ Id: tddui-service-request-besoin
 Title: "TDDUI ServiceRequest Besoin"
 Description: "Profil de la ressource ServiceRequest permettant de représenter les besoins de l'usager." 
 
-* identifier 1..1
-* identifier ^short = "Identifiant du besoin"
-* identifier.value 1..1
-* identifier.value obeys ServiceRequestBesoinIdentifierFormat
-* identifier.value ^example[0].label = "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-BESO-numBesoin"
-* identifier.value ^example[0].valueString = "3480787529/123456789-BESO-1234"
-* identifier.system 1..1
-* identifier.system = "https://identifiant-medicosocial-besoin.esante.gouv.fr"
+* identifier 1..*
+* identifier ^slicing.discriminator.type = #pattern
+* identifier ^slicing.discriminator.path = "type"
+* identifier ^slicing.rules = #open 
+* identifier contains 
+    idBesoin 1..1
+
+* identifier[idBesoin] ^short = "Identifiant du besoin"
+* identifier[idBesoin].value 1..1
+* identifier[idBesoin].type = TDDUIServiceRequestBesoinIdentifier#BES
+* identifier[idBesoin].value obeys ServiceRequestBesoinIdentifierFormat
+* identifier[idBesoin].value ^example[0].label = "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-BESO-numBesoin"
+* identifier[idBesoin].value ^example[0].valueString = "3480787529/123456789-BESO-1234"
+* identifier[idBesoin].system 1..1
+* identifier[idBesoin].system = "https://identifiant-medicosocial-besoin.esante.gouv.fr"
 
 * extension contains
     TDDUIAttachment named pieceJointeBesoin 0..*
