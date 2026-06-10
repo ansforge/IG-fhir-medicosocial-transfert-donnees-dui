@@ -7,19 +7,22 @@ Profile: [TDDUI Basic Decision](StructureDefinition-tddui-basic-decision.md)
 > **TDDUI Decision****typeDecision**: Attribution**motivation**: Attrib AAH L821-1**dateEffetCloture**: 2020-01-01
 > **droitPrestation**
 > **url**categorieDroitPrestation
-**value**: Orientation ESMS Enfants
+**value**: Orientation scolaire
 > **url**typeDroitPrestation
-**value**: Orientation vers un Service d'éducation spéciale et de soins à domicile (SESSAD)
+**value**: Orientation vers un Institut médico-éducatif (IME)
 > **url**natureDroitPrestation
-**value**: Rejet
+**value**: Attribution
 > **url**dateOuverture
 **value**: 2020-01-01
 > **url**dateEcheance
 **value**: 2020-12-31
 > **url**existencePAG
-**value**: false**qualificationOrientation**: Cible**structureAccueil**: [Organization Les Chênes Verts](Organization-tddui-organization-example.md)**temporaliteAccueil**: Temporaire**precisionOrientation**: 1.6
+**value**: false**qualificationOrientation**: Cible**structureAccueil**: [Organization Les Chênes Verts](Organization-tddui-organization-example.md)**formation**: Formation pour la prestation**temporaliteAccueil**: Temporaire**precisionOrientation**: SESSAD polyvalent
 > **url**detailPrestation
 
+> **url**creton
+**value**: true
+**motivationLocale**: Motivation locale pour la décision
 > **url**decision
 
 **identifier**: Identifiant principal de la décision/1254 (use: official, ), Identifiant révisé de la décision/1255
@@ -69,7 +72,7 @@ Profile: [TDDUI Basic Decision](StructureDefinition-tddui-basic-decision.md)
           "valueCodeableConcept" : {
             "coding" : [{
               "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r420-droit-prestation",
-              "code" : "7"
+              "code" : "8"
             }]
           }
         },
@@ -78,7 +81,7 @@ Profile: [TDDUI Basic Decision](StructureDefinition-tddui-basic-decision.md)
           "valueCodeableConcept" : {
             "coding" : [{
               "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r420-droit-prestation",
-              "code" : "7.8"
+              "code" : "7.1"
             }]
           }
         },
@@ -87,7 +90,7 @@ Profile: [TDDUI Basic Decision](StructureDefinition-tddui-basic-decision.md)
           "valueCodeableConcept" : {
             "coding" : [{
               "system" : "https://mos.esante.gouv.fr/NOS/TRE_R327-TypeDecision/FHIR/TRE-R327-TypeDecision",
-              "code" : "2"
+              "code" : "1"
             }]
           }
         },
@@ -120,6 +123,10 @@ Profile: [TDDUI Basic Decision](StructureDefinition-tddui-basic-decision.md)
             }
           },
           {
+            "url" : "formation",
+            "valueString" : "Formation pour la prestation"
+          },
+          {
             "url" : "temporaliteAccueil",
             "valueCodeableConcept" : {
               "coding" : [{
@@ -133,13 +140,21 @@ Profile: [TDDUI Basic Decision](StructureDefinition-tddui-basic-decision.md)
             "valueCodeableConcept" : {
               "coding" : [{
                 "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r426-orientation",
-                "code" : "1.6"
+                "code" : "1"
               }]
             }
           }],
           "url" : "detailPrestation"
+        },
+        {
+          "url" : "creton",
+          "valueBoolean" : true
         }],
         "url" : "droitPrestation"
+      },
+      {
+        "url" : "motivationLocale",
+        "valueString" : "Motivation locale pour la décision"
       }],
       "url" : "decision"
     }],
