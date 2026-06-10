@@ -4,8 +4,8 @@ Title: "TDDUI Goal ProjetVie Example"
 Description: "Exemple du projet de vie d'un usager."
 Usage: #example
 
-* identifier.value = "3480787529/123456789-PDV-1234"
-* identifier.system = "https://identifiant-medicosocial-projetvie.esante.gouv.fr"
+* identifier[idPDV].value = "3480787529/123456789-PDV-1234"
+* identifier[idPDV].system = "https://identifiant-medicosocial-projetvie.esante.gouv.fr"
 
 * lifecycleStatus = #active
 

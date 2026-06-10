@@ -4,13 +4,21 @@ Id: tddui-goal-projet-vie
 Title: "TDDUI Goal Projet Vie"
 Description: "Profil de la ressource Goal permettant de représenter le projet de vie de l'usager."
 
-* identifier 1..1
+* identifier 1..
+
+* identifier ^slicing.discriminator.type = #pattern
+* identifier ^slicing.discriminator.path = "type"
+* identifier ^slicing.rules = #open
+
 * identifier ^short = "Identifiant du projet de vie"
-* identifier.value 1..1
-* identifier.value ^example[0].label = "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-PDV-idLocalProjetVie"
-* identifier.value ^example[0].valueString = "3480787529/123456789-PDV-1234"
-* identifier.system 1..1
-* identifier.system = "https://identifiant-medicosocial-projetvie.esante.gouv.fr"
+* identifier contains
+    idPDV 1..1 
+* identifier[idPDV].type = TDDUIGoalIdentifier#PDV
+* identifier[idPDV].value 1..1
+* identifier[idPDV].value ^example[0].label = "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-PDV-idLocalProjetVie"
+* identifier[idPDV].value ^example[0].valueString = "3480787529/123456789-PDV-1234"
+* identifier[idPDV].system 1..1
+* identifier[idPDV].system = "https://identifiant-medicosocial-projetvie.esante.gouv.fr"
 
 * lifecycleStatus ^short = "Correspondance des statuts métier avec les codes FHIR : ENPREPARATION → planned, ENCOURS → active, TERMINE → completed."
 
