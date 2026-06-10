@@ -198,7 +198,8 @@ Adresse géopostale. Un emplacement auquel l’usager peut être trouvé, d'apr�
   </tr>
   <tr>
     <td>type : [0..1] Code</td>
-    <td>Indique le ou les types d'adresse tel que "Adresse du domicile", "Adresse du domicile de secours", etc. </td>
+    <td>Indique le ou les types d'adresse tel que "Adresse du domicile", "Adresse du domicile de secours", etc.<br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j409-type-adresse-ms/$expand">JDV-J409-TYPE-ADRESSE-MS</a></td>
   </tr>
   <tr>
     <td>numeroVoie : [0..1] Texte</td>
@@ -243,7 +244,8 @@ Adresse géopostale. Un emplacement auquel l’usager peut être trouvé, d'apr�
   </tr>
   <tr>
     <td>pays : [0..1] Code</td>
-    <td>Nom du pays pour les adresses internationales.</td>
+    <td>Nom du pays pour les adresses internationales.<br>
+    Nomenclature(s) associée(s) : Norme ISO 3166</td>
   </tr>
   <tr>
     <td>commentaire : [0..1] Texte</td>
@@ -263,12 +265,12 @@ Adresse de télécommunication à laquelle l’usager peut être contactée (té
   <tr>
     <td>canal : [1..1] Code</td>
     <td>Code spécifiant le canal ou la manière dont s'établit la communication (téléphone, e-mail, URL, etc.).<br>
-    Jeu(x) de valeur associé(s) : JDV en cours de d'analyse NOS</td>
+    Jeu(x) de valeur associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j396-canal-communication-ms/$expand">JDV-J396-CANAL-COMMUNICATION-MS</a></td>
   </tr>
    <tr>
     <td>typeMessagerie : [0..1] Code</td>
     <td>Type de messagerie électronique rassemblant des acteurs (personne physique, personne morale ou système) identifiés et enregistrés selon des règles qui garantissent leur légitimité à l'utiliser.<br>
-    Jeu(x) de valeur associé(s) : JDV en cours de d'analyse NOS</td>
+    Jeu(x) de valeur associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j397-type-messagerie-ms/$expand">JDV-J397-TYPE-MESSAGERIE-MS</a></td>
   </tr>
   <tr>
     <td>adresseTelecom : [1..1] Texte</td>
@@ -277,7 +279,7 @@ Adresse de télécommunication à laquelle l’usager peut être contactée (té
     <tr>
     <td>utilisation : [0..1] Code</td>
     <td>Précise l'utilisation du canal de communication (par exemple à des fins professionnelles, privées, etc.).<br>
-    Jeu(x) de valeur associé(s) : JDV en cours de d'analyse NOS</td>
+    Jeu(x) de valeur associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j393-utilisation-canal-communication-ms/$expand">JDV-J393-UTILISATION-CANAL-COMMUNICATION</a></td>
   </tr>
 </table>
 
@@ -293,7 +295,7 @@ Adresse de courrier de l’usager.
   <tr>
     <td>typeCourrier : [0..1] Code</td>
     <td>Type de courrier qui peut être adressé à l'usager.<br>
-    Jeu(x) associé(s) : en cours de création NOS</td>
+    Jeu(x) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j392-type-courrier-ms/$expand">JDV-J392-TYPE-COURRIER-MS</a></td>
   </tr>
   <tr>
     <td>libelleDestinataire : [0..1] Texte</td>
@@ -492,12 +494,12 @@ La demande de compensation est adressée à la CDAPH. Elle contient l'ensemble d
   <tr>
     <td>typeDemande : [0..1] Code </td>
     <td>Type de la demande d'orientation.<br>
-    Jeu(x) de valeur(s) associé(s) : encours analyse NOS</td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j394-type-demande-compensation-ms/$expand">JDV-J394-TYPE-DEMANDE-COMPENSATION-MS</a></td>
   </tr>
   <tr>
     <td>natureDemande : [0..1] Code </td>
     <td>Nature de la demande d'orientation. A renseigner si le type est valorisé.<br>
-    Jeu(x) de valeur(s) associé(s) : encours analyse NOS</td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j395-nature-demande-compensation-ms/$expand">JDV-J395-NATURE-DEMANDE-COMPENSATION</a></td>
   </tr>
   <tr>
     <td>demandeOrientation : [0..*] ObjetBinaire </td>
@@ -547,25 +549,25 @@ La décision est une réponse à une demande de compensation l'usager ou de son 
   <tr>
     <td>typeDecision : [1..1] Code</td>
     <td>Caractérise le type de décision prise par la CDAPH en réponse à une demande de compensation d’un usager (individu ou représentant légal), à une demande de révision par un tiers ou à un recours administratif préalable obligatoire (RAPO) d’un usager.<br>
-    Jeu(x) de valeur(s) associé(s) : en cours création NOS
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j398-type-decision-ms/$expand">JDV-J398-TYPE-DECISION-MS</a>
     </td>
   </tr>
   <tr>
     <td>dateEffetCloture : [0..1] Date</td>
     <td>Date d'effet de la décision de clôture est la date à laquelle un droit n'est plus valable consécutivement à une décision de la CDAPH de clôture de droit ou d'attribution d'un droit de nature révision. A ne pas confondre avec la date d'échéance du droit qui est fixée lors de la décision d'attribution et qui ne doit jamais être modifiée.<br>
-    Cet attribut est obligatoire pour les décisions de type "5" (Clôture de droit). 
+    Contrainte(s) métier : Cet attribut est obligatoire si typeDecision = '5' (Clôture de droit). 
     </td>
   </tr>
   <tr>
     <td>idDecisionMAJ : [0..*] Identifiant</td>
     <td>Identifiants de la ou des décisions révisées ou renouvelées à l'origine du droit ou identifiant de la décision clôturée (concerne une seule décision) en cas de clôture de droit.<br>
     Ces identifiants sont obtenus par la concaténation des identifiants locaux de la ou des décisions révisées attribué par la MDPH à l’origine de la création du suivi de la décision (idDecisionMAJMDPHInitial) et du numéro cette MDPH (idMDPHInitial) : idDecisionMAJMDPHInitial/idMDPHInitial.<br>
-    Cet attribut est obligatoire si 
+    Contrainte(s) métier : Cet attribut est obligatoire si 
     <ul>
     <li>typeDecision = '5' (Clôture de droit) </li>
-    <li>typeDecision ='1' (Attribution) et DroitPrestation.natureDroit  = '2' (Renouvellement) ou '3' (Révision) </li>
+    <li>typeDecision ='1' (Attribution) et DroitPrestation.natureDroit  = '6' (Renouvellement) ou '7' (Révision) </li>
     </ul>
-    Ne pas transmettre si typeDecision = '1' (Attribution) et DroitPrestation.natureDroit = '1' (Nouveau droit)
+    Ne pas transmettre si typeDecision = '1' (Attribution) et DroitPrestation.natureDroit = '1' (Attribution)
     </td>
   </tr>
   <tr>
@@ -579,13 +581,13 @@ La décision est une réponse à une demande de compensation l'usager ou de son 
   <tr>
     <td>motivation : [0..*] Code</td>
     <td>Considération(s) de droit ou de fait qui constituent le fondement de la décision.<br>
-    Jeu(x) de valeur(s) associé(s) : en cours création NOS
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j399-motivation-ms/$expand">JDV-J399-MOTIVATION-MS</a>
     </td>
   </tr>
   <tr>
     <td>motivationLocale : [0..*] Texte</td>
-    <td>Champ libre permettant de renseigner une motivation locale.
-Ce champ apparaît (et devient obligatoire) uniquement si le code "9999 - Autre" est renseigné pour l'élément "motivation".</td>
+    <td>Champ libre permettant de renseigner une motivation locale.<br>
+ Contrainte(s) métier : Ce champ apparaît (et devient obligatoire) uniquement si le code "9999 - Autre" est renseigné pour l'élément "motivation".</td>
   </tr>
   <tr>
     <td>commentaire : [0..1] Texte</td>
@@ -609,18 +611,18 @@ Ensemble des dispositifs prévus par le Code de l'Action Sociale et des Familles
   <tr>
     <td>categorieDroitPrestation : [1..1] Code</td>
     <td>Catégorie de droit et prestation caractérisant la décision d'orientation.<br>
-    Jeu(x) de valeur(s) associé(s) : en cours d'analyse NOS</td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j401-categorie-droit-prestation-ms/$expand">JDV-J401-CATEGORIE-DROIT-PRESTATION-MS</a></td>
   </tr>
   <tr>
     <td>typeDroitPrestation : [1..1] Code</td>
     <td>Type de droit et prestation caractérisant la décision d'orientation.<br>
-    Jeu(x) de valeur(s) associé(s) : en cours d'analyse NOS<br>
-    La règle métier entre les catégories et les types de droit et prestation est spécifiée dans la table d'association ASS en cours de création NOS</td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j402-type-droit-prestation-ms/$expand">JDV-J402-TYPE-DROIT-PRESTATION-MS</a><br>
+     Contrainte(s) métier : La règle métier entre les catégories et les types de droit et prestation est spécifiée dans la terminologie hierarchique <a href="https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r420-droit-prestation">TRE-R420-DROIT-PRESTATION</a></td>
   </tr>
   <tr>
     <td>natureDroitPrestation : [1..1] Code</td>
     <td>Nature du droit s’appliquant à tous les droits ou prestations ouverts par la CDAPH. Elle permet de gérer, le cas échéant, le lien entre la date d’ouverture du droit et la date de fin d’un droit précédent. Elle est déterminée par l’équipe pluridisciplinaire ou par la CDAPH.<br>
-    Jeu(x) de valeur(s) associé(s) : en cours d'analyse NOS</td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j400-nature-droit-prestation-ms/$expand">JDV-J400-NATURE-DROIT-PRESTATION</a></td>
   </tr>
   <tr>
     <td>dateOuverture : [1..1] Date</td>
@@ -643,14 +645,13 @@ Ensemble des dispositifs prévus par le Code de l'Action Sociale et des Familles
     <td>motifFinPAG : [0..1] Code</td>
     <td>Lorsque le plan d'accompagnement global (PAG) arrive à échéance ou si le coordonnateur de parcours l'estime nécessaire, un bilan est élaboré et la phase d'actualisation est lancée afin de déterminer s'il faut prolonger ce PAG, le modifier ou y mettre fin. 
 La MDPH, les partenaires et l'usager peuvent définir ensemble que le PAG n'est plus nécessaire et donc y mettre  fin. Le consentement de la personne ou de son représentant légal est recueilli et l'information sur la fin du PAG transmise à l'ensemble des parties-prenantes.<br>
-    Le motif est obligatoire si existencePAG passe de "1" à "0". Le fait de mettre fin au PAG n'a pas d'impact sur les droits en cours (même ceux ouverts dans le cadre du PAG). Ces droits demeurent valables jusqu'à leur date d'échéance. <br>
-    Jeu(x) de valeur(s) associé(s) : en cours d'analyse NOS
-    </td>
+     Contrainte(s) métier : Le motif est obligatoire si existencePAG passe de "1" à "0". Le fait de mettre fin au PAG n'a pas d'impact sur les droits en cours (même ceux ouverts dans le cadre du PAG). Ces droits demeurent valables jusqu'à leur date d'échéance. <br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j403-motif-fin-pag-ms/$expand">JDV-J403-MOTIF-FIN-PAG-MS</a></td>
   </tr>
   <tr>
     <td>creton : [0..1] Indicateur</td>
     <td>Amendement Creton. Il s’agit d’un dispositif législatif permettant le maintien temporaire de jeunes adultes de plus de 20 ans en établissement pour enfants dans l’attente d’une place dans un établissement pour adultes.<br>
-    Obligatoire pour les décisions orientations ESSMS enfant, non prévu pour les autres orientations.<br>
+    Contrainte(s) métier : Obligatoire pour categorieDroitPrestation = 7- Orientation ESMS Enfants (jdv-j401-categorie-droit-prestation-ms) et typeDroitPrestation = tous les codes 7.xx (jdv-j402-type-droit-prestation-ms). Optionnel pour les autres orientations.<br>
     0 = l'usager ne bénéficie pas de l'amendement Creton ;<br>
     1 = l'usager bénéficie de l'amendement Creton.
     </td>
@@ -662,7 +663,7 @@ La MDPH, les partenaires et l'usager peuvent définir ensemble que le PAG n'est 
   <tr>
     <td>typeCompensation : [0..1] Code</td>
     <td>Type de compensation dans le cas d’une aide sociale.<br>
-    Jeu(x) de valeur(s) associé(s) : en cours d'analyse NOS
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j394-type-demande-compensation-ms/$expand">JDV-J394-TYPE-DEMANDE-COMPENSATION-MS</a>
     </td>
   </tr>
   <tr>
@@ -683,8 +684,8 @@ Détails de la prestation pour préciser l'orientation.
   <tr>
     <td>temporaliteAccueil : [0..1] Code</td>
     <td>Fréquence d'accueil lors d'une prise en charge en ESSMS.<br>
-  La temporalité d’accueil est transmise pour tous les droits pour lesquels elle est obligatoire.<br>
-  Pour les catégories de droit et prestation suivantes :
+  Contrainte(s) métier : La temporalité d’accueil est transmise pour tous les droits pour lesquels elle est obligatoire.<br>
+  C'est à dire pour les catégories de droit et prestation suivantes :
   <ul>
     <li>Orientation ESMS Enfants</li>
     <li>Orientation ESMS Adultes</li>
@@ -708,27 +709,31 @@ Pour les types de droit et prestation suivants :
   </tr>
   <tr>
     <td>7.8 Orientation vers un Service d'éducation spéciale et de soins à domicile (SESSAD)</td>
-    <td>en cours analyse NOS</td>
+    <td>Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j408-orientation-ms/$expand">JDV-J408-ORIENTATION-MS</a><br>
+    Contrainte(s) métier : Seuls les codes de 1 à 6 sont autorisés.</td>
   </tr>
   <tr>
     <td>7.9 Orientation vers un Service d'accompagnement familial et d'éducation précoce (SAFEP)</td>
-    <td>en cours analyse NOS</td>
+    <td>Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j408-orientation-ms/$expand">JDV-J408-ORIENTATION-MS</a><br>
+    Contrainte(s) métier : Seuls les codes 7 et 8 sont autorisés.</td>
   </tr>
   <tr>
     <td>13.1 Orientation vers un établissement d'accueil non médicalisé</td>
-    <td>en cours analyse NOS</td>
+    <td>Contrainte(s) métier : precisionOrientation est interdit lorsque typeDroitPrestation = '13.1'</td>
   </tr>
    <tr>
     <td>13.2 Orientation vers un établissement d'accueil médicalisé en tout ou partie</td>
-    <td>en cours analyse NOS</td>
+    <td>Contrainte(s) métier : precisionOrientation est interdit lorsque typeDroitPrestation = '13.2'</td>
   </tr>
   <tr>
     <td>8.3 Orientation en Enseignement adapté (SEGPA/EREA)</td>
-    <td>en cours analyse NOS</td>
+    <td>Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j408-orientation-ms/$expand">JDV-J408-ORIENTATION-MS</a><br>
+    Seuls les codes 9 et 10 sont autorisés.</td>
   </tr>
   <tr>
     <td>8.6 Orientation en Unité d'enseignement</td>
-    <td>en cours analyse NOS</td>
+    <td>Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j408-orientation-ms/$expand">JDV-J408-ORIENTATION-MS</a><br>
+    Contrainte(s) métier : Seuls les codes UEA et UEM sont autorisés.</td>
   </tr>
   </table>
 Pour les autres types de droits la valeur de cet attribut est un texte libre.
@@ -743,7 +748,7 @@ Pour les autres types de droits la valeur de cet attribut est un texte libre.
    <tr>
     <td>formation : [0..1] Texte</td>
     <td>Formation proposée<br>
-    cet élément est obligatoire si le type de droit et prestation est "11.1" (Orientation en Centre de rééducation professionnelle (CRP)).</td>
+    Contrainte(s) métier : cet élément est obligatoire si le type de droit et prestation est "11.1" (Orientation en Centre de rééducation professionnelle (CRP)).</td>
   </tr>
   <tr>
     <td>frequence : [0..1] Mesure</td>
@@ -760,7 +765,7 @@ Pour les autres types de droits la valeur de cet attribut est un texte libre.
     <li>Orientation cible (appelée aussi orientation hors contrainte de l’offre, théorique ou idéale) : qualification d'une décision basée uniquement sur les attentes et les besoins évalués de la personne et considérée par l'équipe pluridisciplinaire ou la CDAPH comme la réponse la plus adaptée à ces attentes et besoins sans prendre en compte la réalité de l'offre disponible.</li>
     <li> Orientation alternative lorsqu'elle est partiellement adaptée au regard des attentes et des besoins évalués de la personne, mais qu'elle prend bien en compte la réalité de l'offre disponible et qu'elle a ainsi plus de chance d'être mise en oeuvre (appelée aussi "orientation par défaut").</li>
     </ul>
-    Jeu(x) de valeur(s) associé(s) : en cours analyse NOS
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j404-qualification-orientation-ms/$expand">JDV-J404-QUALIFICATION-ORIENTATION-MS</a>
     </td>
   </tr>
 </table>
@@ -810,7 +815,7 @@ Quantification de la prise en charge.
     <td>frequencePriseCharge : [0..1] Code</td>
     <td>Périodicité de la prise en charge (quotidienne, hebdomadaire, mensuelle, annuelle).<br>
     Jeu(x) valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J37-UcumUniteTemps/FHIR/JDV-J37-UcumUniteTemps">JDV-J37-UcumUniteTemps</a><br>
-    Seuls les codes suivants sont à utiliser : a (année), mo (mois), wk (semaine), d (jour)
+    Contrainte(s) métier : Seuls les codes suivants sont à utiliser : a (année), mo (mois), wk (semaine), d (jour)
     </td>
   </tr>
 </table>
@@ -1061,13 +1066,7 @@ Permis de conduire de l’usager.
   <tr>
     <td>categorie : [0..1] Code</td>
     <td>Catégorie du permis de conduire.<br>
-    Jeu(x) de valeur(s) associé(s) : en cours de création NOS</td>
-  </tr>
-  <tr>
-    <td>type : [0..1] Code</td>
-    <td>Type du permis de conduire.<br>
-    Jeu(x) de valeur(s) associé(s) : en cours de création NOS <br>
-    La règle métier entre les catégories et les types est spécifiée dans la table d'association ASS en cours de création NOS</td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j410-categorie-permis-conduire-ms/$expand">JDV-J410-CATEGORIE-PERMIS-CONDUIRE-MS</a></td>
   </tr>
   <tr>
     <td>dateObtention : [0..1] Date</td>
@@ -1907,7 +1906,7 @@ La classe EntiteGeographique est issue du MOS et est profilée pour ce volet.
  <tr>
     <td>niveauScolaireSuivi : [0..1] ConceptCode</td>
     <td>Situation scolaire suivie de l'usager.<br>
-    Jeu(x) de valeur(s) associé(s) : en cours de création NOS</td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j411-niveau-scolaire-ms/$expand">JDV-J411-NIVEAU-SCOLAIRE-MS</a></td>
  </tr>
   <tr>
     <td>typeEnseignementSpecialise : [0..*] ConceptCode</td>
@@ -1917,7 +1916,7 @@ La classe EntiteGeographique est issue du MOS et est profilée pour ce volet.
  <tr>
     <td>diplome : [0..*] ConceptCode</td>
     <td>Diplôme obtenu au cours de la période scolaire.<br>
-    Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J81-TypeDiplome-RASS/FHIR/JDV-J81-TypeDiplome-RASS">JDV-J81-TypeDiplome-RASS</a></td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j391-niveau-diplome-ms/$expand">JDV-J391-NIVEAU-DIPLOME-MS</a></td>
  </tr>
  <tr>
     <td>volumeScolarisation : [0..1] Numerique</td>
@@ -2215,7 +2214,7 @@ La classe PresenceAbsence indique si l'usager est présent ou absent.
   <tr>
     <td>typePresenceAbsence : [1..1] Code</td>
     <td>Type de déclaration : Présence ou Absence.<br>
-    Jeu(x) de valeur(s) associé(s) : Analyse en cours NOS</td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j405-type-presence-absence-ms/$expand">JDV-J405-TYPE-PRESENCE-ABSENCE-MS</a></td>
   </tr>
   <tr>
     <td>dateDebutPresenceAbsence : [1..1] DateHeure</td>
@@ -2228,7 +2227,7 @@ La classe PresenceAbsence indique si l'usager est présent ou absent.
   <tr>
     <td>motifAbsence : [0..1] Code</td>
     <td>Motif pour lequel l'usager n'est pas présent. Le motif est requis si le typePresenceAbsence=Absence.<br>
-    Jeu(x) de valeur(s) associé(s) : Analyse en cours NOS</td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j406-motif-absence-ms/$expand">JDV-J406-MOTIF-ABSENCE-MS</a></td>
   </tr>
   <tr>
     <td>absencePrevue : [0..1] Indicateur</td>
@@ -2258,7 +2257,7 @@ La classe Repas indique si l'usager bénéficie ou non des repas.
   <tr>
     <td>typeRepas : [1..1] Code</td>
     <td>Type de repas.<br>
-    Jeu(x) de valeur(s) associé(s) : Analyse en cours NOS</td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j407-type-repas-ms/$expand">JDV-J407-TYPE-REPAS-MS</a></td>
   </tr>
   <tr>
     <td>usagerPresent : [1..1] Indicateur</td>
@@ -2316,7 +2315,7 @@ Données d'identification pérennes d’une personne physique, qui travaille en 
     </td>
   </tr>
   <tr>
-    <td>etablissementDeRattachement : [0..1] EntiteJuridique</td>
+    <td>etablissementDeRattachement : [0..1] <a href="#classe-entité-juridique">Entité Juridique</a></td>
     <td>Structure juridique de rattachement du professionnel.</td>
   </tr>
 </table>
