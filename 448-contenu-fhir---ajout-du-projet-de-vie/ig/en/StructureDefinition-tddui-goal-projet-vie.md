@@ -34,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-goal-projet
   "name" : "TDDUIGoalProjetVie",
   "title" : "TDDUI Goal Projet Vie",
   "status" : "active",
-  "date" : "2026-06-11T14:21:35+00:00",
+  "date" : "2026-06-11T15:13:29+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -116,7 +116,14 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-goal-projet
       "path" : "Goal.identifier",
       "sliceName" : "idPDV",
       "min" : 1,
-      "max" : "1"
+      "max" : "1",
+      "constraint" : [{
+        "key" : "GoalProjetVieIdentifierFormat",
+        "severity" : "error",
+        "human" : "l'identifiant du projet de vie doit respecter le format :  3+FINESS/identifiantLocalUsagerESSMS-PDV-idLocalProjetVie",
+        "expression" : "value.matches('^3[0-9]{9}/[A-Za-z0-9]+-PDV-[A-Za-z0-9]+$')",
+        "source" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-projet-vie"
+      }]
     },
     {
       "id" : "Goal.identifier:idPDV.type",
