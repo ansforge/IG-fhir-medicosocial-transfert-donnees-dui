@@ -34,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-slot-presen
   "name" : "TDDUISlotPresenceAbsence",
   "title" : "TDDUI Slot Presence Absence",
   "status" : "active",
-  "date" : "2026-06-09T13:44:39+00:00",
+  "date" : "2026-06-11T13:38:26+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -142,8 +142,16 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-slot-presen
       "id" : "Slot.identifier:idPA",
       "path" : "Slot.identifier",
       "sliceName" : "idPA",
+      "short" : "Identifiant de présence/absence",
       "min" : 1,
-      "max" : "1"
+      "max" : "1",
+      "constraint" : [{
+        "key" : "SlotPresenceAbsenceIdentifierFormat",
+        "severity" : "error",
+        "human" : "l'identifiant de la présence/absence doit respecter le format : 3+FINESS/identifiantLocalUsagerESSMS-PA-numPresenceAbsenceUsager",
+        "expression" : "value.matches('^3[0-9]{9}/[A-Za-z0-9]+-PA-[A-Za-z0-9]+$')",
+        "source" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-slot-presence-absence"
+      }]
     },
     {
       "id" : "Slot.identifier:idPA.type",
@@ -188,6 +196,10 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-slot-presen
     {
       "id" : "Slot.appointmentType",
       "path" : "Slot.appointmentType",
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j406-motif-absence-ms"
+      },
       "mapping" : [{
         "identity" : "specmetier-to-TDDUISlotPresenceAbsence",
         "map" : "motifAbsence"

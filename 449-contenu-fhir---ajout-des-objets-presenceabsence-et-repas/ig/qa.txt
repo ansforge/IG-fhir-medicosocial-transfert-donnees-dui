@@ -1,9 +1,9 @@
 TDDUI : Validation Results
 =========================================
 
-err = 223, warn = 265, info = 150
+err = 223, warn = 264, info = 150
 IG Publisher Version: 2.2.8
-Generated Tue Jun 09 13:49:54 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.tddui#2.3.0-ballot (canonical = https://interop.esante.gouv.fr/ig/fhir/tddui)
+Generated Thu Jun 11 13:43:54 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.tddui#2.3.0-ballot (canonical = https://interop.esante.gouv.fr/ig/fhir/tddui)
  Build Errors : 20 / 7 / 0
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Bundle-tddui-bundle-example : 0 / 13 / 55
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Bundle-tddui-pp-ime-bundle-example : 0 / 7 / 24
@@ -119,7 +119,7 @@ Generated Tue Jun 09 13:49:54 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.tddui
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-ressources-used : 1 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-schedule : 1 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-service-request-besoin : 1 / 3 / 1
- /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-slot-presence-absence : 1 / 1 / 3
+ /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-slot-presence-absence : 1 / 0 / 3
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-status-author : 1 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-task-action : 1 / 0 / 3
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-task-bilan : 1 / 0 / 6
@@ -853,7 +853,6 @@ WARNING: StructureDefinition/tddui-service-request-besoin: StructureDefinition.s
 WARNING: StructureDefinition/tddui-service-request-besoin: StructureDefinition.differential.element[7].binding.valueSet: There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/JDV_J285-Besoins_SERAFIN/FHIR/JDV-J285-Besoins-SERAFIN'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20241025120000', found versions: 1.5.0 (from ans.fr.nos#1.5.0), 20241025120000 (from ans.fr.terminologies#1.10.0). Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/JDV_J285-Besoins_SERAFIN/FHIR/JDV-J285-Besoins-SERAFIN' to 'https://mos.esante.gouv.fr/NOS/JDV_J285-Besoins_SERAFIN/FHIR/JDV-J285-Besoins-SERAFIN|20241025120000'
 == fsh-generated/resources/StructureDefinition-tddui-slot-presence-absence.json ==
 ERROR: StructureDefinition/tddui-slot-presence-absence: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'France' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr')
-WARNING: StructureDefinition/tddui-slot-presence-absence: StructureDefinition.snapshot.element[40].binding.valueSet: There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v2-0276'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '2.9', found versions: 2.0.0 (from hl7.terminology.r4#6.0.2), 3.0.0 (from hl7.terminology.r4#7.1.0). Suggested fix: change the canonical reference from 'http://terminology.hl7.org/ValueSet/v2-0276' to 'http://terminology.hl7.org/ValueSet/v2-0276|2.9'
 INFORMATION: StructureDefinition/tddui-slot-presence-absence: StructureDefinition.differential.element[4].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/tddui-slot-presence-absence: StructureDefinition.snapshot.element[19].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 == fsh-generated/resources/StructureDefinition-tddui-status-author.json ==
