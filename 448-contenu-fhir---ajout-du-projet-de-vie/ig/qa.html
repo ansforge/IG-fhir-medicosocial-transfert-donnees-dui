@@ -47,7 +47,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for TDDUI</h1>
- <p>Generated Wed Jun 10 07:30:52 UTC 2026, FHIR version 4.0.1 for ans.fhir.fr.tddui#2.3.0-ballot (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/tddui">https://interop.esante.gouv.fr/ig/fhir/tddui</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/tddui/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a> &amp; <a href="qa-ipreview.html">IP</a></p>
+ <p>Generated Thu Jun 11 14:26:46 UTC 2026, FHIR version 4.0.1 for ans.fhir.fr.tddui#2.3.0-ballot (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/tddui">https://interop.esante.gouv.fr/ig/fhir/tddui</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/tddui/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a> &amp; <a href="qa-ipreview.html">IP</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v2.2.8</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ans.fhir.fr.tddui, Canonical = https://interop.esante.gouv.fr/ig/fhir/tddui</td></tr>
@@ -1768,10 +1768,10 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
 0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Prepare include[2]: "(http://unstats.un.org/unsd/methods/m49/m49.htm)(class=region)"
 0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: "http://unstats.un.org/unsd/methods/m49/m49.htm|null"
 0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Validate "[urn:iso:std:iso:3166#FR ("France")]"
-0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Check "urn:iso:std:iso:3166#FR"
-0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: urn:iso:std:iso:3166|2018 for urn:iso:std:iso:3166
-0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: check code in (urn:iso:std:iso:3166) at CodeableConcept.coding[0]
-0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Code "FR" found in urn:iso:std:iso:3166|2018</pre></div></td><td><a href="http://hl7.org/fhir/R4/implementationguide.html">ImplementationGuide</a></td>
+1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Check "urn:iso:std:iso:3166#FR"
+1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: urn:iso:std:iso:3166|2018 for urn:iso:std:iso:3166
+1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: check code in (urn:iso:std:iso:3166) at CodeableConcept.coding[0]
+1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Code "FR" found in urn:iso:std:iso:3166|2018</pre></div></td><td><a href="http://hl7.org/fhir/R4/implementationguide.html">ImplementationGuide</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>ImplementationGuide&#8203;.definition&#8203;.resource[11]&#8203;.description (l1&#8203;/c17173)</b></td><td><b>warning</b></td><td><b>value should not start or finish with whitespace '\n- **Séjour** : commentaire relatif au séjour.\n- **Événement** : commentaires sur le déroulé de l’évènement.\n- **Évaluation** : commentaire libre sur le contenu ou le résultat de l’évaluation.\n- **Champ évalué** : commentaire spécifique à un item ou sous-item évalué.'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_String_WS</span></td><td><a href="http://hl7.org/fhir/R4/implementationguide.html">ImplementationGuide</a></td>
@@ -2072,17 +2072,17 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[0]&#8203;.code[0]&#8203;.display (l1&#8203;/c143526)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code http://hl7.org/fhir/sid/icf#b160 for language(s) 'fr'. The display is 'Thought functions' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l24">log</a>, or see <a href="#vmi176" onClick="document.getElementById('vmi176').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi176" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#b160 ("Thought functions")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#b160"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "b160" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "b160" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[0]&#8203;.code[0] (l1&#8203;/c143526)</b></td><td><b>warning</b></td><td><b>There are no valid display names found for the code http://hl7.org/fhir/sid/icf#b160 for language(s) 'fr'. The display is 'Thought functions' which is the default language display (for 'http://hl7.org/fhir/sid/icf#b160')</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l24">log</a>, or see <a href="#vmi177" onClick="document.getElementById('vmi177').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Terminology_PassThrough_TX_Message</span><div id="vmi177" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#b160 ("Thought functions")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#b160"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "b160" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "b160" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[0]&#8203;.answerOption[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c143724)</b></td><td><b>error</b></td><td><b>Unknown code 'qf0' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l25">log</a>, or see <a href="#vmi178" onClick="document.getElementById('vmi178').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi178" style="display:none"><br/><pre>0ms tx-op
@@ -2096,9 +2096,9 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[0]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c143826)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l26">log</a>, or see <a href="#vmi179" onClick="document.getElementById('vmi179').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi179" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#qf2"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[0]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c143928)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l27">log</a>, or see <a href="#vmi180" onClick="document.getElementById('vmi180').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi180" style="display:none"><br/><pre>0ms tx-op
@@ -2113,16 +2113,16 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#b114 ("Orientation functions")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#b114"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "b114" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "b114" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[1]&#8203;.code[0] (l1&#8203;/c144894)</b></td><td><b>warning</b></td><td><b>There are no valid display names found for the code http://hl7.org/fhir/sid/icf#b114 for language(s) 'fr'. The display is 'Orientation functions' which is the default language display (for 'http://hl7.org/fhir/sid/icf#b114')</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l28">log</a>, or see <a href="#vmi182" onClick="document.getElementById('vmi182').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Terminology_PassThrough_TX_Message</span><div id="vmi182" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#b114 ("Orientation functions")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#b114"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "b114" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "b114" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[1]&#8203;.answerOption[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c145093)</b></td><td><b>error</b></td><td><b>Unknown code 'qf0' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l25">log</a>, or see <a href="#vmi183" onClick="document.getElementById('vmi183').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi183" style="display:none"><br/><pre>0ms tx-op
@@ -2136,9 +2136,9 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[1]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c145195)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l26">log</a>, or see <a href="#vmi184" onClick="document.getElementById('vmi184').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi184" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#qf2"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[1]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c145297)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l27">log</a>, or see <a href="#vmi185" onClick="document.getElementById('vmi185').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi185" style="display:none"><br/><pre>0ms tx-op
@@ -2152,17 +2152,17 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[2]&#8203;.code[0]&#8203;.display (l1&#8203;/c146269)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code http://hl7.org/fhir/sid/icf#d5100 for language(s) 'fr'. The display is 'Washing body parts' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l29">log</a>, or see <a href="#vmi186" onClick="document.getElementById('vmi186').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi186" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#d5100 ("Washing body parts")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#d5100"
-1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d5100" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d5100" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[2]&#8203;.code[0] (l1&#8203;/c146269)</b></td><td><b>warning</b></td><td><b>There are no valid display names found for the code http://hl7.org/fhir/sid/icf#d5100 for language(s) 'fr'. The display is 'Washing body parts' which is the default language display (for 'http://hl7.org/fhir/sid/icf#d5100')</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l29">log</a>, or see <a href="#vmi187" onClick="document.getElementById('vmi187').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Terminology_PassThrough_TX_Message</span><div id="vmi187" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#d5100 ("Washing body parts")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#d5100"
-1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d5100" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d5100" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[2]&#8203;.answerOption[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c146474)</b></td><td><b>error</b></td><td><b>Unknown code 'qf0' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l25">log</a>, or see <a href="#vmi188" onClick="document.getElementById('vmi188').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi188" style="display:none"><br/><pre>0ms tx-op
@@ -2176,9 +2176,9 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[2]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c146576)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l26">log</a>, or see <a href="#vmi189" onClick="document.getElementById('vmi189').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi189" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#qf2"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[2]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c146678)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l27">log</a>, or see <a href="#vmi190" onClick="document.getElementById('vmi190').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi190" style="display:none"><br/><pre>0ms tx-op
@@ -2194,7 +2194,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#d520"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d520" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d520" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[3]&#8203;.code[0] (l1&#8203;/c147632)</b></td><td><b>warning</b></td><td><b>There are no valid display names found for the code http://hl7.org/fhir/sid/icf#d520 for language(s) 'fr'. The display is 'Caring for body parts' which is the default language display (for 'http://hl7.org/fhir/sid/icf#d520')</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l30">log</a>, or see <a href="#vmi192" onClick="document.getElementById('vmi192').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Terminology_PassThrough_TX_Message</span><div id="vmi192" style="display:none"><br/><pre>0ms tx-op
@@ -2202,7 +2202,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#d520"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d520" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d520" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[3]&#8203;.answerOption[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c147845)</b></td><td><b>error</b></td><td><b>Unknown code 'qf0' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l25">log</a>, or see <a href="#vmi193" onClick="document.getElementById('vmi193').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi193" style="display:none"><br/><pre>0ms tx-op
@@ -2216,9 +2216,9 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[3]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c147947)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l26">log</a>, or see <a href="#vmi194" onClick="document.getElementById('vmi194').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi194" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#qf2"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[3]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c148049)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l27">log</a>, or see <a href="#vmi195" onClick="document.getElementById('vmi195').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi195" style="display:none"><br/><pre>0ms tx-op
@@ -2234,7 +2234,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#d5400"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d5400" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d5400" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[4]&#8203;.code[0] (l1&#8203;/c149032)</b></td><td><b>warning</b></td><td><b>There are no valid display names found for the code http://hl7.org/fhir/sid/icf#d5400 for language(s) 'fr'. The display is 'Putting on clothes' which is the default language display (for 'http://hl7.org/fhir/sid/icf#d5400')</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l31">log</a>, or see <a href="#vmi197" onClick="document.getElementById('vmi197').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Terminology_PassThrough_TX_Message</span><div id="vmi197" style="display:none"><br/><pre>0ms tx-op
@@ -2242,7 +2242,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#d5400"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d5400" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d5400" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[4]&#8203;.answerOption[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c149228)</b></td><td><b>error</b></td><td><b>Unknown code 'qf0' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l25">log</a>, or see <a href="#vmi198" onClick="document.getElementById('vmi198').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi198" style="display:none"><br/><pre>0ms tx-op
@@ -2256,9 +2256,9 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[4]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c149330)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l26">log</a>, or see <a href="#vmi199" onClick="document.getElementById('vmi199').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi199" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#qf2"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[4]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c149432)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l27">log</a>, or see <a href="#vmi200" onClick="document.getElementById('vmi200').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi200" style="display:none"><br/><pre>0ms tx-op
@@ -2272,17 +2272,17 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[5]&#8203;.code[0]&#8203;.display (l1&#8203;/c150420)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code http://hl7.org/fhir/sid/icf#d440 for language(s) 'fr'. The display is 'Fine hand use' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l32">log</a>, or see <a href="#vmi201" onClick="document.getElementById('vmi201').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi201" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#d440 ("Fine hand use")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#d440"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d440" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d440" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[5]&#8203;.code[0] (l1&#8203;/c150420)</b></td><td><b>warning</b></td><td><b>There are no valid display names found for the code http://hl7.org/fhir/sid/icf#d440 for language(s) 'fr'. The display is 'Fine hand use' which is the default language display (for 'http://hl7.org/fhir/sid/icf#d440')</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l32">log</a>, or see <a href="#vmi202" onClick="document.getElementById('vmi202').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Terminology_PassThrough_TX_Message</span><div id="vmi202" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#d440 ("Fine hand use")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#d440"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d440" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d440" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[5]&#8203;.answerOption[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c150623)</b></td><td><b>error</b></td><td><b>Unknown code 'qf0' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l25">log</a>, or see <a href="#vmi203" onClick="document.getElementById('vmi203').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi203" style="display:none"><br/><pre>0ms tx-op
@@ -2296,9 +2296,9 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[5]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c150725)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l26">log</a>, or see <a href="#vmi204" onClick="document.getElementById('vmi204').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi204" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#qf2"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[5]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c150827)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l27">log</a>, or see <a href="#vmi205" onClick="document.getElementById('vmi205').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi205" style="display:none"><br/><pre>0ms tx-op
@@ -2312,17 +2312,17 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[6]&#8203;.code[0]&#8203;.display (l1&#8203;/c151820)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code http://hl7.org/fhir/sid/icf#d5402 for language(s) 'fr'. The display is 'Putting on footwear' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l33">log</a>, or see <a href="#vmi206" onClick="document.getElementById('vmi206').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi206" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#d5402 ("Putting on footwear")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#d5402"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d5402" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d5402" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[6]&#8203;.code[0] (l1&#8203;/c151820)</b></td><td><b>warning</b></td><td><b>There are no valid display names found for the code http://hl7.org/fhir/sid/icf#d5402 for language(s) 'fr'. The display is 'Putting on footwear' which is the default language display (for 'http://hl7.org/fhir/sid/icf#d5402')</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l33">log</a>, or see <a href="#vmi207" onClick="document.getElementById('vmi207').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Terminology_PassThrough_TX_Message</span><div id="vmi207" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#d5402 ("Putting on footwear")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#d5402"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d5402" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d5402" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[6]&#8203;.answerOption[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c152017)</b></td><td><b>error</b></td><td><b>Unknown code 'qf0' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l25">log</a>, or see <a href="#vmi208" onClick="document.getElementById('vmi208').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi208" style="display:none"><br/><pre>0ms tx-op
@@ -2336,9 +2336,9 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[6]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c152119)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l26">log</a>, or see <a href="#vmi209" onClick="document.getElementById('vmi209').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi209" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#qf2"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[6]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c152221)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l27">log</a>, or see <a href="#vmi210" onClick="document.getElementById('vmi210').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi210" style="display:none"><br/><pre>0ms tx-op
@@ -2351,18 +2351,18 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    <tr style="background-color: #ffffe6">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[7]&#8203;.code[0]&#8203;.display (l1&#8203;/c153198)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code http://hl7.org/fhir/sid/icf#d550 for language(s) 'fr'. The display is 'Eating' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l34">log</a>, or see <a href="#vmi211" onClick="document.getElementById('vmi211').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi211" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#d550 ("Eating")]"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#d550"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d550" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#d550"
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d550" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[7]&#8203;.code[0] (l1&#8203;/c153198)</b></td><td><b>warning</b></td><td><b>There are no valid display names found for the code http://hl7.org/fhir/sid/icf#d550 for language(s) 'fr'. The display is 'Eating' which is the default language display (for 'http://hl7.org/fhir/sid/icf#d550')</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l34">log</a>, or see <a href="#vmi212" onClick="document.getElementById('vmi212').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Terminology_PassThrough_TX_Message</span><div id="vmi212" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#d550 ("Eating")]"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#d550"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d550" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#d550"
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d550" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[7]&#8203;.answerOption[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c153380)</b></td><td><b>error</b></td><td><b>Unknown code 'qf0' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l25">log</a>, or see <a href="#vmi213" onClick="document.getElementById('vmi213').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi213" style="display:none"><br/><pre>0ms tx-op
@@ -2376,9 +2376,9 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[7]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c153482)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l26">log</a>, or see <a href="#vmi214" onClick="document.getElementById('vmi214').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi214" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#qf2"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[7]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c153584)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l27">log</a>, or see <a href="#vmi215" onClick="document.getElementById('vmi215').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi215" style="display:none"><br/><pre>0ms tx-op
@@ -2392,17 +2392,17 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[8]&#8203;.code[0]&#8203;.display (l1&#8203;/c154535)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code http://hl7.org/fhir/sid/icf#b5105 for language(s) 'fr'. The display is 'Swallowing' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l35">log</a>, or see <a href="#vmi216" onClick="document.getElementById('vmi216').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi216" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#b5105 ("Swallowing")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#b5105"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "b5105" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "b5105" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[8]&#8203;.code[0] (l1&#8203;/c154535)</b></td><td><b>warning</b></td><td><b>There are no valid display names found for the code http://hl7.org/fhir/sid/icf#b5105 for language(s) 'fr'. The display is 'Swallowing' which is the default language display (for 'http://hl7.org/fhir/sid/icf#b5105')</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l35">log</a>, or see <a href="#vmi217" onClick="document.getElementById('vmi217').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Terminology_PassThrough_TX_Message</span><div id="vmi217" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#b5105 ("Swallowing")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#b5105"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "b5105" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "b5105" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[8]&#8203;.answerOption[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c154762)</b></td><td><b>error</b></td><td><b>Unknown code 'qf0' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l25">log</a>, or see <a href="#vmi218" onClick="document.getElementById('vmi218').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi218" style="display:none"><br/><pre>0ms tx-op
@@ -2416,9 +2416,9 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[8]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c154864)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l26">log</a>, or see <a href="#vmi219" onClick="document.getElementById('vmi219').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi219" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#qf2"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[8]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c154966)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l27">log</a>, or see <a href="#vmi220" onClick="document.getElementById('vmi220').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi220" style="display:none"><br/><pre>0ms tx-op
@@ -2431,18 +2431,18 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    <tr style="background-color: #ffffe6">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[9]&#8203;.code[0]&#8203;.display (l1&#8203;/c155974)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code http://hl7.org/fhir/sid/icf#d5300 for language(s) 'fr'. The display is 'Regulating urination' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l36">log</a>, or see <a href="#vmi221" onClick="document.getElementById('vmi221').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi221" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#d5300 ("Regulating urination")]"
-1ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#d5300"
-1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d5300" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#d5300"
+0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d5300" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[9]&#8203;.code[0] (l1&#8203;/c155974)</b></td><td><b>warning</b></td><td><b>There are no valid display names found for the code http://hl7.org/fhir/sid/icf#d5300 for language(s) 'fr'. The display is 'Regulating urination' which is the default language display (for 'http://hl7.org/fhir/sid/icf#d5300')</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l36">log</a>, or see <a href="#vmi222" onClick="document.getElementById('vmi222').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Terminology_PassThrough_TX_Message</span><div id="vmi222" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#d5300 ("Regulating urination")]"
-1ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#d5300"
-1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d5300" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#d5300"
+0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d5300" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[9]&#8203;.answerOption[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c156185)</b></td><td><b>error</b></td><td><b>Unknown code 'qf0' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l25">log</a>, or see <a href="#vmi223" onClick="document.getElementById('vmi223').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi223" style="display:none"><br/><pre>0ms tx-op
@@ -2456,9 +2456,9 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[9]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c156287)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l26">log</a>, or see <a href="#vmi224" onClick="document.getElementById('vmi224').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi224" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#qf2"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[9]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c156389)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l27">log</a>, or see <a href="#vmi225" onClick="document.getElementById('vmi225').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi225" style="display:none"><br/><pre>0ms tx-op
@@ -2472,7 +2472,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[10]&#8203;.code[0]&#8203;.display (l1&#8203;/c157369)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code http://hl7.org/fhir/sid/icf#d5301 for language(s) 'fr'. The display is 'Regulating defecation' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l37">log</a>, or see <a href="#vmi226" onClick="document.getElementById('vmi226').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi226" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#d5301 ("Regulating defecation")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#d5301"
-1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
 1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
 1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d5301" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
@@ -2480,7 +2480,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[10]&#8203;.code[0] (l1&#8203;/c157369)</b></td><td><b>warning</b></td><td><b>There are no valid display names found for the code http://hl7.org/fhir/sid/icf#d5301 for language(s) 'fr'. The display is 'Regulating defecation' which is the default language display (for 'http://hl7.org/fhir/sid/icf#d5301')</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l37">log</a>, or see <a href="#vmi227" onClick="document.getElementById('vmi227').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Terminology_PassThrough_TX_Message</span><div id="vmi227" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#d5301 ("Regulating defecation")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#d5301"
-1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
 1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
 1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d5301" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
@@ -2496,9 +2496,9 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[10]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c157685)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l26">log</a>, or see <a href="#vmi229" onClick="document.getElementById('vmi229').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi229" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#qf2"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[10]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c157787)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l27">log</a>, or see <a href="#vmi230" onClick="document.getElementById('vmi230').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi230" style="display:none"><br/><pre>0ms tx-op
@@ -2536,9 +2536,9 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[11]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c159086)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l26">log</a>, or see <a href="#vmi234" onClick="document.getElementById('vmi234').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi234" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#qf2"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[11]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c159188)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l27">log</a>, or see <a href="#vmi235" onClick="document.getElementById('vmi235').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi235" style="display:none"><br/><pre>0ms tx-op
@@ -2552,17 +2552,17 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[12]&#8203;.code[0]&#8203;.display (l1&#8203;/c160190)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code http://hl7.org/fhir/sid/icf#d4600 for language(s) 'fr'. The display is 'Moving around within the home' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l39">log</a>, or see <a href="#vmi236" onClick="document.getElementById('vmi236').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi236" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#d4600 ("Moving around within the home")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#d4600"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d4600" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d4600" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[12]&#8203;.code[0] (l1&#8203;/c160190)</b></td><td><b>warning</b></td><td><b>There are no valid display names found for the code http://hl7.org/fhir/sid/icf#d4600 for language(s) 'fr'. The display is 'Moving around within the home' which is the default language display (for 'http://hl7.org/fhir/sid/icf#d4600')</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l39">log</a>, or see <a href="#vmi237" onClick="document.getElementById('vmi237').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Terminology_PassThrough_TX_Message</span><div id="vmi237" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#d4600 ("Moving around within the home")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#d4600"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d4600" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d4600" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[12]&#8203;.answerOption[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c160392)</b></td><td><b>error</b></td><td><b>Unknown code 'qf0' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l25">log</a>, or see <a href="#vmi238" onClick="document.getElementById('vmi238').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi238" style="display:none"><br/><pre>0ms tx-op
@@ -2576,9 +2576,9 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[12]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c160494)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l26">log</a>, or see <a href="#vmi239" onClick="document.getElementById('vmi239').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi239" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#qf2"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[12]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c160596)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l27">log</a>, or see <a href="#vmi240" onClick="document.getElementById('vmi240').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi240" style="display:none"><br/><pre>0ms tx-op
@@ -2616,9 +2616,9 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[13]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c161957)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l26">log</a>, or see <a href="#vmi244" onClick="document.getElementById('vmi244').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi244" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#qf2"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[13]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c162059)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l27">log</a>, or see <a href="#vmi245" onClick="document.getElementById('vmi245').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi245" style="display:none"><br/><pre>0ms tx-op
@@ -2632,17 +2632,17 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[14]&#8203;.code[0]&#8203;.display (l1&#8203;/c163102)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code http://hl7.org/fhir/sid/icf#d3608 for language(s) 'fr'. The display is 'Using communication devices and techniques, other specified' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l41">log</a>, or see <a href="#vmi246" onClick="document.getElementById('vmi246').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi246" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#d3608 ("Using communication devices and techniques, other specified")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#d3608"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d3608" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d3608" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[14]&#8203;.code[0] (l1&#8203;/c163102)</b></td><td><b>warning</b></td><td><b>There are no valid display names found for the code http://hl7.org/fhir/sid/icf#d3608 for language(s) 'fr'. The display is 'Using communication devices and techniques, other specified' which is the default language display (for 'http://hl7.org/fhir/sid/icf#d3608')</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l41">log</a>, or see <a href="#vmi247" onClick="document.getElementById('vmi247').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Terminology_PassThrough_TX_Message</span><div id="vmi247" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#d3608 ("Using communication devices and techniques, other specified")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#d3608"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d3608" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d3608" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[14]&#8203;.answerOption[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c163345)</b></td><td><b>error</b></td><td><b>Unknown code 'qf0' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l25">log</a>, or see <a href="#vmi248" onClick="document.getElementById('vmi248').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi248" style="display:none"><br/><pre>0ms tx-op
@@ -2656,9 +2656,9 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[14]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c163447)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l26">log</a>, or see <a href="#vmi249" onClick="document.getElementById('vmi249').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi249" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#qf2"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[14]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c163549)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l27">log</a>, or see <a href="#vmi250" onClick="document.getElementById('vmi250').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi250" style="display:none"><br/><pre>0ms tx-op
@@ -2699,17 +2699,17 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[0]&#8203;.code[0]&#8203;.display (l1&#8203;/c98858)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code http://hl7.org/fhir/sid/icf#b160 for language(s) 'fr'. The display is 'Thought functions' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l24">log</a>, or see <a href="#vmi252" onClick="document.getElementById('vmi252').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi252" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#b160 ("Thought functions")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#b160"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "b160" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "b160" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[0]&#8203;.code[0] (l1&#8203;/c98858)</b></td><td><b>warning</b></td><td><b>There are no valid display names found for the code http://hl7.org/fhir/sid/icf#b160 for language(s) 'fr'. The display is 'Thought functions' which is the default language display (for 'http://hl7.org/fhir/sid/icf#b160')</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l24">log</a>, or see <a href="#vmi253" onClick="document.getElementById('vmi253').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Terminology_PassThrough_TX_Message</span><div id="vmi253" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#b160 ("Thought functions")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#b160"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "b160" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "b160" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[0]&#8203;.answerOption[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c99056)</b></td><td><b>error</b></td><td><b>Unknown code 'qf0' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l25">log</a>, or see <a href="#vmi254" onClick="document.getElementById('vmi254').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi254" style="display:none"><br/><pre>0ms tx-op
@@ -2723,9 +2723,9 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[0]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c99158)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l26">log</a>, or see <a href="#vmi255" onClick="document.getElementById('vmi255').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi255" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#qf2"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[0]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c99260)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l27">log</a>, or see <a href="#vmi256" onClick="document.getElementById('vmi256').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi256" style="display:none"><br/><pre>0ms tx-op
@@ -2740,16 +2740,16 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#b114 ("Orientation functions")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#b114"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "b114" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "b114" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[1]&#8203;.code[0] (l1&#8203;/c100226)</b></td><td><b>warning</b></td><td><b>There are no valid display names found for the code http://hl7.org/fhir/sid/icf#b114 for language(s) 'fr'. The display is 'Orientation functions' which is the default language display (for 'http://hl7.org/fhir/sid/icf#b114')</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l28">log</a>, or see <a href="#vmi258" onClick="document.getElementById('vmi258').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Terminology_PassThrough_TX_Message</span><div id="vmi258" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#b114 ("Orientation functions")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#b114"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "b114" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "b114" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[1]&#8203;.answerOption[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c100425)</b></td><td><b>error</b></td><td><b>Unknown code 'qf0' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l25">log</a>, or see <a href="#vmi259" onClick="document.getElementById('vmi259').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi259" style="display:none"><br/><pre>0ms tx-op
@@ -2763,9 +2763,9 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[1]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c100527)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l26">log</a>, or see <a href="#vmi260" onClick="document.getElementById('vmi260').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi260" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#qf2"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[1]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c100629)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l27">log</a>, or see <a href="#vmi261" onClick="document.getElementById('vmi261').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi261" style="display:none"><br/><pre>0ms tx-op
@@ -2779,17 +2779,17 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[2]&#8203;.code[0]&#8203;.display (l1&#8203;/c101597)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code http://hl7.org/fhir/sid/icf#d510 for language(s) 'fr'. The display is 'Washing oneself' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l42">log</a>, or see <a href="#vmi262" onClick="document.getElementById('vmi262').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi262" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#d510 ("Washing oneself")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#d510"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d510" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d510" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[2]&#8203;.code[0] (l1&#8203;/c101597)</b></td><td><b>warning</b></td><td><b>There are no valid display names found for the code http://hl7.org/fhir/sid/icf#d510 for language(s) 'fr'. The display is 'Washing oneself' which is the default language display (for 'http://hl7.org/fhir/sid/icf#d510')</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l42">log</a>, or see <a href="#vmi263" onClick="document.getElementById('vmi263').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Terminology_PassThrough_TX_Message</span><div id="vmi263" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#d510 ("Washing oneself")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#d510"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d510" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d510" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[2]&#8203;.answerOption[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c101781)</b></td><td><b>error</b></td><td><b>Unknown code 'qf0' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l25">log</a>, or see <a href="#vmi264" onClick="document.getElementById('vmi264').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi264" style="display:none"><br/><pre>0ms tx-op
@@ -2803,9 +2803,9 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[2]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c101883)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l26">log</a>, or see <a href="#vmi265" onClick="document.getElementById('vmi265').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi265" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#qf2"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[2]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c101985)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l27">log</a>, or see <a href="#vmi266" onClick="document.getElementById('vmi266').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi266" style="display:none"><br/><pre>0ms tx-op
@@ -2818,18 +2818,18 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    <tr style="background-color: #ffffe6">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[3]&#8203;.code[0]&#8203;.display (l1&#8203;/c102924)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code http://hl7.org/fhir/sid/icf#d540 for language(s) 'fr'. The display is 'Dressing' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l43">log</a>, or see <a href="#vmi267" onClick="document.getElementById('vmi267').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi267" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#d540 ("Dressing")]"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#d540"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d540" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#d540"
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d540" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[3]&#8203;.code[0] (l1&#8203;/c102924)</b></td><td><b>warning</b></td><td><b>There are no valid display names found for the code http://hl7.org/fhir/sid/icf#d540 for language(s) 'fr'. The display is 'Dressing' which is the default language display (for 'http://hl7.org/fhir/sid/icf#d540')</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l43">log</a>, or see <a href="#vmi268" onClick="document.getElementById('vmi268').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Terminology_PassThrough_TX_Message</span><div id="vmi268" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#d540 ("Dressing")]"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#d540"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d540" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#d540"
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d540" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[3]&#8203;.answerOption[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c103110)</b></td><td><b>error</b></td><td><b>Unknown code 'qf0' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l25">log</a>, or see <a href="#vmi269" onClick="document.getElementById('vmi269').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi269" style="display:none"><br/><pre>0ms tx-op
@@ -2843,9 +2843,9 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[3]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c103212)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l26">log</a>, or see <a href="#vmi270" onClick="document.getElementById('vmi270').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi270" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#qf2"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[3]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c103314)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l27">log</a>, or see <a href="#vmi271" onClick="document.getElementById('vmi271').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi271" style="display:none"><br/><pre>0ms tx-op
@@ -2858,18 +2858,18 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    <tr style="background-color: #ffffe6">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[4]&#8203;.code[0]&#8203;.display (l1&#8203;/c104259)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code http://hl7.org/fhir/sid/icf#d550 for language(s) 'fr'. The display is 'Eating' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l34">log</a>, or see <a href="#vmi272" onClick="document.getElementById('vmi272').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi272" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#d550 ("Eating")]"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#d550"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d550" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#d550"
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d550" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[4]&#8203;.code[0] (l1&#8203;/c104259)</b></td><td><b>warning</b></td><td><b>There are no valid display names found for the code http://hl7.org/fhir/sid/icf#d550 for language(s) 'fr'. The display is 'Eating' which is the default language display (for 'http://hl7.org/fhir/sid/icf#d550')</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l34">log</a>, or see <a href="#vmi273" onClick="document.getElementById('vmi273').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Terminology_PassThrough_TX_Message</span><div id="vmi273" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#d550 ("Eating")]"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#d550"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d550" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#d550"
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d550" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[4]&#8203;.answerOption[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c104441)</b></td><td><b>error</b></td><td><b>Unknown code 'qf0' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l25">log</a>, or see <a href="#vmi274" onClick="document.getElementById('vmi274').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi274" style="display:none"><br/><pre>0ms tx-op
@@ -2883,9 +2883,9 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[4]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c104543)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l26">log</a>, or see <a href="#vmi275" onClick="document.getElementById('vmi275').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi275" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#qf2"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[4]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c104645)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l27">log</a>, or see <a href="#vmi276" onClick="document.getElementById('vmi276').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi276" style="display:none"><br/><pre>0ms tx-op
@@ -2899,17 +2899,17 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[5]&#8203;.code[0]&#8203;.display (l1&#8203;/c105598)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code http://hl7.org/fhir/sid/icf#d530 for language(s) 'fr'. The display is 'Toileting' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l44">log</a>, or see <a href="#vmi277" onClick="document.getElementById('vmi277').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi277" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#d530 ("Toileting")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#d530"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d530" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d530" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[5]&#8203;.code[0] (l1&#8203;/c105598)</b></td><td><b>warning</b></td><td><b>There are no valid display names found for the code http://hl7.org/fhir/sid/icf#d530 for language(s) 'fr'. The display is 'Toileting' which is the default language display (for 'http://hl7.org/fhir/sid/icf#d530')</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l44">log</a>, or see <a href="#vmi278" onClick="document.getElementById('vmi278').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Terminology_PassThrough_TX_Message</span><div id="vmi278" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#d530 ("Toileting")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#d530"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d530" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d530" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[5]&#8203;.answerOption[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c105793)</b></td><td><b>error</b></td><td><b>Unknown code 'qf0' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l25">log</a>, or see <a href="#vmi279" onClick="document.getElementById('vmi279').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi279" style="display:none"><br/><pre>0ms tx-op
@@ -2923,9 +2923,9 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[5]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c105895)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l26">log</a>, or see <a href="#vmi280" onClick="document.getElementById('vmi280').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi280" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#qf2"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[5]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c105997)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l27">log</a>, or see <a href="#vmi281" onClick="document.getElementById('vmi281').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi281" style="display:none"><br/><pre>0ms tx-op
@@ -2963,9 +2963,9 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[6]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c107288)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l26">log</a>, or see <a href="#vmi285" onClick="document.getElementById('vmi285').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi285" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#qf2"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[6]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c107390)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l27">log</a>, or see <a href="#vmi286" onClick="document.getElementById('vmi286').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi286" style="display:none"><br/><pre>0ms tx-op
@@ -2979,17 +2979,17 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[7]&#8203;.code[0]&#8203;.display (l1&#8203;/c108392)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code http://hl7.org/fhir/sid/icf#d4600 for language(s) 'fr'. The display is 'Moving around within the home' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l39">log</a>, or see <a href="#vmi287" onClick="document.getElementById('vmi287').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi287" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#d4600 ("Moving around within the home")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#d4600"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d4600" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d4600" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[7]&#8203;.code[0] (l1&#8203;/c108392)</b></td><td><b>warning</b></td><td><b>There are no valid display names found for the code http://hl7.org/fhir/sid/icf#d4600 for language(s) 'fr'. The display is 'Moving around within the home' which is the default language display (for 'http://hl7.org/fhir/sid/icf#d4600')</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l39">log</a>, or see <a href="#vmi288" onClick="document.getElementById('vmi288').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Terminology_PassThrough_TX_Message</span><div id="vmi288" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#d4600 ("Moving around within the home")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#d4600"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d4600" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d4600" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[7]&#8203;.answerOption[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c108594)</b></td><td><b>error</b></td><td><b>Unknown code 'qf0' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l25">log</a>, or see <a href="#vmi289" onClick="document.getElementById('vmi289').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi289" style="display:none"><br/><pre>0ms tx-op
@@ -3003,9 +3003,9 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[7]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c108696)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l26">log</a>, or see <a href="#vmi290" onClick="document.getElementById('vmi290').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi290" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#qf2"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[7]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c108798)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l27">log</a>, or see <a href="#vmi291" onClick="document.getElementById('vmi291').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi291" style="display:none"><br/><pre>0ms tx-op
@@ -3043,9 +3043,9 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[8]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c110164)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l26">log</a>, or see <a href="#vmi295" onClick="document.getElementById('vmi295').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi295" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#qf2"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[8]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c110266)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l27">log</a>, or see <a href="#vmi296" onClick="document.getElementById('vmi296').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi296" style="display:none"><br/><pre>0ms tx-op
@@ -3059,17 +3059,17 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[9]&#8203;.code[0]&#8203;.display (l1&#8203;/c111329)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code http://hl7.org/fhir/sid/icf#d3608 for language(s) 'fr'. The display is 'Using communication devices and techniques, other specified' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l41">log</a>, or see <a href="#vmi297" onClick="document.getElementById('vmi297').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi297" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#d3608 ("Using communication devices and techniques, other specified")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#d3608"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d3608" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d3608" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[9]&#8203;.code[0] (l1&#8203;/c111329)</b></td><td><b>warning</b></td><td><b>There are no valid display names found for the code http://hl7.org/fhir/sid/icf#d3608 for language(s) 'fr'. The display is 'Using communication devices and techniques, other specified' which is the default language display (for 'http://hl7.org/fhir/sid/icf#d3608')</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l41">log</a>, or see <a href="#vmi298" onClick="document.getElementById('vmi298').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Terminology_PassThrough_TX_Message</span><div id="vmi298" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#d3608 ("Using communication devices and techniques, other specified")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#d3608"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d3608" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "d3608" found in http://hl7.org/fhir/sid/icf|2017a</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[9]&#8203;.answerOption[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c111572)</b></td><td><b>error</b></td><td><b>Unknown code 'qf0' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l25">log</a>, or see <a href="#vmi299" onClick="document.getElementById('vmi299').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi299" style="display:none"><br/><pre>0ms tx-op
@@ -3083,9 +3083,9 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[9]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c111674)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l26">log</a>, or see <a href="#vmi300" onClick="document.getElementById('vmi300').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi300" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#qf2"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.item[9]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l1&#8203;/c111776)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l27">log</a>, or see <a href="#vmi301" onClick="document.getElementById('vmi301').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi301" style="display:none"><br/><pre>0ms tx-op
@@ -3219,9 +3219,9 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>QuestionnaireResponse&#8203;.item[0]&#8203;.answer[0]&#8203;.item[5]&#8203;.answer[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l297&#8203;/c20)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l26">log</a>, or see <a href="#vmi311" onClick="document.getElementById('vmi311').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi311" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#qf2"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="StructureDefinition-tddui-questionnaire-response.html">TDDUI QuestionnaireResponse</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="StructureDefinition-tddui-questionnaire-response.html">TDDUI QuestionnaireResponse</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>QuestionnaireResponse&#8203;.item[0]&#8203;.answer[0]&#8203;.item[6]&#8203;.answer[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l348&#8203;/c20)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l27">log</a>, or see <a href="#vmi312" onClick="document.getElementById('vmi312').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi312" style="display:none"><br/><pre>0ms tx-op
@@ -3235,9 +3235,9 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>QuestionnaireResponse&#8203;.item[0]&#8203;.answer[0]&#8203;.item[7]&#8203;.answer[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l399&#8203;/c20)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l26">log</a>, or see <a href="#vmi313" onClick="document.getElementById('vmi313').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi313" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#qf2"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="StructureDefinition-tddui-questionnaire-response.html">TDDUI QuestionnaireResponse</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="StructureDefinition-tddui-questionnaire-response.html">TDDUI QuestionnaireResponse</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>QuestionnaireResponse&#8203;.item[0]&#8203;.answer[0]&#8203;.item[8]&#8203;.answer[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l450&#8203;/c20)</b></td><td><b>error</b></td><td><b>Unknown code 'qf0' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l25">log</a>, or see <a href="#vmi314" onClick="document.getElementById('vmi314').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi314" style="display:none"><br/><pre>0ms tx-op
@@ -3251,17 +3251,17 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>QuestionnaireResponse&#8203;.item[0]&#8203;.answer[0]&#8203;.item[9]&#8203;.answer[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l501&#8203;/c20)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l26">log</a>, or see <a href="#vmi315" onClick="document.getElementById('vmi315').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi315" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#qf2"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="StructureDefinition-tddui-questionnaire-response.html">TDDUI QuestionnaireResponse</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="StructureDefinition-tddui-questionnaire-response.html">TDDUI QuestionnaireResponse</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>QuestionnaireResponse&#8203;.item[0]&#8203;.answer[0]&#8203;.item[10]&#8203;.answer[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l552&#8203;/c20)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l26">log</a>, or see <a href="#vmi316" onClick="document.getElementById('vmi316').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi316" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#qf2"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="StructureDefinition-tddui-questionnaire-response.html">TDDUI QuestionnaireResponse</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="StructureDefinition-tddui-questionnaire-response.html">TDDUI QuestionnaireResponse</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>QuestionnaireResponse&#8203;.item[0]&#8203;.answer[0]&#8203;.item[11]&#8203;.answer[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l603&#8203;/c20)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l27">log</a>, or see <a href="#vmi317" onClick="document.getElementById('vmi317').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi317" style="display:none"><br/><pre>0ms tx-op
@@ -3344,17 +3344,17 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>QuestionnaireResponse&#8203;.item[0]&#8203;.answer[0]&#8203;.item[4]&#8203;.answer[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l246&#8203;/c20)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l26">log</a>, or see <a href="#vmi326" onClick="document.getElementById('vmi326').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi326" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#qf2"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="StructureDefinition-tddui-questionnaire-response.html">TDDUI QuestionnaireResponse</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="StructureDefinition-tddui-questionnaire-response.html">TDDUI QuestionnaireResponse</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>QuestionnaireResponse&#8203;.item[0]&#8203;.answer[0]&#8203;.item[5]&#8203;.answer[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l297&#8203;/c20)</b></td><td><b>error</b></td><td><b>Unknown code 'qf2' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l26">log</a>, or see <a href="#vmi327" onClick="document.getElementById('vmi327').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi327" style="display:none"><br/><pre>0ms tx-op
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Validate "[http://hl7.org/fhir/sid/icf#qf2 ("facilitateur modéré")]"
 0ms http://hl7.org/fhir/sid/icf/vs|2017a: Check "http://hl7.org/fhir/sid/icf#qf2"
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
-0ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="StructureDefinition-tddui-questionnaire-response.html">TDDUI QuestionnaireResponse</a></td>
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: CodeSystem found: http://hl7.org/fhir/sid/icf|2017a for http://hl7.org/fhir/sid/icf|2017a
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: check code in (http://hl7.org/fhir/sid/icf) at Coding
+1ms http://hl7.org/fhir/sid/icf/vs|2017a: Code "qf2" not found in http://hl7.org/fhir/sid/icf|2017a: undefined</pre></div></td><td><a href="StructureDefinition-tddui-questionnaire-response.html">TDDUI QuestionnaireResponse</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>QuestionnaireResponse&#8203;.item[0]&#8203;.answer[0]&#8203;.item[6]&#8203;.answer[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.code (l348&#8203;/c20)</b></td><td><b>error</b></td><td><b>Unknown code 'qf4' in the CodeSystem 'http://hl7.org/fhir/sid/icf' version '2017a'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l27">log</a>, or see <a href="#vmi328" onClick="document.getElementById('vmi328').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi328" style="display:none"><br/><pre>0ms tx-op
@@ -4563,33 +4563,33 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[14]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.display (l1&#8203;/c60481)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code http://loinc.org#79378-6 for language(s) 'fr'. The display is 'Cause of death' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l14">log</a>, or see <a href="#vmi459" onClick="document.getElementById('vmi459').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi459" style="display:none"><br/><pre>0ms tx-op
 1ms http://loinc.org/vs|2.82: Validate "[http://loinc.org#79378-6 ("Cause of death")]"
 2ms http://loinc.org/vs|2.82: Check "http://loinc.org#79378-6"
-2ms http://loinc.org/vs|2.82: CodeSystem found: http://loinc.org|2.82 for http://loinc.org|2.82
-2ms http://loinc.org/vs|2.82: check code in (http://loinc.org) at CodeableConcept.coding[0]
-2ms http://loinc.org/vs|2.82: Code "79378-6" found in http://loinc.org|2.82</pre></div></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+3ms http://loinc.org/vs|2.82: CodeSystem found: http://loinc.org|2.82 for http://loinc.org|2.82
+3ms http://loinc.org/vs|2.82: check code in (http://loinc.org) at CodeableConcept.coding[0]
+3ms http://loinc.org/vs|2.82: Code "79378-6" found in http://loinc.org|2.82</pre></div></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[45]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.display (l1&#8203;/c106601)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code http://loinc.org#79378-6 for language(s) 'fr'. The display is 'Cause of death' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l14">log</a>, or see <a href="#vmi460" onClick="document.getElementById('vmi460').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi460" style="display:none"><br/><pre>0ms tx-op
 1ms http://loinc.org/vs|2.82: Validate "[http://loinc.org#79378-6 ("Cause of death")]"
 2ms http://loinc.org/vs|2.82: Check "http://loinc.org#79378-6"
-2ms http://loinc.org/vs|2.82: CodeSystem found: http://loinc.org|2.82 for http://loinc.org|2.82
-2ms http://loinc.org/vs|2.82: check code in (http://loinc.org) at CodeableConcept.coding[0]
-2ms http://loinc.org/vs|2.82: Code "79378-6" found in http://loinc.org|2.82</pre></div></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+3ms http://loinc.org/vs|2.82: CodeSystem found: http://loinc.org|2.82 for http://loinc.org|2.82
+3ms http://loinc.org/vs|2.82: check code in (http://loinc.org) at CodeableConcept.coding[0]
+3ms http://loinc.org/vs|2.82: Code "79378-6" found in http://loinc.org|2.82</pre></div></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.display (l1&#8203;/c121364)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code http://loinc.org#79378-6 for language(s) 'fr'. The display is 'Cause of death' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l14">log</a>, or see <a href="#vmi461" onClick="document.getElementById('vmi461').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi461" style="display:none"><br/><pre>0ms tx-op
 1ms http://loinc.org/vs|2.82: Validate "[http://loinc.org#79378-6 ("Cause of death")]"
 2ms http://loinc.org/vs|2.82: Check "http://loinc.org#79378-6"
-2ms http://loinc.org/vs|2.82: CodeSystem found: http://loinc.org|2.82 for http://loinc.org|2.82
-2ms http://loinc.org/vs|2.82: check code in (http://loinc.org) at CodeableConcept.coding[0]
-2ms http://loinc.org/vs|2.82: Code "79378-6" found in http://loinc.org|2.82</pre></div></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+3ms http://loinc.org/vs|2.82: CodeSystem found: http://loinc.org|2.82 for http://loinc.org|2.82
+3ms http://loinc.org/vs|2.82: check code in (http://loinc.org) at CodeableConcept.coding[0]
+3ms http://loinc.org/vs|2.82: Code "79378-6" found in http://loinc.org|2.82</pre></div></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>StructureDefinition&#8203;.differential&#8203;.element[4]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.display (l1&#8203;/c122022)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code http://loinc.org#79378-6 for language(s) 'fr'. The display is 'Cause of death' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l14">log</a>, or see <a href="#vmi462" onClick="document.getElementById('vmi462').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi462" style="display:none"><br/><pre>0ms tx-op
 1ms http://loinc.org/vs|2.82: Validate "[http://loinc.org#79378-6 ("Cause of death")]"
 2ms http://loinc.org/vs|2.82: Check "http://loinc.org#79378-6"
-2ms http://loinc.org/vs|2.82: CodeSystem found: http://loinc.org|2.82 for http://loinc.org|2.82
-2ms http://loinc.org/vs|2.82: check code in (http://loinc.org) at CodeableConcept.coding[0]
-2ms http://loinc.org/vs|2.82: Code "79378-6" found in http://loinc.org|2.82</pre></div></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+3ms http://loinc.org/vs|2.82: CodeSystem found: http://loinc.org|2.82 for http://loinc.org|2.82
+3ms http://loinc.org/vs|2.82: check code in (http://loinc.org) at CodeableConcept.coding[0]
+3ms http://loinc.org/vs|2.82: Code "79378-6" found in http://loinc.org|2.82</pre></div></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
    </tr>
 </table>
 <hr/>
@@ -4622,17 +4622,17 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[14]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.display (l1&#8203;/c61684)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code http://loinc.org#LP73551-1 for language(s) 'fr'. The display is 'Transport mode' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l15">log</a>, or see <a href="#vmi464" onClick="document.getElementById('vmi464').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi464" style="display:none"><br/><pre>0ms tx-op
 1ms http://loinc.org/vs|2.82: Validate "[http://loinc.org#LP73551-1 ("Transport mode")]"
 1ms http://loinc.org/vs|2.82: Check "http://loinc.org#LP73551-1"
-3ms http://loinc.org/vs|2.82: CodeSystem found: http://loinc.org|2.82 for http://loinc.org|2.82
-3ms http://loinc.org/vs|2.82: check code in (http://loinc.org) at CodeableConcept.coding[0]
-3ms http://loinc.org/vs|2.82: Code "LP73551-1" found in http://loinc.org|2.82</pre></div></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+2ms http://loinc.org/vs|2.82: CodeSystem found: http://loinc.org|2.82 for http://loinc.org|2.82
+2ms http://loinc.org/vs|2.82: check code in (http://loinc.org) at CodeableConcept.coding[0]
+2ms http://loinc.org/vs|2.82: Code "LP73551-1" found in http://loinc.org|2.82</pre></div></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.display (l1&#8203;/c130533)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code http://loinc.org#LP73551-1 for language(s) 'fr'. The display is 'Transport mode' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l15">log</a>, or see <a href="#vmi465" onClick="document.getElementById('vmi465').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi465" style="display:none"><br/><pre>0ms tx-op
 1ms http://loinc.org/vs|2.82: Validate "[http://loinc.org#LP73551-1 ("Transport mode")]"
 1ms http://loinc.org/vs|2.82: Check "http://loinc.org#LP73551-1"
-3ms http://loinc.org/vs|2.82: CodeSystem found: http://loinc.org|2.82 for http://loinc.org|2.82
-3ms http://loinc.org/vs|2.82: check code in (http://loinc.org) at CodeableConcept.coding[0]
-3ms http://loinc.org/vs|2.82: Code "LP73551-1" found in http://loinc.org|2.82</pre></div></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+2ms http://loinc.org/vs|2.82: CodeSystem found: http://loinc.org|2.82 for http://loinc.org|2.82
+2ms http://loinc.org/vs|2.82: check code in (http://loinc.org) at CodeableConcept.coding[0]
+2ms http://loinc.org/vs|2.82: Code "LP73551-1" found in http://loinc.org|2.82</pre></div></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
    </tr>
 </table>
 <hr/>
