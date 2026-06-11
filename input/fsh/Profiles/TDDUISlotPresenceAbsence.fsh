@@ -13,7 +13,8 @@ Description: "Profil de la ressource FRCoreSlotProfile permettant de représente
 * identifier contains
     idPA 1..1 
 * identifier[idPA].value 1..1
-* identifier[idPA].^short = "Identifiant de présence/absence"
+* identifier[idPA] obeys SlotPresenceAbsenceIdentifierFormat
+* identifier[idPA] ^short = "Identifiant de présence/absence"
 * identifier[idPA].value ^example[0].label = "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-PA-numPresenceAbsenceUsager"
 * identifier[idPA].value ^example[0].valueString = "3480787529/147720425367411-PA-21564655"
 * identifier[idPA].system 1..1
@@ -54,3 +55,8 @@ Title:    "Modèle de contenu DUI"
 * extension[TDDUIPlannedAbsence] -> "absencePrevue"
 * serviceType -> "typePresenceAbsence"
 * appointmentType -> "motifAbsence"
+
+Invariant: SlotPresenceAbsenceIdentifierFormat
+Description: "l'identifiant de la présence/absence doit respecter le format : 3+FINESS/identifiantLocalUsagerESSMS-PA-numPresenceAbsenceUsager"
+Severity: #error
+Expression: "value.matches('^3[0-9]{9}/[A-Za-z0-9]+-PA-[A-Za-z0-9]+$')"
