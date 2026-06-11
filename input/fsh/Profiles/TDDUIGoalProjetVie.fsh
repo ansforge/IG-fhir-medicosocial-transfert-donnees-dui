@@ -13,6 +13,7 @@ Description: "Profil de la ressource Goal permettant de représenter le projet d
 * identifier ^short = "Identifiant du projet de vie"
 * identifier contains
     idPDV 1..1 
+* identifier[idPDV] obeys GoalProjetVieIdentifierFormat
 * identifier[idPDV].type = TDDUIGoalIdentifier#PDV
 * identifier[idPDV].value 1..1
 * identifier[idPDV].value ^example[0].label = "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-PDV-idLocalProjetVie"
@@ -46,3 +47,8 @@ Title:    "Modèle de contenu DUI"
 * target.detailString -> "aspirationSouhait"
 * subject -> "Usager"
 * meta.lastUpdated -> "Statut.dateStatut"
+
+Invariant: GoalProjetVieIdentifierFormat
+Description: "l'identifiant du projet de vie doit respecter le format :  3+FINESS/identifiantLocalUsagerESSMS-PDV-idLocalProjetVie"
+Severity: #error
+Expression: "value.matches('^3[0-9]{9}/[A-Za-z0-9]+-PDV-[A-Za-z0-9]+$')"
