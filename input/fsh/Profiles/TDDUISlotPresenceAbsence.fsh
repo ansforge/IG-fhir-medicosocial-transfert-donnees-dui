@@ -13,6 +13,7 @@ Description: "Profil de la ressource FRCoreSlotProfile permettant de représente
 * identifier contains
     idPA 1..1 
 * identifier[idPA].value 1..1
+* identifier[idPA].^short = "Identifiant de présence/absence"
 * identifier[idPA].value ^example[0].label = "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-PA-numPresenceAbsenceUsager"
 * identifier[idPA].value ^example[0].valueString = "3480787529/147720425367411-PA-21564655"
 * identifier[idPA].system 1..1
@@ -29,6 +30,13 @@ Description: "Profil de la ressource FRCoreSlotProfile permettant de représente
 
 * serviceType 1..1
 * serviceType from jdv-j405-type-presence-absence-ms
+* appointmentType from jdv-j406-motif-absence-ms
+
+Invariant: motifAbsenceCardinality
+Description: "Cet attribut est obligatoire pour les typePresenceAbsence=Absence"
+Severity: #error
+Expression: "(serviceType.coding.code='2') implies (appointmentType.exists())"
+
 
 Mapping:  ConceptMetier_TDDUISlotPresenceAbsence
 Source:   TDDUISlotPresenceAbsence
