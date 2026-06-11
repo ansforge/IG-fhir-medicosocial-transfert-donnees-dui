@@ -18,7 +18,7 @@ object "**TDDUIPatient/TDDUIPatientINS**" as TDDUIPatient_subject #b3de69 {
 }
 
 map "**ProjetVie : TDDUIGoalProjetVie**" as ProjetVie #fb8072 {
-    idProjetVie => identifier
+    idProjetVie => identifier:idPDV
     dateDebutProjetVie => startDate
     Statut.statut => lifecycleStatus
     Statut.dateStatut => meta.lastUpdated
