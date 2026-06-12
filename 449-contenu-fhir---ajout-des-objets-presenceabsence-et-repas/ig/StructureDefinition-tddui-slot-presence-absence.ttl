@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "TDDUISlotPresenceAbsence"] ; # 
   fhir:title [ fhir:v "TDDUI Slot Presence Absence"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-06-12T07:33:45+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-06-12T07:50:14+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -974,9 +974,6 @@
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "specmetier-to-TDDUISlotPresenceAbsence" ] ;
-         fhir:map [ fhir:v "idPresenceAbsenceUsager" ]
-       ] [
          fhir:identity [ fhir:v "w5" ] ;
          fhir:map [ fhir:v "FiveWs.identifier" ]
        ] )
@@ -1406,6 +1403,9 @@
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUISlotPresenceAbsence" ] ;
+         fhir:map [ fhir:v "idPresenceAbsenceUsager" ]
+       ] [
          fhir:identity [ fhir:v "w5" ] ;
          fhir:map [ fhir:v "FiveWs.identifier" ]
        ] )
@@ -2455,11 +2455,7 @@
          ] ) ;
          fhir:rules [ fhir:v "open" ]
        ] ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:mapping ( [
-         fhir:identity [ fhir:v "specmetier-to-TDDUISlotPresenceAbsence" ] ;
-         fhir:map [ fhir:v "idPresenceAbsenceUsager" ]
-       ] )
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ]
      ] [
        fhir:id [ fhir:v "Slot.identifier:idPA" ] ;
        fhir:path [ fhir:v "Slot.identifier" ] ;
@@ -2476,6 +2472,10 @@
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-slot-presence-absence"^^xsd:anyURI ;
            fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-slot-presence-absence>
          ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUISlotPresenceAbsence" ] ;
+         fhir:map [ fhir:v "idPresenceAbsenceUsager" ]
        ] )
      ] [
        fhir:id [ fhir:v "Slot.identifier:idPA.type" ] ;

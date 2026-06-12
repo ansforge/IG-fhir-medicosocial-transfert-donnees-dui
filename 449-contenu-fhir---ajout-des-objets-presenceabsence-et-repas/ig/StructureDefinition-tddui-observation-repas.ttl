@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "TDDUIObservationRepas"] ; # 
   fhir:title [ fhir:v "TDDUI Observation Repas"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-06-12T07:33:45+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-06-12T07:50:14+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -512,7 +512,7 @@
        fhir:path [ fhir:v "Observation.extension" ] ;
        fhir:sliceName [ fhir:v "TDDUIParticipantPresent" ] ;
        fhir:short [ fhir:v "Présence de l'usager au repas." ] ;
-       fhir:definition [ fhir:v "Indique la présence du participant à l'événement.\nEvènement : Indique la présence du participant à l'événement.\nRepas : Indique la présence de l'usager au repas." ] ;
+       fhir:definition [ fhir:v "Indique la présence du participant à l'événement.\n- **Événement** :Indique la présence du participant à l'événement.\n- **Repas** : Indique la présence de l'usager au repas." ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
@@ -647,9 +647,6 @@
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "specmetier-to-TDDUIObservationRepas" ] ;
-         fhir:map [ fhir:v "idRepas" ]
-       ] [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Event.identifier" ]
        ] [
@@ -705,6 +702,9 @@
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUIObservationRepas" ] ;
+         fhir:map [ fhir:v "idRepas" ]
+       ] [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Event.identifier" ]
        ] [
@@ -3439,11 +3439,7 @@
          ] ) ;
          fhir:rules [ fhir:v "open" ]
        ] ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:mapping ( [
-         fhir:identity [ fhir:v "specmetier-to-TDDUIObservationRepas" ] ;
-         fhir:map [ fhir:v "idRepas" ]
-       ] )
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ]
      ] [
        fhir:id [ fhir:v "Observation.identifier:idRepas" ] ;
        fhir:path [ fhir:v "Observation.identifier" ] ;
@@ -3460,6 +3456,10 @@
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-repas"^^xsd:anyURI ;
            fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-repas>
          ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUIObservationRepas" ] ;
+         fhir:map [ fhir:v "idRepas" ]
        ] )
      ] [
        fhir:id [ fhir:v "Observation.identifier:idRepas.type" ] ;

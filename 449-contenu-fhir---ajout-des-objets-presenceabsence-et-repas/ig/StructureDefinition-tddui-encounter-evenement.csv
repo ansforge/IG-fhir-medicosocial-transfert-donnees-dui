@@ -148,8 +148,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","motifEvenement"
 "Encounter.extension:TDDUIPatientPresent","Encounter.extension","TDDUIPatientPresent","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-present]]} {[]}
 ","Evènement nécessitant ou non la présence physique de l’usager.","
-- **Événement** : évènement nécessitant ou non la présence physique de l’usager.
-- **Repas** : Présence de l'usager au repas.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+- **Événement** : évènement nécessitant ou non la présence physique de l’usager.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","usagerPresent"
 "Encounter.extension:TDDUIMeal","Encounter.extension","TDDUIMeal","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-meal]]} {[]}
@@ -427,8 +426,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Encounter.participant.extension:TDDUIParticipantPresent","Encounter.participant.extension","TDDUIParticipantPresent","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-participant-present]]} {[]}
 ","Indique la présence du participant lors de l'événement.","Indique la présence du participant à l'événement.
-Evènement : Indique la présence du participant à l'événement.
-Repas : Indique la présence de l'usager au repas.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+- **Événement** :Indique la présence du participant à l'événement.
+- **Repas** : Indique la présence de l'usager au repas.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","Participant.presenceParticipant"
 "Encounter.participant.modifierExtension","Encounter.participant.modifierExtension","","extensions
@@ -615,8 +614,8 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
 "Encounter.serviceProvider.extension:TDDUIParticipantPresent","Encounter.serviceProvider.extension","TDDUIParticipantPresent","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-participant-present]]} {[]}
 ","Indique la présence de la structure lors de l'événement.","Indique la présence du participant à l'événement.
-Evènement : Indique la présence du participant à l'événement.
-Repas : Indique la présence de l'usager au repas.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+- **Événement** :Indique la présence du participant à l'événement.
+- **Repas** : Indique la présence de l'usager au repas.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","Participant.presenceParticipant"
 "Encounter.serviceProvider.reference","Encounter.serviceProvider.reference","","","",0,1,"","","Y","string {[]} {[]}
 ","Literal reference, Relative, internal or absolute URL","A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources.","Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure ""/[type]/[id]"" then it should be assumed that the reference is to a FHIR RESTful server.","","","","","","","","",,,,,"",,,,"Reference.reference",0,1,"ref-1

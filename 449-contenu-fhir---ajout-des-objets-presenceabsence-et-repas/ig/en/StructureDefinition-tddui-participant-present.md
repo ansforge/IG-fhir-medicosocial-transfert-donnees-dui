@@ -2,7 +2,10 @@
 
 ## Extension: TDDUI Participant Present 
 
-Indique la présence du participant à l'événement. Evènement : Indique la présence du participant à l'événement. Repas : Indique la présence de l'usager au repas.
+Indique la présence du participant à l'événement.
+
+* **Événement** :Indique la présence du participant à l'événement.
+* **Repas** : Indique la présence de l'usager au repas.
 
 **Context of Use**
 
@@ -36,7 +39,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-participant
   "name" : "TDDUIParticipantPresent",
   "title" : "TDDUI Participant Present",
   "status" : "active",
-  "date" : "2026-06-12T07:33:45+00:00",
+  "date" : "2026-06-12T07:50:14+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -45,7 +48,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-participant
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Indique la présence du participant à l'événement.\nEvènement : Indique la présence du participant à l'événement.\nRepas : Indique la présence de l'usager au repas.",
+  "description" : "Indique la présence du participant à l'événement.\n- **Événement** :Indique la présence du participant à l'événement.\n- **Repas** : Indique la présence de l'usager au repas.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -77,7 +80,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-participant
       "id" : "Extension",
       "path" : "Extension",
       "short" : "TDDUI Participant Present",
-      "definition" : "Indique la présence du participant à l'événement.\nEvènement : Indique la présence du participant à l'événement.\nRepas : Indique la présence de l'usager au repas."
+      "definition" : "Indique la présence du participant à l'événement.\n- **Événement** :Indique la présence du participant à l'événement.\n- **Repas** : Indique la présence de l'usager au repas."
     },
     {
       "id" : "Extension.extension",

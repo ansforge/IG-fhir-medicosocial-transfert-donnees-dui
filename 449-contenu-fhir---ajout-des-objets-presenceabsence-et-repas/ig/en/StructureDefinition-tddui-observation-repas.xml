@@ -31,7 +31,7 @@
   <name value="TDDUIObservationRepas"/>
   <title value="TDDUI Observation Repas"/>
   <status value="active"/>
-  <date value="2026-06-12T07:33:45+00:00"/>
+  <date value="2026-06-12T07:50:14+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -412,7 +412,7 @@
       <path value="Observation.extension"/>
       <sliceName value="TDDUIParticipantPresent"/>
       <short value="Présence de l'usager au repas."/>
-      <definition value="Indique la présence du participant à l'événement.&#xA;Evènement : Indique la présence du participant à l'événement.&#xA;Repas : Indique la présence de l'usager au repas."/>
+      <definition value="Indique la présence du participant à l'événement.&#xA;- **Événement** :Indique la présence du participant à l'événement.&#xA;- **Repas** : Indique la présence de l'usager au repas."/>
       <min value="1"/>
       <max value="1"/>
       <base>
@@ -523,10 +523,6 @@
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
-        <identity value="specmetier-to-TDDUIObservationRepas"/>
-        <map value="idRepas"/>
-      </mapping>
-      <mapping>
         <identity value="workflow"/>
         <map value="Event.identifier"/>
       </mapping>
@@ -576,6 +572,10 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="true"/>
+      <mapping>
+        <identity value="specmetier-to-TDDUIObservationRepas"/>
+        <map value="idRepas"/>
+      </mapping>
       <mapping>
         <identity value="workflow"/>
         <map value="Event.identifier"/>
@@ -2794,10 +2794,6 @@
         <rules value="open"/>
       </slicing>
       <min value="1"/>
-      <mapping>
-        <identity value="specmetier-to-TDDUIObservationRepas"/>
-        <map value="idRepas"/>
-      </mapping>
     </element>
     <element id="Observation.identifier:idRepas">
       <path value="Observation.identifier"/>
@@ -2812,6 +2808,10 @@
         <expression value="value.matches('^3[0-9]{9}/[A-Za-z0-9]+-REPAS-[A-Za-z0-9]+$')"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-repas"/>
       </constraint>
+      <mapping>
+        <identity value="specmetier-to-TDDUIObservationRepas"/>
+        <map value="idRepas"/>
+      </mapping>
     </element>
     <element id="Observation.identifier:idRepas.type">
       <path value="Observation.identifier.type"/>

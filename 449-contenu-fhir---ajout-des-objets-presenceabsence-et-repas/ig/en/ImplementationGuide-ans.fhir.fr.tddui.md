@@ -14,7 +14,7 @@
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2026-06-12T07:33:45+00:00",
+  "date" : "2026-06-12T07:50:14+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -1471,7 +1471,7 @@
         "reference" : "StructureDefinition/tddui-participant-present"
       },
       "name" : "TDDUI Participant Present",
-      "description" : "Indique la présence du participant à l'événement.\nEvènement : Indique la présence du participant à l'événement.\nRepas : Indique la présence de l'usager au repas.",
+      "description" : "Indique la présence du participant à l'événement.\n- **Événement** :Indique la présence du participant à l'événement.\n- **Repas** : Indique la présence de l'usager au repas.",
       "exampleBoolean" : false
     },
     {
@@ -1555,7 +1555,7 @@
         "reference" : "StructureDefinition/tddui-patient-present"
       },
       "name" : "TDDUI Patient Present",
-      "description" : "\n- **Événement** : évènement nécessitant ou non la présence physique de l’usager.\n- **Repas** : Présence de l'usager au repas.",
+      "description" : "\n- **Événement** : évènement nécessitant ou non la présence physique de l’usager.",
       "exampleBoolean" : false
     },
     {

@@ -68,7 +68,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Slot.identifier","Slot.identifier","","","",1,*,"","","Y","Identifier {[]} {[]}
 ","External Ids for this item","External Ids for this item.","","","","","","","","","",,,,,"","pattern:type}
 ","",,"open","Slot.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","idPresenceAbsenceUsager","FiveWs.identifier"
+","FiveWs.identifier"
 "Slot.identifier.id","Slot.identifier.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Slot.identifier.extension","Slot.identifier.extension","","extensions
@@ -96,7 +96,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","II.assigningAuthorityName but note that this is an improper use by the definition of the field.  Also Role.scoper"
 "Slot.identifier:idPA","Slot.identifier","idPA","","",1,1,"","","Y","Identifier {[]} {[]}
 ","Identifiant de présence/absence","External Ids for this item.","","","","","","","","","",,,,,"",,,,"Slot.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-SlotPresenceAbsenceIdentifierFormat:l'identifiant de la présence/absence doit respecter le format : 3+FINESS/identifiantLocalUsagerESSMS-PA-numPresenceAbsenceUsager {value.matches('^3[0-9]{9}/[A-Za-z0-9]+-PA-[A-Za-z0-9]+$')}","FiveWs.identifier"
+SlotPresenceAbsenceIdentifierFormat:l'identifiant de la présence/absence doit respecter le format : 3+FINESS/identifiantLocalUsagerESSMS-PA-numPresenceAbsenceUsager {value.matches('^3[0-9]{9}/[A-Za-z0-9]+-PA-[A-Za-z0-9]+$')}","idPresenceAbsenceUsager","FiveWs.identifier"
 "Slot.identifier:idPA.id","Slot.identifier.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Slot.identifier:idPA.extension","Slot.identifier.extension","","extensions

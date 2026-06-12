@@ -34,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-slot-presen
   "name" : "TDDUISlotPresenceAbsence",
   "title" : "TDDUI Slot Presence Absence",
   "status" : "active",
-  "date" : "2026-06-12T07:33:45+00:00",
+  "date" : "2026-06-12T07:50:14+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -132,11 +132,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-slot-presen
         }],
         "rules" : "open"
       },
-      "min" : 1,
-      "mapping" : [{
-        "identity" : "specmetier-to-TDDUISlotPresenceAbsence",
-        "map" : "idPresenceAbsenceUsager"
-      }]
+      "min" : 1
     },
     {
       "id" : "Slot.identifier:idPA",
@@ -151,6 +147,10 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-slot-presen
         "human" : "l'identifiant de la présence/absence doit respecter le format : 3+FINESS/identifiantLocalUsagerESSMS-PA-numPresenceAbsenceUsager",
         "expression" : "value.matches('^3[0-9]{9}/[A-Za-z0-9]+-PA-[A-Za-z0-9]+$')",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-slot-presence-absence"
+      }],
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUISlotPresenceAbsence",
+        "map" : "idPresenceAbsenceUsager"
       }]
     },
     {

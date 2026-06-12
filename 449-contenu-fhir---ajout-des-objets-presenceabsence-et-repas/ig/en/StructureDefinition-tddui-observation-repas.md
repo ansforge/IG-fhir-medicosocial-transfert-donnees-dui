@@ -34,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-observation
   "name" : "TDDUIObservationRepas",
   "title" : "TDDUI Observation Repas",
   "status" : "active",
-  "date" : "2026-06-12T07:33:45+00:00",
+  "date" : "2026-06-12T07:50:14+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -140,11 +140,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-observation
         }],
         "rules" : "open"
       },
-      "min" : 1,
-      "mapping" : [{
-        "identity" : "specmetier-to-TDDUIObservationRepas",
-        "map" : "idRepas"
-      }]
+      "min" : 1
     },
     {
       "id" : "Observation.identifier:idRepas",
@@ -159,6 +155,10 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-observation
         "human" : "l'identifiant du repas doit respecter le format : 3+FINESS/identifiantLocalUsagerESSMS-REPAS-numRepas",
         "expression" : "value.matches('^3[0-9]{9}/[A-Za-z0-9]+-REPAS-[A-Za-z0-9]+$')",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-repas"
+      }],
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIObservationRepas",
+        "map" : "idRepas"
       }]
     },
     {

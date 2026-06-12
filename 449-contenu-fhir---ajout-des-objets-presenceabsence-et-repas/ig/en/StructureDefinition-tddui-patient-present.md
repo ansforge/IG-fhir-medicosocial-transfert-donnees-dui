@@ -3,7 +3,6 @@
 ## Extension: TDDUI Patient Present 
 
 * **Événement** : évènement nécessitant ou non la présence physique de l’usager.
-* **Repas** : Présence de l'usager au repas.
 
 **Context of Use**
 
@@ -36,7 +35,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-patient-pre
   "name" : "TDDUIPatientPresent",
   "title" : "TDDUI Patient Present",
   "status" : "active",
-  "date" : "2026-06-12T07:33:45+00:00",
+  "date" : "2026-06-12T07:50:14+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -45,7 +44,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-patient-pre
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "\n- **Événement** : évènement nécessitant ou non la présence physique de l’usager.\n- **Repas** : Présence de l'usager au repas.\n",
+  "description" : "\n- **Événement** : évènement nécessitant ou non la présence physique de l’usager.\n",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -64,10 +63,6 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-patient-pre
   "context" : [{
     "type" : "element",
     "expression" : "Encounter"
-  },
-  {
-    "type" : "element",
-    "expression" : "Observation"
   }],
   "type" : "Extension",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
@@ -77,7 +72,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-patient-pre
       "id" : "Extension",
       "path" : "Extension",
       "short" : "TDDUI Patient Present",
-      "definition" : "\n- **Événement** : évènement nécessitant ou non la présence physique de l’usager.\n- **Repas** : Présence de l'usager au repas.\n"
+      "definition" : "\n- **Événement** : évènement nécessitant ou non la présence physique de l’usager.\n"
     },
     {
       "id" : "Extension.extension",

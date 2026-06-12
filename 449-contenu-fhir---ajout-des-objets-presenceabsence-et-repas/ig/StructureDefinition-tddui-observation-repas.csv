@@ -27,8 +27,8 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Observation.extension:TDDUIParticipantPresent","Observation.extension","TDDUIParticipantPresent","","",1,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-participant-present]]} {[]}
 ","Présence de l'usager au repas.","Indique la présence du participant à l'événement.
-Evènement : Indique la présence du participant à l'événement.
-Repas : Indique la présence de l'usager au repas.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+- **Événement** :Indique la présence du participant à l'événement.
+- **Repas** : Indique la présence de l'usager au repas.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","usagerPresent"
 "Observation.modifierExtension","Observation.modifierExtension","","extensions
@@ -40,10 +40,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Observation.identifier","Observation.identifier","","","",1,*,"","","Y","Identifier {[]} {[]}
 ","Business Identifier for observation","A unique identifier assigned to this observation.","","Allows observations to be distinguished and referenced.","","","","","","","",,,,,"","pattern:type}
 ","",,"open","Observation.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","idRepas","Event.identifier","OBX.21  For OBX segments from systems without OBX-21 support a combination of ORC/OBR and OBX must be negotiated between trading partners to uniquely identify the OBX segment. Depending on how V2 has been implemented each of these may be an option: 1) OBR-3 + OBX-3 + OBX-4 or 2) OBR-3 + OBR-4 + OBX-3 + OBX-4 or 2) some other way to uniquely ID the OBR/ORC + OBX-3 + OBX-4.","id","FiveWs.identifier"
+","Event.identifier","OBX.21  For OBX segments from systems without OBX-21 support a combination of ORC/OBR and OBX must be negotiated between trading partners to uniquely identify the OBX segment. Depending on how V2 has been implemented each of these may be an option: 1) OBR-3 + OBX-3 + OBX-4 or 2) OBR-3 + OBR-4 + OBX-3 + OBX-4 or 2) some other way to uniquely ID the OBR/ORC + OBX-3 + OBX-4.","id","FiveWs.identifier"
 "Observation.identifier:idRepas","Observation.identifier","idRepas","","",1,1,"","","Y","Identifier {[]} {[]}
 ","Identifiant du repas","A unique identifier assigned to this observation.","","Allows observations to be distinguished and referenced.","","","","","","","",,,,,"",,,,"Observation.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ObservationRepasIdentifierFormat:l'identifiant du repas doit respecter le format : 3+FINESS/identifiantLocalUsagerESSMS-REPAS-numRepas {value.matches('^3[0-9]{9}/[A-Za-z0-9]+-REPAS-[A-Za-z0-9]+$')}","Event.identifier","OBX.21  For OBX segments from systems without OBX-21 support a combination of ORC/OBR and OBX must be negotiated between trading partners to uniquely identify the OBX segment. Depending on how V2 has been implemented each of these may be an option: 1) OBR-3 + OBX-3 + OBX-4 or 2) OBR-3 + OBR-4 + OBX-3 + OBX-4 or 2) some other way to uniquely ID the OBR/ORC + OBX-3 + OBX-4.","id","FiveWs.identifier"
+ObservationRepasIdentifierFormat:l'identifiant du repas doit respecter le format : 3+FINESS/identifiantLocalUsagerESSMS-REPAS-numRepas {value.matches('^3[0-9]{9}/[A-Za-z0-9]+-REPAS-[A-Za-z0-9]+$')}","idRepas","Event.identifier","OBX.21  For OBX segments from systems without OBX-21 support a combination of ORC/OBR and OBX must be negotiated between trading partners to uniquely identify the OBX segment. Depending on how V2 has been implemented each of these may be an option: 1) OBR-3 + OBX-3 + OBX-4 or 2) OBR-3 + OBR-4 + OBX-3 + OBX-4 or 2) some other way to uniquely ID the OBR/ORC + OBX-3 + OBX-4.","id","FiveWs.identifier"
 "Observation.identifier:idRepas.id","Observation.identifier.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Observation.identifier:idRepas.extension","Observation.identifier.extension","","extensions
