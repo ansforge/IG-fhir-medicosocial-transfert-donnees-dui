@@ -4,8 +4,8 @@ Title: "TDDUI ServiceRequest DemandeOrientation Example"
 Description: "Exemple d'une demande d'orientation." 
 Usage: #example
 
-* identifier.value = "1234"
-* identifier.system = "2.16.840.1.113883.2.8.3.75.1"
+* identifier[idDemandeOrientation].value = "1234"
+* identifier[idDemandeOrientation].system = "2.16.840.1.113883.2.8.3.75.1"
 
 * status = #active
 * intent = #plan

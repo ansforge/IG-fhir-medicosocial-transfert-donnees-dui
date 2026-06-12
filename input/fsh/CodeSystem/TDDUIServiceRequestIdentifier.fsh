@@ -7,5 +7,6 @@ Description: "CodeSystem pour la définition des codes d'identifiant des observa
 * ^caseSensitive = true
 * ^content = #complete
 * #BES "Identifiant du besoin"
+* #DEMANDE_ORIENTATION "Identifiant de la demande d'orientation"
 // SCS profile
 * ^experimental = false

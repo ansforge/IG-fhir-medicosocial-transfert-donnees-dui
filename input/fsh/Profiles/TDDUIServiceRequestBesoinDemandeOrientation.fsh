@@ -4,10 +4,16 @@ Id: tddui-service-request-demande-orientation
 Title: "TDDUI ServiceRequest DemandeOrientation"
 Description: "Profil de la ressource ServiceRequest permettant de représenter la demande d'orientation adressée à la CDAPH." 
 
-* identifier 1..1
-* identifier.value 1..1
-* identifier.system 1..1
-* identifier.system ^short = "oid de la MPDH"
+* identifier 1..*
+* identifier ^slicing.discriminator.type = #pattern
+* identifier ^slicing.discriminator.path = "type"
+* identifier ^slicing.rules = #open 
+* identifier contains 
+    idDemandeOrientation 1..1
+* identifier[idDemandeOrientation].type = TDDUIServiceRequestIdentifier#DEMANDE_ORIENTATION
+* identifier[idDemandeOrientation].value 1..1
+* identifier[idDemandeOrientation].system 1..1
+* identifier[idDemandeOrientation].system ^short = "oid de la MPDH"
 
 * category 0..1
 * category from jdv-j394-type-demande-compensation-ms (required)
