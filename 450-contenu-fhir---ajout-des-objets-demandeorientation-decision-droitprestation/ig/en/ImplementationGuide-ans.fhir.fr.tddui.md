@@ -14,7 +14,7 @@
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2026-06-10T14:13:27+00:00",
+  "date" : "2026-06-12T15:13:13+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -2265,6 +2265,18 @@
       "name" : "TDDUI ServiceRequest DemandeOrientation Example",
       "description" : "Exemple d'une demande d'orientation.",
       "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-demande-orientation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/tddui-service-request-identifier-demande-orientation"
+      },
+      "name" : "TDDUI ServiceRequest DemandeOrientation Identifier",
+      "description" : "ValueSet pour la définition des codes d'identifiant de demande d'orientation",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{

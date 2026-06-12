@@ -11,7 +11,7 @@
   <name value="TDDUI"/>
   <title value="Médicosocial - Transfert de données DUI"/>
   <status value="active"/>
-  <date value="2026-06-10T14:13:27+00:00"/>
+  <date value="2026-06-12T15:13:13+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -1954,6 +1954,17 @@
       <name value="TDDUI ServiceRequest DemandeOrientation Example"/>
       <description value="Exemple d'une demande d'orientation."/>
       <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-demande-orientation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/tddui-service-request-identifier-demande-orientation"/>
+      </reference>
+      <name value="TDDUI ServiceRequest DemandeOrientation Identifier"/>
+      <description value="ValueSet pour la définition des codes d'identifiant de demande d'orientation"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

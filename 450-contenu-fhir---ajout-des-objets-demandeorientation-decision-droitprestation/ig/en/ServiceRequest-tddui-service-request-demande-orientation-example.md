@@ -4,7 +4,7 @@
 
 Profile: [TDDUI ServiceRequest DemandeOrientation](StructureDefinition-tddui-service-request-demande-orientation.md)
 
-**identifier**: `2.16.840.1.113883.2.8.3.75.1`/1234
+**identifier**: Identifiant de la demande d'orientation/1234
 
 **status**: Active
 
@@ -26,6 +26,12 @@ Profile: [TDDUI ServiceRequest DemandeOrientation](StructureDefinition-tddui-ser
     "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-demande-orientation"]
   },
   "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-service-request-identifier",
+        "code" : "DEMANDE_ORIENTATION"
+      }]
+    },
     "system" : "2.16.840.1.113883.2.8.3.75.1",
     "value" : "1234"
   }],

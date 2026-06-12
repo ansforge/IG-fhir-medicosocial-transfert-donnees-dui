@@ -35,7 +35,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-service-req
   "name" : "TDDUIServiceRequestDemandeOrientation",
   "title" : "TDDUI ServiceRequest DemandeOrientation",
   "status" : "active",
-  "date" : "2026-06-10T14:13:27+00:00",
+  "date" : "2026-06-12T15:13:13+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -100,21 +100,45 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-service-req
     {
       "id" : "ServiceRequest.identifier",
       "path" : "ServiceRequest.identifier",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "type"
+        }],
+        "rules" : "open"
+      },
       "min" : 1,
-      "max" : "1",
       "mapping" : [{
         "identity" : "specmetier-to-TDDUIServiceRequestDemandeOrientation",
         "map" : "idDemandeOrientation"
       }]
     },
     {
-      "id" : "ServiceRequest.identifier.system",
+      "id" : "ServiceRequest.identifier:idDemandeOrientation",
+      "path" : "ServiceRequest.identifier",
+      "sliceName" : "idDemandeOrientation",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "ServiceRequest.identifier:idDemandeOrientation.type",
+      "path" : "ServiceRequest.identifier.type",
+      "min" : 1,
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-service-request-identifier",
+          "code" : "DEMANDE_ORIENTATION"
+        }]
+      }
+    },
+    {
+      "id" : "ServiceRequest.identifier:idDemandeOrientation.system",
       "path" : "ServiceRequest.identifier.system",
       "short" : "oid de la MPDH",
       "min" : 1
     },
     {
-      "id" : "ServiceRequest.identifier.value",
+      "id" : "ServiceRequest.identifier:idDemandeOrientation.value",
       "path" : "ServiceRequest.identifier.value",
       "min" : 1
     },

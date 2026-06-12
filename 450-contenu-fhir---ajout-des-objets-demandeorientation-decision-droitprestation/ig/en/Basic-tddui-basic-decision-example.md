@@ -29,7 +29,7 @@ Profile: [TDDUI Basic Decision](StructureDefinition-tddui-basic-decision.md)
 
 **code**: Décision
 
-**subject**: [ServiceRequest: identifier = 2.16.840.1.113883.2.8.3.75.1#1234; status = active; intent = plan; occurrence[x] = 2020-01-01 --> 2020-01-31](ServiceRequest-tddui-service-request-demande-orientation-example.md)
+**subject**: [ServiceRequest: identifier = Identifiant de la demande d'orientation; status = active; intent = plan; occurrence[x] = 2020-01-01 --> 2020-01-31](ServiceRequest-tddui-service-request-demande-orientation-example.md)
 
 
 

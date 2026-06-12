@@ -8,6 +8,7 @@ CodeSystem pour la définition des codes d'identifiant des observations
 This Code system is referenced in the definition of the following value sets:
 
 * [TDDUIServiceRequestIdentifierBesoin](ValueSet-tddui-service-request-identifier-besoin.md)
+* [TDDUIServiceRequestIdentifierDemandeOrientation](ValueSet-tddui-service-request-identifier-demande-orientation.md)
 
 -------
 
@@ -30,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "TDDUI ServiceRequest Identifier",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-10T14:13:27+00:00",
+  "date" : "2026-06-12T15:13:13+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -49,10 +50,14 @@ This Code system is referenced in the definition of the following value sets:
   }],
   "caseSensitive" : true,
   "content" : "complete",
-  "count" : 1,
+  "count" : 2,
   "concept" : [{
     "code" : "BES",
     "display" : "Identifiant du besoin"
+  },
+  {
+    "code" : "DEMANDE_ORIENTATION",
+    "display" : "Identifiant de la demande d'orientation"
   }]
 }
 

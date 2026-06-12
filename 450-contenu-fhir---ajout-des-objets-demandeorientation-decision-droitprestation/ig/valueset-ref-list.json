@@ -26,8 +26,9 @@
     "sources" : ["2.16.840.1.113883.4.642.3.45"],
     "uses" : {
     },
-    "ValueSet-tddui-service-request-identifier-besoin.html" : "TDDUI ServiceRequest Besoin Identifier",
     "ValueSet-tddui-encounter-identifier.html" : "TDDUI Encounter Identifier",
+    "ValueSet-tddui-service-request-identifier-besoin.html" : "TDDUI ServiceRequest Besoin Identifier",
+    "ValueSet-tddui-service-request-identifier-demande-orientation.html" : "TDDUI ServiceRequest DemandeOrientation Identifier",
     "ValueSet-tddui-patient-identifier.html" : "TDDUI Patient Identifier"
   },
   {
@@ -177,8 +178,8 @@
     "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique"],
     "uses" : {
     },
-    "ValueSet-tddui-contact-related-person-relashionship.html" : "TDDUI Related Person Relashionship",
-    "StructureDefinition-tddui-related-person-contact.html" : "TDDUI RelatedPerson Contact"
+    "StructureDefinition-tddui-related-person-contact.html" : "TDDUI RelatedPerson Contact",
+    "ValueSet-tddui-contact-related-person-relashionship.html" : "TDDUI Related Person Relashionship"
   },
   {
     "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-contact-related-person-relashionship",
@@ -205,8 +206,8 @@
     "https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique"],
     "uses" : {
     },
-    "ValueSet-tddui-contact-related-person-relashionship.html" : "TDDUI Related Person Relashionship",
-    "StructureDefinition-tddui-related-person-contact.html" : "TDDUI RelatedPerson Contact"
+    "StructureDefinition-tddui-related-person-contact.html" : "TDDUI RelatedPerson Contact",
+    "ValueSet-tddui-contact-related-person-relashionship.html" : "TDDUI Related Person Relashionship"
   },
   {
     "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-discriminator",
@@ -218,11 +219,11 @@
     "systems" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator"],
     "uses" : {
     },
-    "StructureDefinition-tddui-discriminator.html" : "TDDUI Discriminator",
-    "ValueSet-tddui-goal-objectif-note.html" : "TDDUI Goal Objectif Note",
-    "ValueSet-tddui-servicerequest-supportinginfo.html" : "TDDUI ServiceRequest SupportingInfo",
     "ValueSet-tddui-goal-attente-note.html" : "TDDUI Goal Attente Note",
-    "ValueSet-tddui-care-plan-supporting-info.html" : "TDDUI CarePlan supportingInfo"
+    "ValueSet-tddui-goal-objectif-note.html" : "TDDUI Goal Objectif Note",
+    "ValueSet-tddui-care-plan-supporting-info.html" : "TDDUI CarePlan supportingInfo",
+    "ValueSet-tddui-servicerequest-supportinginfo.html" : "TDDUI ServiceRequest SupportingInfo",
+    "StructureDefinition-tddui-discriminator.html" : "TDDUI Discriminator"
   },
   {
     "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-identifier",
@@ -310,9 +311,9 @@
     "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-type"],
     "uses" : {
     },
-    "StructureDefinition-tddui-observation-periode-scolaire.html" : "TDDUI Observation Periode Scolaire",
     "StructureDefinition-tddui-observation-cause-mortalite.html" : "TDDUI Observation Cause Mortalite",
-    "StructureDefinition-tddui-observation-mobilite-usager.html" : "TDDUI Observation Mobilite Usager"
+    "StructureDefinition-tddui-observation-mobilite-usager.html" : "TDDUI Observation Mobilite Usager",
+    "StructureDefinition-tddui-observation-periode-scolaire.html" : "TDDUI Observation Periode Scolaire"
   },
   {
     "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-patient-identifier",
@@ -340,8 +341,8 @@
     "uses" : {
     },
     "StructureDefinition-tddui-encounter-evenement.html" : "TDDUI Encounter Evenement",
-    "StructureDefinition-tddui-task-prestation.html" : "TDDUI Task Prestation",
-    "ValueSet-tddui-encounter-type.html" : "TDDUI Encounter Type"
+    "ValueSet-tddui-encounter-type.html" : "TDDUI Encounter Type",
+    "StructureDefinition-tddui-task-prestation.html" : "TDDUI Task Prestation"
   },
   {
     "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-service-request-identifier-besoin",
@@ -350,6 +351,16 @@
     "name" : "TDDUIServiceRequestIdentifierBesoin",
     "title" : "TDDUI ServiceRequest Besoin Identifier",
     "description" : "ValueSet pour la définition des codes d'identifiant de besoin",
+    "systems" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-service-request-identifier",
+    "http://terminology.hl7.org/CodeSystem/v2-0203"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-service-request-identifier-demande-orientation",
+    "version" : "2.3.0-ballot",
+    "status" : "active",
+    "name" : "TDDUIServiceRequestIdentifierDemandeOrientation",
+    "title" : "TDDUI ServiceRequest DemandeOrientation Identifier",
+    "description" : "ValueSet pour la définition des codes d'identifiant de demande d'orientation",
     "systems" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-service-request-identifier",
     "http://terminology.hl7.org/CodeSystem/v2-0203"]
   },
@@ -845,8 +856,8 @@
     "sources" : ["1.2.250.1.213.3.4.227"],
     "uses" : {
     },
-    "ValueSet-tddui-contact-related-person-relashionship.html" : "TDDUI Related Person Relashionship",
-    "StructureDefinition-tddui-related-person-contact.html" : "TDDUI RelatedPerson Contact"
+    "StructureDefinition-tddui-related-person-contact.html" : "TDDUI RelatedPerson Contact",
+    "ValueSet-tddui-contact-related-person-relashionship.html" : "TDDUI Related Person Relashionship"
   },
   {
     "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j385-composition-foyer-ms",

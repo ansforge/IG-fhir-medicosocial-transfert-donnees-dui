@@ -676,9 +676,15 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_tddui-service-request-demande-orientation-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest tddui-service-request-demande-orientation-example</b></p><a name=\"tddui-service-request-demande-orientation-example\"> </a><a name=\"hctddui-service-request-demande-orientation-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tddui-service-request-demande-orientation.html\">TDDUI ServiceRequest DemandeOrientation</a></p></div><p><b>identifier</b>: <code>2.16.840.1.113883.2.8.3.75.1</code>/1234</p><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>subject</b>: <a href=\"Patient-tddui-pp-pa-patient-example-pp.html\">Jeanne L. (official) Female, DoB: 1947-04-03 ( Patient internal identifier: 3480787529/123456789)</a></p><p><b>occurrence</b>: 2020-01-01 --&gt; 2020-01-31</p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_tddui-service-request-demande-orientation-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest tddui-service-request-demande-orientation-example</b></p><a name=\"tddui-service-request-demande-orientation-example\"> </a><a name=\"hctddui-service-request-demande-orientation-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tddui-service-request-demande-orientation.html\">TDDUI ServiceRequest DemandeOrientation</a></p></div><p><b>identifier</b>: Identifiant de la demande d'orientation/1234</p><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>subject</b>: <a href=\"Patient-tddui-pp-pa-patient-example-pp.html\">Jeanne L. (official) Female, DoB: 1947-04-03 ( Patient internal identifier: 3480787529/123456789)</a></p><p><b>occurrence</b>: 2020-01-01 --&gt; 2020-01-31</p></div>"
       },
       "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-service-request-identifier",
+            "code" : "DEMANDE_ORIENTATION"
+          }]
+        },
         "system" : "2.16.840.1.113883.2.8.3.75.1",
         "value" : "1234"
       }],
