@@ -34,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-observation
   "name" : "TDDUIObservationRepas",
   "title" : "TDDUI Observation Repas",
   "status" : "active",
-  "date" : "2026-06-11T13:38:26+00:00",
+  "date" : "2026-06-12T07:33:45+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -115,15 +115,15 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-observation
       "min" : 1
     },
     {
-      "id" : "Observation.extension:TDDUIPatientPresent",
+      "id" : "Observation.extension:TDDUIParticipantPresent",
       "path" : "Observation.extension",
-      "sliceName" : "TDDUIPatientPresent",
+      "sliceName" : "TDDUIParticipantPresent",
       "short" : "Présence de l'usager au repas.",
       "min" : 1,
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-present"]
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-participant-present"]
       }],
       "mapping" : [{
         "identity" : "specmetier-to-TDDUIObservationRepas",

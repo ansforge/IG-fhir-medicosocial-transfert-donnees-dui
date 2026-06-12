@@ -36,7 +36,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "TDDUI Slot Identifier Presence Absence",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-11T13:38:26+00:00",
+  "date" : "2026-06-12T07:33:45+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

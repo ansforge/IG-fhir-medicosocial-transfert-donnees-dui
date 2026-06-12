@@ -4,7 +4,7 @@
 
 Profile: [TDDUI Observation Repas](StructureDefinition-tddui-observation-repas.md)
 
-**TDDUI Patient Present**: true
+**TDDUI Participant Present**: true
 
 **identifier**: Identifiant du repas/3480787529/1012-REPAS-0002
 
@@ -30,7 +30,7 @@ Profile: [TDDUI Observation Repas](StructureDefinition-tddui-observation-repas.m
     "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-repas"]
   },
   "extension" : [{
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-present",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-participant-present",
     "valueBoolean" : true
   }],
   "identifier" : [{
