@@ -14,7 +14,7 @@ object "**TDDUIPatient/TDDUIPatientINS**" as TDDUIPatient_subject #80b1d3 {
 
 map "**PresenceAbsence : TDDUISlotPresenceAbsence**" as PresenceAbsence #d9d9d9 {
     absencePrevue => <&plus> TDDUIPlannedAbsence
-    idPresenceAbsenceUsager => identifier
+    idPresenceAbsenceUsager => identifier:idPA
     dateDebutPresenceAbsence => start
     dateFinPresenceAbsence => end
     typePresenceAbsence => serviceType
