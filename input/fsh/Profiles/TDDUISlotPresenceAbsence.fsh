@@ -46,7 +46,7 @@ Id:       specmetier-to-TDDUISlotPresenceAbsence
 Title:    "Modèle de contenu DUI"
 * -> "PresenceAbsence"
 
-* identifier:idPA -> "idPresenceAbsenceUsager"
+* identifier[idPA] -> "idPresenceAbsenceUsager"
 * start -> "dateDebutPresenceAbsence"
 * end -> "dateFinPresenceAbsence"
 * status -> "Statut.statut"

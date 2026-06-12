@@ -39,7 +39,7 @@ Id:       specmetier-to-TDDUIObservationRepas
 Title:    "Modèle de contenu DUI"
 * -> "Repas"
 
-* identifier:idRepas -> "idRepas"
+* identifier[idRepas] -> "idRepas"
 * category -> "typeRepas"
 * effectiveDateTime -> "dateRepas"
 * extension[TDDUIParticipantPresent] -> "usagerPresent"
