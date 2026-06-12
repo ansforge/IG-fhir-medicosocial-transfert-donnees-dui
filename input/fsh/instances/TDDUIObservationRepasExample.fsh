@@ -6,7 +6,7 @@ Usage: #example
 
 * status = #registered
 
-* extension[TDDUIPatientPresent].valueBoolean = true
+* extension[TDDUIParticipantPresent].valueBoolean = true
 
 * subject = Reference(tddui-patient-ins-example)
 

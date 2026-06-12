@@ -5,8 +5,8 @@ object "**TDDUIPatient/TDDUIPatientINS**" as TDDUIPatient_subject #fdb462 {
 }
 
 map "**Repas : TDDUIObservationRepas**" as Repas #80b1d3 {
-    usagerPresent => <&plus> TDDUIPatientPresent
-    idRepas => identifier
+    usagerPresent => <&plus> TDDUIParticipantPresent
+    idRepas => identifier:idRepas
     dateRepas => effectiveDateTime
     typeRepas => category
 }

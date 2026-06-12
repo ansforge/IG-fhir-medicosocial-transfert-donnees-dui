@@ -29,8 +29,8 @@ Description: "Profil de la ressource Observation permettant de représenter si l
 * subject 1..1
 * subject only Reference(TDDUIPatient or TDDUIPatientINS)
 
-* extension contains TDDUIPatientPresent named TDDUIPatientPresent 1..1
-* extension[TDDUIPatientPresent] ^short = "Présence de l'usager au repas."
+* extension contains TDDUIParticipantPresent named TDDUIParticipantPresent 1..1
+* extension[TDDUIParticipantPresent] ^short = "Présence de l'usager au repas."
 
 Mapping:  ConceptMetier_TDDUIObservationRepas
 Source:   TDDUIObservationRepas
@@ -42,7 +42,7 @@ Title:    "Modèle de contenu DUI"
 * identifier -> "idRepas"
 * category -> "typeRepas"
 * effectiveDateTime -> "dateRepas"
-* extension[TDDUIPatientPresent] -> "usagerPresent"
+* extension[TDDUIParticipantPresent] -> "usagerPresent"
 * subject -> "Usager"
 
 Invariant: ObservationRepasIdentifierFormat
