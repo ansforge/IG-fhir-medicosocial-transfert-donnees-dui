@@ -4,6 +4,6 @@ Title: "TDDUI Participant Present"
 Description: "Indique la présence du participant à l'événement.
 - **Événement** :Indique la présence du participant à l'événement.
 - **Repas** : Indique la présence de l'usager au repas."
-Context: Encounter.participant, Encounter.serviceProvider
+Context: Encounter.participant, Encounter.serviceProvider, Observation
 
 * value[x] only boolean

@@ -23,11 +23,17 @@ Description: "Profil de la ressource FRCoreSlotProfile permettant de représente
 
 * schedule only Reference(TDDUISchedule)
 
-* status.extension contains TDDUIStatusAuthor named TDDUIStatusAuthor 0..1
+* status.extension contains 
+    TDDUIStatusAuthor named TDDUIStatusAuthor 0..1 
 * status.extension[TDDUIStatusAuthor] ^short = "Auteur du statut."
 
-* extension contains TDDUIPlannedAbsence named TDDUIPlannedAbsence 0..1
+* extension contains
+ TDDUIPlannedAbsence named TDDUIPlannedAbsence 0..1 and
+ TDDUIFacturation named TDDUIFacturation 0..1
+
 * extension[TDDUIPlannedAbsence] ^short = "Indique si l'absence est prévue ou non."
+* extension[TDDUIFacturation] ^short = "Indique si une facture a été établie."
+
 
 * serviceType 1..1
 * serviceType from jdv-j405-type-presence-absence-ms

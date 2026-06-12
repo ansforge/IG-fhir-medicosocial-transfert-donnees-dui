@@ -8,6 +8,7 @@ Usage: #example
 * identifier[idPA].system = "https://identifiant-medicosocial-presenceabsence.esante.gouv.fr"
 
 * status = #busy
+* extension[TDDUIFacturation].valueBoolean = true
 
 * start = "2025-04-17T08:00:00+02:00"
 * end = "2025-04-17T17:30:00+02:00"
