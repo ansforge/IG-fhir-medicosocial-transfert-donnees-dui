@@ -773,9 +773,13 @@
       },
       "language" : "en",
       "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Slot_tddui-slot-presence-absence-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Slot tddui-slot-presence-absence-example</b></p><a name=\"tddui-slot-presence-absence-example\"> </a><a name=\"hctddui-slot-presence-absence-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tddui-slot-presence-absence.html\">TDDUI Slot Presence Absence</a></p></div><p><b>identifier</b>: Patient identifier/3480787529/1012-PA-0001</p><p><b>serviceType</b>: <span title=\"Codes:{https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r423-type-presence-absence 1}\">Présent</span></p><p><b>schedule</b>: <a href=\"Schedule-tddui-schedule-example.html\">Schedule</a></p><p><b>status</b>: Busy</p><p><b>start</b>: 2025-04-17 08:00:00+0200</p><p><b>end</b>: 2025-04-17 17:30:00+0200</p></div>"
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Slot_tddui-slot-presence-absence-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Slot tddui-slot-presence-absence-example</b></p><a name=\"tddui-slot-presence-absence-example\"> </a><a name=\"hctddui-slot-presence-absence-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tddui-slot-presence-absence.html\">TDDUI Slot Presence Absence</a></p></div><p><b>TDDUI Facturation</b>: true</p><p><b>identifier</b>: Patient identifier/3480787529/1012-PA-0001</p><p><b>serviceType</b>: <span title=\"Codes:{https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r423-type-presence-absence 1}\">Présent</span></p><p><b>schedule</b>: <a href=\"Schedule-tddui-schedule-example.html\">Schedule</a></p><p><b>status</b>: Busy</p><p><b>start</b>: 2025-04-17 08:00:00+0200</p><p><b>end</b>: 2025-04-17 17:30:00+0200</p></div>"
       },
+      "extension" : [{
+        "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-facturation",
+        "valueBoolean" : true
+      }],
       "identifier" : [{
         "type" : {
           "coding" : [{

@@ -4,6 +4,8 @@
 
 Profile: [TDDUI Slot Presence Absence](StructureDefinition-tddui-slot-presence-absence.md)
 
+**TDDUI Facturation**: true
+
 **identifier**: Patient identifier/3480787529/1012-PA-0001
 
 **serviceType**: Présent
@@ -27,6 +29,10 @@ Profile: [TDDUI Slot Presence Absence](StructureDefinition-tddui-slot-presence-a
   "meta" : {
     "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-slot-presence-absence"]
   },
+  "extension" : [{
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-facturation",
+    "valueBoolean" : true
+  }],
   "identifier" : [{
     "type" : {
       "coding" : [{

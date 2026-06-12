@@ -34,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-slot-presen
   "name" : "TDDUISlotPresenceAbsence",
   "title" : "TDDUI Slot Presence Absence",
   "status" : "active",
-  "date" : "2026-06-12T07:50:14+00:00",
+  "date" : "2026-06-12T13:52:17+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -120,6 +120,18 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-slot-presen
       "mapping" : [{
         "identity" : "specmetier-to-TDDUISlotPresenceAbsence",
         "map" : "absencePrevue"
+      }]
+    },
+    {
+      "id" : "Slot.extension:TDDUIFacturation",
+      "path" : "Slot.extension",
+      "sliceName" : "TDDUIFacturation",
+      "short" : "Indique si une facture a été établie.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-facturation"]
       }]
     },
     {
