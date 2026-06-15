@@ -56,10 +56,10 @@ Context: Basic
     dateOuverture 1..1 and
     dateEcheance 1..1 and
     existencePAG 1..1 and
-    // motifFinPAG 0..1 and
+    motifFinPAG 0..1 and
     creton 0..1 and
     taux 0..1 and
-    // typeCompensation 0..1 and
+     typeCompensation 0..1 and
     commentaire 0..1 and
     detailPrestation 1..1
 
@@ -86,10 +86,11 @@ Context: Basic
 * extension[decision].extension[droitPrestation].extension[existencePAG].value[x] only boolean
 * extension[decision].extension[droitPrestation].extension[existencePAG] ^short = "Existence d'un PAG"
 
-/*
+
 * extension[decision].extension[droitPrestation].extension[motifFinPAG].value[x] only CodeableConcept
+* extension[decision].extension[droitPrestation].extension[motifFinPAG].value[x] from jdv-j403-motif-fin-pag-ms
 * extension[decision].extension[droitPrestation].extension[motifFinPAG] ^short = "Motif de fin du PAG"
-*/
+
 
 * extension[decision].extension[droitPrestation].extension[creton].value[x] only boolean
 * extension[decision].extension[droitPrestation].extension[creton] ^short = "Indicateur creton"
@@ -97,10 +98,11 @@ Context: Basic
 * extension[decision].extension[droitPrestation].extension[taux].value[x] only Quantity
 * extension[decision].extension[droitPrestation].extension[taux] ^short = "Taux"
 
-/*
+
 * extension[decision].extension[droitPrestation].extension[typeCompensation].value[x] only CodeableConcept
+* extension[decision].extension[droitPrestation].extension[typeCompensation].value[x] from jdv-j394-type-demande-compensation-ms
 * extension[decision].extension[droitPrestation].extension[typeCompensation] ^short = "Type de compensation"
-*/
+
 
 * extension[decision].extension[droitPrestation].extension[commentaire].value[x] only string
 * extension[decision].extension[droitPrestation].extension[commentaire] ^short = "Commentaire du droit de prestation"
@@ -116,7 +118,7 @@ Context: Basic
     montantAttribue 0..1 and
     frequence 0..1 and
     qualificationOrientation 1..1 and
-    structureAccueil 1..* and
+    structureAccueil 0..* and
     priseCharge 0..*
 
 * extension[decision].extension[droitPrestation].extension[detailPrestation].extension[temporaliteAccueil].value[x] only CodeableConcept
@@ -139,7 +141,7 @@ Context: Basic
 * extension[decision].extension[droitPrestation].extension[detailPrestation].extension[montantAttribue] ^short = "Montant attribué"
 
 * extension[decision].extension[droitPrestation].extension[detailPrestation].extension[frequence].value[x] only Quantity
-* extension[decision].extension[droitPrestation].extension[detailPrestation].extension[frequence] ^short = "Fréquence"
+* extension[decision].extension[droitPrestation].extension[detailPrestation].extension[frequence] ^short = "Fréquence de versement"
 
 
 * extension[decision].extension[droitPrestation].extension[detailPrestation].extension[qualificationOrientation].value[x] only CodeableConcept

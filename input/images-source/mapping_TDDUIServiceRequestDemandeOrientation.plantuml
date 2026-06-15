@@ -10,7 +10,7 @@ object "**TDDUIPatient/TDDUIPatientINS**" as TDDUIPatient_subject #fdb462 {
 }
 
 map "**DemandeOrientation : TDDUIServiceRequestDemandeOrientation**" as DemandeOrientation #d9d9d9 {
-    idDemandeOrientation => identifier
+    idDemandeOrientation => identifier:idDemandeOrientation
     typeDemande => category
     natureDemande => code
     demandeOrientation => <&layers> supportingInfo:demandeOrientation
