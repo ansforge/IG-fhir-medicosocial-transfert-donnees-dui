@@ -1,4 +1,4 @@
-# TDDUI Exercise Mode - Médicosocial - Transfert de données DUI v2.3.0
+# TDDUI Exercise Mode - Médicosocial - Transfert de données DUI v2.4.0-ballot
 
 ## : TDDUI Exercise Mode 
 
@@ -59,11 +59,11 @@ Extension simple avec le type CodeableConcept : Extension permettant de représe
   "resourceType" : "StructureDefinition",
   "id" : "tddui-exercise-mode",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exercise-mode",
-  "version" : "2.3.0",
+  "version" : "2.4.0-ballot",
   "name" : "TDDUIExerciseMode",
   "title" : "TDDUI Exercise Mode",
   "status" : "active",
-  "date" : "2026-06-15T09:02:12+00:00",
+  "date" : "2026-06-15T09:19:04+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

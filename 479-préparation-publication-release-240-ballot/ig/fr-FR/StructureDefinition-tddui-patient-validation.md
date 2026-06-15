@@ -1,4 +1,4 @@
-# TDDUI Patient Validation - Médicosocial - Transfert de données DUI v2.3.0
+# TDDUI Patient Validation - Médicosocial - Transfert de données DUI v2.4.0-ballot
 
 ## : TDDUI Patient Validation 
 
@@ -51,11 +51,11 @@ Extension simple avec le type boolean : Validation par l'usager que l'événemen
   "resourceType" : "StructureDefinition",
   "id" : "tddui-patient-validation",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-validation",
-  "version" : "2.3.0",
+  "version" : "2.4.0-ballot",
   "name" : "TDDUIPatientValidation",
   "title" : "TDDUI Patient Validation",
   "status" : "active",
-  "date" : "2026-06-15T09:02:12+00:00",
+  "date" : "2026-06-15T09:19:04+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

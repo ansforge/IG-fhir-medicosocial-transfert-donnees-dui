@@ -1,4 +1,4 @@
-# TDDUI Admission Date - Médicosocial - Transfert de données DUI v2.3.0
+# TDDUI Admission Date - Médicosocial - Transfert de données DUI v2.4.0-ballot
 
 ## : TDDUI Admission Date 
 
@@ -51,11 +51,11 @@ Extension simple avec le type dateTime : Date d’admission dans la structure ES
   "resourceType" : "StructureDefinition",
   "id" : "tddui-admission-date",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-admission-date",
-  "version" : "2.3.0",
+  "version" : "2.4.0-ballot",
   "name" : "TDDUIAdmissionDate",
   "title" : "TDDUI Admission Date",
   "status" : "active",
-  "date" : "2026-06-15T09:02:12+00:00",
+  "date" : "2026-06-15T09:19:04+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

@@ -1,4 +1,4 @@
-# TDDUI Assessment Method - Médicosocial - Transfert de données DUI v2.3.0
+# TDDUI Assessment Method - Médicosocial - Transfert de données DUI v2.4.0-ballot
 
 ## : TDDUI Assessment Method 
 
@@ -50,11 +50,11 @@ Extension simple avec le type string : Mode d'évaluation, texte libre permettan
   "resourceType" : "StructureDefinition",
   "id" : "tddui-assessment-method",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-assessment-method",
-  "version" : "2.3.0",
+  "version" : "2.4.0-ballot",
   "name" : "TDDUIAssessmentMethod",
   "title" : "TDDUI Assessment Method",
   "status" : "active",
-  "date" : "2026-06-15T09:02:12+00:00",
+  "date" : "2026-06-15T09:19:04+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

@@ -1,4 +1,4 @@
-# TDDUI Observation Cause Mortalite - Médicosocial - Transfert de données DUI v2.3.0
+# TDDUI Observation Cause Mortalite - Médicosocial - Transfert de données DUI v2.4.0-ballot
 
 ## : TDDUI Observation Cause Mortalite 
 
@@ -83,11 +83,11 @@ Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slic
   "resourceType" : "StructureDefinition",
   "id" : "tddui-observation-cause-mortalite",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-mortalite",
-  "version" : "2.3.0",
+  "version" : "2.4.0-ballot",
   "name" : "TDDUIObservationCauseMortalite",
   "title" : "TDDUI Observation Cause Mortalite",
   "status" : "active",
-  "date" : "2026-06-15T09:02:12+00:00",
+  "date" : "2026-06-15T09:19:04+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

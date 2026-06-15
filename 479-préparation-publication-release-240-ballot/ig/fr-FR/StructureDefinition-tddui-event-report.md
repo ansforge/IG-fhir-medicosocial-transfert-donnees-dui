@@ -1,4 +1,4 @@
-# TDDUI Event Report - Médicosocial - Transfert de données DUI v2.3.0
+# TDDUI Event Report - Médicosocial - Transfert de données DUI v2.4.0-ballot
 
 ## : TDDUI Event Report 
 
@@ -51,11 +51,11 @@ Extension simple avec le type string : Zone de texte liée à l’événement po
   "resourceType" : "StructureDefinition",
   "id" : "tddui-event-report",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-report",
-  "version" : "2.3.0",
+  "version" : "2.4.0-ballot",
   "name" : "TDDUIEventReport",
   "title" : "TDDUI Event Report",
   "status" : "active",
-  "date" : "2026-06-15T09:02:12+00:00",
+  "date" : "2026-06-15T09:19:04+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

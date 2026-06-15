@@ -1,4 +1,4 @@
-# TDDUI Birth Order - Médicosocial - Transfert de données DUI v2.3.0
+# TDDUI Birth Order - Médicosocial - Transfert de données DUI v2.4.0-ballot
 
 ## : TDDUI Birth Order 
 
@@ -51,11 +51,11 @@ Extension simple avec le type positiveInt : Ordre d’enregistrement de la naiss
   "resourceType" : "StructureDefinition",
   "id" : "tddui-birth-order",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order",
-  "version" : "2.3.0",
+  "version" : "2.4.0-ballot",
   "name" : "TDDUIBirthOrder",
   "title" : "TDDUI Birth Order",
   "status" : "active",
-  "date" : "2026-06-15T09:02:12+00:00",
+  "date" : "2026-06-15T09:19:04+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

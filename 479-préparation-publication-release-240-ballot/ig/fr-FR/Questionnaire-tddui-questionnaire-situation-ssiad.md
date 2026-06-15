@@ -1,4 +1,4 @@
-# Évaluation de la situation SSIAD - Médicosocial - Transfert de données DUI v2.3.0
+# Évaluation de la situation SSIAD - Médicosocial - Transfert de données DUI v2.4.0-ballot
 
 ## Questionnaire: Évaluation de la situation SSIAD 
 
@@ -24,10 +24,10 @@ Grille d'évaluation de la situation SSIAD
   "resourceType" : "Questionnaire",
   "id" : "tddui-questionnaire-situation-ssiad",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/Questionnaire/tddui-questionnaire-situation-ssiad",
-  "version" : "2.3.0",
+  "version" : "2.4.0-ballot",
   "title" : "Évaluation de la situation SSIAD",
   "status" : "active",
-  "date" : "2026-06-15T09:02:12+00:00",
+  "date" : "2026-06-15T09:19:04+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

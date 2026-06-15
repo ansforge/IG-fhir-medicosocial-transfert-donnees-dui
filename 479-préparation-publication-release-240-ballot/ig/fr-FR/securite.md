@@ -1,4 +1,4 @@
-# Sécurité - Médicosocial - Transfert de données DUI v2.3.0
+# Sécurité - Médicosocial - Transfert de données DUI v2.4.0-ballot
 
 ## Sécurité
 

@@ -1,4 +1,4 @@
-# TDDUI Profession - Médicosocial - Transfert de données DUI v2.3.0
+# TDDUI Profession - Médicosocial - Transfert de données DUI v2.4.0-ballot
 
 ## : TDDUI Profession 
 
@@ -59,11 +59,11 @@ Extension simple avec le type CodeableConcept : Extension permettant de représe
   "resourceType" : "StructureDefinition",
   "id" : "tddui-profession",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-profession",
-  "version" : "2.3.0",
+  "version" : "2.4.0-ballot",
   "name" : "TDDUIProfession",
   "title" : "TDDUI Profession",
   "status" : "active",
-  "date" : "2026-06-15T09:02:12+00:00",
+  "date" : "2026-06-15T09:19:04+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

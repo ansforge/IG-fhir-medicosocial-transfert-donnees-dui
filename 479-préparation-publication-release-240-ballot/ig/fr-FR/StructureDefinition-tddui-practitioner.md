@@ -1,4 +1,4 @@
-# TDDUI Practitioner - Médicosocial - Transfert de données DUI v2.3.0
+# TDDUI Practitioner - Médicosocial - Transfert de données DUI v2.4.0-ballot
 
 ## : TDDUI Practitioner 
 
@@ -66,11 +66,11 @@ Cette structure fait référence à ces autres structures:
   "resourceType" : "StructureDefinition",
   "id" : "tddui-practitioner",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner",
-  "version" : "2.3.0",
+  "version" : "2.4.0-ballot",
   "name" : "TDDUIPractitioner",
   "title" : "TDDUI Practitioner",
   "status" : "active",
-  "date" : "2026-06-15T09:02:12+00:00",
+  "date" : "2026-06-15T09:19:04+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

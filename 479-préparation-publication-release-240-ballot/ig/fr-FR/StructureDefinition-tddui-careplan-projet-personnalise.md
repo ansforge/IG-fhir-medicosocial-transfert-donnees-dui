@@ -1,4 +1,4 @@
-# TDDUI CarePlan Projet Personalise - Médicosocial - Transfert de données DUI v2.3.0
+# TDDUI CarePlan Projet Personalise - Médicosocial - Transfert de données DUI v2.4.0-ballot
 
 ## : TDDUI CarePlan Projet Personalise 
 
@@ -102,11 +102,11 @@ Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slic
   "resourceType" : "StructureDefinition",
   "id" : "tddui-careplan-projet-personnalise",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise",
-  "version" : "2.3.0",
+  "version" : "2.4.0-ballot",
   "name" : "TDDUICarePlanProjetPersonnalise",
   "title" : "TDDUI CarePlan Projet Personalise",
   "status" : "active",
-  "date" : "2026-06-15T09:02:12+00:00",
+  "date" : "2026-06-15T09:19:04+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

@@ -1,4 +1,4 @@
-# TDDUI Ressources Used - Médicosocial - Transfert de données DUI v2.3.0
+# TDDUI Ressources Used - Médicosocial - Transfert de données DUI v2.4.0-ballot
 
 ## : TDDUI Ressources Used 
 
@@ -59,11 +59,11 @@ Extension complexe: Ressources utilisées lors de l’évènement (ex : chambre,
   "resourceType" : "StructureDefinition",
   "id" : "tddui-ressources-used",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used",
-  "version" : "2.3.0",
+  "version" : "2.4.0-ballot",
   "name" : "TDDUIRessourcesUsed",
   "title" : "TDDUI Ressources Used",
   "status" : "active",
-  "date" : "2026-06-15T09:02:12+00:00",
+  "date" : "2026-06-15T09:19:04+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

@@ -1,4 +1,4 @@
-# TDDUI Event Cancel Reason - Médicosocial - Transfert de données DUI v2.3.0
+# TDDUI Event Cancel Reason - Médicosocial - Transfert de données DUI v2.4.0-ballot
 
 ## : TDDUI Event Cancel Reason 
 
@@ -58,11 +58,11 @@ Extension simple avec le type CodeableConcept : Motif associé au statut de non-
   "resourceType" : "StructureDefinition",
   "id" : "tddui-event-cancel-reason",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-cancel-reason",
-  "version" : "2.3.0",
+  "version" : "2.4.0-ballot",
   "name" : "TDDUIEventCancelReason",
   "title" : "TDDUI Event Cancel Reason",
   "status" : "active",
-  "date" : "2026-06-15T09:02:12+00:00",
+  "date" : "2026-06-15T09:19:04+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

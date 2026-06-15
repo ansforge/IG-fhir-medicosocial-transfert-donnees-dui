@@ -1,4 +1,4 @@
-# TDDUI Consent Accord - Médicosocial - Transfert de données DUI v2.3.0
+# TDDUI Consent Accord - Médicosocial - Transfert de données DUI v2.4.0-ballot
 
 ## : TDDUI Consent Accord 
 
@@ -86,11 +86,11 @@ Cette structure fait référence à ces extensions:
   "resourceType" : "StructureDefinition",
   "id" : "tddui-consent-accord",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord",
-  "version" : "2.3.0",
+  "version" : "2.4.0-ballot",
   "name" : "TDDUIConsentAccord",
   "title" : "TDDUI Consent Accord",
   "status" : "active",
-  "date" : "2026-06-15T09:02:12+00:00",
+  "date" : "2026-06-15T09:19:04+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

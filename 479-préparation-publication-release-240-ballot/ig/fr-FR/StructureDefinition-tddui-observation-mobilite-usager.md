@@ -1,4 +1,4 @@
-# TDDUI Observation Mobilite Usager - Médicosocial - Transfert de données DUI v2.3.0
+# TDDUI Observation Mobilite Usager - Médicosocial - Transfert de données DUI v2.4.0-ballot
 
 ## : TDDUI Observation Mobilite Usager 
 
@@ -71,11 +71,11 @@ Cette structure fait référence à ces autres structures:
   "resourceType" : "StructureDefinition",
   "id" : "tddui-observation-mobilite-usager",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite-usager",
-  "version" : "2.3.0",
+  "version" : "2.4.0-ballot",
   "name" : "TDDUIObservationMobiliteUsager",
   "title" : "TDDUI Observation Mobilite Usager",
   "status" : "active",
-  "date" : "2026-06-15T09:02:12+00:00",
+  "date" : "2026-06-15T09:19:04+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

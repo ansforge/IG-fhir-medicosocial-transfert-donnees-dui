@@ -1,4 +1,4 @@
-# TDDUI Meal - Médicosocial - Transfert de données DUI v2.3.0
+# TDDUI Meal - Médicosocial - Transfert de données DUI v2.4.0-ballot
 
 ## : TDDUI Meal 
 
@@ -50,11 +50,11 @@ Extension simple avec le type boolean : Repas du professionnel prévu dans le ca
   "resourceType" : "StructureDefinition",
   "id" : "tddui-meal",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-meal",
-  "version" : "2.3.0",
+  "version" : "2.4.0-ballot",
   "name" : "TDDUIMeal",
   "title" : "TDDUI Meal",
   "status" : "active",
-  "date" : "2026-06-15T09:02:12+00:00",
+  "date" : "2026-06-15T09:19:04+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

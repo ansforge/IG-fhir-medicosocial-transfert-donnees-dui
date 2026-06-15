@@ -1,4 +1,4 @@
-# Évaluation SERAFIN - Médicosocial - Transfert de données DUI v2.3.0
+# Évaluation SERAFIN - Médicosocial - Transfert de données DUI v2.4.0-ballot
 
 ## Questionnaire: Évaluation SERAFIN 
 
@@ -25,10 +25,10 @@ Grille d'évaluation SERAFIN
   "resourceType" : "Questionnaire",
   "id" : "tddui-questionnaire-serafin",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/Questionnaire/tddui-questionnaire-serafin",
-  "version" : "2.3.0",
+  "version" : "2.4.0-ballot",
   "title" : "Évaluation SERAFIN",
   "status" : "active",
-  "date" : "2026-06-15T09:02:12+00:00",
+  "date" : "2026-06-15T09:19:04+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

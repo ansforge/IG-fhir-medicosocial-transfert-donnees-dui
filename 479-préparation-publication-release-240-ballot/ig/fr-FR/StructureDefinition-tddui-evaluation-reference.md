@@ -1,4 +1,4 @@
-# TDDUI Evaluation Ref - Médicosocial - Transfert de données DUI v2.3.0
+# TDDUI Evaluation Ref - Médicosocial - Transfert de données DUI v2.4.0-ballot
 
 ## : TDDUI Evaluation Ref 
 
@@ -50,11 +50,11 @@ Extension simple avec le type Reference : Liens vers l'évaluation, utilisables 
   "resourceType" : "StructureDefinition",
   "id" : "tddui-evaluation-reference",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-evaluation-reference",
-  "version" : "2.3.0",
+  "version" : "2.4.0-ballot",
   "name" : "TDDUIEvaluationRef",
   "title" : "TDDUI Evaluation Ref",
   "status" : "active",
-  "date" : "2026-06-15T09:02:12+00:00",
+  "date" : "2026-06-15T09:19:04+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

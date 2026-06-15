@@ -1,4 +1,4 @@
-# TDDUI PP PA Goal Attente Usager Example - Médicosocial - Transfert de données DUI v2.3.0
+# TDDUI PP PA Goal Attente Usager Example - Médicosocial - Transfert de données DUI v2.4.0-ballot
 
 ##  Goal: TDDUI PP PA Goal Attente Usager Example
 
