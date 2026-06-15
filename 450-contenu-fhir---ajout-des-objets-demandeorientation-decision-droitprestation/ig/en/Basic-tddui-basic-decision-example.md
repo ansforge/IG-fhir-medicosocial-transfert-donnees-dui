@@ -17,7 +17,7 @@ Profile: [TDDUI Basic Decision](StructureDefinition-tddui-basic-decision.md)
 > **url**dateEcheance
 **value**: 2020-12-31
 > **url**existencePAG
-**value**: false**qualificationOrientation**: Cible**structureAccueil**: [Organization Les Chênes Verts](Organization-tddui-organization-example.md)**formation**: Formation pour la prestation**temporaliteAccueil**: Temporaire**precisionOrientation**: SESSAD polyvalent
+**value**: false**qualificationOrientation**: Cible**formation**: Formation pour la prestation**temporaliteAccueil**: Temporaire**precisionOrientation**: SESSAD polyvalent**structureAccueil**: [Organization Les Chênes Verts](Organization-tddui-organization-example.md)
 > **url**detailPrestation
 
 > **url**creton
@@ -117,12 +117,6 @@ Profile: [TDDUI Basic Decision](StructureDefinition-tddui-basic-decision.md)
             }
           },
           {
-            "url" : "structureAccueil",
-            "valueReference" : {
-              "reference" : "Organization/tddui-organization-example"
-            }
-          },
-          {
             "url" : "formation",
             "valueString" : "Formation pour la prestation"
           },
@@ -142,6 +136,12 @@ Profile: [TDDUI Basic Decision](StructureDefinition-tddui-basic-decision.md)
                 "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r426-orientation",
                 "code" : "1"
               }]
+            }
+          },
+          {
+            "url" : "structureAccueil",
+            "valueReference" : {
+              "reference" : "Organization/tddui-organization-example"
             }
           }],
           "url" : "detailPrestation"

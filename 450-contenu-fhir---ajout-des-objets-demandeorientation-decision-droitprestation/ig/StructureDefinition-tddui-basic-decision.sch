@@ -82,8 +82,10 @@
       <sch:assert test="count(f:extension[@url = 'dateEcheance']) &lt;= 1">extension with URL = 'dateEcheance': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'existencePAG']) &gt;= 1">extension with URL = 'existencePAG': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'existencePAG']) &lt;= 1">extension with URL = 'existencePAG': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'motifFinPAG']) &lt;= 1">extension with URL = 'motifFinPAG': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'creton']) &lt;= 1">extension with URL = 'creton': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'taux']) &lt;= 1">extension with URL = 'taux': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'typeCompensation']) &lt;= 1">extension with URL = 'typeCompensation': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'commentaire']) &lt;= 1">extension with URL = 'commentaire': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'detailPrestation']) &gt;= 1">extension with URL = 'detailPrestation': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'detailPrestation']) &lt;= 1">extension with URL = 'detailPrestation': maximum cardinality of 'extension' is 1</sch:assert>
@@ -132,6 +134,14 @@
       <sch:assert test="count(f:url) &lt;= 1">url: maximum cardinality of 'url' is 1</sch:assert>
       <sch:assert test="count(f:value[x]) &lt;= 1">value[x]: maximum cardinality of 'value[x]' is 1</sch:assert>
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
+      <sch:assert test="count(f:url) &gt;= 1">url: minimum cardinality of 'url' is 1</sch:assert>
+      <sch:assert test="count(f:url) &lt;= 1">url: maximum cardinality of 'url' is 1</sch:assert>
+      <sch:assert test="count(f:value[x]) &lt;= 1">value[x]: maximum cardinality of 'value[x]' is 1</sch:assert>
+      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
+      <sch:assert test="count(f:url) &gt;= 1">url: minimum cardinality of 'url' is 1</sch:assert>
+      <sch:assert test="count(f:url) &lt;= 1">url: maximum cardinality of 'url' is 1</sch:assert>
+      <sch:assert test="count(f:value[x]) &lt;= 1">value[x]: maximum cardinality of 'value[x]' is 1</sch:assert>
+      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'temporaliteAccueil']) &lt;= 1">extension with URL = 'temporaliteAccueil': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'precisionOrientation']) &lt;= 1">extension with URL = 'precisionOrientation': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'accueilSequentiel']) &lt;= 1">extension with URL = 'accueilSequentiel': maximum cardinality of 'extension' is 1</sch:assert>
@@ -140,7 +150,6 @@
       <sch:assert test="count(f:extension[@url = 'frequence']) &lt;= 1">extension with URL = 'frequence': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'qualificationOrientation']) &gt;= 1">extension with URL = 'qualificationOrientation': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'qualificationOrientation']) &lt;= 1">extension with URL = 'qualificationOrientation': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'structureAccueil']) &gt;= 1">extension with URL = 'structureAccueil': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:url) &gt;= 1">url: minimum cardinality of 'url' is 1</sch:assert>
       <sch:assert test="count(f:url) &lt;= 1">url: maximum cardinality of 'url' is 1</sch:assert>
       <sch:assert test="count(f:value[x]) &lt;= 0">value[x]: maximum cardinality of 'value[x]' is 0</sch:assert>

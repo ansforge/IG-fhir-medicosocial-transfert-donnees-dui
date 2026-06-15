@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-decision.cs
   "name" : "TDDUIDecision",
   "title" : "TDDUI Decision",
   "status" : "active",
-  "date" : "2026-06-12T15:13:13+00:00",
+  "date" : "2026-06-15T13:25:13+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -425,6 +425,35 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-decision.cs
       }]
     },
     {
+      "id" : "Extension.extension:decision.extension:droitPrestation.extension:motifFinPAG",
+      "path" : "Extension.extension.extension.extension",
+      "sliceName" : "motifFinPAG",
+      "short" : "Motif de fin du PAG",
+      "min" : 0,
+      "max" : "1"
+    },
+    {
+      "id" : "Extension.extension:decision.extension:droitPrestation.extension:motifFinPAG.extension",
+      "path" : "Extension.extension.extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.extension:decision.extension:droitPrestation.extension:motifFinPAG.url",
+      "path" : "Extension.extension.extension.extension.url",
+      "fixedUri" : "motifFinPAG"
+    },
+    {
+      "id" : "Extension.extension:decision.extension:droitPrestation.extension:motifFinPAG.value[x]",
+      "path" : "Extension.extension.extension.extension.value[x]",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j403-motif-fin-pag-ms"
+      }
+    },
+    {
       "id" : "Extension.extension:decision.extension:droitPrestation.extension:creton",
       "path" : "Extension.extension.extension.extension",
       "sliceName" : "creton",
@@ -475,6 +504,35 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-decision.cs
       }]
     },
     {
+      "id" : "Extension.extension:decision.extension:droitPrestation.extension:typeCompensation",
+      "path" : "Extension.extension.extension.extension",
+      "sliceName" : "typeCompensation",
+      "short" : "Type de compensation",
+      "min" : 0,
+      "max" : "1"
+    },
+    {
+      "id" : "Extension.extension:decision.extension:droitPrestation.extension:typeCompensation.extension",
+      "path" : "Extension.extension.extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.extension:decision.extension:droitPrestation.extension:typeCompensation.url",
+      "path" : "Extension.extension.extension.extension.url",
+      "fixedUri" : "typeCompensation"
+    },
+    {
+      "id" : "Extension.extension:decision.extension:droitPrestation.extension:typeCompensation.value[x]",
+      "path" : "Extension.extension.extension.extension.value[x]",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j394-type-demande-compensation-ms"
+      }
+    },
+    {
       "id" : "Extension.extension:decision.extension:droitPrestation.extension:commentaire",
       "path" : "Extension.extension.extension.extension",
       "sliceName" : "commentaire",
@@ -509,7 +567,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-decision.cs
     {
       "id" : "Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension",
       "path" : "Extension.extension.extension.extension.extension",
-      "min" : 2
+      "min" : 1
     },
     {
       "id" : "Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:temporaliteAccueil",
@@ -648,7 +706,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-decision.cs
       "id" : "Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:frequence",
       "path" : "Extension.extension.extension.extension.extension",
       "sliceName" : "frequence",
-      "short" : "Fréquence",
+      "short" : "Fréquence de versement",
       "min" : 0,
       "max" : "1"
     },
@@ -703,7 +761,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-decision.cs
       "path" : "Extension.extension.extension.extension.extension",
       "sliceName" : "structureAccueil",
       "short" : "Structure d'accueil",
-      "min" : 1,
+      "min" : 0,
       "max" : "*"
     },
     {

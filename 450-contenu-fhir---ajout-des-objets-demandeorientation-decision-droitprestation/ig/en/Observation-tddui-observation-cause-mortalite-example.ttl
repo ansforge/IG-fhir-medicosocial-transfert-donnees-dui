@@ -13,7 +13,7 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-mortalite"^^xsd:anyURI ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-mortalite>
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-mortalite>
      ] )
   ] ; # 
   fhir:language [ fhir:v "en"] ; # 
@@ -25,26 +25,20 @@
   fhir:code [
      fhir:coding ( [
        a loinc:79378-6 ;
-       fhir:system [
-         fhir:v "http://loinc.org"^^xsd:anyURI ;
-         fhir:l <http://loinc.org>
-       ] ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "79378-6" ] ;
        fhir:display [ fhir:v "Cause of death" ]
      ] )
   ] ; # 
   fhir:subject [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-patient-ins-example> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-patient-ins-example> ;
      fhir:reference [ fhir:v "Patient/tddui-patient-ins-example" ]
   ] ; # 
   fhir:component ( [
      fhir:code [
        fhir:coding ( [
          a loinc:79378-6 ;
-         fhir:system [
-           fhir:v "http://loinc.org"^^xsd:anyURI ;
-           fhir:l <http://loinc.org>
-         ] ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "79378-6" ] ;
          fhir:display [ fhir:v "Cause of death" ]
        ] )
@@ -52,10 +46,7 @@
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
-         fhir:system [
-           fhir:v "https://smt.esante.gouv.fr/terminologie-cim-10"^^xsd:anyURI ;
-           fhir:l <https://smt.esante.gouv.fr/terminologie-cim-10>
-         ] ;
+         fhir:system [ fhir:v "https://smt.esante.gouv.fr/terminologie-cim-10"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "J81" ] ;
          fhir:display [ fhir:v "Œdème pulmonaire" ]
        ] )

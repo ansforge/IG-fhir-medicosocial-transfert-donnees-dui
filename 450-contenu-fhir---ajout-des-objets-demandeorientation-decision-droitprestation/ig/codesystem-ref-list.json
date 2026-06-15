@@ -21,8 +21,8 @@
     "oids" : ["2.16.840.1.113883.6.1"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J07-XdsTypeCode-CISIS.html" : "JDV_J07_XdsTypeCode_CISIS",
-    "ValueSet-tddui-observation-type.html" : "TDDUI Observation Type"
+    "ValueSet-tddui-observation-type.html" : "TDDUI Observation Type",
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J07-XdsTypeCode-CISIS.html" : "JDV_J07_XdsTypeCode_CISIS"
   },
   {
     "url" : "http://snomed.info/sct",
@@ -38,7 +38,7 @@
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
-    "version" : "4.0.1",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "DataAbsentReason",
     "title" : "DataAbsentReason",
@@ -50,23 +50,23 @@
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/discharge-disposition",
-    "version" : "4.0.1",
-    "status" : "draft",
+    "version" : "1.0.1",
+    "status" : "active",
     "name" : "DischargeDisposition",
     "title" : "Discharge disposition",
     "description" : "This value set defines a set of codes that can be used to where the patient left the hospital.",
-    "oids" : ["2.16.840.1.113883.4.642.4.1093"],
+    "oids" : ["2.16.840.1.113883.4.642.1.1093"],
     "uses" : {
     },
     "https://hl7.fr/ig/fhir/core/2.1.0/ValueSet-fr-core-vs-encounter-discharge-disposition.html" : "FR Core ValueSet Encounter discharge disposition"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
-    "version" : "2.9",
+    "version" : "5.0.0",
     "status" : "active",
-    "name" : "v2.0203",
-    "title" : "v2 Identifier Type",
-    "description" : "FHIR Value set/code system definition for HL7 v2 table 0203 ( Identifier Type)",
+    "name" : "IdentifierType",
+    "title" : "identifierType",
+    "description" : "HL7-defined code system of concepts specifying type of identifier. Used in HL7 Version 2.x messaging data types CX, PLN, PPN, XCN and XON.",
     "oids" : ["2.16.840.1.113883.18.108"],
     "uses" : {
     },
@@ -125,8 +125,8 @@
     "description" : "HL7 v2 - Identifier type",
     "uses" : {
     },
-    "https://hl7.fr/ig/fhir/core/2.1.0/ValueSet-fr-core-vs-organization-identifier-type.html" : "FR Core ValueSet Organization identifier type",
-    "ValueSet-tddui-patient-identifier.html" : "TDDUI Patient Identifier"
+    "ValueSet-tddui-patient-identifier.html" : "TDDUI Patient Identifier",
+    "https://hl7.fr/ig/fhir/core/2.1.0/ValueSet-fr-core-vs-organization-identifier-type.html" : "FR Core ValueSet Organization identifier type"
   },
   {
     "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-basic-decision-identifier",
@@ -293,9 +293,9 @@
     "oids" : ["1.2.250.1.213.1.1.4.6"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J02-XdsHealthcareFacilityTypeCode-CISIS.html" : "JDV_J02_XdsHealthcareFacilityTypeCode_CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J04-XdsPracticeSettingCode-CISIS.html" : "JDV_J04_XdsPracticeSettingCode_CISIS",
     "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J01-XdsAuthorSpecialty-CISIS.html" : "JDV_J01_XdsAuthorSpecialty_CISIS",
-    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J04-XdsPracticeSettingCode-CISIS.html" : "JDV_J04_XdsPracticeSettingCode_CISIS"
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J02-XdsHealthcareFacilityTypeCode-CISIS.html" : "JDV_J02_XdsHealthcareFacilityTypeCode_CISIS"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_A01-CadreExercice/FHIR/TRE-A01-CadreExercice",
@@ -379,8 +379,8 @@
     "oids" : ["URN"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J10-XdsFormatCode-CISIS.html" : "JDV_J10_XdsFormatCode_CISIS",
-    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J06-XdsClassCode-CISIS.html" : "JDV_J06_XdsClassCode_CISIS"
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J06-XdsClassCode-CISIS.html" : "JDV_J06_XdsClassCode_CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J10-XdsFormatCode-CISIS.html" : "JDV_J10_XdsFormatCode_CISIS"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_A11-IheFormatCode/FHIR/TRE-A11-IheFormatCode",
@@ -658,13 +658,13 @@
     "oids" : ["1.2.250.1.213.1.1.4.322"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-detail-ressource-immobiliere-utilisee-cisis.html" : "JDV Detail Ressource Immobiliere Utilisee CISIS",
-    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-ressource-utilisee-cisis.html" : "JDV Ressource Utilisee CISIS",
-    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-motif-non-realisation-evenement-cisis.html" : "JDV Motif Non Realisation Evenement CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-detail-materiel-specialise-cisis.html" : "JDV Detail Materiel Specialise CISIS",
     "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-type-evenement-ssiad-cisis.html" : "JDV Type Evenement Ssiad CISIS",
     "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-type-motorisation-cisis.html" : "JDV Type Motorisation CISIS",
     "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-mode-de-transport-cisis.html" : "JDV Mode De Transport CISIS",
-    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-detail-materiel-specialise-cisis.html" : "JDV Detail Materiel Specialise CISIS"
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-detail-ressource-immobiliere-utilisee-cisis.html" : "JDV Detail Ressource Immobiliere Utilisee CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-motif-non-realisation-evenement-cisis.html" : "JDV Motif Non Realisation Evenement CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-ressource-utilisee-cisis.html" : "JDV Ressource Utilisee CISIS"
   },
   {
     "url" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r389-statut-bilan-projet-personnalise",
@@ -765,6 +765,18 @@
     "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-j402-type-droit-prestation-ms.html" : "Jdv J402 Type Droit Prestation Ms"
   },
   {
+    "url" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r421-motif-fin-pag",
+    "version" : "20260505120000",
+    "status" : "draft",
+    "name" : "TreR421MotifFinPag",
+    "title" : "Tre R421 Motif Fin Pag",
+    "description" : "Lorsque le plan d'accompagnement global (PAG) arrive à échéance ou si le coordonnateur de parcours l'estime nécessaire, un bilan est élaboré et la phase d'actualisation est lancée afin de déterminer s'il faut prolonger ce PAG, le modifier ou y mettre fin. La MDPH, les partenaires et l'usager peuvent définir ensemble que le PAG n'est plus nécessaire et donc y mettre fin. Le consentement de la personne ou de son représentant légal est recueilli et l'information sur la fin du PAG transmise à l'ensemble des parties-prenantes.",
+    "oids" : ["1.2.250.1.213.3.3.272"],
+    "uses" : {
+    },
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-j403-motif-fin-pag-ms.html" : "Jdv J403 Motif Fin Pag Ms"
+  },
+  {
     "url" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r422-qualification-orientation",
     "version" : "20260505120000",
     "status" : "draft",
@@ -797,8 +809,8 @@
     "description" : "Les nomenclatures des besoins et des prestations ont été élaborées par un groupe de travail issu du projet SERAFIN-PH porté par la Caisse nationale de Solidarité pour l’Autonomie (CNSA) et la Direction Générale de la Cohésion Sociale (DGCS).\nElles permettent de décrire, sur la base d’un langage commun, les besoins identifiés des personnes, et les prestations réalisées en réponse à ces besoins. Les usages locaux de ces nomenclatures montrent leur pertinence pour nouer autour des projets personnalisés d’accompagnement et de leurs déclinaisons opérationnelles un dialogue soutenu et permanent entre tous les acteurs concernés, de la personne accompagnée aux structures médico-sociales, acteurs de droit commun et jusqu’aux institutions de régulation (ARS, services déconcentrés et collectivités locales).",
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J285-Besoins-SERAFIN.html" : "JDV_J285_Besoins_SERAFIN",
-    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J282-TransportsLiesAuProjetIndividuel-SERAFIN.html" : "JDV_J282_TransportsLiesAuProjetIndividuel_SERAFIN"
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J282-TransportsLiesAuProjetIndividuel-SERAFIN.html" : "JDV_J282_TransportsLiesAuProjetIndividuel_SERAFIN",
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J285-Besoins-SERAFIN.html" : "JDV_J285_Besoins_SERAFIN"
   },
   {
     "url" : "https://smt.esante.gouv.fr/terminologie-cim-10",
@@ -822,6 +834,6 @@
     "oids" : ["1.0.3166.1"],
     "uses" : {
     },
-    "http://terminology.hl7.org/7.1.0/ValueSet-v3-Country.html" : "Country"
+    "http://terminology.hl7.org/7.2.0/ValueSet-v3-Country.html" : "Country"
   }]
 }

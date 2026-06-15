@@ -202,7 +202,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "tddui-basic-decision","Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:categorieDroitPrestation","Basic.extension.extension.extension.extension","categorieDroitPrestation","","",1,1,"","","","Extension {[]} {[]}
-","Catégorie du droit de prestation","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "tddui-basic-decision","Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:categorieDroitPrestation.id","Basic.extension.extension.extension.extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
@@ -216,7 +216,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j401-categorie-droit-prestation-ms","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-basic-decision","Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:typeDroitPrestation","Basic.extension.extension.extension.extension","typeDroitPrestation","","",1,1,"","","","Extension {[]} {[]}
-","Type du droit de prestation","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "tddui-basic-decision","Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:typeDroitPrestation.id","Basic.extension.extension.extension.extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
@@ -230,7 +230,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j402-type-droit-prestation-ms","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-basic-decision","Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:natureDroitPrestation","Basic.extension.extension.extension.extension","natureDroitPrestation","","",1,1,"","","","Extension {[]} {[]}
-","Nature du droit de prestation","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "tddui-basic-decision","Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:natureDroitPrestation.id","Basic.extension.extension.extension.extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
@@ -285,6 +285,20 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "tddui-basic-decision","Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:existencePAG.value[x]","Basic.extension.extension.extension.extension.value[x]","","","",0,1,"","","","boolean {[]} {[]}
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
+"tddui-basic-decision","Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:motifFinPAG","Basic.extension.extension.extension.extension","motifFinPAG","","",0,1,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"tddui-basic-decision","Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:motifFinPAG.id","Basic.extension.extension.extension.extension.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"tddui-basic-decision","Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:motifFinPAG.extension","Basic.extension.extension.extension.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"tddui-basic-decision","Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:motifFinPAG.url","Basic.extension.extension.extension.extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""motifFinPAG""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"tddui-basic-decision","Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:motifFinPAG.value[x]","Basic.extension.extension.extension.extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j403-motif-fin-pag-ms","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
 "tddui-basic-decision","Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:creton","Basic.extension.extension.extension.extension","creton","","",0,1,"","","","Extension {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -313,6 +327,20 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "tddui-basic-decision","Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:taux.value[x]","Basic.extension.extension.extension.extension.value[x]","","","",0,1,"","","","Quantity {[]} {[]}
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
+"tddui-basic-decision","Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:typeCompensation","Basic.extension.extension.extension.extension","typeCompensation","","",0,1,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"tddui-basic-decision","Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:typeCompensation.id","Basic.extension.extension.extension.extension.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"tddui-basic-decision","Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:typeCompensation.extension","Basic.extension.extension.extension.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"tddui-basic-decision","Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:typeCompensation.url","Basic.extension.extension.extension.extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""typeCompensation""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"tddui-basic-decision","Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:typeCompensation.value[x]","Basic.extension.extension.extension.extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j394-type-demande-compensation-ms","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
 "tddui-basic-decision","Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:commentaire","Basic.extension.extension.extension.extension","commentaire","","",0,1,"","","","Extension {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -332,7 +360,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "tddui-basic-decision","Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:detailPrestation.id","Basic.extension.extension.extension.extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
-"tddui-basic-decision","Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:detailPrestation.extension","Basic.extension.extension.extension.extension.extension","","","",2,*,"","","","Extension {[]} {[]}
+"tddui-basic-decision","Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:detailPrestation.extension","Basic.extension.extension.extension.extension.extension","","","",1,*,"","","","Extension {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -351,7 +379,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J30-TemporaliteAccueil-ROR/FHIR/JDV-J30-TemporaliteAccueil-ROR","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-basic-decision","Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:precisionOrientation","Basic.extension.extension.extension.extension.extension","precisionOrientation","","",0,1,"","","","Extension {[]} {[]}
-","Précision de l'orientation","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "tddui-basic-decision","Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:precisionOrientation.id","Basic.extension.extension.extension.extension.extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
@@ -421,7 +449,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-basic-decision","Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:qualificationOrientation","Basic.extension.extension.extension.extension.extension","qualificationOrientation","","",1,1,"","","","Extension {[]} {[]}
-","Qualification de l'orientation","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "tddui-basic-decision","Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:qualificationOrientation.id","Basic.extension.extension.extension.extension.extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
@@ -434,7 +462,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "tddui-basic-decision","Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:qualificationOrientation.value[x]","Basic.extension.extension.extension.extension.extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j404-qualification-orientation-ms","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"tddui-basic-decision","Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:structureAccueil","Basic.extension.extension.extension.extension.extension","structureAccueil","","",1,*,"","","","Extension {[]} {[]}
+"tddui-basic-decision","Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:structureAccueil","Basic.extension.extension.extension.extension.extension","structureAccueil","","",0,*,"","","","Extension {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "tddui-basic-decision","Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:structureAccueil.id","Basic.extension.extension.extension.extension.extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -590,7 +618,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Organization that issued id (may be just text)","Organization that issued/manages the identifier.","The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization.","","","","","","","","",,,,,"",,,,"Identifier.assigner",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-basic-decision","Basic.identifier:idDecision","Basic.identifier","idDecision","","",1,1,"","","Y","Identifier {[]} {[]}
-","Identifiant principal de la décision","Identifier assigned to the resource for business purposes, outside the context of FHIR.","","","","","","","","","",,,,,"",,,,"Basic.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Identifiants de la ou des décisions révisées ou renouvelées à l'origine du droit ou identifiant de la décision clôturée (concerne une seule décision) en cas de clôture de droit.","Identifier assigned to the resource for business purposes, outside the context of FHIR.","","","","","","","","","",,,,,"",,,,"Basic.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-basic-decision","Basic.identifier:idDecision.id","Basic.identifier.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
@@ -658,7 +686,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Organization that issued id (may be just text)","Organization that issued/manages the identifier.","The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization.","","","","","","","","",,,,,"",,,,"Identifier.assigner",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-basic-decision","Basic.identifier:numeroEnregistrement","Basic.identifier","numeroEnregistrement","","",0,1,"","","Y","Identifier {[]} {[]}
-","Numéro enregistrement de la décision","Identifier assigned to the resource for business purposes, outside the context of FHIR.","","","","","","","","","",,,,,"",,,,"Basic.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Numéro d’enregistrement au conseil général si différent du numéro d’identification MDPH.","Identifier assigned to the resource for business purposes, outside the context of FHIR.","","","","","","","","","",,,,,"",,,,"Basic.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-basic-decision","Basic.identifier:numeroEnregistrement.id","Basic.identifier.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
@@ -692,7 +720,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Organization that issued id (may be just text)","Organization that issued/manages the identifier.","The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization.","","","","","","","","",,,,,"",,,,"Identifier.assigner",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-basic-decision","Basic.identifier:idNat_Decision","Basic.identifier","idNat_Decision","","",0,1,"","","Y","Identifier {[]} {[]}
-","Identifiant national de la décision","Identifier assigned to the resource for business purposes, outside the context of FHIR.","","","","","","","","","",,,,,"",,,,"Basic.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"," Identifiant technique unique de la décision attribué par ViaTrajectoire","Identifier assigned to the resource for business purposes, outside the context of FHIR.","","","","","","","","","",,,,,"",,,,"Basic.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-basic-decision","Basic.identifier:idNat_Decision.id","Basic.identifier.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
@@ -4878,6 +4906,20 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "tddui-decision","Extension.extension:decision.extension:droitPrestation.extension:existencePAG.value[x]","Extension.extension.extension.extension.value[x]","","","",0,1,"","","","boolean {[]} {[]}
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
+"tddui-decision","Extension.extension:decision.extension:droitPrestation.extension:motifFinPAG","Extension.extension.extension.extension","motifFinPAG","","",0,1,"","","","Extension {[]} {[]}
+","Motif de fin du PAG","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"tddui-decision","Extension.extension:decision.extension:droitPrestation.extension:motifFinPAG.id","Extension.extension.extension.extension.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"tddui-decision","Extension.extension:decision.extension:droitPrestation.extension:motifFinPAG.extension","Extension.extension.extension.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"tddui-decision","Extension.extension:decision.extension:droitPrestation.extension:motifFinPAG.url","Extension.extension.extension.extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""motifFinPAG""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"tddui-decision","Extension.extension:decision.extension:droitPrestation.extension:motifFinPAG.value[x]","Extension.extension.extension.extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j403-motif-fin-pag-ms","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
 "tddui-decision","Extension.extension:decision.extension:droitPrestation.extension:creton","Extension.extension.extension.extension","creton","","",0,1,"","","","Extension {[]} {[]}
 ","Indicateur creton","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -4906,6 +4948,20 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "tddui-decision","Extension.extension:decision.extension:droitPrestation.extension:taux.value[x]","Extension.extension.extension.extension.value[x]","","","",0,1,"","","","Quantity {[]} {[]}
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
+"tddui-decision","Extension.extension:decision.extension:droitPrestation.extension:typeCompensation","Extension.extension.extension.extension","typeCompensation","","",0,1,"","","","Extension {[]} {[]}
+","Type de compensation","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"tddui-decision","Extension.extension:decision.extension:droitPrestation.extension:typeCompensation.id","Extension.extension.extension.extension.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"tddui-decision","Extension.extension:decision.extension:droitPrestation.extension:typeCompensation.extension","Extension.extension.extension.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"tddui-decision","Extension.extension:decision.extension:droitPrestation.extension:typeCompensation.url","Extension.extension.extension.extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""typeCompensation""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"tddui-decision","Extension.extension:decision.extension:droitPrestation.extension:typeCompensation.value[x]","Extension.extension.extension.extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j394-type-demande-compensation-ms","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
 "tddui-decision","Extension.extension:decision.extension:droitPrestation.extension:commentaire","Extension.extension.extension.extension","commentaire","","",0,1,"","","","Extension {[]} {[]}
 ","Commentaire du droit de prestation","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -4925,7 +4981,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "tddui-decision","Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.id","Extension.extension.extension.extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
-"tddui-decision","Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension","Extension.extension.extension.extension.extension","","","",2,*,"","","","Extension {[]} {[]}
+"tddui-decision","Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension","Extension.extension.extension.extension.extension","","","",1,*,"","","","Extension {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -5000,7 +5056,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-decision","Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:frequence","Extension.extension.extension.extension.extension","frequence","","",0,1,"","","","Extension {[]} {[]}
-","Fréquence","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Fréquence de versement","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "tddui-decision","Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:frequence.id","Extension.extension.extension.extension.extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
@@ -5027,7 +5083,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "tddui-decision","Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:qualificationOrientation.value[x]","Extension.extension.extension.extension.extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j404-qualification-orientation-ms","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"tddui-decision","Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:structureAccueil","Extension.extension.extension.extension.extension","structureAccueil","","",1,*,"","","","Extension {[]} {[]}
+"tddui-decision","Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:structureAccueil","Extension.extension.extension.extension.extension","structureAccueil","","",0,*,"","","","Extension {[]} {[]}
 ","Structure d'accueil","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "tddui-decision","Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:structureAccueil.id","Extension.extension.extension.extension.extension.id","","","",0,1,"","","","string {[]} {[]}

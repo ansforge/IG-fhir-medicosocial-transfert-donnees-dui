@@ -16,7 +16,7 @@ Profile: [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md)
 
 **status**: In Progress
 
-**class**: [v3 Code System ActCode: HH](http://hl7.org/fhir/R4/v3/ActCode/cs.html#v3-ActCode-HH) (home health)
+**class**: [ActCode: HH](http://terminology.hl7.org/7.2.0/CodeSystem-v3-ActCode.html#v3-ActCode-HH) (home health)
 
 **subject**: [DUPONT Male, DoB: 1947-04-03 ( Patient internal identifier: 3480787529/194704032)](Patient-tddui-patient-ins-example.md)
 

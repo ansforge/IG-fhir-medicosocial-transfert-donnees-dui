@@ -34,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-basic-decis
   "name" : "TDDUIBasicDecision",
   "title" : "TDDUI Basic Decision",
   "status" : "active",
-  "date" : "2026-06-12T15:13:13+00:00",
+  "date" : "2026-06-15T13:25:13+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -255,6 +255,33 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-basic-decis
       }]
     },
     {
+      "id" : "Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:categorieDroitPrestation",
+      "path" : "Basic.extension.extension.extension.extension",
+      "sliceName" : "categorieDroitPrestation",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIBasicDecision",
+        "map" : "DroitPrestation.categorieDroitPrestation"
+      }]
+    },
+    {
+      "id" : "Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:typeDroitPrestation",
+      "path" : "Basic.extension.extension.extension.extension",
+      "sliceName" : "typeDroitPrestation",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIBasicDecision",
+        "map" : "DroitPrestation.typeDroitPrestation"
+      }]
+    },
+    {
+      "id" : "Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:natureDroitPrestation",
+      "path" : "Basic.extension.extension.extension.extension",
+      "sliceName" : "natureDroitPrestation",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIBasicDecision",
+        "map" : "DroitPrestation.natureDroitPrestation"
+      }]
+    },
+    {
       "id" : "Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:dateOuverture",
       "path" : "Basic.extension.extension.extension.extension",
       "sliceName" : "dateOuverture",
@@ -282,6 +309,15 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-basic-decis
       }]
     },
     {
+      "id" : "Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:motifFinPAG",
+      "path" : "Basic.extension.extension.extension.extension",
+      "sliceName" : "motifFinPAG",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIBasicDecision",
+        "map" : "DroitPrestation.motifFinPAG"
+      }]
+    },
+    {
       "id" : "Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:creton",
       "path" : "Basic.extension.extension.extension.extension",
       "sliceName" : "creton",
@@ -297,6 +333,15 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-basic-decis
       "mapping" : [{
         "identity" : "specmetier-to-TDDUIBasicDecision",
         "map" : "DroitPrestation.taux"
+      }]
+    },
+    {
+      "id" : "Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:typeCompensation",
+      "path" : "Basic.extension.extension.extension.extension",
+      "sliceName" : "typeCompensation",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIBasicDecision",
+        "map" : "DroitPrestation.typeCompensation"
       }]
     },
     {
@@ -324,6 +369,15 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-basic-decis
       "mapping" : [{
         "identity" : "specmetier-to-TDDUIBasicDecision",
         "map" : "DetailPrestation.temporaliteAccueil"
+      }]
+    },
+    {
+      "id" : "Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:precisionOrientation",
+      "path" : "Basic.extension.extension.extension.extension.extension",
+      "sliceName" : "precisionOrientation",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIBasicDecision",
+        "map" : "DetailPrestation.precisionOrientation"
       }]
     },
     {
@@ -360,6 +414,15 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-basic-decis
       "mapping" : [{
         "identity" : "specmetier-to-TDDUIBasicDecision",
         "map" : "DetailPrestation.frequence"
+      }]
+    },
+    {
+      "id" : "Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:qualificationOrientation",
+      "path" : "Basic.extension.extension.extension.extension.extension",
+      "sliceName" : "qualificationOrientation",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIBasicDecision",
+        "map" : "DetailPrestation.qualificationOrientation"
       }]
     },
     {
@@ -446,12 +509,12 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-basic-decis
       "id" : "Basic.identifier:idDecision",
       "path" : "Basic.identifier",
       "sliceName" : "idDecision",
-      "short" : "Identifiant principal de la décision",
+      "short" : "Identifiants de la ou des décisions révisées ou renouvelées à l'origine du droit ou identifiant de la décision clôturée (concerne une seule décision) en cas de clôture de droit.",
       "min" : 1,
       "max" : "1",
       "mapping" : [{
         "identity" : "specmetier-to-TDDUIBasicDecision",
-        "map" : "Decision.idDecision/idDecisionMAJ"
+        "map" : "Decision.idDecision"
       }]
     },
     {
@@ -487,7 +550,11 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-basic-decis
       "sliceName" : "idDecisionMAJ",
       "short" : "Identifiant révisé de la décision",
       "min" : 0,
-      "max" : "*"
+      "max" : "*",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIBasicDecision",
+        "map" : "Decision.idDecisionMAJ"
+      }]
     },
     {
       "id" : "Basic.identifier:idDecisionMAJ.type",
@@ -520,7 +587,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-basic-decis
       "id" : "Basic.identifier:numeroEnregistrement",
       "path" : "Basic.identifier",
       "sliceName" : "numeroEnregistrement",
-      "short" : "Numéro enregistrement de la décision",
+      "short" : "Numéro d’enregistrement au conseil général si différent du numéro d’identification MDPH.",
       "min" : 0,
       "max" : "1",
       "mapping" : [{
@@ -559,7 +626,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-basic-decis
       "id" : "Basic.identifier:idNat_Decision",
       "path" : "Basic.identifier",
       "sliceName" : "idNat_Decision",
-      "short" : "Identifiant national de la décision",
+      "short" : " Identifiant technique unique de la décision attribué par ViaTrajectoire",
       "min" : 0,
       "max" : "1",
       "mapping" : [{
