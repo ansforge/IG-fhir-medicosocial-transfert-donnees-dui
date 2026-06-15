@@ -23,6 +23,7 @@ Description: "Profil de la ressource FRCoreSlotProfile permettant de représente
 
 * schedule only Reference(TDDUISchedule)
 
+* status ^short = "Correspondance des statuts métier avec les codes FHIR : PLANIFIE → busy-tentative, VALIDE → busy. Le statut FACTURE est couvert par l'extension TDDUIFacturation."
 * status.extension contains 
     TDDUIStatusAuthor named TDDUIStatusAuthor 0..1 
 * status.extension[TDDUIStatusAuthor] ^short = "Auteur du statut."
@@ -55,7 +56,8 @@ Title:    "Modèle de contenu DUI"
 * identifier[idPA] -> "idPresenceAbsenceUsager"
 * start -> "dateDebutPresenceAbsence"
 * end -> "dateFinPresenceAbsence"
-* status -> "Statut.statut"
+* status -> "Statut.statut (pour les statuts PLANIFIE et VALIDE)"
+* extension[TDDUIFacturation] -> "Statut.statut (pour le statut FACTURE)"
 * status.extension[TDDUIStatusAuthor] -> "Statut.auteur"
 * meta.lastUpdated -> "Statut.dateStatut"
 * extension[TDDUIPlannedAbsence] -> "absencePrevue"

@@ -19,7 +19,8 @@ map "**PresenceAbsence : TDDUISlotPresenceAbsence**" as PresenceAbsence #d9d9d9 
     dateFinPresenceAbsence => end
     typePresenceAbsence => serviceType
     motifAbsence => appointmentType
-    Statut.statut => status
+    Statut.statut (pour les statuts PLANIFIE et VALIDE) => status
+    Statut.statut (pour le statut FACTURE) => <&plus> TDDUIFacturation
     Statut.dateStatut => meta.lastUpdated
     schedule *-> Schedule
 }
