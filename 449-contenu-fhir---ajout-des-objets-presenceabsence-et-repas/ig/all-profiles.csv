@@ -11653,7 +11653,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","The schedule resource that this slot defines an interval of status information","The schedule resource that this slot defines an interval of status information.","","","","","","","","","",,,,,"",,,,"Slot.schedule",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-slot-presence-absence","Slot.status","Slot.status","","","",1,1,"","","Y","code {[]} {[]}
-","busy | free | busy-unavailable | busy-tentative | entered-in-error","busy | free | busy-unavailable | busy-tentative | entered-in-error.","","","","","","","","","",,"required","","http://hl7.org/fhir/ValueSet/slotstatus","",,,,"Slot.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Correspondance des statuts métier avec les codes FHIR : PLANIFIE → busy-tentative, VALIDE → busy. Le statut FACTURE est couvert par l'extension TDDUIFacturation.","busy | free | busy-unavailable | busy-tentative | entered-in-error.","","","","","","","","","",,"required","","http://hl7.org/fhir/ValueSet/slotstatus","",,,,"Slot.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tddui-slot-presence-absence","Slot.status.id","Slot.status.id","","","",0,1,"","","","string {[]} {[]}
 ","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references)","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""

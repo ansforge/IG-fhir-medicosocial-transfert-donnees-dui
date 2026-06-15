@@ -34,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-slot-presen
   "name" : "TDDUISlotPresenceAbsence",
   "title" : "TDDUI Slot Presence Absence",
   "status" : "active",
-  "date" : "2026-06-12T13:52:17+00:00",
+  "date" : "2026-06-15T09:04:15+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -132,6 +132,10 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-slot-presen
       "type" : [{
         "code" : "Extension",
         "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-facturation"]
+      }],
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUISlotPresenceAbsence",
+        "map" : "Statut.statut (pour le statut FACTURE)"
       }]
     },
     {
@@ -228,9 +232,10 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-slot-presen
     {
       "id" : "Slot.status",
       "path" : "Slot.status",
+      "short" : "Correspondance des statuts métier avec les codes FHIR : PLANIFIE → busy-tentative, VALIDE → busy. Le statut FACTURE est couvert par l'extension TDDUIFacturation.",
       "mapping" : [{
         "identity" : "specmetier-to-TDDUISlotPresenceAbsence",
-        "map" : "Statut.statut"
+        "map" : "Statut.statut (pour les statuts PLANIFIE et VALIDE)"
       }]
     },
     {

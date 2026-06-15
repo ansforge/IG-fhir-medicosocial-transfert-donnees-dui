@@ -62,7 +62,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Slot.extension:TDDUIFacturation","Slot.extension","TDDUIFacturation","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-facturation]]} {[]}
 ","Indique si une facture a été établie.","Indique si une facture a été établie.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","Statut.statut (pour le statut FACTURE)"
 "Slot.modifierExtension","Slot.modifierExtension","","extensions
 user content","",0,*,"","Y","","Extension {[]} {[]}
 ","Extensions that cannot be ignored","May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
@@ -147,8 +147,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","The schedule resource that this slot defines an interval of status information","The schedule resource that this slot defines an interval of status information.","","","","","","","","","",,,,,"",,,,"Slot.schedule",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Slot.status","Slot.status","","","",1,1,"","","Y","code {[]} {[]}
-","busy | free | busy-unavailable | busy-tentative | entered-in-error","busy | free | busy-unavailable | busy-tentative | entered-in-error.","","","","","","","","","",,"required","","http://hl7.org/fhir/ValueSet/slotstatus","",,,,"Slot.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","Statut.statut","FREEBUSY;FBTYPE=(freeBusyType):19980314T233000Z/19980315T003000Z If the freeBusyType is BUSY, then this value can be excluded"
+","Correspondance des statuts métier avec les codes FHIR : PLANIFIE → busy-tentative, VALIDE → busy. Le statut FACTURE est couvert par l'extension TDDUIFacturation.","busy | free | busy-unavailable | busy-tentative | entered-in-error.","","","","","","","","","",,"required","","http://hl7.org/fhir/ValueSet/slotstatus","",,,,"Slot.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Statut.statut (pour les statuts PLANIFIE et VALIDE)","FREEBUSY;FBTYPE=(freeBusyType):19980314T233000Z/19980315T003000Z If the freeBusyType is BUSY, then this value can be excluded"
 "Slot.status.id","Slot.status.id","","","",0,1,"","","","string {[]} {[]}
 ","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references)","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
 "Slot.status.extension","Slot.status.extension","","","",0,*,"","","","Extension {[]} {[]}
