@@ -36,7 +36,7 @@ Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (pa
   "title" : "TDDUI Encounter Participant",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-16T14:03:43+00:00",
+  "date" : "2026-06-16T14:16:24+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
