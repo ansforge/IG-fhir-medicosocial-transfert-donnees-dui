@@ -62,7 +62,7 @@ Extension simple avec le type CodeableConcept : Motif associé au statut de non-
   "name" : "TDDUIEventCancelReason",
   "title" : "TDDUI Event Cancel Reason",
   "status" : "active",
-  "date" : "2026-06-16T14:39:41+00:00",
+  "date" : "2026-06-16T16:50:35+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

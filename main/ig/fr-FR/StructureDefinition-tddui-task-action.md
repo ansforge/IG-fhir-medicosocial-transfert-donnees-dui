@@ -108,7 +108,7 @@ Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slic
   "name" : "TDDUITaskAction",
   "title" : "TDDUI Task Action",
   "status" : "active",
-  "date" : "2026-06-16T14:39:41+00:00",
+  "date" : "2026-06-16T16:50:35+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
