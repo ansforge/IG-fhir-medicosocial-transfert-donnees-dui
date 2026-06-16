@@ -36,7 +36,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "TDDUI ServiceRequest DemandeOrientation Identifier",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-16T07:55:16+00:00",
+  "date" : "2026-06-16T08:15:37+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -50,7 +50,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "France"
+      "display" : "France (la)"
     }]
   }],
   "compose" : {
