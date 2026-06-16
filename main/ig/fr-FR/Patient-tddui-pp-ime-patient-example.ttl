@@ -12,7 +12,7 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient"^^xsd:anyURI ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient>
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient>
      ] )
   ] ; # 
   fhir:language [ fhir:v "fr-FR"] ; # 
@@ -23,18 +23,12 @@
   fhir:identifier ( [
      fhir:type [
        fhir:coding ( [
-         fhir:system [
-           fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ;
-           fhir:l <http://terminology.hl7.org/CodeSystem/v2-0203>
-         ] ;
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "PI" ] ;
          fhir:display [ fhir:v "Patient internal identifier" ]
        ] )
      ] ;
-     fhir:system [
-       fhir:v "https://identifiant-medicosocial-localusager.esante.gouv.fr"^^xsd:anyURI ;
-       fhir:l <https://identifiant-medicosocial-localusager.esante.gouv.fr>
-     ] ;
+     fhir:system [ fhir:v "https://identifiant-medicosocial-localusager.esante.gouv.fr"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "3480787529/123456" ]
   ] ) ; # 
   fhir:name ( [
@@ -45,12 +39,9 @@
   fhir:birthDate [
      fhir:v "2005-09-15"^^xsd:date ;
      fhir:extension ( [
-       fhir:url [
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order>
-       ] ;
+       fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order"^^xsd:anyURI ] ;
        fhir:value [
-         a fhir:PositiveInt ;
+         a fhir:positiveInt ;
          fhir:v "1"^^xsd:positiveInteger
        ]
      ] )

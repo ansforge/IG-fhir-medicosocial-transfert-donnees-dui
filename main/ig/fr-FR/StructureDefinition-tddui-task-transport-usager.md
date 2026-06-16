@@ -61,7 +61,7 @@ Obligatoire : 2 éléments
   "name" : "TDDUITaskTransportUsager",
   "title" : "TDDUI Task Transport Usager",
   "status" : "active",
-  "date" : "2026-06-10T13:07:20+00:00",
+  "date" : "2026-06-16T08:06:32+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

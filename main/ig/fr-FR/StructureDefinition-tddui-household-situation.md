@@ -63,7 +63,7 @@ Extension complexe: Extension complexe regroupant la situation familiale, la com
   "name" : "TDDUIHouseholdSituation",
   "title" : "TDDUI Household Situation",
   "status" : "active",
-  "date" : "2026-06-10T13:07:20+00:00",
+  "date" : "2026-06-16T08:06:32+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

@@ -13,334 +13,184 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle"^^xsd:anyURI ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle>
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle>
      ] )
   ] ; # 
   fhir:type [ fhir:v "transaction"] ; # 
   fhir:entry ( [
-     fhir:fullUrl [
-       fhir:v "https://test-server.fr/Patient/tddui-pp-pa-patient-example-pp"^^xsd:anyURI ;
-       fhir:l <https://test-server.fr/Patient/tddui-pp-pa-patient-example-pp>
-     ] ;
+     fhir:fullUrl [ fhir:v "https://test-server.fr/Patient/tddui-pp-pa-patient-example-pp"^^xsd:anyURI ] ;
      fhir:resource ( <https://test-server.fr/Patient/tddui-pp-pa-patient-example-pp> ) ;
      fhir:request [
        fhir:method [ fhir:v "POST" ] ;
-       fhir:url [
-         fhir:v "TDDUIPatient"^^xsd:anyURI ;
-         fhir:l fhir:TDDUIPatient
-       ]
+       fhir:url [ fhir:v "TDDUIPatient"^^xsd:anyURI ]
      ]
   ] [
-     fhir:fullUrl [
-       fhir:v "https://test-server.fr/Consent/tddui-pp-pa-consent-accord-example"^^xsd:anyURI ;
-       fhir:l <https://test-server.fr/Consent/tddui-pp-pa-consent-accord-example>
-     ] ;
+     fhir:fullUrl [ fhir:v "https://test-server.fr/Consent/tddui-pp-pa-consent-accord-example"^^xsd:anyURI ] ;
      fhir:resource ( <https://test-server.fr/Consent/tddui-pp-pa-consent-accord-example> ) ;
      fhir:request [
        fhir:method [ fhir:v "POST" ] ;
-       fhir:url [
-         fhir:v "TDDUIConsentAccord"^^xsd:anyURI ;
-         fhir:l fhir:TDDUIConsentAccord
-       ]
+       fhir:url [ fhir:v "TDDUIConsentAccord"^^xsd:anyURI ]
      ]
   ] [
-     fhir:fullUrl [
-       fhir:v "https://test-server.fr/CarePlan/tddui-pp-pa-careplan-example"^^xsd:anyURI ;
-       fhir:l <https://test-server.fr/CarePlan/tddui-pp-pa-careplan-example>
-     ] ;
+     fhir:fullUrl [ fhir:v "https://test-server.fr/CarePlan/tddui-pp-pa-careplan-example"^^xsd:anyURI ] ;
      fhir:resource ( <https://test-server.fr/CarePlan/tddui-pp-pa-careplan-example> ) ;
      fhir:request [
        fhir:method [ fhir:v "POST" ] ;
-       fhir:url [
-         fhir:v "TDDUICarePlanProjetPersonnalise"^^xsd:anyURI ;
-         fhir:l fhir:TDDUICarePlanProjetPersonnalise
-       ]
+       fhir:url [ fhir:v "TDDUICarePlanProjetPersonnalise"^^xsd:anyURI ]
      ]
   ] [
-     fhir:fullUrl [
-       fhir:v "https://test-server.fr/DocumentReference/tddui-pp-pa-documentreference-bilan-objectif-1-example"^^xsd:anyURI ;
-       fhir:l <https://test-server.fr/DocumentReference/tddui-pp-pa-documentreference-bilan-objectif-1-example>
-     ] ;
+     fhir:fullUrl [ fhir:v "https://test-server.fr/DocumentReference/tddui-pp-pa-documentreference-bilan-objectif-1-example"^^xsd:anyURI ] ;
      fhir:resource ( <https://test-server.fr/DocumentReference/tddui-pp-pa-documentreference-bilan-objectif-1-example> ) ;
      fhir:request [
        fhir:method [ fhir:v "POST" ] ;
-       fhir:url [
-         fhir:v "TDDUIDocumentReference"^^xsd:anyURI ;
-         fhir:l fhir:TDDUIDocumentReference
-       ]
+       fhir:url [ fhir:v "TDDUIDocumentReference"^^xsd:anyURI ]
      ]
   ] [
-     fhir:fullUrl [
-       fhir:v "https://test-server.fr/DocumentReference/tddui-pp-pa-documentreference-entrant-example"^^xsd:anyURI ;
-       fhir:l <https://test-server.fr/DocumentReference/tddui-pp-pa-documentreference-entrant-example>
-     ] ;
+     fhir:fullUrl [ fhir:v "https://test-server.fr/DocumentReference/tddui-pp-pa-documentreference-entrant-example"^^xsd:anyURI ] ;
      fhir:resource ( <https://test-server.fr/DocumentReference/tddui-pp-pa-documentreference-entrant-example> ) ;
      fhir:request [
        fhir:method [ fhir:v "POST" ] ;
-       fhir:url [
-         fhir:v "TDDUIDocumentReference"^^xsd:anyURI ;
-         fhir:l fhir:TDDUIDocumentReference
-       ]
+       fhir:url [ fhir:v "TDDUIDocumentReference"^^xsd:anyURI ]
      ]
   ] [
-     fhir:fullUrl [
-       fhir:v "https://test-server.fr/Goal/tddui-pp-pa-goal-attente-famille-example"^^xsd:anyURI ;
-       fhir:l <https://test-server.fr/Goal/tddui-pp-pa-goal-attente-famille-example>
-     ] ;
+     fhir:fullUrl [ fhir:v "https://test-server.fr/Goal/tddui-pp-pa-goal-attente-famille-example"^^xsd:anyURI ] ;
      fhir:resource ( <https://test-server.fr/Goal/tddui-pp-pa-goal-attente-famille-example> ) ;
      fhir:request [
        fhir:method [ fhir:v "POST" ] ;
-       fhir:url [
-         fhir:v "TDDUIGoalAttente"^^xsd:anyURI ;
-         fhir:l fhir:TDDUIGoalAttente
-       ]
+       fhir:url [ fhir:v "TDDUIGoalAttente"^^xsd:anyURI ]
      ]
   ] [
-     fhir:fullUrl [
-       fhir:v "https://test-server.fr/Goal/tddui-pp-pa-goal-attente-usager-example"^^xsd:anyURI ;
-       fhir:l <https://test-server.fr/Goal/tddui-pp-pa-goal-attente-usager-example>
-     ] ;
+     fhir:fullUrl [ fhir:v "https://test-server.fr/Goal/tddui-pp-pa-goal-attente-usager-example"^^xsd:anyURI ] ;
      fhir:resource ( <https://test-server.fr/Goal/tddui-pp-pa-goal-attente-usager-example> ) ;
      fhir:request [
        fhir:method [ fhir:v "POST" ] ;
-       fhir:url [
-         fhir:v "TDDUIGoalAttente"^^xsd:anyURI ;
-         fhir:l fhir:TDDUIGoalAttente
-       ]
+       fhir:url [ fhir:v "TDDUIGoalAttente"^^xsd:anyURI ]
      ]
   ] [
-     fhir:fullUrl [
-       fhir:v "https://test-server.fr/Goal/tddui-pp-pa-goal-objectif-1-example"^^xsd:anyURI ;
-       fhir:l <https://test-server.fr/Goal/tddui-pp-pa-goal-objectif-1-example>
-     ] ;
+     fhir:fullUrl [ fhir:v "https://test-server.fr/Goal/tddui-pp-pa-goal-objectif-1-example"^^xsd:anyURI ] ;
      fhir:resource ( <https://test-server.fr/Goal/tddui-pp-pa-goal-objectif-1-example> ) ;
      fhir:request [
        fhir:method [ fhir:v "POST" ] ;
-       fhir:url [
-         fhir:v "TDDUIGoalObjectif"^^xsd:anyURI ;
-         fhir:l fhir:TDDUIGoalObjectif
-       ]
+       fhir:url [ fhir:v "TDDUIGoalObjectif"^^xsd:anyURI ]
      ]
   ] [
-     fhir:fullUrl [
-       fhir:v "https://test-server.fr/Goal/tddui-pp-pa-goal-objectif-2-example"^^xsd:anyURI ;
-       fhir:l <https://test-server.fr/Goal/tddui-pp-pa-goal-objectif-2-example>
-     ] ;
+     fhir:fullUrl [ fhir:v "https://test-server.fr/Goal/tddui-pp-pa-goal-objectif-2-example"^^xsd:anyURI ] ;
      fhir:resource ( <https://test-server.fr/Goal/tddui-pp-pa-goal-objectif-2-example> ) ;
      fhir:request [
        fhir:method [ fhir:v "POST" ] ;
-       fhir:url [
-         fhir:v "TDDUIGoalObjectif"^^xsd:anyURI ;
-         fhir:l fhir:TDDUIGoalObjectif
-       ]
+       fhir:url [ fhir:v "TDDUIGoalObjectif"^^xsd:anyURI ]
      ]
   ] [
-     fhir:fullUrl [
-       fhir:v "https://test-server.fr/Goal/tddui-pp-pa-goal-objectif-3-example"^^xsd:anyURI ;
-       fhir:l <https://test-server.fr/Goal/tddui-pp-pa-goal-objectif-3-example>
-     ] ;
+     fhir:fullUrl [ fhir:v "https://test-server.fr/Goal/tddui-pp-pa-goal-objectif-3-example"^^xsd:anyURI ] ;
      fhir:resource ( <https://test-server.fr/Goal/tddui-pp-pa-goal-objectif-3-example> ) ;
      fhir:request [
        fhir:method [ fhir:v "POST" ] ;
-       fhir:url [
-         fhir:v "TDDUIGoalObjectif"^^xsd:anyURI ;
-         fhir:l fhir:TDDUIGoalObjectif
-       ]
+       fhir:url [ fhir:v "TDDUIGoalObjectif"^^xsd:anyURI ]
      ]
   ] [
-     fhir:fullUrl [
-       fhir:v "https://test-server.fr/Practitioner/tddui-pp-pa-practitioner-ide-example"^^xsd:anyURI ;
-       fhir:l <https://test-server.fr/Practitioner/tddui-pp-pa-practitioner-ide-example>
-     ] ;
+     fhir:fullUrl [ fhir:v "https://test-server.fr/Practitioner/tddui-pp-pa-practitioner-ide-example"^^xsd:anyURI ] ;
      fhir:resource ( <https://test-server.fr/Practitioner/tddui-pp-pa-practitioner-ide-example> ) ;
      fhir:request [
        fhir:method [ fhir:v "POST" ] ;
-       fhir:url [
-         fhir:v "TDDUIPractitioner"^^xsd:anyURI ;
-         fhir:l fhir:TDDUIPractitioner
-       ]
+       fhir:url [ fhir:v "TDDUIPractitioner"^^xsd:anyURI ]
      ]
   ] [
-     fhir:fullUrl [
-       fhir:v "https://test-server.fr/QuestionnaireResponse/tddui-pp-pa-questionnaire-response-aggir-pa-example"^^xsd:anyURI ;
-       fhir:l <https://test-server.fr/QuestionnaireResponse/tddui-pp-pa-questionnaire-response-aggir-pa-example>
-     ] ;
+     fhir:fullUrl [ fhir:v "https://test-server.fr/QuestionnaireResponse/tddui-pp-pa-questionnaire-response-aggir-pa-example"^^xsd:anyURI ] ;
      fhir:resource ( <https://test-server.fr/QuestionnaireResponse/tddui-pp-pa-questionnaire-response-aggir-pa-example> ) ;
      fhir:request [
        fhir:method [ fhir:v "POST" ] ;
-       fhir:url [
-         fhir:v "TDDUIQuestionnaireResponse"^^xsd:anyURI ;
-         fhir:l fhir:TDDUIQuestionnaireResponse
-       ]
+       fhir:url [ fhir:v "TDDUIQuestionnaireResponse"^^xsd:anyURI ]
      ]
   ] [
-     fhir:fullUrl [
-       fhir:v "https://test-server.fr/ServiceRequest/tddui-pp-pa-servicerequest-besoin-1-example"^^xsd:anyURI ;
-       fhir:l <https://test-server.fr/ServiceRequest/tddui-pp-pa-servicerequest-besoin-1-example>
-     ] ;
+     fhir:fullUrl [ fhir:v "https://test-server.fr/ServiceRequest/tddui-pp-pa-servicerequest-besoin-1-example"^^xsd:anyURI ] ;
      fhir:resource ( <https://test-server.fr/ServiceRequest/tddui-pp-pa-servicerequest-besoin-1-example> ) ;
      fhir:request [
        fhir:method [ fhir:v "POST" ] ;
-       fhir:url [
-         fhir:v "TDDUIServiceRequestBesoin"^^xsd:anyURI ;
-         fhir:l fhir:TDDUIServiceRequestBesoin
-       ]
+       fhir:url [ fhir:v "TDDUIServiceRequestBesoin"^^xsd:anyURI ]
      ]
   ] [
-     fhir:fullUrl [
-       fhir:v "https://test-server.fr/ServiceRequest/tddui-pp-pa-servicerequest-besoin-2-example"^^xsd:anyURI ;
-       fhir:l <https://test-server.fr/ServiceRequest/tddui-pp-pa-servicerequest-besoin-2-example>
-     ] ;
+     fhir:fullUrl [ fhir:v "https://test-server.fr/ServiceRequest/tddui-pp-pa-servicerequest-besoin-2-example"^^xsd:anyURI ] ;
      fhir:resource ( <https://test-server.fr/ServiceRequest/tddui-pp-pa-servicerequest-besoin-2-example> ) ;
      fhir:request [
        fhir:method [ fhir:v "POST" ] ;
-       fhir:url [
-         fhir:v "TDDUIServiceRequestBesoin"^^xsd:anyURI ;
-         fhir:l fhir:TDDUIServiceRequestBesoin
-       ]
+       fhir:url [ fhir:v "TDDUIServiceRequestBesoin"^^xsd:anyURI ]
      ]
   ] [
-     fhir:fullUrl [
-       fhir:v "https://test-server.fr/ServiceRequest/tddui-pp-pa-servicerequest-besoin-3-example"^^xsd:anyURI ;
-       fhir:l <https://test-server.fr/ServiceRequest/tddui-pp-pa-servicerequest-besoin-3-example>
-     ] ;
+     fhir:fullUrl [ fhir:v "https://test-server.fr/ServiceRequest/tddui-pp-pa-servicerequest-besoin-3-example"^^xsd:anyURI ] ;
      fhir:resource ( <https://test-server.fr/ServiceRequest/tddui-pp-pa-servicerequest-besoin-3-example> ) ;
      fhir:request [
        fhir:method [ fhir:v "POST" ] ;
-       fhir:url [
-         fhir:v "TDDUIServiceRequestBesoin"^^xsd:anyURI ;
-         fhir:l fhir:TDDUIServiceRequestBesoin
-       ]
+       fhir:url [ fhir:v "TDDUIServiceRequestBesoin"^^xsd:anyURI ]
      ]
   ] [
-     fhir:fullUrl [
-       fhir:v "https://test-server.fr/Task/tddui-pp-pa-task-action-1-ergo-example"^^xsd:anyURI ;
-       fhir:l <https://test-server.fr/Task/tddui-pp-pa-task-action-1-ergo-example>
-     ] ;
+     fhir:fullUrl [ fhir:v "https://test-server.fr/Task/tddui-pp-pa-task-action-1-ergo-example"^^xsd:anyURI ] ;
      fhir:resource ( <https://test-server.fr/Task/tddui-pp-pa-task-action-1-ergo-example> ) ;
      fhir:request [
        fhir:method [ fhir:v "POST" ] ;
-       fhir:url [
-         fhir:v "TDDUITaskAction"^^xsd:anyURI ;
-         fhir:l fhir:TDDUITaskAction
-       ]
+       fhir:url [ fhir:v "TDDUITaskAction"^^xsd:anyURI ]
      ]
   ] [
-     fhir:fullUrl [
-       fhir:v "https://test-server.fr/Task/tddui-pp-pa-task-action-1-ide-example"^^xsd:anyURI ;
-       fhir:l <https://test-server.fr/Task/tddui-pp-pa-task-action-1-ide-example>
-     ] ;
+     fhir:fullUrl [ fhir:v "https://test-server.fr/Task/tddui-pp-pa-task-action-1-ide-example"^^xsd:anyURI ] ;
      fhir:resource ( <https://test-server.fr/Task/tddui-pp-pa-task-action-1-ide-example> ) ;
      fhir:request [
        fhir:method [ fhir:v "POST" ] ;
-       fhir:url [
-         fhir:v "TDDUITaskAction"^^xsd:anyURI ;
-         fhir:l fhir:TDDUITaskAction
-       ]
+       fhir:url [ fhir:v "TDDUITaskAction"^^xsd:anyURI ]
      ]
   ] [
-     fhir:fullUrl [
-       fhir:v "https://test-server.fr/Task/tddui-pp-pa-task-action-1-kine-example"^^xsd:anyURI ;
-       fhir:l <https://test-server.fr/Task/tddui-pp-pa-task-action-1-kine-example>
-     ] ;
+     fhir:fullUrl [ fhir:v "https://test-server.fr/Task/tddui-pp-pa-task-action-1-kine-example"^^xsd:anyURI ] ;
      fhir:resource ( <https://test-server.fr/Task/tddui-pp-pa-task-action-1-kine-example> ) ;
      fhir:request [
        fhir:method [ fhir:v "POST" ] ;
-       fhir:url [
-         fhir:v "TDDUITaskAction"^^xsd:anyURI ;
-         fhir:l fhir:TDDUITaskAction
-       ]
+       fhir:url [ fhir:v "TDDUITaskAction"^^xsd:anyURI ]
      ]
   ] [
-     fhir:fullUrl [
-       fhir:v "https://test-server.fr/Task/tddui-pp-pa-task-action-2-anim-example"^^xsd:anyURI ;
-       fhir:l <https://test-server.fr/Task/tddui-pp-pa-task-action-2-anim-example>
-     ] ;
+     fhir:fullUrl [ fhir:v "https://test-server.fr/Task/tddui-pp-pa-task-action-2-anim-example"^^xsd:anyURI ] ;
      fhir:resource ( <https://test-server.fr/Task/tddui-pp-pa-task-action-2-anim-example> ) ;
      fhir:request [
        fhir:method [ fhir:v "POST" ] ;
-       fhir:url [
-         fhir:v "TDDUITaskAction"^^xsd:anyURI ;
-         fhir:l fhir:TDDUITaskAction
-       ]
+       fhir:url [ fhir:v "TDDUITaskAction"^^xsd:anyURI ]
      ]
   ] [
-     fhir:fullUrl [
-       fhir:v "https://test-server.fr/Task/tddui-pp-pa-task-action-2-ide-example"^^xsd:anyURI ;
-       fhir:l <https://test-server.fr/Task/tddui-pp-pa-task-action-2-ide-example>
-     ] ;
+     fhir:fullUrl [ fhir:v "https://test-server.fr/Task/tddui-pp-pa-task-action-2-ide-example"^^xsd:anyURI ] ;
      fhir:resource ( <https://test-server.fr/Task/tddui-pp-pa-task-action-2-ide-example> ) ;
      fhir:request [
        fhir:method [ fhir:v "POST" ] ;
-       fhir:url [
-         fhir:v "TDDUITaskAction"^^xsd:anyURI ;
-         fhir:l fhir:TDDUITaskAction
-       ]
+       fhir:url [ fhir:v "TDDUITaskAction"^^xsd:anyURI ]
      ]
   ] [
-     fhir:fullUrl [
-       fhir:v "https://test-server.fr/Task/tddui-pp-pa-task-action-3-psy-example"^^xsd:anyURI ;
-       fhir:l <https://test-server.fr/Task/tddui-pp-pa-task-action-3-psy-example>
-     ] ;
+     fhir:fullUrl [ fhir:v "https://test-server.fr/Task/tddui-pp-pa-task-action-3-psy-example"^^xsd:anyURI ] ;
      fhir:resource ( <https://test-server.fr/Task/tddui-pp-pa-task-action-3-psy-example> ) ;
      fhir:request [
        fhir:method [ fhir:v "POST" ] ;
-       fhir:url [
-         fhir:v "TDDUITaskAction"^^xsd:anyURI ;
-         fhir:l fhir:TDDUITaskAction
-       ]
+       fhir:url [ fhir:v "TDDUITaskAction"^^xsd:anyURI ]
      ]
   ] [
-     fhir:fullUrl [
-       fhir:v "https://test-server.fr/Task/tddui-pp-pa-task-moyen-ressource-ergo-1-example"^^xsd:anyURI ;
-       fhir:l <https://test-server.fr/Task/tddui-pp-pa-task-moyen-ressource-ergo-1-example>
-     ] ;
+     fhir:fullUrl [ fhir:v "https://test-server.fr/Task/tddui-pp-pa-task-moyen-ressource-ergo-1-example"^^xsd:anyURI ] ;
      fhir:resource ( <https://test-server.fr/Task/tddui-pp-pa-task-moyen-ressource-ergo-1-example> ) ;
      fhir:request [
        fhir:method [ fhir:v "POST" ] ;
-       fhir:url [
-         fhir:v "TDDUITaskMoyenRessource"^^xsd:anyURI ;
-         fhir:l fhir:TDDUITaskMoyenRessource
-       ]
+       fhir:url [ fhir:v "TDDUITaskMoyenRessource"^^xsd:anyURI ]
      ]
   ] [
-     fhir:fullUrl [
-       fhir:v "https://test-server.fr/Task/tddui-pp-pa-task-moyen-ressource-ide-1-example"^^xsd:anyURI ;
-       fhir:l <https://test-server.fr/Task/tddui-pp-pa-task-moyen-ressource-ide-1-example>
-     ] ;
+     fhir:fullUrl [ fhir:v "https://test-server.fr/Task/tddui-pp-pa-task-moyen-ressource-ide-1-example"^^xsd:anyURI ] ;
      fhir:resource ( <https://test-server.fr/Task/tddui-pp-pa-task-moyen-ressource-ide-1-example> ) ;
      fhir:request [
        fhir:method [ fhir:v "POST" ] ;
-       fhir:url [
-         fhir:v "TDDUITaskMoyenRessource"^^xsd:anyURI ;
-         fhir:l fhir:TDDUITaskMoyenRessource
-       ]
+       fhir:url [ fhir:v "TDDUITaskMoyenRessource"^^xsd:anyURI ]
      ]
   ] [
-     fhir:fullUrl [
-       fhir:v "https://test-server.fr/Task/tddui-pp-pa-task-moyen-ressource-ide-2-example"^^xsd:anyURI ;
-       fhir:l <https://test-server.fr/Task/tddui-pp-pa-task-moyen-ressource-ide-2-example>
-     ] ;
+     fhir:fullUrl [ fhir:v "https://test-server.fr/Task/tddui-pp-pa-task-moyen-ressource-ide-2-example"^^xsd:anyURI ] ;
      fhir:resource ( <https://test-server.fr/Task/tddui-pp-pa-task-moyen-ressource-ide-2-example> ) ;
      fhir:request [
        fhir:method [ fhir:v "POST" ] ;
-       fhir:url [
-         fhir:v "TDDUITaskMoyenRessource"^^xsd:anyURI ;
-         fhir:l fhir:TDDUITaskMoyenRessource
-       ]
+       fhir:url [ fhir:v "TDDUITaskMoyenRessource"^^xsd:anyURI ]
      ]
   ] [
-     fhir:fullUrl [
-       fhir:v "https://test-server.fr/Task/tddui-pp-pa-task-moyen-ressource-kine-1-example"^^xsd:anyURI ;
-       fhir:l <https://test-server.fr/Task/tddui-pp-pa-task-moyen-ressource-kine-1-example>
-     ] ;
+     fhir:fullUrl [ fhir:v "https://test-server.fr/Task/tddui-pp-pa-task-moyen-ressource-kine-1-example"^^xsd:anyURI ] ;
      fhir:resource ( <https://test-server.fr/Task/tddui-pp-pa-task-moyen-ressource-kine-1-example> ) ;
      fhir:request [
        fhir:method [ fhir:v "POST" ] ;
-       fhir:url [
-         fhir:v "TDDUITaskMoyenRessource"^^xsd:anyURI ;
-         fhir:l fhir:TDDUITaskMoyenRessource
-       ]
+       fhir:url [ fhir:v "TDDUITaskMoyenRessource"^^xsd:anyURI ]
      ]
   ] ) . # 
 
@@ -349,7 +199,7 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient"^^xsd:anyURI ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient>
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient>
      ] )
   ] ; # 
   fhir:text [
@@ -359,18 +209,12 @@
   fhir:identifier ( [
      fhir:type [
        fhir:coding ( [
-         fhir:system [
-           fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ;
-           fhir:l <http://terminology.hl7.org/CodeSystem/v2-0203>
-         ] ;
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "PI" ] ;
          fhir:display [ fhir:v "Patient internal identifier" ]
        ] )
      ] ;
-     fhir:system [
-       fhir:v "https://identifiant-medicosocial-localusager.esante.gouv.fr"^^xsd:anyURI ;
-       fhir:l <https://identifiant-medicosocial-localusager.esante.gouv.fr>
-     ] ;
+     fhir:system [ fhir:v "https://identifiant-medicosocial-localusager.esante.gouv.fr"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "3480787529/123456789" ]
   ] ) ; # 
   fhir:name ( [
@@ -382,12 +226,9 @@
   fhir:birthDate [
      fhir:v "1947-04-03"^^xsd:date ;
      fhir:extension ( [
-       fhir:url [
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order>
-       ] ;
+       fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order"^^xsd:anyURI ] ;
        fhir:value [
-         a fhir:PositiveInt ;
+         a fhir:positiveInt ;
          fhir:v "1"^^xsd:positiveInteger
        ]
      ] )
@@ -398,7 +239,7 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord"^^xsd:anyURI ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord>
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord>
      ] )
   ] ; # 
   fhir:text [
@@ -408,10 +249,7 @@
   fhir:status [ fhir:v "active"] ; # 
   fhir:scope [
      fhir:coding ( [
-       fhir:system [
-         fhir:v "http://terminology.hl7.org/CodeSystem/consentscope"^^xsd:anyURI ;
-         fhir:l <http://terminology.hl7.org/CodeSystem/consentscope>
-       ] ;
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/consentscope"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "patient-privacy" ] ;
        fhir:display [ fhir:v "Privacy Consent" ]
      ] )
@@ -419,23 +257,17 @@
   fhir:category ( [
      fhir:coding ( [
        a loinc:59284-0 ;
-       fhir:system [
-         fhir:v "http://loinc.org"^^xsd:anyURI ;
-         fhir:l <http://loinc.org>
-       ] ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "59284-0" ]
      ] )
   ] ) ; # 
   fhir:dateTime [ fhir:v "2024-01-15T09:00:00+01:00"^^xsd:dateTime] ; # 
   fhir:performer ( [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Practitioner/tddui-pp-pa-practitioner-ide-example> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Practitioner/tddui-pp-pa-practitioner-ide-example> ;
      fhir:reference [ fhir:v "Practitioner/tddui-pp-pa-practitioner-ide-example" ]
   ] ) ; # 
   fhir:policy ( [
-     fhir:authority [
-       fhir:v "https://www.cnsa.fr/"^^xsd:anyURI ;
-       fhir:l <https://www.cnsa.fr/>
-     ]
+     fhir:authority [ fhir:v "https://www.cnsa.fr/"^^xsd:anyURI ]
   ] ) . # 
 
 <https://test-server.fr/CarePlan/tddui-pp-pa-careplan-example> a fhir:CarePlan ;
@@ -443,7 +275,7 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise"^^xsd:anyURI ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise>
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise>
      ] )
   ] ; # 
   fhir:text [
@@ -451,44 +283,32 @@
      fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"CarePlan_tddui-pp-pa-careplan-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : PlanDeSoins tddui-pp-pa-careplan-example</b></p><a name=\"tddui-pp-pa-careplan-example\"> </a><a name=\"hctddui-pp-pa-careplan-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-careplan-projet-personnalise.html\">TDDUI CarePlan Projet Personalise</a></p></div><p><b>TDDUI Attachment</b>: <a href=\"DocumentReference-tddui-pp-pa-documentreference-entrant-example.html\">DocumentReference : masterIdentifier = 3480787529/123456789-PPER-entrant-1234; status = current</a></p><p><b>identifier</b>: <code>https://identifiant-medicosocial-projetpersonnalise.esante.gouv.fr</code>/3480787529/123456789-PPER-1234</p><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>title</b>: Projet personnalisé de Mme Jeanne L.</p><p><b>subject</b>: <a href=\"Patient-tddui-pp-pa-patient-example-pp.html\">Jeanne L. (official) Female, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/123456789)</a></p><p><b>supportingInfo</b>: <a href=\"Consent-tddui-pp-pa-consent-accord-example.html\">tddui-pp-pa-consent-accord-example</a></p></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:extension ( [
-     fhir:url [
-       fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment"^^xsd:anyURI ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment>
-     ] ;
+     fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment"^^xsd:anyURI ] ;
      fhir:value [
        a fhir:Reference ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/DocumentReference/tddui-pp-pa-documentreference-entrant-example> ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/DocumentReference/tddui-pp-pa-documentreference-entrant-example> ;
        fhir:reference [ fhir:v "DocumentReference/tddui-pp-pa-documentreference-entrant-example" ]
      ]
   ] ) ; # 
   fhir:identifier ( [
-     fhir:system [
-       fhir:v "https://identifiant-medicosocial-projetpersonnalise.esante.gouv.fr"^^xsd:anyURI ;
-       fhir:l <https://identifiant-medicosocial-projetpersonnalise.esante.gouv.fr>
-     ] ;
+     fhir:system [ fhir:v "https://identifiant-medicosocial-projetpersonnalise.esante.gouv.fr"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "3480787529/123456789-PPER-1234" ]
   ] ) ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:intent [ fhir:v "plan"] ; # 
   fhir:title [ fhir:v "Projet personnalisé de Mme Jeanne L."] ; # 
   fhir:subject [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-pp-pa-patient-example-pp> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-pp-pa-patient-example-pp> ;
      fhir:reference [ fhir:v "Patient/tddui-pp-pa-patient-example-pp" ]
   ] ; # 
   fhir:supportingInfo ( [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Consent/tddui-pp-pa-consent-accord-example> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Consent/tddui-pp-pa-consent-accord-example> ;
      fhir:extension ( [
-       fhir:url [
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator>
-       ] ;
+       fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator"^^xsd:anyURI ] ;
        fhir:value [
          a fhir:CodeableConcept ;
          fhir:coding ( [
-           fhir:system [
-             fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator"^^xsd:anyURI ;
-             fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator>
-           ] ;
+           fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator"^^xsd:anyURI ] ;
            fhir:code [ fhir:v "accordStructure" ]
          ] )
        ]
@@ -501,7 +321,7 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"^^xsd:anyURI ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference>
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference>
      ] )
   ] ; # 
   fhir:text [
@@ -513,11 +333,11 @@
   ] ; # 
   fhir:status [ fhir:v "current"] ; # 
   fhir:subject [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-pp-pa-patient-example-pp> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-pp-pa-patient-example-pp> ;
      fhir:reference [ fhir:v "Patient/tddui-pp-pa-patient-example-pp" ]
   ] ; # 
   fhir:author ( [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Organization/tddui-organization-example> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Organization/tddui-organization-example> ;
      fhir:reference [ fhir:v "Organization/tddui-organization-example" ]
   ] ) ; # 
   fhir:content ( [
@@ -534,7 +354,7 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"^^xsd:anyURI ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference>
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference>
      ] )
   ] ; # 
   fhir:text [
@@ -546,11 +366,11 @@
   ] ; # 
   fhir:status [ fhir:v "current"] ; # 
   fhir:subject [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-pp-pa-patient-example-pp> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-pp-pa-patient-example-pp> ;
      fhir:reference [ fhir:v "Patient/tddui-pp-pa-patient-example-pp" ]
   ] ; # 
   fhir:author ( [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Organization/tddui-organization-example> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Organization/tddui-organization-example> ;
      fhir:reference [ fhir:v "Organization/tddui-organization-example" ]
   ] ) ; # 
   fhir:content ( [
@@ -567,7 +387,7 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente"^^xsd:anyURI ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente>
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente>
      ] )
   ] ; # 
   fhir:text [
@@ -575,21 +395,15 @@
      fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Goal_tddui-pp-pa-goal-attente-famille-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : But tddui-pp-pa-goal-attente-famille-example</b></p><a name=\"tddui-pp-pa-goal-attente-famille-example\"> </a><a name=\"hctddui-pp-pa-goal-attente-famille-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-goal-attente.html\">TDDUI Goal Attente</a></p></div><p><b>TDDUI CarePlan Projet Perso Ref</b>: <a href=\"CarePlan-tddui-pp-pa-careplan-example.html\">CarePlan Projet personnalisé de Mme Jeanne L.</a></p><p><b>identifier</b>: <code>https://identifiant-medicosocial-attente.esante.gouv.fr</code>/3480787529/123456789-ATTE-1234</p><p><b>lifecycleStatus</b>: Active</p><p><b>description</b>: <span title=\"Codes :\">- Prévenir les chutes<br/>- Stabiliser le poids et le plaisir alimentaire<br/>- Maintenir le lien familial (visios)</span></p><p><b>subject</b>: <a href=\"Patient-tddui-pp-pa-patient-example-pp.html\">Jeanne L. (official) Female, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/123456789)</a></p><p><b>note</b>: </p><blockquote><div><p>Famille</p>\n</div></blockquote></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:extension ( [
-     fhir:url [
-       fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference"^^xsd:anyURI ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference>
-     ] ;
+     fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference"^^xsd:anyURI ] ;
      fhir:value [
        a fhir:Reference ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CarePlan/tddui-pp-pa-careplan-example> ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/CarePlan/tddui-pp-pa-careplan-example> ;
        fhir:reference [ fhir:v "CarePlan/tddui-pp-pa-careplan-example" ]
      ]
   ] ) ; # 
   fhir:identifier ( [
-     fhir:system [
-       fhir:v "https://identifiant-medicosocial-attente.esante.gouv.fr"^^xsd:anyURI ;
-       fhir:l <https://identifiant-medicosocial-attente.esante.gouv.fr>
-     ] ;
+     fhir:system [ fhir:v "https://identifiant-medicosocial-attente.esante.gouv.fr"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "3480787529/123456789-ATTE-1234" ]
   ] ) ; # 
   fhir:lifecycleStatus [ fhir:v "active"] ; # 
@@ -597,22 +411,16 @@
      fhir:text [ fhir:v "- Prévenir les chutes\n- Stabiliser le poids et le plaisir alimentaire\n- Maintenir le lien familial (visios)" ]
   ] ; # 
   fhir:subject [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-pp-pa-patient-example-pp> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-pp-pa-patient-example-pp> ;
      fhir:reference [ fhir:v "Patient/tddui-pp-pa-patient-example-pp" ]
   ] ; # 
   fhir:note ( [
      fhir:extension ( [
-       fhir:url [
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator>
-       ] ;
+       fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator"^^xsd:anyURI ] ;
        fhir:value [
          a fhir:CodeableConcept ;
          fhir:coding ( [
-           fhir:system [
-             fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator"^^xsd:anyURI ;
-             fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator>
-           ] ;
+           fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator"^^xsd:anyURI ] ;
            fhir:code [ fhir:v "origineAttente" ]
          ] )
        ]
@@ -625,7 +433,7 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente"^^xsd:anyURI ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente>
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente>
      ] )
   ] ; # 
   fhir:text [
@@ -633,21 +441,15 @@
      fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Goal_tddui-pp-pa-goal-attente-usager-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : But tddui-pp-pa-goal-attente-usager-example</b></p><a name=\"tddui-pp-pa-goal-attente-usager-example\"> </a><a name=\"hctddui-pp-pa-goal-attente-usager-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-goal-attente.html\">TDDUI Goal Attente</a></p></div><p><b>TDDUI CarePlan Projet Perso Ref</b>: <a href=\"CarePlan-tddui-pp-pa-careplan-example.html\">CarePlan Projet personnalisé de Mme Jeanne L.</a></p><p><b>identifier</b>: <code>https://identifiant-medicosocial-attente.esante.gouv.fr</code>/3480787529/123456789-ATTE-1235</p><p><b>lifecycleStatus</b>: Active</p><p><b>description</b>: <span title=\"Codes :\">- Garder la main sur l'organisation de ses journées <br/>- Participer à une chorale et à un club lecture<br/>- Se sentir en sécurité lors des déplacements</span></p><p><b>subject</b>: <a href=\"Patient-tddui-pp-pa-patient-example-pp.html\">Jeanne L. (official) Female, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/123456789)</a></p><p><b>note</b>: </p><blockquote><div><p>Usager</p>\n</div></blockquote></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:extension ( [
-     fhir:url [
-       fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference"^^xsd:anyURI ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference>
-     ] ;
+     fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference"^^xsd:anyURI ] ;
      fhir:value [
        a fhir:Reference ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CarePlan/tddui-pp-pa-careplan-example> ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/CarePlan/tddui-pp-pa-careplan-example> ;
        fhir:reference [ fhir:v "CarePlan/tddui-pp-pa-careplan-example" ]
      ]
   ] ) ; # 
   fhir:identifier ( [
-     fhir:system [
-       fhir:v "https://identifiant-medicosocial-attente.esante.gouv.fr"^^xsd:anyURI ;
-       fhir:l <https://identifiant-medicosocial-attente.esante.gouv.fr>
-     ] ;
+     fhir:system [ fhir:v "https://identifiant-medicosocial-attente.esante.gouv.fr"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "3480787529/123456789-ATTE-1235" ]
   ] ) ; # 
   fhir:lifecycleStatus [ fhir:v "active"] ; # 
@@ -655,22 +457,16 @@
      fhir:text [ fhir:v "- Garder la main sur l'organisation de ses journées \n- Participer à une chorale et à un club lecture\n- Se sentir en sécurité lors des déplacements" ]
   ] ; # 
   fhir:subject [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-pp-pa-patient-example-pp> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-pp-pa-patient-example-pp> ;
      fhir:reference [ fhir:v "Patient/tddui-pp-pa-patient-example-pp" ]
   ] ; # 
   fhir:note ( [
      fhir:extension ( [
-       fhir:url [
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator>
-       ] ;
+       fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator"^^xsd:anyURI ] ;
        fhir:value [
          a fhir:CodeableConcept ;
          fhir:coding ( [
-           fhir:system [
-             fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator"^^xsd:anyURI ;
-             fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator>
-           ] ;
+           fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator"^^xsd:anyURI ] ;
            fhir:code [ fhir:v "origineAttente" ]
          ] )
        ]
@@ -683,7 +479,7 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif"^^xsd:anyURI ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif>
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif>
      ] )
   ] ; # 
   fhir:text [
@@ -691,31 +487,22 @@
      fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Goal_tddui-pp-pa-goal-objectif-1-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : But tddui-pp-pa-goal-objectif-1-example</b></p><a name=\"tddui-pp-pa-goal-objectif-1-example\"> </a><a name=\"hctddui-pp-pa-goal-objectif-1-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-goal-objectif.html\">TDDUI Goal Objectif</a></p></div><p><b>TDDUI CarePlan Projet Perso Ref</b>: <a href=\"CarePlan-tddui-pp-pa-careplan-example.html\">CarePlan Projet personnalisé de Mme Jeanne L.</a></p><p><b>TDDUI Attachment</b>: <a href=\"DocumentReference-tddui-pp-pa-documentreference-bilan-objectif-1-example.html\">DocumentReference : masterIdentifier = 3480787529/123456789-PPER-bilanObj-1234; status = current</a></p><p><b>identifier</b>: <code>https://identifiant-medicosocial-objectif.esante.gouv.fr</code>/3480787529/123456789-OBJE-1234</p><p><b>lifecycleStatus</b>: Active</p><p><b>description</b>: <span title=\"Codes :\">Réduire le risque de chute et la peur associée en 6 mois.</span></p><p><b>subject</b>: <a href=\"Patient-tddui-pp-pa-patient-example-pp.html\">Jeanne L. (official) Female, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/123456789)</a></p><p><b>addresses</b>: <a href=\"ServiceRequest-tddui-pp-pa-servicerequest-besoin-1-example.html\">ServiceRequest </a></p><p><b>note</b>: </p><blockquote><div><p>Objectif 1</p>\n</div></blockquote></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:extension ( [
-     fhir:url [
-       fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference"^^xsd:anyURI ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference>
-     ] ;
+     fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference"^^xsd:anyURI ] ;
      fhir:value [
        a fhir:Reference ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CarePlan/tddui-pp-pa-careplan-example> ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/CarePlan/tddui-pp-pa-careplan-example> ;
        fhir:reference [ fhir:v "CarePlan/tddui-pp-pa-careplan-example" ]
      ]
   ] [
-     fhir:url [
-       fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment"^^xsd:anyURI ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment>
-     ] ;
+     fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment"^^xsd:anyURI ] ;
      fhir:value [
        a fhir:Reference ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/DocumentReference/tddui-pp-pa-documentreference-bilan-objectif-1-example> ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/DocumentReference/tddui-pp-pa-documentreference-bilan-objectif-1-example> ;
        fhir:reference [ fhir:v "DocumentReference/tddui-pp-pa-documentreference-bilan-objectif-1-example" ]
      ]
   ] ) ; # 
   fhir:identifier ( [
-     fhir:system [
-       fhir:v "https://identifiant-medicosocial-objectif.esante.gouv.fr"^^xsd:anyURI ;
-       fhir:l <https://identifiant-medicosocial-objectif.esante.gouv.fr>
-     ] ;
+     fhir:system [ fhir:v "https://identifiant-medicosocial-objectif.esante.gouv.fr"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "3480787529/123456789-OBJE-1234" ]
   ] ) ; # 
   fhir:lifecycleStatus [ fhir:v "active"] ; # 
@@ -723,26 +510,20 @@
      fhir:text [ fhir:v "Réduire le risque de chute et la peur associée en 6 mois." ]
   ] ; # 
   fhir:subject [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-pp-pa-patient-example-pp> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-pp-pa-patient-example-pp> ;
      fhir:reference [ fhir:v "Patient/tddui-pp-pa-patient-example-pp" ]
   ] ; # 
   fhir:addresses ( [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/ServiceRequest/tddui-pp-pa-servicerequest-besoin-1-example> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/ServiceRequest/tddui-pp-pa-servicerequest-besoin-1-example> ;
      fhir:reference [ fhir:v "ServiceRequest/tddui-pp-pa-servicerequest-besoin-1-example" ]
   ] ) ; # 
   fhir:note ( [
      fhir:extension ( [
-       fhir:url [
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator>
-       ] ;
+       fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator"^^xsd:anyURI ] ;
        fhir:value [
          a fhir:CodeableConcept ;
          fhir:coding ( [
-           fhir:system [
-             fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator"^^xsd:anyURI ;
-             fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator>
-           ] ;
+           fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator"^^xsd:anyURI ] ;
            fhir:code [ fhir:v "titreObjectif" ]
          ] )
        ]
@@ -755,7 +536,7 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif"^^xsd:anyURI ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif>
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif>
      ] )
   ] ; # 
   fhir:text [
@@ -763,21 +544,15 @@
      fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Goal_tddui-pp-pa-goal-objectif-2-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : But tddui-pp-pa-goal-objectif-2-example</b></p><a name=\"tddui-pp-pa-goal-objectif-2-example\"> </a><a name=\"hctddui-pp-pa-goal-objectif-2-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-goal-objectif.html\">TDDUI Goal Objectif</a></p></div><p><b>TDDUI CarePlan Projet Perso Ref</b>: <a href=\"CarePlan-tddui-pp-pa-careplan-example.html\">CarePlan Projet personnalisé de Mme Jeanne L.</a></p><p><b>identifier</b>: <code>https://identifiant-medicosocial-objectif.esante.gouv.fr</code>/3480787529/123456789-OBJE-1235</p><p><b>lifecycleStatus</b>: Active</p><p><b>description</b>: <span title=\"Codes :\">Stabiliser l'état nutritionnel et restaurer le plaisir alimentaire sur 12 mois.</span></p><p><b>subject</b>: <a href=\"Patient-tddui-pp-pa-patient-example-pp.html\">Jeanne L. (official) Female, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/123456789)</a></p><p><b>addresses</b>: <a href=\"ServiceRequest-tddui-pp-pa-servicerequest-besoin-2-example.html\">ServiceRequest </a></p><p><b>note</b>: </p><blockquote><div><p>Objectif 2</p>\n</div></blockquote></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:extension ( [
-     fhir:url [
-       fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference"^^xsd:anyURI ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference>
-     ] ;
+     fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference"^^xsd:anyURI ] ;
      fhir:value [
        a fhir:Reference ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CarePlan/tddui-pp-pa-careplan-example> ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/CarePlan/tddui-pp-pa-careplan-example> ;
        fhir:reference [ fhir:v "CarePlan/tddui-pp-pa-careplan-example" ]
      ]
   ] ) ; # 
   fhir:identifier ( [
-     fhir:system [
-       fhir:v "https://identifiant-medicosocial-objectif.esante.gouv.fr"^^xsd:anyURI ;
-       fhir:l <https://identifiant-medicosocial-objectif.esante.gouv.fr>
-     ] ;
+     fhir:system [ fhir:v "https://identifiant-medicosocial-objectif.esante.gouv.fr"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "3480787529/123456789-OBJE-1235" ]
   ] ) ; # 
   fhir:lifecycleStatus [ fhir:v "active"] ; # 
@@ -785,26 +560,20 @@
      fhir:text [ fhir:v "Stabiliser l'état nutritionnel et restaurer le plaisir alimentaire sur 12 mois." ]
   ] ; # 
   fhir:subject [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-pp-pa-patient-example-pp> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-pp-pa-patient-example-pp> ;
      fhir:reference [ fhir:v "Patient/tddui-pp-pa-patient-example-pp" ]
   ] ; # 
   fhir:addresses ( [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/ServiceRequest/tddui-pp-pa-servicerequest-besoin-2-example> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/ServiceRequest/tddui-pp-pa-servicerequest-besoin-2-example> ;
      fhir:reference [ fhir:v "ServiceRequest/tddui-pp-pa-servicerequest-besoin-2-example" ]
   ] ) ; # 
   fhir:note ( [
      fhir:extension ( [
-       fhir:url [
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator>
-       ] ;
+       fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator"^^xsd:anyURI ] ;
        fhir:value [
          a fhir:CodeableConcept ;
          fhir:coding ( [
-           fhir:system [
-             fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator"^^xsd:anyURI ;
-             fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator>
-           ] ;
+           fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator"^^xsd:anyURI ] ;
            fhir:code [ fhir:v "titreObjectif" ]
          ] )
        ]
@@ -817,7 +586,7 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif"^^xsd:anyURI ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif>
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif>
      ] )
   ] ; # 
   fhir:text [
@@ -825,21 +594,15 @@
      fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Goal_tddui-pp-pa-goal-objectif-3-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : But tddui-pp-pa-goal-objectif-3-example</b></p><a name=\"tddui-pp-pa-goal-objectif-3-example\"> </a><a name=\"hctddui-pp-pa-goal-objectif-3-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-goal-objectif.html\">TDDUI Goal Objectif</a></p></div><p><b>TDDUI CarePlan Projet Perso Ref</b>: <a href=\"CarePlan-tddui-pp-pa-careplan-example.html\">CarePlan Projet personnalisé de Mme Jeanne L.</a></p><p><b>identifier</b>: <code>https://identifiant-medicosocial-objectif.esante.gouv.fr</code>/3480787529/123456789-OBJE-1236</p><p><b>lifecycleStatus</b>: Active</p><p><b>description</b>: <span title=\"Codes :\">Maintenir le lien social.</span></p><p><b>subject</b>: <a href=\"Patient-tddui-pp-pa-patient-example-pp.html\">Jeanne L. (official) Female, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/123456789)</a></p><p><b>addresses</b>: <a href=\"ServiceRequest-tddui-pp-pa-servicerequest-besoin-3-example.html\">ServiceRequest </a></p><p><b>note</b>: </p><blockquote><div><p>Objectif 3</p>\n</div></blockquote></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:extension ( [
-     fhir:url [
-       fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference"^^xsd:anyURI ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference>
-     ] ;
+     fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference"^^xsd:anyURI ] ;
      fhir:value [
        a fhir:Reference ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CarePlan/tddui-pp-pa-careplan-example> ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/CarePlan/tddui-pp-pa-careplan-example> ;
        fhir:reference [ fhir:v "CarePlan/tddui-pp-pa-careplan-example" ]
      ]
   ] ) ; # 
   fhir:identifier ( [
-     fhir:system [
-       fhir:v "https://identifiant-medicosocial-objectif.esante.gouv.fr"^^xsd:anyURI ;
-       fhir:l <https://identifiant-medicosocial-objectif.esante.gouv.fr>
-     ] ;
+     fhir:system [ fhir:v "https://identifiant-medicosocial-objectif.esante.gouv.fr"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "3480787529/123456789-OBJE-1236" ]
   ] ) ; # 
   fhir:lifecycleStatus [ fhir:v "active"] ; # 
@@ -847,26 +610,20 @@
      fhir:text [ fhir:v "Maintenir le lien social." ]
   ] ; # 
   fhir:subject [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-pp-pa-patient-example-pp> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-pp-pa-patient-example-pp> ;
      fhir:reference [ fhir:v "Patient/tddui-pp-pa-patient-example-pp" ]
   ] ; # 
   fhir:addresses ( [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/ServiceRequest/tddui-pp-pa-servicerequest-besoin-3-example> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/ServiceRequest/tddui-pp-pa-servicerequest-besoin-3-example> ;
      fhir:reference [ fhir:v "ServiceRequest/tddui-pp-pa-servicerequest-besoin-3-example" ]
   ] ) ; # 
   fhir:note ( [
      fhir:extension ( [
-       fhir:url [
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator>
-       ] ;
+       fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-discriminator"^^xsd:anyURI ] ;
        fhir:value [
          a fhir:CodeableConcept ;
          fhir:coding ( [
-           fhir:system [
-             fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator"^^xsd:anyURI ;
-             fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator>
-           ] ;
+           fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator"^^xsd:anyURI ] ;
            fhir:code [ fhir:v "titreObjectif" ]
          ] )
        ]
@@ -879,7 +636,7 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner"^^xsd:anyURI ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner>
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner>
      ] )
   ] ; # 
   fhir:text [
@@ -887,10 +644,7 @@
      fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_tddui-pp-pa-practitioner-ide-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Praticien tddui-pp-pa-practitioner-ide-example</b></p><a name=\"tddui-pp-pa-practitioner-ide-example\"> </a><a name=\"hctddui-pp-pa-practitioner-ide-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-practitioner.html\">TDDUI Practitioner</a></p></div><p><b>identifier</b>: <code>urn:oid:1.2.250.1.71.4.2.1</code>/10101234567</p><p><b>name</b>: Élodie Bernard </p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes :{https://mos.esante.gouv.fr/NOS/TRE_R48-DiplomeEtatFrancais/FHIR/TRE-R48-DiplomeEtatFrancais DE09}\">DE Infirmier</span></td></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:identifier ( [
-     fhir:system [
-       fhir:v "urn:oid:1.2.250.1.71.4.2.1"^^xsd:anyURI ;
-       fhir:l <urn:oid:1.2.250.1.71.4.2.1>
-     ] ;
+     fhir:system [ fhir:v "urn:oid:1.2.250.1.71.4.2.1"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "10101234567" ]
   ] ) ; # 
   fhir:name ( [
@@ -901,10 +655,7 @@
   fhir:qualification ( [
      fhir:code [
        fhir:coding ( [
-         fhir:system [
-           fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R48-DiplomeEtatFrancais/FHIR/TRE-R48-DiplomeEtatFrancais"^^xsd:anyURI ;
-           fhir:l <https://mos.esante.gouv.fr/NOS/TRE_R48-DiplomeEtatFrancais/FHIR/TRE-R48-DiplomeEtatFrancais>
-         ] ;
+         fhir:system [ fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R48-DiplomeEtatFrancais/FHIR/TRE-R48-DiplomeEtatFrancais"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "DE09" ] ;
          fhir:display [ fhir:v "DE Infirmier" ]
        ] )
@@ -916,7 +667,7 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"^^xsd:anyURI ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response>
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response>
      ] )
   ] ; # 
   fhir:text [
@@ -925,39 +676,30 @@
   ] ; # 
   fhir:extension ( [
      fhir:extension ( [
-       fhir:url [
-         fhir:v "TDDUIHolder"^^xsd:anyURI ;
-         fhir:l fhir:TDDUIHolder
-       ] ;
+       fhir:url [ fhir:v "TDDUIHolder"^^xsd:anyURI ] ;
        fhir:value [
          a fhir:Reference ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Organization/tddui-organization-example> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Organization/tddui-organization-example> ;
          fhir:reference [ fhir:v "Organization/tddui-organization-example" ]
        ]
      ] ) ;
-     fhir:url [
-       fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant"^^xsd:anyURI ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant>
-     ]
+     fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant"^^xsd:anyURI ]
   ] ) ; # 
   fhir:identifier [
-     fhir:system [
-       fhir:v "https://identifiant-medicosocial-evaluation.esante.gouv.fr"^^xsd:anyURI ;
-       fhir:l <https://identifiant-medicosocial-evaluation.esante.gouv.fr>
-     ] ;
+     fhir:system [ fhir:v "https://identifiant-medicosocial-evaluation.esante.gouv.fr"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "3480787529/123456789-EVAL-1234" ]
   ] ; # 
   fhir:questionnaire [
      fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/Questionnaire/tddui-questionnaire-aggir-pa-ssiad"^^xsd:anyURI ;
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Questionnaire/tddui-questionnaire-aggir-pa-ssiad>
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Questionnaire/tddui-questionnaire-aggir-pa-ssiad>
   ] ; # 
   fhir:status [ fhir:v "completed"] ; # 
   fhir:subject [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-pp-pa-patient-example-pp> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-pp-pa-patient-example-pp> ;
      fhir:reference [ fhir:v "Patient/tddui-pp-pa-patient-example-pp" ]
   ] ; # 
   fhir:source [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-pp-pa-patient-example-pp> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-pp-pa-patient-example-pp> ;
      fhir:reference [ fhir:v "Patient/tddui-pp-pa-patient-example-pp" ]
   ] ; # 
   fhir:item ( [
@@ -966,10 +708,7 @@
      fhir:answer ( [
        fhir:value [
          a fhir:Coding ;
-         fhir:system [
-           fhir:v "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis"^^xsd:anyURI ;
-           fhir:l <https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis>
-         ] ;
+         fhir:system [ fhir:v "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "MED-341" ] ;
          fhir:display [ fhir:v "GIR-3" ]
        ]
@@ -981,7 +720,7 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin"^^xsd:anyURI ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin>
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin>
      ] )
   ] ; # 
   fhir:text [
@@ -989,14 +728,11 @@
      fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_tddui-pp-pa-servicerequest-besoin-1-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : DemandeService tddui-pp-pa-servicerequest-besoin-1-example</b></p><a name=\"tddui-pp-pa-servicerequest-besoin-1-example\"> </a><a name=\"hctddui-pp-pa-servicerequest-besoin-1-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-service-request-besoin.html\">TDDUI ServiceRequest Besoin</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-besoin.esante.gouv.fr</code>/3480787529/123456789-BESO-1234</p><p><b>basedOn</b>: <a href=\"CarePlan-tddui-pp-pa-careplan-example.html\">CarePlan Projet personnalisé de Mme Jeanne L.</a></p><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>code</b>: <span title=\"Codes :\">Besoin d'aide pour la mobilité et les déplacements.</span></p><p><b>subject</b>: <a href=\"Patient-tddui-pp-pa-patient-example-pp.html\">Jeanne L. (official) Female, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/123456789)</a></p></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:identifier ( [
-     fhir:system [
-       fhir:v "https://identifiant-medicosocial-besoin.esante.gouv.fr"^^xsd:anyURI ;
-       fhir:l <https://identifiant-medicosocial-besoin.esante.gouv.fr>
-     ] ;
+     fhir:system [ fhir:v "https://identifiant-medicosocial-besoin.esante.gouv.fr"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "3480787529/123456789-BESO-1234" ]
   ] ) ; # 
   fhir:basedOn ( [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CarePlan/tddui-pp-pa-careplan-example> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/CarePlan/tddui-pp-pa-careplan-example> ;
      fhir:reference [ fhir:v "CarePlan/tddui-pp-pa-careplan-example" ]
   ] ) ; # 
   fhir:status [ fhir:v "active"] ; # 
@@ -1005,7 +741,7 @@
      fhir:text [ fhir:v "Besoin d'aide pour la mobilité et les déplacements." ]
   ] ; # 
   fhir:subject [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-pp-pa-patient-example-pp> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-pp-pa-patient-example-pp> ;
      fhir:reference [ fhir:v "Patient/tddui-pp-pa-patient-example-pp" ]
   ] . # 
 
@@ -1014,7 +750,7 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin"^^xsd:anyURI ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin>
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin>
      ] )
   ] ; # 
   fhir:text [
@@ -1022,14 +758,11 @@
      fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_tddui-pp-pa-servicerequest-besoin-2-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : DemandeService tddui-pp-pa-servicerequest-besoin-2-example</b></p><a name=\"tddui-pp-pa-servicerequest-besoin-2-example\"> </a><a name=\"hctddui-pp-pa-servicerequest-besoin-2-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-service-request-besoin.html\">TDDUI ServiceRequest Besoin</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-besoin.esante.gouv.fr</code>/3480787529/123456789-BESO-1235</p><p><b>basedOn</b>: <a href=\"CarePlan-tddui-pp-pa-careplan-example.html\">CarePlan Projet personnalisé de Mme Jeanne L.</a></p><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>code</b>: <span title=\"Codes :\">Besoin en terme de nutrition et alimentation.</span></p><p><b>subject</b>: <a href=\"Patient-tddui-pp-pa-patient-example-pp.html\">Jeanne L. (official) Female, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/123456789)</a></p></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:identifier ( [
-     fhir:system [
-       fhir:v "https://identifiant-medicosocial-besoin.esante.gouv.fr"^^xsd:anyURI ;
-       fhir:l <https://identifiant-medicosocial-besoin.esante.gouv.fr>
-     ] ;
+     fhir:system [ fhir:v "https://identifiant-medicosocial-besoin.esante.gouv.fr"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "3480787529/123456789-BESO-1235" ]
   ] ) ; # 
   fhir:basedOn ( [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CarePlan/tddui-pp-pa-careplan-example> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/CarePlan/tddui-pp-pa-careplan-example> ;
      fhir:reference [ fhir:v "CarePlan/tddui-pp-pa-careplan-example" ]
   ] ) ; # 
   fhir:status [ fhir:v "active"] ; # 
@@ -1038,7 +771,7 @@
      fhir:text [ fhir:v "Besoin en terme de nutrition et alimentation." ]
   ] ; # 
   fhir:subject [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-pp-pa-patient-example-pp> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-pp-pa-patient-example-pp> ;
      fhir:reference [ fhir:v "Patient/tddui-pp-pa-patient-example-pp" ]
   ] . # 
 
@@ -1047,7 +780,7 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin"^^xsd:anyURI ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin>
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin>
      ] )
   ] ; # 
   fhir:text [
@@ -1055,14 +788,11 @@
      fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_tddui-pp-pa-servicerequest-besoin-3-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : DemandeService tddui-pp-pa-servicerequest-besoin-3-example</b></p><a name=\"tddui-pp-pa-servicerequest-besoin-3-example\"> </a><a name=\"hctddui-pp-pa-servicerequest-besoin-3-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-service-request-besoin.html\">TDDUI ServiceRequest Besoin</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-besoin.esante.gouv.fr</code>/3480787529/123456789-BESO-1236</p><p><b>basedOn</b>: <a href=\"CarePlan-tddui-pp-pa-careplan-example.html\">CarePlan Projet personnalisé de Mme Jeanne L.</a></p><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>code</b>: <span title=\"Codes :\">Besoin de maintien du lien social et d'activités récréatives.</span></p><p><b>subject</b>: <a href=\"Patient-tddui-pp-pa-patient-example-pp.html\">Jeanne L. (official) Female, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/123456789)</a></p></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:identifier ( [
-     fhir:system [
-       fhir:v "https://identifiant-medicosocial-besoin.esante.gouv.fr"^^xsd:anyURI ;
-       fhir:l <https://identifiant-medicosocial-besoin.esante.gouv.fr>
-     ] ;
+     fhir:system [ fhir:v "https://identifiant-medicosocial-besoin.esante.gouv.fr"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "3480787529/123456789-BESO-1236" ]
   ] ) ; # 
   fhir:basedOn ( [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CarePlan/tddui-pp-pa-careplan-example> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/CarePlan/tddui-pp-pa-careplan-example> ;
      fhir:reference [ fhir:v "CarePlan/tddui-pp-pa-careplan-example" ]
   ] ) ; # 
   fhir:status [ fhir:v "active"] ; # 
@@ -1071,7 +801,7 @@
      fhir:text [ fhir:v "Besoin de maintien du lien social et d'activités récréatives." ]
   ] ; # 
   fhir:subject [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-pp-pa-patient-example-pp> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-pp-pa-patient-example-pp> ;
      fhir:reference [ fhir:v "Patient/tddui-pp-pa-patient-example-pp" ]
   ] . # 
 
@@ -1080,7 +810,7 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"^^xsd:anyURI ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action>
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action>
      ] )
   ] ; # 
   fhir:text [
@@ -1088,14 +818,11 @@
      fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_tddui-pp-pa-task-action-1-ergo-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Task tddui-pp-pa-task-action-1-ergo-example</b></p><a name=\"tddui-pp-pa-task-action-1-ergo-example\"> </a><a name=\"hctddui-pp-pa-task-action-1-ergo-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-task-action.html\">TDDUI Task Action</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-action.esante.gouv.fr</code>/3480787529/123456789-ACTI-1235</p><p><b>basedOn</b>: <a href=\"CarePlan-tddui-pp-ime-careplan-example.html\">CarePlan Projet personnalisé de Hugo en IME</a></p><p><b>status</b>: In Progress</p><p><b>intent</b>: plan</p><p><b>description</b>: Évaluer et aménagr la chambre (éclairage, barres, tapis)</p><p><b>owner</b>: Ergothérapeute</p><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action titre}\">Titre de l'action à mener.</span></p><p><b>value</b>: Action de l'ergothérapeute pour atteindre l'objectif 1</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action objectif}\">Objectif(s).</span></p><p><b>value</b>: <a href=\"Goal-tddui-pp-pa-goal-objectif-1-example.html\">Goal : extension = -&gt;CarePlan Projet personnalisé de Mme Jeanne L.,-&gt;DocumentReference : masterIdentifier = 3480787529/123456789-PPER-bilanObj-1234; status = current; identifier = https://identifiant-medicosocial-objectif.esante.gouv.fr#3480787529/123456789-OBJE-1234; lifecycleStatus = active; description = ; note = Objectif 1</a></p></blockquote></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:identifier ( [
-     fhir:system [
-       fhir:v "https://identifiant-medicosocial-action.esante.gouv.fr"^^xsd:anyURI ;
-       fhir:l <https://identifiant-medicosocial-action.esante.gouv.fr>
-     ] ;
+     fhir:system [ fhir:v "https://identifiant-medicosocial-action.esante.gouv.fr"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "3480787529/123456789-ACTI-1235" ]
   ] ) ; # 
   fhir:basedOn ( [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CarePlan/tddui-pp-ime-careplan-example> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/CarePlan/tddui-pp-ime-careplan-example> ;
      fhir:reference [ fhir:v "CarePlan/tddui-pp-ime-careplan-example" ]
   ] ) ; # 
   fhir:status [ fhir:v "in-progress"] ; # 
@@ -1107,30 +834,24 @@
   fhir:input ( [
      fhir:type [
        fhir:coding ( [
-         fhir:system [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action>
-         ] ;
+         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "titre" ]
        ] )
      ] ;
      fhir:value [
-       a fhir:String ;
+       a fhir:string ;
        fhir:v "Action de l'ergothérapeute pour atteindre l'objectif 1"
      ]
   ] [
      fhir:type [
        fhir:coding ( [
-         fhir:system [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action>
-         ] ;
+         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "objectif" ]
        ] )
      ] ;
      fhir:value [
        a fhir:Reference ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Goal/tddui-pp-pa-goal-objectif-1-example> ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Goal/tddui-pp-pa-goal-objectif-1-example> ;
        fhir:reference [ fhir:v "Goal/tddui-pp-pa-goal-objectif-1-example" ]
      ]
   ] ) . # 
@@ -1140,7 +861,7 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"^^xsd:anyURI ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action>
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action>
      ] )
   ] ; # 
   fhir:text [
@@ -1148,50 +869,41 @@
      fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_tddui-pp-pa-task-action-1-ide-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Task tddui-pp-pa-task-action-1-ide-example</b></p><a name=\"tddui-pp-pa-task-action-1-ide-example\"> </a><a name=\"hctddui-pp-pa-task-action-1-ide-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-task-action.html\">TDDUI Task Action</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-action.esante.gouv.fr</code>/3480787529/123456789-ACTI-1236</p><p><b>basedOn</b>: <a href=\"CarePlan-tddui-pp-ime-careplan-example.html\">CarePlan Projet personnalisé de Hugo en IME</a></p><p><b>status</b>: In Progress</p><p><b>intent</b>: plan</p><p><b>description</b>: Atelier éducation risque de chute</p><p><b>owner</b>: <a href=\"Practitioner-tddui-pp-pa-practitioner-ide-example.html\">Practitioner Élodie Bernard </a></p><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action titre}\">Titre de l'action à mener.</span></p><p><b>value</b>: Action de l'IDE pour atteindre l'objectif 1</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action objectif}\">Objectif(s).</span></p><p><b>value</b>: <a href=\"Goal-tddui-pp-pa-goal-objectif-1-example.html\">Goal : extension = -&gt;CarePlan Projet personnalisé de Mme Jeanne L.,-&gt;DocumentReference : masterIdentifier = 3480787529/123456789-PPER-bilanObj-1234; status = current; identifier = https://identifiant-medicosocial-objectif.esante.gouv.fr#3480787529/123456789-OBJE-1234; lifecycleStatus = active; description = ; note = Objectif 1</a></p></blockquote></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:identifier ( [
-     fhir:system [
-       fhir:v "https://identifiant-medicosocial-action.esante.gouv.fr"^^xsd:anyURI ;
-       fhir:l <https://identifiant-medicosocial-action.esante.gouv.fr>
-     ] ;
+     fhir:system [ fhir:v "https://identifiant-medicosocial-action.esante.gouv.fr"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "3480787529/123456789-ACTI-1236" ]
   ] ) ; # 
   fhir:basedOn ( [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CarePlan/tddui-pp-ime-careplan-example> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/CarePlan/tddui-pp-ime-careplan-example> ;
      fhir:reference [ fhir:v "CarePlan/tddui-pp-ime-careplan-example" ]
   ] ) ; # 
   fhir:status [ fhir:v "in-progress"] ; # 
   fhir:intent [ fhir:v "plan"] ; # 
   fhir:description [ fhir:v "Atelier éducation risque de chute"] ; # 
   fhir:owner [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Practitioner/tddui-pp-pa-practitioner-ide-example> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Practitioner/tddui-pp-pa-practitioner-ide-example> ;
      fhir:reference [ fhir:v "Practitioner/tddui-pp-pa-practitioner-ide-example" ]
   ] ; # 
   fhir:input ( [
      fhir:type [
        fhir:coding ( [
-         fhir:system [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action>
-         ] ;
+         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "titre" ]
        ] )
      ] ;
      fhir:value [
-       a fhir:String ;
+       a fhir:string ;
        fhir:v "Action de l'IDE pour atteindre l'objectif 1"
      ]
   ] [
      fhir:type [
        fhir:coding ( [
-         fhir:system [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action>
-         ] ;
+         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "objectif" ]
        ] )
      ] ;
      fhir:value [
        a fhir:Reference ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Goal/tddui-pp-pa-goal-objectif-1-example> ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Goal/tddui-pp-pa-goal-objectif-1-example> ;
        fhir:reference [ fhir:v "Goal/tddui-pp-pa-goal-objectif-1-example" ]
      ]
   ] ) . # 
@@ -1201,7 +913,7 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"^^xsd:anyURI ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action>
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action>
      ] )
   ] ; # 
   fhir:text [
@@ -1209,14 +921,11 @@
      fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_tddui-pp-pa-task-action-1-kine-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Task tddui-pp-pa-task-action-1-kine-example</b></p><a name=\"tddui-pp-pa-task-action-1-kine-example\"> </a><a name=\"hctddui-pp-pa-task-action-1-kine-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-task-action.html\">TDDUI Task Action</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-action.esante.gouv.fr</code>/3480787529/123456789-ACTI-1237</p><p><b>basedOn</b>: <a href=\"CarePlan-tddui-pp-ime-careplan-example.html\">CarePlan Projet personnalisé de Hugo en IME</a></p><p><b>status</b>: In Progress</p><p><b>intent</b>: plan</p><p><b>description</b>: Programme équilibre/marche 2×/semaine 12 semaines</p><p><b>owner</b>: Kinésithérapeute</p><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action titre}\">Titre de l'action à mener.</span></p><p><b>value</b>: Action du kinésithérapeute pour atteindre l'objectif 1</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action objectif}\">Objectif(s).</span></p><p><b>value</b>: <a href=\"Goal-tddui-pp-pa-goal-objectif-1-example.html\">Goal : extension = -&gt;CarePlan Projet personnalisé de Mme Jeanne L.,-&gt;DocumentReference : masterIdentifier = 3480787529/123456789-PPER-bilanObj-1234; status = current; identifier = https://identifiant-medicosocial-objectif.esante.gouv.fr#3480787529/123456789-OBJE-1234; lifecycleStatus = active; description = ; note = Objectif 1</a></p></blockquote></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:identifier ( [
-     fhir:system [
-       fhir:v "https://identifiant-medicosocial-action.esante.gouv.fr"^^xsd:anyURI ;
-       fhir:l <https://identifiant-medicosocial-action.esante.gouv.fr>
-     ] ;
+     fhir:system [ fhir:v "https://identifiant-medicosocial-action.esante.gouv.fr"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "3480787529/123456789-ACTI-1237" ]
   ] ) ; # 
   fhir:basedOn ( [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CarePlan/tddui-pp-ime-careplan-example> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/CarePlan/tddui-pp-ime-careplan-example> ;
      fhir:reference [ fhir:v "CarePlan/tddui-pp-ime-careplan-example" ]
   ] ) ; # 
   fhir:status [ fhir:v "in-progress"] ; # 
@@ -1228,30 +937,24 @@
   fhir:input ( [
      fhir:type [
        fhir:coding ( [
-         fhir:system [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action>
-         ] ;
+         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "titre" ]
        ] )
      ] ;
      fhir:value [
-       a fhir:String ;
+       a fhir:string ;
        fhir:v "Action du kinésithérapeute pour atteindre l'objectif 1"
      ]
   ] [
      fhir:type [
        fhir:coding ( [
-         fhir:system [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action>
-         ] ;
+         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "objectif" ]
        ] )
      ] ;
      fhir:value [
        a fhir:Reference ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Goal/tddui-pp-pa-goal-objectif-1-example> ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Goal/tddui-pp-pa-goal-objectif-1-example> ;
        fhir:reference [ fhir:v "Goal/tddui-pp-pa-goal-objectif-1-example" ]
      ]
   ] ) . # 
@@ -1261,7 +964,7 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"^^xsd:anyURI ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action>
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action>
      ] )
   ] ; # 
   fhir:text [
@@ -1269,14 +972,11 @@
      fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_tddui-pp-pa-task-action-2-anim-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Task tddui-pp-pa-task-action-2-anim-example</b></p><a name=\"tddui-pp-pa-task-action-2-anim-example\"> </a><a name=\"hctddui-pp-pa-task-action-2-anim-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-task-action.html\">TDDUI Task Action</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-action.esante.gouv.fr</code>/3480787529/123456789-ACTI-12341</p><p><b>basedOn</b>: <a href=\"CarePlan-tddui-pp-ime-careplan-example.html\">CarePlan Projet personnalisé de Hugo en IME</a></p><p><b>status</b>: In Progress</p><p><b>intent</b>: plan</p><p><b>description</b>: Atelier cuisine mensuel co‑animé avec résidents</p><p><b>owner</b>: Animatrice</p><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action titre}\">Titre de l'action à mener.</span></p><p><b>value</b>: Action de l'animatrice pour atteindre l'objectif 2</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action objectif}\">Objectif(s).</span></p><p><b>value</b>: <a href=\"Goal-tddui-pp-pa-goal-objectif-2-example.html\">Goal : extension = -&gt;CarePlan Projet personnalisé de Mme Jeanne L.; identifier = https://identifiant-medicosocial-objectif.esante.gouv.fr#3480787529/123456789-OBJE-1235; lifecycleStatus = active; description = ; note = Objectif 2</a></p></blockquote></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:identifier ( [
-     fhir:system [
-       fhir:v "https://identifiant-medicosocial-action.esante.gouv.fr"^^xsd:anyURI ;
-       fhir:l <https://identifiant-medicosocial-action.esante.gouv.fr>
-     ] ;
+     fhir:system [ fhir:v "https://identifiant-medicosocial-action.esante.gouv.fr"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "3480787529/123456789-ACTI-12341" ]
   ] ) ; # 
   fhir:basedOn ( [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CarePlan/tddui-pp-ime-careplan-example> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/CarePlan/tddui-pp-ime-careplan-example> ;
      fhir:reference [ fhir:v "CarePlan/tddui-pp-ime-careplan-example" ]
   ] ) ; # 
   fhir:status [ fhir:v "in-progress"] ; # 
@@ -1288,30 +988,24 @@
   fhir:input ( [
      fhir:type [
        fhir:coding ( [
-         fhir:system [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action>
-         ] ;
+         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "titre" ]
        ] )
      ] ;
      fhir:value [
-       a fhir:String ;
+       a fhir:string ;
        fhir:v "Action de l'animatrice pour atteindre l'objectif 2"
      ]
   ] [
      fhir:type [
        fhir:coding ( [
-         fhir:system [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action>
-         ] ;
+         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "objectif" ]
        ] )
      ] ;
      fhir:value [
        a fhir:Reference ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Goal/tddui-pp-pa-goal-objectif-2-example> ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Goal/tddui-pp-pa-goal-objectif-2-example> ;
        fhir:reference [ fhir:v "Goal/tddui-pp-pa-goal-objectif-2-example" ]
      ]
   ] ) . # 
@@ -1321,7 +1015,7 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"^^xsd:anyURI ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action>
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action>
      ] )
   ] ; # 
   fhir:text [
@@ -1329,50 +1023,41 @@
      fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_tddui-pp-pa-task-action-2-ide-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Task tddui-pp-pa-task-action-2-ide-example</b></p><a name=\"tddui-pp-pa-task-action-2-ide-example\"> </a><a name=\"hctddui-pp-pa-task-action-2-ide-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-task-action.html\">TDDUI Task Action</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-action.esante.gouv.fr</code>/3480787529/123456789-ACTI-12342</p><p><b>basedOn</b>: <a href=\"CarePlan-tddui-pp-ime-careplan-example.html\">CarePlan Projet personnalisé de Hugo en IME</a></p><p><b>status</b>: In Progress</p><p><b>intent</b>: plan</p><p><b>description</b>: Pesée mensuelle et dépistage dénutrition</p><p><b>owner</b>: <a href=\"Practitioner-tddui-pp-pa-practitioner-ide-example.html\">Practitioner Élodie Bernard </a></p><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action titre}\">Titre de l'action à mener.</span></p><p><b>value</b>: Action de l'IDE pour atteindre l'objectif 2</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action objectif}\">Objectif(s).</span></p><p><b>value</b>: <a href=\"Goal-tddui-pp-pa-goal-objectif-2-example.html\">Goal : extension = -&gt;CarePlan Projet personnalisé de Mme Jeanne L.; identifier = https://identifiant-medicosocial-objectif.esante.gouv.fr#3480787529/123456789-OBJE-1235; lifecycleStatus = active; description = ; note = Objectif 2</a></p></blockquote></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:identifier ( [
-     fhir:system [
-       fhir:v "https://identifiant-medicosocial-action.esante.gouv.fr"^^xsd:anyURI ;
-       fhir:l <https://identifiant-medicosocial-action.esante.gouv.fr>
-     ] ;
+     fhir:system [ fhir:v "https://identifiant-medicosocial-action.esante.gouv.fr"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "3480787529/123456789-ACTI-12342" ]
   ] ) ; # 
   fhir:basedOn ( [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CarePlan/tddui-pp-ime-careplan-example> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/CarePlan/tddui-pp-ime-careplan-example> ;
      fhir:reference [ fhir:v "CarePlan/tddui-pp-ime-careplan-example" ]
   ] ) ; # 
   fhir:status [ fhir:v "in-progress"] ; # 
   fhir:intent [ fhir:v "plan"] ; # 
   fhir:description [ fhir:v "Pesée mensuelle et dépistage dénutrition"] ; # 
   fhir:owner [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Practitioner/tddui-pp-pa-practitioner-ide-example> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Practitioner/tddui-pp-pa-practitioner-ide-example> ;
      fhir:reference [ fhir:v "Practitioner/tddui-pp-pa-practitioner-ide-example" ]
   ] ; # 
   fhir:input ( [
      fhir:type [
        fhir:coding ( [
-         fhir:system [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action>
-         ] ;
+         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "titre" ]
        ] )
      ] ;
      fhir:value [
-       a fhir:String ;
+       a fhir:string ;
        fhir:v "Action de l'IDE pour atteindre l'objectif 2"
      ]
   ] [
      fhir:type [
        fhir:coding ( [
-         fhir:system [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action>
-         ] ;
+         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "objectif" ]
        ] )
      ] ;
      fhir:value [
        a fhir:Reference ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Goal/tddui-pp-pa-goal-objectif-2-example> ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Goal/tddui-pp-pa-goal-objectif-2-example> ;
        fhir:reference [ fhir:v "Goal/tddui-pp-pa-goal-objectif-2-example" ]
      ]
   ] ) . # 
@@ -1382,7 +1067,7 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"^^xsd:anyURI ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action>
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action>
      ] )
   ] ; # 
   fhir:text [
@@ -1390,14 +1075,11 @@
      fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_tddui-pp-pa-task-action-3-psy-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Task tddui-pp-pa-task-action-3-psy-example</b></p><a name=\"tddui-pp-pa-task-action-3-psy-example\"> </a><a name=\"hctddui-pp-pa-task-action-3-psy-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-task-action.html\">TDDUI Task Action</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-action.esante.gouv.fr</code>/3480787529/123456789-ACTI-1238</p><p><b>basedOn</b>: <a href=\"CarePlan-tddui-pp-ime-careplan-example.html\">CarePlan Projet personnalisé de Hugo en IME</a></p><p><b>status</b>: In Progress</p><p><b>intent</b>: plan</p><p><b>description</b>: Entretien de satisfaction semestriel</p><p><b>owner</b>: Psychologue</p><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action titre}\">Titre de l'action à mener.</span></p><p><b>value</b>: Action du psychologue pour atteindre l'objectif 3</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action objectif}\">Objectif(s).</span></p><p><b>value</b>: <a href=\"Goal-tddui-pp-pa-goal-objectif-3-example.html\">Goal : extension = -&gt;CarePlan Projet personnalisé de Mme Jeanne L.; identifier = https://identifiant-medicosocial-objectif.esante.gouv.fr#3480787529/123456789-OBJE-1236; lifecycleStatus = active; description = ; note = Objectif 3</a></p></blockquote></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:identifier ( [
-     fhir:system [
-       fhir:v "https://identifiant-medicosocial-action.esante.gouv.fr"^^xsd:anyURI ;
-       fhir:l <https://identifiant-medicosocial-action.esante.gouv.fr>
-     ] ;
+     fhir:system [ fhir:v "https://identifiant-medicosocial-action.esante.gouv.fr"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "3480787529/123456789-ACTI-1238" ]
   ] ) ; # 
   fhir:basedOn ( [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CarePlan/tddui-pp-ime-careplan-example> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/CarePlan/tddui-pp-ime-careplan-example> ;
      fhir:reference [ fhir:v "CarePlan/tddui-pp-ime-careplan-example" ]
   ] ) ; # 
   fhir:status [ fhir:v "in-progress"] ; # 
@@ -1409,30 +1091,24 @@
   fhir:input ( [
      fhir:type [
        fhir:coding ( [
-         fhir:system [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action>
-         ] ;
+         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "titre" ]
        ] )
      ] ;
      fhir:value [
-       a fhir:String ;
+       a fhir:string ;
        fhir:v "Action du psychologue pour atteindre l'objectif 3"
      ]
   ] [
      fhir:type [
        fhir:coding ( [
-         fhir:system [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action>
-         ] ;
+         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "objectif" ]
        ] )
      ] ;
      fhir:value [
        a fhir:Reference ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Goal/tddui-pp-pa-goal-objectif-3-example> ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Goal/tddui-pp-pa-goal-objectif-3-example> ;
        fhir:reference [ fhir:v "Goal/tddui-pp-pa-goal-objectif-3-example" ]
      ]
   ] ) . # 
@@ -1442,7 +1118,7 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource"^^xsd:anyURI ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource>
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource>
      ] )
   ] ; # 
   fhir:text [
@@ -1450,18 +1126,15 @@
      fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_tddui-pp-pa-task-moyen-ressource-ergo-1-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Task tddui-pp-pa-task-moyen-ressource-ergo-1-example</b></p><a name=\"tddui-pp-pa-task-moyen-ressource-ergo-1-example\"> </a><a name=\"hctddui-pp-pa-task-moyen-ressource-ergo-1-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-task-moyen-ressource.html\">TDDUI Task MoyenRessource</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-moyenressource.esante.gouv.fr</code>/3480787529/123456789-MORE-1234</p><p><b>basedOn</b>: <a href=\"CarePlan-tddui-pp-pa-careplan-example.html\">CarePlan Projet personnalisé de Mme Jeanne L.</a></p><p><b>partOf</b>: <a href=\"Task-tddui-pp-pa-task-action-1-ergo-example.html\">Task : identifier = https://identifiant-medicosocial-action.esante.gouv.fr#3480787529/123456789-ACTI-1235; status = in-progress; intent = plan; description = Évaluer et aménagr la chambre (éclairage, barres, tapis)</a></p><p><b>status</b>: In Progress</p><p><b>intent</b>: plan</p><p><b>description</b>: Barres d'appui et balisage lumineux (budget EHPAD)</p><h3>Inputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-moyen-ressource titre}\">Titre du moyen ou de la ressource à utiliser.</span></td><td>Moyens mis en œuvre pour l'objectif 1 (avec rattachement SERAFIN‑PH)</td></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:identifier ( [
-     fhir:system [
-       fhir:v "https://identifiant-medicosocial-moyenressource.esante.gouv.fr"^^xsd:anyURI ;
-       fhir:l <https://identifiant-medicosocial-moyenressource.esante.gouv.fr>
-     ] ;
+     fhir:system [ fhir:v "https://identifiant-medicosocial-moyenressource.esante.gouv.fr"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "3480787529/123456789-MORE-1234" ]
   ] ) ; # 
   fhir:basedOn ( [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CarePlan/tddui-pp-pa-careplan-example> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/CarePlan/tddui-pp-pa-careplan-example> ;
      fhir:reference [ fhir:v "CarePlan/tddui-pp-pa-careplan-example" ]
   ] ) ; # 
   fhir:partOf ( [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Task/tddui-pp-pa-task-action-1-ergo-example> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Task/tddui-pp-pa-task-action-1-ergo-example> ;
      fhir:reference [ fhir:v "Task/tddui-pp-pa-task-action-1-ergo-example" ]
   ] ) ; # 
   fhir:status [ fhir:v "in-progress"] ; # 
@@ -1470,15 +1143,12 @@
   fhir:input ( [
      fhir:type [
        fhir:coding ( [
-         fhir:system [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-moyen-ressource"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-moyen-ressource>
-         ] ;
+         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-moyen-ressource"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "titre" ]
        ] )
      ] ;
      fhir:value [
-       a fhir:String ;
+       a fhir:string ;
        fhir:v "Moyens mis en œuvre pour l'objectif 1 (avec rattachement SERAFIN‑PH)"
      ]
   ] ) . # 
@@ -1488,7 +1158,7 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource"^^xsd:anyURI ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource>
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource>
      ] )
   ] ; # 
   fhir:text [
@@ -1496,18 +1166,15 @@
      fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_tddui-pp-pa-task-moyen-ressource-ide-1-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Task tddui-pp-pa-task-moyen-ressource-ide-1-example</b></p><a name=\"tddui-pp-pa-task-moyen-ressource-ide-1-example\"> </a><a name=\"hctddui-pp-pa-task-moyen-ressource-ide-1-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-task-moyen-ressource.html\">TDDUI Task MoyenRessource</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-moyenressource.esante.gouv.fr</code>/3480787529/123456789-MORE-1236</p><p><b>basedOn</b>: <a href=\"CarePlan-tddui-pp-pa-careplan-example.html\">CarePlan Projet personnalisé de Mme Jeanne L.</a></p><p><b>partOf</b>: <a href=\"Task-tddui-pp-pa-task-action-1-ide-example.html\">Task : identifier = https://identifiant-medicosocial-action.esante.gouv.fr#3480787529/123456789-ACTI-1236; status = in-progress; intent = plan; description = Atelier éducation risque de chute</a></p><p><b>status</b>: In Progress</p><p><b>intent</b>: plan</p><p><b>description</b>: Temps de coordination IDE/médecin coordonnateur</p><h3>Inputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-moyen-ressource titre}\">Titre du moyen ou de la ressource à utiliser.</span></td><td>Moyens mis en œuvre pour l'objectif 1 (avec rattachement SERAFIN‑PH)</td></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:identifier ( [
-     fhir:system [
-       fhir:v "https://identifiant-medicosocial-moyenressource.esante.gouv.fr"^^xsd:anyURI ;
-       fhir:l <https://identifiant-medicosocial-moyenressource.esante.gouv.fr>
-     ] ;
+     fhir:system [ fhir:v "https://identifiant-medicosocial-moyenressource.esante.gouv.fr"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "3480787529/123456789-MORE-1236" ]
   ] ) ; # 
   fhir:basedOn ( [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CarePlan/tddui-pp-pa-careplan-example> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/CarePlan/tddui-pp-pa-careplan-example> ;
      fhir:reference [ fhir:v "CarePlan/tddui-pp-pa-careplan-example" ]
   ] ) ; # 
   fhir:partOf ( [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Task/tddui-pp-pa-task-action-1-ide-example> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Task/tddui-pp-pa-task-action-1-ide-example> ;
      fhir:reference [ fhir:v "Task/tddui-pp-pa-task-action-1-ide-example" ]
   ] ) ; # 
   fhir:status [ fhir:v "in-progress"] ; # 
@@ -1516,15 +1183,12 @@
   fhir:input ( [
      fhir:type [
        fhir:coding ( [
-         fhir:system [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-moyen-ressource"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-moyen-ressource>
-         ] ;
+         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-moyen-ressource"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "titre" ]
        ] )
      ] ;
      fhir:value [
-       a fhir:String ;
+       a fhir:string ;
        fhir:v "Moyens mis en œuvre pour l'objectif 1 (avec rattachement SERAFIN‑PH)"
      ]
   ] ) . # 
@@ -1534,7 +1198,7 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource"^^xsd:anyURI ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource>
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource>
      ] )
   ] ; # 
   fhir:text [
@@ -1542,18 +1206,15 @@
      fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_tddui-pp-pa-task-moyen-ressource-ide-2-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Task tddui-pp-pa-task-moyen-ressource-ide-2-example</b></p><a name=\"tddui-pp-pa-task-moyen-ressource-ide-2-example\"> </a><a name=\"hctddui-pp-pa-task-moyen-ressource-ide-2-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-task-moyen-ressource.html\">TDDUI Task MoyenRessource</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-moyenressource.esante.gouv.fr</code>/3480787529/123456789-MORE-123615</p><p><b>basedOn</b>: <a href=\"CarePlan-tddui-pp-pa-careplan-example.html\">CarePlan Projet personnalisé de Mme Jeanne L.</a></p><p><b>partOf</b>: <a href=\"Task-tddui-pp-pa-task-action-2-ide-example.html\">Task : identifier = https://identifiant-medicosocial-action.esante.gouv.fr#3480787529/123456789-ACTI-12342; status = in-progress; intent = plan; description = Pesée mensuelle et dépistage dénutrition</a></p><p><b>status</b>: In Progress</p><p><b>intent</b>: plan</p><p><b>description</b>: Carnet de suivi poids</p><h3>Inputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-moyen-ressource titre}\">Titre du moyen ou de la ressource à utiliser.</span></td><td>Moyens mis en œuvre pour l'objectif 2 (avec rattachement SERAFIN‑PH)</td></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:identifier ( [
-     fhir:system [
-       fhir:v "https://identifiant-medicosocial-moyenressource.esante.gouv.fr"^^xsd:anyURI ;
-       fhir:l <https://identifiant-medicosocial-moyenressource.esante.gouv.fr>
-     ] ;
+     fhir:system [ fhir:v "https://identifiant-medicosocial-moyenressource.esante.gouv.fr"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "3480787529/123456789-MORE-123615" ]
   ] ) ; # 
   fhir:basedOn ( [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CarePlan/tddui-pp-pa-careplan-example> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/CarePlan/tddui-pp-pa-careplan-example> ;
      fhir:reference [ fhir:v "CarePlan/tddui-pp-pa-careplan-example" ]
   ] ) ; # 
   fhir:partOf ( [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Task/tddui-pp-pa-task-action-2-ide-example> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Task/tddui-pp-pa-task-action-2-ide-example> ;
      fhir:reference [ fhir:v "Task/tddui-pp-pa-task-action-2-ide-example" ]
   ] ) ; # 
   fhir:status [ fhir:v "in-progress"] ; # 
@@ -1562,15 +1223,12 @@
   fhir:input ( [
      fhir:type [
        fhir:coding ( [
-         fhir:system [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-moyen-ressource"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-moyen-ressource>
-         ] ;
+         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-moyen-ressource"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "titre" ]
        ] )
      ] ;
      fhir:value [
-       a fhir:String ;
+       a fhir:string ;
        fhir:v "Moyens mis en œuvre pour l'objectif 2 (avec rattachement SERAFIN‑PH)"
      ]
   ] ) . # 
@@ -1580,7 +1238,7 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource"^^xsd:anyURI ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource>
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource>
      ] )
   ] ; # 
   fhir:text [
@@ -1588,18 +1246,15 @@
      fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_tddui-pp-pa-task-moyen-ressource-kine-1-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Task tddui-pp-pa-task-moyen-ressource-kine-1-example</b></p><a name=\"tddui-pp-pa-task-moyen-ressource-kine-1-example\"> </a><a name=\"hctddui-pp-pa-task-moyen-ressource-kine-1-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-task-moyen-ressource.html\">TDDUI Task MoyenRessource</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-moyenressource.esante.gouv.fr</code>/3480787529/123456789-MORE-1235</p><p><b>basedOn</b>: <a href=\"CarePlan-tddui-pp-pa-careplan-example.html\">CarePlan Projet personnalisé de Mme Jeanne L.</a></p><p><b>partOf</b>: <a href=\"Task-tddui-pp-pa-task-action-1-kine-example.html\">Task : identifier = https://identifiant-medicosocial-action.esante.gouv.fr#3480787529/123456789-ACTI-1237; status = in-progress; intent = plan; description = Programme équilibre/marche 2×/semaine 12 semaines</a></p><p><b>status</b>: In Progress</p><p><b>intent</b>: plan</p><p><b>description</b>: 30 h de kinésithérapie/6 mois</p><h3>Inputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-moyen-ressource titre}\">Titre du moyen ou de la ressource à utiliser.</span></td><td>Moyens mis en œuvre pour l'objectif 1 (avec rattachement SERAFIN‑PH)</td></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:identifier ( [
-     fhir:system [
-       fhir:v "https://identifiant-medicosocial-moyenressource.esante.gouv.fr"^^xsd:anyURI ;
-       fhir:l <https://identifiant-medicosocial-moyenressource.esante.gouv.fr>
-     ] ;
+     fhir:system [ fhir:v "https://identifiant-medicosocial-moyenressource.esante.gouv.fr"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "3480787529/123456789-MORE-1235" ]
   ] ) ; # 
   fhir:basedOn ( [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CarePlan/tddui-pp-pa-careplan-example> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/CarePlan/tddui-pp-pa-careplan-example> ;
      fhir:reference [ fhir:v "CarePlan/tddui-pp-pa-careplan-example" ]
   ] ) ; # 
   fhir:partOf ( [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Task/tddui-pp-pa-task-action-1-kine-example> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Task/tddui-pp-pa-task-action-1-kine-example> ;
      fhir:reference [ fhir:v "Task/tddui-pp-pa-task-action-1-kine-example" ]
   ] ) ; # 
   fhir:status [ fhir:v "in-progress"] ; # 
@@ -1608,15 +1263,12 @@
   fhir:input ( [
      fhir:type [
        fhir:coding ( [
-         fhir:system [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-moyen-ressource"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-moyen-ressource>
-         ] ;
+         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-moyen-ressource"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "titre" ]
        ] )
      ] ;
      fhir:value [
-       a fhir:String ;
+       a fhir:string ;
        fhir:v "Moyens mis en œuvre pour l'objectif 1 (avec rattachement SERAFIN‑PH)"
      ]
   ] ) . # 

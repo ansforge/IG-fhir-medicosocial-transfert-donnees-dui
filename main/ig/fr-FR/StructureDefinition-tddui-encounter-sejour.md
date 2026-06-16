@@ -116,7 +116,7 @@ Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slic
   "name" : "TDDUIEncounterSejour",
   "title" : "TDDUI Encounter Sejour",
   "status" : "active",
-  "date" : "2026-06-10T13:07:20+00:00",
+  "date" : "2026-06-16T08:06:32+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

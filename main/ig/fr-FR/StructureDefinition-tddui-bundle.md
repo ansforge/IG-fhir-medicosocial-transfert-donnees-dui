@@ -26,7 +26,7 @@ Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https:/
 
 ** Résumé **
 
-Obligatoire : 0 élément(48 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 0 élément(50 éléments obligatoire(s) imbriqué(s))
 
 **Structures**
 
@@ -56,6 +56,7 @@ Cette structure fait référence à ces autres structures:
 * [TDDUI Observation Cause Mortalite (https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-mortalite)](StructureDefinition-tddui-observation-cause-mortalite.md)
 * [TDDUI Observation Periode Scolaire (https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-periode-scolaire)](StructureDefinition-tddui-observation-periode-scolaire.md)
 * [TDDUI Observation Mobilite Usager (https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite-usager)](StructureDefinition-tddui-observation-mobilite-usager.md)
+* [TDDUI Goal Projet Vie (https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-projet-vie)](StructureDefinition-tddui-goal-projet-vie.md)
 
 **Slices**
 
@@ -71,7 +72,7 @@ Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slic
 
 ** Résumé **
 
-Obligatoire : 0 élément(48 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 0 élément(50 éléments obligatoire(s) imbriqué(s))
 
 **Structures**
 
@@ -101,6 +102,7 @@ Cette structure fait référence à ces autres structures:
 * [TDDUI Observation Cause Mortalite (https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-mortalite)](StructureDefinition-tddui-observation-cause-mortalite.md)
 * [TDDUI Observation Periode Scolaire (https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-periode-scolaire)](StructureDefinition-tddui-observation-periode-scolaire.md)
 * [TDDUI Observation Mobilite Usager (https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite-usager)](StructureDefinition-tddui-observation-mobilite-usager.md)
+* [TDDUI Goal Projet Vie (https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-projet-vie)](StructureDefinition-tddui-goal-projet-vie.md)
 
 **Slices**
 
@@ -125,7 +127,7 @@ Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slic
   "name" : "TDDUIBundle",
   "title" : "TDDUI Bundle",
   "status" : "active",
-  "date" : "2026-06-10T13:07:20+00:00",
+  "date" : "2026-06-16T08:06:32+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -835,6 +837,33 @@ Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slic
     },
     {
       "id" : "Bundle.entry:DUIObservationMobiliteUsager.request.method",
+      "path" : "Bundle.entry.request.method",
+      "patternCode" : "POST"
+    },
+    {
+      "id" : "Bundle.entry:DUIGoalProjetVie",
+      "path" : "Bundle.entry",
+      "sliceName" : "DUIGoalProjetVie",
+      "short" : "Goal conforming to the TDDUIGoalProjetVie profile, used to convey the life project.",
+      "min" : 0,
+      "max" : "*"
+    },
+    {
+      "id" : "Bundle.entry:DUIGoalProjetVie.resource",
+      "path" : "Bundle.entry.resource",
+      "min" : 1,
+      "type" : [{
+        "code" : "Goal",
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-projet-vie"]
+      }]
+    },
+    {
+      "id" : "Bundle.entry:DUIGoalProjetVie.request",
+      "path" : "Bundle.entry.request",
+      "min" : 1
+    },
+    {
+      "id" : "Bundle.entry:DUIGoalProjetVie.request.method",
       "path" : "Bundle.entry.request.method",
       "patternCode" : "POST"
     }]
