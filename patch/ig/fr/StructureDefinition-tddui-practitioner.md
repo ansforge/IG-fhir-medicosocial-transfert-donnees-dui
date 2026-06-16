@@ -91,7 +91,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-tddui-practitio
   "name" : "TDDUIPractitioner",
   "title" : "TDDUI Practitioner",
   "status" : "active",
-  "date" : "2026-06-16T13:07:35+00:00",
+  "date" : "2026-06-16T13:33:17+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

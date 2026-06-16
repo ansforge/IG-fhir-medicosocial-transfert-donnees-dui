@@ -34,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-task-transp
   "name" : "TDDUITaskTransportUsager",
   "title" : "TDDUI Task Transport Usager",
   "status" : "active",
-  "date" : "2026-06-16T13:07:35+00:00",
+  "date" : "2026-06-16T13:33:17+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

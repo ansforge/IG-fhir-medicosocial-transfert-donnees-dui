@@ -35,7 +35,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-document-re
   "name" : "TDDUIDocumentReference",
   "title" : "TDDUI DocumentReference",
   "status" : "active",
-  "date" : "2026-06-16T13:07:35+00:00",
+  "date" : "2026-06-16T13:33:17+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
