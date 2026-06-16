@@ -9,9 +9,10 @@ Usage: #example
 
 * status = #busy
 * extension[TDDUIFacturation].valueBoolean = true
-
+* extension[TDDUIPlannedAbsence].valueBoolean = true
 * start = "2025-04-17T08:00:00+02:00"
 * end = "2025-04-17T17:30:00+02:00"
 
 * schedule = Reference(tddui-schedule-example)
-* serviceType = https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r423-type-presence-absence#1
+* serviceType = https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r423-type-presence-absence#2
+* appointmentType = https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r424-motif-absence#1

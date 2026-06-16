@@ -3,7 +3,8 @@ Parent: FRCoreSlotProfile
 Id: tddui-slot-presence-absence
 Title: "TDDUI Slot Presence Absence"
 Description: "Profil de la ressource FRCoreSlotProfile permettant de représenter les présences et absences de l'usager."
-
+* obeys motifAbsenceCardinality
+* obeys absencePrevueCardinality
 * identifier 1..*
 
 * identifier ^slicing.discriminator.type = #pattern
@@ -44,6 +45,11 @@ Invariant: motifAbsenceCardinality
 Description: "Cet attribut est obligatoire pour les typePresenceAbsence=Absence"
 Severity: #error
 Expression: "(serviceType.coding.code='2') implies (appointmentType.exists())"
+
+Invariant: absencePrevueCardinality
+Description: "Cet attribut est obligatoire pour les typePresenceAbsence=Absence"
+Severity: #error
+Expression: "(serviceType.coding.code='2') implies (extension[TDDUIPlannedAbsence].exists())"
 
 
 Mapping:  ConceptMetier_TDDUISlotPresenceAbsence
