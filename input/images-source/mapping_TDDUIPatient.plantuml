@@ -35,7 +35,7 @@ map "Telecommunication : telecom" as Telecommunication #DarkGray {
 map "Adresse : address" as Adresse #DarkGray {
     commentaire => <&plus> TDDUIComment
     type => type
-    line *-> line
+    line_adresse *-> line
     localite => state
     codePostal => postalCode
     pays => country
