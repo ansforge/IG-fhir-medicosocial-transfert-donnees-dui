@@ -69,7 +69,7 @@ Cette structure fait référence à ces autres structures:
   "name" : "TDDUITaskTransportProfessionnel",
   "title" : "TDDUI Task Transport Professionnel",
   "status" : "active",
-  "date" : "2026-06-16T11:08:56+00:00",
+  "date" : "2026-06-16T14:39:41+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

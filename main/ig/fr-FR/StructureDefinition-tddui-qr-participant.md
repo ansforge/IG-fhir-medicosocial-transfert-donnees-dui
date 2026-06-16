@@ -55,7 +55,7 @@ Extension complexe: Extension permettant d'ajouter le responsable et le porteur 
   "name" : "TDDUIQRParticipant",
   "title" : "TDDUI QR Participant",
   "status" : "active",
-  "date" : "2026-06-16T11:08:56+00:00",
+  "date" : "2026-06-16T14:39:41+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
