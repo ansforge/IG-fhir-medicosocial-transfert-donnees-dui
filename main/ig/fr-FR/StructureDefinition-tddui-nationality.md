@@ -74,7 +74,7 @@ Extension complexe: The nationality of the patient or a related person.
   "name" : "TDDUINationalityExtension",
   "title" : "TDDUI Nationality Extension",
   "status" : "active",
-  "date" : "2026-06-16T10:46:14+00:00",
+  "date" : "2026-06-16T11:08:56+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

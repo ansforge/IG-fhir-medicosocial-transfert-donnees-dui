@@ -54,7 +54,7 @@ Extension simple avec le type boolean : Evènement nécessitant ou non la prése
   "name" : "TDDUIPatientPresent",
   "title" : "TDDUI Patient Present",
   "status" : "active",
-  "date" : "2026-06-16T10:46:14+00:00",
+  "date" : "2026-06-16T11:08:56+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

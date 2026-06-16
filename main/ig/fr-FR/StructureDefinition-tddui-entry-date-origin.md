@@ -54,7 +54,7 @@ Extension simple avec le type dateTime : Extension permettant de véhiculer la d
   "name" : "TDDUIEntryDateOrigin",
   "title" : "TDDUI Entry Date Origin",
   "status" : "active",
-  "date" : "2026-06-16T10:46:14+00:00",
+  "date" : "2026-06-16T11:08:56+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

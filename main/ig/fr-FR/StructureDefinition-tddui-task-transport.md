@@ -86,7 +86,7 @@ Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slic
   "name" : "TDDUITaskTransport",
   "title" : "TDDUI Task Transport",
   "status" : "active",
-  "date" : "2026-06-16T10:46:14+00:00",
+  "date" : "2026-06-16T11:08:56+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
