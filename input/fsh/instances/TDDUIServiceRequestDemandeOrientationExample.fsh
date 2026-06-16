@@ -5,7 +5,7 @@ Description: "Exemple d'une demande d'orientation."
 Usage: #example
 
 * identifier[idDemandeOrientation].value = "1234"
-* identifier[idDemandeOrientation].system = "urn:oid:2.16.840.1.113883.2.8.3.75.1"
+* identifier[idDemandeOrientation].system = "urn:uuid:53fefa32-fcbb-4ff8-8a92-55ee120877b7"
 
 * status = #active
 * intent = #plan
