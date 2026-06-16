@@ -54,7 +54,7 @@ Extension simple avec le type boolean : Indique la présence du participant à l
   "name" : "TDDUIParticipantPresent",
   "title" : "TDDUI Participant Present",
   "status" : "active",
-  "date" : "2026-06-16T08:52:34+00:00",
+  "date" : "2026-06-16T09:33:33+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
