@@ -35,7 +35,7 @@ Le rôle du Consommateur est de recueillir les données d'un logiciel DUI. Il co
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "France"
+      "display" : "France (la)"
     }]
   }],
   "kind" : "requirements",

@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-careplan-re
   "name" : "TDDUICarePlanProjetPersoRef",
   "title" : "TDDUI CarePlan Projet Perso Ref",
   "status" : "active",
-  "date" : "2026-06-16T10:03:26+00:00",
+  "date" : "2026-06-16T13:10:49+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -50,7 +50,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-careplan-re
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "France"
+      "display" : "France (la)"
     }]
   }],
   "fhirVersion" : "4.0.1",

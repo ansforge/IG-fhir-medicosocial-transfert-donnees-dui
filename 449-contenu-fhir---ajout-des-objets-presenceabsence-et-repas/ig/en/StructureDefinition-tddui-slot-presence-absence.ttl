@@ -19,7 +19,7 @@
   fhir:name [ fhir:v "TDDUISlotPresenceAbsence"] ; # 
   fhir:title [ fhir:v "TDDUI Slot Presence Absence"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-06-16T10:03:26+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-06-16T13:10:49+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -33,7 +33,7 @@
      fhir:coding ( [
        fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "FR" ] ;
-       fhir:display [ fhir:v "France" ]
+       fhir:display [ fhir:v "France (la)" ]
      ] )
   ] ) ; # 
   fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
@@ -158,7 +158,7 @@
          fhir:key [ fhir:v "absencePrevueCardinality" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Cet attribut est obligatoire pour les typePresenceAbsence=Absence" ] ;
-         fhir:expression [ fhir:v "(serviceType.coding.code='2') implies (extension[TDDUIPlannedAbsence].exists())" ] ;
+         fhir:expression [ fhir:v "(serviceType.coding.code='2') implies (extension.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-planned-absence').exists())" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-slot-presence-absence"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-slot-presence-absence>
@@ -2248,7 +2248,7 @@
          fhir:key [ fhir:v "absencePrevueCardinality" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Cet attribut est obligatoire pour les typePresenceAbsence=Absence" ] ;
-         fhir:expression [ fhir:v "(serviceType.coding.code='2') implies (extension[TDDUIPlannedAbsence].exists())" ] ;
+         fhir:expression [ fhir:v "(serviceType.coding.code='2') implies (extension.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-planned-absence').exists())" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-slot-presence-absence"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-slot-presence-absence>

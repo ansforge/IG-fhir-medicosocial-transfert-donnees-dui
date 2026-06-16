@@ -30,7 +30,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "TDDUI Task Input Action",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-16T10:03:26+00:00",
+  "date" : "2026-06-16T13:10:49+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -44,7 +44,7 @@ This Code system is referenced in the definition of the following value sets:
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "France"
+      "display" : "France (la)"
     }]
   }],
   "caseSensitive" : true,

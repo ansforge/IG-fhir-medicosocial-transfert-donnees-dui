@@ -34,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-slot-presen
   "name" : "TDDUISlotPresenceAbsence",
   "title" : "TDDUI Slot Presence Absence",
   "status" : "active",
-  "date" : "2026-06-16T10:03:26+00:00",
+  "date" : "2026-06-16T13:10:49+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-slot-presen
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "France"
+      "display" : "France (la)"
     }]
   }],
   "fhirVersion" : "4.0.1",
@@ -92,7 +92,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-slot-presen
         "key" : "absencePrevueCardinality",
         "severity" : "error",
         "human" : "Cet attribut est obligatoire pour les typePresenceAbsence=Absence",
-        "expression" : "(serviceType.coding.code='2') implies (extension[TDDUIPlannedAbsence].exists())",
+        "expression" : "(serviceType.coding.code='2') implies (extension.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-planned-absence').exists())",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-slot-presence-absence"
       }],
       "mapping" : [{

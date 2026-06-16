@@ -32,7 +32,7 @@
   <name value="TDDUISlotPresenceAbsence"/>
   <title value="TDDUI Slot Presence Absence"/>
   <status value="active"/>
-  <date value="2026-06-16T10:03:26+00:00"/>
+  <date value="2026-06-16T13:10:49+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -46,7 +46,7 @@
     <coding>
       <system value="urn:iso:std:iso:3166"/>
       <code value="FR"/>
-      <display value="France"/>
+      <display value="France (la)"/>
     </coding>
   </jurisdiction>
   <fhirVersion value="4.0.1"/>
@@ -147,7 +147,7 @@
         <key value="absencePrevueCardinality"/>
         <severity value="error"/>
         <human value="Cet attribut est obligatoire pour les typePresenceAbsence=Absence"/>
-        <expression value="(serviceType.coding.code='2') implies (extension[TDDUIPlannedAbsence].exists())"/>
+        <expression value="(serviceType.coding.code='2') implies (extension.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-planned-absence').exists())"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-slot-presence-absence"/>
       </constraint>
       <isModifier value="false"/>
@@ -1982,7 +1982,7 @@
         <key value="absencePrevueCardinality"/>
         <severity value="error"/>
         <human value="Cet attribut est obligatoire pour les typePresenceAbsence=Absence"/>
-        <expression value="(serviceType.coding.code='2') implies (extension[TDDUIPlannedAbsence].exists())"/>
+        <expression value="(serviceType.coding.code='2') implies (extension.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-planned-absence').exists())"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-slot-presence-absence"/>
       </constraint>
       <mapping>
