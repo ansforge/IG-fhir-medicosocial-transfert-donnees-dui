@@ -96,7 +96,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-tddui-observati
   "name" : "TDDUIObservationMobiliteUsager",
   "title" : "TDDUI Observation Mobilite Usager",
   "status" : "active",
-  "date" : "2026-06-16T15:20:57+00:00",
+  "date" : "2026-06-16T16:25:55+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
