@@ -6,9 +6,13 @@ Profile: [TDDUI Slot Presence Absence](StructureDefinition-tddui-slot-presence-a
 
 **TDDUI Facturation**: true
 
+**TDDUI Planned Absence**: true
+
 **identifier**: Patient identifier/3480787529/1012-PA-0001
 
-**serviceType**: Présent
+**serviceType**: Absent
+
+**appointmentType**: Hospitalisation de l'usager
 
 **schedule**: [Schedule](Schedule-tddui-schedule-example.md)
 
@@ -32,6 +36,10 @@ Profile: [TDDUI Slot Presence Absence](StructureDefinition-tddui-slot-presence-a
   "extension" : [{
     "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-facturation",
     "valueBoolean" : true
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-planned-absence",
+    "valueBoolean" : true
   }],
   "identifier" : [{
     "type" : {
@@ -46,9 +54,15 @@ Profile: [TDDUI Slot Presence Absence](StructureDefinition-tddui-slot-presence-a
   "serviceType" : [{
     "coding" : [{
       "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r423-type-presence-absence",
-      "code" : "1"
+      "code" : "2"
     }]
   }],
+  "appointmentType" : {
+    "coding" : [{
+      "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r424-motif-absence",
+      "code" : "1"
+    }]
+  },
   "schedule" : {
     "reference" : "Schedule/tddui-schedule-example"
   },

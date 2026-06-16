@@ -22,7 +22,7 @@ Profile: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-eveneme
 
 **status**: Finished
 
-**class**: [ActCode: HH](http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActCode.html#v3-ActCode-HH) (home health)
+**class**: [ActCode: HH](http://terminology.hl7.org/7.2.0/CodeSystem-v3-ActCode.html#v3-ActCode-HH) (home health)
 
 **type**: Intervention d'un infirmer salarié, Intervention
 

@@ -34,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-observation
   "name" : "TDDUIObservationPeriodeScolaire",
   "title" : "TDDUI Observation Periode Scolaire",
   "status" : "active",
-  "date" : "2026-06-15T09:04:15+00:00",
+  "date" : "2026-06-16T10:03:26+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

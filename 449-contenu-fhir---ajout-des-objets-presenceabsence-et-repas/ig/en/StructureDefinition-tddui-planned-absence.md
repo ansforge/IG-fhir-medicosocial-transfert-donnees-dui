@@ -11,6 +11,7 @@ Absence prévue
 **Usages:**
 
 * Use this Extension: [TDDUI Slot Presence Absence](StructureDefinition-tddui-slot-presence-absence.md)
+* Examples for this Extension: [Bundle/tddui-bundle-example](Bundle-tddui-bundle-example.md) and [Slot/tddui-slot-presence-absence-example](Slot-tddui-slot-presence-absence-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ans.fhir.fr.tddui|current/StructureDefinition/StructureDefinition-tddui-planned-absence.json)
 
@@ -35,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-planned-abs
   "name" : "TDDUIPlannedAbsence",
   "title" : "TDDUI Planned Absence",
   "status" : "active",
-  "date" : "2026-06-15T09:04:15+00:00",
+  "date" : "2026-06-16T10:03:26+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
