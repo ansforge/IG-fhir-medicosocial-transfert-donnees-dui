@@ -28,7 +28,7 @@ CodeSystem pour la définition des éléments spécifiques des input dans la res
   "title" : "TDDUI Task Input Bilan",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-16T08:06:32+00:00",
+  "date" : "2026-06-16T08:52:34+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
