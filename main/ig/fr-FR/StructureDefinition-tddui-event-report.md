@@ -55,7 +55,7 @@ Extension simple avec le type string : Zone de texte liée à l’événement po
   "name" : "TDDUIEventReport",
   "title" : "TDDUI Event Report",
   "status" : "active",
-  "date" : "2026-06-16T10:35:13+00:00",
+  "date" : "2026-06-16T10:46:14+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
