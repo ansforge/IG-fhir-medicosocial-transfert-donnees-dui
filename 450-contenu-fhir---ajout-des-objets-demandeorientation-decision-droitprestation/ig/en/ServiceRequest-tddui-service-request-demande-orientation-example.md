@@ -32,7 +32,7 @@ Profile: [TDDUI ServiceRequest DemandeOrientation](StructureDefinition-tddui-ser
         "code" : "DEMANDE_ORIENTATION"
       }]
     },
-    "system" : "2.16.840.1.113883.2.8.3.75.1",
+    "system" : "urn:oid:2.16.840.1.113883.2.8.3.75.1",
     "value" : "1234"
   }],
   "status" : "active",

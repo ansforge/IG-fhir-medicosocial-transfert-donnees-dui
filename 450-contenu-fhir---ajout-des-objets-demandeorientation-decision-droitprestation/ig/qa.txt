@@ -1,14 +1,14 @@
 TDDUI : Validation Results
 =========================================
 
-err = 241, warn = 278, info = 139
+err = 239, warn = 278, info = 138
 IG Publisher Version: 2.2.9
-Generated Mon Jun 15 13:31:43 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.tddui#2.3.0-ballot (canonical = https://interop.esante.gouv.fr/ig/fhir/tddui)
+Generated Tue Jun 16 07:43:02 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.tddui#2.3.0-ballot (canonical = https://interop.esante.gouv.fr/ig/fhir/tddui)
  Build Errors : 22 / 6 / 0
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Basic-tddui-basic-decision-example : 0 / 2 / 6
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Bundle-tddui-bundle-example : 0 / 10 / 39
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Bundle-tddui-pp-ime-bundle-example : 0 / 7 / 23
- /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Bundle-tddui-pp-pa-bundle-example : 1 / 24 / 82
+ /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Bundle-tddui-pp-pa-bundle-example : 0 / 24 / 82
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CapabilityStatement-TDDUIConsommateur : 1 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CapabilityStatement-TDDUIProducteur : 1 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/CarePlan-tddui-pp-ime-careplan-example : 0 / 1 / 1
@@ -68,7 +68,7 @@ Generated Mon Jun 15 13:31:43 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.tddui
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/ServiceRequest-tddui-pp-pa-servicerequest-besoin-1-example : 0 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/ServiceRequest-tddui-pp-pa-servicerequest-besoin-2-example : 0 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/ServiceRequest-tddui-pp-pa-servicerequest-besoin-3-example : 0 / 1 / 1
- /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/ServiceRequest-tddui-service-request-demande-orientation-example : 1 / 1 / 1
+ /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/ServiceRequest-tddui-service-request-demande-orientation-example : 0 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-admission-date : 1 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-assessment-method : 1 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-attachment : 1 / 0 / 1
@@ -241,7 +241,6 @@ WARNING: Bundle/tddui-pp-ime-bundle-example: Bundle.entry[4].resource.identifier
 WARNING: Bundle/tddui-pp-ime-bundle-example: Bundle.entry[5].resource.identifier[0].system: No definition could be found for URL value 'https://identifiant-medicosocial-action.esante.gouv.fr'
 WARNING: Bundle/tddui-pp-ime-bundle-example: Bundle.entry[6].resource.identifier[0].system: No definition could be found for URL value 'https://identifiant-medicosocial-action.esante.gouv.fr'
 == fsh-generated/resources/Bundle-tddui-pp-pa-bundle-example.json ==
-INFORMATION: Bundle/tddui-pp-pa-bundle-example: Bundle.entry[15]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle|2.3.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Bundle/tddui-pp-pa-bundle-example: Bundle.entry[0].resource.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient|2.3.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 WARNING: Bundle/tddui-pp-pa-bundle-example: Bundle.entry[0].resource.identifier[0].system: No definition could be found for URL value 'https://identifiant-medicosocial-localusager.esante.gouv.fr'
 WARNING: Bundle/tddui-pp-pa-bundle-example: Bundle.entry[1].resource/*Consent/tddui-pp-pa-consent-accord-example*/.policy[0].authority: No definition could be found for URL value 'https://www.cnsa.fr/'
@@ -258,8 +257,7 @@ WARNING: Bundle/tddui-pp-pa-bundle-example: Bundle.entry[11].resource.identifier
 WARNING: Bundle/tddui-pp-pa-bundle-example: Bundle.entry[12].resource/*ServiceRequest/tddui-pp-pa-servicerequest-besoin-1-example*/.identifier[0].system: No definition could be found for URL value 'https://identifiant-medicosocial-besoin.esante.gouv.fr'
 WARNING: Bundle/tddui-pp-pa-bundle-example: Bundle.entry[13].resource/*ServiceRequest/tddui-pp-pa-servicerequest-besoin-2-example*/.identifier[0].system: No definition could be found for URL value 'https://identifiant-medicosocial-besoin.esante.gouv.fr'
 WARNING: Bundle/tddui-pp-pa-bundle-example: Bundle.entry[14].resource/*ServiceRequest/tddui-pp-pa-servicerequest-besoin-3-example*/.identifier[0].system: No definition could be found for URL value 'https://identifiant-medicosocial-besoin.esante.gouv.fr'
-ERROR: Bundle/tddui-pp-pa-bundle-example: Bundle.entry[15].resource/*ServiceRequest/tddui-service-request-demande-orientation-example*/.identifier[0]: Identifier.system must be an absolute reference, not a local reference
-WARNING: Bundle/tddui-pp-pa-bundle-example: Bundle.entry[15].resource/*ServiceRequest/tddui-service-request-demande-orientation-example*/.identifier[0].system: No definition could be found for URL value '2.16.840.1.113883.2.8.3.75.1'
+WARNING: Bundle/tddui-pp-pa-bundle-example: Bundle.entry[15].resource.identifier[0].system: No definition could be found for URL value 'urn:oid:2.16.840.1.113883.2.8.3.75.1'
 WARNING: Bundle/tddui-pp-pa-bundle-example: Bundle.entry[16].resource.identifier[0].system: No definition could be found for URL value 'https://identifiant-medicosocial-action.esante.gouv.fr'
 WARNING: Bundle/tddui-pp-pa-bundle-example: Bundle.entry[17].resource.identifier[0].system: No definition could be found for URL value 'https://identifiant-medicosocial-action.esante.gouv.fr'
 WARNING: Bundle/tddui-pp-pa-bundle-example: Bundle.entry[18].resource.identifier[0].system: No definition could be found for URL value 'https://identifiant-medicosocial-action.esante.gouv.fr'
@@ -573,8 +571,7 @@ WARNING: ServiceRequest/tddui-pp-pa-servicerequest-besoin-2-example: ServiceRequ
 == fsh-generated/resources/ServiceRequest-tddui-pp-pa-servicerequest-besoin-3-example.json ==
 WARNING: ServiceRequest/tddui-pp-pa-servicerequest-besoin-3-example: ServiceRequest.identifier[0].system: No definition could be found for URL value 'https://identifiant-medicosocial-besoin.esante.gouv.fr'
 == fsh-generated/resources/ServiceRequest-tddui-service-request-demande-orientation-example.json ==
-ERROR: ServiceRequest/tddui-service-request-demande-orientation-example: ServiceRequest.identifier[0]: Identifier.system must be an absolute reference, not a local reference
-WARNING: ServiceRequest/tddui-service-request-demande-orientation-example: ServiceRequest.identifier[0].system: No definition could be found for URL value '2.16.840.1.113883.2.8.3.75.1'
+WARNING: ServiceRequest/tddui-service-request-demande-orientation-example: ServiceRequest.identifier[0].system: No definition could be found for URL value 'urn:oid:2.16.840.1.113883.2.8.3.75.1'
 == fsh-generated/resources/StructureDefinition-tddui-admission-date.json ==
 ERROR: StructureDefinition/tddui-admission-date: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'France' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr')
 == fsh-generated/resources/StructureDefinition-tddui-assessment-method.json ==
