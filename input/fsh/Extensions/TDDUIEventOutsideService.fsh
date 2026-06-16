@@ -1,6 +1,6 @@
 Extension: TDDUIEventOutsideService
 Id: tddui-outside-service
-Title: "Evénement hors prestation"
+Title: "TDDUI Event Outside Service"
 Description: "Evénement hors prestation prévue dans le projet personnalisé de l’usager."
 Context: Encounter
 

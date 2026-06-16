@@ -1,0 +1,64 @@
+@startuml
+
+hide empty methods
+
+class Usager #LightPink
+class Attente #LightGray
+class Besoin #LightGray
+class Objectif #LightGray
+class Action #LightGray
+class MoyenRessource #LightGray
+class PrestationProjetPersonnalise #LightGray
+class Bilan #LightGray
+class SynthesePreparationBilan #LightGray
+
+class Evaluation #LightYellow
+class "DetailEvaluation" as DetailEvaluationN1 <<premier niveau>> #LightYellow
+class "DetailEvaluation" as DetailEvaluationN2 <<deuxième niveau>> #LightYellow
+
+class Statut #LightYellow
+
+class ProjetPersonnalise #LightGray {
+    idProjetPersonnalise : Identifiant [1..1]
+    titreProjetPersonnalise : Texte [1..1]
+    descriptionProjetPersonnalise : Texte [0..1]
+    typeProjetPersonnalise : Code [0..1]
+    modaliteCommunicationProjetPersonnalise : Texte [0..1]
+    accordUsagerProjetPersonnalise : Accord [0..*]
+    accordStructureProjetPersonnalise : Accord [1..*]
+    dateDebutMiseEnOeuvreProjetPersonnalise : DateHeure [0..1]
+    dateFinMiseEnOeuvreProjetPersonnalise : DateHeure [0..1]
+    entrantProjetPersonnalise : ObjetBinaire [0..*]
+    }
+
+Usager "1" -- "*" ProjetPersonnalise
+ProjetPersonnalise "1" - "*" Bilan
+Bilan "1" - "*" SynthesePreparationBilan
+
+Attente "*" - "1" ProjetPersonnalise
+ProjetPersonnalise "1" - "*" Besoin
+ProjetPersonnalise "1" -- "*" Objectif
+ProjetPersonnalise "1" - "*" Action
+ProjetPersonnalise "1" -- "*" MoyenRessource
+ProjetPersonnalise "1" - "*" PrestationProjetPersonnalise
+
+
+Statut "1" -- "1" ProjetPersonnalise
+Objectif "1" -- "1" Statut
+Action "1" -- "1" Statut
+PrestationProjetPersonnalise "1" -- "1" Statut
+
+
+Objectif "*" - "*" Besoin
+Objectif "*" -- "*" Action
+Action "0..1" - "*" MoyenRessource
+Action "0..1" -- "*" PrestationProjetPersonnalise
+
+Objectif "1" - "*" Evaluation
+Action "1" - "*" Evaluation
+MoyenRessource "1" - "0..1" Evaluation
+PrestationProjetPersonnalise "1" - "0..1" Evaluation
+Evaluation "1" - "*" DetailEvaluationN1
+DetailEvaluationN1 "1" - "*" DetailEvaluationN2
+
+@enduml

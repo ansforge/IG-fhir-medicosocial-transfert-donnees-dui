@@ -1,6 +1,6 @@
-CodeSystem: InputTDDUITaskTransportCodeSystem
-Id: input-tddui-task-transport-codesystem
-Title: "InputTaskTransportCodeSystem"
+CodeSystem: TDDUITaskInputTransport
+Id: tddui-task-input-transport
+Title: "TDDUI Task Input Transport"
 Description: "CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les transports dans le cadre du DUI."
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
 * ^caseSensitive = true

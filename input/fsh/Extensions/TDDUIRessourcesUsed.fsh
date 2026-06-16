@@ -1,6 +1,6 @@
 Extension: TDDUIRessourcesUsed
 Id: tddui-ressources-used
-Title: "Ressources utilisées"
+Title: "TDDUI Ressources Used"
 Description: "Ressources utilisées lors de l’évènement (ex : chambre, matériel médical, véhicule)."
 Context: Encounter
 

@@ -79,25 +79,21 @@ Les interactions font référence à un certain nombre de ressources du standard
 
 Les ressources profilées dans le cadre de ce guide d'implémentation sont les suivantes : 
 
-{% sql {
-  "query" : "
-    SELECT 
-      json_extract(Json, '$.baseDefinition') as Parent, 
-      Name, 
-      Description, 
-      Web
-    FROM Resources
-    WHERE Type = 'StructureDefinition'
-      AND Id LIKE 'tddui%'
-      AND json_extract(Json, '$.kind') = 'resource'
-    ORDER BY Name
-  ",
-  "class" : "lines",
-  "columns" : [
-    { "title" : "Profil parent", "source" : "Parent" },
-    { "title" : "Profil", "type" : "link", "source" : "Name", "target" : "Web" },
-    { "title" : "Description", "type" : "markdown", "source" : "Description" }
-  ]
+{% sql { 
+  "query" : " 
+    SELECT json_extract(Json, '$.baseDefinition') as Parent, Name, Description, Web 
+    FROM Resources 
+    WHERE Type = 'StructureDefinition' 
+      AND Id LIKE 'tddui%' 
+      AND json_extract(Json, '$.kind') = 'resource' 
+    ORDER BY Name 
+  ", 
+  "class" : "lines", 
+  "columns" : [ 
+    { "title" : "Profil parent", "source" : "Parent" }, 
+    { "title" : "Profil", "type" : "link", "source" : "Name", "target" : "Web" }, 
+    { "title" : "Description", "type" : "markdown", "source" : "Description" } 
+  ] 
 } %}
 
 #### Instances de Questionnaire

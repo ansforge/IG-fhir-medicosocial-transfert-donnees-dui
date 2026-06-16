@@ -29,6 +29,7 @@ map "meta" as meta #DarkGray {
 
 object "**TDDUIPatient**" as TDDUIPatient_subject #80b1d3 {
     Usager
+    Evaluateur
 }
 
 object "**TDDUIPractitioner**" as TDDUIPractitioner_author #fccde5 {
@@ -41,13 +42,15 @@ object "**TDDUIPractitioner**" as TDDUIPractitioner_source #fccde5 {
 
 map "**Evaluation : TDDUIQuestionnaireResponse**" as Evaluation #d9d9d9 {
     Responsable => <&plus> TDDUIQRParticipant.extension:TDDUIResponsible
+    Porteur => <&plus> TDDUIQRParticipant.extension:TDDUIHolder
     pieceJointeEvaluation => <&plus> TDDUIAttachment
     commentaireEvaluation => <&plus> TDDUIComment
+    modaliteEvaluation  => <&plus> TDDUIAssessmentMethod 
     idEvaluation => identifier
     dateEvaluation => authored
     typeEvaluation => questionnaire
     Statut.statut  => status
-    Statut.auteur => TDDUIQRParticipant.extension:TDDUIStatusAuthor
+    Statut.auteur => <&plus> TDDUIStatusAuthor
 }
 
 Evaluation -u-> meta
@@ -55,8 +58,9 @@ Evaluation --> aggir : Evaluation AGGIR PH SSIAD\nEvaluation AGGIR PA SSIAD
 Evaluation --> autre : Evaluation SERAFIN\nEvaluation de la situation SSIAD
 
 Evaluation -l-> TDDUIPatient_subject : subject
+Evaluation -l-> TDDUIPatient_subject : source
 Evaluation -r-> TDDUIPractitioner_author : author
-Evaluation -r-> TDDUIPractitioner_source : source
- Evaluation -u-> TDDUIEncounterEvenement : encounter
+Evaluation -l-> TDDUIPractitioner_source : source
+Evaluation -u-> TDDUIEncounterEvenement : encounter
 
 @enduml

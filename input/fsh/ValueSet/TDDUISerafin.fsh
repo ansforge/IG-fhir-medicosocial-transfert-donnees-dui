@@ -1,6 +1,6 @@
-ValueSet: TDDUISerafinValueSet
-Id: tddui-serafin-valueset
-Title: "TDDUI SERAFIN ValueSet"
+ValueSet: TDDUISerafin
+Id: tddui-serafin
+Title: "TDDUI SERAFIN"
 Description: "ValueSet contenant les codes SERAFIN (prestations directes et indirectes) pour le profil TDDUI Encounter Evenement."
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^experimental = false

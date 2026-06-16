@@ -29,6 +29,60 @@ Usage: #definition
 
 * rest.resource[2].type = #Encounter
 * rest.resource[=].supportedProfile = Canonical(tddui-encounter-sejour)
+* rest.resource[=].supportedProfile[+] = Canonical(tddui-encounter-evenement)
+* rest.resource[=].interaction[0].code = #create
+
+* rest.resource[3].type = #Practitioner
+* rest.resource[=].supportedProfile = Canonical(tddui-practitioner)
+* rest.resource[=].interaction[0].code = #create
+
+* rest.resource[4].type = #PractitionerRole
+* rest.resource[=].supportedProfile = Canonical(tddui-practitioner-role)
+* rest.resource[=].interaction[0].code = #create
+
+* rest.resource[5].type = #Task
+* rest.resource[=].supportedProfile[0] = Canonical(tddui-task-transport-professionnel)
+* rest.resource[=].supportedProfile[+] = Canonical(tddui-task-transport-usager)
+* rest.resource[=].supportedProfile[+] = Canonical(tddui-task-action)
+* rest.resource[=].supportedProfile[+] = Canonical(tddui-task-bilan)
+* rest.resource[=].supportedProfile[+] = Canonical(tddui-task-moyen-ressource)
+* rest.resource[=].supportedProfile[+] = Canonical(tddui-task-prestation)
+* rest.resource[=].interaction[0].code = #create
+
+* rest.resource[6].type = #QuestionnaireResponse
+* rest.resource[=].supportedProfile = Canonical(tddui-questionnaire-response)
+* rest.resource[=].interaction[0].code = #create
+
+* rest.resource[7].type = #DocumentReference
+* rest.resource[=].supportedProfile = Canonical(tddui-document-reference)
+* rest.resource[=].interaction[0].code = #create
+
+* rest.resource[8].type = #CarePlan
+* rest.resource[=].supportedProfile = Canonical(tddui-careplan-projet-personnalise)
+* rest.resource[=].interaction[0].code = #create
+
+* rest.resource[9].type = #Consent
+* rest.resource[=].supportedProfile = Canonical(tddui-consent-accord)
+* rest.resource[=].interaction[0].code = #create
+
+* rest.resource[10].type = #Goal
+* rest.resource[=].supportedProfile[0] = Canonical(tddui-goal-attente)
+* rest.resource[=].supportedProfile[+] = Canonical(tddui-goal-objectif)
+* rest.resource[=].supportedProfile[+] = Canonical(tddui-goal-projet-vie)
+* rest.resource[=].interaction[0].code = #create
+
+* rest.resource[11].type = #ServiceRequest
+* rest.resource[=].supportedProfile = Canonical(tddui-service-request-besoin)
+* rest.resource[=].interaction[0].code = #create
+
+* rest.resource[12].type = #RelatedPerson
+* rest.resource[=].supportedProfile = Canonical(tddui-related-person-contact)
+* rest.resource[=].interaction[0].code = #create
+
+* rest.resource[13].type = #Observation
+* rest.resource[=].supportedProfile[0] = Canonical(tddui-observation-cause-mortalite)
+* rest.resource[=].supportedProfile[+] = Canonical(tddui-observation-periode-scolaire)
+* rest.resource[=].supportedProfile[+] = Canonical(tddui-observation-mobilite-usager)
 * rest.resource[=].interaction[0].code = #create
 
 * rest.interaction[0].code = #transaction

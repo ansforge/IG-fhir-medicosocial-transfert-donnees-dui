@@ -2,14 +2,21 @@
 Ce mapping représente les données fonctionnelles trouvant leur équivalence dans l'actuelle version des spécifications techniques.
 </p>
 
-<p style="background-color: #fff3cd; border:1px solid #ffeeba; padding: 5px; max-width: 790px;">
-<strong>Note :</strong> Pour visualiser l’entièreté du mapping, il est nécessaire de dézoomer.
-</p>
-
 ### Mapping Usager
 
 <div>{%include mapping_TDDUIPatient.svg%}</div>
 <div>{%include mapping_TDDUIPatientINS.svg%}</div>
+
+### Mapping PeriodeScolaire
+
+<div>{%include mapping_TDDUIObservationPeriodeScolaire.svg%}</div>
+
+### Mapping ProjetVie
+
+<div>{%include mapping_TDDUIGoalProjetVie.svg%}</div>
+
+### Mapping Contact
+<div>{%include mapping_TDDUIRelatedPersonContact.svg%}</div>
 
 ### Mapping Entité Juridique
 
@@ -30,10 +37,49 @@ Ce mapping représente les données fonctionnelles trouvant leur équivalence da
 
 ### Mapping Transport
 
-<div>{%include mapping_TDDUITaskTransport.svg%}</div>
 <div>{%include mapping_TDDUITaskTransportProfessionnel.svg%}</div>
 <div>{%include mapping_TDDUITaskTransportUsager.svg%}</div>
 
 ### Mapping Evaluation
 
 <div>{%include mapping_TDDUIQuestionnaireResponse.svg%}</div>
+
+### Vue globale du Projet Personnalisé
+
+<div>{%include mapping_TDDUIProjetPersonnalise.svg%}</div>
+
+#### Mapping Projet Personnalisé
+
+<div>{%include mapping_TDDUICarePlanProjetPerso.svg%}</div>
+
+##### Mapping Accord
+
+<div>{%include mapping_TDDUIConsentAccord.svg%}</div>
+
+#### Mapping Besoin
+
+<div>{%include mapping_TDDUIServiceRequestBesoin.svg%}</div>
+
+#### Mapping Objectif
+
+<div>{%include mapping_TDDUIGoalObjectif.svg%}</div>
+
+#### Mapping MoyenRessource
+
+<div>{%include mapping_TDDUITaskMoyenRessource.svg%}</div>
+
+#### Mapping Action
+
+<div>{%include mapping_TDDUITaskAction.svg%}</div>
+
+#### Mapping Prestation
+
+<div>{%include mapping_TDDUITaskPrestation.svg%}</div>
+
+#### Mapping Attente
+
+<div>{%include mapping_TDDUIGoalAttente.svg%}</div>
+
+#### Mapping Bilan
+
+<div>{%include mapping_TDDUITaskBilan.svg%}</div>

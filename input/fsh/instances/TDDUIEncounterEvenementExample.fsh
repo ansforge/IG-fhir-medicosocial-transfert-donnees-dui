@@ -1,9 +1,10 @@
 Instance: tddui-encounter-evenement-example
 InstanceOf: TDDUIEncounterEvenement
-Usage: #example
+Title: "TDDUI Encounter Evenement Example"
 Description: "Exemple d'un évènement"
+Usage: #example
 
-* identifier.system = "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identifier-type"
+* identifier.system = "https://identifiant-medicosocial-evenement.esante.gouv.fr"
 * identifier.value = "3480787529/147720425367411-EVN-12548"
 * identifier.type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identifier-type#VN
 
@@ -15,13 +16,16 @@ Description: "Exemple d'un évènement"
 * type[ssiad].coding.system = "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis"
 * type[ssiad].coding.display = "Intervention d'un infirmer salarié"
 
+* type[text].coding.code = #not-permitted
+* type[text].coding.display = "Not Permitted"
+* type[text].coding.system = "http://terminology.hl7.org/CodeSystem/data-absent-reason"
 * type[text].text = "Intervention"
 
 * subject = Reference(tddui-patient-ins-example)
 
 * serviceProvider = Reference(tddui-organization-example)
 
-* participant[professionnel].individual = Reference(tddui-practitioner-example)
+* participant.individual = Reference(tddui-practitioner-example)
 
 * partOf = Reference(tddui-encounter-sejour-example)
 
@@ -30,10 +34,14 @@ Description: "Exemple d'un évènement"
 
 * location.location = Reference(tddui-event-location-example)
 
-* extension[TDDUIRessourcesUsed].extension[TDDUIRessourceType].valueCodeableConcept.coding.system = "http://snomed.info/sct"
-* extension[TDDUIRessourcesUsed].extension[TDDUIRessourceType].valueCodeableConcept.coding.code = #261324000
-* extension[TDDUIRessourcesUsed].extension[TDDUIRessourceType].valueCodeableConcept.coding.display = "Vehicle"
+* extension[TDDUIRessourcesUsed].extension[TDDUIRessourceType].valueCodeableConcept.coding.system = "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis"
+* extension[TDDUIRessourcesUsed].extension[TDDUIRessourceType].valueCodeableConcept.coding.code = #ORG-206
+* extension[TDDUIRessourcesUsed].extension[TDDUIRessourceType].valueCodeableConcept.coding.display = "Matériel spécialisé"
+* extension[TDDUIRessourcesUsed].extension[TDDUIMaterialDetail].valueCodeableConcept.coding.system = "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis"
+* extension[TDDUIRessourcesUsed].extension[TDDUIMaterialDetail].valueCodeableConcept.coding.code = #ORG-208
+* extension[TDDUIRessourcesUsed].extension[TDDUIMaterialDetail].valueCodeableConcept.coding.display = "Materiel médical"
 * extension[TDDUIEventReport].valueString = "Observations cliniques : ; Recommandations pour les jours à venir : ; Prochaine visite : 15 avril 2023, 10h30 ; Remarque : Monsieur Dupont a compris les consignes pour la gestion de sa douleur et la mobilisation de sa hanche opérée."
 * extension[TDDUIComment].valueString = "Cet évènement a débuté plus tard l’usager était sous la douche à l’heure du début du rendez-vous."
 * extension[TDDUIEventLabel].valueString = "Visite à domicile pour soins infirmier."
 * extension[TDDUIEventReason].valueString = "Suivi post-opératoire suite à intervention chirurgicale de la hanche."
+* extension[TDDUIPatientValidation].valueBoolean = true

@@ -1,0 +1,34 @@
+@startuml
+
+object "**TDDUIOrganization**" as TDDUIOrganization #d9d9d9 {
+    Ecole
+}
+
+object "**TDDUIPatient/TDDUIPatientINS**" as TDDUIPatient #fdb462 {
+    Usager
+}
+
+object "**TDDUIRelatedPersonContact**" as TDDUIRelatedPersonContact #bebada {
+    ReferentScolaire
+}
+
+map "<&layers> effective[x]:effectivePeriod" as effectivexeffectivePeriod #DarkGray {
+    dateDebutPeriodeScolaire => start
+    dateFinPeriodeScolaire => end
+}
+
+map "**PeriodeScolaire : TDDUIObservationPeriodeScolaire**" as PeriodeScolaire #80b1d3 {
+    idPeriodeScolaire => identifier
+    commentaireAnneeScolaire => note
+    typeEnseignementSpecialise => <&layers> component:typeEnseignementSpecialise
+    diplome => <&layers> component:diplome
+    volumeScolarisation => <&layers> component:volumeScolarisation
+    <&layers> effective[x]:effectivePeriod *-> effectivexeffectivePeriod
+}
+
+PeriodeScolaire -u-> TDDUIOrganization : performer
+PeriodeScolaire -u-> TDDUIRelatedPersonContact : performer
+PeriodeScolaire --> TDDUIPatient : subject
+
+
+@enduml

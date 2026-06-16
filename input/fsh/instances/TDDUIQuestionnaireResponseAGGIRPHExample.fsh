@@ -1,9 +1,11 @@
 Instance: tddui-questionnaire-response-aggir-ph-example
 InstanceOf: TDDUIQuestionnaireResponse
+Title: "TDDUI Questionnaire Response AGGIR PH Example"
 Description: "Grille de réponse AGGIR PH"
 Usage: #example
 
-* identifier.value = "3480787529/147720425367411-EVAL-21564655"
+* identifier.value = "3480787529/147720425367411-EVAL-21564656"
+* identifier.system = "https://identifiant-medicosocial-evaluation.esante.gouv.fr"
 
 * questionnaire = "https://interop.esante.gouv.fr/ig/fhir/tddui/Questionnaire/tddui-questionnaire-aggir-ph-ssiad"
 

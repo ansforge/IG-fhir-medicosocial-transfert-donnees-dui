@@ -5,6 +5,9 @@ Title: "TDDUI Patient"
 Description: "Profil de la ressource FrCorePatientProfile permettant de représenter un usager lorsque l'INS n'est pas transmis."
 
 * insert TDDUIPatientCommonConstraints
+
+* birthDate 1..1
+
 * birthDate.extension contains
     TDDUIBirthOrder named tddui-birth-order 1..1
 
@@ -22,18 +25,6 @@ Id:       specmetier-to-TDDUIPatient
 Title:    "Modèle de contenu DUI"
 * -> "Usager"
  
-* identifier[NSS] -> "numSecuriteSociale"
-* identifier[PI] -> "identifiantLocalUsagerESSMS"
-* identifier[InitialNumberMDPH] -> "numeroIndividuInitial"
-* name[officialName].family -> "nomNaissance"
-* name[usualName].family -> "nomUsage"
-* name[officialName].given -> "premierPrenomActeNaissance"
-* name[usualName].given -> "prenomUtilise"
-* name[officialName].extension[birth-list-given-name] -> "prenom"
-* name[officialName].prefix -> "civilite"
-* gender -> "sexe"
-* birthDate -> "dateNaissance"
 * birthDate.extension[tddui-birth-order] -> "ordreNaissanceEtatCivil"
-* extension[birthPlace].valueAddress.extension[inseeCode] -> "communeNaissance"
-* extension[birthPlace].valueAddress.country -> "paysNaissance"
 
+* insert TDDUIPatientCommonMapping

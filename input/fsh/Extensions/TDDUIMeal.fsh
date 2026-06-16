@@ -1,6 +1,6 @@
 Extension: TDDUIMeal
 Id: tddui-meal
-Title: "Repas"
+Title: "TDDUI Meal"
 Description: "Repas du professionnel prévu dans le cadre de l'événement."
 Context: Encounter
 

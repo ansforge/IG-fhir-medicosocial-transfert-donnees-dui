@@ -1,6 +1,6 @@
 Extension: TDDUIAdmissionDate
 Id: tddui-admission-date
-Title: "Date d’admission"
+Title: "TDDUI Admission Date"
 Description: "Date d’admission dans la structure ESSMS."
 Context: Encounter
 

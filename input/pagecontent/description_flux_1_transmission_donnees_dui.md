@@ -4,21 +4,45 @@ Ce flux permet la transmission de données d'un logiciel DUI
 
 ### Flux 1.1 - Transmission de données DUI
 
-La transmission de données d'un logiciel DUI est assurée par l'interaction FHIR <a href="https://hl7.org/fhir/R4/http.html#transaction">Transaction</a>. Le Producteur envoie une requête HTTP POST dont le corps est une ressource Bundle de type "transaction" conforme au profil [TDDUIBundle](StructureDefinition-tddui-bundle.html) : 
-
+La transmission de données d'un logiciel DUI est assurée par l'interaction FHIR <a href="https://hl7.org/fhir/R4/http.html#transaction">Transaction</a>. Le Producteur envoie une requête HTTP POST dont le corps est une ressource Bundle de type "transaction" conforme au profil [TDDUIBundle](StructureDefinition-tddui-bundle.html) :
 
 `POST [base]/`
 
 Où `[base]` est le point de contact FHIR.
 
-
 Les différentes ressources sont véhiculées via l'élément : Bundle.entry. Les ressources utilisables sont conformes aux profils :
+
 * [TDDUIPatient](StructureDefinition-tddui-patient.html) représentant l'usager,
 * [TDDUIPatientINS](StructureDefinition-tddui-patient-ins.html) représentant l'usager transmis avec l'INS,
 * [TDDUIEncounterSejour](StructureDefinition-tddui-encounter-sejour.html) représentant un séjour,
-* [TDDUIOrganization](StructureDefinition-tddui-organization.html) représentant une entité juridique
+* [TDDUIOrganization](StructureDefinition-tddui-organization.html) représentant une entité juridique,
+* [TDDUIEncounterEvenement](StructureDefinition-tddui-encounter-evenement.html) représentant un événement lié à la prise en charge d'un usager,
+* [TDDUIPractitioner](StructureDefinition-tddui-practitioner.html) représentant un professionnel,
+* [TDDUIPractitionerRole](StructureDefinition-tddui-practitioner-role.html) représentant un professionnel,
+* [TDDUITaskTransportProfessionnel](StructureDefinition-tddui-task-transport-professionnel.html) représentant le transport du professionnel,
+* [TDDUITaskTransportUsager](StructureDefinition-tddui-task-transport-usager.html) représentant le transport de l'usager,
+* [TDDUIQuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.html) représentant les réponses aux questionnaires dans le cadre des évaluations.
+  - Lorsqu'une ressource QuestionnaireResponse est présente, elle doit être conforme à un des Questionnaires suivants :
+    - [tddui-questionnaire-aggir-pa-ssiad](Questionnaire-tddui-questionnaire-aggir-pa-ssiad.html),
+    - [tddui-questionnaire-aggir-ph-ssiad](Questionnaire-tddui-questionnaire-aggir-ph-ssiad.html),
+    - [tddui-questionnaire-serafin](Questionnaire-tddui-questionnaire-serafin.html),
+    - [tddui-questionnaire-situation-ssiad](Questionnaire-tddui-questionnaire-situation-ssiad.html)
 
-
+* [TDDUIDocumentReference](StructureDefinition-tddui-document-reference.html) représentant les pièces jointes.
+* [TDDUICarePlanProjetPersonnalise](StructureDefinition-tddui-careplan-projet-personnalise.html) représentant le projet personnalisé.
+* [TDDUIConsentAccord](StructureDefinition-tddui-consent-accord.html) représentant l'accord de l'usager, de son entourage ou de la structure.
+* [TDDUIGoalAttente](StructureDefinition-tddui-goal-attente.html) représentant les attentes pour un usager.
+* [TDDUIGoalObjectif](StructureDefinition-tddui-goal-objectif.html) représentant les résultats à atteindre.
+* [TDDUIServiceRequestBesoin](StructureDefinition-tddui-service-request-besoin.html) représentant les besoins de l'usager.
+* [TDDUITaskAction](StructureDefinition-tddui-task-action.html) représentant les actions réalisées.
+* [TDDUITaskBilan](StructureDefinition-tddui-task-bilan.html) représentant le bilan.
+* [TDDUITaskMoyenRessource](StructureDefinition-tddui-task-moyen-ressource.html) représentant les moyens ou ressources utilisées.
+* [TDDUITaskPrestation](StructureDefinition-tddui-task-prestation.html) représentant les prestations.
+* [TDDUIRelatedPersonContact](StructureDefinition-tddui-related-person-contact.html) représentant un contact de l'usager.
+* [TDDUIObservationCauseMortalite](StructureDefinition-tddui-observation-cause-mortalite.html) représentant les causes de mortalité.
+* [TDDUIObservationMobiliteUsager](StructureDefinition-tddui-observation-mobilite-usager.html) représentant la mobilité de l'usager.
+* [TDDUIObservationPeriodeScolaire](StructureDefinition-tddui-observation-periode-scolaire.html) représentant la période scolaire de l'usager.
+* [TDDUIGoalProjetVie](StructureDefinition-tddui-goal-projet-vie.html) représentant le projet de vie de l'usager.
 
 Pour toutes ces ressources, seule la création est possible via l'intéraction FHIR <a href="https://hl7.org/fhir/R4/http.html#create">Create</a>.
 
@@ -38,4 +62,3 @@ Dans tous les cas, la référence doit correspondre soit au fullUrl d’une autr
 Pour plus d'information ([voir la spécification FHIR](https://build.fhir.org/bundle.html#references))
 
 Une fois les ressources reçues et validées, les identifiants techniques sont ré-assignés par le Consommateur [voir la spécification FHIR](http://hl7.org/fhir/R4/http.html#create). Il assure que tout les champs faisant référence à un identifiant technique soit mis à jour avec le nouvel id [voir la spécification FHIR](https://build.fhir.org/http.html#url-fixing).Le producteur doit connaitre ces nouveaux id pour les utiliser dans les opérations suivantes.
-

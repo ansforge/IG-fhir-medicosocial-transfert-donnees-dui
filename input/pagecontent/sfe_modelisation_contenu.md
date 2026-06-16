@@ -2,16 +2,10 @@
 
 <!-- object data="representation_globale.svg"  style="width:100%" type="image/svg+xml"></object -->
 <div class="figure" style="width:100%; display: flex; align-items: center; justify-content: center;">
-<!-- Note : le svg est déformé car impossible de modifier le style du svg -->
   {%include representation_globale.svg%}
 </div>
 
 ### Données administratives
-
-<!-- object data="donnees_admin.svg" style="width:100%" type="image/svg+xml"></object -->
-<div class="figure" style="width:100%; display: flex; align-items: center; justify-content: center;">
-  {%include donnees_admin.svg%}
-</div>
 
 #### Identification et coordonnées
 
@@ -40,13 +34,14 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
      Le numéro de sécurité sociale est utilisé pour la facturation et le remboursement des prestations de santé de la personne prise en charge.</td>
   </tr>
   <tr>
-    <td>identifiantLocalUsagerESSMS : [0..1] Identifiant</td>
-    <td>Identifiant local de l’usager au sein de la structure.<br>
+    <td>identifiantUsagerESSMS : [0..1] Identifiant</td>
+    <td>Identifiant de l’usager au sein de la structure.<br>
     Cet identifiant est obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS) : 3+FINESS/identifiantLocalUsagerESSMS</td>
   </tr>
    <tr>
     <td>numeroIndividuInitial : [0..1] Identifiant</td>
-    <td>Numéro de l’individu attribué par la MDPH ayant créé le dossier Individu (= MDPH initiale).<br>
+    <td>Numéro de l’individu attribué par la MDPH (= MDPH initiale) ayant créé le dossier Individu.<br>
+    Cet identifiant est obtenu par la concaténation du numéro de l'individu local attribué par la MDPH ayant créé le dossier Individu (idIndividuMDPHInitial) et du numéro de cette MDPH (idMDPH) : idIndividuMDPHInitial/idMDPH<br>
     Synonyme = identifiantMDPH</td>
   </tr>
   <tr>
@@ -107,7 +102,7 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
     Il est obligatoire si le NIR n'est pas transmis.</td>
   </tr>
   <tr>
-    <td>CommuneNaissance : [0..1] Code</td>
+    <td>communeNaissance : [0..1] Code</td>
     <td>Commune de naissance de l’usager. Code officiel géographique (COG) de la commune.<br>
     Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J120-CommuneHistorisee/FHIR/JDV-J120-CommuneHistorisee">JDV_J120-CommuneHistorisee</a><br>
     Cet attribut fait partie des traits INS. Il est obligatoire si l’identité INS est qualifiée.<br>
@@ -128,17 +123,22 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
   <tr>
     <td>situationFamiliale : [0..1] Code</td>
     <td>Situation familiale de l’usager.<br>
-    Nomenclature(s) associée(s) : à définir</td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J176-SituationVieQuotidienne-MDPH/FHIR/JDV-J176-SituationVieQuotidienne-MDPH">JDV-J176-SituationVieQuotidienne-MDPH</a></td>
   </tr>
   <tr>
-    <td>compositionFoyer : [0..1] Code</td>
+    <td>compositionFoyer : [0..*] Code</td>
     <td>Désigne avec qui vit l’usager dans son logement.<br>
-    Nomenclature(s) associée(s) : à définir</td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j385-composition-foyer-ms/$expand">JDV-J385-composition-foyer-ms</a></td>
+  </tr>
+  <tr>
+    <td>descriptionCompositionFoyer : [0..1] Texte</td>
+    <td>Description de la composition du foyer, c’est-à-dire des personnes qui vivent dans le logement avec l'usager.
+    </td>
   </tr>
   <tr>
     <td>paysNationalite : [0..*] Code</td>
-    <td>Pays de nationalité actuelle ou rattachement de la nationalité à un espace de pays conventionné.<br>
-    Nomenclature(s) associée(s) : <a href="https://mos.esante.gouv.fr/NOS/TRE_R89-RegroupementPays/FHIR/TRE-R89-RegroupementPays">TRE_R89-RegroupementPays</a></td>
+    <td>Pays de nationalité de l'usager.<br>
+    Nomenclature(s) associée(s) : ISO 3166</td>
   </tr>
   <tr>
     <td>langueParlee : [0..*] Code</td>
@@ -170,6 +170,14 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
     Nomenclature(s) associée(s) : Norme ISO 3166</td>
   </tr>
   <tr>
+    <td>adresseCourrier : [0..*] <a href="#classe-courrier">Courrier</a></td>
+    <td>Adresse de courrier de l’usager.</td>
+  </tr>
+  <tr>
+    <td>telecommunication : [0..*] <a href="#classe-telecommunication">Telecommunication</a></td>
+    <td>Telecommunication de l'usager.</td>
+  </tr>
+  <tr>
     <td>photo : [0..*] ObjetBinaire </td>
     <td>Photo de l’usager.</td>
   </tr>
@@ -181,7 +189,7 @@ Synonymes : résident, résident AN, personne accompagnée, personne accueillie,
 
 ##### Classe Adresse
 
-Adresse géopostale. Un emplacement auquel l’usager peut être trouvée, d'après la norme AFNOR NF Z10-011.
+Adresse géopostale. Un emplacement auquel l’usager peut être trouvé, d'après la norme AFNOR NF Z10-011.
 
 <table style="width:100%">
   <tr>
@@ -189,12 +197,9 @@ Adresse géopostale. Un emplacement auquel l’usager peut être trouvée, d'apr
     <th>Description</th>
   </tr>
   <tr>
-    <td>idAdresse : [0..1] Identifiant </td>
-    <td>Identifiant fonctionnel de l’adresse.</td>
-  </tr>
-  <tr>
     <td>type : [0..1] Code</td>
-    <td>Indique le ou les types d'adresse tel que "Adresse du domicile", "Adresse du domicile de secours", etc. </td>
+    <td>Indique le ou les types d'adresse tel que "Adresse du domicile", "Adresse du domicile de secours", etc.<br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j409-type-adresse-ms/$expand">JDV-J409-TYPE-ADRESSE-MS</a></td>
   </tr>
   <tr>
     <td>numeroVoie : [0..1] Texte</td>
@@ -239,7 +244,8 @@ Adresse géopostale. Un emplacement auquel l’usager peut être trouvée, d'apr
   </tr>
   <tr>
     <td>pays : [0..1] Code</td>
-    <td>Nom du pays pour les adresses internationales.</td>
+    <td>Nom du pays pour les adresses internationales.<br>
+    Nomenclature(s) associée(s) : Norme ISO 3166</td>
   </tr>
   <tr>
     <td>commentaire : [0..1] Texte</td>
@@ -249,7 +255,7 @@ Adresse géopostale. Un emplacement auquel l’usager peut être trouvée, d'apr
 
 ##### Classe Telecommunication
 
-Adresse de télécommunication à laquelle l’usager peut être contactée (téléphone, fax, e-mail, URL, etc.).
+Adresse de télécommunication à laquelle l’usager peut être contactée (téléphone, fax, e-mail, URL, etc.). Cet objet provient du MOS, il a été profilé pour ce volet.
 
 <table style="width:100%">
   <tr>
@@ -257,17 +263,23 @@ Adresse de télécommunication à laquelle l’usager peut être contactée (té
     <th>Description</th>
   </tr>
   <tr>
-    <td>canal : [0..1] Code</td>
+    <td>canal : [1..1] Code</td>
     <td>Code spécifiant le canal ou la manière dont s'établit la communication (téléphone, e-mail, URL, etc.).<br>
-    Nomenclature(s) associée(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J225-CanalCommunication-ROR/FHIR/JDV-J225-CanalCommunication-ROR">JDV-J225-CanalCommunication-ROR</a></td>
+    Jeu(x) de valeur associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j396-canal-communication-ms/$expand">JDV-J396-CANAL-COMMUNICATION-MS</a></td>
+  </tr>
+   <tr>
+    <td>typeMessagerie : [0..1] Code</td>
+    <td>Type de messagerie électronique rassemblant des acteurs (personne physique, personne morale ou système) identifiés et enregistrés selon des règles qui garantissent leur légitimité à l'utiliser.<br>
+    Jeu(x) de valeur associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j397-type-messagerie-ms/$expand">JDV-J397-TYPE-MESSAGERIE-MS</a></td>
   </tr>
   <tr>
-    <td>adresseTelecom : [0..1] Texte</td>
+    <td>adresseTelecom : [1..1] Texte</td>
     <td>Valeur de l'adresse de télécommunication dans le format induit par le canal de communication, par exemple un numéro de téléphone, une adresse de courrier électronique, une adresse URL, etc.</td>
   </tr>
     <tr>
-    <td>utilisation : [0..1] Texte</td>
-    <td>Précise l'utilisation du canal de communication (par exemple à des fins professionnelles, privées, etc.).</td>
+    <td>utilisation : [0..1] Code</td>
+    <td>Précise l'utilisation du canal de communication (par exemple à des fins professionnelles, privées, etc.).<br>
+    Jeu(x) de valeur associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j393-utilisation-canal-communication-ms/$expand">JDV-J393-UTILISATION-CANAL-COMMUNICATION</a></td>
   </tr>
 </table>
 
@@ -282,12 +294,8 @@ Adresse de courrier de l’usager.
   </tr>
   <tr>
     <td>typeCourrier : [0..1] Code</td>
-    <td>Type de courrier.<br>
-    Nomenclature(s) associée(s) : à définir</td>
-  </tr>
-  <tr>
-    <td>idAdresse : [0..1] Identifiant</td>
-    <td>Adresse à utiliser pour l’envoi du type de courrier.</td>
+    <td>Type de courrier qui peut être adressé à l'usager.<br>
+    Jeu(x) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j392-type-courrier-ms/$expand">JDV-J392-TYPE-COURRIER-MS</a></td>
   </tr>
   <tr>
     <td>libelleDestinataire : [0..1] Texte</td>
@@ -468,9 +476,62 @@ Assurance maladie complémentaire de l’usager.
   </tr>
 </table>
 
+##### Classe DemandeOrientation
+
+La demande de compensation est adressée à la CDAPH. Elle contient l'ensemble des prestations demandées par l'usager. Dans le cadre du volet TDDUI cette demande de compensation correspond plus spécifiquement à une demande d'orientation soit vers un ESSMS ou un maintien en ESSMS au titre de l'amendement Creton.
+
+
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>idDemandeOrientation : [1..1] Identifiant </td>
+    <td>identifiant de la demande de compensation de l'usager créé par la MDPH à l'origine de la création du dossier de demande. Cet identifiant est obtenu par la concaténation de l'identifiant local attribué par la MDPH ayant créé le dossier de demande (idDemandeOrientationMDPHInitial) et du numéro cette MDPH (idMDPHInitial) : idDemandeOrientationMDPHInitial/idMDPHInitial</td>
+  </tr>
+  <tr>
+    <td>typeDemande : [0..1] Code </td>
+    <td>Type de la demande d'orientation.<br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j394-type-demande-compensation-ms/$expand">JDV-J394-TYPE-DEMANDE-COMPENSATION-MS</a></td>
+  </tr>
+  <tr>
+    <td>natureDemande : [0..1] Code </td>
+    <td>Nature de la demande d'orientation. A renseigner si le type est valorisé.<br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j395-nature-demande-compensation-ms/$expand">JDV-J395-NATURE-DEMANDE-COMPENSATION</a></td>
+  </tr>
+  <tr>
+    <td>demandeOrientation : [0..*] ObjetBinaire </td>
+    <td>Pièce jointe composant la demande d'orientation.</td>
+  </tr>
+  <tr>
+    <td>depotPoste : [0..1] ObjetBinaire </td>
+    <td>Preuve du dépôt de la poste.</td>
+  </tr>
+  <tr>
+    <td>dateEnvoiDemande : [0..1] Date </td>
+    <td>Date d'envoi de la demande d'orientation.</td>
+  </tr>
+  <tr>
+    <td>reponseOrientation : [0..1] ObjetBinaire </td>
+    <td>Réponse de la CDAPH à la demande d'orientation.</td>
+  </tr>
+  <tr>
+    <td>dateReponseOrientation : [0..1] Date </td>
+    <td>Date de réception de la réponse d'orientation.</td>
+  </tr>
+   <tr>
+    <td>pieceComplementaire : [0..*] ObjetBinaire </td>
+    <td>Pièce(s) complémentaire(s) à la demande d'orientation.</td>
+  </tr>
+  </table>
+
+
 ##### Classe Decision
 
-La décision est une réponse à une demande de l'individu ou de son représentant légal. Elle est prise par la CDAPH.
+La décision est une réponse à une demande de compensation l'usager ou de son représentant légal. C'est un acte par lequel la CDAPH prononce l’orientation de la personne en situation de handicap vers une catégorie ou un établissement ou un service nommément désigné. La décision d’orientation permet à la personne en situation de handicap de faire valoir ses droits auprès de l’établissement ou du service concerné
+
 
 <table style="width:100%">
   <tr>
@@ -479,35 +540,54 @@ La décision est une réponse à une demande de l'individu ou de son représenta
   </tr>
   <tr>
     <td>idDecision : [1..1] Identifiant </td>
-    <td>Numéro de la décision prise par la MDPH.</td>
+    <td>Cet identifiant est obtenu par la concaténation de l'identifiant local de la décision attribué par la MDPH à l’origine de la création du suivi de la décision (idDecisionMDPHInitial) et du numéro cette MDPH (idMDPHInitial) : idDecisionMDPHInitial/idMDPHInitial</td>
   </tr>
   <tr>
     <td>numeroEnregistrement : [0..1] Identifiant</td>
     <td>Numéro d’enregistrement au conseil général si différent du numéro d’identification MDPH.</td>
   </tr>
   <tr>
+    <td>typeDecision : [1..1] Code</td>
+    <td>Caractérise le type de décision prise par la CDAPH en réponse à une demande de compensation d’un usager (individu ou représentant légal), à une demande de révision par un tiers ou à un recours administratif préalable obligatoire (RAPO) d’un usager.<br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j398-type-decision-ms/$expand">JDV-J398-TYPE-DECISION-MS</a>
+    </td>
+  </tr>
+  <tr>
+    <td>dateEffetCloture : [0..1] Date</td>
+    <td>Date d'effet de la décision de clôture est la date à laquelle un droit n'est plus valable consécutivement à une décision de la CDAPH de clôture de droit ou d'attribution d'un droit de nature révision. A ne pas confondre avec la date d'échéance du droit qui est fixée lors de la décision d'attribution et qui ne doit jamais être modifiée.<br>
+    Contrainte(s) métier : Cet attribut est obligatoire si typeDecision = '5' (Clôture de droit). 
+    </td>
+  </tr>
+  <tr>
     <td>idDecisionMAJ : [0..*] Identifiant</td>
-    <td>Identifiants de la ou des décisions révisées ou renouvelées à l'origine du droit ou identifiant de la décision clôturée (concerne une seule décision) en cas de clôture de droit.</td>
+    <td>Identifiants de la ou des décisions révisées ou renouvelées à l'origine du droit ou identifiant de la décision clôturée (concerne une seule décision) en cas de clôture de droit.<br>
+    Ces identifiants sont obtenus par la concaténation des identifiants locaux de la ou des décisions révisées attribué par la MDPH à l’origine de la création du suivi de la décision (idDecisionMAJMDPHInitial) et du numéro cette MDPH (idMDPHInitial) : idDecisionMAJMDPHInitial/idMDPHInitial.<br>
+    Contrainte(s) métier : Cet attribut est obligatoire si 
+    <ul>
+    <li>typeDecision = '5' (Clôture de droit) </li>
+    <li>typeDecision ='1' (Attribution) et DroitPrestation.natureDroit  = '6' (Renouvellement) ou '7' (Révision) </li>
+    </ul>
+    Ne pas transmettre si typeDecision = '1' (Attribution) et DroitPrestation.natureDroit = '1' (Attribution)
+    </td>
   </tr>
   <tr>
     <td>idNat_Decision : [0..1] Identifiant</td>
-    <td>Identifiant unique de la décision généré par ViaTrajectoire. Cet identifiant unique est créé par ViaTrajectoire lorsque la décision est enregistrée dans le SI-SdO.</td>
+    <td>Identifiant technique unique de la décision attribué par ViaTrajectoire. Cet identifiant créé par ViaTrajectoire lorsque la décision est enregistrée dans le SI du Suivi des Orientations (SdO) correspondant à ViaTrajectoire.</td>
   </tr>
   <tr>
     <td>dateDecision : [0..1] Date</td>
     <td>Date à laquelle se réunit la CDAPH pour prendre la décision.</td>
   </tr>
   <tr>
-    <td>typeDecision : [0..1] Code</td>
-    <td>Type de décision.<br>
-    Nomenclature(s) associée(s) : à définir
+    <td>motivation : [0..*] Code</td>
+    <td>Considération(s) de droit ou de fait qui constituent le fondement de la décision.<br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j399-motivation-ms/$expand">JDV-J399-MOTIVATION-MS</a>
     </td>
   </tr>
   <tr>
-    <td>motivation : [0..*] Code</td>
-    <td>Considération(s) de droit ou de fait qui constituent le fondement de la décision.<br>
-    Nomenclature(s) associée(s) : à définir
-    </td>
+    <td>motivationLocale : [0..*] Texte</td>
+    <td>Champ libre permettant de renseigner une motivation locale.<br>
+ Contrainte(s) métier : Ce champ apparaît (et devient obligatoire) uniquement si le code "9999 - Autre" est renseigné pour l'élément "motivation".</td>
   </tr>
   <tr>
     <td>commentaire : [0..1] Texte</td>
@@ -517,7 +597,7 @@ La décision est une réponse à une demande de l'individu ou de son représenta
 
 ##### Classe DroitPrestation
 
-Ensemble des droits et prestations prévus par le Code de l'Action Sociale et des Familles, le Code de l'Education, le Code de la Sécurité Sociale et le Code de la Route auxquels la décision de la CDAPH donne accès.
+Ensemble des dispositifs prévus par le Code de l'Action Sociale et des Familles, le Code de l'Education, le Code de la Sécurité Sociale et le Code de la Route auxquels la décision de la CDAPH peut donner accès. 
 
 <table style="width:100%">
   <tr>
@@ -525,48 +605,53 @@ Ensemble des droits et prestations prévus par le Code de l'Action Sociale et de
     <th>Description</th>
   </tr>
   <tr>
-    <td>idDroitPrestation : [1..1] Identifiant</td>
-    <td>Identifiant du droit ou de la prestation.</td>
-  </tr>
-  <tr>
-    <td>contactOrganisme : [0..1] ContactPersonneMorale</td>
-    <td>Contact de l’organisme responsable du droit ou de la prestation.</td>
-  </tr>
-  <tr>
     <td>numeroAllocataire : [0..1] Identifiant</td>
     <td>Numéro d’allocataire pour le droit ou la prestation.</td>
   </tr>
   <tr>
-    <td>typeDroitPrestation : [0..1] Code</td>
+    <td>categorieDroitPrestation : [1..1] Code</td>
+    <td>Catégorie de droit et prestation caractérisant la décision d'orientation.<br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j401-categorie-droit-prestation-ms/$expand">JDV-J401-CATEGORIE-DROIT-PRESTATION-MS</a></td>
+  </tr>
+  <tr>
+    <td>typeDroitPrestation : [1..1] Code</td>
     <td>Type de droit et prestation caractérisant la décision d'orientation.<br>
-    Nomenclature(s) associée(s) : à définir</td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j402-type-droit-prestation-ms/$expand">JDV-J402-TYPE-DROIT-PRESTATION-MS</a><br>
+     Contrainte(s) métier : La règle métier entre les catégories et les types de droit et prestation est spécifiée dans la terminologie hierarchique <a href="https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r420-droit-prestation">TRE-R420-DROIT-PRESTATION</a></td>
   </tr>
   <tr>
-    <td>natureDroit : [0..1] Code</td>
+    <td>natureDroitPrestation : [1..1] Code</td>
     <td>Nature du droit s’appliquant à tous les droits ou prestations ouverts par la CDAPH. Elle permet de gérer, le cas échéant, le lien entre la date d’ouverture du droit et la date de fin d’un droit précédent. Elle est déterminée par l’équipe pluridisciplinaire ou par la CDAPH.<br>
-    Nomenclature(s) associée(s) : à définir</td>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j400-nature-droit-prestation-ms/$expand">JDV-J400-NATURE-DROIT-PRESTATION</a></td>
   </tr>
   <tr>
-    <td>dateOuverture : [0..1] Date</td>
+    <td>dateOuverture : [1..1] Date</td>
     <td>La date d'ouverture de droit est la date à laquelle le droit devient effectif.<br>
     Sauf disposition spécifique, la date d’ouverture des droits est la date de la décision de la CDAPH sur le fondement du principe de non-rétroactivité des décisions.
     </td>
   </tr>
   <tr>
-    <td>dateEcheance : [0..1] Date</td>
+    <td>dateEcheance : [1..1] Date</td>
     <td>La date d'échéance de droit est la date à laquelle le droit ou la prestation ouvert prend fin. L'équipe pluridisciplinaire peut moduler les dates selon les besoins de la personne, tout en restant dans le minimum et dans le maximum prévu par la loi pour chacune des prestations.</td>
   </tr>
   <tr>
-    <td>existencePAG : [0..1] Indicateur</td>
+    <td>existencePAG : [1..1] Indicateur</td>
     <td>Indicateur de l'existence d'un Plan d’Accompagnement Global (PAG).<br>
     1 = si la décision est associée à un PAG au statut "élaboré" ou "validé" ;<br>
     0 = pour tous les autres cas (la décision n'est pas associée à un PAG ou est associée à un PAG ayant un statut différent de "élaboré" ou "validé").
     </td>
   </tr>
   <tr>
+    <td>motifFinPAG : [0..1] Code</td>
+    <td>Lorsque le plan d'accompagnement global (PAG) arrive à échéance ou si le coordonnateur de parcours l'estime nécessaire, un bilan est élaboré et la phase d'actualisation est lancée afin de déterminer s'il faut prolonger ce PAG, le modifier ou y mettre fin. 
+La MDPH, les partenaires et l'usager peuvent définir ensemble que le PAG n'est plus nécessaire et donc y mettre  fin. Le consentement de la personne ou de son représentant légal est recueilli et l'information sur la fin du PAG transmise à l'ensemble des parties-prenantes.<br>
+     Contrainte(s) métier : Le motif est obligatoire si existencePAG passe de "1" à "0". Le fait de mettre fin au PAG n'a pas d'impact sur les droits en cours (même ceux ouverts dans le cadre du PAG). Ces droits demeurent valables jusqu'à leur date d'échéance. <br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j403-motif-fin-pag-ms/$expand">JDV-J403-MOTIF-FIN-PAG-MS</a></td>
+  </tr>
+  <tr>
     <td>creton : [0..1] Indicateur</td>
     <td>Amendement Creton. Il s’agit d’un dispositif législatif permettant le maintien temporaire de jeunes adultes de plus de 20 ans en établissement pour enfants dans l’attente d’une place dans un établissement pour adultes.<br>
-    Obligatoire pour les décisions orientations ESSMS enfant, non prévu pour les autres orientations.<br>
+    Contrainte(s) métier : Obligatoire pour categorieDroitPrestation = 7- Orientation ESMS Enfants (jdv-j401-categorie-droit-prestation-ms) et typeDroitPrestation = tous les codes 7.xx (jdv-j402-type-droit-prestation-ms). Optionnel pour les autres orientations.<br>
     0 = l'usager ne bénéficie pas de l'amendement Creton ;<br>
     1 = l'usager bénéficie de l'amendement Creton.
     </td>
@@ -578,7 +663,7 @@ Ensemble des droits et prestations prévus par le Code de l'Action Sociale et de
   <tr>
     <td>typeCompensation : [0..1] Code</td>
     <td>Type de compensation dans le cas d’une aide sociale.<br>
-    Nomenclature(s) associée(s) : à définir
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j394-type-demande-compensation-ms/$expand">JDV-J394-TYPE-DEMANDE-COMPENSATION-MS</a>
     </td>
   </tr>
   <tr>
@@ -589,7 +674,7 @@ Ensemble des droits et prestations prévus par le Code de l'Action Sociale et de
 
 ##### Classe DetailPrestation
 
-Détails de la prestation.
+Détails de la prestation pour préciser l'orientation.
 
 <table style="width:100%">
   <tr>
@@ -599,32 +684,97 @@ Détails de la prestation.
   <tr>
     <td>temporaliteAccueil : [0..1] Code</td>
     <td>Fréquence d'accueil lors d'une prise en charge en ESSMS.<br>
-    Nomenclature(s) associée(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J30-TemporaliteAccueil-ROR/FHIR/JDV-J30-TemporaliteAccueil-ROR">JDV_J30-TemporaliteAccueil-ROR</a></td>
+  Contrainte(s) métier : La temporalité d’accueil est transmise pour tous les droits pour lesquels elle est obligatoire.<br>
+  C'est à dire pour les catégories de droit et prestation suivantes :
+  <ul>
+    <li>Orientation ESMS Enfants</li>
+    <li>Orientation ESMS Adultes</li>
+    </ul><br>
+Pour les types de droit et prestation suivants :
+<ul>
+    <li>Orientation en Unité d'enseignement</li>
+    <li>Orientation vers une Scolarisation en milieu ordinaire à temps partagé (UE et établissement scolaire)</li>
+    <li>Orientation vers une Unité d'enseignement et une scolarisation en ULIS à temps partagé</li>
+    <li>Orientation vers une unité d’enseignement et une scolarisation en enseignement adapté à temps partagé</li>
+    </ul><br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J30-TemporaliteAccueil-ROR/FHIR/JDV-J30-TemporaliteAccueil-ROR">JDV_J30-TemporaliteAccueil-ROR</a></td>
   </tr>
   <tr>
-    <td>precisionOrientation : [0..1] Code</td>
-    <td>Précision de l'orientation à renseigner en fonction du type de droit.<br>
-    Nomenclature(s) associée(s) : à définir</td>
+    <td>precisionOrientation : [0..1] ConceptCode</td>
+    <td>La précision de l'orientation est codée à un jeu de valeurs pour les types de droit suivants :<br>
+<table style="width:100%">
+  <tr>
+    <th>Type droit prestation</th>
+    <th>Jeu de valeurs associé</th>
+  </tr>
+  <tr>
+    <td>7.8 Orientation vers un Service d'éducation spéciale et de soins à domicile (SESSAD)</td>
+    <td>Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j408-orientation-ms/$expand">JDV-J408-ORIENTATION-MS</a><br>
+    Contrainte(s) métier : Seuls les codes de 1 à 6 sont autorisés.</td>
+  </tr>
+  <tr>
+    <td>7.9 Orientation vers un Service d'accompagnement familial et d'éducation précoce (SAFEP)</td>
+    <td>Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j408-orientation-ms/$expand">JDV-J408-ORIENTATION-MS</a><br>
+    Contrainte(s) métier : Seuls les codes 7 et 8 sont autorisés.</td>
+  </tr>
+  <tr>
+    <td>13.1 Orientation vers un établissement d'accueil non médicalisé</td>
+    <td>Contrainte(s) métier : precisionOrientation est interdit lorsque typeDroitPrestation = '13.1'</td>
+  </tr>
+   <tr>
+    <td>13.2 Orientation vers un établissement d'accueil médicalisé en tout ou partie</td>
+    <td>Contrainte(s) métier : precisionOrientation est interdit lorsque typeDroitPrestation = '13.2'</td>
+  </tr>
+  <tr>
+    <td>8.3 Orientation en Enseignement adapté (SEGPA/EREA)</td>
+    <td>Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j408-orientation-ms/$expand">JDV-J408-ORIENTATION-MS</a><br>
+    Seuls les codes 9 et 10 sont autorisés.</td>
+  </tr>
+  <tr>
+    <td>8.6 Orientation en Unité d'enseignement</td>
+    <td>Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j408-orientation-ms/$expand">JDV-J408-ORIENTATION-MS</a><br>
+    Contrainte(s) métier : Seuls les codes UEA et UEM sont autorisés.</td>
+  </tr>
+  </table>
+Pour les autres types de droits la valeur de cet attribut est un texte libre.
+   </td>
+  </tr>
+  <tr>
+    <td>accueilSequentiel : [0..1] Indicateur</td>
+    <td>Indique si l’unité accepte d’accueillir des personnes en situation de handicap de façon séquentielle, c'est à dire sur une partie de la semaine.<br>
+    0 = L'unité n'accepte pas l'accueil séquentiel<br>
+    1 = L'unité accepte l'accueil séquentiel</td>
+  </tr>
+   <tr>
+    <td>formation : [0..1] Texte</td>
+    <td>Formation proposée<br>
+    Contrainte(s) métier : cet élément est obligatoire si le type de droit et prestation est "11.1" (Orientation en Centre de rééducation professionnelle (CRP)).</td>
   </tr>
   <tr>
     <td>frequence : [0..1] Mesure</td>
     <td>Fréquence de versement dans le cas d’une aide sociale.</td>
   </tr>
   <tr>
-    <td>qualification : [0..1] Code</td>
-    <td>Il existe deux types d’orientation :
-    <ul>
-    <li>Orientation cible (appelée aussi orientation hors contrainte de l’offre, théorique ou idéale) : qualification d'une décision basée uniquement sur les attentes et les besoins évalués de la personne et considérée par l'équipe pluridisciplinaire ou la CDAPH comme la réponse la plus adaptée à ces attentes et besoins sans prendre en compte la réalité de l'offre disponible.</li>
-    <li> Orientation alternative (appelée aussi orientation par défaut) : qualification d'une décision, partiellement adaptée au regard des attentes et des besoins évalués de la personne pour prendre en compte la réalité de l'offre disponible, afin d'augmenter la possibilité de réalisation effective de cette orientation.<br>
-    Nomenclature(s) associée(s) : à définir</li>
-    </ul>
-    </td>
-  </tr>
-  <tr>
     <td>montantAttribue : [0..1] Montant</td>
     <td>Montant attribué dans le cas d’une aide sociale.</td>
   </tr>
+  <tr>
+    <td>qualificationOrientation : [1..1] Code</td>
+    <td>Il existe deux types d’orientation :
+    <ul>
+    <li>Orientation cible (appelée aussi orientation hors contrainte de l’offre, théorique ou idéale) : qualification d'une décision basée uniquement sur les attentes et les besoins évalués de la personne et considérée par l'équipe pluridisciplinaire ou la CDAPH comme la réponse la plus adaptée à ces attentes et besoins sans prendre en compte la réalité de l'offre disponible.</li>
+    <li> Orientation alternative lorsqu'elle est partiellement adaptée au regard des attentes et des besoins évalués de la personne, mais qu'elle prend bien en compte la réalité de l'offre disponible et qu'elle a ainsi plus de chance d'être mise en oeuvre (appelée aussi "orientation par défaut").</li>
+    </ul>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j404-qualification-orientation-ms/$expand">JDV-J404-QUALIFICATION-ORIENTATION-MS</a>
+    </td>
+  </tr>
 </table>
+
+##### Classe StructureAccueil
+
+** Classe spécialisée, hérite de la classe EntiteJuridique définie dans le MOS et profilée pour ce volet.
+
+Cette classe représente le ou les ESSMS désigné(s) par la CDAPH comme étant susceptible d'accueillir l'individu en situation de handicap.
 
 ##### Classe PriseCharge
 
@@ -637,8 +787,9 @@ Description des modalités d'accueil.
   </tr>
   <tr>
     <td>modePriseCharge : [0..1] Code</td>
-    <td>Mode de prise en charge.<br>
-    Nomenclature(s) associée(s) : à définir</td>
+    <td>Le mode de prise en charge est renseigné pour certaines orientations en ESSMS. Il permet d'indiquer comment le bénéficiaire est pris en charge (internat, accueil de jour, accueil de nuit)<br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J264-ModeEtCentreDePriseEnCharge-MDPH/FHIR/JDV-J264-ModeEtCentreDePriseEnCharge-MDPH">JDV-J264-ModeEtCentreDePriseEnCharge-MDPH</a>
+    </td>
   </tr>
 </table>
 
@@ -652,19 +803,20 @@ Quantification de la prise en charge.
     <th>Description</th>
   </tr>
   <tr>
-    <td>quantificationNombre : [0..1] Numerique</td>
-    <td>Valeur de la quantification.</td>
+    <td>valeurPriseCharge : [0..1] Numerique</td>
+    <td>Valeur de la prise en charge.</td>
   </tr>
   <tr>
-    <td>quantificationUnite : [0..1] Code</td>
-    <td>Unité de la quantification (journée ou demi-journée).<br>
-    Nomenclature(s) associée(s) : à définir
+    <td>UnitePriseCharge : [0..1] Mesure</td>
+    <td>Unité de la durée de la prise en charge (journée ou demi-journée).
     </td>
   </tr>
   <tr>
-    <td>quantificationPeriodicite : [0..1] Code</td>
-    <td>Périodicité de la quantification (quotidienne, hebdomadaire, mensuelle, annuelle).<br>
-    Nomenclature(s) associée(s) : à définir</td>
+    <td>frequencePriseCharge : [0..1] Code</td>
+    <td>Périodicité de la prise en charge (quotidienne, hebdomadaire, mensuelle, annuelle).<br>
+    Jeu(x) valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J37-UcumUniteTemps/FHIR/JDV-J37-UcumUniteTemps">JDV-J37-UcumUniteTemps</a><br>
+    Contrainte(s) métier : Seuls les codes suivants sont à utiliser : a (année), mo (mois), wk (semaine), d (jour)
+    </td>
   </tr>
 </table>
 
@@ -673,10 +825,9 @@ Quantification de la prise en charge.
 <!-- object data="bloc_environnement_ressources.svg" type="image/svg+xml"></object -->
 <div style="text-align:center;">{%include bloc_environnement_ressources.svg%}</div>
 
+##### Classe Contact
 
-##### Classe ContactPersonnePhysique
-
-Personne physique qui agit comme point de contact auprès d'une autre personne ou d'un autre service.
+Un contact peut être un membre de la famille ou un proche de l’Usager. Il peut s’agir par exemple d’un aidant, de la personne de confiance de l’Usager…
 
 <table style="width:100%">
   <tr>
@@ -684,78 +835,27 @@ Personne physique qui agit comme point de contact auprès d'une autre personne o
     <th>Description</th>
   </tr>
   <tr>
-    <td>identifiantContactPP : [0..1] Identifiant</td>
-    <td>Identifiant du contact</td>
-  </tr>
-  <tr>
-    <td>nom : [0..1] Texte</td>
-    <td>Nom de la personne contact.</td>
-  </tr>
-  <tr>
-    <td>prenom : [0..1] Texte</td>
-    <td>Prénom de la personne contact.</td>
-  </tr>
-  <tr>
-    <td>civilite : [0..1] Code</td>
-    <td>Civilité du contact.<br>
-    jeu(x) de valeur(s) associé(s) :  <a href="https://mos.esante.gouv.fr/NOS/JDV_J245-Civilite-CISIS/FHIR/JDV-J245-Civilite-CISIS">JDV_J245-Civilite-CISIS</a></td>
-  </tr>
-  <tr>
-    <td>paysNationalite : [0..*] Code</td>
-    <td>Pays de nationalité de la personne contact, actuelle ou rattachement de la nationalité à un espace de pays conventionné<br>
-    Nomenclature(s) associée(s) : Norme ISO 3166</td>
-  </tr>
-  <tr>
-    <td>profession : [0..1] Texte</td>
-    <td>Profession de la personne contact.</td>
-  </tr>
-  <tr>
-    <td>situationFamiliale : [0..1] Code</td>
-    <td>Situation familiale de la personne contact (célibataire, divorcée, etc.).<br>
-    Nomenclature(s) associée(s) : à définir</td>
-  </tr>
-  <tr>
-    <td>dateNaissance : [0..1] Date</td>
-    <td>Date de naissance de la personne contact.</td>
-  </tr>
-  <tr>
-    <td>telecommunication : [0..*] Telecommunication</td>
-    <td>Adresse(s) de télécommunication du contact (numéro de téléphone, adresse email, URL, etc.).</td>
-  </tr>
-  <tr>
-    <td>adresse : [0..1] Adresse</td>
-    <td>Adresse géopostale du point de contact.</td>
-  </tr>
-  <tr>
     <td>role : [0..1] Code</td>
-    <td>Rôle de la personne point de contact auprès d'une autre personne. Exemple dans le cas d'un patient, ce rôle indique si le point de contact est la personne à prévenir en cas d'urgence, la personne de confiance, etc.<br>
-    Nomenclature(s) associée(s) : <a href="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass">TRE_R260-HL7RoleClass</a></td>
+    <td>Rôle de la personne point de contact auprès d'une autre personne. Exemple dans le cas d'un usager, ce rôle indique si le point de contact est la personne à prévenir en cas d'urgence, la personne de confiance, etc.<br>
+    Jeux de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j384-role-membre-famille-ms/$expand">JDV-J384-role-membre-famille-ms</a></td>
+  </tr>
+  <tr>
+    <td>description : [0..1] Texte</td>
+    <td>Une description du contact.</td>
   </tr>
   <tr>
     <td>relation : [0..1] Code</td>
     <td>Lien de la personne point de contact auprès d'une autre personne. Exemple dans le cas d'un patient, ce lien indique si le point de contact est son enfant, son frère, etc.<br>
-    Nomenclature(s) associée(s) : <br>
-    <a href="https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode">TRE_R216-HL7RoleCode</a><br>
-    <a href="https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique">TRE_R217-ProtectionJuridique</a></td>
-  </tr>
-  <tr>
-    <td>fonction : [0..1] Code</td>
-    <td>Un titre, une position ou une fonction de la personne assurant le contact au sein de son organisation (directeur, secrétaire, etc.).
-    <a href="https://mos.esante.gouv.fr/NOS/TRE_R251-FonctionContact/FHIR/TRE-R251-FonctionContact">TRE_R251-FonctionContact</a></td>
-  </tr>
-  <tr>
-    <td>ordreAppel : [0..1] Numérique</td>
-    <td>Ordre de priorité d’appel du contact (1 = priorité maximale).</td>
-  </tr>
-  <tr>
-    <td>commentaire : [0..1] Texte</td>
-    <td>Commentaire relatif au contact.</td>
+    Jeux de valeur(s) associé(s) : <br>
+    <a href="https://mos.esante.gouv.fr/NOS/JDV_J14-QualiteRepresentantLegal-CISIS/FHIR/JDV-J14-QualiteRepresentantLegal-CISIS">JDV-J14-QualiteRepresentantLegal-CISIS</a><br>
+    <a href="https://mos.esante.gouv.fr/NOS/JDV_J11-RelationPatient-CISIS/FHIR/JDV-J11-RelationPatient-CISIS">JDV-J11-RelationPatient-CISIS</a>
+    </td>
   </tr>
 </table>
 
-##### Classe  ContactPersonneMorale
+##### Classe PersonnePhysique
 
-Personne morale qui agit comme point de contact auprès d'une autre personne ou d'un autre service.
+Une personne physique est un individu titulaire de droits et d'obligations caractérisé par une identité civile.
 
 <table style="width:100%">
   <tr>
@@ -763,42 +863,50 @@ Personne morale qui agit comme point de contact auprès d'une autre personne ou 
     <th>Description</th>
   </tr>
   <tr>
-    <td>identifiantContactPP : [0..1] Identifiant</td>
-    <td>Identifiant du contact</td>
+    <td>identifiantPP : [1..1] Identifiant</td>
+    <td>Identifiant de la personne physique.</td>
   </tr>
   <tr>
-    <td>libelle : [0..1] Texte</td>
-    <td>Libellé du contact.</td>
+    <td>nomNaissance : [0..1] Texte</td>
+    <td>Nom de naissance de la personne.<br>
+    Synonymes : nom patronymique, nom de famille.</td>
   </tr>
   <tr>
-    <td>raisonSociale : [0..1] Texte</td>
-    <td>Raison sociale du contact.</td>
+    <td>prenom : [0..*] Texte</td>
+    <td>Prénom(s) de la personne déclarés à sa naissance.</td>
   </tr>
   <tr>
-    <td>typeOrgansime : [0..1] Code</td>
-    <td>Type d’organisme du contact.</td>
+    <td>civilite : [0..1] Code</td>
+    <td>Civilité de la personne physique.<br>
+    jeu(x) de valeur(s) associé(s) :  <a href="https://mos.esante.gouv.fr/NOS/JDV_J245-Civilite-CISIS/FHIR/JDV-J245-Civilite-CISIS">JDV_J245-Civilite-CISIS</a></td>
   </tr>
   <tr>
-    <td>telecommunication : [0..*] Telecommunication</td>
-    <td>Adresse(s) de télécommunication du contact (numéro de téléphone, adresse email, URL, etc.).</td>
+    <td>sexe : [0..1] Code</td>
+    <td>Sexe de la personne physique.<br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J143-AdministrativeGender-CISIS/FHIR/JDV-J143-AdministrativeGender-CISIS">JDV-J143-AdministrativeGender-CISIS</a>
+    </td>
   </tr>
   <tr>
-    <td>adresse : [0..1] Adresse</td>
-    <td>Adresse géopostale du point de contact.</td>
+    <td>paysNationalite : [0..*] Code</td>
+    <td>Pays de nationalité de la personne physique.<br>
+    Nomenclature(s) associée(s) : Norme ISO 3166</td>
   </tr>
   <tr>
-    <td>role : [0..1] Code</td>
-    <td>Rôle de la personne point de contact auprès d'une autre personne. Exemple dans le cas d'un patient, ce rôle indique si le point de contact est la personne à prévenir en cas d'urgence, la personne de confiance, etc.<br>
-    Nomenclature(s) associée(s) : <a href="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass">TRE_R260-HL7RoleClass</a></td>
+    <td>dateNaissance : [0..1] Date</td>
+    <td>Date de naissance de la personne physique.</td>
+  </tr>
+   <tr>
+    <td>adresse : [0..1]  <a href="#classe-adresse">Adresse</a></td>
+    <td>Adresse géopostale du point de la personne physique.</td>
   </tr>
   <tr>
-    <td>ordreAppel : [0..1] Numérique</td>
-    <td>Ordre de priorité d’appel du contact (1 = priorité maximale).</td>
+    <td>telecommunication : [0..*] <a href="#classe-telecommunication">Telecommunication</a></td>
+    <td>Adresse(s) de télécommunication de la personne physique (numéro de téléphone, adresse email, URL, etc.).</td>
   </tr>
   <tr>
     <td>commentaire : [0..1] Texte</td>
-    <td>Commentaire relatif au contact.</td>
-  </tr>
+    <td>Commentaire relatif à la personne physique.</td>
+</tr>
 </table>
 
 ##### Classe Ressource
@@ -922,9 +1030,9 @@ Relevé d'Identité Bancaire.
   </tr>
 </table>
 
-##### Classe Transport
+##### Classe MobiliteUsager
 
-Moyen de transport utilisé par l’usager.
+Dispositif de transport utilisé par l’usager.
 
 <table style="width:100%">
   <tr>
@@ -933,7 +1041,8 @@ Moyen de transport utilisé par l’usager.
   </tr>
   <tr>
     <td>type : [0..1] Code</td>
-    <td>Type de moyen de transport.</td>
+    <td>Type de moyen de transport.<br>
+    Jeu(x) de valeur(s) associé(s) : JDV Mode De Transport CISIS avec l'OID 1.2.250.1.213.1.1.5.140 publié sur <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a></td>
   </tr>
   <tr>
     <td>observationAmenagement : [0..1] Texte</td>
@@ -951,12 +1060,13 @@ Permis de conduire de l’usager.
     <th>Description</th>
   </tr>
   <tr>
-    <td>categorie : [0..1] Code</td>
-    <td>Catégorie du permis de conduire.</td>
+    <td>numPermisConduire : [0..1] Identifiant</td>
+    <td>Numéro du permis de conduire de l'usager.</td>
   </tr>
   <tr>
-    <td>type : [0..1] Code</td>
-    <td>Type du permis de conduire.</td>
+    <td>categorie : [0..1] Code</td>
+    <td>Catégorie du permis de conduire.<br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j410-categorie-permis-conduire-ms/$expand">JDV-J410-CATEGORIE-PERMIS-CONDUIRE-MS</a></td>
   </tr>
   <tr>
     <td>dateObtention : [0..1] Date</td>
@@ -1033,8 +1143,24 @@ La classe EntiteJuridique est définie dans le MOS et est profilée pour ce vole
     <td>Cet identifiant est obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de six caractères "SEJOUR" et numéro de dossier administratif du séjour dans le DUI (numeroDossier) : <br>idSejour = 3+FINESS/identifiantLocalUsagerESSMS-SEJOUR-numeroDossier</td>
   </tr>
    <tr>
-    <td>ESSMS : [1..1] EntiteJuridique</td>
+    <td>numeroDossierAdministratifSejour : [0..1] Identifiant</td>
+    <td>Numéro de dossier administratif du séjour.</td>
+  </tr>
+   <tr>
+    <td>ESSMSAccueil : [1..1] EntiteJuridique</td>
     <td>Établissement ou service social ou médico-social.</td>
+  </tr>
+  <tr>
+    <td>numeroDossierESSMSProvenance : [0..1] Identifiant</td>
+    <td>Numéro de dossier administratif dans l'ESSMS de provenance.</td>
+  </tr>
+   <tr>
+    <td>ESSMSProvenance : [0..1] EntiteJuridique</td>
+    <td>Établissement ou service social ou médico-social de provenance.</td>
+  </tr>
+  <tr>
+    <td>dateEntreeESSMSProvenance : [0..1] DateHeure</td>
+    <td>Date d'entrée dans l'ESSMS de provenance.</td>
   </tr>
   <tr>
     <td>dateAdmission : [0..1] DateHeure</td>
@@ -1049,6 +1175,11 @@ La classe EntiteJuridique est définie dans le MOS et est profilée pour ce vole
     <td>Date d’entrée dans le séjour.</td>
   </tr>
   <tr>
+    <td>modaliteEntree : [0..1] Code</td>
+    <td>Mode d'entrée du séjour.<br>
+    Jeu(x) de valeur(s) associé(s) : en cours de construction</td>
+  </tr>
+  <tr>
     <td>libelleModeEntree : [0..1] Texte</td>
     <td>Libellé du mode d’entée du séjour.</td>
   </tr>
@@ -1060,9 +1191,23 @@ La classe EntiteJuridique est définie dans le MOS et est profilée pour ce vole
     <td>dateSortie : [0..1] DateHeure</td>
     <td>Date de sortie du séjour.</td>
   </tr>
+   <tr>
+    <td>modaliteSortie : [0..1] Code</td>
+    <td>Mode de sortie/destination du séjour.<br>
+    Jeu(x) de valeur(s) associé(s) : en cours de construction</td>
+  </tr>
   <tr>
     <td>libelleModeSortie : [0..1] Texte</td>
     <td>Libellé du mode de sortie du séjour.</td>
+  </tr>
+  <tr>
+    <td>origineDemande : [0..1] Texte</td>
+    <td>Désignation de la personne ou de la structure qui est à l'origine du séjour.</td>
+  </tr>
+   <tr>
+    <td>modaliteAccueil : [0..1] Code</td>
+    <td>Mode de fonctionnement FINESS utilisé pour l'usager.<br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J226-ModaliteAccueil-ROR/FHIR/JDV-J226-ModaliteAccueil-ROR">JDV-J226-ModaliteAccueil-ROR</a></td>
   </tr>
   <tr>
     <td>commentaire : [0..1] Texte</td>
@@ -1203,7 +1348,8 @@ Résultat de l'évaluation globale d'un usager.
    <tr>
     <td>typeEvaluation : [1..1] Code</td>
     <td>Type de l’évaluation.<br>
-    Jeu(x) de valeur(s) associé(s) : JDV_TypeEvaluation_CISIS avec l'OID 1.2.250.1.213.1.1.5.802 publié sur <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a>
+    Jeu(x) de valeur(s) associé(s) : JDV_TypeEvaluation_CISIS avec l'OID 1.2.250.1.213.1.1.5.802 publié sur <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a><br>
+    Lorsque le type d'évaluation est "Autre type d'évaluation" la grille d'évaluation est véhiculée en pièce jointe de l'évaluation, sous la forme d'une grille non structurée (en pdf) ne faisant pas partie des évaluations nationales ou internationales connues.
     </td>
   </tr>
     <tr>
@@ -1216,6 +1362,15 @@ Résultat de l'évaluation globale d'un usager.
     - Evaluation AGGIR PH SSIAD : JDV_GIR_CISIS avec l'OID 1.2.250.1.213.1.1.5.53 publié sur <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a><br>
     - Evaluation AGGIR PA SSIAD : JDV_GIR_CISIS avec l'OID 1.2.250.1.213.1.1.5.53 publié sur <a href="https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs">annexe-vocabulaire-et-jeux-de-valeurs</a>
     </td>
+  </tr>
+  <tr>
+    <td>modaliteEvaluation : [0..1] Texte</td>
+    <td>Mode d'évaluation.</td>
+  </tr>
+    <td>autoEvaluation : [0..1] Indicateur</td>
+    <td>Indique si l'évaluation est une auto-évaluation.<br>
+1 = L'évaluation est une auto-évaluation<br>
+0 = L'évaluation n'est pas une évaluation</td>
   </tr>
    <tr>
     <td>commentaireEvaluation : [0..1] Texte</td>
@@ -1300,11 +1455,9 @@ Ce niveau permet d'associer à un champ évalué de la classe "DetailEvaluation"
 
 ##### Classe Evaluateur
 
-** Classe spécialisée, hérite de la classe Professionnel du MOS profilée pour ce volet.
+** Classe spécialisée, hérite soit de la classe Professionnel du MOS profilée pour ce volet soit de la classe Usager dans le cas d'une auto évaluation, où l'évaluateur correspond à l'usager.
 
 Cette classe regroupe les items pouvant caractériser la personne ayant réalisé l'évaluation.<br>
-
-Dans le cas d'une auto évaluation, l'évaluateur étant l'usager cet élément n'est pas requis.
 
 ##### Classe Responsable
 
@@ -1323,6 +1476,469 @@ Cette classe regroupe les items pouvant caractériser la personne ayant rédigé
 Dans le cas d'une auto évaluation, l'auteur étant l'usager cet élément n'est pas requis.<br>
 <br>
 <u>Remarque</u> : Hormis le cas de l'auto évaluation, au moins un des 3 éléments (Evaluateur, Responsable, Auteur) doit être renseigné.
+
+##### Classe Porteur
+
+** Classe spécialisée, hérite de la classe EntiteJuridique du MOS profilée pour ce volet.
+
+Cette classe correspond à la personne morale porteuse de l'évaluation de l'usager. Dans le cas d'une auto-évaluation, cet élément est obligatoire.
+
+#### Projet personnalisé
+
+<div style="text-align:center;">{%include bloc_projet_personnalise.svg%}</div>
+
+##### Classe Projet personnalisé
+Le projet personnalisé est un document co-construit par l'usager, son entourage et les professionnels du médico-social. Il s'agit d'un outil de coordination visant à répondre à long terme aux besoins et attentes de l'usager. Il regroupe les attentes, définit les objectifs et met en place un accompagnement pour favoriser le développement et l'autonomie de l'usager. Le projet personnalisé est mis à jour à chaque événement de vie de l'usager ou au minimum une fois par an.
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr> 
+  <tr>
+    <td>idProjetPersonnalise : [1..1] Identifiant</td>
+    <td>Identifiant technique du projet personnalisé obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "PPER" et de l'identifiant du projet personnalisé dans le DUI (numProjetPersonnalise) : <br>idProjetPersonnalise = 3+FINESS/identifiantLocalUsagerESSMS-PPER-numProjetPersonnalise</td>
+  </tr>
+  <tr>
+    <td>titreProjetPersonnalise : [1..1] Texte</td>
+    <td>Titre du projet personnalisé.</td>
+  </tr>
+   <tr>
+    <td>descriptionProjetPersonnalise : [0..1] Texte</td>
+    <td>Description du projet personnalisé.</td>
+  </tr>
+  <tr>
+    <td>typeProjetPersonnalise : [0..1] Code</td>
+    <td>Type de projet personnalisé.<br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j367-type-projet-personnalise-ms/$expand">JDV-J367-type-projet-personnalise-ms</a></td>
+  </tr>
+  <tr>
+    <td>modaliteCommunicationProjetPersonnalise : [0..1] Texte</td>
+    <td>Modalité de communication ou de transmission du projet personnalisé à l'usager et/ou à son entourage.</td>
+  </tr>
+  <tr>
+    <td>accordUsagerProjetPersonnalise : [0..*] <a href="#classe-accord">Accord</a></td>
+    <td>Accord de l'usager et/ou de son entourage.</td>
+  </tr>
+   <tr>
+    <td>accordStructureProjetPersonnalise : [1..*] <a href="#classe-accord">Accord</a></td>
+    <td>Accord de la structure.</td>
+  </tr>
+  <tr>
+    <td>dateDebutMiseEnOeuvreProjetPersonnalise : [0..1] DateHeure</td>
+    <td>Date de début de mise en œuvre du projet personnalisé.</td>
+  </tr>
+  <tr>
+    <td>dateFinMiseEnOeuvreProjetPersonnalise : [0..1] DateHeure</td>
+    <td>Date de fin de mise en œuvre du projet personnalisé.</td>
+  </tr>
+  <tr>
+    <td>entrantProjetPersonnalise : [0..*] ObjetBinaire</td>
+    <td>Entrant(s) du projet personnalisé.</td>
+  </tr>
+</table>
+
+##### Classe Besoin
+Chaque usager a des attentes et des besoins singuliers, que le professionnel s’emploie à intégrer dans le projet personnalisé en tenant compte de l'évolution de sa situation, de ses aspirations et ses spécificités. Le besoin peut découler des attentes.
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>idBesoin : [1..1] Identifiant</td>
+    <td>Identifiant technique du besoin obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "BESO" et de l'identifiant du besoin dans le DUI (numBesoin) : <br>idBesoin = 3+FINESS/identifiantLocalUsagerESSMS-BESO-numBesoin</td>
+  </tr>
+  <tr>
+    <td>typeBesoin : [0..1] Code</td>
+    <td>Type de besoin.<br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J285-Besoins_SERAFIN/FHIR/JDV-J285-Besoins-SERAFIN">JDV-J285-Besoins-SERAFIN</a></td>
+  </tr>
+  <tr>
+    <td>descriptionBesoin : [1..1] Texte</td>
+    <td>Description du besoin.</td>
+  </tr>
+  <tr>
+    <td>analyseProfessionnelBesoin : [0..*] Texte</td>
+    <td>Analyse du besoin par un professionnel.</td>
+  </tr>
+  <tr>
+    <td>commentaireBesoin : [0..*] Texte</td>
+    <td>Permet de compléter ou éclairer la description du besoin.</td>
+  </tr>
+  <tr>
+    <td>pieceJointeBesoin : [0..*] ObjetBinaire</td>
+    <td>Pièce(s) jointe(s)du besoin.</td>
+  </tr>
+</table>
+
+##### Classe Objectif
+L'objectif correspond au résultat à atteindre dans le cadre du projet personnalisé. Il peut être rattaché au besoin.
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>idObjectif : [1..1] Identifiant</td>
+    <td>Identifiant technique de l'objectif obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "OBJE" et de l'identifiant de l'objectif dans le DUI (numObjectif) : <br>idObjectif = 3+FINESS/identifiantLocalUsagerESSMS-OBJE-numObjectif</td>
+  </tr>
+  <tr>
+    <td>titreObjectif : [1..1] Texte</td>
+    <td>Titre de l'objectif.</td>
+  </tr>
+  <tr>
+    <td>descriptionObjectif : [1..1] Texte</td>
+    <td>Description de l'objectif.</td>
+  </tr>
+  <tr>
+    <td>domaineObjectif : [0..*] ConceptCode</td>
+    <td>Domaine de l'objectif. La notion de domaine renvoi à des référentiels locaux au sein des structures ESMS.</td>
+  </tr>
+  <tr>
+    <td>dateDebutObjectif : [0..1] Date</td>
+    <td>Date de début de l'objectif.</td>
+  </tr>
+  <tr>
+    <td>dateFinObjectif : [0..1] Date</td>
+    <td>Date de fin de l'objectif.</td>
+  </tr>
+  <tr>
+    <td>avisUsagerObjectif : [0..1] Texte</td>
+    <td>Avis de l'usager sur l'objectif.</td>
+  </tr>
+  <tr>
+    <td>resultatAttenduObjectif : [0..1] Texte</td>
+    <td>Résultat attendu sur l'objectif.</td>
+  </tr>
+  <tr>
+    <td>strategieMiseEnOeuvreObjectif : [0..1] Texte</td>
+    <td>Stratégie mise en œuvre de l'objectif.</td>
+  </tr>
+  <tr>
+    <td>referentObjectif : [0..1] <a href="#classe-professionnel">Professionnel</a></td>
+    <td>Référent de l'objectif.</td>
+  </tr>
+</table>
+
+##### Classe Action
+L'action est un acte mené dans le cadre du projet personnalisé. Elle peut être ratachée à un ou plusieurs objectifs.
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>idAction : [1..1] Identifiant</td>
+    <td>Identifiant technique de l'action obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "ACTI" et de l'identifiant de l'action dans le DUI (numAction) : <br>idAction = 3+FINESS/identifiantLocalUsagerESSMS-ACTI-numAction</td>
+  </tr> 
+  <tr>
+    <td>titreAction : [1..1] Texte</td>
+    <td>Titre de l'action à mener.</td>
+  </tr>
+  <tr>
+    <td>descriptionAction : [0..1] Texte</td>
+    <td>Description de l'action à mener.</td>
+  </tr>
+  <tr>
+    <td>dateDebutAction : [0..1] DateHeure</td>
+    <td>Date de début de l'action à mener.</td>
+  </tr>
+  <tr>
+    <td>dateFinAction : [0..1] DateHeure</td>
+    <td>Date de fin de l'action à mener.</td>
+  </tr>
+  <tr>
+    <td>avisUsagerAction : [0..1] Texte</td>
+    <td>Avis de l'usager sur l'action.</td>
+  </tr>
+  <tr>
+    <td>resultatAttenduAction : [0..1] Texte</td>
+    <td>Résultat attendu de l'action.</td>
+  </tr>
+  <tr>
+    <td>referentAction : [0..1] <a href="#classe-professionnel">Professionnel</a></td>
+    <td>Référent de l'action.</td>
+  </tr>
+    <tr>
+  <td>pieceJointeAction : [0..*] ObjetBinaire</td>
+  <td>Pièce(s) jointe(s) de l'action.</td>
+</tr>
+</table>
+
+##### Classe MoyenRessource
+Le moyen ou la ressource sert à réaliser le projet personnalisé. Le moyen ou la ressource peut être rattaché à une action.
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>idMoyenRessource : [1..1] Identifiant</td>
+    <td>Identifiant technique du moyen ou de la ressource obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "MORE" et de l'identifiant du moyen ou de la ressource dans le DUI (numMoyenRessource) : <br>idMoyenRessource = 3+FINESS/identifiantLocalUsagerESSMS-MORE-numMoyenRessource</td>
+  </tr> 
+  <tr>
+    <td>titreMoyenRessource : [1..1] Texte </td>
+    <td>Titre du moyen ou de la ressource à utiliser.</td>
+  </tr>
+  <tr>
+    <td>descriptionMoyenRessource : [0..1] Texte </td>
+    <td>Description du moyen ou de la ressource.</td>
+  </tr>
+  <tr>
+    <td>typeMoyenRessource : [0..1] Texte </td>
+    <td>Type du moyen ou de la ressource.<br>Distinction entre moyen et ressource si nécessaire.</td>
+  </tr>
+  <tr>
+    <td>dateDebutMoyenRessource : [0..1] DateHeure</td>
+    <td>Date de début du moyen ou de la ressource.</td>
+  </tr>
+  <tr>
+    <td>dateFinMoyenRessource : [0..1] DateHeure</td>
+    <td>Date de fin du moyen ou de la ressource.</td>
+  </tr>
+  <tr>
+    <td>pieceJointeMoyenRessource : [0..*] ObjetBinaire</td>
+    <td>Pièce(s) jointe(s) du moyen ou de la ressource.</td>
+  </tr>
+</table>
+
+##### Classe PrestationProjetPersonnalise
+La prestation désigne ce qui doit être accompli ou fourni à l'usager.Elle peut être rattachée à une action.
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>idPrestation : [1..1] Identifiant</td>
+    <td>Identifiant technique de la prestation projet personalisé obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "PRES" et de l'identifiant de la prestation projet personalisé dans le DUI (numPrestation) : <br>idPrestation = 3+FINESS/identifiantLocalUsagerESSMS-PRES-numPrestation</td>
+  </tr>
+  <tr>
+    <td>titrePrestation : [1..1] Texte</td>
+    <td>Titre de la prestation à utiliser.</td>
+  </tr>
+  <tr>
+    <td>descriptionPrestation : [0..1] Texte</td>
+    <td>Description de la prestation.</td>
+  </tr>
+  <tr>
+    <td>typePrestation : [0..*] Code</td>
+    <td>Type de la prestation.<br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J283-PrestationsIndirects_SERAFIN/FHIR/JDV-J283-PrestationsIndirects-SERAFIN">JDV-J283-PrestationsIndirects-SERAFIN</a>, <a href="https://mos.esante.gouv.fr/NOS/JDV_J284-PrestationsDirects_SERAFIN/FHIR/JDV-J284-PrestationsDirects-SERAFIN">JDV-J284-PrestationsDirects-SERAFIN</a>
+    </td>
+  </tr>
+<tr>
+  <td>dateDebutPrestation : [0..1] DateHeure</td>
+  <td>Date de début de la prestation.</td>
+</tr>
+<tr>
+  <td>dateFinPrestation : [0..1] DateHeure</td>
+  <td>Date de fin de la prestation.</td>
+</tr>
+<tr>
+  <td>pieceJointePrestation : [0..*] ObjetBinaire</td>
+  <td>Pièce(s) jointe(s) de la prestation.</td>
+</tr>
+</table> 
+
+##### Classe Attente
+L'attente de l'usager représente les souhaits, les désirs et les envies dans tous les domaines de sa vie. Elle peut être exprimée aussi bien par l'usager ainsi que par son entourage ou les professionnels du médico-social.
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>idAttente : [1..1] Identifiant</td>
+    <td>Identifiant technique de l'attente obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "ATTE" et de l'identifiant de l'attente dans le DUI (numAttente) : <br>idAttente = 3+FINESS/identifiantLocalUsagerESSMS-ATTE-numAttente</td>
+  </tr>
+  <tr>
+    <td>origineAttente : [1..1] Texte</td>
+    <td>Acteur (personne physique ou personne morale) qui a un lien avec l'usager ou l'usager elle-même qui définit son attente.</td>
+  </tr>
+  <tr>
+    <td>descriptionAttente : [1..1] Texte</td>
+    <td>Description de l'attente, des souhaits de l'acteur pour l'usager.</td>
+  </tr>
+  <tr>
+    <td>commentaireAttente : [0..*] Texte</td>
+    <td>Permet de compléter ou éclairer la description de l'attente.</td>
+  </tr>
+</table> 
+
+##### Classe Bilan
+Un bilan est une évaluation du projet personnalisé qui est réalisé à la conclusion de celui-ci ou à une étape intermédiaire. La réévaluation du projet personnalisé s'effectue à minima une fois par an ou dès lors que l’usager le demande ou qu’un changement est observé.
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>idBilan : [1..1] Identifiant</td>
+    <td>Identifiant technique du bilan obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "BILA" et de l'identifiant du bilan dans le DUI (numBilan) : <br>idBilan = 3+FINESS/identifiantLocalUsagerESSMS-BILA-numBilan</td>
+ </tr>
+ <tr>
+    <td>dateBilan : [1..1] DateHeure</td>
+    <td>Date et heure du bilan.</td>
+ </tr>
+ <tr>
+    <td>categorieBilan : [0..1] Code</td>
+    <td>Catégorie du bilan.<br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j366-statut-bilan-projet-personnalise-ms/$expand">JdvJ366StatutBilanProjetPersonnaliseMs</a></td>
+ </tr>
+  <tr>
+    <td>perimetreBilan : [0..1] Texte</td>
+    <td>Périmètre du bilan.</td>
+ </tr>
+ <tr>
+    <td>problematiqueGlobaleUsager : [0..1] Texte</td>
+    <td>Problématique liée à l'usager.</td>
+ </tr>
+ <tr>
+    <td>syntheseBilan : [0..1] Texte</td>
+    <td>Synthèse du bilan.</td>
+ </tr>
+ <tr>
+    <td>inviteBilan : [0..1] Texte</td>
+    <td>Liste les personnes invitées à participer au bilan. Il peut s'agir de professionnels du médico-social ou de l'entourage familiale de l'usager.</td>
+ </tr>
+ <tr>
+    <td>dateProchainBilan : [0..1] DateHeure</td>
+    <td>Date du prochain bilan.</td>
+ </tr>
+ <tr>
+    <td>pieceJointeBilan : [0..*] ObjetBinaire</td>
+    <td>Pièce(s) jointe(s) au bilan.</td>
+ </tr>
+</table>    
+
+###### Classe SynthèsePreparationBilan
+Préparation du bilan du projet personnalisé.
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+<tr>
+    <td>corps : [1..1] Texte</td>
+    <td>Corps de la préparation.</td>
+ </tr>
+ <tr>
+    <td>auteur : [1..1] (<a href="#classe-professionnel">Professionnel</a>, <a href="#classe-usager">Usager</a>, <a href="#classe-contact">Contact personne physique</a>)</td>
+    <td>Auteur de la préparation de bilan. Cet auteur peut référencer un professionnel, l'usager ou une personne de son entourage.</td>
+ </tr>
+</table>   
+
+#### Parcours
+
+<div style="text-align:center;">{%include bloc_periode_scolaire.svg%}</div>
+
+
+##### Classe ProjetVie
+
+Le projet de vie est l’expression de la projection dans l’avenir de l'usager. Le projet de vie peut concerner tous les domaines de la vie de la personne.
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>idProjetVie : [1..1] Identifiant</td>
+    <td>Identifiant technique unique du projet de vie obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de trois caractères "PDV" et de l'identifiant local du projet de vie dans le DUI (idLocalProjetVie) :<br> idProjetVie = 3+FINESS/identifiantLocalUsagerESSMS-PDV-idLocalProjetVie</td>
+ </tr>
+ <tr>
+    <td>titreProjetVie : [1..1] Texte</td>
+    <td>Titre du projet de vie.</td>
+ </tr>
+ <tr>
+    <td>dateDebutProjetVie : [0..1] Date</td>
+    <td>Date de début du projet de vie.</td>
+ </tr>
+ <tr>
+    <td>dateFinProjetVie : [0..1] Date</td>
+    <td>Date de fin du projet de vie.</td>
+ </tr>
+ <tr>
+    <td>aspirationSouhait : [0..*] Texte</td>
+    <td>Ambition, désir de l'usager pouvant porter sur tous les domaines de sa vie.</td>
+ </tr>
+</table>
+
+##### Classe PeriodeScolaire
+
+La période scolaire représente un temps de scolarisation pour l'usager ainsi que les caractéristiques de cette période. L'ensemble des périodes scolaires constitue le parcours scolaire de la personne.
+
+La classe EntiteGeographique est issue du MOS et est profilée pour ce volet.
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>idPeriodeScolaire : [1..1] Identifiant</td>
+    <td>Identifiant technique unique de la période scolaire obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de quatre caractères "PSCO" et du numéro de la période scolaire dans le DUI (numPeriodeScolaire) :<br> idPeriodeScolaire = 3+FINESS/identifiantLocalUsagerESSMS-PSCO-numPeriodeScolaire
+    </td>
+ </tr>
+  <tr>
+    <td>dateDebutPeriodeScolaire : [0..1] Date</td>
+    <td>Date de début de la période de scolaire. La date de début peut être différente d'une année scolaire civile habituelle.</td>
+ </tr>
+ <tr>
+    <td>dateFinPeriodeScolaire : [0..1] Date</td>
+    <td>Date de fin de la période scolaire. La date de fin peut être différente d'une année scolaire civile habituelle.</td>
+ </tr>
+ <tr>
+    <td>niveauScolaireReel : [0..1] ConceptCode</td>
+    <td>Situation scolaire réelle de l'usager.<br>
+    Jeu(x) de valeur(s) associé(s) : en cours de création NOS</td>
+ </tr>
+ <tr>
+    <td>niveauScolaireSuivi : [0..1] ConceptCode</td>
+    <td>Situation scolaire suivie de l'usager.<br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j411-niveau-scolaire-ms/$expand">JDV-J411-NIVEAU-SCOLAIRE-MS</a></td>
+ </tr>
+  <tr>
+    <td>typeEnseignementSpecialise : [0..*] ConceptCode</td>
+    <td>Type enseignement spécialisé.<br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j386-type-enseignement-specialise-ms/$expand">JDV-J386-TYPE-ENSEIGNEMENT-SPECIALISE-MS</a></td>
+ </tr>
+ <tr>
+    <td>diplome : [0..*] ConceptCode</td>
+    <td>Diplôme obtenu au cours de la période scolaire.<br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j391-niveau-diplome-ms/$expand">JDV-J391-NIVEAU-DIPLOME-MS</a></td>
+ </tr>
+ <tr>
+    <td>volumeScolarisation : [0..1] Numerique</td>
+    <td>Volume horaire de scolarisation de l'usager sur la période de scolarité. L'unité correspond ici à la demi-journée.</td>
+ </tr>
+  <tr>
+    <td>commentaireAnneeScolaire : [0..1] Texte</td>
+    <td>Commentaire sur l'année scolaire.</td>
+ </tr>
+  </table>
+
+##### Classe ReferentScolaire
+
+** Classe spécialisée, hérite de la classe PersonnePhysique
+
+La loi place l’enseignant référent comme l’acteur central des actions conduites en direction des élèves handicapés. Il est l’interlocuteur privilégié des parents et des différents acteurs autour de la scolarisation d’un enfant, qu’il soit scolarisé en école ordinaire ou bien dans le milieu spécialisé.
+
+##### Classe Ecole
+
+** Classe spécialisée, hérite de la classe EntiteGeographique qui est issue du MOS et qui est profilée pour ce volet.
+
+Cette classe correspond à la structure dans laquelle la période scolaire de l'usager se déroule.
 
 ### Partie Coordination des acteurs
 
@@ -1381,11 +1997,7 @@ Les classes EntiteJuridique, Lieu et Professionnel sont issues du MOS et sont pr
     <td>lieuEvenement : [0..1] Lieu</td>
     <td>Localisation d’exécution de l’évènement.</td>
   </tr>
-<tr>
-    <td>structureEnCharge : [0..1] EntiteJuridique</td>
-    <td>Structure de rattachement de l'usager en charge de l'évènement.</td>
-  </tr>
-<tr>
+  <tr>
     <td>dateDebutEvenement : [1..1] DateHeure</td>
     <td>Date et heure de début de l'évènement.</td>
   </tr>
@@ -1407,7 +2019,7 @@ Les classes EntiteJuridique, Lieu et Professionnel sont issues du MOS et sont pr
   </tr>
   <tr>
    <td>repas : [0..1] Indicateur</td>
-    <td>Repas du professionnel prévu dans le cadre de l'événement.</td>
+    <td>Repas du professionnel prévu dans le cadre de l'évènement.</td>
   </tr>
  <tr>
    <td>typeRessourceUtilisee: [0..*] Code</td>
@@ -1427,7 +2039,58 @@ Les classes EntiteJuridique, Lieu et Professionnel sont issues du MOS et sont pr
     <td>dateModificationEvenement : [0..1] DateHeure</td>
     <td>Date de la dernière modification de l'événement.</td>
   </tr>
+   <tr>
+    <td>validationUsager : [0..1] Indicateur</td>
+    <td>Validation par l'usager que l'événement a eu lieu.<br>
+1 =  validation de l'usager<br>
+0 =  refus de l'usager</td>
+  </tr>
 </table>
+
+##### Classe Participant
+
+Le Participant est une personne morale ou physique prenant part à l'événement.
+
+Si le participant est mandaté par une personne morale, la notion de Mandataire est indiquée par le lien vers le Professionnel.profession (code 307 - Mandataire judiciaire à la protection des majeurs (MJPM) : JDV_J01-XdsAuthorSpecialty-CISIS).
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>presenceParticipant : [0..1] Indicateur</td>
+    <td>Indique la présence du participant à l'événement.<br>
+1= participant présent<br>
+0= participant absent </td>
+  </tr>
+  <!-- tr>
+    <td>roleParticipantEJ : [0..1] Code</td>
+    <td>Role du participant vis à vis de l'événement (mandataire judiciaire, structure en charge).<br>
+    Jeu(x) de valeur(s) associé(s) : en construction NOS</td>
+  </tr -->
+  <tr>
+    <td>modeExerciceParticipantPP : [0..1] Code</td>
+    <td>Mode d'exercice de la personne physique. Le mode d'exercice décrit selon quelle modalité une activité est exercée au regard de l'évènement.<br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://mos.esante.gouv.fr/NOS/JDV_J117-ModeExercice-ENREG/FHIR/JDV-J117-ModeExercice-ENREG">JDV-J117-ModeExercice-ENREG</a>
+    </td>
+  </tr>
+  <tr>
+    <td>participantInterne : [0..1] Indicateur</td>
+    <td>Indique si le participant (personne Physique) est interne ou externe à la structure<br>
+1 = interne<br>
+0 = externe</td>
+  </tr>
+  </table>
+  </table>
+
+##### Classe StructureEnCharge
+
+** Classe spécialisée, hérite de la classe EntiteJuridique qui est issue du MOS et qui est profilée pour ce volet.
+
+Cette classe correspond à la structure en charge de l'évènement. Cette structure peut être différente de la structure de rattachement de l'usager. Une seule structure en charge est renseignée par événement.
+
+Le lien est créé entre la classe Professionnel et la classe StructureEnCharge si le participant en tant que personne physique est interne à la structure en charge de l'évènement. Dans le cas contraire ce lien n'est pas créé.
 
 ##### Classe Transport
 
@@ -1531,6 +2194,79 @@ L'identifiant technique du transport est obtenu dans ce contexte par par la conc
   </tr>
 </table>
 
+#### Présence Absence et Repas
+
+<div style="text-align:center;">{%include bloc_PresenceAbsence_repas.svg%}</div>
+
+##### Classe PresenceAbsence
+
+La classe PresenceAbsence indique si l'usager est présent ou absent.
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>idPresenceAbsenceUsager : [1..1] Identifiant</td>
+    <td>Identifiant technique de présence/absence obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de deux caractères "PA" et du numéro de présence/absence dans le DUI (numPresenceAbsenceUsager) :<br> idPresenceAbsenceUsager = 3+FINESS/identifiantLocalUsagerESSMS-PA-numPresenceAbsenceUsager</td>
+  </tr>
+  <tr>
+    <td>typePresenceAbsence : [1..1] Code</td>
+    <td>Type de déclaration : Présence ou Absence.<br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j405-type-presence-absence-ms/$expand">JDV-J405-TYPE-PRESENCE-ABSENCE-MS</a></td>
+  </tr>
+  <tr>
+    <td>dateDebutPresenceAbsence : [1..1] DateHeure</td>
+    <td>Date et heure de début de la présence/absence de l'usager.</td>
+  </tr>
+  <tr>
+    <td>dateFinPresenceAbsence : [1..1] DateHeure</td>
+    <td>Date et heure de fin de la présence/absence de l'usager.</td>
+  </tr>
+  <tr>
+    <td>motifAbsence : [0..1] Code</td>
+    <td>Motif pour lequel l'usager n'est pas présent. Le motif est requis si le typePresenceAbsence=Absence.<br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j406-motif-absence-ms/$expand">JDV-J406-MOTIF-ABSENCE-MS</a></td>
+  </tr>
+  <tr>
+    <td>absencePrevue : [0..1] Indicateur</td>
+    <td>Absence prévue. Cet indicateur est requis si le typePresenceAbsence=Absence.<br>
+1 = L'absence de l'usager est prévue<br>
+0 = L'absence de l'usager n'était pas prévue</td>
+  </tr>
+</table>
+
+##### Classe Repas
+
+La classe Repas indique si l'usager bénéficie ou non des repas.
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>idRepas : [1..1] Identifiant</td>
+    <td>Identifiant technique du repas obtenu par la concaténation du type d'identifiant national de personne (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne">TRE_G08-TypeIdentifiantPersonne</a>), de l'identifiant de la structure (numéro FINESS), de l'identifiant local de l’usager au sein de la structure (identifiantLocalUsagerESSMS), de cinq caractères "REPAS" et du numéro du repas dans le DUI (numRepas) :<br> idrepas = 3+FINESS/identifiantLocalUsagerESSMS-REPAS-numRepas</td>
+  </tr>
+  <tr>
+    <td>dateRepas : [1..1] DateHeure</td>
+    <td>Date et heure du repas.</td>
+  </tr>
+  <tr>
+    <td>typeRepas : [1..1] Code</td>
+    <td>Type de repas.<br>
+    Jeu(x) de valeur(s) associé(s) : <a href="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j407-type-repas-ms/$expand">JDV-J407-TYPE-REPAS-MS</a></td>
+  </tr>
+  <tr>
+    <td>usagerPresent : [1..1] Indicateur</td>
+    <td>Présence de l'usager au repas.<br>
+1 = l'usager a pris son repas<br>
+0 = l'usager n'a pas pris son repas </td>
+  </tr>
+</table>
+
 ### Classes du MOS profilées pour ce volet
 
 ##### Classe Professionnel
@@ -1579,7 +2315,7 @@ Données d'identification pérennes d’une personne physique, qui travaille en 
     </td>
   </tr>
   <tr>
-    <td>etablissementDeRattachement : [0..1] EntiteJuridique</td>
+    <td>etablissementDeRattachement : [0..1] <a href="#classe-entité-juridique">Entité Juridique</a></td>
     <td>Structure juridique de rattachement du professionnel.</td>
   </tr>
 </table>
@@ -1605,6 +2341,29 @@ Pour ce volet l'Entité Juridique est une personne morale inscrite dans le FINES
   </tr>
 </table>
 
+##### Classe Entité Géographique
+
+Pour ce volet l'Entité Géographique est une personne morale.
+
+<table style="width:100%">
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>idNat_Struct : [1..1] Identifiant</td>
+    <td>Identification nationale de l'Entité géographique. Cette identification est obtenue par la concaténation du type d'identifiant national de structure (provenant de la nomenclature <a href="https://mos.esante.gouv.fr/NOS/TRE_G07-TypeIdentifiantStructure/FHIR/TRE-G07-TypeIdentifiantStructure">TRE_G07-TypeIdentifiantStructure</a>) et de l'identifiant de la structure: ** 3 + N° SIRET (pour les établissements qui ne sont pas de santé).</td>
+  </tr>
+ <tr>
+    <td>denominationEG : [0..1] Texte</td>
+    <td>Nom sous lequel l'entité géographique exerce son activité.</td>
+  </tr>
+  <tr>
+    <td>adresseEG : [0..1] <a href="#classe-adresse">Adresse</a></td>
+    <td>Adresse(s) géopostale(s) de l'entité géographique.</td>
+  </tr>
+
+</table>
 
 ##### Classe Lieu
 
@@ -1638,7 +2397,7 @@ Portion déterminée de l'espace où se sont déroulés des événements.
 
 ##### Classe Statut
 
-Cette classe décrit le statut des ressources (Evenement, Evaluation).
+Cette classe décrit le statut des ressources (Evenement, Evaluation, Projet personnalisé, ...).
 
 <table style="width:100%">
   <tr>
@@ -1649,8 +2408,15 @@ Cette classe décrit le statut des ressources (Evenement, Evaluation).
     <td>statut : [1..1] Code</td>
     <td>Statut de la ressource impactée. <br>
     Jeu(x) de valeur(s) associé(s) :  <a href="https://mos.esante.gouv.fr/NOS/JDV_J281-StatutsRessourcesMS/FHIR/JDV-J281-StatutsRessourcesMS">JDV_J281-StatutsRessourcesMS</a><br>
-    - Pour l'Evaluation seuls les codes suivants sont à utiliser : APPROUVE, VALIDE, TERMINE <br>
-    - Pour l'Evènement seuls les codes suivants sont à utiliser : PLANIFIE, VALIDE, REALISE, ANNULE
+    <ul>
+    <li>Pour l'Evaluation seuls les codes suivants sont à utiliser : ENPREPARATION, APPROUVE, VALIDE, TERMINE </li>
+    <li>Pour l'Evènement seuls les codes suivants sont à utiliser : PLANIFIE, VALIDE, ANNULE, TERMINE </li>
+    <li>Pour le projet personnalisé seuls les codes suivants sont à utiliser : ENPREPARATION, ENCOURS, ENPAUSE, TERMINE </li>
+    <li>Pour l'Objectif, l'Action et la Prestation du Projet personnalisé seuls les codes suivants sont à utiliser : ENPREPARATION, ACTIF, TERMINE, ANNULE</li>
+    <li>Pour le Projet de vie seuls les codes suivants sont à utiliser : ENPREPARATION, ENCOURS, TERMINE</li>
+    <li>Les statuts de la Présence/Absence correspondent uniquement aux codes suivants : PLANIFIE, VALIDE, FACTURE
+    </li>
+    </ul>
     </td>
   </tr>
   <tr>
@@ -1670,305 +2436,25 @@ Cette classe décrit le statut des ressources (Evenement, Evaluation).
   </tr>
 </table>
 
-### Contraintes par cas d'usage sur le modèle DUI
+##### Classe Accord
 
- Dans les tableaux ci-dessous il est précisé pour chaque cas d'usage, les données du DUI qui sont réellement utilisées.
-
-#### Mapping Usager
+Cela correspond au consentement d'une personne physique ou morale.
 
 <table style="width:100%">
-<tr>
-  <th>Attribut</th>
-  <th>Utilisé pour le cas d'usage SSIAD</th>
-</tr>
-<tr>
-  <td>matriculeINS</td>
-  <td>Oui</td>
-</tr>
-<tr>
-  <td>numSecuriteSociale</td>
-  <td>Oui</td>
-</tr>
-<tr>
-  <td>identifiantLocalUsagerESSMS</td>
- <td>Oui</td>
-</tr>
-<tr>
-  <td>numeroIndividuInitial</td>
- <td>Oui</td>
-</tr>
-<tr>
-  <td>nomNaissance</td>
- <td>Oui</td>
-</tr>
-<tr>
-  <td>nomUsage</td>
- <td>Oui</td>
-</tr>
-<tr>
-  <td>prenom</td>
- <td>Non</td>
-</tr>
-<tr>
-  <td>premierPrenomActeNaissance</td>
- <td>Oui</td>
-</tr>
-<tr>
-  <td>prenomUtilise</td>
- <td>Non</td>
-</tr>
-<tr>
-  <td>sexe</td>
- <td>Oui</td>
-</tr>
-<tr>
-  <td>dateNaissance</td>
- <td>Oui</td>
-</tr>
-<tr>
-  <td>ordreNaissance</td>
- <td>Oui</td>
-</tr>
-<tr>
-  <td>communeNaissance</td>
- <td>Non</td>
-</tr>
-<tr>
-  <td>paysNaissance</td>
- <td>Oui</td>
-</tr>
-</table>
-
-##### Mapping Adresse (usager)
-
-<table style="width:100%">
-<tr>
-  <th>Attribut</th>
-  <th>Utilisé pour le cas d'usage SSIAD</th>
-</tr>
-<tr>
-  <td>numeroVoie</td>
- <td>Non</td>
-</tr>
-<tr>
-  <td>libelleVoie</td>
- <td>Non</td>
-</tr>
-<tr>
-  <td>codePostal</td>
- <td>Oui</td>
-</tr>
-<tr>
-  <td>localite</td>
- <td>Oui</td>
-</tr>
-</table>
-
-
-#### Mapping Séjour
-
-<table style="width:100%">
-<tr>
-  <th>Attribut</th>
-  <th>Utilisé pour le cas d'usage SSIAD</th>
-</tr>
-<tr>
-  <td>idSejour</td>
- <td>Non</td>
-</tr>
-<tr>
-  <td>dateAdmission</td>
- <td>Non</td>
-</tr>
-<tr>
-  <td>ESSMS</td>
- <td>Non</td>
-</tr>
-<tr>
-  <td>modeEntree</td>
- <td>Non</td>
-</tr>
-<tr>
-  <td>dateEntree</td>
- <td>Oui</td>
-</tr>
-<tr>
-  <td>modeSortie</td>
- <td>Non</td>
-</tr>
-<tr>
-  <td>dateSortie</td>
- <td>Oui</td>
-</tr>
-</table>
-
-#### Partie Accompagnement
-
-##### Mapping Evaluation
-
-<table style="width:100%">
-<tr>
-  <th>Attribut</th>
-  <th>Utilisé pour le cas d'usage SSIAD</th>
-</tr>
-<tr>
-  <td>idEvaluation</td>
- <td>Non</td>
-</tr>
-<tr>
-  <td>typeEvaluation</td>
- <td>Oui</td>
-</tr>
-<tr>
-  <td>statut de l'évaluation</td>
- <td>Oui</td>
-</tr>
-<tr>
-  <td>dateEvaluation</td>
- <td>Oui</td>
-</tr>
-<tr>
-  <td>professionnel réalisant l'évaluation</td>
- <td>Non</td>
-</tr>
-<tr>
-  <td>idNat_PS Identifiant de l'évaluateur</td>
- <td>Non</td>
-</tr>
-<tr>
-  <td>idNat_Struct Identifiant de l'établissement de rattachement de l'évaluateur</td>
- <td>Non</td>
-</tr>
-<tr>
-  <td>composants du détail de l'évaluation</td>
- <td>Oui</td>
-</tr>
-<tr>
-  <td>pieceJointeEvaluation</td>
- <td>Oui</td>
-</tr>
-</table>
-
-###### Mapping Détail Evaluation (niveau 1,2)
-
-<table style="width:100%">
-<tr>
-  <th>Attribut</th>
-  <th>Utilisé pour le cas d'usage SSIAD</th>
-</tr>
-<tr>
-  <td>champsEvalue</td>
- <td>Oui</td>
-</tr>
-<tr>
-  <td>champsEvalue</td>
- <td>Oui</td>
-</tr>
-<tr>
-  <td>resultatChampsEvalue</td>
- <td>Oui</td>
-</tr>
-<tr>
-  <td>statut du détail de l'évaluation</td>
- <td>Oui</td>
-</tr>
-</table>
-
-#### Partie Coordination des acteurs
-
-##### Mapping Evènement de l'agenda
-
-<table style="width:100%">
-<tr>
-  <th>Attribut</th>
-  <th>Utilisé pour le cas d'usage SSIAD</th>
-</tr>
-<tr>
-  <td>idEvenement</td>
- <td>Non</td>
-</tr>
-<tr>
-  <td>typeEvenement</td>
- <td>Oui</td>
-</tr>
-<tr>
-  <td>libelleEvenement</td>
- <td>Non</td>
-</tr>
-<tr>
-  <td>dateDebutEvenement</td>
- <td>Oui</td>
-</tr>
-<tr>
-  <td>dateFinEvenement</td>
- <td>Oui</td>
-</tr>
-<tr>
-  <td>lieuEvenement</td>
- <td>Non</td>
-</tr>
-<tr>
-  <td>structureEnCharge</td>
- <td>Non</td>
-</tr>
-<tr>
-  <td>Fonction (rôle et mode d'exercice) du professionnel ayant réalisé l'évènement</td>
- <td>Oui</td>
-</tr>
-<tr>
-  <td>Nom et prénom du professionnel ayant réalisé l'évènement</td>
- <td>Non</td>
-</tr>
-<tr>
-  <td>Etablissement de rattachement du professionnel</td>
- <td>Non</td>
-</tr>
-<tr>
-  <td>Caractéristiques de l'évènement (Commentaire, pièce jointe, transport de l'usager, statut métier de l'évènement, transport d'un professionnel ayant participé à l'évènement)</td>
- <td>Non</td>
-</tr>
-</table>
-
-###### Mapping Statut de l'évènement
-
-<table style="width:100%">
-<tr>
-  <th>Attribut</th>
-  <th>Utilisé pour le cas d'usage SSIAD</th>
-</tr>
-<tr>
-  <td>identifiant du statut</td>
- <td>Non</td>
-</tr>
-<tr>
-  <td>code du statut</td>
- <td>Oui</td>
-</tr>
-<tr>
-  <td>date du statut</td>
- <td>Non</td>
-</tr>
-</table>
-
-#### Partie Structure
-
-##### Mapping Entité Juridique
-
-<table style="width:100%">
-<tr>
-  <th>Attribut</th>
-  <th>Utilisé pour le cas d'usage SSIAD</th>
-</tr>
-<tr>
-  <td>idNat_Struct</td>
- <td>Non</td>
-</tr>
-<tr>
-  <td>FINESS de la structure extrait de idNat_Struct</td>
- <td>Oui</td>
-</tr>
-<tr>
-  <td>raisonSociale</td>
- <td>Oui</td>
-</tr>
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>auteur : [1..1] (<a href="#classe-professionnel">Professionnel</a>, <a href="#classe-usager">Usager</a>, <a href="#classe-contact">Contact personne physique</a>)</td>
+    <td>Acteur (personne physique ou morale) qui donne son accord. L'auteur de l'accord peut référencer un professionnel, l'usager ou une personne de son entourage.</td>
+  </tr>
+  <tr>
+    <td>dateSignature : [1..1] DateHeure</td>
+    <td>Date de délivrance de l'accord.</td>
+  </tr>
+  <tr>
+    <td>dureeValidite : [0..1] Periode</td>
+    <td>Durée de validité de l'accord</td>
+  </tr>
 </table>

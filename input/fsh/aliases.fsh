@@ -5,8 +5,6 @@ Alias: $JDV-J04-XdsPracticeSettingCode-CISIS = https://mos.esante.gouv.fr/NOS/JD
 Alias: $JDV-J10-XdsFormatCode-CISIS = https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS
 Alias: $TRE-A04-Loinc = https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc
 Alias: $TRE-A03-ClasseDocument = https://mos.esante.gouv.fr/NOS/TRE_A03-ClasseDocument/FHIR/TRE-A03-ClasseDocument
-Alias: $plannedStartDate-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedStartDate
-Alias: $plannedEndDate-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedEndDate
 Alias: $UCUM = http://unitsofmeasure.org
 Alias: $rfc2445 = https://www.ietf.org/rfc/rfc2445
 Alias: $SCT = http://snomed.info/sct
@@ -14,6 +12,7 @@ Alias: $terminologie-cisis = https://smt.esante.gouv.fr/fhir/CodeSystem/terminol
 Alias: $icf = http://hl7.org/fhir/sid/icf
 Alias: $terminologie-SERAFINPH = https://smt.esante.gouv.fr/terminologie-SERAFINPH
 Alias: $terminologie-cim-10 = https://smt.esante.gouv.fr/terminologie-cim-10
+Alias: $loinc = http://loinc.org
 
 // ANS
 Alias: $TRE-R81-Civilite = https://mos.esante.gouv.fr/NOS/TRE_R81-Civilite/FHIR/TRE-R81-Civilite
@@ -55,6 +54,7 @@ Alias: $JDV-J78-Civilite-RASS = https://mos.esante.gouv.fr/NOS/JDV_J78-Civilite-
 Alias: $JDV-J129-CategorieEtablissement-RASS = https://mos.esante.gouv.fr/NOS/JDV_J129-CategorieEtablissement-RASS/FHIR/JDV-J129-CategorieEtablissement-RASS
 Alias: $JDV-J105-EnsembleDiplome-RASS = https://mos.esante.gouv.fr/NOS/JDV_J105-EnsembleDiplome-RASS/FHIR/JDV-J105-EnsembleDiplome-RASS
 Alias: $JDV-J101-SecteurActivite-RASS = https://mos.esante.gouv.fr/NOS/JDV_J101-SecteurActivite-RASS/FHIR/JDV-J101-SecteurActivite-RASS
+Alias: $JDV-J226-ModaliteAccueil-ROR = https://mos.esante.gouv.fr/NOS/JDV_J226-ModaliteAccueil-ROR/FHIR/JDV-J226-ModaliteAccueil-ROR
 
 Alias: $JDV-J81-TypeDiplome-RASS = https://mos.esante.gouv.fr/NOS/JDV_J81-TypeDiplome-RASS/FHIR/JDV-J81-TypeDiplome-RASS
 Alias: $JDV-J89-CategorieProfessionnelle-RASS = https://mos.esante.gouv.fr/NOS/JDV_J89-CategorieProfessionnelle-RASS/FHIR/JDV-J89-CategorieProfessionnelle-RASS
@@ -70,6 +70,18 @@ Alias: $JDV-J282-TransportsLiesAuProjetIndividuel-SERAFIN = https://mos.esante.g
 Alias: $JDV-ModeDeTransport-CISIS = https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis
 Alias: $JDV-MotifNonRealisationEvenement-CISIS = https://smt.esante.gouv.fr/fhir/ValueSet/jdv-motif-non-realisation-evenement-cisis
 Alias: $JDV-J117-ModeExercice-ENREG = https://mos.esante.gouv.fr/NOS/JDV_J117-ModeExercice-ENREG/FHIR/JDV-J117-ModeExercice-ENREG
+Alias: $JDV-J285-Besoins-Serafin = https://mos.esante.gouv.fr/NOS/JDV_J285-Besoins_SERAFIN/FHIR/JDV-J285-Besoins-SERAFIN
+Alias: $JDV-J367-TypeProjetPersonnaliseMs = https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j367-type-projet-personnalise-ms
+Alias: $JDV-J366-StatutBilanProjetPersonnaliseMs = https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j366-statut-bilan-projet-personnalise-ms
+Alias: $JDV-J386-Type-Enseignement-Specialise-MS = https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j386-type-enseignement-specialise-ms
+Alias: $JDV-J11-RelationPatient-CISIS = https://mos.esante.gouv.fr/NOS/JDV_J11-RelationPatient-CISIS/FHIR/JDV-J11-RelationPatient-CISIS
+Alias: $JDV-J14-QualiteRepresentantLegal-CISIS = https://mos.esante.gouv.fr/NOS/JDV_J14-QualiteRepresentantLegal-CISIS/FHIR/JDV-J14-QualiteRepresentantLegal-CISIS
+Alias: $TRE-R217-ProtectionJuridique = https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique
+Alias: $JDV-J384-Role-Membre-Famille-MS = https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j384-role-membre-famille-ms
+Alias: $JDV-J258-Departement = https://mos.esante.gouv.fr/NOS/JDV_J258-Departement/FHIR/JDV-J258-Departement
+Alias: $JDV-J115-Langue-ENREG = https://mos.esante.gouv.fr/NOS/JDV_J115-Langue-ENREG/FHIR/JDV-J115-Langue-ENREG
+Alias: $JDV-J176-SituationVieQuotidienne-MDPH = https://mos.esante.gouv.fr/NOS/JDV_J176-SituationVieQuotidienne-MDPH/FHIR/JDV-J176-SituationVieQuotidienne-MDPH
+Alias: $JDV-J385-composition-foyer-ms = https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j385-composition-foyer-ms
 
 // HL7
 Alias: $v2-0131 = http://terminology.hl7.org/CodeSystem/v2-0131
@@ -88,7 +100,10 @@ Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workfl
 Alias: $ServiceType = http://terminology.hl7.org/CodeSystem/service-type
 Alias: $imposeProfile = http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile
 Alias: $ParticipationType = http://terminology.hl7.org/CodeSystem/v3-ParticipationType
-
+// Extensions R5
+Alias: $plannedStartDate-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedStartDate
+Alias: $plannedEndDate-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedEndDate
+Alias: $consentPeriod-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.period
 // ###############
 // # FrCore link #
 // ###############

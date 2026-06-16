@@ -1,0 +1,22 @@
+Instance: tddui-pp-pa-task-action-2-anim-example
+InstanceOf: TDDUITaskAction
+Title: "TDDUI PP PA Task Action 2 Anim Example"
+Description: "Exemple d'une action de l'objectif 1 réalisée par l'animatrice dans le cadre du projet personnalisé PA." 
+Usage: #example
+
+* identifier.value = "3480787529/123456789-ACTI-12341"
+* identifier.system = "https://identifiant-medicosocial-action.esante.gouv.fr"
+
+* description  = "Atelier cuisine mensuel co‑animé avec résidents"
+
+* owner.display = "Animatrice"
+
+* basedOn = Reference(tddui-pp-ime-careplan-example)
+
+* status = #in-progress
+
+* intent = #plan
+
+* input[titre].valueString = "Action de l'animatrice pour atteindre l'objectif 2"
+
+* input[objectif].valueReference = Reference(tddui-pp-pa-goal-objectif-2-example)

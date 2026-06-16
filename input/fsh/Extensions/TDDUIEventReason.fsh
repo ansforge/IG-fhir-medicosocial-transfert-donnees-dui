@@ -1,6 +1,6 @@
 Extension: TDDUIEventReason
 Id: tddui-event-reason
-Title: "Motif de l’évènement"
+Title: "TDDUI Event Reason"
 Description: "Contexte justifiant la réalisation de l’évènement."
 Context: Encounter
 

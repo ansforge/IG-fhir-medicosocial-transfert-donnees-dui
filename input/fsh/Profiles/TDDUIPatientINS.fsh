@@ -19,16 +19,5 @@ Title:    "Modèle de contenu DUI"
  
 * identifier[INS-NIR] -> "matriculeINS"
 * identifier[INS-NIA] -> "matriculeINS"
-* identifier[NSS] -> "numSecuriteSociale"
-* identifier[PI] -> "identifiantLocalUsagerESSMS"
-* identifier[InitialNumberMDPH] -> "numeroIndividuInitial"
-* name[officialName].family -> "nomNaissance"
-* name[usualName].family -> "nomUsage"
-* name[officialName].given -> "premierPrenomActeNaissance"
-* name[usualName].given -> "prenomUtilise"
-* name[officialName].extension[birth-list-given-name] -> "prenom"
-* name[officialName].prefix -> "civilite"
-* gender -> "sexe"
-* birthDate -> "dateNaissance"
-* extension[birthPlace].valueAddress.extension[inseeCode] -> "communeNaissance"
-* extension[birthPlace].valueAddress.country -> "paysNaissance"
+
+* insert TDDUIPatientCommonMapping

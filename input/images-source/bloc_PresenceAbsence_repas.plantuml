@@ -1,0 +1,28 @@
+@startuml
+
+hide empty methods
+
+class Usager #LightPink
+
+class Statut #LightYellow
+
+class PresenceAbsence #PeachPuff {
+    idPresenceAbsenceUsager : Identifiant [1..1]
+    typePresenceAbsence : Code [1..1]
+    dateDebutPresenceAbsence : DateHeure [1..1]
+    dateFinPresenceAbsence : DateHeure [1..1]
+    motifAbsence : Code [0..1]
+    absencePrevue : Indicateur [0..1]
+}
+
+class Repas #PeachPuff {
+    idRepas : Identifiant [1..1]
+    dateRepas : DateHeure [1..1]
+    typeRepas : Code [1..1]
+    usagerPresent : Indicateur [1..1]
+    }
+
+Usager "1" -- "*" PresenceAbsence
+Usager "1" - "*" Repas
+PresenceAbsence "1" -- "0..1" Statut
+@enduml
