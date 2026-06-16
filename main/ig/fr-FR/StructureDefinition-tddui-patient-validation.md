@@ -55,7 +55,7 @@ Extension simple avec le type boolean : Validation par l'usager que l'événemen
   "name" : "TDDUIPatientValidation",
   "title" : "TDDUI Patient Validation",
   "status" : "active",
-  "date" : "2026-06-16T09:33:33+00:00",
+  "date" : "2026-06-16T10:35:13+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
