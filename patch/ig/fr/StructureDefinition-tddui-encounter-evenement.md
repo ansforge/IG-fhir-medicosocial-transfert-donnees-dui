@@ -167,7 +167,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-tddui-encounter
   "name" : "TDDUIEncounterEvenement",
   "title" : "TDDUI Encounter Evenement",
   "status" : "active",
-  "date" : "2026-06-16T13:33:17+00:00",
+  "date" : "2026-06-16T14:03:43+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
