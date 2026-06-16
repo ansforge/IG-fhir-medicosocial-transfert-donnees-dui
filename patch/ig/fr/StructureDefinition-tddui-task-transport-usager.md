@@ -82,7 +82,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-tddui-task-tran
   "name" : "TDDUITaskTransportUsager",
   "title" : "TDDUI Task Transport Usager",
   "status" : "active",
-  "date" : "2026-06-16T14:16:24+00:00",
+  "date" : "2026-06-16T15:20:57+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

@@ -129,7 +129,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-tddui-task-acti
   "name" : "TDDUITaskAction",
   "title" : "TDDUI Task Action",
   "status" : "active",
-  "date" : "2026-06-16T14:16:24+00:00",
+  "date" : "2026-06-16T15:20:57+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

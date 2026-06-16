@@ -35,7 +35,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-assessment-
   "name" : "TDDUIAssessmentMethod",
   "title" : "TDDUI Assessment Method",
   "status" : "active",
-  "date" : "2026-06-16T14:16:24+00:00",
+  "date" : "2026-06-16T15:20:57+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
