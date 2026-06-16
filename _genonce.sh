@@ -18,7 +18,7 @@ export JAVA_TOOL_OPTIONS="$JAVA_TOOL_OPTIONS -Dfile.encoding=UTF-8"
 
 publisher=$input_cache_path/$publisher_jar
 if test -f "$publisher"; then
-	java -jar $publisher -ig . $txoption $*
+	java -jar $publisher -ig . $txoption $* -authorise-non-conformant-tx-servers
 
 else
 	publisher=../$publisher_jar
