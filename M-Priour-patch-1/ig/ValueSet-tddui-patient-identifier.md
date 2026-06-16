@@ -55,7 +55,7 @@ ValueSet pour la définition des codes d'identifiant de l'usager
   "title" : "TDDUI Patient Identifier",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-16T14:25:35+00:00",
+  "date" : "2026-06-16T15:50:05+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -80,8 +80,7 @@ ValueSet pour la définition des codes d'identifiant de l'usager
       "valueSet" : ["http://hl7.org/fhir/ValueSet/identifier-type"]
     },
     {
-      "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
-      "version" : "2.9"
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0203"
     },
     {
       "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203"

@@ -1,12 +1,11 @@
 {
   "codeSystems" : [{
     "url" : "http://hl7.org/fhir/administrative-gender",
-    "version" : "4.0.1",
+    "version" : "5.0.0",
     "status" : "active",
     "name" : "AdministrativeGender",
     "title" : "AdministrativeGender",
     "description" : "The gender of a person used for administrative purposes.",
-    "oids" : ["2.16.840.1.113883.4.642.4.2"],
     "uses" : {
     },
     "https://hl7.fr/ig/fhir/core/2.1.0/ValueSet-fr-core-vs-patient-gender-INS.html" : "FR Core ValueSet Patient gender INS ValueSet"
@@ -21,15 +20,15 @@
     "oids" : ["2.16.840.1.113883.6.1"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J07-XdsTypeCode-CISIS.html" : "JDV_J07_XdsTypeCode_CISIS",
-    "ValueSet-tddui-observation-type.html" : "TDDUI Observation Type"
+    "ValueSet-tddui-observation-type.html" : "TDDUI Observation Type",
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J07-XdsTypeCode-CISIS.html" : "JDV_J07_XdsTypeCode_CISIS"
   },
   {
     "url" : "http://snomed.info/sct",
-    "version" : null,
+    "version" : "http://snomed.info/sct/900000000000207008/version/20260501",
     "status" : "active",
     "name" : "SNOMED_CT",
-    "title" : "SNOMED CT (all versions)",
+    "title" : "SNOMED CT core",
     "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
     "oids" : ["2.16.840.1.113883.6.96"],
     "uses" : {
@@ -38,7 +37,7 @@
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
-    "version" : "4.0.1",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "DataAbsentReason",
     "title" : "DataAbsentReason",
@@ -50,23 +49,23 @@
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/discharge-disposition",
-    "version" : "4.0.1",
-    "status" : "draft",
+    "version" : "1.0.1",
+    "status" : "active",
     "name" : "DischargeDisposition",
     "title" : "Discharge disposition",
     "description" : "This value set defines a set of codes that can be used to where the patient left the hospital.",
-    "oids" : ["2.16.840.1.113883.4.642.4.1093"],
+    "oids" : ["2.16.840.1.113883.4.642.1.1093"],
     "uses" : {
     },
     "https://hl7.fr/ig/fhir/core/2.1.0/ValueSet-fr-core-vs-encounter-discharge-disposition.html" : "FR Core ValueSet Encounter discharge disposition"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
-    "version" : "2.9",
+    "version" : "5.0.0",
     "status" : "active",
-    "name" : "v2.0203",
-    "title" : "v2 Identifier Type",
-    "description" : "FHIR Value set/code system definition for HL7 v2 table 0203 ( Identifier Type)",
+    "name" : "IdentifierType",
+    "title" : "identifierType",
+    "description" : "HL7-defined code system of concepts specifying type of identifier. Used in HL7 Version 2.x messaging data types CX, PLN, PPN, XCN and XON.",
     "oids" : ["2.16.840.1.113883.18.108"],
     "uses" : {
     },
@@ -114,8 +113,8 @@
     "description" : "HL7 v2 - Identifier type",
     "uses" : {
     },
-    "https://hl7.fr/ig/fhir/core/2.1.0/ValueSet-fr-core-vs-organization-identifier-type.html" : "FR Core ValueSet Organization identifier type",
-    "ValueSet-tddui-patient-identifier.html" : "TDDUI Patient Identifier"
+    "ValueSet-tddui-patient-identifier.html" : "TDDUI Patient Identifier",
+    "https://hl7.fr/ig/fhir/core/2.1.0/ValueSet-fr-core-vs-organization-identifier-type.html" : "FR Core ValueSet Organization identifier type"
   },
   {
     "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator",
@@ -259,8 +258,8 @@
     "oids" : ["1.2.250.1.213.1.1.4.6"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J01-XdsAuthorSpecialty-CISIS.html" : "JDV_J01_XdsAuthorSpecialty_CISIS",
     "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J02-XdsHealthcareFacilityTypeCode-CISIS.html" : "JDV_J02_XdsHealthcareFacilityTypeCode_CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J01-XdsAuthorSpecialty-CISIS.html" : "JDV_J01_XdsAuthorSpecialty_CISIS",
     "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J04-XdsPracticeSettingCode-CISIS.html" : "JDV_J04_XdsPracticeSettingCode_CISIS"
   },
   {
@@ -575,12 +574,12 @@
     "oids" : ["1.2.250.1.213.1.1.4.322"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-motif-non-realisation-evenement-cisis.html" : "JDV Motif Non Realisation Evenement CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-detail-materiel-specialise-cisis.html" : "JDV Detail Materiel Specialise CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-type-evenement-ssiad-cisis.html" : "JDV Type Evenement Ssiad CISIS",
     "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-ressource-utilisee-cisis.html" : "JDV Ressource Utilisee CISIS",
     "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-type-motorisation-cisis.html" : "JDV Type Motorisation CISIS",
-    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-type-evenement-ssiad-cisis.html" : "JDV Type Evenement Ssiad CISIS",
     "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-mode-de-transport-cisis.html" : "JDV Mode De Transport CISIS",
-    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-detail-materiel-specialise-cisis.html" : "JDV Detail Materiel Specialise CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-motif-non-realisation-evenement-cisis.html" : "JDV Motif Non Realisation Evenement CISIS",
     "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-detail-ressource-immobiliere-utilisee-cisis.html" : "JDV Detail Ressource Immobiliere Utilisee CISIS"
   },
   {
