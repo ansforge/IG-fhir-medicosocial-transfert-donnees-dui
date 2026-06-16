@@ -685,7 +685,7 @@
             "code" : "DEMANDE_ORIENTATION"
           }]
         },
-        "system" : "urn:oid:2.16.840.1.113883.2.8.3.75.1",
+        "system" : "urn:uuid:53fefa32-fcbb-4ff8-8a92-55ee120877b7",
         "value" : "1234"
       }],
       "status" : "active",

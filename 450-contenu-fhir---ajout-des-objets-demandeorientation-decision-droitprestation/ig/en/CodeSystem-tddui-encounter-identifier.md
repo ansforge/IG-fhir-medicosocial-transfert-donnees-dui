@@ -30,7 +30,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "TDDUI Encounter Identifier",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-16T07:36:31+00:00",
+  "date" : "2026-06-16T07:55:16+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

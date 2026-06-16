@@ -28,7 +28,7 @@ Grille d'évaluation SERAFIN
   "version" : "2.3.0-ballot",
   "title" : "Évaluation SERAFIN",
   "status" : "active",
-  "date" : "2026-06-16T07:36:31+00:00",
+  "date" : "2026-06-16T07:55:16+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

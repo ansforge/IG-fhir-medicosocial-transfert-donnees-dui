@@ -35,7 +35,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-encounter-s
   "name" : "TDDUIEncounterSejour",
   "title" : "TDDUI Encounter Sejour",
   "status" : "active",
-  "date" : "2026-06-16T07:36:31+00:00",
+  "date" : "2026-06-16T07:55:16+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
