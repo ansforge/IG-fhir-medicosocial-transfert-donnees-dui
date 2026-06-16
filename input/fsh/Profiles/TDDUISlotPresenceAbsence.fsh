@@ -49,7 +49,7 @@ Expression: "(serviceType.coding.code='2') implies (appointmentType.exists())"
 Invariant: absencePrevueCardinality
 Description: "Cet attribut est obligatoire pour les typePresenceAbsence=Absence"
 Severity: #error
-Expression: "(serviceType.coding.code='2') implies (extension[TDDUIPlannedAbsence].exists())"
+Expression: "(serviceType.coding.code='2') implies (extension.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-planned-absence').exists())"
 
 
 Mapping:  ConceptMetier_TDDUISlotPresenceAbsence
