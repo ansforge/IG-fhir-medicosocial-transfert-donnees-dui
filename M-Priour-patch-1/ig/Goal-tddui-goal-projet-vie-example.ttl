@@ -12,7 +12,7 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-projet-vie"^^xsd:anyURI ;
-       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-projet-vie>
+       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-projet-vie>
      ] )
   ] ; # 
   fhir:text [
@@ -22,11 +22,17 @@
   fhir:identifier ( [
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-goal-identifier"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-goal-identifier"^^xsd:anyURI ;
+           fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-goal-identifier>
+         ] ;
          fhir:code [ fhir:v "PDV" ]
        ] )
      ] ;
-     fhir:system [ fhir:v "https://identifiant-medicosocial-projetvie.esante.gouv.fr"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "https://identifiant-medicosocial-projetvie.esante.gouv.fr"^^xsd:anyURI ;
+       fhir:l <https://identifiant-medicosocial-projetvie.esante.gouv.fr>
+     ] ;
      fhir:value [ fhir:v "3480787529/123456789-PDV-1234" ]
   ] ) ; # 
   fhir:lifecycleStatus [ fhir:v "active"] ; # 
@@ -34,29 +40,32 @@
      fhir:text [ fhir:v "Projet de vie de Mr. Dupont" ]
   ] ; # 
   fhir:subject [
-     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-patient-ins-example> ;
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-patient-ins-example> ;
      fhir:reference [ fhir:v "Patient/tddui-patient-ins-example" ]
   ] ; # 
   fhir:start [
-     a fhir:date ;
+     a fhir:Date ;
      fhir:v "2024-01-01"^^xsd:date
   ] ; # 
   fhir:target ( [
      fhir:measure [
        fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/data-absent-reason"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/data-absent-reason"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/data-absent-reason>
+         ] ;
          fhir:value [
-           a fhir:code ;
+           a fhir:Code ;
            fhir:v "not-permitted"
          ]
        ] )
      ] ;
      fhir:detail [
-       a fhir:string ;
+       a fhir:String ;
        fhir:v "Permettre à Monsieur Dupont de maintenir sa vie à domicile le plus longtemps possible."
      ] ;
      fhir:due [
-       a fhir:date ;
+       a fhir:Date ;
        fhir:v "2025-01-01"^^xsd:date
      ]
   ] ) . # 

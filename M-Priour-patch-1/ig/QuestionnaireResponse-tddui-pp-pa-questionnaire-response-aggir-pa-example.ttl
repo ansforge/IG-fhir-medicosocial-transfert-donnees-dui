@@ -12,7 +12,7 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"^^xsd:anyURI ;
-       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response>
+       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response>
      ] )
   ] ; # 
   fhir:text [
@@ -21,30 +21,39 @@
   ] ; # 
   fhir:extension ( [
      fhir:extension ( [
-       fhir:url [ fhir:v "TDDUIHolder"^^xsd:anyURI ] ;
+       fhir:url [
+         fhir:v "TDDUIHolder"^^xsd:anyURI ;
+         fhir:l fhir:TDDUIHolder
+       ] ;
        fhir:value [
          a fhir:Reference ;
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Organization/tddui-organization-example> ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Organization/tddui-organization-example> ;
          fhir:reference [ fhir:v "Organization/tddui-organization-example" ]
        ]
      ] ) ;
-     fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant"^^xsd:anyURI ]
+     fhir:url [
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant"^^xsd:anyURI ;
+       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant>
+     ]
   ] ) ; # 
   fhir:identifier [
-     fhir:system [ fhir:v "https://identifiant-medicosocial-evaluation.esante.gouv.fr"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "https://identifiant-medicosocial-evaluation.esante.gouv.fr"^^xsd:anyURI ;
+       fhir:l <https://identifiant-medicosocial-evaluation.esante.gouv.fr>
+     ] ;
      fhir:value [ fhir:v "3480787529/123456789-EVAL-1234" ]
   ] ; # 
   fhir:questionnaire [
      fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/Questionnaire/tddui-questionnaire-aggir-pa-ssiad"^^xsd:anyURI ;
-     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Questionnaire/tddui-questionnaire-aggir-pa-ssiad>
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Questionnaire/tddui-questionnaire-aggir-pa-ssiad>
   ] ; # 
   fhir:status [ fhir:v "completed"] ; # 
   fhir:subject [
-     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-pp-pa-patient-example-pp> ;
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-pp-pa-patient-example-pp> ;
      fhir:reference [ fhir:v "Patient/tddui-pp-pa-patient-example-pp" ]
   ] ; # 
   fhir:source [
-     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-pp-pa-patient-example-pp> ;
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-pp-pa-patient-example-pp> ;
      fhir:reference [ fhir:v "Patient/tddui-pp-pa-patient-example-pp" ]
   ] ; # 
   fhir:item ( [
@@ -53,7 +62,10 @@
      fhir:answer ( [
        fhir:value [
          a fhir:Coding ;
-         fhir:system [ fhir:v "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis"^^xsd:anyURI ;
+           fhir:l <https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis>
+         ] ;
          fhir:code [ fhir:v "MED-341" ] ;
          fhir:display [ fhir:v "GIR-3" ]
        ]

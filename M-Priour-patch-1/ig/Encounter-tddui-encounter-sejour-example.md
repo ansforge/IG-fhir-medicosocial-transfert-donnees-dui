@@ -20,7 +20,7 @@ Profil: [TDDUI Encounter Sejour](StructureDefinition-tddui-encounter-sejour.md)
 
 **status**: In Progress
 
-**class**: [ActCode: HH](http://terminology.hl7.org/7.2.0/CodeSystem-v3-ActCode.html#v3-ActCode-HH) (Soins à domicile (hors établissement))
+**class**: [v3 Code System ActCode: HH](http://hl7.org/fhir/R4/v3/ActCode/cs.html#v3-ActCode-HH) (Soins à domicile (hors établissement))
 
 **subject**: [DUPONT Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/194704032)](Patient-tddui-patient-ins-example.md)
 

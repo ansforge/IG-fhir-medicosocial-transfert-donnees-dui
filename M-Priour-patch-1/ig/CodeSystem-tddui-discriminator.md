@@ -38,7 +38,7 @@ CodeSystem définissant les codes discriminants.
   "title" : "TDDUI Discriminator",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-16T14:04:26+00:00",
+  "date" : "2026-06-16T14:25:35+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -61,31 +61,227 @@ CodeSystem définissant les codes discriminants.
   "count" : 7,
   "concept" : [{
     "code" : "accordUsager",
-    "display" : "Accord de l'usager"
+    "display" : "Accord de l'usager",
+    "designation" : [{
+      "use" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+        "code" : "preferredForLanguage"
+      },
+      "value" : "Accord de l'usager"
+    },
+    {
+      "use" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+        "code" : "preferredForLanguage"
+      },
+      "value" : "Accord de l'usager"
+    },
+    {
+      "use" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+        "code" : "preferredForLanguage"
+      },
+      "value" : "Accord de l'usager"
+    },
+    {
+      "use" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+        "code" : "preferredForLanguage"
+      },
+      "value" : "Accord de l'usager"
+    }]
   },
   {
     "code" : "accordStructure",
-    "display" : "Accord de la structure"
+    "display" : "Accord de la structure",
+    "designation" : [{
+      "use" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+        "code" : "preferredForLanguage"
+      },
+      "value" : "Accord de la structure"
+    },
+    {
+      "use" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+        "code" : "preferredForLanguage"
+      },
+      "value" : "Accord de la structure"
+    },
+    {
+      "use" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+        "code" : "preferredForLanguage"
+      },
+      "value" : "Accord de la structure"
+    },
+    {
+      "use" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+        "code" : "preferredForLanguage"
+      },
+      "value" : "Accord de la structure"
+    }]
   },
   {
     "code" : "titreObjectif",
-    "display" : "Titre de l'objectif"
+    "display" : "Titre de l'objectif",
+    "designation" : [{
+      "use" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+        "code" : "preferredForLanguage"
+      },
+      "value" : "Titre de l'objectif"
+    },
+    {
+      "use" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+        "code" : "preferredForLanguage"
+      },
+      "value" : "Titre de l'objectif"
+    },
+    {
+      "use" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+        "code" : "preferredForLanguage"
+      },
+      "value" : "Titre de l'objectif"
+    },
+    {
+      "use" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+        "code" : "preferredForLanguage"
+      },
+      "value" : "Titre de l'objectif"
+    }]
   },
   {
     "code" : "avisUsagerObjectif",
-    "display" : "Avis de l'usager sur l'objectif"
+    "display" : "Avis de l'usager sur l'objectif",
+    "designation" : [{
+      "use" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+        "code" : "preferredForLanguage"
+      },
+      "value" : "Avis de l'usager sur l'objectif"
+    },
+    {
+      "use" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+        "code" : "preferredForLanguage"
+      },
+      "value" : "Avis de l'usager sur l'objectif"
+    },
+    {
+      "use" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+        "code" : "preferredForLanguage"
+      },
+      "value" : "Avis de l'usager sur l'objectif"
+    },
+    {
+      "use" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+        "code" : "preferredForLanguage"
+      },
+      "value" : "Avis de l'usager sur l'objectif"
+    }]
   },
   {
     "code" : "strategieMiseEnOeuvreObjectif",
-    "display" : "Stratégie de mise en œuvre de l'objectif"
+    "display" : "Stratégie de mise en œuvre de l'objectif",
+    "designation" : [{
+      "use" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+        "code" : "preferredForLanguage"
+      },
+      "value" : "Stratégie de mise en œuvre de l'objectif"
+    },
+    {
+      "use" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+        "code" : "preferredForLanguage"
+      },
+      "value" : "Stratégie de mise en œuvre de l'objectif"
+    },
+    {
+      "use" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+        "code" : "preferredForLanguage"
+      },
+      "value" : "Stratégie de mise en œuvre de l'objectif"
+    },
+    {
+      "use" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+        "code" : "preferredForLanguage"
+      },
+      "value" : "Stratégie de mise en œuvre de l'objectif"
+    }]
   },
   {
     "code" : "origineAttente",
-    "display" : "Acteur (personne physique ou personne morale) qui a un lien avec l'usager ou l'usager elle-même qui définit son attente."
+    "display" : "Acteur (personne physique ou personne morale) qui a un lien avec l'usager ou l'usager elle-même qui définit son attente.",
+    "designation" : [{
+      "use" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+        "code" : "preferredForLanguage"
+      },
+      "value" : "Acteur (personne physique ou personne morale) qui a un lien avec l'usager ou l'usager elle-même qui définit son attente."
+    },
+    {
+      "use" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+        "code" : "preferredForLanguage"
+      },
+      "value" : "Acteur (personne physique ou personne morale) qui a un lien avec l'usager ou l'usager elle-même qui définit son attente."
+    },
+    {
+      "use" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+        "code" : "preferredForLanguage"
+      },
+      "value" : "Acteur (personne physique ou personne morale) qui a un lien avec l'usager ou l'usager elle-même qui définit son attente."
+    },
+    {
+      "use" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+        "code" : "preferredForLanguage"
+      },
+      "value" : "Acteur (personne physique ou personne morale) qui a un lien avec l'usager ou l'usager elle-même qui définit son attente."
+    }]
   },
   {
     "code" : "commentaireAttente",
-    "display" : "Permet de compléter ou éclairer la description de l'attente."
+    "display" : "Permet de compléter ou éclairer la description de l'attente.",
+    "designation" : [{
+      "use" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+        "code" : "preferredForLanguage"
+      },
+      "value" : "Permet de compléter ou éclairer la description de l'attente."
+    },
+    {
+      "use" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+        "code" : "preferredForLanguage"
+      },
+      "value" : "Permet de compléter ou éclairer la description de l'attente."
+    },
+    {
+      "use" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+        "code" : "preferredForLanguage"
+      },
+      "value" : "Permet de compléter ou éclairer la description de l'attente."
+    },
+    {
+      "use" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+        "code" : "preferredForLanguage"
+      },
+      "value" : "Permet de compléter ou éclairer la description de l'attente."
+    }]
   }]
 }
 
