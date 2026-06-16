@@ -45,3 +45,8 @@ Usage: #example
 * entry[DUITransportUsager].resource = tddui-task-transport-usager-example
 * entry[DUITransportUsager].request.method = #POST
 * entry[DUITransportUsager].request.url = "TDDUITaskTransportUsager"
+
+* entry[DUIGoalProjetVie].fullUrl = "https://test-server.fr/Goal/tddui-goal-projet-vie-example"
+* entry[DUIGoalProjetVie].resource = tddui-goal-projet-vie-example
+* entry[DUIGoalProjetVie].request.method = #POST
+* entry[DUIGoalProjetVie].request.url = "TDDUIGoalProjetVie"
