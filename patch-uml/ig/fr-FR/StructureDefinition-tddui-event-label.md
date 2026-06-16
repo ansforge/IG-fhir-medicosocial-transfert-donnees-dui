@@ -55,7 +55,7 @@ Extension simple avec le type string : Titre donné à l’évènement par la st
   "name" : "TDDUIEventLabel",
   "title" : "TDDUI Event Label",
   "status" : "active",
-  "date" : "2026-06-16T12:06:06+00:00",
+  "date" : "2026-06-16T12:07:10+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

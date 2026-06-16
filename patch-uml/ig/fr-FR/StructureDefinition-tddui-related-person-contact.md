@@ -94,7 +94,7 @@ Cette structure fait référence à ces extensions:
   "name" : "TDDUIRelatedPersonContact",
   "title" : "TDDUI RelatedPerson Contact",
   "status" : "active",
-  "date" : "2026-06-16T12:06:06+00:00",
+  "date" : "2026-06-16T12:07:10+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

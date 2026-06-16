@@ -107,7 +107,7 @@ Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slic
   "name" : "TDDUIGoalProjetVie",
   "title" : "TDDUI Goal Projet Vie",
   "status" : "active",
-  "date" : "2026-06-16T12:06:06+00:00",
+  "date" : "2026-06-16T12:07:10+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
