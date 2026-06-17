@@ -34,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-basic-decis
   "name" : "TDDUIBasicDecision",
   "title" : "TDDUI Basic Decision",
   "status" : "active",
-  "date" : "2026-06-17T09:17:48+00:00",
+  "date" : "2026-06-17T09:36:47+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

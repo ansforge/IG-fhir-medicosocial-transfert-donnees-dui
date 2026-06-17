@@ -27,7 +27,7 @@ Grille d'évaluation AGGIR PH SSIAD
   "version" : "2.3.0-ballot",
   "title" : "Évaluation AGGIR PH SSIAD",
   "status" : "active",
-  "date" : "2026-06-17T09:17:48+00:00",
+  "date" : "2026-06-17T09:36:47+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
