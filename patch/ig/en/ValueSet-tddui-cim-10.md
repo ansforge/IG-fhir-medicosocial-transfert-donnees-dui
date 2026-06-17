@@ -36,7 +36,7 @@ ValueSet incluant les codes de la terminologie CIM-1O.
   "title" : "TDDUI CIM10",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-16T16:25:55+00:00",
+  "date" : "2026-06-17T07:23:16+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

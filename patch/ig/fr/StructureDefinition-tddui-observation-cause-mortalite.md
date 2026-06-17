@@ -108,7 +108,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-tddui-observati
   "name" : "TDDUIObservationCauseMortalite",
   "title" : "TDDUI Observation Cause Mortalite",
   "status" : "active",
-  "date" : "2026-06-16T16:25:55+00:00",
+  "date" : "2026-06-17T07:23:16+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
