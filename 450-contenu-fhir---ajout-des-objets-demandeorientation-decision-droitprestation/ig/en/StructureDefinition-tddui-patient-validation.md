@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-patient-val
   "name" : "TDDUIPatientValidation",
   "title" : "TDDUI Patient Validation",
   "status" : "active",
-  "date" : "2026-06-16T08:15:37+00:00",
+  "date" : "2026-06-17T09:17:48+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

@@ -1,0 +1,1662 @@
+@startuml
+set namespaceSeparator ?
+hide circle
+hide class fields
+
+package IG #DDDDDD{
+
+     package Profiles #DDDDDD{
+
+        class TDDUIBasicDecision{
+
+             Basic.extension => [1..None]
+             Basic.extension:TDDUIDecision => <&plus>[1..1]
+             Basic.extension:TDDUIDecision.extension:decision => <&plus>[None..None]
+             Basic.extension:TDDUIDecision.extension:decision.extension:typeDecision => <&plus>[None..None]
+             Basic.extension:TDDUIDecision.extension:decision.extension:dateEffetCloture => <&plus>[None..None]
+             Basic.extension:TDDUIDecision.extension:decision.extension:dateDecision => <&plus>[None..None]
+             Basic.extension:TDDUIDecision.extension:decision.extension:motivation => <&plus>[None..None]
+             Basic.extension:TDDUIDecision.extension:decision.extension:motivationLocale => <&plus>[None..None]
+             Basic.extension:TDDUIDecision.extension:decision.extension:commentaire => <&plus>[None..None]
+             Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation => <&plus>[None..None]
+             Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:categorieDroitPrestation => <&plus>[None..None]
+             Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:typeDroitPrestation => <&plus>[None..None]
+             Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:natureDroitPrestation => <&plus>[None..None]
+             Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:dateOuverture => <&plus>[None..None]
+             Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:dateEcheance => <&plus>[None..None]
+             Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:existencePAG => <&plus>[None..None]
+             Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:motifFinPAG => <&plus>[None..None]
+             Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:creton => <&plus>[None..None]
+             Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:taux => <&plus>[None..None]
+             Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:typeCompensation => <&plus>[None..None]
+             Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:commentaire => <&plus>[None..None]
+             Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:detailPrestation => <&plus>[None..None]
+             Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:temporaliteAccueil => <&plus>[None..None]
+             Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:precisionOrientation => <&plus>[None..None]
+             Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:accueilSequentiel => <&plus>[None..None]
+             Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:formation => <&plus>[None..None]
+             Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:montantAttribue => <&plus>[None..None]
+             Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:frequence => <&plus>[None..None]
+             Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:qualificationOrientation => <&plus>[None..None]
+             Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:structureAccueil => <&plus>[None..None]
+             Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:priseCharge => <&plus>[None..None]
+             Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:priseCharge.extension:modePriseCharge => <&plus>[None..None]
+             Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:priseCharge.extension:quantification => <&plus>[None..None]
+             Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:priseCharge.extension:quantification.extension:valeurPriseCharge => <&plus>[None..None]
+             Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:priseCharge.extension:quantification.extension:unitePriseCharge => <&plus>[None..None]
+             Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:priseCharge.extension:quantification.extension:frequencePriseCharge => <&plus>[None..None]
+             Basic.identifier => [1..None]
+             Basic.identifier.use => [None..None]
+             Basic.identifier:idDecision => [1..1]
+             Basic.identifier:idDecision.type => [1..None]
+             Basic.identifier:idDecision.system => [1..None]
+             Basic.identifier:idDecision.value => [1..None]
+             Basic.identifier:idDecisionMAJ => [0..*]
+             Basic.identifier:idDecisionMAJ.type => [1..None]
+             Basic.identifier:idDecisionMAJ.system => [1..None]
+             Basic.identifier:idDecisionMAJ.value => [1..None]
+             Basic.identifier:numeroEnregistrement => [0..1]
+             Basic.identifier:numeroEnregistrement.type => [1..None]
+             Basic.identifier:numeroEnregistrement.system => [1..None]
+             Basic.identifier:numeroEnregistrement.value => [1..None]
+             Basic.identifier:idNat_Decision => [0..1]
+             Basic.identifier:idNat_Decision.type => [1..None]
+             Basic.identifier:idNat_Decision.system => [1..None]
+             Basic.identifier:idNat_Decision.value => [1..None]
+             Basic.identifier:numeroAllocataire => [0..1]
+             Basic.identifier:numeroAllocataire.type => [1..None]
+             Basic.identifier:numeroAllocataire.system => [1..None]
+             Basic.identifier:numeroAllocataire.value => [1..None]
+             Basic.code => [None..None]
+             Basic.subject => [None..None]
+        } 
+
+        class TDDUIBundle{
+
+             Bundle.type => [None..None]
+             Bundle.entry => [None..None]
+             Bundle.entry:DUIPatient => [0..*]
+             Bundle.entry:DUIPatient.resource => [1..None]
+             Bundle.entry:DUIPatient.request => [1..None]
+             Bundle.entry:DUIPatient.request.method => [None..None]
+             Bundle.entry:DUIPatientINS => [0..*]
+             Bundle.entry:DUIPatientINS.resource => [1..None]
+             Bundle.entry:DUIPatientINS.request => [1..None]
+             Bundle.entry:DUIPatientINS.request.method => [None..None]
+             Bundle.entry:DUIOrganization => [0..*]
+             Bundle.entry:DUIOrganization.resource => [1..None]
+             Bundle.entry:DUIOrganization.request => [1..None]
+             Bundle.entry:DUIOrganization.request.method => [None..None]
+             Bundle.entry:DUIEncounterSejour => [0..*]
+             Bundle.entry:DUIEncounterSejour.resource => [1..None]
+             Bundle.entry:DUIEncounterSejour.request => [1..None]
+             Bundle.entry:DUIEncounterSejour.request.method => [None..None]
+             Bundle.entry:DUIEncounterEvenement => [0..*]
+             Bundle.entry:DUIEncounterEvenement.resource => [1..None]
+             Bundle.entry:DUIEncounterEvenement.request => [1..None]
+             Bundle.entry:DUIEncounterEvenement.request.method => [None..None]
+             Bundle.entry:DUIPractitioner => [0..*]
+             Bundle.entry:DUIPractitioner.resource => [1..None]
+             Bundle.entry:DUIPractitioner.request => [1..None]
+             Bundle.entry:DUIPractitioner.request.method => [None..None]
+             Bundle.entry:DUIPractitionerRole => [0..*]
+             Bundle.entry:DUIPractitionerRole.resource => [1..None]
+             Bundle.entry:DUIPractitionerRole.request => [1..None]
+             Bundle.entry:DUIPractitionerRole.request.method => [None..None]
+             Bundle.entry:DUITransportProfessionnel => [0..*]
+             Bundle.entry:DUITransportProfessionnel.resource => [1..None]
+             Bundle.entry:DUITransportProfessionnel.request => [1..None]
+             Bundle.entry:DUITransportProfessionnel.request.method => [None..None]
+             Bundle.entry:DUITransportUsager => [0..*]
+             Bundle.entry:DUITransportUsager.resource => [1..None]
+             Bundle.entry:DUITransportUsager.request => [1..None]
+             Bundle.entry:DUITransportUsager.request.method => [None..None]
+             Bundle.entry:DUIDocumentReference => [0..*]
+             Bundle.entry:DUIDocumentReference.resource => [1..None]
+             Bundle.entry:DUIDocumentReference.request => [1..None]
+             Bundle.entry:DUIDocumentReference.request.method => [None..None]
+             Bundle.entry:DUIQuestionnaireResponse => [0..*]
+             Bundle.entry:DUIQuestionnaireResponse.resource => [1..None]
+             Bundle.entry:DUIQuestionnaireResponse.request => [1..None]
+             Bundle.entry:DUIQuestionnaireResponse.request.method => [None..None]
+             Bundle.entry:DUICarePlanProjetPersonnalise => [0..*]
+             Bundle.entry:DUICarePlanProjetPersonnalise.resource => [1..None]
+             Bundle.entry:DUICarePlanProjetPersonnalise.request => [1..None]
+             Bundle.entry:DUICarePlanProjetPersonnalise.request.method => [None..None]
+             Bundle.entry:DUIConsentAccord => [0..*]
+             Bundle.entry:DUIConsentAccord.resource => [1..None]
+             Bundle.entry:DUIConsentAccord.request => [1..None]
+             Bundle.entry:DUIConsentAccord.request.method => [None..None]
+             Bundle.entry:DUIGoalAttente => [0..*]
+             Bundle.entry:DUIGoalAttente.resource => [1..None]
+             Bundle.entry:DUIGoalAttente.request => [1..None]
+             Bundle.entry:DUIGoalAttente.request.method => [None..None]
+             Bundle.entry:DUIGoalObjectif => [0..*]
+             Bundle.entry:DUIGoalObjectif.resource => [1..None]
+             Bundle.entry:DUIGoalObjectif.request => [1..None]
+             Bundle.entry:DUIGoalObjectif.request.method => [None..None]
+             Bundle.entry:DUIServiceRequestBesoin => [0..*]
+             Bundle.entry:DUIServiceRequestBesoin.resource => [1..None]
+             Bundle.entry:DUIServiceRequestBesoin.request => [1..None]
+             Bundle.entry:DUIServiceRequestBesoin.request.method => [None..None]
+             Bundle.entry:DUITaskAction => [0..*]
+             Bundle.entry:DUITaskAction.resource => [1..None]
+             Bundle.entry:DUITaskAction.request => [1..None]
+             Bundle.entry:DUITaskAction.request.method => [None..None]
+             Bundle.entry:DUITaskBilan => [0..*]
+             Bundle.entry:DUITaskBilan.resource => [1..None]
+             Bundle.entry:DUITaskBilan.request => [1..None]
+             Bundle.entry:DUITaskBilan.request.method => [None..None]
+             Bundle.entry:DUITaskMoyenRessource => [0..*]
+             Bundle.entry:DUITaskMoyenRessource.resource => [1..None]
+             Bundle.entry:DUITaskMoyenRessource.request => [1..None]
+             Bundle.entry:DUITaskMoyenRessource.request.method => [None..None]
+             Bundle.entry:DUITaskPrestation => [0..*]
+             Bundle.entry:DUITaskPrestation.resource => [1..None]
+             Bundle.entry:DUITaskPrestation.request => [1..None]
+             Bundle.entry:DUITaskPrestation.request.method => [None..None]
+             Bundle.entry:DUIRelatedPersonContact => [0..*]
+             Bundle.entry:DUIRelatedPersonContact.resource => [1..None]
+             Bundle.entry:DUIRelatedPersonContact.request => [1..None]
+             Bundle.entry:DUIRelatedPersonContact.request.method => [None..None]
+             Bundle.entry:DUIObservationCauseMortalite => [0..*]
+             Bundle.entry:DUIObservationCauseMortalite.resource => [1..None]
+             Bundle.entry:DUIObservationCauseMortalite.request => [1..None]
+             Bundle.entry:DUIObservationCauseMortalite.request.method => [None..None]
+             Bundle.entry:DUIObservationPeriodeScolaire => [0..*]
+             Bundle.entry:DUIObservationPeriodeScolaire.resource => [1..None]
+             Bundle.entry:DUIObservationPeriodeScolaire.request => [1..None]
+             Bundle.entry:DUIObservationPeriodeScolaire.request.method => [None..None]
+             Bundle.entry:DUIObservationMobiliteUsager => [0..*]
+             Bundle.entry:DUIObservationMobiliteUsager.resource => [1..None]
+             Bundle.entry:DUIObservationMobiliteUsager.request => [1..None]
+             Bundle.entry:DUIObservationMobiliteUsager.request.method => [None..None]
+             Bundle.entry:DUIServiceRequestDemandeOrientation => [0..*]
+             Bundle.entry:DUIServiceRequestDemandeOrientation.resource => [1..None]
+             Bundle.entry:DUIServiceRequestDemandeOrientation.request => [1..None]
+             Bundle.entry:DUIServiceRequestDemandeOrientation.request.method => [None..None]
+             Bundle.entry:DUIBasicDroitDecision => [0..*]
+             Bundle.entry:DUIBasicDroitDecision.resource => [1..None]
+             Bundle.entry:DUIBasicDroitDecision.request => [1..None]
+             Bundle.entry:DUIBasicDroitDecision.request.method => [None..None]
+        } 
+
+        class TDDUICarePlanProjetPersonnalise{
+
+             CarePlan.meta.lastUpdated => [None..None]
+             CarePlan.extension => [None..None]
+             CarePlan.extension:entrantProjetPerso => <&plus>[0..*]
+             CarePlan.identifier => [1..1]
+             CarePlan.identifier.system => [1..None]
+             CarePlan.identifier.value => [1..None]
+             CarePlan.status => [None..None]
+             CarePlan.status.extension => [None..None]
+             CarePlan.status.extension:auteurStatut => <&plus>[0..1]
+             CarePlan.category => [None..1]
+             CarePlan.title => [1..None]
+             CarePlan.description => [None..None]
+             CarePlan.subject => [None..None]
+             CarePlan.period.start => [None..None]
+             CarePlan.period.end => [None..None]
+             CarePlan.supportingInfo => [1..None]
+             CarePlan.supportingInfo.extension => [1..None]
+             CarePlan.supportingInfo.extension:TDDUIDiscriminator => <&plus>[1..2]
+             CarePlan.supportingInfo:accordUsager => [0..*]
+             CarePlan.supportingInfo:accordUsager.extension:TDDUIDiscriminator => <&plus>[1..1]
+             CarePlan.supportingInfo:accordUsager.extension:TDDUIDiscriminator.value[x] => <&plus>[None..None]
+             CarePlan.supportingInfo:accordStructure => [1..*]
+             CarePlan.supportingInfo:accordStructure.extension:TDDUIDiscriminator => <&plus>[1..1]
+             CarePlan.supportingInfo:accordStructure.extension:TDDUIDiscriminator.value[x] => <&plus>[None..None]
+             CarePlan.note => [None..1]
+        } 
+
+        class TDDUIConsentAccord{
+
+             Consent.extension => [None..None]
+             Consent.extension:TDDUI-consentPeriod-r5 => <&plus>[0..1]
+             Consent.dateTime => [1..None]
+             Consent.performer => [1..1]
+        } 
+
+        class TDDUIDocumentReference{
+
+             DocumentReference.meta.versionId => [None..None]
+             DocumentReference.masterIdentifier => [None..None]
+             DocumentReference.identifier => [None..None]
+             DocumentReference.status => [None..None]
+             DocumentReference.type => [None..None]
+             DocumentReference.category => [None..None]
+             DocumentReference.subject => [None..None]
+             DocumentReference.date => [None..None]
+             DocumentReference.author => [1..None]
+             DocumentReference.authenticator => [None..None]
+             DocumentReference.description => [None..None]
+             DocumentReference.securityLabel => [None..None]
+             DocumentReference.content => [None..None]
+             DocumentReference.content.attachment.language => [None..None]
+             DocumentReference.content.attachment.data => [None..None]
+             DocumentReference.content.attachment.size => [None..None]
+             DocumentReference.content.attachment.hash => [None..None]
+             DocumentReference.content.attachment.title => [1..None]
+             DocumentReference.content.attachment.creation => [None..None]
+             DocumentReference.content.format => [None..None]
+             DocumentReference.context => [None..None]
+             DocumentReference.context.event => [None..1]
+             DocumentReference.context.facilityType => [None..None]
+             DocumentReference.context.practiceSetting => [None..None]
+             DocumentReference.context.sourcePatientInfo => [None..None]
+        } 
+
+        class TDDUIEncounterEvenement{
+
+             Encounter.meta.lastUpdated => [None..None]
+             Encounter.extension => [None..None]
+             Encounter.extension:estimatedDischargeDate => <&plus>[0..1]
+             Encounter.extension:TDDUIRessourcesUsed => <&plus>[0..*]
+             Encounter.extension:TDDUIRessourcesUsed.extension:TDDUIRessourceType => <&plus>[None..None]
+             Encounter.extension:TDDUIRessourcesUsed.extension:TDDUIMaterialDetail => <&plus>[None..None]
+             Encounter.extension:TDDUIRessourcesUsed.extension:TDDUIFacilityResource => <&plus>[None..None]
+             Encounter.extension:TDDUIEventLabel => <&plus>[0..1]
+             Encounter.extension:TDDUIComment => <&plus>[0..*]
+             Encounter.extension:TDDUIEventReport => <&plus>[0..1]
+             Encounter.extension:TDDUIAttachment => <&plus>[0..*]
+             Encounter.extension:TDDUIEventOutsideService => <&plus>[0..1]
+             Encounter.extension:TDDUIEventReason => <&plus>[0..1]
+             Encounter.extension:TDDUIPatientPresent => <&plus>[0..1]
+             Encounter.extension:TDDUIMeal => <&plus>[0..1]
+             Encounter.extension:TDDUIPatientValidation => <&plus>[0..1]
+             Encounter.identifier => [1..1]
+             Encounter.identifier.type => [1..None]
+             Encounter.identifier.system => [1..None]
+             Encounter.identifier.value => [1..None]
+             Encounter.identifier.assigner => [None..None]
+             Encounter.status => [None..None]
+             Encounter.status.extension => [None..None]
+             Encounter.status.extension:TDDUIEventCancelReason => <&plus>[0..1]
+             Encounter.status.extension:TDDUIStatusAuthor => <&plus>[0..1]
+             Encounter.class.system => [1..None]
+             Encounter.class.code => [1..None]
+             Encounter.type => [None..None]
+             Encounter.type:ssiad => [0..*]
+             Encounter.type:ssiad.coding => [1..1]
+             Encounter.type:ssiad.coding.system => [1..None]
+             Encounter.type:ssiad.coding.code => [1..None]
+             Encounter.type:serafin => [0..*]
+             Encounter.type:serafin.coding => [1..1]
+             Encounter.type:serafin.coding.system => [1..None]
+             Encounter.type:serafin.coding.code => [1..None]
+             Encounter.type:text => [0..*]
+             Encounter.type:text.coding.system => [1..None]
+             Encounter.type:text.coding.code => [None..None]
+             Encounter.type:text.coding.display => [None..None]
+             Encounter.type:text.text => [1..None]
+             Encounter.subject => [1..None]
+             Encounter.participant => [None..None]
+             Encounter.participant.extension => [None..None]
+             Encounter.participant.extension:TDDUIParticipantPresent => <&plus>[0..1]
+             Encounter.participant.individual => [None..None]
+             Encounter.appointment => [None..None]
+             Encounter.period => [1..None]
+             Encounter.period.start => [1..None]
+             Encounter.period.end => [1..None]
+             Encounter.account => [None..1]
+             Encounter.hospitalization.preAdmissionIdentifier => [None..None]
+             Encounter.hospitalization.preAdmissionIdentifier.type => [1..None]
+             Encounter.hospitalization.preAdmissionIdentifier.system => [1..None]
+             Encounter.hospitalization.preAdmissionIdentifier.value => [1..None]
+             Encounter.hospitalization.preAdmissionIdentifier.assigner => [None..None]
+             Encounter.hospitalization.origin => [None..None]
+             Encounter.hospitalization.reAdmission => [None..None]
+             Encounter.hospitalization.destination => [None..None]
+             Encounter.hospitalization.dischargeDisposition => [None..None]
+             Encounter.location => [None..1]
+             Encounter.location.location => [None..None]
+             Encounter.location.physicalType => [None..None]
+             Encounter.serviceProvider => [None..None]
+             Encounter.serviceProvider.extension:TDDUIParticipantPresent => <&plus>[0..1]
+             Encounter.partOf => [None..None]
+        } 
+
+        class TDDUIEncounterSejour{
+
+             Encounter.extension => [None..None]
+             Encounter.extension:TDDUI-plannedStartDate-r5 => <&plus>[0..1]
+             Encounter.extension:TDDUI-plannedStartDate-r5.extension => <&plus>[None..0]
+             Encounter.extension:TDDUI-plannedEndDate-r5 => <&plus>[0..1]
+             Encounter.extension:TDDUI-plannedEndDate-r5.extension => <&plus>[None..0]
+             Encounter.extension:TDDUIAdmissionDate => <&plus>[0..1]
+             Encounter.extension:TDDUIEntryModelabel => <&plus>[0..1]
+             Encounter.extension:TDDUIExitModeLabel => <&plus>[0..1]
+             Encounter.extension:TDDUIComment => <&plus>[0..1]
+             Encounter.identifier => [1..None]
+             Encounter.identifier:idStay => [1..1]
+             Encounter.identifier:idStay.type => [1..None]
+             Encounter.identifier:idStay.system => [1..None]
+             Encounter.identifier:idStay.value => [1..None]
+             Encounter.identifier:AdministrativeFileNumber => [0..1]
+             Encounter.identifier:AdministrativeFileNumber.type => [1..None]
+             Encounter.identifier:AdministrativeFileNumber.system => [1..None]
+             Encounter.identifier:AdministrativeFileNumber.value => [1..None]
+             Encounter.serviceType => [None..None]
+             Encounter.subject => [1..None]
+             Encounter.participant.individual.display => [None..None]
+             Encounter.period.start => [None..None]
+             Encounter.period.end => [None..None]
+             Encounter.hospitalization.extension => [None..None]
+             Encounter.hospitalization.extension:TDDUIEntryDateOrigin => <&plus>[0..1]
+             Encounter.hospitalization.preAdmissionIdentifier => [None..None]
+             Encounter.hospitalization.origin => [None..None]
+             Encounter.serviceProvider => [1..None]
+        } 
+
+        class TDDUIGoalAttente{
+
+             Goal.extension => [1..None]
+             Goal.extension:referenceProjetPerso => <&plus>[1..1]
+             Goal.extension:pieceJointeAttente => <&plus>[0..*]
+             Goal.identifier => [1..1]
+             Goal.identifier.system => [1..None]
+             Goal.identifier.value => [1..None]
+             Goal.description.text => [None..None]
+             Goal.subject => [None..None]
+             Goal.note => [1..None]
+             Goal.note.extension => [1..None]
+             Goal.note.extension:TDDUIDiscriminator => <&plus>[1..2]
+             Goal.note:origineAttente => [1..1]
+             Goal.note:origineAttente.extension:TDDUIDiscriminator => <&plus>[1..1]
+             Goal.note:origineAttente.extension:TDDUIDiscriminator.value[x] => <&plus>[None..None]
+             Goal.note:commentaireAttente => [0..*]
+             Goal.note:commentaireAttente.extension:TDDUIDiscriminator => <&plus>[1..1]
+             Goal.note:commentaireAttente.extension:TDDUIDiscriminator.value[x] => <&plus>[None..None]
+        } 
+
+        class TDDUIGoalObjectif{
+
+             Goal.meta.lastUpdated => [None..None]
+             Goal.extension => [1..None]
+             Goal.extension:referenceEvaluation => <&plus>[0..*]
+             Goal.extension:referenceProjetPerso => <&plus>[1..1]
+             Goal.extension:pieceJointeObjectif => <&plus>[0..*]
+             Goal.identifier => [1..1]
+             Goal.identifier.system => [1..None]
+             Goal.identifier.value => [1..None]
+             Goal.lifecycleStatus => [None..None]
+             Goal.lifecycleStatus.extension => [None..None]
+             Goal.lifecycleStatus.extension:auteurStatut => <&plus>[0..1]
+             Goal.category => [None..None]
+             Goal.description.text => [None..None]
+             Goal.subject => [None..None]
+             Goal.start[x] => [None..None]
+             Goal.start[x]:startDate => [0..1]
+             Goal.target.detail[x] => [None..None]
+             Goal.target.detail[x]:detailString => [0..1]
+             Goal.target.due[x] => [None..None]
+             Goal.target.due[x]:dueDate => [0..1]
+             Goal.expressedBy => [None..None]
+             Goal.addresses => [None..None]
+             Goal.note => [1..None]
+             Goal.note.extension => [1..None]
+             Goal.note.extension:TDDUIDiscriminator => <&plus>[1..3]
+             Goal.note:titreObjectif => [1..1]
+             Goal.note:titreObjectif.extension:TDDUIDiscriminator => <&plus>[1..1]
+             Goal.note:titreObjectif.extension:TDDUIDiscriminator.value[x] => <&plus>[None..None]
+             Goal.note:titreObjectif.text => [None..None]
+             Goal.note:avisUsagerObjectif => [0..1]
+             Goal.note:avisUsagerObjectif.extension:TDDUIDiscriminator => <&plus>[1..1]
+             Goal.note:avisUsagerObjectif.extension:TDDUIDiscriminator.value[x] => <&plus>[None..None]
+             Goal.note:avisUsagerObjectif.text => [None..None]
+             Goal.note:strategieMiseEnOeuvreObjectif => [0..1]
+             Goal.note:strategieMiseEnOeuvreObjectif.extension:TDDUIDiscriminator => <&plus>[1..1]
+             Goal.note:strategieMiseEnOeuvreObjectif.extension:TDDUIDiscriminator.value[x] => <&plus>[None..None]
+             Goal.note:strategieMiseEnOeuvreObjectif.text => [None..None]
+        } 
+
+        class tddui-humanname{
+
+             HumanName.prefix => [None..None]
+        } 
+
+        class TDDUIObservationCauseMortalite{
+
+             Observation.code => [None..None]
+             Observation.subject => [1..None]
+             Observation.component => [1..None]
+             Observation.component.code => [None..None]
+             Observation.component.code.coding => [1..1]
+             Observation.component.value[x] => [1..None]
+             Observation.component.value[x]:valueCodeableConcept => [1..1]
+        } 
+
+        class TDDUIObservationMobiliteUsager{
+
+             Observation.code => [None..None]
+             Observation.subject => [1..None]
+             Observation.subject.reference => [None..None]
+             Observation.value[x] => [None..None]
+             Observation.component.code => [None..None]
+             Observation.component.code.coding => [1..1]
+             Observation.component.value[x] => [1..None]
+        } 
+
+        class TDDUIObservationPeriodeScolaire{
+
+             Observation.identifier => [1..1]
+             Observation.identifier.system => [1..None]
+             Observation.identifier.value => [1..None]
+             Observation.code => [None..None]
+             Observation.subject => [1..None]
+             Observation.effective[x] => [None..None]
+             Observation.effective[x]:effectivePeriod => [0..1]
+             Observation.effective[x]:effectivePeriod.start => [None..None]
+             Observation.effective[x]:effectivePeriod.end => [None..None]
+             Observation.performer => [1..None]
+             Observation.performer:referentScolaire => [1..1]
+             Observation.performer:ecole => [0..1]
+             Observation.note => [None..None]
+             Observation.component => [None..None]
+             Observation.component.code => [None..None]
+             Observation.component.code.coding => [1..1]
+             Observation.component.value[x] => [1..None]
+             Observation.component:typeEnseignementSpecialise => [0..*]
+             Observation.component:typeEnseignementSpecialise.code => [None..None]
+             Observation.component:typeEnseignementSpecialise.value[x] => [None..None]
+             Observation.component:typeEnseignementSpecialise.value[x]:valueCodeableConcept => [1..1]
+             Observation.component:diplome => [0..*]
+             Observation.component:diplome.code => [None..None]
+             Observation.component:diplome.value[x] => [None..None]
+             Observation.component:diplome.value[x]:valueCodeableConcept => [1..1]
+             Observation.component:volumeScolarisation => [0..1]
+             Observation.component:volumeScolarisation.code => [None..None]
+             Observation.component:volumeScolarisation.value[x] => [None..None]
+             Observation.component:volumeScolarisation.value[x]:valueQuantity => [1..1]
+        } 
+
+        class TDDUIOrganization{
+
+             Organization => [None..None]
+             Organization.identifier => [1..None]
+             Organization.identifier.type => [None..None]
+             Organization.identifier:idNatSt => [1..None]
+             Organization.name => [None..None]
+        } 
+
+        class TDDUIPatientINS{
+
+             Patient => [None..None]
+             Patient.extension:nationality => <&plus>[None..None]
+             Patient.extension:deathPlace => <&plus>[None..None]
+             Patient.extension:birthPlace => <&plus>[None..None]
+             Patient.extension:birthPlace.value[x].district => <&plus>[None..None]
+             Patient.extension:birthPlace.value[x].country => <&plus>[None..None]
+             Patient.extension:birthPlace.value[x].extension:inseeCode => <&plus>[None..None]
+             Patient.extension:TDDUIHouseholdSituation => <&plus>[0..1]
+             Patient.extension:TDDUIHouseholdSituation.extension:familySituation => <&plus>[None..None]
+             Patient.extension:TDDUIHouseholdSituation.extension:householdComposition => <&plus>[None..None]
+             Patient.extension:TDDUIHouseholdSituation.extension:householdCompositionDescription => <&plus>[None..None]
+             Patient.extension:TDDUIComment => <&plus>[0..1]
+             Patient.identifier => [None..None]
+             Patient.identifier.type => [None..None]
+             Patient.identifier:NSS => [None..None]
+             Patient.identifier:PI => [None..1]
+             Patient.identifier:PI.system => [None..None]
+             Patient.identifier:PI.value => [None..None]
+             Patient.identifier:INS-NIR => [None..1]
+             Patient.identifier:INS-NIR-TEST => [None..1]
+             Patient.identifier:INS-NIR-DEMO => [None..1]
+             Patient.identifier:INS-NIA => [None..1]
+             Patient.identifier:InitialNumberMDPH => [0..1]
+             Patient.identifier:InitialNumberMDPH.use => [None..None]
+             Patient.identifier:InitialNumberMDPH.type => [1..None]
+             Patient.identifier:InitialNumberMDPH.system => [1..None]
+             Patient.identifier:InitialNumberMDPH.value => [1..None]
+             Patient.identifier:driverLicense => [0..*]
+             Patient.identifier:driverLicense.type => [1..None]
+             Patient.identifier:driverLicense.system => [1..None]
+             Patient.identifier:driverLicense.value => [1..None]
+             Patient.identifier:driverLicense.period.start => [None..None]
+             Patient.identifier:driverLicense.period.end => [None..None]
+             Patient.name => [None..None]
+             Patient.name:usualName => [None..1]
+             Patient.name:usualName.family => [None..None]
+             Patient.name:usualName.given => [None..None]
+             Patient.name:officialName => [None..None]
+             Patient.name:officialName.extension:birth-list-given-name => <&plus>[None..None]
+             Patient.name:officialName.family => [None..None]
+             Patient.name:officialName.given => [None..None]
+             Patient.name:officialName.prefix => [None..None]
+             Patient.telecom => [None..None]
+             Patient.telecom.system => [None..None]
+             Patient.telecom.value => [None..None]
+             Patient.gender => [None..None]
+             Patient.birthDate => [None..None]
+             Patient.deceased[x] => [None..None]
+             Patient.deceased[x]:deceasedDateTime => [0..1]
+             Patient.address => [None..None]
+             Patient.address.extension:TDDUIComment => <&plus>[0..1]
+             Patient.address.type => [None..None]
+             Patient.address.line.extension:additionalLocator => <&plus>[None..None]
+             Patient.address.line.extension:houseNumber => <&plus>[None..None]
+             Patient.address.line.extension:postBox => <&plus>[None..None]
+             Patient.address.line.extension:streetNameBase => <&plus>[None..None]
+             Patient.address.state => [None..None]
+             Patient.address.postalCode => [None..None]
+             Patient.address.country => [None..None]
+             Patient.photo => [None..None]
+             Patient.communication.language => [None..None]
+        } 
+
+        class TDDUIPatient{
+
+             Patient => [None..None]
+             Patient.extension:nationality => <&plus>[None..None]
+             Patient.extension:deathPlace => <&plus>[None..None]
+             Patient.extension:birthPlace => <&plus>[None..None]
+             Patient.extension:birthPlace.value[x].district => <&plus>[None..None]
+             Patient.extension:birthPlace.value[x].country => <&plus>[None..None]
+             Patient.extension:birthPlace.value[x].extension:inseeCode => <&plus>[None..None]
+             Patient.extension:TDDUIHouseholdSituation => <&plus>[0..1]
+             Patient.extension:TDDUIHouseholdSituation.extension:familySituation => <&plus>[None..None]
+             Patient.extension:TDDUIHouseholdSituation.extension:householdComposition => <&plus>[None..None]
+             Patient.extension:TDDUIHouseholdSituation.extension:householdCompositionDescription => <&plus>[None..None]
+             Patient.extension:TDDUIComment => <&plus>[0..1]
+             Patient.identifier => [None..None]
+             Patient.identifier.type => [None..None]
+             Patient.identifier:NSS => [None..None]
+             Patient.identifier:PI => [None..1]
+             Patient.identifier:PI.system => [None..None]
+             Patient.identifier:PI.value => [None..None]
+             Patient.identifier:InitialNumberMDPH => [0..1]
+             Patient.identifier:InitialNumberMDPH.use => [None..None]
+             Patient.identifier:InitialNumberMDPH.type => [1..None]
+             Patient.identifier:InitialNumberMDPH.system => [1..None]
+             Patient.identifier:InitialNumberMDPH.value => [1..None]
+             Patient.identifier:driverLicense => [0..*]
+             Patient.identifier:driverLicense.type => [1..None]
+             Patient.identifier:driverLicense.system => [1..None]
+             Patient.identifier:driverLicense.value => [1..None]
+             Patient.identifier:driverLicense.period.start => [None..None]
+             Patient.identifier:driverLicense.period.end => [None..None]
+             Patient.name => [1..None]
+             Patient.name:usualName => [None..1]
+             Patient.name:usualName.family => [None..None]
+             Patient.name:usualName.given => [None..None]
+             Patient.name:officialName => [1..1]
+             Patient.name:officialName.extension:birth-list-given-name => <&plus>[None..None]
+             Patient.name:officialName.family => [None..None]
+             Patient.name:officialName.given => [None..None]
+             Patient.name:officialName.prefix => [None..None]
+             Patient.telecom => [None..None]
+             Patient.telecom.system => [None..None]
+             Patient.telecom.value => [None..None]
+             Patient.gender => [None..None]
+             Patient.birthDate => [1..None]
+             Patient.birthDate.extension => [1..None]
+             Patient.birthDate.extension:tddui-birth-order => <&plus>[1..1]
+             Patient.deceased[x] => [None..None]
+             Patient.deceased[x]:deceasedDateTime => [0..1]
+             Patient.address => [None..None]
+             Patient.address.extension:TDDUIComment => <&plus>[0..1]
+             Patient.address.type => [None..None]
+             Patient.address.line.extension:additionalLocator => <&plus>[None..None]
+             Patient.address.line.extension:houseNumber => <&plus>[None..None]
+             Patient.address.line.extension:postBox => <&plus>[None..None]
+             Patient.address.line.extension:streetNameBase => <&plus>[None..None]
+             Patient.address.state => [None..None]
+             Patient.address.postalCode => [None..None]
+             Patient.address.country => [None..None]
+             Patient.photo => [None..None]
+             Patient.communication.language => [None..None]
+        } 
+
+        class TDDUIPractitionerRole{
+
+             PractitionerRole => [None..None]
+             PractitionerRole.extension:TDDUIProfession => <&plus>[0..1]
+             PractitionerRole.practitioner => [None..None]
+             PractitionerRole.organization => [None..None]
+             PractitionerRole.code => [None..1]
+             PractitionerRole.code.extension:TDDUIProfession => <&plus>[0..1]
+             PractitionerRole.code.coding => [None..None]
+        } 
+
+        class TDDUIPractitioner{
+
+             Practitioner => [None..None]
+             Practitioner.identifier => [1..None]
+             Practitioner.identifier:idNatPs => [1..None]
+             Practitioner.name => [None..1]
+             Practitioner.name.family => [None..None]
+             Practitioner.name.given => [None..None]
+             Practitioner.name.prefix => [None..None]
+        } 
+
+        class TDDUIQuestionnaireResponse{
+
+             QuestionnaireResponse.meta.lastUpdated => [None..None]
+             QuestionnaireResponse.extension => [None..None]
+             QuestionnaireResponse.extension:TDDUIQRParticipant => <&plus>[0..1]
+             QuestionnaireResponse.extension:TDDUIQRParticipant.extension:TDDUIResponsible => <&plus>[None..None]
+             QuestionnaireResponse.extension:TDDUIQRParticipant.extension:TDDUIHolder => <&plus>[None..None]
+             QuestionnaireResponse.extension:TDDUIAttachment => <&plus>[0..*]
+             QuestionnaireResponse.extension:TDDUIComment => <&plus>[0..1]
+             QuestionnaireResponse.extension:TDDUIAssessmentMethod => <&plus>[0..1]
+             QuestionnaireResponse.identifier => [1..None]
+             QuestionnaireResponse.identifier.system => [1..None]
+             QuestionnaireResponse.identifier.value => [1..None]
+             QuestionnaireResponse.questionnaire => [1..None]
+             QuestionnaireResponse.status => [None..None]
+             QuestionnaireResponse.status.extension => [None..None]
+             QuestionnaireResponse.status.extension:TDDUIStatusAuthor => <&plus>[0..1]
+             QuestionnaireResponse.subject => [1..None]
+             QuestionnaireResponse.encounter => [None..None]
+             QuestionnaireResponse.authored => [None..None]
+             QuestionnaireResponse.author => [None..None]
+             QuestionnaireResponse.source => [None..None]
+             QuestionnaireResponse.item => [1..None]
+             QuestionnaireResponse.item.extension => [None..None]
+             QuestionnaireResponse.item.extension:TDDUIComment => <&plus>[0..1]
+             QuestionnaireResponse.item.linkId => [None..None]
+             QuestionnaireResponse.item.answer => [None..None]
+             QuestionnaireResponse.item.item => [None..None]
+             QuestionnaireResponse.item.item.extension => [None..None]
+             QuestionnaireResponse.item.item.extension:TDDUIComment => <&plus>[0..1]
+             QuestionnaireResponse.item.item.linkId => [None..None]
+             QuestionnaireResponse.item.item.answer => [None..None]
+             QuestionnaireResponse.item.item.item => [None..None]
+             QuestionnaireResponse.item.item.item.extension => [None..None]
+             QuestionnaireResponse.item.item.item.extension:TDDUIComment => <&plus>[0..1]
+             QuestionnaireResponse.item.item.item.linkId => [None..None]
+             QuestionnaireResponse.item.item.item.answer => [None..None]
+        } 
+
+        class TDDUIRelatedPersonContact{
+
+             RelatedPerson => [None..None]
+             RelatedPerson.extension => [None..None]
+             RelatedPerson.extension:nationality => <&plus>[0..*]
+             RelatedPerson.extension:comment => <&plus>[0..1]
+             RelatedPerson.extension:description => <&plus>[0..1]
+             RelatedPerson.identifier => [None..None]
+             RelatedPerson.patient => [None..None]
+             RelatedPerson.relationship => [None..None]
+             RelatedPerson.relationship:Role => [None..None]
+             RelatedPerson.relationship:RelationType => [None..None]
+             RelatedPerson.relationship:LegalProtection => [0..1]
+             RelatedPerson.relationship:LegalProtection.coding.system => [1..None]
+             RelatedPerson.name => [None..None]
+             RelatedPerson.name.family => [None..None]
+             RelatedPerson.name.given => [None..None]
+             RelatedPerson.name.prefix => [None..None]
+             RelatedPerson.telecom => [None..None]
+             RelatedPerson.gender => [None..None]
+             RelatedPerson.birthDate => [None..None]
+             RelatedPerson.address => [None..1]
+        } 
+
+        class TDDUIServiceRequestBesoin{
+
+             ServiceRequest.extension => [None..None]
+             ServiceRequest.extension:pieceJointeBesoin => <&plus>[0..*]
+             ServiceRequest.identifier => [1..None]
+             ServiceRequest.identifier:idBesoin => [1..1]
+             ServiceRequest.identifier:idBesoin.type => [1..None]
+             ServiceRequest.identifier:idBesoin.system => [1..None]
+             ServiceRequest.identifier:idBesoin.value => [1..None]
+             ServiceRequest.basedOn => [1..1]
+             ServiceRequest.category => [None..1]
+             ServiceRequest.code => [1..None]
+             ServiceRequest.code.text => [1..None]
+             ServiceRequest.orderDetail.text => [None..None]
+             ServiceRequest.subject => [None..None]
+             ServiceRequest.note.text => [None..None]
+        } 
+
+        class TDDUIServiceRequestDemandeOrientation{
+
+             ServiceRequest.identifier => [1..None]
+             ServiceRequest.identifier:idDemandeOrientation => [1..1]
+             ServiceRequest.identifier:idDemandeOrientation.type => [1..None]
+             ServiceRequest.identifier:idDemandeOrientation.system => [1..None]
+             ServiceRequest.identifier:idDemandeOrientation.value => [1..None]
+             ServiceRequest.category => [None..1]
+             ServiceRequest.code => [None..None]
+             ServiceRequest.subject => [None..None]
+             ServiceRequest.occurrence[x] => [None..None]
+             ServiceRequest.occurrence[x]:occurrencePeriod => [0..1]
+             ServiceRequest.occurrence[x]:occurrencePeriod.start => [None..None]
+             ServiceRequest.occurrence[x]:occurrencePeriod.end => [None..None]
+             ServiceRequest.supportingInfo => [None..None]
+             ServiceRequest.supportingInfo.extension => [1..None]
+             ServiceRequest.supportingInfo.extension:TDDUIDiscriminator => <&plus>[1..4]
+             ServiceRequest.supportingInfo:demandeOrientation => [0..*]
+             ServiceRequest.supportingInfo:demandeOrientation.extension:TDDUIDiscriminator => <&plus>[1..1]
+             ServiceRequest.supportingInfo:demandeOrientation.extension:TDDUIDiscriminator.value[x] => <&plus>[None..None]
+             ServiceRequest.supportingInfo:depotPoste => [0..1]
+             ServiceRequest.supportingInfo:depotPoste.extension:TDDUIDiscriminator => <&plus>[1..1]
+             ServiceRequest.supportingInfo:depotPoste.extension:TDDUIDiscriminator.value[x] => <&plus>[None..None]
+             ServiceRequest.supportingInfo:reponseOrientation => [0..1]
+             ServiceRequest.supportingInfo:reponseOrientation.extension:TDDUIDiscriminator => <&plus>[1..1]
+             ServiceRequest.supportingInfo:reponseOrientation.extension:TDDUIDiscriminator.value[x] => <&plus>[None..None]
+             ServiceRequest.supportingInfo:pieceComplementaire => [0..*]
+             ServiceRequest.supportingInfo:pieceComplementaire.extension:TDDUIDiscriminator => <&plus>[1..1]
+             ServiceRequest.supportingInfo:pieceComplementaire.extension:TDDUIDiscriminator.value[x] => <&plus>[None..None]
+        } 
+
+        class TDDUITaskAction{
+
+             Task.meta.lastUpdated => [None..None]
+             Task.identifier => [1..1]
+             Task.identifier.system => [1..None]
+             Task.identifier.value => [1..None]
+             Task.basedOn => [1..1]
+             Task.status => [None..None]
+             Task.status.extension => [None..None]
+             Task.status.extension:auteurStatut => <&plus>[0..1]
+             Task.description => [None..None]
+             Task.executionPeriod.start => [None..None]
+             Task.executionPeriod.end => [None..None]
+             Task.owner => [None..None]
+             Task.input => [1..None]
+             Task.input.type => [None..None]
+             Task.input:titre => [1..1]
+             Task.input:titre.type => [None..None]
+             Task.input:titre.value[x] => [None..None]
+             Task.input:evaluation => [0..*]
+             Task.input:evaluation.type => [None..None]
+             Task.input:evaluation.value[x] => [None..None]
+             Task.input:avisUsager => [0..1]
+             Task.input:avisUsager.type => [None..None]
+             Task.input:avisUsager.value[x] => [None..None]
+             Task.input:resultatAttendu => [0..1]
+             Task.input:resultatAttendu.type => [None..None]
+             Task.input:resultatAttendu.value[x] => [None..None]
+             Task.input:pieceJointe => [0..*]
+             Task.input:pieceJointe.type => [None..None]
+             Task.input:pieceJointe.value[x] => [None..None]
+             Task.input:objectif => [0..*]
+             Task.input:objectif.type => [None..None]
+             Task.input:objectif.value[x] => [None..None]
+        } 
+
+        class TDDUITaskBilan{
+
+             Task.identifier => [1..1]
+             Task.identifier.system => [1..None]
+             Task.identifier.value => [1..None]
+             Task.basedOn => [1..1]
+             Task.code => [None..None]
+             Task.executionPeriod => [1..None]
+             Task.executionPeriod.start => [1..None]
+             Task.input => [None..None]
+             Task.input.type => [None..None]
+             Task.input:perimetre => [0..1]
+             Task.input:perimetre.type => [None..None]
+             Task.input:perimetre.value[x] => [None..None]
+             Task.input:problematique => [0..1]
+             Task.input:problematique.type => [None..None]
+             Task.input:problematique.value[x] => [None..None]
+             Task.input:invite => [0..1]
+             Task.input:invite.type => [None..None]
+             Task.input:invite.value[x] => [None..None]
+             Task.input:pieceJointe => [0..*]
+             Task.input:pieceJointe.type => [None..None]
+             Task.input:pieceJointe.value[x] => [None..None]
+             Task.input:dateProchainBilan => [0..1]
+             Task.input:dateProchainBilan.type => [None..None]
+             Task.input:dateProchainBilan.value[x] => [None..None]
+             Task.input:synthesePreparationBilan => [0..*]
+             Task.input:synthesePreparationBilan.type => [None..None]
+             Task.input:synthesePreparationBilan.value[x] => [None..None]
+             Task.input:synthesePreparationBilan.value[x].author[x] => [1..None]
+             Task.input:synthesePreparationBilan.value[x].author[x]:authorReference => [1..1]
+             Task.input:synthesePreparationBilan.value[x].text => [None..None]
+             Task.output => [None..None]
+             Task.output.type => [None..None]
+             Task.output:syntheseBilan => [0..1]
+             Task.output:syntheseBilan.type => [None..None]
+             Task.output:syntheseBilan.value[x] => [None..None]
+        } 
+
+        class TDDUITaskMoyenRessource{
+
+             Task.identifier => [1..1]
+             Task.identifier.system => [1..None]
+             Task.identifier.value => [1..None]
+             Task.basedOn => [1..1]
+             Task.partOf => [None..1]
+             Task.code.text => [None..None]
+             Task.description => [None..None]
+             Task.executionPeriod.start => [None..None]
+             Task.executionPeriod.end => [None..None]
+             Task.input => [1..None]
+             Task.input.type => [None..None]
+             Task.input:titre => [1..1]
+             Task.input:titre.type => [None..None]
+             Task.input:titre.value[x] => [None..None]
+             Task.input:evaluation => [0..1]
+             Task.input:evaluation.type => [None..None]
+             Task.input:evaluation.value[x] => [None..None]
+             Task.input:pieceJointe => [0..*]
+             Task.input:pieceJointe.type => [None..None]
+             Task.input:pieceJointe.value[x] => [None..None]
+        } 
+
+        class TDDUITaskPrestation{
+
+             Task.meta.lastUpdated => [None..None]
+             Task.identifier => [1..1]
+             Task.identifier.system => [1..None]
+             Task.identifier.value => [1..None]
+             Task.basedOn => [1..1]
+             Task.partOf => [None..1]
+             Task.status => [None..None]
+             Task.status.extension => [None..None]
+             Task.status.extension:auteurStatut => <&plus>[0..1]
+             Task.description => [None..None]
+             Task.executionPeriod.start => [None..None]
+             Task.executionPeriod.end => [None..None]
+             Task.input => [1..None]
+             Task.input.type => [None..None]
+             Task.input:titre => [1..1]
+             Task.input:titre.type => [None..None]
+             Task.input:titre.value[x] => [None..None]
+             Task.input:typePrestation => [0..*]
+             Task.input:typePrestation.type => [None..None]
+             Task.input:typePrestation.value[x] => [None..None]
+             Task.input:evaluation => [0..1]
+             Task.input:evaluation.type => [None..None]
+             Task.input:evaluation.value[x] => [None..None]
+             Task.input:pieceJointe => [0..*]
+             Task.input:pieceJointe.type => [None..None]
+             Task.input:pieceJointe.value[x] => [None..None]
+        } 
+
+        class TDDUITaskTransportProfessionnel{
+
+             Task => [None..None]
+             Task.identifier => [None..None]
+             Task.identifier.system => [1..None]
+             Task.identifier.value => [1..None]
+             Task.code => [None..None]
+             Task.for => [1..None]
+             Task.encounter => [None..None]
+             Task.executionPeriod.start => [None..None]
+             Task.executionPeriod.end => [None..None]
+             Task.owner => [None..None]
+             Task.input:typeMotorisation => [None..None]
+             Task.input:adresseDepart => [None..None]
+             Task.input:adresseDestination => [None..None]
+             Task.input:budgetPrevisionnel => [None..None]
+             Task.input:budgetReel => [None..None]
+             Task.input:distance => [None..None]
+             Task.input:dureeTheorique => [None..None]
+        } 
+
+        class TDDUITaskTransportUsager{
+
+             Task => [None..None]
+             Task.identifier => [None..None]
+             Task.identifier.system => [1..None]
+             Task.identifier.value => [1..None]
+             Task.code => [None..None]
+             Task.encounter => [None..None]
+             Task.executionPeriod.start => [None..None]
+             Task.executionPeriod.end => [None..None]
+             Task.owner => [None..None]
+             Task.input:typeMotorisation => [None..None]
+             Task.input:adresseDepart => [None..None]
+             Task.input:adresseDestination => [None..None]
+             Task.input:budgetPrevisionnel => [None..None]
+             Task.input:budgetReel => [None..None]
+             Task.input:distance => [None..None]
+             Task.input:dureeTheorique => [None..None]
+             Task.input:accompagnement => [0..1]
+             Task.input:accompagnement.type => [None..None]
+             Task.input:accompagnement.value[x] => [None..None]
+             Task.input:asepsieRigoureuse => [0..1]
+             Task.input:asepsieRigoureuse.type => [None..None]
+             Task.input:asepsieRigoureuse.value[x] => [None..None]
+             Task.input:natureTransport => [0..1]
+             Task.input:natureTransport.type => [None..None]
+             Task.input:natureTransport.value[x] => [None..None]
+        } 
+
+        class TDDUITaskTransport{
+
+             Task.identifier => [1..1]
+             Task.code => [None..None]
+             Task.encounter => [1..None]
+             Task.executionPeriod => [1..None]
+             Task.executionPeriod.start => [1..None]
+             Task.executionPeriod.end => [1..None]
+             Task.owner => [None..None]
+             Task.input => [None..None]
+             Task.input.type => [None..None]
+             Task.input:typeMotorisation => [0..1]
+             Task.input:typeMotorisation.type => [None..None]
+             Task.input:typeMotorisation.value[x] => [None..None]
+             Task.input:adresseDepart => [0..1]
+             Task.input:adresseDepart.type => [None..None]
+             Task.input:adresseDepart.value[x] => [None..None]
+             Task.input:adresseDestination => [0..1]
+             Task.input:adresseDestination.type => [None..None]
+             Task.input:adresseDestination.value[x] => [None..None]
+             Task.input:budgetPrevisionnel => [0..1]
+             Task.input:budgetPrevisionnel.type => [None..None]
+             Task.input:budgetPrevisionnel.value[x] => [None..None]
+             Task.input:budgetReel => [0..1]
+             Task.input:budgetReel.type => [None..None]
+             Task.input:budgetReel.value[x] => [None..None]
+             Task.input:distance => [0..1]
+             Task.input:distance.type => [None..None]
+             Task.input:distance.value[x] => [None..None]
+             Task.input:dureeTheorique => [0..1]
+             Task.input:dureeTheorique.type => [None..None]
+             Task.input:dureeTheorique.value[x] => [None..None]
+         }
+
+     }
+     package extension #paleturquoise {
+
+     TDDUIBasicDecision -[#black,dashed,thickness=2]-> TDDUIDecision
+     TDDUICarePlanProjetPersonnalise -[#black,dashed,thickness=2]-> TDDUIAttachment
+     TDDUICarePlanProjetPersonnalise -[#black,dashed,thickness=2]-> TDDUIStatusAuthor
+     TDDUICarePlanProjetPersonnalise -[#black,dashed,thickness=2]-> TDDUIDiscriminator
+     TDDUICarePlanProjetPersonnalise -[#black,dashed,thickness=2]-> TDDUIDiscriminator
+     TDDUICarePlanProjetPersonnalise -[#black,dashed,thickness=2]-> TDDUIDiscriminator
+     TDDUIEncounterEvenement -[#black,dashed,thickness=2]-> TDDUIRessourcesUsed
+     TDDUIEncounterEvenement -[#black,dashed,thickness=2]-> TDDUIEventLabel
+     TDDUIEncounterEvenement -[#black,dashed,thickness=2]-> TDDUIComment
+     TDDUIEncounterEvenement -[#black,dashed,thickness=2]-> TDDUIEventReport
+     TDDUIEncounterEvenement -[#black,dashed,thickness=2]-> TDDUIAttachment
+     TDDUIEncounterEvenement -[#black,dashed,thickness=2]-> TDDUIEventOutsideService
+     TDDUIEncounterEvenement -[#black,dashed,thickness=2]-> TDDUIEventReason
+     TDDUIEncounterEvenement -[#black,dashed,thickness=2]-> TDDUIPatientPresent
+     TDDUIEncounterEvenement -[#black,dashed,thickness=2]-> TDDUIMeal
+     TDDUIEncounterEvenement -[#black,dashed,thickness=2]-> TDDUIPatientValidation
+     TDDUIEncounterEvenement -[#black,dashed,thickness=2]-> TDDUIEventCancelReason
+     TDDUIEncounterEvenement -[#black,dashed,thickness=2]-> TDDUIStatusAuthor
+     TDDUIEncounterEvenement -[#black,dashed,thickness=2]-> TDDUIParticipantPresent
+     TDDUIEncounterEvenement -[#black,dashed,thickness=2]-> TDDUIParticipantPresent
+     TDDUIEncounterSejour -[#black,dashed,thickness=2]-> TDDUIAdmissionDate
+     TDDUIEncounterSejour -[#black,dashed,thickness=2]-> TDDUIEntryModelabel
+     TDDUIEncounterSejour -[#black,dashed,thickness=2]-> TDDUIExitModeLabel
+     TDDUIEncounterSejour -[#black,dashed,thickness=2]-> TDDUIComment
+     TDDUIEncounterSejour -[#black,dashed,thickness=2]-> TDDUIEntryDateOrigin
+     TDDUIGoalAttente -[#black,dashed,thickness=2]-> TDDUICarePlanProjetPersoRef
+     TDDUIGoalAttente -[#black,dashed,thickness=2]-> TDDUIAttachment
+     TDDUIGoalAttente -[#black,dashed,thickness=2]-> TDDUIDiscriminator
+     TDDUIGoalAttente -[#black,dashed,thickness=2]-> TDDUIDiscriminator
+     TDDUIGoalAttente -[#black,dashed,thickness=2]-> TDDUIDiscriminator
+     TDDUIGoalObjectif -[#black,dashed,thickness=2]-> TDDUIEvaluationRef
+     TDDUIGoalObjectif -[#black,dashed,thickness=2]-> TDDUICarePlanProjetPersoRef
+     TDDUIGoalObjectif -[#black,dashed,thickness=2]-> TDDUIAttachment
+     TDDUIGoalObjectif -[#black,dashed,thickness=2]-> TDDUIStatusAuthor
+     TDDUIGoalObjectif -[#black,dashed,thickness=2]-> TDDUIDiscriminator
+     TDDUIGoalObjectif -[#black,dashed,thickness=2]-> TDDUIDiscriminator
+     TDDUIGoalObjectif -[#black,dashed,thickness=2]-> TDDUIDiscriminator
+     TDDUIGoalObjectif -[#black,dashed,thickness=2]-> TDDUIDiscriminator
+     TDDUIPatientINS -[#black,dashed,thickness=2]-> TDDUIHouseholdSituation
+     TDDUIPatientINS -[#black,dashed,thickness=2]-> TDDUIComment
+     TDDUIPatientINS -[#black,dashed,thickness=2]-> TDDUIComment
+     TDDUIPatient -[#black,dashed,thickness=2]-> TDDUIHouseholdSituation
+     TDDUIPatient -[#black,dashed,thickness=2]-> TDDUIComment
+     TDDUIPatient -[#black,dashed,thickness=2]-> TDDUIBirthOrder
+     TDDUIPatient -[#black,dashed,thickness=2]-> TDDUIComment
+     TDDUIPractitionerRole -[#black,dashed,thickness=2]-> TDDUIExerciseMode
+     TDDUIPractitionerRole -[#black,dashed,thickness=2]-> TDDUIProfession
+     TDDUIQuestionnaireResponse -[#black,dashed,thickness=2]-> TDDUIQRParticipant
+     TDDUIQuestionnaireResponse -[#black,dashed,thickness=2]-> TDDUIAttachment
+     TDDUIQuestionnaireResponse -[#black,dashed,thickness=2]-> TDDUIComment
+     TDDUIQuestionnaireResponse -[#black,dashed,thickness=2]-> TDDUIAssessmentMethod
+     TDDUIQuestionnaireResponse -[#black,dashed,thickness=2]-> TDDUIStatusAuthor
+     TDDUIQuestionnaireResponse -[#black,dashed,thickness=2]-> TDDUIComment
+     TDDUIQuestionnaireResponse -[#black,dashed,thickness=2]-> TDDUIComment
+     TDDUIQuestionnaireResponse -[#black,dashed,thickness=2]-> TDDUIComment
+     TDDUIRelatedPersonContact -[#black,dashed,thickness=2]-> TDDUINationalityExtension
+     TDDUIRelatedPersonContact -[#black,dashed,thickness=2]-> TDDUIComment
+     TDDUIRelatedPersonContact -[#black,dashed,thickness=2]-> TDDUIRelatedPersonContactDescription
+     TDDUIServiceRequestBesoin -[#black,dashed,thickness=2]-> TDDUIAttachment
+     TDDUIServiceRequestDemandeOrientation -[#black,dashed,thickness=2]-> TDDUIDiscriminator
+     TDDUIServiceRequestDemandeOrientation -[#black,dashed,thickness=2]-> TDDUIDiscriminator
+     TDDUIServiceRequestDemandeOrientation -[#black,dashed,thickness=2]-> TDDUIDiscriminator
+     TDDUIServiceRequestDemandeOrientation -[#black,dashed,thickness=2]-> TDDUIDiscriminator
+     TDDUIServiceRequestDemandeOrientation -[#black,dashed,thickness=2]-> TDDUIDiscriminator
+     TDDUITaskAction -[#black,dashed,thickness=2]-> TDDUIStatusAuthor
+     TDDUITaskPrestation -[#black,dashed,thickness=2]-> TDDUIStatusAuthor
+
+        class TDDUIAdmissionDate{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class TDDUIAssessmentMethod{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class TDDUIAttachment{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class TDDUIBirthOrder{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class TDDUICarePlanProjetPersoRef{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class TDDUIComment{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class TDDUIDecision{
+
+          Extension.extension => [1..None]
+          Extension.extension:decision => [1..1]
+          Extension.extension:decision.extension => [1..None]
+          Extension.extension:decision.extension:typeDecision => [1..1]
+          Extension.extension:decision.extension:typeDecision.extension => [None..0]
+          Extension.extension:decision.extension:typeDecision.url => [None..None]
+          Extension.extension:decision.extension:typeDecision.value[x] => [None..None]
+          Extension.extension:decision.extension:dateEffetCloture => [0..1]
+          Extension.extension:decision.extension:dateEffetCloture.extension => [None..0]
+          Extension.extension:decision.extension:dateEffetCloture.url => [None..None]
+          Extension.extension:decision.extension:dateEffetCloture.value[x] => [None..None]
+          Extension.extension:decision.extension:dateDecision => [0..1]
+          Extension.extension:decision.extension:dateDecision.extension => [None..0]
+          Extension.extension:decision.extension:dateDecision.url => [None..None]
+          Extension.extension:decision.extension:dateDecision.value[x] => [None..None]
+          Extension.extension:decision.extension:motivation => [0..*]
+          Extension.extension:decision.extension:motivation.extension => [None..0]
+          Extension.extension:decision.extension:motivation.url => [None..None]
+          Extension.extension:decision.extension:motivation.value[x] => [None..None]
+          Extension.extension:decision.extension:motivationLocale => [0..*]
+          Extension.extension:decision.extension:motivationLocale.extension => [None..0]
+          Extension.extension:decision.extension:motivationLocale.url => [None..None]
+          Extension.extension:decision.extension:motivationLocale.value[x] => [None..None]
+          Extension.extension:decision.extension:commentaire => [0..1]
+          Extension.extension:decision.extension:commentaire.extension => [None..0]
+          Extension.extension:decision.extension:commentaire.url => [None..None]
+          Extension.extension:decision.extension:commentaire.value[x] => [None..None]
+          Extension.extension:decision.extension:droitPrestation => [0..1]
+          Extension.extension:decision.extension:droitPrestation.extension => [7..None]
+          Extension.extension:decision.extension:droitPrestation.extension:categorieDroitPrestation => [1..1]
+          Extension.extension:decision.extension:droitPrestation.extension:categorieDroitPrestation.extension => [None..0]
+          Extension.extension:decision.extension:droitPrestation.extension:categorieDroitPrestation.url => [None..None]
+          Extension.extension:decision.extension:droitPrestation.extension:categorieDroitPrestation.value[x] => [None..None]
+          Extension.extension:decision.extension:droitPrestation.extension:typeDroitPrestation => [1..1]
+          Extension.extension:decision.extension:droitPrestation.extension:typeDroitPrestation.extension => [None..0]
+          Extension.extension:decision.extension:droitPrestation.extension:typeDroitPrestation.url => [None..None]
+          Extension.extension:decision.extension:droitPrestation.extension:typeDroitPrestation.value[x] => [None..None]
+          Extension.extension:decision.extension:droitPrestation.extension:natureDroitPrestation => [1..1]
+          Extension.extension:decision.extension:droitPrestation.extension:natureDroitPrestation.extension => [None..0]
+          Extension.extension:decision.extension:droitPrestation.extension:natureDroitPrestation.url => [None..None]
+          Extension.extension:decision.extension:droitPrestation.extension:natureDroitPrestation.value[x] => [None..None]
+          Extension.extension:decision.extension:droitPrestation.extension:dateOuverture => [1..1]
+          Extension.extension:decision.extension:droitPrestation.extension:dateOuverture.extension => [None..0]
+          Extension.extension:decision.extension:droitPrestation.extension:dateOuverture.url => [None..None]
+          Extension.extension:decision.extension:droitPrestation.extension:dateOuverture.value[x] => [None..None]
+          Extension.extension:decision.extension:droitPrestation.extension:dateEcheance => [1..1]
+          Extension.extension:decision.extension:droitPrestation.extension:dateEcheance.extension => [None..0]
+          Extension.extension:decision.extension:droitPrestation.extension:dateEcheance.url => [None..None]
+          Extension.extension:decision.extension:droitPrestation.extension:dateEcheance.value[x] => [None..None]
+          Extension.extension:decision.extension:droitPrestation.extension:existencePAG => [1..1]
+          Extension.extension:decision.extension:droitPrestation.extension:existencePAG.extension => [None..0]
+          Extension.extension:decision.extension:droitPrestation.extension:existencePAG.url => [None..None]
+          Extension.extension:decision.extension:droitPrestation.extension:existencePAG.value[x] => [None..None]
+          Extension.extension:decision.extension:droitPrestation.extension:motifFinPAG => [0..1]
+          Extension.extension:decision.extension:droitPrestation.extension:motifFinPAG.extension => [None..0]
+          Extension.extension:decision.extension:droitPrestation.extension:motifFinPAG.url => [None..None]
+          Extension.extension:decision.extension:droitPrestation.extension:motifFinPAG.value[x] => [None..None]
+          Extension.extension:decision.extension:droitPrestation.extension:creton => [0..1]
+          Extension.extension:decision.extension:droitPrestation.extension:creton.extension => [None..0]
+          Extension.extension:decision.extension:droitPrestation.extension:creton.url => [None..None]
+          Extension.extension:decision.extension:droitPrestation.extension:creton.value[x] => [None..None]
+          Extension.extension:decision.extension:droitPrestation.extension:taux => [0..1]
+          Extension.extension:decision.extension:droitPrestation.extension:taux.extension => [None..0]
+          Extension.extension:decision.extension:droitPrestation.extension:taux.url => [None..None]
+          Extension.extension:decision.extension:droitPrestation.extension:taux.value[x] => [None..None]
+          Extension.extension:decision.extension:droitPrestation.extension:typeCompensation => [0..1]
+          Extension.extension:decision.extension:droitPrestation.extension:typeCompensation.extension => [None..0]
+          Extension.extension:decision.extension:droitPrestation.extension:typeCompensation.url => [None..None]
+          Extension.extension:decision.extension:droitPrestation.extension:typeCompensation.value[x] => [None..None]
+          Extension.extension:decision.extension:droitPrestation.extension:commentaire => [0..1]
+          Extension.extension:decision.extension:droitPrestation.extension:commentaire.extension => [None..0]
+          Extension.extension:decision.extension:droitPrestation.extension:commentaire.url => [None..None]
+          Extension.extension:decision.extension:droitPrestation.extension:commentaire.value[x] => [None..None]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation => [1..1]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension => [1..None]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:temporaliteAccueil => [0..1]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:temporaliteAccueil.extension => [None..0]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:temporaliteAccueil.url => [None..None]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:temporaliteAccueil.value[x] => [None..None]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:precisionOrientation => [0..1]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:precisionOrientation.extension => [None..0]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:precisionOrientation.url => [None..None]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:precisionOrientation.value[x] => [None..None]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:accueilSequentiel => [0..1]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:accueilSequentiel.extension => [None..0]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:accueilSequentiel.url => [None..None]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:accueilSequentiel.value[x] => [None..None]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:formation => [0..1]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:formation.extension => [None..0]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:formation.url => [None..None]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:formation.value[x] => [None..None]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:montantAttribue => [0..1]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:montantAttribue.extension => [None..0]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:montantAttribue.url => [None..None]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:montantAttribue.value[x] => [None..None]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:frequence => [0..1]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:frequence.extension => [None..0]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:frequence.url => [None..None]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:frequence.value[x] => [None..None]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:qualificationOrientation => [1..1]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:qualificationOrientation.extension => [None..0]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:qualificationOrientation.url => [None..None]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:qualificationOrientation.value[x] => [None..None]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:structureAccueil => [0..*]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:structureAccueil.extension => [None..0]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:structureAccueil.url => [None..None]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:structureAccueil.value[x] => [None..None]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:priseCharge => [0..*]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:priseCharge.extension:modePriseCharge => [0..1]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:priseCharge.extension:modePriseCharge.extension => [None..0]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:priseCharge.extension:modePriseCharge.url => [None..None]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:priseCharge.extension:modePriseCharge.value[x] => [None..None]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:priseCharge.extension:quantification => [0..1]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:priseCharge.extension:quantification.extension:valeurPriseCharge => [0..1]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:priseCharge.extension:quantification.extension:valeurPriseCharge.extension => [None..0]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:priseCharge.extension:quantification.extension:valeurPriseCharge.url => [None..None]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:priseCharge.extension:quantification.extension:valeurPriseCharge.value[x] => [None..None]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:priseCharge.extension:quantification.extension:unitePriseCharge => [0..1]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:priseCharge.extension:quantification.extension:unitePriseCharge.extension => [None..0]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:priseCharge.extension:quantification.extension:unitePriseCharge.url => [None..None]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:priseCharge.extension:quantification.extension:unitePriseCharge.value[x] => [None..None]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:priseCharge.extension:quantification.extension:frequencePriseCharge => [0..1]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:priseCharge.extension:quantification.extension:frequencePriseCharge.extension => [None..0]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:priseCharge.extension:quantification.extension:frequencePriseCharge.url => [None..None]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:priseCharge.extension:quantification.extension:frequencePriseCharge.value[x] => [None..None]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:priseCharge.extension:quantification.url => [None..None]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:priseCharge.extension:quantification.value[x] => [None..0]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:priseCharge.url => [None..None]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:priseCharge.value[x] => [None..0]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.url => [None..None]
+          Extension.extension:decision.extension:droitPrestation.extension:detailPrestation.value[x] => [None..0]
+          Extension.extension:decision.extension:droitPrestation.url => [None..None]
+          Extension.extension:decision.extension:droitPrestation.value[x] => [None..0]
+          Extension.extension:decision.url => [None..None]
+          Extension.extension:decision.value[x] => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..0]
+        } 
+        class TDDUIDiscriminator{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class TDDUIEntryDateOrigin{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class TDDUIEntryModelabel{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class TDDUIEvaluationRef{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class TDDUIEventCancelReason{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class TDDUIEventLabel{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class TDDUIEventReason{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class TDDUIEventReport{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class TDDUIExerciseMode{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+          Extension.value[x].coding => [None..None]
+        } 
+        class TDDUIExitModeLabel{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class TDDUIHouseholdSituation{
+
+          Extension.extension:familySituation => [0..1]
+          Extension.extension:familySituation.extension => [None..0]
+          Extension.extension:familySituation.url => [None..None]
+          Extension.extension:familySituation.value[x] => [None..None]
+          Extension.extension:familySituation.value[x]:valueCodeableConcept => [0..1]
+          Extension.extension:householdComposition => [0..*]
+          Extension.extension:householdComposition.extension => [None..0]
+          Extension.extension:householdComposition.url => [None..None]
+          Extension.extension:householdComposition.value[x] => [None..None]
+          Extension.extension:householdComposition.value[x]:valueCodeableConcept => [0..1]
+          Extension.extension:householdCompositionDescription => [0..1]
+          Extension.extension:householdCompositionDescription.extension => [None..0]
+          Extension.extension:householdCompositionDescription.url => [None..None]
+          Extension.extension:householdCompositionDescription.value[x] => [None..None]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..0]
+        } 
+        class TDDUIMeal{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class TDDUINationalityExtension{
+
+          Extension.extension:code => [0..1]
+          Extension.extension:code.extension => [None..0]
+          Extension.extension:code.url => [None..None]
+          Extension.extension:code.value[x] => [1..None]
+          Extension.extension:period => [0..1]
+          Extension.extension:period.extension => [None..0]
+          Extension.extension:period.url => [None..None]
+          Extension.extension:period.value[x] => [1..None]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..0]
+        } 
+        class TDDUIEventOutsideService{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class TDDUIParticipantPresent{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class TDDUIPatientPresent{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class TDDUIPatientValidation{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class TDDUIProfession{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+          Extension.value[x].coding => [None..None]
+        } 
+        class TDDUIQRParticipant{
+
+          Extension.extension:TDDUIResponsible => [0..1]
+          Extension.extension:TDDUIResponsible.extension => [None..0]
+          Extension.extension:TDDUIResponsible.url => [None..None]
+          Extension.extension:TDDUIResponsible.value[x] => [None..None]
+          Extension.extension:TDDUIHolder => [0..1]
+          Extension.extension:TDDUIHolder.extension => [None..0]
+          Extension.extension:TDDUIHolder.url => [None..None]
+          Extension.extension:TDDUIHolder.value[x] => [None..None]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..0]
+        } 
+        class TDDUIRelatedPersonContactDescription{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class TDDUIRessourcesUsed{
+
+          Extension.extension:TDDUIRessourceType => [0..1]
+          Extension.extension:TDDUIRessourceType.extension => [None..0]
+          Extension.extension:TDDUIRessourceType.url => [None..None]
+          Extension.extension:TDDUIRessourceType.value[x] => [None..None]
+          Extension.extension:TDDUIMaterialDetail => [0..*]
+          Extension.extension:TDDUIMaterialDetail.extension => [None..0]
+          Extension.extension:TDDUIMaterialDetail.url => [None..None]
+          Extension.extension:TDDUIMaterialDetail.value[x] => [None..None]
+          Extension.extension:TDDUIFacilityResource => [0..*]
+          Extension.extension:TDDUIFacilityResource.extension => [None..0]
+          Extension.extension:TDDUIFacilityResource.url => [None..None]
+          Extension.extension:TDDUIFacilityResource.value[x] => [None..None]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..0]
+        } 
+        class TDDUIStatusAuthor{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+         }
+     }
+     package valueset #PaleVioletRed{
+
+        class TDDUIBasicDecisionIdentifier  
+
+     TDDUIBasicDecision -[#black,dotted,thickness=2]-> TDDUIBasicDecisionIdentifier
+
+        class TDDUIBasicDecisionIdentifier  
+
+     TDDUIBasicDecision -[#black,dotted,thickness=2]-> TDDUIBasicDecisionIdentifier
+
+        class TDDUIBasicDecisionIdentifier  
+
+     TDDUIBasicDecision -[#black,dotted,thickness=2]-> TDDUIBasicDecisionIdentifier
+
+        class TDDUIBasicDecisionIdentifier  
+
+     TDDUIBasicDecision -[#black,dotted,thickness=2]-> TDDUIBasicDecisionIdentifier
+
+        class TDDUIBasicDecisionIdentifier  
+
+     TDDUIBasicDecision -[#black,dotted,thickness=2]-> TDDUIBasicDecisionIdentifier
+
+        class TDDUIBasicType  
+
+     TDDUIBasicDecision -[#black,dotted,thickness=2]-> TDDUIBasicType
+
+        class TDDUICarePlanSupportingInfo  
+
+     TDDUICarePlanProjetPersonnalise -[#black,dotted,thickness=2]-> TDDUICarePlanSupportingInfo
+
+        class TDDUICarePlanSupportingInfo  
+
+     TDDUICarePlanProjetPersonnalise -[#black,dotted,thickness=2]-> TDDUICarePlanSupportingInfo
+
+        class TDDUIDiscriminator  
+
+     TDDUIDiscriminator -[#black,dotted,thickness=2]-> TDDUIDiscriminator
+
+        class TDDUIEncounterType  
+
+     TDDUIEncounterEvenement -[#black,dotted,thickness=2]-> TDDUIEncounterType
+
+        class TDDUISerafin  
+
+     TDDUIEncounterEvenement -[#black,dotted,thickness=2]-> TDDUISerafin
+
+        class TDDUIEncounterIdentifier  
+
+     TDDUIEncounterSejour -[#black,dotted,thickness=2]-> TDDUIEncounterIdentifier
+
+        class TDDUIEncounterIdentifier  
+
+     TDDUIEncounterSejour -[#black,dotted,thickness=2]-> TDDUIEncounterIdentifier
+
+        class TDDUIGoalAttenteNote  
+
+     TDDUIGoalAttente -[#black,dotted,thickness=2]-> TDDUIGoalAttenteNote
+
+        class TDDUIGoalAttenteNote  
+
+     TDDUIGoalAttente -[#black,dotted,thickness=2]-> TDDUIGoalAttenteNote
+
+        class TDDUIGoalObjectifNote  
+
+     TDDUIGoalObjectif -[#black,dotted,thickness=2]-> TDDUIGoalObjectifNote
+
+        class TDDUIGoalObjectifNote  
+
+     TDDUIGoalObjectif -[#black,dotted,thickness=2]-> TDDUIGoalObjectifNote
+
+        class TDDUIGoalObjectifNote  
+
+     TDDUIGoalObjectif -[#black,dotted,thickness=2]-> TDDUIGoalObjectifNote
+
+        class TDDUIObservationType  
+
+     TDDUIObservationCauseMortalite -[#black,dotted,thickness=2]-> TDDUIObservationType
+
+        class TDDUIObservationType  
+
+     TDDUIObservationCauseMortalite -[#black,dotted,thickness=2]-> TDDUIObservationType
+
+        class TDDUICIM10  
+
+     TDDUIObservationCauseMortalite -[#black,dotted,thickness=2]-> TDDUICIM10
+
+        class TDDUIObservationType  
+
+     TDDUIObservationMobiliteUsager -[#black,dotted,thickness=2]-> TDDUIObservationType
+
+        class TDDUIObservationType  
+
+     TDDUIObservationMobiliteUsager -[#black,dotted,thickness=2]-> TDDUIObservationType
+
+        class TDDUIObservationType  
+
+     TDDUIObservationPeriodeScolaire -[#black,dotted,thickness=2]-> TDDUIObservationType
+
+        class TDDUIObservationPeriodeScolaire  
+
+     TDDUIObservationPeriodeScolaire -[#black,dotted,thickness=2]-> TDDUIObservationPeriodeScolaire
+
+        class TDDUIPatientIdentifier  
+
+     TDDUIPatientINS -[#black,dotted,thickness=2]-> TDDUIPatientIdentifier
+
+        class TDDUIPatientIdentifier  
+
+     TDDUIPatient -[#black,dotted,thickness=2]-> TDDUIPatientIdentifier
+
+        class TDDUIRelatedPersonRelashionship  
+
+     TDDUIRelatedPersonContact -[#black,dotted,thickness=2]-> TDDUIRelatedPersonRelashionship
+
+        class TDDUIContactRelation  
+
+     TDDUIRelatedPersonContact -[#black,dotted,thickness=2]-> TDDUIContactRelation
+
+        class TDDUIContactProtectionJuridique  
+
+     TDDUIRelatedPersonContact -[#black,dotted,thickness=2]-> TDDUIContactProtectionJuridique
+
+        class TDDUIServiceRequestSupportingInfo  
+
+     TDDUIServiceRequestDemandeOrientation -[#black,dotted,thickness=2]-> TDDUIServiceRequestSupportingInfo
+
+        class TDDUIServiceRequestSupportingInfo  
+
+     TDDUIServiceRequestDemandeOrientation -[#black,dotted,thickness=2]-> TDDUIServiceRequestSupportingInfo
+
+        class TDDUIServiceRequestSupportingInfo  
+
+     TDDUIServiceRequestDemandeOrientation -[#black,dotted,thickness=2]-> TDDUIServiceRequestSupportingInfo
+
+        class TDDUIServiceRequestSupportingInfo  
+
+     TDDUIServiceRequestDemandeOrientation -[#black,dotted,thickness=2]-> TDDUIServiceRequestSupportingInfo
+
+        class TDDUITaskInputAction  
+
+     TDDUITaskAction -[#black,dotted,thickness=2]-> TDDUITaskInputAction
+
+        class TDDUITaskInputBilan  
+
+     TDDUITaskBilan -[#black,dotted,thickness=2]-> TDDUITaskInputBilan
+
+        class TDDUITaskOutputBilan  
+
+     TDDUITaskBilan -[#black,dotted,thickness=2]-> TDDUITaskOutputBilan
+
+        class TDDUITaskInputMoyenRessource  
+
+     TDDUITaskMoyenRessource -[#black,dotted,thickness=2]-> TDDUITaskInputMoyenRessource
+
+        class TDDUITaskInputPrestation  
+
+     TDDUITaskPrestation -[#black,dotted,thickness=2]-> TDDUITaskInputPrestation
+
+        class TDDUISerafin  
+
+     TDDUITaskPrestation -[#black,dotted,thickness=2]-> TDDUISerafin
+
+        class TDDUITaskInputTransport  
+
+     TDDUITaskTransport -[#black,dotted,thickness=2]-> TDDUITaskInputTransport
+       }
+
+package "Ressources de base" #palegreen {
+
+ class "Basic" as  class972e73b7a882d0802a4e3a16946a2f94 
+
+    class972e73b7a882d0802a4e3a16946a2f94 --> TDDUIBasicDecision
+
+ class "Bundle" as  class94c51f19c37f96ed231f5a0ae512b2a8 
+
+    class94c51f19c37f96ed231f5a0ae512b2a8 --> TDDUIBundle
+
+ class "CarePlan" as  classc1c8e4b50c739ddc150dd233aa035d7a 
+
+    classc1c8e4b50c739ddc150dd233aa035d7a --> TDDUICarePlanProjetPersonnalise
+
+ class "Consent" as  class1bbdf136f897ea2075a786bd05152095 
+
+    class1bbdf136f897ea2075a786bd05152095 --> TDDUIConsentAccord
+
+ class "https://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.SimplifiedPublish.DocumentReference" as  class0d16ddb8f4c96a9cebe4bccd50a3a75f 
+
+    class0d16ddb8f4c96a9cebe4bccd50a3a75f --> TDDUIDocumentReference
+
+ class "Encounter" as  classd1e9f9f891de8f9a655739a01fbf68f0 
+
+    classd1e9f9f891de8f9a655739a01fbf68f0 --> TDDUIEncounterEvenement
+
+ class "Encounter" as  classd1e9f9f891de8f9a655739a01fbf68f0 
+
+    classd1e9f9f891de8f9a655739a01fbf68f0 --> TDDUIEncounterSejour
+
+ class "Goal" as  class12c74214cb4c18cf36d885303d6aa2e1 
+
+    class12c74214cb4c18cf36d885303d6aa2e1 --> TDDUIGoalAttente
+
+ class "Goal" as  class12c74214cb4c18cf36d885303d6aa2e1 
+
+    class12c74214cb4c18cf36d885303d6aa2e1 --> TDDUIGoalObjectif
+
+ class "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-human-name" as  classab70be087e84d984395444c4643fb763 
+
+    classab70be087e84d984395444c4643fb763 --> tddui-humanname
+
+ class "Observation" as  classc680d437163cc6bab4f9bdb35c3073d0 
+
+    classc680d437163cc6bab4f9bdb35c3073d0 --> TDDUIObservationCauseMortalite
+
+ class "Observation" as  classc680d437163cc6bab4f9bdb35c3073d0 
+
+    classc680d437163cc6bab4f9bdb35c3073d0 --> TDDUIObservationMobiliteUsager
+
+ class "Observation" as  classc680d437163cc6bab4f9bdb35c3073d0 
+
+    classc680d437163cc6bab4f9bdb35c3073d0 --> TDDUIObservationPeriodeScolaire
+
+ class "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization" as  class7273115ddeceb35c4c7044f07f832f67 
+
+    class7273115ddeceb35c4c7044f07f832f67 --> TDDUIOrganization
+
+ class "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins" as  class4183c8825d56dc7b36e75f7f711f8b6b 
+
+    class4183c8825d56dc7b36e75f7f711f8b6b --> TDDUIPatientINS
+
+ class "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient" as  classcb72a5551de902d7716887df67489a97 
+
+    classcb72a5551de902d7716887df67489a97 --> TDDUIPatient
+
+ class "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role" as  class32e744761be9cc693fcaf56d8ca68b99 
+
+    class32e744761be9cc693fcaf56d8ca68b99 --> TDDUIPractitionerRole
+
+ class "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner" as  class722d091912544e694771fe1d2c6739cb 
+
+    class722d091912544e694771fe1d2c6739cb --> TDDUIPractitioner
+
+ class "QuestionnaireResponse" as  classb217ae643eb6dcd8c91e3d8c94c5a271 
+
+    classb217ae643eb6dcd8c91e3d8c94c5a271 --> TDDUIQuestionnaireResponse
+
+ class "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person" as  class73d64d75d9b8829a511eb36c46458829 
+
+    class73d64d75d9b8829a511eb36c46458829 --> TDDUIRelatedPersonContact
+
+ class "ServiceRequest" as  class36a80548d09d2e7c003ede674799a03a 
+
+    class36a80548d09d2e7c003ede674799a03a --> TDDUIServiceRequestBesoin
+
+ class "ServiceRequest" as  class36a80548d09d2e7c003ede674799a03a 
+
+    class36a80548d09d2e7c003ede674799a03a --> TDDUIServiceRequestDemandeOrientation
+
+ class "Task" as  classeaeb30f9f18e0c50b178676f3eaef45f 
+
+    classeaeb30f9f18e0c50b178676f3eaef45f --> TDDUITaskAction
+
+ class "Task" as  classeaeb30f9f18e0c50b178676f3eaef45f 
+
+    classeaeb30f9f18e0c50b178676f3eaef45f --> TDDUITaskBilan
+
+ class "Task" as  classeaeb30f9f18e0c50b178676f3eaef45f 
+
+    classeaeb30f9f18e0c50b178676f3eaef45f --> TDDUITaskMoyenRessource
+
+ class "Task" as  classeaeb30f9f18e0c50b178676f3eaef45f 
+
+    classeaeb30f9f18e0c50b178676f3eaef45f --> TDDUITaskPrestation
+
+ class "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport" as  classaa7d56c9081e2f1e68f1508ac0c58e9d 
+
+    classaa7d56c9081e2f1e68f1508ac0c58e9d --> TDDUITaskTransportProfessionnel
+
+ class "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport" as  classaa7d56c9081e2f1e68f1508ac0c58e9d 
+
+    classaa7d56c9081e2f1e68f1508ac0c58e9d --> TDDUITaskTransportUsager
+
+ class "Task" as  classeaeb30f9f18e0c50b178676f3eaef45f 
+
+    classeaeb30f9f18e0c50b178676f3eaef45f --> TDDUITaskTransport
+}
+@enduml
