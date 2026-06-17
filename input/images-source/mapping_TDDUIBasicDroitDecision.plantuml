@@ -7,6 +7,7 @@ object "**TDDUIServiceRequestDemandeOrientation**" as DemandeOrientation #fdb462
 map "**Decision : TDDUIBasicDroitDecision**" as Decision #8dd3c7 {
     Decision.dateEffetCloture => <&plus> TDDUIDroitDecision.extension:decision.extension:dateEffetCloture
     Decision.dateDecision => <&plus> TDDUIDroitDecision.extension:decision.extension:dateDecision
+    Decision.motivation => <&plus> TDDUIDroitDecision.extension:decision.extension:motivation
     Decision.motivationLocale => <&plus> TDDUIDroitDecision.extension:decision.extension:motivationLocale
     Decision.commentaire => <&plus> TDDUIDroitDecision.extension:decision.extension:commentaire
     Decision.idDecision => <&layers> identifier:idDecision
@@ -21,6 +22,11 @@ map "**DroitPrestation : TDDUIDroitDecision.extension:decision.extension:droitPr
     DroitPrestation.dateOuverture => <&plus> extension:dateOuverture
     DroitPrestation.dateEcheance => <&plus> extension:dateEcheance
     DroitPrestation.existencePAG => <&plus> extension:existencePAG
+    DroitPrestation.categoriePrestation => <&plus> extension:categoriePrestation
+    Droitprestation.typeDroitPrestation => <&plus> extension:typeDroitPrestation
+    DroitPrestation.natureDroitPrestation => <&plus> extension:natureDroitPrestation
+    DroitPrestation.motifFinPAG => <&plus> extension:motifFinPAG
+    DroitPrestation.typeCompensation => <&plus> extension:typeCompensation
     DroitPrestation.creton => <&plus> extension:creton
     DroitPrestation.taux => <&plus> extension:taux
     DroitPrestation.commentaire => <&plus> extension:commentaire
@@ -33,6 +39,8 @@ map "**DetailPrestation : TDDUIDroitDecision.extension:decision.extension:droitP
     DetailPrestation.montantAttribue => <&plus> extension:montantAttribue
     DetailPrestation.frequence => <&plus> extension:frequence
     DetailPrestation.StructureAccueil => <&plus> extension:structureAccueil
+    DetailPrestation.precisionOrientation => <&plus> extension:precisionOrientation
+    DetailPrestation.qualificationOrientation => <&plus> extension:qualificationOrientation
 }
 
 map "**PriseCharge : TDDUIDroitDecision.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:priseCharge**" as PriseCharge #8dd3c7 {
