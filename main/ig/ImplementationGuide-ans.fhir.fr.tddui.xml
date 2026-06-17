@@ -2,16 +2,16 @@
 
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="ans.fhir.fr.tddui"/>
-  <language value="fr-FR"/>
+  <language value="fr"/>
   <text>
-    <status value="generated"/><div xml:lang="fr-FR" xmlns="http://www.w3.org/1999/xhtml" lang="fr-FR"><p class="res-header-id"><b>Narratif généré : ImplementationGuide ans.fhir.fr.tddui</b></p><a name="ans.fhir.fr.tddui"> </a><a name="hcans.fhir.fr.tddui"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Langue : fr-FR</p></div><h2>TDDUI</h2><p>L'URL officielle pour ce guide d'implémentation est : </p><pre>https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui</pre></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><p class="res-header-id"><b>Narratif généré : ImplementationGuide ans.fhir.fr.tddui</b></p><a name="ans.fhir.fr.tddui"> </a><a name="hcans.fhir.fr.tddui"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Langue : fr</p></div><h2>TDDUI</h2><p>L'URL officielle pour ce guide d'implémentation est : </p><pre>https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui</pre></div><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ImplementationGuide ans.fhir.fr.tddui</b></p><a name="en-ans.fhir.fr.tddui"> </a><a name="en-hcans.fhir.fr.tddui"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: fr</p></div><h2>TDDUI</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui</pre></div></div>
   </text>
   <url value="https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui"/>
   <version value="2.3.0"/>
   <name value="TDDUI"/>
   <title value="Médicosocial - Transfert de données DUI"/>
   <status value="active"/>
-  <date value="2026-06-17T09:02:27+00:00"/>
+  <date value="2026-06-17T09:20:14+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -95,10 +95,18 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
+        <valueString value="path-expansion-params"/>
+      </extension>
+      <extension url="value">
+        <valueString value="../../expansion-params.json"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
         <valueString value="i18n-default-lang"/>
       </extension>
       <extension url="value">
-        <valueString value="fr-FR"/>
+        <valueString value="fr"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -111,10 +119,18 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="path-expansion-params"/>
+        <valueString value="i18n-lang"/>
       </extension>
       <extension url="value">
-        <valueString value="../../expansion-params.json"/>
+        <valueString value="en"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="translation-sources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/translations/en"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -327,10 +343,18 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
+        <valueCode value="path-expansion-params"/>
+      </extension>
+      <extension url="value">
+        <valueString value="../../expansion-params.json"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
         <valueCode value="i18n-default-lang"/>
       </extension>
       <extension url="value">
-        <valueString value="fr-FR"/>
+        <valueString value="fr"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -343,10 +367,18 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueCode value="path-expansion-params"/>
+        <valueCode value="i18n-lang"/>
       </extension>
       <extension url="value">
-        <valueString value="../../expansion-params.json"/>
+        <valueString value="en"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="translation-sources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/translations/en"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -2365,6 +2397,14 @@
         </extension>
         <nameUrl value="changes.html"/>
         <title value="Historique des changements"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="translationinfo.html"/>
+        </extension>
+        <nameUrl value="translationinfo.html"/>
+        <title value="Informations sur la traduction"/>
         <generation value="markdown"/>
       </page>
     </page>

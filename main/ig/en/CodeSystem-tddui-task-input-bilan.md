@@ -1,0 +1,80 @@
+# TDDUI Task Input Bilan - Médicosocial - Transfert de données DUI v2.3.0
+
+## CodeSystem: TDDUI Task Input Bilan 
+
+ 
+CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour le bilan du projet personnalisé. 
+
+This Code system is referenced in the definition of the following value sets:
+
+* [TDDUITaskInputBilan](ValueSet-tddui-task-input-bilan.md)
+
+-------
+
+ [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "CodeSystem",
+  "id" : "tddui-task-input-bilan",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem"]
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-bilan",
+  "version" : "2.3.0",
+  "name" : "TDDUITaskInputBilan",
+  "title" : "TDDUI Task Input Bilan",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-06-17T09:20:14+00:00",
+  "publisher" : "ANS",
+  "contact" : [{
+    "name" : "ANS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour le bilan du projet personnalisé.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France (la)"
+    }]
+  }],
+  "caseSensitive" : true,
+  "compositional" : false,
+  "content" : "complete",
+  "count" : 6,
+  "concept" : [{
+    "code" : "perimetre",
+    "display" : "Périmètre du bilan."
+  },
+  {
+    "code" : "problematique",
+    "display" : "Problématique liée à l'usager."
+  },
+  {
+    "code" : "invite",
+    "display" : "Liste des personnes invitées à participer au bilan."
+  },
+  {
+    "code" : "dateProchainBilan",
+    "display" : "Date du prochain bilan."
+  },
+  {
+    "code" : "pieceJointe",
+    "display" : "Pièce jointe du moyen/ressource."
+  },
+  {
+    "code" : "synthesePreparationBilan",
+    "display" : "Préparation du bilan."
+  }]
+}
+
+```

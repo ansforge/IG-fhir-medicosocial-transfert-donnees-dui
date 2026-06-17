@@ -12,7 +12,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Terminology Server Report for TDDUI</h1>
- <p>Generated Wed Jun 17 09:08:01 UTC 2026, FHIR version 4.0.1 for ans.fhir.fr.tddui#2.3.0 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/tddui">https://interop.esante.gouv.fr/ig/fhir/tddui</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/tddui/history.html">history</a>))</p>
+ <p>Generated Wed Jun 17 09:28:44 UTC 2026, FHIR version 4.0.1 for ans.fhir.fr.tddui#2.3.0 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/tddui">https://interop.esante.gouv.fr/ig/fhir/tddui</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/tddui/history.html">history</a>))</p>
 <p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
 <h2>Terminology Parameters</h2>
 <ul>
@@ -53,6 +53,20 @@
     <td>null</td>
     <td>https://smt.esante.gouv.fr/terminologie-cim-10|2025-01-01</td>
     <td>[https://smt.esante.gouv.fr/terminologie-cim-10|2025-01-01]: authoritative = https://smt.esante.gouv.fr/fhir, candidates=</td>
+  </tr>
+  <tr>
+    <td>Use primary server for urn:ietf:bcp:13</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>urn:ietf:bcp:13</td>
+    <td>[urn:ietf:bcp:13]: authoritative = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|http://178.104.103.200/tx/r4|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4</td>
+  </tr>
+  <tr>
+    <td>Use primary server for urn:ietf:bcp:47</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>urn:ietf:bcp:47</td>
+    <td>[urn:ietf:bcp:47]: authoritative = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://178.104.103.200/tx/r4|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4|https://tx-nordics.fhir.org/fhir/r4</td>
   </tr>
   <tr>
     <td>Use primary server for urn:ietf:bcp:13</td>
@@ -127,7 +141,7 @@
   <tr>
     <td>Use primary server for urn:ietf:bcp:13</td>
     <td>https://tx.fhir.org/r4</td>
-    <td>urn:uuid:9c4fb8b2-3563-4dfe-821c-d9633fa7b7ac</td>
+    <td>urn:uuid:9156259c-b20e-4cc4-9276-3f92bdf6d601</td>
     <td>urn:ietf:bcp:13</td>
     <td>[urn:ietf:bcp:13]: authoritative = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|http://178.104.103.200/tx/r4|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4</td>
   </tr>
@@ -141,7 +155,7 @@
   <tr>
     <td>Use primary server for urn:ietf:bcp:13</td>
     <td>https://tx.fhir.org/r4</td>
-    <td>urn:uuid:660f3b2b-fd87-4df5-bee2-007fd5e050b7</td>
+    <td>urn:uuid:cc497122-b1ac-4ebd-a740-19202bf92b3c</td>
     <td>urn:ietf:bcp:13</td>
     <td>[urn:ietf:bcp:13]: authoritative = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|http://178.104.103.200/tx/r4|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4</td>
   </tr>
@@ -158,6 +172,13 @@
     <td>http://hl7.org/fhir/ValueSet/languages|4.0.1</td>
     <td>urn:ietf:bcp:47</td>
     <td>[urn:ietf:bcp:47]: authoritative = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://178.104.103.200/tx/r4|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4|https://tx-nordics.fhir.org/fhir/r4</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://unstats.un.org/unsd/methods/m49/m49.htm</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1</td>
+    <td>[http://unstats.un.org/unsd/methods/m49/m49.htm, urn:iso:std:iso:3166, urn:iso:std:iso:3166:-2]</td>
+    <td>[[http://unstats.un.org/unsd/methods/m49/m49.htm]: authoritative = , candidates=http://tx.fhir.org/r4, [urn:iso:std:iso:3166]: authoritative = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|http://178.104.103.200/tx/r4|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4|https://tx-nordics.fhir.org/fhir/r4, [urn:iso:std:iso:3166:-2]: authoritative = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|http://tx.hl7europe.eu/r4|https://tx.hl7chile.cl/r4|https://tx-nordics.fhir.org/fhir/r4]</td>
   </tr>
   <tr>
     <td>Found authoritative server http://tx.fhir.org/r4</td>
@@ -372,7 +393,7 @@
   <tr>
     <td>Use primary server for urn:iso:std:iso:4217</td>
     <td>https://tx.fhir.org/r4</td>
-    <td>urn:uuid:bc5252f2-21e7-41e6-becb-d8caf3b17bab</td>
+    <td>urn:uuid:0da34449-8a2a-4114-9160-177f4c3b54d6</td>
     <td>urn:iso:std:iso:4217</td>
     <td>[urn:iso:std:iso:4217]: authoritative = , candidates=http://tx.fhir.org/r4|http://178.104.103.200/tx/r4|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4</td>
   </tr>
@@ -393,7 +414,7 @@
   <tr>
     <td>Use primary server for urn:ietf:bcp:13</td>
     <td>https://tx.fhir.org/r4</td>
-    <td>urn:uuid:e4b6b30c-0b23-49a7-a5e5-ef17223b4674</td>
+    <td>urn:uuid:8afba7e0-908c-4f60-bc00-65d6de91925c</td>
     <td>urn:ietf:bcp:13</td>
     <td>[urn:ietf:bcp:13]: authoritative = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|http://178.104.103.200/tx/r4|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4</td>
   </tr>
@@ -536,7 +557,7 @@
 </table>
 <h2>Primary Server: https://tx.fhir.org/r4</h2>
 <a href="https://tx.fhir.org/r4"></a>
-<p>Use Count: 52. Code Systems used: </p>
+<p>Use Count: 55. Code Systems used: </p>
 <table class="grid">
   <tr>
     <th>
