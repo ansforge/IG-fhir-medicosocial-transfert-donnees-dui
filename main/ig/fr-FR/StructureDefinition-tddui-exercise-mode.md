@@ -63,7 +63,7 @@ Extension simple avec le type CodeableConcept : Extension permettant de représe
   "name" : "TDDUIExerciseMode",
   "title" : "TDDUI Exercise Mode",
   "status" : "active",
-  "date" : "2026-06-16T16:50:35+00:00",
+  "date" : "2026-06-17T09:02:27+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

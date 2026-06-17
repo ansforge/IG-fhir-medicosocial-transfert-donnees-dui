@@ -60,7 +60,7 @@ Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https:/
   "name" : "tddui-humanname",
   "title" : "TDDUI Human Name DataType",
   "status" : "active",
-  "date" : "2026-06-16T16:50:35+00:00",
+  "date" : "2026-06-17T09:02:27+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
