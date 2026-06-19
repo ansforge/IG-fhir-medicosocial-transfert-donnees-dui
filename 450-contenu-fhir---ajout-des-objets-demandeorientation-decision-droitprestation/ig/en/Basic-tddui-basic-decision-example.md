@@ -9,15 +9,15 @@ Profile: [TDDUI Basic Decision](StructureDefinition-tddui-basic-decision.md)
 > **url**categorieDroitPrestation
 **value**: Orientation scolaire
 > **url**typeDroitPrestation
-**value**: Orientation vers un Institut médico-éducatif (IME)
+**value**: Orientation vers un Etablissement d'accueil non médicalisé
 > **url**natureDroitPrestation
-**value**: Attribution
+**value**: Renouvellement
 > **url**dateOuverture
 **value**: 2020-01-01
 > **url**dateEcheance
 **value**: 2020-12-31
 > **url**existencePAG
-**value**: false**qualificationOrientation**: Cible**formation**: Formation pour la prestation**temporaliteAccueil**: Temporaire**precisionOrientation**: SESSAD polyvalent**structureAccueil**: [Organization Les Chênes Verts](Organization-tddui-organization-example.md)
+**value**: false**qualificationOrientation**: Cible**formation**: Formation pour la prestation**temporaliteAccueil**: Temporaire**structureAccueil**: [Organization Les Chênes Verts](Organization-tddui-organization-example.md)
 > **url**detailPrestation
 
 > **url**creton
@@ -81,7 +81,7 @@ Profile: [TDDUI Basic Decision](StructureDefinition-tddui-basic-decision.md)
           "valueCodeableConcept" : {
             "coding" : [{
               "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r420-droit-prestation",
-              "code" : "7.1"
+              "code" : "13.1"
             }]
           }
         },
@@ -90,7 +90,7 @@ Profile: [TDDUI Basic Decision](StructureDefinition-tddui-basic-decision.md)
           "valueCodeableConcept" : {
             "coding" : [{
               "system" : "https://mos.esante.gouv.fr/NOS/TRE_R327-TypeDecision/FHIR/TRE-R327-TypeDecision",
-              "code" : "1"
+              "code" : "6"
             }]
           }
         },
@@ -126,15 +126,6 @@ Profile: [TDDUI Basic Decision](StructureDefinition-tddui-basic-decision.md)
               "coding" : [{
                 "system" : "https://mos.esante.gouv.fr/NOS/TRE_R240-TemporaliteAccueil/FHIR/TRE-R240-TemporaliteAccueil",
                 "code" : "01"
-              }]
-            }
-          },
-          {
-            "url" : "precisionOrientation",
-            "valueCodeableConcept" : {
-              "coding" : [{
-                "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r426-orientation",
-                "code" : "1"
               }]
             }
           },
