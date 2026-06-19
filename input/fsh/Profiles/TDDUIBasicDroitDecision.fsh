@@ -11,11 +11,12 @@ Description: "Profil de la ressource Basic permettant de représenter la décisi
 * obeys PrecisionOrientationValues7.8
 * obeys PrecisionOrientationValues7.9
 * obeys PrecisionOrientationValues8.3
+* obeys PrecisionOrientationValues8.6
 * obeys cretonCardinality
 * obeys DateEffetClotureCardinality
 * obeys temporaliteAccueilCardinalityViaTypeDroitPrestation
 * obeys temporaliteAccueilCardinalityViaCategorieDroitPrestation
-
+* obeys PrecisionOrientationValues13.1-13.2
 
 * subject only Reference(TDDUIServiceRequestDemandeOrientation)
 
@@ -73,7 +74,7 @@ Description: "Profil de la ressource Basic permettant de représenter la décisi
 
 
 Invariant: motivationLocaleRequired
-Description: "La motivation locale doit être renseignée si la motivation de la décision est '9999 - Autre' (code de la nomenclature de référence jdv-j399-motivation-ms)."
+Description: "La motivation locale doit être renseignée si la motivation de la décision est '9999' (Autre)."
 Severity: #error
 Expression: "(extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.where(url='motivation').valueCodeableConcept.coding.code='215')
  implies ((extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.where(url='motivationLocale').valueString.exists()))"
@@ -84,80 +85,58 @@ Severity: #error
 Expression: "((extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.where(url='typeDecision').valueCodeableConcept.coding.code='1') and ((extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.where(url='droitPrestation').extension.where(url='natureDroitPrestation').valueCodeableConcept=6) or (extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.where(url='droitPrestation').extension.where(url='natureDroitPrestation').valueCodeableConcept=7))) implies (identifier.where(type.coding.code='IDDECISIONMAJ').exists())"
 
 Invariant: idDecisionMAJInterdiction
-Description: "l'idDecisionMAJ n'est pas à transmettre si typeDecision = '1' (Attribution) et DroitPrestation.natureDroit = '1' (Nouveau droit)"
+Description: "l'idDecisionMAJ n'est pas à transmettre si typeDecision = '1' (Attribution) et DroitPrestation.natureDroit = '1' (Attribution)"
 Severity: #error
 Expression: "((extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.where(url='typeDecision').valueCodeableConcept.coding.code='1') and (extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.where(url='droitPrestation').extension.where(url='natureDroitPrestation').valueCodeableConcept=1)) implies (identifier.where(type.coding.code='IDDECISIONMAJ').exists().not())"
  
 Invariant: FormationCardinality
-Description: "Formation est obligatoire si le type de droit et prestation est 11.1 (Orientation en Centre de rééducation professionnelle (CRP))."
+Description: "Formation est obligatoire si le type de droit et prestation est '11.1' (Orientation en Centre de rééducation professionnelle (CRP))."
 Severity: #error
 Expression: "(extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.where(url='droitPrestation').extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='11.1') implies (extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.where(url='droitPrestation').extension.where(url='detailPrestation').extension.where(url='formation').exists())"
 
 Invariant: PrecisionOrientationValues7.8
-Description: "Les valeurs de précision de l'orientation varient en fonction du type droit d'orientation
-7.8 Orientation vers un Service d'éducation spéciale et de soins à domicile (SESSAD) 	Jeu(x) de valeur(s) associé(s) : JDV-J408-ORIENTATION-MS
-Seuls les codes de 1 à 6 sont autorisés."
+Description: "Si typeDroitPrestation = '7.8' (Orientation vers un Service d'éducation spéciale et de soins à domicile (SESSAD)) alors precisionOrientation = '1' (SESSAD polyvalent) ou '6' (SESSAD pour troubles du langage et des apprentissages)."
 Severity: #error
 Expression: "(extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.where(url='droitPrestation').extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='7.8') implies ((extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.where(url='droitPrestation').extension.where(url='detailPrestation').extension.where(url='precisionOrientation').valueCodeableConcept.coding.code.toInteger()>=1) and (extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.where(url='droitPrestation').extension.where(url='detailPrestation').extension.where(url='precisionOrientation').valueCodeableConcept.coding.code.toInteger()<=6))"
 
 
 Invariant: PrecisionOrientationValues7.9
-Description: "Les valeurs de précision de l'orientation varient en fonction du type droit d'orientation
-7.9 Orientation vers un Service d'accompagnement familial et d'éducation précoce (SAFEP) 	Jeu(x) de valeur(s) associé(s) : JDV-J408-ORIENTATION-MS
-Seuls les codes 7 et 8 sont autorisés."
+Description: "Si typeDroitPrestation = '7.9' (Orientation vers un Service d'accompagnement familial et d'éducation précoce (SAFEP)) alors precisionOrientation = '7' (SAFEP déficience auditive) ou '8' (SAFEP déficience visuelle)."
 Severity: #error
 Expression: "(extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.where(url='droitPrestation').extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='7.9') implies ((extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.where(url='droitPrestation').extension.where(url='detailPrestation').extension.where(url='precisionOrientation').valueCodeableConcept.coding.code.toInteger()>=7) and (extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.where(url='droitPrestation').extension.where(url='detailPrestation').extension.where(url='precisionOrientation').valueCodeableConcept.coding.code.toInteger()<=8))"
 
-//Invariant: PrecisionOrientationValues
-//Description: "Les valeurs de précision de l'orientation varient en fonction du type droit d'orientation
-//13.1 Orientation vers un établissement d'accueil non médicalisé 	Non renseigné
-//13.2 Orientation vers un établissement d'accueil médicalisé en tout ou partie 	Non renseigné"
-//Severity: #error
-//Expression: "(Basic.extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.where(url='droitPrestation').extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='7.8') implies ((Basic.extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.where(url='droitPrestation').extension.where(url='detailPrestation').extension.where(url='precisionOrientation').valueCodeableConcept.coding.code.toInteger()>=1) and (Basic.extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.where(url='droitPrestation').extension.where(url='detailPrestation').extension.where(url='precisionOrientation').valueCodeableConcept.coding.code.toInteger()<=6))"
+Invariant: PrecisionOrientationValues13.1-13.2
+Description: "Si typeDroitPrestation = '13.1' (Orientation vers un établissement d'accueil non médicalisé) ou '13.2' (Orientation vers un établissement d'accueil médicalisé en tout ou partie) alors precisionOrientation est interdit"
+Severity: #error
+Expression: "((extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.where(url='droitPrestation').extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='13.1') or (extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.where(url='droitPrestation').extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='13.2')) implies (extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.where(url='droitPrestation').extension.where(url='detailPrestation').extension.where(url='precisionOrientation').exists().not())"
 
 Invariant: PrecisionOrientationValues8.3
-Description: "Les valeurs de précision de l'orientation varient en fonction du type droit d'orientation
-8.3 Orientation en Enseignement adapté (SEGPA/EREA) 	Jeu(x) de valeur(s) associé(s) : JDV-J408-ORIENTATION-MS
-Seuls les codes 9 et 10 sont autorisés."
+Description: "Si typeDroitPrestation = '8.3' (Orientation en Enseignement adapté (SEGPA/EREA)) alors precisionOrientation = '9' (Scolarisation en SEGPA (sections d’enseignement général et professionnel adapté)) ou '10' (Scolarisation en EREA (établissements régionaux d’enseignement adapté))."
 Severity: #error
 Expression: "(extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.where(url='droitPrestation').extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.3') implies ((extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.where(url='droitPrestation').extension.where(url='detailPrestation').extension.where(url='precisionOrientation').valueCodeableConcept.coding.code.toInteger()>=9) and (extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.where(url='droitPrestation').extension.where(url='detailPrestation').extension.where(url='precisionOrientation').valueCodeableConcept.coding.code.toInteger()<=10))"
 
 Invariant: PrecisionOrientationValues8.6
-Description: "Les valeurs de précision de l'orientation varient en fonction du type droit d'orientation
-8.6 Orientation en Unité d'enseignement 	Jeu(x) de valeur(s) associé(s) : JDV-J408-ORIENTATION-MS
-Seuls les codes UEA et UEM sont autorisés."
+Description: "Si typeDroitPrestation = '8.6' (Orientation en Unité d'enseignement) alors precisionOrientation = 'UEA' (Unité d'enseignement élémentaire autisme) ou 'UEM' (Unité d'enseignement en maternelle plan autisme)."
 Severity: #error
 Expression: "(extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.where(url='droitPrestation').extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.6') implies ((extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.where(url='droitPrestation').extension.where(url='detailPrestation').extension.where(url='precisionOrientation').valueCodeableConcept.coding.code='UEA') or (extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.where(url='droitPrestation').extension.where(url='detailPrestation').extension.where(url='precisionOrientation').valueCodeableConcept.coding.code='UEM'))"
 
 Invariant: DateEffetClotureCardinality
-Description: "Cet attribut est obligatoire pour les décisions de type 5 (Clôture de droit). "
+Description: "Si typeDecision = '5' (Clôture de droit) alors dateEffetCloture est obligatoire."
 Severity: #error
 Expression: "(extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.where(url='decision').extension.where(url='typeDecision').valueCodeableConcept.coding.code='5') implies ((extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.where(url='decision').extension.where(url='dateEffetCloture').exists()))"
 
 Invariant: temporaliteAccueilCardinalityViaCategorieDroitPrestation
-Description: "La temporalité d'accueil est transmise pour tous les droits pour lesquels elle est obligatoire.
-Pour les catégories de droit et prestation suivantes :
-
-    Orientation ESMS Enfants
-    Orientation ESMS Adultes
-"
+Description: "Si categorieDroitPrestation = '13' (Orientation ESMS Enfants) ou '7' (Orientation ESMS Adultes) alors la temporalité d'accueil est obligatoire."
 Severity: #error
 Expression: "((extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.extension.where(url='categorieDroitPrestation').valueCodeableConcept.coding.code='13') or (extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.extension.where(url='categorieDroitPrestation').valueCodeableConcept.coding.code='7')) implies (extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.where(url='droitPrestation').extension.where(url='detailPrestation').extension.where(url='temporaliteAccueil').exists())"
 
 Invariant: temporaliteAccueilCardinalityViaTypeDroitPrestation
-Description: "La temporalité d'accueil est transmise pour les types de droit et prestation suivants :
-
-    Orientation en Unité d'enseignement
-    Orientation vers une Scolarisation en milieu ordinaire à temps partagé (UE et établissement scolaire)
-    Orientation vers une Unité d'enseignement et une scolarisation en ULIS à temps partagé
-    Orientation vers une unité d'enseignement et une scolarisation en enseignement adapté à temps partagé
-
-"
+Description: "Si typeDroitPrestation = '8.6' (Orientation en Unité d'enseignement) ou '8.7' (Orientation vers une Scolarisation en milieu ordinaire à temps partagé) ou '8.8' (Orientation vers une Unité d'enseignement et une scolarisation en ULIS à temps partagé) ou '8.10' (Orientation vers une unité d'enseignement et une scolarisation en enseignement adapté à temps partagé) alors la temporalité d'accueil est obligatoire."
 Severity: #error
 Expression: "((extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.6') or (extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.7') or (extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.8') or (extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.10')) implies (extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.where(url='droitPrestation').extension.where(url='detailPrestation').extension.where(url='temporaliteAccueil').exists())"
 
 Invariant: cretonCardinality
-Description: "Obligatoire pour les décisions orientations ESSMS enfant"
+Description: "Si categorieDroitPrestation = '7' (ESSMS enfant) alors Creton est obligatoire"
 Severity: #error
 Expression: "((extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.extension.where(url='categorieDroitPrestation').valueCodeableConcept.coding.code='7') or (extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code.matches('^7[.][0-9]+$'))) implies (extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.extension.where(url='creton').exists())"
 
