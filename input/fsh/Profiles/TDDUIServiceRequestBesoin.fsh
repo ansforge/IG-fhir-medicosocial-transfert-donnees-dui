@@ -5,6 +5,7 @@ Title: "TDDUI ServiceRequest Besoin"
 Description: "Profil de la ressource ServiceRequest permettant de représenter les besoins de l'usager." 
 
 * identifier 1..*
+* identifier.type from TDDUIServiceRequestIdentifierBesoin (required)
 * identifier ^slicing.discriminator.type = #pattern
 * identifier ^slicing.discriminator.path = "type"
 * identifier ^slicing.rules = #open 

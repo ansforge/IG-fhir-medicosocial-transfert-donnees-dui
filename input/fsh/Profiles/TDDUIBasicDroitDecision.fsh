@@ -23,6 +23,8 @@ Description: "Profil de la ressource Basic permettant de représenter la décisi
 * code from TDDUIBasicType (required)
 * code = TDDUIBasicType#DECISION "Décision" 
 
+* identifier 1..*
+* identifier.type from TDDUIBasicDecisionIdentifier (required)
 * identifier ^slicing.discriminator.type = #pattern
 * identifier ^slicing.discriminator.path = "type"
 * identifier ^slicing.rules = #open

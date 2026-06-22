@@ -5,6 +5,7 @@ Title: "TDDUI ServiceRequest DemandeOrientation"
 Description: "Profil de la ressource ServiceRequest permettant de représenter la demande d'orientation adressée à la CDAPH." 
 
 * identifier 1..*
+* identifier.type from TDDUIServiceRequestIdentifierDemandeOrientation (required)
 * identifier ^slicing.discriminator.type = #pattern
 * identifier ^slicing.discriminator.path = "type"
 * identifier ^slicing.rules = #open 
