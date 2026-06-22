@@ -47,6 +47,7 @@ package IG #DDDDDD{
              Basic.extension:TDDUIDecision.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:priseCharge.extension:quantification.extension:frequencePriseCharge => <&plus>[None..None]
              Basic.identifier => [1..None]
              Basic.identifier.use => [None..None]
+             Basic.identifier.type => [None..None]
              Basic.identifier:idDecision => [1..1]
              Basic.identifier:idDecision.type => [1..None]
              Basic.identifier:idDecision.system => [1..None]
@@ -698,6 +699,7 @@ package IG #DDDDDD{
              ServiceRequest.extension => [None..None]
              ServiceRequest.extension:pieceJointeBesoin => <&plus>[0..*]
              ServiceRequest.identifier => [1..None]
+             ServiceRequest.identifier.type => [None..None]
              ServiceRequest.identifier:idBesoin => [1..1]
              ServiceRequest.identifier:idBesoin.type => [1..None]
              ServiceRequest.identifier:idBesoin.system => [1..None]
@@ -714,6 +716,7 @@ package IG #DDDDDD{
         class TDDUIServiceRequestDemandeOrientation{
 
              ServiceRequest.identifier => [1..None]
+             ServiceRequest.identifier.type => [None..None]
              ServiceRequest.identifier:idDemandeOrientation => [1..1]
              ServiceRequest.identifier:idDemandeOrientation.type => [1..None]
              ServiceRequest.identifier:idDemandeOrientation.system => [1..None]
@@ -1380,22 +1383,6 @@ package IG #DDDDDD{
 
      TDDUIBasicDecision -[#black,dotted,thickness=2]-> TDDUIBasicDecisionIdentifier
 
-        class TDDUIBasicDecisionIdentifier  
-
-     TDDUIBasicDecision -[#black,dotted,thickness=2]-> TDDUIBasicDecisionIdentifier
-
-        class TDDUIBasicDecisionIdentifier  
-
-     TDDUIBasicDecision -[#black,dotted,thickness=2]-> TDDUIBasicDecisionIdentifier
-
-        class TDDUIBasicDecisionIdentifier  
-
-     TDDUIBasicDecision -[#black,dotted,thickness=2]-> TDDUIBasicDecisionIdentifier
-
-        class TDDUIBasicDecisionIdentifier  
-
-     TDDUIBasicDecision -[#black,dotted,thickness=2]-> TDDUIBasicDecisionIdentifier
-
         class TDDUIBasicType  
 
      TDDUIBasicDecision -[#black,dotted,thickness=2]-> TDDUIBasicType
@@ -1495,6 +1482,14 @@ package IG #DDDDDD{
         class TDDUIContactProtectionJuridique  
 
      TDDUIRelatedPersonContact -[#black,dotted,thickness=2]-> TDDUIContactProtectionJuridique
+
+        class TDDUIServiceRequestIdentifierBesoin  
+
+     TDDUIServiceRequestBesoin -[#black,dotted,thickness=2]-> TDDUIServiceRequestIdentifierBesoin
+
+        class TDDUIServiceRequestIdentifierDemandeOrientation  
+
+     TDDUIServiceRequestDemandeOrientation -[#black,dotted,thickness=2]-> TDDUIServiceRequestIdentifierDemandeOrientation
 
         class TDDUIServiceRequestSupportingInfo  
 

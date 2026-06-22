@@ -7,7 +7,7 @@ ValueSet pour la définition des codes d'identifiant de demande d'orientation
 
  **References** 
 
-This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
+* [TDDUI ServiceRequest DemandeOrientation](StructureDefinition-tddui-service-request-demande-orientation.md)
 
 ### Logical Definition (CLD)
 
@@ -36,7 +36,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "TDDUI ServiceRequest DemandeOrientation Identifier",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-19T10:27:30+00:00",
+  "date" : "2026-06-22T09:32:11+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

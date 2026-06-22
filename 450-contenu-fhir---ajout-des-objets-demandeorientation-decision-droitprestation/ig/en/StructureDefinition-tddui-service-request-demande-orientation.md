@@ -35,7 +35,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-service-req
   "name" : "TDDUIServiceRequestDemandeOrientation",
   "title" : "TDDUI ServiceRequest DemandeOrientation",
   "status" : "active",
-  "date" : "2026-06-19T10:27:30+00:00",
+  "date" : "2026-06-22T09:32:11+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -112,6 +112,14 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-service-req
         "identity" : "specmetier-to-TDDUIServiceRequestDemandeOrientation",
         "map" : "idDemandeOrientation"
       }]
+    },
+    {
+      "id" : "ServiceRequest.identifier.type",
+      "path" : "ServiceRequest.identifier.type",
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-service-request-identifier-demande-orientation"
+      }
     },
     {
       "id" : "ServiceRequest.identifier:idDemandeOrientation",

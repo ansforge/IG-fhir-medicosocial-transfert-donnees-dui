@@ -34,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-basic-decis
   "name" : "TDDUIBasicDecision",
   "title" : "TDDUI Basic Decision",
   "status" : "active",
-  "date" : "2026-06-19T10:27:30+00:00",
+  "date" : "2026-06-22T09:32:11+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -520,6 +520,14 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-basic-decis
       "short" : "L'idDecision est défini comme la slice idDecision caractérisée par identifier.use = official."
     },
     {
+      "id" : "Basic.identifier.type",
+      "path" : "Basic.identifier.type",
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-basic-decision-identifier"
+      }
+    },
+    {
       "id" : "Basic.identifier:idDecision",
       "path" : "Basic.identifier",
       "sliceName" : "idDecision",
@@ -541,10 +549,6 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-basic-decis
           "code" : "IDDECISION",
           "display" : "Identifiant principal de la décision"
         }]
-      },
-      "binding" : {
-        "strength" : "required",
-        "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-basic-decision-identifier"
       }
     },
     {
@@ -580,10 +584,6 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-basic-decis
           "code" : "IDDECISIONMAJ",
           "display" : "Identifiant révisé de la décision"
         }]
-      },
-      "binding" : {
-        "strength" : "required",
-        "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-basic-decision-identifier"
       }
     },
     {
@@ -619,10 +619,6 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-basic-decis
           "code" : "NUMENREG",
           "display" : "Numéro enregistrement de la décision"
         }]
-      },
-      "binding" : {
-        "strength" : "required",
-        "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-basic-decision-identifier"
       }
     },
     {
@@ -658,10 +654,6 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-basic-decis
           "code" : "IDNATDECISION",
           "display" : "Identifiant national de la décision"
         }]
-      },
-      "binding" : {
-        "strength" : "required",
-        "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-basic-decision-identifier"
       }
     },
     {
@@ -697,10 +689,6 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-basic-decis
           "code" : "NUMALLOC",
           "display" : "Numéro allocataire"
         }]
-      },
-      "binding" : {
-        "strength" : "required",
-        "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-basic-decision-identifier"
       }
     },
     {
