@@ -5,6 +5,7 @@ Title: "TDDUI Observation Repas"
 Description: "Profil de la ressource Observation permettant de représenter si l'usager bénéficie ou non des repas."
 
 * identifier 1..*
+* identifier.type from TDDUIObservationIdentifierRepas (required)
 * identifier ^slicing.discriminator.type = #pattern
 * identifier ^slicing.discriminator.path = "type"
 * identifier ^slicing.rules = #open 

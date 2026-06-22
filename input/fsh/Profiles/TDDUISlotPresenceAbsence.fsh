@@ -10,6 +10,7 @@ Description: "Profil de la ressource FRCoreSlotProfile permettant de représente
 * identifier ^slicing.discriminator.type = #pattern
 * identifier ^slicing.discriminator.path = "type"
 * identifier ^slicing.rules = #open
+* identifier.type from TDDUISlotIdentifierPresenceAbsence (required)
 
 * identifier contains
     idPA 1..1 
@@ -42,12 +43,12 @@ Description: "Profil de la ressource FRCoreSlotProfile permettant de représente
 * appointmentType from jdv-j406-motif-absence-ms
 
 Invariant: motifAbsenceCardinality
-Description: "Cet attribut est obligatoire pour les typePresenceAbsence=Absence"
+Description: "motifAbsence est obligatoire pour les typePresenceAbsence=Absence"
 Severity: #error
 Expression: "(serviceType.coding.code='2') implies (appointmentType.exists())"
 
 Invariant: absencePrevueCardinality
-Description: "Cet attribut est obligatoire pour les typePresenceAbsence=Absence"
+Description: "absencePrevue est obligatoire pour les typePresenceAbsence=Absence"
 Severity: #error
 Expression: "(serviceType.coding.code='2') implies (extension.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-planned-absence').exists())"
 
