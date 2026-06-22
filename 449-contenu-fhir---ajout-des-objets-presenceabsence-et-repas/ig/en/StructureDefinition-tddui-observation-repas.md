@@ -34,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-observation
   "name" : "TDDUIObservationRepas",
   "title" : "TDDUI Observation Repas",
   "status" : "active",
-  "date" : "2026-06-16T13:10:49+00:00",
+  "date" : "2026-06-22T08:40:39+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -141,6 +141,14 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-observation
         "rules" : "open"
       },
       "min" : 1
+    },
+    {
+      "id" : "Observation.identifier.type",
+      "path" : "Observation.identifier.type",
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-observation-identifier-repas"
+      }
     },
     {
       "id" : "Observation.identifier:idRepas",

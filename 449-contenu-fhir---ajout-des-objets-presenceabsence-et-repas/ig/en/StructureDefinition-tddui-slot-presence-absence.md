@@ -34,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-slot-presen
   "name" : "TDDUISlotPresenceAbsence",
   "title" : "TDDUI Slot Presence Absence",
   "status" : "active",
-  "date" : "2026-06-16T13:10:49+00:00",
+  "date" : "2026-06-22T08:40:39+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -84,14 +84,14 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-slot-presen
       "constraint" : [{
         "key" : "motifAbsenceCardinality",
         "severity" : "error",
-        "human" : "Cet attribut est obligatoire pour les typePresenceAbsence=Absence",
+        "human" : "motifAbsence est obligatoire pour les typePresenceAbsence=Absence",
         "expression" : "(serviceType.coding.code='2') implies (appointmentType.exists())",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-slot-presence-absence"
       },
       {
         "key" : "absencePrevueCardinality",
         "severity" : "error",
-        "human" : "Cet attribut est obligatoire pour les typePresenceAbsence=Absence",
+        "human" : "absencePrevue est obligatoire pour les typePresenceAbsence=Absence",
         "expression" : "(serviceType.coding.code='2') implies (extension.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-planned-absence').exists())",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-slot-presence-absence"
       }],
@@ -163,6 +163,14 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-slot-presen
         "rules" : "open"
       },
       "min" : 1
+    },
+    {
+      "id" : "Slot.identifier.type",
+      "path" : "Slot.identifier.type",
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-slot-identifier-presence-absence"
+      }
     },
     {
       "id" : "Slot.identifier:idPA",

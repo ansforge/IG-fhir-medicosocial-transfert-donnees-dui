@@ -7,7 +7,7 @@ ValueSet pour la définition des codes d'identifiant du repas
 
  **References** 
 
-This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
+* [TDDUI Observation Repas](StructureDefinition-tddui-observation-repas.md)
 
 ### Logical Definition (CLD)
 
@@ -36,7 +36,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "TDDUI Observation Repas Identifier",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-16T13:10:49+00:00",
+  "date" : "2026-06-22T08:40:39+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

@@ -416,6 +416,7 @@ package IG #DDDDDD{
              Observation.extension => [1..None]
              Observation.extension:TDDUIParticipantPresent => <&plus>[1..1]
              Observation.identifier => [1..None]
+             Observation.identifier.type => [None..None]
              Observation.identifier:idRepas => [1..1]
              Observation.identifier:idRepas.type => [1..None]
              Observation.identifier:idRepas.system => [1..None]
@@ -678,6 +679,7 @@ package IG #DDDDDD{
              Slot.extension:TDDUIPlannedAbsence => <&plus>[0..1]
              Slot.extension:TDDUIFacturation => <&plus>[0..1]
              Slot.identifier => [1..None]
+             Slot.identifier.type => [None..None]
              Slot.identifier:idPA => [1..1]
              Slot.identifier:idPA.type => [1..None]
              Slot.identifier:idPA.system => [1..None]
@@ -1272,6 +1274,10 @@ package IG #DDDDDD{
 
      TDDUIObservationPeriodeScolaire -[#black,dotted,thickness=2]-> TDDUIObservationPeriodeScolaire
 
+        class TDDUIObservationIdentifierRepas  
+
+     TDDUIObservationRepas -[#black,dotted,thickness=2]-> TDDUIObservationIdentifierRepas
+
         class TDDUIPatientIdentifier  
 
      TDDUIPatientINS -[#black,dotted,thickness=2]-> TDDUIPatientIdentifier
@@ -1291,6 +1297,10 @@ package IG #DDDDDD{
         class TDDUIContactProtectionJuridique  
 
      TDDUIRelatedPersonContact -[#black,dotted,thickness=2]-> TDDUIContactProtectionJuridique
+
+        class TDDUISlotIdentifierPresenceAbsence  
+
+     TDDUISlotPresenceAbsence -[#black,dotted,thickness=2]-> TDDUISlotIdentifierPresenceAbsence
 
         class TDDUITaskInputAction  
 
