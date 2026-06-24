@@ -42,7 +42,7 @@ Id:       specmetier-to-TDDUIServiceRequestBesoin
 Title:    "Modèle de contenu DUI"
 * -> "Besoin"
 
-* identifier -> "idBesoin"
+* identifier[idBesoin] -> "idBesoin"
 * category -> "typeBesoin"
 * code.text -> "descriptionBesoin"
 * orderDetail.text -> "analyseProfessionnelBesoin"

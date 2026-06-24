@@ -18,7 +18,7 @@ object "**TDDUICarePlanProjetPersonnalise**" as TDDUICarePlanProjetPersonnalise_
 
 map "**Besoin : TDDUIServiceRequestBesoin**" as Besoin #fccde5 {
     pieceJointeBesoin => <&plus> pieceJointeBesoin
-    idBesoin => identifier
+    idBesoin => identifier:idBesoin
     typeBesoin => category
     code *--> code
     orderDetail *-> orderDetail

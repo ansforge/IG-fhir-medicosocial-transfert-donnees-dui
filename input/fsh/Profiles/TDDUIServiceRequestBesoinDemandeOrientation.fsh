@@ -67,7 +67,7 @@ Id:       specmetier-to-TDDUIServiceRequestDemandeOrientation
 Title:    "Modèle de contenu DUI"
 * -> "DemandeOrientation"
 
-* identifier -> "idDemandeOrientation"
+* identifier[idDemandeOrientation] -> "idDemandeOrientation"
 * category -> "typeDemande"
 * code -> "natureDemande"
 * supportingInfo[demandeOrientation] -> "demandeOrientation"
