@@ -37,7 +37,7 @@ ValueSet pour la définition des codes d'identifiant de l'usager
   "title" : "TDDUI Patient Identifier",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-22T08:40:39+00:00",
+  "date" : "2026-06-24T07:42:34+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
