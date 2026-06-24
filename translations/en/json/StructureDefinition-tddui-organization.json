@@ -1,0 +1,79 @@
+{
+  "id" : "StructureDefinition-tddui-organization",
+  "baseLang" : "fr",
+  "languages" : [{
+    "targetLang" : "en",
+    "entries" : [{
+      "id" : "StructureDefinition.name",
+      "context" : "A natural language name identifying the structure definition. This name should be usable as an identifier for the module by machine processing applications such as code generation.",
+      "source" : "TDDUIOrganization",
+      "target" : "TDDUIOrganization"
+    },
+    {
+      "id" : "StructureDefinition.title",
+      "context" : "A short, descriptive, user-friendly title for the structure definition.",
+      "source" : "TDDUI Organization",
+      "target" : "TDDUI Organization"
+    },
+    {
+      "id" : "StructureDefinition.publisher",
+      "context" : "The name of the organization or individual responsible for the release and ongoing maintenance of the structure definition.",
+      "source" : "ANS",
+      "target" : "ANS"
+    },
+    {
+      "id" : "StructureDefinition.contact.name",
+      "context" : "The name of an individual to contact.",
+      "source" : "ANS",
+      "target" : "ANS"
+    },
+    {
+      "id" : "StructureDefinition.mapping.specmetier-to-TDDUIOrganization/name",
+      "context" : "A name for the specification that is being mapped to.",
+      "source" : "Modèle de contenu DUI",
+      "target" : "Modèle de contenu DUI"
+    },
+    {
+      "id" : "StructureDefinition.mapping.v2/name",
+      "context" : "A name for the specification that is being mapped to.",
+      "source" : "HL7 v2 Mapping",
+      "target" : "HL7 v2 Mapping"
+    },
+    {
+      "id" : "StructureDefinition.mapping.rim/name",
+      "context" : "A name for the specification that is being mapped to.",
+      "source" : "RIM Mapping",
+      "target" : "RIM Mapping"
+    },
+    {
+      "id" : "StructureDefinition.mapping.servd/name",
+      "context" : "A name for the specification that is being mapped to.",
+      "source" : "ServD",
+      "target" : "ServD"
+    },
+    {
+      "id" : "StructureDefinition.mapping.w5/name",
+      "context" : "A name for the specification that is being mapped to.",
+      "source" : "FiveWs Pattern Mapping",
+      "target" : "FiveWs Pattern Mapping"
+    },
+    {
+      "id" : "StructureDefinition.element.Organization/mapping/specmetier-to-TDDUIOrganization/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "EntiteJuridique",
+      "target" : "EntiteJuridique"
+    },
+    {
+      "id" : "StructureDefinition.element.Organization.identifier:idNatSt/mapping/specmetier-to-TDDUIOrganization/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "idNat_Struct",
+      "target" : "idNat_Struct"
+    },
+    {
+      "id" : "StructureDefinition.element.Organization.name/mapping/specmetier-to-TDDUIOrganization/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "raisonSocial",
+      "target" : "raisonSocial"
+    }]
+  }]
+}

@@ -1,0 +1,151 @@
+{
+  "id" : "StructureDefinition-tddui-related-person-contact",
+  "baseLang" : "fr",
+  "languages" : [{
+    "targetLang" : "en",
+    "entries" : [{
+      "id" : "StructureDefinition.name",
+      "context" : "A natural language name identifying the structure definition. This name should be usable as an identifier for the module by machine processing applications such as code generation.",
+      "source" : "TDDUIRelatedPersonContact",
+      "target" : "TDDUIRelatedPersonContact"
+    },
+    {
+      "id" : "StructureDefinition.title",
+      "context" : "A short, descriptive, user-friendly title for the structure definition.",
+      "source" : "TDDUI RelatedPerson Contact",
+      "target" : "TDDUI RelatedPerson Contact"
+    },
+    {
+      "id" : "StructureDefinition.publisher",
+      "context" : "The name of the organization or individual responsible for the release and ongoing maintenance of the structure definition.",
+      "source" : "ANS",
+      "target" : "ANS"
+    },
+    {
+      "id" : "StructureDefinition.contact.name",
+      "context" : "The name of an individual to contact.",
+      "source" : "ANS",
+      "target" : "ANS"
+    },
+    {
+      "id" : "StructureDefinition.mapping.specmetier-to-TDDUIRelatedPersonContact/name",
+      "context" : "A name for the specification that is being mapped to.",
+      "source" : "Modèle de contenu DUI",
+      "target" : "Modèle de contenu DUI"
+    },
+    {
+      "id" : "StructureDefinition.mapping.rim/name",
+      "context" : "A name for the specification that is being mapped to.",
+      "source" : "RIM Mapping",
+      "target" : "RIM Mapping"
+    },
+    {
+      "id" : "StructureDefinition.mapping.w5/name",
+      "context" : "A name for the specification that is being mapped to.",
+      "source" : "FiveWs Pattern Mapping",
+      "target" : "FiveWs Pattern Mapping"
+    },
+    {
+      "id" : "StructureDefinition.mapping.v2/name",
+      "context" : "A name for the specification that is being mapped to.",
+      "source" : "HL7 v2 Mapping",
+      "target" : "HL7 v2 Mapping"
+    },
+    {
+      "id" : "StructureDefinition.element.RelatedPerson/mapping/specmetier-to-TDDUIRelatedPersonContact/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "ContactPersonnePhysique",
+      "target" : "ContactPersonnePhysique"
+    },
+    {
+      "id" : "StructureDefinition.element.RelatedPerson.extension:nationality/mapping/specmetier-to-TDDUIRelatedPersonContact/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "paysNationalite",
+      "target" : "paysNationalite"
+    },
+    {
+      "id" : "StructureDefinition.element.RelatedPerson.extension:comment/mapping/specmetier-to-TDDUIRelatedPersonContact/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "commentaire",
+      "target" : "commentaire"
+    },
+    {
+      "id" : "StructureDefinition.element.RelatedPerson.extension:description/mapping/specmetier-to-TDDUIRelatedPersonContact/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "description",
+      "target" : "description"
+    },
+    {
+      "id" : "StructureDefinition.element.RelatedPerson.identifier/mapping/specmetier-to-TDDUIRelatedPersonContact/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "identifiantPP",
+      "target" : "identifiantPP"
+    },
+    {
+      "id" : "StructureDefinition.element.RelatedPerson.relationship:Role/mapping/specmetier-to-TDDUIRelatedPersonContact/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "role",
+      "target" : "role"
+    },
+    {
+      "id" : "StructureDefinition.element.RelatedPerson.relationship:RelationType/mapping/specmetier-to-TDDUIRelatedPersonContact/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "relation",
+      "target" : "relation"
+    },
+    {
+      "id" : "StructureDefinition.element.RelatedPerson.relationship:LegalProtection/mapping/specmetier-to-TDDUIRelatedPersonContact/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "relation",
+      "target" : "relation"
+    },
+    {
+      "id" : "StructureDefinition.element.RelatedPerson.name.family/mapping/specmetier-to-TDDUIRelatedPersonContact/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "nomNaissance",
+      "target" : "nomNaissance"
+    },
+    {
+      "id" : "StructureDefinition.element.RelatedPerson.name.given/mapping/specmetier-to-TDDUIRelatedPersonContact/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "prenom",
+      "target" : "prenom"
+    },
+    {
+      "id" : "StructureDefinition.element.RelatedPerson.name.prefix/mapping/specmetier-to-TDDUIRelatedPersonContact/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "civilite",
+      "target" : "civilite"
+    },
+    {
+      "id" : "StructureDefinition.element.RelatedPerson.telecom/mapping/specmetier-to-TDDUIRelatedPersonContact/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "telecommunication",
+      "target" : "telecommunication"
+    },
+    {
+      "id" : "StructureDefinition.element.RelatedPerson.gender/short",
+      "context" : "A concise description of what this element means (e.g. for use in autogenerated summaries).",
+      "source" : "male | female | unknown",
+      "target" : "male | female | unknown"
+    },
+    {
+      "id" : "StructureDefinition.element.RelatedPerson.gender/mapping/specmetier-to-TDDUIRelatedPersonContact/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "sexe",
+      "target" : "sexe"
+    },
+    {
+      "id" : "StructureDefinition.element.RelatedPerson.birthDate/mapping/specmetier-to-TDDUIRelatedPersonContact/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "dateNaissance",
+      "target" : "dateNaissance"
+    },
+    {
+      "id" : "StructureDefinition.element.RelatedPerson.address/mapping/specmetier-to-TDDUIRelatedPersonContact/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "adresse",
+      "target" : "adresse"
+    }]
+  }]
+}

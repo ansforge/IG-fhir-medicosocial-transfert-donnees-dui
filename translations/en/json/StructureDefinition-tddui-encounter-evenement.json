@@ -1,0 +1,409 @@
+{
+  "id" : "StructureDefinition-tddui-encounter-evenement",
+  "baseLang" : "fr",
+  "languages" : [{
+    "targetLang" : "en",
+    "entries" : [{
+      "id" : "StructureDefinition.name",
+      "context" : "A natural language name identifying the structure definition. This name should be usable as an identifier for the module by machine processing applications such as code generation.",
+      "source" : "TDDUIEncounterEvenement",
+      "target" : "TDDUIEncounterEvenement"
+    },
+    {
+      "id" : "StructureDefinition.title",
+      "context" : "A short, descriptive, user-friendly title for the structure definition.",
+      "source" : "TDDUI Encounter Evenement",
+      "target" : "TDDUI Encounter Evenement"
+    },
+    {
+      "id" : "StructureDefinition.publisher",
+      "context" : "The name of the organization or individual responsible for the release and ongoing maintenance of the structure definition.",
+      "source" : "ANS",
+      "target" : "ANS"
+    },
+    {
+      "id" : "StructureDefinition.contact.name",
+      "context" : "The name of an individual to contact.",
+      "source" : "ANS",
+      "target" : "ANS"
+    },
+    {
+      "id" : "StructureDefinition.purpose",
+      "context" : "Explanation of why this structure definition is needed and why it has been designed as it has.",
+      "source" : "> **Note** : Le profil TDDUIEncounterEvenement n'hérite pas du profil FRCoreEncounterProfile à cause de l'interdiction de véhiculer plusieurs types d'évènements. Cependant, le profil TDDUIEncounterEvenement suit les contraintes du profil FRCoreEncounterProfile excepté la contrainte sur la cardinalité de l'élément type (0..1).",
+      "target" : "> **Note** : Le profil TDDUIEncounterEvenement n'hérite pas du profil FRCoreEncounterProfile à cause de l'interdiction de véhiculer plusieurs types d'évènements. Cependant, le profil TDDUIEncounterEvenement suit les contraintes du profil FRCoreEncounterProfile excepté la contrainte sur la cardinalité de l'élément type (0..1)."
+    },
+    {
+      "id" : "StructureDefinition.mapping.specmetier-to-TDDUIEncounterEvenement/name",
+      "context" : "A name for the specification that is being mapped to.",
+      "source" : "Modèle de contenu DUI",
+      "target" : "Modèle de contenu DUI"
+    },
+    {
+      "id" : "StructureDefinition.mapping.workflow/name",
+      "context" : "A name for the specification that is being mapped to.",
+      "source" : "Workflow Pattern",
+      "target" : "Workflow Pattern"
+    },
+    {
+      "id" : "StructureDefinition.mapping.rim/name",
+      "context" : "A name for the specification that is being mapped to.",
+      "source" : "RIM Mapping",
+      "target" : "RIM Mapping"
+    },
+    {
+      "id" : "StructureDefinition.mapping.w5/name",
+      "context" : "A name for the specification that is being mapped to.",
+      "source" : "FiveWs Pattern Mapping",
+      "target" : "FiveWs Pattern Mapping"
+    },
+    {
+      "id" : "StructureDefinition.mapping.v2/name",
+      "context" : "A name for the specification that is being mapped to.",
+      "source" : "HL7 v2 Mapping",
+      "target" : "HL7 v2 Mapping"
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter/constraint",
+      "context" : "Text that can be used to describe the constraint in messages identifying that the constraint has been violated.",
+      "source" : "Le slice TDDUIMaterialDetail est utilisé uniquement lorsque le slice TDDUIRessourceType prend la valeur ORG-206.",
+      "target" : "Le slice TDDUIMaterialDetail est utilisé uniquement lorsque le slice TDDUIRessourceType prend la valeur ORG-206."
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter/constraint",
+      "context" : "Text that can be used to describe the constraint in messages identifying that the constraint has been violated.",
+      "source" : "Le slice TDDUIFacilityResource est utilisé uniquement lorsque le slice TDDUIRessourceType prend la valeur ORG-207.",
+      "target" : "Le slice TDDUIFacilityResource est utilisé uniquement lorsque le slice TDDUIRessourceType prend la valeur ORG-207."
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter/mapping/specmetier-to-TDDUIEncounterEvenement/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "Événement",
+      "target" : "Événement"
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.meta.lastUpdated/mapping/specmetier-to-TDDUIEncounterEvenement/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "dateModificationEvenement, Statut.dateStatut",
+      "target" : "dateModificationEvenement, Statut.dateStatut"
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.extension:TDDUIRessourcesUsed/short",
+      "context" : "A concise description of what this element means (e.g. for use in autogenerated summaries).",
+      "source" : "Ressources utilisées lors de l’évènement.",
+      "target" : "Ressources utilisées lors de l’évènement."
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.extension:TDDUIRessourcesUsed/mapping/specmetier-to-TDDUIEncounterEvenement/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "RessourceUtilisee",
+      "target" : "RessourceUtilisee"
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.extension:TDDUIRessourcesUsed.extension:TDDUIRessourceType/mapping/specmetier-to-TDDUIEncounterEvenement/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "typeRessourceUtilisee",
+      "target" : "typeRessourceUtilisee"
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.extension:TDDUIRessourcesUsed.extension:TDDUIMaterialDetail/mapping/specmetier-to-TDDUIEncounterEvenement/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "detailTypeRessourceUtilisee",
+      "target" : "detailTypeRessourceUtilisee"
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.extension:TDDUIRessourcesUsed.extension:TDDUIFacilityResource/mapping/specmetier-to-TDDUIEncounterEvenement/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "detailTypeRessourceUtilisee",
+      "target" : "detailTypeRessourceUtilisee"
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.extension:TDDUIEventLabel/short",
+      "context" : "A concise description of what this element means (e.g. for use in autogenerated summaries).",
+      "source" : "Titre donné à l’évènement par la structure.",
+      "target" : "Titre donné à l’évènement par la structure."
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.extension:TDDUIEventLabel/mapping/specmetier-to-TDDUIEncounterEvenement/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "libelleEvenement",
+      "target" : "libelleEvenement"
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.extension:TDDUIComment/short",
+      "context" : "A concise description of what this element means (e.g. for use in autogenerated summaries).",
+      "source" : "Commentaires sur le déroulé de l'évènement.",
+      "target" : "Commentaires sur le déroulé de l'évènement."
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.extension:TDDUIComment/mapping/specmetier-to-TDDUIEncounterEvenement/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "commentaireEvenement",
+      "target" : "commentaireEvenement"
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.extension:TDDUIEventReport/short",
+      "context" : "A concise description of what this element means (e.g. for use in autogenerated summaries).",
+      "source" : "Zone de texte liée à l’événement pour compte rendu des actions réalisées.",
+      "target" : "Zone de texte liée à l’événement pour compte rendu des actions réalisées."
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.extension:TDDUIEventReport/mapping/specmetier-to-TDDUIEncounterEvenement/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "compteRenduEvenement",
+      "target" : "compteRenduEvenement"
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.extension:TDDUIAttachment/short",
+      "context" : "A concise description of what this element means (e.g. for use in autogenerated summaries).",
+      "source" : "Pièces jointes liées à l’événement.",
+      "target" : "Pièces jointes liées à l’événement."
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.extension:TDDUIAttachment/mapping/specmetier-to-TDDUIEncounterEvenement/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "pieceJointeEvenement",
+      "target" : "pieceJointeEvenement"
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.extension:TDDUIEventOutsideService/short",
+      "context" : "A concise description of what this element means (e.g. for use in autogenerated summaries).",
+      "source" : "Evénement hors prestation prévue dans le projet personnalisé de l’usager.",
+      "target" : "Evénement hors prestation prévue dans le projet personnalisé de l’usager."
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.extension:TDDUIEventOutsideService/mapping/specmetier-to-TDDUIEncounterEvenement/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "evenementHorsPrestation",
+      "target" : "evenementHorsPrestation"
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.extension:TDDUIEventReason/short",
+      "context" : "A concise description of what this element means (e.g. for use in autogenerated summaries).",
+      "source" : "Contexte justifiant la réalisation de l’évènement.",
+      "target" : "Contexte justifiant la réalisation de l’évènement."
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.extension:TDDUIEventReason/mapping/specmetier-to-TDDUIEncounterEvenement/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "motifEvenement",
+      "target" : "motifEvenement"
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.extension:TDDUIPatientPresent/short",
+      "context" : "A concise description of what this element means (e.g. for use in autogenerated summaries).",
+      "source" : "Evènement nécessitant ou non la présence physique de l’usager.",
+      "target" : "Evènement nécessitant ou non la présence physique de l’usager."
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.extension:TDDUIPatientPresent/mapping/specmetier-to-TDDUIEncounterEvenement/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "usagerPresent",
+      "target" : "usagerPresent"
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.extension:TDDUIMeal/short",
+      "context" : "A concise description of what this element means (e.g. for use in autogenerated summaries).",
+      "source" : "Repas du professionnel prévu dans le cadre de l'événement.",
+      "target" : "Repas du professionnel prévu dans le cadre de l'événement."
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.extension:TDDUIMeal/mapping/specmetier-to-TDDUIEncounterEvenement/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "repas",
+      "target" : "repas"
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.extension:TDDUIPatientValidation/short",
+      "context" : "A concise description of what this element means (e.g. for use in autogenerated summaries).",
+      "source" : "Validation par l'usager que l'événement a eu lieu.",
+      "target" : "Validation par l'usager que l'événement a eu lieu."
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.extension:TDDUIPatientValidation/mapping/specmetier-to-TDDUIEncounterEvenement/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "validationUsager",
+      "target" : "validationUsager"
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.identifier/short",
+      "context" : "A concise description of what this element means (e.g. for use in autogenerated summaries).",
+      "source" : "Identifiant de l'évènement",
+      "target" : "Identifiant de l'évènement"
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.identifier/definition",
+      "context" : "Provides a complete explanation of the meaning of the data element for human readability.  For the case of elements derived from existing elements (e.g. constraints), the definition SHALL be consistent with the base definition, but convey the meaning of the element in the particular context of use of the resource. (Note: The text you are reading is specified in ElementDefinition.definition).",
+      "source" : "Identifier(s) by which this encounter is known.Cet élément est multiévalué (pour ne pas bloquer les implémentations, car il arrive sur le terrain qu'il y ait plusieurs id pour une même admission, mais cette situation est considérée comme une anomalie)",
+      "target" : "Identifier(s) by which this encounter is known.Cet élément est multiévalué (pour ne pas bloquer les implémentations, car il arrive sur le terrain qu'il y ait plusieurs id pour une même admission, mais cette situation est considérée comme une anomalie)"
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.identifier/mapping/specmetier-to-TDDUIEncounterEvenement/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "idEvenement",
+      "target" : "idEvenement"
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.identifier.type/definition",
+      "context" : "Provides a complete explanation of the meaning of the data element for human readability.  For the case of elements derived from existing elements (e.g. constraints), the definition SHALL be consistent with the base definition, but convey the meaning of the element in the particular context of use of the resource. (Note: The text you are reading is specified in ElementDefinition.definition).",
+      "source" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose | Type d'identifiant (admission ou de mouvement lors d'une hospitalisation) (JdV à définir)",
+      "target" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose | Type d'identifiant (admission ou de mouvement lors d'une hospitalisation) (JdV à définir)"
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.identifier.system/definition",
+      "context" : "Provides a complete explanation of the meaning of the data element for human readability.  For the case of elements derived from existing elements (e.g. constraints), the definition SHALL be consistent with the base definition, but convey the meaning of the element in the particular context of use of the resource. (Note: The text you are reading is specified in ElementDefinition.definition).",
+      "source" : "Establishes the namespace for the value - that is, a URL that describes a set values that are unique.\r\nLe namespace est défini à partir de la racine d'identification (gérée par l'ANS) de l'organisation où a lieu la rencontre, concaténée avec par exemple le FINESS de l'établissent (ou FINEJ ou SIRET ou SIREN), cf annexe française des types de données HL7 en France.",
+      "target" : "Establishes the namespace for the value - that is, a URL that describes a set values that are unique.\r\nLe namespace est défini à partir de la racine d'identification (gérée par l'ANS) de l'organisation où a lieu la rencontre, concaténée avec par exemple le FINESS de l'établissent (ou FINEJ ou SIRET ou SIREN), cf annexe française des types de données HL7 en France."
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.status/short",
+      "context" : "A concise description of what this element means (e.g. for use in autogenerated summaries).",
+      "source" : "Correspondance des statuts métier avec les codes FHIR : Planifié → planned, Validé → triaged, Réalisé → finished, Annulé → cancelled.",
+      "target" : "Correspondance des statuts métier avec les codes FHIR : Planifié → planned, Validé → triaged, Réalisé → finished, Annulé → cancelled."
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.status/mapping/specmetier-to-TDDUIEncounterEvenement/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "Statut.statut",
+      "target" : "Statut.statut"
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.status.extension:TDDUIEventCancelReason/short",
+      "context" : "A concise description of what this element means (e.g. for use in autogenerated summaries).",
+      "source" : "Motif associé au statut de non-réalisation de l’évènement.",
+      "target" : "Motif associé au statut de non-réalisation de l’évènement."
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.status.extension:TDDUIEventCancelReason/mapping/specmetier-to-TDDUIEncounterEvenement/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "Statut.motifNonRealisation",
+      "target" : "Statut.motifNonRealisation"
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.status.extension:TDDUIStatusAuthor/short",
+      "context" : "A concise description of what this element means (e.g. for use in autogenerated summaries).",
+      "source" : "Le professionnel ayant effectué la dernière modification du statut associé à la ressource.",
+      "target" : "Le professionnel ayant effectué la dernière modification du statut associé à la ressource."
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.status.extension:TDDUIStatusAuthor/mapping/specmetier-to-TDDUIEncounterEvenement/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "Statut.auteur",
+      "target" : "Statut.auteur"
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.type/mapping/specmetier-to-TDDUIEncounterEvenement/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "typeEvenement",
+      "target" : "typeEvenement"
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.type:ssiad/short",
+      "context" : "A concise description of what this element means (e.g. for use in autogenerated summaries).",
+      "source" : "Type d'évènement SSIAD.",
+      "target" : "Type d'évènement SSIAD."
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.type:serafin/short",
+      "context" : "A concise description of what this element means (e.g. for use in autogenerated summaries).",
+      "source" : "Type d'évènement Serafin correspondant aux familles 2-PrestationDirecte et 3-PrestationIndirecte.",
+      "target" : "Type d'évènement Serafin correspondant aux familles 2-PrestationDirecte et 3-PrestationIndirecte."
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.type:text/short",
+      "context" : "A concise description of what this element means (e.g. for use in autogenerated summaries).",
+      "source" : "Texte non structuré véhiculant les autres types d’évènements.",
+      "target" : "Texte non structuré véhiculant les autres types d’évènements."
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.subject/mapping/specmetier-to-TDDUIEncounterEvenement/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "Usager",
+      "target" : "Usager"
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.participant/short",
+      "context" : "A concise description of what this element means (e.g. for use in autogenerated summaries).",
+      "source" : "List of participants involved in the encounter | Liste des personnes impliquées dans la rencontre",
+      "target" : "List of participants involved in the encounter | Liste des personnes impliquées dans la rencontre"
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.participant.extension:TDDUIParticipantPresent/short",
+      "context" : "A concise description of what this element means (e.g. for use in autogenerated summaries).",
+      "source" : "Indique la présence du participant lors de l'événement.",
+      "target" : "Indique la présence du participant lors de l'événement."
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.participant.extension:TDDUIParticipantPresent/mapping/specmetier-to-TDDUIEncounterEvenement/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "Participant.presenceParticipant",
+      "target" : "Participant.presenceParticipant"
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.participant.individual/mapping/specmetier-to-TDDUIEncounterEvenement/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "Participant.Professionnel",
+      "target" : "Participant.Professionnel"
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.period.start/mapping/specmetier-to-TDDUIEncounterEvenement/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "dateDebutEvenement",
+      "target" : "dateDebutEvenement"
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.period.end/mapping/specmetier-to-TDDUIEncounterEvenement/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "dateFinEvenement",
+      "target" : "dateFinEvenement"
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.hospitalization.preAdmissionIdentifier/short",
+      "context" : "A concise description of what this element means (e.g. for use in autogenerated summaries).",
+      "source" : "Pre-admission identifier | Identifiant de pré-admission",
+      "target" : "Pre-admission identifier | Identifiant de pré-admission"
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.hospitalization.preAdmissionIdentifier.system/definition",
+      "context" : "Provides a complete explanation of the meaning of the data element for human readability.  For the case of elements derived from existing elements (e.g. constraints), the definition SHALL be consistent with the base definition, but convey the meaning of the element in the particular context of use of the resource. (Note: The text you are reading is specified in ElementDefinition.definition).",
+      "source" : "Establishes the namespace for the value - that is, a URL that describes a set values that are unique.\r\nLe namespace est défini à partir de la racine d'identification (gérée par l'ANS) de l'organisation où a lieu la rencontre , concaténée avec par exemple le FINESS de l'établissent (ou FINEJ ou SIRET ou SIREN), cf annexe française des types de données HL7 en France",
+      "target" : "Establishes the namespace for the value - that is, a URL that describes a set values that are unique.\r\nLe namespace est défini à partir de la racine d'identification (gérée par l'ANS) de l'organisation où a lieu la rencontre , concaténée avec par exemple le FINESS de l'établissent (ou FINEJ ou SIRET ou SIREN), cf annexe française des types de données HL7 en France"
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.hospitalization.reAdmission/short",
+      "context" : "A concise description of what this element means (e.g. for use in autogenerated summaries).",
+      "source" : "the resaon of re-admission of this hospitalization encounter | Raison de la ré-admission du patient.",
+      "target" : "the resaon of re-admission of this hospitalization encounter | Raison de la ré-admission du patient."
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.location/mapping/specmetier-to-TDDUIEncounterEvenement/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "lieuEvenement",
+      "target" : "lieuEvenement"
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.serviceProvider/mapping/specmetier-to-TDDUIEncounterEvenement/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "Participant.structureEnCharge",
+      "target" : "Participant.structureEnCharge"
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.serviceProvider.extension:TDDUIParticipantPresent/short",
+      "context" : "A concise description of what this element means (e.g. for use in autogenerated summaries).",
+      "source" : "Indique la présence de la structure lors de l'événement.",
+      "target" : "Indique la présence de la structure lors de l'événement."
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.serviceProvider.extension:TDDUIParticipantPresent/mapping/specmetier-to-TDDUIEncounterEvenement/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "Participant.presenceParticipant",
+      "target" : "Participant.presenceParticipant"
+    },
+    {
+      "id" : "StructureDefinition.element.Encounter.partOf/mapping/specmetier-to-TDDUIEncounterEvenement/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "sejour",
+      "target" : "sejour"
+    }]
+  }]
+}

@@ -1,0 +1,193 @@
+{
+  "id" : "StructureDefinition-tddui-task-transport",
+  "baseLang" : "fr",
+  "languages" : [{
+    "targetLang" : "en",
+    "entries" : [{
+      "id" : "StructureDefinition.name",
+      "context" : "A natural language name identifying the structure definition. This name should be usable as an identifier for the module by machine processing applications such as code generation.",
+      "source" : "TDDUITaskTransport",
+      "target" : "TDDUITaskTransport"
+    },
+    {
+      "id" : "StructureDefinition.title",
+      "context" : "A short, descriptive, user-friendly title for the structure definition.",
+      "source" : "TDDUI Task Transport",
+      "target" : "TDDUI Task Transport"
+    },
+    {
+      "id" : "StructureDefinition.publisher",
+      "context" : "The name of the organization or individual responsible for the release and ongoing maintenance of the structure definition.",
+      "source" : "ANS",
+      "target" : "ANS"
+    },
+    {
+      "id" : "StructureDefinition.contact.name",
+      "context" : "The name of an individual to contact.",
+      "source" : "ANS",
+      "target" : "ANS"
+    },
+    {
+      "id" : "StructureDefinition.purpose",
+      "context" : "Explanation of why this structure definition is needed and why it has been designed as it has.",
+      "source" : "> **Note** : La ressource Task en FHIR R4 est utilisée pour représenter le Transport. Lors d'une montée de version vers FHIR R5, il conviendra d'utiliser la ressource Transport.",
+      "target" : "> **Note** : La ressource Task en FHIR R4 est utilisée pour représenter le Transport. Lors d'une montée de version vers FHIR R5, il conviendra d'utiliser la ressource Transport."
+    },
+    {
+      "id" : "StructureDefinition.mapping.specmetier-to-TDDUITaskTransport/name",
+      "context" : "A name for the specification that is being mapped to.",
+      "source" : "Modèle de contenu DUI",
+      "target" : "Modèle de contenu DUI"
+    },
+    {
+      "id" : "StructureDefinition.mapping.workflow/name",
+      "context" : "A name for the specification that is being mapped to.",
+      "source" : "Workflow Pattern",
+      "target" : "Workflow Pattern"
+    },
+    {
+      "id" : "StructureDefinition.mapping.rim/name",
+      "context" : "A name for the specification that is being mapped to.",
+      "source" : "RIM Mapping",
+      "target" : "RIM Mapping"
+    },
+    {
+      "id" : "StructureDefinition.mapping.w5/name",
+      "context" : "A name for the specification that is being mapped to.",
+      "source" : "FiveWs Pattern Mapping",
+      "target" : "FiveWs Pattern Mapping"
+    },
+    {
+      "id" : "StructureDefinition.mapping.v2/name",
+      "context" : "A name for the specification that is being mapped to.",
+      "source" : "HL7 v2 Mapping",
+      "target" : "HL7 v2 Mapping"
+    },
+    {
+      "id" : "StructureDefinition.element.Task/mapping/specmetier-to-TDDUITaskTransport/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "Transport",
+      "target" : "Transport"
+    },
+    {
+      "id" : "StructureDefinition.element.Task.identifier/mapping/specmetier-to-TDDUITaskTransport/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "idTrajet",
+      "target" : "idTrajet"
+    },
+    {
+      "id" : "StructureDefinition.element.Task.code/mapping/specmetier-to-TDDUITaskTransport/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "typeTransport",
+      "target" : "typeTransport"
+    },
+    {
+      "id" : "StructureDefinition.element.Task.encounter/mapping/specmetier-to-TDDUITaskTransport/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "Evenement",
+      "target" : "Evenement"
+    },
+    {
+      "id" : "StructureDefinition.element.Task.executionPeriod.start/mapping/specmetier-to-TDDUITaskTransport/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "dateDebutTransport",
+      "target" : "dateDebutTransport"
+    },
+    {
+      "id" : "StructureDefinition.element.Task.executionPeriod.end/mapping/specmetier-to-TDDUITaskTransport/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "dateFinTransport",
+      "target" : "dateFinTransport"
+    },
+    {
+      "id" : "StructureDefinition.element.Task.owner/mapping/specmetier-to-TDDUITaskTransport/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "transporteur",
+      "target" : "transporteur"
+    },
+    {
+      "id" : "StructureDefinition.element.Task.input:typeMotorisation/short",
+      "context" : "A concise description of what this element means (e.g. for use in autogenerated summaries).",
+      "source" : "Type de motorisation",
+      "target" : "Type de motorisation"
+    },
+    {
+      "id" : "StructureDefinition.element.Task.input:typeMotorisation/mapping/specmetier-to-TDDUITaskTransport/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "typeMotorisation",
+      "target" : "typeMotorisation"
+    },
+    {
+      "id" : "StructureDefinition.element.Task.input:adresseDepart/short",
+      "context" : "A concise description of what this element means (e.g. for use in autogenerated summaries).",
+      "source" : "Adresse de départ",
+      "target" : "Adresse de départ"
+    },
+    {
+      "id" : "StructureDefinition.element.Task.input:adresseDepart/mapping/specmetier-to-TDDUITaskTransport/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "adresseDepart",
+      "target" : "adresseDepart"
+    },
+    {
+      "id" : "StructureDefinition.element.Task.input:adresseDestination/short",
+      "context" : "A concise description of what this element means (e.g. for use in autogenerated summaries).",
+      "source" : "Adresse de destination",
+      "target" : "Adresse de destination"
+    },
+    {
+      "id" : "StructureDefinition.element.Task.input:adresseDestination/mapping/specmetier-to-TDDUITaskTransport/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "adresseDestination",
+      "target" : "adresseDestination"
+    },
+    {
+      "id" : "StructureDefinition.element.Task.input:budgetPrevisionnel/short",
+      "context" : "A concise description of what this element means (e.g. for use in autogenerated summaries).",
+      "source" : "Budget prévisionnel",
+      "target" : "Budget prévisionnel"
+    },
+    {
+      "id" : "StructureDefinition.element.Task.input:budgetPrevisionnel/mapping/specmetier-to-TDDUITaskTransport/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "budgetPrevisionnel",
+      "target" : "budgetPrevisionnel"
+    },
+    {
+      "id" : "StructureDefinition.element.Task.input:budgetReel/short",
+      "context" : "A concise description of what this element means (e.g. for use in autogenerated summaries).",
+      "source" : "Budget réel",
+      "target" : "Budget réel"
+    },
+    {
+      "id" : "StructureDefinition.element.Task.input:budgetReel/mapping/specmetier-to-TDDUITaskTransport/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "budgetReel",
+      "target" : "budgetReel"
+    },
+    {
+      "id" : "StructureDefinition.element.Task.input:distance/short",
+      "context" : "A concise description of what this element means (e.g. for use in autogenerated summaries).",
+      "source" : "Distance du trajet",
+      "target" : "Distance du trajet"
+    },
+    {
+      "id" : "StructureDefinition.element.Task.input:distance/mapping/specmetier-to-TDDUITaskTransport/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "distance",
+      "target" : "distance"
+    },
+    {
+      "id" : "StructureDefinition.element.Task.input:dureeTheorique/short",
+      "context" : "A concise description of what this element means (e.g. for use in autogenerated summaries).",
+      "source" : "Durée théorique du trajet",
+      "target" : "Durée théorique du trajet"
+    },
+    {
+      "id" : "StructureDefinition.element.Task.input:dureeTheorique/mapping/specmetier-to-TDDUITaskTransport/map",
+      "context" : "Expresses what part of the target specification corresponds to this element.",
+      "source" : "dureeTheorique",
+      "target" : "dureeTheorique"
+    }]
+  }]
+}
