@@ -32,7 +32,7 @@ Description: "Profil de la ressource Basic permettant de représenter la décisi
 
 * identifier[idDecisionMAJ].type from TDDUIBasicDecisionIdentifier (required)
 * identifier[idDecisionMAJ].type = TDDUIBasicDecisionIdentifier#IDDECISIONMAJ "Identifiant révisé de la décision"
-* identifier[idDecisionMAJ] ^short = "Identifiant révisé de la décision"
+* identifier[idDecisionMAJ] ^short = "Identifiants de la ou des décisions révisées ou renouvelées à l'origine du droit ou identifiant de la décision clôturée (concerne une seule décision) en cas de clôture de droit."
 * identifier[idDecisionMAJ].system 1..1
 * identifier[idDecisionMAJ].system ^short = "oid de la MDPH"
 * identifier[idDecisionMAJ].value 1..1
