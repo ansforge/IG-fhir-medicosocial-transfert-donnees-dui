@@ -1,0 +1,58 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "tddui-care-plan-supporting-info",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ValueSet tddui-care-plan-supporting-info</b></p><a name=\"en-tddui-care-plan-supporting-info\"> </a><a name=\"en-hctddui-care-plan-supporting-info\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/R4/shareablevalueset.html\">Shareable ValueSet</a></p></div><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-tddui-discriminator.html\">TDDUI Discriminator</a></li></ul><p>This value set excludes codes based on the following rules:</p><ul><li>Exclude these codes as defined in <a href=\"CodeSystem-tddui-discriminator.html\"><code>https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;2.3.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-tddui-discriminator.html#tddui-discriminator-titreObjectif\">titreObjectif</a></td><td style=\"color: #cccccc\">Titre de l'objectif</td></tr><tr><td><a href=\"CodeSystem-tddui-discriminator.html#tddui-discriminator-avisUsagerObjectif\">avisUsagerObjectif</a></td><td style=\"color: #cccccc\">Avis de l'usager sur l'objectif</td></tr><tr><td><a href=\"CodeSystem-tddui-discriminator.html#tddui-discriminator-strategieMiseEnOeuvreObjectif\">strategieMiseEnOeuvreObjectif</a></td><td style=\"color: #cccccc\">Stratégie de mise en œuvre de l'objectif</td></tr><tr><td><a href=\"CodeSystem-tddui-discriminator.html#tddui-discriminator-origineAttente\">origineAttente</a></td><td style=\"color: #cccccc\">Acteur (personne physique ou personne morale) qui a un lien avec l'usager ou l'usager elle-même qui définit son attente.</td></tr><tr><td><a href=\"CodeSystem-tddui-discriminator.html#tddui-discriminator-commentaireAttente\">commentaireAttente</a></td><td style=\"color: #cccccc\">Permet de compléter ou éclairer la description de l'attente.</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-care-plan-supporting-info",
+  "version" : "2.3.0",
+  "name" : "TDDUICarePlanSupportingInfo",
+  "title" : "TDDUI CarePlan supportingInfo",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-06-24T10:23:01+00:00",
+  "publisher" : "ANS",
+  "contact" : [{
+    "name" : "ANS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "ValueSet définissant les types de notes pour l'élément CarePlan.supportingInfo.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France (la)"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-discriminator"]
+    }],
+    "exclude" : [{
+      "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-discriminator",
+      "concept" : [{
+        "code" : "titreObjectif"
+      },
+      {
+        "code" : "avisUsagerObjectif"
+      },
+      {
+        "code" : "strategieMiseEnOeuvreObjectif"
+      },
+      {
+        "code" : "origineAttente"
+      },
+      {
+        "code" : "commentaireAttente"
+      }]
+    }]
+  }
+}
