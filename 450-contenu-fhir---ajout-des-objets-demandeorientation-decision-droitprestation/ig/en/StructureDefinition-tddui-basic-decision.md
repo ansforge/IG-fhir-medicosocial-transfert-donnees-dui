@@ -34,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-basic-decis
   "name" : "TDDUIBasicDecision",
   "title" : "TDDUI Basic Decision",
   "status" : "active",
-  "date" : "2026-06-24T09:36:36+00:00",
+  "date" : "2026-06-24T12:11:25+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -475,7 +475,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-basic-decis
       "id" : "Basic.identifier:idDecisionMAJ",
       "path" : "Basic.identifier",
       "sliceName" : "idDecisionMAJ",
-      "short" : "Identifiant révisé de la décision",
+      "short" : "Identifiants de la ou des décisions révisées ou renouvelées à l'origine du droit ou identifiant de la décision clôturée (concerne une seule décision) en cas de clôture de droit.",
       "min" : 0,
       "max" : "*",
       "mapping" : [{
