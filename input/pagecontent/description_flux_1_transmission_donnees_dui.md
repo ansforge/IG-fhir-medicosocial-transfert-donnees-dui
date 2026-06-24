@@ -45,6 +45,7 @@ Les différentes ressources sont véhiculées via l'élément : Bundle.entry. Le
 * [TDDUIObservationRepas](StructureDefinition-tddui-observation-repas.html) représentant le fait que l’usager bénéficie ou non des repas.
 * [TDDUISchedule](StructureDefinition-tddui-schedule.html) représentant l'ensemble des présences et absences de l'usager.
 * [TDDUISlotPresenceAbsence](StructureDefinition-tddui-slot-presence-absence.html) représentant les présences et absences de l'usager.
+* [TDDUIGoalProjetVie](StructureDefinition-tddui-goal-projet-vie.html) représentant le projet de vie de l'usager.
 
 Pour toutes ces ressources, seule la création est possible via l'intéraction FHIR <a href="https://hl7.org/fhir/R4/http.html#create">Create</a>.
 

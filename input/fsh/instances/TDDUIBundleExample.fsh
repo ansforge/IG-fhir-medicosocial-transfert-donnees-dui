@@ -60,3 +60,7 @@ Usage: #example
 * entry[DUISlotPresenceAbsence].resource = tddui-slot-presence-absence-example
 * entry[DUISlotPresenceAbsence].request.method = #POST
 * entry[DUISlotPresenceAbsence].request.url = "TDDUISlotPresenceAbsence"
+* entry[DUIGoalProjetVie].fullUrl = "https://test-server.fr/Goal/tddui-goal-projet-vie-example"
+* entry[DUIGoalProjetVie].resource = tddui-goal-projet-vie-example
+* entry[DUIGoalProjetVie].request.method = #POST
+* entry[DUIGoalProjetVie].request.url = "TDDUIGoalProjetVie"

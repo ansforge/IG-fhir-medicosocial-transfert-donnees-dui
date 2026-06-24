@@ -68,6 +68,7 @@ Usage: #definition
 * rest.resource[10].type = #Goal
 * rest.resource[=].supportedProfile[0] = Canonical(tddui-goal-attente)
 * rest.resource[=].supportedProfile[+] = Canonical(tddui-goal-objectif)
+* rest.resource[=].supportedProfile[+] = Canonical(tddui-goal-projet-vie)
 * rest.resource[=].interaction[0].code = #create
 
 * rest.resource[11].type = #ServiceRequest

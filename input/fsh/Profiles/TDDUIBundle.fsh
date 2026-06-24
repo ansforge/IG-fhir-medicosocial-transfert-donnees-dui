@@ -38,6 +38,9 @@ Description: "Profil générique créé pour transmettre des données d'un logic
     DUIObservationRepas 0..* and
     DUISchedule 0..* and
     DUISlotPresenceAbsence 0..*
+    DUIObservationMobiliteUsager 0..* and 
+    DUIGoalProjetVie 0..*
+
 
 * entry[DUIPatient].resource only TDDUIPatient
 * entry[DUIPatient] ^short = "Patient conforming to the TDDUIPatient profile, used to convey patients without an INS identity."
@@ -200,3 +203,8 @@ Description: "Profil générique créé pour transmettre des données d'un logic
 * entry[DUISlotPresenceAbsence].resource 1..1
 * entry[DUISlotPresenceAbsence].request 1..1
 * entry[DUISlotPresenceAbsence].request.method = #POST
+* entry[DUIGoalProjetVie].resource only TDDUIGoalProjetVie
+* entry[DUIGoalProjetVie] ^short = "Goal conforming to the TDDUIGoalProjetVie profile, used to convey the life project."
+* entry[DUIGoalProjetVie].resource 1..1
+* entry[DUIGoalProjetVie].request 1..1
+* entry[DUIGoalProjetVie].request.method = #POST
