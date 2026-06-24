@@ -1,9 +1,9 @@
 TDDUI : Validation Results
 =========================================
 
-err = 134, warn = 275, info = 137
+err = 136, warn = 275, info = 137
 IG Publisher Version: 2.2.9
-Generated Wed Jun 24 12:17:32 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.tddui#2.3.0-ballot (canonical = https://interop.esante.gouv.fr/ig/fhir/tddui)
+Generated Wed Jun 24 12:22:43 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.tddui#2.3.0-ballot (canonical = https://interop.esante.gouv.fr/ig/fhir/tddui)
  Build Errors : 22 / 6 / 0
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Basic-tddui-basic-decision-example : 0 / 2 / 5
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Bundle-tddui-bundle-example : 0 / 10 / 39
@@ -72,7 +72,7 @@ Generated Wed Jun 24 12:17:32 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.tddui
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-admission-date : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-assessment-method : 0 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-attachment : 0 / 0 / 1
- /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-basic-decision : 0 / 6 / 4
+ /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-basic-decision : 2 / 6 / 4
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-birth-order : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-bundle : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/StructureDefinition-tddui-careplan-projet-personnalise : 0 / 0 / 4
@@ -563,6 +563,8 @@ WARNING: StructureDefinition/tddui-basic-decision: StructureDefinition.snapshot.
 WARNING: StructureDefinition/tddui-basic-decision: StructureDefinition.snapshot.element[220].short: value should not start or finish with whitespace ' Identifiant technique unique de la décision attribué par ViaTrajectoire'
 WARNING: StructureDefinition/tddui-basic-decision: StructureDefinition.differential.element[52].short: value should not start or finish with whitespace ' Identifiant technique unique de la décision attribué par ViaTrajectoire'
 INFORMATION: StructureDefinition/tddui-basic-decision: StructureDefinition.differential.element[37].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+ERROR: StructureDefinition/tddui-basic-decision: StructureDefinition.snapshot.element[0].constraint[5]: Error in constraint 'idDecisionMAJCardinality' with expression '((extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.where(url='typeDecision').valueCodeableConcept.coding.code='1') and ((extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.where(url='droitPrestation').extension.where(url='natureDroitPrestation').valueCodeableConcept=6) or (extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.where(url='droitPrestation').extension.where(url='natureDroitPrestation').valueCodeableConcept=7))) implies (identifier.where(type.coding.code='IDDECISIONMAJ').exists())': Error evaluating FHIRPath expression: The name 'valueCodeableConcept' is not valid for any of the possible types: [http://hl7.org/fhir/StructureDefinition/Extension] (@char 152)
+ERROR: StructureDefinition/tddui-basic-decision: StructureDefinition.snapshot.element[0].constraint[6]: Error in constraint 'idDecisionMAJInterdiction' with expression '((extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.where(url='typeDecision').valueCodeableConcept.coding.code='1') and (extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.extension.where(url='droitPrestation').extension.where(url='natureDroitPrestation').valueCodeableConcept=1)) implies (identifier.where(type.coding.code='IDDECISIONMAJ').exists().not())': Error evaluating FHIRPath expression: The name 'valueCodeableConcept' is not valid for any of the possible types: [http://hl7.org/fhir/StructureDefinition/Extension] (@char 152)
 INFORMATION: StructureDefinition/tddui-basic-decision: StructureDefinition.snapshot.element[184].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 == fsh-generated/resources/StructureDefinition-tddui-birth-order.json ==
 == fsh-generated/resources/StructureDefinition-tddui-bundle.json ==
