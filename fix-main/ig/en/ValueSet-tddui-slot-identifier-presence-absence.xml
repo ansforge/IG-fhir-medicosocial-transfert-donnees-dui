@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="tddui-slot-identifier-presence-absence"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ValueSet tddui-slot-identifier-presence-absence</b></p><a name="en-tddui-slot-identifier-presence-absence"> </a><a name="en-hctddui-slot-identifier-presence-absence"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/R4/shareablevalueset.html">Shareable ValueSet</a></p></div><ul><li>Include these codes as defined in <a href="CodeSystem-tddui-slot-identifier.html"><code>https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-slot-identifier</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;2.3.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-tddui-slot-identifier.html#tddui-slot-identifier-PA">PA</a></td><td style="color: #cccccc">Patient identifier</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-slot-identifier-presence-absence"/>
+  <version value="2.3.0"/>
+  <name value="TDDUISlotIdentifierPresenceAbsence"/>
+  <title value="TDDUI Slot Identifier Presence Absence"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-06-24T12:28:11+00:00"/>
+  <publisher value="ANS"/>
+  <contact>
+    <name value="ANS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <description value="ValueSet définissant les types d'identifiants pour la ressource SlotPresenceAbsence."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="France (la)"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-slot-identifier"/>
+      <concept>
+        <code value="PA"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>
