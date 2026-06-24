@@ -19,7 +19,7 @@
   fhir:name [ fhir:v "TDDUIServiceRequestDemandeOrientation"] ; # 
   fhir:title [ fhir:v "TDDUI ServiceRequest DemandeOrientation"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-06-22T09:32:11+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-06-24T08:54:25+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -501,9 +501,6 @@
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "specmetier-to-TDDUIServiceRequestDemandeOrientation" ] ;
-         fhir:map [ fhir:v "idDemandeOrientation" ]
-       ] [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Request.identifier" ]
        ] [
@@ -902,6 +899,9 @@
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUIServiceRequestDemandeOrientation" ] ;
+         fhir:map [ fhir:v "idDemandeOrientation" ]
+       ] [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Request.identifier" ]
        ] [
@@ -5279,11 +5279,7 @@
          ] ) ;
          fhir:rules [ fhir:v "open" ]
        ] ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:mapping ( [
-         fhir:identity [ fhir:v "specmetier-to-TDDUIServiceRequestDemandeOrientation" ] ;
-         fhir:map [ fhir:v "idDemandeOrientation" ]
-       ] )
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ]
      ] [
        fhir:id [ fhir:v "ServiceRequest.identifier.type" ] ;
        fhir:path [ fhir:v "ServiceRequest.identifier.type" ] ;
@@ -5299,7 +5295,11 @@
        fhir:path [ fhir:v "ServiceRequest.identifier" ] ;
        fhir:sliceName [ fhir:v "idDemandeOrientation" ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ]
+       fhir:max [ fhir:v "1" ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "specmetier-to-TDDUIServiceRequestDemandeOrientation" ] ;
+         fhir:map [ fhir:v "idDemandeOrientation" ]
+       ] )
      ] [
        fhir:id [ fhir:v "ServiceRequest.identifier:idDemandeOrientation.type" ] ;
        fhir:path [ fhir:v "ServiceRequest.identifier.type" ] ;

@@ -32,7 +32,7 @@
   <name value="TDDUIServiceRequestBesoin"/>
   <title value="TDDUI ServiceRequest Besoin"/>
   <status value="active"/>
-  <date value="2026-06-22T09:32:11+00:00"/>
+  <date value="2026-06-24T08:54:25+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -506,10 +506,6 @@
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
-        <identity value="specmetier-to-TDDUIServiceRequestBesoin"/>
-        <map value="idBesoin"/>
-      </mapping>
-      <mapping>
         <identity value="workflow"/>
         <map value="Request.identifier"/>
       </mapping>
@@ -873,6 +869,10 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="true"/>
+      <mapping>
+        <identity value="specmetier-to-TDDUIServiceRequestBesoin"/>
+        <map value="idBesoin"/>
+      </mapping>
       <mapping>
         <identity value="workflow"/>
         <map value="Request.identifier"/>
@@ -3202,10 +3202,6 @@
         <rules value="open"/>
       </slicing>
       <min value="1"/>
-      <mapping>
-        <identity value="specmetier-to-TDDUIServiceRequestBesoin"/>
-        <map value="idBesoin"/>
-      </mapping>
     </element>
     <element id="ServiceRequest.identifier.type">
       <path value="ServiceRequest.identifier.type"/>
@@ -3220,6 +3216,10 @@
       <short value="Identifiant du besoin"/>
       <min value="1"/>
       <max value="1"/>
+      <mapping>
+        <identity value="specmetier-to-TDDUIServiceRequestBesoin"/>
+        <map value="idBesoin"/>
+      </mapping>
     </element>
     <element id="ServiceRequest.identifier:idBesoin.type">
       <path value="ServiceRequest.identifier.type"/>

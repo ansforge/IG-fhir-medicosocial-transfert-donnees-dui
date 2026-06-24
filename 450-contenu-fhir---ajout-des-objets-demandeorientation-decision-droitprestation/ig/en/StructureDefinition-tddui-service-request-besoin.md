@@ -35,7 +35,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-service-req
   "name" : "TDDUIServiceRequestBesoin",
   "title" : "TDDUI ServiceRequest Besoin",
   "status" : "active",
-  "date" : "2026-06-22T09:32:11+00:00",
+  "date" : "2026-06-24T08:54:25+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -134,11 +134,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-service-req
         }],
         "rules" : "open"
       },
-      "min" : 1,
-      "mapping" : [{
-        "identity" : "specmetier-to-TDDUIServiceRequestBesoin",
-        "map" : "idBesoin"
-      }]
+      "min" : 1
     },
     {
       "id" : "ServiceRequest.identifier.type",
@@ -154,7 +150,11 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-service-req
       "sliceName" : "idBesoin",
       "short" : "Identifiant du besoin",
       "min" : 1,
-      "max" : "1"
+      "max" : "1",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIServiceRequestBesoin",
+        "map" : "idBesoin"
+      }]
     },
     {
       "id" : "ServiceRequest.identifier:idBesoin.type",
