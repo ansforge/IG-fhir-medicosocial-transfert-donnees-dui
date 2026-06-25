@@ -42,4 +42,4 @@ Usage: #example
 
 * extension[TDDUIDecision].extension[droitPrestation].extension[creton].valueBoolean = true
 
-//* extension[TDDUIDecision].extension[motivationLocale].valueString = "Motivation locale pour la décision"
+* extension[TDDUIDecision].extension[motivationLocale].valueString = "Motivation locale pour la décision"
