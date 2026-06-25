@@ -194,7 +194,7 @@ Context: Basic
 Invariant: motivationLocaleRequired
 Description: "La motivation locale doit être renseignée si la motivation de la décision est '9999' (Autre)."
 Severity: #error
-Expression: "(where(url='motivation').valueCodeableConcept.coding.code='9999') implies ((where(url='motivationLocale').valueString.exists()))"
+Expression: "extension.where(url='motivation').valueCodeableConcept.coding.where(code='9999').exists() implies extension.where(url='motivationLocale').valueString.exists()"
 
 Invariant: FormationCardinality
 Description: "Formation est obligatoire si typeDroitPrestation = '11.1' (Orientation en Centre de rééducation professionnelle (CRP))."
