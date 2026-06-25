@@ -12,29 +12,18 @@
   <sch:pattern>
     <sch:title>f:Extension</sch:title>
     <sch:rule context="f:Extension">
-      <sch:assert test="count(f:extension[@url = 'decision']) &gt;= 1">extension with URL = 'decision': minimum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'decision']) &lt;= 1">extension with URL = 'decision': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:value[x]) &lt;= 0">value[x]: maximum cardinality of 'value[x]' is 0</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>f:Extension/f:extension</sch:title>
-    <sch:rule context="f:Extension/f:extension">
-      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'typeDecision']) &gt;= 1">extension with URL = 'typeDecision': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'typeDecision']) &lt;= 1">extension with URL = 'typeDecision': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'dateEffetCloture']) &lt;= 1">extension with URL = 'dateEffetCloture': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'dateDecision']) &lt;= 1">extension with URL = 'dateDecision': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'commentaire']) &lt;= 1">extension with URL = 'commentaire': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'droitPrestation']) &lt;= 1">extension with URL = 'droitPrestation': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:url) &gt;= 1">url: minimum cardinality of 'url' is 1</sch:assert>
-      <sch:assert test="count(f:url) &lt;= 1">url: maximum cardinality of 'url' is 1</sch:assert>
       <sch:assert test="count(f:value[x]) &lt;= 0">value[x]: maximum cardinality of 'value[x]' is 0</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>f:Extension/f:extension/f:extension</sch:title>
-    <sch:rule context="f:Extension/f:extension/f:extension">
+    <sch:title>f:Extension/f:extension</sch:title>
+    <sch:rule context="f:Extension/f:extension">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
       <sch:assert test="count(f:url) &gt;= 1">url: minimum cardinality of 'url' is 1</sch:assert>
       <sch:assert test="count(f:url) &lt;= 1">url: maximum cardinality of 'url' is 1</sch:assert>
@@ -85,8 +74,8 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>f:Extension/f:extension/f:extension/f:extension</sch:title>
-    <sch:rule context="f:Extension/f:extension/f:extension/f:extension">
+    <sch:title>f:Extension/f:extension/f:extension</sch:title>
+    <sch:rule context="f:Extension/f:extension/f:extension">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
       <sch:assert test="count(f:url) &gt;= 1">url: minimum cardinality of 'url' is 1</sch:assert>
       <sch:assert test="count(f:url) &lt;= 1">url: maximum cardinality of 'url' is 1</sch:assert>
@@ -146,8 +135,8 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>f:Extension/f:extension/f:extension/f:extension/f:extension</sch:title>
-    <sch:rule context="f:Extension/f:extension/f:extension/f:extension/f:extension">
+    <sch:title>f:Extension/f:extension/f:extension/f:extension</sch:title>
+    <sch:rule context="f:Extension/f:extension/f:extension/f:extension">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
       <sch:assert test="count(f:url) &gt;= 1">url: minimum cardinality of 'url' is 1</sch:assert>
       <sch:assert test="count(f:url) &lt;= 1">url: maximum cardinality of 'url' is 1</sch:assert>
@@ -189,8 +178,8 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>f:Extension/f:extension/f:extension/f:extension/f:extension/f:extension</sch:title>
-    <sch:rule context="f:Extension/f:extension/f:extension/f:extension/f:extension/f:extension">
+    <sch:title>f:Extension/f:extension/f:extension/f:extension/f:extension</sch:title>
+    <sch:rule context="f:Extension/f:extension/f:extension/f:extension/f:extension">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
       <sch:assert test="count(f:url) &gt;= 1">url: minimum cardinality of 'url' is 1</sch:assert>
       <sch:assert test="count(f:url) &lt;= 1">url: maximum cardinality of 'url' is 1</sch:assert>
@@ -205,8 +194,8 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>f:Extension/f:extension/f:extension/f:extension/f:extension/f:extension/f:extension</sch:title>
-    <sch:rule context="f:Extension/f:extension/f:extension/f:extension/f:extension/f:extension/f:extension">
+    <sch:title>f:Extension/f:extension/f:extension/f:extension/f:extension/f:extension</sch:title>
+    <sch:rule context="f:Extension/f:extension/f:extension/f:extension/f:extension/f:extension">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
       <sch:assert test="count(f:url) &gt;= 1">url: minimum cardinality of 'url' is 1</sch:assert>
       <sch:assert test="count(f:url) &lt;= 1">url: maximum cardinality of 'url' is 1</sch:assert>

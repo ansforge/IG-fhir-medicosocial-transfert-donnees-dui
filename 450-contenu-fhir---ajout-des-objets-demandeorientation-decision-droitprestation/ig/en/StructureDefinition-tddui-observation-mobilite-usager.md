@@ -34,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-observation
   "name" : "TDDUIObservationMobiliteUsager",
   "title" : "TDDUI Observation Mobilite Usager",
   "status" : "active",
-  "date" : "2026-06-24T12:16:25+00:00",
+  "date" : "2026-06-25T08:27:57+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

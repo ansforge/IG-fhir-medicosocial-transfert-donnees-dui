@@ -4,26 +4,23 @@
 
 Profile: [TDDUI Basic Decision](StructureDefinition-tddui-basic-decision.md)
 
-> **TDDUI Decision****typeDecision**: Attribution**motivation**: Attrib AAH L821-1**dateEffetCloture**: 2020-01-01
-> **droitPrestation**
-> **url**categorieDroitPrestation
-**value**: Orientation scolaire
-> **url**typeDroitPrestation
-**value**: Orientation vers un Etablissement d'accueil non médicalisé
-> **url**natureDroitPrestation
-**value**: Renouvellement
-> **url**dateOuverture
-**value**: 2020-01-01
-> **url**dateEcheance
-**value**: 2020-12-31
-> **url**existencePAG
-**value**: false**qualificationOrientation**: Cible**formation**: Formation pour la prestation**temporaliteAccueil**: Temporaire**structureAccueil**: [Organization Les Chênes Verts](Organization-tddui-organization-example.md)
-> **url**detailPrestation
+> **TDDUI Decision**
+> **url**typeDecision
+**value**: Attribution
+> **url**motivation
+**value**: Attrib AAH L821-1
+> **url**dateEffetCloture
+**value**: 2020-01-01**categorieDroitPrestation**: Orientation scolaire**typeDroitPrestation**: Orientation vers un Etablissement d'accueil non médicalisé**natureDroitPrestation**: Renouvellement**dateOuverture**: 2020-01-01**dateEcheance**: 2020-12-31**existencePAG**: false
+> **detailPrestation**
+* qualificationOrientation: Cible
+* temporaliteAccueil: Temporaire
+* structureAccueil: [Organization Les Chênes Verts](Organization-tddui-organization-example.md)
 
-> **url**creton
-**value**: true
-**motivationLocale**: Motivation locale pour la décision
-> **url**decision
+**creton**: true
+> **url**droitPrestation
+
+> **url**motivationLocale
+**value**: Motivation locale pour la décision
 
 **identifier**: Identifiant principal de la décision/1254 (use: official, ), Identifiant révisé de la décision/1255
 
@@ -44,110 +41,103 @@ Profile: [TDDUI Basic Decision](StructureDefinition-tddui-basic-decision.md)
   },
   "extension" : [{
     "extension" : [{
+      "url" : "typeDecision",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://mos.esante.gouv.fr/NOS/TRE_R327-TypeDecision/FHIR/TRE-R327-TypeDecision",
+          "code" : "1"
+        }]
+      }
+    },
+    {
+      "url" : "motivation",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r419-motivation",
+          "code" : "215"
+        }]
+      }
+    },
+    {
+      "url" : "dateEffetCloture",
+      "valueDate" : "2020-01-01"
+    },
+    {
       "extension" : [{
-        "url" : "typeDecision",
+        "url" : "categorieDroitPrestation",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r420-droit-prestation",
+            "code" : "8"
+          }]
+        }
+      },
+      {
+        "url" : "typeDroitPrestation",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r420-droit-prestation",
+            "code" : "13.1"
+          }]
+        }
+      },
+      {
+        "url" : "natureDroitPrestation",
         "valueCodeableConcept" : {
           "coding" : [{
             "system" : "https://mos.esante.gouv.fr/NOS/TRE_R327-TypeDecision/FHIR/TRE-R327-TypeDecision",
-            "code" : "1"
+            "code" : "6"
           }]
         }
       },
       {
-        "url" : "motivation",
-        "valueCodeableConcept" : {
-          "coding" : [{
-            "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r419-motivation",
-            "code" : "215"
-          }]
-        }
-      },
-      {
-        "url" : "dateEffetCloture",
+        "url" : "dateOuverture",
         "valueDate" : "2020-01-01"
       },
       {
-        "extension" : [{
-          "url" : "categorieDroitPrestation",
-          "valueCodeableConcept" : {
-            "coding" : [{
-              "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r420-droit-prestation",
-              "code" : "8"
-            }]
-          }
-        },
-        {
-          "url" : "typeDroitPrestation",
-          "valueCodeableConcept" : {
-            "coding" : [{
-              "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r420-droit-prestation",
-              "code" : "13.1"
-            }]
-          }
-        },
-        {
-          "url" : "natureDroitPrestation",
-          "valueCodeableConcept" : {
-            "coding" : [{
-              "system" : "https://mos.esante.gouv.fr/NOS/TRE_R327-TypeDecision/FHIR/TRE-R327-TypeDecision",
-              "code" : "6"
-            }]
-          }
-        },
-        {
-          "url" : "dateOuverture",
-          "valueDate" : "2020-01-01"
-        },
-        {
-          "url" : "dateEcheance",
-          "valueDate" : "2020-12-31"
-        },
-        {
-          "url" : "existencePAG",
-          "valueBoolean" : false
-        },
-        {
-          "extension" : [{
-            "url" : "qualificationOrientation",
-            "valueCodeableConcept" : {
-              "coding" : [{
-                "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r422-qualification-orientation",
-                "code" : "1"
-              }]
-            }
-          },
-          {
-            "url" : "formation",
-            "valueString" : "Formation pour la prestation"
-          },
-          {
-            "url" : "temporaliteAccueil",
-            "valueCodeableConcept" : {
-              "coding" : [{
-                "system" : "https://mos.esante.gouv.fr/NOS/TRE_R240-TemporaliteAccueil/FHIR/TRE-R240-TemporaliteAccueil",
-                "code" : "01"
-              }]
-            }
-          },
-          {
-            "url" : "structureAccueil",
-            "valueReference" : {
-              "reference" : "Organization/tddui-organization-example"
-            }
-          }],
-          "url" : "detailPrestation"
-        },
-        {
-          "url" : "creton",
-          "valueBoolean" : true
-        }],
-        "url" : "droitPrestation"
+        "url" : "dateEcheance",
+        "valueDate" : "2020-12-31"
       },
       {
-        "url" : "motivationLocale",
-        "valueString" : "Motivation locale pour la décision"
+        "url" : "existencePAG",
+        "valueBoolean" : false
+      },
+      {
+        "extension" : [{
+          "url" : "qualificationOrientation",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r422-qualification-orientation",
+              "code" : "1"
+            }]
+          }
+        },
+        {
+          "url" : "temporaliteAccueil",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "https://mos.esante.gouv.fr/NOS/TRE_R240-TemporaliteAccueil/FHIR/TRE-R240-TemporaliteAccueil",
+              "code" : "01"
+            }]
+          }
+        },
+        {
+          "url" : "structureAccueil",
+          "valueReference" : {
+            "reference" : "Organization/tddui-organization-example"
+          }
+        }],
+        "url" : "detailPrestation"
+      },
+      {
+        "url" : "creton",
+        "valueBoolean" : true
       }],
-      "url" : "decision"
+      "url" : "droitPrestation"
+    },
+    {
+      "url" : "motivationLocale",
+      "valueString" : "Motivation locale pour la décision"
     }],
     "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision"
   }],
