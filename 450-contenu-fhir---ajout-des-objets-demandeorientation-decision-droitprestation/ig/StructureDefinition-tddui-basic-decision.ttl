@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "TDDUIBasicDecision"] ; # 
   fhir:title [ fhir:v "TDDUI Basic Decision"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-06-25T10:20:08+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-06-25T14:41:02+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -463,7 +463,7 @@
          fhir:key [ fhir:v "DateEffetClotureCardinality" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Si typeDecision = '5' (Clôture de droit) alors dateEffetCloture est obligatoire." ] ;
-         fhir:expression [ fhir:v "(extension.where(url='typeDecision').valueCodeableConcept.coding.code='5'.exists()) implies (extension.where(url='dateEffetCloture').exists())" ] ;
+         fhir:expression [ fhir:v "(extension.where(url='typeDecision').valueCodeableConcept.coding.where(code='5').exists()) implies (extension.where(url='dateEffetCloture').exists())" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision>
@@ -1708,7 +1708,7 @@
          fhir:key [ fhir:v "FormationCardinality" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Formation est obligatoire si typeDroitPrestation = '11.1' (Orientation en Centre de rééducation professionnelle (CRP))." ] ;
-         fhir:expression [ fhir:v "(extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='11.1') implies (extension.where(url='droitPrestation').extension.where(url='detailPrestation').extension.where(url='formation').exists())" ] ;
+         fhir:expression [ fhir:v "(extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='11.1') implies (extension.where(url='droitPrestation').extension.where(url='detailPrestation').extension.where(url='formation'))" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision>
@@ -1735,7 +1735,7 @@
          fhir:key [ fhir:v "PrecisionOrientationValues13.1-13.2" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Si typeDroitPrestation = '13.1' (Orientation vers un établissement d'accueil non médicalisé) ou '13.2' (Orientation vers un établissement d'accueil médicalisé en tout ou partie) alors precisionOrientation est interdit" ] ;
-         fhir:expression [ fhir:v "((extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='13.1') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='13.2')) implies (extension.where(url='detailPrestation').extension.where(url='precisionOrientation').exists().not())" ] ;
+         fhir:expression [ fhir:v "((extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='13.1') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='13.2')) implies (extension.where(url='detailPrestation').extension.where(url='precisionOrientation').not())" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision>
@@ -1762,7 +1762,7 @@
          fhir:key [ fhir:v "temporaliteAccueilCardinalityViaCategorieDroitPrestation" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Si categorieDroitPrestation = '13' (Orientation ESMS Adultes) ou '7' (Orientation ESMS Enfants) alors temporaliteAccueil est obligatoire." ] ;
-         fhir:expression [ fhir:v "((extension.where(url='categorieDroitPrestation').valueCodeableConcept.coding.code='13') or (extension.where(url='categorieDroitPrestation').valueCodeableConcept.coding.code='7')) implies (extension.where(url='detailPrestation').extension.where(url='temporaliteAccueil').exists())" ] ;
+         fhir:expression [ fhir:v "((extension.where(url='categorieDroitPrestation').valueCodeableConcept.coding.code='13') or (extension.where(url='categorieDroitPrestation').valueCodeableConcept.coding.code='7')) implies (extension.where(url='detailPrestation').extension.where(url='temporaliteAccueil'))" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision>
@@ -1771,7 +1771,7 @@
          fhir:key [ fhir:v "temporaliteAccueilCardinalityViaTypeDroitPrestation" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Si typeDroitPrestation = '8.6' (Orientation en Unité d'enseignement) ou '8.7' (Orientation vers une Scolarisation en milieu ordinaire à temps partagé) ou '8.8' (Orientation vers une Unité d'enseignement et une scolarisation en ULIS à temps partagé) ou '8.10' (Orientation vers une unité d'enseignement et une scolarisation en enseignement adapté à temps partagé) alors la temporalité d'accueil est obligatoire." ] ;
-         fhir:expression [ fhir:v "((extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.6') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.7') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.8') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.10')) implies (extension.where(url='droitPrestation').extension.where(url='detailPrestation').extension.where(url='temporaliteAccueil').exists())" ] ;
+         fhir:expression [ fhir:v "((extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.6') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.7') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.8') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.10')) implies (extension.where(url='droitPrestation').extension.where(url='detailPrestation').extension.where(url='temporaliteAccueil'))" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision>
@@ -1780,7 +1780,7 @@
          fhir:key [ fhir:v "cretonCardinality" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Si categorieDroitPrestation = '7' (ESSMS enfant) alors Creton est obligatoire" ] ;
-         fhir:expression [ fhir:v "((extension.where(url='categorieDroitPrestation').valueCodeableConcept.coding.code='7') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code.matches('^7[.][0-9]+$'))) implies (extension.where(url='creton').exists())" ] ;
+         fhir:expression [ fhir:v "((extension.where(url='categorieDroitPrestation').valueCodeableConcept.coding.code='7') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code.matches('^7[.][0-9]+$'))) implies (extension.where(url='creton'))" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision>

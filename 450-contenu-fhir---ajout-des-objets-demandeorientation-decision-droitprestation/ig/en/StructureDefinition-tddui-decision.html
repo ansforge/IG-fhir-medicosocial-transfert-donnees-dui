@@ -1096,7 +1096,7 @@ Element ID:     <code>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="text-decoration:line-through"></span><span style="text-decoration:line-through">0</span><span style="text-decoration:line-through">..</span><span style="text-decoration:line-through">0</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-style: italic">Value of extension</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // fdc01036-fe32-48cc-9147-db8bb45f27f0
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 3ced7b43-efaf-4b5a-8a47-c960e2a9c618
 document.getElementById('cbtddui-decisionD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('tddui-decisionD'), 'binding', document.getElementById('cbtddui-decisionD-binding').checked, document.getElementById('pptddui-decisionD'));
 document.getElementById('cbtddui-decisionD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1344,7 +1344,7 @@ filterDesc(document.getElementById('tddui-decisionD'), 'obligation', document.ge
     <td>Extension</td>
     <td>Si typeDecision = '5' (Clôture de droit) alors dateEffetCloture est obligatoire.</td>
     <td>
-      <code>(extension.where(url='typeDecision').valueCodeableConcept.coding.code='5'.exists()) implies (extension.where(url='dateEffetCloture').exists())</code>
+      <code>(extension.where(url='typeDecision').valueCodeableConcept.coding.where(code='5').exists()) implies (extension.where(url='dateEffetCloture').exists())</code>
     </td>
   </tr>
   <tr>
@@ -1353,7 +1353,7 @@ filterDesc(document.getElementById('tddui-decisionD'), 'obligation', document.ge
     <td>Extension.extension:droitPrestation</td>
     <td>Formation est obligatoire si typeDroitPrestation = '11.1' (Orientation en Centre de rééducation professionnelle (CRP)).</td>
     <td>
-      <code>(extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='11.1') implies (extension.where(url='droitPrestation').extension.where(url='detailPrestation').extension.where(url='formation').exists())</code>
+      <code>(extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='11.1') implies (extension.where(url='droitPrestation').extension.where(url='detailPrestation').extension.where(url='formation'))</code>
     </td>
   </tr>
   <tr>
@@ -1362,7 +1362,7 @@ filterDesc(document.getElementById('tddui-decisionD'), 'obligation', document.ge
     <td>Extension.extension:droitPrestation</td>
     <td>Si typeDroitPrestation = '13.1' (Orientation vers un établissement d'accueil non médicalisé) ou '13.2' (Orientation vers un établissement d'accueil médicalisé en tout ou partie) alors precisionOrientation est interdit</td>
     <td>
-      <code>((extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='13.1') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='13.2')) implies (extension.where(url='detailPrestation').extension.where(url='precisionOrientation').exists().not())</code>
+      <code>((extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='13.1') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='13.2')) implies (extension.where(url='detailPrestation').extension.where(url='precisionOrientation').not())</code>
     </td>
   </tr>
   <tr>
@@ -1408,7 +1408,7 @@ filterDesc(document.getElementById('tddui-decisionD'), 'obligation', document.ge
     <td>Extension.extension:droitPrestation</td>
     <td>Si categorieDroitPrestation = '7' (ESSMS enfant) alors Creton est obligatoire</td>
     <td>
-      <code>((extension.where(url='categorieDroitPrestation').valueCodeableConcept.coding.code='7') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code.matches('^7[.][0-9]+$'))) implies (extension.where(url='creton').exists())</code>
+      <code>((extension.where(url='categorieDroitPrestation').valueCodeableConcept.coding.code='7') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code.matches('^7[.][0-9]+$'))) implies (extension.where(url='creton'))</code>
     </td>
   </tr>
   <tr>
@@ -1426,7 +1426,7 @@ filterDesc(document.getElementById('tddui-decisionD'), 'obligation', document.ge
     <td>Extension.extension:droitPrestation</td>
     <td>Si categorieDroitPrestation = '13' (Orientation ESMS Adultes) ou '7' (Orientation ESMS Enfants) alors temporaliteAccueil est obligatoire.</td>
     <td>
-      <code>((extension.where(url='categorieDroitPrestation').valueCodeableConcept.coding.code='13') or (extension.where(url='categorieDroitPrestation').valueCodeableConcept.coding.code='7')) implies (extension.where(url='detailPrestation').extension.where(url='temporaliteAccueil').exists())</code>
+      <code>((extension.where(url='categorieDroitPrestation').valueCodeableConcept.coding.code='13') or (extension.where(url='categorieDroitPrestation').valueCodeableConcept.coding.code='7')) implies (extension.where(url='detailPrestation').extension.where(url='temporaliteAccueil'))</code>
     </td>
   </tr>
   <tr>
@@ -1435,7 +1435,7 @@ filterDesc(document.getElementById('tddui-decisionD'), 'obligation', document.ge
     <td>Extension.extension:droitPrestation</td>
     <td>Si typeDroitPrestation = '8.6' (Orientation en Unité d'enseignement) ou '8.7' (Orientation vers une Scolarisation en milieu ordinaire à temps partagé) ou '8.8' (Orientation vers une Unité d'enseignement et une scolarisation en ULIS à temps partagé) ou '8.10' (Orientation vers une unité d'enseignement et une scolarisation en enseignement adapté à temps partagé) alors la temporalité d'accueil est obligatoire.</td>
     <td>
-      <code>((extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.6') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.7') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.8') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.10')) implies (extension.where(url='droitPrestation').extension.where(url='detailPrestation').extension.where(url='temporaliteAccueil').exists())</code>
+      <code>((extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.6') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.7') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.8') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.10')) implies (extension.where(url='droitPrestation').extension.where(url='detailPrestation').extension.where(url='temporaliteAccueil'))</code>
     </td>
   </tr>
 </table>
@@ -2296,7 +2296,7 @@ filterDesc(document.getElementById('tddui-decisionD'), 'obligation', document.ge
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="color: darkgreen">"https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision"</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // fdc01036-fe32-48cc-9147-db8bb45f27f0
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 3ced7b43-efaf-4b5a-8a47-c960e2a9c618
 document.getElementById('cbtddui-decisionS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('tddui-decisionS'), 'binding', document.getElementById('cbtddui-decisionS-binding').checked, document.getElementById('pptddui-decisionS'));
 document.getElementById('cbtddui-decisionS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2543,7 +2543,7 @@ filterDesc(document.getElementById('tddui-decisionS'), 'obligation', document.ge
     <td>Extension</td>
     <td>Si typeDecision = '5' (Clôture de droit) alors dateEffetCloture est obligatoire.</td>
     <td>
-      <code>(extension.where(url='typeDecision').valueCodeableConcept.coding.code='5'.exists()) implies (extension.where(url='dateEffetCloture').exists())</code>
+      <code>(extension.where(url='typeDecision').valueCodeableConcept.coding.where(code='5').exists()) implies (extension.where(url='dateEffetCloture').exists())</code>
     </td>
   </tr>
   <tr>
@@ -2552,7 +2552,7 @@ filterDesc(document.getElementById('tddui-decisionS'), 'obligation', document.ge
     <td>Extension.extension:droitPrestation</td>
     <td>Formation est obligatoire si typeDroitPrestation = '11.1' (Orientation en Centre de rééducation professionnelle (CRP)).</td>
     <td>
-      <code>(extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='11.1') implies (extension.where(url='droitPrestation').extension.where(url='detailPrestation').extension.where(url='formation').exists())</code>
+      <code>(extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='11.1') implies (extension.where(url='droitPrestation').extension.where(url='detailPrestation').extension.where(url='formation'))</code>
     </td>
   </tr>
   <tr>
@@ -2561,7 +2561,7 @@ filterDesc(document.getElementById('tddui-decisionS'), 'obligation', document.ge
     <td>Extension.extension:droitPrestation</td>
     <td>Si typeDroitPrestation = '13.1' (Orientation vers un établissement d'accueil non médicalisé) ou '13.2' (Orientation vers un établissement d'accueil médicalisé en tout ou partie) alors precisionOrientation est interdit</td>
     <td>
-      <code>((extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='13.1') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='13.2')) implies (extension.where(url='detailPrestation').extension.where(url='precisionOrientation').exists().not())</code>
+      <code>((extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='13.1') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='13.2')) implies (extension.where(url='detailPrestation').extension.where(url='precisionOrientation').not())</code>
     </td>
   </tr>
   <tr>
@@ -2607,7 +2607,7 @@ filterDesc(document.getElementById('tddui-decisionS'), 'obligation', document.ge
     <td>Extension.extension:droitPrestation</td>
     <td>Si categorieDroitPrestation = '7' (ESSMS enfant) alors Creton est obligatoire</td>
     <td>
-      <code>((extension.where(url='categorieDroitPrestation').valueCodeableConcept.coding.code='7') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code.matches('^7[.][0-9]+$'))) implies (extension.where(url='creton').exists())</code>
+      <code>((extension.where(url='categorieDroitPrestation').valueCodeableConcept.coding.code='7') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code.matches('^7[.][0-9]+$'))) implies (extension.where(url='creton'))</code>
     </td>
   </tr>
   <tr>
@@ -2647,7 +2647,7 @@ filterDesc(document.getElementById('tddui-decisionS'), 'obligation', document.ge
     <td>Extension.extension:droitPrestation</td>
     <td>Si categorieDroitPrestation = '13' (Orientation ESMS Adultes) ou '7' (Orientation ESMS Enfants) alors temporaliteAccueil est obligatoire.</td>
     <td>
-      <code>((extension.where(url='categorieDroitPrestation').valueCodeableConcept.coding.code='13') or (extension.where(url='categorieDroitPrestation').valueCodeableConcept.coding.code='7')) implies (extension.where(url='detailPrestation').extension.where(url='temporaliteAccueil').exists())</code>
+      <code>((extension.where(url='categorieDroitPrestation').valueCodeableConcept.coding.code='13') or (extension.where(url='categorieDroitPrestation').valueCodeableConcept.coding.code='7')) implies (extension.where(url='detailPrestation').extension.where(url='temporaliteAccueil'))</code>
     </td>
   </tr>
   <tr>
@@ -2656,7 +2656,7 @@ filterDesc(document.getElementById('tddui-decisionS'), 'obligation', document.ge
     <td>Extension.extension:droitPrestation</td>
     <td>Si typeDroitPrestation = '8.6' (Orientation en Unité d'enseignement) ou '8.7' (Orientation vers une Scolarisation en milieu ordinaire à temps partagé) ou '8.8' (Orientation vers une Unité d'enseignement et une scolarisation en ULIS à temps partagé) ou '8.10' (Orientation vers une unité d'enseignement et une scolarisation en enseignement adapté à temps partagé) alors la temporalité d'accueil est obligatoire.</td>
     <td>
-      <code>((extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.6') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.7') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.8') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.10')) implies (extension.where(url='droitPrestation').extension.where(url='detailPrestation').extension.where(url='temporaliteAccueil').exists())</code>
+      <code>((extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.6') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.7') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.8') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.10')) implies (extension.where(url='droitPrestation').extension.where(url='detailPrestation').extension.where(url='temporaliteAccueil'))</code>
     </td>
   </tr>
 </table>
@@ -3482,7 +3482,7 @@ Summary
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="text-decoration:line-through"></span><span style="text-decoration:line-through">0</span><span style="text-decoration:line-through">..</span><span style="text-decoration:line-through">0</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-style: italic">Value of extension</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // fdc01036-fe32-48cc-9147-db8bb45f27f0
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 3ced7b43-efaf-4b5a-8a47-c960e2a9c618
 document.getElementById('cbtddui-decisionDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('tddui-decisionDA'), 'binding', document.getElementById('cbtddui-decisionDA-binding').checked, document.getElementById('pptddui-decisionDA'));
 document.getElementById('cbtddui-decisionDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -3727,7 +3727,7 @@ filterDesc(document.getElementById('tddui-decisionDA'), 'obligation', document.g
     <td>Extension</td>
     <td>Si typeDecision = '5' (Clôture de droit) alors dateEffetCloture est obligatoire.</td>
     <td>
-      <code>(extension.where(url='typeDecision').valueCodeableConcept.coding.code='5'.exists()) implies (extension.where(url='dateEffetCloture').exists())</code>
+      <code>(extension.where(url='typeDecision').valueCodeableConcept.coding.where(code='5').exists()) implies (extension.where(url='dateEffetCloture').exists())</code>
     </td>
   </tr>
   <tr>
@@ -3736,7 +3736,7 @@ filterDesc(document.getElementById('tddui-decisionDA'), 'obligation', document.g
     <td>Extension.extension:droitPrestation</td>
     <td>Formation est obligatoire si typeDroitPrestation = '11.1' (Orientation en Centre de rééducation professionnelle (CRP)).</td>
     <td>
-      <code>(extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='11.1') implies (extension.where(url='droitPrestation').extension.where(url='detailPrestation').extension.where(url='formation').exists())</code>
+      <code>(extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='11.1') implies (extension.where(url='droitPrestation').extension.where(url='detailPrestation').extension.where(url='formation'))</code>
     </td>
   </tr>
   <tr>
@@ -3745,7 +3745,7 @@ filterDesc(document.getElementById('tddui-decisionDA'), 'obligation', document.g
     <td>Extension.extension:droitPrestation</td>
     <td>Si typeDroitPrestation = '13.1' (Orientation vers un établissement d'accueil non médicalisé) ou '13.2' (Orientation vers un établissement d'accueil médicalisé en tout ou partie) alors precisionOrientation est interdit</td>
     <td>
-      <code>((extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='13.1') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='13.2')) implies (extension.where(url='detailPrestation').extension.where(url='precisionOrientation').exists().not())</code>
+      <code>((extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='13.1') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='13.2')) implies (extension.where(url='detailPrestation').extension.where(url='precisionOrientation').not())</code>
     </td>
   </tr>
   <tr>
@@ -3791,7 +3791,7 @@ filterDesc(document.getElementById('tddui-decisionDA'), 'obligation', document.g
     <td>Extension.extension:droitPrestation</td>
     <td>Si categorieDroitPrestation = '7' (ESSMS enfant) alors Creton est obligatoire</td>
     <td>
-      <code>((extension.where(url='categorieDroitPrestation').valueCodeableConcept.coding.code='7') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code.matches('^7[.][0-9]+$'))) implies (extension.where(url='creton').exists())</code>
+      <code>((extension.where(url='categorieDroitPrestation').valueCodeableConcept.coding.code='7') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code.matches('^7[.][0-9]+$'))) implies (extension.where(url='creton'))</code>
     </td>
   </tr>
   <tr>
@@ -3809,7 +3809,7 @@ filterDesc(document.getElementById('tddui-decisionDA'), 'obligation', document.g
     <td>Extension.extension:droitPrestation</td>
     <td>Si categorieDroitPrestation = '13' (Orientation ESMS Adultes) ou '7' (Orientation ESMS Enfants) alors temporaliteAccueil est obligatoire.</td>
     <td>
-      <code>((extension.where(url='categorieDroitPrestation').valueCodeableConcept.coding.code='13') or (extension.where(url='categorieDroitPrestation').valueCodeableConcept.coding.code='7')) implies (extension.where(url='detailPrestation').extension.where(url='temporaliteAccueil').exists())</code>
+      <code>((extension.where(url='categorieDroitPrestation').valueCodeableConcept.coding.code='13') or (extension.where(url='categorieDroitPrestation').valueCodeableConcept.coding.code='7')) implies (extension.where(url='detailPrestation').extension.where(url='temporaliteAccueil'))</code>
     </td>
   </tr>
   <tr>
@@ -3818,7 +3818,7 @@ filterDesc(document.getElementById('tddui-decisionDA'), 'obligation', document.g
     <td>Extension.extension:droitPrestation</td>
     <td>Si typeDroitPrestation = '8.6' (Orientation en Unité d'enseignement) ou '8.7' (Orientation vers une Scolarisation en milieu ordinaire à temps partagé) ou '8.8' (Orientation vers une Unité d'enseignement et une scolarisation en ULIS à temps partagé) ou '8.10' (Orientation vers une unité d'enseignement et une scolarisation en enseignement adapté à temps partagé) alors la temporalité d'accueil est obligatoire.</td>
     <td>
-      <code>((extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.6') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.7') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.8') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.10')) implies (extension.where(url='droitPrestation').extension.where(url='detailPrestation').extension.where(url='temporaliteAccueil').exists())</code>
+      <code>((extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.6') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.7') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.8') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.10')) implies (extension.where(url='droitPrestation').extension.where(url='detailPrestation').extension.where(url='temporaliteAccueil'))</code>
     </td>
   </tr>
 </table>
@@ -4678,7 +4678,7 @@ filterDesc(document.getElementById('tddui-decisionDA'), 'obligation', document.g
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="color: darkgreen">"https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision"</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // fdc01036-fe32-48cc-9147-db8bb45f27f0
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 3ced7b43-efaf-4b5a-8a47-c960e2a9c618
 document.getElementById('cbtddui-decisionSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('tddui-decisionSA'), 'binding', document.getElementById('cbtddui-decisionSA-binding').checked, document.getElementById('pptddui-decisionSA'));
 document.getElementById('cbtddui-decisionSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -4923,7 +4923,7 @@ filterDesc(document.getElementById('tddui-decisionSA'), 'obligation', document.g
     <td>Extension</td>
     <td>Si typeDecision = '5' (Clôture de droit) alors dateEffetCloture est obligatoire.</td>
     <td>
-      <code>(extension.where(url='typeDecision').valueCodeableConcept.coding.code='5'.exists()) implies (extension.where(url='dateEffetCloture').exists())</code>
+      <code>(extension.where(url='typeDecision').valueCodeableConcept.coding.where(code='5').exists()) implies (extension.where(url='dateEffetCloture').exists())</code>
     </td>
   </tr>
   <tr>
@@ -4932,7 +4932,7 @@ filterDesc(document.getElementById('tddui-decisionSA'), 'obligation', document.g
     <td>Extension.extension:droitPrestation</td>
     <td>Formation est obligatoire si typeDroitPrestation = '11.1' (Orientation en Centre de rééducation professionnelle (CRP)).</td>
     <td>
-      <code>(extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='11.1') implies (extension.where(url='droitPrestation').extension.where(url='detailPrestation').extension.where(url='formation').exists())</code>
+      <code>(extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='11.1') implies (extension.where(url='droitPrestation').extension.where(url='detailPrestation').extension.where(url='formation'))</code>
     </td>
   </tr>
   <tr>
@@ -4941,7 +4941,7 @@ filterDesc(document.getElementById('tddui-decisionSA'), 'obligation', document.g
     <td>Extension.extension:droitPrestation</td>
     <td>Si typeDroitPrestation = '13.1' (Orientation vers un établissement d'accueil non médicalisé) ou '13.2' (Orientation vers un établissement d'accueil médicalisé en tout ou partie) alors precisionOrientation est interdit</td>
     <td>
-      <code>((extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='13.1') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='13.2')) implies (extension.where(url='detailPrestation').extension.where(url='precisionOrientation').exists().not())</code>
+      <code>((extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='13.1') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='13.2')) implies (extension.where(url='detailPrestation').extension.where(url='precisionOrientation').not())</code>
     </td>
   </tr>
   <tr>
@@ -4987,7 +4987,7 @@ filterDesc(document.getElementById('tddui-decisionSA'), 'obligation', document.g
     <td>Extension.extension:droitPrestation</td>
     <td>Si categorieDroitPrestation = '7' (ESSMS enfant) alors Creton est obligatoire</td>
     <td>
-      <code>((extension.where(url='categorieDroitPrestation').valueCodeableConcept.coding.code='7') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code.matches('^7[.][0-9]+$'))) implies (extension.where(url='creton').exists())</code>
+      <code>((extension.where(url='categorieDroitPrestation').valueCodeableConcept.coding.code='7') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code.matches('^7[.][0-9]+$'))) implies (extension.where(url='creton'))</code>
     </td>
   </tr>
   <tr>
@@ -5027,7 +5027,7 @@ filterDesc(document.getElementById('tddui-decisionSA'), 'obligation', document.g
     <td>Extension.extension:droitPrestation</td>
     <td>Si categorieDroitPrestation = '13' (Orientation ESMS Adultes) ou '7' (Orientation ESMS Enfants) alors temporaliteAccueil est obligatoire.</td>
     <td>
-      <code>((extension.where(url='categorieDroitPrestation').valueCodeableConcept.coding.code='13') or (extension.where(url='categorieDroitPrestation').valueCodeableConcept.coding.code='7')) implies (extension.where(url='detailPrestation').extension.where(url='temporaliteAccueil').exists())</code>
+      <code>((extension.where(url='categorieDroitPrestation').valueCodeableConcept.coding.code='13') or (extension.where(url='categorieDroitPrestation').valueCodeableConcept.coding.code='7')) implies (extension.where(url='detailPrestation').extension.where(url='temporaliteAccueil'))</code>
     </td>
   </tr>
   <tr>
@@ -5036,7 +5036,7 @@ filterDesc(document.getElementById('tddui-decisionSA'), 'obligation', document.g
     <td>Extension.extension:droitPrestation</td>
     <td>Si typeDroitPrestation = '8.6' (Orientation en Unité d'enseignement) ou '8.7' (Orientation vers une Scolarisation en milieu ordinaire à temps partagé) ou '8.8' (Orientation vers une Unité d'enseignement et une scolarisation en ULIS à temps partagé) ou '8.10' (Orientation vers une unité d'enseignement et une scolarisation en enseignement adapté à temps partagé) alors la temporalité d'accueil est obligatoire.</td>
     <td>
-      <code>((extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.6') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.7') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.8') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.10')) implies (extension.where(url='droitPrestation').extension.where(url='detailPrestation').extension.where(url='temporaliteAccueil').exists())</code>
+      <code>((extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.6') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.7') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.8') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.10')) implies (extension.where(url='droitPrestation').extension.where(url='detailPrestation').extension.where(url='temporaliteAccueil'))</code>
     </td>
   </tr>
 </table>
@@ -5213,7 +5213,7 @@ Summary
           IG © 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  
           Package ans.fhir.fr.tddui#2.3.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-06-25 10:20:00 +0000">
+  <span title="2026-06-25 14:41:00 +0000">
     2026-06-25
   </span>
 

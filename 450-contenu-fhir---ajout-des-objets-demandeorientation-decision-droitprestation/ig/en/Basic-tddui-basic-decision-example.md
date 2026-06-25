@@ -10,10 +10,11 @@ Profile: [TDDUI Basic Decision](StructureDefinition-tddui-basic-decision.md)
 > **url**motivation
 **value**: Autre
 > **url**dateEffetCloture
-**value**: 2020-01-01**categorieDroitPrestation**: Orientation scolaire**typeDroitPrestation**: Orientation vers un Etablissement d'accueil non médicalisé**natureDroitPrestation**: Renouvellement**dateOuverture**: 2020-01-01**dateEcheance**: 2020-12-31**existencePAG**: false
+**value**: 2020-01-01**categorieDroitPrestation**: Orientation scolaire**typeDroitPrestation**: Orientation vers un Service d'éducation spéciale et de soins à domicile (SESSAD)**natureDroitPrestation**: Renouvellement**dateOuverture**: 2020-01-01**dateEcheance**: 2020-12-31**existencePAG**: false
 > **detailPrestation**
 * qualificationOrientation: Cible
 * temporaliteAccueil: Temporaire
+* precisionOrientation: SESSAD polyvalent
 * structureAccueil: [Organization Les Chênes Verts](Organization-tddui-organization-example.md)
 
 **creton**: true
@@ -77,7 +78,7 @@ Profile: [TDDUI Basic Decision](StructureDefinition-tddui-basic-decision.md)
         "valueCodeableConcept" : {
           "coding" : [{
             "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r420-droit-prestation",
-            "code" : "13.1"
+            "code" : "7.8"
           }]
         }
       },
@@ -118,6 +119,15 @@ Profile: [TDDUI Basic Decision](StructureDefinition-tddui-basic-decision.md)
             "coding" : [{
               "system" : "https://mos.esante.gouv.fr/NOS/TRE_R240-TemporaliteAccueil/FHIR/TRE-R240-TemporaliteAccueil",
               "code" : "01"
+            }]
+          }
+        },
+        {
+          "url" : "precisionOrientation",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r426-orientation",
+              "code" : "1"
             }]
           }
         },
