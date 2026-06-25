@@ -20,7 +20,7 @@ Usage: #example
 
 * extension[TDDUIDecision].extension[droitPrestation].extension[categorieDroitPrestation].valueCodeableConcept = tre-r420-droit-prestation#8
 
-* extension[TDDUIDecision].extension[droitPrestation].extension[typeDroitPrestation].valueCodeableConcept = tre-r420-droit-prestation#13.1
+* extension[TDDUIDecision].extension[droitPrestation].extension[typeDroitPrestation].valueCodeableConcept = tre-r420-droit-prestation#7.8
 
 * extension[TDDUIDecision].extension[droitPrestation].extension[natureDroitPrestation].valueCodeableConcept = TRE-R327-TypeDecision#6
 
@@ -34,7 +34,7 @@ Usage: #example
 
 * extension[TDDUIDecision].extension[droitPrestation].extension[detailPrestation].extension[temporaliteAccueil].valueCodeableConcept = TRE-R240-TemporaliteAccueil#01
 
-//* extension[TDDUIDecision].extension[droitPrestation].extension[detailPrestation].extension[precisionOrientation].valueCodeableConcept = tre-r426-orientation#1
+* extension[TDDUIDecision].extension[droitPrestation].extension[detailPrestation].extension[precisionOrientation].valueCodeableConcept = tre-r426-orientation#1
 
 * extension[TDDUIDecision].extension[droitPrestation].extension[detailPrestation].extension[structureAccueil].valueReference = Reference(tddui-organization-example)
 
