@@ -30,7 +30,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "TDDUI Observation Periode Scolaire",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-25T09:43:13+00:00",
+  "date" : "2026-06-25T10:03:25+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

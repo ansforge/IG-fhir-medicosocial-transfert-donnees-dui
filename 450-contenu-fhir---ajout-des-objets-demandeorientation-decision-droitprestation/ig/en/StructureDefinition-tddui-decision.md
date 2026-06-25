@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-decision.cs
   "name" : "TDDUIDecision",
   "title" : "TDDUI Decision",
   "status" : "active",
-  "date" : "2026-06-25T09:43:13+00:00",
+  "date" : "2026-06-25T10:03:25+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -73,26 +73,26 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-decision.cs
       "id" : "Extension",
       "path" : "Extension",
       "short" : "TDDUI Decision",
-      "definition" : "Extension complexe représentant la décision et les droits associés"
-    },
-    {
-      "id" : "Extension.extension",
-      "path" : "Extension.extension",
-      "min" : 1,
+      "definition" : "Extension complexe représentant la décision et les droits associés",
       "constraint" : [{
         "key" : "motivationLocaleRequired",
         "severity" : "error",
         "human" : "La motivation locale doit être renseignée si la motivation de la décision est '9999' (Autre).",
-        "expression" : "extension.where(url='motivation').valueCodeableConcept.coding.where(code='9999').exists() implies extension.where(url='motivationLocale').valueString.exists()",
+        "expression" : "(extension.where(url='motivation').valueCodeableConcept.coding.where(code='9999').exists()) implies (extension.where(url='motivationLocale').valueString.exists())",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision"
       },
       {
         "key" : "DateEffetClotureCardinality",
         "severity" : "error",
         "human" : "Si typeDecision = '5' (Clôture de droit) alors dateEffetCloture est obligatoire.",
-        "expression" : "(extension.where(url='typeDecision').valueCodeableConcept.coding.code='5') implies ((extension.where(url='dateEffetCloture').exists()))",
+        "expression" : "(extension.where(url='typeDecision').valueCodeableConcept.coding.code='5'.exists()) implies (extension.where(url='dateEffetCloture').exists())",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision"
       }]
+    },
+    {
+      "id" : "Extension.extension",
+      "path" : "Extension.extension",
+      "min" : 1
     },
     {
       "id" : "Extension.extension:typeDecision",

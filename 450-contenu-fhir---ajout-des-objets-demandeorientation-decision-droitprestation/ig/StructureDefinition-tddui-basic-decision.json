@@ -10,7 +10,7 @@
   "name" : "TDDUIBasicDecision",
   "title" : "TDDUI Basic Decision",
   "status" : "active",
-  "date" : "2026-06-25T09:43:13+00:00",
+  "date" : "2026-06-25T10:03:25+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -398,6 +398,20 @@
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      },
+      {
+        "key" : "motivationLocaleRequired",
+        "severity" : "error",
+        "human" : "La motivation locale doit être renseignée si la motivation de la décision est '9999' (Autre).",
+        "expression" : "(extension.where(url='motivation').valueCodeableConcept.coding.where(code='9999').exists()) implies (extension.where(url='motivationLocale').valueString.exists())",
+        "source" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision"
+      },
+      {
+        "key" : "DateEffetClotureCardinality",
+        "severity" : "error",
+        "human" : "Si typeDecision = '5' (Clôture de droit) alors dateEffetCloture est obligatoire.",
+        "expression" : "(extension.where(url='typeDecision').valueCodeableConcept.coding.code='5'.exists()) implies (extension.where(url='dateEffetCloture').exists())",
+        "source" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision"
       }],
       "isModifier" : false,
       "isSummary" : false,
@@ -471,20 +485,6 @@
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
-      },
-      {
-        "key" : "motivationLocaleRequired",
-        "severity" : "error",
-        "human" : "La motivation locale doit être renseignée si la motivation de la décision est '9999' (Autre).",
-        "expression" : "extension.where(url='motivation').valueCodeableConcept.coding.where(code='9999').exists() implies extension.where(url='motivationLocale').valueString.exists()",
-        "source" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision"
-      },
-      {
-        "key" : "DateEffetClotureCardinality",
-        "severity" : "error",
-        "human" : "Si typeDecision = '5' (Clôture de droit) alors dateEffetCloture est obligatoire.",
-        "expression" : "(extension.where(url='typeDecision').valueCodeableConcept.coding.code='5') implies ((extension.where(url='dateEffetCloture').exists()))",
-        "source" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision"
       }],
       "isModifier" : false,
       "isSummary" : false

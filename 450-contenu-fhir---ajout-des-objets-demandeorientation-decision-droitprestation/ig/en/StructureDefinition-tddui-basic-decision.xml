@@ -102,7 +102,7 @@
   <name value="TDDUIBasicDecision"/>
   <title value="TDDUI Basic Decision"/>
   <status value="active"/>
-  <date value="2026-06-25T09:43:13+00:00"/>
+  <date value="2026-06-25T10:03:25+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -476,6 +476,20 @@
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
+      <constraint>
+        <key value="motivationLocaleRequired"/>
+        <severity value="error"/>
+        <human value="La motivation locale doit être renseignée si la motivation de la décision est '9999' (Autre)."/>
+        <expression value="(extension.where(url='motivation').valueCodeableConcept.coding.where(code='9999').exists()) implies (extension.where(url='motivationLocale').valueString.exists())"/>
+        <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision"/>
+      </constraint>
+      <constraint>
+        <key value="DateEffetClotureCardinality"/>
+        <severity value="error"/>
+        <human value="Si typeDecision = '5' (Clôture de droit) alors dateEffetCloture est obligatoire."/>
+        <expression value="(extension.where(url='typeDecision').valueCodeableConcept.coding.code='5'.exists()) implies (extension.where(url='dateEffetCloture').exists())"/>
+        <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision"/>
+      </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
       <mapping>
@@ -545,20 +559,6 @@
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
-      </constraint>
-      <constraint>
-        <key value="motivationLocaleRequired"/>
-        <severity value="error"/>
-        <human value="La motivation locale doit être renseignée si la motivation de la décision est '9999' (Autre)."/>
-        <expression value="extension.where(url='motivation').valueCodeableConcept.coding.where(code='9999').exists() implies extension.where(url='motivationLocale').valueString.exists()"/>
-        <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision"/>
-      </constraint>
-      <constraint>
-        <key value="DateEffetClotureCardinality"/>
-        <severity value="error"/>
-        <human value="Si typeDecision = '5' (Clôture de droit) alors dateEffetCloture est obligatoire."/>
-        <expression value="(extension.where(url='typeDecision').valueCodeableConcept.coding.code='5') implies ((extension.where(url='dateEffetCloture').exists()))"/>
-        <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision"/>
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
