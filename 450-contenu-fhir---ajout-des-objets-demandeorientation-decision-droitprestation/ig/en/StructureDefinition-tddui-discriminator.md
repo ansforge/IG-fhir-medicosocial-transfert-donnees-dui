@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-discriminat
   "name" : "TDDUIDiscriminator",
   "title" : "TDDUI Discriminator",
   "status" : "active",
-  "date" : "2026-06-25T09:12:27+00:00",
+  "date" : "2026-06-25T09:43:13+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

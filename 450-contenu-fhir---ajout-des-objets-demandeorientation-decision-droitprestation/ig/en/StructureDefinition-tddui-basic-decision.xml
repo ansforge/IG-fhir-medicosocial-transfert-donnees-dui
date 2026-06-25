@@ -102,7 +102,7 @@
   <name value="TDDUIBasicDecision"/>
   <title value="TDDUI Basic Decision"/>
   <status value="active"/>
-  <date value="2026-06-25T09:12:27+00:00"/>
+  <date value="2026-06-25T09:43:13+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -550,7 +550,7 @@
         <key value="motivationLocaleRequired"/>
         <severity value="error"/>
         <human value="La motivation locale doit être renseignée si la motivation de la décision est '9999' (Autre)."/>
-        <expression value="(where(url='motivation').valueCodeableConcept.coding.code='9999') implies ((where(url='motivationLocale').valueString.exists()))"/>
+        <expression value="extension.where(url='motivation').valueCodeableConcept.coding.where(code='9999').exists() implies extension.where(url='motivationLocale').valueString.exists()"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision"/>
       </constraint>
       <constraint>
