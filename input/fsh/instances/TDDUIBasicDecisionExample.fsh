@@ -14,7 +14,7 @@ Usage: #example
 
 * extension[TDDUIDecision].extension[typeDecision].valueCodeableConcept = TRE-R327-TypeDecision#1
 
-* extension[TDDUIDecision].extension[motivation].valueCodeableConcept = tre-r419-motivation#215
+* extension[TDDUIDecision].extension[motivation].valueCodeableConcept = tre-r419-motivation#9999
 
 * extension[TDDUIDecision].extension[dateEffetCloture].valueDate = "2020-01-01"
 
@@ -42,4 +42,4 @@ Usage: #example
 
 * extension[TDDUIDecision].extension[droitPrestation].extension[creton].valueBoolean = true
 
-* extension[TDDUIDecision].extension[motivationLocale].valueString = "Motivation locale pour la décision"
+//* extension[TDDUIDecision].extension[motivationLocale].valueString = "Motivation locale pour la décision"

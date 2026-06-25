@@ -6,8 +6,8 @@ Context: Basic
 
 * value[x] 0..0
 
-* extension obeys motivationLocaleRequired
-* extension obeys DateEffetClotureCardinality
+* obeys motivationLocaleRequired
+* obeys DateEffetClotureCardinality
 * extension contains
     typeDecision 1..1 and
     dateEffetCloture 0..1 and
@@ -194,7 +194,7 @@ Context: Basic
 Invariant: motivationLocaleRequired
 Description: "La motivation locale doit être renseignée si la motivation de la décision est '9999' (Autre)."
 Severity: #error
-Expression: "extension.where(url='motivation').valueCodeableConcept.coding.where(code='9999').exists() implies extension.where(url='motivationLocale').valueString.exists()"
+Expression: "(extension.where(url='motivation').valueCodeableConcept.coding.where(code='9999').exists()) implies (extension.where(url='motivationLocale').valueString.exists())"
 
 Invariant: FormationCardinality
 Description: "Formation est obligatoire si typeDroitPrestation = '11.1' (Orientation en Centre de rééducation professionnelle (CRP))."
@@ -232,7 +232,7 @@ Expression: "(extension.where(url='typeDroitPrestation').valueCodeableConcept.co
 Invariant: DateEffetClotureCardinality
 Description: "Si typeDecision = '5' (Clôture de droit) alors dateEffetCloture est obligatoire."
 Severity: #error
-Expression: "(extension.where(url='typeDecision').valueCodeableConcept.coding.code='5') implies ((extension.where(url='dateEffetCloture').exists()))"
+Expression: "(extension.where(url='typeDecision').valueCodeableConcept.coding.code='5'.exists()) implies (extension.where(url='dateEffetCloture').exists())"
 
 Invariant: temporaliteAccueilCardinalityViaCategorieDroitPrestation
 Description: "Si categorieDroitPrestation = '13' (Orientation ESMS Adultes) ou '7' (Orientation ESMS Enfants) alors temporaliteAccueil est obligatoire."
