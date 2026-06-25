@@ -19,6 +19,9 @@ Profile: [TDDUI Basic Decision](StructureDefinition-tddui-basic-decision.md)
 **creton**: true
 > **url**droitPrestation
 
+> **url**motivationLocale
+**value**: Motivation locale pour la décision
+
 **identifier**: Identifiant principal de la décision/1254 (use: official, ), Identifiant révisé de la décision/1255
 
 **code**: Décision
@@ -131,6 +134,10 @@ Profile: [TDDUI Basic Decision](StructureDefinition-tddui-basic-decision.md)
         "valueBoolean" : true
       }],
       "url" : "droitPrestation"
+    },
+    {
+      "url" : "motivationLocale",
+      "valueString" : "Motivation locale pour la décision"
     }],
     "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision"
   }],

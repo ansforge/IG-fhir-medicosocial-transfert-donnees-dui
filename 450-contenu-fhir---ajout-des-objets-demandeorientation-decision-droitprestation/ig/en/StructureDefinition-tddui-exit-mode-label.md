@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-exit-mode-l
   "name" : "TDDUIExitModeLabel",
   "title" : "TDDUI Exit Mode Label",
   "status" : "active",
-  "date" : "2026-06-25T10:03:25+00:00",
+  "date" : "2026-06-25T10:20:08+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

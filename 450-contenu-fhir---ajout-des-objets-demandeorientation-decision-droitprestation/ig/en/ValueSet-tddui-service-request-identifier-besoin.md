@@ -36,7 +36,7 @@ ValueSet pour la définition des codes d'identifiant de besoin
   "title" : "TDDUI ServiceRequest Besoin Identifier",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-25T10:03:25+00:00",
+  "date" : "2026-06-25T10:20:08+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
