@@ -47,11 +47,13 @@
   </head>
   <body onload="document.body.style.opacity='1'">
 
-	  <script src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"9.97"}
-    h3,h4,h5,h6{--heading-prefix:"9.97"}</style>
+    <style type="text/css">h2{--heading-prefix:"9.106"}
+    h3,h4,h5,h6{--heading-prefix:"9.106"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -228,6 +230,7 @@
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
+
 <!-- layouts\layout-instance-format -->
 <div style="counter-reset: section 8" class="col-12">
 <!--ReleaseHeader--><p id="publish-box">Médicosocial - Transfert de données DUI - Local Development build (v2.3.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://interop.esante.gouv.fr/ig/fhir/tddui/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
@@ -1127,6 +1130,163 @@
       }
     },
     {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "https://test-server.fr/Observation/tddui-observation-repas-example",
+      "<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/observation.html">resourceType</a>" : "Observation",
+        "<a href="http://hl7.org/fhir/R4/resource.html#Observation.id">id</a>" : "tddui-observation-repas-example",
+        "<a href="http://hl7.org/fhir/R4/resource.html#Observation.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-tddui-observation-repas.html" style="color: Maroon">&#x1F517;</a> "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-repas"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/resource.html#Observation.language">language</a>" : "en",
+        "<a href="http://hl7.org/fhir/R4/domainresource.html#Observation.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions"
+        },
+        "<a href="http://hl7.org/fhir/R4/domainresource.html#Observation.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-participant-present",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueBoolean</a>" : true
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.identifier">identifier</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">type</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-identifier",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "REP"
+                }
+              ]
+            },
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "https://identifiant-medicosocial-repas.esante.gouv.fr",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "3480787529/1012-REPAS-0002"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">status</a>" : "registered",
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.category">category</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r425-type-repas",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "1"
+              }
+            ]
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">code</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-type",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "REPAS",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Repas"
+            }
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.subject">subject</a>" : {
+          <a href="Patient-tddui-patient-ins-example.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/tddui-patient-ins-example"
+        },
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective_x_">effectiveDateTime</a>" : "2025-04-17T12:00:00+02:00"
+      },
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request">request</a>" : {
+        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.method">method</a>" : "POST",
+        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.url">url</a>" : "TDDUIObservationRepas"
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "https://test-server.fr/Schedule/tddui-schedule-example",
+      "<a href="http://hl7.org/fhir/R4/schedule.html#Schedule">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/schedule.html">resourceType</a>" : "Schedule",
+        "<a href="http://hl7.org/fhir/R4/resource.html#Schedule.id">id</a>" : "tddui-schedule-example",
+        "<a href="http://hl7.org/fhir/R4/resource.html#Schedule.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-tddui-schedule.html" style="color: Maroon">&#x1F517;</a> "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-schedule"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/resource.html#Schedule.language">language</a>" : "en",
+        "<a href="http://hl7.org/fhir/R4/domainresource.html#Schedule.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated"
+        },
+        "<a href="http://hl7.org/fhir/R4/schedule.html#Schedule.actor">actor</a>" : [
+          {
+            <a href="Patient-tddui-patient-ins-example.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/tddui-patient-ins-example"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request">request</a>" : {
+        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.method">method</a>" : "POST",
+        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.url">url</a>" : "TDDUISchedule"
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "https://test-server.fr/Slot/tddui-slot-presence-absence-example",
+      "<a href="http://hl7.org/fhir/R4/slot.html#Slot">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/slot.html">resourceType</a>" : "Slot",
+        "<a href="http://hl7.org/fhir/R4/resource.html#Slot.id">id</a>" : "tddui-slot-presence-absence-example",
+        "<a href="http://hl7.org/fhir/R4/resource.html#Slot.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-tddui-slot-presence-absence.html" style="color: Maroon">&#x1F517;</a> "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-slot-presence-absence"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/resource.html#Slot.language">language</a>" : "en",
+        "<a href="http://hl7.org/fhir/R4/domainresource.html#Slot.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions"
+        },
+        "<a href="http://hl7.org/fhir/R4/domainresource.html#Slot.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-facturation",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueBoolean</a>" : true
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-planned-absence",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueBoolean</a>" : true
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/slot.html#Slot.identifier">identifier</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">type</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-slot-identifier",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "PA"
+                }
+              ]
+            },
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "https://identifiant-medicosocial-presenceabsence.esante.gouv.fr",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "3480787529/1012-PA-0001"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/slot.html#Slot.serviceType">serviceType</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r423-type-presence-absence",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "2"
+              }
+            ]
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/slot.html#Slot.appointmentType">appointmentType</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r424-motif-absence",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "1"
+            }
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/slot.html#Slot.schedule">schedule</a>" : {
+          <a href="Schedule-tddui-schedule-example.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Schedule/tddui-schedule-example"
+        },
+        "<a href="http://hl7.org/fhir/R4/slot.html#Slot.status">status</a>" : "busy",
+        "<a href="http://hl7.org/fhir/R4/slot.html#Slot.start">start</a>" : "2025-04-17T08:00:00+02:00",
+        "<a href="http://hl7.org/fhir/R4/slot.html#Slot.end">end</a>" : "2025-04-17T17:30:00+02:00"
+      },
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request">request</a>" : {
+        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.method">method</a>" : "POST",
+        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.url">url</a>" : "TDDUISlotPresenceAbsence"
+      }
+    },
+    {
       "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "https://test-server.fr/Goal/tddui-goal-projet-vie-example",
       "<a href="http://hl7.org/fhir/R4/goal.html#Goal">resource</a>" : {
         "<a href="http://hl7.org/fhir/R4/goal.html">resourceType</a>" : "Goal",
@@ -1237,8 +1397,8 @@
           IG © 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  
           Package ans.fhir.fr.tddui#2.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-06-17 09:20:00 +0000">
-    2026-06-17
+  <span title="2026-06-29 13:11:00 +0000">
+    2026-06-29
   </span>
 
           <br/>

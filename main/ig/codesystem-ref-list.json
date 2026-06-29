@@ -23,9 +23,9 @@
     "uses" : {
     },
     "http://hl7.org/fhir/R4/valueset-consent-content-code.html" : "Consent Content Codes",
+    "ValueSet-tddui-observation-type.html" : "TDDUI Observation Type",
     "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes",
     "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J07-XdsTypeCode-CISIS.html" : "JDV_J07_XdsTypeCode_CISIS",
-    "ValueSet-tddui-observation-type.html" : "TDDUI Observation Type",
     "http://hl7.org/fhir/R4/valueset-consent-category.html" : "Consent Category Codes"
   },
   {
@@ -38,22 +38,22 @@
     "oids" : ["2.16.840.1.113883.6.96"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-questionnaire-answers.html" : "Questionnaire Answer Codes",
-    "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
     "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
-    "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
     "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
-    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-ressource-utilisee-cisis.html" : "JDV Ressource Utilisee CISIS",
-    "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-    "http://hl7.org/fhir/R4/valueset-care-plan-activity-outcome.html" : "Care Plan Activity Outcome",
+    "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
     "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
-    "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
-    "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles",
-    "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-ressource-utilisee-cisis.html" : "JDV Ressource Utilisee CISIS",
     "http://hl7.org/fhir/R4/valueset-goal-start-event.html" : "Goal start event",
+    "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
+    "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
+    "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
+    "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
+    "http://hl7.org/fhir/R4/valueset-questionnaire-answers.html" : "Questionnaire Answer Codes",
     "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
     "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
-    "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes"
+    "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+    "http://hl7.org/fhir/R4/valueset-care-plan-activity-outcome.html" : "Care Plan Activity Outcome",
+    "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
@@ -65,8 +65,8 @@
     "oids" : ["2.16.840.1.113883.4.642.4.1048"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-data-absent-reason.html" : "DataAbsentReason",
-    "ValueSet-tddui-encounter-type.html" : "TDDUI Encounter Type"
+    "ValueSet-tddui-encounter-type.html" : "TDDUI Encounter Type",
+    "http://hl7.org/fhir/R4/valueset-data-absent-reason.html" : "DataAbsentReason"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/discharge-disposition",
@@ -184,6 +184,17 @@
     "ValueSet-tddui-patient-identifier.html" : "TDDUI Patient Identifier"
   },
   {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-identifier",
+    "version" : "2.3.0",
+    "status" : "active",
+    "name" : "TDDUIObservationIdentifier",
+    "title" : "TDDUI Observation Identifier",
+    "description" : "CodeSystem pour la définition des codes d'identifiant d'observation",
+    "uses" : {
+    },
+    "ValueSet-tddui-observation-identifier-repas.html" : "TDDUI Observation Repas Identifier"
+  },
+  {
     "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-periode-scolaire",
     "version" : "2.3.0",
     "status" : "active",
@@ -204,6 +215,17 @@
     "uses" : {
     },
     "ValueSet-tddui-observation-type.html" : "TDDUI Observation Type"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-slot-identifier",
+    "version" : "2.3.0",
+    "status" : "active",
+    "name" : "TDDUISlotIdentifier",
+    "title" : "TDDUI Slot Identifier",
+    "description" : "CodeSystem pour la définition des codes d'identifiant de la ressource Slot",
+    "uses" : {
+    },
+    "ValueSet-tddui-slot-identifier-presence-absence.html" : "TDDUI Slot Identifier Presence Absence"
   },
   {
     "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action",
@@ -282,8 +304,8 @@
     "uses" : {
     },
     "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J02-XdsHealthcareFacilityTypeCode-CISIS.html" : "JDV_J02_XdsHealthcareFacilityTypeCode_CISIS",
-    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J04-XdsPracticeSettingCode-CISIS.html" : "JDV_J04_XdsPracticeSettingCode_CISIS",
-    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J01-XdsAuthorSpecialty-CISIS.html" : "JDV_J01_XdsAuthorSpecialty_CISIS"
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J01-XdsAuthorSpecialty-CISIS.html" : "JDV_J01_XdsAuthorSpecialty_CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J04-XdsPracticeSettingCode-CISIS.html" : "JDV_J04_XdsPracticeSettingCode_CISIS"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_A01-CadreExercice/FHIR/TRE-A01-CadreExercice",
@@ -453,8 +475,8 @@
     "oids" : ["1.2.250.1.213.1.1.4.327"],
     "uses" : {
     },
-    "https://hl7.fr/ig/fhir/core/2.1.0/ValueSet-fr-core-vs-patient-contact-role.html" : "FR Core ValueSet Patient contact role",
-    "ValueSet-tddui-contact-protection-juridique.html" : "TDDUI Contact Protection Juridique"
+    "ValueSet-tddui-contact-protection-juridique.html" : "TDDUI Contact Protection Juridique",
+    "https://hl7.fr/ig/fhir/core/2.1.0/ValueSet-fr-core-vs-patient-contact-role.html" : "FR Core ValueSet Patient contact role"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice",
@@ -466,8 +488,8 @@
     "oids" : ["1.2.250.1.213.1.6.1.18"],
     "uses" : {
     },
-    "https://hl7.fr/ig/fhir/core/2.1.0/ValueSet-fr-core-vs-practitioner-role-exercice.html" : "FR Core ValueSet PractitionerRole Exercice",
-    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J117-ModeExercice-ENREG.html" : "JDV_J117_ModeExercice_ENREG"
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J117-ModeExercice-ENREG.html" : "JDV_J117_ModeExercice_ENREG",
+    "https://hl7.fr/ig/fhir/core/2.1.0/ValueSet-fr-core-vs-practitioner-role-exercice.html" : "FR Core ValueSet PractitionerRole Exercice"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R258-RelationPriseCharge/FHIR/TRE-R258-RelationPriseCharge",
@@ -503,8 +525,8 @@
     "oids" : ["2.16.840.1.113883.5.110"],
     "uses" : {
     },
-    "https://hl7.fr/ig/fhir/core/2.1.0/ValueSet-fr-core-vs-patient-contact-role.html" : "FR Core ValueSet Patient contact role",
-    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-j384-role-membre-famille-ms.html" : "Jdv J384 Role Membre Famille Ms"
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-j384-role-membre-famille-ms.html" : "Jdv J384 Role Membre Famille Ms",
+    "https://hl7.fr/ig/fhir/core/2.1.0/ValueSet-fr-core-vs-patient-contact-role.html" : "FR Core ValueSet Patient contact role"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R302-ContexteCodeComplementaire/FHIR/TRE-R302-ContexteCodeComplementaire",
@@ -579,8 +601,8 @@
     "oids" : ["1.2.250.1.213.1.6.1.4"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J106-EnsembleProfession-RASS.html" : "JDV_J106_EnsembleProfession_RASS",
-    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J01-XdsAuthorSpecialty-CISIS.html" : "JDV_J01_XdsAuthorSpecialty_CISIS"
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J01-XdsAuthorSpecialty-CISIS.html" : "JDV_J01_XdsAuthorSpecialty_CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J106-EnsembleProfession-RASS.html" : "JDV_J106_EnsembleProfession_RASS"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R95-UsagerTitre/FHIR/TRE-R95-UsagerTitre",
@@ -592,8 +614,8 @@
     "oids" : ["1.2.250.1.213.1.6.1.109"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J106-EnsembleProfession-RASS.html" : "JDV_J106_EnsembleProfession_RASS",
-    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J01-XdsAuthorSpecialty-CISIS.html" : "JDV_J01_XdsAuthorSpecialty_CISIS"
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J01-XdsAuthorSpecialty-CISIS.html" : "JDV_J01_XdsAuthorSpecialty_CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J106-EnsembleProfession-RASS.html" : "JDV_J106_EnsembleProfession_RASS"
   },
   {
     "url" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
@@ -605,13 +627,13 @@
     "oids" : ["1.2.250.1.213.1.1.4.322"],
     "uses" : {
     },
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-detail-materiel-specialise-cisis.html" : "JDV Detail Materiel Specialise CISIS",
     "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-motif-non-realisation-evenement-cisis.html" : "JDV Motif Non Realisation Evenement CISIS",
     "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-detail-ressource-immobiliere-utilisee-cisis.html" : "JDV Detail Ressource Immobiliere Utilisee CISIS",
-    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-detail-materiel-specialise-cisis.html" : "JDV Detail Materiel Specialise CISIS",
-    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-type-evenement-ssiad-cisis.html" : "JDV Type Evenement Ssiad CISIS",
-    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-ressource-utilisee-cisis.html" : "JDV Ressource Utilisee CISIS",
     "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-mode-de-transport-cisis.html" : "JDV Mode De Transport CISIS",
-    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-type-motorisation-cisis.html" : "JDV Type Motorisation CISIS"
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-type-evenement-ssiad-cisis.html" : "JDV Type Evenement Ssiad CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-type-motorisation-cisis.html" : "JDV Type Motorisation CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-ressource-utilisee-cisis.html" : "JDV Ressource Utilisee CISIS"
   },
   {
     "url" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r389-statut-bilan-projet-personnalise",
@@ -660,6 +682,42 @@
     "uses" : {
     },
     "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-j386-type-enseignement-specialise-ms.html" : "Jdv J386 Type Enseignement Specialise Ms"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r423-type-presence-absence",
+    "version" : "20260505120000",
+    "status" : "draft",
+    "name" : "TreR423TypePresenceAbsence",
+    "title" : "Tre R423 Type Presence Absence",
+    "description" : "Déclaration du type de présence absence de l'usager lors d'un événement organisé par sa structure de rattachement.",
+    "oids" : ["1.2.250.1.213.3.3.274"],
+    "uses" : {
+    },
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-j405-type-presence-absence-ms.html" : "Jdv J405 Type Presence Absence Ms"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r424-motif-absence",
+    "version" : "20260505120000",
+    "status" : "draft",
+    "name" : "TreR424MotifAbsence",
+    "title" : "Tre R424 Motif Absence",
+    "description" : "Motif pour lequel l'usager n'est pas présent lors d'un événement organisé par sa structure de rattachement.",
+    "oids" : ["1.2.250.1.213.3.3.275"],
+    "uses" : {
+    },
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-j406-motif-absence-ms.html" : "Jdv J406 Motif Absence Ms"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r425-type-repas",
+    "version" : "20260505120000",
+    "status" : "draft",
+    "name" : "TreR425TypeRepas",
+    "title" : "Tre R425 Type Repas",
+    "description" : "Type de repas.",
+    "oids" : ["1.2.250.1.213.3.3.276"],
+    "uses" : {
+    },
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-j407-type-repas-ms.html" : "Jdv J407 Type Repas Ms"
   },
   {
     "url" : "https://smt.esante.gouv.fr/terminologie-SERAFINPH",

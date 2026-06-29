@@ -2,7 +2,7 @@
 
 ## Extension: TDDUI Patient Present 
 
-Evènement nécessitant ou non la présence physique de l’usager.
+* **Événement** : évènement nécessitant ou non la présence physique de l’usager.
 
 **Context of Use**
 
@@ -35,7 +35,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-patient-pre
   "name" : "TDDUIPatientPresent",
   "title" : "TDDUI Patient Present",
   "status" : "active",
-  "date" : "2026-06-17T09:20:14+00:00",
+  "date" : "2026-06-29T13:11:00+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-patient-pre
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Evènement nécessitant ou non la présence physique de l’usager.",
+  "description" : "\n- **Événement** : évènement nécessitant ou non la présence physique de l’usager.\n",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -72,7 +72,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-patient-pre
       "id" : "Extension",
       "path" : "Extension",
       "short" : "TDDUI Patient Present",
-      "definition" : "Evènement nécessitant ou non la présence physique de l’usager."
+      "definition" : "\n- **Événement** : évènement nécessitant ou non la présence physique de l’usager.\n"
     },
     {
       "id" : "Extension.extension",

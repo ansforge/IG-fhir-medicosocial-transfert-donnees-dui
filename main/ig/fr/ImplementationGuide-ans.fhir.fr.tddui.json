@@ -11,7 +11,7 @@
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2026-06-17T09:20:14+00:00",
+  "date" : "2026-06-29T13:11:00+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -1206,6 +1206,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-facturation"
+      },
+      "name" : "TDDUI Facturation",
+      "description" : "Indique si une facture a été établie.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -1374,6 +1386,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/tddui-observation-identifier"
+      },
+      "name" : "TDDUI Observation Identifier",
+      "description" : "CodeSystem pour la définition des codes d'identifiant d'observation",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -1446,6 +1470,42 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-observation-repas"
+      },
+      "name" : "TDDUI Observation Repas",
+      "description" : "Profil de la ressource Observation permettant de représenter si l'usager bénéficie ou non des repas.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/tddui-observation-repas-example"
+      },
+      "name" : "TDDUI Observation Repas Example",
+      "description" : "Exemple de la ressource TDDUIObservationRepas",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-repas"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/tddui-observation-identifier-repas"
+      },
+      "name" : "TDDUI Observation Repas Identifier",
+      "description" : "ValueSet pour la définition des codes d'identifiant du repas",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -1512,7 +1572,7 @@
         "reference" : "StructureDefinition/tddui-participant-present"
       },
       "name" : "TDDUI Participant Present",
-      "description" : "Indique la présence du participant à l'événement.",
+      "description" : "Indique la présence du participant à l'événement.\n- **Événement** :Indique la présence du participant à l'événement.\n- **Repas** : Indique la présence de l'usager au repas.",
       "exampleBoolean" : false
     },
     {
@@ -1596,7 +1656,7 @@
         "reference" : "StructureDefinition/tddui-patient-present"
       },
       "name" : "TDDUI Patient Present",
-      "description" : "Evènement nécessitant ou non la présence physique de l’usager.",
+      "description" : "\n- **Événement** : évènement nécessitant ou non la présence physique de l’usager.",
       "exampleBoolean" : false
     },
     {
@@ -1609,6 +1669,18 @@
       },
       "name" : "TDDUI Patient Validation",
       "description" : "Validation par l'usager que l'événement a eu lieu.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-planned-absence"
+      },
+      "name" : "TDDUI Planned Absence",
+      "description" : "Absence prévue",
       "exampleBoolean" : false
     },
     {
@@ -2214,6 +2286,30 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-schedule"
+      },
+      "name" : "TDDUI Schedule",
+      "description" : "Profil de la ressource FRCoreScheduleProfile permettant de contenir l'ensemble des présences et absences de l'usager.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Schedule"
+      }],
+      "reference" : {
+        "reference" : "Schedule/tddui-schedule-example"
+      },
+      "name" : "TDDUI Schedule Example",
+      "description" : "Exemple de la ressource TDDUISchedule.",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-schedule"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -2234,6 +2330,54 @@
       "name" : "TDDUI ServiceRequest Besoin",
       "description" : "Profil de la ressource ServiceRequest permettant de représenter les besoins de l'usager.",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/tddui-slot-identifier"
+      },
+      "name" : "TDDUI Slot Identifier",
+      "description" : "CodeSystem pour la définition des codes d'identifiant de la ressource Slot",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/tddui-slot-identifier-presence-absence"
+      },
+      "name" : "TDDUI Slot Identifier Presence Absence",
+      "description" : "ValueSet définissant les types d'identifiants pour la ressource SlotPresenceAbsence.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-slot-presence-absence"
+      },
+      "name" : "TDDUI Slot Presence Absence",
+      "description" : "Profil de la ressource FRCoreSlotProfile permettant de représenter les présences et absences de l'usager.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Slot"
+      }],
+      "reference" : {
+        "reference" : "Slot/tddui-slot-presence-absence-example"
+      },
+      "name" : "TDDUI Slot PresenceAbsence Example",
+      "description" : "Exemple de la ressource TDDUISlotPresenceAbsence.",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-slot-presence-absence"
     },
     {
       "extension" : [{

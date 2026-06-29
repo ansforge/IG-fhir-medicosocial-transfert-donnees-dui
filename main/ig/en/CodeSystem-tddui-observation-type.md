@@ -30,7 +30,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "TDDUI Observation Type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-17T09:20:14+00:00",
+  "date" : "2026-06-29T13:11:00+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -49,7 +49,7 @@ This Code system is referenced in the definition of the following value sets:
   }],
   "caseSensitive" : true,
   "content" : "complete",
-  "count" : 2,
+  "count" : 3,
   "concept" : [{
     "code" : "PERIODESCOL",
     "display" : "Période scolaire"
@@ -57,6 +57,10 @@ This Code system is referenced in the definition of the following value sets:
   {
     "code" : "OBSAMENAGEMENT",
     "display" : "Observation sur l’aménagement du moyen de transport"
+  },
+  {
+    "code" : "REPAS",
+    "display" : "Repas"
   }]
 }
 

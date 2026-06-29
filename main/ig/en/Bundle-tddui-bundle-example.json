@@ -683,6 +683,131 @@
     }
   },
   {
+    "fullUrl" : "https://test-server.fr/Observation/tddui-observation-repas-example",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "tddui-observation-repas-example",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-repas"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "extensions"
+      },
+      "extension" : [{
+        "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-participant-present",
+        "valueBoolean" : true
+      }],
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-identifier",
+            "code" : "REP"
+          }]
+        },
+        "system" : "https://identifiant-medicosocial-repas.esante.gouv.fr",
+        "value" : "3480787529/1012-REPAS-0002"
+      }],
+      "status" : "registered",
+      "category" : [{
+        "coding" : [{
+          "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r425-type-repas",
+          "code" : "1"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-type",
+          "code" : "REPAS",
+          "display" : "Repas"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/tddui-patient-ins-example"
+      },
+      "effectiveDateTime" : "2025-04-17T12:00:00+02:00"
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "TDDUIObservationRepas"
+    }
+  },
+  {
+    "fullUrl" : "https://test-server.fr/Schedule/tddui-schedule-example",
+    "resource" : {
+      "resourceType" : "Schedule",
+      "id" : "tddui-schedule-example",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-schedule"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "actor" : [{
+        "reference" : "Patient/tddui-patient-ins-example"
+      }]
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "TDDUISchedule"
+    }
+  },
+  {
+    "fullUrl" : "https://test-server.fr/Slot/tddui-slot-presence-absence-example",
+    "resource" : {
+      "resourceType" : "Slot",
+      "id" : "tddui-slot-presence-absence-example",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-slot-presence-absence"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "extensions"
+      },
+      "extension" : [{
+        "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-facturation",
+        "valueBoolean" : true
+      },
+      {
+        "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-planned-absence",
+        "valueBoolean" : true
+      }],
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-slot-identifier",
+            "code" : "PA"
+          }]
+        },
+        "system" : "https://identifiant-medicosocial-presenceabsence.esante.gouv.fr",
+        "value" : "3480787529/1012-PA-0001"
+      }],
+      "serviceType" : [{
+        "coding" : [{
+          "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r423-type-presence-absence",
+          "code" : "2"
+        }]
+      }],
+      "appointmentType" : {
+        "coding" : [{
+          "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r424-motif-absence",
+          "code" : "1"
+        }]
+      },
+      "schedule" : {
+        "reference" : "Schedule/tddui-schedule-example"
+      },
+      "status" : "busy",
+      "start" : "2025-04-17T08:00:00+02:00",
+      "end" : "2025-04-17T17:30:00+02:00"
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "TDDUISlotPresenceAbsence"
+    }
+  },
+  {
     "fullUrl" : "https://test-server.fr/Goal/tddui-goal-projet-vie-example",
     "resource" : {
       "resourceType" : "Goal",

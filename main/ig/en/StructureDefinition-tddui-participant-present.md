@@ -4,13 +4,17 @@
 
 Indique la présence du participant à l'événement.
 
+* **Événement** :Indique la présence du participant à l'événement.
+* **Repas** : Indique la présence de l'usager au repas.
+
 **Context of Use**
 
 **Usage info**
 
 **Usages:**
 
-* Use this Extension: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)
+* Use this Extension: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md) and [TDDUI Observation Repas](StructureDefinition-tddui-observation-repas.md)
+* Examples for this Extension: [Bundle/tddui-bundle-example](Bundle-tddui-bundle-example.md) and [Observation/tddui-observation-repas-example](Observation-tddui-observation-repas-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ans.fhir.fr.tddui|current/StructureDefinition/StructureDefinition-tddui-participant-present.json)
 
@@ -35,7 +39,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-participant
   "name" : "TDDUIParticipantPresent",
   "title" : "TDDUI Participant Present",
   "status" : "active",
-  "date" : "2026-06-17T09:20:14+00:00",
+  "date" : "2026-06-29T13:11:00+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -44,7 +48,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-participant
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Indique la présence du participant à l'événement.",
+  "description" : "Indique la présence du participant à l'événement.\n- **Événement** :Indique la présence du participant à l'événement.\n- **Repas** : Indique la présence de l'usager au repas.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -67,6 +71,10 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-participant
   {
     "type" : "element",
     "expression" : "Encounter.serviceProvider"
+  },
+  {
+    "type" : "element",
+    "expression" : "Observation"
   }],
   "type" : "Extension",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
@@ -76,7 +84,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-participant
       "id" : "Extension",
       "path" : "Extension",
       "short" : "TDDUI Participant Present",
-      "definition" : "Indique la présence du participant à l'événement."
+      "definition" : "Indique la présence du participant à l'événement.\n- **Événement** :Indique la présence du participant à l'événement.\n- **Repas** : Indique la présence de l'usager au repas."
     },
     {
       "id" : "Extension.extension",

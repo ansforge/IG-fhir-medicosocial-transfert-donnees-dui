@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,815 +7,1024 @@
 
 <https://interop.esante.gouv.fr/ig/fhir/tddui/Bundle/tddui-bundle-example> a fhir:Bundle ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "tddui-bundle-example"] ; # 
-  fhir:meta [
-     fhir:profile ( [
-       fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle"^^xsd:anyURI ;
+  fhir:Resource.id [ fhir:value "tddui-bundle-example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle" ;
+       fhir:index -1 ;
        fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle>
-     ] )
-  ] ; # 
-  fhir:language [ fhir:v "en"] ; # 
-  fhir:type [ fhir:v "transaction"] ; # 
-  fhir:entry ( [
-     fhir:fullUrl [ fhir:v "https://test-server.fr/Patient/tddui-patient-ins-example"^^xsd:anyURI ] ;
-     fhir:resource ( <https://test-server.fr/Patient/tddui-patient-ins-example> ) ;
-     fhir:request [
-       fhir:method [ fhir:v "POST" ] ;
-       fhir:url [ fhir:v "TDDUIPatientINS"^^xsd:anyURI ]
      ]
-  ] [
-     fhir:fullUrl [ fhir:v "https://test-server.fr/Organization/tddui-organization-example"^^xsd:anyURI ] ;
-     fhir:resource ( <https://test-server.fr/Organization/tddui-organization-example> ) ;
-     fhir:request [
-       fhir:method [ fhir:v "POST" ] ;
-       fhir:url [ fhir:v "TDDUIOrganization"^^xsd:anyURI ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:Bundle.type [ fhir:value "transaction"] ;
+  fhir:Bundle.entry [
+     fhir:index -1 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "https://test-server.fr/Patient/tddui-patient-ins-example" ] ;
+     fhir:Bundle.entry.resource <https://test-server.fr/Patient/tddui-patient-ins-example> ;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ] ;
+       fhir:Bundle.entry.request.url [ fhir:value "TDDUIPatientINS" ]
      ]
-  ] [
-     fhir:fullUrl [ fhir:v "https://test-server.fr/Encounter/tddui-encounter-sejour-example"^^xsd:anyURI ] ;
-     fhir:resource ( <https://test-server.fr/Encounter/tddui-encounter-sejour-example> ) ;
-     fhir:request [
-       fhir:method [ fhir:v "POST" ] ;
-       fhir:url [ fhir:v "TDDUIEncounterSejour"^^xsd:anyURI ]
+  ], [
+     fhir:index -1 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "https://test-server.fr/Organization/tddui-organization-example" ] ;
+     fhir:Bundle.entry.resource <https://test-server.fr/Organization/tddui-organization-example> ;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ] ;
+       fhir:Bundle.entry.request.url [ fhir:value "TDDUIOrganization" ]
      ]
-  ] [
-     fhir:fullUrl [ fhir:v "https://test-server.fr/Encounter/tddui-encounter-evenement-example"^^xsd:anyURI ] ;
-     fhir:resource ( <https://test-server.fr/Encounter/tddui-encounter-evenement-example> ) ;
-     fhir:request [
-       fhir:method [ fhir:v "POST" ] ;
-       fhir:url [ fhir:v "TDDUIEncounterEvenement"^^xsd:anyURI ]
+  ], [
+     fhir:index -1 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "https://test-server.fr/Encounter/tddui-encounter-sejour-example" ] ;
+     fhir:Bundle.entry.resource <https://test-server.fr/Encounter/tddui-encounter-sejour-example> ;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ] ;
+       fhir:Bundle.entry.request.url [ fhir:value "TDDUIEncounterSejour" ]
      ]
-  ] [
-     fhir:fullUrl [ fhir:v "https://test-server.fr/Practitioner/tddui-practitioner-example"^^xsd:anyURI ] ;
-     fhir:resource ( <https://test-server.fr/Practitioner/tddui-practitioner-example> ) ;
-     fhir:request [
-       fhir:method [ fhir:v "POST" ] ;
-       fhir:url [ fhir:v "TDDUIPractitioner"^^xsd:anyURI ]
+  ], [
+     fhir:index -1 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "https://test-server.fr/Encounter/tddui-encounter-evenement-example" ] ;
+     fhir:Bundle.entry.resource <https://test-server.fr/Encounter/tddui-encounter-evenement-example> ;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ] ;
+       fhir:Bundle.entry.request.url [ fhir:value "TDDUIEncounterEvenement" ]
      ]
-  ] [
-     fhir:fullUrl [ fhir:v "https://test-server.fr/PractitionerRole/tddui-practitioner-role-example"^^xsd:anyURI ] ;
-     fhir:resource ( <https://test-server.fr/PractitionerRole/tddui-practitioner-role-example> ) ;
-     fhir:request [
-       fhir:method [ fhir:v "POST" ] ;
-       fhir:url [ fhir:v "TDDUIPractitionerRole"^^xsd:anyURI ]
+  ], [
+     fhir:index -1 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "https://test-server.fr/Practitioner/tddui-practitioner-example" ] ;
+     fhir:Bundle.entry.resource <https://test-server.fr/Practitioner/tddui-practitioner-example> ;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ] ;
+       fhir:Bundle.entry.request.url [ fhir:value "TDDUIPractitioner" ]
      ]
-  ] [
-     fhir:fullUrl [ fhir:v "https://test-server.fr/Task/tddui-task-transport-professionel-example"^^xsd:anyURI ] ;
-     fhir:resource ( <https://test-server.fr/Task/tddui-task-transport-professionel-example> ) ;
-     fhir:request [
-       fhir:method [ fhir:v "POST" ] ;
-       fhir:url [ fhir:v "TDDUITaskTransportProfessionnel"^^xsd:anyURI ]
+  ], [
+     fhir:index -1 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "https://test-server.fr/PractitionerRole/tddui-practitioner-role-example" ] ;
+     fhir:Bundle.entry.resource <https://test-server.fr/PractitionerRole/tddui-practitioner-role-example> ;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ] ;
+       fhir:Bundle.entry.request.url [ fhir:value "TDDUIPractitionerRole" ]
      ]
-  ] [
-     fhir:fullUrl [ fhir:v "https://test-server.fr/Task/tddui-task-transport-usager-example"^^xsd:anyURI ] ;
-     fhir:resource ( <https://test-server.fr/Task/tddui-task-transport-usager-example> ) ;
-     fhir:request [
-       fhir:method [ fhir:v "POST" ] ;
-       fhir:url [ fhir:v "TDDUITaskTransportUsager"^^xsd:anyURI ]
+  ], [
+     fhir:index -1 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "https://test-server.fr/Task/tddui-task-transport-professionel-example" ] ;
+     fhir:Bundle.entry.resource <https://test-server.fr/Task/tddui-task-transport-professionel-example> ;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ] ;
+       fhir:Bundle.entry.request.url [ fhir:value "TDDUITaskTransportProfessionnel" ]
      ]
-  ] [
-     fhir:fullUrl [ fhir:v "https://test-server.fr/Goal/tddui-goal-projet-vie-example"^^xsd:anyURI ] ;
-     fhir:resource ( <https://test-server.fr/Goal/tddui-goal-projet-vie-example> ) ;
-     fhir:request [
-       fhir:method [ fhir:v "POST" ] ;
-       fhir:url [ fhir:v "TDDUIGoalProjetVie"^^xsd:anyURI ]
+  ], [
+     fhir:index -1 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "https://test-server.fr/Task/tddui-task-transport-usager-example" ] ;
+     fhir:Bundle.entry.resource <https://test-server.fr/Task/tddui-task-transport-usager-example> ;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ] ;
+       fhir:Bundle.entry.request.url [ fhir:value "TDDUITaskTransportUsager" ]
      ]
-  ] ) . # 
+  ], [
+     fhir:index -1 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "https://test-server.fr/Observation/tddui-observation-repas-example" ] ;
+     fhir:Bundle.entry.resource <https://test-server.fr/Observation/tddui-observation-repas-example> ;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ] ;
+       fhir:Bundle.entry.request.url [ fhir:value "TDDUIObservationRepas" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "https://test-server.fr/Schedule/tddui-schedule-example" ] ;
+     fhir:Bundle.entry.resource <https://test-server.fr/Schedule/tddui-schedule-example> ;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ] ;
+       fhir:Bundle.entry.request.url [ fhir:value "TDDUISchedule" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "https://test-server.fr/Slot/tddui-slot-presence-absence-example" ] ;
+     fhir:Bundle.entry.resource <https://test-server.fr/Slot/tddui-slot-presence-absence-example> ;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ] ;
+       fhir:Bundle.entry.request.url [ fhir:value "TDDUISlotPresenceAbsence" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "https://test-server.fr/Goal/tddui-goal-projet-vie-example" ] ;
+     fhir:Bundle.entry.resource <https://test-server.fr/Goal/tddui-goal-projet-vie-example> ;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ] ;
+       fhir:Bundle.entry.request.url [ fhir:value "TDDUIGoalProjetVie" ]
+     ]
+  ] .
 
 <https://test-server.fr/Patient/tddui-patient-ins-example> a fhir:Patient ;
-  fhir:id [ fhir:v "tddui-patient-ins-example"] ; # 
-  fhir:meta [
-     fhir:profile ( [
-       fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"^^xsd:anyURI ;
+  fhir:Resource.id [ fhir:value "tddui-patient-ins-example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins" ;
+       fhir:index -1 ;
        fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins>
-     ] )
-  ] ; # 
-  fhir:language [ fhir:v "en"] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ]
-  ] ; # 
-  fhir:extension ( [
-     fhir:extension ( [
-       fhir:url [ fhir:v "identityStatus"^^xsd:anyURI ] ;
-       fhir:value [
-         a fhir:Coding ;
-         fhir:system [ fhir:v "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "VALI" ]
-       ]
-     ] ) ;
-     fhir:url [ fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability"^^xsd:anyURI ]
-  ] [
-     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:Address ;
-       fhir:extension ( [
-         fhir:url [ fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:Coding ;
-           fhir:system [ fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM"^^xsd:anyURI ] ;
-           fhir:code [ fhir:v "63220" ]
-         ]
-       ] ) ;
-       fhir:city [ fhir:v "Mazoires" ] ;
-       fhir:country [ fhir:v "FRA" ]
      ]
-  ] [
-     fhir:extension ( [
-       fhir:url [ fhir:v "familySituation"^^xsd:anyURI ] ;
-       fhir:value [
-         a fhir:CodeableConcept ;
-         fhir:coding ( [
-           fhir:system [ fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R317-SituationVieQuotidienne/FHIR/TRE-R317-SituationVieQuotidienne"^^xsd:anyURI ] ;
-           fhir:code [ fhir:v "01" ] ;
-           fhir:display [ fhir:v "Seul" ]
-         ] )
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ]
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index -1 ;
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "identityStatus" ] ;
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445" ] ;
+         fhir:Coding.code [ fhir:value "VALI" ]
        ]
-     ] ) ;
-     fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-household-situation"^^xsd:anyURI ]
-  ] ) ; # 
-  fhir:identifier ( [
-     fhir:use [ fhir:v "official" ] ;
-     fhir:type [
-       fhir:coding ( [
-         fhir:system [ fhir:v "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "INS-NIR" ]
-       ] )
      ] ;
-     fhir:system [ fhir:v "urn:oid:1.2.250.1.213.1.4.8"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "147720425367411" ]
-  ] [
-     fhir:type [
-       fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "PI" ] ;
-         fhir:display [ fhir:v "Patient internal identifier" ]
-       ] )
-     ] ;
-     fhir:system [ fhir:v "https://identifiant-medicosocial-localusager.esante.gouv.fr"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "3480787529/194704032" ]
-  ] [
-     fhir:type [
-       fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "DL" ]
-       ] )
-     ] ;
-     fhir:system [ fhir:v "https://ants.gouv.fr/"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "822146819" ] ;
-     fhir:period [
-       fhir:start [ fhir:v "1980-01-01"^^xsd:date ]
+     fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/patient-birthPlace" ] ;
+     fhir:Extension.valueAddress [
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code" ] ;
+         fhir:Extension.valueCoding [
+           fhir:Coding.system [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM" ] ;
+           fhir:Coding.code [ fhir:value "63220" ]
+         ]
+       ] ;
+       fhir:Address.city [ fhir:value "Mazoires" ] ;
+       fhir:Address.country [ fhir:value "FRA" ]
      ]
-  ] ) ; # 
-  fhir:name ( [
-     fhir:extension ( [
-       fhir:url [ fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name"^^xsd:anyURI ] ;
-       fhir:value [
-         a fhir:string ;
-         fhir:v "Jean Stéphane Patrick"
+  ], [
+     fhir:index -1 ;
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "familySituation" ] ;
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index -1 ;
+           fhir:Coding.system [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R317-SituationVieQuotidienne/FHIR/TRE-R317-SituationVieQuotidienne" ] ;
+           fhir:Coding.code [ fhir:value "01" ] ;
+           fhir:Coding.display [ fhir:value "Seul" ]
+         ]
        ]
-     ] ) ;
-     fhir:use [ fhir:v "official" ] ;
-     fhir:family [ fhir:v "DUPONT" ] ;
-     fhir:given ( [ fhir:v "Jean" ] )
-  ] [
-     fhir:use [ fhir:v "usual" ] ;
-     fhir:family [ fhir:v "DUPONT" ]
-  ] ) ; # 
-  fhir:gender [ fhir:v "male"] ; # 
-  fhir:birthDate [ fhir:v "1947-04-03"^^xsd:date] ; # 
-  fhir:address ( [
-     fhir:use [ fhir:v "home" ] ;
-     fhir:line ( [
-       fhir:v "12 rue des Lilas" ;
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "12"
-         ]
-       ] [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameBase"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "rue des Lilas"
-         ]
-       ] )
-     ] ) ;
-     fhir:postalCode [ fhir:v "76748" ] ;
-     fhir:country [ fhir:v "99100" ]
-  ] ) . # 
+     ] ;
+     fhir:Extension.url [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-household-situation" ]
+  ] ;
+  fhir:Patient.identifier [
+     fhir:index -1 ;
+     fhir:Identifier.use [ fhir:value "official" ] ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203" ] ;
+         fhir:Coding.code [ fhir:value "INS-NIR" ]
+       ]
+     ] ;
+     fhir:Identifier.system [ fhir:value "urn:oid:1.2.250.1.213.1.4.8" ] ;
+     fhir:Identifier.value [ fhir:value "147720425367411" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ] ;
+         fhir:Coding.code [ fhir:value "PI" ] ;
+         fhir:Coding.display [ fhir:value "Patient internal identifier" ]
+       ]
+     ] ;
+     fhir:Identifier.system [ fhir:value "https://identifiant-medicosocial-localusager.esante.gouv.fr" ] ;
+     fhir:Identifier.value [ fhir:value "3480787529/194704032" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ] ;
+         fhir:Coding.code [ fhir:value "DL" ]
+       ]
+     ] ;
+     fhir:Identifier.system [ fhir:value "https://ants.gouv.fr/" ] ;
+     fhir:Identifier.value [ fhir:value "822146819" ] ;
+     fhir:Identifier.period [
+       fhir:Period.start [ fhir:value "1980-01-01"^^xsd:date ]
+     ]
+  ] ;
+  fhir:Patient.name [
+     fhir:index -1 ;
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name" ] ;
+       fhir:Extension.valueString [ fhir:value "Jean Stéphane Patrick" ]
+     ] ;
+     fhir:HumanName.use [ fhir:value "official" ] ;
+     fhir:HumanName.family [ fhir:value "DUPONT" ] ;
+     fhir:HumanName.given [
+       fhir:value "Jean" ;
+       fhir:index -1
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:HumanName.use [ fhir:value "usual" ] ;
+     fhir:HumanName.family [ fhir:value "DUPONT" ]
+  ] ;
+  fhir:Patient.gender [ fhir:value "male"] ;
+  fhir:Patient.birthDate [ fhir:value "1947-04-03"^^xsd:date] ;
+  fhir:Patient.address [
+     fhir:index -1 ;
+     fhir:Address.use [ fhir:value "home" ] ;
+     fhir:Address.line [
+       fhir:value "12 rue des Lilas" ;
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber" ] ;
+         fhir:Extension.valueString [ fhir:value "12" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameBase" ] ;
+         fhir:Extension.valueString [ fhir:value "rue des Lilas" ]
+       ]
+     ] ;
+     fhir:Address.postalCode [ fhir:value "76748" ] ;
+     fhir:Address.country [ fhir:value "99100" ]
+  ] .
 
 <https://test-server.fr/Organization/tddui-organization-example> a fhir:Organization ;
-  fhir:id [ fhir:v "tddui-organization-example"] ; # 
-  fhir:meta [
-     fhir:profile ( [
-       fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization"^^xsd:anyURI ;
+  fhir:Resource.id [ fhir:value "tddui-organization-example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization" ;
+       fhir:index -1 ;
        fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization>
-     ] )
-  ] ; # 
-  fhir:language [ fhir:v "en"] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ]
-  ] ; # 
-  fhir:identifier ( [
-     fhir:type [
-       fhir:coding ( [
-         fhir:system [ fhir:v "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "IDNST" ]
-       ] )
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ]
+  ] ;
+  fhir:Organization.identifier [
+     fhir:index -1 ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203" ] ;
+         fhir:Coding.code [ fhir:value "IDNST" ]
+       ]
      ] ;
-     fhir:system [ fhir:v "urn:oid:1.2.250.1.71.4.2.2"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "1480787529" ]
-  ] ) ; # 
-  fhir:name [ fhir:v "Les Chênes Verts"] . # 
+     fhir:Identifier.system [ fhir:value "urn:oid:1.2.250.1.71.4.2.2" ] ;
+     fhir:Identifier.value [ fhir:value "1480787529" ]
+  ] ;
+  fhir:Organization.name [ fhir:value "Les Chênes Verts"] .
 
 <https://test-server.fr/Encounter/tddui-encounter-sejour-example> a fhir:Encounter ;
-  fhir:id [ fhir:v "tddui-encounter-sejour-example"] ; # 
-  fhir:meta [
-     fhir:profile ( [
-       fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour"^^xsd:anyURI ;
+  fhir:Resource.id [ fhir:value "tddui-encounter-sejour-example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour" ;
+       fhir:index -1 ;
        fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour>
-     ] )
-  ] ; # 
-  fhir:language [ fhir:v "en"] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "extensions" ]
-  ] ; # 
-  fhir:extension ( [
-     fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-admission-date"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:dateTime ;
-       fhir:v "2023-04-11"^^xsd:date
      ]
-  ] [
-     fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-mode-label"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:string ;
-       fhir:v "Date de début du suivi post-opératoire : 14/04/2023"
-     ]
-  ] [
-     fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exit-mode-label"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:string ;
-       fhir:v "Sortie prévisionnelle prévue pour le 5 mai 2023"
-     ]
-  ] [
-     fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedEndDate"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:dateTime ;
-       fhir:v "2023-05-05"^^xsd:date
-     ]
-  ] ) ; # 
-  fhir:identifier ( [
-     fhir:type [
-       fhir:coding ( [
-         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "SEJ" ] ;
-         fhir:display [ fhir:v "Identifiant du séjour" ]
-       ] )
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ]
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-admission-date" ] ;
+     fhir:Extension.valueDateTime [ fhir:value "2023-04-11"^^xsd:date ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-mode-label" ] ;
+     fhir:Extension.valueString [ fhir:value "Date de début du suivi post-opératoire : 14/04/2023" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exit-mode-label" ] ;
+     fhir:Extension.valueString [ fhir:value "Sortie prévisionnelle prévue pour le 5 mai 2023" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedEndDate" ] ;
+     fhir:Extension.valueDateTime [ fhir:value "2023-05-05"^^xsd:date ]
+  ] ;
+  fhir:Encounter.identifier [
+     fhir:index -1 ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier" ] ;
+         fhir:Coding.code [ fhir:value "SEJ" ] ;
+         fhir:Coding.display [ fhir:value "Identifiant du séjour" ]
+       ]
      ] ;
-     fhir:system [ fhir:v "https://identifiant-medicosocial-sejour.esante.gouv.fr"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "3480787529/147720425367411-SEJOUR-1012" ]
-  ] [
-     fhir:type [
-       fhir:coding ( [
-         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "NUMDOSS" ] ;
-         fhir:display [ fhir:v "Numéro de dossier administratif du séjour" ]
-       ] )
+     fhir:Identifier.system [ fhir:value "https://identifiant-medicosocial-sejour.esante.gouv.fr" ] ;
+     fhir:Identifier.value [ fhir:value "3480787529/147720425367411-SEJOUR-1012" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier" ] ;
+         fhir:Coding.code [ fhir:value "NUMDOSS" ] ;
+         fhir:Coding.display [ fhir:value "Numéro de dossier administratif du séjour" ]
+       ]
      ] ;
-     fhir:system [ fhir:v "https://identifiant-medicosocial-sejour.esante.gouv.fr"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "1012" ]
-  ] ) ; # 
-  fhir:status [ fhir:v "in-progress"] ; # 
-  fhir:class [
-     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
-     fhir:code [ fhir:v "HH" ]
-  ] ; # 
-  fhir:subject [
+     fhir:Identifier.system [ fhir:value "https://identifiant-medicosocial-sejour.esante.gouv.fr" ] ;
+     fhir:Identifier.value [ fhir:value "1012" ]
+  ] ;
+  fhir:Encounter.status [ fhir:value "in-progress"] ;
+  fhir:Encounter.class [
+     fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActCode" ] ;
+     fhir:Coding.code [ fhir:value "HH" ]
+  ] ;
+  fhir:Encounter.subject [
      fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-patient-ins-example> ;
-     fhir:reference [ fhir:v "Patient/tddui-patient-ins-example" ]
-  ] ; # 
-  fhir:period [
-     fhir:start [ fhir:v "2023-04-14"^^xsd:date ]
-  ] ; # 
-  fhir:hospitalization [
-     fhir:origin [
+     fhir:Reference.reference [ fhir:value "Patient/tddui-patient-ins-example" ]
+  ] ;
+  fhir:Encounter.period [
+     fhir:Period.start [ fhir:value "2023-04-14"^^xsd:date ]
+  ] ;
+  fhir:Encounter.hospitalization [
+     fhir:Encounter.hospitalization.origin [
        fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Organization/tddui-organization-origine-example> ;
-       fhir:reference [ fhir:v "Organization/tddui-organization-origine-example" ]
+       fhir:Reference.reference [ fhir:value "Organization/tddui-organization-origine-example" ]
      ] ;
-     fhir:admitSource [
-       fhir:coding ( [
-         fhir:system [ fhir:v "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "GEN-092.06.07" ] ;
-         fhir:display [ fhir:v "Autre modalité d'entrée" ]
-       ] )
+     fhir:Encounter.hospitalization.admitSource [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis" ] ;
+         fhir:Coding.code [ fhir:value "GEN-092.06.07" ] ;
+         fhir:Coding.display [ fhir:value "Autre modalité d'entrée" ]
+       ]
      ]
-  ] ; # 
-  fhir:serviceProvider [
+  ] ;
+  fhir:Encounter.serviceProvider [
      fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Organization/tddui-organization-example> ;
-     fhir:reference [ fhir:v "Organization/tddui-organization-example" ]
-  ] . # 
+     fhir:Reference.reference [ fhir:value "Organization/tddui-organization-example" ]
+  ] .
 
 <https://test-server.fr/Encounter/tddui-encounter-evenement-example> a fhir:Encounter ;
-  fhir:id [ fhir:v "tddui-encounter-evenement-example"] ; # 
-  fhir:meta [
-     fhir:profile ( [
-       fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement"^^xsd:anyURI ;
+  fhir:Resource.id [ fhir:value "tddui-encounter-evenement-example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement" ;
+       fhir:index -1 ;
        fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement>
-     ] )
-  ] ; # 
-  fhir:language [ fhir:v "en"] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "extensions" ]
-  ] ; # 
-  fhir:extension ( [
-     fhir:extension ( [
-       fhir:url [ fhir:v "TDDUIRessourceType"^^xsd:anyURI ] ;
-       fhir:value [
-         a fhir:CodeableConcept ;
-         fhir:coding ( [
-           fhir:system [ fhir:v "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis"^^xsd:anyURI ] ;
-           fhir:code [ fhir:v "ORG-206" ] ;
-           fhir:display [ fhir:v "Matériel spécialisé" ]
-         ] )
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ]
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index -1 ;
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "TDDUIRessourceType" ] ;
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index -1 ;
+           fhir:Coding.system [ fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis" ] ;
+           fhir:Coding.code [ fhir:value "ORG-206" ] ;
+           fhir:Coding.display [ fhir:value "Matériel spécialisé" ]
+         ]
        ]
-     ] [
-       fhir:url [ fhir:v "TDDUIMaterialDetail"^^xsd:anyURI ] ;
-       fhir:value [
-         a fhir:CodeableConcept ;
-         fhir:coding ( [
-           fhir:system [ fhir:v "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis"^^xsd:anyURI ] ;
-           fhir:code [ fhir:v "ORG-208" ] ;
-           fhir:display [ fhir:v "Materiel médical" ]
-         ] )
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "TDDUIMaterialDetail" ] ;
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index -1 ;
+           fhir:Coding.system [ fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis" ] ;
+           fhir:Coding.code [ fhir:value "ORG-208" ] ;
+           fhir:Coding.display [ fhir:value "Materiel médical" ]
+         ]
        ]
-     ] ) ;
-     fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used"^^xsd:anyURI ]
-  ] [
-     fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-report"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:string ;
-       fhir:v "Observations cliniques : ; Recommandations pour les jours à venir : ; Prochaine visite : 15 avril 2023, 10h30 ; Remarque : Monsieur Dupont a compris les consignes pour la gestion de sa douleur et la mobilisation de sa hanche opérée."
-     ]
-  ] [
-     fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:string ;
-       fhir:v "Cet évènement a débuté plus tard l’usager était sous la douche à l’heure du début du rendez-vous."
-     ]
-  ] [
-     fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-label"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:string ;
-       fhir:v "Visite à domicile pour soins infirmier."
-     ]
-  ] [
-     fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-reason"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:string ;
-       fhir:v "Suivi post-opératoire suite à intervention chirurgicale de la hanche."
-     ]
-  ] [
-     fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-validation"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:boolean ;
-       fhir:v true
-     ]
-  ] ) ; # 
-  fhir:identifier ( [
-     fhir:type [
-       fhir:coding ( [
-         fhir:system [ fhir:v "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identifier-type"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "VN" ]
-       ] )
      ] ;
-     fhir:system [ fhir:v "https://identifiant-medicosocial-evenement.esante.gouv.fr"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "3480787529/147720425367411-EVN-12548" ]
-  ] ) ; # 
-  fhir:status [ fhir:v "finished"] ; # 
-  fhir:class [
-     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
-     fhir:code [ fhir:v "HH" ]
-  ] ; # 
-  fhir:type ( [
-     fhir:coding ( [
-       fhir:system [ fhir:v "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "MED-1298" ] ;
-       fhir:display [ fhir:v "Intervention d'un infirmer salarié" ]
-     ] )
-  ] [
-     fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/data-absent-reason"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "not-permitted" ] ;
-       fhir:display [ fhir:v "Not Permitted" ]
-     ] ) ;
-     fhir:text [ fhir:v "Intervention" ]
-  ] ) ; # 
-  fhir:subject [
+     fhir:Extension.url [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-ressources-used" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-report" ] ;
+     fhir:Extension.valueString [ fhir:value "Observations cliniques : ; Recommandations pour les jours à venir : ; Prochaine visite : 15 avril 2023, 10h30 ; Remarque : Monsieur Dupont a compris les consignes pour la gestion de sa douleur et la mobilisation de sa hanche opérée." ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment" ] ;
+     fhir:Extension.valueString [ fhir:value "Cet évènement a débuté plus tard l’usager était sous la douche à l’heure du début du rendez-vous." ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-label" ] ;
+     fhir:Extension.valueString [ fhir:value "Visite à domicile pour soins infirmier." ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-reason" ] ;
+     fhir:Extension.valueString [ fhir:value "Suivi post-opératoire suite à intervention chirurgicale de la hanche." ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-validation" ] ;
+     fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+  ] ;
+  fhir:Encounter.identifier [
+     fhir:index -1 ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identifier-type" ] ;
+         fhir:Coding.code [ fhir:value "VN" ]
+       ]
+     ] ;
+     fhir:Identifier.system [ fhir:value "https://identifiant-medicosocial-evenement.esante.gouv.fr" ] ;
+     fhir:Identifier.value [ fhir:value "3480787529/147720425367411-EVN-12548" ]
+  ] ;
+  fhir:Encounter.status [ fhir:value "finished"] ;
+  fhir:Encounter.class [
+     fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActCode" ] ;
+     fhir:Coding.code [ fhir:value "HH" ]
+  ] ;
+  fhir:Encounter.type [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis" ] ;
+       fhir:Coding.code [ fhir:value "MED-1298" ] ;
+       fhir:Coding.display [ fhir:value "Intervention d'un infirmer salarié" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/data-absent-reason" ] ;
+       fhir:Coding.code [ fhir:value "not-permitted" ] ;
+       fhir:Coding.display [ fhir:value "Not Permitted" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Intervention" ]
+  ] ;
+  fhir:Encounter.subject [
      fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-patient-ins-example> ;
-     fhir:reference [ fhir:v "Patient/tddui-patient-ins-example" ]
-  ] ; # 
-  fhir:participant ( [
-     fhir:individual [
+     fhir:Reference.reference [ fhir:value "Patient/tddui-patient-ins-example" ]
+  ] ;
+  fhir:Encounter.participant [
+     fhir:index -1 ;
+     fhir:Encounter.participant.individual [
        fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Practitioner/tddui-practitioner-example> ;
-       fhir:reference [ fhir:v "Practitioner/tddui-practitioner-example" ]
+       fhir:Reference.reference [ fhir:value "Practitioner/tddui-practitioner-example" ]
      ]
-  ] ) ; # 
-  fhir:period [
-     fhir:start [ fhir:v "2023-04-14T10:30:00+02:00"^^xsd:dateTime ] ;
-     fhir:end [ fhir:v "2023-04-14T11:15:00+02:00"^^xsd:dateTime ]
-  ] ; # 
-  fhir:location ( [
-     fhir:location [
+  ] ;
+  fhir:Encounter.period [
+     fhir:Period.start [ fhir:value "2023-04-14T10:30:00+02:00"^^xsd:dateTime ] ;
+     fhir:Period.end [ fhir:value "2023-04-14T11:15:00+02:00"^^xsd:dateTime ]
+  ] ;
+  fhir:Encounter.location [
+     fhir:index -1 ;
+     fhir:Encounter.location.location [
        fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Location/tddui-event-location-example> ;
-       fhir:reference [ fhir:v "Location/tddui-event-location-example" ]
+       fhir:Reference.reference [ fhir:value "Location/tddui-event-location-example" ]
      ]
-  ] ) ; # 
-  fhir:serviceProvider [
+  ] ;
+  fhir:Encounter.serviceProvider [
      fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Organization/tddui-organization-example> ;
-     fhir:reference [ fhir:v "Organization/tddui-organization-example" ]
-  ] ; # 
-  fhir:partOf [
+     fhir:Reference.reference [ fhir:value "Organization/tddui-organization-example" ]
+  ] ;
+  fhir:Encounter.partOf [
      fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Encounter/tddui-encounter-sejour-example> ;
-     fhir:reference [ fhir:v "Encounter/tddui-encounter-sejour-example" ]
-  ] . # 
+     fhir:Reference.reference [ fhir:value "Encounter/tddui-encounter-sejour-example" ]
+  ] .
 
 <https://test-server.fr/Practitioner/tddui-practitioner-example> a fhir:Practitioner ;
-  fhir:id [ fhir:v "tddui-practitioner-example"] ; # 
-  fhir:meta [
-     fhir:profile ( [
-       fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner"^^xsd:anyURI ;
+  fhir:Resource.id [ fhir:value "tddui-practitioner-example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner" ;
+       fhir:index -1 ;
        fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner>
-     ] )
-  ] ; # 
-  fhir:language [ fhir:v "en"] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ]
-  ] ; # 
-  fhir:identifier ( [
-     fhir:system [ fhir:v "urn:oid:1.2.250.1.71.4.2.1"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "10103441234" ]
-  ] ) ; # 
-  fhir:name ( [
-     fhir:family [ fhir:v "Martin" ] ;
-     fhir:given ( [ fhir:v "Claire" ] ) ;
-     fhir:prefix ( [ fhir:v "MME" ] )
-  ] ) ; # 
-  fhir:qualification ( [
-     fhir:code [
-       fhir:coding ( [
-         fhir:system [ fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R48-DiplomeEtatFrancais/FHIR/TRE-R48-DiplomeEtatFrancais"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "DE09" ] ;
-         fhir:display [ fhir:v "DE Infirmier" ]
-       ] )
      ]
-  ] [
-     fhir:code [
-       fhir:coding ( [
-         fhir:system [ fhir:v "https://mos.esante.gouv.fr/NOS/TRE_G15-ProfessionSante/FHIR/TRE-G15-ProfessionSante"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "60" ] ;
-         fhir:display [ fhir:v "Infirmier" ]
-       ] )
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ]
+  ] ;
+  fhir:Practitioner.identifier [
+     fhir:index -1 ;
+     fhir:Identifier.system [ fhir:value "urn:oid:1.2.250.1.71.4.2.1" ] ;
+     fhir:Identifier.value [ fhir:value "10103441234" ]
+  ] ;
+  fhir:Practitioner.name [
+     fhir:index -1 ;
+     fhir:HumanName.family [ fhir:value "Martin" ] ;
+     fhir:HumanName.given [
+       fhir:value "Claire" ;
+       fhir:index -1
+     ] ;
+     fhir:HumanName.prefix [
+       fhir:value "MME" ;
+       fhir:index -1
      ]
-  ] ) . # 
+  ] ;
+  fhir:Practitioner.qualification [
+     fhir:index -1 ;
+     fhir:Practitioner.qualification.code [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R48-DiplomeEtatFrancais/FHIR/TRE-R48-DiplomeEtatFrancais" ] ;
+         fhir:Coding.code [ fhir:value "DE09" ] ;
+         fhir:Coding.display [ fhir:value "DE Infirmier" ]
+       ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:Practitioner.qualification.code [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_G15-ProfessionSante/FHIR/TRE-G15-ProfessionSante" ] ;
+         fhir:Coding.code [ fhir:value "60" ] ;
+         fhir:Coding.display [ fhir:value "Infirmier" ]
+       ]
+     ]
+  ] .
 
 <https://test-server.fr/PractitionerRole/tddui-practitioner-role-example> a fhir:PractitionerRole ;
-  fhir:id [ fhir:v "tddui-practitioner-role-example"] ; # 
-  fhir:meta [
-     fhir:profile ( [
-       fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role"^^xsd:anyURI ;
+  fhir:Resource.id [ fhir:value "tddui-practitioner-role-example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role" ;
+       fhir:index -1 ;
        fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role>
-     ] )
-  ] ; # 
-  fhir:language [ fhir:v "en"] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "extensions" ]
-  ] ; # 
-  fhir:extension ( [
-     fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exercise-mode"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:CodeableConcept ;
-       fhir:coding ( [
-         fhir:system [ fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "S" ] ;
-         fhir:display [ fhir:v "Salarié" ]
-       ] )
      ]
-  ] ) ; # 
-  fhir:practitioner [
-     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Practitioner/tddui-practitioner-example> ;
-     fhir:reference [ fhir:v "Practitioner/tddui-practitioner-example" ]
-  ] ; # 
-  fhir:organization [
-     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Organization/tddui-organization-example> ;
-     fhir:reference [ fhir:v "Organization/tddui-organization-example" ]
-  ] ; # 
-  fhir:code ( [
-     fhir:extension ( [
-       fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-profession"^^xsd:anyURI ] ;
-       fhir:value [
-         a fhir:CodeableConcept ;
-         fhir:coding ( [
-           fhir:system [ fhir:v "https://mos.esante.gouv.fr/NOS/TRE_A02-ProfessionSavFaire-CISIS/FHIR/TRE-A02-ProfessionSavFaire-CISIS"^^xsd:anyURI ] ;
-           fhir:code [ fhir:v "G15_60" ] ;
-           fhir:display [ fhir:v "Infirmier" ]
-         ] )
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ]
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exercise-mode" ] ;
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice" ] ;
+         fhir:Coding.code [ fhir:value "S" ] ;
+         fhir:Coding.display [ fhir:value "Salarié" ]
        ]
-     ] ) ;
-     fhir:coding ( [
-       fhir:system [ fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "330" ] ;
-       fhir:display [ fhir:v "Coordonnateur de parcours" ]
-     ] )
-  ] ) . # 
+     ]
+  ] ;
+  fhir:PractitionerRole.practitioner [
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Practitioner/tddui-practitioner-example> ;
+     fhir:Reference.reference [ fhir:value "Practitioner/tddui-practitioner-example" ]
+  ] ;
+  fhir:PractitionerRole.organization [
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Organization/tddui-organization-example> ;
+     fhir:Reference.reference [ fhir:value "Organization/tddui-organization-example" ]
+  ] ;
+  fhir:PractitionerRole.code [
+     fhir:index -1 ;
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-profession" ] ;
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index -1 ;
+           fhir:Coding.system [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_A02-ProfessionSavFaire-CISIS/FHIR/TRE-A02-ProfessionSavFaire-CISIS" ] ;
+           fhir:Coding.code [ fhir:value "G15_60" ] ;
+           fhir:Coding.display [ fhir:value "Infirmier" ]
+         ]
+       ]
+     ] ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge" ] ;
+       fhir:Coding.code [ fhir:value "330" ] ;
+       fhir:Coding.display [ fhir:value "Coordonnateur de parcours" ]
+     ]
+  ] .
 
 <https://test-server.fr/Task/tddui-task-transport-professionel-example> a fhir:Task ;
-  fhir:id [ fhir:v "tddui-task-transport-professionel-example"] ; # 
-  fhir:meta [
-     fhir:profile ( [
-       fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel"^^xsd:anyURI ;
+  fhir:Resource.id [ fhir:value "tddui-task-transport-professionel-example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel" ;
+       fhir:index -1 ;
        fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel>
-     ] )
-  ] ; # 
-  fhir:language [ fhir:v "en"] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ]
-  ] ; # 
-  fhir:identifier ( [
-     fhir:system [ fhir:v "https://identifiant-medicosocial-transportprofessionnel.esante.gouv.fr"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "3480787529/147720425367411-TPPro-154674" ]
-  ] ) ; # 
-  fhir:status [ fhir:v "completed"] ; # 
-  fhir:intent [ fhir:v "plan"] ; # 
-  fhir:code [
-     fhir:coding ( [
-       fhir:system [ fhir:v "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "ORG-202" ] ;
-       fhir:display [ fhir:v "Véhicule individuel" ]
-     ] )
-  ] ; # 
-  fhir:for [
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ]
+  ] ;
+  fhir:Task.identifier [
+     fhir:index -1 ;
+     fhir:Identifier.system [ fhir:value "https://identifiant-medicosocial-transportprofessionnel.esante.gouv.fr" ] ;
+     fhir:Identifier.value [ fhir:value "3480787529/147720425367411-TPPro-154674" ]
+  ] ;
+  fhir:Task.status [ fhir:value "completed"] ;
+  fhir:Task.intent [ fhir:value "plan"] ;
+  fhir:Task.code [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis" ] ;
+       fhir:Coding.code [ fhir:value "ORG-202" ] ;
+       fhir:Coding.display [ fhir:value "Véhicule individuel" ]
+     ]
+  ] ;
+  fhir:Task.for [
      fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Practitioner/tddui-practitioner-example> ;
-     fhir:reference [ fhir:v "Practitioner/tddui-practitioner-example" ]
-  ] ; # 
-  fhir:encounter [
+     fhir:Reference.reference [ fhir:value "Practitioner/tddui-practitioner-example" ]
+  ] ;
+  fhir:Task.encounter [
      fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Encounter/tddui-encounter-evenement-example> ;
-     fhir:reference [ fhir:v "Encounter/tddui-encounter-evenement-example" ]
-  ] ; # 
-  fhir:executionPeriod [
-     fhir:start [ fhir:v "2023-04-14T10:30:00+02:00"^^xsd:dateTime ] ;
-     fhir:end [ fhir:v "2023-04-14T11:15:00+02:00"^^xsd:dateTime ]
-  ] ; # 
-  fhir:owner [
+     fhir:Reference.reference [ fhir:value "Encounter/tddui-encounter-evenement-example" ]
+  ] ;
+  fhir:Task.executionPeriod [
+     fhir:Period.start [ fhir:value "2023-04-14T10:30:00+02:00"^^xsd:dateTime ] ;
+     fhir:Period.end [ fhir:value "2023-04-14T11:15:00+02:00"^^xsd:dateTime ]
+  ] ;
+  fhir:Task.owner [
      fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Organization/tddui-organization-example> ;
-     fhir:reference [ fhir:v "Organization/tddui-organization-example" ]
-  ] ; # 
-  fhir:input ( [
-     fhir:type [
-       fhir:coding ( [
-         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "typeMotorisation" ]
-       ] )
+     fhir:Reference.reference [ fhir:value "Organization/tddui-organization-example" ]
+  ] ;
+  fhir:Task.input [
+     fhir:index -1 ;
+     fhir:Task.input.type [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport" ] ;
+         fhir:Coding.code [ fhir:value "typeMotorisation" ]
+       ]
      ] ;
-     fhir:value [
-       a fhir:CodeableConcept ;
-       fhir:coding ( [
-         fhir:system [ fhir:v "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "GEN-355" ] ;
-         fhir:display [ fhir:v "Véhicule électrique" ]
-       ] )
+     fhir:Task.input.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis" ] ;
+         fhir:Coding.code [ fhir:value "GEN-355" ] ;
+         fhir:Coding.display [ fhir:value "Véhicule électrique" ]
+       ]
      ]
-  ] [
-     fhir:type [
-       fhir:coding ( [
-         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "budgetPrevisionnel" ]
-       ] )
+  ], [
+     fhir:index -1 ;
+     fhir:Task.input.type [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport" ] ;
+         fhir:Coding.code [ fhir:value "budgetPrevisionnel" ]
+       ]
      ] ;
-     fhir:value [
-       a fhir:Money ;
-       fhir:value [ fhir:v "2"^^xsd:decimal ] ;
-       fhir:currency [ fhir:v "EUR" ]
+     fhir:Task.input.valueMoney [
+       fhir:Money.value [ fhir:value "2"^^xsd:decimal ] ;
+       fhir:Money.currency [ fhir:value "EUR" ]
      ]
-  ] [
-     fhir:type [
-       fhir:coding ( [
-         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "budgetReel" ]
-       ] )
+  ], [
+     fhir:index -1 ;
+     fhir:Task.input.type [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport" ] ;
+         fhir:Coding.code [ fhir:value "budgetReel" ]
+       ]
      ] ;
-     fhir:value [
-       a fhir:Money ;
-       fhir:value [ fhir:v "2"^^xsd:decimal ] ;
-       fhir:currency [ fhir:v "EUR" ]
+     fhir:Task.input.valueMoney [
+       fhir:Money.value [ fhir:value "2"^^xsd:decimal ] ;
+       fhir:Money.currency [ fhir:value "EUR" ]
      ]
-  ] [
-     fhir:type [
-       fhir:coding ( [
-         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "distance" ]
-       ] )
+  ], [
+     fhir:index -1 ;
+     fhir:Task.input.type [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport" ] ;
+         fhir:Coding.code [ fhir:value "distance" ]
+       ]
      ] ;
-     fhir:value [
-       a fhir:Distance ;
-       fhir:value [ fhir:v "4"^^xsd:decimal ] ;
-       fhir:unit [ fhir:v "kilometers" ] ;
-       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "km" ]
+     fhir:Task.input.valueDistance [
+       fhir:Quantity.value [ fhir:value "4"^^xsd:decimal ] ;
+       fhir:Quantity.unit [ fhir:value "kilometers" ] ;
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+       fhir:Quantity.code [ fhir:value "km" ]
      ]
-  ] [
-     fhir:type [
-       fhir:coding ( [
-         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "dureeTheorique" ]
-       ] )
+  ], [
+     fhir:index -1 ;
+     fhir:Task.input.type [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport" ] ;
+         fhir:Coding.code [ fhir:value "dureeTheorique" ]
+       ]
      ] ;
-     fhir:value [
-       a fhir:Duration ;
-       fhir:value [ fhir:v "10"^^xsd:decimal ] ;
-       fhir:unit [ fhir:v "minutes" ] ;
-       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "min" ]
+     fhir:Task.input.valueDuration [
+       fhir:Quantity.value [ fhir:value "10"^^xsd:decimal ] ;
+       fhir:Quantity.unit [ fhir:value "minutes" ] ;
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+       fhir:Quantity.code [ fhir:value "min" ]
      ]
-  ] ) . # 
+  ] .
 
 <https://test-server.fr/Task/tddui-task-transport-usager-example> a fhir:Task ;
-  fhir:id [ fhir:v "tddui-task-transport-usager-example"] ; # 
-  fhir:meta [
-     fhir:profile ( [
-       fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager"^^xsd:anyURI ;
+  fhir:Resource.id [ fhir:value "tddui-task-transport-usager-example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager" ;
+       fhir:index -1 ;
        fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager>
-     ] )
-  ] ; # 
-  fhir:language [ fhir:v "en"] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ]
-  ] ; # 
-  fhir:identifier ( [
-     fhir:system [ fhir:v "https://identifiant-medicosocial-transportusager.esante.gouv.fr"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "3480787529/147720425367411-TPPat-154675" ]
-  ] ) ; # 
-  fhir:status [ fhir:v "completed"] ; # 
-  fhir:intent [ fhir:v "plan"] ; # 
-  fhir:code [
-     fhir:coding ( [
-       fhir:system [ fhir:v "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "ORG-156" ] ;
-       fhir:display [ fhir:v "Taxi" ]
-     ] )
-  ] ; # 
-  fhir:encounter [
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ]
+  ] ;
+  fhir:Task.identifier [
+     fhir:index -1 ;
+     fhir:Identifier.system [ fhir:value "https://identifiant-medicosocial-transportusager.esante.gouv.fr" ] ;
+     fhir:Identifier.value [ fhir:value "3480787529/147720425367411-TPPat-154675" ]
+  ] ;
+  fhir:Task.status [ fhir:value "completed"] ;
+  fhir:Task.intent [ fhir:value "plan"] ;
+  fhir:Task.code [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis" ] ;
+       fhir:Coding.code [ fhir:value "ORG-156" ] ;
+       fhir:Coding.display [ fhir:value "Taxi" ]
+     ]
+  ] ;
+  fhir:Task.encounter [
      fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Encounter/tddui-encounter-evenement-example> ;
-     fhir:reference [ fhir:v "Encounter/tddui-encounter-evenement-example" ]
-  ] ; # 
-  fhir:executionPeriod [
-     fhir:start [ fhir:v "2023-04-14T10:30:00+02:00"^^xsd:dateTime ] ;
-     fhir:end [ fhir:v "2023-04-14T11:15:00+02:00"^^xsd:dateTime ]
-  ] ; # 
-  fhir:input ( [
-     fhir:type [
-       fhir:coding ( [
-         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "budgetPrevisionnel" ]
-       ] )
+     fhir:Reference.reference [ fhir:value "Encounter/tddui-encounter-evenement-example" ]
+  ] ;
+  fhir:Task.executionPeriod [
+     fhir:Period.start [ fhir:value "2023-04-14T10:30:00+02:00"^^xsd:dateTime ] ;
+     fhir:Period.end [ fhir:value "2023-04-14T11:15:00+02:00"^^xsd:dateTime ]
+  ] ;
+  fhir:Task.input [
+     fhir:index -1 ;
+     fhir:Task.input.type [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport" ] ;
+         fhir:Coding.code [ fhir:value "budgetPrevisionnel" ]
+       ]
      ] ;
-     fhir:value [
-       a fhir:Money ;
-       fhir:value [ fhir:v "2"^^xsd:decimal ] ;
-       fhir:currency [ fhir:v "EUR" ]
+     fhir:Task.input.valueMoney [
+       fhir:Money.value [ fhir:value "2"^^xsd:decimal ] ;
+       fhir:Money.currency [ fhir:value "EUR" ]
      ]
-  ] [
-     fhir:type [
-       fhir:coding ( [
-         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "budgetReel" ]
-       ] )
+  ], [
+     fhir:index -1 ;
+     fhir:Task.input.type [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport" ] ;
+         fhir:Coding.code [ fhir:value "budgetReel" ]
+       ]
      ] ;
-     fhir:value [
-       a fhir:Money ;
-       fhir:value [ fhir:v "2"^^xsd:decimal ] ;
-       fhir:currency [ fhir:v "EUR" ]
+     fhir:Task.input.valueMoney [
+       fhir:Money.value [ fhir:value "2"^^xsd:decimal ] ;
+       fhir:Money.currency [ fhir:value "EUR" ]
      ]
-  ] [
-     fhir:type [
-       fhir:coding ( [
-         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "distance" ]
-       ] )
+  ], [
+     fhir:index -1 ;
+     fhir:Task.input.type [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport" ] ;
+         fhir:Coding.code [ fhir:value "distance" ]
+       ]
      ] ;
-     fhir:value [
-       a fhir:Distance ;
-       fhir:value [ fhir:v "4"^^xsd:decimal ] ;
-       fhir:unit [ fhir:v "kilometers" ] ;
-       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "km" ]
+     fhir:Task.input.valueDistance [
+       fhir:Quantity.value [ fhir:value "4"^^xsd:decimal ] ;
+       fhir:Quantity.unit [ fhir:value "kilometers" ] ;
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+       fhir:Quantity.code [ fhir:value "km" ]
      ]
-  ] [
-     fhir:type [
-       fhir:coding ( [
-         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "dureeTheorique" ]
-       ] )
+  ], [
+     fhir:index -1 ;
+     fhir:Task.input.type [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport" ] ;
+         fhir:Coding.code [ fhir:value "dureeTheorique" ]
+       ]
      ] ;
-     fhir:value [
-       a fhir:Duration ;
-       fhir:value [ fhir:v "10"^^xsd:decimal ] ;
-       fhir:unit [ fhir:v "minutes" ] ;
-       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "min" ]
+     fhir:Task.input.valueDuration [
+       fhir:Quantity.value [ fhir:value "10"^^xsd:decimal ] ;
+       fhir:Quantity.unit [ fhir:value "minutes" ] ;
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+       fhir:Quantity.code [ fhir:value "min" ]
      ]
-  ] [
-     fhir:type [
-       fhir:coding ( [
-         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "accompagnement" ]
-       ] )
+  ], [
+     fhir:index -1 ;
+     fhir:Task.input.type [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport" ] ;
+         fhir:Coding.code [ fhir:value "accompagnement" ]
+       ]
      ] ;
-     fhir:value [
-       a fhir:boolean ;
-       fhir:v true
-     ]
-  ] [
-     fhir:type [
-       fhir:coding ( [
-         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "asepsie" ]
-       ] )
+     fhir:Task.input.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+  ], [
+     fhir:index -1 ;
+     fhir:Task.input.type [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport" ] ;
+         fhir:Coding.code [ fhir:value "asepsie" ]
+       ]
      ] ;
-     fhir:value [
-       a fhir:boolean ;
-       fhir:v false
-     ]
-  ] [
-     fhir:type [
-       fhir:coding ( [
-         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "natureTransport" ]
-       ] )
+     fhir:Task.input.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+  ], [
+     fhir:index -1 ;
+     fhir:Task.input.type [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport" ] ;
+         fhir:Coding.code [ fhir:value "natureTransport" ]
+       ]
      ] ;
-     fhir:value [
-       a fhir:CodeableConcept ;
-       fhir:coding ( [
-         fhir:system [ fhir:v "https://smt.esante.gouv.fr/terminologie-SERAFINPH"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "3.2.4" ] ;
-         fhir:display [ fhir:v "Transports liés au projet individuel" ]
-       ] )
+     fhir:Task.input.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://smt.esante.gouv.fr/terminologie-SERAFINPH" ] ;
+         fhir:Coding.code [ fhir:value "3.2.4" ] ;
+         fhir:Coding.display [ fhir:value "Transports liés au projet individuel" ]
+       ]
      ]
-  ] ) . # 
+  ] .
+
+<https://test-server.fr/Observation/tddui-observation-repas-example> a fhir:Observation ;
+  fhir:Resource.id [ fhir:value "tddui-observation-repas-example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-repas" ;
+       fhir:index -1 ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-repas>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ]
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-participant-present" ] ;
+     fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+  ] ;
+  fhir:Observation.identifier [
+     fhir:index -1 ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-identifier" ] ;
+         fhir:Coding.code [ fhir:value "REP" ]
+       ]
+     ] ;
+     fhir:Identifier.system [ fhir:value "https://identifiant-medicosocial-repas.esante.gouv.fr" ] ;
+     fhir:Identifier.value [ fhir:value "3480787529/1012-REPAS-0002" ]
+  ] ;
+  fhir:Observation.status [ fhir:value "registered"] ;
+  fhir:Observation.category [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r425-type-repas" ] ;
+       fhir:Coding.code [ fhir:value "1" ]
+     ]
+  ] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-type" ] ;
+       fhir:Coding.code [ fhir:value "REPAS" ] ;
+       fhir:Coding.display [ fhir:value "Repas" ]
+     ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-patient-ins-example> ;
+     fhir:Reference.reference [ fhir:value "Patient/tddui-patient-ins-example" ]
+  ] ;
+  fhir:Observation.effectiveDateTime [ fhir:value "2025-04-17T12:00:00+02:00"^^xsd:dateTime] .
+
+<https://test-server.fr/Schedule/tddui-schedule-example> a fhir:Schedule ;
+  fhir:Resource.id [ fhir:value "tddui-schedule-example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-schedule" ;
+       fhir:index -1 ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-schedule>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ]
+  ] ;
+  fhir:Schedule.actor [
+     fhir:index -1 ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-patient-ins-example> ;
+     fhir:Reference.reference [ fhir:value "Patient/tddui-patient-ins-example" ]
+  ] .
+
+<https://test-server.fr/Slot/tddui-slot-presence-absence-example> a fhir:Slot ;
+  fhir:Resource.id [ fhir:value "tddui-slot-presence-absence-example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-slot-presence-absence" ;
+       fhir:index -1 ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-slot-presence-absence>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ]
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-facturation" ] ;
+     fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-planned-absence" ] ;
+     fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+  ] ;
+  fhir:Slot.identifier [
+     fhir:index -1 ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-slot-identifier" ] ;
+         fhir:Coding.code [ fhir:value "PA" ]
+       ]
+     ] ;
+     fhir:Identifier.system [ fhir:value "https://identifiant-medicosocial-presenceabsence.esante.gouv.fr" ] ;
+     fhir:Identifier.value [ fhir:value "3480787529/1012-PA-0001" ]
+  ] ;
+  fhir:Slot.serviceType [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r423-type-presence-absence" ] ;
+       fhir:Coding.code [ fhir:value "2" ]
+     ]
+  ] ;
+  fhir:Slot.appointmentType [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r424-motif-absence" ] ;
+       fhir:Coding.code [ fhir:value "1" ]
+     ]
+  ] ;
+  fhir:Slot.schedule [
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Schedule/tddui-schedule-example> ;
+     fhir:Reference.reference [ fhir:value "Schedule/tddui-schedule-example" ]
+  ] ;
+  fhir:Slot.status [ fhir:value "busy"] ;
+  fhir:Slot.start [ fhir:value "2025-04-17T08:00:00+02:00"^^xsd:dateTime] ;
+  fhir:Slot.end [ fhir:value "2025-04-17T17:30:00+02:00"^^xsd:dateTime] .
 
 <https://test-server.fr/Goal/tddui-goal-projet-vie-example> a fhir:Goal ;
-  fhir:id [ fhir:v "tddui-goal-projet-vie-example"] ; # 
-  fhir:meta [
-     fhir:profile ( [
-       fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-projet-vie"^^xsd:anyURI ;
+  fhir:Resource.id [ fhir:value "tddui-goal-projet-vie-example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-projet-vie" ;
+       fhir:index -1 ;
        fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-projet-vie>
-     ] )
-  ] ; # 
-  fhir:language [ fhir:v "en"] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ]
-  ] ; # 
-  fhir:identifier ( [
-     fhir:type [
-       fhir:coding ( [
-         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-goal-identifier"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "PDV" ]
-       ] )
-     ] ;
-     fhir:system [ fhir:v "https://identifiant-medicosocial-projetvie.esante.gouv.fr"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "3480787529/123456789-PDV-1234" ]
-  ] ) ; # 
-  fhir:lifecycleStatus [ fhir:v "active"] ; # 
-  fhir:description [
-     fhir:text [ fhir:v "Projet de vie de Mr. Dupont" ]
-  ] ; # 
-  fhir:subject [
-     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-patient-ins-example> ;
-     fhir:reference [ fhir:v "Patient/tddui-patient-ins-example" ]
-  ] ; # 
-  fhir:start [
-     a fhir:date ;
-     fhir:v "2024-01-01"^^xsd:date
-  ] ; # 
-  fhir:target ( [
-     fhir:measure [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/data-absent-reason"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:code ;
-           fhir:v "not-permitted"
-         ]
-       ] )
-     ] ;
-     fhir:detail [
-       a fhir:string ;
-       fhir:v "Permettre à Monsieur Dupont de maintenir sa vie à domicile le plus longtemps possible."
-     ] ;
-     fhir:due [
-       a fhir:date ;
-       fhir:v "2025-01-01"^^xsd:date
      ]
-  ] ) . # 
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ]
+  ] ;
+  fhir:Goal.identifier [
+     fhir:index -1 ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-goal-identifier" ] ;
+         fhir:Coding.code [ fhir:value "PDV" ]
+       ]
+     ] ;
+     fhir:Identifier.system [ fhir:value "https://identifiant-medicosocial-projetvie.esante.gouv.fr" ] ;
+     fhir:Identifier.value [ fhir:value "3480787529/123456789-PDV-1234" ]
+  ] ;
+  fhir:Goal.lifecycleStatus [ fhir:value "active"] ;
+  fhir:Goal.description [
+     fhir:CodeableConcept.text [ fhir:value "Projet de vie de Mr. Dupont" ]
+  ] ;
+  fhir:Goal.subject [
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-patient-ins-example> ;
+     fhir:Reference.reference [ fhir:value "Patient/tddui-patient-ins-example" ]
+  ] ;
+  fhir:Goal.startDate [ fhir:value "2024-01-01"^^xsd:date] ;
+  fhir:Goal.target [
+     fhir:index -1 ;
+     fhir:Goal.target.measure [
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/data-absent-reason" ] ;
+         fhir:Extension.valueCode [ fhir:value "not-permitted" ]
+       ]
+     ] ;
+     fhir:Goal.target.detailString [ fhir:value "Permettre à Monsieur Dupont de maintenir sa vie à domicile le plus longtemps possible." ] ;
+     fhir:Goal.target.dueDate [ fhir:value "2025-01-01"^^xsd:date ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/tddui/Bundle/tddui-bundle-example.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

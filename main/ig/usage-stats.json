@@ -121,6 +121,13 @@
       ]
     },
     {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-facturation",
+      "title": "TDDUI Facturation",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-household-situation",
       "title": "TDDUI Household Situation",
       "types": [
@@ -373,6 +380,13 @@
       ]
     },
     {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-planned-absence",
+      "title": "TDDUI Planned Absence",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-profession",
       "title": "TDDUI Profession",
       "types": [
@@ -576,6 +590,10 @@
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-periode-scolaire",
         "title": "TDDUI Observation Periode Scolaire"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-repas",
+        "title": "TDDUI Observation Repas"
       }
     ],
     "Organization": [
@@ -618,10 +636,22 @@
         "title": "TDDUI RelatedPerson Contact"
       }
     ],
+    "Schedule": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-schedule",
+        "title": "TDDUI Schedule"
+      }
+    ],
     "ServiceRequest": [
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin",
         "title": "TDDUI ServiceRequest Besoin"
+      }
+    ],
+    "Slot": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-slot-presence-absence",
+        "title": "TDDUI Slot Presence Absence"
       }
     ],
     "Task": [
@@ -809,8 +839,12 @@
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-specialty": [
       "Practitioner"
     ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule-availability-time": [
+      "Schedule"
+    ],
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-service-type-duration": [
-      "PractitionerRole"
+      "PractitionerRole",
+      "Schedule"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-lieu-dit": [
       "Patient.address.line"
@@ -888,6 +922,10 @@
       "Bundle.entry.resource",
       "Encounter"
     ],
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-facturation": [
+      "Bundle.entry.resource",
+      "Slot"
+    ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-household-situation": [
       "Bundle.entry.resource",
       "Patient"
@@ -902,8 +940,10 @@
       "Encounter"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-participant-present": [
+      "Bundle.entry.resource",
       "Encounter.participant",
-      "Encounter.serviceProvider"
+      "Encounter.serviceProvider",
+      "Observation"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-present": [
       "Encounter"
@@ -911,6 +951,10 @@
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-validation": [
       "Bundle.entry.resource",
       "Encounter"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-planned-absence": [
+      "Bundle.entry.resource",
+      "Slot"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-profession": [
       "Bundle.entry.resource.code",
@@ -932,6 +976,7 @@
       "Encounter.status",
       "Goal.lifecycleStatus",
       "QuestionnaireResponse.status",
+      "Slot.status",
       "Task.status"
     ]
   }

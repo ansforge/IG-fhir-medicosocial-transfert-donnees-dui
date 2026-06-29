@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,49 +7,61 @@
 
 <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-participant> a fhir:ValueSet ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "tddui-encounter-participant"] ; # 
-  fhir:meta [
-     fhir:profile ( [
-       fhir:v "http://hl7.org/fhir/StructureDefinition/shareablevalueset"^^xsd:anyURI ;
+  fhir:Resource.id [ fhir:value "tddui-encounter-participant"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/StructureDefinition/shareablevalueset" ;
+       fhir:index -1 ;
        fhir:link <http://hl7.org/fhir/StructureDefinition/shareablevalueset>
-     ] )
-  ] ; # 
-  fhir:language [ fhir:v "fr"] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs tddui-encounter-participant</b></p><a name=\"tddui-encounter-participant\"> </a><a name=\"hctddui-encounter-participant\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"http://hl7.org/fhir/R4/shareablevalueset.html\">Shareable ValueSet</a></p></div><ul><li>Importe tous les codes contenu dans <a href=\"http://hl7.org/fhir/R4/valueset-encounter-participant-type.html\">Participant type</a></li></ul></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-participant"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "2.3.0"] ; # 
-  fhir:name [ fhir:v "TDDUIEncounterParticipant"] ; # 
-  fhir:title [ fhir:v "TDDUI Encounter Participant"] ; # 
-  fhir:status [ fhir:v "active"] ; # 
-  fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2026-06-17T09:20:14+00:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "ANS"] ; # 
-  fhir:contact ( [
-     fhir:name [ fhir:v "ANS" ] ;
-     fhir:telecom ( [
-       fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "https://esante.gouv.fr" ]
-     ] )
-  ] ) ; # 
-  fhir:description [ fhir:v "ValueSet pour la définition des codes de participant d'un événement"] ; # 
-  fhir:jurisdiction ( [
-     fhir:coding ( [
-       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "FR" ] ;
-       fhir:display [ fhir:v "France (la)" ]
-     ] )
-  ] ) ; # 
-  fhir:compose [
-     fhir:include ( [
-       fhir:valueSet ( [
-         fhir:v "http://hl7.org/fhir/ValueSet/encounter-participant-type"^^xsd:anyURI ;
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "fr"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs tddui-encounter-participant</b></p><a name=\"tddui-encounter-participant\"> </a><a name=\"hctddui-encounter-participant\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"http://hl7.org/fhir/R4/shareablevalueset.html\">Shareable ValueSet</a></p></div><ul><li>Importe tous les codes contenu dans <a href=\"http://hl7.org/fhir/R4/valueset-encounter-participant-type.html\">Participant type</a></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-participant"] ;
+  fhir:ValueSet.version [ fhir:value "2.3.0"] ;
+  fhir:ValueSet.name [ fhir:value "TDDUIEncounterParticipant"] ;
+  fhir:ValueSet.title [ fhir:value "TDDUI Encounter Participant"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-06-29T13:11:00+00:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "ANS"] ;
+  fhir:ValueSet.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "ANS" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://esante.gouv.fr" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "ValueSet pour la définition des codes de participant d'un événement"] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ] ;
+       fhir:Coding.display [ fhir:value "France (la)" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.valueSet [
+         fhir:value "http://hl7.org/fhir/ValueSet/encounter-participant-type" ;
+         fhir:index -1 ;
          fhir:link <http://hl7.org/fhir/ValueSet/encounter-participant-type>
-       ] )
-     ] )
-  ] . # 
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-participant.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

@@ -41,7 +41,9 @@
   </head>
   <body onload="document.body.style.opacity='1'">
 
-	  <script src="assets/js/prism.js"></script>
+	  <script src="assets/js/prism.js" type="text/javascript"></script>
+	  <script src="assets/js/prism-fhirpath.js" type="text/javascript"></script>
+	  <script src="assets/js/prism-cql.js" type="text/javascript"></script>
     <script src="assets/js/mermaid.js" type="text/javascript"></script>
     <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
     <style type="text/css">h2{--heading-prefix:"5.6"}
@@ -222,6 +224,7 @@
       <div class="container">    <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
+
 <style type="text/css">
 h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
 h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
@@ -259,21 +262,21 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div>
 <h3 id="téléchargements-et-usage">Téléchargements et usage</h3>
 
-<p><a name="l433">​</a>L'implementation guide contient un package <a href="package.tgz">téléchargeable ici</a> permettant de valider les instances par rapport aux profils qu'il contient.</p>
+<p><a name="l437">​</a>L'implementation guide contient un package <a href="package.tgz">téléchargeable ici</a> permettant de valider les instances par rapport aux profils qu'il contient.</p>
 
-<p><a name="l439">​</a>Pour cela, il suffit de télécharger le <a href="package.tgz">package.tgz</a> et l'importer dans un serveur, par exemple sur hapi en suivant ce <a href="https://github.com/nmdp-bioinformatics/igloader">script python</a> open source.</p>
+<p><a name="l443">​</a>Pour cela, il suffit de télécharger le <a href="package.tgz">package.tgz</a> et l'importer dans un serveur, par exemple sur hapi en suivant ce <a href="https://github.com/nmdp-bioinformatics/igloader">script python</a> open source.</p>
 
 <p>Vous pourrez ensuite utiliser l'opération <a href="https://www.hl7.org/fhir/resource-operation-validate.html">$validate</a> pour valider les instances de ressource contre un profil issu de cette spécification.</p>
 
 <p>Ensemble des ressources téléchargeables :</p>
 <ul>
   <li><a href="full-ig.zip">L'ensemble de la specification (zip)</a></li>
-  <li><a name="l463">​</a><a href="package.tgz">Package (tgz)</a></li>
-  <li><a name="l467">​</a><a href="definitions.json.zip">JSON Définitions (zip)</a></li>
-  <li><a name="l471">​</a><a href="examples.json.zip">JSON Exemples (zip)</a></li>
-  <li><a name="l475">​</a><a href="definitions.xml.zip">XML Definitions (zip)</a></li>
-  <li><a name="l479">​</a><a href="examples.ttl.zip">XML Exemples (zip)</a></li>
-  <li><a name="l483">​</a><a href="definitions.ttl.zip">Turtle Définitions</a></li>
+  <li><a name="l467">​</a><a href="package.tgz">Package (tgz)</a></li>
+  <li><a name="l471">​</a><a href="definitions.json.zip">JSON Définitions (zip)</a></li>
+  <li><a name="l475">​</a><a href="examples.json.zip">JSON Exemples (zip)</a></li>
+  <li><a name="l479">​</a><a href="definitions.xml.zip">XML Definitions (zip)</a></li>
+  <li><a name="l483">​</a><a href="examples.ttl.zip">XML Exemples (zip)</a></li>
+  <li><a name="l487">​</a><a href="definitions.ttl.zip">Turtle Définitions</a></li>
 </ul>
 
 
@@ -324,8 +327,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
           IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  
           Package ans.fhir.fr.tddui#2.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-06-17 09:20:00 +0000">
-    2026-06-17
+  <span title="2026-06-29 13:11:00 +0000">
+    2026-06-29
   </span>
 
           <br/>

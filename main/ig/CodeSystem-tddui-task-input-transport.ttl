@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,75 +7,95 @@
 
 <https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport> a fhir:CodeSystem ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "tddui-task-input-transport"] ; # 
-  fhir:meta [
-     fhir:profile ( [
-       fhir:v "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"^^xsd:anyURI ;
+  fhir:Resource.id [ fhir:value "tddui-task-input-transport"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/StructureDefinition/shareablecodesystem" ;
+       fhir:index 0 ;
        fhir:link <http://hl7.org/fhir/StructureDefinition/shareablecodesystem>
-     ] )
-  ] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : CodeSystem tddui-task-input-transport</b></p><a name=\"tddui-task-input-transport\"> </a><a name=\"hctddui-task-input-transport\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"http://hl7.org/fhir/R4/shareablecodesystem.html\">Shareable CodeSystem</a></p></div><p>This case-sensitive code system <code>https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">typeMotorisation<a name=\"tddui-task-input-transport-typeMotorisation\"> </a></td><td>Type de motorisation associée au véhicule utilisé lors du transport.</td></tr><tr><td style=\"white-space:nowrap\">adresseDepart<a name=\"tddui-task-input-transport-adresseDepart\"> </a></td><td>Adresse de départ du transport.</td></tr><tr><td style=\"white-space:nowrap\">adresseDestination<a name=\"tddui-task-input-transport-adresseDestination\"> </a></td><td>Adresse de destination du transport.</td></tr><tr><td style=\"white-space:nowrap\">budgetPrevisionnel<a name=\"tddui-task-input-transport-budgetPrevisionnel\"> </a></td><td>Budget prévisionnel pour assurer le transport de la personne physique.</td></tr><tr><td style=\"white-space:nowrap\">budgetReel<a name=\"tddui-task-input-transport-budgetReel\"> </a></td><td>Budget réel pour assurer le transport de la personne physique.</td></tr><tr><td style=\"white-space:nowrap\">distance<a name=\"tddui-task-input-transport-distance\"> </a></td><td>Distance du transport de la personne physique.</td></tr><tr><td style=\"white-space:nowrap\">dureeTheorique<a name=\"tddui-task-input-transport-dureeTheorique\"> </a></td><td>Durée théorique du transport de la personne physique.</td></tr><tr><td style=\"white-space:nowrap\">accompagnement<a name=\"tddui-task-input-transport-accompagnement\"> </a></td><td>Accompagnement nécessaire ou non de l'usager. </td></tr><tr><td style=\"white-space:nowrap\">asepsie<a name=\"tddui-task-input-transport-asepsie\"> </a></td><td>Lors du transport de l'usager l'asepsie est rigoureusement respectée ou n'est pas nécessaire.</td></tr><tr><td style=\"white-space:nowrap\">natureTransport<a name=\"tddui-task-input-transport-natureTransport\"> </a></td><td>Nature du transport de l'usager.</td></tr></table></div><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem tddui-task-input-transport</b></p><a name=\"en-tddui-task-input-transport\"> </a><a name=\"en-hctddui-task-input-transport\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/R4/shareablecodesystem.html\">Shareable CodeSystem</a></p></div><p>This case-sensitive code system <code>https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">typeMotorisation<a name=\"en-tddui-task-input-transport-typeMotorisation\"> </a></td><td>Type de motorisation associée au véhicule utilisé lors du transport.</td></tr><tr><td style=\"white-space:nowrap\">adresseDepart<a name=\"en-tddui-task-input-transport-adresseDepart\"> </a></td><td>Adresse de départ du transport.</td></tr><tr><td style=\"white-space:nowrap\">adresseDestination<a name=\"en-tddui-task-input-transport-adresseDestination\"> </a></td><td>Adresse de destination du transport.</td></tr><tr><td style=\"white-space:nowrap\">budgetPrevisionnel<a name=\"en-tddui-task-input-transport-budgetPrevisionnel\"> </a></td><td>Budget prévisionnel pour assurer le transport de la personne physique.</td></tr><tr><td style=\"white-space:nowrap\">budgetReel<a name=\"en-tddui-task-input-transport-budgetReel\"> </a></td><td>Budget réel pour assurer le transport de la personne physique.</td></tr><tr><td style=\"white-space:nowrap\">distance<a name=\"en-tddui-task-input-transport-distance\"> </a></td><td>Distance du transport de la personne physique.</td></tr><tr><td style=\"white-space:nowrap\">dureeTheorique<a name=\"en-tddui-task-input-transport-dureeTheorique\"> </a></td><td>Durée théorique du transport de la personne physique.</td></tr><tr><td style=\"white-space:nowrap\">accompagnement<a name=\"en-tddui-task-input-transport-accompagnement\"> </a></td><td>Accompagnement nécessaire ou non de l'usager. </td></tr><tr><td style=\"white-space:nowrap\">asepsie<a name=\"en-tddui-task-input-transport-asepsie\"> </a></td><td>Lors du transport de l'usager l'asepsie est rigoureusement respectée ou n'est pas nécessaire.</td></tr><tr><td style=\"white-space:nowrap\">natureTransport<a name=\"en-tddui-task-input-transport-natureTransport\"> </a></td><td>Nature du transport de l'usager.</td></tr></table></div></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "2.3.0"] ; # 
-  fhir:name [ fhir:v "TDDUITaskInputTransport"] ; # 
-  fhir:title [ fhir:v "TDDUI Task Input Transport"] ; # 
-  fhir:status [ fhir:v "active"] ; # 
-  fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2026-06-17T09:20:14+00:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "ANS"] ; # 
-  fhir:contact ( [
-     fhir:name [ fhir:v "ANS" ] ;
-     fhir:telecom ( [
-       fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "https://esante.gouv.fr" ]
-     ] )
-  ] ) ; # 
-  fhir:description [ fhir:v "CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les transports dans le cadre du DUI."] ; # 
-  fhir:jurisdiction ( [
-     fhir:coding ( [
-       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "FR" ] ;
-       fhir:display [ fhir:v "France (la)" ]
-     ] )
-  ] ) ; # 
-  fhir:caseSensitive [ fhir:v true] ; # 
-  fhir:compositional [ fhir:v false] ; # 
-  fhir:content [ fhir:v "complete"] ; # 
-  fhir:count [ fhir:v "10"^^xsd:nonNegativeInteger] ; # 
-  fhir:concept ( [
-     fhir:code [ fhir:v "typeMotorisation" ] ;
-     fhir:display [ fhir:v "Type de motorisation associée au véhicule utilisé lors du transport." ]
-  ] [
-     fhir:code [ fhir:v "adresseDepart" ] ;
-     fhir:display [ fhir:v "Adresse de départ du transport." ]
-  ] [
-     fhir:code [ fhir:v "adresseDestination" ] ;
-     fhir:display [ fhir:v "Adresse de destination du transport." ]
-  ] [
-     fhir:code [ fhir:v "budgetPrevisionnel" ] ;
-     fhir:display [ fhir:v "Budget prévisionnel pour assurer le transport de la personne physique." ]
-  ] [
-     fhir:code [ fhir:v "budgetReel" ] ;
-     fhir:display [ fhir:v "Budget réel pour assurer le transport de la personne physique." ]
-  ] [
-     fhir:code [ fhir:v "distance" ] ;
-     fhir:display [ fhir:v "Distance du transport de la personne physique." ]
-  ] [
-     fhir:code [ fhir:v "dureeTheorique" ] ;
-     fhir:display [ fhir:v "Durée théorique du transport de la personne physique." ]
-  ] [
-     fhir:code [ fhir:v "accompagnement" ] ;
-     fhir:display [ fhir:v "Accompagnement nécessaire ou non de l'usager. " ]
-  ] [
-     fhir:code [ fhir:v "asepsie" ] ;
-     fhir:display [ fhir:v "Lors du transport de l'usager l'asepsie est rigoureusement respectée ou n'est pas nécessaire." ]
-  ] [
-     fhir:code [ fhir:v "natureTransport" ] ;
-     fhir:display [ fhir:v "Nature du transport de l'usager." ]
-  ] ) . # 
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : CodeSystem tddui-task-input-transport</b></p><a name=\"tddui-task-input-transport\"> </a><a name=\"hctddui-task-input-transport\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"http://hl7.org/fhir/R4/shareablecodesystem.html\">Shareable CodeSystem</a></p></div><p>This case-sensitive code system <code>https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">typeMotorisation<a name=\"tddui-task-input-transport-typeMotorisation\"> </a></td><td>Type de motorisation associée au véhicule utilisé lors du transport.</td></tr><tr><td style=\"white-space:nowrap\">adresseDepart<a name=\"tddui-task-input-transport-adresseDepart\"> </a></td><td>Adresse de départ du transport.</td></tr><tr><td style=\"white-space:nowrap\">adresseDestination<a name=\"tddui-task-input-transport-adresseDestination\"> </a></td><td>Adresse de destination du transport.</td></tr><tr><td style=\"white-space:nowrap\">budgetPrevisionnel<a name=\"tddui-task-input-transport-budgetPrevisionnel\"> </a></td><td>Budget prévisionnel pour assurer le transport de la personne physique.</td></tr><tr><td style=\"white-space:nowrap\">budgetReel<a name=\"tddui-task-input-transport-budgetReel\"> </a></td><td>Budget réel pour assurer le transport de la personne physique.</td></tr><tr><td style=\"white-space:nowrap\">distance<a name=\"tddui-task-input-transport-distance\"> </a></td><td>Distance du transport de la personne physique.</td></tr><tr><td style=\"white-space:nowrap\">dureeTheorique<a name=\"tddui-task-input-transport-dureeTheorique\"> </a></td><td>Durée théorique du transport de la personne physique.</td></tr><tr><td style=\"white-space:nowrap\">accompagnement<a name=\"tddui-task-input-transport-accompagnement\"> </a></td><td>Accompagnement nécessaire ou non de l'usager. </td></tr><tr><td style=\"white-space:nowrap\">asepsie<a name=\"tddui-task-input-transport-asepsie\"> </a></td><td>Lors du transport de l'usager l'asepsie est rigoureusement respectée ou n'est pas nécessaire.</td></tr><tr><td style=\"white-space:nowrap\">natureTransport<a name=\"tddui-task-input-transport-natureTransport\"> </a></td><td>Nature du transport de l'usager.</td></tr></table></div><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem tddui-task-input-transport</b></p><a name=\"en-tddui-task-input-transport\"> </a><a name=\"en-hctddui-task-input-transport\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/R4/shareablecodesystem.html\">Shareable CodeSystem</a></p></div><p>This case-sensitive code system <code>https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">typeMotorisation<a name=\"en-tddui-task-input-transport-typeMotorisation\"> </a></td><td>Type de motorisation associée au véhicule utilisé lors du transport.</td></tr><tr><td style=\"white-space:nowrap\">adresseDepart<a name=\"en-tddui-task-input-transport-adresseDepart\"> </a></td><td>Adresse de départ du transport.</td></tr><tr><td style=\"white-space:nowrap\">adresseDestination<a name=\"en-tddui-task-input-transport-adresseDestination\"> </a></td><td>Adresse de destination du transport.</td></tr><tr><td style=\"white-space:nowrap\">budgetPrevisionnel<a name=\"en-tddui-task-input-transport-budgetPrevisionnel\"> </a></td><td>Budget prévisionnel pour assurer le transport de la personne physique.</td></tr><tr><td style=\"white-space:nowrap\">budgetReel<a name=\"en-tddui-task-input-transport-budgetReel\"> </a></td><td>Budget réel pour assurer le transport de la personne physique.</td></tr><tr><td style=\"white-space:nowrap\">distance<a name=\"en-tddui-task-input-transport-distance\"> </a></td><td>Distance du transport de la personne physique.</td></tr><tr><td style=\"white-space:nowrap\">dureeTheorique<a name=\"en-tddui-task-input-transport-dureeTheorique\"> </a></td><td>Durée théorique du transport de la personne physique.</td></tr><tr><td style=\"white-space:nowrap\">accompagnement<a name=\"en-tddui-task-input-transport-accompagnement\"> </a></td><td>Accompagnement nécessaire ou non de l'usager. </td></tr><tr><td style=\"white-space:nowrap\">asepsie<a name=\"en-tddui-task-input-transport-asepsie\"> </a></td><td>Lors du transport de l'usager l'asepsie est rigoureusement respectée ou n'est pas nécessaire.</td></tr><tr><td style=\"white-space:nowrap\">natureTransport<a name=\"en-tddui-task-input-transport-natureTransport\"> </a></td><td>Nature du transport de l'usager.</td></tr></table></div></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport"] ;
+  fhir:CodeSystem.version [ fhir:value "2.3.0"] ;
+  fhir:CodeSystem.name [ fhir:value "TDDUITaskInputTransport"] ;
+  fhir:CodeSystem.title [ fhir:value "TDDUI Task Input Transport"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-06-29T13:11:00+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "ANS"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "ANS" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://esante.gouv.fr" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "CodeSystem pour la définition des éléments spécifiques des input dans la ressource Task utilisée pour les transports dans le cadre du DUI."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ] ;
+       fhir:Coding.display [ fhir:value "France (la)" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.compositional [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "10"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "typeMotorisation" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Type de motorisation associée au véhicule utilisé lors du transport." ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "adresseDepart" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Adresse de départ du transport." ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "adresseDestination" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Adresse de destination du transport." ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "budgetPrevisionnel" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Budget prévisionnel pour assurer le transport de la personne physique." ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "budgetReel" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Budget réel pour assurer le transport de la personne physique." ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "distance" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Distance du transport de la personne physique." ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "dureeTheorique" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Durée théorique du transport de la personne physique." ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "accompagnement" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Accompagnement nécessaire ou non de l'usager. " ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "asepsie" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lors du transport de l'usager l'asepsie est rigoureusement respectée ou n'est pas nécessaire." ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "natureTransport" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Nature du transport de l'usager." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

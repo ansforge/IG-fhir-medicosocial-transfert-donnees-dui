@@ -35,7 +35,7 @@ Cette structure est dérivée de [Bundle](http://hl7.org/fhir/R4/bundle.html)
 
 ** Résumé **
 
-Obligatoire : 0 élément(50 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 0 élément(56 éléments obligatoire(s) imbriqué(s))
 
 **Structures**
 
@@ -65,6 +65,9 @@ Cette structure fait référence à ces autres structures:
 * [TDDUI Observation Cause Mortalite (https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-mortalite)](StructureDefinition-tddui-observation-cause-mortalite.md)
 * [TDDUI Observation Periode Scolaire (https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-periode-scolaire)](StructureDefinition-tddui-observation-periode-scolaire.md)
 * [TDDUI Observation Mobilite Usager (https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite-usager)](StructureDefinition-tddui-observation-mobilite-usager.md)
+* [TDDUI Observation Repas (https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-repas)](StructureDefinition-tddui-observation-repas.md)
+* [TDDUI Schedule (https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-schedule)](StructureDefinition-tddui-schedule.md)
+* [TDDUI Slot Presence Absence (https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-slot-presence-absence)](StructureDefinition-tddui-slot-presence-absence.md)
 * [TDDUI Goal Projet Vie (https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-projet-vie)](StructureDefinition-tddui-goal-projet-vie.md)
 
 **Slices**
@@ -93,7 +96,7 @@ Cette structure est dérivée de [Bundle](http://hl7.org/fhir/R4/bundle.html)
 
 ** Résumé **
 
-Obligatoire : 0 élément(50 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 0 élément(56 éléments obligatoire(s) imbriqué(s))
 
 **Structures**
 
@@ -123,6 +126,9 @@ Cette structure fait référence à ces autres structures:
 * [TDDUI Observation Cause Mortalite (https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-mortalite)](StructureDefinition-tddui-observation-cause-mortalite.md)
 * [TDDUI Observation Periode Scolaire (https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-periode-scolaire)](StructureDefinition-tddui-observation-periode-scolaire.md)
 * [TDDUI Observation Mobilite Usager (https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite-usager)](StructureDefinition-tddui-observation-mobilite-usager.md)
+* [TDDUI Observation Repas (https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-repas)](StructureDefinition-tddui-observation-repas.md)
+* [TDDUI Schedule (https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-schedule)](StructureDefinition-tddui-schedule.md)
+* [TDDUI Slot Presence Absence (https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-slot-presence-absence)](StructureDefinition-tddui-slot-presence-absence.md)
 * [TDDUI Goal Projet Vie (https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-projet-vie)](StructureDefinition-tddui-goal-projet-vie.md)
 
 **Slices**
@@ -148,7 +154,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-tddui-bundle.cs
   "name" : "TDDUIBundle",
   "title" : "TDDUI Bundle",
   "status" : "active",
-  "date" : "2026-06-17T09:20:14+00:00",
+  "date" : "2026-06-29T13:11:00+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -858,6 +864,87 @@ Autres représentations du profil : [CSV](../StructureDefinition-tddui-bundle.cs
     },
     {
       "id" : "Bundle.entry:DUIObservationMobiliteUsager.request.method",
+      "path" : "Bundle.entry.request.method",
+      "patternCode" : "POST"
+    },
+    {
+      "id" : "Bundle.entry:DUIObservationRepas",
+      "path" : "Bundle.entry",
+      "sliceName" : "DUIObservationRepas",
+      "short" : "Observation conforming to the DUIObservationRepas profile, used to convey the meals.",
+      "min" : 0,
+      "max" : "*"
+    },
+    {
+      "id" : "Bundle.entry:DUIObservationRepas.resource",
+      "path" : "Bundle.entry.resource",
+      "min" : 1,
+      "type" : [{
+        "code" : "Observation",
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-repas"]
+      }]
+    },
+    {
+      "id" : "Bundle.entry:DUIObservationRepas.request",
+      "path" : "Bundle.entry.request",
+      "min" : 1
+    },
+    {
+      "id" : "Bundle.entry:DUIObservationRepas.request.method",
+      "path" : "Bundle.entry.request.method",
+      "patternCode" : "POST"
+    },
+    {
+      "id" : "Bundle.entry:DUISchedule",
+      "path" : "Bundle.entry",
+      "sliceName" : "DUISchedule",
+      "short" : "Schedule conforming to the TDDUISchedule profile, used to convey the schedule.",
+      "min" : 0,
+      "max" : "*"
+    },
+    {
+      "id" : "Bundle.entry:DUISchedule.resource",
+      "path" : "Bundle.entry.resource",
+      "min" : 1,
+      "type" : [{
+        "code" : "Schedule",
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-schedule"]
+      }]
+    },
+    {
+      "id" : "Bundle.entry:DUISchedule.request",
+      "path" : "Bundle.entry.request",
+      "min" : 1
+    },
+    {
+      "id" : "Bundle.entry:DUISchedule.request.method",
+      "path" : "Bundle.entry.request.method",
+      "patternCode" : "POST"
+    },
+    {
+      "id" : "Bundle.entry:DUISlotPresenceAbsence",
+      "path" : "Bundle.entry",
+      "sliceName" : "DUISlotPresenceAbsence",
+      "short" : "Slot conforming to the TDDUISlotPresenceAbsence profile, used to convey the presence or absence.",
+      "min" : 0,
+      "max" : "*"
+    },
+    {
+      "id" : "Bundle.entry:DUISlotPresenceAbsence.resource",
+      "path" : "Bundle.entry.resource",
+      "min" : 1,
+      "type" : [{
+        "code" : "Slot",
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-slot-presence-absence"]
+      }]
+    },
+    {
+      "id" : "Bundle.entry:DUISlotPresenceAbsence.request",
+      "path" : "Bundle.entry.request",
+      "min" : 1
+    },
+    {
+      "id" : "Bundle.entry:DUISlotPresenceAbsence.request.method",
       "path" : "Bundle.entry.request.method",
       "patternCode" : "POST"
     },

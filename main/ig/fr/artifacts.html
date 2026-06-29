@@ -43,7 +43,9 @@
   </head>
   <body onload="document.body.style.opacity='1'">
 
-	  <script src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"9"}
@@ -224,6 +226,7 @@
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
+
 <style type="text/css">
 h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
 h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
@@ -516,6 +519,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-observation-repas.html"
+                  title="StructureDefinition/tddui-observation-repas">
+                  <span title="StructureDefinition/tddui-observation-repas">TDDUI Observation Repas
+</span>
+               </a>
+            </td>
+            <td>
+<p>Profil de la ressource Observation permettant de représenter si l'usager bénéficie ou non des repas.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-tddui-organization.html"
                   title="StructureDefinition/tddui-organization">
                   <span title="StructureDefinition/tddui-organization">TDDUI Organization
@@ -600,6 +615,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-schedule.html"
+                  title="StructureDefinition/tddui-schedule">
+                  <span title="StructureDefinition/tddui-schedule">TDDUI Schedule
+</span>
+               </a>
+            </td>
+            <td>
+<p>Profil de la ressource FRCoreScheduleProfile permettant de contenir l'ensemble des présences et absences de l'usager.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-tddui-service-request-besoin.html"
                   title="StructureDefinition/tddui-service-request-besoin">
                   <span title="StructureDefinition/tddui-service-request-besoin">TDDUI ServiceRequest Besoin
@@ -608,6 +635,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Profil de la ressource ServiceRequest permettant de représenter les besoins de l'usager.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-slot-presence-absence.html"
+                  title="StructureDefinition/tddui-slot-presence-absence">
+                  <span title="StructureDefinition/tddui-slot-presence-absence">TDDUI Slot Presence Absence
+</span>
+               </a>
+            </td>
+            <td>
+<p>Profil de la ressource FRCoreSlotProfile permettant de représenter les présences et absences de l'usager.</p>
 </td>
          </tr>
          <tr>
@@ -953,6 +992,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-facturation.html"
+                  title="StructureDefinition/tddui-facturation">
+                  <span title="StructureDefinition/tddui-facturation">TDDUI Facturation
+</span>
+               </a>
+            </td>
+            <td>
+<p>Indique si une facture a été établie.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-tddui-household-situation.html"
                   title="StructureDefinition/tddui-household-situation">
                   <span title="StructureDefinition/tddui-household-situation">TDDUI Household Situation
@@ -997,6 +1048,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Indique la présence du participant à l'événement.</p>
+<ul>
+  <li><strong>Événement</strong> :Indique la présence du participant à l'événement.</li>
+  <li><strong>Repas</strong> : Indique la présence de l'usager au repas.</li>
+</ul>
 </td>
          </tr>
          <tr>
@@ -1008,7 +1063,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </a>
             </td>
             <td>
-<p>Evènement nécessitant ou non la présence physique de l’usager.</p>
+
+<ul>
+  <li><strong>Événement</strong> : évènement nécessitant ou non la présence physique de l’usager.</li>
+</ul>
 </td>
          </tr>
          <tr>
@@ -1021,6 +1079,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Validation par l'usager que l'événement a eu lieu.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tddui-planned-absence.html"
+                  title="StructureDefinition/tddui-planned-absence">
+                  <span title="StructureDefinition/tddui-planned-absence">TDDUI Planned Absence
+</span>
+               </a>
+            </td>
+            <td>
+<p>Absence prévue</p>
 </td>
          </tr>
          <tr>
@@ -1224,6 +1294,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="ValueSet-tddui-observation-identifier-repas.html"
+                  title="ValueSet/tddui-observation-identifier-repas">
+                  <span title="ValueSet/tddui-observation-identifier-repas">TDDUI Observation Repas Identifier
+</span>
+               </a>
+            </td>
+            <td>
+<p>ValueSet pour la définition des codes d'identifiant du repas</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="ValueSet-tddui-observation-type.html"
                   title="ValueSet/tddui-observation-type">
                   <span title="ValueSet/tddui-observation-type">TDDUI Observation Type
@@ -1267,6 +1349,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>ValueSet contenant les codes SERAFIN (prestations directes et indirectes) pour le profil TDDUI Encounter Evenement.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-tddui-slot-identifier-presence-absence.html"
+                  title="ValueSet/tddui-slot-identifier-presence-absence">
+                  <span title="ValueSet/tddui-slot-identifier-presence-absence">TDDUI Slot Identifier Presence Absence
+</span>
+               </a>
+            </td>
+            <td>
+<p>ValueSet définissant les types d'identifiants pour la ressource SlotPresenceAbsence.</p>
 </td>
          </tr>
          <tr>
@@ -1387,6 +1481,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="CodeSystem-tddui-observation-identifier.html"
+                  title="CodeSystem/tddui-observation-identifier">
+                  <span title="CodeSystem/tddui-observation-identifier">TDDUI Observation Identifier
+</span>
+               </a>
+            </td>
+            <td>
+<p>CodeSystem pour la définition des codes d'identifiant d'observation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="CodeSystem-tddui-observation-periode-scolaire.html"
                   title="CodeSystem/tddui-observation-periode-scolaire">
                   <span title="CodeSystem/tddui-observation-periode-scolaire">TDDUI Observation Periode Scolaire
@@ -1419,6 +1525,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>CodeSystem pour la définition des codes d'identifiant de l'usager</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-tddui-slot-identifier.html"
+                  title="CodeSystem/tddui-slot-identifier">
+                  <span title="CodeSystem/tddui-slot-identifier">TDDUI Slot Identifier
+</span>
+               </a>
+            </td>
+            <td>
+<p>CodeSystem pour la définition des codes d'identifiant de la ressource Slot</p>
 </td>
          </tr>
          <tr>
@@ -1595,6 +1713,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Exemple de la ressource TDDUIObservationPeriodeScolaire</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-tddui-observation-repas-example.html"
+                  title="Observation/tddui-observation-repas-example">
+                  <span title="Observation/tddui-observation-repas-example">TDDUI Observation Repas Example
+</span>
+               </a>
+            </td>
+            <td>
+<p>Exemple de la ressource TDDUIObservationRepas</p>
 </td>
          </tr>
          <tr>
@@ -2151,6 +2281,30 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="Schedule-tddui-schedule-example.html"
+                  title="Schedule/tddui-schedule-example">
+                  <span title="Schedule/tddui-schedule-example">TDDUI Schedule Example
+</span>
+               </a>
+            </td>
+            <td>
+<p>Exemple de la ressource TDDUISchedule.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Slot-tddui-slot-presence-absence-example.html"
+                  title="Slot/tddui-slot-presence-absence-example">
+                  <span title="Slot/tddui-slot-presence-absence-example">TDDUI Slot PresenceAbsence Example
+</span>
+               </a>
+            </td>
+            <td>
+<p>Exemple de la ressource TDDUISlotPresenceAbsence.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="Task-tddui-task-transport-example.html"
                   title="Task/tddui-task-transport-example">
                   <span title="Task/tddui-task-transport-example">TDDUI Task Transport Example
@@ -2235,8 +2389,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
           IG © 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  
           Le package ans.fhir.fr.tddui#2.3.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-06-17 09:20:00 +0000">
-    2026-06-17
+  <span title="2026-06-29 13:11:00 +0000">
+    2026-06-29
   </span>
 
           <br/>
