@@ -30,7 +30,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "title" : "TDDUI Task Input Moyen Ressource",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-29T12:38:54+00:00",
+  "date" : "2026-06-29T13:00:14+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

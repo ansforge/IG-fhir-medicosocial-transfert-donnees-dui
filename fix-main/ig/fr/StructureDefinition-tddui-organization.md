@@ -83,7 +83,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-tddui-organizat
   "name" : "TDDUIOrganization",
   "title" : "TDDUI Organization",
   "status" : "active",
-  "date" : "2026-06-29T12:38:54+00:00",
+  "date" : "2026-06-29T13:00:14+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
