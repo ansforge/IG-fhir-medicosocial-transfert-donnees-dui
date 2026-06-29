@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,66 +7,84 @@
 
 <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-contact-relation> a fhir:ValueSet ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "tddui-contact-relation"] ; # 
-  fhir:meta [
-     fhir:profile ( [
-       fhir:v "http://hl7.org/fhir/StructureDefinition/shareablevalueset"^^xsd:anyURI ;
+  fhir:Resource.id [ fhir:value "tddui-contact-relation"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/StructureDefinition/shareablevalueset" ;
+       fhir:index 0 ;
        fhir:link <http://hl7.org/fhir/StructureDefinition/shareablevalueset>
-     ] )
-  ] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs tddui-contact-relation</b></p><a name=\"tddui-contact-relation\"> </a><a name=\"hctddui-contact-relation\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"http://hl7.org/fhir/R4/shareablevalueset.html\">Shareable ValueSet</a></p></div><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Importe tous les codes contenu dans <a href=\"https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J11-RelationPatient-CISIS.html\">JDV_J11_RelationPatient_CISIS</a></li><li>Importe tous les codes contenu dans <a href=\"https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J14-QualiteRepresentantLegal-CISIS.html\">JDV_J14_QualiteRepresentantLegal_CISIS</a></li></ul><p>Ce jeu de valeur (ValueSet) exclut les codes selon les règles suivantes :</p><ul><li>Exclut ce(s) code(s) tel qu'il(s) est (sont) défini(s) dans <a href=\"https://interop.esante.gouv.fr/terminologies/1.10.0/CodeSystem-TRE-R217-ProtectionJuridique.html\"><code>https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique</code></a><span title=\"La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à {0}, la version trouvée via les références de package\"> version ?20231215120000</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.10.0/CodeSystem-TRE-R217-ProtectionJuridique.html#TRE-R217-ProtectionJuridique-TUTEUR\">TUTEUR</a></td><td>Tuteur</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.10.0/CodeSystem-TRE-R217-ProtectionJuridique.html#TRE-R217-ProtectionJuridique-CURATEUR\">CURATEUR</a></td><td>Curateur</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.10.0/CodeSystem-TRE-R217-ProtectionJuridique.html#TRE-R217-ProtectionJuridique-MSVG\">MSVG</a></td><td>Mandataire de sauvegarde</td></tr></table></li></ul></div><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ValueSet tddui-contact-relation</b></p><a name=\"en-tddui-contact-relation\"> </a><a name=\"en-hctddui-contact-relation\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/R4/shareablevalueset.html\">Shareable ValueSet</a></p></div><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J11-RelationPatient-CISIS.html\">JDV_J11_RelationPatient_CISIS</a></li><li>Import all the codes that are contained in <a href=\"https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J14-QualiteRepresentantLegal-CISIS.html\">JDV_J14_QualiteRepresentantLegal_CISIS</a></li></ul><p>This value set excludes codes based on the following rules:</p><ul><li>Exclude these codes as defined in <a href=\"https://interop.esante.gouv.fr/terminologies/1.10.0/CodeSystem-TRE-R217-ProtectionJuridique.html\"><code>https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique</code></a><span title=\"Version is not explicitly stated, which means it is fixed to 20231215120000, the version found through the package references\"> version ?20231215120000</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.10.0/CodeSystem-TRE-R217-ProtectionJuridique.html#TRE-R217-ProtectionJuridique-TUTEUR\">TUTEUR</a></td><td>Tuteur</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.10.0/CodeSystem-TRE-R217-ProtectionJuridique.html#TRE-R217-ProtectionJuridique-CURATEUR\">CURATEUR</a></td><td>Curateur</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.10.0/CodeSystem-TRE-R217-ProtectionJuridique.html#TRE-R217-ProtectionJuridique-MSVG\">MSVG</a></td><td>Mandataire de sauvegarde</td></tr></table></li></ul></div></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-contact-relation"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "2.3.0"] ; # 
-  fhir:name [ fhir:v "TDDUIContactRelation"] ; # 
-  fhir:title [ fhir:v "TDDUI Contact Relation"] ; # 
-  fhir:status [ fhir:v "active"] ; # 
-  fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2026-06-24T12:28:11+00:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "ANS"] ; # 
-  fhir:contact ( [
-     fhir:name [ fhir:v "ANS" ] ;
-     fhir:telecom ( [
-       fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "https://esante.gouv.fr" ]
-     ] )
-  ] ) ; # 
-  fhir:description [ fhir:v "ValueSet définissant les relations."] ; # 
-  fhir:jurisdiction ( [
-     fhir:coding ( [
-       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "FR" ] ;
-       fhir:display [ fhir:v "France (la)" ]
-     ] )
-  ] ) ; # 
-  fhir:compose [
-     fhir:include ( [
-       fhir:valueSet ( [
-         fhir:v "https://mos.esante.gouv.fr/NOS/JDV_J11-RelationPatient-CISIS/FHIR/JDV-J11-RelationPatient-CISIS"^^xsd:anyURI ;
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs tddui-contact-relation</b></p><a name=\"tddui-contact-relation\"> </a><a name=\"hctddui-contact-relation\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"http://hl7.org/fhir/R4/shareablevalueset.html\">Shareable ValueSet</a></p></div><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Importe tous les codes contenu dans <a href=\"https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J11-RelationPatient-CISIS.html\">JDV_J11_RelationPatient_CISIS</a></li><li>Importe tous les codes contenu dans <a href=\"https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J14-QualiteRepresentantLegal-CISIS.html\">JDV_J14_QualiteRepresentantLegal_CISIS</a></li></ul><p>Ce jeu de valeur (ValueSet) exclut les codes selon les règles suivantes :</p><ul><li>Exclut ce(s) code(s) tel qu'il(s) est (sont) défini(s) dans <a href=\"https://interop.esante.gouv.fr/terminologies/1.10.0/CodeSystem-TRE-R217-ProtectionJuridique.html\"><code>https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique</code></a><span title=\"La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à {0}, la version trouvée via les références de package\"> version ?20231215120000</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.10.0/CodeSystem-TRE-R217-ProtectionJuridique.html#TRE-R217-ProtectionJuridique-TUTEUR\">TUTEUR</a></td><td>Tuteur</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.10.0/CodeSystem-TRE-R217-ProtectionJuridique.html#TRE-R217-ProtectionJuridique-CURATEUR\">CURATEUR</a></td><td>Curateur</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.10.0/CodeSystem-TRE-R217-ProtectionJuridique.html#TRE-R217-ProtectionJuridique-MSVG\">MSVG</a></td><td>Mandataire de sauvegarde</td></tr></table></li></ul></div><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ValueSet tddui-contact-relation</b></p><a name=\"en-tddui-contact-relation\"> </a><a name=\"en-hctddui-contact-relation\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/R4/shareablevalueset.html\">Shareable ValueSet</a></p></div><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J11-RelationPatient-CISIS.html\">JDV_J11_RelationPatient_CISIS</a></li><li>Import all the codes that are contained in <a href=\"https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J14-QualiteRepresentantLegal-CISIS.html\">JDV_J14_QualiteRepresentantLegal_CISIS</a></li></ul><p>This value set excludes codes based on the following rules:</p><ul><li>Exclude these codes as defined in <a href=\"https://interop.esante.gouv.fr/terminologies/1.10.0/CodeSystem-TRE-R217-ProtectionJuridique.html\"><code>https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique</code></a><span title=\"Version is not explicitly stated, which means it is fixed to 20231215120000, the version found through the package references\"> version ?20231215120000</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.10.0/CodeSystem-TRE-R217-ProtectionJuridique.html#TRE-R217-ProtectionJuridique-TUTEUR\">TUTEUR</a></td><td>Tuteur</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.10.0/CodeSystem-TRE-R217-ProtectionJuridique.html#TRE-R217-ProtectionJuridique-CURATEUR\">CURATEUR</a></td><td>Curateur</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.10.0/CodeSystem-TRE-R217-ProtectionJuridique.html#TRE-R217-ProtectionJuridique-MSVG\">MSVG</a></td><td>Mandataire de sauvegarde</td></tr></table></li></ul></div></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-contact-relation"] ;
+  fhir:ValueSet.version [ fhir:value "2.3.0"] ;
+  fhir:ValueSet.name [ fhir:value "TDDUIContactRelation"] ;
+  fhir:ValueSet.title [ fhir:value "TDDUI Contact Relation"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-06-29T12:38:54+00:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "ANS"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "ANS" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://esante.gouv.fr" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "ValueSet définissant les relations."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ] ;
+       fhir:Coding.display [ fhir:value "France (la)" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.valueSet [
+         fhir:value "https://mos.esante.gouv.fr/NOS/JDV_J11-RelationPatient-CISIS/FHIR/JDV-J11-RelationPatient-CISIS" ;
+         fhir:index 0 ;
          fhir:link <https://mos.esante.gouv.fr/NOS/JDV_J11-RelationPatient-CISIS/FHIR/JDV-J11-RelationPatient-CISIS>
-       ] )
-     ] [
-       fhir:valueSet ( [
-         fhir:v "https://mos.esante.gouv.fr/NOS/JDV_J14-QualiteRepresentantLegal-CISIS/FHIR/JDV-J14-QualiteRepresentantLegal-CISIS"^^xsd:anyURI ;
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:ValueSet.compose.include.valueSet [
+         fhir:value "https://mos.esante.gouv.fr/NOS/JDV_J14-QualiteRepresentantLegal-CISIS/FHIR/JDV-J14-QualiteRepresentantLegal-CISIS" ;
+         fhir:index 0 ;
          fhir:link <https://mos.esante.gouv.fr/NOS/JDV_J14-QualiteRepresentantLegal-CISIS/FHIR/JDV-J14-QualiteRepresentantLegal-CISIS>
-       ] )
-     ] ) ;
-     fhir:exclude ( [
-       fhir:system [ fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique"^^xsd:anyURI ] ;
-       fhir:concept ( [
-         fhir:code [ fhir:v "TUTEUR" ] ;
-         fhir:display [ fhir:v "Tuteur" ]
-       ] [
-         fhir:code [ fhir:v "CURATEUR" ] ;
-         fhir:display [ fhir:v "Curateur" ]
-       ] [
-         fhir:code [ fhir:v "MSVG" ] ;
-         fhir:display [ fhir:v "Mandataire de sauvegarde" ]
-       ] )
-     ] )
-  ] . # 
+       ]
+     ] ;
+     fhir:ValueSet.compose.exclude [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TUTEUR" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tuteur" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "CURATEUR" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Curateur" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "MSVG" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mandataire de sauvegarde" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-contact-relation.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 
