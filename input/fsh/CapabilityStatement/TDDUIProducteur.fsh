@@ -68,6 +68,7 @@ Usage: #definition
 * rest.resource[10].type = #Goal
 * rest.resource[=].supportedProfile[0] = Canonical(tddui-goal-attente)
 * rest.resource[=].supportedProfile[+] = Canonical(tddui-goal-objectif)
+* rest.resource[=].supportedProfile[+] = Canonical(tddui-goal-projet-vie)
 * rest.resource[=].interaction[0].code = #create
 
 * rest.resource[11].type = #ServiceRequest
@@ -83,6 +84,15 @@ Usage: #definition
 * rest.resource[=].supportedProfile[0] = Canonical(tddui-observation-cause-mortalite)
 * rest.resource[=].supportedProfile[+] = Canonical(tddui-observation-periode-scolaire)
 * rest.resource[=].supportedProfile[+] = Canonical(tddui-observation-mobilite-usager)
+* rest.resource[=].supportedProfile[+] = Canonical(tddui-observation-repas)
+* rest.resource[=].interaction[0].code = #create
+
+* rest.resource[14].type = #Schedule
+* rest.resource[=].supportedProfile = Canonical(tddui-schedule)
+* rest.resource[=].interaction[0].code = #create
+
+* rest.resource[15].type = #Slot
+* rest.resource[=].supportedProfile = Canonical(tddui-slot-presence-absence)
 * rest.resource[=].interaction[0].code = #create
 
 * rest.resource[14].type = #Basic

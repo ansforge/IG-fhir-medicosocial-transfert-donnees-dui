@@ -19,6 +19,10 @@ Ce mapping représente les données fonctionnelles trouvant leur équivalence da
 
 <div>{%include mapping_TDDUIObservationPeriodeScolaire.svg%}</div>
 
+### Mapping ProjetVie
+
+<div>{%include mapping_TDDUIGoalProjetVie.svg%}</div>
+
 ### Mapping Contact
 <div>{%include mapping_TDDUIRelatedPersonContact.svg%}</div>
 
@@ -38,6 +42,14 @@ Ce mapping représente les données fonctionnelles trouvant leur équivalence da
 ### Mapping Evènement
 
 <div>{%include mapping_TDDUIEncounterEvenement.svg%}</div>
+
+### Mapping Présence Absence
+
+<div>{%include mapping_TDDUISlotPresenceAbsence.svg%}</div>
+
+### Mapping Repas
+
+<div>{%include mapping_TDDUIObservationRepas.svg%}</div>
 
 ### Mapping Transport
 

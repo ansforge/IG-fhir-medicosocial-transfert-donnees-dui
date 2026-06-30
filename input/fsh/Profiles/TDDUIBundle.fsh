@@ -38,6 +38,10 @@ Description: "Profil générique créé pour transmettre des données d'un logic
     DUIServiceRequestDemandeOrientation 0..* and
     DUIBasicDroitDecision 0..*
 
+    DUIObservationRepas 0..* and
+    DUISchedule 0..* and
+    DUISlotPresenceAbsence 0..* and 
+    DUIGoalProjetVie 0..*
 
 
 * entry[DUIPatient].resource only TDDUIPatient
@@ -195,3 +199,25 @@ Description: "Profil générique créé pour transmettre des données d'un logic
 * entry[DUIBasicDroitDecision].resource 1..1
 * entry[DUIBasicDroitDecision].request 1..1
 * entry[DUIBasicDroitDecision].request.method = #POST
+* entry[DUIObservationRepas].resource only TDDUIObservationRepas
+* entry[DUIObservationRepas] ^short = "Observation conforming to the DUIObservationRepas profile, used to convey the meals."
+* entry[DUIObservationRepas].resource 1..1
+* entry[DUIObservationRepas].request 1..1
+* entry[DUIObservationRepas].request.method = #POST
+
+* entry[DUISchedule].resource only TDDUISchedule
+* entry[DUISchedule] ^short = "Schedule conforming to the TDDUISchedule profile, used to convey the schedule."
+* entry[DUISchedule].resource 1..1
+* entry[DUISchedule].request 1..1
+* entry[DUISchedule].request.method = #POST
+
+* entry[DUISlotPresenceAbsence].resource only TDDUISlotPresenceAbsence
+* entry[DUISlotPresenceAbsence] ^short = "Slot conforming to the TDDUISlotPresenceAbsence profile, used to convey the presence or absence."
+* entry[DUISlotPresenceAbsence].resource 1..1
+* entry[DUISlotPresenceAbsence].request 1..1
+* entry[DUISlotPresenceAbsence].request.method = #POST
+* entry[DUIGoalProjetVie].resource only TDDUIGoalProjetVie
+* entry[DUIGoalProjetVie] ^short = "Goal conforming to the TDDUIGoalProjetVie profile, used to convey the life project."
+* entry[DUIGoalProjetVie].resource 1..1
+* entry[DUIGoalProjetVie].request 1..1
+* entry[DUIGoalProjetVie].request.method = #POST
