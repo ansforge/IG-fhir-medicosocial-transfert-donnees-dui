@@ -1,4 +1,4 @@
-# Flux 1 - Transmission de données DUI - Médicosocial - Transfert de données DUI v2.3.0
+# Flux 1 - Transmission de données DUI - Médicosocial - Transfert de données DUI v2.4.0-ballot
 
 ## Flux 1 - Transmission de données DUI
 

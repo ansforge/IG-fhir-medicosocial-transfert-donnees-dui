@@ -1,4 +1,4 @@
-# TDDUI DocumentReference - Médicosocial - Transfert de données DUI v2.3.0
+# TDDUI DocumentReference - Médicosocial - Transfert de données DUI v2.4.0-ballot
 
 ## Profil de ressource: TDDUI DocumentReference 
 
@@ -107,11 +107,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-tddui-document-
   "resourceType" : "StructureDefinition",
   "id" : "tddui-document-reference",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference",
-  "version" : "2.3.0",
+  "version" : "2.4.0-ballot",
   "name" : "TDDUIDocumentReference",
   "title" : "TDDUI DocumentReference",
   "status" : "active",
-  "date" : "2026-06-30T13:41:45+00:00",
+  "date" : "2026-06-30T14:01:12+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

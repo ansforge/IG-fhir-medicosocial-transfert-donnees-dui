@@ -1,4 +1,4 @@
-# TDDUI Task Input Transport - Médicosocial - Transfert de données DUI v2.3.0
+# TDDUI Task Input Transport - Médicosocial - Transfert de données DUI v2.4.0-ballot
 
 ## CodeSystem: TDDUI Task Input Transport 
 
@@ -25,12 +25,12 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem"]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-transport",
-  "version" : "2.3.0",
+  "version" : "2.4.0-ballot",
   "name" : "TDDUITaskInputTransport",
   "title" : "TDDUI Task Input Transport",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-30T13:41:45+00:00",
+  "date" : "2026-06-30T14:01:12+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

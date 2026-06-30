@@ -1,4 +1,4 @@
-# TDDUI Planned Absence - Médicosocial - Transfert de données DUI v2.3.0
+# TDDUI Planned Absence - Médicosocial - Transfert de données DUI v2.4.0-ballot
 
 ## Extension: TDDUI Planned Absence 
 
@@ -32,11 +32,11 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-planned-abs
   "resourceType" : "StructureDefinition",
   "id" : "tddui-planned-absence",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-planned-absence",
-  "version" : "2.3.0",
+  "version" : "2.4.0-ballot",
   "name" : "TDDUIPlannedAbsence",
   "title" : "TDDUI Planned Absence",
   "status" : "active",
-  "date" : "2026-06-30T13:41:45+00:00",
+  "date" : "2026-06-30T14:01:12+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

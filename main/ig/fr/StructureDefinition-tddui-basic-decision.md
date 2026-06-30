@@ -1,4 +1,4 @@
-# TDDUI Basic Decision - Médicosocial - Transfert de données DUI v2.3.0
+# TDDUI Basic Decision - Médicosocial - Transfert de données DUI v2.4.0-ballot
 
 ## Profil de ressource: TDDUI Basic Decision 
 
@@ -118,11 +118,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-tddui-basic-dec
   "resourceType" : "StructureDefinition",
   "id" : "tddui-basic-decision",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-basic-decision",
-  "version" : "2.3.0",
+  "version" : "2.4.0-ballot",
   "name" : "TDDUIBasicDecision",
   "title" : "TDDUI Basic Decision",
   "status" : "active",
-  "date" : "2026-06-30T13:41:45+00:00",
+  "date" : "2026-06-30T14:01:12+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

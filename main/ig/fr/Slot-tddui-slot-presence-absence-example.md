@@ -1,4 +1,4 @@
-# TDDUI Slot PresenceAbsence Example - Médicosocial - Transfert de données DUI v2.3.0
+# TDDUI Slot PresenceAbsence Example - Médicosocial - Transfert de données DUI v2.4.0-ballot
 
 ## Exemple Slot: TDDUI Slot PresenceAbsence Example
 

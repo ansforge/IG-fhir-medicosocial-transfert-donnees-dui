@@ -1,4 +1,4 @@
-# TDDUI Comment - Médicosocial - Transfert de données DUI v2.3.0
+# TDDUI Comment - Médicosocial - Transfert de données DUI v2.4.0-ballot
 
 ## Extension: TDDUI Comment 
 
@@ -72,11 +72,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-tddui-comment.c
   "resourceType" : "StructureDefinition",
   "id" : "tddui-comment",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-comment",
-  "version" : "2.3.0",
+  "version" : "2.4.0-ballot",
   "name" : "TDDUIComment",
   "title" : "TDDUI Comment",
   "status" : "active",
-  "date" : "2026-06-30T13:41:45+00:00",
+  "date" : "2026-06-30T14:01:12+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

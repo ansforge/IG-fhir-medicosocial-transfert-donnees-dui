@@ -1,4 +1,4 @@
-# TDDUI PP PA Bundle Example - Médicosocial - Transfert de données DUI v2.3.0
+# TDDUI PP PA Bundle Example - Médicosocial - Transfert de données DUI v2.4.0-ballot
 
 ## Exemple Bundle: TDDUI PP PA Bundle Example
 

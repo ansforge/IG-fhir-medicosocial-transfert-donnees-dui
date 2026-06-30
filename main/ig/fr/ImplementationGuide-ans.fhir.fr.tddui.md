@@ -10,11 +10,11 @@
   "id" : "ans.fhir.fr.tddui",
   "language" : "fr",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui",
-  "version" : "2.3.0",
+  "version" : "2.4.0-ballot",
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2026-06-30T13:41:45+00:00",
+  "date" : "2026-06-30T14:01:12+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -98,7 +98,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "trial-implementation"
+        "valueString" : "public-comment"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -438,7 +438,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "trial-implementation"
+        "valueString" : "public-comment"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },

@@ -1,4 +1,4 @@
-# TDDUI Goal Attente - Médicosocial - Transfert de données DUI v2.3.0
+# TDDUI Goal Attente - Médicosocial - Transfert de données DUI v2.4.0-ballot
 
 ## Profil de ressource: TDDUI Goal Attente 
 
@@ -120,11 +120,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-tddui-goal-atte
   "resourceType" : "StructureDefinition",
   "id" : "tddui-goal-attente",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente",
-  "version" : "2.3.0",
+  "version" : "2.4.0-ballot",
   "name" : "TDDUIGoalAttente",
   "title" : "TDDUI Goal Attente",
   "status" : "active",
-  "date" : "2026-06-30T13:41:45+00:00",
+  "date" : "2026-06-30T14:01:12+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

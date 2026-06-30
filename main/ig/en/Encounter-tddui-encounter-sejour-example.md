@@ -1,4 +1,4 @@
-# TDDUI Encounter Sejour Example - Médicosocial - Transfert de données DUI v2.3.0
+# TDDUI Encounter Sejour Example - Médicosocial - Transfert de données DUI v2.4.0-ballot
 
 ## Example Encounter: TDDUI Encounter Sejour Example
 

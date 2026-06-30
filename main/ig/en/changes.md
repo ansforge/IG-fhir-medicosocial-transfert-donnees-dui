@@ -1,9 +1,25 @@
-# Historique des changements - Médicosocial - Transfert de données DUI v2.3.0
+# Historique des changements - Médicosocial - Transfert de données DUI v2.4.0-ballot
 
 ## Historique des changements
 
  
 There is no translation page available for the current page, so it has been rendered in the default language 
+
+### Release 2.4.0-ballot de l'Implementation Guide du volet "Transfert de dossier DUI"
+
+Modifications apportées dans cette release [2.4.0-ballot](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pulls?q=is%3Apr+is%3Aclosed+milestone%3A2.4.0-ballot) :
+
+* [feat: adopt container mode for CI-build workflow](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/485)
+* [Correction TDDUI Bundle](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/484)
+* [Revert "ANS-006-168 - Ajout des objets PresenceAbsence et Repas"](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/483)
+* [Passage au template 2 : i18n et expansion-params](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/482)
+* [ANS-006-168 - Ajout des objets demandeorientation decision droitprestation](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/455)
+* [ANS-006-168 - Ajout du projet de vie](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/453)
+* [ANS-006-168 - Ajout des objets PresenceAbsence et Repas](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/452)
+* [juridiction](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/467)
+* [Ajout des url pour JDV NOS lot2,3](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/465)
+* [Création onglet problématiques connues](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/454)
+* [Sfe lot 3 serafin](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/423)
 
 ### Release 2.3.0 de l'Implementation Guide du volet "Transfert de dossier DUI"
 

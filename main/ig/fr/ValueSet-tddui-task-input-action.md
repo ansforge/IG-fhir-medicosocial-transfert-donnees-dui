@@ -1,4 +1,4 @@
-# TDDUI Task Input Action - Médicosocial - Transfert de données DUI v2.3.0
+# TDDUI Task Input Action - Médicosocial - Transfert de données DUI v2.4.0-ballot
 
 ## ValueSet: TDDUI Task Input Action 
 
@@ -31,12 +31,12 @@ ValueSet pour la définition des éléments spécifiques des input dans la resso
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-task-input-action",
-  "version" : "2.3.0",
+  "version" : "2.4.0-ballot",
   "name" : "TDDUITaskInputAction",
   "title" : "TDDUI Task Input Action",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-30T13:41:45+00:00",
+  "date" : "2026-06-30T14:01:12+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

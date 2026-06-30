@@ -1,4 +1,4 @@
-# TDDUI Encounter Evenement - Médicosocial - Transfert de données DUI v2.3.0
+# TDDUI Encounter Evenement - Médicosocial - Transfert de données DUI v2.4.0-ballot
 
 ## Resource Profile: TDDUI Encounter Evenement 
 
@@ -31,11 +31,11 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-encounter-e
   "resourceType" : "StructureDefinition",
   "id" : "tddui-encounter-evenement",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement",
-  "version" : "2.3.0",
+  "version" : "2.4.0-ballot",
   "name" : "TDDUIEncounterEvenement",
   "title" : "TDDUI Encounter Evenement",
   "status" : "active",
-  "date" : "2026-06-30T13:41:45+00:00",
+  "date" : "2026-06-30T14:01:12+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

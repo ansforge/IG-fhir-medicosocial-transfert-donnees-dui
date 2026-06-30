@@ -1,4 +1,4 @@
-# TDDUI ServiceRequest Besoin Identifier - Médicosocial - Transfert de données DUI v2.3.0
+# TDDUI ServiceRequest Besoin Identifier - Médicosocial - Transfert de données DUI v2.4.0-ballot
 
 ## ValueSet: TDDUI ServiceRequest Besoin Identifier 
 
@@ -31,12 +31,12 @@ ValueSet pour la définition des codes d'identifiant de besoin
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-service-request-identifier-besoin",
-  "version" : "2.3.0",
+  "version" : "2.4.0-ballot",
   "name" : "TDDUIServiceRequestIdentifierBesoin",
   "title" : "TDDUI ServiceRequest Besoin Identifier",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-30T13:41:45+00:00",
+  "date" : "2026-06-30T14:01:12+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

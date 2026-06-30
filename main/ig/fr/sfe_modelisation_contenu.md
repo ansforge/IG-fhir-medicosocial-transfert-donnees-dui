@@ -1,4 +1,4 @@
-# Modélisation du contenu du DUI - Médicosocial - Transfert de données DUI v2.3.0
+# Modélisation du contenu du DUI - Médicosocial - Transfert de données DUI v2.4.0-ballot
 
 ## Modélisation du contenu du DUI
 

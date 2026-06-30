@@ -1,4 +1,4 @@
-# TDDUI Patient Identifier - Médicosocial - Transfert de données DUI v2.3.0
+# TDDUI Patient Identifier - Médicosocial - Transfert de données DUI v2.4.0-ballot
 
 ## CodeSystem: TDDUI Patient Identifier 
 
@@ -25,12 +25,12 @@ This Code system is referenced in the definition of the following value sets:
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem"]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-identifier",
-  "version" : "2.3.0",
+  "version" : "2.4.0-ballot",
   "name" : "TDDUIIdentifier",
   "title" : "TDDUI Patient Identifier",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-30T13:41:45+00:00",
+  "date" : "2026-06-30T14:01:12+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

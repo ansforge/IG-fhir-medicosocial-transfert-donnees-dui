@@ -1,4 +1,4 @@
-# TDDUI Observation Periode Scolaire - Médicosocial - Transfert de données DUI v2.3.0
+# TDDUI Observation Periode Scolaire - Médicosocial - Transfert de données DUI v2.4.0-ballot
 
 ## Profil de ressource: TDDUI Observation Periode Scolaire 
 
@@ -114,11 +114,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-tddui-observati
   "resourceType" : "StructureDefinition",
   "id" : "tddui-observation-periode-scolaire",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-periode-scolaire",
-  "version" : "2.3.0",
+  "version" : "2.4.0-ballot",
   "name" : "TDDUIObservationPeriodeScolaire",
   "title" : "TDDUI Observation Periode Scolaire",
   "status" : "active",
-  "date" : "2026-06-30T13:41:45+00:00",
+  "date" : "2026-06-30T14:01:12+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

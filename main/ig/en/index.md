@@ -1,4 +1,4 @@
-# Accueil - Médicosocial - Transfert de données DUI v2.3.0
+# Accueil - Médicosocial - Transfert de données DUI v2.4.0-ballot
 
 ## Accueil
 
@@ -7,6 +7,9 @@ There is no translation page available for the current page, so it has been rend
 
  **Brief description of this Implementation Guide**
  The Digital User File (DUI) centralizes all information concerning the person being cared for in social and medico-social facilities and services. The aim of this implementation guide is to define the specifications for DUI data transfer. 
+
+>  **Attention !** 
+ Cet Implementation Guide est actuellement en concertation. La version courante est accessible à l'adresse : http://interop.esante.gouv.fr/ig/fhir/tddui 
 
 ### Introduction
 

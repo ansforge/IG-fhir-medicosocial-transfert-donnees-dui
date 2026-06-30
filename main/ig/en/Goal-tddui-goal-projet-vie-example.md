@@ -1,4 +1,4 @@
-# TDDUI Goal ProjetVie Example - Médicosocial - Transfert de données DUI v2.3.0
+# TDDUI Goal ProjetVie Example - Médicosocial - Transfert de données DUI v2.4.0-ballot
 
 ## Example Goal: TDDUI Goal ProjetVie Example
 

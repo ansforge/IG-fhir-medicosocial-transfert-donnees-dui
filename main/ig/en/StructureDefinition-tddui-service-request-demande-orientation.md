@@ -1,4 +1,4 @@
-# TDDUI ServiceRequest DemandeOrientation - Médicosocial - Transfert de données DUI v2.3.0
+# TDDUI ServiceRequest DemandeOrientation - Médicosocial - Transfert de données DUI v2.4.0-ballot
 
 ## Resource Profile: TDDUI ServiceRequest DemandeOrientation 
 
@@ -31,11 +31,11 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-service-req
   "resourceType" : "StructureDefinition",
   "id" : "tddui-service-request-demande-orientation",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-demande-orientation",
-  "version" : "2.3.0",
+  "version" : "2.4.0-ballot",
   "name" : "TDDUIServiceRequestDemandeOrientation",
   "title" : "TDDUI ServiceRequest DemandeOrientation",
   "status" : "active",
-  "date" : "2026-06-30T13:41:45+00:00",
+  "date" : "2026-06-30T14:01:12+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

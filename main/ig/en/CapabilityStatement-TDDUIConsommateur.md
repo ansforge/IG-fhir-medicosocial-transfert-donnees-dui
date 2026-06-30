@@ -1,4 +1,4 @@
-# TDDUI-Consommateur - Médicosocial - Transfert de données DUI v2.3.0
+# TDDUI-Consommateur - Médicosocial - Transfert de données DUI v2.4.0-ballot
 
 ## CapabilityStatement: TDDUI-Consommateur 
 
@@ -16,7 +16,7 @@ Le rôle du Consommateur est de recueillir les données d'un logiciel DUI. Il co
   "resourceType" : "CapabilityStatement",
   "id" : "TDDUIConsommateur",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CapabilityStatement/TDDUIConsommateur",
-  "version" : "2.3.0",
+  "version" : "2.4.0-ballot",
   "name" : "TDDUIConsommateur",
   "title" : "TDDUI-Consommateur",
   "status" : "active",

@@ -1,4 +1,4 @@
-# TDDUI Goal Projet Vie - Médicosocial - Transfert de données DUI v2.3.0
+# TDDUI Goal Projet Vie - Médicosocial - Transfert de données DUI v2.4.0-ballot
 
 ## Profil de ressource: TDDUI Goal Projet Vie 
 
@@ -124,11 +124,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-tddui-goal-proj
   "resourceType" : "StructureDefinition",
   "id" : "tddui-goal-projet-vie",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-projet-vie",
-  "version" : "2.3.0",
+  "version" : "2.4.0-ballot",
   "name" : "TDDUIGoalProjetVie",
   "title" : "TDDUI Goal Projet Vie",
   "status" : "active",
-  "date" : "2026-06-30T13:41:45+00:00",
+  "date" : "2026-06-30T14:01:12+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

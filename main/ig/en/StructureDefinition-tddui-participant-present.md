@@ -1,4 +1,4 @@
-# TDDUI Participant Present - Médicosocial - Transfert de données DUI v2.3.0
+# TDDUI Participant Present - Médicosocial - Transfert de données DUI v2.4.0-ballot
 
 ## Extension: TDDUI Participant Present 
 
@@ -35,11 +35,11 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-participant
   "resourceType" : "StructureDefinition",
   "id" : "tddui-participant-present",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-participant-present",
-  "version" : "2.3.0",
+  "version" : "2.4.0-ballot",
   "name" : "TDDUIParticipantPresent",
   "title" : "TDDUI Participant Present",
   "status" : "active",
-  "date" : "2026-06-30T13:41:45+00:00",
+  "date" : "2026-06-30T14:01:12+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

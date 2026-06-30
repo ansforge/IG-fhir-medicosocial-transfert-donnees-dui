@@ -1,4 +1,4 @@
-# TDDUI Observation Repas - Médicosocial - Transfert de données DUI v2.3.0
+# TDDUI Observation Repas - Médicosocial - Transfert de données DUI v2.4.0-ballot
 
 ## Profil de ressource: TDDUI Observation Repas 
 
@@ -122,11 +122,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-tddui-observati
   "resourceType" : "StructureDefinition",
   "id" : "tddui-observation-repas",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-repas",
-  "version" : "2.3.0",
+  "version" : "2.4.0-ballot",
   "name" : "TDDUIObservationRepas",
   "title" : "TDDUI Observation Repas",
   "status" : "active",
-  "date" : "2026-06-30T13:41:45+00:00",
+  "date" : "2026-06-30T14:01:12+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
