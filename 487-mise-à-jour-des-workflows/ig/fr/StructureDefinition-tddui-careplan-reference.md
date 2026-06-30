@@ -65,7 +65,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-tddui-careplan-
   "name" : "TDDUICarePlanProjetPersoRef",
   "title" : "TDDUI CarePlan Projet Perso Ref",
   "status" : "active",
-  "date" : "2026-06-30T14:12:11+00:00",
+  "date" : "2026-06-30T14:16:03+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

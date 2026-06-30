@@ -73,7 +73,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-tddui-ressource
   "name" : "TDDUIRessourcesUsed",
   "title" : "TDDUI Ressources Used",
   "status" : "active",
-  "date" : "2026-06-30T14:12:11+00:00",
+  "date" : "2026-06-30T14:16:03+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
