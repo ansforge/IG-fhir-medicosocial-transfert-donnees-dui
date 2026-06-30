@@ -36,7 +36,7 @@ ValueSet pour la définition des codes d'identifiant de la décision de la CDAPH
   "title" : "TDDUI Basic Decision Identifier",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-30T14:01:12+00:00",
+  "date" : "2026-06-30T14:55:37+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

@@ -126,7 +126,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-tddui-slot-pres
   "name" : "TDDUISlotPresenceAbsence",
   "title" : "TDDUI Slot Presence Absence",
   "status" : "active",
-  "date" : "2026-06-30T14:01:12+00:00",
+  "date" : "2026-06-30T14:55:37+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
