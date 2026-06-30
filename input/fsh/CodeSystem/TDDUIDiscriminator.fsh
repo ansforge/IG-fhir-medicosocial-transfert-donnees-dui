@@ -17,3 +17,8 @@ Description: "CodeSystem définissant les codes discriminants."
 
 * #origineAttente "Acteur (personne physique ou personne morale) qui a un lien avec l'usager ou l'usager elle-même qui définit son attente."
 * #commentaireAttente "Permet de compléter ou éclairer la description de l'attente."
+
+* #demandeOrientation "Pièce jointe composant la demande d'orientation."
+* #depotPoste "Preuve du dépôt de la poste."
+* #reponseOrientation "Réponse de la CDAPH à la demande d'orientation."
+* #pieceComplementaire "Pièce(s) complémentaire(s) à la demande d'orientation."

@@ -42,6 +42,8 @@ Les différentes ressources sont véhiculées via l'élément : Bundle.entry. Le
 * [TDDUIObservationCauseMortalite](StructureDefinition-tddui-observation-cause-mortalite.html) représentant les causes de mortalité.
 * [TDDUIObservationMobiliteUsager](StructureDefinition-tddui-observation-mobilite-usager.html) représentant la mobilité de l'usager.
 * [TDDUIObservationPeriodeScolaire](StructureDefinition-tddui-observation-periode-scolaire.html) représentant la période scolaire de l'usager.
+* [TDDUIServiceRequestDemandeOrientation](StructureDefinition-tddui-service-request-demande-orientation.html) représentant la demande d'orientation adressée à la CDAPH.
+* [TDDUIBasicDecision](StructureDefinition-tddui-basic-decision.html) représentant la décision de la CDAPH ainsi que les droits associés.
 * [TDDUIObservationRepas](StructureDefinition-tddui-observation-repas.html) représentant le fait que l’usager bénéficie ou non des repas.
 * [TDDUISchedule](StructureDefinition-tddui-schedule.html) représentant l'ensemble des présences et absences de l'usager.
 * [TDDUISlotPresenceAbsence](StructureDefinition-tddui-slot-presence-absence.html) représentant les présences et absences de l'usager.

@@ -82,6 +82,9 @@ Alias: $JDV-J258-Departement = https://mos.esante.gouv.fr/NOS/JDV_J258-Departeme
 Alias: $JDV-J115-Langue-ENREG = https://mos.esante.gouv.fr/NOS/JDV_J115-Langue-ENREG/FHIR/JDV-J115-Langue-ENREG
 Alias: $JDV-J176-SituationVieQuotidienne-MDPH = https://mos.esante.gouv.fr/NOS/JDV_J176-SituationVieQuotidienne-MDPH/FHIR/JDV-J176-SituationVieQuotidienne-MDPH
 Alias: $JDV-J385-composition-foyer-ms = https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j385-composition-foyer-ms
+Alias: $JDV-J30-TemporaliteAccueil-ROR = https://mos.esante.gouv.fr/NOS/JDV_J30-TemporaliteAccueil-ROR/FHIR/JDV-J30-TemporaliteAccueil-ROR
+Alias: $JDV-J264-ModeEtCentreDePriseEnCharge-MDPH = https://mos.esante.gouv.fr/NOS/JDV_J264-ModeEtCentreDePriseEnCharge-MDPH/FHIR/JDV-J264-ModeEtCentreDePriseEnCharge-MDPH
+Alias: $JDV-J37-UcumUniteTemps = https://mos.esante.gouv.fr/NOS/JDV_J37-UcumUniteTemps/FHIR/JDV-J37-UcumUniteTemps
 
 // HL7
 Alias: $v2-0131 = http://terminology.hl7.org/CodeSystem/v2-0131

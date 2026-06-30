@@ -4,13 +4,22 @@ Id: tddui-service-request-besoin
 Title: "TDDUI ServiceRequest Besoin"
 Description: "Profil de la ressource ServiceRequest permettant de représenter les besoins de l'usager." 
 
-* identifier 1..1
-* identifier ^short = "Identifiant du besoin"
-* identifier.value 1..1
-* identifier.value ^example[0].label = "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-BESO-numBesoin"
-* identifier.value ^example[0].valueString = "3480787529/123456789-BESO-1234"
-* identifier.system 1..1
-* identifier.system = "https://identifiant-medicosocial-besoin.esante.gouv.fr"
+* identifier 1..*
+* identifier.type from TDDUIServiceRequestIdentifierBesoin (required)
+* identifier ^slicing.discriminator.type = #pattern
+* identifier ^slicing.discriminator.path = "type"
+* identifier ^slicing.rules = #open 
+* identifier contains 
+    idBesoin 1..1
+
+* identifier[idBesoin] ^short = "Identifiant du besoin"
+* identifier[idBesoin].value 1..1
+* identifier[idBesoin].type = TDDUIServiceRequestIdentifier#BES
+* identifier[idBesoin].value obeys ServiceRequestBesoinIdentifierFormat
+* identifier[idBesoin].value ^example[0].label = "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-BESO-numBesoin"
+* identifier[idBesoin].value ^example[0].valueString = "3480787529/123456789-BESO-1234"
+* identifier[idBesoin].system 1..1
+* identifier[idBesoin].system = "https://identifiant-medicosocial-besoin.esante.gouv.fr"
 
 * extension contains
     TDDUIAttachment named pieceJointeBesoin 0..*
@@ -33,10 +42,15 @@ Id:       specmetier-to-TDDUIServiceRequestBesoin
 Title:    "Modèle de contenu DUI"
 * -> "Besoin"
 
-* identifier -> "idBesoin"
+* identifier[idBesoin] -> "idBesoin"
 * category -> "typeBesoin"
 * code.text -> "descriptionBesoin"
 * orderDetail.text -> "analyseProfessionnelBesoin"
 * note.text -> "commentaireBesoin"
 * extension[pieceJointeBesoin] -> "pieceJointeBesoin"
 * basedOn -> "ProjetPersonnalise"
+
+Invariant: ServiceRequestBesoinIdentifierFormat
+Description: "l'identifiant du besoin doit respecter le format : 3+FINESS/identifiantLocalUsagerESSMS-BESO-numBesoin"
+Severity: #error
+Expression: "value.matches('^3[0-9]{9}/[A-Za-z0-9]+-BESO-[A-Za-z0-9]+$')"

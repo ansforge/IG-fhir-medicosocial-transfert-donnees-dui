@@ -1,0 +1,64 @@
+@startuml
+
+object "**TDDUIServiceRequestDemandeOrientation**" as DemandeOrientation #fdb462 {
+    DemandeOrientation
+}
+
+map "**Decision : TDDUIBasicDecision**" as Decision #8dd3c7 {
+    Decision.dateEffetCloture => <&plus> TDDUIDecision.extension:decision.extension:dateEffetCloture
+    Decision.dateDecision => <&plus> TDDUIDecision.extension:decision.extension:dateDecision
+    Decision.motivation => <&plus> TDDUIDecision.extension:decision.extension:motivation
+    Decision.motivationLocale => <&plus> TDDUIDecision.extension:decision.extension:motivationLocale
+    Decision.commentaire => <&plus> TDDUIDecision.extension:decision.extension:commentaire
+    Decision.numeroEnregistrement => <&layers> identifier:numeroEnregistrement
+    Decision.typeDecision => <&plus>  TDDUIDecision.extension:decision.extension:typeDecision
+    Decision.idDecisionMAJ => <&layers> identifier:idDecisionMAJ
+    Decision.idDecision => <&layers> identifier:idDecision
+    Decision.idNat_Decision => <&layers> identifier:idNat_Decision
+    DroitPrestation.numeroAllocataire => <&layers> identifier:numeroAllocataire
+    }
+
+map "**DroitPrestation : TDDUIDecision.extension:decision.extension:droitPrestation**" as DroitPrestation #8dd3c7 {
+
+    DroitPrestation.dateOuverture => <&plus> extension:dateOuverture
+    DroitPrestation.dateEcheance => <&plus> extension:dateEcheance
+    DroitPrestation.existencePAG => <&plus> extension:existencePAG
+    DroitPrestation.categorieDroitPrestation => <&plus> extension:categoriePrestation
+    Droitprestation.typeDroitPrestation => <&plus> extension:typeDroitPrestation
+    DroitPrestation.natureDroitPrestation => <&plus> extension:natureDroitPrestation
+    DroitPrestation.motifFinPAG => <&plus> extension:motifFinPAG
+    DroitPrestation.typeCompensation => <&plus> extension:typeCompensation
+    DroitPrestation.creton => <&plus> extension:creton
+    DroitPrestation.taux => <&plus> extension:taux
+    DroitPrestation.commentaire => <&plus> extension:commentaire
+}
+    
+map "**DetailPrestation : TDDUIDecision.extension:decision.extension:droitPrestation.extension:detailPrestation**" as DetailPrestation #8dd3c7 {
+    DetailPrestation.temporaliteAccueil => <&plus> extension:temporaliteAccueil
+    DetailPrestation.accueilSequentiel => <&plus> extension:accueilSequentiel
+    DetailPrestation.formation => <&plus> extension:formation
+    DetailPrestation.montantAttribue => <&plus> extension:montantAttribue
+    DetailPrestation.frequence => <&plus> extension:frequence
+    DetailPrestation.StructureAccueil => <&plus> extension:structureAccueil
+    DetailPrestation.precisionOrientation => <&plus> extension:precisionOrientation
+    DetailPrestation.qualificationOrientation => <&plus> extension:qualificationOrientation
+}
+
+map "**PriseCharge : TDDUIDecision.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:priseCharge**" as PriseCharge #8dd3c7 {
+    PriseCharge.modePriseCharge => <&plus> extension:modePriseCharge
+}
+map "**Quantification : TDDUIDecision.extension:decision.extension:droitPrestation.extension:detailPrestation.extension:priseCharge.extension:quantification**" as Quantification #8dd3c7 {
+    Quantification.valeurPriseCharge => <&plus> extension:valeurPriseCharge
+    Quantification.UnitePriseCharge => <&plus> extension:unitePriseCharge
+    Quantification.frequencePriseCharge => <&plus> extension:frequencePriseCharge
+   
+}
+
+Decision -u-> DemandeOrientation : subject
+Decision "1" -d- "0..1" DroitPrestation
+DroitPrestation "1" -d- "1" DetailPrestation
+DetailPrestation "1" -d- "*" PriseCharge
+PriseCharge "1" -d- "0..1" Quantification
+
+
+@enduml
