@@ -550,6 +550,12 @@
           <status value="generated"/>
         </text>
         <identifier>
+          <type>
+            <coding>
+              <system value="https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-service-request-identifier"/>
+              <code value="BES"/>
+            </coding>
+          </type>
           <system value="https://identifiant-medicosocial-besoin.esante.gouv.fr"/>
           <value value="3480787529/123456789-BESO-1234"/>
         </identifier>
@@ -584,6 +590,12 @@
           <status value="generated"/>
         </text>
         <identifier>
+          <type>
+            <coding>
+              <system value="https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-service-request-identifier"/>
+              <code value="BES"/>
+            </coding>
+          </type>
           <system value="https://identifiant-medicosocial-besoin.esante.gouv.fr"/>
           <value value="3480787529/123456789-BESO-1235"/>
         </identifier>
@@ -618,6 +630,12 @@
           <status value="generated"/>
         </text>
         <identifier>
+          <type>
+            <coding>
+              <system value="https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-service-request-identifier"/>
+              <code value="BES"/>
+            </coding>
+          </type>
           <system value="https://identifiant-medicosocial-besoin.esante.gouv.fr"/>
           <value value="3480787529/123456789-BESO-1236"/>
         </identifier>
@@ -637,6 +655,44 @@
     <request>
       <method value="POST"/>
       <url value="TDDUIServiceRequestBesoin"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="https://test-server.fr/ServiceRequest/tddui-service-request-demande-orientation-example"/>
+    <resource>
+      <ServiceRequest>
+        <id value="tddui-service-request-demande-orientation-example"/>
+        <meta>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-demande-orientation"/>
+        </meta>
+        <language value="en"/>
+        <text>
+          <status value="generated"/>
+        </text>
+        <identifier>
+          <type>
+            <coding>
+              <system value="https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-service-request-identifier"/>
+              <code value="DEMANDE_ORIENTATION"/>
+            </coding>
+          </type>
+          <system value="urn:uuid:53fefa32-fcbb-4ff8-8a92-55ee120877b7"/>
+          <value value="1234"/>
+        </identifier>
+        <status value="active"/>
+        <intent value="plan"/>
+        <subject>
+          <reference value="Patient/tddui-pp-pa-patient-example-pp"/>
+        </subject>
+        <occurrencePeriod>
+          <start value="2020-01-01"/>
+          <end value="2020-01-31"/>
+        </occurrencePeriod>
+      </ServiceRequest>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="TDDUIServiceRequestDemandeOrientation"/>
     </request>
   </entry>
   <entry>

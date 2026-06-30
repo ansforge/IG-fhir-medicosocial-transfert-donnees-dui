@@ -9,6 +9,10 @@ There is no translation page available for the current page, so it has been rend
 
 ### Mapping Usager
 
+### Mapping DemandeOrientation
+
+### Mapping DroitPrestation
+
 ### Mapping PeriodeScolaire
 
 ### Mapping ProjetVie

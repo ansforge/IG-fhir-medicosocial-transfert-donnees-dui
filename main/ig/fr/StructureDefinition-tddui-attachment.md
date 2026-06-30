@@ -65,7 +65,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-tddui-attachmen
   "name" : "TDDUIAttachment",
   "title" : "TDDUI Attachment",
   "status" : "active",
-  "date" : "2026-06-29T13:11:00+00:00",
+  "date" : "2026-06-30T08:27:53+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

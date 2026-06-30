@@ -1,0 +1,69 @@
+# TDDUI ServiceRequest Besoin Identifier - Médicosocial - Transfert de données DUI v2.3.0
+
+## ValueSet: TDDUI ServiceRequest Besoin Identifier 
+
+ 
+ValueSet pour la définition des codes d'identifiant de besoin 
+
+ **References** 
+
+* [TDDUI ServiceRequest Besoin](StructureDefinition-tddui-service-request-besoin.md)
+
+### Définition logique (CLD)
+
+ 
+
+### Expansion
+
+-------
+
+ [Description du (des) tableau(x) ci-dessus](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "ValueSet",
+  "id" : "tddui-service-request-identifier-besoin",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-service-request-identifier-besoin",
+  "version" : "2.3.0",
+  "name" : "TDDUIServiceRequestIdentifierBesoin",
+  "title" : "TDDUI ServiceRequest Besoin Identifier",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-06-30T08:27:53+00:00",
+  "publisher" : "ANS",
+  "contact" : [{
+    "name" : "ANS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "ValueSet pour la définition des codes d'identifiant de besoin",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France (la)"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-service-request-identifier",
+      "concept" : [{
+        "code" : "BES"
+      }]
+    },
+    {
+      "valueSet" : ["http://hl7.org/fhir/ValueSet/identifier-type"]
+    }]
+  }
+}
+
+```

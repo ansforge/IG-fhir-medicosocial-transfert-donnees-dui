@@ -10,7 +10,6 @@ Profil de la ressource FRCoreScheduleProfile permettant de contenir l'ensemble d
 * Utilise ce/t/te Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
 * Référence ce Profil: [TDDUI Slot Presence Absence](StructureDefinition-tddui-slot-presence-absence.md)
 * Exemples pour ce/t/te Profil: [Schedule/tddui-schedule-example](Schedule-tddui-schedule-example.md)
-* CapabilityStatements utilisant ce Profil: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-schedule)
 
@@ -89,7 +88,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-tddui-schedule.
   "name" : "TDDUISchedule",
   "title" : "TDDUI Schedule",
   "status" : "active",
-  "date" : "2026-06-29T13:11:00+00:00",
+  "date" : "2026-06-30T08:27:53+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

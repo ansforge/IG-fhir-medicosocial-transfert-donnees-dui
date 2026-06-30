@@ -11,6 +11,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
 * [TDDUIDiscriminator](ValueSet-tddui-discriminator.md)
 * [TDDUIGoalAttenteNote](ValueSet-tddui-goal-attente-note.md)
 * [TDDUIGoalObjectifNote](ValueSet-tddui-goal-objectif-note.md)
+* [TDDUIServiceRequestSupportingInfo](ValueSet-tddui-servicerequest-supportinginfo.md)
 
 -------
 
@@ -33,7 +34,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "title" : "TDDUI Discriminator",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-29T13:11:00+00:00",
+  "date" : "2026-06-30T08:27:53+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -53,7 +54,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "caseSensitive" : true,
   "compositional" : false,
   "content" : "complete",
-  "count" : 7,
+  "count" : 11,
   "concept" : [{
     "code" : "accordUsager",
     "display" : "Accord de l'usager"
@@ -81,6 +82,22 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   {
     "code" : "commentaireAttente",
     "display" : "Permet de compléter ou éclairer la description de l'attente."
+  },
+  {
+    "code" : "demandeOrientation",
+    "display" : "Pièce jointe composant la demande d'orientation."
+  },
+  {
+    "code" : "depotPoste",
+    "display" : "Preuve du dépôt de la poste."
+  },
+  {
+    "code" : "reponseOrientation",
+    "display" : "Réponse de la CDAPH à la demande d'orientation."
+  },
+  {
+    "code" : "pieceComplementaire",
+    "display" : "Pièce(s) complémentaire(s) à la demande d'orientation."
   }]
 }
 

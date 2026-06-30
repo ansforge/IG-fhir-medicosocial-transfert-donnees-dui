@@ -52,8 +52,8 @@
 	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"9.127"}
-    h3,h4,h5,h6{--heading-prefix:"9.127"}</style>
+    <style type="text/css">h2{--heading-prefix:"9.139"}
+    h3,h4,h5,h6{--heading-prefix:"9.139"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -432,6 +432,14 @@
      <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request">fhir:Bundle.entry.request</a> [
        <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.method">fhir:Bundle.entry.request.method</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;POST&quot; ] ;
        <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.url">fhir:Bundle.entry.request.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;TDDUIServiceRequestBesoin&quot; ]
+     ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+     <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:Bundle.entry.fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://test-server.fr/ServiceRequest/tddui-service-request-demande-orientation-example&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest">fhir:Bundle.entry.resource</a> &lt;https://test-server.fr/ServiceRequest/tddui-service-request-demande-orientation-example&gt; ;
+     <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request">fhir:Bundle.entry.request</a> [
+       <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.method">fhir:Bundle.entry.request.method</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;POST&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.url">fhir:Bundle.entry.request.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;TDDUIServiceRequestDemandeOrientation&quot; ]
      ]
   ], [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
@@ -1129,6 +1137,13 @@
   ] ;
   <a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.identifier">fhir:ServiceRequest.identifier</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">fhir:Identifier.type</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-service-request-identifier&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;BES&quot; ]
+       ]
+     ] ;
      <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://identifiant-medicosocial-besoin.esante.gouv.fr&quot; ] ;
      <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;3480787529/123456789-BESO-1234&quot; ]
   ] ;
@@ -1162,6 +1177,13 @@
   ] ;
   <a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.identifier">fhir:ServiceRequest.identifier</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">fhir:Identifier.type</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-service-request-identifier&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;BES&quot; ]
+       ]
+     ] ;
      <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://identifiant-medicosocial-besoin.esante.gouv.fr&quot; ] ;
      <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;3480787529/123456789-BESO-1235&quot; ]
   ] ;
@@ -1195,6 +1217,13 @@
   ] ;
   <a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.identifier">fhir:ServiceRequest.identifier</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">fhir:Identifier.type</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-service-request-identifier&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;BES&quot; ]
+       ]
+     ] ;
      <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://identifiant-medicosocial-besoin.esante.gouv.fr&quot; ] ;
      <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;3480787529/123456789-BESO-1236&quot; ]
   ] ;
@@ -1211,6 +1240,42 @@
   <a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.subject">fhir:ServiceRequest.subject</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/Patient/tddui-pp-pa-patient-example-pp&gt; ;
      <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Patient/tddui-pp-pa-patient-example-pp&quot; ]
+  ] .
+
+&lt;https://test-server.fr/ServiceRequest/tddui-service-request-demande-orientation-example&gt; <a href="http://hl7.org/fhir/R4/servicerequest.html">a</a> fhir:ServiceRequest ;
+  <a href="http://hl7.org/fhir/R4/resource.html#ServiceRequest.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:value</a> &quot;tddui-service-request-demande-orientation-example&quot;] ;
+  <a href="http://hl7.org/fhir/R4/resource.html#ServiceRequest.meta">fhir:Resource.meta</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-demande-orientation&quot; ;
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-demande-orientation&gt;
+     ]
+  ] ;
+  <a href="http://hl7.org/fhir/R4/resource.html#ServiceRequest.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
+  <a href="http://hl7.org/fhir/R4/domainresource.html#ServiceRequest.text">fhir:DomainResource.text</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ]
+  ] ;
+  <a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.identifier">fhir:ServiceRequest.identifier</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">fhir:Identifier.type</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-service-request-identifier&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;DEMANDE_ORIENTATION&quot; ]
+       ]
+     ] ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;urn:uuid:53fefa32-fcbb-4ff8-8a92-55ee120877b7&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;1234&quot; ]
+  ] ;
+  <a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.status">fhir:ServiceRequest.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;active&quot;] ;
+  <a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.intent">fhir:ServiceRequest.intent</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;plan&quot;] ;
+  <a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.subject">fhir:ServiceRequest.subject</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/Patient/tddui-pp-pa-patient-example-pp&gt; ;
+     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Patient/tddui-pp-pa-patient-example-pp&quot; ]
+  ] ;
+  <a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.occurrence_x_">fhir:ServiceRequest.occurrencePeriod</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">fhir:Period.start</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2020-01-01&quot;^^xsd:date ] ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">fhir:Period.end</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2020-01-31&quot;^^xsd:date ]
   ] .
 
 &lt;https://test-server.fr/Task/tddui-pp-pa-task-action-1-ergo-example&gt; <a href="http://hl7.org/fhir/R4/task.html">a</a> fhir:Task ;
@@ -1788,8 +1853,8 @@
           IG © 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  
           Package ans.fhir.fr.tddui#2.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-06-29 13:11:00 +0000">
-    2026-06-29
+  <span title="2026-06-30 08:27:00 +0000">
+    2026-06-30
   </span>
 
           <br/>

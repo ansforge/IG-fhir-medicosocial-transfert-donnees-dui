@@ -32,6 +32,8 @@ Cette structure est dérivée de [ServiceRequest](http://hl7.org/fhir/R4/service
 
 #### Bindings terminologiques (différentiel)
 
+#### Contraintes
+
 #### Bindings terminologiques
 
 #### Contraintes
@@ -40,7 +42,7 @@ Cette structure est dérivée de [ServiceRequest](http://hl7.org/fhir/R4/service
 
 ** Résumé **
 
-Obligatoire : 6 éléments
+Obligatoire : 8 éléments
 
 **Structures**
 
@@ -55,6 +57,12 @@ Cette structure fait référence à ces autres structures:
 Cette structure fait référence à ces extensions:
 
 * [https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment](StructureDefinition-tddui-attachment.md)
+
+**Slices**
+
+Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slices) suivantes:
+
+* The element 1 is sliced based on the value of ServiceRequest.identifier
 
  **Vue des éléments clés** 
 
@@ -68,6 +76,8 @@ Cette structure est dérivée de [ServiceRequest](http://hl7.org/fhir/R4/service
 
 #### Bindings terminologiques (différentiel)
 
+#### Contraintes
+
  **Vue d'ensembleView** 
 
 #### Bindings terminologiques
@@ -78,7 +88,7 @@ Cette structure est dérivée de [ServiceRequest](http://hl7.org/fhir/R4/service
 
 ** Résumé **
 
-Obligatoire : 6 éléments
+Obligatoire : 8 éléments
 
 **Structures**
 
@@ -93,6 +103,12 @@ Cette structure fait référence à ces autres structures:
 Cette structure fait référence à ces extensions:
 
 * [https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-attachment](StructureDefinition-tddui-attachment.md)
+
+**Slices**
+
+Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slices) suivantes:
+
+* The element 1 is sliced based on the value of ServiceRequest.identifier
 
  
 
@@ -111,7 +127,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-tddui-service-r
   "name" : "TDDUIServiceRequestBesoin",
   "title" : "TDDUI ServiceRequest Besoin",
   "status" : "active",
-  "date" : "2026-06-29T13:11:00+00:00",
+  "date" : "2026-06-30T08:27:53+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -203,6 +219,27 @@ Autres représentations du profil : [CSV](../StructureDefinition-tddui-service-r
     {
       "id" : "ServiceRequest.identifier",
       "path" : "ServiceRequest.identifier",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "type"
+        }],
+        "rules" : "open"
+      },
+      "min" : 1
+    },
+    {
+      "id" : "ServiceRequest.identifier.type",
+      "path" : "ServiceRequest.identifier.type",
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-service-request-identifier-besoin"
+      }
+    },
+    {
+      "id" : "ServiceRequest.identifier:idBesoin",
+      "path" : "ServiceRequest.identifier",
+      "sliceName" : "idBesoin",
       "short" : "Identifiant du besoin",
       "min" : 1,
       "max" : "1",
@@ -212,18 +249,36 @@ Autres représentations du profil : [CSV](../StructureDefinition-tddui-service-r
       }]
     },
     {
-      "id" : "ServiceRequest.identifier.system",
+      "id" : "ServiceRequest.identifier:idBesoin.type",
+      "path" : "ServiceRequest.identifier.type",
+      "min" : 1,
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-service-request-identifier",
+          "code" : "BES"
+        }]
+      }
+    },
+    {
+      "id" : "ServiceRequest.identifier:idBesoin.system",
       "path" : "ServiceRequest.identifier.system",
       "min" : 1,
       "patternUri" : "https://identifiant-medicosocial-besoin.esante.gouv.fr"
     },
     {
-      "id" : "ServiceRequest.identifier.value",
+      "id" : "ServiceRequest.identifier:idBesoin.value",
       "path" : "ServiceRequest.identifier.value",
       "min" : 1,
       "example" : [{
         "label" : "du format d'identifiant à respecter : 3+FINESS/identifiantLocalUsagerESSMS-BESO-numBesoin",
         "valueString" : "3480787529/123456789-BESO-1234"
+      }],
+      "constraint" : [{
+        "key" : "ServiceRequestBesoinIdentifierFormat",
+        "severity" : "error",
+        "human" : "l'identifiant du besoin doit respecter le format : 3+FINESS/identifiantLocalUsagerESSMS-BESO-numBesoin",
+        "expression" : "value.matches('^3[0-9]{9}/[A-Za-z0-9]+-BESO-[A-Za-z0-9]+$')",
+        "source" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin"
       }]
     },
     {

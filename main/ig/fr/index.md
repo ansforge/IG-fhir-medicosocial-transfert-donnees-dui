@@ -61,6 +61,7 @@ Les ressources profilées dans le cadre de ce guide d'implémentation sont les s
 | | | |
 | :--- | :--- | :--- |
 | Profil parent | Profil | Description |
+| [Basic](http://hl7.org/fhir/StructureDefinition/Basic) | [TDDUIBasicDecision](StructureDefinition-tddui-basic-decision.md) | Profil de la ressource Basic permettant de représenter la décision de la CDAPH ainsi que les droits associés. |
 | [Bundle](http://hl7.org/fhir/StructureDefinition/Bundle) | [TDDUIBundle](StructureDefinition-tddui-bundle.md) | Profil générique créé pour transmettre des données d'un logiciel DUI. |
 | [CarePlan](http://hl7.org/fhir/StructureDefinition/CarePlan) | [TDDUICarePlanProjetPersonnalise](StructureDefinition-tddui-careplan-projet-personnalise.md) | Profil de la ressource CarePlan représentant le projet personnalisé d'un usager. |
 | [Consent](http://hl7.org/fhir/StructureDefinition/Consent) | [TDDUIConsentAccord](StructureDefinition-tddui-consent-accord.md) | Profil de la ressource Consent permettant de représenter l'accord de l'usager, de son entourage ou de la structure. |
@@ -83,6 +84,7 @@ Les ressources profilées dans le cadre de ce guide d'implémentation sont les s
 | [FR Core Related Person Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person) | [TDDUIRelatedPersonContact](StructureDefinition-tddui-related-person-contact.md) | Profil de la ressource FRCoreRelatedPersonProfile permettant de représenter un contact de l'usager. |
 | [FR Core Schedule Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule) | [TDDUISchedule](StructureDefinition-tddui-schedule.md) | Profil de la ressource FRCoreScheduleProfile permettant de contenir l'ensemble des présences et absences de l'usager. |
 | [ServiceRequest](http://hl7.org/fhir/StructureDefinition/ServiceRequest) | [TDDUIServiceRequestBesoin](StructureDefinition-tddui-service-request-besoin.md) | Profil de la ressource ServiceRequest permettant de représenter les besoins de l'usager. |
+| [ServiceRequest](http://hl7.org/fhir/StructureDefinition/ServiceRequest) | [TDDUIServiceRequestDemandeOrientation](StructureDefinition-tddui-service-request-demande-orientation.md) | Profil de la ressource ServiceRequest permettant de représenter la demande d'orientation adressée à la CDAPH. |
 | [FR Core Slot Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-slot) | [TDDUISlotPresenceAbsence](StructureDefinition-tddui-slot-presence-absence.md) | Profil de la ressource FRCoreSlotProfile permettant de représenter les présences et absences de l'usager. |
 | [Task](http://hl7.org/fhir/StructureDefinition/Task) | [TDDUITaskAction](StructureDefinition-tddui-task-action.md) | Profil de la ressource Task permettant de représenter les actions réalisées dans le cadre du projet personnalisé. |
 | [Task](http://hl7.org/fhir/StructureDefinition/Task) | [TDDUITaskBilan](StructureDefinition-tddui-task-bilan.md) | Profil de la ressource Task permettant de représenter le bilan du projet personnalisé. |

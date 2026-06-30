@@ -35,7 +35,7 @@ Cette structure est dérivée de [Bundle](http://hl7.org/fhir/R4/bundle.html)
 
 ** Résumé **
 
-Obligatoire : 0 élément(56 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 0 élément(60 éléments obligatoire(s) imbriqué(s))
 
 **Structures**
 
@@ -65,6 +65,8 @@ Cette structure fait référence à ces autres structures:
 * [TDDUI Observation Cause Mortalite (https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-mortalite)](StructureDefinition-tddui-observation-cause-mortalite.md)
 * [TDDUI Observation Periode Scolaire (https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-periode-scolaire)](StructureDefinition-tddui-observation-periode-scolaire.md)
 * [TDDUI Observation Mobilite Usager (https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite-usager)](StructureDefinition-tddui-observation-mobilite-usager.md)
+* [TDDUI ServiceRequest DemandeOrientation (https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-demande-orientation)](StructureDefinition-tddui-service-request-demande-orientation.md)
+* [TDDUI Basic Decision (https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-basic-decision)](StructureDefinition-tddui-basic-decision.md)
 * [TDDUI Observation Repas (https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-repas)](StructureDefinition-tddui-observation-repas.md)
 * [TDDUI Schedule (https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-schedule)](StructureDefinition-tddui-schedule.md)
 * [TDDUI Slot Presence Absence (https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-slot-presence-absence)](StructureDefinition-tddui-slot-presence-absence.md)
@@ -96,7 +98,7 @@ Cette structure est dérivée de [Bundle](http://hl7.org/fhir/R4/bundle.html)
 
 ** Résumé **
 
-Obligatoire : 0 élément(56 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 0 élément(60 éléments obligatoire(s) imbriqué(s))
 
 **Structures**
 
@@ -126,6 +128,8 @@ Cette structure fait référence à ces autres structures:
 * [TDDUI Observation Cause Mortalite (https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-mortalite)](StructureDefinition-tddui-observation-cause-mortalite.md)
 * [TDDUI Observation Periode Scolaire (https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-periode-scolaire)](StructureDefinition-tddui-observation-periode-scolaire.md)
 * [TDDUI Observation Mobilite Usager (https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite-usager)](StructureDefinition-tddui-observation-mobilite-usager.md)
+* [TDDUI ServiceRequest DemandeOrientation (https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-demande-orientation)](StructureDefinition-tddui-service-request-demande-orientation.md)
+* [TDDUI Basic Decision (https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-basic-decision)](StructureDefinition-tddui-basic-decision.md)
 * [TDDUI Observation Repas (https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-repas)](StructureDefinition-tddui-observation-repas.md)
 * [TDDUI Schedule (https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-schedule)](StructureDefinition-tddui-schedule.md)
 * [TDDUI Slot Presence Absence (https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-slot-presence-absence)](StructureDefinition-tddui-slot-presence-absence.md)
@@ -154,7 +158,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-tddui-bundle.cs
   "name" : "TDDUIBundle",
   "title" : "TDDUI Bundle",
   "status" : "active",
-  "date" : "2026-06-29T13:11:00+00:00",
+  "date" : "2026-06-30T08:27:53+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -864,6 +868,60 @@ Autres représentations du profil : [CSV](../StructureDefinition-tddui-bundle.cs
     },
     {
       "id" : "Bundle.entry:DUIObservationMobiliteUsager.request.method",
+      "path" : "Bundle.entry.request.method",
+      "patternCode" : "POST"
+    },
+    {
+      "id" : "Bundle.entry:DUIServiceRequestDemandeOrientation",
+      "path" : "Bundle.entry",
+      "sliceName" : "DUIServiceRequestDemandeOrientation",
+      "short" : "ServiceRequest conforming to the TDDUIServiceRequestDemandeOrientation profile, used to convey the request for orientation.",
+      "min" : 0,
+      "max" : "*"
+    },
+    {
+      "id" : "Bundle.entry:DUIServiceRequestDemandeOrientation.resource",
+      "path" : "Bundle.entry.resource",
+      "min" : 1,
+      "type" : [{
+        "code" : "ServiceRequest",
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-demande-orientation"]
+      }]
+    },
+    {
+      "id" : "Bundle.entry:DUIServiceRequestDemandeOrientation.request",
+      "path" : "Bundle.entry.request",
+      "min" : 1
+    },
+    {
+      "id" : "Bundle.entry:DUIServiceRequestDemandeOrientation.request.method",
+      "path" : "Bundle.entry.request.method",
+      "patternCode" : "POST"
+    },
+    {
+      "id" : "Bundle.entry:DUIBasicDroitDecision",
+      "path" : "Bundle.entry",
+      "sliceName" : "DUIBasicDroitDecision",
+      "short" : "Basic conforming to the TDDUIBasicDecision profile, used to convey the decision of the CDAPH.",
+      "min" : 0,
+      "max" : "*"
+    },
+    {
+      "id" : "Bundle.entry:DUIBasicDroitDecision.resource",
+      "path" : "Bundle.entry.resource",
+      "min" : 1,
+      "type" : [{
+        "code" : "Basic",
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-basic-decision"]
+      }]
+    },
+    {
+      "id" : "Bundle.entry:DUIBasicDroitDecision.request",
+      "path" : "Bundle.entry.request",
+      "min" : 1
+    },
+    {
+      "id" : "Bundle.entry:DUIBasicDroitDecision.request.method",
       "path" : "Bundle.entry.request.method",
       "patternCode" : "POST"
     },

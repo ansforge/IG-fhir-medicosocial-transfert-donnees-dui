@@ -14,7 +14,7 @@
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2026-06-29T13:11:00+00:00",
+  "date" : "2026-06-30T08:27:53+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -801,6 +801,78 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-basic-decision"
+      },
+      "name" : "TDDUI Basic Decision",
+      "description" : "Profil de la ressource Basic permettant de représenter la décision de la CDAPH ainsi que les droits associés.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Basic"
+      }],
+      "reference" : {
+        "reference" : "Basic/tddui-basic-decision-example"
+      },
+      "name" : "TDDUI Basic Decision Example",
+      "description" : "Exemple de la ressource TDDUIBasicDroitDecision",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-basic-decision"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/tddui-basic-decision-identifier"
+      },
+      "name" : "TDDUI Basic Decision Identifier",
+      "description" : "ValueSet pour la définition des codes d'identifiant de la décision de la CDAPH.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/tddui-basic-decision-identifier"
+      },
+      "name" : "TDDUI Basic Decision Identifier",
+      "description" : "CodeSystem pour la définition des codes d'identifiant de la décision de la CDAPH",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/tddui-basic-type"
+      },
+      "name" : "TDDUI Basic Type",
+      "description" : "ValueSet pour le code de la ressource Basic.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/tddui-basic-type"
+      },
+      "name" : "TDDUI Basic Type",
+      "description" : "CodeSystem pour la définition de la ressource Basic",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -928,6 +1000,18 @@
       },
       "name" : "TDDUI Contact Relation",
       "description" : "ValueSet définissant les relations.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-decision"
+      },
+      "name" : "TDDUI Decision",
+      "description" : "Extension complexe représentant la décision et les droits associés",
       "exampleBoolean" : false
     },
     {
@@ -2332,6 +2416,78 @@
       },
       "name" : "TDDUI ServiceRequest Besoin",
       "description" : "Profil de la ressource ServiceRequest permettant de représenter les besoins de l'usager.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/tddui-service-request-identifier-besoin"
+      },
+      "name" : "TDDUI ServiceRequest Besoin Identifier",
+      "description" : "ValueSet pour la définition des codes d'identifiant de besoin",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-service-request-demande-orientation"
+      },
+      "name" : "TDDUI ServiceRequest DemandeOrientation",
+      "description" : "Profil de la ressource ServiceRequest permettant de représenter la demande d'orientation adressée à la CDAPH.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/tddui-service-request-demande-orientation-example"
+      },
+      "name" : "TDDUI ServiceRequest DemandeOrientation Example",
+      "description" : "Exemple d'une demande d'orientation.",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-demande-orientation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/tddui-service-request-identifier-demande-orientation"
+      },
+      "name" : "TDDUI ServiceRequest DemandeOrientation Identifier",
+      "description" : "ValueSet pour la définition des codes d'identifiant de demande d'orientation",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/tddui-service-request-identifier"
+      },
+      "name" : "TDDUI ServiceRequest Identifier",
+      "description" : "CodeSystem pour la définition des codes d'identifiant des observations",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/tddui-servicerequest-supportinginfo"
+      },
+      "name" : "TDDUI ServiceRequest SupportingInfo",
+      "description" : "ValueSet définissant les types d'objet binaire de la demande d'orientation.",
       "exampleBoolean" : false
     },
     {

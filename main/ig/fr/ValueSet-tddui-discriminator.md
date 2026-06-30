@@ -10,6 +10,7 @@ ValueSet définissant les codes discriminants.
 * Inclus dans [TDDUICarePlanSupportingInfo](ValueSet-tddui-care-plan-supporting-info.md)
 * Inclus dans [TDDUIGoalAttenteNote](ValueSet-tddui-goal-attente-note.md)
 * Inclus dans [TDDUIGoalObjectifNote](ValueSet-tddui-goal-objectif-note.md)
+* Inclus dans [TDDUIServiceRequestSupportingInfo](ValueSet-tddui-servicerequest-supportinginfo.md)
 * [TDDUI Discriminator](StructureDefinition-tddui-discriminator.md)
 
 ### Définition logique (CLD)
@@ -39,7 +40,7 @@ ValueSet définissant les codes discriminants.
   "title" : "TDDUI Discriminator",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-29T13:11:00+00:00",
+  "date" : "2026-06-30T08:27:53+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

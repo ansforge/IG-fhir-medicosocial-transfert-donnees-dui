@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.name [ fhir:value "TDDUI"] ;
   fhir:ImplementationGuide.title [ fhir:value "Médicosocial - Transfert de données DUI"] ;
   fhir:ImplementationGuide.status [ fhir:value "active"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-06-29T13:11:00+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-06-30T08:27:53+00:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "ANS"] ;
   fhir:ImplementationGuide.contact [
      fhir:index -1 ;
@@ -907,6 +907,93 @@
        fhir:Element.extension [
          fhir:index -1 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-basic-decision> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/tddui-basic-decision" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TDDUI Basic Decision" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profil de la ressource Basic permettant de représenter la décision de la CDAPH ainsi que les droits associés." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Basic" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Basic/tddui-basic-decision-example> ;
+         fhir:Reference.reference [ fhir:value "Basic/tddui-basic-decision-example" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TDDUI Basic Decision Example" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemple de la ressource TDDUIBasicDroitDecision" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-basic-decision" ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-basic-decision>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-basic-decision-identifier> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/tddui-basic-decision-identifier" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TDDUI Basic Decision Identifier" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet pour la définition des codes d'identifiant de la décision de la CDAPH." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-basic-decision-identifier> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/tddui-basic-decision-identifier" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TDDUI Basic Decision Identifier" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "CodeSystem pour la définition des codes d'identifiant de la décision de la CDAPH" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-basic-type> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/tddui-basic-type" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TDDUI Basic Type" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet pour le code de la ressource Basic." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-basic-type> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/tddui-basic-type" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TDDUI Basic Type" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "CodeSystem pour la définition de la ressource Basic" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
@@ -1058,6 +1145,20 @@
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "TDDUI Contact Relation" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet définissant les relations." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/tddui-decision" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TDDUI Decision" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension complexe représentant la décision et les droits associés" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index -1 ;
@@ -2858,6 +2959,93 @@
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "TDDUI ServiceRequest Besoin" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profil de la ressource ServiceRequest permettant de représenter les besoins de l'usager." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-service-request-identifier-besoin> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/tddui-service-request-identifier-besoin" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TDDUI ServiceRequest Besoin Identifier" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet pour la définition des codes d'identifiant de besoin" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-demande-orientation> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/tddui-service-request-demande-orientation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TDDUI ServiceRequest DemandeOrientation" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profil de la ressource ServiceRequest permettant de représenter la demande d'orientation adressée à la CDAPH." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ServiceRequest" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/ServiceRequest/tddui-service-request-demande-orientation-example> ;
+         fhir:Reference.reference [ fhir:value "ServiceRequest/tddui-service-request-demande-orientation-example" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TDDUI ServiceRequest DemandeOrientation Example" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemple d'une demande d'orientation." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-demande-orientation" ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-demande-orientation>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-service-request-identifier-demande-orientation> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/tddui-service-request-identifier-demande-orientation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TDDUI ServiceRequest DemandeOrientation Identifier" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet pour la définition des codes d'identifiant de demande d'orientation" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-service-request-identifier> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/tddui-service-request-identifier" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TDDUI ServiceRequest Identifier" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "CodeSystem pour la définition des codes d'identifiant des observations" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-servicerequest-supportinginfo> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/tddui-servicerequest-supportinginfo" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TDDUI ServiceRequest SupportingInfo" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet définissant les types d'objet binaire de la demande d'orientation." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index -1 ;

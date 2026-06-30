@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-bundle.csv)
   "name" : "TDDUIBundle",
   "title" : "TDDUI Bundle",
   "status" : "active",
-  "date" : "2026-06-29T13:11:00+00:00",
+  "date" : "2026-06-30T08:27:53+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -742,6 +742,60 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-bundle.csv)
     },
     {
       "id" : "Bundle.entry:DUIObservationMobiliteUsager.request.method",
+      "path" : "Bundle.entry.request.method",
+      "patternCode" : "POST"
+    },
+    {
+      "id" : "Bundle.entry:DUIServiceRequestDemandeOrientation",
+      "path" : "Bundle.entry",
+      "sliceName" : "DUIServiceRequestDemandeOrientation",
+      "short" : "ServiceRequest conforming to the TDDUIServiceRequestDemandeOrientation profile, used to convey the request for orientation.",
+      "min" : 0,
+      "max" : "*"
+    },
+    {
+      "id" : "Bundle.entry:DUIServiceRequestDemandeOrientation.resource",
+      "path" : "Bundle.entry.resource",
+      "min" : 1,
+      "type" : [{
+        "code" : "ServiceRequest",
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-demande-orientation"]
+      }]
+    },
+    {
+      "id" : "Bundle.entry:DUIServiceRequestDemandeOrientation.request",
+      "path" : "Bundle.entry.request",
+      "min" : 1
+    },
+    {
+      "id" : "Bundle.entry:DUIServiceRequestDemandeOrientation.request.method",
+      "path" : "Bundle.entry.request.method",
+      "patternCode" : "POST"
+    },
+    {
+      "id" : "Bundle.entry:DUIBasicDroitDecision",
+      "path" : "Bundle.entry",
+      "sliceName" : "DUIBasicDroitDecision",
+      "short" : "Basic conforming to the TDDUIBasicDecision profile, used to convey the decision of the CDAPH.",
+      "min" : 0,
+      "max" : "*"
+    },
+    {
+      "id" : "Bundle.entry:DUIBasicDroitDecision.resource",
+      "path" : "Bundle.entry.resource",
+      "min" : 1,
+      "type" : [{
+        "code" : "Basic",
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-basic-decision"]
+      }]
+    },
+    {
+      "id" : "Bundle.entry:DUIBasicDroitDecision.request",
+      "path" : "Bundle.entry.request",
+      "min" : 1
+    },
+    {
+      "id" : "Bundle.entry:DUIBasicDroitDecision.request.method",
       "path" : "Bundle.entry.request.method",
       "patternCode" : "POST"
     },

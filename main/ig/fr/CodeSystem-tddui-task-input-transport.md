@@ -30,7 +30,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "title" : "TDDUI Task Input Transport",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-29T13:11:00+00:00",
+  "date" : "2026-06-30T08:27:53+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

@@ -8,7 +8,7 @@ Profil de la ressource SimplifiedPublishDocumentReference permettant de véhicul
 **Usages:**
 
 * Use this Profile: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
-* Refer to this Profile: [TDDUI Attachment](StructureDefinition-tddui-attachment.md), [TDDUI Task Action](StructureDefinition-tddui-task-action.md), [TDDUI Task Bilan](StructureDefinition-tddui-task-bilan.md), [TDDUI Task MoyenRessource](StructureDefinition-tddui-task-moyen-ressource.md) and [TDDUI Task Prestation](StructureDefinition-tddui-task-prestation.md)
+* Refer to this Profile: [TDDUI Attachment](StructureDefinition-tddui-attachment.md), [TDDUI ServiceRequest DemandeOrientation](StructureDefinition-tddui-service-request-demande-orientation.md), [TDDUI Task Action](StructureDefinition-tddui-task-action.md), [TDDUI Task Bilan](StructureDefinition-tddui-task-bilan.md)... Show 2 more, [TDDUI Task MoyenRessource](StructureDefinition-tddui-task-moyen-ressource.md) and [TDDUI Task Prestation](StructureDefinition-tddui-task-prestation.md)
 * Examples for this Profile: [DocumentReference/tddui-pp-pa-documentreference-bilan-objectif-1-example](DocumentReference-tddui-pp-pa-documentreference-bilan-objectif-1-example.md) and [DocumentReference/tddui-pp-pa-documentreference-entrant-example](DocumentReference-tddui-pp-pa-documentreference-entrant-example.md)
 * CapabilityStatements using this Profile: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
 
@@ -35,7 +35,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-document-re
   "name" : "TDDUIDocumentReference",
   "title" : "TDDUI DocumentReference",
   "status" : "active",
-  "date" : "2026-06-29T13:11:00+00:00",
+  "date" : "2026-06-30T08:27:53+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
