@@ -36,7 +36,7 @@ Description: "Profil générique créé pour transmettre des données d'un logic
     DUIObservationPeriodeScolaire 0..* and
     DUIObservationMobiliteUsager 0..* and
     DUIServiceRequestDemandeOrientation 0..* and
-    DUIBasicDroitDecision 0..*
+    DUIBasicDroitDecision 0..* and
 
     DUIObservationRepas 0..* and
     DUISchedule 0..* and
