@@ -36,7 +36,7 @@ ValueSet pour la définition des codes de type de séjour
   "title" : "TDDUI Encounter Type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-30T08:27:53+00:00",
+  "date" : "2026-06-30T13:41:45+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

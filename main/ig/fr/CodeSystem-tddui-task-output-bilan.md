@@ -30,7 +30,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "title" : "TDDUI Task Output Bilan",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-30T08:27:53+00:00",
+  "date" : "2026-06-30T13:41:45+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
