@@ -1,6 +1,9 @@
-# Documents de référence - Médicosocial - Transfert de données DUI v2.3.0-ballot
+# Documents de référence - Médicosocial - Transfert de données DUI v2.3.0
 
 ## Documents de référence
+
+ 
+There is no translation page available for the current page, so it has been rendered in the default language 
 
 * [Annexe – Source des données personnes et structures](https://esante.gouv.fr/annexe-sources-des-donnees-personnes-et-structures)
 * [Annexe – Prise en Charge de l'INS dans les volets du CI-SIS](https://esante.gouv.fr/annexe-prise-en-charge-de-lins-dans-les-volets-du-ci-sis)

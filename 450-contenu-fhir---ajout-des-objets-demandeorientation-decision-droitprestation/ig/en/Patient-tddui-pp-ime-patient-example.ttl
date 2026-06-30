@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,44 +7,54 @@
 
 <https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-pp-ime-patient-example> a fhir:Patient ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "tddui-pp-ime-patient-example"] ; # 
-  fhir:meta [
-     fhir:profile ( [
-       fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient"^^xsd:anyURI ;
+  fhir:Resource.id [ fhir:value "tddui-pp-ime-patient-example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient" ;
+       fhir:index -1 ;
        fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient>
-     ] )
-  ] ; # 
-  fhir:language [ fhir:v "en"] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient tddui-pp-ime-patient-example</b></p><a name=\"tddui-pp-ime-patient-example\"> </a><a name=\"hctddui-pp-ime-patient-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tddui-patient.html\">TDDUI Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Hugo D. (official) (no stated gender), DoB: 2005-09-15 ( Patient internal identifier: 3480787529/123456)</p><hr/></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:identifier ( [
-     fhir:type [
-       fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "PI" ] ;
-         fhir:display [ fhir:v "Patient internal identifier" ]
-       ] )
-     ] ;
-     fhir:system [ fhir:v "https://identifiant-medicosocial-localusager.esante.gouv.fr"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "3480787529/123456" ]
-  ] ) ; # 
-  fhir:name ( [
-     fhir:use [ fhir:v "official" ] ;
-     fhir:family [ fhir:v "D." ] ;
-     fhir:given ( [ fhir:v "Hugo" ] )
-  ] ) ; # 
-  fhir:birthDate [
-     fhir:v "2005-09-15"^^xsd:date ;
-     fhir:extension ( [
-       fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order"^^xsd:anyURI ] ;
-       fhir:value [
-         a fhir:positiveInt ;
-         fhir:v "1"^^xsd:positiveInteger
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Patient tddui-pp-ime-patient-example</b></p><a name=\"en-tddui-pp-ime-patient-example\"> </a><a name=\"en-hctddui-pp-ime-patient-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tddui-patient.html\">TDDUI Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Hugo D. (official) (no stated gender), DoB: 2005-09-15 ( Patient internal identifier: 3480787529/123456)</p><hr/></div>"
+  ] ;
+  fhir:Patient.identifier [
+     fhir:index -1 ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ] ;
+         fhir:Coding.code [ fhir:value "PI" ] ;
+         fhir:Coding.display [ fhir:value "Patient internal identifier" ]
        ]
-     ] )
-  ] . # 
+     ] ;
+     fhir:Identifier.system [ fhir:value "https://identifiant-medicosocial-localusager.esante.gouv.fr" ] ;
+     fhir:Identifier.value [ fhir:value "3480787529/123456" ]
+  ] ;
+  fhir:Patient.name [
+     fhir:index -1 ;
+     fhir:HumanName.use [ fhir:value "official" ] ;
+     fhir:HumanName.family [ fhir:value "D." ] ;
+     fhir:HumanName.given [
+       fhir:value "Hugo" ;
+       fhir:index -1
+     ]
+  ] ;
+  fhir:Patient.birthDate [
+     fhir:value "2005-09-15"^^xsd:date ;
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order" ] ;
+       fhir:Extension.valuePositiveInt [ fhir:value "1"^^xsd:positiveInteger ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-pp-ime-patient-example.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

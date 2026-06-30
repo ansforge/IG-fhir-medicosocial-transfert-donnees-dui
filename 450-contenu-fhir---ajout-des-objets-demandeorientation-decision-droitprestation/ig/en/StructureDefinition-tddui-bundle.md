@@ -1,4 +1,4 @@
-# TDDUI Bundle - Médicosocial - Transfert de données DUI v2.3.0-ballot
+# TDDUI Bundle - Médicosocial - Transfert de données DUI v2.3.0
 
 ## Resource Profile: TDDUI Bundle 
 
@@ -28,11 +28,11 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-bundle.csv)
   "resourceType" : "StructureDefinition",
   "id" : "tddui-bundle",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle",
-  "version" : "2.3.0-ballot",
+  "version" : "2.3.0",
   "name" : "TDDUIBundle",
   "title" : "TDDUI Bundle",
   "status" : "active",
-  "date" : "2026-06-25T14:41:02+00:00",
+  "date" : "2026-06-30T07:08:27+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -796,6 +796,114 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-bundle.csv)
     },
     {
       "id" : "Bundle.entry:DUIBasicDroitDecision.request.method",
+      "path" : "Bundle.entry.request.method",
+      "patternCode" : "POST"
+    },
+    {
+      "id" : "Bundle.entry:DUIObservationRepas",
+      "path" : "Bundle.entry",
+      "sliceName" : "DUIObservationRepas",
+      "short" : "Observation conforming to the DUIObservationRepas profile, used to convey the meals.",
+      "min" : 0,
+      "max" : "*"
+    },
+    {
+      "id" : "Bundle.entry:DUIObservationRepas.resource",
+      "path" : "Bundle.entry.resource",
+      "min" : 1,
+      "type" : [{
+        "code" : "Observation",
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-repas"]
+      }]
+    },
+    {
+      "id" : "Bundle.entry:DUIObservationRepas.request",
+      "path" : "Bundle.entry.request",
+      "min" : 1
+    },
+    {
+      "id" : "Bundle.entry:DUIObservationRepas.request.method",
+      "path" : "Bundle.entry.request.method",
+      "patternCode" : "POST"
+    },
+    {
+      "id" : "Bundle.entry:DUISchedule",
+      "path" : "Bundle.entry",
+      "sliceName" : "DUISchedule",
+      "short" : "Schedule conforming to the TDDUISchedule profile, used to convey the schedule.",
+      "min" : 0,
+      "max" : "*"
+    },
+    {
+      "id" : "Bundle.entry:DUISchedule.resource",
+      "path" : "Bundle.entry.resource",
+      "min" : 1,
+      "type" : [{
+        "code" : "Schedule",
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-schedule"]
+      }]
+    },
+    {
+      "id" : "Bundle.entry:DUISchedule.request",
+      "path" : "Bundle.entry.request",
+      "min" : 1
+    },
+    {
+      "id" : "Bundle.entry:DUISchedule.request.method",
+      "path" : "Bundle.entry.request.method",
+      "patternCode" : "POST"
+    },
+    {
+      "id" : "Bundle.entry:DUISlotPresenceAbsence",
+      "path" : "Bundle.entry",
+      "sliceName" : "DUISlotPresenceAbsence",
+      "short" : "Slot conforming to the TDDUISlotPresenceAbsence profile, used to convey the presence or absence.",
+      "min" : 0,
+      "max" : "*"
+    },
+    {
+      "id" : "Bundle.entry:DUISlotPresenceAbsence.resource",
+      "path" : "Bundle.entry.resource",
+      "min" : 1,
+      "type" : [{
+        "code" : "Slot",
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-slot-presence-absence"]
+      }]
+    },
+    {
+      "id" : "Bundle.entry:DUISlotPresenceAbsence.request",
+      "path" : "Bundle.entry.request",
+      "min" : 1
+    },
+    {
+      "id" : "Bundle.entry:DUISlotPresenceAbsence.request.method",
+      "path" : "Bundle.entry.request.method",
+      "patternCode" : "POST"
+    },
+    {
+      "id" : "Bundle.entry:DUIGoalProjetVie",
+      "path" : "Bundle.entry",
+      "sliceName" : "DUIGoalProjetVie",
+      "short" : "Goal conforming to the TDDUIGoalProjetVie profile, used to convey the life project.",
+      "min" : 0,
+      "max" : "*"
+    },
+    {
+      "id" : "Bundle.entry:DUIGoalProjetVie.resource",
+      "path" : "Bundle.entry.resource",
+      "min" : 1,
+      "type" : [{
+        "code" : "Goal",
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-projet-vie"]
+      }]
+    },
+    {
+      "id" : "Bundle.entry:DUIGoalProjetVie.request",
+      "path" : "Bundle.entry.request",
+      "min" : 1
+    },
+    {
+      "id" : "Bundle.entry:DUIGoalProjetVie.request.method",
       "path" : "Bundle.entry.request.method",
       "patternCode" : "POST"
     }]

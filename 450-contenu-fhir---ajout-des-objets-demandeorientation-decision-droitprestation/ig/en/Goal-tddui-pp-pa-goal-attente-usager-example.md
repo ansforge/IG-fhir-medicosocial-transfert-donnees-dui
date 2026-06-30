@@ -1,6 +1,12 @@
-# TDDUI PP PA Goal Attente Usager Example - Médicosocial - Transfert de données DUI v2.3.0-ballot
+# TDDUI PP PA Goal Attente Usager Example - Médicosocial - Transfert de données DUI v2.3.0
 
 ## Example Goal: TDDUI PP PA Goal Attente Usager Example
+
+-------
+
+**English**
+
+-------
 
 Profile: [TDDUI Goal Attente](StructureDefinition-tddui-goal-attente.md)
 

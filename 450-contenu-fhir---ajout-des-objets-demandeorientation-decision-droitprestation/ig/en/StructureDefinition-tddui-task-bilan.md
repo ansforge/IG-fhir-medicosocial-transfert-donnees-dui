@@ -1,4 +1,4 @@
-# TDDUI Task Bilan - Médicosocial - Transfert de données DUI v2.3.0-ballot
+# TDDUI Task Bilan - Médicosocial - Transfert de données DUI v2.3.0
 
 ## Resource Profile: TDDUI Task Bilan 
 
@@ -29,11 +29,11 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-task-bilan.
   "resourceType" : "StructureDefinition",
   "id" : "tddui-task-bilan",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-bilan",
-  "version" : "2.3.0-ballot",
+  "version" : "2.3.0",
   "name" : "TDDUITaskBilan",
   "title" : "TDDUI Task Bilan",
   "status" : "active",
-  "date" : "2026-06-25T14:41:02+00:00",
+  "date" : "2026-06-30T07:08:27+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

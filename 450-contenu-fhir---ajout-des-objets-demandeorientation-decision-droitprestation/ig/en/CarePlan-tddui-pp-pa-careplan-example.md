@@ -1,6 +1,12 @@
-# TDDUI PP PA CarePlan Example - Médicosocial - Transfert de données DUI v2.3.0-ballot
+# TDDUI PP PA CarePlan Example - Médicosocial - Transfert de données DUI v2.3.0
 
 ## Example CarePlan: TDDUI PP PA CarePlan Example
+
+-------
+
+**English**
+
+-------
 
 Profile: [TDDUI CarePlan Projet Personalise](StructureDefinition-tddui-careplan-projet-personnalise.md)
 

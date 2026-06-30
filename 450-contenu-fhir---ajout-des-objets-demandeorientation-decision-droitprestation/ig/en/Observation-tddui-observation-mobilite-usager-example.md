@@ -1,6 +1,12 @@
-# TDDUI Observation Mobilite Usager Example - Médicosocial - Transfert de données DUI v2.3.0-ballot
+# TDDUI Observation Mobilite Usager Example - Médicosocial - Transfert de données DUI v2.3.0
 
 ## Example Observation: TDDUI Observation Mobilite Usager Example
+
+-------
+
+**English**
+
+-------
 
 Profile: [TDDUI Observation Mobilite Usager](StructureDefinition-tddui-observation-mobilite-usager.md)
 

@@ -1,6 +1,12 @@
-# TDDUI PP PA Task Moyen Ressource IDE 1 Example - Médicosocial - Transfert de données DUI v2.3.0-ballot
+# TDDUI PP PA Task Moyen Ressource IDE 1 Example - Médicosocial - Transfert de données DUI v2.3.0
 
 ## Example Task: TDDUI PP PA Task Moyen Ressource IDE 1 Example
+
+-------
+
+**English**
+
+-------
 
 Profile: [TDDUI Task MoyenRessource](StructureDefinition-tddui-task-moyen-ressource.md)
 

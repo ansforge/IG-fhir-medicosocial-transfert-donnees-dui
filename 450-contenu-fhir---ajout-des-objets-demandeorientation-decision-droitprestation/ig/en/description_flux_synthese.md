@@ -1,6 +1,9 @@
-# Synthèse des flux - Médicosocial - Transfert de données DUI v2.3.0-ballot
+# Synthèse des flux - Médicosocial - Transfert de données DUI v2.3.0
 
 ## Synthèse des flux
+
+ 
+There is no translation page available for the current page, so it has been rendered in the default language 
 
 **Les flux présentés ci-dessous doivent utiliser HTTPS**
 

@@ -1,6 +1,9 @@
-# Professions du médico-social - Médicosocial - Transfert de données DUI v2.3.0-ballot
+# Professions du médico-social - Médicosocial - Transfert de données DUI v2.3.0
 
 ## Professions du médico-social
+
+ 
+There is no translation page available for the current page, so it has been rendered in the default language 
 
 Table de correspondance des codes professions du médico-social n'ayant pas d'équivalence dans les référenciels officiels.
 

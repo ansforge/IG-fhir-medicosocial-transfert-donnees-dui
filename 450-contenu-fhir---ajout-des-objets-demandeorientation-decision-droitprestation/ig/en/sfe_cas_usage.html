@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Cas d&#39;usage - Médicosocial - Transfert de données DUI v2.3.0-ballot</title>
+    <title>Cas d&#39;usage - Médicosocial - Transfert de données DUI v2.3.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -69,7 +69,7 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">Médicosocial - Transfert de données DUI</span>
             <br/>
-            <span style="display:inline-block;">2.3.0-ballot - public-comment
+            <span style="display:inline-block;">2.3.0 - trial-implementation
 
 
 
@@ -170,12 +170,30 @@
     </ul>
   </li>
   <li>
+    <a href="problematiques_connues.html">Problématiques connues</a>
+  </li>
+  <li>
     <a href="changes.html">Historique</a>
   </li>
 </ul>
             </div>  <!-- /.nav-collapse -->
 
               
+
+
+<div style="float: var(--ig-right);padding: 8px 0px;" id="language">
+  <div id="select_flg" class="flaglist" style="background-image: url(assets/images/icon_arrow_down.png);background-position: 133px 3px;">
+    <div><img class="flag" alt="flag en" src="assets/images/lang-en.png"/>English</div>
+  </div>
+  <div style="float: var(--ig-right); margin: 2px 0px; padding: 1px 0;color: var(--btn-text-color);font-size:12px">Language:</div>
+ 	<div id="flaglist" class="flaglist" style="display: none;position: absolute;right: 0;z-index: 100;background-image: url(assets/images/icon_arrow_up.png);background-position: 133px 3px;">
+    <div><img class="flag" alt="flag en" src="assets/images/lang-en.png"/>English</div>
+
+    <div><a href="../fr/sfe_cas_usage.html"><img class="flag" src="assets/images/lang-fr.png" alt="flag fr"/>Français</a></div>
+
+  </div>
+</div>
+
 
           </div>  <!-- /.container -->
         </nav>  <!-- /.navbar -->
@@ -217,12 +235,19 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Médicosocial - Transfert de données DUI - Local Development build (v2.3.0-ballot) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://interop.esante.gouv.fr/ig/fhir/tddui/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Médicosocial - Transfert de données DUI - Local Development build (v2.3.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://interop.esante.gouv.fr/ig/fhir/tddui/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Cas d&#39;usage</h2>
   
 
 
 
+
+<p style="border:var(--translation-box-border);background-color:var(--translation-background-color);padding: 5px 5px 5px 5px;">
+
+<p>There is no translation page available for the current page, so it has been rendered in the default language</p>
+
+
+</p>
 
 
 
@@ -245,11 +270,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </p>
 </blockquote>
 
-<h4 id="transfert-des-données-dun-logiciel-dui-vers-un-si-tiers">Transfert des données d’un logiciel DUI vers un SI-tiers</h4>
+<h3 id="transfert-des-données-dun-logiciel-dui-vers-un-si-tiers">Transfert des données d’un logiciel DUI vers un SI-tiers</h3>
 
 <p>Ces cas d’usage s’inscrivent dans le cadre du programme décliné en France, au niveau national pour déployer des solutions numériques au sein des établissements et services sociaux et medico-sociaux (ESSMS), favoriser l’interopérabilité et transférer des données d’un logiciel DUI (dossiers usagers informatisés) vers un Système d’Information tiers.</p>
 
-<h5 id="cas-dusagessiad">Cas d'usage SSIAD</h5>
+<h4 id="cas-dusagessiad">Cas d'usage SSIAD</h4>
 
 <p>Il s'agit du transfert des données d’un logiciel DUI correspondant aux Services de soins infirmiers à domicile (SSIAD) vers un SI-tiers pour renforcer la connaissance et le pilotage de la branche médico-sociale grâce aux données financières, d'activités des ESMS, etc.</p>
 
@@ -271,7 +296,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Le DUI envoie au maximum cinq semaines d'historique par usager</li>
 </ul>
 
-<h5 id="cas-dusageserafin">Cas d'usage SERAFIN</h5>
+<h4 id="cas-dusageserafin">Cas d'usage SERAFIN</h4>
 
 <p>Ce cas d'usage permet d'ajouter au flux d'extraction les données du Projet personnalisé.</p>
 
@@ -305,6 +330,69 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </p>
 </blockquote>
 
+<p>Dans ce cas d'usage, les objets métiers suivants sont aussi enrichis ou créés :</p>
+<ul>
+  <li>La demande d'orientation adressée par la CDAPH</li>
+  <li>La Décision d'orientation prise par la CDAPH</li>
+  <li>L'ensemble des droits et prestations</li>
+  <li>Les détails de la prestation</li>
+  <li>La description des modalités d’accueil</li>
+  <li>La quantification de la prise en charge</li>
+  <li>Le projet de vie</li>
+  <li>Présence, absence de l'usager</li>
+</ul>
+
+<p>Une illustration par des cas nominaux est donnée ci-dessous pour les droits sociaux de santé ainsi que pour les présences/absences.</p>
+
+<p><u>Droits sociaux et de santé d’un usager</u></p>
+
+<p>Monsieur Jean Dupont, né le 03 avril 1987, âgé de 38 ans, de rang de naissance 2, est accompagné au sein de la Maison d’Accueil Spécialisée (MAS) Les Chênes Verts, établissement identifié par le FINESS juridique 480787529. Il est identifié dans les systèmes nationaux par son Numéro d’Inscription au Répertoire (NIR) « 1477204253674A » et dispose, au sein de l’établissement, d’un dossier usager informatisé sous le numéro 1012.</p>
+
+<p>Après l’évaluation de la situation de Monsieur Dupont, la CDPAH décide d’ouvrir les droits sociaux et de santé. Cette décision est enregistrée dans le Dossier Usager Informatisé avec l’identifiant DP-1012-0001. Le suivi administratif est assuré par la MDPH du département : contact@mdph-departement.fr et le droit est rattaché au numéro de l’allocataire 784512973. Le droit correspond à des droits liés à un accompagnement en MAS. Il s’agit d’un droit ouvrant l’accès à une prestation médico-sociale avec accompagnement global et compensation.</p>
+
+<p>Le droit débute le 1er mars 2026, date de la décision de la CDAPH et prend fin le 28 février 2028. La décision est associée à un Plan d’Accompagnement Global validé, permettant une coordination entre les professionnels.</p>
+
+<p>Le droit ne relève pas du dispositif Creton l’orientation vers un établissement pour adultes étant effective. Monsieur Dupont bénéficie d’une compensation fixée à 100% celle-ci correspondant à une prise en charge médico-sociale complète incluant hébergement, soins et accompagnement au quotidien.</p>
+
+<p>Un commentaire précise que l’orientation en MAS est adaptée aux besoins de soins constants de Monsieur Dupont faisant suite aux conclusions de l’évaluations.</p>
+
+<p><u>Présence et absence d’un usager</u></p>
+
+<p>Monsieur Dupont, identifié par son Numéro d’Inscription au Répertoire (NIR) « 1477204253674A », et demeurant au 12 rue des Lilas à Vittefleur, code postal 76748, fait l’objet d’un suivi de présence et d’absence dans le cadre de son accueil au sein de la maison accueil spécialisée (MAS) Les Chênes Verts, dont le numéro FINESS juridique est « 480787529 ». Ce suivi est réalisé par les professionnels de l’établissement et est intégré au logiciel de Dossier Usager Informatisé (DUI), sous le numéro de dossier 1012.</p>
+
+<ul>
+  <li>Scénario 1 - Présence complète sur la journée</li>
+</ul>
+<div style="text-align: left;padding-left: 40px">
+ Le 17 avril 2025, Monsieur Dupont est présent au sein de l’établissement sur l’ensemble de la journée, de 8h00 à 17h30. Cette situation correspond à une présence, enregistrée sous l’identifiant 3480787529/1012-PA-0001.
+
+ Au cours de cette journée, Monsieur Dupont prend son petit-déjeuner à 8h30. Sa présence au repas est confirmée et l’enregistrement est identifié par 3480787529/1012-Repas-0001. Il prend ensuite son déjeuner à 12h00, avec une présence confirmée, il est enregistré sous l’identifiant 3480787529/1012-Repas-0002.
+
+Monsieur Dupont est donc présent sur la journée entière; la journée est facturée et comptabilisée pour les repas et la sécurité.</div>
+
+<ul>
+  <li>Scénario 2 - Hospitalisation partielle</li>
+</ul>
+<div style="text-align: left;padding-left: 40px">
+Le 20 avril 2025, Monsieur Dupont est présent au sein de la MAS durant la matinée, de 8h00 à 12h00. Cette période est enregistrée comme une présence, sous l’identifiant 3480787529/1012-PA-0002.
+
+À partir de 13h30 et jusqu’à 17h30, Monsieur Dupont est hospitalisé. Cette période est enregistrée comme une absence, sous l’identifiant 3480787529/1012-PA-0003, avec pour motif une hospitalisation. L’absence n’ayant pas été anticipée, elle est indiquée comme non prévue.
+
+Concernant les repas, Monsieur Dupont prend son déjeuner à 12h00. Sa présence est confirmée et il est enregistré sous l’identifiant 3480787529/1012-Repas-0003. En revanche, le goûter prévu à 16h00, n’est pas pris en raison de l’hospitalisation. L’usager est donc indiqué comme absent au repas, et cet enregistrement est identifié par 3480787529/1012-Repas-0004.
+
+Monsieur Dupont est présent le matin puis hospitalisé l’après-midi; la demi-journée d’hospitalisation n’est pas facturée et n’est pas prise en compte pour les repas.</div>
+
+<ul>
+  <li>Scénario 3 - Absence autorisée sur la journée</li>
+</ul>
+<div style="text-align: left;padding-left: 40px">
+Le 25 avril 2025, Monsieur Dupont est absent de l’établissement sur l’ensemble de la journée, de 8h00 à 17h30. Cette situation correspond à une absence pour sortie autorisée. L’absence ayant été planifiée à l’avance, elle est déclarée comme prévue. La déclaration est enregistrée et validée dans le DUI sous l’identifiant 3480787529/1012-PA-0004.
+
+Les repas prévus sur la journée sont néanmoins tracés. Le déjeuner prévu à 12h00, n’est pas pris ; l’usager est donc indiqué comme absent au repas. Ce repas est enregistré sous l’identifiant 3480787529/1012-Repas-0005.
+
+Le goûter prévu à 16h00, n’est pas pris non plus. Cet enregistrement est identifié par 3480787529/1012-Repas-0006.
+
+Monsieur Dupont est absent sur la journée pour sortie autorisée (A/A) ; la journée reste facturée mais l’usager n’est pas comptabilisé pour les repas ni présent dans les relevés de sécurité.</div>
 
 
 
@@ -352,10 +440,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  
-          Package ans.fhir.fr.tddui#2.3.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Package ans.fhir.fr.tddui#2.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-06-25 14:41:00 +0000">
-    2026-06-25
+  <span title="2026-06-30 07:08:00 +0000">
+    2026-06-30
   </span>
 
           <br/>

@@ -1,6 +1,9 @@
-# Flux 1 - Transmission de données DUI - Médicosocial - Transfert de données DUI v2.3.0-ballot
+# Flux 1 - Transmission de données DUI - Médicosocial - Transfert de données DUI v2.3.0
 
 ## Flux 1 - Transmission de données DUI
+
+ 
+There is no translation page available for the current page, so it has been rendered in the default language 
 
 Ce flux permet la transmission de données d'un logiciel DUI
 
@@ -47,6 +50,10 @@ Les différentes ressources sont véhiculées via l'élément : Bundle.entry. Le
 * [TDDUIObservationPeriodeScolaire](StructureDefinition-tddui-observation-periode-scolaire.md) représentant la période scolaire de l'usager.
 * [TDDUIServiceRequestDemandeOrientation](StructureDefinition-tddui-service-request-demande-orientation.md) représentant la demande d'orientation adressée à la CDAPH.
 * [TDDUIBasicDecision](StructureDefinition-tddui-basic-decision.md) représentant la décision de la CDAPH ainsi que les droits associés.
+* [TDDUIObservationRepas](StructureDefinition-tddui-observation-repas.md) représentant le fait que l’usager bénéficie ou non des repas.
+* [TDDUISchedule](StructureDefinition-tddui-schedule.md) représentant l'ensemble des présences et absences de l'usager.
+* [TDDUISlotPresenceAbsence](StructureDefinition-tddui-slot-presence-absence.md) représentant les présences et absences de l'usager.
+* [TDDUIGoalProjetVie](StructureDefinition-tddui-goal-projet-vie.md) représentant le projet de vie de l'usager.
 
 Pour toutes ces ressources, seule la création est possible via l'intéraction FHIR [Create](https://hl7.org/fhir/R4/http.html#create).
 

@@ -1,6 +1,12 @@
-# TDDUI Task Transport Professionel Example - Médicosocial - Transfert de données DUI v2.3.0-ballot
+# TDDUI Task Transport Professionel Example - Médicosocial - Transfert de données DUI v2.3.0
 
 ## Example Task: TDDUI Task Transport Professionel Example
+
+-------
+
+**English**
+
+-------
 
 Profile: [TDDUI Task Transport Professionnel](StructureDefinition-tddui-task-transport-professionnel.md)
 

@@ -1,6 +1,12 @@
-# TDDUI ServiceRequest DemandeOrientation Example - Médicosocial - Transfert de données DUI v2.3.0-ballot
+# TDDUI ServiceRequest DemandeOrientation Example - Médicosocial - Transfert de données DUI v2.3.0
 
 ## Example ServiceRequest: TDDUI ServiceRequest DemandeOrientation Example
+
+-------
+
+**English**
+
+-------
 
 Profile: [TDDUI ServiceRequest DemandeOrientation](StructureDefinition-tddui-service-request-demande-orientation.md)
 

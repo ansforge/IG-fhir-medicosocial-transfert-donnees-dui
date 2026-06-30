@@ -1,6 +1,12 @@
-# TDDUI PP PA Practitioner IDE Example - Médicosocial - Transfert de données DUI v2.3.0-ballot
+# TDDUI PP PA Practitioner IDE Example - Médicosocial - Transfert de données DUI v2.3.0
 
 ## Example Practitioner: TDDUI PP PA Practitioner IDE Example
+
+-------
+
+**English**
+
+-------
 
 Profile: [TDDUI Practitioner](StructureDefinition-tddui-practitioner.md)
 

@@ -1,6 +1,9 @@
-# Volume 1 - Etude fonctionnelle - Médicosocial - Transfert de données DUI v2.3.0-ballot
+# Volume 1 - Etude fonctionnelle - Médicosocial - Transfert de données DUI v2.3.0
 
 ## Volume 1 - Etude fonctionnelle
+
+ 
+There is no translation page available for the current page, so it has been rendered in the default language 
 
 * [Cas d'usage](sfe_cas_usage.md)
 * [Organisation du contexte métier](sfe_organisation_contexte_metier.md)

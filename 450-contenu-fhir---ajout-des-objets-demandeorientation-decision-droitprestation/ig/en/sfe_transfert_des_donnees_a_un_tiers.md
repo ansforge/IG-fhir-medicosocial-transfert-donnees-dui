@@ -1,6 +1,9 @@
-# Transfert des données à un tiers - Médicosocial - Transfert de données DUI v2.3.0-ballot
+# Transfert des données à un tiers - Médicosocial - Transfert de données DUI v2.3.0
 
 ## Transfert des données à un tiers
+
+ 
+There is no translation page available for the current page, so it has been rendered in the default language 
 
 ### Définition des Processus collaboratif
 

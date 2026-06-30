@@ -1,4 +1,4 @@
-# TDDUI Exercise Mode - Médicosocial - Transfert de données DUI v2.3.0-ballot
+# TDDUI Exercise Mode - Médicosocial - Transfert de données DUI v2.3.0
 
 ## Extension: TDDUI Exercise Mode 
 
@@ -32,11 +32,11 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-exercise-mo
   "resourceType" : "StructureDefinition",
   "id" : "tddui-exercise-mode",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exercise-mode",
-  "version" : "2.3.0-ballot",
+  "version" : "2.3.0",
   "name" : "TDDUIExerciseMode",
   "title" : "TDDUI Exercise Mode",
   "status" : "active",
-  "date" : "2026-06-25T14:41:02+00:00",
+  "date" : "2026-06-30T07:08:27+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

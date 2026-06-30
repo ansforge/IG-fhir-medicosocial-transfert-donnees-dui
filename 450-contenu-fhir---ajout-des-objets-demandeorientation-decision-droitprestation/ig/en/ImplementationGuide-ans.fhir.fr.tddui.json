@@ -4,14 +4,14 @@
   "language" : "en",
   "text" : {
     "status" : "generated",
-    "div" : "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide ans.fhir.fr.tddui</b></p><a name=\"ans.fhir.fr.tddui\"> </a><a name=\"hcans.fhir.fr.tddui\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: en</p></div><h2>TDDUI</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui</pre></div>"
+    "div" : "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide ans.fhir.fr.tddui</b></p><a name=\"en-ans.fhir.fr.tddui\"> </a><a name=\"en-hcans.fhir.fr.tddui\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: fr</p></div><h2>TDDUI</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui</pre></div>"
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui",
-  "version" : "2.3.0-ballot",
+  "version" : "2.3.0",
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2026-06-25T14:41:02+00:00",
+  "date" : "2026-06-30T07:08:27+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -95,7 +95,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "public-comment"
+        "valueString" : "trial-implementation"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -118,6 +118,50 @@
       {
         "url" : "value",
         "valueString" : "../../expansion-params.json"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "i18n-default-lang"
+      },
+      {
+        "url" : "value",
+        "valueString" : "fr"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-jurisdiction"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "i18n-lang"
+      },
+      {
+        "url" : "value",
+        "valueString" : "en"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "translation-sources"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/translations/en"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -267,17 +311,6 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "apply-jurisdiction"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
         "valueString" : "apply-license"
       },
       {
@@ -375,17 +408,6 @@
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
     {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "i18n-default-lang"
-      },
-      {
-        "url" : "value",
-        "valueString" : "en"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters",
       "valueReference" : {
         "reference" : "Parameters/expansion-parameters"
@@ -413,7 +435,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "public-comment"
+        "valueString" : "trial-implementation"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -436,6 +458,50 @@
       {
         "url" : "value",
         "valueString" : "../../expansion-params.json"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "i18n-default-lang"
+      },
+      {
+        "url" : "value",
+        "valueString" : "fr"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-jurisdiction"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "i18n-lang"
+      },
+      {
+        "url" : "value",
+        "valueString" : "en"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "translation-sources"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/translations/en"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -585,17 +651,6 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueCode" : "apply-jurisdiction"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
         "valueCode" : "apply-license"
       },
       {
@@ -689,17 +744,6 @@
       {
         "url" : "value",
         "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "i18n-default-lang"
-      },
-      {
-        "url" : "value",
-        "valueString" : "en"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     }],
@@ -1246,6 +1290,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-facturation"
+      },
+      "name" : "TDDUI Facturation",
+      "description" : "Indique si une facture a été établie.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -1264,6 +1320,30 @@
         "reference" : "ValueSet/tddui-goal-attente-note"
       },
       "name" : "TDDUI Goal Attente Note",
+      "description" : "ValueSet définissant les types de notes pour l'élément Goal.note.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/tddui-goal-identifier"
+      },
+      "name" : "TDDUI Goal Identifier",
+      "description" : "CodeSystem pour la défintion des identifiants de la ressource Goal",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/tddui-goal-Identifier-projet-vie"
+      },
+      "name" : "TDDUI Goal Identifier Projet Vie",
       "description" : "ValueSet définissant les types de notes pour l'élément Goal.note.",
       "exampleBoolean" : false
     },
@@ -1290,6 +1370,30 @@
       "name" : "TDDUI Goal Objectif Note",
       "description" : "ValueSet définissant les types de notes pour l'élément Goal.note.",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-goal-projet-vie"
+      },
+      "name" : "TDDUI Goal Projet Vie",
+      "description" : "Profil de la ressource Goal permettant de représenter le projet de vie de l'usager.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Goal"
+      }],
+      "reference" : {
+        "reference" : "Goal/tddui-goal-projet-vie-example"
+      },
+      "name" : "TDDUI Goal ProjetVie Example",
+      "description" : "Exemple du projet de vie d'un usager.",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-projet-vie"
     },
     {
       "extension" : [{
@@ -1366,6 +1470,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/tddui-observation-identifier"
+      },
+      "name" : "TDDUI Observation Identifier",
+      "description" : "CodeSystem pour la définition des codes d'identifiant d'observation",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -1438,6 +1554,42 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-observation-repas"
+      },
+      "name" : "TDDUI Observation Repas",
+      "description" : "Profil de la ressource Observation permettant de représenter si l'usager bénéficie ou non des repas.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/tddui-observation-repas-example"
+      },
+      "name" : "TDDUI Observation Repas Example",
+      "description" : "Exemple de la ressource TDDUIObservationRepas",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-repas"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/tddui-observation-identifier-repas"
+      },
+      "name" : "TDDUI Observation Repas Identifier",
+      "description" : "ValueSet pour la définition des codes d'identifiant du repas",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -1504,7 +1656,7 @@
         "reference" : "StructureDefinition/tddui-participant-present"
       },
       "name" : "TDDUI Participant Present",
-      "description" : "Indique la présence du participant à l'événement.",
+      "description" : "Indique la présence du participant à l'événement.\n- **Événement** :Indique la présence du participant à l'événement.\n- **Repas** : Indique la présence de l'usager au repas.",
       "exampleBoolean" : false
     },
     {
@@ -1588,7 +1740,7 @@
         "reference" : "StructureDefinition/tddui-patient-present"
       },
       "name" : "TDDUI Patient Present",
-      "description" : "Evènement nécessitant ou non la présence physique de l’usager.",
+      "description" : "\n- **Événement** : évènement nécessitant ou non la présence physique de l’usager.",
       "exampleBoolean" : false
     },
     {
@@ -1601,6 +1753,18 @@
       },
       "name" : "TDDUI Patient Validation",
       "description" : "Validation par l'usager que l'événement a eu lieu.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-planned-absence"
+      },
+      "name" : "TDDUI Planned Absence",
+      "description" : "Absence prévue",
       "exampleBoolean" : false
     },
     {
@@ -2206,6 +2370,30 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-schedule"
+      },
+      "name" : "TDDUI Schedule",
+      "description" : "Profil de la ressource FRCoreScheduleProfile permettant de contenir l'ensemble des présences et absences de l'usager.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Schedule"
+      }],
+      "reference" : {
+        "reference" : "Schedule/tddui-schedule-example"
+      },
+      "name" : "TDDUI Schedule Example",
+      "description" : "Exemple de la ressource TDDUISchedule.",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-schedule"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -2298,6 +2486,54 @@
       "name" : "TDDUI ServiceRequest SupportingInfo",
       "description" : "ValueSet définissant les types d'objet binaire de la demande d'orientation.",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/tddui-slot-identifier"
+      },
+      "name" : "TDDUI Slot Identifier",
+      "description" : "CodeSystem pour la définition des codes d'identifiant de la ressource Slot",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/tddui-slot-identifier-presence-absence"
+      },
+      "name" : "TDDUI Slot Identifier Presence Absence",
+      "description" : "ValueSet définissant les types d'identifiants pour la ressource SlotPresenceAbsence.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tddui-slot-presence-absence"
+      },
+      "name" : "TDDUI Slot Presence Absence",
+      "description" : "Profil de la ressource FRCoreSlotProfile permettant de représenter les présences et absences de l'usager.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Slot"
+      }],
+      "reference" : {
+        "reference" : "Slot/tddui-slot-presence-absence-example"
+      },
+      "name" : "TDDUI Slot PresenceAbsence Example",
+      "description" : "Exemple de la ressource TDDUISlotPresenceAbsence.",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-slot-presence-absence"
     },
     {
       "extension" : [{
@@ -2811,10 +3047,28 @@
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "problematiques_connues.html"
+        }],
+        "nameUrl" : "problematiques_connues.html",
+        "title" : "Problématiques connues",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
           "valueUrl" : "changes.html"
         }],
         "nameUrl" : "changes.html",
         "title" : "Historique des changements",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "translationinfo.html"
+        }],
+        "nameUrl" : "translationinfo.html",
+        "title" : "Informations sur la traduction",
         "generation" : "markdown"
       }]
     },

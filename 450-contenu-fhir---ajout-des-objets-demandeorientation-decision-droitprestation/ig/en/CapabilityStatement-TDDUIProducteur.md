@@ -1,4 +1,4 @@
-# TDDUI-Producteur - Médicosocial - Transfert de données DUI v2.3.0-ballot
+# TDDUI-Producteur - Médicosocial - Transfert de données DUI v2.3.0
 
 ## CapabilityStatement: TDDUI-Producteur 
 
@@ -16,7 +16,7 @@ Le rôle de Producteur est de transmettre des données de son logiciel DUI. Il c
   "resourceType" : "CapabilityStatement",
   "id" : "TDDUIProducteur",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CapabilityStatement/TDDUIProducteur",
-  "version" : "2.3.0-ballot",
+  "version" : "2.3.0",
   "name" : "TDDUIProducteur",
   "title" : "TDDUI-Producteur",
   "status" : "active",
@@ -129,7 +129,8 @@ Le rôle de Producteur est de transmettre des données de son logiciel DUI. Il c
     {
       "type" : "Goal",
       "supportedProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente",
-      "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif"],
+      "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif",
+      "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-projet-vie"],
       "interaction" : [{
         "code" : "create"
       }]
@@ -153,7 +154,8 @@ Le rôle de Producteur est de transmettre des données de son logiciel DUI. Il c
       "type" : "Observation",
       "supportedProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-mortalite",
       "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-periode-scolaire",
-      "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite-usager"],
+      "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite-usager",
+      "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-repas"],
       "interaction" : [{
         "code" : "create"
       }]
@@ -161,6 +163,13 @@ Le rôle de Producteur est de transmettre des données de son logiciel DUI. Il c
     {
       "type" : "Basic",
       "supportedProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-basic-decision"],
+      "interaction" : [{
+        "code" : "create"
+      }]
+    },
+    {
+      "type" : "Slot",
+      "supportedProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-slot-presence-absence"],
       "interaction" : [{
         "code" : "create"
       }]

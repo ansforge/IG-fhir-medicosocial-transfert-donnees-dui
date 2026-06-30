@@ -1,6 +1,9 @@
-# Solutions de tests - Médicosocial - Transfert de données DUI v2.3.0-ballot
+# Solutions de tests - Médicosocial - Transfert de données DUI v2.3.0
 
 ## Solutions de tests
+
+ 
+There is no translation page available for the current page, so it has been rendered in the default language 
 
 ### Validateurs FHIR
 

@@ -9,7 +9,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>TDDUI PP PA Task Moyen Ressource IDE 2 Example - TTL Representation - Médicosocial - Transfert de données DUI v2.3.0-ballot</title>
+    <title>TDDUI PP PA Task Moyen Ressource IDE 2 Example - TTL Representation - Médicosocial - Transfert de données DUI v2.3.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -52,8 +52,8 @@
 	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"7.149"}
-    h3,h4,h5,h6{--heading-prefix:"7.149"}</style>
+    <style type="text/css">h2{--heading-prefix:"9.163"}
+    h3,h4,h5,h6{--heading-prefix:"9.163"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -73,7 +73,7 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">Médicosocial - Transfert de données DUI</span>
             <br/>
-            <span style="display:inline-block;">2.3.0-ballot - public-comment
+            <span style="display:inline-block;">2.3.0 - trial-implementation
 
 
 
@@ -174,12 +174,30 @@
     </ul>
   </li>
   <li>
+    <a href="problematiques_connues.html">Problématiques connues</a>
+  </li>
+  <li>
     <a href="changes.html">Historique</a>
   </li>
 </ul>
             </div>  <!-- /.nav-collapse -->
 
               
+
+
+<div style="float: var(--ig-right);padding: 8px 0px;" id="language">
+  <div id="select_flg" class="flaglist" style="background-image: url(assets/images/icon_arrow_down.png);background-position: 133px 3px;">
+    <div><img class="flag" alt="flag en" src="assets/images/lang-en.png"/>English</div>
+  </div>
+  <div style="float: var(--ig-right); margin: 2px 0px; padding: 1px 0;color: var(--btn-text-color);font-size:12px">Language:</div>
+ 	<div id="flaglist" class="flaglist" style="display: none;position: absolute;right: 0;z-index: 100;background-image: url(assets/images/icon_arrow_up.png);background-position: 133px 3px;">
+    <div><img class="flag" alt="flag en" src="assets/images/lang-en.png"/>English</div>
+
+    <div><a href="../fr/Task-tddui-pp-pa-task-moyen-ressource-ide-2-example.ttl.html"><img class="flag" src="assets/images/lang-fr.png" alt="flag fr"/>Français</a></div>
+
+  </div>
+</div>
+
 
           </div>  <!-- /.container -->
         </nav>  <!-- /.navbar -->
@@ -215,7 +233,7 @@
 
 <!-- layouts\layout-instance-format -->
 <div style="counter-reset: section 9" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Médicosocial - Transfert de données DUI - Local Development build (v2.3.0-ballot) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://interop.esante.gouv.fr/ig/fhir/tddui/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Médicosocial - Transfert de données DUI - Local Development build (v2.3.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://interop.esante.gouv.fr/ig/fhir/tddui/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -277,47 +295,65 @@
   <pre class="rdf" data-fhir="generated" style="white-space: pre; overflow: hidden"><code class="language-turtle">
 @prefix fhir: &lt;http://hl7.org/fhir/&gt; .
 @prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
-@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
 @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
 @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 
 # - resource -------------------------------------------------------------------
 
- a fhir:Task ;
+&lt;http://hl7.org/fhir/Task/tddui-pp-pa-task-moyen-ressource-ide-2-example&gt; a fhir:Task ;
   <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="http://hl7.org/fhir/R4/resource.html#Task.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;tddui-pp-pa-task-moyen-ressource-ide-2-example&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/resource.html#Task.meta">fhir:meta</a> [
-    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource&gt;     ] )
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/resource.html#Task.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;en&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/domainresource.html#Task.text">fhir:text</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">fhir:div</a> [ <a href="http://hl7.org/fhir/R4/narrative.html#xhtml">fhir:v</a> &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Task tddui-pp-pa-task-moyen-ressource-ide-2-example&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;tddui-pp-pa-task-moyen-ressource-ide-2-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hctddui-pp-pa-task-moyen-ressource-ide-2-example\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-tddui-task-moyen-ressource.html\&quot;&gt;TDDUI Task MoyenRessource&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;https://identifiant-medicosocial-moyenressource.esante.gouv.fr&lt;/code&gt;/3480787529/123456789-MORE-123615&lt;/p&gt;&lt;p&gt;&lt;b&gt;basedOn&lt;/b&gt;: &lt;a href=\&quot;CarePlan-tddui-pp-pa-careplan-example.html\&quot;&gt;CarePlan Projet personnalisé de Mme Jeanne L.&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;partOf&lt;/b&gt;: &lt;a href=\&quot;Task-tddui-pp-pa-task-action-2-ide-example.html\&quot;&gt;Task: identifier = https://identifiant-medicosocial-action.esante.gouv.fr#3480787529/123456789-ACTI-12342; status = in-progress; intent = plan; description = Pesée mensuelle et dépistage dénutrition&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: In Progress&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: plan&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Carnet de suivi poids&lt;/p&gt;&lt;h3&gt;Inputs&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-moyen-ressource titre}\&quot;&gt;Titre du moyen ou de la ressource à utiliser.&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Moyens mis en œuvre pour l'objectif 2 (avec rattachement SERAFIN‑PH)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral ]
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/task.html#Task.identifier">fhir:identifier</a> ( [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://identifiant-medicosocial-moyenressource.esante.gouv.fr&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;3480787529/123456789-MORE-123615&quot; ]
-  ] ) ; # 
-  <a href="http://hl7.org/fhir/R4/task.html#Task.basedOn">fhir:basedOn</a> ( [
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;CarePlan/tddui-pp-pa-careplan-example&quot; ]
-  ] ) ; # 
-  <a href="http://hl7.org/fhir/R4/task.html#Task.partOf">fhir:partOf</a> ( [
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Task/tddui-pp-pa-task-action-2-ide-example&quot; ]
-  ] ) ; # 
-  <a href="http://hl7.org/fhir/R4/task.html#Task.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;in-progress&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/task.html#Task.intent">fhir:intent</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;plan&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/task.html#Task.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Carnet de suivi poids&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/task.html#Task.input">fhir:input</a> ( [
-<a href="http://hl7.org/fhir/R4/task.html#Task.input.type">fhir:type</a> [
-      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-moyen-ressource&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;titre&quot; ]       ] )     ] ;
-<a href="http://hl7.org/fhir/R4/task.html#Task.input.value_x_">fhir:value</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Moyens mis en œuvre pour l'objectif 2 (avec rattachement SERAFIN‑PH)&quot;     ]
-  ] ) . # 
+  <a href="http://hl7.org/fhir/R4/resource.html#Task.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:value</a> &quot;tddui-pp-pa-task-moyen-ressource-ide-2-example&quot;] ;
+  <a href="http://hl7.org/fhir/R4/resource.html#Task.meta">fhir:Resource.meta</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource&quot; ;
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource&gt;
+     ]
+  ] ;
+  <a href="http://hl7.org/fhir/R4/resource.html#Task.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
+  <a href="http://hl7.org/fhir/R4/domainresource.html#Task.text">fhir:DomainResource.text</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ] ;
+     fhir:Narrative.div &quot;&lt;div xml:lang=\&quot;en\&quot; lang=\&quot;en\&quot;&gt;&lt;hr/&gt;&lt;p&gt;&lt;b&gt;English&lt;/b&gt;&lt;/p&gt;&lt;hr/&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Task tddui-pp-pa-task-moyen-ressource-ide-2-example&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;en-tddui-pp-pa-task-moyen-ressource-ide-2-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;en-hctddui-pp-pa-task-moyen-ressource-ide-2-example\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-tddui-task-moyen-ressource.html\&quot;&gt;TDDUI Task MoyenRessource&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;https://identifiant-medicosocial-moyenressource.esante.gouv.fr&lt;/code&gt;/3480787529/123456789-MORE-123615&lt;/p&gt;&lt;p&gt;&lt;b&gt;basedOn&lt;/b&gt;: &lt;a href=\&quot;CarePlan-tddui-pp-pa-careplan-example.html\&quot;&gt;CarePlan Projet personnalisé de Mme Jeanne L.&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;partOf&lt;/b&gt;: &lt;a href=\&quot;Task-tddui-pp-pa-task-action-2-ide-example.html\&quot;&gt;Task: identifier = https://identifiant-medicosocial-action.esante.gouv.fr#3480787529/123456789-ACTI-12342; status = in-progress; intent = plan; description = Pesée mensuelle et dépistage dénutrition&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: In Progress&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: plan&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Carnet de suivi poids&lt;/p&gt;&lt;h3&gt;Inputs&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-moyen-ressource titre}\&quot;&gt;Titre du moyen ou de la ressource à utiliser.&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Moyens mis en œuvre pour l'objectif 2 (avec rattachement SERAFIN‑PH)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
+  ] ;
+  <a href="http://hl7.org/fhir/R4/task.html#Task.identifier">fhir:Task.identifier</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://identifiant-medicosocial-moyenressource.esante.gouv.fr&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;3480787529/123456789-MORE-123615&quot; ]
+  ] ;
+  <a href="http://hl7.org/fhir/R4/task.html#Task.basedOn">fhir:Task.basedOn</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+     <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/CarePlan/tddui-pp-pa-careplan-example&gt; ;
+     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;CarePlan/tddui-pp-pa-careplan-example&quot; ]
+  ] ;
+  <a href="http://hl7.org/fhir/R4/task.html#Task.partOf">fhir:Task.partOf</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+     <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/Task/tddui-pp-pa-task-action-2-ide-example&gt; ;
+     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Task/tddui-pp-pa-task-action-2-ide-example&quot; ]
+  ] ;
+  <a href="http://hl7.org/fhir/R4/task.html#Task.status">fhir:Task.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;in-progress&quot;] ;
+  <a href="http://hl7.org/fhir/R4/task.html#Task.intent">fhir:Task.intent</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;plan&quot;] ;
+  <a href="http://hl7.org/fhir/R4/task.html#Task.description">fhir:Task.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Carnet de suivi poids&quot;] ;
+  <a href="http://hl7.org/fhir/R4/task.html#Task.input">fhir:Task.input</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+     <a href="http://hl7.org/fhir/R4/task.html#Task.input.type">fhir:Task.input.type</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-moyen-ressource&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;titre&quot; ]
+       ]
+     ] ;
+     <a href="http://hl7.org/fhir/R4/task.html#Task.input.value_x_">fhir:Task.input.valueString</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Moyens mis en œuvre pour l'objectif 2 (avec rattachement SERAFIN‑PH)&quot; ]
+  ] .
+
+&lt;http://hl7.org/fhir/CarePlan/tddui-pp-pa-careplan-example&gt; a fhir:CarePlan .
+
+&lt;http://hl7.org/fhir/Task/tddui-pp-pa-task-action-2-ide-example&gt; a fhir:Task .
+
+# - ontology header ------------------------------------------------------------
+
+&lt;http://hl7.org/fhir/Task/tddui-pp-pa-task-moyen-ressource-ide-2-example.ttl&gt; a owl:Ontology ;
+  owl:imports fhir:fhir.ttl ;
+  owl:versionIRI &lt;http://build.fhir.org/Task/tddui-pp-pa-task-moyen-ressource-ide-2-example.ttl&gt; .
 
 </code></pre>
 
@@ -372,10 +408,10 @@
 
 
           IG © 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  
-          Package ans.fhir.fr.tddui#2.3.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Package ans.fhir.fr.tddui#2.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-06-25 14:41:00 +0000">
-    2026-06-25
+  <span title="2026-06-30 07:08:00 +0000">
+    2026-06-30
   </span>
 
           <br/>

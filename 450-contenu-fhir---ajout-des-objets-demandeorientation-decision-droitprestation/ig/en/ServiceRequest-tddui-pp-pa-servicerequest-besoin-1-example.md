@@ -1,6 +1,12 @@
-# TDDUI PP PA ServiceRequest Besoin 1 Example - Médicosocial - Transfert de données DUI v2.3.0-ballot
+# TDDUI PP PA ServiceRequest Besoin 1 Example - Médicosocial - Transfert de données DUI v2.3.0
 
 ## Example ServiceRequest: TDDUI PP PA ServiceRequest Besoin 1 Example
+
+-------
+
+**English**
+
+-------
 
 Profile: [TDDUI ServiceRequest Besoin](StructureDefinition-tddui-service-request-besoin.md)
 

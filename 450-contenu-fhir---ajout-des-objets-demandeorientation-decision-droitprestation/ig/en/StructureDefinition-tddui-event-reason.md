@@ -1,4 +1,4 @@
-# TDDUI Event Reason - Médicosocial - Transfert de données DUI v2.3.0-ballot
+# TDDUI Event Reason - Médicosocial - Transfert de données DUI v2.3.0
 
 ## Extension: TDDUI Event Reason 
 
@@ -32,11 +32,11 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-event-reaso
   "resourceType" : "StructureDefinition",
   "id" : "tddui-event-reason",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-reason",
-  "version" : "2.3.0-ballot",
+  "version" : "2.3.0",
   "name" : "TDDUIEventReason",
   "title" : "TDDUI Event Reason",
   "status" : "active",
-  "date" : "2026-06-25T14:41:02+00:00",
+  "date" : "2026-06-30T07:08:27+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

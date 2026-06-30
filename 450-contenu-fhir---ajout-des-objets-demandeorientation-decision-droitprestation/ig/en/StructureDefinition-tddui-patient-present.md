@@ -1,8 +1,8 @@
-# TDDUI Patient Present - Médicosocial - Transfert de données DUI v2.3.0-ballot
+# TDDUI Patient Present - Médicosocial - Transfert de données DUI v2.3.0
 
 ## Extension: TDDUI Patient Present 
 
-Evènement nécessitant ou non la présence physique de l’usager.
+* **Événement** : évènement nécessitant ou non la présence physique de l’usager.
 
 **Context of Use**
 
@@ -31,11 +31,11 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-patient-pre
   "resourceType" : "StructureDefinition",
   "id" : "tddui-patient-present",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-present",
-  "version" : "2.3.0-ballot",
+  "version" : "2.3.0",
   "name" : "TDDUIPatientPresent",
   "title" : "TDDUI Patient Present",
   "status" : "active",
-  "date" : "2026-06-25T14:41:02+00:00",
+  "date" : "2026-06-30T07:08:27+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-patient-pre
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Evènement nécessitant ou non la présence physique de l’usager.",
+  "description" : "\n- **Événement** : évènement nécessitant ou non la présence physique de l’usager.\n",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -72,7 +72,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-patient-pre
       "id" : "Extension",
       "path" : "Extension",
       "short" : "TDDUI Patient Present",
-      "definition" : "Evènement nécessitant ou non la présence physique de l’usager."
+      "definition" : "\n- **Événement** : évènement nécessitant ou non la présence physique de l’usager.\n"
     },
     {
       "id" : "Extension.extension",

@@ -1,6 +1,12 @@
-# TDDUI Basic Decision Example - Médicosocial - Transfert de données DUI v2.3.0-ballot
+# TDDUI Basic Decision Example - Médicosocial - Transfert de données DUI v2.3.0
 
 ## Example Basic: TDDUI Basic Decision Example
+
+-------
+
+**English**
+
+-------
 
 Profile: [TDDUI Basic Decision](StructureDefinition-tddui-basic-decision.md)
 

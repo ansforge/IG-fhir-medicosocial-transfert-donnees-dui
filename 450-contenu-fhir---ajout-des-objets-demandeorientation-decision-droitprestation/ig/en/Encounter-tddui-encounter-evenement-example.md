@@ -1,6 +1,12 @@
-# TDDUI Encounter Evenement Example - Médicosocial - Transfert de données DUI v2.3.0-ballot
+# TDDUI Encounter Evenement Example - Médicosocial - Transfert de données DUI v2.3.0
 
 ## Example Encounter: TDDUI Encounter Evenement Example
+
+-------
+
+**English**
+
+-------
 
 Profile: [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md)
 

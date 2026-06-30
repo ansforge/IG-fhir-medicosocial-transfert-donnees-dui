@@ -1,6 +1,12 @@
-# TDDUI Practitioner Example - Médicosocial - Transfert de données DUI v2.3.0-ballot
+# TDDUI Practitioner Example - Médicosocial - Transfert de données DUI v2.3.0
 
 ## Example Practitioner: TDDUI Practitioner Example
+
+-------
+
+**English**
+
+-------
 
 Profile: [TDDUI Practitioner](StructureDefinition-tddui-practitioner.md)
 

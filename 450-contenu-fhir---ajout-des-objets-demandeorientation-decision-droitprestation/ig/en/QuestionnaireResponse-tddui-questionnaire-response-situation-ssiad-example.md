@@ -1,6 +1,12 @@
-# TDDUI Questionnaire Response Situation SSIAD Example - Médicosocial - Transfert de données DUI v2.3.0-ballot
+# TDDUI Questionnaire Response Situation SSIAD Example - Médicosocial - Transfert de données DUI v2.3.0
 
 ## Example QuestionnaireResponse: TDDUI Questionnaire Response Situation SSIAD Example
+
+-------
+
+**English**
+
+-------
 
 Profile: [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md)
 

@@ -1,4 +1,4 @@
-# TDDUI-Consommateur - Médicosocial - Transfert de données DUI v2.3.0-ballot
+# TDDUI-Consommateur - Médicosocial - Transfert de données DUI v2.3.0
 
 ## CapabilityStatement: TDDUI-Consommateur 
 
@@ -16,7 +16,7 @@ Le rôle du Consommateur est de recueillir les données d'un logiciel DUI. Il co
   "resourceType" : "CapabilityStatement",
   "id" : "TDDUIConsommateur",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CapabilityStatement/TDDUIConsommateur",
-  "version" : "2.3.0-ballot",
+  "version" : "2.3.0",
   "name" : "TDDUIConsommateur",
   "title" : "TDDUI-Consommateur",
   "status" : "active",
@@ -129,7 +129,8 @@ Le rôle du Consommateur est de recueillir les données d'un logiciel DUI. Il co
     {
       "type" : "Goal",
       "supportedProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente",
-      "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif"],
+      "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif",
+      "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-projet-vie"],
       "interaction" : [{
         "code" : "read"
       }]
@@ -153,7 +154,8 @@ Le rôle du Consommateur est de recueillir les données d'un logiciel DUI. Il co
       "type" : "Observation",
       "supportedProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-mortalite",
       "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-periode-scolaire",
-      "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite-usager"],
+      "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite-usager",
+      "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-repas"],
       "interaction" : [{
         "code" : "read"
       }]
@@ -161,6 +163,13 @@ Le rôle du Consommateur est de recueillir les données d'un logiciel DUI. Il co
     {
       "type" : "Basic",
       "supportedProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-basic-decision"],
+      "interaction" : [{
+        "code" : "read"
+      }]
+    },
+    {
+      "type" : "Slot",
+      "supportedProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-slot-presence-absence"],
       "interaction" : [{
         "code" : "read"
       }]

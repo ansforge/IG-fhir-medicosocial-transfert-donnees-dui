@@ -1,4 +1,4 @@
-# TDDUI Observation Type - Médicosocial - Transfert de données DUI v2.3.0-ballot
+# TDDUI Observation Type - Médicosocial - Transfert de données DUI v2.3.0
 
 ## CodeSystem: TDDUI Observation Type 
 
@@ -25,12 +25,12 @@ This Code system is referenced in the definition of the following value sets:
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem"]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-type",
-  "version" : "2.3.0-ballot",
+  "version" : "2.3.0",
   "name" : "TDDUIObservationType",
   "title" : "TDDUI Observation Type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-25T14:41:02+00:00",
+  "date" : "2026-06-30T07:08:27+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -49,7 +49,7 @@ This Code system is referenced in the definition of the following value sets:
   }],
   "caseSensitive" : true,
   "content" : "complete",
-  "count" : 2,
+  "count" : 3,
   "concept" : [{
     "code" : "PERIODESCOL",
     "display" : "Période scolaire"
@@ -57,6 +57,10 @@ This Code system is referenced in the definition of the following value sets:
   {
     "code" : "OBSAMENAGEMENT",
     "display" : "Observation sur l’aménagement du moyen de transport"
+  },
+  {
+    "code" : "REPAS",
+    "display" : "Repas"
   }]
 }
 

@@ -1,6 +1,9 @@
-# Organisation du contexte métier - Médicosocial - Transfert de données DUI v2.3.0-ballot
+# Organisation du contexte métier - Médicosocial - Transfert de données DUI v2.3.0
 
 ## Organisation du contexte métier
+
+ 
+There is no translation page available for the current page, so it has been rendered in the default language 
 
 Les groupes de processus « Transfert des données d'un logiciel DUI » et « Suivi des décisions d’orientation » comprennent les différents processus permettant à un logiciel DUI d’échanger de l’information pour suivre le parcours de vie d’un usager.
 

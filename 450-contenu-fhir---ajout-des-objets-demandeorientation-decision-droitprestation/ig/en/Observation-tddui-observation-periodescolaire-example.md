@@ -1,6 +1,12 @@
-# TDDUI Observation PeriodeScolaire Example - Médicosocial - Transfert de données DUI v2.3.0-ballot
+# TDDUI Observation PeriodeScolaire Example - Médicosocial - Transfert de données DUI v2.3.0
 
 ## Example Observation: TDDUI Observation PeriodeScolaire Example
+
+-------
+
+**English**
+
+-------
 
 Profile: [TDDUI Observation Periode Scolaire](StructureDefinition-tddui-observation-periode-scolaire.md)
 

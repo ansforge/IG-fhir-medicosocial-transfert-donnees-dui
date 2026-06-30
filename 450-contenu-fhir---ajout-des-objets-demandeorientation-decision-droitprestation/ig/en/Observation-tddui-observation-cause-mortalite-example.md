@@ -1,6 +1,12 @@
-# TDDUI Observation Cause Mortalite Example - Médicosocial - Transfert de données DUI v2.3.0-ballot
+# TDDUI Observation Cause Mortalite Example - Médicosocial - Transfert de données DUI v2.3.0
 
 ## Example Observation: TDDUI Observation Cause Mortalite Example
+
+-------
+
+**English**
+
+-------
 
 Profile: [TDDUI Observation Cause Mortalite](StructureDefinition-tddui-observation-cause-mortalite.md)
 

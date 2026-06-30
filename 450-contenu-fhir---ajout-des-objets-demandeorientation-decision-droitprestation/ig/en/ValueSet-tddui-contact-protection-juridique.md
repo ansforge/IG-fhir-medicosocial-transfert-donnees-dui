@@ -1,4 +1,4 @@
-# TDDUI Contact Protection Juridique - Médicosocial - Transfert de données DUI v2.3.0-ballot
+# TDDUI Contact Protection Juridique - Médicosocial - Transfert de données DUI v2.3.0
 
 ## ValueSet: TDDUI Contact Protection Juridique 
 
@@ -32,12 +32,12 @@ ValueSet définissant la protection juridique.
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-contact-protection-juridique",
-  "version" : "2.3.0-ballot",
+  "version" : "2.3.0",
   "name" : "TDDUIContactProtectionJuridique",
   "title" : "TDDUI Contact Protection Juridique",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-25T14:41:02+00:00",
+  "date" : "2026-06-30T07:08:27+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

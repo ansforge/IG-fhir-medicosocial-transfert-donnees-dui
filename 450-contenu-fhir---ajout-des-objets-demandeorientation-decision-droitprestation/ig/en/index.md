@@ -1,12 +1,12 @@
-# Accueil - Médicosocial - Transfert de données DUI v2.3.0-ballot
+# Accueil - Médicosocial - Transfert de données DUI v2.3.0
 
 ## Accueil
 
+ 
+There is no translation page available for the current page, so it has been rendered in the default language 
+
  **Brief description of this Implementation Guide**
  The Digital User File (DUI) centralizes all information concerning the person being cared for in social and medico-social facilities and services. The aim of this implementation guide is to define the specifications for DUI data transfer. 
-
->  **Attention !** 
- Cet Implementation Guide est actuellement en concertation. La version courante est accessible à l'adresse : http://interop.esante.gouv.fr/ig/fhir/tddui 
 
 ### Introduction
 
@@ -73,9 +73,11 @@ Les ressources profilées dans le cadre de ce guide d'implémentation sont les s
 | [Encounter](http://hl7.org/fhir/StructureDefinition/Encounter) | [TDDUIEncounterSejour](StructureDefinition-tddui-encounter-sejour.md) | Profil de la ressource Encounter permettant de regrouper les informations relatives au séjour d'un usager dans une structure ESSMS |
 | [Goal](http://hl7.org/fhir/StructureDefinition/Goal) | [TDDUIGoalAttente](StructureDefinition-tddui-goal-attente.md) | Profil de la ressource Goal permettant de représenter les attentes pour un usager. |
 | [Goal](http://hl7.org/fhir/StructureDefinition/Goal) | [TDDUIGoalObjectif](StructureDefinition-tddui-goal-objectif.md) | Profil de la ressource Goal permettant de représenter les résultats à atteindre dans le cadre du projet personnalisé. |
+| [Goal](http://hl7.org/fhir/StructureDefinition/Goal) | [TDDUIGoalProjetVie](StructureDefinition-tddui-goal-projet-vie.md) | Profil de la ressource Goal permettant de représenter le projet de vie de l'usager. |
 | [Observation](http://hl7.org/fhir/StructureDefinition/Observation) | [TDDUIObservationCauseMortalite](StructureDefinition-tddui-observation-cause-mortalite.md) | Profil de la ressource Observation permettant de représenter les causes de mortalité d'un usager. |
 | [Observation](http://hl7.org/fhir/StructureDefinition/Observation) | [TDDUIObservationMobiliteUsager](StructureDefinition-tddui-observation-mobilite-usager.md) | Profil de la ressource Observation permettant de représenter la mobilité de l'usager. |
 | [Observation](http://hl7.org/fhir/StructureDefinition/Observation) | [TDDUIObservationPeriodeScolaire](StructureDefinition-tddui-observation-periode-scolaire.md) | Profil de la ressource Observation permettant de représenter la période scolaire de l'usager. |
+| [Observation](http://hl7.org/fhir/StructureDefinition/Observation) | [TDDUIObservationRepas](StructureDefinition-tddui-observation-repas.md) | Profil de la ressource Observation permettant de représenter si l'usager bénéficie ou non des repas. |
 | [FR Core Organization Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization) | [TDDUIOrganization](StructureDefinition-tddui-organization.md) | Profil de la ressource FRCoreOrganizationProfile permettant de représenter les entités juridiques. |
 | [FR Core Patient Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient) | [TDDUIPatient](StructureDefinition-tddui-patient.md) | Profil de la ressource FrCorePatientProfile permettant de représenter un usager lorsque l'INS n'est pas transmis. |
 | [FR Core Patient INS Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins) | [TDDUIPatientINS](StructureDefinition-tddui-patient-ins.md) | Profil de la ressource FRCorePatientINSProfile permettant de représenter un usager lorsque l'INS est transmis. |
@@ -83,8 +85,10 @@ Les ressources profilées dans le cadre de ce guide d'implémentation sont les s
 | [FR Core Practitioner Role](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role) | [TDDUIPractitionerRole](StructureDefinition-tddui-practitioner-role.md) | Profil de la ressource FRCorePractitionerRole permettant de représenter un Professionnel. |
 | [QuestionnaireResponse](http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse) | [TDDUIQuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md) | Profil de la ressource QuestionnaireResponse utilisé pour transmettre les réponses aux questionnaires dans le cadre des évaluations. |
 | [FR Core Related Person Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person) | [TDDUIRelatedPersonContact](StructureDefinition-tddui-related-person-contact.md) | Profil de la ressource FRCoreRelatedPersonProfile permettant de représenter un contact de l'usager. |
+| [FR Core Schedule Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule) | [TDDUISchedule](StructureDefinition-tddui-schedule.md) | Profil de la ressource FRCoreScheduleProfile permettant de contenir l'ensemble des présences et absences de l'usager. |
 | [ServiceRequest](http://hl7.org/fhir/StructureDefinition/ServiceRequest) | [TDDUIServiceRequestBesoin](StructureDefinition-tddui-service-request-besoin.md) | Profil de la ressource ServiceRequest permettant de représenter les besoins de l'usager. |
 | [ServiceRequest](http://hl7.org/fhir/StructureDefinition/ServiceRequest) | [TDDUIServiceRequestDemandeOrientation](StructureDefinition-tddui-service-request-demande-orientation.md) | Profil de la ressource ServiceRequest permettant de représenter la demande d'orientation adressée à la CDAPH. |
+| [FR Core Slot Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-slot) | [TDDUISlotPresenceAbsence](StructureDefinition-tddui-slot-presence-absence.md) | Profil de la ressource FRCoreSlotProfile permettant de représenter les présences et absences de l'usager. |
 | [Task](http://hl7.org/fhir/StructureDefinition/Task) | [TDDUITaskAction](StructureDefinition-tddui-task-action.md) | Profil de la ressource Task permettant de représenter les actions réalisées dans le cadre du projet personnalisé. |
 | [Task](http://hl7.org/fhir/StructureDefinition/Task) | [TDDUITaskBilan](StructureDefinition-tddui-task-bilan.md) | Profil de la ressource Task permettant de représenter le bilan du projet personnalisé. |
 | [Task](http://hl7.org/fhir/StructureDefinition/Task) | [TDDUITaskMoyenRessource](StructureDefinition-tddui-task-moyen-ressource.md) | Profil de la ressource Task permettant de représenter les moyens ou ressources utilisées dans le cadre du projet personnalisé. |

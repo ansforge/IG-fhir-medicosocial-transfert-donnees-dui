@@ -1,6 +1,12 @@
-# TDDUI Task Transport Example - Médicosocial - Transfert de données DUI v2.3.0-ballot
+# TDDUI Task Transport Example - Médicosocial - Transfert de données DUI v2.3.0
 
 ## Example Task: TDDUI Task Transport Example
+
+-------
+
+**English**
+
+-------
 
 Profile: [TDDUI Task Transport](StructureDefinition-tddui-task-transport.md)
 

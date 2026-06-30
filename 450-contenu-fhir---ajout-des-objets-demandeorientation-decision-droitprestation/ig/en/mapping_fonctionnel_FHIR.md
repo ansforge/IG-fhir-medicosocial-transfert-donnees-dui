@@ -1,6 +1,9 @@
-# Mapping FHIR du modèle de contenu DUI - Médicosocial - Transfert de données DUI v2.3.0-ballot
+# Mapping FHIR du modèle de contenu DUI - Médicosocial - Transfert de données DUI v2.3.0
 
 ## Mapping FHIR du modèle de contenu DUI
+
+ 
+There is no translation page available for the current page, so it has been rendered in the default language 
 
  Ce mapping représente les données fonctionnelles trouvant leur équivalence dans l'actuelle version des spécifications techniques. 
 
@@ -12,6 +15,8 @@
 
 ### Mapping PeriodeScolaire
 
+### Mapping ProjetVie
+
 ### Mapping Contact
 
 ### Mapping Entité Juridique
@@ -21,6 +26,10 @@
 ### Mapping Sejour
 
 ### Mapping Evènement
+
+### Mapping Présence Absence
+
+### Mapping Repas
 
 ### Mapping Transport
 
