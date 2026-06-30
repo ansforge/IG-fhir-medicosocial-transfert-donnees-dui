@@ -1,4 +1,4 @@
-name: Workflow Release to IG-website-release
+name: Release IG to IG-website-release
 on:
   workflow_call:
 
@@ -7,6 +7,8 @@ on:
 jobs:
   run-release:
     runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/ansforge/fhir-ig-builder:latest
     steps:
       - uses: actions/checkout@v3
         with:      
@@ -18,6 +20,9 @@ jobs:
           github_page_token: ${{ secrets.GITHUB_TOKEN }}
           bake: "false"
           validator_cli: "false"
+          generate_testscript: "false"
+          generate_plantuml : "false"
+          container_mode: "true"
           publish_repo: "ansforge/IG-website-release"
           publish_repo_token :  ${{ secrets.ANS_IG_API_TOKEN }} 
           publish_path_outpout : "./IG-website-release/www/ig/fhir"
