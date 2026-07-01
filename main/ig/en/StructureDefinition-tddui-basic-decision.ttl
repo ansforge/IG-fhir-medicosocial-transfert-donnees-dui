@@ -18,7 +18,7 @@
   fhir:StructureDefinition.name [ fhir:value "TDDUIBasicDecision"] ;
   fhir:StructureDefinition.title [ fhir:value "TDDUI Basic Decision"] ;
   fhir:StructureDefinition.status [ fhir:value "active"] ;
-  fhir:StructureDefinition.date [ fhir:value "2026-07-01T09:47:49+00:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-07-01T11:47:31+00:00"^^xsd:dateTime] ;
   fhir:StructureDefinition.publisher [ fhir:value "ANS"] ;
   fhir:StructureDefinition.contact [
      fhir:index -1 ;
@@ -524,7 +524,7 @@
          fhir:ElementDefinition.constraint.key [ fhir:value "motivationLocaleRequired" ] ;
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ] ;
          fhir:ElementDefinition.constraint.human [ fhir:value "La motivation locale doit être renseignée si la motivation de la décision est '9999' (Autre)." ] ;
-         fhir:ElementDefinition.constraint.expression [ fhir:value "(extension.where(url='motivation').value.ofType(CodeableConcept).coding.where(code='9999').exists()) implies (extension.where(url='motivationLocale').value.ofType(String).exists())" ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "(extension.where(url='motivation').value.ofType(CodeableConcept).coding.where(code='9999').exists()) implies (extension.where(url='motivationLocale').value.ofType(string).exists())" ] ;
          fhir:ElementDefinition.constraint.source [
            fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision" ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision>

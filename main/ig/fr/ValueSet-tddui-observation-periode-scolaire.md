@@ -36,7 +36,7 @@ ValueSet pour l'Observation de la Période Scolaire.
   "title" : "TDDUI Observation Periode Scolaire",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-01T09:47:49+00:00",
+  "date" : "2026-07-01T11:47:31+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

@@ -30,7 +30,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "title" : "TDDUI Goal Identifier",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-01T09:47:49+00:00",
+  "date" : "2026-07-01T11:47:31+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

@@ -11,7 +11,7 @@
   "name" : "TDDUIBasicDecision",
   "title" : "TDDUI Basic Decision",
   "status" : "active",
-  "date" : "2026-07-01T09:47:49+00:00",
+  "date" : "2026-07-01T11:47:31+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -404,7 +404,7 @@
         "key" : "motivationLocaleRequired",
         "severity" : "error",
         "human" : "La motivation locale doit être renseignée si la motivation de la décision est '9999' (Autre).",
-        "expression" : "(extension.where(url='motivation').value.ofType(CodeableConcept).coding.where(code='9999').exists()) implies (extension.where(url='motivationLocale').value.ofType(String).exists())",
+        "expression" : "(extension.where(url='motivation').value.ofType(CodeableConcept).coding.where(code='9999').exists()) implies (extension.where(url='motivationLocale').value.ofType(string).exists())",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision"
       },
       {
