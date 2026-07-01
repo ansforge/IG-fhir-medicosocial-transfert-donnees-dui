@@ -161,8 +161,8 @@ Le rôle de Producteur est de transmettre des données de son logiciel DUI. Il c
       }]
     },
     {
-      "type" : "Basic",
-      "supportedProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-basic-decision"],
+      "type" : "Schedule",
+      "supportedProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-schedule"],
       "interaction" : [{
         "code" : "create"
       }]
@@ -170,6 +170,13 @@ Le rôle de Producteur est de transmettre des données de son logiciel DUI. Il c
     {
       "type" : "Slot",
       "supportedProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-slot-presence-absence"],
+      "interaction" : [{
+        "code" : "create"
+      }]
+    },
+    {
+      "type" : "Basic",
+      "supportedProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-basic-decision"],
       "interaction" : [{
         "code" : "create"
       }]

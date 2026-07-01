@@ -161,8 +161,8 @@ Le rôle du Consommateur est de recueillir les données d'un logiciel DUI. Il co
       }]
     },
     {
-      "type" : "Basic",
-      "supportedProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-basic-decision"],
+      "type" : "Schedule",
+      "supportedProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-schedule"],
       "interaction" : [{
         "code" : "read"
       }]
@@ -170,6 +170,13 @@ Le rôle du Consommateur est de recueillir les données d'un logiciel DUI. Il co
     {
       "type" : "Slot",
       "supportedProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-slot-presence-absence"],
+      "interaction" : [{
+        "code" : "read"
+      }]
+    },
+    {
+      "type" : "Basic",
+      "supportedProfile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-basic-decision"],
       "interaction" : [{
         "code" : "read"
       }]
