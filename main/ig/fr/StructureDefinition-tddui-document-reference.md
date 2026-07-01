@@ -111,7 +111,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-tddui-document-
   "name" : "TDDUIDocumentReference",
   "title" : "TDDUI DocumentReference",
   "status" : "active",
-  "date" : "2026-07-01T11:47:31+00:00",
+  "date" : "2026-07-01T13:17:54+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
