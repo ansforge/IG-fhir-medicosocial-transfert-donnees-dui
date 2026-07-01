@@ -34,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-basic-decis
   "name" : "TDDUIBasicDecision",
   "title" : "TDDUI Basic Decision",
   "status" : "active",
-  "date" : "2026-06-30T14:55:37+00:00",
+  "date" : "2026-07-01T09:47:49+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -80,14 +80,14 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-basic-decis
         "key" : "idDecisionMAJCardinality",
         "severity" : "error",
         "human" : "L'idDecisionMAJ est obligatoire si typeDecision = '5' (Clôture de droit) ou typeDecision ='1' (Attribution) et DroitPrestation.natureDroit = '6' (Renouvellement) ou '7' (Révision).",
-        "expression" : "((extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.where(url='typeDecision').valueCodeableConcept.coding.code='1') and ((extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.where(url='droitPrestation').extension.where(url='natureDroitPrestation').valueCodeableConcept.coding.code='6') or (extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.where(url='droitPrestation').extension.where(url='natureDroitPrestation').valueCodeableConcept.coding.code='7'))) implies (identifier.where(type.coding.code='IDDECISIONMAJ').exists())",
+        "expression" : "((extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.where(url='typeDecision').value.ofType(CodeableConcept).coding.code='1') and ((extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.where(url='droitPrestation').extension.where(url='natureDroitPrestation').value.ofType(CodeableConcept).coding.code='6') or (extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.where(url='droitPrestation').extension.where(url='natureDroitPrestation').value.ofType(CodeableConcept).coding.code='7'))) implies (identifier.where(type.coding.code='IDDECISIONMAJ').exists())",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-basic-decision"
       },
       {
         "key" : "idDecisionMAJInterdiction",
         "severity" : "error",
         "human" : "L'idDecisionMAJ n'est pas à transmettre si typeDecision = '1' (Attribution) et DroitPrestation.natureDroit = '1' (Attribution)",
-        "expression" : "((extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.where(url='typeDecision').valueCodeableConcept.coding.code='1') and (extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.where(url='droitPrestation').extension.where(url='natureDroitPrestation').valueCodeableConcept.coding.code='1')) implies (identifier.where(type.coding.code='IDDECISIONMAJ').exists().not())",
+        "expression" : "((extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.where(url='typeDecision').value.ofType(CodeableConcept).coding.code='1') and (extension.where(url='https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision').extension.where(url='droitPrestation').extension.where(url='natureDroitPrestation').value.ofType(CodeableConcept).coding.code='1')) implies (identifier.where(type.coding.code='IDDECISIONMAJ').exists().not())",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-basic-decision"
       }],
       "mapping" : [{
