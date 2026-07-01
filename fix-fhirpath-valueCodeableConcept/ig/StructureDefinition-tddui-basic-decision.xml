@@ -226,7 +226,7 @@
   <name value="TDDUIBasicDecision"/>
   <title value="TDDUI Basic Decision"/>
   <status value="active"/>
-  <date value="2026-06-30T14:42:47+00:00"/>
+  <date value="2026-07-01T08:54:05+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -604,14 +604,14 @@
         <key value="motivationLocaleRequired"/>
         <severity value="error"/>
         <human value="La motivation locale doit être renseignée si la motivation de la décision est '9999' (Autre)."/>
-        <expression value="(extension.where(url='motivation').valueCodeableConcept.coding.where(code='9999').exists()) implies (extension.where(url='motivationLocale').valueString.exists())"/>
+        <expression value="(extension.where(url='motivation').value.ofType(CodeableConcept).coding.where(code='9999').exists()) implies (extension.where(url='motivationLocale').value.ofType(String).exists())"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision"/>
       </constraint>
       <constraint>
         <key value="DateEffetClotureCardinality"/>
         <severity value="error"/>
         <human value="Si typeDecision = '5' (Clôture de droit) alors dateEffetCloture est obligatoire."/>
-        <expression value="(extension.where(url='typeDecision').valueCodeableConcept.coding.where(code='5').exists()) implies (extension.where(url='dateEffetCloture').exists())"/>
+        <expression value="(extension.where(url='typeDecision').value.ofType(CodeableConcept).coding.where(code='5').exists()) implies (extension.where(url='dateEffetCloture').exists())"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision"/>
       </constraint>
       <isModifier value="false"/>
@@ -1690,63 +1690,63 @@
         <key value="FormationCardinality"/>
         <severity value="error"/>
         <human value="Formation est obligatoire si typeDroitPrestation = '11.1' (Orientation en Centre de rééducation professionnelle (CRP))."/>
-        <expression value="(extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='11.1') implies (extension.where(url='droitPrestation').extension.where(url='detailPrestation').extension.where(url='formation'))"/>
+        <expression value="(extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.code='11.1') implies (extension.where(url='droitPrestation').extension.where(url='detailPrestation').extension.where(url='formation'))"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision"/>
       </constraint>
       <constraint>
         <key value="PrecisionOrientationValues7.8"/>
         <severity value="error"/>
         <human value="Si typeDroitPrestation = '7.8' (Orientation vers un Service d'éducation spéciale et de soins à domicile (SESSAD)) alors precisionOrientation entre '1' et&#xA; '6'"/>
-        <expression value="(extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='7.8') implies ((extension.where(url='detailPrestation').extension.where(url='precisionOrientation').valueCodeableConcept.coding.code.toInteger()&gt;=1) and (extension.where(url='detailPrestation').extension.where(url='precisionOrientation').valueCodeableConcept.coding.code.toInteger()&lt;=6))"/>
+        <expression value="(extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.code='7.8') implies ((extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.code.toInteger()&gt;=1) and (extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.code.toInteger()&lt;=6))"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision"/>
       </constraint>
       <constraint>
         <key value="PrecisionOrientationValues7.9"/>
         <severity value="error"/>
         <human value="Si typeDroitPrestation = '7.9' (Orientation vers un Service d'accompagnement familial et d'éducation précoce (SAFEP)) alors precisionOrientation entre '7' et '8'"/>
-        <expression value="(extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='7.9') implies ((extension.where(url='detailPrestation').extension.where(url='precisionOrientation').valueCodeableConcept.coding.code.toInteger()&gt;=7) and (extension.where(url='detailPrestation').extension.where(url='precisionOrientation').valueCodeableConcept.coding.code.toInteger()&lt;=8))"/>
+        <expression value="(extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.code='7.9') implies ((extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.code.toInteger()&gt;=7) and (extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.code.toInteger()&lt;=8))"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision"/>
       </constraint>
       <constraint>
         <key value="PrecisionOrientationValues13.1-13.2"/>
         <severity value="error"/>
         <human value="Si typeDroitPrestation = '13.1' (Orientation vers un établissement d'accueil non médicalisé) ou '13.2' (Orientation vers un établissement d'accueil médicalisé en tout ou partie) alors precisionOrientation est interdit"/>
-        <expression value="((extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='13.1') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='13.2')) implies (extension.where(url='detailPrestation').extension.where(url='precisionOrientation').not())"/>
+        <expression value="((extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.code='13.1') or (extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.code='13.2')) implies (extension.where(url='detailPrestation').extension.where(url='precisionOrientation').not())"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision"/>
       </constraint>
       <constraint>
         <key value="PrecisionOrientationValues8.3"/>
         <severity value="error"/>
         <human value="Si typeDroitPrestation = '8.3' (Orientation en Enseignement adapté (SEGPA/EREA)) alors precisionOrientation entre '9' et '10' "/>
-        <expression value="(extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.3') implies ((extension.where(url='detailPrestation').extension.where(url='precisionOrientation').valueCodeableConcept.coding.code.toInteger()&gt;=9) and (extension.where(url='detailPrestation').extension.where(url='precisionOrientation').valueCodeableConcept.coding.code.toInteger()&lt;=10))"/>
+        <expression value="(extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.code='8.3') implies ((extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.code.toInteger()&gt;=9) and (extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.code.toInteger()&lt;=10))"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision"/>
       </constraint>
       <constraint>
         <key value="PrecisionOrientationValues8.6"/>
         <severity value="error"/>
         <human value="Si typeDroitPrestation = '8.6' (Orientation en Unité d'enseignement) alors precisionOrientation = 'UEA' (Unité d'enseignement élémentaire autisme) ou 'UEM' (Unité d'enseignement en maternelle plan autisme)."/>
-        <expression value="(extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.6') implies ((extension.where(url='detailPrestation').extension.where(url='precisionOrientation').valueCodeableConcept.coding.code='UEA') or (extension.where(url='detailPrestation').extension.where(url='precisionOrientation').valueCodeableConcept.coding.code='UEM'))"/>
+        <expression value="(extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.code='8.6') implies ((extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.code='UEA') or (extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.code='UEM'))"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision"/>
       </constraint>
       <constraint>
         <key value="temporaliteAccueilCardinalityViaCategorieDroitPrestation"/>
         <severity value="error"/>
         <human value="Si categorieDroitPrestation = '13' (Orientation ESMS Adultes) ou '7' (Orientation ESMS Enfants) alors temporaliteAccueil est obligatoire."/>
-        <expression value="((extension.where(url='categorieDroitPrestation').valueCodeableConcept.coding.code='13') or (extension.where(url='categorieDroitPrestation').valueCodeableConcept.coding.code='7')) implies (extension.where(url='detailPrestation').extension.where(url='temporaliteAccueil'))"/>
+        <expression value="((extension.where(url='categorieDroitPrestation').value.ofType(CodeableConcept).coding.code='13') or (extension.where(url='categorieDroitPrestation').value.ofType(CodeableConcept).coding.code='7')) implies (extension.where(url='detailPrestation').extension.where(url='temporaliteAccueil'))"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision"/>
       </constraint>
       <constraint>
         <key value="temporaliteAccueilCardinalityViaTypeDroitPrestation"/>
         <severity value="error"/>
         <human value="Si typeDroitPrestation = '8.6' (Orientation en Unité d'enseignement) ou '8.7' (Orientation vers une Scolarisation en milieu ordinaire à temps partagé) ou '8.8' (Orientation vers une Unité d'enseignement et une scolarisation en ULIS à temps partagé) ou '8.10' (Orientation vers une unité d'enseignement et une scolarisation en enseignement adapté à temps partagé) alors la temporalité d'accueil est obligatoire."/>
-        <expression value="((extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.6') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.7') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.8') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code='8.10')) implies (extension.where(url='droitPrestation').extension.where(url='detailPrestation').extension.where(url='temporaliteAccueil'))"/>
+        <expression value="((extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.code='8.6') or (extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.code='8.7') or (extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.code='8.8') or (extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.code='8.10')) implies (extension.where(url='droitPrestation').extension.where(url='detailPrestation').extension.where(url='temporaliteAccueil'))"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision"/>
       </constraint>
       <constraint>
         <key value="cretonCardinality"/>
         <severity value="error"/>
         <human value="Si categorieDroitPrestation = '7' (ESSMS enfant) alors Creton est obligatoire"/>
-        <expression value="((extension.where(url='categorieDroitPrestation').valueCodeableConcept.coding.code='7') or (extension.where(url='typeDroitPrestation').valueCodeableConcept.coding.code.matches('^7[.][0-9]+$'))) implies (extension.where(url='creton'))"/>
+        <expression value="((extension.where(url='categorieDroitPrestation').value.ofType(CodeableConcept).coding.code='7') or (extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.code.matches('^7[.][0-9]+$'))) implies (extension.where(url='creton'))"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision"/>
       </constraint>
       <isModifier value="false"/>

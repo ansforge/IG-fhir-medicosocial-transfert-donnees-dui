@@ -36,7 +36,7 @@ ValueSet pour la définition des éléments spécifiques des input dans la resso
   "title" : "TDDUI Task Input Bilan",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-30T14:42:47+00:00",
+  "date" : "2026-07-01T08:54:05+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
