@@ -1,0 +1,202 @@
+# TDDUI Practitioner - Médicosocial - Transfert de données DUI v2.4.0-ballot
+
+## Profil de ressource: TDDUI Practitioner 
+
+ 
+Profil de la ressource FRCorePractitionerProfile permettant de représenter un professionnel du médicosocial dans le cadre de TDDUI. Le profil AsPractitionerRoleProfile n'a pas été utilisé car il comportait trop de contraintes non présentes dans les DUI. 
+
+**Utilisations:**
+
+* Utilise ce/t/te Profil: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
+* Référence ce Profil: [TDDUI Consent Accord](StructureDefinition-tddui-consent-accord.md), [TDDUI DocumentReference](StructureDefinition-tddui-document-reference.md), [TDDUI Encounter Evenement](StructureDefinition-tddui-encounter-evenement.md), [TDDUI Goal Objectif](StructureDefinition-tddui-goal-objectif.md)... Show 7 more, [TDDUI Practitioner Role](StructureDefinition-tddui-practitioner-role.md), [TDDUI QR Participant](StructureDefinition-tddui-qr-participant.md), [TDDUI QuestionnaireResponse](StructureDefinition-tddui-questionnaire-response.md), [TDDUI Status Author](StructureDefinition-tddui-status-author.md), [TDDUI Task Action](StructureDefinition-tddui-task-action.md), [TDDUI Task Bilan](StructureDefinition-tddui-task-bilan.md) and [TDDUI Task Transport Professionnel](StructureDefinition-tddui-task-transport-professionnel.md)
+* Exemples pour ce/t/te Profil: [Practitioner/tddui-pp-pa-practitioner-ide-example](Practitioner-tddui-pp-pa-practitioner-ide-example.md) and [Practitioner/tddui-practitioner-example](Practitioner-tddui-practitioner-example.md)
+* CapabilityStatements utilisant ce Profil: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
+
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tddui|current/StructureDefinition/tddui-practitioner)
+
+### Vues formelles du contenu du profil
+
+ [Description des profils, des différentiels, des instantanés et de leurs représentations](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+*  [Tableau des éléments clés](#tabs-key) 
+*  [Tableau différentiel (differential)](#tabs-diff) 
+*  [Tableau récapitulatif (snapshot)](#tabs-snap) 
+*  [Statistiques/Références](#tabs-summ) 
+*  [Tous](#tabs-all) 
+
+#### Bindings terminologiques
+
+#### Contraintes
+
+Cette structure est dérivée de [FRCorePractitionerProfile](https://hl7.fr/ig/fhir/core/2.1.0/StructureDefinition-fr-core-practitioner.html) 
+
+#### Bindings terminologiques
+
+#### Contraintes
+
+Cette structure est dérivée de [FRCorePractitionerProfile](https://hl7.fr/ig/fhir/core/2.1.0/StructureDefinition-fr-core-practitioner.html) 
+
+** Résumé **
+
+Obligatoire : 2 éléments
+
+**Structures**
+
+Cette structure fait référence à ces autres structures:
+
+* [TDDUI Human Name DataType (https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name)](StructureDefinition-tddui-human-name.md)
+
+ **Vue des éléments clés** 
+
+#### Bindings terminologiques
+
+#### Contraintes
+
+ **Vue différentielle** 
+
+Cette structure est dérivée de [FRCorePractitionerProfile](https://hl7.fr/ig/fhir/core/2.1.0/StructureDefinition-fr-core-practitioner.html) 
+
+ **Vue d'ensembleView** 
+
+#### Bindings terminologiques
+
+#### Contraintes
+
+Cette structure est dérivée de [FRCorePractitionerProfile](https://hl7.fr/ig/fhir/core/2.1.0/StructureDefinition-fr-core-practitioner.html) 
+
+** Résumé **
+
+Obligatoire : 2 éléments
+
+**Structures**
+
+Cette structure fait référence à ces autres structures:
+
+* [TDDUI Human Name DataType (https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name)](StructureDefinition-tddui-human-name.md)
+
+ 
+
+Autres représentations du profil : [CSV](../StructureDefinition-tddui-practitioner.csv), [Excel](../StructureDefinition-tddui-practitioner.xlsx), [Schematron](../StructureDefinition-tddui-practitioner.sch) 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "tddui-practitioner",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner",
+  "version" : "2.4.0-ballot",
+  "name" : "TDDUIPractitioner",
+  "title" : "TDDUI Practitioner",
+  "status" : "active",
+  "date" : "2026-07-01T13:56:20+00:00",
+  "publisher" : "ANS",
+  "contact" : [{
+    "name" : "ANS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Profil de la ressource FRCorePractitionerProfile permettant de représenter un professionnel du médicosocial dans le cadre de TDDUI. Le profil AsPractitionerRoleProfile n'a pas été utilisé car il comportait trop de contraintes non présentes dans les DUI.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France (la)"
+    }]
+  }],
+  "fhirVersion" : "4.0.1",
+  "mapping" : [{
+    "identity" : "specmetier-to-TDDUIPractitioner",
+    "uri" : "https://interop.esante.gouv.fr/ig/fhir/tddui/sfe_modelisation_contenu.html",
+    "name" : "Modèle de contenu DUI"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "servd",
+    "uri" : "http://www.omg.org/spec/ServD/1.0/",
+    "name" : "ServD"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  }],
+  "kind" : "resource",
+  "abstract" : false,
+  "type" : "Practitioner",
+  "baseDefinition" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "Practitioner",
+      "path" : "Practitioner",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIPractitioner",
+        "map" : "Professionnel"
+      }]
+    },
+    {
+      "id" : "Practitioner.identifier",
+      "path" : "Practitioner.identifier",
+      "min" : 1
+    },
+    {
+      "id" : "Practitioner.identifier:idNatPs",
+      "path" : "Practitioner.identifier",
+      "sliceName" : "idNatPs",
+      "min" : 1,
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIPractitioner",
+        "map" : "idNat_PS"
+      }]
+    },
+    {
+      "id" : "Practitioner.name",
+      "path" : "Practitioner.name",
+      "max" : "1",
+      "type" : [{
+        "code" : "HumanName",
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name"]
+      }]
+    },
+    {
+      "id" : "Practitioner.name.family",
+      "path" : "Practitioner.name.family",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIPractitioner",
+        "map" : "nom"
+      }]
+    },
+    {
+      "id" : "Practitioner.name.given",
+      "path" : "Practitioner.name.given",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIPractitioner",
+        "map" : "prenom"
+      }]
+    },
+    {
+      "id" : "Practitioner.name.prefix",
+      "path" : "Practitioner.name.prefix",
+      "mapping" : [{
+        "identity" : "specmetier-to-TDDUIPractitioner",
+        "map" : "civilite"
+      }]
+    }]
+  }
+}
+
+```
