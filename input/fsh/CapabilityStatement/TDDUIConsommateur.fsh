@@ -24,24 +24,24 @@ Usage: #definition
 * rest.resource[=].supportedProfile[+] = Canonical(tddui-patient-ins)
 * rest.resource[=].interaction[0].code = #read
 
-* rest.resource[1].type = #Organization
+* rest.resource[+].type = #Organization
 * rest.resource[=].supportedProfile = Canonical(tddui-organization)
 * rest.resource[=].interaction[0].code = #read
 
-* rest.resource[2].type = #Encounter
+* rest.resource[+].type = #Encounter
 * rest.resource[=].supportedProfile = Canonical(tddui-encounter-sejour)
 * rest.resource[=].supportedProfile[+] = Canonical(tddui-encounter-evenement)
 * rest.resource[=].interaction[0].code = #read
 
-* rest.resource[3].type = #Practitioner
+* rest.resource[+].type = #Practitioner
 * rest.resource[=].supportedProfile = Canonical(tddui-practitioner)
 * rest.resource[=].interaction[0].code = #read
 
-* rest.resource[4].type = #PractitionerRole
+* rest.resource[+].type = #PractitionerRole
 * rest.resource[=].supportedProfile = Canonical(tddui-practitioner-role)
 * rest.resource[=].interaction[0].code = #read
 
-* rest.resource[5].type = #Task
+* rest.resource[+].type = #Task
 * rest.resource[=].supportedProfile[0] = Canonical(tddui-task-transport-professionnel)
 * rest.resource[=].supportedProfile[+] = Canonical(tddui-task-transport-usager)
 * rest.resource[=].supportedProfile[+] = Canonical(tddui-task-action)
@@ -50,53 +50,53 @@ Usage: #definition
 * rest.resource[=].supportedProfile[+] = Canonical(tddui-task-prestation)
 * rest.resource[=].interaction[0].code = #read
 
-* rest.resource[6].type = #QuestionnaireResponse
+* rest.resource[+].type = #QuestionnaireResponse
 * rest.resource[=].supportedProfile = Canonical(tddui-questionnaire-response)
 * rest.resource[=].interaction[0].code = #read
 
-* rest.resource[7].type = #DocumentReference
+* rest.resource[+].type = #DocumentReference
 * rest.resource[=].supportedProfile = Canonical(tddui-document-reference)
 * rest.resource[=].interaction[0].code = #read
 
-* rest.resource[8].type = #CarePlan
+* rest.resource[+].type = #CarePlan
 * rest.resource[=].supportedProfile = Canonical(tddui-careplan-projet-personnalise)
 * rest.resource[=].interaction[0].code = #read
 
-* rest.resource[9].type = #Consent
+* rest.resource[+].type = #Consent
 * rest.resource[=].supportedProfile = Canonical(tddui-consent-accord)
 * rest.resource[=].interaction[0].code = #read
 
-* rest.resource[10].type = #Goal
+* rest.resource[+].type = #Goal
 * rest.resource[=].supportedProfile[0] = Canonical(tddui-goal-attente)
 * rest.resource[=].supportedProfile[+] = Canonical(tddui-goal-objectif)
 * rest.resource[=].supportedProfile[+] = Canonical(tddui-goal-projet-vie)
 * rest.resource[=].interaction[0].code = #read
 
-* rest.resource[11].type = #ServiceRequest
+* rest.resource[+].type = #ServiceRequest
 * rest.resource[=].supportedProfile[0] = Canonical(tddui-service-request-besoin)
 * rest.resource[=].supportedProfile[+] = Canonical(tddui-service-request-demande-orientation)
 * rest.resource[=].interaction[0].code = #read
 
-* rest.resource[12].type = #RelatedPerson
+* rest.resource[+].type = #RelatedPerson
 * rest.resource[=].supportedProfile = Canonical(tddui-related-person-contact)
 * rest.resource[=].interaction[0].code = #read
 
-* rest.resource[13].type = #Observation
+* rest.resource[+].type = #Observation
 * rest.resource[=].supportedProfile[0] = Canonical(tddui-observation-cause-mortalite)
 * rest.resource[=].supportedProfile[+] = Canonical(tddui-observation-periode-scolaire)
 * rest.resource[=].supportedProfile[+] = Canonical(tddui-observation-mobilite-usager)
 * rest.resource[=].supportedProfile[+] = Canonical(tddui-observation-repas)
 * rest.resource[=].interaction[0].code = #read
 
-* rest.resource[14].type = #Schedule
+* rest.resource[+].type = #Schedule
 * rest.resource[=].supportedProfile = Canonical(tddui-schedule)
 * rest.resource[=].interaction[0].code = #read
 
-* rest.resource[15].type = #Slot
+* rest.resource[+].type = #Slot
 * rest.resource[=].supportedProfile = Canonical(tddui-slot-presence-absence)
 * rest.resource[=].interaction[0].code = #read
 
-* rest.resource[14].type = #Basic
+* rest.resource[+].type = #Basic
 * rest.resource[=].supportedProfile = Canonical(tddui-basic-decision)
 * rest.resource[=].interaction[0].code = #read
 
