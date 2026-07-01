@@ -518,7 +518,7 @@ XML Profile
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;TDDUIDecision&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;TDDUI Decision&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2026-07-01T08:54:05+00:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2026-07-01T10:22:46+00:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ANS&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ANS&quot;/&gt;
@@ -593,7 +593,7 @@ XML Profile
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>
                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;La motivation locale doit être renseignée si la motivation de la décision est '9999' (Autre).&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;(extension.where(url='motivation').value.ofType(CodeableConcept).coding.where(code='9999').exists()) implies (extension.where(url='motivationLocale').value.ofType(String).exists())&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;(extension.where(url='motivation').value.ofType(CodeableConcept).coding.where(code='9999').exists()) implies (extension.where(url='motivationLocale').value.ofType(string).exists())&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
                 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision&quot;/&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
@@ -7313,7 +7313,7 @@ XML Profile
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>
                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;La motivation locale doit être renseignée si la motivation de la décision est '9999' (Autre).&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;(extension.where(url='motivation').value.ofType(CodeableConcept).coding.where(code='9999').exists()) implies (extension.where(url='motivationLocale').value.ofType(String).exists())&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;(extension.where(url='motivation').value.ofType(CodeableConcept).coding.where(code='9999').exists()) implies (extension.where(url='motivationLocale').value.ofType(string).exists())&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
                 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision&quot;/&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
@@ -8337,7 +8337,7 @@ XML Profile
           IG © 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  
           Package ans.fhir.fr.tddui#2.4.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-07-01 08:54:00 +0000">
+  <span title="2026-07-01 10:22:00 +0000">
     2026-07-01
   </span>
 

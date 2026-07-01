@@ -35,7 +35,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-meal.csv), 
   "name" : "TDDUIMeal",
   "title" : "TDDUI Meal",
   "status" : "active",
-  "date" : "2026-07-01T08:54:05+00:00",
+  "date" : "2026-07-01T10:22:46+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
