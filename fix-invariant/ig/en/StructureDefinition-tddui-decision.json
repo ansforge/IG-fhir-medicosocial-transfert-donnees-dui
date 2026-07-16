@@ -11,7 +11,7 @@
   "name" : "TDDUIDecision",
   "title" : "TDDUI Decision",
   "status" : "active",
-  "date" : "2026-07-16T12:36:44+00:00",
+  "date" : "2026-07-16T13:49:33+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -1191,14 +1191,14 @@
         "key" : "PrecisionOrientationValues7.8",
         "severity" : "error",
         "human" : "Si typeDroitPrestation = '7.8' (Orientation vers un Service d'éducation spéciale et de soins à domicile (SESSAD)) alors precisionOrientation doit être entre '1' et\n '6'",
-        "expression" : "(extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.where(code='7.8').exists()) implies ((extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code.toInteger()>=1).exists()) and (extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code.toInteger()<=6).exists()))",
+        "expression" : "(extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.where(code='7.8').exists())\nimplies\n(  extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(\n    code='1' or code='2' or code='3' or code='4' or code='5' or code='6'\n  ).exists()\n)",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision"
       },
       {
         "key" : "PrecisionOrientationValues7.9",
         "severity" : "error",
         "human" : "Si typeDroitPrestation = '7.9' (Orientation vers un Service d'accompagnement familial et d'éducation précoce (SAFEP)) alors precisionOrientation doit être entre '7' et '8'",
-        "expression" : "(extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.where(code='7.9').exists()) implies ((extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code.toInteger()>=7).exists()) and (extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code.toInteger()<=8).exists()))",
+        "expression" : "(extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.where(code='7.9').exists())\n implies\n (extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code='7' or code='8').exists())",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision"
       },
       {
@@ -1212,7 +1212,7 @@
         "key" : "PrecisionOrientationValues8.3",
         "severity" : "error",
         "human" : "Si typeDroitPrestation = '8.3' (Orientation en Enseignement adapté (SEGPA/EREA)) alors precisionOrientation doit être entre '9' et '10' ",
-        "expression" : "(extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.where(code='8.3').exists()) implies ((extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code.toInteger()>=9).exists()) and (extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code.toInteger()<=10).exists()))",
+        "expression" : "(extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.where(code='8.3').exists())\n implies\n  (extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code='9' or code='10').exists())",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision"
       },
       {
@@ -6663,14 +6663,14 @@
         "key" : "PrecisionOrientationValues7.8",
         "severity" : "error",
         "human" : "Si typeDroitPrestation = '7.8' (Orientation vers un Service d'éducation spéciale et de soins à domicile (SESSAD)) alors precisionOrientation doit être entre '1' et\n '6'",
-        "expression" : "(extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.where(code='7.8').exists()) implies ((extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code.toInteger()>=1).exists()) and (extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code.toInteger()<=6).exists()))",
+        "expression" : "(extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.where(code='7.8').exists())\nimplies\n(  extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(\n    code='1' or code='2' or code='3' or code='4' or code='5' or code='6'\n  ).exists()\n)",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision"
       },
       {
         "key" : "PrecisionOrientationValues7.9",
         "severity" : "error",
         "human" : "Si typeDroitPrestation = '7.9' (Orientation vers un Service d'accompagnement familial et d'éducation précoce (SAFEP)) alors precisionOrientation doit être entre '7' et '8'",
-        "expression" : "(extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.where(code='7.9').exists()) implies ((extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code.toInteger()>=7).exists()) and (extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code.toInteger()<=8).exists()))",
+        "expression" : "(extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.where(code='7.9').exists())\n implies\n (extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code='7' or code='8').exists())",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision"
       },
       {
@@ -6684,7 +6684,7 @@
         "key" : "PrecisionOrientationValues8.3",
         "severity" : "error",
         "human" : "Si typeDroitPrestation = '8.3' (Orientation en Enseignement adapté (SEGPA/EREA)) alors precisionOrientation doit être entre '9' et '10' ",
-        "expression" : "(extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.where(code='8.3').exists()) implies ((extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code.toInteger()>=9).exists()) and (extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code.toInteger()<=10).exists()))",
+        "expression" : "(extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.where(code='8.3').exists())\n implies\n  (extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code='9' or code='10').exists())",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision"
       },
       {

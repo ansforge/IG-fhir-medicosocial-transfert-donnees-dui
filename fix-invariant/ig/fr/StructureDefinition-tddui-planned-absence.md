@@ -65,7 +65,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-tddui-planned-a
   "name" : "TDDUIPlannedAbsence",
   "title" : "TDDUI Planned Absence",
   "status" : "active",
-  "date" : "2026-07-16T12:36:44+00:00",
+  "date" : "2026-07-16T13:49:33+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
