@@ -41,7 +41,7 @@ Cette structure est dérivée de [Basic](http://hl7.org/fhir/R4/basic.html)
 
 ** Résumé **
 
-Obligatoire : 5 éléments(12 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 7 éléments(12 éléments obligatoire(s) imbriqué(s))
 
 **Structures**
 
@@ -85,7 +85,7 @@ Cette structure est dérivée de [Basic](http://hl7.org/fhir/R4/basic.html)
 
 ** Résumé **
 
-Obligatoire : 5 éléments(12 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 7 éléments(12 éléments obligatoire(s) imbriqué(s))
 
 **Structures**
 
@@ -122,7 +122,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-tddui-basic-dec
   "name" : "TDDUIBasicDecision",
   "title" : "TDDUI Basic Decision",
   "status" : "active",
-  "date" : "2026-07-16T12:11:00+00:00",
+  "date" : "2026-07-16T12:36:44+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -193,13 +193,14 @@ Autres représentations du profil : [CSV](../StructureDefinition-tddui-basic-dec
         }],
         "ordered" : false,
         "rules" : "open"
-      }
+      },
+      "min" : 1
     },
     {
       "id" : "Basic.extension:TDDUIDecision",
       "path" : "Basic.extension",
       "sliceName" : "TDDUIDecision",
-      "min" : 0,
+      "min" : 1,
       "max" : "1",
       "type" : [{
         "code" : "Extension",

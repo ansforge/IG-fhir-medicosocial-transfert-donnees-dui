@@ -35,7 +35,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-related-per
   "name" : "TDDUIRelatedPersonContact",
   "title" : "TDDUI RelatedPerson Contact",
   "status" : "active",
-  "date" : "2026-07-16T12:11:00+00:00",
+  "date" : "2026-07-16T12:36:44+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

@@ -76,7 +76,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-tddui-comment.c
   "name" : "TDDUIComment",
   "title" : "TDDUI Comment",
   "status" : "active",
-  "date" : "2026-07-16T12:11:00+00:00",
+  "date" : "2026-07-16T12:36:44+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

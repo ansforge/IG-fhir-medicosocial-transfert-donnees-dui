@@ -12,6 +12,7 @@
   <sch:pattern>
     <sch:title>f:Basic</sch:title>
     <sch:rule context="f:Basic">
+      <sch:assert test="count(f:extension[@url = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision']) &gt;= 1">extension with URL = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision']) &lt;= 1">extension with URL = 'https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
