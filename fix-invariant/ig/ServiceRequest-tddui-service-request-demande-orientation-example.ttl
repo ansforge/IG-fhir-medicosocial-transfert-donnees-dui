@@ -1,0 +1,51 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/tddui/ServiceRequest/tddui-service-request-demande-orientation-example> a fhir:ServiceRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "tddui-service-request-demande-orientation-example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-demande-orientation" ;
+       fhir:index 0 ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-demande-orientation>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : DemandeService tddui-service-request-demande-orientation-example</b></p><a name=\"tddui-service-request-demande-orientation-example\"> </a><a name=\"hctddui-service-request-demande-orientation-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-service-request-demande-orientation.html\">TDDUI ServiceRequest DemandeOrientation</a></p></div><p><b>identifier</b>: Identifiant de la demande d'orientation/1234</p><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>subject</b>: <a href=\"Patient-tddui-pp-pa-patient-example-pp.html\">Jeanne L. (official) Female, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/123456789)</a></p><p><b>occurrence</b>: 2020-01-01 --&gt; 2020-01-31</p></div><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest tddui-service-request-demande-orientation-example</b></p><a name=\"en-tddui-service-request-demande-orientation-example\"> </a><a name=\"en-hctddui-service-request-demande-orientation-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tddui-service-request-demande-orientation.html\">TDDUI ServiceRequest DemandeOrientation</a></p></div><p><b>identifier</b>: Identifiant de la demande d'orientation/1234</p><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>subject</b>: <a href=\"Patient-tddui-pp-pa-patient-example-pp.html\">Jeanne L. (official) Female, DoB: 1947-04-03 ( Patient internal identifier: 3480787529/123456789)</a></p><p><b>occurrence</b>: 2020-01-01 --&gt; 2020-01-31</p></div></div>"
+  ] ;
+  fhir:ServiceRequest.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-service-request-identifier" ] ;
+         fhir:Coding.code [ fhir:value "DEMANDE_ORIENTATION" ]
+       ]
+     ] ;
+     fhir:Identifier.system [ fhir:value "urn:uuid:53fefa32-fcbb-4ff8-8a92-55ee120877b7" ] ;
+     fhir:Identifier.value [ fhir:value "1234" ]
+  ] ;
+  fhir:ServiceRequest.status [ fhir:value "active"] ;
+  fhir:ServiceRequest.intent [ fhir:value "plan"] ;
+  fhir:ServiceRequest.subject [
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-pp-pa-patient-example-pp> ;
+     fhir:Reference.reference [ fhir:value "Patient/tddui-pp-pa-patient-example-pp" ]
+  ] ;
+  fhir:ServiceRequest.occurrencePeriod [
+     fhir:Period.start [ fhir:value "2020-01-01"^^xsd:date ] ;
+     fhir:Period.end [ fhir:value "2020-01-31"^^xsd:date ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/tddui/ServiceRequest/tddui-service-request-demande-orientation-example.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

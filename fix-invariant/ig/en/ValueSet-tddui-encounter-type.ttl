@@ -1,0 +1,85 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-type> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "tddui-encounter-type"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/StructureDefinition/shareablevalueset" ;
+       fhir:index -1 ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/shareablevalueset>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ValueSet tddui-encounter-type</b></p><a name=\"en-tddui-encounter-type\"> </a><a name=\"en-hctddui-encounter-type\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/R4/shareablevalueset.html\">Shareable ValueSet</a></p></div><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"https://hl7.fr/ig/fhir/core/2.1.0/ValueSet-fr-core-vs-encounter-type.html\">FR Core ValueSet Encounter type</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-tddui-serafin.html\">TDDUI SERAFIN</a></li><li>Import all the codes that are contained in <a href=\"https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-type-evenement-ssiad-cisis.html\">JDV Type Evenement Ssiad CISIS</a></li><li>Include all codes defined in <a href=\"http://terminology.hl7.org/7.2.0/CodeSystem-data-absent-reason.html\"><code>http://terminology.hl7.org/CodeSystem/data-absent-reason</code></a><span title=\"Version is explicitly stated to be 1.0.0\"> version ?1.0.0</span></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-type"] ;
+  fhir:ValueSet.version [ fhir:value "2.4.0-ballot"] ;
+  fhir:ValueSet.name [ fhir:value "TDDUIEncounterType"] ;
+  fhir:ValueSet.title [ fhir:value "TDDUI Encounter Type"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-07-16T12:11:00+00:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "ANS"] ;
+  fhir:ValueSet.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "ANS" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://esante.gouv.fr" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "ValueSet pour la définition des codes de type de séjour"] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ] ;
+       fhir:Coding.display [ fhir:value "France (la)" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.valueSet [
+         fhir:value "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-type" ;
+         fhir:index -1 ;
+         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-type>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.valueSet [
+         fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-serafin" ;
+         fhir:index -1 ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-serafin>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.valueSet [
+         fhir:value "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-evenement-ssiad-cisis" ;
+         fhir:index -1 ;
+         fhir:link <https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-evenement-ssiad-cisis>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://terminology.hl7.org/CodeSystem/data-absent-reason" ] ;
+       fhir:ValueSet.compose.include.version [ fhir:value "1.0.0" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-type.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
