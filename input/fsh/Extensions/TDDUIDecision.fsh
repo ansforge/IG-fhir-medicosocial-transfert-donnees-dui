@@ -206,13 +206,19 @@ Invariant: PrecisionOrientationValues7.8
 Description: "Si typeDroitPrestation = '7.8' (Orientation vers un Service d'éducation spéciale et de soins à domicile (SESSAD)) alors precisionOrientation doit être entre '1' et
  '6'"
 Severity: #error
-Expression: "(extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.where(code='7.8').exists()) implies ((extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code.toInteger()>=1).exists()) and (extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code.toInteger()<=6).exists()))"
-
+Expression: "(extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.where(code='7.8').exists())
+implies
+(  extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(
+    code='1' or code='2' or code='3' or code='4' or code='5' or code='6'
+  ).exists()
+)"
 
 Invariant: PrecisionOrientationValues7.9
 Description: "Si typeDroitPrestation = '7.9' (Orientation vers un Service d'accompagnement familial et d'éducation précoce (SAFEP)) alors precisionOrientation doit être entre '7' et '8'"
 Severity: #error
-Expression: "(extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.where(code='7.9').exists()) implies ((extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code.toInteger()>=7).exists()) and (extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code.toInteger()<=8).exists()))"
+Expression: "(extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.where(code='7.9').exists())
+ implies
+ (extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code='7' or code='8').exists())"
 
 Invariant: PrecisionOrientationValues13.1-13.2
 Description: "Si typeDroitPrestation = '13.1' (Orientation vers un établissement d'accueil non médicalisé) ou '13.2' (Orientation vers un établissement d'accueil médicalisé en tout ou partie) alors precisionOrientation est interdit"
@@ -222,7 +228,9 @@ Expression: "((extension.where(url='typeDroitPrestation').value.ofType(CodeableC
 Invariant: PrecisionOrientationValues8.3
 Description: "Si typeDroitPrestation = '8.3' (Orientation en Enseignement adapté (SEGPA/EREA)) alors precisionOrientation doit être entre '9' et '10' "
 Severity: #error
-Expression: "(extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.where(code='8.3').exists()) implies ((extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code.toInteger()>=9).exists()) and (extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code.toInteger()<=10).exists()))"
+Expression: "(extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.where(code='8.3').exists())
+ implies
+  (extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code='9' or code='10').exists())"
 
 Invariant: PrecisionOrientationValues8.6
 Description: "Si typeDroitPrestation = '8.6' (Orientation en Unité d'enseignement) alors precisionOrientation = 'UEA' (Unité d'enseignement élémentaire autisme) ou 'UEM' (Unité d'enseignement en maternelle plan autisme)."
