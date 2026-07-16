@@ -59,7 +59,7 @@ Description: "Profil de la ressource Basic permettant de représenter la décisi
 * identifier[numeroAllocataire].system = "https://identifiant-medicosocial-numallocataire.esante.gouv.fr/"
 * identifier[numeroAllocataire].value 1..1
 
-* extension contains TDDUIDecision named TDDUIDecision 0..1
+* extension contains TDDUIDecision named TDDUIDecision 1..1
 
 
 
