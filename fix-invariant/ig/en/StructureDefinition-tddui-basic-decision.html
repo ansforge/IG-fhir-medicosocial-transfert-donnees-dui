@@ -1467,7 +1467,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-tddui-service-request-demande-orientation.html">TDDUI ServiceRequest DemandeOrientation</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Identifies the focus of this resource</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 743baa0a-0c3d-46d9-acec-79a10bad6d1c
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 3915aa35-c9b4-48b8-9bf5-9f21533733f7
 document.getElementById('cbtddui-basic-decisionK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('tddui-basic-decisionK'), 'binding', document.getElementById('cbtddui-basic-decisionK-binding').checked, document.getElementById('pptddui-basic-decisionK'));
 document.getElementById('cbtddui-basic-decisionK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1742,11 +1742,14 @@ filterDesc(document.getElementById('tddui-basic-decisionK'), 'obligation', docum
     <td>Si typeDroitPrestation = '7.8' (Orientation vers un Service d'éducation spéciale et de soins à domicile (SESSAD)) alors precisionOrientation doit être entre '1' et
  '6'</td>
     <td>
-      <code>(extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.where(code='7.8').exists())
+      <code>(
+  extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.where(code='7.8').exists()
+  and
+  extension.where(url='detailPrestation').extension.where(url='precisionOrientation').exists()
+)
 implies
-(  extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(
-    code='1' or code='2' or code='3' or code='4' or code='5' or code='6'
-  ).exists()
+(
+  extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code='1' or code='2' or code='3' or code='4' or code='5' or code='6').exists()
 )</code>
     </td>
   </tr>
@@ -1756,9 +1759,15 @@ implies
     <td>Basic.extension:TDDUIDecision.extension:droitPrestation</td>
     <td>Si typeDroitPrestation = '7.9' (Orientation vers un Service d'accompagnement familial et d'éducation précoce (SAFEP)) alors precisionOrientation doit être entre '7' et '8'</td>
     <td>
-      <code>(extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.where(code='7.9').exists())
- implies
- (extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code='7' or code='8').exists())</code>
+      <code>(
+  extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.where(code='7.9').exists()
+  and
+  extension.where(url='detailPrestation').extension.where(url='precisionOrientation').exists()
+)
+implies
+(
+  extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code='7' or code='8').exists()
+)</code>
     </td>
   </tr>
   <tr>
@@ -1767,9 +1776,15 @@ implies
     <td>Basic.extension:TDDUIDecision.extension:droitPrestation</td>
     <td>Si typeDroitPrestation = '8.3' (Orientation en Enseignement adapté (SEGPA/EREA)) alors precisionOrientation doit être entre '9' et '10' </td>
     <td>
-      <code>(extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.where(code='8.3').exists())
- implies
-  (extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code='9' or code='10').exists())</code>
+      <code>(
+  extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.where(code='8.3').exists()
+  and
+  extension.where(url='detailPrestation').extension.where(url='precisionOrientation').exists()
+)
+implies
+(
+  extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code='9' or code='10').exists()
+)</code>
     </td>
   </tr>
   <tr>
@@ -1778,7 +1793,15 @@ implies
     <td>Basic.extension:TDDUIDecision.extension:droitPrestation</td>
     <td>Si typeDroitPrestation = '8.6' (Orientation en Unité d'enseignement) alors precisionOrientation = 'UEA' (Unité d'enseignement élémentaire autisme) ou 'UEM' (Unité d'enseignement en maternelle plan autisme).</td>
     <td>
-      <code>(extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.where(code='8.6').exists()) implies ((extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code='UEA').exists()) or (extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code='UEM').exists()))</code>
+      <code>(
+  extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.where(code='8.6').exists()
+  and
+  extension.where(url='detailPrestation').extension.where(url='precisionOrientation').exists()
+)
+implies
+(
+  extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code='UEA' or code='UEM').exists()
+)</code>
     </td>
   </tr>
   <tr>
@@ -2410,7 +2433,7 @@ implies
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-tddui-service-request-demande-orientation.html">TDDUI ServiceRequest DemandeOrientation</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Identifies the focus of this resource</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 743baa0a-0c3d-46d9-acec-79a10bad6d1c
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 3915aa35-c9b4-48b8-9bf5-9f21533733f7
 document.getElementById('cbtddui-basic-decisionD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('tddui-basic-decisionD'), 'binding', document.getElementById('cbtddui-basic-decisionD-binding').checked, document.getElementById('pptddui-basic-decisionD'));
 document.getElementById('cbtddui-basic-decisionD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -4093,7 +4116,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a> | <a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a> | <a href="http://hl7.org/fhir/R4/patient.html">Patient</a> | <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a> | <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Who created</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 743baa0a-0c3d-46d9-acec-79a10bad6d1c
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 3915aa35-c9b4-48b8-9bf5-9f21533733f7
 document.getElementById('cbtddui-basic-decisionS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('tddui-basic-decisionS'), 'binding', document.getElementById('cbtddui-basic-decisionS-binding').checked, document.getElementById('pptddui-basic-decisionS'));
 document.getElementById('cbtddui-basic-decisionS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -4564,11 +4587,14 @@ filterDesc(document.getElementById('tddui-basic-decisionS'), 'obligation', docum
     <td>Si typeDroitPrestation = '7.8' (Orientation vers un Service d'éducation spéciale et de soins à domicile (SESSAD)) alors precisionOrientation doit être entre '1' et
  '6'</td>
     <td>
-      <code>(extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.where(code='7.8').exists())
+      <code>(
+  extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.where(code='7.8').exists()
+  and
+  extension.where(url='detailPrestation').extension.where(url='precisionOrientation').exists()
+)
 implies
-(  extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(
-    code='1' or code='2' or code='3' or code='4' or code='5' or code='6'
-  ).exists()
+(
+  extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code='1' or code='2' or code='3' or code='4' or code='5' or code='6').exists()
 )</code>
     </td>
   </tr>
@@ -4578,9 +4604,15 @@ implies
     <td>Basic.extension:TDDUIDecision.extension:droitPrestation</td>
     <td>Si typeDroitPrestation = '7.9' (Orientation vers un Service d'accompagnement familial et d'éducation précoce (SAFEP)) alors precisionOrientation doit être entre '7' et '8'</td>
     <td>
-      <code>(extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.where(code='7.9').exists())
- implies
- (extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code='7' or code='8').exists())</code>
+      <code>(
+  extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.where(code='7.9').exists()
+  and
+  extension.where(url='detailPrestation').extension.where(url='precisionOrientation').exists()
+)
+implies
+(
+  extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code='7' or code='8').exists()
+)</code>
     </td>
   </tr>
   <tr>
@@ -4589,9 +4621,15 @@ implies
     <td>Basic.extension:TDDUIDecision.extension:droitPrestation</td>
     <td>Si typeDroitPrestation = '8.3' (Orientation en Enseignement adapté (SEGPA/EREA)) alors precisionOrientation doit être entre '9' et '10' </td>
     <td>
-      <code>(extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.where(code='8.3').exists())
- implies
-  (extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code='9' or code='10').exists())</code>
+      <code>(
+  extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.where(code='8.3').exists()
+  and
+  extension.where(url='detailPrestation').extension.where(url='precisionOrientation').exists()
+)
+implies
+(
+  extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code='9' or code='10').exists()
+)</code>
     </td>
   </tr>
   <tr>
@@ -4600,7 +4638,15 @@ implies
     <td>Basic.extension:TDDUIDecision.extension:droitPrestation</td>
     <td>Si typeDroitPrestation = '8.6' (Orientation en Unité d'enseignement) alors precisionOrientation = 'UEA' (Unité d'enseignement élémentaire autisme) ou 'UEM' (Unité d'enseignement en maternelle plan autisme).</td>
     <td>
-      <code>(extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.where(code='8.6').exists()) implies ((extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code='UEA').exists()) or (extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code='UEM').exists()))</code>
+      <code>(
+  extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.where(code='8.6').exists()
+  and
+  extension.where(url='detailPrestation').extension.where(url='precisionOrientation').exists()
+)
+implies
+(
+  extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code='UEA' or code='UEM').exists()
+)</code>
     </td>
   </tr>
   <tr>
@@ -5954,7 +6000,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-tddui-service-request-demande-orientation.html">TDDUI ServiceRequest DemandeOrientation</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Identifies the focus of this resource</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 743baa0a-0c3d-46d9-acec-79a10bad6d1c
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 3915aa35-c9b4-48b8-9bf5-9f21533733f7
 document.getElementById('cbtddui-basic-decisionKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('tddui-basic-decisionKA'), 'binding', document.getElementById('cbtddui-basic-decisionKA-binding').checked, document.getElementById('pptddui-basic-decisionKA'));
 document.getElementById('cbtddui-basic-decisionKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -6228,11 +6274,14 @@ filterDesc(document.getElementById('tddui-basic-decisionKA'), 'obligation', docu
     <td>Si typeDroitPrestation = '7.8' (Orientation vers un Service d'éducation spéciale et de soins à domicile (SESSAD)) alors precisionOrientation doit être entre '1' et
  '6'</td>
     <td>
-      <code>(extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.where(code='7.8').exists())
+      <code>(
+  extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.where(code='7.8').exists()
+  and
+  extension.where(url='detailPrestation').extension.where(url='precisionOrientation').exists()
+)
 implies
-(  extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(
-    code='1' or code='2' or code='3' or code='4' or code='5' or code='6'
-  ).exists()
+(
+  extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code='1' or code='2' or code='3' or code='4' or code='5' or code='6').exists()
 )</code>
     </td>
   </tr>
@@ -6242,9 +6291,15 @@ implies
     <td>Basic.extension:TDDUIDecision.extension:droitPrestation</td>
     <td>Si typeDroitPrestation = '7.9' (Orientation vers un Service d'accompagnement familial et d'éducation précoce (SAFEP)) alors precisionOrientation doit être entre '7' et '8'</td>
     <td>
-      <code>(extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.where(code='7.9').exists())
- implies
- (extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code='7' or code='8').exists())</code>
+      <code>(
+  extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.where(code='7.9').exists()
+  and
+  extension.where(url='detailPrestation').extension.where(url='precisionOrientation').exists()
+)
+implies
+(
+  extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code='7' or code='8').exists()
+)</code>
     </td>
   </tr>
   <tr>
@@ -6253,9 +6308,15 @@ implies
     <td>Basic.extension:TDDUIDecision.extension:droitPrestation</td>
     <td>Si typeDroitPrestation = '8.3' (Orientation en Enseignement adapté (SEGPA/EREA)) alors precisionOrientation doit être entre '9' et '10' </td>
     <td>
-      <code>(extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.where(code='8.3').exists())
- implies
-  (extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code='9' or code='10').exists())</code>
+      <code>(
+  extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.where(code='8.3').exists()
+  and
+  extension.where(url='detailPrestation').extension.where(url='precisionOrientation').exists()
+)
+implies
+(
+  extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code='9' or code='10').exists()
+)</code>
     </td>
   </tr>
   <tr>
@@ -6264,7 +6325,15 @@ implies
     <td>Basic.extension:TDDUIDecision.extension:droitPrestation</td>
     <td>Si typeDroitPrestation = '8.6' (Orientation en Unité d'enseignement) alors precisionOrientation = 'UEA' (Unité d'enseignement élémentaire autisme) ou 'UEM' (Unité d'enseignement en maternelle plan autisme).</td>
     <td>
-      <code>(extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.where(code='8.6').exists()) implies ((extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code='UEA').exists()) or (extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code='UEM').exists()))</code>
+      <code>(
+  extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.where(code='8.6').exists()
+  and
+  extension.where(url='detailPrestation').extension.where(url='precisionOrientation').exists()
+)
+implies
+(
+  extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code='UEA' or code='UEM').exists()
+)</code>
     </td>
   </tr>
   <tr>
@@ -6896,7 +6965,7 @@ implies
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-tddui-service-request-demande-orientation.html">TDDUI ServiceRequest DemandeOrientation</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Identifies the focus of this resource</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 743baa0a-0c3d-46d9-acec-79a10bad6d1c
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 3915aa35-c9b4-48b8-9bf5-9f21533733f7
 document.getElementById('cbtddui-basic-decisionDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('tddui-basic-decisionDA'), 'binding', document.getElementById('cbtddui-basic-decisionDA-binding').checked, document.getElementById('pptddui-basic-decisionDA'));
 document.getElementById('cbtddui-basic-decisionDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -8576,7 +8645,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a> | <a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a> | <a href="http://hl7.org/fhir/R4/patient.html">Patient</a> | <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a> | <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Who created</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 743baa0a-0c3d-46d9-acec-79a10bad6d1c
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 3915aa35-c9b4-48b8-9bf5-9f21533733f7
 document.getElementById('cbtddui-basic-decisionSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('tddui-basic-decisionSA'), 'binding', document.getElementById('cbtddui-basic-decisionSA-binding').checked, document.getElementById('pptddui-basic-decisionSA'));
 document.getElementById('cbtddui-basic-decisionSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -9045,11 +9114,14 @@ filterDesc(document.getElementById('tddui-basic-decisionSA'), 'obligation', docu
     <td>Si typeDroitPrestation = '7.8' (Orientation vers un Service d'éducation spéciale et de soins à domicile (SESSAD)) alors precisionOrientation doit être entre '1' et
  '6'</td>
     <td>
-      <code>(extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.where(code='7.8').exists())
+      <code>(
+  extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.where(code='7.8').exists()
+  and
+  extension.where(url='detailPrestation').extension.where(url='precisionOrientation').exists()
+)
 implies
-(  extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(
-    code='1' or code='2' or code='3' or code='4' or code='5' or code='6'
-  ).exists()
+(
+  extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code='1' or code='2' or code='3' or code='4' or code='5' or code='6').exists()
 )</code>
     </td>
   </tr>
@@ -9059,9 +9131,15 @@ implies
     <td>Basic.extension:TDDUIDecision.extension:droitPrestation</td>
     <td>Si typeDroitPrestation = '7.9' (Orientation vers un Service d'accompagnement familial et d'éducation précoce (SAFEP)) alors precisionOrientation doit être entre '7' et '8'</td>
     <td>
-      <code>(extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.where(code='7.9').exists())
- implies
- (extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code='7' or code='8').exists())</code>
+      <code>(
+  extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.where(code='7.9').exists()
+  and
+  extension.where(url='detailPrestation').extension.where(url='precisionOrientation').exists()
+)
+implies
+(
+  extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code='7' or code='8').exists()
+)</code>
     </td>
   </tr>
   <tr>
@@ -9070,9 +9148,15 @@ implies
     <td>Basic.extension:TDDUIDecision.extension:droitPrestation</td>
     <td>Si typeDroitPrestation = '8.3' (Orientation en Enseignement adapté (SEGPA/EREA)) alors precisionOrientation doit être entre '9' et '10' </td>
     <td>
-      <code>(extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.where(code='8.3').exists())
- implies
-  (extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code='9' or code='10').exists())</code>
+      <code>(
+  extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.where(code='8.3').exists()
+  and
+  extension.where(url='detailPrestation').extension.where(url='precisionOrientation').exists()
+)
+implies
+(
+  extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code='9' or code='10').exists()
+)</code>
     </td>
   </tr>
   <tr>
@@ -9081,7 +9165,15 @@ implies
     <td>Basic.extension:TDDUIDecision.extension:droitPrestation</td>
     <td>Si typeDroitPrestation = '8.6' (Orientation en Unité d'enseignement) alors precisionOrientation = 'UEA' (Unité d'enseignement élémentaire autisme) ou 'UEM' (Unité d'enseignement en maternelle plan autisme).</td>
     <td>
-      <code>(extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.where(code='8.6').exists()) implies ((extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code='UEA').exists()) or (extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code='UEM').exists()))</code>
+      <code>(
+  extension.where(url='typeDroitPrestation').value.ofType(CodeableConcept).coding.where(code='8.6').exists()
+  and
+  extension.where(url='detailPrestation').extension.where(url='precisionOrientation').exists()
+)
+implies
+(
+  extension.where(url='detailPrestation').extension.where(url='precisionOrientation').value.ofType(CodeableConcept).coding.where(code='UEA' or code='UEM').exists()
+)</code>
     </td>
   </tr>
   <tr>
@@ -9452,7 +9544,7 @@ Summary
           IG © 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  
           Package ans.fhir.fr.tddui#2.4.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-07-16 13:49:00 +0000">
+  <span title="2026-07-16 14:55:00 +0000">
     2026-07-16
   </span>
 

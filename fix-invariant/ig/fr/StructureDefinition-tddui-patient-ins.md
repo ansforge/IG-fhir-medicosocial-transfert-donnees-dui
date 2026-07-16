@@ -123,7 +123,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-tddui-patient-i
   "name" : "TDDUIPatientINS",
   "title" : "TDDUI Patient INS",
   "status" : "active",
-  "date" : "2026-07-16T13:49:33+00:00",
+  "date" : "2026-07-16T14:55:44+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
