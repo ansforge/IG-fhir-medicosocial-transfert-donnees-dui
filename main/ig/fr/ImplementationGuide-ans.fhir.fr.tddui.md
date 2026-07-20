@@ -14,7 +14,7 @@
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2026-07-01T15:33:30+00:00",
+  "date" : "2026-07-20T07:42:46+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -53,7 +53,7 @@
     "id" : "ans_fr_terminologies",
     "uri" : "https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies",
     "packageId" : "ans.fr.terminologies",
-    "version" : "1.10.0"
+    "version" : "1.11.1"
   },
   {
     "id" : "hl7_fhir_uv_xver_r5_r4",
