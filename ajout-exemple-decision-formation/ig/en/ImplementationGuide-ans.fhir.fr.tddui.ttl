@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.name [ fhir:value "TDDUI"] ;
   fhir:ImplementationGuide.title [ fhir:value "Médicosocial - Transfert de données DUI"] ;
   fhir:ImplementationGuide.status [ fhir:value "active"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-07-21T08:38:17+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-07-21T09:07:21+00:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "ANS"] ;
   fhir:ImplementationGuide.contact [
      fhir:index -1 ;
@@ -929,6 +929,23 @@
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "TDDUI Basic Decision Example" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemple de la ressource TDDUIBasicDroitDecision" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-basic-decision" ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-basic-decision>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Basic" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Basic/tddui-basic-decision-example-invalid-code-test> ;
+         fhir:Reference.reference [ fhir:value "Basic/tddui-basic-decision-example-invalid-code-test" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TDDUI Basic Decision Example Invalid Code Test" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemple de test (temporaire, non destiné à être committé) avec un code natureDroitPrestation inexistant dans TRE-R327-TypeDecision, pour vérifier que le binding required est bien contrôlé par le validator." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-basic-decision" ;
          fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-basic-decision>

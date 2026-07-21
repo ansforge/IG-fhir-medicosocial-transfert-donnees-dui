@@ -1,11 +1,12 @@
 TDDUI : Validation Results
 =========================================
 
-err = 123, warn = 335, info = 213
+err = 125, warn = 337, info = 218
 IG Publisher Version: 2.2.10 Out of date - current version is 2.2.11
-Generated Tue Jul 21 08:44:13 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.tddui#2.4.0-ballot (canonical = https://interop.esante.gouv.fr/ig/fhir/tddui)
+Generated Tue Jul 21 09:14:29 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.tddui#2.4.0-ballot (canonical = https://interop.esante.gouv.fr/ig/fhir/tddui)
  Build Errors : 14 / 8 / 0
  /__w/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Basic-tddui-basic-decision-example : 0 / 2 / 6
+ /__w/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Basic-tddui-basic-decision-example-invalid-code-test : 2 / 2 / 6
  /__w/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Bundle-tddui-bundle-example : 0 / 14 / 53
  /__w/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Bundle-tddui-pp-ime-bundle-example : 0 / 7 / 23
  /__w/IG-fhir-medicosocial-transfert-donnees-dui/IG-fhir-medicosocial-transfert-donnees-dui/igSource/fsh-generated/resources/Bundle-tddui-pp-pa-bundle-example : 0 / 24 / 82
@@ -216,6 +217,16 @@ INFORMATION: Basic/tddui-basic-decision-example: Basic.extension[0].extension[3]
 INFORMATION: Basic/tddui-basic-decision-example: Basic.extension[0].extension[3].extension[6].extension[3].value.ofType(CodeableConcept): Reference to draft CodeSystem https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r426-orientation|20260505120000
 WARNING: Basic/tddui-basic-decision-example: Basic.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.250.1.213.7.1'
 WARNING: Basic/tddui-basic-decision-example: Basic.identifier[1].system: No definition could be found for URL value 'urn:oid:1.2.250.1.213.7.1'
+== fsh-generated/resources/Basic-tddui-basic-decision-example-invalid-code-test.json ==
+INFORMATION: Basic/tddui-basic-decision-example-invalid-code-test: Basic.extension[0].extension[1].value.ofType(CodeableConcept): Reference to draft CodeSystem https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r419-motivation|20260601120000
+INFORMATION: Basic/tddui-basic-decision-example-invalid-code-test: Basic.extension[0].extension[3].extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r420-droit-prestation|20260505120000
+INFORMATION: Basic/tddui-basic-decision-example-invalid-code-test: Basic.extension[0].extension[3].extension[1].value.ofType(CodeableConcept): Reference to draft CodeSystem https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r420-droit-prestation|20260505120000
+ERROR: Basic/tddui-basic-decision-example-invalid-code-test: Basic.extension[0].extension[3].extension[2].value.ofType(CodeableConcept).coding[0].code: Unknown code '99' in the CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_R327-TypeDecision/FHIR/TRE-R327-TypeDecision' version '20260505120000'
+INFORMATION: Basic/tddui-basic-decision-example-invalid-code-test: Basic.extension[0].extension[3].extension[6].extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r422-qualification-orientation|20260505120000
+INFORMATION: Basic/tddui-basic-decision-example-invalid-code-test: Basic.extension[0].extension[3].extension[6].extension[3].value.ofType(CodeableConcept): Reference to draft CodeSystem https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r426-orientation|20260505120000
+ERROR: Basic/tddui-basic-decision-example-invalid-code-test: Basic.extension[0].extension[3].extension[2].value.ofType(CodeableConcept): None of the codings provided are in the value set 'Jdv J400 Nature Droit Prestation Ms' (https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j400-nature-droit-prestation-ms|20260505120000), and a coding from this value set is required) (codes = https://mos.esante.gouv.fr/NOS/TRE_R327-TypeDecision/FHIR/TRE-R327-TypeDecision#99)
+WARNING: Basic/tddui-basic-decision-example-invalid-code-test: Basic.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.250.1.213.7.1'
+WARNING: Basic/tddui-basic-decision-example-invalid-code-test: Basic.identifier[1].system: No definition could be found for URL value 'urn:oid:1.2.250.1.213.7.1'
 == fsh-generated/resources/Bundle-tddui-bundle-example.json ==
 INFORMATION: Bundle/tddui-bundle-example: Bundle.entry[0].resource.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins|2.4.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Bundle/tddui-bundle-example: Bundle.entry[0].resource.extension[0].extension[0].value.ofType(Coding): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445|2.1.0
@@ -359,8 +370,8 @@ WARNING: Goal/tddui-pp-pa-goal-objectif-2-example: Goal.identifier[0].system: No
 == fsh-generated/resources/Goal-tddui-pp-pa-goal-objectif-3-example.json ==
 WARNING: Goal/tddui-pp-pa-goal-objectif-3-example: Goal.identifier[0].system: No definition could be found for URL value 'https://identifiant-medicosocial-objectif.esante.gouv.fr'
 == fsh-generated/resources/ImplementationGuide-ans.fhir.fr.tddui.json ==
-WARNING: ImplementationGuide/ans.fhir.fr.tddui: ImplementationGuide.definition.resource[17].description: value should not start or finish with whitespace '\n- **Séjour** : commentaire relatif au séjour.\n- **Événement** : commentaires sur le déroulé de l’évènement.\n- **Évaluation** : commentaire libre sur le contenu ou le résultat de l’évaluation.\n- **Champ évalué** : commentaire spécifique à un item ou sous-item évalué.'
-WARNING: ImplementationGuide/ans.fhir.fr.tddui: ImplementationGuide.definition.resource[82].description: value should not start or finish with whitespace '\n- **Événement** : évènement nécessitant ou non la présence physique de l’usager.'
+WARNING: ImplementationGuide/ans.fhir.fr.tddui: ImplementationGuide.definition.resource[18].description: value should not start or finish with whitespace '\n- **Séjour** : commentaire relatif au séjour.\n- **Événement** : commentaires sur le déroulé de l’évènement.\n- **Évaluation** : commentaire libre sur le contenu ou le résultat de l’évaluation.\n- **Champ évalué** : commentaire spécifique à un item ou sous-item évalué.'
+WARNING: ImplementationGuide/ans.fhir.fr.tddui: ImplementationGuide.definition.resource[83].description: value should not start or finish with whitespace '\n- **Événement** : évènement nécessitant ou non la présence physique de l’usager.'
 WARNING: ImplementationGuide/ans.fhir.fr.tddui: ImplementationGuide.dependsOn[1]: The ImplementationGuide uses package hl7.fhir.fr.core#2.1.0 released on 2024-09-04, but the most recent appropriate version is 2.2.0. This reference is getting old and the more recent version should be considered
 ERROR: ImplementationGuide/ans.fhir.fr.tddui: ImplementationGuide.dependsOn[4]: The ImplementationGuide is based on FHIR version 4.0.1 but package hl7.fhir.uv.extensions#5.2.0 is based on FHIR version 5.0.0. Use the package hl7.fhir.uv.extensions.r4 instead
 WARNING: ImplementationGuide/ans.fhir.fr.tddui: ImplementationGuide.dependsOn[4]: The ImplementationGuide uses package hl7.fhir.uv.extensions#5.2.0 released on 2025-02-10, but the most recent appropriate version is 5.3.0. This reference is getting old and the more recent version should be considered

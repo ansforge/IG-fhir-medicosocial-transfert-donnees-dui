@@ -11,7 +11,7 @@ Extension complexe représentant la décision et les droits associés
 **Usages:**
 
 * Use this Extension: [TDDUI Basic Decision](StructureDefinition-tddui-basic-decision.md)
-* Examples for this Extension: [Basic/tddui-basic-decision-example](Basic-tddui-basic-decision-example.md)
+* Examples for this Extension: [Basic/tddui-basic-decision-example-invalid-code-test](Basic-tddui-basic-decision-example-invalid-code-test.md) and [Basic/tddui-basic-decision-example](Basic-tddui-basic-decision-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ans.fhir.fr.tddui|current/StructureDefinition/StructureDefinition-tddui-decision.json)
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-decision.cs
   "name" : "TDDUIDecision",
   "title" : "TDDUI Decision",
   "status" : "active",
-  "date" : "2026-07-21T08:38:17+00:00",
+  "date" : "2026-07-21T09:07:21+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

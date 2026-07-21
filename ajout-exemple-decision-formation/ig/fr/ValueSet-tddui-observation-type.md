@@ -38,7 +38,7 @@ ValueSet pour les types d'Observation.
   "title" : "TDDUI Observation Type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-21T08:38:17+00:00",
+  "date" : "2026-07-21T09:07:21+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

@@ -127,7 +127,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-tddui-service-r
   "name" : "TDDUIServiceRequestDemandeOrientation",
   "title" : "TDDUI ServiceRequest DemandeOrientation",
   "status" : "active",
-  "date" : "2026-07-21T08:38:17+00:00",
+  "date" : "2026-07-21T09:07:21+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

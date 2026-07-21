@@ -8,7 +8,7 @@ Profil de la ressource Basic permettant de représenter la décision de la CDAPH
 **Usages:**
 
 * Use this Profile: [TDDUI Bundle](StructureDefinition-tddui-bundle.md)
-* Examples for this Profile: [Basic/tddui-basic-decision-example](Basic-tddui-basic-decision-example.md)
+* Examples for this Profile: [Basic/tddui-basic-decision-example-invalid-code-test](Basic-tddui-basic-decision-example-invalid-code-test.md) and [Basic/tddui-basic-decision-example](Basic-tddui-basic-decision-example.md)
 * CapabilityStatements using this Profile: [TDDUI-Consommateur](CapabilityStatement-TDDUIConsommateur.md) and [TDDUI-Producteur](CapabilityStatement-TDDUIProducteur.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ans.fhir.fr.tddui|current/StructureDefinition/StructureDefinition-tddui-basic-decision.json)
@@ -34,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-basic-decis
   "name" : "TDDUIBasicDecision",
   "title" : "TDDUI Basic Decision",
   "status" : "active",
-  "date" : "2026-07-21T08:38:17+00:00",
+  "date" : "2026-07-21T09:07:21+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

@@ -72,7 +72,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-tddui-event-can
   "name" : "TDDUIEventCancelReason",
   "title" : "TDDUI Event Cancel Reason",
   "status" : "active",
-  "date" : "2026-07-21T08:38:17+00:00",
+  "date" : "2026-07-21T09:07:21+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

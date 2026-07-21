@@ -14,7 +14,7 @@
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2026-07-21T08:38:17+00:00",
+  "date" : "2026-07-21T09:07:21+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -820,6 +820,18 @@
       },
       "name" : "TDDUI Basic Decision Example",
       "description" : "Exemple de la ressource TDDUIBasicDroitDecision",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-basic-decision"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Basic"
+      }],
+      "reference" : {
+        "reference" : "Basic/tddui-basic-decision-example-invalid-code-test"
+      },
+      "name" : "TDDUI Basic Decision Example Invalid Code Test",
+      "description" : "Exemple de test (temporaire, non destiné à être committé) avec un code natureDroitPrestation inexistant dans TRE-R327-TypeDecision, pour vérifier que le binding required est bien contrôlé par le validator.",
       "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-basic-decision"
     },
     {
