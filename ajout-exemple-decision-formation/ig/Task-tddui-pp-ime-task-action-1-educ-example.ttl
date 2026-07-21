@@ -1,0 +1,56 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/tddui/Task/tddui-pp-ime-task-action-1-educ-example> a fhir:Task ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "tddui-pp-ime-task-action-1-educ-example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action" ;
+       fhir:index 0 ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : Task tddui-pp-ime-task-action-1-educ-example</b></p><a name=\"tddui-pp-ime-task-action-1-educ-example\"> </a><a name=\"hctddui-pp-ime-task-action-1-educ-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-task-action.html\">TDDUI Task Action</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-action.esante.gouv.fr</code>/3480787529/123456-ACTI-1235</p><p><b>basedOn</b>: <a href=\"CarePlan-tddui-pp-ime-careplan-example.html\">CarePlan Projet personnalisé de Hugo en IME</a></p><p><b>status</b>: In Progress</p><p><b>intent</b>: plan</p><p><b>description</b>: Lecture guidée sur tablette 15 min/jour</p><p><b>owner</b>: AESH</p><h3>Inputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action titre}\">Titre de l'action à mener.</span></td><td>Action de l'éducateur spécialisé pour atteindre l'objectif 2</td></tr></table></div><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Task tddui-pp-ime-task-action-1-educ-example</b></p><a name=\"en-tddui-pp-ime-task-action-1-educ-example\"> </a><a name=\"en-hctddui-pp-ime-task-action-1-educ-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tddui-task-action.html\">TDDUI Task Action</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-action.esante.gouv.fr</code>/3480787529/123456-ACTI-1235</p><p><b>basedOn</b>: <a href=\"CarePlan-tddui-pp-ime-careplan-example.html\">CarePlan Projet personnalisé de Hugo en IME</a></p><p><b>status</b>: In Progress</p><p><b>intent</b>: plan</p><p><b>description</b>: Lecture guidée sur tablette 15 min/jour</p><p><b>owner</b>: AESH</p><h3>Inputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action titre}\">Titre de l'action à mener.</span></td><td>Action de l'éducateur spécialisé pour atteindre l'objectif 2</td></tr></table></div></div>"
+  ] ;
+  fhir:Task.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "https://identifiant-medicosocial-action.esante.gouv.fr" ] ;
+     fhir:Identifier.value [ fhir:value "3480787529/123456-ACTI-1235" ]
+  ] ;
+  fhir:Task.basedOn [
+     fhir:index 0 ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/CarePlan/tddui-pp-ime-careplan-example> ;
+     fhir:Reference.reference [ fhir:value "CarePlan/tddui-pp-ime-careplan-example" ]
+  ] ;
+  fhir:Task.status [ fhir:value "in-progress"] ;
+  fhir:Task.intent [ fhir:value "plan"] ;
+  fhir:Task.description [ fhir:value "Lecture guidée sur tablette 15 min/jour"] ;
+  fhir:Task.owner [
+     fhir:Reference.display [ fhir:value "AESH" ]
+  ] ;
+  fhir:Task.input [
+     fhir:index 0 ;
+     fhir:Task.input.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action" ] ;
+         fhir:Coding.code [ fhir:value "titre" ]
+       ]
+     ] ;
+     fhir:Task.input.valueString [ fhir:value "Action de l'éducateur spécialisé pour atteindre l'objectif 2" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/tddui/Task/tddui-pp-ime-task-action-1-educ-example.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
