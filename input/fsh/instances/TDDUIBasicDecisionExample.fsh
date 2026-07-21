@@ -30,7 +30,7 @@ Usage: #example
 
 * extension[TDDUIDecision].extension[droitPrestation].extension[existencePAG].valueBoolean = false
 
-//* extension[TDDUIDecision].extension[droitPrestation].extension[detailPrestation].extension[formation].valueString = "Formation pour la prestation"
+* extension[TDDUIDecision].extension[droitPrestation].extension[detailPrestation].extension[formation].valueString = "Formation pour la prestation"
 
 * extension[TDDUIDecision].extension[droitPrestation].extension[detailPrestation].extension[temporaliteAccueil].valueCodeableConcept = TRE-R240-TemporaliteAccueil#01
 
