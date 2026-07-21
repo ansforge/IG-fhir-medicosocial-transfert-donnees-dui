@@ -22,6 +22,7 @@ Usage: #example
 
 * extension[TDDUIDecision].extension[droitPrestation].extension[typeDroitPrestation].valueCodeableConcept = tre-r420-droit-prestation#7.8
 
+// Test de la valeur 6 - non présente dans 1.0.0 → 1.8.0 et présente dans 1.9.0 → 1.11.1
 * extension[TDDUIDecision].extension[droitPrestation].extension[natureDroitPrestation].valueCodeableConcept = TRE-R327-TypeDecision#6
 
 * extension[TDDUIDecision].extension[droitPrestation].extension[dateOuverture].valueDate = "2020-01-01"
