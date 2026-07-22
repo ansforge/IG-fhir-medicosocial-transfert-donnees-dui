@@ -36,7 +36,7 @@ Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (pa
   "title" : "TDDUI Goal Identifier Projet Vie",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-22T08:41:38+00:00",
+  "date" : "2026-07-22T12:30:17+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
