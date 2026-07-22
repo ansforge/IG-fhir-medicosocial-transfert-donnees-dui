@@ -1,4 +1,4 @@
-# TDDUI Patient Present - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI Patient Present - Médicosocial - Transfert de données DUI v2.4.0
 
 ## Extension: TDDUI Patient Present 
 
@@ -62,11 +62,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-tddui-patient-p
   "resourceType" : "StructureDefinition",
   "id" : "tddui-patient-present",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-present",
-  "version" : "2.4.0-ballot",
+  "version" : "2.4.0",
   "name" : "TDDUIPatientPresent",
   "title" : "TDDUI Patient Present",
   "status" : "active",
-  "date" : "2026-07-20T07:42:46+00:00",
+  "date" : "2026-07-22T13:04:03+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

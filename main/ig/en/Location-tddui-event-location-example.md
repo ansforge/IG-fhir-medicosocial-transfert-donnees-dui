@@ -1,4 +1,4 @@
-# TDDUI Event Location Example - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI Event Location Example - Médicosocial - Transfert de données DUI v2.4.0
 
 ## Example Location: TDDUI Event Location Example
 

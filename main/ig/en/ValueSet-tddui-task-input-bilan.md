@@ -1,4 +1,4 @@
-# TDDUI Task Input Bilan - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI Task Input Bilan - Médicosocial - Transfert de données DUI v2.4.0
 
 ## ValueSet: TDDUI Task Input Bilan 
 
@@ -31,12 +31,12 @@ ValueSet pour la définition des éléments spécifiques des input dans la resso
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-task-input-bilan",
-  "version" : "2.4.0-ballot",
+  "version" : "2.4.0",
   "name" : "TDDUITaskInputBilan",
   "title" : "TDDUI Task Input Bilan",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-20T07:42:46+00:00",
+  "date" : "2026-07-22T13:04:03+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

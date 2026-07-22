@@ -1,4 +1,4 @@
-# TDDUI Practitioner Role Example - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI Practitioner Role Example - Médicosocial - Transfert de données DUI v2.4.0
 
 ## Exemple PractitionerRole: TDDUI Practitioner Role Example
 

@@ -1,4 +1,4 @@
-# TDDUI Goal Objectif Note - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI Goal Objectif Note - Médicosocial - Transfert de données DUI v2.4.0
 
 ## ValueSet: TDDUI Goal Objectif Note 
 
@@ -31,12 +31,12 @@ ValueSet définissant les types de notes pour l'élément Goal.note.
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-goal-objectif-note",
-  "version" : "2.4.0-ballot",
+  "version" : "2.4.0",
   "name" : "TDDUIGoalObjectifNote",
   "title" : "TDDUI Goal Objectif Note",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-20T07:42:46+00:00",
+  "date" : "2026-07-22T13:04:03+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

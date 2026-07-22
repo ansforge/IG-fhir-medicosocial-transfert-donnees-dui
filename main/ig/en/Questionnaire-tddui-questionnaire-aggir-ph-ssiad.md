@@ -1,4 +1,4 @@
-# Évaluation AGGIR PH SSIAD - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# Évaluation AGGIR PH SSIAD - Médicosocial - Transfert de données DUI v2.4.0
 
 ## Questionnaire: Évaluation AGGIR PH SSIAD 
 
@@ -24,10 +24,10 @@ Grille d'évaluation AGGIR PH SSIAD
   "resourceType" : "Questionnaire",
   "id" : "tddui-questionnaire-aggir-ph-ssiad",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/Questionnaire/tddui-questionnaire-aggir-ph-ssiad",
-  "version" : "2.4.0-ballot",
+  "version" : "2.4.0",
   "title" : "Évaluation AGGIR PH SSIAD",
   "status" : "active",
-  "date" : "2026-07-20T07:42:46+00:00",
+  "date" : "2026-07-22T13:04:03+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

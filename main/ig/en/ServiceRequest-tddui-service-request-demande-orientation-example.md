@@ -1,4 +1,4 @@
-# TDDUI ServiceRequest DemandeOrientation Example - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI ServiceRequest DemandeOrientation Example - Médicosocial - Transfert de données DUI v2.4.0
 
 ## Example ServiceRequest: TDDUI ServiceRequest DemandeOrientation Example
 

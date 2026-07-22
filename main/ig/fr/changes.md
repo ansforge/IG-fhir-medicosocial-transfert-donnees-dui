@@ -1,6 +1,12 @@
-# Historique des changements - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# Historique des changements - Médicosocial - Transfert de données DUI v2.4.0
 
 ## Historique des changements
+
+### Release 2.4.0 de l'Implementation Guide du volet "Transfert de dossier DUI"
+
+Modifications apportées dans cette release [2.4.0](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pulls?q=is%3Apr+is%3Aclosed+milestone%3A2.4.0) :
+
+* [ANS-009-004 Fix invariant](https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/pull/494)
 
 ### Release 2.4.0-ballot de l'Implementation Guide du volet "Transfert de dossier DUI"
 

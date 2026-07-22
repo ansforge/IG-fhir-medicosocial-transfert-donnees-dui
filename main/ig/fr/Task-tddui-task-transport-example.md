@@ -1,4 +1,4 @@
-# TDDUI Task Transport Example - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI Task Transport Example - Médicosocial - Transfert de données DUI v2.4.0
 
 ## Exemple Task: TDDUI Task Transport Example
 

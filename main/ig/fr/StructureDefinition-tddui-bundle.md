@@ -1,4 +1,4 @@
-# TDDUI Bundle - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI Bundle - Médicosocial - Transfert de données DUI v2.4.0
 
 ## Profil de ressource: TDDUI Bundle 
 
@@ -154,11 +154,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-tddui-bundle.cs
   "resourceType" : "StructureDefinition",
   "id" : "tddui-bundle",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle",
-  "version" : "2.4.0-ballot",
+  "version" : "2.4.0",
   "name" : "TDDUIBundle",
   "title" : "TDDUI Bundle",
   "status" : "active",
-  "date" : "2026-07-20T07:42:46+00:00",
+  "date" : "2026-07-22T13:04:03+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

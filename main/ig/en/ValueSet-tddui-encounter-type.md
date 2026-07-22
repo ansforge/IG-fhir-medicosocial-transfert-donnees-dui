@@ -1,4 +1,4 @@
-# TDDUI Encounter Type - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI Encounter Type - Médicosocial - Transfert de données DUI v2.4.0
 
 ## ValueSet: TDDUI Encounter Type 
 
@@ -31,12 +31,12 @@ ValueSet pour la définition des codes de type de séjour
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-encounter-type",
-  "version" : "2.4.0-ballot",
+  "version" : "2.4.0",
   "name" : "TDDUIEncounterType",
   "title" : "TDDUI Encounter Type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-20T07:42:46+00:00",
+  "date" : "2026-07-22T13:04:03+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

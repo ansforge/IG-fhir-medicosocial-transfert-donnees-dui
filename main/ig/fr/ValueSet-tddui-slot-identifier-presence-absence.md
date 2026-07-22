@@ -1,4 +1,4 @@
-# TDDUI Slot Identifier Presence Absence - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI Slot Identifier Presence Absence - Médicosocial - Transfert de données DUI v2.4.0
 
 ## ValueSet: TDDUI Slot Identifier Presence Absence 
 
@@ -31,12 +31,12 @@ ValueSet définissant les types d'identifiants pour la ressource SlotPresenceAbs
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-slot-identifier-presence-absence",
-  "version" : "2.4.0-ballot",
+  "version" : "2.4.0",
   "name" : "TDDUISlotIdentifierPresenceAbsence",
   "title" : "TDDUI Slot Identifier Presence Absence",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-20T07:42:46+00:00",
+  "date" : "2026-07-22T13:04:03+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

@@ -1,4 +1,4 @@
-# TDDUI Bundle Example - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI Bundle Example - Médicosocial - Transfert de données DUI v2.4.0
 
 ## Exemple Bundle: TDDUI Bundle Example
 

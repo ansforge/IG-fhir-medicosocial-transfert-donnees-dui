@@ -1,4 +1,4 @@
-# Solutions de tests - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# Solutions de tests - Médicosocial - Transfert de données DUI v2.4.0
 
 ## Solutions de tests
 

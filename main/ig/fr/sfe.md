@@ -1,4 +1,4 @@
-# Volume 1 - Etude fonctionnelle - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# Volume 1 - Etude fonctionnelle - Médicosocial - Transfert de données DUI v2.4.0
 
 ## Volume 1 - Etude fonctionnelle
 

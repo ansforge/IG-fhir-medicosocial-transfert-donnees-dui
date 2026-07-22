@@ -1,4 +1,4 @@
-# TDDUI Questionnaire Response SERAFIN Sans Precision Example - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI Questionnaire Response SERAFIN Sans Precision Example - Médicosocial - Transfert de données DUI v2.4.0
 
 ## Example QuestionnaireResponse: TDDUI Questionnaire Response SERAFIN Sans Precision Example
 

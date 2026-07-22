@@ -1,4 +1,4 @@
-# TDDUI Discriminator - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI Discriminator - Médicosocial - Transfert de données DUI v2.4.0
 
 ## ValueSet: TDDUI Discriminator 
 
@@ -35,12 +35,12 @@ ValueSet définissant les codes discriminants.
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-discriminator",
-  "version" : "2.4.0-ballot",
+  "version" : "2.4.0",
   "name" : "TDDUIDiscriminator",
   "title" : "TDDUI Discriminator",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-20T07:42:46+00:00",
+  "date" : "2026-07-22T13:04:03+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

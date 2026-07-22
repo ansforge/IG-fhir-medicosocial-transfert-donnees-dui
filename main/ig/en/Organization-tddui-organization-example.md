@@ -1,4 +1,4 @@
-# TDDUI Organization Example - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI Organization Example - Médicosocial - Transfert de données DUI v2.4.0
 
 ## Example Organization: TDDUI Organization Example
 
