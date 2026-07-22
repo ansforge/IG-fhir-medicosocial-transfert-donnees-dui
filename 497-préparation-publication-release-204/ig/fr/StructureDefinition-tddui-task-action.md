@@ -1,4 +1,4 @@
-# TDDUI Task Action - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI Task Action - Médicosocial - Transfert de données DUI v2.4.0
 
 ## Profil de ressource: TDDUI Task Action 
 
@@ -125,11 +125,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-tddui-task-acti
   "resourceType" : "StructureDefinition",
   "id" : "tddui-task-action",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action",
-  "version" : "2.4.0-ballot",
+  "version" : "2.4.0",
   "name" : "TDDUITaskAction",
   "title" : "TDDUI Task Action",
   "status" : "active",
-  "date" : "2026-07-22T08:24:42+00:00",
+  "date" : "2026-07-22T08:41:38+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

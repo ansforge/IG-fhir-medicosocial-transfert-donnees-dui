@@ -1,4 +1,4 @@
-# TDDUI Status Author - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI Status Author - Médicosocial - Transfert de données DUI v2.4.0
 
 ## Extension: TDDUI Status Author 
 
@@ -31,11 +31,11 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-status-auth
   "resourceType" : "StructureDefinition",
   "id" : "tddui-status-author",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-status-author",
-  "version" : "2.4.0-ballot",
+  "version" : "2.4.0",
   "name" : "TDDUIStatusAuthor",
   "title" : "TDDUI Status Author",
   "status" : "active",
-  "date" : "2026-07-22T08:24:42+00:00",
+  "date" : "2026-07-22T08:41:38+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

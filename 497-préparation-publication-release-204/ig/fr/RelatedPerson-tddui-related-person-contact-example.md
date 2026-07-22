@@ -1,4 +1,4 @@
-# TDDUI Related Person Contact Example - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI Related Person Contact Example - Médicosocial - Transfert de données DUI v2.4.0
 
 ## Exemple RelatedPerson: TDDUI Related Person Contact Example
 

@@ -1,4 +1,4 @@
-# Professions du médico-social - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# Professions du médico-social - Médicosocial - Transfert de données DUI v2.4.0
 
 ## Professions du médico-social
 

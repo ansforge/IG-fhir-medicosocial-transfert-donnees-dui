@@ -1,4 +1,4 @@
-# TDDUI Observation Repas Identifier - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI Observation Repas Identifier - Médicosocial - Transfert de données DUI v2.4.0
 
 ## ValueSet: TDDUI Observation Repas Identifier 
 
@@ -31,12 +31,12 @@ ValueSet pour la définition des codes d'identifiant du repas
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-observation-identifier-repas",
-  "version" : "2.4.0-ballot",
+  "version" : "2.4.0",
   "name" : "TDDUIObservationIdentifierRepas",
   "title" : "TDDUI Observation Repas Identifier",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-22T08:24:42+00:00",
+  "date" : "2026-07-22T08:41:38+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

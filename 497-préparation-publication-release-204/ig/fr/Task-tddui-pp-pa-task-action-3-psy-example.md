@@ -1,4 +1,4 @@
-# TDDUI PP PA Task Action 3 Psy Example - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI PP PA Task Action 3 Psy Example - Médicosocial - Transfert de données DUI v2.4.0
 
 ## Exemple Task: TDDUI PP PA Task Action 3 Psy Example
 

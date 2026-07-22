@@ -1,4 +1,4 @@
-# TDDUI Task Input Moyen Ressource - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI Task Input Moyen Ressource - Médicosocial - Transfert de données DUI v2.4.0
 
 ## CodeSystem: TDDUI Task Input Moyen Ressource 
 
@@ -25,12 +25,12 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem"]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-moyen-ressource",
-  "version" : "2.4.0-ballot",
+  "version" : "2.4.0",
   "name" : "TDDUITaskInputMoyenRessource",
   "title" : "TDDUI Task Input Moyen Ressource",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-22T08:24:42+00:00",
+  "date" : "2026-07-22T08:41:38+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

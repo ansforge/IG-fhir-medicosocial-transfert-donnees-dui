@@ -1,4 +1,4 @@
-# TDDUI Patient INS Example - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI Patient INS Example - Médicosocial - Transfert de données DUI v2.4.0
 
 ## Exemple Patient: TDDUI Patient INS Example
 

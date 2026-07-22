@@ -1,4 +1,4 @@
-# TDDUI Basic Type - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI Basic Type - Médicosocial - Transfert de données DUI v2.4.0
 
 ## CodeSystem: TDDUI Basic Type 
 
@@ -25,12 +25,12 @@ This Code system is referenced in the definition of the following value sets:
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem"]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-basic-type",
-  "version" : "2.4.0-ballot",
+  "version" : "2.4.0",
   "name" : "TDDUIBasicType",
   "title" : "TDDUI Basic Type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-22T08:24:42+00:00",
+  "date" : "2026-07-22T08:41:38+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

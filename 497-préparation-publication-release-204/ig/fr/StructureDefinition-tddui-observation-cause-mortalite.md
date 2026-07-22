@@ -1,4 +1,4 @@
-# TDDUI Observation Cause Mortalite - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI Observation Cause Mortalite - Médicosocial - Transfert de données DUI v2.4.0
 
 ## Profil de ressource: TDDUI Observation Cause Mortalite 
 
@@ -104,11 +104,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-tddui-observati
   "resourceType" : "StructureDefinition",
   "id" : "tddui-observation-cause-mortalite",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-mortalite",
-  "version" : "2.4.0-ballot",
+  "version" : "2.4.0",
   "name" : "TDDUIObservationCauseMortalite",
   "title" : "TDDUI Observation Cause Mortalite",
   "status" : "active",
-  "date" : "2026-07-22T08:24:42+00:00",
+  "date" : "2026-07-22T08:41:38+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

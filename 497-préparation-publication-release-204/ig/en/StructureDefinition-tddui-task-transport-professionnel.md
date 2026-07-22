@@ -1,4 +1,4 @@
-# TDDUI Task Transport Professionnel - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI Task Transport Professionnel - Médicosocial - Transfert de données DUI v2.4.0
 
 ## Resource Profile: TDDUI Task Transport Professionnel 
 
@@ -30,11 +30,11 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-task-transp
   "resourceType" : "StructureDefinition",
   "id" : "tddui-task-transport-professionnel",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel",
-  "version" : "2.4.0-ballot",
+  "version" : "2.4.0",
   "name" : "TDDUITaskTransportProfessionnel",
   "title" : "TDDUI Task Transport Professionnel",
   "status" : "active",
-  "date" : "2026-07-22T08:24:42+00:00",
+  "date" : "2026-07-22T08:41:38+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

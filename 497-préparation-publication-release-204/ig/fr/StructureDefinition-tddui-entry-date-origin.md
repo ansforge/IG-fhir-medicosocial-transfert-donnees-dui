@@ -1,4 +1,4 @@
-# TDDUI Entry Date Origin - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI Entry Date Origin - Médicosocial - Transfert de données DUI v2.4.0
 
 ## Extension: TDDUI Entry Date Origin 
 
@@ -60,11 +60,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-tddui-entry-dat
   "resourceType" : "StructureDefinition",
   "id" : "tddui-entry-date-origin",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-date-origin",
-  "version" : "2.4.0-ballot",
+  "version" : "2.4.0",
   "name" : "TDDUIEntryDateOrigin",
   "title" : "TDDUI Entry Date Origin",
   "status" : "active",
-  "date" : "2026-07-22T08:24:42+00:00",
+  "date" : "2026-07-22T08:41:38+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

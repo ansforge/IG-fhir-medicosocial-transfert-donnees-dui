@@ -1,4 +1,4 @@
-# TDDUI ServiceRequest Besoin - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI ServiceRequest Besoin - Médicosocial - Transfert de données DUI v2.4.0
 
 ## Profil de ressource: TDDUI ServiceRequest Besoin 
 
@@ -123,11 +123,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-tddui-service-r
   "resourceType" : "StructureDefinition",
   "id" : "tddui-service-request-besoin",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin",
-  "version" : "2.4.0-ballot",
+  "version" : "2.4.0",
   "name" : "TDDUIServiceRequestBesoin",
   "title" : "TDDUI ServiceRequest Besoin",
   "status" : "active",
-  "date" : "2026-07-22T08:24:42+00:00",
+  "date" : "2026-07-22T08:41:38+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

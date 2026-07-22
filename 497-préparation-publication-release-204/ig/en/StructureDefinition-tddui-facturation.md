@@ -1,4 +1,4 @@
-# TDDUI Facturation - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI Facturation - Médicosocial - Transfert de données DUI v2.4.0
 
 ## Extension: TDDUI Facturation 
 
@@ -32,11 +32,11 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-facturation
   "resourceType" : "StructureDefinition",
   "id" : "tddui-facturation",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-facturation",
-  "version" : "2.4.0-ballot",
+  "version" : "2.4.0",
   "name" : "TDDUIFacturation",
   "title" : "TDDUI Facturation",
   "status" : "active",
-  "date" : "2026-07-22T08:24:42+00:00",
+  "date" : "2026-07-22T08:41:38+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

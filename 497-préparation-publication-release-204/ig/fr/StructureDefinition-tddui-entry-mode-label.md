@@ -1,4 +1,4 @@
-# TDDUI Entry Mode label - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI Entry Mode label - Médicosocial - Transfert de données DUI v2.4.0
 
 ## Extension: TDDUI Entry Mode label 
 
@@ -61,11 +61,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-tddui-entry-mod
   "resourceType" : "StructureDefinition",
   "id" : "tddui-entry-mode-label",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-entry-mode-label",
-  "version" : "2.4.0-ballot",
+  "version" : "2.4.0",
   "name" : "TDDUIEntryModelabel",
   "title" : "TDDUI Entry Mode label",
   "status" : "active",
-  "date" : "2026-07-22T08:24:42+00:00",
+  "date" : "2026-07-22T08:41:38+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

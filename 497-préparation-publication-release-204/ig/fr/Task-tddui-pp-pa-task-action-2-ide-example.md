@@ -1,4 +1,4 @@
-# TDDUI PP PA Task Action 2 IDE Example - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI PP PA Task Action 2 IDE Example - Médicosocial - Transfert de données DUI v2.4.0
 
 ## Exemple Task: TDDUI PP PA Task Action 2 IDE Example
 

@@ -1,4 +1,4 @@
-# TDDUI Goal Attente Note - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI Goal Attente Note - Médicosocial - Transfert de données DUI v2.4.0
 
 ## ValueSet: TDDUI Goal Attente Note 
 
@@ -31,12 +31,12 @@ ValueSet définissant les types de notes pour l'élément Goal.note.
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-goal-attente-note",
-  "version" : "2.4.0-ballot",
+  "version" : "2.4.0",
   "name" : "TDDUIGoalAttenteNote",
   "title" : "TDDUI Goal Attente Note",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-22T08:24:42+00:00",
+  "date" : "2026-07-22T08:41:38+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

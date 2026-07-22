@@ -1,4 +1,4 @@
-# TDDUI Basic Decision Identifier - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI Basic Decision Identifier - Médicosocial - Transfert de données DUI v2.4.0
 
 ## ValueSet: TDDUI Basic Decision Identifier 
 
@@ -31,12 +31,12 @@ ValueSet pour la définition des codes d'identifiant de la décision de la CDAPH
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-basic-decision-identifier",
-  "version" : "2.4.0-ballot",
+  "version" : "2.4.0",
   "name" : "TDDUIBasicDecisionIdentifier",
   "title" : "TDDUI Basic Decision Identifier",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-22T08:24:42+00:00",
+  "date" : "2026-07-22T08:41:38+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

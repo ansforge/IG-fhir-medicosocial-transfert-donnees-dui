@@ -1,4 +1,4 @@
-# TDDUI Patient INS - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI Patient INS - Médicosocial - Transfert de données DUI v2.4.0
 
 ## Profil de ressource: TDDUI Patient INS 
 
@@ -119,11 +119,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-tddui-patient-i
   "resourceType" : "StructureDefinition",
   "id" : "tddui-patient-ins",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins",
-  "version" : "2.4.0-ballot",
+  "version" : "2.4.0",
   "name" : "TDDUIPatientINS",
   "title" : "TDDUI Patient INS",
   "status" : "active",
-  "date" : "2026-07-22T08:24:42+00:00",
+  "date" : "2026-07-22T08:41:38+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

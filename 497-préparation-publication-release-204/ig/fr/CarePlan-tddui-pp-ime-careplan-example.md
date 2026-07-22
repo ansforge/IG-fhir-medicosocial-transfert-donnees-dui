@@ -1,4 +1,4 @@
-# TDDUI PP IME CarePlan Example - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI PP IME CarePlan Example - Médicosocial - Transfert de données DUI v2.4.0
 
 ## Exemple CarePlan: TDDUI PP IME CarePlan Example
 

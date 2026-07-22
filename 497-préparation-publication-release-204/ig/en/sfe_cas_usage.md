@@ -1,4 +1,4 @@
-# Cas d'usage - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# Cas d'usage - Médicosocial - Transfert de données DUI v2.4.0
 
 ## Cas d'usage
 

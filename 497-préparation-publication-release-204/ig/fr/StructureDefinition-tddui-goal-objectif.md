@@ -1,4 +1,4 @@
-# TDDUI Goal Objectif - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI Goal Objectif - Médicosocial - Transfert de données DUI v2.4.0
 
 ## Profil de ressource: TDDUI Goal Objectif 
 
@@ -137,11 +137,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-tddui-goal-obje
   "resourceType" : "StructureDefinition",
   "id" : "tddui-goal-objectif",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif",
-  "version" : "2.4.0-ballot",
+  "version" : "2.4.0",
   "name" : "TDDUIGoalObjectif",
   "title" : "TDDUI Goal Objectif",
   "status" : "active",
-  "date" : "2026-07-22T08:24:42+00:00",
+  "date" : "2026-07-22T08:41:38+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

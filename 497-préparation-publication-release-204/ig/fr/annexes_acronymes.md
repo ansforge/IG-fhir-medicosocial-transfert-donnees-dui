@@ -1,4 +1,4 @@
-# Acronymes - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# Acronymes - Médicosocial - Transfert de données DUI v2.4.0
 
 ## Acronymes
 
