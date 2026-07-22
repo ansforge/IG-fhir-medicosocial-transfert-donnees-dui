@@ -35,7 +35,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-task-action
   "name" : "TDDUITaskAction",
   "title" : "TDDUI Task Action",
   "status" : "active",
-  "date" : "2026-07-22T13:04:03+00:00",
+  "date" : "2026-07-22T14:19:53+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
