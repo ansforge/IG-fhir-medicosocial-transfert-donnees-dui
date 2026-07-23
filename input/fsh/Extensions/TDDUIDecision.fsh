@@ -81,7 +81,7 @@ Context: Basic
 * extension[droitPrestation].extension[typeDroitPrestation] ^short = "Type du droit de prestation"
 
 * extension[droitPrestation].extension[natureDroitPrestation].value[x] only CodeableConcept
-* extension[droitPrestation].extension[natureDroitPrestation].value[x] from jdv-j400-nature-droit-prestation-ms (required)
+* extension[droitPrestation].extension[natureDroitPrestation].value[x] from jdv-j400-nature-droit-prestation-ms-tru (required)
 * extension[droitPrestation].extension[natureDroitPrestation] ^short = "Nature du droit de prestation"
 
 
