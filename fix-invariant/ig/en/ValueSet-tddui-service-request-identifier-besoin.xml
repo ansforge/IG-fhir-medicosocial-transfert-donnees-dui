@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="tddui-service-request-identifier-besoin"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ValueSet tddui-service-request-identifier-besoin</b></p><a name="en-tddui-service-request-identifier-besoin"> </a><a name="en-hctddui-service-request-identifier-besoin"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/R4/shareablevalueset.html">Shareable ValueSet</a></p></div><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="CodeSystem-tddui-service-request-identifier.html"><code>https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-service-request-identifier</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;2.4.0-ballot</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-tddui-service-request-identifier.html#tddui-service-request-identifier-BES">BES</a></td><td style="color: #cccccc">Identifiant du besoin</td></tr></table></li><li>Import all the codes that are contained in <a href="http://hl7.org/fhir/R4/valueset-identifier-type.html">IdentifierType</a></li></ul></div>
+  </text>
+  <url value="https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-service-request-identifier-besoin"/>
+  <version value="2.4.0-ballot"/>
+  <name value="TDDUIServiceRequestIdentifierBesoin"/>
+  <title value="TDDUI ServiceRequest Besoin Identifier"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-23T07:57:40+00:00"/>
+  <publisher value="ANS"/>
+  <contact>
+    <name value="ANS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <description value="ValueSet pour la définition des codes d'identifiant de besoin"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="France (la)"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-service-request-identifier"/>
+      <concept>
+        <code value="BES"/>
+      </concept>
+    </include>
+    <include>
+      <valueSet value="http://hl7.org/fhir/ValueSet/identifier-type"/>
+    </include>
+  </compose>
+</ValueSet>
