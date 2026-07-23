@@ -1,4 +1,4 @@
-# TDDUI Admission Date - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI Admission Date - Médicosocial - Transfert de données DUI v2.4.0-tru
 
 ## Extension: TDDUI Admission Date 
 
@@ -32,11 +32,11 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-admission-d
   "resourceType" : "StructureDefinition",
   "id" : "tddui-admission-date",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-admission-date",
-  "version" : "2.4.0-ballot",
+  "version" : "2.4.0-tru",
   "name" : "TDDUIAdmissionDate",
   "title" : "TDDUI Admission Date",
   "status" : "active",
-  "date" : "2026-07-23T07:57:40+00:00",
+  "date" : "2026-07-23T07:58:09+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

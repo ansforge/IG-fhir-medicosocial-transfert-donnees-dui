@@ -1,4 +1,4 @@
-# TDDUI Schedule Example - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI Schedule Example - Médicosocial - Transfert de données DUI v2.4.0-tru
 
 ## Example Schedule: TDDUI Schedule Example
 

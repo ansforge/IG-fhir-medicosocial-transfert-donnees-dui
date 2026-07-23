@@ -1,4 +1,4 @@
-# TDDUI Birth Order - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI Birth Order - Médicosocial - Transfert de données DUI v2.4.0-tru
 
 ## Extension: TDDUI Birth Order 
 
@@ -61,11 +61,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-tddui-birth-ord
   "resourceType" : "StructureDefinition",
   "id" : "tddui-birth-order",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order",
-  "version" : "2.4.0-ballot",
+  "version" : "2.4.0-tru",
   "name" : "TDDUIBirthOrder",
   "title" : "TDDUI Birth Order",
   "status" : "active",
-  "date" : "2026-07-23T07:57:40+00:00",
+  "date" : "2026-07-23T07:58:09+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

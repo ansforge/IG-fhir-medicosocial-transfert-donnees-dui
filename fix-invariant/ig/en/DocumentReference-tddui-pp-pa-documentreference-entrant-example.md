@@ -1,4 +1,4 @@
-# TDDUI PP PA DocumentReference Entrant Example - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI PP PA DocumentReference Entrant Example - Médicosocial - Transfert de données DUI v2.4.0-tru
 
 ## Example DocumentReference: TDDUI PP PA DocumentReference Entrant Example
 

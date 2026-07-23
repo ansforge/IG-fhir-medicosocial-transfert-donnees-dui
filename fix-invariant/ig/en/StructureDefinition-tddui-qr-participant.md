@@ -1,4 +1,4 @@
-# TDDUI QR Participant - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI QR Participant - Médicosocial - Transfert de données DUI v2.4.0-tru
 
 ## Extension: TDDUI QR Participant 
 
@@ -32,11 +32,11 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-qr-particip
   "resourceType" : "StructureDefinition",
   "id" : "tddui-qr-participant",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-qr-participant",
-  "version" : "2.4.0-ballot",
+  "version" : "2.4.0-tru",
   "name" : "TDDUIQRParticipant",
   "title" : "TDDUI QR Participant",
   "status" : "active",
-  "date" : "2026-07-23T07:57:40+00:00",
+  "date" : "2026-07-23T07:58:09+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

@@ -1,4 +1,4 @@
-# TDDUI Organization - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI Organization - Médicosocial - Transfert de données DUI v2.4.0-tru
 
 ## Profil de ressource: TDDUI Organization 
 
@@ -79,11 +79,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-tddui-organizat
   "resourceType" : "StructureDefinition",
   "id" : "tddui-organization",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization",
-  "version" : "2.4.0-ballot",
+  "version" : "2.4.0-tru",
   "name" : "TDDUIOrganization",
   "title" : "TDDUI Organization",
   "status" : "active",
-  "date" : "2026-07-23T07:57:40+00:00",
+  "date" : "2026-07-23T07:58:09+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

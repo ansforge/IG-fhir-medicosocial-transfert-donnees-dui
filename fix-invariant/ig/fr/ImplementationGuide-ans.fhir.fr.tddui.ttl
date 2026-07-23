@@ -14,11 +14,11 @@
      fhir:Narrative.div "<div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : ImplementationGuide ans.fhir.fr.tddui</b></p><a name=\"ans.fhir.fr.tddui\"> </a><a name=\"hcans.fhir.fr.tddui\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Langue : fr</p></div><h2>TDDUI</h2><p>L'URL officielle pour ce guide d'implémentation est : </p><pre>https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui</pre></div>"
   ] ;
   fhir:ImplementationGuide.url [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui"] ;
-  fhir:ImplementationGuide.version [ fhir:value "2.4.0-ballot"] ;
+  fhir:ImplementationGuide.version [ fhir:value "2.4.0-tru"] ;
   fhir:ImplementationGuide.name [ fhir:value "TDDUI"] ;
   fhir:ImplementationGuide.title [ fhir:value "Médicosocial - Transfert de données DUI"] ;
   fhir:ImplementationGuide.status [ fhir:value "active"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-07-23T07:57:40+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-07-23T07:58:09+00:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "ANS"] ;
   fhir:ImplementationGuide.contact [
      fhir:index -1 ;
@@ -859,6 +859,20 @@
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Description" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Description du contact PersonnePhysique." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/jdv-j400-nature-droit-prestation-ms-tru> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/jdv-j400-nature-droit-prestation-ms-tru" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jdv-j400-nature-droit-prestation-ms-tru" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet pour le code de la ressource Basic." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index -1 ;

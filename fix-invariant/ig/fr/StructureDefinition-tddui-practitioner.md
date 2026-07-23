@@ -1,4 +1,4 @@
-# TDDUI Practitioner - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI Practitioner - Médicosocial - Transfert de données DUI v2.4.0-tru
 
 ## Profil de ressource: TDDUI Practitioner 
 
@@ -87,11 +87,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-tddui-practitio
   "resourceType" : "StructureDefinition",
   "id" : "tddui-practitioner",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner",
-  "version" : "2.4.0-ballot",
+  "version" : "2.4.0-tru",
   "name" : "TDDUIPractitioner",
   "title" : "TDDUI Practitioner",
   "status" : "active",
-  "date" : "2026-07-23T07:57:40+00:00",
+  "date" : "2026-07-23T07:58:09+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

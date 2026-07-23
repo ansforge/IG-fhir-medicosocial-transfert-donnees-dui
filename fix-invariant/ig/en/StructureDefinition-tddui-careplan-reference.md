@@ -1,4 +1,4 @@
-# TDDUI CarePlan Projet Perso Ref - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI CarePlan Projet Perso Ref - Médicosocial - Transfert de données DUI v2.4.0-tru
 
 ## Extension: TDDUI CarePlan Projet Perso Ref 
 
@@ -32,11 +32,11 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-careplan-re
   "resourceType" : "StructureDefinition",
   "id" : "tddui-careplan-reference",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-reference",
-  "version" : "2.4.0-ballot",
+  "version" : "2.4.0-tru",
   "name" : "TDDUICarePlanProjetPersoRef",
   "title" : "TDDUI CarePlan Projet Perso Ref",
   "status" : "active",
-  "date" : "2026-07-23T07:57:40+00:00",
+  "date" : "2026-07-23T07:58:09+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

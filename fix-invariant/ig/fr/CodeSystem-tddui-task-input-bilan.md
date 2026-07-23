@@ -1,4 +1,4 @@
-# TDDUI Task Input Bilan - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI Task Input Bilan - Médicosocial - Transfert de données DUI v2.4.0-tru
 
 ## CodeSystem: TDDUI Task Input Bilan 
 
@@ -25,12 +25,12 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem"]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-bilan",
-  "version" : "2.4.0-ballot",
+  "version" : "2.4.0-tru",
   "name" : "TDDUITaskInputBilan",
   "title" : "TDDUI Task Input Bilan",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-23T07:57:40+00:00",
+  "date" : "2026-07-23T07:58:09+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

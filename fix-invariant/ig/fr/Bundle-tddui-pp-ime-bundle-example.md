@@ -1,4 +1,4 @@
-# TDDUI PP IME Bundle Example - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI PP IME Bundle Example - Médicosocial - Transfert de données DUI v2.4.0-tru
 
 ## Exemple Bundle: TDDUI PP IME Bundle Example
 

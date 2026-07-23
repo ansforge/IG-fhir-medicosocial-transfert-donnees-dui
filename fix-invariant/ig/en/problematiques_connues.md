@@ -1,4 +1,4 @@
-# Problématiques connues - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# Problématiques connues - Médicosocial - Transfert de données DUI v2.4.0-tru
 
 ## Problématiques connues
 

@@ -1,4 +1,4 @@
-# TDDUI Goal Identifier Projet Vie - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI Goal Identifier Projet Vie - Médicosocial - Transfert de données DUI v2.4.0-tru
 
 ## ValueSet: TDDUI Goal Identifier Projet Vie 
 
@@ -31,12 +31,12 @@ Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (pa
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-goal-Identifier-projet-vie",
-  "version" : "2.4.0-ballot",
+  "version" : "2.4.0-tru",
   "name" : "TDDUIGoalIdentifierProjetVie",
   "title" : "TDDUI Goal Identifier Projet Vie",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-23T07:57:40+00:00",
+  "date" : "2026-07-23T07:58:09+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

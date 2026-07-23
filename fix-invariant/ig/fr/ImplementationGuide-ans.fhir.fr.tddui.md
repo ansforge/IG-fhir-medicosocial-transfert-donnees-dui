@@ -10,11 +10,11 @@
   "id" : "ans.fhir.fr.tddui",
   "language" : "fr",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ImplementationGuide/ans.fhir.fr.tddui",
-  "version" : "2.4.0-ballot",
+  "version" : "2.4.0-tru",
   "name" : "TDDUI",
   "title" : "Médicosocial - Transfert de données DUI",
   "status" : "active",
-  "date" : "2026-07-23T07:57:40+00:00",
+  "date" : "2026-07-23T07:58:09+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -760,6 +760,18 @@
       },
       "name" : "Description",
       "description" : "Description du contact PersonnePhysique.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/jdv-j400-nature-droit-prestation-ms-tru"
+      },
+      "name" : "jdv-j400-nature-droit-prestation-ms-tru",
+      "description" : "ValueSet pour le code de la ressource Basic.",
       "exampleBoolean" : false
     },
     {

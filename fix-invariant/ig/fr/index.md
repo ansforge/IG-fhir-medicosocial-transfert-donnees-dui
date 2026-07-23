@@ -1,4 +1,4 @@
-# Accueil - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# Accueil - Médicosocial - Transfert de données DUI v2.4.0-tru
 
 ## Accueil
 

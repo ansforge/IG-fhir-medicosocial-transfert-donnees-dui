@@ -1,4 +1,4 @@
-# TDDUI Observation Repas Example - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI Observation Repas Example - Médicosocial - Transfert de données DUI v2.4.0-tru
 
 ## Exemple Observation: TDDUI Observation Repas Example
 

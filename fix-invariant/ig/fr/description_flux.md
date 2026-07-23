@@ -1,4 +1,4 @@
-# Volume 2 - Détail des transactions - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# Volume 2 - Détail des transactions - Médicosocial - Transfert de données DUI v2.4.0-tru
 
 ## Volume 2 - Détail des transactions
 

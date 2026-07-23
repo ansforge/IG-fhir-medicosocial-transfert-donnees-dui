@@ -1,4 +1,4 @@
-# TDDUI Encounter Sejour - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI Encounter Sejour - Médicosocial - Transfert de données DUI v2.4.0-tru
 
 ## Profil de ressource: TDDUI Encounter Sejour 
 
@@ -133,11 +133,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-tddui-encounter
   "resourceType" : "StructureDefinition",
   "id" : "tddui-encounter-sejour",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour",
-  "version" : "2.4.0-ballot",
+  "version" : "2.4.0-tru",
   "name" : "TDDUIEncounterSejour",
   "title" : "TDDUI Encounter Sejour",
   "status" : "active",
-  "date" : "2026-07-23T07:57:40+00:00",
+  "date" : "2026-07-23T07:58:09+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

@@ -1,4 +1,4 @@
-# TDDUI Questionnaire Response AGGIR PH Example - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI Questionnaire Response AGGIR PH Example - Médicosocial - Transfert de données DUI v2.4.0-tru
 
 ## Exemple QuestionnaireResponse: TDDUI Questionnaire Response AGGIR PH Example
 

@@ -1,4 +1,4 @@
-# TDDUI Task Transport Usager - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI Task Transport Usager - Médicosocial - Transfert de données DUI v2.4.0-tru
 
 ## Resource Profile: TDDUI Task Transport Usager 
 
@@ -30,11 +30,11 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-task-transp
   "resourceType" : "StructureDefinition",
   "id" : "tddui-task-transport-usager",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager",
-  "version" : "2.4.0-ballot",
+  "version" : "2.4.0-tru",
   "name" : "TDDUITaskTransportUsager",
   "title" : "TDDUI Task Transport Usager",
   "status" : "active",
-  "date" : "2026-07-23T07:57:40+00:00",
+  "date" : "2026-07-23T07:58:09+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

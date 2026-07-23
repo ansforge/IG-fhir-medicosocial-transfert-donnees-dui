@@ -1,4 +1,4 @@
-# TDDUI PP PA Consent Accord Example - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI PP PA Consent Accord Example - Médicosocial - Transfert de données DUI v2.4.0-tru
 
 ## Exemple Consent: TDDUI PP PA Consent Accord Example
 

@@ -1,4 +1,4 @@
-# TDDUI PP IME Goal Objectif 2 Example - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI PP IME Goal Objectif 2 Example - Médicosocial - Transfert de données DUI v2.4.0-tru
 
 ## Exemple Goal: TDDUI PP IME Goal Objectif 2 Example
 

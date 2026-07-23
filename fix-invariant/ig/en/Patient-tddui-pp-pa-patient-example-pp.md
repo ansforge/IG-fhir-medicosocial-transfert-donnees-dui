@@ -1,4 +1,4 @@
-# TDDUI PP PA Patient Example - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI PP PA Patient Example - Médicosocial - Transfert de données DUI v2.4.0-tru
 
 ## Example Patient: TDDUI PP PA Patient Example
 

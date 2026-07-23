@@ -1,4 +1,4 @@
-# TDDUI Decision - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI Decision - Médicosocial - Transfert de données DUI v2.4.0-tru
 
 ## Extension: TDDUI Decision 
 
@@ -32,11 +32,11 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-decision.cs
   "resourceType" : "StructureDefinition",
   "id" : "tddui-decision",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision",
-  "version" : "2.4.0-ballot",
+  "version" : "2.4.0-tru",
   "name" : "TDDUIDecision",
   "title" : "TDDUI Decision",
   "status" : "active",
-  "date" : "2026-07-23T07:57:40+00:00",
+  "date" : "2026-07-23T07:58:09+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -411,7 +411,7 @@ Other representations of profile: [CSV](../StructureDefinition-tddui-decision.cs
       }],
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j400-nature-droit-prestation-ms"
+        "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/jdv-j400-nature-droit-prestation-ms-tru"
       }
     },
     {

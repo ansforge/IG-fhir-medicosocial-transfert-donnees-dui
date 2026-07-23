@@ -1,4 +1,4 @@
-# TDDUI-Producteur - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI-Producteur - Médicosocial - Transfert de données DUI v2.4.0-tru
 
 ## CapabilityStatement: TDDUI-Producteur 
 
@@ -16,7 +16,7 @@ Le rôle de Producteur est de transmettre des données de son logiciel DUI. Il c
   "resourceType" : "CapabilityStatement",
   "id" : "TDDUIProducteur",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CapabilityStatement/TDDUIProducteur",
-  "version" : "2.4.0-ballot",
+  "version" : "2.4.0-tru",
   "name" : "TDDUIProducteur",
   "title" : "TDDUI-Producteur",
   "status" : "active",

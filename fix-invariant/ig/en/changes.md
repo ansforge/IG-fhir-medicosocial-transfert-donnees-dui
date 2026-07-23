@@ -1,4 +1,4 @@
-# Historique des changements - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# Historique des changements - Médicosocial - Transfert de données DUI v2.4.0-tru
 
 ## Historique des changements
 

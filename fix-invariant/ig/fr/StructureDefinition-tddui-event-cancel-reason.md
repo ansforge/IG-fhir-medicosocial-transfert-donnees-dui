@@ -1,4 +1,4 @@
-# TDDUI Event Cancel Reason - Médicosocial - Transfert de données DUI v2.4.0-ballot
+# TDDUI Event Cancel Reason - Médicosocial - Transfert de données DUI v2.4.0-tru
 
 ## Extension: TDDUI Event Cancel Reason 
 
@@ -68,11 +68,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-tddui-event-can
   "resourceType" : "StructureDefinition",
   "id" : "tddui-event-cancel-reason",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-event-cancel-reason",
-  "version" : "2.4.0-ballot",
+  "version" : "2.4.0-tru",
   "name" : "TDDUIEventCancelReason",
   "title" : "TDDUI Event Cancel Reason",
   "status" : "active",
-  "date" : "2026-07-23T07:57:40+00:00",
+  "date" : "2026-07-23T07:58:09+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
