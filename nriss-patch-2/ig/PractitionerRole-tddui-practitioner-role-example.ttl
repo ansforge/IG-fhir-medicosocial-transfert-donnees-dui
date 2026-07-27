@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/tddui/PractitionerRole/tddui-practitioner-role-example> a fhir:PractitionerRole ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "tddui-practitioner-role-example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role" ;
+       fhir:index 0 ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : PractitionerRole tddui-practitioner-role-example</b></p><a name=\"tddui-practitioner-role-example\"> </a><a name=\"hctddui-practitioner-role-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-practitioner-role.html\">TDDUI Practitioner Role</a></p></div><p><b>TDDUI Exercise Mode</b>: <span title=\"Codes :{https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice S}\">Salarié</span></p><p><b>practitioner</b>: <a href=\"Practitioner-tddui-practitioner-example.html\">Practitioner Claire Martin </a></p><p><b>organization</b>: <a href=\"Organization-tddui-organization-example.html\">Organization Les Chênes Verts</a></p><p><b>code</b>: <span title=\"Codes :{https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge 330}\">Coordonnateur de parcours</span></p></div><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole tddui-practitioner-role-example</b></p><a name=\"en-tddui-practitioner-role-example\"> </a><a name=\"en-hctddui-practitioner-role-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tddui-practitioner-role.html\">TDDUI Practitioner Role</a></p></div><p><b>TDDUI Exercise Mode</b>: <span title=\"Codes:{https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice S}\">Salarié</span></p><p><b>practitioner</b>: <a href=\"Practitioner-tddui-practitioner-example.html\">Practitioner Claire Martin </a></p><p><b>organization</b>: <a href=\"Organization-tddui-organization-example.html\">Organization Les Chênes Verts</a></p><p><b>code</b>: <span title=\"Codes:{https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge 330}\">Coordonnateur de parcours</span></p></div></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-exercise-mode" ] ;
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice" ] ;
+         fhir:Coding.code [ fhir:value "S" ] ;
+         fhir:Coding.display [ fhir:value "Salarié" ]
+       ]
+     ]
+  ] ;
+  fhir:PractitionerRole.practitioner [
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Practitioner/tddui-practitioner-example> ;
+     fhir:Reference.reference [ fhir:value "Practitioner/tddui-practitioner-example" ]
+  ] ;
+  fhir:PractitionerRole.organization [
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Organization/tddui-organization-example> ;
+     fhir:Reference.reference [ fhir:value "Organization/tddui-organization-example" ]
+  ] ;
+  fhir:PractitionerRole.code [
+     fhir:index 0 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-profession" ] ;
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_A02-ProfessionSavFaire-CISIS/FHIR/TRE-A02-ProfessionSavFaire-CISIS" ] ;
+           fhir:Coding.code [ fhir:value "G15_60" ] ;
+           fhir:Coding.display [ fhir:value "Infirmier" ]
+         ]
+       ]
+     ] ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge" ] ;
+       fhir:Coding.code [ fhir:value "330" ] ;
+       fhir:Coding.display [ fhir:value "Coordonnateur de parcours" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/tddui/PractitionerRole/tddui-practitioner-role-example.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

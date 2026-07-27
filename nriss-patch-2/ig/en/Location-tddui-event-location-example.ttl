@@ -1,0 +1,39 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/tddui/Location/tddui-event-location-example> a fhir:Location ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "tddui-event-location-example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location" ;
+       fhir:index -1 ;
+       fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Location tddui-event-location-example</b></p><a name=\"en-tddui-event-location-example\"> </a><a name=\"en-hctddui-event-location-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://hl7.fr/ig/fhir/core/2.1.0/StructureDefinition-fr-core-location.html\">FR Core Location Profile</a></p></div><p><b>address</b>: 12 rue des Lilas Vittefleur 76748 FR </p></div>"
+  ] ;
+  fhir:Location.address [
+     fhir:Address.line [
+       fhir:value "12 rue des Lilas" ;
+       fhir:index -1
+     ] ;
+     fhir:Address.city [ fhir:value "Vittefleur" ] ;
+     fhir:Address.postalCode [ fhir:value "76748" ] ;
+     fhir:Address.country [ fhir:value "FR" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/tddui/Location/tddui-event-location-example.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

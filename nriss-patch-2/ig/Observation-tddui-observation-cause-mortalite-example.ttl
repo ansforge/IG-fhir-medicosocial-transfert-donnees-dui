@@ -1,0 +1,64 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/tddui/Observation/tddui-observation-cause-mortalite-example> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "tddui-observation-cause-mortalite-example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-mortalite" ;
+       fhir:index 0 ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-mortalite>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : Observation tddui-observation-cause-mortalite-example</b></p><a name=\"tddui-observation-cause-mortalite-example\"> </a><a name=\"hctddui-observation-cause-mortalite-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-observation-cause-mortalite.html\">TDDUI Observation Cause Mortalite</a></p></div><p><b>status</b>: Registered</p><p><b>code</b>: <span title=\"Codes :{http://loinc.org 79378-6}\">Cause of death</span></p><p><b>subject</b>: <a href=\"Patient-tddui-patient-ins-example.html\">DUPONT  Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/194704032)</a></p><h3>Components</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes :{http://loinc.org 79378-6}\">Cause of death</span></td><td><span title=\"Codes :{https://smt.esante.gouv.fr/terminologie-cim-10 J81}\">Œdème pulmonaire</span></td></tr></table></div><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Observation tddui-observation-cause-mortalite-example</b></p><a name=\"en-tddui-observation-cause-mortalite-example\"> </a><a name=\"en-hctddui-observation-cause-mortalite-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tddui-observation-cause-mortalite.html\">TDDUI Observation Cause Mortalite</a></p></div><p><b>status</b>: Registered</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 79378-6}\">Cause of death</span></p><p><b>subject</b>: <a href=\"Patient-tddui-patient-ins-example.html\">DUPONT  Male, DoB: 1947-04-03 ( Patient internal identifier: 3480787529/194704032)</a></p><h3>Components</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://loinc.org 79378-6}\">Cause of death</span></td><td><span title=\"Codes:{https://smt.esante.gouv.fr/terminologie-cim-10 J81}\">Œdème pulmonaire</span></td></tr></table></div></div>"
+  ] ;
+  fhir:Observation.status [ fhir:value "registered"] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a loinc:79378-6 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "79378-6" ] ;
+       fhir:Coding.display [ fhir:value "Cause of death" ]
+     ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-patient-ins-example> ;
+     fhir:Reference.reference [ fhir:value "Patient/tddui-patient-ins-example" ]
+  ] ;
+  fhir:Observation.component [
+     fhir:index 0 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a loinc:79378-6 ;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+         fhir:Coding.code [ fhir:value "79378-6" ] ;
+         fhir:Coding.display [ fhir:value "Cause of death" ]
+       ]
+     ] ;
+     fhir:Observation.component.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://smt.esante.gouv.fr/terminologie-cim-10" ] ;
+         fhir:Coding.code [ fhir:value "J81" ] ;
+         fhir:Coding.display [ fhir:value "Œdème pulmonaire" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/tddui/Observation/tddui-observation-cause-mortalite-example.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

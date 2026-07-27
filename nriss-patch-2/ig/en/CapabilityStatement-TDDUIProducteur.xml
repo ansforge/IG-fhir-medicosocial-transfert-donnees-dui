@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+  <id value="TDDUIProducteur"/>
+  <language value="en"/>
+  <text>
+    <status value="extensions"/><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: CapabilityStatement TDDUIProducteur</b></p><a name="en-TDDUIProducteur"> </a><a name="en-hcTDDUIProducteur"> </a><h2 id="en-title">TDDUI-Producteur</h2><ul><li>Implementation Guide Version: 2.4.0 </li><li>FHIR Version: 4.0.1 </li><li>Supported Formats: <code>application/fhir+xml</code>, <code>application/fhir+json</code></li><li>Published on: 2024-06-20 15:51:35+0200 </li><li>Published by: ANS </li></ul><blockquote class="impl-note"><p><strong>Note to Implementers: FHIR Capabilities</strong></p><p>Any FHIR capability may be 'allowed' by the system unless explicitly marked as 'SHALL NOT'. A few items are marked as MAY in the Implementation Guide to highlight their potential relevance to the use case.</p></blockquote><h3 id="en-shallIGs">SHALL Support the Following Implementation Guides</h3><ul><li>https://interop.esante.gouv.fr/ig/fhir/tddui</li></ul><h2 id="en-rest">FHIR RESTful Capabilities</h2><div class="panel panel-default"><div class="panel-heading"><h3 id="en-mode1" class="panel-title">Mode: <code>client</code></h3></div><div class="panel-body"><div><p>Transmission de données DUI vers un SI tiers (flux 1).</p>
+</div><div class="lead"><em>Security</em></div><blockquote><div><p>L’ANS propose des référentiels dédiés à la politique de sécurité (la PGSSI-S) et des mécanismes de sécurisation sont définis dans les volets de la couche Transport du Cadre d’Interopérabilité des systèmes d’information de santé (CI-SIS)</p>
+</div></blockquote><div class="lead"><em>Summary of System-wide Interactions</em></div><ul><li>Supports the <code>transaction</code>interaction described as follows:<div><p>https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle</p>
+</div></li></ul></div></div><h3 id="en-resourcesCap1">Capabilities by Resource/Profile</h3><h4 id="en-resourcesSummary1">Summary</h4><p>The summary table lists the resources that are part of this configuration, and for each resource it lists:</p><ul><li>The relevant profiles (if any)</li><li>The interactions supported by each resource (<b><span class="bg-info">R</span></b>ead, <b><span class="bg-info">S</span></b>earch, <b><span class="bg-info">U</span></b>pdate, and <b><span class="bg-info">C</span></b>reate, are always shown, while <b><span class="bg-info">VR</span></b>ead, <b><span class="bg-info">P</span></b>atch, <b><span class="bg-info">D</span></b>elete, <b><span class="bg-info">H</span></b>istory on <b><span class="bg-info">I</span></b>nstance, or <b><span class="bg-info">H</span></b>istory on <b><span class="bg-info">T</span></b>ype are only present if at least one of the resources has support for them.</li><li><span>The required, recommended, and some optional search parameters (if any). </span></li><li>The linked resources enabled for <code>_include</code></li><li>The other resources enabled for <code>_revinclude</code></li><li>The operations on the resource (if any)</li></ul><div class="table-responsive"><table class="table table-condensed table-hover"><thead><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th class="text-center"><b title="GET a resource (read interaction)">R</b></th><th class="text-center"><b title="GET all set of resources of the type (search interaction)">S</b></th><th class="text-center"><b title="PUT a new resource version (update interaction)">U</b></th><th class="text-center"><b title="POST a new resource (create interaction)">C</b></th><th><b title="Required and recommended search parameters">Searches</b></th><th><code><b>_include</b></code></th><th><code><b>_revinclude</b></code></th><th><b>Operations</b></th></tr></thead><tbody><tr><td><a href="#en-Patient1-1">Patient</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-tddui-patient.html">TDDUI Patient</a><br/>  <a href="StructureDefinition-tddui-patient-ins.html">TDDUI Patient INS</a></td><td class="text-center"/><td class="text-center"/><td class="text-center"/><td class="text-center">y</td><td/><td/><td/><td/></tr><tr><td><a href="#en-Organization1-2">Organization</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-tddui-organization.html">TDDUI Organization</a></td><td class="text-center"/><td class="text-center"/><td class="text-center"/><td class="text-center">y</td><td/><td/><td/><td/></tr><tr><td><a href="#en-Encounter1-3">Encounter</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-tddui-encounter-sejour.html">TDDUI Encounter Sejour</a><br/>  <a href="StructureDefinition-tddui-encounter-evenement.html">TDDUI Encounter Evenement</a></td><td class="text-center"/><td class="text-center"/><td class="text-center"/><td class="text-center">y</td><td/><td/><td/><td/></tr><tr><td><a href="#en-Practitioner1-4">Practitioner</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-tddui-practitioner.html">TDDUI Practitioner</a></td><td class="text-center"/><td class="text-center"/><td class="text-center"/><td class="text-center">y</td><td/><td/><td/><td/></tr><tr><td><a href="#en-PractitionerRole1-5">PractitionerRole</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-tddui-practitioner-role.html">TDDUI Practitioner Role</a></td><td class="text-center"/><td class="text-center"/><td class="text-center"/><td class="text-center">y</td><td/><td/><td/><td/></tr><tr><td><a href="#en-Task1-6">Task</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-tddui-task-transport-professionnel.html">TDDUI Task Transport Professionnel</a><br/>  <a href="StructureDefinition-tddui-task-transport-usager.html">TDDUI Task Transport Usager</a><br/>  <a href="StructureDefinition-tddui-task-action.html">TDDUI Task Action</a><br/>  <a href="StructureDefinition-tddui-task-bilan.html">TDDUI Task Bilan</a><br/>  <a href="StructureDefinition-tddui-task-moyen-ressource.html">TDDUI Task MoyenRessource</a><br/>  <a href="StructureDefinition-tddui-task-prestation.html">TDDUI Task Prestation</a></td><td class="text-center"/><td class="text-center"/><td class="text-center"/><td class="text-center">y</td><td/><td/><td/><td/></tr><tr><td><a href="#en-QuestionnaireResponse1-7">QuestionnaireResponse</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-tddui-questionnaire-response.html">TDDUI QuestionnaireResponse</a></td><td class="text-center"/><td class="text-center"/><td class="text-center"/><td class="text-center">y</td><td/><td/><td/><td/></tr><tr><td><a href="#en-DocumentReference1-8">DocumentReference</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-tddui-document-reference.html">TDDUI DocumentReference</a></td><td class="text-center"/><td class="text-center"/><td class="text-center"/><td class="text-center">y</td><td/><td/><td/><td/></tr><tr><td><a href="#en-CarePlan1-9">CarePlan</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-tddui-careplan-projet-personnalise.html">TDDUI CarePlan Projet Personalise</a></td><td class="text-center"/><td class="text-center"/><td class="text-center"/><td class="text-center">y</td><td/><td/><td/><td/></tr><tr><td><a href="#en-Consent1-10">Consent</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-tddui-consent-accord.html">TDDUI Consent Accord</a></td><td class="text-center"/><td class="text-center"/><td class="text-center"/><td class="text-center">y</td><td/><td/><td/><td/></tr><tr><td><a href="#en-Goal1-11">Goal</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-tddui-goal-attente.html">TDDUI Goal Attente</a><br/>  <a href="StructureDefinition-tddui-goal-objectif.html">TDDUI Goal Objectif</a><br/>  <a href="StructureDefinition-tddui-goal-projet-vie.html">TDDUI Goal Projet Vie</a></td><td class="text-center"/><td class="text-center"/><td class="text-center"/><td class="text-center">y</td><td/><td/><td/><td/></tr><tr><td><a href="#en-ServiceRequest1-12">ServiceRequest</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-tddui-service-request-besoin.html">TDDUI ServiceRequest Besoin</a><br/>  <a href="StructureDefinition-tddui-service-request-demande-orientation.html">TDDUI ServiceRequest DemandeOrientation</a></td><td class="text-center"/><td class="text-center"/><td class="text-center"/><td class="text-center">y</td><td/><td/><td/><td/></tr><tr><td><a href="#en-RelatedPerson1-13">RelatedPerson</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-tddui-related-person-contact.html">TDDUI RelatedPerson Contact</a></td><td class="text-center"/><td class="text-center"/><td class="text-center"/><td class="text-center">y</td><td/><td/><td/><td/></tr><tr><td><a href="#en-Observation1-14">Observation</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-tddui-observation-cause-mortalite.html">TDDUI Observation Cause Mortalite</a><br/>  <a href="StructureDefinition-tddui-observation-periode-scolaire.html">TDDUI Observation Periode Scolaire</a><br/>  <a href="StructureDefinition-tddui-observation-mobilite-usager.html">TDDUI Observation Mobilite Usager</a><br/>  <a href="StructureDefinition-tddui-observation-repas.html">TDDUI Observation Repas</a></td><td class="text-center"/><td class="text-center"/><td class="text-center"/><td class="text-center">y</td><td/><td/><td/><td/></tr><tr><td><a href="#en-Schedule1-15">Schedule</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-tddui-schedule.html">TDDUI Schedule</a></td><td class="text-center"/><td class="text-center"/><td class="text-center"/><td class="text-center">y</td><td/><td/><td/><td/></tr><tr><td><a href="#en-Slot1-16">Slot</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-tddui-slot-presence-absence.html">TDDUI Slot Presence Absence</a></td><td class="text-center"/><td class="text-center"/><td class="text-center"/><td class="text-center">y</td><td/><td/><td/><td/></tr><tr><td><a href="#en-Basic1-17">Basic</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-tddui-basic-decision.html">TDDUI Basic Decision</a></td><td class="text-center"/><td class="text-center"/><td class="text-center"/><td class="text-center">y</td><td/><td/><td/><td/></tr></tbody></table></div><hr/><div class="panel panel-default"><div class="panel-heading"><h4 id="en-Patient1-1" class="panel-title"><span style="float: right;">Resource Conformance: unspecified </span>Patient</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/patient.html">Patient</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li>Supports <code>create</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-tddui-patient.html">TDDUI Patient</a><br/><a href="StructureDefinition-tddui-patient-ins.html">TDDUI Patient INS</a></p></div></div><p/></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="en-Organization1-2" class="panel-title"><span style="float: right;">Resource Conformance: unspecified </span>Organization</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/organization.html">Organization</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li>Supports <code>create</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-tddui-organization.html">TDDUI Organization</a></p></div></div><p/></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="en-Encounter1-3" class="panel-title"><span style="float: right;">Resource Conformance: unspecified </span>Encounter</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li>Supports <code>create</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-tddui-encounter-sejour.html">TDDUI Encounter Sejour</a><br/><a href="StructureDefinition-tddui-encounter-evenement.html">TDDUI Encounter Evenement</a></p></div></div><p/></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="en-Practitioner1-4" class="panel-title"><span style="float: right;">Resource Conformance: unspecified </span>Practitioner</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li>Supports <code>create</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-tddui-practitioner.html">TDDUI Practitioner</a></p></div></div><p/></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="en-PractitionerRole1-5" class="panel-title"><span style="float: right;">Resource Conformance: unspecified </span>PractitionerRole</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li>Supports <code>create</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-tddui-practitioner-role.html">TDDUI Practitioner Role</a></p></div></div><p/></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="en-Task1-6" class="panel-title"><span style="float: right;">Resource Conformance: unspecified </span>Task</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/task.html">Task</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li>Supports <code>create</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-tddui-task-transport-professionnel.html">TDDUI Task Transport Professionnel</a><br/><a href="StructureDefinition-tddui-task-transport-usager.html">TDDUI Task Transport Usager</a><br/><a href="StructureDefinition-tddui-task-action.html">TDDUI Task Action</a><br/><a href="StructureDefinition-tddui-task-bilan.html">TDDUI Task Bilan</a><br/><a href="StructureDefinition-tddui-task-moyen-ressource.html">TDDUI Task MoyenRessource</a><br/><a href="StructureDefinition-tddui-task-prestation.html">TDDUI Task Prestation</a></p></div></div><p/></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="en-QuestionnaireResponse1-7" class="panel-title"><span style="float: right;">Resource Conformance: unspecified </span>QuestionnaireResponse</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/questionnaireresponse.html">QuestionnaireResponse</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li>Supports <code>create</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-tddui-questionnaire-response.html">TDDUI QuestionnaireResponse</a></p></div></div><p/></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="en-DocumentReference1-8" class="panel-title"><span style="float: right;">Resource Conformance: unspecified </span>DocumentReference</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/documentreference.html">DocumentReference</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li>Supports <code>create</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-tddui-document-reference.html">TDDUI DocumentReference</a></p></div></div><p/></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="en-CarePlan1-9" class="panel-title"><span style="float: right;">Resource Conformance: unspecified </span>CarePlan</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/careplan.html">CarePlan</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li>Supports <code>create</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-tddui-careplan-projet-personnalise.html">TDDUI CarePlan Projet Personalise</a></p></div></div><p/></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="en-Consent1-10" class="panel-title"><span style="float: right;">Resource Conformance: unspecified </span>Consent</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/consent.html">Consent</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li>Supports <code>create</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-tddui-consent-accord.html">TDDUI Consent Accord</a></p></div></div><p/></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="en-Goal1-11" class="panel-title"><span style="float: right;">Resource Conformance: unspecified </span>Goal</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/goal.html">Goal</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li>Supports <code>create</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-tddui-goal-attente.html">TDDUI Goal Attente</a><br/><a href="StructureDefinition-tddui-goal-objectif.html">TDDUI Goal Objectif</a><br/><a href="StructureDefinition-tddui-goal-projet-vie.html">TDDUI Goal Projet Vie</a></p></div></div><p/></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="en-ServiceRequest1-12" class="panel-title"><span style="float: right;">Resource Conformance: unspecified </span>ServiceRequest</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li>Supports <code>create</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-tddui-service-request-besoin.html">TDDUI ServiceRequest Besoin</a><br/><a href="StructureDefinition-tddui-service-request-demande-orientation.html">TDDUI ServiceRequest DemandeOrientation</a></p></div></div><p/></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="en-RelatedPerson1-13" class="panel-title"><span style="float: right;">Resource Conformance: unspecified </span>RelatedPerson</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li>Supports <code>create</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-tddui-related-person-contact.html">TDDUI RelatedPerson Contact</a></p></div></div><p/></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="en-Observation1-14" class="panel-title"><span style="float: right;">Resource Conformance: unspecified </span>Observation</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/observation.html">Observation</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li>Supports <code>create</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-tddui-observation-cause-mortalite.html">TDDUI Observation Cause Mortalite</a><br/><a href="StructureDefinition-tddui-observation-periode-scolaire.html">TDDUI Observation Periode Scolaire</a><br/><a href="StructureDefinition-tddui-observation-mobilite-usager.html">TDDUI Observation Mobilite Usager</a><br/><a href="StructureDefinition-tddui-observation-repas.html">TDDUI Observation Repas</a></p></div></div><p/></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="en-Schedule1-15" class="panel-title"><span style="float: right;">Resource Conformance: unspecified </span>Schedule</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/schedule.html">Schedule</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li>Supports <code>create</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-tddui-schedule.html">TDDUI Schedule</a></p></div></div><p/></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="en-Slot1-16" class="panel-title"><span style="float: right;">Resource Conformance: unspecified </span>Slot</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/slot.html">Slot</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li>Supports <code>create</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-tddui-slot-presence-absence.html">TDDUI Slot Presence Absence</a></p></div></div><p/></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="en-Basic1-17" class="panel-title"><span style="float: right;">Resource Conformance: unspecified </span>Basic</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/basic.html">Basic</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li>Supports <code>create</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-tddui-basic-decision.html">TDDUI Basic Decision</a></p></div></div><p/></div></div></div></div>
+  </text>
+  <url value="https://interop.esante.gouv.fr/ig/fhir/tddui/CapabilityStatement/TDDUIProducteur"/>
+  <version value="2.4.0"/>
+  <name value="TDDUIProducteur"/>
+  <title value="TDDUI-Producteur"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-06-20T15:51:35+02:00"/>
+  <publisher value="ANS"/>
+  <contact>
+    <name value="ANS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <description value="Le rôle de Producteur est de transmettre des données de son logiciel DUI. Il correspond à un logiciel DUI."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="France (la)"/>
+    </coding>
+  </jurisdiction>
+  <kind value="requirements"/>
+  <fhirVersion value="4.0.1"/>
+  <format value="application/fhir+xml"/>
+  <format value="application/fhir+json"/>
+  <implementationGuide value="https://interop.esante.gouv.fr/ig/fhir/tddui"/>
+  <rest>
+    <mode value="client"/>
+    <documentation value="Transmission de données DUI vers un SI tiers (flux 1)."/>
+    <security>
+      <cors value="false"/>
+      <description value="L’ANS propose des référentiels dédiés à la politique de sécurité (la PGSSI-S) et des mécanismes de sécurisation sont définis dans les volets de la couche Transport du Cadre d’Interopérabilité des systèmes d’information de santé (CI-SIS)"/>
+    </security>
+    <resource>
+      <type value="Patient"/>
+      <supportedProfile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient"/>
+      <supportedProfile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+    </resource>
+    <resource>
+      <type value="Organization"/>
+      <supportedProfile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+    </resource>
+    <resource>
+      <type value="Encounter"/>
+      <supportedProfile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-sejour"/>
+      <supportedProfile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+    </resource>
+    <resource>
+      <type value="Practitioner"/>
+      <supportedProfile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+    </resource>
+    <resource>
+      <type value="PractitionerRole"/>
+      <supportedProfile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+    </resource>
+    <resource>
+      <type value="Task"/>
+      <supportedProfile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-professionnel"/>
+      <supportedProfile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-transport-usager"/>
+      <supportedProfile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"/>
+      <supportedProfile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-bilan"/>
+      <supportedProfile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource"/>
+      <supportedProfile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-prestation"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+    </resource>
+    <resource>
+      <type value="QuestionnaireResponse"/>
+      <supportedProfile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-questionnaire-response"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+    </resource>
+    <resource>
+      <type value="DocumentReference"/>
+      <supportedProfile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+    </resource>
+    <resource>
+      <type value="CarePlan"/>
+      <supportedProfile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-careplan-projet-personnalise"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+    </resource>
+    <resource>
+      <type value="Consent"/>
+      <supportedProfile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-consent-accord"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+    </resource>
+    <resource>
+      <type value="Goal"/>
+      <supportedProfile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-attente"/>
+      <supportedProfile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-objectif"/>
+      <supportedProfile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-goal-projet-vie"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+    </resource>
+    <resource>
+      <type value="ServiceRequest"/>
+      <supportedProfile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-besoin"/>
+      <supportedProfile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-service-request-demande-orientation"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+    </resource>
+    <resource>
+      <type value="RelatedPerson"/>
+      <supportedProfile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+    </resource>
+    <resource>
+      <type value="Observation"/>
+      <supportedProfile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-cause-mortalite"/>
+      <supportedProfile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-periode-scolaire"/>
+      <supportedProfile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-mobilite-usager"/>
+      <supportedProfile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-repas"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+    </resource>
+    <resource>
+      <type value="Schedule"/>
+      <supportedProfile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-schedule"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+    </resource>
+    <resource>
+      <type value="Slot"/>
+      <supportedProfile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-slot-presence-absence"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+    </resource>
+    <resource>
+      <type value="Basic"/>
+      <supportedProfile value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-basic-decision"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+    </resource>
+    <interaction>
+      <code value="transaction"/>
+      <documentation value="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-bundle"/>
+    </interaction>
+  </rest>
+</CapabilityStatement>

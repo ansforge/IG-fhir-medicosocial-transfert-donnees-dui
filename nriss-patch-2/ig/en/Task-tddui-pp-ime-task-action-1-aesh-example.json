@@ -1,0 +1,34 @@
+{
+  "resourceType" : "Task",
+  "id" : "tddui-pp-ime-task-action-1-aesh-example",
+  "meta" : {
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-action"]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Task tddui-pp-ime-task-action-1-aesh-example</b></p><a name=\"en-tddui-pp-ime-task-action-1-aesh-example\"> </a><a name=\"en-hctddui-pp-ime-task-action-1-aesh-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tddui-task-action.html\">TDDUI Task Action</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-action.esante.gouv.fr</code>/3480787529/123456-ACTI-1234</p><p><b>basedOn</b>: <a href=\"CarePlan-tddui-pp-ime-careplan-example.html\">CarePlan Projet personnalisé de Hugo en IME</a></p><p><b>status</b>: In Progress</p><p><b>intent</b>: plan</p><p><b>description</b>: Vérification port du casque</p><p><b>owner</b>: AESH</p><h3>Inputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action titre}\">Titre de l'action à mener.</span></td><td>Action de l'AS pour atteindre l'objectif 1</td></tr></table></div>"
+  },
+  "identifier" : [{
+    "system" : "https://identifiant-medicosocial-action.esante.gouv.fr",
+    "value" : "3480787529/123456-ACTI-1234"
+  }],
+  "basedOn" : [{
+    "reference" : "CarePlan/tddui-pp-ime-careplan-example"
+  }],
+  "status" : "in-progress",
+  "intent" : "plan",
+  "description" : "Vérification port du casque",
+  "owner" : {
+    "display" : "AESH"
+  },
+  "input" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-action",
+        "code" : "titre"
+      }]
+    },
+    "valueString" : "Action de l'AS pour atteindre l'objectif 1"
+  }]
+}
