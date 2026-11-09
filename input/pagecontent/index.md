@@ -38,19 +38,19 @@ Le Programme ESMS numérique, porté par la Caisse Nationale de Solidarité pour
 * Des données liées à la coordination des différents acteurs ;
 * Des données médicales.
 
-Les logiciels DUI doivent permettre, entre autres, de mieux construire et de suivre le projet personnalisé de la personne accompagnée, d’éviter les ruptures de parcours en cas d’évolution des besoins, de changement d’établissement médico-social, de retour à domicile ou d’hospitalisation. 
+Les logiciels DUI doivent permettre, entre autres, de mieux construire et de suivre le projet personnalisé de la personne accompagnée, d’éviter les ruptures de parcours en cas d’évolution des besoins, de changement d’établissement médico-social, de retour à domicile ou d’hospitalisation. Ils permettent également d'aider à la rédaction de rapports pour les établissements.
 
 Dans la continuité des travaux menés dans le cadre du programme ESMS numérique, la CNSA et l’ANS créent un nouveau volet « Transfert de données DUI ». L’objectif de ce volet est de définir la nature et le format des données à transmettre lors d’un export depuis un logiciel DUI afin d’assurer le transfert de données des usagers.
 
 Ce guide d'implémentation contient : 
-- L'étude des normes et standards au format pdf : [Etude des normes et standards](NormesStandards_TransfertDonneesDUI_V1.0.pdf)
+- L'étude des normes et standards au format pdf : [Étude des normes et standards](NormesStandards_TransfertDonneesDUI_V1.0.pdf)
 - Les spécifications fonctionnelles : section <a href="sfe.html"> Spécifications fonctionnelles</a>
 - La spécification technique de contenu :  <br>
 Il existe deux représentations techniques pour le contenu de l'export des données d'un logiciel DUI :
   * une représentation basée sur le standard FHIR afin de s’aligner sur les recommandations européennes et pour s’adapter aux évolutions des <a href="sfe_cas_usage.html">cas d'usage</a> de ce volet.<br>
   La représentation FHIR décrite dans ce guide est à privilégier pour toute nouvelle implémentation : section <a href="artifacts.html">Ressources de conformité</a>
   * une représentation basée sur le standard CDA qui est spécifiée dans le guide d'implémentation <a href="https://interop.esante.gouv.fr/ig/cda/tddui/">Médicosocial - Transfert de données DUI CDA</a>. Ce guide est restreint au cas d'usage SSIAD.
-Les évolutions de ce guide d’implémentation sont limitées à des corrections techniques. Ce guide d'implementation sera déprécié lorsque la transition des éditeurs de CDA vers FHIR sera achevée.
+Les évolutions de ce guide d’implémentation sont limitées à des corrections techniques. Ce guide d'implémentation sera déprécié lorsque la transition des éditeurs de CDA vers FHIR sera achevée.
 - La spécification technique de transport : sections <a href="description_flux.html">Volume 2 - Détail des transactions</a> et <a href="artifacts.html">Ressources de conformité</a>
 - Les annexes : 
    * <a href="mapping_fonctionnel_FHIR.html"> Mapping FHIR du modèle de contenu DUI</a>
@@ -58,7 +58,7 @@ Les évolutions de ce guide d’implémentation sont limitées à des correction
    * <a href="annexes_acronymes.html">Acronymes</a>
    * <a href="annexes_codes_professions_roles_modes_exercices.html">Professions du médico-social</a>
    * <a href="securite.html">Sécurité</a>
-   * <a href="downloads.html">Télerchargement et usages</a>
+   * <a href="downloads.html">Téléchargement et usages</a>
 
 ### Lectorat cible
 

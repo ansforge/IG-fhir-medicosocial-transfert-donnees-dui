@@ -1,0 +1,26 @@
+@startuml
+skinparam shadowing false
+skinparam sequenceMessageAlign center
+title Constitution et transmission du RAMA
+
+actor "Médecin\ncoordonnateur" as MC
+actor "Directeur" as DIR
+participant "Logiciel DUI\n(EHPAD)" as DUI #PaleGreen
+participant "SIDOBA\n(CNSA)" as SIDOBA #YellowGreen
+
+== Pendant l'année N-1 ==
+
+loop Régulièrement pendant l'année
+    DUI -> DUI : Enregistrement des données\ndes dossiers usagers
+    DUI -> SIDOBA : Envoi individuel des\ndonnées de chaque résident
+end
+== Campagne RAMA ==
+SIDOBA -> SIDOBA : Agrégation des données\nindividuelles par rubrique
+SIDOBA -> SIDOBA : Génération du fichier en local
+SIDOBA --> MC : Rapport pré-rempli\npour l'établissement
+MC -> MC : Vérification, complément\net renseignement des rubriques\nnon issues du DUI
+MC -> DIR : Transmission du rapport
+DIR -> DIR : Cosignature du rapport
+DIR -> SIDOBA : Transmission\nannuelle du RAMA
+
+@enduml
