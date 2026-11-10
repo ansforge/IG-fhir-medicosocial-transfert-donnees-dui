@@ -2,12 +2,12 @@
 
 ### Définition des Processus collaboratif
 
-Cette page décrit le processus collaboratif commun aux cas d’usage du volet : l'export de tout ou partie des données d’un logiciel DUI vers un système cible. Les modalités propres à chaque cas d’usage sont détaillées dans la section [Cas d’usage](sfe_cas_usage.html).
+Cette page décrit le processus collaboratif commun aux cas d’usage du volet : le transfert de tout ou partie des données d’un logiciel DUI vers un système cible. Les modalités propres à chaque cas d’usage sont détaillées dans la section [Cas d’usage](sfe_cas_usage.html).
 
 Le processus collaboratif retenus dans le périmètre de la présente étude est représenté à l'aide d'un diagramme représentant les systèmes et rôles mis en jeu. Les *Rôles* relèvent du générique.
 
 <!-- commande pour insérer un fichier plantuml dans un fichier .md -->
-<div style="text-align:center;">{%include processus_export_dui.svg%}</div>
+<div style="text-align:center;">{%include processus_transfert_dui.svg%}</div>
 
 <table style="width:100%">
   <tr>
@@ -69,7 +69,7 @@ Le processus collaboratif retenus dans le périmètre de la présente étude est
 
 ### Identification des flux
 
-Le processus collaboratif « Export des données d’un logiciel DUI » s’appuie sur les flux suivants.
+Le processus collaboratif « Transfert des données d’un logiciel DUI » s’appuie sur les flux suivants.
 
 <div style="text-align:center;">
 {%include flux1_fonctionnel.svg%}
