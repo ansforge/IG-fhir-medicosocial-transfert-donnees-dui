@@ -16,9 +16,9 @@ Ces cas d’usage s’inscrivent dans le cadre du programme décliné en France,
 
 Il s'agit du transfert des données d’un logiciel DUI correspondant aux Services de soins infirmiers à domicile (SSIAD) vers un SI-tiers pour renforcer la connaissance et le pilotage de la branche médico-sociale grâce aux données financières, d'activités des ESMS, etc.
 
-La mise en œuvre de ce cas d'usage se matérialise par l'export partiel de données portant sur l’activité des Services de soins infirmiers à domicile (SSIAD) destinés aux personnages âgées et aux personnes handicapées, vers le système d’information de la CNSA (<a href="https://www.cnsa.fr/informations-thematiques/systeme-dinformation-et-numerique/sidoba">SIDOBA</a> = système d’information de l’offre de la branche autonomie).
+La mise en œuvre de ce cas d'usage se matérialise par le transfert partiel de données portant sur l’activité des Services de soins infirmiers à domicile (SSIAD) destinés aux personnages âgées et aux personnes handicapées, vers le système d’information de la CNSA (<a href="https://www.cnsa.fr/informations-thematiques/systeme-dinformation-et-numerique/sidoba">SIDOBA</a> = système d’information de l’offre de la branche autonomie).
 
-Plus précisément les données exportées se caractérisent par :
+Plus précisément les données transferées se caractérisent par :
 * les principales données autour de l'identité de l'usager ;
 * les informations sur le séjour de l'usager ;
 * l'évaluation de l'autonomie de l'usager accompagnée (ou non) de ses grilles ; d'évaluation structurées ou non structurées ;
@@ -33,11 +33,11 @@ Pour ce cas d'usage les modalités d’envoi des données usager au SI-tiers son
 
 #### Cas d'usage SERAFIN
 
- Ce cas d'usage permet d'ajouter au flux d'extraction les données du Projet personnalisé.
+ Ce cas d'usage permet d'ajouter au flux de transmission les données du Projet personnalisé.
  
  Le Projet personnalisé est un outil de coordination visant à répondre à long terme aux besoins et attentes de la personne accueillie. Il est conçu pour et, si possible, avec la personne prise en charge.
 
-  L'export du Projet personnalisé est composé des éléments métiers suivants :
+  Le transfert du Projet personnalisé est composé des éléments métiers suivants :
   * le Projet Personnalisé de l'usager ;
   * les Attentes de l'usager que le professionnel a intégrées au Projet personnalisé ; 
   * les Besoins de l'usager que le professionnel a intégrés au Projet personnalisé ;  
