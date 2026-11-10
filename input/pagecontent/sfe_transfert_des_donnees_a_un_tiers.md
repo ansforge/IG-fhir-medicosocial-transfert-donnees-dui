@@ -1,9 +1,15 @@
-
+{% include figure-caption.html %}
 
 ### Définition des Processus collaboratif
 
-<!-- commande pour insérer un fichier plantuml dans un fichier .md -->
-<div style="text-align:center;">{%include processus_export_dui.svg%}</div>
+Cette page décrit le processus collaboratif commun aux cas d’usage du volet : le transfert de tout ou partie des données d’un logiciel DUI vers un système cible. Les modalités propres à chaque cas d’usage sont détaillées dans la section [Cas d’usage](sfe_cas_usage.html).
+
+Le processus collaboratif retenus dans le périmètre de la présente étude est représenté à l'aide d'un diagramme représentant les systèmes et rôles mis en jeu. Les *Rôles* relèvent du générique.
+
+<figure style="text-align:center;">
+{%include processus_transfert_dui.svg%}
+<figcaption>Processus collaboratif "Transfert des données d'un logiciel DUI" </figcaption>
+</figure>
 
 <table style="width:100%">
   <tr>
@@ -15,12 +21,17 @@
   <td>
   <ul>
   <li>Un SI Tiers a demandé à l’ESSMS de lui transmettre tout ou partie des données médico-sociales de l’usager.</li>
+  <li>l’ESSMS est tenu de transmettre ses données dans le cadre d’une obligation réglementaire (ex : RAMA)</li>
   </ul>
   </td>
   </tr>
   <tr>
     <th>Post-conditions</th>
-    <td>N/A</td>
+    <td>
+    <ul>
+        <li>Le système cible a reçu les données transmises et peut les exploiter.</li>
+      </ul>
+    </td>
   </tr>
   <tr>
     <th>Contraintes fonctionnelles</th>
@@ -36,34 +47,33 @@
 
 ### Liste des acteurs pour l’ensemble des processus
 
-#### Le producteur 
-
-Le rôle de producteur incarné par un système correspond à l’acteur à l’origine de l’export des données d’un logiciel DUI.
-
-#### Le consommateur
-
-Le rôle de consommateur incarné par un système se caractérise par réceptionner puis importer l’export des données DUI dans son système (SI-tiers). 
+{% sql {
+  "query" : "
+    SELECT
+      Title,
+      Description,
+      REPLACE(Purpose, '**Exemples**', '') AS Purpose,
+      Web
+    FROM Resources
+    WHERE Type = 'ActorDefinition'
+    ORDER BY Title
+  ",
+  "class" : "lines",
+  "columns" : [
+    {
+      "title" : "Acteur", "type" : "link", "source" : "Title", "target" : "Web" },
+    {
+      "title" : "Description", "type" : "markdown", "source" : "Description" },
+    {
+      "title" : "Exemples", "type" : "markdown", "source" : "Purpose" }
+  ]
+} %}
 
 ### Identification des flux
 
-<table style="width:100%">
-  <tr>
-    <th>Processus métier</th>
-    <th>Flux techniques</th>
-  </tr>
-  <tr>
-    <td rowspan="2">
-      <ul>
-      <li>Export des données d'un logiciel DUI</li>
-      </ul>
-    </td>
-    <td>
-      <ul>
-      <li>Flux 1.1 - Transmission de données DUI</li>
-      <li>Flux 1.2 - Résultat de la transmission de données DUI</li>
-      </ul>
-      {%include flux1_fonctionnel.svg%} <br>
-      Lien vers la description détaillée : <a href="description_flux_1_transmission_donnees_dui.html">flux 1</a>
-    </td>
-  </tr>
-</table>
+Le processus collaboratif « Transfert des données d’un logiciel DUI » s’appuie sur les flux suivants.
+
+<figure style="text-align:center;">
+{%include flux1_fonctionnel.svg%}
+<figcaption>Modélisation du cas d'usage </figcaption>
+</figure>
