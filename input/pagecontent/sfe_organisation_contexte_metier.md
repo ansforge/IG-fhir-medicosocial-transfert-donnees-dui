@@ -3,7 +3,10 @@ Les groupes de processus « Transfert des données d'un logiciel DUI » et « Su
 
 <!-- object data="contexte_metier.svg"  style="width:100%" type="image/svg+xml"></object -->
 <!-- commande pour insérer un fichier plantuml dans un fichier .md -->
-<div style="text-align:center;">{%include orga_contexte_metier_etude.svg%}</div>
+<figure style="text-align:center;">
+{%include orga_contexte_metier_etude.svg%}
+<figcaption>Organisation du contexte métier</figcaption>
+</figure>
 
 Le périmètre de l'étude englobe les processus en bleu sur le diagramme de paquetage. 
 

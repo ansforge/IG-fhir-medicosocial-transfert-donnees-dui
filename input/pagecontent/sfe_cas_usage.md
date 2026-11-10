@@ -129,7 +129,6 @@ Ce cas d'usage propose de **constituer le RAMA à partir des données des dossie
 **Textes encadrant le RAMA et son contenu :**
 
 <div style="background-color: #e8f4f8; border-left: 4px solid #0077be; padding: 15px; margin: 20px 0;color: #333333; font-size: 14px;">
-
 <ul>
 <li>Article D. 312-158 du code de l'action sociale et des familles (CASF) : élaboration du RAMA par le médecin coordonnateur, dans sa version issue du décret n° 2025-897 du 4 septembre 2025. Le contenu du rapport est fixé par arrêté et fait l'objet d'une remontée nationale à la CNSA en vue d'un traitement automatisé des données.</li>
 <li>Arrêté du 6 février 2026 fixant le modèle type du rapport annuel d'activité médicale, à utiliser dès le RAMA portant sur l'année 2025.</li>
@@ -137,7 +136,7 @@ Ce cas d'usage propose de **constituer le RAMA à partir des données des dossie
 </ul>
 </div>
 
-**Contenu du Rapport** 
+**Contenu du Rapport :** 
 
 Le modèle du rapport est ainsi fixé par l'arrêté du 6 février 2026, il s'organise autour de grandes rubriques métier. Pour chacune, le DUI de l'EHPAD détient tout ou partie des informations nécessaires, à partir des dossiers des résidents.
 
@@ -150,22 +149,20 @@ Le modèle du rapport est ainsi fixé par l'arrêté du 6 février 2026, il s'or
 
 Le RAMA offre ainsi une vision plus médicale du séjour du résident que les cas d'usage précédents. C'est pourquoi ce cas d'usage introduit une nouvelle catégorie de données dans le contenu du DUI : les **Soins**. 
 
-**Définitions et cadre juridique spécifiques à ce cas d'usage**
+**Définitions et cadre juridique spécifiques à ce cas d'usage :**
 
-> EHPAD : Un EHPAD (établissement d’hébergement pour personnes âgées dépendantes) est un établissement d'hébergement médicalisé qui accueille des personnes âgées dépendantes.
+> **EHPAD** : Un EHPAD (établissement d’hébergement pour personnes âgées dépendantes) est un établissement d'hébergement médicalisé qui accueille des personnes âgées dépendantes.
 > - Il relève de la catégorie des établissements accueillant des personnes âgées et leur apportant une assistance dans les actes quotidiens de la vie, des prestations de soins ou une aide à l’insertion sociale, mentionnée à l’article L. 312-1 du CASF. Les EHPAD sont les établissements visés aux I et II de l’article L. 313-12 du CASF. Leur organisation et leur fonctionnement sont encadrés par les articles D. 312-155-0 à D. 312-159-2.
-> - Selon l’article D. 312-155-0, l’EHPAD héberge à temps complet ou partiel, à titre permanent ou temporaire, des personnes âgées. Pour assurer ses missions, il dispose d’une équipe pluridisciplinaire comprenant au moins un médecin coordonnateur et un infirmier coordonnateur. Cette distinction entre hébergement permanent et hébergement temporaire est importante pour le RAMA, dont une partie des données porte sur les résidents en hébergement permanent</p>
-
-> Médecin coordonateur : Le médecin coordonateur est le médecin de l’EHPAD chargé de missions de coordination de la prise en charge. Sous la responsabilité et l’autorité administratives du directeur de l’établissement, il assure l’encadrement médical de l’équipe soignante. 
+> - Selon l’article D. 312-155-0, l’EHPAD héberge à temps complet ou partiel, à titre permanent ou temporaire, des personnes âgées. Pour assurer ses missions, il dispose d’une équipe pluridisciplinaire comprenant au moins un médecin coordonnateur et un infirmier coordonnateur. Cette distinction entre hébergement permanent et hébergement temporaire est importante pour le RAMA, dont une partie des données porte sur les résidents en hébergement permanentMédecin coordonateur** : Le médecin coordonateur est le médecin de l’EHPAD chargé de missions de coordination de la prise en charge. Sous la responsabilité et l’autorité administratives du directeur de l’établissement, il assure l’encadrement médical de l’équipe soignante. 
 > - Tout établissement hébergeant des personnes âgées dépendantes relevant du I de l’article L. 312-1 du CASF doit se doter d’un médecin coordonnateur (article D. 312-156). Celui-ci ne peut pas exercer la fonction de directeur de l’établissement. Ses missions sont énumérées à l’article D. 312-158 du CASF, qui prévoit notamment l’élaboration du RAMA avec le concours de l’équipe soignante.
 > - La fonction est encadrée par le CASF, complété récemment par le décret n° 2025-897 du 4 septembre 2025.
 
-**Modélisation du cas d'usage**
+**Modélisation du cas d'usage :**
 
-<div style="text-align:center;">
+<figure style="text-align:center;">
 {%include sfe_cas_usage_RAMA.svg%}
 <figcaption>Modélisation du cas d'usage </figcaption>
-</div>
+</figure>
 
 #### Définitions et cadre juridique
 
@@ -209,7 +206,7 @@ L'usager peut accéder à son propre DUI, la loi n° 2002-2 du 2 janvier 2002 ga
 
 ##### Dépendance, AGGIR, GIR et PATHOS
 
-La dépendance, ou perte d’autonomie, désigne la situation d’une personne qui, du fait de son état physique ou mental, a besoin d’aide pour accomplir les actes essentiels de la vie quotidienne. En EHPAD, elle est mesurée avec la grille AGGIR, tandis que les soins requis sont mesurés avec le référentiel PATHOS : les deux outils sont complémentaires mais ne mesurent pas la même chose.
+La dépendance, ou perte d’autonomie, désigne la situation d’une personne qui, du fait de son état physique ou mental, a besoin d’aide pour accomplir les actes essentiels de la vie quotidienne. En EHPAD, elle est mesurée avec la grille AGGIR, tandis que les soins requis sont mesurés avec le référentiel PATHOS.
 
 * AGGIR et GIR : AGGIR (Autonomie Gérontologique Groupes Iso-Ressources) est la grille nationale d’évaluation de la perte d’autonomie des personnes âgées. À partir de variables observant ce que la personne accomplit seule (cohérence, orientation, toilette, habillage, alimentation, élimination, transferts, déplacements…), elle classe la personne dans un groupe iso-ressources (GIR). Il existe six GIR, de GIR 1 (perte d’autonomie la plus forte) à GIR 6 (autonomie conservée pour les actes essentiels de la vie courante). La grille est fixée par le CASF (articles L. 232-2 et R. 232-3, annexe 2-1). Dans l’EHPAD, l’évaluation est conduite sous la responsabilité du médecin coordonnateur.
 
