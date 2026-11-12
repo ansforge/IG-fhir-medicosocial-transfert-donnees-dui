@@ -1,0 +1,22 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "a4ab3f84-f24b-47e0-961a-2fa808d838a0-315",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/a4ab3f84-f24b-47e0-961a-2fa808d838a0-315",
+  "name" : "IntersectionTDDUISerafinAndTDDUISerafin",
+  "title" : "Intersection of TDDUI SERAFIN And TDDUI SERAFIN",
+  "status" : "active",
+  "date" : "2026-07-22T14:22:27+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France (la)"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["https://mos.esante.gouv.fr/NOS/JDV_J283-PrestationsIndirects_SERAFIN/FHIR/JDV-J283-PrestationsIndirects-SERAFIN",
+      "https://mos.esante.gouv.fr/NOS/JDV_J284-PrestationsDirects_SERAFIN/FHIR/JDV-J284-PrestationsDirects-SERAFIN"]
+    }]
+  }
+}

@@ -1,0 +1,63 @@
+# TDDUI Encounter Identifier - Médicosocial - Transfert de données DUI v2.4.0
+
+## CodeSystem: TDDUI Encounter Identifier 
+
+ 
+CodeSystem pour la définition des codes d'identifiant de séjour 
+
+Ce système de codes est référencé dans la définition des ensembles de valeurs suivants :
+
+* [TDDUIEncounterIdentifier](ValueSet-tddui-encounter-identifier.md)
+
+-------
+
+ [Description du (des) tableau(x) ci-dessus](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "CodeSystem",
+  "id" : "tddui-encounter-identifier",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem"]
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-encounter-identifier",
+  "version" : "2.4.0",
+  "name" : "TDDUIEncounterIdentifier",
+  "title" : "TDDUI Encounter Identifier",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-07-22T15:59:08+00:00",
+  "publisher" : "ANS",
+  "contact" : [{
+    "name" : "ANS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "CodeSystem pour la définition des codes d'identifiant de séjour",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France (la)"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "SEJ",
+    "display" : "Identifiant du séjour"
+  },
+  {
+    "code" : "NUMDOSS",
+    "display" : "Numéro de dossier administratif du séjour"
+  }]
+}
+
+```

@@ -1,0 +1,68 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/tddui/Observation/tddui-observation-repas-example> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "tddui-observation-repas-example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-repas" ;
+       fhir:index 0 ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-observation-repas>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : Observation tddui-observation-repas-example</b></p><a name=\"tddui-observation-repas-example\"> </a><a name=\"hctddui-observation-repas-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-observation-repas.html\">TDDUI Observation Repas</a></p></div><p><b>TDDUI Participant Present</b>: true</p><p><b>identifier</b>: Identifiant du repas/3480787529/1012-REPAS-0002</p><p><b>status</b>: Registered</p><p><b>category</b>: <span title=\"Codes :{https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r425-type-repas 1}\">Petit-déjeuner</span></p><p><b>code</b>: <span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-type REPAS}\">Repas</span></p><p><b>subject</b>: <a href=\"Patient-tddui-patient-ins-example.html\">DUPONT  Male, Date de Naissance :1947-04-03 ( Patient internal identifier: 3480787529/194704032)</a></p><p><b>effective</b>: 2025-04-17 12:00:00+0200</p></div><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Observation tddui-observation-repas-example</b></p><a name=\"en-tddui-observation-repas-example\"> </a><a name=\"en-hctddui-observation-repas-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tddui-observation-repas.html\">TDDUI Observation Repas</a></p></div><p><b>TDDUI Participant Present</b>: true</p><p><b>identifier</b>: Identifiant du repas/3480787529/1012-REPAS-0002</p><p><b>status</b>: Registered</p><p><b>category</b>: <span title=\"Codes:{https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r425-type-repas 1}\">Petit-déjeuner</span></p><p><b>code</b>: <span title=\"Codes:{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-type REPAS}\">Repas</span></p><p><b>subject</b>: <a href=\"Patient-tddui-patient-ins-example.html\">DUPONT  Male, DoB: 1947-04-03 ( Patient internal identifier: 3480787529/194704032)</a></p><p><b>effective</b>: 2025-04-17 12:00:00+0200</p></div></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-participant-present" ] ;
+     fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+  ] ;
+  fhir:Observation.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-identifier" ] ;
+         fhir:Coding.code [ fhir:value "REP" ]
+       ]
+     ] ;
+     fhir:Identifier.system [ fhir:value "https://identifiant-medicosocial-repas.esante.gouv.fr" ] ;
+     fhir:Identifier.value [ fhir:value "3480787529/1012-REPAS-0002" ]
+  ] ;
+  fhir:Observation.status [ fhir:value "registered"] ;
+  fhir:Observation.category [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r425-type-repas" ] ;
+       fhir:Coding.code [ fhir:value "1" ]
+     ]
+  ] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-observation-type" ] ;
+       fhir:Coding.code [ fhir:value "REPAS" ] ;
+       fhir:Coding.display [ fhir:value "Repas" ]
+     ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-patient-ins-example> ;
+     fhir:Reference.reference [ fhir:value "Patient/tddui-patient-ins-example" ]
+  ] ;
+  fhir:Observation.effectiveDateTime [ fhir:value "2025-04-17T12:00:00+02:00"^^xsd:dateTime] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/tddui/Observation/tddui-observation-repas-example.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

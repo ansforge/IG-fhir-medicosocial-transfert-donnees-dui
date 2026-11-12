@@ -1,0 +1,30 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "9f4dc030-5b0a-4a43-b630-f6c17c7697a6-290",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9f4dc030-5b0a-4a43-b630-f6c17c7697a6-290",
+  "name" : "UnionTDDUIEncounterTypeAndTDDUIEncounterType",
+  "title" : "Union of TDDUI Encounter Type And TDDUI Encounter Type",
+  "status" : "active",
+  "date" : "2026-07-22T16:01:42+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France (la)"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-type"]
+    },
+    {
+      "valueSet" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-serafin"]
+    },
+    {
+      "valueSet" : ["https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-evenement-ssiad-cisis"]
+    },
+    {
+      
+    }]
+  }
+}

@@ -1,0 +1,59 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/tddui/Task/tddui-pp-pa-task-moyen-ressource-ide-1-example> a fhir:Task ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "tddui-pp-pa-task-moyen-ressource-ide-1-example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource" ;
+       fhir:index -1 ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-task-moyen-ressource>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "fr"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : Task tddui-pp-pa-task-moyen-ressource-ide-1-example</b></p><a name=\"tddui-pp-pa-task-moyen-ressource-ide-1-example\"> </a><a name=\"hctddui-pp-pa-task-moyen-ressource-ide-1-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-task-moyen-ressource.html\">TDDUI Task MoyenRessource</a></p></div><p><b>identifier</b>: <code>https://identifiant-medicosocial-moyenressource.esante.gouv.fr</code>/3480787529/123456789-MORE-1236</p><p><b>basedOn</b>: <a href=\"CarePlan-tddui-pp-pa-careplan-example.html\">CarePlan Projet personnalisé de Mme Jeanne L.</a></p><p><b>partOf</b>: <a href=\"Task-tddui-pp-pa-task-action-1-ide-example.html\">Task : identifier = https://identifiant-medicosocial-action.esante.gouv.fr#3480787529/123456789-ACTI-1236; status = in-progress; intent = plan; description = Atelier éducation risque de chute</a></p><p><b>status</b>: In Progress</p><p><b>intent</b>: plan</p><p><b>description</b>: Temps de coordination IDE/médecin coordonnateur</p><h3>Inputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes :{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-moyen-ressource titre}\">Titre du moyen ou de la ressource à utiliser.</span></td><td>Moyens mis en œuvre pour l'objectif 1 (avec rattachement SERAFIN‑PH)</td></tr></table></div>"
+  ] ;
+  fhir:Task.identifier [
+     fhir:index -1 ;
+     fhir:Identifier.system [ fhir:value "https://identifiant-medicosocial-moyenressource.esante.gouv.fr" ] ;
+     fhir:Identifier.value [ fhir:value "3480787529/123456789-MORE-1236" ]
+  ] ;
+  fhir:Task.basedOn [
+     fhir:index -1 ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/CarePlan/tddui-pp-pa-careplan-example> ;
+     fhir:Reference.reference [ fhir:value "CarePlan/tddui-pp-pa-careplan-example" ]
+  ] ;
+  fhir:Task.partOf [
+     fhir:index -1 ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Task/tddui-pp-pa-task-action-1-ide-example> ;
+     fhir:Reference.reference [ fhir:value "Task/tddui-pp-pa-task-action-1-ide-example" ]
+  ] ;
+  fhir:Task.status [ fhir:value "in-progress"] ;
+  fhir:Task.intent [ fhir:value "plan"] ;
+  fhir:Task.description [ fhir:value "Temps de coordination IDE/médecin coordonnateur"] ;
+  fhir:Task.input [
+     fhir:index -1 ;
+     fhir:Task.input.type [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-task-input-moyen-ressource" ] ;
+         fhir:Coding.code [ fhir:value "titre" ]
+       ]
+     ] ;
+     fhir:Task.input.valueString [ fhir:value "Moyens mis en œuvre pour l'objectif 1 (avec rattachement SERAFIN‑PH)" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/tddui/Task/tddui-pp-pa-task-moyen-ressource-ide-1-example.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
