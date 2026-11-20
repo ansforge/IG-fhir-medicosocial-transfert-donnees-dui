@@ -21,7 +21,7 @@ Le processus collaboratif retenus dans le périmètre de la présente étude est
   <td>
   <ul>
   <li>Un SI Tiers a demandé à l’ESSMS de lui transmettre tout ou partie des données médico-sociales de l’usager.</li>
-  <li>l’ESSMS est tenu de transmettre ses données dans le cadre d’une obligation réglementaire (ex : RAMA)</li>
+  <li>L’ESSMS est tenu de transmettre ses données dans le cadre d’une obligation réglementaire (ex : RAMA)</li>
   </ul>
   </td>
   </tr>
@@ -56,7 +56,7 @@ Le processus collaboratif retenus dans le périmètre de la présente étude est
       Web
     FROM Resources
     WHERE Type = 'ActorDefinition'
-    ORDER BY Title
+    ORDER BY Title DESC
   ",
   "class" : "lines",
   "columns" : [
@@ -75,5 +75,5 @@ Le processus collaboratif « Transfert des données d’un logiciel DUI » s’a
 
 <figure style="text-align:center;">
 {%include flux1_fonctionnel.svg%}
-<figcaption>Modélisation du cas d'usage </figcaption>
+<figcaption>Flux techniques</figcaption>
 </figure>

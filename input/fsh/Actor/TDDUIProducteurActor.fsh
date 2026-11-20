@@ -4,8 +4,7 @@ InstanceOf: ActorDefinition
 Title: "TDDUI Producteur"
 Usage: #definition
 Description: """
-Le rôle de producteur incarné par un système correspond à l’acteur à l’origine de l’export des données d’un logiciel DUI.
-"""
+Le producteur, incarné par un système, correspond à l’acteur à l’origine du transfert de données."""
 * purpose = """
 **Exemples**
 - Logiciel DUI d’un EHPAD (cas d'usage RAMA)

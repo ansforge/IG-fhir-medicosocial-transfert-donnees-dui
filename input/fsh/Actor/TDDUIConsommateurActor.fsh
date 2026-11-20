@@ -4,17 +4,17 @@ InstanceOf: ActorDefinition
 Title: "TDDUI Consommateur"
 Usage: #definition
 Description: """
-Le rôle de consommateur incarné par un système se caractérise par réceptionner puis importer l’export des données DUI dans son système (SI-tiers).
+Le consommateur, incarné par un système, réceptionne puis importe les données DUI transférées.
 """
 * purpose = """
 **Exemples**
-- SIDOBA (cas d'usage SSIAD et RAMA)
-- SI tiers destinataire d’un transfert pour le cas d’usage SERAFIN
+- SIDOBA
+- SI tiers
 """
 * documentation = """
 **Exemples**
-- SIDOBA (cas d'usage SSIAD et RAMA)
-- SI tiers destinataire d’un transfert pour le cas d’usage SERAFIN
+- SIDOBA 
+- SI tiers
 """
 * name = "TDDUIConsommateurActor"
 * title = "TDDUI Consommateur"
