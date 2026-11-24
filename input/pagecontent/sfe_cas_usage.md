@@ -128,7 +128,7 @@ Ce cas d'usage propose de constituer le RAMA à partir des données des dossiers
 
 **Contenu du Rapport :**
 
-Le RAMA et son contenu sont encadrés par des textes juridiques disponibles dans la partie [Définitions et cadre juridique](#rapport-dactivité-médicale-annuelle-rama).
+Le RAMA et son contenu sont encadrés par des textes juridiques présentés dans la partie [définitions et cadre juridique](#rapport-dactivité-médicale-annuelle-rama).
 Le modèle du rapport est ainsi fixé par l'arrêté du 6 février 2026, il s'organise autour de grandes rubriques métier. Pour chacune, le DUI de l'EHPAD détient tout ou partie des informations nécessaires, à partir des dossiers des résidents.
 
 - **Population en hébergement permanent** : caractéristiques des résidents accueillis (âge, durée de séjour, mesures de protection, personne de confiance, directives anticipées) et leur niveau de dépendance.
@@ -173,7 +173,7 @@ Le médecin coordonateur est le médecin de l’EHPAD chargé de missions de coo
 
 L'usager est une personne bénéficiant d'un accompagement médico-social, qu'il soit ou non accueilli dans une ESSMS.
 
-*cas d'usage RAMA :* L’usager est la personne âgée accueillie dans un EHPAD, que le RAMA désigne par le terme de « résident ». Elle bénéficie d’un accompagnement personnalisé par une équipe pluridisciplinaire (médecin coordonnateur, infirmiers, aides-soignants, psychologues), qui élabore un projet de soins adapté à son niveau de perte d’autonomie (évalué via la grille AGGIR).
+*Cas d'usage RAMA :* L’usager est la personne âgée accueillie dans un EHPAD, que le RAMA désigne par le terme de « résident ». Elle bénéficie d’un accompagnement personnalisé par une équipe pluridisciplinaire (médecin coordonnateur, infirmiers, aides-soignants, psychologues), qui élabore un projet de soins adapté à son niveau de perte d’autonomie (évalué via la grille AGGIR).
 
 
 La loi n° 2002-2 du 2 janvier 2002 rénovant l’action sociale et médico-sociale est le socle de la réglementation actuelle en EHPAD (et dans les ESSMS en général) pour garantir les droits de la personne accueillie. Elle impose la mise en place de sept outils :
@@ -188,9 +188,9 @@ La loi n° 2002-2 du 2 janvier 2002 rénovant l’action sociale et médico-soci
 
 La loi n° 2024-317 du 8 avril 2024 portant mesures pour bâtir la société du bien vieillir et de l’autonomie fait évoluer la réglementation et renforce les garanties offertes aux résidents hébergés en établissement.
 
-*cas d'usage SSIAD :* L’usager est la personne prise en charge à son domicile par un service de soins infirmiers à domicile, sur prescription médicale : personne âgée de 60 ans et plus, malade ou en perte d’autonomie, ou personne en situation de handicap. Depuis 2023, les SSIAD évoluent vers des services autonomie à domicile (SAD), dont les publics sont définis à l’article D. 312-1 du CASF.
+*Cas d'usage SSIAD :* L’usager est la personne prise en charge à son domicile par un service de soins infirmiers à domicile, sur prescription médicale : personne âgée de 60 ans et plus, malade ou en perte d’autonomie, ou personne en situation de handicap. Depuis 2023, les SSIAD évoluent vers des services autonomie à domicile (SAD), dont les publics sont définis à l’article D. 312-1 du CASF.
 
-*cas d'usage SERAFIN :* L’usager est la personne en situation de handicap accompagnée par un ESSMS, sur notification de la maison départementale des personnes handicapées (MDPH). SERAFIN-PH (Services et Établissements : Réforme pour une Adéquation des FINancements aux parcours des Personnes Handicapées) est la réforme de la tarification de ces ESSMS. Elle repose sur deux nomenclatures, des besoins et des prestations, qui offrent un langage commun pour décrire l’accompagnement des usagers.
+*Cas d'usage SERAFIN :* L’usager est la personne en situation de handicap accompagnée par un ESSMS, sur notification de la maison départementale des personnes handicapées (MDPH). SERAFIN-PH (Services et Établissements : Réforme pour une Adéquation des FINancements aux parcours des Personnes Handicapées) est la réforme de la tarification de ces ESSMS. Elle repose sur deux nomenclatures, des besoins et des prestations, qui offrent un langage commun pour décrire l’accompagnement des usagers.
 
 ##### DUI
 

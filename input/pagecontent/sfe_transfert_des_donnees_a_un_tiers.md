@@ -75,5 +75,5 @@ Le processus collaboratif « Transfert des données d’un logiciel DUI » s’a
 
 <figure style="text-align:center;">
 {%include flux1_fonctionnel.svg%}
-<figcaption>Flux techniques</figcaption>
+<figcaption>Identification des flux</figcaption>
 </figure>
