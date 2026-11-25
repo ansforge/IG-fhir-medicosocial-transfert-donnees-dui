@@ -1,0 +1,20 @@
+@startuml
+skinparam shadowing false
+skinparam sequenceMessageAlign center
+ 
+actor "Professionnel" as P
+participant "Logiciel DUI\n(EHPAD)" as DUI #PaleGreen
+participant "SIDOBA\n(CNSA)" as SIDOBA #YellowGreen
+ 
+== Pendant l'année N-1 ==
+ 
+loop Régulièrement pendant l'année
+    P -> DUI : Alimentation du dossier usager
+    DUI -> DUI : Enregistrement des données\ndes dossiers usagers
+    DUI -> SIDOBA : Transmission des\ndonnées usager
+end
+== Campagne RAMA ==
+SIDOBA -> SIDOBA : Agrégation des données\nindividuelles par rubrique
+SIDOBA -> SIDOBA : Génération du RAMA en local
+ 
+@enduml

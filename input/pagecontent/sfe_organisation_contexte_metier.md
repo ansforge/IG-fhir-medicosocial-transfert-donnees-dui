@@ -3,13 +3,16 @@ Les groupes de processus « Transfert des données d'un logiciel DUI » et « Su
 
 <!-- object data="contexte_metier.svg"  style="width:100%" type="image/svg+xml"></object -->
 <!-- commande pour insérer un fichier plantuml dans un fichier .md -->
-<div style="text-align:center;">{%include orga_contexte_metier_etude.svg%}</div>
+<figure style="text-align:center;">
+{%include orga_contexte_metier_etude.svg%}
+<figcaption>Organisation du contexte métier</figcaption>
+</figure>
 
 Le périmètre de l'étude englobe les processus en bleu sur le diagramme de paquetage. 
 
 ### Transfert des données d'un logiciel DUI
 
-Le groupe de processus « Transfert des données d’un logiciel DUI » comprend le sous-groupe de processus « Export des données d’un logiciel DUI ». Ce processus décrit l’export des données d’un logiciel DUI vers un système cible (ou consommateur) dont le rôle est de réceptionner et d’importer les données dans son système (SI-tiers).
+Le groupe de processus « Transfert des données d’un logiciel DUI » comprend le processus « Transfert des données d’un logiciel DUI ». Ce processus décrit l’acheminement et la mise à disposition des données d’un logiciel DUI vers un système cible (ou consommateur) dont le rôle est de réceptionner et d’importer les données dans son système (SI-tiers).
 
 ### Suivi des décisions d’orientation
 
