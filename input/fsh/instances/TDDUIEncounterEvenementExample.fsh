@@ -34,9 +34,8 @@ Usage: #example
 
 * location.location = Reference(tddui-event-location-example)
 
-* extension[TDDUIRessourcesUsed].extension[TDDUIRessourceType].valueCodeableConcept.coding.system = "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis"
-* extension[TDDUIRessourcesUsed].extension[TDDUIRessourceType].valueCodeableConcept.coding.code = #ORG-206
-* extension[TDDUIRessourcesUsed].extension[TDDUIRessourceType].valueCodeableConcept.coding.display = "Matériel spécialisé"
+* extension[TDDUIRessourcesUsed].extension[TDDUIRessourceType].valueCodeableConcept.coding.system = "http://snomed.info/sct"
+* extension[TDDUIRessourcesUsed].extension[TDDUIRessourceType].valueCodeableConcept.coding.code = #261324000
 * extension[TDDUIRessourcesUsed].extension[TDDUIMaterialDetail].valueCodeableConcept.coding.system = "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis"
 * extension[TDDUIRessourcesUsed].extension[TDDUIMaterialDetail].valueCodeableConcept.coding.code = #ORG-208
 * extension[TDDUIRessourcesUsed].extension[TDDUIMaterialDetail].valueCodeableConcept.coding.display = "Materiel médical"
