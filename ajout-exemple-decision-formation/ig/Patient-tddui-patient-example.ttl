@@ -1,0 +1,132 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-patient-example> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "tddui-patient-example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient" ;
+       fhir:index 0 ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : Patient tddui-patient-example</b></p><a name=\"tddui-patient-example\"> </a><a name=\"hctddui-patient-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-tddui-patient.html\">TDDUI Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">DUPONT  Male, Date de Naissance : ( Patient internal identifier: 3480787529/194704032)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Autre identifiant (voir ci-dessus)\">Autre identifiant :</td><td colspan=\"3\">Driver's license number/822146819 (, période : 1980-01-01 --&gt; (en cours))</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Noms alternatifs (voir plus bas)\">Nom alternatif :</td><td colspan=\"3\">Jean DUPONT (Official)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Moyens de contacter le Patient\">Coordonnées</td><td colspan=\"3\">12 rue des Lilas 76748 99100 (home)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The registered place of birth of the patient. A sytem may use the address.text if they don't store the birthPlace address in discrete elements.\"><a href=\"http://hl7.org/fhir/extensions/5.2.0/StructureDefinition-patient-birthPlace.html\">Patient Birth Place</a></td><td colspan=\"3\">Mazoires FRA </td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Extension complexe regroupant la situation familiale, la composition du foyer et sa description textuelle de l'usager.\">TDDUI Household Situation:</td><td colspan=\"3\"><ul><li>familySituation: <span title=\"Codes :{https://mos.esante.gouv.fr/NOS/TRE_R317-SituationVieQuotidienne/FHIR/TRE-R317-SituationVieQuotidienne 01}\">Seul</span></li></ul></td></tr></table></div><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Patient tddui-patient-example</b></p><a name=\"en-tddui-patient-example\"> </a><a name=\"en-hctddui-patient-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tddui-patient.html\">TDDUI Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">DUPONT  Male, DoB:  ( Patient internal identifier: 3480787529/194704032)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Other Id (see the one above)\">Other Id:</td><td colspan=\"3\">Driver's license number/822146819 (, period: 1980-01-01 --&gt; (ongoing))</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Alternate names (see the one above)\">Alt. Name:</td><td colspan=\"3\">Jean DUPONT (Official)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\">12 rue des Lilas 76748 99100 (home)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The registered place of birth of the patient. A sytem may use the address.text if they don't store the birthPlace address in discrete elements.\"><a href=\"http://hl7.org/fhir/extensions/5.2.0/StructureDefinition-patient-birthPlace.html\">Patient Birth Place</a></td><td colspan=\"3\">Mazoires FRA </td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Extension complexe regroupant la situation familiale, la composition du foyer et sa description textuelle de l'usager.\">TDDUI Household Situation:</td><td colspan=\"3\"><ul><li>familySituation: <span title=\"Codes:{https://mos.esante.gouv.fr/NOS/TRE_R317-SituationVieQuotidienne/FHIR/TRE-R317-SituationVieQuotidienne 01}\">Seul</span></li></ul></td></tr></table></div></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/patient-birthPlace" ] ;
+     fhir:Extension.valueAddress [
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code" ] ;
+         fhir:Extension.valueCoding [
+           fhir:Coding.system [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM" ] ;
+           fhir:Coding.code [ fhir:value "63220" ]
+         ]
+       ] ;
+       fhir:Address.city [ fhir:value "Mazoires" ] ;
+       fhir:Address.country [ fhir:value "FRA" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "familySituation" ] ;
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R317-SituationVieQuotidienne/FHIR/TRE-R317-SituationVieQuotidienne" ] ;
+           fhir:Coding.code [ fhir:value "01" ] ;
+           fhir:Coding.display [ fhir:value "Seul" ]
+         ]
+       ]
+     ] ;
+     fhir:Extension.url [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-household-situation" ]
+  ] ;
+  fhir:Patient.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ] ;
+         fhir:Coding.code [ fhir:value "PI" ] ;
+         fhir:Coding.display [ fhir:value "Patient internal identifier" ]
+       ]
+     ] ;
+     fhir:Identifier.system [ fhir:value "https://identifiant-medicosocial-localusager.esante.gouv.fr" ] ;
+     fhir:Identifier.value [ fhir:value "3480787529/194704032" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ] ;
+         fhir:Coding.code [ fhir:value "DL" ]
+       ]
+     ] ;
+     fhir:Identifier.system [ fhir:value "https://ants.gouv.fr/" ] ;
+     fhir:Identifier.value [ fhir:value "822146819" ] ;
+     fhir:Identifier.period [
+       fhir:Period.start [ fhir:value "1980-01-01"^^xsd:date ]
+     ]
+  ] ;
+  fhir:Patient.name [
+     fhir:index 0 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name" ] ;
+       fhir:Extension.valueString [ fhir:value "Jean Stéphane Patrick" ]
+     ] ;
+     fhir:HumanName.use [ fhir:value "official" ] ;
+     fhir:HumanName.family [ fhir:value "DUPONT" ] ;
+     fhir:HumanName.given [
+       fhir:value "Jean" ;
+       fhir:index 0
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:HumanName.use [ fhir:value "usual" ] ;
+     fhir:HumanName.family [ fhir:value "DUPONT" ]
+  ] ;
+  fhir:Patient.gender [ fhir:value "male"] ;
+  fhir:Patient.birthDate [
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order" ] ;
+       fhir:Extension.valuePositiveInt [ fhir:value "2"^^xsd:positiveInteger ]
+     ]
+  ] ;
+  fhir:Patient.address [
+     fhir:index 0 ;
+     fhir:Address.use [ fhir:value "home" ] ;
+     fhir:Address.line [
+       fhir:value "12 rue des Lilas" ;
+       fhir:index 0 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber" ] ;
+         fhir:Extension.valueString [ fhir:value "12" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameBase" ] ;
+         fhir:Extension.valueString [ fhir:value "rue des Lilas" ]
+       ]
+     ] ;
+     fhir:Address.postalCode [ fhir:value "76748" ] ;
+     fhir:Address.country [ fhir:value "99100" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/tddui/Patient/tddui-patient-example.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

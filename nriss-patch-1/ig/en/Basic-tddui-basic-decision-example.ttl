@@ -1,0 +1,192 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/tddui/Basic/tddui-basic-decision-example> a fhir:Basic ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "tddui-basic-decision-example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-basic-decision" ;
+       fhir:index -1 ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-basic-decision>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Basic tddui-basic-decision-example</b></p><a name=\"en-tddui-basic-decision-example\"> </a><a name=\"en-hctddui-basic-decision-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tddui-basic-decision.html\">TDDUI Basic Decision</a></p></div><blockquote><p><b>TDDUI Decision</b></p><blockquote><p><b>url</b></p>typeDecision</blockquote><p><b>value</b>: <span title=\"Codes:{https://mos.esante.gouv.fr/NOS/TRE_R327-TypeDecision/FHIR/TRE-R327-TypeDecision 1}\">Attribution</span></p><blockquote><p><b>url</b></p>motivation</blockquote><p><b>value</b>: <span title=\"Codes:{https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r419-motivation 9999}\">Autre</span></p><blockquote><p><b>url</b></p>dateEffetCloture</blockquote><p><b>value</b>: 2020-01-01</p><p><b>categorieDroitPrestation</b>: <span title=\"Codes:{https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r420-droit-prestation 8}\">Orientation scolaire</span></p><p><b>typeDroitPrestation</b>: <span title=\"Codes:{https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r420-droit-prestation 7.8}\">Orientation vers un Service d'éducation spéciale et de soins à domicile (SESSAD)</span></p><p><b>natureDroitPrestation</b>: <span title=\"Codes:{https://mos.esante.gouv.fr/NOS/TRE_R327-TypeDecision/FHIR/TRE-R327-TypeDecision 6}\">Renouvellement</span></p><p><b>dateOuverture</b>: 2020-01-01</p><p><b>dateEcheance</b>: 2020-12-31</p><p><b>existencePAG</b>: false</p><blockquote><p><b>detailPrestation</b></p><ul><li>qualificationOrientation: <span title=\"Codes:{https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r422-qualification-orientation 1}\">Cible</span></li><li>temporaliteAccueil: <span title=\"Codes:{https://mos.esante.gouv.fr/NOS/TRE_R240-TemporaliteAccueil/FHIR/TRE-R240-TemporaliteAccueil 01}\">Temporaire</span></li><li>precisionOrientation: <span title=\"Codes:{https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r426-orientation 1}\">SESSAD polyvalent</span></li><li>structureAccueil: <a href=\"Organization-tddui-organization-example.html\">Organization Les Chênes Verts</a></li></ul></blockquote><p><b>creton</b>: true</p><blockquote><p><b>url</b></p>droitPrestation</blockquote><blockquote><p><b>url</b></p>motivationLocale</blockquote><p><b>value</b>: Motivation locale pour la décision</p></blockquote><p><b>identifier</b>: Identifiant principal de la décision/1254 (use: official, ), Identifiant révisé de la décision/1255</p><p><b>code</b>: <span title=\"Codes:{https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-basic-type DECISION}\">Décision</span></p><p><b>subject</b>: <a href=\"ServiceRequest-tddui-service-request-demande-orientation-example.html\">ServiceRequest: identifier = Identifiant de la demande d'orientation; status = active; intent = plan; occurrence[x] = 2020-01-01 --&gt; 2020-01-31</a></p></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index -1 ;
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "typeDecision" ] ;
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index -1 ;
+           fhir:Coding.system [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R327-TypeDecision/FHIR/TRE-R327-TypeDecision" ] ;
+           fhir:Coding.code [ fhir:value "1" ]
+         ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "motivation" ] ;
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index -1 ;
+           fhir:Coding.system [ fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r419-motivation" ] ;
+           fhir:Coding.code [ fhir:value "9999" ]
+         ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "dateEffetCloture" ] ;
+       fhir:Extension.valueDate [ fhir:value "2020-01-01"^^xsd:date ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "categorieDroitPrestation" ] ;
+         fhir:Extension.valueCodeableConcept [
+           fhir:CodeableConcept.coding [
+             fhir:index -1 ;
+             fhir:Coding.system [ fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r420-droit-prestation" ] ;
+             fhir:Coding.code [ fhir:value "8" ]
+           ]
+         ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "typeDroitPrestation" ] ;
+         fhir:Extension.valueCodeableConcept [
+           fhir:CodeableConcept.coding [
+             fhir:index -1 ;
+             fhir:Coding.system [ fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r420-droit-prestation" ] ;
+             fhir:Coding.code [ fhir:value "7.8" ]
+           ]
+         ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "natureDroitPrestation" ] ;
+         fhir:Extension.valueCodeableConcept [
+           fhir:CodeableConcept.coding [
+             fhir:index -1 ;
+             fhir:Coding.system [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R327-TypeDecision/FHIR/TRE-R327-TypeDecision" ] ;
+             fhir:Coding.code [ fhir:value "6" ]
+           ]
+         ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "dateOuverture" ] ;
+         fhir:Extension.valueDate [ fhir:value "2020-01-01"^^xsd:date ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "dateEcheance" ] ;
+         fhir:Extension.valueDate [ fhir:value "2020-12-31"^^xsd:date ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "existencePAG" ] ;
+         fhir:Extension.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+       ], [
+         fhir:index -1 ;
+         fhir:Element.extension [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "qualificationOrientation" ] ;
+           fhir:Extension.valueCodeableConcept [
+             fhir:CodeableConcept.coding [
+               fhir:index -1 ;
+               fhir:Coding.system [ fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r422-qualification-orientation" ] ;
+               fhir:Coding.code [ fhir:value "1" ]
+             ]
+           ]
+         ], [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "temporaliteAccueil" ] ;
+           fhir:Extension.valueCodeableConcept [
+             fhir:CodeableConcept.coding [
+               fhir:index -1 ;
+               fhir:Coding.system [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R240-TemporaliteAccueil/FHIR/TRE-R240-TemporaliteAccueil" ] ;
+               fhir:Coding.code [ fhir:value "01" ]
+             ]
+           ]
+         ], [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "precisionOrientation" ] ;
+           fhir:Extension.valueCodeableConcept [
+             fhir:CodeableConcept.coding [
+               fhir:index -1 ;
+               fhir:Coding.system [ fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r426-orientation" ] ;
+               fhir:Coding.code [ fhir:value "1" ]
+             ]
+           ]
+         ], [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "structureAccueil" ] ;
+           fhir:Extension.valueReference [
+             fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/Organization/tddui-organization-example> ;
+             fhir:Reference.reference [ fhir:value "Organization/tddui-organization-example" ]
+           ]
+         ] ;
+         fhir:Extension.url [ fhir:value "detailPrestation" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "creton" ] ;
+         fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+       ] ;
+       fhir:Extension.url [ fhir:value "droitPrestation" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "motivationLocale" ] ;
+       fhir:Extension.valueString [ fhir:value "Motivation locale pour la décision" ]
+     ] ;
+     fhir:Extension.url [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-decision" ]
+  ] ;
+  fhir:Basic.identifier [
+     fhir:index -1 ;
+     fhir:Identifier.use [ fhir:value "official" ] ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-basic-decision-identifier" ] ;
+         fhir:Coding.code [ fhir:value "IDDECISION" ] ;
+         fhir:Coding.display [ fhir:value "Identifiant principal de la décision" ]
+       ]
+     ] ;
+     fhir:Identifier.system [ fhir:value "urn:oid:1.2.250.1.213.7.1" ] ;
+     fhir:Identifier.value [ fhir:value "1254" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-basic-decision-identifier" ] ;
+         fhir:Coding.code [ fhir:value "IDDECISIONMAJ" ] ;
+         fhir:Coding.display [ fhir:value "Identifiant révisé de la décision" ]
+       ]
+     ] ;
+     fhir:Identifier.system [ fhir:value "urn:oid:1.2.250.1.213.7.1" ] ;
+     fhir:Identifier.value [ fhir:value "1255" ]
+  ] ;
+  fhir:Basic.code [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/tddui/CodeSystem/tddui-basic-type" ] ;
+       fhir:Coding.code [ fhir:value "DECISION" ] ;
+       fhir:Coding.display [ fhir:value "Décision" ]
+     ]
+  ] ;
+  fhir:Basic.subject [
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/tddui/ServiceRequest/tddui-service-request-demande-orientation-example> ;
+     fhir:Reference.reference [ fhir:value "ServiceRequest/tddui-service-request-demande-orientation-example" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/tddui/Basic/tddui-basic-decision-example.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

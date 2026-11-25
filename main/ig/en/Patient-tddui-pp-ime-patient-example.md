@@ -1,0 +1,53 @@
+# TDDUI PP IME Patient Example - Médicosocial - Transfert de données DUI v2.4.0
+
+## Example Patient: TDDUI PP IME Patient Example
+
+-------
+
+**English**
+
+-------
+
+Profile: [TDDUI Patient](StructureDefinition-tddui-patient.md)
+
+Hugo D. (official) (no stated gender), DoB: 2005-09-15 ( Patient internal identifier: 3480787529/123456)
+
+-------
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Patient",
+  "id" : "tddui-pp-ime-patient-example",
+  "meta" : {
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient"]
+  },
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "PI",
+        "display" : "Patient internal identifier"
+      }]
+    },
+    "system" : "https://identifiant-medicosocial-localusager.esante.gouv.fr",
+    "value" : "3480787529/123456"
+  }],
+  "name" : [{
+    "use" : "official",
+    "family" : "D.",
+    "given" : ["Hugo"]
+  }],
+  "birthDate" : "2005-09-15",
+  "_birthDate" : {
+    "extension" : [{
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-birth-order",
+      "valuePositiveInt" : 1
+    }]
+  }
+}
+
+```

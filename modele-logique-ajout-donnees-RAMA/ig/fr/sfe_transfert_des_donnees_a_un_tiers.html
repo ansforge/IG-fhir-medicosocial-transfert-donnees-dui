@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+<html xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml" lang="fr" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Transfert des données à un tiers - Médicosocial - Transfert de données DUI v2.4.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+        <link rel="stylesheet" href="assets/css/style-ans.css"/>
+    <link rel="stylesheet" href="assets/css/style-add-ans.css"/>
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"2.3"}
+    h3,h4,h5,h6{--heading-prefix:"2.3"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+<div id="family-nav">
+    <a id="hl7-search-lnk" data-no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+  </div>
+  <div id="ans-nav" style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; ">
+    <a id="hl7-logo" data-no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
+    <a id="hl7-search-lnk" data-no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+  </div>
+
+  <div id="ig-search">
+ </div>
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">Médicosocial - Transfert de données DUI</span>
+            <br/>
+            <span style="display:inline-block;">2.4.0 - trial-use
+
+
+
+
+
+  <img alt="France (la) drapeau" src="../assets/images/fra.svg" height="16" title="France (la)"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Accueil</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Volume 1 - Etude fonctionnelle
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="sfe_cas_usage.html">Cas d&apos;usage</a>
+      </li>
+      <li>
+        <a href="sfe_organisation_contexte_metier.html">Organisation du contexte métier</a>
+      </li>
+      <li>
+        <a href="sfe_transfert_des_donnees_a_un_tiers.html">Transfert des données à un tiers</a>
+      </li>
+      <li>
+        <a href="sfe_modelisation_contenu.html">Modélisation du contenu du DUI</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Volume 2 - Détail des transactions
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="description_flux_synthese.html">Synthèse des flux</a>
+      </li>
+      <li>
+        <a href="description_flux_1_transmission_donnees_dui.html">Flux 1 - Transmission de données DUI</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Ressources de conformité</a>
+  </li>
+  <li>
+    <a href="tests.html">Tests</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Annexes
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="mapping_fonctionnel_FHIR.html">Mapping FHIR du modèle de contenu DUI</a>
+      </li>
+      <li>
+        <a href="annexes_documents_reference.html">Documents de référence</a>
+      </li>
+      <li>
+        <a href="annexes_acronymes.html">Acronymes</a>
+      </li>
+      <li>
+        <a href="annexes_codes_professions_roles_modes_exercices.html">Professions du médico-social</a>
+      </li>
+      <li>
+        <a href="securite.html">Sécurité</a>
+      </li>
+      <li>
+        <a href="downloads.html">Téléchargements et usage</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="problematiques_connues.html">Problématiques connues</a>
+  </li>
+  <li>
+    <a href="changes.html">Historique</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+
+<div style="float: var(--ig-right);padding: 8px 0px;" id="language">
+  <div id="select_flg" class="flaglist" style="background-image: url(assets/images/icon_arrow_down.png);background-position: 133px 3px;">
+    <div><img class="flag" alt="drapeau English" src="assets/images/lang-fr.png"/>Français</div>
+  </div>
+  <div style="float: var(--ig-right); margin: 2px 0px; padding: 1px 0;color: var(--btn-text-color);font-size:12px">Language:</div>
+ 	<div id="flaglist" class="flaglist" style="display: none;position: absolute;right: 0;z-index: 100;background-image: url(assets/images/icon_arrow_up.png);background-position: 133px 3px;">
+    <div><img class="flag" alt="drapeau fr" src="assets/images/lang-fr.png"/>Français</div>
+
+    <div><a href="../en/sfe_transfert_des_donnees_a_un_tiers.html"><img class="flag" src="assets/images/lang-en.png" alt="drapeau en"/>English</a></div>
+
+  </div>
+</div>
+
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='sfe.html'><b>Volume 1 - Etude fonctionnelle</b></a></li><li><b>Transfert des données à un tiers</b></li>
+
+          <span style="float: var(--ig-right);">
+
+            <a href="sfe_organisation_contexte_metier.html">&lt; précédent</a> | 
+
+            <a href="#bottom">bas de page</a>
+
+          | <a href="sfe_modelisation_contenu.html">suivant &gt;</a>
+
+          </span>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Médicosocial - Transfert de données DUI - version de développement local (intégration continue v2.4.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/fhir/tddui/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
+  <h2>Transfert des données à un tiers</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#définition-des-processus-collaboratif" id="markdown-toc-définition-des-processus-collaboratif">Définition des Processus collaboratif</a></li>
+  <li><a href="#liste-des-acteurs-pour-lensemble-des-processus" id="markdown-toc-liste-des-acteurs-pour-lensemble-des-processus">Liste des acteurs pour l’ensemble des processus</a></li>
+  <li><a href="#identification-des-flux" id="markdown-toc-identification-des-flux">Identification des flux</a></li>
+</ul>
+
+</div>
+
+<h3 id="définition-des-processus-collaboratif">Définition des Processus collaboratif</h3>
+
+<!-- commande pour insérer un fichier plantuml dans un fichier .md -->
+<div style="text-align:center;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" data-diagram-type="DESCRIPTION" style="width:555px;height:264px;background:#FFFFFF;" width="555px" height="264px" viewBox="0 0 555 264" zoomAndPan="magnify" preserveAspectRatio="none" contentStyleType="text/css"><?plantuml 1.2026.8?><defs /><g font-family="sans-serif" lengthAdjust="spacing"><!--entity P--><g class="entity" data-qualified-name="P" id="ent0001" data-source-line="2"><ellipse cx="47.476" cy="14" rx="8" ry="8" fill="#FFE4B5" style="stroke:#181818;stroke-width:0.5;" /><path d="M47.476,22 L47.476,49 M34.476,30 L60.476,30 M47.476,49 L34.476,64 M47.476,49 L60.476,64" style="stroke:#181818;stroke-width:0.5;" fill="none" /><text x="9" y="78.495" fill="#000" font-size="14" textLength="43.675">"Rôle"</text><text x="9" y="94.792" fill="#000" font-size="14" textLength="76.952">Producteur</text></g><!--entity C--><g class="entity" data-qualified-name="C" id="ent0002" data-source-line="3"><ellipse cx="486.33" cy="14" rx="8" ry="8" fill="#FFE4B5" style="stroke:#181818;stroke-width:0.5;" /><path d="M486.33,22 L486.33,49 M473.33,30 L499.33,30 M486.33,49 L473.33,64 M486.33,49 L499.33,64" style="stroke:#181818;stroke-width:0.5;" fill="none" /><text x="432.5" y="78.495" fill="#000" font-size="14" textLength="43.675">"Rôle"</text><text x="432.5" y="94.792" fill="#000" font-size="14" textLength="107.659">Consommateur</text></g><!--entity L--><g class="entity" data-qualified-name="L" id="ent0003" data-source-line="4"><ellipse cx="47.419" cy="167" rx="8" ry="8" fill="#FFE4B5" style="stroke:#181818;stroke-width:0.5;" /><path d="M47.419,175 L47.419,202 M34.419,183 L60.419,183 M47.419,202 L34.419,217 M47.419,202 L60.419,217" style="stroke:#181818;stroke-width:0.5;" fill="none" /><text x="6" y="231.495" fill="#000" font-size="14" textLength="73.698">"Système"</text><text x="6" y="247.792" fill="#000" font-size="14" textLength="82.838">Logiciel DUI</text></g><!--entity O--><g class="entity" data-qualified-name="O" id="ent0004" data-source-line="5"><ellipse cx="486.349" cy="167" rx="8" ry="8" fill="#FFE4B5" style="stroke:#181818;stroke-width:0.5;" /><path d="M486.349,175 L486.349,202 M473.349,183 L499.349,183 M486.349,202 L473.349,217 M486.349,202 L499.349,217" style="stroke:#181818;stroke-width:0.5;" fill="none" /><text x="449.5" y="231.495" fill="#000" font-size="14" textLength="73.698">"Système"</text><text x="449.5" y="247.792" fill="#000" font-size="14" textLength="51.57">SI Tiers</text></g><!--entity c--><g class="entity" data-qualified-name="c" id="ent0005" data-source-line="7"><ellipse cx="259.567" cy="52.013" rx="138.067" ry="30.013" fill="#FFE4B5" style="stroke:#181818;stroke-width:0.5;" /><text x="130.791" y="56.662" fill="#000" font-size="14" textLength="257.551">Export des données d'un logiciel DUI</text></g><!--link c to C--><g class="link" data-entity-1="ent0005" data-entity-2="ent0002" id="lnk6" data-source-line="9" data-link-type="association"><path d="M397.83,52 C409.37,52 420.92,52 432.47,52" style="stroke:#181818;stroke-width:1;" fill="none" id="c-C" /></g><!--link P to c--><g class="link" data-entity-1="ent0001" data-entity-2="ent0005" id="lnk7" data-source-line="10" data-link-type="association"><path d="M86.01,52 C97.75,52 109.5,52 121.25,52" style="stroke:#181818;stroke-width:1;" fill="none" id="P-c" /></g><!--link P to L--><g class="link" data-entity-1="ent0001" data-entity-2="ent0003" id="lnk8" data-source-line="11" data-link-type="association"><path d="M47.5,98.71 C47.5,117.64 47.5,139.53 47.5,158.44" style="stroke:#181818;stroke-width:1;" fill="none" id="P-L" /></g><!--link C to O--><g class="link" data-entity-1="ent0002" data-entity-2="ent0004" id="lnk9" data-source-line="12" data-link-type="association"><path d="M486.5,98.71 C486.5,117.64 486.5,139.53 486.5,158.44" style="stroke:#181818;stroke-width:1;" fill="none" id="C-O" /></g></g></svg></div>
+
+<table style="width:100%">
+  <tr>
+    <th>Service attendu</th>
+    <td>L'ESSMS d'origine transfère des données de son logiciel DUI vers un système cible : un SI-Tiers.</td>
+  </tr>
+  <tr>
+    <th>Pré-conditions</th>
+  <td>
+  <ul>
+  <li>Un SI Tiers a demandé à l’ESSMS de lui transmettre tout ou partie des données médico-sociales de l’usager.</li>
+  </ul>
+  </td>
+  </tr>
+  <tr>
+    <th>Post-conditions</th>
+    <td>N/A</td>
+  </tr>
+  <tr>
+    <th>Contraintes fonctionnelles</th>
+    <td>N/A</td>
+  </tr>
+  <tr>
+    <th>Scénario nominal</th>
+    <td>Scénario conforme aux cas d'usages décrits dans 
+    <a href="sfe_cas_usage.html"><span style="color:windowtext;">"Cas d'usage"</span></a>.
+    </td>
+  </tr>
+</table>
+
+<h3 id="liste-des-acteurs-pour-lensemble-des-processus">Liste des acteurs pour l’ensemble des processus</h3>
+
+<h4 id="le-producteur">Le producteur</h4>
+
+<p>Le rôle de producteur incarné par un système correspond à l’acteur à l’origine de l’export des données d’un logiciel DUI.</p>
+
+<h4 id="le-consommateur">Le consommateur</h4>
+
+<p>Le rôle de consommateur incarné par un système se caractérise par réceptionner puis importer l’export des données DUI dans son système (SI-tiers).</p>
+
+<h3 id="identification-des-flux">Identification des flux</h3>
+
+<table style="width:100%">
+  <tr>
+    <th>Processus métier</th>
+    <th>Flux techniques</th>
+  </tr>
+  <tr>
+    <td rowspan="2">
+      <ul>
+      <li>Export des données d'un logiciel DUI</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+      <li>Flux 1.1 - Transmission de données DUI</li>
+      <li>Flux 1.2 - Résultat de la transmission de données DUI</li>
+      </ul>
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" data-diagram-type="SEQUENCE" style="width:545px;height:159px;background:#FFFFFF;" width="545px" height="159px" viewBox="0 0 545 159" zoomAndPan="magnify" preserveAspectRatio="none" contentStyleType="text/css"><?plantuml 1.2026.8?><defs /><g font-family="sans-serif" lengthAdjust="spacing"><g><title>Producteur . Logiciel DUI</title><rect x="100.204" y="41.297" width="8" height="76.266" fill="#000" fill-opacity="0" /><line x1="103.704" y1="41.297" x2="103.704" y2="117.563" style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5,5;" /></g><g><title>Consommateur . SI Tiers</title><rect x="438.032" y="41.297" width="8" height="76.266" fill="#000" fill-opacity="0" /><line x1="441.532" y1="41.297" x2="441.532" y2="117.563" style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5,5;" /></g><rect x="10" y="10" width="187.407" height="30.297" fill="#E2E2F0" style="stroke:#181818;stroke-width:0.5;" rx="2.5" ry="2.5" /><text x="17" y="29.995" fill="#000" font-size="14" textLength="173.407">Producteur : Logiciel DUI</text><rect x="348.108" y="10" width="186.847" height="30.297" fill="#E2E2F0" style="stroke:#181818;stroke-width:0.5;" rx="2.5" ry="2.5" /><text x="355.108" y="29.995" fill="#000" font-size="14" textLength="172.847">Consommateur : SI Tiers</text><rect x="10" y="117.563" width="187.407" height="30.297" fill="#E2E2F0" style="stroke:#181818;stroke-width:0.5;" rx="2.5" ry="2.5" /><text x="17" y="137.558" fill="#000" font-size="14" textLength="173.407">Producteur : Logiciel DUI</text><rect x="348.108" y="117.563" width="186.847" height="30.297" fill="#E2E2F0" style="stroke:#181818;stroke-width:0.5;" rx="2.5" ry="2.5" /><text x="355.108" y="137.558" fill="#000" font-size="14" textLength="172.847">Consommateur : SI Tiers</text><polygon points="429.532,66.43,439.532,70.43,429.532,74.43,433.532,70.43" fill="#181818" style="stroke:#181818;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;" /><line x1="103.704" y1="70.43" x2="435.532" y2="70.43" style="stroke:#181818;stroke-width:1;" /><text x="110.704" y="65.364" fill="#000" font-size="13" textLength="51.829">Flux 1.1</text><text x="166.665" y="65.364" fill="#000" font-size="13" textLength="194.518" font-weight="700">Transmission données DUI</text><polygon points="114.704,95.563,104.704,99.563,114.704,103.563,110.704,99.563" fill="#181818" style="stroke:#181818;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;" /><line x1="108.704" y1="99.563" x2="440.532" y2="99.563" style="stroke:#181818;stroke-width:1;stroke-dasharray:2,2;" /><text x="120.704" y="94.497" fill="#000" font-size="13" textLength="51.829">Flux 1.2</text><text x="176.665" y="94.497" fill="#000" font-size="13" textLength="257.867" font-weight="700">Resultat transmission données DUI</text></g></svg> <br />
+      Lien vers la description détaillée : <a href="description_flux_1_transmission_donnees_dui.html">flux 1</a>
+    </td>
+  </tr>
+</table>
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div style="background-color:var(--footer-nav-bg-color)">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td style="text-align:var(--ig-left);">&#xA0;
+
+                <a href="sfe_organisation_contexte_metier.html">&lt; précédent</a>
+
+              </td>
+              <td style="text-align:center">
+                <a href="#top">haut</a>
+              </td>
+              <td style="text-align:var(--ig-right);">&#xA0;
+
+                <a href="sfe_modelisation_contenu.html">suivant ></a>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  
+          Le package ans.fhir.fr.tddui#2.4.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Date de génération : 
+  <span title="2026-11-12 14:49:00 +0000">
+    2026-11-12
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">Rapport de QA</a> |
+<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/fhir/tddui/history.html">Historique des versions</a>
+<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/documentation">Documentation</a>
+ | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/IG-fhir-medicosocial-transfert-donnees-dui/issues/new">New Issue</a>
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+
+  <!-- Ajout ANS -->
+  <script src="assets/js/app.js" type="text/javascript"> </script>
+  <script src="assets/js/vendor.js" type="text/javascript"> </script>
+  <!-- Fin ajout ANS -->
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  <!-- AJOUT ANS -->
+
+<footer class="footer footer-principal" role="contentinfo">
+  <div class="footer__region1">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <div class="logos">        
+            <div class="logo logo--0">
+              <a href="https://solidarites-sante.gouv.fr" title="Ministère des Solidarités et de la Santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
+                
+                <img src="assets/images/logo-ministere.svg" alt="Ministère des Solidarités et de la Santé" width="133" height="77" loading="lazy" />
+                
+              </a>
+            </div>
+        
+            <div class="logo logo--1">
+              <a href="https://esante.gouv.fr/" title="Agence du numérique en santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
+                
+                <img src="assets/images/logo-ANS-footer.svg" alt="Agence du numérique en santé" width="106" height="74" loading="lazy" />
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <p class="footer__title">Agence du Numérique en Santé</p>
+          <p>2-10 Rue d'Oradour-sur-Glane 75015 Paris</p>
+
+          <!-- <div class="m-social">
+            <ul class="m-social__list">        
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.linkedin.com/company/agence-du-numerique-en-sante/" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-linkedin" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#linkedin"></use></svg>
+                  </div>
+                  <span class="sr-only">linkedin</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://twitter.com/esante_gouv_fr" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-twitter" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#twitter"></use></svg>
+                  </div>
+                  <span class="sr-only">twitter</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.youtube.com/channel/UCd1zuSaU5cE1lRCpwv_HSMA" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-youtube" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#youtube"></use></svg>
+                  </div>
+                  <span class="sr-only">youtube</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://esante.gouv.fr/rss.xml" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-rss" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#rss"></use></svg>
+                  </div>
+                  <span class="sr-only">rss</span>
+                </a>
+              </li>
+            </ul>
+          </div> -->
+        </div>
+        
+        <div class="col-6 col-lg-4">
+          <ul class="footer-list">
+            <li class="footer-list__item footer-list__item--hasIcon">
+              <a href="mailto:ci-sis@esante.gouv.fr" class="mailto-link">
+                <svg class="svg-icon svg-angle-right" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#angle-right"></use></svg>Contact</a>
+              </li>
+              <!-- <li class="footer-list__item">
+                <a href="https://interop-pprod.esante.gouv.fr/ci-sis-specifications/wp-content/uploads/CGU_espace_de_tests_v1.1.pdf" class="file-link">Mentions légales</a>
+              </li>
+               -->
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+    <!-- <div class="footer__region2">
+      <div class="container">
+        <div class="footer-contentinfo">
+          <ul class="footer-list footer-list--inline">
+
+          </ul>
+        </div>
+      </div>
+    </div> -->
+  </footer>
+  </body>
+</html>
+

@@ -1,0 +1,44 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "17832337-d7e4-473c-b41a-d6878c5b736a-324",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/17832337-d7e4-473c-b41a-d6878c5b736a-324",
+  "name" : "IntersectionTDDUIServiceRequestSupportingInfoAndTDDUIServiceRequestSupportingInfo",
+  "title" : "Intersection of TDDUI ServiceRequest SupportingInfo And TDDUI ServiceRequest SupportingInfo",
+  "status" : "active",
+  "date" : "2026-07-23T08:00:51+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France (la)"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-discriminator"]
+    }],
+    "exclude" : [{
+      "concept" : [{
+        "code" : "accordUsager"
+      },
+      {
+        "code" : "accordStructure"
+      },
+      {
+        "code" : "titreObjectif"
+      },
+      {
+        "code" : "avisUsagerObjectif"
+      },
+      {
+        "code" : "strategieMiseEnOeuvreObjectif"
+      },
+      {
+        "code" : "origineAttente"
+      },
+      {
+        "code" : "commentaireAttente"
+      }]
+    }]
+  }
+}

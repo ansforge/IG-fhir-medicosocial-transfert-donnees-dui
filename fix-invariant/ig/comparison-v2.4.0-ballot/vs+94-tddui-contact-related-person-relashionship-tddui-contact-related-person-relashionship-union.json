@@ -1,0 +1,27 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "17832337-d7e4-473c-b41a-d6878c5b736a-275",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/17832337-d7e4-473c-b41a-d6878c5b736a-275",
+  "name" : "UnionTDDUIRelatedPersonRelashionshipAndTDDUIRelatedPersonRelashionship",
+  "title" : "Union of TDDUI Related Person Relashionship And TDDUI Related Person Relashionship",
+  "status" : "active",
+  "date" : "2026-07-23T08:00:51+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France (la)"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j384-role-membre-famille-ms"]
+    },
+    {
+      "valueSet" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-contact-relation"]
+    },
+    {
+      "valueSet" : ["https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-contact-protection-juridique"]
+    }]
+  }
+}
